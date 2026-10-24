@@ -1,8 +1,10 @@
-# Ahom Kings · learn Assam's history one reign at a time
+# Axomrank · Assam government exam preparation
 
-Short, game-like lessons on the Ahom kingdom (1228–1838) for students preparing for ADRE, Assam TET, APSC and Assam Police SI. One lesson per Swargadeo, split into short units, in English and Assamese. It works offline and can be installed from the browser.
+Short, game-like, bilingual (English and Assamese) lessons for ADRE, Assam TET, APSC and Assam Police SI. It works offline and can be installed from the browser.
 
-**Live:** https://ahom-lessons.pages.dev (also https://axomrank.github.io/ahom-lessons/)
+**Live:** https://axomrank.pages.dev (also https://axomrank.github.io/)
+
+**Courses:** Ahom Kings (41 reigns, 1228–1838) is the first course. More subjects (Assam geography, polity, economy, culture, current affairs, general studies) follow the same lesson format; see `product-plan.md`.
 
 ## Layout
 

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Deploy the web app to Cloudflare Pages.
 # One-time: run `npx wrangler login` and approve in the browser (see SETUP.md).
-# Usage: scripts/deploy_cloudflare.sh            (project name defaults to ahom-lessons)
+# Usage: scripts/deploy_cloudflare.sh            (project name defaults to axomrank)
 set -euo pipefail
 cd "$(dirname "$0")/.."
-PROJECT="${1:-ahom-lessons}"
+PROJECT="${1:-axomrank}"
 python3 scripts/build.py
 OUT="$(mktemp -d "${TMPDIR:-/home/angsuman/extra_spac/tmp}/axom-dist.XXXX")"
 # Copy only the website (never plans, scripts or other folders)

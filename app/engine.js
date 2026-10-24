@@ -285,7 +285,7 @@ document.body.insertAdjacentHTML("afterbegin", `
 AXOM.initLang();
 const langBox = $("#as");
 const isAS = () => langBox.checked;
-document.title = L.no ? `${L.king.en} · Lesson ${L.no}` : `${L.king.en} · Ahom Kings`;
+document.title = L.no ? `${L.king.en} · Lesson ${L.no}` : `${L.king.en} · Axomrank`;
 
 /* ---------- lesson path ---------- */
 const ALL = [...L.units, L.test];

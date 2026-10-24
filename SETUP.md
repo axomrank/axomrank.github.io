@@ -2,8 +2,8 @@
 
 | Service | What it does | Where |
 |---|---|---|
-| Cloudflare Pages | Main hosting | https://ahom-lessons.pages.dev (project `ahom-lessons`) |
-| GitHub Pages | Second copy, built from `main` | https://axomrank.github.io/ahom-lessons/ |
+| Cloudflare Pages | Main hosting | https://axomrank.pages.dev (project `axomrank`) |
+| GitHub Pages | Second copy, built from `main` | https://axomrank.github.io/ |
 | Firebase Auth | Google sign-in | Project `axomrank-ahom` |
 | Firestore | One progress document per learner, `users/{uid}` (Mumbai, asia-south1) | Project `axomrank-ahom` |
 
@@ -30,7 +30,7 @@ scripts/deploy_rules.sh
 ## Firebase settings that live in the console
 
 - **Authentication → Sign-in method:** Google is enabled.
-- **Authentication → Settings → Authorized domains:** `ahom-lessons.pages.dev`, `axomrank.github.io` (add a custom domain here when you get one).
+- **Authentication → Settings → Authorized domains:** `axomrank.pages.dev`, `axomrank.github.io` (add a custom domain here when you get one).
 - **Web app config:** in `app/config.js`. These values are public by design; the rules protect the data.
 
 ## Images on Cloudflare R2 (later)
