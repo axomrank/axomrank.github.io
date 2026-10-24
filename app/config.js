@@ -1,6 +1,6 @@
 /* =========================================================
    App settings. The only file to edit when connecting services.
-   See SETUP.md for where each value comes from.
+   See docs/SETUP.md for where each value comes from.
    ========================================================= */
 window.AXOM_CONFIG = {
   /* Where images live. Keep "content/media/" to serve them with the app.

@@ -2,7 +2,7 @@
 """Rebuild content/maps/assam.json from a KMZ with district polygons and river lines,
 and print the positions of any point placemarks (e.g. Ahom sites) to copy into content/entities.json.
 
-Usage: python3 scripts/import_kmz.py "Dist + Rivers (simplified).kmz"
+Usage: python3 scripts/import_kmz.py "private/Dist + Rivers (simplified).kmz"
 """
 import io, os, sys, json, re, zipfile, xml.etree.ElementTree as ET
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Deploy the web app to Cloudflare Pages.
-# One-time: run `npx wrangler login` and approve in the browser (see SETUP.md).
+# One-time: run `npx wrangler login` and approve in the browser (see docs/SETUP.md).
 # Usage: scripts/deploy_cloudflare.sh            (project name defaults to axomrank)
 set -euo pipefail
 cd "$(dirname "$0")/.."
