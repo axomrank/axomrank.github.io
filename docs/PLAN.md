@@ -15,7 +15,7 @@ Live: https://axomrank.pages.dev · Code: https://github.com/axomrank/axomrank.g
 - Web app: lesson player (14 exercise types), maps, guidebook, name cards, daily review, checkpoints, XP/streak, Google sign-in and sync (Firebase), offline service worker.
 - Content: **Ahom Kings**, 41 lessons / 1,647 steps, bilingual, with maps and paintings.
 - Hosting: Cloudflare Pages + GitHub Pages. Free plans.
-- Still single-course: code and content paths assume one course (`ahom-kings`).
+- Home page: exam chooser (ADRE / TET / APSC / SI), continue card, daily review, subject grid from `content/catalog.json` (Assam History live with the Varman and Ahom courses; Polity, Geography, Aptitude and others listed as coming soon). Subject page lists its courses in order of time.
 
 ## 3. Roadmap
 

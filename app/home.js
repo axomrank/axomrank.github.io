@@ -1,7 +1,8 @@
 /* =========================================================
    Course home: Lessons (eras, checkpoints, daily review), dynasty Timeline,
    Family (succession), and Profile (stats, activity, weak lessons).
-   Reads content/manifest.json and the chosen course (index.html?course=<id>); without ?course it shows the course hub.
+   Reads content/manifest.json, content/catalog.json and the chosen course (index.html?course=<id>).
+   Without ?course it shows a subject's courses (index.html?subject=<id>) or, with neither, the app home.
    ========================================================= */
 (() => {
 "use strict";
@@ -48,24 +49,104 @@ function stats() {
 const years = (reign) => { const m = String(reign).match(/\d{3,4}/g) || []; return [+m[0], +(m[1] || m[0])]; };
 
 let course, info;
-/* ---------- hub: one card per course ---------- */
-async function hub() {
-  const m = await AXOM.getJSON("content/manifest.json");
-  if (m.courses.length === 1) { location.replace(`index.html?course=${m.courses[0].id}`); return; }
+/* ---------- shared data for the home and subject pages ---------- */
+const SID = (params.get("subject") || "").replace(/[^a-z0-9-]/g, "");
+const SUBJECT_ICON = {
+  temple: '<path d="M3 21h18M5 21V11M19 21V11M9 21v-6h6v6M2.5 11 12 4l9.5 7z"/>',
+  pillar: '<path d="M3 21h18M4 18h16M6 18V9M10 18V9M14 18V9M18 18V9M3 9l9-5 9 5z"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/>',
+  puzzle: '<path d="M4 8h3.5a2 2 0 1 1 4 0H15v3.5a2 2 0 1 1 0 4V19H4z"/><path d="M15 8h5v11h-5"/>',
+  scroll: '<path d="M7 4h11a2 2 0 0 1 2 2v1h-4M7 4a2 2 0 0 0-2 2v12a2 2 0 0 1-2 2h11a2 2 0 0 0 2-2V7M7 4a2 2 0 0 1 2 2v0M9 10h4M9 14h4"/>',
+  coin: '<circle cx="12" cy="12" r="9"/><path d="M9 8h6M9 11h6M13 8c2 0 2 6-1 6h-3l5 4"/>',
+  flask: '<path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3M7.5 15h9"/>',
+  news: '<path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2M7 9h7M7 13h7M7 16h4"/>',
+  child: '<circle cx="12" cy="5" r="2.5"/><path d="M12 8v7M7 10.5l5 1.5 5-1.5M9 21l3-6 3 6"/>',
+};
+const sIcon = (k) => `<svg viewBox="0 0 24 24">${SUBJECT_ICON[k] || SUBJECT_ICON.scroll}</svg>`;
+let DATA = null;
+async function load() {
+  if (DATA) return DATA;
+  const [m, cat] = await Promise.all([AXOM.getJSON("content/manifest.json"), AXOM.getJSON("content/catalog.json")]);
   const list = await Promise.all(m.courses.map((c) => AXOM.getJSON(c.file)));
-  list.sort((a, b) => (a.order || 99) - (b.order || 99));
-  const cards = list.map((c) => {
-    const ids = c.kings.filter((k) => k.lesson && m.lessons[k.lesson]).map((k) => k.lesson), done = ids.filter((id) => AXOM.getLesson(id).done.test).length;
-    return `<a class="review-card" href="index.html?course=${c.id}"><span class="ic">${ICON.crown || ICON.flag || "★"}</span><span><b>${T(c.title)}</b><span class="s">${T(c.subtitle)} · ${T(B(`${done}/${ids.length} lessons done`, `${asNum(ids.length)}টাৰ ${asNum(done)}টা পাঠ সম্পূৰ্ণ`))}</span></span><span class="go">›</span></a>`;
+  return (DATA = { m, cat, courses: Object.fromEntries(list.map((c) => [c.id, c])) });
+}
+// a course's published lessons, how many are finished, and the next one to do
+function progress(c, m) {
+  const items = c.kings.filter((k) => k.lesson && m.lessons[k.lesson]);
+  const done = items.filter((k) => AXOM.getLesson(k.lesson).done.test).length;
+  return { total: items.length, done, next: items.find((k) => !AXOM.getLesson(k.lesson).done.test), started: items.some((k) => Object.keys(AXOM.getLesson(k.lesson).done).length) };
+}
+const subjectOf = (cat, cid) => cat.subjects.find((S) => S.courses.some((e) => e.course === cid));
+const subjectSum = (S, D) => S.courses.filter((e) => D.courses[e.course]).map((e) => progress(D.courses[e.course], D.m)).reduce((a, p) => ({ total: a.total + p.total, done: a.done + p.done }), { total: 0, done: 0 });
+const pct = (p) => (p.total ? Math.round((p.done / p.total) * 100) : 0);
+const FOOT = `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
+function reviewCard() {
+  const due = AXOM.reviewQueue().length;
+  return due ? `<a class="review-card" href="lesson.html?review=1"><span class="ic">${ICON.repeat}</span><span><b>${T(B("Daily review", "দৈনিক পুনৰীক্ষণ"))}</b><span class="s">${T(B(`${due} question${due > 1 ? "s" : ""} due · keeps facts fresh for the exam`, `${asNum(due)}টা প্ৰশ্ন বাকী · পৰীক্ষাৰ বাবে তথ্য সতেজ ৰাখে`))}</span></span><span class="go">›</span></a>` : "";
+}
+
+/* ---------- home: exam choice, continue, subjects ---------- */
+async function homePage() {
+  const D = await load(), { cat, m } = D;
+  const exam = cat.exams.some((x) => x.id === UI.exam) ? UI.exam : "";
+  const chips = [["", B("All exams", "সকলো পৰীক্ষা")], ...cat.exams.map((x) => [x.id, x.t])]
+    .map(([id, t]) => `<button class="exam-chip ${exam === id ? "on" : ""}" data-exam="${id}">${T(t)}</button>`).join("");
+  // continue: the course last opened, else the first one with progress, else the first live course
+  const live = cat.subjects.flatMap((S) => S.courses.filter((e) => D.courses[e.course]).map((e) => D.courses[e.course]));
+  const cur = D.courses[UI.lastCourse] || live.find((c) => progress(c, m).started) || live[0];
+  let cont = "";
+  if (cur) {
+    const p = progress(cur, m), S = subjectOf(cat, cur.id);
+    const k = p.next;
+    cont = `<a class="resume" href="${k ? `lesson.html?id=${k.lesson}` : `index.html?course=${cur.id}`}">
+      <span class="face">${k ? `<img src="${AXOM.media(k.face)}" alt="" loading="lazy">` : sIcon(S.icon)}</span>
+      <span class="t"><small>${p.started ? T(B("Continue", "আগবাঢ়া")) : T(B("Start here", "ইয়াৰ পৰা আৰম্ভ কৰা"))} · ${T(S.title)}</small>
+        <b>${k ? T(k.name) : T(B("Course complete", "পাঠ্যক্ৰম সম্পূৰ্ণ"))}</b><span>${T(cur.title)} · ${T(B(`${p.done}/${p.total} lessons`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ`))}</span>
+        <span class="meter"><i style="width:${pct(p)}%"></i></span></span><span class="go">›</span></a>`;
+  }
+  const subjects = cat.subjects.filter((S) => !exam || S.exams.includes(exam)).map((S) => {
+    const n = S.courses.filter((e) => D.courses[e.course]).length;
+    if (!n) return `<button class="subj soon" data-soon style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></button>`;
+    const p = subjectSum(S, D);
+    return `<a class="subj" href="index.html?subject=${S.id}" style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span>
+      <span class="pill">${T(B(`${n} course${n > 1 ? "s" : ""} · ${p.total} lessons`, `${asNum(n)}টা পাঠ্যক্ৰম · ${asNum(p.total)}টা পাঠ`))}</span><span class="meter"><i style="width:${pct(p)}%"></i></span></a>`;
   }).join("");
-  $("#course").innerHTML = `<section class="c-hero">${ROOF}<div class="eyebrow">${T(B("Assam exam preparation", "অসম পৰীক্ষাৰ প্ৰস্তুতি"))}</div><h1>Axomrank</h1><p>${T(B("ADRE · Assam TET · APSC · Assam Police SI. Pick a course.", "ADRE · অসম TET · APSC · অসম আৰক্ষী SI। এটা পাঠ্যক্ৰম বাছনি কৰা।"))}</p></section>
-    <p class="tab-intro">${T(B("Assam History, in order of time", "অসমৰ ইতিহাস, সময়ৰ ক্ৰমত"))}</p>${cards}
-    <div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
+  const examName = exam ? T(cat.exams.find((x) => x.id === exam).t) : "ADRE · Assam TET · APSC · Assam Police SI";
+  $("#course").innerHTML = `<section class="home-hero">${ROOF}<div class="eyebrow">${T(B("Assam exam preparation", "অসম পৰীক্ষাৰ প্ৰস্তুতি"))}</div><h1>Axomrank</h1>
+      <p>${T(B("Short bilingual lessons, daily revision and exam-style tests for", "চুটি দ্বিভাষিক পাঠ, দৈনিক পুনৰীক্ষণ আৰু পৰীক্ষাৰ ধৰণৰ প্ৰশ্ন:"))} <b>${examName}</b></p>
+      <div class="exam-chips" role="group" aria-label="My exam">${chips}</div></section>
+    ${cont}${reviewCard()}
+    <h2 class="sec-title">${T(B("Subjects", "বিষয়"))}</h2><div class="subj-grid">${subjects}</div>
+    <h2 class="sec-title">${T(B("Exam tools", "পৰীক্ষাৰ সঁজুলি"))}</h2>
+    <div class="tools"><div class="tool"><span class="ic">📝</span><b>${T(B("Mock tests", "মক টেষ্ট"))}</b><span class="s">${T(B("OMR-style, timed, negative marking", "OMR ধৰণৰ, সময় বান্ধি, ঋণাত্মক নম্বৰ"))}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></div>
+      <div class="tool"><span class="ic">📚</span><b>${T(B("Previous-year papers", "পূৰ্বৰ বছৰৰ প্ৰশ্নকাকত"))}</b><span class="s">${T(B("With verified answer keys", "পৰীক্ষিত উত্তৰৰ সৈতে"))}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></div></div>
+    ${FOOT}`;
+  $("#continue").classList.add("hidden");
+}
+
+/* ---------- subject: its courses in order ---------- */
+async function subjectPage() {
+  const D = await load(), S = D.cat.subjects.find((x) => x.id === SID);
+  if (!S || !S.courses.some((e) => D.courses[e.course])) { location.replace("index.html"); return; }
+  const p = subjectSum(S, D);
+  const rows = S.courses.map((e, i) => {
+    const c = D.courses[e.course];
+    if (!c) return `<div class="course-row soon"><span class="no">${N(i + 1)}</span><span class="t"><b>${T(e.title)}</b><span>${T(e.subtitle)}</span></span><span class="pill">${T(B("Soon", "সোনকালে"))}</span></div>`;
+    const q = progress(c, D.m), face = (c.kings.find((k) => k.tier === "A") || c.kings[0]).face;
+    return `<a class="course-row ${q.done === q.total ? "done" : ""}" href="index.html?course=${c.id}"><span class="no">${N(i + 1)}</span><span class="cover"><img src="${AXOM.media(face)}" alt="" loading="lazy"></span>
+      <span class="t"><b>${T(c.title)}</b><span>${T(c.subtitle)}</span><span class="meter"><i style="width:${pct(q)}%"></i></span><small>${T(B(`${q.done}/${q.total} lessons done`, `${asNum(q.total)}টাৰ ${asNum(q.done)}টা পাঠ সম্পূৰ্ণ`))}</small></span><span class="go">›</span></a>`;
+  }).join("");
+  $("#course").innerHTML = `<section class="c-hero" style="--c:var(--${S.color})">${ROOF}<a class="back-hub" href="index.html">‹ ${T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(B("Subject", "বিষয়"))}</div><h1>${T(S.title)}</h1><p>${T(S.blurb)}</p>
+      <span class="meter"><i style="width:${pct(p)}%"></i></span><span class="count">${T(B(`${p.done} of ${p.total} lessons done`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ সম্পূৰ্ণ`))}</span></section>
+    ${reviewCard()}<p class="tab-intro">${T(B("Courses in order of time. New courses are added as they are written and checked.", "সময়ৰ ক্ৰমত পাঠ্যক্ৰম। লিখা আৰু পৰীক্ষা কৰাৰ পিছত নতুন পাঠ্যক্ৰম যোগ হয়।"))}</p>
+    <div class="course-list">${rows}</div>${FOOT}`;
   $("#continue").classList.add("hidden");
 }
 async function render() {
-  if (!CID) return hub();
-  if (!course) [course, info] = await Promise.all([AXOM.getJSON(`content/courses/${CID}.json`), AXOM.getJSON("content/manifest.json").then((m) => m.lessons)]);
+  if (!CID) return SID ? subjectPage() : homePage();
+  if (!course) { const D = await load(); course = D.courses[CID]; info = D.m.lessons; if (!course) { location.replace("index.html"); return; } }
+  if (UI.lastCourse !== CID) { UI.lastCourse = CID; saveUI(); }
+  const S = subjectOf(DATA.cat, CID);
   const TABS = (course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : ALL_TABS[k]]);
   if (!TABS.some(([k]) => k === UI.tab)) UI.tab = "lessons";
   const byNo = Object.fromEntries(course.kings.filter((k) => k.lesson && info[k.lesson]).map((k) => [k.n, k.lesson]));
@@ -80,7 +161,7 @@ async function render() {
     return { s: UNLOCK_ALL || !prev || doneTest(prev) ? "open" : "locked", id, done, steps };
   };
   const tabs = `<div class="tabs home-tabs" role="tablist">${TABS.map(([k, t]) => `<button class="tab ${UI.tab === k ? "on" : ""}" data-tab="${k}">${T(t)}</button>`).join("")}</div>`;
-  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="index.html" aria-label="All courses">‹ Axomrank</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
+  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S ? T(S.title) : "Axomrank"}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
   const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab }[UI.tab](status, byNo);
   $("#course").innerHTML = hero + tabs + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
   // sticky Continue: the next open lesson that is not finished
@@ -92,10 +173,8 @@ async function render() {
 
 /* ---------- Lessons tab ---------- */
 function lessonsTab(status) {
-  const due = AXOM.reviewQueue().length;
-  const review = due ? `<a class="review-card" href="lesson.html?review=1"><span class="ic">${ICON.repeat}</span><span><b>${T(B("Daily review", "দৈনিক পুনৰীক্ষণ"))}</b><span class="s">${T(B(`${due} question${due > 1 ? "s" : ""} due · keeps facts fresh for the exam`, `${asNum(due)}টা প্ৰশ্ন বাকী · পৰীক্ষাৰ বাবে তথ্য সতেজ ৰাখে`))}</span></span><span class="go">›</span></a>` : "";
   const curEra = (course.eras.find((e) => course.kings.some((k) => k.n >= e.from && k.n <= e.to && status(k).s === "open")) || course.eras[0]).id;
-  return review + course.eras.map((e) => {
+  return reviewCard() + course.eras.map((e) => {
     const kings = course.kings.filter((k) => k.n >= e.from && k.n <= e.to);
     const sts = kings.map(status), avail = sts.filter((x) => x.s !== "soon"), done = sts.filter((x) => x.s === "done").length;
     const open = UI.open[e.id] ?? e.id === curEra;
@@ -187,6 +266,8 @@ function profileTab(status, byNo) {
 /* ---------- events ---------- */
 document.addEventListener("click", (e) => {
   let b;
+  if ((b = e.target.closest("[data-exam]"))) { UI.exam = b.dataset.exam; saveUI(); render(); return; }
+  if (e.target.closest("[data-soon]")) return toast(T(B("This subject is being written. Coming soon!", "এই বিষয়টো লিখি থকা হৈছে। সোনকালে আহিব!")));
   if ((b = e.target.closest("[data-tab]"))) { UI.tab = b.dataset.tab; saveUI(); render(); $("#scroll").scrollTop = 0; return; }
   if ((b = e.target.closest("[data-era]"))) { const id = b.dataset.era, sec = b.closest(".era-sec"); UI.open[id] = !sec.classList.contains("open"); saveUI(); render(); return; }
   if (e.target.closest("#settings")) return AXOM.openSettings(settingsExtra());

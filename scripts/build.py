@@ -58,6 +58,20 @@ for f in sorted(os.listdir("content/courses")):
         C = json.load(open(f"content/courses/{f}", encoding="utf-8"))
         if C.get("id") + ".json" != f: err(f"courses/{f}: id '{C.get('id')}' must match the file name")
         courses[C["id"]] = C
+# the home page: subjects -> courses. Every course must sit in exactly one subject.
+catalog = json.load(open("content/catalog.json", encoding="utf-8"))
+exam_ids = {x["id"] for x in catalog["exams"]}
+placed = []
+for S in catalog["subjects"]:
+    bilingual(S["title"], f"catalog/{S['id']}"); bilingual(S["blurb"], f"catalog/{S['id']}")
+    for x in S.get("exams", []):
+        if x not in exam_ids: err(f"catalog/{S['id']}: unknown exam '{x}'")
+    for e in S["courses"]:
+        if e.get("soon"): bilingual(e["title"], f"catalog/{S['id']}"); continue
+        if e.get("course") not in courses: err(f"catalog/{S['id']}: unknown course '{e.get('course')}'")
+        placed.append(e.get("course"))
+for cid in courses:
+    if placed.count(cid) != 1: err(f"catalog: course '{cid}' must appear in exactly one subject (found {placed.count(cid)})")
 lessons = {}
 for f in sorted(os.listdir("content/lessons")):
     if f.endswith(".json"):
