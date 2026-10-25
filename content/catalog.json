@@ -1,97 +1,263 @@
 {
  "exams": [
-  { "id": "adre", "t": { "en": "ADRE", "as": "ADRE" } },
-  { "id": "tet", "t": { "en": "Assam TET", "as": "অসম TET" } },
-  { "id": "apsc", "t": { "en": "APSC CCE", "as": "APSC CCE" } },
-  { "id": "si", "t": { "en": "Police SI", "as": "আৰক্ষী SI" } }
+  {
+   "id": "adre",
+   "t": {
+    "en": "ADRE",
+    "as": "ADRE"
+   }
+  },
+  {
+   "id": "tet",
+   "t": {
+    "en": "Assam TET",
+    "as": "অসম TET"
+   }
+  },
+  {
+   "id": "apsc",
+   "t": {
+    "en": "APSC CCE",
+    "as": "APSC CCE"
+   }
+  },
+  {
+   "id": "si",
+   "t": {
+    "en": "Police SI",
+    "as": "আৰক্ষী SI"
+   }
+  }
  ],
  "subjects": [
   {
    "id": "assam-history",
    "icon": "temple",
    "color": "terra",
-   "exams": ["adre", "tet", "apsc", "si"],
-   "title": { "en": "Assam History", "as": "অসমৰ ইতিহাস" },
-   "blurb": { "en": "From Kamarupa to the Ahom kingdom, in order of time", "as": "কামৰূপৰ পৰা আহোম ৰাজ্যলৈ, সময়ৰ ক্ৰমত" },
+   "exams": [
+    "adre",
+    "tet",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Assam History",
+    "as": "অসমৰ ইতিহাস"
+   },
+   "blurb": {
+    "en": "From Pragjyotisha and Kamarupa to the Ahom kingdom, in order of time",
+    "as": "প্ৰাগ্‌জ্যোতিষ আৰু কামৰূপৰ পৰা আহোম ৰাজ্যলৈ, সময়ৰ ক্ৰমত"
+   },
    "courses": [
-    { "course": "varman-kings" },
-    { "soon": true, "title": { "en": "Kamata, Koch and neighbours", "as": "কমতা, কোচ আৰু চুবুৰীয়া ৰাজ্য" }, "subtitle": { "en": "c. 1200–1700s", "as": "প্ৰায় ১২০০–১৭০০ৰ দশক" } },
-    { "course": "ahom-kings" },
-    { "soon": true, "title": { "en": "British period and the freedom struggle", "as": "ব্ৰিটিছ যুগ আৰু স্বাধীনতা সংগ্ৰাম" }, "subtitle": { "en": "1826–1947", "as": "১৮২৬–১৯৪৭" } },
-    { "soon": true, "title": { "en": "Assam since 1947", "as": "১৯৪৭ৰ পিছৰ অসম" }, "subtitle": { "en": "1947–today", "as": "১৯৪৭–আজিলৈকে" } },
-    { "soon": true, "title": { "en": "Culture, literature and art", "as": "সংস্কৃতি, সাহিত্য আৰু কলা" }, "subtitle": { "en": "All periods", "as": "সকলো যুগ" } }
+    {
+     "course": "varman-kings"
+    },
+    {
+     "course": "salastambha-kings"
+    },
+    {
+     "course": "pala-kings"
+    },
+    {
+     "soon": true,
+     "title": {
+      "en": "Kamata, Koch and neighbours",
+      "as": "কমতা, কোচ আৰু চুবুৰীয়া ৰাজ্য"
+     },
+     "subtitle": {
+      "en": "c. 1200–1700s",
+      "as": "প্ৰায় ১২০০–১৭০০ৰ দশক"
+     }
+    },
+    {
+     "course": "ahom-kings"
+    },
+    {
+     "soon": true,
+     "title": {
+      "en": "British period and the freedom struggle",
+      "as": "ব্ৰিটিছ যুগ আৰু স্বাধীনতা সংগ্ৰাম"
+     },
+     "subtitle": {
+      "en": "1826–1947",
+      "as": "১৮২৬–১৯৪৭"
+     }
+    },
+    {
+     "soon": true,
+     "title": {
+      "en": "Assam since 1947",
+      "as": "১৯৪৭ৰ পিছৰ অসম"
+     },
+     "subtitle": {
+      "en": "1947–today",
+      "as": "১৯৪৭–আজিলৈকে"
+     }
+    },
+    {
+     "soon": true,
+     "title": {
+      "en": "Culture, literature and art",
+      "as": "সংস্কৃতি, সাহিত্য আৰু কলা"
+     },
+     "subtitle": {
+      "en": "All periods",
+      "as": "সকলো যুগ"
+     }
+    }
    ]
   },
   {
    "id": "polity",
    "icon": "pillar",
    "color": "indigo",
-   "exams": ["adre", "apsc", "si"],
-   "title": { "en": "Indian Polity", "as": "ভাৰতীয় ৰাজনীতি" },
-   "blurb": { "en": "Constitution, Sixth Schedule, Assam government", "as": "সংবিধান, ষষ্ঠ অনুসূচী, অসম চৰকাৰ" },
+   "exams": [
+    "adre",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Indian Polity",
+    "as": "ভাৰতীয় ৰাজনীতি"
+   },
+   "blurb": {
+    "en": "Constitution, Sixth Schedule, Assam government",
+    "as": "সংবিধান, ষষ্ঠ অনুসূচী, অসম চৰকাৰ"
+   },
    "courses": []
   },
   {
    "id": "geography",
    "icon": "globe",
    "color": "river",
-   "exams": ["adre", "tet", "apsc", "si"],
-   "title": { "en": "Geography", "as": "ভূগোল" },
-   "blurb": { "en": "Assam and India: rivers, districts, parks, climate", "as": "অসম আৰু ভাৰত: নদী, জিলা, উদ্যান, জলবায়ু" },
+   "exams": [
+    "adre",
+    "tet",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Geography",
+    "as": "ভূগোল"
+   },
+   "blurb": {
+    "en": "Assam and India: rivers, districts, parks, climate",
+    "as": "অসম আৰু ভাৰত: নদী, জিলা, উদ্যান, জলবায়ু"
+   },
    "courses": []
   },
   {
    "id": "aptitude",
    "icon": "puzzle",
    "color": "gold",
-   "exams": ["adre", "apsc", "si"],
-   "title": { "en": "Aptitude & Reasoning", "as": "যোগ্যতা আৰু যুক্তি" },
-   "blurb": { "en": "Arithmetic, number series, logical reasoning", "as": "অংক, সংখ্যা শৃংখল, যুক্তি" },
+   "exams": [
+    "adre",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Aptitude & Reasoning",
+    "as": "যোগ্যতা আৰু যুক্তি"
+   },
+   "blurb": {
+    "en": "Arithmetic, number series, logical reasoning",
+    "as": "অংক, সংখ্যা শৃংখল, যুক্তি"
+   },
    "courses": []
   },
   {
    "id": "indian-history",
    "icon": "scroll",
    "color": "terra",
-   "exams": ["adre", "tet", "apsc", "si"],
-   "title": { "en": "Indian History", "as": "ভাৰতৰ ইতিহাস" },
-   "blurb": { "en": "Ancient, medieval and modern India", "as": "প্ৰাচীন, মধ্যযুগীয় আৰু আধুনিক ভাৰত" },
+   "exams": [
+    "adre",
+    "tet",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Indian History",
+    "as": "ভাৰতৰ ইতিহাস"
+   },
+   "blurb": {
+    "en": "Ancient, medieval and modern India",
+    "as": "প্ৰাচীন, মধ্যযুগীয় আৰু আধুনিক ভাৰত"
+   },
    "courses": []
   },
   {
    "id": "economy",
    "icon": "coin",
    "color": "good",
-   "exams": ["adre", "apsc", "si"],
-   "title": { "en": "Economy", "as": "অৰ্থনীতি" },
-   "blurb": { "en": "Tea, oil, agriculture, budget and schemes", "as": "চাহ, তেল, কৃষি, বাজেট আৰু আঁচনি" },
+   "exams": [
+    "adre",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Economy",
+    "as": "অৰ্থনীতি"
+   },
+   "blurb": {
+    "en": "Tea, oil, agriculture, budget and schemes",
+    "as": "চাহ, তেল, কৃষি, বাজেট আৰু আঁচনি"
+   },
    "courses": []
   },
   {
    "id": "science",
    "icon": "flask",
    "color": "river",
-   "exams": ["adre", "tet", "apsc", "si"],
-   "title": { "en": "General Science", "as": "সাধাৰণ বিজ্ঞান" },
-   "blurb": { "en": "Physics, chemistry, biology for everyday life", "as": "দৈনন্দিন জীৱনৰ পদাৰ্থ, ৰসায়ন, জীৱবিজ্ঞান" },
+   "exams": [
+    "adre",
+    "tet",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "General Science",
+    "as": "সাধাৰণ বিজ্ঞান"
+   },
+   "blurb": {
+    "en": "Physics, chemistry, biology for everyday life",
+    "as": "দৈনন্দিন জীৱনৰ পদাৰ্থ, ৰসায়ন, জীৱবিজ্ঞান"
+   },
    "courses": []
   },
   {
    "id": "current-affairs",
    "icon": "news",
    "color": "bad",
-   "exams": ["adre", "apsc", "si"],
-   "title": { "en": "Current Affairs", "as": "সাম্প্ৰতিক ঘটনা" },
-   "blurb": { "en": "Assam and India, with a daily quiz", "as": "অসম আৰু ভাৰত, দৈনিক কুইজৰ সৈতে" },
+   "exams": [
+    "adre",
+    "apsc",
+    "si"
+   ],
+   "title": {
+    "en": "Current Affairs",
+    "as": "সাম্প্ৰতিক ঘটনা"
+   },
+   "blurb": {
+    "en": "Assam and India, with a daily quiz",
+    "as": "অসম আৰু ভাৰত, দৈনিক কুইজৰ সৈতে"
+   },
    "courses": []
   },
   {
    "id": "pedagogy",
    "icon": "child",
    "color": "indigo",
-   "exams": ["tet"],
-   "title": { "en": "Child Development & Pedagogy", "as": "শিশু বিকাশ আৰু শিক্ষণ পদ্ধতি" },
-   "blurb": { "en": "For Assam TET paper I and II", "as": "অসম TETৰ প্ৰথম আৰু দ্বিতীয় কাকতৰ বাবে" },
+   "exams": [
+    "tet"
+   ],
+   "title": {
+    "en": "Child Development & Pedagogy",
+    "as": "শিশু বিকাশ আৰু শিক্ষণ পদ্ধতি"
+   },
+   "blurb": {
+    "en": "For Assam TET paper I and II",
+    "as": "অসম TETৰ প্ৰথম আৰু দ্বিতীয় কাকতৰ বাবে"
+   },
    "courses": []
   }
  ]

@@ -3,7 +3,7 @@
    VERSION is stamped by scripts/build.py on every build, so phones
    fetch the new app files after each release.
    ========================================================= */
-const VERSION = "1f692789f3";
+const VERSION = "3e3a0bee4c";
 const SHELL = `axom-shell-${VERSION}`;
 const RUNTIME = "axom-runtime";
 const OFFLINE = "axom-offline";   // lessons the learner downloaded (see app/common.js)
@@ -11,8 +11,8 @@ const SHELL_FILES = [
   "./", "index.html", "lesson.html", "manifest.webmanifest",
   "app/app.css", "app/config.js", "app/common.js", "app/engine.js", "app/home.js",
   "icons/icon-192.png", "icons/icon-512.png",
-  "content/manifest.json", "content/catalog.json", "content/courses/ahom-kings.json", "content/courses/varman-kings.json",
-  "content/entities.json", "content/maps/assam.json", "content/questions/ahom.json", "content/questions/varman.json",
+  "content/manifest.json", "content/catalog.json", "content/courses/ahom-kings.json", "content/courses/varman-kings.json", "content/courses/salastambha-kings.json", "content/courses/pala-kings.json",
+  "content/entities.json", "content/maps/assam.json", "content/questions/ahom.json", "content/questions/varman.json", "content/questions/salastambha.json", "content/questions/pala.json",
 ];
 
 // Hosts like Cloudflare Pages redirect "lesson.html" to "/lesson". Browsers refuse to use a

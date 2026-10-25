@@ -1,9 +1,17 @@
 {
- "version": "1f692789f3",
+ "version": "3e3a0bee4c",
  "courses": [
   {
    "id": "ahom-kings",
    "file": "content/courses/ahom-kings.json"
+  },
+  {
+   "id": "pala-kings",
+   "file": "content/courses/pala-kings.json"
+  },
+  {
+   "id": "salastambha-kings",
+   "file": "content/courses/salastambha-kings.json"
   },
   {
    "id": "varman-kings",
@@ -572,6 +580,195 @@
     }
    ]
   },
+  "pala-brahmapala-ratnapala": {
+   "course": "pala-kings",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Brahma Pala and Ratna Pala",
+    "as": "ব্ৰহ্ম পাল আৰু ৰত্ন পাল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Chosen, not born",
+      "as": "বাছনি কৰা, জন্মসূত্ৰে নহয়"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Durjaya, the impregnable",
+      "as": "দুৰ্জয়, অজেয় নগৰ"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Grants issued from Durjaya",
+      "as": "দুৰ্জয়ৰ পৰা জাৰি কৰা দান"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "War with Bengal",
+      "as": "বংগৰ লগত যুদ্ধ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "pala-indrapala-dharmapala": {
+   "course": "pala-kings",
+   "no": 2,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Indra Pala to Dharma Pala",
+    "as": "ইন্দ্ৰ পালৰ পৰা ধৰ্ম পাললৈ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Indra Pala's grant",
+      "as": "ইন্দ্ৰ পালৰ দানপত্ৰ"
+     },
+     "i": "walk",
+     "ex": 4
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Stone temples at Madan Kamdev",
+      "as": "মদন কামদেৱৰ শিলৰ মন্দিৰ"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Dharma Pala and his poet",
+      "as": "ধৰ্ম পাল আৰু তেওঁৰ কবি"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A new capital: Kamarupanagara",
+      "as": "নতুন ৰাজধানী: কামৰূপনগৰ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Titles, faith and four kings",
+      "as": "উপাধি, ধৰ্ম আৰু চাৰিজন ৰজা"
+     },
+     "i": "star",
+     "ex": 4
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "pala-jayapala-end": {
+   "course": "pala-kings",
+   "no": 3,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Jaya Pala and the end of the Palas",
+    "as": "জয় পাল আৰু পালৰ অন্ত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Jaya Pala, the last Pala",
+      "as": "জয় পাল, শেষ পাল"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Ramapala conquers Kamarupa",
+      "as": "ৰামপালে কামৰূপ জয় কৰে"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A governor turns rebel",
+      "as": "ৰাজ্যপাল বিদ্ৰোহী হয়"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Vaidyadeva's grant at Kamauli",
+      "as": "বৈদ্যদেৱৰ কামৌলি দান"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "After the Palas",
+      "as": "পালসকলৰ পিছত"
+     },
+     "i": "star",
+     "ex": 4
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
   "pramatta-singha": {
    "course": "ahom-kings",
    "no": 32,
@@ -932,6 +1129,177 @@
      },
      "i": "moon",
      "ex": 3
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "salastambha-harjaravarman": {
+   "course": "salastambha-kings",
+   "no": 3,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Harjaravarman to Tyagasimha",
+    "as": "হৰ্জৰবৰ্মাৰ পৰা ত্যাগসিংহলৈ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "After a gap in the record",
+      "as": "নথিৰ ফাঁকৰ পিছত"
+     },
+     "i": "walk",
+     "ex": 4
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A fishing decree on the rock",
+      "as": "শিলত খোদিত মাছ-মৰা আদেশ"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Vanamala's plates near Tezpur",
+      "as": "তেজপুৰৰ ওচৰৰ বনমালৰ তাম্ৰফলক"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Jayamala and Balavarman III",
+      "as": "জয়মাল আৰু তৃতীয় বলবৰ্মা"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "The last king, no heir",
+      "as": "শেষ ৰজা, উত্তৰাধিকাৰী নাই"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "salastambha-harshavarman": {
+   "course": "salastambha-kings",
+   "no": 2,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Harshavarman and the Nepal marriage",
+    "as": "হৰ্ষবৰ্মা আৰু নেপালৰ বিয়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Harshavarman builds an empire",
+      "as": "হৰ্ষবৰ্মাই সাম্ৰাজ্য গঢ়ে"
+     },
+     "i": "crown",
+     "ex": 4
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A princess for Nepal",
+      "as": "নেপালৰ বাবে ৰাজকুমাৰী"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A battle in the north",
+      "as": "উত্তৰৰ যুদ্ধ"
+     },
+     "i": "flag",
+     "ex": 4
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 11
+    }
+   ]
+  },
+  "salastambha-rise": {
+   "course": "salastambha-kings",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Salastambha takes the throne",
+    "as": "শালস্তম্ভই সিংহাসন লয়"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A new line takes the throne",
+      "as": "নতুন বংশই সিংহাসন লয়"
+     },
+     "i": "crown",
+     "ex": 4
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Who were the Mlechchhas?",
+      "as": "ম্লেচ্ছসকল কোন আছিল?"
+     },
+     "i": "hill",
+     "ex": 4
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Naraka again",
+      "as": "আকৌ নৰক"
+     },
+     "i": "moon",
+     "ex": 4
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The five early kings",
+      "as": "পাঁচজন আদি ৰজা"
+     },
+     "i": "star",
+     "ex": 4
     },
     {
      "id": "test",

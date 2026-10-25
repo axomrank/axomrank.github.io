@@ -1,0 +1,356 @@
+{
+ "id": "salastambha-kings",
+ "order": 2,
+ "bank": "content/questions/salastambha.json",
+ "tabs": [
+  "lessons",
+  "family",
+  "profile"
+ ],
+ "title": {
+  "en": "The Salastambha Kings",
+  "as": "শালস্তম্ভ ৰজাসকল"
+ },
+ "eyebrow": {
+  "en": "Assam History · Early Assam",
+  "as": "অসমৰ ইতিহাস · প্ৰাচীন অসম"
+ },
+ "subtitle": {
+  "en": "c. 650–900 · the Mlechchha dynasty of Kamarupa, 3 lessons",
+  "as": "প্ৰায় ৬৫০–৯০০ · কামৰূপৰ ম্লেচ্ছ বংশ, ৩টা পাঠ"
+ },
+ "familyTitle": {
+  "en": "Dynasty",
+  "as": "বংশ"
+ },
+ "familyIntro": {
+  "en": "The 13 Salastambha kings in order. Dates are a reconstructed table; some names are debated.",
+  "as": "১৩ জন শালস্তম্ভ ৰজা ক্ৰম অনুসৰি। তাৰিখবোৰ পুনৰ্গঠিত তালিকা; কিছু নাম বিতৰ্কিত।"
+ },
+ "familyNote": {
+  "en": "Jivaraja and Digleswaravarman are left out: they are not confirmed in the checked inscriptions.",
+  "as": "জীৱৰাজ আৰু দিগ্লেশ্বৰবৰ্মা বাদ দিয়া হৈছে: পৰীক্ষা কৰা লিপিত তেওঁলোকৰ নিশ্চয়তা নাই।"
+ },
+ "eras": [
+  {
+   "id": "salastambha",
+   "from": 1,
+   "to": 3,
+   "title": {
+    "en": "The Salastambha dynasty · c. 650–900",
+    "as": "শালস্তম্ভ বংশ · প্ৰায় ৬৫০–৯০০"
+   }
+  }
+ ],
+ "kings": [
+  {
+   "n": 1,
+   "id": "salastambha-rise",
+   "name": {
+    "en": "Salastambha takes the throne",
+    "as": "শালস্তম্ভই সিংহাসন লয়"
+   },
+   "reign": "c. 650–725",
+   "face": "salastambha-faces/salastamba.webp",
+   "tier": "A",
+   "lesson": "salastambha-rise",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 1–5",
+     "as": "১–৫ নম্বৰ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "id": "salastambha-harshavarman",
+   "name": {
+    "en": "Harshavarman and the Nepal marriage",
+    "as": "হৰ্ষবৰ্মা আৰু নেপালৰ বিয়া"
+   },
+   "reign": "c. 725–760",
+   "face": "salastambha-faces/harshavarman.webp",
+   "tier": "A",
+   "lesson": "salastambha-harshavarman",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 6–7",
+     "as": "৬–৭ নম্বৰ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "id": "salastambha-harjaravarman",
+   "name": {
+    "en": "Harjaravarman to Tyagasimha",
+    "as": "হৰ্জৰবৰ্মাৰ পৰা ত্যাগসিংহলৈ"
+   },
+   "reign": "c. 795–900",
+   "face": "salastambha-faces/harjaravarman.webp",
+   "tier": "A",
+   "lesson": "salastambha-harjaravarman",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 8–13",
+     "as": "৮–১৩ নম্বৰ ৰজা"
+    }
+   }
+  }
+ ],
+ "rulers": [
+  {
+   "n": 1,
+   "id": "salastamba",
+   "name": {
+    "en": "Salastambha",
+    "as": "শালস্তম্ভ"
+   },
+   "reign": "c. 650–670",
+   "face": "salastambha-faces/salastamba.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Founder of the dynasty",
+     "as": "বংশৰ প্ৰতিষ্ঠাপক"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "id": "vijaya",
+   "name": {
+    "en": "Vijaya (Vigrahastambha)",
+    "as": "বিজয় (বিগ্ৰহস্তম্ভ)"
+   },
+   "reign": "c. 670–680",
+   "face": "salastambha-faces/vijaya.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "salastamba-k",
+    "t": {
+     "en": "Successor of Salastambha",
+     "as": "শালস্তম্ভৰ উত্তৰাধিকাৰী"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "id": "palaka",
+   "name": {
+    "en": "Palaka",
+    "as": "পালক"
+   },
+   "reign": "c. 680–695",
+   "face": "salastambha-faces/palaka.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "vijaya",
+    "t": {
+     "en": "Third king",
+     "as": "তৃতীয় ৰজা"
+    }
+   }
+  },
+  {
+   "n": 4,
+   "id": "kumara",
+   "name": {
+    "en": "Kumara",
+    "as": "কুমাৰ"
+   },
+   "reign": "c. 695–710",
+   "face": "salastambha-faces/kumara.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "palaka",
+    "t": {
+     "en": "Fourth king",
+     "as": "চতুৰ্থ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 5,
+   "id": "vajradeva",
+   "name": {
+    "en": "Vajradeva",
+    "as": "বজ্ৰদেৱ"
+   },
+   "reign": "c. 710–725",
+   "face": "salastambha-faces/vajradeva.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "kumara",
+    "t": {
+     "en": "Fifth king",
+     "as": "পঞ্চম ৰজা"
+    }
+   }
+  },
+  {
+   "n": 6,
+   "id": "harshavarman",
+   "name": {
+    "en": "Harshavarman (Harshadeva)",
+    "as": "হৰ্ষবৰ্মা (হৰ্ষদেৱ)"
+   },
+   "reign": "c. 725–745",
+   "face": "salastambha-faces/harshavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "vajradeva",
+    "t": {
+     "en": "Expanded the kingdom; father of Rajyamati",
+     "as": "ৰাজ্য বিস্তাৰ কৰে; ৰাজ্যমতীৰ পিতৃ"
+    }
+   }
+  },
+  {
+   "n": 7,
+   "id": "balavarman-ii",
+   "name": {
+    "en": "Balavarman II",
+    "as": "দ্বিতীয় বলবৰ্মা"
+   },
+   "reign": "c. 745–760",
+   "face": "salastambha-faces/balavarman-ii.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "harshavarman",
+    "t": {
+     "en": "Son of Harshavarman",
+     "as": "হৰ্ষবৰ্মাৰ পুত্ৰ"
+    }
+   }
+  },
+  {
+   "n": 8,
+   "id": "salambha",
+   "name": {
+    "en": "Salambha",
+    "as": "শালম্ভ"
+   },
+   "reign": "c. 795–815",
+   "face": "salastambha-faces/salambha.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "balavarman-ii",
+    "t": {
+     "en": "After a gap in the record",
+     "as": "নথিৰ ফাঁকৰ পিছত"
+    }
+   }
+  },
+  {
+   "n": 9,
+   "id": "harjaravarman",
+   "name": {
+    "en": "Harjaravarman",
+    "as": "হৰ্জৰবৰ্মা"
+   },
+   "reign": "c. 815–832",
+   "face": "salastambha-faces/harjaravarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "salambha",
+    "t": {
+     "en": "Son of Arathi, Salambha's brother",
+     "as": "আৰাথিৰ পুত্ৰ, শালম্ভৰ ভাইৰ"
+    }
+   }
+  },
+  {
+   "n": 10,
+   "id": "vanamalavarman",
+   "name": {
+    "en": "Vanamalavarman",
+    "as": "বনমালবৰ্মা"
+   },
+   "reign": "c. 832–855",
+   "face": "salastambha-faces/vanamalavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "harjaravarman",
+    "t": {
+     "en": "Son of Harjaravarman",
+     "as": "হৰ্জৰবৰ্মাৰ পুত্ৰ"
+    }
+   }
+  },
+  {
+   "n": 11,
+   "id": "jayamala",
+   "name": {
+    "en": "Jayamala (Virabahu)",
+    "as": "জয়মাল (বীৰবাহু)"
+   },
+   "reign": "c. 855–860",
+   "face": "salastambha-faces/jayamala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "vanamalavarman",
+    "t": {
+     "en": "Son of Vanamalavarman",
+     "as": "বনমালবৰ্মাৰ পুত্ৰ"
+    }
+   }
+  },
+  {
+   "n": 12,
+   "id": "balavarman-iii",
+   "name": {
+    "en": "Balavarman III",
+    "as": "তৃতীয় বলবৰ্মা"
+   },
+   "reign": "c. 860–880",
+   "face": "salastambha-faces/balavarman-iii.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "jayamala",
+    "t": {
+     "en": "Son of Jayamala",
+     "as": "জয়মালৰ পুত্ৰ"
+    }
+   }
+  },
+  {
+   "n": 13,
+   "id": "tyagasimha",
+   "name": {
+    "en": "Tyagasimha",
+    "as": "ত্যাগসিংহ"
+   },
+   "reign": "c. 890–900",
+   "face": "salastambha-faces/tyagasimha.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "balavarman-iii",
+    "t": {
+     "en": "Last king; died without an heir",
+     "as": "শেষ ৰজা; উত্তৰাধিকাৰীবিহীনে মৃত্যু"
+    }
+   }
+  }
+ ]
+}

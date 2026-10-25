@@ -1,0 +1,242 @@
+{
+ "id": "pala-kings",
+ "order": 3,
+ "bank": "content/questions/pala.json",
+ "tabs": [
+  "lessons",
+  "family",
+  "profile"
+ ],
+ "title": {
+  "en": "The Pala Kings of Kamarupa",
+  "as": "কামৰূপৰ পাল ৰজাসকল"
+ },
+ "eyebrow": {
+  "en": "Assam History · Early Assam",
+  "as": "অসমৰ ইতিহাস · প্ৰাচীন অসম"
+ },
+ "subtitle": {
+  "en": "c. 900–1142 · 7 Pala kings and the Bengal period, 3 lessons",
+  "as": "প্ৰায় ৯০০–১১৪২ · ৭ জন পাল ৰজা আৰু বংগ যুগ, ৩টা পাঠ"
+ },
+ "familyTitle": {
+  "en": "Dynasty",
+  "as": "বংশ"
+ },
+ "familyIntro": {
+  "en": "The seven Pala kings of Kamarupa in order. Reign dates follow a standard table and are shown as 'c.'.",
+  "as": "কামৰূপৰ সাতজন পাল ৰজা ক্ৰম অনুসৰি। ৰাজত্বকাল এখন সাধাৰণ তালিকা অনুসৰি আৰু 'প্ৰায়' হিচাপে দিয়া।"
+ },
+ "familyNote": {
+  "en": "These are not the Pala kings of Bengal, a separate dynasty.",
+  "as": "এওঁলোক বংগৰ পাল ৰজা নহয়, সেয়া বেলেগ বংশ।"
+ },
+ "eras": [
+  {
+   "id": "pala",
+   "from": 1,
+   "to": 3,
+   "title": {
+    "en": "The Pala dynasty · c. 900–1100",
+    "as": "পাল বংশ · প্ৰায় ৯০০–১১০০"
+   }
+  }
+ ],
+ "kings": [
+  {
+   "n": 1,
+   "id": "pala-brahmapala-ratnapala",
+   "name": {
+    "en": "Brahma Pala and Ratna Pala",
+    "as": "ব্ৰহ্ম পাল আৰু ৰত্ন পাল"
+   },
+   "reign": "c. 900–960",
+   "face": "pala-faces/brahmapala.webp",
+   "tier": "A",
+   "lesson": "pala-brahmapala-ratnapala",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 1–2",
+     "as": "১–২ নম্বৰ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "id": "pala-indrapala-dharmapala",
+   "name": {
+    "en": "Indra Pala to Dharma Pala",
+    "as": "ইন্দ্ৰ পালৰ পৰা ধৰ্ম পাললৈ"
+   },
+   "reign": "c. 960–1060",
+   "face": "pala-faces/dharmapala.webp",
+   "tier": "A",
+   "lesson": "pala-indrapala-dharmapala",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 3–6",
+     "as": "৩–৬ নম্বৰ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "id": "pala-jayapala-end",
+   "name": {
+    "en": "Jaya Pala and the end of the Palas",
+    "as": "জয় পাল আৰু পালৰ অন্ত"
+   },
+   "reign": "c. 1075–1142",
+   "face": "pala-faces/jayapala.webp",
+   "tier": "A",
+   "lesson": "pala-jayapala-end",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "King 7 and after",
+     "as": "৭ম ৰজা আৰু তাৰ পিছত"
+    }
+   }
+  }
+ ],
+ "rulers": [
+  {
+   "n": 1,
+   "id": "brahmapala",
+   "name": {
+    "en": "Brahma Pala",
+    "as": "ব্ৰহ্ম পাল"
+   },
+   "reign": "c. 900–920",
+   "face": "pala-faces/brahmapala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Elected by the chieftains",
+     "as": "সৰ্দাৰে নিৰ্বাচিত"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "id": "ratnapala",
+   "name": {
+    "en": "Ratna Pala",
+    "as": "ৰত্ন পাল"
+   },
+   "reign": "c. 920–960",
+   "face": "pala-faces/ratnapala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "brahmapala",
+    "t": {
+     "en": "Son of Brahma Pala; built Durjaya",
+     "as": "ব্ৰহ্ম পালৰ পুত্ৰ; দুৰ্জয় নিৰ্মাণ"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "id": "indrapala",
+   "name": {
+    "en": "Indra Pala",
+    "as": "ইন্দ্ৰ পাল"
+   },
+   "reign": "c. 960–990",
+   "face": "pala-faces/indrapala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "ratnapala",
+    "t": {
+     "en": "Grandson of Ratna Pala",
+     "as": "ৰত্ন পালৰ নাতি"
+    }
+   }
+  },
+  {
+   "n": 4,
+   "id": "gopala",
+   "name": {
+    "en": "Go Pala",
+    "as": "গোপাল"
+   },
+   "reign": "c. 990–1015",
+   "face": "pala-faces/gopala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "indrapala",
+    "t": {
+     "en": "Fourth Pala king",
+     "as": "চতুৰ্থ পাল ৰজা"
+    }
+   }
+  },
+  {
+   "n": 5,
+   "id": "harshapala",
+   "name": {
+    "en": "Harsha Pala",
+    "as": "হৰ্ষ পাল"
+   },
+   "reign": "c. 1015–1035",
+   "face": "pala-faces/harshapala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "gopala",
+    "t": {
+     "en": "Father of Dharma Pala",
+     "as": "ধৰ্ম পালৰ পিতৃ"
+    }
+   }
+  },
+  {
+   "n": 6,
+   "id": "dharmapala",
+   "name": {
+    "en": "Dharma Pala",
+    "as": "ধৰ্ম পাল"
+   },
+   "reign": "c. 1035–1060",
+   "face": "pala-faces/dharmapala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "harshapala",
+    "t": {
+     "en": "Son of Harsha Pala",
+     "as": "হৰ্ষ পালৰ পুত্ৰ"
+    }
+   }
+  },
+  {
+   "n": 7,
+   "id": "jayapala",
+   "name": {
+    "en": "Jaya Pala",
+    "as": "জয় পাল"
+   },
+   "reign": "c. 1075–1100",
+   "face": "pala-faces/jayapala.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": "dharmapala",
+    "t": {
+     "en": "Last known Pala king",
+     "as": "শেষ জনা পাল ৰজা"
+    }
+   }
+  }
+ ]
+}

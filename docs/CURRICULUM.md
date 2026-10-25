@@ -6,7 +6,7 @@ Status: ✅ done · 🔨 next · ⬜ planned
 
 | # | Course | Span | Status |
 |---|---|---|---|
-| H1 | Early Assam: Pragjyotisha and Kamarupa | earliest times–c. 1200 | ⬜ |
+| H1 | Early Assam: Pragjyotisha and Kamarupa | earliest times–c. 1200 | 🔨 Three dynasty courses done (Varman 3 lessons, Salastambha 3, Pala 3); legends, Naraka–Bhagadatta and sources still to add |
 | H2 | Kamata, Koch and the neighbouring kingdoms | c. 1200–1700s | ⬜ |
 | H3 | The Ahom Kings | 1228–1838 | ✅ 41 lessons |
 | H4 | Mughals, Burmese and the end of the kingdom | 1615–1826 | ⬜ (partly inside H3; here as the wars by theme) |
