@@ -52,12 +52,19 @@ def bilingual(v, where):
         if not v["en"] or not v["as"]: err(f"{where}: empty English or Assamese text")
     elif isinstance(v, list): [bilingual(x, where) for x in v]
 
+courses = {}
+for f in sorted(os.listdir("content/courses")):
+    if f.endswith(".json"):
+        C = json.load(open(f"content/courses/{f}", encoding="utf-8"))
+        if C.get("id") + ".json" != f: err(f"courses/{f}: id '{C.get('id')}' must match the file name")
+        courses[C["id"]] = C
 lessons = {}
 for f in sorted(os.listdir("content/lessons")):
     if f.endswith(".json"):
         L = json.load(open(f"content/lessons/{f}", encoding="utf-8"))
         if L.get("id") + ".json" != f: err(f"{f}: id '{L.get('id')}' must match the file name")
         lessons[L["id"]] = L
+        if L.get("course", "ahom-kings") not in courses: err(f"{f}: unknown course '{L.get('course')}'")
 
 all_ids = {}
 for lid, L in lessons.items():
@@ -134,24 +141,24 @@ for lid, L in lessons.items():
             if s["type"] == "map":
                 for c in s["choices"]:
                     if c not in mp.get("show", []): err(f"{lid}/{s['id']}: map choice '{c}' is not shown on the lesson map")
-bank = json.load(open("content/questions/ahom.json", encoding="utf-8"))
-for q in bank["questions"]:
-    if q["id"] in all_ids: err(f"bank: duplicate id {q['id']}")
-    all_ids[q["id"]] = "bank"
-    for k in ("era", "lesson", "q", "options", "answer", "why"):
-        if k not in q: err(f"bank/{q['id']}: missing '{k}'")
-    if q.get("lesson") not in lessons: err(f"bank/{q['id']}: unknown lesson '{q.get('lesson')}'")
-    if not 0 <= q.get("answer", -1) < len(q.get("options", [])): err(f"bank/{q['id']}: answer out of range")
-
-course = json.load(open("content/courses/ahom-kings.json", encoding="utf-8"))
-era_ids = {e["id"] for e in course["eras"]}
-for q in bank["questions"]:
-    if q.get("era") not in era_ids: err(f"bank/{q['id']}: unknown era '{q.get('era')}'")
-for k in course["kings"]:
-    if k.get("tier") not in ("A", "B", "C"): err(f"course: king {k['n']} needs tier A, B or C")
-for k in course["kings"]:
-    if not os.path.exists(f"content/media/{k['face']}"): err(f"course: missing face content/media/{k['face']}")
-    if k.get("lesson") and k["lesson"] not in lessons: err(f"course: king {k['n']} points to missing lesson {k['lesson']}")
+for cid, course in courses.items():
+    bank = json.load(open(course.get("bank", "content/questions/ahom.json"), encoding="utf-8"))
+    mine = {lid for lid, L in lessons.items() if L.get("course", "ahom-kings") == cid}
+    era_ids = {e["id"] for e in course["eras"]}
+    for q in bank["questions"]:
+        if q["id"] in all_ids: err(f"bank: duplicate id {q['id']}")
+        all_ids[q["id"]] = "bank"
+        for k in ("era", "lesson", "q", "options", "answer", "why"):
+            if k not in q: err(f"bank/{q['id']}: missing '{k}'")
+        if q.get("lesson") not in mine: err(f"bank/{q['id']}: lesson '{q.get('lesson')}' is not in course {cid}")
+        if not 0 <= q.get("answer", -1) < len(q.get("options", [])): err(f"bank/{q['id']}: answer out of range")
+        if q.get("era") not in era_ids: err(f"bank/{q['id']}: unknown era '{q.get('era')}'")
+    for k in course["kings"]:
+        if k.get("tier") not in ("A", "B", "C"): err(f"{cid}: entry {k['n']} needs tier A, B or C")
+        if not os.path.exists(f"content/media/{k['face']}"): err(f"{cid}: missing face content/media/{k['face']}")
+        if k.get("lesson") and k["lesson"] not in mine: err(f"{cid}: entry {k['n']} points to lesson {k['lesson']} which is not in this course")
+    for k in course.get("rulers", []):
+        if not os.path.exists(f"content/media/{k['face']}"): err(f"{cid}: missing ruler face content/media/{k['face']}")
 
 if errors:
     print(f"build: {len(errors)} problem(s):"); [print("  -", e) for e in errors]; sys.exit(1)
@@ -166,8 +173,8 @@ for f in ("index.html", "lesson.html", "manifest.webmanifest", "_headers"): h.up
 h.update(re.sub(r'const VERSION = "[^"]*";', "", open("sw.js", encoding="utf-8").read()).encode())   # the worker itself, minus its version line
 version = h.hexdigest()[:10]
 
-manifest = {"version": version, "courses": [{"id": course["id"], "file": "content/courses/ahom-kings.json"}],
-            "lessons": {lid: {"no": L["no"], "version": L["version"], "steps": len(L["units"]) + 1, "title": L["king"],
+manifest = {"version": version, "courses": [{"id": cid, "file": f"content/courses/{cid}.json"} for cid in courses],
+            "lessons": {lid: {"course": L.get("course", "ahom-kings"), "no": L["no"], "version": L["version"], "steps": len(L["units"]) + 1, "title": L["king"],
                               # unit summaries, so a lesson page can draw the whole course path without loading every lesson
                               "units": [{"id": u["id"], "t": u["title"], "i": u.get("icon", "trophy"), "ex": sum(s["type"] != "story" for s in u["steps"])}
                                         for u in L["units"] + [L["test"]]]} for lid, L in lessons.items()}}

@@ -619,3 +619,6 @@ a.tl-row { background: var(--surface); border: 1.5px solid var(--line); }
 .sec-banner.open .st { background: var(--terra); color: #FFF8EF; }
 .sec-banner.locked { opacity: .78; }
 
+
+/* course hub link inside the course hero */
+.c-hero .back-hub { position: relative; display: inline-block; margin-top: 8px; padding: 2px 10px; border-radius: 99px; background: rgba(255,255,255,.18); color: #FFF6EC; font-size: 12px; font-weight: 800; text-decoration: none; }

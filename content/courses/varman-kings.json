@@ -1,0 +1,356 @@
+{
+ "id": "varman-kings",
+ "order": 1,
+ "bank": "content/questions/varman.json",
+ "tabs": [
+  "lessons",
+  "family",
+  "profile"
+ ],
+ "title": {
+  "en": "The Varman Kings",
+  "as": "বৰ্মণ ৰজাসকল"
+ },
+ "eyebrow": {
+  "en": "Assam History · Early Assam",
+  "as": "অসমৰ ইতিহাস · প্ৰাচীন অসম"
+ },
+ "subtitle": {
+  "en": "c. 350–650 · 13 kings of Kamarupa, 3 lessons",
+  "as": "প্ৰায় ৩৫০–৬৫০ · কামৰূপৰ ১৩ জন ৰজা, ৩টা পাঠ"
+ },
+ "familyTitle": {
+  "en": "Dynasty",
+  "as": "বংশ"
+ },
+ "familyIntro": {
+  "en": "The 13 Varman kings in order. A solid line: son of the king above. A dashed line: brother.",
+  "as": "১৩ জন বৰ্মণ ৰজা ক্ৰম অনুসৰি। সৰল ৰেখা: ওপৰৰ ৰজাৰ পুত্ৰ। ডেচ ৰেখা: ভাই।"
+ },
+ "familyNote": {
+  "en": "Order and parents follow the Nidhanpur plates. Dates are the popular reconstructed table: write 'c.' before each.",
+  "as": "ক্ৰম আৰু পিতৃ-মাতৃ নিধনপুৰ তাম্ৰফলক অনুসৰি। তাৰিখবোৰ জনপ্ৰিয় পুনৰ্গঠিত তালিকা: প্ৰতিটোৰ আগত 'প্ৰায়' লিখা।"
+ },
+ "eras": [
+  {
+   "id": "varman",
+   "from": 1,
+   "to": 3,
+   "title": {
+    "en": "The Varman dynasty · c. 350–650",
+    "as": "বৰ্মণ বংশ · প্ৰায় ৩৫০–৬৫০"
+   }
+  }
+ ],
+ "kings": [
+  {
+   "n": 1,
+   "id": "varman-founders",
+   "name": {
+    "en": "The first Varman kings",
+    "as": "প্ৰথম বৰ্মণ ৰজাসকল"
+   },
+   "reign": "c. 350–518",
+   "face": "varman-faces/pushyavarman.webp",
+   "tier": "A",
+   "lesson": "varman-founders",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 1–7",
+     "as": "১–৭ নম্বৰ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "id": "varman-sixth-century",
+   "name": {
+    "en": "Bhutivarman to the Gauda wars",
+    "as": "ভূতিবৰ্মাৰ পৰা গৌড় যুদ্ধলৈ"
+   },
+   "reign": "c. 518–600",
+   "face": "varman-faces/bhutivarman.webp",
+   "tier": "A",
+   "lesson": "varman-sixth-century",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Kings 8–12",
+     "as": "৮–১২ নম্বৰ ৰজা"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "id": "varman-bhaskaravarman",
+   "name": {
+    "en": "Bhaskaravarman and Harsha",
+    "as": "ভাস্কৰবৰ্মা আৰু হৰ্ষ"
+   },
+   "reign": "c. 600–650",
+   "face": "varman-faces/bhaskaravarman.webp",
+   "tier": "A",
+   "lesson": "varman-bhaskaravarman",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "King 13",
+     "as": "১৩ নম্বৰ ৰজা"
+    }
+   }
+  }
+ ],
+ "rulers": [
+  {
+   "n": 1,
+   "id": "pushyavarman",
+   "name": {
+    "en": "Pushyavarman",
+    "as": "পুষ্যবৰ্মা"
+   },
+   "reign": "c. 350–374",
+   "face": "varman-faces/pushyavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "Founder of the dynasty",
+     "as": "বংশৰ প্ৰতিষ্ঠাপক"
+    }
+   }
+  },
+  {
+   "n": 2,
+   "id": "samudravarman",
+   "name": {
+    "en": "Samudravarman",
+    "as": "সমুদ্ৰবৰ্মা"
+   },
+   "reign": "c. 374–398",
+   "face": "varman-faces/samudravarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "pushyavarman",
+    "t": {
+     "en": "Son of Pushyavarman · queen Dattadevi",
+     "as": "পুষ্যবৰ্মাৰ পুত্ৰ · ৰাণী দত্তদেৱী"
+    }
+   }
+  },
+  {
+   "n": 3,
+   "id": "balavarman",
+   "name": {
+    "en": "Balavarman I",
+    "as": "প্ৰথম বলবৰ্মা"
+   },
+   "reign": "c. 398–422",
+   "face": "varman-faces/balavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "samudravarman",
+    "t": {
+     "en": "Son of Samudravarman · queen Ratnavati",
+     "as": "সমুদ্ৰবৰ্মাৰ পুত্ৰ · ৰাণী ৰত্নৱতী"
+    }
+   }
+  },
+  {
+   "n": 4,
+   "id": "kalyanavarman",
+   "name": {
+    "en": "Kalyanavarman",
+    "as": "কল্যাণবৰ্মা"
+   },
+   "reign": "c. 422–446",
+   "face": "varman-faces/kalyanavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "balavarman",
+    "t": {
+     "en": "Son of Balavarman I · queen Gandharvavati",
+     "as": "প্ৰথম বলবৰ্মাৰ পুত্ৰ · ৰাণী গন্ধৰ্ৱৱতী"
+    }
+   }
+  },
+  {
+   "n": 5,
+   "id": "ganapativarman",
+   "name": {
+    "en": "Ganapativarman",
+    "as": "গণপতিবৰ্মা"
+   },
+   "reign": "c. 446–470",
+   "face": "varman-faces/ganapativarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "kalyanavarman",
+    "t": {
+     "en": "Son of Kalyanavarman · queen Yajnavati",
+     "as": "কল্যাণবৰ্মাৰ পুত্ৰ · ৰাণী যজ্ঞৱতী"
+    }
+   }
+  },
+  {
+   "n": 6,
+   "id": "mahendravarman",
+   "name": {
+    "en": "Mahendravarman",
+    "as": "মহেন্দ্ৰবৰ্মা"
+   },
+   "reign": "c. 470–494",
+   "face": "varman-faces/mahendravarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "ganapativarman",
+    "t": {
+     "en": "Son of Ganapativarman · queen Suvrata",
+     "as": "গণপতিবৰ্মাৰ পুত্ৰ · ৰাণী সুব্ৰতা"
+    }
+   }
+  },
+  {
+   "n": 7,
+   "id": "narayanavarman",
+   "name": {
+    "en": "Narayanavarman",
+    "as": "নাৰায়ণবৰ্মা"
+   },
+   "reign": "c. 494–518",
+   "face": "varman-faces/narayanavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "mahendravarman",
+    "t": {
+     "en": "Son of Mahendravarman · queen Devavati",
+     "as": "মহেন্দ্ৰবৰ্মাৰ পুত্ৰ · ৰাণী দেৱৱতী"
+    }
+   }
+  },
+  {
+   "n": 8,
+   "id": "bhutivarman",
+   "name": {
+    "en": "Bhutivarman",
+    "as": "ভূতিবৰ্মা"
+   },
+   "reign": "c. 518–542",
+   "face": "varman-faces/bhutivarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "narayanavarman",
+    "t": {
+     "en": "Son of Narayanavarman · queen Vijnanavati",
+     "as": "নাৰায়ণবৰ্মাৰ পুত্ৰ · ৰাণী বিজ্ঞানৱতী"
+    }
+   }
+  },
+  {
+   "n": 9,
+   "id": "chandramukhavarman",
+   "name": {
+    "en": "Chandramukhavarman",
+    "as": "চন্দ্ৰমুখবৰ্মা"
+   },
+   "reign": "c. 542–566",
+   "face": "varman-faces/chandramukhavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "bhutivarman",
+    "t": {
+     "en": "Son of Bhutivarman · queen Bhogavati",
+     "as": "ভূতিবৰ্মাৰ পুত্ৰ · ৰাণী ভোগৱতী"
+    }
+   }
+  },
+  {
+   "n": 10,
+   "id": "sthitavarman",
+   "name": {
+    "en": "Sthitavarman",
+    "as": "স্থিতবৰ্মা"
+   },
+   "reign": "c. 566–590",
+   "face": "varman-faces/sthitavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "chandramukhavarman",
+    "t": {
+     "en": "Son of Chandramukhavarman · queen Nayanadevi",
+     "as": "চন্দ্ৰমুখবৰ্মাৰ পুত্ৰ · ৰাণী নয়নদেৱী"
+    }
+   }
+  },
+  {
+   "n": 11,
+   "id": "susthitavarman",
+   "name": {
+    "en": "Susthitavarman",
+    "as": "সুস্থিতবৰ্মা"
+   },
+   "reign": "c. 590–595",
+   "face": "varman-faces/susthitavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "sthitavarman",
+    "t": {
+     "en": "Son of Sthitavarman · queen Syamadevi",
+     "as": "স্থিতবৰ্মাৰ পুত্ৰ · ৰাণী শ্যামাদেৱী"
+    }
+   }
+  },
+  {
+   "n": 12,
+   "id": "supratishthitavarman",
+   "name": {
+    "en": "Supratishthitavarman",
+    "as": "সুপ্ৰতিষ্ঠিতবৰ্মা"
+   },
+   "reign": "c. 595–600",
+   "face": "varman-faces/supratishthitavarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "son",
+    "of": "susthitavarman",
+    "t": {
+     "en": "Son of Susthitavarman",
+     "as": "সুস্থিতবৰ্মাৰ পুত্ৰ"
+    }
+   }
+  },
+  {
+   "n": 13,
+   "id": "bhaskaravarman",
+   "name": {
+    "en": "Bhaskaravarman",
+    "as": "ভাস্কৰবৰ্মা"
+   },
+   "reign": "c. 600–650",
+   "face": "varman-faces/bhaskaravarman.webp",
+   "tier": "A",
+   "rel": {
+    "type": "brother",
+    "of": "supratishthitavarman",
+    "t": {
+     "en": "Younger brother of Supratishthitavarman",
+     "as": "সুপ্ৰতিষ্ঠিতবৰ্মাৰ সৰু ভাই"
+    }
+   }
+  }
+ ]
+}

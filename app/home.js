@@ -1,7 +1,7 @@
 /* =========================================================
    Course home: Lessons (eras, checkpoints, daily review), dynasty Timeline,
    Family (succession), and Profile (stats, activity, weak lessons).
-   Reads content/courses/ahom-kings.json and content/manifest.json.
+   Reads content/manifest.json and the chosen course (index.html?course=<id>); without ?course it shows the course hub.
    ========================================================= */
 (() => {
 "use strict";
@@ -15,7 +15,8 @@ const UI = Object.assign({ tab: "lessons", open: {} }, AXOM.store.get("axom:ui",
 const saveUI = () => AXOM.store.set("axom:ui", UI);
 const ROOF = '<svg class="roof" viewBox="0 0 320 26" preserveAspectRatio="none"><path d="M0 4c22 2 30 10 52 13 44 6 172 6 216 0 22-3 30-11 52-13" fill="none" stroke="#fff" stroke-width="2"/><path d="M60 17v7M100 19v6M140 20v5M180 20v5M220 19v6M260 17v7" stroke="#fff" stroke-width="1.6"/></svg>';
 const STAR = { A: "★★★", B: "★★", C: "★" };
-const TABS = [["lessons", B("Lessons", "পাঠ")], ["timeline", B("Timeline", "সময়ৰেখা")], ["family", B("Family", "বংশ")], ["profile", B("Profile", "প্ৰফাইল")]];
+const ALL_TABS = { lessons: B("Lessons", "পাঠ"), timeline: B("Timeline", "সময়ৰেখা"), family: B("Family", "বংশ"), profile: B("Profile", "প্ৰফাইল") };
+const CID = (params.get("course") || "").replace(/[^a-z0-9-]/g, "");   // empty = show the hub
 
 document.body.insertAdjacentHTML("afterbegin", `
 <input type="checkbox" id="as" aria-label="Show in Assamese">
@@ -44,11 +45,29 @@ function stats() {
   $("#fire").innerHTML = ICON.fire + N(s); $("#fire").classList.toggle("on", s > 0);
   $("#gem").innerHTML = ICON.gem + N(G.xp);
 }
-const years = (reign) => { const m = String(reign).match(/\d{4}/g) || []; return [+m[0], +(m[1] || m[0])]; };
+const years = (reign) => { const m = String(reign).match(/\d{3,4}/g) || []; return [+m[0], +(m[1] || m[0])]; };
 
 let course, info;
+/* ---------- hub: one card per course ---------- */
+async function hub() {
+  const m = await AXOM.getJSON("content/manifest.json");
+  if (m.courses.length === 1) { location.replace(`index.html?course=${m.courses[0].id}`); return; }
+  const list = await Promise.all(m.courses.map((c) => AXOM.getJSON(c.file)));
+  list.sort((a, b) => (a.order || 99) - (b.order || 99));
+  const cards = list.map((c) => {
+    const ids = c.kings.filter((k) => k.lesson && m.lessons[k.lesson]).map((k) => k.lesson), done = ids.filter((id) => AXOM.getLesson(id).done.test).length;
+    return `<a class="review-card" href="index.html?course=${c.id}"><span class="ic">${ICON.crown || ICON.flag || "★"}</span><span><b>${T(c.title)}</b><span class="s">${T(c.subtitle)} · ${T(B(`${done}/${ids.length} lessons done`, `${asNum(ids.length)}টাৰ ${asNum(done)}টা পাঠ সম্পূৰ্ণ`))}</span></span><span class="go">›</span></a>`;
+  }).join("");
+  $("#course").innerHTML = `<section class="c-hero">${ROOF}<div class="eyebrow">${T(B("Assam exam preparation", "অসম পৰীক্ষাৰ প্ৰস্তুতি"))}</div><h1>Axomrank</h1><p>${T(B("ADRE · Assam TET · APSC · Assam Police SI. Pick a course.", "ADRE · অসম TET · APSC · অসম আৰক্ষী SI। এটা পাঠ্যক্ৰম বাছনি কৰা।"))}</p></section>
+    <p class="tab-intro">${T(B("Assam History, in order of time", "অসমৰ ইতিহাস, সময়ৰ ক্ৰমত"))}</p>${cards}
+    <div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
+  $("#continue").classList.add("hidden");
+}
 async function render() {
-  if (!course) [course, info] = await Promise.all([AXOM.getJSON("content/courses/ahom-kings.json"), AXOM.getJSON("content/manifest.json").then((m) => m.lessons)]);
+  if (!CID) return hub();
+  if (!course) [course, info] = await Promise.all([AXOM.getJSON(`content/courses/${CID}.json`), AXOM.getJSON("content/manifest.json").then((m) => m.lessons)]);
+  const TABS = (course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : ALL_TABS[k]]);
+  if (!TABS.some(([k]) => k === UI.tab)) UI.tab = "lessons";
   const byNo = Object.fromEntries(course.kings.filter((k) => k.lesson && info[k.lesson]).map((k) => [k.n, k.lesson]));
   const doneTest = (id) => !!AXOM.getLesson(id).done.test;
   const status = (k) => {
@@ -61,7 +80,7 @@ async function render() {
     return { s: UNLOCK_ALL || !prev || doneTest(prev) ? "open" : "locked", id, done, steps };
   };
   const tabs = `<div class="tabs home-tabs" role="tablist">${TABS.map(([k, t]) => `<button class="tab ${UI.tab === k ? "on" : ""}" data-tab="${k}">${T(t)}</button>`).join("")}</div>`;
-  const hero = `<section class="c-hero">${ROOF}<div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
+  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="index.html" aria-label="All courses">‹ Axomrank</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
   const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab }[UI.tab](status, byNo);
   $("#course").innerHTML = hero + tabs + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
   // sticky Continue: the next open lesson that is not finished
@@ -84,7 +103,7 @@ function lessonsTab(status) {
     const checkpoint = avail.length ? `<div class="cp-card ${cpDone ? "done" : cpOpen ? "open" : ""}">
         <span class="ic">${cpDone ? ICON.check : "🏁"}</span>
         <span><b>${T(B("Era checkpoint", "যুগৰ পৰীক্ষা"))}</b><span class="s">${cpDone ? T(B("Passed", "উত্তীৰ্ণ")) : cpOpen ? T(B("15 exam-style questions · pass mark 80%", "পৰীক্ষাৰ ধৰণৰ ১৫টা প্ৰশ্ন · উত্তীৰ্ণ নম্বৰ ৮০%")) : T(B("Opens when this era's lessons are done", "এই যুগৰ পাঠবোৰ শেষ হ'লে খোল খাব"))}</span></span>
-        ${cpOpen || cpDone ? `<a class="cp-go" href="lesson.html?checkpoint=${e.id}">${cpDone ? T(B("Retake", "আকৌ")) : T(B("Start", "আৰম্ভ"))}</a>` : `<a class="cp-skip" href="lesson.html?checkpoint=${e.id}&testout=1">${T(B("Test out", "পৰীক্ষা দি আগবাঢ়া"))}</a>`}
+        ${cpOpen || cpDone ? `<a class="cp-go" href="lesson.html?checkpoint=${e.id}&course=${CID}">${cpDone ? T(B("Retake", "আকৌ")) : T(B("Start", "আৰম্ভ"))}</a>` : `<a class="cp-skip" href="lesson.html?checkpoint=${e.id}&course=${CID}&testout=1">${T(B("Test out", "পৰীক্ষা দি আগবাঢ়া"))}</a>`}
       </div>` : "";
     return `<section class="era-sec ${open ? "open" : ""}">
       <button class="era-head" data-era="${e.id}"><span class="t">${T(e.title)}</span><span class="p">${T(B(`${done}/${kings.length} lessons`, `${asNum(kings.length)}টাৰ ${asNum(done)}টা পাঠ`))}</span><span class="chev">${ICON.chevron}</span>
@@ -128,17 +147,17 @@ function timelineTab(status) {
 
 /* ---------- Family tab: succession and relations ---------- */
 function familyTab() {
-  const byId = Object.fromEntries(course.kings.map((k) => [k.id, k]));
+  const people = course.rulers || course.kings;
   let prev = null;
-  const rows = course.kings.map((k) => {
+  const rows = people.map((k) => {
     const r = k.rel || {}, linked = prev && r.of === prev.id && (r.type === "son" || r.type === "brother");
     const line = !prev ? "" : linked ? (r.type === "son" ? "son" : "brother") : "break";
     prev = k;
     return `<div class="fam-row ${line}"><span class="fam-face"><img src="${AXOM.media(k.face)}" alt="" loading="lazy"></span>
       <span class="fam-txt"><b>${N(k.n)}. ${T(k.name)}</b><span class="rel rel-${r.type || "other"}">${T(r.t || B("", ""))}</span></span></div>`;
   }).join("");
-  return `<p class="tab-intro">${T(B("A solid line: son of the king above. A dashed line: brother. A gap: the throne passed outside the direct line.", "সৰল ৰেখা: ওপৰৰ ৰজাৰ পুত্ৰ। ডেচ ৰেখা: ভাই। খালী: সিংহাসন পোনপটীয়া বংশৰ বাহিৰলৈ গ'ল।"))}</p><div class="fam">${rows}</div>
-    <p class="tab-intro small">${T(B("Relations follow the AHOM project catalogue; some early details differ between chronicles.", "সম্পৰ্কবোৰ AHOM প্ৰকল্পৰ তালিকা অনুসৰি; আগৰ কিছুমান তথ্য বুৰঞ্জী অনুসৰি বেলেগ।"))}</p>`;
+  return `<p class="tab-intro">${T(course.familyIntro || B("A solid line: son of the king above. A dashed line: brother. A gap: the throne passed outside the direct line.", "সৰল ৰেখা: ওপৰৰ ৰজাৰ পুত্ৰ। ডেচ ৰেখা: ভাই। খালী: সিংহাসন পোনপটীয়া বংশৰ বাহিৰলৈ গ'ল।"))}</p><div class="fam">${rows}</div>
+    <p class="tab-intro small">${T(course.familyNote || B("Relations follow the AHOM project catalogue; some early details differ between chronicles.", "সম্পৰ্কবোৰ AHOM প্ৰকল্পৰ তালিকা অনুসৰি; আগৰ কিছুমান তথ্য বুৰঞ্জী অনুসৰি বেলেগ।"))}</p>`;
 }
 
 /* ---------- Profile tab ---------- */

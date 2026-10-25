@@ -35,10 +35,11 @@ async function load() {
     const [entities, basemap] = await Promise.all([AXOM.getJSON("content/entities.json"), AXOM.getJSON("content/maps/assam.json")]);
     ENT = entities; BASE = basemap;
     if (params.has("review")) return boot(await buildReview(), "review");
-    if (params.get("checkpoint")) return boot(await buildCheckpoint(params.get("checkpoint").replace(/[^a-z-]/g, "")), "checkpoint");
-    if (params.get("jump")) return boot(await buildJump(params.get("jump").replace(/[^a-z0-9-]/g, "")), "jump");
+    if (params.get("checkpoint")) { CID = (params.get("course") || "ahom-kings").replace(/[^a-z0-9-]/g, ""); return boot(await buildCheckpoint(params.get("checkpoint").replace(/[^a-z-]/g, "")), "checkpoint"); }
+    if (params.get("jump")) { const t = params.get("jump").replace(/[^a-z0-9-]/g, ""); CID = ((await AXOM.getJSON("content/manifest.json")).lessons[t] || {}).course || "ahom-kings"; return boot(await buildJump(t), "jump"); }
     const id = (params.get("id") || "sukaphaa").replace(/[^a-z0-9-]/g, "");
     const L = await AXOM.getJSON(`content/lessons/${id}.json`);
+    CID = L.course || "ahom-kings";
     NEXT = await nextLesson(L.no).catch(() => null);
     GATE = UNLOCK_ALL ? null : await lessonGate(L).catch(() => null);
     COURSE = await coursePath().catch(() => []);
@@ -69,8 +70,10 @@ async function buildReview() {
     test: { id: "review", title: B("Daily review", "দৈনিক পুনৰীক্ষণ"), learned: [], steps } };
 }
 // the course in order, keeping only kings whose lesson is published
+let CID = "ahom-kings";   // the course this page belongs to
+const courseUrl = () => `content/courses/${CID}.json`;
 async function publishedKings() {
-  const [course, manifest] = await Promise.all([AXOM.getJSON("content/courses/ahom-kings.json"), AXOM.getJSON("content/manifest.json")]);
+  const [course, manifest] = await Promise.all([AXOM.getJSON(courseUrl()), AXOM.getJSON("content/manifest.json")]);
   return course.kings.filter((k) => k.lesson && manifest.lessons[k.lesson]);
 }
 let NEXT = null;   // the lesson after this one: { id, n, name }
@@ -78,7 +81,7 @@ let pendingUpdate = false;   // a new app version took over while a unit was bei
 let GATE = null;
 let COURSE = [];   // every published lesson in course order, with unit summaries from the manifest: the whole path
 async function coursePath() {
-  const [course, manifest] = await Promise.all([AXOM.getJSON("content/courses/ahom-kings.json"), AXOM.getJSON("content/manifest.json")]);
+  const [course, manifest] = await Promise.all([AXOM.getJSON(courseUrl()), AXOM.getJSON("content/manifest.json")]);
   return course.kings.filter((k) => k.lesson && manifest.lessons[k.lesson] && manifest.lessons[k.lesson].units)
     .map((k) => ({ n: k.n, id: k.lesson, name: k.name, face: k.face, reign: k.reign, units: manifest.lessons[k.lesson].units }));
 }   // the earlier lesson that must be finished before this one opens: { id, n, name }, or null
@@ -105,7 +108,8 @@ async function buildJump(target) {
     test: { id: "jump", title: B(`Jump to lesson ${t.n} · ${t.name.en}`, `পাঠ ${asNum(t.n)} · ${t.name.as}লৈ জঁপিওৱা`), learned: [], steps } };
 }
 async function buildCheckpoint(eraId) {
-  const [course, manifest, bank] = await Promise.all([AXOM.getJSON("content/courses/ahom-kings.json"), AXOM.getJSON("content/manifest.json"), AXOM.getJSON("content/questions/ahom.json")]);
+  const course = await AXOM.getJSON(courseUrl());
+  const [manifest, bank] = await Promise.all([AXOM.getJSON("content/manifest.json"), AXOM.getJSON(course.bank || "content/questions/ahom.json")]);
   const era = course.eras.find((e) => e.id === eraId);
   const ids = course.kings.filter((k) => k.n >= era.from && k.n <= era.to && k.lesson && manifest.lessons[k.lesson]).map((k) => k.lesson);
   const lessons = await lessonsById(ids);
@@ -234,7 +238,7 @@ document.body.insertAdjacentHTML("afterbegin", `
   <div class="confetti" id="confetti" aria-hidden="true"></div>
   <div class="view" id="v-path">
     <div class="p-top">
-      <a class="icon-btn" href="index.html" aria-label="All lessons">${AXOM.ICON.back}</a>
+      <a class="icon-btn" href="index.html?course=${CID}" aria-label="All lessons">${AXOM.ICON.back}</a>
       <label class="lang" for="as"><span class="en">অ</span><span class="as">EN</span></label>
       <span class="spacer"></span>
       <span class="fire" id="fire">${AXOM.ICON.fire}<span id="streak"></span></span>
@@ -245,7 +249,7 @@ document.body.insertAdjacentHTML("afterbegin", `
       <section class="hero">
         ${L.portrait ? `<img src="${media(`${L.id}/${L.portrait}`)}" alt="">` : ""}
         <div class="txt">
-          ${L.no ? `<div class="eyebrow">${T(B(`Ahom kings · Lesson ${L.no}`, `আহোম ৰজা · পাঠ ${asNum(L.no)}`))}</div>` : ""}
+          ${L.no ? `<div class="eyebrow">${T(L.eyebrow ? B(`${L.eyebrow.en} · Lesson ${L.no}`, `${L.eyebrow.as} · পাঠ ${asNum(L.no)}`) : B(`Ahom kings · Lesson ${L.no}`, `আহোম ৰজা · পাঠ ${asNum(L.no)}`))}</div>` : ""}
           <h1>${T(L.king)}</h1>
           <div class="reign">${T(L.reign)}</div>
           ${L.buildsOn ? `<a class="builds-on" href="lesson.html?id=${L.buildsOn.id}">${T(B(`Builds on Lesson ${L.buildsOn.no}: ${L.buildsOn.title.en}`, `পাঠ ${asNum(L.buildsOn.no)}ৰ ভেটিত: ${L.buildsOn.title.as}`))}</a>` : ""}
@@ -753,11 +757,11 @@ document.addEventListener("click", (e) => {
   if ((b = g("[data-onode]"))) { const k = b.dataset.onode; opop = opop === k ? null : k; pop = null; SFX.tap(); return renderPath(); }
   if ((b = g("[data-start]"))) return startUnit(+b.dataset.start, b.hasAttribute("data-testout"));
   if ($("#v-path").classList.contains("on") && (pop != null || opop != null) && !g(".pop")) { pop = opop = null; return renderPath(); }
-  if (g("#done-btn")) { if (VIRTUAL) { location.href = "index.html"; return; } showView("v-path"); renderPath(); return; }
+  if (g("#done-btn")) { if (VIRTUAL) { location.href = `index.html?course=${CID}`; return; } showView("v-path"); renderPath(); return; }
   if (g("#exit")) return openLeave();
   if (g("[data-link]") && U) { const s0 = step().s; if (s0.link) return openLinkSheet(s0.link); }
   if (g("[data-keep]")) return closeSheet();
-  if (g("[data-leave]")) { closeSheet(); if (VIRTUAL) { location.href = "index.html"; return; } showView("v-path"); renderPath(); return; }
+  if (g("[data-leave]")) { closeSheet(); if (VIRTUAL) { location.href = `index.html?course=${CID}`; return; } showView("v-path"); renderPath(); return; }
   if (!$("#v-play").classList.contains("on") || !U || U.phase !== "answer") return;
 
   const s = step().s, st = U.st, scr = $("#screen");
