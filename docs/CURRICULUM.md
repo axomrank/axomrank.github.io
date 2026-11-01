@@ -10,7 +10,7 @@ A learner preparing for ADRE, TET, APSC or SI should finish the whole of Assam H
 |---|---|---|---|---|---|---|
 | H1 | Early Assam: Pragjyotisha and Kamarupa | earliest–1228 | 13 | 55 | 15% | 🔨 9 lessons / 45 units done (Varman, Salastambha, Pala) |
 | H2 | Kamata, Koch and the neighbouring kingdoms | c. 1200–1700s | 9 | 35 | 10% | ⬜ |
-| H3 | The Ahom Kingdom (compact, exam path) | 1228–1838 | 15 | 60 | 16% | 🔨 Era 1 done (lessons 1–4, 19 units); lessons 5–15 next |
+| H3 | The Ahom Kingdom (compact, exam path) | 1228–1838 | 15 | 60 | 16% | 🔨 Eras 1–2 done (lessons 1–9, 39 units); lessons 10–15 next |
 | H5 | British period and the freedom struggle | 1826–1947 | 18 | 75 | 20% | ⬜ |
 | H6 | Assam since 1947 | 1947–today | 11 | 42 | 11% | ⬜ |
 | H7 | Religion, literature, art and culture | all periods | 13 | 55 | 15% | ⬜ |

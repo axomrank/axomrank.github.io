@@ -82,3 +82,19 @@ for spec in LESSONS:
     json.dump(L, open(f"content/lessons/{spec['id']}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     steps = sum(len(u["steps"]) for u in out_units) + len(test["steps"])
     print(f"{spec['id']}: {len(out_units)} units, {steps} steps, from {len(order)} lessons, timeline {len(tl)}")
+
+# question bank: every question of the old bank whose lesson now sits inside a compact lesson
+course = json.load(open("content/courses/ahom-kingdom.json", encoding="utf-8"))
+era_of = {n: e["id"] for e in course["eras"] for n in range(e["from"], e["to"] + 1)}
+to = {}
+for spec in LESSONS:
+    for lid in json.load(open(f"content/lessons/{spec['id']}.json", encoding="utf-8"))["compiled_from"]:
+        to.setdefault(lid, spec)   # a reign used by two lessons belongs to the first
+qs = []
+for q in json.load(open("content/questions/ahom.json", encoding="utf-8"))["questions"]:
+    if q["lesson"] in to:
+        spec = to[q["lesson"]]
+        qs.append({**q, "id": "ak." + q["id"], "from": q["lesson"], "lesson": spec["id"], "era": era_of[spec["no"]]})
+json.dump({"note": "Exam-style questions for the compact Ahom course (era checkpoints). Taken from content/questions/ahom.json; 'from' is the reign-by-reign lesson each came from.",
+           "questions": qs}, open("content/questions/ahom-kingdom.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+print(f"bank: {len(qs)} questions")
