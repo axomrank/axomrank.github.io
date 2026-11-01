@@ -1,6 +1,10 @@
 {
- "version": "3e3a0bee4c",
+ "version": "6412b2189f",
  "courses": [
+  {
+   "id": "ahom-kingdom",
+   "file": "content/courses/ahom-kingdom.json"
+  },
   {
    "id": "ahom-kings",
    "file": "content/courses/ahom-kings.json"
@@ -19,6 +23,261 @@
   }
  ],
  "lessons": {
+  "ahom-01-sukaphaa": {
+   "course": "ahom-kingdom",
+   "no": 1,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Sukaphaa founds a kingdom",
+    "as": "চুকাফাৰ ৰাজ্য স্থাপন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The journey",
+      "as": "যাত্ৰা"
+     },
+     "i": "walk",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Friends, not enemies",
+      "as": "শত্ৰু নহয়, বন্ধু"
+     },
+     "i": "home",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Charaideo and the Gohains",
+      "as": "চৰাইদেউ আৰু গোহাঁইসকল"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The Dikhou border",
+      "as": "দিখৌৰ সীমা"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Moidams and Asom Divas",
+      "as": "মৈদাম আৰু অসম দিৱস"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "ahom-02-early-kings": {
+   "course": "ahom-kingdom",
+   "no": 2,
+   "version": 1,
+   "steps": 7,
+   "title": {
+    "en": "Two centuries of early kings",
+    "as": "আদি ৰজাসকলৰ দুশ বছৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The seven houses",
+      "as": "সাতঘৰীয়া"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A Kamata bride",
+      "as": "কামতাৰ কইনা"
+     },
+     "i": "crown",
+     "ex": 4
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Murder on the Safrai",
+      "as": "চাফ্ৰাইত হত্যা"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The raft-born prince",
+      "as": "ভুৰত ভাহি অহা কোঁৱৰ"
+     },
+     "i": "crown",
+     "ex": 3
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Bamuni Konwar and the Patkai",
+      "as": "বামুণী কোঁৱৰ আৰু পাটকাই"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "u6",
+     "t": {
+      "en": "Long reigns, hard neighbours",
+      "as": "দীঘলীয়া ৰাজত্ব, কঠিন চুবুৰীয়া"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 11
+    }
+   ]
+  },
+  "ahom-03-suhungmung": {
+   "course": "ahom-kingdom",
+   "no": 3,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Suhungmung, the Dihingia Raja",
+    "as": "দিহিঙীয়া ৰজা চুহুংমুং"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Swarganarayan",
+      "as": "স্বৰ্গনাৰায়ণ"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The fall of the Chutias",
+      "as": "চুতীয়াৰ পতন"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The third Gohain and Dimapur",
+      "as": "তৃতীয় গোহাঁই আৰু ডিমাপুৰ"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Turbak",
+      "as": "তুৰবক"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Murder in the night",
+      "as": "ৰাতিৰ হত্যা"
+     },
+     "i": "moon",
+     "ex": 4
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "ahom-04-koch-wars": {
+   "course": "ahom-kingdom",
+   "no": 4,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Garhgaon and the Koch wars",
+    "as": "গড়গাঁও আৰু কোচ যুদ্ধ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Garhgaon and the first coins",
+      "as": "গড়গাঁও আৰু প্ৰথম মুদ্ৰা"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Chilarai and Sankardev",
+      "as": "চিলাৰায় আৰু শংকৰদেৱ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The Khora Roja and Majuli",
+      "as": "খোৰা ৰজা আৰু মাজুলী"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
   "chakradhwaj-singha": {
    "course": "ahom-kings",
    "no": 21,

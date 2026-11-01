@@ -247,7 +247,7 @@ document.body.insertAdjacentHTML("afterbegin", `
     </div>
     <div class="p-scroll">
       <section class="hero">
-        ${L.portrait ? `<img src="${media(`${L.id}/${L.portrait}`)}" alt="">` : ""}
+        ${L.portrait ? `<img src="${media(L.portrait.includes("/") ? L.portrait : `${L.id}/${L.portrait}`)}" alt="">` : ""}
         <div class="txt">
           ${L.no ? `<div class="eyebrow">${T(L.eyebrow ? B(`${L.eyebrow.en} · Lesson ${L.no}`, `${L.eyebrow.as} · পাঠ ${asNum(L.no)}`) : B(`Ahom kings · Lesson ${L.no}`, `আহোম ৰজা · পাঠ ${asNum(L.no)}`))}</div>` : ""}
           <h1>${T(L.king)}</h1>
@@ -471,7 +471,8 @@ function renderStep(animate) {
   if (SETUP[s.type]) SETUP[s.type](s, scr);
   refresh();
 }
-const img = (f, size, lid = L.id) => media(f.startsWith("shared/") ? f : `${lid}/${f}`, size);
+// a bare file name is in the lesson's own folder; "folder/file" is relative to content/media (shared/…, or another lesson's pictures)
+const img = (f, size, lid = L.id) => media(f.includes("/") ? f : `${lid}/${f}`, size);
 const picture = (f, lid) => `<img src="${img(f, 0, lid)}" srcset="${img(f, 480, lid)} 480w, ${img(f, 0, lid)} 1080w" sizes="(max-width: 440px) 92vw, 360px" alt="">`;
 // a story card may carry its own map ({box, show, routes, texts, labels, districts}); otherwise it uses the lesson map
 const mapOf = (s) => s._map || (s.map && s.map.box ? s.map : L.map);

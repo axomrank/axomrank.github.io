@@ -87,7 +87,7 @@ for lid, L in lessons.items():
     if not L.get("sources"): err(f"{lid}: list at least one source (title, url, used_for)")
     mdir = f"content/media/{lid}"
     def need_img(name, where):
-        folder = "content/media" if name.startswith("shared/") else mdir
+        folder = "content/media" if "/" in name else mdir   # "folder/file": shared/… or another lesson's pictures
         for n in (name, name.replace(".webp", "@480.webp")):
             if not os.path.exists(f"{folder}/{n}"): err(f"{where}: missing image {folder}/{n}")
     need_img(L["portrait"], f"{lid} portrait")

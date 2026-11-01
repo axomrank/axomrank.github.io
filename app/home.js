@@ -77,7 +77,7 @@ function progress(c, m) {
   return { total: items.length, done, next: items.find((k) => !AXOM.getLesson(k.lesson).done.test), started: items.some((k) => Object.keys(AXOM.getLesson(k.lesson).done).length) };
 }
 const subjectOf = (cat, cid) => cat.subjects.find((S) => S.courses.some((e) => e.course === cid));
-const subjectSum = (S, D) => S.courses.filter((e) => D.courses[e.course]).map((e) => progress(D.courses[e.course], D.m)).reduce((a, p) => ({ total: a.total + p.total, done: a.done + p.done }), { total: 0, done: 0 });
+const subjectSum = (S, D) => S.courses.filter((e) => D.courses[e.course] && !e.optional).map((e) => progress(D.courses[e.course], D.m)).reduce((a, p) => ({ total: a.total + p.total, done: a.done + p.done }), { total: 0, done: 0 });
 const pct = (p) => (p.total ? Math.round((p.done / p.total) * 100) : 0);
 const FOOT = `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
 function reviewCard() {
@@ -134,7 +134,7 @@ async function subjectPage() {
     if (!c) return `<div class="course-row soon"><span class="no">${N(i + 1)}</span><span class="t"><b>${T(e.title)}</b><span>${T(e.subtitle)}</span></span><span class="pill">${T(B("Soon", "সোনকালে"))}</span></div>`;
     const q = progress(c, D.m), face = (c.kings.find((k) => k.tier === "A") || c.kings[0]).face;
     return `<a class="course-row ${q.done === q.total ? "done" : ""}" href="index.html?course=${c.id}"><span class="no">${N(i + 1)}</span><span class="cover"><img src="${AXOM.media(face)}" alt="" loading="lazy"></span>
-      <span class="t"><b>${T(c.title)}</b><span>${T(c.subtitle)}</span><span class="meter"><i style="width:${pct(q)}%"></i></span><small>${T(B(`${q.done}/${q.total} lessons done`, `${asNum(q.total)}টাৰ ${asNum(q.done)}টা পাঠ সম্পূৰ্ণ`))}</small></span><span class="go">›</span></a>`;
+      <span class="t"><b>${T(c.title)}</b><span>${T(c.subtitle)}</span><span class="meter"><i style="width:${pct(q)}%"></i></span><small>${T(B(`${q.done}/${q.total} lessons done`, `${asNum(q.total)}টাৰ ${asNum(q.done)}টা পাঠ সম্পূৰ্ণ`))}</small></span>${e.optional ? `<span class="pill">${T(B("Optional", "ঐচ্ছিক"))}</span>` : ""}<span class="go">›</span></a>`;
   }).join("");
   $("#course").innerHTML = `<section class="c-hero" style="--c:var(--${S.color})">${ROOF}<a class="back-hub" href="index.html">‹ ${T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(B("Subject", "বিষয়"))}</div><h1>${T(S.title)}</h1><p>${T(S.blurb)}</p>
       <span class="meter"><i style="width:${pct(p)}%"></i></span><span class="count">${T(B(`${p.done} of ${p.total} lessons done`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ সম্পূৰ্ণ`))}</span></section>
