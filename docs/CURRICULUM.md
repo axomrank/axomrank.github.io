@@ -10,7 +10,7 @@ A learner preparing for ADRE, TET, APSC or SI should finish the whole of Assam H
 |---|---|---|---|---|---|---|
 | H1 | Early Assam: Pragjyotisha and Kamarupa | earliest–1228 | 13 | 55 | 15% | 🔨 9 lessons / 45 units done (Varman, Salastambha, Pala) |
 | H2 | Kamata, Koch and the neighbouring kingdoms | c. 1200–1700s | 9 | 35 | 10% | ⬜ |
-| H3 | The Ahom Kingdom (compact, exam path) | 1228–1838 | 15 | 60 | 16% | 🔨 Eras 1–2 done (lessons 1–9, 39 units); lessons 10–15 next |
+| H3 | The Ahom Kingdom (compact, exam path) | 1228–1838 | 15 | 60 | 16% | 🔨 Lessons 1–14 done (58 units); lesson 15 needs new writing |
 | H5 | British period and the freedom struggle | 1826–1947 | 18 | 75 | 20% | ⬜ |
 | H6 | Assam since 1947 | 1947–today | 11 | 42 | 11% | ⬜ |
 | H7 | Religion, literature, art and culture | all periods | 13 | 55 | 15% | ⬜ |
@@ -81,7 +81,7 @@ The current course spends a lesson on every one of 41 reigns. The exam path keep
 | 12 | The Moamoria rebellion | A | 4 | Lakshmi Singha, Gaurinath Singha | Causes, Ragha Moran, Rangpur and Guwahati lost, Captain Welsh (1792), capital at Jorhat |
 | 13 | Purnananda and the Burmese | A | 4 | Kamaleswar, Chandrakanta (both), Purandar, Jogeswar | Purnananda Burhagohain, Badan Chandra, Burmese invasions (1817, 1819, 1821), Manar years |
 | 14 | Yandabo and the last king | B | 3 | Purandar Singha (1833–38) | First Anglo-Burmese war, Treaty of Yandabo (24 Feb 1826), Upper Assam to Purandar (1833), annexation (1838) |
-| 15 | How the Ahoms ruled | A | 5 | new (from H4) | Patra Mantris, Paik–Khel–Got, officers (Phukan, Barua, Hazarika, Saikia, Bora), Buranjis, coins, moidams of Charaideo (UNESCO 2024), religion and the satras |
+| 15 | How the Ahoms ruled | A | 5 | new (from H4); the old lessons do not cover the Patra Mantris, officer ranks, paik classes or land grants, so this lesson needs new writing from sources | Patra Mantris, Paik–Khel–Got, officers (Phukan, Barua, Hazarika, Saikia, Bora), Buranjis, coins, moidams of Charaideo (UNESCO 2024), religion and the satras |
 
 Checkpoints after lessons 4, 9, 11 and 15.
 

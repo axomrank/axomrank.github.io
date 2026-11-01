@@ -137,3 +137,73 @@ LESSONS += [
   ],
   "test": ["gds.test.01", "gds.test.02", "gds.test.03", "gds.test.04", "gds.test.07", "gds.test.09", "gds.test.10", "gbr.test.02"]},
 ]
+
+LESSONS += [
+ {"no": 10, "id": "ahom-10-rudra-singha", "title": B("Rudra Singha", "ৰুদ্ৰ সিংহ"), "reign": B("1696–1714", "১৬৯৬–১৭১৪"),
+  "portrait": "rudra-singha/rudra-singha-portrait.webp", "map_from": "rudra-singha",
+  "units": [
+   {"title": B("Joymoti's son", "জয়মতীৰ পুত্ৰ"), "learned": ["rudra-singha/u1/0", "rudra-singha/u1/1", "rudra-singha/u1/2", "rudra-singha/u1/3"],
+    "steps": ["rud.u1.01", "rud.u1.02", "rud.u1.03", "rud.u1.04", "rud.u1.05"]},
+   {"title": B("A city of brick", "ইটাৰ নগৰ"), "learned": ["rudra-singha/u2/0", "rudra-singha/u2/1", "rudra-singha/u2/2", "rudra-singha/u2/3"],
+    "steps": ["rud.u2.02", "rud.g1", "rud.u2.03", "rud.u2.04", "rud.u2.05", "rud.u2.06", "rud.u2.01"]},
+   {"title": B("Maibong and Jaintiapur", "মাইবং আৰু জয়ন্তীয়াপুৰ"), "learned": ["rudra-singha/u3/0", "rudra-singha/u3/1", "rudra-singha/u3/2", "rudra-singha/u3/3"],
+    "steps": ["rud.u3.02", "rud.u3.03", "rud.d1", "rud.u3.04", "rud.u3.06", "rud.u3.07"]},
+   {"title": B("Toward the Ganges", "গংগাৰ ফালে"), "learned": ["rudra-singha/u4/3", "rudra-singha/u5/0", "rudra-singha/u5/1", "rudra-singha/u5/2"],
+    "steps": ["rud.u4.03", "rud.u4.04", "rud.u5.02", "rud.u5.03", "rud.u5.04", "rud.u5.05"]},
+  ],
+  "test": ["rud.test.01", "rud.test.02", "rud.test.03", "rud.test.04", "rud.test.07", "rud.test.08", "rud.test.10"]},
+
+ {"no": 11, "id": "ahom-11-queens-monuments", "title": B("Queens, temples and monuments", "ৰাণী, দেৱালয় আৰু কীৰ্তিচিহ্ন"), "reign": B("1714–1769 · Siva, Pramatta and Rajeswar Singha", "১৭১৪–১৭৬৯ · শিৱ, প্ৰমত্ত আৰু ৰাজেশ্বৰ সিংহ"),
+  "portrait": "siva-singha/siva-singha-portrait.webp", "map_from": "rajeswar-singha",
+  "units": [
+   {"title": B("The Bar Raja", "বৰ ৰজা"), "learned": ["siva-singha/u1/0", "siva-singha/u1/2", "siva-singha/u2/1", "siva-singha/u2/3"],
+    "steps": ["svs.u1.01", "svs.u1.02", "svs.u1.05", "svs.g1", "svs.u2.02", "svs.u2.04", "svs.u2.05", "svs.u2.07"]},
+   {"title": B("Blood on the forehead", "কপালত তেজ"), "learned": ["siva-singha/u3/0", "siva-singha/u3/1", "siva-singha/u3/2", "siva-singha/u3/3"],
+    "steps": ["svs.d1", "svs.u3.02", "svs.u3.03", "svs.u3.04", "svs.u3.05", "svs.u2.06"]},
+   {"title": B("Sivasagar and the Rang Ghar", "শিৱসাগৰ আৰু ৰংঘৰ"), "learned": ["siva-singha/u4/0", "siva-singha/u4/1", "siva-singha/u4/2", "pramatta-singha/u1/1"],
+    "steps": ["svs.u4.02", "svs.u4.03", "svs.u4.04", "pms.u1.01", "pms.u1.02", "pms.u1.03", "pms.u1.04", "pms.u2.02", "pms.u2.06"]},
+   {"title": B("Kareng Ghar and burnt Buranjis", "কাৰেংঘৰ আৰু পোৰা বুৰঞ্জী"), "learned": ["rajeswar-singha/u1/2", "rajeswar-singha/u2/2", "rajeswar-singha/u3/1", "rajeswar-singha/u3/2"],
+    "steps": ["rjs.u1.03", "rjs.u1.04", "rjs.u1.05", "rjs.u2.02", "rjs.u2.03", "rjs.u2.04", "rjs.u3.02", "rjs.u3.04", "rjs.u3.05"]},
+  ],
+  "test": ["svs.test.01", "svs.test.02", "svs.test.04", "svs.test.09", "pms.test.01", "pms.test.05", "rjs.test.02", "rjs.test.03", "rjs.test.09"]},
+
+ {"no": 12, "id": "ahom-12-moamoria", "title": B("The Moamoria rebellion", "মোৱামৰীয়া বিদ্ৰোহ"), "reign": B("1769–1795 · Lakshmi Singha and Gaurinath Singha", "১৭৬৯–১৭৯৫ · লক্ষ্মী সিংহ আৰু গৌৰীনাথ সিংহ"),
+  "portrait": "lakshmi-singha/lakshmi-singha-portrait.webp", "map_from": "gaurinath-singha",
+  "units": [
+   {"title": B("The first rising", "প্ৰথম বিদ্ৰোহ"), "learned": ["lakshmi-singha/u1/2", "lakshmi-singha/u1/3", "lakshmi-singha/u2/0", "lakshmi-singha/u2/1"],
+    "steps": ["lks.u1.01", "lks.u1.02", "lks.u1.03", "lks.g1", "lks.u1.04", "lks.u2.02", "lks.u2.03", "lks.u2.04", "lks.u2.05"]},
+   {"title": B("The queen's blow", "ৰাণীৰ আঘাত"), "learned": ["lakshmi-singha/u3/1", "lakshmi-singha/u3/2", "lakshmi-singha/u4/1", "lakshmi-singha/u4/2"],
+    "steps": ["lks.g2", "lks.u3.02", "lks.u3.03", "lks.u3.04", "lks.u4.02", "lks.u4.03", "lks.u4.04"]},
+   {"title": B("Torches and flight", "জোঁৰ আৰু পলায়ন"), "learned": ["gaurinath-singha/u1/0", "gaurinath-singha/u2/0", "gaurinath-singha/u2/2", "gaurinath-singha/u2/3"],
+    "steps": ["gnt.u1.01", "gnt.u1.02", "gnt.u1.03", "gnt.u2.02", "gnt.d1", "gnt.u2.03", "gnt.u2.04", "gnt.u2.05"]},
+   {"title": B("Captain Welsh and Jorhat", "কেপ্তেইন ৱেল্‌চ আৰু যোৰহাট"), "learned": ["gaurinath-singha/u3/1", "gaurinath-singha/u3/2", "gaurinath-singha/u4/0", "gaurinath-singha/u4/1"],
+    "steps": ["gnt.g1", "gnt.u3.02", "gnt.u3.03", "gnt.u3.04", "gnt.u3.05", "gnt.u4.02", "gnt.u4.03", "gnt.u4.05"]},
+  ],
+  "test": ["lks.test.01", "lks.test.03", "lks.test.04", "lks.test.07", "gnt.test.01", "gnt.test.02", "gnt.test.03", "gnt.test.05", "gnt.test.08"]},
+
+ {"no": 13, "id": "ahom-13-burmese", "title": B("Purnananda and the Burmese", "পূৰ্ণানন্দ আৰু মানৰ আক্ৰমণ"), "reign": B("1795–1824 · five reigns", "১৭৯৫–১৮২৪ · পাঁচটা ৰাজত্ব"),
+  "portrait": "kamaleswar-singha/kamaleswar-singha-portrait.webp", "map_from": "chandrakanta-singha",
+  "units": [
+   {"title": B("The minister who ruled", "শাসন কৰা মন্ত্ৰী"), "learned": ["kamaleswar-singha/u1/0", "kamaleswar-singha/u1/1", "kamaleswar-singha/u1/2", "kamaleswar-singha/u2/2"],
+    "steps": ["kml.u1.01", "kml.u1.02", "kml.u1.03", "kml.u1.04", "kml.u2.02", "kml.u2.03", "kml.g1", "kml.u2.04", "kml.u3.05"]},
+   {"title": B("Badan Chandra goes to Ava", "বদন চন্দ্ৰৰ আভালৈ যাত্ৰা"), "learned": ["chandrakanta-singha/u2/0", "chandrakanta-singha/u2/3", "chandrakanta-singha/u3/0", "chandrakanta-singha/u3/2"],
+    "steps": ["ckt.u1.01", "ckt.u2.02", "ckt.g1", "ckt.u2.03", "ckt.u3.02", "ckt.u3.03", "ckt.u3.04", "ckt.u3.05"]},
+   {"title": B("The slit ear", "কাণ কটা ৰজা"), "learned": ["purandar-singha/u1/1", "purandar-singha/u1/2", "purandar-singha/u2/1", "chandrakanta-singha-2/u1/0"],
+    "steps": ["ckt.u4.02", "prd.u1.01", "prd.u1.02", "prd.g1", "prd.u1.03", "prd.u1.04", "prd.u2.02", "prd.u2.03", "ck2.u1.01", "ck2.u1.02"]},
+   {"title": B("Mahgarh and the Manor Din", "মহগড় আৰু মানৰ দিন"), "learned": ["chandrakanta-singha-2/u1/3", "chandrakanta-singha-2/u2/1", "chandrakanta-singha-2/u3/1", "jogeswar-singha/u1/2"],
+    "steps": ["ck2.u1.03", "ck2.u2.02", "ck2.u2.03", "ck2.u3.02", "ck2.u3.06", "jgs.u1.03", "jgs.u1.04"]},
+  ],
+  "test": ["kml.test.04", "kml.test.05", "ckt.test.01", "ckt.test.06", "ckt.test.07", "prd.test.01", "prd.test.02", "ck2.test.01", "ck2.test.04", "ck2.test.07"]},
+
+ {"no": 14, "id": "ahom-14-yandabo", "title": B("Yandabo and the last king", "ইয়াণ্ডাবু আৰু শেষ ৰজা"), "reign": B("1824–1838", "১৮২৪–১৮৩৮"),
+  "portrait": "purandar-singha-2/purandar-singha-2-portrait.webp", "map_from": "purandar-singha-2",
+  "units": [
+   {"title": B("The British come, the Burmese go", "ইংৰাজৰ আগমন, মানৰ বিদায়"), "learned": ["jogeswar-singha/u2/0", "jogeswar-singha/u2/1", "jogeswar-singha/u2/2", "jogeswar-singha/u2/3"],
+    "steps": ["jgs.g1", "jgs.u2.02", "jgs.u2.03", "jgs.u2.04", "jgs.u2.05", "jgs.u2.06"]},
+   {"title": B("Revolts against the new masters", "নতুন প্ৰভুৰ বিৰুদ্ধে বিদ্ৰোহ"), "learned": ["purandar-singha-2/u1/0", "purandar-singha-2/u1/1", "purandar-singha-2/u2/0", "purandar-singha-2/u2/2"],
+    "steps": ["pr2.u1.01", "pr2.u1.02", "pr2.d1", "pr2.u1.03", "pr2.u1.04", "pr2.u2.02", "pr2.u2.03", "pr2.u2.04"]},
+   {"title": B("The end of six hundred years", "ছশ বছৰৰ অন্ত"), "learned": ["purandar-singha-2/u3/0", "purandar-singha-2/u3/1", "purandar-singha-2/u3/2", "purandar-singha-2/u3/3"],
+    "steps": ["pr2.g1", "pr2.u3.02", "pr2.u3.03", "pr2.u3.04", "pr2.u3.05"]},
+  ],
+  "test": ["jgs.test.01", "jgs.test.03", "jgs.test.04", "pr2.test.01", "pr2.test.03", "pr2.test.04", "pr2.test.07"]},
+]
