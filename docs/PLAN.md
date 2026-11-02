@@ -7,15 +7,15 @@ Live: https://axomrank.pages.dev · Code: https://github.com/axomrank/axomrank.g
 ## 1. Principles
 1. **Never boring, always "one more":** short units, story first, varied exercises, instant feedback, visible progress, streaks and review. See [LESSON-DESIGN.md](LESSON-DESIGN.md).
 2. **Assam depth and Assamese first:** state GK, state current affairs, state papers; Assamese is written alongside English, not translated later.
-3. **Trust:** human-written, reviewed content with sources and verified answer keys. No AI-generated content.
+3. **Trust:** original content with named sources and verified answer keys. AI-assisted drafts must retain truthful provenance and receive historical and Assamese editorial review before publication. Never claim human review that has not happened.
 4. **Real exam feel:** OMR-style mocks and an Assam-wide rank.
 5. **Small and fast:** runs on 2 GB Android phones; content loads on demand; works offline.
 
 ## 2. Where we are
 - Web app: lesson player (14 exercise types), maps, guidebook, name cards, daily review, checkpoints, XP/streak, Google sign-in and sync (Firebase), offline service worker.
-- Content: **Ahom Kings**, 41 lessons / 1,647 steps, bilingual, with maps and paintings.
+- Assam History implemented locally: **93 core lessons / 380 units**, plus **41 optional Ahom lessons / 152 units**; **2,651 practice questions**, source records, illustrations, 573 dated reference entries and 697 linked names. Assamese editorial review is deferred by the user.
 - Hosting: Cloudflare Pages + GitHub Pages. Free plans.
-- Home page: exam chooser (ADRE / TET / APSC / SI), continue card, daily review, subject grid from `content/catalog.json` (Assam History live with the Varman and Ahom courses; Polity, Geography, Aptitude and others listed as coming soon). Subject page lists its courses in order of time.
+- Home page: exam chooser (ADRE / TET / APSC / SI), continue card, daily review, subject grid from `content/catalog.json` (all 12 Assam History courses integrated locally; Polity, Geography, Aptitude and others listed as coming soon). Subject page lists its courses in order of time.
 
 ## 3. Roadmap
 
@@ -36,8 +36,8 @@ Live: https://axomrank.pages.dev · Code: https://github.com/axomrank/axomrank.g
 3. **Exam tags** on lessons and questions; "My exam" in onboarding.
 4. Rename Ahom-specific wording in the player; keep Ahom as course H3.
 
-### Phase 2: Assam History complete
-Build courses H1–H9 in [CURRICULUM.md](CURRICULUM.md). Pilot, then core exam topics, then thematic revision courses. Add the master **timeline** and a **people & places** index that spans all courses.
+### Phase 2: Assam History implemented
+All required H1–H9 content (H4 folded into H3), question banks and the master timeline/people-place index are implemented. See [HISTORY-COMPLETION.md](HISTORY-COMPLETION.md) for measured scope and validation. Assamese editorial review is explicitly deferred; deployment is a separate action.
 
 ### Phase 3: more subjects
 Assam geography (rivers, districts, national parks, climate, resources), polity (Sixth Schedule, councils, Assam Assembly, governance), economy (tea, oil, agriculture, budget, schemes such as Orunodoi), culture (festivals, dance, crafts), general studies and TET pedagogy; each as courses in the same format.

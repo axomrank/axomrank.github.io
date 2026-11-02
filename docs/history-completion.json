@@ -1,0 +1,69 @@
+{
+  "objective": "Complete the planned Assam History curriculum locally.",
+  "status": "implemented",
+  "as_of": "2026-11-02",
+  "execution": "One agent,as requested.",
+  "editorial_review": "Assamese editorial review deferred by the user;no human-review claim.",
+  "deployment": {
+    "requested": "2026-11-02",
+    "targets": [
+      "https://axomrank.pages.dev/",
+      "https://axomrank.github.io/"
+    ],
+    "release_status": "Prepared and validated;publication is verified separately against the deployed manifest version."
+  },
+  "core": {
+    "lessons": 93,
+    "units": 380,
+    "questions": 2575
+  },
+  "optional_deep_dive": {
+    "lessons": 41,
+    "units": 152,
+    "questions": 76
+  },
+  "total": {
+    "lessons": 134,
+    "units": 532,
+    "questions": 2651
+  },
+  "courses": {
+    "assam-history": {
+      "lessons": 93,
+      "units": 380,
+      "questions": 2575,
+      "checkpoints": 27
+    },
+    "ahom-kings": {
+      "lessons": 41,
+      "units": 152,
+      "questions": 76,
+      "archived": true
+    }
+  },
+  "reference": {
+    "file": "history.html",
+    "timeline_entries": 573,
+    "linked_names": 697
+  },
+  "validation": {
+    "build": "Passed,134lessons;7742combined step/question ids.",
+    "core_lesson_design": "93core lessons pass:4learned points,2–3story cards,5–7exercises,at least4types,story first.",
+    "browser_unit_runs": "544completed bilingual runs across the newly integrated courses before final glossary/legacy-loop/reference changes.",
+    "learning_gates": "Actual player state-transition checks pass for retries,first-attempt80%,test-outs,checkpoints and bank-only provenance.",
+    "static_scope": "Counts,bank references,exam tags,choice uniqueness,catalog completeness and all original ids checked.",
+    "final_browser_recheck": "Not executed.Automatic approval review could not complete because the account usage limit was reached. The new reference UI and final legacy-loop changes therefore lack a final browser recheck.",
+    "single_course": "Unified catalog and global lesson sequence pass;all core lessons now belong to assam-history.",
+    "single_course_browser": "Passed:390px mobile course rendering,27sections,English foundation-to-Varman transition,Assamese modern-to-culture transition,15question checkpoint and old-course redirect.No overflow or JS errors in these checks."
+  },
+  "presentation": {
+    "course": "assam-history",
+    "visible_courses": 1,
+    "lessons": 93,
+    "units": 380,
+    "questions": 2575,
+    "checkpoints": 27,
+    "progress": "Original lesson,exercise,question and era ids retained.",
+    "legacy": "Source course definitions archived;old course-home URLs redirect to the unified course.Optional old deep-dive endpoints remain hidden for saved-link compatibility."
+  }
+}

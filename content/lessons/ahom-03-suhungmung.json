@@ -1,8 +1,8 @@
 {
  "id": "ahom-03-suhungmung",
- "course": "ahom-kingdom",
- "no": 3,
- "version": 1,
+ "course": "assam-history",
+ "no": 25,
+ "version": 2,
  "eyebrow": {
   "en": "The Ahom Kingdom",
   "as": "আহোম ৰাজ্য"
@@ -112,6 +112,48 @@
      "en": "Murdered; Suklenmung succeeds",
      "as": "হত্যা; চুক্লেনমুং ৰজা"
     }
+   }
+  ],
+  "extra_stories": [
+   {
+    "type": "story",
+    "art": "calendar",
+    "title": {
+     "en": "A new calendar",
+     "as": "নতুন পঞ্জিকা"
+    },
+    "text": [
+     {
+      "en": "The Ahoms used to count years in a Tai cycle of 60. Suhungmung brought in the Hindu [[saka|Saka era]] for dates.",
+      "as": "আহোমসকলে আগতে ৬০ বছৰৰ টাই চক্ৰত বছৰ গণিছিল। চুহুংমুঙে তাৰিখৰ বাবে হিন্দু [[saka]] প্ৰচলন কৰিছিল।"
+     },
+     {
+      "en": "In <mark>1512</mark> he also annexed the Habung country, north of the Brahmaputra.",
+      "as": "<mark>১৫১২</mark> চনত তেওঁ ব্ৰহ্মপুত্ৰৰ উত্তৰৰ হাবুং অঞ্চলো অধিকাৰ কৰিছিল।"
+     }
+    ],
+    "id": "ak3.shm.u2.04",
+    "unit": "u1"
+   },
+   {
+    "type": "story",
+    "img": "suhungmung/dimapur-abandoned.webp",
+    "title": {
+     "en": "The end of Detsung",
+     "as": "দেৎচুঙৰ অন্ত"
+    },
+    "text": [
+     {
+      "en": "A prince named [[detsung]] was put on the Kachari throne. He gave his sister to Suhungmung and sent rich gifts.",
+      "as": "[[detsung]] নামৰ এজন কোঁৱৰক কছাৰী সিংহাসনত বহুওৱা হ'ল। তেওঁ নিজৰ ভনীয়েকক চুহুংমুঙলৈ দিলে আৰু বহুমূলীয়া উপহাৰ পঠিয়ালে।"
+     },
+     {
+      "en": "When he turned hostile, the Ahoms marched again. In <mark>1536</mark> Dimapur was taken a second time and Detsung was caught and killed.",
+      "as": "তেওঁ শত্ৰুতা কৰাত আহোমে পুনৰ আক্ৰমণ কৰিলে। <mark>১৫৩৬</mark> চনত দ্বিতীয়বাৰ ডিমাপুৰ দখল হয় আৰু দেৎচুঙক ধৰি হত্যা কৰা হয়।"
+     }
+    ],
+    "id": "ak3.shm.u5.03",
+    "unit": "u3"
    }
   ]
  },
@@ -261,28 +303,19 @@
      },
      "text": [
       {
-       "en": "In <mark>1497</mark>, [[suhungmung]], son of Supimphaa, was crowned at Charguya with great ceremony.",
-       "as": "<mark>১৪৯৭</mark> চনত চুপিম্ফাৰ পুত্ৰ [[suhungmung]] মহা আড়ম্বৰেৰে চাৰগুৱাত অভিষিক্ত হয়।"
+       "en": "In 1497, [[suhungmung]], son of Supimphaa, was crowned at Charguya with great ceremony.",
+       "as": "১৪৯৭ চনত চুপিম্ফাৰ পুত্ৰ [[suhungmung]] মহা আড়ম্বৰেৰে চাৰগুৱাত অভিষিক্ত হয়।"
       },
       {
-       "en": "Brahmans now had more say at court. The new king also took a Hindu name: [[swarganarayan|Swarganarayan]].",
-       "as": "ৰাজসভাত ব্ৰাহ্মণৰ প্ৰভাৱ বাঢ়িছিল। নতুন ৰজাই এটা হিন্দু নামো ল'লে: [[swarganarayan]]।"
+       "en": "Brahmans now had more say at court.",
+       "as": "ৰাজসভাত ব্ৰাহ্মণৰ প্ৰভাৱ বাঢ়িছিল।"
+      },
+      {
+       "en": "The new king also took a Hindu name: [[swarganarayan|Swarganarayan]].",
+       "as": "নতুন ৰজাই এটা হিন্দু নামো ল'লে: [[swarganarayan]]।"
       }
      ],
      "id": "ak3.shm.u1.01"
-    },
-    {
-     "type": "tf",
-     "s": {
-      "en": "Suhungmung was the first Ahom king to take a Hindu title.",
-      "as": "চুহুংমুং হিন্দু উপাধি লোৱা প্ৰথম আহোম ৰজা।"
-     },
-     "answer": true,
-     "why": {
-      "en": "True: Swarganarayan.",
-      "as": "শুদ্ধ: স্বৰ্গনাৰায়ণ।"
-     },
-     "id": "ak3.shm3.u1.01"
     },
     {
      "type": "story",
@@ -403,15 +436,55 @@
      },
      "text": [
       {
-       "en": "He built his capital at <mark>Bakata</mark> on the [[dihing]] river, and settled Ahom families around it.",
-       "as": "তেওঁ [[dihing]] নদীৰ পাৰৰ <mark>বকতা</mark>ত ৰাজধানী পাতিছিল আৰু তাৰ চাৰিওফালে আহোম পৰিয়াল বহুৱাইছিল।"
+       "en": "He built his capital at Bakata on the [[dihing]] river, and settled Ahom families around it. An embankment along the river kept the floods out.",
+       "as": "তেওঁ [[dihing]] নদীৰ পাৰৰ বকতাত ৰাজধানী পাতিছিল আৰু তাৰ চাৰিওফালে আহোম পৰিয়াল বহুৱাইছিল। নদীৰ কাষে কাষে মথাউৰিয়ে বানপানী আঁতৰাই ৰাখিছিল।"
       },
       {
-       "en": "An embankment along the river kept the floods out. So people called him the [[dihingia|Dihingia Raja]].",
-       "as": "নদীৰ কাষে কাষে মথাউৰিয়ে বানপানী আঁতৰাই ৰাখিছিল। সেয়ে মানুহে তেওঁক [[dihingia]] বুলিছিল।"
+       "en": "So people called him the [[dihingia|Dihingia Raja]].",
+       "as": "সেয়ে মানুহে তেওঁক [[dihingia]] বুলিছিল।"
+      },
+      {
+       "en": "In 1510 Suhungmung ordered a count of the people: how many there were, how they lived, and where.",
+       "as": "১৫১০ চনত চুহুংমুঙে প্ৰজাৰ গণনাৰ আদেশ দিছিল: কিমান লোক, কেনেকৈ জীয়াই আছে, ক'ত আছে।"
       }
      ],
      "id": "ak3.shm.u1.04"
+    },
+    {
+     "type": "story",
+     "img": "suhungmung/counting-men.webp",
+     "title": {
+      "en": "Who are my people?",
+      "as": "মোৰ প্ৰজা কোন?"
+     },
+     "text": [
+      {
+       "en": "They were divided into clans (<i>khel</i>). Every able man was a [[paik]], who served the state in turn. The Ahoms used to count years in a Tai cycle of 60.",
+       "as": "তেওঁলোকক খেলত ভগোৱা হৈছিল। প্ৰতিজন সক্ষম পুৰুষ আছিল [[paik]], যিয়ে পাল পাতি ৰাজ্যৰ সেৱা কৰিছিল। আহোমসকলে আগতে ৬০ বছৰৰ টাই চক্ৰত বছৰ গণিছিল।"
+      },
+      {
+       "en": "Suhungmung brought in the Hindu [[saka|Saka era]] for dates.",
+       "as": "চুহুংমুঙে তাৰিখৰ বাবে হিন্দু [[saka]] প্ৰচলন কৰিছিল।"
+      },
+      {
+       "en": "In 1512 he also annexed the Habung country, north of the Brahmaputra.",
+       "as": "১৫১২ চনত তেওঁ ব্ৰহ্মপুত্ৰৰ উত্তৰৰ হাবুং অঞ্চলো অধিকাৰ কৰিছিল।"
+      }
+     ],
+     "id": "ak3.shm.u2.01"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Suhungmung was the first Ahom king to take a Hindu title.",
+      "as": "চুহুংমুং হিন্দু উপাধি লোৱা প্ৰথম আহোম ৰজা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "True: Swarganarayan.",
+      "as": "শুদ্ধ: স্বৰ্গনাৰায়ণ।"
+     },
+     "id": "ak3.shm3.u1.01"
     },
     {
      "type": "tf",
@@ -599,44 +672,6 @@
      "id": "ak3.shm.u1.07"
     },
     {
-     "type": "story",
-     "img": "suhungmung/counting-men.webp",
-     "title": {
-      "en": "Who are my people?",
-      "as": "মোৰ প্ৰজা কোন?"
-     },
-     "text": [
-      {
-       "en": "In <mark>1510</mark> Suhungmung ordered a count of the people: how many there were, how they lived, and where.",
-       "as": "<mark>১৫১০</mark> চনত চুহুংমুঙে প্ৰজাৰ গণনাৰ আদেশ দিছিল: কিমান লোক, কেনেকৈ জীয়াই আছে, ক'ত আছে।"
-      },
-      {
-       "en": "They were divided into clans (<i>khel</i>). Every able man was a [[paik]], who served the state in turn.",
-       "as": "তেওঁলোকক খেলত ভগোৱা হৈছিল। প্ৰতিজন সক্ষম পুৰুষ আছিল [[paik]], যিয়ে পাল পাতি ৰাজ্যৰ সেৱা কৰিছিল।"
-      }
-     ],
-     "id": "ak3.shm.u2.01"
-    },
-    {
-     "type": "story",
-     "art": "calendar",
-     "title": {
-      "en": "A new calendar",
-      "as": "নতুন পঞ্জিকা"
-     },
-     "text": [
-      {
-       "en": "The Ahoms used to count years in a Tai cycle of 60. Suhungmung brought in the Hindu [[saka|Saka era]] for dates.",
-       "as": "আহোমসকলে আগতে ৬০ বছৰৰ টাই চক্ৰত বছৰ গণিছিল। চুহুংমুঙে তাৰিখৰ বাবে হিন্দু [[saka]] প্ৰচলন কৰিছিল।"
-      },
-      {
-       "en": "In <mark>1512</mark> he also annexed the Habung country, north of the Brahmaputra.",
-       "as": "<mark>১৫১২</mark> চনত তেওঁ ব্ৰহ্মপুত্ৰৰ উত্তৰৰ হাবুং অঞ্চলো অধিকাৰ কৰিছিল।"
-      }
-     ],
-     "id": "ak3.shm.u2.04"
-    },
-    {
      "type": "tf",
      "s": {
       "en": "Suhungmung replaced the Tai 60-year cycle with the Saka era.",
@@ -648,6 +683,41 @@
       "as": "শুদ্ধ। এইটোও তেওঁৰ দিনত বঢ়া হিন্দু প্ৰভাৱৰ এটা চিন।"
      },
      "id": "ak3.shm.u2.05"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Tap the river on which Suhungmung built his capital.",
+      "as": "চুহুংমুঙে ৰাজধানী পতা নদীখন টিপা।"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Dihing",
+       "as": "ডিহিং"
+      },
+      {
+       "en": "Dhansiri",
+       "as": "ধনশিৰি"
+      },
+      {
+       "en": "Bharali",
+       "as": "ভৰলী"
+      },
+      {
+       "en": "Karatoya",
+       "as": "কৰতোৱা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Bakata stood on the Dihing, in the far east of the kingdom. The Dhansiri led to the Kacharis; the Bharali and the Karatoya come up in the Turbak war.",
+      "as": "বকতা আছিল ৰাজ্যৰ পূবৰ ডিহিঙৰ পাৰত। ধনশিৰিয়ে কছাৰী এলেকালৈ লৈ গৈছিল; ভৰলী আৰু কৰতোৱা তুৰবকৰ যুদ্ধত আহিব।"
+     },
+     "id": "ahom-03-suhungmung.u1.supp.6"
     }
    ]
   },
@@ -697,38 +767,6 @@
      "id": "ak3.shm.u3.01"
     },
     {
-     "type": "mcq",
-     "guess": true,
-     "id": "ak3.shm.g1",
-     "q": {
-      "en": "The Chutias held a steep hill. How do you think the Ahoms took them by surprise?",
-      "as": "চুতীয়াসকল এটা খাড়া পাহাৰত আছিল। তোমাৰ অনুমানত আহোমে তেওঁলোকক কেনেকৈ আচৰিত কৰিলে?"
-     },
-     "options": [
-      {
-       "en": "A long siege",
-       "as": "দীঘলীয়া অৱৰোধ"
-      },
-      {
-       "en": "Climbing up holding on to creepers",
-       "as": "লতা ধৰি বগাই উঠি"
-      },
-      {
-       "en": "Digging a tunnel",
-       "as": "সুৰংগ খান্দি"
-      },
-      {
-       "en": "Bribing the guards",
-       "as": "ৰক্ষীক ভেটি দি"
-      }
-     ],
-     "answer": 1,
-     "why": {
-      "en": "In 1523 they climbed the steep hill holding on to creepers.",
-      "as": "১৫২৩ চনত তেওঁলোকে লতা ধৰি খাড়া পাহাৰ বগালে।"
-     }
-    },
-    {
      "type": "story",
      "img": "suhungmung/chutia-fall.webp",
      "title": {
@@ -746,19 +784,6 @@
       }
      ],
      "id": "ak3.shm.u3.03"
-    },
-    {
-     "type": "tf",
-     "s": {
-      "en": "The Chutia king Dhirnarayan escaped and kept his kingdom.",
-      "as": "চুতীয়া ৰজা ধীৰনাৰায়ণ পলাই গৈ নিজৰ ৰাজ্য ৰক্ষা কৰিছিল।"
-     },
-     "answer": false,
-     "why": {
-      "en": "False. He was killed in 1523 and the whole Chutia country was annexed.",
-      "as": "অশুদ্ধ। ১৫২৩ চনত তেওঁ নিহত হয় আৰু গোটেই চুতীয়া ৰাজ্য অধিকাৰ কৰা হয়।"
-     },
-     "id": "ak3.shm.u3.04"
     },
     {
      "type": "story",
@@ -888,6 +913,55 @@
       }
      ],
      "id": "ak3.shm.u3.05"
+    },
+    {
+     "type": "inline",
+     "guess": true,
+     "id": "ak3.shm.g1",
+     "options": [
+      {
+       "en": "A long siege",
+       "as": "দীঘলীয়া অৱৰোধ"
+      },
+      {
+       "en": "Climbing up holding on to creepers",
+       "as": "লতা ধৰি বগাই উঠি"
+      },
+      {
+       "en": "Digging a tunnel",
+       "as": "সুৰংগ খান্দি"
+      },
+      {
+       "en": "Bribing the guards",
+       "as": "ৰক্ষীক ভেটি দি"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "In 1523 they climbed the steep hill holding on to creepers.",
+      "as": "১৫২৩ চনত তেওঁলোকে লতা ধৰি খাড়া পাহাৰ বগালে।"
+     },
+     "before": {
+      "en": "The Chutias held a steep hill. How do you think the Ahoms took them by surprise?",
+      "as": "চুতীয়াসকল এটা খাড়া পাহাৰত আছিল। তোমাৰ অনুমানত আহোমে তেওঁলোকক কেনেকৈ আচৰিত কৰিলে?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Chutia king Dhirnarayan escaped and kept his kingdom.",
+      "as": "চুতীয়া ৰজা ধীৰনাৰায়ণ পলাই গৈ নিজৰ ৰাজ্য ৰক্ষা কৰিছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "False. He was killed in 1523 and the whole Chutia country was annexed.",
+      "as": "অশুদ্ধ। ১৫২৩ চনত তেওঁ নিহত হয় আৰু গোটেই চুতীয়া ৰাজ্য অধিকাৰ কৰা হয়।"
+     },
+     "id": "ak3.shm.u3.04"
     },
     {
      "type": "map",
@@ -1141,12 +1215,8 @@
      },
      "text": [
       {
-       "en": "Years before, Supimphaa had sent a pregnant queen away to a Naga village. Her son, [[konseng]] (Senglung), grew up there.",
-       "as": "বহু বছৰ আগতে চুপিম্ফাই এগৰাকী গৰ্ভৱতী ৰাণীক এখন নগা গাঁৱলৈ পঠিয়াইছিল। তেওঁৰ পুত্ৰ [[konseng]] (চেংলুং) তাতে ডাঙৰ হ'ল।"
-      },
-      {
-       "en": "When the young man came to court, Suhungmung saw his royal bearing and learned he was his own half-brother.",
-       "as": "যুৱকজন ৰাজসভালৈ অহাত চুহুংমুঙে তেওঁৰ ৰাজকীয় আচৰণ দেখিলে আৰু জানিলে যে তেওঁ নিজৰে বৈমাত্ৰেয় ভাই।"
+       "en": "Tradition identifies Konseng as Suhungmung’s half-brother,raised in a Naga village after his mother left court. The story explains his unusual route into Ahom high office.",
+       "as": "পৰম্পৰাত কনচেং চুহুংমুঙৰ বৈমাত্ৰেয় ভাই;মাতৃ ৰাজসভা এৰাৰ পিছত নগা গাঁৱত ডাঙৰ হয়।কাহিনীয়ে উচ্চপদলৈ তেওঁৰ অস্বাভাৱিক পথ বুজায়।"
       }
      ],
      "id": "ak3.shm.u4.01"
@@ -1160,15 +1230,26 @@
      },
      "text": [
       {
-       "en": "Suhungmung created a new office for him, the [[borpatrogohain]], equal to the [[burhagohain]] and the [[borgohain]].",
-       "as": "চুহুংমুঙে তেওঁৰ বাবে এটা নতুন পদ সৃষ্টি কৰিলে, [[borpatrogohain]], যি [[burhagohain]] আৰু [[borgohain]]ৰ সমান।"
-      },
-      {
-       "en": "The two old Gohains would not give up any of their men. So the king gave him the Barahis, Chutias and Morans, and seated him between the two before all the nobles.",
-       "as": "পুৰণি দুজন গোহাঁইয়ে নিজৰ লোক এৰি দিবলৈ নামানিলে। সেয়ে ৰজাই তেওঁক বৰাহী, চুতীয়া আৰু মৰাণসকলক দিলে, আৰু সকলো সম্ভ্ৰান্তৰ আগত দুয়োজনৰ মাজত বহুৱালে।"
+       "en": "Suhungmung created the Borpatrogohain office for him,alongside the Borgohain and Burhagohain. Communities assigned to the new officer included Borahi,Chutia and Moran groups. Expansion reshaped the administration.",
+       "as": "ৰজাই বৰগোহাঁই-বুঢ়াগোহাঁইৰ সমপৰ্যায়ৰ বৰপাত্ৰগোহাঁই পদ তেওঁৰ বাবে কৰে।নতুন বিষয়াক বৰাহী,চুতীয়া আৰু মৰাণ গোট দিয়া হয়।বিস্তাৰে প্ৰশাসন সলায়।"
       }
      ],
      "id": "ak3.shm.u4.03"
+    },
+    {
+     "type": "story",
+     "img": "suhungmung/pursuit-dimapur.webp",
+     "title": {
+      "en": "Up the Dhansiri",
+      "as": "ধনশিৰিৰ উজনিলৈ"
+     },
+     "text": [
+      {
+       "en": "Kachari power centred on Dimapur in the Dhansiri valley. Ahom campaigns in 1531 and 1536 captured the capital. Detsung,first installed as ruler,later resisted and was killed after the second campaign.",
+       "as": "ধনশিৰিৰ ডিমাপুৰ কছাৰী শক্তিৰ কেন্দ্ৰ।১৫৩১আৰু১৫৩৬ৰআহোম অভিযানে ৰাজধানী দখল কৰে।প্ৰথমে বহুওৱা দেতচুঙে পিছত বিৰোধিতা কৰি দ্বিতীয় অভিযানৰ পিছত নিহত হয়।"
+      }
+     ],
+     "id": "ak3.shm.u5.01"
     },
     {
      "type": "tf",
@@ -1226,44 +1307,6 @@
       "as": "দুজন গোহাঁই চুকাফাৰ দিনৰ, তৃতীয়জন চুহুংমুঙৰ।"
      },
      "id": "ak3.shm.u4.08"
-    },
-    {
-     "type": "story",
-     "img": "suhungmung/pursuit-dimapur.webp",
-     "title": {
-      "en": "Up the Dhansiri",
-      "as": "ধনশিৰিৰ উজনিলৈ"
-     },
-     "text": [
-      {
-       "en": "South-west of the Ahoms, the [[kachari|Kacharis]] ruled the [[dhansiri-south|Dhansiri]] valley from their brick city, [[dimapur]].",
-       "as": "আহোমৰ দক্ষিণ-পশ্চিমে [[kachari]]য়ে তেওঁলোকৰ ইটাৰ নগৰ [[dimapur]]ৰ পৰা [[dhansiri-south|ধনশিৰি]] উপত্যকা শাসন কৰিছিল।"
-      },
-      {
-       "en": "In <mark>1531</mark> an Ahom army marched up both banks of the Dhansiri and reached Dimapur. The Kachari king fled.",
-       "as": "<mark>১৫৩১</mark> চনত আহোম সৈন্য ধনশিৰিৰ দুয়োপাৰে উজাই গৈ ডিমাপুৰ পালে। কছাৰী ৰজা পলাল।"
-      }
-     ],
-     "id": "ak3.shm.u5.01"
-    },
-    {
-     "type": "story",
-     "img": "suhungmung/dimapur-abandoned.webp",
-     "title": {
-      "en": "The end of Detsung",
-      "as": "দেৎচুঙৰ অন্ত"
-     },
-     "text": [
-      {
-       "en": "A prince named [[detsung]] was put on the Kachari throne. He gave his sister to Suhungmung and sent rich gifts.",
-       "as": "[[detsung]] নামৰ এজন কোঁৱৰক কছাৰী সিংহাসনত বহুওৱা হ'ল। তেওঁ নিজৰ ভনীয়েকক চুহুংমুঙলৈ দিলে আৰু বহুমূলীয়া উপহাৰ পঠিয়ালে।"
-      },
-      {
-       "en": "When he turned hostile, the Ahoms marched again. In <mark>1536</mark> Dimapur was taken a second time and Detsung was caught and killed.",
-       "as": "তেওঁ শত্ৰুতা কৰাত আহোমে পুনৰ আক্ৰমণ কৰিলে। <mark>১৫৩৬</mark> চনত দ্বিতীয়বাৰ ডিমাপুৰ দখল হয় আৰু দেৎচুঙক ধৰি হত্যা কৰা হয়।"
-      }
-     ],
-     "id": "ak3.shm.u5.03"
     },
     {
      "type": "map",
@@ -1423,6 +1466,41 @@
       "as": "অশুদ্ধ। ডিমাপুৰ কছাৰী ৰাজধানী; সদিয়া চুতীয়া ৰাজধানী।"
      },
      "id": "ak3.shm3.u5.01"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Tap Dimapur, the Kachari capital.",
+      "as": "কছাৰী ৰাজধানী ডিমাপুৰ টিপা।"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Dimapur",
+       "as": "ডিমাপুৰ"
+      },
+      {
+       "en": "Sadiya",
+       "as": "শদিয়া"
+      },
+      {
+       "en": "Charaideo",
+       "as": "চৰাইদেউ"
+      },
+      {
+       "en": "Singri",
+       "as": "শিংৰি"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Dimapur lies on the Dhansiri, in today's Nagaland.",
+      "as": "ডিমাপুৰ ধনশিৰিৰ পাৰত, আজিৰ নগালেণ্ডত।"
+     },
+     "id": "ahom-03-suhungmung.u3.supp.6"
     }
    ]
   },
@@ -1472,35 +1550,6 @@
      "id": "ak3.shm.u6.01"
     },
     {
-     "type": "mcq",
-     "guess": true,
-     "id": "ak3.shm.d1",
-     "q": {
-      "en": "You are the wife of a commander who has just fallen fighting Turbak. What do you do?",
-      "as": "তুমি তুৰবকৰ সৈতে যুঁজি নিহত হোৱা এজন সেনাপতিৰ পত্নী। তুমি কি কৰিবা?"
-     },
-     "options": [
-      {
-       "en": "Flee to safety",
-       "as": "সুৰক্ষিত ঠাইলৈ পলোৱা"
-      },
-      {
-       "en": "Take up his sword and lead",
-       "as": "তেওঁৰ তৰোৱাল লৈ নেতৃত্ব দিয়া"
-      },
-      {
-       "en": "Ask for peace",
-       "as": "শান্তি বিচৰা"
-      }
-     ],
-     "answer": 1,
-     "why": {
-      "en": "Mula Gabharu took up her husband's sword and died fighting in 1533.",
-      "as": "মূলা গাভৰুৱে স্বামীৰ তৰোৱাল লৈ ১৫৩৩ চনত যুঁজি প্ৰাণ দিলে।"
-     },
-     "decide": true
-    },
-    {
      "type": "story",
      "img": "suhungmung/mula-gabharu.webp",
      "title": {
@@ -1518,47 +1567,6 @@
       }
      ],
      "id": "ak3.shm.u6.03"
-    },
-    {
-     "type": "whoami",
-     "clues": [
-      {
-       "en": "I was the wife of an Ahom commander.",
-       "as": "মই এজন আহোম সেনাপতিৰ পত্নী আছিলোঁ।"
-      },
-      {
-       "en": "My husband was killed by Turbak's army.",
-       "as": "তুৰবকৰ সৈন্যই মোৰ স্বামীক হত্যা কৰিছিল।"
-      },
-      {
-       "en": "I died fighting in 1533.",
-       "as": "১৫৩৩ চনত মই যুঁজি প্ৰাণ দিছিলোঁ।"
-      }
-     ],
-     "options": [
-      {
-       "en": "Mula Gabharu",
-       "as": "মূলা গাভৰু"
-      },
-      {
-       "en": "Joymoti",
-       "as": "জয়মতী"
-      },
-      {
-       "en": "Phuleswari",
-       "as": "ফুলেশ্বৰী"
-      },
-      {
-       "en": "Kuranganayani",
-       "as": "কুৰংগনয়নী"
-      }
-     ],
-     "answer": 0,
-     "why": {
-      "en": "Mula Gabharu. Joymoti lived in the 1670s, Phuleswari was Siva Singha's queen, Kuranganayani was Rajeswar Singha's.",
-      "as": "মূলা গাভৰু। জয়মতী ১৬৭০ৰ দশকৰ, ফুলেশ্বৰী শিৱ সিংহৰ ৰাণী, কুৰংগনয়নী ৰাজেশ্বৰ সিংহৰ।"
-     },
-     "id": "ak3.shm.u6.04"
     },
     {
      "type": "story",
@@ -1688,6 +1696,80 @@
       }
      ],
      "id": "ak3.shm.u6.05"
+    },
+    {
+     "type": "inline",
+     "guess": true,
+     "id": "ak3.shm.d1",
+     "options": [
+      {
+       "en": "Flee to safety",
+       "as": "সুৰক্ষিত ঠাইলৈ পলোৱা"
+      },
+      {
+       "en": "Take up his sword and lead",
+       "as": "তেওঁৰ তৰোৱাল লৈ নেতৃত্ব দিয়া"
+      },
+      {
+       "en": "Ask for peace",
+       "as": "শান্তি বিচৰা"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Mula Gabharu took up her husband's sword and died fighting in 1533.",
+      "as": "মূলা গাভৰুৱে স্বামীৰ তৰোৱাল লৈ ১৫৩৩ চনত যুঁজি প্ৰাণ দিলে।"
+     },
+     "decide": true,
+     "before": {
+      "en": "You are the wife of a commander who has just fallen fighting Turbak. What do you do?",
+      "as": "তুমি তুৰবকৰ সৈতে যুঁজি নিহত হোৱা এজন সেনাপতিৰ পত্নী। তুমি কি কৰিবা?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I was the wife of an Ahom commander.",
+       "as": "মই এজন আহোম সেনাপতিৰ পত্নী আছিলোঁ।"
+      },
+      {
+       "en": "My husband was killed by Turbak's army.",
+       "as": "তুৰবকৰ সৈন্যই মোৰ স্বামীক হত্যা কৰিছিল।"
+      },
+      {
+       "en": "I died fighting in 1533.",
+       "as": "১৫৩৩ চনত মই যুঁজি প্ৰাণ দিছিলোঁ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Mula Gabharu",
+       "as": "মূলা গাভৰু"
+      },
+      {
+       "en": "Joymoti",
+       "as": "জয়মতী"
+      },
+      {
+       "en": "Phuleswari",
+       "as": "ফুলেশ্বৰী"
+      },
+      {
+       "en": "Kuranganayani",
+       "as": "কুৰংগনয়নী"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Mula Gabharu. Joymoti lived in the 1670s, Phuleswari was Siva Singha's queen, Kuranganayani was Rajeswar Singha's.",
+      "as": "মূলা গাভৰু। জয়মতী ১৬৭০ৰ দশকৰ, ফুলেশ্বৰী শিৱ সিংহৰ ৰাণী, কুৰংগনয়নী ৰাজেশ্বৰ সিংহৰ।"
+     },
+     "id": "ak3.shm.u6.04"
     },
     {
      "type": "map",
@@ -1954,6 +2036,25 @@
      "id": "ak3.shm.u7.02"
     },
     {
+     "type": "story",
+     "art": "scroll",
+     "title": {
+      "en": "Five firsts",
+      "as": "পাঁচটা প্ৰথম"
+     },
+     "text": [
+      {
+       "en": "Suhungmung's <mark>five firsts</mark>, on one hand: <b>1</b> first Hindu title (Swarganarayan), <b>2</b> first count of the people (1510), <b>3</b> the Saka era, <b>4</b> the third Gohain (Borpatrogohain), <b>5</b> firearms (after Turbak).",
+       "as": "চুহুংমুঙৰ <mark>পাঁচটা প্ৰথম</mark>, এখন হাতত: <b>১</b> প্ৰথম হিন্দু উপাধি (স্বৰ্গনাৰায়ণ), <b>২</b> প্ৰথম প্ৰজা গণনা (১৫১০), <b>৩</b> শকাব্দ, <b>৪</b> তৃতীয় গোহাঁই (বৰপাত্ৰগোহাঁই), <b>৫</b> বন্দুক-কামান (তুৰবকৰ পিছত)।"
+      },
+      {
+       "en": "Count them on your fingers. Exams love 'first Ahom king to…'.",
+       "as": "আঙুলিত গণা। পৰীক্ষাত 'প্ৰথম আহোম ৰজা…' প্ৰায়ে আহে।"
+      }
+     ],
+     "id": "ak3.shm4.u7.02"
+    },
+    {
      "type": "odd",
      "q": {
       "en": "Which of these did Suhungmung NOT do?",
@@ -2080,25 +2181,6 @@
      "id": "ak3.shm.u7.08"
     },
     {
-     "type": "story",
-     "art": "scroll",
-     "title": {
-      "en": "Five firsts",
-      "as": "পাঁচটা প্ৰথম"
-     },
-     "text": [
-      {
-       "en": "Suhungmung's <mark>five firsts</mark>, on one hand: <b>1</b> first Hindu title (Swarganarayan), <b>2</b> first count of the people (1510), <b>3</b> the Saka era, <b>4</b> the third Gohain (Borpatrogohain), <b>5</b> firearms (after Turbak).",
-       "as": "চুহুংমুঙৰ <mark>পাঁচটা প্ৰথম</mark>, এখন হাতত: <b>১</b> প্ৰথম হিন্দু উপাধি (স্বৰ্গনাৰায়ণ), <b>২</b> প্ৰথম প্ৰজা গণনা (১৫১০), <b>৩</b> শকাব্দ, <b>৪</b> তৃতীয় গোহাঁই (বৰপাত্ৰগোহাঁই), <b>৫</b> বন্দুক-কামান (তুৰবকৰ পিছত)।"
-      },
-      {
-       "en": "Count them on your fingers. Exams love 'first Ahom king to…'.",
-       "as": "আঙুলিত গণা। পৰীক্ষাত 'প্ৰথম আহোম ৰজা…' প্ৰায়ে আহে।"
-      }
-     ],
-     "id": "ak3.shm4.u7.02"
-    },
-    {
      "type": "match",
      "q": {
       "en": "Match the 'firsts'.",
@@ -2151,6 +2233,41 @@
       "as": "পাঁচটাৰ চাৰিটা। পঞ্চম: শকাব্দ।"
      },
      "id": "ak3.shm4.u7.03"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Ratiman",
+      "as": "ৰতিমান"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "The assassin",
+       "as": "হত্যাকাৰী"
+      },
+      {
+       "en": "Koch king who came with gifts",
+       "as": "উপহাৰ লৈ অহা কোচ ৰজা"
+      },
+      {
+       "en": "Son and successor",
+       "as": "পুত্ৰ আৰু উত্তৰাধিকাৰী"
+      },
+      {
+       "en": "Suhungmung dies",
+       "as": "চুহুংমুঙৰ মৃত্যু"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Ratiman killed Suhungmung in 1539; Suklen became king.",
+      "as": "১৫৩৯ চনত ৰতিমানে চুহুংমুঙক হত্যা কৰে; চুক্লেন ৰজা হয়।"
+     },
+     "id": "ahom-03-suhungmung.u5.supp.5"
     }
    ]
   }
@@ -2239,11 +2356,7 @@
     "id": "ak3.shm.test.02"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. Suhungmung created the office of Borpatrogohain.<br>2. Suhungmung founded the capital Garhgaon.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. চুহুংমুঙে বৰপাত্ৰগোহাঁই পদ সৃষ্টি কৰিছিল।<br>২. চুহুংমুঙে গড়গাঁও ৰাজধানী স্থাপন কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -2268,7 +2381,15 @@
      "as": "কেৱল ১। গড়গাঁও চুক্লেনমুঙে নিৰ্মাণ কৰিছিল।"
     },
     "small": true,
-    "id": "ak3.shm.test.03"
+    "id": "ak3.shm.test.03",
+    "before": {
+     "en": "Consider the statements:<br>1. Suhungmung created the office of Borpatrogohain.<br>2. Suhungmung founded the capital Garhgaon.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. চুহুংমুঙে বৰপাত্ৰগোহাঁই পদ সৃষ্টি কৰিছিল।<br>২. চুহুংমুঙে গড়গাঁও ৰাজধানী স্থাপন কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    },
    {
     "type": "map",
@@ -2704,5 +2825,7 @@
     "id": "ak3.shm.test.10"
    }
   ]
- }
+ },
+ "origin_course": "ahom-kingdom",
+ "origin_no": 3
 }

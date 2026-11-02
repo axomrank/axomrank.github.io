@@ -4,7 +4,7 @@ Short, game-like, bilingual (English and Assamese) lessons for ADRE, Assam TET, 
 
 **Live:** https://axomrank.pages.dev (also https://axomrank.github.io/)
 
-**Courses:** Ahom Kings (41 reigns, 1228–1838) is the first course. More subjects (Assam geography, polity, economy, culture, current affairs, general studies) follow the same lesson format; see [docs/PLAN.md](docs/PLAN.md) and [docs/CURRICULUM.md](docs/CURRICULUM.md).
+**Assam History:** one continuous course with 27 checkpoints: **93 core lessons / 380 units**, plus the optional **41-lesson / 152-unit** Ahom deep dive. There are **2,651 practice questions**, a searchable cross-course [timeline and people/place index](history.html), sources and reusable illustrations. Assamese editorial review is deferred; publication targets are Cloudflare Pages and GitHub Pages. See [completion and checks](docs/HISTORY-COMPLETION.md). Other subjects remain on the roadmap.
 
 ## Documentation
 
@@ -18,7 +18,7 @@ Short, game-like, bilingual (English and Assamese) lessons for ADRE, Assam TET, 
 ## Layout
 
 ```
-index.html, lesson.html   course home and lesson player
+index.html, lesson.html, history.html   home, lesson player and cross-course reference
 sw.js, manifest.webmanifest   offline support and install (sw.js version is stamped by build.py)
 _headers, _redirects      Cloudflare Pages caching and redirects
 app/                      config.js (services), common.js, engine.js (player), home.js, sync.js, app.css

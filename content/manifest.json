@@ -1,32 +1,34 @@
 {
- "version": "4232fd38d2",
+ "version": "09525a67fc",
+ "courseRedirects": {
+  "early-assam": "assam-history",
+  "varman-kings": "assam-history",
+  "salastambha-kings": "assam-history",
+  "pala-kings": "assam-history",
+  "medieval-kingdoms": "assam-history",
+  "ahom-kingdom": "assam-history",
+  "british-period": "assam-history",
+  "modern-assam": "assam-history",
+  "assam-culture": "assam-history",
+  "heritage-and-sources": "assam-history",
+  "peoples-councils-movements": "assam-history",
+  "ahom-kings": "assam-history"
+ },
  "courses": [
-  {
-   "id": "ahom-kingdom",
-   "file": "content/courses/ahom-kingdom.json"
-  },
   {
    "id": "ahom-kings",
    "file": "content/courses/ahom-kings.json"
   },
   {
-   "id": "pala-kings",
-   "file": "content/courses/pala-kings.json"
-  },
-  {
-   "id": "salastambha-kings",
-   "file": "content/courses/salastambha-kings.json"
-  },
-  {
-   "id": "varman-kings",
-   "file": "content/courses/varman-kings.json"
+   "id": "assam-history",
+   "file": "content/courses/assam-history.json"
   }
  ],
  "lessons": {
   "ahom-01-sukaphaa": {
-   "course": "ahom-kingdom",
-   "no": 1,
-   "version": 1,
+   "course": "assam-history",
+   "no": 23,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Sukaphaa founds a kingdom",
@@ -90,9 +92,9 @@
    ]
   },
   "ahom-02-early-kings": {
-   "course": "ahom-kingdom",
-   "no": 2,
-   "version": 1,
+   "course": "assam-history",
+   "no": 24,
+   "version": 2,
    "steps": 7,
    "title": {
     "en": "Two centuries of early kings",
@@ -106,7 +108,7 @@
       "as": "সাতঘৰীয়া"
      },
      "i": "home",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -115,7 +117,7 @@
       "as": "কামতাৰ কইনা"
      },
      "i": "crown",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -133,7 +135,7 @@
       "as": "ভুৰত ভাহি অহা কোঁৱৰ"
      },
      "i": "crown",
-     "ex": 3
+     "ex": 5
     },
     {
      "id": "u5",
@@ -151,7 +153,7 @@
       "as": "দীঘলীয়া ৰাজত্ব, কঠিন চুবুৰীয়া"
      },
      "i": "crown",
-     "ex": 5
+     "ex": 7
     },
     {
      "id": "test",
@@ -165,9 +167,9 @@
    ]
   },
   "ahom-03-suhungmung": {
-   "course": "ahom-kingdom",
-   "no": 3,
-   "version": 1,
+   "course": "assam-history",
+   "no": 25,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Suhungmung, the Dihingia Raja",
@@ -181,7 +183,7 @@
       "as": "স্বৰ্গনাৰায়ণ"
      },
      "i": "crown",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -199,7 +201,7 @@
       "as": "তৃতীয় গোহাঁই আৰু ডিমাপুৰ"
      },
      "i": "hands",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -217,7 +219,7 @@
       "as": "ৰাতিৰ হত্যা"
      },
      "i": "moon",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -231,9 +233,9 @@
    ]
   },
   "ahom-04-koch-wars": {
-   "course": "ahom-kingdom",
-   "no": 4,
-   "version": 1,
+   "course": "assam-history",
+   "no": 26,
+   "version": 2,
    "steps": 4,
    "title": {
     "en": "Garhgaon and the Koch wars",
@@ -279,9 +281,9 @@
    ]
   },
   "ahom-05-pratap-singha": {
-   "course": "ahom-kingdom",
-   "no": 5,
-   "version": 1,
+   "course": "assam-history",
+   "no": 27,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Pratap Singha builds the state",
@@ -304,7 +306,7 @@
       "as": "মোগলৰ আগমন"
      },
      "i": "river",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -313,7 +315,7 @@
       "as": "হাজো আৰু অসুৰ আলি"
      },
      "i": "flag",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -322,7 +324,7 @@
       "as": "গজপতি"
      },
      "i": "home",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u5",
@@ -331,7 +333,7 @@
       "as": "ভগা ৰজা আৰু নৰিয়া ৰজা"
      },
      "i": "crown",
-     "ex": 5
+     "ex": 7
     },
     {
      "id": "test",
@@ -345,9 +347,9 @@
    ]
   },
   "ahom-06-mir-jumla": {
-   "course": "ahom-kingdom",
-   "no": 6,
-   "version": 1,
+   "course": "assam-history",
+   "no": 28,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Mir Jumla takes Garhgaon",
@@ -361,7 +363,7 @@
       "as": "গুৱাহাটী পুনৰুদ্ধাৰ"
      },
      "i": "crown",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -370,7 +372,7 @@
       "as": "মীৰজুমলাৰ আক্ৰমণ"
      },
      "i": "flag",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -388,7 +390,7 @@
       "as": "লাজৰ যাঠি"
      },
      "i": "hands",
-     "ex": 4
+     "ex": 6
     },
     {
      "id": "test",
@@ -402,9 +404,9 @@
    ]
   },
   "ahom-07-saraighat": {
-   "course": "ahom-kingdom",
-   "no": 7,
-   "version": 1,
+   "course": "assam-history",
+   "no": 29,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Lachit and Saraighat",
@@ -427,7 +429,7 @@
       "as": "গুৱাহাটী মুক্ত"
      },
      "i": "flag",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -436,7 +438,7 @@
       "as": "ৰামসিংহ আৰু আলাবৈ"
      },
      "i": "hill",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -468,9 +470,9 @@
    ]
   },
   "ahom-08-kingmakers": {
-   "course": "ahom-kingdom",
-   "no": 8,
-   "version": 1,
+   "course": "assam-history",
+   "no": 30,
+   "version": 2,
    "steps": 3,
    "title": {
     "en": "Years of the puppet kings",
@@ -484,7 +486,7 @@
       "as": "তিনিজন ৰজা-গঢ়োঁতা"
      },
      "i": "moon",
-     "ex": 4
+     "ex": 6
     },
     {
      "id": "u2",
@@ -507,9 +509,9 @@
    ]
   },
   "ahom-09-gadadhar-singha": {
-   "course": "ahom-kingdom",
-   "no": 9,
-   "version": 1,
+   "course": "assam-history",
+   "no": 31,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Gadadhar Singha and Itakhuli",
@@ -523,7 +525,7 @@
       "as": "লুকাই থকাৰ পৰা সিংহাসনলৈ"
      },
      "i": "star",
-     "ex": 3
+     "ex": 5
     },
     {
      "id": "u2",
@@ -532,7 +534,7 @@
       "as": "ইটাখুলি, ১৬৮২"
      },
      "i": "flag",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -541,7 +543,7 @@
       "as": "ৰজা আৰু সত্ৰ"
      },
      "i": "hands",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -550,7 +552,7 @@
       "as": "মাটিৰ জৰীপ"
      },
      "i": "home",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -564,9 +566,9 @@
    ]
   },
   "ahom-10-rudra-singha": {
-   "course": "ahom-kingdom",
-   "no": 10,
-   "version": 1,
+   "course": "assam-history",
+   "no": 32,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Rudra Singha",
@@ -580,7 +582,7 @@
       "as": "জয়মতীৰ পুত্ৰ"
      },
      "i": "crown",
-     "ex": 3
+     "ex": 5
     },
     {
      "id": "u2",
@@ -589,7 +591,7 @@
       "as": "ইটাৰ নগৰ"
      },
      "i": "home",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -598,7 +600,7 @@
       "as": "মাইবং আৰু জয়ন্তীয়াপুৰ"
      },
      "i": "hill",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -607,7 +609,7 @@
       "as": "গংগাৰ ফালে"
      },
      "i": "star",
-     "ex": 2
+     "ex": 5
     },
     {
      "id": "test",
@@ -621,9 +623,9 @@
    ]
   },
   "ahom-11-queens-monuments": {
-   "course": "ahom-kingdom",
-   "no": 11,
-   "version": 1,
+   "course": "assam-history",
+   "no": 33,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Queens, temples and monuments",
@@ -637,7 +639,7 @@
       "as": "বৰ ৰজা"
      },
      "i": "crown",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -646,7 +648,7 @@
       "as": "কপালত তেজ"
      },
      "i": "moon",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -655,7 +657,7 @@
       "as": "শিৱসাগৰ আৰু ৰংঘৰ"
      },
      "i": "home",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -678,9 +680,9 @@
    ]
   },
   "ahom-12-moamoria": {
-   "course": "ahom-kingdom",
-   "no": 12,
-   "version": 1,
+   "course": "assam-history",
+   "no": 34,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "The Moamoria rebellion",
@@ -703,7 +705,7 @@
       "as": "ৰাণীৰ আঘাত"
      },
      "i": "star",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -712,7 +714,7 @@
       "as": "জোঁৰ আৰু পলায়ন"
      },
      "i": "moon",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -721,7 +723,7 @@
       "as": "কেপ্তেইন ৱেল্‌চ আৰু যোৰহাট"
      },
      "i": "walk",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -735,9 +737,9 @@
    ]
   },
   "ahom-13-burmese": {
-   "course": "ahom-kingdom",
-   "no": 13,
-   "version": 1,
+   "course": "assam-history",
+   "no": 35,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Purnananda and the Burmese",
@@ -760,7 +762,7 @@
       "as": "বদন চন্দ্ৰৰ আভালৈ যাত্ৰা"
      },
      "i": "crown",
-     "ex": 3
+     "ex": 5
     },
     {
      "id": "u3",
@@ -778,7 +780,7 @@
       "as": "মহগড় আৰু মানৰ দিন"
      },
      "i": "crown",
-     "ex": 3
+     "ex": 5
     },
     {
      "id": "test",
@@ -792,9 +794,9 @@
    ]
   },
   "ahom-14-yandabo": {
-   "course": "ahom-kingdom",
-   "no": 14,
-   "version": 1,
+   "course": "assam-history",
+   "no": 36,
+   "version": 2,
    "steps": 4,
    "title": {
     "en": "Yandabo and the last king",
@@ -808,7 +810,7 @@
       "as": "ইংৰাজৰ আগমন, মানৰ বিদায়"
      },
      "i": "walk",
-     "ex": 3
+     "ex": 5
     },
     {
      "id": "u2",
@@ -826,7 +828,7 @@
       "as": "ছশ বছৰৰ অন্ত"
      },
      "i": "moon",
-     "ex": 2
+     "ex": 5
     },
     {
      "id": "test",
@@ -836,6 +838,1893 @@
      },
      "i": "trophy",
      "ex": 7
+    }
+   ]
+  },
+  "ahom-15-administration": {
+   "course": "assam-history",
+   "no": 37,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "How the Ahoms ruled",
+    "as": "আহোমৰ শাসনব্যৱস্থা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Who could check a king?",
+      "as": "ৰজাক কোনে নিয়ন্ত্ৰণ কৰিছিল?"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The state needed your labour",
+      "as": "ৰাজ্যক লাগিছিল তোমাৰ শ্ৰম"
+     },
+     "i": "scroll",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Read the ranks",
+      "as": "পদবী চিনা"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Reading what survived",
+      "as": "বাচি থকা নথি পঢ়া"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Belief and memory",
+      "as": "বিশ্বাস আৰু স্মৃতি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "assam-culture-01": {
+   "course": "assam-history",
+   "no": 67,
+   "version": 1,
+   "steps": 8,
+   "title": {
+    "en": "Sankardev: devotion through art",
+    "as": "শংকৰদেৱ: শিল্পেৰে ভক্তি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A Bhuyan boyhood",
+      "as": "ভূঞা পৰিয়ালৰ শৈশৱ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A journey widens the horizon",
+      "as": "যাত্ৰাই দিগন্ত মুকলি কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "One refuge, four anchors",
+      "as": "এক শৰণ, চাৰি আধাৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Words for a congregation",
+      "as": "সমাজৰ বাবে বাণী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "A song carries devotion",
+      "as": "গীতে ভক্তি বহন কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u6",
+     "t": {
+      "en": "A stage teaches a story",
+      "as": "মঞ্চই কাহিনী শিকায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u7",
+     "t": {
+      "en": "Shelter at the Koch court",
+      "as": "কোচ ৰাজসভাৰ আশ্ৰয়"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 14
+    }
+   ]
+  },
+  "assam-culture-02": {
+   "course": "assam-history",
+   "no": 68,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Madhavdev and the later teachers",
+    "as": "মাধৱদেৱ আৰু পিছৰ গুৰুসকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A meeting changes a life",
+      "as": "সাক্ষাতে জীৱন সলায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A thousand verses of devotion",
+      "as": "ভক্তিৰ এহেজাৰ পদ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "More than one teacher",
+      "as": "এজনতকৈ অধিক গুৰু"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Branches and changing institutions",
+      "as": "শাখা আৰু সলনি প্ৰতিষ্ঠান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "assam-culture-03": {
+   "course": "assam-history",
+   "no": 69,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Satras and naamghars",
+    "as": "সত্ৰ আৰু নামঘৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A house for shared voices",
+      "as": "সমূহীয়া কণ্ঠৰ ঘৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Majuli’s living arts",
+      "as": "মাজুলীৰ জীৱন্ত শিল্প"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Barpeta’s shared courtyard",
+      "as": "বৰপেটাৰ সমূহীয়া চোতাল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A king supports a satra",
+      "as": "সত্ৰলৈ ৰজাৰ সহায়"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "assam-culture-04": {
+   "course": "assam-history",
+   "no": 70,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Kamakhya and plural religious worlds",
+    "as": "কামাখ্যা আৰু বহুধৰ্মীয় জগত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Kamakhya rebuilt",
+      "as": "কামাখ্যাৰ পুনৰ নিৰ্মাণ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The monsoon’s sacred pause",
+      "as": "বৰ্ষাৰ পৱিত্ৰ বিৰতি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Power and religious patronage",
+      "as": "ক্ষমতা আৰু ধৰ্মৰ পৃষ্ঠপোষকতা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A Sufi voice in Assamese",
+      "as": "অসমীয়াত ছুফী কণ্ঠ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "assam-culture-05": {
+   "course": "assam-history",
+   "no": 71,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Early literature and manuscripts",
+    "as": "আদি সাহিত্য আৰু পাণ্ডুলিপি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Songs before modern borders",
+      "as": "আধুনিক সীমাৰ আগৰ গীত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Prahlada speaks in the region",
+      "as": "অঞ্চলৰ ভাষাত প্ৰহ্লাদ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The Ramayana in Assamese",
+      "as": "অসমীয়াত ৰামায়ণ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The epics keep travelling",
+      "as": "মহাকাব্য আগবাঢ়ে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "A book before the press",
+      "as": "ছপাৰ আগৰ পুথি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "assam-culture-06": {
+   "course": "assam-history",
+   "no": 72,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Buranjis: history and power",
+    "as": "বুৰঞ্জী: ইতিহাস আৰু ক্ষমতা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Writing what the court remembered",
+      "as": "ৰাজসভাৰ স্মৃতি লিখা"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "History can threaten power",
+      "as": "ইতিহাসে ক্ষমতাক প্ৰশ্ন কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Read another court’s account",
+      "as": "আন ৰাজসভাৰ বিৱৰণ পঢ়া"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "assam-culture-07": {
+   "course": "assam-history",
+   "no": 73,
+   "version": 1,
+   "steps": 7,
+   "title": {
+    "en": "Modern writers and cultural voices",
+    "as": "আধুনিক লেখক আৰু সংস্কৃতিৰ কণ্ঠ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The Jonaki circle",
+      "as": "জোনাকীৰ সাহিত্যচক্ৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Bezbaroa’s many voices",
+      "as": "বেজবৰুৱাৰ বহু কণ্ঠ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A public literary institution",
+      "as": "ৰাজহুৱা সাহিত্য প্ৰতিষ্ঠান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Rupkonwar builds a new stage",
+      "as": "ৰূপকোঁৱৰে নতুন মঞ্চ গঢ়ে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Kalaguru’s many arts",
+      "as": "কলাগুৰুৰ বহু শিল্প"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u6",
+     "t": {
+      "en": "A voice crosses borders",
+      "as": "কণ্ঠই সীমা পাৰ হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 12
+    }
+   ]
+  },
+  "assam-culture-08": {
+   "course": "assam-history",
+   "no": 74,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Literary honours and their meanings",
+    "as": "সাহিত্যৰ সন্মান আৰু অৰ্থ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The first Assamese Jnanpith",
+      "as": "প্ৰথম অসমীয়া জ্ঞানপীঠ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "One writer, two names",
+      "as": "এগৰাকী লেখক, দুই নাম"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Poetry earns a national honour",
+      "as": "কবিতাই ৰাষ্ট্ৰীয় সন্মান পায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "assam-culture-09": {
+   "course": "assam-history",
+   "no": 75,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Bihu and community festivals",
+    "as": "বিহু আৰু সমাজৰ উৎসৱ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A year begins in spring",
+      "as": "বসন্তত বছৰ আৰম্ভ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Feasting after the harvest",
+      "as": "শস্য চপোৱাৰ পিছৰ ভোজ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Lamps in the fields",
+      "as": "পথাৰত চাকি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Sowing and spring celebrations",
+      "as": "বীজসিঁচা আৰু বসন্তৰ উৎসৱ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Several calendars, shared encounters",
+      "as": "কেইবাখনো পঞ্জিকা, মিলনৰ ঠাই"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "assam-culture-10": {
+   "course": "assam-history",
+   "no": 76,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Dance, drama and musical instruments",
+    "as": "নৃত্য, নাট আৰু বাদ্য"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "From satra to classical stage",
+      "as": "সত্ৰৰ পৰা শাস্ত্ৰীয় মঞ্চলৈ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A leader and answering voices",
+      "as": "নেতা আৰু সঁহাৰিৰ কণ্ঠ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A mask becomes a character",
+      "as": "মুখাই চৰিত্ৰ হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Hear the difference",
+      "as": "সুৰৰ পাৰ্থক্য শুনা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "assam-culture-11": {
+   "course": "assam-history",
+   "no": 77,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Silk, weaving and crafts",
+    "as": "ৰেচম, বয়ন আৰু হস্তশিল্প"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Three silks, different qualities",
+      "as": "তিনি ৰেচম, বেলেগ গুণ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "From cocoon to cloth",
+      "as": "লেটাৰ পৰা কাপোৰলৈ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Crafts have their own places",
+      "as": "হস্তশিল্পৰ নিজৰ ঠাই আছে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A geographical name gains protection",
+      "as": "ভৌগোলিক নামে সুৰক্ষা পায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "assam-culture-12": {
+   "course": "assam-history",
+   "no": 78,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Film and the travelling stage",
+    "as": "চলচ্চিত্ৰ আৰু ভ্ৰাম্যমান মঞ্চ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Joymoti reaches the screen",
+      "as": "পৰ্দাত জয়মতী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "New films, national audiences",
+      "as": "নতুন ছবি, ৰাষ্ট্ৰীয় দৰ্শক"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The theatre comes to town",
+      "as": "নাট্যমঞ্চ নগৰলৈ আহে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "assam-culture-13": {
+   "course": "assam-history",
+   "no": 79,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Assamese language, script and print",
+    "as": "অসমীয়া ভাষা, লিপি আৰু ছপা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Language is not script",
+      "as": "ভাষা লিপি নহয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A printed sunrise",
+      "as": "ছপাৰ নতুন সূৰ্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Dictionaries and language work",
+      "as": "অভিধান আৰু ভাষাৰ কাম"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "british-01-company-rule": {
+   "course": "assam-history",
+   "no": 38,
+   "version": 2,
+   "steps": 5,
+   "title": {
+    "en": "Company rule begins",
+    "as": "কোম্পানীৰ শাসনৰ আৰম্ভণি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The British arrive",
+      "as": "ব্ৰিটিছৰ আগমন"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "David Scott's Assam",
+      "as": "ডেভিড স্কটৰ অসম"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A new court language",
+      "as": "আদালতৰ নতুন ভাষা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The first risings",
+      "as": "প্ৰথম বিদ্ৰোহবোৰ"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 7
+    }
+   ]
+  },
+  "british-02-hill-risings": {
+   "course": "assam-history",
+   "no": 39,
+   "version": 2,
+   "steps": 4,
+   "title": {
+    "en": "Risings in the hills",
+    "as": "পাহাৰৰ বিদ্ৰোহ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A road through the hills",
+      "as": "পাহাৰৰ মাজেৰে পথ"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Four years in the hills",
+      "as": "পাহাৰত চাৰি বছৰ"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Sadiya, 1839",
+      "as": "শদিয়া, ১৮৩৯"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "british-03-maniram-1857": {
+   "course": "assam-history",
+   "no": 40,
+   "version": 2,
+   "steps": 6,
+   "title": {
+    "en": "Maniram Dewan and 1857",
+    "as": "মণিৰাম দেৱান আৰু ১৮৫৭"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A man of two worlds",
+      "as": "দুই জগতৰ মানুহ"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The tea Dewan",
+      "as": "চাহৰ দেৱান"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A petition to Calcutta",
+      "as": "কলিকতালৈ আবেদন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The plot of 1857",
+      "as": "১৮৫৭ৰ ষড়যন্ত্ৰ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Jorhat, 26 February 1858",
+      "as": "যোৰহাট, ২৬ ফেব্ৰুৱাৰী ১৮৫৮"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "british-04": {
+   "course": "assam-history",
+   "no": 41,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Tea and the garden workers",
+    "as": "চাহ আৰু বাগিচাৰ শ্ৰমিক"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Leaves before plantations",
+      "as": "বাগিচাৰ আগতেই চাহ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A leaf reaches London",
+      "as": "লণ্ডন পালেগৈ চাহপাত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Who supplied the labour?",
+      "as": "শ্ৰম কোনে যোগাইছিল?"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The cost of a contract",
+      "as": "চুক্তিৰ মূল্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "An economy on the move",
+      "as": "গতিশীল অৰ্থনীতি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "british-05": {
+   "course": "assam-history",
+   "no": 42,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Phulaguri, 1861",
+    "as": "ফুলগুৰি, ১৮৬১"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The village feels the pressure",
+      "as": "গাঁৱত চাপ বাঢ়ে"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A petition goes unheard",
+      "as": "শুনা নহ’ল আবেদন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The gathering turns violent",
+      "as": "সভা হিংসালৈ গ’ল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Remember without mixing",
+      "as": "খেলিমেলি নকৰাকৈ মনত ৰাখা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-06": {
+   "course": "assam-history",
+   "no": 43,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Rangia, Lachima and Patharughat",
+    "as": "ৰঙিয়া, লচিমা আৰু পথৰুঘাট"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Revenue sparks resistance",
+      "as": "ৰাজহে প্ৰতিৰোধ জগায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Rangia gathers",
+      "as": "ৰঙিয়াত সমাৱেশ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Lachima refuses collection",
+      "as": "লচিমাত ৰাজহ সংগ্ৰহৰ বাধা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Bullets at Patharughat",
+      "as": "পথৰুঘাটত গুলী"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-07": {
+   "course": "assam-history",
+   "no": 44,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "A province of its own",
+    "as": "পৃথক প্ৰদেশ অসম"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Separated from Bengal",
+      "as": "বংগৰ পৰা পৃথক"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Joined, then separated again",
+      "as": "যোগ হৈ আকৌ পৃথক"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A governor and dyarchy",
+      "as": "গৱৰ্ণৰ আৰু দ্বৈত শাসন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The 1935 framework",
+      "as": "১৯৩৫ৰ ব্যৱস্থা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Read a changing map",
+      "as": "পৰিৱৰ্তিত মানচিত্ৰ পঢ়া"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "british-08": {
+   "course": "assam-history",
+   "no": 45,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Line System and migration",
+    "as": "লাইন প্ৰথা আৰু প্ৰব্ৰজন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Different journeys into Assam",
+      "as": "অসমলৈ বেলেগ যাত্ৰা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A line across settlement",
+      "as": "বসতিৰ মাজত ৰেখা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Two lines, different purposes",
+      "as": "দুই ৰেখা, বেলেগ উদ্দেশ্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Reading a colonial census",
+      "as": "ঔপনিৱেশিক লোকপিয়ল পঢ়া"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-09": {
+   "course": "assam-history",
+   "no": 46,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Orunodoi and the language",
+    "as": "অৰুণোদই আৰু ভাষা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A classroom changes language",
+      "as": "শ্ৰেণীকোঠাৰ ভাষা সলনি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A printed sunrise",
+      "as": "ছপা সূৰ্যোদয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Words become reference works",
+      "as": "শব্দই অভিধান পায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A language returns",
+      "as": "ভাষাৰ পুনৰ্প্ৰতিষ্ঠা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-10": {
+   "course": "assam-history",
+   "no": 47,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Jonaki age",
+    "as": "জোনাকী যুগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A firefly in Calcutta",
+      "as": "কলিকতাত জোনাকী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Three names around Jonaki",
+      "as": "জোনাকীৰ তিনিটা নাম"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Bezbaroa’s many voices",
+      "as": "বেজবৰুৱাৰ বহু স্বৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "From magazine to institution",
+      "as": "আলোচনীৰ পৰা অনুষ্ঠানলৈ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-11": {
+   "course": "assam-history",
+   "no": 48,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Sabhas and associations",
+    "as": "সভা আৰু সংগঠন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A provincial voice",
+      "as": "প্ৰদেশৰ কণ্ঠ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Students find a platform",
+      "as": "ছাত্ৰৰ মঞ্চ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Women organise across Assam",
+      "as": "অসমজুৰি মহিলাৰ সংগঠন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A national session at Pandu",
+      "as": "পাণ্ডুত ৰাষ্ট্ৰীয় অধিৱেশন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-12": {
+   "course": "assam-history",
+   "no": 49,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Partition of Bengal and Swadeshi",
+    "as": "বংগ বিভাজন আৰু স্বদেশী"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "An enlarged province",
+      "as": "বৃহৎ প্ৰদেশ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "What did Swadeshi ask?",
+      "as": "স্বদেশীয়ে কি বিচাৰিছিল?"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The partition is undone",
+      "as": "বিভাজন ৰদ হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "british-13": {
+   "course": "assam-history",
+   "no": 50,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Non-Cooperation in Assam",
+    "as": "অসমত অসহযোগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A province joins the call",
+      "as": "আহ্বানত প্ৰদেশৰ যোগদান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Gandhi arrives in Assam",
+      "as": "অসমলৈ গান্ধীৰ আগমন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Withdrawal becomes action",
+      "as": "সহযোগিতা আঁতৰোৱা কাৰ্যত পৰিণত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Women and the opium campaign",
+      "as": "মহিলা আৰু আফিংবিৰোধী অভিযান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "When a campaign pauses",
+      "as": "অভিযান স্থগিত হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "british-14": {
+   "course": "assam-history",
+   "no": 51,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Civil Disobedience",
+    "as": "আইন অমান্য"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A new independence pledge",
+      "as": "নতুন স্বাধীনতাৰ সংকল্প"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Breaking a law publicly",
+      "as": "ৰাজহুৱাকৈ আইন অমান্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Volunteers face repression",
+      "as": "দমনৰ সন্মুখত স্বেচ্ছাসেৱক"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A pact and a renewed struggle",
+      "as": "চুক্তি আৰু পুনৰ সংগ্ৰাম"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-15": {
+   "course": "assam-history",
+   "no": 52,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Quit India, 1942",
+    "as": "ভাৰত ত্যাগ, ১৯৪২"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A call during wartime",
+      "as": "যুদ্ধৰ মাজত আহ্বান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The flag at Gohpur",
+      "as": "গহপুৰত পতাকা"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Barhampur remembers",
+      "as": "বঢ়মপুৰৰ স্মৃতি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Children in a deadly confrontation",
+      "as": "প্ৰাণঘাতী সংঘাতত শিশু"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "A trial after sabotage",
+      "as": "ৰেলপথৰ ঘটনাৰ পিছত বিচাৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "british-16": {
+   "course": "assam-history",
+   "no": 53,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "War in the North-East",
+    "as": "উত্তৰ-পূবত যুদ্ধ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "War reaches the frontier",
+      "as": "সীমান্তলৈ যুদ্ধ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Imphal and Kohima",
+      "as": "ইম্ফল আৰু কহিমা"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The road from Ledo",
+      "as": "লিডুৰ পৰা পথ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Another army, another strategy",
+      "as": "আন সেনা, আন কৌশল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-17": {
+   "course": "assam-history",
+   "no": 54,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Grouping and Gopinath Bordoloi",
+    "as": "গোটবিভাজন আৰু গোপীনাথ বৰদলৈ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A constitutional plan arrives",
+      "as": "সাংবিধানিক পৰিকল্পনা আহিল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Bordoloi defends autonomy",
+      "as": "স্বায়ত্তশাসনৰ সপক্ষে বৰদলৈ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The Assembly gives a mandate",
+      "as": "বিধানসভাৰ নিৰ্দেশ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Grouping is not referendum",
+      "as": "গোটবিভাজন গণভোট নহয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "british-18": {
+   "course": "assam-history",
+   "no": 55,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "1947: Sylhet and freedom",
+    "as": "১৯৪৭: শ্ৰীহট্ট আৰু স্বাধীনতা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A district goes to the polls",
+      "as": "ভোটকেন্দ্ৰলৈ এখন জিলা"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A boundary divides lives",
+      "as": "সীমাই জীৱন ভাগ কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Freedom comes to Assam",
+      "as": "অসমলৈ স্বাধীনতা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "From province to republic",
+      "as": "প্ৰদেশৰ পৰা গণৰাজ্যলৈ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
     }
    ]
   },
@@ -1010,6 +2899,207 @@
     }
    ]
   },
+  "early-03-sources": {
+   "course": "assam-history",
+   "no": 3,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Sources of early Assam",
+    "as": "প্ৰাচীন অসমৰ ইতিহাসৰ উৎস"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A promise on copper",
+      "as": "তামত লিখা প্ৰতিশ্ৰুতি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A visitor and a court poet",
+      "as": "পৰ্যটক আৰু দৰবাৰী কবি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Make the sources talk together",
+      "as": "উৎসবোৰ মিলাই পঢ়া"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "early-assam-01": {
+   "course": "assam-history",
+   "no": 1,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Before written history",
+    "as": "লিখিত ইতিহাসৰ আগতে"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A tool outlasts its maker",
+      "as": "সঁজুলি নিৰ্মাতাতকৈও টিকে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Two sites, many contexts",
+      "as": "দুই স্থান, বহু প্ৰসংগ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Names reach the record",
+      "as": "নাম নথিলৈ আহে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "early-assam-02": {
+   "course": "assam-history",
+   "no": 2,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Legends and regional names",
+    "as": "কিংবদন্তি আৰু অঞ্চলৰ নাম"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Before a dated king list",
+      "as": "তাৰিখযুক্ত ৰাজতালিকাৰ আগতে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "An elephant on the battlefield",
+      "as": "ৰণক্ষেত্ৰত হাতী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Why Kamarupa?",
+      "as": "কিয় কামৰূপ?"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "One region, changing names",
+      "as": "এটা অঞ্চল, সলনি নাম"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "early-assam-04": {
+   "course": "assam-history",
+   "no": 13,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "After the Kamarupa Palas",
+    "as": "কামৰূপৰ পালসকলৰ পিছত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A grant away from home",
+      "as": "দূৰত পোৱা দানলিপি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The invasion of 1206",
+      "as": "১২০৬ৰ আক্ৰমণ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The centre moves west",
+      "as": "কেন্দ্ৰ পশ্চিমলৈ সৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
   "gadadhar-singha": {
    "course": "ahom-kings",
    "no": 29,
@@ -1160,6 +3250,330 @@
      },
      "i": "star",
      "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "heritage-and-sources-01": {
+   "course": "assam-history",
+   "no": 80,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Inscriptions: claims on stone and copper",
+    "as": "লিপি: শিল আৰু তামৰ দাবী"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A promise on copper",
+      "as": "তামত এটা প্ৰতিশ্ৰুতি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Two charters, one ruler",
+      "as": "দুই শাসন, এজন ৰজা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Let the sources disagree",
+      "as": "উৎসৰ মতভেদ পঢ়া"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "heritage-and-sources-02": {
+   "course": "assam-history",
+   "no": 81,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Archaeology beyond the palaces",
+    "as": "ৰাজপ্ৰাসাদৰ বাহিৰৰ প্ৰত্নতত্ত্ব"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A doorway survives",
+      "as": "দুৱাৰমুখ টিকি থাকে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Madan Kamdev’s carved stones",
+      "as": "মদন কামদেৱৰ খোদিত শিল"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A city beneath the city",
+      "as": "চহৰৰ তলৰ চহৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "More than one tradition",
+      "as": "এটাতকৈ অধিক পৰম্পৰা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Hajo has several histories",
+      "as": "হাজোৰ একাধিক ইতিহাস"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "heritage-and-sources-03": {
+   "course": "assam-history",
+   "no": 82,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Sivasagar monuments",
+    "as": "শিৱসাগৰৰ স্মাৰক"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A royal viewing pavilion",
+      "as": "ৰাজকীয় দৰ্শনমণ্ডপ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Two palaces, different places",
+      "as": "দুই প্ৰাসাদ, বেলেগ ঠাই"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Water and royal memory",
+      "as": "পানী আৰু ৰাজস্মৃতি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A bridge tells a story",
+      "as": "দলঙে কাহিনী কয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "heritage-and-sources-04": {
+   "course": "assam-history",
+   "no": 83,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Charaideo and the moidams",
+    "as": "চৰাইদেউ আৰু মৈদাম"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Belief and memory",
+      "as": "বিশ্বাস আৰু স্মৃতি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Inside an earthen mound",
+      "as": "মাটিৰ ঢিপিৰ ভিতৰত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "World recognition, local care",
+      "as": "বিশ্বস্বীকৃতি, স্থানীয় যত্ন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "heritage-and-sources-05": {
+   "course": "assam-history",
+   "no": 84,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Chronicles and visitors",
+    "as": "বুৰঞ্জী আৰু ভ্ৰমণকাৰী"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Reading what survived",
+      "as": "বৰ্তি থকা নথি পঢ়া"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Xuanzang’s Kamarupa",
+      "as": "হিউৱেন চাঙৰ কামৰূপ"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The invaders’ historians",
+      "as": "আক্ৰমণকাৰীৰ ইতিহাসকাৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Two Mughal witnesses",
+      "as": "দুই মোগল সাক্ষী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "heritage-and-sources-06": {
+   "course": "assam-history",
+   "no": 85,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Museums and caring for evidence",
+    "as": "সংগ্ৰহালয় আৰু প্ৰমাণৰ যত্ন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A collection becomes public",
+      "as": "সংগ্ৰহ ৰাজহুৱা হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Every object needs a trail",
+      "as": "প্ৰতিটো বস্তুৰ ইতিহাস লাগে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Protection has several levels",
+      "as": "সুৰক্ষাৰ কেইবাটাও স্তৰ"
+     },
+     "i": "star",
+     "ex": 5
     },
     {
      "id": "test",
@@ -1343,6 +3757,186 @@
     }
    ]
   },
+  "koch-01-biswa-singha": {
+   "course": "assam-history",
+   "no": 17,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Biswa Singha and the Koch rise",
+    "as": "বিশ্ব সিংহ আৰু কোচৰ উত্থান"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A boy from the hills",
+      "as": "পাহাৰৰ ল'ৰা"
+     },
+     "i": "hill",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A king named Biswa Singha",
+      "as": "বিশ্ব সিংহ নামৰ ৰজা"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The goddess on the hill",
+      "as": "পাহাৰৰ দেৱী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Two sons",
+      "as": "দুজন পুত্ৰ"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "koch-02-nara-narayan": {
+   "course": "assam-history",
+   "no": 18,
+   "version": 1,
+   "steps": 7,
+   "title": {
+    "en": "Nara Narayan and Chilarai",
+    "as": "নৰনাৰায়ণ আৰু চিলাৰায়"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Two brothers",
+      "as": "দুই ভাই"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "War with the Ahoms",
+      "as": "আহোমৰ সৈতে যুদ্ধ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Chilarai's campaigns",
+      "as": "চিলাৰায়ৰ অভিযান"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Kamakhya rises again",
+      "as": "কামাখ্যাৰ পুনৰুত্থান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Sankardev at the Koch court",
+      "as": "কোচ ৰাজসভাত শংকৰদেৱ"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u6",
+     "t": {
+      "en": "The end of the great days",
+      "as": "সোণালী দিনৰ অন্ত"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 12
+    }
+   ]
+  },
+  "koch-03-split-mughals": {
+   "course": "assam-history",
+   "no": 19,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Koch Bihar, Koch Hajo and the Mughals",
+    "as": "কোচবিহাৰ, কোচ হাজো আৰু মোগল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Two Koch kingdoms",
+      "as": "দুখন কোচ ৰাজ্য"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Cousins at war",
+      "as": "খুলশালী ভাইৰ যুদ্ধ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The end of Koch Hajo",
+      "as": "কোচ হাজোৰ অন্ত"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
   "lakshmi-singha": {
    "course": "ahom-kings",
    "no": 34,
@@ -1400,10 +3994,943 @@
     }
    ]
   },
-  "pala-brahmapala-ratnapala": {
-   "course": "pala-kings",
-   "no": 1,
+  "medieval-01": {
+   "course": "assam-history",
+   "no": 14,
    "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Raids from Bengal",
+    "as": "বংগৰ পৰা অভিযান"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A march that failed",
+      "as": "ব্যৰ্থ হোৱা যাত্ৰা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "More armies from the west",
+      "as": "পশ্চিমৰ পৰা আৰু সৈন্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Floods change a campaign",
+      "as": "বানে অভিযান সলনি কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Turbak and the Ahoms",
+      "as": "তুৰ্বক আৰু আহোম"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "medieval-02": {
+   "course": "assam-history",
+   "no": 15,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Kamata and the Khens",
+    "as": "কামতা আৰু খেনসকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The centre moves west",
+      "as": "কেন্দ্ৰ পশ্চিমলৈ সৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Three Khen rulers",
+      "as": "তিনিজন খেন ৰজা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A capital beneath the ruins",
+      "as": "ধ্বংসাৱশেষৰ তলত ৰাজধানী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Kamata falls",
+      "as": "কামতাৰ পতন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "medieval-03": {
+   "course": "assam-history",
+   "no": 16,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "The Baro-Bhuyans",
+    "as": "বাৰভূঞাসকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Power in many hands",
+      "as": "বহু হাতত ক্ষমতা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A saint’s Bhuyan background",
+      "as": "সন্তৰ ভূঞা পটভূমি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Chiefs face new monarchies",
+      "as": "নতুন ৰাজতন্ত্ৰৰ সন্মুখত ভূঞা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "medieval-07": {
+   "course": "assam-history",
+   "no": 20,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Chutia kingdom",
+    "as": "চুতীয়া ৰাজ্য"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "An eastern centre",
+      "as": "পূবৰ কেন্দ্ৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A goddess and her shrine",
+      "as": "দেৱী আৰু মন্দিৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The Ahom conquest",
+      "as": "আহোমৰ বিজয়"
+     },
+     "i": "river",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Conquest changes administration",
+      "as": "বিজয়ে প্ৰশাসন সলনি কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "medieval-08": {
+   "course": "assam-history",
+   "no": 21,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Dimasa Kachari kingdom",
+    "as": "ডিমাছা কছাৰী ৰাজ্য"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A capital on the Dhansiri",
+      "as": "ধনশিৰিৰ কাষৰ ৰাজধানী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "War with the Ahoms",
+      "as": "আহোমৰ সৈতে যুদ্ধ"
+     },
+     "i": "hill",
+     "ex": 7
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The court moves south",
+      "as": "দৰবাৰ দক্ষিণলৈ সৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Two annexation dates",
+      "as": "অধিগ্ৰহণৰ দুটা চন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "medieval-09": {
+   "course": "assam-history",
+   "no": 22,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Jaintia, Manipur and neighbours",
+    "as": "জয়ন্তীয়া, মণিপুৰ আৰু চুবুৰীয়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A kingdom across hills and plains",
+      "as": "পাহাৰ-সমতলৰ ৰাজ্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Courts and cultural exchange",
+      "as": "দৰবাৰ আৰু সাংস্কৃতিক বিনিময়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "People beyond the court lists",
+      "as": "ৰজাৰ তালিকাৰ বাহিৰৰ মানুহ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "modern-assam-01": {
+   "course": "assam-history",
+   "no": 56,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Partition and a new beginning",
+    "as": "বিভাজন আৰু নতুন আৰম্ভণি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A referendum before partition",
+      "as": "বিভাজনৰ আগৰ গণভোট"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A border cuts connections",
+      "as": "সীমাই সংযোগ কাটে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "People cross the new border",
+      "as": "মানুহে নতুন সীমা পাৰ হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Freedom leaves unfinished questions",
+      "as": "স্বাধীনতাৰ পিছৰ প্ৰশ্ন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "modern-assam-02": {
+   "course": "assam-history",
+   "no": 57,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "The earthquake of 1950",
+    "as": "১৯৫০ৰ ভূমিকম্প"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Independence Day, a disaster",
+      "as": "স্বাধীনতা দিৱসত দুৰ্যোগ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "When slopes block rivers",
+      "as": "ঢালে নদী ৰোধ কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Rebuilding needs public institutions",
+      "as": "পুনৰ নিৰ্মাণত ৰাজহুৱা প্ৰতিষ্ঠান লাগে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "modern-assam-03": {
+   "course": "assam-history",
+   "no": 58,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Reorganising the North-East",
+    "as": "উত্তৰ-পূবৰ পুনৰ্গঠন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Nagaland becomes a state",
+      "as": "নাগালেণ্ড ৰাজ্য হয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Meghalaya’s two steps",
+      "as": "মেঘালয়ৰ দুই পৰ্যায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Two Union territories in 1972",
+      "as": "১৯৭২ ত দুই কেন্দ্ৰশাসিত অঞ্চল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The statehood map changes again",
+      "as": "ৰাজ্যত্বৰ মানচিত্ৰ পুনৰ সলায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "modern-assam-04": {
+   "course": "assam-history",
+   "no": 59,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Oil, industry and the refinery movement",
+    "as": "তেল, উদ্যোগ আৰু শোধনাগাৰ আন্দোলন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Where should oil be refined?",
+      "as": "তেল ক’ত শোধন হ’ব?"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Noonmati begins production",
+      "as": "নুনমাটিত উৎপাদন আৰম্ভ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Four refineries, different histories",
+      "as": "চাৰি শোধনাগাৰ, বেলেগ ইতিহাস"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "modern-assam-05": {
+   "course": "assam-history",
+   "no": 60,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Language, education and public life",
+    "as": "ভাষা, শিক্ষা আৰু ৰাজহুৱা জীৱন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A language becomes official",
+      "as": "ভাষাই চৰকাৰী মৰ্যাদা পায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Silchar,19 May 1961",
+      "as": "শিলচৰ, ১৯ মে’১৯৬১"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Cachar’s protected official use",
+      "as": "কাছাৰৰ সুৰক্ষিত চৰকাৰী ব্যৱহাৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A classroom and a movement",
+      "as": "শ্ৰেণীকোঠা আৰু আন্দোলন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "modern-assam-06": {
+   "course": "assam-history",
+   "no": 61,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "The Assam Movement and Accord",
+    "as": "অসম আন্দোলন আৰু চুক্তি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "An electoral roll sparks protest",
+      "as": "ভোটাৰ তালিকাৰ পৰা প্ৰতিবাদ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Violence leaves a lasting wound",
+      "as": "হিংসাই স্থায়ী ক্ষত এৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The settlement of 15 August",
+      "as": "১৫ আগষ্টৰ বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Three periods, different provisions",
+      "as": "তিনি সময়, বেলেগ বিধান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "From movement to government",
+      "as": "আন্দোলনৰ পৰা চৰকাৰলৈ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 10
+    }
+   ]
+  },
+  "modern-assam-07": {
+   "course": "assam-history",
+   "no": 62,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Bodo movements and the accords",
+    "as": "বড়ো আন্দোলন আৰু চুক্তি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A demand for self-government",
+      "as": "স্বশাসনৰ দাবী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The first settlement",
+      "as": "প্ৰথম বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "BTC under the Sixth Schedule",
+      "as": "ষষ্ঠ অনুসূচীৰ বিটিচি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The 2020 settlement",
+      "as": "২০২০ৰ বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "modern-assam-08": {
+   "course": "assam-history",
+   "no": 63,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Hill councils and negotiated autonomy",
+    "as": "পাহাৰৰ পৰিষদ আৰু আলোচনাৰ স্বায়ত্তশাসন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A council is not a state",
+      "as": "পৰিষদ ৰাজ্য নহয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The hills around Haflong",
+      "as": "হাফলঙৰ চাৰিওফালৰ পাহাৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The Karbi settlement of 2021",
+      "as": "২০২১ৰ কাৰ্বি বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The Dimasa settlement of 2023",
+      "as": "২০২৩ৰ ডিমাছা বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "modern-assam-09": {
+   "course": "assam-history",
+   "no": 64,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Insurgency and peace processes",
+    "as": "সশস্ত্ৰ বিদ্ৰোহ আৰু শান্তি-প্ৰক্ৰিয়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A different political path",
+      "as": "ভিন্ন ৰাজনৈতিক পথ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The ULFA settlement",
+      "as": "আলফাৰ বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Peace is more than a signature",
+      "as": "শান্তি স্বাক্ষৰতকৈ বহল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "modern-assam-10": {
+   "course": "assam-history",
+   "no": 65,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Citizenship: distinguish the processes",
+    "as": "নাগৰিকত্ব: প্ৰক্ৰিয়াৰ পাৰ্থক্য"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "An updated register",
+      "as": "এখন হালনাগাদ পঞ্জী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A 2019 amendment, not the register",
+      "as": "২০১৯ৰ সংশোধন, পঞ্জী নহয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The law contains exceptions",
+      "as": "আইনত ব্যতিক্ৰম আছে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Two sections, two histories",
+      "as": "দুই ধাৰা, দুই ইতিহাস"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "modern-assam-11": {
+   "course": "assam-history",
+   "no": 66,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Governments and landmark connections",
+    "as": "চৰকাৰ আৰু মুখ্য সংযোগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The early chief ministers",
+      "as": "আদি মুখ্যমন্ত্ৰীসকল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Short ministries and political change",
+      "as": "চুটি মন্ত্ৰীসভা আৰু পৰিৱৰ্তন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "From 1985 to the present phase",
+      "as": "১৯৮৫ৰ পৰা বৰ্তমান পৰ্যায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Bridging the banks",
+      "as": "দুই পাৰৰ সংযোগ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "pala-brahmapala-ratnapala": {
+   "course": "assam-history",
+   "no": 10,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Brahma Pala and Ratna Pala",
@@ -1458,9 +4985,9 @@
    ]
   },
   "pala-indrapala-dharmapala": {
-   "course": "pala-kings",
-   "no": 2,
-   "version": 1,
+   "course": "assam-history",
+   "no": 11,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Indra Pala to Dharma Pala",
@@ -1474,7 +5001,7 @@
       "as": "ইন্দ্ৰ পালৰ দানপত্ৰ"
      },
      "i": "walk",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u2",
@@ -1510,7 +5037,7 @@
       "as": "উপাধি, ধৰ্ম আৰু চাৰিজন ৰজা"
      },
      "i": "star",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -1524,9 +5051,9 @@
    ]
   },
   "pala-jayapala-end": {
-   "course": "pala-kings",
-   "no": 3,
-   "version": 1,
+   "course": "assam-history",
+   "no": 12,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Jaya Pala and the end of the Palas",
@@ -1576,7 +5103,7 @@
       "as": "পালসকলৰ পিছত"
      },
      "i": "star",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -1586,6 +5113,444 @@
      },
      "i": "trophy",
      "ex": 10
+    }
+   ]
+  },
+  "peoples-councils-movements-01": {
+   "course": "assam-history",
+   "no": 86,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Bodo history and collective life",
+    "as": "বড়ো ইতিহাস আৰু সমাজজীৱন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A language, not a racial label",
+      "as": "ভাষা, বৰ্ণগত নাম নহয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Bodofa and collective mobilisation",
+      "as": "বড়োফা আৰু গণসংগঠন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A territorial council",
+      "as": "ভূখণ্ডীয় পৰিষদ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Compare neighbouring spring traditions",
+      "as": "চুবুৰীয়াৰ বসন্ত পৰম্পৰা তুলনা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "peoples-councils-movements-02": {
+   "course": "assam-history",
+   "no": 87,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Karbi and Dimasa histories",
+    "as": "কাৰ্বি আৰু ডিমাছাৰ ইতিহাস"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Name a community with care",
+      "as": "সাৱধানে জনগোষ্ঠীৰ নাম কোৱা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Dimasa courts move south",
+      "as": "ডিমাছাৰ ৰাজসভা দক্ষিণলৈ সৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Karbi Anglong’s autonomy",
+      "as": "কাৰ্বি আংলঙৰ স্বায়ত্তশাসন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Dima Hasao’s several communities",
+      "as": "ডিমা হাছাওৰ কেইবাটাও সমাজ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "peoples-councils-movements-03": {
+   "course": "assam-history",
+   "no": 88,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Mising, Rabha and Tiwa",
+    "as": "মিচিং, ৰাভা আৰু তিৱা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A riverine cultural landscape",
+      "as": "নদীকেন্দ্ৰিক সাংস্কৃতিক ভূদৃশ্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Rabha identities and institutions",
+      "as": "ৰাভাৰ পৰিচয় আৰু প্ৰতিষ্ঠান"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Tiwa across hills and plains",
+      "as": "পাহাৰ-ভৈয়ামৰ তিৱা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Meetings between cultural calendars",
+      "as": "সংস্কৃতিৰ পঞ্জিকাৰ মিলন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "peoples-councils-movements-04": {
+   "course": "assam-history",
+   "no": 89,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Deori, Sonowal Kachari and Tai traditions",
+    "as": "দেউৰী, সোণোৱাল কছাৰী আৰু টাই পৰম্পৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A community beyond priestly memory",
+      "as": "পুৰোহিতৰ স্মৃতিৰ বাহিৰৰ সমাজ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Gold in a remembered name",
+      "as": "স্মৃত নামত সোণ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Several Tai histories",
+      "as": "কেইবাটাও টাই ইতিহাস"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Tai-Ahom memory and belief",
+      "as": "টাই-আহোমৰ স্মৃতি আৰু বিশ্বাস"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "peoples-councils-movements-05": {
+   "course": "assam-history",
+   "no": 90,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Tea-garden communities and labour",
+    "as": "চাহ বাগিচাৰ সমাজ আৰু শ্ৰম"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Workers build an industry",
+      "as": "শ্ৰমিকে উদ্যোগ গঢ়ে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A collective name, many peoples",
+      "as": "এটা সামূহিক নাম, বহু সমাজ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Work, representation and settlements",
+      "as": "শ্ৰম, প্ৰতিনিধিত্ব আৰু বন্দোবস্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "peoples-councils-movements-06": {
+   "course": "assam-history",
+   "no": 91,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Council powers and their legal foundations",
+    "as": "পৰিষদৰ ক্ষমতা আৰু আইনী ভেটি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the instrument first",
+      "as": "প্ৰথমে মূল বিধান পঢ়া"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Karbi negotiations and commitments",
+      "as": "কাৰ্বিৰ আলোচনা আৰু প্ৰতিশ্ৰুতি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Dimasa negotiations and commitments",
+      "as": "ডিমাছাৰ আলোচনা আৰু প্ৰতিশ্ৰুতি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "peoples-councils-movements-07": {
+   "course": "assam-history",
+   "no": 92,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Land, frontiers and protective regimes",
+    "as": "মাটি, সীমান্ত আৰু সুৰক্ষাৰ ব্যৱস্থা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A colonial line across settlement",
+      "as": "বসতিত ঔপনিৱেশিক ৰেখা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Two lines, different purposes",
+      "as": "দুই ৰেখা, পৃথক উদ্দেশ্য"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Belts and blocks protect land",
+      "as": "বেষ্টনী-খণ্ডই মাটি ৰক্ষা কৰে"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Three systems, three questions",
+      "as": "তিনি ব্যৱস্থা, তিনি প্ৰশ্ন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
+    }
+   ]
+  },
+  "peoples-councils-movements-08": {
+   "course": "assam-history",
+   "no": 93,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Recognition, rights and historical evidence",
+    "as": "স্বীকৃতি, অধিকাৰ আৰু ইতিহাসৰ প্ৰমাণ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Scheduled status is a legal category",
+      "as": "অনুসূচিত মৰ্যাদা আইনী ভাগ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Language and cultural rights",
+      "as": "ভাষা আৰু সংস্কৃতিৰ অধিকাৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Autonomy changes through agreements",
+      "as": "চুক্তিৰে স্বায়ত্তশাসন সলায়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Read a census critically",
+      "as": "লোকপিয়ল সমালোচনামূলকভাৱে পঢ়া"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 8
     }
    ]
   },
@@ -1962,9 +5927,9 @@
    ]
   },
   "salastambha-harjaravarman": {
-   "course": "salastambha-kings",
-   "no": 3,
-   "version": 1,
+   "course": "assam-history",
+   "no": 9,
+   "version": 2,
    "steps": 6,
    "title": {
     "en": "Harjaravarman to Tyagasimha",
@@ -1978,7 +5943,7 @@
       "as": "নথিৰ ফাঁকৰ পিছত"
      },
      "i": "walk",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u2",
@@ -2028,9 +5993,9 @@
    ]
   },
   "salastambha-harshavarman": {
-   "course": "salastambha-kings",
-   "no": 2,
-   "version": 1,
+   "course": "assam-history",
+   "no": 8,
+   "version": 2,
    "steps": 4,
    "title": {
     "en": "Harshavarman and the Nepal marriage",
@@ -2044,7 +6009,7 @@
       "as": "হৰ্ষবৰ্মাই সাম্ৰাজ্য গঢ়ে"
      },
      "i": "crown",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u2",
@@ -2062,7 +6027,7 @@
       "as": "উত্তৰৰ যুদ্ধ"
      },
      "i": "flag",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -2076,9 +6041,9 @@
    ]
   },
   "salastambha-rise": {
-   "course": "salastambha-kings",
-   "no": 1,
-   "version": 1,
+   "course": "assam-history",
+   "no": 7,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Salastambha takes the throne",
@@ -2092,7 +6057,7 @@
       "as": "নতুন বংশই সিংহাসন লয়"
      },
      "i": "crown",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u2",
@@ -2101,7 +6066,7 @@
       "as": "ম্লেচ্ছসকল কোন আছিল?"
      },
      "i": "hill",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u3",
@@ -2110,7 +6075,7 @@
       "as": "আকৌ নৰক"
      },
      "i": "moon",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u4",
@@ -2119,7 +6084,7 @@
       "as": "পাঁচজন আদি ৰজা"
      },
      "i": "star",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "test",
@@ -3429,9 +7394,9 @@
    ]
   },
   "varman-bhaskaravarman": {
-   "course": "varman-kings",
-   "no": 3,
-   "version": 1,
+   "course": "assam-history",
+   "no": 6,
+   "version": 2,
    "steps": 8,
    "title": {
     "en": "Bhaskaravarman and Harsha",
@@ -3513,9 +7478,9 @@
    ]
   },
   "varman-founders": {
-   "course": "varman-kings",
-   "no": 1,
-   "version": 1,
+   "course": "assam-history",
+   "no": 4,
+   "version": 2,
    "steps": 7,
    "title": {
     "en": "The first Varman kings",
@@ -3588,9 +7553,9 @@
    ]
   },
   "varman-sixth-century": {
-   "course": "varman-kings",
-   "no": 2,
-   "version": 1,
+   "course": "assam-history",
+   "no": 5,
+   "version": 2,
    "steps": 7,
    "title": {
     "en": "Bhutivarman to the Gauda wars",
@@ -3604,7 +7569,7 @@
       "as": "ষষ্ঠ শতিকাৰ শক্তিশালী ৰজা"
      },
      "i": "crown",
-     "ex": 4
+     "ex": 5
     },
     {
      "id": "u2",

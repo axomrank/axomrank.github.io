@@ -1,0 +1,938 @@
+{
+ "id": "assam-culture-06",
+ "course": "assam-history",
+ "no": 72,
+ "version": 1,
+ "eyebrow": {
+  "en": "Assam History · Living culture",
+  "as": "অসমৰ ইতিহাস · জীৱন্ত সংস্কৃতি"
+ },
+ "king": {
+  "en": "Buranjis: history and power",
+  "as": "বুৰঞ্জী: ইতিহাস আৰু ক্ষমতা"
+ },
+ "reign": {
+  "en": "Across the centuries",
+  "as": "শতিকাৰ মাজেৰে"
+ },
+ "portrait": "ahom-15-administration/chronicles.webp",
+ "map": {
+  "box": [
+   88.5,
+   23,
+   97,
+   29
+  ],
+  "show": [
+   "brahmaputra",
+   "guwahati",
+   "jorhat",
+   "sadiya",
+   "dimapur"
+  ]
+ },
+ "guide": {
+  "timeline": []
+ },
+ "sources": [
+  {
+   "title": "Gait, A History of Assam; existing Ahom source-linked units",
+   "url": "https://ignca.gov.in/Asi_data/34806.pdf",
+   "used_for": "Buranji suppression and Kirti Chandra; adapted source units retain their original source registers."
+  },
+  {
+   "title": "DIPR Assam, Lachit Barphukan: Assam’s Hero Who Halted the Mughals (2022), printed pp. 41, 43–44, 98",
+   "url": "https://dipr.assam.gov.in/sites/default/files/swf_utility_folder/departments/dipr_webcomindia_org_oid_4/latest/lachit-barphukan-assams-hero-who-halted-the-mughals.pdf",
+   "used_for": "Council and royal succession; officer quotas; western administration; Buranji tradition. PDF pp. 44, 46–47, 101 consulted 2026-11-02."
+  },
+  {
+   "title": "NCERT, Our Pasts II: Tribes, Nomads and Settled Communities",
+   "url": "https://www.ncert.nic.in/textbook/pdf/gess105.pdf",
+   "used_for": "Compulsory rotating paik labour, khels, chronicles and changing religious patronage. Search-index extract consulted; PDF fetch timed out."
+  },
+  {
+   "title": "IGNCA: Tradition of Lokatantra in Ishanya Bharat",
+   "url": "https://bharatmotherofdemocracy.ignca.gov.in/contents/tradition-lokatantra-ishanya-bharat/en",
+   "used_for": "Paiks, professional khels and administrative appeals."
+  },
+  {
+   "title": "UNESCO World Heritage Centre: Moidams, property 1711",
+   "url": "https://whc.unesco.org/en/list/1711",
+   "used_for": "Charaideo royal necropolis, burial tradition and inscription year 2024."
+  },
+  {
+   "title": "Existing Axomrank Pratap Singha lesson and source register",
+   "url": "",
+   "used_for": "Got of three or four paiks; offices established under successive rulers; continuity with lesson 5. Exact sequence of got-size changes left undated."
+  },
+  {
+   "title": "Rajiv Gandhi University IDE, History of North East India (1228–1947), 2016, printed p. 57 (PDF p. 65)",
+   "url": "https://ide.rgu.ac.in/docs/UG_HisI.pdf",
+   "used_for": "Kanri manual service; paikan and apaikan Chamua categories, skills and differing obligations. Actual passage consulted 2026-11-02; simplified distinction used in the story."
+  },
+  {
+   "title": "Gait, A History of Assam (1906), medieval and Mughal chapters; source-library campaign research",
+   "url": "https://ignca.gov.in/Asi_data/34806.pdf",
+   "used_for": "Minhaj and Tabaqat-i-Nasiri; Mirza Nathan and Baharistan-i-Ghaybi; Talish and Fathiya-i-Ibriya. These source identifications are secondary bibliographic verification; no fabricated direct primary quotation."
+  },
+  {
+   "title": "Bhaskaravarman (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Bhaskaravarman",
+   "used_for": "Rivals, Hamsavega's embassy, Karnasuvarna, Xuanzang's visit c. 643, Nalanda seal, Wang Xuance c. 648, Bhaskarabda, succession"
+  },
+  {
+   "title": "Nidhanpur copperplate inscription (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Nidhanpur_copperplate_inscription",
+   "used_for": "Discovery 1912, seven plates and a seal, issued from Karnasuvarna, Bhutivarman's earlier grant"
+  },
+  {
+   "title": "Dubi copperplate inscription (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dubi_copperplate_inscription",
+   "used_for": "Earliest Kamarupa copper-plate grants found so far; Assam State Museum"
+  },
+  {
+   "title": "Varman dynasty and Kamarupa (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Varman_dynasty",
+   "used_for": "Avantivarman c. 650–655, Salastambha, genealogy claims"
+  },
+  {
+   "title": "Samuel Beal, Buddhist Records of the Western World (Xuanzang), Book X: Kamarupa",
+   "url": "https://www.wisdomlib.org/south-asia/book/buddhist-records-of-the-western-world-xuanzang/d/doc220253.html",
+   "used_for": "Land, climate, fruits, temples; king a Brahmin who honours learning"
+  },
+  {
+   "title": "Beal, Buddhist Records of the Western World, Kanyakubja assembly",
+   "url": "https://www.wisdomlib.org/south-asia/book/buddhist-records-of-the-western-world-xuanzang/d/doc220228.html",
+   "used_for": "Harsha as Shakra, Kumara as Brahma with a white fly-whisk"
+  },
+  {
+   "title": "Chaipau, Nidhanpur Inscriptions, Wikimedia Commons, CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Nidhanpur_Inscriptions.jpg",
+   "used_for": "Photograph of the plates (resized). Credit: Chaipau, CC BY-SA 4.0"
+  }
+ ],
+ "units": [
+  {
+   "id": "u1",
+   "icon": "scroll",
+   "title": {
+    "en": "Writing what the court remembered",
+    "as": "ৰাজসভাৰ স্মৃতি লিখা"
+   },
+   "learned": [
+    {
+     "en": "Buranjis are historical chronicles",
+     "as": "বুৰঞ্জী হৈছে ঐতিহাসিক ঘটনাৰ বিবৰণ"
+    },
+    {
+     "en": "Buranjis were written in Tai-Ahom and Assamese",
+     "as": "টাই-আহোম আৰু অসমীয়াত বুৰঞ্জী লিখা হৈছিল"
+    },
+    {
+     "en": "Land grants record named gifts and privileges",
+     "as": "ভূমিদানৰ নথিত দান আৰু অধিকাৰৰ উল্লেখ থাকে"
+    },
+    {
+     "en": "A coin or grant answers different questions from a chronicle",
+     "as": "মুদ্ৰা বা দানপত্ৰ আৰু বুৰঞ্জীয়ে বেলেগ বেলেগ প্ৰশ্নৰ উত্তৰ দিয়ে"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "A kingdom kept records",
+      "as": "ৰাজ্যই নথি ৰাখিছিল"
+     },
+     "text": [
+      {
+       "en": "Wars ended, but written accounts remained. [[buranji|Buranjis]] recorded rulers, campaigns and diplomatic dealings in <mark>Tai-Ahom and Assamese</mark>.",
+       "as": "যুদ্ধ শেষ হৈছিল, কিন্তু লিখিত বিবৰণ থাকি গ’ল। [[buranji|বুৰঞ্জী]]ত ৰজা, অভিযান আৰু কূটনৈতিক সম্পৰ্কৰ কথা <mark>টাই-আহোম আৰু অসমীয়া</mark>ত লিখা হৈছিল।"
+      }
+     ],
+     "img": "ahom-15-administration/chronicles.webp",
+     "id": "assam-culture-06.u1.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "One object, one question",
+      "as": "এটা বস্তু, এটা প্ৰশ্ন"
+     },
+     "text": [
+      {
+       "en": "A land grant can identify a donor and a recipient. A coin can carry a ruler’s name. A chronicle can explain a campaign.",
+       "as": "ভূমিদানৰ নথিয়ে দাতা আৰু প্ৰাপকক চিনাব পাৰে। মুদ্ৰাত ৰজাৰ নাম থাকিব পাৰে। বুৰঞ্জীয়ে এটা অভিযানৰ বিবৰণ দিব পাৰে।"
+      },
+      {
+       "en": "Use these sources together. A court account does not automatically tell us what every farmer thought.",
+       "as": "এই উৎসবোৰ একেলগে ব্যৱহাৰ কৰা। দৰবাৰৰ বিবৰণে প্ৰতিজন খেতিয়কে কি ভাবিছিল তাক নিজে নিজে জনাব নোৱাৰে।"
+      }
+     ],
+     "img": "ahom-15-administration/chronicles.webp",
+     "id": "assam-culture-06.u1.02"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I preserve accounts of rulers and campaigns.",
+       "as": "মই ৰজা আৰু অভিযানৰ বিবৰণ ৰাখোঁ।"
+      },
+      {
+       "en": "Tai-Ahom and Assamese are associated with me.",
+       "as": "টাই-আহোম আৰু অসমীয়া মোৰ সৈতে জড়িত।"
+      },
+      {
+       "en": "I am a historical chronicle.",
+       "as": "মই ঐতিহাসিক ঘটনাৰ লিখিত বিবৰণ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Buranji",
+       "as": "বুৰঞ্জী"
+      },
+      {
+       "en": "Moidam",
+       "as": "মৈদাম"
+      },
+      {
+       "en": "Khel",
+       "as": "খেল"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A Buranji is a chronicle; a moidam is a burial mound.",
+      "as": "বুৰঞ্জী ঘটনাৰ বিবৰণ; মৈদাম সমাধিৰ ঢিপি।"
+     },
+     "id": "assam-culture-06.u1.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "All Buranjis were written only in Persian.",
+      "as": "সকলো বুৰঞ্জী কেৱল ফাৰ্চী ভাষাত লিখা হৈছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The Ahom chronicle tradition includes Tai-Ahom and Assamese works.",
+      "as": "আহোম বুৰঞ্জী পৰম্পৰাত টাই-আহোম আৰু অসমীয়া ৰচনা আছে।"
+     },
+     "id": "assam-culture-06.u1.04"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Buranji",
+        "as": "বুৰঞ্জী"
+       },
+       {
+        "en": "A campaign’s written account",
+        "as": "অভিযানৰ লিখিত বিবৰণ"
+       }
+      ],
+      [
+       {
+        "en": "Land grant",
+        "as": "ভূমিদানৰ নথি"
+       },
+       {
+        "en": "A donor and a recipient",
+        "as": "দাতা আৰু প্ৰাপক"
+       }
+      ],
+      [
+       {
+        "en": "Coin",
+        "as": "মুদ্ৰা"
+       },
+       {
+        "en": "A ruler’s name on money",
+        "as": "মুদ্ৰাত ৰজাৰ নাম"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Ask what each surviving source can actually establish.",
+      "as": "বাচি থকা প্ৰতিটো উৎসই আচলতে কি প্ৰমাণ কৰিব পাৰে সেয়া ভাবা।"
+     },
+     "id": "assam-culture-06.u1.05"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which is a modern illustration rather than a surviving historical record?",
+      "as": "কোনটো অতীতৰ নথিৰ সলনি আধুনিক চিত্ৰণ?"
+     },
+     "options": [
+      {
+       "en": "A copper-plate grant",
+       "as": "তাম্ৰপত্ৰৰ দানলিপি"
+      },
+      {
+       "en": "A manuscript Buranji",
+       "as": "হাতে লিখা বুৰঞ্জী"
+      },
+      {
+       "en": "A newly painted royal scene",
+       "as": "নতুনকৈ অঁকা ৰাজদৰবাৰৰ দৃশ্য"
+      },
+      {
+       "en": "An Ahom coin",
+       "as": "আহোম মুদ্ৰা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The paintings help us imagine the topic. They do not prove the exact appearance of a past scene.",
+      "as": "চিত্ৰই বিষয়টো কল্পনা কৰাত সহায় কৰে। অতীতৰ দৃশ্য হুবহু কেনে আছিল তাৰ প্ৰমাণ নহয়।"
+     },
+     "id": "assam-culture-06.u1.06"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "To identify the recipient of a specific land donation, first look for a",
+      "as": "এটা নিৰ্দিষ্ট ভূমিদানৰ প্ৰাপক জানিবলৈ প্ৰথমে চাবা"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "land grant",
+       "as": "ভূমিদানৰ নথি"
+      },
+      {
+       "en": "modern portrait",
+       "as": "আধুনিক প্ৰতিকৃতি"
+      },
+      {
+       "en": "rank ladder",
+       "as": "পদবীৰ ক্ৰম"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A grant can name the donor, recipient and terms; confirm the actual wording.",
+      "as": "দানপত্ৰত দাতা, প্ৰাপক আৰু চৰ্ত থাকিব পাৰে; মূল পাঠ মিলাই চাব লাগে।"
+     },
+     "id": "assam-culture-06.u1.07"
+    }
+   ],
+   "adapted_from": {
+    "lesson": "ahom-15-administration",
+    "unit": "u4"
+   }
+  },
+  {
+   "id": "u2",
+   "icon": "star",
+   "title": {
+    "en": "History can threaten power",
+    "as": "ইতিহাসে ক্ষমতাক প্ৰশ্ন কৰে"
+   },
+   "learned": [
+    {
+     "en": "The official linked with the burning was Kirti Chandra Borbarua",
+     "as": "দহনৰ সৈতে জড়িত বিষয়া কীৰ্তিচন্দ্ৰ বৰবৰুৱা"
+    },
+    {
+     "en": "The reigning king was Rajeswar Singha",
+     "as": "ৰাজত্ব কৰা ৰজা ৰাজেশ্বৰ সিংহ"
+    },
+    {
+     "en": "The documents targeted were Buranjis",
+     "as": "লক্ষ্য কৰা নথি বুৰঞ্জীসমূহ"
+    },
+    {
+     "en": "Suppression of unwelcome accounts is Censorship",
+     "as": "অপছন্দৰ বিৱৰণ দমন চেন্সৰশ্বিপ"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "History can threaten power",
+      "as": "ইতিহাসে ক্ষমতাক প্ৰশ্ন কৰে"
+     },
+     "text": [
+      {
+       "en": "[[kirti-chandra|Kirti Chandra Borbarua]] is associated with the burning of [[buranjis|Buranjis]] during [[rajeswar-singha|Rajeswar Singha]]’s reign. A chronicle had questioned his family’s ancestry. The episode shows that preserving the past could conflict with a powerful official’s prestige.",
+       "as": "[[rajeswar-singha|ৰাজেশ্বৰ সিংহ]]ৰ দিনত বুৰঞ্জী দহনৰ সৈতে [[kirti-chandra|কীৰ্তিচন্দ্ৰ বৰবৰুৱা]] জড়িত। এখন বুৰঞ্জীয়ে তেওঁৰ বংশক প্ৰশ্ন কৰিছিল। ঘটনাই দেখুৱায় অতীত সংৰক্ষণ আৰু শক্তিশালী বিষয়াৰ মৰ্যাদাৰ সংঘাত হ’ব পাৰে।"
+      }
+     ],
+     "img": "assam-culture/ahom-265.webp",
+     "id": "assam-culture-06.u2.01",
+     "link": {
+      "unit": "u1",
+      "note": {
+       "en": "Build on the preceding unit: Writing what the court remembered",
+       "as": "আগৰ অধ্যায়ৰ পৰা আগবাঢ়া: ৰাজসভাৰ স্মৃতি লিখা"
+      }
+     }
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Follow the evidence",
+      "as": "প্ৰমাণ অনুসৰণ কৰা"
+     },
+     "text": [
+      {
+       "en": "[[censorship|Censorship]] removes or suppresses unwelcome accounts. A surviving chronicle may reflect both what was written and what escaped destruction. Historians therefore compare manuscripts, versions and external sources rather than assuming survival guarantees completeness.",
+       "as": "[[censorship|চেন্সৰশ্বিপ]]ে অপছন্দৰ বিৱৰণ আঁতৰায় বা দমন কৰে। বৰ্তি থকা বুৰঞ্জীত লিখা কথা আৰু ধ্বংসৰ পৰা ৰক্ষা পোৱা দুয়োৰে প্ৰভাৱ থাকে। সেয়ে গৱেষকে পাণ্ডুলিপি, পাঠ আৰু বাহ্যিক উৎস তুলনা কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "id": "assam-culture-06.u2.02"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "A surviving chronicle is automatically a complete and uncensored record.",
+      "as": "বৰ্তি থকা বুৰঞ্জী স্বয়ংক্ৰিয়ভাৱে সম্পূৰ্ণ আৰু চেন্সৰহীন নথি।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Loss, selection and censorship can shape what survives.",
+      "as": "ক্ষতি, বাছনি আৰু চেন্সৰে বৰ্তি থকা নথি গঢ়ে।"
+     },
+     "id": "assam-culture-06.u2.03"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The official linked with the burning was",
+      "as": "দহনৰ সৈতে জড়িত বিষয়া"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Hema Saraswati",
+       "as": "হেম সৰস্বতী"
+      },
+      {
+       "en": "Durlabhnarayan",
+       "as": "দুৰ্লভনাৰায়ণ"
+      },
+      {
+       "en": "Lakshminath Bezbaroa",
+       "as": "লক্ষ্মীনাথ বেজবৰুৱা"
+      },
+      {
+       "en": "Kirti Chandra Borbarua",
+       "as": "কীৰ্তিচন্দ্ৰ বৰবৰুৱা"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "The official linked with the burning was Kirti Chandra Borbarua.",
+      "as": "দহনৰ সৈতে জড়িত বিষয়া কীৰ্তিচন্দ্ৰ বৰবৰুৱা।"
+     },
+     "id": "assam-culture-06.u2.04"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I was Rajeswar Singha’s Borbarua.",
+       "as": "মই ৰাজেশ্বৰ সিংহৰ বৰবৰুৱা।"
+      },
+      {
+       "en": "I am associated with burning Buranjis.",
+       "as": "মই বুৰঞ্জী দহনৰ সৈতে জড়িত।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Kirti Chandra",
+       "as": "কীৰ্তিচন্দ্ৰ"
+      },
+      {
+       "en": "Momai Tamuli",
+       "as": "মোমাই তামুলী"
+      },
+      {
+       "en": "Atan Burhagohain",
+       "as": "আতন বুঢ়াগোহাঁই"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Kirti Chandra is the official in this account.",
+      "as": "এই বিৱৰণৰ বিষয়া কীৰ্তিচন্দ্ৰ।"
+     },
+     "id": "assam-culture-06.u2.05"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The reigning king was",
+      "as": "ৰাজত্ব কৰা ৰজা"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Rajeswar Singha",
+     "asOptions": [
+      "ভূপেন হাজৰিকা",
+      "বিষ্ণুপ্ৰসাদ ৰাভা",
+      "নীলমণি ফুকন",
+      "ৰাজেশ্বৰ সিংহ"
+     ],
+     "asAnswer": 3,
+     "answerText": {
+      "en": "Rajeswar Singha",
+      "as": "ৰাজেশ্বৰ সিংহ"
+     },
+     "why": {
+      "en": "The reigning king was Rajeswar Singha.",
+      "as": "ৰাজত্ব কৰা ৰজা ৰাজেশ্বৰ সিংহ।"
+     },
+     "id": "assam-culture-06.u2.06"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "The official linked with the burning was",
+        "as": "দহনৰ সৈতে জড়িত বিষয়া"
+       },
+       {
+        "en": "Kirti Chandra Borbarua",
+        "as": "কীৰ্তিচন্দ্ৰ বৰবৰুৱা"
+       }
+      ],
+      [
+       {
+        "en": "The reigning king was",
+        "as": "ৰাজত্ব কৰা ৰজা"
+       },
+       {
+        "en": "Rajeswar Singha",
+        "as": "ৰাজেশ্বৰ সিংহ"
+       }
+      ],
+      [
+       {
+        "en": "The documents targeted were",
+        "as": "লক্ষ্য কৰা নথি"
+       },
+       {
+        "en": "Buranjis",
+        "as": "বুৰঞ্জীসমূহ"
+       }
+      ],
+      [
+       {
+        "en": "Suppression of unwelcome accounts is",
+        "as": "অপছন্দৰ বিৱৰণ দমন"
+       },
+       {
+        "en": "Censorship",
+        "as": "চেন্সৰশ্বিপ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Loss, selection and censorship can shape what survives.",
+      "as": "ক্ষতি, বাছনি আৰু চেন্সৰে বৰ্তি থকা নথি গঢ়ে।"
+     },
+     "id": "assam-culture-06.u2.07"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "icon": "star",
+   "title": {
+    "en": "Read another court’s account",
+    "as": "আন ৰাজসভাৰ বিৱৰণ পঢ়া"
+   },
+   "learned": [
+    {
+     "en": "Baharistan-i-Ghaybi’s author was Mirza Nathan",
+     "as": "বাহাৰিস্তান-ই-গায়বীৰ লেখক মিৰ্জা নাথান"
+    },
+    {
+     "en": "Mir Jumla’s accompanying writer was Shihabuddin Talish",
+     "as": "মীৰজুমলাৰ লগৰ লেখক চিহাবুদ্দিন তালিছ"
+    },
+    {
+     "en": "Talish’s campaign work was Fathiya-i-Ibriya",
+     "as": "তালিছৰ অভিযানৰ ৰচনা ফতহিয়া-ই-ইব্ৰিয়া"
+    },
+    {
+     "en": "The invasion discussed was in 1662",
+     "as": "আলোচিত আক্ৰমণৰ চন ১৬৬২"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Look closer",
+      "as": "মন দি চোৱা"
+     },
+     "text": [
+      {
+       "en": "Mirza Nathan’s Baharistan-i-Ghaybi is important for the early seventeenth-century Mughal campaigns in the region. Its author participated in Mughal service. His account is detailed, but his position shapes its viewpoint.",
+       "as": "মিৰ্জা নাথানৰ বাহাৰিস্তান-ই-গায়বী সপ্তদশ শতিকাৰ আৰম্ভণিৰ আঞ্চলিক মোগল অভিযানৰ বাবে গুৰুত্বপূৰ্ণ। লেখকে মোগলৰ সেৱা কৰিছিল। বিৱৰণ বিস্তৃত; তেওঁৰ অৱস্থানে দৃষ্টি গঢ়ে।"
+      }
+     ],
+     "art": "scroll",
+     "id": "assam-culture-06.u3.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Follow the evidence",
+      "as": "প্ৰমাণ অনুসৰণ কৰা"
+     },
+     "text": [
+      {
+       "en": "Shihabuddin Talish accompanied Mir Jumla’s invasion of Assam in 1662. His Fathiya-i-Ibriya describes that campaign and its difficulties. Match writer, work and campaign before comparing either with an Ahom Buranji.",
+       "as": "১৬৬২ৰ মীৰজুমলাৰ অসম অভিযানত চিহাবুদ্দিন তালিছ আছিল। তেওঁৰ ফতহিয়া-ই-ইব্ৰিয়াত অভিযান আৰু অসুবিধাৰ বিৱৰণ আছে। আহোম বুৰঞ্জীৰ সৈতে তুলনাৰ আগতে লেখক, ৰচনা আৰু অভিযান মিলোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "id": "assam-culture-06.u3.02"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Baharistan-i-Ghaybi’s author was",
+      "as": "বাহাৰিস্তান-ই-গায়বীৰ লেখক"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Shihabuddin Talish",
+       "as": "চিহাবুদ্দিন তালিছ"
+      },
+      {
+       "en": "Ambika",
+       "as": "অম্বিকা"
+      },
+      {
+       "en": "Rudra Singha",
+       "as": "ৰুদ্ৰ সিংহ"
+      },
+      {
+       "en": "Mirza Nathan",
+       "as": "মিৰ্জা নাথান"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Baharistan-i-Ghaybi’s author was Mirza Nathan.",
+      "as": "বাহাৰিস্তান-ই-গায়বীৰ লেখক মিৰ্জা নাথান।"
+     },
+     "id": "assam-culture-06.u3.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Mirza Nathan and Talish wrote about the same campaign in 1206.",
+      "as": "মিৰ্জা নাথান আৰু তালিছে ১২০৬ৰ একে অভিযানৰ কথা লিখে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Their works concern different seventeenth-century campaigns.",
+      "as": "তেওঁলোকৰ ৰচনা সপ্তদশ শতিকাৰ বেলেগ অভিযানৰ।"
+     },
+     "id": "assam-culture-06.u3.04"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I accompanied Mir Jumla in 1662.",
+       "as": "মই ১৬৬২ ত মীৰজুমলাৰ লগত আছিলোঁ।"
+      },
+      {
+       "en": "My work is the Fathiya-i-Ibriya.",
+       "as": "মোৰ ৰচনা ফতহিয়া-ই-ইব্ৰিয়া।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Shihabuddin Talish",
+       "as": "চিহাবুদ্দিন তালিছ"
+      },
+      {
+       "en": "Minhaj-i-Siraj",
+       "as": "মিনহাজ-ই-চিৰাজ"
+      },
+      {
+       "en": "Harisena",
+       "as": "হৰিষেণ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Talish’s account complements Ahom records.",
+      "as": "তালিছৰ বিৱৰণ আহোম নথিৰ পৰিপূৰক।"
+     },
+     "id": "assam-culture-06.u3.05"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Baharistan-i-Ghaybi’s author was",
+        "as": "বাহাৰিস্তান-ই-গায়বীৰ লেখক"
+       },
+       {
+        "en": "Mirza Nathan",
+        "as": "মিৰ্জা নাথান"
+       }
+      ],
+      [
+       {
+        "en": "Mir Jumla’s accompanying writer was",
+        "as": "মীৰজুমলাৰ লগৰ লেখক"
+       },
+       {
+        "en": "Shihabuddin Talish",
+        "as": "চিহাবুদ্দিন তালিছ"
+       }
+      ],
+      [
+       {
+        "en": "Talish’s campaign work was",
+        "as": "তালিছৰ অভিযানৰ ৰচনা"
+       },
+       {
+        "en": "Fathiya-i-Ibriya",
+        "as": "ফতহিয়া-ই-ইব্ৰিয়া"
+       }
+      ],
+      [
+       {
+        "en": "The invasion discussed was in",
+        "as": "আলোচিত আক্ৰমণৰ চন"
+       },
+       {
+        "en": "1662",
+        "as": "১৬৬২"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Their works concern different seventeenth-century campaigns.",
+      "as": "তেওঁলোকৰ ৰচনা সপ্তদশ শতিকাৰ বেলেগ অভিযানৰ।"
+     },
+     "id": "assam-culture-06.u3.06"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Mir Jumla’s accompanying writer was",
+      "as": "মীৰজুমলাৰ লগৰ লেখক"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Shihabuddin Talish",
+     "asOptions": [
+      "চুক্লেনমুং",
+      "প্ৰমত্ত সিংহ",
+      "ফুলেশ্বৰী",
+      "চিহাবুদ্দিন তালিছ"
+     ],
+     "asAnswer": 3,
+     "answerText": {
+      "en": "Shihabuddin Talish",
+      "as": "চিহাবুদ্দিন তালিছ"
+     },
+     "why": {
+      "en": "Mir Jumla’s accompanying writer was Shihabuddin Talish.",
+      "as": "মীৰজুমলাৰ লগৰ লেখক চিহাবুদ্দিন তালিছ।"
+     },
+     "id": "assam-culture-06.u3.07"
+    }
+   ],
+   "adapted_from": {
+    "lesson": "heritage-and-sources-05",
+    "unit": "u4"
+   }
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Lesson test",
+   "as": "পাঠৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "type": "whoami",
+    "clues": [
+     {
+      "en": "I preserve accounts of rulers and campaigns.",
+      "as": "মই ৰজা আৰু অভিযানৰ বিবৰণ ৰাখোঁ।"
+     },
+     {
+      "en": "Tai-Ahom and Assamese are associated with me.",
+      "as": "টাই-আহোম আৰু অসমীয়া মোৰ সৈতে জড়িত।"
+     },
+     {
+      "en": "I am a historical chronicle.",
+      "as": "মই ঐতিহাসিক ঘটনাৰ লিখিত বিবৰণ।"
+     }
+    ],
+    "options": [
+     {
+      "en": "Buranji",
+      "as": "বুৰঞ্জী"
+     },
+     {
+      "en": "Moidam",
+      "as": "মৈদাম"
+     },
+     {
+      "en": "Khel",
+      "as": "খেল"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "A Buranji is a chronicle; a moidam is a burial mound.",
+     "as": "বুৰঞ্জী ঘটনাৰ বিবৰণ; মৈদাম সমাধিৰ ঢিপি।"
+    },
+    "id": "assam-culture-06.test.01"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "All Buranjis were written only in Persian.",
+     "as": "সকলো বুৰঞ্জী কেৱল ফাৰ্চী ভাষাত লিখা হৈছিল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "The Ahom chronicle tradition includes Tai-Ahom and Assamese works.",
+     "as": "আহোম বুৰঞ্জী পৰম্পৰাত টাই-আহোম আৰু অসমীয়া ৰচনা আছে।"
+    },
+    "id": "assam-culture-06.test.02"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "A surviving chronicle is automatically a complete and uncensored record.",
+     "as": "বৰ্তি থকা বুৰঞ্জী স্বয়ংক্ৰিয়ভাৱে সম্পূৰ্ণ আৰু চেন্সৰহীন নথি।"
+    },
+    "answer": false,
+    "why": {
+     "en": "Loss, selection and censorship can shape what survives.",
+     "as": "ক্ষতি, বাছনি আৰু চেন্সৰে বৰ্তি থকা নথি গঢ়ে।"
+    },
+    "id": "assam-culture-06.test.03"
+   },
+   {
+    "type": "inline",
+    "before": {
+     "en": "The official linked with the burning was",
+     "as": "দহনৰ সৈতে জড়িত বিষয়া"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "options": [
+     {
+      "en": "Hema Saraswati",
+      "as": "হেম সৰস্বতী"
+     },
+     {
+      "en": "Durlabhnarayan",
+      "as": "দুৰ্লভনাৰায়ণ"
+     },
+     {
+      "en": "Lakshminath Bezbaroa",
+      "as": "লক্ষ্মীনাথ বেজবৰুৱা"
+     },
+     {
+      "en": "Kirti Chandra Borbarua",
+      "as": "কীৰ্তিচন্দ্ৰ বৰবৰুৱা"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "The official linked with the burning was Kirti Chandra Borbarua.",
+     "as": "দহনৰ সৈতে জড়িত বিষয়া কীৰ্তিচন্দ্ৰ বৰবৰুৱা।"
+    },
+    "id": "assam-culture-06.test.04"
+   },
+   {
+    "type": "inline",
+    "before": {
+     "en": "Baharistan-i-Ghaybi’s author was",
+     "as": "বাহাৰিস্তান-ই-গায়বীৰ লেখক"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "options": [
+     {
+      "en": "Shihabuddin Talish",
+      "as": "চিহাবুদ্দিন তালিছ"
+     },
+     {
+      "en": "Ambika",
+      "as": "অম্বিকা"
+     },
+     {
+      "en": "Rudra Singha",
+      "as": "ৰুদ্ৰ সিংহ"
+     },
+     {
+      "en": "Mirza Nathan",
+      "as": "মিৰ্জা নাথান"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Baharistan-i-Ghaybi’s author was Mirza Nathan.",
+     "as": "বাহাৰিস্তান-ই-গায়বীৰ লেখক মিৰ্জা নাথান।"
+    },
+    "id": "assam-culture-06.test.05"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "Mirza Nathan and Talish wrote about the same campaign in 1206.",
+     "as": "মিৰ্জা নাথান আৰু তালিছে ১২০৬ৰ একে অভিযানৰ কথা লিখে।"
+    },
+    "answer": false,
+    "why": {
+     "en": "Their works concern different seventeenth-century campaigns.",
+     "as": "তেওঁলোকৰ ৰচনা সপ্তদশ শতিকাৰ বেলেগ অভিযানৰ।"
+    },
+    "id": "assam-culture-06.test.06"
+   }
+  ]
+ },
+ "review_notes": "AI-assisted bilingual educational content. Source and uncertainty notes retained. Fluent Assamese educator review remains pending. Illustrations are interpretive; adapted units carry new permanent ids.",
+ "origin_course": "assam-culture",
+ "origin_no": 6
+}

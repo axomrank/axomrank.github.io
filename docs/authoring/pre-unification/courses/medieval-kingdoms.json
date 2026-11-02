@@ -1,0 +1,232 @@
+{
+ "id": "medieval-kingdoms",
+ "order": 4,
+ "bank": "content/questions/medieval-kingdoms.json",
+ "tabs": [
+  "lessons",
+  "profile"
+ ],
+ "title": {
+  "en": "Kamata, Koch and neighbours",
+  "as": "কামতা, কোচ আৰু চুবুৰীয়া ৰাজ্য"
+ },
+ "eyebrow": {
+  "en": "Assam History · c. 1200–1700 s",
+  "as": "অসমৰ ইতিহাস · প্ৰায় ১২০০–১৭০০ৰ দশক"
+ },
+ "subtitle": {
+  "en": "9 lessons · 35 units",
+  "as": "৯ টা পাঠ · ৩৫ টা অধ্যায়"
+ },
+ "eras": [
+  {
+   "id": "mk-kamata",
+   "from": 1,
+   "to": 3,
+   "title": {
+    "en": "Raids, Kamata and the Bhuyans · 1206–1500 s",
+    "as": "আক্ৰমণ, কামতা আৰু ভূঞা · ১২০৬–১৫০০ৰ দশক"
+   }
+  },
+  {
+   "id": "mk-koch",
+   "from": 4,
+   "to": 6,
+   "title": {
+    "en": "The Koch kingdom · 1509–1614",
+    "as": "কোচ ৰাজ্য · ১৫০৯–১৬১৪"
+   }
+  },
+  {
+   "id": "mk-neighbours",
+   "from": 7,
+   "to": 9,
+   "title": {
+    "en": "The neighbouring kingdoms",
+    "as": "চুবুৰীয়া ৰাজ্য"
+   }
+  }
+ ],
+ "kings": [
+  {
+   "n": 1,
+   "id": "medieval-01",
+   "name": {
+    "en": "Raids from Bengal",
+    "as": "বংগৰ পৰা অভিযান"
+   },
+   "reign": "1206–1533",
+   "face": "medieval-kingdoms/kamata-02.webp",
+   "tier": "B",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "medieval-01"
+  },
+  {
+   "n": 2,
+   "id": "medieval-02",
+   "name": {
+    "en": "Kamata and the Khens",
+    "as": "কামতা আৰু খেনসকল"
+   },
+   "reign": "c.1257–1498",
+   "face": "medieval-kingdoms/kamata-09.webp",
+   "tier": "B",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "medieval-02"
+  },
+  {
+   "n": 3,
+   "id": "medieval-03",
+   "name": {
+    "en": "The Baro-Bhuyans",
+    "as": "বাৰভূঞাসকল"
+   },
+   "reign": "Medieval Assam",
+   "face": "medieval-kingdoms/kamata-01.webp",
+   "tier": "C",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "medieval-03"
+  },
+  {
+   "n": 4,
+   "id": "koch-01-biswa-singha",
+   "name": {
+    "en": "Biswa Singha and the Koch rise",
+    "as": "বিশ্ব সিংহ আৰু কোচৰ উত্থান"
+   },
+   "reign": "c. 1509–1540",
+   "face": "medieval-kingdoms/koch-01.webp",
+   "tier": "B",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "koch-01-biswa-singha"
+  },
+  {
+   "n": 5,
+   "id": "koch-02-nara-narayan",
+   "name": {
+    "en": "Nara Narayan and Chilarai",
+    "as": "নৰনাৰায়ণ আৰু চিলাৰায়"
+   },
+   "reign": "1540–1587",
+   "face": "medieval-kingdoms/koch-07.webp",
+   "tier": "A",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "koch-02-nara-narayan"
+  },
+  {
+   "n": 6,
+   "id": "koch-03-split-mughals",
+   "name": {
+    "en": "Koch Bihar, Koch Hajo and the Mughals",
+    "as": "কোচবিহাৰ, কোচ হাজো আৰু মোগল"
+   },
+   "reign": "1581–1614",
+   "face": "medieval-kingdoms/koch-25.webp",
+   "tier": "C",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "koch-03-split-mughals"
+  },
+  {
+   "n": 7,
+   "id": "medieval-07",
+   "name": {
+    "en": "The Chutia kingdom",
+    "as": "চুতীয়া ৰাজ্য"
+   },
+   "reign": "Sadiya and the eastern frontier",
+   "face": "medieval-kingdoms/chutia-01.webp",
+   "tier": "B",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "medieval-07"
+  },
+  {
+   "n": 8,
+   "id": "medieval-08",
+   "name": {
+    "en": "The Dimasa Kachari kingdom",
+    "as": "ডিমাছা কছাৰী ৰাজ্য"
+   },
+   "reign": "Dimapur, Maibang and Khaspur",
+   "face": "medieval-kingdoms/dimasa-01.webp",
+   "tier": "B",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "medieval-08"
+  },
+  {
+   "n": 9,
+   "id": "medieval-09",
+   "name": {
+    "en": "Jaintia, Manipur and neighbours",
+    "as": "জয়ন্তীয়া, মণিপুৰ আৰু চুবুৰীয়া"
+   },
+   "reign": "Regional connections",
+   "face": "medieval-kingdoms/jaintia-01.webp",
+   "tier": "C",
+   "rel": {
+    "type": "other",
+    "of": null,
+    "t": {
+     "en": "",
+     "as": ""
+    }
+   },
+   "lesson": "medieval-09"
+  }
+ ]
+}

@@ -5,7 +5,7 @@ Run before every deploy:   python3 scripts/build.py
 Stops with a list of problems if a lesson has a mistake (duplicate step id,
 missing image, broken link, wrong map choice, missing field...).
 """
-import hashlib, json, os, re, sys
+import hashlib, json, os, re, sys, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -17,6 +17,9 @@ NEED = {"mcq": ["q", "options", "answer", "why"], "tf": ["s", "answer", "why"], 
         "map": ["q", "target", "choices", "why"], "story": ["title", "text"]}
 errors = []
 def err(msg): errors.append(msg)
+
+# Derived cross-course reference uses only integrated content.
+subprocess.run([sys.executable,"scripts/build_history_reference.py"],check=True)
 
 # ---------- story card standard (see README "Story cards") ----------
 CARD_WORDS, PARA_WORDS, MAX_PARAS, MAX_MARKS, TITLE_WORDS = 55, 35, 3, 3, 6
@@ -71,7 +74,7 @@ for S in catalog["subjects"]:
         if e.get("course") not in courses: err(f"catalog/{S['id']}: unknown course '{e.get('course')}'")
         placed.append(e.get("course"))
 for cid in courses:
-    if placed.count(cid) != 1: err(f"catalog: course '{cid}' must appear in exactly one subject (found {placed.count(cid)})")
+    if not courses[cid].get("archived") and placed.count(cid) != 1: err(f"catalog: course '{cid}' must appear in exactly one subject (found {placed.count(cid)})")
 lessons = {}
 for f in sorted(os.listdir("content/lessons")):
     if f.endswith(".json"):
@@ -183,11 +186,11 @@ for d in ("app", "content", "icons"):
         for f in sorted(fs):
             if f == "manifest.json" and dp == "content": continue
             h.update(open(os.path.join(dp, f), "rb").read())
-for f in ("index.html", "lesson.html", "manifest.webmanifest", "_headers"): h.update(open(f, "rb").read())
+for f in ("index.html", "lesson.html", "history.html", "manifest.webmanifest", "_headers"): h.update(open(f, "rb").read())
 h.update(re.sub(r'const VERSION = "[^"]*";', "", open("sw.js", encoding="utf-8").read()).encode())   # the worker itself, minus its version line
 version = h.hexdigest()[:10]
 
-manifest = {"version": version, "courses": [{"id": cid, "file": f"content/courses/{cid}.json"} for cid in courses],
+manifest = {"version": version, "courseRedirects": catalog.get("course_redirects", {}), "courses": [{"id": cid, "file": f"content/courses/{cid}.json"} for cid in courses],
             "lessons": {lid: {"course": L.get("course", "ahom-kings"), "no": L["no"], "version": L["version"], "steps": len(L["units"]) + 1, "title": L["king"],
                               # unit summaries, so a lesson page can draw the whole course path without loading every lesson
                               "units": [{"id": u["id"], "t": u["title"], "i": u.get("icon", "trophy"), "ex": sum(s["type"] != "story" for s in u["steps"])}

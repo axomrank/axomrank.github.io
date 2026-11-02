@@ -1,8 +1,8 @@
 {
  "id": "pala-jayapala-end",
- "course": "pala-kings",
- "no": 3,
- "version": 1,
+ "course": "assam-history",
+ "no": 12,
+ "version": 2,
  "king": {
   "en": "Jaya Pala and the end of the Palas",
   "as": "জয় পাল আৰু পালৰ অন্ত"
@@ -327,12 +327,8 @@
      }
     },
     {
-     "type": "mcq",
+     "type": "inline",
      "id": "pc.u1.07",
-     "q": {
-      "en": "The Belava plate says which region was taken from Kamarupa?",
-      "as": "বেলাৱ তাম্ৰফলকে কোন অঞ্চল কামৰূপৰ পৰা লোৱা বুলি কয়?"
-     },
      "options": [
       {
        "en": "Pundravardhana",
@@ -355,6 +351,14 @@
      "why": {
       "en": "Pundravardhana, by Jatavarman.",
       "as": "জাতবৰ্মাই পুণ্ড্ৰবৰ্ধন লৈছিল।"
+     },
+     "before": {
+      "en": "The Belava plate says which region was taken from Kamarupa?",
+      "as": "বেলাৱ তাম্ৰফলকে কোন অঞ্চল কামৰূপৰ পৰা লোৱা বুলি কয়?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
      }
     }
    ]
@@ -1174,12 +1178,8 @@
      }
     },
     {
-     "type": "mcq",
+     "type": "inline",
      "id": "pc.u5.05",
-     "q": {
-      "en": "Which of these was NOT a successor power after the Palas?",
-      "as": "পালৰ পিছত কোনটো উত্তৰাধিকাৰী শক্তি নহয়?"
-     },
      "options": [
       {
        "en": "Kamata kingdom",
@@ -1202,6 +1202,14 @@
      "why": {
       "en": "The Guptas had ended centuries earlier.",
       "as": "গুপ্তসকলৰ শতিকাৰ আগতে অন্ত হৈছিল।"
+     },
+     "before": {
+      "en": "Which of these was NOT a successor power after the Palas?",
+      "as": "পালৰ পিছত কোনটো উত্তৰাধিকাৰী শক্তি নহয়?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
      }
     },
     {
@@ -1239,6 +1247,34 @@
       "en": "Vaidyadeva, the minister-ruler.",
       "as": "বৈদ্যদেৱ, মন্ত্ৰী-শাসক।"
      }
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Which of these was NOT a successor power after the Palas?",
+      "as": "পালৰ পিছত কোনটো উত্তৰাধিকাৰী শক্তি নহয়?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Gupta empire",
+     "answerText": {
+      "en": "Gupta empire",
+      "as": "গুপ্ত সাম্ৰাজ্য"
+     },
+     "asOptions": [
+      "কামতা ৰাজ্য",
+      "চুতীয়া ৰাজ্য",
+      "গুপ্ত সাম্ৰাজ্য",
+      "বাৰো-ভূঞা"
+     ],
+     "asAnswer": 2,
+     "why": {
+      "en": "The Guptas had ended centuries earlier.",
+      "as": "গুপ্তসকলৰ শতিকাৰ আগতে অন্ত হৈছিল।"
+     },
+     "id": "pala-jayapala-end.u5.supp.5"
     }
    ]
   }
@@ -1437,12 +1473,8 @@
     }
    },
    {
-    "type": "mcq",
+    "type": "inline",
     "id": "pc.u5.13",
-    "q": {
-     "en": "Consider the statements:\n1. Vaidyadeva was a minister of Kumarapala.\n2. His plates were found at Pundravardhana.\nWhich is correct?",
-     "as": "বিবৃতিবোৰ বিবেচনা কৰা:\n১. বৈদ্যদেৱ কুমাৰপালৰ মন্ত্ৰী আছিল।\n২. তেওঁৰ তাম্ৰফলক পুণ্ড্ৰবৰ্ধনত পোৱা গৈছিল।\nকোনটো শুদ্ধ?"
-    },
     "options": [
      {
       "en": "1 only",
@@ -1465,6 +1497,14 @@
     "why": {
      "en": "The Kamauli plates were found near Varanasi.",
      "as": "কামৌলি তাম্ৰফলক বাৰাণসীৰ ওচৰত পোৱা।"
+    },
+    "before": {
+     "en": "Consider the statements:\n1. Vaidyadeva was a minister of Kumarapala.\n2. His plates were found at Pundravardhana.\nWhich is correct?",
+     "as": "বিবৃতিবোৰ বিবেচনা কৰা:\n১. বৈদ্যদেৱ কুমাৰপালৰ মন্ত্ৰী আছিল।\n২. তেওঁৰ তাম্ৰফলক পুণ্ড্ৰবৰ্ধনত পোৱা গৈছিল।\nকোনটো শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
     }
    },
    {
@@ -1577,5 +1617,7 @@
    "as": "ইন্দ্ৰ পালৰ পৰা ধৰ্ম পাললৈ"
   },
   "id": "pala-indrapala-dharmapala"
- }
+ },
+ "origin_course": "pala-kings",
+ "origin_no": 3
 }

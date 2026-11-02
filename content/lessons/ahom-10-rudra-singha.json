@@ -1,8 +1,8 @@
 {
  "id": "ahom-10-rudra-singha",
- "course": "ahom-kingdom",
- "no": 10,
- "version": 1,
+ "course": "assam-history",
+ "no": 32,
+ "version": 2,
  "eyebrow": {
   "en": "The Ahom Kingdom",
   "as": "আহোম ৰাজ্য"
@@ -65,6 +65,24 @@
      "en": "Dies at Guwahati (August), planning to invade Bengal",
      "as": "বংগ আক্ৰমণৰ পৰিকল্পনাৰ মাজত গুৱাহাটীত মৃত্যু (আগষ্ট)"
     }
+   }
+  ],
+  "extra_stories": [
+   {
+    "type": "story",
+    "img": "rudra-singha/death-guwahati.webp",
+    "title": {
+     "en": "Remember J-R-M-K",
+     "as": "মনত ৰাখা জ-ৰ-মা-ক"
+    },
+    "text": [
+     {
+      "en": "Rudra Singha in four letters, <mark>J-R-M-K</mark>: <b>J</b>oysagar for his mother, <b>R</b>angpur in brick, <b>M</b>aibong and Jaintiapur taken, <b>K</b>rishnaram and Kamakhya.",
+      "as": "ৰুদ্ৰ সিংহ চাৰিটা আখৰত, <mark>জ-ৰ-মা-ক</mark>: মাতৃৰ বাবে <b>জ</b>য়সাগৰ, ইটাৰ <b>ৰ</b>ংপুৰ, <b>মা</b>ইবং আৰু জয়ন্তীয়াপুৰ দখল, <b>ক</b>ৃষ্ণৰাম আৰু কামাখ্যা।"
+     }
+    ],
+    "id": "ak10.rud.u5.05",
+    "unit": "u4"
    }
   ]
  },
@@ -225,60 +243,6 @@
      "id": "ak10.rud.u1.01"
     },
     {
-     "type": "match",
-     "q": {
-      "en": "Match each tank to who made it.",
-      "as": "প্ৰতিটো পুখুৰী কোনে খন্দাইছিল মিলোৱা।"
-     },
-     "pairs": [
-      [
-       {
-        "en": "Joysagar",
-        "as": "জয়সাগৰ"
-       },
-       {
-        "en": "Rudra Singha, for Joymoti",
-        "as": "ৰুদ্ৰ সিংহ, জয়মতীৰ বাবে"
-       }
-      ],
-      [
-       {
-        "en": "Gaurisagar",
-        "as": "গৌৰীসাগৰ"
-       },
-       {
-        "en": "Queen Phuleswari",
-        "as": "ৰাণী ফুলেশ্বৰী"
-       }
-      ],
-      [
-       {
-        "en": "Sivasagar",
-        "as": "শিৱসাগৰ"
-       },
-       {
-        "en": "Queen Ambika",
-        "as": "ৰাণী অম্বিকা"
-       }
-      ],
-      [
-       {
-        "en": "Rudrasagar",
-        "as": "ৰুদ্ৰসাগৰ"
-       },
-       {
-        "en": "Lakshmi Singha",
-        "as": "লক্ষ্মী সিংহ"
-       }
-      ]
-     ],
-     "why": {
-      "en": "The four great tanks: an exam favourite.",
-      "as": "চাৰিটা মহা পুখুৰী: পৰীক্ষাৰ প্ৰিয় প্ৰশ্ন।"
-     },
-     "id": "ak10.rud.u1.02"
-    },
-    {
      "type": "story",
      "map": {
       "box": [
@@ -406,6 +370,60 @@
       }
      ],
      "id": "ak10.rud.u1.03"
+    },
+    {
+     "type": "match",
+     "q": {
+      "en": "Match each tank to who made it.",
+      "as": "প্ৰতিটো পুখুৰী কোনে খন্দাইছিল মিলোৱা।"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Joysagar",
+        "as": "জয়সাগৰ"
+       },
+       {
+        "en": "Rudra Singha, for Joymoti",
+        "as": "ৰুদ্ৰ সিংহ, জয়মতীৰ বাবে"
+       }
+      ],
+      [
+       {
+        "en": "Gaurisagar",
+        "as": "গৌৰীসাগৰ"
+       },
+       {
+        "en": "Queen Phuleswari",
+        "as": "ৰাণী ফুলেশ্বৰী"
+       }
+      ],
+      [
+       {
+        "en": "Sivasagar",
+        "as": "শিৱসাগৰ"
+       },
+       {
+        "en": "Queen Ambika",
+        "as": "ৰাণী অম্বিকা"
+       }
+      ],
+      [
+       {
+        "en": "Rudrasagar",
+        "as": "ৰুদ্ৰসাগৰ"
+       },
+       {
+        "en": "Lakshmi Singha",
+        "as": "লক্ষ্মী সিংহ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The four great tanks: an exam favourite.",
+      "as": "চাৰিটা মহা পুখুৰী: পৰীক্ষাৰ প্ৰিয় প্ৰশ্ন।"
+     },
+     "id": "ak10.rud.u1.02"
     },
     {
      "type": "map",
@@ -552,6 +570,69 @@
       "as": "অশুদ্ধ। তেওঁ বন্ধ কৰিছিল।"
      },
      "id": "ak10.rud.u1.05"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Joysagar",
+      "as": "জয়সাগৰ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Rudra Singha, for Joymoti",
+       "as": "ৰুদ্ৰ সিংহ, জয়মতীৰ বাবে"
+      },
+      {
+       "en": "Queen Phuleswari",
+       "as": "ৰাণী ফুলেশ্বৰী"
+      },
+      {
+       "en": "Queen Ambika",
+       "as": "ৰাণী অম্বিকা"
+      },
+      {
+       "en": "Lakshmi Singha",
+       "as": "লক্ষ্মী সিংহ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The four great tanks: an exam favourite.",
+      "as": "চাৰিটা মহা পুখুৰী: পৰীক্ষাৰ প্ৰিয় প্ৰশ্ন।"
+     },
+     "id": "ahom-10-rudra-singha.u1.supp.4"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Joysagar",
+      "as": "জয়সাগৰ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Rudra Singha, for Joymoti",
+     "answerText": {
+      "en": "Rudra Singha, for Joymoti",
+      "as": "ৰুদ্ৰ সিংহ, জয়মতীৰ বাবে"
+     },
+     "asOptions": [
+      "ৰুদ্ৰ সিংহ, জয়মতীৰ বাবে",
+      "ৰাণী ফুলেশ্বৰী",
+      "ৰাণী অম্বিকা",
+      "লক্ষ্মী সিংহ"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "The four great tanks: an exam favourite.",
+      "as": "চাৰিটা মহা পুখুৰী: পৰীক্ষাৰ প্ৰিয় প্ৰশ্ন।"
+     },
+     "id": "ahom-10-rudra-singha.u1.supp.5"
     }
    ]
   },
@@ -564,8 +645,8 @@
    },
    "learned": [
     {
-     "en": "He wanted a brick city, but no one in Assam knew how",
-     "as": "তেওঁ ইটাৰ নগৰ বিচাৰিছিল, কিন্তু অসমত কোনেও সজাৰ কৌশল নাজানিছিল"
+     "en": "Rudra developed Rangpur with skilled builders, including Ghanashyam from Koch Bihar",
+     "as": "ৰুদ্ৰই কোচবিহাৰৰ ঘনশ্যামকে ধৰি দক্ষ নিৰ্মাতাৰে ৰংপুৰ গঢ়ে"
     },
     {
      "en": "Ghanashyam from Koch Bihar built at Rangpur and Charaideo",
@@ -590,8 +671,8 @@
      },
      "text": [
       {
-       "en": "Rudra wanted a capital of brick. No one in his kingdom knew how to build one, so he brought a master builder from Koch Bihar, [[ghanashyam]].",
-       "as": "ৰুদ্ৰই ইটাৰ ৰাজধানী বিচাৰিছিল। তেওঁৰ ৰাজ্যত কোনেও সজাৰ কৌশল নাজানিছিল, সেয়ে তেওঁ কোচবিহাৰৰ পৰা নিৰ্মাতা [[ghanashyam]]ক আনিলে।"
+       "en": "Rudra developed Rangpur with brick buildings and brought the master builder [[ghanashyam]] from Koch Bihar. Assam already had older traditions of brick and stone construction.",
+       "as": "ৰুদ্ৰই ইটাৰ গৃহেৰে ৰংপুৰ গঢ়ে আৰু কোচবিহাৰৰ পৰা নিৰ্মাতা [[ghanashyam]]ক আনে। অসমত আগৰেপৰাই ইটা আৰু শিলৰ নিৰ্মাণ পৰম্পৰা আছিল।"
       },
       {
        "en": "Brick buildings rose at [[rangpur]], near today's Sivasagar, and at Charaideo.",
@@ -601,13 +682,43 @@
      "id": "ak10.rud.u2.02"
     },
     {
-     "type": "mcq",
+     "type": "story",
+     "art": "scroll",
+     "title": {
+      "en": "The builder's fate",
+      "as": "নিৰ্মাতাৰ পৰিণতি"
+     },
+     "text": [
+      {
+       "en": "As Ghanashyam was leaving, richly rewarded, a paper was found on him describing the country and its people.",
+       "as": "বহু পুৰস্কাৰ লৈ ঘনশ্যাম যাবলৈ ওলাওঁতে তেওঁৰ ওচৰত দেশ আৰু মানুহৰ বিৱৰণ থকা কাগজ পোৱা গ'ল।"
+      },
+      {
+       "en": "It was thought he meant to betray Assam to the Mughals, and he was put to death.",
+       "as": "তেওঁ অসমক মোগলৰ হাতত তুলি দিব বুলি ভবা হ'ল, আৰু তেওঁক প্ৰাণদণ্ড দিয়া হ'ল।"
+      }
+     ],
+     "id": "ak10.rud.u2.03"
+    },
+    {
+     "type": "story",
+     "img": "rudra-singha/namdang-bridge.webp",
+     "title": {
+      "en": "Stone bridges",
+      "as": "শিলৰ দলং"
+     },
+     "text": [
+      {
+       "en": "Rudra also built the Rangnath temple and masonry bridges over the Namdang and Dimau rivers. The Namdang stone bridge still carries traffic today.",
+       "as": "ৰুদ্ৰই ৰংনাথ মন্দিৰ আৰু নামদাং আৰু দিমৌ নদীত পকী দলং নিৰ্মাণ কৰিছিল। নামদাঙৰ শিলৰ দলঙেদি আজিও যান-বাহন চলে।"
+      }
+     ],
+     "id": "ak10.rud.u2.05"
+    },
+    {
+     "type": "inline",
      "guess": true,
      "id": "ak10.rud.g1",
-     "q": {
-      "en": "As the builder left, a paper describing Assam was found on him. What do you think the king believed?",
-      "as": "নিৰ্মাতা যাওঁতে তেওঁৰ ওচৰত অসমৰ বৰ্ণনা থকা এখন কাগজ পোৱা গ'ল। তোমাৰ অনুমানত ৰজাই কি বিশ্বাস কৰিলে?"
-     },
      "options": [
       {
        "en": "It was a gift",
@@ -630,26 +741,15 @@
      "why": {
       "en": "It was thought he meant to betray Assam to the Mughals, and he was put to death.",
       "as": "তেওঁ অসমক মোগলৰ হাতত তুলি দিব বুলি ভবা হ'ল, আৰু প্ৰাণদণ্ড দিয়া হ'ল।"
-     }
-    },
-    {
-     "type": "story",
-     "art": "scroll",
-     "title": {
-      "en": "The builder's fate",
-      "as": "নিৰ্মাতাৰ পৰিণতি"
      },
-     "text": [
-      {
-       "en": "As Ghanashyam was leaving, richly rewarded, a paper was found on him describing the country and its people.",
-       "as": "বহু পুৰস্কাৰ লৈ ঘনশ্যাম যাবলৈ ওলাওঁতে তেওঁৰ ওচৰত দেশ আৰু মানুহৰ বিৱৰণ থকা কাগজ পোৱা গ'ল।"
-      },
-      {
-       "en": "It was thought he meant to betray Assam to the Mughals, and he was put to death.",
-       "as": "তেওঁ অসমক মোগলৰ হাতত তুলি দিব বুলি ভবা হ'ল, আৰু তেওঁক প্ৰাণদণ্ড দিয়া হ'ল।"
-      }
-     ],
-     "id": "ak10.rud.u2.03"
+     "before": {
+      "en": "As the builder left, a paper describing Assam was found on him. What do you think the king believed?",
+      "as": "নিৰ্মাতা যাওঁতে তেওঁৰ ওচৰত অসমৰ বৰ্ণনা থকা এখন কাগজ পোৱা গ'ল। তোমাৰ অনুমানত ৰজাই কি বিশ্বাস কৰিলে?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "whoami",
@@ -691,21 +791,6 @@
       "as": "ঘনশ্যাম।"
      },
      "id": "ak10.rud.u2.04"
-    },
-    {
-     "type": "story",
-     "img": "rudra-singha/namdang-bridge.webp",
-     "title": {
-      "en": "Stone bridges",
-      "as": "শিলৰ দলং"
-     },
-     "text": [
-      {
-       "en": "Rudra also built the Rangnath temple and masonry bridges over the Namdang and Dimau rivers. The Namdang stone bridge still carries traffic today.",
-       "as": "ৰুদ্ৰই ৰংনাথ মন্দিৰ আৰু নামদাং আৰু দিমৌ নদীত পকী দলং নিৰ্মাণ কৰিছিল। নামদাঙৰ শিলৰ দলঙেদি আজিও যান-বাহন চলে।"
-      }
-     ],
-     "id": "ak10.rud.u2.05"
     },
     {
      "type": "map",
@@ -883,6 +968,33 @@
       "as": "পুখুৰীবোৰ মনত পেলোৱা।"
      },
      "id": "ak10.rud.u2.01"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Joysagar",
+      "as": "জয়সাগৰ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Rudra Singha",
+     "answerText": {
+      "en": "Rudra Singha",
+      "as": "ৰুদ্ৰ সিংহ"
+     },
+     "asOptions": [
+      "ৰুদ্ৰ সিংহ",
+      "ফুলেশ্বৰী",
+      "অম্বিকা"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Recall the tanks.",
+      "as": "পুখুৰীবোৰ মনত পেলোৱা।"
+     },
+     "id": "ahom-10-rudra-singha.u2.supp.5"
     }
    ]
   },
@@ -1042,6 +1154,25 @@
      "id": "ak10.rud.u3.02"
     },
     {
+     "type": "story",
+     "img": "rudra-singha/kachari-envoys.webp",
+     "title": {
+      "en": "A king rescued, a king captured",
+      "as": "এজন ৰজা উদ্ধাৰ, এজন বন্দী"
+     },
+     "text": [
+      {
+       "en": "The fleeing Tamradhwaj asked the Jaintia king, Ram Singh, for help. Ram Singh instead seized him. Tamradhwaj sent a secret letter to Rudra begging rescue.",
+       "as": "পলাতক তাম্ৰধ্বজে জয়ন্তীয়া ৰজা ৰামসিংহৰ সহায় বিচাৰিলে। ৰামসিংহে উলটি তেওঁক বন্দী কৰিলে। তাম্ৰধ্বজে গোপনে ৰুদ্ৰলৈ উদ্ধাৰৰ অনুৰোধৰ চিঠি পঠালে।"
+      },
+      {
+       "en": "In <mark>1708</mark> Ahom armies took [[jaintiapur]]. Both kings were brought to Rudra. At a durbar in a tent on gold and silver posts, Tamradhwaj knelt and was sent home.",
+       "as": "<mark>১৭০৮</mark> চনত আহোম সৈন্যই [[jaintiapur]] দখল কৰিলে। দুয়োজন ৰজাক ৰুদ্ৰৰ ওচৰলৈ অনা হ'ল। সোণ-ৰূপৰ খুঁটাৰ তম্বুৰ দৰবাৰত তাম্ৰধ্বজে আঁঠু লৈ ঘৰলৈ উভতিল।"
+      }
+     ],
+     "id": "ak10.rud.u3.04"
+    },
+    {
      "type": "map",
      "q": {
       "en": "Tap Maibong, the Kachari capital.",
@@ -1175,13 +1306,9 @@
      }
     },
     {
-     "type": "mcq",
+     "type": "inline",
      "guess": true,
      "id": "ak10.rud.d1",
-     "q": {
-      "en": "You are Rudra. The Kachari king who defied you writes in secret: the Jaintia king has seized him. What do you do?",
-      "as": "তুমি ৰুদ্ৰ। তোমাক অমান্য কৰা কছাৰী ৰজাই গোপনে লিখিছে: জয়ন্তীয়া ৰজাই তেওঁক বন্দী কৰিছে। তুমি কি কৰিবা?"
-     },
      "options": [
       {
        "en": "Leave him to his fate",
@@ -1201,26 +1328,15 @@
       "en": "In 1708 Ahom armies took Jaintiapur and brought both kings before Rudra.",
       "as": "১৭০৮ চনত আহোম সৈন্যই জয়ন্তীয়াপুৰ ল'লে আৰু দুয়োজন ৰজাক ৰুদ্ৰৰ আগত আনিলে।"
      },
-     "decide": true
-    },
-    {
-     "type": "story",
-     "img": "rudra-singha/kachari-envoys.webp",
-     "title": {
-      "en": "A king rescued, a king captured",
-      "as": "এজন ৰজা উদ্ধাৰ, এজন বন্দী"
+     "decide": true,
+     "before": {
+      "en": "You are Rudra. The Kachari king who defied you writes in secret: the Jaintia king has seized him. What do you do?",
+      "as": "তুমি ৰুদ্ৰ। তোমাক অমান্য কৰা কছাৰী ৰজাই গোপনে লিখিছে: জয়ন্তীয়া ৰজাই তেওঁক বন্দী কৰিছে। তুমি কি কৰিবা?"
      },
-     "text": [
-      {
-       "en": "The fleeing Tamradhwaj asked the Jaintia king, Ram Singh, for help. Ram Singh instead seized him. Tamradhwaj sent a secret letter to Rudra begging rescue.",
-       "as": "পলাতক তাম্ৰধ্বজে জয়ন্তীয়া ৰজা ৰামসিংহৰ সহায় বিচাৰিলে। ৰামসিংহে উলটি তেওঁক বন্দী কৰিলে। তাম্ৰধ্বজে গোপনে ৰুদ্ৰলৈ উদ্ধাৰৰ অনুৰোধৰ চিঠি পঠালে।"
-      },
-      {
-       "en": "In <mark>1708</mark> Ahom armies took [[jaintiapur]]. Both kings were brought to Rudra. At a durbar in a tent on gold and silver posts, Tamradhwaj knelt and was sent home.",
-       "as": "<mark>১৭০৮</mark> চনত আহোম সৈন্যই [[jaintiapur]] দখল কৰিলে। দুয়োজন ৰজাক ৰুদ্ৰৰ ওচৰলৈ অনা হ'ল। সোণ-ৰূপৰ খুঁটাৰ তম্বুৰ দৰবাৰত তাম্ৰধ্বজে আঁঠু লৈ ঘৰলৈ উভতিল।"
-      }
-     ],
-     "id": "ak10.rud.u3.04"
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "tf",
@@ -1367,6 +1483,34 @@
        "dima-hasao"
       ]
      }
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Tap Maibong, the Kachari capital.",
+      "as": "কছাৰী ৰাজধানী মাইবং টিপা।"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Maibong",
+     "answerText": {
+      "en": "Maibong",
+      "as": "মাইবং"
+     },
+     "asOptions": [
+      "মাইবং",
+      "জয়ন্তীয়াপুৰ",
+      "ডিমাপুৰ",
+      "ৰংপুৰ"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Maibong. Dimapur had been the older Kachari capital.",
+      "as": "মাইবং। ডিমাপুৰ আছিল পুৰণি কছাৰী ৰাজধানী।"
+     },
+     "id": "ahom-10-rudra-singha.u3.supp.5"
     }
    ]
   },
@@ -1405,28 +1549,19 @@
      },
      "text": [
       {
-       "en": "Gait notes that Rudra could not read, yet had a remarkable memory and great intelligence. Many call him <mark>the greatest Ahom king</mark>.",
-       "as": "গেইটে লিখিছে যে ৰুদ্ৰই পঢ়িব নাজানিছিল, তথাপি তেওঁৰ অসাধাৰণ স্মৃতিশক্তি আৰু বুদ্ধি আছিল। বহুতে তেওঁক <mark>শ্ৰেষ্ঠ আহোম ৰজা</mark> বোলে।"
+       "en": "Gait notes that Rudra could not read, yet had a remarkable memory and great intelligence. Many call him the greatest Ahom king.",
+       "as": "গেইটে লিখিছে যে ৰুদ্ৰই পঢ়িব নাজানিছিল, তথাপি তেওঁৰ অসাধাৰণ স্মৃতিশক্তি আৰু বুদ্ধি আছিল। বহুতে তেওঁক শ্ৰেষ্ঠ আহোম ৰজা বোলে।"
       },
       {
        "en": "He set up schools for Brahmans and sent Brahman boys to study in Bengal.",
        "as": "তেওঁ ব্ৰাহ্মণৰ বাবে বিদ্যালয় পাতিছিল আৰু ব্ৰাহ্মণ ল'ৰাক বংগলৈ পঢ়িবলৈ পঠাইছিল।"
+      },
+      {
+       "en": "Late in life Rudra planned a war on Bengal: some say for glory, some to reach the sacred Ganges.",
+       "as": "জীৱনৰ শেষভাগত ৰুদ্ৰই বংগ আক্ৰমণৰ পৰিকল্পনা কৰিলে: কোনোৱে কয় গৌৰৱৰ বাবে, কোনোৱে কয় পবিত্ৰ গংগা পাবলৈ।"
       }
      ],
      "id": "ak10.rud.u4.03"
-    },
-    {
-     "type": "tf",
-     "s": {
-      "en": "Rudra Singha could read and write fluently.",
-      "as": "ৰুদ্ৰ সিংহই সাৱলীলভাৱে পঢ়িব-লিখিব পাৰিছিল।"
-     },
-     "answer": false,
-     "why": {
-      "en": "False. He was unlettered, but had a remarkable memory.",
-      "as": "অশুদ্ধ। তেওঁ নিৰক্ষৰ আছিল, কিন্তু স্মৃতিশক্তি অসাধাৰণ।"
-     },
-     "id": "ak10.rud.u4.04"
     },
     {
      "type": "story",
@@ -1437,12 +1572,16 @@
      },
      "text": [
       {
-       "en": "Late in life Rudra planned a war on Bengal: some say for glory, some to reach the sacred Ganges. He gathered a great army and fleet at [[guwahati]].",
-       "as": "জীৱনৰ শেষভাগত ৰুদ্ৰই বংগ আক্ৰমণৰ পৰিকল্পনা কৰিলে: কোনোৱে কয় গৌৰৱৰ বাবে, কোনোৱে কয় পবিত্ৰ গংগা পাবলৈ। তেওঁ [[guwahati]]ত বিশাল সৈন্য আৰু নৌবহৰ গোটালে।"
+       "en": "He gathered a great army and fleet at [[guwahati]].",
+       "as": "তেওঁ [[guwahati]]ত বিশাল সৈন্য আৰু নৌবহৰ গোটালে।"
       },
       {
-       "en": "Before it was ready he fell ill and died, in <mark>August 1714</mark>.",
-       "as": "সাজু হোৱাৰ আগতেই তেওঁ অসুস্থ হৈ <mark>১৭১৪ চনৰ আগষ্ট</mark>ত মৃত্যুবৰণ কৰিলে।"
+       "en": "Before it was ready he fell ill and died, in August 1714.",
+       "as": "সাজু হোৱাৰ আগতেই তেওঁ অসুস্থ হৈ ১৭১৪ চনৰ আগষ্টত মৃত্যুবৰণ কৰিলে।"
+      },
+      {
+       "en": "Wanting to become a formal Hindu, but unwilling to bow before a subject, Rudra invited [[krishnaram]], a Sakta teacher from Bengal, promising him the [[kamakhya]] temple.",
+       "as": "আনুষ্ঠানিক হিন্দু হ'বলৈ বিচাৰিও প্ৰজাৰ আগত শিৰ নত কৰিবলৈ অনিচ্ছুক ৰুদ্ৰই বংগৰ শাক্ত গুৰু [[krishnaram]]ক কামাখ্যা মন্দিৰৰ প্ৰতিশ্ৰুতি দি মাতি আনিলে।"
       }
      ],
      "id": "ak10.rud.u5.02"
@@ -1456,15 +1595,32 @@
      },
      "text": [
       {
-       "en": "Wanting to become a formal Hindu, but unwilling to bow before a subject, Rudra invited [[krishnaram]], a Sakta teacher from Bengal, promising him the [[kamakhya]] temple.",
-       "as": "আনুষ্ঠানিক হিন্দু হ'বলৈ বিচাৰিও প্ৰজাৰ আগত শিৰ নত কৰিবলৈ অনিচ্ছুক ৰুদ্ৰই বংগৰ শাক্ত গুৰু [[krishnaram]]ক কামাখ্যা মন্দিৰৰ প্ৰতিশ্ৰুতি দি মাতি আনিলে।"
+       "en": "Rudra then hesitated; an earthquake convinced him the gods favoured the priest.",
+       "as": "তাৰ পিছত ৰুদ্ৰ দোমোজাত পৰিল; এক ভূমিকম্পই তেওঁক বুজালে যে দেৱতাই পুৰোহিতক সমৰ্থন কৰে।"
       },
       {
-       "en": "Rudra then hesitated; an earthquake convinced him the gods favoured the priest. His sons were told to accept Krishnaram as guru.",
-       "as": "তাৰ পিছত ৰুদ্ৰ দোমোজাত পৰিল; এক ভূমিকম্পই তেওঁক বুজালে যে দেৱতাই পুৰোহিতক সমৰ্থন কৰে। পুত্ৰসকলক কৃষ্ণৰামক গুৰু মানিবলৈ কোৱা হ'ল।"
+       "en": "His sons were told to accept Krishnaram as guru.",
+       "as": "পুত্ৰসকলক কৃষ্ণৰামক গুৰু মানিবলৈ কোৱা হ'ল।"
+      },
+      {
+       "en": "Rudra Singha in four letters, J-R-M-K: <b>J</b>oysagar for his mother, <b>R</b>angpur in brick, <b>M</b>aibong and Jaintiapur taken, <b>K</b>rishnaram and Kamakhya.",
+       "as": "ৰুদ্ৰ সিংহ চাৰিটা আখৰত, জ-ৰ-মা-ক: মাতৃৰ বাবে <b>জ</b>য়সাগৰ, ইটাৰ <b>ৰ</b>ংপুৰ, <b>মা</b>ইবং আৰু জয়ন্তীয়াপুৰ দখল, <b>ক</b>ৃষ্ণৰাম আৰু কামাখ্যা।"
       }
      ],
      "id": "ak10.rud.u5.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Rudra Singha could read and write fluently.",
+      "as": "ৰুদ্ৰ সিংহই সাৱলীলভাৱে পঢ়িব-লিখিব পাৰিছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "False. He was unlettered, but had a remarkable memory.",
+      "as": "অশুদ্ধ। তেওঁ নিৰক্ষৰ আছিল, কিন্তু স্মৃতিশক্তি অসাধাৰণ।"
+     },
+     "id": "ak10.rud.u4.04"
     },
     {
      "type": "whoami",
@@ -1508,19 +1664,80 @@
      "id": "ak10.rud.u5.04"
     },
     {
-     "type": "story",
-     "img": "rudra-singha/death-guwahati.webp",
-     "title": {
-      "en": "Remember J-R-M-K",
-      "as": "মনত ৰাখা জ-ৰ-মা-ক"
+     "type": "inline",
+     "before": {
+      "en": "I was a Sakta priest from Bengal. · I was promised the Kamakhya temple. · Siva Singha became my disciple.",
+      "as": "মই বংগৰ শাক্ত পুৰোহিত। · মোক কামাখ্যা মন্দিৰৰ প্ৰতিশ্ৰুতি দিয়া হৈছিল। · শিৱ সিংহ মোৰ শিষ্য হৈছিল।"
      },
-     "text": [
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
       {
-       "en": "Rudra Singha in four letters, <mark>J-R-M-K</mark>: <b>J</b>oysagar for his mother, <b>R</b>angpur in brick, <b>M</b>aibong and Jaintiapur taken, <b>K</b>rishnaram and Kamakhya.",
-       "as": "ৰুদ্ৰ সিংহ চাৰিটা আখৰত, <mark>জ-ৰ-মা-ক</mark>: মাতৃৰ বাবে <b>জ</b>য়সাগৰ, ইটাৰ <b>ৰ</b>ংপুৰ, <b>মা</b>ইবং আৰু জয়ন্তীয়াপুৰ দখল, <b>ক</b>ৃষ্ণৰাম আৰু কামাখ্যা।"
+       "en": "Krishnaram Bhattacharya",
+       "as": "কৃষ্ণৰাম ভট্টাচাৰ্য"
+      },
+      {
+       "en": "Ghanashyam",
+       "as": "ঘনশ্যাম"
+      },
+      {
+       "en": "Niranjan Deva",
+       "as": "নিৰঞ্জন দেৱ"
+      },
+      {
+       "en": "Chakrapani",
+       "as": "চক্ৰপাণি"
       }
      ],
-     "id": "ak10.rud.u5.05"
+     "answer": 0,
+     "why": {
+      "en": "Krishnaram, the first Parbatiya Gosain.",
+      "as": "কৃষ্ণৰাম, প্ৰথম পৰ্বতীয়া গোঁসাই।"
+     },
+     "id": "ahom-10-rudra-singha.u4.supp.3"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "I was a Sakta priest from Bengal. · I was promised the Kamakhya temple. · Siva Singha became my disciple.",
+      "as": "মই বংগৰ শাক্ত পুৰোহিত। · মোক কামাখ্যা মন্দিৰৰ প্ৰতিশ্ৰুতি দিয়া হৈছিল। · শিৱ সিংহ মোৰ শিষ্য হৈছিল।"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Krishnaram Bhattacharya",
+     "answerText": {
+      "en": "Krishnaram Bhattacharya",
+      "as": "কৃষ্ণৰাম ভট্টাচাৰ্য"
+     },
+     "asOptions": [
+      "কৃষ্ণৰাম ভট্টাচাৰ্য",
+      "ঘনশ্যাম",
+      "নিৰঞ্জন দেৱ",
+      "চক্ৰপাণি"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Krishnaram, the first Parbatiya Gosain.",
+      "as": "কৃষ্ণৰাম, প্ৰথম পৰ্বতীয়া গোঁসাই।"
+     },
+     "id": "ahom-10-rudra-singha.u4.supp.4"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Though unlettered, he had a remarkable memory",
+      "as": "নিৰক্ষৰ হ'লেও তেওঁৰ অসাধাৰণ স্মৃতিশক্তি আছিল"
+     },
+     "answer": true,
+     "why": {
+      "en": "Though unlettered, he had a remarkable memory",
+      "as": "নিৰক্ষৰ হ'লেও তেওঁৰ অসাধাৰণ স্মৃতিশক্তি আছিল"
+     },
+     "id": "ahom-10-rudra-singha.u4.supp.5"
     }
    ]
   }
@@ -1870,11 +2087,7 @@
     "id": "ak10.rud.test.08"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. Rudra Singha stopped the persecution of the satras.<br>2. Rudra Singha invaded and conquered Bengal.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ৰুদ্ৰ সিংহই সত্ৰৰ ওপৰত নিৰ্যাতন বন্ধ কৰিছিল।<br>২. ৰুদ্ৰ সিংহই বংগ আক্ৰমণ কৰি জয় কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -1899,8 +2112,18 @@
      "as": "কেৱল ১। বংগ অভিযান আৰম্ভ হোৱাৰ আগতেই তেওঁৰ মৃত্যু।"
     },
     "small": true,
-    "id": "ak10.rud.test.10"
+    "id": "ak10.rud.test.10",
+    "before": {
+     "en": "Consider the statements:<br>1. Rudra Singha stopped the persecution of the satras.<br>2. Rudra Singha invaded and conquered Bengal.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ৰুদ্ৰ সিংহই সত্ৰৰ ওপৰত নিৰ্যাতন বন্ধ কৰিছিল।<br>২. ৰুদ্ৰ সিংহই বংগ আক্ৰমণ কৰি জয় কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    }
   ]
- }
+ },
+ "origin_course": "ahom-kingdom",
+ "origin_no": 10
 }

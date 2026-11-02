@@ -20,7 +20,7 @@ if (params.has("review")) { try { params.get("review") === "0" ? localStorage.re
 const UNLOCK_ALL = params.has("all") || (() => { try { return localStorage.getItem("axom.review") === "1"; } catch { return false; } })();
 
 /* ---------- shared names list: [[id]] or [[id|text]] inside lesson text ---------- */
-let ENT = {};
+let ENT = {}, REFERENCE_LESSONS = {};
 const MARK = /\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g;
 const entText = (lang, id, text) => text || (ENT[id] ? ENT[id].name[lang] : id);
 const plain = (str, lang) => String(str).replace(MARK, (m, id, text) => entText(lang, id, text));
@@ -32,14 +32,18 @@ const TR = (o) => (o == null ? "" : typeof o === "string" ? o : `<span class="en
 /* ---------- loading ---------- */
 async function load() {
   try {
-    const [entities, basemap] = await Promise.all([AXOM.getJSON("content/entities.json"), AXOM.getJSON("content/maps/assam.json")]);
+    const [entities, basemap, manifest] = await Promise.all([AXOM.getJSON("content/entities.json"), AXOM.getJSON("content/maps/assam.json"), AXOM.getJSON("content/manifest.json")]);
+    REFERENCE_LESSONS = manifest.lessons;
     ENT = entities; BASE = basemap;
     if (params.has("review")) return boot(await buildReview(), "review");
-    if (params.get("checkpoint")) { CID = (params.get("course") || "ahom-kings").replace(/[^a-z0-9-]/g, ""); return boot(await buildCheckpoint(params.get("checkpoint").replace(/[^a-z-]/g, "")), "checkpoint"); }
+    if (params.get("checkpoint")) { CID = (params.get("course") || "ahom-kings").replace(/[^a-z0-9-]/g, ""); if (!manifest.courses.some(c=>c.id===CID)) CID = manifest.courseRedirects?.[CID] || CID; return boot(await buildCheckpoint(params.get("checkpoint").replace(/[^a-z-]/g, "")), "checkpoint"); }
     if (params.get("jump")) { const t = params.get("jump").replace(/[^a-z0-9-]/g, ""); CID = ((await AXOM.getJSON("content/manifest.json")).lessons[t] || {}).course || "ahom-kings"; return boot(await buildJump(t), "jump"); }
     const id = (params.get("id") || "sukaphaa").replace(/[^a-z0-9-]/g, "");
     const L = await AXOM.getJSON(`content/lessons/${id}.json`);
-    CID = L.course || "ahom-kings";
+    // Old downloaded lesson JSON keeps working after consolidation.
+    const current = manifest.lessons[L.id];
+    CID = current?.course || L.course || "ahom-kings";
+    if (current) { L.course = CID; L.no = current.no; }
     NEXT = await nextLesson(L.no).catch(() => null);
     GATE = UNLOCK_ALL ? null : await lessonGate(L).catch(() => null);
     COURSE = await coursePath().catch(() => []);
@@ -113,7 +117,7 @@ async function buildCheckpoint(eraId) {
   const era = course.eras.find((e) => e.id === eraId);
   const ids = course.kings.filter((k) => k.n >= era.from && k.n <= era.to && k.lesson && manifest.lessons[k.lesson]).map((k) => k.lesson);
   const lessons = await lessonsById(ids);
-  const fromBank = bank.questions.filter((q) => q.era === eraId && lessons[q.lesson]).map((q) => tagStep(q, lessons[q.lesson]));
+  const fromBank = bank.questions.filter((q) => q.era === eraId && lessons[q.lesson]).map((q) => ({ ...tagStep(q, lessons[q.lesson]), _bank: true }));
   const fromTests = ids.flatMap((id) => (lessons[id] ? shuffle(lessons[id].test.steps.filter((s) => s.type !== "story")).slice(0, 3).map((s) => tagStep(s, lessons[id])) : []));
   const steps = shuffle([...shuffle(fromBank).slice(0, 10), ...fromTests]).slice(0, 15);
   const eraUnits = Object.fromEntries(Object.entries(lessons).map(([id, Ls]) => [id, [...Ls.units.map((u) => u.id), "test"]]));
@@ -339,7 +343,7 @@ function renderPath() {
     const types = [...new Set(u.steps.filter((s) => s.type !== "story").map((s) => s.type))];
     const popHTML = pop !== k ? "" : jump ? jumpPop(B("Jump here", "ইয়ালৈ জঁপিওৱা")) + `<a class="btn" href="lesson.html?jump=${L.id}">${T(B("Jump here", "ইয়ালৈ জঁপিওৱা"))}</a></div>` : `<div class="pop ${isDone ? "done" : isTest ? "test" : open ? "" : "locked"}">
         <h3>${T(u.title)}</h3>
-        <p>${testout ? T(B(`Know this reign already? Get 80% on the ${ex} questions to complete the lesson and unlock the next one.`, `এই ৰাজত্বকাল আগৰে পৰা জানা নেকি? ${asNum(ex)}টা প্ৰশ্নত ৮০% পালে পাঠটো সম্পূৰ্ণ হ'ব আৰু পিছৰটো খোল খাব।`))
+        <p>${testout ? T(B(`Know this lesson already? Get 80% on the ${ex} questions to complete the lesson and unlock the next one.`, `এই পাঠটো আগৰে পৰা জানা নেকি? ${asNum(ex)}টা প্ৰশ্নত ৮০% পালে পাঠটো সম্পূৰ্ণ হ'ব আৰু পিছৰটো খোল খাব।`))
           : open ? T(B(`${ex} exercises · about 4 min`, `${asNum(ex)}টা অনুশীলন · প্ৰায় ৪ মিনিট`)) : GATE ? T(B(`This lesson opens when you finish Lesson ${GATE.n}.`, `পাঠ ${asNum(GATE.n)} শেষ কৰিলে এই পাঠ খোল খাব।`)) : T(B("Complete the step above to unlock this.", "ওপৰৰ স্তৰটো শেষ কৰিলে এইটো খোল খাব।"))}</p>
         ${open && unitLinks(u).length ? `<p class="builds">${CHAIN}${T(B("Builds on", "ভেটি"))}: ${unitLinks(u).map((l) => T(linkLabel(l))).join(", ")}</p>` : ""}
         ${open ? `<div class="types">${types.map((ty) => `<span>${T(KICK[ty])}</span>`).join("")}</div><button class="btn" data-start="${k}" ${testout ? "data-testout" : ""}>${isDone ? T(B("Practise again", "আকৌ অনুশীলন")) : testout ? T(B("Take the test", "পৰীক্ষা দিয়া")) : T(B("Start", "আৰম্ভ"))}</button>` : ""}
@@ -421,7 +425,7 @@ function openEntity(id) {
   const e = ENT[id]; if (!e) return;
   const links = (e.lessons || []).filter((l) => l !== L.id);
   sheet(`<div class="ent-type">${T(TYPE[e.type] || B("", ""))}</div><h2>${T(e.name)}</h2><p class="note">${T(e.meaning)}</p>
-    ${links.length ? `<p class="also">${T(B("Also in", "আৰু আছে"))}: ${links.map((l) => `<a href="lesson.html?id=${l}" target="_blank" rel="noopener">${ENT[l] ? T(ENT[l].name) : l}</a>`).join(", ")}</p>` : ""}`);
+    ${links.length ? `<p class="also">${T(B("Also in", "আৰু আছে"))}: ${links.map((l) => `<a href="lesson.html?id=${l}" target="_blank" rel="noopener">${REFERENCE_LESSONS[l] ? T(REFERENCE_LESSONS[l].title) : ENT[l] ? T(ENT[l].name) : l}</a>`).join(", ")}</p>` : ""}`);
 }
 
 /* ---------- guidebook: one-screen revision note built from the lesson ---------- */
@@ -431,10 +435,12 @@ function openGuide() {
   const names = new Set();
   JSON.stringify(L.units).replace(MARK, (m, id) => names.add(id));
   const tl = (L.guide && L.guide.timeline) || [];
+  const extra = (L.guide && L.guide.extra_stories) || [];
   sheet(`<h2>${T(B("Guidebook", "নিৰ্দেশিকা"))} · ${T(L.king)}</h2>
     <h4>${T(B("Key facts", "মূল তথ্য"))}</h4><ul class="recap">${facts.map((f) => `<li>${T(f)}</li>`).join("")}</ul>
     ${tl.length ? `<h4>${T(B("Timeline", "সময়ৰেখা"))}</h4><div class="g-tl">${tl.map((x) => `<div><b>${x.y ? N(x.y) : "·"}</b><span>${T(x.t)}</span></div>`).join("")}</div>` : ""}
     ${traps.length ? `<h4>${T(B("Exam traps", "পৰীক্ষাৰ ফান্দ"))}</h4>${traps.map((s) => `<div class="trap"><div class="w">✕ ${T(s.type === "tf" ? s.s : B(s.tokens.en.join(" "), s.tokens.as.join(" ")))}</div><div class="r">✓ ${T(s.why)}</div></div>`).join("")}` : ""}
+    ${extra.length ? `<details class="guide-more"><summary>${T(B("More context", "অধিক প্ৰসংগ"))}</summary>${extra.map(s=>`<h4>${T(s.title)}</h4>${s.text.map(p=>`<p class="note">${TR(p)}</p>`).join("")}`).join("")}</details>` : ""}
     ${names.size ? `<h4>${T(B("Names to know", "জানিবলগীয়া নাম"))}</h4><div class="g-names">${[...names].filter((id) => ENT[id]).map((id) => `<button class="ent" data-ent="${id}">${T(ENT[id].name)}</button>`).join("")}</div>` : ""}`);
 }
 
@@ -662,11 +668,11 @@ function feedback(right) {
   else { if (slips) gain = 5; SFX.bad(); }
   U.xp += gain;
   // spaced repetition: learned steps come back after 1, 3, 7, 15, 30 days; review answers move them along
-  if (!it.retry && !s.id.startsWith("bank.")) { if (mode === "review") AXOM.srsAnswer(s.id, lid, right); else if (right) AXOM.srsLearn(s.id, lid); }
+  if (!it.retry && !s._bank && !s.id.startsWith("bank.")) { if (mode === "review") AXOM.srsAnswer(s.id, lid, right); else if (right) AXOM.srsLearn(s.id, lid); }
   // mistakes bank: kept for "Practise your mistakes" and daily review; a later correct answer clears them
   const b = bankOf(lid);
   if (right && b.includes(it.ref) && (U.practice || VIRTUAL || !it.retry)) b.splice(b.indexOf(it.ref), 1);
-  if (!right && !b.includes(it.ref) && !s.id.startsWith("bank.")) b.push(it.ref);
+  if (!right && !b.includes(it.ref) && !s._bank && !s.id.startsWith("bank.")) b.push(it.ref);
   // A missed question comes back once at the end of a unit or lesson test (not matching; not in exams).
   if (!right && !it.retry) { U.mistakes.push({ s }); if (!slips && mode !== "checkpoint" && mode !== "jump" && !U.testout) U.queue.push({ s, ref: it.ref, retry: true }); }
   if (!it.retry) U.done = Math.min(U.total, U.done + 1);
@@ -692,7 +698,9 @@ function next() {
 /* ---------- unit complete ---------- */
 function finishUnit() {
   const u = U.unit, wasDone = !!P.done[u.id];
-  if (!U.practice && !VIRTUAL && !U.testout) P.done[u.id] = true;
+  // A completed teaching unit opens the next unit. A lesson test opens the
+  // next lesson only after the first-attempt pass check below.
+  if (!U.practice && !VIRTUAL && !U.testout && u !== L.test) P.done[u.id] = true;
   G.xp += U.xp; AXOM.addDayXP(U.xp); AXOM.bumpStreak();
   let note = "";
   if (mode === "checkpoint") {
@@ -714,7 +722,11 @@ function finishUnit() {
   }
   // Passing a lesson test, however it was taken (after the units, as a test-out, or as practice), completes the lesson,
   // so the first unit of the next lesson opens.
-  if (!VIRTUAL && u === L.test && U.asked && U.ok / U.asked >= 0.8) P.done.test = true;
+  if (!VIRTUAL && u === L.test && !U.testout) {
+    pass = !!U.asked && U.ok / U.asked >= 0.8;
+    if (pass) P.done.test = true;
+    else note = T(B("You need 80% to pass. Review the lesson and try again.", "উত্তীৰ্ণ হ'বলৈ ৮০% লাগে। পাঠটো আকৌ চাই পুনৰ চেষ্টা কৰা।"));
+  }
   saveAll();
   SFX.done();
   const secs = Math.round((Date.now() - U.start) / 1000), time = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, "0")}`;
@@ -812,7 +824,9 @@ document.addEventListener("click", (e) => {
 });
 $("#action").addEventListener("click", () => { if (step().s.type === "story" && U.phase !== "feedback" && storyBeat()) return; if (U.phase === "feedback" || step().s.type === "story") return next(); if (ready()) check(); });
 $("#screen").addEventListener("click", (e) => { if (step() && step().s.type === "story" && !e.target.closest("button, a, .ent")) storyBeat(); });
-document.addEventListener("input", (e) => { if (!$("#v-play").classList.contains("on") || step().s.type !== "fill") return; e.target.value = e.target.value.replace(/[^a-zA-Z]/g, ""); refresh(); });
+// Names and dates can contain spaces, digits and punctuation. The field is
+// plain text and its value is compared with the authored answer, never HTML.
+document.addEventListener("input", (e) => { if (!$("#v-play").classList.contains("on") || step().s.type !== "fill") return; refresh(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Enter" && $("#v-play").classList.contains("on") && !$("#action").disabled && !$("#sheet-root").innerHTML) { e.preventDefault(); $("#action").click(); } });
 langBox.addEventListener("change", () => {
   if ($("#v-play").classList.contains("on") && U.phase === "answer" && ["fill", "unscramble", "spot"].includes(step().s.type)) renderStep(false);

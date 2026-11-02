@@ -1,0 +1,951 @@
+{
+ "id": "medieval-03",
+ "course": "assam-history",
+ "no": 16,
+ "version": 1,
+ "eyebrow": {
+  "en": "Assam History · Medieval kingdoms",
+  "as": "অসমৰ ইতিহাস · মধ্যযুগৰ ৰাজ্য"
+ },
+ "king": {
+  "en": "The Baro-Bhuyans",
+  "as": "বাৰভূঞাসকল"
+ },
+ "reign": {
+  "en": "Medieval Assam",
+  "as": "মধ্যযুগৰ অসম"
+ },
+ "portrait": "medieval-kingdoms/kamata-01.webp",
+ "map": {
+  "box": [
+   88.5,
+   23,
+   96.8,
+   28.7
+  ],
+  "show": [
+   "brahmaputra",
+   "guwahati",
+   "sadiya",
+   "dimapur",
+   "cooch-behar"
+  ]
+ },
+ "guide": {
+  "timeline": []
+ },
+ "sources": [
+  {
+   "title": "A Tribute to Sankaradeva, Baro-Bhuyan history",
+   "url": "https://atributetosankaradeva.org/barabhuyan.htm",
+   "used_for": "Bhuyan chiefs and Sankardev’s family; a confederate title, not an invariant count of twelve."
+  },
+  {
+   "title": "Traditional Sankardev biographies and the source-library Koch research",
+   "local_source": "Assam History/research; KOCH-09, KOCH-11, KOCH-20",
+   "used_for": "Bordowa, Koch protection and traditional account of the woven cloth; do not identify every surviving museum textile as the original sixteenth-century commission."
+  },
+  {
+   "title": "Cooch Behar district, Royal History",
+   "url": "https://coochbehar.gov.in/about-district/history/",
+   "used_for": "Khen succession, Husain Shah and 1498. Koch accession dates differ between this page and other chronologies; avoid exact accession tests."
+  }
+ ],
+ "units": [
+  {
+   "id": "u1",
+   "icon": "star",
+   "title": {
+    "en": "Power in many hands",
+    "as": "বহু হাতত ক্ষমতা"
+   },
+   "learned": [
+    {
+     "en": "The chiefs discussed here were known as Bhuyans",
+     "as": "ইয়াত আলোচনা কৰা মুখিয়ালৰ নাম ভূঞাসকল"
+    },
+    {
+     "en": "A central basis of their local power was Landholding",
+     "as": "তেওঁলোকৰ স্থানীয় ক্ষমতাৰ এটা ভিত্তি ভূস্বামিত্ব"
+    },
+    {
+     "en": "The conventional literal meaning of Baro is Twelve",
+     "as": "বাৰ শব্দৰ প্ৰচলিত আক্ষৰিক অৰ্থ বাৰ"
+    },
+    {
+     "en": "They formed political relationships through Alliances",
+     "as": "তেওঁলোকে ৰাজনৈতিক সম্পৰ্ক গঢ়িছিল মিত্ৰতা"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Chiefs between kingdoms",
+      "as": "ৰাজ্যৰ মাজত ভূঞা"
+     },
+     "text": [
+      {
+       "en": "The Bhuyans were local landholding chiefs. In periods of fragmented authority, they could govern their own territories and form alliances rather than belong to one continuous royal dynasty.",
+       "as": "ভূঞাসকল স্থানীয় ভূস্বামী মুখিয়াল আছিল। কেন্দ্ৰীয় ক্ষমতা ভাঙিলে তেওঁলোকে নিজৰ এলেকা শাসন আৰু মিত্ৰতা কৰিব পাৰিছিল; একেৰাহে চলা এটা ৰাজবংশ নহয়।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-01.webp",
+     "id": "medieval-03.u1.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "What does Baro mean?",
+      "as": "বাৰ শব্দৰ অৰ্থ কি?"
+     },
+     "text": [
+      {
+       "en": "Baro conventionally means twelve, but the historical expression does not guarantee one unchanging list of exactly twelve chiefs across all periods. Treat the political grouping separately from a literal count.",
+       "as": "বাৰ শব্দে সাধাৰণতে বাৰজন বুজায়, কিন্তু ঐতিহাসিক পদটোৱে সকলো যুগতে একে বাৰজন ভূঞাৰ স্থিৰ তালিকা নিশ্চিত নকৰে। ৰাজনৈতিক গোট আৰু আক্ষৰিক গণনা পৃথক কৰা।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-12.webp",
+     "id": "medieval-03.u1.02"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The chiefs discussed here were known as",
+      "as": "ইয়াত আলোচনা কৰা মুখিয়ালৰ নাম"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Priests",
+       "as": "পুৰোহিতসকল"
+      },
+      {
+       "en": "Paiks",
+       "as": "পাইকসকল"
+      },
+      {
+       "en": "Bhuyans",
+       "as": "ভূঞাসকল"
+      },
+      {
+       "en": "Monks",
+       "as": "সন্ন্যাসীসকল"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The chiefs discussed here were known as Bhuyans.",
+      "as": "ইয়াত আলোচনা কৰা মুখিয়ালৰ নাম ভূঞাসকল।"
+     },
+     "id": "medieval-03.u1.03"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which claim treats the title too literally?",
+      "as": "কোনটো দাবীয়ে পদটোৰ অৰ্থ অতি আক্ষৰিকভাৱে লৈছে?"
+     },
+     "options": [
+      {
+       "en": "Local chiefs held land",
+       "as": "স্থানীয় ভূঞাৰ মাটি আছিল"
+      },
+      {
+       "en": "Chiefs could make alliances",
+       "as": "ভূঞাই মিত্ৰতা কৰিব পাৰিছিল"
+      },
+      {
+       "en": "Membership could change",
+       "as": "সদস্য সলনি হ’ব পাৰিছিল"
+      },
+      {
+       "en": "There must always be exactly twelve identical members",
+       "as": "সদায় একে বাৰজন সদস্য হ’বই লাগিব"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "A conventional number is not a permanent census.",
+      "as": "প্ৰচলিত সংখ্যা স্থায়ী লোকপিয়ল নহয়।"
+     },
+     "id": "medieval-03.u1.04"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "A central basis of their local power was",
+      "as": "তেওঁলোকৰ স্থানীয় ক্ষমতাৰ এটা ভিত্তি"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Landholding",
+     "asOptions": [
+      "ৰাজপাট",
+      "ভূস্বামিত্ব",
+      "ৰাস",
+      "মিত্ৰতা"
+     ],
+     "asAnswer": 1,
+     "answerText": {
+      "en": "Landholding",
+      "as": "ভূস্বামিত্ব"
+     },
+     "why": {
+      "en": "A central basis of their local power was Landholding.",
+      "as": "তেওঁলোকৰ স্থানীয় ক্ষমতাৰ এটা ভিত্তি ভূস্বামিত্ব।"
+     },
+     "id": "medieval-03.u1.05"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Baro-Bhuyan proves that exactly the same twelve chiefs ruled throughout medieval Assam.",
+      "as": "বাৰভূঞাই প্ৰমাণ কৰে যে সমগ্ৰ মধ্যযুগত একে বাৰজন ভূঞাই শাসন কৰিছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The expression identifies a political tradition; membership and power changed.",
+      "as": "পদটোৱে ৰাজনৈতিক পৰম্পৰা চিনায়; সদস্য আৰু ক্ষমতা সলনি হৈছিল।"
+     },
+     "id": "medieval-03.u1.06"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "The chiefs discussed here were known as",
+        "as": "ইয়াত আলোচনা কৰা মুখিয়ালৰ নাম"
+       },
+       {
+        "en": "Bhuyans",
+        "as": "ভূঞাসকল"
+       }
+      ],
+      [
+       {
+        "en": "A central basis of their local power was",
+        "as": "তেওঁলোকৰ স্থানীয় ক্ষমতাৰ এটা ভিত্তি"
+       },
+       {
+        "en": "Landholding",
+        "as": "ভূস্বামিত্ব"
+       }
+      ],
+      [
+       {
+        "en": "The conventional literal meaning of Baro is",
+        "as": "বাৰ শব্দৰ প্ৰচলিত আক্ষৰিক অৰ্থ"
+       },
+       {
+        "en": "Twelve",
+        "as": "বাৰ"
+       }
+      ],
+      [
+       {
+        "en": "They formed political relationships through",
+        "as": "তেওঁলোকে ৰাজনৈতিক সম্পৰ্ক গঢ়িছিল"
+       },
+       {
+        "en": "Alliances",
+        "as": "মিত্ৰতা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Understand the institution before memorising a count.",
+      "as": "সংখ্যা মুখস্থ কৰাৰ আগতে ব্যৱস্থাটো বুজা।"
+     },
+     "id": "medieval-03.u1.07"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "icon": "star",
+   "title": {
+    "en": "A saint’s Bhuyan background",
+    "as": "সন্তৰ ভূঞা পটভূমি"
+   },
+   "learned": [
+    {
+     "en": "The saint born into a Bhuyan family was Sankardev",
+     "as": "ভূঞা পৰিয়ালত জন্মা সন্ত শংকৰদেৱ"
+    },
+    {
+     "en": "The locality associated with his birthplace was Bordowa",
+     "as": "জন্মস্থানৰ সৈতে জড়িত ঠাই বৰদোৱা"
+    },
+    {
+     "en": "The district-region was Nagaon",
+     "as": "জিলা-অঞ্চল নগাঁও"
+    },
+    {
+     "en": "His father is remembered as Kusumvar Bhuyan",
+     "as": "তেওঁৰ পিতৃৰ নাম কুসুম্বৰ ভূঞা"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Bordowa’s connections",
+      "as": "বৰদোৱাৰ সংযোগ"
+     },
+     "text": [
+      {
+       "en": "[[history-sankardev|Sankardev]] was born into a Bhuyan family at Alipukhuri near [[history-bordowa|Bordowa]] in the [[nagaon|Nagaon]] region. His father is remembered as [[kusumvar-bhuyan|Kusumvar Bhuyan]].",
+       "as": "[[nagaon|নগাঁও]] অঞ্চলৰ [[history-bordowa|বৰদোৱা]]ৰ ওচৰৰ আলিপুখুৰীৰ ভূঞা পৰিয়ালত [[history-sankardev|শংকৰদেৱ]]ৰ জন্ম হয়। পিতৃৰ নাম [[kusumvar-bhuyan|কুসুম্বৰ ভূঞা]] বুলি সোঁৱৰা হয়।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-19.webp",
+     "id": "medieval-03.u2.01",
+     "link": {
+      "unit": "u1",
+      "note": {
+       "en": "Build on the preceding unit: Power in many hands",
+       "as": "আগৰ অধ্যায়ৰ পৰা আগবাঢ়া: বহু হাতত ক্ষমতা"
+      }
+     }
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Biography needs a source",
+      "as": "জীৱনীৰ উৎস লাগে"
+     },
+     "text": [
+      {
+       "en": "Later saint-biographies preserve much of this family history. They connect local chiefly society with religious change, but they should not be mistaken for contemporary birth registers.",
+       "as": "পিছৰ চৰিতপুথিয়ে পৰিয়ালৰ এই ইতিহাসৰ বহু অংশ ৰাখিছে। ই স্থানীয় ভূঞা সমাজ আৰু ধৰ্মীয় পৰিৱৰ্তনক জোৰে; সমসাময়িক জন্মপঞ্জী বুলি ধৰিব নালাগে।"
+      }
+     ],
+     "img": "medieval-kingdoms/bhakti-01.webp",
+     "id": "medieval-03.u2.02"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The saint born into a Bhuyan family was",
+      "as": "ভূঞা পৰিয়ালত জন্মা সন্ত"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Iwaz Khalji",
+       "as": "ইৱাজ খিলজী"
+      },
+      {
+       "en": "Sankardev",
+       "as": "শংকৰদেৱ"
+      },
+      {
+       "en": "Kusumvar Bhuyan",
+       "as": "কুসুম্বৰ ভূঞা"
+      },
+      {
+       "en": "Biswa Singha",
+       "as": "বিশ্ব সিংহ"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "The saint born into a Bhuyan family was Sankardev.",
+      "as": "ভূঞা পৰিয়ালত জন্মা সন্ত শংকৰদেৱ।"
+     },
+     "id": "medieval-03.u2.03"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I came from a Bhuyan family near Bordowa.",
+       "as": "মই বৰদোৱাৰ ওচৰৰ ভূঞা পৰিয়ালৰ পৰা আহিছিলোঁ।"
+      },
+      {
+       "en": "My father is remembered as Kusumvar.",
+       "as": "মোৰ পিতৃৰ নাম কুসুম্বৰ বুলি সোঁৱৰা হয়।"
+      },
+      {
+       "en": "I led Assam’s Ekasarana movement.",
+       "as": "মই অসমৰ একশৰণ আন্দোলনৰ নেতৃত্ব দিছিলোঁ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Sankardev",
+       "as": "শংকৰদেৱ"
+      },
+      {
+       "en": "Chilarai",
+       "as": "চিলাৰায়"
+      },
+      {
+       "en": "Biswa Singha",
+       "as": "বিশ্ব সিংহ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "His family background connects the Bhuyan and religious histories.",
+      "as": "পৰিয়ালৰ পটভূমিয়ে ভূঞা আৰু ধৰ্মীয় ইতিহাসক জোৰে।"
+     },
+     "id": "medieval-03.u2.04"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The surviving saint-biographies are identical to a contemporary government birth certificate.",
+      "as": "বাচি থকা চৰিতপুথি আৰু সমসাময়িক চৰকাৰী জন্মপত্ৰ একে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "They are later biographical traditions and need historical reading.",
+      "as": "ইহঁত পিছৰ জীৱনীমূলক পৰম্পৰা; ঐতিহাসিক পদ্ধতিৰে পঢ়িব লাগে।"
+     },
+     "id": "medieval-03.u2.05"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The locality associated with his birthplace was",
+      "as": "জন্মস্থানৰ সৈতে জড়িত ঠাই"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Bordowa",
+     "asOptions": [
+      "শদিয়া",
+      "তাম্ৰেশ্বৰী",
+      "বৰদোৱা",
+      "কামতাপুৰ"
+     ],
+     "asAnswer": 2,
+     "answerText": {
+      "en": "Bordowa",
+      "as": "বৰদোৱা"
+     },
+     "why": {
+      "en": "The locality associated with his birthplace was Bordowa.",
+      "as": "জন্মস্থানৰ সৈতে জড়িত ঠাই বৰদোৱা।"
+     },
+     "id": "medieval-03.u2.06"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "The saint born into a Bhuyan family was",
+        "as": "ভূঞা পৰিয়ালত জন্মা সন্ত"
+       },
+       {
+        "en": "Sankardev",
+        "as": "শংকৰদেৱ"
+       }
+      ],
+      [
+       {
+        "en": "The locality associated with his birthplace was",
+        "as": "জন্মস্থানৰ সৈতে জড়িত ঠাই"
+       },
+       {
+        "en": "Bordowa",
+        "as": "বৰদোৱা"
+       }
+      ],
+      [
+       {
+        "en": "The district-region was",
+        "as": "জিলা-অঞ্চল"
+       },
+       {
+        "en": "Nagaon",
+        "as": "নগাঁও"
+       }
+      ],
+      [
+       {
+        "en": "His father is remembered as",
+        "as": "তেওঁৰ পিতৃৰ নাম"
+       },
+       {
+        "en": "Kusumvar Bhuyan",
+        "as": "কুসুম্বৰ ভূঞা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Connect place, family and later religious work.",
+      "as": "ঠাই, পৰিয়াল আৰু পিছৰ ধৰ্মীয় কাম মিলোৱা।"
+     },
+     "id": "medieval-03.u2.07"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "icon": "star",
+   "title": {
+    "en": "Chiefs face new monarchies",
+    "as": "নতুন ৰাজতন্ত্ৰৰ সন্মুখত ভূঞা"
+   },
+   "learned": [
+    {
+     "en": "Bisu later became known as Biswa Singha",
+     "as": "বিচুৰ পিছৰ নাম বিশ্ব সিংহ"
+    },
+    {
+     "en": "The dynasty consolidated by him was the Koch",
+     "as": "তেওঁ সুসংহত কৰা বংশ কোচ"
+    },
+    {
+     "en": "The dynasty whose earlier collapse opened the interval was the Khen",
+     "as": "আগৰ পতনে এই সময় মুকলি কৰা বংশ খেন"
+    },
+    {
+     "en": "The local chiefs involved were the Bhuyans",
+     "as": "জড়িত স্থানীয় মুখিয়াল ভূঞাসকল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Bisu’s rise",
+      "as": "বিচুৰ উত্থান"
+     },
+     "text": [
+      {
+       "en": "After the Khen collapse, Bhuyan chiefs exercised local authority. Bisu, later [[biswa-singha|Biswa Singha]], defeated chiefs while consolidating Koch power in the early sixteenth century.",
+       "as": "খেনৰ পতনৰ পিছত ভূঞাই স্থানীয় ক্ষমতা ধৰিছিল। পিছৰ [[biswa-singha|বিশ্ব সিংহ]] বিচুৱে ষোড়শ শতিকাৰ আৰম্ভণিতে কোচ শক্তি সুসংহত কৰিবলৈ ভূঞাসকলক পৰাজিত কৰে।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-26.webp",
+     "id": "medieval-03.u3.01",
+     "link": {
+      "unit": "u2",
+      "note": {
+       "en": "Build on the preceding unit: A saint’s Bhuyan background",
+       "as": "আগৰ অধ্যায়ৰ পৰা আগবাঢ়া: সন্তৰ ভূঞা পটভূমি"
+      }
+     }
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Not the same relationship everywhere",
+      "as": "সকলো ঠাইতে একে সম্পৰ্ক নহয়"
+     },
+     "text": [
+      {
+       "en": "Bhuyan groups also negotiated relationships with Ahom rulers. Their histories include conflict, submission and settlement, rather than one uniform alliance with every king.",
+       "as": "ভূঞাৰ গোটে আহোম ৰজাৰ সৈতেও সম্পৰ্ক গঢ়িছিল। তেওঁলোকৰ ইতিহাসত সংঘাত, বশ্যতা আৰু বসতি আছে; প্ৰতিজন ৰজাৰ সৈতে একে মিত্ৰতা নহয়।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-12.webp",
+     "id": "medieval-03.u3.02"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Bisu later became known as",
+      "as": "বিচুৰ পিছৰ নাম"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Iltutmish",
+       "as": "ইলতুৎমিছ"
+      },
+      {
+       "en": "Badaucha",
+       "as": "বদৌচা"
+      },
+      {
+       "en": "Biswa Singha",
+       "as": "বিশ্ব সিংহ"
+      },
+      {
+       "en": "Iwaz Khalji",
+       "as": "ইৱাজ খিলজী"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Bisu later became known as Biswa Singha.",
+      "as": "বিচুৰ পিছৰ নাম বিশ্ব সিংহ।"
+     },
+     "id": "medieval-03.u3.03"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The dynasty consolidated by him was the",
+      "as": "তেওঁ সুসংহত কৰা বংশ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Koch",
+     "asOptions": [
+      "মাণিক্য",
+      "কোচ",
+      "খেন",
+      "বৰ্মন"
+     ],
+     "asAnswer": 1,
+     "answerText": {
+      "en": "Koch",
+      "as": "কোচ"
+     },
+     "why": {
+      "en": "The dynasty consolidated by him was the Koch.",
+      "as": "তেওঁ সুসংহত কৰা বংশ কোচ।"
+     },
+     "id": "medieval-03.u3.04"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "All Bhuyan chiefs permanently supported every expanding monarchy.",
+      "as": "সকলো ভূঞাই চিৰকাল প্ৰতিটো বিস্তাৰশীল ৰাজতন্ত্ৰ সমৰ্থন কৰিছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Relations varied with place, period and political interests.",
+      "as": "ঠাই, যুগ আৰু ৰাজনৈতিক স্বাৰ্থ অনুসৰি সম্পৰ্ক সলনি হৈছিল।"
+     },
+     "id": "medieval-03.u3.05"
+    },
+    {
+     "type": "timeline",
+     "anchors": [
+      {
+       "y": "1498",
+       "l": {
+        "en": "Khen collapse",
+        "as": "খেনৰ পতন"
+       }
+      },
+      {
+       "y": "1539",
+       "l": {
+        "en": "End of Suhungmung’s reign",
+        "as": "চুহুংমুঙৰ ৰাজত্বৰ অন্ত"
+       }
+      }
+     ],
+     "items": [
+      {
+       "t": {
+        "en": "Sandhya’s thirteenth century",
+        "as": "সন্ধ্যাৰ ত্ৰয়োদশ শতিকা"
+       },
+       "slot": 0
+      },
+      {
+       "t": {
+        "en": "Biswa’s early sixteenth-century rise",
+        "as": "বিশ্বৰ ষোড়শ শতিকাৰ আৰম্ভণিৰ উত্থান"
+       },
+       "slot": 1
+      },
+      {
+       "t": {
+        "en": "Saraighat, 1671",
+        "as": "শৰাইঘাট, ১৬৭১"
+       },
+       "slot": 2
+      }
+     ],
+     "why": {
+      "en": "Bhuyan autonomy belongs within a changing regional political landscape.",
+      "as": "ভূঞাৰ স্বায়ত্ততা পৰিৱৰ্তিত আঞ্চলিক ৰাজনৈতিক ভূদৃশ্যৰ অংশ।"
+     },
+     "id": "medieval-03.u3.06"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Bisu later became known as",
+        "as": "বিচুৰ পিছৰ নাম"
+       },
+       {
+        "en": "Biswa Singha",
+        "as": "বিশ্ব সিংহ"
+       }
+      ],
+      [
+       {
+        "en": "The dynasty consolidated by him was the",
+        "as": "তেওঁ সুসংহত কৰা বংশ"
+       },
+       {
+        "en": "Koch",
+        "as": "কোচ"
+       }
+      ],
+      [
+       {
+        "en": "The dynasty whose earlier collapse opened the interval was the",
+        "as": "আগৰ পতনে এই সময় মুকলি কৰা বংশ"
+       },
+       {
+        "en": "Khen",
+        "as": "খেন"
+       }
+      ],
+      [
+       {
+        "en": "The local chiefs involved were the",
+        "as": "জড়িত স্থানীয় মুখিয়াল"
+       },
+       {
+        "en": "Bhuyans",
+        "as": "ভূঞাসকল"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Local chiefs and kingdoms changed one another.",
+      "as": "স্থানীয় ভূঞা আৰু ৰাজ্যই পৰস্পৰক সলনি কৰিছিল।"
+     },
+     "id": "medieval-03.u3.07"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Lesson test",
+   "as": "পাঠৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "type": "inline",
+    "before": {
+     "en": "The chiefs discussed here were known as",
+     "as": "ইয়াত আলোচনা কৰা মুখিয়ালৰ নাম"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "options": [
+     {
+      "en": "Priests",
+      "as": "পুৰোহিতসকল"
+     },
+     {
+      "en": "Paiks",
+      "as": "পাইকসকল"
+     },
+     {
+      "en": "Bhuyans",
+      "as": "ভূঞাসকল"
+     },
+     {
+      "en": "Monks",
+      "as": "সন্ন্যাসীসকল"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "The chiefs discussed here were known as Bhuyans.",
+     "as": "ইয়াত আলোচনা কৰা মুখিয়ালৰ নাম ভূঞাসকল।"
+    },
+    "id": "medieval-03.test.01"
+   },
+   {
+    "type": "odd",
+    "q": {
+     "en": "Which claim treats the title too literally?",
+     "as": "কোনটো দাবীয়ে পদটোৰ অৰ্থ অতি আক্ষৰিকভাৱে লৈছে?"
+    },
+    "options": [
+     {
+      "en": "Local chiefs held land",
+      "as": "স্থানীয় ভূঞাৰ মাটি আছিল"
+     },
+     {
+      "en": "Chiefs could make alliances",
+      "as": "ভূঞাই মিত্ৰতা কৰিব পাৰিছিল"
+     },
+     {
+      "en": "Membership could change",
+      "as": "সদস্য সলনি হ’ব পাৰিছিল"
+     },
+     {
+      "en": "There must always be exactly twelve identical members",
+      "as": "সদায় একে বাৰজন সদস্য হ’বই লাগিব"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "A conventional number is not a permanent census.",
+     "as": "প্ৰচলিত সংখ্যা স্থায়ী লোকপিয়ল নহয়।"
+    },
+    "id": "medieval-03.test.02"
+   },
+   {
+    "type": "inline",
+    "before": {
+     "en": "The saint born into a Bhuyan family was",
+     "as": "ভূঞা পৰিয়ালত জন্মা সন্ত"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "options": [
+     {
+      "en": "Iwaz Khalji",
+      "as": "ইৱাজ খিলজী"
+     },
+     {
+      "en": "Sankardev",
+      "as": "শংকৰদেৱ"
+     },
+     {
+      "en": "Kusumvar Bhuyan",
+      "as": "কুসুম্বৰ ভূঞা"
+     },
+     {
+      "en": "Biswa Singha",
+      "as": "বিশ্ব সিংহ"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "The saint born into a Bhuyan family was Sankardev.",
+     "as": "ভূঞা পৰিয়ালত জন্মা সন্ত শংকৰদেৱ।"
+    },
+    "id": "medieval-03.test.03"
+   },
+   {
+    "type": "whoami",
+    "clues": [
+     {
+      "en": "I came from a Bhuyan family near Bordowa.",
+      "as": "মই বৰদোৱাৰ ওচৰৰ ভূঞা পৰিয়ালৰ পৰা আহিছিলোঁ।"
+     },
+     {
+      "en": "My father is remembered as Kusumvar.",
+      "as": "মোৰ পিতৃৰ নাম কুসুম্বৰ বুলি সোঁৱৰা হয়।"
+     },
+     {
+      "en": "I led Assam’s Ekasarana movement.",
+      "as": "মই অসমৰ একশৰণ আন্দোলনৰ নেতৃত্ব দিছিলোঁ।"
+     }
+    ],
+    "options": [
+     {
+      "en": "Sankardev",
+      "as": "শংকৰদেৱ"
+     },
+     {
+      "en": "Chilarai",
+      "as": "চিলাৰায়"
+     },
+     {
+      "en": "Biswa Singha",
+      "as": "বিশ্ব সিংহ"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "His family background connects the Bhuyan and religious histories.",
+     "as": "পৰিয়ালৰ পটভূমিয়ে ভূঞা আৰু ধৰ্মীয় ইতিহাসক জোৰে।"
+    },
+    "id": "medieval-03.test.04"
+   },
+   {
+    "type": "inline",
+    "before": {
+     "en": "Bisu later became known as",
+     "as": "বিচুৰ পিছৰ নাম"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "options": [
+     {
+      "en": "Iltutmish",
+      "as": "ইলতুৎমিছ"
+     },
+     {
+      "en": "Badaucha",
+      "as": "বদৌচা"
+     },
+     {
+      "en": "Biswa Singha",
+      "as": "বিশ্ব সিংহ"
+     },
+     {
+      "en": "Iwaz Khalji",
+      "as": "ইৱাজ খিলজী"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Bisu later became known as Biswa Singha.",
+     "as": "বিচুৰ পিছৰ নাম বিশ্ব সিংহ।"
+    },
+    "id": "medieval-03.test.05"
+   },
+   {
+    "type": "fill",
+    "before": {
+     "en": "The dynasty consolidated by him was the",
+     "as": "তেওঁ সুসংহত কৰা বংশ"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "answer": "Koch",
+    "asOptions": [
+     "মাণিক্য",
+     "কোচ",
+     "খেন",
+     "বৰ্মন"
+    ],
+    "asAnswer": 1,
+    "answerText": {
+     "en": "Koch",
+     "as": "কোচ"
+    },
+    "why": {
+     "en": "The dynasty consolidated by him was the Koch.",
+     "as": "তেওঁ সুসংহত কৰা বংশ কোচ।"
+    },
+    "id": "medieval-03.test.06"
+   }
+  ]
+ },
+ "review_notes": "AI-assisted bilingual draft. Historical uncertainty is explicit; fluent Assamese editorial review pending. Borrowed units adapted with new ids from the existing Ahom deep dive.",
+ "origin_course": "medieval-kingdoms",
+ "origin_no": 3
+}

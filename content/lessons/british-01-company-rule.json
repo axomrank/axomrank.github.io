@@ -1,0 +1,1270 @@
+{
+ "id": "british-01-company-rule",
+ "course": "assam-history",
+ "no": 38,
+ "version": 2,
+ "draft": true,
+ "eyebrow": {
+  "en": "British Assam",
+  "as": "ব্ৰিটিছ অসম"
+ },
+ "king": {
+  "en": "Company rule begins",
+  "as": "কোম্পানীৰ শাসনৰ আৰম্ভণি"
+ },
+ "reign": {
+  "en": "1824–1838",
+  "as": "১৮২৪–১৮৩৮"
+ },
+ "portrait": "british-period/ahom-228.webp",
+ "sources": [
+  {
+   "title": "Colonial Assam",
+   "url": "https://en.wikipedia.org/wiki/Colonial_Assam",
+   "used_for": "Guwahati taken by 28 March 1824, Burmese leave Rangpur January 1825, Bengal Presidency, 1828 and 1830 risings, 1833 protectorate and 1838 annexation, Assam Company 1839, 1857 executions"
+  },
+  {
+   "title": "Memorial and burial records of David Scott (FIBIS; Assam State Archaeology, David Scott memorial)",
+   "url": "https://asiguwahaticircle.gov.in/davidscott.html",
+   "used_for": "Agent to the Governor-General on the North-East Frontier, Commissioner from 1829, death at Cherrapunji 20 August 1831"
+  },
+  {
+   "title": "Commissioner of Assam (list of office holders)",
+   "url": "https://en.wikipedia.org/wiki/Francis_Jenkins",
+   "used_for": "Francis Jenkins, Commissioner of Assam 1834–1861"
+  },
+  {
+   "title": "Dark Age of the Assamese language",
+   "url": "https://en.wikipedia.org/wiki/Dark_Age_of_the_Assamese_language",
+   "used_for": "April 1836 Bengali replaces Persian in the courts, Bengali clerks and schools, restoration (1873 in most books; February 1874 order for primary schools)"
+  },
+  {
+   "title": "Ahom Kingdom course, lesson 14 (Yandabo and the last king)",
+   "url": "content/lessons/purandar-singha-2.json",
+   "used_for": "Gomdhar Konwar 1828, Piyali Phukan 1830 (cards copied unchanged)"
+  }
+ ],
+ "review_notes": "Expanded bilingual draft, 2026-11-02. Previous unresolved notes: DRAFT for review. Not yet checked: Lower Assam's direct rule is stated without a date (some books give a formal annexation date; confirm against Gait or a SEBA/NCERT text). 1873 vs February 1874 for the restoration of Assamese is flagged in the question itself. Unit 4 copies four Ahom-course steps unchanged. Story cards use drawn art; pictures still needed. Petition year and exact Khamti attack day are omitted where disputed. Fluent Assamese editorial review remains pending.",
+ "guide": {
+  "timeline": [
+   {
+    "y": "1824",
+    "t": {
+     "en": "First Anglo-Burmese War begins",
+     "as": "প্ৰথম ইংগ-বৰ্মী যুদ্ধ আৰম্ভ"
+    }
+   },
+   {
+    "y": "1826",
+    "t": {
+     "en": "Treaty of Yandabo, 24 February",
+     "as": "ইয়াণ্ডাবু সন্ধি, ২৪ ফেব্ৰুৱাৰী"
+    }
+   },
+   {
+    "y": "1828",
+    "t": {
+     "en": "Gomdhar Konwar's rising",
+     "as": "গোমধৰ কোঁৱৰৰ বিদ্ৰোহ"
+    }
+   },
+   {
+    "y": "1830",
+    "t": {
+     "en": "Piyali Phukan hanged",
+     "as": "পিয়লি ফুকনৰ ফাঁচী"
+    }
+   },
+   {
+    "y": "1831",
+    "t": {
+     "en": "David Scott dies at Cherrapunji",
+     "as": "চেৰাপুঞ্জীত ডেভিড স্কটৰ মৃত্যু"
+    }
+   },
+   {
+    "y": "1833",
+    "t": {
+     "en": "Upper Assam given to Purandar Singha",
+     "as": "উজনি অসম পুৰন্দৰ সিংহক দিয়া হয়"
+    }
+   },
+   {
+    "y": "1836",
+    "t": {
+     "en": "Bengali becomes the court language",
+     "as": "বাংলা আদালতৰ ভাষা হয়"
+    }
+   },
+   {
+    "y": "1838",
+    "t": {
+     "en": "Upper Assam annexed",
+     "as": "উজনি অসম অধিগ্ৰহণ"
+    }
+   }
+  ]
+ },
+ "map": {
+  "box": [
+   89.7,
+   24.9,
+   96.2,
+   28.05
+  ],
+  "show": [
+   "brahmaputra",
+   "guwahati",
+   "rangpur",
+   "jorhat",
+   "sadiya",
+   "cherrapunji"
+  ]
+ },
+ "units": [
+  {
+   "id": "u1",
+   "icon": "flag",
+   "title": {
+    "en": "The British arrive",
+    "as": "ব্ৰিটিছৰ আগমন"
+   },
+   "learned": [
+    {
+     "en": "1824: the First Anglo-Burmese War began",
+     "as": "১৮২৪: প্ৰথম ইংগ-বৰ্মী যুদ্ধ আৰম্ভ হ'ল"
+    },
+    {
+     "en": "January 1825: the Burmese left Rangpur",
+     "as": "১৮২৫ৰ জানুৱাৰী: মানসকলে ৰংপুৰ এৰিলে"
+    },
+    {
+     "en": "24 February 1826: the Treaty of Yandabo",
+     "as": "২৪ ফেব্ৰুৱাৰী ১৮২৬: ইয়াণ্ডাবু সন্ধি"
+    },
+    {
+     "en": "Assam passed to the East India Company, under the Bengal Presidency",
+     "as": "অসম ইষ্ট ইণ্ডিয়া কোম্পানীৰ হাতলৈ গ'ল, বংগ প্ৰেচিডেন্সিৰ অধীনত"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "id": "bp1.u1.01",
+     "title": {
+      "en": "Saved, then ruled",
+      "as": "উদ্ধাৰ, তাৰ পিছত শাসন"
+     },
+     "text": [
+      {
+       "en": "In 1824 the First Anglo-Burmese War began. By 28 March 1824 British troops held <mark>Guwahati</mark>.",
+       "as": "১৮২৪ চনত প্ৰথম ইংগ-বৰ্মী যুদ্ধ আৰম্ভ হ'ল। ১৮২৪ চনৰ ২৮ মাৰ্চৰ ভিতৰতে ব্ৰিটিছ সৈন্যই <mark>গুৱাহাটী</mark> দখল কৰিলে।"
+      },
+      {
+       "en": "In January 1825 the Burmese left Rangpur. Almost the whole Brahmaputra valley was now in British hands.",
+       "as": "১৮২৫ চনৰ জানুৱাৰীত মানসকলে ৰংপুৰ এৰি গ'ল। প্ৰায় গোটেই ব্ৰহ্মপুত্ৰ উপত্যকা এতিয়া ব্ৰিটিছৰ হাতত।"
+      }
+     ],
+     "art": "map"
+    },
+    {
+     "type": "story",
+     "id": "bp1.u1.03",
+     "title": {
+      "en": "Yandabo, 1826",
+      "as": "ইয়াণ্ডাবু, ১৮২৬"
+     },
+     "text": [
+      {
+       "en": "On 24 February 1826 Burma signed the [[yandabo]]. It gave up all claim to Assam.",
+       "as": "১৮২৬ চনৰ ২৪ ফেব্ৰুৱাৰীত বাৰ্মাই [[yandabo]]ত চহী কৰিলে। ই অসমৰ ওপৰত সকলো দাবী এৰি দিলে।"
+      },
+      {
+       "en": "The Company expanded its control after the treaty. Lower and Upper Assam did not pass through identical arrangements.",
+       "as": "সন্ধিৰ পিছত কোম্পানীয়ে নিয়ন্ত্ৰণ বঢ়ায়। নামনি আৰু উজনি অসমৰ ব্যৱস্থা হুবহু একে নাছিল।"
+      }
+     ],
+     "art": "scroll"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I fought the British in the war beginning in 1824.",
+       "as": "১৮২৪ ত আৰম্ভ হোৱা যুদ্ধত মই ব্ৰিটিছৰ বিৰুদ্ধে যুঁজিছিলোঁ।"
+      },
+      {
+       "en": "I gave up claims to Assam at Yandabo.",
+       "as": "ইয়াণ্ডাবুত অসমৰ দাবী এৰিছিলোঁ।"
+      },
+      {
+       "en": "My historical name here is Burma.",
+       "as": "ইয়াত মোৰ ঐতিহাসিক নাম বাৰ্মা।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Burma",
+       "as": "বাৰ্মা"
+      },
+      {
+       "en": "Bhutan",
+       "as": "ভূটান"
+      },
+      {
+       "en": "Nepal",
+       "as": "নেপাল"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The First Anglo-Burmese War was between the British and Burma.",
+      "as": "প্ৰথম ইংগ-বৰ্মী যুদ্ধ ব্ৰিটিছ আৰু বাৰ্মাৰ মাজত হৈছিল।"
+     },
+     "id": "bp1.u1.02"
+    },
+    {
+     "type": "tf",
+     "id": "bp1.u1.04",
+     "s": {
+      "en": "The Treaty of Yandabo was signed in 1826.",
+      "as": "ইয়াণ্ডাবু সন্ধি ১৮২৬ চনত চহী কৰা হৈছিল।"
+     },
+     "answer": true,
+     "why": {
+      "en": "True: 24 February 1826. It ended the First Anglo-Burmese War.",
+      "as": "শুদ্ধ: ২৪ ফেব্ৰুৱাৰী ১৮২৬। ই প্ৰথম ইংগ-বৰ্মী যুদ্ধৰ অন্ত পেলাইছিল।"
+     }
+    },
+    {
+     "type": "inline",
+     "id": "bp1.u1.05",
+     "before": {
+      "en": "After 1826 Assam was joined to the",
+      "as": "১৮২৬ৰ পিছত অসমক"
+     },
+     "after": {
+      "en": "Presidency.",
+      "as": "প্ৰেচিডেন্সিৰ লগত যোগ কৰা হ'ল।"
+     },
+     "options": [
+      {
+       "en": "Bengal",
+       "as": "বংগ"
+      },
+      {
+       "en": "Bombay",
+       "as": "বোম্বে"
+      },
+      {
+       "en": "Madras",
+       "as": "মাদ্ৰাজ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Assam was first run as part of the Bengal Presidency, from Calcutta.",
+      "as": "অসমক প্ৰথমে কলিকতাৰ পৰা বংগ প্ৰেচিডেন্সিৰ অংশ হিচাপে চলোৱা হৈছিল।"
+     }
+    },
+    {
+     "type": "timeline",
+     "id": "bp1.u1.06",
+     "q": {
+      "en": "Place each event on the timeline.",
+      "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+     },
+     "anchors": [
+      {
+       "y": "1824",
+       "l": {
+        "en": "War begins",
+        "as": "যুদ্ধ আৰম্ভ"
+       }
+      },
+      {
+       "y": "1826",
+       "l": {
+        "en": "Treaty of Yandabo",
+        "as": "ইয়াণ্ডাবু সন্ধি"
+       }
+      }
+     ],
+     "items": [
+      {
+       "t": {
+        "en": "First Burmese invasion of Assam",
+        "as": "অসমত প্ৰথম মান আক্ৰমণ"
+       },
+       "slot": 0
+      },
+      {
+       "t": {
+        "en": "Burmese leave Rangpur",
+        "as": "মানে ৰংপুৰ এৰে"
+       },
+       "slot": 1
+      },
+      {
+       "t": {
+        "en": "Upper Assam given to Purandar Singha",
+        "as": "উজনি অসম পুৰন্দৰ সিংহক দিয়া হয়"
+       },
+       "slot": 2
+      }
+     ],
+     "why": {
+      "en": "1817 first Burmese invasion → 1824 war begins → January 1825 Burmese leave Rangpur → 1826 Yandabo → 1833 Purandar Singha.",
+      "as": "১৮১৭ প্ৰথম মান আক্ৰমণ → ১৮২৪ যুদ্ধ আৰম্ভ → ১৮২৫ৰ জানুৱাৰী মানে ৰংপুৰ এৰে → ১৮২৬ ইয়াণ্ডাবু → ১৮৩৩ পুৰন্দৰ সিংহ।"
+     }
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "1824",
+        "as": "১৮২৪"
+       },
+       {
+        "en": "War begins",
+        "as": "যুদ্ধ আৰম্ভ"
+       }
+      ],
+      [
+       {
+        "en": "1826",
+        "as": "১৮২৬"
+       },
+       {
+        "en": "Treaty of Yandabo",
+        "as": "ইয়াণ্ডাবু সন্ধি"
+       }
+      ],
+      [
+       {
+        "en": "1833",
+        "as": "১৮৩৩"
+       },
+       {
+        "en": "Purandar restored",
+        "as": "পুৰন্দৰৰ পুনৰ্প্ৰতিষ্ঠা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "War, treaty and tributary restoration were successive events.",
+      "as": "যুদ্ধ, সন্ধি আৰু কৰদ ৰজাৰ পুনৰ্প্ৰতিষ্ঠা ক্ৰমাগত ঘটনা।"
+     },
+     "id": "bp1.u1.supp.01"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "icon": "crown",
+   "title": {
+    "en": "David Scott's Assam",
+    "as": "ডেভিড স্কটৰ অসম"
+   },
+   "learned": [
+    {
+     "en": "David Scott was Agent to the Governor-General for the North-East Frontier",
+     "as": "ডেভিড স্কট উত্তৰ-পূব সীমান্তৰ বাবে গৱৰ্ণৰ-জেনেৰেলৰ এজেণ্ট আছিল"
+    },
+    {
+     "en": "Lower Assam was kept under the Company's direct rule",
+     "as": "নামনি অসম কোম্পানীৰ পোনপটীয়া শাসনত ৰখা হ'ল"
+    },
+    {
+     "en": "1833: Upper Assam to Purandar Singha; 1838: annexed",
+     "as": "১৮৩৩: উজনি অসম পুৰন্দৰ সিংহক; ১৮৩৮: অধিগ্ৰহণ"
+    },
+    {
+     "en": "Scott died at Cherrapunji on 20 August 1831",
+     "as": "১৮৩১ চনৰ ২০ আগষ্টত চেৰাপুঞ্জীত স্কটৰ মৃত্যু হয়"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "id": "bp1.u2.01",
+     "title": {
+      "en": "The Agent of the frontier",
+      "as": "সীমান্তৰ এজেণ্ট"
+     },
+     "text": [
+      {
+       "en": "To run the new land the Company chose [[david-scott]], its <mark>Agent to the Governor-General</mark> for the North-East Frontier.",
+       "as": "নতুন দেশখন চলাবলৈ কোম্পানীয়ে উত্তৰ-পূব সীমান্তৰ বাবে <mark>গৱৰ্ণৰ-জেনেৰেলৰ এজেণ্ট</mark> [[david-scott]]ক বাছি ল'লে।"
+      },
+      {
+       "en": "From 1829 he was also Commissioner of Revenue and Circuit for Assam.",
+       "as": "১৮২৯ চনৰ পৰা তেওঁ অসমৰ ৰাজহ আৰু চাৰ্কিট কমিচনাৰো আছিল।"
+      }
+     ],
+     "art": "embassy"
+    },
+    {
+     "type": "story",
+     "id": "bp1.u2.02",
+     "title": {
+      "en": "Two halves, two plans",
+      "as": "দুই ভাগ, দুই পৰিকল্পনা"
+     },
+     "text": [
+      {
+       "en": "Lower Assam, around Guwahati, was kept under the Company's direct rule.",
+       "as": "গুৱাহাটীৰ চাৰিওফালৰ নামনি অসম কোম্পানীৰ পোনপটীয়া শাসনত ৰখা হ'ল।"
+      },
+      {
+       "en": "In 1833 Upper Assam was given to [[purandar-singha]] as a protected state paying tribute. In <mark>1838</mark> the Company took it too.",
+       "as": "১৮৩৩ চনত উজনি অসম কৰ দিয়া সুৰক্ষিত ৰাজ্য হিচাপে [[purandar-singha]]ক দিয়া হ'ল। <mark>১৮৩৮</mark> চনত কোম্পানীয়ে সেইখনো ল'লে।"
+      }
+     ],
+     "art": "map"
+    },
+    {
+     "type": "story",
+     "id": "bp1.u2.04",
+     "title": {
+      "en": "Death in the hills",
+      "as": "পাহাৰত মৃত্যু"
+     },
+     "text": [
+      {
+       "en": "Scott died at [[cherrapunji]] in the Khasi hills on <mark>20 August 1831</mark>. A memorial to him stands there.",
+       "as": "১৮৩১ চনৰ <mark>২০ আগষ্টত</mark> খাচী পাহাৰৰ [[cherrapunji]]ত স্কটৰ মৃত্যু হয়। তাত তেওঁৰ এটা স্মৃতিস্তম্ভ আছে।"
+      }
+     ],
+     "art": "map"
+    },
+    {
+     "type": "tf",
+     "id": "bp1.u2.03",
+     "s": {
+      "en": "Upper Assam was annexed at the same time as Lower Assam, in 1826.",
+      "as": "উজনি অসম নামনি অসমৰ লগতে ১৮২৬ চনত অধিগ্ৰহণ কৰা হৈছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "False. Upper Assam was first given to Purandar Singha (1833) and annexed only in 1838.",
+      "as": "অশুদ্ধ। উজনি অসম প্ৰথমে পুৰন্দৰ সিংহক দিয়া হৈছিল (১৮৩৩) আৰু ১৮৩৮ চনতহে অধিগ্ৰহণ কৰা হৈছিল।"
+     }
+    },
+    {
+     "type": "map",
+     "id": "bp1.u2.05",
+     "q": {
+      "en": "Tap Cherrapunji, where David Scott died.",
+      "as": "ডেভিড স্কটৰ মৃত্যু হোৱা চেৰাপুঞ্জী টিপা।"
+     },
+     "target": "cherrapunji",
+     "choices": [
+      "cherrapunji",
+      "guwahati",
+      "jorhat",
+      "sadiya"
+     ],
+     "answerText": {
+      "en": "Cherrapunji",
+      "as": "চেৰাপুঞ্জী"
+     },
+     "why": {
+      "en": "Cherrapunji lies in the Khasi hills, south-west of Guwahati, in today's Meghalaya.",
+      "as": "চেৰাপুঞ্জী গুৱাহাটীৰ দক্ষিণ-পশ্চিমে, আজিৰ মেঘালয়ৰ খাচী পাহাৰত।"
+     }
+    },
+    {
+     "type": "whoami",
+     "id": "bp1.u2.06",
+     "clues": [
+      {
+       "en": "I was the Company's Agent for the North-East Frontier.",
+       "as": "মই উত্তৰ-পূব সীমান্তৰ বাবে কোম্পানীৰ এজেণ্ট আছিলোঁ।"
+      },
+      {
+       "en": "I died at Cherrapunji in 1831.",
+       "as": "১৮৩১ চনত চেৰাপুঞ্জীত মোৰ মৃত্যু হৈছিল।"
+      },
+      {
+       "en": "My first name was David.",
+       "as": "মোৰ প্ৰথম নাম ডেভিড।"
+      }
+     ],
+     "options": [
+      {
+       "en": "David Scott",
+       "as": "ডেভিড স্কট"
+      },
+      {
+       "en": "Francis Jenkins",
+       "as": "ফ্ৰান্সিছ জেনকিন্স"
+      },
+      {
+       "en": "Captain Welsh",
+       "as": "কেপ্তেইন ৱেল্‌চ"
+      },
+      {
+       "en": "Robert Bruce",
+       "as": "ৰবাৰ্ট ব্ৰুচ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "David Scott. Captain Welsh came earlier, in 1792; Jenkins came after Scott.",
+      "as": "ডেভিড স্কট। কেপ্তেইন ৱেল্‌চ আগতে, ১৭৯২ চনত আহিছিল; জেনকিন্স স্কটৰ পিছত আহিছিল।"
+     }
+    },
+    {
+     "type": "match",
+     "id": "bp1.u2.07",
+     "q": {
+      "en": "Tap the matching pairs.",
+      "as": "যোৰাবোৰ মিলোৱা।"
+     },
+     "pairs": [
+      [
+       {
+        "en": "David Scott",
+        "as": "ডেভিড স্কট"
+       },
+       {
+        "en": "Agent for the North-East Frontier",
+        "as": "উত্তৰ-পূব সীমান্তৰ এজেণ্ট"
+       }
+      ],
+      [
+       {
+        "en": "Purandar Singha",
+        "as": "পুৰন্দৰ সিংহ"
+       },
+       {
+        "en": "Upper Assam, 1833–1838",
+        "as": "উজনি অসম, ১৮৩৩–১৮৩৮"
+       }
+      ],
+      [
+       {
+        "en": "Cherrapunji",
+        "as": "চেৰাপুঞ্জী"
+       },
+       {
+        "en": "Where Scott died",
+        "as": "স্কটৰ মৃত্যুৰ ঠাই"
+       }
+      ],
+      [
+       {
+        "en": "1838",
+        "as": "১৮৩৮"
+       },
+       {
+        "en": "Upper Assam annexed",
+        "as": "উজনি অসম অধিগ্ৰহণ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Scott ran Assam for the Company; Purandar held Upper Assam from 1833 until it was annexed in 1838.",
+      "as": "স্কটে কোম্পানীৰ হৈ অসম চলাইছিল; পুৰন্দৰে ১৮৩৩ৰ পৰা ১৮৩৮ ত অধিগ্ৰহণলৈকে উজনি অসম ধৰি ৰাখিছিল।"
+     }
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Scott died in the Khasi hills at",
+      "as": "খাচী পাহাৰত স্কটৰ মৃত্যু হোৱা ঠাই"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Cherrapunji",
+     "asOptions": [
+      "চেৰাপুঞ্জী",
+      "যোৰহাট",
+      "শদিয়া",
+      "ৰংপুৰ"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Cherrapunji, 1831.",
+      "as": "চেৰাপুঞ্জী, ১৮৩১।"
+     },
+     "id": "bp1.u2.supp.01"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "icon": "star",
+   "title": {
+    "en": "A new court language",
+    "as": "আদালতৰ নতুন ভাষা"
+   },
+   "learned": [
+    {
+     "en": "Francis Jenkins was Commissioner of Assam, 1834–1861",
+     "as": "ফ্ৰান্সিছ জেনকিন্স ১৮৩৪–১৮৬১ অসমৰ কমিচনাৰ আছিল"
+    },
+    {
+     "en": "April 1836: Bengali replaced Persian as the court language",
+     "as": "১৮৩৬ৰ এপ্ৰিল: আদালতৰ ভাষা হিচাপে বাংলাই ফাৰ্চীৰ ঠাই ল'লে"
+    },
+    {
+     "en": "Bengali also became the language of the schools",
+     "as": "বাংলা বিদ্যালয়ৰো ভাষা হ'ল"
+    },
+    {
+     "en": "Assamese came back in 1873, as most books say",
+     "as": "বেছিভাগ পুথি অনুসৰি ১৮৭৩ চনত অসমীয়া ঘূৰি আহিল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "id": "bp1.u3.01",
+     "title": {
+      "en": "The long-serving Commissioner",
+      "as": "দীঘলীয়া কালৰ কমিচনাৰ"
+     },
+     "text": [
+      {
+       "en": "Later, Francis Jenkins served as Commissioner of Assam from 1834 to 1861.",
+       "as": "পিছলৈ ফ্ৰান্সিছ জেংকিন্সে ১৮৩৪ৰ পৰা ১৮৬১ লৈ অসমৰ কমিচনাৰ হিচাপে কাম কৰে।"
+      }
+     ],
+     "art": "embassy"
+    },
+    {
+     "type": "story",
+     "id": "bp1.u3.03",
+     "title": {
+      "en": "Bengali in the courts",
+      "as": "আদালতত বাংলা"
+     },
+     "text": [
+      {
+       "en": "In April <mark>1836</mark> Bengali replaced Persian as the language of the courts in Assam. It became the language of the schools too.",
+       "as": "১৮৩৬ চনৰ এপ্ৰিলত অসমৰ আদালতত ফাৰ্চীৰ ঠাইত <mark>বাংলা</mark> ভাষা চলিল। বিদ্যালয়তো বাংলাই ভাষা হ'ল।"
+      },
+      {
+       "en": "Most clerks the British brought were Bengalis. Assamese lost its place in offices and classrooms.",
+       "as": "ব্ৰিটিছে অনা বেছিভাগ কেৰাণী বঙালী আছিল। কাৰ্যালয় আৰু শ্ৰেণীকোঠাত অসমীয়াই নিজৰ ঠাই হেৰুৱালে।"
+      }
+     ],
+     "art": "scroll"
+    },
+    {
+     "type": "story",
+     "id": "bp1.u3.05",
+     "title": {
+      "en": "Assamese comes back",
+      "as": "অসমীয়াৰ পুনৰাগমন"
+     },
+     "text": [
+      {
+       "en": "After years of protest Assamese returned as the language of schools and offices in the Assam valley. Exams give the year as <mark>1873</mark>.",
+       "as": "বহু বছৰৰ প্ৰতিবাদৰ পিছত অসম উপত্যকাৰ বিদ্যালয় আৰু কাৰ্যালয়ত অসমীয়া ঘূৰি আহিল। পৰীক্ষাত চনটো <mark>১৮৭৩</mark> বুলি দিয়া হয়।"
+      },
+      {
+       "en": "The fight to bring it back is told in the lessons on the Assamese awakening.",
+       "as": "ইয়াক ঘূৰাই অনাৰ সংগ্ৰামৰ কথা অসমীয়া জাগৰণৰ পাঠবোৰত আছে।"
+      }
+     ],
+     "art": "calendar"
+    },
+    {
+     "type": "whoami",
+     "id": "bp1.u3.02",
+     "clues": [
+      {
+       "en": "I became Commissioner of Assam in 1834.",
+       "as": "১৮৩৪ চনত মই অসমৰ কমিচনাৰ হৈছিলোঁ।"
+      },
+      {
+       "en": "I held the post until 1861.",
+       "as": "১৮৬১ লৈকে মই এই পদত আছিলোঁ।"
+      },
+      {
+       "en": "My first name was Francis.",
+       "as": "মোৰ প্ৰথম নাম ফ্ৰান্সিছ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Francis Jenkins",
+       "as": "ফ্ৰান্সিছ জেনকিন্স"
+      },
+      {
+       "en": "David Scott",
+       "as": "ডেভিড স্কট"
+      },
+      {
+       "en": "Charles Holroyd",
+       "as": "চাৰ্লছ হলৰয়ড"
+      },
+      {
+       "en": "Moffatt Mills",
+       "as": "মফাট মিলছ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Francis Jenkins, Commissioner of Assam for 27 years.",
+      "as": "ফ্ৰান্সিছ জেনকিন্স, ২৭ বছৰ অসমৰ কমিচনাৰ।"
+     }
+    },
+    {
+     "type": "fill",
+     "id": "bp1.u3.04",
+     "before": {
+      "en": "In 1836 the court language of Assam became",
+      "as": "১৮৩৬ চনত অসমৰ আদালতৰ ভাষা হ'ল"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Bengali",
+     "asOptions": [
+      "বাংলা",
+      "অসমীয়া",
+      "ফাৰ্চী",
+      "ইংৰাজী"
+     ],
+     "asAnswer": 0,
+     "answerText": {
+      "en": "Bengali",
+      "as": "বাংলা"
+     },
+     "why": {
+      "en": "Bengali, in place of Persian.",
+      "as": "ফাৰ্চীৰ ঠাইত বাংলা।"
+     }
+    },
+    {
+     "type": "tf",
+     "id": "bp1.u3.06",
+     "s": {
+      "en": "In 1836 Bengali took the place of Persian as the court language of Assam.",
+      "as": "১৮৩৬ চনত অসমৰ আদালতৰ ভাষা হিচাপে বাংলাই ফাৰ্চীৰ ঠাই লৈছিল।"
+     },
+     "answer": true,
+     "why": {
+      "en": "True. Assamese was pushed out of schools and offices at the same time, which is why many books say Bengali 'replaced Assamese'.",
+      "as": "শুদ্ধ। একে সময়তে বিদ্যালয় আৰু কাৰ্যালয়ৰ পৰা অসমীয়া আঁতৰ হ'ল, সেয়ে বহু পুথিত বাংলাই 'অসমীয়াৰ ঠাই ল'লে' বুলি লিখা আছে।"
+     }
+    },
+    {
+     "type": "timeline",
+     "id": "bp1.u3.07",
+     "anchors": [
+      {
+       "y": "1836",
+       "l": {
+        "en": "Bengali policy",
+        "as": "বাংলা ভাষাৰ নীতি"
+       }
+      },
+      {
+       "y": "1874",
+       "l": {
+        "en": "Separate Assam",
+        "as": "পৃথক অসম"
+       }
+      }
+     ],
+     "items": [
+      {
+       "t": {
+        "en": "Yandabo, 1826",
+        "as": "ইয়াণ্ডাবু, ১৮২৬"
+       },
+       "slot": 0
+      },
+      {
+       "t": {
+        "en": "Restoration convention, 1873",
+        "as": "পুনৰ্প্ৰতিষ্ঠাৰ প্ৰচলিত চন, ১৮৭৩"
+       },
+       "slot": 1
+      },
+      {
+       "t": {
+        "en": "Jonaki, 1889",
+        "as": "জোনাকী, ১৮৮৯"
+       },
+       "slot": 2
+      }
+     ],
+     "why": {
+      "en": "1826 → 1836 → 1873 → 1874 → 1889.",
+      "as": "১৮২৬ → ১৮৩৬ → ১৮৭৩ → ১৮৭৪ → ১৮৮৯।"
+     }
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "1836",
+        "as": "১৮৩৬"
+       },
+       {
+        "en": "Bengali policy",
+        "as": "বাংলা ভাষাৰ নীতি"
+       }
+      ],
+      [
+       {
+        "en": "1873",
+        "as": "১৮৭৩"
+       },
+       {
+        "en": "Conventional restoration year",
+        "as": "পুনৰ্প্ৰতিষ্ঠাৰ প্ৰচলিত চন"
+       }
+      ],
+      [
+       {
+        "en": "1889",
+        "as": "১৮৮৯"
+       },
+       {
+        "en": "Jonaki begins",
+        "as": "জোনাকী আৰম্ভ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Language policy, restoration and literary publishing have separate dates.",
+      "as": "ভাষা নীতি, পুনৰ্প্ৰতিষ্ঠা আৰু সাহিত্য প্ৰকাশৰ চন বেলেগ।"
+     },
+     "id": "bp1.u3.supp.01"
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "icon": "hands",
+   "title": {
+    "en": "The first risings",
+    "as": "প্ৰথম বিদ্ৰোহবোৰ"
+   },
+   "learned": [
+    {
+     "en": "1828: nobles crowned Gomdhar Konwar and rose against the British",
+     "as": "১৮২৮: ডাঙৰীয়াসকলে গোমধৰ কোঁৱৰক ৰজা পাতি ব্ৰিটিছৰ বিৰুদ্ধে উঠিল"
+    },
+    {
+     "en": "It was the first armed rising against British rule in Assam",
+     "as": "ই অসমত ব্ৰিটিছ শাসনৰ বিৰুদ্ধে প্ৰথম সশস্ত্ৰ বিদ্ৰোহ"
+    },
+    {
+     "en": "1830: Piyali Phukan and Jiuram Dulia Baruah were hanged",
+     "as": "১৮৩০: পিয়লি ফুকন আৰু জীউৰাম দুলীয়া বৰুৱাক ফাঁচী দিয়া হ'ল"
+    },
+    {
+     "en": "1838: the last Ahom king was removed",
+     "as": "১৮৩৮: শেষ আহোম ৰজাক আঁতৰোৱা হ'ল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "A prince crowned in revolt",
+      "as": "বিদ্ৰোহত অভিষিক্ত কোঁৱৰ"
+     },
+     "text": [
+      {
+       "en": "The Burmese were gone, but the British stayed. [[david-scott]] ran Assam. In <mark>1828</mark> Ahom nobles crowned [[gomdhar-konwar]] near Jorhat and marched on Rangpur.",
+       "as": "মান গ'ল, কিন্তু ব্ৰিটিছ ৰৈ গ'ল। [[david-scott]]ই অসম চলালে। <mark>১৮২৮</mark> চনত আহোম বিষয়াসকলে যোৰহাটৰ ওচৰত [[gomdhar-konwar]]ক অভিষেক কৰি ৰংপুৰলৈ আগবাঢ়িল।"
+      },
+      {
+       "en": "British troops beat them, and Gomdhar was captured and banished. It was the <mark>first armed rising against British rule</mark> in Assam.",
+       "as": "ব্ৰিটিছ সৈন্যই তেওঁলোকক হৰুৱালে, আৰু গোমধৰক ধৰি নিৰ্বাসন দিয়া হ'ল। এয়া অসমত <mark>ব্ৰিটিছ শাসনৰ বিৰুদ্ধে প্ৰথম সশস্ত্ৰ বিদ্ৰোহ</mark>।"
+      }
+     ],
+     "id": "bp1.u4.01",
+     "art": "scroll"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Two at the gallows",
+      "as": "ফাঁচীকাঠত দুজন"
+     },
+     "text": [
+      {
+       "en": "In <mark>1830</mark> a wider plot to drive out the British was discovered. Its leaders, [[piyali-phukan]] (Badan Chandra's son) and <mark>Jiuram Dulia Baruah</mark>, were hanged.",
+       "as": "<mark>১৮৩০</mark> চনত ব্ৰিটিছক খেদাৰ এটা ডাঙৰ ষড়যন্ত্ৰ ধৰা পৰিল। ইয়াৰ নেতা [[piyali-phukan]] (বদনচন্দ্ৰৰ পুত্ৰ) আৰু <mark>জীউৰাম দুলীয়া বৰুৱা</mark>ক ফাঁচী দিয়া হ'ল।"
+      }
+     ],
+     "id": "bp1.u4.03",
+     "art": "scroll"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "Nobles crowned me in 1828.",
+       "as": "১৮২৮ চনত বিষয়াসকলে মোক ৰজা পাতিছিল।"
+      },
+      {
+       "en": "I rose against the British.",
+       "as": "মই ব্ৰিটিছৰ বিৰুদ্ধে উঠিছিলোঁ।"
+      },
+      {
+       "en": "I was captured and banished.",
+       "as": "মোক ধৰি নিৰ্বাসন দিয়া হৈছিল।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Gomdhar Konwar",
+       "as": "গোমধৰ কোঁৱৰ"
+      },
+      {
+       "en": "Piyali Phukan",
+       "as": "পিয়লি ফুকন"
+      },
+      {
+       "en": "Purandar Singha",
+       "as": "পুৰন্দৰ সিংহ"
+      },
+      {
+       "en": "Jogeswar Singha",
+       "as": "যোগেশ্বৰ সিংহ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Gomdhar Konwar.",
+      "as": "গোমধৰ কোঁৱৰ।"
+     },
+     "id": "bp1.u4.02"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Piyali Phukan was the son of Badan Chandra Borphukan.",
+      "as": "পিয়লি ফুকন বদনচন্দ্ৰ বৰফুকনৰ পুত্ৰ আছিল।"
+     },
+     "answer": true,
+     "why": {
+      "en": "True: the father brought the Burmese in; the son died fighting the British.",
+      "as": "শুদ্ধ: পিতৃয়ে মান আনিছিল; পুত্ৰই ব্ৰিটিছৰ বিৰুদ্ধে যুঁজি প্ৰাণ দিলে।"
+     },
+     "id": "bp1.u4.04"
+    },
+    {
+     "type": "order",
+     "id": "bp1.u4.05",
+     "q": {
+      "en": "Put these in order.",
+      "as": "এইবোৰ ক্ৰম অনুসৰি সজোৱা।"
+     },
+     "items": [
+      {
+       "en": "Treaty of Yandabo",
+       "as": "ইয়াণ্ডাবু সন্ধি"
+      },
+      {
+       "en": "Gomdhar Konwar's rising",
+       "as": "গোমধৰ কোঁৱৰৰ বিদ্ৰোহ"
+      },
+      {
+       "en": "Piyali Phukan hanged",
+       "as": "পিয়লি ফুকনৰ ফাঁচী"
+      },
+      {
+       "en": "Upper Assam annexed",
+       "as": "উজনি অসম অধিগ্ৰহণ"
+      }
+     ],
+     "why": {
+      "en": "1826 Yandabo → 1828 Gomdhar → 1830 Piyali Phukan → 1838 annexation.",
+      "as": "১৮২৬ ইয়াণ্ডাবু → ১৮২৮ গোমধৰ → ১৮৩০ পিয়লি ফুকন → ১৮৩৮ অধিগ্ৰহণ।"
+     }
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Gomdhar Konwar",
+        "as": "গোমধৰ কোঁৱৰ"
+       },
+       {
+        "en": "1828 rising",
+        "as": "১৮২৮ৰ বিদ্ৰোহ"
+       }
+      ],
+      [
+       {
+        "en": "Piyali Phukan",
+        "as": "পিয়লী ফুকন"
+       },
+       {
+        "en": "1830 execution",
+        "as": "১৮৩০ৰ ফাঁচী"
+       }
+      ],
+      [
+       {
+        "en": "Maniram Dewan",
+        "as": "মণিৰাম দেৱান"
+       },
+       {
+        "en": "1858 execution",
+        "as": "১৮৫৮ৰ ফাঁচী"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Do not confuse the two Piyalis or move Maniram into 1830.",
+      "as": "দুজন পিয়লীক খেলিমেলি নকৰিবা বা মণিৰামক ১৮৩০ লৈ নিনিবা।"
+     },
+     "id": "bp1.u4.supp.01"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The Ahom prince crowned in the 1828 rising was Gomdhar",
+      "as": "১৮২৮ৰ বিদ্ৰোহত অভিষিক্ত আহোম কোঁৱৰ আছিল গোমধৰ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Konwar",
+     "asOptions": [
+      "কোঁৱৰ",
+      "দেৱান",
+      "ফুকন",
+      "ব্ৰুচ"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Gomdhar Konwar led an early anti-British rising.",
+      "as": "গোমধৰ কোঁৱৰে প্ৰাৰম্ভিক ব্ৰিটিছবিৰোধী বিদ্ৰোহৰ নেতৃত্ব দিছিল।"
+     },
+     "id": "bp1.u4.supp.02"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Lesson test",
+   "as": "পাঠৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "type": "tf",
+    "s": {
+     "en": "Gomdhar Konwar's revolt of 1828 was against the Burmese.",
+     "as": "১৮২৮ চনৰ গোমধৰ কোঁৱৰৰ বিদ্ৰোহ মানৰ বিৰুদ্ধে আছিল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "False. Against the British.",
+     "as": "অশুদ্ধ। ব্ৰিটিছৰ বিৰুদ্ধে।"
+    },
+    "id": "bp1.test.01"
+   },
+   {
+    "type": "inline",
+    "id": "bp1.test.02",
+    "options": [
+     {
+      "en": "1 only",
+      "as": "কেৱল ১"
+     },
+     {
+      "en": "2 only",
+      "as": "কেৱল ২"
+     },
+     {
+      "en": "Both 1 and 2",
+      "as": "১ আৰু ২ দুয়োটা"
+     },
+     {
+      "en": "Neither 1 nor 2",
+      "as": "১ বা ২ কোনোটো নহয়"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "1 only. Upper Assam was annexed in 1838, after Purandar Singha's years as a protected king.",
+     "as": "কেৱল ১। পুৰন্দৰ সিংহৰ সুৰক্ষিত ৰাজত্বৰ পিছত ১৮৩৮ চনত উজনি অসম অধিগ্ৰহণ কৰা হৈছিল।"
+    },
+    "before": {
+     "en": "Consider the statements:<br>1. David Scott died at Cherrapunji in 1831.<br>2. Upper Assam was annexed in 1826.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা: <br>১. ১৮৩১ চনত চেৰাপুঞ্জীত ডেভিড স্কটৰ মৃত্যু হৈছিল। <br>২. ১৮২৬ চনত উজনি অসম অধিগ্ৰহণ কৰা হৈছিল। <br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
+   },
+   {
+    "type": "map",
+    "id": "bp1.test.03",
+    "q": {
+     "en": "Tap Cherrapunji.",
+     "as": "চেৰাপুঞ্জী টিপা।"
+    },
+    "target": "cherrapunji",
+    "choices": [
+     "cherrapunji",
+     "guwahati",
+     "sadiya",
+     "rangpur"
+    ],
+    "answerText": {
+     "en": "Cherrapunji",
+     "as": "চেৰাপুঞ্জী"
+    },
+    "why": {
+     "en": "Cherrapunji, in the Khasi hills, where David Scott died in 1831.",
+     "as": "খাচী পাহাৰৰ চেৰাপুঞ্জী, য'ত ১৮৩১ চনত ডেভিড স্কটৰ মৃত্যু হৈছিল।"
+    }
+   },
+   {
+    "type": "fill",
+    "id": "bp1.test.04",
+    "before": {
+     "en": "The treaty that gave Assam to the British was signed at",
+     "as": "অসম ব্ৰিটিছক দিয়া সন্ধিখন চহী হৈছিল"
+    },
+    "after": {
+     "en": ".",
+     "as": "ত।"
+    },
+    "answer": "Yandabo",
+    "asOptions": [
+     "ইয়াণ্ডাবু",
+     "গুৱাহাটী",
+     "কলিকতা",
+     "আভা"
+    ],
+    "asAnswer": 0,
+    "answerText": {
+     "en": "Yandabo",
+     "as": "ইয়াণ্ডাবু"
+    },
+    "why": {
+     "en": "Yandabo, near Ava in Burma, on 24 February 1826.",
+     "as": "বাৰ্মাৰ আভাৰ ওচৰৰ ইয়াণ্ডাবুত, ২৪ ফেব্ৰুৱাৰী ১৮২৬ ত।"
+    }
+   },
+   {
+    "type": "tf",
+    "id": "bp1.test.05",
+    "s": {
+     "en": "Francis Jenkins was Commissioner of Assam before David Scott.",
+     "as": "ফ্ৰান্সিছ জেনকিন্স ডেভিড স্কটৰ আগতে অসমৰ কমিচনাৰ আছিল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "False. Scott came first (died 1831); Jenkins was Commissioner from 1834 to 1861.",
+     "as": "অশুদ্ধ। স্কট আগতে আছিল (মৃত্যু ১৮৩১); জেনকিন্স ১৮৩৪ৰ পৰা ১৮৬১ লৈকে কমিচনাৰ আছিল।"
+    }
+   },
+   {
+    "type": "timeline",
+    "id": "bp1.test.06",
+    "q": {
+     "en": "Place each event on the timeline.",
+     "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+    },
+    "anchors": [
+     {
+      "y": "1826",
+      "l": {
+       "en": "Treaty of Yandabo",
+       "as": "ইয়াণ্ডাবু সন্ধি"
+      }
+     },
+     {
+      "y": "1838",
+      "l": {
+       "en": "Upper Assam annexed",
+       "as": "উজনি অসম অধিগ্ৰহণ"
+      }
+     }
+    ],
+    "items": [
+     {
+      "t": {
+       "en": "British take Guwahati",
+       "as": "ব্ৰিটিছে গুৱাহাটী লয়"
+      },
+      "slot": 0
+     },
+     {
+      "t": {
+       "en": "Bengali becomes the court language",
+       "as": "বাংলা আদালতৰ ভাষা হয়"
+      },
+      "slot": 1
+     },
+     {
+      "t": {
+       "en": "Assamese restored",
+       "as": "অসমীয়া পুনৰ প্ৰতিষ্ঠা"
+      },
+      "slot": 2
+     }
+    ],
+    "why": {
+     "en": "1824 Guwahati → 1826 Yandabo → 1836 Bengali → 1838 annexation → 1873 Assamese restored.",
+     "as": "১৮২৪ গুৱাহাটী → ১৮২৬ ইয়াণ্ডাবু → ১৮৩৬ বাংলা → ১৮৩৮ অধিগ্ৰহণ → ১৮৭৩ অসমীয়া পুনৰ প্ৰতিষ্ঠা।"
+    }
+   },
+   {
+    "type": "inline",
+    "id": "bp1.test.07",
+    "options": [
+     {
+      "en": "Persian",
+      "as": "ফাৰ্চী"
+     },
+     {
+      "en": "Assamese",
+      "as": "অসমীয়া"
+     },
+     {
+      "en": "English",
+      "as": "ইংৰাজী"
+     },
+     {
+      "en": "Sanskrit",
+      "as": "সংস্কৃত"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Persian was the old court language. Assamese was pushed out of schools and offices at the same time, a common trap.",
+     "as": "ফাৰ্চী আছিল পুৰণি আদালতৰ ভাষা। একে সময়তে বিদ্যালয় আৰু কাৰ্যালয়ৰ পৰা অসমীয়া আঁতৰ হৈছিল, এইটো এটা সাধাৰণ ফান্দ।"
+    },
+    "before": {
+     "en": "In 1836 Bengali replaced which language in the courts of Assam?",
+     "as": "১৮৩৬ চনত অসমৰ আদালতত বাংলাই কোন ভাষাৰ ঠাই লৈছিল?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
+   }
+  ]
+ },
+ "origin_course": "british-period",
+ "origin_no": 1
+}

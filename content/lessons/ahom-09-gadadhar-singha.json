@@ -1,8 +1,8 @@
 {
  "id": "ahom-09-gadadhar-singha",
- "course": "ahom-kingdom",
- "no": 9,
- "version": 1,
+ "course": "assam-history",
+ "no": 31,
+ "version": 2,
  "eyebrow": {
   "en": "The Ahom Kingdom",
   "as": "আহোম ৰাজ্য"
@@ -212,6 +212,25 @@
      "id": "ak9.gbr.u2.02"
     },
     {
+     "type": "story",
+     "art": "scroll",
+     "title": {
+      "en": "The end of the kingmakers",
+      "as": "ৰজা-নিৰ্মাতাৰ অন্ত"
+     },
+     "text": [
+      {
+       "en": "Plot after plot was found and crushed: Phukans dismissed, ringleaders executed, even a new Burhagohain put to death for stealing cattle.",
+       "as": "এটাৰ পিছত এটা ষড়যন্ত্ৰ ধৰা পৰিল আৰু দমন কৰা হ'ল: ফুকন পদচ্যুত, নায়কৰ প্ৰাণদণ্ড, আনকি গৰু চুৰৰ বাবে নতুন বুঢ়াগোহাঁইৰো প্ৰাণদণ্ড।"
+      },
+      {
+       "en": "Gait sums it up: in a short time he broke the nobles' power and made the king supreme again.",
+       "as": "গেইটে এষাৰিতে কৈছে: অলপ সময়ৰ ভিতৰতে তেওঁ বিষয়াৰ ক্ষমতা ভাঙি ৰজাক পুনৰ সৰ্বোচ্চ কৰিলে।"
+      }
+     ],
+     "id": "ak9.gds.u1.03"
+    },
+    {
      "type": "whoami",
      "clues": [
       {
@@ -294,25 +313,6 @@
      "id": "ak9.gds.u1.02"
     },
     {
-     "type": "story",
-     "art": "scroll",
-     "title": {
-      "en": "The end of the kingmakers",
-      "as": "ৰজা-নিৰ্মাতাৰ অন্ত"
-     },
-     "text": [
-      {
-       "en": "Plot after plot was found and crushed: Phukans dismissed, ringleaders executed, even a new Burhagohain put to death for stealing cattle.",
-       "as": "এটাৰ পিছত এটা ষড়যন্ত্ৰ ধৰা পৰিল আৰু দমন কৰা হ'ল: ফুকন পদচ্যুত, নায়কৰ প্ৰাণদণ্ড, আনকি গৰু চুৰৰ বাবে নতুন বুঢ়াগোহাঁইৰো প্ৰাণদণ্ড।"
-      },
-      {
-       "en": "Gait sums it up: in a short time he broke the nobles' power and made the king supreme again.",
-       "as": "গেইটে এষাৰিতে কৈছে: অলপ সময়ৰ ভিতৰতে তেওঁ বিষয়াৰ ক্ষমতা ভাঙি ৰজাক পুনৰ সৰ্বোচ্চ কৰিলে।"
-      }
-     ],
-     "id": "ak9.gds.u1.03"
-    },
-    {
      "type": "tf",
      "s": {
       "en": "Gadadhar Singha was the first Tungkhungia king.",
@@ -324,6 +324,69 @@
       "as": "শুদ্ধ।"
      },
      "id": "ak9.gds.u1.04"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "My father was Gobar Roja. · I hid for years. · I founded the Tungkhungia line.",
+      "as": "মোৰ পিতৃ গোবৰ ৰজা। · মই বহু বছৰ লুকাই আছিলোঁ। · মই তুংখুঙীয়া বংশৰ প্ৰতিষ্ঠাপক।"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Gadapani (Gadadhar Singha)",
+       "as": "গদাপাণি (গদাধৰ সিংহ)"
+      },
+      {
+       "en": "Sulikphaa",
+       "as": "চুলিকফা"
+      },
+      {
+       "en": "Sujinphaa",
+       "as": "চুজিনফা"
+      },
+      {
+       "en": "Rudra Singha",
+       "as": "ৰুদ্ৰ সিংহ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Gadapani.",
+      "as": "গদাপাণি।"
+     },
+     "id": "ahom-09-gadadhar-singha.u1.supp.4"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "My father was Gobar Roja. · I hid for years. · I founded the Tungkhungia line.",
+      "as": "মোৰ পিতৃ গোবৰ ৰজা। · মই বহু বছৰ লুকাই আছিলোঁ। · মই তুংখুঙীয়া বংশৰ প্ৰতিষ্ঠাপক।"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Gadapani (Gadadhar Singha)",
+     "answerText": {
+      "en": "Gadapani (Gadadhar Singha)",
+      "as": "গদাপাণি (গদাধৰ সিংহ)"
+     },
+     "asOptions": [
+      "গদাপাণি (গদাধৰ সিংহ)",
+      "চুলিকফা",
+      "চুজিনফা",
+      "ৰুদ্ৰ সিংহ"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Gadapani.",
+      "as": "গদাপাণি।"
+     },
+     "id": "ahom-09-gadadhar-singha.u1.supp.5"
     }
    ]
   },
@@ -353,38 +416,6 @@
     }
    ],
    "steps": [
-    {
-     "type": "mcq",
-     "guess": true,
-     "id": "ak9.gds.g1",
-     "q": {
-      "en": "Guwahati had been handed to the Mughals in 1679. What do you think Gadadhar did about it?",
-      "as": "১৬৭৯ চনত গুৱাহাটী মোগলক দিয়া হৈছিল। তোমাৰ অনুমানত গদাধৰে কি কৰিলে?"
-     },
-     "options": [
-      {
-       "en": "Left it to them",
-       "as": "সিহঁতকে এৰি দিলে"
-      },
-      {
-       "en": "Sent an army to take it back",
-       "as": "ঘূৰাই আনিবলৈ সৈন্য পঠালে"
-      },
-      {
-       "en": "Bought it back",
-       "as": "কিনি আনিলে"
-      },
-      {
-       "en": "Moved his capital there",
-       "as": "তালৈ ৰাজধানী নিলে"
-      }
-     ],
-     "answer": 1,
-     "why": {
-      "en": "His first act: an army to Guwahati. At Itakhuli in 1682 the Mughals were driven out for good.",
-      "as": "তেওঁৰ প্ৰথম কাম: গুৱাহাটীলৈ সৈন্য। ১৬৮২ চনত ইটাখুলিত মোগলক চিৰদিনৰ বাবে খেদা হ'ল।"
-     }
-    },
     {
      "type": "story",
      "img": "gadadhar-singha/itakhuli.webp",
@@ -483,6 +514,42 @@
        "as": "খেদাৰ বাট চোৱা: গুৱাহাটীৰ পৰা আহোমে মোগলক পশ্চিমে <mark>মানাহ</mark>লৈকে খেদিলে। শেষলৈকে এয়াই আহোম সীমা হৈ থাকিল।"
       }
      ]
+    },
+    {
+     "type": "inline",
+     "guess": true,
+     "id": "ak9.gds.g1",
+     "options": [
+      {
+       "en": "Left it to them",
+       "as": "সিহঁতকে এৰি দিলে"
+      },
+      {
+       "en": "Sent an army to take it back",
+       "as": "ঘূৰাই আনিবলৈ সৈন্য পঠালে"
+      },
+      {
+       "en": "Bought it back",
+       "as": "কিনি আনিলে"
+      },
+      {
+       "en": "Moved his capital there",
+       "as": "তালৈ ৰাজধানী নিলে"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "His first act: an army to Guwahati. At Itakhuli in 1682 the Mughals were driven out for good.",
+      "as": "তেওঁৰ প্ৰথম কাম: গুৱাহাটীলৈ সৈন্য। ১৬৮২ চনত ইটাখুলিত মোগলক চিৰদিনৰ বাবে খেদা হ'ল।"
+     },
+     "before": {
+      "en": "Guwahati had been handed to the Mughals in 1679. What do you think Gadadhar did about it?",
+      "as": "১৬৭৯ চনত গুৱাহাটী মোগলক দিয়া হৈছিল। তোমাৰ অনুমানত গদাধৰে কি কৰিলে?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "map",
@@ -666,6 +733,34 @@
       "as": "আহোম জয়ী হ'ল আৰু মোগল আৰু উভতি নাহিল।"
      },
      "id": "ak9.gds.u2.07"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Guwahati had been handed to the Mughals in 1679. What do you think Gadadhar did about it?",
+      "as": "১৬৭৯ চনত গুৱাহাটী মোগলক দিয়া হৈছিল। তোমাৰ অনুমানত গদাধৰে কি কৰিলে?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Sent an army to take it back",
+     "answerText": {
+      "en": "Sent an army to take it back",
+      "as": "ঘূৰাই আনিবলৈ সৈন্য পঠালে"
+     },
+     "asOptions": [
+      "সিহঁতকে এৰি দিলে",
+      "ঘূৰাই আনিবলৈ সৈন্য পঠালে",
+      "কিনি আনিলে",
+      "তালৈ ৰাজধানী নিলে"
+     ],
+     "asAnswer": 1,
+     "why": {
+      "en": "His first act: an army to Guwahati. At Itakhuli in 1682 the Mughals were driven out for good.",
+      "as": "তেওঁৰ প্ৰথম কাম: গুৱাহাটীলৈ সৈন্য। ১৬৮২ চনত ইটাখুলিত মোগলক চিৰদিনৰ বাবে খেদা হ'ল।"
+     },
+     "id": "ahom-09-gadadhar-singha.u2.supp.5"
     }
    ]
   },
@@ -715,13 +810,28 @@
      "id": "ak9.gds.u3.02"
     },
     {
-     "type": "mcq",
+     "type": "story",
+     "img": "gadadhar-singha/persecution.webp",
+     "title": {
+      "en": "A harsh persecution",
+      "as": "কঠোৰ নিৰ্যাতন"
+     },
+     "text": [
+      {
+       "en": "Many gosains were killed; the Auniati Gosain hid in a Chutia village; another was blinded. Low-caste disciples were robbed and forced to eat forbidden meat.",
+       "as": "বহু গোঁসাইক হত্যা কৰা হ'ল; আউনীআটী গোঁসাই চুতীয়া গাঁৱত লুকাল; আন এজনক অন্ধ কৰা হ'ল। নিম্নবৰ্ণৰ শিষ্যক লুট কৰা হ'ল আৰু নিষিদ্ধ মাংস খুৱাবলৈ বাধ্য কৰা হ'ল।"
+      },
+      {
+       "en": "When no one was safe any more, the king stopped it and ordered goods returned. The Jakhalabandha Gosain, who had sheltered him, was spared.",
+       "as": "যেতিয়া কোনো নিৰাপদ নোহোৱা হ'ল, ৰজাই নিৰ্যাতন বন্ধ কৰি সম্পত্তি ঘূৰাই দিবলৈ আদেশ দিলে। আশ্ৰয় দিয়া যখলাবন্ধা গোঁসাইক ৰেহাই দিয়া হৈছিল।"
+      }
+     ],
+     "id": "ak9.gds.u3.03"
+    },
+    {
+     "type": "inline",
      "guess": true,
      "id": "ak9.gds.d1",
-     "q": {
-      "en": "You are Gadadhar. Gosains claim their disciples need not fight or work, and some refused you shelter. What do you do?",
-      "as": "তুমি গদাধৰ। গোঁসাইসকলে কয় তেওঁলোকৰ শিষ্যই যুঁজিব বা কাম কৰিব নালাগে, আৰু কিছুমানে তোমাক আশ্ৰয় দিয়া নাছিল। তুমি কি কৰিবা?"
-     },
      "options": [
       {
        "en": "Leave them alone",
@@ -741,26 +851,15 @@
       "en": "He launched a harsh persecution, until no one was safe, then stopped it.",
       "as": "তেওঁ কঠোৰ নিৰ্যাতন চলালে, কোনো নিৰাপদ নোহোৱালৈকে; তাৰ পিছত বন্ধ কৰিলে।"
      },
-     "decide": true
-    },
-    {
-     "type": "story",
-     "img": "gadadhar-singha/persecution.webp",
-     "title": {
-      "en": "A harsh persecution",
-      "as": "কঠোৰ নিৰ্যাতন"
+     "decide": true,
+     "before": {
+      "en": "You are Gadadhar. Gosains claim their disciples need not fight or work, and some refused you shelter. What do you do?",
+      "as": "তুমি গদাধৰ। গোঁসাইসকলে কয় তেওঁলোকৰ শিষ্যই যুঁজিব বা কাম কৰিব নালাগে, আৰু কিছুমানে তোমাক আশ্ৰয় দিয়া নাছিল। তুমি কি কৰিবা?"
      },
-     "text": [
-      {
-       "en": "Many gosains were killed; the Auniati Gosain hid in a Chutia village; another was blinded. Low-caste disciples were robbed and forced to eat forbidden meat.",
-       "as": "বহু গোঁসাইক হত্যা কৰা হ'ল; আউনীআটী গোঁসাই চুতীয়া গাঁৱত লুকাল; আন এজনক অন্ধ কৰা হ'ল। নিম্নবৰ্ণৰ শিষ্যক লুট কৰা হ'ল আৰু নিষিদ্ধ মাংস খুৱাবলৈ বাধ্য কৰা হ'ল।"
-      },
-      {
-       "en": "When no one was safe any more, the king stopped it and ordered goods returned. The Jakhalabandha Gosain, who had sheltered him, was spared.",
-       "as": "যেতিয়া কোনো নিৰাপদ নোহোৱা হ'ল, ৰজাই নিৰ্যাতন বন্ধ কৰি সম্পত্তি ঘূৰাই দিবলৈ আদেশ দিলে। আশ্ৰয় দিয়া যখলাবন্ধা গোঁসাইক ৰেহাই দিয়া হৈছিল।"
-      }
-     ],
-     "id": "ak9.gds.u3.03"
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "tf",
@@ -859,6 +958,33 @@
       "as": "ৰজা আৰু সত্ৰ: সন্মান, নিৰ্যাতন, শান্তি।"
      },
      "id": "ak9.gds.u3.06"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "Jayadhwaj Singha",
+      "as": "জয়ধ্বজ সিংহ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Became a Vaishnava disciple",
+     "answerText": {
+      "en": "Became a Vaishnava disciple",
+      "as": "বৈষ্ণৱ শিষ্য"
+     },
+     "asOptions": [
+      "বৈষ্ণৱ শিষ্য",
+      "সত্ৰক নিৰ্যাতন",
+      "নিৰ্যাতন বন্ধ"
+     ],
+     "asAnswer": 0,
+     "why": {
+      "en": "Kings and the satras: honour, persecution, peace.",
+      "as": "ৰজা আৰু সত্ৰ: সন্মান, নিৰ্যাতন, শান্তি।"
+     },
+     "id": "ahom-09-gadadhar-singha.u3.supp.5"
     }
    ]
   },
@@ -908,6 +1034,44 @@
      "id": "ak9.gds.u4.02"
     },
     {
+     "type": "story",
+     "img": "gadadhar-singha/naamghar.webp",
+     "title": {
+      "en": "Temples and roads",
+      "as": "মন্দিৰ আৰু আলি"
+     },
+     "text": [
+      {
+       "en": "A patron of Sakta Hinduism, he had the [[umananda]] temple built on Peacock Island at Guwahati. The earliest Ahom copper-plate land grants date from his reign.",
+       "as": "শাক্ত ধৰ্মৰ পৃষ্ঠপোষক হিচাপে তেওঁ গুৱাহাটীৰ ময়ূৰ দ্বীপত [[umananda]] মন্দিৰ সজাইছিল। আহোম ৰজাৰ আটাইতকৈ পুৰণি তাম্ৰফলক মাটিদান তেওঁৰ দিনৰ।"
+      },
+      {
+       "en": "Roads like the Dhodar Ali were made. He was famous for his strength and appetite: his favourite dish was a calf roasted in ashes.",
+       "as": "ধোদৰ আলিৰ দৰে আলি নিৰ্মাণ হ'ল। তেওঁ শক্তি আৰু খোৱাৰ বাবে বিখ্যাত আছিল: প্ৰিয় খাদ্য আছিল ছাইত পোৰা দামুৰি।"
+      }
+     ],
+     "id": "ak9.gds.u4.04"
+    },
+    {
+     "type": "story",
+     "art": "scroll",
+     "title": {
+      "en": "Remember G-I-S",
+      "as": "মনত ৰাখা গ-ই-জ"
+     },
+     "text": [
+      {
+       "en": "Gadadhar Singha in three letters, <mark>G-I-S</mark>: <b>G</b>adapani the hidden prince, <b>I</b>takhuli 1682, <b>S</b>urvey of the land.",
+       "as": "গদাধৰ সিংহ তিনিটা আখৰত, <mark>গ-ই-জ</mark>: <b>গ</b>দাপাণি, লুকাই থকা কোঁৱৰ; <b>ই</b>টাখুলি ১৬৮২; মাটি <b>জ</b>ৰীপ।"
+      },
+      {
+       "en": "He died in <mark>February 1696</mark>. His son by Joymoti became [[rudra-singha]].",
+       "as": "<mark>১৬৯৬ চনৰ ফেব্ৰুৱাৰী</mark>ত তেওঁৰ মৃত্যু হয়। জয়মতীৰ গৰ্ভৰ পুত্ৰ [[rudra-singha]] হ'ল।"
+      }
+     ],
+     "id": "ak9.gds.u5.02"
+    },
+    {
      "type": "fill",
      "before": {
       "en": "The Ahom unit of land area was the",
@@ -936,25 +1100,6 @@
      "id": "ak9.gds.u4.03"
     },
     {
-     "type": "story",
-     "img": "gadadhar-singha/naamghar.webp",
-     "title": {
-      "en": "Temples and roads",
-      "as": "মন্দিৰ আৰু আলি"
-     },
-     "text": [
-      {
-       "en": "A patron of Sakta Hinduism, he had the [[umananda]] temple built on Peacock Island at Guwahati. The earliest Ahom copper-plate land grants date from his reign.",
-       "as": "শাক্ত ধৰ্মৰ পৃষ্ঠপোষক হিচাপে তেওঁ গুৱাহাটীৰ ময়ূৰ দ্বীপত [[umananda]] মন্দিৰ সজাইছিল। আহোম ৰজাৰ আটাইতকৈ পুৰণি তাম্ৰফলক মাটিদান তেওঁৰ দিনৰ।"
-      },
-      {
-       "en": "Roads like the Dhodar Ali were made. He was famous for his strength and appetite: his favourite dish was a calf roasted in ashes.",
-       "as": "ধোদৰ আলিৰ দৰে আলি নিৰ্মাণ হ'ল। তেওঁ শক্তি আৰু খোৱাৰ বাবে বিখ্যাত আছিল: প্ৰিয় খাদ্য আছিল ছাইত পোৰা দামুৰি।"
-      }
-     ],
-     "id": "ak9.gds.u4.04"
-    },
-    {
      "type": "tf",
      "s": {
       "en": "The Umananda temple was built in Gadadhar Singha's reign.",
@@ -966,25 +1111,6 @@
       "as": "শুদ্ধ, গুৱাহাটীৰ ময়ূৰ দ্বীপত।"
      },
      "id": "ak9.gds.u4.05"
-    },
-    {
-     "type": "story",
-     "art": "scroll",
-     "title": {
-      "en": "Remember G-I-S",
-      "as": "মনত ৰাখা গ-ই-জ"
-     },
-     "text": [
-      {
-       "en": "Gadadhar Singha in three letters, <mark>G-I-S</mark>: <b>G</b>adapani the hidden prince, <b>I</b>takhuli 1682, <b>S</b>urvey of the land.",
-       "as": "গদাধৰ সিংহ তিনিটা আখৰত, <mark>গ-ই-জ</mark>: <b>গ</b>দাপাণি, লুকাই থকা কোঁৱৰ; <b>ই</b>টাখুলি ১৬৮২; মাটি <b>জ</b>ৰীপ।"
-      },
-      {
-       "en": "He died in <mark>February 1696</mark>. His son by Joymoti became [[rudra-singha]].",
-       "as": "<mark>১৬৯৬ চনৰ ফেব্ৰুৱাৰী</mark>ত তেওঁৰ মৃত্যু হয়। জয়মতীৰ গৰ্ভৰ পুত্ৰ [[rudra-singha]] হ'ল।"
-      }
-     ],
-     "id": "ak9.gds.u5.02"
     },
     {
      "type": "match",
@@ -1052,6 +1178,41 @@
       "as": "অশুদ্ধ। তেওঁ গোঁসাইক নিৰ্যাতন কৰিছিল; পুত্ৰ ৰুদ্ৰই পিছত আউনীআটী গোঁসাইক গুৰু পাতিছিল।"
      },
      "id": "ak9.gds.u5.05"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Gadadhar Singha",
+      "as": "গদাধৰ সিংহ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Father",
+       "as": "পিতৃ"
+      },
+      {
+       "en": "Mother",
+       "as": "মাতৃ"
+      },
+      {
+       "en": "Son",
+       "as": "পুত্ৰ"
+      },
+      {
+       "en": "Grandfather",
+       "as": "ককা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Rudra Singha's family.",
+      "as": "ৰুদ্ৰ সিংহৰ পৰিয়াল।"
+     },
+     "id": "ahom-09-gadadhar-singha.u4.supp.5"
     }
    ]
   }
@@ -1354,11 +1515,7 @@
     "id": "ak9.gds.test.09"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. The Battle of Itakhuli was fought in 1682.<br>2. After Itakhuli the Manas became the Ahom–Mughal border.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ইটাখুলিৰ যুদ্ধ ১৬৮২ চনত হৈছিল।<br>২. ইটাখুলিৰ পিছত মানাহ আহোম-মোগল সীমা হ'ল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -1383,7 +1540,15 @@
      "as": "দুয়োটা শুদ্ধ।"
     },
     "small": true,
-    "id": "ak9.gds.test.10"
+    "id": "ak9.gds.test.10",
+    "before": {
+     "en": "Consider the statements:<br>1. The Battle of Itakhuli was fought in 1682.<br>2. After Itakhuli the Manas became the Ahom–Mughal border.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ইটাখুলিৰ যুদ্ধ ১৬৮২ চনত হৈছিল।<br>২. ইটাখুলিৰ পিছত মানাহ আহোম-মোগল সীমা হ'ল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    },
    {
     "type": "tf",
@@ -1399,5 +1564,7 @@
     "id": "ak9.gbr.test.02"
    }
   ]
- }
+ },
+ "origin_course": "ahom-kingdom",
+ "origin_no": 9
 }

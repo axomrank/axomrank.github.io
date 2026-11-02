@@ -11,6 +11,9 @@ const sl=ms=>new Promise(r=>setTimeout(r,ms)); const $=(s,r=document)=>r.querySe
 const click=el=>el.dispatchEvent(new MouseEvent('click',{bubbles:true})); const act=()=>click($('#action')); const isAS=()=>$('#as').checked;
 async function solve(s, wrong){
   const scr=$('#screen'); const lg=isAS()?'as':'en';
+  window.autoplayIssues = window.autoplayIssues || [];
+  if (document.documentElement.scrollWidth > innerWidth + 1)
+    window.autoplayIssues.push({ id:s.id, type:s.type, lang:lg, issue:'horizontal overflow' });
   switch(s.type){
     case 'story': act(); return 'story';
     case 'mcq': case 'odd': case 'inline': case 'picture': case 'whoami':

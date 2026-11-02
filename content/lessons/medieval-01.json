@@ -1,0 +1,1403 @@
+{
+ "id": "medieval-01",
+ "course": "assam-history",
+ "no": 14,
+ "version": 1,
+ "eyebrow": {
+  "en": "Assam History · Medieval kingdoms",
+  "as": "অসমৰ ইতিহাস · মধ্যযুগৰ ৰাজ্য"
+ },
+ "king": {
+  "en": "Raids from Bengal",
+  "as": "বংগৰ পৰা অভিযান"
+ },
+ "reign": {
+  "en": "1206–1533",
+  "as": "১২০৬–১৫৩৩"
+ },
+ "portrait": "medieval-kingdoms/kamata-02.webp",
+ "map": {
+  "box": [
+   88.5,
+   23,
+   96.8,
+   28.7
+  ],
+  "show": [
+   "brahmaputra",
+   "guwahati",
+   "sadiya",
+   "dimapur",
+   "cooch-behar",
+   "karatoya",
+   "bharali",
+   "dihing",
+   "dhansiri-south"
+  ]
+ },
+ "guide": {
+  "timeline": [
+   {
+    "y": "1206",
+    "t": {
+     "en": "A march that failed · The conventional expedition year was",
+     "as": "ব্যৰ্থ হোৱা যাত্ৰা · অভিযানৰ প্ৰচলিত চন"
+    },
+    "unit": "u1"
+   },
+   {
+    "y": "1228",
+    "t": {
+     "en": "More armies from the west · Sukaphaa entered Assam in",
+     "as": "পশ্চিমৰ পৰা আৰু সৈন্য · চুকাফাৰ অসম প্ৰৱেশৰ চন"
+    },
+    "unit": "u2"
+   },
+   {
+    "y": "1257",
+    "t": {
+     "en": "Floods change a campaign · The campaign is dated",
+     "as": "বানে অভিযান সলনি কৰে · অভিযানৰ চন"
+    },
+    "unit": "u3"
+   }
+  ]
+ },
+ "sources": [
+  {
+   "title": "Source-library western Assam storyline and Gait, medieval chapters",
+   "local_source": "Assam History/research; data/assam_history.csv, KAMATA records",
+   "used_for": "1206 and 1220s frontier expeditions; names and uncertain identifications distinguished from Kanai inscription."
+  },
+  {
+   "title": "IGNCA, Rock Art in Assam report (2015)",
+   "url": "https://ignca.gov.in/rockart_2015/Rockart_AssamReport2015.pdf",
+   "used_for": "Kanai Barasi Bowa, conventional date 1206; a short inscription is not a full royal biography."
+  },
+  {
+   "title": "Gait and source-library Kamata research: Sandhya and Yuzbak",
+   "local_source": "Assam History/research; KAMATA scene records",
+   "used_for": "Conventional 1257 account and transfer to Kamata. Precise accession chronologies remain secondary reconstructions."
+  },
+  {
+   "title": "Edward Gait, A History of Assam (1906), medieval and early Ahom chapters",
+   "url": "https://ignca.gov.in/Asi_data/34806.pdf",
+   "used_for": "Retrospective narrative compared with local source-library notes. Early dynastic dates are not treated as contemporary inscriptions."
+  },
+  {
+   "title": "E. A. Gait, A History of Assam (1906), ch. V, pp. 83–95",
+   "url": "https://archive.org/details/historyofassam00gait",
+   "used_for": "Accession 1497 at Charguya, Swarga Narayan, Dihingia Raja and Bakata, 1504 Aitonia Nagas, 1510 count of the people, 1512 Habung, Chutia wars 1518–1523, heirlooms, Sadiya Khowa Gohain, Rikkhvan, Barpatra Gohain (Senglung), Kachari wars 1526–1536, Dimapur, Detsung, 1527 first Muslim invasion, Turbak 1532–33, Singiri, Sala, Duimunisila, Bharali, Karatoya, firearms, Morias, Biswa Singh 1537, Ratiman January 1539, Saka era"
+  },
+  {
+   "title": "Suhungmung",
+   "url": "https://en.wikipedia.org/wiki/Suhungmung",
+   "used_for": "First Hindu title Swarganarayan, Borpatrogohain 1527, paik count, assassination 1539"
+  },
+  {
+   "title": "Mula Gabharu",
+   "url": "https://en.wikipedia.org/wiki/Mula_Gabharu",
+   "used_for": "Wife of Phrasengmung Borgohain, died fighting Turbak's army in 1533"
+  },
+  {
+   "title": "Turbak's invasion of Assam",
+   "url": "https://en.wikipedia.org/wiki/Turbak%27s_invasion_of_Assam",
+   "used_for": "1532–33 campaign"
+  }
+ ],
+ "units": [
+  {
+   "id": "u1",
+   "icon": "star",
+   "title": {
+    "en": "A march that failed",
+    "as": "ব্যৰ্থ হোৱা যাত্ৰা"
+   },
+   "learned": [
+    {
+     "en": "The expedition leader was Bakhtiyar Khalji",
+     "as": "অভিযানৰ নেতা বখতিয়াৰ খিলজী"
+    },
+    {
+     "en": "The conventional expedition year was 1206",
+     "as": "অভিযানৰ প্ৰচলিত চন ১২০৬"
+    },
+    {
+     "en": "The intended northern destination was Tibet",
+     "as": "উত্তৰৰ লক্ষ্য গন্তব্য তিব্বত"
+    },
+    {
+     "en": "The inscription discussed here is at Kanai Barasi Bowa",
+     "as": "ইয়াত আলোচনা কৰা লিপিৰ ঠাই কাণাই বৰশী বোৱা"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Towards Tibet",
+      "as": "তিব্বতলৈ"
+     },
+     "text": [
+      {
+       "en": "[[bakhtiyar-khalji|Bakhtiyar Khalji]]’s 1206 expedition towards Tibet ended disastrously. The route crossed the north-eastern frontier; local resistance, broken communications and difficult terrain frustrated the army.",
+       "as": "[[bakhtiyar-khalji|বখতিয়াৰ খিলজী]]ৰ ১২০৬ৰ তিব্বত অভিযান বিপৰ্যয়ত শেষ হয়। উত্তৰ-পূব সীমান্তৰ এই পথত স্থানীয় প্ৰতিৰোধ, যোগাযোগৰ বিচ্ছিন্নতা আৰু দুৰ্গম ভূখণ্ডই সৈন্যক বাধা দিয়ে।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-02.webp",
+     "id": "medieval-01.u1.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "A line on rock",
+      "as": "শিলত এটা শাৰী"
+     },
+     "text": [
+      {
+       "en": "The [[kanai-barasi-bowa|Kanai Barasi Bowa]] inscription near North Guwahati records the destruction of invading Turks, conventionally dated 1206. Its brief wording does not name every leader in later retellings.",
+       "as": "উত্তৰ গুৱাহাটীৰ [[kanai-barasi-bowa|কাণাই বৰশী বোৱা]] লিপিত আক্ৰমণকাৰী তুৰ্কীৰ ধ্বংসৰ কথা আছে; প্ৰচলিত চন ১২০৬। চুটি পাঠটোত পিছৰ সকলো কাহিনীৰ নেতাৰ নাম নাই।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-03.webp",
+     "id": "medieval-01.u1.02"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Kanai Barasi Bowa inscription gives a complete biography of a named king Prithu.",
+      "as": "কাণাই বৰশী বোৱা লিপিত পৃথু নামৰ ৰজাৰ সম্পূৰ্ণ জীৱনী আছে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is a short record of invading Turks being destroyed; later identifications require separate evidence.",
+      "as": "ই আক্ৰমণকাৰী তুৰ্কীৰ ধ্বংসৰ চুটি নথি; পিছৰ চিনাক্তকৰণৰ বাবে পৃথক প্ৰমাণ লাগে।"
+     },
+     "id": "medieval-01.u1.03"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "The expedition leader was",
+        "as": "অভিযানৰ নেতা"
+       },
+       {
+        "en": "Bakhtiyar Khalji",
+        "as": "বখতিয়াৰ খিলজী"
+       }
+      ],
+      [
+       {
+        "en": "The conventional expedition year was",
+        "as": "অভিযানৰ প্ৰচলিত চন"
+       },
+       {
+        "en": "1206",
+        "as": "১২০৬"
+       }
+      ],
+      [
+       {
+        "en": "The intended northern destination was",
+        "as": "উত্তৰৰ লক্ষ্য গন্তব্য"
+       },
+       {
+        "en": "Tibet",
+        "as": "তিব্বত"
+       }
+      ],
+      [
+       {
+        "en": "The inscription discussed here is at",
+        "as": "ইয়াত আলোচনা কৰা লিপিৰ ঠাই"
+       },
+       {
+        "en": "Kanai Barasi Bowa",
+        "as": "কাণাই বৰশী বোৱা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "A chronicle’s narrative and an inscription’s wording are different evidence.",
+      "as": "বুৰঞ্জীৰ বৰ্ণনা আৰু লিপিৰ পাঠ বেলেগ প্ৰমাণ।"
+     },
+     "id": "medieval-01.u1.04"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The expedition leader was",
+      "as": "অভিযানৰ নেতা"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Bakhtiyar Khalji",
+       "as": "বখতিয়াৰ খিলজী"
+      },
+      {
+       "en": "Badaucha",
+       "as": "বদৌচা"
+      },
+      {
+       "en": "Nasiruddin Mahmud",
+       "as": "নাছিৰুদ্দিন মাহমুদ"
+      },
+      {
+       "en": "Sankardev",
+       "as": "শংকৰদেৱ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The expedition leader was Bakhtiyar Khalji.",
+      "as": "অভিযানৰ নেতা বখতিয়াৰ খিলজী।"
+     },
+     "id": "medieval-01.u1.05"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I led the failed northern expedition of 1206.",
+       "as": "মই ১২০৬ৰ ব্যৰ্থ উত্তৰ অভিযানৰ নেতৃত্ব দিছিলোঁ।"
+      },
+      {
+       "en": "My intended destination was Tibet.",
+       "as": "মোৰ লক্ষ্য গন্তব্য তিব্বত আছিল।"
+      },
+      {
+       "en": "My name includes Bakhtiyar.",
+       "as": "মোৰ নামত বখতিয়াৰ আছে।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Bakhtiyar Khalji",
+       "as": "বখতিয়াৰ খিলজী"
+      },
+      {
+       "en": "Turbak",
+       "as": "তুৰ্বক"
+      },
+      {
+       "en": "Mir Jumla",
+       "as": "মীৰজুমলা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "This was centuries before Mir Jumla’s 1662 invasion.",
+      "as": "ই মীৰজুমলাৰ ১৬৬২ৰ আক্ৰমণৰ বহু শতিকা আগৰ।"
+     },
+     "id": "medieval-01.u1.06"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The conventional expedition year was",
+      "as": "অভিযানৰ প্ৰচলিত চন"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "1206",
+     "asOptions": [
+      "১৮৩২",
+      "১৮৩৫",
+      "১২০৬",
+      "১৪৯৮"
+     ],
+     "asAnswer": 2,
+     "answerText": {
+      "en": "1206",
+      "as": "১২০৬"
+     },
+     "why": {
+      "en": "The conventional expedition year was 1206.",
+      "as": "অভিযানৰ প্ৰচলিত চন ১২০৬।"
+     },
+     "id": "medieval-01.u1.07"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "icon": "star",
+   "title": {
+    "en": "More armies from the west",
+    "as": "পশ্চিমৰ পৰা আৰু সৈন্য"
+   },
+   "learned": [
+    {
+     "en": "The Khalji associated with the later 1220 s campaigns was Iwaz Khalji",
+     "as": "১২২০ৰ দশকৰ পিছৰ অভিযানৰ সৈতে জড়িত খিলজী ইৱাজ খিলজী"
+    },
+    {
+     "en": "The Delhi prince discussed here was Nasiruddin Mahmud",
+     "as": "ইয়াত উল্লেখ কৰা দিল্লীৰ ৰাজকুমাৰ নাছিৰুদ্দিন মাহমুদ"
+    },
+    {
+     "en": "Nasiruddin’s father was Iltutmish",
+     "as": "নাছিৰুদ্দিনৰ পিতৃ ইলতুৎমিছ"
+    },
+    {
+     "en": "Sukaphaa entered Assam in 1228",
+     "as": "চুকাফাৰ অসম প্ৰৱেশৰ চন ১২২৮"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "The 1220 s frontier",
+      "as": "১২২০ৰ দশকৰ সীমান্ত"
+     },
+     "text": [
+      {
+       "en": "Bengal rulers again campaigned towards Kamarupa in the 1220 s. [[iwaz-khalji|Iwaz Khalji]] and [[nasiruddin-mahmud|Nasiruddin Mahmud]] belong to this phase, distinct from Bakhtiyar’s 1206 expedition.",
+       "as": "১২২০ৰ দশকত বংগৰ শাসকে কামৰূপলৈ আকৌ অভিযান কৰে। [[iwaz-khalji|ইৱাজ খিলজী]] আৰু [[nasiruddin-mahmud|নাছিৰুদ্দিন মাহমুদ]] এই পৰ্যায়ৰ; বখতিয়াৰৰ ১২০৬ৰ অভিযানৰ পৰা পৃথক।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-04.webp",
+     "id": "medieval-01.u2.01",
+     "link": {
+      "unit": "u1",
+      "note": {
+       "en": "Build on the preceding unit: A march that failed",
+       "as": "আগৰ অধ্যায়ৰ পৰা আগবাঢ়া: ব্যৰ্থ হোৱা যাত্ৰা"
+      }
+     }
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "A prince from Delhi",
+      "as": "দিল্লীৰ ৰাজকুমাৰ"
+     },
+     "text": [
+      {
+       "en": "Nasiruddin Mahmud was [[iltutmish|Iltutmish]]’s son. These campaigns connect the Bengal frontier with the Delhi Sultanate, while Ahom settlement began in the eastern valley in 1228.",
+       "as": "নাছিৰুদ্দিন মাহমুদ [[iltutmish|ইলতুৎমিছ]]ৰ পুত্ৰ আছিল। অভিযানবোৰে বংগৰ সীমান্তক দিল্লী চুলতানীৰ সৈতে জোৰে; আনফালে ১২২৮ ত পূবৰ উপত্যকাত আহোম বসতি আৰম্ভ হয়।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-05.webp",
+     "id": "medieval-01.u2.02"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The Delhi prince discussed here was",
+      "as": "ইয়াত উল্লেখ কৰা দিল্লীৰ ৰাজকুমাৰ"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Nasiruddin Mahmud",
+     "asOptions": [
+      "সন্ধ্যা",
+      "নীলধ্বজ",
+      "নাছিৰুদ্দিন মাহমুদ",
+      "গোবিন্দচন্দ্ৰ"
+     ],
+     "asAnswer": 2,
+     "answerText": {
+      "en": "Nasiruddin Mahmud",
+      "as": "নাছিৰুদ্দিন মাহমুদ"
+     },
+     "why": {
+      "en": "The Delhi prince discussed here was Nasiruddin Mahmud.",
+      "as": "ইয়াত উল্লেখ কৰা দিল্লীৰ ৰাজকুমাৰ নাছিৰুদ্দিন মাহমুদ।"
+     },
+     "id": "medieval-01.u2.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Bakhtiyar Khalji, Iwaz Khalji and Nasiruddin Mahmud were one person with three titles.",
+      "as": "বখতিয়াৰ খিলজী, ইৱাজ খিলজী আৰু নাছিৰুদ্দিন মাহমুদ একেজন ব্যক্তিৰ তিনিটা উপাধি।"
+     },
+     "answer": false,
+     "why": {
+      "en": "They were different commanders or rulers in different episodes.",
+      "as": "তেওঁলোক বেলেগ ঘটনাৰ বেলেগ সেনাপতি বা শাসক।"
+     },
+     "id": "medieval-01.u2.04"
+    },
+    {
+     "type": "timeline",
+     "anchors": [
+      {
+       "y": "1206",
+       "l": {
+        "en": "Bakhtiyar’s expedition",
+        "as": "বখতিয়াৰৰ অভিযান"
+       }
+      },
+      {
+       "y": "1257",
+       "l": {
+        "en": "Sandhya defeats Yuzbak",
+        "as": "সন্ধ্যাই ইউজবকক পৰাজিত কৰে"
+       }
+      }
+     ],
+     "items": [
+      {
+       "t": {
+        "en": "Bhaskaravarman’s seventh century",
+        "as": "ভাস্কৰবৰ্মাৰ সপ্তম শতিকা"
+       },
+       "slot": 0
+      },
+      {
+       "t": {
+        "en": "Ahom settlement, 1228",
+        "as": "আহোম বসতি, ১২২৮"
+       },
+       "slot": 1
+      },
+      {
+       "t": {
+        "en": "Turbak, 1532",
+        "as": "তুৰ্বক, ১৫৩২"
+       },
+       "slot": 2
+      }
+     ],
+     "why": {
+      "en": "The western campaigns and eastern Ahom settlement overlapped in time.",
+      "as": "পশ্চিমৰ অভিযান আৰু পূবৰ আহোম বসতিৰ সময়ৰ মিল আছিল।"
+     },
+     "id": "medieval-01.u2.05"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "The Khalji associated with the later 1220 s campaigns was",
+        "as": "১২২০ৰ দশকৰ পিছৰ অভিযানৰ সৈতে জড়িত খিলজী"
+       },
+       {
+        "en": "Iwaz Khalji",
+        "as": "ইৱাজ খিলজী"
+       }
+      ],
+      [
+       {
+        "en": "The Delhi prince discussed here was",
+        "as": "ইয়াত উল্লেখ কৰা দিল্লীৰ ৰাজকুমাৰ"
+       },
+       {
+        "en": "Nasiruddin Mahmud",
+        "as": "নাছিৰুদ্দিন মাহমুদ"
+       }
+      ],
+      [
+       {
+        "en": "Nasiruddin’s father was",
+        "as": "নাছিৰুদ্দিনৰ পিতৃ"
+       },
+       {
+        "en": "Iltutmish",
+        "as": "ইলতুৎমিছ"
+       }
+      ],
+      [
+       {
+        "en": "Sukaphaa entered Assam in",
+        "as": "চুকাফাৰ অসম প্ৰৱেশৰ চন"
+       },
+       {
+        "en": "1228",
+        "as": "১২২৮"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Do not collapse repeated expeditions into one invasion.",
+      "as": "পুনৰাবৃত্ত অভিযানক এটা আক্ৰমণ বুলি নধৰিবা।"
+     },
+     "id": "medieval-01.u2.06"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The Khalji associated with the later 1220 s campaigns was",
+      "as": "১২২০ৰ দশকৰ পিছৰ অভিযানৰ সৈতে জড়িত খিলজী"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Iwaz Khalji",
+       "as": "ইৱাজ খিলজী"
+      },
+      {
+       "en": "Thakumatha",
+       "as": "থাকুমথা"
+      },
+      {
+       "en": "Badaucha",
+       "as": "বদৌচা"
+      },
+      {
+       "en": "Nasiruddin Mahmud",
+       "as": "নাছিৰুদ্দিন মাহমুদ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The Khalji associated with the later 1220 s campaigns was Iwaz Khalji.",
+      "as": "১২২০ৰ দশকৰ পিছৰ অভিযানৰ সৈতে জড়িত খিলজী ইৱাজ খিলজী।"
+     },
+     "id": "medieval-01.u2.07"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "icon": "star",
+   "title": {
+    "en": "Floods change a campaign",
+    "as": "বানে অভিযান সলনি কৰে"
+   },
+   "learned": [
+    {
+     "en": "The ruler resisting Yuzbak was Sandhya",
+     "as": "ইউজবকৰ প্ৰতিৰোধ কৰা শাসক সন্ধ্যা"
+    },
+    {
+     "en": "The invading commander was Yuzbak",
+     "as": "আক্ৰমণকাৰী সেনাপতি ইউজবক"
+    },
+    {
+     "en": "The campaign is dated 1257",
+     "as": "অভিযানৰ চন ১২৫৭"
+    },
+    {
+     "en": "The capital later associated with Sandhya was Kamatapur",
+     "as": "পিছলৈ সন্ধ্যাৰ সৈতে জড়িত ৰাজধানী কামতাপুৰ"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Sandhya resists",
+      "as": "সন্ধ্যাৰ প্ৰতিৰোধ"
+     },
+     "text": [
+      {
+       "en": "In 1257 [[sandhya|Sandhya]] defeated [[yuzbak|Yuzbak]]’s invasion of Kamarupa. Accounts emphasise the role of seasonal floods and disrupted supply in overcoming the invading army.",
+       "as": "১২৫৭ ত [[sandhya|সন্ধ্যা]]ই কামৰূপলৈ অহা [[yuzbak|ইউজবক]]ৰ অভিযান পৰাজিত কৰে। আক্ৰমণকাৰী বাহিনীক হৰুৱাবলৈ ঋতুগত বান আৰু ৰছদৰ বিচ্ছিন্নতাৰ ভূমিকা বিবৰণত গুৰুত্ব পায়।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-08.webp",
+     "id": "medieval-01.u3.01",
+     "link": {
+      "unit": "u2",
+      "note": {
+       "en": "Build on the preceding unit: More armies from the west",
+       "as": "আগৰ অধ্যায়ৰ পৰা আগবাঢ়া: পশ্চিমৰ পৰা আৰু সৈন্য"
+      }
+     }
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Landscape matters",
+      "as": "ভূদৃশ্যৰ ভূমিকা"
+     },
+     "text": [
+      {
+       "en": "The event illustrates why river conditions could alter military advantage. Sandhya is also associated with the later westward shift to [[kamatapur|Kamatapur]], developed in the next lesson.",
+       "as": "ঘটনাই নদীৰ অৱস্থাই সামৰিক সুবিধা কেনেকৈ সলনি কৰে দেখুৱায়। সন্ধ্যাৰ সৈতে পিছৰ [[kamatapur|কামতাপুৰ]]লৈ পশ্চিমমুখী স্থানান্তৰো জড়িত; পিছৰ পাঠত সেয়া আছে।"
+      }
+     ],
+     "img": "medieval-kingdoms/kamata-09.webp",
+     "id": "medieval-01.u3.02"
+    },
+    {
+     "type": "fill",
+     "before": {
+      "en": "The invading commander was",
+      "as": "আক্ৰমণকাৰী সেনাপতি"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "Yuzbak",
+     "asOptions": [
+      "ইলতুৎমিছ",
+      "ইউজবক",
+      "নীলাম্বৰ",
+      "শংকৰদেৱ"
+     ],
+     "asAnswer": 1,
+     "answerText": {
+      "en": "Yuzbak",
+      "as": "ইউজবক"
+     },
+     "why": {
+      "en": "The invading commander was Yuzbak.",
+      "as": "আক্ৰমণকাৰী সেনাপতি ইউজবক।"
+     },
+     "id": "medieval-01.u3.03"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I defeated Yuzbak in 1257.",
+       "as": "মই ১২৫৭ ত ইউজবকক পৰাজিত কৰিছিলোঁ।"
+      },
+      {
+       "en": "My name is linked to the emergence of Kamata.",
+       "as": "মোৰ নাম কামতাৰ উত্থানৰ সৈতে জড়িত।"
+      },
+      {
+       "en": "I am associated with Kamatapur.",
+       "as": "মই কামতাপুৰৰ সৈতে জড়িত।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Sandhya",
+       "as": "সন্ধ্যা"
+      },
+      {
+       "en": "Nilambar",
+       "as": "নীলাম্বৰ"
+      },
+      {
+       "en": "Biswa Singha",
+       "as": "বিশ্ব সিংহ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Sandhya belongs before the fifteenth-century Khen kings.",
+      "as": "সন্ধ্যা পঞ্চদশ শতিকাৰ খেন ৰজাসকলৰ আগৰ।"
+     },
+     "id": "medieval-01.u3.04"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "The ruler resisting Yuzbak was",
+        "as": "ইউজবকৰ প্ৰতিৰোধ কৰা শাসক"
+       },
+       {
+        "en": "Sandhya",
+        "as": "সন্ধ্যা"
+       }
+      ],
+      [
+       {
+        "en": "The invading commander was",
+        "as": "আক্ৰমণকাৰী সেনাপতি"
+       },
+       {
+        "en": "Yuzbak",
+        "as": "ইউজবক"
+       }
+      ],
+      [
+       {
+        "en": "The campaign is dated",
+        "as": "অভিযানৰ চন"
+       },
+       {
+        "en": "1257",
+        "as": "১২৫৭"
+       }
+      ],
+      [
+       {
+        "en": "The capital later associated with Sandhya was",
+        "as": "পিছলৈ সন্ধ্যাৰ সৈতে জড়িত ৰাজধানী"
+       },
+       {
+        "en": "Kamatapur",
+        "as": "কামতাপুৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Link ruler, opponent, year and capital.",
+      "as": "শাসক, প্ৰতিপক্ষ, চন আৰু ৰাজধানী মিলোৱা।"
+     },
+     "id": "medieval-01.u3.05"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Rivers and seasonal floods had no effect on medieval campaigns.",
+      "as": "মধ্যযুগৰ অভিযানত নদী আৰু ঋতুগত বানৰ কোনো প্ৰভাৱ নাছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Supply and movement depended on the landscape and season.",
+      "as": "ৰছদ আৰু চলাচল ভূদৃশ্য আৰু ঋতুৰ ওপৰত নিৰ্ভৰ কৰিছিল।"
+     },
+     "id": "medieval-01.u3.06"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The ruler resisting Yuzbak was",
+      "as": "ইউজবকৰ প্ৰতিৰোধ কৰা শাসক"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Yuzbak",
+       "as": "ইউজবক"
+      },
+      {
+       "en": "Alauddin Husain Shah",
+       "as": "আলাউদ্দিন হুছেইন শ্বাহ"
+      },
+      {
+       "en": "Sandhya",
+       "as": "সন্ধ্যা"
+      },
+      {
+       "en": "Govindachandra",
+       "as": "গোবিন্দচন্দ্ৰ"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The ruler resisting Yuzbak was Sandhya.",
+      "as": "ইউজবকৰ প্ৰতিৰোধ কৰা শাসক সন্ধ্যা।"
+     },
+     "id": "medieval-01.u3.07"
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "icon": "flag",
+   "title": {
+    "en": "Turbak and the Ahoms",
+    "as": "তুৰ্বক আৰু আহোম"
+   },
+   "learned": [
+    {
+     "en": "1527: the first Muslim invasion was beaten",
+     "as": "১৫২৭: প্ৰথম মুছলমান আক্ৰমণ পৰাস্ত"
+    },
+    {
+     "en": "1532: Turbak invaded with cavalry and cannon",
+     "as": "১৫৩২: তুৰবকে অশ্বাৰোহী আৰু কামানেৰে আক্ৰমণ কৰে"
+    },
+    {
+     "en": "Mula Gabharu died fighting his army",
+     "as": "মূলা গাভৰুৱে তেওঁৰ সৈন্যৰ সৈতে যুঁজি প্ৰাণ দিয়ে"
+    },
+    {
+     "en": "1533: Turbak killed near the Bharali; Ahoms took up firearms",
+     "as": "১৫৩৩: ভৰলীৰ ওচৰত তুৰবক নিহত; আহোমে বন্দুক-কামান ল'লে"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "img": "suhungmung/turbak-invasion.webp",
+     "title": {
+      "en": "Invaders from the west",
+      "as": "পশ্চিমৰ আক্ৰমণকাৰী"
+     },
+     "text": [
+      {
+       "en": "In <mark>1527</mark> came the first Muslim invasion in Ahom history. It was beaten back.",
+       "as": "<mark>১৫২৭</mark> চনত আহোম ইতিহাসৰ প্ৰথম মুছলমান আক্ৰমণ হয়। ইয়াক খেদি পঠোৱা হয়।"
+      },
+      {
+       "en": "In <mark>1532</mark> a commander named [[turbak]] arrived with 30 elephants, 1,000 horses and many cannon. At [[singri]] he crushed the Ahom army of Prince Suklen.",
+       "as": "<mark>১৫৩২</mark> চনত [[turbak]] নামৰ সেনাপতি ৩০ টা হাতী, ১, ০০০ ঘোঁৰা আৰু বহু কামান লৈ আহিল। [[singri]]ত তেওঁ কোঁৱৰ চুক্লেনৰ আহোম সৈন্যক বিধ্বস্ত কৰিলে।"
+      }
+     ],
+     "id": "medieval-01.u4.01"
+    },
+    {
+     "type": "story",
+     "img": "suhungmung/mula-gabharu.webp",
+     "title": {
+      "en": "Mula Gabharu",
+      "as": "মূলা গাভৰু"
+     },
+     "text": [
+      {
+       "en": "Many Ahom commanders fell. One was [[phrasengmung]]. His wife, [[mula-gabharu]], took up his sword.",
+       "as": "বহু আহোম সেনাপতি নিহত হ'ল। তেওঁলোকৰ এজন [[phrasengmung]]। তেওঁৰ পত্নী [[mula-gabharu]]ৱে স্বামীৰ তৰোৱাল তুলি ল'লে।"
+      },
+      {
+       "en": "She led soldiers against Turbak's army and died fighting in <mark>1533</mark>. Assam remembers her as one of its first women warriors.",
+       "as": "তেওঁ তুৰবকৰ সৈন্যৰ বিৰুদ্ধে সৈন্য পৰিচালনা কৰি <mark>১৫৩৩</mark> চনত যুঁজি প্ৰাণ দিলে। অসমে তেওঁক প্ৰথম মহিলা যোদ্ধাসকলৰ এগৰাকী হিচাপে স্মৰণ কৰে।"
+      }
+     ],
+     "id": "medieval-01.u4.02"
+    },
+    {
+     "type": "story",
+     "map": {
+      "labels": true,
+      "route": true
+     },
+     "title": {
+      "en": "Victory on the Bharali",
+      "as": "ভৰলীত বিজয়"
+     },
+     "text": [
+      {
+       "en": "In March 1533 the Ahoms won a battle on the river. Later, near the [[bharali]], Turbak's horses and elephants sank in a marsh. He was killed by a spear.",
+       "as": "১৫৩৩ চনৰ মাৰ্চত আহোমে জলযুদ্ধত জয়ী হয়। পিছত [[bharali]]ৰ ওচৰত তুৰবকৰ ঘোঁৰা আৰু হাতী বোকাত পোত গ'ল। বৰছাৰ আঘাতত তেওঁ নিহত হয়।"
+      },
+      {
+       "en": "The Ahoms chased the invaders all the way to the [[karatoya]] river. From this war the Ahoms began to use <mark>firearms</mark>.",
+       "as": "আহোমে আক্ৰমণকাৰীক [[karatoya]] নদীলৈকে খেদি নিলে। এই যুদ্ধৰ পৰাই আহোমে <mark>বন্দুক-কামান</mark> ব্যৱহাৰ কৰিবলৈ ল'লে।"
+      }
+     ],
+     "id": "medieval-01.u4.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Warm-up: Detsung was killed when Dimapur fell again in 1536.",
+      "as": "মনত পেলোৱা: ১৫৩৬ চনত ডিমাপুৰ পুনৰ পতন হোৱাত দেৎচুং নিহত হৈছিল।"
+     },
+     "answer": true,
+     "why": {
+      "en": "True.",
+      "as": "শুদ্ধ।"
+     },
+     "link": {
+      "note": {
+       "en": "War with the Kacharis.",
+       "as": "কছাৰীৰ সৈতে যুদ্ধ।"
+      },
+      "lessonId": "suhungmung",
+      "lesson": 14,
+      "unitNo": 5,
+      "unitTitle": {
+       "en": "War with the Kacharis",
+       "as": "কছাৰীৰ সৈতে যুদ্ধ"
+      }
+     },
+     "id": "medieval-01.u4.04"
+    },
+    {
+     "type": "picture",
+     "q": {
+      "en": "Which picture shows Turbak's invasion?",
+      "as": "কোনখন ছবিত তুৰবকৰ আক্ৰমণ দেখুওৱা হৈছে?"
+     },
+     "options": [
+      "suhungmung/turbak-invasion.webp",
+      "suhungmung/mula-gabharu.webp",
+      "suhungmung/chutia-fall.webp",
+      "suhungmung/pursuit-dimapur.webp"
+     ],
+     "answer": 0,
+     "answerText": {
+      "en": "Turbak's army",
+      "as": "তুৰবকৰ সৈন্য"
+     },
+     "why": {
+      "en": "1532: cavalry, elephants and cannon.",
+      "as": "১৫৩২: অশ্বাৰোহী, হাতী আৰু কামান।"
+     },
+     "id": "medieval-01.u4.05"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I was the wife of an Ahom commander.",
+       "as": "মই এজন আহোম সেনাপতিৰ পত্নী আছিলোঁ।"
+      },
+      {
+       "en": "My husband was killed by Turbak's army.",
+       "as": "তুৰবকৰ সৈন্যই মোৰ স্বামীক হত্যা কৰিছিল।"
+      },
+      {
+       "en": "I died fighting in 1533.",
+       "as": "১৫৩৩ চনত মই যুঁজি প্ৰাণ দিছিলোঁ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Mula Gabharu",
+       "as": "মূলা গাভৰু"
+      },
+      {
+       "en": "Joymoti",
+       "as": "জয়মতী"
+      },
+      {
+       "en": "Phuleswari",
+       "as": "ফুলেশ্বৰী"
+      },
+      {
+       "en": "Kuranganayani",
+       "as": "কুৰংগনয়নী"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Mula Gabharu. Joymoti lived in the 1670 s, Phuleswari was Siva Singha's queen, Kuranganayani was Rajeswar Singha's.",
+      "as": "মূলা গাভৰু। জয়মতী ১৬৭০ৰ দশকৰ, ফুলেশ্বৰী শিৱ সিংহৰ ৰাণী, কুৰংগনয়নী ৰাজেশ্বৰ সিংহৰ।"
+     },
+     "id": "medieval-01.u4.06"
+    },
+    {
+     "type": "map",
+     "q": {
+      "en": "Tap the river the Ahoms chased Turbak's army to.",
+      "as": "আহোমে তুৰবকৰ সৈন্যক যি নদীলৈকে খেদি নিছিল, সেইখন টিপা।"
+     },
+     "target": "karatoya",
+     "choices": [
+      "karatoya",
+      "bharali",
+      "dihing",
+      "dhansiri-south"
+     ],
+     "answerText": {
+      "en": "The Karatoya",
+      "as": "কৰতোৱা"
+     },
+     "why": {
+      "en": "Turbak died near the Bharali; the chase went on to the Karatoya in north Bengal.",
+      "as": "তুৰবক ভৰলীৰ ওচৰত নিহত হয়; খেদা উত্তৰ বংগৰ কৰতোৱালৈকে চলিল।"
+     },
+     "map": {
+      "box": [
+       89.2,
+       25.6,
+       96.3,
+       28.1
+      ],
+      "show": [
+       "brahmaputra",
+       "dihing",
+       "dhansiri-south",
+       "bharali",
+       "charaideo",
+       "sadiya",
+       "dimapur",
+       "singri",
+       "karatoya",
+       "dikhowmukh"
+      ],
+      "routes": [
+       [
+        [
+         26.62,
+         92.7
+        ],
+        [
+         26.45,
+         91.2
+        ],
+        [
+         25.95,
+         89.6
+        ]
+       ]
+      ],
+      "texts": [
+       {
+        "t": {
+         "en": "CHUTIA LAND",
+         "as": "চুতীয়া এলেকা"
+        },
+        "at": [
+         27.7,
+         94.3
+        ]
+       },
+       {
+        "t": {
+         "en": "KACHARI LAND",
+         "as": "কছাৰী এলেকা"
+        },
+        "at": [
+         25.7,
+         92.0
+        ]
+       }
+      ],
+      "labels": {
+       "sadiya": {
+        "pos": "w"
+       },
+       "charaideo": {
+        "pos": "e"
+       },
+       "dimapur": {
+        "pos": "e"
+       },
+       "singri": {
+        "pos": "n"
+       },
+       "karatoya": {
+        "pos": "e"
+       },
+       "dikhowmukh": {
+        "pos": "w"
+       },
+       "dhansiri-south": {
+        "at": [
+         26.2,
+         93.75
+        ],
+        "pos": "e"
+       },
+       "bharali": {
+        "at": [
+         26.95,
+         92.75
+        ],
+        "pos": "w"
+       },
+       "dihing": {
+        "at": [
+         27.45,
+         95.3
+        ],
+        "pos": "n"
+       },
+       "brahmaputra": {
+        "at": [
+         26.3,
+         90.6
+        ],
+        "pos": "n"
+       }
+      },
+      "districts": [
+       "dibrugarh",
+       "tinsukia"
+      ]
+     },
+     "id": "medieval-01.u4.07"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Ahoms first began using firearms after the war with Turbak.",
+      "as": "তুৰবকৰ সৈতে যুদ্ধৰ পিছতহে আহোমে বন্দুক-কামান ব্যৱহাৰ কৰিবলৈ লৈছিল।"
+     },
+     "answer": true,
+     "why": {
+      "en": "True, says the Buranji. Before that they fought with swords, spears and bows. The captured soldiers' descendants became the [[moria|Morias]], brass-workers.",
+      "as": "শুদ্ধ, বুৰঞ্জীমতে। তাৰ আগতে তেওঁলোকে তৰোৱাল, যাঠি আৰু ধনুৰে যুঁজিছিল। বন্দী সৈন্যৰ বংশধৰ [[moria]] হ'ল, কাঁহ-পিতলৰ শিল্পী।"
+     },
+     "id": "medieval-01.u4.08"
+    },
+    {
+     "type": "timeline",
+     "q": {
+      "en": "Place each event on the timeline.",
+      "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+     },
+     "anchors": [
+      {
+       "y": "1527",
+       "l": {
+        "en": "First Muslim invasion beaten",
+        "as": "প্ৰথম মুছলমান আক্ৰমণ পৰাস্ত"
+       }
+      },
+      {
+       "y": "1533",
+       "l": {
+        "en": "Turbak killed",
+        "as": "তুৰবক নিহত"
+       }
+      }
+     ],
+     "items": [
+      {
+       "t": {
+        "en": "Chutia kingdom annexed",
+        "as": "চুতীয়া ৰাজ্য অধিকাৰ"
+       },
+       "slot": 0
+      },
+      {
+       "t": {
+        "en": "Turbak defeats Suklen at Singri",
+        "as": "শিংৰিত তুৰবকে চুক্লেনক হৰুৱায়"
+       },
+       "slot": 1
+      },
+      {
+       "t": {
+        "en": "Dimapur sacked",
+        "as": "ডিমাপুৰ ধ্বংস"
+       },
+       "slot": 2
+      }
+     ],
+     "why": {
+      "en": "1523 Chutias annexed → 1527 first invasion → 1532 Singri → 1533 Turbak killed → 1536 Dimapur sacked.",
+      "as": "১৫২৩ চুতীয়া অধিকাৰ → ১৫২৭ প্ৰথম আক্ৰমণ → ১৫৩২ শিংৰি → ১৫৩৩ তুৰবক নিহত → ১৫৩৬ ডিমাপুৰ ধ্বংস।"
+     },
+     "id": "medieval-01.u4.09"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Lesson test",
+   "as": "পাঠৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "type": "tf",
+    "s": {
+     "en": "The Kanai Barasi Bowa inscription gives a complete biography of a named king Prithu.",
+     "as": "কাণাই বৰশী বোৱা লিপিত পৃথু নামৰ ৰজাৰ সম্পূৰ্ণ জীৱনী আছে।"
+    },
+    "answer": false,
+    "why": {
+     "en": "It is a short record of invading Turks being destroyed; later identifications require separate evidence.",
+     "as": "ই আক্ৰমণকাৰী তুৰ্কীৰ ধ্বংসৰ চুটি নথি; পিছৰ চিনাক্তকৰণৰ বাবে পৃথক প্ৰমাণ লাগে।"
+    },
+    "id": "medieval-01.test.01"
+   },
+   {
+    "type": "match",
+    "pairs": [
+     [
+      {
+       "en": "The expedition leader was",
+       "as": "অভিযানৰ নেতা"
+      },
+      {
+       "en": "Bakhtiyar Khalji",
+       "as": "বখতিয়াৰ খিলজী"
+      }
+     ],
+     [
+      {
+       "en": "The conventional expedition year was",
+       "as": "অভিযানৰ প্ৰচলিত চন"
+      },
+      {
+       "en": "1206",
+       "as": "১২০৬"
+      }
+     ],
+     [
+      {
+       "en": "The intended northern destination was",
+       "as": "উত্তৰৰ লক্ষ্য গন্তব্য"
+      },
+      {
+       "en": "Tibet",
+       "as": "তিব্বত"
+      }
+     ],
+     [
+      {
+       "en": "The inscription discussed here is at",
+       "as": "ইয়াত আলোচনা কৰা লিপিৰ ঠাই"
+      },
+      {
+       "en": "Kanai Barasi Bowa",
+       "as": "কাণাই বৰশী বোৱা"
+      }
+     ]
+    ],
+    "why": {
+     "en": "A chronicle’s narrative and an inscription’s wording are different evidence.",
+     "as": "বুৰঞ্জীৰ বৰ্ণনা আৰু লিপিৰ পাঠ বেলেগ প্ৰমাণ।"
+    },
+    "id": "medieval-01.test.02"
+   },
+   {
+    "type": "fill",
+    "before": {
+     "en": "The Delhi prince discussed here was",
+     "as": "ইয়াত উল্লেখ কৰা দিল্লীৰ ৰাজকুমাৰ"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "answer": "Nasiruddin Mahmud",
+    "asOptions": [
+     "সন্ধ্যা",
+     "নীলধ্বজ",
+     "নাছিৰুদ্দিন মাহমুদ",
+     "গোবিন্দচন্দ্ৰ"
+    ],
+    "asAnswer": 2,
+    "answerText": {
+     "en": "Nasiruddin Mahmud",
+     "as": "নাছিৰুদ্দিন মাহমুদ"
+    },
+    "why": {
+     "en": "The Delhi prince discussed here was Nasiruddin Mahmud.",
+     "as": "ইয়াত উল্লেখ কৰা দিল্লীৰ ৰাজকুমাৰ নাছিৰুদ্দিন মাহমুদ।"
+    },
+    "id": "medieval-01.test.03"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "Bakhtiyar Khalji, Iwaz Khalji and Nasiruddin Mahmud were one person with three titles.",
+     "as": "বখতিয়াৰ খিলজী, ইৱাজ খিলজী আৰু নাছিৰুদ্দিন মাহমুদ একেজন ব্যক্তিৰ তিনিটা উপাধি।"
+    },
+    "answer": false,
+    "why": {
+     "en": "They were different commanders or rulers in different episodes.",
+     "as": "তেওঁলোক বেলেগ ঘটনাৰ বেলেগ সেনাপতি বা শাসক।"
+    },
+    "id": "medieval-01.test.04"
+   },
+   {
+    "type": "fill",
+    "before": {
+     "en": "The invading commander was",
+     "as": "আক্ৰমণকাৰী সেনাপতি"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "answer": "Yuzbak",
+    "asOptions": [
+     "ইলতুৎমিছ",
+     "ইউজবক",
+     "নীলাম্বৰ",
+     "শংকৰদেৱ"
+    ],
+    "asAnswer": 1,
+    "answerText": {
+     "en": "Yuzbak",
+     "as": "ইউজবক"
+    },
+    "why": {
+     "en": "The invading commander was Yuzbak.",
+     "as": "আক্ৰমণকাৰী সেনাপতি ইউজবক।"
+    },
+    "id": "medieval-01.test.05"
+   },
+   {
+    "type": "whoami",
+    "clues": [
+     {
+      "en": "I defeated Yuzbak in 1257.",
+      "as": "মই ১২৫৭ ত ইউজবকক পৰাজিত কৰিছিলোঁ।"
+     },
+     {
+      "en": "My name is linked to the emergence of Kamata.",
+      "as": "মোৰ নাম কামতাৰ উত্থানৰ সৈতে জড়িত।"
+     },
+     {
+      "en": "I am associated with Kamatapur.",
+      "as": "মই কামতাপুৰৰ সৈতে জড়িত।"
+     }
+    ],
+    "options": [
+     {
+      "en": "Sandhya",
+      "as": "সন্ধ্যা"
+     },
+     {
+      "en": "Nilambar",
+      "as": "নীলাম্বৰ"
+     },
+     {
+      "en": "Biswa Singha",
+      "as": "বিশ্ব সিংহ"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Sandhya belongs before the fifteenth-century Khen kings.",
+     "as": "সন্ধ্যা পঞ্চদশ শতিকাৰ খেন ৰজাসকলৰ আগৰ।"
+    },
+    "id": "medieval-01.test.06"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "Warm-up: Detsung was killed when Dimapur fell again in 1536.",
+     "as": "মনত পেলোৱা: ১৫৩৬ চনত ডিমাপুৰ পুনৰ পতন হোৱাত দেৎচুং নিহত হৈছিল।"
+    },
+    "answer": true,
+    "why": {
+     "en": "True.",
+     "as": "শুদ্ধ।"
+    },
+    "link": {
+     "note": {
+      "en": "War with the Kacharis.",
+      "as": "কছাৰীৰ সৈতে যুদ্ধ।"
+     },
+     "lessonId": "suhungmung",
+     "lesson": 14,
+     "unitNo": 5,
+     "unitTitle": {
+      "en": "War with the Kacharis",
+      "as": "কছাৰীৰ সৈতে যুদ্ধ"
+     }
+    },
+    "id": "medieval-01.test.07"
+   },
+   {
+    "type": "picture",
+    "q": {
+     "en": "Which picture shows Turbak's invasion?",
+     "as": "কোনখন ছবিত তুৰবকৰ আক্ৰমণ দেখুওৱা হৈছে?"
+    },
+    "options": [
+     "suhungmung/turbak-invasion.webp",
+     "suhungmung/mula-gabharu.webp",
+     "suhungmung/chutia-fall.webp",
+     "suhungmung/pursuit-dimapur.webp"
+    ],
+    "answer": 0,
+    "answerText": {
+     "en": "Turbak's army",
+     "as": "তুৰবকৰ সৈন্য"
+    },
+    "why": {
+     "en": "1532: cavalry, elephants and cannon.",
+     "as": "১৫৩২: অশ্বাৰোহী, হাতী আৰু কামান।"
+    },
+    "id": "medieval-01.test.08"
+   }
+  ]
+ },
+ "review_notes": "AI-assisted bilingual draft. Historical uncertainty is explicit; fluent Assamese editorial review pending. Borrowed units adapted with new ids from the existing Ahom deep dive.",
+ "origin_course": "medieval-kingdoms",
+ "origin_no": 1
+}

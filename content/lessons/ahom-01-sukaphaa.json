@@ -1,8 +1,8 @@
 {
  "id": "ahom-01-sukaphaa",
- "course": "ahom-kingdom",
- "no": 1,
- "version": 1,
+ "course": "assam-history",
+ "no": 23,
+ "version": 2,
  "eyebrow": {
   "en": "The Ahom Kingdom",
   "as": "আহোম ৰাজ্য"
@@ -108,6 +108,28 @@
      "en": "Suteuphaa: Becomes the second Ahom king",
      "as": "চুতেউফা: দ্বিতীয় আহোম ৰজা হয়"
     }
+   }
+  ],
+  "extra_stories": [
+   {
+    "type": "story",
+    "art": "rooster",
+    "title": {
+     "en": "Before dawn",
+     "as": "পুৱাৰ আগতে"
+    },
+    "text": [
+     {
+      "en": "It was a <mark>full-moon</mark> night. Ahom soldiers hiding in the forest made the <mark>roosters crow</mark> early.",
+      "as": "সেইটো আছিল <mark>পূৰ্ণিমা</mark>ৰ নিশা। হাবিত লুকাই থকা আহোম সৈন্যই আগতীয়াকৈ <mark>কুকুৰা ডাকিবলৈ</mark> বাধ্য কৰিছিল।"
+     },
+     {
+      "en": "The Kacharis thought morning had come and their time was up. They left the land, and the Ahoms took it.",
+      "as": "কছাৰীসকলে ভাবিলে পুৱা হ'ল আৰু সময় শেষ। তেওঁলোকে মাটি এৰি গ'ল, আৰু আহোমসকলে দখল কৰিলে।"
+     }
+    ],
+    "id": "ak1.sut.u3.02",
+    "unit": "u4"
    }
   ]
  },
@@ -266,50 +288,6 @@
      "id": "ak1.suk.u1.01"
     },
     {
-     "type": "mcq",
-     "q": {
-      "en": "Who is regarded as the founder of the Ahom kingdom?",
-      "as": "আহোম ৰাজ্যৰ প্ৰতিষ্ঠাপক বুলি কাক গণ্য কৰা হয়?"
-     },
-     "options": [
-      {
-       "en": "Lachit Borphukan",
-       "as": "লাচিত বৰফুকন"
-      },
-      {
-       "en": "Chaolung Sukaphaa",
-       "as": "চাওলুং চুকাফা"
-      },
-      {
-       "en": "Rudra Singha",
-       "as": "ৰুদ্ৰ সিংহ"
-      },
-      {
-       "en": "Suhungmung",
-       "as": "চুহুংমুং"
-      }
-     ],
-     "answer": 1,
-     "why": {
-      "en": "Sukaphaa is regarded as the founder. Lachit Borphukan, Rudra Singha and Suhungmung lived centuries later.",
-      "as": "চুকাফাক প্ৰতিষ্ঠাপক বুলি গণ্য কৰা হয়। লাচিত বৰফুকন, ৰুদ্ৰ সিংহ আৰু চুহুংমুং বহু শতিকা পিছৰ।"
-     },
-     "id": "ak1.suk.u1.02"
-    },
-    {
-     "type": "tf",
-     "s": {
-      "en": "Sukaphaa came from Thailand.",
-      "as": "চুকাফা থাইলেণ্ডৰ পৰা আহিছিল।"
-     },
-     "answer": false,
-     "why": {
-      "en": "He came from Mong Mao, a Tai state in Yunnan, China. The Tai are related to the Thai, which makes this a common trap.",
-      "as": "তেওঁ চীনৰ ইউনানৰ টাই ৰাজ্য মং মাওৰ পৰা আহিছিল। টাইসকল থাইসকলৰ সম্পৰ্কীয়, সেয়ে এইটো এটা সাধাৰণ ফান্দ।"
-     },
-     "id": "ak1.suk.u1.03"
-    },
-    {
      "type": "story",
      "map": {
       "labels": {
@@ -421,6 +399,54 @@
       }
      ],
      "id": "ak1.suk.u1.04"
+    },
+    {
+     "type": "inline",
+     "options": [
+      {
+       "en": "Lachit Borphukan",
+       "as": "লাচিত বৰফুকন"
+      },
+      {
+       "en": "Chaolung Sukaphaa",
+       "as": "চাওলুং চুকাফা"
+      },
+      {
+       "en": "Rudra Singha",
+       "as": "ৰুদ্ৰ সিংহ"
+      },
+      {
+       "en": "Suhungmung",
+       "as": "চুহুংমুং"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Sukaphaa is regarded as the founder. Lachit Borphukan, Rudra Singha and Suhungmung lived centuries later.",
+      "as": "চুকাফাক প্ৰতিষ্ঠাপক বুলি গণ্য কৰা হয়। লাচিত বৰফুকন, ৰুদ্ৰ সিংহ আৰু চুহুংমুং বহু শতিকা পিছৰ।"
+     },
+     "id": "ak1.suk.u1.02",
+     "before": {
+      "en": "Who is regarded as the founder of the Ahom kingdom?",
+      "as": "আহোম ৰাজ্যৰ প্ৰতিষ্ঠাপক বুলি কাক গণ্য কৰা হয়?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Sukaphaa came from Thailand.",
+      "as": "চুকাফা থাইলেণ্ডৰ পৰা আহিছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "He came from Mong Mao, a Tai state in Yunnan, China. The Tai are related to the Thai, which makes this a common trap.",
+      "as": "তেওঁ চীনৰ ইউনানৰ টাই ৰাজ্য মং মাওৰ পৰা আহিছিল। টাইসকল থাইসকলৰ সম্পৰ্কীয়, সেয়ে এইটো এটা সাধাৰণ ফান্দ।"
+     },
+     "id": "ak1.suk.u1.03"
     },
     {
      "type": "map",
@@ -666,6 +692,44 @@
      "id": "ak1.suk.u2.01"
     },
     {
+     "type": "story",
+     "img": "sukaphaa/marriage-alliance.webp",
+     "title": {
+      "en": "New neighbours",
+      "as": "নতুন চুবুৰীয়া"
+     },
+     "text": [
+      {
+       "en": "The valley already had its own people, such as the [[moran]] and the [[barahi]].",
+       "as": "উপত্যকাখনত আগৰে পৰা নিজা লোক আছিল, যেনে [[moran]] আৰু [[barahi]]।"
+      },
+      {
+       "en": "Sukaphaa married the daughter of the Moran chief [[badaucha]] and the daughter of the Barahi chief [[thakumatha]].",
+       "as": "চুকাফাই মৰাণ ৰজা [[badaucha]] আৰু বৰাহী ৰজা [[thakumatha]]ৰ জীয়েকক বিয়া কৰাইছিল।"
+      }
+     ],
+     "id": "ak1.suk.u3.01"
+    },
+    {
+     "type": "story",
+     "img": "sukaphaa/royal-court.webp",
+     "title": {
+      "en": "Bor Asom",
+      "as": "বৰ অসম"
+     },
+     "text": [
+      {
+       "en": "By making local peoples his family, Sukaphaa joined many communities into one kingdom.",
+       "as": "স্থানীয় লোকসকলক আত্মীয় কৰি চুকাফাই বহু জনগোষ্ঠীক এখন ৰাজ্যত একত্ৰিত কৰিছিল।"
+      },
+      {
+       "en": "That is why he is remembered as the builder of <mark>\"Bor Asom\"</mark> (Greater Assam). Those who resisted him were put down by force.",
+       "as": "সেইবাবেই তেওঁক <mark>\"বৰ অসম\"</mark>ৰ ৰূপকাৰ বুলি স্মৰণ কৰা হয়। যিসকলে বিৰোধ কৰিছিল, তেওঁলোকক বলেৰে দমন কৰা হৈছিল।"
+      }
+     ],
+     "id": "ak1.suk.u3.04"
+    },
+    {
      "type": "tf",
      "s": {
       "en": "Sukaphaa built his capital as soon as he arrived in 1228.",
@@ -679,13 +743,9 @@
      "id": "ak1.suk.u2.02"
     },
     {
-     "type": "mcq",
+     "type": "inline",
      "guess": true,
      "id": "ak1.suk.d1",
-     "q": {
-      "en": "You are Sukaphaa. The valley already has its own people, the Morans and the Barahis. What do you do?",
-      "as": "তুমি চুকাফা। উপত্যকাত আগৰে পৰা মৰাণ আৰু বৰাহী লোক আছে। তুমি কি কৰিবা?"
-     },
      "options": [
       {
        "en": "Drive them out",
@@ -705,26 +765,15 @@
       "en": "He married the daughters of the Moran and Barahi chiefs and made their people part of one kingdom.",
       "as": "তেওঁ মৰাণ আৰু বৰাহী মুখীয়ালৰ জীয়েকক বিয়া কৰাই তেওঁলোকক এক ৰাজ্যৰ অংশ কৰিলে।"
      },
-     "decide": true
-    },
-    {
-     "type": "story",
-     "img": "sukaphaa/marriage-alliance.webp",
-     "title": {
-      "en": "New neighbours",
-      "as": "নতুন চুবুৰীয়া"
+     "decide": true,
+     "before": {
+      "en": "You are Sukaphaa. The valley already has its own people, the Morans and the Barahis. What do you do?",
+      "as": "তুমি চুকাফা। উপত্যকাত আগৰে পৰা মৰাণ আৰু বৰাহী লোক আছে। তুমি কি কৰিবা?"
      },
-     "text": [
-      {
-       "en": "The valley already had its own people, such as the [[moran]] and the [[barahi]].",
-       "as": "উপত্যকাখনত আগৰে পৰা নিজা লোক আছিল, যেনে [[moran]] আৰু [[barahi]]।"
-      },
-      {
-       "en": "Sukaphaa married the daughter of the Moran chief [[badaucha]] and the daughter of the Barahi chief [[thakumatha]].",
-       "as": "চুকাফাই মৰাণ ৰজা [[badaucha]] আৰু বৰাহী ৰজা [[thakumatha]]ৰ জীয়েকক বিয়া কৰাইছিল।"
-      }
-     ],
-     "id": "ak1.suk.u3.01"
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "whoami",
@@ -768,30 +817,7 @@
      "id": "ak1.suk.u3.02"
     },
     {
-     "type": "story",
-     "img": "sukaphaa/royal-court.webp",
-     "title": {
-      "en": "Bor Asom",
-      "as": "বৰ অসম"
-     },
-     "text": [
-      {
-       "en": "By making local peoples his family, Sukaphaa joined many communities into one kingdom.",
-       "as": "স্থানীয় লোকসকলক আত্মীয় কৰি চুকাফাই বহু জনগোষ্ঠীক এখন ৰাজ্যত একত্ৰিত কৰিছিল।"
-      },
-      {
-       "en": "That is why he is remembered as the builder of <mark>\"Bor Asom\"</mark> (Greater Assam). Those who resisted him were put down by force.",
-       "as": "সেইবাবেই তেওঁক <mark>\"বৰ অসম\"</mark>ৰ ৰূপকাৰ বুলি স্মৰণ কৰা হয়। যিসকলে বিৰোধ কৰিছিল, তেওঁলোকক বলেৰে দমন কৰা হৈছিল।"
-      }
-     ],
-     "id": "ak1.suk.u3.04"
-    },
-    {
-     "type": "mcq",
-     "q": {
-      "en": "Why is Sukaphaa called the builder of \"Bor Asom\"?",
-      "as": "চুকাফাক কিয় \"বৰ অসম\"ৰ ৰূপকাৰ বোলা হয়?"
-     },
+     "type": "inline",
      "options": [
       {
        "en": "He united local peoples into one kingdom",
@@ -815,7 +841,15 @@
       "en": "\"Bor Asom\" means one land for many peoples. The Mughal wars came centuries later.",
       "as": "\"বৰ অসম\" মানে বহু জনগোষ্ঠীৰ এখন দেশ। মোগলৰ সৈতে যুদ্ধ বহু শতিকা পিছৰ কথা।"
      },
-     "id": "ak1.suk.u3.05"
+     "id": "ak1.suk.u3.05",
+     "before": {
+      "en": "Why is Sukaphaa called the builder of \"Bor Asom\"?",
+      "as": "চুকাফাক কিয় \"বৰ অসম\"ৰ ৰূপকাৰ বোলা হয়?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "tf",
@@ -932,11 +966,45 @@
      "id": "ak1.suk.u5.01"
     },
     {
-     "type": "mcq",
-     "q": {
-      "en": "What does Che-Rai-Doi mean?",
-      "as": "চে-ৰাই-দৈৰ অৰ্থ কি?"
+     "type": "story",
+     "img": "shared/gohains.webp",
+     "title": {
+      "en": "Two great ministers",
+      "as": "দুজন প্ৰধান মন্ত্ৰী"
      },
+     "text": [
+      {
+       "en": "To run the kingdom, Sukaphaa created two great offices: the [[burhagohain]] and the [[borgohain]].",
+       "as": "ৰাজ্য চলাবলৈ চুকাফাই দুটা প্ৰধান পদ সৃষ্টি কৰিছিল: [[burhagohain]] আৰু [[borgohain]]।"
+      },
+      {
+       "en": "Together they were called the [[dangaria|Dangarias]], the king's chief ministers.",
+       "as": "দুয়োজনক একেলগে [[dangaria]] বোলা হৈছিল, ৰজাৰ প্ৰধান মন্ত্ৰী।"
+      }
+     ],
+     "id": "ak1.suk.u4.01"
+    },
+    {
+     "type": "story",
+     "art": "scroll",
+     "title": {
+      "en": "Writing it down",
+      "as": "লিখি ৰখা"
+     },
+     "text": [
+      {
+       "en": "Sukaphaa ordered that the events of his reign be written down.",
+       "as": "চুকাফাই তেওঁৰ ৰাজত্বকালৰ ঘটনাসমূহ লিখি ৰাখিবলৈ আদেশ দিছিল।"
+      },
+      {
+       "en": "This began the [[buranji|Buranjis]], the Ahom court chronicles. They are a major source for Assam's history.",
+       "as": "ইয়াৰ পৰাই আহোম ৰাজসভাৰ ইতিহাস [[buranji]]ৰ আৰম্ভণি হয়। বুৰঞ্জী অসমৰ ইতিহাসৰ এক প্ৰধান উৎস।"
+      }
+     ],
+     "id": "ak1.suk.u4.04"
+    },
+    {
+     "type": "inline",
      "options": [
       {
        "en": "A shining town on a hilltop",
@@ -960,7 +1028,15 @@
       "en": "Che = town, Rai = shining, Doi = hill. \"Land of golden gardens\" (Mong Dun Shun Kham) was the Ahom name for the whole country.",
       "as": "চে = নগৰ, ৰাই = উজ্জ্বল, দৈ = পাহাৰ। \"সোণৰ বাগিচাৰ দেশ\" (মুং-দুন-চুন-খাম) আছিল গোটেই দেশখনৰ আহোম নাম।"
      },
-     "id": "ak1.suk.u5.02"
+     "id": "ak1.suk.u5.02",
+     "before": {
+      "en": "What does Che-Rai-Doi mean?",
+      "as": "চে-ৰাই-দৈৰ অৰ্থ কি?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "map",
@@ -1062,30 +1138,7 @@
      }
     },
     {
-     "type": "story",
-     "img": "shared/gohains.webp",
-     "title": {
-      "en": "Two great ministers",
-      "as": "দুজন প্ৰধান মন্ত্ৰী"
-     },
-     "text": [
-      {
-       "en": "To run the kingdom, Sukaphaa created two great offices: the [[burhagohain]] and the [[borgohain]].",
-       "as": "ৰাজ্য চলাবলৈ চুকাফাই দুটা প্ৰধান পদ সৃষ্টি কৰিছিল: [[burhagohain]] আৰু [[borgohain]]।"
-      },
-      {
-       "en": "Together they were called the [[dangaria|Dangarias]], the king's chief ministers.",
-       "as": "দুয়োজনক একেলগে [[dangaria]] বোলা হৈছিল, ৰজাৰ প্ৰধান মন্ত্ৰী।"
-      }
-     ],
-     "id": "ak1.suk.u4.01"
-    },
-    {
-     "type": "mcq",
-     "q": {
-      "en": "Which two offices did Sukaphaa create?",
-      "as": "চুকাফাই কোনকেইটা পদ সৃষ্টি কৰিছিল?"
-     },
+     "type": "inline",
      "options": [
       {
        "en": "Burhagohain and Borgohain",
@@ -1109,7 +1162,15 @@
       "en": "Sukaphaa created the Burhagohain and the Borgohain. The other offices were added by later kings.",
       "as": "চুকাফাই বুঢ়াগোহাঁই আৰু বৰগোহাঁই সৃষ্টি কৰিছিল। বাকী পদবোৰ পিছৰ ৰজাসকলে যোগ কৰিছিল।"
      },
-     "id": "ak1.suk.u4.02"
+     "id": "ak1.suk.u4.02",
+     "before": {
+      "en": "Which two offices did Sukaphaa create?",
+      "as": "চুকাফাই কোনকেইটা পদ সৃষ্টি কৰিছিল?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "spot",
@@ -1157,25 +1218,6 @@
       "as": "বৰপাত্ৰগোহাঁই পদ বহু পিছত, ১৫২৭ চনত চুহুংমুঙে যোগ কৰিছিল।"
      },
      "id": "ak1.suk.u4.03"
-    },
-    {
-     "type": "story",
-     "art": "scroll",
-     "title": {
-      "en": "Writing it down",
-      "as": "লিখি ৰখা"
-     },
-     "text": [
-      {
-       "en": "Sukaphaa ordered that the events of his reign be written down.",
-       "as": "চুকাফাই তেওঁৰ ৰাজত্বকালৰ ঘটনাসমূহ লিখি ৰাখিবলৈ আদেশ দিছিল।"
-      },
-      {
-       "en": "This began the [[buranji|Buranjis]], the Ahom court chronicles. They are a major source for Assam's history.",
-       "as": "ইয়াৰ পৰাই আহোম ৰাজসভাৰ ইতিহাস [[buranji]]ৰ আৰম্ভণি হয়। বুৰঞ্জী অসমৰ ইতিহাসৰ এক প্ৰধান উৎস।"
-      }
-     ],
-     "id": "ak1.suk.u4.04"
     },
     {
      "type": "tf",
@@ -1228,12 +1270,8 @@
      },
      "text": [
       {
-       "en": "Sukaphaa died at Charaideo in <mark>1268</mark>, after a reign of 40 years.",
-       "as": "৪০ বছৰ ৰাজত্ব কৰাৰ পিছত <mark>১২৬৮</mark> চনত চৰাইদেউত চুকাফাৰ মৃত্যু হয়।"
-      },
-      {
-       "en": "His son [[suteuphaa]] became the next king.",
-       "as": "তেওঁৰ পুত্ৰ [[suteuphaa]] পৰৱৰ্তী ৰজা হয়।"
+       "en": "Sukaphaa died at Charaideo in 1268, after a reign of 40 years.",
+       "as": "৪০ বছৰ ৰাজত্ব কৰাৰ পিছত ১২৬৮ চনত চৰাইদেউত চুকাফাৰ মৃত্যু হয়।"
       }
      ],
      "id": "ak1.suk.u5.05"
@@ -1247,15 +1285,42 @@
      },
      "text": [
       {
-       "en": "The [[kachari]] also lived in parts of Upper Assam, close to the young Ahom kingdom.",
-       "as": "নতুন আহোম ৰাজ্যৰ ওচৰতে, উজনি অসমৰ কিছু অংশত [[kachari]]সকলো বাস কৰিছিল।"
+       "en": "His son [[suteuphaa]] became the next king. The [[kachari]] also lived in parts of Upper Assam, close to the young Ahom kingdom.",
+       "as": "তেওঁৰ পুত্ৰ [[suteuphaa]] পৰৱৰ্তী ৰজা হয়। নতুন আহোম ৰাজ্যৰ ওচৰতে, উজনি অসমৰ কিছু অংশত [[kachari]]সকলো বাস কৰিছিল।"
       },
       {
-       "en": "Suteuphaa forced them to leave the land <mark>east of the Dikhou river</mark>.",
-       "as": "চুতেউফাই তেওঁলোকক <mark>দিখৌ নদীৰ পূব পাৰৰ</mark> মাটি এৰিবলৈ বাধ্য কৰিছিল।"
+       "en": "Suteuphaa forced them to leave the land east of the Dikhou river.",
+       "as": "চুতেউফাই তেওঁলোকক দিখৌ নদীৰ পূব পাৰৰ মাটি এৰিবলৈ বাধ্য কৰিছিল।"
+      },
+      {
+       "en": "An Ahom chronicle tells how the land dispute was settled.",
+       "as": "এখন আহোম বুৰঞ্জীত মাটিৰ বিবাদ কেনেকৈ মীমাংসা হৈছিল, তাৰ কাহিনী আছে।"
       }
      ],
      "id": "ak1.sut.u2.01"
+    },
+    {
+     "type": "story",
+     "img": "suteuphaa/kachari-envoys.webp",
+     "title": {
+      "en": "A challenge",
+      "as": "এটা চৰ্ত"
+     },
+     "text": [
+      {
+       "en": "The Kacharis were challenged to dig a canal to the Dikhou in a single night.",
+       "as": "কছাৰীসকলক এক নিশাতে দিখৌলৈকে এটা খাল খান্দিবলৈ চৰ্ত দিয়া হৈছিল।"
+      },
+      {
+       "en": "It was a full-moon night. Ahom soldiers hiding in the forest made the roosters crow early.",
+       "as": "সেইটো আছিল পূৰ্ণিমাৰ নিশা। হাবিত লুকাই থকা আহোম সৈন্যই আগতীয়াকৈ কুকুৰা ডাকিবলৈ বাধ্য কৰিছিল।"
+      },
+      {
+       "en": "The Kacharis thought morning had come and their time was up. They left the land, and the Ahoms took it.",
+       "as": "কছাৰীসকলে ভাবিলে পুৱা হ'ল আৰু সময় শেষ। তেওঁলোকে মাটি এৰি গ'ল, আৰু আহোমসকলে দখল কৰিলে।"
+      }
+     ],
+     "id": "ak1.sut.u3.01"
     },
     {
      "type": "map",
@@ -1387,44 +1452,6 @@
      "id": "ak1.sut.u2.07"
     },
     {
-     "type": "story",
-     "img": "suteuphaa/kachari-envoys.webp",
-     "title": {
-      "en": "A challenge",
-      "as": "এটা চৰ্ত"
-     },
-     "text": [
-      {
-       "en": "An Ahom chronicle tells how the land dispute was settled.",
-       "as": "এখন আহোম বুৰঞ্জীত মাটিৰ বিবাদ কেনেকৈ মীমাংসা হৈছিল, তাৰ কাহিনী আছে।"
-      },
-      {
-       "en": "The Kacharis were challenged to dig a <mark>canal to the Dikhou</mark> in a <mark>single night</mark>.",
-       "as": "কছাৰীসকলক <mark>এক নিশাতে</mark> <mark>দিখৌলৈকে এটা খাল</mark> খান্দিবলৈ চৰ্ত দিয়া হৈছিল।"
-      }
-     ],
-     "id": "ak1.sut.u3.01"
-    },
-    {
-     "type": "story",
-     "art": "rooster",
-     "title": {
-      "en": "Before dawn",
-      "as": "পুৱাৰ আগতে"
-     },
-     "text": [
-      {
-       "en": "It was a <mark>full-moon</mark> night. Ahom soldiers hiding in the forest made the <mark>roosters crow</mark> early.",
-       "as": "সেইটো আছিল <mark>পূৰ্ণিমা</mark>ৰ নিশা। হাবিত লুকাই থকা আহোম সৈন্যই আগতীয়াকৈ <mark>কুকুৰা ডাকিবলৈ</mark> বাধ্য কৰিছিল।"
-      },
-      {
-       "en": "The Kacharis thought morning had come and their time was up. They left the land, and the Ahoms took it.",
-       "as": "কছাৰীসকলে ভাবিলে পুৱা হ'ল আৰু সময় শেষ। তেওঁলোকে মাটি এৰি গ'ল, আৰু আহোমসকলে দখল কৰিলে।"
-      }
-     ],
-     "id": "ak1.sut.u3.02"
-    },
-    {
      "type": "fill",
      "before": {
       "en": "The Kacharis left the land east of the",
@@ -1545,6 +1572,25 @@
      "id": "ak1.suk.u6.01"
     },
     {
+     "type": "story",
+     "art": "calendar",
+     "title": {
+      "en": "Asom Divas",
+      "as": "অসম দিৱস"
+     },
+     "text": [
+      {
+       "en": "Every <mark>2 December</mark>, Assam celebrates [[asom-divas]] (Sukaphaa Divas) to remember his arrival.",
+       "as": "প্ৰতি বছৰে <mark>২ ডিচেম্বৰ</mark>ত তেওঁৰ আগমন সোঁৱৰি [[asom-divas]] (চুকাফা দিৱস) পালন কৰা হয়।"
+      },
+      {
+       "en": "The Assam government made it an official observance in <mark>1996</mark>.",
+       "as": "অসম চৰকাৰে <mark>১৯৯৬</mark> চনত ইয়াক চৰকাৰীভাৱে পালন কৰাৰ সিদ্ধান্ত লয়।"
+      }
+     ],
+     "id": "ak1.suk.u6.05"
+    },
+    {
      "type": "picture",
      "q": {
       "en": "Which one is a moidam?",
@@ -1615,25 +1661,6 @@
       "as": "শুদ্ধ। অসমৰ আগৰ দুটা ক্ষেত্ৰ কাজিৰঙা আৰু মানাহ প্ৰাকৃতিক ক্ষেত্ৰ।"
      },
      "id": "ak1.suk.u6.04"
-    },
-    {
-     "type": "story",
-     "art": "calendar",
-     "title": {
-      "en": "Asom Divas",
-      "as": "অসম দিৱস"
-     },
-     "text": [
-      {
-       "en": "Every <mark>2 December</mark>, Assam celebrates [[asom-divas]] (Sukaphaa Divas) to remember his arrival.",
-       "as": "প্ৰতি বছৰে <mark>২ ডিচেম্বৰ</mark>ত তেওঁৰ আগমন সোঁৱৰি [[asom-divas]] (চুকাফা দিৱস) পালন কৰা হয়।"
-      },
-      {
-       "en": "The Assam government made it an official observance in <mark>1996</mark>.",
-       "as": "অসম চৰকাৰে <mark>১৯৯৬</mark> চনত ইয়াক চৰকাৰীভাৱে পালন কৰাৰ সিদ্ধান্ত লয়।"
-      }
-     ],
-     "id": "ak1.suk.u6.05"
     },
     {
      "type": "spot",
@@ -1863,11 +1890,7 @@
     "id": "ak1.suk.test.02"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. Sukaphaa created the Burhagohain and the Borgohain.<br>2. Sukaphaa created the Borpatrogohain.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. চুকাফাই বুঢ়াগোহাঁই আৰু বৰগোহাঁই সৃষ্টি কৰিছিল।<br>২. চুকাফাই বৰপাত্ৰগোহাঁই সৃষ্টি কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -1892,7 +1915,15 @@
      "en": "Only 1. The Borpatrogohain was created by Suhungmung in 1527.",
      "as": "কেৱল ১। বৰপাত্ৰগোহাঁই ১৫২৭ চনত চুহুংমুঙে সৃষ্টি কৰিছিল।"
     },
-    "id": "ak1.suk.test.03"
+    "id": "ak1.suk.test.03",
+    "before": {
+     "en": "Consider the statements:<br>1. Sukaphaa created the Burhagohain and the Borgohain.<br>2. Sukaphaa created the Borpatrogohain.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. চুকাফাই বুঢ়াগোহাঁই আৰু বৰগোহাঁই সৃষ্টি কৰিছিল।<br>২. চুকাফাই বৰপাত্ৰগোহাঁই সৃষ্টি কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    },
    {
     "type": "tf",
@@ -2227,11 +2258,7 @@
     "id": "ak1.sut.test.06"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. Suteuphaa was the eldest son of Sukaphaa.<br>2. Suteuphaa forced the Kacharis to leave the land west of the Dikhou.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. চুতেউফা চুকাফাৰ জ্যেষ্ঠ পুত্ৰ আছিল।<br>২. চুতেউফাই কছাৰীসকলক দিখৌৰ পশ্চিম পাৰৰ মাটি এৰিবলৈ বাধ্য কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -2256,8 +2283,18 @@
      "en": "Only 1. The Kacharis left the land EAST of the Dikhou.",
      "as": "কেৱল ১। কছাৰীসকলে দিখৌৰ পূব পাৰৰ মাটি এৰিছিল।"
     },
-    "id": "ak1.sut.test.01"
+    "id": "ak1.sut.test.01",
+    "before": {
+     "en": "Consider the statements:<br>1. Suteuphaa was the eldest son of Sukaphaa.<br>2. Suteuphaa forced the Kacharis to leave the land west of the Dikhou.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. চুতেউফা চুকাফাৰ জ্যেষ্ঠ পুত্ৰ আছিল।<br>২. চুতেউফাই কছাৰীসকলক দিখৌৰ পশ্চিম পাৰৰ মাটি এৰিবলৈ বাধ্য কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    }
   ]
- }
+ },
+ "origin_course": "ahom-kingdom",
+ "origin_no": 1
 }

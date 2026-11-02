@@ -79,7 +79,7 @@ function progress(c, m) {
 const subjectOf = (cat, cid) => cat.subjects.find((S) => S.courses.some((e) => e.course === cid));
 const subjectSum = (S, D) => S.courses.filter((e) => D.courses[e.course] && !e.optional).map((e) => progress(D.courses[e.course], D.m)).reduce((a, p) => ({ total: a.total + p.total, done: a.done + p.done }), { total: 0, done: 0 });
 const pct = (p) => (p.total ? Math.round((p.done / p.total) * 100) : 0);
-const FOOT = `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
+const FOOT = `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Sources accompany each lesson. Illustrations are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · প্ৰতিটো পাঠৰ লগত উৎস দিয়া আছে। চিত্ৰবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
 function reviewCard() {
   const due = AXOM.reviewQueue().length;
   return due ? `<a class="review-card" href="lesson.html?review=1"><span class="ic">${ICON.repeat}</span><span><b>${T(B("Daily review", "দৈনিক পুনৰীক্ষণ"))}</b><span class="s">${T(B(`${due} question${due > 1 ? "s" : ""} due · keeps facts fresh for the exam`, `${asNum(due)}টা প্ৰশ্ন বাকী · পৰীক্ষাৰ বাবে তথ্য সতেজ ৰাখে`))}</span></span><span class="go">›</span></a>` : "";
@@ -93,7 +93,7 @@ async function homePage() {
     .map(([id, t]) => `<button class="exam-chip ${exam === id ? "on" : ""}" data-exam="${id}">${T(t)}</button>`).join("");
   // continue: the course last opened, else the first one with progress, else the first live course
   const live = cat.subjects.flatMap((S) => S.courses.filter((e) => D.courses[e.course]).map((e) => D.courses[e.course]));
-  const cur = D.courses[UI.lastCourse] || live.find((c) => progress(c, m).started) || live[0];
+  const cur = (!D.courses[UI.lastCourse]?.archived && D.courses[UI.lastCourse]) || live.find((c) => progress(c, m).started) || live[0];
   let cont = "";
   if (cur) {
     const p = progress(cur, m), S = subjectOf(cat, cur.id);
@@ -108,7 +108,7 @@ async function homePage() {
     const n = S.courses.filter((e) => D.courses[e.course]).length;
     if (!n) return `<button class="subj soon" data-soon style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></button>`;
     const p = subjectSum(S, D);
-    return `<a class="subj" href="index.html?subject=${S.id}" style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span>
+    return `<a class="subj" href="${S.id === "assam-history" ? "index.html?course=assam-history" : `index.html?subject=${S.id}`}" style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span>
       <span class="pill">${T(B(`${n} course${n > 1 ? "s" : ""} · ${p.total} lessons`, `${asNum(n)}টা পাঠ্যক্ৰম · ${asNum(p.total)}টা পাঠ`))}</span><span class="meter"><i style="width:${pct(p)}%"></i></span></a>`;
   }).join("");
   const examName = exam ? T(cat.exams.find((x) => x.id === exam).t) : "ADRE · Assam TET · APSC · Assam Police SI";
@@ -128,6 +128,7 @@ async function homePage() {
 async function subjectPage() {
   const D = await load(), S = D.cat.subjects.find((x) => x.id === SID);
   if (!S || !S.courses.some((e) => D.courses[e.course])) { location.replace("index.html"); return; }
+  if (S.id === "assam-history") { location.replace("index.html?course=assam-history" + (UNLOCK_ALL ? "&all" : "")); return; }
   const p = subjectSum(S, D);
   const rows = S.courses.map((e, i) => {
     const c = D.courses[e.course];
@@ -138,13 +139,13 @@ async function subjectPage() {
   }).join("");
   $("#course").innerHTML = `<section class="c-hero" style="--c:var(--${S.color})">${ROOF}<a class="back-hub" href="index.html">‹ ${T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(B("Subject", "বিষয়"))}</div><h1>${T(S.title)}</h1><p>${T(S.blurb)}</p>
       <span class="meter"><i style="width:${pct(p)}%"></i></span><span class="count">${T(B(`${p.done} of ${p.total} lessons done`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ সম্পূৰ্ণ`))}</span></section>
-    ${reviewCard()}<p class="tab-intro">${T(B("Courses in order of time. New courses are added as they are written and checked.", "সময়ৰ ক্ৰমত পাঠ্যক্ৰম। লিখা আৰু পৰীক্ষা কৰাৰ পিছত নতুন পাঠ্যক্ৰম যোগ হয়।"))}</p>
-    <div class="course-list">${rows}</div>${FOOT}`;
+    ${reviewCard()}<p class="tab-intro">${T(B("Follow the history courses,then revisit themes through culture,heritage and peoples.", "ইতিহাসৰ পাঠ্যক্ৰম অনুসৰণ কৰি সংস্কৃতি,ঐতিহ্য আৰু জনগোষ্ঠীৰ বিষয় পুনৰ পঢ়া।"))}</p>
+    <a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places","সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a><div class="course-list">${rows}</div>${FOOT}`;
   $("#continue").classList.add("hidden");
 }
 async function render() {
   if (!CID) return SID ? subjectPage() : homePage();
-  if (!course) { const D = await load(); course = D.courses[CID]; info = D.m.lessons; if (!course) { location.replace("index.html"); return; } }
+  if (!course) { const D = await load(); course = D.courses[CID]; info = D.m.lessons; const redirect = D.cat.course_redirects?.[CID]; if (redirect) { location.replace(`index.html?course=${redirect}${UNLOCK_ALL ? "&all" : ""}`); return; } if (!course) { location.replace("index.html"); return; } }
   if (UI.lastCourse !== CID) { UI.lastCourse = CID; saveUI(); }
   const S = subjectOf(DATA.cat, CID);
   const TABS = (course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : ALL_TABS[k]]);
@@ -161,9 +162,9 @@ async function render() {
     return { s: UNLOCK_ALL || !prev || doneTest(prev) ? "open" : "locked", id, done, steps };
   };
   const tabs = `<div class="tabs home-tabs" role="tablist">${TABS.map(([k, t]) => `<button class="tab ${UI.tab === k ? "on" : ""}" data-tab="${k}">${T(t)}</button>`).join("")}</div>`;
-  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S ? T(S.title) : "Axomrank"}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
+  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S && S.id !== "assam-history" ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S && S.id !== "assam-history" ? T(S.title) : T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
   const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab }[UI.tab](status, byNo);
-  $("#course").innerHTML = hero + tabs + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Written and checked by people, no AI content. Portraits are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · মানুহে লিখা আৰু পৰীক্ষা কৰা, AI বিষয়বস্তু নাই। প্ৰতিকৃতিবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
+  $("#course").innerHTML = hero + tabs + (CID === "assam-history" ? `<a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places", "সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a>` : "") + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Sources accompany each lesson. Illustrations are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · প্ৰতিটো পাঠৰ লগত উৎস দিয়া আছে। চিত্ৰবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
   // sticky Continue: the next open lesson that is not finished
   const next = course.kings.map((k) => ({ k, st: status(k) })).find((x) => x.st.s === "open");
   const c = $("#continue");

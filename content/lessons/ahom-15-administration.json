@@ -1,0 +1,1433 @@
+{
+ "id": "ahom-15-administration",
+ "course": "assam-history",
+ "no": 37,
+ "version": 1,
+ "eyebrow": {
+  "en": "Assam History · The Ahom state",
+  "as": "অসমৰ ইতিহাস · আহোম শাসনব্যৱস্থা"
+ },
+ "king": {
+  "en": "How the Ahoms ruled",
+  "as": "আহোমৰ শাসনব্যৱস্থা"
+ },
+ "reign": {
+  "en": "Institutions, labour and heritage",
+  "as": "প্ৰতিষ্ঠান, শ্ৰম আৰু ঐতিহ্য"
+ },
+ "portrait": "council.webp",
+ "sources": [
+  {
+   "title": "DIPR Assam, Lachit Barphukan: Assam’s Hero Who Halted the Mughals (2022), printed pp. 41, 43–44, 98",
+   "url": "https://dipr.assam.gov.in/sites/default/files/swf_utility_folder/departments/dipr_webcomindia_org_oid_4/latest/lachit-barphukan-assams-hero-who-halted-the-mughals.pdf",
+   "used_for": "Council and royal succession; officer quotas; western administration; Buranji tradition. PDF pp. 44, 46–47, 101 consulted 2026-11-02."
+  },
+  {
+   "title": "NCERT, Our Pasts II: Tribes, Nomads and Settled Communities",
+   "url": "https://www.ncert.nic.in/textbook/pdf/gess105.pdf",
+   "used_for": "Compulsory rotating paik labour, khels, chronicles and changing religious patronage. Search-index extract consulted; PDF fetch timed out."
+  },
+  {
+   "title": "IGNCA: Tradition of Lokatantra in Ishanya Bharat",
+   "url": "https://bharatmotherofdemocracy.ignca.gov.in/contents/tradition-lokatantra-ishanya-bharat/en",
+   "used_for": "Paiks, professional khels and administrative appeals."
+  },
+  {
+   "title": "UNESCO World Heritage Centre: Moidams, property 1711",
+   "url": "https://whc.unesco.org/en/list/1711",
+   "used_for": "Charaideo royal necropolis, burial tradition and inscription year 2024."
+  },
+  {
+   "title": "Existing Axomrank Pratap Singha lesson and source register",
+   "url": "",
+   "used_for": "Got of three or four paiks; offices established under successive rulers; continuity with lesson 5. Exact sequence of got-size changes left undated."
+  },
+  {
+   "title": "Rajiv Gandhi University IDE, History of North East India (1228–1947), 2016, printed p. 57 (PDF p. 65)",
+   "url": "https://ide.rgu.ac.in/docs/UG_HisI.pdf",
+   "used_for": "Kanri manual service; paikan and apaikan Chamua categories, skills and differing obligations. Actual passage consulted 2026-11-02; simplified distinction used in the story."
+  }
+ ],
+ "review_notes": "Original bilingual draft, 2026-11-02. Fluent Assamese editorial review remains pending. Art is reused modern reconstruction. No claim that all Ahom subjects owed identical service. No fixed date assigned to the change in got size. Full NCERT PDF and specialised scholarship should be checked during editorial review.",
+ "guide": {
+  "timeline": [
+   {
+    "y": "1228",
+    "t": {
+     "en": "Sukaphaa and the early Gohain offices",
+     "as": "চুকাফা আৰু আদি গোহাঁই পদ"
+    }
+   },
+   {
+    "y": "1603–1641",
+    "t": {
+     "en": "Pratap Singha: Borbarua, Borphukan and labour reorganisation",
+     "as": "প্ৰতাপ সিংহ: বৰবৰুৱা, বৰফুকন আৰু শ্ৰমৰ পুনৰ্গঠন"
+    }
+   },
+   {
+    "y": "2024",
+    "t": {
+     "en": "Charaideo moidams enter the World Heritage List",
+     "as": "চৰাইদেউৰ মৈদাম বিশ্ব ঐতিহ্য তালিকাত অন্তৰ্ভুক্ত"
+    }
+   }
+  ]
+ },
+ "map": {
+  "box": [
+   91.3,
+   25.9,
+   95.5,
+   27.5
+  ],
+  "show": [
+   "brahmaputra",
+   "guwahati",
+   "garhgaon",
+   "charaideo"
+  ]
+ },
+ "units": [
+  {
+   "id": "u1",
+   "icon": "scroll",
+   "title": {
+    "en": "Who could check a king?",
+    "as": "ৰজাক কোনে নিয়ন্ত্ৰণ কৰিছিল?"
+   },
+   "learned": [
+    {
+     "en": "The Swargadeo headed the Ahom state",
+     "as": "স্বৰ্গদেউ আহোম ৰাজ্যৰ মুৰব্বী আছিল"
+    },
+    {
+     "en": "The Patra Mantris were five principal ministers",
+     "as": "পাত্ৰ মন্ত্ৰী আছিল পাঁচজন প্ৰধান মন্ত্ৰী"
+    },
+    {
+     "en": "The three great Gohains could influence royal succession",
+     "as": "তিনিজন ডাঙৰীয়াই সিংহাসনৰ উত্তৰাধিকাৰত প্ৰভাৱ পেলাইছিল"
+    },
+    {
+     "en": "Pratap Singha created the Borbarua and Borphukan offices",
+     "as": "প্ৰতাপ সিংহই বৰবৰুৱা আৰু বৰফুকন পদ সৃষ্টি কৰিছিল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "A throne with limits",
+      "as": "সিংহাসনৰো সীমা আছিল"
+     },
+     "text": [
+      {
+       "en": "A king could command an army. Yet powerful ministers could help choose him—or remove him. How did the Ahom state divide power?",
+       "as": "এজন ৰজাই সৈন্যক আদেশ দিব পাৰিছিল। তথাপি শক্তিশালী মন্ত্ৰীয়ে তেওঁক ৰজা পতা বা আঁতৰোৱাত ভূমিকা ল’ব পাৰিছিল। আহোম ৰাজ্যত ক্ষমতা কেনেকৈ ভাগ হৈছিল?"
+      }
+     ],
+     "img": "council.webp",
+     "id": "ak15.u1.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Five beside the throne",
+      "as": "সিংহাসনৰ কাষত পাঁচজন"
+     },
+     "text": [
+      {
+       "en": "The <mark>Patra Mantris</mark> were the Burhagohain, Borgohain, Borpatrogohain, Borbarua and Borphukan. The Swargadeo headed the state.",
+       "as": "<mark>পাত্ৰ মন্ত্ৰী</mark> আছিল বুঢ়াগোহাঁই, বৰগোহাঁই, বৰপাত্ৰগোহাঁই, বৰবৰুৱা আৰু বৰফুকন। স্বৰ্গদেউ আছিল ৰাজ্যৰ মুৰব্বী।"
+      },
+      {
+       "en": "The three great Gohains had special influence over choosing and removing kings. The council was not an elected parliament.",
+       "as": "ৰজা পতা আৰু আঁতৰোৱাত তিনিজন ডাঙৰীয়াৰ বিশেষ প্ৰভাৱ আছিল। এই মন্ত্ৰীসভা নিৰ্বাচিত সংসদ নাছিল।"
+      }
+     ],
+     "img": "council.webp",
+     "id": "ak15.u1.02",
+     "link": {
+      "lessonId": "ahom-05-pratap-singha",
+      "lesson": 27,
+      "unitNo": 1,
+      "unitTitle": {
+       "en": "The Burha Roja’s new officers",
+       "as": "বুঢ়া ৰজাৰ নতুন বিষয়া"
+      },
+      "note": {
+       "en": "Pratap Singha added the Borbarua and Borphukan offices to the growing state.",
+       "as": "প্ৰতাপ সিংহই বিস্তৃত ৰাজ্যত বৰবৰুৱা আৰু বৰফুকন পদ যোগ কৰিছিল।"
+      }
+     }
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Patra Mantris were five kings ruling together.",
+      "as": "পাত্ৰ মন্ত্ৰী আছিল একেলগে শাসন কৰা পাঁচজন ৰজা।"
+     },
+     "answer": false,
+     "why": {
+      "en": "They were principal ministers. The king was the Swargadeo.",
+      "as": "তেওঁলোক প্ৰধান মন্ত্ৰী আছিল। ৰজা আছিল স্বৰ্গদেউ।"
+     },
+     "id": "ak15.u1.03"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "We included the Borbarua and Borphukan.",
+       "as": "আমাৰ মাজত বৰবৰুৱা আৰু বৰফুকন আছিল।"
+      },
+      {
+       "en": "The three great Gohains completed our group.",
+       "as": "তিনিজন ডাঙৰীয়াই আমাৰ দলটো সম্পূৰ্ণ কৰিছিল।"
+      },
+      {
+       "en": "We were the five principal ministers.",
+       "as": "আমি আছিলোঁ পাঁচজন প্ৰধান মন্ত্ৰী।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Patra Mantris",
+       "as": "পাত্ৰ মন্ত্ৰী"
+      },
+      {
+       "en": "Paiks",
+       "as": "পাইকসকল"
+      },
+      {
+       "en": "Buranjis",
+       "as": "বুৰঞ্জীসমূহ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The five offices together formed the Patra Mantris.",
+      "as": "এই পাঁচটা পদ মিলি পাত্ৰ মন্ত্ৰী হৈছিল।"
+     },
+     "id": "ak15.u1.04"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which was not one of the five principal ministerial offices?",
+      "as": "কোনটো পাঁচটা প্ৰধান মন্ত্ৰীৰ পদৰ ভিতৰত নাছিল?"
+     },
+     "options": [
+      {
+       "en": "Borgohain",
+       "as": "বৰগোহাঁই"
+      },
+      {
+       "en": "Borphukan",
+       "as": "বৰফুকন"
+      },
+      {
+       "en": "Bora",
+       "as": "বৰা"
+      },
+      {
+       "en": "Borbarua",
+       "as": "বৰবৰুৱা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Bora was an officer over twenty paiks, not a Patra Mantri.",
+      "as": "বৰা বিশজন পাইকৰ বিষয়া আছিল; পাত্ৰ মন্ত্ৰী নাছিল।"
+     },
+     "id": "ak15.u1.05"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Sukaphaa",
+        "as": "চুকাফা"
+       },
+       {
+        "en": "Burhagohain and Borgohain",
+        "as": "বুঢ়াগোহাঁই আৰু বৰগোহাঁই"
+       }
+      ],
+      [
+       {
+        "en": "Suhungmung",
+        "as": "চুহুংমুং"
+       },
+       {
+        "en": "Borpatrogohain",
+        "as": "বৰপাত্ৰগোহাঁই"
+       }
+      ],
+      [
+       {
+        "en": "Pratap Singha",
+        "as": "প্ৰতাপ সিংহ"
+       },
+       {
+        "en": "Borbarua and Borphukan",
+        "as": "বৰবৰুৱা আৰু বৰফুকন"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The council grew as the kingdom expanded; these offices did not all begin together.",
+      "as": "ৰাজ্য বিস্তাৰৰ লগে লগে মন্ত্ৰীসভাও বাঢ়িছিল; সকলো পদ একে সময়তে সৃষ্টি হোৱা নাছিল।"
+     },
+     "id": "ak15.u1.06"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Special influence over royal succession belonged to the",
+      "as": "ৰজা পতা আৰু আঁতৰোৱাত বিশেষ প্ৰভাৱ আছিল"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Three great Gohains",
+       "as": "তিনিজন ডাঙৰীয়া"
+      },
+      {
+       "en": "Mughal governors",
+       "as": "মোগল শাসকসকলৰ"
+      },
+      {
+       "en": "British commissioners",
+       "as": "ব্ৰিটিছ কমিচনাৰসকলৰ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The great Gohains could check royal power, although this did not make the state a modern democracy.",
+      "as": "ডাঙৰীয়াসকলে ৰজাৰ ক্ষমতা নিয়ন্ত্ৰণ কৰিব পাৰিছিল; ইয়াৰ অৰ্থ আধুনিক গণতন্ত্ৰ নাছিল।"
+     },
+     "id": "ak15.u1.07"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "icon": "scroll",
+   "title": {
+    "en": "The state needed your labour",
+    "as": "ৰাজ্যক লাগিছিল তোমাৰ শ্ৰম"
+   },
+   "learned": [
+    {
+     "en": "A paik owed service to the state",
+     "as": "পাইকে ৰাজ্যক সেৱা দিব লাগিছিল"
+    },
+    {
+     "en": "A got organised rotating service",
+     "as": "গোটে পাল পাতি সেৱা দিয়াৰ ব্যৱস্থা কৰিছিল"
+    },
+    {
+     "en": "Khels organised work and manpower",
+     "as": "খেলে কাম আৰু লোকবল সংগঠিত কৰিছিল"
+    },
+    {
+     "en": "Kanri and Chamua paiks had different service obligations",
+     "as": "কাঁড়ী আৰু চমুৱা পাইকৰ সেৱাৰ দায়িত্ব বেলেগ আছিল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Who built the embankment?",
+      "as": "মথাউৰি কোনে সাজিছিল?"
+     },
+     "text": [
+      {
+       "en": "Armies needed boats; fields needed embankments. Ahom rulers obtained much of this work through <mark>paik service</mark>, an obligation imposed on adult men.",
+       "as": "সৈন্যক নাও লাগিছিল; পথাৰক মথাউৰি লাগিছিল। আহোম ৰজাই এইবোৰৰ বহু কাম <mark>পাইকৰ সেৱা</mark>ৰ জৰিয়তে কৰাইছিল। প্ৰাপ্তবয়স্ক পুৰুষে এই সেৱা দিব লাগিছিল।"
+      }
+     ],
+     "img": "paiks.webp",
+     "id": "ak15.u2.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "A turn away from home",
+      "as": "ঘৰৰ পৰা আঁতৰত এটা পাল"
+     },
+     "text": [
+      {
+       "en": "Paiks were grouped into a <mark>got</mark>: commonly four men, later three. Men served by turns while their companions helped maintain the household and fields.",
+       "as": "পাইকক <mark>গোট</mark>ত ভাগ কৰা হৈছিল: সাধাৰণতে চাৰিজন, পিছত তিনিজন। পাল পাতি সেৱা দিওঁতে সংগীসকলে ঘৰ আৰু খেতিৰ কাম চম্ভালিছিল।"
+      },
+      {
+       "en": "A <mark>khel</mark> organised manpower, often for a particular occupation. Boat builders and other workers supplied skills the state needed.",
+       "as": "<mark>খেল</mark>ে লোকবল সংগঠিত কৰিছিল, প্ৰায়ে নিৰ্দিষ্ট বৃত্তিৰ বাবে। নাওসজা আদি কামৰ জৰিয়তে কাৰিকৰে ৰাজ্যক প্ৰয়োজনীয় সেৱা দিছিল।"
+      }
+     ],
+     "img": "paiks.webp",
+     "id": "ak15.u2.02"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Service was not equal",
+      "as": "সেৱা সকলোৰে একে নাছিল"
+     },
+     "text": [
+      {
+       "en": "<mark>Kanri paiks</mark> supplied manual labour and military service. <mark>Chamua paiks</mark> included skilled people and office-holders whose service was treated differently.",
+       "as": "<mark>কাঁড়ী পাইকে</mark> শাৰীৰিক শ্ৰম আৰু সামৰিক সেৱা দিছিল। <mark>চমুৱা পাইক</mark>ৰ ভিতৰত দক্ষ লোক আৰু বিষয়াও আছিল; তেওঁলোকৰ সেৱাৰ নিয়ম বেলেগ আছিল।"
+      },
+      {
+       "en": "The categories remind us that the state did not demand the same work from everyone.",
+       "as": "এই ভাগবোৰে মনত পেলায় যে ৰাজ্যই সকলোৰে পৰা একে কাম বিচৰা নাছিল।"
+      }
+     ],
+     "img": "paiks.webp",
+     "id": "ak15.u2.classes-story"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The small group arranging turns of service was the",
+      "as": "পাল পাতি সেৱা দিয়া সৰু দলটো আছিল"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Got",
+       "as": "গোট"
+      },
+      {
+       "en": "Khel",
+       "as": "খেল"
+      },
+      {
+       "en": "Patra Mantris",
+       "as": "পাত্ৰ মন্ত্ৰী"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A got arranged rotation; a khel was a wider organisation of manpower.",
+      "as": "গোটে পালৰ ব্যৱস্থা কৰিছিল; খেল আছিল লোকবলৰ বৃহত্তৰ সংগঠন।"
+     },
+     "id": "ak15.u2.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Paiks served only as soldiers; they never did public works.",
+      "as": "পাইকে কেৱল সৈনিক হিচাপেহে সেৱা দিছিল; ৰাজহুৱা কাম কৰা নাছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "They could fight, build boats, and work on embankments and other state projects.",
+      "as": "তেওঁলোকে যুদ্ধ, নাওসজা, মথাউৰি আৰু ৰাজ্যৰ আন কাম কৰিছিল।"
+     },
+     "id": "ak15.u2.04"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Paik",
+        "as": "পাইক"
+       },
+       {
+        "en": "A man owing state service",
+        "as": "ৰাজ্যক সেৱা দিবলগীয়া লোক"
+       }
+      ],
+      [
+       {
+        "en": "Got",
+        "as": "গোট"
+       },
+       {
+        "en": "A small rotation group",
+        "as": "পাল পাতি সেৱা দিয়া সৰু দল"
+       }
+      ],
+      [
+       {
+        "en": "Khel",
+        "as": "খেল"
+       },
+       {
+        "en": "Organisation of manpower and work",
+        "as": "লোকবল আৰু কামৰ সংগঠন"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Keep the person, small group and wider organisation distinct.",
+      "as": "লোকজন, সৰু দল আৰু বৃহত্তৰ সংগঠনৰ পাৰ্থক্য মনত ৰাখা।"
+     },
+     "id": "ak15.u2.05"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "My name describes an obligation, not a royal title.",
+       "as": "মোৰ নামটোৱে দায়িত্ব বুজায়; ৰাজকীয় উপাধি নহয়।"
+      },
+      {
+       "en": "I might build a boat or serve in war.",
+       "as": "মই নাও সাজিবও পাৰোঁ বা যুদ্ধতো সেৱা দিব পাৰোঁ।"
+      },
+      {
+       "en": "I owe labour to the Ahom state.",
+       "as": "মই আহোম ৰাজ্যক শ্ৰম দিব লাগিছিল।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Paik",
+       "as": "পাইক"
+      },
+      {
+       "en": "Swargadeo",
+       "as": "স্বৰ্গদেউ"
+      },
+      {
+       "en": "Mughal emperor",
+       "as": "মোগল সম্ৰাট"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A paik supplied labour and military service. This was compulsory, not simply voluntary work.",
+      "as": "পাইকে শ্ৰম আৰু সামৰিক সেৱা দিছিল। এইটো বাধ্যতামূলক আছিল; কেৱল স্বেচ্ছামূলক কাম নাছিল।"
+     },
+     "id": "ak15.u2.06"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which belongs to the royal council rather than the labour system?",
+      "as": "কোনটো শ্ৰম ব্যৱস্থাৰ সলনি ৰাজমন্ত্ৰীসভাৰ অংশ আছিল?"
+     },
+     "options": [
+      {
+       "en": "Paik",
+       "as": "পাইক"
+      },
+      {
+       "en": "Got",
+       "as": "গোট"
+      },
+      {
+       "en": "Khel",
+       "as": "খেল"
+      },
+      {
+       "en": "Borpatrogohain",
+       "as": "বৰপাত্ৰগোহাঁই"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "The Borpatrogohain was one of the five principal ministers.",
+      "as": "বৰপাত্ৰগোহাঁই পাঁচজন প্ৰধান মন্ত্ৰীৰ এজন আছিল।"
+     },
+     "id": "ak15.u2.07"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Kanri and Chamua describe two categories of paiks.",
+      "as": "কাঁড়ী আৰু চমুৱা পাইকৰ দুটা শ্ৰেণী।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Kanri paiks performed manual and military service; Chamua included skilled service and privileged categories.",
+      "as": "কাঁড়ী পাইকে শাৰীৰিক আৰু সামৰিক সেৱা দিছিল; চমুৱাৰ ভিতৰত দক্ষ সেৱা আৰু সুবিধাপ্ৰাপ্ত শ্ৰেণী আছিল।"
+     },
+     "id": "ak15.u2.classes-check"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "icon": "scroll",
+   "title": {
+    "en": "Read the ranks",
+    "as": "পদবী চিনা"
+   },
+   "learned": [
+    {
+     "en": "A Bora commanded twenty paiks",
+     "as": "বৰাৰ অধীনত বিশজন পাইক আছিল"
+    },
+    {
+     "en": "A Saikia commanded one hundred paiks",
+     "as": "শইকীয়াৰ অধীনত এশজন পাইক আছিল"
+    },
+    {
+     "en": "A Hazarika commanded one thousand paiks",
+     "as": "হাজৰিকাৰ অধীনত এহাজাৰজন পাইক আছিল"
+    },
+    {
+     "en": "The Borphukan governed the western province from Guwahati in the later period",
+     "as": "পিছৰ কালত বৰফুকনে গুৱাহাটীৰ পৰা পশ্চিম প্ৰদেশ শাসন কৰিছিল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Names that carried numbers",
+      "as": "সংখ্যা বুজোৱা পদবী"
+     },
+     "text": [
+      {
+       "en": "Twenty men under a <mark>Bora</mark>, a hundred under a <mark>Saikia</mark>, a thousand under a <mark>Hazarika</mark>: ranks helped organise the state’s manpower.",
+       "as": "<mark>বৰা</mark>ৰ অধীনত বিশজন, <mark>শইকীয়া</mark>ৰ অধীনত এশজন, <mark>হাজৰিকা</mark>ৰ অধীনত এহাজাৰজন: পদবীয়ে ৰাজ্যৰ লোকবল সংগঠিত কৰাত সহায় কৰিছিল।"
+      }
+     ],
+     "img": "paiks.webp",
+     "id": "ak15.u3.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "A western seat of power",
+      "as": "পশ্চিমৰ ক্ষমতাৰ কেন্দ্ৰ"
+     },
+     "text": [
+      {
+       "en": "The [[borphukan]] held both military and administrative duties in the west. His later headquarters were at <mark>Guwahati</mark>.",
+       "as": "পশ্চিমত [[borphukan]]ৰ সামৰিক আৰু প্ৰশাসনিক দুয়োটা দায়িত্ব আছিল। পিছলৈ তেওঁৰ মুখ্য কাৰ্যালয় আছিল <mark>গুৱাহাটী</mark>ত।"
+      },
+      {
+       "en": "Phukan and Barua were other important ranks. An office could combine duties that modern governments divide between separate departments.",
+       "as": "ফুকন আৰু বৰুৱাও গুৰুত্বপূৰ্ণ পদ আছিল। আধুনিক চৰকাৰে পৃথক বিভাগক দিয়া একাধিক দায়িত্ব তেতিয়া এটা পদতে থাকিব পাৰিছিল।"
+      }
+     ],
+     "img": "council.webp",
+     "id": "ak15.u3.02"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Bora",
+        "as": "বৰা"
+       },
+       {
+        "en": "20 paiks",
+        "as": "২০ জন পাইক"
+       }
+      ],
+      [
+       {
+        "en": "Saikia",
+        "as": "শইকীয়া"
+       },
+       {
+        "en": "100 paiks",
+        "as": "১০০ জন পাইক"
+       }
+      ],
+      [
+       {
+        "en": "Hazarika",
+        "as": "হাজৰিকা"
+       },
+       {
+        "en": "1,000 paiks",
+        "as": "১,০০০ জন পাইক"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Use the number ladder: 20 → 100 → 1,000.",
+      "as": "সংখ্যাৰ জখলাডাল মনত ৰাখা: ২০ → ১০০ → ১,০০০।"
+     },
+     "id": "ak15.u3.03"
+    },
+    {
+     "type": "order",
+     "items": [
+      {
+       "en": "Bora: twenty",
+       "as": "বৰা: বিশ"
+      },
+      {
+       "en": "Saikia: one hundred",
+       "as": "শইকীয়া: এশ"
+      },
+      {
+       "en": "Hazarika: one thousand",
+       "as": "হাজৰিকা: এহাজাৰ"
+      }
+     ],
+     "why": {
+      "en": "This is the increasing size of the groups commanded.",
+      "as": "এইটো অধীনস্থ পাইকৰ সংখ্যা সৰুৰ পৰা ডাঙৰলৈ সজোৱা ক্ৰম।"
+     },
+     "id": "ak15.u3.04"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "A Saikia commanded more paiks than a Hazarika.",
+      "as": "শইকীয়াৰ অধীনত হাজৰিকাতকৈ অধিক পাইক আছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "A Saikia commanded 100; a Hazarika, 1,000.",
+      "as": "শইকীয়াৰ অধীনত ১০০ জন; হাজৰিকাৰ অধীনত ১,০০০ জন।"
+     },
+     "id": "ak15.u3.05"
+    },
+    {
+     "type": "map",
+     "q": {
+      "en": "Tap the later headquarters of the Borphukan.",
+      "as": "বৰফুকনৰ পিছৰ মুখ্য কাৰ্যালয়ৰ ঠাই টিপা।"
+     },
+     "target": "guwahati",
+     "choices": [
+      "guwahati",
+      "garhgaon",
+      "charaideo"
+     ],
+     "why": {
+      "en": "Guwahati was the western administrative centre. Do not confuse it with the royal capital at Garhgaon.",
+      "as": "গুৱাহাটী পশ্চিমৰ প্ৰশাসনিক কেন্দ্ৰ আছিল। ৰাজধানী গড়গাঁৱৰ সৈতে ইয়াক খেলিমেলি নকৰিবা।"
+     },
+     "id": "ak15.u3.06"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I governed the western province.",
+       "as": "মই পশ্চিম প্ৰদেশ শাসন কৰিছিলোঁ।"
+      },
+      {
+       "en": "My duties included military command.",
+       "as": "মোৰ দায়িত্বৰ ভিতৰত সামৰিক নেতৃত্বও আছিল।"
+      },
+      {
+       "en": "Lachit held my office.",
+       "as": "লাচিতে মোৰ পদটো ধৰিছিল।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Borphukan",
+       "as": "বৰফুকন"
+      },
+      {
+       "en": "Bora",
+       "as": "বৰা"
+      },
+      {
+       "en": "Saikia",
+       "as": "শইকীয়া"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Lachit Borphukan was a minister and commander, not an Ahom king.",
+      "as": "লাচিত বৰফুকন মন্ত্ৰী আৰু সেনাপতি আছিল; আহোম ৰজা নাছিল।"
+     },
+     "id": "ak15.u3.07"
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "icon": "scroll",
+   "title": {
+    "en": "Reading what survived",
+    "as": "বাচি থকা নথি পঢ়া"
+   },
+   "learned": [
+    {
+     "en": "Buranjis are historical chronicles",
+     "as": "বুৰঞ্জী হৈছে ঐতিহাসিক ঘটনাৰ বিবৰণ"
+    },
+    {
+     "en": "Buranjis were written in Tai-Ahom and Assamese",
+     "as": "টাই-আহোম আৰু অসমীয়াত বুৰঞ্জী লিখা হৈছিল"
+    },
+    {
+     "en": "Land grants record named gifts and privileges",
+     "as": "ভূমিদানৰ নথিত দান আৰু অধিকাৰৰ উল্লেখ থাকে"
+    },
+    {
+     "en": "A coin or grant answers different questions from a chronicle",
+     "as": "মুদ্ৰা বা দানপত্ৰ আৰু বুৰঞ্জীয়ে বেলেগ বেলেগ প্ৰশ্নৰ উত্তৰ দিয়ে"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "A kingdom kept records",
+      "as": "ৰাজ্যই নথি ৰাখিছিল"
+     },
+     "text": [
+      {
+       "en": "Wars ended, but written accounts remained. [[buranji|Buranjis]] recorded rulers, campaigns and diplomatic dealings in <mark>Tai-Ahom and Assamese</mark>.",
+       "as": "যুদ্ধ শেষ হৈছিল, কিন্তু লিখিত বিবৰণ থাকি গ’ল। [[buranji|বুৰঞ্জী]]ত ৰজা, অভিযান আৰু কূটনৈতিক সম্পৰ্কৰ কথা <mark>টাই-আহোম আৰু অসমীয়া</mark>ত লিখা হৈছিল।"
+      }
+     ],
+     "img": "chronicles.webp",
+     "id": "ak15.u4.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "One object, one question",
+      "as": "এটা বস্তু, এটা প্ৰশ্ন"
+     },
+     "text": [
+      {
+       "en": "A land grant can identify a donor and a recipient. A coin can carry a ruler’s name. A chronicle can explain a campaign.",
+       "as": "ভূমিদানৰ নথিয়ে দাতা আৰু প্ৰাপকক চিনাব পাৰে। মুদ্ৰাত ৰজাৰ নাম থাকিব পাৰে। বুৰঞ্জীয়ে এটা অভিযানৰ বিবৰণ দিব পাৰে।"
+      },
+      {
+       "en": "Use these sources together. A court account does not automatically tell us what every farmer thought.",
+       "as": "এই উৎসবোৰ একেলগে ব্যৱহাৰ কৰা। দৰবাৰৰ বিবৰণে প্ৰতিজন খেতিয়কে কি ভাবিছিল তাক নিজে নিজে জনাব নোৱাৰে।"
+      }
+     ],
+     "img": "chronicles.webp",
+     "id": "ak15.u4.02"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I preserve accounts of rulers and campaigns.",
+       "as": "মই ৰজা আৰু অভিযানৰ বিবৰণ ৰাখোঁ।"
+      },
+      {
+       "en": "Tai-Ahom and Assamese are associated with me.",
+       "as": "টাই-আহোম আৰু অসমীয়া মোৰ সৈতে জড়িত।"
+      },
+      {
+       "en": "I am a historical chronicle.",
+       "as": "মই ঐতিহাসিক ঘটনাৰ লিখিত বিবৰণ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Buranji",
+       "as": "বুৰঞ্জী"
+      },
+      {
+       "en": "Moidam",
+       "as": "মৈদাম"
+      },
+      {
+       "en": "Khel",
+       "as": "খেল"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A Buranji is a chronicle; a moidam is a burial mound.",
+      "as": "বুৰঞ্জী ঘটনাৰ বিবৰণ; মৈদাম সমাধিৰ ঢিপি।"
+     },
+     "id": "ak15.u4.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "All Buranjis were written only in Persian.",
+      "as": "সকলো বুৰঞ্জী কেৱল ফাৰ্চী ভাষাত লিখা হৈছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The Ahom chronicle tradition includes Tai-Ahom and Assamese works.",
+      "as": "আহোম বুৰঞ্জী পৰম্পৰাত টাই-আহোম আৰু অসমীয়া ৰচনা আছে।"
+     },
+     "id": "ak15.u4.04"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Buranji",
+        "as": "বুৰঞ্জী"
+       },
+       {
+        "en": "A campaign’s written account",
+        "as": "অভিযানৰ লিখিত বিবৰণ"
+       }
+      ],
+      [
+       {
+        "en": "Land grant",
+        "as": "ভূমিদানৰ নথি"
+       },
+       {
+        "en": "A donor and a recipient",
+        "as": "দাতা আৰু প্ৰাপক"
+       }
+      ],
+      [
+       {
+        "en": "Coin",
+        "as": "মুদ্ৰা"
+       },
+       {
+        "en": "A ruler’s name on money",
+        "as": "মুদ্ৰাত ৰজাৰ নাম"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Ask what each surviving source can actually establish.",
+      "as": "বাচি থকা প্ৰতিটো উৎসই আচলতে কি প্ৰমাণ কৰিব পাৰে সেয়া ভাবা।"
+     },
+     "id": "ak15.u4.05"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which is a modern illustration rather than a surviving historical record?",
+      "as": "কোনটো অতীতৰ নথিৰ সলনি আধুনিক চিত্ৰণ?"
+     },
+     "options": [
+      {
+       "en": "A copper-plate grant",
+       "as": "তাম্ৰপত্ৰৰ দানলিপি"
+      },
+      {
+       "en": "A manuscript Buranji",
+       "as": "হাতে লিখা বুৰঞ্জী"
+      },
+      {
+       "en": "A newly painted royal scene",
+       "as": "নতুনকৈ অঁকা ৰাজদৰবাৰৰ দৃশ্য"
+      },
+      {
+       "en": "An Ahom coin",
+       "as": "আহোম মুদ্ৰা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The paintings help us imagine the topic. They do not prove the exact appearance of a past scene.",
+      "as": "চিত্ৰই বিষয়টো কল্পনা কৰাত সহায় কৰে। অতীতৰ দৃশ্য হুবহু কেনে আছিল তাৰ প্ৰমাণ নহয়।"
+     },
+     "id": "ak15.u4.06"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "To identify the recipient of a specific land donation, first look for a",
+      "as": "এটা নিৰ্দিষ্ট ভূমিদানৰ প্ৰাপক জানিবলৈ প্ৰথমে চাবা"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "land grant",
+       "as": "ভূমিদানৰ নথি"
+      },
+      {
+       "en": "modern portrait",
+       "as": "আধুনিক প্ৰতিকৃতি"
+      },
+      {
+       "en": "rank ladder",
+       "as": "পদবীৰ ক্ৰম"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "A grant can name the donor, recipient and terms; confirm the actual wording.",
+      "as": "দানপত্ৰত দাতা, প্ৰাপক আৰু চৰ্ত থাকিব পাৰে; মূল পাঠ মিলাই চাব লাগে।"
+     },
+     "id": "ak15.u4.07"
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "icon": "scroll",
+   "title": {
+    "en": "Belief and memory",
+    "as": "বিশ্বাস আৰু স্মৃতি"
+   },
+   "learned": [
+    {
+     "en": "Satras were centres of the Vaishnava tradition",
+     "as": "সত্ৰ বৈষ্ণৱ পৰম্পৰাৰ কেন্দ্ৰ আছিল"
+    },
+    {
+     "en": "Royal relations with satras changed over time",
+     "as": "সত্ৰৰ সৈতে ৰাজসম্পৰ্ক সময়ে সময়ে সলনি হৈছিল"
+    },
+    {
+     "en": "Charaideo preserves the Ahom royal moidams",
+     "as": "চৰাইদেউত আহোম ৰাজবংশৰ মৈদাম আছে"
+    },
+    {
+     "en": "The Charaideo moidams entered the World Heritage List in 2024",
+     "as": "২০২৪ চনত চৰাইদেউৰ মৈদাম বিশ্ব ঐতিহ্য তালিকাত সোমায়"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Not one unchanging faith",
+      "as": "বিশ্বাস সদায় একে নাছিল"
+     },
+     "text": [
+      {
+       "en": "Ahom society brought together different traditions. Royal support for Vaishnava [[satra|satras]] coexisted with other religious practices; some reigns also saw conflict.",
+       "as": "আহোম সমাজত বিভিন্ন পৰম্পৰা মিলিছিল। বৈষ্ণৱ [[satra|সত্ৰ]]লৈ ৰাজপৃষ্ঠপোষকতাৰ লগতে আন ধৰ্মীয় আচাৰো আছিল; কিছুমান ৰাজত্বকালত সংঘাতো হৈছিল।"
+      }
+     ],
+     "img": "satra.webp",
+     "id": "ak15.u5.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Memory beneath the earth",
+      "as": "মাটিৰ তলৰ স্মৃতি"
+     },
+     "text": [
+      {
+       "en": "At [[charaideo]], royal burial mounds called [[moidam|moidams]] preserve a different part of Ahom heritage: the Tai-Ahom tradition of honouring the dead.",
+       "as": "[[charaideo]]ৰ [[moidam|মৈদাম]] নামৰ ৰাজকীয় সমাধিৰ ঢিপিবোৰে আহোম ঐতিহ্যৰ আন এটা দিশ ধৰি ৰাখিছে: মৃতকক সন্মান জনোৱা টাই-আহোম পৰম্পৰা।"
+      },
+      {
+       "en": "The site entered UNESCO’s World Heritage List in <mark>2024</mark>. A moidam is a burial monument, not a temple or a palace.",
+       "as": "<mark>২০২৪</mark> চনত ঠাইখন ইউনেস্কোৰ বিশ্ব ঐতিহ্য তালিকাত সোমায়। মৈদাম সমাধিসৌধ; মন্দিৰ বা ৰাজপ্ৰাসাদ নহয়।"
+      }
+     ],
+     "img": "moidams.webp",
+     "id": "ak15.u5.02"
+    },
+    {
+     "type": "map",
+     "q": {
+      "en": "Tap the place known for royal moidams.",
+      "as": "ৰাজকীয় মৈদামৰ বাবে জনাজাত ঠাই টিপা।"
+     },
+     "target": "charaideo",
+     "choices": [
+      "charaideo",
+      "guwahati",
+      "garhgaon"
+     ],
+     "why": {
+      "en": "Charaideo was the royal necropolis, even after the capital moved.",
+      "as": "ৰাজধানী সলনি হোৱাৰ পিছতো চৰাইদেউ ৰাজকীয় সমাধিস্থল হৈ থাকিল।"
+     },
+     "id": "ak15.u5.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Charaideo moidams entered the World Heritage List in 1826.",
+      "as": "১৮২৬ চনত চৰাইদেউৰ মৈদাম বিশ্ব ঐতিহ্য তালিকাত সোমাইছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The inscription year was 2024. Yandabo belongs to 1826.",
+      "as": "তালিকাভুক্তিৰ বছৰ ২০২৪। ইয়াণ্ডাবু সন্ধিৰ বছৰ ১৮২৬।"
+     },
+     "id": "ak15.u5.04"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Satra",
+        "as": "সত্ৰ"
+       },
+       {
+        "en": "Vaishnava institution",
+        "as": "বৈষ্ণৱ অনুষ্ঠান"
+       }
+      ],
+      [
+       {
+        "en": "Moidam",
+        "as": "মৈদাম"
+       },
+       {
+        "en": "Burial mound",
+        "as": "সমাধিৰ ঢিপি"
+       }
+      ],
+      [
+       {
+        "en": "Buranji",
+        "as": "বুৰঞ্জী"
+       },
+       {
+        "en": "Historical chronicle",
+        "as": "ঐতিহাসিক ঘটনাৰ বিবৰণ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "An institution, a monument and a written source are different kinds of heritage.",
+      "as": "অনুষ্ঠান, সৌধ আৰু লিখিত উৎস ঐতিহ্যৰ বেলেগ বেলেগ ৰূপ।"
+     },
+     "id": "ak15.u5.05"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which is not an Ahom administrative or labour unit?",
+      "as": "কোনটো আহোম প্ৰশাসন বা শ্ৰমৰ একক নহয়?"
+     },
+     "options": [
+      {
+       "en": "Got",
+       "as": "গোট"
+      },
+      {
+       "en": "Khel",
+       "as": "খেল"
+      },
+      {
+       "en": "Bora’s command",
+       "as": "বৰাৰ অধীনৰ দল"
+      },
+      {
+       "en": "Moidam",
+       "as": "মৈদাম"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "A moidam is a burial monument; it did not organise paiks.",
+      "as": "মৈদাম সমাধিসৌধ; ই পাইক সংগঠিত কৰা নাছিল।"
+     },
+     "id": "ak15.u5.06"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The Charaideo moidams became a World Heritage site in",
+      "as": "চৰাইদেউৰ মৈদাম বিশ্ব ঐতিহ্য ক্ষেত্ৰ হয়"
+     },
+     "after": {
+      "en": ".",
+      "as": "চনত।"
+     },
+     "options": [
+      {
+       "en": "2024",
+       "as": "২০২৪"
+      },
+      {
+       "en": "1228",
+       "as": "১২২৮"
+      },
+      {
+       "en": "1826",
+       "as": "১৮২৬"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "2024 is the heritage-list date, not the date when the mounds were first built.",
+      "as": "২০২৪ তালিকাভুক্তিৰ বছৰ; মৈদামবোৰ প্ৰথম সজাৰ বছৰ নহয়।"
+     },
+     "id": "ak15.u5.07"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Lesson test",
+   "as": "পাঠৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "type": "odd",
+    "q": {
+     "en": "Which was not one of the five principal ministerial offices?",
+     "as": "কোনটো পাঁচটা প্ৰধান মন্ত্ৰীৰ পদৰ ভিতৰত নাছিল?"
+    },
+    "options": [
+     {
+      "en": "Borgohain",
+      "as": "বৰগোহাঁই"
+     },
+     {
+      "en": "Borphukan",
+      "as": "বৰফুকন"
+     },
+     {
+      "en": "Bora",
+      "as": "বৰা"
+     },
+     {
+      "en": "Borbarua",
+      "as": "বৰবৰুৱা"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Bora was an officer over twenty paiks, not a Patra Mantri.",
+     "as": "বৰা বিশজন পাইকৰ বিষয়া আছিল; পাত্ৰ মন্ত্ৰী নাছিল।"
+    },
+    "id": "ak15.test.01"
+   },
+   {
+    "type": "inline",
+    "before": {
+     "en": "The small group arranging turns of service was the",
+     "as": "পাল পাতি সেৱা দিয়া সৰু দলটো আছিল"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    },
+    "options": [
+     {
+      "en": "Got",
+      "as": "গোট"
+     },
+     {
+      "en": "Khel",
+      "as": "খেল"
+     },
+     {
+      "en": "Patra Mantris",
+      "as": "পাত্ৰ মন্ত্ৰী"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "A got arranged rotation; a khel was a wider organisation of manpower.",
+     "as": "গোটে পালৰ ব্যৱস্থা কৰিছিল; খেল আছিল লোকবলৰ বৃহত্তৰ সংগঠন।"
+    },
+    "id": "ak15.test.02"
+   },
+   {
+    "type": "match",
+    "pairs": [
+     [
+      {
+       "en": "Bora",
+       "as": "বৰা"
+      },
+      {
+       "en": "20 paiks",
+       "as": "২০ জন পাইক"
+      }
+     ],
+     [
+      {
+       "en": "Saikia",
+       "as": "শইকীয়া"
+      },
+      {
+       "en": "100 paiks",
+       "as": "১০০ জন পাইক"
+      }
+     ],
+     [
+      {
+       "en": "Hazarika",
+       "as": "হাজৰিকা"
+      },
+      {
+       "en": "1,000 paiks",
+       "as": "১,০০০ জন পাইক"
+      }
+     ]
+    ],
+    "why": {
+     "en": "Use the number ladder: 20 → 100 → 1,000.",
+     "as": "সংখ্যাৰ জখলাডাল মনত ৰাখা: ২০ → ১০০ → ১,০০০।"
+    },
+    "id": "ak15.test.03"
+   },
+   {
+    "type": "map",
+    "q": {
+     "en": "Tap the later headquarters of the Borphukan.",
+     "as": "বৰফুকনৰ পিছৰ মুখ্য কাৰ্যালয়ৰ ঠাই টিপা।"
+    },
+    "target": "guwahati",
+    "choices": [
+     "guwahati",
+     "garhgaon",
+     "charaideo"
+    ],
+    "why": {
+     "en": "Guwahati was the western administrative centre. Do not confuse it with the royal capital at Garhgaon.",
+     "as": "গুৱাহাটী পশ্চিমৰ প্ৰশাসনিক কেন্দ্ৰ আছিল। ৰাজধানী গড়গাঁৱৰ সৈতে ইয়াক খেলিমেলি নকৰিবা।"
+    },
+    "id": "ak15.test.04"
+   },
+   {
+    "type": "whoami",
+    "clues": [
+     {
+      "en": "I preserve accounts of rulers and campaigns.",
+      "as": "মই ৰজা আৰু অভিযানৰ বিবৰণ ৰাখোঁ।"
+     },
+     {
+      "en": "Tai-Ahom and Assamese are associated with me.",
+      "as": "টাই-আহোম আৰু অসমীয়া মোৰ সৈতে জড়িত।"
+     },
+     {
+      "en": "I am a historical chronicle.",
+      "as": "মই ঐতিহাসিক ঘটনাৰ লিখিত বিবৰণ।"
+     }
+    ],
+    "options": [
+     {
+      "en": "Buranji",
+      "as": "বুৰঞ্জী"
+     },
+     {
+      "en": "Moidam",
+      "as": "মৈদাম"
+     },
+     {
+      "en": "Khel",
+      "as": "খেল"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "A Buranji is a chronicle; a moidam is a burial mound.",
+     "as": "বুৰঞ্জী ঘটনাৰ বিবৰণ; মৈদাম সমাধিৰ ঢিপি।"
+    },
+    "id": "ak15.test.05"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "All Buranjis were written only in Persian.",
+     "as": "সকলো বুৰঞ্জী কেৱল ফাৰ্চী ভাষাত লিখা হৈছিল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "The Ahom chronicle tradition includes Tai-Ahom and Assamese works.",
+     "as": "আহোম বুৰঞ্জী পৰম্পৰাত টাই-আহোম আৰু অসমীয়া ৰচনা আছে।"
+    },
+    "id": "ak15.test.06"
+   },
+   {
+    "type": "map",
+    "q": {
+     "en": "Tap the place known for royal moidams.",
+     "as": "ৰাজকীয় মৈদামৰ বাবে জনাজাত ঠাই টিপা।"
+    },
+    "target": "charaideo",
+    "choices": [
+     "charaideo",
+     "guwahati",
+     "garhgaon"
+    ],
+    "why": {
+     "en": "Charaideo was the royal necropolis, even after the capital moved.",
+     "as": "ৰাজধানী সলনি হোৱাৰ পিছতো চৰাইদেউ ৰাজকীয় সমাধিস্থল হৈ থাকিল।"
+    },
+    "id": "ak15.test.07"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "The Charaideo moidams entered the World Heritage List in 1826.",
+     "as": "১৮২৬ চনত চৰাইদেউৰ মৈদাম বিশ্ব ঐতিহ্য তালিকাত সোমাইছিল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "The inscription year was 2024. Yandabo belongs to 1826.",
+     "as": "তালিকাভুক্তিৰ বছৰ ২০২৪। ইয়াণ্ডাবু সন্ধিৰ বছৰ ১৮২৬।"
+    },
+    "id": "ak15.test.08"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "Paiks served only as soldiers; they never did public works.",
+     "as": "পাইকে কেৱল সৈনিক হিচাপেহে সেৱা দিছিল; ৰাজহুৱা কাম কৰা নাছিল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "They could fight, build boats, and work on embankments and other state projects.",
+     "as": "তেওঁলোকে যুদ্ধ, নাওসজা, মথাউৰি আৰু ৰাজ্যৰ আন কাম কৰিছিল।"
+    },
+    "id": "ak15.test.09"
+   },
+   {
+    "type": "match",
+    "pairs": [
+     [
+      {
+       "en": "Satra",
+       "as": "সত্ৰ"
+      },
+      {
+       "en": "Vaishnava institution",
+       "as": "বৈষ্ণৱ অনুষ্ঠান"
+      }
+     ],
+     [
+      {
+       "en": "Moidam",
+       "as": "মৈদাম"
+      },
+      {
+       "en": "Burial mound",
+       "as": "সমাধিৰ ঢিপি"
+      }
+     ],
+     [
+      {
+       "en": "Buranji",
+       "as": "বুৰঞ্জী"
+      },
+      {
+       "en": "Historical chronicle",
+       "as": "ঐতিহাসিক ঘটনাৰ বিবৰণ"
+      }
+     ]
+    ],
+    "why": {
+     "en": "An institution, a monument and a written source are different kinds of heritage.",
+     "as": "অনুষ্ঠান, সৌধ আৰু লিখিত উৎস ঐতিহ্যৰ বেলেগ বেলেগ ৰূপ।"
+    },
+    "id": "ak15.test.10"
+   }
+  ]
+ },
+ "origin_course": "ahom-kingdom",
+ "origin_no": 15
+}

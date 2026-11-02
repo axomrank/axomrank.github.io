@@ -186,9 +186,9 @@ body:has(#as:checked) .story p { line-height: 1.75; }
 /* sentence with a blank inside it */
 .sentence { font-size: 23px; line-height: 2; font-weight: 800; margin: 8px 0 18px; }
 body:has(#as:checked) .sentence { line-height: 2.1; }
-.blank { display: inline-flex; align-items: baseline; border-bottom: 3px solid var(--indigo); margin: 0 4px; padding: 0 2px; min-width: 3.4em; justify-content: center; color: var(--indigo); }
+.blank { display: inline-flex; align-items: baseline; border-bottom: 3px solid var(--indigo); margin: 0 4px; padding: 0 2px; min-width: 3.4em; max-width: 100%; justify-content: center; color: var(--indigo); }
 .blank .given { color: var(--indigo); font-weight: 900; }
-.blank input { font: inherit; font-weight: 900; color: var(--indigo); background: transparent; border: 0; outline: none; padding: 0; width: calc(var(--n) * .8em); letter-spacing: .04em; }
+.blank input { font: inherit; font-weight: 900; color: var(--indigo); background: transparent; border: 0; outline: none; padding: 0; width: calc(var(--n) * .8em); max-width: calc(100vw - 112px); min-width: 0; letter-spacing: .04em; }
 .blank input::placeholder { color: var(--line-2); letter-spacing: .12em; }
 .blank.right, .blank.right input, .blank.right .given { border-color: var(--good); color: var(--good-ink); }
 .blank.wrong, .blank.wrong input, .blank.wrong .given { border-color: var(--bad); color: var(--bad-ink); }
@@ -692,3 +692,7 @@ a.course-row .no { left: -44px; }
 @media (min-width: 1000px) {
   .subj-grid { grid-template-columns: repeat(3, 1fr); }
 }
+/* Cross-course reference */
+.reference-controls{padding:20px;display:grid;gap:10px}.reference-controls label{font-size:13px;font-weight:800}.reference-controls input[type=search],.reference-controls select{box-sizing:border-box;width:100%;min-width:0;padding:12px;border:1px solid var(--line,#d8d0c1);border-radius:12px;background:var(--paper,#fffaf1);color:inherit;font:inherit;font-size:14px}.reference-controls .tabs{display:flex;gap:8px}.reference-controls .tabs button{flex:1;padding:12px;border:1px solid #cdbda7;border-radius:12px;background:#fff8ec;font:inherit;cursor:pointer}.reference-controls [aria-selected=true]{background:#c1572f!important;color:white}.reference-check{display:flex;align-items:center;gap:8px}.reference-entry{display:flex;gap:14px;margin:0 20px;padding:17px 0;border-bottom:1px solid #ded4c5}.reference-entry>div{min-width:0}.reference-entry h3{font-size:15px;margin:0 0 7px}.reference-entry p{font-size:14px;margin:0 0 10px;line-height:1.6}.reference-entry a{font-size:13px;color:#a44929;overflow-wrap:anywhere}.reference-year{color:#a44929;min-width:48px;font-size:14px}.reference-links{display:flex;flex-wrap:wrap;gap:8px 14px}.reference-link{display:inline-flex;margin:0 20px 16px;gap:8px;padding:12px}.reference-controls input:focus-visible,.reference-controls select:focus-visible,.reference-controls button:focus-visible{outline:3px solid #bc6c37;outline-offset:2px}
+
+.offline-btn.reference-link{color:var(--terra,#b64e2a);background:#fffaf1;border-color:#d6c5ae;text-decoration:none}

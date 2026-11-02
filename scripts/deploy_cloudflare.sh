@@ -6,8 +6,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 PROJECT="${1:-axomrank}"
 python3 scripts/build.py
-OUT="$(mktemp -d "${TMPDIR:-/home/angsuman/extra_spac/tmp}/axom-dist.XXXX")"
+OUT="$(mktemp -d "${TMPDIR:-/tmp}/axom-dist.XXXX")"
 # Copy only the website (never plans, scripts or other folders)
-cp -r index.html lesson.html sw.js manifest.webmanifest _headers _redirects app content icons "$OUT/"
+cp -r index.html lesson.html history.html sw.js manifest.webmanifest _headers _redirects app content icons "$OUT/"
 npx --yes wrangler@3 pages deploy "$OUT" --project-name "$PROJECT" --branch main
 rm -rf "$OUT"

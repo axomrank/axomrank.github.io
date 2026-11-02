@@ -1,26 +1,30 @@
 # Curriculum: all of Assam's history
 
-The History subject is one continuous path of courses from earliest Assam to today. Each course follows [LESSON-DESIGN.md](LESSON-DESIGN.md): eras → lessons → units, with a checkpoint at the end of every era. Tiers (A/B/C) set how long a lesson is; the exam weight decides the tier. Titles below are working names; dates are to be verified against sources when each lesson is written (every lesson lists its `sources`).
+Assam History is one continuous course with sections and checkpoints from earliest Assam to today. Each section follows [LESSON-DESIGN.md](LESSON-DESIGN.md): eras → lessons → units, with a checkpoint at the end of every era. Tiers (A/B/C) set how long a lesson is; the exam weight decides the tier. Titles below are working names; dates are to be verified against sources when each lesson is written (every lesson lists its `sources`).
 
 ## Time budget
 
-A learner preparing for ADRE, TET, APSC or SI should finish the whole of Assam History in about **25 hours** (≈ 370 units at ~4 minutes). Each course gets a unit budget from its share of exam questions, not from how much history there is to tell. A lesson may not grow past its budget; extra detail goes into the guidebook or the optional deep-dive course.
+A learner preparing for ADRE, TET, APSC or SI should finish the whole of Assam History in about **25 hours** (380 units at ~4 minutes). Each course gets a unit budget from its share of exam questions, not from how much history there is to tell. A lesson may not grow past its budget; extra detail goes into the guidebook or the optional deep-dive course.
 
 | # | Course | Span | Lessons | Units | Share | Status |
 |---|---|---|---|---|---|---|
-| H1 | Early Assam: Pragjyotisha and Kamarupa | earliest–1228 | 13 | 55 | 15% | 🔨 9 lessons / 45 units done (Varman, Salastambha, Pala) |
-| H2 | Kamata, Koch and the neighbouring kingdoms | c. 1200–1700s | 9 | 35 | 10% | ⬜ |
-| H3 | The Ahom Kingdom (compact, exam path) | 1228–1838 | 15 | 60 | 16% | 🔨 Lessons 1–14 done (58 units); lesson 15 needs new writing |
-| H5 | British period and the freedom struggle | 1826–1947 | 18 | 75 | 20% | ⬜ |
-| H6 | Assam since 1947 | 1947–today | 11 | 42 | 11% | ⬜ |
-| H7 | Religion, literature, art and culture | all periods | 13 | 55 | 15% | ⬜ |
-| H8 | Sources, monuments and archaeology | all periods | 6 | 22 | 6% | ⬜ |
-| H9 | Peoples, councils and movements | all periods | 8 | 30 | 8% | ⬜ |
-| | **Total** | | **93** | **≈ 374** | | |
+| H1 | Early Assam: Pragjyotisha and Kamarupa | earliest–1228 | 13 | 58 | 15% | ✅ Implemented locally; Assamese review deferred |
+| H2 | Kamata, Koch and the neighbouring kingdoms | c. 1200–1700s | 9 | 35 | 10% | ✅ Implemented locally; Assamese review deferred |
+| H3 | The Ahom Kingdom (compact, exam path) | 1228–1838 | 15 | 63 | 16% | ✅ Implemented locally; Assamese review deferred |
+| H5 | British period and the freedom struggle | 1826–1947 | 18 | 75 | 20% | ✅ Implemented locally; Assamese review deferred |
+| H6 | Assam since 1947 | 1947–today | 11 | 42 | 11% | ✅ Implemented locally; Assamese review deferred |
+| H7 | Religion, literature, art and culture | all periods | 13 | 55 | 15% | ✅ Implemented locally; Assamese review deferred |
+| H8 | Sources, monuments and archaeology | all periods | 6 | 22 | 6% | ✅ Implemented locally; Assamese review deferred |
+| H9 | Peoples, councils and movements | all periods | 8 | 30 | 8% | ✅ Implemented locally; Assamese review deferred |
+| | **Total** | | **93** | **380** | | |
 
 Old H4 (wars and administration of the Ahom age) is folded into H3 below. The current 41-lesson Ahom course (152 units, 1,242 steps, ~10 hours on its own) stays as an optional deep dive; see H3.
 
-Status: ✅ done · 🔨 in progress · ⬜ planned
+Status: ✅ implemented locally. Assamese editorial review is deferred by the user; no deployment or human-review claim is implied.
+
+Presentation updated: all core sections are combined into `assam-history`,one 93-lesson course with 27 checkpoints. Former course and checkpoint references remain compatible.
+
+Measured on 2026-11-02: 93 core lessons / 380 units, plus the optional 41-lesson / 152-unit Ahom deep dive. There are 2,651 practice questions (2,575 in core courses), a cross-course timeline and a people/place index. H1’s older 55-unit estimate was inconsistent with its existing 45 units plus the four additions (13); the measured total is 58. All existing lesson and exercise ids are preserved.
 
 ## What makes the cut (exam filter)
 
@@ -30,9 +34,9 @@ Applied to every course, and strictly to the Ahom period:
 - **One line only:** kings with short or minor reigns, court intrigue, succession quarrels, genealogy beyond father/son of famous rulers.
 - **Leave out of the path:** reign-by-reign detail that no exam asks; it stays in the deep-dive course and guidebook.
 
-## H1 · Early Assam: Pragjyotisha and Kamarupa (13 lessons, 55 units)
+## H1 · Early Assam: Pragjyotisha and Kamarupa (13 lessons, 58 units)
 
-Done: Varman (3 lessons), Salastambha (3), Pala (3). Add four lessons, about 13 units, keeping the existing courses as they are:
+Implemented: Varman (3 lessons), Salastambha (3), Pala (3), plus the four foundation/transition lessons below (13 units). Existing dynastic courses and progress ids are retained:
 
 | Lesson | Tier | Units | Content |
 |---|---|---|---|
@@ -57,9 +61,9 @@ Maps: Kamarupa's boundaries (Karatoya to Dikkarvasini), capitals Pragjyotishpura
 | Kachari (Dimasa) kingdom | B | 4 | Dimapur, Maibong, Khaspur; Ahom wars; British annexation (1832) |
 | Jaintia and the rest | C | 3 | Jaintia, Manipur and Tripura contacts; Borahi, Moran, Matak |
 
-## H3 · The Ahom Kingdom: compact exam path (15 lessons, 60 units)
+## H3 · The Ahom Kingdom: compact exam path (15 lessons, 63 units)
 
-The current course spends a lesson on every one of 41 reigns. The exam path keeps the same story in 15 lessons, cutting units by ~60% (152 → 60) and steps from 1,242 to about 550. Minor reigns are grouped; the themes that were planned for H4 (Mughal wars, administration) become lessons here.
+The current course spends a lesson on every one of 41 reigns. The exam path keeps the same story in 15 lessons, cutting units by ~60% (152 → 63) and steps from 1,242 to about 550. Minor reigns are grouped; the themes that were planned for H4 (Mughal wars, administration) become lessons here.
 
 | # | Lesson | Tier | Units | Covers (old lessons) | Must-know facts |
 |---|---|---|---|---|---|
@@ -81,7 +85,7 @@ The current course spends a lesson on every one of 41 reigns. The exam path keep
 | 12 | The Moamoria rebellion | A | 4 | Lakshmi Singha, Gaurinath Singha | Causes, Ragha Moran, Rangpur and Guwahati lost, Captain Welsh (1792), capital at Jorhat |
 | 13 | Purnananda and the Burmese | A | 4 | Kamaleswar, Chandrakanta (both), Purandar, Jogeswar | Purnananda Burhagohain, Badan Chandra, Burmese invasions (1817, 1819, 1821), Manar years |
 | 14 | Yandabo and the last king | B | 3 | Purandar Singha (1833–38) | First Anglo-Burmese war, Treaty of Yandabo (24 Feb 1826), Upper Assam to Purandar (1833), annexation (1838) |
-| 15 | How the Ahoms ruled | A | 5 | new (from H4); the old lessons do not cover the Patra Mantris, officer ranks, paik classes or land grants, so this lesson needs new writing from sources | Patra Mantris, Paik–Khel–Got, officers (Phukan, Barua, Hazarika, Saikia, Bora), Buranjis, coins, moidams of Charaideo (UNESCO 2024), religion and the satras |
+| 15 | How the Ahoms ruled | A | 5 | new (from H4); the old lessons do not cover the Patra Mantris, officer ranks, paik classes or land grants, so this lesson now has five implemented units with sources; Assamese editorial review deferred | Patra Mantris, Paik–Khel–Got, officers (Phukan, Barua, Hazarika, Saikia, Bora), Buranjis, coins, moidams of Charaideo (UNESCO 2024), religion and the satras |
 
 Checkpoints after lessons 4, 9, 11 and 15.
 
@@ -106,7 +110,7 @@ Highest exam weight; build first after H3.
 
 Partition and refugees, the 1950 earthquake; reorganisation of the North-East (Nagaland 1963, Meghalaya 1972, Mizoram and Arunachal 1987); the refinery movement (1956–57); the language movements (1960, 1972); the Assam Movement (1979–85) and the Assam Accord (1985); AGP; Bodo movement and accords (1993, 2003, 2020), BTR; Karbi Anglong and Dima Hasao councils and accords; insurgency and peace talks; NRC and CAA; chief ministers in order; landmark projects (Bogibeel, Dhola–Sadiya bridge).
 
-## H7 · Religion, literature, art and culture (13 lessons, 55 units)
+## H7 · Religion, literature, art and culture (13 lessons, 58 units)
 
 Sankardev (A); Madhavdev and Damodardev (B); satras and naamghars: Majuli, Barpeta, Auniati (B); Kamakhya and the Shakta tradition, Ambubachi (B); early literature: Charyapada, Hema Saraswati, Madhav Kandali, Ananta Kandali (B); Buranjis (C); modern literature: Bezbaroa, Padmanath Gohain Barua, Jyoti Prasad Agarwala, Bishnu Rabha, Bhupen Hazarika (A); Jnanpith and other awards (C); Bihu and festivals (A); Sattriya, Ojapali, Bhaona, Borgeet, Deodhani, tribal dances (B); silk (muga, pat, eri), weaving, bamboo and cane, GI tags (B); film and theatre: Joymoti (1935), mobile theatre (C); Assamese language and scripts (C).
 
@@ -127,7 +131,7 @@ Bodo-Kachari, Karbi, Dimasa, Mising, Rabha, Tiwa, Deori, Sonowal Kachari, Tai pe
 5. **H2** medieval kingdoms, then the four missing **H1** lessons.
 6. **H8, H9** as revision courses from shared entities and questions.
 
-Questions: about **2,500** exam-style questions across History (≈ 7 per unit), each tagged with exams and, when from a past paper, `pyq` with year. Update `content/catalog.json` as each course goes live (replace the "soon" rows).
+Questions: **2,651** source-linked practice questions across History (including 76 optional deep-dive questions) (varied retrieval across units), each tagged with exams and, when from a past paper, `pyq` with year. Update `content/catalog.json` as each course goes live (replace the "soon" rows).
 
 ## Content rules for every lesson
 - Facts need a named source in `sources`; flag disputed dates in the lesson.

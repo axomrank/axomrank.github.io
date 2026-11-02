@@ -1,8 +1,8 @@
 {
  "id": "ahom-14-yandabo",
- "course": "ahom-kingdom",
- "no": 14,
- "version": 1,
+ "course": "assam-history",
+ "no": 36,
+ "version": 2,
  "eyebrow": {
   "en": "The Ahom Kingdom",
   "as": "আহোম ৰাজ্য"
@@ -181,38 +181,6 @@
    ],
    "steps": [
     {
-     "type": "mcq",
-     "guess": true,
-     "id": "ak14.jgs.g1",
-     "q": {
-      "en": "Who do you think finally drove the Burmese out of Assam?",
-      "as": "তোমাৰ অনুমানত শেষত মানক অসমৰ পৰা কোনে খেদিলে?"
-     },
-     "options": [
-      {
-       "en": "The Ahom army",
-       "as": "আহোম সৈন্য"
-      },
-      {
-       "en": "The British East India Company",
-       "as": "ব্ৰিটিছ ইষ্ট ইণ্ডিয়া কোম্পানী"
-      },
-      {
-       "en": "Manipur",
-       "as": "মণিপুৰ"
-      },
-      {
-       "en": "The Mughals",
-       "as": "মোগল"
-      }
-     ],
-     "answer": 1,
-     "why": {
-      "en": "The British, in the First Anglo-Burmese War of 1824–26.",
-      "as": "ব্ৰিটিছে, ১৮২৪–২৬ৰ প্ৰথম ইংগ-বৰ্মী যুদ্ধত।"
-     }
-    },
-    {
      "type": "story",
      "img": "jogeswar-singha/war.webp",
      "title": {
@@ -241,6 +209,61 @@
       }
      ],
      "id": "ak14.jgs.u2.03"
+    },
+    {
+     "type": "story",
+     "img": "jogeswar-singha/yandabo.webp",
+     "title": {
+      "en": "Yandabo",
+      "as": "ইয়াণ্ডাবু"
+     },
+     "text": [
+      {
+       "en": "On <mark>24 February 1826</mark>, at Yandabo near Ava, Burma signed the [[yandabo]]. It gave up all claim to <mark>Assam</mark>, Manipur, Cachar and Jaintia. Assam now belonged to the East India Company.",
+       "as": "<mark>২৪ ফেব্ৰুৱাৰী ১৮২৬</mark> তাৰিখে আভাৰ ওচৰৰ ইয়াণ্ডাবুত বাৰ্মাই [[yandabo]]ত চহী কৰিলে। ই <mark>অসম</mark>, মণিপুৰ, কাছাৰ আৰু জয়ন্তীয়াৰ ওপৰত সকলো দাবী এৰিলে। অসম এতিয়া ইষ্ট ইণ্ডিয়া কোম্পানীৰ।"
+      },
+      {
+       "en": "Freedom from Burma, but not freedom: about six centuries after Sukaphaa, a new master had come.",
+       "as": "বাৰ্মাৰ পৰা মুক্তি, কিন্তু স্বাধীনতা নহয়: চুকাফাৰ প্ৰায় ছশ বছৰ পিছত নতুন প্ৰভু আহিল।"
+      }
+     ],
+     "id": "ak14.jgs.u2.05"
+    },
+    {
+     "type": "inline",
+     "guess": true,
+     "id": "ak14.jgs.g1",
+     "options": [
+      {
+       "en": "The Ahom army",
+       "as": "আহোম সৈন্য"
+      },
+      {
+       "en": "The British East India Company",
+       "as": "ব্ৰিটিছ ইষ্ট ইণ্ডিয়া কোম্পানী"
+      },
+      {
+       "en": "Manipur",
+       "as": "মণিপুৰ"
+      },
+      {
+       "en": "The Mughals",
+       "as": "মোগল"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "The British, in the First Anglo-Burmese War of 1824–26.",
+      "as": "ব্ৰিটিছে, ১৮২৪–২৬ৰ প্ৰথম ইংগ-বৰ্মী যুদ্ধত।"
+     },
+     "before": {
+      "en": "Who do you think finally drove the Burmese out of Assam?",
+      "as": "তোমাৰ অনুমানত শেষত মানক অসমৰ পৰা কোনে খেদিলে?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "map",
@@ -321,25 +344,6 @@
      }
     },
     {
-     "type": "story",
-     "img": "jogeswar-singha/yandabo.webp",
-     "title": {
-      "en": "Yandabo",
-      "as": "ইয়াণ্ডাবু"
-     },
-     "text": [
-      {
-       "en": "On <mark>24 February 1826</mark>, at Yandabo near Ava, Burma signed the [[yandabo]]. It gave up all claim to <mark>Assam</mark>, Manipur, Cachar and Jaintia. Assam now belonged to the East India Company.",
-       "as": "<mark>২৪ ফেব্ৰুৱাৰী ১৮২৬</mark> তাৰিখে আভাৰ ওচৰৰ ইয়াণ্ডাবুত বাৰ্মাই [[yandabo]]ত চহী কৰিলে। ই <mark>অসম</mark>, মণিপুৰ, কাছাৰ আৰু জয়ন্তীয়াৰ ওপৰত সকলো দাবী এৰিলে। অসম এতিয়া ইষ্ট ইণ্ডিয়া কোম্পানীৰ।"
-      },
-      {
-       "en": "Freedom from Burma, but not freedom: about six centuries after Sukaphaa, a new master had come.",
-       "as": "বাৰ্মাৰ পৰা মুক্তি, কিন্তু স্বাধীনতা নহয়: চুকাফাৰ প্ৰায় ছশ বছৰ পিছত নতুন প্ৰভু আহিল।"
-      }
-     ],
-     "id": "ak14.jgs.u2.05"
-    },
-    {
      "type": "fill",
      "before": {
       "en": "The Treaty of Yandabo was signed in",
@@ -366,6 +370,32 @@
       "as": "২৪ ফেব্ৰুৱাৰী ১৮২৬।"
      },
      "id": "ak14.jgs.u2.06"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Treaty of Yandabo, 24 February 1826, gave Assam to the British",
+      "as": "২৪ ফেব্ৰুৱাৰী ১৮২৬ৰ ইয়াণ্ডাবু সন্ধিয়ে অসম ব্ৰিটিছক দিলে"
+     },
+     "answer": true,
+     "why": {
+      "en": "The Treaty of Yandabo, 24 February 1826, gave Assam to the British",
+      "as": "২৪ ফেব্ৰুৱাৰী ১৮২৬ৰ ইয়াণ্ডাবু সন্ধিয়ে অসম ব্ৰিটিছক দিলে"
+     },
+     "id": "ahom-14-yandabo.u1.supp.4"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The British declared war on Burma in 1824",
+      "as": "১৮২৪ চনত ব্ৰিটিছে বাৰ্মাৰ বিৰুদ্ধে যুদ্ধ ঘোষণা কৰিলে"
+     },
+     "answer": true,
+     "why": {
+      "en": "The British declared war on Burma in 1824",
+      "as": "১৮২৪ চনত ব্ৰিটিছে বাৰ্মাৰ বিৰুদ্ধে যুদ্ধ ঘোষণা কৰিলে"
+     },
+     "id": "ahom-14-yandabo.u1.supp.5"
     }
    ]
   },
@@ -415,6 +445,40 @@
      "id": "ak14.pr2.u1.01"
     },
     {
+     "type": "story",
+     "img": "purandar-singha-2/piyali.webp",
+     "title": {
+      "en": "Two at the gallows",
+      "as": "ফাঁচীকাঠত দুজন"
+     },
+     "text": [
+      {
+       "en": "In <mark>1830</mark> a wider plot to drive out the British was discovered. Its leaders, [[piyali-phukan]] (Badan Chandra's son) and <mark>Jiuram Dulia Baruah</mark>, were hanged.",
+       "as": "<mark>১৮৩০</mark> চনত ব্ৰিটিছক খেদাৰ এটা ডাঙৰ ষড়যন্ত্ৰ ধৰা পৰিল। ইয়াৰ নেতা [[piyali-phukan]] (বদনচন্দ্ৰৰ পুত্ৰ) আৰু <mark>জীউৰাম দুলীয়া বৰুৱা</mark>ক ফাঁচী দিয়া হ'ল।"
+      }
+     ],
+     "id": "ak14.pr2.u1.03"
+    },
+    {
+     "type": "story",
+     "img": "purandar-singha-2/restored-1833.webp",
+     "title": {
+      "en": "Restored, with a price",
+      "as": "মূল্যৰ বিনিময়ত পুনৰ ৰজা"
+     },
+     "text": [
+      {
+       "en": "The British did not want to rule all of Assam yet. In <mark>1833</mark> they gave Upper Assam, east of the Dhansiri, to [[purandar-singha]], now about 25, 'mild and pacific'. His capital was <mark>Jorhat</mark>.",
+       "as": "ব্ৰিটিছে তেতিয়াও গোটেই অসম শাসন কৰিব বিচৰা নাছিল। <mark>১৮৩৩</mark> চনত তেওঁলোকে ধনশিৰিৰ পূবৰ উজনি অসম প্ৰায় ২৫ বছৰীয়া, 'কোমল আৰু শান্ত' [[purandar-singha]]ক দিলে। তেওঁৰ ৰাজধানী <mark>যোৰহাট</mark>।"
+      },
+      {
+       "en": "The price: a tribute of <mark>50,000 rupees a year</mark>.",
+       "as": "মূল্য: বছৰি <mark>৫০,০০০ টকা</mark> কৰ।"
+      }
+     ],
+     "id": "ak14.pr2.u2.02"
+    },
+    {
      "type": "whoami",
      "clues": [
       {
@@ -456,13 +520,9 @@
      "id": "ak14.pr2.u1.02"
     },
     {
-     "type": "mcq",
+     "type": "inline",
      "guess": true,
      "id": "ak14.pr2.d1",
-     "q": {
-      "en": "You are an Ahom noble in 1830. The British now rule Assam. What do you do?",
-      "as": "তুমি ১৮৩০ চনৰ এজন আহোম বিষয়া। ব্ৰিটিছে এতিয়া অসম শাসন কৰে। তুমি কি কৰিবা?"
-     },
      "options": [
       {
        "en": "Accept it",
@@ -482,22 +542,15 @@
       "en": "Some did: Piyali Phukan and Jiuram Dulia Baruah plotted, and were hanged in 1830.",
       "as": "কিছুমানে কৰিছিল: পিয়লি ফুকন আৰু জীউৰাম দুলীয়া বৰুৱাই ষড়যন্ত্ৰ কৰিলে, আৰু ১৮৩০ চনত ফাঁচী পালে।"
      },
-     "decide": true
-    },
-    {
-     "type": "story",
-     "img": "purandar-singha-2/piyali.webp",
-     "title": {
-      "en": "Two at the gallows",
-      "as": "ফাঁচীকাঠত দুজন"
+     "decide": true,
+     "before": {
+      "en": "You are an Ahom noble in 1830. The British now rule Assam. What do you do?",
+      "as": "তুমি ১৮৩০ চনৰ এজন আহোম বিষয়া। ব্ৰিটিছে এতিয়া অসম শাসন কৰে। তুমি কি কৰিবা?"
      },
-     "text": [
-      {
-       "en": "In <mark>1830</mark> a wider plot to drive out the British was discovered. Its leaders, [[piyali-phukan]] (Badan Chandra's son) and <mark>Jiuram Dulia Baruah</mark>, were hanged.",
-       "as": "<mark>১৮৩০</mark> চনত ব্ৰিটিছক খেদাৰ এটা ডাঙৰ ষড়যন্ত্ৰ ধৰা পৰিল। ইয়াৰ নেতা [[piyali-phukan]] (বদনচন্দ্ৰৰ পুত্ৰ) আৰু <mark>জীউৰাম দুলীয়া বৰুৱা</mark>ক ফাঁচী দিয়া হ'ল।"
-      }
-     ],
-     "id": "ak14.pr2.u1.03"
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "tf",
@@ -511,25 +564,6 @@
       "as": "শুদ্ধ: পিতৃয়ে মান আনিছিল; পুত্ৰই ব্ৰিটিছৰ বিৰুদ্ধে যুঁজি প্ৰাণ দিলে।"
      },
      "id": "ak14.pr2.u1.04"
-    },
-    {
-     "type": "story",
-     "img": "purandar-singha-2/restored-1833.webp",
-     "title": {
-      "en": "Restored, with a price",
-      "as": "মূল্যৰ বিনিময়ত পুনৰ ৰজা"
-     },
-     "text": [
-      {
-       "en": "The British did not want to rule all of Assam yet. In <mark>1833</mark> they gave Upper Assam, east of the Dhansiri, to [[purandar-singha]], now about 25, 'mild and pacific'. His capital was <mark>Jorhat</mark>.",
-       "as": "ব্ৰিটিছে তেতিয়াও গোটেই অসম শাসন কৰিব বিচৰা নাছিল। <mark>১৮৩৩</mark> চনত তেওঁলোকে ধনশিৰিৰ পূবৰ উজনি অসম প্ৰায় ২৫ বছৰীয়া, 'কোমল আৰু শান্ত' [[purandar-singha]]ক দিলে। তেওঁৰ ৰাজধানী <mark>যোৰহাট</mark>।"
-      },
-      {
-       "en": "The price: a tribute of <mark>50,000 rupees a year</mark>.",
-       "as": "মূল্য: বছৰি <mark>৫০,০০০ টকা</mark> কৰ।"
-      }
-     ],
-     "id": "ak14.pr2.u2.02"
     },
     {
      "type": "fill",
@@ -657,38 +691,6 @@
    ],
    "steps": [
     {
-     "type": "mcq",
-     "guess": true,
-     "id": "ak14.pr2.g1",
-     "q": {
-      "en": "Purandar had to pay Rs 50,000 a year from a ruined land. What do you think happened?",
-      "as": "পুৰন্দৰে ধ্বংসপ্ৰাপ্ত দেশৰ পৰা বছৰি ৫০,০০০ টকা দিব লাগিছিল। তোমাৰ অনুমানত কি হ'ল?"
-     },
-     "options": [
-      {
-       "en": "He paid easily",
-       "as": "সহজে দিলে"
-      },
-      {
-       "en": "He fell behind on the tribute",
-       "as": "কৰ বাকী পৰিল"
-      },
-      {
-       "en": "He rebelled",
-       "as": "বিদ্ৰোহ কৰিলে"
-      },
-      {
-       "en": "He moved to Bengal",
-       "as": "বংগলৈ গ'ল"
-      }
-     ],
-     "answer": 1,
-     "why": {
-      "en": "Within three years he was behind on the tribute and begged for a cut.",
-      "as": "তিনি বছৰৰ ভিতৰতে কৰ বাকী পৰিল আৰু তেওঁ কমাবলৈ কাকুতি কৰিলে।"
-     }
-    },
-    {
      "type": "story",
      "img": "purandar-singha-2/taxes.webp",
      "title": {
@@ -725,6 +727,57 @@
       }
      ],
      "id": "ak14.pr2.u3.03"
+    },
+    {
+     "type": "story",
+     "art": "scroll",
+     "title": {
+      "en": "Remember G-P-R-D",
+      "as": "মনত ৰাখা গো-পি-পু-প"
+     },
+     "text": [
+      {
+       "en": "The last chapter: <b>G</b>omdhar's revolt (1828), <b>P</b>iyali hanged (1830), <b>R</b>estored (1833), <b>D</b>eposed (1838). Six centuries, from the Patkai to Jorhat: you have walked them all.",
+       "as": "শেষ অধ্যায়: <b>গো</b>মধৰৰ বিদ্ৰোহ (১৮২৮), <b>পি</b>য়লিৰ ফাঁচী (১৮৩০), <b>পু</b>নৰ ৰজা (১৮৩৩), <b>প</b>দচ্যুত (১৮৩৮)। পাটকাইৰ পৰা যোৰহাটলৈ ছশ বছৰ: তুমি সকলোখিনি খোজ কাঢ়িলা।"
+      }
+     ],
+     "id": "ak14.pr2.u3.05"
+    },
+    {
+     "type": "inline",
+     "guess": true,
+     "id": "ak14.pr2.g1",
+     "options": [
+      {
+       "en": "He paid easily",
+       "as": "সহজে দিলে"
+      },
+      {
+       "en": "He fell behind on the tribute",
+       "as": "কৰ বাকী পৰিল"
+      },
+      {
+       "en": "He rebelled",
+       "as": "বিদ্ৰোহ কৰিলে"
+      },
+      {
+       "en": "He moved to Bengal",
+       "as": "বংগলৈ গ'ল"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Within three years he was behind on the tribute and begged for a cut.",
+      "as": "তিনি বছৰৰ ভিতৰতে কৰ বাকী পৰিল আৰু তেওঁ কমাবলৈ কাকুতি কৰিলে।"
+     },
+     "before": {
+      "en": "Purandar had to pay Rs 50,000 a year from a ruined land. What do you think happened?",
+      "as": "পুৰন্দৰে ধ্বংসপ্ৰাপ্ত দেশৰ পৰা বছৰি ৫০,০০০ টকা দিব লাগিছিল। তোমাৰ অনুমানত কি হ'ল?"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     }
     },
     {
      "type": "timeline",
@@ -778,19 +831,58 @@
      "id": "ak14.pr2.u3.04"
     },
     {
-     "type": "story",
-     "art": "scroll",
-     "title": {
-      "en": "Remember G-P-R-D",
-      "as": "মনত ৰাখা গো-পি-পু-প"
+     "type": "fill",
+     "before": {
+      "en": "Purandar had to pay Rs 50,000 a year from a ruined land. What do you think happened?",
+      "as": "পুৰন্দৰে ধ্বংসপ্ৰাপ্ত দেশৰ পৰা বছৰি ৫০,০০০ টকা দিব লাগিছিল। তোমাৰ অনুমানত কি হ'ল?"
      },
-     "text": [
-      {
-       "en": "The last chapter: <b>G</b>omdhar's revolt (1828), <b>P</b>iyali hanged (1830), <b>R</b>estored (1833), <b>D</b>eposed (1838). Six centuries, from the Patkai to Jorhat: you have walked them all.",
-       "as": "শেষ অধ্যায়: <b>গো</b>মধৰৰ বিদ্ৰোহ (১৮২৮), <b>পি</b>য়লিৰ ফাঁচী (১৮৩০), <b>পু</b>নৰ ৰজা (১৮৩৩), <b>প</b>দচ্যুত (১৮৩৮)। পাটকাইৰ পৰা যোৰহাটলৈ ছশ বছৰ: তুমি সকলোখিনি খোজ কাঢ়িলা।"
-      }
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "answer": "He fell behind on the tribute",
+     "answerText": {
+      "en": "He fell behind on the tribute",
+      "as": "কৰ বাকী পৰিল"
+     },
+     "asOptions": [
+      "সহজে দিলে",
+      "কৰ বাকী পৰিল",
+      "বিদ্ৰোহ কৰিলে",
+      "বংগলৈ গ'ল"
      ],
-     "id": "ak14.pr2.u3.05"
+     "asAnswer": 1,
+     "why": {
+      "en": "Within three years he was behind on the tribute and begged for a cut.",
+      "as": "তিনি বছৰৰ ভিতৰতে কৰ বাকী পৰিল আৰু তেওঁ কমাবলৈ কাকুতি কৰিলে।"
+     },
+     "id": "ahom-14-yandabo.u3.supp.3"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Ahom rule, begun by Sukaphaa in 1228, was over",
+      "as": "১২২৮ চনত চুকাফাই আৰম্ভ কৰা আহোম শাসনৰ অন্ত পৰিল"
+     },
+     "answer": true,
+     "why": {
+      "en": "Ahom rule, begun by Sukaphaa in 1228, was over",
+      "as": "১২২৮ চনত চুকাফাই আৰম্ভ কৰা আহোম শাসনৰ অন্ত পৰিল"
+     },
+     "id": "ahom-14-yandabo.u3.supp.4"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "A ruined land could not pay; revenue fell and payments failed",
+      "as": "ধ্বংসপ্ৰাপ্ত দেশে দিব নোৱাৰিলে; ৰাজহ কমিল, কৰ বাকী পৰিল"
+     },
+     "answer": true,
+     "why": {
+      "en": "A ruined land could not pay; revenue fell and payments failed",
+      "as": "ধ্বংসপ্ৰাপ্ত দেশে দিব নোৱাৰিলে; ৰাজহ কমিল, কৰ বাকী পৰিল"
+     },
+     "id": "ahom-14-yandabo.u3.supp.5"
     }
    ]
   }
@@ -896,11 +988,7 @@
     "id": "ak14.jgs.test.03"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. The Treaty of Yandabo ended the First Anglo-Burmese War.<br>2. Jogeswar Singha led the Ahom army against the Burmese.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ইয়াণ্ডাবু সন্ধিয়ে প্ৰথম ইংগ-বৰ্মী যুদ্ধৰ অন্ত পেলাইছিল।<br>২. যোগেশ্বৰ সিংহই মানৰ বিৰুদ্ধে আহোম সৈন্য পৰিচালনা কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -925,7 +1013,15 @@
      "as": "কেৱল ১। যোগেশ্বৰ মানৰ পুতলা আছিল।"
     },
     "small": true,
-    "id": "ak14.jgs.test.04"
+    "id": "ak14.jgs.test.04",
+    "before": {
+     "en": "Consider the statements:<br>1. The Treaty of Yandabo ended the First Anglo-Burmese War.<br>2. Jogeswar Singha led the Ahom army against the Burmese.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ইয়াণ্ডাবু সন্ধিয়ে প্ৰথম ইংগ-বৰ্মী যুদ্ধৰ অন্ত পেলাইছিল।<br>২. যোগেশ্বৰ সিংহই মানৰ বিৰুদ্ধে আহোম সৈন্য পৰিচালনা কৰিছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    },
    {
     "type": "whoami",
@@ -1036,11 +1132,7 @@
     "id": "ak14.pr2.test.04"
    },
    {
-    "type": "mcq",
-    "q": {
-     "en": "Consider the statements:<br>1. Purandar Singha was deposed by the British in 1838.<br>2. Purandar's restored state included Sadiya.<br>Which is/are correct?",
-     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ১৮৩৮ চনত ব্ৰিটিছে পুৰন্দৰ সিংহক পদচ্যুত কৰিছিল।<br>২. পুৰন্দৰৰ পুনৰ প্ৰতিষ্ঠিত ৰাজ্যত শদিয়া অন্তৰ্ভুক্ত আছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
-    },
+    "type": "inline",
     "options": [
      {
       "en": "1 only",
@@ -1065,8 +1157,18 @@
      "as": "কেৱল ১। শদিয়া আৰু মটক বাহিৰত ৰখা হৈছিল।"
     },
     "small": true,
-    "id": "ak14.pr2.test.07"
+    "id": "ak14.pr2.test.07",
+    "before": {
+     "en": "Consider the statements:<br>1. Purandar Singha was deposed by the British in 1838.<br>2. Purandar's restored state included Sadiya.<br>Which is/are correct?",
+     "as": "উক্তিবোৰ বিবেচনা কৰা:<br>১. ১৮৩৮ চনত ব্ৰিটিছে পুৰন্দৰ সিংহক পদচ্যুত কৰিছিল।<br>২. পুৰন্দৰৰ পুনৰ প্ৰতিষ্ঠিত ৰাজ্যত শদিয়া অন্তৰ্ভুক্ত আছিল।<br>কোনটো/কোনবোৰ শুদ্ধ?"
+    },
+    "after": {
+     "en": ".",
+     "as": "।"
+    }
    }
   ]
- }
+ },
+ "origin_course": "ahom-kingdom",
+ "origin_no": 14
 }
