@@ -318,26 +318,30 @@ if (!VIRTUAL) (() => {   // migrate mistakes saved by position before steps had 
   if (conv.join() !== b.join()) { G.mistakes[L.id] = [...new Set(conv)]; saveAll(); }
 })();
 function resolveStep(ref) { const s = BY_ID.get(ref); return s ? { s, ref } : null; }
+const journeyKey = `axom:journey:${L.course || "ahom-kings"}`;
+const previousJourney = AXOM.store.get(journeyKey, {});
+AXOM.store.set(journeyKey, { lesson: L.id, scroll: previousJourney.lesson === L.id ? previousJourney.scroll || 0 : 0 });
+addEventListener("pagehide", () => {
+  const scroll = $("#v-path .p-scroll")?.scrollTop || 0;
+  AXOM.store.set(journeyKey, { lesson: L.id, scroll });
+});
+if (!VIRTUAL && L.course === "assam-history") {
+  $("#v-path .p-top").insertAdjacentHTML("afterend", `<nav class="tabs journey-tabs"><a class="tab on" href="lesson.html?id=${L.id}">${T(B("Lessons", "পাঠ"))}</a><a class="tab" href="index.html?course=assam-history&tab=overview">${T(B("Overview", "অৱলোকন"))}</a></nav>`);
+}
 function renderPath() {
   topStats();
   const doneCount = ALL.filter((u) => P.done[u.id]).length;
-  $("#meter").style.width = `${(doneCount / ALL.length) * 100}%`;
+  $("#meter").style.width = `${(doneCount / ALL.length) * 100}%`; $("#meter").style.setProperty("--p", $("#meter").style.width);
   $("#count").innerHTML = T(B(`${doneCount} of ${ALL.length} steps complete`, `${asNum(ALL.length)}টাৰ ভিতৰত ${asNum(doneCount)}টা সম্পূৰ্ণ`));
-  if (L.mission && !VIRTUAL) {
-    const found = L.units.filter((u) => P.done[u.id]).length;
-    const nextMission = ALL.findIndex((u, k) => !P.done[u.id] && unlocked(k));
-    $("#mission-slot").innerHTML = `<section class="mission-board" aria-labelledby="mission-heading">
-      <div class="mission-top"><span>${T(L.mission.label)}</span><span>${N(`${found}/${L.units.length}`)} ${T(B("findings", "প্ৰমাণ"))}</span></div>
-      <h2 id="mission-heading">${T(L.mission.title)}</h2><p>${T(L.mission.hook)}</p>
-      <div class="mission-stages">${L.units.map((u, k) => `<div class="mission-stage ${P.done[u.id] ? "done" : k === found ? "current" : ""}"><span>${P.done[u.id] ? "✓" : N(k + 1)}</span><b>${T(u.title)}</b></div>`).join("")}</div>
-      ${nextMission >= 0 ? `<button class="btn mission-start" data-start="${nextMission}">${T(nextMission === L.units.length ? B("Seal the evidence file", "প্ৰমাণ-নথি সম্পূৰ্ণ কৰা") : B(found ? "Continue the mission" : "Start the mission", found ? "অভিযান আগবঢ়োৱা" : "অভিযান আৰম্ভ কৰা"))}<span aria-hidden="true">›</span></button>` : P.done.test ? `<div class="mission-sealed">✓ ${T(B("Evidence file complete", "প্ৰমাণ-নথি সম্পূৰ্ণ"))}</div>` : ""}
-    </section>`;
-  }
+  // Mission explanations are presented inside the unit player.
+  $("#mission-slot").replaceChildren();
   const m = bankOf(L.id).map(resolveStep).filter(Boolean);
   const gate = GATE ? `<div class="gate-card"><span class="ic">${ICONS.lock}</span><div><b>${T(B("This lesson is locked", "এই পাঠটো বন্ধ"))}</b>
       <span class="s">${T(B(`Finish Lesson ${GATE.n} · ${GATE.name.en.split(" (")[0]} first, or tap Jump here at the end of this lesson to pass a test on the lessons before it.`, `প্ৰথমে পাঠ ${asNum(GATE.n)} · ${GATE.name.as.split(" (")[0]} শেষ কৰা, নহ'লে এই পাঠৰ শেষৰ 'ইয়ালৈ জঁপিওৱা' টিপি আগৰ পাঠবোৰৰ পৰীক্ষা দিয়া।`))}</span>
       <div class="gate-btns"><a class="cp-go" href="lesson.html?id=${GATE.id}">${T(B(`Go to Lesson ${GATE.n}`, `পাঠ ${asNum(GATE.n)}লৈ যোৱা`))}</a></div></div></div>` : "";
-  $("#mistake-slot").innerHTML = gate + (m.length ? `<button class="mistake-card" id="practise"><span class="ic">${N(m.length)}</span><span><b>${T(B("Practise your mistakes", "তোমাৰ ভুলবোৰ অনুশীলন কৰা"))}</b><span class="s">${T(B("Questions you missed in this lesson", "এই পাঠত ভুল হোৱা প্ৰশ্নবোৰ"))}</span></span><span class="go">›</span></button>` : "");
+  $("#mistake-slot").innerHTML = gate;
+  $("#practise")?.remove();
+  if (m.length) $(".hero .hero-btns").insertAdjacentHTML("beforeend", `<button class="offline-btn mistake-pill" id="practise">${AXOM.ICON.repeat}<span>${T(B("Mistakes", "ভুল"))} · ${N(m.length)}</span></button>`);
   const cur = ALL.findIndex((u, k) => unlocked(k) && !P.done[u.id]);
   const offs = [0, -64, -88, -50, 30, 80, 0];
   let g = 0;   // node number along the whole course, for the zig-zag
@@ -391,16 +395,18 @@ function renderPath() {
   if (here >= 0) $("#sec-here").append(...HERE);
   const nodes = $$(".node", $("#path")), first = nodes.findIndex((n) => !n.classList.contains("done"));
   drawTrail(first < 0 ? nodes.length - 1 : first);
-  if (!scrolled && here > 0) { scrolled = true; $("#sec-here").scrollIntoView({ block: "start" }); }
+  if (!scrolled) {
+    scrolled = true;
+    requestAnimationFrame(() => {
+      if (previousJourney.lesson === L.id && previousJourney.scroll > 0) $("#v-path .p-scroll").scrollTop = previousJourney.scroll;
+      else if (here > 0) $("#sec-here").scrollIntoView({ block: "start" });
+    });
+  }
 }
 // one continuous curve through the unit circles; gold up to where the learner is
-function drawTrail(upTo) {
-  const path = $("#path"), box = path.getBoundingClientRect();
-  if (!box.width) return;
-  const pts = $$(".node", path).map((n) => { const r = n.getBoundingClientRect(); return [r.left + r.width / 2 - box.left, r.top + r.height / 2 - box.top]; });
-  const curve = (p) => p.map(([x, y], i) => (i ? (() => { const [px, py] = p[i - 1], my = (py + y) / 2; return ` C${px.toFixed(1)} ${my.toFixed(1)} ${x.toFixed(1)} ${my.toFixed(1)} ${x.toFixed(1)} ${y.toFixed(1)}`; })() : `M${x.toFixed(1)} ${y.toFixed(1)}`)).join("");
-  const old = path.querySelector(".trail"); if (old) old.remove();
-  path.insertAdjacentHTML("afterbegin", `<svg class="trail" aria-hidden="true"><path class="trail-base" d="${curve(pts)}"/>${upTo > 0 ? `<path class="trail-done" d="${curve(pts.slice(0, upTo + 1))}"/>` : ""}</svg>`);
+function drawTrail() {
+  // Unit circles stand alone; remove trails from any previously rendered path.
+  $("#path .trail")?.remove();
 }
 // labels change height with the language and once fonts load, so redraw the curve then too
 const redrawTrail = () => { if (!$("#v-path").classList.contains("on")) return; const n = $$(".node", $("#path")), k = n.findIndex((x) => !x.classList.contains("done")); drawTrail(k < 0 ? n.length - 1 : k); };
@@ -473,7 +479,7 @@ const step = () => U.queue[U.pos];
 function renderStep(animate) {
   const it = step(), s = it.s;
   U.phase = "answer"; U.st = {};
-  $("#progress").style.width = `${(U.done / U.total) * 100}%`;
+  $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
   $("#foot").className = "foot";
   const scr = $("#screen");
   scr.classList.remove("enter"); void scr.offsetWidth; if (animate) scr.classList.add("enter");
@@ -642,7 +648,7 @@ function answerHTML(s) {
 // it earns a little XP, is never recorded as a mistake and never comes back
 function guessFeedback(right) {
   const s = step().s; U.xp += 5; SFX.good();
-  U.done = Math.min(U.total, U.done + 1); $("#progress").style.width = `${(U.done / U.total) * 100}%`;
+  U.done = Math.min(U.total, U.done + 1); $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
   $("#fb-badge").textContent = right ? "✓" : "?";
   $("#fb-title").innerHTML = right ? T(B("You called it!", "ঠিকেই অনুমান কৰিলা!")) : T(B("Good guess. Here is what happened", "ভাল অনুমান। আচলতে যি হৈছিল"));
   $("#fb-xp").innerHTML = `+${N(5)} XP`;
@@ -688,7 +694,7 @@ function feedback(right) {
   // A missed question comes back once at the end of a unit or lesson test (not matching; not in exams).
   if (!right && !it.retry) { U.mistakes.push({ s }); if (!slips && mode !== "checkpoint" && mode !== "jump" && !U.testout) U.queue.push({ s, ref: it.ref, retry: true }); }
   if (!it.retry) U.done = Math.min(U.total, U.done + 1);
-  $("#progress").style.width = `${(U.done / U.total) * 100}%`;
+  $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
   $("#fb-badge").textContent = right || slips ? "✓" : "✕";
   $("#fb-title").innerHTML = right ? T(PRAISE[Math.floor(Math.random() * PRAISE.length)])
     : slips ? T(B(`All matched, ${U.st.misses} slip${U.st.misses > 1 ? "s" : ""}`, `সকলো মিলিল, ${asNum(U.st.misses)}টা ভুল`)) : T(B("Not quite", "হোৱা নাই"));

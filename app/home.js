@@ -13,6 +13,7 @@ const params = new URLSearchParams(location.search);
 if (params.has("review")) { try { params.get("review") === "0" ? localStorage.removeItem("axom.review") : localStorage.setItem("axom.review", "1"); } catch { /* storage blocked */ } }
 const UNLOCK_ALL = params.has("all") || (() => { try { return localStorage.getItem("axom.review") === "1"; } catch { return false; } })();
 const UI = Object.assign({ tab: "lessons", open: {} }, AXOM.store.get("axom:ui", {}));
+if (params.get("tab") === "overview") UI.open = {};
 const saveUI = () => AXOM.store.set("axom:ui", UI);
 const ROOF = '<svg class="roof" viewBox="0 0 320 26" preserveAspectRatio="none"><path d="M0 4c22 2 30 10 52 13 44 6 172 6 216 0 22-3 30-11 52-13" fill="none" stroke="#fff" stroke-width="2"/><path d="M60 17v7M100 19v6M140 20v5M180 20v5M220 19v6M260 17v7" stroke="#fff" stroke-width="1.6"/></svg>';
 const STAR = { A: "★★★", B: "★★", C: "★" };
@@ -103,14 +104,14 @@ async function homePage() {
       <span class="face">${k ? `<img src="${AXOM.media(k.face)}" alt="" loading="lazy">` : sIcon(S.icon)}</span>
       <span class="t"><small>${p.started ? T(B("Continue", "আগবাঢ়া")) : T(B("Start here", "ইয়াৰ পৰা আৰম্ভ কৰা"))} · ${T(S.title)}</small>
         <b>${k ? T(k.name) : T(B("Course complete", "পাঠ্যক্ৰম সম্পূৰ্ণ"))}</b><span>${T(cur.title)} · ${T(B(`${p.done}/${p.total} lessons`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ`))}</span>
-        <span class="meter"><i style="width:${pct(p)}%"></i></span></span><span class="go">›</span></a>`;
+        <span class="meter"><i style="--p:${pct(p)}%;width:${pct(p)}%"></i></span></span><span class="go">›</span></a>`;
   }
   const subjects = cat.subjects.filter((S) => !exam || S.exams.includes(exam)).map((S) => {
     const n = S.courses.filter((e) => D.courses[e.course]).length;
     if (!n) return `<button class="subj soon" data-soon style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></button>`;
     const p = subjectSum(S, D);
     return `<a class="subj" href="${S.id === "assam-history" ? "index.html?course=assam-history" : `index.html?subject=${S.id}`}" style="--c:var(--${S.color})"><span class="ic">${sIcon(S.icon)}</span><b>${T(S.title)}</b><span class="s">${T(S.blurb)}</span>
-      <span class="pill">${T(B(`${n} course${n > 1 ? "s" : ""} · ${p.total} lessons`, `${asNum(n)}টা পাঠ্যক্ৰম · ${asNum(p.total)}টা পাঠ`))}</span><span class="meter"><i style="width:${pct(p)}%"></i></span></a>`;
+      <span class="pill">${T(B(`${n} course${n > 1 ? "s" : ""} · ${p.total} lessons`, `${asNum(n)}টা পাঠ্যক্ৰম · ${asNum(p.total)}টা পাঠ`))}</span><span class="meter"><i style="--p:${pct(p)}%;width:${pct(p)}%"></i></span></a>`;
   }).join("");
   const examName = exam ? T(cat.exams.find((x) => x.id === exam).t) : "ADRE · Assam TET · APSC · Assam Police SI";
   $("#course").innerHTML = `<section class="home-hero">${ROOF}<div class="eyebrow">${T(B("Assam exam preparation", "অসম পৰীক্ষাৰ প্ৰস্তুতি"))}</div><h1>Axomrank</h1>
@@ -136,10 +137,10 @@ async function subjectPage() {
     if (!c) return `<div class="course-row soon"><span class="no">${N(i + 1)}</span><span class="t"><b>${T(e.title)}</b><span>${T(e.subtitle)}</span></span><span class="pill">${T(B("Soon", "সোনকালে"))}</span></div>`;
     const q = progress(c, D.m), face = (c.kings.find((k) => k.tier === "A") || c.kings[0]).face;
     return `<a class="course-row ${q.done === q.total ? "done" : ""}" href="index.html?course=${c.id}"><span class="no">${N(i + 1)}</span><span class="cover"><img src="${AXOM.media(face)}" alt="" loading="lazy"></span>
-      <span class="t"><b>${T(c.title)}</b><span>${T(c.subtitle)}</span><span class="meter"><i style="width:${pct(q)}%"></i></span><small>${T(B(`${q.done}/${q.total} lessons done`, `${asNum(q.total)}টাৰ ${asNum(q.done)}টা পাঠ সম্পূৰ্ণ`))}</small></span>${e.optional ? `<span class="pill">${T(B("Optional", "ঐচ্ছিক"))}</span>` : ""}<span class="go">›</span></a>`;
+      <span class="t"><b>${T(c.title)}</b><span>${T(c.subtitle)}</span><span class="meter"><i style="--p:${pct(q)}%;width:${pct(q)}%"></i></span><small>${T(B(`${q.done}/${q.total} lessons done`, `${asNum(q.total)}টাৰ ${asNum(q.done)}টা পাঠ সম্পূৰ্ণ`))}</small></span>${e.optional ? `<span class="pill">${T(B("Optional", "ঐচ্ছিক"))}</span>` : ""}<span class="go">›</span></a>`;
   }).join("");
   $("#course").innerHTML = `<section class="c-hero" style="--c:var(--${S.color})">${ROOF}<a class="back-hub" href="index.html">‹ ${T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(B("Subject", "বিষয়"))}</div><h1>${T(S.title)}</h1><p>${T(S.blurb)}</p>
-      <span class="meter"><i style="width:${pct(p)}%"></i></span><span class="count">${T(B(`${p.done} of ${p.total} lessons done`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ সম্পূৰ্ণ`))}</span></section>
+      <span class="meter"><i style="--p:${pct(p)}%;width:${pct(p)}%"></i></span><span class="count">${T(B(`${p.done} of ${p.total} lessons done`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ সম্পূৰ্ণ`))}</span></section>
     ${reviewCard()}<p class="tab-intro">${T(B("Follow the history courses,then revisit themes through culture,heritage and peoples.", "ইতিহাসৰ পাঠ্যক্ৰম অনুসৰণ কৰি সংস্কৃতি,ঐতিহ্য আৰু জনগোষ্ঠীৰ বিষয় পুনৰ পঢ়া।"))}</p>
     <a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places","সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a><div class="course-list">${rows}</div>${FOOT}`;
   $("#continue").classList.add("hidden");
@@ -147,9 +148,17 @@ async function subjectPage() {
 async function render() {
   if (!CID) return SID ? subjectPage() : homePage();
   if (!course) { const D = await load(); course = D.courses[CID]; info = D.m.lessons; const redirect = D.cat.course_redirects?.[CID]; if (redirect) { location.replace(`index.html?course=${redirect}${UNLOCK_ALL ? "&all" : ""}`); return; } if (!course) { location.replace("index.html"); return; } }
+  if (CID === "assam-history" && params.get("tab") !== "overview") {
+    const entries = course.kings.filter(k => k.lesson && info[k.lesson]);
+    const saved = AXOM.store.get("axom:journey:assam-history", {});
+    const next = entries.find(k => !AXOM.getLesson(k.lesson).done.test) || entries[0];
+    const id = entries.some(k => k.lesson === saved.lesson) ? saved.lesson : next?.lesson;
+    if (id) { location.replace(`lesson.html?id=${id}${UNLOCK_ALL ? "&all" : ""}`); return; }
+  }
+  if (CID === "assam-history") UI.tab = "overview";
   if (UI.lastCourse !== CID) { UI.lastCourse = CID; saveUI(); }
   const S = subjectOf(DATA.cat, CID);
-  const TABS = (course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : ALL_TABS[k]]);
+  const TABS = (CID === "assam-history" ? ["lessons", "overview"] : course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : (k === "overview" ? B("Overview", "অৱলোকন") : ALL_TABS[k])]);
   if (!TABS.some(([k]) => k === UI.tab)) UI.tab = "lessons";
   const byNo = Object.fromEntries(course.kings.filter((k) => k.lesson && info[k.lesson]).map((k) => [k.n, k.lesson]));
   const doneTest = (id) => !!AXOM.getLesson(id).done.test;
@@ -164,7 +173,7 @@ async function render() {
   };
   const tabs = `<div class="tabs home-tabs" role="tablist">${TABS.map(([k, t]) => `<button class="tab ${UI.tab === k ? "on" : ""}" data-tab="${k}">${T(t)}</button>`).join("")}</div>`;
   const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S && S.id !== "assam-history" ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S && S.id !== "assam-history" ? T(S.title) : T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
-  const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab }[UI.tab](status, byNo);
+  const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab, overview: lessonsTab }[UI.tab](status, byNo);
   $("#course").innerHTML = hero + tabs + (CID === "assam-history" ? `<a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places", "সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a>` : "") + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Sources accompany each lesson. Illustrations are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · প্ৰতিটো পাঠৰ লগত উৎস দিয়া আছে। চিত্ৰবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
   // sticky Continue: the next open lesson that is not finished
   const next = course.kings.map((k) => ({ k, st: status(k) })).find((x) => x.st.s === "open");
@@ -179,7 +188,7 @@ function lessonsTab(status) {
   return reviewCard() + course.eras.map((e) => {
     const kings = course.kings.filter((k) => k.n >= e.from && k.n <= e.to);
     const sts = kings.map(status), avail = sts.filter((x) => x.s !== "soon"), done = sts.filter((x) => x.s === "done").length;
-    const open = UI.open[e.id] ?? e.id === curEra;
+    const open = UI.open[e.id] ?? (CID === "assam-history" ? false : e.id === curEra);
     const cpDone = !!G.checkpoints[e.id], cpOpen = avail.length && avail.every((x) => x.s === "done");
     const checkpoint = avail.length ? `<div class="cp-card ${cpDone ? "done" : cpOpen ? "open" : ""}">
         <span class="ic">${cpDone ? ICON.check : "🏁"}</span>
@@ -188,7 +197,7 @@ function lessonsTab(status) {
       </div>` : "";
     return `<section class="era-sec ${open ? "open" : ""}">
       <button class="era-head" data-era="${e.id}"><span class="t">${T(e.title)}</span><span class="p">${T(B(`${done}/${kings.length} lessons`, `${asNum(kings.length)}টাৰ ${asNum(done)}টা পাঠ`))}</span><span class="chev">${ICON.chevron}</span>
-        <span class="era-bar"><i style="width:${(done / kings.length) * 100}%"></i></span></button>
+        <span class="era-bar"><i style="--p:${(done / kings.length) * 100}%;width:${(done / kings.length) * 100}%"></i></span></button>
       <div class="kings">${open ? kings.map((k, i) => card(k, sts[i])).join("") + checkpoint : ""}</div>
     </section>`;
   }).join("");
@@ -201,7 +210,7 @@ function card(k, st) {
   return `<${tag} class="king ${st.s} tier-${k.tier}" ${href ? `href="${href}"` : `data-why="${st.s}"`}>
     <span class="face"><img src="${AXOM.media(k.face)}" alt="" loading="lazy"></span><span class="n">${N(k.n)}</span>
     <span class="who"><b>${T(k.name)}</b><span class="sub2">${N(k.reign)} · <span class="stars" title="Exam importance">${STAR[k.tier]}</span></span>
-      ${started ? `<span class="bar2"><i style="width:${(st.done / st.steps) * 100}%"></i></span>` : ""}</span>
+      ${started ? `<span class="bar2"><i style="--p:${(st.done / st.steps) * 100}%;width:${(st.done / st.steps) * 100}%"></i></span>` : ""}</span>
     <span class="state">${started ? T(B("Continue", "আগবাঢ়া")) : T(LABEL[st.s])}</span>
     ${miss ? `<span class="badge">${T(B(`${miss} to revise`, `${asNum(miss)}টা ভুল`))}</span>` : ""}
   </${tag}>`;
@@ -219,7 +228,7 @@ function timelineTab(status) {
       prevEnd = Math.max(prevEnd || 0, b);
       const st = status(k), link = st.s === "open" || st.s === "done", tag = link ? "a" : "div";
       html += `<${tag} class="tl-row tier-${k.tier}" ${link ? `href="lesson.html?id=${st.id}"` : ""}><span class="y">${N(a)}</span><span class="nm">${T(k.name)}</span>
-        <span class="tl-bar"><i style="width:${Math.max(3, ((b - a || 1) / longest) * 100)}%"></i></span><span class="len">${N(b - a || 1)}${T(B("y", "ব"))}</span></${tag}>`;
+        <span class="tl-bar"><i style="--p:${Math.max(3, ((b - a || 1) / longest) * 100)}%;width:${Math.max(3, ((b - a || 1) / longest) * 100)}%"></i></span><span class="len">${N(b - a || 1)}${T(B("y", "ব"))}</span></${tag}>`;
     });
     html += `</div>`;
   });
@@ -260,7 +269,7 @@ function profileTab(status, byNo) {
     </div>
     <div class="card"><h3>${T(B("Lessons finished", "সম্পূৰ্ণ পাঠ"))}</h3><p class="big-num">${N(finished)} <span>/ ${N(course.kings.length)}</span></p></div>
     <div class="card"><h3>${T(B("Last 5 weeks", "শেহতীয়া ৫ সপ্তাহ"))}</h3><div class="cal">${cal}</div></div>
-    ${perLesson.length ? `<div class="card"><h3>${T(B("Accuracy by lesson", "পাঠ অনুসৰি শুদ্ধতা"))}</h3>${perLesson.map((x) => `<a class="acc-row" href="lesson.html?id=${x.id}"><span>${T(nameOf(x.id))}</span><span class="acc-bar"><i style="width:${x.pct}%" class="${x.pct < 60 ? "low" : x.pct < 80 ? "mid" : ""}"></i></span><b>${N(x.pct)}%</b></a>`).join("")}</div>` : ""}
+    ${perLesson.length ? `<div class="card"><h3>${T(B("Accuracy by lesson", "পাঠ অনুসৰি শুদ্ধতা"))}</h3>${perLesson.map((x) => `<a class="acc-row" href="lesson.html?id=${x.id}"><span>${T(nameOf(x.id))}</span><span class="acc-bar"><i style="--p:${x.pct}%;width:${x.pct}%" class="${x.pct < 60 ? "low" : x.pct < 80 ? "mid" : ""}"></i></span><b>${N(x.pct)}%</b></a>`).join("")}</div>` : ""}
     ${weak.length ? `<div class="card"><h3>${T(B("Revise next", "পিছত পুনৰ চোৱা"))}</h3>${weak.map((x) => `<a class="acc-row" href="lesson.html?id=${x.id}"><span>${T(nameOf(x.id))}</span><span class="note">${N(x.pct)}%</span><b>›</b></a>`).join("")}</div>` : ""}
     <div class="card"><h3>${T(B("Account", "একাউণ্ট"))}</h3><p class="note">${user ? T(B(`Signed in as ${user.name || "you"}. Progress syncs across devices.`, `${user.name || "তুমি"} হিচাপে চাইন ইন। অগ্ৰগতি সকলো ডিভাইচত মিলে।`)) : T(B("Not signed in. Progress is saved on this device only.", "চাইন ইন কৰা নাই। অগ্ৰগতি কেৱল এই ডিভাইচত সাঁচি থোৱা হয়।"))}</p></div>`;
 }
@@ -270,7 +279,7 @@ document.addEventListener("click", (e) => {
   let b;
   if ((b = e.target.closest("[data-exam]"))) { UI.exam = b.dataset.exam; saveUI(); render(); return; }
   if (e.target.closest("[data-soon]")) return toast(T(B("This subject is being written. Coming soon!", "এই বিষয়টো লিখি থকা হৈছে। সোনকালে আহিব!")));
-  if ((b = e.target.closest("[data-tab]"))) { UI.tab = b.dataset.tab; saveUI(); render(); $("#scroll").scrollTop = 0; return; }
+  if ((b = e.target.closest("[data-tab]"))) { if (CID === "assam-history" && b.dataset.tab === "lessons") { location.href = "index.html?course=assam-history"; return; } UI.tab = b.dataset.tab; saveUI(); render(); $("#scroll").scrollTop = 0; return; }
   if ((b = e.target.closest("[data-era]"))) { const id = b.dataset.era, sec = b.closest(".era-sec"); UI.open[id] = !sec.classList.contains("open"); saveUI(); render(); return; }
   if (e.target.closest("#settings")) return AXOM.openSettings(settingsExtra());
   if (e.target.closest("[data-why]")) toast(T(B("This lesson is being written", "এই পাঠটো লিখি থকা হৈছে")));

@@ -4,7 +4,7 @@ const src=fs.readFileSync('app/engine.js','utf8');
 const feedback=src.slice(src.indexOf('function feedback(right)'),src.indexOf('function next()'));
 const finish=src.slice(src.indexOf('function finishUnit()'),src.indexOf('/* ---------- events ---------- */'));
 function state(mode='lesson',testout=false){
- const nodes=new Map(),saved={};const node=()=>({style:{},classList:{add(){},remove(){}},focus(){}});
+ const nodes=new Map(),saved={};const node=()=>({style:{setProperty(k,v){this[k]=v}},classList:{add(){},remove(){}},focus(){}});
  const s={id:'teaching.question',type:'tf',s:{en:'A fact',as:'তথ্য'},why:{en:'Reason',as:'কাৰণ'}};
  const c={mode,VIRTUAL:mode!=='lesson',P:{done:{}},L:{id:'sample',test:{id:'test',title:{en:'Test',as:'পৰীক্ষা'},learned:[]},era:{id:'era'},eraUnits:{sample:['u1','test']}},NEXT:null,ALL:[],G:{xp:0,streak:{n:0},checkpoints:{}},
  U:{unit:null,practice:false,testout,queue:[{s,ref:s.id}],pos:0,asked:0,ok:0,xp:0,mistakes:[],done:0,total:1,st:{},start:Date.now()},B:(en,as)=>({en,as}),T:x=>typeof x==='object'?x.en:String(x),N:String,asNum:String,TR:x=>x.en,
