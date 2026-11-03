@@ -41,7 +41,7 @@ Implemented: Varman (3 lessons), Salastambha (3), Pala (3), plus the four founda
 | Lesson | Tier | Units | Content |
 |---|---|---|---|
 | Before history | C | 3 | Neolithic sites (Daojali Hading, Sarutaru), megaliths, early mentions: Samudragupta's Allahabad pillar (Kamarupa, Davaka), Periplus, Ptolemy |
-| Legends and the names | B | 4 | Pragjyotisha, Kamarupa, the name Assam; Kalika Purana, Yogini Tantra, Mahabharata; Danava line, Naraka, Bhagadatta |
+| Legends and the names | B | 6 | Pragjyotisha, Kamarupa, the name Assam; Kalika Purana, Yogini Tantra, Mahabharata; Danava line, Naraka, Bhagadatta |
 | Sources of early Assam | C | 3 | Copper plates and inscriptions (Nidhanpur, Dubi, Umachal, Barganga), Xuanzang, Harshacharita |
 | End of Kamarupa | B | 3 | Vaidyadeva, the later chiefs, Bakhtiyar Khalji's march (1206), the stone inscription of Kanai Barasi Bowa (1206), the passing to Kamata |
 

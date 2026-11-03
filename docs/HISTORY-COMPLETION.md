@@ -41,3 +41,7 @@ The unified course has 2,575 core practice questions and a continuous global les
 The build regenerates `content/history-reference.json`, the manifest and service-worker version. One-time import/enrichment scripts must not be rerun over published ids. Subsequent editorial changes belong in the integrated JSON files.
 
 Unified-course browser checks passed: 390px mobile layout, 27 sections, transitions from foundations to Varman and from modern Assam to culture, English/Assamese lesson tests, a 15-question checkpoint, and old-course redirects. No overflow or JavaScript errors appeared in these checks. Local preview: http://127.0.0.1:8773/index.html?course=assam-history&all .
+
+## Chapter2 expansion,2026-11-03
+
+The current local scope is93 core lessons /382 units,plus41 optional lessons /152 units:134 lessons /534 units total. Chapter2 retains its original four units and published IDs,and appends two researched extension units on Naraka’s origins and the Kamakhya building challenge. New Assamese editorial review remains pending. See `docs/research/early-assam-02-legends-research.md` for sources,variants and emblem checks. Earlier counts above describe the2026-11-02 baseline.

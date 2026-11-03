@@ -5,7 +5,7 @@ from pathlib import Path
 from audit_lessons import audit
 ROOT=Path(__file__).resolve().parents[1]
 def read(p):return json.loads(p.read_text())
-expected={'varman-kings':(3,19),'salastambha-kings':(3,12),'pala-kings':(3,14),'early-assam':(4,13),'medieval-kingdoms':(9,35),'ahom-kingdom':(15,63),'british-period':(18,75),'modern-assam':(11,42),'assam-culture':(13,55),'heritage-and-sources':(6,22),'peoples-councils-movements':(8,30),'ahom-kings':(41,152)}
+expected={'varman-kings':(3,19),'salastambha-kings':(3,12),'pala-kings':(3,14),'early-assam':(4,15),'medieval-kingdoms':(9,35),'ahom-kingdom':(15,63),'british-period':(18,75),'modern-assam':(11,42),'assam-culture':(13,55),'heritage-and-sources':(6,22),'peoples-councils-movements':(8,30),'ahom-kings':(41,152)}
 ls={l['id']:l for p in (ROOT/'content/lessons').glob('*.json') if(l:=read(p))};entities=read(ROOT/'content/entities.json');steps={s['id'] for l in ls.values() for u in l['units']+[l['test']] for s in u['steps']};issues=[];core=units=questions=0
 unified=read(ROOT/'content/courses/assam-history.json')
 assert len(unified['kings'])==93
@@ -27,7 +27,7 @@ for cp in (ROOT/'content/courses').glob('*.json'):
   if q.get('source_step'):assert q['source_step'] in steps,('Unknown source step',q['id'])
   assert len({o['en'].strip().lower() for o in q['options']})==len(q['options']),('Duplicate choices',q['id'])
 assert not issues,'\n'.join(issues)
-assert core==93 and units==380,(core,units)
+assert core==93 and units==382,(core,units)
 assert questions>=2500,questions
 cat=read(ROOT/'content/catalog.json');subject=next(s for s in cat['subjects'] if s['id']=='assam-history');assert subject['courses']==[{'course':'assam-history'}]
 r=read(ROOT/'content/history-reference.json');assert set(r['lessons'])==set(ls)

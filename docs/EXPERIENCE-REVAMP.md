@@ -9,7 +9,7 @@ Players should want to finish a short historical mission and be able to recall
 its important facts days later. Measure enjoyment, completion and delayed
 recall separately. No design can promise that nobody will be bored.
 
-The current course has 93 core lessons, 380 units and 27 era checkpoints.
+The current course has 93 core lessons, 382 units and 27 era checkpoints.
 Each core unit already has visual story cards, varied exercises and feedback.
 The player has XP, streaks and step-level review at 1, 3, 7, 15 and 30 days.
 In the current 1,934 unit exercise interactions, true/false, inline choice,

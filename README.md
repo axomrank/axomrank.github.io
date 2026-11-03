@@ -4,7 +4,7 @@ Short, bilingual (English and Assamese) historical missions and exam practice fo
 
 **Live:** https://axomrank.pages.dev (also https://axomrank.github.io/)
 
-**Assam History:** one continuous course with 27 checkpoints: **93 core lessons / 380 units**, plus the optional **41-lesson / 152-unit** Ahom deep dive. There are **2,651 practice questions**, a searchable cross-course [timeline and people/place index](history.html), sources and reusable illustrations. The new experience plan adds short history missions and fact-linked delayed recall. Daily memory missions and a visual mission preview in Lesson 1 are implemented locally; the broader revamp is not yet complete. Assamese editorial review is deferred. See [completion and checks](docs/HISTORY-COMPLETION.md).
+**Assam History:** one continuous course with 27 checkpoints: **93 core lessons / 382 units**, plus the optional **41-lesson / 152-unit** Ahom deep dive. There are **2,651 practice questions**, a searchable cross-course [timeline and people/place index](history.html), sources and reusable illustrations. The new experience plan adds short history missions and fact-linked delayed recall. Daily memory missions and a visual mission preview in Lesson 1 are implemented locally; the broader revamp is not yet complete. Assamese editorial review is deferred. See [completion and checks](docs/HISTORY-COMPLETION.md).
 
 ## Documentation
 
