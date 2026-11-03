@@ -1,65 +1,68 @@
-# Axomrank: project plan
+# Axomrank project plan
 
-Axomrank is a bilingual (Assamese + English), game-like exam-preparation app for Assam government exams: **ADRE, Assam TET, APSC CSE Prelims, Assam Police SI**. It runs on the web (installable, offline), with Android/iOS wrappers later.
+Axomrank is a bilingual Assamese and English exam-preparation PWA for ADRE,
+Assam TET, APSC CSE Prelims and Assam Police SI. It is installable and works
+offline. The live sites are [Cloudflare Pages](https://axomrank.pages.dev/)
+and [GitHub Pages](https://axomrank.github.io/); local changes are not live
+until independently deployed and verified.
 
-Live: https://axomrank.pages.dev · Code: https://github.com/axomrank/axomrank.github.io
+## Current state
 
-## 1. Principles
-1. **Never boring, always "one more":** short units, story first, varied exercises, instant feedback, visible progress, streaks and review. See [LESSON-DESIGN.md](LESSON-DESIGN.md).
-2. **Assam depth and Assamese first:** state GK, state current affairs, state papers; Assamese is written alongside English, not translated later.
-3. **Trust:** original content with named sources and verified answer keys. AI-assisted drafts must retain truthful provenance and receive historical and Assamese editorial review before publication. Never claim human review that has not happened.
-4. **Real exam feel:** OMR-style mocks and an Assam-wide rank.
-5. **Small and fast:** runs on 2 GB Android phones; content loads on demand; works offline.
+- Assam History is one chronological core course: 93 lessons, 380 units and
+  27 era checkpoints. An optional 41-lesson Ahom deep dive remains for saved
+  links. The timeline and people/place index are in `history.html`.
+- The player offers story cards, 13 practice types, explanations, an 80%
+  first-attempt lesson gate, XP, streaks and spaced review. Progress is local
+  and can sync through Firebase when configured.
+- Curriculum implementation is measured in [HISTORY-COMPLETION.md](HISTORY-COMPLETION.md).
+  Assamese editorial review is deferred. The final browser recheck noted there
+  remains a verification item.
+- The experience revamp is active. [EXPERIENCE-REVAMP.md](EXPERIENCE-REVAMP.md)
+  owns its phases, evidence, pilot lessons, acceptance gates and measures.
 
-## 2. Where we are
-- Web app: lesson player (14 exercise types), maps, guidebook, name cards, daily review, checkpoints, XP/streak, Google sign-in and sync (Firebase), offline service worker.
-- Assam History implemented locally: **93 core lessons / 380 units**, plus **41 optional Ahom lessons / 152 units**; **2,651 practice questions**, source records, illustrations, 573 dated reference entries and 697 linked names. Assamese editorial review is deferred by the user.
-- Hosting: Cloudflare Pages + GitHub Pages. Free plans.
-- Home page: exam chooser (ADRE / TET / APSC / SI), continue card, daily review, subject grid from `content/catalog.json` (all 12 Assam History courses integrated locally; Polity, Geography, Aptitude and others listed as coming soon). Subject page lists its courses in order of time.
+## Product principles
 
-## 3. Roadmap
+1. **Remembered facts:** judge learning by first-attempt and delayed recall,
+   including new question variants and time spent.
+2. **A reason to act:** short historical missions give each interaction a
+   visible purpose. Game framing never changes or invents historical evidence.
+3. **Choice and competence:** show what is remembered, offer a manageable next
+   action and reward return after a delay. XP and streaks are supporting cues.
+4. **Assamese and English together:** write and test both languages in the same
+   change. Never claim editorial review that has not occurred.
+5. **Trust and access:** named sources, honest uncertainty, clear artistic
+   labels, offline use and good performance on modest Android phones.
 
-### Phase 1: platform for many courses (next)
-1. **Content layout** changes from one course to many subjects:
-   ```
-   content/
-     catalog.json                 subjects → courses (title, exams, status)
-     shared/entities.json         names shared by all courses
-     shared/maps/                 base maps (districts, rivers, historic boundaries)
-     history/<course>/course.json  eras, lessons
-     history/<course>/lessons/<id>.json
-     history/<course>/questions.json
-     media/<course>/…
-   ```
-   `scripts/build.py` validates every course and writes the manifest; lesson ids become unique per course; saved progress is keyed by course so Ahom progress is kept (migration step).
-2. **Home becomes a hub:** subject cards (History, Geography, Polity, Economy, Culture, Current Affairs, General Studies), then courses, then the path. Exam filter (ADRE / TET / APSC / SI).
-3. **Exam tags** on lessons and questions; "My exam" in onboarding.
-4. Rename Ahom-specific wording in the player; keep Ahom as course H3.
+## Near-term work
 
-### Phase 2: Assam History implemented
-All required H1–H9 content (H4 folded into H3), question banks and the master timeline/people-place index are implemented. See [HISTORY-COMPLETION.md](HISTORY-COMPLETION.md) for measured scope and validation. Assamese editorial review is explicitly deferred; deployment is a separate action.
+1. Finish and verify the bounded daily memory mission. Preserve all due
+   records, existing question ids and review progress.
+2. Add fact links and a parallel mastery record. Migrate saved state before
+   replacing any existing review field.
+3. Pilot mission framing and distinct delayed recall in three contrasting
+   Assam History lessons. Inspect actual source passages for any changed facts.
+4. Compare completion, enjoyment and 7/30-day recall with the current flow.
+   Widen the rollout only after the pilot shows a useful result.
+5. Recheck the final reference and player UI in a browser, including offline,
+   English and Assamese, as the completion record requires.
 
-### Phase 3: more subjects
-Assam geography (rivers, districts, national parks, climate, resources), polity (Sixth Schedule, councils, Assam Assembly, governance), economy (tea, oil, agriculture, budget, schemes such as Orunodoi), culture (festivals, dance, crafts), general studies and TET pedagogy; each as courses in the same format.
+## Later work
 
-### Phase 4: exam tools
-Previous-year papers with verified keys; **OMR-sheet mock tests** with negative marking, section timers, review; weekly free **All Assam Mock** with state leaderboard; pre-written 90/60/30-day plans; daily Assam current affairs and 10-question quiz; weak-topic detection (<50% weak, 50–75% needs work); bookmarks; one-week offline downloads.
+- Extend successful mission patterns through the course, with an earned
+  collection of sourced people, places, events and objects.
+- Build verified previous-year papers, OMR-style mocks, exam-specific plans,
+  weak-topic support and current-affairs workflows. Any real exam provenance
+  must be documented.
+- Expand to geography, polity, economy, culture and other subjects after the
+  History experience is measured and maintained.
+- Consider optional collaboration, official-notice updates and Android/iOS
+  wrappers after the learning loop works. A public leaderboard is a later
+  experiment, not a requirement for the core learning journey.
 
-### Phase 5: growth and operations
-Admin panel (upload, tagging, translation, review, error reports), "Report an error" button, doubt forum, notifications for official notices (ADRE, SEBA/TET, APSC, SLPRB), shareable rank cards, referrals, coaching-centre white-label, Capacitor Android app, Bodo and Bengali later.
+## Operations
 
-## 4. Content quality process
-Author → reviewer → translator → final check → publish. Named educators; a public page on how content is reviewed. Every lesson lists its sources. Errors reported in-app go to a review queue.
-
-## 5. Business model
-Free core: lessons, notes, daily quiz, previous-year papers, current affairs. Paid: test series and exam passes at low one-time prices (about ₹99–₹499 per exam), not subscriptions. Growth: Assamese YouTube/Instagram shorts, Telegram/WhatsApp channels, referrals, weekly All Assam Mock.
-
-## 6. Metrics
-D7 and D30 retention; lessons and mocks per user per week; weekly All Assam Mock participation; revision items completed; free→paid conversion; referral rate.
-
-## 7. Biggest risk
-Content operations, not code: thousands of verified bilingual questions, written explanations, study plans and current affairs need subject experts, reviewers and translators. Plan the team and budget first. The first goal is the whole of Assam History at quality, then breadth.
-
-## 8. Working notes
-- Private material (grant applications, raw KMZ, drafts) lives in `private/`, never published.
-- Every publish: `python3 scripts/build.py`, commit, push (GitHub Pages), `scripts/deploy_cloudflare.sh`. See [SETUP.md](SETUP.md).
+Content changes follow source inspection, bilingual writing, factual and
+editorial review, build checks, player checks and deployment verification.
+Private material lives in `private/`. User-owned untracked files and local
+`output/` are preserved. The repository cleanup log is in
+[CLEANUP.md](CLEANUP.md).

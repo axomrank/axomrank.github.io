@@ -69,7 +69,25 @@ body:has(#as:checked) .as { display: revert; }
 .hero .meter i { display: block; height: 100%; background: var(--gold); border-radius: 99px; transition: width .5s; }
 .hero .count { font-size: 12.5px; font-weight: 800; opacity: .85; margin-top: 6px; }
 body:has(#as:checked) .hero .eyebrow { letter-spacing: 0; text-transform: none; font-size: 13px; }
+/* Optional lesson mission: an evidence file that advances with existing unit progress. */
+.mission-board { margin: 16px 14px 6px; padding: 18px; border: 2px solid var(--indigo); border-radius: 20px; background: linear-gradient(140deg, var(--surface) 42%, var(--indigo-soft)); box-shadow: 0 4px 0 var(--indigo-dark); }
+.mission-top { display: flex; justify-content: space-between; gap: 8px; color: var(--indigo); font-size: 11px; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+.mission-board h2 { margin: 9px 0 6px; font-size: 22px; line-height: 1.16; }
+.mission-board p { margin: 0; color: var(--ink-2); font-size: 14px; font-weight: 700; line-height: 1.45; }
+.mission-stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin: 15px 0; }
+.mission-stage { min-width: 0; padding: 8px 6px; border: 1.5px solid var(--line-2); border-radius: 12px; background: var(--surface); color: var(--ink-3); text-align: center; }
+.mission-stage > span { display: grid; place-items: center; width: 23px; height: 23px; margin: 0 auto 5px; border-radius: 50%; background: var(--surface-2); font-size: 12px; font-weight: 900; }
+.mission-stage b { display: block; font-size: 11px; line-height: 1.18; }
+.mission-stage.current { color: var(--indigo); border-color: var(--indigo); }
+.mission-stage.current > span { background: var(--indigo); color: #fff; }
+.mission-stage.done { color: var(--good-ink); border-color: var(--good); background: var(--good-soft); }
+.mission-stage.done > span { background: var(--good); color: #fff; }
+.mission-board .mission-start { width: 100%; margin: 0; }
+.mission-start > span:last-child { display: inline-block; margin-left: 7px; }
+.mission-sealed { padding: 10px; border-radius: 11px; background: var(--good-soft); color: var(--good-ink); font-size: 14px; font-weight: 900; text-align: center; }
+body:has(#as:checked) .mission-top { letter-spacing: 0; text-transform: none; font-size: 12px; }
 .path { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 60px 0 40px; position: relative; }
+.lesson-page.has-mission .path { padding-top: 20px; }
 .trail { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 0; }
 .trail path { fill: none; stroke-width: 14; stroke-linecap: round; }
 .trail-base { stroke: var(--line); }
@@ -124,6 +142,10 @@ body:has(#as:checked) .bubble { letter-spacing: 0; text-transform: none; }
 .kicker.guess::before { content: "?"; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--gold); color: #fff; font-size: 14px; letter-spacing: 0; }
 .kicker .xp { margin-left: auto; color: var(--gold-dark); letter-spacing: .04em; }
 body:has(#as:checked) .kicker { letter-spacing: 0; text-transform: none; font-size: 14px; }
+.mission-ribbon { margin: 0 0 15px; padding: 10px 12px; border-left: 4px solid var(--gold); border-radius: 0 12px 12px 0; background: var(--indigo-soft); }
+.mission-ribbon small { display: block; margin-bottom: 4px; color: var(--indigo); font-size: 11px; font-weight: 900; letter-spacing: .05em; text-transform: uppercase; }
+.mission-ribbon strong { display: block; color: var(--ink); font-size: 14px; line-height: 1.35; }
+body:has(#as:checked) .mission-ribbon small { letter-spacing: 0; text-transform: none; font-size: 12px; }
 h1.t { font-size: 25px; line-height: 1.2; font-weight: 900; margin: 0 0 14px; }
 .prompt { font-size: 22px; line-height: 1.32; font-weight: 800; margin: 0 0 18px; }
 body:has(#as:checked) .prompt, body:has(#as:checked) h1.t { line-height: 1.5; }
@@ -133,6 +155,11 @@ body:has(#as:checked) .prompt, body:has(#as:checked) h1.t { line-height: 1.5; }
 .frame { width: 100%; aspect-ratio: 4 / 3.1; overflow: hidden; margin: 0 0 18px; border-radius: 50% 50% 22px 22px / 30% 30% 22px 22px; background: var(--surface-2); position: relative; }
 .frame img { width: 100%; height: 100%; object-fit: cover; display: block; animation: kb 9s ease-out both; }
 .frame.top img { object-position: center 12%; }
+.story-visual { margin: 0 0 18px; }
+.story-visual .frame { margin-bottom: 7px; }
+.frame.library { aspect-ratio: 16 / 10; border-radius: 18px; }
+.frame.contain img { object-fit: contain; animation: none; }
+.story-visual figcaption { font-size: 12px; line-height: 1.5; color: var(--ink-3); overflow-wrap: anywhere; }
 @keyframes kb { from { transform: scale(1.08); } }
 .frame .credit { position: absolute; right: 12px; bottom: 10px; font-size: 10.5px; font-weight: 700; color: #fff; background: rgba(20,16,12,.5); padding: 2px 8px; border-radius: 99px; }
 .frame.art { display: grid; place-items: center; background: var(--indigo-soft); }
@@ -320,6 +347,10 @@ body:has(#as:checked) .btn { letter-spacing: 0; text-transform: none; font-size:
 .done-wrap h1 { color: var(--gold-dark); font-size: 28px; margin: 0 0 4px; font-weight: 900; }
 @media (prefers-color-scheme: dark) { .done-wrap h1 { color: var(--gold); } }
 .sub { color: var(--ink-2); font-weight: 700; margin: 0 0 18px; font-size: 16px; }
+.mission-result { width: 100%; margin: 0 0 16px; padding: 14px 16px; border: 2px solid var(--gold); border-radius: 16px; background: var(--gold-soft); text-align: left; }
+.mission-result small { display: block; margin-bottom: 5px; color: var(--gold-dark); font-size: 11px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.mission-result p { margin: 0; color: var(--ink); font-size: 16px; font-weight: 800; line-height: 1.4; }
+body:has(#as:checked) .mission-result small { letter-spacing: 0; text-transform: none; font-size: 12px; }
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; margin-bottom: 16px; }
 .stat { border: 2px solid var(--c); border-radius: 16px; overflow: hidden; background: var(--surface); }
 .stat .h { background: var(--c); color: #fff; font-size: 11.5px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; padding: 5px 4px; }

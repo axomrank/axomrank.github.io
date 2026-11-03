@@ -2,13 +2,25 @@
 
 ## Current user objective
 
-Finish all Assam History in `docs/CURRICULUM.md`, including unwritten lessons,
-units, exam questions and illustrations. The user explicitly chose **one agent**
-on 2026-11-02. Do not delegate this objective unless they change that preference.
-Read `docs/HISTORY-COMPLETION.md` and `docs/history-completion.json` to resume.
-Measure actual files before reporting completion. A private draft is not a
-published or reviewed lesson. Never claim the full curriculum is complete while
-required lessons or question banks are missing.
+Revamp Assam History so short historical missions are enjoyable and facts remain
+remembered after a delay. Start with the bounded daily memory mission, then the
+three-lesson mission and fact-linked review pilot in `docs/EXPERIENCE-REVAMP.md`.
+The user also requested a repository cleanup: remove only verified disposable
+artifacts, and preserve user-owned untracked files and historical provenance.
+The user chose **one agent** on 2026-11-02. Do not delegate unless they change
+that preference.
+
+Read `docs/EXPERIENCE-REVAMP.md`, `docs/HISTORY-COMPLETION.md` and
+`docs/history-completion.json` before expanding the revamp. The required
+curriculum is implemented locally according to the measured completion record;
+Assamese editorial review is deferred and the final browser recheck remains
+outstanding. Measure actual files before reporting completion or publication.
+A private draft is not a published or reviewed lesson.
+
+Experience changes must keep the history as evidence, not game fiction. A
+mission may frame a puzzle, but it may not invent dialogue, sources, dates or
+alternative outcomes. Track engagement and delayed recall separately. Treat
+reward systems and mission formats as design hypotheses to test with learners.
 
 ## Sources and pictures
 
@@ -34,6 +46,9 @@ completion, mistakes and spaced review depend on these ids. New course copies
 need new ids. Keep dates, traditions and disputed identifications distinct.
 Never invent exam provenance, source passages, historical dialogue or reviews.
 New Assamese prose must retain pending editorial-review status until reviewed.
+New fact ids may link existing questions, but must never replace published step
+ids. Migrate progress before changing the review data model. A successful retry
+must not inflate first-attempt accuracy or a delayed-mastery claim.
 
 ## Implementation and verification
 
@@ -54,3 +69,5 @@ checks in English and Assamese, including mistakes/retries and first-attempt
 Keep user-owned untracked files, including the pre-existing
 `scripts/preview_drafts.py`. Do not run its hard-coded external output path
 without inspecting it. Keep previews and browser artifacts out of commits.
+`output/` is also user-owned and must be preserved. Disposable ignored browser
+and Python caches may be cleaned after confirming they are generated artifacts.

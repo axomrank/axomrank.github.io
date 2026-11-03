@@ -61,17 +61,16 @@ async function lessonsById(ids) {
   return out;
 }
 async function buildReview() {
-  const queue = AXOM.reviewQueue();
+  const queue = AXOM.dailyReviewQueue();
   const lessons = await lessonsById(queue.map((q) => q.l));
   const steps = [];
   for (const q of queue) {
     const Ls = lessons[q.l]; if (!Ls) continue;
     const s = [...Ls.units, Ls.test].flatMap((u) => u.steps).find((x) => x.id === q.id);
     if (s && s.type !== "story") steps.push(tagStep(s, Ls));
-    if (steps.length >= 15) break;
   }
-  return { id: "review", virtual: true, king: B("Daily review", "দৈনিক পুনৰীক্ষণ"), reign: B(`${steps.length} questions due`, `${asNum(steps.length)}টা প্ৰশ্ন বাকী`), units: [],
-    test: { id: "review", title: B("Daily review", "দৈনিক পুনৰীক্ষণ"), learned: [], steps } };
+  return { id: "review", virtual: true, king: B("Daily memory mission", "দৈনিক স্মৃতি অভিযান"), reign: B(`${steps.length} clues this round`, `এই পৰ্যায়ত ${asNum(steps.length)}টা সংকেত`), units: [],
+    test: { id: "review", title: B("Daily memory mission", "দৈনিক স্মৃতি অভিযান"), learned: [], steps } };
 }
 // the course in order, keeping only kings whose lesson is published
 let CID = "ahom-kings";   // the course this page belongs to
@@ -238,7 +237,7 @@ const PRAISE = [B("Correct!", "শুদ্ধ!"), B("Excellent!", "বঢ়ি
 /* ---------- page skeleton ---------- */
 document.body.insertAdjacentHTML("afterbegin", `
 <input type="checkbox" id="as" aria-label="Show in Assamese">
-<div class="stage"><div class="device lesson-page${VIRTUAL ? " virtual" : ""}" id="device">
+<div class="stage"><div class="device lesson-page${VIRTUAL ? " virtual" : ""}${L.mission && !VIRTUAL ? " has-mission" : ""}" id="device">
   <div class="confetti" id="confetti" aria-hidden="true"></div>
   <div class="view" id="v-path">
     <div class="p-top">
@@ -262,6 +261,7 @@ document.body.insertAdjacentHTML("afterbegin", `
           <div class="hero-btns"><button class="offline-btn" id="guide">${AXOM.ICON.book}${T(B("Guidebook", "নিৰ্দেশিকা"))}</button><button class="offline-btn" id="offline"></button></div>
         </div>
       </section>
+      <div id="mission-slot"></div>
       <div id="mistake-slot"></div>
       <div class="path" id="path"></div>
       <div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>
@@ -323,6 +323,16 @@ function renderPath() {
   const doneCount = ALL.filter((u) => P.done[u.id]).length;
   $("#meter").style.width = `${(doneCount / ALL.length) * 100}%`;
   $("#count").innerHTML = T(B(`${doneCount} of ${ALL.length} steps complete`, `${asNum(ALL.length)}টাৰ ভিতৰত ${asNum(doneCount)}টা সম্পূৰ্ণ`));
+  if (L.mission && !VIRTUAL) {
+    const found = L.units.filter((u) => P.done[u.id]).length;
+    const nextMission = ALL.findIndex((u, k) => !P.done[u.id] && unlocked(k));
+    $("#mission-slot").innerHTML = `<section class="mission-board" aria-labelledby="mission-heading">
+      <div class="mission-top"><span>${T(L.mission.label)}</span><span>${N(`${found}/${L.units.length}`)} ${T(B("findings", "প্ৰমাণ"))}</span></div>
+      <h2 id="mission-heading">${T(L.mission.title)}</h2><p>${T(L.mission.hook)}</p>
+      <div class="mission-stages">${L.units.map((u, k) => `<div class="mission-stage ${P.done[u.id] ? "done" : k === found ? "current" : ""}"><span>${P.done[u.id] ? "✓" : N(k + 1)}</span><b>${T(u.title)}</b></div>`).join("")}</div>
+      ${nextMission >= 0 ? `<button class="btn mission-start" data-start="${nextMission}">${T(nextMission === L.units.length ? B("Seal the evidence file", "প্ৰমাণ-নথি সম্পূৰ্ণ কৰা") : B(found ? "Continue the mission" : "Start the mission", found ? "অভিযান আগবঢ়োৱা" : "অভিযান আৰম্ভ কৰা"))}<span aria-hidden="true">›</span></button>` : P.done.test ? `<div class="mission-sealed">✓ ${T(B("Evidence file complete", "প্ৰমাণ-নথি সম্পূৰ্ণ"))}</div>` : ""}
+    </section>`;
+  }
   const m = bankOf(L.id).map(resolveStep).filter(Boolean);
   const gate = GATE ? `<div class="gate-card"><span class="ic">${ICONS.lock}</span><div><b>${T(B("This lesson is locked", "এই পাঠটো বন্ধ"))}</b>
       <span class="s">${T(B(`Finish Lesson ${GATE.n} · ${GATE.name.en.split(" (")[0]} first, or tap Jump here at the end of this lesson to pass a test on the lessons before it.`, `প্ৰথমে পাঠ ${asNum(GATE.n)} · ${GATE.name.as.split(" (")[0]} শেষ কৰা, নহ'লে এই পাঠৰ শেষৰ 'ইয়ালৈ জঁপিওৱা' টিপি আগৰ পাঠবোৰৰ পৰীক্ষা দিয়া।`))}</span>
@@ -472,7 +482,9 @@ function renderStep(animate) {
     : it.retry ? `<div class="kicker retry">${T(B("Previous mistake", "আগৰ ভুল"))}</div>`
     : s.guess ? `<div class="kicker guess">${T(s.decide ? B("You decide", "তুমিয়েই সিদ্ধান্ত লোৱা") : B("Make a guess", "অনুমান কৰা"))}</div>`
     : `<div class="kicker">${T(KICK[s.type])}${from}${s.link && !VIRTUAL ? `<button class="linkchip" data-link>${CHAIN}${T(linkLabel(s.link))}</button>` : ""}${s.type === "whoami" ? `<span class="xp" id="who-xp"></span>` : ""}</div>`;
-  scr.innerHTML = kick + RENDER[s.type](s) + (s.type === "story" && s.link ? linkCallout(s.link) : "");
+  const mission = L.mission && U.unit.mission && !U.practice && !U.testout && mode === "lesson"
+    ? `<div class="mission-ribbon"><small>${T(L.mission.label)} · ${T(U.unit === L.test ? B("Final challenge", "শেষ প্ৰত্যাহ্বান") : B(`Finding ${L.units.indexOf(U.unit) + 1} of ${L.units.length}`, `${asNum(L.units.length)}টাৰ ${asNum(L.units.indexOf(U.unit) + 1)} নম্বৰ প্ৰমাণ`))}</small><strong>${T(U.unit.mission.objective)}</strong></div>` : "";
+  scr.innerHTML = mission + kick + RENDER[s.type](s) + (s.type === "story" && s.link ? linkCallout(s.link) : "");
   scr.scrollTop = 0;
   if (SETUP[s.type]) SETUP[s.type](s, scr);
   refresh();
@@ -498,10 +510,10 @@ const RENDER = {
   story: (s) => {
     // Story card standard: kicker + beat dots, hero with year stamp, title, lede, then one beat per tap (see README "Story cards")
     const yr = (s.text.map((p) => p.en).join(" ").match(/\b(1[0-9]{3})\b/) || [])[1];
-    const stamp = yr && s.img ? `<span class="stamp">${T(B(yr, asNum(yr)))}</span>` : "";
+    const stamp = yr && s.img && !s.imageCaption ? `<span class="stamp">${T(B(yr, asNum(yr)))}</span>` : "";
     const memo = /^Remember\b/.test(s.title.en);
     return `<h1 class="t">${T(s.title)}</h1>
-    ${s.img ? `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
+    ${s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
       : s.map ? `<figure class="frame mapframe">${mapSVG(mapOf(s), { story: true, route: s.map.route })}</figure>`
       : `<figure class="frame art${s.art === "rooster" ? " full" : ""}">${ART[s.art]}</figure>`}
     <div class="story${memo ? " memo" : ""}">${s.text.map((p, k) => `<p class="beat${k ? " later" : " lede"}${k ? " hold" : " on"}">${years(TR(p))}</p>`).join("")}
@@ -734,13 +746,17 @@ function finishUnit() {
   const go = mode === "jump" && pass ? { id: L.target.id, start: true, label: B(`Start lesson ${L.target.n} · ${L.target.name.en}`, `পাঠ ${asNum(L.target.n)} আৰম্ভ কৰা · ${L.target.name.as}`) }
     : !VIRTUAL && u === L.test && P.done.test && NEXT ? { id: NEXT.id, start: true, label: B(`Next: Lesson ${NEXT.n} · ${NEXT.name.en.split(" (")[0]}, Unit 1`, `পৰৱৰ্তী: পাঠ ${asNum(NEXT.n)} · ${NEXT.name.as.split(" (")[0]}, অধ্যায় ১`) } : null;
   const promptOf = (s) => s.q || s.s || (s.before ? B(`${s.before.en} ___ ${s.after.en}`, `${s.before.as} ___ ${s.after.as}`) : s.clues ? s.clues[0] : B("", ""));
-  const title = mode === "review" ? B("Review complete!", "পুনৰীক্ষণ সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", "যুগৰ পৰীক্ষা শেষ") : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
+  const title = mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", "যুগৰ পৰীক্ষা শেষ") : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
+  const reviewLeft = mode === "review" ? AXOM.reviewQueue().length : 0;
+  const missionResult = L.mission && u.mission && !U.practice && pass !== false ? `<div class="mission-result"><small>${T(L.mission.label)} · ${T(u === L.test ? B("File sealed", "নথি সম্পূৰ্ণ") : B("Finding recorded", "প্ৰমাণ লিখা হ'ল"))}</small><p>${T(u.mission.result)}</p></div>` : "";
   $("#done").innerHTML = `
     <svg class="done-art" viewBox="0 0 180 150" aria-hidden="true"><path d="M10 40c14 2 20 10 34 13 30 6 62 6 92 0 14-3 20-11 34-13" fill="none" stroke="var(--terra)" stroke-width="5" stroke-linecap="round"/><path d="M30 52v70M150 52v70M22 124h136" stroke="var(--terra)" stroke-width="5" stroke-linecap="round"/><circle cx="90" cy="92" r="30" fill="var(--gold)"/><path d="M76 92l10 10 18-20" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <h1>${T(title)}</h1>
     <p class="sub">${T(u.title)}${wasDone && !U.practice && !VIRTUAL ? " · " + T(B("practice", "অনুশীলন")) : ""}</p>
     ${note ? `<p class="cp-note">${note}</p>` : ""}
+    ${missionResult}
     ${go ? `<a class="btn next-lesson" href="lesson.html?id=${go.id}${go.start ? "&start=0" : ""}">${T(go.label)} ›</a>` : ""}
+    ${reviewLeft ? `<a class="btn next-lesson" href="lesson.html?review=1">${T(B(`Continue reviewing · ${reviewLeft} waiting`, `আৰু অনুশীলন কৰা · ${asNum(reviewLeft)}টা বাকী`))} ›</a>` : ""}
     <div class="stats">
       <div class="stat" style="--c:var(--gold)"><div class="h">XP</div><div class="v">+${N(U.xp)}</div></div>
       <div class="stat" style="--c:var(--good)"><div class="h">${T(B("Correct", "শুদ্ধ"))}</div><div class="v">${N(`${U.ok}/${U.asked}`)}</div></div>
@@ -873,7 +889,7 @@ if (VIRTUAL) {
       <p class="sub">${T(mode === "review" ? B("No questions are due today. Come back tomorrow.", "আজি কোনো প্ৰশ্ন বাকী নাই। কাইলৈ আহিবা।") : B("Finish some lessons of this era first.", "প্ৰথমে এই যুগৰ কিছু পাঠ শেষ কৰা।"))}</p>`;
   } else startUnit(ALL.length - 1);
 } else {
-  HERE = [$(".hero"), $("#mistake-slot")];
+  HERE = [$(".hero"), $("#mission-slot"), $("#mistake-slot")];
   showView("v-path"); renderPath(); setupOffline();
   const k = params.has("start") ? +params.get("start") : -1, testout = params.has("testout");
   history.replaceState(null, "", `lesson.html?id=${L.id}${UNLOCK_ALL ? "&all" : ""}${params.has("debug") ? "&debug" : ""}`);

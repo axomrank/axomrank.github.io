@@ -42,6 +42,26 @@ function reviewQueue() {   // due steps + saved mistakes, as [{ l, id }]
   Object.entries(G.mistakes).forEach(([l, ids]) => ids.forEach((id) => { if (!seen.has(id)) { seen.add(id); out.push({ l, id }); } }));
   return out;
 }
+// A short, varied round from the existing queue. The underlying due dates and
+// mistake records stay intact, so stopping after one round never drops work.
+const REVIEW_ROUND_SIZE = 8;
+function dailyReviewQueue(limit = REVIEW_ROUND_SIZE) {
+  const queue = reviewQueue(), size = Math.max(0, Math.floor(limit));
+  const mistakes = queue.filter(({ l, id }) => (G.mistakes[l] || []).includes(id));
+  const selectedMistakes = mistakes.slice(0, 3);
+  const selectedKeys = new Set(selectedMistakes.map(({ l, id }) => `${l}:${id}`));
+  const ordered = [...selectedMistakes, ...queue.filter(({ l, id }) => !selectedKeys.has(`${l}:${id}`))];
+  const round = [], counts = {};
+  // First pass draws from different lessons; second pass fills a sparse round.
+  for (const perLesson of [2, Infinity]) {
+    for (const item of ordered) {
+      if (round.length >= size) break;
+      if (round.includes(item) || (counts[item.l] || 0) >= perLesson) continue;
+      round.push(item); counts[item.l] = (counts[item.l] || 0) + 1;
+    }
+  }
+  return round;
+}
 function record(lessonId, right) { const st = (G.stats[lessonId] = G.stats[lessonId] || { a: 0, o: 0 }); st.a++; if (right) st.o++; }
 function addDayXP(xp) { const k = iso(); G.days[k] = (G.days[k] || 0) + xp; }
 const streakNow = () => { const t = dayKey(new Date()), y = dayKey(new Date(Date.now() - 864e5)); return G.streak.last === t || G.streak.last === y ? G.streak.n : 0; };
@@ -213,5 +233,5 @@ if (CFG.firebase) {
 
 window.AXOM = { B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
   isOffline, saveOffline, ICON, initLang, auth, merge, snapshot, applySnapshot, onSave: (f) => listeners.push(f), _audioState: () => (ac ? ac.state : "none"),
-  iso, srsLearn, srsAnswer, reviewQueue, record, addDayXP, openSettings };
+  iso, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
 })();

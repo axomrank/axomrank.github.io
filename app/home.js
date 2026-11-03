@@ -82,7 +82,8 @@ const pct = (p) => (p.total ? Math.round((p.done / p.total) * 100) : 0);
 const FOOT = `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Sources accompany each lesson. Illustrations are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · প্ৰতিটো পাঠৰ লগত উৎস দিয়া আছে। চিত্ৰবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
 function reviewCard() {
   const due = AXOM.reviewQueue().length;
-  return due ? `<a class="review-card" href="lesson.html?review=1"><span class="ic">${ICON.repeat}</span><span><b>${T(B("Daily review", "দৈনিক পুনৰীক্ষণ"))}</b><span class="s">${T(B(`${due} question${due > 1 ? "s" : ""} due · keeps facts fresh for the exam`, `${asNum(due)}টা প্ৰশ্ন বাকী · পৰীক্ষাৰ বাবে তথ্য সতেজ ৰাখে`))}</span></span><span class="go">›</span></a>` : "";
+  const round = Math.min(due, AXOM.REVIEW_ROUND_SIZE);
+  return due ? `<a class="review-card" href="lesson.html?review=1"><span class="ic">${ICON.repeat}</span><span><b>${T(B("Daily memory mission", "দৈনিক স্মৃতি অভিযান"))}</b><span class="s">${T(B(`${round} clues this round · ${due} waiting`, `এই পৰ্যায়ত ${asNum(round)}টা সংকেত · মুঠ ${asNum(due)}টা বাকী`))}</span></span><span class="go">›</span></a>` : "";
 }
 
 /* ---------- home: exam choice, continue, subjects ---------- */

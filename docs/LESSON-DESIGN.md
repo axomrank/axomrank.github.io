@@ -52,3 +52,25 @@ Emphasis, never mixed: `<mark>` = the key fact (max 3 per card); `[[entity]]` = 
 - Missed questions go to the lesson's mistakes list and to daily review (1, 3, 7, 15, 30 days; a wrong answer resets to day 1).
 - Passing a lesson test (80%+) opens Unit 1 of the next lesson. Add `?all` to unlock everything for review.
 - Rewards: XP, daily streak, stars, surprise "Did you know" cards.
+
+## Experience revamp in progress
+
+The product-level mission and memory plan lives in
+[EXPERIENCE-REVAMP.md](EXPERIENCE-REVAMP.md). Keep the contract above while
+piloting it. A mission has a visible historical puzzle and result; its actions
+must help answer that puzzle. Review is now presented as a bounded memory
+mission of up to eight questions, with the remaining queue preserved and an
+optional next round. This first slice still schedules individual step ids.
+Fact-linked variants and delayed-mastery states are planned, not yet shipped.
+
+The Lesson 1 pilot uses optional `mission` metadata: the lesson supplies a
+bilingual `label`, `title` and `hook`; each unit and the lesson test supply a
+bilingual `objective` and `result`. The player shows a progress board on the
+path, an objective during play and a recorded finding on completion. These
+fields frame existing sourced material; they do not replace story cards,
+exercises or permanent ids. The build checks both languages when a mission is
+present.
+
+## Library image captions
+
+A story may add bilingual `imageCaption` metadata to identify its illustration, especially when it is contextual rather than a depiction of every claim. `imageLayout` is `wide` for scenes or `contain` for objects and character sheets. The caption sits below the image, while the artistic-reconstruction label stays on the frame. New Assamese captions retain pending editorial-review status. Library origins, hashes, licence and card uses are recorded in `docs/research/generic-art-library-assets.json`.

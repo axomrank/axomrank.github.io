@@ -88,6 +88,16 @@ for lid, L in lessons.items():
     for k in ("no", "version", "king", "reign", "portrait", "sources", "map", "units", "test"):
         if k not in L: err(f"{lid}: missing '{k}'")
     if not L.get("sources"): err(f"{lid}: list at least one source (title, url, used_for)")
+    if L.get("mission"):
+        def mission_text(obj, field, where):
+            value = obj.get(field)
+            if not isinstance(value, dict) or not all(isinstance(value.get(lang), str) and value[lang].strip() for lang in ("en", "as")):
+                err(f"{where}: mission {field} needs English and Assamese text")
+        for field in ("label", "title", "hook"):
+            mission_text(L["mission"], field, lid)
+        for unit in L["units"] + [L["test"]]:
+            for field in ("objective", "result"):
+                mission_text(unit.get("mission") or {}, field, f"{lid}/{unit['id']}")
     mdir = f"content/media/{lid}"
     def need_img(name, where):
         folder = "content/media" if "/" in name else mdir   # "folder/file": shared/… or another lesson's pictures
@@ -109,6 +119,10 @@ for lid, L in lessons.items():
             if s["type"] == "story" and not (s.get("img") or s.get("map") or s.get("art")): err(f"{where}: story needs img, map or art")
             if s["type"] == "story": story_rules(s, f"{where}/{sid}")
             if s.get("img"): need_img(s["img"], where)
+            if s.get("imageCaption"):
+                if not s.get("img"): err(f"{where}: imageCaption needs img")
+                if not isinstance(s["imageCaption"], dict) or not all(s["imageCaption"].get(lang) for lang in ("en", "as")): err(f"{where}: imageCaption needs English and Assamese")
+                if s.get("imageLayout") not in ("wide", "contain"): err(f"{where}: imageLayout must be wide or contain")
             if s["type"] == "picture": [need_img(o, where) for o in s["options"]]
             if s["type"] == "map" and s["target"] not in s["choices"]: err(f"{where}: map target must be one of the choices")
             if "answer" in s and isinstance(s["answer"], int) and "options" in s and not 0 <= s["answer"] < len(s["options"]): err(f"{where}: answer index out of range")
