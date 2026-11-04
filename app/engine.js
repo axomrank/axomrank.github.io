@@ -220,6 +220,10 @@ const ICONS = {
   done: '<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-width="3.4"/></svg>',
 };
 const ART = {
+  door: `<svg viewBox="0 0 200 150"><rect x="62" y="16" width="76" height="120" rx="4" fill="var(--surface)" stroke="var(--indigo)" stroke-width="3"/><path d="M70 24l42 12v96l-42-4z" fill="var(--terra)"/><circle cx="104" cy="84" r="4" fill="var(--gold)"/><path d="M120 136h48M32 136h30" stroke="var(--line-2)" stroke-width="3" stroke-linecap="round"/><path d="M126 76l34-22M126 84h40M126 92l34 22" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/></svg>`,
+  court: `<svg viewBox="0 0 200 150"><path d="M100 18l70 34H30z" fill="var(--terra)"/><rect x="36" y="56" width="128" height="8" fill="var(--indigo)"/>${[50, 78, 106, 134].map((x) => `<rect x="${x}" y="68" width="16" height="48" rx="2" fill="var(--surface)" stroke="var(--line-2)" stroke-width="2"/>`).join("")}<rect x="28" y="118" width="144" height="8" fill="var(--indigo)"/><rect x="18" y="128" width="164" height="8" rx="2" fill="var(--gold)"/></svg>`,
+  houses: `<svg viewBox="0 0 200 150"><path d="M20 100a38 38 0 0 1 76 0z" fill="var(--terra)"/><path d="M104 100a38 38 0 0 1 76 0z" fill="var(--indigo)"/><path d="M58 62v-14M142 62v-14" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/><path d="M20 108h76M104 108h76" stroke="var(--line-2)" stroke-width="4"/><path d="M78 126h44" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/><path d="M78 126l10-7M78 126l10 7M122 126l-10-7M122 126l-10 7" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/></svg>`,
+  seal: `<svg viewBox="0 0 200 150"><rect x="48" y="16" width="104" height="118" rx="6" fill="var(--surface)" stroke="var(--line-2)" stroke-width="3"/>${[34, 48, 62, 76].map((y, i) => `<path d="M64 ${y}h${i % 2 ? 60 : 72}" stroke="var(--indigo)" stroke-width="4" stroke-linecap="round" opacity=".7"/>`).join("")}<circle cx="124" cy="106" r="18" fill="var(--terra)"/><path d="M115 106l7 7 12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   scroll: `<svg viewBox="0 0 200 150"><rect x="44" y="32" width="112" height="86" rx="6" fill="var(--surface)" stroke="var(--terra)" stroke-width="3"/><rect x="30" y="26" width="18" height="98" rx="9" fill="var(--terra)"/><rect x="152" y="26" width="18" height="98" rx="9" fill="var(--terra)"/>${[50, 62, 74, 86, 98].map((y, i) => `<path d="M60 ${y}h${i % 2 ? 66 : 80}" stroke="var(--indigo)" stroke-width="4" stroke-linecap="round" opacity="${0.85 - i * 0.1}"/>`).join("")}<circle cx="132" cy="104" r="8" fill="var(--gold)"/></svg>`,
   calendar: `<svg viewBox="0 0 200 150"><rect x="50" y="22" width="100" height="112" rx="14" fill="var(--surface)" stroke="var(--line-2)" stroke-width="3"/><path d="M50 36a14 14 0 0 1 14-14h72a14 14 0 0 1 14 14v18H50z" fill="var(--terra)"/><rect x="72" y="12" width="8" height="22" rx="4" fill="var(--indigo)"/><rect x="120" y="12" width="8" height="22" rx="4" fill="var(--indigo)"/><text class="en" x="100" y="48" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="2">DEC</text><text class="as" x="100" y="48" text-anchor="middle" font-family="Noto Sans Bengali, sans-serif" font-weight="800" font-size="14" fill="#fff">ডিচেম্বৰ</text><text class="en" x="100" y="114" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="58" fill="var(--indigo)">2</text><text class="as" x="100" y="114" text-anchor="middle" font-family="Noto Sans Bengali, sans-serif" font-weight="800" font-size="58" fill="var(--indigo)">২</text></svg>`,
   rooster: `<svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#2E3170"/><circle cx="160" cy="34" r="22" fill="#F6E7C4" opacity=".18"/><circle cx="160" cy="34" r="15" fill="#F6E7C4"/>${[[30, 20], [70, 40], [120, 18], [40, 60], [180, 70], [95, 70]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="1.6" fill="#F6E7C4"/>`).join("")}<path d="M0 128c40-10 80-10 120-4s60 6 80 2v24H0z" fill="#1D1F4D"/><g transform="translate(62 54)"><path d="M30 70c-22 0-34-16-30-34 3-12 14-20 26-20 6-10 18-14 26-8l-4 6c8 0 12 6 10 12l-10-2c4 8 4 20-2 30" fill="var(--terra)"/><path d="M50 8c2-6 8-8 10-4-4 0-6 2-6 6z" fill="#D2483E"/><path d="M62 18l10 3-10 3z" fill="var(--gold)"/><circle cx="55" cy="16" r="2" fill="#1D1F4D"/><path d="M6 44c-10-6-16-20-8-30 2 10 8 16 14 18" fill="var(--gold)"/><path d="M24 70v12M36 68v14M18 82h10M30 82h12" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/></g><path d="M140 70q8-6 16 0M146 60q10-8 20 0" stroke="#F6E7C4" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/></svg>`,
@@ -230,7 +234,7 @@ const KICK = {
   map: B("Tap on the map", "মানচিত্ৰত টিপা"), unscramble: B("Unscramble", "সজাই লিখা"), inline: B("Complete the sentence", "বাক্যটো সম্পূৰ্ণ কৰা"),
   order: B("Put it in order", "ক্ৰম অনুসৰি সজোৱা"), match: B("Match the following", "মিলোৱা"), fill: B("Fill in the blank", "খালী ঠাই পূৰ কৰা"),
   odd: B("Odd one out", "অমিলটো বিচাৰা"), picture: B("Picture", "ছবি চিনাক্ত কৰা"), whoami: B("Who am I?", "মই কোন?"),
-  spot: B("Spot the error", "ভুলটো বিচাৰা"), timeline: B("Timeline", "সময়ৰেখা"), story: B("Story", "কাহিনী"),
+  spot: B("Spot the error", "ভুলটো বিচাৰা"), timeline: B("Timeline", "সময়ৰেখা"), story: B("Story", "কাহিনী"), articles: B("Article line", "অনুচ্ছেদৰ ৰেখা"),
 };
 const PRAISE = [B("Correct!", "শুদ্ধ!"), B("Excellent!", "বঢ়িয়া!"), B("Well done!", "বহুত ভাল!"), B("Great!", "চমৎকাৰ!")];
 
@@ -436,7 +440,7 @@ const unitLinks = (u) => {
   u.steps.forEach((s) => { if (s.link) { const key = s.link.lesson ? `L${s.link.lesson}:${s.link.unitNo}` : s.link.unit; if (!seen.has(key)) seen.set(key, s.link); } });
   return [...seen.values()];
 };
-const TYPE = { place: B("Place", "ঠাই"), river: B("River", "নদী"), ridge: B("Hills", "পাহাৰ"), pass: B("Mountain pass", "গিৰিপথ"), people: B("People", "জনগোষ্ঠী"), person: B("Person", "ব্যক্তি"), office: B("Office", "পদ"), term: B("Term", "শব্দ") };
+const TYPE = { place: B("Place", "ঠাই"), article: B("Article", "অনুচ্ছেদ"), river: B("River", "নদী"), ridge: B("Hills", "পাহাৰ"), pass: B("Mountain pass", "গিৰিপথ"), people: B("People", "জনগোষ্ঠী"), person: B("Person", "ব্যক্তি"), office: B("Office", "পদ"), term: B("Term", "শব্দ") };
 function openEntity(id) {
   const e = ENT[id]; if (!e) return;
   const links = (e.lessons || []).filter((l) => l !== L.id);
@@ -487,7 +491,7 @@ function renderStep(animate) {
   const kick = s.type === "story" ? `<div class="kicker story">${T(KICK.story)}${s.text.length > 1 ? `<span class="dots">${s.text.map((_, k) => `<i class="${k ? "" : "on"}"></i>`).join("")}</span>` : ""}</div>`
     : it.retry ? `<div class="kicker retry">${T(B("Previous mistake", "আগৰ ভুল"))}</div>`
     : s.guess ? `<div class="kicker guess">${T(s.decide ? B("You decide", "তুমিয়েই সিদ্ধান্ত লোৱা") : B("Make a guess", "অনুমান কৰা"))}</div>`
-    : `<div class="kicker">${T(KICK[s.type])}${from}${s.link && !VIRTUAL ? `<button class="linkchip" data-link>${CHAIN}${T(linkLabel(s.link))}</button>` : ""}${s.type === "whoami" ? `<span class="xp" id="who-xp"></span>` : ""}</div>`;
+    : `<div class="kicker">${T(KICK[s.scale || s.type])}${from}${s.link && !VIRTUAL ? `<button class="linkchip" data-link>${CHAIN}${T(linkLabel(s.link))}</button>` : ""}${s.type === "whoami" ? `<span class="xp" id="who-xp"></span>` : ""}</div>`;
   const mission = L.mission && U.unit.mission && !U.practice && !U.testout && mode === "lesson"
     ? `<div class="mission-ribbon"><small>${T(L.mission.label)} · ${T(U.unit === L.test ? B("Final challenge", "শেষ প্ৰত্যাহ্বান") : B(`Finding ${L.units.indexOf(U.unit) + 1} of ${L.units.length}`, `${asNum(L.units.length)}টাৰ ${asNum(L.units.indexOf(U.unit) + 1)} নম্বৰ প্ৰমাণ`))}</small><strong>${T(U.unit.mission.objective)}</strong></div>` : "";
   scr.innerHTML = mission + kick + RENDER[s.type](s) + (s.type === "story" && s.link ? linkCallout(s.link) : "");
@@ -550,7 +554,8 @@ const RENDER = {
   order: (s) => `<p class="prompt">${T(s.q)}</p><div class="slots">${s.items.map((_, k) => `<div class="oslot"><span class="n">${N(k + 1)}</span></div>`).join("")}</div><div class="bank"></div>`,
   match: (s) => `<p class="prompt">${T(s.q)}</p><div class="match"><div class="col" data-side="left"></div><div class="col" data-side="right"></div></div>`,
   timeline: (s) => {
-    const slot = (k) => `<div class="tslot" data-slot="${k}">${T(B("Tap an event, then tap here", "ঘটনা এটা টিপি ইয়াত টিপা"))}</div>`;
+    const hint = s.scale === "articles" ? B("Tap a provision, then tap here", "উপবন্ধ এটা টিপি ইয়াত টিপা") : B("Tap an event, then tap here", "ঘটনা এটা টিপি ইয়াত টিপা");
+    const slot = (k) => `<div class="tslot" data-slot="${k}">${T(hint)}</div>`;
     return `<p class="prompt">${T(s.q)}</p><div class="tline">${slot(0)}${s.anchors.map((a, k) => `<div class="anchor"><span class="y">${N(a.y)}</span><span class="l">${T(a.l)}</span></div>${slot(k + 1)}`).join("")}</div>
       <div class="tbank">${s.items.map((x, k) => `<button class="tile" data-item="${k}">${T(x.t)}</button>`).join("")}</div>`;
   },

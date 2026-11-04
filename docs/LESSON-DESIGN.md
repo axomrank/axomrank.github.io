@@ -45,6 +45,10 @@ Limits (build): at most 3 paragraphs, 35 words per paragraph, 55 words per card 
 
 Emphasis, never mixed: `<mark>` = the key fact (max 3 per card); `[[entity]]` = a tappable name; years are styled automatically; `<b>` = lists of names and memory-trick letters.
 
+## Constitution course additions
+
+`[[art-21a]]` opens an article's official heading. A `timeline` step with `"scale": "articles"` plays as an article line: anchors are plain article numbers and `items` hold the provisions, including lettered ones. A course entry's `reign` may be bilingual. A course with `"draft": true` needs no catalog place, stays off the home page and opens only by its direct link.
+
 ## Learning loop (in `app/engine.js`)
 
 - A missed question in a unit or lesson test returns once at the end. Match does not repeat.

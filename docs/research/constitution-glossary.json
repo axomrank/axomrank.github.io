@@ -1,0 +1,993 @@
+{
+"status": "pending-editorial-review",
+"source": "coi-as-2025",
+"method": "Read by eye from rendered contents pages, because the PDF text layer drops Assamese characters. Not yet checked by an Assamese reader. pdfPage is the page of the PDF file, not the printed page.",
+"notes": [
+"The source lettered articles with Assamese letters: 21A is ২১ক and 371B is ৩৭১খ. Lessons must show both forms.",
+"The contents spell some words in two ways: মন্ত্ৰীপৰিষদ and মন্ত্ৰী-পৰিষদ; অনুসূচিত and অনুসূচীত. Part XXII is headed দ্বাবিংশ ভাগ where other Parts use অংশ. An editor should choose one form for the course.",
+"Terms were taken from headings, so they are the source's headings, not necessarily the everyday words a learner knows.",
+"articleHeadings is a selection for the pilot lessons and common exam articles. scripts/add_article_entities.py turns it into article entities; add a heading here to add an entity.",
+"Words in the pilot lessons beyond this glossary, such as ধন বিধেয়ক for Money Bill, জিলা পৰিষদ for District Council and ঝুম for jhum, were not looked up in the Assamese edition. Check them against Articles 109 to 111 and the Sixth Schedule in review."
+],
+"partTitles": [
+{
+"part": "I",
+"as": "সংঘ আৰু ইয়াৰ ৰাজ্যক্ষেত্ৰ",
+"pdfPage": 10
+},
+{
+"part": "II",
+"as": "নাগৰিকত্ব",
+"pdfPage": 10
+},
+{
+"part": "III",
+"as": "মৌলিক অধিকাৰ",
+"pdfPage": 11
+},
+{
+"part": "IV",
+"as": "ৰাষ্ট্ৰ পৰিচালনাৰ নিৰ্দেশাত্মক নীতিসমূহ",
+"pdfPage": 12
+},
+{
+"part": "IVA",
+"as": "মৌলিক কৰ্তব্যসমূহ",
+"pdfPage": 13
+},
+{
+"part": "V",
+"as": "সংঘ",
+"pdfPage": 13
+},
+{
+"part": "VI",
+"as": "ৰাজ্যসমূহ",
+"pdfPage": 18
+},
+{
+"part": "VIII",
+"as": "কেন্দ্ৰীয় শাসিত অঞ্চলসমূহ",
+"pdfPage": 23
+},
+{
+"part": "IX",
+"as": "পঞ্চায়ত",
+"pdfPage": 23
+},
+{
+"part": "IXA",
+"as": "পৌৰসভা",
+"pdfPage": 24
+},
+{
+"part": "IXB",
+"as": "সমবায় সমিতিসমূহ",
+"pdfPage": 25
+},
+{
+"part": "X",
+"as": "অনুসূচিত আৰু জনজাতি ক্ষেত্ৰসমূহ",
+"pdfPage": 25
+},
+{
+"part": "XI",
+"as": "সংঘ আৰু ৰাজ্যসমূহৰ সম্বন্ধ",
+"pdfPage": 26
+},
+{
+"part": "XII",
+"as": "বিত্ত, সম্পত্তি, সংবিদা আৰু বাদসমূহ",
+"pdfPage": 27
+},
+{
+"part": "XIII",
+"as": "ভাৰতৰ ৰাষ্ট্ৰক্ষেত্ৰৰ ভিতৰত বেপাৰ, বাণিজ্য আৰু আদান-প্ৰদান",
+"pdfPage": 29
+},
+{
+"part": "XIV",
+"as": "সংঘ আৰু ৰাজ্যসমূহৰ অধীনস্থ সেৱাসমূহ",
+"pdfPage": 29
+},
+{
+"part": "XIVA",
+"as": "ন্যায়াধিকৰণ",
+"pdfPage": 30
+},
+{
+"part": "XV",
+"as": "নিৰ্বাচন",
+"pdfPage": 31
+},
+{
+"part": "XVI",
+"as": "কিছুমান শ্ৰেণী সম্পৰ্কে বিশেষ উপবন্ধাৱলী",
+"pdfPage": 31
+},
+{
+"part": "XVII",
+"as": "চৰকাৰী ভাষা",
+"pdfPage": 32
+},
+{
+"part": "XVIII",
+"as": "জৰুৰীকালীন উপবন্ধসমূহ",
+"pdfPage": 33
+},
+{
+"part": "XIX",
+"as": "বিবিধ",
+"pdfPage": 33
+},
+{
+"part": "XX",
+"as": "সংবিধানৰ সংশোধন",
+"pdfPage": 34
+},
+{
+"part": "XXI",
+"as": "অস্থায়ী, অন্তৰ্কালীন আৰু বিশেষ উপবন্ধাৱলী",
+"pdfPage": 34
+},
+{
+"part": "XXII",
+"as": "সংক্ষিপ্ত নাম, আৰম্ভণি, হিন্দীত প্ৰাধিকৃত পাঠ আৰু বাতিল",
+"pdfPage": 36
+}
+],
+"terms": [
+{
+"en": "constitution",
+"as": "সংবিধান",
+"pdfPage": 1
+},
+{
+"en": "preamble",
+"as": "প্ৰস্তাৱনা",
+"pdfPage": 10
+},
+{
+"en": "article",
+"as": "অনুচ্ছেদ",
+"pdfPage": 10
+},
+{
+"en": "part",
+"as": "অংশ",
+"pdfPage": 10
+},
+{
+"en": "chapter",
+"as": "অধ্যায়",
+"pdfPage": 13
+},
+{
+"en": "schedule",
+"as": "অনুসূচী",
+"pdfPage": 36
+},
+{
+"en": "appendix",
+"as": "পৰিশিষ্ট",
+"pdfPage": 37
+},
+{
+"en": "Union",
+"as": "সংঘ",
+"pdfPage": 13
+},
+{
+"en": "State",
+"as": "ৰাজ্য",
+"pdfPage": 18
+},
+{
+"en": "territory",
+"as": "ৰাজ্যক্ষেত্ৰ",
+"pdfPage": 10
+},
+{
+"en": "citizenship",
+"as": "নাগৰিকত্ব",
+"pdfPage": 10
+},
+{
+"en": "Fundamental Rights",
+"as": "মৌলিক অধিকাৰ",
+"pdfPage": 11
+},
+{
+"en": "Right to Equality",
+"as": "সমতাৰ অধিকাৰ",
+"pdfPage": 11
+},
+{
+"en": "Right to Freedom",
+"as": "স্বতন্ত্ৰতাৰ অধিকাৰ",
+"pdfPage": 11
+},
+{
+"en": "Right against Exploitation",
+"as": "শোষণৰ বিৰুদ্ধে অধিকাৰ",
+"pdfPage": 11
+},
+{
+"en": "Right to Freedom of Religion",
+"as": "ধৰ্মীয় স্বাধীনতাৰ অধিকাৰ",
+"pdfPage": 11
+},
+{
+"en": "right to education",
+"as": "শিক্ষাৰ অধিকাৰ",
+"pdfPage": 11
+},
+{
+"en": "Right to Constitutional Remedies",
+"as": "সাংবিধানিক প্ৰতিকাৰৰ অধিকাৰ",
+"pdfPage": 12
+},
+{
+"en": "Directive Principles of State Policy",
+"as": "ৰাষ্ট্ৰ পৰিচালনাৰ নিৰ্দেশাত্মক নীতিসমূহ",
+"pdfPage": 12
+},
+{
+"en": "Fundamental Duties",
+"as": "মৌলিক কৰ্তব্যসমূহ",
+"pdfPage": 13
+},
+{
+"en": "executive",
+"as": "কাৰ্য্যপালিকা",
+"pdfPage": 13
+},
+{
+"en": "President",
+"as": "ৰাষ্ট্ৰপতি",
+"pdfPage": 13
+},
+{
+"en": "Vice-President",
+"as": "উপৰাষ্ট্ৰপতি",
+"pdfPage": 13
+},
+{
+"en": "impeachment",
+"as": "মহাভিযোগ",
+"pdfPage": 14
+},
+{
+"en": "Council of Ministers",
+"as": "মন্ত্ৰীপৰিষদ",
+"pdfPage": 14
+},
+{
+"en": "Attorney-General for India",
+"as": "ভাৰতৰ এটৰ্ণী জেনেৰেল",
+"pdfPage": 14
+},
+{
+"en": "Prime Minister",
+"as": "প্ৰধান মন্ত্ৰী",
+"pdfPage": 15
+},
+{
+"en": "Parliament",
+"as": "সংসদ",
+"pdfPage": 15
+},
+{
+"en": "Council of States",
+"as": "ৰাজ্যসভা",
+"pdfPage": 15
+},
+{
+"en": "House of the People",
+"as": "লোকসভা",
+"pdfPage": 15
+},
+{
+"en": "Speaker",
+"as": "অধ্যক্ষ",
+"pdfPage": 15
+},
+{
+"en": "Deputy Speaker",
+"as": "উপাধ্যক্ষ",
+"pdfPage": 15
+},
+{
+"en": "Chairman",
+"as": "সভাপতি",
+"pdfPage": 15
+},
+{
+"en": "Deputy Chairman",
+"as": "উপ-সভাপতি",
+"pdfPage": 15
+},
+{
+"en": "session",
+"as": "অধিৱেশন",
+"pdfPage": 15
+},
+{
+"en": "prorogation",
+"as": "স্থগিতকৰণ",
+"pdfPage": 15
+},
+{
+"en": "dissolution",
+"as": "ভংগ",
+"pdfPage": 15
+},
+{
+"en": "Supreme Court",
+"as": "উচ্চতম ন্যায়ালয়",
+"pdfPage": 18
+},
+{
+"en": "High Court",
+"as": "উচ্চ ন্যায়ালয়",
+"pdfPage": 23
+},
+{
+"en": "writ",
+"as": "লেখ",
+"pdfPage": 18
+},
+{
+"en": "review",
+"as": "পুনৰ্বিবেচনা",
+"pdfPage": 18
+},
+{
+"en": "Comptroller and Auditor-General of India",
+"as": "ভাৰতৰ নিয়ন্ত্ৰক আৰু মহালেখা পৰীক্ষক",
+"pdfPage": 18
+},
+{
+"en": "Governor",
+"as": "ৰাজ্যপাল",
+"pdfPage": 19
+},
+{
+"en": "Advocate-General for the State",
+"as": "ৰাজ্যৰ মহাধিবক্তা",
+"pdfPage": 19
+},
+{
+"en": "Chief Minister",
+"as": "মুখ্যমন্ত্ৰী",
+"pdfPage": 19
+},
+{
+"en": "State Legislature",
+"as": "বিধানমণ্ডল",
+"pdfPage": 19
+},
+{
+"en": "Legislative Council",
+"as": "বিধান পৰিষদ",
+"pdfPage": 19
+},
+{
+"en": "Legislative Assembly",
+"as": "বিধানসভা",
+"pdfPage": 19
+},
+{
+"en": "subordinate courts",
+"as": "অধীনস্থ ন্যায়ালয়সমূহ",
+"pdfPage": 23
+},
+{
+"en": "ordinance",
+"as": "অধ্যাদেশ",
+"pdfPage": 23
+},
+{
+"en": "Union territories",
+"as": "কেন্দ্ৰীয় শাসিত অঞ্চলসমূহ",
+"pdfPage": 23
+},
+{
+"en": "Panchayat",
+"as": "পঞ্চায়ত",
+"pdfPage": 23
+},
+{
+"en": "Gram Sabha",
+"as": "গাঁও সভা",
+"pdfPage": 24
+},
+{
+"en": "Municipality",
+"as": "পৌৰসভা",
+"pdfPage": 24
+},
+{
+"en": "Finance Commission",
+"as": "বিত্ত আয়োগ",
+"pdfPage": 24
+},
+{
+"en": "co-operative societies",
+"as": "সমবায় সমিতিসমূহ",
+"pdfPage": 25
+},
+{
+"en": "residuary power",
+"as": "অৱশিষ্ট ক্ষমতা",
+"pdfPage": 26
+},
+{
+"en": "Consolidated Fund",
+"as": "একত্ৰীকৃত নিধি",
+"pdfPage": 27
+},
+{
+"en": "Contingency Fund",
+"as": "আকস্মিকতা নিধি",
+"pdfPage": 27
+},
+{
+"en": "Inter-State Council",
+"as": "আন্তঃৰাজ্যিক পৰিষদ",
+"pdfPage": 27
+},
+{
+"en": "Public Service Commission",
+"as": "লোকসেৱা আয়োগ",
+"pdfPage": 30
+},
+{
+"en": "All-India Services",
+"as": "সৰ্বভাৰতীয় সেৱাসমূহ",
+"pdfPage": 30
+},
+{
+"en": "tribunals",
+"as": "ন্যায়াধিকৰণ",
+"pdfPage": 30
+},
+{
+"en": "election",
+"as": "নিৰ্বাচন",
+"pdfPage": 31
+},
+{
+"en": "Election Commission",
+"as": "নিৰ্বাচনী আয়োগ",
+"pdfPage": 31
+},
+{
+"en": "adult suffrage",
+"as": "প্ৰাপ্তবয়স্ক ভোটাধিকাৰ",
+"pdfPage": 31
+},
+{
+"en": "National Commission for Scheduled Castes",
+"as": "ৰাষ্ট্ৰীয় অনুসূচিত জাতি আয়োগ",
+"pdfPage": 32
+},
+{
+"en": "National Commission for Scheduled Tribes",
+"as": "ৰাষ্ট্ৰীয় অনুসূচিত জনজাতি আয়োগ",
+"pdfPage": 32
+},
+{
+"en": "National Commission for Backward Classes",
+"as": "ৰাষ্ট্ৰীয় পিছপৰা শ্ৰেণীসমূহৰ আয়োগ",
+"pdfPage": 32
+},
+{
+"en": "official language",
+"as": "চৰকাৰী ভাষা",
+"pdfPage": 32
+},
+{
+"en": "Proclamation of Emergency",
+"as": "জৰুৰীকালীন অৱস্থাৰ ঘোষণা",
+"pdfPage": 33
+},
+{
+"en": "Financial Emergency",
+"as": "বিত্তীয় জৰুৰীকালীন অৱস্থা",
+"pdfPage": 33
+},
+{
+"en": "amendment of the Constitution",
+"as": "সংবিধানৰ সংশোধন",
+"pdfPage": 34
+},
+{
+"en": "Union List",
+"as": "সংঘ সূচী",
+"pdfPage": 37
+},
+{
+"en": "State List",
+"as": "ৰাজ্য সূচী",
+"pdfPage": 37
+},
+{
+"en": "Concurrent List",
+"as": "উমৈহতীয়া সূচী",
+"pdfPage": 37
+},
+{
+"en": "Scheduled Areas",
+"as": "অনুসূচিত ক্ষেত্ৰসমূহ",
+"pdfPage": 37
+},
+{
+"en": "disqualification on ground of defection",
+"as": "দল পৰিৱৰ্তনৰ আধাৰত অৰ্হতাহীনতা",
+"pdfPage": 37
+},
+{
+"en": "habeas corpus",
+"as": "বন্দী প্ৰত্যক্ষীকৰণ",
+"pdfPage": 56
+},
+{
+"en": "mandamus",
+"as": "পৰমাদিশ",
+"pdfPage": 56
+},
+{
+"en": "prohibition (writ)",
+"as": "নিষেধাজ্ঞা",
+"pdfPage": 56
+},
+{
+"en": "quo warranto",
+"as": "অধিকাৰ পৃচ্ছা",
+"pdfPage": 56
+},
+{
+"en": "certiorari",
+"as": "উৎপ্ৰেষণ",
+"pdfPage": 56
+},
+{
+"en": "autonomous district",
+"as": "স্বায়ত্ত শাসিত জিলা",
+"pdfPage": 317
+},
+{
+"en": "autonomous region",
+"as": "স্বায়ত্ত শাসিত অঞ্চল",
+"pdfPage": 317
+}
+],
+"articleHeadings": [
+{
+"no": "13",
+"pdfPage": 11,
+"as": "মৌলিক অধিকাৰসমূহৰ সৈতে অসংগতিপূৰ্ণ বা অৱজ্ঞাসূচক বিধিসমূহ"
+},
+{
+"no": "14",
+"pdfPage": 11,
+"as": "আইনৰ দৃষ্টিত সমতা"
+},
+{
+"no": "15",
+"pdfPage": 11,
+"as": "ধৰ্ম, বৰ্ণ, জাতি, লিংগ বা জন্মস্থানৰ ভিত্তিত বৈষম্যৰ নিষেধকৰণ"
+},
+{
+"no": "16",
+"pdfPage": 11,
+"as": "চৰকাৰী নিয়োগৰ ক্ষেত্ৰত সুযোগৰ সমতা"
+},
+{
+"no": "17",
+"pdfPage": 11,
+"as": "অস্পৃশ্যতাৰ বিলোপ সাধন"
+},
+{
+"no": "18",
+"pdfPage": 11,
+"as": "উপাধিৰ বিলোপ সাধন"
+},
+{
+"no": "19",
+"pdfPage": 11,
+"as": "বাক্-স্বাধীনতা বিষয়ক কিছুমান অধিকাৰৰ সংৰক্ষণ"
+},
+{
+"no": "20",
+"pdfPage": 11,
+"as": "অপৰাধৰ বাবে দোষী সাব্যস্ত হোৱাৰ ক্ষেত্ৰত সুৰক্ষা"
+},
+{
+"no": "21",
+"pdfPage": 11,
+"as": "জীৱন আৰু ব্যক্তি স্বাধীনতাৰ সুৰক্ষা"
+},
+{
+"no": "21A",
+"pdfPage": 11,
+"as": "শিক্ষাৰ অধিকাৰ"
+},
+{
+"no": "22",
+"pdfPage": 11,
+"as": "কিছুমান বিশেষ ক্ষেত্ৰত গ্ৰেপ্তাৰ আৰু আটক কৰাৰ পৰা সুৰক্ষা"
+},
+{
+"no": "23",
+"pdfPage": 11,
+"as": "মানৱ সৰবৰাহ আৰু বলপূৰ্বক শ্ৰম নিষিদ্ধকৰণ"
+},
+{
+"no": "24",
+"pdfPage": 11,
+"as": "কাৰখানা আদিত শিশুক নিয়োগ কৰা নিষেধাজ্ঞা"
+},
+{
+"no": "25",
+"pdfPage": 11,
+"as": "বিবেকৰ স্বাধীনতা আৰু ধৰ্মৰ মুক্তপালন, অনুশীলন আৰু প্ৰচাৰ"
+},
+{
+"no": "29",
+"pdfPage": 12,
+"as": "সংখ্যালঘুসকলৰ স্বাৰ্থৰ সুৰক্ষা"
+},
+{
+"no": "30",
+"pdfPage": 12,
+"as": "সংখ্যালঘুসকলৰ শিক্ষানুষ্ঠান স্থাপন আৰু পৰিচালনাৰ অধিকাৰ"
+},
+{
+"no": "32",
+"pdfPage": 12,
+"as": "এই অংশৰ দ্বাৰা প্ৰদান কৰা অধিকাৰ বলবৎকৰণৰ প্ৰতিকাৰ"
+},
+{
+"no": "39A",
+"pdfPage": 12,
+"as": "সমন্যায় আৰু বিনামূলীয়া আইনী সাহায্য"
+},
+{
+"no": "45",
+"pdfPage": 13,
+"as": "ছয় বছৰৰ তলৰ শিশুসকলৰ প্ৰাক্ শৈশৱকালীন যত্ন আৰু শিক্ষাৰ বাবে উপবন্ধ"
+},
+{
+"no": "51A",
+"pdfPage": 13,
+"as": "মৌলিক কৰ্তব্যসমূহ"
+},
+{
+"no": "52",
+"pdfPage": 13,
+"as": "ভাৰতৰ ৰাষ্ট্ৰপতি"
+},
+{
+"no": "53",
+"pdfPage": 13,
+"as": "সংঘৰ কাৰ্য্যবাহী ক্ষমতা"
+},
+{
+"no": "61",
+"pdfPage": 14,
+"as": "ৰাষ্ট্ৰপতিৰ বিৰুদ্ধে মহাভিযোগ পদ্ধতি"
+},
+{
+"no": "72",
+"pdfPage": 14,
+"as": "কিছুমান নিৰ্দিষ্ট ক্ষেত্ৰত ৰাষ্ট্ৰপতিৰ ক্ষমাদান কৰিব পৰা আৰু নিলম্বন, ন্যূনতম বা লঘু কৰিব পৰা ক্ষমতা"
+},
+{
+"no": "74",
+"pdfPage": 14,
+"as": "ৰাষ্ট্ৰপতিক সহায় কৰিবলৈ আৰু পৰামৰ্শ দিবলৈ মন্ত্ৰীপৰিষদ"
+},
+{
+"no": "76",
+"pdfPage": 14,
+"as": "ভাৰতৰ এটৰ্ণী জেনেৰেল"
+},
+{
+"no": "79",
+"pdfPage": 15,
+"as": "সংসদৰ গঠন"
+},
+{
+"no": "80",
+"pdfPage": 15,
+"as": "ৰাজ্যসভাৰ গঠন"
+},
+{
+"no": "81",
+"pdfPage": 15,
+"as": "লোকসভাৰ গঠন"
+},
+{
+"no": "85",
+"pdfPage": 15,
+"as": "সংসদৰ অধিৱেশন, স্থগিতকৰণ আৰু ভংগ"
+},
+{
+"no": "107",
+"pdfPage": 16,
+"as": "বিধেয়ক উত্থাপন আৰু পাৰিতকৰণ সম্পৰ্কীয় উপবন্ধাৱলী"
+},
+{
+"no": "108",
+"pdfPage": 16,
+"as": "কোনো নিৰ্দিষ্ট ক্ষেত্ৰত উভয় সদনৰ যুটীয়া বৈঠক"
+},
+{
+"no": "109",
+"pdfPage": 16,
+"as": "ধন সম্পৰ্কীয় বিধেয়কৰ সন্দৰ্ভত বিশেষ প্ৰক্ৰিয়া"
+},
+{
+"no": "110",
+"pdfPage": 16,
+"as": "ধন সম্পৰ্কীয় বিধেয়কৰ সংজ্ঞা"
+},
+{
+"no": "111",
+"pdfPage": 16,
+"as": "বিধেয়কত সম্মতি প্ৰদান"
+},
+{
+"no": "112",
+"pdfPage": 16,
+"as": "বাৰ্ষিক বিত্তীয় বিৱৰণ"
+},
+{
+"no": "123",
+"pdfPage": 17,
+"as": "সংসদৰ বিৰতিকালত ৰাষ্ট্ৰপতিৰ অধ্যাদেশ ঘোষণা কৰাৰ ক্ষমতা"
+},
+{
+"no": "124",
+"pdfPage": 17,
+"as": "উচ্চতম ন্যায়ালয়ৰ স্থাপন আৰু গঠন"
+},
+{
+"no": "137",
+"pdfPage": 18,
+"as": "উচ্চতম ন্যায়ালয়ৰ দ্বাৰা ন্যায়-নিৰ্ণয় অথবা আদেশৰ পুনৰ্বিবেচনা"
+},
+{
+"no": "139",
+"pdfPage": 18,
+"as": "কিছুমান লেখ জাৰি কৰাৰ কাৰণে উচ্চতম ন্যায়ালয়ক ক্ষমতা প্ৰদান"
+},
+{
+"no": "148",
+"pdfPage": 18,
+"as": "ভাৰতৰ নিয়ন্ত্ৰক আৰু মহালেখা পৰীক্ষক"
+},
+{
+"no": "153",
+"pdfPage": 19,
+"as": "ৰাজ্যসমূহৰ ৰাজ্যপালসমূহ"
+},
+{
+"no": "155",
+"pdfPage": 19,
+"as": "ৰাজ্যপালৰ নিযুক্তি"
+},
+{
+"no": "163",
+"pdfPage": 19,
+"as": "ৰাজ্যপালক সহায় কৰিবলৈ আৰু পৰামৰ্শ দিবলৈ মন্ত্ৰী-পৰিষদ"
+},
+{
+"no": "165",
+"pdfPage": 19,
+"as": "ৰাজ্যৰ মহাধিবক্তা"
+},
+{
+"no": "168",
+"pdfPage": 19,
+"as": "ৰাজ্যসমূহত বিধানমণ্ডল গঠন"
+},
+{
+"no": "169",
+"pdfPage": 19,
+"as": "ৰাজ্যসমূহত বিধান পৰিষদৰ বিলুপ্তি বা সৃষ্টি"
+},
+{
+"no": "214",
+"pdfPage": 22,
+"as": "ৰাজ্যসমূহৰ বাবে উচ্চ ন্যায়ালয়সমূহ"
+},
+{
+"no": "226",
+"pdfPage": 22,
+"as": "কিছুমান লেখ জাৰি কৰাৰ ক্ষেত্ৰত উচ্চ ন্যায়ালয়সমূহৰ ক্ষমতা"
+},
+{
+"no": "243A",
+"pdfPage": 24,
+"as": "গাঁও সভা"
+},
+{
+"no": "244",
+"pdfPage": 25,
+"as": "অনুসূচীত অঞ্চল আৰু জনজাতীয় অঞ্চলসমূহৰ প্ৰশাসন"
+},
+{
+"no": "244A",
+"pdfPage": 25,
+"as": "অসমৰ কিছুমান জনজাতীয় অঞ্চলক লৈ এখন স্বায়ত্তশাসিত ৰাজ্য গঠন আৰু ইয়াৰ বাবে স্থানীয় বিধানমণ্ডল বা মন্ত্ৰী পৰিষদ বা দুয়োটা গঠন"
+},
+{
+"no": "245",
+"pdfPage": 26,
+"as": "সংসদ তথা ৰাজ্যৰ বিধানমণ্ডলসমূহৰ দ্বাৰা প্ৰণীত বিধিৰ পৰিসৰ"
+},
+{
+"no": "246",
+"pdfPage": 26,
+"as": "সংসদৰ দ্বাৰা আৰু ৰাজ্যৰ বিধানমণ্ডলসমূহৰ দ্বাৰা প্ৰণীত বিধিৰ বিষয়বস্তু"
+},
+{
+"no": "248",
+"pdfPage": 26,
+"as": "আইন প্ৰণয়নৰ অৱশিষ্ট ক্ষমতা"
+},
+{
+"no": "263",
+"pdfPage": 27,
+"as": "আন্তঃৰাজ্যিক পৰিষদ সম্বন্ধে উপবন্ধাৱলী"
+},
+{
+"no": "266",
+"pdfPage": 27,
+"as": "ভাৰত আৰু ৰাজ্যসমূহৰ একত্ৰীকৃত নিধি আৰু লোকলেখা"
+},
+{
+"no": "267",
+"pdfPage": 27,
+"as": "আকস্মিকতা নিধি"
+},
+{
+"no": "279A",
+"pdfPage": 28,
+"as": "সামগ্ৰী আৰু সেৱা কৰ পৰিষদ"
+},
+{
+"no": "280",
+"pdfPage": 28,
+"as": "বিত্ত আয়োগ"
+},
+{
+"no": "300A",
+"pdfPage": 29,
+"as": "আইনৰ প্ৰাধিকাৰৰ ব্যতিৰেকে কোনো ব্যক্তি তেওঁৰ সম্পত্তিৰ পৰা বঞ্চিত নহ’ব"
+},
+{
+"no": "312",
+"pdfPage": 30,
+"as": "সৰ্বভাৰতীয় সেৱাসমূহ"
+},
+{
+"no": "315",
+"pdfPage": 30,
+"as": "সংঘ আৰু ৰাজ্যসমূহৰ বাবে লোকসেৱা আয়োগসমূহ"
+},
+{
+"no": "323A",
+"pdfPage": 30,
+"as": "প্ৰাশাসনিক ন্যায়াধিকৰণ"
+},
+{
+"no": "324",
+"pdfPage": 31,
+"as": "নিৰ্বাচনৰ নিৰীক্ষণ, পৰিচালনা আৰু নিয়ন্ত্ৰণ এখন নিৰ্বাচনী আয়োগৰ ওপৰত অৰ্পণ কৰা হ’ব"
+},
+{
+"no": "326",
+"pdfPage": 31,
+"as": "লোকসভা আৰু বিধানসভাৰ নিৰ্বাচন প্ৰাপ্তবয়স্ক ভোটাধিকাৰৰ ভিত্তিত অনুষ্ঠিত হ’ব"
+},
+{
+"no": "330A",
+"pdfPage": 31,
+"as": "লোকসভাত মহিলাৰ বাবে আসন সংৰক্ষণ"
+},
+{
+"no": "332A",
+"pdfPage": 31,
+"as": "ৰাজ্যসমূহৰ বিধানসভাত মহিলাৰ বাবে আসন সংৰক্ষণ"
+},
+{
+"no": "334A",
+"pdfPage": 31,
+"as": "মহিলাৰ বাবে আসন সংৰক্ষণ কাৰ্যকৰী হ’ব"
+},
+{
+"no": "338",
+"pdfPage": 32,
+"as": "ৰাষ্ট্ৰীয় অনুসূচিত জাতি আয়োগ"
+},
+{
+"no": "338A",
+"pdfPage": 32,
+"as": "ৰাষ্ট্ৰীয় অনুসূচিত জনজাতি আয়োগ"
+},
+{
+"no": "338B",
+"pdfPage": 32,
+"as": "ৰাষ্ট্ৰীয় পিছপৰা শ্ৰেণীসমূহৰ আয়োগ"
+},
+{
+"no": "343",
+"pdfPage": 32,
+"as": "সংঘৰ চৰকাৰী ভাষা"
+},
+{
+"no": "345",
+"pdfPage": 32,
+"as": "ৰাজ্যৰ চৰকাৰী ভাষা বা ভাষাসমূহ"
+},
+{
+"no": "350A",
+"pdfPage": 33,
+"as": "প্ৰাথমিক পৰ্যায়ত মাতৃভাষাত শিক্ষাদানৰ সুবিধা"
+},
+{
+"no": "352",
+"pdfPage": 33,
+"as": "জৰুৰীকালীন অৱস্থাৰ ঘোষণা"
+},
+{
+"no": "356",
+"pdfPage": 33,
+"as": "ৰাজ্যত সাংবিধানিক শৃংখলাৰ বিফলতাৰ ক্ষেত্ৰত থকা উপবন্ধাৱলী"
+},
+{
+"no": "360",
+"pdfPage": 33,
+"as": "বিত্তীয় জৰুৰীকালীন অৱস্থা সম্পৰ্কীয় উপবন্ধাৱলী"
+},
+{
+"no": "361",
+"pdfPage": 33,
+"as": "ৰাষ্ট্ৰপতি, ৰাজ্যপাল আৰু ৰাজপ্ৰমুখৰ সুৰক্ষা"
+},
+{
+"no": "368",
+"pdfPage": 34,
+"as": "সংবিধান সংশোধনৰ বাবে সংসদৰ ক্ষমতা আৰু তাৰ প্ৰক্ৰিয়া"
+},
+{
+"no": "370",
+"pdfPage": 34,
+"as": "জম্মু আৰু কাশ্মীৰ ৰাজ্যৰ সম্পৰ্কত অস্থায়ী উপবন্ধাৱলী"
+},
+{
+"no": "371",
+"pdfPage": 34,
+"as": "মহাৰাষ্ট্ৰ আৰু গুজৰাট ৰাজ্যৰ সম্পৰ্কত বিশেষ উপবন্ধ"
+},
+{
+"no": "371A",
+"pdfPage": 34,
+"as": "নাগালেণ্ড ৰাজ্যৰ সম্পৰ্কত বিশেষ উপবন্ধ"
+},
+{
+"no": "371B",
+"pdfPage": 34,
+"as": "অসম ৰাজ্যৰ সম্পৰ্কত বিশেষ উপবন্ধ"
+},
+{
+"no": "371C",
+"pdfPage": 34,
+"as": "মণিপুৰ ৰাজ্যৰ সম্পৰ্কত বিশেষ উপবন্ধ"
+}
+]
+}

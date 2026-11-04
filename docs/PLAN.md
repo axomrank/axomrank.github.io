@@ -54,7 +54,8 @@ until independently deployed and verified.
   weak-topic support and current-affairs workflows. Any real exam provenance
   must be documented.
 - Expand to geography, polity, economy, culture and other subjects after the
-  History experience is measured and maintained.
+  History experience is measured and maintained. The Constitution course plan
+  is in [CONSTITUTION-COURSE.md](CONSTITUTION-COURSE.md).
 - Consider optional collaboration, official-notice updates and Android/iOS
   wrappers after the learning loop works. A public leaderboard is a later
   experiment, not a requirement for the core learning journey.

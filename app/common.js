@@ -10,7 +10,7 @@ const B = (en, as) => ({ en, as });
 const AS_DIGITS = "০১২৩৪৫৬৭৮৯";
 const asNum = (s) => String(s).replace(/\d/g, (d) => AS_DIGITS[d]);
 const T = (o) => (o == null ? "" : typeof o === "string" ? o : `<span class="en">${o.en}</span><span class="as">${o.as}</span>`);
-const N = (n) => T(B(String(n), asNum(n)));
+const N = (n) => (n && n.en ? T(n) : T(B(String(n), asNum(n))));
 
 /* ---------- saved progress (localStorage; synced to the account when signed in) ---------- */
 const store = {

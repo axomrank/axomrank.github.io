@@ -95,7 +95,8 @@ async function homePage() {
     .map(([id, t]) => `<button class="exam-chip ${exam === id ? "on" : ""}" data-exam="${id}">${T(t)}</button>`).join("");
   // continue: the course last opened, else the first one with progress, else the first live course
   const live = cat.subjects.flatMap((S) => S.courses.filter((e) => D.courses[e.course]).map((e) => D.courses[e.course]));
-  const cur = (!D.courses[UI.lastCourse]?.archived && D.courses[UI.lastCourse]) || live.find((c) => progress(c, m).started) || live[0];
+  const last = D.courses[UI.lastCourse];
+  const cur = (last && !last.archived && !last.draft && last) || live.find((c) => progress(c, m).started) || live[0];
   let cont = "";
   if (cur) {
     const p = progress(cur, m), S = subjectOf(cat, cur.id);

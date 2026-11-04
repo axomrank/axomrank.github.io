@@ -4,7 +4,8 @@ import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def read(p):return json.loads(p.read_text())
-courses={c['id']:c for p in (ROOT/'content/courses').glob('*.json') if (c:=read(p))};lessons={l['id']:l for p in (ROOT/'content/lessons').glob('*.json') if (l:=read(p))};E=read(ROOT/'content/entities.json');used={k:set(e.get('lessons',[]))&lessons.keys() for k,e in E.items()};events=[];seen=set()
+history={e.get('course') for S in read(ROOT/'content/catalog.json')['subjects'] if S['id']=='assam-history' for e in S['courses']}
+courses={c['id']:c for p in (ROOT/'content/courses').glob('*.json') if (c:=read(p)) and (c['id'] in history or c.get('archived'))};lessons={l['id']:l for p in (ROOT/'content/lessons').glob('*.json') if (l:=read(p)) and l.get('course','ahom-kings') in courses};E=read(ROOT/'content/entities.json');used={k:set(e.get('lessons',[]))&lessons.keys() for k,e in E.items()};events=[];seen=set()
 for lid,l in lessons.items():
  for eid in re.findall(r'\[\[([^|\]]+)',json.dumps(l['units'],ensure_ascii=False)):
   if eid in used:used[eid].add(lid)

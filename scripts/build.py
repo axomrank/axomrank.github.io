@@ -74,7 +74,7 @@ for S in catalog["subjects"]:
         if e.get("course") not in courses: err(f"catalog/{S['id']}: unknown course '{e.get('course')}'")
         placed.append(e.get("course"))
 for cid in courses:
-    if not courses[cid].get("archived") and placed.count(cid) != 1: err(f"catalog: course '{cid}' must appear in exactly one subject (found {placed.count(cid)})")
+    if not courses[cid].get("archived") and not courses[cid].get("draft") and placed.count(cid) != 1: err(f"catalog: course '{cid}' must appear in exactly one subject (found {placed.count(cid)})")
 lessons = {}
 for f in sorted(os.listdir("content/lessons")):
     if f.endswith(".json"):
@@ -124,6 +124,7 @@ for lid, L in lessons.items():
                 if not isinstance(s["imageCaption"], dict) or not all(s["imageCaption"].get(lang) for lang in ("en", "as")): err(f"{where}: imageCaption needs English and Assamese")
                 if s.get("imageLayout") not in ("wide", "contain"): err(f"{where}: imageLayout must be wide or contain")
             if s["type"] == "picture": [need_img(o, where) for o in s["options"]]
+            if s.get("scale") == "articles" and not all(str(a["y"]).isdigit() for a in s.get("anchors", [])): err(f"{where}: article line anchors must be plain numbers (put lettered articles in items)")
             if s["type"] == "map" and s["target"] not in s["choices"]: err(f"{where}: map target must be one of the choices")
             if "answer" in s and isinstance(s["answer"], int) and "options" in s and not 0 <= s["answer"] < len(s["options"]): err(f"{where}: answer index out of range")
             link = s.get("link")
