@@ -116,11 +116,14 @@ async function buildCheckpoint(eraId) {
   const era = course.eras.find((e) => e.id === eraId);
   const ids = course.kings.filter((k) => k.n >= era.from && k.n <= era.to && k.lesson && manifest.lessons[k.lesson]).map((k) => k.lesson);
   const lessons = await lessonsById(ids);
-  const fromBank = bank.questions.filter((q) => q.era === eraId && lessons[q.lesson]).map((q) => ({ ...tagStep(q, lessons[q.lesson]), _bank: true }));
-  const fromTests = ids.flatMap((id) => (lessons[id] ? shuffle(lessons[id].test.steps.filter((s) => s.type !== "story")).slice(0, 3).map((s) => tagStep(s, lessons[id])) : []));
+  const per = Math.max(3, Math.ceil(6 / Math.max(1, ids.length)));
+  const fromTests = ids.flatMap((id) => (lessons[id] ? shuffle(lessons[id].test.steps.filter((s) => s.type !== "story")).slice(0, per).map((s) => tagStep(s, lessons[id])) : []));
+  const asked = new Set(fromTests.map((s) => s.id));
+  const fromBank = bank.questions.filter((q) => q.era === eraId && lessons[q.lesson] && !asked.has(q.source_step)).map((q) => ({ ...tagStep(q, lessons[q.lesson]), _bank: true }));
   const steps = shuffle([...shuffle(fromBank).slice(0, 10), ...fromTests]).slice(0, 15);
   const eraUnits = Object.fromEntries(Object.entries(lessons).map(([id, Ls]) => [id, [...Ls.units.map((u) => u.id), "test"]]));
-  return { id: `checkpoint-${eraId}`, virtual: true, era, eraUnits, king: B("Era checkpoint", "যুগৰ পৰীক্ষা"), reign: era.title, units: [],
+  const word = course.eraWord || B("era", "যুগ");
+  return { id: `checkpoint-${eraId}`, virtual: true, era, word, eraUnits, king: B(`${word.en[0].toUpperCase()}${word.en.slice(1)} checkpoint`, `${word.as}ৰ পৰীক্ষা`), reign: era.title, units: [],
     test: { id: "checkpoint", title: era.title, learned: [], steps } };
 }
 
@@ -732,7 +735,7 @@ function finishUnit() {
       G.checkpoints[L.era.id] = true;
       Object.entries(L.eraUnits).forEach(([id, units]) => { const Pl = AXOM.getLesson(id); units.forEach((u) => (Pl.done[u] = true)); AXOM.store.set(`axom:lesson:${id}`, Pl); });
     }
-    note = pass ? T(B(params.has("testout") ? "Passed! The lessons of this era are marked complete." : "Passed! Era checkpoint complete.", params.has("testout") ? "উত্তীৰ্ণ! এই যুগৰ পাঠবোৰ সম্পূৰ্ণ বুলি চিহ্নিত কৰা হ'ল।" : "উত্তীৰ্ণ! যুগৰ পৰীক্ষা সম্পূৰ্ণ।"))
+    note = pass ? T(B(params.has("testout") ? `Passed! The lessons of this ${L.word.en} are marked complete.` : `Passed! ${L.word.en[0].toUpperCase()}${L.word.en.slice(1)} checkpoint complete.`, params.has("testout") ? `উত্তীৰ্ণ! এই ${L.word.as}ৰ পাঠবোৰ সম্পূৰ্ণ বুলি চিহ্নিত কৰা হ'ল।` : `উত্তীৰ্ণ! ${L.word.as}ৰ পৰীক্ষা সম্পূৰ্ণ।`))
       : T(B("You need 80% to pass. Review the lessons and try again.", "উত্তীৰ্ণ হ'বলৈ ৮০% লাগে। পাঠবোৰ আকৌ চাই পুনৰ চেষ্টা কৰা।"));
   }
   let pass = null;
@@ -757,7 +760,7 @@ function finishUnit() {
   const go = mode === "jump" && pass ? { id: L.target.id, start: true, label: B(`Start lesson ${L.target.n} · ${L.target.name.en}`, `পাঠ ${asNum(L.target.n)} আৰম্ভ কৰা · ${L.target.name.as}`) }
     : !VIRTUAL && u === L.test && P.done.test && NEXT ? { id: NEXT.id, start: true, label: B(`Next: Lesson ${NEXT.n} · ${NEXT.name.en.split(" (")[0]}, Unit 1`, `পৰৱৰ্তী: পাঠ ${asNum(NEXT.n)} · ${NEXT.name.as.split(" (")[0]}, অধ্যায় ১`) } : null;
   const promptOf = (s) => s.q || s.s || (s.before ? B(`${s.before.en} ___ ${s.after.en}`, `${s.before.as} ___ ${s.after.as}`) : s.clues ? s.clues[0] : B("", ""));
-  const title = mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", "যুগৰ পৰীক্ষা শেষ") : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
+  const title = mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", `${L.word.as}ৰ পৰীক্ষা শেষ`) : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
   const reviewLeft = mode === "review" ? AXOM.reviewQueue().length : 0;
   const missionResult = L.mission && u.mission && !U.practice && pass !== false ? `<div class="mission-result"><small>${T(L.mission.label)} · ${T(u === L.test ? B("File sealed", "নথি সম্পূৰ্ণ") : B("Finding recorded", "প্ৰমাণ লিখা হ'ল"))}</small><p>${T(u.mission.result)}</p></div>` : "";
   $("#done").innerHTML = `

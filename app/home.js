@@ -142,8 +142,7 @@ async function subjectPage() {
   }).join("");
   $("#course").innerHTML = `<section class="c-hero" style="--c:var(--${S.color})">${ROOF}<a class="back-hub" href="index.html">‹ ${T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(B("Subject", "বিষয়"))}</div><h1>${T(S.title)}</h1><p>${T(S.blurb)}</p>
       <span class="meter"><i style="--p:${pct(p)}%;width:${pct(p)}%"></i></span><span class="count">${T(B(`${p.done} of ${p.total} lessons done`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ সম্পূৰ্ণ`))}</span></section>
-    ${reviewCard()}<p class="tab-intro">${T(B("Follow the history courses,then revisit themes through culture,heritage and peoples.", "ইতিহাসৰ পাঠ্যক্ৰম অনুসৰণ কৰি সংস্কৃতি,ঐতিহ্য আৰু জনগোষ্ঠীৰ বিষয় পুনৰ পঢ়া।"))}</p>
-    <a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places","সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a><div class="course-list">${rows}</div>${FOOT}`;
+    ${reviewCard()}${S.intro ? `<p class="tab-intro">${T(S.intro)}</p>` : ""}<div class="course-list">${rows}</div>${FOOT}`;
   $("#continue").classList.add("hidden");
 }
 async function render() {
@@ -190,10 +189,10 @@ function lessonsTab(status) {
     const kings = course.kings.filter((k) => k.n >= e.from && k.n <= e.to);
     const sts = kings.map(status), avail = sts.filter((x) => x.s !== "soon"), done = sts.filter((x) => x.s === "done").length;
     const open = UI.open[e.id] ?? (CID === "assam-history" ? false : e.id === curEra);
-    const cpDone = !!G.checkpoints[e.id], cpOpen = avail.length && avail.every((x) => x.s === "done");
+    const word = course.eraWord || B("era", "যুগ"), cpDone = !!G.checkpoints[e.id], cpOpen = avail.length && avail.every((x) => x.s === "done");
     const checkpoint = avail.length ? `<div class="cp-card ${cpDone ? "done" : cpOpen ? "open" : ""}">
         <span class="ic">${cpDone ? ICON.check : "🏁"}</span>
-        <span><b>${T(B("Era checkpoint", "যুগৰ পৰীক্ষা"))}</b><span class="s">${cpDone ? T(B("Passed", "উত্তীৰ্ণ")) : cpOpen ? T(B("15 exam-style questions · pass mark 80%", "পৰীক্ষাৰ ধৰণৰ ১৫টা প্ৰশ্ন · উত্তীৰ্ণ নম্বৰ ৮০%")) : T(B("Opens when this era's lessons are done", "এই যুগৰ পাঠবোৰ শেষ হ'লে খোল খাব"))}</span></span>
+        <span><b>${T(B(`${word.en[0].toUpperCase()}${word.en.slice(1)} checkpoint`, `${word.as}ৰ পৰীক্ষা`))}</b><span class="s">${cpDone ? T(B("Passed", "উত্তীৰ্ণ")) : cpOpen ? T(B("15 exam-style questions · pass mark 80%", "পৰীক্ষাৰ ধৰণৰ ১৫টা প্ৰশ্ন · উত্তীৰ্ণ নম্বৰ ৮০%")) : T(B(`Opens when this ${word.en}'s lessons are done`, `এই ${word.as}ৰ পাঠবোৰ শেষ হ'লে খোল খাব`))}</span></span>
         ${cpOpen || cpDone ? `<a class="cp-go" href="lesson.html?checkpoint=${e.id}&course=${CID}">${cpDone ? T(B("Retake", "আকৌ")) : T(B("Start", "আৰম্ভ"))}</a>` : `<a class="cp-skip" href="lesson.html?checkpoint=${e.id}&course=${CID}&testout=1">${T(B("Test out", "পৰীক্ষা দি আগবাঢ়া"))}</a>`}
       </div>` : "";
     return `<section class="era-sec ${open ? "open" : ""}">

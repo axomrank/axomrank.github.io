@@ -1,9 +1,8 @@
 # Course plan: the Constitution of India
 
-Status: plan, 2026-11-04. Phases 0, 1 and the writing part of Phase 2 are recorded
-below. Three pilot lessons exist as hidden drafts; none is reviewed, and learners
-cannot see the course. It defines the course that fills the empty `polity` subject in
-`content/catalog.json`.
+Status: whole course written and released locally, 2026-11-04. All 60 lessons are in
+the `polity` subject, unreviewed. Legal review, Assamese review and browser play of
+the 57 new lessons are outstanding. See "Whole-course result" below.
 
 ## Goal
 
@@ -352,12 +351,7 @@ status).
 
 ### Before release
 
-1. Replace the catalog "soon" row with `{ "course": "indian-constitution" }` and
-   remove `draft`.
-2. Give the subject page its own intro. It is hard-coded to history wording, with a
-   history reference link.
-3. Reword "Era checkpoint" for this course, or make the wording course-specific.
-4. Replace the placeholder picture.
+Items 1 to 3 are done. The placeholder picture is still the face of all 60 lessons.
 
 ## Phase 2 results
 
@@ -381,6 +375,32 @@ Lessons 18, 29 and 46 are written in English and Assamese: 17 units, 123 steps a
   learner testing.
 
 Phase 3 needs real learners, so it has not started.
+
+## Whole-course result
+
+Measured on 2026-11-04: 60 lessons, 236 units, 2,019 steps, 573 bank questions and 16
+checkpoints. `audit_lessons.py`, `check_constitution.py`, `build.py` and
+`check_history_completion.py` pass.
+
+- The user asked for no browser use, so the 57 lessons written after the pilot have
+  not been played by autoplay, on mobile, offline or in Assamese layout. The checks
+  are offline: structure, answers in range, entity ids, Article numbers against the
+  register, and numbers equal across languages.
+- `scripts/check_constitution.py` cannot judge law or Assamese. Each lesson lists its
+  sources. Items marked "check in review", or "not read", in a lesson's sources rest
+  on secondary reports or general reference. They include Waman Rao, I. R. Coelho,
+  Raj Narain, Kihoto Hollohan, PUCL, Anoop Baranwal, Rajendra N. Shah, In Re Article
+  370, the final order in Kesavananda, the Symbols Order, the Representation of the
+  People Acts, the Assam Panchayat Act 1994, and the Acts for the NHRC, CIC, CVC and
+  Lokpal.
+- Exam claims in lessons name only topics found in the PYQ map. Answer keys in that
+  map were not checked.
+- The bank is built from lesson choice steps by `scripts/build_constitution_bank.py`,
+  so it adds no new questions. Original exam-style bank questions remain to be written.
+- Checkpoints now avoid repeating a chosen test step, and one-lesson sections take six
+  test steps, so the Emergency section can reach 15 questions.
+- Phase 3 was not run: no learner has tried these patterns, so recall evidence still
+  has to be gathered.
 
 ## Delivery
 
