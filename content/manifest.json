@@ -1,5 +1,5 @@
 {
- "version": "9616bb4a88",
+ "version": "4a89d0483b",
  "courseRedirects": {
   "early-assam": "assam-history",
   "varman-kings": "assam-history",
@@ -20,15 +20,360 @@
    "file": "content/courses/ahom-kings.json"
   },
   {
+   "id": "assam-geography",
+   "file": "content/courses/assam-geography.json"
+  },
+  {
    "id": "assam-history",
    "file": "content/courses/assam-history.json"
   },
   {
+   "id": "geography-foundations",
+   "file": "content/courses/geography-foundations.json"
+  },
+  {
    "id": "indian-constitution",
    "file": "content/courses/indian-constitution.json"
+  },
+  {
+   "id": "indian-history",
+   "file": "content/courses/indian-history.json"
   }
  ],
  "lessons": {
+  "ag-01-bearings": {
+   "course": "assam-geography",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Assam and its neighbours",
+      "as": "অসম আৰু ওচৰৰ ৰাজ্য"
+     },
+     "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Two valley plains",
+      "as": "দুখন উপত্যকাৰ সমভূমি"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Across the uplands",
+      "as": "ওখ অঞ্চলৰ মাজেৰে"
+     },
+     "i": "map",
+     "ex": 7
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Cities as anchors",
+      "as": "নগৰে দিশ চিনায়"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-02-follow-water": {
+   "course": "assam-geography",
+   "no": 2,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Follow the Water",
+    "as": "সোঁত অনুসৰণ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Down the Brahmaputra",
+      "as": "ব্ৰহ্মপুত্ৰৰ নামনিলৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Where rivers meet",
+      "as": "নদীৰ মিলনস্থল"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Follow the Barak",
+      "as": "বৰাকৰ সোঁত অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Rain on a ridge",
+      "as": "পাহাৰৰ শিৰত বৰষুণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Read the river systems",
+      "as": "নদী প্ৰণালী বুজা"
+     },
+     "i": "map",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-03-floodplain": {
+   "course": "assam-geography",
+   "no": 3,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read a changing floodplain",
+    "as": "সলনি হোৱা প্লাৱনভূমি পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Water over land",
+      "as": "মাটিৰ ওপৰত পানী"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A bank moves",
+      "as": "নদীৰ পাৰ সৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "What the atlas measures",
+      "as": "এটলাছে কি জোখে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Compare what is exposed",
+      "as": "কোনবোৰ ঠাই উন্মুক্ত"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-04-landscape": {
+   "course": "assam-geography",
+   "no": 4,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read the landscape",
+    "as": "ভূদৃশ্য পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the rain",
+      "as": "বৰষুণৰ হিচাপ পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A lake in an old channel",
+      "as": "পুৰণি খাতত হ্ৰদ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Grassland and foothills",
+      "as": "ঘাঁহনি আৰু পাদদেশ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Conservation on the map",
+      "as": "মানচিত্ৰত সংৰক্ষণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-05-livelihoods": {
+   "course": "assam-geography",
+   "no": 5,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Explain why places grow",
+    "as": "ঠাই কিয় বাঢ়ে বুজা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Two farming landscapes",
+      "as": "দুটা কৃষি ভূদৃশ্য"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Oil from field to refinery",
+      "as": "তেলক্ষেত্ৰৰ পৰা শোধনাগাৰলৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A route on the Barak",
+      "as": "বৰাকৰ জলপথ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Why a settlement grows",
+      "as": "বসতি কিয় বাঢ়ে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-06-field-case": {
+   "course": "assam-geography",
+   "no": 6,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Solve a field case",
+    "as": "ক্ষেত্ৰৰ কেছ সমাধান কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Open the market case",
+      "as": "বজাৰৰ কেছটো খোলা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Compare the routes",
+      "as": "ৰাস্তা দুটা তুলনা কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Make the case",
+      "as": "সিদ্ধান্তৰ যুক্তি দিয়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
   "ahom-01-sukaphaa": {
    "course": "assam-history",
    "no": 23,
@@ -6322,7 +6667,7 @@
       "as": "উৎসবোৰ মিলাই পঢ়া"
      },
      "i": "scroll",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "test",
@@ -6626,6 +6971,576 @@
      },
      "i": "trophy",
      "ex": 8
+    }
+   ]
+  },
+  "gf-01-map-skills": {
+   "course": "geography-foundations",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Find your direction",
+      "as": "দিশ বিচাৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Meet at a coordinate",
+      "as": "স্থানাংকত মিলিত হোৱা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Measure a route",
+      "as": "পথৰ দৈৰ্ঘ্য জোখা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Read the slope",
+      "as": "ঢাল পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-02-moving-earth": {
+   "course": "geography-foundations",
+   "no": 2,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read a moving Earth",
+    "as": "গতিশীল পৃথিৱী পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "From daylight to darkness",
+      "as": "দিনৰ পোহৰৰ পৰা আন্ধাৰলৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A tilted Earth",
+      "as": "হেলনীয়া পৃথিৱী"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Inside the Earth",
+      "as": "পৃথিৱীৰ ভিতৰ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Where plates meet",
+      "as": "ফলক য’ত মিলে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-03-landforms": {
+   "course": "geography-foundations",
+   "no": 3,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "See land take shape",
+    "as": "ভূমিৰ আকৃতি গঢ়া চোৱা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Three rock families",
+      "as": "শিলৰ তিনিটা গোট"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Follow a grain",
+      "as": "এটা কণাৰ পথ অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Read a river bend",
+      "as": "নদীৰ ভাঁজ পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Compare three landscapes",
+      "as": "তিনিটা ভূদৃশ্য তুলনা কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-04-air-and-water": {
+   "course": "geography-foundations",
+   "no": 4,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Follow air and fresh water",
+    "as": "বায়ু আৰু মিঠাপানী অনুসৰণ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Weather or climate?",
+      "as": "বতৰ নে জলবায়ু?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "What starts the wind?",
+      "as": "বতাহ কিয় বলে?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Where does rainwater go?",
+      "as": "বৰষুণৰ পানী ক’লৈ যায়?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Rain across a ridge",
+      "as": "পাহাৰৰ দুয়োফালে বৰষুণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-05-ocean-and-hazards": {
+   "course": "geography-foundations",
+   "no": 5,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read the ocean and hazards",
+    "as": "সাগৰ আৰু বিপদ পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Beyond the shore",
+      "as": "উপকূলৰ সিপাৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Three kinds of motion",
+      "as": "তিনিধৰণৰ গতি"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "What is exposed?",
+      "as": "কি বিপদৰ সন্মুখীন?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "When water rises suddenly",
+      "as": "হঠাৎ পানী বাঢ়িলে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-06-india-location": {
+   "course": "geography-foundations",
+   "no": 6,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Put India on the map",
+    "as": "মানচিত্ৰত ভাৰত চিনা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Find India in South Asia",
+      "as": "দক্ষিণ এছিয়াত ভাৰত বিচাৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Use political anchors",
+      "as": "প্ৰশাসনিক ঠাইৰে দিশ চিনা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "One clock across India",
+      "as": "সমগ্ৰ ভাৰতত একে ঘড়ী"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Coasts and islands",
+      "as": "উপকূল আৰু দ্বীপ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-07-india-relief": {
+   "course": "geography-foundations",
+   "no": 7,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Cross India’s physical regions",
+    "as": "ভাৰতৰ ভূ-আকৃতি অঞ্চল পাৰ হোৱা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Across the northern arc",
+      "as": "উত্তৰৰ পৰ্বত ধনুৰ মাজেৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A plain and a desert",
+      "as": "সমভূমি আৰু মৰুভূমি"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The plateau and its edges",
+      "as": "মালভূমি আৰু তাৰ কাষ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Plains meet the sea",
+      "as": "সমভূমি সাগৰৰ কাষত"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-08-indian-rivers": {
+   "course": "geography-foundations",
+   "no": 8,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Trace India’s rivers",
+    "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Trace a basin",
+      "as": "নদী অৱবাহিকা অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Across the northern rivers",
+      "as": "উত্তৰৰ নদীবোৰৰ মাজেৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Two shores of the peninsula",
+      "as": "উপদ্বীপৰ দুটা উপকূল"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Read the river mouth",
+      "as": "নদীৰ মোহনা পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-09-india-monsoon": {
+   "course": "geography-foundations",
+   "no": 9,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read India’s monsoon",
+    "as": "ভাৰতৰ মৌচুমী পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the seasonal calendar",
+      "as": "ঋতুৰ কেলেণ্ডাৰ পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Follow the advance",
+      "as": "আগমন অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Compare two rain records",
+      "as": "বৰষুণৰ দুখন নথি তুলনা কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "When the winds turn",
+      "as": "বতাহৰ দিশ সলনি হ’লে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-10-land-and-livelihoods": {
+   "course": "geography-foundations",
+   "no": 10,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Connect land and livelihoods",
+    "as": "ভূমি আৰু জীৱিকা সংযোগ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the soil clues",
+      "as": "মাটিৰ সংকেত পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "From wet forest to thorn scrub",
+      "as": "সেমেকা অৰণ্যৰ পৰা কাঁইটীয়া জোপোহালৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Read a crop table",
+      "as": "শস্যৰ তালিকা পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Where people settle",
+      "as": "মানুহ ক’ত বসতি কৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
     }
    ]
   },
@@ -6979,6 +7894,1722 @@
       "as": "সুৰক্ষাৰ কেইবাটাও স্তৰ"
      },
      "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-01-indus-cities": {
+   "course": "indian-history",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Indus cities",
+    "as": "সিন্ধু উপত্যকাৰ নগৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Cities found by accident of time",
+      "as": "সময়ে লুকুৱাই ৰখা নগৰ"
+     },
+     "i": "home",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A city built on a plan",
+      "as": "পৰিকল্পনাৰে গঢ়া নগৰ"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Sites and their finds",
+      "as": "স্থল আৰু আৱিষ্কাৰ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A script nobody reads",
+      "as": "কোনেও পঢ়িব নোৱৰা লিপি"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-02-vedic-age": {
+   "course": "indian-history",
+   "no": 2,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "The Vedic age",
+    "as": "বৈদিক যুগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Four Vedas",
+      "as": "চাৰি বেদ"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The Saraswati question",
+      "as": "সৰস্বতীৰ প্ৰশ্ন"
+     },
+     "i": "river",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "From tribe to kingdom",
+      "as": "জনগোষ্ঠীৰ পৰা ৰাজ্যলৈ"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-03-buddha-and-mahavira": {
+   "course": "indian-history",
+   "no": 3,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Buddha and Mahavira",
+    "as": "বুদ্ধ আৰু মহাবীৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Four places, one life",
+      "as": "চাৰি ঠাই, এটা জীৱন"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The Middle Way",
+      "as": "মধ্যপথ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The 24th Tirthankara",
+      "as": "চতুৰ্বিংশ তীৰ্থংকৰ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Two paths compared",
+      "as": "দুটা পথৰ তুলনা"
+     },
+     "i": "hands",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-04-alexander-and-magadha": {
+   "course": "indian-history",
+   "no": 4,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Magadha and Alexander",
+    "as": "মগধ আৰু আলেকজেণ্ডাৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Sixteen great states",
+      "as": "ষোল্লটা ডাঙৰ ৰাজ্য"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Magadha rises",
+      "as": "মগধৰ উত্থান"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Alexander at the Jhelum",
+      "as": "জিলমত আলেকজেণ্ডাৰ"
+     },
+     "i": "flag",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-05-mauryas": {
+   "course": "indian-history",
+   "no": 5,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "The Mauryas",
+    "as": "মৌৰ্য সকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The Nanda throne falls",
+      "as": "নন্দ সিংহাসনৰ পতন"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Chanakya and the Arthashastra",
+      "as": "চাণক্য আৰু অৰ্থশাস্ত্ৰ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The war Ashoka regretted",
+      "as": "অশোকে অনুতাপ কৰা যুদ্ধ"
+     },
+     "i": "flag",
+     "ex": 7
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A voice on stone",
+      "as": "শিলত এটা মাত"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Lions, legends and the end",
+      "as": "সিংহ, কিংবদন্তি আৰু অন্ত"
+     },
+     "i": "trophy",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-06-after-the-mauryas": {
+   "course": "indian-history",
+   "no": 6,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "After the Mauryas",
+    "as": "মৌৰ্যৰ পিছত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The Kushans",
+      "as": "কুষাণ"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The Begram hoard",
+      "as": "বেগ্ৰামৰ ভাণ্ডাৰ"
+     },
+     "i": "seal",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Deccan and Tamil south",
+      "as": "দাক্ষিণাত্য আৰু তামিল দক্ষিণ"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-07-guptas": {
+   "course": "indian-history",
+   "no": 7,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Guptas",
+    "as": "গুপ্ত সকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A marriage and a dynasty",
+      "as": "বিয়া আৰু বংশ"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A pillar that praises",
+      "as": "প্ৰশংসা কৰা স্তম্ভ"
+     },
+     "i": "seal",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Faxian and Kalidasa",
+      "as": "ফা-হিয়েন আৰু কালিদাস"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Huns and the end",
+      "as": "হূণ আৰু অন্ত"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-08-harsha": {
+   "course": "indian-history",
+   "no": 8,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Harsha and Xuanzang",
+    "as": "হৰ্ষ আৰু হিউৱেন চাঙ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A young king at Thanesar",
+      "as": "থানেশ্বৰৰ ডেকা ৰজা"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The king's biographer",
+      "as": "ৰজাৰ জীৱনীকাৰ"
+     },
+     "i": "scroll",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The pilgrim who wrote it down",
+      "as": "লিখি থোৱা তীৰ্থযাত্ৰী"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-09-south-and-kashmir": {
+   "course": "indian-history",
+   "no": 9,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Cholas, Deccan and Kashmir",
+    "as": "চোল, দাক্ষিণাত্য আৰু কাশ্মীৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Pallavas and Chalukyas",
+      "as": "পল্লৱ আৰু চালুক্য"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Cholas across the sea",
+      "as": "সাগৰ পাৰ হোৱা চোল"
+     },
+     "i": "river",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Kashmir's chronicler",
+      "as": "কাশ্মীৰৰ ইতিহাসকাৰ"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-10-learning-and-art": {
+   "course": "indian-history",
+   "no": 10,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Knowledge and stone",
+    "as": "জ্ঞান আৰু শিলৰ কলা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Medicine",
+      "as": "চিকিৎসা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Numbers and stars",
+      "as": "সংখ্যা আৰু নক্ষত্ৰ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Nalanda",
+      "as": "নালন্দা"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Three monuments",
+      "as": "তিনিটা স্মাৰক"
+     },
+     "i": "seal",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-11-delhi-sultanate": {
+   "course": "indian-history",
+   "no": 11,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Delhi Sultanate",
+    "as": "দিল্লী ছুলতানী"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Five dynasties",
+      "as": "পাঁচটা বংশ"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Razia and Iltutmish",
+      "as": "ৰাজিয়া আৰু ইলতুৎমিছ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Markets and a moved capital",
+      "as": "বজাৰ আৰু স্থানান্তৰিত ৰাজধানী"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The Sultanate and Kamarupa",
+      "as": "ছুলতানী আৰু কামৰূপ"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-12-vijayanagara-and-deccan": {
+   "course": "indian-history",
+   "no": 12,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Vijayanagara and the Deccan",
+    "as": "বিজয়নগৰ আৰু দাক্ষিণাত্য"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Two brothers found an empire",
+      "as": "দুই ভায়েকৰ সাম্ৰাজ্য"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Talikota, 1565",
+      "as": "তালিকোটা, ১৫৬৫"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Domes and minarets",
+      "as": "গম্বুজ আৰু মিনাৰ"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-13-bhakti-and-sufi": {
+   "course": "indian-history",
+   "no": 13,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Bhakti, Sufis and Sikh Gurus",
+    "as": "ভক্তি, চুফী আৰু শিখ গুৰু"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Devotion from the south",
+      "as": "দক্ষিণৰ পৰা ভক্তি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Poets of the north",
+      "as": "উত্তৰৰ কবি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Sufis and a Guru at Dhubri",
+      "as": "চুফী আৰু ধুবুৰীত গুৰু"
+     },
+     "i": "walk",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-14-babur-and-sher-shah": {
+   "course": "indian-history",
+   "no": 14,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Babur and Sher Shah",
+    "as": "বাবৰ আৰু শ্বেৰ শ্বাহ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Panipat, 1526",
+      "as": "পানিপথ, ১৫২৬"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Khanwa and Humayun",
+      "as": "খানুৱা আৰু হুমায়ুন"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A road and a coin",
+      "as": "এটা পথ আৰু এটা মুদ্ৰা"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The return",
+      "as": "ঘূৰি অহা"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-15-akbar": {
+   "course": "indian-history",
+   "no": 15,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Akbar",
+    "as": "আকবৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Panipat, 1556",
+      "as": "পানিপথ, ১৫৫৬"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Ranks for an empire",
+      "as": "সাম্ৰাজ্যৰ পদমৰ্যাদা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "One creed, few followers",
+      "as": "এক মত, অলপ অনুগামী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "An Englishman at court",
+      "as": "ৰাজসভাত এজন ইংৰাজ"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-16-jahangir-to-aurangzeb": {
+   "course": "indian-history",
+   "no": 16,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Jahangir to Aurangzeb",
+    "as": "জাহাংগীৰৰ পৰা ঔৰংগজেবলৈ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Trade at the door",
+      "as": "দুৱাৰমুখত বাণিজ্য"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A tomb and a succession",
+      "as": "এটা সমাধি আৰু উত্তৰাধিকাৰ"
+     },
+     "i": "houses",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Aurangzeb's long reign",
+      "as": "ঔৰংগজেবৰ দীঘলীয়া ৰাজত্ব"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-17-marathas-and-mysore": {
+   "course": "indian-history",
+   "no": 17,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Marathas and Mysore",
+    "as": "মাৰাঠা আৰু মহীশূৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A crown at Raigad",
+      "as": "ৰায়গড়ত মুকুট"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The third Panipat",
+      "as": "তৃতীয় পানিপথ"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Tiger of Mysore",
+      "as": "মহীশূৰৰ বাঘ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-18-europeans-and-plassey": {
+   "course": "indian-history",
+   "no": 18,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Plassey and Buxar",
+    "as": "পলাশী আৰু বক্সাৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The sea route",
+      "as": "সাগৰৰ পথ"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Plassey, 1757",
+      "as": "পলাশী, ১৭৫৭"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Buxar, 1764",
+      "as": "বক্সাৰ, ১৭৬৪"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "From traders to rulers",
+      "as": "বেপাৰীৰ পৰা শাসক"
+     },
+     "i": "crown",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-19-governors-general": {
+   "course": "indian-history",
+   "no": 19,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Governors-General",
+    "as": "গৱৰ্ণৰ জেনেৰেল সকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Three titles",
+      "as": "তিনিটা উপাধি"
+     },
+     "i": "court",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Land and a ban",
+      "as": "ভূমি আৰু এক নিষেধাজ্ঞা"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "English in schools",
+      "as": "বিদ্যালয়ত ইংৰাজী"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Dalhousie's annexations",
+      "as": "ডালহৌচীৰ দখল"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-20-reformers": {
+   "course": "indian-history",
+   "no": 20,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Reformers",
+    "as": "সমাজ সংস্কাৰক"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Bengal's reformers",
+      "as": "বংগৰ সংস্কাৰক"
+     },
+     "i": "seal",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Back to the Vedas",
+      "as": "বেদলৈ ঘূৰি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Chicago, 1893",
+      "as": "চিকাগো, ১৮৯৩"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-21-revolt-of-1857": {
+   "course": "indian-history",
+   "no": 21,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Revolt of 1857",
+    "as": "১৮৫৭ৰ বিদ্ৰোহ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Why it broke out",
+      "as": "কিয় বিদ্ৰোহ হ'ল"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "From Meerut to Delhi",
+      "as": "মীৰাটৰ পৰা দিল্লীলৈ"
+     },
+     "i": "walk",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Leaders by centre",
+      "as": "কেন্দ্ৰ অনুসৰি নেতা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "A new government",
+      "as": "নতুন চৰকাৰ"
+     },
+     "i": "court",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-22-indigo-and-education": {
+   "course": "indian-history",
+   "no": 22,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Indigo, press and schools",
+    "as": "নীল, প্ৰেছ আৰু বিদ্যালয়"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Indigo",
+      "as": "নীল"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A play in the dock",
+      "as": "কাঠগড়াত নাটক"
+     },
+     "i": "scroll",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The education chain",
+      "as": "শিক্ষাৰ শৃংখল"
+     },
+     "i": "calendar",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-23-early-congress": {
+   "course": "indian-history",
+   "no": 23,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The early Congress",
+    "as": "প্ৰাৰম্ভিক কংগ্ৰেছ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Bombay, 1885",
+      "as": "বোম্বে, ১৮৮৫"
+     },
+     "i": "court",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The moderates' case",
+      "as": "মধ্যপন্থীৰ যুক্তি"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The drain",
+      "as": "ধন নিষ্কাশন"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Swaraj at Calcutta",
+      "as": "কলিকতাত স্বৰাজ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-24-swadeshi-and-home-rule": {
+   "course": "indian-history",
+   "no": 24,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Swadeshi to Lucknow",
+    "as": "স্বদেশীৰ পৰা লক্ষ্ণৌলৈ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A province cut in two",
+      "as": "দুভাগ হোৱা প্ৰদেশ"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Lal, Bal and Pal",
+      "as": "লাল, বাল আৰু পাল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "New organisations",
+      "as": "নতুন সংগঠন"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Home Rule and Lucknow",
+      "as": "হোম ৰুল আৰু লক্ষ্ণৌ"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-25-year-1919": {
+   "course": "indian-history",
+   "no": 25,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The year 1919",
+    "as": "১৯১৯ চন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A wartime law that stayed",
+      "as": "থাকি যোৱা যুদ্ধকালীন আইন"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Baisakhi at Amritsar",
+      "as": "অমৃতসৰত বৈশাখী"
+     },
+     "i": "moon",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A poet and an inquiry",
+      "as": "কবি আৰু তদন্ত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The reforms, and the trap",
+      "as": "সংস্কাৰ আৰু ফান্দ"
+     },
+     "i": "calendar",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-26-gandhi-and-noncooperation": {
+   "course": "indian-history",
+   "no": 26,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Gandhi and Non-Cooperation",
+    "as": "গান্ধী আৰু অসহযোগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "From South Africa",
+      "as": "দক্ষিণ আফ্ৰিকাৰ পৰা"
+     },
+     "i": "walk",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Champaran, 1917",
+      "as": "চম্পাৰণ, ১৯১৭"
+     },
+     "i": "hands",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Non-Cooperation",
+      "as": "অসহযোগ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "The Swaraj Party",
+      "as": "স্বৰাজ দল"
+     },
+     "i": "court",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-27-simon-and-revolutionaries": {
+   "course": "indian-history",
+   "no": 27,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Simon and the revolutionaries",
+    "as": "চাইমন আৰু বিপ্লৱী সকল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Simon Go Back",
+      "as": "চাইমন ঘূৰি যোৱা"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Revolutionaries",
+      "as": "বিপ্লৱী"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Bardoli and Lahore",
+      "as": "বাৰদোলী আৰু লাহোৰ"
+     },
+     "i": "houses",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-28-salt-march": {
+   "course": "indian-history",
+   "no": 28,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The Salt March",
+    "as": "লৱণ যাত্ৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Why salt?",
+      "as": "লৱণ কিয়?"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Twenty-four days to the sea",
+      "as": "সাগৰলৈ চৌবিশ দিন"
+     },
+     "i": "walk",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The law breaks everywhere",
+      "as": "সকলোতে আইন ভংগ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Pact and Round Tables",
+      "as": "চুক্তি আৰু গোলটেবুল"
+     },
+     "i": "calendar",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-29-quit-india": {
+   "course": "indian-history",
+   "no": 29,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Quit India",
+    "as": "ভাৰত ত্যাগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A failed offer",
+      "as": "বিফল প্ৰস্তাৱ"
+     },
+     "i": "court",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Do or Die",
+      "as": "কৰো বা মৰো"
+     },
+     "i": "flag",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A leaderless rising",
+      "as": "নেতৃত্বহীন বিদ্ৰোহ"
+     },
+     "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Prison and a book",
+      "as": "কাৰাগাৰ আৰু গ্ৰন্থ"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-30-bose-and-ina": {
+   "course": "indian-history",
+   "no": 30,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Bose and the INA",
+    "as": "বসু আৰু আজাদ হিন্দ ফৌজ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A break with Congress",
+      "as": "কংগ্ৰেছৰ সৈতে বিচ্ছেদ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Azad Hind",
+      "as": "আজাদ হিন্দ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Imphal to the Red Fort",
+      "as": "ইম্ফলৰ পৰা লালকিল্লালৈ"
+     },
+     "i": "moon",
+     "ex": 6
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-31-road-to-1947": {
+   "course": "indian-history",
+   "no": 31,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "The road to 1947",
+    "as": "১৯৪৭লৈ বাট"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Talks after the war",
+      "as": "যুদ্ধৰ পিছৰ আলোচনা"
+     },
+     "i": "court",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Mutiny at Bombay",
+      "as": "বোম্বেত বিদ্ৰোহ"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A plan collapses",
+      "as": "পৰিকল্পনা ভাঙি পৰে"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Partition and freedom",
+      "as": "বিভাজন আৰু স্বাধীনতা"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Lesson test",
+      "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-32-building-the-republic": {
+   "course": "indian-history",
+   "no": 32,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Building the nation",
+    "as": "ৰাষ্ট্ৰ গঢ়"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The first cabinet",
+      "as": "প্ৰথম কেবিনেট"
+     },
+     "i": "court",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "The Iron Man",
+      "as": "লৌহ পুৰুষ"
+     },
+     "i": "crown",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The flag",
+      "as": "পতাকা"
+     },
+     "i": "flag",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "After 1950",
+      "as": "১৯৫০ৰ পিছত"
+     },
+     "i": "calendar",
      "ex": 5
     },
     {

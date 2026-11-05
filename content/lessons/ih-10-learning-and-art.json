@@ -1,0 +1,1281 @@
+{
+ "id": "ih-10-learning-and-art",
+ "course": "indian-history",
+ "no": 10,
+ "version": 1,
+ "eyebrow": {
+  "en": "Indian History · South, Kashmir and learning",
+  "as": "ভাৰতৰ ইতিহাস · দক্ষিণ, কাশ্মীৰ আৰু জ্ঞানচৰ্চা"
+ },
+ "king": {
+  "en": "Knowledge and stone",
+  "as": "জ্ঞান আৰু শিলৰ কলা"
+ },
+ "reign": {
+  "en": "Ancient India",
+  "as": "প্ৰাচীন ভাৰত"
+ },
+ "portrait": "indian-history/wider.webp",
+ "mission": {
+  "label": {
+   "en": "Evidence file 10",
+   "as": "প্ৰমাণ নথি ১০"
+  },
+  "title": {
+   "en": "Titles and truths",
+   "as": "উপাধি আৰু সত্য"
+  },
+  "hook": {
+   "en": "Papers love titles like Father of Surgery. Learn the answer they want, and what the evidence really shows.",
+   "as": "পৰীক্ষাত শল্যচিকিৎসাৰ জনকৰ দৰে উপাধি প্ৰায়ে আহে। প্ৰত্যাশিত উত্তৰ শিকা, প্ৰমাণে সঁচাকৈ কি দেখুৱায়, সেয়াও শিকা।"
+  }
+ },
+ "sources": [
+  {
+   "title": "Wikipedia, Sushruta",
+   "url": "https://en.wikipedia.org/wiki/Sushruta",
+   "used_for": "Used as a guide: composite text, surgery chapters not its main focus, 'father of surgery' as a label. Check in review."
+  },
+  {
+   "title": "Wikipedia, Aryabhata",
+   "url": "https://en.wikipedia.org/wiki/Aryabhata",
+   "used_for": "Used as a guide: 476, Aryabhatiya, Kusumapura, rotation, place value without a symbol for zero. Check in review."
+  },
+  {
+   "title": "Wikipedia, Nalanda mahavihara",
+   "url": "https://en.wikipedia.org/wiki/Nalanda_mahavihara",
+   "used_for": "Used as a guide: Kumaragupta I, about 427, Xuanzang, about 1200 and its uncertainty, UNESCO 2016. Check in review."
+  },
+  {
+   "title": "Wikipedia, Ajanta Caves",
+   "url": "https://en.wikipedia.org/wiki/Ajanta_Caves",
+   "used_for": "Used as a guide: two phases, Jataka murals, Padmapani, UNESCO 1983. Check in review."
+  },
+  {
+   "title": "Wikipedia, Elephanta Caves",
+   "url": "https://en.wikipedia.org/wiki/Elephanta_Caves",
+   "used_for": "Used as a guide: Mumbai Harbour, Trimurti Sadashiva, Shiva, UNESCO 1987. Check in review."
+  },
+  {
+   "title": "Wikipedia, Khajuraho Group of Monuments",
+   "url": "https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments",
+   "used_for": "Used as a guide: Chandela, Hindu and Jain, Nagara style, Chhatarpur, UNESCO 1986. Check in review."
+  }
+ ],
+ "review_notes": "AI-assisted bilingual educational content, checked against the sources listed. Fluent Assamese educator review and historian review remain pending.",
+ "map": {
+  "base": "india",
+  "box": [
+   64,
+   6,
+   96,
+   37
+  ],
+  "show": [
+   "elephanta",
+   "khajuraho",
+   "nalanda",
+   "pataliputra",
+   "ajanta"
+  ]
+ },
+ "guide": {
+  "timeline": [],
+  "extra_stories": [
+   {
+    "id": "ih-10.guide.traps",
+    "type": "story",
+    "art": "seal",
+    "title": {
+     "en": "Exam traps",
+     "as": "পৰীক্ষাৰ ফান্দ"
+    },
+    "text": [
+     {
+      "en": "Sushruta for surgery, Charaka for the Samhita of medicine.",
+      "as": "শল্যচিকিৎসাৰ বাবে সুশ্ৰুত, চিকিৎসা সংহিতাৰ বাবে চৰক।"
+     },
+     {
+      "en": "Trimurti Sadashiva is at Elephanta, not Ajanta.",
+      "as": "ত্ৰিমূৰ্তি সদাশিৱ এলিফেণ্টাত, অজন্তাত নহয়।"
+     }
+    ]
+   }
+  ]
+ },
+ "units": [
+  {
+   "id": "u1",
+   "icon": "star",
+   "title": {
+    "en": "Medicine",
+    "as": "চিকিৎসা"
+   },
+   "mission": {
+    "objective": {
+     "en": "Keep Charaka and Sushruta apart.",
+     "as": "চৰক আৰু সুশ্ৰুত পৃথক ৰাখা।"
+    },
+    "result": {
+     "en": "Finding recorded: papers call Sushruta the father of surgery; the texts are composite.",
+     "as": "প্ৰমাণ লিখা হ'ল: পৰীক্ষাত সুশ্ৰুতক শল্যচিকিৎসাৰ জনক বোলে; গ্ৰন্থবোৰ বহুজনৰ।"
+    }
+   },
+   "learned": [
+    {
+     "en": "Papers call Sushruta the Father of Surgery",
+     "as": "পৰীক্ষাত সুশ্ৰুতক শল্যচিকিৎসাৰ জনক বোলে"
+    },
+    {
+     "en": "The Sushruta Samhita is a medical treatise",
+     "as": "সুশ্ৰুত সংহিতা চিকিৎসা গ্ৰন্থ"
+    },
+    {
+     "en": "Charaka's name goes with the Charaka Samhita",
+     "as": "চৰকৰ নাম চৰক সংহিতাৰ সৈতে"
+    },
+    {
+     "en": "Both texts were revised over time",
+     "as": "দুয়োখন গ্ৰন্থ সময়ত সংশোধিত হৈছিল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "A surgeon's name",
+      "as": "শল্যবিদৰ নাম"
+     },
+     "text": [
+      {
+       "en": "Exam papers call <mark>[[sushruta|Sushruta]]</mark> the Father of Surgery. That is a modern label for the name behind the Sushruta Samhita.",
+       "as": "পৰীক্ষাত <mark>[[sushruta|সুশ্ৰুতক]]</mark> শল্যচিকিৎসাৰ জনক বোলে। ই সুশ্ৰুত সংহিতাৰ নামৰ আধুনিক উপাধি।"
+      },
+      {
+       "en": "The book covers wider medicine too, and its surgery, including nose repair, made it famous.",
+       "as": "গ্ৰন্থখনত বহল চিকিৎসাও আছে, নাক মেৰামতিৰ দৰে শল্যচিকিৎসাই ইয়াক বিখ্যাত কৰিছে।"
+      }
+     ],
+     "art": "scroll",
+     "id": "ih-10.u1.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Books with many hands",
+      "as": "বহুজনৰ হাতৰ গ্ৰন্থ"
+     },
+     "text": [
+      {
+       "en": "The <mark>Charaka Samhita</mark> goes with [[charaka|Charaka]]. Texts like these were revised by later hands, so a single author and date are hard to fix.",
+       "as": "<mark>চৰক সংহিতা</mark> [[charaka|চৰকৰ]] সৈতে জড়িত। এনে গ্ৰন্থ পিছৰ লেখকে সংশোধন কৰিছিল, সেয়ে এজন লেখক আৰু তাৰিখ ঠিক কৰা কঠিন।"
+      }
+     ],
+     "art": "seal",
+     "id": "ih-10.u1.02",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Sushruta: surgery",
+        "as": "সুশ্ৰুত: শল্যচিকিৎসা"
+       },
+       {
+        "en": "Charaka: medicine",
+        "as": "চৰক: চিকিৎসা"
+       },
+       {
+        "en": "Aryabhata: astronomy",
+        "as": "আৰ্যভট্ট: জ্যোতিৰ্বিদ্যা"
+       }
+      ]
+     }
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The ancient Indian physician called the Father of Surgery is",
+      "as": "শল্যচিকিৎসাৰ জনক বুলি কোৱা প্ৰাচীন ভাৰতীয় চিকিৎসক"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Charaka",
+       "as": "চৰক"
+      },
+      {
+       "en": "Sushruta",
+       "as": "সুশ্ৰুত"
+      },
+      {
+       "en": "Vagbhata",
+       "as": "বাগ্ভট"
+      },
+      {
+       "en": "Vinayaka",
+       "as": "বিনায়ক"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Sushruta.",
+      "as": "সুশ্ৰুত।"
+     },
+     "id": "ih-10.u1.03"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Sushruta",
+        "as": "সুশ্ৰুত"
+       },
+       {
+        "en": "Surgery",
+        "as": "শল্যচিকিৎসা"
+       }
+      ],
+      [
+       {
+        "en": "Charaka",
+        "as": "চৰক"
+       },
+       {
+        "en": "Charaka Samhita",
+        "as": "চৰক সংহিতা"
+       }
+      ],
+      [
+       {
+        "en": "Aryabhata",
+        "as": "আৰ্যভট্ট"
+       },
+       {
+        "en": "Astronomy",
+        "as": "জ্যোতিৰ্বিদ্যা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name and field.",
+      "as": "নাম আৰু ক্ষেত্ৰ।"
+     },
+     "id": "ih-10.u1.04"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "The Sushruta Samhita deals only with surgery.",
+      "as": "সুশ্ৰুত সংহিতাত কেৱল শল্যচিকিৎসা আছে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It covers general medicine too.",
+      "as": "ইয়াত সাধাৰণ চিকিৎসাও আছে।"
+     },
+     "id": "ih-10.u1.05"
+    },
+    {
+     "type": "spot",
+     "q": {
+      "en": "One word is wrong. Tap it.",
+      "as": "এটা শব্দ ভুল। সেইটো টিপা।"
+     },
+     "tokens": {
+      "en": [
+       "Papers",
+       "call",
+       "Charaka",
+       "the",
+       "Father",
+       "of",
+       "Surgery."
+      ],
+      "as": [
+       "পৰীক্ষাত",
+       "চৰকক",
+       "শল্যচিকিৎসাৰ",
+       "জনক",
+       "বোলে।"
+      ]
+     },
+     "wrong": {
+      "en": 2,
+      "as": 1
+     },
+     "fix": {
+      "en": "→ Sushruta",
+      "as": "→ সুশ্ৰুতক"
+     },
+     "answerText": {
+      "en": "Charaka → Sushruta",
+      "as": "চৰকক → সুশ্ৰুতক"
+     },
+     "why": {
+      "en": "That label goes to Sushruta.",
+      "as": "এই উপাধি সুশ্ৰুতৰ।"
+     },
+     "id": "ih-10.u1.06"
+    },
+    {
+     "type": "unscramble",
+     "q": {
+      "en": "Unscramble the name linked with surgery.",
+      "as": "শল্যচিকিৎসাৰ সৈতে জড়িত নামটো সজোৱা।"
+     },
+     "word": {
+      "en": [
+       "S",
+       "U",
+       "S",
+       "H",
+       "R",
+       "U",
+       "T",
+       "A"
+      ],
+      "as": [
+       "সু",
+       "শ্ৰু",
+       "ত"
+      ]
+     },
+     "answerText": {
+      "en": "SUSHRUTA",
+      "as": "সুশ্ৰুত"
+     },
+     "why": {
+      "en": "Sushruta.",
+      "as": "সুশ্ৰুত।"
+     },
+     "id": "ih-10.u1.07"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "icon": "star",
+   "title": {
+    "en": "Numbers and stars",
+    "as": "সংখ্যা আৰু নক্ষত্ৰ"
+   },
+   "mission": {
+    "objective": {
+     "en": "Answer the zero question, then say what is really known.",
+     "as": "শূন্যৰ প্ৰশ্নৰ উত্তৰ দিয়া, তাৰ পিছত সঁচাকৈ কি জনা কোৱা।"
+    },
+    "result": {
+     "en": "Finding recorded: Aryabhata is the exam answer, but he used no symbol for zero.",
+     "as": "প্ৰমাণ লিখা হ'ল: আৰ্যভট্ট পৰীক্ষাৰ উত্তৰ, কিন্তু তেওঁ শূন্যৰ চিহ্ন ব্যৱহাৰ কৰা নাছিল।"
+    }
+   },
+   "learned": [
+    {
+     "en": "Aryabhata was born in 476 CE",
+     "as": "আৰ্যভট্টৰ জন্ম ৪৭৬ খ্ৰীষ্টাব্দত"
+    },
+    {
+     "en": "His surviving work is the Aryabhatiya",
+     "as": "তেওঁৰ থকা ৰচনা আৰ্যভটীয়"
+    },
+    {
+     "en": "He said the Earth rotates on its axis",
+     "as": "তেওঁ পৃথিৱীয়ে অক্ষত ঘূৰে বুলি কৈছিল"
+    },
+    {
+     "en": "'Father of zero' is an exam label",
+     "as": "'শূন্যৰ জনক' পৰীক্ষাৰ উপাধি"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "The man from Kusumapura",
+      "as": "কুসুমপুৰৰ মানুহ"
+     },
+     "text": [
+      {
+       "en": "<mark>[[aryabhata|Aryabhata]]</mark>, born in 476, wrote the <mark>Aryabhatiya</mark> and linked himself with Kusumapura, Pataliputra.",
+       "as": "<mark>[[aryabhata|আৰ্যভট্টই]]</mark>, ৪৭৬ত জন্ম, <mark>আৰ্যভটীয়</mark> লিখিছিল আৰু নিজকে কুসুমপুৰ বা পাটলিপুত্ৰৰ সৈতে জড়িত কৰিছিল।"
+      },
+      {
+       "en": "He said the Earth is round and rotates daily on its axis.",
+       "as": "তেওঁ কৈছিল পৃথিৱী গোল আৰু দৈনিক অক্ষত ঘূৰে।"
+      }
+     ],
+     "art": "calendar",
+     "id": "ih-10.u2.01"
+    },
+    {
+     "id": "ih-10.u2.g1",
+     "type": "inline",
+     "guess": true,
+     "before": {
+      "en": "Papers call Aryabhata the father of zero. Did he write a symbol for it?",
+      "as": "পৰীক্ষাত আৰ্যভট্টক শূন্যৰ জনক বোলে। তেওঁ ইয়াৰ চিহ্ন লিখিছিল নে?"
+     },
+     "after": {
+      "en": "Pick one.",
+      "as": "এটা বাছি লোৱা।"
+     },
+     "options": [
+      {
+       "en": "Yes",
+       "as": "লিখিছিল"
+      },
+      {
+       "en": "No",
+       "as": "লিখা নাছিল"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "His place-value system needed zero, but he had no symbol for it.",
+      "as": "তেওঁৰ পদ্ধতিত শূন্য লাগিছিল, কিন্তু চিহ্ন নাছিল।"
+     }
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "The zero question",
+      "as": "শূন্যৰ প্ৰশ্ন"
+     },
+     "text": [
+      {
+       "en": "A paper asked who is the father of zero, and the expected answer is <mark>Aryabhata</mark>.",
+       "as": "এখন প্ৰশ্নকাকতত শূন্যৰ জনক কোন সোধা হৈছিল, প্ৰত্যাশিত উত্তৰ <mark>আৰ্যভট্ট</mark>।"
+      },
+      {
+       "en": "The full story is less simple. His place-value system needed zero, yet he had <mark>no symbol</mark> for it. Treat the title as a label.",
+       "as": "সম্পূৰ্ণ কাহিনী ইমান সহজ নহয়। তেওঁৰ স্থানীয় মানৰ পদ্ধতিত শূন্য লাগিছিল, কিন্তু তেওঁৰ <mark>চিহ্ন নাছিল</mark>। উপাধিটো উপাধি বুলিয়েই ধৰা।"
+      }
+     ],
+     "art": "scroll",
+     "id": "ih-10.u2.02"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Papers call the father of zero",
+      "as": "পৰীক্ষাত শূন্যৰ জনক বোলা হয়"
+     },
+     "after": {
+      "en": ".",
+      "as": "ক।"
+     },
+     "options": [
+      {
+       "en": "Chitragupta",
+       "as": "চিত্ৰগুপ্ত"
+      },
+      {
+       "en": "Brahmadutta",
+       "as": "ব্ৰহ্মদত্ত"
+      },
+      {
+       "en": "Varahamihira",
+       "as": "বৰাহমিহিৰ"
+      },
+      {
+       "en": "Aryabhata",
+       "as": "আৰ্যভট্ট"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "That is the expected answer.",
+      "as": "এয়া প্ৰত্যাশিত উত্তৰ।"
+     },
+     "id": "ih-10.u2.03"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Aryabhata used a written symbol for zero.",
+      "as": "আৰ্যভট্টই শূন্যৰ লিখিত চিহ্ন ব্যৱহাৰ কৰিছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "His system implied zero, without a symbol.",
+      "as": "তেওঁৰ পদ্ধতিত চিহ্ন নোহোৱাকৈ শূন্য নিহিত আছিল।"
+     },
+     "id": "ih-10.u2.04"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I was born in 476.",
+       "as": "মোৰ জন্ম ৪৭৬ত।"
+      },
+      {
+       "en": "I said the Earth rotates.",
+       "as": "মই পৃথিৱী ঘূৰে বুলিছিলোঁ।"
+      },
+      {
+       "en": "My book carries my name.",
+       "as": "মোৰ গ্ৰন্থত মোৰ নাম।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Sushruta",
+       "as": "সুশ্ৰুত"
+      },
+      {
+       "en": "Aryabhata",
+       "as": "আৰ্যভট্ট"
+      },
+      {
+       "en": "Kalhana",
+       "as": "কলহণ"
+      },
+      {
+       "en": "Kalidasa",
+       "as": "কালিদাস"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Aryabhata.",
+      "as": "আৰ্যভট্ট।"
+     },
+     "id": "ih-10.u2.05"
+    },
+    {
+     "type": "spot",
+     "q": {
+      "en": "One word is wrong. Tap it.",
+      "as": "এটা শব্দ ভুল। সেইটো টিপা।"
+     },
+     "tokens": {
+      "en": [
+       "Aryabhata",
+       "linked",
+       "himself",
+       "with",
+       "Kashmir."
+      ],
+      "as": [
+       "আৰ্যভট্টই",
+       "নিজকে",
+       "কাশ্মীৰৰ",
+       "সৈতে",
+       "জড়িত",
+       "কৰিছিল।"
+      ]
+     },
+     "wrong": {
+      "en": 4,
+      "as": 2
+     },
+     "fix": {
+      "en": "→ Kusumapura",
+      "as": "→ কুসুমপুৰৰ"
+     },
+     "answerText": {
+      "en": "Kashmir → Kusumapura",
+      "as": "কাশ্মীৰৰ → কুসুমপুৰৰ"
+     },
+     "why": {
+      "en": "Kusumapura is Pataliputra.",
+      "as": "কুসুমপুৰ পাটলিপুত্ৰ।"
+     },
+     "id": "ih-10.u2.06"
+    },
+    {
+     "type": "odd",
+     "q": {
+      "en": "Which is NOT linked with Aryabhata?",
+      "as": "কোনটো আৰ্যভট্টৰ সৈতে জড়িত নহয়?"
+     },
+     "options": [
+      {
+       "en": "Aryabhatiya",
+       "as": "আৰ্যভটীয়"
+      },
+      {
+       "en": "Earth's rotation",
+       "as": "পৃথিৱীৰ ঘূৰ্ণন"
+      },
+      {
+       "en": "Place value",
+       "as": "স্থানীয় মান"
+      },
+      {
+       "en": "Nose surgery",
+       "as": "নাকৰ শল্যচিকিৎসা"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "That is Sushruta's text.",
+      "as": "সেয়া সুশ্ৰুতৰ গ্ৰন্থৰ।"
+     },
+     "id": "ih-10.u2.07"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "icon": "houses",
+   "title": {
+    "en": "Nalanda",
+    "as": "নালন্দা"
+   },
+   "mission": {
+    "objective": {
+     "en": "Follow a great monastery from start to end.",
+     "as": "এখন মহান বিহাৰৰ আৰম্ভণিৰ পৰা অন্তলৈ অনুসৰণ কৰা।"
+    },
+    "result": {
+     "en": "Finding recorded: founded about 427, with Xuanzang as a student, damaged about 1200.",
+     "as": "প্ৰমাণ লিখা হ'ল: প্ৰায় ৪২৭ত প্ৰতিষ্ঠিত, হিউৱেন চাঙ ছাত্ৰ, প্ৰায় ১২০০ত ক্ষতিগ্ৰস্ত।"
+    }
+   },
+   "learned": [
+    {
+     "en": "Nalanda is in Bihar",
+     "as": "নালন্দা বিহাৰত"
+    },
+    {
+     "en": "Kumaragupta I founded it about 427",
+     "as": "প্ৰায় ৪২৭ত কুমাৰগুপ্ত প্ৰথমে প্ৰতিষ্ঠা কৰিছিল"
+    },
+    {
+     "en": "Xuanzang studied there",
+     "as": "হিউৱেন চাঙে তাত অধ্যয়ন কৰিছিল"
+    },
+    {
+     "en": "It became a World Heritage Site in 2016",
+     "as": "২০১৬ত বিশ্ব ঐতিহ্য স্থল হৈছিল"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "A monastery in Bihar",
+      "as": "বিহাৰৰ এখন মহাবিহাৰ"
+     },
+     "text": [
+      {
+       "en": "<mark>[[nalanda|Nalanda]]</mark> was founded about 427 under the Gupta king Kumaragupta I. [[xuanzang|Xuanzang]] studied there in the 7th century.",
+       "as": "<mark>[[nalanda|নালন্দা]]</mark> প্ৰায় ৪২৭ত গুপ্ত ৰজা কুমাৰগুপ্ত প্ৰথমৰ অধীনত প্ৰতিষ্ঠিত হৈছিল। সপ্তম শতিকাত [[xuanzang|হিউৱেন চাঙে]] তাত অধ্যয়ন কৰিছিল।"
+      }
+     ],
+     "art": "houses",
+     "id": "ih-10.u3.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "The end, and its limits",
+      "as": "অন্ত আৰু তাৰ সীমা"
+     },
+     "text": [
+      {
+       "en": "About 1200 it was likely sacked by Muhammad Bakhtiyar Khalji. The evidence is debated, and it may have lingered until about 1400.",
+       "as": "প্ৰায় ১২০০ত মহম্মদ বখতিয়াৰ খিলজীয়ে সম্ভৱতঃ ইয়াক লুণ্ঠন কৰিছিল। প্ৰমাণ বিতৰ্কিত, ই প্ৰায় ১৪০০লৈ কোনোমতে চলিব পাৰে।"
+      },
+      {
+       "en": "UNESCO listed the site in <mark>2016</mark>.",
+       "as": "২০১৬ত ইউনেস্কোৱে স্থলটো তালিকাভুক্ত কৰে।"
+      }
+     ],
+     "art": "calendar",
+     "id": "ih-10.u3.02"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Nalanda is in Maharashtra.",
+      "as": "নালন্দা মহাৰাষ্ট্ৰত।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is in Bihar.",
+      "as": "ই বিহাৰত।"
+     },
+     "id": "ih-10.u3.03"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "Nalanda was founded under the",
+      "as": "নালন্দা প্ৰতিষ্ঠিত হৈছিল"
+     },
+     "after": {
+      "en": "dynasty.",
+      "as": "বংশৰ অধীনত।"
+     },
+     "options": [
+      {
+       "en": "Maurya",
+       "as": "মৌৰ্য"
+      },
+      {
+       "en": "Gupta",
+       "as": "গুপ্ত"
+      },
+      {
+       "en": "Chola",
+       "as": "চোল"
+      },
+      {
+       "en": "Kushan",
+       "as": "কুষাণ"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Under Kumaragupta I.",
+      "as": "কুমাৰগুপ্ত প্ৰথমৰ অধীনত।"
+     },
+     "id": "ih-10.u3.04"
+    },
+    {
+     "type": "order",
+     "q": {
+      "en": "Put Nalanda's story in order.",
+      "as": "নালন্দাৰ কাহিনী ক্ৰমে সজোৱা।"
+     },
+     "items": [
+      {
+       "en": "Founded",
+       "as": "প্ৰতিষ্ঠা"
+      },
+      {
+       "en": "Xuanzang studies there",
+       "as": "হিউৱেন চাঙৰ অধ্যয়ন"
+      },
+      {
+       "en": "Likely sacked",
+       "as": "সম্ভৱতঃ লুণ্ঠন"
+      },
+      {
+       "en": "UNESCO listing",
+       "as": "ইউনেস্কো তালিকা"
+      }
+     ],
+     "why": {
+      "en": "About 427, 7th century, about 1200, 2016.",
+      "as": "প্ৰায় ৪২৭, সপ্তম শতিকা, প্ৰায় ১২০০, ২০১৬।"
+     },
+     "id": "ih-10.u3.05"
+    },
+    {
+     "type": "spot",
+     "q": {
+      "en": "One word is wrong. Tap it.",
+      "as": "এটা শব্দ ভুল। সেইটো টিপা।"
+     },
+     "tokens": {
+      "en": [
+       "Nalanda",
+       "was",
+       "likely",
+       "sacked",
+       "by",
+       "Mahmud",
+       "of",
+       "Ghazni."
+      ],
+      "as": [
+       "নালন্দা",
+       "সম্ভৱতঃ",
+       "মাহমুদ",
+       "গজনীয়ে",
+       "লুণ্ঠন",
+       "কৰিছিল।"
+      ]
+     },
+     "wrong": {
+      "en": 7,
+      "as": 3
+     },
+     "fix": {
+      "en": "→ Bakhtiyar Khalji",
+      "as": "→ বখতিয়াৰ খিলজীয়ে"
+     },
+     "answerText": {
+      "en": "Ghazni → Bakhtiyar Khalji",
+      "as": "গজনীয়ে → বখতিয়াৰ খিলজীয়ে"
+     },
+     "why": {
+      "en": "The usual attribution is Bakhtiyar Khalji.",
+      "as": "সাধাৰণতে বখতিয়াৰ খিলজীৰ নাম লোৱা হয়।"
+     },
+     "id": "ih-10.u3.06"
+    },
+    {
+     "type": "whoami",
+     "clues": [
+      {
+       "en": "I was a Chinese pilgrim.",
+       "as": "মই চীনা তীৰ্থযাত্ৰী।"
+      },
+      {
+       "en": "I studied at Nalanda.",
+       "as": "মই নালন্দাত পঢ়িছিলোঁ।"
+      },
+      {
+       "en": "I also visited Kamarupa.",
+       "as": "মই কামৰূপলৈও গৈছিলোঁ।"
+      }
+     ],
+     "options": [
+      {
+       "en": "Faxian",
+       "as": "ফা-হিয়েন"
+      },
+      {
+       "en": "Xuanzang",
+       "as": "হিউৱেন চাঙ"
+      },
+      {
+       "en": "Megasthenes",
+       "as": "মেগাস্থিনিছ"
+      },
+      {
+       "en": "Ibn Battuta",
+       "as": "ইবন বতুতা"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Xuanzang.",
+      "as": "হিউৱেন চাঙ।"
+     },
+     "id": "ih-10.u3.07"
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "icon": "seal",
+   "title": {
+    "en": "Three monuments",
+    "as": "তিনিটা স্মাৰক"
+   },
+   "mission": {
+    "objective": {
+     "en": "Tie each monument to its faith, place and fact.",
+     "as": "প্ৰতিটো স্মাৰক ধৰ্ম, ঠাই আৰু তথ্যৰ সৈতে মিলোৱা।"
+    },
+    "result": {
+     "en": "Finding recorded: Ajanta is Buddhist, Elephanta for Shiva, Khajuraho Hindu and Jain.",
+     "as": "প্ৰমাণ লিখা হ'ল: অজন্তা বৌদ্ধ, এলিফেণ্টা শিৱৰ, খাজুৰাহো হিন্দু আৰু জৈন।"
+    }
+   },
+   "learned": [
+    {
+     "en": "Ajanta has Buddhist caves and murals",
+     "as": "অজন্তাত বৌদ্ধ গুহা আৰু চিত্ৰ"
+    },
+    {
+     "en": "The Trimurti Sadashiva is at Elephanta",
+     "as": "ত্ৰিমূৰ্তি সদাশিৱ এলিফেণ্টাত"
+    },
+    {
+     "en": "Khajuraho was built under the Chandelas",
+     "as": "খাজুৰাহো চান্দেলৰ অধীনত নিৰ্মিত"
+    },
+    {
+     "en": "Khajuraho has Hindu and Jain temples in Nagara style",
+     "as": "খাজুৰাহোত নাগৰ শৈলীৰ হিন্দু আৰু জৈন মন্দিৰ"
+    }
+   ],
+   "steps": [
+    {
+     "type": "story",
+     "title": {
+      "en": "Caves",
+      "as": "গুহা"
+     },
+     "text": [
+      {
+       "en": "[[ajanta]] in Maharashtra is <mark>Buddhist</mark>: rock-cut halls with Jataka murals.",
+       "as": "মহাৰাষ্ট্ৰৰ [[ajanta|অজন্তা]] <mark>বৌদ্ধ</mark>: জাতক চিত্ৰসহ শিলকটা গুহা।"
+      },
+      {
+       "en": "[[elephanta]], in Mumbai Harbour, holds the <mark>Trimurti Sadashiva</mark>, a three-headed form of Shiva.",
+       "as": "মুম্বাই বন্দৰৰ [[elephanta|এলিফেণ্টাত]] শিৱৰ তিনিমূৰীয়া ৰূপ <mark>ত্ৰিমূৰ্তি সদাশিৱ</mark> আছে।"
+      }
+     ],
+     "map": {
+      "base": "india",
+      "box": [
+       67,
+       16,
+       84,
+       25.5
+      ],
+      "show": [
+       "ajanta",
+       "elephanta",
+       "khajuraho"
+      ]
+     },
+     "id": "ih-10.u4.01"
+    },
+    {
+     "type": "story",
+     "title": {
+      "en": "Khajuraho",
+      "as": "খাজুৰাহো"
+     },
+     "text": [
+      {
+       "en": "[[khajuraho]] in Chhatarpur, Madhya Pradesh, was built under the <mark>Chandela</mark> dynasty.",
+       "as": "মধ্য প্ৰদেশৰ ছত্ৰপুৰৰ [[khajuraho|খাজুৰাহো]] <mark>চান্দেল</mark> বংশৰ অধীনত নিৰ্মিত।"
+      },
+      {
+       "en": "It has Hindu and Jain temples in the northern <mark>Nagara</mark> style, not the Dravidian style.",
+       "as": "ইয়াত দ্ৰাৱিড় নহয়, উত্তৰৰ <mark>নাগৰ</mark> শৈলীৰ হিন্দু আৰু জৈন মন্দিৰ আছে।"
+      }
+     ],
+     "art": "houses",
+     "id": "ih-10.u4.02"
+    },
+    {
+     "type": "inline",
+     "before": {
+      "en": "The famous Trimurti Sadashiva is part of the caves at",
+      "as": "বিখ্যাত ত্ৰিমূৰ্তি সদাশিৱ আছে"
+     },
+     "after": {
+      "en": ".",
+      "as": "ৰ গুহাত।"
+     },
+     "options": [
+      {
+       "en": "Ajanta",
+       "as": "অজন্তা"
+      },
+      {
+       "en": "Ellora",
+       "as": "ইলোৰা"
+      },
+      {
+       "en": "Elephanta",
+       "as": "এলিফেণ্টা"
+      },
+      {
+       "en": "Bagh",
+       "as": "বাঘ"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Elephanta, Mumbai Harbour.",
+      "as": "এলিফেণ্টা, মুম্বাই বন্দৰ।"
+     },
+     "id": "ih-10.u4.03"
+    },
+    {
+     "type": "map",
+     "q": {
+      "en": "Tap Khajuraho.",
+      "as": "খাজুৰাহো টিপা।"
+     },
+     "target": "khajuraho",
+     "choices": [
+      "khajuraho",
+      "elephanta",
+      "nalanda",
+      "pataliputra"
+     ],
+     "why": {
+      "en": "It is in Madhya Pradesh.",
+      "as": "ই মধ্য প্ৰদেশত।"
+     },
+     "id": "ih-10.u4.04"
+    },
+    {
+     "type": "match",
+     "pairs": [
+      [
+       {
+        "en": "Ajanta",
+        "as": "অজন্তা"
+       },
+       {
+        "en": "Buddhist murals",
+        "as": "বৌদ্ধ চিত্ৰ"
+       }
+      ],
+      [
+       {
+        "en": "Elephanta",
+        "as": "এলিফেণ্টা"
+       },
+       {
+        "en": "Trimurti Sadashiva",
+        "as": "ত্ৰিমূৰ্তি সদাশিৱ"
+       }
+      ],
+      [
+       {
+        "en": "Khajuraho",
+        "as": "খাজুৰাহো"
+       },
+       {
+        "en": "Chandelas",
+        "as": "চান্দেল"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Monument and fact.",
+      "as": "স্মাৰক আৰু তথ্য।"
+     },
+     "id": "ih-10.u4.05"
+    },
+    {
+     "type": "tf",
+     "s": {
+      "en": "Khajuraho's temples are in the Dravidian style.",
+      "as": "খাজুৰাহোৰ মন্দিৰ দ্ৰাৱিড় শৈলীৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "They are Nagara.",
+      "as": "এইবোৰ নাগৰ।"
+     },
+     "id": "ih-10.u4.06"
+    },
+    {
+     "type": "spot",
+     "q": {
+      "en": "One word is wrong. Tap it.",
+      "as": "এটা শব্দ ভুল। সেইটো টিপা।"
+     },
+     "tokens": {
+      "en": [
+       "Khajuraho",
+       "is",
+       "in",
+       "Chhatarpur",
+       "district",
+       "of",
+       "Maharashtra."
+      ],
+      "as": [
+       "খাজুৰাহো",
+       "মহাৰাষ্ট্ৰৰ",
+       "ছত্ৰপুৰ",
+       "জিলাত।"
+      ]
+     },
+     "wrong": {
+      "en": 6,
+      "as": 1
+     },
+     "fix": {
+      "en": "→ Madhya Pradesh",
+      "as": "→ মধ্য প্ৰদেশৰ"
+     },
+     "answerText": {
+      "en": "Maharashtra → Madhya Pradesh",
+      "as": "মহাৰাষ্ট্ৰৰ → মধ্য প্ৰদেশৰ"
+     },
+     "why": {
+      "en": "It is in Madhya Pradesh.",
+      "as": "ই মধ্য প্ৰদেশত।"
+     },
+     "id": "ih-10.u4.07"
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Lesson test",
+   "as": "পাঠৰ পৰীক্ষা"
+  },
+  "mission": {
+   "objective": {
+    "en": "Sort knowledge and stone.",
+    "as": "জ্ঞান আৰু শিল পৃথক কৰা।"
+   },
+   "result": {
+    "en": "Recorded: scholars, a monastery and three monuments.",
+    "as": "লিখা হ'ল: পণ্ডিত, মহাবিহাৰ আৰু তিনিটা স্মাৰক।"
+   }
+  },
+  "learned": [],
+  "steps": [
+   {
+    "type": "inline",
+    "before": {
+     "en": "The Trimurti Sadashiva is at",
+     "as": "ত্ৰিমূৰ্তি সদাশিৱ আছে"
+    },
+    "after": {
+     "en": ".",
+     "as": "ত।"
+    },
+    "options": [
+     {
+      "en": "Ajanta",
+      "as": "অজন্তা"
+     },
+     {
+      "en": "Ellora",
+      "as": "ইলোৰা"
+     },
+     {
+      "en": "Elephanta",
+      "as": "এলিফেণ্টা"
+     },
+     {
+      "en": "Bagh",
+      "as": "বাঘ"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Elephanta.",
+     "as": "এলিফেণ্টা।"
+    },
+    "id": "ih-10.test.01"
+   },
+   {
+    "type": "match",
+    "pairs": [
+     [
+      {
+       "en": "Sushruta",
+       "as": "সুশ্ৰুত"
+      },
+      {
+       "en": "Father of Surgery, in papers",
+       "as": "পৰীক্ষাত শল্যচিকিৎসাৰ জনক"
+      }
+     ],
+     [
+      {
+       "en": "Aryabhata",
+       "as": "আৰ্যভট্ট"
+      },
+      {
+       "en": "Father of zero, in papers",
+       "as": "পৰীক্ষাত শূন্যৰ জনক"
+      }
+     ],
+     [
+      {
+       "en": "Kumaragupta I",
+       "as": "কুমাৰগুপ্ত প্ৰথম"
+      },
+      {
+       "en": "Nalanda",
+       "as": "নালন্দা"
+      }
+     ]
+    ],
+    "why": {
+     "en": "Name and association.",
+     "as": "নাম আৰু সম্পৰ্ক।"
+    },
+    "id": "ih-10.test.02"
+   },
+   {
+    "type": "map",
+    "q": {
+     "en": "Tap Elephanta.",
+     "as": "এলিফেণ্টা টিপা।"
+    },
+    "target": "elephanta",
+    "choices": [
+     "elephanta",
+     "khajuraho",
+     "nalanda",
+     "pataliputra"
+    ],
+    "why": {
+     "en": "In Mumbai Harbour.",
+     "as": "মুম্বাই বন্দৰত।"
+    },
+    "id": "ih-10.test.03"
+   },
+   {
+    "type": "tf",
+    "s": {
+     "en": "Ajanta's caves are Jain.",
+     "as": "অজন্তাৰ গুহা জৈন।"
+    },
+    "answer": false,
+    "why": {
+     "en": "They are Buddhist.",
+     "as": "এইবোৰ বৌদ্ধ।"
+    },
+    "id": "ih-10.test.04"
+   },
+   {
+    "type": "order",
+    "q": {
+     "en": "Put these in order.",
+     "as": "এইবোৰ ক্ৰমে সজোৱা।"
+    },
+    "items": [
+     {
+      "en": "Aryabhata born",
+      "as": "আৰ্যভট্টৰ জন্ম"
+     },
+     {
+      "en": "Xuanzang at Nalanda",
+      "as": "নালন্দাত হিউৱেন চাঙ"
+     },
+     {
+      "en": "Kandariya Mahadeva finished",
+      "as": "কন্দৰীয়া মহাদেৱ সম্পূৰ্ণ"
+     }
+    ],
+    "why": {
+     "en": "476, 7th century, about 1029.",
+     "as": "৪৭৬, সপ্তম শতিকা, প্ৰায় ১০২৯।"
+    },
+    "id": "ih-10.test.05"
+   },
+   {
+    "type": "mcq",
+    "q": {
+     "en": "Consider these statements about Khajuraho. (1) It was built during the Chandela dynasty. (2) It has Hindu and Jain temples. (3) It is in the Dravidian style. Which are correct?",
+     "as": "খাজুৰাহো সম্পৰ্কে এই উক্তিবোৰ বিবেচনা কৰা। (১) ই চান্দেল বংশৰ সময়ত নিৰ্মিত। (২) ইয়াত হিন্দু আৰু জৈন মন্দিৰ আছে। (৩) ই দ্ৰাৱিড় শৈলীৰ। কোনবোৰ শুদ্ধ?"
+    },
+    "options": [
+     {
+      "en": "1 only",
+      "as": "কেৱল ১"
+     },
+     {
+      "en": "1 and 2 only",
+      "as": "কেৱল ১ আৰু ২"
+     },
+     {
+      "en": "2 and 3 only",
+      "as": "কেৱল ২ আৰু ৩"
+     },
+     {
+      "en": "1, 2 and 3",
+      "as": "১, ২ আৰু ৩"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "It is in the Nagara style.",
+     "as": "ই নাগৰ শৈলীৰ।"
+    },
+    "id": "ih-10.test.06"
+   }
+  ]
+ }
+}
