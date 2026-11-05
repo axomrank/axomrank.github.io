@@ -1,5 +1,5 @@
 {
- "version": "28b82b55be",
+ "version": "bebd5a3569",
  "courseRedirects": {
   "early-assam": "assam-history",
   "varman-kings": "assam-history",
@@ -26,6 +26,10 @@
   {
    "id": "assam-history",
    "file": "content/courses/assam-history.json"
+  },
+  {
+   "id": "geography-foundations",
+   "file": "content/courses/geography-foundations.json"
   },
   {
    "id": "indian-constitution",
@@ -6963,6 +6967,576 @@
      },
      "i": "trophy",
      "ex": 8
+    }
+   ]
+  },
+  "gf-01-map-skills": {
+   "course": "geography-foundations",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Find your direction",
+      "as": "দিশ বিচাৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Meet at a coordinate",
+      "as": "স্থানাংকত মিলিত হোৱা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Measure a route",
+      "as": "পথৰ দৈৰ্ঘ্য জোখা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Read the slope",
+      "as": "ঢাল পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-02-moving-earth": {
+   "course": "geography-foundations",
+   "no": 2,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read a moving Earth",
+    "as": "গতিশীল পৃথিৱী পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "From daylight to darkness",
+      "as": "দিনৰ পোহৰৰ পৰা আন্ধাৰলৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A tilted Earth",
+      "as": "হেলনীয়া পৃথিৱী"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Inside the Earth",
+      "as": "পৃথিৱীৰ ভিতৰ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Where plates meet",
+      "as": "ফলক য’ত মিলে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-03-landforms": {
+   "course": "geography-foundations",
+   "no": 3,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "See land take shape",
+    "as": "ভূমিৰ আকৃতি গঢ়া চোৱা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Three rock families",
+      "as": "শিলৰ তিনিটা গোট"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Follow a grain",
+      "as": "এটা কণাৰ পথ অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Read a river bend",
+      "as": "নদীৰ ভাঁজ পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Compare three landscapes",
+      "as": "তিনিটা ভূদৃশ্য তুলনা কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-04-air-and-water": {
+   "course": "geography-foundations",
+   "no": 4,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Follow air and fresh water",
+    "as": "বায়ু আৰু মিঠাপানী অনুসৰণ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Weather or climate?",
+      "as": "বতৰ নে জলবায়ু?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "What starts the wind?",
+      "as": "বতাহ কিয় বলে?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Where does rainwater go?",
+      "as": "বৰষুণৰ পানী ক’লৈ যায়?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Rain across a ridge",
+      "as": "পাহাৰৰ দুয়োফালে বৰষুণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-05-ocean-and-hazards": {
+   "course": "geography-foundations",
+   "no": 5,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read the ocean and hazards",
+    "as": "সাগৰ আৰু বিপদ পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Beyond the shore",
+      "as": "উপকূলৰ সিপাৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Three kinds of motion",
+      "as": "তিনিধৰণৰ গতি"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "What is exposed?",
+      "as": "কি বিপদৰ সন্মুখীন?"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "When water rises suddenly",
+      "as": "হঠাৎ পানী বাঢ়িলে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-06-india-location": {
+   "course": "geography-foundations",
+   "no": 6,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Put India on the map",
+    "as": "মানচিত্ৰত ভাৰত চিনা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Find India in South Asia",
+      "as": "দক্ষিণ এছিয়াত ভাৰত বিচাৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Use political anchors",
+      "as": "প্ৰশাসনিক ঠাইৰে দিশ চিনা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "One clock across India",
+      "as": "সমগ্ৰ ভাৰতত একে ঘড়ী"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Coasts and islands",
+      "as": "উপকূল আৰু দ্বীপ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-07-india-relief": {
+   "course": "geography-foundations",
+   "no": 7,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Cross India’s physical regions",
+    "as": "ভাৰতৰ ভূ-আকৃতি অঞ্চল পাৰ হোৱা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Across the northern arc",
+      "as": "উত্তৰৰ পৰ্বত ধনুৰ মাজেৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A plain and a desert",
+      "as": "সমভূমি আৰু মৰুভূমি"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The plateau and its edges",
+      "as": "মালভূমি আৰু তাৰ কাষ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Plains meet the sea",
+      "as": "সমভূমি সাগৰৰ কাষত"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-08-indian-rivers": {
+   "course": "geography-foundations",
+   "no": 8,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Trace India’s rivers",
+    "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Trace a basin",
+      "as": "নদী অৱবাহিকা অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Across the northern rivers",
+      "as": "উত্তৰৰ নদীবোৰৰ মাজেৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Two shores of the peninsula",
+      "as": "উপদ্বীপৰ দুটা উপকূল"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Read the river mouth",
+      "as": "নদীৰ মোহনা পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-09-india-monsoon": {
+   "course": "geography-foundations",
+   "no": 9,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read India’s monsoon",
+    "as": "ভাৰতৰ মৌচুমী পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the seasonal calendar",
+      "as": "ঋতুৰ কেলেণ্ডাৰ পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Follow the advance",
+      "as": "আগমন অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Compare two rain records",
+      "as": "বৰষুণৰ দুখন নথি তুলনা কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "When the winds turn",
+      "as": "বতাহৰ দিশ সলনি হ’লে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "gf-10-land-and-livelihoods": {
+   "course": "geography-foundations",
+   "no": 10,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Connect land and livelihoods",
+    "as": "ভূমি আৰু জীৱিকা সংযোগ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the soil clues",
+      "as": "মাটিৰ সংকেত পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "From wet forest to thorn scrub",
+      "as": "সেমেকা অৰণ্যৰ পৰা কাঁইটীয়া জোপোহালৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Read a crop table",
+      "as": "শস্যৰ তালিকা পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Where people settle",
+      "as": "মানুহ ক’ত বসতি কৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
     }
    ]
   },

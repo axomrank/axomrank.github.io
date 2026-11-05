@@ -202,7 +202,8 @@ function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
     if (story || isChoice(id) || (pass && !choices.length)) out += label(id, [x, y], "e", pass ? "place passlbl" : "place");
   });
   const note = BASE.outline ? B("Today's India, not historical borders; places approximate. Outline: DataMeet, Survey of India, CC BY-SA", "আজিৰ ভাৰত, ঐতিহাসিক সীমা নহয়; ঠাইবোৰ আনুমানিক। ৰেখাচিত্ৰ: DataMeet, ভাৰতীয় জৰীপ বিভাগ, CC BY-SA") : B("Districts and rivers of today's Assam; places approximate", "আজিৰ অসমৰ জিলা আৰু নদী; ঠাইবোৰ আনুমানিক");
-  return out + `</g></svg><div class="map-note">${T(note)}</div>`;
+  const mapCredits = BASE.outline ? ` <a href="https://github.com/datameet/maps/tree/master/Country">DataMeet</a> · <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a>` : "";
+  return out + `</g></svg><div class="map-note">${T(note)}${mapCredits}</div>`;
 }
 
 /* ========================================================= */

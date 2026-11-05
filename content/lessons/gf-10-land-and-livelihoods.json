@@ -1,0 +1,1127 @@
+{
+  "id": "gf-10-land-and-livelihoods",
+  "course": "geography-foundations",
+  "no": 10,
+  "version": 1,
+  "king": {
+    "en": "Connect land and livelihoods",
+    "as": "ভূমি আৰু জীৱিকা সংযোগ কৰা"
+  },
+  "reign": {
+    "en": "Connect land and livelihoods",
+    "as": "ভূমি আৰু জীৱিকা সংযোগ কৰা"
+  },
+  "portrait": "gf-10-land-and-livelihoods/cover.webp",
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II",
+      "url": "https://ncert.nic.in/textbook.php?jess1=1-1",
+      "used_for": "Soil, contour farming and agriculture."
+    },
+    {
+      "title": "NCERT India Physical Environment",
+      "url": "https://ncert.nic.in/textbook.php?kegy1=1-7",
+      "used_for": "Relief, climate and natural vegetation chapters."
+    },
+    {
+      "title": "Agricultural Statistics at a Glance 2024–25",
+      "url": "https://desagri.gov.in/document-report-category/agriculture-statistics-at-a-glance/",
+      "used_for": "Key Agricultural Statistics at a Glance, All India, foodgrain production row 13(a) and (b)."
+    },
+    {
+      "title": "Census Population Finder 2011",
+      "url": "https://censusindia.gov.in/census.website/en/data/population-finder",
+      "used_for": "Population data vintage and comparison context. Numeric village comparison is synthetic."
+    }
+  ],
+  "review_notes": "Bilingual terminology and clarity pass completed. Independent Assamese editorial review pending. Teaching diagrams are schematic.",
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Field atlas",
+      "as": "ভূগোলৰ মানচিত্ৰ"
+    },
+    "title": {
+      "en": "Connect land and livelihoods",
+      "as": "ভূমি আৰু জীৱিকা সংযোগ কৰা"
+    },
+    "hook": {
+      "en": "What can soil, water and routes tell you about how people use land?",
+      "as": "মাটি, পানী আৰু পথে মানুহে ভূমি কেনেকৈ ব্যৱহাৰ কৰে বুজাব পাৰেনে?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Read the soil clues",
+        "as": "মাটিৰ সংকেত পঢ়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Alluvial soil develops in material deposited by rivers, including deposits in the northern plains.",
+          "as": "নদীয়ে জমা কৰা পদাৰ্থত পলসুৱা মাটি গঢ়ে। উত্তৰৰ সমভূমিতো এনে পলস আছে।"
+        },
+        {
+          "en": "Black soils are common in parts of the Deccan. They are often clay-rich and retain moisture.",
+          "as": "দাক্ষিণাত্যৰ কিছু অংশত ক’লা মাটি সাধাৰণ। এই মাটিত প্ৰায়ে বোকামাটিৰ কণা বেছি আৰু ই আৰ্দ্ৰতা ধৰি ৰাখে।"
+        },
+        {
+          "en": "Contour farming can slow water flowing downhill and reduce soil erosion.",
+          "as": "সমোচ্চ ৰেখা অনুসৰি খেতি কৰিলে ঢালৰ পানী লাহে যায় আৰু মাটিৰ ক্ষয় কমিব পাৰে।"
+        },
+        {
+          "en": "Soil properties vary. Compare texture, water and local conditions before drawing a crop conclusion.",
+          "as": "মাটিৰ গুণ বেলেগ বেলেগ। শস্যৰ সিদ্ধান্তৰ আগতে মাটিৰ গঠন, পানী আৰু স্থানীয় অৱস্থা তুলনা কৰা।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the soil clues",
+            "as": "মাটিৰ সংকেত পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Alluvial soil develops in material deposited by rivers, including deposits in the northern plains.",
+              "as": "নদীয়ে জমা কৰা পদাৰ্থত পলসুৱা মাটি গঢ়ে। উত্তৰৰ সমভূমিতো এনে পলস আছে।"
+            },
+            {
+              "en": "Black soils are common in parts of the Deccan. They are often clay-rich and retain moisture.",
+              "as": "দাক্ষিণাত্যৰ কিছু অংশত ক’লা মাটি সাধাৰণ। এই মাটিত প্ৰায়ে বোকামাটিৰ কণা বেছি আৰু ই আৰ্দ্ৰতা ধৰি ৰাখে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Alluvial · river deposits",
+                "as": "পলসুৱা · নদীৰ পলস"
+              },
+              {
+                "en": "Black · often clay-rich",
+                "as": "ক’লা · প্ৰায়ে বোকামাটি বেছি"
+              }
+            ]
+          },
+          "id": "gf-10-land-and-livelihoods.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Contour farming can slow water flowing downhill and reduce soil erosion.",
+              "as": "সমোচ্চ ৰেখা অনুসৰি খেতি কৰিলে ঢালৰ পানী লাহে যায় আৰু মাটিৰ ক্ষয় কমিব পাৰে।"
+            },
+            {
+              "en": "Soil properties vary. Compare texture, water and local conditions before drawing a crop conclusion.",
+              "as": "মাটিৰ গুণ বেলেগ বেলেগ। শস্যৰ সিদ্ধান্তৰ আগতে মাটিৰ গঠন, পানী আৰু স্থানীয় অৱস্থা তুলনা কৰা।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Black · often clay-rich",
+                "as": "ক’লা · প্ৰায়ে বোকামাটি বেছি"
+              },
+              {
+                "en": "Alluvial · river deposits",
+                "as": "পলসুৱা · নদীৰ পলস"
+              }
+            ]
+          },
+          "id": "gf-10-land-and-livelihoods.u1.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Black soils are common in parts of the Deccan. They are often clay-rich and retain moisture.",
+            "as": "দাক্ষিণাত্যৰ কিছু অংশত ক’লা মাটি সাধাৰণ। এই মাটিত প্ৰায়ে বোকামাটিৰ কণা বেছি আৰু ই আৰ্দ্ৰতা ধৰি ৰাখে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Alluvial soil example",
+                "as": "পলসুৱা মাটিৰ উদাহৰণ"
+              },
+              {
+                "en": "River deposits",
+                "as": "নদীৰ পলস"
+              }
+            ],
+            [
+              {
+                "en": "Black soil example",
+                "as": "ক’লা মাটিৰ উদাহৰণ"
+              },
+              {
+                "en": "Parts of the Deccan",
+                "as": "দাক্ষিণাত্যৰ কিছু অংশ"
+              }
+            ]
+          ],
+          "id": "gf-10-land-and-livelihoods.u1.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Soil properties vary. Compare texture, water and local conditions before drawing a crop conclusion.",
+            "as": "মাটিৰ গুণ বেলেগ বেলেগ। শস্যৰ সিদ্ধান্তৰ আগতে মাটিৰ গঠন, পানী আৰু স্থানীয় অৱস্থা তুলনা কৰা।"
+          },
+          "s": {
+            "en": "Soil colour alone determines what can be grown.",
+            "as": "কেৱল মাটিৰ ৰঙে কি শস্য গজিব নিৰ্ধাৰণ কৰে।"
+          },
+          "answer": false,
+          "id": "gf-10-land-and-livelihoods.u1.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Contour farming can slow water flowing downhill and reduce soil erosion.",
+            "as": "সমোচ্চ ৰেখা অনুসৰি খেতি কৰিলে ঢালৰ পানী লাহে যায় আৰু মাটিৰ ক্ষয় কমিব পাৰে।"
+          },
+          "before": {
+            "en": "Ploughing along contour lines can help slow ",
+            "as": "সমোচ্চ ৰেখা অনুসৰি হাল বালে লাহে যাব পাৰে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Earth’s rotation",
+              "as": "পৃথিৱীৰ আৱৰ্তন"
+            },
+            {
+              "en": "downhill runoff",
+              "as": "ঢালৰ বৈ অহা পানী"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-10-land-and-livelihoods.u1.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Alluvial soil develops in material deposited by rivers, including deposits in the northern plains.",
+            "as": "নদীয়ে জমা কৰা পদাৰ্থত পলসুৱা মাটি গঢ়ে। উত্তৰৰ সমভূমিতো এনে পলস আছে।"
+          },
+          "q": {
+            "en": "Which soil is directly linked to river deposits in this comparison?",
+            "as": "এই তুলনাত কোন মাটি পোনে পোনে নদীৰ পলসৰ লগত জড়িত?"
+          },
+          "options": [
+            {
+              "en": "Alluvial",
+              "as": "পলসুৱা"
+            },
+            {
+              "en": "Black soil in the Deccan",
+              "as": "দাক্ষিণাত্যৰ ক’লা মাটি"
+            },
+            {
+              "en": "Rock before soil forms",
+              "as": "মাটি হোৱাৰ আগৰ শিল"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-10-land-and-livelihoods.u1.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Contour farming can slow water flowing downhill and reduce soil erosion.",
+            "as": "সমোচ্চ ৰেখা অনুসৰি খেতি কৰিলে ঢালৰ পানী লাহে যায় আৰু মাটিৰ ক্ষয় কমিব পাৰে।"
+          },
+          "q": {
+            "en": "Trace a soil conservation decision.",
+            "as": "মাটি সংৰক্ষণৰ সিদ্ধান্ত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Read the slope",
+              "as": "ঢাল পঢ়া"
+            },
+            {
+              "en": "Identify the direction of runoff",
+              "as": "পানীৰ দিশ চিনা"
+            },
+            {
+              "en": "Choose rows along contours",
+              "as": "সমোচ্চ ৰেখা অনুসৰি শাৰী বাছা"
+            }
+          ],
+          "id": "gf-10-land-and-livelihoods.u1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish soil examples and choose a way to reduce erosion.",
+          "as": "মাটিৰ উদাহৰণ পৃথক কৰি ক্ষয় কমোৱাৰ উপায় বাছা।"
+        },
+        "result": {
+          "en": "Soil properties vary. Compare texture, water and local conditions before drawing a crop conclusion.",
+          "as": "মাটিৰ গুণ বেলেগ বেলেগ। শস্যৰ সিদ্ধান্তৰ আগতে মাটিৰ গঠন, পানী আৰু স্থানীয় অৱস্থা তুলনা কৰা।"
+        }
+      }
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "From wet forest to thorn scrub",
+        "as": "সেমেকা অৰণ্যৰ পৰা কাঁইটীয়া জোপোহালৈ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Tropical evergreen forests occur in some of India’s very wet regions.",
+          "as": "ভাৰতৰ অতি সেমেকা কিছুমান অঞ্চলত গ্ৰীষ্মমণ্ডলীয় চিৰসেউজ অৰণ্য আছে।"
+        },
+        {
+          "en": "Many deciduous trees shed leaves during a dry season. Thorn scrub can occur under drier conditions.",
+          "as": "বহু পৰ্ণপাতী গছে শুকান ঋতুত পাত সৰায়। অধিক শুকান পৰিৱেশত কাঁইটীয়া জোপোহা হ’ব পাৰে।"
+        },
+        {
+          "en": "Mangroves grow in suitable tidal coastal settings, including some deltas.",
+          "as": "কিছুমান বদ্বীপকে ধৰি জোৱাৰ-ভাটা হোৱা উপযুক্ত উপকূলত মেংগ্ৰোভ গজে।"
+        },
+        {
+          "en": "Rainfall and habitat clues help explain vegetation patterns, alongside soil and human land use.",
+          "as": "মাটি আৰু মানুহৰ ভূমি ব্যৱহাৰৰ লগতে বৰষুণ আৰু বাসস্থানৰ সংকেতে উদ্ভিদৰ ধাৰা বুজোৱাত সহায় কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "From wet forest to thorn scrub",
+            "as": "সেমেকা অৰণ্যৰ পৰা কাঁইটীয়া জোপোহালৈ"
+          },
+          "text": [
+            {
+              "en": "Tropical evergreen forests occur in some of India’s very wet regions.",
+              "as": "ভাৰতৰ অতি সেমেকা কিছুমান অঞ্চলত গ্ৰীষ্মমণ্ডলীয় চিৰসেউজ অৰণ্য আছে।"
+            },
+            {
+              "en": "Many deciduous trees shed leaves during a dry season. Thorn scrub can occur under drier conditions.",
+              "as": "বহু পৰ্ণপাতী গছে শুকান ঋতুত পাত সৰায়। অধিক শুকান পৰিৱেশত কাঁইটীয়া জোপোহা হ’ব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Wet region · evergreen example",
+                "as": "সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ"
+              },
+              {
+                "en": "Dry region · thorn example",
+                "as": "শুকান অঞ্চল · কাঁইটীয়া উদাহৰণ"
+              },
+              {
+                "en": "Tidal coast · mangroves",
+                "as": "জোৱাৰ-ভাটাৰ উপকূল · মেংগ্ৰোভ"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-10-land-and-livelihoods.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Mangroves grow in suitable tidal coastal settings, including some deltas.",
+              "as": "কিছুমান বদ্বীপকে ধৰি জোৱাৰ-ভাটা হোৱা উপযুক্ত উপকূলত মেংগ্ৰোভ গজে।"
+            },
+            {
+              "en": "Rainfall and habitat clues help explain vegetation patterns, alongside soil and human land use.",
+              "as": "মাটি আৰু মানুহৰ ভূমি ব্যৱহাৰৰ লগতে বৰষুণ আৰু বাসস্থানৰ সংকেতে উদ্ভিদৰ ধাৰা বুজোৱাত সহায় কৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Tidal coast · mangroves",
+                "as": "জোৱাৰ-ভাটাৰ উপকূল · মেংগ্ৰোভ"
+              },
+              {
+                "en": "Dry region · thorn example",
+                "as": "শুকান অঞ্চল · কাঁইটীয়া উদাহৰণ"
+              },
+              {
+                "en": "Wet region · evergreen example",
+                "as": "সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ"
+              }
+            ]
+          },
+          "id": "gf-10-land-and-livelihoods.u2.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Mangroves grow in suitable tidal coastal settings, including some deltas.",
+            "as": "কিছুমান বদ্বীপকে ধৰি জোৱাৰ-ভাটা হোৱা উপযুক্ত উপকূলত মেংগ্ৰোভ গজে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Evergreen forest example",
+                "as": "চিৰসেউজ অৰণ্যৰ উদাহৰণ"
+              },
+              {
+                "en": "Very wet region",
+                "as": "অতি সেমেকা অঞ্চল"
+              }
+            ],
+            [
+              {
+                "en": "Mangrove example",
+                "as": "মেংগ্ৰোভৰ উদাহৰণ"
+              },
+              {
+                "en": "Suitable tidal coast",
+                "as": "উপযুক্ত জোৱাৰ-ভাটাৰ উপকূল"
+              }
+            ]
+          ],
+          "id": "gf-10-land-and-livelihoods.u2.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Rainfall and habitat clues help explain vegetation patterns, alongside soil and human land use.",
+            "as": "মাটি আৰু মানুহৰ ভূমি ব্যৱহাৰৰ লগতে বৰষুণ আৰু বাসস্থানৰ সংকেতে উদ্ভিদৰ ধাৰা বুজোৱাত সহায় কৰে।"
+          },
+          "s": {
+            "en": "Every place with the same rainfall must have the same vegetation.",
+            "as": "একে বৰষুণ হোৱা সকলো ঠাইৰ উদ্ভিদ একে হ’বই লাগিব।"
+          },
+          "answer": false,
+          "id": "gf-10-land-and-livelihoods.u2.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Many deciduous trees shed leaves during a dry season. Thorn scrub can occur under drier conditions.",
+            "as": "বহু পৰ্ণপাতী গছে শুকান ঋতুত পাত সৰায়। অধিক শুকান পৰিৱেশত কাঁইটীয়া জোপোহা হ’ব পাৰে।"
+          },
+          "before": {
+            "en": "A tree that sheds leaves seasonally can be described as ",
+            "as": "ঋতু অনুসৰি পাত সৰা গছক ক’ব পাৰি "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "deciduous",
+              "as": "পৰ্ণপাতী"
+            },
+            {
+              "en": "mangrove solely because it sheds leaves",
+              "as": "পাত সৰা বাবেই মেংগ্ৰোভ"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-10-land-and-livelihoods.u2.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Mangroves grow in suitable tidal coastal settings, including some deltas.",
+            "as": "কিছুমান বদ্বীপকে ধৰি জোৱাৰ-ভাটা হোৱা উপযুক্ত উপকূলত মেংগ্ৰোভ গজে।"
+          },
+          "q": {
+            "en": "Which clue best supports a mangrove habitat?",
+            "as": "কোন সংকেতে মেংগ্ৰোভৰ বাসস্থান দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Dry inland dune",
+              "as": "শুকান ভিতৰুৱা বালিৰ ঢাপ"
+            },
+            {
+              "en": "Snow-covered ridge",
+              "as": "তুষাৰঢকা শিৰ"
+            },
+            {
+              "en": "Tidal coastal mud",
+              "as": "জোৱাৰ-ভাটাৰ উপকূলীয় বোকা"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-10-land-and-livelihoods.u2.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Many deciduous trees shed leaves during a dry season. Thorn scrub can occur under drier conditions.",
+            "as": "বহু পৰ্ণপাতী গছে শুকান ঋতুত পাত সৰায়। অধিক শুকান পৰিৱেশত কাঁইটীয়া জোপোহা হ’ব পাৰে।"
+          },
+          "q": {
+            "en": "Order the comparison from wet to drier terrestrial examples.",
+            "as": "সেমেকাৰ পৰা অধিক শুকান স্থল উদাহৰণ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Very wet evergreen example",
+              "as": "অতি সেমেকা চিৰসেউজ উদাহৰণ"
+            },
+            {
+              "en": "Seasonally dry deciduous example",
+              "as": "ঋতুভেদে শুকান পৰ্ণপাতী উদাহৰণ"
+            },
+            {
+              "en": "Drier thorn scrub example",
+              "as": "অধিক শুকান কাঁইটীয়া জোপোহা"
+            }
+          ],
+          "id": "gf-10-land-and-livelihoods.u2.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use water and habitat clues to compare vegetation.",
+          "as": "পানী আৰু বাসস্থানৰ সংকেতেৰে উদ্ভিদ তুলনা কৰা।"
+        },
+        "result": {
+          "en": "Rainfall and habitat clues help explain vegetation patterns, alongside soil and human land use.",
+          "as": "মাটি আৰু মানুহৰ ভূমি ব্যৱহাৰৰ লগতে বৰষুণ আৰু বাসস্থানৰ সংকেতে উদ্ভিদৰ ধাৰা বুজোৱাত সহায় কৰে।"
+        }
+      }
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Read a crop table",
+        "as": "শস্যৰ তালিকা পঢ়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Kharif crops are generally sown with the monsoon. Rabi crops are generally sown in the cooler season.",
+          "as": "খাৰিফ শস্য সাধাৰণতে মৌচুমীৰ লগত সিঁচা হয়। ৰবি শস্য সাধাৰণতে শীতল ঋতুত সিঁচা হয়।"
+        },
+        {
+          "en": "Rice is a common kharif example and wheat a common rabi example. Some crops are grown in other seasons too.",
+          "as": "ধান খাৰিফৰ আৰু ঘেঁহু ৰবিৰ এটা সাধাৰণ উদাহৰণ। কিছুমান শস্য আন ঋতুতো খেতি কৰা হয়।"
+        },
+        {
+          "en": "Rainfall, soil, irrigation and local choices can affect which crop is grown.",
+          "as": "বৰষুণ, মাটি, জলসিঞ্চন আৰু স্থানীয় বাছনিয়ে শস্যত প্ৰভাৱ পেলায়।"
+        },
+        {
+          "en": "The 2024–25 national table reports 169.46 million tonnes of kharif foodgrains and 169.17 million tonnes of rabi foodgrains.",
+          "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Read a crop table",
+            "as": "শস্যৰ তালিকা পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Kharif crops are generally sown with the monsoon. Rabi crops are generally sown in the cooler season.",
+              "as": "খাৰিফ শস্য সাধাৰণতে মৌচুমীৰ লগত সিঁচা হয়। ৰবি শস্য সাধাৰণতে শীতল ঋতুত সিঁচা হয়।"
+            },
+            {
+              "en": "Rice is a common kharif example and wheat a common rabi example. Some crops are grown in other seasons too.",
+              "as": "ধান খাৰিফৰ আৰু ঘেঁহু ৰবিৰ এটা সাধাৰণ উদাহৰণ। কিছুমান শস্য আন ঋতুতো খেতি কৰা হয়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Kharif foodgrains · 169.46 million tonnes",
+                "as": "খাৰিফ খাদ্যশস্য · ১৬৯.৪৬ নিযুত টন"
+              },
+              {
+                "en": "Rabi foodgrains · 169.17 million tonnes",
+                "as": "ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-10-land-and-livelihoods.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Rainfall, soil, irrigation and local choices can affect which crop is grown.",
+              "as": "বৰষুণ, মাটি, জলসিঞ্চন আৰু স্থানীয় বাছনিয়ে শস্যত প্ৰভাৱ পেলায়।"
+            },
+            {
+              "en": "The 2024–25 national table reports 169.46 million tonnes of kharif foodgrains and 169.17 million tonnes of rabi foodgrains.",
+              "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Rabi foodgrains · 169.17 million tonnes",
+                "as": "ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন"
+              },
+              {
+                "en": "Kharif foodgrains · 169.46 million tonnes",
+                "as": "খাৰিফ খাদ্যশস্য · ১৬৯.৪৬ নিযুত টন"
+              }
+            ]
+          },
+          "id": "gf-10-land-and-livelihoods.u3.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Rice is a common kharif example and wheat a common rabi example. Some crops are grown in other seasons too.",
+            "as": "ধান খাৰিফৰ আৰু ঘেঁহু ৰবিৰ এটা সাধাৰণ উদাহৰণ। কিছুমান শস্য আন ঋতুতো খেতি কৰা হয়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Kharif example",
+                "as": "খাৰিফৰ উদাহৰণ"
+              },
+              {
+                "en": "Rice",
+                "as": "ধান"
+              }
+            ],
+            [
+              {
+                "en": "Rabi example",
+                "as": "ৰবিৰ উদাহৰণ"
+              },
+              {
+                "en": "Wheat",
+                "as": "ঘেঁহু"
+              }
+            ]
+          ],
+          "id": "gf-10-land-and-livelihoods.u3.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Rainfall, soil, irrigation and local choices can affect which crop is grown.",
+            "as": "বৰষুণ, মাটি, জলসিঞ্চন আৰু স্থানীয় বাছনিয়ে শস্যত প্ৰভাৱ পেলায়।"
+          },
+          "s": {
+            "en": "Rainfall is the only factor affecting crop choice.",
+            "as": "বৰষুণেই শস্য বাছনিৰ একমাত্ৰ কাৰক।"
+          },
+          "answer": false,
+          "id": "gf-10-land-and-livelihoods.u3.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "The 2024–25 national table reports 169.46 million tonnes of kharif foodgrains and 169.17 million tonnes of rabi foodgrains.",
+            "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
+          },
+          "before": {
+            "en": "The unit in the displayed foodgrain table is ",
+            "as": "দেখুওৱা খাদ্যশস্য তালিকাৰ একক "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "million hectares",
+              "as": "নিযুত হেক্টৰ"
+            },
+            {
+              "en": "million tonnes",
+              "as": "নিযুত টন"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-10-land-and-livelihoods.u3.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The 2024–25 national table reports 169.46 million tonnes of kharif foodgrains and 169.17 million tonnes of rabi foodgrains.",
+            "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
+          },
+          "q": {
+            "en": "Which category in the table has the slightly larger figure?",
+            "as": "তালিকাৰ কোন গোটৰ সংখ্যা অলপ বেছি?"
+          },
+          "options": [
+            {
+              "en": "Kharif foodgrains",
+              "as": "খাৰিফ খাদ্যশস্য"
+            },
+            {
+              "en": "Rabi foodgrains",
+              "as": "ৰবি খাদ্যশস্য"
+            },
+            {
+              "en": "Both exactly equal",
+              "as": "দুয়ো একেবাৰে সমান"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-10-land-and-livelihoods.u3.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "The 2024–25 national table reports 169.46 million tonnes of kharif foodgrains and 169.17 million tonnes of rabi foodgrains.",
+            "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
+          },
+          "q": {
+            "en": "Read the table before comparing the seasons.",
+            "as": "ঋতু তুলনা কৰাৰ আগতে তালিকা পঢ়া।"
+          },
+          "items": [
+            {
+              "en": "Check reference year",
+              "as": "তথ্যৰ বছৰ চোৱা"
+            },
+            {
+              "en": "Check metric and unit",
+              "as": "জোখ আৰু একক চোৱা"
+            },
+            {
+              "en": "Compare rows",
+              "as": "শাৰী তুলনা কৰা"
+            }
+          ],
+          "id": "gf-10-land-and-livelihoods.u3.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Link the seasons to water and interpret official figures.",
+          "as": "ঋতুক পানীৰ সৈতে মিলাই চৰকাৰী সংখ্যা বুজা।"
+        },
+        "result": {
+          "en": "The 2024–25 national table reports 169.46 million tonnes of kharif foodgrains and 169.17 million tonnes of rabi foodgrains.",
+          "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
+        }
+      }
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Where people settle",
+        "as": "মানুহ ক’ত বসতি কৰে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Population density compares population with area, often as people per square kilometre.",
+          "as": "জনঘনত্বই জনসংখ্যা আৰু ক্ষেত্ৰফলৰ তুলনা কৰে। প্ৰায়ে প্ৰতি বৰ্গ কিলোমিটাৰত মানুহৰ সংখ্যা দিয়া হয়।"
+        },
+        {
+          "en": "Two places with the same population can have different densities if their areas differ.",
+          "as": "একে জনসংখ্যাৰ দুটা ঠাইৰ ক্ষেত্ৰফল বেলেগ হ’লে জনঘনত্ব বেলেগ হ’ব পাৰে।"
+        },
+        {
+          "en": "Use a census table and map from compatible dates when comparing real places.",
+          "as": "প্ৰকৃত ঠাই তুলনা কৰিলে মিল থকা তাৰিখৰ লোকপিয়ল তালিকা আৰু মানচিত্ৰ ব্যৱহাৰ কৰা।"
+        },
+        {
+          "en": "Roads and crossings can help explain settlement patterns. Terrain and flood exposure supply additional clues.",
+          "as": "ৰাস্তা আৰু পাৰাপাৰে বসতিৰ ধাৰা বুজোৱাত সহায় কৰে। ভূমি আৰু বানৰ উন্মুক্ততাই অতিৰিক্ত সংকেত দিয়ে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Where people settle",
+            "as": "মানুহ ক’ত বসতি কৰে"
+          },
+          "text": [
+            {
+              "en": "Population density compares population with area, often as people per square kilometre.",
+              "as": "জনঘনত্বই জনসংখ্যা আৰু ক্ষেত্ৰফলৰ তুলনা কৰে। প্ৰায়ে প্ৰতি বৰ্গ কিলোমিটাৰত মানুহৰ সংখ্যা দিয়া হয়।"
+            },
+            {
+              "en": "Two places with the same population can have different densities if their areas differ.",
+              "as": "একে জনসংখ্যাৰ দুটা ঠাইৰ ক্ষেত্ৰফল বেলেগ হ’লে জনঘনত্ব বেলেগ হ’ব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Density · people ÷ area",
+                "as": "জনঘনত্ব · মানুহ ÷ ক্ষেত্ৰফল"
+              },
+              {
+                "en": "Settlement · routes and terrain",
+                "as": "বসতি · পথ আৰু ভূমি"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-10-land-and-livelihoods.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Use a census table and map from compatible dates when comparing real places.",
+              "as": "প্ৰকৃত ঠাই তুলনা কৰিলে মিল থকা তাৰিখৰ লোকপিয়ল তালিকা আৰু মানচিত্ৰ ব্যৱহাৰ কৰা।"
+            },
+            {
+              "en": "Roads and crossings can help explain settlement patterns. Terrain and flood exposure supply additional clues.",
+              "as": "ৰাস্তা আৰু পাৰাপাৰে বসতিৰ ধাৰা বুজোৱাত সহায় কৰে। ভূমি আৰু বানৰ উন্মুক্ততাই অতিৰিক্ত সংকেত দিয়ে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Settlement · routes and terrain",
+                "as": "বসতি · পথ আৰু ভূমি"
+              },
+              {
+                "en": "Density · people ÷ area",
+                "as": "জনঘনত্ব · মানুহ ÷ ক্ষেত্ৰফল"
+              }
+            ]
+          },
+          "id": "gf-10-land-and-livelihoods.u4.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Population density compares population with area, often as people per square kilometre.",
+            "as": "জনঘনত্বই জনসংখ্যা আৰু ক্ষেত্ৰফলৰ তুলনা কৰে। প্ৰায়ে প্ৰতি বৰ্গ কিলোমিটাৰত মানুহৰ সংখ্যা দিয়া হয়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Population total",
+                "as": "মুঠ জনসংখ্যা"
+              },
+              {
+                "en": "Number of people",
+                "as": "মানুহৰ সংখ্যা"
+              }
+            ],
+            [
+              {
+                "en": "Density",
+                "as": "জনঘনত্ব"
+              },
+              {
+                "en": "People per unit area",
+                "as": "প্ৰতি ক্ষেত্ৰফল এককত মানুহ"
+              }
+            ]
+          ],
+          "id": "gf-10-land-and-livelihoods.u4.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Two places with the same population can have different densities if their areas differ.",
+            "as": "একে জনসংখ্যাৰ দুটা ঠাইৰ ক্ষেত্ৰফল বেলেগ হ’লে জনঘনত্ব বেলেগ হ’ব পাৰে।"
+          },
+          "s": {
+            "en": "Equal populations guarantee equal densities.",
+            "as": "একে জনসংখ্যা হ’লেই জনঘনত্ব একে হয়।"
+          },
+          "answer": false,
+          "id": "gf-10-land-and-livelihoods.u4.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Two places with the same population can have different densities if their areas differ.",
+            "as": "একে জনসংখ্যাৰ দুটা ঠাইৰ ক্ষেত্ৰফল বেলেগ হ’লে জনঘনত্ব বেলেগ হ’ব পাৰে।"
+          },
+          "before": {
+            "en": "Two villages each have 1,000 people. If A covers 2 km² and B covers 4 km², the denser village is ",
+            "as": "দুয়ো গাঁৱত ১,০০০ জনকৈ মানুহ। Aৰ ক্ষেত্ৰফল ২ বৰ্গ কিমি আৰু Bৰ ৪ বৰ্গ কিমি হ’লে অধিক ঘন গাঁওখন "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-10-land-and-livelihoods.u4.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Roads and crossings can help explain settlement patterns. Terrain and flood exposure supply additional clues.",
+            "as": "ৰাস্তা আৰু পাৰাপাৰে বসতিৰ ধাৰা বুজোৱাত সহায় কৰে। ভূমি আৰু বানৰ উন্মুক্ততাই অতিৰিক্ত সংকেত দিয়ে।"
+          },
+          "q": {
+            "en": "Which layer adds independent evidence to a road map when explaining settlement?",
+            "as": "ৰাস্তাৰ মানচিত্ৰৰ লগতে বসতি বুজাবলৈ কোনটো স্তৰে পৃথক প্ৰমাণ দিয়ে?"
+          },
+          "options": [
+            {
+              "en": "A duplicate road map",
+              "as": "ৰাস্তাৰ একে মানচিত্ৰ"
+            },
+            {
+              "en": "A list of road spellings",
+              "as": "ৰাস্তাৰ বানানৰ তালিকা"
+            },
+            {
+              "en": "Terrain and flood exposure",
+              "as": "ভূমি আৰু বানৰ উন্মুক্ততা"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-10-land-and-livelihoods.u4.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Use a census table and map from compatible dates when comparing real places.",
+            "as": "প্ৰকৃত ঠাই তুলনা কৰিলে মিল থকা তাৰিখৰ লোকপিয়ল তালিকা আৰু মানচিত্ৰ ব্যৱহাৰ কৰা।"
+          },
+          "q": {
+            "en": "Compare two places from a dated population map.",
+            "as": "তাৰিখযুক্ত জনসংখ্যা মানচিত্ৰৰ পৰা দুটা ঠাই তুলনা কৰা।"
+          },
+          "items": [
+            {
+              "en": "Check the map and data year",
+              "as": "মানচিত্ৰ আৰু তথ্যৰ বছৰ চোৱা"
+            },
+            {
+              "en": "Read the density legend",
+              "as": "জনঘনত্বৰ সূচক পঢ়া"
+            },
+            {
+              "en": "Compare the areas",
+              "as": "অঞ্চলবোৰ তুলনা কৰা"
+            }
+          ],
+          "id": "gf-10-land-and-livelihoods.u4.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Compare density and explain a settlement pattern using more than one clue.",
+          "as": "জনঘনত্ব তুলনা কৰি একাধিক সংকেতেৰে বসতিৰ ধাৰা বুজোৱা।"
+        },
+        "result": {
+          "en": "Roads and crossings can help explain settlement patterns. Terrain and flood exposure supply additional clues.",
+          "as": "ৰাস্তা আৰু পাৰাপাৰে বসতিৰ ধাৰা বুজোৱাত সহায় কৰে। ভূমি আৰু বানৰ উন্মুক্ততাই অতিৰিক্ত সংকেত দিয়ে।"
+        }
+      }
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "match",
+        "why": {
+          "en": "These describe two broad Indian soil examples.",
+          "as": "এইবোৰ ভাৰতৰ মাটিৰ দুটা বহল উদাহৰণ।"
+        },
+        "pairs": [
+          [
+            {
+              "en": "River-deposited parent material",
+              "as": "নদীয়ে জমা কৰা মূল পদাৰ্থ"
+            },
+            {
+              "en": "Alluvial soil example",
+              "as": "পলসুৱা মাটিৰ উদাহৰণ"
+            }
+          ],
+          [
+            {
+              "en": "Clay-rich Deccan example",
+              "as": "দাক্ষিণাত্যৰ বোকামাটি বেছি উদাহৰণ"
+            },
+            {
+              "en": "Black soil example",
+              "as": "ক’লা মাটিৰ উদাহৰণ"
+            }
+          ]
+        ],
+        "id": "gf-10-land-and-livelihoods.test.01"
+      },
+      {
+        "type": "odd",
+        "why": {
+          "en": "Mangroves are adapted to suitable tidal coasts.",
+          "as": "মেংগ্ৰোভ উপযুক্ত জোৱাৰ-ভাটাৰ উপকূলত গজে।"
+        },
+        "q": {
+          "en": "Which environment can support mangroves?",
+          "as": "কোন পৰিৱেশত মেংগ্ৰোভ হ’ব পাৰে?"
+        },
+        "options": [
+          {
+            "en": "Inland sand dune",
+            "as": "ভিতৰুৱা বালিৰ ঢাপ"
+          },
+          {
+            "en": "Tidal delta shore",
+            "as": "জোৱাৰ-ভাটা হোৱা বদ্বীপৰ কাষ"
+          },
+          {
+            "en": "High snowfield",
+            "as": "ওখ তুষাৰক্ষেত্ৰ"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-10-land-and-livelihoods.test.02"
+      },
+      {
+        "type": "tf",
+        "why": {
+          "en": "Tonnes measure mass. Hectares measure area.",
+          "as": "টনে ভৰ জোখে। হেক্টৰে ক্ষেত্ৰফল জোখে।"
+        },
+        "s": {
+          "en": "A table labelled tonnes measures crop area.",
+          "as": "টন বুলি দিয়া তালিকাই শস্যৰ ক্ষেত্ৰফল জোখে।"
+        },
+        "answer": false,
+        "id": "gf-10-land-and-livelihoods.test.03"
+      },
+      {
+        "type": "inline",
+        "why": {
+          "en": "Divide 4,000 by 20.",
+          "as": "৪,০০০ক ২০ৰে ভাগ কৰা।"
+        },
+        "before": {
+          "en": "A district with 4,000 people across 20 km² has a density of ",
+          "as": "২০ বৰ্গ কিমিৰ জিলাত ৪,০০০ জন থাকিলে জনঘনত্ব "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "20 people per km²",
+            "as": "প্ৰতি বৰ্গ কিমিত ২০ জন"
+          },
+          {
+            "en": "200 people per km²",
+            "as": "প্ৰতি বৰ্গ কিমিত ২০০ জন"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-10-land-and-livelihoods.test.04"
+      },
+      {
+        "type": "order",
+        "why": {
+          "en": "Road access and flood exposure are independent clues.",
+          "as": "যাতায়াত আৰু বানৰ উন্মুক্ততা পৃথক সংকেত।"
+        },
+        "q": {
+          "en": "Explain whether a settlement route crosses a hazard area.",
+          "as": "বসতিৰ পথ বিপদ অঞ্চল পাৰ হয় নে বুজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Locate the road",
+            "as": "ৰাস্তা বিচাৰা"
+          },
+          {
+            "en": "Read the flood layer",
+            "as": "বান স্তৰ পঢ়া"
+          },
+          {
+            "en": "Check overlap",
+            "as": "ওপৰা-ওপৰি চোৱা"
+          }
+        ],
+        "id": "gf-10-land-and-livelihoods.test.05"
+      }
+    ],
+    "mission": {
+      "objective": {
+        "en": "What can soil, water and routes tell you about how people use land?",
+        "as": "মাটি, পানী আৰু পথে মানুহে ভূমি কেনেকৈ ব্যৱহাৰ কৰে বুজাব পাৰেনে?"
+      },
+      "result": {
+        "en": "You can read the evidence from a new view.",
+        "as": "তুমি নতুন চিত্ৰৰ পৰা প্ৰমাণ পঢ়িব পাৰা।"
+      }
+    }
+  }
+}
