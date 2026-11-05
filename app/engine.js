@@ -32,9 +32,9 @@ const TR = (o) => (o == null ? "" : typeof o === "string" ? o : `<span class="en
 /* ---------- loading ---------- */
 async function load() {
   try {
-    const [entities, basemap, manifest] = await Promise.all([AXOM.getJSON("content/entities.json"), AXOM.getJSON("content/maps/assam.json"), AXOM.getJSON("content/manifest.json")]);
+    const [entities, basemap, manifest, india] = await Promise.all([AXOM.getJSON("content/entities.json"), AXOM.getJSON("content/maps/assam.json"), AXOM.getJSON("content/manifest.json"), AXOM.getJSON("content/maps/india.json").catch(() => null)]);
     REFERENCE_LESSONS = manifest.lessons;
-    ENT = entities; BASE = basemap;
+    ENT = entities; BASES = { assam: basemap, india: india || basemap };
     if (params.has("review")) return boot(await buildReview(), "review");
     if (params.get("checkpoint")) { CID = (params.get("course") || "ahom-kings").replace(/[^a-z0-9-]/g, ""); if (!manifest.courses.some(c=>c.id===CID)) CID = manifest.courseRedirects?.[CID] || CID; return boot(await buildCheckpoint(params.get("checkpoint").replace(/[^a-z-]/g, "")), "checkpoint"); }
     if (params.get("jump")) { const t = params.get("jump").replace(/[^a-z0-9-]/g, ""); CID = ((await AXOM.getJSON("content/manifest.json")).lessons[t] || {}).course || "ahom-kings"; return boot(await buildJump(t), "jump"); }
@@ -128,7 +128,7 @@ async function buildCheckpoint(eraId) {
 }
 
 /* ---------- base map (real district + river shapes from the KMZ) ---------- */
-let BASE = { districts: {}, rivers: {}, ridges: {} };
+let BASES = { assam: { districts: {}, rivers: {}, ridges: {} } };
 function smoothPath(pts) {
   if (pts.length < 3) return `M${pts.map((p) => p.join(" ")).join(" L")}`;
   let d = `M${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
@@ -139,8 +139,9 @@ function smoothPath(pts) {
   const l = pts[pts.length - 1];
   return d + ` L${l[0].toFixed(1)} ${l[1].toFixed(1)}`;
 }
-// spec: { box: [lonMin, latMin, lonMax, latMax], show: [ids], routes: [[id or [lat,lon], ...]], texts: [{ t, at }], labels: { id: { pos, at, t } } }
+// spec: { base: "assam" or "india" (default assam), box: [lonMin, latMin, lonMax, latMax], show: [ids], routes: [[id or [lat,lon], ...]], texts: [{ t, at }], labels: { id: { pos, at, t } } }
 function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
+  const BASE = BASES[spec.base] || BASES.assam;
   const [lonMin, latMin, lonMax, latMax] = spec.box;
   const c = Math.cos(((latMin + latMax) / 2) * Math.PI / 180), k = 340 / ((lonMax - lonMin) * c);
   const W = 340, H = Math.round((latMax - latMin) * k);
@@ -162,6 +163,10 @@ function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
   };
   let out = `<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="Map"><defs><marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--terra)"/></marker><clipPath id="mapclip"><rect width="${W}" height="${H}" rx="18"/></clipPath></defs><g clip-path="url(#mapclip)"><rect class="sea" width="${W}" height="${H}"/>`;
   // present-day districts: always drawn faintly; a lesson can name some (spec.districts) to help place the story today
+  const ringPath = (r, cls) => `<path class="${cls}" d="M${r.map((p) => P(p).map((v) => v.toFixed(1)).join(" ")).join(" L")} Z"/>`;
+  // neighbours first, so India's own outline is what shows along its border
+  (BASE.land || []).forEach((r) => (out += ringPath(r, "neighbour")));
+  (BASE.outline || []).forEach((r) => (out += ringPath(r, "outline")));
   const named = new Set(spec.districts || []);
   Object.entries(BASE.districts).forEach(([id, d]) => d.rings.forEach((r) => (out += `<path class="district${named.has(id) ? " named" : ""}" d="M${r.map((p) => P(p).map((v) => v.toFixed(1)).join(" ")).join(" L")} Z"/>`)));
   const dlabels = [...named].filter((id) => BASE.districts[id]).map((id) => {
@@ -196,7 +201,8 @@ function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
       : `<circle class="dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;
     if (story || isChoice(id) || (pass && !choices.length)) out += label(id, [x, y], "e", pass ? "place passlbl" : "place");
   });
-  return out + `</g></svg><div class="map-note">${T(B("Districts and rivers of today's Assam; places approximate", "আজিৰ অসমৰ জিলা আৰু নদী; ঠাইবোৰ আনুমানিক"))}</div>`;
+  const note = BASE.outline ? B("Today's India, not historical borders; places approximate. Outline: DataMeet, Survey of India, CC BY-SA", "আজিৰ ভাৰত, ঐতিহাসিক সীমা নহয়; ঠাইবোৰ আনুমানিক। ৰেখাচিত্ৰ: DataMeet, ভাৰতীয় জৰীপ বিভাগ, CC BY-SA") : B("Districts and rivers of today's Assam; places approximate", "আজিৰ অসমৰ জিলা আৰু নদী; ঠাইবোৰ আনুমানিক");
+  return out + `</g></svg><div class="map-note">${T(note)}</div>`;
 }
 
 /* ========================================================= */
@@ -497,7 +503,11 @@ function renderStep(animate) {
     : `<div class="kicker">${T(KICK[s.scale || s.type])}${from}${s.link && !VIRTUAL ? `<button class="linkchip" data-link>${CHAIN}${T(linkLabel(s.link))}</button>` : ""}${s.type === "whoami" ? `<span class="xp" id="who-xp"></span>` : ""}</div>`;
   const mission = L.mission && U.unit.mission && !U.practice && !U.testout && mode === "lesson"
     ? `<div class="mission-ribbon"><small>${T(L.mission.label)} · ${T(U.unit === L.test ? B("Final challenge", "শেষ প্ৰত্যাহ্বান") : B(`Finding ${L.units.indexOf(U.unit) + 1} of ${L.units.length}`, `${asNum(L.units.length)}টাৰ ${asNum(L.units.indexOf(U.unit) + 1)} নম্বৰ প্ৰমাণ`))}</small><strong>${T(U.unit.mission.objective)}</strong></div>` : "";
-  scr.innerHTML = mission + kick + RENDER[s.type](s) + (s.type === "story" && s.link ? linkCallout(s.link) : "");
+  const evidence = s.type !== "story" && s.img && s.imageCaption
+    ? `<figure class="story-visual"><div class="frame library">${picture(s.img, lessonOf(s))}</div><figcaption>${T(s.imageCaption)}
+      ${s.imageAlt ? `<details><summary>${T(B("Read the map as text", "মানচিত্ৰৰ বৰ্ণনা পঢ়া"))}</summary>${T(s.imageAlt)}</details>` : ""}</figcaption></figure>`
+    : "";
+  scr.innerHTML = mission + kick + evidence + RENDER[s.type](s) + (s.type === "story" && s.link ? linkCallout(s.link) : "");
   scr.scrollTop = 0;
   if (SETUP[s.type]) SETUP[s.type](s, scr);
   refresh();
@@ -519,6 +529,21 @@ function storyBeat() {
   held.scrollIntoView({ behavior: "smooth", block: "nearest" });
   return true;
 }
+function storyDiagram({ layout, items }) {
+  const flow = layout === "flow";
+  const list = flow ? "ol" : "ul";
+  return `<figure class="story-diagram">
+    <${list} class="story-diagram-items ${flow ? "is-flow" : ""}">${items.map((item, index) =>
+      `<li>${flow ? `<span class="story-diagram-number" aria-hidden="true">${T(B(String(index + 1), asNum(String(index + 1))))}</span>` : ""}${T(item)}</li>`
+    ).join("")}</${list}>
+  </figure>`;
+}
+const IMAGE_CREDITS = {
+  map: B("Locator map", "অৱস্থান মানচিত্ৰ"),
+  diagram: B("Schematic diagram", "আঁচনিগত চিত্ৰ"),
+  photo: B("Photograph", "আলোকচিত্ৰ"),
+  document: B("Document scan", "নথিৰ স্কেন"),
+};
 const RENDER = {
   story: (s) => {
     // Story card standard: kicker + beat dots, hero with year stamp, title, lede, then one beat per tap (see README "Story cards")
@@ -526,8 +551,9 @@ const RENDER = {
     const stamp = yr && s.img && !s.imageCaption ? `<span class="stamp">${T(B(yr, asNum(yr)))}</span>` : "";
     const memo = /^Remember\b/.test(s.title.en);
     return `<h1 class="t">${T(s.title)}</h1>
-    ${s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
+    ${s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
       : s.map ? `<figure class="frame mapframe">${mapSVG(mapOf(s), { story: true, route: s.map.route })}</figure>`
+      : s.diagram ? storyDiagram(s.diagram)
       : `<figure class="frame art${s.art === "rooster" ? " full" : ""}">${ART[s.art]}</figure>`}
     <div class="story${memo ? " memo" : ""}">${s.text.map((p, k) => `<p class="beat${k ? " later" : " lede"}${k ? " hold" : " on"}">${years(TR(p))}</p>`).join("")}
     ${s.text.length > 1 ? `<div class="more" aria-hidden="true">${T(B("Tap to read on", "পঢ়ি যাবলৈ টিপা"))}</div>` : ""}</div>`;
@@ -874,7 +900,7 @@ if (/[?&]debug\b/.test(location.search)) window.__L = { LESSON: L, run: () => U,
 function lessonFiles() {
   const files = new Set([L.portrait]);
   ALL.forEach((u) => u.steps.forEach((s) => { if (s.img) files.add(s.img); if (s.type === "picture") s.options.forEach((o) => files.add(o)); }));
-  const urls = [`content/lessons/${L.id}.json`, "content/entities.json", "content/maps/assam.json"];
+  const urls = [`content/lessons/${L.id}.json`, "content/entities.json", "content/maps/assam.json", "content/maps/india.json"];
   files.forEach((f) => { urls.push(img(f), img(f, 480)); });
   return urls.map((u) => new URL(u, location.href).href);
 }

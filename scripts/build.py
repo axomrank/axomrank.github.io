@@ -117,7 +117,18 @@ for lid, L in lessons.items():
             for k in NEED.get(s["type"], []):
                 if k not in s: err(f"{where}: '{s['type']}' needs '{k}'")
             if s["type"] == "story" and not (s.get("img") or s.get("map") or s.get("art")): err(f"{where}: story needs img, map or art")
-            if s["type"] == "story": story_rules(s, f"{where}/{sid}")
+            if s["type"] == "story":
+                story_rules(s, f"{where}/{sid}")
+                if "diagram" in s:
+                    diagram = s["diagram"]
+                    items = diagram.get("items") if isinstance(diagram, dict) else None
+                    if (not isinstance(items, list) or not 2 <= len(items) <= 4
+                            or diagram.get("layout") not in ("flow", "grid")
+                            or any(not isinstance(item, dict) or any(
+                                not isinstance(item.get(lang), str) or not item[lang].strip()
+                                for lang in ("en", "as")
+                            ) for item in items)):
+                        err(f"{where}/{sid}: diagram needs a flow or grid with 2–4 bilingual labels")
             if s.get("img"): need_img(s["img"], where)
             if s.get("imageCaption"):
                 if not s.get("img"): err(f"{where}: imageCaption needs img")
@@ -138,15 +149,20 @@ for lid, L in lessons.items():
 
 # shared names list, base map, question bank
 ENT = json.load(open("content/entities.json", encoding="utf-8"))
-BASE = json.load(open("content/maps/assam.json", encoding="utf-8"))
-base_ids = set(BASE.get("rivers", {})) | set(BASE.get("ridges", {}))
+BASES = {b: json.load(open(f"content/maps/{b}.json", encoding="utf-8")) for b in ("assam", "india")}
+BASE = BASES["assam"]
 BASE_DISTRICTS = set(BASE.get("districts", {}))
+def ids_of(mp, where):
+    b = mp.get("base", "assam")
+    if b not in BASES: err(f"{where}: unknown base map '{b}'"); b = "assam"
+    return set(BASES[b].get("rivers", {})) | set(BASES[b].get("ridges", {}))
 # story cards with their own map: every place shown needs a position, every district must exist
 for lid, Lx in lessons.items():
     for u in Lx["units"]:
         for s in u["steps"]:
             m = s.get("map") if s["type"] == "story" else None
             if isinstance(m, dict) and m.get("box"):
+                base_ids = ids_of(m, f"{lid}/{s['id']}")
                 for i in m.get("show", []) + [r for route in m.get("routes", []) for r in route if isinstance(r, str)]:
                     if i not in base_ids and not (i in ENT and ENT[i].get("geo")): err(f"{lid}/{s['id']}: card map uses '{i}' with no position")
                 for d in m.get("districts", []):
@@ -161,6 +177,7 @@ for lid, L in lessons.items():
     mp = L["map"]
     for k in ("box", "show"):
         if k not in mp: err(f"{lid}: map needs '{k}'")
+    base_ids = ids_of(mp, lid)
     for i in mp.get("show", []):
         if i not in base_ids and not (i in ENT and ENT[i].get("geo")): err(f"{lid}: map shows '{i}' but it is neither in the base map nor an entity with geo")
     for d in mp.get("districts", []):

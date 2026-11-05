@@ -489,6 +489,8 @@ html.no-motion *, html.no-motion *::before, html.no-motion *::after { animation:
 
 /* map built from real district and river shapes */
 .map .sea { fill: var(--surface-2); }
+.map .neighbour { fill: var(--hill); opacity: .32; }
+.map .outline { fill: var(--land); stroke: var(--line-2); stroke-width: .7; stroke-linejoin: round; }
 .map .district { fill: var(--land); stroke: var(--line-2); stroke-width: .8; stroke-linejoin: round; }
 .map .district.named { fill: var(--terra-soft); stroke: var(--terra); stroke-width: 1; stroke-dasharray: 3 2; }
 .map .lbl.dlbl { font-size: 8.5px; font-weight: 800; font-style: italic; letter-spacing: .08em; text-transform: uppercase; fill: var(--terra-dark); opacity: .75; }
@@ -727,3 +729,49 @@ a.course-row .no { left: -44px; }
 .reference-controls{padding:20px;display:grid;gap:10px}.reference-controls label{font-size:13px;font-weight:800}.reference-controls input[type=search],.reference-controls select{box-sizing:border-box;width:100%;min-width:0;padding:12px;border:1px solid var(--line,#d8d0c1);border-radius:12px;background:var(--paper,#fffaf1);color:inherit;font:inherit;font-size:14px}.reference-controls .tabs{display:flex;gap:8px}.reference-controls .tabs button{flex:1;padding:12px;border:1px solid #cdbda7;border-radius:12px;background:#fff8ec;font:inherit;cursor:pointer}.reference-controls [aria-selected=true]{background:#c1572f!important;color:white}.reference-check{display:flex;align-items:center;gap:8px}.reference-entry{display:flex;gap:14px;margin:0 20px;padding:17px 0;border-bottom:1px solid #ded4c5}.reference-entry>div{min-width:0}.reference-entry h3{font-size:15px;margin:0 0 7px}.reference-entry p{font-size:14px;margin:0 0 10px;line-height:1.6}.reference-entry a{font-size:13px;color:#a44929;overflow-wrap:anywhere}.reference-year{color:#a44929;min-width:48px;font-size:14px}.reference-links{display:flex;flex-wrap:wrap;gap:8px 14px}.reference-link{display:inline-flex;margin:0 20px 16px;gap:8px;padding:12px}.reference-controls input:focus-visible,.reference-controls select:focus-visible,.reference-controls button:focus-visible{outline:3px solid #bc6c37;outline-offset:2px}
 
 .offline-btn.reference-link{color:var(--terra,#b64e2a);background:#fffaf1;border-color:#d6c5ae;text-decoration:none}
+
+/* Constitution story diagrams */
+.story-diagram {
+  margin: 12px 0 16px;
+  padding: 12px;
+  border: 1px solid #c8d6d1;
+  border-radius: 16px;
+  background: #eaf2ee;
+  color: #18382f;
+}
+.story-diagram-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.story-diagram-items li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #c8d6d1;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 800;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.story-diagram-items:not(.is-flow) li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+.story-diagram-items.is-flow {
+  grid-template-columns: minmax(0, 1fr);
+}
+.story-diagram-number {
+  display: grid;
+  flex: 0 0 1.75em;
+  place-items: center;
+  min-height: 1.75em;
+  border-radius: 50%;
+  background: #245746;
+  color: #fff;
+}

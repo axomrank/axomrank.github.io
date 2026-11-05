@@ -1,0 +1,1289 @@
+{
+  "id": "ag-01-bearings",
+  "course": "assam-geography",
+  "no": 1,
+  "version": 1,
+  "king": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+  },
+  "reign": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+  },
+  "portrait": "ag-02-follow-water/river-tile.webp",
+  "sources": [
+    {
+      "title": "Assam Directorate of Geology & Mining",
+      "url": "https://dgm.assam.gov.in/about-us/history",
+      "used_for": "Location, border context and physiography."
+    },
+    {
+      "title": "IWAI regional waterways",
+      "url": "https://iwai.gov.in/north-east-region",
+      "used_for": "Brahmaputra city locations."
+    },
+    {
+      "title": "NCERT, India: Physical Environment, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy102.pdf",
+      "used_for": "Northeastern Plateau and Purvanchal groupings."
+    },
+    {
+      "title": "Tushar et al., Solid Earth, 2026",
+      "url": "https://se.copernicus.org/articles/17/389/2026/se-17-389-2026.html",
+      "used_for": "Garo–Rajmahal gap and distinct flanking faults."
+    },
+    {
+      "title": "Dima Hasao district profile",
+      "url": "https://dimahasao.assam.gov.in/about-district/district-glance",
+      "used_for": "Borail/Barail in Dima Hasao."
+    },
+    {
+      "title": "Assam State Biodiversity Board, Edible Bioresources and Livelihoods",
+      "url": "https://asbb.assam.gov.in/sites/default/files/swf_utility_folder/departments/asbb_lipl_in_oid_7/portlet/level_2/Edible%20Bioresources%20%26%20Livelihoods.pdf",
+      "used_for": "Rengma Hills in the Karbi Anglong study area."
+    },
+    {
+      "title": "Historical geography scan, IGNCA collection",
+      "url": "https://ignca.gov.in/Asi_data/16981.pdf",
+      "used_for": "Historical Daphla, Miri, Abor and Mishmi hill labels."
+    }
+  ],
+  "review_notes": "Private draft. Assamese editorial review pending.",
+  "map": {
+    "box": [
+      89.4,
+      24,
+      96.2,
+      28.4
+    ],
+    "show": [
+      "brahmaputra",
+      "guwahati",
+      "dibrugarh",
+      "silchar"
+    ]
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Atlas mission",
+      "as": "মানচিত্ৰ অভিযান"
+    },
+    "title": {
+      "en": "Find your bearings",
+      "as": "দিশ চিনা"
+    },
+    "hook": {
+      "en": "Where do the valleys and hills fit?",
+      "as": "উপত্যকা আৰু পাহাৰবোৰ ক’ত আছে?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Assam and its neighbours",
+        "as": "অসম আৰু ওচৰৰ ৰাজ্য"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Assam is in Northeast India.",
+          "as": "অসম উত্তৰ-পূব ভাৰতত আছে।"
+        },
+        {
+          "en": "Arunachal Pradesh lies along much of the northern side of Assam.",
+          "as": "অসমৰ উত্তৰ সীমাৰ বহু অংশ অৰুণাচল প্ৰদেশৰ সৈতে লাগি আছে।"
+        },
+        {
+          "en": "West Bengal meets Assam on the west.",
+          "as": "পশ্চিমবংগ অসমৰ পশ্চিম সীমাত লাগি আছে।"
+        },
+        {
+          "en": "Meghalaya borders Assam to the south of the Brahmaputra Valley.",
+          "as": "ব্ৰহ্মপুত্ৰ উপত্যকাৰ দক্ষিণত মেঘালয়ৰ সৈতে অসমৰ সীমা আছে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Orient Assam on a regional map.",
+          "as": "আঞ্চলিক মানচিত্ৰত অসমৰ দিশ চিনা।"
+        },
+        "result": {
+          "en": "Meghalaya borders Assam to the south of the Brahmaputra Valley.",
+          "as": "ব্ৰহ্মপুত্ৰ উপত্যকাৰ দক্ষিণত মেঘালয়ৰ সৈতে অসমৰ সীমা আছে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Assam in Northeast India",
+            "as": "উত্তৰ-পূব ভাৰতত অসম"
+          },
+          "text": [
+            {
+              "en": "Assam is in Northeast India.",
+              "as": "অসম উত্তৰ-পূব ভাৰতত আছে।"
+            },
+            {
+              "en": "Arunachal Pradesh lies along much of the northern side of Assam.",
+              "as": "অসমৰ উত্তৰ সীমাৰ বহু অংশ অৰুণাচল প্ৰদেশৰ সৈতে লাগি আছে।"
+            }
+          ],
+          "map": {
+            "base": "india",
+            "box": [
+              87,
+              21,
+              98,
+              30
+            ],
+            "show": []
+          },
+          "id": "ag01.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "West Bengal meets Assam on the west.",
+              "as": "পশ্চিমবংগ অসমৰ পশ্চিম সীমাত লাগি আছে।"
+            },
+            {
+              "en": "Meghalaya borders Assam to the south of the Brahmaputra Valley.",
+              "as": "ব্ৰহ্মপুত্ৰ উপত্যকাৰ দক্ষিণত মেঘালয়ৰ সৈতে অসমৰ সীমা আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Arunachal Pradesh",
+                "as": "অৰুণাচল প্ৰদেশ"
+              },
+              {
+                "en": "West Bengal",
+                "as": "পশ্চিমবংগ"
+              },
+              {
+                "en": "Meghalaya",
+                "as": "মেঘালয়"
+              }
+            ]
+          },
+          "id": "ag01.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Hills around Assam",
+            "as": "অসমৰ চাৰিওফালৰ পাহাৰ"
+          },
+          "text": [
+            {
+              "en": "Older maps label parts of the Arunachal Himalaya Dafla (Daphla), Miri, Abor and Mishmi.",
+              "as": "পুৰণি মানচিত্ৰত অৰুণাচল হিমালয়ৰ কিছুমান অংশ ডফলা, মিৰি, আবৰ আৰু মিছিমি নামেৰে দেখুওৱা হয়।"
+            },
+            {
+              "en": "Look east and south for the Purvanchal ranges, including the Patkai, Naga and Mizo hills.",
+              "as": "পূব আৰু দক্ষিণত পূৰ্বাঞ্চলৰ পাটকাই, নগা আৰু মিজো পাহাৰকে ধৰি পৰ্বতশ্ৰেণীবোৰ চোৱা।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Arunachal Himalaya",
+                "as": "অৰুণাচল হিমালয়"
+              },
+              {
+                "en": "Patkai and Naga Hills",
+                "as": "পাটকাই আৰু নগা পাহাৰ"
+              },
+              {
+                "en": "Mizo Hills farther south",
+                "as": "আৰু দক্ষিণত মিজো পাহাৰ"
+              }
+            ]
+          },
+          "id": "ag01.u1.08"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Assam lies in Northeast India.",
+            "as": "অসম উত্তৰ-পূব ভাৰতত আছে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Assam is in Northeast India.",
+            "as": "অসম উত্তৰ-পূব ভাৰতত আছে।"
+          },
+          "id": "ag01.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Arunachal Pradesh",
+                "as": "অৰুণাচল প্ৰদেশ"
+              },
+              {
+                "en": "Northern side",
+                "as": "উত্তৰ ফাল"
+              }
+            ],
+            [
+              {
+                "en": "West Bengal",
+                "as": "পশ্চিমবংগ"
+              },
+              {
+                "en": "Western side",
+                "as": "পশ্চিম ফাল"
+              }
+            ],
+            [
+              {
+                "en": "Meghalaya",
+                "as": "মেঘালয়"
+              },
+              {
+                "en": "South of Brahmaputra Valley",
+                "as": "ব্ৰহ্মপুত্ৰ উপত্যকাৰ দক্ষিণ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Meghalaya borders Assam to the south of the Brahmaputra Valley.",
+            "as": "ব্ৰহ্মপুত্ৰ উপত্যকাৰ দক্ষিণত মেঘালয়ৰ সৈতে অসমৰ সীমা আছে।"
+          },
+          "id": "ag01.u1.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "On the western edge Assam meets ",
+            "as": "অসমৰ পশ্চিম সীমাত আছে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Arunachal Pradesh",
+              "as": "অৰুণাচল প্ৰদেশ"
+            },
+            {
+              "en": "West Bengal",
+              "as": "পশ্চিমবংগ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "West Bengal meets Assam on the west.",
+            "as": "পশ্চিমবংগ অসমৰ পশ্চিম সীমাত লাগি আছে।"
+          },
+          "id": "ag01.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which state is on a different side from the two southern neighbours?",
+            "as": "কোনখন ৰাজ্য দক্ষিণৰ ৰাজ্য দুখনতকৈ বেলেগ দিশত আছে?"
+          },
+          "options": [
+            {
+              "en": "Arunachal Pradesh",
+              "as": "অৰুণাচল প্ৰদেশ"
+            },
+            {
+              "en": "Meghalaya",
+              "as": "মেঘালয়"
+            },
+            {
+              "en": "Mizoram",
+              "as": "মিজোৰাম"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Arunachal Pradesh lies along much of the northern side of Assam.",
+            "as": "অসমৰ উত্তৰ সীমাৰ বহু অংশ অৰুণাচল প্ৰদেশৰ সৈতে লাগি আছে।"
+          },
+          "id": "ag01.u1.06"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Arunachal Pradesh borders Assam only on its western side.",
+            "as": "অৰুণাচল প্ৰদেশ কেৱল অসমৰ পশ্চিম সীমাত আছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Arunachal Pradesh lies along much of the northern side of Assam.",
+            "as": "অসমৰ উত্তৰ সীমাৰ বহু অংশ অৰুণাচল প্ৰদেশৰ সৈতে লাগি আছে।"
+          },
+          "id": "ag01.u1.07"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Dafla, Miri, Abor and Mishmi",
+                "as": "ডফলা, মিৰি, আবৰ আৰু মিছিমি"
+              },
+              {
+                "en": "Older Arunachal Himalaya labels",
+                "as": "অৰুণাচল হিমালয়ৰ পুৰণি নাম"
+              }
+            ],
+            [
+              {
+                "en": "Patkai, Naga and Mizo hills",
+                "as": "পাটকাই, নগা আৰু মিজো পাহাৰ"
+              },
+              {
+                "en": "Purvanchal ranges",
+                "as": "পূৰ্বাঞ্চলৰ পৰ্বতশ্ৰেণী"
+              }
+            ]
+          ],
+          "why": {
+            "en": "These are two regional groupings. The Mizo Hills lie farther south.",
+            "as": "এইবোৰ দুটা আঞ্চলিক গোট। মিজো পাহাৰ আৰু দক্ষিণত আছে।"
+          },
+          "id": "ag01.u1.09"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Two valley plains",
+        "as": "দুখন উপত্যকাৰ সমভূমি"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The Brahmaputra Valley occupies the northern part of Assam.",
+          "as": "ব্ৰহ্মপুত্ৰ উপত্যকা অসমৰ উত্তৰ অংশত আছে।"
+        },
+        {
+          "en": "The Barak Valley lies in southern Assam.",
+          "as": "বৰাক উপত্যকা দক্ষিণ অসমত আছে।"
+        },
+        {
+          "en": "The two valley plains lie on different sides of the central uplands.",
+          "as": "দুয়োখন উপত্যকাৰ সমভূমি মাজৰ ওখ অঞ্চলৰ দুটা ফালে আছে।"
+        },
+        {
+          "en": "Silchar is a locator for the Barak Valley.",
+          "as": "শিলচৰ বৰাক উপত্যকা চিনাৰ এটা ঠাই।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Separate the northern and southern valleys.",
+          "as": "উত্তৰ আৰু দক্ষিণৰ উপত্যকা পৃথককৈ চিনা।"
+        },
+        "result": {
+          "en": "Silchar is a locator for the Barak Valley.",
+          "as": "শিলচৰ বৰাক উপত্যকা চিনাৰ এটা ঠাই।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Look north and south",
+            "as": "উত্তৰ আৰু দক্ষিণলৈ চোৱা"
+          },
+          "text": [
+            {
+              "en": "The Brahmaputra Valley occupies the northern part of Assam.",
+              "as": "ব্ৰহ্মপুত্ৰ উপত্যকা অসমৰ উত্তৰ অংশত আছে।"
+            },
+            {
+              "en": "The Barak Valley lies in southern Assam.",
+              "as": "বৰাক উপত্যকা দক্ষিণ অসমত আছে।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.4,
+              24,
+              96.2,
+              28.4
+            ],
+            "show": [
+              "brahmaputra",
+              "guwahati",
+              "dibrugarh",
+              "silchar"
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "ag01.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The two valley plains lie on different sides of the central uplands.",
+              "as": "দুয়োখন উপত্যকাৰ সমভূমি মাজৰ ওখ অঞ্চলৰ দুটা ফালে আছে।"
+            },
+            {
+              "en": "Silchar is a locator for the Barak Valley.",
+              "as": "শিলচৰ বৰাক উপত্যকা চিনাৰ এটা ঠাই।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Brahmaputra Valley",
+                "as": "ব্ৰহ্মপুত্ৰ উপত্যকা"
+              },
+              {
+                "en": "Barak Valley",
+                "as": "বৰাক উপত্যকা"
+              }
+            ]
+          },
+          "id": "ag01.u2.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Brahmaputra Valley",
+                "as": "ব্ৰহ্মপুত্ৰ উপত্যকা"
+              },
+              {
+                "en": "Northern valley",
+                "as": "উত্তৰৰ উপত্যকা"
+              }
+            ],
+            [
+              {
+                "en": "Barak Valley",
+                "as": "বৰাক উপত্যকা"
+              },
+              {
+                "en": "Southern valley",
+                "as": "দক্ষিণৰ উপত্যকা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The two valley plains lie on different sides of the central uplands.",
+            "as": "দুয়োখন উপত্যকাৰ সমভূমি মাজৰ ওখ অঞ্চলৰ দুটা ফালে আছে।"
+          },
+          "id": "ag01.u2.03"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Tap the Barak Valley locator.",
+            "as": "বৰাক উপত্যকা চিনোৱা নগৰখন বাছা।"
+          },
+          "target": "silchar",
+          "choices": [
+            "silchar",
+            "guwahati"
+          ],
+          "why": {
+            "en": "Silchar is a locator for the Barak Valley.",
+            "as": "শিলচৰ বৰাক উপত্যকা চিনাৰ এটা ঠাই।"
+          },
+          "id": "ag01.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Both valley plains lie north of the uplands.",
+            "as": "দুয়োখন উপত্যকাৰ সমভূমি ওখ অঞ্চলৰ উত্তৰত আছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The two valley plains lie on different sides of the central uplands.",
+            "as": "দুয়োখন উপত্যকাৰ সমভূমি মাজৰ ওখ অঞ্চলৰ দুটা ফালে আছে।"
+          },
+          "id": "ag01.u2.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The northern valley is the ",
+            "as": "উত্তৰৰ উপত্যকাখন হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Brahmaputra Valley",
+              "as": "ব্ৰহ্মপুত্ৰ উপত্যকা"
+            },
+            {
+              "en": "Barak Valley",
+              "as": "বৰাক উপত্যকা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The Brahmaputra Valley occupies the northern part of Assam.",
+            "as": "ব্ৰহ্মপুত্ৰ উপত্যকা অসমৰ উত্তৰ অংশত আছে।"
+          },
+          "id": "ag01.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which belongs to the southern valley?",
+            "as": "কোনখন দক্ষিণৰ উপত্যকাত আছে?"
+          },
+          "options": [
+            {
+              "en": "Guwahati",
+              "as": "গুৱাহাটী"
+            },
+            {
+              "en": "Dibrugarh",
+              "as": "ডিব্ৰুগড়"
+            },
+            {
+              "en": "Silchar",
+              "as": "শিলচৰ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Silchar is a locator for the Barak Valley.",
+            "as": "শিলচৰ বৰাক উপত্যকা চিনাৰ এটা ঠাই।"
+          },
+          "id": "ag01.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Across the uplands",
+        "as": "ওখ অঞ্চলৰ মাজেৰে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The northeastern plateau block includes Meghalaya and Karbi Anglong.",
+          "as": "উত্তৰ-পূবৰ মালভূমি খণ্ডত মেঘালয় আৰু কাৰ্বি আংলং আছে।"
+        },
+        {
+          "en": "The Malda fault is the textbook separator from Chota Nagpur.",
+          "as": "পাঠ্যপুথিত মালদা চ্যুতিয়ে ছোটানাগপুৰৰ পৰা এই খণ্ড পৃথক কৰে।"
+        },
+        {
+          "en": "Meghalaya’s hills run Garo, Khasi and Jaintia from west to east.",
+          "as": "মেঘালয়ৰ পাহাৰ পশ্চিমৰ পৰা পূবলৈ গাৰো, খাছি আৰু জয়ন্তীয়া।"
+        },
+        {
+          "en": "Mikir and Rengma are associated with Karbi Anglong; Barail is prominent in Dima Hasao.",
+          "as": "মিকিৰ আৰু ৰেংমা কাৰ্বি আংলঙৰ সৈতে জড়িত। বৰাইল ডিমা হাছাওৰ প্ৰধান পৰ্বতশ্ৰেণী।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish plateau, hills and plain.",
+          "as": "মালভূমি, পাহাৰ আৰু সমভূমি পৃথককৈ চিনা।"
+        },
+        "result": {
+          "en": "A valley plain is lower and generally flatter than adjoining hills.",
+          "as": "উপত্যকাৰ সমভূমি কাষৰ পাহাৰতকৈ চাপৰ আৰু সাধাৰণতে অধিক সমান।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Across the uplands",
+            "as": "ওখ অঞ্চলৰ মাজেৰে"
+          },
+          "text": [
+            {
+              "en": "The Karbi Anglong plateau lies between the valley plains.",
+              "as": "কাৰ্বি আংলং মালভূমি দুয়োখন উপত্যকাৰ সমভূমিৰ মাজত আছে।"
+            },
+            {
+              "en": "The Dima Hasao hills lie farther south.",
+              "as": "ডিমা হাছাওৰ পাহাৰ আৰু দক্ষিণত আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Karbi Anglong plateau",
+                "as": "কাৰ্বি আংলং মালভূমি"
+              },
+              {
+                "en": "Dima Hasao hills",
+                "as": "ডিমা হাছাওৰ পাহাৰ"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "ag01.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The Meghalaya Plateau includes the Garo, Khasi and Jaintia hills, in that order from west to east.",
+              "as": "মেঘালয় মালভূমিত পশ্চিমৰ পৰা পূবলৈ গাৰো, খাছি আৰু জয়ন্তীয়া পাহাৰ আছে।"
+            },
+            {
+              "en": "Karbi Anglong continues the Meghalaya Plateau eastward. Mikir is an older name for the Karbi hills; Rengma is a range in Karbi Anglong. The Barail Range is prominent in Dima Hasao.",
+              "as": "কাৰ্বি আংলং মেঘালয় মালভূমিৰ পূবমুখী সম্প্ৰসাৰণ। মিকিৰ কাৰ্বি পাহাৰৰ পুৰণি নাম। ৰেংমা কাৰ্বি আংলঙৰ এখন পৰ্বতশ্ৰেণী। বৰাইল ডিমা হাছাওৰ প্ৰধান পৰ্বতশ্ৰেণী।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Garo → Khasi → Jaintia",
+                "as": "গাৰো → খাছি → জয়ন্তীয়া"
+              },
+              {
+                "en": "Karbi Anglong · Mikir and Rengma",
+                "as": "কাৰ্বি আংলং · মিকিৰ আৰু ৰেংমা"
+              },
+              {
+                "en": "Dima Hasao · Barail",
+                "as": "ডিমা হাছাও · বৰাইল"
+              }
+            ]
+          },
+          "id": "ag01.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Across the Malda gap",
+            "as": "মালদা ব্যৱধানৰ সিপাৰে"
+          },
+          "text": [
+            {
+              "en": "In textbook geography, the Malda fault separates Chota Nagpur from the Meghalaya–Karbi Anglong plateau block.",
+              "as": "পাঠ্যপুথিৰ ভূ-আকৃতিৰ বৰ্ণনাত মালদা চ্যুতিয়ে ছোটানাগপুৰ মালভূমিৰ পৰা মেঘালয় আৰু কাৰ্বি আংলঙৰ উত্তৰ-পূবৰ মালভূমি খণ্ড পৃথক কৰে।"
+            },
+            {
+              "en": "The Garo–Rajmahal gap lies between the Rajmahal Hills in the west and Meghalaya’s Garo Hills in the east.",
+              "as": "গাৰো–ৰাজমহল ব্যৱধানৰ নাম দুয়োফালৰ পাহাৰৰ পৰা আহিছে। পশ্চিমত ছোটানাগপুৰৰ ফালে ৰাজমহল আৰু পূবত মেঘালয়ৰ গাৰো পাহাৰ।"
+            },
+            {
+              "en": "Geologists distinguish faults on opposite sides of this wider gap.",
+              "as": "ভূতাত্ত্বিক গৱেষণাত ব্যৱধানৰ দুয়োফালৰ চ্যুতি পৃথককৈ দেখুওৱা হয়। সেয়ে ব্যৱধানৰ নামে এটা বহল ভূ-আকৃতি বুজায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Rajmahal Hills · west",
+                "as": "ৰাজমহল পাহাৰ · পশ্চিম"
+              },
+              {
+                "en": "Garo–Rajmahal gap",
+                "as": "গাৰো–ৰাজমহল ব্যৱধান"
+              },
+              {
+                "en": "Garo Hills · east",
+                "as": "গাৰো পাহাৰ · পূব"
+              }
+            ]
+          },
+          "id": "ag01.u3.08"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Arrange broadly north to south.",
+            "as": "মুঠামুটিকৈ উত্তৰৰ পৰা দক্ষিণলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Brahmaputra Valley",
+              "as": "ব্ৰহ্মপুত্ৰ উপত্যকা"
+            },
+            {
+              "en": "Karbi Anglong plateau",
+              "as": "কাৰ্বি আংলং মালভূমি"
+            },
+            {
+              "en": "Dima Hasao hills",
+              "as": "ডিমা হাছাওৰ পাহাৰ"
+            },
+            {
+              "en": "Barak Valley",
+              "as": "বৰাক উপত্যকা"
+            }
+          ],
+          "why": {
+            "en": "The Dima Hasao hills lie farther south.",
+            "as": "ডিমা হাছাওৰ পাহাৰ আৰু দক্ষিণত আছে।"
+          },
+          "id": "ag01.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Plateau",
+                "as": "মালভূমি"
+              },
+              {
+                "en": "Elevated surface",
+                "as": "ওখ পৃষ্ঠ"
+              }
+            ],
+            [
+              {
+                "en": "Valley plain",
+                "as": "উপত্যকাৰ সমভূমি"
+              },
+              {
+                "en": "Lower, flatter surface",
+                "as": "চাপৰ আৰু সমান পৃষ্ঠ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "A valley plain is lower and generally flatter than adjoining hills.",
+            "as": "উপত্যকাৰ সমভূমি কাষৰ পাহাৰতকৈ চাপৰ আৰু সাধাৰণতে অধিক সমান।"
+          },
+          "id": "ag01.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The central uplands lie between the two valley plains.",
+            "as": "মাজৰ ওখ অঞ্চল দুয়োখন উপত্যকাৰ সমভূমিৰ মাজত আছে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "The Karbi Anglong plateau lies between the valley plains.",
+            "as": "কাৰ্বি আংলং মালভূমি দুয়োখন উপত্যকাৰ সমভূমিৰ মাজত আছে।"
+          },
+          "id": "ag01.u3.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "South of the Karbi Anglong plateau are the ",
+            "as": "কাৰ্বি আংলং মালভূমিৰ দক্ষিণত আছে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Brahmaputra Valley",
+              "as": "ব্ৰহ্মপুত্ৰ উপত্যকা"
+            },
+            {
+              "en": "Dima Hasao hills",
+              "as": "ডিমা হাছাওৰ পাহাৰ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The Dima Hasao hills lie farther south.",
+            "as": "ডিমা হাছাওৰ পাহাৰ আৰু দক্ষিণত আছে।"
+          },
+          "id": "ag01.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a valley plain?",
+            "as": "কোনখন উপত্যকাৰ সমভূমি?"
+          },
+          "options": [
+            {
+              "en": "Dima Hasao hills",
+              "as": "ডিমা হাছাওৰ পাহাৰ"
+            },
+            {
+              "en": "Barak Valley",
+              "as": "বৰাক উপত্যকা"
+            },
+            {
+              "en": "Karbi Anglong plateau",
+              "as": "কাৰ্বি আংলং মালভূমি"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A valley plain is lower and generally flatter than adjoining hills.",
+            "as": "উপত্যকাৰ সমভূমি কাষৰ পাহাৰতকৈ চাপৰ আৰু সাধাৰণতে অধিক সমান।"
+          },
+          "id": "ag01.u3.07"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order Meghalaya’s hills west to east.",
+            "as": "মেঘালয়ৰ পাহাৰ পশ্চিমৰ পৰা পূবলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Garo",
+              "as": "গাৰো"
+            },
+            {
+              "en": "Khasi",
+              "as": "খাছি"
+            },
+            {
+              "en": "Jaintia",
+              "as": "জয়ন্তীয়া"
+            }
+          ],
+          "why": {
+            "en": "Garo is the western group and Jaintia the eastern group.",
+            "as": "গাৰো পশ্চিমৰ গোট আৰু জয়ন্তীয়া পূবৰ গোট।"
+          },
+          "id": "ag01.u3.09"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Malda fault",
+                "as": "মালদা চ্যুতি"
+              },
+              {
+                "en": "Textbook boundary of the northeastern plateau block",
+                "as": "পাঠ্যপুথিত উত্তৰ-পূবৰ মালভূমি খণ্ডৰ সীমা"
+              }
+            ],
+            [
+              {
+                "en": "Garo–Rajmahal gap",
+                "as": "গাৰো–ৰাজমহল ব্যৱধান"
+              },
+              {
+                "en": "Wider gap named for its flanking hills",
+                "as": "দুয়োফালৰ পাহাৰৰ নামেৰে জনা বহল ব্যৱধান"
+              }
+            ],
+            [
+              {
+                "en": "Barail Range",
+                "as": "বৰাইল পৰ্বতশ্ৰেণী"
+              },
+              {
+                "en": "Dima Hasao uplands",
+                "as": "ডিমা হাছাওৰ ওখ অঞ্চল"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The gap is the broader feature. Barail belongs with Dima Hasao in this physiographic grouping.",
+            "as": "ব্যৱধানটো বহল ভূ-আকৃতি। এই ভূ-আকৃতিৰ ভাগত বৰাইল ডিমা হাছাওৰ অন্তৰ্গত।"
+          },
+          "id": "ag01.u3.10"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Cities as anchors",
+        "as": "নগৰে দিশ চিনায়"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Guwahati and Dibrugarh are in the Brahmaputra Valley.",
+          "as": "গুৱাহাটী আৰু ডিব্ৰুগড় ব্ৰহ্মপুত্ৰ উপত্যকাত আছে।"
+        },
+        {
+          "en": "Dibrugarh lies east of Guwahati.",
+          "as": "ডিব্ৰুগড় গুৱাহাটীৰ পূবত আছে।"
+        },
+        {
+          "en": "Silchar lies south of Guwahati.",
+          "as": "শিলচৰ গুৱাহাটীৰ দক্ষিণত আছে।"
+        },
+        {
+          "en": "On a north-up map, east is to the right.",
+          "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত পূব সোঁফালে থাকে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use cities to infer relative direction.",
+          "as": "নগৰৰ অৱস্থান চাই আপেক্ষিক দিশ নিৰ্ণয় কৰা।"
+        },
+        "result": {
+          "en": "On a north-up map, east is to the right.",
+          "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত পূব সোঁফালে থাকে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Locate three cities",
+            "as": "তিনিখন নগৰ বিচাৰা"
+          },
+          "text": [
+            {
+              "en": "Guwahati and Dibrugarh are in the Brahmaputra Valley.",
+              "as": "গুৱাহাটী আৰু ডিব্ৰুগড় ব্ৰহ্মপুত্ৰ উপত্যকাত আছে।"
+            },
+            {
+              "en": "Dibrugarh lies east of Guwahati.",
+              "as": "ডিব্ৰুগড় গুৱাহাটীৰ পূবত আছে।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.4,
+              24,
+              96.2,
+              28.4
+            ],
+            "show": [
+              "brahmaputra",
+              "guwahati",
+              "dibrugarh",
+              "silchar"
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "ag01.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Silchar lies south of Guwahati.",
+              "as": "শিলচৰ গুৱাহাটীৰ দক্ষিণত আছে।"
+            },
+            {
+              "en": "On a north-up map, east is to the right.",
+              "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত পূব সোঁফালে থাকে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Guwahati",
+                "as": "গুৱাহাটী"
+              },
+              {
+                "en": "Dibrugarh",
+                "as": "ডিব্ৰুগড়"
+              },
+              {
+                "en": "Silchar",
+                "as": "শিলচৰ"
+              }
+            ]
+          },
+          "id": "ag01.u4.02"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Tap the city east of Guwahati.",
+            "as": "গুৱাহাটীৰ পূবৰ নগৰখন বাছা।"
+          },
+          "target": "dibrugarh",
+          "choices": [
+            "guwahati",
+            "dibrugarh",
+            "silchar"
+          ],
+          "why": {
+            "en": "Dibrugarh lies east of Guwahati.",
+            "as": "ডিব্ৰুগড় গুৱাহাটীৰ পূবত আছে।"
+          },
+          "id": "ag01.u4.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Silchar lies north of Guwahati.",
+            "as": "শিলচৰ গুৱাহাটীৰ উত্তৰত আছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Silchar lies south of Guwahati.",
+            "as": "শিলচৰ গুৱাহাটীৰ দক্ষিণত আছে।"
+          },
+          "id": "ag01.u4.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Silchar",
+                "as": "শিলচৰ"
+              },
+              {
+                "en": "Barak Valley",
+                "as": "বৰাক উপত্যকা"
+              }
+            ],
+            [
+              {
+                "en": "Dibrugarh",
+                "as": "ডিব্ৰুগড়"
+              },
+              {
+                "en": "Brahmaputra Valley",
+                "as": "ব্ৰহ্মপুত্ৰ উপত্যকা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Guwahati and Dibrugarh are in the Brahmaputra Valley.",
+            "as": "গুৱাহাটী আৰু ডিব্ৰুগড় ব্ৰহ্মপুত্ৰ উপত্যকাত আছে।"
+          },
+          "id": "ag01.u4.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "On a north-up map, right is ",
+            "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত সোঁফাল হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "east",
+              "as": "পূব"
+            },
+            {
+              "en": "west",
+              "as": "পশ্চিম"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "On a north-up map, east is to the right.",
+            "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত পূব সোঁফালে থাকে।"
+          },
+          "id": "ag01.u4.06"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Start west, then go east along the northern valley.",
+            "as": "উত্তৰৰ উপত্যকাত পশ্চিমৰ পৰা পূবলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Guwahati",
+              "as": "গুৱাহাটী"
+            },
+            {
+              "en": "Dibrugarh",
+              "as": "ডিব্ৰুগড়"
+            }
+          ],
+          "why": {
+            "en": "Dibrugarh lies east of Guwahati.",
+            "as": "ডিব্ৰুগড় গুৱাহাটীৰ পূবত আছে।"
+          },
+          "id": "ag01.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "mission": {
+      "objective": {
+        "en": "Where do the valleys and hills fit?",
+        "as": "উপত্যকা আৰু পাহাৰবোৰ ক’ত আছে?"
+      },
+      "result": {
+        "en": "On a north-up map, east is to the right.",
+        "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত পূব সোঁফালে থাকে।"
+      }
+    },
+    "steps": [
+      {
+        "type": "inline",
+        "before": {
+          "en": "Assam’s western neighbour in this exercise is ",
+          "as": "এই অনুশীলনত অসমৰ পশ্চিমৰ চুবুৰীয়া ৰাজ্যখন হ’ল "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "Meghalaya",
+            "as": "মেঘালয়"
+          },
+          {
+            "en": "West Bengal",
+            "as": "পশ্চিমবংগ"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "West Bengal meets Assam on the west.",
+          "as": "পশ্চিমবংগ অসমৰ পশ্চিম সীমাত লাগি আছে।"
+        },
+        "id": "ag01.test.01"
+      },
+      {
+        "type": "map",
+        "q": {
+          "en": "Tap the Brahmaputra Valley city farthest east.",
+          "as": "ব্ৰহ্মপুত্ৰ উপত্যকাৰ আটাইতকৈ পূবৰ চিহ্নিত নগৰখন বাছা।"
+        },
+        "target": "dibrugarh",
+        "choices": [
+          "dibrugarh",
+          "guwahati",
+          "silchar"
+        ],
+        "why": {
+          "en": "Dibrugarh lies east of Guwahati.",
+          "as": "ডিব্ৰুগড় গুৱাহাটীৰ পূবত আছে।"
+        },
+        "id": "ag01.test.02"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "The Barak Valley is on the southern side of the central uplands.",
+          "as": "বৰাক উপত্যকা মাজৰ ওখ অঞ্চলৰ দক্ষিণফালে আছে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "The two valley plains lie on different sides of the central uplands.",
+          "as": "দুয়োখন উপত্যকাৰ সমভূমি মাজৰ ওখ অঞ্চলৰ দুটা ফালে আছে।"
+        },
+        "id": "ag01.test.03"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Dima Hasao",
+              "as": "ডিমা হাছাও"
+            },
+            {
+              "en": "Hills",
+              "as": "পাহাৰ"
+            }
+          ],
+          [
+            {
+              "en": "Karbi Anglong",
+              "as": "কাৰ্বি আংলং"
+            },
+            {
+              "en": "Plateau",
+              "as": "মালভূমি"
+            }
+          ]
+        ],
+        "why": {
+          "en": "The Dima Hasao hills lie farther south.",
+          "as": "ডিমা হাছাওৰ পাহাৰ আৰু দক্ষিণত আছে।"
+        },
+        "id": "ag01.test.04"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which city is outside the northern valley?",
+          "as": "কোনখন নগৰ উত্তৰৰ উপত্যকাৰ বাহিৰত আছে?"
+        },
+        "options": [
+          {
+            "en": "Dibrugarh",
+            "as": "ডিব্ৰুগড়"
+          },
+          {
+            "en": "Guwahati",
+            "as": "গুৱাহাটী"
+          },
+          {
+            "en": "Silchar",
+            "as": "শিলচৰ"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Silchar is a locator for the Barak Valley.",
+          "as": "শিলচৰ বৰাক উপত্যকা চিনাৰ এটা ঠাই।"
+        },
+        "id": "ag01.test.05"
+      }
+    ]
+  }
+}

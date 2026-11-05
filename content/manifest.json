@@ -1,5 +1,5 @@
 {
- "version": "9616bb4a88",
+ "version": "a7a0b6191a",
  "courseRedirects": {
   "early-assam": "assam-history",
   "varman-kings": "assam-history",
@@ -20,6 +20,10 @@
    "file": "content/courses/ahom-kings.json"
   },
   {
+   "id": "assam-geography",
+   "file": "content/courses/assam-geography.json"
+  },
+  {
    "id": "assam-history",
    "file": "content/courses/assam-history.json"
   },
@@ -29,6 +33,339 @@
   }
  ],
  "lessons": {
+  "ag-01-bearings": {
+   "course": "assam-geography",
+   "no": 1,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Assam and its neighbours",
+      "as": "অসম আৰু ওচৰৰ ৰাজ্য"
+     },
+     "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Two valley plains",
+      "as": "দুখন উপত্যকাৰ সমভূমি"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Across the uplands",
+      "as": "ওখ অঞ্চলৰ মাজেৰে"
+     },
+     "i": "map",
+     "ex": 7
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Cities as anchors",
+      "as": "নগৰে দিশ চিনায়"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-02-follow-water": {
+   "course": "assam-geography",
+   "no": 2,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Follow the Water",
+    "as": "সোঁত অনুসৰণ কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Down the Brahmaputra",
+      "as": "ব্ৰহ্মপুত্ৰৰ নামনিলৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Where rivers meet",
+      "as": "নদীৰ মিলনস্থল"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Follow the Barak",
+      "as": "বৰাকৰ সোঁত অনুসৰণ কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Rain on a ridge",
+      "as": "পাহাৰৰ শিৰত বৰষুণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Read the river systems",
+      "as": "নদী প্ৰণালী বুজা"
+     },
+     "i": "map",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-03-floodplain": {
+   "course": "assam-geography",
+   "no": 3,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read a changing floodplain",
+    "as": "সলনি হোৱা প্লাৱনভূমি পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Water over land",
+      "as": "মাটিৰ ওপৰত পানী"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A bank moves",
+      "as": "নদীৰ পাৰ সৰে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "What the atlas measures",
+      "as": "এটলাছে কি জোখে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Compare what is exposed",
+      "as": "কোনবোৰ ঠাই উন্মুক্ত"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-04-landscape": {
+   "course": "assam-geography",
+   "no": 4,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Read the landscape",
+    "as": "ভূদৃশ্য পঢ়া"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Read the rain",
+      "as": "বৰষুণৰ হিচাপ পঢ়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "A lake in an old channel",
+      "as": "পুৰণি খাতত হ্ৰদ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Grassland and foothills",
+      "as": "ঘাঁহনি আৰু পাদদেশ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Conservation on the map",
+      "as": "মানচিত্ৰত সংৰক্ষণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-05-livelihoods": {
+   "course": "assam-geography",
+   "no": 5,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Explain why places grow",
+    "as": "ঠাই কিয় বাঢ়ে বুজা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Two farming landscapes",
+      "as": "দুটা কৃষি ভূদৃশ্য"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Oil from field to refinery",
+      "as": "তেলক্ষেত্ৰৰ পৰা শোধনাগাৰলৈ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "A route on the Barak",
+      "as": "বৰাকৰ জলপথ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Why a settlement grows",
+      "as": "বসতি কিয় বাঢ়ে"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "ag-06-field-case": {
+   "course": "assam-geography",
+   "no": 6,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Solve a field case",
+    "as": "ক্ষেত্ৰৰ কেছ সমাধান কৰা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Open the market case",
+      "as": "বজাৰৰ কেছটো খোলা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Compare the routes",
+      "as": "ৰাস্তা দুটা তুলনা কৰা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Make the case",
+      "as": "সিদ্ধান্তৰ যুক্তি দিয়া"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
   "ahom-01-sukaphaa": {
    "course": "assam-history",
    "no": 23,

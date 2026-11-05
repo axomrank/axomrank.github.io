@@ -1,0 +1,1111 @@
+{
+  "id": "ag-05-livelihoods",
+  "course": "assam-geography",
+  "no": 5,
+  "version": 1,
+  "king": {
+    "en": "Explain why places grow",
+    "as": "ঠাই কিয় বাঢ়ে বুজা"
+  },
+  "reign": {
+    "en": "Explain why places grow",
+    "as": "ঠাই কিয় বাঢ়ে বুজা"
+  },
+  "portrait": "ag-02-follow-water/river-tile.webp",
+  "sources": [
+    {
+      "title": "Assam Directorate of Economics and Statistics",
+      "url": "https://des.assam.gov.in/portlets/our-publications",
+      "used_for": "Rice and tea publications. Plot comparison is instructional."
+    },
+    {
+      "title": "IndianOil, Digboi Refinery",
+      "url": "https://iocl.com/pages/digboi-refinery",
+      "used_for": "Crude processing and paraffin wax."
+    },
+    {
+      "title": "IWAI, National Waterway 16",
+      "url": "https://iwai.gov.in/offerings/national-waterway/national-waterways16",
+      "used_for": "Lakhipur to Bhanga on the Barak."
+    },
+    {
+      "title": "ASDMA, Flood Early Warning System documentation",
+      "url": "https://darpg.gov.in/sites/default/files/70.%20Flood%20Early%20Warning%20SystemFLEWS-Documentation-Final.pdf",
+      "used_for": "Brahmaputra flow across Assam and Barak flow through the Cachar plain."
+    }
+  ],
+  "review_notes": "Private draft. Assamese editorial review pending.",
+  "map": {
+    "box": [
+      89.4,
+      24,
+      96.2,
+      28.4
+    ],
+    "show": [
+      "brahmaputra",
+      "guwahati",
+      "dibrugarh",
+      "silchar",
+      "ag-digboi-refinery"
+    ]
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Atlas mission",
+      "as": "মানচিত্ৰ অভিযান"
+    },
+    "title": {
+      "en": "Explain why places grow",
+      "as": "ঠাই কিয় বাঢ়ে বুজা"
+    },
+    "hook": {
+      "en": "What makes a place useful and accessible?",
+      "as": "ঠাই এখন কিহে ব্যৱহাৰযোগ্য আৰু সহজে যাব পৰা কৰে?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Two farming landscapes",
+        "as": "দুটা কৃষি ভূদৃশ্য"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Rice and tea are both covered in Assam’s official agricultural statistics.",
+          "as": "অসমৰ চৰকাৰী কৃষি পৰিসংখ্যাত ধান আৰু চাহ দুয়োটাৰ তথ্য আছে।"
+        },
+        {
+          "en": "A bunded paddy plot can retain water.",
+          "as": "আলি দিয়া ধাননিয়ে পানী ধৰি ৰাখিব পাৰে।"
+        },
+        {
+          "en": "Drainage is an important clue when interpreting a tea plot.",
+          "as": "চাহ বাগিচাৰ মাটি বুজিবলৈ পানী ওলাই যোৱাৰ পথ এটা দৰকাৰী সংকেত।"
+        },
+        {
+          "en": "In this comparison, the paddy plot retains water and the tea plot sheds excess water.",
+          "as": "এই তুলনাত ধাননিয়ে পানী ধৰি ৰাখে আৰু চাহৰ মাটিৰ পৰা অতিৰিক্ত পানী ওলাই যায়।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Compare terrain, water and drainage clues.",
+          "as": "ভূমি, পানী আৰু পানী ওলাই যোৱাৰ সংকেত তুলনা কৰা।"
+        },
+        "result": {
+          "en": "In this comparison, the paddy plot retains water and the tea plot sheds excess water.",
+          "as": "এই তুলনাত ধাননিয়ে পানী ধৰি ৰাখে আৰু চাহৰ মাটিৰ পৰা অতিৰিক্ত পানী ওলাই যায়।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Two farming landscapes",
+            "as": "দুটা কৃষি ভূদৃশ্য"
+          },
+          "text": [
+            {
+              "en": "Rice and tea are both covered in Assam’s official agricultural statistics.",
+              "as": "অসমৰ চৰকাৰী কৃষি পৰিসংখ্যাত ধান আৰু চাহ দুয়োটাৰ তথ্য আছে।"
+            },
+            {
+              "en": "A bunded paddy plot can retain water.",
+              "as": "আলি দিয়া ধাননিয়ে পানী ধৰি ৰাখিব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Paddy plot · bunds",
+                "as": "ধাননি · আলি"
+              },
+              {
+                "en": "Tea plot · drainage",
+                "as": "চাহৰ মাটি · পানী ওলাই যায়"
+              }
+            ]
+          },
+          "id": "ag05.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Drainage is an important clue when interpreting a tea plot.",
+              "as": "চাহ বাগিচাৰ মাটি বুজিবলৈ পানী ওলাই যোৱাৰ পথ এটা দৰকাৰী সংকেত।"
+            },
+            {
+              "en": "In this comparison, the paddy plot retains water and the tea plot sheds excess water.",
+              "as": "এই তুলনাত ধাননিয়ে পানী ধৰি ৰাখে আৰু চাহৰ মাটিৰ পৰা অতিৰিক্ত পানী ওলাই যায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Paddy plot · bunds",
+                "as": "ধাননি · আলি"
+              },
+              {
+                "en": "Tea plot · drainage",
+                "as": "চাহৰ মাটি · পানী ওলাই যায়"
+              }
+            ]
+          },
+          "id": "ag05.u1.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Bunded paddy example",
+                "as": "আলি দিয়া ধাননি"
+              },
+              {
+                "en": "Retains water",
+                "as": "পানী ধৰি ৰাখে"
+              }
+            ],
+            [
+              {
+                "en": "Tea plot example",
+                "as": "চাহৰ মাটিৰ উদাহৰণ"
+              },
+              {
+                "en": "Sheds excess water",
+                "as": "অতিৰিক্ত পানী ওলাই যায়"
+              }
+            ]
+          ],
+          "why": {
+            "en": "In this comparison, the paddy plot retains water and the tea plot sheds excess water.",
+            "as": "এই তুলনাত ধাননিয়ে পানী ধৰি ৰাখে আৰু চাহৰ মাটিৰ পৰা অতিৰিক্ত পানী ওলাই যায়।"
+          },
+          "id": "ag05.u1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The raised edge around the paddy plot is a ",
+            "as": "ধাননিৰ চাৰিওফালৰ ওখ সীমাটো হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "river mouth",
+              "as": "নদীৰ মুখ"
+            },
+            {
+              "en": "bund",
+              "as": "আলি"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A bunded paddy plot can retain water.",
+            "as": "আলি দিয়া ধাননিয়ে পানী ধৰি ৰাখিব পাৰে।"
+          },
+          "id": "ag05.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Only one of the two crops appears in Assam’s official statistics.",
+            "as": "অসমৰ চৰকাৰী পৰিসংখ্যাত শস্য দুটাৰ কেৱল এটাৰ তথ্য আছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Rice and tea are both covered in Assam’s official agricultural statistics.",
+            "as": "অসমৰ চৰকাৰী কৃষি পৰিসংখ্যাত ধান আৰু চাহ দুয়োটাৰ তথ্য আছে।"
+          },
+          "id": "ag05.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which clue explains water leaving the tea plot?",
+            "as": "চাহৰ মাটিৰ পৰা পানী ওলাই যোৱা কোনটো সংকেতে বুজায়?"
+          },
+          "options": [
+            {
+              "en": "The plot name",
+              "as": "ঠাইৰ নাম"
+            },
+            {
+              "en": "Distance to town alone",
+              "as": "কেৱল নগৰৰ দূৰত্ব"
+            },
+            {
+              "en": "Drainage",
+              "as": "পানী ওলাই যোৱাৰ পথ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Drainage is an important clue when interpreting a tea plot.",
+            "as": "চাহ বাগিচাৰ মাটি বুজিবলৈ পানী ওলাই যোৱাৰ পথ এটা দৰকাৰী সংকেত।"
+          },
+          "id": "ag05.u1.06"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The paddy example and tea example manage water differently.",
+            "as": "ধাননি আৰু চাহৰ মাটিৰ উদাহৰণত পানী বেলেগ ধৰণে নিয়ন্ত্ৰণ হয়।"
+          },
+          "answer": true,
+          "why": {
+            "en": "In this comparison, the paddy plot retains water and the tea plot sheds excess water.",
+            "as": "এই তুলনাত ধাননিয়ে পানী ধৰি ৰাখে আৰু চাহৰ মাটিৰ পৰা অতিৰিক্ত পানী ওলাই যায়।"
+          },
+          "id": "ag05.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Oil from field to refinery",
+        "as": "তেলক্ষেত্ৰৰ পৰা শোধনাগাৰলৈ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "An oilfield is where crude oil is extracted.",
+          "as": "তেলক্ষেত্ৰৰ পৰা অশোধিত তেল উলিওৱা হয়।"
+        },
+        {
+          "en": "A refinery processes crude oil.",
+          "as": "শোধনাগাৰত অশোধিত তেল শোধন কৰা হয়।"
+        },
+        {
+          "en": "IndianOil’s Digboi refinery processes crude and makes products including paraffin wax.",
+          "as": "ইণ্ডিয়ান অইলৰ ডিগবৈ শোধনাগাৰত তেল শোধন হয় আৰু পেৰাফিন মমকে ধৰি সামগ্ৰী তৈয়াৰ হয়।"
+        },
+        {
+          "en": "A field and a refinery have different roles even when mapped near each other.",
+          "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish extraction from processing.",
+          "as": "তেল উলিওৱা আৰু শোধন কৰা পৃথককৈ বুজা।"
+        },
+        "result": {
+          "en": "A field and a refinery have different roles even when mapped near each other.",
+          "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Locate Digboi",
+            "as": "ডিগবৈ বিচাৰা"
+          },
+          "text": [
+            {
+              "en": "IndianOil’s Digboi refinery processes crude and makes products including paraffin wax.",
+              "as": "ইণ্ডিয়ান অইলৰ ডিগবৈ শোধনাগাৰত তেল শোধন হয় আৰু পেৰাফিন মমকে ধৰি সামগ্ৰী তৈয়াৰ হয়।"
+            },
+            {
+              "en": "A field and a refinery have different roles even when mapped near each other.",
+              "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.4,
+              24,
+              96.2,
+              28.4
+            ],
+            "show": [
+              "brahmaputra",
+              "guwahati",
+              "dibrugarh",
+              "silchar",
+              "ag-digboi-refinery"
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "ag05.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "IndianOil’s Digboi refinery processes crude and makes products including paraffin wax.",
+              "as": "ইণ্ডিয়ান অইলৰ ডিগবৈ শোধনাগাৰত তেল শোধন হয় আৰু পেৰাফিন মমকে ধৰি সামগ্ৰী তৈয়াৰ হয়।"
+            },
+            {
+              "en": "A field and a refinery have different roles even when mapped near each other.",
+              "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Oilfield · extract",
+                "as": "তেলক্ষেত্ৰ · তেল উলিওৱা"
+              },
+              {
+                "en": "Refinery · process",
+                "as": "শোধনাগাৰ · তেল শোধন"
+              }
+            ]
+          },
+          "id": "ag05.u2.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Oilfield",
+                "as": "তেলক্ষেত্ৰ"
+              },
+              {
+                "en": "Extract crude",
+                "as": "অশোধিত তেল উলিওৱা"
+              }
+            ],
+            [
+              {
+                "en": "Refinery",
+                "as": "শোধনাগাৰ"
+              },
+              {
+                "en": "Process crude",
+                "as": "তেল শোধন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "A field and a refinery have different roles even when mapped near each other.",
+            "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+          },
+          "id": "ag05.u2.03"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Tap Digboi, the refinery location in this example.",
+            "as": "এই উদাহৰণৰ শোধনাগাৰ থকা ডিগবৈ বাছা।"
+          },
+          "target": "ag-digboi-refinery",
+          "choices": [
+            "ag-digboi-refinery",
+            "dibrugarh",
+            "silchar"
+          ],
+          "why": {
+            "en": "IndianOil’s Digboi refinery processes crude and makes products including paraffin wax.",
+            "as": "ইণ্ডিয়ান অইলৰ ডিগবৈ শোধনাগাৰত তেল শোধন হয় আৰু পেৰাফিন মমকে ধৰি সামগ্ৰী তৈয়াৰ হয়।"
+          },
+          "id": "ag05.u2.04"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order the basic oil supply sequence.",
+            "as": "তেল যোগানৰ মূল ক্ৰম সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Extract crude",
+              "as": "অশোধিত তেল উলিওৱা"
+            },
+            {
+              "en": "Deliver crude to refinery",
+              "as": "অশোধিত তেল শোধনাগাৰলৈ নিয়া"
+            },
+            {
+              "en": "Process crude",
+              "as": "তেল শোধন কৰা"
+            }
+          ],
+          "why": {
+            "en": "A refinery processes crude oil.",
+            "as": "শোধনাগাৰত অশোধিত তেল শোধন কৰা হয়।"
+          },
+          "id": "ag05.u2.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A refinery symbol marks the place where all its crude is extracted.",
+            "as": "শোধনাগাৰৰ চিহ্নটোৱে তাৰ সকলো অশোধিত তেল উলিওৱা ঠাই দেখুৱায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "A field and a refinery have different roles even when mapped near each other.",
+            "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+          },
+          "id": "ag05.u2.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "One documented product of the Digboi refinery is ",
+            "as": "ডিগবৈ শোধনাগাৰৰ এটা নথিভুক্ত সামগ্ৰী হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "paraffin wax",
+              "as": "পেৰাফিন মম"
+            },
+            {
+              "en": "unprocessed tea leaf",
+              "as": "কেঁচা চাহপাত"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "IndianOil’s Digboi refinery processes crude and makes products including paraffin wax.",
+            "as": "ইণ্ডিয়ান অইলৰ ডিগবৈ শোধনাগাৰত তেল শোধন হয় আৰু পেৰাফিন মমকে ধৰি সামগ্ৰী তৈয়াৰ হয়।"
+          },
+          "id": "ag05.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "A route on the Barak",
+        "as": "বৰাকৰ জলপথ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "National Waterway 16 follows the Barak between Lakhipur and Bhanga.",
+          "as": "ৰাষ্ট্ৰীয় জলপথ ১৬ বৰাকেদি লক্ষীপুৰ আৰু ভাঙাৰ মাজেৰে যায়।"
+        },
+        {
+          "en": "The Barak flows generally westward through the Cachar plain.",
+          "as": "বৰাক কাছাৰৰ সমভূমিৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বয়।"
+        },
+        {
+          "en": "From Lakhipur, the downstream trip passes the Silchar area before reaching Bhanga.",
+          "as": "লক্ষীপুৰৰ পৰা নামনিলৈ গ’লে ভাঙা পোৱাৰ আগতে শিলচৰ অঞ্চল পায়।"
+        },
+        {
+          "en": "A waterway map shows the corridor; a local map is needed to see road connections.",
+          "as": "জলপথৰ মানচিত্ৰই মূল পথ দেখুৱায়। ৰাস্তাৰ সংযোগ চাবলৈ স্থানীয় মানচিত্ৰ লাগে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Read the direction and endpoints of NW-16.",
+          "as": "এন ডব্লিউ–১৬ৰ দিশ আৰু দুই মূৰ পঢ়া।"
+        },
+        "result": {
+          "en": "A waterway map shows the corridor; a local map is needed to see road connections.",
+          "as": "জলপথৰ মানচিত্ৰই মূল পথ দেখুৱায়। ৰাস্তাৰ সংযোগ চাবলৈ স্থানীয় মানচিত্ৰ লাগে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A route on the Barak",
+            "as": "বৰাকৰ জলপথ"
+          },
+          "text": [
+            {
+              "en": "National Waterway 16 follows the Barak between Lakhipur and Bhanga.",
+              "as": "ৰাষ্ট্ৰীয় জলপথ ১৬ বৰাকেদি লক্ষীপুৰ আৰু ভাঙাৰ মাজেৰে যায়।"
+            },
+            {
+              "en": "The Barak flows generally westward through the Cachar plain.",
+              "as": "বৰাক কাছাৰৰ সমভূমিৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বয়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Lakhipur",
+                "as": "লক্ষীপুৰ"
+              },
+              {
+                "en": "Silchar area",
+                "as": "শিলচৰ অঞ্চল"
+              },
+              {
+                "en": "Bhanga",
+                "as": "ভাঙা"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "ag05.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "From Lakhipur, the downstream trip passes the Silchar area before reaching Bhanga.",
+              "as": "লক্ষীপুৰৰ পৰা নামনিলৈ গ’লে ভাঙা পোৱাৰ আগতে শিলচৰ অঞ্চল পায়।"
+            },
+            {
+              "en": "A waterway map shows the corridor; a local map is needed to see road connections.",
+              "as": "জলপথৰ মানচিত্ৰই মূল পথ দেখুৱায়। ৰাস্তাৰ সংযোগ চাবলৈ স্থানীয় মানচিত্ৰ লাগে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Lakhipur",
+                "as": "লক্ষীপুৰ"
+              },
+              {
+                "en": "Silchar area",
+                "as": "শিলচৰ অঞ্চল"
+              },
+              {
+                "en": "Bhanga",
+                "as": "ভাঙা"
+              }
+            ]
+          },
+          "id": "ag05.u3.02"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Arrange the route from upstream to downstream.",
+            "as": "উজনিৰ পৰা নামনিলৈ পথটো সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Lakhipur",
+              "as": "লক্ষীপুৰ"
+            },
+            {
+              "en": "Silchar area",
+              "as": "শিলচৰ অঞ্চল"
+            },
+            {
+              "en": "Bhanga",
+              "as": "ভাঙা"
+            }
+          ],
+          "why": {
+            "en": "From Lakhipur, the downstream trip passes the Silchar area before reaching Bhanga.",
+            "as": "লক্ষীপুৰৰ পৰা নামনিলৈ গ’লে ভাঙা পোৱাৰ আগতে শিলচৰ অঞ্চল পায়।"
+          },
+          "id": "ag05.u3.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "NW-16 follows the ",
+            "as": "এন ডব্লিউ–১৬ এই নদীয়েদি যায় "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Brahmaputra",
+              "as": "ব্ৰহ্মপুত্ৰ"
+            },
+            {
+              "en": "Barak",
+              "as": "বৰাক"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "National Waterway 16 follows the Barak between Lakhipur and Bhanga.",
+            "as": "ৰাষ্ট্ৰীয় জলপথ ১৬ বৰাকেদি লক্ষীপুৰ আৰু ভাঙাৰ মাজেৰে যায়।"
+          },
+          "id": "ag05.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The trip from Lakhipur to Bhanga follows the Barak upstream.",
+            "as": "লক্ষীপুৰৰ পৰা ভাঙালৈ যাত্ৰা বৰাকৰ উজনিমুৱা।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The Barak flows generally westward through the Cachar plain.",
+            "as": "বৰাক কাছাৰৰ সমভূমিৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বয়।"
+          },
+          "id": "ag05.u3.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Lakhipur",
+                "as": "লক্ষীপুৰ"
+              },
+              {
+                "en": "Upstream end",
+                "as": "উজনিৰ মূৰ"
+              }
+            ],
+            [
+              {
+                "en": "Bhanga",
+                "as": "ভাঙা"
+              },
+              {
+                "en": "Downstream end",
+                "as": "নামনিৰ মূৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "From Lakhipur, the downstream trip passes the Silchar area before reaching Bhanga.",
+            "as": "লক্ষীপুৰৰ পৰা নামনিলৈ গ’লে ভাঙা পোৱাৰ আগতে শিলচৰ অঞ্চল পায়।"
+          },
+          "id": "ag05.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "What extra evidence shows road access to a landing?",
+            "as": "নাওঘাটলৈ ৰাস্তা আছে নে কোনটো অতিৰিক্ত প্ৰমাণে দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Local road map",
+              "as": "স্থানীয় ৰাস্তাৰ মানচিত্ৰ"
+            },
+            {
+              "en": "River name",
+              "as": "নদীৰ নাম"
+            },
+            {
+              "en": "Waterway number alone",
+              "as": "কেৱল জলপথৰ নম্বৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A waterway map shows the corridor; a local map is needed to see road connections.",
+            "as": "জলপথৰ মানচিত্ৰই মূল পথ দেখুৱায়। ৰাস্তাৰ সংযোগ চাবলৈ স্থানীয় মানচিত্ৰ লাগে।"
+          },
+          "id": "ag05.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Why a settlement grows",
+        "as": "বসতি কিয় বাঢ়ে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A crossing connects routes on opposite sides of a river.",
+          "as": "পাৰাপাৰৰ ঠাই এটাই নদীৰ দুয়োপাৰৰ পথ সংযোগ কৰে।"
+        },
+        {
+          "en": "A road junction can bring travellers from different directions.",
+          "as": "পথৰ সংযোগস্থলে বেলেগ বেলেগ দিশৰ যাত্ৰীক একেলগ কৰিব পাৰে।"
+        },
+        {
+          "en": "Lower terrain may flood even where the route is convenient.",
+          "as": "যাতায়াত সুবিধাজনক হ’লেও চাপৰ মাটি প্লাৱিত হ’ব পাৰে।"
+        },
+        {
+          "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+          "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Combine transport and terrain evidence.",
+          "as": "যাতায়াত আৰু ভূমিৰ প্ৰমাণ একেলগে ব্যৱহাৰ কৰা।"
+        },
+        "result": {
+          "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+          "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why a settlement grows",
+            "as": "বসতি কিয় বাঢ়ে"
+          },
+          "text": [
+            {
+              "en": "A crossing connects routes on opposite sides of a river.",
+              "as": "পাৰাপাৰৰ ঠাই এটাই নদীৰ দুয়োপাৰৰ পথ সংযোগ কৰে।"
+            },
+            {
+              "en": "A road junction can bring travellers from different directions.",
+              "as": "পথৰ সংযোগস্থলে বেলেগ বেলেগ দিশৰ যাত্ৰীক একেলগ কৰিব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Low river crossing",
+                "as": "চাপৰ পাৰাপাৰ"
+              },
+              {
+                "en": "Higher road junction",
+                "as": "ওখ পথ সংযোগস্থল"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "ag05.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Lower terrain may flood even where the route is convenient.",
+              "as": "যাতায়াত সুবিধাজনক হ’লেও চাপৰ মাটি প্লাৱিত হ’ব পাৰে।"
+            },
+            {
+              "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+              "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Low river crossing",
+                "as": "চাপৰ পাৰাপাৰ"
+              },
+              {
+                "en": "Higher road junction",
+                "as": "ওখ পথ সংযোগস্থল"
+              }
+            ]
+          },
+          "id": "ag05.u4.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Bridge symbol",
+                "as": "দলঙৰ চিহ্ন"
+              },
+              {
+                "en": "Crossing evidence",
+                "as": "পাৰাপাৰৰ প্ৰমাণ"
+              }
+            ],
+            [
+              {
+                "en": "Joining roads",
+                "as": "মিলা ৰাস্তা"
+              },
+              {
+                "en": "Junction evidence",
+                "as": "পথ সংযোগৰ প্ৰমাণ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "A road junction can bring travellers from different directions.",
+            "as": "পথৰ সংযোগস্থলে বেলেগ বেলেগ দিশৰ যাত্ৰীক একেলগ কৰিব পাৰে।"
+          },
+          "id": "ag05.u4.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Good route access guarantees low flood exposure.",
+            "as": "ভাল ৰাস্তা থাকিলেই বানৰ উন্মুক্ততা কম হয়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Lower terrain may flood even where the route is convenient.",
+            "as": "যাতায়াত সুবিধাজনক হ’লেও চাপৰ মাটি প্লাৱিত হ’ব পাৰে।"
+          },
+          "id": "ag05.u4.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "For two independent clues, compare the roads with the ",
+            "as": "দুটা পৃথক সংকেতৰ বাবে ৰাস্তাৰ লগতে চোৱা "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "terrain or flood layer",
+              "as": "ভূমি বা বান স্তৰ"
+            },
+            {
+              "en": "road names alone",
+              "as": "কেৱল ৰাস্তাৰ নাম"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+            "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+          },
+          "id": "ag05.u4.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Build an explanation in a sensible order.",
+            "as": "ব্যাখ্যাটো যুক্তিসংগত ক্ৰমত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Find the route connection",
+              "as": "পথৰ সংযোগ বিচৰা"
+            },
+            {
+              "en": "Inspect terrain or flood exposure",
+              "as": "ভূমি বা বান উন্মুক্ততা চোৱা"
+            },
+            {
+              "en": "Explain the trade-off",
+              "as": "সুবিধা আৰু অসুবিধা বুজোৱা"
+            }
+          ],
+          "why": {
+            "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+            "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+          },
+          "id": "ag05.u4.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which extra layer could overturn a claim based only on convenient roads?",
+            "as": "কেৱল সুবিধাজনক ৰাস্তাৰ দাবী কোনটো অতিৰিক্ত স্তৰে সলনি কৰিব পাৰে?"
+          },
+          "options": [
+            {
+              "en": "A duplicate road layer",
+              "as": "একে ৰাস্তাৰ আন স্তৰ"
+            },
+            {
+              "en": "A list of road names",
+              "as": "ৰাস্তাৰ নামৰ তালিকা"
+            },
+            {
+              "en": "Flood exposure",
+              "as": "বানৰ উন্মুক্ততা"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Lower terrain may flood even where the route is convenient.",
+            "as": "যাতায়াত সুবিধাজনক হ’লেও চাপৰ মাটি প্লাৱিত হ’ব পাৰে।"
+          },
+          "id": "ag05.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "mission": {
+      "objective": {
+        "en": "What makes a place useful and accessible?",
+        "as": "ঠাই এখন কিহে ব্যৱহাৰযোগ্য আৰু সহজে যাব পৰা কৰে?"
+      },
+      "result": {
+        "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+        "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+      }
+    },
+    "steps": [
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Digboi refinery",
+              "as": "ডিগবৈ শোধনাগাৰ"
+            },
+            {
+              "en": "Processes crude",
+              "as": "তেল শোধন কৰে"
+            }
+          ],
+          [
+            {
+              "en": "Oilfield",
+              "as": "তেলক্ষেত্ৰ"
+            },
+            {
+              "en": "Extracts crude",
+              "as": "অশোধিত তেল উলিয়ায়"
+            }
+          ]
+        ],
+        "why": {
+          "en": "A field and a refinery have different roles even when mapped near each other.",
+          "as": "তেলক্ষেত্ৰ আৰু শোধনাগাৰ মানচিত্ৰত ওচৰত থাকিলেও সিহঁতৰ কাম বেলেগ।"
+        },
+        "id": "ag05.test.01"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order the Barak waterway locations downstream.",
+          "as": "বৰাকৰ জলপথৰ ঠাইবোৰ নামনিলৈ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Lakhipur",
+            "as": "লক্ষীপুৰ"
+          },
+          {
+            "en": "Silchar",
+            "as": "শিলচৰ"
+          },
+          {
+            "en": "Bhanga",
+            "as": "ভাঙা"
+          }
+        ],
+        "why": {
+          "en": "From Lakhipur, the downstream trip passes the Silchar area before reaching Bhanga.",
+          "as": "লক্ষীপুৰৰ পৰা নামনিলৈ গ’লে ভাঙা পোৱাৰ আগতে শিলচৰ অঞ্চল পায়।"
+        },
+        "id": "ag05.test.02"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "A crop label alone shows how a plot handles excess water.",
+          "as": "কেৱল শস্যৰ নামেই মাটিৰ অতিৰিক্ত পানী কেনেকৈ ওলায় দেখুৱায়।"
+        },
+        "answer": false,
+        "why": {
+          "en": "In this comparison, the paddy plot retains water and the tea plot sheds excess water.",
+          "as": "এই তুলনাত ধাননিয়ে পানী ধৰি ৰাখে আৰু চাহৰ মাটিৰ পৰা অতিৰিক্ত পানী ওলাই যায়।"
+        },
+        "id": "ag05.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which pair gives independent evidence for site access and exposure?",
+          "as": "যাতায়াত আৰু বানৰ উন্মুক্ততাৰ পৃথক প্ৰমাণ কোনটো যোৰে দিয়ে?"
+        },
+        "options": [
+          {
+            "en": "Two copies of a road map",
+            "as": "ৰাস্তাৰ মানচিত্ৰৰ দুটা প্ৰতিলিপি"
+          },
+          {
+            "en": "Two spellings of a village",
+            "as": "গাঁৱৰ নামৰ দুটা বানান"
+          },
+          {
+            "en": "Road map and flood layer",
+            "as": "ৰাস্তাৰ মানচিত্ৰ আৰু বান স্তৰ"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "In this schematic, the higher junction combines road access with lower mapped flood exposure.",
+          "as": "এই আৰ্হিত ওখ সংযোগস্থলত ৰাস্তাৰ সুবিধা আৰু মানচিত্ৰত কম বান উন্মুক্ততা দুয়ো আছে।"
+        },
+        "id": "ag05.test.04"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "A road crossing a mapped flood zone may be exposed even if the settlement is in a ",
+          "as": "বসতি এই শ্ৰেণীত থাকিলেও বান অঞ্চল পাৰ হোৱা ৰাস্তা উন্মুক্ত হ’ব পাৰে "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "lower class",
+            "as": "নিম্ন শ্ৰেণীত"
+          },
+          {
+            "en": "river channel",
+            "as": "নদীৰ খাতত"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The settlement has a lower class, but its access road can still be exposed.",
+          "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+        },
+        "id": "ag05.test.05"
+      }
+    ]
+  }
+}
