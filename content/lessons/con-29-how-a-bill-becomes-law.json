@@ -105,7 +105,20 @@
       }
      ],
      "art": "houses",
-     "id": "con-29.u1.01"
+     "id": "con-29.u1.01",
+     "diagram": {
+       "layout": "flow",
+       "items": [
+         {
+           "en": "Either House",
+           "as": "যিকোনো এখন সদন"
+         },
+         {
+           "en": "Other House",
+           "as": "আনখন সদন"
+         }
+       ]
+     }
     },
     {
      "type": "story",
@@ -326,7 +339,28 @@
       }
      ],
      "art": "scroll",
-     "id": "con-29.u2.01"
+     "id": "con-29.u2.01",
+     "diagram": {
+       "layout": "grid",
+       "items": [
+         {
+           "en": "Ordinary",
+           "as": "সাধাৰণ"
+         },
+         {
+           "en": "Money",
+           "as": "ধন"
+         },
+         {
+           "en": "Financial",
+           "as": "বিত্তীয়"
+         },
+         {
+           "en": "Amendment",
+           "as": "সংশোধনী"
+         }
+       ]
+     }
     },
     {
      "type": "story",
@@ -559,7 +593,20 @@
       }
      ],
      "art": "calendar",
-     "id": "con-29.u3.01"
+     "id": "con-29.u3.01",
+     "diagram": {
+       "layout": "flow",
+       "items": [
+         {
+           "en": "Lok Sabha",
+           "as": "লোকসভা"
+         },
+         {
+           "en": "Rajya Sabha · 14 days",
+           "as": "ৰাজ্যসভা · ১৪ দিন"
+         }
+       ]
+     }
     },
     {
      "type": "story",
@@ -773,7 +820,24 @@
       }
      ],
      "art": "houses",
-     "id": "con-29.u4.01"
+     "id": "con-29.u4.01",
+     "diagram": {
+       "layout": "grid",
+       "items": [
+         {
+           "en": "Rejection",
+           "as": "প্ৰত্যাখ্যান"
+         },
+         {
+           "en": "Final disagreement",
+           "as": "চূড়ান্ত মতভেদ"
+         },
+         {
+           "en": "Six months without passage",
+           "as": "ছমাহত গৃহীত নোহোৱা"
+         }
+       ]
+     }
     },
     {
      "type": "story",
@@ -1014,7 +1078,24 @@
       }
      ],
      "art": "seal",
-     "id": "con-29.u5.01"
+     "id": "con-29.u5.01",
+     "diagram": {
+       "layout": "grid",
+       "items": [
+         {
+           "en": "Assent",
+           "as": "সন্মতি"
+         },
+         {
+           "en": "Withhold assent",
+           "as": "সন্মতি নিদিয়া"
+         },
+         {
+           "en": "Return for reconsideration",
+           "as": "পুনৰ বিবেচনাৰ বাবে ঘূৰাই দিয়া"
+         }
+       ]
+     }
     },
     {
      "type": "story",
@@ -1033,7 +1114,24 @@
       }
      ],
      "art": "scroll",
-     "id": "con-29.u5.02"
+     "id": "con-29.u5.02",
+     "diagram": {
+       "layout": "flow",
+       "items": [
+         {
+           "en": "Returned bill",
+           "as": "ঘূৰাই দিয়া বিধেয়ক"
+         },
+         {
+           "en": "Passed again",
+           "as": "পুনৰ গৃহীত"
+         },
+         {
+           "en": "Assent required",
+           "as": "সন্মতি বাধ্যতামূলক"
+         }
+       ]
+     }
     },
     {
      "type": "tf",
