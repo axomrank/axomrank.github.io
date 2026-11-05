@@ -1,0 +1,1242 @@
+{
+  "id": "gf-08-indian-rivers",
+  "course": "geography-foundations",
+  "no": 8,
+  "version": 1,
+  "king": {
+    "en": "Trace India’s rivers",
+    "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
+  },
+  "reign": {
+    "en": "Trace India’s rivers",
+    "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
+  },
+  "portrait": "gf-08-indian-rivers/basin.webp",
+  "sources": [
+    {
+      "title": "Central Water Commission, basin map and table",
+      "url": "https://cwc.gov.in/sites/default/files/preliminary-report-final.pdf",
+      "used_for": "Figure 3 and basin table, system grouping and reference map."
+    },
+    {
+      "title": "Central Water Commission, Annexure I",
+      "url": "https://cwc.gov.in/en/file/29383/download?token=wJhOuXV2",
+      "used_for": "Receiving seas for the selected peninsular rivers and Ganga."
+    },
+    {
+      "title": "NCERT, India Physical Environment",
+      "url": "https://ncert.nic.in/textbook.php?kegy1=1-7",
+      "used_for": "Drainage Systems chapter, general river courses and river-mouth examples."
+    },
+    {
+      "title": "ASDMA, Flood Early Warning System documentation",
+      "url": "https://darpg.gov.in/sites/default/files/70.%20Flood%20Early%20Warning%20SystemFLEWS-Documentation-Final.pdf",
+      "used_for": "Brahmaputra’s direction through Assam."
+    },
+    {
+      "title": "DataMeet Community Maps, India outline",
+      "url": "https://github.com/datameet/maps/tree/master/Country",
+      "used_for": "Survey of India and Census 2011-derived india-soi.geojson, simplified. Adapted outline used under CC BY-SA 2.5."
+    },
+    {
+      "title": "Creative Commons Attribution-ShareAlike 2.5",
+      "url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "used_for": "Licence for the adapted DataMeet outline in the India map and teaching figures."
+    }
+  ],
+  "review_notes": "Bilingual terminology and clarity pass completed. Independent Assamese editorial review pending. Teaching diagrams are schematic.",
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Field atlas",
+      "as": "ভূগোলৰ মানচিত্ৰ"
+    },
+    "title": {
+      "en": "Trace India’s rivers",
+      "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
+    },
+    "hook": {
+      "en": "Where does water go from the hills to the sea?",
+      "as": "পাহাৰৰ পৰা সাগৰলৈ পানী ক’লৈ যায়?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Trace a basin",
+        "as": "নদী অৱবাহিকা অনুসৰণ কৰা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A river basin is the area that drains toward a common outlet.",
+          "as": "এটা উমৈহতীয়া নিৰ্গমন বিন্দুলৈ পানী বৈ অহা অঞ্চলটোৱেই নদী অৱবাহিকা।"
+        },
+        {
+          "en": "A drainage divide separates land draining toward different outlets.",
+          "as": "জলবিভাজিকাই বেলেগ নিৰ্গমন বিন্দুলৈ পানী যোৱা অঞ্চল পৃথক কৰে।"
+        },
+        {
+          "en": "A tributary joins another stream at a confluence.",
+          "as": "উপনদী এখন সংগমস্থলত আন এখন নদীত মিলে।"
+        },
+        {
+          "en": "In this basin, water from A passes the confluence B and leaves at C.",
+          "as": "এই অৱবাহিকাত Aৰ পানী B সংগমস্থল পাৰ হৈ Cৰে ওলাই যায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Trace a basin",
+            "as": "নদী অৱবাহিকা অনুসৰণ কৰা"
+          },
+          "text": [
+            {
+              "en": "A river basin is the area that drains toward a common outlet.",
+              "as": "এটা উমৈহতীয়া নিৰ্গমন বিন্দুলৈ পানী বৈ অহা অঞ্চলটোৱেই নদী অৱবাহিকা।"
+            },
+            {
+              "en": "A drainage divide separates land draining toward different outlets.",
+              "as": "জলবিভাজিকাই বেলেগ নিৰ্গমন বিন্দুলৈ পানী যোৱা অঞ্চল পৃথক কৰে।"
+            }
+          ],
+          "img": "basin.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic basin. The ridge is brown and arrows show water flow.",
+            "as": "অৱবাহিকাৰ আৰ্হি। মুগা ৰেখা পাহাৰৰ শিৰ আৰু কাঁড়ে পানীৰ দিশ দেখুৱায়।"
+          },
+          "link": {
+            "lessonId": "gf-01-map-skills",
+            "lesson": 1,
+            "unitNo": 4,
+            "unitTitle": {
+              "en": "Read the slope",
+              "as": "ঢাল পঢ়া"
+            },
+            "note": {
+              "en": "Use elevation and slope to understand where water can flow.",
+              "as": "পানী ক’লৈ যাব বুজিবলৈ উচ্চতা আৰু ঢাল ব্যৱহাৰ কৰা।"
+            }
+          },
+          "id": "gf-08-indian-rivers.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A tributary joins another stream at a confluence.",
+              "as": "উপনদী এখন সংগমস্থলত আন এখন নদীত মিলে।"
+            },
+            {
+              "en": "In this basin, water from A passes the confluence B and leaves at C.",
+              "as": "এই অৱবাহিকাত Aৰ পানী B সংগমস্থল পাৰ হৈ Cৰে ওলাই যায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Divide · separates flow",
+                "as": "জলবিভাজিকা · প্ৰবাহ পৃথক কৰে"
+              },
+              {
+                "en": "Confluence · joins streams",
+                "as": "সংগমস্থল · জলধাৰা মিলায়"
+              }
+            ]
+          },
+          "id": "gf-08-indian-rivers.u1.02"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "In this basin, water from A passes the confluence B and leaves at C.",
+            "as": "এই অৱবাহিকাত Aৰ পানী B সংগমস্থল পাৰ হৈ Cৰে ওলাই যায়।"
+          },
+          "q": {
+            "en": "Follow the water downstream.",
+            "as": "পানীৰ সোঁত নামনিলৈ অনুসৰণ কৰা।"
+          },
+          "items": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            },
+            {
+              "en": "C",
+              "as": "C"
+            }
+          ],
+          "img": "basin.webp",
+          "imageCaption": {
+            "en": "Schematic basin. The ridge is brown and arrows show water flow.",
+            "as": "অৱবাহিকাৰ আৰ্হি। মুগা ৰেখা পাহাৰৰ শিৰ আৰু কাঁড়ে পানীৰ দিশ দেখুৱায়।"
+          },
+          "imageAlt": {
+            "en": "A marks an upstream branch. It joins a second stream at B. The combined channel flows toward C, its outlet.",
+            "as": "A উজনিৰ এটা শাখা। ই Bত আন এটা জলধাৰাৰ লগত মিলে। মিলা জলধাৰা নিৰ্গমন বিন্দু Cলৈ বয়।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u1.03"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "A tributary joins another stream at a confluence.",
+            "as": "উপনদী এখন সংগমস্থলত আন এখন নদীত মিলে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Drainage divide",
+                "as": "জলবিভাজিকা"
+              },
+              {
+                "en": "Separates drainage paths",
+                "as": "পানীৰ পথ পৃথক কৰে"
+              }
+            ],
+            [
+              {
+                "en": "Confluence",
+                "as": "সংগমস্থল"
+              },
+              {
+                "en": "Streams meet",
+                "as": "জলধাৰা মিলে"
+              }
+            ]
+          ],
+          "id": "gf-08-indian-rivers.u1.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "In this basin, water from A passes the confluence B and leaves at C.",
+            "as": "এই অৱবাহিকাত Aৰ পানী B সংগমস্থল পাৰ হৈ Cৰে ওলাই যায়।"
+          },
+          "before": {
+            "en": "The two streams meet at ",
+            "as": "জলধাৰা দুটা এই বিন্দুত মিলে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            },
+            {
+              "en": "C",
+              "as": "C"
+            }
+          ],
+          "answer": 1,
+          "img": "basin.webp",
+          "imageCaption": {
+            "en": "Schematic basin. The ridge is brown and arrows show water flow.",
+            "as": "অৱবাহিকাৰ আৰ্হি। মুগা ৰেখা পাহাৰৰ শিৰ আৰু কাঁড়ে পানীৰ দিশ দেখুৱায়।"
+          },
+          "imageAlt": {
+            "en": "A marks an upstream branch. It joins a second stream at B. The combined channel flows toward C, its outlet.",
+            "as": "A উজনিৰ এটা শাখা। ই Bত আন এটা জলধাৰাৰ লগত মিলে। মিলা জলধাৰা নিৰ্গমন বিন্দু Cলৈ বয়।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u1.05"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A river basin is the area that drains toward a common outlet.",
+            "as": "এটা উমৈহতীয়া নিৰ্গমন বিন্দুলৈ পানী বৈ অহা অঞ্চলটোৱেই নদী অৱবাহিকা।"
+          },
+          "s": {
+            "en": "A basin includes only the channel itself.",
+            "as": "অৱবাহিকাত কেৱল নদীখাতটো থাকে।"
+          },
+          "answer": false,
+          "id": "gf-08-indian-rivers.u1.06"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "A drainage divide separates land draining toward different outlets.",
+            "as": "জলবিভাজিকাই বেলেগ নিৰ্গমন বিন্দুলৈ পানী যোৱা অঞ্চল পৃথক কৰে।"
+          },
+          "q": {
+            "en": "Which feature separates areas feeding different outlets?",
+            "as": "বেলেগ নিৰ্গমন বিন্দুলৈ পানী যোৱা অঞ্চল কোনটো ভূ-আকৃতিয়ে পৃথক কৰে?"
+          },
+          "options": [
+            {
+              "en": "Mouth",
+              "as": "মোহনা"
+            },
+            {
+              "en": "Confluence",
+              "as": "সংগমস্থল"
+            },
+            {
+              "en": "Divide",
+              "as": "জলবিভাজিকা"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-08-indian-rivers.u1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Follow water from a source branch to the mouth.",
+          "as": "উৎসৰ এটা শাখাৰ পৰা মোহনালৈ পানীৰ পথ অনুসৰণ কৰা।"
+        },
+        "result": {
+          "en": "In this basin, water from A passes the confluence B and leaves at C.",
+          "as": "এই অৱবাহিকাত Aৰ পানী B সংগমস্থল পাৰ হৈ Cৰে ওলাই যায়।"
+        }
+      }
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Across the northern rivers",
+        "as": "উত্তৰৰ নদীবোৰৰ মাজেৰে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The Indus system lies in the northwest. Its main river continues through Pakistan to the Arabian Sea.",
+          "as": "সিন্ধু নদী প্ৰণালী উত্তৰ-পশ্চিমত। মূল নদী পাকিস্তানৰ মাজেৰে আৰব সাগৰলৈ যায়।"
+        },
+        {
+          "en": "The Ganga crosses the northern plains broadly eastward toward the Bengal delta.",
+          "as": "গংগা উত্তৰৰ সমভূমি পাৰ হৈ সাধাৰণতে পূবলৈ বংগ বদ্বীপৰ ফালে বয়।"
+        },
+        {
+          "en": "The Brahmaputra flows broadly westward across Assam, then south into Bangladesh.",
+          "as": "ব্ৰহ্মপুত্ৰ অসমৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ পাছত দক্ষিণে বাংলাদেশত সোমায়।"
+        },
+        {
+          "en": "The Ganga and Brahmaputra join the wider Ganga–Brahmaputra–Meghna system draining to the Bay of Bengal.",
+          "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বংগোপসাগৰলৈ যোৱা বহল গংগা–ব্ৰহ্মপুত্ৰ–মেঘনা প্ৰণালীৰ অংশ।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Across the northern rivers",
+            "as": "উত্তৰৰ নদীবোৰৰ মাজেৰে"
+          },
+          "text": [
+            {
+              "en": "The Indus system lies in the northwest. Its main river continues through Pakistan to the Arabian Sea.",
+              "as": "সিন্ধু নদী প্ৰণালী উত্তৰ-পশ্চিমত। মূল নদী পাকিস্তানৰ মাজেৰে আৰব সাগৰলৈ যায়।"
+            },
+            {
+              "en": "The Ganga crosses the northern plains broadly eastward toward the Bengal delta.",
+              "as": "গংগা উত্তৰৰ সমভূমি পাৰ হৈ সাধাৰণতে পূবলৈ বংগ বদ্বীপৰ ফালে বয়।"
+            }
+          ],
+          "img": "northern.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "India outline and schematic river paths. Arrows show broad flow direction. Paths omit bends and tributaries. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5.",
+            "as": "ভাৰতৰ ৰূপৰেখা আৰু নদীৰ আৰ্হি পথ। কাঁড়ে সাধাৰণ প্ৰবাহ দিশ দেখুৱায়। ভাঁজ আৰু উপনদী দেখুওৱা হোৱা নাই। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5।"
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-08-indian-rivers.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The Brahmaputra flows broadly westward across Assam, then south into Bangladesh.",
+              "as": "ব্ৰহ্মপুত্ৰ অসমৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ পাছত দক্ষিণে বাংলাদেশত সোমায়।"
+            },
+            {
+              "en": "The Ganga and Brahmaputra join the wider Ganga–Brahmaputra–Meghna system draining to the Bay of Bengal.",
+              "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বংগোপসাগৰলৈ যোৱা বহল গংগা–ব্ৰহ্মপুত্ৰ–মেঘনা প্ৰণালীৰ অংশ।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Northwest · Indus",
+                "as": "উত্তৰ-পশ্চিম · সিন্ধু"
+              },
+              {
+                "en": "Northern plains · Ganga",
+                "as": "উত্তৰৰ সমভূমি · গংগা"
+              },
+              {
+                "en": "Assam Valley · Brahmaputra",
+                "as": "অসম উপত্যকা · ব্ৰহ্মপুত্ৰ"
+              }
+            ]
+          },
+          "id": "gf-08-indian-rivers.u2.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The Brahmaputra flows broadly westward across Assam, then south into Bangladesh.",
+            "as": "ব্ৰহ্মপুত্ৰ অসমৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ পাছত দক্ষিণে বাংলাদেশত সোমায়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Indus",
+                "as": "সিন্ধু"
+              },
+              {
+                "en": "Path 1",
+                "as": "পথ ১"
+              }
+            ],
+            [
+              {
+                "en": "Ganga",
+                "as": "গংগা"
+              },
+              {
+                "en": "Path 2",
+                "as": "পথ ২"
+              }
+            ],
+            [
+              {
+                "en": "Brahmaputra",
+                "as": "ব্ৰহ্মপুত্ৰ"
+              },
+              {
+                "en": "Path 3",
+                "as": "পথ ৩"
+              }
+            ]
+          ],
+          "img": "northern.webp",
+          "imageCaption": {
+            "en": "India outline and schematic river paths. Arrows show broad flow direction. Paths omit bends and tributaries. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5.",
+            "as": "ভাৰতৰ ৰূপৰেখা আৰু নদীৰ আৰ্হি পথ। কাঁড়ে সাধাৰণ প্ৰবাহ দিশ দেখুৱায়। ভাঁজ আৰু উপনদী দেখুওৱা হোৱা নাই। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5।"
+          },
+          "imageAlt": {
+            "en": "Path 1 is in the northwest and leads southwest. Path 2 crosses the northern plain from west to east. Path 3 crosses Assam toward the west before bending south.",
+            "as": "১ নম্বৰ পথ উত্তৰ-পশ্চিমত আৰু দক্ষিণ-পশ্চিমলৈ যায়। ২ উত্তৰৰ সমভূমিত পশ্চিমৰ পৰা পূবলৈ যায়। ৩ অসমত পশ্চিমলৈ গৈ পাছত দক্ষিণলৈ বেঁকা হয়।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u2.03"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "The Brahmaputra flows broadly westward across Assam, then south into Bangladesh.",
+            "as": "ব্ৰহ্মপুত্ৰ অসমৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ পাছত দক্ষিণে বাংলাদেশত সোমায়।"
+          },
+          "before": {
+            "en": "The path across Assam represents the ",
+            "as": "অসমৰ মাজেৰে যোৱা পথটোৱে দেখুৱায় "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Brahmaputra",
+              "as": "ব্ৰহ্মপুত্ৰ"
+            },
+            {
+              "en": "Ganga",
+              "as": "গংগা"
+            },
+            {
+              "en": "Indus",
+              "as": "সিন্ধু"
+            }
+          ],
+          "answer": 0,
+          "img": "northern.webp",
+          "imageCaption": {
+            "en": "India outline and schematic river paths. Arrows show broad flow direction. Paths omit bends and tributaries. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5.",
+            "as": "ভাৰতৰ ৰূপৰেখা আৰু নদীৰ আৰ্হি পথ। কাঁড়ে সাধাৰণ প্ৰবাহ দিশ দেখুৱায়। ভাঁজ আৰু উপনদী দেখুওৱা হোৱা নাই। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5।"
+          },
+          "imageAlt": {
+            "en": "Path 1 is in the northwest and leads southwest. Path 2 crosses the northern plain from west to east. Path 3 crosses Assam toward the west before bending south.",
+            "as": "১ নম্বৰ পথ উত্তৰ-পশ্চিমত আৰু দক্ষিণ-পশ্চিমলৈ যায়। ২ উত্তৰৰ সমভূমিত পশ্চিমৰ পৰা পূবলৈ যায়। ৩ অসমত পশ্চিমলৈ গৈ পাছত দক্ষিণলৈ বেঁকা হয়।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u2.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "The Ganga and Brahmaputra join the wider Ganga–Brahmaputra–Meghna system draining to the Bay of Bengal.",
+            "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বংগোপসাগৰলৈ যোৱা বহল গংগা–ব্ৰহ্মপুত্ৰ–মেঘনা প্ৰণালীৰ অংশ।"
+          },
+          "s": {
+            "en": "The Ganga and Brahmaputra drain to different seas.",
+            "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বেলেগ সাগৰলৈ বয়।"
+          },
+          "answer": false,
+          "id": "gf-08-indian-rivers.u2.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The Indus system lies in the northwest. Its main river continues through Pakistan to the Arabian Sea.",
+            "as": "সিন্ধু নদী প্ৰণালী উত্তৰ-পশ্চিমত। মূল নদী পাকিস্তানৰ মাজেৰে আৰব সাগৰলৈ যায়।"
+          },
+          "q": {
+            "en": "Which system reaches the Arabian Sea?",
+            "as": "কোনটো নদী প্ৰণালী আৰব সাগৰ পায়?"
+          },
+          "options": [
+            {
+              "en": "Ganga",
+              "as": "গংগা"
+            },
+            {
+              "en": "Indus",
+              "as": "সিন্ধু"
+            },
+            {
+              "en": "Brahmaputra",
+              "as": "ব্ৰহ্মপুত্ৰ"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-08-indian-rivers.u2.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "The Ganga and Brahmaputra join the wider Ganga–Brahmaputra–Meghna system draining to the Bay of Bengal.",
+            "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বংগোপসাগৰলৈ যোৱা বহল গংগা–ব্ৰহ্মপুত্ৰ–মেঘনা প্ৰণালীৰ অংশ।"
+          },
+          "q": {
+            "en": "Follow the Brahmaputra through the lower part of the system.",
+            "as": "প্ৰণালীটোৰ নামনি অংশত ব্ৰহ্মপুত্ৰ অনুসৰণ কৰা।"
+          },
+          "items": [
+            {
+              "en": "Assam",
+              "as": "অসম"
+            },
+            {
+              "en": "Bangladesh",
+              "as": "বাংলাদেশ"
+            },
+            {
+              "en": "Bay of Bengal",
+              "as": "বংগোপসাগৰ"
+            }
+          ],
+          "id": "gf-08-indian-rivers.u2.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Locate three northern river systems and follow their broad directions.",
+          "as": "উত্তৰৰ তিনিটা নদী প্ৰণালী বিচাৰি সিহঁতৰ সাধাৰণ দিশ অনুসৰণ কৰা।"
+        },
+        "result": {
+          "en": "The Ganga and Brahmaputra join the wider Ganga–Brahmaputra–Meghna system draining to the Bay of Bengal.",
+          "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বংগোপসাগৰলৈ যোৱা বহল গংগা–ব্ৰহ্মপুত্ৰ–মেঘনা প্ৰণালীৰ অংশ।"
+        }
+      }
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Two shores of the peninsula",
+        "as": "উপদ্বীপৰ দুটা উপকূল"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Narmada (1) and Tapi (2) are west-flowing rivers that drain to the Arabian Sea.",
+          "as": "নৰ্মদা (১) আৰু তাপ্তী (২) পশ্চিমলৈ বৈ আৰব সাগৰত পৰে।"
+        },
+        {
+          "en": "Mahanadi (3) and Godavari (4) drain eastward into the Bay of Bengal.",
+          "as": "মহানদী (৩) আৰু গোদাৱৰী (৪) পূবলৈ বৈ বংগোপসাগৰত পৰে।"
+        },
+        {
+          "en": "Krishna (5) and Kaveri (6) also drain to the Bay of Bengal.",
+          "as": "কৃষ্ণা (৫) আৰু কাবেৰীও (৬) বংগোপসাগৰত পৰে।"
+        },
+        {
+          "en": "Use the arrow near the mouth to infer the receiving coast on this schematic.",
+          "as": "এই আৰ্হিত কোন উপকূলত নদী পৰে বুজিবলৈ মোহনাৰ ওচৰৰ কাঁড় চোৱা।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Two shores of the peninsula",
+            "as": "উপদ্বীপৰ দুটা উপকূল"
+          },
+          "text": [
+            {
+              "en": "Narmada (1) and Tapi (2) are west-flowing rivers that drain to the Arabian Sea.",
+              "as": "নৰ্মদা (১) আৰু তাপ্তী (২) পশ্চিমলৈ বৈ আৰব সাগৰত পৰে।"
+            },
+            {
+              "en": "Mahanadi (3) and Godavari (4) drain eastward into the Bay of Bengal.",
+              "as": "মহানদী (৩) আৰু গোদাৱৰী (৪) পূবলৈ বৈ বংগোপসাগৰত পৰে।"
+            }
+          ],
+          "img": "peninsula.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic river directions on an India outline. The arrows show broad flow, and the numbers identify the paths. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5.",
+            "as": "ভাৰতৰ ৰূপৰেখাত নদীৰ দিশৰ আৰ্হি। কাঁড়ে সাধাৰণ প্ৰবাহ আৰু সংখ্যাই পথ চিনায়। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5।"
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-08-indian-rivers.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Krishna (5) and Kaveri (6) also drain to the Bay of Bengal.",
+              "as": "কৃষ্ণা (৫) আৰু কাবেৰীও (৬) বংগোপসাগৰত পৰে।"
+            },
+            {
+              "en": "Use the arrow near the mouth to infer the receiving coast on this schematic.",
+              "as": "এই আৰ্হিত কোন উপকূলত নদী পৰে বুজিবলৈ মোহনাৰ ওচৰৰ কাঁড় চোৱা।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "West coast · Arabian Sea",
+                "as": "পশ্চিম উপকূল · আৰব সাগৰ"
+              },
+              {
+                "en": "East coast · Bay of Bengal",
+                "as": "পূব উপকূল · বংগোপসাগৰ"
+              }
+            ]
+          },
+          "id": "gf-08-indian-rivers.u3.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Use the arrow near the mouth to infer the receiving coast on this schematic.",
+            "as": "এই আৰ্হিত কোন উপকূলত নদী পৰে বুজিবলৈ মোহনাৰ ওচৰৰ কাঁড় চোৱা।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Narmada and Tapi",
+                "as": "নৰ্মদা আৰু তাপ্তী"
+              },
+              {
+                "en": "Paths 1 and 2",
+                "as": "পথ ১ আৰু ২"
+              }
+            ],
+            [
+              {
+                "en": "Mahanadi and Godavari",
+                "as": "মহানদী আৰু গোদাৱৰী"
+              },
+              {
+                "en": "Paths 3 and 4",
+                "as": "পথ ৩ আৰু ৪"
+              }
+            ],
+            [
+              {
+                "en": "Krishna and Kaveri",
+                "as": "কৃষ্ণা আৰু কাবেৰী"
+              },
+              {
+                "en": "Paths 5 and 6",
+                "as": "পথ ৫ আৰু ৬"
+              }
+            ]
+          ],
+          "img": "peninsula.webp",
+          "imageCaption": {
+            "en": "Schematic river directions on an India outline. The arrows show broad flow, and the numbers identify the paths. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5.",
+            "as": "ভাৰতৰ ৰূপৰেখাত নদীৰ দিশৰ আৰ্হি। কাঁড়ে সাধাৰণ প্ৰবাহ আৰু সংখ্যাই পথ চিনায়। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5।"
+          },
+          "imageAlt": {
+            "en": "Paths 1 and 2 point west. Paths 3, 4, 5 and 6 point east, ordered from north to south.",
+            "as": "১ আৰু ২ নম্বৰ পথ পশ্চিমমুৱা। ৩, ৪, ৫ আৰু ৬ নম্বৰ পথ পূবমুৱা, উত্তৰৰ পৰা দক্ষিণলৈ সজোৱা।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u3.03"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Narmada (1) and Tapi (2) are west-flowing rivers that drain to the Arabian Sea.",
+            "as": "নৰ্মদা (১) আৰু তাপ্তী (২) পশ্চিমলৈ বৈ আৰব সাগৰত পৰে।"
+          },
+          "before": {
+            "en": "The Tapi drains to the ",
+            "as": "তাপ্তীৰ পানী পৰে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Arabian Sea",
+              "as": "আৰব সাগৰত"
+            },
+            {
+              "en": "Bay of Bengal",
+              "as": "বংগোপসাগৰত"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-08-indian-rivers.u3.04"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Krishna (5) and Kaveri (6) also drain to the Bay of Bengal.",
+            "as": "কৃষ্ণা (৫) আৰু কাবেৰীও (৬) বংগোপসাগৰত পৰে।"
+          },
+          "q": {
+            "en": "Which river reaches a different sea from the other two?",
+            "as": "আন দুখনতকৈ কোনখন নদী বেলেগ সাগৰত পৰে?"
+          },
+          "options": [
+            {
+              "en": "Narmada",
+              "as": "নৰ্মদা"
+            },
+            {
+              "en": "Krishna",
+              "as": "কৃষ্ণা"
+            },
+            {
+              "en": "Kaveri",
+              "as": "কাবেৰী"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-08-indian-rivers.u3.05"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Mahanadi (3) and Godavari (4) drain eastward into the Bay of Bengal.",
+            "as": "মহানদী (৩) আৰু গোদাৱৰী (৪) পূবলৈ বৈ বংগোপসাগৰত পৰে।"
+          },
+          "s": {
+            "en": "The Godavari and the Mahanadi end on opposite coasts.",
+            "as": "গোদাৱৰী আৰু মহানদী বিপৰীত উপকূলত পৰে।"
+          },
+          "answer": false,
+          "id": "gf-08-indian-rivers.u3.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Mahanadi (3) and Godavari (4) drain eastward into the Bay of Bengal.",
+            "as": "মহানদী (৩) আৰু গোদাৱৰী (৪) পূবলৈ বৈ বংগোপসাগৰত পৰে।"
+          },
+          "q": {
+            "en": "Arrange the four east-flowing examples by their paths north to south.",
+            "as": "পূবলৈ বোৱা চাৰিখন নদী পথ অনুসৰি উত্তৰৰ পৰা দক্ষিণলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Mahanadi",
+              "as": "মহানদী"
+            },
+            {
+              "en": "Godavari",
+              "as": "গোদাৱৰী"
+            },
+            {
+              "en": "Krishna",
+              "as": "কৃষ্ণা"
+            },
+            {
+              "en": "Kaveri",
+              "as": "কাবেৰী"
+            }
+          ],
+          "img": "peninsula.webp",
+          "imageCaption": {
+            "en": "Schematic river directions on an India outline. The arrows show broad flow, and the numbers identify the paths. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5.",
+            "as": "ভাৰতৰ ৰূপৰেখাত নদীৰ দিশৰ আৰ্হি। কাঁড়ে সাধাৰণ প্ৰবাহ আৰু সংখ্যাই পথ চিনায়। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5।"
+          },
+          "imageAlt": {
+            "en": "Paths 1 and 2 point west. Paths 3, 4, 5 and 6 point east, ordered from north to south.",
+            "as": "১ আৰু ২ নম্বৰ পথ পশ্চিমমুৱা। ৩, ৪, ৫ আৰু ৬ নম্বৰ পথ পূবমুৱা, উত্তৰৰ পৰা দক্ষিণলৈ সজোৱা।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u3.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Group six rivers by their receiving sea.",
+          "as": "ছখন নদী সিহঁতৰ পানী পৰা সাগৰ অনুসৰি ভাগ কৰা।"
+        },
+        "result": {
+          "en": "Use the arrow near the mouth to infer the receiving coast on this schematic.",
+          "as": "এই আৰ্হিত কোন উপকূলত নদী পৰে বুজিবলৈ মোহনাৰ ওচৰৰ কাঁড় চোৱা।"
+        }
+      }
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Read the river mouth",
+        "as": "নদীৰ মোহনা পঢ়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A delta forms where river sediment builds land near a mouth.",
+          "as": "নদীৰ পলসে মোহনাৰ ওচৰত মাটি গঢ়িলে বদ্বীপ হয়।"
+        },
+        {
+          "en": "A delta can have several distributaries carrying water away from the main channel.",
+          "as": "বদ্বীপত মূল নদীখাতৰ পৰা পানী আঁতৰাই নিয়া কেইবাটাও শাখা থাকিব পাৰে।"
+        },
+        {
+          "en": "An estuary is a coastal water body where river water mixes with seawater.",
+          "as": "নদীৰ মিঠাপানী আৰু সাগৰৰ লুণীয়া পানী মিহলি হোৱা উপকূলীয় জলাশয়ক জোৱাৰ-ভাটাৰ মোহনা বোলে।"
+        },
+        {
+          "en": "A illustrates a branching delta. B illustrates a widening estuary. These are simplified shapes.",
+          "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the river mouth",
+            "as": "নদীৰ মোহনা পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A delta forms where river sediment builds land near a mouth.",
+              "as": "নদীৰ পলসে মোহনাৰ ওচৰত মাটি গঢ়িলে বদ্বীপ হয়।"
+            },
+            {
+              "en": "A delta can have several distributaries carrying water away from the main channel.",
+              "as": "বদ্বীপত মূল নদীখাতৰ পৰা পানী আঁতৰাই নিয়া কেইবাটাও শাখা থাকিব পাৰে।"
+            }
+          ],
+          "img": "mouths.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Two schematic river mouths. Green is land and blue is water.",
+            "as": "নদী সাগৰত পৰা দুটা আৰ্হি। সেউজীয়া মাটি আৰু নীলা পানী।"
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-08-indian-rivers.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "An estuary is a coastal water body where river water mixes with seawater.",
+              "as": "নদীৰ মিঠাপানী আৰু সাগৰৰ লুণীয়া পানী মিহলি হোৱা উপকূলীয় জলাশয়ক জোৱাৰ-ভাটাৰ মোহনা বোলে।"
+            },
+            {
+              "en": "A illustrates a branching delta. B illustrates a widening estuary. These are simplified shapes.",
+              "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A · branching channels",
+                "as": "A · ভাগ হোৱা খাত"
+              },
+              {
+                "en": "B · widening channel",
+                "as": "B · বহল হৈ যোৱা খাত"
+              }
+            ]
+          },
+          "id": "gf-08-indian-rivers.u4.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "A illustrates a branching delta. B illustrates a widening estuary. These are simplified shapes.",
+            "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "View A",
+                "as": "চিত্ৰ A"
+              },
+              {
+                "en": "Branching delta",
+                "as": "শাখাযুক্ত বদ্বীপ"
+              }
+            ],
+            [
+              {
+                "en": "View B",
+                "as": "চিত্ৰ B"
+              },
+              {
+                "en": "Widening estuary",
+                "as": "বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা"
+              }
+            ]
+          ],
+          "img": "mouths.webp",
+          "imageCaption": {
+            "en": "Two schematic river mouths. Green is land and blue is water.",
+            "as": "নদী সাগৰত পৰা দুটা আৰ্হি। সেউজীয়া মাটি আৰু নীলা পানী।"
+          },
+          "imageAlt": {
+            "en": "In A, one river splits into three branches around areas of land. In B, one channel widens toward the sea.",
+            "as": "Aত এখন নদী মাটিৰ অংশৰ মাজেৰে তিনিটা শাখাত ভাগ হৈছে। Bত এটা খাত সাগৰৰ ফালে বহল হৈছে।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u4.03"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "A delta forms where river sediment builds land near a mouth.",
+            "as": "নদীৰ পলসে মোহনাৰ ওচৰত মাটি গঢ়িলে বদ্বীপ হয়।"
+          },
+          "before": {
+            "en": "New land at a delta can build from ",
+            "as": "বদ্বীপত নতুন মাটি গঢ়িব পাৰে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "sea salt alone",
+              "as": "কেৱল সাগৰৰ নিমখৰ পৰা"
+            },
+            {
+              "en": "river sediment",
+              "as": "নদীৰ পলসৰ পৰা"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-08-indian-rivers.u4.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A delta can have several distributaries carrying water away from the main channel.",
+            "as": "বদ্বীপত মূল নদীখাতৰ পৰা পানী আঁতৰাই নিয়া কেইবাটাও শাখা থাকিব পাৰে।"
+          },
+          "s": {
+            "en": "A distributary flows into the main river.",
+            "as": "বিতৰিকা এটা মূল নদীত মিলে।"
+          },
+          "answer": false,
+          "id": "gf-08-indian-rivers.u4.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "A illustrates a branching delta. B illustrates a widening estuary. These are simplified shapes.",
+            "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
+          },
+          "q": {
+            "en": "Which feature supports the delta interpretation in A?",
+            "as": "Aক বদ্বীপ বুলি বুজিবলৈ কোনটো সংকেত সহায় কৰে?"
+          },
+          "options": [
+            {
+              "en": "One wide channel",
+              "as": "এটা বহল খাত"
+            },
+            {
+              "en": "Several branches around land",
+              "as": "মাটিৰ মাজেৰে কেইবাটাও শাখা"
+            },
+            {
+              "en": "North arrow",
+              "as": "উত্তৰৰ কাঁড়"
+            }
+          ],
+          "answer": 1,
+          "img": "mouths.webp",
+          "imageCaption": {
+            "en": "Two schematic river mouths. Green is land and blue is water.",
+            "as": "নদী সাগৰত পৰা দুটা আৰ্হি। সেউজীয়া মাটি আৰু নীলা পানী।"
+          },
+          "imageAlt": {
+            "en": "In A, one river splits into three branches around areas of land. In B, one channel widens toward the sea.",
+            "as": "Aত এখন নদী মাটিৰ অংশৰ মাজেৰে তিনিটা শাখাত ভাগ হৈছে। Bত এটা খাত সাগৰৰ ফালে বহল হৈছে।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-08-indian-rivers.u4.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "A delta forms where river sediment builds land near a mouth.",
+            "as": "নদীৰ পলসে মোহনাৰ ওচৰত মাটি গঢ়িলে বদ্বীপ হয়।"
+          },
+          "q": {
+            "en": "Trace one possible delta-building sequence.",
+            "as": "বদ্বীপ গঢ়াৰ এটা সম্ভাব্য ক্ৰম সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "River carries sediment",
+              "as": "নদীয়ে পলস কঢ়িয়ায়"
+            },
+            {
+              "en": "Sediment collects near the mouth",
+              "as": "মোহনাৰ ওচৰত পলস জমা হয়"
+            },
+            {
+              "en": "Deposits build land",
+              "as": "জমা পলসে মাটি গঢ়ে"
+            }
+          ],
+          "id": "gf-08-indian-rivers.u4.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Compare evidence for a delta and an estuary.",
+          "as": "বদ্বীপ আৰু মোহনাৰ প্ৰমাণ তুলনা কৰা।"
+        },
+        "result": {
+          "en": "A illustrates a branching delta. B illustrates a widening estuary. These are simplified shapes.",
+          "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
+        }
+      }
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "order",
+        "why": {
+          "en": "A stream feeds the main channel at a confluence. The mouth is downstream.",
+          "as": "জলধাৰা সংগমস্থলত মূল নদীখাতত মিলে। মোহনা নামনিত।"
+        },
+        "q": {
+          "en": "A hillside stream joins a river that then reaches the sea. Trace the water.",
+          "as": "পাহাৰৰ জলধাৰা এখন নদীত মিলে আৰু নদী সাগৰ পায়। পানীৰ পথ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Hillside stream",
+            "as": "পাহাৰৰ জলধাৰা"
+          },
+          {
+            "en": "Confluence",
+            "as": "সংগমস্থল"
+          },
+          {
+            "en": "River mouth",
+            "as": "নদীৰ মোহনা"
+          }
+        ],
+        "id": "gf-08-indian-rivers.test.01"
+      },
+      {
+        "type": "match",
+        "why": {
+          "en": "The two selected peninsular examples drain to opposite coasts.",
+          "as": "উপদ্বীপৰ বাছি লোৱা নদী দুখন বিপৰীত উপকূলত পৰে।"
+        },
+        "pairs": [
+          [
+            {
+              "en": "Narmada",
+              "as": "নৰ্মদা"
+            },
+            {
+              "en": "Arabian Sea",
+              "as": "আৰব সাগৰ"
+            }
+          ],
+          [
+            {
+              "en": "Godavari",
+              "as": "গোদাৱৰী"
+            },
+            {
+              "en": "Bay of Bengal",
+              "as": "বংগোপসাগৰ"
+            }
+          ]
+        ],
+        "id": "gf-08-indian-rivers.test.02"
+      },
+      {
+        "type": "inline",
+        "why": {
+          "en": "The Brahmaputra flows broadly west across Assam.",
+          "as": "ব্ৰহ্মপুত্ৰ অসমৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বয়।"
+        },
+        "before": {
+          "en": "The river that flows west across Assam before turning south is the ",
+          "as": "দক্ষিণলৈ ঘূৰাৰ আগতে অসমৰ মাজেৰে পশ্চিমলৈ বোৱা নদীখন "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "Indus",
+            "as": "সিন্ধু"
+          },
+          {
+            "en": "Brahmaputra",
+            "as": "ব্ৰহ্মপুত্ৰ"
+          },
+          {
+            "en": "Ganga",
+            "as": "গংগা"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-08-indian-rivers.test.03"
+      },
+      {
+        "type": "tf",
+        "why": {
+          "en": "Deposited sediment can build new land.",
+          "as": "জমা পলসে নতুন মাটি গঢ়িব পাৰে।"
+        },
+        "s": {
+          "en": "A delta can grow where sediment collects near the river mouth.",
+          "as": "নদীৰ মোহনাৰ ওচৰত পলস জমা হ’লে বদ্বীপ বাঢ়িব পাৰে।"
+        },
+        "answer": true,
+        "id": "gf-08-indian-rivers.test.04"
+      },
+      {
+        "type": "odd",
+        "why": {
+          "en": "A ridge can separate downhill flow going to two outlets.",
+          "as": "পাহাৰৰ শিৰে দুটা নিৰ্গমন বিন্দুলৈ যোৱা পানী পৃথক কৰিব পাৰে।"
+        },
+        "q": {
+          "en": "Which feature helps you identify a possible drainage divide from map evidence?",
+          "as": "মানচিত্ৰৰ কোনটো সংকেতে সম্ভাব্য জলবিভাজিকা চিনাত সহায় কৰে?"
+        },
+        "options": [
+          {
+            "en": "Two streams meeting",
+            "as": "দুটা জলধাৰাৰ মিলন"
+          },
+          {
+            "en": "A ridge between opposite slopes",
+            "as": "বিপৰীত ঢালৰ মাজৰ পাহাৰৰ শিৰ"
+          },
+          {
+            "en": "A channel widening at the sea",
+            "as": "সাগৰৰ ওচৰত বহল হোৱা খাত"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-08-indian-rivers.test.05"
+      }
+    ],
+    "mission": {
+      "objective": {
+        "en": "Where does water go from the hills to the sea?",
+        "as": "পাহাৰৰ পৰা সাগৰলৈ পানী ক’লৈ যায়?"
+      },
+      "result": {
+        "en": "You can read the evidence from a new view.",
+        "as": "তুমি নতুন চিত্ৰৰ পৰা প্ৰমাণ পঢ়িব পাৰা।"
+      }
+    }
+  }
+}

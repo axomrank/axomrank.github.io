@@ -1,0 +1,1152 @@
+{
+  "id": "gf-09-india-monsoon",
+  "course": "geography-foundations",
+  "no": 9,
+  "version": 1,
+  "king": {
+    "en": "Read India’s monsoon",
+    "as": "ভাৰতৰ মৌচুমী পঢ়া"
+  },
+  "reign": {
+    "en": "Read India’s monsoon",
+    "as": "ভাৰতৰ মৌচুমী পঢ়া"
+  },
+  "portrait": "gf-09-india-monsoon/cover.webp",
+  "sources": [
+    {
+      "title": "IMD Guwahati normals",
+      "url": "https://city.imd.gov.in/citywx/extreme/climate.php?id=42410",
+      "used_for": "1991–2020 monthly rainfall normals, January, July and October."
+    },
+    {
+      "title": "IMD Chennai normals",
+      "url": "https://city.imd.gov.in/citywx/extreme/climate.php?id=43279",
+      "used_for": "1991–2020 July and October mean rainfall."
+    },
+    {
+      "title": "IMD Onset and Advance",
+      "url": "https://mausam.imd.gov.in/responsive/monsooninformation_onset.php",
+      "used_for": "Kerala normal date and uneven advance."
+    },
+    {
+      "title": "IMD Southwest Withdrawal",
+      "url": "https://mausam.imd.gov.in/responsive/monsooninformation_withdrawal.php",
+      "used_for": "Regional sequence of withdrawal."
+    },
+    {
+      "title": "IMD Northeast Monsoon Monograph",
+      "url": "https://mausam.imd.gov.in/imd_latest/contents/met_monograph.pdf",
+      "used_for": "Season and rainfall on the southeast coast."
+    },
+    {
+      "title": "IMD Statement on the Climate of India during 2025",
+      "url": "https://internal.imd.gov.in/press_release/20260101_pr_4602.pdf",
+      "used_for": "National seasonal rainfall reporting windows."
+    },
+    {
+      "title": "DataMeet Community Maps, India outline",
+      "url": "https://github.com/datameet/maps/tree/master/Country",
+      "used_for": "Survey of India and Census 2011-derived india-soi.geojson, simplified. Adapted outline used under CC BY-SA 2.5."
+    },
+    {
+      "title": "Creative Commons Attribution-ShareAlike 2.5",
+      "url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "used_for": "Licence for the adapted DataMeet outline in the India map and teaching figures."
+    },
+    {
+      "title": "Natural Earth, 1:10m Admin 0 countries",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "used_for": "Public-domain neighbouring land, clipped and simplified."
+    }
+  ],
+  "review_notes": "Bilingual terminology and clarity pass completed. Independent Assamese editorial review pending. Teaching diagrams are schematic.",
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Field atlas",
+      "as": "ভূগোলৰ মানচিত্ৰ"
+    },
+    "title": {
+      "en": "Read India’s monsoon",
+      "as": "ভাৰতৰ মৌচুমী পঢ়া"
+    },
+    "hook": {
+      "en": "Why do Guwahati and Chennai have different rainfall calendars?",
+      "as": "গুৱাহাটী আৰু চেন্নাইৰ বৰষুণৰ সময় কিয় বেলেগ?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Read the seasonal calendar",
+        "as": "ঋতুৰ কেলেণ্ডাৰ পঢ়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A monsoon is a seasonal change in prevailing winds, with important effects on rainfall.",
+          "as": "মৌচুমী মানে প্ৰধান বতাহৰ ঋতুভিত্তিক সলনি, যাৰ বৰষুণত গুৰুত্বপূৰ্ণ প্ৰভাৱ আছে।"
+        },
+        {
+          "en": "IMD groups June through September as the southwest monsoon season for national rainfall summaries.",
+          "as": "বতৰ বিজ্ঞান বিভাগে দেশৰ বৰষুণৰ সাৰাংশত জুনৰ পৰা ছেপ্টেম্বৰলৈ দক্ষিণ-পশ্চিম মৌচুমী ঋতু বুলি ধৰে।"
+        },
+        {
+          "en": "A seasonal summary describes a broad reporting period. Local onset and withdrawal vary.",
+          "as": "ঋতুৰ সাৰাংশই এটা বহল সময় বুজায়। ঠাইভেদে আগমন আৰু প্ৰত্যাৱৰ্তন বেলেগ।"
+        },
+        {
+          "en": "A rainy day is weather evidence. A long seasonal record supports climate comparisons.",
+          "as": "বৰষুণৰ এটা দিন বতৰৰ প্ৰমাণ। বহু ঋতুৰ নথিয়ে জলবায়ু তুলনা কৰাত সহায় কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the seasonal calendar",
+            "as": "ঋতুৰ কেলেণ্ডাৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A monsoon is a seasonal change in prevailing winds, with important effects on rainfall.",
+              "as": "মৌচুমী মানে প্ৰধান বতাহৰ ঋতুভিত্তিক সলনি, যাৰ বৰষুণত গুৰুত্বপূৰ্ণ প্ৰভাৱ আছে।"
+            },
+            {
+              "en": "IMD groups June through September as the southwest monsoon season for national rainfall summaries.",
+              "as": "বতৰ বিজ্ঞান বিভাগে দেশৰ বৰষুণৰ সাৰাংশত জুনৰ পৰা ছেপ্টেম্বৰলৈ দক্ষিণ-পশ্চিম মৌচুমী ঋতু বুলি ধৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "June–September · reporting season",
+                "as": "জুন–ছেপ্টেম্বৰ · প্ৰতিবেদনৰ ঋতু"
+              },
+              {
+                "en": "Local dates · variable",
+                "as": "স্থানীয় তাৰিখ · সলনি হয়"
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "A seasonal summary describes a broad reporting period. Local onset and withdrawal vary.",
+              "as": "ঋতুৰ সাৰাংশই এটা বহল সময় বুজায়। ঠাইভেদে আগমন আৰু প্ৰত্যাৱৰ্তন বেলেগ।"
+            },
+            {
+              "en": "A rainy day is weather evidence. A long seasonal record supports climate comparisons.",
+              "as": "বৰষুণৰ এটা দিন বতৰৰ প্ৰমাণ। বহু ঋতুৰ নথিয়ে জলবায়ু তুলনা কৰাত সহায় কৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Local dates · variable",
+                "as": "স্থানীয় তাৰিখ · সলনি হয়"
+              },
+              {
+                "en": "June–September · reporting season",
+                "as": "জুন–ছেপ্টেম্বৰ · প্ৰতিবেদনৰ ঋতু"
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.u1.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "A rainy day is weather evidence. A long seasonal record supports climate comparisons.",
+            "as": "বৰষুণৰ এটা দিন বতৰৰ প্ৰমাণ। বহু ঋতুৰ নথিয়ে জলবায়ু তুলনা কৰাত সহায় কৰে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Single rainy afternoon",
+                "as": "বৰষুণৰ এটা আবেলি"
+              },
+              {
+                "en": "Weather",
+                "as": "বতৰ"
+              }
+            ],
+            [
+              {
+                "en": "Many years of seasonal rain",
+                "as": "বহু বছৰৰ ঋতুভিত্তিক বৰষুণ"
+              },
+              {
+                "en": "Climate evidence",
+                "as": "জলবায়ুৰ প্ৰমাণ"
+              }
+            ]
+          ],
+          "id": "gf-09-india-monsoon.u1.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A seasonal summary describes a broad reporting period. Local onset and withdrawal vary.",
+            "as": "ঋতুৰ সাৰাংশই এটা বহল সময় বুজায়। ঠাইভেদে আগমন আৰু প্ৰত্যাৱৰ্তন বেলেগ।"
+          },
+          "s": {
+            "en": "The reporting season means every location has the same onset date.",
+            "as": "প্ৰতিবেদনৰ ঋতু মানে সকলো ঠাইতে একে তাৰিখে মৌচুমী আহে।"
+          },
+          "answer": false,
+          "id": "gf-09-india-monsoon.u1.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "IMD groups June through September as the southwest monsoon season for national rainfall summaries.",
+            "as": "বতৰ বিজ্ঞান বিভাগে দেশৰ বৰষুণৰ সাৰাংশত জুনৰ পৰা ছেপ্টেম্বৰলৈ দক্ষিণ-পশ্চিম মৌচুমী ঋতু বুলি ধৰে।"
+          },
+          "before": {
+            "en": "The national southwest monsoon rainfall season begins with the reporting month of ",
+            "as": "দেশৰ দক্ষিণ-পশ্চিম মৌচুমীৰ বৰষুণৰ প্ৰতিবেদন আৰম্ভ হয় "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "June",
+              "as": "জুনত"
+            },
+            {
+              "en": "December",
+              "as": "ডিচেম্বৰত"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-09-india-monsoon.u1.05"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "IMD groups June through September as the southwest monsoon season for national rainfall summaries.",
+            "as": "বতৰ বিজ্ঞান বিভাগে দেশৰ বৰষুণৰ সাৰাংশত জুনৰ পৰা ছেপ্টেম্বৰলৈ দক্ষিণ-পশ্চিম মৌচুমী ঋতু বুলি ধৰে।"
+          },
+          "q": {
+            "en": "Arrange the phases in a broad annual cycle beginning before June.",
+            "as": "জুনৰ আগৰ পৰা বছৰৰ সাধাৰণ পৰ্যায় সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Pre-monsoon",
+              "as": "মৌচুমীৰ আগৰ সময়"
+            },
+            {
+              "en": "Southwest monsoon",
+              "as": "দক্ষিণ-পশ্চিম মৌচুমী"
+            },
+            {
+              "en": "Post-monsoon",
+              "as": "মৌচুমীৰ পাছৰ সময়"
+            }
+          ],
+          "id": "gf-09-india-monsoon.u1.06"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "A monsoon is a seasonal change in prevailing winds, with important effects on rainfall.",
+            "as": "মৌচুমী মানে প্ৰধান বতাহৰ ঋতুভিত্তিক সলনি, যাৰ বৰষুণত গুৰুত্বপূৰ্ণ প্ৰভাৱ আছে।"
+          },
+          "q": {
+            "en": "Which clue defines a monsoon most directly?",
+            "as": "কোনটো সংকেতে মৌচুমীক পোনপটীয়াকৈ বুজায়?"
+          },
+          "options": [
+            {
+              "en": "A single thunderclap",
+              "as": "এটা বজ্ৰধ্বনি"
+            },
+            {
+              "en": "A single warm day",
+              "as": "এটা গৰম দিন"
+            },
+            {
+              "en": "Seasonal change in prevailing winds",
+              "as": "প্ৰধান বতাহৰ ঋতুভিত্তিক সলনি"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-09-india-monsoon.u1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Place southwest monsoon months in the broad annual cycle.",
+          "as": "বছৰৰ সাধাৰণ চক্ৰত দক্ষিণ-পশ্চিম মৌচুমীৰ মাহবোৰ চিনা।"
+        },
+        "result": {
+          "en": "A rainy day is weather evidence. A long seasonal record supports climate comparisons.",
+          "as": "বৰষুণৰ এটা দিন বতৰৰ প্ৰমাণ। বহু ঋতুৰ নথিয়ে জলবায়ু তুলনা কৰাত সহায় কৰে।"
+        }
+      }
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Follow the advance",
+        "as": "আগমন অনুসৰণ কৰা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The southwest monsoon normally reaches Kerala around 1 June.",
+          "as": "দক্ষিণ-পশ্চিম মৌচুমী সাধাৰণতে ১ জুনৰ ওচৰত কেৰালাত আহে।"
+        },
+        {
+          "en": "The monsoon advances across the country over time, often in surges.",
+          "as": "মৌচুমী সময়ৰ লগে লগে দেশজুৰি আগবাঢ়ে, প্ৰায়ে ঢাপে ঢাপে।"
+        },
+        {
+          "en": "A teaching map can show broad moisture pathways from the Arabian Sea and Bay of Bengal.",
+          "as": "শিক্ষণ মানচিত্ৰত আৰব সাগৰ আৰু বংগোপসাগৰৰ পৰা সেমেকা বায়ুৰ সাধাৰণ পথ দেখুৱাব পাৰি।"
+        },
+        {
+          "en": "A normal date summarises past observations. Actual onset can occur earlier or later.",
+          "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Follow the advance",
+            "as": "আগমন অনুসৰণ কৰা"
+          },
+          "text": [
+            {
+              "en": "The southwest monsoon normally reaches Kerala around 1 June.",
+              "as": "দক্ষিণ-পশ্চিম মৌচুমী সাধাৰণতে ১ জুনৰ ওচৰত কেৰালাত আহে।"
+            },
+            {
+              "en": "The monsoon advances across the country over time, often in surges.",
+              "as": "মৌচুমী সময়ৰ লগে লগে দেশজুৰি আগবাঢ়ে, প্ৰায়ে ঢাপে ঢাপে।"
+            }
+          ],
+          "img": "moisture-pathways.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic moisture pathways. 1 Arabian Sea side, 2 Bay of Bengal side. Arrows show broad directions. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5. Neighbouring land by Natural Earth.",
+            "as": "সেমেকা বায়ুৰ পথৰ আৰ্হি। ১ আৰব সাগৰৰ ফাল, ২ বংগোপসাগৰৰ ফাল। কাঁড়ে সাধাৰণ দিশ দেখুৱায়। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5। চুবুৰীয়া স্থলভাগ Natural Earthৰ পৰা।"
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-09-india-monsoon.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "A teaching map can show broad moisture pathways from the Arabian Sea and Bay of Bengal.",
+              "as": "শিক্ষণ মানচিত্ৰত আৰব সাগৰ আৰু বংগোপসাগৰৰ পৰা সেমেকা বায়ুৰ সাধাৰণ পথ দেখুৱাব পাৰি।"
+            },
+            {
+              "en": "A normal date summarises past observations. Actual onset can occur earlier or later.",
+              "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Bay of Bengal pathway",
+                "as": "বংগোপসাগৰৰ পথ"
+              },
+              {
+                "en": "Arabian Sea pathway",
+                "as": "আৰব সাগৰৰ পথ"
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.u2.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "A normal date summarises past observations. Actual onset can occur earlier or later.",
+            "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Kerala around 1 June",
+                "as": "১ জুনৰ ওচৰত কেৰালা"
+              },
+              {
+                "en": "Normal onset",
+                "as": "গড় আগমন"
+              }
+            ],
+            [
+              {
+                "en": "Observed date in a named year",
+                "as": "এটা বছৰৰ দেখা তাৰিখ"
+              },
+              {
+                "en": "Actual onset",
+                "as": "প্ৰকৃত আগমন"
+              }
+            ]
+          ],
+          "id": "gf-09-india-monsoon.u2.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A normal date summarises past observations. Actual onset can occur earlier or later.",
+            "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
+          },
+          "s": {
+            "en": "Normal onset on 1 June guarantees onset that day every year.",
+            "as": "১ জুন গড় আগমন মানে প্ৰতি বছৰে সেই দিনাই মৌচুমী আহে।"
+          },
+          "answer": false,
+          "id": "gf-09-india-monsoon.u2.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "The southwest monsoon normally reaches Kerala around 1 June.",
+            "as": "দক্ষিণ-পশ্চিম মৌচুমী সাধাৰণতে ১ জুনৰ ওচৰত কেৰালাত আহে।"
+          },
+          "before": {
+            "en": "The usual early mainland reference for onset is ",
+            "as": "মূল ভূখণ্ডত আগমনৰ প্ৰথম চিন সাধাৰণতে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Ladakh",
+              "as": "লাডাখ"
+            },
+            {
+              "en": "Kerala",
+              "as": "কেৰালা"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-09-india-monsoon.u2.05"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "A normal date summarises past observations. Actual onset can occur earlier or later.",
+            "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
+          },
+          "q": {
+            "en": "Arrange an onset study.",
+            "as": "মৌচুমী আগমন অধ্যয়নৰ ক্ৰম সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Find the normal date",
+              "as": "গড় তাৰিখ বিচাৰা"
+            },
+            {
+              "en": "Find the actual date for a year",
+              "as": "এটা বছৰৰ প্ৰকৃত তাৰিখ বিচাৰা"
+            },
+            {
+              "en": "Compare the two",
+              "as": "দুয়োটা তুলনা কৰা"
+            }
+          ],
+          "id": "gf-09-india-monsoon.u2.06"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The monsoon advances across the country over time, often in surges.",
+            "as": "মৌচুমী সময়ৰ লগে লগে দেশজুৰি আগবাঢ়ে, প্ৰায়ে ঢাপে ঢাপে।"
+          },
+          "q": {
+            "en": "Which evidence shows how the monsoon reached different regions?",
+            "as": "মৌচুমী বেলেগ অঞ্চললৈ কেনেকৈ গৈছিল কোন প্ৰমাণে দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "A dated advance map",
+              "as": "তাৰিখযুক্ত আগমনৰ মানচিত্ৰ"
+            },
+            {
+              "en": "A soil colour alone",
+              "as": "কেৱল মাটিৰ ৰং"
+            },
+            {
+              "en": "A list of capitals",
+              "as": "ৰাজধানীৰ তালিকা"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-09-india-monsoon.u2.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Interpret the pathways and a normal onset date.",
+          "as": "প্ৰবাহৰ পথ আৰু গড় আগমনৰ তাৰিখৰ অৰ্থ বুজা।"
+        },
+        "result": {
+          "en": "A normal date summarises past observations. Actual onset can occur earlier or later.",
+          "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
+        }
+      }
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Compare two rain records",
+        "as": "বৰষুণৰ দুখন নথি তুলনা কৰা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Guwahati and Chennai observations here use IMD’s 1991–2020 normal period.",
+          "as": "ইয়াত গুৱাহাটী আৰু চেন্নাইৰ পৰ্যবেক্ষণৰ গড় সময় ১৯৯১–২০২০।"
+        },
+        {
+          "en": "Guwahati averages 283.4 mm in July and 117.9 mm in October.",
+          "as": "গুৱাহাটীৰ জুলাইৰ গড় ২৮৩.৪ মিমি আৰু অক্টোবৰৰ গড় ১১৭.৯ মিমি।"
+        },
+        {
+          "en": "Chennai averages 113.1 mm in July and 278.3 mm in October.",
+          "as": "চেন্নাইৰ জুলাইৰ গড় ১১৩.১ মিমি আৰু অক্টোবৰৰ গড় ২৭৮.৩ মিমি।"
+        },
+        {
+          "en": "The wetter of the two selected months differs by station. Terrain and seasonal winds help explain regional contrasts.",
+          "as": "বাছনি কৰা দুটা মাহৰ অধিক বৰষুণৰ মাহটো কেন্দ্ৰভেদে বেলেগ। ভূমি আৰু ঋতুভিত্তিক বতাহে আঞ্চলিক পাৰ্থক্য বুজোৱাত সহায় কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Compare two rain records",
+            "as": "বৰষুণৰ দুখন নথি তুলনা কৰা"
+          },
+          "text": [
+            {
+              "en": "Guwahati and Chennai observations here use IMD’s 1991–2020 normal period.",
+              "as": "ইয়াত গুৱাহাটী আৰু চেন্নাইৰ পৰ্যবেক্ষণৰ গড় সময় ১৯৯১–২০২০।"
+            },
+            {
+              "en": "Guwahati averages 283.4 mm in July and 117.9 mm in October.",
+              "as": "গুৱাহাটীৰ জুলাইৰ গড় ২৮৩.৪ মিমি আৰু অক্টোবৰৰ গড় ১১৭.৯ মিমি।"
+            }
+          ],
+          "img": "station-normals.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "IMD 1991–2020 monthly mean rainfall. G = Guwahati, C = Chennai. 07 July, 10 October.",
+            "as": "বতৰ বিজ্ঞান বিভাগৰ ১৯৯১–২০২০ৰ গড় মাহিলি বৰষুণ। G গুৱাহাটী, C চেন্নাই। ০৭ জুলাই, ১০ অক্টোবৰ।"
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-09-india-monsoon.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Chennai averages 113.1 mm in July and 278.3 mm in October.",
+              "as": "চেন্নাইৰ জুলাইৰ গড় ১১৩.১ মিমি আৰু অক্টোবৰৰ গড় ২৭৮.৩ মিমি।"
+            },
+            {
+              "en": "The wetter of the two selected months differs by station. Terrain and seasonal winds help explain regional contrasts.",
+              "as": "বাছনি কৰা দুটা মাহৰ অধিক বৰষুণৰ মাহটো কেন্দ্ৰভেদে বেলেগ। ভূমি আৰু ঋতুভিত্তিক বতাহে আঞ্চলিক পাৰ্থক্য বুজোৱাত সহায় কৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Chennai · October higher",
+                "as": "চেন্নাই · অক্টোবৰ অধিক"
+              },
+              {
+                "en": "Guwahati · July higher",
+                "as": "গুৱাহাটী · জুলাই অধিক"
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.u3.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The wetter of the two selected months differs by station. Terrain and seasonal winds help explain regional contrasts.",
+            "as": "বাছনি কৰা দুটা মাহৰ অধিক বৰষুণৰ মাহটো কেন্দ্ৰভেদে বেলেগ। ভূমি আৰু ঋতুভিত্তিক বতাহে আঞ্চলিক পাৰ্থক্য বুজোৱাত সহায় কৰে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Guwahati",
+                "as": "গুৱাহাটী"
+              },
+              {
+                "en": "July higher than October",
+                "as": "অক্টোবৰতকৈ জুলাই অধিক"
+              }
+            ],
+            [
+              {
+                "en": "Chennai",
+                "as": "চেন্নাই"
+              },
+              {
+                "en": "October higher than July",
+                "as": "জুলাইতকৈ অক্টোবৰ অধিক"
+              }
+            ]
+          ],
+          "img": "station-normals.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "IMD 1991–2020 monthly mean rainfall. G = Guwahati, C = Chennai. 07 July, 10 October.",
+            "as": "বতৰ বিজ্ঞান বিভাগৰ ১৯৯১–২০২০ৰ গড় মাহিলি বৰষুণ। G গুৱাহাটী, C চেন্নাই। ০৭ জুলাই, ১০ অক্টোবৰ।"
+          },
+          "imageAlt": {
+            "en": "Guwahati July 283.4 mm and October 117.9 mm. Chennai July 113.1 mm and October 278.3 mm.",
+            "as": "গুৱাহাটীৰ জুলাই ২৮৩.৪ মিমি আৰু অক্টোবৰ ১১৭.৯ মিমি। চেন্নাইৰ জুলাই ১১৩.১ মিমি আৰু অক্টোবৰ ২৭৮.৩ মিমি।"
+          },
+          "id": "gf-09-india-monsoon.u3.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Guwahati and Chennai observations here use IMD’s 1991–2020 normal period.",
+            "as": "ইয়াত গুৱাহাটী আৰু চেন্নাইৰ পৰ্যবেক্ষণৰ গড় সময় ১৯৯১–২০২০।"
+          },
+          "s": {
+            "en": "The four plotted values are observations for one year only.",
+            "as": "চিত্ৰৰ চাৰিটা সংখ্যা কেৱল এটা বছৰৰ পৰ্যবেক্ষণ।"
+          },
+          "answer": false,
+          "id": "gf-09-india-monsoon.u3.04"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Chennai averages 113.1 mm in July and 278.3 mm in October.",
+            "as": "চেন্নাইৰ জুলাইৰ গড় ১১৩.১ মিমি আৰু অক্টোবৰৰ গড় ২৭৮.৩ মিমি।"
+          },
+          "q": {
+            "en": "Which bar represents Chennai in October?",
+            "as": "কোনটো স্তম্ভ চেন্নাইৰ অক্টোবৰ?"
+          },
+          "options": [
+            {
+              "en": "113.1 mm",
+              "as": "১১৩.১ মিমি"
+            },
+            {
+              "en": "117.9 mm",
+              "as": "১১৭.৯ মিমি"
+            },
+            {
+              "en": "278.3 mm",
+              "as": "২৭৮.৩ মিমি"
+            }
+          ],
+          "answer": 2,
+          "img": "station-normals.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "IMD 1991–2020 monthly mean rainfall. G = Guwahati, C = Chennai. 07 July, 10 October.",
+            "as": "বতৰ বিজ্ঞান বিভাগৰ ১৯৯১–২০২০ৰ গড় মাহিলি বৰষুণ। G গুৱাহাটী, C চেন্নাই। ০৭ জুলাই, ১০ অক্টোবৰ।"
+          },
+          "imageAlt": {
+            "en": "Guwahati July 283.4 mm and October 117.9 mm. Chennai July 113.1 mm and October 278.3 mm.",
+            "as": "গুৱাহাটীৰ জুলাই ২৮৩.৪ মিমি আৰু অক্টোবৰ ১১৭.৯ মিমি। চেন্নাইৰ জুলাই ১১৩.১ মিমি আৰু অক্টোবৰ ২৭৮.৩ মিমি।"
+          },
+          "id": "gf-09-india-monsoon.u3.05"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Guwahati averages 283.4 mm in July and 117.9 mm in October.",
+            "as": "গুৱাহাটীৰ জুলাইৰ গড় ২৮৩.৪ মিমি আৰু অক্টোবৰৰ গড় ১১৭.৯ মিমি।"
+          },
+          "before": {
+            "en": "Both station records use the same unit of ",
+            "as": "দুয়ো কেন্দ্ৰৰ নথিত একে একক ব্যৱহাৰ হৈছে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "millimetres",
+              "as": "মিলিমিটাৰ"
+            },
+            {
+              "en": "degrees Celsius",
+              "as": "ডিগ্ৰী চেলছিয়াছ"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-09-india-monsoon.u3.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Guwahati and Chennai observations here use IMD’s 1991–2020 normal period.",
+            "as": "ইয়াত গুৱাহাটী আৰু চেন্নাইৰ পৰ্যবেক্ষণৰ গড় সময় ১৯৯১–২০২০।"
+          },
+          "q": {
+            "en": "Compare climate charts responsibly.",
+            "as": "জলবায়ুৰ চিত্ৰ ভালদৰে তুলনা কৰা।"
+          },
+          "items": [
+            {
+              "en": "Check stations and normal period",
+              "as": "কেন্দ্ৰ আৰু গড় সময় চোৱা"
+            },
+            {
+              "en": "Check matching units",
+              "as": "একক মিলে নে চোৱা"
+            },
+            {
+              "en": "Compare the same month",
+              "as": "একে মাহ তুলনা কৰা"
+            }
+          ],
+          "id": "gf-09-india-monsoon.u3.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Compare two stations using the same baseline and unit.",
+          "as": "একে সময়সীমা আৰু এককেৰে দুটা কেন্দ্ৰ তুলনা কৰা।"
+        },
+        "result": {
+          "en": "The wetter of the two selected months differs by station. Terrain and seasonal winds help explain regional contrasts.",
+          "as": "বাছনি কৰা দুটা মাহৰ অধিক বৰষুণৰ মাহটো কেন্দ্ৰভেদে বেলেগ। ভূমি আৰু ঋতুভিত্তিক বতাহে আঞ্চলিক পাৰ্থক্য বুজোৱাত সহায় কৰে।"
+        }
+      }
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "When the winds turn",
+        "as": "বতাহৰ দিশ সলনি হ’লে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Southwest monsoon withdrawal generally begins in northwestern India.",
+          "as": "দক্ষিণ-পশ্চিম মৌচুমীৰ প্ৰত্যাৱৰ্তন সাধাৰণতে উত্তৰ-পশ্চিম ভাৰতত আৰম্ভ হয়।"
+        },
+        {
+          "en": "Withdrawal advances across regions over time as circulation changes.",
+          "as": "বায়ু চলাচল সলনি হোৱাৰ লগে লগে প্ৰত্যাৱৰ্তন অঞ্চলবোৰৰ মাজেৰে আগবাঢ়ে।"
+        },
+        {
+          "en": "The northeast monsoon brings important rain to parts of the southeast coast, including Tamil Nadu, in October–December.",
+          "as": "অক্টোবৰ–ডিচেম্বৰত উত্তৰ-পূব মৌচুমীয়ে তামিলনাডুকে ধৰি দক্ষিণ-পূব উপকূলৰ কিছুমান ঠাইত গুৰুত্বপূৰ্ণ বৰষুণ আনে।"
+        },
+        {
+          "en": "Southwest monsoon withdrawal does not mean rainfall ends everywhere in India.",
+          "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতিলেই সমগ্ৰ ভাৰতত বৰষুণ শেষ নহয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "When the winds turn",
+            "as": "বতাহৰ দিশ সলনি হ’লে"
+          },
+          "text": [
+            {
+              "en": "Southwest monsoon withdrawal generally begins in northwestern India.",
+              "as": "দক্ষিণ-পশ্চিম মৌচুমীৰ প্ৰত্যাৱৰ্তন সাধাৰণতে উত্তৰ-পশ্চিম ভাৰতত আৰম্ভ হয়।"
+            },
+            {
+              "en": "Withdrawal advances across regions over time as circulation changes.",
+              "as": "বায়ু চলাচল সলনি হোৱাৰ লগে লগে প্ৰত্যাৱৰ্তন অঞ্চলবোৰৰ মাজেৰে আগবাঢ়ে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Northwest · withdrawal begins",
+                "as": "উত্তৰ-পশ্চিম · প্ৰত্যাৱৰ্তন আৰম্ভ"
+              },
+              {
+                "en": "Southeast coast · later rains",
+                "as": "দক্ষিণ-পূব উপকূল · পাছৰ বৰষুণ"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-09-india-monsoon.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "The northeast monsoon brings important rain to parts of the southeast coast, including Tamil Nadu, in October–December.",
+              "as": "অক্টোবৰ–ডিচেম্বৰত উত্তৰ-পূব মৌচুমীয়ে তামিলনাডুকে ধৰি দক্ষিণ-পূব উপকূলৰ কিছুমান ঠাইত গুৰুত্বপূৰ্ণ বৰষুণ আনে।"
+            },
+            {
+              "en": "Southwest monsoon withdrawal does not mean rainfall ends everywhere in India.",
+              "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতিলেই সমগ্ৰ ভাৰতত বৰষুণ শেষ নহয়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Southeast coast · later rains",
+                "as": "দক্ষিণ-পূব উপকূল · পাছৰ বৰষুণ"
+              },
+              {
+                "en": "Northwest · withdrawal begins",
+                "as": "উত্তৰ-পশ্চিম · প্ৰত্যাৱৰ্তন আৰম্ভ"
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.u4.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The northeast monsoon brings important rain to parts of the southeast coast, including Tamil Nadu, in October–December.",
+            "as": "অক্টোবৰ–ডিচেম্বৰত উত্তৰ-পূব মৌচুমীয়ে তামিলনাডুকে ধৰি দক্ষিণ-পূব উপকূলৰ কিছুমান ঠাইত গুৰুত্বপূৰ্ণ বৰষুণ আনে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Northwestern India",
+                "as": "উত্তৰ-পশ্চিম ভাৰত"
+              },
+              {
+                "en": "Usual start of southwest withdrawal",
+                "as": "দক্ষিণ-পশ্চিম প্ৰত্যাৱৰ্তনৰ সাধাৰণ আৰম্ভণি"
+              }
+            ],
+            [
+              {
+                "en": "Tamil Nadu coast",
+                "as": "তামিলনাডু উপকূল"
+              },
+              {
+                "en": "Important northeast monsoon rain",
+                "as": "উত্তৰ-পূব মৌচুমীৰ গুৰুত্বপূৰ্ণ বৰষুণ"
+              }
+            ]
+          ],
+          "id": "gf-09-india-monsoon.u4.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Southwest monsoon withdrawal does not mean rainfall ends everywhere in India.",
+            "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতিলেই সমগ্ৰ ভাৰতত বৰষুণ শেষ নহয়।"
+          },
+          "s": {
+            "en": "Withdrawal means every Indian region immediately enters a dry period.",
+            "as": "প্ৰত্যাৱৰ্তন মানে ভাৰতৰ সকলো অঞ্চল তৎক্ষণাৎ শুকান হয়।"
+          },
+          "answer": false,
+          "id": "gf-09-india-monsoon.u4.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "The northeast monsoon brings important rain to parts of the southeast coast, including Tamil Nadu, in October–December.",
+            "as": "অক্টোবৰ–ডিচেম্বৰত উত্তৰ-পূব মৌচুমীয়ে তামিলনাডুকে ধৰি দক্ষিণ-পূব উপকূলৰ কিছুমান ঠাইত গুৰুত্বপূৰ্ণ বৰষুণ আনে।"
+          },
+          "before": {
+            "en": "October–December rains on the southeast coast are associated with the ",
+            "as": "দক্ষিণ-পূব উপকূলৰ অক্টোবৰ–ডিচেম্বৰৰ বৰষুণ জড়িত "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Himalayan snowfall only",
+              "as": "কেৱল হিমালয়ৰ তুষাৰপাতৰ লগত"
+            },
+            {
+              "en": "northeast monsoon",
+              "as": "উত্তৰ-পূব মৌচুমীৰ লগত"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-09-india-monsoon.u4.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The northeast monsoon brings important rain to parts of the southeast coast, including Tamil Nadu, in October–December.",
+            "as": "অক্টোবৰ–ডিচেম্বৰত উত্তৰ-পূব মৌচুমীয়ে তামিলনাডুকে ধৰি দক্ষিণ-পূব উপকূলৰ কিছুমান ঠাইত গুৰুত্বপূৰ্ণ বৰষুণ আনে।"
+          },
+          "q": {
+            "en": "Which place illustrates why rainfall can continue after southwest withdrawal?",
+            "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতাৰ পাছতো বৰষুণ কিয় হ’ব পাৰে কোন ঠাইয়ে দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Tamil Nadu coast",
+              "as": "তামিলনাডু উপকূল"
+            },
+            {
+              "en": "A location outside the monsoon region",
+              "as": "মৌচুমী অঞ্চলৰ বাহিৰৰ ঠাই"
+            },
+            {
+              "en": "The open polar ocean",
+              "as": "মেৰু সাগৰ"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-09-india-monsoon.u4.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Withdrawal advances across regions over time as circulation changes.",
+            "as": "বায়ু চলাচল সলনি হোৱাৰ লগে লগে প্ৰত্যাৱৰ্তন অঞ্চলবোৰৰ মাজেৰে আগবাঢ়ে।"
+          },
+          "q": {
+            "en": "Read a map of withdrawal without assuming simultaneous change.",
+            "as": "সকলো ঠাইত একে সময়ত সলনি ধৰি নোলোৱাকৈ প্ৰত্যাৱৰ্তনৰ মানচিত্ৰ পঢ়া।"
+          },
+          "items": [
+            {
+              "en": "Locate the first dated region",
+              "as": "প্ৰথম তাৰিখৰ অঞ্চল বিচাৰা"
+            },
+            {
+              "en": "Follow later dates",
+              "as": "পাছৰ তাৰিখ অনুসৰণ কৰা"
+            },
+            {
+              "en": "Compare with local rainfall",
+              "as": "স্থানীয় বৰষুণৰ সৈতে তুলনা কৰা"
+            }
+          ],
+          "id": "gf-09-india-monsoon.u4.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish southwest withdrawal and southeast-coast rains.",
+          "as": "দক্ষিণ-পশ্চিমৰ প্ৰত্যাৱৰ্তন আৰু দক্ষিণ-পূব উপকূলৰ বৰষুণ পৃথক কৰা।"
+        },
+        "result": {
+          "en": "Southwest monsoon withdrawal does not mean rainfall ends everywhere in India.",
+          "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতিলেই সমগ্ৰ ভাৰতত বৰষুণ শেষ নহয়।"
+        }
+      }
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "inline",
+        "why": {
+          "en": "One year does not establish the long-term pattern.",
+          "as": "এটা বছৰে দীঘলীয়া ধাৰা নিৰ্ধাৰণ নকৰে।"
+        },
+        "before": {
+          "en": "One unusually dry July is an observation of ",
+          "as": "এটা অস্বাভাৱিক শুকান জুলাই এইটোৰ পৰ্যবেক্ষণ "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "weather in that year",
+            "as": "সেই বছৰৰ বতৰ"
+          },
+          {
+            "en": "the long-term climate by itself",
+            "as": "কেৱল দীঘলীয়া জলবায়ু"
+          }
+        ],
+        "answer": 0,
+        "id": "gf-09-india-monsoon.test.01"
+      },
+      {
+        "type": "tf",
+        "why": {
+          "en": "Actual onset varies around the normal.",
+          "as": "প্ৰকৃত আগমন গড়ৰ আগতে বা পাছত হ’ব পাৰে।"
+        },
+        "s": {
+          "en": "A normal onset date is a fixed deadline every year.",
+          "as": "গড় আগমনৰ তাৰিখ প্ৰতি বছৰৰ নিৰ্দিষ্ট সীমা।"
+        },
+        "answer": false,
+        "id": "gf-09-india-monsoon.test.02"
+      },
+      {
+        "type": "match",
+        "why": {
+          "en": "These are IMD monthly means for 1991–2020.",
+          "as": "এইবোৰ বতৰ বিজ্ঞান বিভাগৰ ১৯৯১–২০২০ৰ মাহিলি গড়।"
+        },
+        "pairs": [
+          [
+            {
+              "en": "Guwahati in July",
+              "as": "জুলাইত গুৱাহাটী"
+            },
+            {
+              "en": "283.4 mm",
+              "as": "২৮৩.৪ মিমি"
+            }
+          ],
+          [
+            {
+              "en": "Chennai in October",
+              "as": "অক্টোবৰত চেন্নাই"
+            },
+            {
+              "en": "278.3 mm",
+              "as": "২৭৮.৩ মিমি"
+            }
+          ]
+        ],
+        "id": "gf-09-india-monsoon.test.03"
+      },
+      {
+        "type": "odd",
+        "why": {
+          "en": "Northeast monsoon rainfall is important for parts of the southeast coast.",
+          "as": "দক্ষিণ-পূব উপকূলৰ কিছুমান অংশত উত্তৰ-পূব মৌচুমীৰ বৰষুণ গুৰুত্বপূৰ্ণ।"
+        },
+        "q": {
+          "en": "Which region can still get important rain in the northeast monsoon?",
+          "as": "উত্তৰ-পূব মৌচুমীত কোন অঞ্চলত গুৰুত্বপূৰ্ণ বৰষুণ হ’ব পাৰে?"
+        },
+        "options": [
+          {
+            "en": "Only far northwest India",
+            "as": "কেৱল সুদূৰ উত্তৰ-পশ্চিম ভাৰত"
+          },
+          {
+            "en": "Southeast coast of India",
+            "as": "ভাৰতৰ দক্ষিণ-পূব উপকূল"
+          },
+          {
+            "en": "All locations equally",
+            "as": "সকলো ঠাইত সমানে"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-09-india-monsoon.test.04"
+      },
+      {
+        "type": "order",
+        "why": {
+          "en": "Lift and cooling can lead to condensation.",
+          "as": "উত্থান আৰু শীতলতাই ঘনীভৱন ঘটাব পাৰে।"
+        },
+        "q": {
+          "en": "Recall the relief-rainfall sequence when moist air reaches a mountain.",
+          "as": "সেমেকা বায়ু পাহাৰ পালে ভূমিজনিত বৰষুণৰ ক্ৰম সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Air is lifted",
+            "as": "বায়ু উঠে"
+          },
+          {
+            "en": "Air cools",
+            "as": "বায়ু ঠাণ্ডা হয়"
+          },
+          {
+            "en": "Droplets form if saturated",
+            "as": "সংপৃক্ত হ’লে টোপাল হয়"
+          }
+        ],
+        "id": "gf-09-india-monsoon.test.05"
+      }
+    ],
+    "mission": {
+      "objective": {
+        "en": "Why do Guwahati and Chennai have different rainfall calendars?",
+        "as": "গুৱাহাটী আৰু চেন্নাইৰ বৰষুণৰ সময় কিয় বেলেগ?"
+      },
+      "result": {
+        "en": "You can read the evidence from a new view.",
+        "as": "তুমি নতুন চিত্ৰৰ পৰা প্ৰমাণ পঢ়িব পাৰা।"
+      }
+    }
+  }
+}

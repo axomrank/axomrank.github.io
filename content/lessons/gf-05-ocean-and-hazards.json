@@ -1,0 +1,1173 @@
+{
+  "id": "gf-05-ocean-and-hazards",
+  "course": "geography-foundations",
+  "no": 5,
+  "version": 1,
+  "king": {
+    "en": "Read the ocean and hazards",
+    "as": "সাগৰ আৰু বিপদ পঢ়া"
+  },
+  "reign": {
+    "en": "Read the ocean and hazards",
+    "as": "সাগৰ আৰু বিপদ পঢ়া"
+  },
+  "portrait": "gf-05-ocean-and-hazards/shelf.webp",
+  "sources": [
+    {
+      "title": "NOAA Ocean Service",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_nautical_charts/nautical_charts07_hydrography.html",
+      "used_for": "Waves, tides and currents."
+    },
+    {
+      "title": "NOAA Tides and Currents glossary",
+      "url": "https://tidesandcurrents.noaa.gov/glossary",
+      "used_for": "Salinity, shelf and ocean terminology."
+    },
+    {
+      "title": "NOAA National Hurricane Center, Storm Surge",
+      "url": "https://www.nhc.noaa.gov/surge/",
+      "used_for": "Storm surge and its distinction from tide."
+    },
+    {
+      "title": "INCOIS Indian Tsunami Early Warning System",
+      "url": "https://tsunami.incois.gov.in/",
+      "used_for": "Indian tsunami and surge context."
+    },
+    {
+      "title": "Indian Ministry of Home Affairs, hazard guidelines",
+      "url": "https://ndmindia.mha.gov.in/ndmi/viewUploadedDocument?uid=NEW732",
+      "used_for": "Hazard zoning and exposure context. Coastal example is fictional."
+    }
+  ],
+  "review_notes": "Bilingual terminology and clarity pass completed. Independent Assamese editorial review pending. Teaching diagrams are schematic.",
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Field atlas",
+      "as": "ভূগোলৰ মানচিত্ৰ"
+    },
+    "title": {
+      "en": "Read the ocean and hazards",
+      "as": "সাগৰ আৰু বিপদ পঢ়া"
+    },
+    "hook": {
+      "en": "How can the same coast face different kinds of water movement?",
+      "as": "একেটা উপকূলত পানী কেনেকৈ বেলেগ ধৰণে চলিব পাৰে?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Beyond the shore",
+        "as": "উপকূলৰ সিপাৰে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Ocean basins hold most of Earth’s water.",
+          "as": "মহাসাগৰীয় অৱবাহিকাত পৃথিৱীৰ বেছিভাগ পানী থাকে।"
+        },
+        {
+          "en": "The continental shelf is the shallow, gently sloping submerged edge of a continent.",
+          "as": "মহীসোপান মহাদেশৰ ডুব যোৱা অগভীৰ আৰু কম ঢালযুক্ত কাষ।"
+        },
+        {
+          "en": "A steeper continental slope leads toward deeper ocean floor.",
+          "as": "অধিক থিয় মহাদেশীয় ঢাল গভীৰ সাগৰতলৰ ফালে নামে।"
+        },
+        {
+          "en": "Salinity describes the concentration of dissolved salts in water.",
+          "as": "লৱণতাই পানীত দ্ৰৱীভূত লৱণৰ পৰিমাণ বুজায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Beyond the shore",
+            "as": "উপকূলৰ সিপাৰে"
+          },
+          "text": [
+            {
+              "en": "Ocean basins hold most of Earth’s water.",
+              "as": "মহাসাগৰীয় অৱবাহিকাত পৃথিৱীৰ বেছিভাগ পানী থাকে।"
+            },
+            {
+              "en": "The continental shelf is the shallow, gently sloping submerged edge of a continent.",
+              "as": "মহীসোপান মহাদেশৰ ডুব যোৱা অগভীৰ আৰু কম ঢালযুক্ত কাষ।"
+            }
+          ],
+          "img": "shelf.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic seabed profile, with shallow shelf A, steeper slope B and deep floor C.",
+            "as": "সাগৰৰ তলিৰ আৰ্হি। A অগভীৰ মঞ্চ, B থিয় ঢাল আৰু C গভীৰ তলি।"
+          },
+          "id": "gf-05-ocean-and-hazards.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "A steeper continental slope leads toward deeper ocean floor.",
+              "as": "অধিক থিয় মহাদেশীয় ঢাল গভীৰ সাগৰতলৰ ফালে নামে।"
+            },
+            {
+              "en": "Salinity describes the concentration of dissolved salts in water.",
+              "as": "লৱণতাই পানীত দ্ৰৱীভূত লৱণৰ পৰিমাণ বুজায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Ocean floor · deeper",
+                "as": "সাগৰতল · গভীৰ"
+              },
+              {
+                "en": "Slope · steeper",
+                "as": "ঢাল · অধিক থিয়"
+              },
+              {
+                "en": "Shelf · shallow",
+                "as": "মহীসোপান · অগভীৰ"
+              }
+            ]
+          },
+          "id": "gf-05-ocean-and-hazards.u1.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Salinity describes the concentration of dissolved salts in water.",
+            "as": "লৱণতাই পানীত দ্ৰৱীভূত লৱণৰ পৰিমাণ বুজায়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Salinity",
+                "as": "লৱণতা"
+              },
+              {
+                "en": "Dissolved salts",
+                "as": "দ্ৰৱীভূত নিমখ"
+              }
+            ],
+            [
+              {
+                "en": "Depth",
+                "as": "গভীৰতা"
+              },
+              {
+                "en": "Distance below surface",
+                "as": "পৃষ্ঠৰ তলৰ দূৰত্ব"
+              }
+            ]
+          ],
+          "id": "gf-05-ocean-and-hazards.u1.03"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "A steeper continental slope leads toward deeper ocean floor.",
+            "as": "অধিক থিয় মহাদেশীয় ঢাল গভীৰ সাগৰতলৰ ফালে নামে।"
+          },
+          "q": {
+            "en": "Read the seabed outward from the continent.",
+            "as": "মহাদেশৰ পৰা বাহিৰলৈ সাগৰতল পঢ়া।"
+          },
+          "items": [
+            {
+              "en": "Shelf",
+              "as": "মহীসোপান"
+            },
+            {
+              "en": "Continental slope",
+              "as": "মহাদেশীয় ঢাল"
+            },
+            {
+              "en": "Deep ocean floor",
+              "as": "গভীৰ সাগৰতল"
+            }
+          ],
+          "id": "gf-05-ocean-and-hazards.u1.04"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The continental shelf is the shallow, gently sloping submerged edge of a continent.",
+            "as": "মহীসোপান মহাদেশৰ ডুব যোৱা অগভীৰ আৰু কম ঢালযুক্ত কাষ।"
+          },
+          "q": {
+            "en": "Which label marks the shelf?",
+            "as": "কোন আখৰে মহীসোপান দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            },
+            {
+              "en": "C",
+              "as": "C"
+            }
+          ],
+          "answer": 0,
+          "img": "shelf.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic seabed profile, with shallow shelf A, steeper slope B and deep floor C.",
+            "as": "সাগৰৰ তলিৰ আৰ্হি। A অগভীৰ মঞ্চ, B থিয় ঢাল আৰু C গভীৰ তলি।"
+          },
+          "imageAlt": {
+            "en": "The submerged platform closest to land is A.",
+            "as": "স্থলৰ আটাইতকৈ ওচৰৰ ডুব যোৱা সমান অংশ A।"
+          },
+          "id": "gf-05-ocean-and-hazards.u1.05"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "The continental shelf is the shallow, gently sloping submerged edge of a continent.",
+            "as": "মহীসোপান মহাদেশৰ ডুব যোৱা অগভীৰ আৰু কম ঢালযুক্ত কাষ।"
+          },
+          "s": {
+            "en": "The continental shelf is normally deeper than the ocean floor beyond the slope.",
+            "as": "মহীসোপান সাধাৰণতে ঢালৰ সিপাৰৰ সাগৰতলতকৈ গভীৰ।"
+          },
+          "answer": false,
+          "id": "gf-05-ocean-and-hazards.u1.06"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Salinity describes the concentration of dissolved salts in water.",
+            "as": "লৱণতাই পানীত দ্ৰৱীভূত লৱণৰ পৰিমাণ বুজায়।"
+          },
+          "before": {
+            "en": "Water with more dissolved salts has higher ",
+            "as": "অধিক দ্ৰৱীভূত লৱণ থকা পানীৰ বেছি "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "depth",
+              "as": "গভীৰতা"
+            },
+            {
+              "en": "salinity",
+              "as": "লৱণতা"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-05-ocean-and-hazards.u1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Read a seabed profile and identify the continental shelf.",
+          "as": "সাগৰৰ তলিৰ ছেদচিত্ৰ পঢ়ি মহীসোপান চিনা।"
+        },
+        "result": {
+          "en": "Salinity describes the concentration of dissolved salts in water.",
+          "as": "লৱণতাই পানীত দ্ৰৱীভূত লৱণৰ পৰিমাণ বুজায়।"
+        }
+      }
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Three kinds of motion",
+        "as": "তিনিধৰণৰ গতি"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Waves transfer energy across the water. Wind generates many surface waves.",
+          "as": "ঢৌৱে পানীৰ মাজেৰে শক্তি আগবঢ়ায়। বতাহে বহু পৃষ্ঠীয় ঢৌ সৃষ্টি কৰে।"
+        },
+        {
+          "en": "Tides are the regular rise and fall of sea level, driven mainly by the Moon’s and Sun’s gravity.",
+          "as": "জোৱাৰ-ভাটা সাগৰৰ পানীৰ নিয়মীয়া উঠা-নমা। মূলত চন্দ্ৰ আৰু সূৰ্যৰ মহাকৰ্ষণে ইয়াক ঘটায়।"
+        },
+        {
+          "en": "A current is a flow of water in a direction. Wind can drive surface currents.",
+          "as": "সোঁত হৈছে এটা দিশে পানীৰ গতি। বতাহে পৃষ্ঠৰ সোঁত চলাব পাৰে।"
+        },
+        {
+          "en": "Tides can also generate currents as water moves in and out.",
+          "as": "পানী সোমাওঁতে আৰু ওলাই যাওঁতে জোৱাৰ-ভাটাইও সোঁত সৃষ্টি কৰিব পাৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Three kinds of motion",
+            "as": "তিনিধৰণৰ গতি"
+          },
+          "text": [
+            {
+              "en": "Waves transfer energy across the water. Wind generates many surface waves.",
+              "as": "ঢৌৱে পানীৰ মাজেৰে শক্তি আগবঢ়ায়। বতাহে বহু পৃষ্ঠীয় ঢৌ সৃষ্টি কৰে।"
+            },
+            {
+              "en": "Tides are the regular rise and fall of sea level, driven mainly by the Moon’s and Sun’s gravity.",
+              "as": "জোৱাৰ-ভাটা সাগৰৰ পানীৰ নিয়মীয়া উঠা-নমা। মূলত চন্দ্ৰ আৰু সূৰ্যৰ মহাকৰ্ষণে ইয়াক ঘটায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Wave · energy passes",
+                "as": "ঢৌ · শক্তি আগবাঢ়ে"
+              },
+              {
+                "en": "Tide · level changes",
+                "as": "জোৱাৰ-ভাটা · পানীৰ স্তৰ সলনি"
+              },
+              {
+                "en": "Current · water flows",
+                "as": "সোঁত · পানী বয়"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-05-ocean-and-hazards.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "A current is a flow of water in a direction. Wind can drive surface currents.",
+              "as": "সোঁত হৈছে এটা দিশে পানীৰ গতি। বতাহে পৃষ্ঠৰ সোঁত চলাব পাৰে।"
+            },
+            {
+              "en": "Tides can also generate currents as water moves in and out.",
+              "as": "পানী সোমাওঁতে আৰু ওলাই যাওঁতে জোৱাৰ-ভাটাইও সোঁত সৃষ্টি কৰিব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Current · water flows",
+                "as": "সোঁত · পানী বয়"
+              },
+              {
+                "en": "Tide · level changes",
+                "as": "জোৱাৰ-ভাটা · পানীৰ স্তৰ সলনি"
+              },
+              {
+                "en": "Wave · energy passes",
+                "as": "ঢৌ · শক্তি আগবাঢ়ে"
+              }
+            ]
+          },
+          "id": "gf-05-ocean-and-hazards.u2.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "A current is a flow of water in a direction. Wind can drive surface currents.",
+            "as": "সোঁত হৈছে এটা দিশে পানীৰ গতি। বতাহে পৃষ্ঠৰ সোঁত চলাব পাৰে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Wave",
+                "as": "ঢৌ"
+              },
+              {
+                "en": "Energy travels",
+                "as": "শক্তি আগবাঢ়ে"
+              }
+            ],
+            [
+              {
+                "en": "Tide",
+                "as": "জোৱাৰ-ভাটা"
+              },
+              {
+                "en": "Regular level change",
+                "as": "স্তৰৰ নিয়মীয়া সলনি"
+              }
+            ],
+            [
+              {
+                "en": "Current",
+                "as": "সোঁত"
+              },
+              {
+                "en": "Flow in a direction",
+                "as": "এটা দিশে প্ৰবাহ"
+              }
+            ]
+          ],
+          "id": "gf-05-ocean-and-hazards.u2.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Tides can also generate currents as water moves in and out.",
+            "as": "পানী সোমাওঁতে আৰু ওলাই যাওঁতে জোৱাৰ-ভাটাইও সোঁত সৃষ্টি কৰিব পাৰে।"
+          },
+          "s": {
+            "en": "Tides and currents can occur together.",
+            "as": "জোৱাৰ-ভাটা আৰু সোঁত একেলগে হ’ব পাৰে।"
+          },
+          "answer": false,
+          "id": "gf-05-ocean-and-hazards.u2.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Tides are the regular rise and fall of sea level, driven mainly by the Moon’s and Sun’s gravity.",
+            "as": "জোৱাৰ-ভাটা সাগৰৰ পানীৰ নিয়মীয়া উঠা-নমা। মূলত চন্দ্ৰ আৰু সূৰ্যৰ মহাকৰ্ষণে ইয়াক ঘটায়।"
+          },
+          "before": {
+            "en": "A repeated high and low water level is a ",
+            "as": "বাৰে বাৰে পানীৰ স্তৰ উঠা-নমা হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "tide",
+              "as": "জোৱাৰ-ভাটা"
+            },
+            {
+              "en": "wind gust",
+              "as": "বতাহৰ হঠাৎ কোব"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-05-ocean-and-hazards.u2.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "A current is a flow of water in a direction. Wind can drive surface currents.",
+            "as": "সোঁত হৈছে এটা দিশে পানীৰ গতি। বতাহে পৃষ্ঠৰ সোঁত চলাব পাৰে।"
+          },
+          "q": {
+            "en": "Which observation most directly shows a current?",
+            "as": "কোনটো পৰ্যবেক্ষণে পোনপটীয়াকৈ সোঁত দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Crests arrive at the beach",
+              "as": "ঢৌৰ চূড়া উপকূল পায়"
+            },
+            {
+              "en": "Floating markers drift east together",
+              "as": "ওপঙা চিহ্নবোৰ একেলগে পূবলৈ যায়"
+            },
+            {
+              "en": "High water returns daily",
+              "as": "ওখ পানীৰ স্তৰ দৈনিক ঘূৰি আহে"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-05-ocean-and-hazards.u2.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Tides are the regular rise and fall of sea level, driven mainly by the Moon’s and Sun’s gravity.",
+            "as": "জোৱাৰ-ভাটা সাগৰৰ পানীৰ নিয়মীয়া উঠা-নমা। মূলত চন্দ্ৰ আৰু সূৰ্যৰ মহাকৰ্ষণে ইয়াক ঘটায়।"
+          },
+          "q": {
+            "en": "Compare a shoreline water-level record.",
+            "as": "উপকূলৰ পানীৰ স্তৰৰ নথি তুলনা কৰা।"
+          },
+          "items": [
+            {
+              "en": "Mark a high",
+              "as": "এটা উচ্চ স্তৰ চিহ্নিত কৰা"
+            },
+            {
+              "en": "Find the low that follows",
+              "as": "তাৰ পাছৰ নিম্ন স্তৰ বিচাৰা"
+            },
+            {
+              "en": "Look for the next high",
+              "as": "পৰৱৰ্তী উচ্চ স্তৰ চোৱা"
+            }
+          ],
+          "id": "gf-05-ocean-and-hazards.u2.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish waves, tides and currents by what changes.",
+          "as": "কি সলনি হয় তাৰ পৰা ঢৌ, জোৱাৰ-ভাটা আৰু সোঁত পৃথক কৰা।"
+        },
+        "result": {
+          "en": "Tides can also generate currents as water moves in and out.",
+          "as": "পানী সোমাওঁতে আৰু ওলাই যাওঁতে জোৱাৰ-ভাটাইও সোঁত সৃষ্টি কৰিব পাৰে।"
+        }
+      }
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "What is exposed?",
+        "as": "কি বিপদৰ সন্মুখীন?"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A hazard is a process or event that could cause harm.",
+          "as": "ক্ষতি কৰিব পৰা প্ৰক্ৰিয়া বা ঘটনাই বিপদ।"
+        },
+        {
+          "en": "Exposure asks who or what lies where a hazard can occur.",
+          "as": "বিপদ ঘটিব পৰা ঠাইত কোন মানুহ বা সম্পদ আছে, সেয়াই উন্মুক্ততাৰ প্ৰশ্ন।"
+        },
+        {
+          "en": "Risk also depends on vulnerability, or how susceptible exposed people or assets are to harm.",
+          "as": "বিপদাশংকা ক্ষতিগ্ৰস্ত হোৱাৰ প্ৰৱণতাৰ ওপৰতো নিৰ্ভৰ কৰে। উন্মুক্ত মানুহ বা সম্পদ কিমান সহজে ক্ষতিগ্ৰস্ত হয় সেয়া গুৰুত্বপূৰ্ণ।"
+        },
+        {
+          "en": "A flood zone can intersect an access road even if a destination lies outside it.",
+          "as": "গন্তব্যস্থল প্লাৱন অঞ্চলৰ বাহিৰত থাকিলেও তালৈ যোৱা ৰাস্তা অঞ্চলটো পাৰ হ’ব পাৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "What is exposed?",
+            "as": "কি বিপদৰ সন্মুখীন?"
+          },
+          "text": [
+            {
+              "en": "A hazard is a process or event that could cause harm.",
+              "as": "ক্ষতি কৰিব পৰা প্ৰক্ৰিয়া বা ঘটনাই বিপদ।"
+            },
+            {
+              "en": "Exposure asks who or what lies where a hazard can occur.",
+              "as": "বিপদ ঘটিব পৰা ঠাইত কোন মানুহ বা সম্পদ আছে, সেয়াই উন্মুক্ততাৰ প্ৰশ্ন।"
+            }
+          ],
+          "img": "coastal-exposure.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Fictional exposure map. The pale blue land strip beside the sea is the inundation zone. Dark line is the road.",
+            "as": "কাল্পনিক উন্মুক্ততা মানচিত্ৰ। সাগৰৰ কাষৰ পাতল নীলা মাটিৰ পটিটো প্লাৱন অঞ্চল। গাঢ় ৰেখা ৰাস্তা।"
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-05-ocean-and-hazards.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Risk also depends on vulnerability, or how susceptible exposed people or assets are to harm.",
+              "as": "বিপদাশংকা ক্ষতিগ্ৰস্ত হোৱাৰ প্ৰৱণতাৰ ওপৰতো নিৰ্ভৰ কৰে। উন্মুক্ত মানুহ বা সম্পদ কিমান সহজে ক্ষতিগ্ৰস্ত হয় সেয়া গুৰুত্বপূৰ্ণ।"
+            },
+            {
+              "en": "A flood zone can intersect an access road even if a destination lies outside it.",
+              "as": "গন্তব্যস্থল প্লাৱন অঞ্চলৰ বাহিৰত থাকিলেও তালৈ যোৱা ৰাস্তা অঞ্চলটো পাৰ হ’ব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Exposure · what lies there",
+                "as": "উন্মুক্ততা · তাত কি আছে"
+              },
+              {
+                "en": "Hazard · possible event",
+                "as": "বিপদ · সম্ভাব্য ঘটনা"
+              }
+            ]
+          },
+          "id": "gf-05-ocean-and-hazards.u3.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Exposure asks who or what lies where a hazard can occur.",
+            "as": "বিপদ ঘটিব পৰা ঠাইত কোন মানুহ বা সম্পদ আছে, সেয়াই উন্মুক্ততাৰ প্ৰশ্ন।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Landslide",
+                "as": "ভূস্খলন"
+              },
+              {
+                "en": "Possible damaging process",
+                "as": "ক্ষতি কৰিব পৰা প্ৰক্ৰিয়া"
+              }
+            ],
+            [
+              {
+                "en": "House in its path",
+                "as": "পথত থকা ঘৰ"
+              },
+              {
+                "en": "Exposed asset",
+                "as": "উন্মুক্ত সম্পদ"
+              }
+            ]
+          ],
+          "id": "gf-05-ocean-and-hazards.u3.03"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Risk also depends on vulnerability, or how susceptible exposed people or assets are to harm.",
+            "as": "বিপদাশংকা ক্ষতিগ্ৰস্ত হোৱাৰ প্ৰৱণতাৰ ওপৰতো নিৰ্ভৰ কৰে। উন্মুক্ত মানুহ বা সম্পদ কিমান সহজে ক্ষতিগ্ৰস্ত হয় সেয়া গুৰুত্বপূৰ্ণ।"
+          },
+          "before": {
+            "en": "Two exposed houses can face different risk if they differ in ",
+            "as": "বিপদৰ সন্মুখীন ঘৰ দুটাৰ আশংকা বেলেগ হ’ব পাৰে যদি বেলেগ হয় "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "vulnerability",
+              "as": "ক্ষতিগ্ৰস্ত হোৱাৰ প্ৰৱণতা"
+            },
+            {
+              "en": "spelling alone",
+              "as": "কেৱল বানান"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-05-ocean-and-hazards.u3.04"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Exposure asks who or what lies where a hazard can occur.",
+            "as": "বিপদ ঘটিব পৰা ঠাইত কোন মানুহ বা সম্পদ আছে, সেয়াই উন্মুক্ততাৰ প্ৰশ্ন।"
+          },
+          "q": {
+            "en": "Which site lies within the fictional inundation zone?",
+            "as": "কাল্পনিক প্লাৱন অঞ্চলৰ ভিতৰত কোনটো ঠাই?"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            },
+            {
+              "en": "Both sites",
+              "as": "দুয়োটা ঠাই"
+            }
+          ],
+          "answer": 0,
+          "img": "coastal-exposure.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Fictional exposure map. The pale blue land strip beside the sea is the inundation zone. Dark line is the road.",
+            "as": "কাল্পনিক উন্মুক্ততা মানচিত্ৰ। সাগৰৰ কাষৰ পাতল নীলা মাটিৰ পটিটো প্লাৱন অঞ্চল। গাঢ় ৰেখা ৰাস্তা।"
+          },
+          "imageAlt": {
+            "en": "Site A lies inside the zone. Site B lies outside. The road from B enters the zone before reaching A.",
+            "as": "A অঞ্চলৰ ভিতৰত। B বাহিৰত। Bৰ পৰা Aলৈ ৰাস্তা অঞ্চলৰ ভিতৰত সোমায়।"
+          },
+          "id": "gf-05-ocean-and-hazards.u3.05"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A flood zone can intersect an access road even if a destination lies outside it.",
+            "as": "গন্তব্যস্থল প্লাৱন অঞ্চলৰ বাহিৰত থাকিলেও তালৈ যোৱা ৰাস্তা অঞ্চলটো পাৰ হ’ব পাৰে।"
+          },
+          "s": {
+            "en": "In the diagram the road from B to A stays outside the zone.",
+            "as": "চিত্ৰত Bৰ পৰা Aলৈ ৰাস্তা অঞ্চলৰ বাহিৰতে থাকে।"
+          },
+          "answer": false,
+          "img": "coastal-exposure.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Fictional exposure map. The pale blue land strip beside the sea is the inundation zone. Dark line is the road.",
+            "as": "কাল্পনিক উন্মুক্ততা মানচিত্ৰ। সাগৰৰ কাষৰ পাতল নীলা মাটিৰ পটিটো প্লাৱন অঞ্চল। গাঢ় ৰেখা ৰাস্তা।"
+          },
+          "imageAlt": {
+            "en": "Site A lies inside the zone. Site B lies outside. The road from B enters the zone before reaching A.",
+            "as": "A অঞ্চলৰ ভিতৰত। B বাহিৰত। Bৰ পৰা Aলৈ ৰাস্তা অঞ্চলৰ ভিতৰত সোমায়।"
+          },
+          "id": "gf-05-ocean-and-hazards.u3.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "A flood zone can intersect an access road even if a destination lies outside it.",
+            "as": "গন্তব্যস্থল প্লাৱন অঞ্চলৰ বাহিৰত থাকিলেও তালৈ যোৱা ৰাস্তা অঞ্চলটো পাৰ হ’ব পাৰে।"
+          },
+          "q": {
+            "en": "Assess exposure from two map layers.",
+            "as": "দুটা মানচিত্ৰ স্তৰৰ পৰা উন্মুক্ততা বুজা।"
+          },
+          "items": [
+            {
+              "en": "Read the hazard legend",
+              "as": "বিপদৰ সূচক পঢ়া"
+            },
+            {
+              "en": "Locate the road",
+              "as": "ৰাস্তা বিচাৰা"
+            },
+            {
+              "en": "Check where they overlap",
+              "as": "দুয়ো ক’ত ওপৰা-ওপৰি চোৱা"
+            }
+          ],
+          "id": "gf-05-ocean-and-hazards.u3.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Read a hazard layer and identify exposed places and routes.",
+          "as": "বিপদ স্তৰ পঢ়ি সন্মুখীন ঠাই আৰু ৰাস্তা চিনা।"
+        },
+        "result": {
+          "en": "A flood zone can intersect an access road even if a destination lies outside it.",
+          "as": "গন্তব্যস্থল প্লাৱন অঞ্চলৰ বাহিৰত থাকিলেও তালৈ যোৱা ৰাস্তা অঞ্চলটো পাৰ হ’ব পাৰে।"
+        }
+      }
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "When water rises suddenly",
+        "as": "হঠাৎ পানী বাঢ়িলে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A tropical cyclone is a rotating storm that develops over warm tropical waters under suitable conditions.",
+          "as": "উপযুক্ত অৱস্থাত গৰম গ্ৰীষ্মমণ্ডলীয় সাগৰৰ ওপৰত গঢ়া ঘূৰ্ণায়মান ধুমুহাই ঘূৰ্ণীবতাহ।"
+        },
+        {
+          "en": "Storm surge is a storm-driven rise in sea level above the predicted astronomical tide.",
+          "as": "জ্যোতিৰ্বৈজ্ঞানিক জোৱাৰৰ অনুমানতকৈ ধুমুহাৰ ফলত সাগৰৰ পানী ওপৰলৈ উঠাই ধুমুহাজনিত পানী বৃদ্ধি।"
+        },
+        {
+          "en": "A tsunami is a series of waves caused by sudden water displacement, often from an undersea earthquake.",
+          "as": "হঠাৎ বহু পানী সৰি যোৱাৰ ফলত হোৱা ঢৌৰ শৃংখলাই ছুনামি। সাগৰতলৰ ভূমিকম্প ইয়াৰ এটা সাধাৰণ কাৰণ।"
+        },
+        {
+          "en": "The source of the disturbance helps distinguish surge from a tsunami.",
+          "as": "পানীৰ সলনি ঘটোৱা কাৰণে ধুমুহাজনিত পানী বৃদ্ধি আৰু ছুনামি পৃথক কৰাত সহায় কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "When water rises suddenly",
+            "as": "হঠাৎ পানী বাঢ়িলে"
+          },
+          "text": [
+            {
+              "en": "A tropical cyclone is a rotating storm that develops over warm tropical waters under suitable conditions.",
+              "as": "উপযুক্ত অৱস্থাত গৰম গ্ৰীষ্মমণ্ডলীয় সাগৰৰ ওপৰত গঢ়া ঘূৰ্ণায়মান ধুমুহাই ঘূৰ্ণীবতাহ।"
+            },
+            {
+              "en": "Storm surge is a storm-driven rise in sea level above the predicted astronomical tide.",
+              "as": "জ্যোতিৰ্বৈজ্ঞানিক জোৱাৰৰ অনুমানতকৈ ধুমুহাৰ ফলত সাগৰৰ পানী ওপৰলৈ উঠাই ধুমুহাজনিত পানী বৃদ্ধি।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Rotating storm · cyclone",
+                "as": "ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ"
+              },
+              {
+                "en": "Storm raises water · surge",
+                "as": "ধুমুহাই পানী তোলে · পানী বৃদ্ধি"
+              },
+              {
+                "en": "Sudden displacement · tsunami",
+                "as": "হঠাৎ পানী সৰে · ছুনামি"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-05-ocean-and-hazards.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "A tsunami is a series of waves caused by sudden water displacement, often from an undersea earthquake.",
+              "as": "হঠাৎ বহু পানী সৰি যোৱাৰ ফলত হোৱা ঢৌৰ শৃংখলাই ছুনামি। সাগৰতলৰ ভূমিকম্প ইয়াৰ এটা সাধাৰণ কাৰণ।"
+            },
+            {
+              "en": "The source of the disturbance helps distinguish surge from a tsunami.",
+              "as": "পানীৰ সলনি ঘটোৱা কাৰণে ধুমুহাজনিত পানী বৃদ্ধি আৰু ছুনামি পৃথক কৰাত সহায় কৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Sudden displacement · tsunami",
+                "as": "হঠাৎ পানী সৰে · ছুনামি"
+              },
+              {
+                "en": "Storm raises water · surge",
+                "as": "ধুমুহাই পানী তোলে · পানী বৃদ্ধি"
+              },
+              {
+                "en": "Rotating storm · cyclone",
+                "as": "ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ"
+              }
+            ]
+          },
+          "id": "gf-05-ocean-and-hazards.u4.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The source of the disturbance helps distinguish surge from a tsunami.",
+            "as": "পানীৰ সলনি ঘটোৱা কাৰণে ধুমুহাজনিত পানী বৃদ্ধি আৰু ছুনামি পৃথক কৰাত সহায় কৰে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Storm-driven water rise",
+                "as": "ধুমুহাজনিত পানী বৃদ্ধি"
+              },
+              {
+                "en": "Storm surge",
+                "as": "ধুমুহাৰ পানী বৃদ্ধি"
+              }
+            ],
+            [
+              {
+                "en": "Sudden movement of the seabed",
+                "as": "সাগৰতলি হঠাৎ সৰে"
+              },
+              {
+                "en": "Possible tsunami source",
+                "as": "ছুনামিৰ সম্ভাব্য উৎস"
+              }
+            ]
+          ],
+          "id": "gf-05-ocean-and-hazards.u4.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Storm surge is a storm-driven rise in sea level above the predicted astronomical tide.",
+            "as": "জ্যোতিৰ্বৈজ্ঞানিক জোৱাৰৰ অনুমানতকৈ ধুমুহাৰ ফলত সাগৰৰ পানী ওপৰলৈ উঠাই ধুমুহাজনিত পানী বৃদ্ধি।"
+          },
+          "s": {
+            "en": "Storm surge is just the expected astronomical high tide.",
+            "as": "ধুমুহাজনিত পানী বৃদ্ধি কেৱল অনুমান কৰা জোৱাৰ।"
+          },
+          "answer": false,
+          "id": "gf-05-ocean-and-hazards.u4.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "A tropical cyclone is a rotating storm that develops over warm tropical waters under suitable conditions.",
+            "as": "উপযুক্ত অৱস্থাত গৰম গ্ৰীষ্মমণ্ডলীয় সাগৰৰ ওপৰত গঢ়া ঘূৰ্ণায়মান ধুমুহাই ঘূৰ্ণীবতাহ।"
+          },
+          "before": {
+            "en": "A rotating tropical storm is a ",
+            "as": "ঘূৰ্ণায়মান গ্ৰীষ্মমণ্ডলীয় ধুমুহাই "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "tsunami",
+              "as": "ছুনামি"
+            },
+            {
+              "en": "cyclone",
+              "as": "ঘূৰ্ণীবতাহ"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-05-ocean-and-hazards.u4.05"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "A tsunami is a series of waves caused by sudden water displacement, often from an undersea earthquake.",
+            "as": "হঠাৎ বহু পানী সৰি যোৱাৰ ফলত হোৱা ঢৌৰ শৃংখলাই ছুনামি। সাগৰতলৰ ভূমিকম্প ইয়াৰ এটা সাধাৰণ কাৰণ।"
+          },
+          "q": {
+            "en": "Follow one possible earthquake-generated tsunami sequence.",
+            "as": "ভূমিকম্পজনিত ছুনামিৰ এটা সম্ভাব্য ক্ৰম সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Seabed moves abruptly",
+              "as": "সাগৰতলি হঠাৎ সৰে"
+            },
+            {
+              "en": "Overlying water is displaced",
+              "as": "ওপৰৰ পানী সৰে"
+            },
+            {
+              "en": "Waves travel outward",
+              "as": "ঢৌ বাহিৰলৈ বিয়পে"
+            }
+          ],
+          "id": "gf-05-ocean-and-hazards.u4.06"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Storm surge is a storm-driven rise in sea level above the predicted astronomical tide.",
+            "as": "জ্যোতিৰ্বৈজ্ঞানিক জোৱাৰৰ অনুমানতকৈ ধুমুহাৰ ফলত সাগৰৰ পানী ওপৰলৈ উঠাই ধুমুহাজনিত পানী বৃদ্ধি।"
+          },
+          "q": {
+            "en": "Which clue points to storm surge?",
+            "as": "কোনটো সংকেতে ধুমুহাজনিত পানী বৃদ্ধি দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Regular lunar tide",
+              "as": "চন্দ্ৰজনিত নিয়মীয়া জোৱাৰ"
+            },
+            {
+              "en": "Seabed displacement",
+              "as": "সাগৰতলি সৰা"
+            },
+            {
+              "en": "Storm raises sea above predicted tide",
+              "as": "ধুমুহাই পানী অনুমানিত জোৱাৰতকৈ ওপৰলৈ তোলে"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-05-ocean-and-hazards.u4.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish a cyclone, storm surge and tsunami from their causes.",
+          "as": "কাৰণৰ পৰা ঘূৰ্ণীবতাহ, ধুমুহাৰ পানী বৃদ্ধি আৰু ছুনামি পৃথক কৰা।"
+        },
+        "result": {
+          "en": "The source of the disturbance helps distinguish surge from a tsunami.",
+          "as": "পানীৰ সলনি ঘটোৱা কাৰণে ধুমুহাজনিত পানী বৃদ্ধি আৰু ছুনামি পৃথক কৰাত সহায় কৰে।"
+        }
+      }
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "order",
+        "why": {
+          "en": "The shelf is the shallow submerged edge of the continent.",
+          "as": "মহীসোপান মহাদেশৰ অগভীৰ ডুব যোৱা কাষ।"
+        },
+        "q": {
+          "en": "Travel offshore through the simplified cross-section.",
+          "as": "সৰল ছেদচিত্ৰত উপকূলৰ পৰা সাগৰলৈ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Shallow shelf",
+            "as": "অগভীৰ মহীসোপান"
+          },
+          {
+            "en": "Steeper slope",
+            "as": "থিয় ঢাল"
+          },
+          {
+            "en": "Deep basin floor",
+            "as": "গভীৰ অৱবাহিকাৰ তলি"
+          }
+        ],
+        "id": "gf-05-ocean-and-hazards.test.01"
+      },
+      {
+        "type": "match",
+        "why": {
+          "en": "A tide describes level change and a current describes flow.",
+          "as": "জোৱাৰ-ভাটাই স্তৰৰ সলনি আৰু সোঁতে প্ৰবাহ বুজায়।"
+        },
+        "pairs": [
+          [
+            {
+              "en": "Water level cycles",
+              "as": "পানীৰ স্তৰ উঠা-নমা"
+            },
+            {
+              "en": "Tide",
+              "as": "জোৱাৰ-ভাটা"
+            }
+          ],
+          [
+            {
+              "en": "Water drifts along coast",
+              "as": "পানী উপকূলৰ কাষেৰে বয়"
+            },
+            {
+              "en": "Current",
+              "as": "সোঁত"
+            }
+          ]
+        ],
+        "id": "gf-05-ocean-and-hazards.test.02"
+      },
+      {
+        "type": "tf",
+        "why": {
+          "en": "Check exposure along the road separately.",
+          "as": "ৰাস্তাৰ উন্মুক্ততা পৃথককৈ চাব লাগে।"
+        },
+        "s": {
+          "en": "A dry destination guarantees its road avoids inundation.",
+          "as": "গন্তব্য শুকান থাকিলেই ৰাস্তাত পানী নুঠে।"
+        },
+        "answer": false,
+        "id": "gf-05-ocean-and-hazards.test.03"
+      },
+      {
+        "type": "inline",
+        "why": {
+          "en": "Surge is caused by the storm.",
+          "as": "ধুমুহাৰ বাবে এই পানী বৃদ্ধি হয়।"
+        },
+        "before": {
+          "en": "An abnormal storm-driven rise above predicted tide is ",
+          "as": "অনুমানিত জোৱাৰতকৈ ধুমুহাই পানী বঢ়ালে সেয়া "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "ordinary tide",
+            "as": "সাধাৰণ জোৱাৰ"
+          },
+          {
+            "en": "storm surge",
+            "as": "ধুমুহাজনিত পানী বৃদ্ধি"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-05-ocean-and-hazards.test.04"
+      },
+      {
+        "type": "odd",
+        "why": {
+          "en": "Some undersea earthquakes displace enough water to generate a tsunami.",
+          "as": "কিছুমান সাগৰতলৰ ভূমিকম্পই ছুনামি ঘটাব পৰাকৈ পানী সলায়।"
+        },
+        "q": {
+          "en": "Which earlier process can abruptly displace the seabed?",
+          "as": "আগৰ কোনটো প্ৰক্ৰিয়াই সাগৰতলি হঠাৎ সলাব পাৰে?"
+        },
+        "options": [
+          {
+            "en": "Undersea earthquake",
+            "as": "সাগৰতলৰ ভূমিকম্প"
+          },
+          {
+            "en": "Slow soil formation",
+            "as": "লাহে লাহে মাটি গঠন"
+          },
+          {
+            "en": "Ordinary evaporation",
+            "as": "সাধাৰণ বাষ্পীভৱন"
+          }
+        ],
+        "answer": 0,
+        "id": "gf-05-ocean-and-hazards.test.05"
+      }
+    ],
+    "mission": {
+      "objective": {
+        "en": "How can the same coast face different kinds of water movement?",
+        "as": "একেটা উপকূলত পানী কেনেকৈ বেলেগ ধৰণে চলিব পাৰে?"
+      },
+      "result": {
+        "en": "You can read the evidence from a new view.",
+        "as": "তুমি নতুন চিত্ৰৰ পৰা প্ৰমাণ পঢ়িব পাৰা।"
+      }
+    }
+  }
+}

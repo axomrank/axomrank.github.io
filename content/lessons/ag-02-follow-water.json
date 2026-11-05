@@ -1,0 +1,1162 @@
+{
+  "id": "ag-02-follow-water",
+  "course": "assam-geography",
+  "no": 2,
+  "version": 1,
+  "king": {
+    "en": "Follow the Water",
+    "as": "সোঁত অনুসৰণ কৰা"
+  },
+  "reign": {
+    "en": "Rivers and drainage",
+    "as": "নদী আৰু পানীৰ প্ৰবাহ"
+  },
+  "portrait": "ag-02-follow-water/river-tile.webp",
+  "sources": [
+    {
+      "title": "ASDMA, Flood Early Warning System documentation",
+      "url": "https://darpg.gov.in/sites/default/files/70.%20Flood%20Early%20Warning%20SystemFLEWS-Documentation-Final.pdf",
+      "used_for": "Brahmaputra flow across Assam and Barak flow through the Cachar plain."
+    },
+    {
+      "title": "Assam Water Resources Department, Brahmaputra River System",
+      "url": "https://waterresources.assam.gov.in/portlet-innerpage/brahmaputra-river-system",
+      "used_for": "Subansiri and Burhi Dihing bank assignments."
+    },
+    {
+      "title": "Inland Waterways Authority of India, North-East Region",
+      "url": "https://iwai.gov.in/north-east-region",
+      "used_for": "River locations of Dibrugarh, Pandu in Guwahati and Dhubri."
+    },
+    {
+      "title": "Sribhumi District, Geography",
+      "url": "https://sribhumi.assam.gov.in/about-us/geography",
+      "used_for": "Barak bifurcation near Bhanga."
+    }
+  ],
+  "review_notes": "Private pilot. Assamese editorial review pending. River diagrams are schematic.",
+  "map": {
+    "box": [
+      89.45,
+      24.3,
+      96.0,
+      28.25
+    ],
+    "show": [
+      "brahmaputra",
+      "subansiri",
+      "manas",
+      "dihing",
+      "dibrugarh",
+      "guwahati",
+      "dhubri",
+      "silchar"
+    ],
+    "labels": {
+      "subansiri": {
+        "t": {
+          "en": "Subansiri",
+          "as": "সোৱণশিৰি"
+        }
+      },
+      "manas": {
+        "t": {
+          "en": "Manas",
+          "as": "মানাহ"
+        }
+      },
+      "dihing": {
+        "t": {
+          "en": "Burhi Dihing",
+          "as": "বুঢ়ীদিহিং"
+        }
+      }
+    }
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "River mission",
+      "as": "নদী অভিযান"
+    },
+    "title": {
+      "en": "Follow the Water",
+      "as": "সোঁত অনুসৰণ কৰা"
+    },
+    "hook": {
+      "en": "Where would a drop of rain go next?",
+      "as": "বৰষুণৰ এটোপাল পানী ইয়াৰ পাছত ক’লৈ যাব?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "icon": "map",
+      "title": {
+        "en": "Down the Brahmaputra",
+        "as": "ব্ৰহ্মপুত্ৰৰ নামনিলৈ"
+      },
+      "learned": [
+        {
+          "en": "Across Assam the Brahmaputra flows broadly westward.",
+          "as": "অসমৰ মাজেৰে ব্ৰহ্মপুত্ৰৰ সোঁত সাধাৰণতে পশ্চিমমুখী।"
+        },
+        {
+          "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+          "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+        },
+        {
+          "en": "Upstream means against the flow.",
+          "as": "সোঁতৰ বিপৰীত দিশেই উজনি।"
+        },
+        {
+          "en": "Downstream means with the flow.",
+          "as": "সোঁতৰ দিশেই নামনি।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Put three river cities in downstream order.",
+          "as": "নদীৰ পাৰৰ তিনিখন নগৰ উজনিৰ পৰা নামনিলৈ সজোৱা।"
+        },
+        "result": {
+          "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+          "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Which way is downstream?",
+            "as": "নামনি কোনফালে?"
+          },
+          "text": [
+            {
+              "en": "Across Assam the Brahmaputra flows broadly westward.",
+              "as": "অসমৰ মাজেৰে ব্ৰহ্মপুত্ৰৰ সোঁত সাধাৰণতে পশ্চিমমুখী।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.45,
+              24.3,
+              96.0,
+              28.25
+            ],
+            "show": [
+              "brahmaputra",
+              "dibrugarh",
+              "guwahati",
+              "dhubri"
+            ],
+            "labels": {
+              "subansiri": {
+                "t": {
+                  "en": "Subansiri",
+                  "as": "সোৱণশিৰি"
+                }
+              },
+              "manas": {
+                "t": {
+                  "en": "Manas",
+                  "as": "মানাহ"
+                }
+              },
+              "dihing": {
+                "t": {
+                  "en": "Burhi Dihing",
+                  "as": "বুঢ়ীদিহিং"
+                }
+              }
+            },
+            "routes": [
+              [
+                "dibrugarh",
+                "guwahati",
+                "dhubri"
+              ]
+            ]
+          },
+          "id": "ag02.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Three stops along the river",
+            "as": "নদীৰ কাষৰ তিনিটা ঠাই"
+          },
+          "text": [
+            {
+              "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+              "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Dibrugarh",
+                "as": "ডিব্ৰুগড়"
+              },
+              {
+                "en": "Guwahati",
+                "as": "গুৱাহাটী"
+              },
+              {
+                "en": "Dhubri",
+                "as": "ধুবুৰী"
+              }
+            ]
+          },
+          "id": "ag02.u1.02"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Arrange from upstream to downstream.",
+            "as": "উজনিৰ পৰা নামনিলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Dibrugarh",
+              "as": "ডিব্ৰুগড়"
+            },
+            {
+              "en": "Guwahati",
+              "as": "গুৱাহাটী"
+            },
+            {
+              "en": "Dhubri",
+              "as": "ধুবুৰী"
+            }
+          ],
+          "why": {
+            "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+            "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+          },
+          "id": "ag02.u1.03"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Tap the upstream end of this three-city sequence.",
+            "as": "এই তিনিখন নগৰৰ ভিতৰত আটাইতকৈ উজনিৰখন বাছা।"
+          },
+          "target": "dibrugarh",
+          "choices": [
+            "dibrugarh",
+            "guwahati",
+            "dhubri"
+          ],
+          "why": {
+            "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+            "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+          },
+          "id": "ag02.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "From Guwahati, Dhubri is upstream.",
+            "as": "গুৱাহাটীৰ পৰা ধুবুৰী উজনিত।"
+          },
+          "answer": false,
+          "why": {
+            "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+            "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+          },
+          "id": "ag02.u1.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Facing in the direction of flow, you are looking ",
+            "as": "সোঁতৰ দিশত মুখ কৰিলে তুমি চাই আছা "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "downstream",
+              "as": "নামনিলৈ"
+            },
+            {
+              "en": "upstream",
+              "as": "উজনিলৈ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Downstream follows the current.",
+            "as": "নামনি সোঁতৰ দিশত।"
+          },
+          "id": "ag02.u1.06"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Dibrugarh",
+                "as": "ডিব্ৰুগড়"
+              },
+              {
+                "en": "First stop",
+                "as": "প্ৰথম ঠাই"
+              }
+            ],
+            [
+              {
+                "en": "Guwahati",
+                "as": "গুৱাহাটী"
+              },
+              {
+                "en": "Middle stop",
+                "as": "মাজৰ ঠাই"
+              }
+            ],
+            [
+              {
+                "en": "Dhubri",
+                "as": "ধুবুৰী"
+              },
+              {
+                "en": "Last stop",
+                "as": "শেষৰ ঠাই"
+              }
+            ]
+          ],
+          "why": {
+            "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+            "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+          },
+          "id": "ag02.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "icon": "map",
+      "title": {
+        "en": "Where rivers meet",
+        "as": "নদীৰ মিলনস্থল"
+      },
+      "learned": [
+        {
+          "en": "A tributary flows into another river.",
+          "as": "উপনদী এখন আন এখন নদীত মিলিত হয়।"
+        },
+        {
+          "en": "Name the banks while facing downstream.",
+          "as": "নামনিৰ ফালে মুখ কৰি পাৰৰ নাম নিৰ্ণয় কৰা হয়।"
+        },
+        {
+          "en": "Subansiri joins from the north.",
+          "as": "সোৱণশিৰি উত্তৰৰ পৰা মিলিছে।"
+        },
+        {
+          "en": "Burhi Dihing joins from the south.",
+          "as": "বুঢ়ীদিহিং দক্ষিণৰ পৰা মিলিছে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Identify tributaries and name their banks.",
+          "as": "উপনদী চিনাক্ত কৰি সিহঁত কোন পাৰৰ পৰা আহে কোৱা।"
+        },
+        "result": {
+          "en": "Name the banks while facing downstream.",
+          "as": "নামনিৰ ফালে মুখ কৰি পাৰৰ নাম নিৰ্ণয় কৰা হয়।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Look for a meeting point",
+            "as": "মিলনস্থল বিচাৰা"
+          },
+          "text": [
+            {
+              "en": "A tributary flows into another river.",
+              "as": "উপনদী এখন আন এখন নদীত মিলিত হয়।"
+            },
+            {
+              "en": "The Subansiri and Burhi Dihing join the Brahmaputra from opposite sides.",
+              "as": "সোৱণশিৰি আৰু বুঢ়ীদিহিং বিপৰীত পাৰৰ পৰা ব্ৰহ্মপুত্ৰত মিলিছে।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.45,
+              24.3,
+              96.0,
+              28.25
+            ],
+            "show": [
+              "brahmaputra",
+              "subansiri",
+              "dihing"
+            ],
+            "labels": {
+              "subansiri": {
+                "t": {
+                  "en": "Subansiri",
+                  "as": "সোৱণশিৰি"
+                }
+              },
+              "manas": {
+                "t": {
+                  "en": "Manas",
+                  "as": "মানাহ"
+                }
+              },
+              "dihing": {
+                "t": {
+                  "en": "Burhi Dihing",
+                  "as": "বুঢ়ীদিহিং"
+                }
+              }
+            }
+          },
+          "id": "ag02.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Face the current’s direction",
+            "as": "সোঁতৰ দিশত মুখ কৰা"
+          },
+          "text": [
+            {
+              "en": "Name the banks while facing downstream.",
+              "as": "নামনিৰ ফালে মুখ কৰি পাৰৰ নাম নিৰ্ণয় কৰা হয়।"
+            },
+            {
+              "en": "On a reach flowing due west, north is on your right and south is on your left.",
+              "as": "সোঁত পোনে পোনে পশ্চিমলৈ গ’লে উত্তৰ তোমাৰ সোঁফালে আৰু দক্ষিণ বাওঁফালে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Face west",
+                "as": "পশ্চিমলৈ মুখ কৰা"
+              },
+              {
+                "en": "Right bank to the north",
+                "as": "সোঁ পাৰ উত্তৰত"
+              }
+            ]
+          },
+          "id": "ag02.u2.02"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Which marked tributary approaches from the north?",
+            "as": "চিহ্নিত কোনখন উপনদী উত্তৰৰ পৰা আহিছে?"
+          },
+          "target": "subansiri",
+          "choices": [
+            "subansiri",
+            "dihing"
+          ],
+          "why": {
+            "en": "Subansiri approaches from the north.",
+            "as": "সোৱণশিৰি উত্তৰৰ পৰা আহিছে।"
+          },
+          "id": "ag02.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Subansiri",
+                "as": "সোৱণশিৰি"
+              },
+              {
+                "en": "North-bank tributary",
+                "as": "উত্তৰ পাৰৰ উপনদী"
+              }
+            ],
+            [
+              {
+                "en": "Burhi Dihing",
+                "as": "বুঢ়ীদিহিং"
+              },
+              {
+                "en": "South-bank tributary",
+                "as": "দক্ষিণ পাৰৰ উপনদী"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Their courses approach the Brahmaputra from opposite sides.",
+            "as": "নদী দুখন বিপৰীত দিশৰ পৰা ব্ৰহ্মপুত্ৰত মিলিছে।"
+          },
+          "id": "ag02.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Left bank means the left side of a north-up map.",
+            "as": "বাওঁ পাৰ মানে উত্তৰ ওপৰত থকা মানচিত্ৰৰ বাওঁফাল।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Name the banks while facing downstream.",
+            "as": "নামনিৰ ফালে মুখ কৰি পাৰৰ নাম নিৰ্ণয় কৰা হয়।"
+          },
+          "id": "ag02.u2.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Facing due west, the right bank is to the ",
+            "as": "পোনে পোনে পশ্চিমলৈ মুখ কৰিলে সোঁ পাৰ হ’ব "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "north",
+              "as": "উত্তৰত"
+            },
+            {
+              "en": "south",
+              "as": "দক্ষিণত"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "When you face west, north is to your right.",
+            "as": "পশ্চিমলৈ মুখ কৰিলে উত্তৰ সোঁফালে থাকে।"
+          },
+          "id": "ag02.u2.06"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "How do you identify a bank? Put the actions in order.",
+            "as": "নদীৰ পাৰ কেনেকৈ চিনাক্ত কৰিবা? কামবোৰ ক্ৰমত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Find the flow direction",
+              "as": "সোঁতৰ দিশ বিচৰা"
+            },
+            {
+              "en": "Face downstream",
+              "as": "নামনিৰ ফালে মুখ কৰা"
+            },
+            {
+              "en": "Name the side",
+              "as": "পাৰটো সোঁ নে বাওঁ কোৱা"
+            }
+          ],
+          "why": {
+            "en": "Name the banks while facing downstream.",
+            "as": "নামনিৰ ফালে মুখ কৰি পাৰৰ নাম নিৰ্ণয় কৰা হয়।"
+          },
+          "id": "ag02.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "icon": "map",
+      "title": {
+        "en": "Follow the Barak",
+        "as": "বৰাকৰ সোঁত অনুসৰণ কৰা"
+      },
+      "learned": [
+        {
+          "en": "The Barak flows generally west across the Cachar plain.",
+          "as": "বৰাক কাছাৰৰ সমভূমিৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ যায়।"
+        },
+        {
+          "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+          "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+        },
+        {
+          "en": "Silchar is in the Barak Valley.",
+          "as": "শিলচৰ বৰাক উপত্যকাত আছে।"
+        },
+        {
+          "en": "The Barak and Brahmaputra are distinct river systems in Assam.",
+          "as": "অসমত বৰাক আৰু ব্ৰহ্মপুত্ৰ পৃথক নদী প্ৰণালী।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Trace the Barak through Cachar to its branches.",
+          "as": "কাছাৰৰ মাজেৰে বৰাকৰ শাখা দুটালৈ সোঁত অনুসৰণ কৰা।"
+        },
+        "result": {
+          "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+          "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "South to the Barak",
+            "as": "দক্ষিণৰ বৰাকলৈ"
+          },
+          "text": [
+            {
+              "en": "The Barak flows generally west across the Cachar plain.",
+              "as": "বৰাক কাছাৰৰ সমভূমিৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ যায়।"
+            },
+            {
+              "en": "Silchar is a reference point in the Barak Valley.",
+              "as": "বৰাক উপত্যকা চিনাক্ত কৰিবলৈ শিলচৰ এখন চিনাকি ঠাই।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.45,
+              24.3,
+              96.0,
+              28.25
+            ],
+            "show": [
+              "brahmaputra",
+              "silchar"
+            ],
+            "labels": {
+              "subansiri": {
+                "t": {
+                  "en": "Subansiri",
+                  "as": "সোৱণশিৰি"
+                }
+              },
+              "manas": {
+                "t": {
+                  "en": "Manas",
+                  "as": "মানাহ"
+                }
+              },
+              "dihing": {
+                "t": {
+                  "en": "Burhi Dihing",
+                  "as": "বুঢ়ীদিহিং"
+                }
+              }
+            }
+          },
+          "id": "ag02.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "One river, two branches",
+            "as": "এখন নদী, দুটা শাখা"
+          },
+          "text": [
+            {
+              "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+              "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Cachar plain",
+                "as": "কাছাৰৰ সমভূমি"
+              },
+              {
+                "en": "Split near Bhanga",
+                "as": "ভাঙাৰ ওচৰত বিভাজন"
+              },
+              {
+                "en": "Surma and Kushiyara",
+                "as": "সুৰমা আৰু কুশিয়াৰা"
+              }
+            ]
+          },
+          "id": "ag02.u3.02"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Which marked city is in the Barak Valley?",
+            "as": "চিহ্নিত কোনখন নগৰ বৰাক উপত্যকাত?"
+          },
+          "target": "silchar",
+          "choices": [
+            "silchar",
+            "guwahati",
+            "dibrugarh"
+          ],
+          "why": {
+            "en": "Silchar is in the Barak Valley.",
+            "as": "শিলচৰ বৰাক উপত্যকাত আছে।"
+          },
+          "id": "ag02.u3.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Follow the Barak downstream.",
+            "as": "বৰাকৰ নামনিলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Cachar plain",
+              "as": "কাছাৰৰ সমভূমি"
+            },
+            {
+              "en": "Split near Bhanga",
+              "as": "ভাঙাৰ ওচৰত বিভাজন"
+            },
+            {
+              "en": "Surma and Kushiyara branches",
+              "as": "সুৰমা আৰু কুশিয়াৰা শাখা"
+            }
+          ],
+          "why": {
+            "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+            "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+          },
+          "id": "ag02.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Through the Cachar plain, the Barak flows generally eastward.",
+            "as": "কাছাৰৰ সমভূমিত বৰাক সাধাৰণতে পূবলৈ বয়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The Barak flows generally west across the Cachar plain.",
+            "as": "বৰাক কাছাৰৰ সমভূমিৰ মাজেৰে সাধাৰণতে পশ্চিমলৈ বৈ যায়।"
+          },
+          "id": "ag02.u3.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The branch paired with the Surma is the ",
+            "as": "সুৰমাৰ সৈতে আনটো শাখা হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Kushiyara",
+              "as": "কুশিয়াৰা"
+            },
+            {
+              "en": "Subansiri",
+              "as": "সোৱণশিৰি"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+            "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+          },
+          "id": "ag02.u3.06"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Barak",
+                "as": "বৰাক"
+              },
+              {
+                "en": "Surma and Kushiyara",
+                "as": "সুৰমা আৰু কুশিয়াৰা"
+              }
+            ],
+            [
+              {
+                "en": "Brahmaputra",
+                "as": "ব্ৰহ্মপুত্ৰ"
+              },
+              {
+                "en": "Subansiri and Burhi Dihing",
+                "as": "সোৱণশিৰি আৰু বুঢ়ীদিহিং"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The Barak examples are outgoing branches. The Brahmaputra examples are incoming tributaries.",
+            "as": "বৰাকৰ উদাহৰণ দুটা ওলাই যোৱা শাখা। ব্ৰহ্মপুত্ৰৰ উদাহৰণ দুটা আহি মিলা উপনদী।"
+          },
+          "id": "ag02.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "icon": "map",
+      "title": {
+        "en": "Rain on a ridge",
+        "as": "পাহাৰৰ শিৰত বৰষুণ"
+      },
+      "learned": [
+        {
+          "en": "A drainage divide separates land draining to different outlets.",
+          "as": "জলবিভাজিকাই বেলেগ বেলেগ নিৰ্গমন পথলৈ পানী যোৱা অঞ্চল পৃথক কৰে।"
+        },
+        {
+          "en": "Follow the downhill path to see which stream receives the runoff.",
+          "as": "বৈ অহা পানী কোনটো জলধাৰাত পৰে জানিবলৈ তলমুৱা পথটো অনুসৰণ কৰা।"
+        },
+        {
+          "en": "Two slopes can feed different streams.",
+          "as": "দুটা ঢালৰ পানী বেলেগ বেলেগ জলধাৰাত পৰিব পাৰে।"
+        },
+        {
+          "en": "A confluence is where streams meet.",
+          "as": "দুটা জলধাৰা মিলা ঠাইখন সংগমস্থল।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Predict where runoff goes on a simple ridge.",
+          "as": "এটা সৰল পাহাৰীয়া উদাহৰণত পানী ক’লৈ যাব অনুমান কৰা।"
+        },
+        "result": {
+          "en": "Follow the downhill path to see which stream receives the runoff.",
+          "as": "বৈ অহা পানী কোনটো জলধাৰাত পৰে জানিবলৈ তলমুৱা পথটো অনুসৰণ কৰা।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Two drops, different paths",
+            "as": "দুটোপাল পানী, দুটা পথ"
+          },
+          "text": [
+            {
+              "en": "A drainage divide separates land draining to different outlets.",
+              "as": "জলবিভাজিকাই বেলেগ বেলেগ নিৰ্গমন পথলৈ পানী যোৱা অঞ্চল পৃথক কৰে।"
+            },
+            {
+              "en": "Imagine a ridge with Stream A below its west slope and Stream B below its east slope.",
+              "as": "এটা পাহাৰৰ শিৰ কল্পনা কৰা। পশ্চিম ঢালৰ তলত জলধাৰা ক আৰু পূব ঢালৰ তলত জলধাৰা খ আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Stream A below west slope",
+                "as": "পশ্চিম ঢালৰ তলত জলধাৰা ক"
+              },
+              {
+                "en": "Stream B below east slope",
+                "as": "পূব ঢালৰ তলত জলধাৰা খ"
+              }
+            ]
+          },
+          "id": "ag02.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Trace the slope",
+            "as": "ঢালৰ দিশ অনুসৰণ কৰা"
+          },
+          "text": [
+            {
+              "en": "Follow the downhill path to see which stream receives the runoff.",
+              "as": "বৈ অহা পানী কোনটো জলধাৰাত পৰে জানিবলৈ তলমুৱা পথটো অনুসৰণ কৰা।"
+            },
+            {
+              "en": "On this schematic, runoff on the east slope reaches Stream B.",
+              "as": "এই সৰল চিত্ৰত পূব ঢালৰ পানী জলধাৰা খত পৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "East slope",
+                "as": "পূব ঢাল"
+              },
+              {
+                "en": "Downhill runoff",
+                "as": "তললৈ বৈ যোৱা পানী"
+              },
+              {
+                "en": "Stream B",
+                "as": "জলধাৰা খ"
+              }
+            ]
+          },
+          "id": "ag02.u4.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "West slope",
+                "as": "পশ্চিম ঢাল"
+              },
+              {
+                "en": "Stream A",
+                "as": "জলধাৰা ক"
+              }
+            ],
+            [
+              {
+                "en": "East slope",
+                "as": "পূব ঢাল"
+              },
+              {
+                "en": "Stream B",
+                "as": "জলধাৰা খ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Follow the downhill path to see which stream receives the runoff.",
+            "as": "বৈ অহা পানী কোনটো জলধাৰাত পৰে জানিবলৈ তলমুৱা পথটো অনুসৰণ কৰা।"
+          },
+          "id": "ag02.u4.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Runoff on both sides of a ridge always reaches the same stream first.",
+            "as": "পাহাৰৰ শিৰৰ দুয়োফালৰ পানী সদায় প্ৰথমে একেটা জলধাৰাত পৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "A drainage divide separates land draining to different outlets.",
+            "as": "জলবিভাজিকাই বেলেগ বেলেগ নিৰ্গমন পথলৈ পানী যোৱা অঞ্চল পৃথক কৰে।"
+          },
+          "id": "ag02.u4.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Two streams meet at a ",
+            "as": "দুটা জলধাৰা মিলা ঠাইখন হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "confluence",
+              "as": "সংগমস্থল"
+            },
+            {
+              "en": "drainage divide",
+              "as": "জলবিভাজিকা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A divide separates drainage paths. A confluence joins streams.",
+            "as": "জলবিভাজিকাই পানীৰ পথ পৃথক কৰে। সংগমস্থলত জলধাৰা মিলে।"
+          },
+          "id": "ag02.u4.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Follow runoff from a slope into the main river.",
+            "as": "ঢালৰ পৰা মূল নদীলৈ পানীৰ পথ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Slope",
+              "as": "ঢাল"
+            },
+            {
+              "en": "Tributary",
+              "as": "উপনদী"
+            },
+            {
+              "en": "Main river",
+              "as": "মূল নদী"
+            }
+          ],
+          "why": {
+            "en": "A tributary flows into another river.",
+            "as": "উপনদী এখন আন এখন নদীত মিলিত হয়।"
+          },
+          "id": "ag02.u4.06"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The closer stream on a flat map can be across a drainage divide.",
+            "as": "সমতল মানচিত্ৰত ওচৰ যেন লগা জলধাৰাটো জলবিভাজিকাৰ সিপাৰেও থাকিব পাৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Follow the downhill path to see which stream receives the runoff.",
+            "as": "বৈ অহা পানী কোনটো জলধাৰাত পৰে জানিবলৈ তলমুৱা পথটো অনুসৰণ কৰা।"
+          },
+          "id": "ag02.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "icon": "map",
+    "title": {
+      "en": "Read the river systems",
+      "as": "নদী প্ৰণালী বুজা"
+    },
+    "learned": [],
+    "mission": {
+      "objective": {
+        "en": "Apply flow, bank and drainage clues.",
+        "as": "সোঁত, পাৰ আৰু পানীৰ পথৰ সংকেত ব্যৱহাৰ কৰা।"
+      },
+      "result": {
+        "en": "You traced two river systems and explained where water goes.",
+        "as": "তুমি দুটা নদী প্ৰণালীৰ সোঁত অনুসৰণ কৰিলা আৰু পানী ক’লৈ যায় বুজালা।"
+      }
+    },
+    "steps": [
+      {
+        "type": "map",
+        "q": {
+          "en": "At which marked city would you finish a downstream trip from Dibrugarh through Guwahati?",
+          "as": "ডিব্ৰুগড়ৰ পৰা গুৱাহাটী হৈ নামনিলৈ গ’লে চিহ্নিত কোনখন নগৰত যাত্ৰা শেষ হ’ব?"
+        },
+        "target": "dhubri",
+        "choices": [
+          "dibrugarh",
+          "guwahati",
+          "dhubri"
+        ],
+        "why": {
+          "en": "From upstream to downstream, the order is Dibrugarh, Guwahati, Dhubri.",
+          "as": "উজনিৰ পৰা নামনিলৈ ক্ৰমটো হ’ল ডিব্ৰুগড়, গুৱাহাটী, ধুবুৰী।"
+        },
+        "id": "ag02.test.01"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Facing due west with a tributary entering from the south, it joins on your ",
+          "as": "পোনে পোনে পশ্চিমলৈ মুখ কৰিছা। দক্ষিণৰ পৰা অহা উপনদীখন মিলিব তোমাৰ "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "left",
+            "as": "বাওঁফালে"
+          },
+          {
+            "en": "right",
+            "as": "সোঁফালে"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Name the banks while facing downstream.",
+          "as": "নামনিৰ ফালে মুখ কৰি পাৰৰ নাম নিৰ্ণয় কৰা হয়।"
+        },
+        "id": "ag02.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Surma",
+              "as": "সুৰমা"
+            },
+            {
+              "en": "Branch of the Barak",
+              "as": "বৰাকৰ শাখা"
+            }
+          ],
+          [
+            {
+              "en": "Subansiri",
+              "as": "সোৱণশিৰি"
+            },
+            {
+              "en": "Tributary of the Brahmaputra",
+              "as": "ব্ৰহ্মপুত্ৰৰ উপনদী"
+            }
+          ]
+        ],
+        "why": {
+          "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+          "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+        },
+        "id": "ag02.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "If a ridge separates two slopes, the nearest channel across the ridge must receive the runoff.",
+          "as": "দুটা ঢাল পাহাৰৰ শিৰে পৃথক কৰিলে, সিপাৰৰ আটাইতকৈ ওচৰৰ জলধাৰাতেই পানী পৰিব।"
+        },
+        "answer": false,
+        "why": {
+          "en": "Follow the downhill path to see which stream receives the runoff.",
+          "as": "বৈ অহা পানী কোনটো জলধাৰাত পৰে জানিবলৈ তলমুৱা পথটো অনুসৰণ কৰা।"
+        },
+        "id": "ag02.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Start at the Barak Valley city and follow the Barak to its branches.",
+          "as": "বৰাক উপত্যকাৰ নগৰৰ পৰা বৰাকৰ শাখা দুটালৈ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Silchar",
+            "as": "শিলচৰ"
+          },
+          {
+            "en": "Split near Bhanga",
+            "as": "ভাঙাৰ ওচৰত বিভাজন"
+          },
+          {
+            "en": "Surma and Kushiyara",
+            "as": "সুৰমা আৰু কুশিয়াৰা"
+          }
+        ],
+        "why": {
+          "en": "The Barak divides into the Surma and Kushiyara near Bhanga.",
+          "as": "ভাঙাৰ ওচৰত বৰাক সুৰমা আৰু কুশিয়াৰা নামে দুটা শাখাত ভাগ হয়।"
+        },
+        "id": "ag02.test.05"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1123 @@
+{
+  "id": "ag-04-landscape",
+  "course": "assam-geography",
+  "no": 4,
+  "version": 1,
+  "king": {
+    "en": "Read the landscape",
+    "as": "ভূদৃশ্য পঢ়া"
+  },
+  "reign": {
+    "en": "Read the landscape",
+    "as": "ভূদৃশ্য পঢ়া"
+  },
+  "portrait": "ag-02-follow-water/river-tile.webp",
+  "sources": [
+    {
+      "title": "IMD Guwahati climatological table",
+      "url": "https://city.imd.gov.in/citywx/extreme/JUL/guwahati2.htm",
+      "used_for": "1991–2020 mean monthly rainfall, January, July and October."
+    },
+    {
+      "title": "Ramsar Deepor Beel information sheet",
+      "url": "https://rsis.ramsar.org/RISapp/files/RISrep/IN1207RIS.pdf",
+      "used_for": "Sections 4 and 7, location and wetland character."
+    },
+    {
+      "title": "UNESCO Kaziranga",
+      "url": "https://whc.unesco.org/en/list/337",
+      "used_for": "Floodplain and habitats."
+    },
+    {
+      "title": "UNESCO Manas",
+      "url": "https://whc.unesco.org/en/list/338",
+      "used_for": "Foothill habitats and heritage property."
+    }
+  ],
+  "review_notes": "Private draft. Assamese editorial review pending.",
+  "map": {
+    "box": [
+      89.8,
+      25.4,
+      94.2,
+      27.5
+    ],
+    "show": [
+      "brahmaputra",
+      "guwahati",
+      "kaziranga",
+      "ag-deepor-beel",
+      "ag-manas-site"
+    ]
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Atlas mission",
+      "as": "মানচিত্ৰ অভিযান"
+    },
+    "title": {
+      "en": "Read the landscape",
+      "as": "ভূদৃশ্য পঢ়া"
+    },
+    "hook": {
+      "en": "What can rain, terrain and water tell you?",
+      "as": "বৰষুণ, ভূমি আৰু পানীয়ে কি কয়?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Read the rain",
+        "as": "বৰষুণৰ হিচাপ পঢ়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "IMD’s Guwahati rainfall normals use the period 1991–2020.",
+          "as": "বতৰ বিজ্ঞান বিভাগৰ গুৱাহাটীৰ বৰষুণৰ গড় ১৯৯১–২০২০ সময়ৰ।"
+        },
+        {
+          "en": "January averages 11.5 mm and July averages 283.4 mm.",
+          "as": "জানুৱাৰীত গড়ে ১১.৫ মিমি আৰু জুলাইত ২৮৩.৪ মিমি বৰষুণ হয়।"
+        },
+        {
+          "en": "October averages 117.9 mm, between the January and July figures.",
+          "as": "অক্টোবৰৰ ১১৭.৯ মিমি গড় জানুৱাৰী আৰু জুলাইৰ মাজত।"
+        },
+        {
+          "en": "A station normal summarises a long record at one location.",
+          "as": "এটা কেন্দ্ৰৰ গড়ে সেই ঠাইৰ দীঘলীয়া নথিৰ সাৰাংশ দিয়ে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Compare three Guwahati rainfall normals.",
+          "as": "গুৱাহাটীৰ তিনিটা মাহৰ গড় বৰষুণ তুলনা কৰা।"
+        },
+        "result": {
+          "en": "A station normal summarises a long record at one location.",
+          "as": "এটা কেন্দ্ৰৰ গড়ে সেই ঠাইৰ দীঘলীয়া নথিৰ সাৰাংশ দিয়ে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the rain",
+            "as": "বৰষুণৰ হিচাপ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "IMD’s Guwahati rainfall normals use the period 1991–2020.",
+              "as": "বতৰ বিজ্ঞান বিভাগৰ গুৱাহাটীৰ বৰষুণৰ গড় ১৯৯১–২০২০ সময়ৰ।"
+            },
+            {
+              "en": "January averages 11.5 mm and July averages 283.4 mm.",
+              "as": "জানুৱাৰীত গড়ে ১১.৫ মিমি আৰু জুলাইত ২৮৩.৪ মিমি বৰষুণ হয়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "January · 11.5 mm",
+                "as": "জানুৱাৰী · ১১.৫ মিমি"
+              },
+              {
+                "en": "July · 283.4 mm",
+                "as": "জুলাই · ২৮৩.৪ মিমি"
+              },
+              {
+                "en": "October · 117.9 mm",
+                "as": "অক্টোবৰ · ১১৭.৯ মিমি"
+              }
+            ]
+          },
+          "id": "ag04.u1.01",
+          "img": "rainfall-normals.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Guwahati mean monthly rainfall, IMD 1991–2020. 01 January, 07 July, 10 October.",
+            "as": "গুৱাহাটীৰ গড় মাহিলি বৰষুণ, বতৰ বিজ্ঞান বিভাগ ১৯৯১–২০২০। ০১ জানুৱাৰী, ০৭ জুলাই, ১০ অক্টোবৰ।"
+          }
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "October averages 117.9 mm, between the January and July figures.",
+              "as": "অক্টোবৰৰ ১১৭.৯ মিমি গড় জানুৱাৰী আৰু জুলাইৰ মাজত।"
+            },
+            {
+              "en": "A station normal summarises a long record at one location.",
+              "as": "এটা কেন্দ্ৰৰ গড়ে সেই ঠাইৰ দীঘলীয়া নথিৰ সাৰাংশ দিয়ে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "January · 11.5 mm",
+                "as": "জানুৱাৰী · ১১.৫ মিমি"
+              },
+              {
+                "en": "July · 283.4 mm",
+                "as": "জুলাই · ২৮৩.৪ মিমি"
+              },
+              {
+                "en": "October · 117.9 mm",
+                "as": "অক্টোবৰ · ১১৭.৯ মিমি"
+              }
+            ]
+          },
+          "id": "ag04.u1.02"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order the three months from driest to wettest by their normals.",
+            "as": "গড় বৰষুণ কমৰ পৰা বেছিলৈ মাহ তিনিটা সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "January",
+              "as": "জানুৱাৰী"
+            },
+            {
+              "en": "October",
+              "as": "অক্টোবৰ"
+            },
+            {
+              "en": "July",
+              "as": "জুলাই"
+            }
+          ],
+          "why": {
+            "en": "October averages 117.9 mm, between the January and July figures.",
+            "as": "অক্টোবৰৰ ১১৭.৯ মিমি গড় জানুৱাৰী আৰু জুলাইৰ মাজত।"
+          },
+          "id": "ag04.u1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The chart measures rainfall in ",
+            "as": "চিত্ৰখনত বৰষুণ জোখা হৈছে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "millimetres",
+              "as": "মিলিমিটাৰত"
+            },
+            {
+              "en": "degrees",
+              "as": "ডিগ্ৰীত"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "January averages 11.5 mm and July averages 283.4 mm.",
+            "as": "জানুৱাৰীত গড়ে ১১.৫ মিমি আৰু জুলাইত ২৮৩.৪ মিমি বৰষুণ হয়।"
+          },
+          "id": "ag04.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The July bar predicts the exact total next July.",
+            "as": "জুলাইৰ স্তম্ভই অহা জুলাইৰ সঠিক মুঠ বৰষুণ কয়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "A station normal summarises a long record at one location.",
+            "as": "এটা কেন্দ্ৰৰ গড়ে সেই ঠাইৰ দীঘলীয়া নথিৰ সাৰাংশ দিয়ে।"
+          },
+          "id": "ag04.u1.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "January",
+                "as": "জানুৱাৰী"
+              },
+              {
+                "en": "11.5 mm",
+                "as": "১১.৫ মিমি"
+              }
+            ],
+            [
+              {
+                "en": "July",
+                "as": "জুলাই"
+              },
+              {
+                "en": "283.4 mm",
+                "as": "২৮৩.৪ মিমি"
+              }
+            ]
+          ],
+          "why": {
+            "en": "January averages 11.5 mm and July averages 283.4 mm.",
+            "as": "জানুৱাৰীত গড়ে ১১.৫ মিমি আৰু জুলাইত ২৮৩.৪ মিমি বৰষুণ হয়।"
+          },
+          "id": "ag04.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is the period behind the bars?",
+            "as": "স্তম্ভবোৰ কোন সময়ৰ তথ্যৰ ওপৰত আধাৰিত?"
+          },
+          "options": [
+            {
+              "en": "1991–2020",
+              "as": "১৯৯১–২০২০"
+            },
+            {
+              "en": "One day",
+              "as": "এদিন"
+            },
+            {
+              "en": "July alone",
+              "as": "কেৱল জুলাই"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "IMD’s Guwahati rainfall normals use the period 1991–2020.",
+            "as": "বতৰ বিজ্ঞান বিভাগৰ গুৱাহাটীৰ বৰষুণৰ গড় ১৯৯১–২০২০ সময়ৰ।"
+          },
+          "id": "ag04.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "A lake in an old channel",
+        "as": "পুৰণি খাতত হ্ৰদ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Deepor Beel lies southwest of Guwahati.",
+          "as": "দীপৰ বিল গুৱাহাটীৰ দক্ষিণ-পশ্চিমত আছে।"
+        },
+        {
+          "en": "It is a freshwater lake in a former Brahmaputra channel.",
+          "as": "ই ব্ৰহ্মপুত্ৰৰ পুৰণি খাতত থকা মিঠাপানীৰ হ্ৰদ।"
+        },
+        {
+          "en": "The wetland stores storm runoff and provides habitat for waterbirds.",
+          "as": "জলাশয়টোৱে বৰষুণৰ পানী ধৰি ৰাখে আৰু জলচৰ চৰাইক বাসস্থান দিয়ে।"
+        },
+        {
+          "en": "A former river channel can hold standing water after the main flow shifts.",
+          "as": "মূল সোঁত আঁতৰাৰ পাছত পুৰণি নদীখাতত পানী জমা হৈ থাকিব পাৰে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Recognise wetland evidence around Deepor Beel.",
+          "as": "দীপৰ বিলৰ জলাশয়ৰ সংকেত চিনা।"
+        },
+        "result": {
+          "en": "A former river channel can hold standing water after the main flow shifts.",
+          "as": "মূল সোঁত আঁতৰাৰ পাছত পুৰণি নদীখাতত পানী জমা হৈ থাকিব পাৰে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A lake in an old channel",
+            "as": "পুৰণি খাতত হ্ৰদ"
+          },
+          "text": [
+            {
+              "en": "Deepor Beel lies southwest of Guwahati.",
+              "as": "দীপৰ বিল গুৱাহাটীৰ দক্ষিণ-পশ্চিমত আছে।"
+            },
+            {
+              "en": "It is a freshwater lake in a former Brahmaputra channel.",
+              "as": "ই ব্ৰহ্মপুত্ৰৰ পুৰণি খাতত থকা মিঠাপানীৰ হ্ৰদ।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Former channel",
+                "as": "পুৰণি নদীখাত"
+              },
+              {
+                "en": "Freshwater lake",
+                "as": "মিঠাপানীৰ হ্ৰদ"
+              },
+              {
+                "en": "Waterbird habitat",
+                "as": "জলচৰ চৰাইৰ বাসস্থান"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "ag04.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The wetland stores storm runoff and provides habitat for waterbirds.",
+              "as": "জলাশয়টোৱে বৰষুণৰ পানী ধৰি ৰাখে আৰু জলচৰ চৰাইক বাসস্থান দিয়ে।"
+            },
+            {
+              "en": "A former river channel can hold standing water after the main flow shifts.",
+              "as": "মূল সোঁত আঁতৰাৰ পাছত পুৰণি নদীখাতত পানী জমা হৈ থাকিব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Former channel",
+                "as": "পুৰণি নদীখাত"
+              },
+              {
+                "en": "Freshwater lake",
+                "as": "মিঠাপানীৰ হ্ৰদ"
+              },
+              {
+                "en": "Waterbird habitat",
+                "as": "জলচৰ চৰাইৰ বাসস্থান"
+              }
+            ]
+          },
+          "id": "ag04.u2.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Deepor Beel",
+                "as": "দীপৰ বিল"
+              },
+              {
+                "en": "Standing freshwater",
+                "as": "জমা মিঠাপানী"
+              }
+            ],
+            [
+              {
+                "en": "Main river channel",
+                "as": "মূল নদীখাত"
+              },
+              {
+                "en": "Flowing water",
+                "as": "বৈ যোৱা পানী"
+              }
+            ]
+          ],
+          "why": {
+            "en": "It is a freshwater lake in a former Brahmaputra channel.",
+            "as": "ই ব্ৰহ্মপুত্ৰৰ পুৰণি খাতত থকা মিঠাপানীৰ হ্ৰদ।"
+          },
+          "id": "ag04.u2.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The beel lies northeast of Guwahati.",
+            "as": "বিলখন গুৱাহাটীৰ উত্তৰ-পূবত আছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Deepor Beel lies southwest of Guwahati.",
+            "as": "দীপৰ বিল গুৱাহাটীৰ দক্ষিণ-পশ্চিমত আছে।"
+          },
+          "id": "ag04.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The lake occupies a former channel of the ",
+            "as": "হ্ৰদখন এই নদীৰ পুৰণি খাতত আছে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Barak",
+              "as": "বৰাক"
+            },
+            {
+              "en": "Brahmaputra",
+              "as": "ব্ৰহ্মপুত্ৰ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "It is a freshwater lake in a former Brahmaputra channel.",
+            "as": "ই ব্ৰহ্মপুত্ৰৰ পুৰণি খাতত থকা মিঠাপানীৰ হ্ৰদ।"
+          },
+          "id": "ag04.u2.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order this possible landscape change.",
+            "as": "ভূদৃশ্যৰ সম্ভাব্য সলনি ক্ৰমত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "River uses channel",
+              "as": "নদী খাতেদি বয়"
+            },
+            {
+              "en": "Main flow shifts",
+              "as": "মূল সোঁত আঁতৰে"
+            },
+            {
+              "en": "Water remains in old channel",
+              "as": "পুৰণি খাতত পানী থাকে"
+            }
+          ],
+          "why": {
+            "en": "A former river channel can hold standing water after the main flow shifts.",
+            "as": "মূল সোঁত আঁতৰাৰ পাছত পুৰণি নদীখাতত পানী জমা হৈ থাকিব পাৰে।"
+          },
+          "id": "ag04.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which service is documented for Deepor Beel?",
+            "as": "দীপৰ বিলৰ কোনটো ভূমিকা নথিভুক্ত আছে?"
+          },
+          "options": [
+            {
+              "en": "Oil processing",
+              "as": "তেল শোধন"
+            },
+            {
+              "en": "Hill transport",
+              "as": "পাহাৰীয়া যাতায়াত"
+            },
+            {
+              "en": "Stormwater storage",
+              "as": "বৰষুণৰ পানী ধৰি ৰখা"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "The wetland stores storm runoff and provides habitat for waterbirds.",
+            "as": "জলাশয়টোৱে বৰষুণৰ পানী ধৰি ৰাখে আৰু জলচৰ চৰাইক বাসস্থান দিয়ে।"
+          },
+          "id": "ag04.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Grassland and foothills",
+        "as": "ঘাঁহনি আৰু পাদদেশ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Kaziranga includes wet alluvial grassland and shallow pools.",
+          "as": "কাজিৰঙাত পলসুৱা সেমেকা ঘাঁহনি আৰু অগভীৰ পানীৰ ঠাই আছে।"
+        },
+        {
+          "en": "Manas includes Himalayan foothills, forest and alluvial grassland.",
+          "as": "মানাহত হিমালয়ৰ পাদদেশ, অৰণ্য আৰু পলসুৱা ঘাঁহনি আছে।"
+        },
+        {
+          "en": "Grassland alone does not distinguish these sites.",
+          "as": "কেৱল ঘাঁহনি দেখি ঠাই দুখন পৃথককৈ চিনিব নোৱাৰি।"
+        },
+        {
+          "en": "A combination of terrain and water clues gives stronger evidence.",
+          "as": "ভূমি আৰু পানীৰ সংকেত একেলগে চালে অধিক ভাল প্ৰমাণ পোৱা যায়।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use terrain and water clues to compare habitats.",
+          "as": "ভূমি আৰু পানীৰ সংকেতেৰে বাসস্থান তুলনা কৰা।"
+        },
+        "result": {
+          "en": "A combination of terrain and water clues gives stronger evidence.",
+          "as": "ভূমি আৰু পানীৰ সংকেত একেলগে চালে অধিক ভাল প্ৰমাণ পোৱা যায়।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Grassland and foothills",
+            "as": "ঘাঁহনি আৰু পাদদেশ"
+          },
+          "text": [
+            {
+              "en": "Kaziranga includes wet alluvial grassland and shallow pools.",
+              "as": "কাজিৰঙাত পলসুৱা সেমেকা ঘাঁহনি আৰু অগভীৰ পানীৰ ঠাই আছে।"
+            },
+            {
+              "en": "Manas includes Himalayan foothills, forest and alluvial grassland.",
+              "as": "মানাহত হিমালয়ৰ পাদদেশ, অৰণ্য আৰু পলসুৱা ঘাঁহনি আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Kaziranga · floodplain pools",
+                "as": "কাজিৰঙা · প্লাৱনভূমিৰ পানী"
+              },
+              {
+                "en": "Manas · Himalayan foothills",
+                "as": "মানাহ · হিমালয়ৰ পাদদেশ"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "ag04.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Grassland alone does not distinguish these sites.",
+              "as": "কেৱল ঘাঁহনি দেখি ঠাই দুখন পৃথককৈ চিনিব নোৱাৰি।"
+            },
+            {
+              "en": "A combination of terrain and water clues gives stronger evidence.",
+              "as": "ভূমি আৰু পানীৰ সংকেত একেলগে চালে অধিক ভাল প্ৰমাণ পোৱা যায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Kaziranga · floodplain pools",
+                "as": "কাজিৰঙা · প্লাৱনভূমিৰ পানী"
+              },
+              {
+                "en": "Manas · Himalayan foothills",
+                "as": "মানাহ · হিমালয়ৰ পাদদেশ"
+              }
+            ]
+          },
+          "id": "ag04.u3.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Kaziranga example",
+                "as": "কাজিৰঙাৰ উদাহৰণ"
+              },
+              {
+                "en": "Floodplain pools",
+                "as": "প্লাৱনভূমিৰ পানী"
+              }
+            ],
+            [
+              {
+                "en": "Manas example",
+                "as": "মানাহৰ উদাহৰণ"
+              },
+              {
+                "en": "Himalayan foothills",
+                "as": "হিমালয়ৰ পাদদেশ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Manas includes Himalayan foothills, forest and alluvial grassland.",
+            "as": "মানাহত হিমালয়ৰ পাদদেশ, অৰণ্য আৰু পলসুৱা ঘাঁহনি আছে।"
+          },
+          "id": "ag04.u3.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Only Kaziranga has alluvial grassland among these two examples.",
+            "as": "এই দুটা উদাহৰণৰ কেৱল কাজিৰঙাত পলসুৱা ঘাঁহনি আছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Grassland alone does not distinguish these sites.",
+            "as": "কেৱল ঘাঁহনি দেখি ঠাই দুখন পৃথককৈ চিনিব নোৱাৰি।"
+          },
+          "id": "ag04.u3.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The foothill clue in this comparison points to ",
+            "as": "এই তুলনাত পাদদেশৰ সংকেতে দেখুৱায় "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Manas",
+              "as": "মানাহ"
+            },
+            {
+              "en": "Deepor Beel",
+              "as": "দীপৰ বিল"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Manas includes Himalayan foothills, forest and alluvial grassland.",
+            "as": "মানাহত হিমালয়ৰ পাদদেশ, অৰণ্য আৰু পলসুৱা ঘাঁহনি আছে।"
+          },
+          "id": "ag04.u3.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which adds the most information to the clue “grassland”?",
+            "as": "“ঘাঁহনি” সংকেতত কোনটোৱে আটাইতকৈ বেছি নতুন তথ্য যোগ কৰে?"
+          },
+          "options": [
+            {
+              "en": "There is vegetation",
+              "as": "উদ্ভিদ আছে"
+            },
+            {
+              "en": "At Himalayan foothills",
+              "as": "হিমালয়ৰ পাদদেশত"
+            },
+            {
+              "en": "Grass is present",
+              "as": "ঘাঁহ আছে"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A combination of terrain and water clues gives stronger evidence.",
+            "as": "ভূমি আৰু পানীৰ সংকেত একেলগে চালে অধিক ভাল প্ৰমাণ পোৱা যায়।"
+          },
+          "id": "ag04.u3.06"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Shallow pools are one habitat clue for Kaziranga.",
+            "as": "অগভীৰ পানীৰ ঠাই কাজিৰঙাৰ বাসস্থানৰ এটা সংকেত।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Kaziranga includes wet alluvial grassland and shallow pools.",
+            "as": "কাজিৰঙাত পলসুৱা সেমেকা ঘাঁহনি আৰু অগভীৰ পানীৰ ঠাই আছে।"
+          },
+          "id": "ag04.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Conservation on the map",
+        "as": "মানচিত্ৰত সংৰক্ষণ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Kaziranga is a national park in the Brahmaputra floodplain.",
+          "as": "কাজিৰঙা ব্ৰহ্মপুত্ৰৰ প্লাৱনভূমিৰ এখন ৰাষ্ট্ৰীয় উদ্যান।"
+        },
+        {
+          "en": "Manas Wildlife Sanctuary is a World Heritage property at the Himalayan foothills.",
+          "as": "মানাহ বন্যপ্ৰাণী অভয়াৰণ্য হিমালয়ৰ পাদদেশৰ বিশ্ব ঐতিহ্য ক্ষেত্ৰ।"
+        },
+        {
+          "en": "Deepor Beel is listed as a Ramsar wetland.",
+          "as": "দীপৰ বিল ৰামছাৰ জলাশয় হিচাপে তালিকাভুক্ত।"
+        },
+        {
+          "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+          "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Locate three sites and distinguish site labels.",
+          "as": "তিনিখন ঠাই বিচাৰি সিহঁতৰ পৰিচয় পৃথক কৰা।"
+        },
+        "result": {
+          "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+          "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Three conservation sites",
+            "as": "তিনিখন সংৰক্ষণ ক্ষেত্ৰ"
+          },
+          "text": [
+            {
+              "en": "Kaziranga is a national park in the Brahmaputra floodplain.",
+              "as": "কাজিৰঙা ব্ৰহ্মপুত্ৰৰ প্লাৱনভূমিৰ এখন ৰাষ্ট্ৰীয় উদ্যান।"
+            },
+            {
+              "en": "Manas Wildlife Sanctuary is a World Heritage property at the Himalayan foothills.",
+              "as": "মানাহ বন্যপ্ৰাণী অভয়াৰণ্য হিমালয়ৰ পাদদেশৰ বিশ্ব ঐতিহ্য ক্ষেত্ৰ।"
+            }
+          ],
+          "map": {
+            "box": [
+              89.8,
+              25.4,
+              94.2,
+              27.5
+            ],
+            "show": [
+              "brahmaputra",
+              "guwahati",
+              "kaziranga",
+              "ag-deepor-beel",
+              "ag-manas-site"
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "ag04.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Deepor Beel is listed as a Ramsar wetland.",
+              "as": "দীপৰ বিল ৰামছাৰ জলাশয় হিচাপে তালিকাভুক্ত।"
+            },
+            {
+              "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+              "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Kaziranga",
+                "as": "কাজিৰঙা"
+              },
+              {
+                "en": "Manas",
+                "as": "মানাহ"
+              },
+              {
+                "en": "Deepor Beel",
+                "as": "দীপৰ বিল"
+              }
+            ]
+          },
+          "id": "ag04.u4.02"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Tap the site southwest of Guwahati.",
+            "as": "গুৱাহাটীৰ দক্ষিণ-পশ্চিমৰ ঠাইখন বাছা।"
+          },
+          "target": "ag-deepor-beel",
+          "choices": [
+            "ag-deepor-beel",
+            "ag-manas-site",
+            "kaziranga"
+          ],
+          "why": {
+            "en": "Deepor Beel is listed as a Ramsar wetland.",
+            "as": "দীপৰ বিল ৰামছাৰ জলাশয় হিচাপে তালিকাভুক্ত।"
+          },
+          "id": "ag04.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Deepor Beel",
+                "as": "দীপৰ বিল"
+              },
+              {
+                "en": "Ramsar wetland",
+                "as": "ৰামছাৰ জলাশয়"
+              }
+            ],
+            [
+              {
+                "en": "Kaziranga",
+                "as": "কাজিৰঙা"
+              },
+              {
+                "en": "National park",
+                "as": "ৰাষ্ট্ৰীয় উদ্যান"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Kaziranga is a national park in the Brahmaputra floodplain.",
+            "as": "কাজিৰঙা ব্ৰহ্মপুত্ৰৰ প্লাৱনভূমিৰ এখন ৰাষ্ট্ৰীয় উদ্যান।"
+          },
+          "id": "ag04.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A locator dot shows the entire protected boundary.",
+            "as": "অৱস্থান বিন্দুৱে সংৰক্ষিত অঞ্চলৰ সম্পূৰ্ণ সীমা দেখুৱায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+            "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+          },
+          "id": "ag04.u4.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The foothill World Heritage property in this comparison is ",
+            "as": "এই তুলনাত পাদদেশৰ বিশ্ব ঐতিহ্য ক্ষেত্ৰখন হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Deepor Beel",
+              "as": "দীপৰ বিল"
+            },
+            {
+              "en": "Manas Wildlife Sanctuary",
+              "as": "মানাহ বন্যপ্ৰাণী অভয়াৰণ্য"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Manas Wildlife Sanctuary is a World Heritage property at the Himalayan foothills.",
+            "as": "মানাহ বন্যপ্ৰাণী অভয়াৰণ্য হিমালয়ৰ পাদদেশৰ বিশ্ব ঐতিহ্য ক্ষেত্ৰ।"
+          },
+          "id": "ag04.u4.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which tool would answer whether a field is inside the protected area?",
+            "as": "পথাৰখন সংৰক্ষিত অঞ্চলৰ ভিতৰত নে জানিবলৈ কি লাগে?"
+          },
+          "options": [
+            {
+              "en": "A boundary map",
+              "as": "সীমাৰ মানচিত্ৰ"
+            },
+            {
+              "en": "Locator dot alone",
+              "as": "কেৱল অৱস্থান বিন্দু"
+            },
+            {
+              "en": "A name list",
+              "as": "নামৰ তালিকা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+            "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+          },
+          "id": "ag04.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "mission": {
+      "objective": {
+        "en": "What can rain, terrain and water tell you?",
+        "as": "বৰষুণ, ভূমি আৰু পানীয়ে কি কয়?"
+      },
+      "result": {
+        "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+        "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+      }
+    },
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "A 30-year station mean is the rainfall total of one specific year.",
+          "as": "৩০ বছৰৰ কেন্দ্ৰীয় গড় এটা নিৰ্দিষ্ট বছৰৰ মুঠ বৰষুণ।"
+        },
+        "answer": false,
+        "why": {
+          "en": "A station normal summarises a long record at one location.",
+          "as": "এটা কেন্দ্ৰৰ গড়ে সেই ঠাইৰ দীঘলীয়া নথিৰ সাৰাংশ দিয়ে।"
+        },
+        "id": "ag04.test.01"
+      },
+      {
+        "type": "map",
+        "q": {
+          "en": "Tap the mapped wetland in an old channel near Guwahati.",
+          "as": "গুৱাহাটীৰ ওচৰত পুৰণি খাতৰ জলাশয়টো বাছা।"
+        },
+        "target": "ag-deepor-beel",
+        "choices": [
+          "ag-deepor-beel",
+          "kaziranga",
+          "ag-manas-site"
+        ],
+        "why": {
+          "en": "It is a freshwater lake in a former Brahmaputra channel.",
+          "as": "ই ব্ৰহ্মপুত্ৰৰ পুৰণি খাতত থকা মিঠাপানীৰ হ্ৰদ।"
+        },
+        "id": "ag04.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Himalayan foothills",
+              "as": "হিমালয়ৰ পাদদেশ"
+            },
+            {
+              "en": "Manas",
+              "as": "মানাহ"
+            }
+          ],
+          [
+            {
+              "en": "Floodplain pools",
+              "as": "প্লাৱনভূমিৰ পানী"
+            },
+            {
+              "en": "Kaziranga",
+              "as": "কাজিৰঙা"
+            }
+          ]
+        ],
+        "why": {
+          "en": "A combination of terrain and water clues gives stronger evidence.",
+          "as": "ভূমি আৰু পানীৰ সংকেত একেলগে চালে অধিক ভাল প্ৰমাণ পোৱা যায়।"
+        },
+        "id": "ag04.test.03"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "To determine the extent of a sanctuary, use its ",
+          "as": "অভয়াৰণ্যৰ বিস্তৃতি জানিবলৈ চোৱা "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "boundary",
+            "as": "সীমা"
+          },
+          {
+            "en": "locator dot alone",
+            "as": "কেৱল অৱস্থান বিন্দু"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A locator dot gives a reference point; boundaries need a separate map layer.",
+          "as": "অৱস্থান বিন্দুৱে ঠাই চিনায়; সীমাৰ বাবে বেলেগ মানচিত্ৰ স্তৰ লাগে।"
+        },
+        "id": "ag04.test.04"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which observation describes inundation from the previous mission?",
+          "as": "আগৰ অভিযানৰ প্লাৱন কোনটো পৰ্যবেক্ষণে দেখুৱায়?"
+        },
+        "options": [
+          {
+            "en": "A new map label",
+            "as": "নতুন মানচিত্ৰৰ নাম"
+          },
+          {
+            "en": "A monthly rainfall normal",
+            "as": "এমাহৰ গড় বৰষুণ"
+          },
+          {
+            "en": "Water covers dry ground",
+            "as": "শুকান মাটি পানীৰে ঢাকে"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Inundation occurs when water covers normally dry land.",
+          "as": "সাধাৰণতে শুকান মাটিৰ ওপৰত পানী উঠিলে প্লাৱন হয়।"
+        },
+        "id": "ag04.test.05"
+      }
+    ]
+  }
+}

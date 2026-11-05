@@ -1,0 +1,1122 @@
+{
+  "id": "ag-03-floodplain",
+  "course": "assam-geography",
+  "no": 3,
+  "version": 1,
+  "king": {
+    "en": "Read a changing floodplain",
+    "as": "সলনি হোৱা প্লাৱনভূমি পঢ়া"
+  },
+  "reign": {
+    "en": "Read a changing floodplain",
+    "as": "সলনি হোৱা প্লাৱনভূমি পঢ়া"
+  },
+  "portrait": "ag-02-follow-water/river-tile.webp",
+  "sources": [
+    {
+      "title": "ASDMA and NRSC, Flood Hazard Zonation Atlas",
+      "url": "https://www.nrsc.gov.in/nrscnew/assets/pdf/Flood_Hazard_Zonation_Atlas_of_Assam_using_multi_sensor_satellite_data1998_2023.pdf",
+      "used_for": "Satellite observation period and hazard concept. Examples are schematic."
+    },
+    {
+      "title": "Assam Integrated River Basin Management Project",
+      "url": "https://igr.assam.gov.in/sites/default/files/swf_utility_folder/departments/asdma_revenue_uneecopscloud_com_oid_70/menu/document/airbmp_esmf_.pdf",
+      "used_for": "Flood and erosion context."
+    }
+  ],
+  "review_notes": "Private draft. Assamese editorial review pending.",
+  "map": {
+    "box": [
+      89.4,
+      24,
+      96.2,
+      28.4
+    ],
+    "show": [
+      "brahmaputra",
+      "guwahati",
+      "dibrugarh",
+      "silchar"
+    ]
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Atlas mission",
+      "as": "মানচিত্ৰ অভিযান"
+    },
+    "title": {
+      "en": "Read a changing floodplain",
+      "as": "সলনি হোৱা প্লাৱনভূমি পঢ়া"
+    },
+    "hook": {
+      "en": "What changed when the river rose?",
+      "as": "নদীৰ পানী বাঢ়িলে কি সলনি হ’ল?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Water over land",
+        "as": "মাটিৰ ওপৰত পানী"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Inundation occurs when water covers normally dry land.",
+          "as": "সাধাৰণতে শুকান মাটিৰ ওপৰত পানী উঠিলে প্লাৱন হয়।"
+        },
+        {
+          "en": "A floodplain is low land beside a river that can be inundated.",
+          "as": "প্লাৱনভূমি নদীৰ কাষৰ চাপৰ মাটি, য’ত পানী উঠিব পাৰে।"
+        },
+        {
+          "en": "Compare the same area before and during high water.",
+          "as": "পানী বঢ়াৰ আগত আৰু বঢ়াৰ সময়ত একেটা অঞ্চল তুলনা কৰা।"
+        },
+        {
+          "en": "In this schematic, floodwater covers the field but stops before the raised road.",
+          "as": "এই আৰ্হিত পানীয়ে পথাৰখন ঢাকে, কিন্তু ওখ ৰাস্তাটো নাপায়।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Recognise inundation from a paired observation.",
+          "as": "দুটা অৱস্থা তুলনা কৰি প্লাৱন চিনা।"
+        },
+        "result": {
+          "en": "In this schematic, floodwater covers the field but stops before the raised road.",
+          "as": "এই আৰ্হিত পানীয়ে পথাৰখন ঢাকে, কিন্তু ওখ ৰাস্তাটো নাপায়।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Water over land",
+            "as": "মাটিৰ ওপৰত পানী"
+          },
+          "text": [
+            {
+              "en": "Inundation occurs when water covers normally dry land.",
+              "as": "সাধাৰণতে শুকান মাটিৰ ওপৰত পানী উঠিলে প্লাৱন হয়।"
+            },
+            {
+              "en": "A floodplain is low land beside a river that can be inundated.",
+              "as": "প্লাৱনভূমি নদীৰ কাষৰ চাপৰ মাটি, য’ত পানী উঠিব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Before · dry field",
+                "as": "আগতে · শুকান পথাৰ"
+              },
+              {
+                "en": "High water · covered field",
+                "as": "পানী বাঢ়িলে · পানীৰ তলত পথাৰ"
+              }
+            ]
+          },
+          "id": "ag03.u1.01",
+          "img": "inundation.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic pair. 1 before high water, 2 during high water. Yellow outlines the field; the dark line is the raised road.",
+            "as": "আৰ্হি চিত্ৰ। ১ পানী বঢ়াৰ আগত, ২ পানী বঢ়াৰ সময়ত। হালধীয়া সীমা পথাৰ, গাঢ় ৰেখা ওখ ৰাস্তা।"
+          }
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Compare the same area before and during high water.",
+              "as": "পানী বঢ়াৰ আগত আৰু বঢ়াৰ সময়ত একেটা অঞ্চল তুলনা কৰা।"
+            },
+            {
+              "en": "In this schematic, floodwater covers the field but stops before the raised road.",
+              "as": "এই আৰ্হিত পানীয়ে পথাৰখন ঢাকে, কিন্তু ওখ ৰাস্তাটো নাপায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Before · dry field",
+                "as": "আগতে · শুকান পথাৰ"
+              },
+              {
+                "en": "High water · covered field",
+                "as": "পানী বাঢ়িলে · পানীৰ তলত পথাৰ"
+              }
+            ]
+          },
+          "id": "ag03.u1.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Before high water",
+                "as": "পানী বঢ়াৰ আগত"
+              },
+              {
+                "en": "Field dry",
+                "as": "পথাৰ শুকান"
+              }
+            ],
+            [
+              {
+                "en": "During high water",
+                "as": "পানী বঢ়াৰ সময়ত"
+              },
+              {
+                "en": "Field covered",
+                "as": "পানীৰ তলত পথাৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "In this schematic, floodwater covers the field but stops before the raised road.",
+            "as": "এই আৰ্হিত পানীয়ে পথাৰখন ঢাকে, কিন্তু ওখ ৰাস্তাটো নাপায়।"
+          },
+          "id": "ag03.u1.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The raised road is under water in this example.",
+            "as": "এই উদাহৰণত ওখ ৰাস্তাটো পানীৰ তলত।"
+          },
+          "answer": false,
+          "why": {
+            "en": "In this schematic, floodwater covers the field but stops before the raised road.",
+            "as": "এই আৰ্হিত পানীয়ে পথাৰখন ঢাকে, কিন্তু ওখ ৰাস্তাটো নাপায়।"
+          },
+          "id": "ag03.u1.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "To isolate a change, compare images of ",
+            "as": "সলনি চিনিবলৈ তুলনা কৰা "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "unrelated areas",
+              "as": "বেলেগ অঞ্চলৰ ছবি"
+            },
+            {
+              "en": "the same area",
+              "as": "একেটা অঞ্চলৰ ছবি"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Compare the same area before and during high water.",
+            "as": "পানী বঢ়াৰ আগত আৰু বঢ়াৰ সময়ত একেটা অঞ্চল তুলনা কৰা।"
+          },
+          "id": "ag03.u1.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order this inundation sequence.",
+            "as": "প্লাৱনৰ ক্ৰম সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "River rises",
+              "as": "নদীৰ পানী বাঢ়ে"
+            },
+            {
+              "en": "Water reaches the low field",
+              "as": "পানী চাপৰ পথাৰত সোমায়"
+            },
+            {
+              "en": "Field is covered",
+              "as": "পথাৰ পানীৰে ঢাকে"
+            }
+          ],
+          "why": {
+            "en": "Inundation occurs when water covers normally dry land.",
+            "as": "সাধাৰণতে শুকান মাটিৰ ওপৰত পানী উঠিলে প্লাৱন হয়।"
+          },
+          "id": "ag03.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which observation shows inundation?",
+            "as": "কোনটো পৰ্যবেক্ষণে প্লাৱন দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Raised road remains dry",
+              "as": "ওখ ৰাস্তা শুকান থাকে"
+            },
+            {
+              "en": "A dry field becomes covered",
+              "as": "শুকান পথাৰ পানীৰে ঢাকে"
+            },
+            {
+              "en": "Water remains in channel",
+              "as": "পানী নদীৰ খাততে থাকে"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Inundation occurs when water covers normally dry land.",
+            "as": "সাধাৰণতে শুকান মাটিৰ ওপৰত পানী উঠিলে প্লাৱন হয়।"
+          },
+          "id": "ag03.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "A bank moves",
+        "as": "নদীৰ পাৰ সৰে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Riverbank erosion removes material from the bank.",
+          "as": "নদীখহনীয়াই পাৰৰ মাটি আঁতৰায়।"
+        },
+        {
+          "en": "Compare low-water bank edges at the same scale.",
+          "as": "একেটা স্কেলত পানী কম থকা সময়ৰ পাৰৰ সীমা তুলনা কৰা।"
+        },
+        {
+          "en": "In this schematic, a strip of land visible at the first low-water observation is gone at the second.",
+          "as": "এই আৰ্হিত পানী কম থকা প্ৰথম পৰ্যবেক্ষণত দেখা মাটিৰ পটিটো দ্বিতীয় পৰ্যবেক্ষণত নাই।"
+        },
+        {
+          "en": "Water can cover a field temporarily without the bank retreating.",
+          "as": "পাৰ নখহিলেও পথাৰ কিছু সময়ৰ বাবে পানীৰ তলত থাকিব পাৰে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Separate evidence of land loss from temporary flooding.",
+          "as": "অস্থায়ী প্লাৱন আৰু মাটি খহাৰ প্ৰমাণ পৃথক কৰা।"
+        },
+        "result": {
+          "en": "Water can cover a field temporarily without the bank retreating.",
+          "as": "পাৰ নখহিলেও পথাৰ কিছু সময়ৰ বাবে পানীৰ তলত থাকিব পাৰে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A bank moves",
+            "as": "নদীৰ পাৰ সৰে"
+          },
+          "text": [
+            {
+              "en": "Riverbank erosion removes material from the bank.",
+              "as": "নদীখহনীয়াই পাৰৰ মাটি আঁতৰায়।"
+            },
+            {
+              "en": "Compare low-water bank edges at the same scale.",
+              "as": "একেটা স্কেলত পানী কম থকা সময়ৰ পাৰৰ সীমা তুলনা কৰা।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "First low water · land strip",
+                "as": "প্ৰথমবাৰ পানী কম · মাটিৰ পটি"
+              },
+              {
+                "en": "Second low water · strip gone",
+                "as": "দ্বিতীয়বাৰ পানী কম · পটিটো নাই"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "ag03.u2.01",
+          "img": "erosion.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Schematic low-water pair. Compare the bank edge against the same dark reference line in views 1 and 2.",
+            "as": "পানী কম থকা দুটা আৰ্হি চিত্ৰ। ১ আৰু ২ত একে গাঢ় ৰেখাৰ সৈতে পাৰৰ সীমা তুলনা কৰা।"
+          }
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "In this schematic, a strip of land visible at the first low-water observation is gone at the second.",
+              "as": "এই আৰ্হিত পানী কম থকা প্ৰথম পৰ্যবেক্ষণত দেখা মাটিৰ পটিটো দ্বিতীয় পৰ্যবেক্ষণত নাই।"
+            },
+            {
+              "en": "Water can cover a field temporarily without the bank retreating.",
+              "as": "পাৰ নখহিলেও পথাৰ কিছু সময়ৰ বাবে পানীৰ তলত থাকিব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "First low water · land strip",
+                "as": "প্ৰথমবাৰ পানী কম · মাটিৰ পটি"
+              },
+              {
+                "en": "Second low water · strip gone",
+                "as": "দ্বিতীয়বাৰ পানী কম · পটিটো নাই"
+              }
+            ]
+          },
+          "id": "ag03.u2.02"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A strip missing in a later comparable low-water view is evidence of ",
+            "as": "পিছৰ তুলনীয় দৃশ্যত মাটিৰ পটি নথকাটো প্ৰমাণ হ’ব পাৰে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "bank erosion",
+              "as": "পাৰ খহাৰ"
+            },
+            {
+              "en": "temporary inundation alone",
+              "as": "কেৱল অস্থায়ী প্লাৱনৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In this schematic, a strip of land visible at the first low-water observation is gone at the second.",
+            "as": "এই আৰ্হিত পানী কম থকা প্ৰথম পৰ্যবেক্ষণত দেখা মাটিৰ পটিটো দ্বিতীয় পৰ্যবেক্ষণত নাই।"
+          },
+          "id": "ag03.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Erosion",
+                "as": "খহনীয়া"
+              },
+              {
+                "en": "Bank material removed",
+                "as": "পাৰৰ মাটি আঁতৰে"
+              }
+            ],
+            [
+              {
+                "en": "Inundation",
+                "as": "প্লাৱন"
+              },
+              {
+                "en": "Dry ground covered",
+                "as": "শুকান মাটি পানীৰে ঢাকে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Water can cover a field temporarily without the bank retreating.",
+            "as": "পাৰ নখহিলেও পথাৰ কিছু সময়ৰ বাবে পানীৰ তলত থাকিব পাৰে।"
+          },
+          "id": "ag03.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A high-water picture alone establishes permanent land loss.",
+            "as": "কেৱল পানী বেছি থকা এখন ছবিয়ে স্থায়ী ভূমি ক্ষয় প্ৰমাণ কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Compare low-water bank edges at the same scale.",
+            "as": "একেটা স্কেলত পানী কম থকা সময়ৰ পাৰৰ সীমা তুলনা কৰা।"
+          },
+          "id": "ag03.u2.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order a comparison that tests for erosion.",
+            "as": "খহনীয়া পৰীক্ষা কৰাৰ ক্ৰম সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Align the same area",
+              "as": "একেটা অঞ্চল মিলোৱা"
+            },
+            {
+              "en": "Compare low-water edges",
+              "as": "পানী কম থকা সময়ৰ পাৰ তুলনা কৰা"
+            },
+            {
+              "en": "Check for missing land",
+              "as": "মাটি আঁতৰিছে নে চোৱা"
+            }
+          ],
+          "why": {
+            "en": "Compare low-water bank edges at the same scale.",
+            "as": "একেটা স্কেলত পানী কম থকা সময়ৰ পাৰৰ সীমা তুলনা কৰা।"
+          },
+          "id": "ag03.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is evidence of bank retreat?",
+            "as": "কোনটো পাৰ খহাৰ প্ৰমাণ?"
+          },
+          "options": [
+            {
+              "en": "Land is missing at comparable low water",
+              "as": "একেদৰে পানী কম থাকোঁতে মাটি নাই"
+            },
+            {
+              "en": "Water rises",
+              "as": "পানী বাঢ়ে"
+            },
+            {
+              "en": "A field dries again",
+              "as": "পথাৰ পুনৰ শুকায়"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In this schematic, a strip of land visible at the first low-water observation is gone at the second.",
+            "as": "এই আৰ্হিত পানী কম থকা প্ৰথম পৰ্যবেক্ষণত দেখা মাটিৰ পটিটো দ্বিতীয় পৰ্যবেক্ষণত নাই।"
+          },
+          "id": "ag03.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "What the atlas measures",
+        "as": "এটলাছে কি জোখে"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The Assam flood hazard atlas combines satellite observations from 1998 to 2023.",
+          "as": "অসমৰ বান বিপদ এটলাছত ১৯৯৮ৰ পৰা ২০২৩লৈ উপগ্ৰহৰ পৰ্যবেক্ষণ একত্ৰ কৰা হৈছে।"
+        },
+        {
+          "en": "A frequency class describes how often inundation was observed within the mapped record.",
+          "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে নথিভুক্ত সময়ত কিমান সঘনে প্লাৱন দেখা গৈছিল বুজায়।"
+        },
+        {
+          "en": "In this teaching key, a darker symbol means more observed inundation.",
+          "as": "এই শিক্ষণ সংকেতত গাঢ় চিহ্নৰ অৰ্থ অধিকবাৰ প্লাৱন দেখা গৈছে।"
+        },
+        {
+          "en": "A frequency class gives historical evidence for comparison.",
+          "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Read a frequency legend and its time window.",
+          "as": "ঘটনাৰ পুনৰাবৃত্তিৰ সংকেত আৰু সময়সীমা পঢ়া।"
+        },
+        "result": {
+          "en": "A frequency class gives historical evidence for comparison.",
+          "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "What the atlas measures",
+            "as": "এটলাছে কি জোখে"
+          },
+          "text": [
+            {
+              "en": "The Assam flood hazard atlas combines satellite observations from 1998 to 2023.",
+              "as": "অসমৰ বান বিপদ এটলাছত ১৯৯৮ৰ পৰা ২০২৩লৈ উপগ্ৰহৰ পৰ্যবেক্ষণ একত্ৰ কৰা হৈছে।"
+            },
+            {
+              "en": "A frequency class describes how often inundation was observed within the mapped record.",
+              "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে নথিভুক্ত সময়ত কিমান সঘনে প্লাৱন দেখা গৈছিল বুজায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Dark · more observations",
+                "as": "গাঢ় · অধিক পৰ্যবেক্ষণ"
+              },
+              {
+                "en": "Light · fewer observations",
+                "as": "পাতল · কম পৰ্যবেক্ষণ"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "ag03.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "In this teaching key, a darker symbol means more observed inundation.",
+              "as": "এই শিক্ষণ সংকেতত গাঢ় চিহ্নৰ অৰ্থ অধিকবাৰ প্লাৱন দেখা গৈছে।"
+            },
+            {
+              "en": "A frequency class gives historical evidence for comparison.",
+              "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Dark · more observations",
+                "as": "গাঢ় · অধিক পৰ্যবেক্ষণ"
+              },
+              {
+                "en": "Light · fewer observations",
+                "as": "পাতল · কম পৰ্যবেক্ষণ"
+              }
+            ]
+          },
+          "id": "ag03.u3.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Dark in this key",
+                "as": "এই সংকেতত গাঢ়"
+              },
+              {
+                "en": "More observations",
+                "as": "অধিক পৰ্যবেক্ষণ"
+              }
+            ],
+            [
+              {
+                "en": "Light in this key",
+                "as": "এই সংকেতত পাতল"
+              },
+              {
+                "en": "Fewer observations",
+                "as": "কম পৰ্যবেক্ষণ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "In this teaching key, a darker symbol means more observed inundation.",
+            "as": "এই শিক্ষণ সংকেতত গাঢ় চিহ্নৰ অৰ্থ অধিকবাৰ প্লাৱন দেখা গৈছে।"
+          },
+          "id": "ag03.u3.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The mapped record runs through ",
+            "as": "মানচিত্ৰৰ নথিৰ শেষ বছৰ "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "1998",
+              "as": "১৯৯৮"
+            },
+            {
+              "en": "2023",
+              "as": "২০২৩"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The Assam flood hazard atlas combines satellite observations from 1998 to 2023.",
+            "as": "অসমৰ বান বিপদ এটলাছত ১৯৯৮ৰ পৰা ২০২৩লৈ উপগ্ৰহৰ পৰ্যবেক্ষণ একত্ৰ কৰা হৈছে।"
+          },
+          "id": "ag03.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The atlas class tells you the exact date of the next flood.",
+            "as": "এটলাছৰ শ্ৰেণীয়ে পৰৱৰ্তী বানৰ সঠিক তাৰিখ কয়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "A frequency class gives historical evidence for comparison.",
+            "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+          },
+          "id": "ag03.u3.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Read an unfamiliar hazard map in this order.",
+            "as": "অচিনাকি বিপদ মানচিত্ৰ এই ক্ৰমত পঢ়া।"
+          },
+          "items": [
+            {
+              "en": "Read the observation period",
+              "as": "পৰ্যবেক্ষণৰ সময় পঢ়া"
+            },
+            {
+              "en": "Decode the legend",
+              "as": "সংকেত বুজা"
+            },
+            {
+              "en": "Compare locations",
+              "as": "ঠাই তুলনা কৰা"
+            }
+          ],
+          "why": {
+            "en": "A frequency class describes how often inundation was observed within the mapped record.",
+            "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে নথিভুক্ত সময়ত কিমান সঘনে প্লাৱন দেখা গৈছিল বুজায়।"
+          },
+          "id": "ag03.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a reading of historical frequency?",
+            "as": "কোনটো অতীতৰ পুনৰাবৃত্তিৰ পাঠ?"
+          },
+          "options": [
+            {
+              "en": "Depth today",
+              "as": "আজিৰ গভীৰতা"
+            },
+            {
+              "en": "Tomorrow’s flood date",
+              "as": "কাইলৈৰ বানৰ তাৰিখ"
+            },
+            {
+              "en": "More observed inundations",
+              "as": "অধিকবাৰ প্লাৱন দেখা গৈছে"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "A frequency class gives historical evidence for comparison.",
+            "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+          },
+          "id": "ag03.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Compare what is exposed",
+        "as": "কোনবোৰ ঠাই উন্মুক্ত"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Exposure asks which people or assets lie where a hazard can occur.",
+          "as": "বিপদ হ’ব পৰা ঠাইত কোন মানুহ বা সম্পদ আছে, সেয়াই উন্মুক্ততাৰ প্ৰশ্ন।"
+        },
+        {
+          "en": "In this practice map, the field has the highest observation class.",
+          "as": "এই অনুশীলনৰ আৰ্হিত পথাৰখনৰ পৰ্যবেক্ষণ শ্ৰেণী আটাইতকৈ উচ্চ।"
+        },
+        {
+          "en": "The access road crosses a middle-class zone on the practice map.",
+          "as": "অনুশীলনৰ আৰ্হিত ৰাস্তাটো মধ্যম শ্ৰেণীৰ অঞ্চলৰ মাজেৰে গৈছে।"
+        },
+        {
+          "en": "The settlement has a lower class, but its access road can still be exposed.",
+          "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Compare a settlement, a field and an access road.",
+          "as": "বসতি, পথাৰ আৰু যাতায়াতৰ ৰাস্তা তুলনা কৰা।"
+        },
+        "result": {
+          "en": "The settlement has a lower class, but its access road can still be exposed.",
+          "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Compare what is exposed",
+            "as": "কোনবোৰ ঠাই উন্মুক্ত"
+          },
+          "text": [
+            {
+              "en": "Exposure asks which people or assets lie where a hazard can occur.",
+              "as": "বিপদ হ’ব পৰা ঠাইত কোন মানুহ বা সম্পদ আছে, সেয়াই উন্মুক্ততাৰ প্ৰশ্ন।"
+            },
+            {
+              "en": "In this practice map, the field has the highest observation class.",
+              "as": "এই অনুশীলনৰ আৰ্হিত পথাৰখনৰ পৰ্যবেক্ষণ শ্ৰেণী আটাইতকৈ উচ্চ।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Field · higher",
+                "as": "পথাৰ · উচ্চ"
+              },
+              {
+                "en": "Road · middle",
+                "as": "ৰাস্তা · মধ্যম"
+              },
+              {
+                "en": "Settlement · lower",
+                "as": "বসতি · নিম্ন"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "ag03.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The access road crosses a middle-class zone on the practice map.",
+              "as": "অনুশীলনৰ আৰ্হিত ৰাস্তাটো মধ্যম শ্ৰেণীৰ অঞ্চলৰ মাজেৰে গৈছে।"
+            },
+            {
+              "en": "The settlement has a lower class, but its access road can still be exposed.",
+              "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Field · higher",
+                "as": "পথাৰ · উচ্চ"
+              },
+              {
+                "en": "Road · middle",
+                "as": "ৰাস্তা · মধ্যম"
+              },
+              {
+                "en": "Settlement · lower",
+                "as": "বসতি · নিম্ন"
+              }
+            ]
+          },
+          "id": "ag03.u4.02"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order from highest to lowest observed class.",
+            "as": "উচ্চৰ পৰা নিম্ন পৰ্যবেক্ষণ শ্ৰেণীলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Field",
+              "as": "পথাৰ"
+            },
+            {
+              "en": "Road",
+              "as": "ৰাস্তা"
+            },
+            {
+              "en": "Settlement",
+              "as": "বসতি"
+            }
+          ],
+          "why": {
+            "en": "In this practice map, the field has the highest observation class.",
+            "as": "এই অনুশীলনৰ আৰ্হিত পথাৰখনৰ পৰ্যবেক্ষণ শ্ৰেণী আটাইতকৈ উচ্চ।"
+          },
+          "id": "ag03.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Road",
+                "as": "ৰাস্তা"
+              },
+              {
+                "en": "Middle",
+                "as": "মধ্যম"
+              }
+            ],
+            [
+              {
+                "en": "Settlement",
+                "as": "বসতি"
+              },
+              {
+                "en": "Lower",
+                "as": "নিম্ন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The access road crosses a middle-class zone on the practice map.",
+            "as": "অনুশীলনৰ আৰ্হিত ৰাস্তাটো মধ্যম শ্ৰেণীৰ অঞ্চলৰ মাজেৰে গৈছে।"
+          },
+          "id": "ag03.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A lower class at the settlement guarantees uninterrupted road access.",
+            "as": "বসতিৰ শ্ৰেণী নিম্ন হ’লে ৰাস্তাৰে সদায় যাব পাৰি।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The settlement has a lower class, but its access road can still be exposed.",
+            "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+          },
+          "id": "ag03.u4.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "For access, check the hazard class along the ",
+            "as": "যাতায়াত বুজিবলৈ বিপদৰ শ্ৰেণী চোৱা "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "road",
+              "as": "ৰাস্তাত"
+            },
+            {
+              "en": "field boundary alone",
+              "as": "কেৱল পথাৰৰ সীমাত"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The settlement has a lower class, but its access road can still be exposed.",
+            "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+          },
+          "id": "ag03.u4.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which asset has the most observations in this exercise?",
+            "as": "এই অনুশীলনত কোনটোত সৰ্বাধিক পৰ্যবেক্ষণ আছে?"
+          },
+          "options": [
+            {
+              "en": "Settlement",
+              "as": "বসতি"
+            },
+            {
+              "en": "Field",
+              "as": "পথাৰ"
+            },
+            {
+              "en": "Road",
+              "as": "ৰাস্তা"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "In this practice map, the field has the highest observation class.",
+            "as": "এই অনুশীলনৰ আৰ্হিত পথাৰখনৰ পৰ্যবেক্ষণ শ্ৰেণী আটাইতকৈ উচ্চ।"
+          },
+          "id": "ag03.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "mission": {
+      "objective": {
+        "en": "What changed when the river rose?",
+        "as": "নদীৰ পানী বাঢ়িলে কি সলনি হ’ল?"
+      },
+      "result": {
+        "en": "The settlement has a lower class, but its access road can still be exposed.",
+        "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+      }
+    },
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "A field floods and then dries with the same bank edge visible. This alone proves bank erosion.",
+          "as": "পথাৰ পানীত ডুবি পুনৰ শুকাল আৰু পাৰ একে থাকিল। ইয়েই খহনীয়া প্ৰমাণ কৰে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "Water can cover a field temporarily without the bank retreating.",
+          "as": "পাৰ নখহিলেও পথাৰ কিছু সময়ৰ বাবে পানীৰ তলত থাকিব পাৰে।"
+        },
+        "id": "ag03.test.01"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "If the key shows observation frequency, compare the sites by ",
+          "as": "সংকেতে পুনৰাবৃত্তি দেখুৱালে ঠাইবোৰ তুলনা কৰা "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "today’s depth",
+            "as": "আজিৰ গভীৰতাৰে"
+          },
+          {
+            "en": "historical observations",
+            "as": "অতীতৰ পৰ্যবেক্ষণেৰে"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "A frequency class gives historical evidence for comparison.",
+          "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+        },
+        "id": "ag03.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Dry field becomes submerged",
+              "as": "শুকান পথাৰ পানীত ডুবে"
+            },
+            {
+              "en": "Inundation",
+              "as": "প্লাৱন"
+            }
+          ],
+          [
+            {
+              "en": "Low-water edge retreats",
+              "as": "পানী কম থাকোঁতে পাৰ পিছুৱায়"
+            },
+            {
+              "en": "Erosion",
+              "as": "খহনীয়া"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Riverbank erosion removes material from the bank.",
+          "as": "নদীখহনীয়াই পাৰৰ মাটি আঁতৰায়।"
+        },
+        "id": "ag03.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which must you inspect to judge whether a village can be reached?",
+          "as": "গাঁৱলৈ যাব পাৰি নে বুজিবলৈ কোনটো চাবা?"
+        },
+        "options": [
+          {
+            "en": "Hazard along the road",
+            "as": "ৰাস্তাৰ বিপদ"
+          },
+          {
+            "en": "Village class alone",
+            "as": "কেৱল গাঁৱৰ শ্ৰেণী"
+          },
+          {
+            "en": "Field crop alone",
+            "as": "কেৱল পথাৰৰ শস্য"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The settlement has a lower class, but its access road can still be exposed.",
+          "as": "বসতিৰ শ্ৰেণী কম হ’লেও তালৈ যোৱা ৰাস্তাটো বিপদৰ সন্মুখীন হ’ব পাৰে।"
+        },
+        "id": "ag03.test.04"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "A tributary can carry runoff into the main river.",
+          "as": "উপনদীয়ে বৈ অহা পানী মূল নদীলৈ নিব পাৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Tributaries feed receiving rivers.",
+          "as": "উপনদীৰ পানী মূল নদীত মিলে।"
+        },
+        "id": "ag03.test.05"
+      }
+    ]
+  }
+}

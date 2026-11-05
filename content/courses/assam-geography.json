@@ -1,0 +1,128 @@
+{
+  "id": "assam-geography",
+  "order": 4,
+  "title": {
+    "en": "Assam Geography",
+    "as": "অসমৰ ভূগোল"
+  },
+  "eyebrow": {
+    "en": "Field atlas",
+    "as": "ক্ষেত্ৰ মানচিত্ৰ"
+  },
+  "subtitle": {
+    "en": "Six missions · Build your field atlas",
+    "as": "ছটা অভিযান · নিজৰ ভূগোলৰ মানচিত্ৰ সাজা"
+  },
+  "tabs": [
+    "lessons",
+    "profile"
+  ],
+  "bank": "content/questions/assam-geography.json",
+  "kings": [
+    {
+      "n": 1,
+      "id": "ag-01-bearings",
+      "name": {
+        "en": "Find your bearings",
+        "as": "দিশ চিনা"
+      },
+      "reign": {
+        "en": "Atlas mission",
+        "as": "মানচিত্ৰ অভিযান"
+      },
+      "face": "ag-02-follow-water/river-tile.webp",
+      "tier": "B",
+      "lesson": "ag-01-bearings"
+    },
+    {
+      "n": 2,
+      "id": "ag-02-follow-water",
+      "name": {
+        "en": "Follow the Water",
+        "as": "সোঁত অনুসৰণ কৰা"
+      },
+      "reign": {
+        "en": "Rivers and drainage",
+        "as": "নদী আৰু পানীৰ প্ৰবাহ"
+      },
+      "face": "ag-02-follow-water/river-tile.webp",
+      "tier": "B",
+      "lesson": "ag-02-follow-water"
+    },
+    {
+      "n": 3,
+      "id": "ag-03-floodplain",
+      "name": {
+        "en": "Read a changing floodplain",
+        "as": "সলনি হোৱা প্লাৱনভূমি পঢ়া"
+      },
+      "reign": {
+        "en": "Atlas mission",
+        "as": "মানচিত্ৰ অভিযান"
+      },
+      "face": "ag-02-follow-water/river-tile.webp",
+      "tier": "B",
+      "lesson": "ag-03-floodplain"
+    },
+    {
+      "n": 4,
+      "id": "ag-04-landscape",
+      "name": {
+        "en": "Read the landscape",
+        "as": "ভূদৃশ্য পঢ়া"
+      },
+      "reign": {
+        "en": "Atlas mission",
+        "as": "মানচিত্ৰ অভিযান"
+      },
+      "face": "ag-02-follow-water/river-tile.webp",
+      "tier": "B",
+      "lesson": "ag-04-landscape"
+    },
+    {
+      "n": 5,
+      "id": "ag-05-livelihoods",
+      "name": {
+        "en": "Explain why places grow",
+        "as": "ঠাই কিয় বাঢ়ে বুজা"
+      },
+      "reign": {
+        "en": "Atlas mission",
+        "as": "মানচিত্ৰ অভিযান"
+      },
+      "face": "ag-02-follow-water/river-tile.webp",
+      "tier": "B",
+      "lesson": "ag-05-livelihoods"
+    },
+    {
+      "n": 6,
+      "id": "ag-06-field-case",
+      "name": {
+        "en": "Solve a field case",
+        "as": "ক্ষেত্ৰৰ কেছ সমাধান কৰা"
+      },
+      "reign": {
+        "en": "Atlas mission",
+        "as": "মানচিত্ৰ অভিযান"
+      },
+      "face": "ag-02-follow-water/river-tile.webp",
+      "tier": "C",
+      "lesson": "ag-06-field-case"
+    }
+  ],
+  "eras": [
+    {
+      "id": "assam-field-atlas",
+      "title": {
+        "en": "Assam field atlas",
+        "as": "অসমৰ ভূগোলৰ মানচিত্ৰ"
+      },
+      "from": 1,
+      "to": 6
+    }
+  ],
+  "eraWord": {
+    "en": "Mission",
+    "as": "অভিযান"
+  }
+}

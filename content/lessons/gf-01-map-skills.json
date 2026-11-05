@@ -1,0 +1,1149 @@
+{
+  "id": "gf-01-map-skills",
+  "course": "geography-foundations",
+  "no": 1,
+  "version": 1,
+  "king": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+  },
+  "reign": {
+    "en": "Find your bearings",
+    "as": "দিশ চিনা"
+  },
+  "portrait": "gf-01-map-skills/symbols.webp",
+  "sources": [
+    {
+      "title": "NCERT, Practical Work in Geography",
+      "url": "https://ncert.nic.in/textbook.php?kegy3=8-8",
+      "used_for": "Map reading, location and relief representation. Diagrams independently drawn."
+    },
+    {
+      "title": "NCERT, Map Scale",
+      "url": "https://www.ncert.nic.in/textbook/pdf/kegy302.pdf",
+      "used_for": "Chapter 2, graphical scale and distance."
+    }
+  ],
+  "review_notes": "Bilingual terminology and clarity pass completed. Independent Assamese editorial review pending. Teaching diagrams are schematic.",
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Field atlas",
+      "as": "ভূগোলৰ মানচিত্ৰ"
+    },
+    "title": {
+      "en": "Find your bearings",
+      "as": "দিশ চিনা"
+    },
+    "hook": {
+      "en": "Can you locate a point and explain the slope?",
+      "as": "তুমি এটা বিন্দু বিচাৰি ঢাল বুজাব পাৰানে?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Find your direction",
+        "as": "দিশ বিচাৰা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A north arrow tells you how the map is oriented.",
+          "as": "উত্তৰৰ কাঁড়ে মানচিত্ৰৰ দিশ জনায়।"
+        },
+        {
+          "en": "With north at the top, east is right and west is left.",
+          "as": "উত্তৰ ওপৰত থাকিলে পূব সোঁফালে আৰু পশ্চিম বাওঁফালে।"
+        },
+        {
+          "en": "The legend tells you what each symbol represents.",
+          "as": "সূচকে প্ৰতিটো চিহ্নৰ অৰ্থ জনায়।"
+        },
+        {
+          "en": "On this map A is west of B, and the river lies south of both.",
+          "as": "এই মানচিত্ৰত A, Bৰ পশ্চিমত। নদীখন দুয়োটাৰে দক্ষিণত।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Find your direction",
+            "as": "দিশ বিচাৰা"
+          },
+          "text": [
+            {
+              "en": "A north arrow tells you how the map is oriented.",
+              "as": "উত্তৰৰ কাঁড়ে মানচিত্ৰৰ দিশ জনায়।"
+            },
+            {
+              "en": "With north at the top, east is right and west is left.",
+              "as": "উত্তৰ ওপৰত থাকিলে পূব সোঁফালে আৰু পশ্চিম বাওঁফালে।"
+            }
+          ],
+          "img": "symbols.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Teaching map. Blue wavy line = river. Green straight line = road.",
+            "as": "শিক্ষণ মানচিত্ৰ। নীলা ঢৌ খেলোৱা ৰেখা নদী। সেউজীয়া পোন ৰেখা ৰাস্তা।"
+          },
+          "id": "gf-01-map-skills.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The legend tells you what each symbol represents.",
+              "as": "সূচকে প্ৰতিটো চিহ্নৰ অৰ্থ জনায়।"
+            },
+            {
+              "en": "On this map A is west of B, and the river lies south of both.",
+              "as": "এই মানচিত্ৰত A, Bৰ পশ্চিমত। নদীখন দুয়োটাৰে দক্ষিণত।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "North arrow · orientation",
+                "as": "উত্তৰৰ কাঁড় · দিশ"
+              },
+              {
+                "en": "Legend · symbols",
+                "as": "সূচক · চিহ্ন"
+              }
+            ]
+          },
+          "id": "gf-01-map-skills.u1.02"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "On this map A is west of B, and the river lies south of both.",
+            "as": "এই মানচিত্ৰত A, Bৰ পশ্চিমত। নদীখন দুয়োটাৰে দক্ষিণত।"
+          },
+          "before": {
+            "en": "To go from A to B, travel ",
+            "as": "Aৰ পৰা Bলৈ যাবলৈ এই দিশে যোৱা "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "west",
+              "as": "পশ্চিমলৈ"
+            },
+            {
+              "en": "east",
+              "as": "পূবলৈ"
+            }
+          ],
+          "answer": 1,
+          "img": "symbols.webp",
+          "imageCaption": {
+            "en": "Teaching map. Blue wavy line = river. Green straight line = road.",
+            "as": "শিক্ষণ মানচিত্ৰ। নীলা ঢৌ খেলোৱা ৰেখা নদী। সেউজীয়া পোন ৰেখা ৰাস্তা।"
+          },
+          "imageAlt": {
+            "en": "North points up. A is left of B on the straight road. The river runs below both points.",
+            "as": "উত্তৰ ওপৰলৈ। পোন ৰাস্তাত A, Bৰ বাওঁফালে। নদী দুয়োটা বিন্দুৰ তলেদি গৈছে।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u1.03"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The legend tells you what each symbol represents.",
+            "as": "সূচকে প্ৰতিটো চিহ্নৰ অৰ্থ জনায়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "North arrow",
+                "as": "উত্তৰৰ কাঁড়"
+              },
+              {
+                "en": "Orientation",
+                "as": "দিশ"
+              }
+            ],
+            [
+              {
+                "en": "Legend",
+                "as": "সূচক"
+              },
+              {
+                "en": "Symbol meaning",
+                "as": "চিহ্নৰ অৰ্থ"
+              }
+            ]
+          ],
+          "id": "gf-01-map-skills.u1.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A north arrow tells you how the map is oriented.",
+            "as": "উত্তৰৰ কাঁড়ে মানচিত্ৰৰ দিশ জনায়।"
+          },
+          "s": {
+            "en": "The top of every map is always north.",
+            "as": "সকলো মানচিত্ৰৰ ওপৰফাল সদায় উত্তৰ।"
+          },
+          "answer": false,
+          "id": "gf-01-map-skills.u1.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "On this map A is west of B, and the river lies south of both.",
+            "as": "এই মানচিত্ৰত A, Bৰ পশ্চিমত। নদীখন দুয়োটাৰে দক্ষিণত।"
+          },
+          "q": {
+            "en": "Which feature is south of both marked points?",
+            "as": "দুয়োটা চিহ্নিত বিন্দুৰ দক্ষিণত কি আছে?"
+          },
+          "options": [
+            {
+              "en": "River",
+              "as": "নদী"
+            },
+            {
+              "en": "Road",
+              "as": "ৰাস্তা"
+            },
+            {
+              "en": "North arrow",
+              "as": "উত্তৰৰ কাঁড়"
+            }
+          ],
+          "answer": 0,
+          "img": "symbols.webp",
+          "imageCaption": {
+            "en": "Teaching map. Blue wavy line = river. Green straight line = road.",
+            "as": "শিক্ষণ মানচিত্ৰ। নীলা ঢৌ খেলোৱা ৰেখা নদী। সেউজীয়া পোন ৰেখা ৰাস্তা।"
+          },
+          "imageAlt": {
+            "en": "North points up. A is left of B on the straight road. The river runs below both points.",
+            "as": "উত্তৰ ওপৰলৈ। পোন ৰাস্তাত A, Bৰ বাওঁফালে। নদী দুয়োটা বিন্দুৰ তলেদি গৈছে।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u1.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "With north at the top, east is right and west is left.",
+            "as": "উত্তৰ ওপৰত থাকিলে পূব সোঁফালে আৰু পশ্চিম বাওঁফালে।"
+          },
+          "q": {
+            "en": "Read a new map to give directions.",
+            "as": "নতুন মানচিত্ৰ পঢ়ি দিশ কোৱা।"
+          },
+          "items": [
+            {
+              "en": "Find north",
+              "as": "উত্তৰ বিচাৰা"
+            },
+            {
+              "en": "Locate the two points",
+              "as": "বিন্দু দুটা বিচাৰা"
+            },
+            {
+              "en": "State their relative direction",
+              "as": "সিহঁতৰ আপেক্ষিক দিশ কোৱা"
+            }
+          ],
+          "id": "gf-01-map-skills.u1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Read the north arrow and decode two symbols.",
+          "as": "উত্তৰৰ কাঁড় আৰু দুটা চিহ্ন পঢ়া।"
+        },
+        "result": {
+          "en": "On this map A is west of B, and the river lies south of both.",
+          "as": "এই মানচিত্ৰত A, Bৰ পশ্চিমত। নদীখন দুয়োটাৰে দক্ষিণত।"
+        }
+      }
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Meet at a coordinate",
+        "as": "স্থানাংকত মিলিত হোৱা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "Latitude measures angular distance north or south of the equator.",
+          "as": "অক্ষাংশই বিষুৱৰেখাৰ উত্তৰ বা দক্ষিণৰ কৌণিক দূৰত্ব জোখে।"
+        },
+        {
+          "en": "Longitude measures angular distance east or west of the prime meridian.",
+          "as": "দ্ৰাঘিমাংশই মূল মধ্যৰেখাৰ পূব বা পশ্চিমৰ কৌণিক দূৰত্ব জোখে।"
+        },
+        {
+          "en": "A coordinate pair gives latitude first in this course, followed by longitude.",
+          "as": "এই পাঠ্যক্ৰমত স্থানাংকৰ যোৰত প্ৰথমে অক্ষাংশ আৰু তাৰ পাছত দ্ৰাঘিমাংশ দিয়া হয়।"
+        },
+        {
+          "en": "On this grid, B lies at the intersection of 20° N and 90° E.",
+          "as": "এই জালিকাত B, ২০° উত্তৰ আৰু ৯০° পূবৰ ছেদবিন্দুত আছে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Meet at a coordinate",
+            "as": "স্থানাংকত মিলিত হোৱা"
+          },
+          "text": [
+            {
+              "en": "Latitude measures angular distance north or south of the equator.",
+              "as": "অক্ষাংশই বিষুৱৰেখাৰ উত্তৰ বা দক্ষিণৰ কৌণিক দূৰত্ব জোখে।"
+            },
+            {
+              "en": "Longitude measures angular distance east or west of the prime meridian.",
+              "as": "দ্ৰাঘিমাংশই মূল মধ্যৰেখাৰ পূব বা পশ্চিমৰ কৌণিক দূৰত্ব জোখে।"
+            }
+          ],
+          "img": "grid.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Teaching grid. Read the latitude first and the longitude second.",
+            "as": "শিক্ষণ জালিকা। প্ৰথমে অক্ষাংশ, তাৰ পাছত দ্ৰাঘিমাংশ পঢ়া।"
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-01-map-skills.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A coordinate pair gives latitude first in this course, followed by longitude.",
+              "as": "এই পাঠ্যক্ৰমত স্থানাংকৰ যোৰত প্ৰথমে অক্ষাংশ আৰু তাৰ পাছত দ্ৰাঘিমাংশ দিয়া হয়।"
+            },
+            {
+              "en": "On this grid, B lies at the intersection of 20° N and 90° E.",
+              "as": "এই জালিকাত B, ২০° উত্তৰ আৰু ৯০° পূবৰ ছেদবিন্দুত আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Equator · 0° latitude",
+                "as": "বিষুৱৰেখা · ০° অক্ষাংশ"
+              },
+              {
+                "en": "Prime meridian · 0° longitude",
+                "as": "মূল মধ্যৰেখা · ০° দ্ৰাঘিমাংশ"
+              }
+            ]
+          },
+          "id": "gf-01-map-skills.u2.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "A coordinate pair gives latitude first in this course, followed by longitude.",
+            "as": "এই পাঠ্যক্ৰমত স্থানাংকৰ যোৰত প্ৰথমে অক্ষাংশ আৰু তাৰ পাছত দ্ৰাঘিমাংশ দিয়া হয়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Latitude",
+                "as": "অক্ষাংশ"
+              },
+              {
+                "en": "North or south of equator",
+                "as": "বিষুৱৰেখাৰ উত্তৰ বা দক্ষিণ"
+              }
+            ],
+            [
+              {
+                "en": "Longitude",
+                "as": "দ্ৰাঘিমাংশ"
+              },
+              {
+                "en": "East or west of prime meridian",
+                "as": "মূল মধ্যৰেখাৰ পূব বা পশ্চিম"
+              }
+            ]
+          ],
+          "id": "gf-01-map-skills.u2.03"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "On this grid, B lies at the intersection of 20° N and 90° E.",
+            "as": "এই জালিকাত B, ২০° উত্তৰ আৰু ৯০° পূবৰ ছেদবিন্দুত আছে।"
+          },
+          "q": {
+            "en": "Which point is at 20° N, 90° E?",
+            "as": "কোনটো বিন্দু ২০° উত্তৰ, ৯০° পূবত আছে?"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            },
+            {
+              "en": "C",
+              "as": "C"
+            }
+          ],
+          "answer": 1,
+          "img": "grid.webp",
+          "imageCaption": {
+            "en": "Teaching grid. Read the latitude first and the longitude second.",
+            "as": "শিক্ষণ জালিকা। প্ৰথমে অক্ষাংশ, তাৰ পাছত দ্ৰাঘিমাংশ পঢ়া।"
+          },
+          "imageAlt": {
+            "en": "A is on the top row, middle column. B is on the middle row, right column. C is on the bottom row, left column. Rows are 30, 20 and 10 degrees north. Columns are 70, 80 and 90 degrees east.",
+            "as": "A ওপৰৰ শাৰীৰ মাজৰ স্তম্ভত। B মাজৰ শাৰীৰ সোঁ স্তম্ভত। C তলৰ শাৰীৰ বাওঁ স্তম্ভত। শাৰীবোৰ ৩০, ২০ আৰু ১০ ডিগ্ৰী উত্তৰ। স্তম্ভবোৰ ৭০, ৮০ আৰু ৯০ ডিগ্ৰী পূব।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u2.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Latitude measures angular distance north or south of the equator.",
+            "as": "অক্ষাংশই বিষুৱৰেখাৰ উত্তৰ বা দক্ষিণৰ কৌণিক দূৰত্ব জোখে।"
+          },
+          "s": {
+            "en": "A location marked 20° N lies south of the equator.",
+            "as": "২০° উত্তৰ বুলি চিহ্নিত ঠাই বিষুৱৰেখাৰ দক্ষিণত আছে।"
+          },
+          "answer": false,
+          "id": "gf-01-map-skills.u2.05"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Longitude measures angular distance east or west of the prime meridian.",
+            "as": "দ্ৰাঘিমাংশই মূল মধ্যৰেখাৰ পূব বা পশ্চিমৰ কৌণিক দূৰত্ব জোখে।"
+          },
+          "before": {
+            "en": "The zero line for longitude is the ",
+            "as": "দ্ৰাঘিমাংশৰ শূন্য ৰেখা হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "equator",
+              "as": "বিষুৱৰেখা"
+            },
+            {
+              "en": "prime meridian",
+              "as": "মূল মধ্যৰেখা"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-01-map-skills.u2.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "A coordinate pair gives latitude first in this course, followed by longitude.",
+            "as": "এই পাঠ্যক্ৰমত স্থানাংকৰ যোৰত প্ৰথমে অক্ষাংশ আৰু তাৰ পাছত দ্ৰাঘিমাংশ দিয়া হয়।"
+          },
+          "q": {
+            "en": "Find a point when latitude is given first.",
+            "as": "অক্ষাংশ প্ৰথমে দিয়া থাকিলে বিন্দু বিচাৰা।"
+          },
+          "items": [
+            {
+              "en": "Find the latitude row",
+              "as": "অক্ষাংশৰ শাৰী বিচাৰা"
+            },
+            {
+              "en": "Find the longitude column",
+              "as": "দ্ৰাঘিমাংশৰ স্তম্ভ বিচাৰা"
+            },
+            {
+              "en": "Mark their intersection",
+              "as": "ছেদবিন্দু চিহ্নিত কৰা"
+            }
+          ],
+          "id": "gf-01-map-skills.u2.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Locate points using latitude and longitude.",
+          "as": "অক্ষাংশ আৰু দ্ৰাঘিমাংশৰে বিন্দু বিচাৰা।"
+        },
+        "result": {
+          "en": "On this grid, B lies at the intersection of 20° N and 90° E.",
+          "as": "এই জালিকাত B, ২০° উত্তৰ আৰু ৯০° পূবৰ ছেদবিন্দুত আছে।"
+        }
+      }
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Measure a route",
+        "as": "পথৰ দৈৰ্ঘ্য জোখা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A map scale relates a distance on the map to the corresponding distance on the ground.",
+          "as": "মানচিত্ৰৰ স্কেলে মানচিত্ৰৰ দূৰত্ব আৰু মাটিৰ সংশ্লিষ্ট দূৰত্বৰ সম্পৰ্ক দেখুৱায়।"
+        },
+        {
+          "en": "The bar scale remains usable when it and the map are resized together.",
+          "as": "মানচিত্ৰ আৰু দণ্ড স্কেল একেলগে সৰু বা ডাঙৰ কৰিলেও স্কেলটো ব্যৱহাৰ কৰিব পাৰি।"
+        },
+        {
+          "en": "A straight-line measurement can be shorter than a winding route between the same places.",
+          "as": "একেখন ঠাইৰ পৰা আনখনলৈ পোন দূৰত্ব বেঁকা ৰাস্তাৰ দূৰত্বতকৈ কম হ’ব পাৰে।"
+        },
+        {
+          "en": "Here A to B spans three 2 km intervals, or 6 km. B to C spans one interval, or 2 km.",
+          "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Measure a route",
+            "as": "পথৰ দৈৰ্ঘ্য জোখা"
+          },
+          "text": [
+            {
+              "en": "A map scale relates a distance on the map to the corresponding distance on the ground.",
+              "as": "মানচিত্ৰৰ স্কেলে মানচিত্ৰৰ দূৰত্ব আৰু মাটিৰ সংশ্লিষ্ট দূৰত্বৰ সম্পৰ্ক দেখুৱায়।"
+            },
+            {
+              "en": "The bar scale remains usable when it and the map are resized together.",
+              "as": "মানচিত্ৰ আৰু দণ্ড স্কেল একেলগে সৰু বা ডাঙৰ কৰিলেও স্কেলটো ব্যৱহাৰ কৰিব পাৰি।"
+            }
+          ],
+          "img": "scale.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Teaching map. The scale bar is marked 0, 2 and 4 km.",
+            "as": "শিক্ষণ মানচিত্ৰ। দণ্ড স্কেলত ০, ২ আৰু ৪ কিমি চিহ্নিত।"
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-01-map-skills.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A straight-line measurement can be shorter than a winding route between the same places.",
+              "as": "একেখন ঠাইৰ পৰা আনখনলৈ পোন দূৰত্ব বেঁকা ৰাস্তাৰ দূৰত্বতকৈ কম হ’ব পাৰে।"
+            },
+            {
+              "en": "Here A to B spans three 2 km intervals, or 6 km. B to C spans one interval, or 2 km.",
+              "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Read the unit",
+                "as": "একক পঢ়া"
+              },
+              {
+                "en": "Count equal intervals",
+                "as": "সমান ব্যৱধান গণনা কৰা"
+              }
+            ]
+          },
+          "id": "gf-01-map-skills.u3.02"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Here A to B spans three 2 km intervals, or 6 km. B to C spans one interval, or 2 km.",
+            "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
+          },
+          "before": {
+            "en": "The straight distance from A to B is ",
+            "as": "Aৰ পৰা Bলৈ পোন দূৰত্ব "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "4 km",
+              "as": "৪ কিমি"
+            },
+            {
+              "en": "6 km",
+              "as": "৬ কিমি"
+            }
+          ],
+          "answer": 1,
+          "img": "scale.webp",
+          "imageCaption": {
+            "en": "Teaching map. The scale bar is marked 0, 2 and 4 km.",
+            "as": "শিক্ষণ মানচিত্ৰ। দণ্ড স্কেলত ০, ২ আৰু ৪ কিমি চিহ্নিত।"
+          },
+          "imageAlt": {
+            "en": "The spacing from 0 to 2 km fits three times between A and B and once between B and C.",
+            "as": "০ৰ পৰা ২ কিমিৰ ব্যৱধান A আৰু Bৰ মাজত তিনিবাৰ আৰু B আৰু Cৰ মাজত এবাৰ খাপ খায়।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u3.03"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Here A to B spans three 2 km intervals, or 6 km. B to C spans one interval, or 2 km.",
+            "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "A to B",
+                "as": "Aৰ পৰা Bলৈ"
+              },
+              {
+                "en": "6 km",
+                "as": "৬ কিমি"
+              }
+            ],
+            [
+              {
+                "en": "B to C",
+                "as": "Bৰ পৰা Cলৈ"
+              },
+              {
+                "en": "2 km",
+                "as": "২ কিমি"
+              }
+            ]
+          ],
+          "img": "scale.webp",
+          "imageCaption": {
+            "en": "Teaching map. The scale bar is marked 0, 2 and 4 km.",
+            "as": "শিক্ষণ মানচিত্ৰ। দণ্ড স্কেলত ০, ২ আৰু ৪ কিমি চিহ্নিত।"
+          },
+          "imageAlt": {
+            "en": "The spacing from 0 to 2 km fits three times between A and B and once between B and C.",
+            "as": "০ৰ পৰা ২ কিমিৰ ব্যৱধান A আৰু Bৰ মাজত তিনিবাৰ আৰু B আৰু Cৰ মাজত এবাৰ খাপ খায়।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u3.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A straight-line measurement can be shorter than a winding route between the same places.",
+            "as": "একেখন ঠাইৰ পৰা আনখনলৈ পোন দূৰত্ব বেঁকা ৰাস্তাৰ দূৰত্বতকৈ কম হ’ব পাৰে।"
+          },
+          "s": {
+            "en": "Straight-line distance always equals distance along a winding road.",
+            "as": "পোন দূৰত্ব সদায় বেঁকা ৰাস্তাৰ দূৰত্বৰ সমান।"
+          },
+          "answer": false,
+          "id": "gf-01-map-skills.u3.05"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Here A to B spans three 2 km intervals, or 6 km. B to C spans one interval, or 2 km.",
+            "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
+          },
+          "q": {
+            "en": "Use a bar scale in this order.",
+            "as": "দণ্ড স্কেল এই ক্ৰমত ব্যৱহাৰ কৰা।"
+          },
+          "items": [
+            {
+              "en": "Read distance per interval",
+              "as": "প্ৰতি ব্যৱধানৰ দূৰত্ব পঢ়া"
+            },
+            {
+              "en": "Count intervals",
+              "as": "ব্যৱধান গণনা কৰা"
+            },
+            {
+              "en": "Multiply to get distance",
+              "as": "দূৰত্ব পাবলৈ পূৰণ কৰা"
+            }
+          ],
+          "id": "gf-01-map-skills.u3.06"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "The bar scale remains usable when it and the map are resized together.",
+            "as": "মানচিত্ৰ আৰু দণ্ড স্কেল একেলগে সৰু বা ডাঙৰ কৰিলেও স্কেলটো ব্যৱহাৰ কৰিব পাৰি।"
+          },
+          "s": {
+            "en": "A bar scale still works if it grows in the same proportion as the map.",
+            "as": "মানচিত্ৰৰ সমান অনুপাতত বাঢ়িলে দণ্ড স্কেল ব্যৱহাৰ কৰিব পাৰি।"
+          },
+          "answer": true,
+          "id": "gf-01-map-skills.u3.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use the bar scale to compare straight distances.",
+          "as": "দণ্ড স্কেলেৰে পোন দূৰত্ব তুলনা কৰা।"
+        },
+        "result": {
+          "en": "Here A to B spans three 2 km intervals, or 6 km. B to C spans one interval, or 2 km.",
+          "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
+        }
+      }
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Read the slope",
+        "as": "ঢাল পঢ়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A contour joins points of equal elevation.",
+          "as": "সমোচ্চ ৰেখাই সমান উচ্চতাৰ বিন্দুবোৰ সংযোগ কৰে।"
+        },
+        {
+          "en": "The difference in elevation between adjacent contours is the contour interval.",
+          "as": "কাষৰ সমোচ্চ ৰেখা দুটাৰ উচ্চতাৰ পাৰ্থক্যই সমোচ্চ ব্যৱধান।"
+        },
+        {
+          "en": "With the same scale and interval, closer lines indicate a steeper slope.",
+          "as": "স্কেল আৰু ব্যৱধান একে হ’লে ওচৰা-ওচৰি ৰেখাই অধিক থিয় ঢাল বুজায়।"
+        },
+        {
+          "en": "Slope A is steeper than B because the same rise occurs over a shorter horizontal distance.",
+          "as": "Aৰ ঢাল Bতকৈ থিয়, কাৰণ একে উচ্চতা কম সমতল দূৰত্বতে বাঢ়িছে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the slope",
+            "as": "ঢাল পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A contour joins points of equal elevation.",
+              "as": "সমোচ্চ ৰেখাই সমান উচ্চতাৰ বিন্দুবোৰ সংযোগ কৰে।"
+            },
+            {
+              "en": "The difference in elevation between adjacent contours is the contour interval.",
+              "as": "কাষৰ সমোচ্চ ৰেখা দুটাৰ উচ্চতাৰ পাৰ্থক্যই সমোচ্চ ব্যৱধান।"
+            }
+          ],
+          "img": "contours.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Two teaching slopes with the same scale and contour interval. Numbers are metres.",
+            "as": "একে স্কেল আৰু সমোচ্চ ব্যৱধানৰ দুটা আৰ্হি ঢাল। সংখ্যাবোৰ মিটাৰত।"
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-01-map-skills.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the evidence",
+            "as": "প্ৰমাণ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "With the same scale and interval, closer lines indicate a steeper slope.",
+              "as": "স্কেল আৰু ব্যৱধান একে হ’লে ওচৰা-ওচৰি ৰেখাই অধিক থিয় ঢাল বুজায়।"
+            },
+            {
+              "en": "Slope A is steeper than B because the same rise occurs over a shorter horizontal distance.",
+              "as": "Aৰ ঢাল Bতকৈ থিয়, কাৰণ একে উচ্চতা কম সমতল দূৰত্বতে বাঢ়িছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Close lines · steeper",
+                "as": "ওচৰা-ওচৰি ৰেখা · অধিক থিয়"
+              },
+              {
+                "en": "Wide spacing · gentler",
+                "as": "দূৰে দূৰে ৰেখা · কম থিয়"
+              }
+            ]
+          },
+          "id": "gf-01-map-skills.u4.02"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Slope A is steeper than B because the same rise occurs over a shorter horizontal distance.",
+            "as": "Aৰ ঢাল Bতকৈ থিয়, কাৰণ একে উচ্চতা কম সমতল দূৰত্বতে বাঢ়িছে।"
+          },
+          "q": {
+            "en": "Which slope is steeper?",
+            "as": "কোনটো ঢাল অধিক থিয়?"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "A"
+            },
+            {
+              "en": "B",
+              "as": "B"
+            },
+            {
+              "en": "Both are equal",
+              "as": "দুয়োটা সমান"
+            }
+          ],
+          "answer": 0,
+          "img": "contours.webp",
+          "imageCaption": {
+            "en": "Two teaching slopes with the same scale and contour interval. Numbers are metres.",
+            "as": "একে স্কেল আৰু সমোচ্চ ব্যৱধানৰ দুটা আৰ্হি ঢাল। সংখ্যাবোৰ মিটাৰত।"
+          },
+          "imageAlt": {
+            "en": "Both slopes show 100, 120 and 140 metres. The lines at A are closer together than those at B.",
+            "as": "দুয়োটা ঢালত ১০০, ১২০ আৰু ১৪০ মিটাৰ দেখুওৱা হৈছে। Aৰ ৰেখাবোৰ Bৰ ৰেখাতকৈ ওচৰা-ওচৰি।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u4.03"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "The difference in elevation between adjacent contours is the contour interval.",
+            "as": "কাষৰ সমোচ্চ ৰেখা দুটাৰ উচ্চতাৰ পাৰ্থক্যই সমোচ্চ ব্যৱধান।"
+          },
+          "before": {
+            "en": "The contour interval on these slopes is ",
+            "as": "এই ঢালবোৰৰ সমোচ্চ ব্যৱধান "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "20 m",
+              "as": "২০ মি"
+            },
+            {
+              "en": "40 m",
+              "as": "৪০ মি"
+            }
+          ],
+          "answer": 0,
+          "img": "contours.webp",
+          "imageCaption": {
+            "en": "Two teaching slopes with the same scale and contour interval. Numbers are metres.",
+            "as": "একে স্কেল আৰু সমোচ্চ ব্যৱধানৰ দুটা আৰ্হি ঢাল। সংখ্যাবোৰ মিটাৰত।"
+          },
+          "imageAlt": {
+            "en": "Both slopes show 100, 120 and 140 metres. The lines at A are closer together than those at B.",
+            "as": "দুয়োটা ঢালত ১০০, ১২০ আৰু ১৪০ মিটাৰ দেখুওৱা হৈছে। Aৰ ৰেখাবোৰ Bৰ ৰেখাতকৈ ওচৰা-ওচৰি।"
+          },
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "id": "gf-01-map-skills.u4.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A contour joins points of equal elevation.",
+            "as": "সমোচ্চ ৰেখাই সমান উচ্চতাৰ বিন্দুবোৰ সংযোগ কৰে।"
+          },
+          "s": {
+            "en": "Two points on the same contour must have different elevations.",
+            "as": "একে সমোচ্চ ৰেখাৰ দুটা বিন্দুৰ উচ্চতা বেলেগ হ’বই লাগিব।"
+          },
+          "answer": false,
+          "id": "gf-01-map-skills.u4.05"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "With the same scale and interval, closer lines indicate a steeper slope.",
+            "as": "স্কেল আৰু ব্যৱধান একে হ’লে ওচৰা-ওচৰি ৰেখাই অধিক থিয় ঢাল বুজায়।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Closer contours",
+                "as": "ওচৰা-ওচৰি সমোচ্চ ৰেখা"
+              },
+              {
+                "en": "Steeper slope",
+                "as": "অধিক থিয় ঢাল"
+              }
+            ],
+            [
+              {
+                "en": "Wider spacing",
+                "as": "বেছি ব্যৱধান"
+              },
+              {
+                "en": "Gentler slope",
+                "as": "কম থিয় ঢাল"
+              }
+            ]
+          ],
+          "id": "gf-01-map-skills.u4.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "The difference in elevation between adjacent contours is the contour interval.",
+            "as": "কাষৰ সমোচ্চ ৰেখা দুটাৰ উচ্চতাৰ পাৰ্থক্যই সমোচ্চ ব্যৱধান।"
+          },
+          "q": {
+            "en": "Order the elevations from lowest to highest.",
+            "as": "কমৰ পৰা বেছি উচ্চতালৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "100 m",
+              "as": "১০০ মি"
+            },
+            {
+              "en": "120 m",
+              "as": "১২০ মি"
+            },
+            {
+              "en": "140 m",
+              "as": "১৪০ মি"
+            }
+          ],
+          "id": "gf-01-map-skills.u4.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Infer the steeper slope from contour spacing.",
+          "as": "সমোচ্চ ৰেখাৰ ব্যৱধান চাই অধিক থিয় ঢাল চিনা।"
+        },
+        "result": {
+          "en": "Slope A is steeper than B because the same rise occurs over a shorter horizontal distance.",
+          "as": "Aৰ ঢাল Bতকৈ থিয়, কাৰণ একে উচ্চতা কম সমতল দূৰত্বতে বাঢ়িছে।"
+        }
+      }
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "inline",
+        "why": {
+          "en": "On a north-up map, west is to the left.",
+          "as": "উত্তৰ ওপৰত থকা মানচিত্ৰত পশ্চিম বাওঁফালে।"
+        },
+        "before": {
+          "en": "With north at the top, a village to the left of the school is to its ",
+          "as": "উত্তৰ ওপৰত থাকিলে বিদ্যালয়ৰ বাওঁফালৰ গাঁওখন থাকে "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "west",
+            "as": "পশ্চিমত"
+          },
+          {
+            "en": "east",
+            "as": "পূবত"
+          }
+        ],
+        "answer": 0,
+        "id": "gf-01-map-skills.test.01"
+      },
+      {
+        "type": "match",
+        "why": {
+          "en": "Latitude refers to the equator and longitude to the prime meridian.",
+          "as": "অক্ষাংশ বিষুৱৰেখাৰ সৈতে আৰু দ্ৰাঘিমাংশ মূল মধ্যৰেখাৰ সৈতে জড়িত।"
+        },
+        "pairs": [
+          [
+            {
+              "en": "25° S",
+              "as": "২৫° দক্ষিণ"
+            },
+            {
+              "en": "Latitude",
+              "as": "অক্ষাংশ"
+            }
+          ],
+          [
+            {
+              "en": "80° W",
+              "as": "৮০° পশ্চিম"
+            },
+            {
+              "en": "Longitude",
+              "as": "দ্ৰাঘিমাংশ"
+            }
+          ]
+        ],
+        "id": "gf-01-map-skills.test.02"
+      },
+      {
+        "type": "inline",
+        "why": {
+          "en": "Four times 3 km equals 12 km.",
+          "as": "৩ কিমিক চাৰিৰে পূৰণ কৰিলে ১২ কিমি।"
+        },
+        "before": {
+          "en": "Four intervals of 3 km give a distance of ",
+          "as": "৩ কিমিৰ চাৰিটা ব্যৱধানৰ দূৰত্ব "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "7 km",
+            "as": "৭ কিমি"
+          },
+          {
+            "en": "12 km",
+            "as": "১২ কিমি"
+          },
+          {
+            "en": "3 km",
+            "as": "৩ কিমি"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-01-map-skills.test.03"
+      },
+      {
+        "type": "tf",
+        "why": {
+          "en": "The same rise over a shorter distance is steeper.",
+          "as": "কম দূৰত্বত একে উচ্চতা বাঢ়িলে ঢাল অধিক থিয় হয়।"
+        },
+        "s": {
+          "en": "At the same map scale and contour interval, the wider-spaced contours show the steeper slope.",
+          "as": "একে স্কেল আৰু সমোচ্চ ব্যৱধানত দূৰে দূৰে থকা ৰেখাই অধিক থিয় ঢাল দেখুৱায়।"
+        },
+        "answer": false,
+        "id": "gf-01-map-skills.test.04"
+      },
+      {
+        "type": "odd",
+        "why": {
+          "en": "The legend defines symbols used on the map.",
+          "as": "সূচকে মানচিত্ৰৰ চিহ্নবোৰৰ অৰ্থ জনায়।"
+        },
+        "q": {
+          "en": "Which tool tells you whether a dashed line represents a path?",
+          "as": "ভঙা ৰেখাই বাট দেখুৱায় নে কোনটো সঁজুলিয়ে কয়?"
+        },
+        "options": [
+          {
+            "en": "Scale bar",
+            "as": "দণ্ড স্কেল"
+          },
+          {
+            "en": "North arrow",
+            "as": "উত্তৰৰ কাঁড়"
+          },
+          {
+            "en": "Legend",
+            "as": "সূচক"
+          }
+        ],
+        "answer": 2,
+        "id": "gf-01-map-skills.test.05"
+      }
+    ],
+    "mission": {
+      "objective": {
+        "en": "Can you locate a point and explain the slope?",
+        "as": "তুমি এটা বিন্দু বিচাৰি ঢাল বুজাব পাৰানে?"
+      },
+      "result": {
+        "en": "You can read the evidence from a new view.",
+        "as": "তুমি নতুন চিত্ৰৰ পৰা প্ৰমাণ পঢ়িব পাৰা।"
+      }
+    }
+  }
+}

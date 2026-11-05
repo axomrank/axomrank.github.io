@@ -1,0 +1,1152 @@
+{
+  "id": "gf-06-india-location",
+  "course": "geography-foundations",
+  "no": 6,
+  "version": 1,
+  "king": {
+    "en": "Put India on the map",
+    "as": "মানচিত্ৰত ভাৰত চিনা"
+  },
+  "reign": {
+    "en": "Put India on the map",
+    "as": "মানচিত্ৰত ভাৰত চিনা"
+  },
+  "portrait": "gf-06-india-location/cover.webp",
+  "sources": [
+    {
+      "title": "NCERT India – Size and Location",
+      "url": "https://ncert.nic.in/textbook/pdf/iess101.pdf",
+      "used_for": "Standard meridian, Tropic of Cancer, regional neighbours, coasts and island groups."
+    },
+    {
+      "title": "Survey of India outline maps",
+      "url": "https://surveyofindia.gov.in/pages/outline-maps-of-india",
+      "used_for": "Boundary and coastal reference. Practice renderer uses credited repository geometry."
+    },
+    {
+      "title": "Know India, Nagaland",
+      "url": "https://knowindia.india.gov.in/states-uts/nagaland.php",
+      "used_for": "Kohima and Nagaland locator."
+    },
+    {
+      "title": "DataMeet Community Maps, India outline",
+      "url": "https://github.com/datameet/maps/tree/master/Country",
+      "used_for": "Survey of India and Census 2011-derived india-soi.geojson, simplified. Adapted outline used under CC BY-SA 2.5."
+    },
+    {
+      "title": "Creative Commons Attribution-ShareAlike 2.5",
+      "url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "used_for": "Licence for the adapted DataMeet outline in the India map and teaching figures."
+    },
+    {
+      "title": "Natural Earth, 1:10m Admin 0 countries",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "used_for": "Public-domain neighbouring land, clipped and simplified."
+    }
+  ],
+  "review_notes": "Bilingual terminology and clarity pass completed. Independent Assamese editorial review pending. Teaching diagrams are schematic.",
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": [
+      "delhi",
+      "guwahati",
+      "kohima"
+    ],
+    "labels": {
+      "guwahati": {
+        "pos": "nw"
+      },
+      "kohima": {
+        "pos": "se"
+      }
+    }
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Field atlas",
+      "as": "ভূগোলৰ মানচিত্ৰ"
+    },
+    "title": {
+      "en": "Put India on the map",
+      "as": "মানচিত্ৰত ভাৰত চিনা"
+    },
+    "hook": {
+      "en": "What clues tell you where you are on a map of India?",
+      "as": "ভাৰতৰ মানচিত্ৰত তুমি ক’ত আছা কোন সংকেতে কয়?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Find India in South Asia",
+        "as": "দক্ষিণ এছিয়াত ভাৰত বিচাৰা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "India lies in South Asia and projects into the Indian Ocean.",
+          "as": "ভাৰত দক্ষিণ এছিয়াত আছে আৰু ভাৰত মহাসাগৰৰ ফালে আগবাঢ়ি আছে।"
+        },
+        {
+          "en": "The Arabian Sea lies to the west of the peninsula and the Bay of Bengal to the east.",
+          "as": "উপদ্বীপৰ পশ্চিমে আৰব সাগৰ আৰু পূবে বংগোপসাগৰ।"
+        },
+        {
+          "en": "Pakistan lies on the northwestern side. Nepal and Bhutan are Himalayan neighbours.",
+          "as": "উত্তৰ-পশ্চিম ফালে পাকিস্তান। নেপাল আৰু ভূটান হিমালয়ৰ চুবুৰীয়া দেশ।"
+        },
+        {
+          "en": "Bangladesh and Myanmar border India on the eastern side. Sri Lanka lies across water to the south.",
+          "as": "বাংলাদেশ আৰু ম্যানমাৰৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে। শ্ৰীলংকা দক্ষিণে পানীৰ সিপাৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Find India in South Asia",
+            "as": "দক্ষিণ এছিয়াত ভাৰত বিচাৰা"
+          },
+          "text": [
+            {
+              "en": "India lies in South Asia and projects into the Indian Ocean.",
+              "as": "ভাৰত দক্ষিণ এছিয়াত আছে আৰু ভাৰত মহাসাগৰৰ ফালে আগবাঢ়ি আছে।"
+            },
+            {
+              "en": "The Arabian Sea lies to the west of the peninsula and the Bay of Bengal to the east.",
+              "as": "উপদ্বীপৰ পশ্চিমে আৰব সাগৰ আৰু পূবে বংগোপসাগৰ।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "West · Arabian Sea",
+                "as": "পশ্চিম · আৰব সাগৰ"
+              },
+              {
+                "en": "East · Bay of Bengal",
+                "as": "পূব · বংগোপসাগৰ"
+              }
+            ]
+          },
+          "id": "gf-06-india-location.u1.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Pakistan lies on the northwestern side. Nepal and Bhutan are Himalayan neighbours.",
+              "as": "উত্তৰ-পশ্চিম ফালে পাকিস্তান। নেপাল আৰু ভূটান হিমালয়ৰ চুবুৰীয়া দেশ।"
+            },
+            {
+              "en": "Bangladesh and Myanmar border India on the eastern side. Sri Lanka lies across water to the south.",
+              "as": "বাংলাদেশ আৰু ম্যানমাৰৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে। শ্ৰীলংকা দক্ষিণে পানীৰ সিপাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "East · Bay of Bengal",
+                "as": "পূব · বংগোপসাগৰ"
+              },
+              {
+                "en": "West · Arabian Sea",
+                "as": "পশ্চিম · আৰব সাগৰ"
+              }
+            ]
+          },
+          "id": "gf-06-india-location.u1.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The Arabian Sea lies to the west of the peninsula and the Bay of Bengal to the east.",
+            "as": "উপদ্বীপৰ পশ্চিমে আৰব সাগৰ আৰু পূবে বংগোপসাগৰ।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Arabian Sea",
+                "as": "আৰব সাগৰ"
+              },
+              {
+                "en": "West coast",
+                "as": "পশ্চিম উপকূল"
+              }
+            ],
+            [
+              {
+                "en": "Bay of Bengal",
+                "as": "বংগোপসাগৰ"
+              },
+              {
+                "en": "East coast",
+                "as": "পূব উপকূল"
+              }
+            ]
+          ],
+          "id": "gf-06-india-location.u1.03"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "Bangladesh and Myanmar border India on the eastern side. Sri Lanka lies across water to the south.",
+            "as": "বাংলাদেশ আৰু ম্যানমাৰৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে। শ্ৰীলংকা দক্ষিণে পানীৰ সিপাৰে।"
+          },
+          "q": {
+            "en": "Which of these borders India on the eastern side?",
+            "as": "এইবোৰৰ কোনখনৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে?"
+          },
+          "options": [
+            {
+              "en": "Pakistan",
+              "as": "পাকিস্তান"
+            },
+            {
+              "en": "Sri Lanka",
+              "as": "শ্ৰীলংকা"
+            },
+            {
+              "en": "Myanmar",
+              "as": "ম্যানমাৰ"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-06-india-location.u1.04"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "India lies in South Asia and projects into the Indian Ocean.",
+            "as": "ভাৰত দক্ষিণ এছিয়াত আছে আৰু ভাৰত মহাসাগৰৰ ফালে আগবাঢ়ি আছে।"
+          },
+          "s": {
+            "en": "The peninsula points north away from the Indian Ocean.",
+            "as": "উপদ্বীপটো ভাৰত মহাসাগৰৰ পৰা আঁতৰি উত্তৰলৈ আগবাঢ়িছে।"
+          },
+          "answer": false,
+          "id": "gf-06-india-location.u1.05"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Bangladesh and Myanmar border India on the eastern side. Sri Lanka lies across water to the south.",
+            "as": "বাংলাদেশ আৰু ম্যানমাৰৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে। শ্ৰীলংকা দক্ষিণে পানীৰ সিপাৰে।"
+          },
+          "before": {
+            "en": "Across water to the south is ",
+            "as": "দক্ষিণে পানীৰ সিপাৰে "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Nepal",
+              "as": "নেপাল"
+            },
+            {
+              "en": "Sri Lanka",
+              "as": "শ্ৰীলংকা"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-06-india-location.u1.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "The Arabian Sea lies to the west of the peninsula and the Bay of Bengal to the east.",
+            "as": "উপদ্বীপৰ পশ্চিমে আৰব সাগৰ আৰু পূবে বংগোপসাগৰ।"
+          },
+          "q": {
+            "en": "Cross the peninsula broadly from west to east.",
+            "as": "উপদ্বীপটো মুঠামুটিকৈ পশ্চিমৰ পৰা পূবলৈ পাৰ হোৱা।"
+          },
+          "items": [
+            {
+              "en": "Arabian Sea",
+              "as": "আৰব সাগৰ"
+            },
+            {
+              "en": "Peninsular India",
+              "as": "উপদ্বীপীয় ভাৰত"
+            },
+            {
+              "en": "Bay of Bengal",
+              "as": "বংগোপসাগৰ"
+            }
+          ],
+          "id": "gf-06-india-location.u1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use neighbouring lands and seas to orient India.",
+          "as": "চুবুৰীয়া স্থল আৰু সাগৰেৰে ভাৰতৰ দিশ চিনা।"
+        },
+        "result": {
+          "en": "Bangladesh and Myanmar border India on the eastern side. Sri Lanka lies across water to the south.",
+          "as": "বাংলাদেশ আৰু ম্যানমাৰৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে। শ্ৰীলংকা দক্ষিণে পানীৰ সিপাৰে।"
+        }
+      }
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Use political anchors",
+        "as": "প্ৰশাসনিক ঠাইৰে দিশ চিনা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "A political map marks administrative units such as states and union territories.",
+          "as": "প্ৰশাসনিক মানচিত্ৰত ৰাজ্য আৰু কেন্দ্ৰীয় শাসিত অঞ্চল দেখুওৱা হয়।"
+        },
+        {
+          "en": "A physical map highlights features such as rivers, plains and mountains.",
+          "as": "ভৌতিক মানচিত্ৰত নদী, সমভূমি আৰু পৰ্বতৰ দৰে ভূ-আকৃতি দেখুওৱা হয়।"
+        },
+        {
+          "en": "Guwahati is a city in Assam. Kohima is the capital of Nagaland.",
+          "as": "গুৱাহাটী অসমৰ এখন নগৰ। ক’হিমা নাগালেণ্ডৰ ৰাজধানী।"
+        },
+        {
+          "en": "Delhi is a National Capital Territory and lies west of the two northeastern city anchors.",
+          "as": "দিল্লী ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল আৰু উত্তৰ-পূবৰ নগৰ দুখনৰ পশ্চিমত আছে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Use political anchors",
+            "as": "প্ৰশাসনিক ঠাইৰে দিশ চিনা"
+          },
+          "text": [
+            {
+              "en": "A political map marks administrative units such as states and union territories.",
+              "as": "প্ৰশাসনিক মানচিত্ৰত ৰাজ্য আৰু কেন্দ্ৰীয় শাসিত অঞ্চল দেখুওৱা হয়।"
+            },
+            {
+              "en": "A physical map highlights features such as rivers, plains and mountains.",
+              "as": "ভৌতিক মানচিত্ৰত নদী, সমভূমি আৰু পৰ্বতৰ দৰে ভূ-আকৃতি দেখুওৱা হয়।"
+            }
+          ],
+          "map": {
+            "base": "india",
+            "box": [
+              67,
+              7,
+              97,
+              36
+            ],
+            "show": [
+              "delhi",
+              "guwahati",
+              "kohima"
+            ],
+            "labels": {
+              "guwahati": {
+                "pos": "nw"
+              },
+              "kohima": {
+                "pos": "se"
+              }
+            }
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-06-india-location.u2.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Guwahati is a city in Assam. Kohima is the capital of Nagaland.",
+              "as": "গুৱাহাটী অসমৰ এখন নগৰ। ক’হিমা নাগালেণ্ডৰ ৰাজধানী।"
+            },
+            {
+              "en": "Delhi is a National Capital Territory and lies west of the two northeastern city anchors.",
+              "as": "দিল্লী ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল আৰু উত্তৰ-পূবৰ নগৰ দুখনৰ পশ্চিমত আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "National Capital Territory · Delhi",
+                "as": "ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল · দিল্লী"
+              },
+              {
+                "en": "Nagaland · Kohima",
+                "as": "নাগালেণ্ড · ক’হিমা"
+              },
+              {
+                "en": "Assam · Guwahati",
+                "as": "অসম · গুৱাহাটী"
+              }
+            ]
+          },
+          "id": "gf-06-india-location.u2.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "Guwahati is a city in Assam. Kohima is the capital of Nagaland.",
+            "as": "গুৱাহাটী অসমৰ এখন নগৰ। ক’হিমা নাগালেণ্ডৰ ৰাজধানী।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Guwahati",
+                "as": "গুৱাহাটী"
+              },
+              {
+                "en": "Assam",
+                "as": "অসম"
+              }
+            ],
+            [
+              {
+                "en": "Kohima",
+                "as": "ক’হিমা"
+              },
+              {
+                "en": "Nagaland",
+                "as": "নাগালেণ্ড"
+              }
+            ]
+          ],
+          "id": "gf-06-india-location.u2.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "A physical map highlights features such as rivers, plains and mountains.",
+            "as": "ভৌতিক মানচিত্ৰত নদী, সমভূমি আৰু পৰ্বতৰ দৰে ভূ-আকৃতি দেখুওৱা হয়।"
+          },
+          "s": {
+            "en": "A state boundary and a mountain range always mark the same line.",
+            "as": "ৰাজ্যৰ সীমা আৰু পৰ্বতশ্ৰেণীয়ে সদায় একে ৰেখা দেখুৱায়।"
+          },
+          "answer": false,
+          "id": "gf-06-india-location.u2.04"
+        },
+        {
+          "type": "map",
+          "q": {
+            "en": "Tap the westernmost of the three city anchors.",
+            "as": "নগৰ তিনিখনৰ আটাইতকৈ পশ্চিমৰখন বাছা।"
+          },
+          "target": "delhi",
+          "choices": [
+            "delhi",
+            "guwahati",
+            "kohima"
+          ],
+          "why": {
+            "en": "Delhi is a National Capital Territory and lies west of the two northeastern city anchors.",
+            "as": "দিল্লী ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল আৰু উত্তৰ-পূবৰ নগৰ দুখনৰ পশ্চিমত আছে।"
+          },
+          "id": "gf-06-india-location.u2.05"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "A political map marks administrative units such as states and union territories.",
+            "as": "প্ৰশাসনিক মানচিত্ৰত ৰাজ্য আৰু কেন্দ্ৰীয় শাসিত অঞ্চল দেখুওৱা হয়।"
+          },
+          "before": {
+            "en": "For a state boundary, consult a ",
+            "as": "ৰাজ্যৰ সীমাৰ বাবে চোৱা "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "political map",
+              "as": "প্ৰশাসনিক মানচিত্ৰ"
+            },
+            {
+              "en": "rainfall chart",
+              "as": "বৰষুণৰ চিত্ৰ"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-06-india-location.u2.06"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "A physical map highlights features such as rivers, plains and mountains.",
+            "as": "ভৌতিক মানচিত্ৰত নদী, সমভূমি আৰু পৰ্বতৰ দৰে ভূ-আকৃতি দেখুওৱা হয়।"
+          },
+          "q": {
+            "en": "Which is a physical feature rather than an administrative unit?",
+            "as": "কোনটো প্ৰশাসনিক ভাগৰ সলনি ভূ-আকৃতি?"
+          },
+          "options": [
+            {
+              "en": "State",
+              "as": "ৰাজ্য"
+            },
+            {
+              "en": "Union territory",
+              "as": "কেন্দ্ৰীয় শাসিত অঞ্চল"
+            },
+            {
+              "en": "Mountain range",
+              "as": "পৰ্বতশ্ৰেণী"
+            }
+          ],
+          "answer": 2,
+          "id": "gf-06-india-location.u2.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Distinguish a political locator from a landform map.",
+          "as": "প্ৰশাসনিক অৱস্থান আৰু ভূ-আকৃতিৰ মানচিত্ৰ পৃথক কৰা।"
+        },
+        "result": {
+          "en": "Delhi is a National Capital Territory and lies west of the two northeastern city anchors.",
+          "as": "দিল্লী ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল আৰু উত্তৰ-পূবৰ নগৰ দুখনৰ পশ্চিমত আছে।"
+        }
+      }
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "One clock across India",
+        "as": "সমগ্ৰ ভাৰতত একে ঘড়ী"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The Tropic of Cancer crosses India. It is a line of latitude.",
+          "as": "কৰ্কটক্ৰান্তি ভাৰতৰ মাজেৰে যায়। ই এটা অক্ষৰেখা।"
+        },
+        {
+          "en": "The Indian standard meridian is 82°30′ E, a line of longitude.",
+          "as": "ভাৰতীয় মান সময়ৰ দ্ৰাঘিমাৰেখা ৮২°৩০′ পূব।"
+        },
+        {
+          "en": "Local solar noon generally comes earlier by the clock farther east.",
+          "as": "সাধাৰণতে অধিক পূবৰ ঠাইত ঘড়ীৰ হিচাপত স্থানীয় সৌৰ দুপৰীয়া আগতে হয়।"
+        },
+        {
+          "en": "Indian Standard Time gives places across the country a common clock time.",
+          "as": "ভাৰতীয় মান সময়ে দেশজুৰি ঠাইবোৰক একে ঘড়ীৰ সময় দিয়ে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "One clock across India",
+            "as": "সমগ্ৰ ভাৰতত একে ঘড়ী"
+          },
+          "text": [
+            {
+              "en": "The Tropic of Cancer crosses India. It is a line of latitude.",
+              "as": "কৰ্কটক্ৰান্তি ভাৰতৰ মাজেৰে যায়। ই এটা অক্ষৰেখা।"
+            },
+            {
+              "en": "The Indian standard meridian is 82°30′ E, a line of longitude.",
+              "as": "ভাৰতীয় মান সময়ৰ দ্ৰাঘিমাৰেখা ৮২°৩০′ পূব।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Tropic · latitude",
+                "as": "ক্ৰান্তি · অক্ষাংশ"
+              },
+              {
+                "en": "Standard meridian · longitude",
+                "as": "মান দ্ৰাঘিমাৰেখা · দ্ৰাঘিমাংশ"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-06-india-location.u3.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Local solar noon generally comes earlier by the clock farther east.",
+              "as": "সাধাৰণতে অধিক পূবৰ ঠাইত ঘড়ীৰ হিচাপত স্থানীয় সৌৰ দুপৰীয়া আগতে হয়।"
+            },
+            {
+              "en": "Indian Standard Time gives places across the country a common clock time.",
+              "as": "ভাৰতীয় মান সময়ে দেশজুৰি ঠাইবোৰক একে ঘড়ীৰ সময় দিয়ে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Standard meridian · longitude",
+                "as": "মান দ্ৰাঘিমাৰেখা · দ্ৰাঘিমাংশ"
+              },
+              {
+                "en": "Tropic · latitude",
+                "as": "ক্ৰান্তি · অক্ষাংশ"
+              }
+            ]
+          },
+          "id": "gf-06-india-location.u3.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The Indian standard meridian is 82°30′ E, a line of longitude.",
+            "as": "ভাৰতীয় মান সময়ৰ দ্ৰাঘিমাৰেখা ৮২°৩০′ পূব।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Tropic of Cancer",
+                "as": "কৰ্কটক্ৰান্তি"
+              },
+              {
+                "en": "Latitude",
+                "as": "অক্ষাংশ"
+              }
+            ],
+            [
+              {
+                "en": "82°30′ E",
+                "as": "৮২°৩০′ পূব"
+              },
+              {
+                "en": "Standard meridian",
+                "as": "মান দ্ৰাঘিমাৰেখা"
+              }
+            ]
+          ],
+          "id": "gf-06-india-location.u3.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "Indian Standard Time gives places across the country a common clock time.",
+            "as": "ভাৰতীয় মান সময়ে দেশজুৰি ঠাইবোৰক একে ঘড়ীৰ সময় দিয়ে।"
+          },
+          "s": {
+            "en": "Two Indian towns must use different standard times if their longitudes differ.",
+            "as": "দ্ৰাঘিমাংশ বেলেগ হ’লে ভাৰতৰ নগৰ দুখনে বেলেগ মান সময় ব্যৱহাৰ কৰিবই লাগিব।"
+          },
+          "answer": false,
+          "id": "gf-06-india-location.u3.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Local solar noon generally comes earlier by the clock farther east.",
+            "as": "সাধাৰণতে অধিক পূবৰ ঠাইত ঘড়ীৰ হিচাপত স্থানীয় সৌৰ দুপৰীয়া আগতে হয়।"
+          },
+          "before": {
+            "en": "Of two places at the same latitude, local solar noon comes earlier by IST at the place farther ",
+            "as": "একে অক্ষাংশৰ দুটা ঠাইৰ ভিতৰত ভাৰতীয় মান সময়ৰ হিচাপত সৌৰ দুপৰীয়া আগতে হয় অধিক "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "west",
+              "as": "পশ্চিমৰ ঠাইত"
+            },
+            {
+              "en": "east",
+              "as": "পূবৰ ঠাইত"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-06-india-location.u3.05"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Local solar noon generally comes earlier by the clock farther east.",
+            "as": "সাধাৰণতে অধিক পূবৰ ঠাইত ঘড়ীৰ হিচাপত স্থানীয় সৌৰ দুপৰীয়া আগতে হয়।"
+          },
+          "q": {
+            "en": "At the same latitude, order local solar noon from earliest to latest by IST.",
+            "as": "একে অক্ষাংশত ভাৰতীয় মান সময়ৰ হিচাপত আগৰ পৰা পাছৰ সৌৰ দুপৰীয়া সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "90° E",
+              "as": "৯০° পূব"
+            },
+            {
+              "en": "82°30′ E",
+              "as": "৮২°৩০′ পূব"
+            },
+            {
+              "en": "75° E",
+              "as": "৭৫° পূব"
+            }
+          ],
+          "id": "gf-06-india-location.u3.06"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The Indian standard meridian is 82°30′ E, a line of longitude.",
+            "as": "ভাৰতীয় মান সময়ৰ দ্ৰাঘিমাৰেখা ৮২°৩০′ পূব।"
+          },
+          "q": {
+            "en": "Which reference line sets Indian Standard Time?",
+            "as": "কোনটো ৰেখাৰে ভাৰতীয় মান সময় নিৰ্ধাৰণ হয়?"
+          },
+          "options": [
+            {
+              "en": "82°30′ E",
+              "as": "৮২°৩০′ পূব"
+            },
+            {
+              "en": "Equator",
+              "as": "বিষুৱৰেখা"
+            },
+            {
+              "en": "Tropic of Cancer",
+              "as": "কৰ্কটক্ৰান্তি"
+            }
+          ],
+          "answer": 0,
+          "id": "gf-06-india-location.u3.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use meridians to compare local solar time and standard time.",
+          "as": "দ্ৰাঘিমাৰেখাৰে স্থানীয় সৌৰ সময় আৰু মান সময় তুলনা কৰা।"
+        },
+        "result": {
+          "en": "Indian Standard Time gives places across the country a common clock time.",
+          "as": "ভাৰতীয় মান সময়ে দেশজুৰি ঠাইবোৰক একে ঘড়ীৰ সময় দিয়ে।"
+        }
+      }
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Coasts and islands",
+        "as": "উপকূল আৰু দ্বীপ"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The mainland has a western coast facing the Arabian Sea.",
+          "as": "মূল ভূখণ্ডৰ পশ্চিম উপকূল আৰব সাগৰৰ ফালে।"
+        },
+        {
+          "en": "The eastern coast faces the Bay of Bengal.",
+          "as": "পূব উপকূল বংগোপসাগৰৰ ফালে।"
+        },
+        {
+          "en": "Lakshadweep lies in the Arabian Sea, off the southwest coast.",
+          "as": "লাক্ষাদ্বীপ দক্ষিণ-পশ্চিম উপকূলৰ বাহিৰত আৰব সাগৰত আছে।"
+        },
+        {
+          "en": "The Andaman and Nicobar Islands lie southeast of the mainland, on the Bay of Bengal side.",
+          "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Coasts and islands",
+            "as": "উপকূল আৰু দ্বীপ"
+          },
+          "text": [
+            {
+              "en": "The mainland has a western coast facing the Arabian Sea.",
+              "as": "মূল ভূখণ্ডৰ পশ্চিম উপকূল আৰব সাগৰৰ ফালে।"
+            },
+            {
+              "en": "The eastern coast faces the Bay of Bengal.",
+              "as": "পূব উপকূল বংগোপসাগৰৰ ফালে।"
+            }
+          ],
+          "img": "island-locators.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Approximate island locators. A Lakshadweep, B Andaman and Nicobar. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5. Neighbouring land by Natural Earth.",
+            "as": "দ্বীপগুচ্ছৰ আনুমানিক অৱস্থান। A লাক্ষাদ্বীপ, B আন্দামান আৰু নিকোবৰ। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5। চুবুৰীয়া স্থলভাগ Natural Earthৰ পৰা।"
+          },
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-06-india-location.u4.01"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Use the clues",
+            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+          },
+          "text": [
+            {
+              "en": "Lakshadweep lies in the Arabian Sea, off the southwest coast.",
+              "as": "লাক্ষাদ্বীপ দক্ষিণ-পশ্চিম উপকূলৰ বাহিৰত আৰব সাগৰত আছে।"
+            },
+            {
+              "en": "The Andaman and Nicobar Islands lie southeast of the mainland, on the Bay of Bengal side.",
+              "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Andaman and Nicobar · southeast",
+                "as": "আন্দামান আৰু নিকোবৰ · দক্ষিণ-পূব"
+              },
+              {
+                "en": "Lakshadweep · west",
+                "as": "লাক্ষাদ্বীপ · পশ্চিম"
+              }
+            ]
+          },
+          "id": "gf-06-india-location.u4.02"
+        },
+        {
+          "type": "match",
+          "why": {
+            "en": "The Andaman and Nicobar Islands lie southeast of the mainland, on the Bay of Bengal side.",
+            "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
+          },
+          "pairs": [
+            [
+              {
+                "en": "Lakshadweep",
+                "as": "লাক্ষাদ্বীপ"
+              },
+              {
+                "en": "Arabian Sea side",
+                "as": "আৰব সাগৰৰ ফাল"
+              }
+            ],
+            [
+              {
+                "en": "Andaman and Nicobar",
+                "as": "আন্দামান আৰু নিকোবৰ"
+              },
+              {
+                "en": "Bay of Bengal side",
+                "as": "বংগোপসাগৰৰ ফাল"
+              }
+            ]
+          ],
+          "img": "island-locators.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Approximate island locators. A Lakshadweep, B Andaman and Nicobar. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5. Neighbouring land by Natural Earth.",
+            "as": "দ্বীপগুচ্ছৰ আনুমানিক অৱস্থান। A লাক্ষাদ্বীপ, B আন্দামান আৰু নিকোবৰ। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5। চুবুৰীয়া স্থলভাগ Natural Earthৰ পৰা।"
+          },
+          "imageAlt": {
+            "en": "A is southwest of the mainland. B is southeast of the mainland.",
+            "as": "A মূল ভূখণ্ডৰ দক্ষিণ-পশ্চিমত। B মূল ভূখণ্ডৰ দক্ষিণ-পূবত।"
+          },
+          "id": "gf-06-india-location.u4.03"
+        },
+        {
+          "type": "tf",
+          "why": {
+            "en": "The Andaman and Nicobar Islands lie southeast of the mainland, on the Bay of Bengal side.",
+            "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
+          },
+          "s": {
+            "en": "Both island groups lie west of the mainland.",
+            "as": "দুয়োটা দ্বীপগুচ্ছ মূল ভূখণ্ডৰ পশ্চিমত আছে।"
+          },
+          "answer": false,
+          "id": "gf-06-india-location.u4.04"
+        },
+        {
+          "type": "inline",
+          "why": {
+            "en": "Lakshadweep lies in the Arabian Sea, off the southwest coast.",
+            "as": "লাক্ষাদ্বীপ দক্ষিণ-পশ্চিম উপকূলৰ বাহিৰত আৰব সাগৰত আছে।"
+          },
+          "before": {
+            "en": "The island group off southwestern India is ",
+            "as": "ভাৰতৰ দক্ষিণ-পশ্চিমৰ দ্বীপগুচ্ছটো "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "Lakshadweep",
+              "as": "লাক্ষাদ্বীপ"
+            },
+            {
+              "en": "Andaman and Nicobar",
+              "as": "আন্দামান আৰু নিকোবৰ"
+            }
+          ],
+          "answer": 0,
+          "img": "island-locators.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "Approximate island locators. A Lakshadweep, B Andaman and Nicobar. Simplified DataMeet / Survey of India outline, CC BY-SA 2.5. Neighbouring land by Natural Earth.",
+            "as": "দ্বীপগুচ্ছৰ আনুমানিক অৱস্থান। A লাক্ষাদ্বীপ, B আন্দামান আৰু নিকোবৰ। সৰলীকৃত ৰূপৰেখা DataMeet / ভাৰতীয় জৰীপ বিভাগৰ পৰা, CC BY-SA 2.5। চুবুৰীয়া স্থলভাগ Natural Earthৰ পৰা।"
+          },
+          "imageAlt": {
+            "en": "A is southwest of the mainland. B is southeast of the mainland.",
+            "as": "A মূল ভূখণ্ডৰ দক্ষিণ-পশ্চিমত। B মূল ভূখণ্ডৰ দক্ষিণ-পূবত।"
+          },
+          "id": "gf-06-india-location.u4.05"
+        },
+        {
+          "type": "odd",
+          "why": {
+            "en": "The eastern coast faces the Bay of Bengal.",
+            "as": "পূব উপকূল বংগোপসাগৰৰ ফালে।"
+          },
+          "q": {
+            "en": "Which combination belongs on the eastern side?",
+            "as": "কোনটো যোৰ পূব ফালে আছে?"
+          },
+          "options": [
+            {
+              "en": "West coast and Arabian Sea",
+              "as": "পশ্চিম উপকূল আৰু আৰব সাগৰ"
+            },
+            {
+              "en": "East coast and Bay of Bengal",
+              "as": "পূব উপকূল আৰু বংগোপসাগৰ"
+            },
+            {
+              "en": "Lakshadweep and Arabian Sea",
+              "as": "লাক্ষাদ্বীপ আৰু আৰব সাগৰ"
+            }
+          ],
+          "answer": 1,
+          "id": "gf-06-india-location.u4.06"
+        },
+        {
+          "type": "order",
+          "why": {
+            "en": "Lakshadweep lies in the Arabian Sea, off the southwest coast.",
+            "as": "লাক্ষাদ্বীপ দক্ষিণ-পশ্চিম উপকূলৰ বাহিৰত আৰব সাগৰত আছে।"
+          },
+          "q": {
+            "en": "Identify an island group using a locator map.",
+            "as": "অৱস্থান মানচিত্ৰৰে দ্বীপগুচ্ছ চিনা।"
+          },
+          "items": [
+            {
+              "en": "Find the mainland",
+              "as": "মূল ভূখণ্ড বিচাৰা"
+            },
+            {
+              "en": "Check relative direction",
+              "as": "আপেক্ষিক দিশ চোৱা"
+            },
+            {
+              "en": "Use the sea and island label",
+              "as": "সাগৰ আৰু দ্বীপৰ নাম ব্যৱহাৰ কৰা"
+            }
+          ],
+          "id": "gf-06-india-location.u4.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Place the two island groups relative to the mainland.",
+          "as": "মূল ভূখণ্ডৰ তুলনাত দ্বীপগুচ্ছ দুটাৰ অৱস্থান চিনা।"
+        },
+        "result": {
+          "en": "The Andaman and Nicobar Islands lie southeast of the mainland, on the Bay of Bengal side.",
+          "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
+        }
+      }
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "match",
+        "why": {
+          "en": "The Himalayan land border and the sea crossing are different map clues.",
+          "as": "হিমালয়ৰ স্থলসীমা আৰু সাগৰ পাৰ হোৱা বেলেগ সংকেত।"
+        },
+        "pairs": [
+          [
+            {
+              "en": "Nepal",
+              "as": "নেপাল"
+            },
+            {
+              "en": "Himalayan neighbour",
+              "as": "হিমালয়ৰ চুবুৰীয়া"
+            }
+          ],
+          [
+            {
+              "en": "Sri Lanka",
+              "as": "শ্ৰীলংকা"
+            },
+            {
+              "en": "Neighbour across water",
+              "as": "পানীৰ সিপাৰৰ চুবুৰীয়া"
+            }
+          ]
+        ],
+        "id": "gf-06-india-location.test.01"
+      },
+      {
+        "type": "map",
+        "q": {
+          "en": "Tap the capital of Nagaland among these anchors.",
+          "as": "চিহ্নিত ঠাইবোৰৰ ভিতৰত নাগালেণ্ডৰ ৰাজধানী বাছা।"
+        },
+        "target": "kohima",
+        "choices": [
+          "delhi",
+          "guwahati",
+          "kohima"
+        ],
+        "why": {
+          "en": "Kohima is the capital of Nagaland.",
+          "as": "ক’হিমা নাগালেণ্ডৰ ৰাজধানী।"
+        },
+        "id": "gf-06-india-location.test.02"
+      },
+      {
+        "type": "tf",
+        "why": {
+          "en": "A meridian measures longitude.",
+          "as": "দ্ৰাঘিমাৰেখাই দ্ৰাঘিমাংশ বুজায়।"
+        },
+        "s": {
+          "en": "India’s standard meridian is a line of latitude.",
+          "as": "ভাৰতৰ মান দ্ৰাঘিমাৰেখা এটা অক্ষৰেখা।"
+        },
+        "answer": false,
+        "id": "gf-06-india-location.test.03"
+      },
+      {
+        "type": "inline",
+        "why": {
+          "en": "Lakshadweep lies off the southwest coast.",
+          "as": "লাক্ষাদ্বীপ দক্ষিণ-পশ্চিম উপকূলৰ বাহিৰত।"
+        },
+        "before": {
+          "en": "Starting at Lakshadweep, the surrounding sea is the ",
+          "as": "লাক্ষাদ্বীপৰ চাৰিওফালৰ সাগৰখন "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "Bay of Bengal",
+            "as": "বংগোপসাগৰ"
+          },
+          {
+            "en": "Arabian Sea",
+            "as": "আৰব সাগৰ"
+          }
+        ],
+        "answer": 1,
+        "id": "gf-06-india-location.test.04"
+      },
+      {
+        "type": "odd",
+        "why": {
+          "en": "The arrow sets orientation.",
+          "as": "কাঁড়ে দিশ নিৰ্ধাৰণ কৰে।"
+        },
+        "q": {
+          "en": "Which earlier tool tells you whether the map top is north?",
+          "as": "মানচিত্ৰৰ ওপৰফাল উত্তৰ নে কোনটো আগৰ সঁজুলিয়ে কয়?"
+        },
+        "options": [
+          {
+            "en": "Rainfall chart",
+            "as": "বৰষুণৰ চিত্ৰ"
+          },
+          {
+            "en": "Scale bar",
+            "as": "দণ্ড স্কেল"
+          },
+          {
+            "en": "North arrow",
+            "as": "উত্তৰৰ কাঁড়"
+          }
+        ],
+        "answer": 2,
+        "id": "gf-06-india-location.test.05"
+      }
+    ],
+    "mission": {
+      "objective": {
+        "en": "What clues tell you where you are on a map of India?",
+        "as": "ভাৰতৰ মানচিত্ৰত তুমি ক’ত আছা কোন সংকেতে কয়?"
+      },
+      "result": {
+        "en": "You can read the evidence from a new view.",
+        "as": "তুমি নতুন চিত্ৰৰ পৰা প্ৰমাণ পঢ়িব পাৰা।"
+      }
+    }
+  }
+}

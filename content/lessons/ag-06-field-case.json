@@ -1,0 +1,963 @@
+{
+  "id": "ag-06-field-case",
+  "course": "assam-geography",
+  "no": 6,
+  "version": 1,
+  "king": {
+    "en": "Solve a field case",
+    "as": "ক্ষেত্ৰৰ কেছ সমাধান কৰা"
+  },
+  "reign": {
+    "en": "Solve a field case",
+    "as": "ক্ষেত্ৰৰ কেছ সমাধান কৰা"
+  },
+  "portrait": "ag-02-follow-water/river-tile.webp",
+  "sources": [
+    {
+      "title": "Course-authored teaching scenario",
+      "url": "",
+      "used_for": "Fictional market, sites and roads. No real siting or safety claim."
+    }
+  ],
+  "review_notes": "Private draft. Assamese editorial review pending.",
+  "map": {
+    "box": [
+      89.4,
+      24,
+      96.2,
+      28.4
+    ],
+    "show": [
+      "brahmaputra",
+      "guwahati",
+      "dibrugarh",
+      "silchar"
+    ]
+  },
+  "guide": {
+    "timeline": []
+  },
+  "mission": {
+    "label": {
+      "en": "Atlas mission",
+      "as": "মানচিত্ৰ অভিযান"
+    },
+    "title": {
+      "en": "Solve a field case",
+      "as": "ক্ষেত্ৰৰ কেছ সমাধান কৰা"
+    },
+    "hook": {
+      "en": "Where should the market go under the stated rules?",
+      "as": "দিয়া চৰ্ত অনুসৰি বজাৰ ক’ত হ’ব?"
+    }
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Open the market case",
+        "as": "বজাৰৰ কেছটো খোলা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "This fictional map shows two possible market sites, A and B.",
+          "as": "এই কাল্পনিক মানচিত্ৰত বজাৰৰ সম্ভাব্য ঠাই দুটা, ক আৰু খ, দেখুওৱা হৈছে।"
+        },
+        {
+          "en": "The dashed zone shows land inundated in the scenario.",
+          "as": "ভঙা ৰেখাৰে ঘেৰা অংশত এই উদাহৰণত পানী উঠিছিল।"
+        },
+        {
+          "en": "A solid road line connects each site to the village.",
+          "as": "এডাল পূৰ্ণ ৰেখাই প্ৰতিটো ঠাইক গাঁৱৰ সৈতে ৰাস্তাৰে সংযোগ কৰিছে।"
+        },
+        {
+          "en": "Site A lies inside the inundated zone; site B lies outside it.",
+          "as": "ক ঠাই পানী উঠা অঞ্চলৰ ভিতৰত আৰু খ ঠাই বাহিৰত।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Find sites A and B and read the symbols.",
+          "as": "ক আৰু খ ঠাই বিচাৰি চিহ্নবোৰ পঢ়া।"
+        },
+        "result": {
+          "en": "Site A lies inside the inundated zone; site B lies outside it.",
+          "as": "ক ঠাই পানী উঠা অঞ্চলৰ ভিতৰত আৰু খ ঠাই বাহিৰত।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Open the market case",
+            "as": "বজাৰৰ কেছটো খোলা"
+          },
+          "text": [
+            {
+              "en": "This fictional map shows two possible market sites, A and B.",
+              "as": "এই কাল্পনিক মানচিত্ৰত বজাৰৰ সম্ভাব্য ঠাই দুটা, ক আৰু খ, দেখুওৱা হৈছে।"
+            },
+            {
+              "en": "The dashed zone shows land inundated in the scenario.",
+              "as": "ভঙা ৰেখাৰে ঘেৰা অংশত এই উদাহৰণত পানী উঠিছিল।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A · inside zone",
+                "as": "ক · অঞ্চলৰ ভিতৰত"
+              },
+              {
+                "en": "B · outside zone",
+                "as": "খ · অঞ্চলৰ বাহিৰত"
+              }
+            ]
+          },
+          "id": "ag06.u1.01",
+          "img": "market-case.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+            "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়। মানচিত্ৰৰ A আৰু B আখৰে ক আৰু খ ঠাই বুজায়।"
+          },
+          "imageAlt": {
+            "en": "The short road enters the dashed zone and ends at A. The longer road stays outside and ends at B.",
+            "as": "চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই ক ঠাইত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে খ ঠাইলৈ যায়।"
+          }
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "A solid road line connects each site to the village.",
+              "as": "এডাল পূৰ্ণ ৰেখাই প্ৰতিটো ঠাইক গাঁৱৰ সৈতে ৰাস্তাৰে সংযোগ কৰিছে।"
+            },
+            {
+              "en": "Site A lies inside the inundated zone; site B lies outside it.",
+              "as": "ক ঠাই পানী উঠা অঞ্চলৰ ভিতৰত আৰু খ ঠাই বাহিৰত।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A · inside zone",
+                "as": "ক · অঞ্চলৰ ভিতৰত"
+              },
+              {
+                "en": "B · outside zone",
+                "as": "খ · অঞ্চলৰ বাহিৰত"
+              }
+            ]
+          },
+          "id": "ag06.u1.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Dashed boundary",
+                "as": "ভঙা সীমাৰেখা"
+              },
+              {
+                "en": "Inundated zone",
+                "as": "পানী উঠা অঞ্চল"
+              }
+            ],
+            [
+              {
+                "en": "Solid dark line",
+                "as": "গাঢ় পূৰ্ণ ৰেখা"
+              },
+              {
+                "en": "Road",
+                "as": "ৰাস্তা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "A solid road line connects each site to the village.",
+            "as": "এডাল পূৰ্ণ ৰেখাই প্ৰতিটো ঠাইক গাঁৱৰ সৈতে ৰাস্তাৰে সংযোগ কৰিছে।"
+          },
+          "id": "ag06.u1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The letter inside the dashed boundary is ",
+            "as": "ভঙা সীমাৰেখাৰ ভিতৰৰ আখৰটো হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "ক"
+            },
+            {
+              "en": "B",
+              "as": "খ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Site A lies inside the inundated zone; site B lies outside it.",
+            "as": "ক ঠাই পানী উঠা অঞ্চলৰ ভিতৰত আৰু খ ঠাই বাহিৰত।"
+          },
+          "id": "ag06.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Both market candidates are connected to the village by road.",
+            "as": "বজাৰৰ দুয়োটা সম্ভাব্য ঠাই গাঁৱৰ সৈতে ৰাস্তাৰে সংযুক্ত।"
+          },
+          "answer": true,
+          "why": {
+            "en": "A solid road line connects each site to the village.",
+            "as": "এডাল পূৰ্ণ ৰেখাই প্ৰতিটো ঠাইক গাঁৱৰ সৈতে ৰাস্তাৰে সংযোগ কৰিছে।"
+          },
+          "id": "ag06.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which layer shows past water coverage in the case?",
+            "as": "এই কেছত আগতে পানী উঠা ঠাই কোনটো স্তৰে দেখুৱায়?"
+          },
+          "options": [
+            {
+              "en": "Road line",
+              "as": "ৰাস্তাৰ ৰেখা"
+            },
+            {
+              "en": "Dashed zone",
+              "as": "ভঙা ৰেখাৰ অঞ্চল"
+            },
+            {
+              "en": "Village symbol",
+              "as": "গাঁৱৰ চিহ্ন"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The dashed zone shows land inundated in the scenario.",
+            "as": "ভঙা ৰেখাৰে ঘেৰা অংশত এই উদাহৰণত পানী উঠিছিল।"
+          },
+          "id": "ag06.u1.06"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Before choosing, read the map in this order.",
+            "as": "ঠাই বাছাৰ আগতে এই ক্ৰমত মানচিত্ৰ পঢ়া।"
+          },
+          "items": [
+            {
+              "en": "Decode symbols",
+              "as": "চিহ্ন বুজা"
+            },
+            {
+              "en": "Locate both sites",
+              "as": "দুয়োটা ঠাই বিচৰা"
+            },
+            {
+              "en": "Compare both layers",
+              "as": "দুয়োটা স্তৰ তুলনা কৰা"
+            }
+          ],
+          "why": {
+            "en": "Site A lies inside the inundated zone; site B lies outside it.",
+            "as": "ক ঠাই পানী উঠা অঞ্চলৰ ভিতৰত আৰু খ ঠাই বাহিৰত।"
+          },
+          "id": "ag06.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Compare the routes",
+        "as": "ৰাস্তা দুটা তুলনা কৰা"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The village-to-A road is shorter on the teaching map.",
+          "as": "শিক্ষণ মানচিত্ৰত গাঁৱৰ পৰা কলৈ ৰাস্তা চুটি।"
+        },
+        {
+          "en": "Part of the road to A crosses the inundated zone.",
+          "as": "কলৈ যোৱা ৰাস্তাৰ কিছু অংশ পানী উঠা অঞ্চলৰ মাজেৰে যায়।"
+        },
+        {
+          "en": "The longer road to B stays outside that zone.",
+          "as": "খলৈ যোৱা দীঘল ৰাস্তাটো সেই অঞ্চলৰ বাহিৰতে থাকে।"
+        },
+        {
+          "en": "The market site and its access route can have different exposure.",
+          "as": "বজাৰৰ ঠাই আৰু তালৈ যোৱা ৰাস্তাৰ উন্মুক্ততা বেলেগ হ’ব পাৰে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Separate access and exposure evidence.",
+          "as": "যাতায়াত আৰু বানৰ উন্মুক্ততাৰ প্ৰমাণ পৃথক কৰা।"
+        },
+        "result": {
+          "en": "The market site and its access route can have different exposure.",
+          "as": "বজাৰৰ ঠাই আৰু তালৈ যোৱা ৰাস্তাৰ উন্মুক্ততা বেলেগ হ’ব পাৰে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Compare the routes",
+            "as": "ৰাস্তা দুটা তুলনা কৰা"
+          },
+          "text": [
+            {
+              "en": "The village-to-A road is shorter on the teaching map.",
+              "as": "শিক্ষণ মানচিত্ৰত গাঁৱৰ পৰা কলৈ ৰাস্তা চুটি।"
+            },
+            {
+              "en": "Part of the road to A crosses the inundated zone.",
+              "as": "কলৈ যোৱা ৰাস্তাৰ কিছু অংশ পানী উঠা অঞ্চলৰ মাজেৰে যায়।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A · shorter road crosses zone",
+                "as": "ক · চুটি ৰাস্তাই অঞ্চল পাৰ হয়"
+              },
+              {
+                "en": "B · longer road stays outside",
+                "as": "খ · দীঘল ৰাস্তা বাহিৰতে থাকে"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u1"
+          },
+          "id": "ag06.u2.01",
+          "img": "market-case.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+            "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়। মানচিত্ৰৰ A আৰু B আখৰে ক আৰু খ ঠাই বুজায়।"
+          },
+          "imageAlt": {
+            "en": "The short road enters the dashed zone and ends at A. The longer road stays outside and ends at B.",
+            "as": "চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই ক ঠাইত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে খ ঠাইলৈ যায়।"
+          }
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "The longer road to B stays outside that zone.",
+              "as": "খলৈ যোৱা দীঘল ৰাস্তাটো সেই অঞ্চলৰ বাহিৰতে থাকে।"
+            },
+            {
+              "en": "The market site and its access route can have different exposure.",
+              "as": "বজাৰৰ ঠাই আৰু তালৈ যোৱা ৰাস্তাৰ উন্মুক্ততা বেলেগ হ’ব পাৰে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A · shorter road crosses zone",
+                "as": "ক · চুটি ৰাস্তাই অঞ্চল পাৰ হয়"
+              },
+              {
+                "en": "B · longer road stays outside",
+                "as": "খ · দীঘল ৰাস্তা বাহিৰতে থাকে"
+              }
+            ]
+          },
+          "id": "ag06.u2.02"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Road length",
+                "as": "ৰাস্তাৰ দৈৰ্ঘ্য"
+              },
+              {
+                "en": "Access evidence",
+                "as": "যাতায়াতৰ প্ৰমাণ"
+              }
+            ],
+            [
+              {
+                "en": "Crosses dashed zone",
+                "as": "ভঙা সীমাৰ অঞ্চল পাৰ হয়"
+              },
+              {
+                "en": "Flood exposure evidence",
+                "as": "বানৰ উন্মুক্ততাৰ প্ৰমাণ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The market site and its access route can have different exposure.",
+            "as": "বজাৰৰ ঠাই আৰু তালৈ যোৱা ৰাস্তাৰ উন্মুক্ততা বেলেগ হ’ব পাৰে।"
+          },
+          "id": "ag06.u2.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The shortest road also stays outside the inundated zone.",
+            "as": "আটাইতকৈ চুটি ৰাস্তাটোও পানী উঠা অঞ্চলৰ বাহিৰত থাকে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Part of the road to A crosses the inundated zone.",
+            "as": "কলৈ যোৱা ৰাস্তাৰ কিছু অংশ পানী উঠা অঞ্চলৰ মাজেৰে যায়।"
+          },
+          "id": "ag06.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The longer route goes to ",
+            "as": "দীঘল ৰাস্তাটো যায় "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "A",
+              "as": "কলৈ"
+            },
+            {
+              "en": "B",
+              "as": "খলৈ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The longer road to B stays outside that zone.",
+            "as": "খলৈ যোৱা দীঘল ৰাস্তাটো সেই অঞ্চলৰ বাহিৰতে থাকে।"
+          },
+          "id": "ag06.u2.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Trace the road to A in travel order.",
+            "as": "কলৈ যোৱা ৰাস্তাটো যাত্ৰাৰ ক্ৰমত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Village",
+              "as": "গাঁও"
+            },
+            {
+              "en": "Zone boundary",
+              "as": "অঞ্চলৰ সীমা"
+            },
+            {
+              "en": "Site A",
+              "as": "ক ঠাই"
+            }
+          ],
+          "why": {
+            "en": "Part of the road to A crosses the inundated zone.",
+            "as": "কলৈ যোৱা ৰাস্তাৰ কিছু অংশ পানী উঠা অঞ্চলৰ মাজেৰে যায়।"
+          },
+          "id": "ag06.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which clue can distinguish flood exposure along the two roads?",
+            "as": "ৰাস্তা দুটাৰ বান উন্মুক্ততা পৃথক কৰা কোনটো সংকেত?"
+          },
+          "options": [
+            {
+              "en": "Only one crosses the zone",
+              "as": "এটাই অঞ্চল পাৰ হয়"
+            },
+            {
+              "en": "Both start at the village",
+              "as": "দুয়োটা গাঁৱত আৰম্ভ"
+            },
+            {
+              "en": "Both are solid lines",
+              "as": "দুয়োটা পূৰ্ণ ৰেখা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The longer road to B stays outside that zone.",
+            "as": "খলৈ যোৱা দীঘল ৰাস্তাটো সেই অঞ্চলৰ বাহিৰতে থাকে।"
+          },
+          "id": "ag06.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Make the case",
+        "as": "সিদ্ধান্তৰ যুক্তি দিয়া"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "The fictional brief requires the market site to be outside the mapped inundation zone.",
+          "as": "কাল্পনিক চৰ্ত অনুসৰি বজাৰ পানী উঠা অঞ্চলৰ বাহিৰত হ’ব লাগিব।"
+        },
+        {
+          "en": "It also requires the entire access road to stay outside that zone.",
+          "as": "তালৈ যোৱা সম্পূৰ্ণ ৰাস্তাটোও সেই অঞ্চলৰ বাহিৰত হ’ব লাগিব।"
+        },
+        {
+          "en": "Site B satisfies both requirements in this scenario.",
+          "as": "এই উদাহৰণত খ ঠাই দুয়োটা চৰ্ত পূৰণ কৰে।"
+        },
+        {
+          "en": "The trade-off is a longer route from the village.",
+          "as": "তাৰ বিনিময়ত গাঁৱৰ পৰা দীঘলীয়া ৰাস্তাৰে যাব লাগে।"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Choose the site that meets both stated requirements.",
+          "as": "দুয়োটা চৰ্ত পূৰণ কৰা ঠাই বাছা।"
+        },
+        "result": {
+          "en": "The trade-off is a longer route from the village.",
+          "as": "তাৰ বিনিময়ত গাঁৱৰ পৰা দীঘলীয়া ৰাস্তাৰে যাব লাগে।"
+        }
+      },
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Make the case",
+            "as": "সিদ্ধান্তৰ যুক্তি দিয়া"
+          },
+          "text": [
+            {
+              "en": "The fictional brief requires the market site to be outside the mapped inundation zone.",
+              "as": "কাল্পনিক চৰ্ত অনুসৰি বজাৰ পানী উঠা অঞ্চলৰ বাহিৰত হ’ব লাগিব।"
+            },
+            {
+              "en": "It also requires the entire access road to stay outside that zone.",
+              "as": "তালৈ যোৱা সম্পূৰ্ণ ৰাস্তাটোও সেই অঞ্চলৰ বাহিৰত হ’ব লাগিব।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Check site",
+                "as": "ঠাই চোৱা"
+              },
+              {
+                "en": "Check route",
+                "as": "ৰাস্তা চোৱা"
+              },
+              {
+                "en": "State trade-off",
+                "as": "অসুবিধাটো কোৱা"
+              }
+            ]
+          },
+          "link": {
+            "unit": "u2"
+          },
+          "id": "ag06.u3.01",
+          "img": "market-case.webp",
+          "imageLayout": "wide",
+          "imageKind": "diagram",
+          "imageCaption": {
+            "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+            "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়। মানচিত্ৰৰ A আৰু B আখৰে ক আৰু খ ঠাই বুজায়।"
+          },
+          "imageAlt": {
+            "en": "The short road enters the dashed zone and ends at A. The longer road stays outside and ends at B.",
+            "as": "চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই ক ঠাইত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে খ ঠাইলৈ যায়।"
+          }
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Read the clues",
+            "as": "সংকেতবোৰ পঢ়া"
+          },
+          "text": [
+            {
+              "en": "Site B satisfies both requirements in this scenario.",
+              "as": "এই উদাহৰণত খ ঠাই দুয়োটা চৰ্ত পূৰণ কৰে।"
+            },
+            {
+              "en": "The trade-off is a longer route from the village.",
+              "as": "তাৰ বিনিময়ত গাঁৱৰ পৰা দীঘলীয়া ৰাস্তাৰে যাব লাগে।"
+            }
+          ],
+          "art": "river",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Check site",
+                "as": "ঠাই চোৱা"
+              },
+              {
+                "en": "Check route",
+                "as": "ৰাস্তা চোৱা"
+              },
+              {
+                "en": "State trade-off",
+                "as": "অসুবিধাটো কোৱা"
+              }
+            ]
+          },
+          "id": "ag06.u3.02"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Under both requirements the choice is ",
+            "as": "দুয়োটা চৰ্ত অনুসৰি বাছনি হ’ল "
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "site B",
+              "as": "খ ঠাই"
+            },
+            {
+              "en": "site A",
+              "as": "ক ঠাই"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Site B satisfies both requirements in this scenario.",
+            "as": "এই উদাহৰণত খ ঠাই দুয়োটা চৰ্ত পূৰণ কৰে।"
+          },
+          "id": "ag06.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Site evidence",
+                "as": "ঠাইৰ প্ৰমাণ"
+              },
+              {
+                "en": "B is outside the zone",
+                "as": "খ অঞ্চলৰ বাহিৰত"
+              }
+            ],
+            [
+              {
+                "en": "Route evidence",
+                "as": "ৰাস্তাৰ প্ৰমাণ"
+              },
+              {
+                "en": "Road to B stays outside",
+                "as": "খলৈ ৰাস্তা বাহিৰতে থাকে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Site B satisfies both requirements in this scenario.",
+            "as": "এই উদাহৰণত খ ঠাই দুয়োটা চৰ্ত পূৰণ কৰে।"
+          },
+          "id": "ag06.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The choice also has the shortest road.",
+            "as": "বাছনি কৰা ঠাইখনৰ ৰাস্তাও আটাইতকৈ চুটি।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The trade-off is a longer route from the village.",
+            "as": "তাৰ বিনিময়ত গাঁৱৰ পৰা দীঘলীয়া ৰাস্তাৰে যাব লাগে।"
+          },
+          "id": "ag06.u3.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Build an evidence-based decision.",
+            "as": "প্ৰমাণৰ ভিত্তিত সিদ্ধান্ত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Read the requirements",
+              "as": "চৰ্ত পঢ়া"
+            },
+            {
+              "en": "Check both map layers",
+              "as": "দুয়োটা মানচিত্ৰ স্তৰ চোৱা"
+            },
+            {
+              "en": "State choice and trade-off",
+              "as": "বাছনি আৰু অসুবিধা কোৱা"
+            }
+          ],
+          "why": {
+            "en": "The trade-off is a longer route from the village.",
+            "as": "তাৰ বিনিময়ত গাঁৱৰ পৰা দীঘলীয়া ৰাস্তাৰে যাব লাগে।"
+          },
+          "id": "ag06.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which evidence could disqualify a site outside the zone?",
+            "as": "অঞ্চলৰ বাহিৰৰ ঠাই এখন কোনটো প্ৰমাণে বাদ দিব পাৰে?"
+          },
+          "options": [
+            {
+              "en": "It has a name",
+              "as": "তাৰ নাম আছে"
+            },
+            {
+              "en": "It has a road symbol",
+              "as": "ৰাস্তাৰ চিহ্ন আছে"
+            },
+            {
+              "en": "Its road enters the zone",
+              "as": "তাৰ ৰাস্তা অঞ্চলত সোমায়"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "It also requires the entire access road to stay outside that zone.",
+            "as": "তালৈ যোৱা সম্পূৰ্ণ ৰাস্তাটোও সেই অঞ্চলৰ বাহিৰত হ’ব লাগিব।"
+          },
+          "id": "ag06.u3.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission test",
+      "as": "অভিযানৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "mission": {
+      "objective": {
+        "en": "Where should the market go under the stated rules?",
+        "as": "দিয়া চৰ্ত অনুসৰি বজাৰ ক’ত হ’ব?"
+      },
+      "result": {
+        "en": "The trade-off is a longer route from the village.",
+        "as": "তাৰ বিনিময়ত গাঁৱৰ পৰা দীঘলীয়া ৰাস্তাৰে যাব লাগে।"
+      }
+    },
+    "steps": [
+      {
+        "type": "inline",
+        "before": {
+          "en": "On the new map, the option that satisfies both conditions is ",
+          "as": "নতুন মানচিত্ৰত দুয়োটা চৰ্ত পূৰণ কৰা বাছনিটো হ’ল "
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "site D",
+            "as": "D ঠাই"
+          },
+          {
+            "en": "site C",
+            "as": "C ঠাই"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "C and its access road both stay outside the zone.",
+          "as": "C আৰু তালৈ যোৱা ৰাস্তা দুয়োটাই অঞ্চলৰ বাহিৰত থাকে।"
+        },
+        "id": "ag06.test.01",
+        "img": "market-test.webp",
+        "imageLayout": "wide",
+        "imageKind": "diagram",
+        "imageCaption": {
+          "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+          "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়।"
+        },
+        "imageAlt": {
+          "en": "The short road runs from V into the dashed zone and ends at D. The longer road from V bends around the zone to C.",
+          "as": "Vৰ পৰা চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই Dত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে Cলৈ যায়।"
+        }
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Site C",
+              "as": "C ঠাই"
+            },
+            {
+              "en": "Outside the zone",
+              "as": "অঞ্চলৰ বাহিৰত"
+            }
+          ],
+          [
+            {
+              "en": "Site D",
+              "as": "D ঠাই"
+            },
+            {
+              "en": "Inside the zone",
+              "as": "অঞ্চলৰ ভিতৰত"
+            }
+          ]
+        ],
+        "why": {
+          "en": "The dashed boundary separates the sites.",
+          "as": "ভঙা সীমাৰেখাই ঠাই দুটা পৃথক কৰে।"
+        },
+        "id": "ag06.test.02",
+        "img": "market-test.webp",
+        "imageLayout": "wide",
+        "imageKind": "diagram",
+        "imageCaption": {
+          "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+          "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়।"
+        },
+        "imageAlt": {
+          "en": "The short road runs from V into the dashed zone and ends at D. The longer road from V bends around the zone to C.",
+          "as": "Vৰ পৰা চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই Dত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে Cলৈ যায়।"
+        }
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "The road to D enters the zone.",
+          "as": "Dলৈ যোৱা ৰাস্তা অঞ্চলৰ ভিতৰত সোমায়।"
+        },
+        "answer": true,
+        "why": {
+          "en": "The road crosses the dashed boundary.",
+          "as": "ৰাস্তাই ভঙা সীমাৰেখা পাৰ হয়।"
+        },
+        "id": "ag06.test.03",
+        "img": "market-test.webp",
+        "imageLayout": "wide",
+        "imageKind": "diagram",
+        "imageCaption": {
+          "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+          "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়।"
+        },
+        "imageAlt": {
+          "en": "The short road runs from V into the dashed zone and ends at D. The longer road from V bends around the zone to C.",
+          "as": "Vৰ পৰা চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই Dত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে Cলৈ যায়।"
+        }
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is a drawback of choosing C on the new map?",
+          "as": "নতুন মানচিত্ৰত C বাছিলে কি অসুবিধা?"
+        },
+        "options": [
+          {
+            "en": "There is no road",
+            "as": "ৰাস্তা নাই"
+          },
+          {
+            "en": "The road is longer",
+            "as": "ৰাস্তা দীঘল"
+          },
+          {
+            "en": "The site floods in this scenario",
+            "as": "এই উদাহৰণত ঠাইখন পানীত ডুবে"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The route to C goes around the zone.",
+          "as": "Cলৈ ৰাস্তাই অঞ্চলটো ঘূৰি যায়।"
+        },
+        "id": "ag06.test.04",
+        "img": "market-test.webp",
+        "imageLayout": "wide",
+        "imageKind": "diagram",
+        "imageCaption": {
+          "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+          "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়।"
+        },
+        "imageAlt": {
+          "en": "The short road runs from V into the dashed zone and ends at D. The longer road from V bends around the zone to C.",
+          "as": "Vৰ পৰা চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই Dত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে Cলৈ যায়।"
+        }
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "The map alone guarantees the selected site will never flood.",
+          "as": "কেৱল এই মানচিত্ৰই বাছনি কৰা ঠাইত কেতিয়াও বান নহ’ব বুলি নিশ্চিত কৰে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "A frequency class gives historical evidence for comparison.",
+          "as": "পুনৰাবৃত্তিৰ শ্ৰেণীয়ে তুলনাৰ বাবে অতীতৰ প্ৰমাণ দিয়ে।"
+        },
+        "id": "ag06.test.05",
+        "img": "market-test.webp",
+        "imageLayout": "wide",
+        "imageKind": "diagram",
+        "imageCaption": {
+          "en": "V is the village. Solid dark lines are roads. The dashed blue outline marks the observed inundation zone.",
+          "as": "V গাঁও। গাঢ় পূৰ্ণ ৰেখা ৰাস্তা। ভঙা নীলা সীমাই পানী উঠা অঞ্চল দেখুৱায়।"
+        },
+        "imageAlt": {
+          "en": "The short road runs from V into the dashed zone and ends at D. The longer road from V bends around the zone to C.",
+          "as": "Vৰ পৰা চুটি ৰাস্তাটো ভঙা সীমাৰ ভিতৰত সোমাই Dত শেষ হয়। দীঘল ৰাস্তাটো সীমাৰ বাহিৰেৰে Cলৈ যায়।"
+        }
+      }
+    ]
+  }
+}
