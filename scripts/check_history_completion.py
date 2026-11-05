@@ -30,7 +30,7 @@ assert not issues,'\n'.join(issues)
 assert core==93 and units==382,(core,units)
 assert questions>=2500,questions
 cat=read(ROOT/'content/catalog.json');subject=next(s for s in cat['subjects'] if s['id']=='assam-history');assert subject['courses']==[{'course':'assam-history'}]
-r=read(ROOT/'content/history-reference.json');assert set(r['lessons'])=={lid for lid,l in ls.items() if l.get('course')!='indian-constitution'}
+r=read(ROOT/'content/history-reference.json');assert set(r['lessons'])=={lid for lid,l in ls.items() if l.get('course','ahom-kings') in ('assam-history','ahom-kings')}
 for event in r['events']:assert event['lesson']in ls
 for item in r['entities']:assert item['id']in entities and all(lid in ls for lid in item['lessons'])
 # Existing saved references remain present,including story ids moved into extra guide context.

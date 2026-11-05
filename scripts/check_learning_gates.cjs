@@ -6,7 +6,7 @@ const finish=src.slice(src.indexOf('function finishUnit()'),src.indexOf('/* ----
 function state(mode='lesson',testout=false){
  const nodes=new Map(),saved={};const node=()=>({style:{setProperty(k,v){this[k]=v}},classList:{add(){},remove(){}},focus(){}});
  const s={id:'teaching.question',type:'tf',s:{en:'A fact',as:'তথ্য'},why:{en:'Reason',as:'কাৰণ'}};
- const c={mode,VIRTUAL:mode!=='lesson',P:{done:{}},L:{id:'sample',test:{id:'test',title:{en:'Test',as:'পৰীক্ষা'},learned:[]},era:{id:'era'},eraUnits:{sample:['u1','test']}},NEXT:null,ALL:[],G:{xp:0,streak:{n:0},checkpoints:{}},
+ const c={mode,VIRTUAL:mode!=='lesson',P:{done:{}},L:{id:'sample',word:{en:'section',as:'খণ্ড'},test:{id:'test',title:{en:'Test',as:'পৰীক্ষা'},learned:[]},era:{id:'era'},eraUnits:{sample:['u1','test']}},NEXT:null,ALL:[],G:{xp:0,streak:{n:0},checkpoints:{}},
  U:{unit:null,practice:false,testout,queue:[{s,ref:s.id}],pos:0,asked:0,ok:0,xp:0,mistakes:[],done:0,total:1,st:{},start:Date.now()},B:(en,as)=>({en,as}),T:x=>typeof x==='object'?x.en:String(x),N:String,asNum:String,TR:x=>x.en,
  params:{has:()=>false},step:()=>c.U.queue[c.U.pos],lessonOf:()=>c.L.id,bankOf:()=>c.bank,
  bank:[],SFX:{good(){},bad(){},done(){}},PRAISE:[{en:'Good',as:'ভাল'}],whoXP:()=>10,surprise:()=>'',answerHTML:()=>'',saveAll(){},refresh(){},showView(){},setTimeout(){},

@@ -49,6 +49,10 @@ Emphasis, never mixed: `<mark>` = the key fact (max 3 per card); `[[entity]]` = 
 
 `[[art-21a]]` opens an article's official heading. A `timeline` step with `"scale": "articles"` plays as an article line: anchors are plain article numbers and `items` hold the provisions, including lettered ones. A course entry's `reign` may be bilingual. A course with `"draft": true` needs no catalog place, stays off the home page and opens only by its direct link.
 
+## Indian History additions
+
+A lesson or story `map` may set `"base": "india"`; the default is `"assam"`. See the map authoring rules in [INDIAN-HISTORY-COURSE.md](INDIAN-HISTORY-COURSE.md).
+
 ## Learning loop (in `app/engine.js`)
 
 - A missed question in a unit or lesson test returns once at the end. Match does not repeat.

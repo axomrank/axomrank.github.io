@@ -172,7 +172,11 @@ async function render() {
     return { s: UNLOCK_ALL || !prev || doneTest(prev) ? "open" : "locked", id, done, steps };
   };
   const tabs = `<div class="tabs home-tabs" role="tablist">${TABS.map(([k, t]) => `<button class="tab ${UI.tab === k ? "on" : ""}" data-tab="${k}">${T(t)}</button>`).join("")}</div>`;
-  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S && S.id !== "assam-history" ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S && S.id !== "assam-history" ? T(S.title) : T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p></section>`;
+  const worksheet = {
+    "assam-geography": "assam-geography-atlas.html",
+    "geography-foundations": "geography-foundations-atlas.html",
+  }[course.id];
+  const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S && S.id !== "assam-history" ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S && S.id !== "assam-history" ? T(S.title) : T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p>${worksheet ? `<a class="back-hub" href="content/${worksheet}">${T(B("Opening and final atlas worksheet", "আৰম্ভণি আৰু শেষৰ মানচিত্ৰ অনুশীলন"))}</a>` : ""}</section>`;
   const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab, overview: lessonsTab }[UI.tab](status, byNo);
   $("#course").innerHTML = hero + tabs + (CID === "assam-history" ? `<a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places", "সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a>` : "") + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Sources accompany each lesson. Illustrations are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · প্ৰতিটো পাঠৰ লগত উৎস দিয়া আছে। চিত্ৰবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
   // sticky Continue: the next open lesson that is not finished
