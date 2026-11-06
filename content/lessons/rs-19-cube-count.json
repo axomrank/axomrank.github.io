@@ -1,0 +1,1740 @@
+{
+ "id": "rs-19-cube-count",
+ "course": "reasoning",
+ "no": 19,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Cubes and counting",
+  "as": "ঘনক আৰু গণনা"
+ },
+ "reign": {
+  "en": "Dice, nets, counting figures",
+  "as": "পাশা, জাল, চিত্ৰ গণনা"
+ },
+ "portrait": "reasoning/figures.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Opposite faces",
+    "as": "বিপৰীত পৃষ্ঠ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A cube has 6 faces and 3 opposite pairs.",
+     "as": "ঘনকৰ 6 পৃষ্ঠ, 3 বিপৰীত যোৰ।"
+    },
+    {
+     "en": "Opposite faces never touch.",
+     "as": "বিপৰীত পৃষ্ঠ লগ নালাগে।"
+    },
+    {
+     "en": "Two views sharing a face reveal a pair.",
+     "as": "একে পৃষ্ঠৰ দুটা দৃশ্যই যোৰ দেখুৱায়।"
+    },
+    {
+     "en": "On a standard die, opposites add to 7.",
+     "as": "সাধাৰণ পাশাত বিপৰীতৰ যোগফল 7।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs19.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Neighbours rule out",
+      "as": "কাষৰবোৰ বাদ"
+     },
+     "text": [
+      {
+       "en": "A face touches four others. The one left over is opposite.",
+       "as": "এটা পৃষ্ঠই চাৰিটাক চুৱে। বাকীটো বিপৰীত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "List neighbours",
+        "as": "কাষৰ তালিকা"
+       },
+       {
+        "en": "Four found",
+        "as": "চাৰিটা পোৱা"
+       },
+       {
+        "en": "Fifth is opposite",
+        "as": "পঞ্চমটো বিপৰীত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "The seven rule",
+      "as": "সাতৰ নিয়ম"
+     },
+     "text": [
+      {
+       "en": "On a standard die: 1 and 6, 2 and 5, 3 and 4.",
+       "as": "সাধাৰণ পাশাত: 1, 6; 2, 5; 3, 4।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "1 + 6",
+        "as": "1 + 6"
+       },
+       {
+        "en": "2 + 5",
+        "as": "2 + 5"
+       },
+       {
+        "en": "3 + 4",
+        "as": "3 + 4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u1.q1",
+     "type": "explore",
+     "skill": "r-fdie",
+     "q": {
+      "en": "Fold this net into a cube. Tap the face opposite 1.",
+      "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 1 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+     },
+     "widget": {
+      "kind": "dicenet",
+      "net": [
+       [
+        null,
+        1,
+        null,
+        null
+       ],
+       [
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        null,
+        6,
+        null,
+        null
+       ]
+      ],
+      "mark": 1
+     },
+     "target": 6,
+     "answerText": {
+      "en": "6",
+      "as": "6"
+     },
+     "why": {
+      "en": "In a straight row, faces two apart are opposite.",
+      "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Fold this net into a cube. Tap the face opposite 1.",
+        "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 1 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "widget": {
+        "kind": "dicenet",
+        "net": [
+         [
+          null,
+          1,
+          null,
+          null
+         ],
+         [
+          2,
+          3,
+          4,
+          5
+         ],
+         [
+          null,
+          6,
+          null,
+          null
+         ]
+        ],
+        "mark": 1
+       },
+       "target": 6,
+       "answerText": {
+        "en": "6",
+        "as": "6"
+       },
+       "why": {
+        "en": "In a straight row, faces two apart are opposite.",
+        "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Fold this net into a cube. Tap the face opposite 2.",
+        "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 2 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "widget": {
+        "kind": "dicenet",
+        "net": [
+         [
+          null,
+          1,
+          null,
+          null
+         ],
+         [
+          2,
+          3,
+          4,
+          5
+         ],
+         [
+          null,
+          6,
+          null,
+          null
+         ]
+        ],
+        "mark": 2
+       },
+       "target": 4,
+       "answerText": {
+        "en": "4",
+        "as": "4"
+       },
+       "why": {
+        "en": "In a straight row, faces two apart are opposite.",
+        "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Fold this net into a cube. Tap the face opposite 3.",
+        "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 3 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "widget": {
+        "kind": "dicenet",
+        "net": [
+         [
+          null,
+          1,
+          null,
+          null
+         ],
+         [
+          2,
+          3,
+          4,
+          5
+         ],
+         [
+          null,
+          6,
+          null,
+          null
+         ]
+        ],
+        "mark": 3
+       },
+       "target": 5,
+       "answerText": {
+        "en": "5",
+        "as": "5"
+       },
+       "why": {
+        "en": "In a straight row, faces two apart are opposite.",
+        "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs19.u1.q2",
+     "type": "solve",
+     "skill": "r-fdie",
+     "q": {
+      "en": "On a standard die, what is opposite 2?",
+      "as": "সাধাৰণ পাশাত 2 ৰ বিপৰীত কি?"
+     },
+     "answer": "5",
+     "why": {
+      "en": "Opposites add to 7.",
+      "as": "বিপৰীতৰ যোগফল 7।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "On a standard die, what is opposite 2?",
+        "as": "সাধাৰণ পাশাত 2 ৰ বিপৰীত কি?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Opposites add to 7.",
+        "as": "বিপৰীতৰ যোগফল 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "On a standard die, what is opposite 3?",
+        "as": "সাধাৰণ পাশাত 3 ৰ বিপৰীত কি?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Opposites add to 7.",
+        "as": "বিপৰীতৰ যোগফল 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "On a standard die, what is opposite 5?",
+        "as": "সাধাৰণ পাশাত 5 ৰ বিপৰীত কি?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Opposites add to 7.",
+        "as": "বিপৰীতৰ যোগফল 7।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u1.q3",
+     "type": "tf",
+     "skill": "r-fdie",
+     "s": {
+      "en": "Two faces that touch can be opposite.",
+      "as": "লগ লগা দুটা পৃষ্ঠ বিপৰীত হ'ব পাৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Opposite faces never touch.",
+      "as": "বিপৰীত পৃষ্ঠ লগ নালাগে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-adjacent",
+       "why": {
+        "en": "Touching squares in a net become neighbours, not opposites.",
+        "as": "জালত লগ লগা বৰ্গ কাষৰীয়া হয়, বিপৰীত নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u1.q4",
+     "type": "match",
+     "skill": "r-fdie",
+     "q": {
+      "en": "Count on a cube",
+      "as": "ঘনকত গণা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Faces",
+        "as": "পৃষ্ঠ"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      [
+       {
+        "en": "Edges",
+        "as": "দাঁতি"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       }
+      ],
+      [
+       {
+        "en": "Corners",
+        "as": "চুক"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Worth knowing.",
+      "as": "জানিব লগীয়া।"
+     }
+    },
+    {
+     "id": "rs19.u1.q5",
+     "type": "order",
+     "skill": "r-fdie",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Pick a face",
+       "as": "পৃষ্ঠ বাছা"
+      },
+      {
+       "en": "List touching faces",
+       "as": "লগ লগা পৃষ্ঠ"
+      },
+      {
+       "en": "Cross them out",
+       "as": "কাটা"
+      },
+      {
+       "en": "Read what remains",
+       "as": "বাকী পঢ়া"
+      }
+     ],
+     "why": {
+      "en": "Elimination.",
+      "as": "বাদ দিয়া।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Nets of a cube",
+    "as": "ঘনকৰ জাল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A net folds into a cube.",
+     "as": "জাল ভাঁজ হৈ ঘনক হয়।"
+    },
+    {
+     "en": "In a row, skip one to find opposites.",
+     "as": "শাৰীত এটা এৰি বিপৰীত।"
+    },
+    {
+     "en": "Top and bottom of a cross are opposite.",
+     "as": "ক্ৰছৰ ওপৰ-তল বিপৰীত।"
+    },
+    {
+     "en": "Six squares are needed.",
+     "as": "ছটা বৰ্গ লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs19.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Skip one, find its opposite",
+      "as": "এটা এৰি বিপৰীত"
+     },
+     "text": [
+      {
+       "en": "In a straight row, every second square lands opposite. Try it on this net.",
+       "as": "পোন শাৰীত প্ৰতি দ্বিতীয় বৰ্গ বিপৰীত। এই জালত চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "dicenet",
+      "net": [
+       [
+        null,
+        1,
+        null,
+        null
+       ],
+       [
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        null,
+        6,
+        null,
+        null
+       ]
+      ],
+      "mark": 2
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap the face opposite 2.",
+        "as": "2 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "goal": {
+        "pick": 4
+       },
+       "then": {
+        "en": "2 and 4 have one square between them.",
+        "as": "2 আৰু 4 ৰ মাজত এটা বৰ্গ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Top and bottom",
+      "as": "ওপৰ আৰু তল"
+     },
+     "text": [
+      {
+       "en": "The squares above and below the row also face each other.",
+       "as": "শাৰীৰ ওপৰ আৰু তলৰ বৰ্গও মুখামুখি।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Above",
+        "as": "ওপৰ"
+       },
+       {
+        "en": "Row",
+        "as": "শাৰী"
+       },
+       {
+        "en": "Below",
+        "as": "তল"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u2.q1",
+     "type": "explore",
+     "skill": "r-fnet",
+     "q": {
+      "en": "Fold this net into a cube. Tap the face opposite 4.",
+      "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 4 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+     },
+     "widget": {
+      "kind": "dicenet",
+      "net": [
+       [
+        null,
+        1,
+        null,
+        null
+       ],
+       [
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        null,
+        6,
+        null,
+        null
+       ]
+      ],
+      "mark": 4
+     },
+     "target": 2,
+     "answerText": {
+      "en": "2",
+      "as": "2"
+     },
+     "why": {
+      "en": "In a straight row, faces two apart are opposite.",
+      "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Fold this net into a cube. Tap the face opposite 4.",
+        "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 4 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "widget": {
+        "kind": "dicenet",
+        "net": [
+         [
+          null,
+          1,
+          null,
+          null
+         ],
+         [
+          2,
+          3,
+          4,
+          5
+         ],
+         [
+          null,
+          6,
+          null,
+          null
+         ]
+        ],
+        "mark": 4
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2",
+        "as": "2"
+       },
+       "why": {
+        "en": "In a straight row, faces two apart are opposite.",
+        "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Fold this net into a cube. Tap the face opposite 5.",
+        "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 5 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "widget": {
+        "kind": "dicenet",
+        "net": [
+         [
+          null,
+          1,
+          null,
+          null
+         ],
+         [
+          2,
+          3,
+          4,
+          5
+         ],
+         [
+          null,
+          6,
+          null,
+          null
+         ]
+        ],
+        "mark": 5
+       },
+       "target": 3,
+       "answerText": {
+        "en": "3",
+        "as": "3"
+       },
+       "why": {
+        "en": "In a straight row, faces two apart are opposite.",
+        "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Fold this net into a cube. Tap the face opposite 6.",
+        "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 6 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+       },
+       "widget": {
+        "kind": "dicenet",
+        "net": [
+         [
+          null,
+          1,
+          null,
+          null
+         ],
+         [
+          2,
+          3,
+          4,
+          5
+         ],
+         [
+          null,
+          6,
+          null,
+          null
+         ]
+        ],
+        "mark": 6
+       },
+       "target": 1,
+       "answerText": {
+        "en": "1",
+        "as": "1"
+       },
+       "why": {
+        "en": "In a straight row, faces two apart are opposite.",
+        "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs19.u2.q2",
+     "type": "tf",
+     "skill": "r-fnet",
+     "s": {
+      "en": "In a straight row of a net, neighbouring squares are opposite.",
+      "as": "জালৰ শাৰীত কাষৰ বৰ্গ বিপৰীত।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Skip one instead.",
+      "as": "এটা এৰা।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-adjacent",
+       "why": {
+        "en": "Touching squares in a net become neighbours, not opposites.",
+        "as": "জালত লগ লগা বৰ্গ কাষৰীয়া হয়, বিপৰীত নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u2.q3",
+     "type": "match",
+     "skill": "r-fnet",
+     "q": {
+      "en": "On the net above, match the opposites",
+      "as": "ওপৰৰ জালৰ বিপৰীত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 opposite",
+        "as": "1 opposite"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      [
+       {
+        "en": "2 opposite",
+        "as": "2 opposite"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ],
+      [
+       {
+        "en": "3 opposite",
+        "as": "3 opposite"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Skip one in the row.",
+      "as": "শাৰীত এটা এৰা।"
+     }
+    },
+    {
+     "id": "rs19.u2.q4",
+     "type": "solve",
+     "skill": "r-fnet",
+     "q": {
+      "en": "How many squares does a cube net have?",
+      "as": "ঘনকৰ জালত কিমান বৰ্গ?"
+     },
+     "answer": "6",
+     "why": {
+      "en": "One per face.",
+      "as": "প্ৰতিটো পৃষ্ঠৰ এটা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many squares does a cube net have?",
+        "as": "ঘনকৰ জালত কিমান বৰ্গ?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "One per face.",
+        "as": "প্ৰতিটো পৃষ্ঠৰ এটা।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many squares does a cube net have?",
+        "as": "ঘনকৰ জালত কিমান বৰ্গ?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "One per face.",
+        "as": "প্ৰতিটো পৃষ্ঠৰ এটা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u2.q5",
+     "type": "order",
+     "skill": "r-fnet",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find a row",
+       "as": "শাৰী উলিওৱা"
+      },
+      {
+       "en": "Skip one",
+       "as": "এটা এৰা"
+      },
+      {
+       "en": "Pair the rest",
+       "as": "বাকী যোৰ"
+      },
+      {
+       "en": "Check all three",
+       "as": "তিনিওটা চোৱা"
+      }
+     ],
+     "why": {
+      "en": "Three pairs.",
+      "as": "তিনি যোৰ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Count hidden shapes",
+    "as": "লুকাই থকা আকৃতি গণা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Count by size, smallest first.",
+     "as": "আকাৰ অনুসৰি, সৰুৰ পৰা।"
+    },
+    {
+     "en": "A big shape may contain small ones.",
+     "as": "ডাঙৰ আকৃতিত সৰু থাকে।"
+    },
+    {
+     "en": "An n by n grid has 1² + ... + n² squares.",
+     "as": "n × n জালিত 1² + ... + n² বৰ্গ।"
+    },
+    {
+     "en": "Name corners to avoid doubles.",
+     "as": "চুকৰ নাম দিয়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs19.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Size by size",
+      "as": "আকাৰ অনুসৰি"
+     },
+     "text": [
+      {
+       "en": "A 2 by 2 grid has 4 small squares and 1 large one: 5 in all.",
+       "as": "2 × 2 জালিত 4 সৰু, 1 ডাঙৰ: মুঠ 5।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Small: 4",
+        "as": "সৰু: 4"
+       },
+       {
+        "en": "Large: 1",
+        "as": "ডাঙৰ: 1"
+       },
+       {
+        "en": "Total: 5",
+        "as": "মুঠ: 5"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Triangles in a triangle",
+      "as": "ত্ৰিভুজৰ ভিতৰত ত্ৰিভুজ"
+     },
+     "text": [
+      {
+       "en": "A line from the top to the base makes 3 triangles: two parts and the whole.",
+       "as": "ওপৰৰ পৰা ভূমিলৈ ৰেখাই 3 টা ত্ৰিভুজ বনায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Left",
+        "as": "বাওঁ"
+       },
+       {
+        "en": "Right",
+        "as": "সোঁ"
+       },
+       {
+        "en": "Whole",
+        "as": "গোটেই"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u3.q1",
+     "type": "solve",
+     "skill": "r-fcount",
+     "q": {
+      "en": "How many squares are in a 2 by 2 grid?",
+      "as": "2 × 2 জালিত কিমান বৰ্গ?"
+     },
+     "answer": "5",
+     "why": {
+      "en": "Add the squares of 1 to n.",
+      "as": "1 ৰ পৰা n লৈ বৰ্গ যোগ।"
+     },
+     "traps": [
+      {
+       "ans": "4",
+       "tag": "r-m-adjacent",
+       "why": {
+        "en": "That counts only the smallest squares.",
+        "as": "সেয়া কেৱল সৰু বৰ্গ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "How many squares are in a 2 by 2 grid?",
+        "as": "2 × 2 জালিত কিমান বৰ্গ?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Add the squares of 1 to n.",
+        "as": "1 ৰ পৰা n লৈ বৰ্গ যোগ।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "r-m-adjacent",
+         "why": {
+          "en": "That counts only the smallest squares.",
+          "as": "সেয়া কেৱল সৰু বৰ্গ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many squares are in a 3 by 3 grid?",
+        "as": "3 × 3 জালিত কিমান বৰ্গ?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "Add the squares of 1 to n.",
+        "as": "1 ৰ পৰা n লৈ বৰ্গ যোগ।"
+       },
+       "traps": [
+        {
+         "ans": "9",
+         "tag": "r-m-adjacent",
+         "why": {
+          "en": "That counts only the smallest squares.",
+          "as": "সেয়া কেৱল সৰু বৰ্গ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many squares are in a 4 by 4 grid?",
+        "as": "4 × 4 জালিত কিমান বৰ্গ?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "Add the squares of 1 to n.",
+        "as": "1 ৰ পৰা n লৈ বৰ্গ যোগ।"
+       },
+       "traps": [
+        {
+         "ans": "16",
+         "tag": "r-m-adjacent",
+         "why": {
+          "en": "That counts only the smallest squares.",
+          "as": "সেয়া কেৱল সৰু বৰ্গ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs19.u3.q2",
+     "type": "solve",
+     "skill": "r-fcount",
+     "q": {
+      "en": "1 lines from a triangle's top reach its base. How many triangles are there?",
+      "as": "ত্ৰিভুজৰ শীৰ্ষৰ পৰা ভূমিলৈ 1 ডাল ৰেখা। কিমান ত্ৰিভুজ?"
+     },
+     "answer": "3",
+     "why": {
+      "en": "Count parts in a row: 3.",
+      "as": "শাৰীৰ অংশ গণা: 3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "1 lines from a triangle's top reach its base. How many triangles are there?",
+        "as": "ত্ৰিভুজৰ শীৰ্ষৰ পৰা ভূমিলৈ 1 ডাল ৰেখা। কিমান ত্ৰিভুজ?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "Count parts in a row: 3.",
+        "as": "শাৰীৰ অংশ গণা: 3।"
+       }
+      },
+      {
+       "q": {
+        "en": "2 lines from a triangle's top reach its base. How many triangles are there?",
+        "as": "ত্ৰিভুজৰ শীৰ্ষৰ পৰা ভূমিলৈ 2 ডাল ৰেখা। কিমান ত্ৰিভুজ?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Count parts in a row: 6.",
+        "as": "শাৰীৰ অংশ গণা: 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "3 lines from a triangle's top reach its base. How many triangles are there?",
+        "as": "ত্ৰিভুজৰ শীৰ্ষৰ পৰা ভূমিলৈ 3 ডাল ৰেখা। কিমান ত্ৰিভুজ?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "Count parts in a row: 10.",
+        "as": "শাৰীৰ অংশ গণা: 10।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u3.q3",
+     "type": "tf",
+     "skill": "r-fcount",
+     "s": {
+      "en": "A 3 by 3 grid has 14 squares.",
+      "as": "3 × 3 জালিত 14 বৰ্গ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "9 + 4 + 1.",
+      "as": "9 + 4 + 1।"
+     }
+    },
+    {
+     "id": "rs19.u3.q4",
+     "type": "match",
+     "skill": "r-fcount",
+     "q": {
+      "en": "Match the grid to its squares",
+      "as": "জালিক বৰ্গৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 by 1",
+        "as": "1 by 1"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      [
+       {
+        "en": "2 by 2",
+        "as": "2 by 2"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "3 by 3",
+        "as": "3 by 3"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Sum of squares.",
+      "as": "বৰ্গৰ যোগফল।"
+     }
+    },
+    {
+     "id": "rs19.u3.q5",
+     "type": "order",
+     "skill": "r-fcount",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Smallest size",
+       "as": "সৰু আকাৰ"
+      },
+      {
+       "en": "Next size",
+       "as": "পিছৰ আকাৰ"
+      },
+      {
+       "en": "Largest",
+       "as": "ডাঙৰ"
+      },
+      {
+       "en": "Add",
+       "as": "যোগ"
+      }
+     ],
+     "why": {
+      "en": "Size by size.",
+      "as": "আকাৰ অনুসৰি।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Count the cubes",
+    "as": "ঘনক গণা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Count layer by layer.",
+     "as": "স্তৰে স্তৰে গণা।"
+    },
+    {
+     "en": "Hidden cubes hold up those above.",
+     "as": "লুকাই থকাবোৰে ওপৰৰবোৰ ধৰে।"
+    },
+    {
+     "en": "n by n by n has n³ cubes.",
+     "as": "n × n × n ত n³ ঘনক।"
+    },
+    {
+     "en": "Painted cubes depend on position.",
+     "as": "ৰং স্থানৰ ওপৰত নিৰ্ভৰ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs19.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Layers, not faces",
+      "as": "পৃষ্ঠ নহয়, স্তৰ"
+     },
+     "text": [
+      {
+       "en": "Count each layer from the bottom. Remember cubes you cannot see.",
+       "as": "তলৰ পৰা স্তৰ গণা। নেদেখা ঘনকো গণা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Bottom",
+        "as": "তল"
+       },
+       {
+        "en": "Middle",
+        "as": "মাজ"
+       },
+       {
+        "en": "Top",
+        "as": "ওপৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Painted cubes",
+      "as": "ৰং দিয়া ঘনক"
+     },
+     "text": [
+      {
+       "en": "In a painted 3 by 3 by 3: corners have 3 faces, edges 2, centres 1, and one has none.",
+       "as": "ৰং দিয়া 3 × 3 × 3 ত: চুকত 3, দাঁতিত 2, মাজত 1, এটাত নাই।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Corners: 8",
+        "as": "চুক: 8"
+       },
+       {
+        "en": "Edges: 12",
+        "as": "দাঁতি: 12"
+       },
+       {
+        "en": "Centres: 6",
+        "as": "মাজ: 6"
+       },
+       {
+        "en": "Inside: 1",
+        "as": "ভিতৰ: 1"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs19.u4.q1",
+     "type": "solve",
+     "skill": "r-fcubes",
+     "q": {
+      "en": "Layers from the bottom hold 9, 4, 1 cubes. How many cubes are there?",
+      "as": "তলৰ পৰা স্তৰত 9, 4, 1 ঘনক। মুঠ কিমান?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "Add the layers.",
+      "as": "স্তৰ যোগ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Layers from the bottom hold 9, 4, 1 cubes. How many cubes are there?",
+        "as": "তলৰ পৰা স্তৰত 9, 4, 1 ঘনক। মুঠ কিমান?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "Add the layers.",
+        "as": "স্তৰ যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Layers from the bottom hold 16, 9, 4 cubes. How many cubes are there?",
+        "as": "তলৰ পৰা স্তৰত 16, 9, 4 ঘনক। মুঠ কিমান?"
+       },
+       "answer": "29",
+       "why": {
+        "en": "Add the layers.",
+        "as": "স্তৰ যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Layers from the bottom hold 6, 3, 1 cubes. How many cubes are there?",
+        "as": "তলৰ পৰা স্তৰত 6, 3, 1 ঘনক। মুঠ কিমান?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "Add the layers.",
+        "as": "স্তৰ যোগ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u4.q2",
+     "type": "solve",
+     "skill": "r-fcubes",
+     "q": {
+      "en": "A 3 by 3 by 3 cube is painted and cut. How many small cubes have exactly 2 painted faces?",
+      "as": "3 × 3 × 3 ঘনক ৰং দি কটা হ'ল। ঠিক 2 পৃষ্ঠ ৰং থকা সৰু ঘনক কিমান?"
+     },
+     "answer": "12",
+     "why": {
+      "en": "Edges: 12 × (n − 2).",
+      "as": "দাঁতি: 12 × (n − 2)।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A 3 by 3 by 3 cube is painted and cut. How many small cubes have exactly 2 painted faces?",
+        "as": "3 × 3 × 3 ঘনক ৰং দি কটা হ'ল। ঠিক 2 পৃষ্ঠ ৰং থকা সৰু ঘনক কিমান?"
+       },
+       "answer": "12",
+       "why": {
+        "en": "Edges: 12 × (n − 2).",
+        "as": "দাঁতি: 12 × (n − 2)।"
+       }
+      },
+      {
+       "q": {
+        "en": "A 4 by 4 by 4 cube is painted and cut. How many small cubes have exactly 2 painted faces?",
+        "as": "4 × 4 × 4 ঘনক ৰং দি কটা হ'ল। ঠিক 2 পৃষ্ঠ ৰং থকা সৰু ঘনক কিমান?"
+       },
+       "answer": "24",
+       "why": {
+        "en": "Edges: 12 × (n − 2).",
+        "as": "দাঁতি: 12 × (n − 2)।"
+       }
+      },
+      {
+       "q": {
+        "en": "A 5 by 5 by 5 cube is painted and cut. How many small cubes have exactly 2 painted faces?",
+        "as": "5 × 5 × 5 ঘনক ৰং দি কটা হ'ল। ঠিক 2 পৃষ্ঠ ৰং থকা সৰু ঘনক কিমান?"
+       },
+       "answer": "36",
+       "why": {
+        "en": "Edges: 12 × (n − 2).",
+        "as": "দাঁতি: 12 × (n − 2)।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs19.u4.q3",
+     "type": "tf",
+     "skill": "r-fcubes",
+     "s": {
+      "en": "A 3 by 3 by 3 cube has 27 small cubes.",
+      "as": "3 × 3 × 3 ত 27 সৰু ঘনক।"
+     },
+     "answer": true,
+     "why": {
+      "en": "3³ = 27.",
+      "as": "3³ = 27।"
+     }
+    },
+    {
+     "id": "rs19.u4.q4",
+     "type": "match",
+     "skill": "r-fcubes",
+     "q": {
+      "en": "Painted 3 by 3 by 3: match",
+      "as": "ৰং দিয়া 3 × 3 × 3: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "3 faces painted",
+        "as": "3 পৃষ্ঠ"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      [
+       {
+        "en": "2 faces painted",
+        "as": "2 পৃষ্ঠ"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       }
+      ],
+      [
+       {
+        "en": "1 face painted",
+        "as": "1 পৃষ্ঠ"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Corners, edges, centres.",
+      "as": "চুক, দাঁতি, মাজ।"
+     }
+    },
+    {
+     "id": "rs19.u4.q5",
+     "type": "order",
+     "skill": "r-fcubes",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the bottom",
+       "as": "তল"
+      },
+      {
+       "en": "Count that layer",
+       "as": "স্তৰ গণা"
+      },
+      {
+       "en": "Move up",
+       "as": "ওপৰলৈ"
+      },
+      {
+       "en": "Add the layers",
+       "as": "স্তৰ যোগ"
+      }
+     ],
+     "why": {
+      "en": "Bottom up.",
+      "as": "তলৰ পৰা ওপৰ।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Cubes and counting test",
+   "as": "ঘনক আৰু গণনাৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs19.t.q1",
+    "type": "explore",
+    "skill": "r-fnet",
+    "q": {
+     "en": "Fold this net into a cube. Tap the face opposite 1.",
+     "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 1 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+    },
+    "widget": {
+     "kind": "dicenet",
+     "net": [
+      [
+       null,
+       1,
+       null,
+       null
+      ],
+      [
+       2,
+       3,
+       4,
+       5
+      ],
+      [
+       null,
+       6,
+       null,
+       null
+      ]
+     ],
+     "mark": 1
+    },
+    "target": 6,
+    "answerText": {
+     "en": "6",
+     "as": "6"
+    },
+    "why": {
+     "en": "In a straight row, faces two apart are opposite.",
+     "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "Fold this net into a cube. Tap the face opposite 1.",
+       "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 1 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+      },
+      "widget": {
+       "kind": "dicenet",
+       "net": [
+        [
+         null,
+         1,
+         null,
+         null
+        ],
+        [
+         2,
+         3,
+         4,
+         5
+        ],
+        [
+         null,
+         6,
+         null,
+         null
+        ]
+       ],
+       "mark": 1
+      },
+      "target": 6,
+      "answerText": {
+       "en": "6",
+       "as": "6"
+      },
+      "why": {
+       "en": "In a straight row, faces two apart are opposite.",
+       "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "Fold this net into a cube. Tap the face opposite 3.",
+       "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 3 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+      },
+      "widget": {
+       "kind": "dicenet",
+       "net": [
+        [
+         null,
+         1,
+         null,
+         null
+        ],
+        [
+         2,
+         3,
+         4,
+         5
+        ],
+        [
+         null,
+         6,
+         null,
+         null
+        ]
+       ],
+       "mark": 3
+      },
+      "target": 5,
+      "answerText": {
+       "en": "5",
+       "as": "5"
+      },
+      "why": {
+       "en": "In a straight row, faces two apart are opposite.",
+       "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs19.t.q2",
+    "type": "solve",
+    "skill": "r-fdie",
+    "q": {
+     "en": "On a standard die, what is opposite 1?",
+     "as": "সাধাৰণ পাশাত 1 ৰ বিপৰীত কি?"
+    },
+    "answer": "6",
+    "why": {
+     "en": "Add to 7.",
+     "as": "7 হ'ব লাগে।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "On a standard die, what is opposite 1?",
+       "as": "সাধাৰণ পাশাত 1 ৰ বিপৰীত কি?"
+      },
+      "answer": "6",
+      "why": {
+       "en": "Add to 7.",
+       "as": "7 হ'ব লাগে।"
+      }
+     },
+     {
+      "q": {
+       "en": "On a standard die, what is opposite 4?",
+       "as": "সাধাৰণ পাশাত 4 ৰ বিপৰীত কি?"
+      },
+      "answer": "3",
+      "why": {
+       "en": "Add to 7.",
+       "as": "7 হ'ব লাগে।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs19.t.q3",
+    "type": "solve",
+    "skill": "r-fcount",
+    "q": {
+     "en": "Squares in a 3 by 3 grid?",
+     "as": "3 × 3 জালিত বৰ্গ?"
+    },
+    "answer": "14",
+    "why": {
+     "en": "Sum of squares.",
+     "as": "বৰ্গৰ যোগফল।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Squares in a 3 by 3 grid?",
+       "as": "3 × 3 জালিত বৰ্গ?"
+      },
+      "answer": "14",
+      "why": {
+       "en": "Sum of squares.",
+       "as": "বৰ্গৰ যোগফল।"
+      }
+     },
+     {
+      "q": {
+       "en": "Squares in a 5 by 5 grid?",
+       "as": "5 × 5 জালিত বৰ্গ?"
+      },
+      "answer": "55",
+      "why": {
+       "en": "Sum of squares.",
+       "as": "বৰ্গৰ যোগফল।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs19.t.q4",
+    "type": "solve",
+    "skill": "r-fcubes",
+    "q": {
+     "en": "How many small cubes in 4 by 4 by 4?",
+     "as": "4 × 4 × 4 ত কিমান সৰু ঘনক?"
+    },
+    "answer": "64",
+    "why": {
+     "en": "n³.",
+     "as": "n³।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "How many small cubes in 4 by 4 by 4?",
+       "as": "4 × 4 × 4 ত কিমান সৰু ঘনক?"
+      },
+      "answer": "64",
+      "why": {
+       "en": "n³.",
+       "as": "n³।"
+      }
+     },
+     {
+      "q": {
+       "en": "How many small cubes in 5 by 5 by 5?",
+       "as": "5 × 5 × 5 ত কিমান সৰু ঘনক?"
+      },
+      "answer": "125",
+      "why": {
+       "en": "n³.",
+       "as": "n³।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs19.t.q5",
+    "type": "tf",
+    "skill": "r-fdie",
+    "s": {
+     "en": "Touching faces can never be opposite.",
+     "as": "লগ লগা পৃষ্ঠ বিপৰীত নহয়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Opposites never touch.",
+     "as": "বিপৰীত লগ নালাগে।"
+    }
+   },
+   {
+    "id": "rs19.t.q6",
+    "type": "tf",
+    "skill": "r-fcubes",
+    "s": {
+     "en": "A painted 3 by 3 by 3 has one unpainted cube.",
+     "as": "ৰং দিয়া 3 × 3 × 3 ত এটা ৰং নোহোৱা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "The very centre.",
+     "as": "ঠিক মাজৰটো।"
+    }
+   }
+  ]
+ }
+}

@@ -16,7 +16,7 @@ errors = []
 skills_file = json.loads((ROOT / "content/skills/reasoning.json").read_text(encoding="utf-8"))
 SKILLS = {s["id"]: s for s in skills_file["skills"]}
 TAGS = skills_file["misconceptions"]
-GOALS = {"shift": {"k"}, "walk": {"x", "y", "f"}, "venn": {"sel"}, "alpha": {"pick"}, "gaps": {"opened", "next"}, "tree": {"gen"}, "queue": {"pos"}, "seats": {"code"}, "oddday": {"day"}, "hands": {"min"}}
+GOALS = {"shift": {"k"}, "walk": {"x", "y", "f"}, "venn": {"sel"}, "alpha": {"pick"}, "gaps": {"opened", "next"}, "tree": {"gen"}, "queue": {"pos"}, "seats": {"code"}, "oddday": {"day"}, "hands": {"min"}, "figpick": {"pick"}, "dicenet": {"pick"}, "numgrid": {"val"}, "bars": {"pick"}}
 FACES = ["north", "east", "south", "west"]
 rechecked = 0
 
@@ -134,6 +134,12 @@ def check_version(s, where):
             errors.append(f"{where}: the walker starts on the answer")
         if w["kind"] == "walk" and w.get("ask") == "place" and s["target"] == 5050:
             errors.append(f"{where}: the route ends at the start")
+        if w["kind"] == "figpick":
+            if not 0 <= s["target"] < len(w["options"]):
+                errors.append(f"{where}: no such figure")
+            faces = [json.dumps(o) for o in w["options"]]
+            if len(set(faces)) != len(faces):
+                errors.append(f"{where}: two figure options are identical")
         if w["kind"] == "setpick" and not 0 <= s["target"] < len(w["options"]):
             errors.append(f"{where}: no such diagram")
         if any(x["val"] == s["target"] for x in s.get("traps", [])):

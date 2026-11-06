@@ -1,0 +1,2132 @@
+{
+ "id": "rs-20-number-figures",
+ "course": "reasoning",
+ "no": 20,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Numbers in figures",
+  "as": "চিত্ৰত সংখ্যা"
+ },
+ "reign": {
+  "en": "Rows, columns, magic squares",
+  "as": "শাৰী, স্তম্ভ, যাদুকৰী বৰ্গ"
+ },
+ "portrait": "reasoning/figures.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Read across",
+    "as": "শাৰীত পঢ়া"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Try + and × first.",
+     "as": "+ আৰু × আগতে।"
+    },
+    {
+     "en": "The rule must fit every row.",
+     "as": "নিয়ম সকলো শাৰীত মিলিব লাগে।"
+    },
+    {
+     "en": "Then use it on the gap.",
+     "as": "তাৰ পিছত খালী ঠাইত।"
+    },
+    {
+     "en": "Mixed rules double, then add.",
+     "as": "মিশ্ৰ নিয়ম দুগুণ কৰি যোগ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs20.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Test a full row first",
+      "as": "সম্পূৰ্ণ শাৰী আগতে"
+     },
+     "text": [
+      {
+       "en": "A complete row is a free example. Find the rule there, then use it on the gap.",
+       "as": "সম্পূৰ্ণ শাৰী বিনামূলীয়া উদাহৰণ। তাত নিয়ম উলিয়াই খালী ঠাইত দিয়া।"
+      }
+     ],
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        3,
+        4,
+        7
+       ],
+       [
+        5,
+        2,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Set the missing number to 7.",
+        "as": "নিৰুদ্দিষ্ট সংখ্যা 7 কৰা।"
+       },
+       "goal": {
+        "val": 7
+       },
+       "then": {
+        "en": "3 + 4 = 7 and 5 + 2 = 7.",
+        "as": "3 + 4 = 7, 5 + 2 = 7।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs20.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Order of guesses",
+      "as": "অনুমানৰ ক্ৰম"
+     },
+     "text": [
+      {
+       "en": "Try adding, then multiplying, then mixing.",
+       "as": "যোগ, পূৰণ, তাৰ পিছত মিশ্ৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "a + b",
+        "as": "a + b"
+       },
+       {
+        "en": "a × b",
+        "as": "a × b"
+       },
+       {
+        "en": "2a + b",
+        "as": "2a + b"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs20.u1.q1",
+     "type": "explore",
+     "skill": "r-nrow",
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        3,
+        5,
+        8
+       ],
+       [
+        6,
+        7,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 13,
+     "answerText": {
+      "en": "13",
+      "as": "13"
+     },
+     "why": {
+      "en": "The third is the sum of the first two.",
+      "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          3,
+          5,
+          8
+         ],
+         [
+          6,
+          7,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 13,
+       "answerText": {
+        "en": "13",
+        "as": "13"
+       },
+       "why": {
+        "en": "The third is the sum of the first two.",
+        "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          8,
+          4,
+          12
+         ],
+         [
+          9,
+          6,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 15,
+       "answerText": {
+        "en": "15",
+        "as": "15"
+       },
+       "why": {
+        "en": "The third is the sum of the first two.",
+        "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          2,
+          7,
+          9
+         ],
+         [
+          5,
+          8,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 13,
+       "answerText": {
+        "en": "13",
+        "as": "13"
+       },
+       "why": {
+        "en": "The third is the sum of the first two.",
+        "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs20.u1.q2",
+     "type": "explore",
+     "skill": "r-nrow",
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        3,
+        4,
+        12
+       ],
+       [
+        5,
+        6,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 30,
+     "answerText": {
+      "en": "30",
+      "as": "30"
+     },
+     "why": {
+      "en": "The third is the product.",
+      "as": "তৃতীয়টো পূৰণফল।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          3,
+          4,
+          12
+         ],
+         [
+          5,
+          6,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 30,
+       "answerText": {
+        "en": "30",
+        "as": "30"
+       },
+       "why": {
+        "en": "The third is the product.",
+        "as": "তৃতীয়টো পূৰণফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          2,
+          9,
+          18
+         ],
+         [
+          4,
+          7,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 28,
+       "answerText": {
+        "en": "28",
+        "as": "28"
+       },
+       "why": {
+        "en": "The third is the product.",
+        "as": "তৃতীয়টো পূৰণফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          6,
+          3,
+          18
+         ],
+         [
+          8,
+          2,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 16,
+       "answerText": {
+        "en": "16",
+        "as": "16"
+       },
+       "why": {
+        "en": "The third is the product.",
+        "as": "তৃতীয়টো পূৰণফল।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs20.u1.q3",
+     "type": "explore",
+     "skill": "r-nrow",
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        3,
+        2,
+        8
+       ],
+       [
+        5,
+        1,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 11,
+     "answerText": {
+      "en": "11",
+      "as": "11"
+     },
+     "why": {
+      "en": "Double the first, then add the second.",
+      "as": "প্ৰথমটো দুগুণ কৰি দ্বিতীয়টো যোগ।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          3,
+          2,
+          8
+         ],
+         [
+          5,
+          1,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 11,
+       "answerText": {
+        "en": "11",
+        "as": "11"
+       },
+       "why": {
+        "en": "Double the first, then add the second.",
+        "as": "প্ৰথমটো দুগুণ কৰি দ্বিতীয়টো যোগ।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          4,
+          1,
+          9
+         ],
+         [
+          6,
+          3,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 15,
+       "answerText": {
+        "en": "15",
+        "as": "15"
+       },
+       "why": {
+        "en": "Double the first, then add the second.",
+        "as": "প্ৰথমটো দুগুণ কৰি দ্বিতীয়টো যোগ।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          2,
+          5,
+          9
+         ],
+         [
+          7,
+          2,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 16,
+       "answerText": {
+        "en": "16",
+        "as": "16"
+       },
+       "why": {
+        "en": "Double the first, then add the second.",
+        "as": "প্ৰথমটো দুগুণ কৰি দ্বিতীয়টো যোগ।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs20.u1.q4",
+     "type": "tf",
+     "skill": "r-nrow",
+     "s": {
+      "en": "A rule that fits one row is enough.",
+      "as": "এটা শাৰীত মিলিলেই হ'ল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It must fit every row.",
+      "as": "সকলো শাৰীত লাগিব।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-onerow",
+       "why": {
+        "en": "Check the rule on every row.",
+        "as": "প্ৰতিটো শাৰীত নিয়ম চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs20.u1.q6",
+     "type": "order",
+     "skill": "r-nrow",
+     "q": {
+      "en": "Rules to try in order",
+      "as": "নিয়ম ক্ৰমে চোৱা"
+     },
+     "items": [
+      {
+       "en": "a + b",
+       "as": "a + b"
+      },
+      {
+       "en": "a × b",
+       "as": "a × b"
+      },
+      {
+       "en": "2a + b",
+       "as": "2a + b"
+      },
+      {
+       "en": "a² + b",
+       "as": "a² + b"
+      }
+     ],
+     "why": {
+      "en": "Simple rules first.",
+      "as": "সহজ নিয়ম আগতে।"
+     }
+    },
+    {
+     "id": "rs20.u1.q5",
+     "type": "match",
+     "skill": "r-nrow",
+     "q": {
+      "en": "Match the row to its rule",
+      "as": "শাৰীক নিয়মৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2, 3, 5",
+        "as": "2, 3, 5"
+       },
+       {
+        "en": "a + b",
+        "as": "a + b"
+       }
+      ],
+      [
+       {
+        "en": "2, 3, 6",
+        "as": "2, 3, 6"
+       },
+       {
+        "en": "a × b",
+        "as": "a × b"
+       }
+      ],
+      [
+       {
+        "en": "2, 3, 7",
+        "as": "2, 3, 7"
+       },
+       {
+        "en": "2a + b",
+        "as": "2a + b"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Test each.",
+      "as": "প্ৰতিটো চোৱা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Read down",
+    "as": "স্তম্ভত পঢ়া"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "If rows fail, try columns.",
+     "as": "শাৰীয়ে নহ'লে স্তম্ভ।"
+    },
+    {
+     "en": "A rule may go down.",
+     "as": "নিয়ম তললৈ হ'ব পাৰে।"
+    },
+    {
+     "en": "Compare whole columns.",
+     "as": "গোটেই স্তম্ভ তুলনা।"
+    },
+    {
+     "en": "Check the other column.",
+     "as": "আনটো স্তম্ভ চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs20.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Rows fail? Turn the grid",
+      "as": "শাৰী বিফল? জালি ঘূৰোৱা"
+     },
+     "text": [
+      {
+       "en": "Many grids run top to bottom. Test a full column.",
+       "as": "বহু জালি ওপৰৰ পৰা তললৈ। সম্পূৰ্ণ স্তম্ভ চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Row test",
+        "as": "শাৰী পৰীক্ষা"
+       },
+       {
+        "en": "Column test",
+        "as": "স্তম্ভ পৰীক্ষা"
+       },
+       {
+        "en": "Apply",
+        "as": "প্ৰয়োগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs20.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Both directions",
+      "as": "দুয়োফালে"
+     },
+     "text": [
+      {
+       "en": "Some grids work both ways. Any rule that fits all is fine.",
+       "as": "কিছুমান জালি দুয়োফালে। সকলোতে মিলিলে হ'ল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Across",
+        "as": "শাৰী"
+       },
+       {
+        "en": "Down",
+        "as": "স্তম্ভ"
+       },
+       {
+        "en": "Either",
+        "as": "যিকোনো"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs20.u2.q1",
+     "type": "explore",
+     "skill": "r-ncol",
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        7,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 11,
+     "answerText": {
+      "en": "11",
+      "as": "11"
+     },
+     "why": {
+      "en": "Each column adds down.",
+      "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          3,
+          5
+         ],
+         [
+          4,
+          6
+         ],
+         [
+          7,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 11,
+       "answerText": {
+        "en": "11",
+        "as": "11"
+       },
+       "why": {
+        "en": "Each column adds down.",
+        "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          7,
+          4
+         ],
+         [
+          2,
+          8
+         ],
+         [
+          9,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12",
+        "as": "12"
+       },
+       "why": {
+        "en": "Each column adds down.",
+        "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          6,
+          3
+         ],
+         [
+          5,
+          9
+         ],
+         [
+          11,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12",
+        "as": "12"
+       },
+       "why": {
+        "en": "Each column adds down.",
+        "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs20.u2.q2",
+     "type": "explore",
+     "skill": "r-ncol",
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        9,
+        6,
+        15
+       ],
+       [
+        4,
+        8,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 12,
+     "answerText": {
+      "en": "12",
+      "as": "12"
+     },
+     "why": {
+      "en": "The third is the sum of the first two.",
+      "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          9,
+          6,
+          15
+         ],
+         [
+          4,
+          8,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12",
+        "as": "12"
+       },
+       "why": {
+        "en": "The third is the sum of the first two.",
+        "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          1,
+          8,
+          9
+         ],
+         [
+          7,
+          7,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 14,
+       "answerText": {
+        "en": "14",
+        "as": "14"
+       },
+       "why": {
+        "en": "The third is the sum of the first two.",
+        "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs20.u2.q3",
+     "type": "tf",
+     "skill": "r-ncol",
+     "s": {
+      "en": "If rows give no rule, test the columns.",
+      "as": "শাৰীত নিয়ম নহ'লে স্তম্ভ চোৱা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Grids can run either way.",
+      "as": "জালি যিকোনো ফালে।"
+     }
+    },
+    {
+     "id": "rs20.u2.q4",
+     "type": "match",
+     "skill": "r-ncol",
+     "q": {
+      "en": "Match the column to the rule",
+      "as": "স্তম্ভক নিয়মৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2, 3, 5",
+        "as": "2, 3, 5"
+       },
+       {
+        "en": "Add",
+        "as": "যোগ"
+       }
+      ],
+      [
+       {
+        "en": "2, 3, 6",
+        "as": "2, 3, 6"
+       },
+       {
+        "en": "Multiply",
+        "as": "পূৰণ"
+       }
+      ],
+      [
+       {
+        "en": "5, 3, 2",
+        "as": "5, 3, 2"
+       },
+       {
+        "en": "Subtract",
+        "as": "বিয়োগ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Read down.",
+      "as": "তললৈ পঢ়া।"
+     }
+    },
+    {
+     "id": "rs20.u2.q5",
+     "type": "order",
+     "skill": "r-ncol",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Test rows",
+       "as": "শাৰী"
+      },
+      {
+       "en": "Test columns",
+       "as": "স্তম্ভ"
+      },
+      {
+       "en": "Confirm on another",
+       "as": "আনটোত নিশ্চিত"
+      },
+      {
+       "en": "Fill the gap",
+       "as": "খালী পূৰণ"
+      }
+     ],
+     "why": {
+      "en": "Confirm first.",
+      "as": "নিশ্চিত আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Around a centre",
+    "as": "কেন্দ্ৰৰ চাৰিওফালে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Outer numbers often build the centre.",
+     "as": "বাহিৰৰ সংখ্যাই কেন্দ্ৰ বনায়।"
+    },
+    {
+     "en": "Try the sum of opposite pairs.",
+     "as": "বিপৰীত যোৰৰ যোগফল চোৱা।"
+    },
+    {
+     "en": "Try sum or product of all.",
+     "as": "সকলোৰ যোগফল বা পূৰণফল।"
+    },
+    {
+     "en": "Test on a complete figure.",
+     "as": "সম্পূৰ্ণ চিত্ৰত চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs20.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Centre from corners",
+      "as": "চুকৰ পৰা কেন্দ্ৰ"
+     },
+     "text": [
+      {
+       "en": "If the corners add to the centre in one figure, expect it in the next.",
+       "as": "এটা চিত্ৰত চুকৰ যোগফল কেন্দ্ৰ হ'লে পিছৰটোতো।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "2 + 3 + 4 + 1",
+        "as": "2 + 3 + 4 + 1"
+       },
+       {
+        "en": "= 10",
+        "as": "= 10"
+       },
+       {
+        "en": "Centre 10",
+        "as": "কেন্দ্ৰ 10"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs20.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Pairs across",
+      "as": "সিপাৰৰ যোৰ"
+     },
+     "text": [
+      {
+       "en": "Sometimes opposite pairs multiply and add to the centre.",
+       "as": "কেতিয়াবা বিপৰীত যোৰ পূৰণ কৰি যোগ কৰিলে কেন্দ্ৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "2 × 3",
+        "as": "2 × 3"
+       },
+       {
+        "en": "4 × 1",
+        "as": "4 × 1"
+       },
+       {
+        "en": "6 + 4 = 10",
+        "as": "6 + 4 = 10"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs20.u3.q1",
+     "type": "solve",
+     "skill": "r-nsum",
+     "q": {
+      "en": "Corners add to the centre. The corners are 2, 3, 4 and 1. What is the centre?",
+      "as": "চুকৰ যোগফল কেন্দ্ৰ। চুক 2, 3, 4, 1। কেন্দ্ৰ কিমান?"
+     },
+     "answer": "10",
+     "why": {
+      "en": "Add all four.",
+      "as": "চাৰিওটা যোগ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Corners add to the centre. The corners are 2, 3, 4 and 1. What is the centre?",
+        "as": "চুকৰ যোগফল কেন্দ্ৰ। চুক 2, 3, 4, 1। কেন্দ্ৰ কিমান?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "Add all four.",
+        "as": "চাৰিওটা যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Corners add to the centre. The corners are 5, 6, 2 and 7. What is the centre?",
+        "as": "চুকৰ যোগফল কেন্দ্ৰ। চুক 5, 6, 2, 7। কেন্দ্ৰ কিমান?"
+       },
+       "answer": "20",
+       "why": {
+        "en": "Add all four.",
+        "as": "চাৰিওটা যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Corners add to the centre. The corners are 8, 1, 9 and 3. What is the centre?",
+        "as": "চুকৰ যোগফল কেন্দ্ৰ। চুক 8, 1, 9, 3। কেন্দ্ৰ কিমান?"
+       },
+       "answer": "21",
+       "why": {
+        "en": "Add all four.",
+        "as": "চাৰিওটা যোগ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs20.u3.q2",
+     "type": "solve",
+     "skill": "r-nsum",
+     "q": {
+      "en": "Centre = 2 × 3 + 4 × 1. What is the centre?",
+      "as": "কেন্দ্ৰ = 2 × 3 + 4 × 1। কেন্দ্ৰ কিমান?"
+     },
+     "answer": "10",
+     "why": {
+      "en": "Multiply pairs, then add.",
+      "as": "যোৰ পূৰণ কৰি যোগ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Centre = 2 × 3 + 4 × 1. What is the centre?",
+        "as": "কেন্দ্ৰ = 2 × 3 + 4 × 1। কেন্দ্ৰ কিমান?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "Multiply pairs, then add.",
+        "as": "যোৰ পূৰণ কৰি যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Centre = 5 × 2 + 3 × 3. What is the centre?",
+        "as": "কেন্দ্ৰ = 5 × 2 + 3 × 3। কেন্দ্ৰ কিমান?"
+       },
+       "answer": "19",
+       "why": {
+        "en": "Multiply pairs, then add.",
+        "as": "যোৰ পূৰণ কৰি যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Centre = 6 × 2 + 4 × 2. What is the centre?",
+        "as": "কেন্দ্ৰ = 6 × 2 + 4 × 2। কেন্দ্ৰ কিমান?"
+       },
+       "answer": "20",
+       "why": {
+        "en": "Multiply pairs, then add.",
+        "as": "যোৰ পূৰণ কৰি যোগ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs20.u3.q3",
+     "type": "tf",
+     "skill": "r-nsum",
+     "s": {
+      "en": "Test a rule on a complete figure first.",
+      "as": "সম্পূৰ্ণ চিত্ৰত নিয়ম আগতে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It is a free example.",
+      "as": "ই বিনামূলীয়া উদাহৰণ।"
+     }
+    },
+    {
+     "id": "rs20.u3.q4",
+     "type": "match",
+     "skill": "r-nsum",
+     "q": {
+      "en": "Corners 1, 2, 3, 4: match",
+      "as": "চুক 1, 2, 3, 4: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Sum",
+        "as": "যোগফল"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      [
+       {
+        "en": "Product",
+        "as": "পূৰণফল"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      [
+       {
+        "en": "Sum of squares",
+        "as": "বৰ্গৰ যোগফল"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Test each.",
+      "as": "প্ৰতিটো চোৱা।"
+     }
+    },
+    {
+     "id": "rs20.u3.q5",
+     "type": "order",
+     "skill": "r-nsum",
+     "q": {
+      "en": "Rules to try in order",
+      "as": "নিয়ম ক্ৰমে চোৱা"
+     },
+     "items": [
+      {
+       "en": "Sum of all",
+       "as": "সকলোৰ যোগফল"
+      },
+      {
+       "en": "Product of pairs",
+       "as": "যোৰৰ পূৰণফল"
+      },
+      {
+       "en": "Difference of pairs",
+       "as": "যোৰৰ পাৰ্থক্য"
+      },
+      {
+       "en": "Squares",
+       "as": "বৰ্গ"
+      }
+     ],
+     "why": {
+      "en": "Simple first.",
+      "as": "সহজ আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Magic squares",
+    "as": "যাদুকৰী বৰ্গ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Every row, column and diagonal has one sum.",
+     "as": "সকলো শাৰী, স্তম্ভ, কৰ্ণৰ যোগফল একে।"
+    },
+    {
+     "en": "1 to 9 gives a sum of 15.",
+     "as": "1 ৰ পৰা 9 ত 15।"
+    },
+    {
+     "en": "The centre is the middle number.",
+     "as": "কেন্দ্ৰত মাজৰ সংখ্যা।"
+    },
+    {
+     "en": "Find the sum from a full line.",
+     "as": "সম্পূৰ্ণ শাৰীৰ পৰা যোগফল।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs20.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "One sum everywhere",
+      "as": "সকলোতে একে যোগফল"
+     },
+     "text": [
+      {
+       "en": "In a magic square every line adds the same. Use a full line to fill the gap.",
+       "as": "যাদুকৰী বৰ্গত সকলো শাৰীৰ যোগফল একে। সম্পূৰ্ণ শাৰীৰে খালী পূৰণ কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        2,
+        7,
+        6
+       ],
+       [
+        9,
+        5,
+        1
+       ],
+       [
+        4,
+        3,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Set the gap to 8.",
+        "as": "খালী ঠাই 8 কৰা।"
+       },
+       "goal": {
+        "val": 8
+       },
+       "then": {
+        "en": "2 + 7 + 6 = 15, so 4 + 3 + 8 = 15.",
+        "as": "2 + 7 + 6 = 15, গতিকে 4 + 3 + 8 = 15।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs20.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "The centre rule",
+      "as": "কেন্দ্ৰৰ নিয়ম"
+     },
+     "text": [
+      {
+       "en": "With 1 to 9, the sum is 15 and the centre is 5.",
+       "as": "1 ৰ পৰা 9 ত যোগফল 15, কেন্দ্ৰ 5।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Total 45",
+        "as": "মুঠ 45"
+       },
+       {
+        "en": "÷ 3 = 15",
+        "as": "÷ 3 = 15"
+       },
+       {
+        "en": "Centre 5",
+        "as": "কেন্দ্ৰ 5"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs20.u4.q1",
+     "type": "explore",
+     "skill": "r-nmagic",
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        8,
+        1,
+        6
+       ],
+       [
+        3,
+        5,
+        7
+       ],
+       [
+        4,
+        9,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 2,
+     "answerText": {
+      "en": "2",
+      "as": "2"
+     },
+     "why": {
+      "en": "Use a full row for the sum.",
+      "as": "সম্পূৰ্ণ শাৰীৰ পৰা যোগফল।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          8,
+          1,
+          6
+         ],
+         [
+          3,
+          5,
+          7
+         ],
+         [
+          4,
+          9,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2",
+        "as": "2"
+       },
+       "why": {
+        "en": "Use a full row for the sum.",
+        "as": "সম্পূৰ্ণ শাৰীৰ পৰা যোগফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          9,
+          2,
+          7
+         ],
+         [
+          4,
+          6,
+          8
+         ],
+         [
+          5,
+          10,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 3,
+       "answerText": {
+        "en": "3",
+        "as": "3"
+       },
+       "why": {
+        "en": "Use a full row for the sum.",
+        "as": "সম্পূৰ্ণ শাৰীৰ পৰা যোগফল।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Find the rule across each row, then set the missing number.",
+        "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "numgrid",
+        "rows": [
+         [
+          10,
+          3,
+          8
+         ],
+         [
+          5,
+          7,
+          9
+         ],
+         [
+          6,
+          11,
+          null
+         ]
+        ],
+        "start": 0
+       },
+       "target": 4,
+       "answerText": {
+        "en": "4",
+        "as": "4"
+       },
+       "why": {
+        "en": "Use a full row for the sum.",
+        "as": "সম্পূৰ্ণ শাৰীৰ পৰা যোগফল।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs20.u4.q2",
+     "type": "solve",
+     "skill": "r-nmagic",
+     "q": {
+      "en": "A line of a magic square has 4 and 9, and the sum is 15. Find the third.",
+      "as": "যাদুকৰী বৰ্গৰ শাৰীত 4, 9, যোগফল 15। তৃতীয়টো?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "15 − 4 − 9.",
+      "as": "15 − 4 − 9।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A line of a magic square has 4 and 9, and the sum is 15. Find the third.",
+        "as": "যাদুকৰী বৰ্গৰ শাৰীত 4, 9, যোগফল 15। তৃতীয়টো?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "15 − 4 − 9.",
+        "as": "15 − 4 − 9।"
+       }
+      },
+      {
+       "q": {
+        "en": "A line of a magic square has 10 and 6, and the sum is 24. Find the third.",
+        "as": "যাদুকৰী বৰ্গৰ শাৰীত 10, 6, যোগফল 24। তৃতীয়টো?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "24 − 10 − 6.",
+        "as": "24 − 10 − 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "A line of a magic square has 7 and 11, and the sum is 30. Find the third.",
+        "as": "যাদুকৰী বৰ্গৰ শাৰীত 7, 11, যোগফল 30। তৃতীয়টো?"
+       },
+       "answer": "12",
+       "why": {
+        "en": "30 − 7 − 11.",
+        "as": "30 − 7 − 11।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs20.u4.q3",
+     "type": "tf",
+     "skill": "r-nmagic",
+     "s": {
+      "en": "A 1 to 9 magic square has 5 at its centre.",
+      "as": "1 ৰ পৰা 9 ৰ বৰ্গৰ কেন্দ্ৰত 5।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It is the middle number.",
+      "as": "ই মাজৰ সংখ্যা।"
+     }
+    },
+    {
+     "id": "rs20.u4.q4",
+     "type": "match",
+     "skill": "r-nmagic",
+     "q": {
+      "en": "For 1 to 9, match",
+      "as": "1 ৰ পৰা 9 ৰ বাবে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Sum of all",
+        "as": "সকলোৰ যোগফল"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       }
+      ],
+      [
+       {
+        "en": "Each line",
+        "as": "প্ৰতিটো শাৰী"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       }
+      ],
+      [
+       {
+        "en": "Centre",
+        "as": "কেন্দ্ৰ"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ]
+     ],
+     "why": {
+      "en": "45 ÷ 3 = 15.",
+      "as": "45 ÷ 3 = 15।"
+     }
+    },
+    {
+     "id": "rs20.u4.q5",
+     "type": "order",
+     "skill": "r-nmagic",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find a full line",
+       "as": "সম্পূৰ্ণ শাৰী"
+      },
+      {
+       "en": "Get the sum",
+       "as": "যোগফল"
+      },
+      {
+       "en": "Find a line with one gap",
+       "as": "এটা খালী শাৰী"
+      },
+      {
+       "en": "Subtract",
+       "as": "বিয়োগ"
+      }
+     ],
+     "why": {
+      "en": "Full line first.",
+      "as": "সম্পূৰ্ণ শাৰী আগতে।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Numbers in figures test",
+   "as": "চিত্ৰত সংখ্যাৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs20.t.q1",
+    "type": "explore",
+    "skill": "r-nrow",
+    "q": {
+     "en": "Find the rule across each row, then set the missing number.",
+     "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+    },
+    "widget": {
+     "kind": "numgrid",
+     "rows": [
+      [
+       4,
+       9,
+       13
+      ],
+      [
+       7,
+       5,
+       null
+      ]
+     ],
+     "start": 0
+    },
+    "target": 12,
+    "answerText": {
+     "en": "12",
+     "as": "12"
+    },
+    "why": {
+     "en": "The third is the sum of the first two.",
+     "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "Find the rule across each row, then set the missing number.",
+       "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+      },
+      "widget": {
+       "kind": "numgrid",
+       "rows": [
+        [
+         4,
+         9,
+         13
+        ],
+        [
+         7,
+         5,
+         null
+        ]
+       ],
+       "start": 0
+      },
+      "target": 12,
+      "answerText": {
+       "en": "12",
+       "as": "12"
+      },
+      "why": {
+       "en": "The third is the sum of the first two.",
+       "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "Find the rule across each row, then set the missing number.",
+       "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+      },
+      "widget": {
+       "kind": "numgrid",
+       "rows": [
+        [
+         6,
+         8,
+         14
+        ],
+        [
+         3,
+         9,
+         null
+        ]
+       ],
+       "start": 0
+      },
+      "target": 12,
+      "answerText": {
+       "en": "12",
+       "as": "12"
+      },
+      "why": {
+       "en": "The third is the sum of the first two.",
+       "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs20.t.q2",
+    "type": "explore",
+    "skill": "r-nrow",
+    "q": {
+     "en": "Find the rule across each row, then set the missing number.",
+     "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+    },
+    "widget": {
+     "kind": "numgrid",
+     "rows": [
+      [
+       4,
+       5,
+       20
+      ],
+      [
+       6,
+       3,
+       null
+      ]
+     ],
+     "start": 0
+    },
+    "target": 18,
+    "answerText": {
+     "en": "18",
+     "as": "18"
+    },
+    "why": {
+     "en": "The third is the product.",
+     "as": "তৃতীয়টো পূৰণফল।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "Find the rule across each row, then set the missing number.",
+       "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+      },
+      "widget": {
+       "kind": "numgrid",
+       "rows": [
+        [
+         4,
+         5,
+         20
+        ],
+        [
+         6,
+         3,
+         null
+        ]
+       ],
+       "start": 0
+      },
+      "target": 18,
+      "answerText": {
+       "en": "18",
+       "as": "18"
+      },
+      "why": {
+       "en": "The third is the product.",
+       "as": "তৃতীয়টো পূৰণফল।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "Find the rule across each row, then set the missing number.",
+       "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+      },
+      "widget": {
+       "kind": "numgrid",
+       "rows": [
+        [
+         7,
+         2,
+         14
+        ],
+        [
+         3,
+         8,
+         null
+        ]
+       ],
+       "start": 0
+      },
+      "target": 24,
+      "answerText": {
+       "en": "24",
+       "as": "24"
+      },
+      "why": {
+       "en": "The third is the product.",
+       "as": "তৃতীয়টো পূৰণফল।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs20.t.q3",
+    "type": "explore",
+    "skill": "r-ncol",
+    "q": {
+     "en": "Find the rule across each row, then set the missing number.",
+     "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+    },
+    "widget": {
+     "kind": "numgrid",
+     "rows": [
+      [
+       2,
+       6
+      ],
+      [
+       9,
+       4
+      ],
+      [
+       11,
+       null
+      ]
+     ],
+     "start": 0
+    },
+    "target": 10,
+    "answerText": {
+     "en": "10",
+     "as": "10"
+    },
+    "why": {
+     "en": "Each column adds down.",
+     "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "Find the rule across each row, then set the missing number.",
+       "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+      },
+      "widget": {
+       "kind": "numgrid",
+       "rows": [
+        [
+         2,
+         6
+        ],
+        [
+         9,
+         4
+        ],
+        [
+         11,
+         null
+        ]
+       ],
+       "start": 0
+      },
+      "target": 10,
+      "answerText": {
+       "en": "10",
+       "as": "10"
+      },
+      "why": {
+       "en": "Each column adds down.",
+       "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "Find the rule across each row, then set the missing number.",
+       "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+      },
+      "widget": {
+       "kind": "numgrid",
+       "rows": [
+        [
+         8,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         11,
+         null
+        ]
+       ],
+       "start": 0
+      },
+      "target": 12,
+      "answerText": {
+       "en": "12",
+       "as": "12"
+      },
+      "why": {
+       "en": "Each column adds down.",
+       "as": "প্ৰতিটো স্তম্ভ তললৈ যোগ।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs20.t.q4",
+    "type": "solve",
+    "skill": "r-nsum",
+    "q": {
+     "en": "Corners add to the centre: 3, 7, 2, 6. Centre?",
+     "as": "চুকৰ যোগফল কেন্দ্ৰ: 3, 7, 2, 6। কেন্দ্ৰ?"
+    },
+    "answer": "18",
+    "why": {
+     "en": "Add them.",
+     "as": "যোগ কৰা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Corners add to the centre: 3, 7, 2, 6. Centre?",
+       "as": "চুকৰ যোগফল কেন্দ্ৰ: 3, 7, 2, 6। কেন্দ্ৰ?"
+      },
+      "answer": "18",
+      "why": {
+       "en": "Add them.",
+       "as": "যোগ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "Corners add to the centre: 9, 4, 1, 5. Centre?",
+       "as": "চুকৰ যোগফল কেন্দ্ৰ: 9, 4, 1, 5। কেন্দ্ৰ?"
+      },
+      "answer": "19",
+      "why": {
+       "en": "Add them.",
+       "as": "যোগ কৰা।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs20.t.q5",
+    "type": "tf",
+    "skill": "r-nmagic",
+    "s": {
+     "en": "All lines of a magic square share one sum.",
+     "as": "যাদুকৰী বৰ্গৰ সকলো শাৰীৰ যোগফল একে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "That is its rule.",
+     "as": "সেয়াই নিয়ম।"
+    }
+   },
+   {
+    "id": "rs20.t.q6",
+    "type": "tf",
+    "skill": "r-nrow",
+    "s": {
+     "en": "A rule must fit every complete row.",
+     "as": "নিয়ম সকলো সম্পূৰ্ণ শাৰীত মিলিব লাগে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Check them all.",
+     "as": "সকলো চোৱা।"
+    }
+   }
+  ]
+ }
+}

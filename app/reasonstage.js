@@ -233,4 +233,55 @@ W.hands = (el, w, on) => {
   const set = (v) => { min = v; input.value = v; touched = true; draw(); on(); };
   return { value: () => min, touched: () => touched, freeze() { locked = true; input.disabled = true; }, show: set, state: () => ({ min }), demo(g) { set(g.min); } };
 };
+
+/* ---------- figures drawn from data: ["c",x,y,r,fill] ["r",x,y,w,h,fill] ["p",points,fill] ["l",x1,y1,x2,y2] ["t",x,y,text] in a 100-unit box ---------- */
+const shape = (s) => {
+  const stroke = `stroke="${INK}" stroke-width="2.5"`, fill = (f) => `fill="${f || "none"}"`;
+  if (s[0] === "c") return `<circle cx="${s[1]}" cy="${s[2]}" r="${s[3]}" ${fill(s[4])} ${stroke}/>`;
+  if (s[0] === "r") return `<rect x="${s[1]}" y="${s[2]}" width="${s[3]}" height="${s[4]}" ${fill(s[5])} ${stroke}/>`;
+  if (s[0] === "p") return `<polygon points="${s[1].map((q) => q.join(",")).join(" ")}" ${fill(s[2])} ${stroke}/>`;
+  if (s[0] === "l") return `<line x1="${s[1]}" y1="${s[2]}" x2="${s[3]}" y2="${s[4]}" ${stroke}/>`;
+  return `<text x="${s[1]}" y="${s[2]}" text-anchor="middle" font-size="${s[4] || 22}" font-weight="900" fill="${INK}">${s[3]}</text>`;
+};
+const figure = (f) => `<svg viewBox="0 0 100 100" aria-hidden="true">${f.map(shape).join("")}</svg>`;
+W.figpick = (el, w, on) => {
+  let pick = null, locked = false;
+  const stem = w.stem ? `<div class="fgs">${w.stem.map((f) => (f ? `<span>${figure(f)}</span>` : `<span class="q">?</span>`)).join("")}</div>` : "";
+  const draw = () => { el.innerHTML = `${stem}<div class="spk">${w.options.map((o, k) => `<button class="tile spk-o ${pick === k ? "sel" : ""}" data-fp="${k}" aria-label="Figure ${k + 1}">${figure(o)}</button>`).join("")}</div>`; };
+  el.addEventListener("click", (e) => { const b = e.target.closest("[data-fp]"); if (!b || locked) return; pick = +b.dataset.fp; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { pick = v; draw(); on(); };
+  return { value: () => pick, touched: () => pick != null, freeze() { locked = true; }, show: set, state: () => ({ pick }), demo(g) { set(g.pick); } };
+};
+
+/* ---------- dicenet: a cross-shaped net. Tap the face that lands opposite the marked one ---------- */
+W.dicenet = (el, w, on) => {
+  let pick = null, locked = false;
+  const draw = () => { el.innerHTML = `<div class="dnt">${w.net.map((r) => `<div>${r.map((v) => (v === null ? "<i></i>" : `<button class="tile ${v === w.mark ? "mk" : ""} ${pick === v ? "sel" : ""}" data-dn="${v}">${v}</button>`)).join("")}</div>`).join("")}</div>`; };
+  el.addEventListener("click", (e) => { const b = e.target.closest("[data-dn]"); if (!b || locked) return; pick = +b.dataset.dn; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { pick = v; draw(); on(); };
+  return { value: () => pick, touched: () => pick != null, freeze() { locked = true; }, show: set, state: () => ({ pick }), demo(g) { set(g.pick); } };
+};
+
+/* ---------- numgrid: rows of numbers with one hidden cell; step it to the value ---------- */
+W.numgrid = (el, w, on) => {
+  let val = w.start ?? 0, touched = false, locked = false;
+  const draw = () => { el.innerHTML = `<div class="ngd" style="--c:${w.rows[0].length}">${w.rows.map((r) => r.map((v) => `<span class="${v === null ? "q" : ""}">${v === null ? (touched ? val : "?") : v}</span>`).join("")).join("")}</div>
+      <div class="wx-step"><button class="tile" data-ngl aria-label="Less">−</button><span><b>${val}</b></span><button class="tile" data-ngm aria-label="More">+</button></div>`; };
+  el.addEventListener("click", (e) => { if (locked) return; if (e.target.closest("[data-ngm]")) val++; else if (e.target.closest("[data-ngl]")) val--; else return; touched = true; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { val = v; touched = true; draw(); on(); };
+  return { value: () => val, touched: () => touched, freeze() { locked = true; el.querySelectorAll("button").forEach((b) => (b.disabled = true)); }, show: set, state: () => ({ val }), demo(g) { set(g.val); } };
+};
+
+/* ---------- bars: a chart you read by tapping a bar ---------- */
+W.bars = (el, w, on) => {
+  let pick = null, locked = false; const top = Math.max(...w.vals);
+  const draw = () => { el.innerHTML = `<div class="brs">${w.vals.map((v, k) => `<button class="brc ${pick === k ? "sel" : ""}" data-br="${k}" aria-label="${w.labels[k]}"><b>${w.hide ? "" : v}</b><i style="height:${Math.round((v / top) * 130)}px"></i><span>${w.labels[k]}</span></button>`).join("")}</div>`; };
+  el.addEventListener("click", (e) => { const b = e.target.closest("[data-br]"); if (!b || locked) return; pick = +b.dataset.br; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { pick = v; draw(); on(); };
+  return { value: () => pick, touched: () => pick != null, freeze() { locked = true; }, show: set, state: () => ({ pick }), demo(g) { set(g.pick); } };
+};
 })();

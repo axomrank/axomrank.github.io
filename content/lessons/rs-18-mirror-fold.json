@@ -1,0 +1,6818 @@
+{
+ "id": "rs-18-mirror-fold",
+ "course": "reasoning",
+ "no": 18,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Mirrors and folding",
+  "as": "দাপোণ আৰু ভাঁজ"
+ },
+ "reign": {
+  "en": "Reflections, folds, punched holes",
+  "as": "প্ৰতিফলন, ভাঁজ, ফুটা"
+ },
+ "portrait": "reasoning/figures.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "A mirror swaps sides",
+    "as": "দাপোণে ফাল সলায়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A side mirror swaps left and right.",
+     "as": "কাষৰ দাপোণে বাওঁ-সোঁ সলায়।"
+    },
+    {
+     "en": "Up and down stay.",
+     "as": "ওপৰ-তল একে।"
+    },
+    {
+     "en": "Reflection is not rotation.",
+     "as": "প্ৰতিফলন ঘূৰণি নহয়।"
+    },
+    {
+     "en": "Check one corner.",
+     "as": "এটা চুক চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs18.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Each point crosses the line",
+      "as": "প্ৰতিটো বিন্দু ৰেখা পাৰ হয়"
+     },
+     "text": [
+      {
+       "en": "A point near the mirror stays near. A far point stays far, on the other side.",
+       "as": "দাপোণৰ ওচৰৰ বিন্দু ওচৰত, দূৰৰটো দূৰত, সিপাৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Near stays near",
+        "as": "ওচৰ ওচৰতে"
+       },
+       {
+        "en": "Far stays far",
+        "as": "দূৰ দূৰতে"
+       },
+       {
+        "en": "Sides swap",
+        "as": "ফাল সলনি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Follow one corner",
+      "as": "এটা চুক অনুসৰণ"
+     },
+     "text": [
+      {
+       "en": "Pick one distinctive corner and track it only.",
+       "as": "এটা বিশেষ চুক বাছি সেইটোহে চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Pick a corner",
+        "as": "চুক বাছা"
+       },
+       {
+        "en": "Swap its side",
+        "as": "ফাল সলোৱা"
+       },
+       {
+        "en": "Find the option",
+        "as": "বিকল্প উলিওৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u1.q1",
+     "type": "explore",
+     "skill": "r-fmirror",
+     "q": {
+      "en": "A mirror stands to the right of this flag. Pick its image.",
+      "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "l",
+         30,
+         85,
+         30,
+         15
+        ],
+        [
+         "p",
+         [
+          [
+           30,
+           85
+          ],
+          [
+           75,
+           70
+          ],
+          [
+           30,
+           55
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         55,
+         20,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "l",
+         70,
+         15,
+         70,
+         85
+        ],
+        [
+         "p",
+         [
+          [
+           70,
+           15
+          ],
+          [
+           25,
+           30
+          ],
+          [
+           70,
+           45
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         30,
+         70,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "l",
+         30,
+         15,
+         30,
+         85
+        ],
+        [
+         "p",
+         [
+          [
+           30,
+           15
+          ],
+          [
+           75,
+           30
+          ],
+          [
+           30,
+           45
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         55,
+         70,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "l",
+         70,
+         85,
+         70,
+         15
+        ],
+        [
+         "p",
+         [
+          [
+           70,
+           85
+          ],
+          [
+           25,
+           70
+          ],
+          [
+           70,
+           55
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         30,
+         20,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "l",
+         30,
+         15,
+         30,
+         85
+        ],
+        [
+         "p",
+         [
+          [
+           30,
+           15
+          ],
+          [
+           75,
+           30
+          ],
+          [
+           30,
+           45
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         55,
+         70,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ]
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "Left and right swap; up and down stay.",
+      "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+     },
+     "why": {
+      "en": "Left and right swap; up and down stay.",
+      "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+     },
+     "traps": [
+      {
+       "val": 3,
+       "tag": "r-m-rotate",
+       "why": {
+        "en": "A mirror swaps left and right but keeps up and down.",
+        "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A mirror stands to the right of this flag. Pick its image.",
+        "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "l",
+           30,
+           85,
+           30,
+           15
+          ],
+          [
+           "p",
+           [
+            [
+             30,
+             85
+            ],
+            [
+             75,
+             70
+            ],
+            [
+             30,
+             55
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           55,
+           20,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "l",
+           70,
+           15,
+           70,
+           85
+          ],
+          [
+           "p",
+           [
+            [
+             70,
+             15
+            ],
+            [
+             25,
+             30
+            ],
+            [
+             70,
+             45
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           30,
+           70,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "l",
+           30,
+           15,
+           30,
+           85
+          ],
+          [
+           "p",
+           [
+            [
+             30,
+             15
+            ],
+            [
+             75,
+             30
+            ],
+            [
+             30,
+             45
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           55,
+           70,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "l",
+           70,
+           85,
+           70,
+           15
+          ],
+          [
+           "p",
+           [
+            [
+             70,
+             85
+            ],
+            [
+             25,
+             70
+            ],
+            [
+             70,
+             55
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           30,
+           20,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "l",
+           30,
+           15,
+           30,
+           85
+          ],
+          [
+           "p",
+           [
+            [
+             30,
+             15
+            ],
+            [
+             75,
+             30
+            ],
+            [
+             30,
+             45
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           55,
+           70,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Left and right swap; up and down stay.",
+        "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+       },
+       "why": {
+        "en": "Left and right swap; up and down stay.",
+        "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "A mirror swaps left and right but keeps up and down.",
+          "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A mirror stands to the right of this flag. Pick its image.",
+        "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             45,
+             20
+            ],
+            [
+             45,
+             60
+            ],
+            [
+             80,
+             60
+            ],
+            [
+             80,
+             85
+            ],
+            [
+             20,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             20
+            ],
+            [
+             55,
+             20
+            ],
+            [
+             55,
+             60
+            ],
+            [
+             20,
+             60
+            ],
+            [
+             20,
+             85
+            ],
+            [
+             80,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           68,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             45,
+             80
+            ],
+            [
+             45,
+             40
+            ],
+            [
+             80,
+             40
+            ],
+            [
+             80,
+             15
+            ],
+            [
+             20,
+             15
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           65,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             80
+            ],
+            [
+             55,
+             80
+            ],
+            [
+             55,
+             40
+            ],
+            [
+             20,
+             40
+            ],
+            [
+             20,
+             15
+            ],
+            [
+             80,
+             15
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           68,
+           65,
+           6,
+           "#D3323F"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             45,
+             20
+            ],
+            [
+             45,
+             60
+            ],
+            [
+             80,
+             60
+            ],
+            [
+             80,
+             85
+            ],
+            [
+             20,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Left and right swap; up and down stay.",
+        "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+       },
+       "why": {
+        "en": "Left and right swap; up and down stay.",
+        "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "A mirror swaps left and right but keeps up and down.",
+          "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A mirror stands to the right of this flag. Pick its image.",
+        "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             80,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           20,
+           80
+          ],
+          [
+           "r",
+           60,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             50,
+             80
+            ],
+            [
+             80,
+             20
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           80,
+           20,
+           20
+          ],
+          [
+           "r",
+           60,
+           59,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             20
+            ],
+            [
+             50,
+             80
+            ],
+            [
+             20,
+             20
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           80,
+           80,
+           20
+          ],
+          [
+           "r",
+           24,
+           59,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             20,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           80,
+           80
+          ],
+          [
+           "r",
+           24,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             80,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           20,
+           80
+          ],
+          [
+           "r",
+           60,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ]
+        ]
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Left and right swap; up and down stay.",
+        "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+       },
+       "why": {
+        "en": "Left and right swap; up and down stay.",
+        "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "A mirror swaps left and right but keeps up and down.",
+          "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs18.u1.q2",
+     "type": "tf",
+     "skill": "r-fmirror",
+     "s": {
+      "en": "In a side mirror, a figure's top stays at the top.",
+      "as": "কাষৰ দাপোণত ওপৰ ওপৰতে থাকে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Only left and right swap.",
+      "as": "কেৱল বাওঁ-সোঁ।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-rotate",
+       "why": {
+        "en": "A mirror swaps left and right but keeps up and down.",
+        "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs18.u1.q3",
+     "type": "match",
+     "skill": "r-fmirror",
+     "q": {
+      "en": "Match the letter to its mirror behaviour",
+      "as": "আখৰক প্ৰতিবিম্বৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "Looks the same",
+        "as": "একে দেখি"
+       }
+      ],
+      [
+       {
+        "en": "F",
+        "as": "F"
+       },
+       {
+        "en": "Reversed",
+        "as": "ওলোটা"
+       }
+      ],
+      [
+       {
+        "en": "O",
+        "as": "O"
+       },
+       {
+        "en": "Unchanged",
+        "as": "সলনি নহয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Symmetric letters look unchanged.",
+      "as": "সমমিত আখৰ একে।"
+     }
+    },
+    {
+     "id": "rs18.u1.q4",
+     "type": "solve",
+     "skill": "r-fmirror",
+     "q": {
+      "en": "A clock shows 3:20 in a mirror. What is the real minutes value past the hour? Use 11:60 minus the shown time.",
+      "as": "দাপোণত ঘড়ী 3:20। প্ৰকৃত মিনিট কিমান? 11:60 ৰ পৰা বিয়োগ কৰা।"
+     },
+     "answer": "40",
+     "why": {
+      "en": "60 − 20 = 40.",
+      "as": "60 − 20 = 40।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A clock shows 3:20 in a mirror. What is the real minutes value past the hour? Use 11:60 minus the shown time.",
+        "as": "দাপোণত ঘড়ী 3:20। প্ৰকৃত মিনিট কিমান? 11:60 ৰ পৰা বিয়োগ কৰা।"
+       },
+       "answer": "40",
+       "why": {
+        "en": "60 − 20 = 40.",
+        "as": "60 − 20 = 40।"
+       }
+      },
+      {
+       "q": {
+        "en": "A clock shows 4:45 in a mirror. What is the real minutes value past the hour? Use 11:60 minus the shown time.",
+        "as": "দাপোণত ঘড়ী 4:45। প্ৰকৃত মিনিট কিমান? 11:60 ৰ পৰা বিয়োগ কৰা।"
+       },
+       "answer": "15",
+       "why": {
+        "en": "60 − 45 = 15.",
+        "as": "60 − 45 = 15।"
+       }
+      },
+      {
+       "q": {
+        "en": "A clock shows 7:10 in a mirror. What is the real minutes value past the hour? Use 11:60 minus the shown time.",
+        "as": "দাপোণত ঘড়ী 7:10। প্ৰকৃত মিনিট কিমান? 11:60 ৰ পৰা বিয়োগ কৰা।"
+       },
+       "answer": "50",
+       "why": {
+        "en": "60 − 10 = 50.",
+        "as": "60 − 10 = 50।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs18.u1.q5",
+     "type": "order",
+     "skill": "r-fmirror",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the mirror",
+       "as": "দাপোণ উলিওৱা"
+      },
+      {
+       "en": "Pick a corner",
+       "as": "চুক বাছা"
+      },
+      {
+       "en": "Flip its side",
+       "as": "ফাল সলোৱা"
+      },
+      {
+       "en": "Match the option",
+       "as": "বিকল্প মিলোৱা"
+      }
+     ],
+     "why": {
+      "en": "One corner decides.",
+      "as": "এটা চুকে ঠিক কৰে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Water images",
+    "as": "পানীৰ প্ৰতিবিম্ব"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Water sits below a figure.",
+     "as": "পানী চিত্ৰৰ তলত।"
+    },
+    {
+     "en": "It swaps top and bottom.",
+     "as": "ওপৰ-তল সলায়।"
+    },
+    {
+     "en": "Left and right stay.",
+     "as": "বাওঁ-সোঁ একে।"
+    },
+    {
+     "en": "Do not confuse it with a side mirror.",
+     "as": "কাষৰ দাপোণৰ লগত মিহলাই নাপেলাবা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs18.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "The line is horizontal",
+      "as": "ৰেখা আনুভূমিক"
+     },
+     "text": [
+      {
+       "en": "The water line lies flat, so points cross it up and down.",
+       "as": "পানীৰ ৰেখা আনুভূমিক, বিন্দু ওপৰ-তললৈ পাৰ হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Top",
+        "as": "ওপৰ"
+       },
+       {
+        "en": "Water line",
+        "as": "পানীৰ ৰেখা"
+       },
+       {
+        "en": "Bottom",
+        "as": "তল"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Compare the two",
+      "as": "দুয়োটা তুলনা"
+     },
+     "text": [
+      {
+       "en": "Side mirror: left, right. Water: up, down.",
+       "as": "কাষৰ দাপোণ: বাওঁ, সোঁ। পানী: ওপৰ, তল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Mirror swaps sides",
+        "as": "দাপোণে ফাল সলায়"
+       },
+       {
+        "en": "Water swaps ends",
+        "as": "পানীয়ে মূৰ সলায়"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u2.q1",
+     "type": "explore",
+     "skill": "r-fwater",
+     "q": {
+      "en": "This flag stands above still water. Pick its reflection.",
+      "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "l",
+         30,
+         15,
+         30,
+         85
+        ],
+        [
+         "p",
+         [
+          [
+           30,
+           15
+          ],
+          [
+           75,
+           30
+          ],
+          [
+           30,
+           45
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         55,
+         70,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "l",
+         30,
+         85,
+         30,
+         15
+        ],
+        [
+         "p",
+         [
+          [
+           30,
+           85
+          ],
+          [
+           75,
+           70
+          ],
+          [
+           30,
+           55
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         55,
+         20,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "l",
+         70,
+         85,
+         70,
+         15
+        ],
+        [
+         "p",
+         [
+          [
+           70,
+           85
+          ],
+          [
+           25,
+           70
+          ],
+          [
+           70,
+           55
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         30,
+         20,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "l",
+         70,
+         15,
+         70,
+         85
+        ],
+        [
+         "p",
+         [
+          [
+           70,
+           15
+          ],
+          [
+           25,
+           30
+          ],
+          [
+           70,
+           45
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         30,
+         70,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "l",
+         30,
+         15,
+         30,
+         85
+        ],
+        [
+         "p",
+         [
+          [
+           30,
+           15
+          ],
+          [
+           75,
+           30
+          ],
+          [
+           30,
+           45
+          ]
+         ],
+         "#D3323F"
+        ],
+        [
+         "r",
+         55,
+         70,
+         15,
+         10,
+         "#1F5FBF"
+        ]
+       ]
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "Up and down swap; left and right stay.",
+      "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+     },
+     "why": {
+      "en": "Up and down swap; left and right stay.",
+      "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+     },
+     "traps": [
+      {
+       "val": 2,
+       "tag": "r-m-rotate",
+       "why": {
+        "en": "Water swaps up and down only.",
+        "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "This flag stands above still water. Pick its reflection.",
+        "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "l",
+           30,
+           15,
+           30,
+           85
+          ],
+          [
+           "p",
+           [
+            [
+             30,
+             15
+            ],
+            [
+             75,
+             30
+            ],
+            [
+             30,
+             45
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           55,
+           70,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "l",
+           30,
+           85,
+           30,
+           15
+          ],
+          [
+           "p",
+           [
+            [
+             30,
+             85
+            ],
+            [
+             75,
+             70
+            ],
+            [
+             30,
+             55
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           55,
+           20,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "l",
+           70,
+           85,
+           70,
+           15
+          ],
+          [
+           "p",
+           [
+            [
+             70,
+             85
+            ],
+            [
+             25,
+             70
+            ],
+            [
+             70,
+             55
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           30,
+           20,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "l",
+           70,
+           15,
+           70,
+           85
+          ],
+          [
+           "p",
+           [
+            [
+             70,
+             15
+            ],
+            [
+             25,
+             30
+            ],
+            [
+             70,
+             45
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           30,
+           70,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "l",
+           30,
+           15,
+           30,
+           85
+          ],
+          [
+           "p",
+           [
+            [
+             30,
+             15
+            ],
+            [
+             75,
+             30
+            ],
+            [
+             30,
+             45
+            ]
+           ],
+           "#D3323F"
+          ],
+          [
+           "r",
+           55,
+           70,
+           15,
+           10,
+           "#1F5FBF"
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "why": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "Water swaps up and down only.",
+          "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "This flag stands above still water. Pick its reflection.",
+        "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             45,
+             80
+            ],
+            [
+             45,
+             40
+            ],
+            [
+             80,
+             40
+            ],
+            [
+             80,
+             15
+            ],
+            [
+             20,
+             15
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           65,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             80
+            ],
+            [
+             55,
+             80
+            ],
+            [
+             55,
+             40
+            ],
+            [
+             20,
+             40
+            ],
+            [
+             20,
+             15
+            ],
+            [
+             80,
+             15
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           68,
+           65,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             45,
+             20
+            ],
+            [
+             45,
+             60
+            ],
+            [
+             80,
+             60
+            ],
+            [
+             80,
+             85
+            ],
+            [
+             20,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             20
+            ],
+            [
+             55,
+             20
+            ],
+            [
+             55,
+             60
+            ],
+            [
+             20,
+             60
+            ],
+            [
+             20,
+             85
+            ],
+            [
+             80,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           68,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             45,
+             20
+            ],
+            [
+             45,
+             60
+            ],
+            [
+             80,
+             60
+            ],
+            [
+             80,
+             85
+            ],
+            [
+             20,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "why": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "traps": [
+        {
+         "val": 1,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "Water swaps up and down only.",
+          "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "This flag stands above still water. Pick its reflection.",
+        "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             50,
+             80
+            ],
+            [
+             80,
+             20
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           80,
+           20,
+           20
+          ],
+          [
+           "r",
+           60,
+           59,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             80,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           20,
+           80
+          ],
+          [
+           "r",
+           60,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             20
+            ],
+            [
+             50,
+             80
+            ],
+            [
+             20,
+             20
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           80,
+           80,
+           20
+          ],
+          [
+           "r",
+           24,
+           59,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             20,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           80,
+           80
+          ],
+          [
+           "r",
+           24,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             80,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           20,
+           80
+          ],
+          [
+           "r",
+           60,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "why": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "Water swaps up and down only.",
+          "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs18.u2.q2",
+     "type": "tf",
+     "skill": "r-fwater",
+     "s": {
+      "en": "A water image swaps left and right.",
+      "as": "পানীৰ প্ৰতিবিম্বে বাওঁ-সোঁ সলায়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It swaps up and down.",
+      "as": "ওপৰ-তল সলায়।"
+     }
+    },
+    {
+     "id": "rs18.u2.q3",
+     "type": "match",
+     "skill": "r-fwater",
+     "q": {
+      "en": "Match the reflection to the swap",
+      "as": "প্ৰতিফলনক সলনিৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Side mirror",
+        "as": "কাষৰ দাপোণ"
+       },
+       {
+        "en": "Left, right",
+        "as": "বাওঁ, সোঁ"
+       }
+      ],
+      [
+       {
+        "en": "Water",
+        "as": "পানী"
+       },
+       {
+        "en": "Up, down",
+        "as": "ওপৰ, তল"
+       }
+      ],
+      [
+       {
+        "en": "Half turn",
+        "as": "আধা ঘূৰণি"
+       },
+       {
+        "en": "Both",
+        "as": "দুয়োটা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Remember all three.",
+      "as": "তিনিওটা মনত ৰাখা।"
+     }
+    },
+    {
+     "id": "rs18.u2.q4",
+     "type": "order",
+     "skill": "r-fwater",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the line",
+       "as": "ৰেখা উলিওৱা"
+      },
+      {
+       "en": "Choose the axis",
+       "as": "অক্ষ বাছা"
+      },
+      {
+       "en": "Flip one corner",
+       "as": "চুক সলোৱা"
+      },
+      {
+       "en": "Match",
+       "as": "মিলোৱা"
+      }
+     ],
+     "why": {
+      "en": "Axis first.",
+      "as": "অক্ষ আগতে।"
+     }
+    },
+    {
+     "id": "rs18.u2.q5",
+     "type": "explore",
+     "skill": "r-fwater",
+     "q": {
+      "en": "This flag stands above still water. Pick its reflection.",
+      "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           80
+          ],
+          [
+           45,
+           80
+          ],
+          [
+           45,
+           40
+          ],
+          [
+           80,
+           40
+          ],
+          [
+           80,
+           15
+          ],
+          [
+           20,
+           15
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         32,
+         65,
+         6,
+         "#D3323F"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           80,
+           80
+          ],
+          [
+           55,
+           80
+          ],
+          [
+           55,
+           40
+          ],
+          [
+           20,
+           40
+          ],
+          [
+           20,
+           15
+          ],
+          [
+           80,
+           15
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         68,
+         65,
+         6,
+         "#D3323F"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           20
+          ],
+          [
+           45,
+           20
+          ],
+          [
+           45,
+           60
+          ],
+          [
+           80,
+           60
+          ],
+          [
+           80,
+           85
+          ],
+          [
+           20,
+           85
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         32,
+         35,
+         6,
+         "#D3323F"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           80,
+           20
+          ],
+          [
+           55,
+           20
+          ],
+          [
+           55,
+           60
+          ],
+          [
+           20,
+           60
+          ],
+          [
+           20,
+           85
+          ],
+          [
+           80,
+           85
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         68,
+         35,
+         6,
+         "#D3323F"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           20
+          ],
+          [
+           45,
+           20
+          ],
+          [
+           45,
+           60
+          ],
+          [
+           80,
+           60
+          ],
+          [
+           80,
+           85
+          ],
+          [
+           20,
+           85
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         32,
+         35,
+         6,
+         "#D3323F"
+        ]
+       ]
+      ]
+     },
+     "target": 0,
+     "answerText": {
+      "en": "Up and down swap; left and right stay.",
+      "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+     },
+     "why": {
+      "en": "Up and down swap; left and right stay.",
+      "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+     },
+     "traps": [
+      {
+       "val": 1,
+       "tag": "r-m-rotate",
+       "why": {
+        "en": "Water swaps up and down only.",
+        "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "This flag stands above still water. Pick its reflection.",
+        "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             45,
+             80
+            ],
+            [
+             45,
+             40
+            ],
+            [
+             80,
+             40
+            ],
+            [
+             80,
+             15
+            ],
+            [
+             20,
+             15
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           65,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             80
+            ],
+            [
+             55,
+             80
+            ],
+            [
+             55,
+             40
+            ],
+            [
+             20,
+             40
+            ],
+            [
+             20,
+             15
+            ],
+            [
+             80,
+             15
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           68,
+           65,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             45,
+             20
+            ],
+            [
+             45,
+             60
+            ],
+            [
+             80,
+             60
+            ],
+            [
+             80,
+             85
+            ],
+            [
+             20,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             20
+            ],
+            [
+             55,
+             20
+            ],
+            [
+             55,
+             60
+            ],
+            [
+             20,
+             60
+            ],
+            [
+             20,
+             85
+            ],
+            [
+             80,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           68,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             45,
+             20
+            ],
+            [
+             45,
+             60
+            ],
+            [
+             80,
+             60
+            ],
+            [
+             80,
+             85
+            ],
+            [
+             20,
+             85
+            ]
+           ],
+           null
+          ],
+          [
+           "c",
+           32,
+           35,
+           6,
+           "#D3323F"
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "why": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "traps": [
+        {
+         "val": 1,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "Water swaps up and down only.",
+          "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "This flag stands above still water. Pick its reflection.",
+        "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             20
+            ],
+            [
+             50,
+             80
+            ],
+            [
+             80,
+             20
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           80,
+           20,
+           20
+          ],
+          [
+           "r",
+           60,
+           59,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             80,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           20,
+           80
+          ],
+          [
+           "r",
+           60,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             20
+            ],
+            [
+             50,
+             80
+            ],
+            [
+             20,
+             20
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           80,
+           80,
+           20
+          ],
+          [
+           "r",
+           24,
+           59,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ],
+         [
+          [
+           "p",
+           [
+            [
+             80,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             20,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           80,
+           80
+          ],
+          [
+           "r",
+           24,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "p",
+           [
+            [
+             20,
+             80
+            ],
+            [
+             50,
+             20
+            ],
+            [
+             80,
+             80
+            ]
+           ],
+           null
+          ],
+          [
+           "l",
+           50,
+           20,
+           20,
+           80
+          ],
+          [
+           "r",
+           60,
+           25,
+           16,
+           16,
+           "#1F5FBF"
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "why": {
+        "en": "Up and down swap; left and right stay.",
+        "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-rotate",
+         "why": {
+          "en": "Water swaps up and down only.",
+          "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Folded paper",
+    "as": "ভাঁজ কৰা কাগজ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Each fold halves the sheet.",
+     "as": "প্ৰতিটো ভাঁজে আধা কৰে।"
+    },
+    {
+     "en": "Unfolding mirrors across the fold.",
+     "as": "খোলিলে ভাঁজত প্ৰতিবিম্ব।"
+    },
+    {
+     "en": "Holes double with each unfold.",
+     "as": "ফুটা প্ৰতিবাৰ দুগুণ।"
+    },
+    {
+     "en": "Unfold one step at a time.",
+     "as": "এখোজকৈ খোলা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs18.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "A fold is a mirror",
+      "as": "ভাঁজ এখন দাপোণ"
+     },
+     "text": [
+      {
+       "en": "The fold line acts like a mirror, so each hole gets a partner.",
+       "as": "ভাঁজ দাপোণৰ দৰে, প্ৰতিটো ফুটাৰ সংগী হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Fold",
+        "as": "ভাঁজ"
+       },
+       {
+        "en": "Punch",
+        "as": "ফুটা"
+       },
+       {
+        "en": "Unfold",
+        "as": "খোলা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Work backward",
+      "as": "ওলোটাকৈ"
+     },
+     "text": [
+      {
+       "en": "Unfold the last fold first, then the one before.",
+       "as": "শেষৰ ভাঁজ আগতে খোলা, তাৰ পিছত আগৰটো।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Last fold",
+        "as": "শেষৰ ভাঁজ"
+       },
+       {
+        "en": "Earlier fold",
+        "as": "আগৰ ভাঁজ"
+       },
+       {
+        "en": "Whole sheet",
+        "as": "গোটেই কাগজ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u3.q1",
+     "type": "explore",
+     "skill": "r-ffold",
+     "q": {
+      "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+      "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         70,
+         30,
+         6,
+         "#16305C"
+        ]
+       ],
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ]
+       ],
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         70,
+         30,
+         6,
+         "#16305C"
+        ]
+       ],
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         30,
+         70,
+         6,
+         "#16305C"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "l",
+         50,
+         12,
+         50,
+         88
+        ]
+       ]
+      ]
+     },
+     "target": 2,
+     "answerText": {
+      "en": "The hole appears on both sides of the fold.",
+      "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+     },
+     "why": {
+      "en": "The hole appears on both sides of the fold.",
+      "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+     },
+     "traps": [
+      {
+       "val": 1,
+       "tag": "r-m-oneunfold",
+       "why": {
+        "en": "Each unfold doubles the holes.",
+        "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+        "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           70,
+           30,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           70,
+           30,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           30,
+           70,
+           6,
+           "#16305C"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "l",
+           50,
+           12,
+           50,
+           88
+          ]
+         ]
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "The hole appears on both sides of the fold.",
+        "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+       },
+       "why": {
+        "en": "The hole appears on both sides of the fold.",
+        "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+       },
+       "traps": [
+        {
+         "val": 1,
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+        "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           60,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           65,
+           60,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           65,
+           60,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           60,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           60,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           35,
+           40,
+           6,
+           "#16305C"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           60,
+           6,
+           "#16305C"
+          ],
+          [
+           "l",
+           50,
+           12,
+           50,
+           88
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "The hole appears on both sides of the fold.",
+        "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+       },
+       "why": {
+        "en": "The hole appears on both sides of the fold.",
+        "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+        "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           45,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           45,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           75,
+           45,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           45,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           25,
+           55,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           75,
+           45,
+           6,
+           "#16305C"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           45,
+           6,
+           "#16305C"
+          ],
+          [
+           "l",
+           50,
+           12,
+           50,
+           88
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "The hole appears on both sides of the fold.",
+        "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+       },
+       "why": {
+        "en": "The hole appears on both sides of the fold.",
+        "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+       },
+       "traps": [
+        {
+         "val": 0,
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs18.u3.q2",
+     "type": "solve",
+     "skill": "r-ffold",
+     "q": {
+      "en": "A sheet is folded 2 times and one hole is punched through. How many holes when unfolded?",
+      "as": "কাগজ 2 বাৰ ভাঁজ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কিমান ফুটা?"
+     },
+     "answer": "4",
+     "why": {
+      "en": "Each fold doubles.",
+      "as": "প্ৰতিটো ভাঁজে দুগুণ কৰে।"
+     },
+     "traps": [
+      {
+       "ans": "2",
+       "tag": "r-m-oneunfold",
+       "why": {
+        "en": "Each unfold doubles the holes.",
+        "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A sheet is folded 2 times and one hole is punched through. How many holes when unfolded?",
+        "as": "কাগজ 2 বাৰ ভাঁজ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কিমান ফুটা?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Each fold doubles.",
+        "as": "প্ৰতিটো ভাঁজে দুগুণ কৰে।"
+       },
+       "traps": [
+        {
+         "ans": "2",
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A sheet is folded 3 times and one hole is punched through. How many holes when unfolded?",
+        "as": "কাগজ 3 বাৰ ভাঁজ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কিমান ফুটা?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "Each fold doubles.",
+        "as": "প্ৰতিটো ভাঁজে দুগুণ কৰে।"
+       },
+       "traps": [
+        {
+         "ans": "3",
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A sheet is folded 4 times and one hole is punched through. How many holes when unfolded?",
+        "as": "কাগজ 4 বাৰ ভাঁজ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কিমান ফুটা?"
+       },
+       "answer": "16",
+       "why": {
+        "en": "Each fold doubles.",
+        "as": "প্ৰতিটো ভাঁজে দুগুণ কৰে।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs18.u3.q3",
+     "type": "tf",
+     "skill": "r-ffold",
+     "s": {
+      "en": "One fold and one punch give two holes.",
+      "as": "এটা ভাঁজ আৰু এটা ফুটাত দুটা ফুটা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "One each side.",
+      "as": "দুয়োফালে এটাকৈ।"
+     }
+    },
+    {
+     "id": "rs18.u3.q4",
+     "type": "match",
+     "skill": "r-ffold",
+     "q": {
+      "en": "Match folds to holes",
+      "as": "ভাঁজক ফুটাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 fold",
+        "as": "1 fold"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      [
+       {
+        "en": "2 folds",
+        "as": "2 folds"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ],
+      [
+       {
+        "en": "3 folds",
+        "as": "3 folds"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Powers of 2.",
+      "as": "2 ৰ ঘাত।"
+     }
+    },
+    {
+     "id": "rs18.u3.q5",
+     "type": "order",
+     "skill": "r-ffold",
+     "q": {
+      "en": "Paper steps in order",
+      "as": "কাগজৰ খোজ ক্ৰমে"
+     },
+     "items": [
+      {
+       "en": "Fold",
+       "as": "ভাঁজ"
+      },
+      {
+       "en": "Punch",
+       "as": "ফুটা"
+      },
+      {
+       "en": "Unfold last fold",
+       "as": "শেষৰ ভাঁজ খোলা"
+      },
+      {
+       "en": "Unfold first fold",
+       "as": "প্ৰথম ভাঁজ খোলা"
+      }
+     ],
+     "why": {
+      "en": "Last fold first.",
+      "as": "শেষৰ ভাঁজ আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Two folds and cuts",
+    "as": "দুটা ভাঁজ আৰু কটা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Two folds make a quarter.",
+     "as": "দুটা ভাঁজত চতুৰ্থাংশ।"
+    },
+    {
+     "en": "A hole becomes four.",
+     "as": "এটা ফুটা চাৰিটা।"
+    },
+    {
+     "en": "Holes keep their distance from a fold.",
+     "as": "ফুটাই ভাঁজৰ পৰা দূৰত্ব ৰাখে।"
+    },
+    {
+     "en": "A cut works like a hole.",
+     "as": "কটাও ফুটাৰ দৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs18.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Quarters",
+      "as": "চতুৰ্থাংশ"
+     },
+     "text": [
+      {
+       "en": "A square folded twice has four layers, so one punch makes four holes.",
+       "as": "দুবাৰ ভাঁজত চাৰি স্তৰ, এটা ফুটাত চাৰিটা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Keep the distance",
+      "as": "দূৰত্ব ৰাখা"
+     },
+     "text": [
+      {
+       "en": "A hole near a fold stays near it after opening.",
+       "as": "ভাঁজৰ ওচৰৰ ফুটা খোলাৰ পিছতো ওচৰত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Near the fold",
+        "as": "ভাঁজৰ ওচৰত"
+       },
+       {
+        "en": "Mirror it",
+        "as": "প্ৰতিবিম্ব"
+       },
+       {
+        "en": "Near on both sides",
+        "as": "দুয়োফালে ওচৰত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs18.u4.q1",
+     "type": "explore",
+     "skill": "r-fcut",
+     "q": {
+      "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+      "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         70,
+         70,
+         6,
+         "#16305C"
+        ]
+       ],
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         70,
+         30,
+         6,
+         "#16305C"
+        ]
+       ],
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ]
+       ],
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         70,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         30,
+         70,
+         6,
+         "#16305C"
+        ],
+        [
+         "c",
+         70,
+         70,
+         6,
+         "#16305C"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "r",
+         12,
+         12,
+         76,
+         76,
+         "#fff"
+        ],
+        [
+         "c",
+         30,
+         30,
+         6,
+         "#16305C"
+        ],
+        [
+         "l",
+         50,
+         12,
+         50,
+         88
+        ],
+        [
+         "l",
+         12,
+         50,
+         88,
+         50
+        ]
+       ]
+      ]
+     },
+     "target": 3,
+     "answerText": {
+      "en": "Two folds give four holes.",
+      "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+     },
+     "why": {
+      "en": "Two folds give four holes.",
+      "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+     },
+     "traps": [
+      {
+       "val": 1,
+       "tag": "r-m-oneunfold",
+       "why": {
+        "en": "Each unfold doubles the holes.",
+        "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+        "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           70,
+           70,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           70,
+           30,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           70,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           30,
+           70,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           70,
+           70,
+           6,
+           "#16305C"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           30,
+           30,
+           6,
+           "#16305C"
+          ],
+          [
+           "l",
+           50,
+           12,
+           50,
+           88
+          ],
+          [
+           "l",
+           12,
+           50,
+           88,
+           50
+          ]
+         ]
+        ]
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Two folds give four holes.",
+        "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+       },
+       "why": {
+        "en": "Two folds give four holes.",
+        "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+       },
+       "traps": [
+        {
+         "val": 1,
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+        "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           25,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           65,
+           25,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           25,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           65,
+           75,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           25,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           25,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           65,
+           25,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           35,
+           75,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           65,
+           75,
+           6,
+           "#16305C"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           35,
+           25,
+           6,
+           "#16305C"
+          ],
+          [
+           "l",
+           50,
+           12,
+           50,
+           88
+          ],
+          [
+           "l",
+           12,
+           50,
+           88,
+           50
+          ]
+         ]
+        ]
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Two folds give four holes.",
+        "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+       },
+       "why": {
+        "en": "Two folds give four holes.",
+        "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+       },
+       "traps": [
+        {
+         "val": 0,
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+        "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+       },
+       "widget": {
+        "kind": "figpick",
+        "options": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           35,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           75,
+           35,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           35,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           75,
+           65,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           35,
+           6,
+           "#16305C"
+          ]
+         ],
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           35,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           75,
+           35,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           25,
+           65,
+           6,
+           "#16305C"
+          ],
+          [
+           "c",
+           75,
+           65,
+           6,
+           "#16305C"
+          ]
+         ]
+        ],
+        "stem": [
+         [
+          [
+           "r",
+           12,
+           12,
+           76,
+           76,
+           "#fff"
+          ],
+          [
+           "c",
+           25,
+           35,
+           6,
+           "#16305C"
+          ],
+          [
+           "l",
+           50,
+           12,
+           50,
+           88
+          ],
+          [
+           "l",
+           12,
+           50,
+           88,
+           50
+          ]
+         ]
+        ]
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Two folds give four holes.",
+        "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+       },
+       "why": {
+        "en": "Two folds give four holes.",
+        "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+       },
+       "traps": [
+        {
+         "val": 0,
+         "tag": "r-m-oneunfold",
+         "why": {
+          "en": "Each unfold doubles the holes.",
+          "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs18.u4.q2",
+     "type": "tf",
+     "skill": "r-fcut",
+     "s": {
+      "en": "A cut across a fold makes a shape on both sides.",
+      "as": "ভাঁজত কটিলে দুয়োফালে আকৃতি।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It opens out.",
+      "as": "ই খোল খায়।"
+     }
+    },
+    {
+     "id": "rs18.u4.q3",
+     "type": "match",
+     "skill": "r-fcut",
+     "q": {
+      "en": "Match the cut to the opened shape",
+      "as": "কটাক খোলা আকৃতিৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Half circle on the fold",
+        "as": "ভাঁজত অৰ্ধবৃত্ত"
+       },
+       {
+        "en": "Circle",
+        "as": "বৃত্ত"
+       }
+      ],
+      [
+       {
+        "en": "Half square on the fold",
+        "as": "ভাঁজত অৰ্ধবৰ্গ"
+       },
+       {
+        "en": "Square",
+        "as": "বৰ্গ"
+       }
+      ],
+      [
+       {
+        "en": "Half diamond on the fold",
+        "as": "ভাঁজত অৰ্ধ হীৰা"
+       },
+       {
+        "en": "Diamond",
+        "as": "হীৰা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Mirror the half.",
+      "as": "আধাৰ প্ৰতিবিম্ব।"
+     }
+    },
+    {
+     "id": "rs18.u4.q4",
+     "type": "solve",
+     "skill": "r-fcut",
+     "q": {
+      "en": "2 holes are punched through a sheet folded 2 times. How many after opening?",
+      "as": "2 বাৰ ভাঁজ কৰা কাগজত 2 টা ফুটা কৰা হ'ল। খুলিলে কিমান?"
+     },
+     "answer": "8",
+     "why": {
+      "en": "2 × 2^2.",
+      "as": "2 × 2^2।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "2 holes are punched through a sheet folded 2 times. How many after opening?",
+        "as": "2 বাৰ ভাঁজ কৰা কাগজত 2 টা ফুটা কৰা হ'ল। খুলিলে কিমান?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "2 × 2^2.",
+        "as": "2 × 2^2।"
+       }
+      },
+      {
+       "q": {
+        "en": "3 holes are punched through a sheet folded 2 times. How many after opening?",
+        "as": "2 বাৰ ভাঁজ কৰা কাগজত 3 টা ফুটা কৰা হ'ল। খুলিলে কিমান?"
+       },
+       "answer": "12",
+       "why": {
+        "en": "3 × 2^2.",
+        "as": "3 × 2^2।"
+       }
+      },
+      {
+       "q": {
+        "en": "2 holes are punched through a sheet folded 3 times. How many after opening?",
+        "as": "3 বাৰ ভাঁজ কৰা কাগজত 2 টা ফুটা কৰা হ'ল। খুলিলে কিমান?"
+       },
+       "answer": "16",
+       "why": {
+        "en": "2 × 2^3.",
+        "as": "2 × 2^3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs18.u4.q5",
+     "type": "order",
+     "skill": "r-fcut",
+     "q": {
+      "en": "Layers from one fold onward",
+      "as": "ভাঁজৰ পৰা স্তৰ"
+     },
+     "items": [
+      {
+       "en": "2",
+       "as": "2"
+      },
+      {
+       "en": "4",
+       "as": "4"
+      },
+      {
+       "en": "8",
+       "as": "8"
+      },
+      {
+       "en": "16",
+       "as": "16"
+      }
+     ],
+     "why": {
+      "en": "Each fold doubles.",
+      "as": "প্ৰতিটো ভাঁজে দুগুণ।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Mirror and folding test",
+   "as": "দাপোণ আৰু ভাঁজৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs18.t.q1",
+    "type": "explore",
+    "skill": "r-fmirror",
+    "q": {
+     "en": "A mirror stands to the right of this flag. Pick its image.",
+     "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+    },
+    "widget": {
+     "kind": "figpick",
+     "options": [
+      [
+       [
+        "p",
+        [
+         [
+          20,
+          20
+         ],
+         [
+          45,
+          20
+         ],
+         [
+          45,
+          60
+         ],
+         [
+          80,
+          60
+         ],
+         [
+          80,
+          85
+         ],
+         [
+          20,
+          85
+         ]
+        ],
+        null
+       ],
+       [
+        "c",
+        32,
+        35,
+        6,
+        "#D3323F"
+       ]
+      ],
+      [
+       [
+        "p",
+        [
+         [
+          80,
+          20
+         ],
+         [
+          55,
+          20
+         ],
+         [
+          55,
+          60
+         ],
+         [
+          20,
+          60
+         ],
+         [
+          20,
+          85
+         ],
+         [
+          80,
+          85
+         ]
+        ],
+        null
+       ],
+       [
+        "c",
+        68,
+        35,
+        6,
+        "#D3323F"
+       ]
+      ],
+      [
+       [
+        "p",
+        [
+         [
+          20,
+          80
+         ],
+         [
+          45,
+          80
+         ],
+         [
+          45,
+          40
+         ],
+         [
+          80,
+          40
+         ],
+         [
+          80,
+          15
+         ],
+         [
+          20,
+          15
+         ]
+        ],
+        null
+       ],
+       [
+        "c",
+        32,
+        65,
+        6,
+        "#D3323F"
+       ]
+      ],
+      [
+       [
+        "p",
+        [
+         [
+          80,
+          80
+         ],
+         [
+          55,
+          80
+         ],
+         [
+          55,
+          40
+         ],
+         [
+          20,
+          40
+         ],
+         [
+          20,
+          15
+         ],
+         [
+          80,
+          15
+         ]
+        ],
+        null
+       ],
+       [
+        "c",
+        68,
+        65,
+        6,
+        "#D3323F"
+       ]
+      ]
+     ],
+     "stem": [
+      [
+       [
+        "p",
+        [
+         [
+          20,
+          20
+         ],
+         [
+          45,
+          20
+         ],
+         [
+          45,
+          60
+         ],
+         [
+          80,
+          60
+         ],
+         [
+          80,
+          85
+         ],
+         [
+          20,
+          85
+         ]
+        ],
+        null
+       ],
+       [
+        "c",
+        32,
+        35,
+        6,
+        "#D3323F"
+       ]
+      ]
+     ]
+    },
+    "target": 1,
+    "answerText": {
+     "en": "Left and right swap; up and down stay.",
+     "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+    },
+    "why": {
+     "en": "Left and right swap; up and down stay.",
+     "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+    },
+    "traps": [
+     {
+      "val": 3,
+      "tag": "r-m-rotate",
+      "why": {
+       "en": "A mirror swaps left and right but keeps up and down.",
+       "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A mirror stands to the right of this flag. Pick its image.",
+       "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            20
+           ],
+           [
+            45,
+            20
+           ],
+           [
+            45,
+            60
+           ],
+           [
+            80,
+            60
+           ],
+           [
+            80,
+            85
+           ],
+           [
+            20,
+            85
+           ]
+          ],
+          null
+         ],
+         [
+          "c",
+          32,
+          35,
+          6,
+          "#D3323F"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            80,
+            20
+           ],
+           [
+            55,
+            20
+           ],
+           [
+            55,
+            60
+           ],
+           [
+            20,
+            60
+           ],
+           [
+            20,
+            85
+           ],
+           [
+            80,
+            85
+           ]
+          ],
+          null
+         ],
+         [
+          "c",
+          68,
+          35,
+          6,
+          "#D3323F"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            80
+           ],
+           [
+            45,
+            80
+           ],
+           [
+            45,
+            40
+           ],
+           [
+            80,
+            40
+           ],
+           [
+            80,
+            15
+           ],
+           [
+            20,
+            15
+           ]
+          ],
+          null
+         ],
+         [
+          "c",
+          32,
+          65,
+          6,
+          "#D3323F"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            80,
+            80
+           ],
+           [
+            55,
+            80
+           ],
+           [
+            55,
+            40
+           ],
+           [
+            20,
+            40
+           ],
+           [
+            20,
+            15
+           ],
+           [
+            80,
+            15
+           ]
+          ],
+          null
+         ],
+         [
+          "c",
+          68,
+          65,
+          6,
+          "#D3323F"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            20
+           ],
+           [
+            45,
+            20
+           ],
+           [
+            45,
+            60
+           ],
+           [
+            80,
+            60
+           ],
+           [
+            80,
+            85
+           ],
+           [
+            20,
+            85
+           ]
+          ],
+          null
+         ],
+         [
+          "c",
+          32,
+          35,
+          6,
+          "#D3323F"
+         ]
+        ]
+       ]
+      },
+      "target": 1,
+      "answerText": {
+       "en": "Left and right swap; up and down stay.",
+       "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+      },
+      "why": {
+       "en": "Left and right swap; up and down stay.",
+       "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+      },
+      "traps": [
+       {
+        "val": 3,
+        "tag": "r-m-rotate",
+        "why": {
+         "en": "A mirror swaps left and right but keeps up and down.",
+         "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A mirror stands to the right of this flag. Pick its image.",
+       "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            80
+           ],
+           [
+            50,
+            20
+           ],
+           [
+            80,
+            80
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          20,
+          20,
+          80
+         ],
+         [
+          "r",
+          60,
+          25,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            20
+           ],
+           [
+            50,
+            80
+           ],
+           [
+            80,
+            20
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          80,
+          20,
+          20
+         ],
+         [
+          "r",
+          60,
+          59,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            80,
+            20
+           ],
+           [
+            50,
+            80
+           ],
+           [
+            20,
+            20
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          80,
+          80,
+          20
+         ],
+         [
+          "r",
+          24,
+          59,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            80,
+            80
+           ],
+           [
+            50,
+            20
+           ],
+           [
+            20,
+            80
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          20,
+          80,
+          80
+         ],
+         [
+          "r",
+          24,
+          25,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            80
+           ],
+           [
+            50,
+            20
+           ],
+           [
+            80,
+            80
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          20,
+          20,
+          80
+         ],
+         [
+          "r",
+          60,
+          25,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ]
+       ]
+      },
+      "target": 3,
+      "answerText": {
+       "en": "Left and right swap; up and down stay.",
+       "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+      },
+      "why": {
+       "en": "Left and right swap; up and down stay.",
+       "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+      },
+      "traps": [
+       {
+        "val": 2,
+        "tag": "r-m-rotate",
+        "why": {
+         "en": "A mirror swaps left and right but keeps up and down.",
+         "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs18.t.q2",
+    "type": "explore",
+    "skill": "r-fwater",
+    "q": {
+     "en": "This flag stands above still water. Pick its reflection.",
+     "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+    },
+    "widget": {
+     "kind": "figpick",
+     "options": [
+      [
+       [
+        "l",
+        30,
+        15,
+        30,
+        85
+       ],
+       [
+        "p",
+        [
+         [
+          30,
+          15
+         ],
+         [
+          75,
+          30
+         ],
+         [
+          30,
+          45
+         ]
+        ],
+        "#D3323F"
+       ],
+       [
+        "r",
+        55,
+        70,
+        15,
+        10,
+        "#1F5FBF"
+       ]
+      ],
+      [
+       [
+        "l",
+        30,
+        85,
+        30,
+        15
+       ],
+       [
+        "p",
+        [
+         [
+          30,
+          85
+         ],
+         [
+          75,
+          70
+         ],
+         [
+          30,
+          55
+         ]
+        ],
+        "#D3323F"
+       ],
+       [
+        "r",
+        55,
+        20,
+        15,
+        10,
+        "#1F5FBF"
+       ]
+      ],
+      [
+       [
+        "l",
+        70,
+        85,
+        70,
+        15
+       ],
+       [
+        "p",
+        [
+         [
+          70,
+          85
+         ],
+         [
+          25,
+          70
+         ],
+         [
+          70,
+          55
+         ]
+        ],
+        "#D3323F"
+       ],
+       [
+        "r",
+        30,
+        20,
+        15,
+        10,
+        "#1F5FBF"
+       ]
+      ],
+      [
+       [
+        "l",
+        70,
+        15,
+        70,
+        85
+       ],
+       [
+        "p",
+        [
+         [
+          70,
+          15
+         ],
+         [
+          25,
+          30
+         ],
+         [
+          70,
+          45
+         ]
+        ],
+        "#D3323F"
+       ],
+       [
+        "r",
+        30,
+        70,
+        15,
+        10,
+        "#1F5FBF"
+       ]
+      ]
+     ],
+     "stem": [
+      [
+       [
+        "l",
+        30,
+        15,
+        30,
+        85
+       ],
+       [
+        "p",
+        [
+         [
+          30,
+          15
+         ],
+         [
+          75,
+          30
+         ],
+         [
+          30,
+          45
+         ]
+        ],
+        "#D3323F"
+       ],
+       [
+        "r",
+        55,
+        70,
+        15,
+        10,
+        "#1F5FBF"
+       ]
+      ]
+     ]
+    },
+    "target": 1,
+    "answerText": {
+     "en": "Up and down swap; left and right stay.",
+     "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+    },
+    "why": {
+     "en": "Up and down swap; left and right stay.",
+     "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+    },
+    "traps": [
+     {
+      "val": 2,
+      "tag": "r-m-rotate",
+      "why": {
+       "en": "Water swaps up and down only.",
+       "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "This flag stands above still water. Pick its reflection.",
+       "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "l",
+          30,
+          15,
+          30,
+          85
+         ],
+         [
+          "p",
+          [
+           [
+            30,
+            15
+           ],
+           [
+            75,
+            30
+           ],
+           [
+            30,
+            45
+           ]
+          ],
+          "#D3323F"
+         ],
+         [
+          "r",
+          55,
+          70,
+          15,
+          10,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "l",
+          30,
+          85,
+          30,
+          15
+         ],
+         [
+          "p",
+          [
+           [
+            30,
+            85
+           ],
+           [
+            75,
+            70
+           ],
+           [
+            30,
+            55
+           ]
+          ],
+          "#D3323F"
+         ],
+         [
+          "r",
+          55,
+          20,
+          15,
+          10,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "l",
+          70,
+          85,
+          70,
+          15
+         ],
+         [
+          "p",
+          [
+           [
+            70,
+            85
+           ],
+           [
+            25,
+            70
+           ],
+           [
+            70,
+            55
+           ]
+          ],
+          "#D3323F"
+         ],
+         [
+          "r",
+          30,
+          20,
+          15,
+          10,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "l",
+          70,
+          15,
+          70,
+          85
+         ],
+         [
+          "p",
+          [
+           [
+            70,
+            15
+           ],
+           [
+            25,
+            30
+           ],
+           [
+            70,
+            45
+           ]
+          ],
+          "#D3323F"
+         ],
+         [
+          "r",
+          30,
+          70,
+          15,
+          10,
+          "#1F5FBF"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "l",
+          30,
+          15,
+          30,
+          85
+         ],
+         [
+          "p",
+          [
+           [
+            30,
+            15
+           ],
+           [
+            75,
+            30
+           ],
+           [
+            30,
+            45
+           ]
+          ],
+          "#D3323F"
+         ],
+         [
+          "r",
+          55,
+          70,
+          15,
+          10,
+          "#1F5FBF"
+         ]
+        ]
+       ]
+      },
+      "target": 1,
+      "answerText": {
+       "en": "Up and down swap; left and right stay.",
+       "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+      },
+      "why": {
+       "en": "Up and down swap; left and right stay.",
+       "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+      },
+      "traps": [
+       {
+        "val": 2,
+        "tag": "r-m-rotate",
+        "why": {
+         "en": "Water swaps up and down only.",
+         "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "This flag stands above still water. Pick its reflection.",
+       "as": "এই ধ্বজা স্থিৰ পানীৰ ওপৰত। প্ৰতিফলন বাছা।"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            20
+           ],
+           [
+            50,
+            80
+           ],
+           [
+            80,
+            20
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          80,
+          20,
+          20
+         ],
+         [
+          "r",
+          60,
+          59,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            80
+           ],
+           [
+            50,
+            20
+           ],
+           [
+            80,
+            80
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          20,
+          20,
+          80
+         ],
+         [
+          "r",
+          60,
+          25,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            80,
+            20
+           ],
+           [
+            50,
+            80
+           ],
+           [
+            20,
+            20
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          80,
+          80,
+          20
+         ],
+         [
+          "r",
+          24,
+          59,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ],
+        [
+         [
+          "p",
+          [
+           [
+            80,
+            80
+           ],
+           [
+            50,
+            20
+           ],
+           [
+            20,
+            80
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          20,
+          80,
+          80
+         ],
+         [
+          "r",
+          24,
+          25,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "p",
+          [
+           [
+            20,
+            80
+           ],
+           [
+            50,
+            20
+           ],
+           [
+            80,
+            80
+           ]
+          ],
+          null
+         ],
+         [
+          "l",
+          50,
+          20,
+          20,
+          80
+         ],
+         [
+          "r",
+          60,
+          25,
+          16,
+          16,
+          "#1F5FBF"
+         ]
+        ]
+       ]
+      },
+      "target": 0,
+      "answerText": {
+       "en": "Up and down swap; left and right stay.",
+       "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+      },
+      "why": {
+       "en": "Up and down swap; left and right stay.",
+       "as": "ওপৰ-তল সলনি; বাওঁ-সোঁ একে।"
+      },
+      "traps": [
+       {
+        "val": 2,
+        "tag": "r-m-rotate",
+        "why": {
+         "en": "Water swaps up and down only.",
+         "as": "পানীয়ে কেৱল ওপৰ-তল সলায়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs18.t.q3",
+    "type": "explore",
+    "skill": "r-ffold",
+    "q": {
+     "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+     "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+    },
+    "widget": {
+     "kind": "figpick",
+     "options": [
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        40,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        72,
+        40,
+        6,
+        "#16305C"
+       ]
+      ],
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        40,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        28,
+        60,
+        6,
+        "#16305C"
+       ]
+      ],
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        40,
+        6,
+        "#16305C"
+       ]
+      ],
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        72,
+        40,
+        6,
+        "#16305C"
+       ]
+      ]
+     ],
+     "stem": [
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        40,
+        6,
+        "#16305C"
+       ],
+       [
+        "l",
+        50,
+        12,
+        50,
+        88
+       ]
+      ]
+     ]
+    },
+    "target": 0,
+    "answerText": {
+     "en": "The hole appears on both sides of the fold.",
+     "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+    },
+    "why": {
+     "en": "The hole appears on both sides of the fold.",
+     "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+    },
+    "traps": [
+     {
+      "val": 2,
+      "tag": "r-m-oneunfold",
+      "why": {
+       "en": "Each unfold doubles the holes.",
+       "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+       "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          40,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          72,
+          40,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          40,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          28,
+          60,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          40,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          72,
+          40,
+          6,
+          "#16305C"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          40,
+          6,
+          "#16305C"
+         ],
+         [
+          "l",
+          50,
+          12,
+          50,
+          88
+         ]
+        ]
+       ]
+      },
+      "target": 0,
+      "answerText": {
+       "en": "The hole appears on both sides of the fold.",
+       "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+      },
+      "why": {
+       "en": "The hole appears on both sides of the fold.",
+       "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+      },
+      "traps": [
+       {
+        "val": 2,
+        "tag": "r-m-oneunfold",
+        "why": {
+         "en": "Each unfold doubles the holes.",
+         "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A square is folded in half left to right, and a hole is punched. Which is it unfolded?",
+       "as": "বৰ্গক বাওঁ-সোঁ আধা ভাঁজ কৰি ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          32,
+          55,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          32,
+          45,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          32,
+          55,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          68,
+          55,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          32,
+          55,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          68,
+          55,
+          6,
+          "#16305C"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          32,
+          55,
+          6,
+          "#16305C"
+         ],
+         [
+          "l",
+          50,
+          12,
+          50,
+          88
+         ]
+        ]
+       ]
+      },
+      "target": 3,
+      "answerText": {
+       "en": "The hole appears on both sides of the fold.",
+       "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+      },
+      "why": {
+       "en": "The hole appears on both sides of the fold.",
+       "as": "ফুটা ভাঁজৰ দুয়োফালে হয়।"
+      },
+      "traps": [
+       {
+        "val": 1,
+        "tag": "r-m-oneunfold",
+        "why": {
+         "en": "Each unfold doubles the holes.",
+         "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs18.t.q4",
+    "type": "explore",
+    "skill": "r-fcut",
+    "q": {
+     "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+     "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+    },
+    "widget": {
+     "kind": "figpick",
+     "options": [
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        28,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        72,
+        28,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        28,
+        72,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        72,
+        72,
+        6,
+        "#16305C"
+       ]
+      ],
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        28,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        72,
+        28,
+        6,
+        "#16305C"
+       ]
+      ],
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        28,
+        6,
+        "#16305C"
+       ]
+      ],
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        28,
+        6,
+        "#16305C"
+       ],
+       [
+        "c",
+        72,
+        72,
+        6,
+        "#16305C"
+       ]
+      ]
+     ],
+     "stem": [
+      [
+       [
+        "r",
+        12,
+        12,
+        76,
+        76,
+        "#fff"
+       ],
+       [
+        "c",
+        28,
+        28,
+        6,
+        "#16305C"
+       ],
+       [
+        "l",
+        50,
+        12,
+        50,
+        88
+       ],
+       [
+        "l",
+        12,
+        50,
+        88,
+        50
+       ]
+      ]
+     ]
+    },
+    "target": 0,
+    "answerText": {
+     "en": "Two folds give four holes.",
+     "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+    },
+    "why": {
+     "en": "Two folds give four holes.",
+     "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+    },
+    "traps": [
+     {
+      "val": 1,
+      "tag": "r-m-oneunfold",
+      "why": {
+       "en": "Each unfold doubles the holes.",
+       "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+       "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          28,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          72,
+          28,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          28,
+          72,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          72,
+          72,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          28,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          72,
+          28,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          28,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          28,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          72,
+          72,
+          6,
+          "#16305C"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          28,
+          28,
+          6,
+          "#16305C"
+         ],
+         [
+          "l",
+          50,
+          12,
+          50,
+          88
+         ],
+         [
+          "l",
+          12,
+          50,
+          88,
+          50
+         ]
+        ]
+       ]
+      },
+      "target": 0,
+      "answerText": {
+       "en": "Two folds give four holes.",
+       "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+      },
+      "why": {
+       "en": "Two folds give four holes.",
+       "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+      },
+      "traps": [
+       {
+        "val": 1,
+        "tag": "r-m-oneunfold",
+        "why": {
+         "en": "Each unfold doubles the holes.",
+         "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A square is folded twice into a quarter, and one hole is punched. Which is it unfolded?",
+       "as": "বৰ্গক দুবাৰ ভাঁজ কৰি চতুৰ্থাংশ কৰি এটা ফুটা কৰা হ'ল। খুলিলে কোনটো?"
+      },
+      "widget": {
+       "kind": "figpick",
+       "options": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          34,
+          30,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          34,
+          30,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          66,
+          30,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          34,
+          70,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          66,
+          70,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          34,
+          30,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          66,
+          30,
+          6,
+          "#16305C"
+         ]
+        ],
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          34,
+          30,
+          6,
+          "#16305C"
+         ],
+         [
+          "c",
+          66,
+          70,
+          6,
+          "#16305C"
+         ]
+        ]
+       ],
+       "stem": [
+        [
+         [
+          "r",
+          12,
+          12,
+          76,
+          76,
+          "#fff"
+         ],
+         [
+          "c",
+          34,
+          30,
+          6,
+          "#16305C"
+         ],
+         [
+          "l",
+          50,
+          12,
+          50,
+          88
+         ],
+         [
+          "l",
+          12,
+          50,
+          88,
+          50
+         ]
+        ]
+       ]
+      },
+      "target": 1,
+      "answerText": {
+       "en": "Two folds give four holes.",
+       "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+      },
+      "why": {
+       "en": "Two folds give four holes.",
+       "as": "দুটা ভাঁজত চাৰিটা ফুটা।"
+      },
+      "traps": [
+       {
+        "val": 2,
+        "tag": "r-m-oneunfold",
+        "why": {
+         "en": "Each unfold doubles the holes.",
+         "as": "প্ৰতিটো খোলাত ফুটা দুগুণ হয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs18.t.q5",
+    "type": "tf",
+    "skill": "r-fmirror",
+    "s": {
+     "en": "A side mirror swaps up and down.",
+     "as": "কাষৰ দাপোণে ওপৰ-তল সলায়।"
+    },
+    "answer": false,
+    "why": {
+     "en": "It swaps left and right.",
+     "as": "বাওঁ-সোঁ সলায়।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-rotate",
+      "why": {
+       "en": "A mirror swaps left and right but keeps up and down.",
+       "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs18.t.q6",
+    "type": "tf",
+    "skill": "r-ffold",
+    "s": {
+     "en": "Three folds give eight layers.",
+     "as": "তিনিটা ভাঁজত আঠটা স্তৰ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "2³ = 8.",
+     "as": "2³ = 8।"
+    }
+   }
+  ]
+ }
+}

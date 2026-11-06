@@ -3,7 +3,6 @@
 
 Run: python3 scripts/build_reasoning_course.py && python3 scripts/check_reasoning.py && python3 scripts/build.py
 
-The course is a draft: only the pilot lessons exist, and it is hidden from the catalog.
 Past papers set the patterns only (docs/REASONING-COURSE.md). Every question is original,
 and step ids are permanent. Edit this generator, not the JSON it writes.
 """
@@ -63,9 +62,33 @@ _position = importlib.import_module("lesson_position")
 MODULES += _position.LESSONS
 SKILLS.update(_position.SKILLS)
 MISCONCEPTIONS.update(_position.TAGS)
+_logic = importlib.import_module("lesson_logic")
+MODULES += _logic.LESSONS
+SKILLS.update(_logic.SKILLS)
+MISCONCEPTIONS.update(_logic.TAGS)
+_figures = importlib.import_module("lesson_figures")
+MODULES += _figures.LESSONS
+SKILLS.update(_figures.SKILLS)
+MISCONCEPTIONS.update(_figures.TAGS)
+_aptitude = importlib.import_module("lesson_aptitude")
+MODULES += _aptitude.LESSONS
+SKILLS.update(_aptitude.SKILLS)
+MISCONCEPTIONS.update(_aptitude.TAGS)
 for mod in MODULES:
     SKILLS.update(getattr(mod, "SKILLS", {}))
     MISCONCEPTIONS.update(getattr(mod, "TAGS", {}))
+
+
+def test_probes(lessons):
+    """Lessons without a written placement question borrow the first step of their test."""
+    done = {"rs-06-coding", "rs-09-direction", "rs-14-venn"}
+    out = []
+    for L in lessons:
+        if L["id"] not in done:
+            step = dict(L["test"]["steps"][0])
+            step["id"] = f"bank.rs.{L['slug']}"
+            out.append(step)
+    return out
 
 
 def probes():
@@ -135,7 +158,7 @@ def main():
             k["lesson"] = by_no[n]["id"]
         kings.append(k)
     write(f"content/courses/{COURSE}.json", {
-        "id": COURSE, "order": 0, "draft": True, "title": B("Reasoning", "যুক্তি"), "eyebrow": B("See the rule", "নিয়মটো চিনা"),
+        "id": COURSE, "order": 0, "title": B("Reasoning", "যুক্তি"), "eyebrow": B("See the rule", "নিয়মটো চিনা"),
         "subtitle": B("Stop memorising question types and learn the rule behind each puzzle", "প্ৰশ্নৰ ধৰণ মুখস্থ নকৰি প্ৰতিটো সাঁথৰৰ নিয়ম শিকা"),
         "tabs": ["lessons", "skills", "profile"], "bank": f"content/questions/{COURSE}.json", "skills": f"content/skills/{COURSE}.json",
         "kings": kings, "eras": [{"id": i, "title": t, "from": a, "to": b} for i, t, a, b, _ in PARTS], "eraWord": B("part", "ভাগ"),
@@ -151,9 +174,9 @@ def main():
         "topics": [{"id": L["slug"], "t": L["title"]} for L in lessons],
         "skills": [{"id": i, "topic": v[0], "t": v[1], "pre": v[2], "steps": steps.get(i, [])} for i, v in SKILLS.items()],
         "misconceptions": {k: {"skill": v[0], "t": v[1]} for k, v in MISCONCEPTIONS.items()},
-        "probes": probes(),
+        "probes": probes() + test_probes(lessons),
     })
-    print(f"reasoning course: {len(lessons)} lessons, {sum(len(v) for v in steps.values())} skill-linked exercises, {len(probes())} probes")
+    print(f"reasoning course: {len(lessons)} lessons, {sum(len(v) for v in steps.values())} skill-linked exercises, {len(probes()) + len(test_probes(lessons))} probes")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,2471 @@
+{
+ "id": "rs-23-decisions",
+ "course": "reasoning",
+ "no": 23,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Decision making",
+  "as": "সিদ্ধান্ত গ্ৰহণ"
+ },
+ "reign": {
+  "en": "Duty, safety, integrity, crisis",
+  "as": "কৰ্তব্য, সুৰক্ষা, সততা, সংকট"
+ },
+ "portrait": "reasoning/aptitude.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Rules and duty",
+    "as": "নিয়ম আৰু কৰ্তব্য"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Know the rule first.",
+     "as": "প্ৰথমে নিয়ম জানা।"
+    },
+    {
+     "en": "Follow procedure even under pressure.",
+     "as": "হেঁচাতো পদ্ধতি মানা।"
+    },
+    {
+     "en": "Escalate what you cannot decide.",
+     "as": "ঠিক কৰিব নোৱৰা কথা ওপৰলৈ।"
+    },
+    {
+     "en": "Record what you did.",
+     "as": "কৰা কাম লিখি ৰাখা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs23.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Duty comes before convenience",
+      "as": "সুবিধাতকৈ কৰ্তব্য"
+     },
+     "text": [
+      {
+       "en": "Public service means applying rules equally, even when bending them seems easier.",
+       "as": "ৰাজহুৱা সেৱা মানে নিয়ম সমানে প্ৰয়োগ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Know the rule",
+        "as": "নিয়ম জানা"
+       },
+       {
+        "en": "Apply it",
+        "as": "প্ৰয়োগ"
+       },
+       {
+        "en": "Record it",
+        "as": "লিখা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "When to escalate",
+      "as": "কেতিয়া ওপৰলৈ"
+     },
+     "text": [
+      {
+       "en": "If a decision is beyond your authority, refer it with the facts.",
+       "as": "তোমাৰ ক্ষমতাৰ বাহিৰ হ'লে তথ্যসহ ওপৰলৈ পঠিওৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Check authority",
+        "as": "ক্ষমতা"
+       },
+       {
+        "en": "Gather facts",
+        "as": "তথ্য"
+       },
+       {
+        "en": "Refer upward",
+        "as": "ওপৰলৈ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u1.q1",
+     "type": "inline",
+     "skill": "r-dduty",
+     "before": {
+      "en": "A friend asks you to skip the queue for a certificate. The best response is:",
+      "as": "বন্ধুৱে প্ৰমাণপত্ৰৰ শাৰী এৰিবলৈ ক'লে। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Do it quietly",
+       "as": "গোপনে কৰা"
+      },
+      {
+       "en": "Refuse rudely",
+       "as": "ৰূঢ়ভাৱে নাকচ"
+      },
+      {
+       "en": "Politely ask them to follow the queue",
+       "as": "ভদ্ৰভাৱে শাৰীত থাকিবলৈ কোৱা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Treat all equally.",
+      "as": "সকলোক সমান।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A friend asks you to skip the queue for a certificate. The best response is:",
+        "as": "বন্ধুৱে প্ৰমাণপত্ৰৰ শাৰী এৰিবলৈ ক'লে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Do it quietly",
+         "as": "গোপনে কৰা"
+        },
+        {
+         "en": "Refuse rudely",
+         "as": "ৰূঢ়ভাৱে নাকচ"
+        },
+        {
+         "en": "Politely ask them to follow the queue",
+         "as": "ভদ্ৰভাৱে শাৰীত থাকিবলৈ কোৱা"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Treat all equally.",
+        "as": "সকলোক সমান।"
+       }
+      },
+      {
+       "before": {
+        "en": "You find a rule that seems outdated. The best response is:",
+        "as": "নিয়ম পুৰণি যেন লাগিল। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Change it yourself",
+         "as": "নিজে সলোৱা"
+        },
+        {
+         "en": "Follow it and report the issue",
+         "as": "মানি বিষয়টো জনোৱা"
+        },
+        {
+         "en": "Ignore it",
+         "as": "এৰি দিয়া"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Raise it through the proper channel.",
+        "as": "সঠিক পথে জনোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs23.u1.q2",
+     "type": "tf",
+     "skill": "r-dduty",
+     "s": {
+      "en": "Following procedure is part of public duty.",
+      "as": "পদ্ধতি মানা ৰাজহুৱা কৰ্তব্যৰ অংশ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It protects fairness.",
+      "as": "ই ন্যায্যতা ৰক্ষা কৰে।"
+     }
+    },
+    {
+     "id": "rs23.u1.q3",
+     "type": "match",
+     "skill": "r-dduty",
+     "q": {
+      "en": "Match the action to its reason",
+      "as": "কামক কাৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Record decisions",
+        "as": "সিদ্ধান্ত লিখা"
+       },
+       {
+        "en": "Accountability",
+        "as": "জবাবদিহিতা"
+       }
+      ],
+      [
+       {
+        "en": "Apply rules equally",
+        "as": "নিয়ম সমানে"
+       },
+       {
+        "en": "Fairness",
+        "as": "ন্যায্যতা"
+       }
+      ],
+      [
+       {
+        "en": "Refer upward",
+        "as": "ওপৰলৈ"
+       },
+       {
+        "en": "Proper authority",
+        "as": "সঠিক কৰ্তৃপক্ষ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each protects something.",
+      "as": "প্ৰতিটোৱে কিবা ৰক্ষা কৰে।"
+     }
+    },
+    {
+     "id": "rs23.u1.q4",
+     "type": "order",
+     "skill": "r-dduty",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the rule",
+       "as": "নিয়ম পঢ়া"
+      },
+      {
+       "en": "Check the facts",
+       "as": "তথ্য"
+      },
+      {
+       "en": "Act or refer",
+       "as": "কাম বা ওপৰলৈ"
+      },
+      {
+       "en": "Record it",
+       "as": "লিখা"
+      }
+     ],
+     "why": {
+      "en": "Rule, facts, action, record.",
+      "as": "নিয়ম, তথ্য, কাম, লিখা।"
+     }
+    },
+    {
+     "id": "rs23.u1.q5",
+     "type": "stepwise",
+     "skill": "r-dduty",
+     "q": {
+      "en": "A senior asks you to backdate a file.",
+      "as": "জ্যেষ্ঠজনে ফাইলৰ তাৰিখ আগৰ কৰিবলৈ ক'লে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Decline and note it",
+         "as": "নাকচ কৰি লিখি ৰাখা"
+        },
+        {
+         "en": "Do it",
+         "as": "কৰা"
+        },
+        {
+         "en": "Tell everyone",
+         "as": "সকলোকে কোৱা"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Records must be true.",
+        "as": "নথি সত্য হ'ব লাগে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Records must be true.",
+      "as": "নথি সত্য হ'ব লাগে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A senior asks you to backdate a file.",
+        "as": "জ্যেষ্ঠজনে ফাইলৰ তাৰিখ আগৰ কৰিবলৈ ক'লে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Decline and note it",
+           "as": "নাকচ কৰি লিখি ৰাখা"
+          },
+          {
+           "en": "Do it",
+           "as": "কৰা"
+          },
+          {
+           "en": "Tell everyone",
+           "as": "সকলোকে কোৱা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Records must be true.",
+          "as": "নথি সত্য হ'ব লাগে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Records must be true.",
+        "as": "নথি সত্য হ'ব লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A request falls outside your office.",
+        "as": "অনুৰোধ তোমাৰ কাৰ্যালয়ৰ বাহিৰৰ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Decide anyway",
+           "as": "তথাপি সিদ্ধান্ত"
+          },
+          {
+           "en": "Ignore them",
+           "as": "এৰি দিয়া"
+          },
+          {
+           "en": "Direct them to the right office",
+           "as": "সঠিক কাৰ্যালয়লৈ পঠিওৱা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Guide, do not guess.",
+          "as": "পথ দেখুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Guide, do not guess.",
+        "as": "পথ দেখুওৱা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Safety comes first",
+    "as": "সুৰক্ষা আগতে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Protect life first.",
+     "as": "প্ৰথমে জীৱন।"
+    },
+    {
+     "en": "Then property.",
+     "as": "তাৰ পিছত সম্পত্তি।"
+    },
+    {
+     "en": "Call for help early.",
+     "as": "সোনকালে সহায় মাতা।"
+    },
+    {
+     "en": "Warn others.",
+     "as": "আনক সতৰ্ক কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs23.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Life before property",
+      "as": "সম্পত্তিৰ আগত জীৱন"
+     },
+     "text": [
+      {
+       "en": "In an emergency, ask who is in danger before what might be lost.",
+       "as": "জৰুৰী অৱস্থাত কি হেৰাব তাৰ আগতে কোন বিপদত সোধা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "People",
+        "as": "মানুহ"
+       },
+       {
+        "en": "Help",
+        "as": "সহায়"
+       },
+       {
+        "en": "Property",
+        "as": "সম্পত্তি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Report a hazard",
+      "as": "বিপদ জনোৱা"
+     },
+     "text": [
+      {
+       "en": "A hazard you ignore becomes someone else's accident.",
+       "as": "এৰি দিয়া বিপদ আনৰ দুৰ্ঘটনা হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Notice",
+        "as": "মন কৰা"
+       },
+       {
+        "en": "Warn",
+        "as": "সতৰ্ক"
+       },
+       {
+        "en": "Report",
+        "as": "জনোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u2.q1",
+     "type": "inline",
+     "skill": "r-dsafe",
+     "before": {
+      "en": "You smell gas in the office. The best first step is:",
+      "as": "কাৰ্যালয়ত গেছৰ গোন্ধ। প্ৰথম ভাল খোজ:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Get people out and call for help",
+       "as": "মানুহ উলিয়াই সহায় মাতা"
+      },
+      {
+       "en": "Finish your work",
+       "as": "কাম শেষ কৰা"
+      },
+      {
+       "en": "Light a match to check",
+       "as": "জুই জ্বলাই চোৱা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Life first.",
+      "as": "জীৱন আগতে।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "You smell gas in the office. The best first step is:",
+        "as": "কাৰ্যালয়ত গেছৰ গোন্ধ। প্ৰথম ভাল খোজ:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Get people out and call for help",
+         "as": "মানুহ উলিয়াই সহায় মাতা"
+        },
+        {
+         "en": "Finish your work",
+         "as": "কাম শেষ কৰা"
+        },
+        {
+         "en": "Light a match to check",
+         "as": "জুই জ্বলাই চোৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Life first.",
+        "as": "জীৱন আগতে।"
+       }
+      },
+      {
+       "before": {
+        "en": "A road is flooding near a school. The best first step is:",
+        "as": "বিদ্যালয়ৰ ওচৰৰ পথ বুৰিছে। প্ৰথম ভাল খোজ:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Wait and see",
+         "as": "অপেক্ষা"
+        },
+        {
+         "en": "Post a photo",
+         "as": "ফটো দিয়া"
+        },
+        {
+         "en": "Warn the school and authorities",
+         "as": "বিদ্যালয় আৰু কৰ্তৃপক্ষক জনোৱা"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Warn early.",
+        "as": "সোনকালে সতৰ্ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs23.u2.q2",
+     "type": "tf",
+     "skill": "r-dsafe",
+     "s": {
+      "en": "Saving files comes before leaving a burning building.",
+      "as": "জ্বলি থকা ঘৰৰ পৰা ওলোৱাৰ আগতে ফাইল বচোৱা।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Leave at once.",
+      "as": "লগে লগে ওলোৱা।"
+     }
+    },
+    {
+     "id": "rs23.u2.q3",
+     "type": "match",
+     "skill": "r-dsafe",
+     "q": {
+      "en": "Match the order of care",
+      "as": "যত্নৰ ক্ৰম মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "First",
+        "as": "প্ৰথম"
+       },
+       {
+        "en": "People",
+        "as": "মানুহ"
+       }
+      ],
+      [
+       {
+        "en": "Second",
+        "as": "দ্বিতীয়"
+       },
+       {
+        "en": "Environment",
+        "as": "পৰিৱেশ"
+       }
+      ],
+      [
+       {
+        "en": "Third",
+        "as": "তৃতীয়"
+       },
+       {
+        "en": "Property",
+        "as": "সম্পত্তি"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Life leads.",
+      "as": "জীৱন আগত।"
+     }
+    },
+    {
+     "id": "rs23.u2.q4",
+     "type": "order",
+     "skill": "r-dsafe",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Check for danger",
+       "as": "বিপদ চোৱা"
+      },
+      {
+       "en": "Move people",
+       "as": "মানুহ আঁতৰোৱা"
+      },
+      {
+       "en": "Call for help",
+       "as": "সহায় মাতা"
+      },
+      {
+       "en": "Report",
+       "as": "জনোৱা"
+      }
+     ],
+     "why": {
+      "en": "People first.",
+      "as": "মানুহ আগতে।"
+     }
+    },
+    {
+     "id": "rs23.u2.q5",
+     "type": "stepwise",
+     "skill": "r-dsafe",
+     "q": {
+      "en": "You see a bare wire on a wet floor.",
+      "as": "তিতা মজিয়াত উদং তাঁৰ।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Keep people away and report it",
+         "as": "মানুহ আঁতৰাই জনোৱা"
+        },
+        {
+         "en": "Touch it",
+         "as": "চুই চোৱা"
+        },
+        {
+         "en": "Ignore it",
+         "as": "এৰি দিয়া"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Isolate and report.",
+        "as": "পৃথক কৰি জনোৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Isolate and report.",
+      "as": "পৃথক কৰি জনোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "You see a bare wire on a wet floor.",
+        "as": "তিতা মজিয়াত উদং তাঁৰ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Keep people away and report it",
+           "as": "মানুহ আঁতৰাই জনোৱা"
+          },
+          {
+           "en": "Touch it",
+           "as": "চুই চোৱা"
+          },
+          {
+           "en": "Ignore it",
+           "as": "এৰি দিয়া"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Isolate and report.",
+          "as": "পৃথক কৰি জনোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Isolate and report.",
+        "as": "পৃথক কৰি জনোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A colleague faints.",
+        "as": "সহকৰ্মী অচেতন।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Keep working",
+           "as": "কাম চলোৱা"
+          },
+          {
+           "en": "Get medical help",
+           "as": "চিকিৎসা সহায়"
+          },
+          {
+           "en": "Film it",
+           "as": "ভিডিঅ'"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Help first.",
+          "as": "সহায় আগতে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Help first.",
+        "as": "সহায় আগতে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Fairness and inclusion",
+    "as": "ন্যায্যতা আৰু সামৰণি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Treat people equally.",
+     "as": "সকলোক সমান।"
+    },
+    {
+     "en": "Adjust for disability.",
+     "as": "দিব্যাংগৰ বাবে সলনি।"
+    },
+    {
+     "en": "Avoid favouritism.",
+     "as": "পক্ষপাত নকৰিবা।"
+    },
+    {
+     "en": "Give reasons for decisions.",
+     "as": "সিদ্ধান্তৰ কাৰণ দিয়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs23.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Equal is not always same",
+      "as": "সমান মানে সদায় একে নহয়"
+     },
+     "text": [
+      {
+       "en": "A ramp treats a wheelchair user fairly, though stairs are 'the same for all'.",
+       "as": "চকীৰ বাবে ৰেম্পেহে ন্যায্য।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "See the need",
+        "as": "প্ৰয়োজন"
+       },
+       {
+        "en": "Remove the barrier",
+        "as": "বাধা আঁতৰোৱা"
+       },
+       {
+        "en": "Equal access",
+        "as": "সমান সুযোগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "No favourites",
+      "as": "পক্ষপাত নাই"
+     },
+     "text": [
+      {
+       "en": "Relatives and friends get the same process as everyone.",
+       "as": "আত্মীয়-বন্ধুৱেও একে প্ৰক্ৰিয়া পায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Declare the link",
+        "as": "সম্পৰ্ক জনোৱা"
+       },
+       {
+        "en": "Step aside",
+        "as": "আঁতৰি থকা"
+       },
+       {
+        "en": "Same process",
+        "as": "একে প্ৰক্ৰিয়া"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u3.q1",
+     "type": "inline",
+     "skill": "r-dfair",
+     "before": {
+      "en": "A candidate who uses a wheelchair arrives at an upstairs office. The best response is:",
+      "as": "চকী ব্যৱহাৰকাৰী প্ৰাৰ্থী ওপৰ মহলাৰ কাৰ্যালয়লৈ আহিল। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Tell them to climb",
+       "as": "উঠিবলৈ কোৱা"
+      },
+      {
+       "en": "Send them away",
+       "as": "পঠিয়াই দিয়া"
+      },
+      {
+       "en": "Meet them on the ground floor",
+       "as": "তলৰ মহলাত লগ কৰা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Remove the barrier.",
+      "as": "বাধা আঁতৰোৱা।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A candidate who uses a wheelchair arrives at an upstairs office. The best response is:",
+        "as": "চকী ব্যৱহাৰকাৰী প্ৰাৰ্থী ওপৰ মহলাৰ কাৰ্যালয়লৈ আহিল। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Tell them to climb",
+         "as": "উঠিবলৈ কোৱা"
+        },
+        {
+         "en": "Send them away",
+         "as": "পঠিয়াই দিয়া"
+        },
+        {
+         "en": "Meet them on the ground floor",
+         "as": "তলৰ মহলাত লগ কৰা"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Remove the barrier.",
+        "as": "বাধা আঁতৰোৱা।"
+       }
+      },
+      {
+       "before": {
+        "en": "Your cousin applies to a post you are selecting for. The best response is:",
+        "as": "সম্পৰ্কীয়জনে তোমাৰ বাছনিৰ পদত আবেদন কৰিলে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Declare it and step aside",
+         "as": "জনাই আঁতৰি থকা"
+        },
+        {
+         "en": "Help them quietly",
+         "as": "গোপনে সহায়"
+        },
+        {
+         "en": "Say nothing",
+         "as": "একো নকোৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Declare conflicts.",
+        "as": "স্বাৰ্থৰ সংঘাত জনোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs23.u3.q2",
+     "type": "tf",
+     "skill": "r-dfair",
+     "s": {
+      "en": "Reasonable adjustment for disability is unfair to others.",
+      "as": "দিব্যাংগৰ বাবে সলনি আনৰ প্ৰতি অন্যায়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It gives equal access.",
+      "as": "ই সমান সুযোগ দিয়ে।"
+     }
+    },
+    {
+     "id": "rs23.u3.q3",
+     "type": "match",
+     "skill": "r-dfair",
+     "q": {
+      "en": "Match the principle",
+      "as": "নীতি মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Equal treatment",
+        "as": "সমান ব্যৱহাৰ"
+       },
+       {
+        "en": "Same rules for all",
+        "as": "সকলোলৈ একে নিয়ম"
+       }
+      ],
+      [
+       {
+        "en": "Equity",
+        "as": "সমতা"
+       },
+       {
+        "en": "Support by need",
+        "as": "প্ৰয়োজন অনুসৰি সহায়"
+       }
+      ],
+      [
+       {
+        "en": "Impartiality",
+        "as": "নিৰপেক্ষতা"
+       },
+       {
+        "en": "No favourites",
+        "as": "পক্ষপাত নাই"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Three ideas.",
+      "as": "তিনিটা ধাৰণা।"
+     }
+    },
+    {
+     "id": "rs23.u3.q4",
+     "type": "order",
+     "skill": "r-dfair",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Spot the barrier",
+       "as": "বাধা চিনা"
+      },
+      {
+       "en": "Ask what is needed",
+       "as": "প্ৰয়োজন সোধা"
+      },
+      {
+       "en": "Adjust",
+       "as": "সলনি"
+      },
+      {
+       "en": "Check it worked",
+       "as": "নিশ্চিত"
+      }
+     ],
+     "why": {
+      "en": "Ask, do not assume.",
+      "as": "ধৰি নলৈ সোধা।"
+     }
+    },
+    {
+     "id": "rs23.u3.q5",
+     "type": "stepwise",
+     "skill": "r-dfair",
+     "q": {
+      "en": "Two equal applicants differ only by religion.",
+      "as": "দুজন সমান প্ৰাৰ্থীৰ কেৱল ধৰ্ম বেলেগ।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Ignore religion entirely",
+         "as": "ধৰ্ম এৰি চলা"
+        },
+        {
+         "en": "Prefer your own",
+         "as": "নিজৰটো"
+        },
+        {
+         "en": "Ask about it",
+         "as": "সোধা"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It is irrelevant.",
+        "as": "ই অপ্ৰাসংগিক।"
+       }
+      }
+     ],
+     "why": {
+      "en": "It is irrelevant.",
+      "as": "ই অপ্ৰাসংগিক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two equal applicants differ only by religion.",
+        "as": "দুজন সমান প্ৰাৰ্থীৰ কেৱল ধৰ্ম বেলেগ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Ignore religion entirely",
+           "as": "ধৰ্ম এৰি চলা"
+          },
+          {
+           "en": "Prefer your own",
+           "as": "নিজৰটো"
+          },
+          {
+           "en": "Ask about it",
+           "as": "সোধা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It is irrelevant.",
+          "as": "ই অপ্ৰাসংগিক।"
+         }
+        }
+       ],
+       "why": {
+        "en": "It is irrelevant.",
+        "as": "ই অপ্ৰাসংগিক।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rural woman cannot read the form.",
+        "as": "গ্ৰাম্য মহিলাই প্ৰপত্ৰ পঢ়িব নোৱাৰে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Laugh",
+           "as": "হাঁহা"
+          },
+          {
+           "en": "Read it out and help",
+           "as": "পঢ়ি শুনাই সহায়"
+          },
+          {
+           "en": "Refuse service",
+           "as": "সেৱা নাকচ"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Serve all.",
+          "as": "সকলোক সেৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Serve all.",
+        "as": "সকলোক সেৱা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Integrity",
+    "as": "সততা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Refuse gifts for duty.",
+     "as": "কৰ্তব্যৰ বাবে উপহাৰ নলবা।"
+    },
+    {
+     "en": "Admit your mistakes.",
+     "as": "ভুল স্বীকাৰ কৰা।"
+    },
+    {
+     "en": "Protect public money.",
+     "as": "ৰাজহুৱা ধন ৰক্ষা কৰা।"
+    },
+    {
+     "en": "Report wrongdoing.",
+     "as": "অন্যায় জনোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs23.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Doing right when unseen",
+      "as": "নেদেখাতো শুদ্ধ কাম"
+     },
+     "text": [
+      {
+       "en": "Integrity is the same conduct whether watched or not.",
+       "as": "সততা মানে চোৱা হওক বা নহওক, একে আচৰণ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Right action",
+        "as": "শুদ্ধ কাম"
+       },
+       {
+        "en": "No audience",
+        "as": "দৰ্শক নাই"
+       },
+       {
+        "en": "Same choice",
+        "as": "একে বাছনি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Own your mistakes",
+      "as": "ভুল স্বীকাৰ"
+     },
+     "text": [
+      {
+       "en": "Reporting your error early limits harm and keeps trust.",
+       "as": "সোনকালে ভুল জনালে ক্ষতি কম, বিশ্বাস থাকে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Notice",
+        "as": "মন কৰা"
+       },
+       {
+        "en": "Report",
+        "as": "জনোৱা"
+       },
+       {
+        "en": "Correct",
+        "as": "শুধৰোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u4.q1",
+     "type": "inline",
+     "skill": "r-dhonest",
+     "before": {
+      "en": "A contractor offers you a gift before a tender decision. The best response is:",
+      "as": "নিবিদাৰ আগতে ঠিকাদাৰে উপহাৰ দিলে। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Accept quietly",
+       "as": "গোপনে লোৱা"
+      },
+      {
+       "en": "Refuse and report it",
+       "as": "নাকচ কৰি জনোৱা"
+      },
+      {
+       "en": "Ask for more",
+       "as": "আৰু বিচৰা"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Gifts compromise decisions.",
+      "as": "উপহাৰে সিদ্ধান্ত বিগাৰে।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A contractor offers you a gift before a tender decision. The best response is:",
+        "as": "নিবিদাৰ আগতে ঠিকাদাৰে উপহাৰ দিলে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Accept quietly",
+         "as": "গোপনে লোৱা"
+        },
+        {
+         "en": "Refuse and report it",
+         "as": "নাকচ কৰি জনোৱা"
+        },
+        {
+         "en": "Ask for more",
+         "as": "আৰু বিচৰা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Gifts compromise decisions.",
+        "as": "উপহাৰে সিদ্ধান্ত বিগাৰে।"
+       }
+      },
+      {
+       "before": {
+        "en": "You notice your own error in a payment list. The best response is:",
+        "as": "পৰিশোধৰ তালিকাত নিজৰ ভুল দেখিলে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Report and correct it",
+         "as": "জনাই শুধৰোৱা"
+        },
+        {
+         "en": "Blame a clerk",
+         "as": "কেৰাণীক দোষ"
+        },
+        {
+         "en": "Hide it",
+         "as": "লুকুওৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Own it.",
+        "as": "স্বীকাৰ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs23.u4.q2",
+     "type": "tf",
+     "skill": "r-dhonest",
+     "s": {
+      "en": "Small bribes are acceptable if everyone takes them.",
+      "as": "সকলোৱে ল'লে সৰু উৎকোচ চলে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "A bribe is a bribe.",
+      "as": "উৎকোচ উৎকোচেই।"
+     }
+    },
+    {
+     "id": "rs23.u4.q3",
+     "type": "match",
+     "skill": "r-dhonest",
+     "q": {
+      "en": "Match the action to the value",
+      "as": "কামক মূল্যবোধৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Refuse a gift",
+        "as": "উপহাৰ নাকচ"
+       },
+       {
+        "en": "Honesty",
+        "as": "সততা"
+       }
+      ],
+      [
+       {
+        "en": "Admit an error",
+        "as": "ভুল স্বীকাৰ"
+       },
+       {
+        "en": "Accountability",
+        "as": "জবাবদিহিতা"
+       }
+      ],
+      [
+       {
+        "en": "Save public funds",
+        "as": "ৰাজহুৱা ধন ৰক্ষা"
+       },
+       {
+        "en": "Stewardship",
+        "as": "ন্যাসৰক্ষা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name the value.",
+      "as": "মূল্যবোধৰ নাম।"
+     }
+    },
+    {
+     "id": "rs23.u4.q4",
+     "type": "order",
+     "skill": "r-dhonest",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Notice the error",
+       "as": "ভুল মন কৰা"
+      },
+      {
+       "en": "Stop further harm",
+       "as": "ক্ষতি ৰখোৱা"
+      },
+      {
+       "en": "Report it",
+       "as": "জনোৱা"
+      },
+      {
+       "en": "Correct it",
+       "as": "শুধৰোৱা"
+      }
+     ],
+     "why": {
+      "en": "Stop, tell, fix.",
+      "as": "ৰখোৱা, জনোৱা, শুধৰোৱা।"
+     }
+    },
+    {
+     "id": "rs23.u4.q5",
+     "type": "stepwise",
+     "skill": "r-dhonest",
+     "q": {
+      "en": "A colleague misuses office funds.",
+      "as": "সহকৰ্মীয়ে কাৰ্যালয়ৰ ধন অপব্যৱহাৰ কৰিছে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Post online",
+         "as": "অনলাইনত দিয়া"
+        },
+        {
+         "en": "Report through proper channels",
+         "as": "সঠিক পথে জনোৱা"
+        },
+        {
+         "en": "Ask for a share",
+         "as": "ভাগ বিচৰা"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Use the right channel.",
+        "as": "সঠিক পথ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Use the right channel.",
+      "as": "সঠিক পথ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A colleague misuses office funds.",
+        "as": "সহকৰ্মীয়ে কাৰ্যালয়ৰ ধন অপব্যৱহাৰ কৰিছে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Post online",
+           "as": "অনলাইনত দিয়া"
+          },
+          {
+           "en": "Report through proper channels",
+           "as": "সঠিক পথে জনোৱা"
+          },
+          {
+           "en": "Ask for a share",
+           "as": "ভাগ বিচৰা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Use the right channel.",
+          "as": "সঠিক পথ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Use the right channel.",
+        "as": "সঠিক পথ।"
+       }
+      },
+      {
+       "q": {
+        "en": "You are told exam questions early.",
+        "as": "তোমাক আগতে প্ৰশ্ন জনোৱা হ'ল।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Use them",
+           "as": "ব্যৱহাৰ"
+          },
+          {
+           "en": "Share them",
+           "as": "বিলোৱা"
+          },
+          {
+           "en": "Refuse and report",
+           "as": "নাকচ কৰি জনোৱা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Protect fairness.",
+          "as": "ন্যায্যতা ৰক্ষা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Protect fairness.",
+        "as": "ন্যায্যতা ৰক্ষা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Working in teams",
+    "as": "দলত কাম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Share credit.",
+     "as": "কৃতিত্ব ভগাই লোৱা।"
+    },
+    {
+     "en": "Resolve conflict directly.",
+     "as": "সংঘাত পোনে পোনে সমাধান।"
+    },
+    {
+     "en": "Divide work by strength.",
+     "as": "দক্ষতা অনুসৰি কাম।"
+    },
+    {
+     "en": "Support weaker members.",
+     "as": "দুৰ্বলক সহায়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs23.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "Conflict is about issues",
+      "as": "সংঘাত বিষয়ৰ"
+     },
+     "text": [
+      {
+       "en": "Discuss the problem, not the person, and look for shared goals.",
+       "as": "ব্যক্তি নহয়, সমস্যা; উমৈহতীয়া লক্ষ্য বিচাৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Listen to both",
+        "as": "দুয়োজনক শুনা"
+       },
+       {
+        "en": "Find common ground",
+        "as": "উমৈহতীয়া"
+       },
+       {
+        "en": "Agree a step",
+        "as": "খোজত সন্মতি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Leaders serve the team",
+      "as": "নেতাই দলক সেৱা কৰে"
+     },
+     "text": [
+      {
+       "en": "Good leaders share credit and take responsibility.",
+       "as": "ভাল নেতাই কৃতিত্ব ভগায়, দায়িত্ব লয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Clear roles",
+        "as": "স্পষ্ট ভূমিকা"
+       },
+       {
+        "en": "Support",
+        "as": "সহায়"
+       },
+       {
+        "en": "Shared credit",
+        "as": "ভগোৱা কৃতিত্ব"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u5.q1",
+     "type": "inline",
+     "skill": "r-dteam",
+     "before": {
+      "en": "Two team members argue over a task. The best response is:",
+      "as": "দুজন সদস্যৰ কামৰ বিষয়ে তৰ্ক। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Hear both and agree roles",
+       "as": "দুয়োজনক শুনি ভূমিকা ঠিক কৰা"
+      },
+      {
+       "en": "Ignore it",
+       "as": "এৰি দিয়া"
+      },
+      {
+       "en": "Take one side",
+       "as": "এফাল লোৱা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Hear both.",
+      "as": "দুয়োজনক শুনা।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "Two team members argue over a task. The best response is:",
+        "as": "দুজন সদস্যৰ কামৰ বিষয়ে তৰ্ক। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Hear both and agree roles",
+         "as": "দুয়োজনক শুনি ভূমিকা ঠিক কৰা"
+        },
+        {
+         "en": "Ignore it",
+         "as": "এৰি দিয়া"
+        },
+        {
+         "en": "Take one side",
+         "as": "এফাল লোৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Hear both.",
+        "as": "দুয়োজনক শুনা।"
+       }
+      },
+      {
+       "before": {
+        "en": "Your team's project wins praise. The best response is:",
+        "as": "দলৰ প্ৰকল্পে প্ৰশংসা পালে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Credit the whole team",
+         "as": "গোটেই দলক কৃতিত্ব"
+        },
+        {
+         "en": "Claim it alone",
+         "as": "অকলে দাবী"
+        },
+        {
+         "en": "Stay away",
+         "as": "আঁতৰি থকা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Share credit.",
+        "as": "কৃতিত্ব ভগোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs23.u5.q2",
+     "type": "tf",
+     "skill": "r-dteam",
+     "s": {
+      "en": "A leader should take credit and share blame.",
+      "as": "নেতাই কৃতিত্ব ল'ব, দোষ ভগাব লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is the reverse.",
+      "as": "ওলোটা।"
+     }
+    },
+    {
+     "id": "rs23.u5.q3",
+     "type": "match",
+     "skill": "r-dteam",
+     "q": {
+      "en": "Match the situation to the action",
+      "as": "অৱস্থাক কামৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Unclear roles",
+        "as": "অস্পষ্ট ভূমিকা"
+       },
+       {
+        "en": "Define them",
+        "as": "ঠিক কৰা"
+       }
+      ],
+      [
+       {
+        "en": "A struggling member",
+        "as": "অসুবিধাত সদস্য"
+       },
+       {
+        "en": "Support them",
+        "as": "সহায়"
+       }
+      ],
+      [
+       {
+        "en": "A dispute",
+        "as": "বিবাদ"
+       },
+       {
+        "en": "Hear both",
+        "as": "দুয়োকে শুনা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name the need.",
+      "as": "প্ৰয়োজনৰ নাম।"
+     }
+    },
+    {
+     "id": "rs23.u5.q4",
+     "type": "order",
+     "skill": "r-dteam",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Hear each side",
+       "as": "প্ৰতিফাল শুনা"
+      },
+      {
+       "en": "Find the issue",
+       "as": "বিষয় উলিওৱা"
+      },
+      {
+       "en": "Agree a step",
+       "as": "খোজত সন্মতি"
+      },
+      {
+       "en": "Check back",
+       "as": "পৰীক্ষা"
+      }
+     ],
+     "why": {
+      "en": "Listen first.",
+      "as": "শুনা আগতে।"
+     }
+    },
+    {
+     "id": "rs23.u5.q5",
+     "type": "stepwise",
+     "skill": "r-dteam",
+     "q": {
+      "en": "A teammate misses a deadline.",
+      "as": "সতীৰ্থই সময়সীমা হেৰুৱালে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Do nothing",
+         "as": "একো নকৰা"
+        },
+        {
+         "en": "Ask what happened and help",
+         "as": "কি হ'ল সুধি সহায়"
+        },
+        {
+         "en": "Scold publicly",
+         "as": "ৰাজহুৱাকৈ গালি"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Understand, then act.",
+        "as": "বুজি কাম।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Understand, then act.",
+      "as": "বুজি কাম।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A teammate misses a deadline.",
+        "as": "সতীৰ্থই সময়সীমা হেৰুৱালে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Do nothing",
+           "as": "একো নকৰা"
+          },
+          {
+           "en": "Ask what happened and help",
+           "as": "কি হ'ল সুধি সহায়"
+          },
+          {
+           "en": "Scold publicly",
+           "as": "ৰাজহুৱাকৈ গালি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Understand, then act.",
+          "as": "বুজি কাম।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Understand, then act.",
+        "as": "বুজি কাম।"
+       }
+      },
+      {
+       "q": {
+        "en": "A task needs skills you lack.",
+        "as": "কামত তোমাৰ নথকা দক্ষতা লাগে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Quit",
+           "as": "এৰি দিয়া"
+          },
+          {
+           "en": "Ask a skilled colleague",
+           "as": "দক্ষ সহকৰ্মীক সোধা"
+          },
+          {
+           "en": "Hide it",
+           "as": "লুকুওৱা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Use the team.",
+          "as": "দল ব্যৱহাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Use the team.",
+        "as": "দল ব্যৱহাৰ।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "In a crisis",
+    "as": "সংকটত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Stay calm.",
+     "as": "শান্ত থাকা।"
+    },
+    {
+     "en": "Get accurate facts.",
+     "as": "সঠিক তথ্য।"
+    },
+    {
+     "en": "Inform the public truthfully.",
+     "as": "ৰাইজক সত্য জনোৱা।"
+    },
+    {
+     "en": "Stop rumours early.",
+     "as": "গুজৱ সোনকালে ৰখোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs23.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Facts beat rumours",
+      "as": "তথ্যই গুজৱ হৰায়"
+     },
+     "text": [
+      {
+       "en": "In a flood or outbreak, clear official information stops panic.",
+       "as": "বান বা মহামাৰীত স্পষ্ট চৰকাৰী তথ্যই আতংক ৰখায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Check facts",
+        "as": "তথ্য চোৱা"
+       },
+       {
+        "en": "Tell the public",
+        "as": "ৰাইজক জনোৱা"
+       },
+       {
+        "en": "Update often",
+        "as": "সঘনে জনোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "First steps",
+      "as": "প্ৰথম খোজ"
+     },
+     "text": [
+      {
+       "en": "Protect people, inform authorities, then organise relief.",
+       "as": "মানুহ ৰক্ষা, কৰ্তৃপক্ষক জনোৱা, তাৰ পিছত সাহায্য।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Rescue",
+        "as": "উদ্ধাৰ"
+       },
+       {
+        "en": "Report",
+        "as": "জনোৱা"
+       },
+       {
+        "en": "Relief",
+        "as": "সাহায্য"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs23.u6.q1",
+     "type": "inline",
+     "skill": "r-dcrisis",
+     "before": {
+      "en": "A rumour says a dam will burst. The best first step is:",
+      "as": "গুজৱ: বান্ধ ভাঙিব। প্ৰথম ভাল খোজ:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Verify and share official facts",
+       "as": "সত্য চাই চৰকাৰী তথ্য দিয়া"
+      },
+      {
+       "en": "Say nothing",
+       "as": "একো নকোৱা"
+      },
+      {
+       "en": "Forward it",
+       "as": "আগবঢ়োৱা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Check, then tell.",
+      "as": "চাই জনোৱা।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A rumour says a dam will burst. The best first step is:",
+        "as": "গুজৱ: বান্ধ ভাঙিব। প্ৰথম ভাল খোজ:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Verify and share official facts",
+         "as": "সত্য চাই চৰকাৰী তথ্য দিয়া"
+        },
+        {
+         "en": "Say nothing",
+         "as": "একো নকোৱা"
+        },
+        {
+         "en": "Forward it",
+         "as": "আগবঢ়োৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Check, then tell.",
+        "as": "চাই জনোৱা।"
+       }
+      },
+      {
+       "before": {
+        "en": "Relief supplies are short in your block. The best first step is:",
+        "as": "খণ্ডত সাহায্য কম। প্ৰথম ভাল খোজ:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Stop distribution",
+         "as": "বিতৰণ বন্ধ"
+        },
+        {
+         "en": "Prioritise the most vulnerable",
+         "as": "দুৰ্বলক অগ্ৰাধিকাৰ"
+        },
+        {
+         "en": "Serve friends first",
+         "as": "বন্ধুক আগতে"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Greatest need first.",
+        "as": "বেছি প্ৰয়োজন আগতে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs23.u6.q2",
+     "type": "tf",
+     "skill": "r-dcrisis",
+     "s": {
+      "en": "Forwarding unverified warnings helps in a crisis.",
+      "as": "সংকটত অপ্ৰমাণিত সতৰ্কবাণী আগবঢ়োৱা সহায়ক।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It spreads panic.",
+      "as": "ই আতংক বিয়পায়।"
+     }
+    },
+    {
+     "id": "rs23.u6.q3",
+     "type": "match",
+     "skill": "r-dcrisis",
+     "q": {
+      "en": "Match the crisis step",
+      "as": "সংকটৰ খোজ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Rumour",
+        "as": "গুজৱ"
+       },
+       {
+        "en": "Verify",
+        "as": "সত্যাপন"
+       }
+      ],
+      [
+       {
+        "en": "Injury",
+        "as": "আঘাত"
+       },
+       {
+        "en": "First aid",
+        "as": "প্ৰাথমিক চিকিৎসা"
+       }
+      ],
+      [
+       {
+        "en": "Shortage",
+        "as": "অভাৱ"
+       },
+       {
+        "en": "Prioritise",
+        "as": "অগ্ৰাধিকাৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each has a response.",
+      "as": "প্ৰতিটোৰ সঁহাৰি।"
+     }
+    },
+    {
+     "id": "rs23.u6.q4",
+     "type": "order",
+     "skill": "r-dcrisis",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Make people safe",
+       "as": "মানুহ সুৰক্ষিত"
+      },
+      {
+       "en": "Get the facts",
+       "as": "তথ্য"
+      },
+      {
+       "en": "Inform the public",
+       "as": "ৰাইজক জনোৱা"
+      },
+      {
+       "en": "Review afterwards",
+       "as": "পিছত পৰ্যালোচনা"
+      }
+     ],
+     "why": {
+      "en": "Safety, facts, information, review.",
+      "as": "সুৰক্ষা, তথ্য, জনোৱা, পৰ্যালোচনা।"
+     }
+    },
+    {
+     "id": "rs23.u6.q5",
+     "type": "stepwise",
+     "skill": "r-dcrisis",
+     "q": {
+      "en": "Crowds gather at a relief camp.",
+      "as": "সাহায্য শিবিৰত ভিৰ।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Shout at them",
+         "as": "চিঞৰা"
+        },
+        {
+         "en": "Organise queues calmly",
+         "as": "শান্তভাৱে শাৰী"
+        },
+        {
+         "en": "Close the camp",
+         "as": "শিবিৰ বন্ধ"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Order saves time.",
+        "as": "শৃংখলাই সময় ৰাহি।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Order saves time.",
+      "as": "শৃংখলাই সময় ৰাহি।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Crowds gather at a relief camp.",
+        "as": "সাহায্য শিবিৰত ভিৰ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Shout at them",
+           "as": "চিঞৰা"
+          },
+          {
+           "en": "Organise queues calmly",
+           "as": "শান্তভাৱে শাৰী"
+          },
+          {
+           "en": "Close the camp",
+           "as": "শিবিৰ বন্ধ"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Order saves time.",
+          "as": "শৃংখলাই সময় ৰাহি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Order saves time.",
+        "as": "শৃংখলাই সময় ৰাহি।"
+       }
+      },
+      {
+       "q": {
+        "en": "The media asks for details you lack.",
+        "as": "সংবাদ মাধ্যমে নথকা তথ্য সুধিলে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Lie",
+           "as": "মিছা"
+          },
+          {
+           "en": "Guess",
+           "as": "অনুমান"
+          },
+          {
+           "en": "Say what is known and promise updates",
+           "as": "জনাখিনি কৈ পিছত জনাম বুলি কোৱা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Honest and brief.",
+          "as": "সৎ আৰু চুটি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Honest and brief.",
+        "as": "সৎ আৰু চুটি।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Decision making test",
+   "as": "সিদ্ধান্ত গ্ৰহণৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs23.t.q1",
+    "type": "tf",
+    "skill": "r-dduty",
+    "s": {
+     "en": "Refer decisions beyond your authority.",
+     "as": "ক্ষমতাৰ বাহিৰৰ সিদ্ধান্ত ওপৰলৈ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs23.t.q2",
+    "type": "tf",
+    "skill": "r-dsafe",
+    "s": {
+     "en": "Life comes before property.",
+     "as": "সম্পত্তিৰ আগত জীৱন।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs23.t.q3",
+    "type": "tf",
+    "skill": "r-dfair",
+    "s": {
+     "en": "Declare any personal link to a candidate.",
+     "as": "প্ৰাৰ্থীৰ লগত ব্যক্তিগত সম্পৰ্ক জনোৱা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs23.t.q4",
+    "type": "tf",
+    "skill": "r-dhonest",
+    "s": {
+     "en": "A gift before a tender can be kept if small.",
+     "as": "নিবিদাৰ আগৰ সৰু উপহাৰ ৰাখিব পাৰি।"
+    },
+    "answer": false,
+    "why": {
+     "en": "Refuse it.",
+     "as": "নাকচ কৰা।"
+    }
+   },
+   {
+    "id": "rs23.t.q5",
+    "type": "tf",
+    "skill": "r-dteam",
+    "s": {
+     "en": "Good leaders share credit.",
+     "as": "ভাল নেতাই কৃতিত্ব ভগায়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs23.t.q6",
+    "type": "tf",
+    "skill": "r-dcrisis",
+    "s": {
+     "en": "Verify before sharing in a crisis.",
+     "as": "সংকটত বিলোৱাৰ আগতে সত্য চোৱা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   }
+  ]
+ }
+}

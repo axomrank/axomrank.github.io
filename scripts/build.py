@@ -16,7 +16,7 @@ NEED = {"mcq": ["q", "options", "answer", "why"], "tf": ["s", "answer", "why"], 
         "whoami": ["clues", "options", "answer", "why"], "spot": ["tokens", "wrong", "fix", "why"], "timeline": ["anchors", "items", "why"],
         "map": ["q", "target", "choices", "why"], "story": ["title", "text"],
         "solve": ["q", "answer", "why"], "explore": ["q", "widget", "target", "answerText", "why"], "stepwise": ["q", "parts", "why"]}
-WIDGET_KINDS = {"exterior", "tangent", "fence", "fracbar", "grid100", "numline", "peel", "hops", "blocks", "line", "array", "gears", "tiles", "dial", "cuts", "area", "dual", "ray", "level", "seesaw", "chain", "order", "square", "diffsq", "pairs", "ladder", "twosale", "growth", "tank", "mandays", "track", "journey", "ages", "stairs", "triangle", "quarter", "tower", "scaleup", "shear", "sticks", "kite", "roll", "sectors", "stack", "net", "pour", "shift", "walk", "venn", "setpick", "alpha", "gaps", "tree", "queue", "seats", "oddday", "hands"}
+WIDGET_KINDS = {"exterior", "tangent", "fence", "fracbar", "grid100", "numline", "peel", "hops", "blocks", "line", "array", "gears", "tiles", "dial", "cuts", "area", "dual", "ray", "level", "seesaw", "chain", "order", "square", "diffsq", "pairs", "ladder", "twosale", "growth", "tank", "mandays", "track", "journey", "ages", "stairs", "triangle", "quarter", "tower", "scaleup", "shear", "sticks", "kite", "roll", "sectors", "stack", "net", "pour", "shift", "walk", "venn", "setpick", "alpha", "gaps", "tree", "queue", "seats", "oddday", "hands", "figpick", "dicenet", "numgrid", "bars"}
 errors = []
 def err(msg): errors.append(msg)
 

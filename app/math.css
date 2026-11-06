@@ -226,3 +226,20 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .ody span { text-align: center; padding: 8px 0; border-radius: 8px; background: #EEF4FB; font-size: 12px; font-weight: 800; }
 .ody span.on { background: #D8930B; color: #fff; }
 .hnd { display: block; width: 100%; max-width: 230px; margin: 0 auto; }
+.fgs { display: flex; justify-content: center; gap: 6px; margin-bottom: 10px; }
+.fgs span { width: 23%; max-width: 76px; aspect-ratio: 1; border: 1px solid #C9D8E8; border-radius: 8px; background: #fff; display: flex; align-items: center; justify-content: center; }
+.fgs span.q { font-size: 30px; font-weight: 900; color: #D3323F; }
+.fgs svg { width: 100%; }
+.dnt > div { display: flex; justify-content: center; gap: 4px; margin-bottom: 4px; }
+.dnt i, .dnt .tile { width: 50px; height: 50px; padding: 0; font-size: 20px; }
+.dnt .tile.mk { background: #FBE4E6; }
+.dnt .tile.sel { outline: 3px solid #D8930B; }
+.ngd { display: grid; grid-template-columns: repeat(var(--c), 1fr); gap: 4px; max-width: 260px; margin: 0 auto 10px; }
+.ngd span { padding: 13px 0; text-align: center; font-weight: 900; font-size: 19px; border: 1px solid #C9D8E8; border-radius: 8px; background: #fff; }
+.ngd span.q { color: #D3323F; background: #FBEFD5; }
+.brs { display: flex; align-items: flex-end; justify-content: center; gap: 8px; min-height: 180px; border-bottom: 2px solid #16305C; }
+.brc { flex: 1; max-width: 62px; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; }
+.brc b { display: block; font-size: 13px; }
+.brc i { display: block; background: #1F5FBF; border-radius: 4px 4px 0 0; }
+.brc.sel i { background: #D8930B; }
+.brc span { display: block; font-size: 11px; font-weight: 800; padding: 3px 0; }
