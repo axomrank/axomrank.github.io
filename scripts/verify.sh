@@ -13,6 +13,7 @@ python3 scripts/check_reasoning.py
 python3 scripts/check_constitution.py
 python3 scripts/check_indian_history.py
 python3 scripts/check_history_completion.py
+python3 scripts/check_asof.py
 node scripts/check_daily_review.cjs
 node scripts/check_learning_gates.cjs
 node scripts/check_skill_model.cjs

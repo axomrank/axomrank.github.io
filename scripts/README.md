@@ -23,6 +23,7 @@ Nothing in `scripts/` is deployed or loaded by the app.
 | `audit_math_division.py` | Lists `//` divisions that drop a remainder, for a person to check |
 | `check_constitution.py`, `check_indian_history.py`, `check_history_completion.py` | Course scope and content |
 | `check_daily_review.cjs`, `check_learning_gates.cjs` | Review queue, retries, 80% gates, test-outs, checkpoints |
+| `check_asof.py` | Lists lesson facts whose `asOf` date is over 12 months old; never fails |
 | `autoplay.js` | Browser helper for player checks, loaded into a running page |
 
 ## Generators

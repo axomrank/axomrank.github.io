@@ -1,6 +1,6 @@
 # General Science and Environment course plan
 
-Status: private draft since 2026-11-06. Lessons 7, 8 and 12 exist; open
+Status: private draft since 2026-11-06. Lessons 7, 8, 10, 11 and 12 exist; open
 `index.html?course=general-science` on the local server. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 

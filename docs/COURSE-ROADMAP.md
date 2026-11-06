@@ -9,7 +9,7 @@ subject tags are unverified. The lesson maps are in
 |---:|---|---|---:|---:|---|
 | 1 | English | [ENGLISH-COURSE.md](ENGLISH-COURSE.md) | 379 | 15 | Built in local catalog |
 | 2 | General Awareness | [GENERAL-AWARENESS-COURSE.md](GENERAL-AWARENESS-COURSE.md) | 166 | 7 | Built in local catalog |
-| 3 | General Science and Environment | [GENERAL-SCIENCE-COURSE.md](GENERAL-SCIENCE-COURSE.md) | 137 | 12 | Private draft: 3 of 12 lessons |
+| 3 | General Science and Environment | [GENERAL-SCIENCE-COURSE.md](GENERAL-SCIENCE-COURSE.md) | 137 | 12 | Private draft: 5 of 12 lessons |
 | 4 | Child Development and Pedagogy | [PEDAGOGY-COURSE.md](PEDAGOGY-COURSE.md) | 55 | 10 | Coming soon |
 
 **If TET is the priority,** move Pedagogy ahead of Science: it is 17% of the TET sample and

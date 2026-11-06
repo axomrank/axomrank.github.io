@@ -1,6 +1,6 @@
 # General Science and Environment sources
 
-Status on 2026-11-06. The pilot lessons were written from standard school science and
+Status on 2026-11-06. Lessons 7, 8, 10, 11 and 12 were written from standard school science and
 general reference knowledge. No source passage has been read in full yet, so the "sources
 read" release gate is not met. Each lesson's `sources` list says which entries are leads.
 
