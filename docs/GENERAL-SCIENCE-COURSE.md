@@ -1,7 +1,7 @@
 # General Science and Environment course plan
 
-Status: private draft since 2026-11-06. All 12 lessons exist; open
-`index.html?course=general-science` on the local server. Lesson format and permanent-id rules in
+Status: listed in the local catalog on 2026-11-06 at the user's request, with a pending-review
+notice. All 12 lessons exist. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
 A learner should be able to explain everyday things, not just recall terms.
@@ -79,8 +79,7 @@ than 12 months. That check also serves General Awareness.
 Build checks pass. Sources are read and recorded. Every changing figure has an `asOf` date.
 A subject reviewer checks facts, and a fluent reader checks technical Assamese terms.
 
-## Remaining before listing
+## Still to do
 
-The course stays `draft` in its course file until these are settled: source passages read,
-subject review, Assamese review, and a question bank. To list it, add it to the `science`
-subject in `content/catalog.json`.
+Read source passages, complete subject and Assamese review, and fill the question bank.
+Remove the review notice from the `science` subject in `content/catalog.json` once reviewed.
