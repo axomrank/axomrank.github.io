@@ -1,0 +1,3741 @@
+{
+ "id": "rs-09-direction",
+ "course": "reasoning",
+ "no": 9,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Direction sense",
+  "as": "দিশ জ্ঞান"
+ },
+ "reign": {
+  "en": "Turns, routes, distance, shadows",
+  "as": "ঘূৰণি, পথ, দূৰত্ব, ছাঁ"
+ },
+ "portrait": "reasoning/position.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Your left is not west",
+    "as": "তোমাৰ বাওঁফাল পশ্চিম নহয়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "North, east, south and west never move.",
+     "as": "উত্তৰ, পূব, দক্ষিণ আৰু পশ্চিম সলনি নহয়।"
+    },
+    {
+     "en": "Left and right turn with you.",
+     "as": "বাওঁ আৰু সোঁ তোমাৰ লগত ঘূৰে।"
+    },
+    {
+     "en": "A right turn moves clockwise: N, E, S, W.",
+     "as": "সোঁ ঘূৰণি ঘড়ীৰ কাঁটাৰ দিশে: উ, পূ, দ, প।"
+    },
+    {
+     "en": "Two right turns make you face the opposite way.",
+     "as": "দুটা সোঁ ঘূৰণিয়ে ওলোটা মুখ কৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs9.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Left and right travel with you",
+      "as": "বাওঁ-সোঁ তোমাৰ লগত যায়"
+     },
+     "text": [
+      {
+       "en": "The map's directions stay still. Your left and right do not. Turn the walker and watch the L and R labels.",
+       "as": "মানচিত্ৰৰ দিশ স্থিৰ। তোমাৰ বাওঁ-সোঁ স্থিৰ নহয়। খোজকাৰীক ঘূৰাই বাওঁ-সোঁ চিন চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "walk",
+      "f": 0,
+      "turnOnly": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Turn right once.",
+        "as": "এবাৰ সোঁফালে ঘূৰা।"
+       },
+       "goal": {
+        "f": 1
+       },
+       "then": {
+        "en": "You face east. Your left now points north, not west.",
+        "as": "তুমি পূবলৈ মুখ কৰিলা। তোমাৰ বাওঁফাল এতিয়া উত্তৰ, পশ্চিম নহয়।"
+       }
+      },
+      {
+       "do": {
+        "en": "Turn until you face south.",
+        "as": "দক্ষিণলৈ মুখ নোহোৱালৈ ঘূৰা।"
+       },
+       "goal": {
+        "f": 2
+       },
+       "then": {
+        "en": "Facing south, your left is east. It is the opposite of the map.",
+        "as": "দক্ষিণলৈ মুখ কৰিলে বাওঁফাল পূব। মানচিত্ৰৰ ওলোটা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Turning is moving round a clock",
+      "as": "ঘূৰণি মানে ঘড়ীৰ দিশ"
+     },
+     "text": [
+      {
+       "en": "Say the order aloud: north, east, south, west. Right steps forward through it, and left steps back.",
+       "as": "ক্ৰমটো মাতি কোৱা: উত্তৰ, পূব, দক্ষিণ, পশ্চিম। সোঁ আগলৈ, বাওঁ পিছলৈ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "North",
+        "as": "উত্তৰ"
+       },
+       {
+        "en": "East",
+        "as": "পূব"
+       },
+       {
+        "en": "South",
+        "as": "দক্ষিণ"
+       },
+       {
+        "en": "West",
+        "as": "পশ্চিম"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs9.u1.q1",
+     "type": "explore",
+     "skill": "r-turn",
+     "q": {
+      "en": "Face south, then turn left. Turn the walker and stop.",
+      "as": "দক্ষিণলৈ মুখ কৰি বাওঁফালে ঘূৰা। খোজকাৰীক ঘূৰাই ৰখোৱা।"
+     },
+     "widget": {
+      "kind": "walk",
+      "f": 2,
+      "turnOnly": true,
+      "ask": "facing"
+     },
+     "target": 1,
+     "answerText": {
+      "en": "Facing east",
+      "as": "পূবলৈ মুখ"
+     },
+     "why": {
+      "en": "Each turn is measured from where you face now, so you end facing east.",
+      "as": "প্ৰতিটো ঘূৰণি এতিয়াৰ মুখৰ পৰা, গতিকে শেষত পূবলৈ মুখ।"
+     },
+     "traps": [
+      {
+       "val": 3,
+       "tag": "r-m-leftwest",
+       "why": {
+        "en": "You took left as west. Left is west only when you face north.",
+        "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Face south, then turn left. Turn the walker and stop.",
+        "as": "দক্ষিণলৈ মুখ কৰি বাওঁফালে ঘূৰা। খোজকাৰীক ঘূৰাই ৰখোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 2,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Facing east",
+        "as": "পূবলৈ মুখ"
+       },
+       "why": {
+        "en": "Each turn is measured from where you face now, so you end facing east.",
+        "as": "প্ৰতিটো ঘূৰণি এতিয়াৰ মুখৰ পৰা, গতিকে শেষত পূবলৈ মুখ।"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Face west, then turn right. Turn the walker and stop.",
+        "as": "পশ্চিমলৈ মুখ কৰি সোঁফালে ঘূৰা। খোজকাৰীক ঘূৰাই ৰখোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 3,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Facing north",
+        "as": "উত্তৰলৈ মুখ"
+       },
+       "why": {
+        "en": "Each turn is measured from where you face now, so you end facing north.",
+        "as": "প্ৰতিটো ঘূৰণি এতিয়াৰ মুখৰ পৰা, গতিকে শেষত উত্তৰলৈ মুখ।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Face east, then turn left then left. Turn the walker and stop.",
+        "as": "পূবলৈ মুখ কৰি বাওঁফালে তাৰ পিছত বাওঁফালে ঘূৰা। খোজকাৰীক ঘূৰাই ৰখোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 1,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Facing west",
+        "as": "পশ্চিমলৈ মুখ"
+       },
+       "why": {
+        "en": "Each turn is measured from where you face now, so you end facing west.",
+        "as": "প্ৰতিটো ঘূৰণি এতিয়াৰ মুখৰ পৰা, গতিকে শেষত পশ্চিমলৈ মুখ।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Face south, then turn right then left then left. Turn the walker and stop.",
+        "as": "দক্ষিণলৈ মুখ কৰি সোঁফালে তাৰ পিছত বাওঁফালে তাৰ পিছত বাওঁফালে ঘূৰা। খোজকাৰীক ঘূৰাই ৰখোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 2,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Facing east",
+        "as": "পূবলৈ মুখ"
+       },
+       "why": {
+        "en": "Each turn is measured from where you face now, so you end facing east.",
+        "as": "প্ৰতিটো ঘূৰণি এতিয়াৰ মুখৰ পৰা, গতিকে শেষত পূবলৈ মুখ।"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs9.u1.q2",
+     "type": "tf",
+     "skill": "r-turn",
+     "s": {
+      "en": "A person facing south has east on their left.",
+      "as": "দক্ষিণলৈ মুখ কৰা ব্যক্তিৰ বাওঁফালে পূব।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Facing south reverses the map's left and right.",
+      "as": "দক্ষিণলৈ মুখ কৰিলে মানচিত্ৰৰ বাওঁ-সোঁ ওলোটা হয়।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-leftwest",
+       "why": {
+        "en": "You took left as west. Left is west only when you face north.",
+        "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u1.q3",
+     "type": "match",
+     "skill": "r-turn",
+     "q": {
+      "en": "Match the facing to what lies on your right",
+      "as": "মুখৰ দিশক সোঁফালৰ দিশৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "North",
+        "as": "উত্তৰ"
+       },
+       {
+        "en": "East",
+        "as": "পূব"
+       }
+      ],
+      [
+       {
+        "en": "East",
+        "as": "পূব"
+       },
+       {
+        "en": "South",
+        "as": "দক্ষিণ"
+       }
+      ],
+      [
+       {
+        "en": "South",
+        "as": "দক্ষিণ"
+       },
+       {
+        "en": "West",
+        "as": "পশ্চিম"
+       }
+      ],
+      [
+       {
+        "en": "West",
+        "as": "পশ্চিম"
+       },
+       {
+        "en": "North",
+        "as": "উত্তৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Right is the next direction clockwise.",
+      "as": "সোঁফাল মানে ঘড়ীৰ দিশে পিছৰটো।"
+     }
+    },
+    {
+     "id": "rs9.u1.q4",
+     "type": "stepwise",
+     "skill": "r-turn",
+     "q": {
+      "en": "Face south, turn right, then turn right.",
+      "as": "দক্ষিণলৈ মুখ কৰি সোঁফালে, তাৰ পিছত সোঁফালে ঘূৰা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "After the first turn you face?",
+        "as": "প্ৰথম ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+       },
+       "options": [
+        {
+         "en": "North",
+         "as": "উত্তৰ"
+        },
+        {
+         "en": "West",
+         "as": "পশ্চিম"
+        },
+        {
+         "en": "East",
+         "as": "পূব"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Measure the turn from your own facing.",
+        "as": "নিজৰ মুখৰ পৰা ঘূৰণি জোখা।"
+       },
+       "tag": "r-m-leftwest"
+      },
+      {
+       "ask": {
+        "en": "After the second turn you face?",
+        "as": "দ্বিতীয় ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+       },
+       "options": [
+        {
+         "en": "South",
+         "as": "দক্ষিণ"
+        },
+        {
+         "en": "East",
+         "as": "পূব"
+        },
+        {
+         "en": "North",
+         "as": "উত্তৰ"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Start from the new facing, not the old one.",
+        "as": "নতুন মুখৰ পৰা আৰম্ভ কৰা, পুৰণিটোৰ পৰা নহয়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "You end facing north.",
+      "as": "শেষত উত্তৰলৈ মুখ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Face south, turn right, then turn right.",
+        "as": "দক্ষিণলৈ মুখ কৰি সোঁফালে, তাৰ পিছত সোঁফালে ঘূৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "After the first turn you face?",
+          "as": "প্ৰথম ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Measure the turn from your own facing.",
+          "as": "নিজৰ মুখৰ পৰা ঘূৰণি জোখা।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "After the second turn you face?",
+          "as": "দ্বিতীয় ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Start from the new facing, not the old one.",
+          "as": "নতুন মুখৰ পৰা আৰম্ভ কৰা, পুৰণিটোৰ পৰা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You end facing north.",
+        "as": "শেষত উত্তৰলৈ মুখ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face east, turn left, then turn left.",
+        "as": "পূবলৈ মুখ কৰি বাওঁফালে, তাৰ পিছত বাওঁফালে ঘূৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "After the first turn you face?",
+          "as": "প্ৰথম ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Measure the turn from your own facing.",
+          "as": "নিজৰ মুখৰ পৰা ঘূৰণি জোখা।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "After the second turn you face?",
+          "as": "দ্বিতীয় ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Start from the new facing, not the old one.",
+          "as": "নতুন মুখৰ পৰা আৰম্ভ কৰা, পুৰণিটোৰ পৰা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You end facing west.",
+        "as": "শেষত পশ্চিমলৈ মুখ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face west, turn left, then turn right.",
+        "as": "পশ্চিমলৈ মুখ কৰি বাওঁফালে, তাৰ পিছত সোঁফালে ঘূৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "After the first turn you face?",
+          "as": "প্ৰথম ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Measure the turn from your own facing.",
+          "as": "নিজৰ মুখৰ পৰা ঘূৰণি জোখা।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "After the second turn you face?",
+          "as": "দ্বিতীয় ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Start from the new facing, not the old one.",
+          "as": "নতুন মুখৰ পৰা আৰম্ভ কৰা, পুৰণিটোৰ পৰা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You end facing west.",
+        "as": "শেষত পশ্চিমলৈ মুখ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face north, turn right, then turn right.",
+        "as": "উত্তৰলৈ মুখ কৰি সোঁফালে, তাৰ পিছত সোঁফালে ঘূৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "After the first turn you face?",
+          "as": "প্ৰথম ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Measure the turn from your own facing.",
+          "as": "নিজৰ মুখৰ পৰা ঘূৰণি জোখা।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "After the second turn you face?",
+          "as": "দ্বিতীয় ঘূৰণিৰ পিছত মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Start from the new facing, not the old one.",
+          "as": "নতুন মুখৰ পৰা আৰম্ভ কৰা, পুৰণিটোৰ পৰা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You end facing south.",
+        "as": "শেষত দক্ষিণলৈ মুখ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u1.q5",
+     "type": "order",
+     "skill": "r-turn",
+     "q": {
+      "en": "Start at north and put the directions in clockwise order",
+      "as": "উত্তৰৰ পৰা ঘড়ীৰ দিশে দিশবোৰ সজোৱা"
+     },
+     "items": [
+      {
+       "en": "North",
+       "as": "উত্তৰ"
+      },
+      {
+       "en": "East",
+       "as": "পূব"
+      },
+      {
+       "en": "South",
+       "as": "দক্ষিণ"
+      },
+      {
+       "en": "West",
+       "as": "পশ্চিম"
+      }
+     ],
+     "why": {
+      "en": "Clockwise from north: north, east, south, west.",
+      "as": "উত্তৰৰ পৰা ঘড়ীৰ দিশে: উত্তৰ, পূব, দক্ষিণ, পশ্চিম।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Walk the route",
+    "as": "পথ অনুসৰণ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Follow one instruction at a time.",
+     "as": "এবাৰত এটা নিৰ্দেশ মানা।"
+    },
+    {
+     "en": "Mark your facing after every turn.",
+     "as": "প্ৰতিটো ঘূৰণিৰ পিছত মুখ চিন কৰা।"
+    },
+    {
+     "en": "Only turns change your facing.",
+     "as": "কেৱল ঘূৰণিয়ে মুখ সলায়।"
+    },
+    {
+     "en": "Opposite walks cancel each other.",
+     "as": "ওলোটা খোজে ইটোৱে সিটোক কাটে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs9.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Draw the route, do not imagine",
+      "as": "কল্পনা নকৰি পথ আঁকা"
+     },
+     "text": [
+      {
+       "en": "Direction questions are hard in your head and easy on paper. Walk this one: 2 north, right, then 3.",
+       "as": "দিশৰ প্ৰশ্ন মনতে টান, কাগজত সহজ। খোজ কাঢ়া: উত্তৰলৈ 2, সোঁফালে ঘূৰি 3।"
+      }
+     ],
+     "widget": {
+      "kind": "walk",
+      "f": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Walk 2 squares north.",
+        "as": "উত্তৰলৈ 2 ঘৰ যোৱা।"
+       },
+       "goal": {
+        "x": 0,
+        "y": 2
+       },
+       "then": {
+        "en": "Two steps. You still face north.",
+        "as": "দুটা খোজ। মুখ এতিয়াও উত্তৰলৈ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Turn right and walk 3.",
+        "as": "সোঁফালে ঘূৰি 3 ঘৰ যোৱা।"
+       },
+       "goal": {
+        "x": 3,
+        "y": 2
+       },
+       "then": {
+        "en": "The trail shows the whole answer: 3 east and 2 north of the start.",
+        "as": "ৰেখাই গোটেই উত্তৰ দেখুৱায়: আৰম্ভণিৰ পৰা পূবে 3, উত্তৰে 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "A routine for every route",
+      "as": "সকলো পথৰ এটা নিয়ম"
+     },
+     "text": [
+      {
+       "en": "Draw a small north arrow, then follow the words in order. Never skip to the end.",
+       "as": "সৰু উত্তৰ চিন আঁকি শব্দবোৰ ক্ৰমে অনুসৰণ কৰা। শেষলৈ জঁপিয়াই নাযাবা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Mark north",
+        "as": "উত্তৰ চিন"
+       },
+       {
+        "en": "Follow in order",
+        "as": "ক্ৰমে অনুসৰণ"
+       },
+       {
+        "en": "Read the end",
+        "as": "শেষ পঢ়া"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs9.u2.q1",
+     "type": "explore",
+     "skill": "r-route",
+     "q": {
+      "en": "Start at the dot. Face north. Walk 2. Turn right. Walk 3. Turn left. Walk 1.",
+      "as": "বিন্দুৰ পৰা আৰম্ভ কৰা। উত্তৰলৈ মুখ কৰা। 2 ঘৰ যোৱা। সোঁফালে ঘূৰা। 3 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা।"
+     },
+     "widget": {
+      "kind": "walk",
+      "f": 0,
+      "ask": "place"
+     },
+     "target": 5353,
+     "answerText": {
+      "en": "You end 3 north, 3 east of the start",
+      "as": "আৰম্ভণিৰ পৰা উত্তৰে 3, পূবে 3"
+     },
+     "why": {
+      "en": "Walking it step by step ends 3 north, 3 east of the start.",
+      "as": "খোজে খোজে গ'লে আৰম্ভণিৰ পৰা উত্তৰে 3, পূবে 3 ত শেষ হয়।"
+     },
+     "traps": [
+      {
+       "val": 4753,
+       "tag": "r-m-leftwest",
+       "why": {
+        "en": "You took left as west. Left is west only when you face north.",
+        "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Start at the dot. Face north. Walk 2. Turn right. Walk 3. Turn left. Walk 1.",
+        "as": "বিন্দুৰ পৰা আৰম্ভ কৰা। উত্তৰলৈ মুখ কৰা। 2 ঘৰ যোৱা। সোঁফালে ঘূৰা। 3 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "ask": "place"
+       },
+       "target": 5353,
+       "answerText": {
+        "en": "You end 3 north, 3 east of the start",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 3, পূবে 3"
+       },
+       "why": {
+        "en": "Walking it step by step ends 3 north, 3 east of the start.",
+        "as": "খোজে খোজে গ'লে আৰম্ভণিৰ পৰা উত্তৰে 3, পূবে 3 ত শেষ হয়।"
+       },
+       "traps": [
+        {
+         "val": 4753,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Start at the dot. Face east. Walk 3. Turn left. Walk 2.",
+        "as": "বিন্দুৰ পৰা আৰম্ভ কৰা। পূবলৈ মুখ কৰা। 3 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 2 ঘৰ যোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 1,
+        "ask": "place"
+       },
+       "target": 5352,
+       "answerText": {
+        "en": "You end 2 north, 3 east of the start",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 2, পূবে 3"
+       },
+       "why": {
+        "en": "Walking it step by step ends 2 north, 3 east of the start.",
+        "as": "খোজে খোজে গ'লে আৰম্ভণিৰ পৰা উত্তৰে 2, পূবে 3 ত শেষ হয়।"
+       },
+       "traps": [
+        {
+         "val": 5348,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Start at the dot. Face south. Walk 1. Turn left. Walk 3. Turn left. Walk 4.",
+        "as": "বিন্দুৰ পৰা আৰম্ভ কৰা। দক্ষিণলৈ মুখ কৰা। 1 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 3 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 4 ঘৰ যোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 2,
+        "ask": "place"
+       },
+       "target": 5353,
+       "answerText": {
+        "en": "You end 3 north, 3 east of the start",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 3, পূবে 3"
+       },
+       "why": {
+        "en": "Walking it step by step ends 3 north, 3 east of the start.",
+        "as": "খোজে খোজে গ'লে আৰম্ভণিৰ পৰা উত্তৰে 3, পূবে 3 ত শেষ হয়।"
+       },
+       "traps": [
+        {
+         "val": 4753,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Start at the dot. Face west. Walk 2. Turn right. Walk 2. Turn right. Walk 1.",
+        "as": "বিন্দুৰ পৰা আৰম্ভ কৰা। পশ্চিমলৈ মুখ কৰা। 2 ঘৰ যোৱা। সোঁফালে ঘূৰা। 2 ঘৰ যোৱা। সোঁফালে ঘূৰা। 1 ঘৰ যোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 3,
+        "ask": "place"
+       },
+       "target": 4952,
+       "answerText": {
+        "en": "You end 2 north, 1 west of the start",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 2, পশ্চিমে 1"
+       },
+       "why": {
+        "en": "Walking it step by step ends 2 north, 1 west of the start.",
+        "as": "খোজে খোজে গ'লে আৰম্ভণিৰ পৰা উত্তৰে 2, পশ্চিমে 1 ত শেষ হয়।"
+       },
+       "traps": [
+        {
+         "val": 4948,
+         "tag": "r-m-leftwest",
+         "why": {
+          "en": "You took left as west. Left is west only when you face north.",
+          "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs9.u2.q2",
+     "type": "explore",
+     "skill": "r-route",
+     "q": {
+      "en": "Face north. Walk 3. Turn right. Walk 2. Turn left. Walk 1. Turn left. Walk 2. Which way do you face now? Turn the walker to match.",
+      "as": "উত্তৰলৈ মুখ কৰা। 3 ঘৰ যোৱা। সোঁফালে ঘূৰা। 2 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 2 ঘৰ যোৱা। এতিয়া মুখ কোন ফালে? খোজকাৰীক সেইফালে ঘূৰোৱা।"
+     },
+     "widget": {
+      "kind": "walk",
+      "f": 0,
+      "turnOnly": true,
+      "ask": "facing"
+     },
+     "target": 3,
+     "answerText": {
+      "en": "Facing west",
+      "as": "পশ্চিমলৈ মুখ"
+     },
+     "why": {
+      "en": "Walking changes where you are. Only turns change where you face.",
+      "as": "খোজে ঠাই সলায়। কেৱল ঘূৰণিয়ে মুখ সলায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Face north. Walk 3. Turn right. Walk 2. Turn left. Walk 1. Turn left. Walk 2. Which way do you face now? Turn the walker to match.",
+        "as": "উত্তৰলৈ মুখ কৰা। 3 ঘৰ যোৱা। সোঁফালে ঘূৰা। 2 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 2 ঘৰ যোৱা। এতিয়া মুখ কোন ফালে? খোজকাৰীক সেইফালে ঘূৰোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Facing west",
+        "as": "পশ্চিমলৈ মুখ"
+       },
+       "why": {
+        "en": "Walking changes where you are. Only turns change where you face.",
+        "as": "খোজে ঠাই সলায়। কেৱল ঘূৰণিয়ে মুখ সলায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face south. Walk 2. Turn left. Walk 3. Turn left. Walk 1. Which way do you face now? Turn the walker to match.",
+        "as": "দক্ষিণলৈ মুখ কৰা। 2 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 3 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। এতিয়া মুখ কোন ফালে? খোজকাৰীক সেইফালে ঘূৰোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 2,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Facing north",
+        "as": "উত্তৰলৈ মুখ"
+       },
+       "why": {
+        "en": "Walking changes where you are. Only turns change where you face.",
+        "as": "খোজে ঠাই সলায়। কেৱল ঘূৰণিয়ে মুখ সলায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face east. Walk 1. Turn left. Walk 1. Turn left. Walk 1. Turn left. Walk 1. Which way do you face now? Turn the walker to match.",
+        "as": "পূবলৈ মুখ কৰা। 1 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। এতিয়া মুখ কোন ফালে? খোজকাৰীক সেইফালে ঘূৰোৱা।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 1,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Facing south",
+        "as": "দক্ষিণলৈ মুখ"
+       },
+       "why": {
+        "en": "Walking changes where you are. Only turns change where you face.",
+        "as": "খোজে ঠাই সলায়। কেৱল ঘূৰণিয়ে মুখ সলায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u2.q3",
+     "type": "stepwise",
+     "skill": "r-route",
+     "q": {
+      "en": "Walk 4 north, turn right and walk 2, then turn right and walk 1.",
+      "as": "উত্তৰলৈ 4 ঘৰ গৈ সোঁফালে ঘূৰি 2 ঘৰ যোৱা, তাৰ পিছত সোঁফালে ঘূৰি 1 ঘৰ যোৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The second walk goes?",
+        "as": "দ্বিতীয় খোজ কোন ফালে?"
+       },
+       "options": [
+        {
+         "en": "South",
+         "as": "দক্ষিণ"
+        },
+        {
+         "en": "East",
+         "as": "পূব"
+        },
+        {
+         "en": "West",
+         "as": "পশ্চিম"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Right of north is east.",
+        "as": "উত্তৰৰ সোঁফালে পূব।"
+       },
+       "tag": "r-m-leftwest"
+      },
+      {
+       "ask": {
+        "en": "The third walk goes?",
+        "as": "তৃতীয় খোজ কোন ফালে?"
+       },
+       "options": [
+        {
+         "en": "South",
+         "as": "দক্ষিণ"
+        },
+        {
+         "en": "North",
+         "as": "উত্তৰ"
+        },
+        {
+         "en": "West",
+         "as": "পশ্চিম"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Right of east is south.",
+        "as": "পূবৰ সোঁফালে দক্ষিণ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "How far north of the start do you finish?",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে কিমান দূৰত শেষ?"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "2",
+         "as": "2"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "4 up and 1 back leaves 3.",
+        "as": "4 ওপৰলৈ আৰু 1 ঘূৰি অহাত 3 থাকে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "You finish 3 north and 2 east of the start.",
+      "as": "আৰম্ভণিৰ পৰা উত্তৰে 3 আৰু পূবে 2 ত শেষ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Walk 4 north, turn right and walk 2, then turn right and walk 1.",
+        "as": "উত্তৰলৈ 4 ঘৰ গৈ সোঁফালে ঘূৰি 2 ঘৰ যোৱা, তাৰ পিছত সোঁফালে ঘূৰি 1 ঘৰ যোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The second walk goes?",
+          "as": "দ্বিতীয় খোজ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Right of north is east.",
+          "as": "উত্তৰৰ সোঁফালে পূব।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "The third walk goes?",
+          "as": "তৃতীয় খোজ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Right of east is south.",
+          "as": "পূবৰ সোঁফালে দক্ষিণ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "How far north of the start do you finish?",
+          "as": "আৰম্ভণিৰ পৰা উত্তৰে কিমান দূৰত শেষ?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "4 up and 1 back leaves 3.",
+          "as": "4 ওপৰলৈ আৰু 1 ঘূৰি অহাত 3 থাকে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You finish 3 north and 2 east of the start.",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 3 আৰু পূবে 2 ত শেষ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Walk 3 north, turn right and walk 5, then turn right and walk 1.",
+        "as": "উত্তৰলৈ 3 ঘৰ গৈ সোঁফালে ঘূৰি 5 ঘৰ যোৱা, তাৰ পিছত সোঁফালে ঘূৰি 1 ঘৰ যোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The second walk goes?",
+          "as": "দ্বিতীয় খোজ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Right of north is east.",
+          "as": "উত্তৰৰ সোঁফালে পূব।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "The third walk goes?",
+          "as": "তৃতীয় খোজ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Right of east is south.",
+          "as": "পূবৰ সোঁফালে দক্ষিণ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "How far north of the start do you finish?",
+          "as": "আৰম্ভণিৰ পৰা উত্তৰে কিমান দূৰত শেষ?"
+         },
+         "options": [
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "3 up and 1 back leaves 2.",
+          "as": "3 ওপৰলৈ আৰু 1 ঘূৰি অহাত 2 থাকে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You finish 2 north and 5 east of the start.",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 2 আৰু পূবে 5 ত শেষ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Walk 4 north, turn right and walk 3, then turn right and walk 2.",
+        "as": "উত্তৰলৈ 4 ঘৰ গৈ সোঁফালে ঘূৰি 3 ঘৰ যোৱা, তাৰ পিছত সোঁফালে ঘূৰি 2 ঘৰ যোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The second walk goes?",
+          "as": "দ্বিতীয় খোজ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Right of north is east.",
+          "as": "উত্তৰৰ সোঁফালে পূব।"
+         },
+         "tag": "r-m-leftwest"
+        },
+        {
+         "ask": {
+          "en": "The third walk goes?",
+          "as": "তৃতীয় খোজ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Right of east is south.",
+          "as": "পূবৰ সোঁফালে দক্ষিণ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "How far north of the start do you finish?",
+          "as": "আৰম্ভণিৰ পৰা উত্তৰে কিমান দূৰত শেষ?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "4 up and 2 back leaves 2.",
+          "as": "4 ওপৰলৈ আৰু 2 ঘূৰি অহাত 2 থাকে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "You finish 2 north and 3 east of the start.",
+        "as": "আৰম্ভণিৰ পৰা উত্তৰে 2 আৰু পূবে 3 ত শেষ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u2.q4",
+     "type": "solve",
+     "skill": "r-route",
+     "q": {
+      "en": "Face north. Walk 5. Turn right. Walk 2. Turn right. Walk 3. How many squares north of the start are you?",
+      "as": "উত্তৰলৈ মুখ কৰা। 5 ঘৰ যোৱা। সোঁফালে ঘূৰা। 2 ঘৰ যোৱা। সোঁফালে ঘূৰা। 3 ঘৰ যোৱা। আৰম্ভণিৰ পৰা উত্তৰে কিমান ঘৰ আছা?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Walks north and south cancel, and walks east and west do not count.",
+      "as": "উত্তৰ আৰু দক্ষিণৰ খোজ কাটে, পূব আৰু পশ্চিমৰ খোজ ইয়াত নাগণে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Face north. Walk 5. Turn right. Walk 2. Turn right. Walk 3. How many squares north of the start are you?",
+        "as": "উত্তৰলৈ মুখ কৰা। 5 ঘৰ যোৱা। সোঁফালে ঘূৰা। 2 ঘৰ যোৱা। সোঁফালে ঘূৰা। 3 ঘৰ যোৱা। আৰম্ভণিৰ পৰা উত্তৰে কিমান ঘৰ আছা?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Walks north and south cancel, and walks east and west do not count.",
+        "as": "উত্তৰ আৰু দক্ষিণৰ খোজ কাটে, পূব আৰু পশ্চিমৰ খোজ ইয়াত নাগণে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face north. Walk 4. Turn left. Walk 3. Turn left. Walk 1. How many squares north of the start are you?",
+        "as": "উত্তৰলৈ মুখ কৰা। 4 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 3 ঘৰ যোৱা। বাওঁফালে ঘূৰা। 1 ঘৰ যোৱা। আৰম্ভণিৰ পৰা উত্তৰে কিমান ঘৰ আছা?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "Walks north and south cancel, and walks east and west do not count.",
+        "as": "উত্তৰ আৰু দক্ষিণৰ খোজ কাটে, পূব আৰু পশ্চিমৰ খোজ ইয়াত নাগণে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Face north. Walk 3. Turn right. Walk 3. Turn right. Walk 2. How many squares north of the start are you?",
+        "as": "উত্তৰলৈ মুখ কৰা। 3 ঘৰ যোৱা। সোঁফালে ঘূৰা। 3 ঘৰ যোৱা। সোঁফালে ঘূৰা। 2 ঘৰ যোৱা। আৰম্ভণিৰ পৰা উত্তৰে কিমান ঘৰ আছা?"
+       },
+       "answer": "1",
+       "why": {
+        "en": "Walks north and south cancel, and walks east and west do not count.",
+        "as": "উত্তৰ আৰু দক্ষিণৰ খোজ কাটে, পূব আৰু পশ্চিমৰ খোজ ইয়াত নাগণে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u2.q5",
+     "type": "tf",
+     "skill": "r-route",
+     "s": {
+      "en": "Walking forward does not change the way you face.",
+      "as": "আগলৈ খোজ কাঢ়িলে মুখ সলনি নহয়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Only a turn changes your facing.",
+      "as": "কেৱল ঘূৰণিয়ে মুখ সলায়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "The straight way home",
+    "as": "পোনে পোনে ঘৰলৈ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Cancel opposite walks first.",
+     "as": "প্ৰথমে ওলোটা খোজ কাটা।"
+    },
+    {
+     "en": "What is left is one north-south and one east-west distance.",
+     "as": "বাকী থাকে এটা উত্তৰ-দক্ষিণ আৰু এটা পূব-পশ্চিম দূৰত্ব।"
+    },
+    {
+     "en": "They meet at a right angle, so use a² + b² = c².",
+     "as": "সিহঁতে সমকোণ বনায়, a² + b² = c² ব্যৱহাৰ কৰা।"
+    },
+    {
+     "en": "3, 4, 5 and 6, 8, 10 appear again and again.",
+     "as": "3, 4, 5 আৰু 6, 8, 10 সঘনাই আহে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs9.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Two walks, one short line",
+      "as": "দুটা খোজ, এডাল চুটি ৰেখা"
+     },
+     "text": [
+      {
+       "en": "Walk 3 north and 4 east, then look at the gap back to the dot. It is a straight line of 5.",
+       "as": "উত্তৰলৈ 3 আৰু পূবলৈ 4 গৈ বিন্দুলৈ চোৱা। পোন ৰেখাডাল 5।"
+      }
+     ],
+     "widget": {
+      "kind": "walk",
+      "f": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "End 3 north and 4 east of the dot.",
+        "as": "বিন্দুৰ পৰা উত্তৰে 3 আৰু পূবে 4 ত ৰোৱা।"
+       },
+       "goal": {
+        "x": 4,
+        "y": 3
+       },
+       "then": {
+        "en": "You walked 7, but home is only 5 away: 3² + 4² = 5².",
+        "as": "তুমি 7 খোজ গ'লা, কিন্তু ঘৰ 5 দূৰত: 3² + 4² = 5²।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Shrink the route first",
+      "as": "প্ৰথমে পথ চুটি কৰা"
+     },
+     "text": [
+      {
+       "en": "North cancels south, and east cancels west. After that, every route is one right-angled triangle.",
+       "as": "উত্তৰে দক্ষিণক কাটে, পূবে পশ্চিমক কাটে। তাৰ পিছত প্ৰতিটো পথ এটা সমকোণী ত্ৰিভুজ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Cancel opposites",
+        "as": "ওলোটা কাটা"
+       },
+       {
+        "en": "Two sides left",
+        "as": "দুটা বাহু"
+       },
+       {
+        "en": "a² + b² = c²",
+        "as": "a² + b² = c²"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs9.u3.q1",
+     "type": "solve",
+     "skill": "r-dist",
+     "q": {
+      "en": "Walk 3 km north, then 4 km east. How far are you from the start in a straight line?",
+      "as": "উত্তৰলৈ 3 কি.মি. গৈ পূবলৈ 4 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+     },
+     "answer": "5",
+     "suffix": {
+      "en": "km",
+      "as": "কি.মি."
+     },
+     "why": {
+      "en": "The two walks form a right angle: 3² + 4² = 5².",
+      "as": "দুয়োটা খোজে সমকোণ বনায়: 3² + 4² = 5²।"
+     },
+     "traps": [
+      {
+       "ans": "7",
+       "tag": "r-m-addlegs",
+       "why": {
+        "en": "You added the walks. The straight line is shorter: use the two net distances.",
+        "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Walk 3 km north, then 4 km east. How far are you from the start in a straight line?",
+        "as": "উত্তৰলৈ 3 কি.মি. গৈ পূবলৈ 4 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "5",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "The two walks form a right angle: 3² + 4² = 5².",
+        "as": "দুয়োটা খোজে সমকোণ বনায়: 3² + 4² = 5²।"
+       },
+       "traps": [
+        {
+         "ans": "7",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Walk 6 km north, then 8 km east. How far are you from the start in a straight line?",
+        "as": "উত্তৰলৈ 6 কি.মি. গৈ পূবলৈ 8 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "The two walks form a right angle: 6² + 8² = 10².",
+        "as": "দুয়োটা খোজে সমকোণ বনায়: 6² + 8² = 10²।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Walk 5 km north, then 12 km east. How far are you from the start in a straight line?",
+        "as": "উত্তৰলৈ 5 কি.মি. গৈ পূবলৈ 12 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "13",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "The two walks form a right angle: 5² + 12² = 13².",
+        "as": "দুয়োটা খোজে সমকোণ বনায়: 5² + 12² = 13²।"
+       },
+       "traps": [
+        {
+         "ans": "17",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Walk 8 km north, then 6 km east. How far are you from the start in a straight line?",
+        "as": "উত্তৰলৈ 8 কি.মি. গৈ পূবলৈ 6 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "The two walks form a right angle: 8² + 6² = 10².",
+        "as": "দুয়োটা খোজে সমকোণ বনায়: 8² + 6² = 10²।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs9.u3.q2",
+     "type": "solve",
+     "skill": "r-dist",
+     "q": {
+      "en": "Walk 7 km north, 3 km south, then 3 km east. What is the straight distance from the start?",
+      "as": "উত্তৰলৈ 7 কি.মি., দক্ষিণলৈ 3 কি.মি., তাৰ পিছত পূবলৈ 3 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+     },
+     "answer": "5",
+     "suffix": {
+      "en": "km",
+      "as": "কি.মি."
+     },
+     "why": {
+      "en": "North and south leave 4. With 3 east, the straight line is 5.",
+      "as": "উত্তৰ-দক্ষিণত 4 থাকে। পূবে 3 ৰ লগত পোন দূৰত্ব 5।"
+     },
+     "traps": [
+      {
+       "ans": "13",
+       "tag": "r-m-addlegs",
+       "why": {
+        "en": "You added the walks. The straight line is shorter: use the two net distances.",
+        "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Walk 7 km north, 3 km south, then 3 km east. What is the straight distance from the start?",
+        "as": "উত্তৰলৈ 7 কি.মি., দক্ষিণলৈ 3 কি.মি., তাৰ পিছত পূবলৈ 3 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "5",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "North and south leave 4. With 3 east, the straight line is 5.",
+        "as": "উত্তৰ-দক্ষিণত 4 থাকে। পূবে 3 ৰ লগত পোন দূৰত্ব 5।"
+       },
+       "traps": [
+        {
+         "ans": "13",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Walk 9 km north, 3 km south, then 8 km east. What is the straight distance from the start?",
+        "as": "উত্তৰলৈ 9 কি.মি., দক্ষিণলৈ 3 কি.মি., তাৰ পিছত পূবলৈ 8 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "North and south leave 6. With 8 east, the straight line is 10.",
+        "as": "উত্তৰ-দক্ষিণত 6 থাকে। পূবে 8 ৰ লগত পোন দূৰত্ব 10।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Walk 10 km north, 2 km south, then 6 km east. What is the straight distance from the start?",
+        "as": "উত্তৰলৈ 10 কি.মি., দক্ষিণলৈ 2 কি.মি., তাৰ পিছত পূবলৈ 6 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "km",
+        "as": "কি.মি."
+       },
+       "why": {
+        "en": "North and south leave 8. With 6 east, the straight line is 10.",
+        "as": "উত্তৰ-দক্ষিণত 8 থাকে। পূবে 6 ৰ লগত পোন দূৰত্ব 10।"
+       },
+       "traps": [
+        {
+         "ans": "18",
+         "tag": "r-m-addlegs",
+         "why": {
+          "en": "You added the walks. The straight line is shorter: use the two net distances.",
+          "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs9.u3.q3",
+     "type": "stepwise",
+     "skill": "r-dist",
+     "q": {
+      "en": "Walk 5 north, 6 east, 2 south, then 2 west.",
+      "as": "উত্তৰলৈ 5, পূবলৈ 6, দক্ষিণলৈ 2, তাৰ পিছত পশ্চিমলৈ 2 যোৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Net north?",
+        "as": "নিকা উত্তৰ?"
+       },
+       "options": [
+        {
+         "en": "3",
+         "as": "3"
+        },
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "7",
+         "as": "7"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Opposite walks subtract.",
+        "as": "ওলোটা খোজ বিয়োগ হয়।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Net east?",
+        "as": "নিকা পূব?"
+       },
+       "options": [
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "6",
+         "as": "6"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Opposite walks subtract.",
+        "as": "ওলোটা খোজ বিয়োগ হয়।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Straight distance?",
+        "as": "পোন দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "7",
+         "as": "7"
+        },
+        {
+         "en": "15",
+         "as": "15"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "3² + 4² = 5².",
+        "as": "3² + 4² = 5²।"
+       },
+       "tag": "r-m-addlegs"
+      }
+     ],
+     "why": {
+      "en": "Reduce to one right angle, 3 and 4, then find 5.",
+      "as": "এটা সমকোণলৈ আনা, 3 আৰু 4, তাৰ পিছত 5।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Walk 5 north, 6 east, 2 south, then 2 west.",
+        "as": "উত্তৰলৈ 5, পূবলৈ 6, দক্ষিণলৈ 2, তাৰ পিছত পশ্চিমলৈ 2 যোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Net north?",
+          "as": "নিকা উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Opposite walks subtract.",
+          "as": "ওলোটা খোজ বিয়োগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Net east?",
+          "as": "নিকা পূব?"
+         },
+         "options": [
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Opposite walks subtract.",
+          "as": "ওলোটা খোজ বিয়োগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Straight distance?",
+          "as": "পোন দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "3² + 4² = 5².",
+          "as": "3² + 4² = 5²।"
+         },
+         "tag": "r-m-addlegs"
+        }
+       ],
+       "why": {
+        "en": "Reduce to one right angle, 3 and 4, then find 5.",
+        "as": "এটা সমকোণলৈ আনা, 3 আৰু 4, তাৰ পিছত 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "Walk 8 north, 10 east, 2 south, then 2 west.",
+        "as": "উত্তৰলৈ 8, পূবলৈ 10, দক্ষিণলৈ 2, তাৰ পিছত পশ্চিমলৈ 2 যোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Net north?",
+          "as": "নিকা উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Opposite walks subtract.",
+          "as": "ওলোটা খোজ বিয়োগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Net east?",
+          "as": "নিকা পূব?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Opposite walks subtract.",
+          "as": "ওলোটা খোজ বিয়োগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Straight distance?",
+          "as": "পোন দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "22",
+           "as": "22"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "6² + 8² = 10².",
+          "as": "6² + 8² = 10²।"
+         },
+         "tag": "r-m-addlegs"
+        }
+       ],
+       "why": {
+        "en": "Reduce to one right angle, 6 and 8, then find 10.",
+        "as": "এটা সমকোণলৈ আনা, 6 আৰু 8, তাৰ পিছত 10।"
+       }
+      },
+      {
+       "q": {
+        "en": "Walk 7 north, 15 east, 2 south, then 3 west.",
+        "as": "উত্তৰলৈ 7, পূবলৈ 15, দক্ষিণলৈ 2, তাৰ পিছত পশ্চিমলৈ 3 যোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Net north?",
+          "as": "নিকা উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Opposite walks subtract.",
+          "as": "ওলোটা খোজ বিয়োগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Net east?",
+          "as": "নিকা পূব?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Opposite walks subtract.",
+          "as": "ওলোটা খোজ বিয়োগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Straight distance?",
+          "as": "পোন দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "17",
+           "as": "17"
+          },
+          {
+           "en": "27",
+           "as": "27"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "5² + 12² = 13².",
+          "as": "5² + 12² = 13²।"
+         },
+         "tag": "r-m-addlegs"
+        }
+       ],
+       "why": {
+        "en": "Reduce to one right angle, 5 and 12, then find 13.",
+        "as": "এটা সমকোণলৈ আনা, 5 আৰু 12, তাৰ পিছত 13।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u3.q4",
+     "type": "tf",
+     "skill": "r-dist",
+     "s": {
+      "en": "The straight distance is the sum of all the walks.",
+      "as": "পোন দূৰত্ব সকলো খোজৰ যোগফল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is the short line between start and end.",
+      "as": "ই আৰম্ভণি আৰু শেষৰ মাজৰ চুটি ৰেখা।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-addlegs",
+       "why": {
+        "en": "You added the walks. The straight line is shorter: use the two net distances.",
+        "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u3.q5",
+     "type": "match",
+     "skill": "r-dist",
+     "q": {
+      "en": "Match the two sides to the straight line",
+      "as": "দুটা বাহুক পোন ৰেখাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "3 and 4",
+        "as": "3 আৰু 4"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "6 and 8",
+        "as": "6 আৰু 8"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      [
+       {
+        "en": "5 and 12",
+        "as": "5 আৰু 12"
+       },
+       {
+        "en": "13",
+        "as": "13"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each pair fits a² + b² = c².",
+      "as": "প্ৰতিটো যোৰ a² + b² = c² ত মিলে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Sun and shadow",
+    "as": "সূৰ্য আৰু ছাঁ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "The sun is in the east in the morning.",
+     "as": "ৰাতিপুৱা সূৰ্য পূবে থাকে।"
+    },
+    {
+     "en": "It is in the west in the evening.",
+     "as": "সন্ধিয়া সূৰ্য পশ্চিমে থাকে।"
+    },
+    {
+     "en": "A shadow points away from the sun.",
+     "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে।"
+    },
+    {
+     "en": "Then use left and right as usual.",
+     "as": "তাৰ পিছত বাওঁ-সোঁ সদায়ৰ দৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs9.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "The morning shadow points west",
+      "as": "ৰাতিপুৱাৰ ছাঁ পশ্চিমলৈ"
+     },
+     "text": [
+      {
+       "en": "At sunrise the sun is in the east, so your shadow stretches west. Face your own shadow.",
+       "as": "সূৰ্যোদয়ত সূৰ্য পূবে, গতিকে ছাঁ পশ্চিমলৈ। নিজৰ ছাঁৰ ফালে মুখ কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "walk",
+      "f": 0,
+      "turnOnly": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Turn to face the morning shadow.",
+        "as": "ৰাতিপুৱাৰ ছাঁৰ ফালে মুখ কৰা।"
+       },
+       "goal": {
+        "f": 3
+       },
+       "then": {
+        "en": "You face west, and the sun is behind you.",
+        "as": "তুমি পশ্চিমলৈ মুখ কৰিলা, সূৰ্য তোমাৰ পিছফালে।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now turn to face the evening shadow.",
+        "as": "এতিয়া সন্ধিয়াৰ ছাঁৰ ফালে মুখ কৰা।"
+       },
+       "goal": {
+        "f": 1
+       },
+       "then": {
+        "en": "In the evening the sun is west, so the shadow points east.",
+        "as": "সন্ধিয়া সূৰ্য পশ্চিমে, গতিকে ছাঁ পূবলৈ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Three steps for any shadow",
+      "as": "যিকোনো ছাঁৰ তিনি খোজ"
+     },
+     "text": [
+      {
+       "en": "Ask where the sun is, flip it for the shadow, then place the person.",
+       "as": "সূৰ্য ক'ত সোধা, ছাঁৰ বাবে ওলোটোৱা, তাৰ পিছত ব্যক্তিজনক ৰখোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Find the sun",
+        "as": "সূৰ্য উলিওৱা"
+       },
+       {
+        "en": "Flip for the shadow",
+        "as": "ছাঁৰ বাবে ওলোটোৱা"
+       },
+       {
+        "en": "Place the person",
+        "as": "ব্যক্তি ৰখোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs9.u4.q1",
+     "type": "explore",
+     "skill": "r-shadow",
+     "q": {
+      "en": "It is morning. Turn the walker so that its shadow falls to its left.",
+      "as": "ৰাতিপুৱাৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ বাওঁফালে পৰে।"
+     },
+     "widget": {
+      "kind": "walk",
+      "f": 1,
+      "turnOnly": true,
+      "ask": "facing"
+     },
+     "target": 0,
+     "answerText": {
+      "en": "Facing north",
+      "as": "উত্তৰলৈ মুখ"
+     },
+     "traps": [
+      {
+       "val": 2,
+       "tag": "r-m-shadow",
+       "why": {
+        "en": "A shadow falls away from the sun, not towards it.",
+        "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "In the morning the shadow points west, so you must face north.",
+      "as": "ৰাতিপুৱা ছাঁ পশ্চিমলৈ পৰে, গতিকে উত্তৰলৈ মুখ কৰিব লাগে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "It is morning. Turn the walker so that its shadow falls to its left.",
+        "as": "ৰাতিপুৱাৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ বাওঁফালে পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 1,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Facing north",
+        "as": "উত্তৰলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the morning the shadow points west, so you must face north.",
+        "as": "ৰাতিপুৱা ছাঁ পশ্চিমলৈ পৰে, গতিকে উত্তৰলৈ মুখ কৰিব লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "It is evening. Turn the walker so that its shadow falls to its right.",
+        "as": "সন্ধিয়াৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ সোঁফালে পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 1,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Facing north",
+        "as": "উত্তৰলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the evening the shadow points east, so you must face north.",
+        "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে, গতিকে উত্তৰলৈ মুখ কৰিব লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "It is morning. Turn the walker so that its shadow falls behind.",
+        "as": "ৰাতিপুৱাৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ পিছফালে পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Facing east",
+        "as": "পূবলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the morning the shadow points west, so you must face east.",
+        "as": "ৰাতিপুৱা ছাঁ পশ্চিমলৈ পৰে, গতিকে পূবলৈ মুখ কৰিব লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "It is evening. Turn the walker so that its shadow falls in front.",
+        "as": "সন্ধিয়াৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ সন্মুখত পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Facing east",
+        "as": "পূবলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the evening the shadow points east, so you must face east.",
+        "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে, গতিকে পূবলৈ মুখ কৰিব লাগে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u4.q2",
+     "type": "tf",
+     "skill": "r-shadow",
+     "s": {
+      "en": "In the evening, a shadow points east.",
+      "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The sun is west, so the shadow is east.",
+      "as": "সূৰ্য পশ্চিমে, গতিকে ছাঁ পূবে।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-shadow",
+       "why": {
+        "en": "A shadow falls away from the sun, not towards it.",
+        "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u4.q3",
+     "type": "stepwise",
+     "skill": "r-shadow",
+     "q": {
+      "en": "In the morning, a person's shadow falls to their right. Which way do they face?",
+      "as": "ৰাতিপুৱা এজন ব্যক্তিৰ ছাঁ তেওঁৰ সোঁফালে পৰিছে। তেওঁৰ মুখ কোন ফালে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Where is the sun?",
+        "as": "সূৰ্য ক'ত?"
+       },
+       "options": [
+        {
+         "en": "West",
+         "as": "পশ্চিম"
+        },
+        {
+         "en": "North",
+         "as": "উত্তৰ"
+        },
+        {
+         "en": "East",
+         "as": "পূব"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Morning sun is east, evening sun is west.",
+        "as": "ৰাতিপুৱা সূৰ্য পূবে, সন্ধিয়া পশ্চিমে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Which way does the shadow point?",
+        "as": "ছাঁ কোন ফালে পৰে?"
+       },
+       "options": [
+        {
+         "en": "West",
+         "as": "পশ্চিম"
+        },
+        {
+         "en": "North",
+         "as": "উত্তৰ"
+        },
+        {
+         "en": "East",
+         "as": "পূব"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "A shadow points away from the sun.",
+        "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে।"
+       },
+       "tag": "r-m-shadow"
+      },
+      {
+       "ask": {
+        "en": "So they face?",
+        "as": "তেন্তে মুখ কোন ফালে?"
+       },
+       "options": [
+        {
+         "en": "West",
+         "as": "পশ্চিম"
+        },
+        {
+         "en": "North",
+         "as": "উত্তৰ"
+        },
+        {
+         "en": "South",
+         "as": "দক্ষিণ"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Their right must be west.",
+        "as": "তেওঁৰ সোঁফালে পশ্চিম হ'ব লাগিব।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The shadow points west, so they face south.",
+      "as": "ছাঁ পশ্চিমলৈ, গতিকে মুখ দক্ষিণলৈ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In the morning, a person's shadow falls to their right. Which way do they face?",
+        "as": "ৰাতিপুৱা এজন ব্যক্তিৰ ছাঁ তেওঁৰ সোঁফালে পৰিছে। তেওঁৰ মুখ কোন ফালে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Where is the sun?",
+          "as": "সূৰ্য ক'ত?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Morning sun is east, evening sun is west.",
+          "as": "ৰাতিপুৱা সূৰ্য পূবে, সন্ধিয়া পশ্চিমে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which way does the shadow point?",
+          "as": "ছাঁ কোন ফালে পৰে?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "A shadow points away from the sun.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে।"
+         },
+         "tag": "r-m-shadow"
+        },
+        {
+         "ask": {
+          "en": "So they face?",
+          "as": "তেন্তে মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Their right must be west.",
+          "as": "তেওঁৰ সোঁফালে পশ্চিম হ'ব লাগিব।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The shadow points west, so they face south.",
+        "as": "ছাঁ পশ্চিমলৈ, গতিকে মুখ দক্ষিণলৈ।"
+       }
+      },
+      {
+       "q": {
+        "en": "In the evening, a person's shadow falls to their left. Which way do they face?",
+        "as": "সন্ধিয়া এজন ব্যক্তিৰ ছাঁ তেওঁৰ বাওঁফালে পৰিছে। তেওঁৰ মুখ কোন ফালে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Where is the sun?",
+          "as": "সূৰ্য ক'ত?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Morning sun is east, evening sun is west.",
+          "as": "ৰাতিপুৱা সূৰ্য পূবে, সন্ধিয়া পশ্চিমে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which way does the shadow point?",
+          "as": "ছাঁ কোন ফালে পৰে?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A shadow points away from the sun.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে।"
+         },
+         "tag": "r-m-shadow"
+        },
+        {
+         "ask": {
+          "en": "So they face?",
+          "as": "তেন্তে মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Their left must be east.",
+          "as": "তেওঁৰ বাওঁফালে পূব হ'ব লাগিব।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The shadow points east, so they face south.",
+        "as": "ছাঁ পূবলৈ, গতিকে মুখ দক্ষিণলৈ।"
+       }
+      },
+      {
+       "q": {
+        "en": "In the morning, a person's shadow falls to their left. Which way do they face?",
+        "as": "ৰাতিপুৱা এজন ব্যক্তিৰ ছাঁ তেওঁৰ বাওঁফালে পৰিছে। তেওঁৰ মুখ কোন ফালে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Where is the sun?",
+          "as": "সূৰ্য ক'ত?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Morning sun is east, evening sun is west.",
+          "as": "ৰাতিপুৱা সূৰ্য পূবে, সন্ধিয়া পশ্চিমে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which way does the shadow point?",
+          "as": "ছাঁ কোন ফালে পৰে?"
+         },
+         "options": [
+          {
+           "en": "West",
+           "as": "পশ্চিম"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "A shadow points away from the sun.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে।"
+         },
+         "tag": "r-m-shadow"
+        },
+        {
+         "ask": {
+          "en": "So they face?",
+          "as": "তেন্তে মুখ কোন ফালে?"
+         },
+         "options": [
+          {
+           "en": "South",
+           "as": "দক্ষিণ"
+          },
+          {
+           "en": "East",
+           "as": "পূব"
+          },
+          {
+           "en": "North",
+           "as": "উত্তৰ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Their left must be west.",
+          "as": "তেওঁৰ বাওঁফালে পশ্চিম হ'ব লাগিব।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The shadow points west, so they face north.",
+        "as": "ছাঁ পশ্চিমলৈ, গতিকে মুখ উত্তৰলৈ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs9.u4.q4",
+     "type": "match",
+     "skill": "r-shadow",
+     "q": {
+      "en": "Match the time to the fact",
+      "as": "সময়ক তথ্যৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Morning sun",
+        "as": "ৰাতিপুৱাৰ সূৰ্য"
+       },
+       {
+        "en": "East",
+        "as": "পূব"
+       }
+      ],
+      [
+       {
+        "en": "Morning shadow",
+        "as": "ৰাতিপুৱাৰ ছাঁ"
+       },
+       {
+        "en": "West",
+        "as": "পশ্চিম"
+       }
+      ],
+      [
+       {
+        "en": "Facing north, morning shadow falls",
+        "as": "উত্তৰমুৱা হ'লে ৰাতিপুৱাৰ ছাঁ"
+       },
+       {
+        "en": "To the left",
+        "as": "বাওঁফালে"
+       }
+      ],
+      [
+       {
+        "en": "Facing north, evening shadow falls",
+        "as": "উত্তৰমুৱা হ'লে সন্ধিয়াৰ ছাঁ"
+       },
+       {
+        "en": "To the right",
+        "as": "সোঁফালে"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Fix the shadow first, then read left and right.",
+      "as": "প্ৰথমে ছাঁ ঠিক কৰা, তাৰ পিছত বাওঁ-সোঁ পঢ়া।"
+     }
+    },
+    {
+     "id": "rs9.u4.q5",
+     "type": "explore",
+     "skill": "r-shadow",
+     "q": {
+      "en": "It is evening. Turn the walker so that its shadow falls to its left.",
+      "as": "সন্ধিয়াৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ বাওঁফালে পৰে।"
+     },
+     "widget": {
+      "kind": "walk",
+      "f": 0,
+      "turnOnly": true,
+      "ask": "facing"
+     },
+     "target": 2,
+     "answerText": {
+      "en": "Facing south",
+      "as": "দক্ষিণলৈ মুখ"
+     },
+     "traps": [
+      {
+       "val": 0,
+       "tag": "r-m-shadow",
+       "why": {
+        "en": "A shadow falls away from the sun, not towards it.",
+        "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "In the evening the shadow points east, so you must face south.",
+      "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে, গতিকে দক্ষিণলৈ মুখ কৰিব লাগে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "It is evening. Turn the walker so that its shadow falls to its left.",
+        "as": "সন্ধিয়াৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ বাওঁফালে পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Facing south",
+        "as": "দক্ষিণলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 0,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the evening the shadow points east, so you must face south.",
+        "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে, গতিকে দক্ষিণলৈ মুখ কৰিব লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "It is morning. Turn the walker so that its shadow falls in front.",
+        "as": "ৰাতিপুৱাৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ সন্মুখত পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Facing west",
+        "as": "পশ্চিমলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 1,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the morning the shadow points west, so you must face west.",
+        "as": "ৰাতিপুৱা ছাঁ পশ্চিমলৈ পৰে, গতিকে পশ্চিমলৈ মুখ কৰিব লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "It is evening. Turn the walker so that its shadow falls behind.",
+        "as": "সন্ধিয়াৰ সময়। খোজকাৰীক এনেকৈ ঘূৰোৱা যাতে তাৰ ছাঁ পিছফালে পৰে।"
+       },
+       "widget": {
+        "kind": "walk",
+        "f": 0,
+        "turnOnly": true,
+        "ask": "facing"
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Facing west",
+        "as": "পশ্চিমলৈ মুখ"
+       },
+       "traps": [
+        {
+         "val": 1,
+         "tag": "r-m-shadow",
+         "why": {
+          "en": "A shadow falls away from the sun, not towards it.",
+          "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "In the evening the shadow points east, so you must face west.",
+        "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে, গতিকে পশ্চিমলৈ মুখ কৰিব লাগে।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Direction test",
+   "as": "দিশৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs9.t.q1",
+    "type": "mcq",
+    "skill": "r-turn",
+    "q": {
+     "en": "You face south and turn left. Which way do you face?",
+     "as": "তুমি দক্ষিণলৈ মুখ কৰি বাওঁফালে ঘূৰিলা। এতিয়া মুখ কোন ফালে?"
+    },
+    "why": {
+     "en": "You end facing east.",
+     "as": "শেষত পূবলৈ মুখ।"
+    },
+    "options": [
+     {
+      "en": "North",
+      "as": "North"
+     },
+     {
+      "en": "East",
+      "as": "East"
+     },
+     {
+      "en": "South",
+      "as": "South"
+     },
+     {
+      "en": "West",
+      "as": "West"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "r-m-leftwest",
+      "why": {
+       "en": "You took left as west. Left is west only when you face north.",
+       "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "You face south and turn left. Which way do you face?",
+       "as": "তুমি দক্ষিণলৈ মুখ কৰি বাওঁফালে ঘূৰিলা। এতিয়া মুখ কোন ফালে?"
+      },
+      "why": {
+       "en": "You end facing east.",
+       "as": "শেষত পূবলৈ মুখ।"
+      },
+      "options": [
+       {
+        "en": "North",
+        "as": "North"
+       },
+       {
+        "en": "East",
+        "as": "East"
+       },
+       {
+        "en": "South",
+        "as": "South"
+       },
+       {
+        "en": "West",
+        "as": "West"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-leftwest",
+        "why": {
+         "en": "You took left as west. Left is west only when you face north.",
+         "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "You face west and turn right. Which way do you face?",
+       "as": "তুমি পশ্চিমলৈ মুখ কৰি সোঁফালে ঘূৰিলা। এতিয়া মুখ কোন ফালে?"
+      },
+      "why": {
+       "en": "You end facing north.",
+       "as": "শেষত উত্তৰলৈ মুখ।"
+      },
+      "options": [
+       {
+        "en": "South",
+        "as": "South"
+       },
+       {
+        "en": "North",
+        "as": "North"
+       },
+       {
+        "en": "East",
+        "as": "East"
+       },
+       {
+        "en": "West",
+        "as": "West"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "r-m-leftwest",
+        "why": {
+         "en": "You took left as west. Left is west only when you face north.",
+         "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "You face south and turn right. Which way do you face?",
+       "as": "তুমি দক্ষিণলৈ মুখ কৰি সোঁফালে ঘূৰিলা। এতিয়া মুখ কোন ফালে?"
+      },
+      "why": {
+       "en": "You end facing west.",
+       "as": "শেষত পশ্চিমলৈ মুখ।"
+      },
+      "options": [
+       {
+        "en": "East",
+        "as": "East"
+       },
+       {
+        "en": "North",
+        "as": "North"
+       },
+       {
+        "en": "West",
+        "as": "West"
+       },
+       {
+        "en": "South",
+        "as": "South"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "r-m-leftwest",
+        "why": {
+         "en": "You took left as west. Left is west only when you face north.",
+         "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs9.t.q2",
+    "type": "mcq",
+    "skill": "r-route",
+    "q": {
+     "en": "Walk 4 north, turn right, walk 2, turn right, walk 4. Where do you end?",
+     "as": "উত্তৰলৈ 4 গৈ সোঁফালে ঘূৰি 2 গৈ সোঁফালে ঘূৰি 4 যোৱা। ক'ত শেষ হ'ল?"
+    },
+    "why": {
+     "en": "North and south cancel, leaving 2 east.",
+     "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 2 থাকে।"
+    },
+    "options": [
+     {
+      "en": "2 east",
+      "as": "2 east"
+     },
+     {
+      "en": "2 west",
+      "as": "2 west"
+     },
+     {
+      "en": "4 north",
+      "as": "4 north"
+     },
+     {
+      "en": "6 east",
+      "as": "6 east"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "r-m-leftwest",
+      "why": {
+       "en": "You took left as west. Left is west only when you face north.",
+       "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Walk 4 north, turn right, walk 2, turn right, walk 4. Where do you end?",
+       "as": "উত্তৰলৈ 4 গৈ সোঁফালে ঘূৰি 2 গৈ সোঁফালে ঘূৰি 4 যোৱা। ক'ত শেষ হ'ল?"
+      },
+      "why": {
+       "en": "North and south cancel, leaving 2 east.",
+       "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 2 থাকে।"
+      },
+      "options": [
+       {
+        "en": "2 east",
+        "as": "2 east"
+       },
+       {
+        "en": "2 west",
+        "as": "2 west"
+       },
+       {
+        "en": "4 north",
+        "as": "4 north"
+       },
+       {
+        "en": "6 east",
+        "as": "6 east"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-leftwest",
+        "why": {
+         "en": "You took left as west. Left is west only when you face north.",
+         "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Walk 3 north, turn right, walk 5, turn right, walk 3. Where do you end?",
+       "as": "উত্তৰলৈ 3 গৈ সোঁফালে ঘূৰি 5 গৈ সোঁফালে ঘূৰি 3 যোৱা। ক'ত শেষ হ'ল?"
+      },
+      "why": {
+       "en": "North and south cancel, leaving 5 east.",
+       "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 5 থাকে।"
+      },
+      "options": [
+       {
+        "en": "3 north",
+        "as": "3 north"
+       },
+       {
+        "en": "8 east",
+        "as": "8 east"
+       },
+       {
+        "en": "5 west",
+        "as": "5 west"
+       },
+       {
+        "en": "5 east",
+        "as": "5 east"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-leftwest",
+        "why": {
+         "en": "You took left as west. Left is west only when you face north.",
+         "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Walk 5 north, turn right, walk 3, turn right, walk 5. Where do you end?",
+       "as": "উত্তৰলৈ 5 গৈ সোঁফালে ঘূৰি 3 গৈ সোঁফালে ঘূৰি 5 যোৱা। ক'ত শেষ হ'ল?"
+      },
+      "why": {
+       "en": "North and south cancel, leaving 3 east.",
+       "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 3 থাকে।"
+      },
+      "options": [
+       {
+        "en": "3 east",
+        "as": "3 east"
+       },
+       {
+        "en": "8 east",
+        "as": "8 east"
+       },
+       {
+        "en": "3 west",
+        "as": "3 west"
+       },
+       {
+        "en": "5 north",
+        "as": "5 north"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-leftwest",
+        "why": {
+         "en": "You took left as west. Left is west only when you face north.",
+         "as": "তুমি বাওঁফালক পশ্চিম বুলি ধৰিলা। উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs9.t.q3",
+    "type": "solve",
+    "skill": "r-dist",
+    "q": {
+     "en": "Walk 4 km north, then 3 km east. How far are you from the start in a straight line?",
+     "as": "উত্তৰলৈ 4 কি.মি. গৈ পূবলৈ 3 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+    },
+    "answer": "5",
+    "suffix": {
+     "en": "km",
+     "as": "কি.মি."
+    },
+    "why": {
+     "en": "The two walks form a right angle: 4² + 3² = 5².",
+     "as": "দুয়োটা খোজে সমকোণ বনায়: 4² + 3² = 5²।"
+    },
+    "traps": [
+     {
+      "ans": "7",
+      "tag": "r-m-addlegs",
+      "why": {
+       "en": "You added the walks. The straight line is shorter: use the two net distances.",
+       "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Walk 4 km north, then 3 km east. How far are you from the start in a straight line?",
+       "as": "উত্তৰলৈ 4 কি.মি. গৈ পূবলৈ 3 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+      },
+      "answer": "5",
+      "suffix": {
+       "en": "km",
+       "as": "কি.মি."
+      },
+      "why": {
+       "en": "The two walks form a right angle: 4² + 3² = 5².",
+       "as": "দুয়োটা খোজে সমকোণ বনায়: 4² + 3² = 5²।"
+      },
+      "traps": [
+       {
+        "ans": "7",
+        "tag": "r-m-addlegs",
+        "why": {
+         "en": "You added the walks. The straight line is shorter: use the two net distances.",
+         "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Walk 8 km north, then 6 km east. How far are you from the start in a straight line?",
+       "as": "উত্তৰলৈ 8 কি.মি. গৈ পূবলৈ 6 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+      },
+      "answer": "10",
+      "suffix": {
+       "en": "km",
+       "as": "কি.মি."
+      },
+      "why": {
+       "en": "The two walks form a right angle: 8² + 6² = 10².",
+       "as": "দুয়োটা খোজে সমকোণ বনায়: 8² + 6² = 10²।"
+      },
+      "traps": [
+       {
+        "ans": "14",
+        "tag": "r-m-addlegs",
+        "why": {
+         "en": "You added the walks. The straight line is shorter: use the two net distances.",
+         "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Walk 12 km north, then 5 km east. How far are you from the start in a straight line?",
+       "as": "উত্তৰলৈ 12 কি.মি. গৈ পূবলৈ 5 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+      },
+      "answer": "13",
+      "suffix": {
+       "en": "km",
+       "as": "কি.মি."
+      },
+      "why": {
+       "en": "The two walks form a right angle: 12² + 5² = 13².",
+       "as": "দুয়োটা খোজে সমকোণ বনায়: 12² + 5² = 13²।"
+      },
+      "traps": [
+       {
+        "ans": "17",
+        "tag": "r-m-addlegs",
+        "why": {
+         "en": "You added the walks. The straight line is shorter: use the two net distances.",
+         "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs9.t.q4",
+    "type": "mcq",
+    "skill": "r-shadow",
+    "q": {
+     "en": "It is morning. You face north. Where does your shadow fall?",
+     "as": "ৰাতিপুৱাৰ সময়। তুমি উত্তৰলৈ মুখ কৰিছা। ছাঁ কোন ফালে পৰিব?"
+    },
+    "why": {
+     "en": "The morning shadow points west, which is your left when you face north.",
+     "as": "ৰাতিপুৱা ছাঁ পশ্চিমলৈ পৰে; উত্তৰলৈ মুখ কৰিলে সেয়া বাওঁফাল।"
+    },
+    "options": [
+     {
+      "en": "In front",
+      "as": "In front"
+     },
+     {
+      "en": "Right",
+      "as": "Right"
+     },
+     {
+      "en": "Behind",
+      "as": "Behind"
+     },
+     {
+      "en": "Left",
+      "as": "Left"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "r-m-shadow",
+      "why": {
+       "en": "A shadow falls away from the sun, not towards it.",
+       "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "It is morning. You face north. Where does your shadow fall?",
+       "as": "ৰাতিপুৱাৰ সময়। তুমি উত্তৰলৈ মুখ কৰিছা। ছাঁ কোন ফালে পৰিব?"
+      },
+      "why": {
+       "en": "The morning shadow points west, which is your left when you face north.",
+       "as": "ৰাতিপুৱা ছাঁ পশ্চিমলৈ পৰে; উত্তৰলৈ মুখ কৰিলে সেয়া বাওঁফাল।"
+      },
+      "options": [
+       {
+        "en": "In front",
+        "as": "In front"
+       },
+       {
+        "en": "Right",
+        "as": "Right"
+       },
+       {
+        "en": "Behind",
+        "as": "Behind"
+       },
+       {
+        "en": "Left",
+        "as": "Left"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-shadow",
+        "why": {
+         "en": "A shadow falls away from the sun, not towards it.",
+         "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "It is evening. You face north. Where does your shadow fall?",
+       "as": "সন্ধিয়াৰ সময়। তুমি উত্তৰলৈ মুখ কৰিছা। ছাঁ কোন ফালে পৰিব?"
+      },
+      "why": {
+       "en": "The evening shadow points east, which is your right when you face north.",
+       "as": "সন্ধিয়া ছাঁ পূবলৈ পৰে; উত্তৰলৈ মুখ কৰিলে সেয়া সোঁফাল।"
+      },
+      "options": [
+       {
+        "en": "Right",
+        "as": "Right"
+       },
+       {
+        "en": "Behind",
+        "as": "Behind"
+       },
+       {
+        "en": "In front",
+        "as": "In front"
+       },
+       {
+        "en": "Left",
+        "as": "Left"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-shadow",
+        "why": {
+         "en": "A shadow falls away from the sun, not towards it.",
+         "as": "ছাঁ সূৰ্যৰ ওলোটা ফালে পৰে, সূৰ্যৰ ফালে নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs9.t.q5",
+    "type": "tf",
+    "skill": "r-turn",
+    "s": {
+     "en": "Three right turns face the same way as one left turn.",
+     "as": "তিনিটা সোঁ ঘূৰণি আৰু এটা বাওঁ ঘূৰণিত মুখ একে ফালে হয়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Three quarter turns one way equal one quarter turn the other way.",
+     "as": "এফালে তিনি চতুৰ্থাংশ আনফালে এক চতুৰ্থাংশৰ সমান।"
+    }
+   },
+   {
+    "id": "rs9.t.q6",
+    "type": "solve",
+    "skill": "r-dist",
+    "q": {
+     "en": "Walk 8 km north, 2 km south, then 8 km east. What is the straight distance from the start?",
+     "as": "উত্তৰলৈ 8 কি.মি., দক্ষিণলৈ 2 কি.মি., তাৰ পিছত পূবলৈ 8 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+    },
+    "answer": "10",
+    "suffix": {
+     "en": "km",
+     "as": "কি.মি."
+    },
+    "why": {
+     "en": "North and south leave 6. With 8 east, the straight line is 10.",
+     "as": "উত্তৰ-দক্ষিণত 6 থাকে। পূবে 8 ৰ লগত পোন দূৰত্ব 10।"
+    },
+    "traps": [
+     {
+      "ans": "18",
+      "tag": "r-m-addlegs",
+      "why": {
+       "en": "You added the walks. The straight line is shorter: use the two net distances.",
+       "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Walk 8 km north, 2 km south, then 8 km east. What is the straight distance from the start?",
+       "as": "উত্তৰলৈ 8 কি.মি., দক্ষিণলৈ 2 কি.মি., তাৰ পিছত পূবলৈ 8 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+      },
+      "answer": "10",
+      "suffix": {
+       "en": "km",
+       "as": "কি.মি."
+      },
+      "why": {
+       "en": "North and south leave 6. With 8 east, the straight line is 10.",
+       "as": "উত্তৰ-দক্ষিণত 6 থাকে। পূবে 8 ৰ লগত পোন দূৰত্ব 10।"
+      },
+      "traps": [
+       {
+        "ans": "18",
+        "tag": "r-m-addlegs",
+        "why": {
+         "en": "You added the walks. The straight line is shorter: use the two net distances.",
+         "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Walk 6 km north, 3 km south, then 4 km east. What is the straight distance from the start?",
+       "as": "উত্তৰলৈ 6 কি.মি., দক্ষিণলৈ 3 কি.মি., তাৰ পিছত পূবলৈ 4 কি.মি. যোৱা। পোনে পোনে আৰম্ভণিৰ পৰা দূৰত্ব কিমান?"
+      },
+      "answer": "5",
+      "suffix": {
+       "en": "km",
+       "as": "কি.মি."
+      },
+      "why": {
+       "en": "North and south leave 3. With 4 east, the straight line is 5.",
+       "as": "উত্তৰ-দক্ষিণত 3 থাকে। পূবে 4 ৰ লগত পোন দূৰত্ব 5।"
+      },
+      "traps": [
+       {
+        "ans": "13",
+        "tag": "r-m-addlegs",
+        "why": {
+         "en": "You added the walks. The straight line is shorter: use the two net distances.",
+         "as": "তুমি খোজবোৰ যোগ কৰিলা। পোনে পোনে দূৰত্ব কম: দুটা নিকা দূৰত্ব ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

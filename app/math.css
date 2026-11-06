@@ -174,3 +174,28 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .fgv { display: block; width: 100%; max-height: 220px; }
 .fg-read { color: #16305C; font-size: 17px; } .fg-read .yes { color: #0F8A5F; } .fg-read .no { color: #D3323F; }
 .wx-kite, .wx-net, .wx-pour { justify-items: center; }
+
+/* ---------- reasoning scenes (app/reasonstage.js) ---------- */
+.kp.az { grid-template-columns: repeat(7, 1fr); gap: 5px; }
+.kp.az .tile { padding: 9px 0; font-size: 17px; }
+.kp.az .tile[data-key="⌫"] { grid-column: span 2; }
+.whl, .wlk, .vn { display: block; width: 100%; max-width: 330px; margin: 0 auto; touch-action: manipulation; }
+.whl .pl { font-size: 14px; font-weight: 800; fill: #16305C; }
+.whl .pl.hit { fill: #D3323F; font-size: 17px; }
+.whl .cd { font-size: 14px; font-weight: 700; fill: #1F5FBF; }
+.whl .whk { font-size: 30px; font-weight: 900; fill: #16305C; }
+.whl .whs { font-size: 11px; font-weight: 700; fill: #7E93AE; }
+.whg { display: block; font-size: 13px; color: #7E93AE; }
+.wx-read b.yes { color: #0F8A5F; }
+.wlk .wlc { font-size: 15px; font-weight: 900; fill: #16305C; }
+.wlk .wls { font-size: 11px; font-weight: 800; fill: #1F5FBF; }
+.wlk-keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+.wlk-keys .tile { padding: 11px 0; font-size: 16px; touch-action: manipulation; }
+.wlk-reset { display: block; margin: 8px auto 0; }
+.vn { cursor: pointer; }
+.vn .vnl { font-size: 13px; font-weight: 800; }
+.vn .vnn { font-size: 16px; font-weight: 900; fill: #16305C; pointer-events: none; }
+.spk { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.spk-o { padding: 6px; }
+.spk-o svg { display: block; width: 100%; max-width: 140px; margin: 0 auto; }
+.spk-o.sel { outline: 3px solid #D8930B; outline-offset: 1px; }

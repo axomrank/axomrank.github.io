@@ -285,7 +285,8 @@ if (CFG.firebase) {
   import("./sync.js").then((m) => m.start({ CFG, auth, snapshot, merge, applySnapshot, listeners })).catch((e) => console.warn("Sync unavailable:", e));
 }
 
-window.AXOM = { B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
+const notebook = (cid) => cid === "mathematics" || cid === "reasoning";   // courses drawn in the exercise-book look (app/math.css)
+window.AXOM = { notebook, B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
   isOffline, saveOffline, ICON, initLang, auth, merge, snapshot, applySnapshot, onSave: (f) => listeners.push(f), _audioState: () => (ac ? ac.state : "none"),
   iso, skillAnswer, misconception, skillState, rootCause, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
 })();

@@ -235,7 +235,7 @@ function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
 /* ========================================================= */
 function boot(L, mode) {
 const VIRTUAL = mode !== "lesson";
-if (L.course === "mathematics" || (["diagnostic", "drill"].includes(mode) && CID === "mathematics")) document.documentElement.classList.add("maths");
+if (AXOM.notebook(L.course) || (["diagnostic", "drill"].includes(mode) && AXOM.notebook(CID))) document.documentElement.classList.add("maths");
 const P = VIRTUAL ? { done: {} } : AXOM.getLesson(L.id);
 const saveAll = () => (VIRTUAL ? AXOM.saveGlobal() : AXOM.saveLesson(L.id, P));
 const bankOf = (lid) => (G.mistakes[lid] = G.mistakes[lid] || []);
@@ -306,7 +306,7 @@ document.body.insertAdjacentHTML("afterbegin", `
       <div id="mission-slot"></div>
       <div id="mistake-slot"></div>
       <div class="path" id="path"></div>
-      ${L.course === "mathematics" ? "" : `<div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>`}
+      ${AXOM.notebook(L.course) ? "" : `<div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>`}
     </div>
   </div>
   <div class="view" id="v-empty"><div class="empty-pane">${AXOM.ICON.book}<p>${T(B("Choose a unit on the left to start.", "আৰম্ভ কৰিবলৈ বাওঁফালৰ পৰা এটা অধ্যায় বাছি লোৱা।"))}</p></div></div>

@@ -160,7 +160,7 @@ async function render() {
   if (CID === "assam-history") UI.tab = "overview";
   if (UI.lastCourse !== CID) { UI.lastCourse = CID; saveUI(); }
   if (course.skills && !SKILLS) SKILLS = await AXOM.getJSON(course.skills);
-  document.documentElement.classList.toggle("maths", CID === "mathematics");
+  document.documentElement.classList.toggle("maths", AXOM.notebook(CID));
   const S = subjectOf(DATA.cat, CID);
   const TABS = (CID === "assam-history" ? ["lessons", "overview"] : course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : (k === "overview" ? B("Overview", "অৱলোকন") : ALL_TABS[k])]);
   if (!TABS.some(([k]) => k === UI.tab)) UI.tab = "lessons";

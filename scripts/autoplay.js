@@ -16,7 +16,7 @@ async function solve(s, wrong){
     window.autoplayIssues.push({ id:s.id, type:s.type, lang:lg, issue:'horizontal overflow' });
   switch(s.type){
     case 'story': if(s.tasks) { const st=__L.run().st; AXOM_MATH.finishTasks(st); __L.refresh&&__L.refresh(); } act(); return 'story';
-    case 'solve': { const v=wrong?(s.traps&&s.traps[0]?s.traps[0].ans:'99999'):s.answer; for(const ch of String(v)){ const k=$('[data-key="'+ch.replace('-','−')+'"]',scr); if(!k) throw new Error('no key '+ch); click(k);} await sl(3); act(); break; }
+    case 'solve': { const v=wrong?(s.traps&&s.traps[0]?s.traps[0].ans:(s.input==='letters'?'QQ':'99999')):s.answer; for(const ch of String(v)){ const k=$('[data-key="'+ch.replace('-','−')+'"]',scr); if(!k) throw new Error('no key '+ch); click(k);} await sl(3); act(); break; }
     case 'explore': { const st=__L.run().st; if(s.widget.kind==='peel'){ if(wrong) click($('[data-prime]:not([disabled])',scr)); AXOM_MATH.autoSet(s,st,false);} else AXOM_MATH.autoSet(s,st,wrong); await sl(3); act(); break; }
     case 'stepwise': { for(let k=0;k<s.parts.length;k++){ const p=s.parts[k], a=(wrong&&k===0)?(p.answer+1)%p.options.length:p.answer; click($('[data-part="'+a+'"]',scr)); await sl(3);} break; }
     case 'mcq': case 'odd': case 'inline': case 'picture': case 'whoami':

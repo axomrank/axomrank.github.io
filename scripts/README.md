@@ -19,6 +19,7 @@ Nothing in `scripts/` is deployed or loaded by the app.
 | `audit_lessons.py <paths>` | Lesson-design audit for new units |
 | `format_story_beats.py <paths>` | Splits an overlong bilingual story paragraph at aligned sentences |
 | `check_math.py`, `check_skill_model.cjs` | Mathematics content and mastery rules |
+| `check_reasoning.py` | Reasoning content, and answers recomputed from question text |
 | `audit_math_division.py` | Lists `//` divisions that drop a remainder, for a person to check |
 | `check_constitution.py`, `check_indian_history.py`, `check_history_completion.py` | Course scope and content |
 | `check_daily_review.cjs`, `check_learning_gates.cjs` | Review queue, retries, 80% gates, test-outs, checkpoints |
@@ -32,6 +33,7 @@ the committed files exactly.
 | Script | Writes | Rerun result |
 |---|---|---|
 | `build_math_course.py` | `math-*` lessons, Mathematics course, bank and skills | No change |
+| `build_reasoning_course.py` | `rs-*` lessons, Reasoning course, bank and skills | No change; course tiles are made only if missing |
 | `build_constitution_bank.py` | Constitution bank | No change |
 | `build_indian_history_bank.py` | Indian History bank | No change |
 | `add_article_entities.py` | `art-*` entries in `content/entities.json` | No change |
@@ -41,7 +43,8 @@ the committed files exactly.
 `build_math_course.py` overwrites the Mathematics files, so change the generator
 and never the JSON. Its lesson modules are in `math_course/`: add new lesson
 functions there and register them in `build_math_course.py`. `math_kit.py` holds
-the shared step helpers.
+the shared step helpers. Reasoning lessons are in `reasoning_course/`, and reuse
+`math_kit.py`.
 
 ## Deployment
 

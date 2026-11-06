@@ -57,6 +57,10 @@ A lesson or story `map` may set `"base": "india"`; the default is `"assam"`. See
 
 `solve`, `explore` and `stepwise` steps, story-card widgets, number `variants`, `skill` and `traps` fields and `$...$` maths come from `app/math.js`. See [MATHEMATICS-COURSE.md](MATHEMATICS-COURSE.md). A step with `variants` keeps one permanent id across all its versions.
 
+## Reasoning additions
+
+The draft Reasoning course adds the scenes `shift`, `walk`, `venn` and `setpick`, and `"input": "letters"` on a `solve` step. See [REASONING-COURSE.md](REASONING-COURSE.md).
+
 ## Learning loop (in `app/engine.js`)
 
 - A missed question in a unit or lesson test returns once at the end. Match does not repeat.

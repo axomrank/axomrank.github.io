@@ -66,7 +66,8 @@ must not inflate first-attempt accuracy or a delayed-mastery claim.
 This is a static HTML/CSS/JavaScript PWA. Content is JSON; `app/engine.js` owns
 the player, `app/home.js` owns navigation, `app/common.js` owns local progress
 and spaced review, and `app/sync.js` owns Firebase sync. `app/math*.js` and
-`app/math.css` own the Mathematics stages and widgets. Source records, maps
+`app/math.css` own the Mathematics stages and widgets. `app/reasonstage.js` owns
+the Reasoning scenes. Source records, maps
 and tappable entities are shared. Course entries use `kings` even for topics
 that are not rulers. Eras use numeric `from`/`to` ranges.
 
@@ -75,6 +76,7 @@ Before editing, find what owns the file:
 | To change | Edit | Do not edit |
 |---|---|---|
 | Mathematics content | `scripts/build_math_course.py`, `scripts/math_course/` | `math-*` lessons, its course, bank or skills JSON |
+| Reasoning content | `scripts/build_reasoning_course.py`, `scripts/reasoning_course/` | `rs-*` lessons, its course, bank or skills JSON |
 | Other released lessons | `content/lessons/<id>.json` | |
 | Course outline or catalog | `content/courses/`, `content/catalog.json` | |
 | Constitution or Indian History bank | Lesson steps, then that course's `build_*_bank.py` | The bank JSON |
@@ -82,7 +84,7 @@ Before editing, find what owns the file:
 
 `scripts/README.md` lists every script and whether it is safe to rerun.
 The JSON in `content/` is the source of truth for every course except
-Mathematics. Only the root `.html` and site files, `app/`, `content/` and `icons/`
+Mathematics and Reasoning. Only the root `.html` and site files, `app/`, `content/` and `icons/`
 ship, so moving a file under those paths needs a check of `sw.js` and the
 deploy script. `docs/research/` keeps source registers and picture provenance:
 record new pictures there, and do not remove records for pictures still in use.
