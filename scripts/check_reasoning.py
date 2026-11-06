@@ -111,6 +111,10 @@ def check_version(s, where):
     if re.search(r"\bNone\b|\bnan\b|\{[a-z_]+\}|\ufffd", text):
         errors.append(f"{where}: leftover template text")
     t = s["type"]
+    if t == "inline":
+        names = [o["en"] for o in s["options"]]
+        if len(set(names)) != len(names) or not 0 <= s["answer"] < len(names):
+            errors.append(f"{where}: bad inline options {names}")
     if t in ("mcq", "odd"):
         names = [o["en"] for o in s["options"]]
         if len(set(names)) != len(names) or len(names) != 4:
@@ -134,6 +138,10 @@ def check_version(s, where):
             errors.append(f"{where}: no such diagram")
         if any(x["val"] == s["target"] for x in s.get("traps", [])):
             errors.append(f"{where}: a trap equals the answer")
+    if t == "match":
+        right = [str(p[1]["en"]).strip() for p in s["pairs"]]
+        if len(set(right)) != len(right):
+            errors.append(f"{where}: match has repeated answers {right}")
     if t == "unscramble" and not all(isinstance(s["word"][lang], list) for lang in ("en", "as")):
         errors.append(f"{where}: an unscramble word must be a list of tiles")
     if t == "stepwise":
@@ -159,7 +167,7 @@ def check_step(s, where):
     if s.get("skill") not in SKILLS:
         errors.append(f"{where}: unknown skill {s.get('skill')}")
     versions = s.get("variants", [])
-    if s["type"] in ("solve", "explore", "stepwise", "mcq") and len(versions) < 2:
+    if s["type"] in ("solve", "explore", "stepwise", "mcq", "inline") and len(versions) < 2:
         errors.append(f"{where}: a generated step needs at least two variants")
     for k, v in enumerate(versions):
         check_version({**s, **v}, f"{where}#{k}")

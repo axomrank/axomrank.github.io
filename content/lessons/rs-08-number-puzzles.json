@@ -1,0 +1,2376 @@
+{
+ "id": "rs-08-number-puzzles",
+ "course": "reasoning",
+ "no": 8,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Number puzzles",
+  "as": "সংখ্যাৰ সাঁথৰ"
+ },
+ "reign": {
+  "en": "Scanning, ordering, building numbers",
+  "as": "চকু ফুৰোৱা, ক্ৰম, সংখ্যা বনোৱা"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Read with a condition",
+    "as": "চৰ্তৰে পঢ়া"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Move through digits one at a time.",
+     "as": "এটা এটাকৈ অংক চোৱা।"
+    },
+    {
+     "en": "Check the digit you want first.",
+     "as": "বিচৰা অংকটো আগতে।"
+    },
+    {
+     "en": "Then check its neighbours.",
+     "as": "তাৰ পিছত কাষৰ অংক।"
+    },
+    {
+     "en": "Mark what you have counted.",
+     "as": "গণাখিনি চিন দিয়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs8.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Slow is faster",
+      "as": "লাহে যোৱাই খৰ"
+     },
+     "text": [
+      {
+       "en": "These questions punish skimming. Stop at each target digit and test it.",
+       "as": "এই প্ৰশ্নত আওপকীয়া পঢ়া নচলে। প্ৰতিটো লক্ষ্য অংকত ৰৈ পৰীক্ষা কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Find the digit",
+        "as": "অংক উলিওৱা"
+       },
+       {
+        "en": "Look before",
+        "as": "আগত চোৱা"
+       },
+       {
+        "en": "Look after",
+        "as": "পিছত চোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Both means both",
+      "as": "দুয়োটা মানে দুয়োটা"
+     },
+     "text": [
+      {
+       "en": "'Before and after' needs two ticks. One tick is not a count.",
+       "as": "'আগত আৰু পিছত' দুটা টিক লাগে। এটাত নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "3 5 7 ✓",
+        "as": "3 5 7 ✓"
+       },
+       {
+        "en": "3 5 2 ✗",
+        "as": "3 5 2 ✗"
+       },
+       {
+        "en": "4 5 7 ✗",
+        "as": "4 5 7 ✗"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u1.q1",
+     "type": "solve",
+     "skill": "r-dscan",
+     "q": {
+      "en": "In 3523585236753, how many 5s come straight after a 3?",
+      "as": "3523585236753 ত 3 ৰ ঠিক পিছত 5 কিমানবাৰ আছে?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Look at each 5 and the digit before it: 2.",
+      "as": "প্ৰতিটো 5 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+     },
+     "traps": [
+      {
+       "ans": "4",
+       "tag": "r-m-halfscan",
+       "why": {
+        "en": "Check both parts of the condition for every digit.",
+        "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In 3523585236753, how many 5s come straight after a 3?",
+        "as": "3523585236753 ত 3 ৰ ঠিক পিছত 5 কিমানবাৰ আছে?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Look at each 5 and the digit before it: 2.",
+        "as": "প্ৰতিটো 5 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "r-m-halfscan",
+         "why": {
+          "en": "Check both parts of the condition for every digit.",
+          "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In 7274727672147, how many 7s come straight after a 2?",
+        "as": "7274727672147 ত 2 ৰ ঠিক পিছত 7 কিমানবাৰ আছে?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Look at each 7 and the digit before it: 2.",
+        "as": "প্ৰতিটো 7 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "r-m-halfscan",
+         "why": {
+          "en": "Check both parts of the condition for every digit.",
+          "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In 9149419491493, how many 4s come straight after a 1?",
+        "as": "9149419491493 ত 1 ৰ ঠিক পিছত 4 কিমানবাৰ আছে?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Look at each 4 and the digit before it: 2.",
+        "as": "প্ৰতিটো 4 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "r-m-halfscan",
+         "why": {
+          "en": "Check both parts of the condition for every digit.",
+          "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs8.u1.q2",
+     "type": "solve",
+     "skill": "r-dscan",
+     "q": {
+      "en": "In 3573528357358, how many 5s have 3 just before and 7 just after?",
+      "as": "3573528357358 ত কিমান 5 ৰ ঠিক আগত 3 আৰু ঠিক পিছত 7?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Both conditions must hold: 2.",
+      "as": "দুয়োটা চৰ্ত লাগিব: 2।"
+     },
+     "traps": [
+      {
+       "ans": "4",
+       "tag": "r-m-halfscan",
+       "why": {
+        "en": "Check both parts of the condition for every digit.",
+        "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In 3573528357358, how many 5s have 3 just before and 7 just after?",
+        "as": "3573528357358 ত কিমান 5 ৰ ঠিক আগত 3 আৰু ঠিক পিছত 7?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Both conditions must hold: 2.",
+        "as": "দুয়োটা চৰ্ত লাগিব: 2।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "r-m-halfscan",
+         "why": {
+          "en": "Check both parts of the condition for every digit.",
+          "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In 6282681826286, how many 2s have 6 just before and 8 just after?",
+        "as": "6282681826286 ত কিমান 2 ৰ ঠিক আগত 6 আৰু ঠিক পিছত 8?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Both conditions must hold: 2.",
+        "as": "দুয়োটা চৰ্ত লাগিব: 2।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "In 1451341451541, how many 4s have 1 just before and 5 just after?",
+        "as": "1451341451541 ত কিমান 4 ৰ ঠিক আগত 1 আৰু ঠিক পিছত 5?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Both conditions must hold: 2.",
+        "as": "দুয়োটা চৰ্ত লাগিব: 2।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs8.u1.q3",
+     "type": "tf",
+     "skill": "r-dscan",
+     "s": {
+      "en": "In 2 5 2 7, one 5 sits straight after a 2.",
+      "as": "2 5 2 7 ত এটা 5, 2 ৰ ঠিক পিছত।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Only the first 2 is followed by 5.",
+      "as": "কেৱল প্ৰথম 2 ৰ পিছত 5।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-halfscan",
+       "why": {
+        "en": "Check both parts of the condition for every digit.",
+        "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u1.q4",
+     "type": "match",
+     "skill": "r-dscan",
+     "q": {
+      "en": "In 4 1 4 2 4 2, match the question to the count",
+      "as": "4 1 4 2 4 2 ত প্ৰশ্নক সংখ্যাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "How many 4s?",
+        "as": "4 কিমান?"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       }
+      ],
+      [
+       {
+        "en": "How many 2s?",
+        "as": "2 কিমান?"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      [
+       {
+        "en": "How many 1s?",
+        "as": "1 কিমান?"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Test each.",
+      "as": "প্ৰতিটো চোৱা।"
+     }
+    },
+    {
+     "id": "rs8.u1.q5",
+     "type": "order",
+     "skill": "r-dscan",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the condition",
+       "as": "চৰ্ত পঢ়া"
+      },
+      {
+       "en": "Find the digit",
+       "as": "অংক উলিওৱা"
+      },
+      {
+       "en": "Test neighbours",
+       "as": "কাষ চোৱা"
+      },
+      {
+       "en": "Add to the count",
+       "as": "গণনাত যোগ"
+      }
+     ],
+     "why": {
+      "en": "Condition first.",
+      "as": "চৰ্ত আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Pairs that slide along",
+    "as": "আগবঢ়া যোৰ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A pair overlaps the next pair.",
+     "as": "এটা যোৰ পিছৰটোৰ লগত সানিছে।"
+    },
+    {
+     "en": "Move one digit, not two.",
+     "as": "এটা অংক সৰা, দুটা নহয়।"
+    },
+    {
+     "en": "n digits give n − 1 pairs.",
+     "as": "n অংকত n − 1 যোৰ।"
+    },
+    {
+     "en": "Test every pair.",
+     "as": "প্ৰতিটো যোৰ চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs8.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Overlapping pairs",
+      "as": "সানমিহলি যোৰ"
+     },
+     "text": [
+      {
+       "en": "In 2 4 6, both 2 4 and 4 6 are pairs. The middle digit is in two.",
+       "as": "2 4 6 ত 2 4 আৰু 4 6 দুয়োটা যোৰ। মাজৰ অংক দুয়োটাত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "2 4",
+        "as": "2 4"
+       },
+       {
+        "en": "4 6",
+        "as": "4 6"
+       },
+       {
+        "en": "2 pairs",
+        "as": "2 যোৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Slide one step",
+      "as": "এক খোজ সৰা"
+     },
+     "text": [
+      {
+       "en": "Point at two digits, test them, then move one step right.",
+       "as": "দুটা অংক দেখুৱাই চোৱা, এক খোজ সোঁফালে সৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Point",
+        "as": "দেখুওৱা"
+       },
+       {
+        "en": "Test",
+        "as": "চোৱা"
+       },
+       {
+        "en": "Slide",
+        "as": "সৰা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u2.q1",
+     "type": "solve",
+     "skill": "r-dpairs",
+     "q": {
+      "en": "In 246135824, how many neighbouring pairs are both even?",
+      "as": "246135824 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+     },
+     "answer": "4",
+     "why": {
+      "en": "Slide along the digits two at a time: 4.",
+      "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 4।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In 246135824, how many neighbouring pairs are both even?",
+        "as": "246135824 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Slide along the digits two at a time: 4.",
+        "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "In 8426315648, how many neighbouring pairs are both even?",
+        "as": "8426315648 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Slide along the digits two at a time: 5.",
+        "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "In 1248627935, how many neighbouring pairs are both even?",
+        "as": "1248627935 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Slide along the digits two at a time: 4.",
+        "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 4।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u2.q2",
+     "type": "solve",
+     "skill": "r-dpairs",
+     "q": {
+      "en": "In 3524614352, how many neighbouring pairs add to 7?",
+      "as": "3524614352 ত যোগফল 7 হোৱা কিমান কাষৰ যোৰ?"
+     },
+     "answer": "4",
+     "why": {
+      "en": "Test each pair: 4.",
+      "as": "প্ৰতিটো যোৰ চোৱা: 4।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In 3524614352, how many neighbouring pairs add to 7?",
+        "as": "3524614352 ত যোগফল 7 হোৱা কিমান কাষৰ যোৰ?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Test each pair: 4.",
+        "as": "প্ৰতিটো যোৰ চোৱা: 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "In 1827364554, how many neighbouring pairs add to 9?",
+        "as": "1827364554 ত যোগফল 9 হোৱা কিমান কাষৰ যোৰ?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Test each pair: 5.",
+        "as": "প্ৰতিটো যোৰ চোৱা: 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "In 2356241342, how many neighbouring pairs add to 5?",
+        "as": "2356241342 ত যোগফল 5 হোৱা কিমান কাষৰ যোৰ?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Test each pair: 2.",
+        "as": "প্ৰতিটো যোৰ চোৱা: 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u2.q3",
+     "type": "tf",
+     "skill": "r-dpairs",
+     "s": {
+      "en": "A line of 10 digits has 9 neighbouring pairs.",
+      "as": "10 অংকৰ শাৰীত 9 কাষৰ যোৰ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "n − 1 pairs.",
+      "as": "n − 1 যোৰ।"
+     }
+    },
+    {
+     "id": "rs8.u2.q4",
+     "type": "match",
+     "skill": "r-dpairs",
+     "q": {
+      "en": "Match the digits to the even pairs",
+      "as": "অংকক যুগ্ম যোৰৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2 4 6",
+        "as": "2 4 6"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      [
+       {
+        "en": "2 3 4",
+        "as": "2 3 4"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       }
+      ],
+      [
+       {
+        "en": "8 8 1",
+        "as": "8 8 1"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Slide along each.",
+      "as": "প্ৰতিটোত আগবাঢ়া।"
+     }
+    },
+    {
+     "id": "rs8.u2.q5",
+     "type": "order",
+     "skill": "r-dpairs",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Take the first two",
+       "as": "প্ৰথম দুটা"
+      },
+      {
+       "en": "Test the rule",
+       "as": "নিয়ম চোৱা"
+      },
+      {
+       "en": "Move one digit",
+       "as": "এক অংক সৰা"
+      },
+      {
+       "en": "Repeat to the end",
+       "as": "শেষলৈ"
+      }
+     ],
+     "why": {
+      "en": "Move by one.",
+      "as": "এক অংক সৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Putting things in order",
+    "as": "ক্ৰমে সজোৱা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Ascending runs small to large.",
+     "as": "উৰ্ধ্বক্ৰম সৰুৰ পৰা ডাঙৰ।"
+    },
+    {
+     "en": "Descending runs large to small.",
+     "as": "অধঃক্ৰম ডাঙৰৰ পৰা সৰু।"
+    },
+    {
+     "en": "Write the order first.",
+     "as": "প্ৰথমে ক্ৰম লিখা।"
+    },
+    {
+     "en": "Then read the position asked.",
+     "as": "তাৰ পিছত সোধা স্থান পঢ়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs8.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Write it out",
+      "as": "লিখি লোৱা"
+     },
+     "text": [
+      {
+       "en": "Do not sort in your head. Write the new order, then count.",
+       "as": "মনতে নসজাবা। নতুন ক্ৰম লিখি গণা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "381",
+        "as": "381"
+       },
+       {
+        "en": "138",
+        "as": "138"
+       },
+       {
+        "en": "2nd: 3",
+        "as": "২য়: 3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Middle of an odd list",
+      "as": "বিজোৰ তালিকাৰ মাজ"
+     },
+     "text": [
+      {
+       "en": "With five numbers, the third in order is the middle.",
+       "as": "পাঁচটা সংখ্যাত ক্ৰমৰ তৃতীয়টো মাজত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "3 middle",
+        "as": "3 মাজত"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u3.q1",
+     "type": "solve",
+     "skill": "r-dsort",
+     "q": {
+      "en": "Arrange 47, 12, 83, 35, 66 in ascending order. Which number is in the middle?",
+      "as": "47, 12, 83, 35, 66 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+     },
+     "answer": "47",
+     "why": {
+      "en": "In order: 12, 35, 47, 66, 83.",
+      "as": "ক্ৰমে: 12, 35, 47, 66, 83।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Arrange 47, 12, 83, 35, 66 in ascending order. Which number is in the middle?",
+        "as": "47, 12, 83, 35, 66 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+       },
+       "answer": "47",
+       "why": {
+        "en": "In order: 12, 35, 47, 66, 83.",
+        "as": "ক্ৰমে: 12, 35, 47, 66, 83।"
+       }
+      },
+      {
+       "q": {
+        "en": "Arrange 92, 18, 54, 27, 71 in ascending order. Which number is in the middle?",
+        "as": "92, 18, 54, 27, 71 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+       },
+       "answer": "54",
+       "why": {
+        "en": "In order: 18, 27, 54, 71, 92.",
+        "as": "ক্ৰমে: 18, 27, 54, 71, 92।"
+       }
+      },
+      {
+       "q": {
+        "en": "Arrange 33, 88, 15, 60, 42 in ascending order. Which number is in the middle?",
+        "as": "33, 88, 15, 60, 42 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+       },
+       "answer": "42",
+       "why": {
+        "en": "In order: 15, 33, 42, 60, 88.",
+        "as": "ক্ৰমে: 15, 33, 42, 60, 88।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u3.q2",
+     "type": "solve",
+     "skill": "r-dsort",
+     "q": {
+      "en": "Arrange the digits of 5283 in ascending order. Which digit is 2nd from the left?",
+      "as": "5283 ৰ অংকবোৰ উৰ্ধ্বক্ৰমে সজোৱা। বাওঁফালৰ পৰা দ্বিতীয় অংক কি?"
+     },
+     "answer": "3",
+     "why": {
+      "en": "In order: 2358.",
+      "as": "ক্ৰমে: 2358।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Arrange the digits of 5283 in ascending order. Which digit is 2nd from the left?",
+        "as": "5283 ৰ অংকবোৰ উৰ্ধ্বক্ৰমে সজোৱা। বাওঁফালৰ পৰা দ্বিতীয় অংক কি?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "In order: 2358.",
+        "as": "ক্ৰমে: 2358।"
+       }
+      },
+      {
+       "q": {
+        "en": "Arrange the digits of 9416 in ascending order. Which digit is 2nd from the left?",
+        "as": "9416 ৰ অংকবোৰ উৰ্ধ্বক্ৰমে সজোৱা। বাওঁফালৰ পৰা দ্বিতীয় অংক কি?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "In order: 1469.",
+        "as": "ক্ৰমে: 1469।"
+       }
+      },
+      {
+       "q": {
+        "en": "Arrange the digits of 7305 in ascending order. Which digit is 2nd from the left?",
+        "as": "7305 ৰ অংকবোৰ উৰ্ধ্বক্ৰমে সজোৱা। বাওঁফালৰ পৰা দ্বিতীয় অংক কি?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "In order: 0357.",
+        "as": "ক্ৰমে: 0357।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u3.q3",
+     "type": "tf",
+     "skill": "r-dsort",
+     "s": {
+      "en": "In descending order, the largest number comes first.",
+      "as": "অধঃক্ৰমত ডাঙৰ সংখ্যা আগত।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Descending goes downward.",
+      "as": "অধঃক্ৰম তললৈ যায়।"
+     }
+    },
+    {
+     "id": "rs8.u3.q4",
+     "type": "match",
+     "skill": "r-dsort",
+     "q": {
+      "en": "Match the list to its middle",
+      "as": "তালিকাক মাজৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "9, 1, 5",
+        "as": "9, 1, 5"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "2, 8, 7",
+        "as": "2, 8, 7"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       }
+      ],
+      [
+       {
+        "en": "6, 3, 4",
+        "as": "6, 3, 4"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Sort first.",
+      "as": "আগতে সজোৱা।"
+     }
+    },
+    {
+     "id": "rs8.u3.q5",
+     "type": "order",
+     "skill": "r-dsort",
+     "q": {
+      "en": "Ascending order",
+      "as": "উৰ্ধ্বক্ৰম"
+     },
+     "items": [
+      {
+       "en": "18",
+       "as": "18"
+      },
+      {
+       "en": "45",
+       "as": "45"
+      },
+      {
+       "en": "62",
+       "as": "62"
+      },
+      {
+       "en": "90",
+       "as": "90"
+      }
+     ],
+     "why": {
+      "en": "Smallest first.",
+      "as": "সৰুটো আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Build a number",
+    "as": "সংখ্যা বনোৱা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "For the largest, put big digits first.",
+     "as": "ডাঙৰৰ বাবে ডাঙৰ অংক আগত।"
+    },
+    {
+     "en": "For the smallest, put small digits first.",
+     "as": "সৰুৰ বাবে সৰু অংক আগত।"
+    },
+    {
+     "en": "A number cannot begin with 0.",
+     "as": "সংখ্যা 0 ৰে আৰম্ভ নহয়।"
+    },
+    {
+     "en": "Use each digit once unless told.",
+     "as": "নকলে প্ৰতিটো অংক এবাৰ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs8.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Place decides value",
+      "as": "স্থানে মান ঠিক কৰে"
+     },
+     "text": [
+      {
+       "en": "The leftmost place is worth the most, so it gets the biggest digit.",
+       "as": "বাওঁফালৰ স্থানৰ মান বেছি, সেয়ে ডাঙৰ অংক তাত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "5, 2, 8",
+        "as": "5, 2, 8"
+       },
+       {
+        "en": "Largest",
+        "as": "ডাঙৰ"
+       },
+       {
+        "en": "852",
+        "as": "852"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "The zero rule",
+      "as": "শূন্যৰ নিয়ম"
+     },
+     "text": [
+      {
+       "en": "From 0, 3, 7 the smallest is 307, not 037.",
+       "as": "0, 3, 7 ৰ পৰা সৰু 307, 037 নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "0, 3, 7",
+        "as": "0, 3, 7"
+       },
+       {
+        "en": "Not 037",
+        "as": "037 নহয়"
+       },
+       {
+        "en": "307",
+        "as": "307"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u4.q1",
+     "type": "solve",
+     "skill": "r-dbuild",
+     "q": {
+      "en": "What is the largest number made from 4, 9, 2, 7, using each once?",
+      "as": "4, 9, 2, 7 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+     },
+     "answer": "9742",
+     "why": {
+      "en": "Put the largest digit first.",
+      "as": "ডাঙৰ অংক আগত ৰাখা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the largest number made from 4, 9, 2, 7, using each once?",
+        "as": "4, 9, 2, 7 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+       },
+       "answer": "9742",
+       "why": {
+        "en": "Put the largest digit first.",
+        "as": "ডাঙৰ অংক আগত ৰাখা।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the largest number made from 3, 1, 8, 5, using each once?",
+        "as": "3, 1, 8, 5 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+       },
+       "answer": "8531",
+       "why": {
+        "en": "Put the largest digit first.",
+        "as": "ডাঙৰ অংক আগত ৰাখা।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the largest number made from 6, 0, 4, 2, using each once?",
+        "as": "6, 0, 4, 2 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+       },
+       "answer": "6420",
+       "why": {
+        "en": "Put the largest digit first.",
+        "as": "ডাঙৰ অংক আগত ৰাখা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u4.q2",
+     "type": "solve",
+     "skill": "r-dbuild",
+     "q": {
+      "en": "What is the smallest number made from 5, 0, 3, 8, using each once?",
+      "as": "5, 0, 3, 8 এবাৰকৈ লৈ আটাইতকৈ সৰু সংখ্যা কি?"
+     },
+     "answer": "3058",
+     "why": {
+      "en": "Use the smallest allowed leading digit, then ascending order.",
+      "as": "আগত আটাইতকৈ সৰু অনুমোদিত অংক, তাৰ পিছত উৰ্ধ্বক্ৰম।"
+     },
+     "traps": [
+      {
+       "ans": "358",
+       "tag": "r-m-placeval",
+       "why": {
+        "en": "A number cannot begin with 0.",
+        "as": "সংখ্যা 0 ৰে আৰম্ভ নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What is the smallest number made from 5, 0, 3, 8, using each once?",
+        "as": "5, 0, 3, 8 এবাৰকৈ লৈ আটাইতকৈ সৰু সংখ্যা কি?"
+       },
+       "answer": "3058",
+       "why": {
+        "en": "Use the smallest allowed leading digit, then ascending order.",
+        "as": "আগত আটাইতকৈ সৰু অনুমোদিত অংক, তাৰ পিছত উৰ্ধ্বক্ৰম।"
+       },
+       "traps": [
+        {
+         "ans": "358",
+         "tag": "r-m-placeval",
+         "why": {
+          "en": "A number cannot begin with 0.",
+          "as": "সংখ্যা 0 ৰে আৰম্ভ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the smallest number made from 7, 2, 0, 4, using each once?",
+        "as": "7, 2, 0, 4 এবাৰকৈ লৈ আটাইতকৈ সৰু সংখ্যা কি?"
+       },
+       "answer": "2047",
+       "why": {
+        "en": "Use the smallest allowed leading digit, then ascending order.",
+        "as": "আগত আটাইতকৈ সৰু অনুমোদিত অংক, তাৰ পিছত উৰ্ধ্বক্ৰম।"
+       },
+       "traps": [
+        {
+         "ans": "247",
+         "tag": "r-m-placeval",
+         "why": {
+          "en": "A number cannot begin with 0.",
+          "as": "সংখ্যা 0 ৰে আৰম্ভ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the smallest number made from 9, 6, 1, 3, using each once?",
+        "as": "9, 6, 1, 3 এবাৰকৈ লৈ আটাইতকৈ সৰু সংখ্যা কি?"
+       },
+       "answer": "1369",
+       "why": {
+        "en": "Use the smallest allowed leading digit, then ascending order.",
+        "as": "আগত আটাইতকৈ সৰু অনুমোদিত অংক, তাৰ পিছত উৰ্ধ্বক্ৰম।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs8.u4.q3",
+     "type": "solve",
+     "skill": "r-dbuild",
+     "q": {
+      "en": "Find the difference between the largest and smallest numbers from 3, 1, 4.",
+      "as": "3, 1, 4 ৰ পৰা ডাঙৰ আৰু সৰু সংখ্যাৰ পাৰ্থক্য উলিওৱা।"
+     },
+     "answer": "297",
+     "why": {
+      "en": "431 − 134 = 297.",
+      "as": "431 − 134 = 297।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the difference between the largest and smallest numbers from 3, 1, 4.",
+        "as": "3, 1, 4 ৰ পৰা ডাঙৰ আৰু সৰু সংখ্যাৰ পাৰ্থক্য উলিওৱা।"
+       },
+       "answer": "297",
+       "why": {
+        "en": "431 − 134 = 297.",
+        "as": "431 − 134 = 297।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the difference between the largest and smallest numbers from 5, 2, 7.",
+        "as": "5, 2, 7 ৰ পৰা ডাঙৰ আৰু সৰু সংখ্যাৰ পাৰ্থক্য উলিওৱা।"
+       },
+       "answer": "495",
+       "why": {
+        "en": "752 − 257 = 495.",
+        "as": "752 − 257 = 495।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the difference between the largest and smallest numbers from 8, 0, 6.",
+        "as": "8, 0, 6 ৰ পৰা ডাঙৰ আৰু সৰু সংখ্যাৰ পাৰ্থক্য উলিওৱা।"
+       },
+       "answer": "252",
+       "why": {
+        "en": "860 − 608 = 252.",
+        "as": "860 − 608 = 252।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u4.q4",
+     "type": "tf",
+     "skill": "r-dbuild",
+     "s": {
+      "en": "From 0, 2, 5 the smallest three-digit number is 025.",
+      "as": "0, 2, 5 ৰ পৰা সৰু তিনিটা অংকৰ সংখ্যা 025।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 205.",
+      "as": "ই 205।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-placeval",
+       "why": {
+        "en": "A number cannot begin with 0.",
+        "as": "সংখ্যা 0 ৰে আৰম্ভ নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u4.q5",
+     "type": "match",
+     "skill": "r-dbuild",
+     "q": {
+      "en": "Digits 1, 4, 6: match",
+      "as": "অংক 1, 4, 6: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Largest",
+        "as": "ডাঙৰ"
+       },
+       {
+        "en": "641",
+        "as": "641"
+       }
+      ],
+      [
+       {
+        "en": "Smallest",
+        "as": "সৰু"
+       },
+       {
+        "en": "146",
+        "as": "146"
+       }
+      ],
+      [
+       {
+        "en": "Difference",
+        "as": "পাৰ্থক্য"
+       },
+       {
+        "en": "495",
+        "as": "495"
+       }
+      ]
+     ],
+     "why": {
+      "en": "641 − 146 = 495.",
+      "as": "641 − 146 = 495।"
+     }
+    },
+    {
+     "id": "rs8.u4.q6",
+     "type": "order",
+     "skill": "r-dbuild",
+     "q": {
+      "en": "Build the largest from 3, 7, 1",
+      "as": "3, 7, 1 ৰে ডাঙৰ সংখ্যা"
+     },
+     "items": [
+      {
+       "en": "7",
+       "as": "7"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "1",
+       "as": "1"
+      }
+     ],
+     "why": {
+      "en": "Big digits first.",
+      "as": "ডাঙৰ অংক আগত।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Places in a line",
+    "as": "শাৰীত স্থান"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "From right = total − left + 1.",
+     "as": "সোঁফালৰ স্থান = মুঠ − বাওঁ + 1।"
+    },
+    {
+     "en": "Count both ends in the total.",
+     "as": "দুই মূৰ মুঠত গণা।"
+    },
+    {
+     "en": "Multiples: divide and count.",
+     "as": "গুণিতক: হৰণ কৰি গণা।"
+    },
+    {
+     "en": "Count digits by place.",
+     "as": "স্থান অনুসৰি অংক গণা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs8.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "The plus-one rule",
+      "as": "যোগ এক নিয়ম"
+     },
+     "text": [
+      {
+       "en": "In a line of 10, 3rd from left is 8th from right: 10 − 3 + 1.",
+       "as": "10 জনৰ শাৰীত বাওঁফালৰ 3 নম্বৰ, সোঁফালৰ 8: 10 − 3 + 1।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "10 total",
+        "as": "10 total"
+       },
+       {
+        "en": "3 from left",
+        "as": "3 from left"
+       },
+       {
+        "en": "8 from right",
+        "as": "8 from right"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Counting multiples",
+      "as": "গুণিতক গণনা"
+     },
+     "text": [
+      {
+       "en": "From 1 to 50 there are 7 multiples of 7, since 50 ÷ 7 is 7 and a bit.",
+       "as": "1 ৰ পৰা 50 ৰ ভিতৰত 7 ৰ গুণিতক 7 টা, কাৰণ 50 ÷ 7 ৰ ভাগফল 7।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "50 ÷ 7",
+        "as": "50 ÷ 7"
+       },
+       {
+        "en": "Whole part 7",
+        "as": "ভাগফল 7"
+       },
+       {
+        "en": "7 multiples",
+        "as": "7 গুণিতক"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u5.q1",
+     "type": "solve",
+     "skill": "r-dmiddle",
+     "q": {
+      "en": "A person is 7th from the left in a line of 20. What is their place from the right?",
+      "as": "20 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 7 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "20 − 7 + 1 = 14.",
+      "as": "20 − 7 + 1 = 14।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A person is 7th from the left in a line of 20. What is their place from the right?",
+        "as": "20 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 7 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "20 − 7 + 1 = 14.",
+        "as": "20 − 7 + 1 = 14।"
+       }
+      },
+      {
+       "q": {
+        "en": "A person is 12th from the left in a line of 35. What is their place from the right?",
+        "as": "35 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 12 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+       },
+       "answer": "24",
+       "why": {
+        "en": "35 − 12 + 1 = 24.",
+        "as": "35 − 12 + 1 = 24।"
+       }
+      },
+      {
+       "q": {
+        "en": "A person is 18th from the left in a line of 42. What is their place from the right?",
+        "as": "42 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 18 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+       },
+       "answer": "25",
+       "why": {
+        "en": "42 − 18 + 1 = 25.",
+        "as": "42 − 18 + 1 = 25।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u5.q2",
+     "type": "solve",
+     "skill": "r-dmiddle",
+     "q": {
+      "en": "How many multiples of 6 lie from 10 to 50, including both?",
+      "as": "10 ৰ পৰা 50 লৈ (দুয়োটা ধৰি) 6 ৰ গুণিতক কিমান?"
+     },
+     "answer": "7",
+     "why": {
+      "en": "Count from the first to the last multiple: 7.",
+      "as": "প্ৰথম গুণিতকৰ পৰা শেষলৈ: 7।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many multiples of 6 lie from 10 to 50, including both?",
+        "as": "10 ৰ পৰা 50 লৈ (দুয়োটা ধৰি) 6 ৰ গুণিতক কিমান?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Count from the first to the last multiple: 7.",
+        "as": "প্ৰথম গুণিতকৰ পৰা শেষলৈ: 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many multiples of 7 lie from 20 to 80, including both?",
+        "as": "20 ৰ পৰা 80 লৈ (দুয়োটা ধৰি) 7 ৰ গুণিতক কিমান?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "Count from the first to the last multiple: 9.",
+        "as": "প্ৰথম গুণিতকৰ পৰা শেষলৈ: 9।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many multiples of 9 lie from 15 to 90, including both?",
+        "as": "15 ৰ পৰা 90 লৈ (দুয়োটা ধৰি) 9 ৰ গুণিতক কিমান?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "Count from the first to the last multiple: 9.",
+        "as": "প্ৰথম গুণিতকৰ পৰা শেষলৈ: 9।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u5.q3",
+     "type": "solve",
+     "skill": "r-dmiddle",
+     "q": {
+      "en": "How many times is the digit 3 written from 1 to 30?",
+      "as": "1 ৰ পৰা 30 লৈ 3 অংকটো কিমানবাৰ লিখা হয়?"
+     },
+     "answer": "4",
+     "why": {
+      "en": "Count the units and the tens separately: 4.",
+      "as": "একক আৰু দহক পৃথককৈ গণা: 4।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many times is the digit 3 written from 1 to 30?",
+        "as": "1 ৰ পৰা 30 লৈ 3 অংকটো কিমানবাৰ লিখা হয়?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Count the units and the tens separately: 4.",
+        "as": "একক আৰু দহক পৃথককৈ গণা: 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many times is the digit 5 written from 1 to 50?",
+        "as": "1 ৰ পৰা 50 লৈ 5 অংকটো কিমানবাৰ লিখা হয়?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Count the units and the tens separately: 6.",
+        "as": "একক আৰু দহক পৃথককৈ গণা: 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many times is the digit 2 written from 10 to 40?",
+        "as": "10 ৰ পৰা 40 লৈ 2 অংকটো কিমানবাৰ লিখা হয়?"
+       },
+       "answer": "13",
+       "why": {
+        "en": "Count the units and the tens separately: 13.",
+        "as": "একক আৰু দহক পৃথককৈ গণা: 13।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u5.q4",
+     "type": "tf",
+     "skill": "r-dmiddle",
+     "s": {
+      "en": "In a line of 15, the 8th from the left is the middle person.",
+      "as": "15 জনৰ শাৰীত বাওঁফালৰ 8 নম্বৰ মাজৰজন।"
+     },
+     "answer": true,
+     "why": {
+      "en": "15 − 8 + 1 = 8 from each end.",
+      "as": "15 − 8 + 1 = 8, দুয়োফালৰ পৰা 8।"
+     }
+    },
+    {
+     "id": "rs8.u5.q6",
+     "type": "order",
+     "skill": "r-dmiddle",
+     "q": {
+      "en": "From the 5th in a line of 9, order the steps",
+      "as": "9 জনৰ শাৰীৰ 5 নম্বৰৰ বাবে খোজ সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Write the total",
+       "as": "মুঠ লিখা"
+      },
+      {
+       "en": "Subtract the place",
+       "as": "স্থান বিয়োগ"
+      },
+      {
+       "en": "Add one",
+       "as": "এক যোগ"
+      },
+      {
+       "en": "Read the answer",
+       "as": "উত্তৰ পঢ়া"
+      }
+     ],
+     "why": {
+      "en": "Total − place + 1.",
+      "as": "মুঠ − স্থান + 1।"
+     }
+    },
+    {
+     "id": "rs8.u5.q5",
+     "type": "match",
+     "skill": "r-dmiddle",
+     "q": {
+      "en": "In a line of 12, match",
+      "as": "12 জনৰ শাৰীত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1st from left",
+        "as": "বাওঁফালৰ ১ম"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       }
+      ],
+      [
+       {
+        "en": "5th from left",
+        "as": "বাওঁফালৰ ৫ম"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      [
+       {
+        "en": "9th from left",
+        "as": "বাওঁফালৰ ৯ম"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Total − left + 1.",
+      "as": "মুঠ − বাওঁ + 1।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Let the options help",
+    "as": "বিকল্পৰ সহায়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Check the last digit first.",
+     "as": "প্ৰথমে শেষ অংক চোৱা।"
+    },
+    {
+     "en": "Check odd or even.",
+     "as": "অযুগ্ম নে যুগ্ম চোৱা।"
+    },
+    {
+     "en": "Estimate the size.",
+     "as": "আকাৰ অনুমান কৰা।"
+    },
+    {
+     "en": "Then test only what remains.",
+     "as": "বাকীখিনিহে পৰীক্ষা কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs8.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Cut options fast",
+      "as": "বিকল্প খৰকৈ কমোৱা"
+     },
+     "text": [
+      {
+       "en": "Without solving fully, last digits often rule out two options.",
+       "as": "সম্পূৰ্ণ সমাধান নকৰাকৈ শেষ অংকে প্ৰায়ে দুটা বিকল্প বাদ দিয়ে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Last digit",
+        "as": "শেষ অংক"
+       },
+       {
+        "en": "Odd or even",
+        "as": "অযুগ্ম, যুগ্ম"
+       },
+       {
+        "en": "Size",
+        "as": "আকাৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Reverse the question",
+      "as": "প্ৰশ্ন ওলোটোৱা"
+     },
+     "text": [
+      {
+       "en": "Put an option back into the question. If it fits, you are done.",
+       "as": "বিকল্প প্ৰশ্নত বহুওৱা। মিলিলেই হ'ল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Take an option",
+        "as": "বিকল্প লোৱা"
+       },
+       {
+        "en": "Plug it in",
+        "as": "বহুওৱা"
+       },
+       {
+        "en": "Does it fit?",
+        "as": "মিলিলনে?"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs8.u6.q1",
+     "type": "solve",
+     "skill": "r-dcheck",
+     "q": {
+      "en": "What is the last digit of 47 × 36?",
+      "as": "47 × 36 ৰ শেষ অংক কি?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Multiply last digits only: 7 × 6.",
+      "as": "কেৱল শেষ অংক পূৰণ কৰা: 7 × 6।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the last digit of 47 × 36?",
+        "as": "47 × 36 ৰ শেষ অংক কি?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Multiply last digits only: 7 × 6.",
+        "as": "কেৱল শেষ অংক পূৰণ কৰা: 7 × 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the last digit of 123 × 58?",
+        "as": "123 × 58 ৰ শেষ অংক কি?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Multiply last digits only: 3 × 8.",
+        "as": "কেৱল শেষ অংক পূৰণ কৰা: 3 × 8।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the last digit of 89 × 74?",
+        "as": "89 × 74 ৰ শেষ অংক কি?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Multiply last digits only: 9 × 4.",
+        "as": "কেৱল শেষ অংক পূৰণ কৰা: 9 × 4।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u6.q2",
+     "type": "tf",
+     "skill": "r-dcheck",
+     "s": {
+      "en": "The product of two odd numbers is odd.",
+      "as": "দুটা অযুগ্ম সংখ্যাৰ পূৰণফল অযুগ্ম।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Odd × odd stays odd.",
+      "as": "অযুগ্ম × অযুগ্ম অযুগ্মই থাকে।"
+     }
+    },
+    {
+     "id": "rs8.u6.q3",
+     "type": "match",
+     "skill": "r-dcheck",
+     "q": {
+      "en": "Match the sum to its kind",
+      "as": "যোগফলক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Odd + odd",
+        "as": "অযুগ্ম + অযুগ্ম"
+       },
+       {
+        "en": "Even",
+        "as": "যুগ্ম"
+       }
+      ],
+      [
+       {
+        "en": "Odd + even",
+        "as": "অযুগ্ম + যুগ্ম"
+       },
+       {
+        "en": "Odd",
+        "as": "অযুগ্ম"
+       }
+      ],
+      [
+       {
+        "en": "Ends in 0",
+        "as": "শেষত 0"
+       },
+       {
+        "en": "Divides by 10",
+        "as": "10 ৰে হৰণ হয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Parity rules.",
+      "as": "যুগ্ম-অযুগ্ম নিয়ম।"
+     }
+    },
+    {
+     "id": "rs8.u6.q4",
+     "type": "stepwise",
+     "skill": "r-dcheck",
+     "q": {
+      "en": "Which is 13 × 17 without full multiplication?",
+      "as": "সম্পূৰ্ণ পূৰণ নকৰাকৈ 13 × 17 কোনটো?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Last digit?",
+        "as": "শেষ অংক?"
+       },
+       "options": [
+        {
+         "en": "1",
+         "as": "1"
+        },
+        {
+         "en": "6",
+         "as": "6"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Multiply last digits.",
+        "as": "শেষ অংক পূৰণ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The answer?",
+        "as": "উত্তৰ?"
+       },
+       "options": [
+        {
+         "en": "221",
+         "as": "221"
+        },
+        {
+         "en": "226",
+         "as": "226"
+        },
+        {
+         "en": "223",
+         "as": "223"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Only one option ends correctly.",
+        "as": "এটাহে শুদ্ধকৈ শেষ হয়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Last digits narrow it at once.",
+      "as": "শেষ অংকে লগে লগে কমায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which is 13 × 17 without full multiplication?",
+        "as": "সম্পূৰ্ণ পূৰণ নকৰাকৈ 13 × 17 কোনটো?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Last digit?",
+          "as": "শেষ অংক?"
+         },
+         "options": [
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Multiply last digits.",
+          "as": "শেষ অংক পূৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The answer?",
+          "as": "উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "221",
+           "as": "221"
+          },
+          {
+           "en": "226",
+           "as": "226"
+          },
+          {
+           "en": "223",
+           "as": "223"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Only one option ends correctly.",
+          "as": "এটাহে শুদ্ধকৈ শেষ হয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Last digits narrow it at once.",
+        "as": "শেষ অংকে লগে লগে কমায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which is 24 × 16 without full multiplication?",
+        "as": "সম্পূৰ্ণ পূৰণ নকৰাকৈ 24 × 16 কোনটো?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Last digit?",
+          "as": "শেষ অংক?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply last digits.",
+          "as": "শেষ অংক পূৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The answer?",
+          "as": "উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "386",
+           "as": "386"
+          },
+          {
+           "en": "389",
+           "as": "389"
+          },
+          {
+           "en": "384",
+           "as": "384"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Only one option ends correctly.",
+          "as": "এটাহে শুদ্ধকৈ শেষ হয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Last digits narrow it at once.",
+        "as": "শেষ অংকে লগে লগে কমায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which is 32 × 19 without full multiplication?",
+        "as": "সম্পূৰ্ণ পূৰণ নকৰাকৈ 32 × 19 কোনটো?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Last digit?",
+          "as": "শেষ অংক?"
+         },
+         "options": [
+          {
+           "en": "0",
+           "as": "0"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply last digits.",
+          "as": "শেষ অংক পূৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The answer?",
+          "as": "উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "610",
+           "as": "610"
+          },
+          {
+           "en": "613",
+           "as": "613"
+          },
+          {
+           "en": "608",
+           "as": "608"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Only one option ends correctly.",
+          "as": "এটাহে শুদ্ধকৈ শেষ হয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Last digits narrow it at once.",
+        "as": "শেষ অংকে লগে লগে কমায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs8.u6.q5",
+     "type": "order",
+     "skill": "r-dcheck",
+     "q": {
+      "en": "Elimination in order",
+      "as": "বাদ দিয়া ক্ৰম"
+     },
+     "items": [
+      {
+       "en": "Last digit",
+       "as": "শেষ অংক"
+      },
+      {
+       "en": "Parity",
+       "as": "যুগ্ম-অযুগ্ম"
+      },
+      {
+       "en": "Size",
+       "as": "আকাৰ"
+      },
+      {
+       "en": "Plug in",
+       "as": "বহুওৱা"
+      }
+     ],
+     "why": {
+      "en": "Cheapest test first.",
+      "as": "সহজ পৰীক্ষা আগতে।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Number puzzle test",
+   "as": "সংখ্যা সাঁথৰৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs8.t.q1",
+    "type": "solve",
+    "skill": "r-dscan",
+    "q": {
+     "en": "In 8428148248128, how many 8s come straight after a 4?",
+     "as": "8428148248128 ত 4 ৰ ঠিক পিছত 8 কিমানবাৰ আছে?"
+    },
+    "answer": "2",
+    "why": {
+     "en": "Look at each 8 and the digit before it: 2.",
+     "as": "প্ৰতিটো 8 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+    },
+    "traps": [
+     {
+      "ans": "5",
+      "tag": "r-m-halfscan",
+      "why": {
+       "en": "Check both parts of the condition for every digit.",
+       "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "In 8428148248128, how many 8s come straight after a 4?",
+       "as": "8428148248128 ত 4 ৰ ঠিক পিছত 8 কিমানবাৰ আছে?"
+      },
+      "answer": "2",
+      "why": {
+       "en": "Look at each 8 and the digit before it: 2.",
+       "as": "প্ৰতিটো 8 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+      },
+      "traps": [
+       {
+        "ans": "5",
+        "tag": "r-m-halfscan",
+        "why": {
+         "en": "Check both parts of the condition for every digit.",
+         "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "In 6356563656365, how many 5s come straight after a 6?",
+       "as": "6356563656365 ত 6 ৰ ঠিক পিছত 5 কিমানবাৰ আছে?"
+      },
+      "answer": "3",
+      "why": {
+       "en": "Look at each 5 and the digit before it: 3.",
+       "as": "প্ৰতিটো 5 আৰু তাৰ আগৰ অংক চোৱা: 3।"
+      },
+      "traps": [
+       {
+        "ans": "4",
+        "tag": "r-m-halfscan",
+        "why": {
+         "en": "Check both parts of the condition for every digit.",
+         "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs8.t.q2",
+    "type": "solve",
+    "skill": "r-dpairs",
+    "q": {
+     "en": "In 4682139426, how many neighbouring pairs are both even?",
+     "as": "4682139426 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+    },
+    "answer": "5",
+    "why": {
+     "en": "Slide along the digits two at a time: 5.",
+     "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 5।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "In 4682139426, how many neighbouring pairs are both even?",
+       "as": "4682139426 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+      },
+      "answer": "5",
+      "why": {
+       "en": "Slide along the digits two at a time: 5.",
+       "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 5।"
+      }
+     },
+     {
+      "q": {
+       "en": "In 2468135792, how many neighbouring pairs are both even?",
+       "as": "2468135792 ত দুয়োটা যুগ্ম এনে কিমান কাষৰ যোৰ?"
+      },
+      "answer": "3",
+      "why": {
+       "en": "Slide along the digits two at a time: 3.",
+       "as": "দুটাকৈ অংক আগবাঢ়ি চোৱা: 3।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs8.t.q3",
+    "type": "solve",
+    "skill": "r-dsort",
+    "q": {
+     "en": "Arrange 73, 21, 58, 94, 36 in ascending order. Which number is in the middle?",
+     "as": "73, 21, 58, 94, 36 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+    },
+    "answer": "58",
+    "why": {
+     "en": "In order: 21, 36, 58, 73, 94.",
+     "as": "ক্ৰমে: 21, 36, 58, 73, 94।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Arrange 73, 21, 58, 94, 36 in ascending order. Which number is in the middle?",
+       "as": "73, 21, 58, 94, 36 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+      },
+      "answer": "58",
+      "why": {
+       "en": "In order: 21, 36, 58, 73, 94.",
+       "as": "ক্ৰমে: 21, 36, 58, 73, 94।"
+      }
+     },
+     {
+      "q": {
+       "en": "Arrange 14, 67, 29, 81, 50 in ascending order. Which number is in the middle?",
+       "as": "14, 67, 29, 81, 50 উৰ্ধ্বক্ৰমে সজোৱা। মাজত কোন সংখ্যা?"
+      },
+      "answer": "50",
+      "why": {
+       "en": "In order: 14, 29, 50, 67, 81.",
+       "as": "ক্ৰমে: 14, 29, 50, 67, 81।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs8.t.q4",
+    "type": "solve",
+    "skill": "r-dbuild",
+    "q": {
+     "en": "What is the largest number made from 2, 8, 5, 1, using each once?",
+     "as": "2, 8, 5, 1 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+    },
+    "answer": "8521",
+    "why": {
+     "en": "Put the largest digit first.",
+     "as": "ডাঙৰ অংক আগত ৰাখা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "What is the largest number made from 2, 8, 5, 1, using each once?",
+       "as": "2, 8, 5, 1 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+      },
+      "answer": "8521",
+      "why": {
+       "en": "Put the largest digit first.",
+       "as": "ডাঙৰ অংক আগত ৰাখা।"
+      }
+     },
+     {
+      "q": {
+       "en": "What is the largest number made from 9, 3, 7, 0, using each once?",
+       "as": "9, 3, 7, 0 এবাৰকৈ লৈ আটাইতকৈ ডাঙৰ সংখ্যা কি?"
+      },
+      "answer": "9730",
+      "why": {
+       "en": "Put the largest digit first.",
+       "as": "ডাঙৰ অংক আগত ৰাখা।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs8.t.q5",
+    "type": "solve",
+    "skill": "r-dmiddle",
+    "q": {
+     "en": "A person is 9th from the left in a line of 25. What is their place from the right?",
+     "as": "25 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 9 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+    },
+    "answer": "17",
+    "why": {
+     "en": "25 − 9 + 1 = 17.",
+     "as": "25 − 9 + 1 = 17।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "A person is 9th from the left in a line of 25. What is their place from the right?",
+       "as": "25 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 9 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+      },
+      "answer": "17",
+      "why": {
+       "en": "25 − 9 + 1 = 17.",
+       "as": "25 − 9 + 1 = 17।"
+      }
+     },
+     {
+      "q": {
+       "en": "A person is 11th from the left in a line of 30. What is their place from the right?",
+       "as": "30 জনৰ শাৰীত এজন বাওঁফালৰ পৰা 11 নম্বৰ। সোঁফালৰ পৰা স্থান কিমান?"
+      },
+      "answer": "20",
+      "why": {
+       "en": "30 − 11 + 1 = 20.",
+       "as": "30 − 11 + 1 = 20।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs8.t.q6",
+    "type": "tf",
+    "skill": "r-dbuild",
+    "s": {
+     "en": "A number cannot begin with 0.",
+     "as": "সংখ্যা 0 ৰে আৰম্ভ নহয়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "That digit would add nothing.",
+     "as": "সেই অংকৰ মূল্য নাথাকে।"
+    }
+   }
+  ]
+ }
+}

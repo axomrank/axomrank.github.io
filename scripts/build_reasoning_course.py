@@ -51,6 +51,14 @@ _series = importlib.import_module("lesson_series")
 MODULES += [_series.NUMBERS, _series.LETTERS]
 SKILLS.update(_series.SKILLS)
 MISCONCEPTIONS.update(_series.TAGS)
+_words = importlib.import_module("lesson_words")
+MODULES += [_words.ANALOGY, _words.ODD]
+SKILLS.update(_words.SKILLS)
+MISCONCEPTIONS.update(_words.TAGS)
+_numeric = importlib.import_module("lesson_numeric")
+MODULES += [_numeric.OPERATORS, _numeric.PUZZLES]
+SKILLS.update(_numeric.SKILLS)
+MISCONCEPTIONS.update(_numeric.TAGS)
 for mod in MODULES:
     SKILLS.update(getattr(mod, "SKILLS", {}))
     MISCONCEPTIONS.update(getattr(mod, "TAGS", {}))

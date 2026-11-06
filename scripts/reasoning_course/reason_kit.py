@@ -114,3 +114,18 @@ def letter(c):
 
 def same(x):
     return {"en": str(x), "as": str(x)}
+
+
+def inline(sid, skill, before, after, options, answer, why, **extra):
+    return {"id": sid, "type": "inline", "skill": skill, "before": before, "after": after, "options": options, "answer": answer, "why": why, **extra}
+
+
+def inlines(sid, skill, rows):
+    """rows: (before, after, right, wrong list, why). Options are shuffled by a fixed seed."""
+    import random
+    versions = []
+    for k, (before, after, right, wrong, why) in enumerate(rows):
+        opts = [right] + wrong
+        random.Random(f"{sid}:{k}").shuffle(opts)
+        versions.append({"before": before, "after": after, "options": opts, "answer": opts.index(right), "why": why})
+    return {"id": sid, "type": "inline", "skill": skill, **versions[0], "variants": versions}
