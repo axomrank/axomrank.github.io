@@ -13,7 +13,7 @@ from fractions import Fraction as F
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(ROOT / "scripts" / "math_course"))
 from math_kit import B, fr, mcq  # noqa: E402
 from math_lessons_a import l1, l2  # noqa: E402
 from math_lessons_b import l3, l5  # noqa: E402

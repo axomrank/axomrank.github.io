@@ -1,6 +1,6 @@
 """Build compact ahom-kingdom lessons by choosing steps from the reign-by-reign lessons.
-Usage: python3 scripts/compact_ahom.py .   (writes content/lessons/ahom-NN-*.json; then run scripts/build.py)
-The chosen steps for each lesson are in scripts/compact_ahom_spec.py."""
+Usage: python3 scripts/archive/compact_ahom.py .   (writes content/lessons/ahom-NN-*.json; then run scripts/build.py)
+The chosen steps for each lesson are in scripts/archive/compact_ahom_spec.py."""
 import json, re, sys, copy, os
 from compact_ahom_spec import LESSONS, EYEBROW
 

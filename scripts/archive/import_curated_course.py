@@ -8,7 +8,7 @@ import copy,csv,hashlib,importlib.util,json,shutil,sys
 from pathlib import Path
 from compile_history_units import compile_unit,bank_questions
 from lesson_authoring import bi as B,identify,new_test
-ROOT=Path(__file__).resolve().parents[1];LIB=Path('/home/angsuman/extra_spac/Assam History');sys.path.insert(0,str(ROOT/'docs/authoring'))
+ROOT=Path(__file__).resolve().parents[2];LIB=Path('/home/angsuman/extra_spac/Assam History');sys.path.insert(0,str(ROOT/'docs/authoring'))
 def read(p):return json.loads(Path(p).read_text())
 def save(o,p):Path(p).parent.mkdir(parents=True,exist_ok=True);Path(p).write_text(json.dumps(o,ensure_ascii=False,indent=1)+'\n')
 def import_course(config):

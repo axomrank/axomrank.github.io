@@ -2,7 +2,7 @@
 """One-time import of curated medieval briefs and expanded Koch drafts."""
 import copy,csv,hashlib,json,shutil,sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'docs/authoring'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'docs/authoring'))
 from medieval_new_units import LESSONS
 from medieval_supplements import S
 from compile_history_units import compile_unit,bank_questions

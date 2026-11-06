@@ -5,7 +5,7 @@ Sources and image provenance are attached by the integration script.
 """
 import sys
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'scripts'))
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'scripts/archive'))
 from lesson_authoring import bi as B
 LESSONS={}
 def F(s): return s.split('¦')

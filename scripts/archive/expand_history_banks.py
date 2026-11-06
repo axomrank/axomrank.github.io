@@ -7,7 +7,7 @@ label these as previous-year questions. Existing permanent bank ids are kept.
 """
 import copy,hashlib,json,re
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 def read(p):return json.loads(p.read_text())
 def save(x,p):p.write_text(json.dumps(x,ensure_ascii=False,indent=1)+'\n')
 def B(e,a):return {'en':e,'as':a}

@@ -25,3 +25,43 @@ whose purpose and ownership are clear.
   saved-link and learner-progress compatibility still use them.
 
 No published lesson, exercise, source register, image or user file was removed.
+
+## 2026-11-06 audit
+
+Goal: make the repository easier for future agents to edit safely. Every shipped
+file stayed byte-identical.
+
+### Removed
+
+- Ignored `.playwright-cli/` logs, `scripts/__pycache__/` and an empty
+  `.wrangler/` folder. All are recreated on demand.
+
+### Reorganised
+
+- Ten finished Assam History migrations and their helpers moved to
+  `scripts/archive/`, with paths updated. This completes the dependency audit
+  noted above: nothing in the app or current pipeline uses them.
+- Math lesson modules moved to `scripts/math_course/`. `build_math_course.py` and
+  `audit_math_division.py` stayed in `scripts/`, because generated lesson data and
+  the documents cite the generator's path.
+- Added `scripts/verify.sh`, `scripts/README.md` and `scripts/archive/README.md`.
+
+### Measured and left in place
+
+- 62 media files (1.8 MB of 138 MB) have no literal reference in shipped content.
+  Some are provenance records or pre-unification images. Removing them saves
+  little and risks a missing picture.
+- 24 groups of identical images (3 MB) sit in different lesson folders. Merging
+  them means changing published lesson JSON, which is not worth the saving.
+- `docs/authoring/` stayed in place. Its code and archived snapshots are provenance,
+  and its filename prefixes already group it by course.
+- `docs/research/` stayed in place, including the large image-plan and progress
+  logs, because it records picture provenance.
+- The four document changes already uncommitted at the start were left for the
+  user, apart from removing one stale sentence about `AGENTS.md` in
+  `docs/INDIAN-HISTORY-COURSE.md`.
+
+### Known issue
+
+`scripts/build_india_map.py` cannot run, because `world.json` survives only in
+the Trash. `content/maps/india.json` itself is intact.

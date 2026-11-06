@@ -23,7 +23,7 @@ def err(msg): errors.append(msg)
 # Derived cross-course reference uses only integrated content.
 subprocess.run([sys.executable,"scripts/build_history_reference.py"],check=True)
 
-# ---------- story card standard (see README "Story cards") ----------
+# ---------- story card standard (see docs/LESSON-DESIGN.md) ----------
 CARD_WORDS, PARA_WORDS, MAX_PARAS, MAX_MARKS, TITLE_WORDS = 55, 35, 3, 3, 6
 def words(t):
     t = re.sub(r"\[\[[^|\]]+\|([^\]]+)\]\]", r"\1", t); t = re.sub(r"\[\[([^\]]+)\]\]", r"\1", t)

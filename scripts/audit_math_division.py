@@ -4,7 +4,7 @@ A right answer must never appear here. Distractors and the middle of an odd coun
 Run from the repo root: python3 scripts/audit_math_division.py
 """
 import ast, sys, pathlib, re
-root = pathlib.Path('scripts')
+root = pathlib.Path('scripts/math_course')
 class Exact(int):
     pass
 bad = set()
@@ -14,7 +14,7 @@ class Tr(ast.NodeTransformer):
         if isinstance(n.op, ast.FloorDiv):
             return ast.Call(ast.Name('_fd', ast.Load()), [n.left, n.right, ast.Constant(n.lineno)], [])
         return n
-sys.path.insert(0, 'scripts')
+sys.path.insert(0, 'scripts/math_course')
 import math_kit
 def _fd(a, b, line):
     if a % b: bad.add((CUR, line))

@@ -8,7 +8,7 @@ until independently deployed and verified.
 
 ## Current state
 
-- Assam History is one chronological core course: 93 lessons, 380 units and
+- Assam History is one chronological core course: 93 lessons, 382 units and
   27 era checkpoints. An optional 41-lesson Ahom deep dive remains for saved
   links. The timeline and people/place index are in `history.html`.
 - The player offers story cards, 13 practice types, explanations, an 80%

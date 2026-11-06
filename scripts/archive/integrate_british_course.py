@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image,ImageDraw
 from compile_history_units import compile_lesson,bank_questions
 from lesson_authoring import bi as B,match,inline,tf,who,map_question
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 LIB=Path('/home/angsuman/extra_spac/Assam History')
 def read(p):return json.loads(Path(p).read_text())
 def save(o,p):Path(p).parent.mkdir(parents=True,exist_ok=True);Path(p).write_text(json.dumps(o,ensure_ascii=False,indent=1)+'\n')

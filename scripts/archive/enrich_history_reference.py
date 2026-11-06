@@ -4,7 +4,7 @@ Preserves existing entity keys and all published lesson/exercise ids.
 """
 import csv,importlib,json,re,sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'docs/authoring'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'docs/authoring'))
 def read(p):return json.loads(p.read_text())
 def save(o,p):p.write_text(json.dumps(o,ensure_ascii=False,indent=1)+'\n')
 def key(s):return re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')

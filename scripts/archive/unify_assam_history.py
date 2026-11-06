@@ -2,7 +2,7 @@
 """One-time consolidation, retaining lesson, exercise and checkpoint ids."""
 import copy,json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 def read(p):return json.loads(p.read_text())
 def save(o,p):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(o,ensure_ascii=False,indent=1)+'\n')
 def B(e,a):return {'en':e,'as':a}
