@@ -3,13 +3,13 @@
    VERSION is stamped by scripts/build.py on every build, so phones
    fetch the new app files after each release.
    ========================================================= */
-const VERSION = "475d9bd8a8";
+const VERSION = "d52e384bdd";
 const SHELL = `axom-shell-${VERSION}`;
 const RUNTIME = "axom-runtime";
 const OFFLINE = "axom-offline";   // lessons the learner downloaded (see app/common.js)
 const SHELL_FILES = [
   "./", "index.html", "lesson.html", "history.html", "manifest.webmanifest",
-  "app/history.js", "content/history-reference.json", "app/app.css", "app/glass.css", "content/media/interface/brahmaputra-glass.webp", "app/config.js", "app/common.js", "app/engine.js", "app/home.js",
+  "app/history.js", "content/history-reference.json", "app/app.css", "app/glass.css", "content/media/interface/brahmaputra-glass.webp", "app/config.js", "app/common.js", "app/engine.js", "app/home.js", "app/math.js", "app/mathstage.js", "app/mathbalance.js", "app/mathworks.js", "app/mathrates.js", "app/mathmotion.js", "app/mathshape.js", "app/mathfigure.js", "app/math.css", "app/vendor/katex/katex.min.js", "app/vendor/katex/katex.min.css", "app/vendor/katex/fonts/KaTeX_Main-Regular.woff2", "app/vendor/katex/fonts/KaTeX_Main-Bold.woff2", "app/vendor/katex/fonts/KaTeX_Math-Italic.woff2", "app/vendor/katex/fonts/KaTeX_AMS-Regular.woff2", "app/vendor/katex/fonts/KaTeX_Size1-Regular.woff2", "app/vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
   "icons/icon-192.png", "icons/icon-512.png",
   "content/manifest.json", "content/catalog.json",
   "content/entities.json", "content/maps/assam.json", "content/maps/india.json",
@@ -24,7 +24,7 @@ self.addEventListener("install", (e) => {
     const c = await caches.open(SHELL);
     const manifest = await (await fetch("content/manifest.json", { cache: "reload" })).json();
     const courses = await Promise.all(manifest.courses.map(async entry => ({file:entry.file,data:await (await fetch(entry.file,{cache:"reload"})).json()})));
-    const files = [...new Set([...SHELL_FILES,...courses.flatMap(c=>[c.file,c.data.bank])])];
+    const files = [...new Set([...SHELL_FILES,...courses.flatMap(c=>[c.file,c.data.bank,c.data.skills])])].filter(Boolean);
     await Promise.all(files.map(async (f) => {
       const res = await fetch(new Request(f, { cache: "reload" }));
       if (!res.ok) throw new Error(`${f}: ${res.status}`);

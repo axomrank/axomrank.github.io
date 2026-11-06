@@ -1,0 +1,3228 @@
+{
+ "id": "math-02-lcm-hcf",
+ "course": "mathematics",
+ "no": 2,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "LCM and HCF",
+  "as": "ল.সা.গু. আৰু গ.সা.গু."
+ },
+ "reign": {
+  "en": "Factors, multiples, the product rule",
+  "as": "গুণনীয়ক, গুণিতক, পূৰণফলৰ নিয়ম"
+ },
+ "portrait": "math/lcm.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Shared factors: HCF",
+    "as": "উমৈহতীয়া গুণনীয়ক: গ.সা.গু."
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A factor divides a number exactly.",
+     "as": "গুণনীয়কে সংখ্যাক নিঃশেষে হৰণ কৰে।"
+    },
+    {
+     "en": "HCF is the largest factor two numbers share.",
+     "as": "গ.সা.গু. দুটা সংখ্যাৰ সৰ্ববৃহৎ উমৈহতীয়া গুণনীয়ক।"
+    },
+    {
+     "en": "From prime peels, keep shared primes at their lower power.",
+     "as": "মৌলিক গুণনীয়কৰ পৰা উমৈহতীয়া মৌলিকবোৰ সৰু ঘাতত লোৱা।"
+    },
+    {
+     "en": "\"Largest equal pieces\" questions ask for the HCF.",
+     "as": "\"সৰ্ববৃহৎ সমান টুকুৰা\" ধৰণৰ প্ৰশ্নত গ.সা.গু. লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m2.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "The largest square tile",
+      "as": "সৰ্ববৃহৎ বৰ্গ টাইল"
+     },
+     "text": [
+      {
+       "en": "Fill an 18 by 12 floor with squares. The side of the last square is the HCF.",
+       "as": "18 বাই 12 মজিয়া বৰ্গেৰে ভৰোৱা। শেষৰ বৰ্গৰ বাহুৱেই গ.সা.গু.।"
+      }
+     ],
+     "widget": {
+      "kind": "tiles",
+      "a": 18,
+      "b": 12
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Keep cutting the biggest square.",
+        "as": "সৰ্ববৃহৎ বৰ্গটো কাটি থাকা।"
+       },
+       "goal": {
+        "done": 1
+       },
+       "then": {
+        "en": "Squares of side 6 fit both 18 and 12 exactly, and nothing larger does. So the HCF is 6.",
+        "as": "6 বাহুৰ বৰ্গ 18 আৰু 12 দুয়োটাত ঠিক মিলে, ইয়াতকৈ ডাঙৰটো নিমিলে। সেয়ে গ.সা.গু. 6।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "HCF from prime peels",
+      "as": "মৌলিকৰ পৰা গ.সা.গু."
+     },
+     "text": [
+      {
+       "en": "Write both numbers as primes, then keep only what they share.",
+       "as": "দুয়োটা সংখ্যা মৌলিকত লিখা, তাৰ পিছত উমৈহতীয়া অংশখিনিহে ৰাখা।"
+      },
+      {
+       "en": "$12 = 2^2 \\times 3$ and $18 = 2 \\times 3^2$ share one 2 and one 3, which makes 6.",
+       "as": "$12 = 2^2 \\times 3$ আৰু $18 = 2 \\times 3^2$ত উমৈহতীয়া এটা 2 আৰু এটা 3, অৰ্থাৎ 6।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Peel into primes",
+        "as": "মৌলিকলৈ ভাঙা"
+       },
+       {
+        "en": "Keep shared primes",
+        "as": "উমৈহতীয়াখিনি ৰাখা"
+       },
+       {
+        "en": "Multiply them",
+        "as": "পূৰণ কৰা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m2.u1.q1",
+     "type": "explore",
+     "skill": "l-hcf",
+     "q": {
+      "en": "The factors of 16 are marked. Tap the largest that also divides 24.",
+      "as": "16ৰ গুণনীয়কবোৰ চিহ্নিত। 24কো হৰণ কৰা সৰ্ববৃহৎটোত টিপা।"
+     },
+     "widget": {
+      "kind": "hops",
+      "a": 16,
+      "b": 24,
+      "mode": "factors",
+      "max": 16,
+      "only": true
+     },
+     "target": 8,
+     "answerText": {
+      "en": "HCF = 8",
+      "as": "গ.সা.গু. = 8"
+     },
+     "why": {
+      "en": "8 is the largest number marked as a factor of both.",
+      "as": "8 দুয়োটাৰে সৰ্ববৃহৎ গুণনীয়ক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The factors of 16 are marked. Tap the largest that also divides 24.",
+        "as": "16ৰ গুণনীয়কবোৰ চিহ্নিত। 24কো হৰণ কৰা সৰ্ববৃহৎটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 16,
+        "b": 24,
+        "mode": "factors",
+        "max": 16,
+        "only": true
+       },
+       "target": 8,
+       "answerText": {
+        "en": "HCF = 8",
+        "as": "গ.সা.গু. = 8"
+       },
+       "why": {
+        "en": "8 is the largest number marked as a factor of both.",
+        "as": "8 দুয়োটাৰে সৰ্ববৃহৎ গুণনীয়ক।"
+       }
+      },
+      {
+       "q": {
+        "en": "The factors of 18 are marked. Tap the largest that also divides 30.",
+        "as": "18ৰ গুণনীয়কবোৰ চিহ্নিত। 30কো হৰণ কৰা সৰ্ববৃহৎটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 18,
+        "b": 30,
+        "mode": "factors",
+        "max": 18,
+        "only": true
+       },
+       "target": 6,
+       "answerText": {
+        "en": "HCF = 6",
+        "as": "গ.সা.গু. = 6"
+       },
+       "why": {
+        "en": "6 is the largest number marked as a factor of both.",
+        "as": "6 দুয়োটাৰে সৰ্ববৃহৎ গুণনীয়ক।"
+       }
+      },
+      {
+       "q": {
+        "en": "The factors of 20 are marked. Tap the largest that also divides 28.",
+        "as": "20ৰ গুণনীয়কবোৰ চিহ্নিত। 28কো হৰণ কৰা সৰ্ববৃহৎটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 20,
+        "b": 28,
+        "mode": "factors",
+        "max": 20,
+        "only": true
+       },
+       "target": 4,
+       "answerText": {
+        "en": "HCF = 4",
+        "as": "গ.সা.গু. = 4"
+       },
+       "why": {
+        "en": "4 is the largest number marked as a factor of both.",
+        "as": "4 দুয়োটাৰে সৰ্ববৃহৎ গুণনীয়ক।"
+       }
+      },
+      {
+       "q": {
+        "en": "The factors of 24 are marked. Tap the largest that also divides 36.",
+        "as": "24ৰ গুণনীয়কবোৰ চিহ্নিত। 36কো হৰণ কৰা সৰ্ববৃহৎটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 24,
+        "b": 36,
+        "mode": "factors",
+        "max": 24,
+        "only": true
+       },
+       "target": 12,
+       "answerText": {
+        "en": "HCF = 12",
+        "as": "গ.সা.গু. = 12"
+       },
+       "why": {
+        "en": "12 is the largest number marked as a factor of both.",
+        "as": "12 দুয়োটাৰে সৰ্ববৃহৎ গুণনীয়ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u1.q2",
+     "type": "solve",
+     "skill": "l-hcf",
+     "hints": [
+      {
+       "en": "Divide both by 2 while you can, then try 3.",
+       "as": "যিমান পাৰা দুয়োটাক 2ৰে হৰণ কৰা, তাৰ পিছত 3ৰে চোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find the HCF of 48 and 180.",
+      "as": "48 আৰু 180ৰ গ.সা.গু. উলিওৱা।"
+     },
+     "answer": "12",
+     "why": {
+      "en": "Peel both into primes and multiply what they share to get 12.",
+      "as": "দুয়োটা মৌলিকলৈ ভাঙি উমৈহতীয়াখিনি পূৰণ কৰিলে 12 হয়।"
+     },
+     "traps": [
+      {
+       "ans": "720",
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+        "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the HCF of 48 and 180.",
+        "as": "48 আৰু 180ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "12",
+       "why": {
+        "en": "Peel both into primes and multiply what they share to get 12.",
+        "as": "দুয়োটা মৌলিকলৈ ভাঙি উমৈহতীয়াখিনি পূৰণ কৰিলে 12 হয়।"
+       },
+       "traps": [
+        {
+         "ans": "720",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the HCF of 84 and 126.",
+        "as": "84 আৰু 126ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "42",
+       "why": {
+        "en": "Peel both into primes and multiply what they share to get 42.",
+        "as": "দুয়োটা মৌলিকলৈ ভাঙি উমৈহতীয়াখিনি পূৰণ কৰিলে 42 হয়।"
+       },
+       "traps": [
+        {
+         "ans": "252",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the HCF of 72 and 120.",
+        "as": "72 আৰু 120ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "24",
+       "why": {
+        "en": "Peel both into primes and multiply what they share to get 24.",
+        "as": "দুয়োটা মৌলিকলৈ ভাঙি উমৈহতীয়াখিনি পূৰণ কৰিলে 24 হয়।"
+       },
+       "traps": [
+        {
+         "ans": "360",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the HCF of 60 and 150.",
+        "as": "60 আৰু 150ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "30",
+       "why": {
+        "en": "Peel both into primes and multiply what they share to get 30.",
+        "as": "দুয়োটা মৌলিকলৈ ভাঙি উমৈহতীয়াখিনি পূৰণ কৰিলে 30 হয়।"
+       },
+       "traps": [
+        {
+         "ans": "300",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m2.u1.q3",
+     "type": "tf",
+     "skill": "l-hcf",
+     "s": {
+      "en": "Two different primes always have HCF 1.",
+      "as": "দুটা বেলেগ মৌলিকৰ গ.সা.গু. সদায় 1।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Each prime has only 1 and itself as factors, so 1 is all they share.",
+      "as": "প্ৰতিটো মৌলিকৰ গুণনীয়ক 1 আৰু নিজে, সেয়ে উমৈহতীয়া কেৱল 1।"
+     }
+    },
+    {
+     "id": "m2.u1.q4",
+     "type": "stepwise",
+     "skill": "l-hcf",
+     "q": {
+      "en": "Ropes of 84 m, 126 m and 210 m must be cut into equal pieces, as long as possible. How long is each piece?",
+      "as": "84 মি, 126 মি আৰু 210 মি ৰচী যিমান পাৰি দীঘল সমান টুকুৰাত কাটিব লাগে। প্ৰতিটো টুকুৰা কিমান দীঘল?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "What does the question want?",
+        "as": "প্ৰশ্নটোৱে কি বিচাৰিছে?"
+       },
+       "options": [
+        {
+         "en": "The HCF: largest equal piece",
+         "as": "গ.সা.গু.: সৰ্ববৃহৎ সমান টুকুৰা"
+        },
+        {
+         "en": "The LCM: smallest shared length",
+         "as": "ল.সা.গু.: সৰুতম উমৈহতীয়া দৈৰ্ঘ্য"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Cutting into largest equal parts is a shared factor.",
+        "as": "সৰ্ববৃহৎ সমান টুকুৰা মানে উমৈহতীয়া গুণনীয়ক।"
+       },
+       "tag": "m-lcm-hcf-swap"
+      },
+      {
+       "ask": {
+        "en": "HCF of the first two?",
+        "as": "প্ৰথম দুটাৰ গ.সা.গু.?"
+       },
+       "options": [
+        {
+         "en": "22",
+         "as": "22"
+        },
+        {
+         "en": "42",
+         "as": "42"
+        },
+        {
+         "en": "84",
+         "as": "84"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Peel the two numbers into primes.",
+        "as": "সংখ্যা দুটা মৌলিকলৈ ভাঙা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Now include the third",
+        "as": "এতিয়া তৃতীয়টো লোৱা"
+       },
+       "options": [
+        {
+         "en": "126 m",
+         "as": "126 মি"
+        },
+        {
+         "en": "42 m",
+         "as": "42 মি"
+        },
+        {
+         "en": "43 m",
+         "as": "43 মি"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Take the HCF of your result with the third length.",
+        "as": "পোৱা ফল আৰু তৃতীয় দৈৰ্ঘ্যৰ গ.সা.গু. লোৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "HCF of three numbers: find it for two, then with the third.",
+      "as": "তিনিটা সংখ্যাৰ গ.সা.গু.: দুটাৰ উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Ropes of 84 m, 126 m and 210 m must be cut into equal pieces, as long as possible. How long is each piece?",
+        "as": "84 মি, 126 মি আৰু 210 মি ৰচী যিমান পাৰি দীঘল সমান টুকুৰাত কাটিব লাগে। প্ৰতিটো টুকুৰা কিমান দীঘল?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does the question want?",
+          "as": "প্ৰশ্নটোৱে কি বিচাৰিছে?"
+         },
+         "options": [
+          {
+           "en": "The HCF: largest equal piece",
+           "as": "গ.সা.গু.: সৰ্ববৃহৎ সমান টুকুৰা"
+          },
+          {
+           "en": "The LCM: smallest shared length",
+           "as": "ল.সা.গু.: সৰুতম উমৈহতীয়া দৈৰ্ঘ্য"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Cutting into largest equal parts is a shared factor.",
+          "as": "সৰ্ববৃহৎ সমান টুকুৰা মানে উমৈহতীয়া গুণনীয়ক।"
+         },
+         "tag": "m-lcm-hcf-swap"
+        },
+        {
+         "ask": {
+          "en": "HCF of the first two?",
+          "as": "প্ৰথম দুটাৰ গ.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "22",
+           "as": "22"
+          },
+          {
+           "en": "42",
+           "as": "42"
+          },
+          {
+           "en": "84",
+           "as": "84"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Peel the two numbers into primes.",
+          "as": "সংখ্যা দুটা মৌলিকলৈ ভাঙা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Now include the third",
+          "as": "এতিয়া তৃতীয়টো লোৱা"
+         },
+         "options": [
+          {
+           "en": "126 m",
+           "as": "126 মি"
+          },
+          {
+           "en": "42 m",
+           "as": "42 মি"
+          },
+          {
+           "en": "43 m",
+           "as": "43 মি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take the HCF of your result with the third length.",
+          "as": "পোৱা ফল আৰু তৃতীয় দৈৰ্ঘ্যৰ গ.সা.গু. লোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "HCF of three numbers: find it for two, then with the third.",
+        "as": "তিনিটা সংখ্যাৰ গ.সা.গু.: দুটাৰ উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ropes of 60 m, 96 m and 132 m must be cut into equal pieces, as long as possible. How long is each piece?",
+        "as": "60 মি, 96 মি আৰু 132 মি ৰচী যিমান পাৰি দীঘল সমান টুকুৰাত কাটিব লাগে। প্ৰতিটো টুকুৰা কিমান দীঘল?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does the question want?",
+          "as": "প্ৰশ্নটোৱে কি বিচাৰিছে?"
+         },
+         "options": [
+          {
+           "en": "The LCM: smallest shared length",
+           "as": "ল.সা.গু.: সৰুতম উমৈহতীয়া দৈৰ্ঘ্য"
+          },
+          {
+           "en": "The HCF: largest equal piece",
+           "as": "গ.সা.গু.: সৰ্ববৃহৎ সমান টুকুৰা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Cutting into largest equal parts is a shared factor.",
+          "as": "সৰ্ববৃহৎ সমান টুকুৰা মানে উমৈহতীয়া গুণনীয়ক।"
+         },
+         "tag": "m-lcm-hcf-swap"
+        },
+        {
+         "ask": {
+          "en": "HCF of the first two?",
+          "as": "প্ৰথম দুটাৰ গ.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "7",
+           "as": "7"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Peel the two numbers into primes.",
+          "as": "সংখ্যা দুটা মৌলিকলৈ ভাঙা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Now include the third",
+          "as": "এতিয়া তৃতীয়টো লোৱা"
+         },
+         "options": [
+          {
+           "en": "13 m",
+           "as": "13 মি"
+          },
+          {
+           "en": "36 m",
+           "as": "36 মি"
+          },
+          {
+           "en": "12 m",
+           "as": "12 মি"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Take the HCF of your result with the third length.",
+          "as": "পোৱা ফল আৰু তৃতীয় দৈৰ্ঘ্যৰ গ.সা.গু. লোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "HCF of three numbers: find it for two, then with the third.",
+        "as": "তিনিটা সংখ্যাৰ গ.সা.গু.: দুটাৰ উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ropes of 72 m, 108 m and 180 m must be cut into equal pieces, as long as possible. How long is each piece?",
+        "as": "72 মি, 108 মি আৰু 180 মি ৰচী যিমান পাৰি দীঘল সমান টুকুৰাত কাটিব লাগে। প্ৰতিটো টুকুৰা কিমান দীঘল?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does the question want?",
+          "as": "প্ৰশ্নটোৱে কি বিচাৰিছে?"
+         },
+         "options": [
+          {
+           "en": "The HCF: largest equal piece",
+           "as": "গ.সা.গু.: সৰ্ববৃহৎ সমান টুকুৰা"
+          },
+          {
+           "en": "The LCM: smallest shared length",
+           "as": "ল.সা.গু.: সৰুতম উমৈহতীয়া দৈৰ্ঘ্য"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Cutting into largest equal parts is a shared factor.",
+          "as": "সৰ্ববৃহৎ সমান টুকুৰা মানে উমৈহতীয়া গুণনীয়ক।"
+         },
+         "tag": "m-lcm-hcf-swap"
+        },
+        {
+         "ask": {
+          "en": "HCF of the first two?",
+          "as": "প্ৰথম দুটাৰ গ.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "72",
+           "as": "72"
+          },
+          {
+           "en": "36",
+           "as": "36"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Peel the two numbers into primes.",
+          "as": "সংখ্যা দুটা মৌলিকলৈ ভাঙা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Now include the third",
+          "as": "এতিয়া তৃতীয়টো লোৱা"
+         },
+         "options": [
+          {
+           "en": "108 m",
+           "as": "108 মি"
+          },
+          {
+           "en": "36 m",
+           "as": "36 মি"
+          },
+          {
+           "en": "37 m",
+           "as": "37 মি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take the HCF of your result with the third length.",
+          "as": "পোৱা ফল আৰু তৃতীয় দৈৰ্ঘ্যৰ গ.সা.গু. লোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "HCF of three numbers: find it for two, then with the third.",
+        "as": "তিনিটা সংখ্যাৰ গ.সা.গু.: দুটাৰ উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u1.q5",
+     "type": "odd",
+     "skill": "n-factor",
+     "q": {
+      "en": "Which is not a factor of 54?",
+      "as": "কোনটো 54ৰ গুণনীয়ক নহয়?"
+     },
+     "why": {
+      "en": "54 ÷ 8 leaves a remainder, so 8 is not a factor.",
+      "as": "54 ÷ 8ত ভাগশেষ থাকে, সেয়ে 8 গুণনীয়ক নহয়।"
+     },
+     "options": [
+      {
+       "en": "6",
+       "as": "6"
+      },
+      {
+       "en": "8",
+       "as": "8"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "9",
+       "as": "9"
+      }
+     ],
+     "answer": 1,
+     "variants": [
+      {
+       "q": {
+        "en": "Which is not a factor of 54?",
+        "as": "কোনটো 54ৰ গুণনীয়ক নহয়?"
+       },
+       "why": {
+        "en": "54 ÷ 8 leaves a remainder, so 8 is not a factor.",
+        "as": "54 ÷ 8ত ভাগশেষ থাকে, সেয়ে 8 গুণনীয়ক নহয়।"
+       },
+       "options": [
+        {
+         "en": "6",
+         "as": "6"
+        },
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        },
+        {
+         "en": "9",
+         "as": "9"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Which is not a factor of 42?",
+        "as": "কোনটো 42ৰ গুণনীয়ক নহয়?"
+       },
+       "why": {
+        "en": "42 ÷ 12 leaves a remainder, so 12 is not a factor.",
+        "as": "42 ÷ 12ত ভাগশেষ থাকে, সেয়ে 12 গুণনীয়ক নহয়।"
+       },
+       "options": [
+        {
+         "en": "7",
+         "as": "7"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "14",
+         "as": "14"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "q": {
+        "en": "Which is not a factor of 60?",
+        "as": "কোনটো 60ৰ গুণনীয়ক নহয়?"
+       },
+       "why": {
+        "en": "60 ÷ 9 leaves a remainder, so 9 is not a factor.",
+        "as": "60 ÷ 9ত ভাগশেষ থাকে, সেয়ে 9 গুণনীয়ক নহয়।"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "9",
+         "as": "9"
+        }
+       ],
+       "answer": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Shared multiples: LCM",
+    "as": "উমৈহতীয়া গুণিতক: ল.সা.গু."
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A multiple is the number's times table.",
+     "as": "গুণিতক মানে সংখ্যাটোৰ নামতা।"
+    },
+    {
+     "en": "LCM is the smallest multiple two numbers share.",
+     "as": "ল.সা.গু. দুটা সংখ্যাৰ সৰুতম উমৈহতীয়া গুণিতক।"
+    },
+    {
+     "en": "From prime peels, take every prime at its highest power.",
+     "as": "মৌলিকৰ পৰা প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+    },
+    {
+     "en": "\"Happen together again\" questions ask for the LCM.",
+     "as": "\"আকৌ একেলগে হ'ব\" ধৰণৰ প্ৰশ্নত ল.সা.গু. লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m2.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "When two rhythms meet",
+      "as": "দুটা ছন্দ ক'ত লগ হয়"
+     },
+     "text": [
+      {
+       "en": "These gears have 4 and 6 teeth. Each red mark starts at home.",
+       "as": "এই গিয়াৰ দুটাৰ 4 আৰু 6টা দাঁত। প্ৰতিটো ৰঙা চিন আৰম্ভণিৰ ঠাইত।"
+      }
+     ],
+     "widget": {
+      "kind": "gears",
+      "a": 4,
+      "b": 6
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Turn until both marks are home together.",
+        "as": "দুয়োটা চিন একেলগে ঘৰলৈ নহালৈ ঘূৰোৱা।"
+       },
+       "goal": {
+        "meet": 1
+       },
+       "then": {
+        "en": "12 teeth: 3 turns of one gear, 2 of the other. 12 is the Lowest Common Multiple.",
+        "as": "12টা দাঁত: এটাৰ 3 পাক, আনটোৰ 2 পাক। 12 লঘিষ্ঠ সাধাৰণ গুণিতক।"
+       }
+      },
+      {
+       "do": {
+        "en": "Keep turning to the next meeting.",
+        "as": "পিছৰ মিলনলৈ ঘূৰাই থাকা।"
+       },
+       "goal": {
+        "meets": {
+         "gt": 1
+        }
+       },
+       "then": {
+        "en": "They meet again at 24. Every common multiple is a multiple of the LCM.",
+        "as": "আকৌ 24ত মিলে। প্ৰতিটো উমৈহতীয়া গুণিতক ল.সা.গু.ৰ গুণিতক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "LCM from prime peels",
+      "as": "মৌলিকৰ পৰা ল.সা.গু."
+     },
+     "text": [
+      {
+       "en": "Take each prime at its highest power from either number.",
+       "as": "দুয়োটা সংখ্যাৰ পৰা প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+      },
+      {
+       "en": "$12 = 2^2 \\times 3$ and $18 = 2 \\times 3^2$ give $2^2 \\times 3^2 = 36$.",
+       "as": "$12 = 2^2 \\times 3$ আৰু $18 = 2 \\times 3^2$ৰ পৰা $2^2 \\times 3^2 = 36$।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "HCF: lower powers of shared primes",
+        "as": "গ.সা.গু.: উমৈহতীয়া মৌলিকৰ সৰু ঘাত"
+       },
+       {
+        "en": "LCM: highest powers of all primes",
+        "as": "ল.সা.গু.: সকলো মৌলিকৰ ডাঙৰ ঘাত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m2.u2.q1",
+     "type": "explore",
+     "skill": "l-lcm",
+     "q": {
+      "en": "The multiples of 8 are marked. Tap the first one that 6 also divides.",
+      "as": "8ৰ গুণিতকবোৰ চিহ্নিত। 6য়েও হৰণ কৰা প্ৰথমটোত টিপা।"
+     },
+     "widget": {
+      "kind": "hops",
+      "a": 6,
+      "b": 8,
+      "max": 60,
+      "only": true
+     },
+     "target": 24,
+     "answerText": {
+      "en": "LCM = 24",
+      "as": "ল.সা.গু. = 24"
+     },
+     "why": {
+      "en": "24 is the first number on both lists.",
+      "as": "24 দুয়োটা তালিকাৰ প্ৰথম উমৈহতীয়া সংখ্যা।"
+     },
+     "traps": [
+      {
+       "val": 48,
+       "tag": "m-lcm-product",
+       "why": {
+        "en": "6 × 8 is a common multiple, but not always the smallest.",
+        "as": "6 × 8 উমৈহতীয়া গুণিতক, কিন্তু সদায় সৰুতম নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The multiples of 8 are marked. Tap the first one that 6 also divides.",
+        "as": "8ৰ গুণিতকবোৰ চিহ্নিত। 6য়েও হৰণ কৰা প্ৰথমটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 6,
+        "b": 8,
+        "max": 60,
+        "only": true
+       },
+       "target": 24,
+       "answerText": {
+        "en": "LCM = 24",
+        "as": "ল.সা.গু. = 24"
+       },
+       "why": {
+        "en": "24 is the first number on both lists.",
+        "as": "24 দুয়োটা তালিকাৰ প্ৰথম উমৈহতীয়া সংখ্যা।"
+       },
+       "traps": [
+        {
+         "val": 48,
+         "tag": "m-lcm-product",
+         "why": {
+          "en": "6 × 8 is a common multiple, but not always the smallest.",
+          "as": "6 × 8 উমৈহতীয়া গুণিতক, কিন্তু সদায় সৰুতম নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The multiples of 10 are marked. Tap the first one that 6 also divides.",
+        "as": "10ৰ গুণিতকবোৰ চিহ্নিত। 6য়েও হৰণ কৰা প্ৰথমটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 6,
+        "b": 10,
+        "max": 60,
+        "only": true
+       },
+       "target": 30,
+       "answerText": {
+        "en": "LCM = 30",
+        "as": "ল.সা.গু. = 30"
+       },
+       "why": {
+        "en": "30 is the first number on both lists.",
+        "as": "30 দুয়োটা তালিকাৰ প্ৰথম উমৈহতীয়া সংখ্যা।"
+       },
+       "traps": [
+        {
+         "val": 60,
+         "tag": "m-lcm-product",
+         "why": {
+          "en": "6 × 10 is a common multiple, but not always the smallest.",
+          "as": "6 × 10 উমৈহতীয়া গুণিতক, কিন্তু সদায় সৰুতম নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The multiples of 12 are marked. Tap the first one that 8 also divides.",
+        "as": "12ৰ গুণিতকবোৰ চিহ্নিত। 8য়েও হৰণ কৰা প্ৰথমটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 8,
+        "b": 12,
+        "max": 60,
+        "only": true
+       },
+       "target": 24,
+       "answerText": {
+        "en": "LCM = 24",
+        "as": "ল.সা.গু. = 24"
+       },
+       "why": {
+        "en": "24 is the first number on both lists.",
+        "as": "24 দুয়োটা তালিকাৰ প্ৰথম উমৈহতীয়া সংখ্যা।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "The multiples of 12 are marked. Tap the first one that 9 also divides.",
+        "as": "12ৰ গুণিতকবোৰ চিহ্নিত। 9য়েও হৰণ কৰা প্ৰথমটোত টিপা।"
+       },
+       "widget": {
+        "kind": "hops",
+        "a": 9,
+        "b": 12,
+        "max": 60,
+        "only": true
+       },
+       "target": 36,
+       "answerText": {
+        "en": "LCM = 36",
+        "as": "ল.সা.গু. = 36"
+       },
+       "why": {
+        "en": "36 is the first number on both lists.",
+        "as": "36 দুয়োটা তালিকাৰ প্ৰথম উমৈহতীয়া সংখ্যা।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "m2.u2.q2",
+     "type": "solve",
+     "skill": "l-lcm",
+     "hints": [
+      {
+       "en": "Peel both into primes.",
+       "as": "দুয়োটা মৌলিকলৈ ভাঙা।"
+      },
+      {
+       "en": "Take each prime at its highest power.",
+       "as": "প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find the LCM of 12 and 18.",
+      "as": "12 আৰু 18ৰ ল.সা.গু. উলিওৱা।"
+     },
+     "answer": "36",
+     "why": {
+      "en": "Highest powers of each prime multiply to 36.",
+      "as": "প্ৰতিটো মৌলিকৰ ডাঙৰ ঘাতৰ পূৰণফল 36।"
+     },
+     "traps": [
+      {
+       "ans": "6",
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+        "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+       }
+      },
+      {
+       "ans": "216",
+       "tag": "m-lcm-product",
+       "why": {
+        "en": "Multiplying gives a common multiple, but divide by the HCF to get the lowest one.",
+        "as": "পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটোৰ বাবে গ.সা.গু.ৰে হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the LCM of 12 and 18.",
+        "as": "12 আৰু 18ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "36",
+       "why": {
+        "en": "Highest powers of each prime multiply to 36.",
+        "as": "প্ৰতিটো মৌলিকৰ ডাঙৰ ঘাতৰ পূৰণফল 36।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        },
+        {
+         "ans": "216",
+         "tag": "m-lcm-product",
+         "why": {
+          "en": "Multiplying gives a common multiple, but divide by the HCF to get the lowest one.",
+          "as": "পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটোৰ বাবে গ.সা.গু.ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the LCM of 15 and 20.",
+        "as": "15 আৰু 20ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "60",
+       "why": {
+        "en": "Highest powers of each prime multiply to 60.",
+        "as": "প্ৰতিটো মৌলিকৰ ডাঙৰ ঘাতৰ পূৰণফল 60।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        },
+        {
+         "ans": "300",
+         "tag": "m-lcm-product",
+         "why": {
+          "en": "Multiplying gives a common multiple, but divide by the HCF to get the lowest one.",
+          "as": "পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটোৰ বাবে গ.সা.গু.ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the LCM of 24 and 36.",
+        "as": "24 আৰু 36ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "72",
+       "why": {
+        "en": "Highest powers of each prime multiply to 72.",
+        "as": "প্ৰতিটো মৌলিকৰ ডাঙৰ ঘাতৰ পূৰণফল 72।"
+       },
+       "traps": [
+        {
+         "ans": "12",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        },
+        {
+         "ans": "864",
+         "tag": "m-lcm-product",
+         "why": {
+          "en": "Multiplying gives a common multiple, but divide by the HCF to get the lowest one.",
+          "as": "পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটোৰ বাবে গ.সা.গু.ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the LCM of 16 and 28.",
+        "as": "16 আৰু 28ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "112",
+       "why": {
+        "en": "Highest powers of each prime multiply to 112.",
+        "as": "প্ৰতিটো মৌলিকৰ ডাঙৰ ঘাতৰ পূৰণফল 112।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-lcm-hcf-swap",
+         "why": {
+          "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+          "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+         }
+        },
+        {
+         "ans": "448",
+         "tag": "m-lcm-product",
+         "why": {
+          "en": "Multiplying gives a common multiple, but divide by the HCF to get the lowest one.",
+          "as": "পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটোৰ বাবে গ.সা.গু.ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m2.u2.q3",
+     "type": "tf",
+     "skill": "l-lcm",
+     "s": {
+      "en": "The LCM of two numbers can be smaller than the larger number.",
+      "as": "দুটা সংখ্যাৰ ল.সা.গু. ডাঙৰ সংখ্যাটোতকৈ সৰু হ'ব পাৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The LCM is a multiple of both, so it is never below the larger number.",
+      "as": "ল.সা.গু. দুয়োটাৰে গুণিতক, সেয়ে ই ডাঙৰ সংখ্যাটোতকৈ কেতিয়াও সৰু নহয়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+        "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u2.q4",
+     "type": "match",
+     "skill": "l-apply",
+     "q": {
+      "en": "Which one does each question need?",
+      "as": "কোন প্ৰশ্নত কোনটো লাগে?"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Bells ring together again",
+        "as": "ঘণ্টা আকৌ একেলগে বাজে"
+       },
+       {
+        "en": "LCM of the gaps",
+        "as": "সময়বোৰৰ ল.সা.গু."
+       }
+      ],
+      [
+       {
+        "en": "Largest tile for a floor",
+        "as": "মজিয়াৰ বাবে সৰ্ববৃহৎ টাইল"
+       },
+       {
+        "en": "HCF of the sides",
+        "as": "বাহুবোৰৰ গ.সা.গু."
+       }
+      ],
+      [
+       {
+        "en": "Smallest number divisible by 8 and 12",
+        "as": "8 আৰু 12ৰে হৰণ যোৱা সৰুতম সংখ্যা"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      [
+       {
+        "en": "Largest number dividing 8 and 12",
+        "as": "8 আৰু 12ক হৰণ কৰা সৰ্ববৃহৎ সংখ্যা"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Smallest and repeating: LCM. Largest and dividing up: HCF.",
+      "as": "সৰুতম আৰু পুনৰাবৃত্তি: ল.সা.গু.। সৰ্ববৃহৎ আৰু ভগোৱা: গ.সা.গু.।"
+     }
+    },
+    {
+     "id": "m2.u2.q5",
+     "type": "stepwise",
+     "skill": "l-apply",
+     "q": {
+      "en": "Three bells ring every 6, 8 and 12 minutes. They ring together at 9:00. After how many minutes do they next ring together?",
+      "as": "তিনিটা ঘণ্টা 6, 8 আৰু 12 মিনিটৰ মূৰে মূৰে বাজে। 9:00ত একেলগে বাজিলে পিছত কিমান মিনিটত একেলগে বাজিব?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Which tool fits?",
+        "as": "কোনটো লাগিব?"
+       },
+       "options": [
+        {
+         "en": "HCF",
+         "as": "গ.সা.গু."
+        },
+        {
+         "en": "Add the gaps",
+         "as": "সময়বোৰ যোগ কৰা"
+        },
+        {
+         "en": "LCM",
+         "as": "ল.সা.গু."
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Repeating events meet at a common multiple.",
+        "as": "পুনৰাবৃত্ত ঘটনা উমৈহতীয়া গুণিতকত মিলে।"
+       },
+       "tag": "m-lcm-hcf-swap"
+      },
+      {
+       "ask": {
+        "en": "LCM of 6 and 8?",
+        "as": "6 আৰু 8ৰ ল.সা.গু.?"
+       },
+       "options": [
+        {
+         "en": "54",
+         "as": "54"
+        },
+        {
+         "en": "2",
+         "as": "2"
+        },
+        {
+         "en": "24",
+         "as": "24"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Use prime peels.",
+        "as": "মৌলিক ব্যৱহাৰ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Now with 12",
+        "as": "এতিয়া 12ৰ সৈতে"
+       },
+       "options": [
+        {
+         "en": "24 minutes",
+         "as": "24 মিনিট"
+        },
+        {
+         "en": "26 minutes",
+         "as": "26 মিনিট"
+        },
+        {
+         "en": "576 minutes",
+         "as": "576 মিনিট"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "LCM of your result and the third gap.",
+        "as": "পোৱা ফল আৰু তৃতীয় সময়ৰ ল.সা.গু.।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Find the LCM for two, then with the third.",
+      "as": "দুটাৰ ল.সা.গু. উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Three bells ring every 6, 8 and 12 minutes. They ring together at 9:00. After how many minutes do they next ring together?",
+        "as": "তিনিটা ঘণ্টা 6, 8 আৰু 12 মিনিটৰ মূৰে মূৰে বাজে। 9:00ত একেলগে বাজিলে পিছত কিমান মিনিটত একেলগে বাজিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which tool fits?",
+          "as": "কোনটো লাগিব?"
+         },
+         "options": [
+          {
+           "en": "HCF",
+           "as": "গ.সা.গু."
+          },
+          {
+           "en": "Add the gaps",
+           "as": "সময়বোৰ যোগ কৰা"
+          },
+          {
+           "en": "LCM",
+           "as": "ল.সা.গু."
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Repeating events meet at a common multiple.",
+          "as": "পুনৰাবৃত্ত ঘটনা উমৈহতীয়া গুণিতকত মিলে।"
+         },
+         "tag": "m-lcm-hcf-swap"
+        },
+        {
+         "ask": {
+          "en": "LCM of 6 and 8?",
+          "as": "6 আৰু 8ৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "54",
+           "as": "54"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use prime peels.",
+          "as": "মৌলিক ব্যৱহাৰ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Now with 12",
+          "as": "এতিয়া 12ৰ সৈতে"
+         },
+         "options": [
+          {
+           "en": "24 minutes",
+           "as": "24 মিনিট"
+          },
+          {
+           "en": "26 minutes",
+           "as": "26 মিনিট"
+          },
+          {
+           "en": "576 minutes",
+           "as": "576 মিনিট"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM of your result and the third gap.",
+          "as": "পোৱা ফল আৰু তৃতীয় সময়ৰ ল.সা.গু.।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the LCM for two, then with the third.",
+        "as": "দুটাৰ ল.সা.গু. উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three bells ring every 4, 6 and 15 minutes. They ring together at 9:00. After how many minutes do they next ring together?",
+        "as": "তিনিটা ঘণ্টা 4, 6 আৰু 15 মিনিটৰ মূৰে মূৰে বাজে। 9:00ত একেলগে বাজিলে পিছত কিমান মিনিটত একেলগে বাজিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which tool fits?",
+          "as": "কোনটো লাগিব?"
+         },
+         "options": [
+          {
+           "en": "Add the gaps",
+           "as": "সময়বোৰ যোগ কৰা"
+          },
+          {
+           "en": "HCF",
+           "as": "গ.সা.গু."
+          },
+          {
+           "en": "LCM",
+           "as": "ল.সা.গু."
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Repeating events meet at a common multiple.",
+          "as": "পুনৰাবৃত্ত ঘটনা উমৈহতীয়া গুণিতকত মিলে।"
+         },
+         "tag": "m-lcm-hcf-swap"
+        },
+        {
+         "ask": {
+          "en": "LCM of 4 and 6?",
+          "as": "4 আৰু 6ৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Use prime peels.",
+          "as": "মৌলিক ব্যৱহাৰ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Now with 15",
+          "as": "এতিয়া 15ৰ সৈতে"
+         },
+         "options": [
+          {
+           "en": "25 minutes",
+           "as": "25 মিনিট"
+          },
+          {
+           "en": "360 minutes",
+           "as": "360 মিনিট"
+          },
+          {
+           "en": "60 minutes",
+           "as": "60 মিনিট"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "LCM of your result and the third gap.",
+          "as": "পোৱা ফল আৰু তৃতীয় সময়ৰ ল.সা.গু.।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the LCM for two, then with the third.",
+        "as": "দুটাৰ ল.সা.গু. উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three bells ring every 10, 12 and 15 minutes. They ring together at 9:00. After how many minutes do they next ring together?",
+        "as": "তিনিটা ঘণ্টা 10, 12 আৰু 15 মিনিটৰ মূৰে মূৰে বাজে। 9:00ত একেলগে বাজিলে পিছত কিমান মিনিটত একেলগে বাজিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which tool fits?",
+          "as": "কোনটো লাগিব?"
+         },
+         "options": [
+          {
+           "en": "LCM",
+           "as": "ল.সা.গু."
+          },
+          {
+           "en": "Add the gaps",
+           "as": "সময়বোৰ যোগ কৰা"
+          },
+          {
+           "en": "HCF",
+           "as": "গ.সা.গু."
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Repeating events meet at a common multiple.",
+          "as": "পুনৰাবৃত্ত ঘটনা উমৈহতীয়া গুণিতকত মিলে।"
+         },
+         "tag": "m-lcm-hcf-swap"
+        },
+        {
+         "ask": {
+          "en": "LCM of 10 and 12?",
+          "as": "10 আৰু 12ৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "130",
+           "as": "130"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Use prime peels.",
+          "as": "মৌলিক ব্যৱহাৰ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Now with 15",
+          "as": "এতিয়া 15ৰ সৈতে"
+         },
+         "options": [
+          {
+           "en": "37 minutes",
+           "as": "37 মিনিট"
+          },
+          {
+           "en": "60 minutes",
+           "as": "60 মিনিট"
+          },
+          {
+           "en": "1800 minutes",
+           "as": "1800 মিনিট"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "LCM of your result and the third gap.",
+          "as": "পোৱা ফল আৰু তৃতীয় সময়ৰ ল.সা.গু.।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the LCM for two, then with the third.",
+        "as": "দুটাৰ ল.সা.গু. উলিয়াই তৃতীয়টোৰ সৈতে লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u2.q6",
+     "type": "explore",
+     "skill": "l-lcm",
+     "q": {
+      "en": "Turn the gears until they first meet again. How many teeth for 6 and 8?",
+      "as": "প্ৰথমবাৰ আকৌ নিমিলালৈ গিয়াৰ ঘূৰোৱা। 6 আৰু 8ৰ বাবে কিমান দাঁত?"
+     },
+     "widget": {
+      "kind": "gears",
+      "a": 6,
+      "b": 8
+     },
+     "target": 24,
+     "answerText": {
+      "en": "24 teeth",
+      "as": "24টা দাঁত"
+     },
+     "why": {
+      "en": "24 is the first multiple of both 6 and 8.",
+      "as": "24 6 আৰু 8 দুয়োটাৰে প্ৰথম গুণিতক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Turn the gears until they first meet again. How many teeth for 6 and 8?",
+        "as": "প্ৰথমবাৰ আকৌ নিমিলালৈ গিয়াৰ ঘূৰোৱা। 6 আৰু 8ৰ বাবে কিমান দাঁত?"
+       },
+       "widget": {
+        "kind": "gears",
+        "a": 6,
+        "b": 8
+       },
+       "target": 24,
+       "answerText": {
+        "en": "24 teeth",
+        "as": "24টা দাঁত"
+       },
+       "why": {
+        "en": "24 is the first multiple of both 6 and 8.",
+        "as": "24 6 আৰু 8 দুয়োটাৰে প্ৰথম গুণিতক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Turn the gears until they first meet again. How many teeth for 4 and 10?",
+        "as": "প্ৰথমবাৰ আকৌ নিমিলালৈ গিয়াৰ ঘূৰোৱা। 4 আৰু 10ৰ বাবে কিমান দাঁত?"
+       },
+       "widget": {
+        "kind": "gears",
+        "a": 4,
+        "b": 10
+       },
+       "target": 20,
+       "answerText": {
+        "en": "20 teeth",
+        "as": "20টা দাঁত"
+       },
+       "why": {
+        "en": "20 is the first multiple of both 4 and 10.",
+        "as": "20 4 আৰু 10 দুয়োটাৰে প্ৰথম গুণিতক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Turn the gears until they first meet again. How many teeth for 6 and 9?",
+        "as": "প্ৰথমবাৰ আকৌ নিমিলালৈ গিয়াৰ ঘূৰোৱা। 6 আৰু 9ৰ বাবে কিমান দাঁত?"
+       },
+       "widget": {
+        "kind": "gears",
+        "a": 6,
+        "b": 9
+       },
+       "target": 18,
+       "answerText": {
+        "en": "18 teeth",
+        "as": "18টা দাঁত"
+       },
+       "why": {
+        "en": "18 is the first multiple of both 6 and 9.",
+        "as": "18 6 আৰু 9 দুয়োটাৰে প্ৰথম গুণিতক।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "The HCF × LCM rule",
+    "as": "গ.সা.গু. × ল.সা.গু. নিয়ম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "For two numbers, HCF × LCM = first × second.",
+     "as": "দুটা সংখ্যাৰ বাবে গ.সা.গু. × ল.সা.গু. = প্ৰথম × দ্বিতীয়।"
+    },
+    {
+     "en": "The HCF always divides the LCM.",
+     "as": "গ.সা.গু.য়ে ল.সা.গু.ক সদায় হৰণ কৰে।"
+    },
+    {
+     "en": "Numbers in ratio a:b are ax and bx, and their HCF is x when a and b share nothing.",
+     "as": "a:b অনুপাতৰ সংখ্যা ax আৰু bx; a আৰু bৰ উমৈহতীয়া গুণনীয়ক নাথাকিলে সিহঁতৰ গ.সা.গু. x।"
+    },
+    {
+     "en": "The remainder trick: subtract the remainder before finding the HCF.",
+     "as": "ভাগশেষৰ কৌশল: গ.সা.গু. উলিওৱাৰ আগতে ভাগশেষ বিয়োগ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m2.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "A shortcut worth marks",
+      "as": "নম্বৰ দিয়া চুটি পথ"
+     },
+     "text": [
+      {
+       "en": "For any two numbers, the HCF and LCM multiply to the same value as the numbers themselves.",
+       "as": "যিকোনো দুটা সংখ্যাৰ গ.সা.গু. আৰু ল.সা.গু.ৰ পূৰণফল সংখ্যা দুটাৰ পূৰণফলৰ সমান।"
+      },
+      {
+       "en": "Give any three of the four values and the last is one division away.",
+       "as": "চাৰিটাৰ তিনিটা জানিলে চতুৰ্থটো এটা হৰণতে ওলায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$12 \\times 18 = 216$",
+        "as": "$12 \\times 18 = 216$"
+       },
+       {
+        "en": "$6 \\times 36 = 216$",
+        "as": "$6 \\times 36 = 216$"
+       },
+       {
+        "en": "Always equal",
+        "as": "সদায় সমান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m2.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Numbers hidden in a ratio",
+      "as": "অনুপাতৰ ভিতৰত লুকোৱা সংখ্যা"
+     },
+     "text": [
+      {
+       "en": "If two numbers are in the ratio 3:4, write them as $3x$ and $4x$.",
+       "as": "দুটা সংখ্যাৰ অনুপাত 3:4 হ'লে সিহঁতক $3x$ আৰু $4x$ বুলি লিখা।"
+      },
+      {
+       "en": "Then $x$ is their HCF, and their LCM is $12x$.",
+       "as": "তেতিয়া $x$ সিহঁতৰ গ.সা.গু. আৰু $12x$ ল.সা.গু.।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Ratio 3:4",
+        "as": "অনুপাত 3:4"
+       },
+       {
+        "en": "$3x$ and $4x$",
+        "as": "$3x$ আৰু $4x$"
+       },
+       {
+        "en": "HCF $x$, LCM $12x$",
+        "as": "গ.সা.গু. $x$, ল.সা.গু. $12x$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m2.u3.q1",
+     "type": "solve",
+     "skill": "l-apply",
+     "hints": [
+      {
+       "en": "HCF × LCM = first × second.",
+       "as": "গ.সা.গু. × ল.সা.গু. = প্ৰথম × দ্বিতীয়।"
+      }
+     ],
+     "q": {
+      "en": "Two numbers have HCF 12 and LCM 72. One is 24. Find the other.",
+      "as": "দুটা সংখ্যাৰ গ.সা.গু. 12 আৰু ল.সা.গু. 72। এটা 24। আনটো উলিওৱা।"
+     },
+     "answer": "36",
+     "why": {
+      "en": "12 × 72 ÷ 24 = 36.",
+      "as": "12 × 72 ÷ 24 = 36।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two numbers have HCF 12 and LCM 72. One is 24. Find the other.",
+        "as": "দুটা সংখ্যাৰ গ.সা.গু. 12 আৰু ল.সা.গু. 72। এটা 24। আনটো উলিওৱা।"
+       },
+       "answer": "36",
+       "why": {
+        "en": "12 × 72 ÷ 24 = 36.",
+        "as": "12 × 72 ÷ 24 = 36।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers have HCF 5 and LCM 75. One is 15. Find the other.",
+        "as": "দুটা সংখ্যাৰ গ.সা.গু. 5 আৰু ল.সা.গু. 75। এটা 15। আনটো উলিওৱা।"
+       },
+       "answer": "25",
+       "why": {
+        "en": "5 × 75 ÷ 15 = 25.",
+        "as": "5 × 75 ÷ 15 = 25।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers have HCF 6 and LCM 126. One is 18. Find the other.",
+        "as": "দুটা সংখ্যাৰ গ.সা.গু. 6 আৰু ল.সা.গু. 126। এটা 18। আনটো উলিওৱা।"
+       },
+       "answer": "42",
+       "why": {
+        "en": "6 × 126 ÷ 18 = 42.",
+        "as": "6 × 126 ÷ 18 = 42।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers have HCF 15 and LCM 90. One is 30. Find the other.",
+        "as": "দুটা সংখ্যাৰ গ.সা.গু. 15 আৰু ল.সা.গু. 90। এটা 30। আনটো উলিওৱা।"
+       },
+       "answer": "45",
+       "why": {
+        "en": "15 × 90 ÷ 30 = 45.",
+        "as": "15 × 90 ÷ 30 = 45।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u3.q2",
+     "type": "tf",
+     "skill": "l-apply",
+     "s": {
+      "en": "Two numbers can have HCF 8 and LCM 60.",
+      "as": "দুটা সংখ্যাৰ গ.সা.গু. 8 আৰু ল.সা.গু. 60 হ'ব পাৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The HCF must divide the LCM, and 8 does not divide 60.",
+      "as": "গ.সা.গু.য়ে ল.সা.গু.ক হৰণ কৰিবই লাগিব, 8য়ে 60ক হৰণ নকৰে।"
+     }
+    },
+    {
+     "id": "m2.u3.q3",
+     "type": "stepwise",
+     "skill": "l-apply",
+     "q": {
+      "en": "Two numbers are in the ratio 3:4 and their HCF is 6. What is their LCM?",
+      "as": "দুটা সংখ্যাৰ অনুপাত 3:4 আৰু গ.সা.গু. 6। ল.সা.গু. কিমান?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Write the numbers",
+        "as": "সংখ্যা দুটা লিখা"
+       },
+       "options": [
+        {
+         "en": "3 and 4",
+         "as": "3 আৰু 4"
+        },
+        {
+         "en": "18 and 24",
+         "as": "18 আৰু 24"
+        },
+        {
+         "en": "9 and 10",
+         "as": "9 আৰু 10"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Multiply each ratio part by the HCF.",
+        "as": "অনুপাতৰ প্ৰতিটো ভাগক গ.সা.গু.ৰে পূৰণ কৰা।"
+       },
+       "tag": "m-ratio-part"
+      },
+      {
+       "ask": {
+        "en": "Then the LCM",
+        "as": "তাৰ পিছত ল.সা.গু."
+       },
+       "options": [
+        {
+         "en": "72",
+         "as": "72"
+        },
+        {
+         "en": "432",
+         "as": "432"
+        },
+        {
+         "en": "42",
+         "as": "42"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "LCM = first × second ÷ HCF.",
+        "as": "ল.সা.গু. = প্ৰথম × দ্বিতীয় ÷ গ.সা.গু.।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Ratio parts with no common factor: LCM is a × b × HCF.",
+      "as": "উমৈহতীয়া গুণনীয়ক নথকা অনুপাতত ল.সা.গু. = a × b × গ.সা.গু.।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 3:4 and their HCF is 6. What is their LCM?",
+        "as": "দুটা সংখ্যাৰ অনুপাত 3:4 আৰু গ.সা.গু. 6। ল.সা.গু. কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Write the numbers",
+          "as": "সংখ্যা দুটা লিখা"
+         },
+         "options": [
+          {
+           "en": "3 and 4",
+           "as": "3 আৰু 4"
+          },
+          {
+           "en": "18 and 24",
+           "as": "18 আৰু 24"
+          },
+          {
+           "en": "9 and 10",
+           "as": "9 আৰু 10"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Multiply each ratio part by the HCF.",
+          "as": "অনুপাতৰ প্ৰতিটো ভাগক গ.সা.গু.ৰে পূৰণ কৰা।"
+         },
+         "tag": "m-ratio-part"
+        },
+        {
+         "ask": {
+          "en": "Then the LCM",
+          "as": "তাৰ পিছত ল.সা.গু."
+         },
+         "options": [
+          {
+           "en": "72",
+           "as": "72"
+          },
+          {
+           "en": "432",
+           "as": "432"
+          },
+          {
+           "en": "42",
+           "as": "42"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM = first × second ÷ HCF.",
+          "as": "ল.সা.গু. = প্ৰথম × দ্বিতীয় ÷ গ.সা.গু.।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Ratio parts with no common factor: LCM is a × b × HCF.",
+        "as": "উমৈহতীয়া গুণনীয়ক নথকা অনুপাতত ল.সা.গু. = a × b × গ.সা.গু.।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 2:5 and their HCF is 7. What is their LCM?",
+        "as": "দুটা সংখ্যাৰ অনুপাত 2:5 আৰু গ.সা.গু. 7। ল.সা.গু. কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Write the numbers",
+          "as": "সংখ্যা দুটা লিখা"
+         },
+         "options": [
+          {
+           "en": "9 and 12",
+           "as": "9 আৰু 12"
+          },
+          {
+           "en": "2 and 5",
+           "as": "2 আৰু 5"
+          },
+          {
+           "en": "14 and 35",
+           "as": "14 আৰু 35"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply each ratio part by the HCF.",
+          "as": "অনুপাতৰ প্ৰতিটো ভাগক গ.সা.গু.ৰে পূৰণ কৰা।"
+         },
+         "tag": "m-ratio-part"
+        },
+        {
+         "ask": {
+          "en": "Then the LCM",
+          "as": "তাৰ পিছত ল.সা.গু."
+         },
+         "options": [
+          {
+           "en": "490",
+           "as": "490"
+          },
+          {
+           "en": "70",
+           "as": "70"
+          },
+          {
+           "en": "49",
+           "as": "49"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "LCM = first × second ÷ HCF.",
+          "as": "ল.সা.গু. = প্ৰথম × দ্বিতীয় ÷ গ.সা.গু.।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Ratio parts with no common factor: LCM is a × b × HCF.",
+        "as": "উমৈহতীয়া গুণনীয়ক নথকা অনুপাতত ল.সা.গু. = a × b × গ.সা.গু.।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 4:5 and their HCF is 3. What is their LCM?",
+        "as": "দুটা সংখ্যাৰ অনুপাত 4:5 আৰু গ.সা.গু. 3। ল.সা.গু. কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Write the numbers",
+          "as": "সংখ্যা দুটা লিখা"
+         },
+         "options": [
+          {
+           "en": "4 and 5",
+           "as": "4 আৰু 5"
+          },
+          {
+           "en": "7 and 8",
+           "as": "7 আৰু 8"
+          },
+          {
+           "en": "12 and 15",
+           "as": "12 আৰু 15"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply each ratio part by the HCF.",
+          "as": "অনুপাতৰ প্ৰতিটো ভাগক গ.সা.গু.ৰে পূৰণ কৰা।"
+         },
+         "tag": "m-ratio-part"
+        },
+        {
+         "ask": {
+          "en": "Then the LCM",
+          "as": "তাৰ পিছত ল.সা.গু."
+         },
+         "options": [
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "27",
+           "as": "27"
+          },
+          {
+           "en": "180",
+           "as": "180"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM = first × second ÷ HCF.",
+          "as": "ল.সা.গু. = প্ৰথম × দ্বিতীয় ÷ গ.সা.গু.।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Ratio parts with no common factor: LCM is a × b × HCF.",
+        "as": "উমৈহতীয়া গুণনীয়ক নথকা অনুপাতত ল.সা.গু. = a × b × গ.সা.গু.।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.u3.q4",
+     "type": "solve",
+     "skill": "l-apply",
+     "hints": [
+      {
+       "en": "Subtract the remainder from each number.",
+       "as": "প্ৰতিটো সংখ্যাৰ পৰা ভাগশেষ বিয়োগ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Find the largest number that divides 40 and 64 and leaves remainder 4 each time.",
+      "as": "40 আৰু 64ক হৰণ কৰি প্ৰতিবাৰে 4 ভাগশেষ ৰখা সৰ্ববৃহৎ সংখ্যাটো উলিওৱা।"
+     },
+     "answer": "12",
+     "why": {
+      "en": "Remove the remainder: 36 and 60. Their HCF is 12.",
+      "as": "ভাগশেষ বাদ দিয়া: 36 আৰু 60। সিহঁতৰ গ.সা.গু. 12।"
+     },
+     "traps": [
+      {
+       "ans": "8",
+       "tag": "m-hcf-remainder",
+       "why": {
+        "en": "Subtract the remainder from both numbers before finding the HCF.",
+        "as": "গ.সা.গু. উলিওৱাৰ আগতে দুয়োটাৰ পৰা ভাগশেষ বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the largest number that divides 40 and 64 and leaves remainder 4 each time.",
+        "as": "40 আৰু 64ক হৰণ কৰি প্ৰতিবাৰে 4 ভাগশেষ ৰখা সৰ্ববৃহৎ সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "12",
+       "why": {
+        "en": "Remove the remainder: 36 and 60. Their HCF is 12.",
+        "as": "ভাগশেষ বাদ দিয়া: 36 আৰু 60। সিহঁতৰ গ.সা.গু. 12।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-hcf-remainder",
+         "why": {
+          "en": "Subtract the remainder from both numbers before finding the HCF.",
+          "as": "গ.সা.গু. উলিওৱাৰ আগতে দুয়োটাৰ পৰা ভাগশেষ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the largest number that divides 55 and 79 and leaves remainder 7 each time.",
+        "as": "55 আৰু 79ক হৰণ কৰি প্ৰতিবাৰে 7 ভাগশেষ ৰখা সৰ্ববৃহৎ সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "24",
+       "why": {
+        "en": "Remove the remainder: 48 and 72. Their HCF is 24.",
+        "as": "ভাগশেষ বাদ দিয়া: 48 আৰু 72। সিহঁতৰ গ.সা.গু. 24।"
+       },
+       "traps": [
+        {
+         "ans": "1",
+         "tag": "m-hcf-remainder",
+         "why": {
+          "en": "Subtract the remainder from both numbers before finding the HCF.",
+          "as": "গ.সা.গু. উলিওৱাৰ আগতে দুয়োটাৰ পৰা ভাগশেষ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the largest number that divides 62 and 92 and leaves remainder 2 each time.",
+        "as": "62 আৰু 92ক হৰণ কৰি প্ৰতিবাৰে 2 ভাগশেষ ৰখা সৰ্ববৃহৎ সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "30",
+       "why": {
+        "en": "Remove the remainder: 60 and 90. Their HCF is 30.",
+        "as": "ভাগশেষ বাদ দিয়া: 60 আৰু 90। সিহঁতৰ গ.সা.গু. 30।"
+       },
+       "traps": [
+        {
+         "ans": "2",
+         "tag": "m-hcf-remainder",
+         "why": {
+          "en": "Subtract the remainder from both numbers before finding the HCF.",
+          "as": "গ.সা.গু. উলিওৱাৰ আগতে দুয়োটাৰ পৰা ভাগশেষ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m2.u3.q5",
+     "type": "odd",
+     "skill": "l-apply",
+     "q": {
+      "en": "Which of these cannot be the HCF of two numbers whose LCM is 60?",
+      "as": "ল.সা.গু. 60 হোৱা দুটা সংখ্যাৰ গ.সা.গু. তলৰ কোনটো হ'ব নোৱাৰে?"
+     },
+     "why": {
+      "en": "8 does not divide 60, and the HCF always divides the LCM.",
+      "as": "8য়ে 60ক হৰণ নকৰে, অথচ গ.সা.গু.য়ে ল.সা.গু.ক সদায় হৰণ কৰে।"
+     },
+     "options": [
+      {
+       "en": "8",
+       "as": "8"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "4",
+       "as": "4"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      }
+     ],
+     "answer": 0,
+     "variants": [
+      {
+       "q": {
+        "en": "Which of these cannot be the HCF of two numbers whose LCM is 60?",
+        "as": "ল.সা.গু. 60 হোৱা দুটা সংখ্যাৰ গ.সা.গু. তলৰ কোনটো হ'ব নোৱাৰে?"
+       },
+       "why": {
+        "en": "8 does not divide 60, and the HCF always divides the LCM.",
+        "as": "8য়ে 60ক হৰণ নকৰে, অথচ গ.সা.গু.য়ে ল.সা.গু.ক সদায় হৰণ কৰে।"
+       },
+       "options": [
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "6",
+         "as": "6"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "q": {
+        "en": "Which of these cannot be the HCF of two numbers whose LCM is 90?",
+        "as": "ল.সা.গু. 90 হোৱা দুটা সংখ্যাৰ গ.সা.গু. তলৰ কোনটো হ'ব নোৱাৰে?"
+       },
+       "why": {
+        "en": "7 does not divide 90, and the HCF always divides the LCM.",
+        "as": "7য়ে 90ক হৰণ নকৰে, অথচ গ.সা.গু.য়ে ল.সা.গু.ক সদায় হৰণ কৰে।"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "7",
+         "as": "7"
+        },
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Which of these cannot be the HCF of two numbers whose LCM is 120?",
+        "as": "ল.সা.গু. 120 হোৱা দুটা সংখ্যাৰ গ.সা.গু. তলৰ কোনটো হ'ব নোৱাৰে?"
+       },
+       "why": {
+        "en": "9 does not divide 120, and the HCF always divides the LCM.",
+        "as": "9য়ে 120ক হৰণ নকৰে, অথচ গ.সা.গু.য়ে ল.সা.গু.ক সদায় হৰণ কৰে।"
+       },
+       "options": [
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "9",
+         "as": "9"
+        },
+        {
+         "en": "6",
+         "as": "6"
+        }
+       ],
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "m2.u3.q6",
+     "type": "match",
+     "skill": "l-hcf",
+     "q": {
+      "en": "Match each pair to its HCF",
+      "as": "প্ৰতিটো যোৰক গ.সা.গু.ৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "8, 12",
+        "as": "8, 12"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ],
+      [
+       {
+        "en": "9, 15",
+        "as": "9, 15"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       }
+      ],
+      [
+       {
+        "en": "14, 21",
+        "as": "14, 21"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       }
+      ],
+      [
+       {
+        "en": "15, 28",
+        "as": "15, 28"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "15 and 28 share no prime, so they are co-prime and their HCF is 1.",
+      "as": "15 আৰু 28ৰ উমৈহতীয়া মৌলিক নাই, সেয়ে সিহঁত সহমৌলিক, গ.সা.গু. 1।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "LCM and HCF test",
+   "as": "ল.সা.গু. আৰু গ.সা.গু. পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m2.t.q1",
+    "type": "mcq",
+    "skill": "l-lcm",
+    "q": {
+     "en": "The LCM of 6, 8 and 12 is",
+     "as": "6, 8 আৰু 12ৰ ল.সা.গু. হ'ল"
+    },
+    "why": {
+     "en": "Peel into primes and take each at its highest power.",
+     "as": "মৌলিকলৈ ভাঙি প্ৰতিটো ডাঙৰ ঘাতত লোৱা।"
+    },
+    "options": [
+     {
+      "en": "24",
+      "as": "24"
+     },
+     {
+      "en": "48",
+      "as": "48"
+     },
+     {
+      "en": "576",
+      "as": "576"
+     },
+     {
+      "en": "2",
+      "as": "2"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-lcm-product",
+      "why": {
+       "en": "Multiplying all three gives a common multiple, not the lowest.",
+       "as": "তিনিওটা পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটো নহয়।"
+      }
+     },
+     {
+      "opt": 3,
+      "tag": "m-lcm-hcf-swap",
+      "why": {
+       "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+       "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The LCM of 6, 8 and 12 is",
+       "as": "6, 8 আৰু 12ৰ ল.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "Peel into primes and take each at its highest power.",
+       "as": "মৌলিকলৈ ভাঙি প্ৰতিটো ডাঙৰ ঘাতত লোৱা।"
+      },
+      "options": [
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "576",
+        "as": "576"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-lcm-product",
+        "why": {
+         "en": "Multiplying all three gives a common multiple, not the lowest.",
+         "as": "তিনিওটা পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটো নহয়।"
+        }
+       },
+       {
+        "opt": 3,
+        "tag": "m-lcm-hcf-swap",
+        "why": {
+         "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+         "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The LCM of 10, 15 and 20 is",
+       "as": "10, 15 আৰু 20ৰ ল.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "Peel into primes and take each at its highest power.",
+       "as": "মৌলিকলৈ ভাঙি প্ৰতিটো ডাঙৰ ঘাতত লোৱা।"
+      },
+      "options": [
+       {
+        "en": "120",
+        "as": "120"
+       },
+       {
+        "en": "3000",
+        "as": "3000"
+       },
+       {
+        "en": "60",
+        "as": "60"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-lcm-product",
+        "why": {
+         "en": "Multiplying all three gives a common multiple, not the lowest.",
+         "as": "তিনিওটা পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটো নহয়।"
+        }
+       },
+       {
+        "opt": 3,
+        "tag": "m-lcm-hcf-swap",
+        "why": {
+         "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+         "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The LCM of 9, 12 and 18 is",
+       "as": "9, 12 আৰু 18ৰ ল.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "Peel into primes and take each at its highest power.",
+       "as": "মৌলিকলৈ ভাঙি প্ৰতিটো ডাঙৰ ঘাতত লোৱা।"
+      },
+      "options": [
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "1944",
+        "as": "1944"
+       },
+       {
+        "en": "72",
+        "as": "72"
+       },
+       {
+        "en": "36",
+        "as": "36"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-lcm-hcf-swap",
+        "why": {
+         "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+         "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+        }
+       },
+       {
+        "opt": 1,
+        "tag": "m-lcm-product",
+        "why": {
+         "en": "Multiplying all three gives a common multiple, not the lowest.",
+         "as": "তিনিওটা পূৰণ কৰিলে উমৈহতীয়া গুণিতক পোৱা যায়, সৰুতমটো নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m2.t.q2",
+    "type": "mcq",
+    "skill": "l-hcf",
+    "q": {
+     "en": "The HCF of 36, 84 and 132 is",
+     "as": "36, 84 আৰু 132ৰ গ.সা.গু. হ'ল"
+    },
+    "why": {
+     "en": "It is the largest number dividing all three.",
+     "as": "তিনিওটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+    },
+    "options": [
+     {
+      "en": "2772",
+      "as": "2772"
+     },
+     {
+      "en": "24",
+      "as": "24"
+     },
+     {
+      "en": "12",
+      "as": "12"
+     },
+     {
+      "en": "36",
+      "as": "36"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-lcm-hcf-swap",
+      "why": {
+       "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+       "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The HCF of 36, 84 and 132 is",
+       "as": "36, 84 আৰু 132ৰ গ.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "It is the largest number dividing all three.",
+       "as": "তিনিওটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "2772",
+        "as": "2772"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "36",
+        "as": "36"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-lcm-hcf-swap",
+        "why": {
+         "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+         "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The HCF of 48, 72 and 120 is",
+       "as": "48, 72 আৰু 120ৰ গ.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "It is the largest number dividing all three.",
+       "as": "তিনিওটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "72",
+        "as": "72"
+       },
+       {
+        "en": "720",
+        "as": "720"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-lcm-hcf-swap",
+        "why": {
+         "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+         "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The HCF of 45, 75 and 105 is",
+       "as": "45, 75 আৰু 105ৰ গ.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "It is the largest number dividing all three.",
+       "as": "তিনিওটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       },
+       {
+        "en": "1575",
+        "as": "1575"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-lcm-hcf-swap",
+        "why": {
+         "en": "You swapped LCM and HCF. LCM is a shared multiple, so it is at least as big as both numbers; HCF is a shared factor.",
+         "as": "তুমি ল.সা.গু. আৰু গ.সা.গু. সলনি কৰিলা। ল.সা.গু. উমৈহতীয়া গুণিতক, দুয়োটা সংখ্যাতকৈ সৰু নহয়; গ.সা.গু. উমৈহতীয়া গুণনীয়ক।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m2.t.q3",
+    "type": "mcq",
+    "skill": "l-apply",
+    "q": {
+     "en": "The smallest number which leaves remainder 3 when divided by 6, 8 or 12 is",
+     "as": "6, 8 বা 12ৰে হৰণ কৰিলে 3 ভাগশেষ ৰখা সৰুতম সংখ্যাটো"
+    },
+    "why": {
+     "en": "LCM plus the remainder.",
+     "as": "ল.সা.গু. + ভাগশেষ।"
+    },
+    "options": [
+     {
+      "en": "27",
+      "as": "27"
+     },
+     {
+      "en": "33",
+      "as": "33"
+     },
+     {
+      "en": "24",
+      "as": "24"
+     },
+     {
+      "en": "21",
+      "as": "21"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-hcf-remainder",
+      "why": {
+       "en": "That number divides exactly. Add the remainder to the LCM.",
+       "as": "সেই সংখ্যাই নিঃশেষে হৰণ যায়। ল.সা.গু.ত ভাগশেষ যোগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The smallest number which leaves remainder 3 when divided by 6, 8 or 12 is",
+       "as": "6, 8 বা 12ৰে হৰণ কৰিলে 3 ভাগশেষ ৰখা সৰুতম সংখ্যাটো"
+      },
+      "why": {
+       "en": "LCM plus the remainder.",
+       "as": "ল.সা.গু. + ভাগশেষ।"
+      },
+      "options": [
+       {
+        "en": "27",
+        "as": "27"
+       },
+       {
+        "en": "33",
+        "as": "33"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "21",
+        "as": "21"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-hcf-remainder",
+        "why": {
+         "en": "That number divides exactly. Add the remainder to the LCM.",
+         "as": "সেই সংখ্যাই নিঃশেষে হৰণ যায়। ল.সা.গু.ত ভাগশেষ যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The smallest number which leaves remainder 2 when divided by 5, 6 or 10 is",
+       "as": "5, 6 বা 10ৰে হৰণ কৰিলে 2 ভাগশেষ ৰখা সৰুতম সংখ্যাটো"
+      },
+      "why": {
+       "en": "LCM plus the remainder.",
+       "as": "ল.সা.গু. + ভাগশেষ।"
+      },
+      "options": [
+       {
+        "en": "32",
+        "as": "32"
+       },
+       {
+        "en": "37",
+        "as": "37"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "28",
+        "as": "28"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-hcf-remainder",
+        "why": {
+         "en": "That number divides exactly. Add the remainder to the LCM.",
+         "as": "সেই সংখ্যাই নিঃশেষে হৰণ যায়। ল.সা.গু.ত ভাগশেষ যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The smallest number which leaves remainder 1 when divided by 4, 9 or 12 is",
+       "as": "4, 9 বা 12ৰে হৰণ কৰিলে 1 ভাগশেষ ৰখা সৰুতম সংখ্যাটো"
+      },
+      "why": {
+       "en": "LCM plus the remainder.",
+       "as": "ল.সা.গু. + ভাগশেষ।"
+      },
+      "options": [
+       {
+        "en": "37",
+        "as": "37"
+       },
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "41",
+        "as": "41"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-hcf-remainder",
+        "why": {
+         "en": "That number divides exactly. Add the remainder to the LCM.",
+         "as": "সেই সংখ্যাই নিঃশেষে হৰণ যায়। ল.সা.গু.ত ভাগশেষ যোগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m2.t.q4",
+    "type": "mcq",
+    "skill": "l-apply",
+    "q": {
+     "en": "The product of two numbers is 864 and their HCF is 12. Their LCM is",
+     "as": "দুটা সংখ্যাৰ পূৰণফল 864 আৰু গ.সা.গু. 12। ল.সা.গু. হ'ল"
+    },
+    "why": {
+     "en": "LCM = product ÷ HCF.",
+     "as": "ল.সা.গু. = পূৰণফল ÷ গ.সা.গু.।"
+    },
+    "options": [
+     {
+      "en": "72",
+      "as": "72"
+     },
+     {
+      "en": "10368",
+      "as": "10368"
+     },
+     {
+      "en": "144",
+      "as": "144"
+     },
+     {
+      "en": "84",
+      "as": "84"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-hcf-divide",
+      "why": {
+       "en": "Divide the product by the HCF; do not multiply.",
+       "as": "পূৰণফলক গ.সা.গু.ৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The product of two numbers is 864 and their HCF is 12. Their LCM is",
+       "as": "দুটা সংখ্যাৰ পূৰণফল 864 আৰু গ.সা.গু. 12। ল.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "LCM = product ÷ HCF.",
+       "as": "ল.সা.গু. = পূৰণফল ÷ গ.সা.গু.।"
+      },
+      "options": [
+       {
+        "en": "72",
+        "as": "72"
+       },
+       {
+        "en": "10368",
+        "as": "10368"
+       },
+       {
+        "en": "144",
+        "as": "144"
+       },
+       {
+        "en": "84",
+        "as": "84"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-hcf-divide",
+        "why": {
+         "en": "Divide the product by the HCF; do not multiply.",
+         "as": "পূৰণফলক গ.সা.গু.ৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The product of two numbers is 540 and their HCF is 6. Their LCM is",
+       "as": "দুটা সংখ্যাৰ পূৰণফল 540 আৰু গ.সা.গু. 6। ল.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "LCM = product ÷ HCF.",
+       "as": "ল.সা.গু. = পূৰণফল ÷ গ.সা.গু.।"
+      },
+      "options": [
+       {
+        "en": "180",
+        "as": "180"
+       },
+       {
+        "en": "90",
+        "as": "90"
+       },
+       {
+        "en": "3240",
+        "as": "3240"
+       },
+       {
+        "en": "96",
+        "as": "96"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-hcf-divide",
+        "why": {
+         "en": "Divide the product by the HCF; do not multiply.",
+         "as": "পূৰণফলক গ.সা.গু.ৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The product of two numbers is 1000 and their HCF is 10. Their LCM is",
+       "as": "দুটা সংখ্যাৰ পূৰণফল 1000 আৰু গ.সা.গু. 10। ল.সা.গু. হ'ল"
+      },
+      "why": {
+       "en": "LCM = product ÷ HCF.",
+       "as": "ল.সা.গু. = পূৰণফল ÷ গ.সা.গু.।"
+      },
+      "options": [
+       {
+        "en": "100",
+        "as": "100"
+       },
+       {
+        "en": "110",
+        "as": "110"
+       },
+       {
+        "en": "200",
+        "as": "200"
+       },
+       {
+        "en": "10000",
+        "as": "10000"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-hcf-divide",
+        "why": {
+         "en": "Divide the product by the HCF; do not multiply.",
+         "as": "পূৰণফলক গ.সা.গু.ৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m2.t.q5",
+    "type": "solve",
+    "skill": "l-apply",
+    "q": {
+     "en": "Lights flash every 4, 6 and 9 seconds. How many seconds pass before they flash together again?",
+     "as": "বন্তি 4, 6 আৰু 9 ছেকেণ্ডৰ মূৰে মূৰে জ্বলে। কিমান ছেকেণ্ডৰ পিছত আকৌ একেলগে জ্বলিব?"
+    },
+    "answer": "36",
+    "why": {
+     "en": "Repeating events meet at the LCM.",
+     "as": "পুনৰাবৃত্ত ঘটনা ল.সা.গু.ত মিলে।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Lights flash every 4, 6 and 9 seconds. How many seconds pass before they flash together again?",
+       "as": "বন্তি 4, 6 আৰু 9 ছেকেণ্ডৰ মূৰে মূৰে জ্বলে। কিমান ছেকেণ্ডৰ পিছত আকৌ একেলগে জ্বলিব?"
+      },
+      "answer": "36",
+      "why": {
+       "en": "Repeating events meet at the LCM.",
+       "as": "পুনৰাবৃত্ত ঘটনা ল.সা.গু.ত মিলে।"
+      }
+     },
+     {
+      "q": {
+       "en": "Lights flash every 8, 12 and 18 seconds. How many seconds pass before they flash together again?",
+       "as": "বন্তি 8, 12 আৰু 18 ছেকেণ্ডৰ মূৰে মূৰে জ্বলে। কিমান ছেকেণ্ডৰ পিছত আকৌ একেলগে জ্বলিব?"
+      },
+      "answer": "72",
+      "why": {
+       "en": "Repeating events meet at the LCM.",
+       "as": "পুনৰাবৃত্ত ঘটনা ল.সা.গু.ত মিলে।"
+      }
+     },
+     {
+      "q": {
+       "en": "Lights flash every 5, 6 and 8 seconds. How many seconds pass before they flash together again?",
+       "as": "বন্তি 5, 6 আৰু 8 ছেকেণ্ডৰ মূৰে মূৰে জ্বলে। কিমান ছেকেণ্ডৰ পিছত আকৌ একেলগে জ্বলিব?"
+      },
+      "answer": "120",
+      "why": {
+       "en": "Repeating events meet at the LCM.",
+       "as": "পুনৰাবৃত্ত ঘটনা ল.সা.গু.ত মিলে।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

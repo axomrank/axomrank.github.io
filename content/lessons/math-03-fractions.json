@@ -1,0 +1,2722 @@
+{
+ "id": "math-03-fractions",
+ "course": "mathematics",
+ "no": 3,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Fractions you can see",
+  "as": "দেখিব পৰা ভগ্নাংশ"
+ },
+ "reign": {
+  "en": "Meaning, adding, decimals",
+  "as": "অৰ্থ, যোগ, দশমিক"
+ },
+ "portrait": "math/fractions.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "What a fraction is",
+    "as": "ভগ্নাংশ কি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "The denominator says how many equal parts; the numerator says how many you take.",
+     "as": "হৰে সমান ভাগৰ সংখ্যা কয়; লবে কয় কিমান ভাগ ল'বা।"
+    },
+    {
+     "en": "The parts must be equal, or the fraction means nothing.",
+     "as": "ভাগবোৰ সমান হ'বই লাগিব।"
+    },
+    {
+     "en": "Multiplying top and bottom by the same number keeps the value.",
+     "as": "লব আৰু হৰক একে সংখ্যাৰে পূৰণ কৰিলে মান নসলনি হয়।"
+    },
+    {
+     "en": "Simplest form: divide top and bottom by their HCF.",
+     "as": "সৰলতম ৰূপ: লব আৰু হৰক সিহঁতৰ গ.সা.গু.ৰে হৰণ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m3.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Cut, then count",
+      "as": "কাটা, তাৰ পিছত গণা"
+     },
+     "text": [
+      {
+       "en": "A fraction is two instructions: cut into equal parts, then take some.",
+       "as": "ভগ্নাংশ দুটা নিৰ্দেশ: সমান ভাগত কাটা, তাৰ পিছত কিছু লোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "fracbar",
+      "n": 4,
+      "split": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Shade three quarters of the bar.",
+        "as": "বাৰৰ তিনি-চতুৰ্থাংশ ৰঙোৱা।"
+       },
+       "goal": {
+        "value": 0.75
+       },
+       "then": {
+        "en": "Three of four equal parts. Now try + and see that 6 of 8 is the same amount.",
+        "as": "চাৰিটা সমান ভাগৰ তিনিটা। এতিয়া + টিপি চোৱা 8ৰ 6 একে পৰিমাণ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Same amount, new name",
+      "as": "একে পৰিমাণ, নতুন নাম"
+     },
+     "text": [
+      {
+       "en": "Cut each piece in two: there are twice as many parts, and you take twice as many.",
+       "as": "প্ৰতিটো টুকুৰা দুভাগ কৰা: ভাগ দুগুণ হ'ল, লোৱা ভাগো দুগুণ হ'ল।"
+      },
+      {
+       "en": "The shaded amount has not moved, so $\\frac{1}{2} = \\frac{2}{4} = \\frac{4}{8}$.",
+       "as": "ৰঙোৱা পৰিমাণ সলনি হোৱা নাই, সেয়ে $\\frac{1}{2} = \\frac{2}{4} = \\frac{4}{8}$।"
+      }
+     ],
+     "widget": {
+      "kind": "fracbar",
+      "n": 8,
+      "shade": 4,
+      "ref": [
+       1,
+       2
+      ],
+      "split": true
+     }
+    },
+    {
+     "id": "m3.u1.q1",
+     "type": "explore",
+     "skill": "f-meaning",
+     "q": {
+      "en": "Shade $\\frac{3}{4}$ of the bar.",
+      "as": "বাৰডালৰ $\\frac{3}{4}$ অংশ ৰঙোৱা।"
+     },
+     "widget": {
+      "kind": "fracbar",
+      "n": 4
+     },
+     "target": 0.75,
+     "answerText": {
+      "en": "3 of 4 parts",
+      "as": "4টাৰ 3টা ভাগ"
+     },
+     "why": {
+      "en": "The bar has 4 equal parts, so take 3 of them.",
+      "as": "বাৰত 4টা সমান ভাগ, তাৰ 3টা লোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Shade $\\frac{3}{4}$ of the bar.",
+        "as": "বাৰডালৰ $\\frac{3}{4}$ অংশ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 4
+       },
+       "target": 0.75,
+       "answerText": {
+        "en": "3 of 4 parts",
+        "as": "4টাৰ 3টা ভাগ"
+       },
+       "why": {
+        "en": "The bar has 4 equal parts, so take 3 of them.",
+        "as": "বাৰত 4টা সমান ভাগ, তাৰ 3টা লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade $\\frac{2}{5}$ of the bar.",
+        "as": "বাৰডালৰ $\\frac{2}{5}$ অংশ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 5
+       },
+       "target": 0.4,
+       "answerText": {
+        "en": "2 of 5 parts",
+        "as": "5টাৰ 2টা ভাগ"
+       },
+       "why": {
+        "en": "The bar has 5 equal parts, so take 2 of them.",
+        "as": "বাৰত 5টা সমান ভাগ, তাৰ 2টা লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade $\\frac{5}{6}$ of the bar.",
+        "as": "বাৰডালৰ $\\frac{5}{6}$ অংশ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 6
+       },
+       "target": 0.8333333333333334,
+       "answerText": {
+        "en": "5 of 6 parts",
+        "as": "6টাৰ 5টা ভাগ"
+       },
+       "why": {
+        "en": "The bar has 6 equal parts, so take 5 of them.",
+        "as": "বাৰত 6টা সমান ভাগ, তাৰ 5টা লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade $\\frac{3}{8}$ of the bar.",
+        "as": "বাৰডালৰ $\\frac{3}{8}$ অংশ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 8
+       },
+       "target": 0.375,
+       "answerText": {
+        "en": "3 of 8 parts",
+        "as": "8টাৰ 3টা ভাগ"
+       },
+       "why": {
+        "en": "The bar has 8 equal parts, so take 3 of them.",
+        "as": "বাৰত 8টা সমান ভাগ, তাৰ 3টা লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u1.q2",
+     "type": "explore",
+     "skill": "f-equiv",
+     "q": {
+      "en": "The top bar shows $\\frac{2}{3}$. Shade the same amount on the bar with 6 parts.",
+      "as": "ওপৰৰ বাৰত $\\frac{2}{3}$ দেখুওৱা আছে। 6টা ভাগৰ বাৰত একে পৰিমাণ ৰঙোৱা।"
+     },
+     "widget": {
+      "kind": "fracbar",
+      "n": 6,
+      "ref": [
+       2,
+       3
+      ]
+     },
+     "target": 0.6666666666666666,
+     "answerText": {
+      "en": "$\\frac{4}{6}$",
+      "as": "$\\frac{4}{6}$"
+     },
+     "why": {
+      "en": "Multiply top and bottom by 2: $\\frac{2}{3} = \\frac{4}{6}$.",
+      "as": "লব আৰু হৰক 2ৰে পূৰণ কৰা: $\\frac{2}{3} = \\frac{4}{6}$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The top bar shows $\\frac{2}{3}$. Shade the same amount on the bar with 6 parts.",
+        "as": "ওপৰৰ বাৰত $\\frac{2}{3}$ দেখুওৱা আছে। 6টা ভাগৰ বাৰত একে পৰিমাণ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 6,
+        "ref": [
+         2,
+         3
+        ]
+       },
+       "target": 0.6666666666666666,
+       "answerText": {
+        "en": "$\\frac{4}{6}$",
+        "as": "$\\frac{4}{6}$"
+       },
+       "why": {
+        "en": "Multiply top and bottom by 2: $\\frac{2}{3} = \\frac{4}{6}$.",
+        "as": "লব আৰু হৰক 2ৰে পূৰণ কৰা: $\\frac{2}{3} = \\frac{4}{6}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The top bar shows $\\frac{3}{4}$. Shade the same amount on the bar with 8 parts.",
+        "as": "ওপৰৰ বাৰত $\\frac{3}{4}$ দেখুওৱা আছে। 8টা ভাগৰ বাৰত একে পৰিমাণ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 8,
+        "ref": [
+         3,
+         4
+        ]
+       },
+       "target": 0.75,
+       "answerText": {
+        "en": "$\\frac{6}{8}$",
+        "as": "$\\frac{6}{8}$"
+       },
+       "why": {
+        "en": "Multiply top and bottom by 2: $\\frac{3}{4} = \\frac{6}{8}$.",
+        "as": "লব আৰু হৰক 2ৰে পূৰণ কৰা: $\\frac{3}{4} = \\frac{6}{8}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The top bar shows $\\frac{1}{3}$. Shade the same amount on the bar with 9 parts.",
+        "as": "ওপৰৰ বাৰত $\\frac{1}{3}$ দেখুওৱা আছে। 9টা ভাগৰ বাৰত একে পৰিমাণ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 9,
+        "ref": [
+         1,
+         3
+        ]
+       },
+       "target": 0.3333333333333333,
+       "answerText": {
+        "en": "$\\frac{3}{9}$",
+        "as": "$\\frac{3}{9}$"
+       },
+       "why": {
+        "en": "Multiply top and bottom by 3: $\\frac{1}{3} = \\frac{3}{9}$.",
+        "as": "লব আৰু হৰক 3ৰে পূৰণ কৰা: $\\frac{1}{3} = \\frac{3}{9}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The top bar shows $\\frac{2}{5}$. Shade the same amount on the bar with 10 parts.",
+        "as": "ওপৰৰ বাৰত $\\frac{2}{5}$ দেখুওৱা আছে। 10টা ভাগৰ বাৰত একে পৰিমাণ ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "fracbar",
+        "n": 10,
+        "ref": [
+         2,
+         5
+        ]
+       },
+       "target": 0.4,
+       "answerText": {
+        "en": "$\\frac{4}{10}$",
+        "as": "$\\frac{4}{10}$"
+       },
+       "why": {
+        "en": "Multiply top and bottom by 2: $\\frac{2}{5} = \\frac{4}{10}$.",
+        "as": "লব আৰু হৰক 2ৰে পূৰণ কৰা: $\\frac{2}{5} = \\frac{4}{10}$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u1.q3",
+     "type": "solve",
+     "skill": "f-equiv",
+     "hints": [
+      {
+       "en": "Type your answer as top/bottom, using the / key.",
+       "as": "উত্তৰ লব/হৰ ৰূপত লিখা, / বুটাম টিপি।"
+      }
+     ],
+     "q": {
+      "en": "Write $\\frac{18}{24}$ in simplest form.",
+      "as": "$\\frac{18}{24}$ক সৰলতম ৰূপত লিখা।"
+     },
+     "answer": "3/4",
+     "exact": true,
+     "why": {
+      "en": "The HCF is 6: divide top and bottom by it.",
+      "as": "গ.সা.গু. 6: লব আৰু হৰক ইয়াৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "9/12",
+       "tag": "m-simplify-partial",
+       "why": {
+        "en": "That is equal, but not finished. Keep dividing until nothing is shared.",
+        "as": "সেয়া সমান, কিন্তু শেষ হোৱা নাই। উমৈহতীয়া গুণনীয়ক নোহোৱালৈ হৰণ কৰি থাকা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Write $\\frac{18}{24}$ in simplest form.",
+        "as": "$\\frac{18}{24}$ক সৰলতম ৰূপত লিখা।"
+       },
+       "answer": "3/4",
+       "exact": true,
+       "why": {
+        "en": "The HCF is 6: divide top and bottom by it.",
+        "as": "গ.সা.গু. 6: লব আৰু হৰক ইয়াৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "9/12",
+         "tag": "m-simplify-partial",
+         "why": {
+          "en": "That is equal, but not finished. Keep dividing until nothing is shared.",
+          "as": "সেয়া সমান, কিন্তু শেষ হোৱা নাই। উমৈহতীয়া গুণনীয়ক নোহোৱালৈ হৰণ কৰি থাকা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Write $\\frac{36}{48}$ in simplest form.",
+        "as": "$\\frac{36}{48}$ক সৰলতম ৰূপত লিখা।"
+       },
+       "answer": "3/4",
+       "exact": true,
+       "why": {
+        "en": "The HCF is 12: divide top and bottom by it.",
+        "as": "গ.সা.গু. 12: লব আৰু হৰক ইয়াৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "18/24",
+         "tag": "m-simplify-partial",
+         "why": {
+          "en": "That is equal, but not finished. Keep dividing until nothing is shared.",
+          "as": "সেয়া সমান, কিন্তু শেষ হোৱা নাই। উমৈহতীয়া গুণনীয়ক নোহোৱালৈ হৰণ কৰি থাকা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Write $\\frac{24}{60}$ in simplest form.",
+        "as": "$\\frac{24}{60}$ক সৰলতম ৰূপত লিখা।"
+       },
+       "answer": "2/5",
+       "exact": true,
+       "why": {
+        "en": "The HCF is 12: divide top and bottom by it.",
+        "as": "গ.সা.গু. 12: লব আৰু হৰক ইয়াৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "12/30",
+         "tag": "m-simplify-partial",
+         "why": {
+          "en": "That is equal, but not finished. Keep dividing until nothing is shared.",
+          "as": "সেয়া সমান, কিন্তু শেষ হোৱা নাই। উমৈহতীয়া গুণনীয়ক নোহোৱালৈ হৰণ কৰি থাকা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Write $\\frac{32}{48}$ in simplest form.",
+        "as": "$\\frac{32}{48}$ক সৰলতম ৰূপত লিখা।"
+       },
+       "answer": "2/3",
+       "exact": true,
+       "why": {
+        "en": "The HCF is 16: divide top and bottom by it.",
+        "as": "গ.সা.গু. 16: লব আৰু হৰক ইয়াৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "16/24",
+         "tag": "m-simplify-partial",
+         "why": {
+          "en": "That is equal, but not finished. Keep dividing until nothing is shared.",
+          "as": "সেয়া সমান, কিন্তু শেষ হোৱা নাই। উমৈহতীয়া গুণনীয়ক নোহোৱালৈ হৰণ কৰি থাকা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m3.u1.q4",
+     "type": "tf",
+     "skill": "f-meaning",
+     "s": {
+      "en": "$\\frac{3}{4}$ means 3 parts out of 4 parts of any size.",
+      "as": "$\\frac{3}{4}$ মানে যিকোনো আকাৰৰ 4 ভাগৰ 3 ভাগ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The four parts must be equal. Without equal parts it is not three quarters.",
+      "as": "চাৰিওটা ভাগ সমান হ'বই লাগিব। সমান নহ'লে সেয়া তিনি-চতুৰ্থাংশ নহয়।"
+     }
+    },
+    {
+     "id": "m3.u1.q5",
+     "type": "match",
+     "skill": "f-equiv",
+     "q": {
+      "en": "Match the equal fractions",
+      "as": "সমান ভগ্নাংশবোৰ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       },
+       {
+        "en": "$\\frac{7}{14}$",
+        "as": "$\\frac{7}{14}$"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{2}{3}$",
+        "as": "$\\frac{2}{3}$"
+       },
+       {
+        "en": "$\\frac{10}{15}$",
+        "as": "$\\frac{10}{15}$"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{3}{5}$",
+        "as": "$\\frac{3}{5}$"
+       },
+       {
+        "en": "$\\frac{12}{20}$",
+        "as": "$\\frac{12}{20}$"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{5}{6}$",
+        "as": "$\\frac{5}{6}$"
+       },
+       {
+        "en": "$\\frac{15}{18}$",
+        "as": "$\\frac{15}{18}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide top and bottom of the longer fraction by their HCF.",
+      "as": "ডাঙৰ ভগ্নাংশৰ লব আৰু হৰক গ.সা.গু.ৰে হৰণ কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Compare and add",
+    "as": "তুলনা আৰু যোগ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Same denominator: the bigger numerator wins.",
+     "as": "হৰ একে হ'লে ডাঙৰ লবৰ ভগ্নাংশ ডাঙৰ।"
+    },
+    {
+     "en": "Same numerator: the smaller denominator wins, because the pieces are bigger.",
+     "as": "লব একে হ'লে সৰু হৰৰ ভগ্নাংশ ডাঙৰ, কাৰণ টুকুৰা ডাঙৰ।"
+    },
+    {
+     "en": "Otherwise cross-multiply, or use the LCM of the denominators.",
+     "as": "নহ'লে তিৰ্যক পূৰণ কৰা বা হৰবোৰৰ ল.সা.গু. লোৱা।"
+    },
+    {
+     "en": "To add, make the denominators equal, then add only the tops.",
+     "as": "যোগ কৰিবলৈ হৰ সমান কৰি কেৱল লব যোগ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m3.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Fractions live on the line",
+      "as": "ভগ্নাংশ ৰেখাত থাকে"
+     },
+     "text": [
+      {
+       "en": "Here is the piece from 0 to 1, cut into eighths. Every fraction is a place.",
+       "as": "0ৰ পৰা 1লৈ অংশটো অষ্টমাংশত কটা। প্ৰতিটো ভগ্নাংশ এটা স্থান।"
+      }
+     ],
+     "widget": {
+      "kind": "line",
+      "min": 0,
+      "max": 1,
+      "den": 8,
+      "value": 0.25,
+      "percent": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag the pin to $\\frac{5}{8}$.",
+        "as": "পিনটো $\\frac{5}{8}$লৈ টানা।"
+       },
+       "goal": {
+        "value": 0.625
+       },
+       "then": {
+        "en": "Five steps of one eighth. The same point is 0.625.",
+        "as": "এক-অষ্টমাংশৰ পাঁচ খোজ। একে বিন্দুটো 0.625।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now find $\\frac{1}{2}$.",
+        "as": "এতিয়া $\\frac{1}{2}$ বিচাৰা।"
+       },
+       "goal": {
+        "value": 0.5
+       },
+       "then": {
+        "en": "It is also $\\frac{4}{8}$. Equal fractions are one point with many names.",
+        "as": "ইয়াৰ নাম $\\frac{4}{8}$ও। সমান ভগ্নাংশ মানে এটা বিন্দুৰ বহু নাম।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Same-size pieces first",
+      "as": "প্ৰথমে একে আকাৰৰ টুকুৰা"
+     },
+     "text": [
+      {
+       "en": "Blue marks cut thirds and green marks cut quarters. They need cuts they can share.",
+       "as": "নীলা চিনে তৃতীয়াংশ, সেউজীয়া চিনে চতুৰ্থাংশ কাটে। উমৈহতীয়া কাট লাগিব।"
+      }
+     ],
+     "widget": {
+      "kind": "cuts",
+      "a": [
+       1,
+       3
+      ],
+      "b": [
+       1,
+       4
+      ],
+      "d": 5
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Change the cuts until every mark lands on one.",
+        "as": "প্ৰতিটো চিন কাটত নপৰালৈ সলনি কৰা।"
+       },
+       "goal": {
+        "common": 1
+       },
+       "then": {
+        "en": "12 cuts fit both, because 12 is the LCM of 3 and 4. Now the pieces can be counted together.",
+        "as": "12টা কাট দুয়োটাতে মিলে, কাৰণ 12 হৈছে 3 আৰু 4ৰ ল.সা.গু.। এতিয়া টুকুৰাবোৰ একেলগে গণিব পাৰি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u2.q1",
+     "type": "explore",
+     "skill": "f-compare",
+     "q": {
+      "en": "Place $\\frac{5}{8}$ on the line.",
+      "as": "$\\frac{5}{8}$ক ৰেখাত ৰাখা।"
+     },
+     "widget": {
+      "kind": "numline",
+      "max": 1,
+      "den": 8
+     },
+     "target": 0.625,
+     "answerText": {
+      "en": "Notch 5 of 8",
+      "as": "8ৰ 5 নম্বৰ দাগ"
+     },
+     "why": {
+      "en": "The line is cut into 8 equal steps. Go 5 steps from 0.",
+      "as": "ৰেখাডাল 8টা সমান খোজত ভগোৱা। 0ৰ পৰা 5 খোজ যোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Place $\\frac{5}{8}$ on the line.",
+        "as": "$\\frac{5}{8}$ক ৰেখাত ৰাখা।"
+       },
+       "widget": {
+        "kind": "numline",
+        "max": 1,
+        "den": 8
+       },
+       "target": 0.625,
+       "answerText": {
+        "en": "Notch 5 of 8",
+        "as": "8ৰ 5 নম্বৰ দাগ"
+       },
+       "why": {
+        "en": "The line is cut into 8 equal steps. Go 5 steps from 0.",
+        "as": "ৰেখাডাল 8টা সমান খোজত ভগোৱা। 0ৰ পৰা 5 খোজ যোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Place $\\frac{3}{10}$ on the line.",
+        "as": "$\\frac{3}{10}$ক ৰেখাত ৰাখা।"
+       },
+       "widget": {
+        "kind": "numline",
+        "max": 1,
+        "den": 10
+       },
+       "target": 0.3,
+       "answerText": {
+        "en": "Notch 3 of 10",
+        "as": "10ৰ 3 নম্বৰ দাগ"
+       },
+       "why": {
+        "en": "The line is cut into 10 equal steps. Go 3 steps from 0.",
+        "as": "ৰেখাডাল 10টা সমান খোজত ভগোৱা। 0ৰ পৰা 3 খোজ যোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Place $\\frac{7}{12}$ on the line.",
+        "as": "$\\frac{7}{12}$ক ৰেখাত ৰাখা।"
+       },
+       "widget": {
+        "kind": "numline",
+        "max": 1,
+        "den": 12
+       },
+       "target": 0.5833333333333334,
+       "answerText": {
+        "en": "Notch 7 of 12",
+        "as": "12ৰ 7 নম্বৰ দাগ"
+       },
+       "why": {
+        "en": "The line is cut into 12 equal steps. Go 7 steps from 0.",
+        "as": "ৰেখাডাল 12টা সমান খোজত ভগোৱা। 0ৰ পৰা 7 খোজ যোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Place $\\frac{2}{6}$ on the line.",
+        "as": "$\\frac{2}{6}$ক ৰেখাত ৰাখা।"
+       },
+       "widget": {
+        "kind": "numline",
+        "max": 1,
+        "den": 6
+       },
+       "target": 0.3333333333333333,
+       "answerText": {
+        "en": "Notch 2 of 6",
+        "as": "6ৰ 2 নম্বৰ দাগ"
+       },
+       "why": {
+        "en": "The line is cut into 6 equal steps. Go 2 steps from 0.",
+        "as": "ৰেখাডাল 6টা সমান খোজত ভগোৱা। 0ৰ পৰা 2 খোজ যোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u2.q2",
+     "type": "order",
+     "skill": "f-compare",
+     "q": {
+      "en": "Put these in order, smallest first",
+      "as": "সৰুৰ পৰা ডাঙৰলৈ সজোৱা"
+     },
+     "items": [
+      {
+       "en": "$\\frac{1}{5}$",
+       "as": "$\\frac{1}{5}$"
+      },
+      {
+       "en": "$\\frac{1}{4}$",
+       "as": "$\\frac{1}{4}$"
+      },
+      {
+       "en": "$\\frac{1}{3}$",
+       "as": "$\\frac{1}{3}$"
+      },
+      {
+       "en": "$\\frac{1}{2}$",
+       "as": "$\\frac{1}{2}$"
+      }
+     ],
+     "why": {
+      "en": "With equal numerators, a bigger denominator means smaller pieces.",
+      "as": "লব একে হ'লে ডাঙৰ হৰ মানে সৰু টুকুৰা।"
+     }
+    },
+    {
+     "id": "m3.u2.q3",
+     "type": "tf",
+     "skill": "f-compare",
+     "s": {
+      "en": "$\\frac{1}{8}$ is bigger than $\\frac{1}{6}$ because 8 is bigger than 6.",
+      "as": "8 ডাঙৰ, সেয়ে $\\frac{1}{8}$ $\\frac{1}{6}$তকৈ ডাঙৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Cutting into 8 gives smaller pieces than cutting into 6.",
+      "as": "8 ভাগ কৰিলে টুকুৰা 6 ভাগতকৈ সৰু হয়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-cmp-denom",
+       "why": {
+        "en": "A bigger denominator means smaller pieces, not a bigger fraction.",
+        "as": "ডাঙৰ হৰ মানে সৰু টুকুৰা, ডাঙৰ ভগ্নাংশ নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u2.q4",
+     "type": "solve",
+     "skill": "f-add",
+     "hints": [
+      {
+       "en": "Find the LCM of the denominators.",
+       "as": "হৰবোৰৰ ল.সা.গু. উলিওৱা।"
+      },
+      {
+       "en": "Rewrite both fractions with that denominator.",
+       "as": "দুয়োটা ভগ্নাংশ সেই হৰত লিখা।"
+      }
+     ],
+     "q": {
+      "en": "Add: $\\frac{1}{3} + \\frac{1}{4}$",
+      "as": "যোগ কৰা: $\\frac{1}{3} + \\frac{1}{4}$"
+     },
+     "answer": "7/12",
+     "why": {
+      "en": "Common denominator 12: the sum is $\\frac{7}{12}$.",
+      "as": "উমৈহতীয়া হৰ 12: যোগফল $\\frac{7}{12}$।"
+     },
+     "traps": [
+      {
+       "ans": "2/7",
+       "tag": "m-add-tops",
+       "why": {
+        "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+        "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Add: $\\frac{1}{3} + \\frac{1}{4}$",
+        "as": "যোগ কৰা: $\\frac{1}{3} + \\frac{1}{4}$"
+       },
+       "answer": "7/12",
+       "why": {
+        "en": "Common denominator 12: the sum is $\\frac{7}{12}$.",
+        "as": "উমৈহতীয়া হৰ 12: যোগফল $\\frac{7}{12}$।"
+       },
+       "traps": [
+        {
+         "ans": "2/7",
+         "tag": "m-add-tops",
+         "why": {
+          "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+          "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Add: $\\frac{2}{5} + \\frac{1}{3}$",
+        "as": "যোগ কৰা: $\\frac{2}{5} + \\frac{1}{3}$"
+       },
+       "answer": "11/15",
+       "why": {
+        "en": "Common denominator 15: the sum is $\\frac{11}{15}$.",
+        "as": "উমৈহতীয়া হৰ 15: যোগফল $\\frac{11}{15}$।"
+       },
+       "traps": [
+        {
+         "ans": "3/8",
+         "tag": "m-add-tops",
+         "why": {
+          "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+          "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Add: $\\frac{1}{6} + \\frac{3}{8}$",
+        "as": "যোগ কৰা: $\\frac{1}{6} + \\frac{3}{8}$"
+       },
+       "answer": "13/24",
+       "why": {
+        "en": "Common denominator 24: the sum is $\\frac{13}{24}$.",
+        "as": "উমৈহতীয়া হৰ 24: যোগফল $\\frac{13}{24}$।"
+       },
+       "traps": [
+        {
+         "ans": "4/14",
+         "tag": "m-add-tops",
+         "why": {
+          "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+          "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Add: $\\frac{3}{10} + \\frac{2}{5}$",
+        "as": "যোগ কৰা: $\\frac{3}{10} + \\frac{2}{5}$"
+       },
+       "answer": "7/10",
+       "why": {
+        "en": "Common denominator 10: the sum is $\\frac{7}{10}$.",
+        "as": "উমৈহতীয়া হৰ 10: যোগফল $\\frac{7}{10}$।"
+       },
+       "traps": [
+        {
+         "ans": "5/15",
+         "tag": "m-add-tops",
+         "why": {
+          "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+          "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m3.u2.q5",
+     "type": "stepwise",
+     "skill": "f-add",
+     "q": {
+      "en": "A tank is $\\frac{1}{4}$ full. Then $\\frac{1}{6}$ of the tank is added. How full is it?",
+      "as": "টেংকী এটা $\\frac{1}{4}$ অংশ ভৰ্তি। পিছত টেংকীৰ $\\frac{1}{6}$ অংশ যোগ হ'ল। এতিয়া কিমান ভৰ্তি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Common denominator?",
+        "as": "উমৈহতীয়া হৰ?"
+       },
+       "options": [
+        {
+         "en": "48",
+         "as": "48"
+        },
+        {
+         "en": "10",
+         "as": "10"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Use the LCM of the denominators.",
+        "as": "হৰবোৰৰ ল.সা.গু. লোৱা।"
+       },
+       "skill": "l-lcm",
+       "tag": "m-add-tops"
+      },
+      {
+       "ask": {
+        "en": "Add the tops",
+        "as": "লব যোগ কৰা"
+       },
+       "options": [
+        {
+         "en": "$\\frac{1}{24}$",
+         "as": "$\\frac{1}{24}$"
+        },
+        {
+         "en": "$\\frac{2}{10}$",
+         "as": "$\\frac{2}{10}$"
+        },
+        {
+         "en": "$\\frac{5}{12}$",
+         "as": "$\\frac{5}{12}$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Rewrite both over the common denominator, then add tops.",
+        "as": "দুয়োটা উমৈহতীয়া হৰত লিখি লব যোগ কৰা।"
+       },
+       "tag": "m-add-tops"
+      }
+     ],
+     "why": {
+      "en": "A weak LCM makes fractions hard, so this problem checks both.",
+      "as": "ল.সা.গু. দুৰ্বল হ'লে ভগ্নাংশ টান হয়, সেয়ে এই সমস্যাই দুয়োটা পৰীক্ষা কৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A tank is $\\frac{1}{4}$ full. Then $\\frac{1}{6}$ of the tank is added. How full is it?",
+        "as": "টেংকী এটা $\\frac{1}{4}$ অংশ ভৰ্তি। পিছত টেংকীৰ $\\frac{1}{6}$ অংশ যোগ হ'ল। এতিয়া কিমান ভৰ্তি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Common denominator?",
+          "as": "উমৈহতীয়া হৰ?"
+         },
+         "options": [
+          {
+           "en": "48",
+           "as": "48"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use the LCM of the denominators.",
+          "as": "হৰবোৰৰ ল.সা.গু. লোৱা।"
+         },
+         "skill": "l-lcm",
+         "tag": "m-add-tops"
+        },
+        {
+         "ask": {
+          "en": "Add the tops",
+          "as": "লব যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "$\\frac{1}{24}$",
+           "as": "$\\frac{1}{24}$"
+          },
+          {
+           "en": "$\\frac{2}{10}$",
+           "as": "$\\frac{2}{10}$"
+          },
+          {
+           "en": "$\\frac{5}{12}$",
+           "as": "$\\frac{5}{12}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Rewrite both over the common denominator, then add tops.",
+          "as": "দুয়োটা উমৈহতীয়া হৰত লিখি লব যোগ কৰা।"
+         },
+         "tag": "m-add-tops"
+        }
+       ],
+       "why": {
+        "en": "A weak LCM makes fractions hard, so this problem checks both.",
+        "as": "ল.সা.গু. দুৰ্বল হ'লে ভগ্নাংশ টান হয়, সেয়ে এই সমস্যাই দুয়োটা পৰীক্ষা কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A tank is $\\frac{1}{3}$ full. Then $\\frac{2}{9}$ of the tank is added. How full is it?",
+        "as": "টেংকী এটা $\\frac{1}{3}$ অংশ ভৰ্তি। পিছত টেংকীৰ $\\frac{2}{9}$ অংশ যোগ হ'ল। এতিয়া কিমান ভৰ্তি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Common denominator?",
+          "as": "উমৈহতীয়া হৰ?"
+         },
+         "options": [
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "54",
+           "as": "54"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Use the LCM of the denominators.",
+          "as": "হৰবোৰৰ ল.সা.গু. লোৱা।"
+         },
+         "skill": "l-lcm",
+         "tag": "m-add-tops"
+        },
+        {
+         "ask": {
+          "en": "Add the tops",
+          "as": "লব যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "$\\frac{3}{12}$",
+           "as": "$\\frac{3}{12}$"
+          },
+          {
+           "en": "$\\frac{5}{9}$",
+           "as": "$\\frac{5}{9}$"
+          },
+          {
+           "en": "$\\frac{2}{27}$",
+           "as": "$\\frac{2}{27}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Rewrite both over the common denominator, then add tops.",
+          "as": "দুয়োটা উমৈহতীয়া হৰত লিখি লব যোগ কৰা।"
+         },
+         "tag": "m-add-tops"
+        }
+       ],
+       "why": {
+        "en": "A weak LCM makes fractions hard, so this problem checks both.",
+        "as": "ল.সা.গু. দুৰ্বল হ'লে ভগ্নাংশ টান হয়, সেয়ে এই সমস্যাই দুয়োটা পৰীক্ষা কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A tank is $\\frac{1}{2}$ full. Then $\\frac{3}{10}$ of the tank is added. How full is it?",
+        "as": "টেংকী এটা $\\frac{1}{2}$ অংশ ভৰ্তি। পিছত টেংকীৰ $\\frac{3}{10}$ অংশ যোগ হ'ল। এতিয়া কিমান ভৰ্তি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Common denominator?",
+          "as": "উমৈহতীয়া হৰ?"
+         },
+         "options": [
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use the LCM of the denominators.",
+          "as": "হৰবোৰৰ ল.সা.গু. লোৱা।"
+         },
+         "skill": "l-lcm",
+         "tag": "m-add-tops"
+        },
+        {
+         "ask": {
+          "en": "Add the tops",
+          "as": "লব যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "$\\frac{4}{5}$",
+           "as": "$\\frac{4}{5}$"
+          },
+          {
+           "en": "$\\frac{3}{20}$",
+           "as": "$\\frac{3}{20}$"
+          },
+          {
+           "en": "$\\frac{4}{12}$",
+           "as": "$\\frac{4}{12}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Rewrite both over the common denominator, then add tops.",
+          "as": "দুয়োটা উমৈহতীয়া হৰত লিখি লব যোগ কৰা।"
+         },
+         "tag": "m-add-tops"
+        }
+       ],
+       "why": {
+        "en": "A weak LCM makes fractions hard, so this problem checks both.",
+        "as": "ল.সা.গু. দুৰ্বল হ'লে ভগ্নাংশ টান হয়, সেয়ে এই সমস্যাই দুয়োটা পৰীক্ষা কৰে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Fractions at work",
+    "as": "কামত ভগ্নাংশ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "To find $\\frac{3}{5}$ of 40: divide by 5, then multiply by 3.",
+     "as": "40ৰ $\\frac{3}{5}$ উলিয়াবলৈ 5ৰে হৰণ কৰি 3ৰে পূৰণ কৰা।"
+    },
+    {
+     "en": "To multiply fractions, multiply tops and bottoms.",
+     "as": "ভগ্নাংশ পূৰণত লব লবৰ সৈতে, হৰ হৰৰ সৈতে পূৰণ কৰা।"
+    },
+    {
+     "en": "Dividing by a fraction is multiplying by its flip.",
+     "as": "ভগ্নাংশেৰে হৰণ মানে ওলোটা ভগ্নাংশেৰে পূৰণ।"
+    },
+    {
+     "en": "A repeating digit is that digit over 9: $0.\\overline{4} = \\frac{4}{9}$.",
+     "as": "পুনৰাবৃত্ত অংক মানে অংকটো ভাগ 9: $0.\\overline{4} = \\frac{4}{9}$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m3.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Blocks do the division",
+      "as": "খণ্ডই হৰণ কৰি দিয়ে"
+     },
+     "text": [
+      {
+       "en": "Five equal blocks must make 40. Slide until the total fits.",
+       "as": "পাঁচটা সমান খণ্ডই 40 হ'ব লাগে। মুঠ নিমিলা লৈকে টানা।"
+      },
+      {
+       "en": "One block is 8, so three blocks, the $\\frac{3}{5}$, are worth 24.",
+       "as": "এটা খণ্ড 8, সেয়ে তিনিটা খণ্ড অৰ্থাৎ $\\frac{3}{5}$ অংশ 24।"
+      }
+     ],
+     "widget": {
+      "kind": "blocks",
+      "parts": [
+       5
+      ],
+      "take": 3,
+      "total": 40,
+      "max": 12
+     }
+    },
+    {
+     "id": "m3.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "The decimal that never lands",
+      "as": "কেতিয়াও শেষ নোহোৱা দশমিক"
+     },
+     "text": [
+      {
+       "en": "The green pin is $\\frac{1}{3}$. Decimals only have tenths, hundredths and so on. Can they reach it?",
+       "as": "সেউজীয়া পিনটো $\\frac{1}{3}$। দশমিকত কেৱল দশমাংশ, শতাংশ আদি থাকে। ই পাব পাৰিবনে?"
+      }
+     ],
+     "widget": {
+      "kind": "line",
+      "min": 0,
+      "max": 1,
+      "pin": {
+       "v": 0.3333333333333333,
+       "t": "1/3"
+      },
+      "readonly": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Zoom in once.",
+        "as": "এবাৰ জুম কৰা।"
+       },
+       "goal": {
+        "zoom": {
+         "gt": 8
+        }
+       },
+       "then": {
+        "en": "It sits between 0.3 and 0.4.",
+        "as": "ই 0.3 আৰু 0.4ৰ মাজত।"
+       }
+      },
+      {
+       "do": {
+        "en": "Zoom in again.",
+        "as": "আকৌ জুম কৰা।"
+       },
+       "goal": {
+        "zoom": {
+         "gt": 80
+        }
+       },
+       "then": {
+        "en": "Now between 0.33 and 0.34.",
+        "as": "এতিয়া 0.33 আৰু 0.34ৰ মাজত।"
+       }
+      },
+      {
+       "do": {
+        "en": "Once more.",
+        "as": "আৰু এবাৰ।"
+       },
+       "goal": {
+        "zoom": {
+         "gt": 800
+        }
+       },
+       "then": {
+        "en": "Between 0.333 and 0.334. Each zoom adds another 3 and it never lands, so $\\frac{1}{3} = 0.\\overline{3}$.",
+        "as": "0.333 আৰু 0.334ৰ মাজত। প্ৰতিটো জুমে আৰু এটা 3 যোগ কৰে, কিন্তু ই কেতিয়াও ঠিক বিন্দুত নপৰে, সেয়ে $\\frac{1}{3} = 0.\\overline{3}$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u3.q1",
+     "type": "explore",
+     "skill": "f-of",
+     "q": {
+      "en": "$\\frac{3}{4}$ of a sum is shaded and the whole is 28. Slide to find one block.",
+      "as": "মুঠ 28ৰ $\\frac{3}{4}$ অংশ ৰঙোৱা। এটা খণ্ডৰ মান টানি উলিওৱা।"
+     },
+     "widget": {
+      "kind": "blocks",
+      "parts": [
+       4
+      ],
+      "take": 3,
+      "total": 28,
+      "max": 15
+     },
+     "target": 7,
+     "answerText": {
+      "en": "One block = 7, so the shaded part = 21",
+      "as": "এটা খণ্ড = 7, ৰঙোৱা অংশ = 21"
+     },
+     "why": {
+      "en": "28 ÷ 4 = 7 for one block, and 3 blocks are 21.",
+      "as": "28 ÷ 4 = 7 এটা খণ্ড, 3টা খণ্ড 21।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "$\\frac{3}{4}$ of a sum is shaded and the whole is 28. Slide to find one block.",
+        "as": "মুঠ 28ৰ $\\frac{3}{4}$ অংশ ৰঙোৱা। এটা খণ্ডৰ মান টানি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         4
+        ],
+        "take": 3,
+        "total": 28,
+        "max": 15
+       },
+       "target": 7,
+       "answerText": {
+        "en": "One block = 7, so the shaded part = 21",
+        "as": "এটা খণ্ড = 7, ৰঙোৱা অংশ = 21"
+       },
+       "why": {
+        "en": "28 ÷ 4 = 7 for one block, and 3 blocks are 21.",
+        "as": "28 ÷ 4 = 7 এটা খণ্ড, 3টা খণ্ড 21।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\frac{2}{5}$ of a sum is shaded and the whole is 30. Slide to find one block.",
+        "as": "মুঠ 30ৰ $\\frac{2}{5}$ অংশ ৰঙোৱা। এটা খণ্ডৰ মান টানি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         5
+        ],
+        "take": 2,
+        "total": 30,
+        "max": 14
+       },
+       "target": 6,
+       "answerText": {
+        "en": "One block = 6, so the shaded part = 12",
+        "as": "এটা খণ্ড = 6, ৰঙোৱা অংশ = 12"
+       },
+       "why": {
+        "en": "30 ÷ 5 = 6 for one block, and 2 blocks are 12.",
+        "as": "30 ÷ 5 = 6 এটা খণ্ড, 2টা খণ্ড 12।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\frac{2}{3}$ of a sum is shaded and the whole is 27. Slide to find one block.",
+        "as": "মুঠ 27ৰ $\\frac{2}{3}$ অংশ ৰঙোৱা। এটা খণ্ডৰ মান টানি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         3
+        ],
+        "take": 2,
+        "total": 27,
+        "max": 17
+       },
+       "target": 9,
+       "answerText": {
+        "en": "One block = 9, so the shaded part = 18",
+        "as": "এটা খণ্ড = 9, ৰঙোৱা অংশ = 18"
+       },
+       "why": {
+        "en": "27 ÷ 3 = 9 for one block, and 2 blocks are 18.",
+        "as": "27 ÷ 3 = 9 এটা খণ্ড, 2টা খণ্ড 18।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\frac{5}{6}$ of a sum is shaded and the whole is 48. Slide to find one block.",
+        "as": "মুঠ 48ৰ $\\frac{5}{6}$ অংশ ৰঙোৱা। এটা খণ্ডৰ মান টানি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         6
+        ],
+        "take": 5,
+        "total": 48,
+        "max": 16
+       },
+       "target": 8,
+       "answerText": {
+        "en": "One block = 8, so the shaded part = 40",
+        "as": "এটা খণ্ড = 8, ৰঙোৱা অংশ = 40"
+       },
+       "why": {
+        "en": "48 ÷ 6 = 8 for one block, and 5 blocks are 40.",
+        "as": "48 ÷ 6 = 8 এটা খণ্ড, 5টা খণ্ড 40।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u3.q2",
+     "type": "solve",
+     "skill": "f-of",
+     "q": {
+      "en": "$\\frac{3}{5}$ of 45 mangoes is how many?",
+      "as": "45 আমৰ $\\frac{3}{5}$ অংশ কিমান?"
+     },
+     "answer": "27",
+     "why": {
+      "en": "Divide by 5 to get 9, then multiply by 3.",
+      "as": "5ৰে হৰণ কৰি 9, তাৰ পিছত 3ৰে পূৰণ।"
+     },
+     "traps": [
+      {
+       "ans": "15",
+       "tag": "m-frac-of",
+       "why": {
+        "en": "Divide by the bottom number and multiply by the top one, not the other way round.",
+        "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ; ওলোটাকৈ নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "$\\frac{3}{5}$ of 45 mangoes is how many?",
+        "as": "45 আমৰ $\\frac{3}{5}$ অংশ কিমান?"
+       },
+       "answer": "27",
+       "why": {
+        "en": "Divide by 5 to get 9, then multiply by 3.",
+        "as": "5ৰে হৰণ কৰি 9, তাৰ পিছত 3ৰে পূৰণ।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Divide by the bottom number and multiply by the top one, not the other way round.",
+          "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ; ওলোটাকৈ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "$\\frac{3}{4}$ of 48 students is how many?",
+        "as": "48 ছাত্ৰৰ $\\frac{3}{4}$ অংশ কিমান?"
+       },
+       "answer": "36",
+       "why": {
+        "en": "Divide by 4 to get 12, then multiply by 3.",
+        "as": "4ৰে হৰণ কৰি 12, তাৰ পিছত 3ৰে পূৰণ।"
+       },
+       "traps": [
+        {
+         "ans": "16",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Divide by the bottom number and multiply by the top one, not the other way round.",
+          "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ; ওলোটাকৈ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "$\\frac{2}{3}$ of 45 rupees is how many?",
+        "as": "45 টকাৰ $\\frac{2}{3}$ অংশ কিমান?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "Divide by 3 to get 15, then multiply by 2.",
+        "as": "3ৰে হৰণ কৰি 15, তাৰ পিছত 2ৰে পূৰণ।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Divide by the bottom number and multiply by the top one, not the other way round.",
+          "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ; ওলোটাকৈ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "$\\frac{5}{6}$ of 66 metres is how many?",
+        "as": "66 মিটাৰৰ $\\frac{5}{6}$ অংশ কিমান?"
+       },
+       "answer": "55",
+       "why": {
+        "en": "Divide by 6 to get 11, then multiply by 5.",
+        "as": "6ৰে হৰণ কৰি 11, তাৰ পিছত 5ৰে পূৰণ।"
+       },
+       "traps": [
+        {
+         "ans": "11",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Divide by the bottom number and multiply by the top one, not the other way round.",
+          "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ; ওলোটাকৈ নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m3.u3.q3",
+     "type": "match",
+     "skill": "f-dec",
+     "q": {
+      "en": "Match each fraction to its decimal",
+      "as": "প্ৰতিটো ভগ্নাংশক দশমিকৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$\\frac{3}{4}$",
+        "as": "$\\frac{3}{4}$"
+       },
+       {
+        "en": "0.75",
+        "as": "0.75"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{2}{5}$",
+        "as": "$\\frac{2}{5}$"
+       },
+       {
+        "en": "0.4",
+        "as": "0.4"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{3}{8}$",
+        "as": "$\\frac{3}{8}$"
+       },
+       {
+        "en": "0.375",
+        "as": "0.375"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{2}{3}$",
+        "as": "$\\frac{2}{3}$"
+       },
+       {
+        "en": "$0.\\overline{6}$",
+        "as": "$0.\\overline{6}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide the top by the bottom, or use the pairs you know.",
+      "as": "লবক হৰেৰে হৰণ কৰা, বা জনা যোৰবোৰ ব্যৱহাৰ কৰা।"
+     }
+    },
+    {
+     "id": "m3.u3.q4",
+     "type": "solve",
+     "skill": "f-dec",
+     "hints": [
+      {
+       "en": "One repeating digit: over 9. Two: over 99.",
+       "as": "এটা পুনৰাবৃত্ত অংক: 9ৰ ওপৰত। দুটা: 99ৰ ওপৰত।"
+      }
+     ],
+     "q": {
+      "en": "Write $0.\\overline{7}$ as a fraction in simplest form.",
+      "as": "$0.\\overline{7}$ক সৰলতম ভগ্নাংশ হিচাপে লিখা।"
+     },
+     "answer": "7/9",
+     "why": {
+      "en": "One repeating digit goes over 9. Then cancel any common factor.",
+      "as": "One repeating digit goes over 9. তাৰ পিছত উমৈহতীয়া গুণনীয়ক কাটা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Write $0.\\overline{7}$ as a fraction in simplest form.",
+        "as": "$0.\\overline{7}$ক সৰলতম ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "7/9",
+       "why": {
+        "en": "One repeating digit goes over 9. Then cancel any common factor.",
+        "as": "One repeating digit goes over 9. তাৰ পিছত উমৈহতীয়া গুণনীয়ক কাটা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write $0.\\overline{36}$ as a fraction in simplest form.",
+        "as": "$0.\\overline{36}$ক সৰলতম ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "4/11",
+       "why": {
+        "en": "Two repeating digits go over 99: 36/99. Then cancel any common factor.",
+        "as": "Two repeating digits go over 99: 36/99. তাৰ পিছত উমৈহতীয়া গুণনীয়ক কাটা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write $0.\\overline{12}$ as a fraction in simplest form.",
+        "as": "$0.\\overline{12}$ক সৰলতম ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "4/33",
+       "why": {
+        "en": "Two repeating digits go over 99: 12/99. Then cancel any common factor.",
+        "as": "Two repeating digits go over 99: 12/99. তাৰ পিছত উমৈহতীয়া গুণনীয়ক কাটা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write $0.\\overline{5}$ as a fraction in simplest form.",
+        "as": "$0.\\overline{5}$ক সৰলতম ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "5/9",
+       "why": {
+        "en": "One repeating digit goes over 9. Then cancel any common factor.",
+        "as": "One repeating digit goes over 9. তাৰ পিছত উমৈহতীয়া গুণনীয়ক কাটা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u3.q5",
+     "type": "tf",
+     "skill": "f-of",
+     "s": {
+      "en": "Dividing by $\\frac{1}{2}$ doubles a number.",
+      "as": "$\\frac{1}{2}$ৰে হৰণ কৰিলে সংখ্যা দুগুণ হয়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It asks how many halves fit in. There are 2 in every whole, so the answer doubles.",
+      "as": "ইয়াৰ অৰ্থ কেইটা আধা সোমাব। প্ৰতিটো গোটাত 2টা, সেয়ে উত্তৰ দুগুণ।"
+     }
+    },
+    {
+     "id": "m3.u3.q6",
+     "type": "stepwise",
+     "skill": "f-of",
+     "q": {
+      "en": "Mina spends $\\frac{1}{3}$ of ₹600 on food and $\\frac{1}{4}$ of what is left on books. How much remains?",
+      "as": "মিনাই ₹600ৰ $\\frac{1}{3}$ অংশ খাদ্যত আৰু বাকীৰ $\\frac{1}{4}$ অংশ কিতাপত খৰচ কৰে। কিমান বাকী থাকিল?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Left after food?",
+        "as": "খাদ্যৰ পিছত বাকী?"
+       },
+       "options": [
+        {
+         "en": "₹599",
+         "as": "₹599"
+        },
+        {
+         "en": "₹400",
+         "as": "₹400"
+        },
+        {
+         "en": "₹200",
+         "as": "₹200"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Take the food share away from the whole sum.",
+        "as": "গোটা ধনৰ পৰা খাদ্যৰ অংশ বাদ দিয়া।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Books cost?",
+        "as": "কিতাপৰ খৰচ?"
+       },
+       "options": [
+        {
+         "en": "₹101",
+         "as": "₹101"
+        },
+        {
+         "en": "₹150",
+         "as": "₹150"
+        },
+        {
+         "en": "₹100",
+         "as": "₹100"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The share is of what is left, not of the first sum.",
+        "as": "অংশটো বাকী ধনৰ, প্ৰথম ধনৰ নহয়।"
+       },
+       "tag": "m-pct-base"
+      },
+      {
+       "ask": {
+        "en": "So what remains?",
+        "as": "তেনেহ'লে বাকী?"
+       },
+       "options": [
+        {
+         "en": "₹450",
+         "as": "₹450"
+        },
+        {
+         "en": "₹200",
+         "as": "₹200"
+        },
+        {
+         "en": "₹300",
+         "as": "₹300"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Subtract the books from what was left.",
+        "as": "বাকী ধনৰ পৰা কিতাপৰ খৰচ বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "\"Of what is left\" always changes the base.",
+      "as": "\"বাকীৰ\" বুলি ক'লে ভিত্তি সলনি হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Mina spends $\\frac{1}{3}$ of ₹600 on food and $\\frac{1}{4}$ of what is left on books. How much remains?",
+        "as": "মিনাই ₹600ৰ $\\frac{1}{3}$ অংশ খাদ্যত আৰু বাকীৰ $\\frac{1}{4}$ অংশ কিতাপত খৰচ কৰে। কিমান বাকী থাকিল?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Left after food?",
+          "as": "খাদ্যৰ পিছত বাকী?"
+         },
+         "options": [
+          {
+           "en": "₹599",
+           "as": "₹599"
+          },
+          {
+           "en": "₹400",
+           "as": "₹400"
+          },
+          {
+           "en": "₹200",
+           "as": "₹200"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take the food share away from the whole sum.",
+          "as": "গোটা ধনৰ পৰা খাদ্যৰ অংশ বাদ দিয়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Books cost?",
+          "as": "কিতাপৰ খৰচ?"
+         },
+         "options": [
+          {
+           "en": "₹101",
+           "as": "₹101"
+          },
+          {
+           "en": "₹150",
+           "as": "₹150"
+          },
+          {
+           "en": "₹100",
+           "as": "₹100"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The share is of what is left, not of the first sum.",
+          "as": "অংশটো বাকী ধনৰ, প্ৰথম ধনৰ নহয়।"
+         },
+         "tag": "m-pct-base"
+        },
+        {
+         "ask": {
+          "en": "So what remains?",
+          "as": "তেনেহ'লে বাকী?"
+         },
+         "options": [
+          {
+           "en": "₹450",
+           "as": "₹450"
+          },
+          {
+           "en": "₹200",
+           "as": "₹200"
+          },
+          {
+           "en": "₹300",
+           "as": "₹300"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Subtract the books from what was left.",
+          "as": "বাকী ধনৰ পৰা কিতাপৰ খৰচ বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "\"Of what is left\" always changes the base.",
+        "as": "\"বাকীৰ\" বুলি ক'লে ভিত্তি সলনি হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Mina spends $\\frac{1}{4}$ of ₹800 on food and $\\frac{1}{3}$ of what is left on books. How much remains?",
+        "as": "মিনাই ₹800ৰ $\\frac{1}{4}$ অংশ খাদ্যত আৰু বাকীৰ $\\frac{1}{3}$ অংশ কিতাপত খৰচ কৰে। কিমান বাকী থাকিল?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Left after food?",
+          "as": "খাদ্যৰ পিছত বাকী?"
+         },
+         "options": [
+          {
+           "en": "₹600",
+           "as": "₹600"
+          },
+          {
+           "en": "₹200",
+           "as": "₹200"
+          },
+          {
+           "en": "₹799",
+           "as": "₹799"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take the food share away from the whole sum.",
+          "as": "গোটা ধনৰ পৰা খাদ্যৰ অংশ বাদ দিয়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Books cost?",
+          "as": "কিতাপৰ খৰচ?"
+         },
+         "options": [
+          {
+           "en": "₹201",
+           "as": "₹201"
+          },
+          {
+           "en": "₹266",
+           "as": "₹266"
+          },
+          {
+           "en": "₹200",
+           "as": "₹200"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The share is of what is left, not of the first sum.",
+          "as": "অংশটো বাকী ধনৰ, প্ৰথম ধনৰ নহয়।"
+         },
+         "tag": "m-pct-base"
+        },
+        {
+         "ask": {
+          "en": "So what remains?",
+          "as": "তেনেহ'লে বাকী?"
+         },
+         "options": [
+          {
+           "en": "₹200",
+           "as": "₹200"
+          },
+          {
+           "en": "₹400",
+           "as": "₹400"
+          },
+          {
+           "en": "₹534",
+           "as": "₹534"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Subtract the books from what was left.",
+          "as": "বাকী ধনৰ পৰা কিতাপৰ খৰচ বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "\"Of what is left\" always changes the base.",
+        "as": "\"বাকীৰ\" বুলি ক'লে ভিত্তি সলনি হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Mina spends $\\frac{2}{3}$ of ₹900 on food and $\\frac{1}{5}$ of what is left on books. How much remains?",
+        "as": "মিনাই ₹900ৰ $\\frac{2}{3}$ অংশ খাদ্যত আৰু বাকীৰ $\\frac{1}{5}$ অংশ কিতাপত খৰচ কৰে। কিমান বাকী থাকিল?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Left after food?",
+          "as": "খাদ্যৰ পিছত বাকী?"
+         },
+         "options": [
+          {
+           "en": "₹600",
+           "as": "₹600"
+          },
+          {
+           "en": "₹300",
+           "as": "₹300"
+          },
+          {
+           "en": "₹898",
+           "as": "₹898"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take the food share away from the whole sum.",
+          "as": "গোটা ধনৰ পৰা খাদ্যৰ অংশ বাদ দিয়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Books cost?",
+          "as": "কিতাপৰ খৰচ?"
+         },
+         "options": [
+          {
+           "en": "₹180",
+           "as": "₹180"
+          },
+          {
+           "en": "₹61",
+           "as": "₹61"
+          },
+          {
+           "en": "₹60",
+           "as": "₹60"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The share is of what is left, not of the first sum.",
+          "as": "অংশটো বাকী ধনৰ, প্ৰথম ধনৰ নহয়।"
+         },
+         "tag": "m-pct-base"
+        },
+        {
+         "ask": {
+          "en": "So what remains?",
+          "as": "তেনেহ'লে বাকী?"
+         },
+         "options": [
+          {
+           "en": "₹720",
+           "as": "₹720"
+          },
+          {
+           "en": "₹240",
+           "as": "₹240"
+          },
+          {
+           "en": "₹600",
+           "as": "₹600"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Subtract the books from what was left.",
+          "as": "বাকী ধনৰ পৰা কিতাপৰ খৰচ বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "\"Of what is left\" always changes the base.",
+        "as": "\"বাকীৰ\" বুলি ক'লে ভিত্তি সলনি হয়।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Fractions test",
+   "as": "ভগ্নাংশৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m3.t.q1",
+    "type": "mcq",
+    "skill": "f-add",
+    "q": {
+     "en": "$\\frac{2}{3} + \\frac{1}{4}$ equals",
+     "as": "$\\frac{2}{3} + \\frac{1}{4}$ৰ মান"
+    },
+    "why": {
+     "en": "Make the denominators equal first.",
+     "as": "প্ৰথমে হৰ সমান কৰা।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{1}{6}$",
+      "as": "$\\frac{1}{6}$"
+     },
+     {
+      "en": "$\\frac{11}{12}$",
+      "as": "$\\frac{11}{12}$"
+     },
+     {
+      "en": "$\\frac{3}{7}$",
+      "as": "$\\frac{3}{7}$"
+     },
+     {
+      "en": "1",
+      "as": "1"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-add-tops",
+      "why": {
+       "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+       "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "$\\frac{2}{3} + \\frac{1}{4}$ equals",
+       "as": "$\\frac{2}{3} + \\frac{1}{4}$ৰ মান"
+      },
+      "why": {
+       "en": "Make the denominators equal first.",
+       "as": "প্ৰথমে হৰ সমান কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{1}{6}$",
+        "as": "$\\frac{1}{6}$"
+       },
+       {
+        "en": "$\\frac{11}{12}$",
+        "as": "$\\frac{11}{12}$"
+       },
+       {
+        "en": "$\\frac{3}{7}$",
+        "as": "$\\frac{3}{7}$"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-add-tops",
+        "why": {
+         "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+         "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\frac{3}{5} + \\frac{1}{4}$ equals",
+       "as": "$\\frac{3}{5} + \\frac{1}{4}$ৰ মান"
+      },
+      "why": {
+       "en": "Make the denominators equal first.",
+       "as": "প্ৰথমে হৰ সমান কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{9}{10}$",
+        "as": "$\\frac{9}{10}$"
+       },
+       {
+        "en": "$\\frac{17}{20}$",
+        "as": "$\\frac{17}{20}$"
+       },
+       {
+        "en": "$\\frac{3}{20}$",
+        "as": "$\\frac{3}{20}$"
+       },
+       {
+        "en": "$\\frac{4}{9}$",
+        "as": "$\\frac{4}{9}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-add-tops",
+        "why": {
+         "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+         "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\frac{5}{6} + \\frac{1}{9}$ equals",
+       "as": "$\\frac{5}{6} + \\frac{1}{9}$ৰ মান"
+      },
+      "why": {
+       "en": "Make the denominators equal first.",
+       "as": "প্ৰথমে হৰ সমান কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{17}{18}$",
+        "as": "$\\frac{17}{18}$"
+       },
+       {
+        "en": "$\\frac{2}{5}$",
+        "as": "$\\frac{2}{5}$"
+       },
+       {
+        "en": "$\\frac{26}{27}$",
+        "as": "$\\frac{26}{27}$"
+       },
+       {
+        "en": "$\\frac{5}{54}$",
+        "as": "$\\frac{5}{54}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-add-tops",
+        "why": {
+         "en": "You added tops and bottoms. Fractions add only when the pieces are the same size, so make the denominators equal first.",
+         "as": "তুমি লব আৰু হৰ যোগ কৰিলা। টুকুৰা একে আকাৰৰ হ'লেহে যোগ হয়, সেয়ে প্ৰথমে হৰ সমান কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m3.t.q2",
+    "type": "mcq",
+    "skill": "f-compare",
+    "q": {
+     "en": "Which is the largest?",
+     "as": "কোনটো আটাইতকৈ ডাঙৰ?"
+    },
+    "why": {
+     "en": "Compare by cross-multiplying, or turn each into a decimal.",
+     "as": "তিৰ্যক পূৰণ কৰি বা দশমিক কৰি তুলনা কৰা।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{5}{7}$",
+      "as": "$\\frac{5}{7}$"
+     },
+     {
+      "en": "$\\frac{4}{9}$",
+      "as": "$\\frac{4}{9}$"
+     },
+     {
+      "en": "$\\frac{3}{4}$",
+      "as": "$\\frac{3}{4}$"
+     },
+     {
+      "en": "$\\frac{2}{3}$",
+      "as": "$\\frac{2}{3}$"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-cmp-denom",
+      "why": {
+       "en": "A bigger denominator does not make a bigger fraction. Cross-multiply to compare.",
+       "as": "ডাঙৰ হৰে ভগ্নাংশ ডাঙৰ নকৰে। তিৰ্যক পূৰণ কৰি তুলনা কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Which is the largest?",
+       "as": "কোনটো আটাইতকৈ ডাঙৰ?"
+      },
+      "why": {
+       "en": "Compare by cross-multiplying, or turn each into a decimal.",
+       "as": "তিৰ্যক পূৰণ কৰি বা দশমিক কৰি তুলনা কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{5}{7}$",
+        "as": "$\\frac{5}{7}$"
+       },
+       {
+        "en": "$\\frac{4}{9}$",
+        "as": "$\\frac{4}{9}$"
+       },
+       {
+        "en": "$\\frac{3}{4}$",
+        "as": "$\\frac{3}{4}$"
+       },
+       {
+        "en": "$\\frac{2}{3}$",
+        "as": "$\\frac{2}{3}$"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-cmp-denom",
+        "why": {
+         "en": "A bigger denominator does not make a bigger fraction. Cross-multiply to compare.",
+         "as": "ডাঙৰ হৰে ভগ্নাংশ ডাঙৰ নকৰে। তিৰ্যক পূৰণ কৰি তুলনা কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which is the largest?",
+       "as": "কোনটো আটাইতকৈ ডাঙৰ?"
+      },
+      "why": {
+       "en": "Compare by cross-multiplying, or turn each into a decimal.",
+       "as": "তিৰ্যক পূৰণ কৰি বা দশমিক কৰি তুলনা কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{3}{5}$",
+        "as": "$\\frac{3}{5}$"
+       },
+       {
+        "en": "$\\frac{2}{3}$",
+        "as": "$\\frac{2}{3}$"
+       },
+       {
+        "en": "$\\frac{7}{9}$",
+        "as": "$\\frac{7}{9}$"
+       },
+       {
+        "en": "$\\frac{5}{6}$",
+        "as": "$\\frac{5}{6}$"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-cmp-denom",
+        "why": {
+         "en": "A bigger denominator does not make a bigger fraction. Cross-multiply to compare.",
+         "as": "ডাঙৰ হৰে ভগ্নাংশ ডাঙৰ নকৰে। তিৰ্যক পূৰণ কৰি তুলনা কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which is the largest?",
+       "as": "কোনটো আটাইতকৈ ডাঙৰ?"
+      },
+      "why": {
+       "en": "Compare by cross-multiplying, or turn each into a decimal.",
+       "as": "তিৰ্যক পূৰণ কৰি বা দশমিক কৰি তুলনা কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{4}{5}$",
+        "as": "$\\frac{4}{5}$"
+       },
+       {
+        "en": "$\\frac{3}{4}$",
+        "as": "$\\frac{3}{4}$"
+       },
+       {
+        "en": "$\\frac{2}{7}$",
+        "as": "$\\frac{2}{7}$"
+       },
+       {
+        "en": "$\\frac{5}{8}$",
+        "as": "$\\frac{5}{8}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-cmp-denom",
+        "why": {
+         "en": "A bigger denominator does not make a bigger fraction. Cross-multiply to compare.",
+         "as": "ডাঙৰ হৰে ভগ্নাংশ ডাঙৰ নকৰে। তিৰ্যক পূৰণ কৰি তুলনা কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m3.t.q3",
+    "type": "mcq",
+    "skill": "f-of",
+    "q": {
+     "en": "$\\frac{3}{5}$ of a number is 24. The number is",
+     "as": "এটা সংখ্যাৰ $\\frac{3}{5}$ অংশ 24। সংখ্যাটো হ'ল"
+    },
+    "why": {
+     "en": "One part is 8, and the whole is 5 parts.",
+     "as": "এটা ভাগ 8, গোটা 5 ভাগ।"
+    },
+    "options": [
+     {
+      "en": "48",
+      "as": "48"
+     },
+     {
+      "en": "$\\frac{72}{5}$",
+      "as": "$\\frac{72}{5}$"
+     },
+     {
+      "en": "40",
+      "as": "40"
+     },
+     {
+      "en": "24",
+      "as": "24"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-frac-of",
+      "why": {
+       "en": "The fraction of the number is given, so divide by the fraction rather than multiplying.",
+       "as": "সংখ্যাৰ অংশ দিয়া আছে, সেয়ে ভগ্নাংশেৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "$\\frac{3}{5}$ of a number is 24. The number is",
+       "as": "এটা সংখ্যাৰ $\\frac{3}{5}$ অংশ 24। সংখ্যাটো হ'ল"
+      },
+      "why": {
+       "en": "One part is 8, and the whole is 5 parts.",
+       "as": "এটা ভাগ 8, গোটা 5 ভাগ।"
+      },
+      "options": [
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "$\\frac{72}{5}$",
+        "as": "$\\frac{72}{5}$"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-frac-of",
+        "why": {
+         "en": "The fraction of the number is given, so divide by the fraction rather than multiplying.",
+         "as": "সংখ্যাৰ অংশ দিয়া আছে, সেয়ে ভগ্নাংশেৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\frac{4}{7}$ of a number is 24. The number is",
+       "as": "এটা সংখ্যাৰ $\\frac{4}{7}$ অংশ 24। সংখ্যাটো হ'ল"
+      },
+      "why": {
+       "en": "One part is 6, and the whole is 7 parts.",
+       "as": "এটা ভাগ 6, গোটা 7 ভাগ।"
+      },
+      "options": [
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "$\\frac{96}{7}$",
+        "as": "$\\frac{96}{7}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-frac-of",
+        "why": {
+         "en": "The fraction of the number is given, so divide by the fraction rather than multiplying.",
+         "as": "সংখ্যাৰ অংশ দিয়া আছে, সেয়ে ভগ্নাংশেৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\frac{3}{4}$ of a number is 27. The number is",
+       "as": "এটা সংখ্যাৰ $\\frac{3}{4}$ অংশ 27। সংখ্যাটো হ'ল"
+      },
+      "why": {
+       "en": "One part is 9, and the whole is 4 parts.",
+       "as": "এটা ভাগ 9, গোটা 4 ভাগ।"
+      },
+      "options": [
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "27",
+        "as": "27"
+       },
+       {
+        "en": "$\\frac{81}{4}$",
+        "as": "$\\frac{81}{4}$"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-frac-of",
+        "why": {
+         "en": "The fraction of the number is given, so divide by the fraction rather than multiplying.",
+         "as": "সংখ্যাৰ অংশ দিয়া আছে, সেয়ে ভগ্নাংশেৰে হৰণ কৰা, পূৰণ নকৰিবা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m3.t.q4",
+    "type": "mcq",
+    "skill": "f-dec",
+    "q": {
+     "en": "$0.\\overline{8}$ is equal to",
+     "as": "$0.\\overline{8}$ৰ মান"
+    },
+    "why": {
+     "en": "Repeating digits go over 9s, one 9 for each digit.",
+     "as": "পুনৰাবৃত্ত অংক 9ৰ ওপৰত, প্ৰতিটো অংকৰ বাবে এটা 9।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{22}{25}$",
+      "as": "$\\frac{22}{25}$"
+     },
+     {
+      "en": "$\\frac{7}{9}$",
+      "as": "$\\frac{7}{9}$"
+     },
+     {
+      "en": "$\\frac{8}{9}$",
+      "as": "$\\frac{8}{9}$"
+     },
+     {
+      "en": "$\\frac{4}{5}$",
+      "as": "$\\frac{4}{5}$"
+     }
+    ],
+    "answer": 2,
+    "variants": [
+     {
+      "q": {
+       "en": "$0.\\overline{8}$ is equal to",
+       "as": "$0.\\overline{8}$ৰ মান"
+      },
+      "why": {
+       "en": "Repeating digits go over 9s, one 9 for each digit.",
+       "as": "পুনৰাবৃত্ত অংক 9ৰ ওপৰত, প্ৰতিটো অংকৰ বাবে এটা 9।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{22}{25}$",
+        "as": "$\\frac{22}{25}$"
+       },
+       {
+        "en": "$\\frac{7}{9}$",
+        "as": "$\\frac{7}{9}$"
+       },
+       {
+        "en": "$\\frac{8}{9}$",
+        "as": "$\\frac{8}{9}$"
+       },
+       {
+        "en": "$\\frac{4}{5}$",
+        "as": "$\\frac{4}{5}$"
+       }
+      ],
+      "answer": 2
+     },
+     {
+      "q": {
+       "en": "$0.\\overline{27}$ is equal to",
+       "as": "$0.\\overline{27}$ৰ মান"
+      },
+      "why": {
+       "en": "Repeating digits go over 9s, one 9 for each digit.",
+       "as": "পুনৰাবৃত্ত অংক 9ৰ ওপৰত, প্ৰতিটো অংকৰ বাবে এটা 9।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{1}{4}$",
+        "as": "$\\frac{1}{4}$"
+       },
+       {
+        "en": "$\\frac{3}{11}$",
+        "as": "$\\frac{3}{11}$"
+       },
+       {
+        "en": "$\\frac{27}{100}$",
+        "as": "$\\frac{27}{100}$"
+       },
+       {
+        "en": "$\\frac{2}{7}$",
+        "as": "$\\frac{2}{7}$"
+       }
+      ],
+      "answer": 1
+     },
+     {
+      "q": {
+       "en": "$0.\\overline{45}$ is equal to",
+       "as": "$0.\\overline{45}$ৰ মান"
+      },
+      "why": {
+       "en": "Repeating digits go over 9s, one 9 for each digit.",
+       "as": "পুনৰাবৃত্ত অংক 9ৰ ওপৰত, প্ৰতিটো অংকৰ বাবে এটা 9।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       },
+       {
+        "en": "$\\frac{9}{20}$",
+        "as": "$\\frac{9}{20}$"
+       },
+       {
+        "en": "$\\frac{5}{11}$",
+        "as": "$\\frac{5}{11}$"
+       },
+       {
+        "en": "$\\frac{4}{9}$",
+        "as": "$\\frac{4}{9}$"
+       }
+      ],
+      "answer": 2
+     }
+    ]
+   },
+   {
+    "id": "m3.t.q5",
+    "type": "solve",
+    "skill": "f-equiv",
+    "q": {
+     "en": "Simplify $\\frac{45}{75}$.",
+     "as": "$\\frac{45}{75}$ সৰল কৰা।"
+    },
+    "answer": "3/5",
+    "exact": true,
+    "why": {
+     "en": "Divide top and bottom by their HCF.",
+     "as": "লব আৰু হৰক গ.সা.গু.ৰে হৰণ কৰা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Simplify $\\frac{45}{75}$.",
+       "as": "$\\frac{45}{75}$ সৰল কৰা।"
+      },
+      "answer": "3/5",
+      "exact": true,
+      "why": {
+       "en": "Divide top and bottom by their HCF.",
+       "as": "লব আৰু হৰক গ.সা.গু.ৰে হৰণ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "Simplify $\\frac{56}{84}$.",
+       "as": "$\\frac{56}{84}$ সৰল কৰা।"
+      },
+      "answer": "2/3",
+      "exact": true,
+      "why": {
+       "en": "Divide top and bottom by their HCF.",
+       "as": "লব আৰু হৰক গ.সা.গু.ৰে হৰণ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "Simplify $\\frac{72}{96}$.",
+       "as": "$\\frac{72}{96}$ সৰল কৰা।"
+      },
+      "answer": "3/4",
+      "exact": true,
+      "why": {
+       "en": "Divide top and bottom by their HCF.",
+       "as": "লব আৰু হৰক গ.সা.গু.ৰে হৰণ কৰা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,3524 @@
+{
+ "id": "math-08-profit",
+ "course": "mathematics",
+ "no": 8,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Profit, loss and discount",
+  "as": "লাভ, লোকচান আৰু ৰেহাই"
+ },
+ "reign": {
+  "en": "Cost, marked price, discount",
+  "as": "ক্ৰয় মূল্য, চিহ্নিত মূল্য, ৰেহাই"
+ },
+ "portrait": "math/profit.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Everything sits on cost",
+    "as": "সকলো ক্ৰয় মূল্যৰ ওপৰত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Take the cost price as 100%.",
+     "as": "ক্ৰয় মূল্যক 100% ধৰা।"
+    },
+    {
+     "en": "20% profit means selling at 120% of cost; 15% loss means 85%.",
+     "as": "20% লাভ মানে ক্ৰয় মূল্যৰ 120%ত বিক্ৰী; 15% লোকচান মানে 85%।"
+    },
+    {
+     "en": "Selling price = cost × multiplier; cost = selling price ÷ multiplier.",
+     "as": "বিক্ৰী মূল্য = ক্ৰয় মূল্য × গুণক; ক্ৰয় মূল্য = বিক্ৰী মূল্য ÷ গুণক।"
+    },
+    {
+     "en": "Costs paid after buying, such as repairs, join the cost price.",
+     "as": "কিনাৰ পিছৰ খৰচ, যেনে মেৰামতি, ক্ৰয় মূল্যত যোগ হয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m8.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Cost is 100%",
+      "as": "ক্ৰয় মূল্য 100%"
+     },
+     "text": [
+      {
+       "en": "A shopkeeper buys a watch for ₹750. The top ruler measures the price as a percentage of that cost.",
+       "as": "দোকানীয়ে ₹750ত ঘড়ী কিনে। ওপৰৰ জোখে দামক সেই ক্ৰয় মূল্যৰ শতাংশ হিচাপে জোখে।"
+      }
+     ],
+     "widget": {
+      "kind": "dual",
+      "base": 750,
+      "max": 150,
+      "pct": 100
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag to 120%.",
+        "as": "120%লৈ টানা।"
+       },
+       "goal": {
+        "pct": 120
+       },
+       "then": {
+        "en": "Selling at 120% of cost is ₹900: a 20% profit.",
+        "as": "ক্ৰয় মূল্যৰ 120%ত বিক্ৰী মানে ₹900: 20% লাভ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now drag to 80%.",
+        "as": "এতিয়া 80%লৈ টানা।"
+       },
+       "goal": {
+        "pct": 80
+       },
+       "then": {
+        "en": "₹600 is 80% of cost: a 20% loss. The base never moved.",
+        "as": "₹600 ক্ৰয় মূল্যৰ 80%: 20% লোকচান। ভিত্তি সলনি হোৱা নাই।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Going backwards",
+      "as": "ওলোটাকৈ যোৱা"
+     },
+     "text": [
+      {
+       "en": "Given the selling price, divide by the multiplier. Do not take a percentage of the selling price.",
+       "as": "বিক্ৰী মূল্য দিয়া থাকিলে গুণকেৰে হৰণ কৰা। বিক্ৰী মূল্যৰ শতাংশ নল'বা।"
+      },
+      {
+       "en": "₹600 at 20% profit came from ₹500, not ₹480.",
+       "as": "20% লাভত ₹600 আহিছে ₹500ৰ পৰা, ₹480ৰ পৰা নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Profit 20%: × 1.2",
+        "as": "20% লাভ: × 1.2"
+       },
+       {
+        "en": "Selling ₹600",
+        "as": "বিক্ৰী ₹600"
+       },
+       {
+        "en": "Cost = 600 ÷ 1.2 = ₹500",
+        "as": "ক্ৰয় = 600 ÷ 1.2 = ₹500"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m8.u1.q1",
+     "type": "solve",
+     "skill": "pl-basic",
+     "hints": [
+      {
+       "en": "Divide the profit by the cost price.",
+       "as": "লাভক ক্ৰয় মূল্যৰে হৰণ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Bought for ₹800 and sold for ₹1000. What is the profit percentage?",
+      "as": "₹800ত কিনি ₹1000ত বিক্ৰী কৰা হ'ল। লাভ কিমান শতাংশ?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "Profit ₹200 on cost ₹800.",
+      "as": "₹800 ক্ৰয় মূল্যত ₹200 লাভ।"
+     },
+     "traps": [
+      {
+       "ans": "20",
+       "tag": "m-cp-base",
+       "why": {
+        "en": "Profit and loss are always measured on the cost price, not the selling price.",
+        "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Bought for ₹800 and sold for ₹1000. What is the profit percentage?",
+        "as": "₹800ত কিনি ₹1000ত বিক্ৰী কৰা হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Profit ₹200 on cost ₹800.",
+        "as": "₹800 ক্ৰয় মূল্যত ₹200 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Bought for ₹1250 and sold for ₹1500. What is the profit percentage?",
+        "as": "₹1250ত কিনি ₹1500ত বিক্ৰী কৰা হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Profit ₹250 on cost ₹1250.",
+        "as": "₹1250 ক্ৰয় মূল্যত ₹250 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "50/3",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Bought for ₹500 and sold for ₹700. What is the profit percentage?",
+        "as": "₹500ত কিনি ₹700ত বিক্ৰী কৰা হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Profit ₹200 on cost ₹500.",
+        "as": "₹500 ক্ৰয় মূল্যত ₹200 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "200/7",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Bought for ₹1600 and sold for ₹1800. What is the profit percentage?",
+        "as": "₹1600ত কিনি ₹1800ত বিক্ৰী কৰা হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "answer": "25/2",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Profit ₹200 on cost ₹1600.",
+        "as": "₹1600 ক্ৰয় মূল্যত ₹200 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "100/9",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u1.q2",
+     "type": "explore",
+     "skill": "pl-basic",
+     "q": {
+      "en": "An item costing ₹240 is sold at 25% profit. Drag to the selling price.",
+      "as": "₹240 ক্ৰয় মূল্যৰ বস্তু 25% লাভত বিক্ৰী হ'ল। বিক্ৰী মূল্যলৈ টানা।"
+     },
+     "widget": {
+      "kind": "dual",
+      "base": 240,
+      "max": 150,
+      "pct": 100
+     },
+     "target": 125,
+     "answerText": {
+      "en": "125% of cost: ₹300",
+      "as": "ক্ৰয় মূল্যৰ 125%: ₹300"
+     },
+     "why": {
+      "en": "Cost is 100%, so 25% profit lands at 125%.",
+      "as": "ক্ৰয় মূল্য 100%, সেয়ে 25% লাভ 125%ত পৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "An item costing ₹240 is sold at 25% profit. Drag to the selling price.",
+        "as": "₹240 ক্ৰয় মূল্যৰ বস্তু 25% লাভত বিক্ৰী হ'ল। বিক্ৰী মূল্যলৈ টানা।"
+       },
+       "widget": {
+        "kind": "dual",
+        "base": 240,
+        "max": 150,
+        "pct": 100
+       },
+       "target": 125,
+       "answerText": {
+        "en": "125% of cost: ₹300",
+        "as": "ক্ৰয় মূল্যৰ 125%: ₹300"
+       },
+       "why": {
+        "en": "Cost is 100%, so 25% profit lands at 125%.",
+        "as": "ক্ৰয় মূল্য 100%, সেয়ে 25% লাভ 125%ত পৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "An item costing ₹600 is sold at 15% profit. Drag to the selling price.",
+        "as": "₹600 ক্ৰয় মূল্যৰ বস্তু 15% লাভত বিক্ৰী হ'ল। বিক্ৰী মূল্যলৈ টানা।"
+       },
+       "widget": {
+        "kind": "dual",
+        "base": 600,
+        "max": 150,
+        "pct": 100
+       },
+       "target": 115,
+       "answerText": {
+        "en": "115% of cost: ₹690",
+        "as": "ক্ৰয় মূল্যৰ 115%: ₹690"
+       },
+       "why": {
+        "en": "Cost is 100%, so 15% profit lands at 115%.",
+        "as": "ক্ৰয় মূল্য 100%, সেয়ে 15% লাভ 115%ত পৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "An item costing ₹480 is sold at 30% profit. Drag to the selling price.",
+        "as": "₹480 ক্ৰয় মূল্যৰ বস্তু 30% লাভত বিক্ৰী হ'ল। বিক্ৰী মূল্যলৈ টানা।"
+       },
+       "widget": {
+        "kind": "dual",
+        "base": 480,
+        "max": 150,
+        "pct": 100
+       },
+       "target": 130,
+       "answerText": {
+        "en": "130% of cost: ₹624",
+        "as": "ক্ৰয় মূল্যৰ 130%: ₹624"
+       },
+       "why": {
+        "en": "Cost is 100%, so 30% profit lands at 130%.",
+        "as": "ক্ৰয় মূল্য 100%, সেয়ে 30% লাভ 130%ত পৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u1.q3",
+     "type": "solve",
+     "skill": "pl-basic",
+     "hints": [
+      {
+       "en": "Selling price is cost × multiplier.",
+       "as": "বিক্ৰী মূল্য = ক্ৰয় মূল্য × গুণক।"
+      }
+     ],
+     "q": {
+      "en": "An item sold for ₹600 made 20% profit. What did it cost?",
+      "as": "₹600ত বিক্ৰী কৰি 20% লাভ হ'ল। ক্ৰয় মূল্য কিমান?"
+     },
+     "answer": "500",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Divide by 1.2.",
+      "as": "1.2ৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "480",
+       "tag": "m-cp-base",
+       "why": {
+        "en": "Profit and loss are always measured on the cost price, not the selling price.",
+        "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "An item sold for ₹600 made 20% profit. What did it cost?",
+        "as": "₹600ত বিক্ৰী কৰি 20% লাভ হ'ল। ক্ৰয় মূল্য কিমান?"
+       },
+       "answer": "500",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 1.2.",
+        "as": "1.2ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "480",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An item sold for ₹1000 made 25% profit. What did it cost?",
+        "as": "₹1000ত বিক্ৰী কৰি 25% লাভ হ'ল। ক্ৰয় মূল্য কিমান?"
+       },
+       "answer": "800",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 1.25.",
+        "as": "1.25ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "750",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An item sold for ₹1320 made 10% profit. What did it cost?",
+        "as": "₹1320ত বিক্ৰী কৰি 10% লাভ হ'ল। ক্ৰয় মূল্য কিমান?"
+       },
+       "answer": "1200",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 1.1.",
+        "as": "1.1ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "1188",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An item sold for ₹460 made 15% profit. What did it cost?",
+        "as": "₹460ত বিক্ৰী কৰি 15% লাভ হ'ল। ক্ৰয় মূল্য কিমান?"
+       },
+       "answer": "400",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 1.15.",
+        "as": "1.15ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "391",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "Profit and loss are always measured on the cost price, not the selling price.",
+          "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u1.q4",
+     "type": "tf",
+     "skill": "pl-basic",
+     "s": {
+      "en": "Cost ₹100, selling ₹125. The profit is 20%.",
+      "as": "ক্ৰয় ₹100, বিক্ৰী ₹125। লাভ 20%।"
+     },
+     "answer": false,
+     "why": {
+      "en": "₹25 on a cost of ₹100 is 25%. 20% is what ₹25 is of ₹125.",
+      "as": "₹100ত ₹25 মানে 25%। 20% হ'ল ₹125ৰ ওপৰত ₹25।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-cp-base",
+       "why": {
+        "en": "Profit and loss are always measured on the cost price, not the selling price.",
+        "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u1.q5",
+     "type": "match",
+     "skill": "pl-basic",
+     "q": {
+      "en": "Match cost : selling to the result",
+      "as": "ক্ৰয় : বিক্ৰীক ফলাফলৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "4 : 5",
+        "as": "4 : 5"
+       },
+       {
+        "en": "25% profit",
+        "as": "25% লাভ"
+       }
+      ],
+      [
+       {
+        "en": "5 : 4",
+        "as": "5 : 4"
+       },
+       {
+        "en": "20% loss",
+        "as": "20% লোকচান"
+       }
+      ],
+      [
+       {
+        "en": "10 : 11",
+        "as": "10 : 11"
+       },
+       {
+        "en": "10% profit",
+        "as": "10% লাভ"
+       }
+      ],
+      [
+       {
+        "en": "20 : 17",
+        "as": "20 : 17"
+       },
+       {
+        "en": "15% loss",
+        "as": "15% লোকচান"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The first number is the base, because it is the cost.",
+      "as": "প্ৰথম সংখ্যাটোৱেই ভিত্তি, কাৰণ ই ক্ৰয় মূল্য।"
+     }
+    },
+    {
+     "id": "m8.u1.q6",
+     "type": "stepwise",
+     "skill": "pl-basic",
+     "q": {
+      "en": "A fridge is bought for ₹11200, ₹800 is spent on repairs, and it sells for ₹15000. Find the profit percentage.",
+      "as": "₹11200ত ফ্ৰীজ কিনি মেৰামতিত ₹800 খৰচ কৰা হ'ল, ₹15000ত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "True cost?",
+        "as": "প্ৰকৃত ক্ৰয় মূল্য?"
+       },
+       "options": [
+        {
+         "en": "₹15000",
+         "as": "₹15000"
+        },
+        {
+         "en": "₹11200",
+         "as": "₹11200"
+        },
+        {
+         "en": "₹12000",
+         "as": "₹12000"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Repairs join the cost.",
+        "as": "মেৰামতি ক্ৰয় মূল্যত যোগ হয়।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Profit in rupees?",
+        "as": "টকাত লাভ?"
+       },
+       "options": [
+        {
+         "en": "₹3800",
+         "as": "₹3800"
+        },
+        {
+         "en": "₹14200",
+         "as": "₹14200"
+        },
+        {
+         "en": "₹3000",
+         "as": "₹3000"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Selling price less true cost.",
+        "as": "বিক্ৰী মূল্য বিয়োগ প্ৰকৃত ক্ৰয় মূল্য।"
+       }
+      },
+      {
+       "ask": {
+        "en": "As a percentage?",
+        "as": "শতাংশত?"
+       },
+       "options": [
+        {
+         "en": "20%",
+         "as": "20%"
+        },
+        {
+         "en": "29%",
+         "as": "29%"
+        },
+        {
+         "en": "25%",
+         "as": "25%"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Divide by the true cost.",
+        "as": "প্ৰকৃত ক্ৰয় মূল্যৰে হৰণ কৰা।"
+       },
+       "tag": "m-cp-base"
+      }
+     ],
+     "why": {
+      "en": "Find the true cost first, then everything is on that base.",
+      "as": "প্ৰথমে প্ৰকৃত ক্ৰয় মূল্য উলিওৱা, তাৰ পিছত সকলো সেই ভিত্তিত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A fridge is bought for ₹11200, ₹800 is spent on repairs, and it sells for ₹15000. Find the profit percentage.",
+        "as": "₹11200ত ফ্ৰীজ কিনি মেৰামতিত ₹800 খৰচ কৰা হ'ল, ₹15000ত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "True cost?",
+          "as": "প্ৰকৃত ক্ৰয় মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹15000",
+           "as": "₹15000"
+          },
+          {
+           "en": "₹11200",
+           "as": "₹11200"
+          },
+          {
+           "en": "₹12000",
+           "as": "₹12000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Repairs join the cost.",
+          "as": "মেৰামতি ক্ৰয় মূল্যত যোগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Profit in rupees?",
+          "as": "টকাত লাভ?"
+         },
+         "options": [
+          {
+           "en": "₹3800",
+           "as": "₹3800"
+          },
+          {
+           "en": "₹14200",
+           "as": "₹14200"
+          },
+          {
+           "en": "₹3000",
+           "as": "₹3000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Selling price less true cost.",
+          "as": "বিক্ৰী মূল্য বিয়োগ প্ৰকৃত ক্ৰয় মূল্য।"
+         }
+        },
+        {
+         "ask": {
+          "en": "As a percentage?",
+          "as": "শতাংশত?"
+         },
+         "options": [
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "29%",
+           "as": "29%"
+          },
+          {
+           "en": "25%",
+           "as": "25%"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide by the true cost.",
+          "as": "প্ৰকৃত ক্ৰয় মূল্যৰে হৰণ কৰা।"
+         },
+         "tag": "m-cp-base"
+        }
+       ],
+       "why": {
+        "en": "Find the true cost first, then everything is on that base.",
+        "as": "প্ৰথমে প্ৰকৃত ক্ৰয় মূল্য উলিওৱা, তাৰ পিছত সকলো সেই ভিত্তিত।"
+       }
+      },
+      {
+       "q": {
+        "en": "A fridge is bought for ₹4500, ₹500 is spent on repairs, and it sells for ₹6000. Find the profit percentage.",
+        "as": "₹4500ত ফ্ৰীজ কিনি মেৰামতিত ₹500 খৰচ কৰা হ'ল, ₹6000ত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "True cost?",
+          "as": "প্ৰকৃত ক্ৰয় মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹6000",
+           "as": "₹6000"
+          },
+          {
+           "en": "₹5000",
+           "as": "₹5000"
+          },
+          {
+           "en": "₹4500",
+           "as": "₹4500"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Repairs join the cost.",
+          "as": "মেৰামতি ক্ৰয় মূল্যত যোগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Profit in rupees?",
+          "as": "টকাত লাভ?"
+         },
+         "options": [
+          {
+           "en": "₹1000",
+           "as": "₹1000"
+          },
+          {
+           "en": "₹5500",
+           "as": "₹5500"
+          },
+          {
+           "en": "₹1500",
+           "as": "₹1500"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Selling price less true cost.",
+          "as": "বিক্ৰী মূল্য বিয়োগ প্ৰকৃত ক্ৰয় মূল্য।"
+         }
+        },
+        {
+         "ask": {
+          "en": "As a percentage?",
+          "as": "শতাংশত?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{50}{3}$%",
+           "as": "$\\frac{50}{3}$%"
+          },
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "25%",
+           "as": "25%"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Divide by the true cost.",
+          "as": "প্ৰকৃত ক্ৰয় মূল্যৰে হৰণ কৰা।"
+         },
+         "tag": "m-cp-base"
+        }
+       ],
+       "why": {
+        "en": "Find the true cost first, then everything is on that base.",
+        "as": "প্ৰথমে প্ৰকৃত ক্ৰয় মূল্য উলিওৱা, তাৰ পিছত সকলো সেই ভিত্তিত।"
+       }
+      },
+      {
+       "q": {
+        "en": "A fridge is bought for ₹9000, ₹1000 is spent on repairs, and it sells for ₹11000. Find the profit percentage.",
+        "as": "₹9000ত ফ্ৰীজ কিনি মেৰামতিত ₹1000 খৰচ কৰা হ'ল, ₹11000ত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "True cost?",
+          "as": "প্ৰকৃত ক্ৰয় মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹9000",
+           "as": "₹9000"
+          },
+          {
+           "en": "₹11000",
+           "as": "₹11000"
+          },
+          {
+           "en": "₹10000",
+           "as": "₹10000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Repairs join the cost.",
+          "as": "মেৰামতি ক্ৰয় মূল্যত যোগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Profit in rupees?",
+          "as": "টকাত লাভ?"
+         },
+         "options": [
+          {
+           "en": "₹1000",
+           "as": "₹1000"
+          },
+          {
+           "en": "₹10000",
+           "as": "₹10000"
+          },
+          {
+           "en": "₹2000",
+           "as": "₹2000"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Selling price less true cost.",
+          "as": "বিক্ৰী মূল্য বিয়োগ প্ৰকৃত ক্ৰয় মূল্য।"
+         }
+        },
+        {
+         "ask": {
+          "en": "As a percentage?",
+          "as": "শতাংশত?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{100}{11}$%",
+           "as": "$\\frac{100}{11}$%"
+          },
+          {
+           "en": "14%",
+           "as": "14%"
+          },
+          {
+           "en": "10%",
+           "as": "10%"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide by the true cost.",
+          "as": "প্ৰকৃত ক্ৰয় মূল্যৰে হৰণ কৰা।"
+         },
+         "tag": "m-cp-base"
+        }
+       ],
+       "why": {
+        "en": "Find the true cost first, then everything is on that base.",
+        "as": "প্ৰথমে প্ৰকৃত ক্ৰয় মূল্য উলিওৱা, তাৰ পিছত সকলো সেই ভিত্তিত।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Marked price and discount",
+    "as": "চিহ্নিত মূল্য আৰু ৰেহাই"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Two bases: profit is on cost, discount is on marked price.",
+     "as": "দুটা ভিত্তি: লাভ ক্ৰয় মূল্যৰ ওপৰত, ৰেহাই চিহ্নিত মূল্যৰ ওপৰত।"
+    },
+    {
+     "en": "Selling price = marked price × (1 − discount).",
+     "as": "বিক্ৰী মূল্য = চিহ্নিত মূল্য × (1 − ৰেহাই)।"
+    },
+    {
+     "en": "A mark-up and an equal discount do not cancel.",
+     "as": "সমান বৃদ্ধি আৰু ৰেহাই পৰস্পৰে নাকাটে।"
+    },
+    {
+     "en": "Two discounts in a row equal one of $a + b - \\frac{ab}{100}$.",
+     "as": "পৰ পৰ দুটা ৰেহাই একক $a + b - \\frac{ab}{100}$ৰ সমান।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m8.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Two bases, one price",
+      "as": "দুটা ভিত্তি, এটা দাম"
+     },
+     "text": [
+      {
+       "en": "Cost is 100. The shopkeeper marks the item up, then gives a discount on that marked price.",
+       "as": "ক্ৰয় মূল্য 100। দোকানীয়ে দাম বঢ়াই চিহ্নিত কৰে, তাৰ পিছত সেই চিহ্নিত মূল্যত ৰেহাই দিয়ে।"
+      }
+     ],
+     "widget": {
+      "kind": "ladder"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Mark it up by 25%.",
+        "as": "25% বঢ়াই চিহ্নিত কৰা।"
+       },
+       "goal": {
+        "m": 25
+       },
+       "then": {
+        "en": "Marked price is 125. With no discount, this is a 25% profit.",
+        "as": "চিহ্নিত মূল্য 125। ৰেহাই নহ'লে 25% লাভ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now give a 20% discount.",
+        "as": "এতিয়া 20% ৰেহাই দিয়া।"
+       },
+       "goal": {
+        "d": 20
+       },
+       "then": {
+        "en": "Selling price lands on 100: no profit at all. 20% of 125 is 25, so it wipes out the whole mark-up.",
+        "as": "বিক্ৰী মূল্য 100ত পৰে: কোনো লাভ নাই। 125ৰ 20% হ'ল 25, সেয়ে গোটা বৃদ্ধি মচি যায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Discounts stack on what is left",
+      "as": "ৰেহাই বাকীৰ ওপৰত পৰে"
+     },
+     "text": [
+      {
+       "en": "A second discount is taken from the already reduced price, so it removes less.",
+       "as": "দ্বিতীয় ৰেহাই কমা দামৰ পৰা লোৱা হয়, সেয়ে কম কমে।"
+      },
+      {
+       "en": "10% then 20% is 28%, not 30%.",
+       "as": "10% তাৰ পিছত 20% মানে 28%, 30% নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "100",
+        "as": "100"
+       },
+       {
+        "en": "−10%: 90",
+        "as": "−10%: 90"
+       },
+       {
+        "en": "−20%: 72",
+        "as": "−20%: 72"
+       },
+       {
+        "en": "Total 28%",
+        "as": "মুঠ 28%"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m8.u2.q1",
+     "type": "solve",
+     "skill": "pl-discount",
+     "hints": [
+      {
+       "en": "Divide the discount by the marked price.",
+       "as": "ৰেহাইক চিহ্নিত মূল্যৰে হৰণ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Marked at ₹1200 and sold for ₹960. What is the discount percentage?",
+      "as": "চিহ্নিত মূল্য ₹1200, বিক্ৰী ₹960। ৰেহাই কিমান শতাংশ?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "₹240 off a marked price of ₹1200.",
+      "as": "₹1200 চিহ্নিত মূল্যৰ পৰা ₹240 কম।"
+     },
+     "traps": [
+      {
+       "ans": "25",
+       "tag": "m-disc-base",
+       "why": {
+        "en": "A discount is measured on the marked price. Cost plays no part in it.",
+        "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Marked at ₹1200 and sold for ₹960. What is the discount percentage?",
+        "as": "চিহ্নিত মূল্য ₹1200, বিক্ৰী ₹960। ৰেহাই কিমান শতাংশ?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "₹240 off a marked price of ₹1200.",
+        "as": "₹1200 চিহ্নিত মূল্যৰ পৰা ₹240 কম।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Marked at ₹800 and sold for ₹680. What is the discount percentage?",
+        "as": "চিহ্নিত মূল্য ₹800, বিক্ৰী ₹680। ৰেহাই কিমান শতাংশ?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "₹120 off a marked price of ₹800.",
+        "as": "₹800 চিহ্নিত মূল্যৰ পৰা ₹120 কম।"
+       },
+       "traps": [
+        {
+         "ans": "300/17",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Marked at ₹500 and sold for ₹450. What is the discount percentage?",
+        "as": "চিহ্নিত মূল্য ₹500, বিক্ৰী ₹450। ৰেহাই কিমান শতাংশ?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "₹50 off a marked price of ₹500.",
+        "as": "₹500 চিহ্নিত মূল্যৰ পৰা ₹50 কম।"
+       },
+       "traps": [
+        {
+         "ans": "100/9",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Marked at ₹2000 and sold for ₹1500. What is the discount percentage?",
+        "as": "চিহ্নিত মূল্য ₹2000, বিক্ৰী ₹1500। ৰেহাই কিমান শতাংশ?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "₹500 off a marked price of ₹2000.",
+        "as": "₹2000 চিহ্নিত মূল্যৰ পৰা ₹500 কম।"
+       },
+       "traps": [
+        {
+         "ans": "100/3",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u2.q2",
+     "type": "solve",
+     "skill": "pl-discount",
+     "q": {
+      "en": "After a 20% discount an item sells for ₹4000. What was the marked price?",
+      "as": "20% ৰেহাইৰ পিছত ₹4000ত বিক্ৰী হ'ল। চিহ্নিত মূল্য কিমান আছিল?"
+     },
+     "answer": "5000",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Divide by 0.8.",
+      "as": "0.8ৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "4800",
+       "tag": "m-disc-base",
+       "why": {
+        "en": "A discount is measured on the marked price. Cost plays no part in it.",
+        "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "After a 20% discount an item sells for ₹4000. What was the marked price?",
+        "as": "20% ৰেহাইৰ পিছত ₹4000ত বিক্ৰী হ'ল। চিহ্নিত মূল্য কিমান আছিল?"
+       },
+       "answer": "5000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 0.8.",
+        "as": "0.8ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "4800",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "After a 25% discount an item sells for ₹6000. What was the marked price?",
+        "as": "25% ৰেহাইৰ পিছত ₹6000ত বিক্ৰী হ'ল। চিহ্নিত মূল্য কিমান আছিল?"
+       },
+       "answer": "8000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 0.75.",
+        "as": "0.75ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "7500",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "After a 10% discount an item sells for ₹1350. What was the marked price?",
+        "as": "10% ৰেহাইৰ পিছত ₹1350ত বিক্ৰী হ'ল। চিহ্নিত মূল্য কিমান আছিল?"
+       },
+       "answer": "1500",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 0.9.",
+        "as": "0.9ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "1485",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "After a 15% discount an item sells for ₹5440. What was the marked price?",
+        "as": "15% ৰেহাইৰ পিছত ₹5440ত বিক্ৰী হ'ল। চিহ্নিত মূল্য কিমান আছিল?"
+       },
+       "answer": "6400",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by 0.85.",
+        "as": "0.85ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "6256",
+         "tag": "m-disc-base",
+         "why": {
+          "en": "A discount is measured on the marked price. Cost plays no part in it.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u2.q3",
+     "type": "solve",
+     "skill": "pl-discount",
+     "q": {
+      "en": "Successive discounts of 10% and 15% equal what single discount?",
+      "as": "10% আৰু 15% ক্ৰমিক ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+     },
+     "answer": "47/2",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "$10 + 15 - \\frac{10 \\times 15}{100}$.",
+      "as": "$10 + 15 - \\frac{10 \\times 15}{100}$।"
+     },
+     "traps": [
+      {
+       "ans": "25",
+       "tag": "m-discount-add",
+       "why": {
+        "en": "The second discount acts on the reduced price, so use $a + b - \\frac{ab}{100}$.",
+        "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত, সেয়ে $a + b - \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Successive discounts of 10% and 15% equal what single discount?",
+        "as": "10% আৰু 15% ক্ৰমিক ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+       },
+       "answer": "47/2",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$10 + 15 - \\frac{10 \\times 15}{100}$.",
+        "as": "$10 + 15 - \\frac{10 \\times 15}{100}$।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-discount-add",
+         "why": {
+          "en": "The second discount acts on the reduced price, so use $a + b - \\frac{ab}{100}$.",
+          "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত, সেয়ে $a + b - \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Successive discounts of 15% and 20% equal what single discount?",
+        "as": "15% আৰু 20% ক্ৰমিক ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+       },
+       "answer": "32",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$15 + 20 - \\frac{15 \\times 20}{100}$.",
+        "as": "$15 + 20 - \\frac{15 \\times 20}{100}$।"
+       },
+       "traps": [
+        {
+         "ans": "35",
+         "tag": "m-discount-add",
+         "why": {
+          "en": "The second discount acts on the reduced price, so use $a + b - \\frac{ab}{100}$.",
+          "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত, সেয়ে $a + b - \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Successive discounts of 10% and 30% equal what single discount?",
+        "as": "10% আৰু 30% ক্ৰমিক ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+       },
+       "answer": "37",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$10 + 30 - \\frac{10 \\times 30}{100}$.",
+        "as": "$10 + 30 - \\frac{10 \\times 30}{100}$।"
+       },
+       "traps": [
+        {
+         "ans": "40",
+         "tag": "m-discount-add",
+         "why": {
+          "en": "The second discount acts on the reduced price, so use $a + b - \\frac{ab}{100}$.",
+          "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত, সেয়ে $a + b - \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Successive discounts of 20% and 25% equal what single discount?",
+        "as": "20% আৰু 25% ক্ৰমিক ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$20 + 25 - \\frac{20 \\times 25}{100}$.",
+        "as": "$20 + 25 - \\frac{20 \\times 25}{100}$।"
+       },
+       "traps": [
+        {
+         "ans": "45",
+         "tag": "m-discount-add",
+         "why": {
+          "en": "The second discount acts on the reduced price, so use $a + b - \\frac{ab}{100}$.",
+          "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত, সেয়ে $a + b - \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u2.q4",
+     "type": "stepwise",
+     "skill": "pl-discount",
+     "q": {
+      "en": "An item costing ₹1000 is marked 20% above cost and sold at 10% discount. Find the profit percentage.",
+      "as": "₹1000 ক্ৰয় মূল্যৰ বস্তু 20% বঢ়াই চিহ্নিত কৰি 10% ৰেহাইত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Marked price?",
+        "as": "চিহ্নিত মূল্য?"
+       },
+       "options": [
+        {
+         "en": "₹1020",
+         "as": "₹1020"
+        },
+        {
+         "en": "₹1200",
+         "as": "₹1200"
+        },
+        {
+         "en": "₹800",
+         "as": "₹800"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Mark-up is on cost.",
+        "as": "বৃদ্ধি ক্ৰয় মূল্যৰ ওপৰত।"
+       },
+       "skill": "pl-basic"
+      },
+      {
+       "ask": {
+        "en": "Selling price?",
+        "as": "বিক্ৰী মূল্য?"
+       },
+       "options": [
+        {
+         "en": "₹900",
+         "as": "₹900"
+        },
+        {
+         "en": "₹1080",
+         "as": "₹1080"
+        },
+        {
+         "en": "₹1100",
+         "as": "₹1100"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Discount is on the marked price.",
+        "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত।"
+       },
+       "tag": "m-disc-base"
+      },
+      {
+       "ask": {
+        "en": "Profit?",
+        "as": "লাভ?"
+       },
+       "options": [
+        {
+         "en": "8%",
+         "as": "8%"
+        },
+        {
+         "en": "20%",
+         "as": "20%"
+        },
+        {
+         "en": "10%",
+         "as": "10%"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Back on the cost price.",
+        "as": "আকৌ ক্ৰয় মূল্যৰ ওপৰত।"
+       },
+       "skill": "pl-basic",
+       "tag": "m-discount-add"
+      }
+     ],
+     "why": {
+      "en": "The base changes twice: cost, marked, then cost again.",
+      "as": "ভিত্তি দুবাৰ সলনি হয়: ক্ৰয়, চিহ্নিত, আকৌ ক্ৰয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "An item costing ₹1000 is marked 20% above cost and sold at 10% discount. Find the profit percentage.",
+        "as": "₹1000 ক্ৰয় মূল্যৰ বস্তু 20% বঢ়াই চিহ্নিত কৰি 10% ৰেহাইত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Marked price?",
+          "as": "চিহ্নিত মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹1020",
+           "as": "₹1020"
+          },
+          {
+           "en": "₹1200",
+           "as": "₹1200"
+          },
+          {
+           "en": "₹800",
+           "as": "₹800"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Mark-up is on cost.",
+          "as": "বৃদ্ধি ক্ৰয় মূল্যৰ ওপৰত।"
+         },
+         "skill": "pl-basic"
+        },
+        {
+         "ask": {
+          "en": "Selling price?",
+          "as": "বিক্ৰী মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹900",
+           "as": "₹900"
+          },
+          {
+           "en": "₹1080",
+           "as": "₹1080"
+          },
+          {
+           "en": "₹1100",
+           "as": "₹1100"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Discount is on the marked price.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত।"
+         },
+         "tag": "m-disc-base"
+        },
+        {
+         "ask": {
+          "en": "Profit?",
+          "as": "লাভ?"
+         },
+         "options": [
+          {
+           "en": "8%",
+           "as": "8%"
+          },
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "10%",
+           "as": "10%"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Back on the cost price.",
+          "as": "আকৌ ক্ৰয় মূল্যৰ ওপৰত।"
+         },
+         "skill": "pl-basic",
+         "tag": "m-discount-add"
+        }
+       ],
+       "why": {
+        "en": "The base changes twice: cost, marked, then cost again.",
+        "as": "ভিত্তি দুবাৰ সলনি হয়: ক্ৰয়, চিহ্নিত, আকৌ ক্ৰয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "An item costing ₹2000 is marked 30% above cost and sold at 10% discount. Find the profit percentage.",
+        "as": "₹2000 ক্ৰয় মূল্যৰ বস্তু 30% বঢ়াই চিহ্নিত কৰি 10% ৰেহাইত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Marked price?",
+          "as": "চিহ্নিত মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹2030",
+           "as": "₹2030"
+          },
+          {
+           "en": "₹2600",
+           "as": "₹2600"
+          },
+          {
+           "en": "₹1400",
+           "as": "₹1400"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Mark-up is on cost.",
+          "as": "বৃদ্ধি ক্ৰয় মূল্যৰ ওপৰত।"
+         },
+         "skill": "pl-basic"
+        },
+        {
+         "ask": {
+          "en": "Selling price?",
+          "as": "বিক্ৰী মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹2400",
+           "as": "₹2400"
+          },
+          {
+           "en": "₹1800",
+           "as": "₹1800"
+          },
+          {
+           "en": "₹2340",
+           "as": "₹2340"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Discount is on the marked price.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত।"
+         },
+         "tag": "m-disc-base"
+        },
+        {
+         "ask": {
+          "en": "Profit?",
+          "as": "লাভ?"
+         },
+         "options": [
+          {
+           "en": "30%",
+           "as": "30%"
+          },
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "17%",
+           "as": "17%"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Back on the cost price.",
+          "as": "আকৌ ক্ৰয় মূল্যৰ ওপৰত।"
+         },
+         "skill": "pl-basic",
+         "tag": "m-discount-add"
+        }
+       ],
+       "why": {
+        "en": "The base changes twice: cost, marked, then cost again.",
+        "as": "ভিত্তি দুবাৰ সলনি হয়: ক্ৰয়, চিহ্নিত, আকৌ ক্ৰয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "An item costing ₹500 is marked 40% above cost and sold at 25% discount. Find the profit percentage.",
+        "as": "₹500 ক্ৰয় মূল্যৰ বস্তু 40% বঢ়াই চিহ্নিত কৰি 25% ৰেহাইত বিক্ৰী হ'ল। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Marked price?",
+          "as": "চিহ্নিত মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹300",
+           "as": "₹300"
+          },
+          {
+           "en": "₹700",
+           "as": "₹700"
+          },
+          {
+           "en": "₹540",
+           "as": "₹540"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Mark-up is on cost.",
+          "as": "বৃদ্ধি ক্ৰয় মূল্যৰ ওপৰত।"
+         },
+         "skill": "pl-basic"
+        },
+        {
+         "ask": {
+          "en": "Selling price?",
+          "as": "বিক্ৰী মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹375",
+           "as": "₹375"
+          },
+          {
+           "en": "₹525",
+           "as": "₹525"
+          },
+          {
+           "en": "₹575",
+           "as": "₹575"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Discount is on the marked price.",
+          "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত।"
+         },
+         "tag": "m-disc-base"
+        },
+        {
+         "ask": {
+          "en": "Profit?",
+          "as": "লাভ?"
+         },
+         "options": [
+          {
+           "en": "5%",
+           "as": "5%"
+          },
+          {
+           "en": "40%",
+           "as": "40%"
+          },
+          {
+           "en": "15%",
+           "as": "15%"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Back on the cost price.",
+          "as": "আকৌ ক্ৰয় মূল্যৰ ওপৰত।"
+         },
+         "skill": "pl-basic",
+         "tag": "m-discount-add"
+        }
+       ],
+       "why": {
+        "en": "The base changes twice: cost, marked, then cost again.",
+        "as": "ভিত্তি দুবাৰ সলনি হয়: ক্ৰয়, চিহ্নিত, আকৌ ক্ৰয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u2.q5",
+     "type": "tf",
+     "skill": "pl-discount",
+     "s": {
+      "en": "Marking up 25% and giving 20% off leaves a 5% profit.",
+      "as": "25% বঢ়াই 20% ৰেহাই দিলে 5% লাভ থাকে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "20% of the higher price is 25 on a cost of 100, so the profit is zero.",
+      "as": "বেছি দামৰ 20% হ'ল 25, ক্ৰয় মূল্য 100, সেয়ে লাভ শূন্য।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-disc-base",
+       "why": {
+        "en": "A discount is measured on the marked price. Cost plays no part in it.",
+        "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u2.q6",
+     "type": "match",
+     "skill": "pl-discount",
+     "q": {
+      "en": "Match the pair of discounts to one discount",
+      "as": "দুটা ৰেহাইক এক ৰেহাইৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "10% and 10%",
+        "as": "10% আৰু 10%"
+       },
+       {
+        "en": "19%",
+        "as": "19%"
+       }
+      ],
+      [
+       {
+        "en": "20% and 10%",
+        "as": "20% আৰু 10%"
+       },
+       {
+        "en": "28%",
+        "as": "28%"
+       }
+      ],
+      [
+       {
+        "en": "20% and 20%",
+        "as": "20% আৰু 20%"
+       },
+       {
+        "en": "36%",
+        "as": "36%"
+       }
+      ],
+      [
+       {
+        "en": "50% and 50%",
+        "as": "50% আৰু 50%"
+       },
+       {
+        "en": "75%",
+        "as": "75%"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Two discounts always total less than their sum.",
+      "as": "দুটা ৰেহাই সদায় যোগফলতকৈ কম।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Tricky deals",
+    "as": "কৌশলী লেনদেন"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "If the cost of a items equals the selling price of b, profit is $\\frac{a - b}{b}$.",
+     "as": "aটাৰ ক্ৰয় মূল্য bটাৰ বিক্ৰী মূল্যৰ সমান হ'লে লাভ $\\frac{a - b}{b}$।"
+    },
+    {
+     "en": "When rates differ, compare the price of one item.",
+     "as": "হাৰ বেলেগ হ'লে এটা বস্তুৰ দাম তুলনা কৰা।"
+    },
+    {
+     "en": "Two items sold at one price, one at a% profit and one at a% loss, always lose $\\frac{a^2}{100}$%.",
+     "as": "এক দামত দুটা বস্তু, এটা a% লাভত, আনটো a% লোকচানত: সদায় $\\frac{a^2}{100}$% লোকচান।"
+    },
+    {
+     "en": "A change of k% of cost equals the change in rupees.",
+     "as": "ক্ৰয় মূল্যৰ k% পৰিৱৰ্তন টকাৰ পৰিৱৰ্তনৰ সমান।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m8.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Same price, hidden loss",
+      "as": "একে দাম, লুকোৱা লোকচান"
+     },
+     "text": [
+      {
+       "en": "Two phones each sell for ₹100. One makes a profit and the other an equal loss. Surely that cancels?",
+       "as": "দুটা ফোন প্ৰতিটো ₹100ত বিক্ৰী হয়। এটাত লাভ, আনটোত সমান লোকচান। সমান হ'ব নিশ্চয়?"
+      }
+     ],
+     "widget": {
+      "kind": "twosale",
+      "s": 100
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to 20%.",
+        "as": "20%লৈ টানা।"
+       },
+       "goal": {
+        "a": 20
+       },
+       "then": {
+        "en": "Costs were about ₹83 and ₹125: more than ₹200 in all. The loss item cost more, so the pair loses 4%.",
+        "as": "ক্ৰয় মূল্য প্ৰায় ₹83 আৰু ₹125: মুঠ ₹200তকৈ বেছি। লোকচানৰ বস্তুটোৰ দাম বেছি আছিল, সেয়ে 4% লোকচান।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now slide to 30%.",
+        "as": "এতিয়া 30%লৈ টানা।"
+       },
+       "goal": {
+        "a": 30
+       },
+       "then": {
+        "en": "9%. It is always $\\frac{a^2}{100}$%, never zero.",
+        "as": "9%। সদায় $\\frac{a^2}{100}$%, কেতিয়াও শূন্য নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Cost of some, price of others",
+      "as": "কিছুমানৰ ক্ৰয়, আনবোৰৰ বিক্ৰী"
+     },
+     "text": [
+      {
+       "en": "If 25 items cost what 20 items sell for, then the seller sold 20 and kept the money of 25.",
+       "as": "25টাৰ ক্ৰয় মূল্য 20টাৰ বিক্ৰী মূল্যৰ সমান হ'লে 20টা বেচি 25টাৰ ধন পালে।"
+      },
+      {
+       "en": "The profit of 5 is measured on the 20 sold.",
+       "as": "5 লাভ বিক্ৰী হোৱা 20টাৰ ওপৰত জোখা হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Cost of 25 = selling of 20",
+        "as": "25ৰ ক্ৰয় = 20ৰ বিক্ৰী"
+       },
+       {
+        "en": "Gain 5 on 20",
+        "as": "20ত 5 লাভ"
+       },
+       {
+        "en": "$\\frac{5}{20} = 25$%",
+        "as": "$\\frac{5}{20} = 25$%"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m8.u3.q1",
+     "type": "solve",
+     "skill": "pl-deals",
+     "q": {
+      "en": "The cost price of 25 pens equals the selling price of 20 pens. Find the profit percentage.",
+      "as": "25টা কলমৰ ক্ৰয় মূল্য 20টাৰ বিক্ৰী মূল্যৰ সমান। লাভ কিমান শতাংশ?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "Gain 5 on 20 sold.",
+      "as": "বিক্ৰী হোৱা 20টাত 5 লাভ।"
+     },
+     "traps": [
+      {
+       "ans": "20",
+       "tag": "m-articles-base",
+       "why": {
+        "en": "The base is the number sold, not the larger number.",
+        "as": "ভিত্তি বিক্ৰী হোৱা সংখ্যা, ডাঙৰ সংখ্যাটো নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The cost price of 25 pens equals the selling price of 20 pens. Find the profit percentage.",
+        "as": "25টা কলমৰ ক্ৰয় মূল্য 20টাৰ বিক্ৰী মূল্যৰ সমান। লাভ কিমান শতাংশ?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Gain 5 on 20 sold.",
+        "as": "বিক্ৰী হোৱা 20টাত 5 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "m-articles-base",
+         "why": {
+          "en": "The base is the number sold, not the larger number.",
+          "as": "ভিত্তি বিক্ৰী হোৱা সংখ্যা, ডাঙৰ সংখ্যাটো নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The cost price of 44 pens equals the selling price of 40 pens. Find the profit percentage.",
+        "as": "44টা কলমৰ ক্ৰয় মূল্য 40টাৰ বিক্ৰী মূল্যৰ সমান। লাভ কিমান শতাংশ?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Gain 4 on 40 sold.",
+        "as": "বিক্ৰী হোৱা 40টাত 4 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "100/11",
+         "tag": "m-articles-base",
+         "why": {
+          "en": "The base is the number sold, not the larger number.",
+          "as": "ভিত্তি বিক্ৰী হোৱা সংখ্যা, ডাঙৰ সংখ্যাটো নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The cost price of 12 pens equals the selling price of 10 pens. Find the profit percentage.",
+        "as": "12টা কলমৰ ক্ৰয় মূল্য 10টাৰ বিক্ৰী মূল্যৰ সমান। লাভ কিমান শতাংশ?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Gain 2 on 10 sold.",
+        "as": "বিক্ৰী হোৱা 10টাত 2 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "50/3",
+         "tag": "m-articles-base",
+         "why": {
+          "en": "The base is the number sold, not the larger number.",
+          "as": "ভিত্তি বিক্ৰী হোৱা সংখ্যা, ডাঙৰ সংখ্যাটো নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The cost price of 36 pens equals the selling price of 30 pens. Find the profit percentage.",
+        "as": "36টা কলমৰ ক্ৰয় মূল্য 30টাৰ বিক্ৰী মূল্যৰ সমান। লাভ কিমান শতাংশ?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Gain 6 on 30 sold.",
+        "as": "বিক্ৰী হোৱা 30টাত 6 লাভ।"
+       },
+       "traps": [
+        {
+         "ans": "50/3",
+         "tag": "m-articles-base",
+         "why": {
+          "en": "The base is the number sold, not the larger number.",
+          "as": "ভিত্তি বিক্ৰী হোৱা সংখ্যা, ডাঙৰ সংখ্যাটো নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u3.q2",
+     "type": "stepwise",
+     "skill": "pl-deals",
+     "q": {
+      "en": "A man buys 5 pens for ₹20 and sells 2 pens for ₹10. Find his profit percentage.",
+      "as": "এজন মানুহে ₹20ত 5টা কলম কিনি ₹10ত 2টা বেচে। লাভ কিমান শতাংশ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Cost of one pen?",
+        "as": "এটা কলমৰ ক্ৰয় মূল্য?"
+       },
+       "options": [
+        {
+         "en": "₹$\\frac{1}{4}$",
+         "as": "₹$\\frac{1}{4}$"
+        },
+        {
+         "en": "₹20",
+         "as": "₹20"
+        },
+        {
+         "en": "₹4",
+         "as": "₹4"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Price divided by the number.",
+        "as": "দাম ÷ সংখ্যা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Selling price of one?",
+        "as": "এটাৰ বিক্ৰী মূল্য?"
+       },
+       "options": [
+        {
+         "en": "₹5",
+         "as": "₹5"
+        },
+        {
+         "en": "₹10",
+         "as": "₹10"
+        },
+        {
+         "en": "₹$\\frac{1}{5}$",
+         "as": "₹$\\frac{1}{5}$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Price divided by the number.",
+        "as": "দাম ÷ সংখ্যা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Profit?",
+        "as": "লাভ?"
+       },
+       "options": [
+        {
+         "en": "20%",
+         "as": "20%"
+        },
+        {
+         "en": "5%",
+         "as": "5%"
+        },
+        {
+         "en": "25%",
+         "as": "25%"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Gain on one, over the cost of one.",
+        "as": "এটাৰ লাভ ÷ এটাৰ ক্ৰয় মূল্য।"
+       },
+       "tag": "m-cp-base"
+      }
+     ],
+     "why": {
+      "en": "Different quantities become easy once you price one item.",
+      "as": "এটা বস্তুৰ দাম উলিয়ালে বেলেগ সংখ্যাও সহজ হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A man buys 5 pens for ₹20 and sells 2 pens for ₹10. Find his profit percentage.",
+        "as": "এজন মানুহে ₹20ত 5টা কলম কিনি ₹10ত 2টা বেচে। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Cost of one pen?",
+          "as": "এটা কলমৰ ক্ৰয় মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹$\\frac{1}{4}$",
+           "as": "₹$\\frac{1}{4}$"
+          },
+          {
+           "en": "₹20",
+           "as": "₹20"
+          },
+          {
+           "en": "₹4",
+           "as": "₹4"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Price divided by the number.",
+          "as": "দাম ÷ সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Selling price of one?",
+          "as": "এটাৰ বিক্ৰী মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹5",
+           "as": "₹5"
+          },
+          {
+           "en": "₹10",
+           "as": "₹10"
+          },
+          {
+           "en": "₹$\\frac{1}{5}$",
+           "as": "₹$\\frac{1}{5}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Price divided by the number.",
+          "as": "দাম ÷ সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Profit?",
+          "as": "লাভ?"
+         },
+         "options": [
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "5%",
+           "as": "5%"
+          },
+          {
+           "en": "25%",
+           "as": "25%"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Gain on one, over the cost of one.",
+          "as": "এটাৰ লাভ ÷ এটাৰ ক্ৰয় মূল্য।"
+         },
+         "tag": "m-cp-base"
+        }
+       ],
+       "why": {
+        "en": "Different quantities become easy once you price one item.",
+        "as": "এটা বস্তুৰ দাম উলিয়ালে বেলেগ সংখ্যাও সহজ হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A man buys 3 pens for ₹12 and sells 2 pens for ₹10. Find his profit percentage.",
+        "as": "এজন মানুহে ₹12ত 3টা কলম কিনি ₹10ত 2টা বেচে। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Cost of one pen?",
+          "as": "এটা কলমৰ ক্ৰয় মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹4",
+           "as": "₹4"
+          },
+          {
+           "en": "₹12",
+           "as": "₹12"
+          },
+          {
+           "en": "₹$\\frac{1}{4}$",
+           "as": "₹$\\frac{1}{4}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Price divided by the number.",
+          "as": "দাম ÷ সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Selling price of one?",
+          "as": "এটাৰ বিক্ৰী মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹10",
+           "as": "₹10"
+          },
+          {
+           "en": "₹$\\frac{1}{5}$",
+           "as": "₹$\\frac{1}{5}$"
+          },
+          {
+           "en": "₹5",
+           "as": "₹5"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Price divided by the number.",
+          "as": "দাম ÷ সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Profit?",
+          "as": "লাভ?"
+         },
+         "options": [
+          {
+           "en": "25%",
+           "as": "25%"
+          },
+          {
+           "en": "5%",
+           "as": "5%"
+          },
+          {
+           "en": "20%",
+           "as": "20%"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Gain on one, over the cost of one.",
+          "as": "এটাৰ লাভ ÷ এটাৰ ক্ৰয় মূল্য।"
+         },
+         "tag": "m-cp-base"
+        }
+       ],
+       "why": {
+        "en": "Different quantities become easy once you price one item.",
+        "as": "এটা বস্তুৰ দাম উলিয়ালে বেলেগ সংখ্যাও সহজ হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A man buys 4 pens for ₹8 and sells 3 pens for ₹9. Find his profit percentage.",
+        "as": "এজন মানুহে ₹8ত 4টা কলম কিনি ₹9ত 3টা বেচে। লাভ কিমান শতাংশ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Cost of one pen?",
+          "as": "এটা কলমৰ ক্ৰয় মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹2",
+           "as": "₹2"
+          },
+          {
+           "en": "₹$\\frac{1}{2}$",
+           "as": "₹$\\frac{1}{2}$"
+          },
+          {
+           "en": "₹8",
+           "as": "₹8"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Price divided by the number.",
+          "as": "দাম ÷ সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Selling price of one?",
+          "as": "এটাৰ বিক্ৰী মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹3",
+           "as": "₹3"
+          },
+          {
+           "en": "₹9",
+           "as": "₹9"
+          },
+          {
+           "en": "₹$\\frac{1}{3}$",
+           "as": "₹$\\frac{1}{3}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Price divided by the number.",
+          "as": "দাম ÷ সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Profit?",
+          "as": "লাভ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{100}{3}$%",
+           "as": "$\\frac{100}{3}$%"
+          },
+          {
+           "en": "50%",
+           "as": "50%"
+          },
+          {
+           "en": "5%",
+           "as": "5%"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Gain on one, over the cost of one.",
+          "as": "এটাৰ লাভ ÷ এটাৰ ক্ৰয় মূল্য।"
+         },
+         "tag": "m-cp-base"
+        }
+       ],
+       "why": {
+        "en": "Different quantities become easy once you price one item.",
+        "as": "এটা বস্তুৰ দাম উলিয়ালে বেলেগ সংখ্যাও সহজ হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u3.q3",
+     "type": "tf",
+     "skill": "pl-deals",
+     "s": {
+      "en": "Selling two items at the same price, one at 10% profit and one at 10% loss, gives no overall loss.",
+      "as": "একে দামত দুটা বস্তু, এটা 10% লাভত, আনটো 10% লোকচানত বেচিলে মুঠতে লোকচান নহয়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The loss is $\\frac{10^2}{100} = 1$%, because the loss item cost more.",
+      "as": "লোকচান $\\frac{10^2}{100} = 1$%, কাৰণ লোকচানৰ বস্তুটোৰ দাম বেছি আছিল।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-two-items",
+       "why": {
+        "en": "Equal percentages sit on different costs, so they do not cancel.",
+        "as": "সমান শতাংশ বেলেগ ক্ৰয় মূল্যৰ ওপৰত, সেয়ে নাকাটে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m8.u3.q4",
+     "type": "solve",
+     "skill": "pl-deals",
+     "q": {
+      "en": "Two items are sold at one price, one at 20% profit and the other at 20% loss. What is the overall loss percentage?",
+      "as": "একে দামত দুটা বস্তু, এটা 20% লাভত, আনটো 20% লোকচানত বেচা হ'ল। মুঠ লোকচান কিমান শতাংশ?"
+     },
+     "answer": "4",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "$\\frac{20^2}{100} = 4$.",
+      "as": "$\\frac{20^2}{100} = 4$।"
+     },
+     "traps": [
+      {
+       "ans": "0",
+       "tag": "m-two-items",
+       "why": {
+        "en": "Equal percentages sit on different costs, so they do not cancel.",
+        "as": "সমান শতাংশ বেলেগ ক্ৰয় মূল্যৰ ওপৰত, সেয়ে নাকাটে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Two items are sold at one price, one at 20% profit and the other at 20% loss. What is the overall loss percentage?",
+        "as": "একে দামত দুটা বস্তু, এটা 20% লাভত, আনটো 20% লোকচানত বেচা হ'ল। মুঠ লোকচান কিমান শতাংশ?"
+       },
+       "answer": "4",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{20^2}{100} = 4$.",
+        "as": "$\\frac{20^2}{100} = 4$।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "m-two-items",
+         "why": {
+          "en": "Equal percentages sit on different costs, so they do not cancel.",
+          "as": "সমান শতাংশ বেলেগ ক্ৰয় মূল্যৰ ওপৰত, সেয়ে নাকাটে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two items are sold at one price, one at 10% profit and the other at 10% loss. What is the overall loss percentage?",
+        "as": "একে দামত দুটা বস্তু, এটা 10% লাভত, আনটো 10% লোকচানত বেচা হ'ল। মুঠ লোকচান কিমান শতাংশ?"
+       },
+       "answer": "1",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{10^2}{100} = 1$.",
+        "as": "$\\frac{10^2}{100} = 1$।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "m-two-items",
+         "why": {
+          "en": "Equal percentages sit on different costs, so they do not cancel.",
+          "as": "সমান শতাংশ বেলেগ ক্ৰয় মূল্যৰ ওপৰত, সেয়ে নাকাটে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two items are sold at one price, one at 30% profit and the other at 30% loss. What is the overall loss percentage?",
+        "as": "একে দামত দুটা বস্তু, এটা 30% লাভত, আনটো 30% লোকচানত বেচা হ'ল। মুঠ লোকচান কিমান শতাংশ?"
+       },
+       "answer": "9",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{30^2}{100} = 9$.",
+        "as": "$\\frac{30^2}{100} = 9$।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "m-two-items",
+         "why": {
+          "en": "Equal percentages sit on different costs, so they do not cancel.",
+          "as": "সমান শতাংশ বেলেগ ক্ৰয় মূল্যৰ ওপৰত, সেয়ে নাকাটে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two items are sold at one price, one at 25% profit and the other at 25% loss. What is the overall loss percentage?",
+        "as": "একে দামত দুটা বস্তু, এটা 25% লাভত, আনটো 25% লোকচানত বেচা হ'ল। মুঠ লোকচান কিমান শতাংশ?"
+       },
+       "answer": "25/4",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{25^2}{100} = 25/4$.",
+        "as": "$\\frac{25^2}{100} = 25/4$।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "m-two-items",
+         "why": {
+          "en": "Equal percentages sit on different costs, so they do not cancel.",
+          "as": "সমান শতাংশ বেলেগ ক্ৰয় মূল্যৰ ওপৰত, সেয়ে নাকাটে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u3.q5",
+     "type": "solve",
+     "skill": "pl-deals",
+     "hints": [
+      {
+       "en": "What percentage of cost does the extra money equal?",
+       "as": "অতিৰিক্ত ধন ক্ৰয় মূল্যৰ কিমান শতাংশ?"
+      }
+     ],
+     "q": {
+      "en": "An item made 8% profit. Had it sold for ₹40 more, the profit would be 12%. Find the cost.",
+      "as": "এটা বস্তুত 8% লাভ হ'ল। ₹40 বেছিত বেচিলে লাভ 12% হ'লহেঁতেন। ক্ৰয় মূল্য উলিওৱা।"
+     },
+     "answer": "1000",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "The extra 4% of cost is ₹40.",
+      "as": "ক্ৰয় মূল্যৰ অতিৰিক্ত 4% হ'ল ₹40।"
+     },
+     "traps": [
+      {
+       "ans": "333",
+       "tag": "m-cp-base",
+       "why": {
+        "en": "₹40 is the gap between the two rates, so divide by 4%.",
+        "as": "₹40 দুটা হাৰৰ ব্যৱধান, সেয়ে 4%ৰে হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "An item made 8% profit. Had it sold for ₹40 more, the profit would be 12%. Find the cost.",
+        "as": "এটা বস্তুত 8% লাভ হ'ল। ₹40 বেছিত বেচিলে লাভ 12% হ'লহেঁতেন। ক্ৰয় মূল্য উলিওৱা।"
+       },
+       "answer": "1000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "The extra 4% of cost is ₹40.",
+        "as": "ক্ৰয় মূল্যৰ অতিৰিক্ত 4% হ'ল ₹40।"
+       },
+       "traps": [
+        {
+         "ans": "333",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "₹40 is the gap between the two rates, so divide by 4%.",
+          "as": "₹40 দুটা হাৰৰ ব্যৱধান, সেয়ে 4%ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An item made 10% profit. Had it sold for ₹100 more, the profit would be 15%. Find the cost.",
+        "as": "এটা বস্তুত 10% লাভ হ'ল। ₹100 বেছিত বেচিলে লাভ 15% হ'লহেঁতেন। ক্ৰয় মূল্য উলিওৱা।"
+       },
+       "answer": "2000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "The extra 5% of cost is ₹100.",
+        "as": "ক্ৰয় মূল্যৰ অতিৰিক্ত 5% হ'ল ₹100।"
+       },
+       "traps": [
+        {
+         "ans": "666",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "₹100 is the gap between the two rates, so divide by 5%.",
+          "as": "₹100 দুটা হাৰৰ ব্যৱধান, সেয়ে 5%ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An item made 20% profit. Had it sold for ₹60 more, the profit would be 25%. Find the cost.",
+        "as": "এটা বস্তুত 20% লাভ হ'ল। ₹60 বেছিত বেচিলে লাভ 25% হ'লহেঁতেন। ক্ৰয় মূল্য উলিওৱা।"
+       },
+       "answer": "1200",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "The extra 5% of cost is ₹60.",
+        "as": "ক্ৰয় মূল্যৰ অতিৰিক্ত 5% হ'ল ₹60।"
+       },
+       "traps": [
+        {
+         "ans": "240",
+         "tag": "m-cp-base",
+         "why": {
+          "en": "₹60 is the gap between the two rates, so divide by 5%.",
+          "as": "₹60 দুটা হাৰৰ ব্যৱধান, সেয়ে 5%ৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m8.u3.q6",
+     "type": "match",
+     "skill": "pl-deals",
+     "q": {
+      "en": "Match the deal to the result",
+      "as": "লেনদেনক ফলাফলৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Cost of 6 = selling of 5",
+        "as": "6ৰ ক্ৰয় = 5ৰ বিক্ৰী"
+       },
+       {
+        "en": "20% profit",
+        "as": "20% লাভ"
+       }
+      ],
+      [
+       {
+        "en": "Cost of 11 = selling of 10",
+        "as": "11ৰ ক্ৰয় = 10ৰ বিক্ৰী"
+       },
+       {
+        "en": "10% profit",
+        "as": "10% লাভ"
+       }
+      ],
+      [
+       {
+        "en": "Cost of 4 = selling of 5",
+        "as": "4ৰ ক্ৰয় = 5ৰ বিক্ৰী"
+       },
+       {
+        "en": "20% loss",
+        "as": "20% লোকচান"
+       }
+      ],
+      [
+       {
+        "en": "Cost of 3 = selling of 4",
+        "as": "3ৰ ক্ৰয় = 4ৰ বিক্ৰী"
+       },
+       {
+        "en": "25% loss",
+        "as": "25% লোকচান"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Compare the two numbers and measure on the number sold.",
+      "as": "দুটা সংখ্যা তুলনা কৰি বিক্ৰী হোৱা সংখ্যাত জোখা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Profit and loss test",
+   "as": "লাভ-লোকচান পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m8.t.q1",
+    "type": "mcq",
+    "skill": "pl-basic",
+    "q": {
+     "en": "Bought for ₹500, sold for ₹400. The result is a loss of",
+     "as": "₹500ত কিনি ₹400ত বেচিলে লোকচান"
+    },
+    "why": {
+     "en": "Loss ÷ cost × 100.",
+     "as": "লোকচান ÷ ক্ৰয় মূল্য × 100।"
+    },
+    "options": [
+     {
+      "en": "30%",
+      "as": "30%"
+     },
+     {
+      "en": "25%",
+      "as": "25%"
+     },
+     {
+      "en": "100%",
+      "as": "100%"
+     },
+     {
+      "en": "20%",
+      "as": "20%"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-cp-base",
+      "why": {
+       "en": "Profit and loss are always measured on the cost price, not the selling price.",
+       "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Bought for ₹500, sold for ₹400. The result is a loss of",
+       "as": "₹500ত কিনি ₹400ত বেচিলে লোকচান"
+      },
+      "why": {
+       "en": "Loss ÷ cost × 100.",
+       "as": "লোকচান ÷ ক্ৰয় মূল্য × 100।"
+      },
+      "options": [
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "100%",
+        "as": "100%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-cp-base",
+        "why": {
+         "en": "Profit and loss are always measured on the cost price, not the selling price.",
+         "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Bought for ₹800, sold for ₹680. The result is a loss of",
+       "as": "₹800ত কিনি ₹680ত বেচিলে লোকচান"
+      },
+      "why": {
+       "en": "Loss ÷ cost × 100.",
+       "as": "লোকচান ÷ ক্ৰয় মূল্য × 100।"
+      },
+      "options": [
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "$\\frac{300}{17}$%",
+        "as": "$\\frac{300}{17}$%"
+       },
+       {
+        "en": "15%",
+        "as": "15%"
+       },
+       {
+        "en": "120%",
+        "as": "120%"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-cp-base",
+        "why": {
+         "en": "Profit and loss are always measured on the cost price, not the selling price.",
+         "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Bought for ₹1000, sold for ₹750. The result is a loss of",
+       "as": "₹1000ত কিনি ₹750ত বেচিলে লোকচান"
+      },
+      "why": {
+       "en": "Loss ÷ cost × 100.",
+       "as": "লোকচান ÷ ক্ৰয় মূল্য × 100।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{100}{3}$%",
+        "as": "$\\frac{100}{3}$%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "250%",
+        "as": "250%"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-cp-base",
+        "why": {
+         "en": "Profit and loss are always measured on the cost price, not the selling price.",
+         "as": "লাভ আৰু লোকচান সদায় ক্ৰয় মূল্যৰ ওপৰত জোখা হয়, বিক্ৰী মূল্যৰ ওপৰত নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m8.t.q2",
+    "type": "mcq",
+    "skill": "pl-discount",
+    "q": {
+     "en": "Marked at ₹1200 with 15% off, the selling price is",
+     "as": "চিহ্নিত ₹1200, 15% ৰেহাইত বিক্ৰী মূল্য"
+    },
+    "why": {
+     "en": "Multiply by $1 - \\frac{d}{100}$.",
+     "as": "$1 - \\frac{d}{100}$ৰে পূৰণ কৰা।"
+    },
+    "options": [
+     {
+      "en": "180",
+      "as": "180"
+     },
+     {
+      "en": "1020",
+      "as": "1020"
+     },
+     {
+      "en": "1070",
+      "as": "1070"
+     },
+     {
+      "en": "1185",
+      "as": "1185"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-disc-base",
+      "why": {
+       "en": "A discount is measured on the marked price. Cost plays no part in it.",
+       "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Marked at ₹1200 with 15% off, the selling price is",
+       "as": "চিহ্নিত ₹1200, 15% ৰেহাইত বিক্ৰী মূল্য"
+      },
+      "why": {
+       "en": "Multiply by $1 - \\frac{d}{100}$.",
+       "as": "$1 - \\frac{d}{100}$ৰে পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "180",
+        "as": "180"
+       },
+       {
+        "en": "1020",
+        "as": "1020"
+       },
+       {
+        "en": "1070",
+        "as": "1070"
+       },
+       {
+        "en": "1185",
+        "as": "1185"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-disc-base",
+        "why": {
+         "en": "A discount is measured on the marked price. Cost plays no part in it.",
+         "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Marked at ₹500 with 20% off, the selling price is",
+       "as": "চিহ্নিত ₹500, 20% ৰেহাইত বিক্ৰী মূল্য"
+      },
+      "why": {
+       "en": "Multiply by $1 - \\frac{d}{100}$.",
+       "as": "$1 - \\frac{d}{100}$ৰে পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "400",
+        "as": "400"
+       },
+       {
+        "en": "100",
+        "as": "100"
+       },
+       {
+        "en": "480",
+        "as": "480"
+       },
+       {
+        "en": "450",
+        "as": "450"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-disc-base",
+        "why": {
+         "en": "A discount is measured on the marked price. Cost plays no part in it.",
+         "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Marked at ₹3000 with 10% off, the selling price is",
+       "as": "চিহ্নিত ₹3000, 10% ৰেহাইত বিক্ৰী মূল্য"
+      },
+      "why": {
+       "en": "Multiply by $1 - \\frac{d}{100}$.",
+       "as": "$1 - \\frac{d}{100}$ৰে পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "2700",
+        "as": "2700"
+       },
+       {
+        "en": "2750",
+        "as": "2750"
+       },
+       {
+        "en": "2990",
+        "as": "2990"
+       },
+       {
+        "en": "300",
+        "as": "300"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-disc-base",
+        "why": {
+         "en": "A discount is measured on the marked price. Cost plays no part in it.",
+         "as": "ৰেহাই চিহ্নিত মূল্যৰ ওপৰত জোখা হয়। ক্ৰয় মূল্যৰ ইয়াত ভূমিকা নাই।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m8.t.q3",
+    "type": "mcq",
+    "skill": "pl-discount",
+    "q": {
+     "en": "Marked 20% above cost and sold at 10% discount, the profit is",
+     "as": "20% বঢ়াই চিহ্নিত কৰি 10% ৰেহাইত লাভ"
+    },
+    "why": {
+     "en": "Use cost 100.",
+     "as": "ক্ৰয় মূল্য 100 ধৰা।"
+    },
+    "options": [
+     {
+      "en": "10%",
+      "as": "10%"
+     },
+     {
+      "en": "20%",
+      "as": "20%"
+     },
+     {
+      "en": "11%",
+      "as": "11%"
+     },
+     {
+      "en": "8%",
+      "as": "8%"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-discount-add",
+      "why": {
+       "en": "The discount is on the higher price, so it is not a plain subtraction.",
+       "as": "ৰেহাই বেছি দামৰ ওপৰত, সেয়ে সৰল বিয়োগ নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Marked 20% above cost and sold at 10% discount, the profit is",
+       "as": "20% বঢ়াই চিহ্নিত কৰি 10% ৰেহাইত লাভ"
+      },
+      "why": {
+       "en": "Use cost 100.",
+       "as": "ক্ৰয় মূল্য 100 ধৰা।"
+      },
+      "options": [
+       {
+        "en": "10%",
+        "as": "10%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "11%",
+        "as": "11%"
+       },
+       {
+        "en": "8%",
+        "as": "8%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-discount-add",
+        "why": {
+         "en": "The discount is on the higher price, so it is not a plain subtraction.",
+         "as": "ৰেহাই বেছি দামৰ ওপৰত, সেয়ে সৰল বিয়োগ নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Marked 30% above cost and sold at 20% discount, the profit is",
+       "as": "30% বঢ়াই চিহ্নিত কৰি 20% ৰেহাইত লাভ"
+      },
+      "why": {
+       "en": "Use cost 100.",
+       "as": "ক্ৰয় মূল্য 100 ধৰা।"
+      },
+      "options": [
+       {
+        "en": "6%",
+        "as": "6%"
+       },
+       {
+        "en": "4%",
+        "as": "4%"
+       },
+       {
+        "en": "10%",
+        "as": "10%"
+       },
+       {
+        "en": "30%",
+        "as": "30%"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-discount-add",
+        "why": {
+         "en": "The discount is on the higher price, so it is not a plain subtraction.",
+         "as": "ৰেহাই বেছি দামৰ ওপৰত, সেয়ে সৰল বিয়োগ নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Marked 40% above cost and sold at 25% discount, the profit is",
+       "as": "40% বঢ়াই চিহ্নিত কৰি 25% ৰেহাইত লাভ"
+      },
+      "why": {
+       "en": "Use cost 100.",
+       "as": "ক্ৰয় মূল্য 100 ধৰা।"
+      },
+      "options": [
+       {
+        "en": "40%",
+        "as": "40%"
+       },
+       {
+        "en": "5%",
+        "as": "5%"
+       },
+       {
+        "en": "15%",
+        "as": "15%"
+       },
+       {
+        "en": "7%",
+        "as": "7%"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-discount-add",
+        "why": {
+         "en": "The discount is on the higher price, so it is not a plain subtraction.",
+         "as": "ৰেহাই বেছি দামৰ ওপৰত, সেয়ে সৰল বিয়োগ নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m8.t.q4",
+    "type": "mcq",
+    "skill": "pl-deals",
+    "q": {
+     "en": "The cost of 50 items equals the selling price of 40. The profit is",
+     "as": "50টাৰ ক্ৰয় মূল্য 40টাৰ বিক্ৰী মূল্যৰ সমান। লাভ"
+    },
+    "why": {
+     "en": "Gain ÷ number sold.",
+     "as": "লাভ ÷ বিক্ৰী হোৱা সংখ্যা।"
+    },
+    "options": [
+     {
+      "en": "30%",
+      "as": "30%"
+     },
+     {
+      "en": "20%",
+      "as": "20%"
+     },
+     {
+      "en": "25%",
+      "as": "25%"
+     },
+     {
+      "en": "10%",
+      "as": "10%"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-articles-base",
+      "why": {
+       "en": "Measure on the number sold.",
+       "as": "বিক্ৰী হোৱা সংখ্যাত জোখা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The cost of 50 items equals the selling price of 40. The profit is",
+       "as": "50টাৰ ক্ৰয় মূল্য 40টাৰ বিক্ৰী মূল্যৰ সমান। লাভ"
+      },
+      "why": {
+       "en": "Gain ÷ number sold.",
+       "as": "লাভ ÷ বিক্ৰী হোৱা সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "10%",
+        "as": "10%"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-articles-base",
+        "why": {
+         "en": "Measure on the number sold.",
+         "as": "বিক্ৰী হোৱা সংখ্যাত জোখা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The cost of 22 items equals the selling price of 20. The profit is",
+       "as": "22টাৰ ক্ৰয় মূল্য 20টাৰ বিক্ৰী মূল্যৰ সমান। লাভ"
+      },
+      "why": {
+       "en": "Gain ÷ number sold.",
+       "as": "লাভ ÷ বিক্ৰী হোৱা সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "2%",
+        "as": "2%"
+       },
+       {
+        "en": "10%",
+        "as": "10%"
+       },
+       {
+        "en": "$\\frac{100}{11}$%",
+        "as": "$\\frac{100}{11}$%"
+       },
+       {
+        "en": "15%",
+        "as": "15%"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-articles-base",
+        "why": {
+         "en": "Measure on the number sold.",
+         "as": "বিক্ৰী হোৱা সংখ্যাত জোখা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The cost of 30 items equals the selling price of 24. The profit is",
+       "as": "30টাৰ ক্ৰয় মূল্য 24টাৰ বিক্ৰী মূল্যৰ সমান। লাভ"
+      },
+      "why": {
+       "en": "Gain ÷ number sold.",
+       "as": "লাভ ÷ বিক্ৰী হোৱা সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "6%",
+        "as": "6%"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-articles-base",
+        "why": {
+         "en": "Measure on the number sold.",
+         "as": "বিক্ৰী হোৱা সংখ্যাত জোখা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m8.t.q5",
+    "type": "solve",
+    "skill": "pl-basic",
+    "q": {
+     "en": "An item sold for ₹1140 at a 5% loss. Find its cost.",
+     "as": "5% লোকচানত ₹1140ত বিক্ৰী হ'ল। ক্ৰয় মূল্য উলিওৱা।"
+    },
+    "answer": "1200",
+    "why": {
+     "en": "Divide by 0.95.",
+     "as": "0.95ৰে হৰণ কৰা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "An item sold for ₹1140 at a 5% loss. Find its cost.",
+       "as": "5% লোকচানত ₹1140ত বিক্ৰী হ'ল। ক্ৰয় মূল্য উলিওৱা।"
+      },
+      "answer": "1200",
+      "why": {
+       "en": "Divide by 0.95.",
+       "as": "0.95ৰে হৰণ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "An item sold for ₹540 at a 10% loss. Find its cost.",
+       "as": "10% লোকচানত ₹540ত বিক্ৰী হ'ল। ক্ৰয় মূল্য উলিওৱা।"
+      },
+      "answer": "600",
+      "why": {
+       "en": "Divide by 0.9.",
+       "as": "0.9ৰে হৰণ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "An item sold for ₹800 at a 20% loss. Find its cost.",
+       "as": "20% লোকচানত ₹800ত বিক্ৰী হ'ল। ক্ৰয় মূল্য উলিওৱা।"
+      },
+      "answer": "1000",
+      "why": {
+       "en": "Divide by 0.8.",
+       "as": "0.8ৰে হৰণ কৰা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

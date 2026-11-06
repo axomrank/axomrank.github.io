@@ -1,0 +1,2946 @@
+{
+ "id": "math-01-numbers",
+ "course": "mathematics",
+ "no": 1,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Numbers that talk",
+  "as": "কথা কোৱা সংখ্যা"
+ },
+ "reign": {
+  "en": "Types, divisibility, unit digits",
+  "as": "প্ৰকাৰ, বিভাজ্যতা, একক অংক"
+ },
+ "portrait": "math/numbers.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "line",
+   "title": {
+    "en": "The number line",
+    "as": "সংখ্যা ৰেখা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A number is a place: positive to the right of 0, negative to the left.",
+     "as": "সংখ্যা এটা স্থান: 0ৰ সোঁফালে ধনাত্মক, বাওঁফালে ঋণাত্মক।"
+    },
+    {
+     "en": "On the line, further left always means smaller.",
+     "as": "ৰেখাত যিমান বাওঁফালে সিমান সৰু।"
+    },
+    {
+     "en": "Each ×10 zoom opens one more decimal place.",
+     "as": "প্ৰতিটো ×10 জুমে এটা দশমিক স্থান খোলে।"
+    },
+    {
+     "en": "A decimal and a fraction can be two names for one point.",
+     "as": "দশমিক আৰু ভগ্নাংশ এটা বিন্দুৰ দুটা নাম হ'ব পাৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m1.l.s1",
+     "type": "story",
+     "title": {
+      "en": "Zero is a mirror",
+      "as": "শূন্য এখন দাপোণ"
+     },
+     "text": [
+      {
+       "en": "Every number is a place on this line. Right of 0 is positive and left of 0 is negative.",
+       "as": "প্ৰতিটো সংখ্যা এই ৰেখাৰ এটা স্থান। 0ৰ সোঁফালে ধনাত্মক, বাওঁফালে ঋণাত্মক।"
+      }
+     ],
+     "widget": {
+      "kind": "line",
+      "value": 3,
+      "mirror": true,
+      "fractions": false
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag the pin to 7.",
+        "as": "পিনটো 7লৈ টানা।"
+       },
+       "goal": {
+        "value": 7
+       },
+       "then": {
+        "en": "7 is seven steps right of zero. The faint pin is its mirror, −7.",
+        "as": "7 শূন্যৰ সোঁফালে সাত খোজ। পাতল পিনটো ইয়াৰ দাপোণৰ ছবি, −7।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now drag it to −2.",
+        "as": "এতিয়া −2লৈ টানা।"
+       },
+       "goal": {
+        "value": -2
+       },
+       "then": {
+        "en": "−2 is right of −7, so −2 is the bigger number. Size is about position.",
+        "as": "−2 −7ৰ সোঁফালে, সেয়ে −2 ডাঙৰ। ডাঙৰ-সৰু স্থানৰ কথা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.s2",
+     "type": "story",
+     "title": {
+      "en": "Zoom between two numbers",
+      "as": "দুটা সংখ্যাৰ মাজলৈ জুম"
+     },
+     "text": [
+      {
+       "en": "There is always more room between two numbers. Pinch the line, or use the zoom button.",
+       "as": "দুটা সংখ্যাৰ মাজত সদায় ঠাই থাকে। ৰেখাত আঙুলিৰে জুম কৰা বা বুটাম টিপা।"
+      }
+     ],
+     "widget": {
+      "kind": "line",
+      "value": 2
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Zoom in on the pin once.",
+        "as": "পিনটোত এবাৰ জুম কৰা।"
+       },
+       "goal": {
+        "zoom": {
+         "gt": 8
+        }
+       },
+       "then": {
+        "en": "Each step became ten: 2.1, 2.2, 2.3. These are tenths.",
+        "as": "প্ৰতিটো খোজ দহটা হ'ল: 2.1, 2.2, 2.3। এইবোৰ দশমাংশ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Zoom in again.",
+        "as": "আকৌ জুম কৰা।"
+       },
+       "goal": {
+        "zoom": {
+         "gt": 80
+        }
+       },
+       "then": {
+        "en": "Now hundredths. Place value is simply how far you have zoomed.",
+        "as": "এতিয়া শতাংশ। স্থানীয় মান মানে তুমি কিমান জুম কৰিছা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.s3",
+     "type": "story",
+     "title": {
+      "en": "One point, two names",
+      "as": "এটা বিন্দু, দুটা নাম"
+     },
+     "text": [
+      {
+       "en": "Decimals are written above the line and fractions below it. They name the same points.",
+       "as": "ৰেখাৰ ওপৰত দশমিক, তলত ভগ্নাংশ। দুয়োটাই একে বিন্দুৰ নাম।"
+      }
+     ],
+     "widget": {
+      "kind": "line",
+      "min": -1,
+      "max": 1,
+      "value": 0.5,
+      "fractions": true,
+      "percent": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag the pin to $\\frac{3}{4}$.",
+        "as": "পিনটো $\\frac{3}{4}$লৈ টানা।"
+       },
+       "goal": {
+        "value": 0.75
+       },
+       "then": {
+        "en": "$\\frac{3}{4}$, 0.75 and 75% are three names for one point.",
+        "as": "$\\frac{3}{4}$, 0.75 আৰু 75% এটা বিন্দুৰ তিনিটা নাম।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now find $-\\frac{1}{4}$.",
+        "as": "এতিয়া $-\\frac{1}{4}$ বিচাৰা।"
+       },
+       "goal": {
+        "value": -0.25
+       },
+       "then": {
+        "en": "Negative fractions sit to the left, exactly as whole numbers do.",
+        "as": "ঋণাত্মক ভগ্নাংশও অখণ্ড সংখ্যাৰ দৰে বাওঁফালে থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.q1",
+     "type": "explore",
+     "skill": "n-line",
+     "q": {
+      "en": "Put the pin on −7.",
+      "as": "পিনটো −7ত ৰাখা।"
+     },
+     "widget": {
+      "kind": "line",
+      "fractions": false
+     },
+     "target": -7,
+     "answerText": {
+      "en": "−7 on the line",
+      "as": "ৰেখাত −7"
+     },
+     "why": {
+      "en": "Negative numbers are left of zero; count steps out from 0.",
+      "as": "ঋণাত্মক সংখ্যা শূন্যৰ বাওঁফালে; 0ৰ পৰা খোজ গণা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Put the pin on −7.",
+        "as": "পিনটো −7ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "fractions": false
+       },
+       "target": -7,
+       "answerText": {
+        "en": "−7 on the line",
+        "as": "ৰেখাত −7"
+       },
+       "why": {
+        "en": "Negative numbers are left of zero; count steps out from 0.",
+        "as": "ঋণাত্মক সংখ্যা শূন্যৰ বাওঁফালে; 0ৰ পৰা খোজ গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Put the pin on −4.",
+        "as": "পিনটো −4ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "fractions": false
+       },
+       "target": -4,
+       "answerText": {
+        "en": "−4 on the line",
+        "as": "ৰেখাত −4"
+       },
+       "why": {
+        "en": "Negative numbers are left of zero; count steps out from 0.",
+        "as": "ঋণাত্মক সংখ্যা শূন্যৰ বাওঁফালে; 0ৰ পৰা খোজ গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Put the pin on 6.",
+        "as": "পিনটো 6ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "fractions": false
+       },
+       "target": 6,
+       "answerText": {
+        "en": "6 on the line",
+        "as": "ৰেখাত 6"
+       },
+       "why": {
+        "en": "Negative numbers are left of zero; count steps out from 0.",
+        "as": "ঋণাত্মক সংখ্যা শূন্যৰ বাওঁফালে; 0ৰ পৰা খোজ গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Put the pin on −9.",
+        "as": "পিনটো −9ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "fractions": false
+       },
+       "target": -9,
+       "answerText": {
+        "en": "−9 on the line",
+        "as": "ৰেখাত −9"
+       },
+       "why": {
+        "en": "Negative numbers are left of zero; count steps out from 0.",
+        "as": "ঋণাত্মক সংখ্যা শূন্যৰ বাওঁফালে; 0ৰ পৰা খোজ গণা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.q2",
+     "type": "tf",
+     "skill": "n-line",
+     "s": {
+      "en": "−8 is greater than −3.",
+      "as": "−8 −3তকৈ ডাঙৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "−3 is to the right of −8, so −3 is greater.",
+      "as": "−3 −8ৰ সোঁফালে, সেয়ে −3 ডাঙৰ।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-neg-order",
+       "why": {
+        "en": "−8 is further left. Further left is always smaller, even though 8 looks bigger.",
+        "as": "−8 আৰু বাওঁফালে। যিমান বাওঁফালে সিমান সৰু, 8 ডাঙৰ যেন লাগিলেও।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.q3",
+     "type": "order",
+     "skill": "n-line",
+     "q": {
+      "en": "Put these in order, smallest first",
+      "as": "সৰুৰ পৰা ডাঙৰলৈ সজোৱা"
+     },
+     "items": [
+      {
+       "en": "−5",
+       "as": "−5"
+      },
+      {
+       "en": "−2",
+       "as": "−2"
+      },
+      {
+       "en": "0",
+       "as": "0"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      }
+     ],
+     "why": {
+      "en": "Read the line from left to right.",
+      "as": "ৰেখাডাল বাওঁৰ পৰা সোঁলৈ পঢ়া।"
+     }
+    },
+    {
+     "id": "m1.l.q4",
+     "type": "explore",
+     "skill": "n-decimal",
+     "hints": [
+      {
+       "en": "Put the pin near the number, then press Zoom in ×10.",
+       "as": "সংখ্যাটোৰ ওচৰত পিন ৰাখি ×10 জুম টিপা।"
+      }
+     ],
+     "q": {
+      "en": "Zoom in and put the pin on 2.37.",
+      "as": "জুম কৰি পিনটো 2.37ত ৰাখা।"
+     },
+     "widget": {
+      "kind": "line",
+      "min": 0,
+      "max": 10,
+      "fractions": false
+     },
+     "target": 2.37,
+     "answerText": {
+      "en": "2.37 on the line",
+      "as": "ৰেখাত 2.37"
+     },
+     "why": {
+      "en": "Whole number first, then one zoom for each decimal digit.",
+      "as": "প্ৰথমে গোটা সংখ্যা, তাৰ পিছত প্ৰতিটো দশমিক অংকৰ বাবে এবাৰ জুম।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Zoom in and put the pin on 2.37.",
+        "as": "জুম কৰি পিনটো 2.37ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "min": 0,
+        "max": 10,
+        "fractions": false
+       },
+       "target": 2.37,
+       "answerText": {
+        "en": "2.37 on the line",
+        "as": "ৰেখাত 2.37"
+       },
+       "why": {
+        "en": "Whole number first, then one zoom for each decimal digit.",
+        "as": "প্ৰথমে গোটা সংখ্যা, তাৰ পিছত প্ৰতিটো দশমিক অংকৰ বাবে এবাৰ জুম।"
+       }
+      },
+      {
+       "q": {
+        "en": "Zoom in and put the pin on 5.81.",
+        "as": "জুম কৰি পিনটো 5.81ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "min": 0,
+        "max": 10,
+        "fractions": false
+       },
+       "target": 5.81,
+       "answerText": {
+        "en": "5.81 on the line",
+        "as": "ৰেখাত 5.81"
+       },
+       "why": {
+        "en": "Whole number first, then one zoom for each decimal digit.",
+        "as": "প্ৰথমে গোটা সংখ্যা, তাৰ পিছত প্ৰতিটো দশমিক অংকৰ বাবে এবাৰ জুম।"
+       }
+      },
+      {
+       "q": {
+        "en": "Zoom in and put the pin on 7.25.",
+        "as": "জুম কৰি পিনটো 7.25ত ৰাখা।"
+       },
+       "widget": {
+        "kind": "line",
+        "min": 0,
+        "max": 10,
+        "fractions": false
+       },
+       "target": 7.25,
+       "answerText": {
+        "en": "7.25 on the line",
+        "as": "ৰেখাত 7.25"
+       },
+       "why": {
+        "en": "Whole number first, then one zoom for each decimal digit.",
+        "as": "প্ৰথমে গোটা সংখ্যা, তাৰ পিছত প্ৰতিটো দশমিক অংকৰ বাবে এবাৰ জুম।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.q5",
+     "type": "tf",
+     "skill": "n-decimal",
+     "s": {
+      "en": "0.25 is greater than 0.3.",
+      "as": "0.25 0.3তকৈ ডাঙৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "0.3 is 0.30, which is further right than 0.25.",
+      "as": "0.3 মানে 0.30, ই 0.25ৰ সোঁফালে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-dec-long",
+       "why": {
+        "en": "More digits does not mean bigger. Compare place by place: 3 tenths beats 2 tenths.",
+        "as": "বেছি অংক মানে ডাঙৰ নহয়। স্থান অনুসৰি তুলনা কৰা: 3 দশমাংশ 2 দশমাংশতকৈ ডাঙৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.l.q6",
+     "type": "solve",
+     "skill": "n-line",
+     "q": {
+      "en": "How many steps is it from −3 to 4?",
+      "as": "−3ৰ পৰা 4লৈ কিমান খোজ?"
+     },
+     "answer": "7",
+     "why": {
+      "en": "3 steps to reach 0, then 4 more.",
+      "as": "0 পাবলৈ 3 খোজ, তাৰ পিছত আৰু 4।"
+     },
+     "traps": [
+      {
+       "ans": "1",
+       "tag": "m-neg-order",
+       "why": {
+        "en": "Distance through zero adds the two sizes: count to 0, then on.",
+        "as": "শূন্যৰ মাজেৰে দূৰত্বত দুয়োটা আকাৰ যোগ হয়: 0লৈ গণি আগবাঢ়া।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "How many steps is it from −3 to 4?",
+        "as": "−3ৰ পৰা 4লৈ কিমান খোজ?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "3 steps to reach 0, then 4 more.",
+        "as": "0 পাবলৈ 3 খোজ, তাৰ পিছত আৰু 4।"
+       },
+       "traps": [
+        {
+         "ans": "1",
+         "tag": "m-neg-order",
+         "why": {
+          "en": "Distance through zero adds the two sizes: count to 0, then on.",
+          "as": "শূন্যৰ মাজেৰে দূৰত্বত দুয়োটা আকাৰ যোগ হয়: 0লৈ গণি আগবাঢ়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many steps is it from −6 to 2?",
+        "as": "−6ৰ পৰা 2লৈ কিমান খোজ?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "6 steps to reach 0, then 2 more.",
+        "as": "0 পাবলৈ 6 খোজ, তাৰ পিছত আৰু 2।"
+       },
+       "traps": [
+        {
+         "ans": "-4",
+         "tag": "m-neg-order",
+         "why": {
+          "en": "Distance through zero adds the two sizes: count to 0, then on.",
+          "as": "শূন্যৰ মাজেৰে দূৰত্বত দুয়োটা আকাৰ যোগ হয়: 0লৈ গণি আগবাঢ়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many steps is it from −5 to 7?",
+        "as": "−5ৰ পৰা 7লৈ কিমান খোজ?"
+       },
+       "answer": "12",
+       "why": {
+        "en": "5 steps to reach 0, then 7 more.",
+        "as": "0 পাবলৈ 5 খোজ, তাৰ পিছত আৰু 7।"
+       },
+       "traps": [
+        {
+         "ans": "2",
+         "tag": "m-neg-order",
+         "why": {
+          "en": "Distance through zero adds the two sizes: count to 0, then on.",
+          "as": "শূন্যৰ মাজেৰে দূৰত্বত দুয়োটা আকাৰ যোগ হয়: 0লৈ গণি আগবাঢ়া।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m1.l.q7",
+     "type": "explore",
+     "skill": "n-decimal",
+     "q": {
+      "en": "Put the pin on $\\frac{3}{4}$. The fractions are below the line.",
+      "as": "পিনটো $\\frac{3}{4}ত ৰাখা। ভগ্নাংশবোৰ ৰেখাৰ তলত।"
+     },
+     "widget": {
+      "kind": "line",
+      "min": 0,
+      "max": 1,
+      "fractions": true,
+      "percent": true
+     },
+     "target": 0.75,
+     "answerText": {
+      "en": "0.75",
+      "as": "0.75"
+     },
+     "why": {
+      "en": "$\\frac{3}{4}$ is the same point as 0.75.",
+      "as": "$\\frac{3}{4}$ আৰু 0.75 একে বিন্দু।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Put the pin on $\\frac{3}{4}$. The fractions are below the line.",
+        "as": "পিনটো $\\frac{3}{4}ত ৰাখা। ভগ্নাংশবোৰ ৰেখাৰ তলত।"
+       },
+       "widget": {
+        "kind": "line",
+        "min": 0,
+        "max": 1,
+        "fractions": true,
+        "percent": true
+       },
+       "target": 0.75,
+       "answerText": {
+        "en": "0.75",
+        "as": "0.75"
+       },
+       "why": {
+        "en": "$\\frac{3}{4}$ is the same point as 0.75.",
+        "as": "$\\frac{3}{4}$ আৰু 0.75 একে বিন্দু।"
+       }
+      },
+      {
+       "q": {
+        "en": "Put the pin on $\\frac{1}{4}$. The fractions are below the line.",
+        "as": "পিনটো $\\frac{1}{4}ত ৰাখা। ভগ্নাংশবোৰ ৰেখাৰ তলত।"
+       },
+       "widget": {
+        "kind": "line",
+        "min": 0,
+        "max": 1,
+        "fractions": true,
+        "percent": true
+       },
+       "target": 0.25,
+       "answerText": {
+        "en": "0.25",
+        "as": "0.25"
+       },
+       "why": {
+        "en": "$\\frac{1}{4}$ is the same point as 0.25.",
+        "as": "$\\frac{1}{4}$ আৰু 0.25 একে বিন্দু।"
+       }
+      },
+      {
+       "q": {
+        "en": "Put the pin on $\\frac{1}{2}$. The fractions are below the line.",
+        "as": "পিনটো $\\frac{1}{2}ত ৰাখা। ভগ্নাংশবোৰ ৰেখাৰ তলত।"
+       },
+       "widget": {
+        "kind": "line",
+        "min": 0,
+        "max": 1,
+        "fractions": true,
+        "percent": true
+       },
+       "target": 0.5,
+       "answerText": {
+        "en": "0.5",
+        "as": "0.5"
+       },
+       "why": {
+        "en": "$\\frac{1}{2}$ is the same point as 0.5.",
+        "as": "$\\frac{1}{2}$ আৰু 0.5 একে বিন্দু।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u1",
+   "title": {
+    "en": "Number families",
+    "as": "সংখ্যাৰ পৰিয়াল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Natural numbers start at 1; whole numbers add 0; integers add the negatives.",
+     "as": "স্বাভাৱিক সংখ্যা 1ৰ পৰা আৰম্ভ হয়; পূৰ্ণ সংখ্যাত 0 যোগ হয়; অখণ্ড সংখ্যাত ঋণাত্মক সংখ্যাও থাকে।"
+    },
+    {
+     "en": "A prime has exactly two factors: 1 and itself.",
+     "as": "মৌলিক সংখ্যাৰ ঠিক দুটা গুণনীয়ক থাকে: 1 আৰু সংখ্যাটো নিজে।"
+    },
+    {
+     "en": "1 is neither prime nor composite, and 2 is the only even prime.",
+     "as": "1 মৌলিকো নহয়, যৌগিকো নহয়; 2 একমাত্ৰ যুগ্ম মৌলিক সংখ্যা।"
+    },
+    {
+     "en": "Every number above 1 peels into primes in exactly one way.",
+     "as": "1তকৈ ডাঙৰ প্ৰতিটো সংখ্যা মাত্ৰ এটা ধৰণেৰে মৌলিক গুণনীয়কত ভাঙে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m1.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Numbers come in families",
+      "as": "সংখ্যাৰো পৰিয়াল আছে"
+     },
+     "text": [
+      {
+       "en": "Exams ask what kind of number something is. Learn the families once and these marks are free.",
+       "as": "পৰীক্ষাত সোধে সংখ্যা এটা কোন ধৰণৰ। পৰিয়ালকেইটা এবাৰ শিকিলে এই নম্বৰবোৰ সহজ।"
+      },
+      {
+       "en": "Each family contains the one before it, like rooms inside a house.",
+       "as": "ঘৰৰ ভিতৰত কোঠাৰ দৰে প্ৰতিটো পৰিয়ালৰ ভিতৰত আগৰটো থাকে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Natural: 1, 2, 3 …",
+        "as": "স্বাভাৱিক: 1, 2, 3 …"
+       },
+       {
+        "en": "Whole: 0, 1, 2 …",
+        "as": "পূৰ্ণ: 0, 1, 2 …"
+       },
+       {
+        "en": "Integers: … −1, 0, 1 …",
+        "as": "অখণ্ড: … −1, 0, 1 …"
+       },
+       {
+        "en": "Rational: any $\\frac{p}{q}$",
+        "as": "পৰিমেয়: যিকোনো $\\frac{p}{q}$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m1.u1.q1",
+     "type": "match",
+     "skill": "n-types",
+     "q": {
+      "en": "Match each number to its smallest family",
+      "as": "প্ৰতিটো সংখ্যাক ইয়াৰ সৰুতম পৰিয়ালৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "7",
+        "as": "7"
+       },
+       {
+        "en": "Natural",
+        "as": "স্বাভাৱিক"
+       }
+      ],
+      [
+       {
+        "en": "0",
+        "as": "0"
+       },
+       {
+        "en": "Whole",
+        "as": "পূৰ্ণ"
+       }
+      ],
+      [
+       {
+        "en": "−4",
+        "as": "−4"
+       },
+       {
+        "en": "Integer",
+        "as": "অখণ্ড"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{2}{3}$",
+        "as": "$\\frac{2}{3}$"
+       },
+       {
+        "en": "Rational",
+        "as": "পৰিমেয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "0 is the first whole number but not a natural number. −4 needs integers, and $\\frac{2}{3}$ needs rationals.",
+      "as": "0 প্ৰথম পূৰ্ণ সংখ্যা, কিন্তু স্বাভাৱিক সংখ্যা নহয়। −4ৰ বাবে অখণ্ড আৰু $\\frac{2}{3}$ৰ বাবে পৰিমেয় সংখ্যা লাগে।"
+     }
+    },
+    {
+     "id": "m1.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "A factor is a rectangle",
+      "as": "গুণনীয়ক মানে এটা আয়ত"
+     },
+     "text": [
+      {
+       "en": "Line up 24 dots in equal rows. When they make a clean rectangle, you have found a factor.",
+       "as": "24টা বিন্দু সমান শাৰীত সজোৱা। পৰিষ্কাৰ আয়ত হ'লে এটা গুণনীয়ক পালা।"
+      }
+     ],
+     "widget": {
+      "kind": "array",
+      "n": 24,
+      "max": 12,
+      "c": 2
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to 6 dots in each row.",
+        "as": "প্ৰতি শাৰীত 6টা বিন্দু কৰা।"
+       },
+       "goal": {
+        "c": 6
+       },
+       "then": {
+        "en": "24 = 6 × 4. A clean rectangle means 6 and 4 are factors.",
+        "as": "24 = 6 × 4। পৰিষ্কাৰ আয়ত মানে 6 আৰু 4 গুণনীয়ক।"
+       }
+      },
+      {
+       "do": {
+        "en": "Find a row length that leaves dots over.",
+        "as": "বিন্দু বাকী থকা এটা শাৰী বিচাৰা।"
+       },
+       "goal": {
+        "broke": 1
+       },
+       "then": {
+        "en": "Red dots are the remainder. That number is not a factor.",
+        "as": "ৰঙা বিন্দুবোৰ ভাগশেষ। সেই সংখ্যাটো গুণনীয়ক নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u1.s3",
+     "type": "story",
+     "title": {
+      "en": "Why primes refuse",
+      "as": "মৌলিকে কিয় নামানে"
+     },
+     "text": [
+      {
+       "en": "Now try 13 dots, the same way.",
+       "as": "এতিয়া 13টা বিন্দুৰে একেদৰে চেষ্টা কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "array",
+      "n": 13,
+      "max": 12,
+      "c": 2
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide all the way to 12.",
+        "as": "12লৈকে টানা।"
+       },
+       "goal": {
+        "c": 12
+       },
+       "then": {
+        "en": "Red dots every time. 13 only makes one long row, and that is what prime means.",
+        "as": "প্ৰতিবাৰে ৰঙা বিন্দু। 13ৰ কেৱল এটা দীঘল শাৰী হয়, মৌলিক মানে এয়াই।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u1.q2",
+     "type": "tf",
+     "skill": "n-types",
+     "s": {
+      "en": "1 is a prime number.",
+      "as": "1 এটা মৌলিক সংখ্যা।"
+     },
+     "answer": false,
+     "why": {
+      "en": "A prime needs exactly two factors. 1 has only one, so it is neither prime nor composite.",
+      "as": "মৌলিক সংখ্যাৰ ঠিক দুটা গুণনীয়ক লাগে। 1ৰ মাত্ৰ এটা, সেয়ে ই মৌলিকো নহয়, যৌগিকো নহয়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-one-prime",
+       "why": {
+        "en": "You counted 1 as a prime. It has only one factor.",
+        "as": "তুমি 1ক মৌলিক ধৰিলা। ইয়াৰ মাত্ৰ এটা গুণনীয়ক আছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u1.q3",
+     "type": "odd",
+     "skill": "n-types",
+     "q": {
+      "en": "Which one is not prime?",
+      "as": "কোনটো মৌলিক নহয়?"
+     },
+     "why": {
+      "en": "51 looks prime, but it can be divided: 3 × 17 = 51.",
+      "as": "51 মৌলিক যেন লাগে, কিন্তু ভাঙিব পাৰি: 3 × 17 = 51।"
+     },
+     "options": [
+      {
+       "en": "59",
+       "as": "59"
+      },
+      {
+       "en": "51",
+       "as": "51"
+      },
+      {
+       "en": "53",
+       "as": "53"
+      },
+      {
+       "en": "61",
+       "as": "61"
+      }
+     ],
+     "answer": 1,
+     "variants": [
+      {
+       "q": {
+        "en": "Which one is not prime?",
+        "as": "কোনটো মৌলিক নহয়?"
+       },
+       "why": {
+        "en": "51 looks prime, but it can be divided: 3 × 17 = 51.",
+        "as": "51 মৌলিক যেন লাগে, কিন্তু ভাঙিব পাৰি: 3 × 17 = 51।"
+       },
+       "options": [
+        {
+         "en": "59",
+         "as": "59"
+        },
+        {
+         "en": "51",
+         "as": "51"
+        },
+        {
+         "en": "53",
+         "as": "53"
+        },
+        {
+         "en": "61",
+         "as": "61"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Which one is not prime?",
+        "as": "কোনটো মৌলিক নহয়?"
+       },
+       "why": {
+        "en": "57 looks prime, but it can be divided: 3 × 19 = 57.",
+        "as": "57 মৌলিক যেন লাগে, কিন্তু ভাঙিব পাৰি: 3 × 19 = 57।"
+       },
+       "options": [
+        {
+         "en": "43",
+         "as": "43"
+        },
+        {
+         "en": "41",
+         "as": "41"
+        },
+        {
+         "en": "57",
+         "as": "57"
+        },
+        {
+         "en": "47",
+         "as": "47"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "q": {
+        "en": "Which one is not prime?",
+        "as": "কোনটো মৌলিক নহয়?"
+       },
+       "why": {
+        "en": "91 looks prime, but it can be divided: 7 × 13 = 91.",
+        "as": "91 মৌলিক যেন লাগে, কিন্তু ভাঙিব পাৰি: 7 × 13 = 91।"
+       },
+       "options": [
+        {
+         "en": "79",
+         "as": "79"
+        },
+        {
+         "en": "89",
+         "as": "89"
+        },
+        {
+         "en": "83",
+         "as": "83"
+        },
+        {
+         "en": "91",
+         "as": "91"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "q": {
+        "en": "Which one is not prime?",
+        "as": "কোনটো মৌলিক নহয়?"
+       },
+       "why": {
+        "en": "87 looks prime, but it can be divided: 3 × 29 = 87.",
+        "as": "87 মৌলিক যেন লাগে, কিন্তু ভাঙিব পাৰি: 3 × 29 = 87।"
+       },
+       "options": [
+        {
+         "en": "71",
+         "as": "71"
+        },
+        {
+         "en": "67",
+         "as": "67"
+        },
+        {
+         "en": "73",
+         "as": "73"
+        },
+        {
+         "en": "87",
+         "as": "87"
+        }
+       ],
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "m1.u1.q4",
+     "type": "explore",
+     "skill": "n-factor",
+     "hints": [
+      {
+       "en": "Even? Start with 2.",
+       "as": "যুগ্ম নেকি? 2ৰে আৰম্ভ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Peel 84 completely into primes.",
+      "as": "84ক সম্পূৰ্ণকৈ মৌলিকলৈ ভাঙা।"
+     },
+     "widget": {
+      "kind": "peel",
+      "n": 84
+     },
+     "target": 84,
+     "answerText": {
+      "en": "Divide only by primes that fit",
+      "as": "কেৱল মিলা মৌলিকেৰে হৰণ কৰা"
+     },
+     "why": {
+      "en": "Any order gives the same primes for 84. A wrong tap is a prime that does not divide what is left.",
+      "as": "যিকোনো ক্ৰমতে 84ৰ একেকেইটা মৌলিক পোৱা যায়। ভুল টিপা মানে বাকী থকা সংখ্যাক সেই মৌলিকে হৰণ নকৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Peel 84 completely into primes.",
+        "as": "84ক সম্পূৰ্ণকৈ মৌলিকলৈ ভাঙা।"
+       },
+       "widget": {
+        "kind": "peel",
+        "n": 84
+       },
+       "target": 84,
+       "answerText": {
+        "en": "Divide only by primes that fit",
+        "as": "কেৱল মিলা মৌলিকেৰে হৰণ কৰা"
+       },
+       "why": {
+        "en": "Any order gives the same primes for 84. A wrong tap is a prime that does not divide what is left.",
+        "as": "যিকোনো ক্ৰমতে 84ৰ একেকেইটা মৌলিক পোৱা যায়। ভুল টিপা মানে বাকী থকা সংখ্যাক সেই মৌলিকে হৰণ নকৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Peel 90 completely into primes.",
+        "as": "90ক সম্পূৰ্ণকৈ মৌলিকলৈ ভাঙা।"
+       },
+       "widget": {
+        "kind": "peel",
+        "n": 90
+       },
+       "target": 90,
+       "answerText": {
+        "en": "Divide only by primes that fit",
+        "as": "কেৱল মিলা মৌলিকেৰে হৰণ কৰা"
+       },
+       "why": {
+        "en": "Any order gives the same primes for 90. A wrong tap is a prime that does not divide what is left.",
+        "as": "যিকোনো ক্ৰমতে 90ৰ একেকেইটা মৌলিক পোৱা যায়। ভুল টিপা মানে বাকী থকা সংখ্যাক সেই মৌলিকে হৰণ নকৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Peel 126 completely into primes.",
+        "as": "126ক সম্পূৰ্ণকৈ মৌলিকলৈ ভাঙা।"
+       },
+       "widget": {
+        "kind": "peel",
+        "n": 126
+       },
+       "target": 126,
+       "answerText": {
+        "en": "Divide only by primes that fit",
+        "as": "কেৱল মিলা মৌলিকেৰে হৰণ কৰা"
+       },
+       "why": {
+        "en": "Any order gives the same primes for 126. A wrong tap is a prime that does not divide what is left.",
+        "as": "যিকোনো ক্ৰমতে 126ৰ একেকেইটা মৌলিক পোৱা যায়। ভুল টিপা মানে বাকী থকা সংখ্যাক সেই মৌলিকে হৰণ নকৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Peel 150 completely into primes.",
+        "as": "150ক সম্পূৰ্ণকৈ মৌলিকলৈ ভাঙা।"
+       },
+       "widget": {
+        "kind": "peel",
+        "n": 150
+       },
+       "target": 150,
+       "answerText": {
+        "en": "Divide only by primes that fit",
+        "as": "কেৱল মিলা মৌলিকেৰে হৰণ কৰা"
+       },
+       "why": {
+        "en": "Any order gives the same primes for 150. A wrong tap is a prime that does not divide what is left.",
+        "as": "যিকোনো ক্ৰমতে 150ৰ একেকেইটা মৌলিক পোৱা যায়। ভুল টিপা মানে বাকী থকা সংখ্যাক সেই মৌলিকে হৰণ নকৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u1.q5",
+     "type": "solve",
+     "skill": "n-types",
+     "hints": [
+      {
+       "en": "List the odd numbers, then strike out multiples of 3, 5 and 7.",
+       "as": "অযুগ্ম সংখ্যাবোৰ লিখা, তাৰ পিছত 3, 5 আৰু 7ৰ গুণিতক কাটি দিয়া।"
+      }
+     ],
+     "q": {
+      "en": "How many primes lie between 10 and 30?",
+      "as": "10 আৰু 30ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+     },
+     "answer": "6",
+     "why": {
+      "en": "They are 11, 13, 17, 19, 23, 29.",
+      "as": "সেইবোৰ হ'ল 11, 13, 17, 19, 23, 29।"
+     },
+     "traps": [
+      {
+       "ans": "7",
+       "tag": "m-odd-prime",
+       "why": {
+        "en": "You probably counted an odd number that is not prime, such as 21, 27 or 33.",
+        "as": "তুমি হয়তো মৌলিক নোহোৱা অযুগ্ম সংখ্যা ধৰিলা, যেনে 21, 27 বা 33।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "How many primes lie between 10 and 30?",
+        "as": "10 আৰু 30ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "They are 11, 13, 17, 19, 23, 29.",
+        "as": "সেইবোৰ হ'ল 11, 13, 17, 19, 23, 29।"
+       },
+       "traps": [
+        {
+         "ans": "7",
+         "tag": "m-odd-prime",
+         "why": {
+          "en": "You probably counted an odd number that is not prime, such as 21, 27 or 33.",
+          "as": "তুমি হয়তো মৌলিক নোহোৱা অযুগ্ম সংখ্যা ধৰিলা, যেনে 21, 27 বা 33।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many primes lie between 20 and 40?",
+        "as": "20 আৰু 40ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "They are 23, 29, 31, 37.",
+        "as": "সেইবোৰ হ'ল 23, 29, 31, 37।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-odd-prime",
+         "why": {
+          "en": "You probably counted an odd number that is not prime, such as 21, 27 or 33.",
+          "as": "তুমি হয়তো মৌলিক নোহোৱা অযুগ্ম সংখ্যা ধৰিলা, যেনে 21, 27 বা 33।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many primes lie between 30 and 50?",
+        "as": "30 আৰু 50ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "They are 31, 37, 41, 43, 47.",
+        "as": "সেইবোৰ হ'ল 31, 37, 41, 43, 47।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-odd-prime",
+         "why": {
+          "en": "You probably counted an odd number that is not prime, such as 21, 27 or 33.",
+          "as": "তুমি হয়তো মৌলিক নোহোৱা অযুগ্ম সংখ্যা ধৰিলা, যেনে 21, 27 বা 33।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Divisibility shortcuts",
+    "as": "বিভাজ্যতাৰ চুটি পথ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "By 2 or 5: look at the last digit. By 4: the last two digits. By 8: the last three.",
+     "as": "2 বা 5ৰ বাবে শেষৰ অংক চোৱা। 4ৰ বাবে শেষৰ দুটা, 8ৰ বাবে শেষৰ তিনিটা।"
+    },
+    {
+     "en": "By 3 or 9: add all the digits.",
+     "as": "3 বা 9ৰ বাবে সকলো অংক যোগ কৰা।"
+    },
+    {
+     "en": "By 6: the number must pass both 2 and 3.",
+     "as": "6ৰ বাবে 2 আৰু 3 দুয়োটা পৰীক্ষা পাৰ হ'ব লাগিব।"
+    },
+    {
+     "en": "By 11: alternate digits' sums must differ by 0 or a multiple of 11.",
+     "as": "11ৰ বাবে এটাৰ পিছত এটা অংকৰ যোগফলৰ পাৰ্থক্য 0 বা 11ৰ গুণিতক হ'ব লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m1.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Test without dividing",
+      "as": "হৰণ নকৰাকৈ পৰীক্ষা"
+     },
+     "text": [
+      {
+       "en": "In an exam you have under a minute. These rules answer in seconds.",
+       "as": "পৰীক্ষাত এক মিনিটো নাথাকে। এই নিয়মবোৰে চেকেণ্ডতে উত্তৰ দিয়ে।"
+      },
+      {
+       "en": "Each rule looks at only part of the number, so even huge numbers are quick.",
+       "as": "প্ৰতিটো নিয়মে সংখ্যাৰ অলপ অংশহে চায়, সেয়ে বিশাল সংখ্যাও সোনকালে হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "2, 5: last digit",
+        "as": "2, 5: শেষৰ অংক"
+       },
+       {
+        "en": "4: last two digits",
+        "as": "4: শেষৰ দুটা অংক"
+       },
+       {
+        "en": "3, 9: digit sum",
+        "as": "3, 9: অংকৰ যোগফল"
+       },
+       {
+        "en": "6: passes 2 and 3",
+        "as": "6: 2 আৰু 3 দুয়োটা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m1.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Why the digit sum works",
+      "as": "অংকৰ যোগফল কিয় মিলে"
+     },
+     "text": [
+      {
+       "en": "$10 = 9 + 1$, so every place value is a multiple of 9 plus 1.",
+       "as": "$10 = 9 + 1$, সেয়ে প্ৰতিটো স্থানীয় মান 9ৰ গুণিতকৰ লগত 1।"
+      },
+      {
+       "en": "That leaves only the digits themselves to check, which is the whole rule for 3 and 9.",
+       "as": "তেনেহ'লে কেৱল অংকবোৰ পৰীক্ষা কৰিলেই হয়, এয়াই 3 আৰু 9ৰ নিয়ম।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$423 = 400 + 20 + 3$",
+        "as": "$423 = 400 + 20 + 3$"
+       },
+       {
+        "en": "$4 + 2 + 3 = 9$",
+        "as": "$4 + 2 + 3 = 9$"
+       },
+       {
+        "en": "So 423 divides by 9",
+        "as": "সেয়ে 423 9ৰে হৰণ যায়"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m1.u2.q1",
+     "type": "match",
+     "skill": "n-div",
+     "q": {
+      "en": "Match each test to what you check",
+      "as": "প্ৰতিটো পৰীক্ষাক কি চাব লাগে তাৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "By 5",
+        "as": "5ৰে"
+       },
+       {
+        "en": "Last digit 0 or 5",
+        "as": "শেষৰ অংক 0 বা 5"
+       }
+      ],
+      [
+       {
+        "en": "By 4",
+        "as": "4ৰে"
+       },
+       {
+        "en": "Last two digits",
+        "as": "শেষৰ দুটা অংক"
+       }
+      ],
+      [
+       {
+        "en": "By 9",
+        "as": "9ৰে"
+       },
+       {
+        "en": "Digit sum",
+        "as": "অংকৰ যোগফল"
+       }
+      ],
+      [
+       {
+        "en": "By 6",
+        "as": "6ৰে"
+       },
+       {
+        "en": "Both 2 and 3",
+        "as": "2 আৰু 3 দুয়োটা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each rule depends on how place value behaves for that divisor.",
+      "as": "প্ৰতিটো নিয়ম সেই হৰকৰ বাবে স্থানীয় মানৰ আচৰণৰ ওপৰত নিৰ্ভৰ কৰে।"
+     }
+    },
+    {
+     "id": "m1.u2.q2",
+     "type": "tf",
+     "skill": "n-div",
+     "s": {
+      "en": "Any number ending in 3 is divisible by 3.",
+      "as": "3ৰে শেষ হোৱা যিকোনো সংখ্যা 3ৰে হৰণ যায়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "13 ends in 3 but is not divisible by 3. For 3, add the digits instead.",
+      "as": "13ৰ শেষত 3 আছে, কিন্তু 3ৰে হৰণ নাযায়। 3ৰ বাবে অংকবোৰ যোগ কৰিব লাগে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-div-last",
+       "why": {
+        "en": "The last digit decides 2 and 5, not 3. For 3 use the digit sum.",
+        "as": "শেষৰ অংকই 2 আৰু 5ৰ সিদ্ধান্ত দিয়ে, 3ৰ নহয়। 3ৰ বাবে অংকৰ যোগফল লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u2.q3",
+     "type": "solve",
+     "skill": "n-div",
+     "hints": [
+      {
+       "en": "Add the digits you can see first.",
+       "as": "প্ৰথমে দেখা অংকবোৰ যোগ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "$\\mathbf{52\\,?\\,4}$ must be divisible by 9. What is the smallest digit for ?",
+      "as": "$\\mathbf{52\\,?\\,4}$ 9ৰে হৰণ যাব লাগে। ?ৰ সৰুতম অংকটো কি?"
+     },
+     "answer": "7",
+     "why": {
+      "en": "The digits must add to a multiple of 9: 11 + 7 = 18.",
+      "as": "অংকবোৰৰ যোগফল 9ৰ গুণিতক হ'ব লাগিব: 11 + 7 = 18।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "$\\mathbf{52\\,?\\,4}$ must be divisible by 9. What is the smallest digit for ?",
+        "as": "$\\mathbf{52\\,?\\,4}$ 9ৰে হৰণ যাব লাগে। ?ৰ সৰুতম অংকটো কি?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "The digits must add to a multiple of 9: 11 + 7 = 18.",
+        "as": "অংকবোৰৰ যোগফল 9ৰ গুণিতক হ'ব লাগিব: 11 + 7 = 18।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\mathbf{31\\,?\\,6}$ must be divisible by 9. What is the smallest digit for ?",
+        "as": "$\\mathbf{31\\,?\\,6}$ 9ৰে হৰণ যাব লাগে। ?ৰ সৰুতম অংকটো কি?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "The digits must add to a multiple of 9: 10 + 8 = 18.",
+        "as": "অংকবোৰৰ যোগফল 9ৰ গুণিতক হ'ব লাগিব: 10 + 8 = 18।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\mathbf{74\\,?\\,1}$ must be divisible by 3. What is the smallest digit for ?",
+        "as": "$\\mathbf{74\\,?\\,1}$ 3ৰে হৰণ যাব লাগে। ?ৰ সৰুতম অংকটো কি?"
+       },
+       "answer": "0",
+       "why": {
+        "en": "The digits must add to a multiple of 3: 12 + 0 = 12.",
+        "as": "অংকবোৰৰ যোগফল 3ৰ গুণিতক হ'ব লাগিব: 12 + 0 = 12।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\mathbf{23\\,?\\,8}$ must be divisible by 3. What is the smallest digit for ?",
+        "as": "$\\mathbf{23\\,?\\,8}$ 3ৰে হৰণ যাব লাগে। ?ৰ সৰুতম অংকটো কি?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "The digits must add to a multiple of 3: 13 + 2 = 15.",
+        "as": "অংকবোৰৰ যোগফল 3ৰ গুণিতক হ'ব লাগিব: 13 + 2 = 15।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u2.q4",
+     "type": "odd",
+     "skill": "n-div",
+     "q": {
+      "en": "Which number is not divisible by 3?",
+      "as": "কোনটো সংখ্যা 3ৰে হৰণ নাযায়?"
+     },
+     "why": {
+      "en": "Use the rule for 3 on each number. 1234 is the one that fails it.",
+      "as": "প্ৰতিটো সংখ্যাত 3ৰ নিয়ম খটুওৱা। 1234য়েই পাৰ নহয়।"
+     },
+     "options": [
+      {
+       "en": "4512",
+       "as": "4512"
+      },
+      {
+       "en": "1234",
+       "as": "1234"
+      },
+      {
+       "en": "1116",
+       "as": "1116"
+      },
+      {
+       "en": "2316",
+       "as": "2316"
+      }
+     ],
+     "answer": 1,
+     "variants": [
+      {
+       "q": {
+        "en": "Which number is not divisible by 3?",
+        "as": "কোনটো সংখ্যা 3ৰে হৰণ নাযায়?"
+       },
+       "why": {
+        "en": "Use the rule for 3 on each number. 1234 is the one that fails it.",
+        "as": "প্ৰতিটো সংখ্যাত 3ৰ নিয়ম খটুওৱা। 1234য়েই পাৰ নহয়।"
+       },
+       "options": [
+        {
+         "en": "4512",
+         "as": "4512"
+        },
+        {
+         "en": "1234",
+         "as": "1234"
+        },
+        {
+         "en": "1116",
+         "as": "1116"
+        },
+        {
+         "en": "2316",
+         "as": "2316"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Which number is not divisible by 4?",
+        "as": "কোনটো সংখ্যা 4ৰে হৰণ নাযায়?"
+       },
+       "why": {
+        "en": "Use the rule for 4 on each number. 5714 is the one that fails it.",
+        "as": "প্ৰতিটো সংখ্যাত 4ৰ নিয়ম খটুওৱা। 5714য়েই পাৰ নহয়।"
+       },
+       "options": [
+        {
+         "en": "3912",
+         "as": "3912"
+        },
+        {
+         "en": "2124",
+         "as": "2124"
+        },
+        {
+         "en": "5714",
+         "as": "5714"
+        },
+        {
+         "en": "7116",
+         "as": "7116"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "q": {
+        "en": "Which number is not divisible by 4?",
+        "as": "কোনটো সংখ্যা 4ৰে হৰণ নাযায়?"
+       },
+       "why": {
+        "en": "Use the rule for 4 on each number. 2022 is the one that fails it.",
+        "as": "প্ৰতিটো সংখ্যাত 4ৰ নিয়ম খটুওৱা। 2022য়েই পাৰ নহয়।"
+       },
+       "options": [
+        {
+         "en": "7032",
+         "as": "7032"
+        },
+        {
+         "en": "2022",
+         "as": "2022"
+        },
+        {
+         "en": "5016",
+         "as": "5016"
+        },
+        {
+         "en": "3024",
+         "as": "3024"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Which number is not divisible by 9?",
+        "as": "কোনটো সংখ্যা 9ৰে হৰণ নাযায়?"
+       },
+       "why": {
+        "en": "Use the rule for 9 on each number. 8164 is the one that fails it.",
+        "as": "প্ৰতিটো সংখ্যাত 9ৰ নিয়ম খটুওৱা। 8164য়েই পাৰ নহয়।"
+       },
+       "options": [
+        {
+         "en": "4374",
+         "as": "4374"
+        },
+        {
+         "en": "7236",
+         "as": "7236"
+        },
+        {
+         "en": "8164",
+         "as": "8164"
+        },
+        {
+         "en": "5418",
+         "as": "5418"
+        }
+       ],
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "m1.u2.q5",
+     "type": "stepwise",
+     "skill": "n-div",
+     "q": {
+      "en": "Is 4518 divisible by 6?",
+      "as": "4518 6ৰে হৰণ যায় নে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "First check: 2",
+        "as": "প্ৰথম পৰীক্ষা: 2"
+       },
+       "options": [
+        {
+         "en": "No, it is odd",
+         "as": "নহয়, অযুগ্ম"
+        },
+        {
+         "en": "Yes, it is even",
+         "as": "হয়, যুগ্ম"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "The last digit is even.",
+        "as": "শেষৰ অংক যুগ্ম।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Second check: digit sum",
+        "as": "দ্বিতীয় পৰীক্ষা: অংকৰ যোগফল"
+       },
+       "options": [
+        {
+         "en": "18, a multiple of 3",
+         "as": "18, 3ৰ গুণিতক"
+        },
+        {
+         "en": "19, not a multiple of 3",
+         "as": "19, 3ৰ গুণিতক নহয়"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Add every digit carefully.",
+        "as": "প্ৰতিটো অংক সাৱধানে যোগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So, by 6?",
+        "as": "তেনেহ'লে 6ৰে?"
+       },
+       "options": [
+        {
+         "en": "No",
+         "as": "নহয়"
+        },
+        {
+         "en": "Yes, it passes both",
+         "as": "হয়, দুয়োটা পাৰ"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "6 needs both tests, and it passed both.",
+        "as": "6ৰ বাবে দুয়োটা পৰীক্ষা লাগে, দুয়োটা পাৰ হ'ল।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Testing by 6 is just two easy tests in a row.",
+      "as": "6ৰ পৰীক্ষা মানে পৰ পৰ দুটা সহজ পৰীক্ষা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Is 4518 divisible by 6?",
+        "as": "4518 6ৰে হৰণ যায় নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "First check: 2",
+          "as": "প্ৰথম পৰীক্ষা: 2"
+         },
+         "options": [
+          {
+           "en": "No, it is odd",
+           "as": "নহয়, অযুগ্ম"
+          },
+          {
+           "en": "Yes, it is even",
+           "as": "হয়, যুগ্ম"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The last digit is even.",
+          "as": "শেষৰ অংক যুগ্ম।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Second check: digit sum",
+          "as": "দ্বিতীয় পৰীক্ষা: অংকৰ যোগফল"
+         },
+         "options": [
+          {
+           "en": "18, a multiple of 3",
+           "as": "18, 3ৰ গুণিতক"
+          },
+          {
+           "en": "19, not a multiple of 3",
+           "as": "19, 3ৰ গুণিতক নহয়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add every digit carefully.",
+          "as": "প্ৰতিটো অংক সাৱধানে যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So, by 6?",
+          "as": "তেনেহ'লে 6ৰে?"
+         },
+         "options": [
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Yes, it passes both",
+           "as": "হয়, দুয়োটা পাৰ"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "6 needs both tests, and it passed both.",
+          "as": "6ৰ বাবে দুয়োটা পৰীক্ষা লাগে, দুয়োটা পাৰ হ'ল।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Testing by 6 is just two easy tests in a row.",
+        "as": "6ৰ পৰীক্ষা মানে পৰ পৰ দুটা সহজ পৰীক্ষা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Is 7362 divisible by 6?",
+        "as": "7362 6ৰে হৰণ যায় নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "First check: 2",
+          "as": "প্ৰথম পৰীক্ষা: 2"
+         },
+         "options": [
+          {
+           "en": "Yes, it is even",
+           "as": "হয়, যুগ্ম"
+          },
+          {
+           "en": "No, it is odd",
+           "as": "নহয়, অযুগ্ম"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The last digit is even.",
+          "as": "শেষৰ অংক যুগ্ম।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Second check: digit sum",
+          "as": "দ্বিতীয় পৰীক্ষা: অংকৰ যোগফল"
+         },
+         "options": [
+          {
+           "en": "19, not a multiple of 3",
+           "as": "19, 3ৰ গুণিতক নহয়"
+          },
+          {
+           "en": "18, a multiple of 3",
+           "as": "18, 3ৰ গুণিতক"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add every digit carefully.",
+          "as": "প্ৰতিটো অংক সাৱধানে যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So, by 6?",
+          "as": "তেনেহ'লে 6ৰে?"
+         },
+         "options": [
+          {
+           "en": "Yes, it passes both",
+           "as": "হয়, দুয়োটা পাৰ"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "6 needs both tests, and it passed both.",
+          "as": "6ৰ বাবে দুয়োটা পৰীক্ষা লাগে, দুয়োটা পাৰ হ'ল।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Testing by 6 is just two easy tests in a row.",
+        "as": "6ৰ পৰীক্ষা মানে পৰ পৰ দুটা সহজ পৰীক্ষা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Is 1944 divisible by 6?",
+        "as": "1944 6ৰে হৰণ যায় নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "First check: 2",
+          "as": "প্ৰথম পৰীক্ষা: 2"
+         },
+         "options": [
+          {
+           "en": "No, it is odd",
+           "as": "নহয়, অযুগ্ম"
+          },
+          {
+           "en": "Yes, it is even",
+           "as": "হয়, যুগ্ম"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The last digit is even.",
+          "as": "শেষৰ অংক যুগ্ম।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Second check: digit sum",
+          "as": "দ্বিতীয় পৰীক্ষা: অংকৰ যোগফল"
+         },
+         "options": [
+          {
+           "en": "18, a multiple of 3",
+           "as": "18, 3ৰ গুণিতক"
+          },
+          {
+           "en": "19, not a multiple of 3",
+           "as": "19, 3ৰ গুণিতক নহয়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add every digit carefully.",
+          "as": "প্ৰতিটো অংক সাৱধানে যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So, by 6?",
+          "as": "তেনেহ'লে 6ৰে?"
+         },
+         "options": [
+          {
+           "en": "Yes, it passes both",
+           "as": "হয়, দুয়োটা পাৰ"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "6 needs both tests, and it passed both.",
+          "as": "6ৰ বাবে দুয়োটা পৰীক্ষা লাগে, দুয়োটা পাৰ হ'ল।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Testing by 6 is just two easy tests in a row.",
+        "as": "6ৰ পৰীক্ষা মানে পৰ পৰ দুটা সহজ পৰীক্ষা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Last-digit tricks",
+    "as": "শেষৰ অংকৰ কৌশল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Only last digits affect the last digit of a product.",
+     "as": "পূৰণফলৰ শেষৰ অংক কেৱল শেষৰ অংকবোৰৰ ওপৰত নিৰ্ভৰ কৰে।"
+    },
+    {
+     "en": "Powers repeat their last digit in a cycle of at most 4.",
+     "as": "ঘাতৰ শেষৰ অংক সৰ্বাধিক 4ৰ চক্ৰত ঘূৰি আহে।"
+    },
+    {
+     "en": "Divide the power by 4 and use the remainder.",
+     "as": "ঘাতক 4ৰে হৰণ কৰি ভাগশেষ ব্যৱহাৰ কৰা।"
+    },
+    {
+     "en": "A remainder of 0 means the fourth place in the cycle.",
+     "as": "ভাগশেষ 0 মানে চক্ৰৰ চতুৰ্থ স্থান।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m1.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Last digits walk in a circle",
+      "as": "শেষৰ অংক বৃত্তত ঘূৰে"
+     },
+     "text": [
+      {
+       "en": "Mark the last digit of each power of 3 on a dial of ten digits.",
+       "as": "3ৰ প্ৰতিটো ঘাতৰ শেষৰ অংক দহ অংকৰ ডায়েলত চিহ্নিত কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "dial",
+      "b": 3
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap Next power until a digit comes back.",
+        "as": "কোনো অংক উভতি নহালৈ 'পিছৰ ঘাত' টিপা।"
+       },
+       "goal": {
+        "closed": 1
+       },
+       "then": {
+        "en": "3, 9, 7, 1, then 3 again. The path closes after 4 steps, so the pattern repeats every 4.",
+        "as": "3, 9, 7, 1, তাৰ পিছত আকৌ 3। 4 খোজত পথ বন্ধ হয়, সেয়ে প্ৰতি 4 ঘাতত আৰ্হি ঘূৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Find your place in the cycle",
+      "as": "চক্ৰত নিজৰ ঠাই বিচাৰা"
+     },
+     "text": [
+      {
+       "en": "For $7^{23}$, divide 23 by 4. The remainder is 3, so use the third digit of 7's cycle.",
+       "as": "$7^{23}$ৰ বাবে 23ক 4ৰে হৰণ কৰা। ভাগশেষ 3, সেয়ে 7ৰ চক্ৰৰ তৃতীয় অংকটো লোৱা।"
+      },
+      {
+       "en": "7's cycle is 7, 9, 3, 1, so the answer ends in 3.",
+       "as": "7ৰ চক্ৰ 7, 9, 3, 1, সেয়ে উত্তৰৰ শেষত 3।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$23 \\div 4$ leaves 3",
+        "as": "$23 \\div 4$ৰ ভাগশেষ 3"
+       },
+       {
+        "en": "Third in 7, 9, 3, 1",
+        "as": "7, 9, 3, 1ৰ তৃতীয়টো"
+       },
+       {
+        "en": "Unit digit 3",
+        "as": "একক অংক 3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m1.u3.q1",
+     "type": "order",
+     "skill": "n-unit",
+     "q": {
+      "en": "Put the method in order for $8^{50}$",
+      "as": "$8^{50}$ৰ বাবে পদ্ধতিটো ক্ৰমত সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Write the cycle: 8, 4, 2, 6",
+       "as": "চক্ৰ লিখা: 8, 4, 2, 6"
+      },
+      {
+       "en": "Divide 50 by 4: remainder 2",
+       "as": "50ক 4ৰে হৰণ কৰা: ভাগশেষ 2"
+      },
+      {
+       "en": "Take the second digit: 4",
+       "as": "দ্বিতীয় অংকটো লোৱা: 4"
+      }
+     ],
+     "why": {
+      "en": "Cycle, remainder, position: the same three moves work every time.",
+      "as": "চক্ৰ, ভাগশেষ, স্থান: সদায় এই তিনিটা খোজেই।"
+     }
+    },
+    {
+     "id": "m1.u3.q2",
+     "type": "solve",
+     "skill": "n-unit",
+     "q": {
+      "en": "What is the unit digit of 437 × 256?",
+      "as": "437 × 256ৰ একক অংকটো কি?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Only the last digits matter: 7 × 6 = 42, which ends in 2.",
+      "as": "কেৱল শেষৰ অংকবোৰ লাগে: 7 × 6 = 42, শেষত 2।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the unit digit of 437 × 256?",
+        "as": "437 × 256ৰ একক অংকটো কি?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Only the last digits matter: 7 × 6 = 42, which ends in 2.",
+        "as": "কেৱল শেষৰ অংকবোৰ লাগে: 7 × 6 = 42, শেষত 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of 1283 × 479?",
+        "as": "1283 × 479ৰ একক অংকটো কি?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Only the last digits matter: 3 × 9 = 27, which ends in 7.",
+        "as": "কেৱল শেষৰ অংকবোৰ লাগে: 3 × 9 = 27, শেষত 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of 6128 × 3597?",
+        "as": "6128 × 3597ৰ একক অংকটো কি?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Only the last digits matter: 8 × 7 = 56, which ends in 6.",
+        "as": "কেৱল শেষৰ অংকবোৰ লাগে: 8 × 7 = 56, শেষত 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of 964 × 723?",
+        "as": "964 × 723ৰ একক অংকটো কি?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Only the last digits matter: 4 × 3 = 12, which ends in 2.",
+        "as": "কেৱল শেষৰ অংকবোৰ লাগে: 4 × 3 = 12, শেষত 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.u3.q3",
+     "type": "solve",
+     "skill": "n-unit",
+     "hints": [
+      {
+       "en": "Write the first four powers' last digits.",
+       "as": "প্ৰথম চাৰিটা ঘাতৰ শেষৰ অংক লিখা।"
+      },
+      {
+       "en": "Divide the power by 4 and use the remainder.",
+       "as": "ঘাতক 4ৰে হৰণ কৰি ভাগশেষ লোৱা।"
+      }
+     ],
+     "q": {
+      "en": "What is the unit digit of $3^{23}$?",
+      "as": "$3^{23}$ৰ একক অংকটো কি?"
+     },
+     "answer": "7",
+     "why": {
+      "en": "23 ÷ 4 leaves 3. That place in the cycle of 3 gives 7.",
+      "as": "23 ÷ 4ৰ ভাগশেষ 3। 3ৰ চক্ৰৰ সেই স্থানত 7।"
+     },
+     "traps": [
+      {
+       "ans": "9",
+       "tag": "m-unit-cycle",
+       "why": {
+        "en": "You multiplied base and power. A power repeats in a cycle, so use the remainder after dividing by 4.",
+        "as": "তুমি ভূমি আৰু ঘাত পূৰণ কৰিলা। ঘাত চক্ৰত ঘূৰে, সেয়ে 4ৰে হৰণ কৰি ভাগশেষ লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What is the unit digit of $3^{23}$?",
+        "as": "$3^{23}$ৰ একক অংকটো কি?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "23 ÷ 4 leaves 3. That place in the cycle of 3 gives 7.",
+        "as": "23 ÷ 4ৰ ভাগশেষ 3। 3ৰ চক্ৰৰ সেই স্থানত 7।"
+       },
+       "traps": [
+        {
+         "ans": "9",
+         "tag": "m-unit-cycle",
+         "why": {
+          "en": "You multiplied base and power. A power repeats in a cycle, so use the remainder after dividing by 4.",
+          "as": "তুমি ভূমি আৰু ঘাত পূৰণ কৰিলা। ঘাত চক্ৰত ঘূৰে, সেয়ে 4ৰে হৰণ কৰি ভাগশেষ লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of $7^{41}$?",
+        "as": "$7^{41}$ৰ একক অংকটো কি?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "41 ÷ 4 leaves 1. That place in the cycle of 7 gives 7.",
+        "as": "41 ÷ 4ৰ ভাগশেষ 1। 7ৰ চক্ৰৰ সেই স্থানত 7।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of $2^{35}$?",
+        "as": "$2^{35}$ৰ একক অংকটো কি?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "35 ÷ 4 leaves 3. That place in the cycle of 2 gives 8.",
+        "as": "35 ÷ 4ৰ ভাগশেষ 3। 2ৰ চক্ৰৰ সেই স্থানত 8।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "m-unit-cycle",
+         "why": {
+          "en": "You multiplied base and power. A power repeats in a cycle, so use the remainder after dividing by 4.",
+          "as": "তুমি ভূমি আৰু ঘাত পূৰণ কৰিলা। ঘাত চক্ৰত ঘূৰে, সেয়ে 4ৰে হৰণ কৰি ভাগশেষ লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of $8^{27}$?",
+        "as": "$8^{27}$ৰ একক অংকটো কি?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "27 ÷ 4 leaves 3. That place in the cycle of 8 gives 2.",
+        "as": "27 ÷ 4ৰ ভাগশেষ 3। 8ৰ চক্ৰৰ সেই স্থানত 2।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-unit-cycle",
+         "why": {
+          "en": "You multiplied base and power. A power repeats in a cycle, so use the remainder after dividing by 4.",
+          "as": "তুমি ভূমি আৰু ঘাত পূৰণ কৰিলা। ঘাত চক্ৰত ঘূৰে, সেয়ে 4ৰে হৰণ কৰি ভাগশেষ লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the unit digit of $13^{18}$?",
+        "as": "$13^{18}$ৰ একক অংকটো কি?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "18 ÷ 4 leaves 2. That place in the cycle of 3 gives 9.",
+        "as": "18 ÷ 4ৰ ভাগশেষ 2। 3ৰ চক্ৰৰ সেই স্থানত 9।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-unit-cycle",
+         "why": {
+          "en": "You multiplied base and power. A power repeats in a cycle, so use the remainder after dividing by 4.",
+          "as": "তুমি ভূমি আৰু ঘাত পূৰণ কৰিলা। ঘাত চক্ৰত ঘূৰে, সেয়ে 4ৰে হৰণ কৰি ভাগশেষ লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m1.u3.q4",
+     "type": "tf",
+     "skill": "n-unit",
+     "s": {
+      "en": "$5^{100}$ ends in 5.",
+      "as": "$5^{100}$ৰ শেষত 5 থাকে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Every power of 5 ends in 5, and every power of 6 ends in 6. Their cycle has length 1.",
+      "as": "5ৰ প্ৰতিটো ঘাত 5ৰে আৰু 6ৰ প্ৰতিটো ঘাত 6ৰে শেষ হয়। সিহঁতৰ চক্ৰৰ দৈৰ্ঘ্য 1।"
+     }
+    },
+    {
+     "id": "m1.u3.q5",
+     "type": "match",
+     "skill": "n-unit",
+     "q": {
+      "en": "Match the base to its cycle",
+      "as": "ভূমিক ইয়াৰ চক্ৰৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "2, 4, 8, 6",
+        "as": "2, 4, 8, 6"
+       }
+      ],
+      [
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "3, 9, 7, 1",
+        "as": "3, 9, 7, 1"
+       }
+      ],
+      [
+       {
+        "en": "4",
+        "as": "4"
+       },
+       {
+        "en": "4, 6",
+        "as": "4, 6"
+       }
+      ],
+      [
+       {
+        "en": "9",
+        "as": "9"
+       },
+       {
+        "en": "9, 1",
+        "as": "9, 1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Bases 4 and 9 have a cycle of 2; 2, 3, 7 and 8 have a cycle of 4.",
+      "as": "4 আৰু 9ৰ চক্ৰ 2ৰ; 2, 3, 7 আৰু 8ৰ চক্ৰ 4ৰ।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Numbers test",
+   "as": "সংখ্যাৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m1.t.q1",
+    "type": "mcq",
+    "skill": "n-types",
+    "q": {
+     "en": "How many primes are there from 40 to 60?",
+     "as": "40ৰ পৰা 60লৈ কেইটা মৌলিক সংখ্যা আছে?"
+    },
+    "why": {
+     "en": "Strike out even numbers and multiples of 3, 5 and 7.",
+     "as": "যুগ্ম আৰু 3, 5, 7ৰ গুণিতক কাটি দিয়া।"
+    },
+    "options": [
+     {
+      "en": "5",
+      "as": "5"
+     },
+     {
+      "en": "7",
+      "as": "7"
+     },
+     {
+      "en": "6",
+      "as": "6"
+     },
+     {
+      "en": "4",
+      "as": "4"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-odd-prime",
+      "why": {
+       "en": "An odd number is not always prime, for example 49 or 51.",
+       "as": "অযুগ্ম সংখ্যা সদায় মৌলিক নহয়, যেনে 49 বা 51।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "How many primes are there from 40 to 60?",
+       "as": "40ৰ পৰা 60লৈ কেইটা মৌলিক সংখ্যা আছে?"
+      },
+      "why": {
+       "en": "Strike out even numbers and multiples of 3, 5 and 7.",
+       "as": "যুগ্ম আৰু 3, 5, 7ৰ গুণিতক কাটি দিয়া।"
+      },
+      "options": [
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-odd-prime",
+        "why": {
+         "en": "An odd number is not always prime, for example 49 or 51.",
+         "as": "অযুগ্ম সংখ্যা সদায় মৌলিক নহয়, যেনে 49 বা 51।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "How many primes are there from 60 to 80?",
+       "as": "60ৰ পৰা 80লৈ কেইটা মৌলিক সংখ্যা আছে?"
+      },
+      "why": {
+       "en": "Strike out even numbers and multiples of 3, 5 and 7.",
+       "as": "যুগ্ম আৰু 3, 5, 7ৰ গুণিতক কাটি দিয়া।"
+      },
+      "options": [
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-odd-prime",
+        "why": {
+         "en": "An odd number is not always prime, for example 49 or 51.",
+         "as": "অযুগ্ম সংখ্যা সদায় মৌলিক নহয়, যেনে 49 বা 51।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "How many primes are there from 80 to 100?",
+       "as": "80ৰ পৰা 100লৈ কেইটা মৌলিক সংখ্যা আছে?"
+      },
+      "why": {
+       "en": "Strike out even numbers and multiples of 3, 5 and 7.",
+       "as": "যুগ্ম আৰু 3, 5, 7ৰ গুণিতক কাটি দিয়া।"
+      },
+      "options": [
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-odd-prime",
+        "why": {
+         "en": "An odd number is not always prime, for example 49 or 51.",
+         "as": "অযুগ্ম সংখ্যা সদায় মৌলিক নহয়, যেনে 49 বা 51।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m1.t.q2",
+    "type": "mcq",
+    "skill": "n-div",
+    "q": {
+     "en": "Which digit in place of ? makes 52?7 divisible by 9?",
+     "as": "52?7 9ৰে হৰণ যাবলৈ ?ৰ ঠাইত কোন অংক হ'ব?"
+    },
+    "why": {
+     "en": "The digit sum becomes 18, a multiple of 9.",
+     "as": "অংকৰ যোগফল 18 হয়, 9ৰ গুণিতক।"
+    },
+    "options": [
+     {
+      "en": "9",
+      "as": "9"
+     },
+     {
+      "en": "5",
+      "as": "5"
+     },
+     {
+      "en": "4",
+      "as": "4"
+     },
+     {
+      "en": "7",
+      "as": "7"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-div-last",
+      "why": {
+       "en": "Divisibility by 9 depends on the digit sum, not on any one digit.",
+       "as": "9ৰ বিভাজ্যতা অংকৰ যোগফলত নিৰ্ভৰ কৰে, এটা অংকত নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Which digit in place of ? makes 52?7 divisible by 9?",
+       "as": "52?7 9ৰে হৰণ যাবলৈ ?ৰ ঠাইত কোন অংক হ'ব?"
+      },
+      "why": {
+       "en": "The digit sum becomes 18, a multiple of 9.",
+       "as": "অংকৰ যোগফল 18 হয়, 9ৰ গুণিতক।"
+      },
+      "options": [
+       {
+        "en": "9",
+        "as": "9"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-div-last",
+        "why": {
+         "en": "Divisibility by 9 depends on the digit sum, not on any one digit.",
+         "as": "9ৰ বিভাজ্যতা অংকৰ যোগফলত নিৰ্ভৰ কৰে, এটা অংকত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which digit in place of ? makes 63?4 divisible by 9?",
+       "as": "63?4 9ৰে হৰণ যাবলৈ ?ৰ ঠাইত কোন অংক হ'ব?"
+      },
+      "why": {
+       "en": "The digit sum becomes 18, a multiple of 9.",
+       "as": "অংকৰ যোগফল 18 হয়, 9ৰ গুণিতক।"
+      },
+      "options": [
+       {
+        "en": "6",
+        "as": "6"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-div-last",
+        "why": {
+         "en": "Divisibility by 9 depends on the digit sum, not on any one digit.",
+         "as": "9ৰ বিভাজ্যতা অংকৰ যোগফলত নিৰ্ভৰ কৰে, এটা অংকত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which digit in place of ? makes 81?2 divisible by 9?",
+       "as": "81?2 9ৰে হৰণ যাবলৈ ?ৰ ঠাইত কোন অংক হ'ব?"
+      },
+      "why": {
+       "en": "The digit sum becomes 18, a multiple of 9.",
+       "as": "অংকৰ যোগফল 18 হয়, 9ৰ গুণিতক।"
+      },
+      "options": [
+       {
+        "en": "8",
+        "as": "8"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-div-last",
+        "why": {
+         "en": "Divisibility by 9 depends on the digit sum, not on any one digit.",
+         "as": "9ৰ বিভাজ্যতা অংকৰ যোগফলত নিৰ্ভৰ কৰে, এটা অংকত নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m1.t.q3",
+    "type": "mcq",
+    "skill": "n-unit",
+    "q": {
+     "en": "The unit digit of $7^{35}$ is",
+     "as": "$7^{35}$ৰ একক অংক হ'ল"
+    },
+    "why": {
+     "en": "The cycle and the remainder of 35 ÷ 4 give 3.",
+     "as": "চক্ৰ আৰু 35 ÷ 4ৰ ভাগশেষে 3 দিয়ে।"
+    },
+    "options": [
+     {
+      "en": "5",
+      "as": "5"
+     },
+     {
+      "en": "7",
+      "as": "7"
+     },
+     {
+      "en": "3",
+      "as": "3"
+     },
+     {
+      "en": "1",
+      "as": "1"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-unit-cycle",
+      "why": {
+       "en": "Multiplying base by power is not the rule. Use the cycle.",
+       "as": "ভূমিক ঘাতেৰে পূৰণ কৰা নিয়ম নহয়। চক্ৰ ব্যৱহাৰ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The unit digit of $7^{35}$ is",
+       "as": "$7^{35}$ৰ একক অংক হ'ল"
+      },
+      "why": {
+       "en": "The cycle and the remainder of 35 ÷ 4 give 3.",
+       "as": "চক্ৰ আৰু 35 ÷ 4ৰ ভাগশেষে 3 দিয়ে।"
+      },
+      "options": [
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-unit-cycle",
+        "why": {
+         "en": "Multiplying base by power is not the rule. Use the cycle.",
+         "as": "ভূমিক ঘাতেৰে পূৰণ কৰা নিয়ম নহয়। চক্ৰ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The unit digit of $3^{22}$ is",
+       "as": "$3^{22}$ৰ একক অংক হ'ল"
+      },
+      "why": {
+       "en": "The cycle and the remainder of 22 ÷ 4 give 9.",
+       "as": "চক্ৰ আৰু 22 ÷ 4ৰ ভাগশেষে 9 দিয়ে।"
+      },
+      "options": [
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "9",
+        "as": "9"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-unit-cycle",
+        "why": {
+         "en": "Multiplying base by power is not the rule. Use the cycle.",
+         "as": "ভূমিক ঘাতেৰে পূৰণ কৰা নিয়ম নহয়। চক্ৰ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The unit digit of $2^{45}$ is",
+       "as": "$2^{45}$ৰ একক অংক হ'ল"
+      },
+      "why": {
+       "en": "The cycle and the remainder of 45 ÷ 4 give 2.",
+       "as": "চক্ৰ আৰু 45 ÷ 4ৰ ভাগশেষে 2 দিয়ে।"
+      },
+      "options": [
+       {
+        "en": "0",
+        "as": "0"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-unit-cycle",
+        "why": {
+         "en": "Multiplying base by power is not the rule. Use the cycle.",
+         "as": "ভূমিক ঘাতেৰে পূৰণ কৰা নিয়ম নহয়। চক্ৰ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The unit digit of $8^{31}$ is",
+       "as": "$8^{31}$ৰ একক অংক হ'ল"
+      },
+      "why": {
+       "en": "The cycle and the remainder of 31 ÷ 4 give 2.",
+       "as": "চক্ৰ আৰু 31 ÷ 4ৰ ভাগশেষে 2 দিয়ে।"
+      },
+      "options": [
+       {
+        "en": "8",
+        "as": "8"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-unit-cycle",
+        "why": {
+         "en": "Multiplying base by power is not the rule. Use the cycle.",
+         "as": "ভূমিক ঘাতেৰে পূৰণ কৰা নিয়ম নহয়। চক্ৰ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m1.t.q4",
+    "type": "tf",
+    "skill": "n-types",
+    "s": {
+     "en": "2 is the only even prime number.",
+     "as": "2 একমাত্ৰ যুগ্ম মৌলিক সংখ্যা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Every other even number has 2 as an extra factor.",
+     "as": "আন প্ৰতিটো যুগ্ম সংখ্যাৰ 2 এটা অতিৰিক্ত গুণনীয়ক।"
+    }
+   },
+   {
+    "id": "m1.t.q5",
+    "type": "solve",
+    "skill": "n-factor",
+    "q": {
+     "en": "How many different primes divide 90?",
+     "as": "90ক কেইটা বেলেগ মৌলিকে হৰণ কৰে?"
+    },
+    "answer": "3",
+    "why": {
+     "en": "Peel 90 into primes and count each prime once.",
+     "as": "90ক মৌলিকলৈ ভাঙি প্ৰতিটো মৌলিক এবাৰকৈ গণনা কৰা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "How many different primes divide 90?",
+       "as": "90ক কেইটা বেলেগ মৌলিকে হৰণ কৰে?"
+      },
+      "answer": "3",
+      "why": {
+       "en": "Peel 90 into primes and count each prime once.",
+       "as": "90ক মৌলিকলৈ ভাঙি প্ৰতিটো মৌলিক এবাৰকৈ গণনা কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "How many different primes divide 72?",
+       "as": "72ক কেইটা বেলেগ মৌলিকে হৰণ কৰে?"
+      },
+      "answer": "2",
+      "why": {
+       "en": "Peel 72 into primes and count each prime once.",
+       "as": "72ক মৌলিকলৈ ভাঙি প্ৰতিটো মৌলিক এবাৰকৈ গণনা কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "How many different primes divide 210?",
+       "as": "210ক কেইটা বেলেগ মৌলিকে হৰণ কৰে?"
+      },
+      "answer": "4",
+      "why": {
+       "en": "Peel 210 into primes and count each prime once.",
+       "as": "210ক মৌলিকলৈ ভাঙি প্ৰতিটো মৌলিক এবাৰকৈ গণনা কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "How many different primes divide 98?",
+       "as": "98ক কেইটা বেলেগ মৌলিকে হৰণ কৰে?"
+      },
+      "answer": "2",
+      "why": {
+       "en": "Peel 98 into primes and count each prime once.",
+       "as": "98ক মৌলিকলৈ ভাঙি প্ৰতিটো মৌলিক এবাৰকৈ গণনা কৰা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

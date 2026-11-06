@@ -1,0 +1,2992 @@
+{
+ "id": "math-13-sequences",
+ "course": "mathematics",
+ "no": 13,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "AP and GP",
+  "as": "সমান্তৰ আৰু গুণোত্তৰ শ্ৰেণী"
+ },
+ "reign": {
+  "en": "Terms and sums",
+  "as": "পদ আৰু যোগফল"
+ },
+ "portrait": "math/sequence.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Equal steps",
+    "as": "সমান খোজ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "An AP adds the same number d each time.",
+     "as": "সমান্তৰ শ্ৰেণীত প্ৰতিবাৰে একে সংখ্যা d যোগ হয়।"
+    },
+    {
+     "en": "nth term = $a + (n - 1)d$.",
+     "as": "n তম পদ = $a + (n - 1)d$।"
+    },
+    {
+     "en": "The middle of three terms in AP is their average.",
+     "as": "সমান্তৰ শ্ৰেণীৰ তিনিটা পদৰ মাজৰটো সিহঁতৰ গড়।"
+    },
+    {
+     "en": "Count terms with $\\frac{\\text{last} - \\text{first}}{d} + 1$.",
+     "as": "পদ গণা: $\\frac{\\text{শেষ} - \\text{প্ৰথম}}{d} + 1$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m13.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Count the steps, not the terms",
+      "as": "পদ নহয়, খোজ গণা"
+     },
+     "text": [
+      {
+       "en": "The sequence 1, 4, 7, 10 climbs by 3. Blue is the start and gold is the climbing.",
+       "as": "1, 4, 7, 10 শ্ৰেণীটো 3কৈ বাঢ়ে। নীলা আৰম্ভণি, সোণালী বৃদ্ধি।"
+      }
+     ],
+     "widget": {
+      "kind": "stairs",
+      "a": 1,
+      "d": 3,
+      "n": 2,
+      "max": 12
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to term 5.",
+        "as": "5 নং পদলৈ টানা।"
+       },
+       "goal": {
+        "n": 5
+       },
+       "then": {
+        "en": "Term 5 has only 4 gold steps. The first term has none, so it is n − 1.",
+        "as": "5 নং পদত মাত্ৰ 4টা সোণালী খোজ। প্ৰথম পদত নাই, সেয়ে n − 1।"
+       }
+      },
+      {
+       "do": {
+        "en": "Slide to term 12.",
+        "as": "12 নং পদলৈ টানা।"
+       },
+       "goal": {
+        "n": 12
+       },
+       "then": {
+        "en": "1 + 11 × 3 = 34. One formula reaches any term with no counting.",
+        "as": "1 + 11 × 3 = 34। এটা সূত্ৰই গণনা নকৰাকৈ যিকোনো পদ দিয়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "The middle term is the average",
+      "as": "মাজৰ পদ গড়"
+     },
+     "text": [
+      {
+       "en": "Equal steps mean the middle sits exactly halfway, the same symmetry as consecutive numbers.",
+       "as": "সমান খোজ মানে মাজৰটো ঠিক আধাত, ক্ৰমিক সংখ্যাৰ একে সমমিতি।"
+      },
+      {
+       "en": "If 5, x, 27 are in AP, x is the average of 5 and 27.",
+       "as": "5, x, 27 সমান্তৰ হ'লে x হৈছে 5 আৰু 27ৰ গড়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "5, x, 27",
+        "as": "5, x, 27"
+       },
+       {
+        "en": "$\\frac{5 + 27}{2}$",
+        "as": "$\\frac{5 + 27}{2}$"
+       },
+       {
+        "en": "x = 16",
+        "as": "x = 16"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m13.u1.q1",
+     "type": "solve",
+     "skill": "ap",
+     "hints": [
+      {
+       "en": "How many steps from term 1 to this term?",
+       "as": "1 নং পদৰ পৰা কিমান খোজ?"
+      }
+     ],
+     "q": {
+      "en": "Find term 15 of 1, 4, 7, …",
+      "as": "1, 4, 7, … ৰ 15 নং পদ উলিওৱা।"
+     },
+     "answer": "43",
+     "why": {
+      "en": "1 + 14 × 3.",
+      "as": "1 + 14 × 3।"
+     },
+     "traps": [
+      {
+       "ans": "46",
+       "tag": "m-ap-n",
+       "why": {
+        "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+        "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find term 15 of 1, 4, 7, …",
+        "as": "1, 4, 7, … ৰ 15 নং পদ উলিওৱা।"
+       },
+       "answer": "43",
+       "why": {
+        "en": "1 + 14 × 3.",
+        "as": "1 + 14 × 3।"
+       },
+       "traps": [
+        {
+         "ans": "46",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+          "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find term 14 of 7, 10, 13, …",
+        "as": "7, 10, 13, … ৰ 14 নং পদ উলিওৱা।"
+       },
+       "answer": "46",
+       "why": {
+        "en": "7 + 13 × 3.",
+        "as": "7 + 13 × 3।"
+       },
+       "traps": [
+        {
+         "ans": "49",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+          "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find term 20 of 9, 5, 1, …",
+        "as": "9, 5, 1, … ৰ 20 নং পদ উলিওৱা।"
+       },
+       "answer": "-67",
+       "why": {
+        "en": "9 + 19 × −4.",
+        "as": "9 + 19 × −4।"
+       },
+       "traps": [
+        {
+         "ans": "-71",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+          "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find term 30 of 10, 7, 4, …",
+        "as": "10, 7, 4, … ৰ 30 নং পদ উলিওৱা।"
+       },
+       "answer": "-77",
+       "why": {
+        "en": "10 + 29 × −3.",
+        "as": "10 + 29 × −3।"
+       },
+       "traps": [
+        {
+         "ans": "-80",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+          "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u1.q2",
+     "type": "explore",
+     "skill": "ap",
+     "q": {
+      "en": "In 1, 4, 7, …, which term equals 40?",
+      "as": "1, 4, 7, …ত কোনটো পদ 40?"
+     },
+     "widget": {
+      "kind": "stairs",
+      "a": 1,
+      "d": 3,
+      "n": 1,
+      "max": 15
+     },
+     "target": 14,
+     "answerText": {
+      "en": "Term 14",
+      "as": "14 নং পদ"
+     },
+     "why": {
+      "en": "39 ÷ 3 = 13 steps, plus 1 for the first term.",
+      "as": "39 ÷ 3 = 13 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In 1, 4, 7, …, which term equals 40?",
+        "as": "1, 4, 7, …ত কোনটো পদ 40?"
+       },
+       "widget": {
+        "kind": "stairs",
+        "a": 1,
+        "d": 3,
+        "n": 1,
+        "max": 15
+       },
+       "target": 14,
+       "answerText": {
+        "en": "Term 14",
+        "as": "14 নং পদ"
+       },
+       "why": {
+        "en": "39 ÷ 3 = 13 steps, plus 1 for the first term.",
+        "as": "39 ÷ 3 = 13 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "In 5, 9, 13, …, which term equals 45?",
+        "as": "5, 9, 13, …ত কোনটো পদ 45?"
+       },
+       "widget": {
+        "kind": "stairs",
+        "a": 5,
+        "d": 4,
+        "n": 1,
+        "max": 15
+       },
+       "target": 11,
+       "answerText": {
+        "en": "Term 11",
+        "as": "11 নং পদ"
+       },
+       "why": {
+        "en": "40 ÷ 4 = 10 steps, plus 1 for the first term.",
+        "as": "40 ÷ 4 = 10 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "In 2, 7, 12, …, which term equals 62?",
+        "as": "2, 7, 12, …ত কোনটো পদ 62?"
+       },
+       "widget": {
+        "kind": "stairs",
+        "a": 2,
+        "d": 5,
+        "n": 1,
+        "max": 15
+       },
+       "target": 13,
+       "answerText": {
+        "en": "Term 13",
+        "as": "13 নং পদ"
+       },
+       "why": {
+        "en": "60 ÷ 5 = 12 steps, plus 1 for the first term.",
+        "as": "60 ÷ 5 = 12 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u1.q3",
+     "type": "solve",
+     "skill": "ap",
+     "q": {
+      "en": "If 5, x, 27 are in AP, find x.",
+      "as": "5, x, 27 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+     },
+     "answer": "16",
+     "why": {
+      "en": "The middle term is the average.",
+      "as": "মাজৰ পদ গড়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If 5, x, 27 are in AP, find x.",
+        "as": "5, x, 27 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+       },
+       "answer": "16",
+       "why": {
+        "en": "The middle term is the average.",
+        "as": "মাজৰ পদ গড়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 8, x, 20 are in AP, find x.",
+        "as": "8, x, 20 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+       },
+       "answer": "14",
+       "why": {
+        "en": "The middle term is the average.",
+        "as": "মাজৰ পদ গড়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 3, x, 17 are in AP, find x.",
+        "as": "3, x, 17 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+       },
+       "answer": "10",
+       "why": {
+        "en": "The middle term is the average.",
+        "as": "মাজৰ পদ গড়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 11, x, 29 are in AP, find x.",
+        "as": "11, x, 29 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+       },
+       "answer": "20",
+       "why": {
+        "en": "The middle term is the average.",
+        "as": "মাজৰ পদ গড়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u1.q4",
+     "type": "solve",
+     "skill": "ap",
+     "hints": [
+      {
+       "en": "Find the first and last multiples inside the range.",
+       "as": "সীমাৰ ভিতৰৰ প্ৰথম আৰু শেষ গুণিতক উলিওৱা।"
+      }
+     ],
+     "q": {
+      "en": "How many multiples of 4 lie between 10 and 250?",
+      "as": "10 আৰু 250ৰ মাজত 4ৰ কেইটা গুণিতক আছে?"
+     },
+     "answer": "60",
+     "why": {
+      "en": "From 12 to 248: (248 − 12) ÷ 4 + 1.",
+      "as": "12ৰ পৰা 248লৈ: (248 − 12) ÷ 4 + 1।"
+     },
+     "traps": [
+      {
+       "ans": "59",
+       "tag": "m-ap-n",
+       "why": {
+        "en": "That counts the steps. Add 1 for the first term.",
+        "as": "সেয়া খোজ। প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "How many multiples of 4 lie between 10 and 250?",
+        "as": "10 আৰু 250ৰ মাজত 4ৰ কেইটা গুণিতক আছে?"
+       },
+       "answer": "60",
+       "why": {
+        "en": "From 12 to 248: (248 − 12) ÷ 4 + 1.",
+        "as": "12ৰ পৰা 248লৈ: (248 − 12) ÷ 4 + 1।"
+       },
+       "traps": [
+        {
+         "ans": "59",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "That counts the steps. Add 1 for the first term.",
+          "as": "সেয়া খোজ। প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many multiples of 6 lie between 10 and 100?",
+        "as": "10 আৰু 100ৰ মাজত 6ৰ কেইটা গুণিতক আছে?"
+       },
+       "answer": "15",
+       "why": {
+        "en": "From 12 to 96: (96 − 12) ÷ 6 + 1.",
+        "as": "12ৰ পৰা 96লৈ: (96 − 12) ÷ 6 + 1।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "That counts the steps. Add 1 for the first term.",
+          "as": "সেয়া খোজ। প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many multiples of 7 lie between 20 and 200?",
+        "as": "20 আৰু 200ৰ মাজত 7ৰ কেইটা গুণিতক আছে?"
+       },
+       "answer": "26",
+       "why": {
+        "en": "From 21 to 196: (196 − 21) ÷ 7 + 1.",
+        "as": "21ৰ পৰা 196লৈ: (196 − 21) ÷ 7 + 1।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "That counts the steps. Add 1 for the first term.",
+          "as": "সেয়া খোজ। প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u1.q5",
+     "type": "tf",
+     "skill": "ap",
+     "s": {
+      "en": "The 10th term of an AP is a + 10d.",
+      "as": "সমান্তৰ শ্ৰেণীৰ 10 নং পদ a + 10d।"
+     },
+     "answer": false,
+     "why": {
+      "en": "There are 9 steps between term 1 and term 10.",
+      "as": "1 নং আৰু 10 নং পদৰ মাজত 9 খোজ।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-ap-n",
+       "why": {
+        "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+        "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u1.q6",
+     "type": "match",
+     "skill": "ap",
+     "q": {
+      "en": "Match each AP to its next term",
+      "as": "প্ৰতিটো শ্ৰেণীক পৰৱৰ্তী পদৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2, 5, 8",
+        "as": "2, 5, 8"
+       },
+       {
+        "en": "11",
+        "as": "11"
+       }
+      ],
+      [
+       {
+        "en": "20, 16, 12",
+        "as": "20, 16, 12"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      [
+       {
+        "en": "−3, −1, 1",
+        "as": "−3, −1, 1"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       }
+      ],
+      [
+       {
+        "en": "0.5, 1, 1.5",
+        "as": "0.5, 1, 1.5"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ]
+     ],
+     "why": {
+      "en": "A step can be negative or a decimal.",
+      "as": "খোজ ঋণাত্মক বা দশমিক হ'ব পাৰে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Adding an AP",
+    "as": "শ্ৰেণীৰ যোগফল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Two copies of an AP, one flipped, make a rectangle.",
+     "as": "এটা ওলোটাকৈ দুটা প্ৰতিলিপিয়ে আয়ত বনায়।"
+    },
+    {
+     "en": "Sum = $\\frac{n(a + l)}{2}$: number of terms × average of the ends.",
+     "as": "যোগফল = $\\frac{n(a + l)}{2}$: পদৰ সংখ্যা × দুয়োমূৰৰ গড়।"
+    },
+    {
+     "en": "Sum of 1 to n is $\\frac{n(n + 1)}{2}$.",
+     "as": "1ৰ পৰা nৰ যোগফল $\\frac{n(n + 1)}{2}$।"
+    },
+    {
+     "en": "If the last term is unknown, find it first.",
+     "as": "শেষ পদ অজ্ঞাত হ'লে প্ৰথমে উলিওৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m13.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Two copies make a rectangle",
+      "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়"
+     },
+     "text": [
+      {
+       "en": "Adding terms one by one is slow. There is a better way, by building a rectangle.",
+       "as": "এটা এটাকৈ যোগ কৰাটো লেহেমীয়া। আয়ত বনোৱা আৰু ভাল উপায়।"
+      }
+     ],
+     "widget": {
+      "kind": "stairs",
+      "a": 2,
+      "d": 3,
+      "n": 6,
+      "max": 10,
+      "sum": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Add a flipped copy on top.",
+        "as": "ওপৰত ওলোটা প্ৰতিলিপি যোগ কৰা।"
+       },
+       "goal": {
+        "paired": 1
+       },
+       "then": {
+        "en": "Every column is now the same height: first + last. The rectangle is n × (a + l), and the sum is half of it.",
+        "as": "প্ৰতিটো স্তম্ভ এতিয়া একে উচ্চতাৰ: প্ৰথম + শেষ। আয়ত n × (a + l), যোগফল তাৰ আধা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "The first ten numbers",
+      "as": "প্ৰথম দহটা সংখ্যা"
+     },
+     "text": [
+      {
+       "en": "1 to 100 pairs up as 1 + 100, 2 + 99, and so on: fifty pairs of 101.",
+       "as": "1ৰ পৰা 100 যোৰা হয় 1 + 100, 2 + 99 এনেকৈ: 101ৰ পঞ্চাশটা যোৰা।"
+      },
+      {
+       "en": "That is the formula: $\\frac{100 \\times 101}{2} = 5050$.",
+       "as": "এয়াই সূত্ৰ: $\\frac{100 \\times 101}{2} = 5050$।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "1 + 100 = 101",
+        "as": "1 + 100 = 101"
+       },
+       {
+        "en": "50 pairs",
+        "as": "50 যোৰা"
+       },
+       {
+        "en": "50 × 101 = 5050",
+        "as": "50 × 101 = 5050"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m13.u2.q1",
+     "type": "solve",
+     "skill": "ap-sum",
+     "hints": [
+      {
+       "en": "Use $\\frac{n(n + 1)}{2}$.",
+       "as": "$\\frac{n(n + 1)}{2}$ ব্যৱহাৰ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Find 1 + 2 + 3 + … + 20.",
+      "as": "1 + 2 + 3 + … + 20 উলিওৱা।"
+     },
+     "answer": "210",
+     "why": {
+      "en": "$\\frac{20 \\times 21}{2}$.",
+      "as": "$\\frac{20 \\times 21}{2}$।"
+     },
+     "traps": [
+      {
+       "ans": "420",
+       "tag": "m-sum-half",
+       "why": {
+        "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+        "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find 1 + 2 + 3 + … + 20.",
+        "as": "1 + 2 + 3 + … + 20 উলিওৱা।"
+       },
+       "answer": "210",
+       "why": {
+        "en": "$\\frac{20 \\times 21}{2}$.",
+        "as": "$\\frac{20 \\times 21}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "420",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find 1 + 2 + 3 + … + 50.",
+        "as": "1 + 2 + 3 + … + 50 উলিওৱা।"
+       },
+       "answer": "1275",
+       "why": {
+        "en": "$\\frac{50 \\times 51}{2}$.",
+        "as": "$\\frac{50 \\times 51}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "2550",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find 1 + 2 + 3 + … + 100.",
+        "as": "1 + 2 + 3 + … + 100 উলিওৱা।"
+       },
+       "answer": "5050",
+       "why": {
+        "en": "$\\frac{100 \\times 101}{2}$.",
+        "as": "$\\frac{100 \\times 101}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "10100",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find 1 + 2 + 3 + … + 30.",
+        "as": "1 + 2 + 3 + … + 30 উলিওৱা।"
+       },
+       "answer": "465",
+       "why": {
+        "en": "$\\frac{30 \\times 31}{2}$.",
+        "as": "$\\frac{30 \\times 31}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "930",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u2.q2",
+     "type": "stepwise",
+     "skill": "ap-sum",
+     "q": {
+      "en": "Find 12 + 15 + 18 + … + 39.",
+      "as": "12 + 15 + 18 + … + 39 উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Number of terms?",
+        "as": "পদৰ সংখ্যা?"
+       },
+       "options": [
+        {
+         "en": "27",
+         "as": "27"
+        },
+        {
+         "en": "9",
+         "as": "9"
+        },
+        {
+         "en": "10",
+         "as": "10"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Steps + 1.",
+        "as": "খোজ + 1।"
+       },
+       "skill": "ap",
+       "tag": "m-ap-n"
+      },
+      {
+       "ask": {
+        "en": "First + last?",
+        "as": "প্ৰথম + শেষ?"
+       },
+       "options": [
+        {
+         "en": "27",
+         "as": "27"
+        },
+        {
+         "en": "468",
+         "as": "468"
+        },
+        {
+         "en": "51",
+         "as": "51"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The height of each column.",
+        "as": "প্ৰতিটো স্তম্ভৰ উচ্চতা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Sum?",
+        "as": "যোগফল?"
+       },
+       "options": [
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "510",
+         "as": "510"
+        },
+        {
+         "en": "255",
+         "as": "255"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Half the rectangle.",
+        "as": "আয়তৰ আধা।"
+       },
+       "tag": "m-sum-half"
+      }
+     ],
+     "why": {
+      "en": "Count, add the ends, halve.",
+      "as": "গণা, দুয়োমূৰ যোগ, আধা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find 12 + 15 + 18 + … + 39.",
+        "as": "12 + 15 + 18 + … + 39 উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Number of terms?",
+          "as": "পদৰ সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "27",
+           "as": "27"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Steps + 1.",
+          "as": "খোজ + 1।"
+         },
+         "skill": "ap",
+         "tag": "m-ap-n"
+        },
+        {
+         "ask": {
+          "en": "First + last?",
+          "as": "প্ৰথম + শেষ?"
+         },
+         "options": [
+          {
+           "en": "27",
+           "as": "27"
+          },
+          {
+           "en": "468",
+           "as": "468"
+          },
+          {
+           "en": "51",
+           "as": "51"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The height of each column.",
+          "as": "প্ৰতিটো স্তম্ভৰ উচ্চতা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "510",
+           "as": "510"
+          },
+          {
+           "en": "255",
+           "as": "255"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Half the rectangle.",
+          "as": "আয়তৰ আধা।"
+         },
+         "tag": "m-sum-half"
+        }
+       ],
+       "why": {
+        "en": "Count, add the ends, halve.",
+        "as": "গণা, দুয়োমূৰ যোগ, আধা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find 5 + 10 + 15 + … + 50.",
+        "as": "5 + 10 + 15 + … + 50 উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Number of terms?",
+          "as": "পদৰ সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "45",
+           "as": "45"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Steps + 1.",
+          "as": "খোজ + 1।"
+         },
+         "skill": "ap",
+         "tag": "m-ap-n"
+        },
+        {
+         "ask": {
+          "en": "First + last?",
+          "as": "প্ৰথম + শেষ?"
+         },
+         "options": [
+          {
+           "en": "250",
+           "as": "250"
+          },
+          {
+           "en": "55",
+           "as": "55"
+          },
+          {
+           "en": "45",
+           "as": "45"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The height of each column.",
+          "as": "প্ৰতিটো স্তম্ভৰ উচ্চতা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "275",
+           "as": "275"
+          },
+          {
+           "en": "550",
+           "as": "550"
+          },
+          {
+           "en": "27",
+           "as": "27"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Half the rectangle.",
+          "as": "আয়তৰ আধা।"
+         },
+         "tag": "m-sum-half"
+        }
+       ],
+       "why": {
+        "en": "Count, add the ends, halve.",
+        "as": "গণা, দুয়োমূৰ যোগ, আধা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find 7 + 9 + 11 + … + 25.",
+        "as": "7 + 9 + 11 + … + 25 উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Number of terms?",
+          "as": "পদৰ সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Steps + 1.",
+          "as": "খোজ + 1।"
+         },
+         "skill": "ap",
+         "tag": "m-ap-n"
+        },
+        {
+         "ask": {
+          "en": "First + last?",
+          "as": "প্ৰথম + শেষ?"
+         },
+         "options": [
+          {
+           "en": "32",
+           "as": "32"
+          },
+          {
+           "en": "175",
+           "as": "175"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The height of each column.",
+          "as": "প্ৰতিটো স্তম্ভৰ উচ্চতা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "320",
+           "as": "320"
+          },
+          {
+           "en": "160",
+           "as": "160"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half the rectangle.",
+          "as": "আয়তৰ আধা।"
+         },
+         "tag": "m-sum-half"
+        }
+       ],
+       "why": {
+        "en": "Count, add the ends, halve.",
+        "as": "গণা, দুয়োমূৰ যোগ, আধা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u2.q3",
+     "type": "solve",
+     "skill": "ap-sum",
+     "q": {
+      "en": "Find the sum of the first 21 terms of 12, 16, 20, …",
+      "as": "12, 16, 20, …ৰ প্ৰথম 21টা পদৰ যোগফল উলিওৱা।"
+     },
+     "answer": "1092",
+     "why": {
+      "en": "Last term 92, then $\\frac{21(12 + 92)}{2}$.",
+      "as": "শেষ পদ 92, তাৰ পিছত $\\frac{21(12 + 92)}{2}$।"
+     },
+     "traps": [
+      {
+       "ans": "2184",
+       "tag": "m-sum-half",
+       "why": {
+        "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+        "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the sum of the first 21 terms of 12, 16, 20, …",
+        "as": "12, 16, 20, …ৰ প্ৰথম 21টা পদৰ যোগফল উলিওৱা।"
+       },
+       "answer": "1092",
+       "why": {
+        "en": "Last term 92, then $\\frac{21(12 + 92)}{2}$.",
+        "as": "শেষ পদ 92, তাৰ পিছত $\\frac{21(12 + 92)}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "2184",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the sum of the first 20 terms of 1, 3, 5, …",
+        "as": "1, 3, 5, …ৰ প্ৰথম 20টা পদৰ যোগফল উলিওৱা।"
+       },
+       "answer": "400",
+       "why": {
+        "en": "Last term 39, then $\\frac{20(1 + 39)}{2}$.",
+        "as": "শেষ পদ 39, তাৰ পিছত $\\frac{20(1 + 39)}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "800",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the sum of the first 10 terms of 3, 7, 11, …",
+        "as": "3, 7, 11, …ৰ প্ৰথম 10টা পদৰ যোগফল উলিওৱা।"
+       },
+       "answer": "210",
+       "why": {
+        "en": "Last term 39, then $\\frac{10(3 + 39)}{2}$.",
+        "as": "শেষ পদ 39, তাৰ পিছত $\\frac{10(3 + 39)}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "420",
+         "tag": "m-sum-half",
+         "why": {
+          "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+          "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u2.q4",
+     "type": "tf",
+     "skill": "ap-sum",
+     "s": {
+      "en": "The sum of an AP equals the number of terms × the average of first and last.",
+      "as": "সমান্তৰ শ্ৰেণীৰ যোগফল = পদৰ সংখ্যা × প্ৰথম আৰু শেষৰ গড়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It is the Average lesson again: evenly spaced numbers average to the middle.",
+      "as": "গড় পাঠৰ একে কথা: সমান ব্যৱধানৰ সংখ্যাৰ গড় মাজৰটো।"
+     }
+    },
+    {
+     "id": "m13.u2.q5",
+     "type": "solve",
+     "skill": "ap-sum",
+     "q": {
+      "en": "A worker earns ₹5000 in the first year with a rise of ₹500 every year. What is the total earned in 10 years?",
+      "as": "এজন কৰ্মীয়ে প্ৰথম বছৰত ₹5000 পায়, প্ৰতি বছৰে ₹500 বাঢ়ে। 10 বছৰত মুঠ কিমান পাব?"
+     },
+     "answer": "72500",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Yearly pay is an AP: add it with the sum formula.",
+      "as": "বছৰি দৰমহা সমান্তৰ শ্ৰেণী: যোগফলৰ সূত্ৰ লোৱা।"
+     },
+     "traps": [
+      {
+       "ans": "9500",
+       "tag": "m-ap-n",
+       "why": {
+        "en": "That is the last year's pay. The question asks for the total.",
+        "as": "সেয়া শেষ বছৰৰ দৰমহা। প্ৰশ্নত মুঠ বিচাৰিছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A worker earns ₹5000 in the first year with a rise of ₹500 every year. What is the total earned in 10 years?",
+        "as": "এজন কৰ্মীয়ে প্ৰথম বছৰত ₹5000 পায়, প্ৰতি বছৰে ₹500 বাঢ়ে। 10 বছৰত মুঠ কিমান পাব?"
+       },
+       "answer": "72500",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Yearly pay is an AP: add it with the sum formula.",
+        "as": "বছৰি দৰমহা সমান্তৰ শ্ৰেণী: যোগফলৰ সূত্ৰ লোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "9500",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "That is the last year's pay. The question asks for the total.",
+          "as": "সেয়া শেষ বছৰৰ দৰমহা। প্ৰশ্নত মুঠ বিচাৰিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A worker earns ₹8000 in the first year with a rise of ₹1000 every year. What is the total earned in 6 years?",
+        "as": "এজন কৰ্মীয়ে প্ৰথম বছৰত ₹8000 পায়, প্ৰতি বছৰে ₹1000 বাঢ়ে। 6 বছৰত মুঠ কিমান পাব?"
+       },
+       "answer": "63000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Yearly pay is an AP: add it with the sum formula.",
+        "as": "বছৰি দৰমহা সমান্তৰ শ্ৰেণী: যোগফলৰ সূত্ৰ লোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "13000",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "That is the last year's pay. The question asks for the total.",
+          "as": "সেয়া শেষ বছৰৰ দৰমহা। প্ৰশ্নত মুঠ বিচাৰিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A worker earns ₹12000 in the first year with a rise of ₹2000 every year. What is the total earned in 5 years?",
+        "as": "এজন কৰ্মীয়ে প্ৰথম বছৰত ₹12000 পায়, প্ৰতি বছৰে ₹2000 বাঢ়ে। 5 বছৰত মুঠ কিমান পাব?"
+       },
+       "answer": "80000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Yearly pay is an AP: add it with the sum formula.",
+        "as": "বছৰি দৰমহা সমান্তৰ শ্ৰেণী: যোগফলৰ সূত্ৰ লোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "20000",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "That is the last year's pay. The question asks for the total.",
+          "as": "সেয়া শেষ বছৰৰ দৰমহা। প্ৰশ্নত মুঠ বিচাৰিছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u2.q6",
+     "type": "match",
+     "skill": "ap-sum",
+     "q": {
+      "en": "Match each list to its sum",
+      "as": "প্ৰতিটো তালিকাক যোগফলৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 to 10",
+        "as": "1ৰ পৰা 10"
+       },
+       {
+        "en": "55",
+        "as": "55"
+       }
+      ],
+      [
+       {
+        "en": "1 to 20",
+        "as": "1ৰ পৰা 20"
+       },
+       {
+        "en": "210",
+        "as": "210"
+       }
+      ],
+      [
+       {
+        "en": "Odd numbers 1 to 9",
+        "as": "1ৰ পৰা 9লৈ অযুগ্ম"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       }
+      ],
+      [
+       {
+        "en": "Even numbers 2 to 10",
+        "as": "2ৰ পৰা 10লৈ যুগ্ম"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ]
+     ],
+     "why": {
+      "en": "n odd numbers add to $n^2$: the L shapes from Squares.",
+      "as": "n টা অযুগ্ম সংখ্যাৰ যোগফল $n^2$: বৰ্গৰ L আকৃতি।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Multiplying steps",
+    "as": "পূৰণৰ খোজ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A GP multiplies by the same ratio r each time.",
+     "as": "গুণোত্তৰ শ্ৰেণীত প্ৰতিবাৰে একে অনুপাত rৰে পূৰণ।"
+    },
+    {
+     "en": "nth term = $ar^{n-1}$.",
+     "as": "n তম পদ = $ar^{n-1}$।"
+    },
+    {
+     "en": "Sum of n terms = $\\frac{a(r^n - 1)}{r - 1}$.",
+     "as": "nটা পদৰ যোগফল = $\\frac{a(r^n - 1)}{r - 1}$।"
+    },
+    {
+     "en": "Multiplying grows far faster than adding.",
+     "as": "পূৰণ যোগতকৈ বহুত সোনকালে বাঢ়ে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m13.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Doubling runs away",
+      "as": "দুগুণ হৈ আগবাঢ়ে"
+     },
+     "text": [
+      {
+       "en": "Start at 1 and double each time. Compare this with the stairs from before.",
+       "as": "1ৰ পৰা আৰম্ভ কৰি প্ৰতিবাৰে দুগুণ। আগৰ খটখটিৰ সৈতে তুলনা কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "stairs",
+      "mode": "gp",
+      "a": 1,
+      "r": 2,
+      "n": 3,
+      "max": 10
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to term 7.",
+        "as": "7 নং পদলৈ টানা।"
+       },
+       "goal": {
+        "n": 7
+       },
+       "then": {
+        "en": "64 has appeared, and the early terms already look flat.",
+        "as": "64 ওলাইছে, আগৰ পদবোৰ চেপেটা দেখা গৈছে।"
+       }
+      },
+      {
+       "do": {
+        "en": "Slide to term 10.",
+        "as": "10 নং পদলৈ টানা।"
+       },
+       "goal": {
+        "n": 10
+       },
+       "then": {
+        "en": "512 = $2^9$. Again the power is n − 1, for the same reason as the steps.",
+        "as": "512 = $2^9$। ঘাত আকৌ n − 1, খোজৰ একে কাৰণত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Add or multiply?",
+      "as": "যোগ নে পূৰণ?"
+     },
+     "text": [
+      {
+       "en": "Check the gaps first: equal gaps mean AP, equal ratios mean GP.",
+       "as": "প্ৰথমে ব্যৱধান চোৱা: সমান ব্যৱধান মানে সমান্তৰ, সমান অনুপাত মানে গুণোত্তৰ।"
+      },
+      {
+       "en": "2, 6, 18 has gaps of 4 and 12 but a steady ratio of 3.",
+       "as": "2, 6, 18ৰ ব্যৱধান 4 আৰু 12, কিন্তু অনুপাত সদায় 3।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "AP: 2, 5, 8 adds 3",
+        "as": "সমান্তৰ: 2, 5, 8ত 3 যোগ"
+       },
+       {
+        "en": "GP: 2, 6, 18 multiplies by 3",
+        "as": "গুণোত্তৰ: 2, 6, 18ত 3ৰে পূৰণ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m13.u3.q1",
+     "type": "solve",
+     "skill": "gp",
+     "hints": [
+      {
+       "en": "The power is one less than the term number.",
+       "as": "ঘাত পদৰ নম্বৰতকৈ এক কম।"
+      }
+     ],
+     "q": {
+      "en": "Find term 6 of 7, 14, 28, …",
+      "as": "7, 14, 28, …ৰ 6 নং পদ উলিওৱা।"
+     },
+     "answer": "224",
+     "why": {
+      "en": "$7 \\times 2^{5}$.",
+      "as": "$7 \\times 2^{5}$।"
+     },
+     "traps": [
+      {
+       "ans": "448",
+       "tag": "m-gp-power",
+       "why": {
+        "en": "The first term has no multiplying, so the power is n − 1.",
+        "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+       }
+      },
+      {
+       "ans": "17",
+       "tag": "m-gp-add",
+       "why": {
+        "en": "You added the ratio. A GP multiplies.",
+        "as": "তুমি অনুপাত যোগ কৰিলা। গুণোত্তৰ শ্ৰেণীত পূৰণ হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find term 6 of 7, 14, 28, …",
+        "as": "7, 14, 28, …ৰ 6 নং পদ উলিওৱা।"
+       },
+       "answer": "224",
+       "why": {
+        "en": "$7 \\times 2^{5}$.",
+        "as": "$7 \\times 2^{5}$।"
+       },
+       "traps": [
+        {
+         "ans": "448",
+         "tag": "m-gp-power",
+         "why": {
+          "en": "The first term has no multiplying, so the power is n − 1.",
+          "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+         }
+        },
+        {
+         "ans": "17",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "You added the ratio. A GP multiplies.",
+          "as": "তুমি অনুপাত যোগ কৰিলা। গুণোত্তৰ শ্ৰেণীত পূৰণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find term 8 of 2, 6, 18, …",
+        "as": "2, 6, 18, …ৰ 8 নং পদ উলিওৱা।"
+       },
+       "answer": "4374",
+       "why": {
+        "en": "$2 \\times 3^{7}$.",
+        "as": "$2 \\times 3^{7}$।"
+       },
+       "traps": [
+        {
+         "ans": "13122",
+         "tag": "m-gp-power",
+         "why": {
+          "en": "The first term has no multiplying, so the power is n − 1.",
+          "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+         }
+        },
+        {
+         "ans": "23",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "You added the ratio. A GP multiplies.",
+          "as": "তুমি অনুপাত যোগ কৰিলা। গুণোত্তৰ শ্ৰেণীত পূৰণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find term 7 of 3, 6, 12, …",
+        "as": "3, 6, 12, …ৰ 7 নং পদ উলিওৱা।"
+       },
+       "answer": "192",
+       "why": {
+        "en": "$3 \\times 2^{6}$.",
+        "as": "$3 \\times 2^{6}$।"
+       },
+       "traps": [
+        {
+         "ans": "384",
+         "tag": "m-gp-power",
+         "why": {
+          "en": "The first term has no multiplying, so the power is n − 1.",
+          "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+         }
+        },
+        {
+         "ans": "15",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "You added the ratio. A GP multiplies.",
+          "as": "তুমি অনুপাত যোগ কৰিলা। গুণোত্তৰ শ্ৰেণীত পূৰণ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find term 5 of 5, 15, 45, …",
+        "as": "5, 15, 45, …ৰ 5 নং পদ উলিওৱা।"
+       },
+       "answer": "405",
+       "why": {
+        "en": "$5 \\times 3^{4}$.",
+        "as": "$5 \\times 3^{4}$।"
+       },
+       "traps": [
+        {
+         "ans": "1215",
+         "tag": "m-gp-power",
+         "why": {
+          "en": "The first term has no multiplying, so the power is n − 1.",
+          "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+         }
+        },
+        {
+         "ans": "17",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "You added the ratio. A GP multiplies.",
+          "as": "তুমি অনুপাত যোগ কৰিলা। গুণোত্তৰ শ্ৰেণীত পূৰণ হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u3.q2",
+     "type": "solve",
+     "skill": "gp",
+     "hints": [
+      {
+       "en": "Use $\\frac{a(r^n - 1)}{r - 1}$.",
+       "as": "$\\frac{a(r^n - 1)}{r - 1}$ ব্যৱহাৰ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Add the first 5 terms: 4 + 12 + 36 + …",
+      "as": "প্ৰথম 5টা পদ যোগ কৰা: 4 + 12 + 36 + …"
+     },
+     "answer": "484",
+     "why": {
+      "en": "$\\frac{4(3^{5} - 1)}{3 - 1}$.",
+      "as": "$\\frac{4(3^{5} - 1)}{3 - 1}$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Add the first 5 terms: 4 + 12 + 36 + …",
+        "as": "প্ৰথম 5টা পদ যোগ কৰা: 4 + 12 + 36 + …"
+       },
+       "answer": "484",
+       "why": {
+        "en": "$\\frac{4(3^{5} - 1)}{3 - 1}$.",
+        "as": "$\\frac{4(3^{5} - 1)}{3 - 1}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "Add the first 10 terms: 2 + 4 + 8 + …",
+        "as": "প্ৰথম 10টা পদ যোগ কৰা: 2 + 4 + 8 + …"
+       },
+       "answer": "2046",
+       "why": {
+        "en": "$\\frac{2(2^{10} - 1)}{2 - 1}$.",
+        "as": "$\\frac{2(2^{10} - 1)}{2 - 1}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "Add the first 6 terms: 1 + 3 + 9 + …",
+        "as": "প্ৰথম 6টা পদ যোগ কৰা: 1 + 3 + 9 + …"
+       },
+       "answer": "364",
+       "why": {
+        "en": "$\\frac{1(3^{6} - 1)}{3 - 1}$.",
+        "as": "$\\frac{1(3^{6} - 1)}{3 - 1}$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u3.q3",
+     "type": "stepwise",
+     "skill": "gp",
+     "q": {
+      "en": "How many terms are in 2, 6, 18, …, 162?",
+      "as": "2, 6, 18, …, 162ত কেইটা পদ আছে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Ratio?",
+        "as": "অনুপাত?"
+       },
+       "options": [
+        {
+         "en": "6",
+         "as": "6"
+        },
+        {
+         "en": "3",
+         "as": "3"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Divide neighbours.",
+        "as": "ওচৰৰ দুটা হৰণ কৰা।"
+       },
+       "tag": "m-gp-add"
+      },
+      {
+       "ask": {
+        "en": "162 ÷ 2 =",
+        "as": "162 ÷ 2 ="
+       },
+       "options": [
+        {
+         "en": "81",
+         "as": "81"
+        },
+        {
+         "en": "160",
+         "as": "160"
+        },
+        {
+         "en": "82",
+         "as": "82"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "How many times was it multiplied in all?",
+        "as": "মুঠতে কিমান গুণ হ'ল?"
+       }
+      },
+      {
+       "ask": {
+        "en": "Number of terms?",
+        "as": "পদৰ সংখ্যা?"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "6",
+         "as": "6"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Power of r, plus 1.",
+        "as": "rৰ ঘাত, যোগ 1।"
+       },
+       "tag": "m-gp-power"
+      }
+     ],
+     "why": {
+      "en": "Count multiplications, then add 1 for the first term.",
+      "as": "পূৰণ গণা, প্ৰথম পদৰ বাবে 1 যোগ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many terms are in 2, 6, 18, …, 162?",
+        "as": "2, 6, 18, …, 162ত কেইটা পদ আছে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Ratio?",
+          "as": "অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Divide neighbours.",
+          "as": "ওচৰৰ দুটা হৰণ কৰা।"
+         },
+         "tag": "m-gp-add"
+        },
+        {
+         "ask": {
+          "en": "162 ÷ 2 =",
+          "as": "162 ÷ 2 ="
+         },
+         "options": [
+          {
+           "en": "81",
+           "as": "81"
+          },
+          {
+           "en": "160",
+           "as": "160"
+          },
+          {
+           "en": "82",
+           "as": "82"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "How many times was it multiplied in all?",
+          "as": "মুঠতে কিমান গুণ হ'ল?"
+         }
+        },
+        {
+         "ask": {
+          "en": "Number of terms?",
+          "as": "পদৰ সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Power of r, plus 1.",
+          "as": "rৰ ঘাত, যোগ 1।"
+         },
+         "tag": "m-gp-power"
+        }
+       ],
+       "why": {
+        "en": "Count multiplications, then add 1 for the first term.",
+        "as": "পূৰণ গণা, প্ৰথম পদৰ বাবে 1 যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many terms are in 3, 6, 12, …, 96?",
+        "as": "3, 6, 12, …, 96ত কেইটা পদ আছে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Ratio?",
+          "as": "অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Divide neighbours.",
+          "as": "ওচৰৰ দুটা হৰণ কৰা।"
+         },
+         "tag": "m-gp-add"
+        },
+        {
+         "ask": {
+          "en": "96 ÷ 3 =",
+          "as": "96 ÷ 3 ="
+         },
+         "options": [
+          {
+           "en": "33",
+           "as": "33"
+          },
+          {
+           "en": "32",
+           "as": "32"
+          },
+          {
+           "en": "93",
+           "as": "93"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "How many times was it multiplied in all?",
+          "as": "মুঠতে কিমান গুণ হ'ল?"
+         }
+        },
+        {
+         "ask": {
+          "en": "Number of terms?",
+          "as": "পদৰ সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Power of r, plus 1.",
+          "as": "rৰ ঘাত, যোগ 1।"
+         },
+         "tag": "m-gp-power"
+        }
+       ],
+       "why": {
+        "en": "Count multiplications, then add 1 for the first term.",
+        "as": "পূৰণ গণা, প্ৰথম পদৰ বাবে 1 যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many terms are in 5, 10, 20, …, 320?",
+        "as": "5, 10, 20, …, 320ত কেইটা পদ আছে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Ratio?",
+          "as": "অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Divide neighbours.",
+          "as": "ওচৰৰ দুটা হৰণ কৰা।"
+         },
+         "tag": "m-gp-add"
+        },
+        {
+         "ask": {
+          "en": "320 ÷ 5 =",
+          "as": "320 ÷ 5 ="
+         },
+         "options": [
+          {
+           "en": "64",
+           "as": "64"
+          },
+          {
+           "en": "65",
+           "as": "65"
+          },
+          {
+           "en": "315",
+           "as": "315"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "How many times was it multiplied in all?",
+          "as": "মুঠতে কিমান গুণ হ'ল?"
+         }
+        },
+        {
+         "ask": {
+          "en": "Number of terms?",
+          "as": "পদৰ সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Power of r, plus 1.",
+          "as": "rৰ ঘাত, যোগ 1।"
+         },
+         "tag": "m-gp-power"
+        }
+       ],
+       "why": {
+        "en": "Count multiplications, then add 1 for the first term.",
+        "as": "পূৰণ গণা, প্ৰথম পদৰ বাবে 1 যোগ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u3.q4",
+     "type": "tf",
+     "skill": "gp",
+     "s": {
+      "en": "3, 6, 12, 24 is an AP.",
+      "as": "3, 6, 12, 24 সমান্তৰ শ্ৰেণী।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The gaps grow, but the ratio is always 2, so it is a GP.",
+      "as": "ব্যৱধান বাঢ়ে, অনুপাত সদায় 2, সেয়ে ই গুণোত্তৰ।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-gp-add",
+       "why": {
+        "en": "Look for a steady ratio, not a steady gap.",
+        "as": "স্থিৰ ব্যৱধান নহয়, স্থিৰ অনুপাত বিচাৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.u3.q5",
+     "type": "solve",
+     "skill": "gp",
+     "q": {
+      "en": "If 4, x, 25 are in GP, find positive x.",
+      "as": "4, x, 25 গুণোত্তৰ শ্ৰেণীত থাকিলে ধনাত্মক x উলিওৱা।"
+     },
+     "answer": "10",
+     "why": {
+      "en": "$x^2 = 4 \\times 25$: the continued proportion from Ratio.",
+      "as": "$x^2 = 4 \\times 25$: অনুপাত পাঠৰ ক্ৰমিক সমানুপাত।"
+     },
+     "traps": [
+      {
+       "ans": "29/2",
+       "tag": "m-gp-add",
+       "why": {
+        "en": "That is the AP middle. In a GP the middle is $\\sqrt{ac}$.",
+        "as": "সেয়া সমান্তৰৰ মাজ। গুণোত্তৰৰ মাজ $\\sqrt{ac}$।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If 4, x, 25 are in GP, find positive x.",
+        "as": "4, x, 25 গুণোত্তৰ শ্ৰেণীত থাকিলে ধনাত্মক x উলিওৱা।"
+       },
+       "answer": "10",
+       "why": {
+        "en": "$x^2 = 4 \\times 25$: the continued proportion from Ratio.",
+        "as": "$x^2 = 4 \\times 25$: অনুপাত পাঠৰ ক্ৰমিক সমানুপাত।"
+       },
+       "traps": [
+        {
+         "ans": "29/2",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "That is the AP middle. In a GP the middle is $\\sqrt{ac}$.",
+          "as": "সেয়া সমান্তৰৰ মাজ। গুণোত্তৰৰ মাজ $\\sqrt{ac}$।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 5, x, 20 are in GP, find positive x.",
+        "as": "5, x, 20 গুণোত্তৰ শ্ৰেণীত থাকিলে ধনাত্মক x উলিওৱা।"
+       },
+       "answer": "10",
+       "why": {
+        "en": "$x^2 = 5 \\times 20$: the continued proportion from Ratio.",
+        "as": "$x^2 = 5 \\times 20$: অনুপাত পাঠৰ ক্ৰমিক সমানুপাত।"
+       },
+       "traps": [
+        {
+         "ans": "25/2",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "That is the AP middle. In a GP the middle is $\\sqrt{ac}$.",
+          "as": "সেয়া সমান্তৰৰ মাজ। গুণোত্তৰৰ মাজ $\\sqrt{ac}$।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 2, x, 18 are in GP, find positive x.",
+        "as": "2, x, 18 গুণোত্তৰ শ্ৰেণীত থাকিলে ধনাত্মক x উলিওৱা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "$x^2 = 2 \\times 18$: the continued proportion from Ratio.",
+        "as": "$x^2 = 2 \\times 18$: অনুপাত পাঠৰ ক্ৰমিক সমানুপাত।"
+       },
+       "traps": [
+        {
+         "ans": "10",
+         "tag": "m-gp-add",
+         "why": {
+          "en": "That is the AP middle. In a GP the middle is $\\sqrt{ac}$.",
+          "as": "সেয়া সমান্তৰৰ মাজ। গুণোত্তৰৰ মাজ $\\sqrt{ac}$।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m13.u3.q6",
+     "type": "match",
+     "skill": "gp",
+     "q": {
+      "en": "Match each list to its type",
+      "as": "প্ৰতিটো তালিকাক ইয়াৰ প্ৰকাৰৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "5, 10, 15",
+        "as": "5, 10, 15"
+       },
+       {
+        "en": "AP, d = 5",
+        "as": "সমান্তৰ, d = 5"
+       }
+      ],
+      [
+       {
+        "en": "5, 10, 20",
+        "as": "5, 10, 20"
+       },
+       {
+        "en": "GP, r = 2",
+        "as": "গুণোত্তৰ, r = 2"
+       }
+      ],
+      [
+       {
+        "en": "9, 3, 1",
+        "as": "9, 3, 1"
+       },
+       {
+        "en": "GP, r = $\\frac{1}{3}$",
+        "as": "গুণোত্তৰ, r = $\\frac{1}{3}$"
+       }
+      ],
+      [
+       {
+        "en": "9, 6, 3",
+        "as": "9, 6, 3"
+       },
+       {
+        "en": "AP, d = −3",
+        "as": "সমান্তৰ, d = −3"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Ratios can shrink and steps can be negative.",
+      "as": "অনুপাত সৰু হ'ব পাৰে, খোজ ঋণাত্মক হ'ব পাৰে।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "AP and GP test",
+   "as": "সমান্তৰ আৰু গুণোত্তৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m13.t.q1",
+    "type": "mcq",
+    "skill": "ap",
+    "q": {
+     "en": "Term 11 of 4, 11, 18, … is",
+     "as": "4, 11, 18, …ৰ 11 নং পদ"
+    },
+    "why": {
+     "en": "$a + (n - 1)d$.",
+     "as": "$a + (n - 1)d$।"
+    },
+    "options": [
+     {
+      "en": "74",
+      "as": "74"
+     },
+     {
+      "en": "44",
+      "as": "44"
+     },
+     {
+      "en": "67",
+      "as": "67"
+     },
+     {
+      "en": "81",
+      "as": "81"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-ap-n",
+      "why": {
+       "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+       "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Term 11 of 4, 11, 18, … is",
+       "as": "4, 11, 18, …ৰ 11 নং পদ"
+      },
+      "why": {
+       "en": "$a + (n - 1)d$.",
+       "as": "$a + (n - 1)d$।"
+      },
+      "options": [
+       {
+        "en": "74",
+        "as": "74"
+       },
+       {
+        "en": "44",
+        "as": "44"
+       },
+       {
+        "en": "67",
+        "as": "67"
+       },
+       {
+        "en": "81",
+        "as": "81"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-ap-n",
+        "why": {
+         "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+         "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Term 25 of 3, 9, 15, … is",
+       "as": "3, 9, 15, …ৰ 25 নং পদ"
+      },
+      "why": {
+       "en": "$a + (n - 1)d$.",
+       "as": "$a + (n - 1)d$।"
+      },
+      "options": [
+       {
+        "en": "75",
+        "as": "75"
+       },
+       {
+        "en": "153",
+        "as": "153"
+       },
+       {
+        "en": "141",
+        "as": "141"
+       },
+       {
+        "en": "147",
+        "as": "147"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-ap-n",
+        "why": {
+         "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+         "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Term 12 of 2, 11, 20, … is",
+       "as": "2, 11, 20, …ৰ 12 নং পদ"
+      },
+      "why": {
+       "en": "$a + (n - 1)d$.",
+       "as": "$a + (n - 1)d$।"
+      },
+      "options": [
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "110",
+        "as": "110"
+       },
+       {
+        "en": "101",
+        "as": "101"
+       },
+       {
+        "en": "92",
+        "as": "92"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-ap-n",
+        "why": {
+         "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
+         "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে n তম পদত n − 1 খোজ, n নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m13.t.q2",
+    "type": "mcq",
+    "skill": "ap-sum",
+    "q": {
+     "en": "The sum of the first 20 terms of 2, 5, … is",
+     "as": "2, 5, …ৰ প্ৰথম 20টা পদৰ যোগফল"
+    },
+    "why": {
+     "en": "$\\frac{n(a + l)}{2}$.",
+     "as": "$\\frac{n(a + l)}{2}$।"
+    },
+    "options": [
+     {
+      "en": "59",
+      "as": "59"
+     },
+     {
+      "en": "1220",
+      "as": "1220"
+     },
+     {
+      "en": "40",
+      "as": "40"
+     },
+     {
+      "en": "610",
+      "as": "610"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-sum-half",
+      "why": {
+       "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+       "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The sum of the first 20 terms of 2, 5, … is",
+       "as": "2, 5, …ৰ প্ৰথম 20টা পদৰ যোগফল"
+      },
+      "why": {
+       "en": "$\\frac{n(a + l)}{2}$.",
+       "as": "$\\frac{n(a + l)}{2}$।"
+      },
+      "options": [
+       {
+        "en": "59",
+        "as": "59"
+       },
+       {
+        "en": "1220",
+        "as": "1220"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "610",
+        "as": "610"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-sum-half",
+        "why": {
+         "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+         "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The sum of the first 15 terms of 5, 9, … is",
+       "as": "5, 9, …ৰ প্ৰথম 15টা পদৰ যোগফল"
+      },
+      "why": {
+       "en": "$\\frac{n(a + l)}{2}$.",
+       "as": "$\\frac{n(a + l)}{2}$।"
+      },
+      "options": [
+       {
+        "en": "75",
+        "as": "75"
+       },
+       {
+        "en": "990",
+        "as": "990"
+       },
+       {
+        "en": "61",
+        "as": "61"
+       },
+       {
+        "en": "495",
+        "as": "495"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-sum-half",
+        "why": {
+         "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+         "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The sum of the first 30 terms of 1, 3, … is",
+       "as": "1, 3, …ৰ প্ৰথম 30টা পদৰ যোগফল"
+      },
+      "why": {
+       "en": "$\\frac{n(a + l)}{2}$.",
+       "as": "$\\frac{n(a + l)}{2}$।"
+      },
+      "options": [
+       {
+        "en": "59",
+        "as": "59"
+       },
+       {
+        "en": "900",
+        "as": "900"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "1800",
+        "as": "1800"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-sum-half",
+        "why": {
+         "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
+         "as": "দুটা প্ৰতিলিপিয়ে আয়ত বনায়, সেয়ে যোগফল তাৰ আধা। 2ৰে হৰণ কৰিবলৈ নাপাহৰিবা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m13.t.q3",
+    "type": "mcq",
+    "skill": "gp",
+    "q": {
+     "en": "Term 8 of 3, 6, … is",
+     "as": "3, 6, …ৰ 8 নং পদ"
+    },
+    "why": {
+     "en": "$ar^{n-1}$.",
+     "as": "$ar^{n-1}$।"
+    },
+    "options": [
+     {
+      "en": "384",
+      "as": "384"
+     },
+     {
+      "en": "768",
+      "as": "768"
+     },
+     {
+      "en": "48",
+      "as": "48"
+     },
+     {
+      "en": "192",
+      "as": "192"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-gp-power",
+      "why": {
+       "en": "The first term has no multiplying, so the power is n − 1.",
+       "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Term 8 of 3, 6, … is",
+       "as": "3, 6, …ৰ 8 নং পদ"
+      },
+      "why": {
+       "en": "$ar^{n-1}$.",
+       "as": "$ar^{n-1}$।"
+      },
+      "options": [
+       {
+        "en": "384",
+        "as": "384"
+       },
+       {
+        "en": "768",
+        "as": "768"
+       },
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "192",
+        "as": "192"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-gp-power",
+        "why": {
+         "en": "The first term has no multiplying, so the power is n − 1.",
+         "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Term 6 of 2, 6, … is",
+       "as": "2, 6, …ৰ 6 নং পদ"
+      },
+      "why": {
+       "en": "$ar^{n-1}$.",
+       "as": "$ar^{n-1}$।"
+      },
+      "options": [
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "162",
+        "as": "162"
+       },
+       {
+        "en": "486",
+        "as": "486"
+       },
+       {
+        "en": "1458",
+        "as": "1458"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-gp-power",
+        "why": {
+         "en": "The first term has no multiplying, so the power is n − 1.",
+         "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Term 7 of 4, 8, … is",
+       "as": "4, 8, …ৰ 7 নং পদ"
+      },
+      "why": {
+       "en": "$ar^{n-1}$.",
+       "as": "$ar^{n-1}$।"
+      },
+      "options": [
+       {
+        "en": "56",
+        "as": "56"
+       },
+       {
+        "en": "512",
+        "as": "512"
+       },
+       {
+        "en": "256",
+        "as": "256"
+       },
+       {
+        "en": "128",
+        "as": "128"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-gp-power",
+        "why": {
+         "en": "The first term has no multiplying, so the power is n − 1.",
+         "as": "প্ৰথম পদত পূৰণ নাই, সেয়ে ঘাত n − 1।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m13.t.q4",
+    "type": "mcq",
+    "skill": "ap",
+    "q": {
+     "en": "How many numbers between 10 and 100 are divisible by 3?",
+     "as": "10 আৰু 100ৰ মাজত 3ৰে হৰণ যোৱা সংখ্যা কেইটা?"
+    },
+    "why": {
+     "en": "Steps + 1.",
+     "as": "খোজ + 1।"
+    },
+    "options": [
+     {
+      "en": "31",
+      "as": "31"
+     },
+     {
+      "en": "29",
+      "as": "29"
+     },
+     {
+      "en": "32",
+      "as": "32"
+     },
+     {
+      "en": "30",
+      "as": "30"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-ap-n",
+      "why": {
+       "en": "Add 1 for the first term.",
+       "as": "প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "How many numbers between 10 and 100 are divisible by 3?",
+       "as": "10 আৰু 100ৰ মাজত 3ৰে হৰণ যোৱা সংখ্যা কেইটা?"
+      },
+      "why": {
+       "en": "Steps + 1.",
+       "as": "খোজ + 1।"
+      },
+      "options": [
+       {
+        "en": "31",
+        "as": "31"
+       },
+       {
+        "en": "29",
+        "as": "29"
+       },
+       {
+        "en": "32",
+        "as": "32"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-ap-n",
+        "why": {
+         "en": "Add 1 for the first term.",
+         "as": "প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "How many numbers between 12 and 200 are divisible by 5?",
+       "as": "12 আৰু 200ৰ মাজত 5ৰে হৰণ যোৱা সংখ্যা কেইটা?"
+      },
+      "why": {
+       "en": "Steps + 1.",
+       "as": "খোজ + 1।"
+      },
+      "options": [
+       {
+        "en": "38",
+        "as": "38"
+       },
+       {
+        "en": "39",
+        "as": "39"
+       },
+       {
+        "en": "37",
+        "as": "37"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-ap-n",
+        "why": {
+         "en": "Add 1 for the first term.",
+         "as": "প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "How many numbers between 10 and 150 are divisible by 8?",
+       "as": "10 আৰু 150ৰ মাজত 8ৰে হৰণ যোৱা সংখ্যা কেইটা?"
+      },
+      "why": {
+       "en": "Steps + 1.",
+       "as": "খোজ + 1।"
+      },
+      "options": [
+       {
+        "en": "16",
+        "as": "16"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       },
+       {
+        "en": "18",
+        "as": "18"
+       },
+       {
+        "en": "17",
+        "as": "17"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-ap-n",
+        "why": {
+         "en": "Add 1 for the first term.",
+         "as": "প্ৰথম পদৰ বাবে 1 যোগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m13.t.q5",
+    "type": "solve",
+    "skill": "ap-sum",
+    "q": {
+     "en": "Find the sum of the first 10 odd numbers.",
+     "as": "প্ৰথম 10টা অযুগ্ম সংখ্যাৰ যোগফল উলিওৱা।"
+    },
+    "answer": "100",
+    "why": {
+     "en": "n odd numbers add to $n^2$.",
+     "as": "nটা অযুগ্ম সংখ্যাৰ যোগফল $n^2$।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Find the sum of the first 10 odd numbers.",
+       "as": "প্ৰথম 10টা অযুগ্ম সংখ্যাৰ যোগফল উলিওৱা।"
+      },
+      "answer": "100",
+      "why": {
+       "en": "n odd numbers add to $n^2$.",
+       "as": "nটা অযুগ্ম সংখ্যাৰ যোগফল $n^2$।"
+      }
+     },
+     {
+      "q": {
+       "en": "Find the sum of the first 15 odd numbers.",
+       "as": "প্ৰথম 15টা অযুগ্ম সংখ্যাৰ যোগফল উলিওৱা।"
+      },
+      "answer": "225",
+      "why": {
+       "en": "n odd numbers add to $n^2$.",
+       "as": "nটা অযুগ্ম সংখ্যাৰ যোগফল $n^2$।"
+      }
+     },
+     {
+      "q": {
+       "en": "Find the sum of the first 20 odd numbers.",
+       "as": "প্ৰথম 20টা অযুগ্ম সংখ্যাৰ যোগফল উলিওৱা।"
+      },
+      "answer": "400",
+      "why": {
+       "en": "n odd numbers add to $n^2$.",
+       "as": "nটা অযুগ্ম সংখ্যাৰ যোগফল $n^2$।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

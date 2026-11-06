@@ -1,0 +1,7294 @@
+{
+ "topics": [
+  {
+   "id": "numbers",
+   "t": {
+    "en": "Numbers that talk",
+    "as": "কথা কোৱা সংখ্যা"
+   }
+  },
+  {
+   "id": "lcm",
+   "t": {
+    "en": "LCM and HCF",
+    "as": "ল.সা.গু. আৰু গ.সা.গু."
+   }
+  },
+  {
+   "id": "fractions",
+   "t": {
+    "en": "Fractions you can see",
+    "as": "দেখিব পৰা ভগ্নাংশ"
+   }
+  },
+  {
+   "id": "simplify",
+   "t": {
+    "en": "Simplification and roots",
+    "as": "সৰলীকৰণ আৰু মূল"
+   }
+  },
+  {
+   "id": "percentage",
+   "t": {
+    "en": "Percentage",
+    "as": "শতাংশ"
+   }
+  },
+  {
+   "id": "ratio",
+   "t": {
+    "en": "Ratio and proportion",
+    "as": "অনুপাত আৰু সমানুপাত"
+   }
+  },
+  {
+   "id": "average",
+   "t": {
+    "en": "Average",
+    "as": "গড়"
+   }
+  },
+  {
+   "id": "profit",
+   "t": {
+    "en": "Profit, loss and discount",
+    "as": "লাভ, লোকচান আৰু ৰেহাই"
+   }
+  },
+  {
+   "id": "interest",
+   "t": {
+    "en": "Simple and compound interest",
+    "as": "সৰল আৰু চক্ৰবৃদ্ধি সুত"
+   }
+  },
+  {
+   "id": "work",
+   "t": {
+    "en": "Time and work",
+    "as": "সময় আৰু কাম"
+   }
+  },
+  {
+   "id": "speed",
+   "t": {
+    "en": "Speed, distance and trains",
+    "as": "গতি, দূৰত্ব আৰু ৰেল"
+   }
+  },
+  {
+   "id": "age",
+   "t": {
+    "en": "Age problems",
+    "as": "বয়সৰ সমস্যা"
+   }
+  },
+  {
+   "id": "sequence",
+   "t": {
+    "en": "AP and GP",
+    "as": "সমান্তৰ আৰু গুণোত্তৰ শ্ৰেণী"
+   }
+  },
+  {
+   "id": "trig",
+   "t": {
+    "en": "Trigonometry",
+    "as": "ত্ৰিকোণমিতি"
+   }
+  },
+  {
+   "id": "geometry",
+   "t": {
+    "en": "Plane figures",
+    "as": "সমতল আকৃতি"
+   }
+  },
+  {
+   "id": "solids",
+   "t": {
+    "en": "Solid figures",
+    "as": "ঘন আকৃতি"
+   }
+  }
+ ],
+ "skills": [
+  {
+   "id": "n-line",
+   "topic": "numbers",
+   "t": {
+    "en": "The number line",
+    "as": "সংখ্যা ৰেখা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q1"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q2"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q3"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q6"
+    }
+   ]
+  },
+  {
+   "id": "n-decimal",
+   "topic": "numbers",
+   "t": {
+    "en": "Decimals on the line",
+    "as": "ৰেখাত দশমিক"
+   },
+   "pre": [
+    "n-line"
+   ],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q4"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q5"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.l.q7"
+    }
+   ]
+  },
+  {
+   "id": "n-types",
+   "topic": "numbers",
+   "t": {
+    "en": "Number types",
+    "as": "সংখ্যাৰ প্ৰকাৰ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u1.q1"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u1.q2"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u1.q3"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u1.q5"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.t.q1"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "n-factor",
+   "topic": "numbers",
+   "t": {
+    "en": "Prime factors",
+    "as": "মৌলিক গুণনীয়ক"
+   },
+   "pre": [
+    "n-types"
+   ],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u1.q4"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.t.q5"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u1.q5"
+    }
+   ]
+  },
+  {
+   "id": "n-div",
+   "topic": "numbers",
+   "t": {
+    "en": "Divisibility",
+    "as": "বিভাজ্যতা"
+   },
+   "pre": [
+    "n-types"
+   ],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u2.q1"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u2.q2"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u2.q3"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u2.q4"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u2.q5"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "n-unit",
+   "topic": "numbers",
+   "t": {
+    "en": "Unit digits",
+    "as": "একক অংক"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u3.q1"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u3.q2"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u3.q3"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u3.q4"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.u3.q5"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "l-hcf",
+   "topic": "lcm",
+   "t": {
+    "en": "HCF",
+    "as": "গ.সা.গু."
+   },
+   "pre": [
+    "n-factor"
+   ],
+   "steps": [
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u1.q1"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u1.q2"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u1.q3"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u1.q4"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u3.q6"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "l-lcm",
+   "topic": "lcm",
+   "t": {
+    "en": "LCM",
+    "as": "ল.সা.গু."
+   },
+   "pre": [
+    "n-factor"
+   ],
+   "steps": [
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u2.q1"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u2.q2"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u2.q3"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u2.q6"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "l-apply",
+   "topic": "lcm",
+   "t": {
+    "en": "LCM and HCF problems",
+    "as": "ল.সা.গু. আৰু গ.সা.গু.ৰ সমস্যা"
+   },
+   "pre": [
+    "l-hcf",
+    "l-lcm"
+   ],
+   "steps": [
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u2.q4"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u2.q5"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u3.q1"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u3.q2"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u3.q3"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u3.q4"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.u3.q5"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.t.q3"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.t.q4"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "f-meaning",
+   "topic": "fractions",
+   "t": {
+    "en": "Fraction meaning",
+    "as": "ভগ্নাংশৰ অৰ্থ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u1.q1"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u1.q4"
+    }
+   ]
+  },
+  {
+   "id": "f-equiv",
+   "topic": "fractions",
+   "t": {
+    "en": "Equal fractions",
+    "as": "সমান ভগ্নাংশ"
+   },
+   "pre": [
+    "f-meaning",
+    "l-hcf"
+   ],
+   "steps": [
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u1.q2"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u1.q3"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u1.q5"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "f-compare",
+   "topic": "fractions",
+   "t": {
+    "en": "Comparing fractions",
+    "as": "ভগ্নাংশৰ তুলনা"
+   },
+   "pre": [
+    "f-equiv"
+   ],
+   "steps": [
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u2.q1"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u2.q2"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u2.q3"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "f-add",
+   "topic": "fractions",
+   "t": {
+    "en": "Adding fractions",
+    "as": "ভগ্নাংশ যোগ"
+   },
+   "pre": [
+    "f-equiv",
+    "l-lcm"
+   ],
+   "steps": [
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u2.q4"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u2.q5"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "f-of",
+   "topic": "fractions",
+   "t": {
+    "en": "Fraction of a quantity",
+    "as": "পৰিমাণৰ ভগ্নাংশ"
+   },
+   "pre": [
+    "f-meaning"
+   ],
+   "steps": [
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q1"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q2"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q5"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q6"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "f-dec",
+   "topic": "fractions",
+   "t": {
+    "en": "Fractions and decimals",
+    "as": "ভগ্নাংশ আৰু দশমিক"
+   },
+   "pre": [
+    "f-equiv",
+    "n-decimal"
+   ],
+   "steps": [
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q3"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q4"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "s-bodmas",
+   "topic": "simplify",
+   "t": {
+    "en": "Order of operations",
+    "as": "গণনাৰ ক্ৰম"
+   },
+   "pre": [
+    "f-add"
+   ],
+   "steps": [
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q1"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q2"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q3"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q4"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q5"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q6"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.t.q1"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "s-roots",
+   "topic": "simplify",
+   "t": {
+    "en": "Squares and roots",
+    "as": "বৰ্গ আৰু বৰ্গমূল"
+   },
+   "pre": [
+    "n-factor"
+   ],
+   "steps": [
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q1"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q2"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q3"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q7"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "s-perfect",
+   "topic": "simplify",
+   "t": {
+    "en": "Perfect squares",
+    "as": "পূৰ্ণবৰ্গ"
+   },
+   "pre": [
+    "s-roots",
+    "n-factor"
+   ],
+   "steps": [
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q4"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q5"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u2.q6"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "s-ident",
+   "topic": "simplify",
+   "t": {
+    "en": "Square patterns",
+    "as": "বৰ্গৰ আৰ্হি"
+   },
+   "pre": [
+    "s-roots"
+   ],
+   "steps": [
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u3.q1"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u3.q2"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u3.q3"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u3.q4"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u3.q5"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "p-meaning",
+   "topic": "percentage",
+   "t": {
+    "en": "Percent meaning",
+    "as": "শতাংশৰ অৰ্থ"
+   },
+   "pre": [
+    "f-dec"
+   ],
+   "steps": [
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u1.q1"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u1.q2"
+    }
+   ]
+  },
+  {
+   "id": "p-of",
+   "topic": "percentage",
+   "t": {
+    "en": "Percent of a quantity",
+    "as": "পৰিমাণৰ শতাংশ"
+   },
+   "pre": [
+    "p-meaning",
+    "f-of"
+   ],
+   "steps": [
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u1.q3"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u1.q4"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u1.q5"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u1.q6"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "p-change",
+   "topic": "percentage",
+   "t": {
+    "en": "Percent change",
+    "as": "শতাংশ পৰিৱৰ্তন"
+   },
+   "pre": [
+    "p-of"
+   ],
+   "steps": [
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u2.q1"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u2.q2"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u2.q3"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u2.q4"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u2.q5"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.t.q1"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "p-succ",
+   "topic": "percentage",
+   "t": {
+    "en": "Successive change",
+    "as": "ক্ৰমিক পৰিৱৰ্তন"
+   },
+   "pre": [
+    "p-change"
+   ],
+   "steps": [
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u3.q1"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u3.q2"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u3.q6"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "p-compare",
+   "topic": "percentage",
+   "t": {
+    "en": "More than, less than",
+    "as": "বেছি আৰু কম"
+   },
+   "pre": [
+    "p-change"
+   ],
+   "steps": [
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u3.q3"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u3.q4"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.u3.q5"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-share",
+   "topic": "ratio",
+   "t": {
+    "en": "Sharing in a ratio",
+    "as": "অনুপাতত ভাগ"
+   },
+   "pre": [
+    "f-of"
+   ],
+   "steps": [
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u1.q1"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u1.q2"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u1.q3"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u1.q4"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u1.q5"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u1.q6"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.t.q1"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-prop",
+   "topic": "ratio",
+   "t": {
+    "en": "Proportion",
+    "as": "সমানুপাত"
+   },
+   "pre": [
+    "r-share",
+    "f-equiv"
+   ],
+   "steps": [
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u2.q1"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u2.q2"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u2.q3"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u2.q4"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u2.q5"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.t.q2"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-combine",
+   "topic": "ratio",
+   "t": {
+    "en": "Linked ratios",
+    "as": "সংযুক্ত অনুপাত"
+   },
+   "pre": [
+    "r-prop",
+    "l-lcm"
+   ],
+   "steps": [
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u3.q1"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u3.q2"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u3.q3"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u3.q4"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.u3.q5"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "a-mean",
+   "topic": "average",
+   "t": {
+    "en": "Average",
+    "as": "গড়"
+   },
+   "pre": [
+    "s-bodmas"
+   ],
+   "steps": [
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q1"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q2"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q3"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q4"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q5"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.t.q1"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "a-change",
+   "topic": "average",
+   "t": {
+    "en": "When one value changes",
+    "as": "এটা মান সলনি হ'লে"
+   },
+   "pre": [
+    "a-mean"
+   ],
+   "steps": [
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q1"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q2"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q3"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q4"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q5"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q6"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.t.q3"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "a-weight",
+   "topic": "average",
+   "t": {
+    "en": "Group averages",
+    "as": "গোটৰ গড়"
+   },
+   "pre": [
+    "a-mean",
+    "r-share"
+   ],
+   "steps": [
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q1"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q2"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q3"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q4"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q5"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q6"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "pl-basic",
+   "topic": "profit",
+   "t": {
+    "en": "Profit and loss",
+    "as": "লাভ আৰু লোকচান"
+   },
+   "pre": [
+    "p-change"
+   ],
+   "steps": [
+    {
+     "l": "math-08-profit",
+     "id": "m8.u1.q1"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u1.q2"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u1.q3"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u1.q4"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u1.q5"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u1.q6"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.t.q1"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "pl-discount",
+   "topic": "profit",
+   "t": {
+    "en": "Discount",
+    "as": "ৰেহাই"
+   },
+   "pre": [
+    "pl-basic",
+    "p-succ"
+   ],
+   "steps": [
+    {
+     "l": "math-08-profit",
+     "id": "m8.u2.q1"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u2.q2"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u2.q3"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u2.q4"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u2.q5"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u2.q6"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.t.q2"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "pl-deals",
+   "topic": "profit",
+   "t": {
+    "en": "Tricky deals",
+    "as": "কৌশলী লেনদেন"
+   },
+   "pre": [
+    "pl-basic",
+    "r-share"
+   ],
+   "steps": [
+    {
+     "l": "math-08-profit",
+     "id": "m8.u3.q1"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u3.q2"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u3.q3"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u3.q4"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u3.q5"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.u3.q6"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "i-si",
+   "topic": "interest",
+   "t": {
+    "en": "Simple interest",
+    "as": "সৰল সুত"
+   },
+   "pre": [
+    "p-of"
+   ],
+   "steps": [
+    {
+     "l": "math-09-interest",
+     "id": "m9.u1.q1"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u1.q2"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u1.q3"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u1.q4"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u1.q5"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "i-solve",
+   "topic": "interest",
+   "t": {
+    "en": "Finding rate and time",
+    "as": "হাৰ আৰু সময় উলিওৱা"
+   },
+   "pre": [
+    "i-si"
+   ],
+   "steps": [
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q1"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q2"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q3"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q4"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q5"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q6"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.t.q2"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "i-ci",
+   "topic": "interest",
+   "t": {
+    "en": "Compound interest",
+    "as": "চক্ৰবৃদ্ধি সুত"
+   },
+   "pre": [
+    "i-si",
+    "p-succ"
+   ],
+   "steps": [
+    {
+     "l": "math-09-interest",
+     "id": "m9.u3.q1"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u3.q3"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u3.q4"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u3.q5"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u3.q6"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "i-diff",
+   "topic": "interest",
+   "t": {
+    "en": "Compound against simple",
+    "as": "চক্ৰবৃদ্ধি বনাম সৰল"
+   },
+   "pre": [
+    "i-ci"
+   ],
+   "steps": [
+    {
+     "l": "math-09-interest",
+     "id": "m9.u3.q2"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "w-rate",
+   "topic": "work",
+   "t": {
+    "en": "Work rates",
+    "as": "কামৰ হাৰ"
+   },
+   "pre": [
+    "f-add",
+    "l-lcm"
+   ],
+   "steps": [
+    {
+     "l": "math-10-work",
+     "id": "m10.u1.q1"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u1.q2"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u1.q3"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u1.q4"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u1.q5"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u2.q6"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.t.q1"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "w-men",
+   "topic": "work",
+   "t": {
+    "en": "People and days",
+    "as": "মানুহ আৰু দিন"
+   },
+   "pre": [
+    "r-prop"
+   ],
+   "steps": [
+    {
+     "l": "math-10-work",
+     "id": "m10.u2.q1"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u2.q2"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u2.q3"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u2.q4"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u2.q5"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.t.q2"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "w-pipes",
+   "topic": "work",
+   "t": {
+    "en": "Pipes and tanks",
+    "as": "পাইপ আৰু টেংকী"
+   },
+   "pre": [
+    "w-rate"
+   ],
+   "steps": [
+    {
+     "l": "math-10-work",
+     "id": "m10.u3.q1"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u3.q2"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u3.q3"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u3.q4"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.u3.q5"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "sp-basic",
+   "topic": "speed",
+   "t": {
+    "en": "Speed and distance",
+    "as": "গতি আৰু দূৰত্ব"
+   },
+   "pre": [
+    "r-share"
+   ],
+   "steps": [
+    {
+     "l": "math-11-speed",
+     "id": "m11.u1.q1"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u1.q2"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u1.q3"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u1.q4"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u1.q5"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.t.q1"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "sp-avg",
+   "topic": "speed",
+   "t": {
+    "en": "Average speed",
+    "as": "গড় গতি"
+   },
+   "pre": [
+    "sp-basic",
+    "a-weight"
+   ],
+   "steps": [
+    {
+     "l": "math-11-speed",
+     "id": "m11.u2.q1"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u2.q2"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u2.q3"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u2.q4"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u2.q5"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u2.q6"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "sp-rel",
+   "topic": "speed",
+   "t": {
+    "en": "Trains and relative speed",
+    "as": "ৰেল আৰু আপেক্ষিক গতি"
+   },
+   "pre": [
+    "sp-basic"
+   ],
+   "steps": [
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q1"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q2"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q3"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q4"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q5"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q6"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.t.q3"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "age-gap",
+   "topic": "age",
+   "t": {
+    "en": "The fixed age gap",
+    "as": "বয়সৰ স্থিৰ ব্যৱধান"
+   },
+   "pre": [
+    "n-line"
+   ],
+   "steps": [
+    {
+     "l": "math-12-ages",
+     "id": "m12.u1.q1"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u1.q2"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u1.q3"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u1.q4"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u1.q5"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.t.q2"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.t.q4"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "age-ratio",
+   "topic": "age",
+   "t": {
+    "en": "Age problems",
+    "as": "বয়সৰ সমস্যা"
+   },
+   "pre": [
+    "r-share",
+    "age-gap"
+   ],
+   "steps": [
+    {
+     "l": "math-12-ages",
+     "id": "m12.u2.q1"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u2.q2"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u2.q3"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u2.q4"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.u2.q5"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.t.q1"
+    },
+    {
+     "l": "math-12-ages",
+     "id": "m12.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "ap",
+   "topic": "sequence",
+   "t": {
+    "en": "Arithmetic progression",
+    "as": "সমান্তৰ শ্ৰেণী"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u1.q1"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u1.q2"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u1.q3"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u1.q4"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u1.q5"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u1.q6"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.t.q1"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "ap-sum",
+   "topic": "sequence",
+   "t": {
+    "en": "Sum of an AP",
+    "as": "সমান্তৰ শ্ৰেণীৰ যোগফল"
+   },
+   "pre": [
+    "ap"
+   ],
+   "steps": [
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q1"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q2"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q3"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q4"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q5"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q6"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.t.q2"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "gp",
+   "topic": "sequence",
+   "t": {
+    "en": "Geometric progression",
+    "as": "গুণোত্তৰ শ্ৰেণী"
+   },
+   "pre": [
+    "n-unit"
+   ],
+   "steps": [
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u3.q1"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u3.q2"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u3.q3"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u3.q4"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u3.q5"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u3.q6"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "tr-ratio",
+   "topic": "trig",
+   "t": {
+    "en": "Trig ratios",
+    "as": "ত্ৰিকোণমিতিক অনুপাত"
+   },
+   "pre": [
+    "s-roots"
+   ],
+   "steps": [
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q1"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q2"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q3"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q4"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q5"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q6"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.t.q1"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "tr-values",
+   "topic": "trig",
+   "t": {
+    "en": "Standard values",
+    "as": "প্ৰমাণ মান"
+   },
+   "pre": [
+    "tr-ratio"
+   ],
+   "steps": [
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q1"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q2"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q3"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q4"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q5"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q6"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.t.q3"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "tr-height",
+   "topic": "trig",
+   "t": {
+    "en": "Heights and distances",
+    "as": "উচ্চতা আৰু দূৰত্ব"
+   },
+   "pre": [
+    "tr-values"
+   ],
+   "steps": [
+    {
+     "l": "math-14-trig",
+     "id": "m14.u3.q1"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u3.q2"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u3.q3"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u3.q4"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u3.q5"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u3.q6"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "g-rect",
+   "topic": "geometry",
+   "t": {
+    "en": "Squares and rectangles",
+    "as": "বৰ্গ আৰু আয়ত"
+   },
+   "pre": [
+    "s-roots",
+    "l-hcf"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u1.q7"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "g-sides",
+   "topic": "geometry",
+   "t": {
+    "en": "Triangle side rule",
+    "as": "ত্ৰিভুজৰ বাহুৰ নিয়ম"
+   },
+   "pre": [
+    "n-line"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.u2.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u2.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "g-tri",
+   "topic": "geometry",
+   "t": {
+    "en": "Triangles",
+    "as": "ত্ৰিভুজ"
+   },
+   "pre": [
+    "s-roots"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.u2.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u2.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u2.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u2.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "g-quad",
+   "topic": "geometry",
+   "t": {
+    "en": "Rhombus and trapezium",
+    "as": "ৰম্বাছ আৰু ট্ৰেপিজিয়াম"
+   },
+   "pre": [
+    "g-tri"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.u3.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u3.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u3.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u3.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u3.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u3.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "g-circle",
+   "topic": "geometry",
+   "t": {
+    "en": "Circles",
+    "as": "বৃত্ত"
+   },
+   "pre": [
+    "f-of"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.u4.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u4.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u4.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u4.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u4.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.u4.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "g-solid",
+   "topic": "solids",
+   "t": {
+    "en": "Volume and surface",
+    "as": "আয়তন আৰু পৃষ্ঠকালি"
+   },
+   "pre": [
+    "g-rect"
+   ],
+   "steps": [
+    {
+     "l": "math-16-solids",
+     "id": "m16.u1.q1"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u1.q2"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u1.q3"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u1.q4"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u1.q5"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u1.q6"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.t.q1"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "g-round",
+   "topic": "solids",
+   "t": {
+    "en": "Cylinders and cones",
+    "as": "চুঙা আৰু শংকু"
+   },
+   "pre": [
+    "g-solid",
+    "g-circle"
+   ],
+   "steps": [
+    {
+     "l": "math-16-solids",
+     "id": "m16.u2.q1"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u2.q2"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u2.q3"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u2.q4"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u2.q5"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u2.q6"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.t.q2"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "g-sphere",
+   "topic": "solids",
+   "t": {
+    "en": "Spheres and recasting",
+    "as": "গোলক আৰু নতুন ৰূপ"
+   },
+   "pre": [
+    "g-round"
+   ],
+   "steps": [
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q1"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q2"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q3"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q4"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q5"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q6"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.u3.q7"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.t.q4"
+    }
+   ]
+  }
+ ],
+ "misconceptions": {
+  "m-neg-order": {
+   "skill": "n-line",
+   "t": {
+    "en": "Thinking a bigger-looking negative is bigger",
+    "as": "ডাঙৰ দেখা ঋণাত্মক সংখ্যাক ডাঙৰ ধৰা"
+   }
+  },
+  "m-dec-long": {
+   "skill": "n-decimal",
+   "t": {
+    "en": "Thinking more decimal digits means bigger",
+    "as": "বেছি দশমিক অংক মানে ডাঙৰ বুলি ধৰা"
+   }
+  },
+  "m-one-prime": {
+   "skill": "n-types",
+   "t": {
+    "en": "Calling 1 a prime",
+    "as": "1ক মৌলিক ধৰা"
+   }
+  },
+  "m-odd-prime": {
+   "skill": "n-types",
+   "t": {
+    "en": "Treating every odd number as prime",
+    "as": "প্ৰতিটো অযুগ্ম সংখ্যাক মৌলিক ধৰা"
+   }
+  },
+  "m-div-last": {
+   "skill": "n-div",
+   "t": {
+    "en": "Using the last digit to test 3 or 9",
+    "as": "3 বা 9ৰ বাবে শেষৰ অংক চোৱা"
+   }
+  },
+  "m-unit-cycle": {
+   "skill": "n-unit",
+   "t": {
+    "en": "Multiplying base by power for the unit digit",
+    "as": "একক অংকৰ বাবে ভূমি আৰু ঘাত পূৰণ কৰা"
+   }
+  },
+  "m-lcm-hcf-swap": {
+   "skill": "l-apply",
+   "t": {
+    "en": "Swapping LCM and HCF",
+    "as": "ল.সা.গু. আৰু গ.সা.গু. সলনি কৰা"
+   }
+  },
+  "m-lcm-product": {
+   "skill": "l-lcm",
+   "t": {
+    "en": "Taking the product as the LCM",
+    "as": "পূৰণফলকে ল.সা.গু. ধৰা"
+   }
+  },
+  "m-hcf-remainder": {
+   "skill": "l-apply",
+   "t": {
+    "en": "Forgetting the remainder in LCM or HCF problems",
+    "as": "ল.সা.গু. বা গ.সা.গু.ৰ সমস্যাত ভাগশেষ পাহৰা"
+   }
+  },
+  "m-hcf-divide": {
+   "skill": "l-apply",
+   "t": {
+    "en": "Multiplying instead of dividing by the HCF",
+    "as": "গ.সা.গু.ৰে হৰণৰ ঠাইত পূৰণ কৰা"
+   }
+  },
+  "m-add-tops": {
+   "skill": "f-add",
+   "t": {
+    "en": "Adding tops and bottoms",
+    "as": "লব আৰু হৰ যোগ কৰা"
+   }
+  },
+  "m-cmp-denom": {
+   "skill": "f-compare",
+   "t": {
+    "en": "Thinking a bigger denominator means a bigger fraction",
+    "as": "ডাঙৰ হৰ মানে ডাঙৰ ভগ্নাংশ বুলি ধৰা"
+   }
+  },
+  "m-simplify-partial": {
+   "skill": "f-equiv",
+   "t": {
+    "en": "Stopping before simplest form",
+    "as": "সৰলতম ৰূপৰ আগতে ৰখা"
+   }
+  },
+  "m-frac-of": {
+   "skill": "f-of",
+   "t": {
+    "en": "Dividing by the numerator",
+    "as": "লবেৰে হৰণ কৰা"
+   }
+  },
+  "m-pct-base": {
+   "skill": "p-change",
+   "t": {
+    "en": "Using the wrong base for a percentage",
+    "as": "শতাংশৰ ভুল ভিত্তি লোৱা"
+   }
+  },
+  "m-pct-add": {
+   "skill": "p-succ",
+   "t": {
+    "en": "Adding successive percentages",
+    "as": "ক্ৰমিক শতাংশ যোগ কৰা"
+   }
+  },
+  "m-pct-undo": {
+   "skill": "p-change",
+   "t": {
+    "en": "Expecting the same percent to undo a change",
+    "as": "একে শতাংশই পৰিৱৰ্তন ওভতাব বুলি ধৰা"
+   }
+  },
+  "m-pct-more-less": {
+   "skill": "p-compare",
+   "t": {
+    "en": "Treating more-than and less-than as equal",
+    "as": "বেছি আৰু কম একে বুলি ধৰা"
+   }
+  },
+  "m-bodmas-lr": {
+   "skill": "s-bodmas",
+   "t": {
+    "en": "Working left to right, ignoring order",
+    "as": "ক্ৰম নামানি বাওঁৰ পৰা সোঁলৈ কৰা"
+   }
+  },
+  "m-root-add": {
+   "skill": "s-roots",
+   "t": {
+    "en": "Splitting a root across addition",
+    "as": "যোগৰ ওপৰত মূল ভাঙি দিয়া"
+   }
+  },
+  "m-ratio-part": {
+   "skill": "r-share",
+   "t": {
+    "en": "Using ratio numbers as the amounts",
+    "as": "অনুপাতৰ সংখ্যাকে পৰিমাণ ধৰা"
+   }
+  },
+  "m-avg-add": {
+   "skill": "a-mean",
+   "t": {
+    "en": "Averaging without weighting by count",
+    "as": "সংখ্যা নোচোৱাকৈ গড় কৰা"
+   }
+  },
+  "m-bodmas-div": {
+   "skill": "s-bodmas",
+   "t": {
+    "en": "Putting × ahead of ÷",
+    "as": "÷ৰ আগত × ৰখা"
+   }
+  },
+  "m-pair-all": {
+   "skill": "s-perfect",
+   "t": {
+    "en": "Multiplying by the whole number for a square",
+    "as": "বৰ্গৰ বাবে গোটা সংখ্যাৰে পূৰণ কৰা"
+   }
+  },
+  "m-square-spread": {
+   "skill": "s-ident",
+   "t": {
+    "en": "Dropping the middle term of a square",
+    "as": "বৰ্গৰ মাজৰ পদ এৰা"
+   }
+  },
+  "m-disc-base": {
+   "skill": "pl-discount",
+   "t": {
+    "en": "Taking discount on the wrong price",
+    "as": "ভুল দামৰ ওপৰত ৰেহাই ধৰা"
+   }
+  },
+  "m-articles-base": {
+   "skill": "pl-deals",
+   "t": {
+    "en": "Measuring on the wrong number of items",
+    "as": "ভুল সংখ্যাৰ ওপৰত জোখা"
+   }
+  },
+  "m-two-items": {
+   "skill": "pl-deals",
+   "t": {
+    "en": "Expecting equal profit and loss to cancel",
+    "as": "সমান লাভ আৰু লোকচান কাটিব বুলি ধৰা"
+   }
+  },
+  "m-si-once": {
+   "skill": "i-si",
+   "t": {
+    "en": "Stopping at one year's interest",
+    "as": "এবছৰৰ সুততে ৰখা"
+   }
+  },
+  "m-si-amount": {
+   "skill": "i-si",
+   "t": {
+    "en": "Mixing up interest and amount",
+    "as": "সুত আৰু সমূল ধন সলনি কৰা"
+   }
+  },
+  "m-work-inverse": {
+   "skill": "w-men",
+   "t": {
+    "en": "Treating people and days as rising together",
+    "as": "মানুহ আৰু দিন একেলগে বাঢ়ে বুলি ধৰা"
+   }
+  },
+  "m-pipe-sign": {
+   "skill": "w-pipes",
+   "t": {
+    "en": "Adding an outlet instead of subtracting",
+    "as": "নিৰ্গম বিয়োগৰ ঠাইত যোগ কৰা"
+   }
+  },
+  "m-unit-convert": {
+   "skill": "sp-basic",
+   "t": {
+    "en": "Converting km/h and m/s the wrong way",
+    "as": "km/h আৰু m/s ওলোটাকৈ সলনি কৰা"
+   }
+  },
+  "m-time-inverse": {
+   "skill": "sp-avg",
+   "t": {
+    "en": "Treating time as rising with speed",
+    "as": "গতিৰ লগে লগে সময় বাঢ়ে বুলি ধৰা"
+   }
+  },
+  "m-rel-sign": {
+   "skill": "sp-rel",
+   "t": {
+    "en": "Adding speeds when they should subtract",
+    "as": "বিয়োগৰ ঠাইত গতি যোগ কৰা"
+   }
+  },
+  "m-age-both": {
+   "skill": "age-ratio",
+   "t": {
+    "en": "Moving only one age forward",
+    "as": "কেৱল এটা বয়স আগুৱাই নিয়া"
+   }
+  },
+  "m-sum-half": {
+   "skill": "ap-sum",
+   "t": {
+    "en": "Forgetting to halve the sum",
+    "as": "যোগফল আধা কৰিবলৈ পাহৰা"
+   }
+  },
+  "m-gp-add": {
+   "skill": "gp",
+   "t": {
+    "en": "Adding the ratio in a GP",
+    "as": "গুণোত্তৰ শ্ৰেণীত অনুপাত যোগ কৰা"
+   }
+  },
+  "m-trig-flip": {
+   "skill": "tr-ratio",
+   "t": {
+    "en": "Pairing the wrong reciprocal",
+    "as": "ভুল ওলোটা যোৰা কৰা"
+   }
+  },
+  "m-height-eye": {
+   "skill": "tr-height",
+   "t": {
+    "en": "Forgetting the observer's height",
+    "as": "পৰ্যবেক্ষকৰ উচ্চতা পাহৰা"
+   }
+  },
+  "m-scale-linear": {
+   "skill": "g-rect",
+   "t": {
+    "en": "Thinking area scales like length",
+    "as": "কালি দৈৰ্ঘ্যৰ দৰে বাঢ়ে বুলি ধৰা"
+   }
+  },
+  "m-perim-half": {
+   "skill": "g-rect",
+   "t": {
+    "en": "Giving half the perimeter",
+    "as": "পৰিসীমাৰ আধা দিয়া"
+   }
+  },
+  "m-angle-sum": {
+   "skill": "g-tri",
+   "t": {
+    "en": "Using 360° for a triangle",
+    "as": "ত্ৰিভুজত 360° লোৱা"
+   }
+  },
+  "m-tri-ineq": {
+   "skill": "g-sides",
+   "t": {
+    "en": "Ignoring the triangle side rule",
+    "as": "ত্ৰিভুজৰ বাহুৰ নিয়ম নমনা"
+   }
+  },
+  "m-circle-formula": {
+   "skill": "g-circle",
+   "t": {
+    "en": "Mixing area and circumference",
+    "as": "কালি আৰু পৰিধি সলনি কৰা"
+   }
+  },
+  "m-litre": {
+   "skill": "g-solid",
+   "t": {
+    "en": "Forgetting 1000 cubic cm in a litre",
+    "as": "লিটাৰত 1000 ঘন ছেমি পাহৰা"
+   }
+  },
+  "m-cone-third": {
+   "skill": "g-round",
+   "t": {
+    "en": "Dropping the third in a cone",
+    "as": "শংকুত এক-তৃতীয়াংশ এৰা"
+   }
+  },
+  "m-sphere-hemi": {
+   "skill": "g-sphere",
+   "t": {
+    "en": "Mixing sphere and hemisphere",
+    "as": "গোলক আৰু অৰ্ধগোলক সলনি কৰা"
+   }
+  },
+  "m-ratio-add": {
+   "skill": "r-prop",
+   "t": {
+    "en": "Adding the same number to both sides of a ratio",
+    "as": "অনুপাতৰ দুয়োফালে একে সংখ্যা যোগ কৰা"
+   }
+  },
+  "m-ratio-flip": {
+   "skill": "r-combine",
+   "t": {
+    "en": "Keeping the numbers in place in 2A = 5B",
+    "as": "2A = 5Bত সংখ্যা সলনি নকৰা"
+   }
+  },
+  "m-chain-common": {
+   "skill": "r-combine",
+   "t": {
+    "en": "Linking ratios before matching the middle",
+    "as": "মাজৰ পদ নিমিলোৱাকৈ অনুপাত জোৰা"
+   }
+  },
+  "m-avg-count": {
+   "skill": "a-mean",
+   "t": {
+    "en": "Taking half the count as the middle",
+    "as": "সংখ্যাৰ আধাকে মাজ ধৰা"
+   }
+  },
+  "m-avg-newcomer": {
+   "skill": "a-change",
+   "t": {
+    "en": "Changing the average without using the total",
+    "as": "মুঠ নোলোৱাকৈ গড় সলনি কৰা"
+   }
+  },
+  "m-cp-base": {
+   "skill": "pl-basic",
+   "t": {
+    "en": "Taking profit on selling price",
+    "as": "বিক্ৰী মূল্যৰ ওপৰত লাভ ধৰা"
+   }
+  },
+  "m-discount-add": {
+   "skill": "pl-discount",
+   "t": {
+    "en": "Adding two discounts",
+    "as": "দুটা ৰেহাই যোগ কৰা"
+   }
+  },
+  "m-si-ci": {
+   "skill": "i-ci",
+   "t": {
+    "en": "Using simple interest for compound",
+    "as": "চক্ৰবৃদ্ধিৰ ঠাইত সৰল সুত ধৰা"
+   }
+  },
+  "m-work-days": {
+   "skill": "w-rate",
+   "t": {
+    "en": "Adding days instead of rates",
+    "as": "হাৰৰ ঠাইত দিন যোগ কৰা"
+   }
+  },
+  "m-speed-avg": {
+   "skill": "sp-basic",
+   "t": {
+    "en": "Averaging two speeds directly",
+    "as": "দুটা গতিৰ পোনপটীয়া গড় লোৱা"
+   }
+  },
+  "m-train-length": {
+   "skill": "sp-rel",
+   "t": {
+    "en": "Leaving out the train's own length",
+    "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্য বাদ দিয়া"
+   }
+  },
+  "m-age-gap": {
+   "skill": "age-ratio",
+   "t": {
+    "en": "Letting the age gap change",
+    "as": "বয়সৰ পাৰ্থক্য সলনি কৰা"
+   }
+  },
+  "m-ap-n": {
+   "skill": "ap",
+   "t": {
+    "en": "Using n instead of n − 1",
+    "as": "n − 1ৰ ঠাইত n লোৱা"
+   }
+  },
+  "m-gp-power": {
+   "skill": "gp",
+   "t": {
+    "en": "Using the wrong power in a GP",
+    "as": "গুণোত্তৰ শ্ৰেণীত ভুল ঘাত লোৱা"
+   }
+  },
+  "m-trig-swap": {
+   "skill": "tr-ratio",
+   "t": {
+    "en": "Swapping sine and cosine",
+    "as": "ছাইন আৰু কছাইন সলনি কৰা"
+   }
+  },
+  "m-tri-area": {
+   "skill": "g-tri",
+   "t": {
+    "en": "Forgetting the half in triangle area",
+    "as": "ত্ৰিভুজৰ কালিত আধা পাহৰা"
+   }
+  },
+  "m-radius-dia": {
+   "skill": "g-circle",
+   "t": {
+    "en": "Mixing radius and diameter",
+    "as": "ব্যাসাৰ্ধ আৰু ব্যাস সলনি কৰা"
+   }
+  },
+  "m-area-volume": {
+   "skill": "g-solid",
+   "t": {
+    "en": "Confusing surface area and volume",
+    "as": "পৃষ্ঠকালি আৰু আয়তন সলনি কৰা"
+   }
+  }
+ },
+ "probes": [
+  {
+   "id": "bank.math.line",
+   "type": "mcq",
+   "skill": "n-line",
+   "q": {
+    "en": "Which is the greatest: −2, −3, −6 or −9?",
+    "as": "কোনটো আটাইতকৈ ডাঙৰ: −2, −3, −6 নে −9?"
+   },
+   "why": {
+    "en": "The greatest is furthest right.",
+    "as": "সোঁফালে আটাইতকৈ আঁতৰত থকাটোৱেই ডাঙৰ।"
+   },
+   "options": [
+    {
+     "en": "−2",
+     "as": "−2"
+    },
+    {
+     "en": "−9",
+     "as": "−9"
+    },
+    {
+     "en": "−3",
+     "as": "−3"
+    },
+    {
+     "en": "−6",
+     "as": "−6"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-neg-order",
+     "why": {
+      "en": "Further left is smaller, even if the digits look bigger.",
+      "as": "যিমান বাওঁফালে সিমান সৰু, অংক ডাঙৰ দেখিলেও।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Which is the greatest: −2, −3, −6 or −9?",
+      "as": "কোনটো আটাইতকৈ ডাঙৰ: −2, −3, −6 নে −9?"
+     },
+     "why": {
+      "en": "The greatest is furthest right.",
+      "as": "সোঁফালে আটাইতকৈ আঁতৰত থকাটোৱেই ডাঙৰ।"
+     },
+     "options": [
+      {
+       "en": "−2",
+       "as": "−2"
+      },
+      {
+       "en": "−9",
+       "as": "−9"
+      },
+      {
+       "en": "−3",
+       "as": "−3"
+      },
+      {
+       "en": "−6",
+       "as": "−6"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-neg-order",
+       "why": {
+        "en": "Further left is smaller, even if the digits look bigger.",
+        "as": "যিমান বাওঁফালে সিমান সৰু, অংক ডাঙৰ দেখিলেও।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Which is the greatest: −1, −4, −5 or −10?",
+      "as": "কোনটো আটাইতকৈ ডাঙৰ: −1, −4, −5 নে −10?"
+     },
+     "why": {
+      "en": "The greatest is furthest right.",
+      "as": "সোঁফালে আটাইতকৈ আঁতৰত থকাটোৱেই ডাঙৰ।"
+     },
+     "options": [
+      {
+       "en": "−1",
+       "as": "−1"
+      },
+      {
+       "en": "−10",
+       "as": "−10"
+      },
+      {
+       "en": "−4",
+       "as": "−4"
+      },
+      {
+       "en": "−5",
+       "as": "−5"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-neg-order",
+       "why": {
+        "en": "Further left is smaller, even if the digits look bigger.",
+        "as": "যিমান বাওঁফালে সিমান সৰু, অংক ডাঙৰ দেখিলেও।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Which is the greatest: −3, −5, −7 or −11?",
+      "as": "কোনটো আটাইতকৈ ডাঙৰ: −3, −5, −7 নে −11?"
+     },
+     "why": {
+      "en": "The greatest is furthest right.",
+      "as": "সোঁফালে আটাইতকৈ আঁতৰত থকাটোৱেই ডাঙৰ।"
+     },
+     "options": [
+      {
+       "en": "−11",
+       "as": "−11"
+      },
+      {
+       "en": "−7",
+       "as": "−7"
+      },
+      {
+       "en": "−3",
+       "as": "−3"
+      },
+      {
+       "en": "−5",
+       "as": "−5"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-neg-order",
+       "why": {
+        "en": "Further left is smaller, even if the digits look bigger.",
+        "as": "যিমান বাওঁফালে সিমান সৰু, অংক ডাঙৰ দেখিলেও।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.types",
+   "type": "mcq",
+   "skill": "n-types",
+   "q": {
+    "en": "How many primes lie between 10 and 30?",
+    "as": "10 আৰু 30ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+   },
+   "why": {
+    "en": "Remove the multiples of 3, 5 and 7.",
+    "as": "3, 5 আৰু 7ৰ গুণিতক বাদ দিয়া।"
+   },
+   "options": [
+    {
+     "en": "5",
+     "as": "5"
+    },
+    {
+     "en": "6",
+     "as": "6"
+    },
+    {
+     "en": "8",
+     "as": "8"
+    },
+    {
+     "en": "7",
+     "as": "7"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "m-odd-prime",
+     "why": {
+      "en": "Not every odd number is prime.",
+      "as": "প্ৰতিটো অযুগ্ম সংখ্যা মৌলিক নহয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "How many primes lie between 10 and 30?",
+      "as": "10 আৰু 30ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+     },
+     "why": {
+      "en": "Remove the multiples of 3, 5 and 7.",
+      "as": "3, 5 আৰু 7ৰ গুণিতক বাদ দিয়া।"
+     },
+     "options": [
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      },
+      {
+       "en": "8",
+       "as": "8"
+      },
+      {
+       "en": "7",
+       "as": "7"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-odd-prime",
+       "why": {
+        "en": "Not every odd number is prime.",
+        "as": "প্ৰতিটো অযুগ্ম সংখ্যা মৌলিক নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "How many primes lie between 20 and 40?",
+      "as": "20 আৰু 40ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+     },
+     "why": {
+      "en": "Remove the multiples of 3, 5 and 7.",
+      "as": "3, 5 আৰু 7ৰ গুণিতক বাদ দিয়া।"
+     },
+     "options": [
+      {
+       "en": "6",
+       "as": "6"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "4",
+       "as": "4"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-odd-prime",
+       "why": {
+        "en": "Not every odd number is prime.",
+        "as": "প্ৰতিটো অযুগ্ম সংখ্যা মৌলিক নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "How many primes lie between 30 and 50?",
+      "as": "30 আৰু 50ৰ মাজত কেইটা মৌলিক সংখ্যা আছে?"
+     },
+     "why": {
+      "en": "Remove the multiples of 3, 5 and 7.",
+      "as": "3, 5 আৰু 7ৰ গুণিতক বাদ দিয়া।"
+     },
+     "options": [
+      {
+       "en": "4",
+       "as": "4"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      },
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "7",
+       "as": "7"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-odd-prime",
+       "why": {
+        "en": "Not every odd number is prime.",
+        "as": "প্ৰতিটো অযুগ্ম সংখ্যা মৌলিক নহয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.unit",
+   "type": "mcq",
+   "skill": "n-unit",
+   "q": {
+    "en": "The unit digit of $3^{22}$ is",
+    "as": "$3^{22}$ৰ একক অংক"
+   },
+   "why": {
+    "en": "Use the cycle of last digits.",
+    "as": "শেষৰ অংকৰ চক্ৰ ব্যৱহাৰ কৰা।"
+   },
+   "options": [
+    {
+     "en": "3",
+     "as": "3"
+    },
+    {
+     "en": "1",
+     "as": "1"
+    },
+    {
+     "en": "9",
+     "as": "9"
+    },
+    {
+     "en": "6",
+     "as": "6"
+    }
+   ],
+   "answer": 2,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "m-unit-cycle",
+     "why": {
+      "en": "Unit digits follow a cycle.",
+      "as": "একক অংকই চক্ৰ মানে।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "The unit digit of $3^{22}$ is",
+      "as": "$3^{22}$ৰ একক অংক"
+     },
+     "why": {
+      "en": "Use the cycle of last digits.",
+      "as": "শেষৰ অংকৰ চক্ৰ ব্যৱহাৰ কৰা।"
+     },
+     "options": [
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "1",
+       "as": "1"
+      },
+      {
+       "en": "9",
+       "as": "9"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-unit-cycle",
+       "why": {
+        "en": "Unit digits follow a cycle.",
+        "as": "একক অংকই চক্ৰ মানে।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The unit digit of $7^{35}$ is",
+      "as": "$7^{35}$ৰ একক অংক"
+     },
+     "why": {
+      "en": "Use the cycle of last digits.",
+      "as": "শেষৰ অংকৰ চক্ৰ ব্যৱহাৰ কৰা।"
+     },
+     "options": [
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "7",
+       "as": "7"
+      },
+      {
+       "en": "1",
+       "as": "1"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-unit-cycle",
+       "why": {
+        "en": "Unit digits follow a cycle.",
+        "as": "একক অংকই চক্ৰ মানে।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The unit digit of $2^{45}$ is",
+      "as": "$2^{45}$ৰ একক অংক"
+     },
+     "why": {
+      "en": "Use the cycle of last digits.",
+      "as": "শেষৰ অংকৰ চক্ৰ ব্যৱহাৰ কৰা।"
+     },
+     "options": [
+      {
+       "en": "1",
+       "as": "1"
+      },
+      {
+       "en": "0",
+       "as": "0"
+      },
+      {
+       "en": "3",
+       "as": "3"
+      },
+      {
+       "en": "2",
+       "as": "2"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-unit-cycle",
+       "why": {
+        "en": "Unit digits follow a cycle.",
+        "as": "একক অংকই চক্ৰ মানে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.hcf",
+   "type": "mcq",
+   "skill": "l-hcf",
+   "q": {
+    "en": "The HCF of 48 and 84 is",
+    "as": "48 আৰু 84ৰ গ.সা.গু."
+   },
+   "why": {
+    "en": "It is the largest number dividing both.",
+    "as": "দুয়োটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+   },
+   "options": [
+    {
+     "en": "12",
+     "as": "12"
+    },
+    {
+     "en": "24",
+     "as": "24"
+    },
+    {
+     "en": "336",
+     "as": "336"
+    },
+    {
+     "en": "13",
+     "as": "13"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "m-lcm-hcf-swap",
+     "why": {
+      "en": "That is the LCM.",
+      "as": "সেয়া ল.সা.গু.।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "The HCF of 48 and 84 is",
+      "as": "48 আৰু 84ৰ গ.সা.গু."
+     },
+     "why": {
+      "en": "It is the largest number dividing both.",
+      "as": "দুয়োটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+     },
+     "options": [
+      {
+       "en": "12",
+       "as": "12"
+      },
+      {
+       "en": "24",
+       "as": "24"
+      },
+      {
+       "en": "336",
+       "as": "336"
+      },
+      {
+       "en": "13",
+       "as": "13"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "That is the LCM.",
+        "as": "সেয়া ল.সা.গু.।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The HCF of 36 and 90 is",
+      "as": "36 আৰু 90ৰ গ.সা.গু."
+     },
+     "why": {
+      "en": "It is the largest number dividing both.",
+      "as": "দুয়োটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+     },
+     "options": [
+      {
+       "en": "36",
+       "as": "36"
+      },
+      {
+       "en": "19",
+       "as": "19"
+      },
+      {
+       "en": "180",
+       "as": "180"
+      },
+      {
+       "en": "18",
+       "as": "18"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "That is the LCM.",
+        "as": "সেয়া ল.সা.গু.।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The HCF of 42 and 70 is",
+      "as": "42 আৰু 70ৰ গ.সা.গু."
+     },
+     "why": {
+      "en": "It is the largest number dividing both.",
+      "as": "দুয়োটাকে হৰণ কৰা সৰ্ববৃহৎ সংখ্যা।"
+     },
+     "options": [
+      {
+       "en": "28",
+       "as": "28"
+      },
+      {
+       "en": "210",
+       "as": "210"
+      },
+      {
+       "en": "14",
+       "as": "14"
+      },
+      {
+       "en": "15",
+       "as": "15"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "That is the LCM.",
+        "as": "সেয়া ল.সা.গু.।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.lcm",
+   "type": "mcq",
+   "skill": "l-lcm",
+   "q": {
+    "en": "The LCM of 12 and 18 is",
+    "as": "12 আৰু 18ৰ ল.সা.গু."
+   },
+   "why": {
+    "en": "Take each prime at its highest power.",
+    "as": "প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+   },
+   "options": [
+    {
+     "en": "72",
+     "as": "72"
+    },
+    {
+     "en": "36",
+     "as": "36"
+    },
+    {
+     "en": "216",
+     "as": "216"
+    },
+    {
+     "en": "6",
+     "as": "6"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "m-lcm-product",
+     "why": {
+      "en": "The product is a common multiple, but may not be the lowest.",
+      "as": "পূৰণফল সৰুতম নহ'বও পাৰে।"
+     }
+    },
+    {
+     "opt": 3,
+     "tag": "m-lcm-hcf-swap",
+     "why": {
+      "en": "That is the HCF.",
+      "as": "সেয়া গ.সা.গু.।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "The LCM of 12 and 18 is",
+      "as": "12 আৰু 18ৰ ল.সা.গু."
+     },
+     "why": {
+      "en": "Take each prime at its highest power.",
+      "as": "প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+     },
+     "options": [
+      {
+       "en": "72",
+       "as": "72"
+      },
+      {
+       "en": "36",
+       "as": "36"
+      },
+      {
+       "en": "216",
+       "as": "216"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-lcm-product",
+       "why": {
+        "en": "The product is a common multiple, but may not be the lowest.",
+        "as": "পূৰণফল সৰুতম নহ'বও পাৰে।"
+       }
+      },
+      {
+       "opt": 3,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "That is the HCF.",
+        "as": "সেয়া গ.সা.গু.।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The LCM of 15 and 20 is",
+      "as": "15 আৰু 20ৰ ল.সা.গু."
+     },
+     "why": {
+      "en": "Take each prime at its highest power.",
+      "as": "প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+     },
+     "options": [
+      {
+       "en": "120",
+       "as": "120"
+      },
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "300",
+       "as": "300"
+      },
+      {
+       "en": "60",
+       "as": "60"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "That is the HCF.",
+        "as": "সেয়া গ.সা.গু.।"
+       }
+      },
+      {
+       "opt": 2,
+       "tag": "m-lcm-product",
+       "why": {
+        "en": "The product is a common multiple, but may not be the lowest.",
+        "as": "পূৰণফল সৰুতম নহ'বও পাৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The LCM of 16 and 24 is",
+      "as": "16 আৰু 24ৰ ল.সা.গু."
+     },
+     "why": {
+      "en": "Take each prime at its highest power.",
+      "as": "প্ৰতিটো মৌলিক ডাঙৰ ঘাতত লোৱা।"
+     },
+     "options": [
+      {
+       "en": "384",
+       "as": "384"
+      },
+      {
+       "en": "8",
+       "as": "8"
+      },
+      {
+       "en": "48",
+       "as": "48"
+      },
+      {
+       "en": "96",
+       "as": "96"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-lcm-product",
+       "why": {
+        "en": "The product is a common multiple, but may not be the lowest.",
+        "as": "পূৰণফল সৰুতম নহ'বও পাৰে।"
+       }
+      },
+      {
+       "opt": 1,
+       "tag": "m-lcm-hcf-swap",
+       "why": {
+        "en": "That is the HCF.",
+        "as": "সেয়া গ.সা.গু.।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.fadd",
+   "type": "mcq",
+   "skill": "f-add",
+   "q": {
+    "en": "$\\frac{1}{3} + \\frac{1}{4}$ equals",
+    "as": "$\\frac{1}{3} + \\frac{1}{4}$ৰ মান"
+   },
+   "why": {
+    "en": "Make the denominators equal first.",
+    "as": "প্ৰথমে হৰ সমান কৰা।"
+   },
+   "options": [
+    {
+     "en": "$\\frac{1}{6}$",
+     "as": "$\\frac{1}{6}$"
+    },
+    {
+     "en": "$\\frac{2}{7}$",
+     "as": "$\\frac{2}{7}$"
+    },
+    {
+     "en": "$\\frac{1}{12}$",
+     "as": "$\\frac{1}{12}$"
+    },
+    {
+     "en": "$\\frac{7}{12}$",
+     "as": "$\\frac{7}{12}$"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-add-tops",
+     "why": {
+      "en": "Tops and bottoms do not add directly.",
+      "as": "লব আৰু হৰ পোনে পোনে যোগ নহয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "$\\frac{1}{3} + \\frac{1}{4}$ equals",
+      "as": "$\\frac{1}{3} + \\frac{1}{4}$ৰ মান"
+     },
+     "why": {
+      "en": "Make the denominators equal first.",
+      "as": "প্ৰথমে হৰ সমান কৰা।"
+     },
+     "options": [
+      {
+       "en": "$\\frac{1}{6}$",
+       "as": "$\\frac{1}{6}$"
+      },
+      {
+       "en": "$\\frac{2}{7}$",
+       "as": "$\\frac{2}{7}$"
+      },
+      {
+       "en": "$\\frac{1}{12}$",
+       "as": "$\\frac{1}{12}$"
+      },
+      {
+       "en": "$\\frac{7}{12}$",
+       "as": "$\\frac{7}{12}$"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-add-tops",
+       "why": {
+        "en": "Tops and bottoms do not add directly.",
+        "as": "লব আৰু হৰ পোনে পোনে যোগ নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$\\frac{2}{5} + \\frac{1}{3}$ equals",
+      "as": "$\\frac{2}{5} + \\frac{1}{3}$ৰ মান"
+     },
+     "why": {
+      "en": "Make the denominators equal first.",
+      "as": "প্ৰথমে হৰ সমান কৰা।"
+     },
+     "options": [
+      {
+       "en": "$\\frac{3}{8}$",
+       "as": "$\\frac{3}{8}$"
+      },
+      {
+       "en": "$\\frac{2}{15}$",
+       "as": "$\\frac{2}{15}$"
+      },
+      {
+       "en": "$\\frac{1}{5}$",
+       "as": "$\\frac{1}{5}$"
+      },
+      {
+       "en": "$\\frac{11}{15}$",
+       "as": "$\\frac{11}{15}$"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-add-tops",
+       "why": {
+        "en": "Tops and bottoms do not add directly.",
+        "as": "লব আৰু হৰ পোনে পোনে যোগ নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$\\frac{1}{6} + \\frac{1}{4}$ equals",
+      "as": "$\\frac{1}{6} + \\frac{1}{4}$ৰ মান"
+     },
+     "why": {
+      "en": "Make the denominators equal first.",
+      "as": "প্ৰথমে হৰ সমান কৰা।"
+     },
+     "options": [
+      {
+       "en": "$\\frac{1}{5}$",
+       "as": "$\\frac{1}{5}$"
+      },
+      {
+       "en": "$\\frac{1}{12}$",
+       "as": "$\\frac{1}{12}$"
+      },
+      {
+       "en": "$\\frac{1}{24}$",
+       "as": "$\\frac{1}{24}$"
+      },
+      {
+       "en": "$\\frac{5}{12}$",
+       "as": "$\\frac{5}{12}$"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-add-tops",
+       "why": {
+        "en": "Tops and bottoms do not add directly.",
+        "as": "লব আৰু হৰ পোনে পোনে যোগ নহয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.fof",
+   "type": "mcq",
+   "skill": "f-of",
+   "q": {
+    "en": "$\\frac{3}{4}$ of 28 is",
+    "as": "28ৰ $\\frac{3}{4}$ অংশ"
+   },
+   "why": {
+    "en": "Divide, then multiply.",
+    "as": "হৰণ কৰি পূৰণ কৰা।"
+   },
+   "options": [
+    {
+     "en": "21",
+     "as": "21"
+    },
+    {
+     "en": "$\\frac{28}{3}$",
+     "as": "$\\frac{28}{3}$"
+    },
+    {
+     "en": "28",
+     "as": "28"
+    },
+    {
+     "en": "7",
+     "as": "7"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-frac-of",
+     "why": {
+      "en": "Divide by the bottom, multiply by the top.",
+      "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "$\\frac{3}{4}$ of 28 is",
+      "as": "28ৰ $\\frac{3}{4}$ অংশ"
+     },
+     "why": {
+      "en": "Divide, then multiply.",
+      "as": "হৰণ কৰি পূৰণ কৰা।"
+     },
+     "options": [
+      {
+       "en": "21",
+       "as": "21"
+      },
+      {
+       "en": "$\\frac{28}{3}$",
+       "as": "$\\frac{28}{3}$"
+      },
+      {
+       "en": "28",
+       "as": "28"
+      },
+      {
+       "en": "7",
+       "as": "7"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-frac-of",
+       "why": {
+        "en": "Divide by the bottom, multiply by the top.",
+        "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$\\frac{2}{5}$ of 45 is",
+      "as": "45ৰ $\\frac{2}{5}$ অংশ"
+     },
+     "why": {
+      "en": "Divide, then multiply.",
+      "as": "হৰণ কৰি পূৰণ কৰা।"
+     },
+     "options": [
+      {
+       "en": "18",
+       "as": "18"
+      },
+      {
+       "en": "9",
+       "as": "9"
+      },
+      {
+       "en": "27",
+       "as": "27"
+      },
+      {
+       "en": "$\\frac{45}{2}$",
+       "as": "$\\frac{45}{2}$"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-frac-of",
+       "why": {
+        "en": "Divide by the bottom, multiply by the top.",
+        "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$\\frac{3}{7}$ of 42 is",
+      "as": "42ৰ $\\frac{3}{7}$ অংশ"
+     },
+     "why": {
+      "en": "Divide, then multiply.",
+      "as": "হৰণ কৰি পূৰণ কৰা।"
+     },
+     "options": [
+      {
+       "en": "18",
+       "as": "18"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      },
+      {
+       "en": "24",
+       "as": "24"
+      },
+      {
+       "en": "14",
+       "as": "14"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-frac-of",
+       "why": {
+        "en": "Divide by the bottom, multiply by the top.",
+        "as": "তলৰ সংখ্যাৰে হৰণ, ওপৰৰ সংখ্যাৰে পূৰণ।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.bodmas",
+   "type": "mcq",
+   "skill": "s-bodmas",
+   "q": {
+    "en": "$6 + 4 \\times 5$ equals",
+    "as": "$6 + 4 \\times 5$ৰ মান"
+   },
+   "why": {
+    "en": "Multiplication comes before addition.",
+    "as": "যোগৰ আগতে পূৰণ।"
+   },
+   "options": [
+    {
+     "en": "29",
+     "as": "29"
+    },
+    {
+     "en": "26",
+     "as": "26"
+    },
+    {
+     "en": "50",
+     "as": "50"
+    },
+    {
+     "en": "15",
+     "as": "15"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "m-bodmas-lr",
+     "why": {
+      "en": "Multiply before you add.",
+      "as": "যোগৰ আগতে পূৰণ কৰা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "$6 + 4 \\times 5$ equals",
+      "as": "$6 + 4 \\times 5$ৰ মান"
+     },
+     "why": {
+      "en": "Multiplication comes before addition.",
+      "as": "যোগৰ আগতে পূৰণ।"
+     },
+     "options": [
+      {
+       "en": "29",
+       "as": "29"
+      },
+      {
+       "en": "26",
+       "as": "26"
+      },
+      {
+       "en": "50",
+       "as": "50"
+      },
+      {
+       "en": "15",
+       "as": "15"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-bodmas-lr",
+       "why": {
+        "en": "Multiply before you add.",
+        "as": "যোগৰ আগতে পূৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$8 + 3 \\times 7$ equals",
+      "as": "$8 + 3 \\times 7$ৰ মান"
+     },
+     "why": {
+      "en": "Multiplication comes before addition.",
+      "as": "যোগৰ আগতে পূৰণ।"
+     },
+     "options": [
+      {
+       "en": "18",
+       "as": "18"
+      },
+      {
+       "en": "77",
+       "as": "77"
+      },
+      {
+       "en": "31",
+       "as": "31"
+      },
+      {
+       "en": "29",
+       "as": "29"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-bodmas-lr",
+       "why": {
+        "en": "Multiply before you add.",
+        "as": "যোগৰ আগতে পূৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$5 + 6 \\times 4$ equals",
+      "as": "$5 + 6 \\times 4$ৰ মান"
+     },
+     "why": {
+      "en": "Multiplication comes before addition.",
+      "as": "যোগৰ আগতে পূৰণ।"
+     },
+     "options": [
+      {
+       "en": "15",
+       "as": "15"
+      },
+      {
+       "en": "44",
+       "as": "44"
+      },
+      {
+       "en": "34",
+       "as": "34"
+      },
+      {
+       "en": "29",
+       "as": "29"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-bodmas-lr",
+       "why": {
+        "en": "Multiply before you add.",
+        "as": "যোগৰ আগতে পূৰণ কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.roots",
+   "type": "mcq",
+   "skill": "s-roots",
+   "q": {
+    "en": "$\\sqrt{25}$ equals",
+    "as": "$\\sqrt{25}$ৰ মান"
+   },
+   "why": {
+    "en": "Add first, then take the root.",
+    "as": "প্ৰথমে যোগ কৰি মূল লোৱা।"
+   },
+   "options": [
+    {
+     "en": "7",
+     "as": "7"
+    },
+    {
+     "en": "12",
+     "as": "12"
+    },
+    {
+     "en": "4",
+     "as": "4"
+    },
+    {
+     "en": "5",
+     "as": "5"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "m-root-add",
+     "why": {
+      "en": "A root does not split across addition.",
+      "as": "যোগৰ ওপৰত মূল নাভাঙে।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "$\\sqrt{25}$ equals",
+      "as": "$\\sqrt{25}$ৰ মান"
+     },
+     "why": {
+      "en": "Add first, then take the root.",
+      "as": "প্ৰথমে যোগ কৰি মূল লোৱা।"
+     },
+     "options": [
+      {
+       "en": "7",
+       "as": "7"
+      },
+      {
+       "en": "12",
+       "as": "12"
+      },
+      {
+       "en": "4",
+       "as": "4"
+      },
+      {
+       "en": "5",
+       "as": "5"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-root-add",
+       "why": {
+        "en": "A root does not split across addition.",
+        "as": "যোগৰ ওপৰত মূল নাভাঙে।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$\\sqrt{100}$ equals",
+      "as": "$\\sqrt{100}$ৰ মান"
+     },
+     "why": {
+      "en": "Add first, then take the root.",
+      "as": "প্ৰথমে যোগ কৰি মূল লোৱা।"
+     },
+     "options": [
+      {
+       "en": "9",
+       "as": "9"
+      },
+      {
+       "en": "14",
+       "as": "14"
+      },
+      {
+       "en": "12",
+       "as": "12"
+      },
+      {
+       "en": "10",
+       "as": "10"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-root-add",
+       "why": {
+        "en": "A root does not split across addition.",
+        "as": "যোগৰ ওপৰত মূল নাভাঙে।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$\\sqrt{169}$ equals",
+      "as": "$\\sqrt{169}$ৰ মান"
+     },
+     "why": {
+      "en": "Add first, then take the root.",
+      "as": "প্ৰথমে যোগ কৰি মূল লোৱা।"
+     },
+     "options": [
+      {
+       "en": "17",
+       "as": "17"
+      },
+      {
+       "en": "12",
+       "as": "12"
+      },
+      {
+       "en": "13",
+       "as": "13"
+      },
+      {
+       "en": "15",
+       "as": "15"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-root-add",
+       "why": {
+        "en": "A root does not split across addition.",
+        "as": "যোগৰ ওপৰত মূল নাভাঙে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.pof",
+   "type": "mcq",
+   "skill": "p-of",
+   "q": {
+    "en": "15% of 240 is",
+    "as": "240ৰ 15%"
+   },
+   "why": {
+    "en": "Build it from 10%.",
+    "as": "10%ৰ পৰা গঢ়া।"
+   },
+   "options": [
+    {
+     "en": "36",
+     "as": "36"
+    },
+    {
+     "en": "360",
+     "as": "360"
+    },
+    {
+     "en": "41",
+     "as": "41"
+    },
+    {
+     "en": "46",
+     "as": "46"
+    }
+   ],
+   "answer": 0,
+   "variants": [
+    {
+     "q": {
+      "en": "15% of 240 is",
+      "as": "240ৰ 15%"
+     },
+     "why": {
+      "en": "Build it from 10%.",
+      "as": "10%ৰ পৰা গঢ়া।"
+     },
+     "options": [
+      {
+       "en": "36",
+       "as": "36"
+      },
+      {
+       "en": "360",
+       "as": "360"
+      },
+      {
+       "en": "41",
+       "as": "41"
+      },
+      {
+       "en": "46",
+       "as": "46"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "q": {
+      "en": "35% of 600 is",
+      "as": "600ৰ 35%"
+     },
+     "why": {
+      "en": "Build it from 10%.",
+      "as": "10%ৰ পৰা গঢ়া।"
+     },
+     "options": [
+      {
+       "en": "210",
+       "as": "210"
+      },
+      {
+       "en": "215",
+       "as": "215"
+      },
+      {
+       "en": "2100",
+       "as": "2100"
+      },
+      {
+       "en": "220",
+       "as": "220"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "q": {
+      "en": "45% of 80 is",
+      "as": "80ৰ 45%"
+     },
+     "why": {
+      "en": "Build it from 10%.",
+      "as": "10%ৰ পৰা গঢ়া।"
+     },
+     "options": [
+      {
+       "en": "36",
+       "as": "36"
+      },
+      {
+       "en": "360",
+       "as": "360"
+      },
+      {
+       "en": "41",
+       "as": "41"
+      },
+      {
+       "en": "46",
+       "as": "46"
+      }
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "bank.math.pchange",
+   "type": "mcq",
+   "skill": "p-change",
+   "q": {
+    "en": "A price rises from ₹40 to ₹50. The rise is",
+    "as": "দাম ₹40ৰ পৰা ₹50 হ'ল। বৃদ্ধি"
+   },
+   "why": {
+    "en": "Change ÷ original × 100.",
+    "as": "পৰিৱৰ্তন ÷ মূল × 100।"
+   },
+   "options": [
+    {
+     "en": "20%",
+     "as": "20%"
+    },
+    {
+     "en": "25%",
+     "as": "25%"
+    },
+    {
+     "en": "30%",
+     "as": "30%"
+    },
+    {
+     "en": "10%",
+     "as": "10%"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "m-pct-base",
+     "why": {
+      "en": "The base is the original price.",
+      "as": "মূল দামেই ভিত্তি।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A price rises from ₹40 to ₹50. The rise is",
+      "as": "দাম ₹40ৰ পৰা ₹50 হ'ল। বৃদ্ধি"
+     },
+     "why": {
+      "en": "Change ÷ original × 100.",
+      "as": "পৰিৱৰ্তন ÷ মূল × 100।"
+     },
+     "options": [
+      {
+       "en": "20%",
+       "as": "20%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "30%",
+       "as": "30%"
+      },
+      {
+       "en": "10%",
+       "as": "10%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-pct-base",
+       "why": {
+        "en": "The base is the original price.",
+        "as": "মূল দামেই ভিত্তি।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A price rises from ₹60 to ₹75. The rise is",
+      "as": "দাম ₹60ৰ পৰা ₹75 হ'ল। বৃদ্ধি"
+     },
+     "why": {
+      "en": "Change ÷ original × 100.",
+      "as": "পৰিৱৰ্তন ÷ মূল × 100।"
+     },
+     "options": [
+      {
+       "en": "20%",
+       "as": "20%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "30%",
+       "as": "30%"
+      },
+      {
+       "en": "15%",
+       "as": "15%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-pct-base",
+       "why": {
+        "en": "The base is the original price.",
+        "as": "মূল দামেই ভিত্তি।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A price rises from ₹80 to ₹100. The rise is",
+      "as": "দাম ₹80ৰ পৰা ₹100 হ'ল। বৃদ্ধি"
+     },
+     "why": {
+      "en": "Change ÷ original × 100.",
+      "as": "পৰিৱৰ্তন ÷ মূল × 100।"
+     },
+     "options": [
+      {
+       "en": "20%",
+       "as": "20%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "35%",
+       "as": "35%"
+      },
+      {
+       "en": "30%",
+       "as": "30%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-pct-base",
+       "why": {
+        "en": "The base is the original price.",
+        "as": "মূল দামেই ভিত্তি।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.psucc",
+   "type": "mcq",
+   "skill": "p-succ",
+   "q": {
+    "en": "A rise of 10% followed by 20% is a total rise of",
+    "as": "10%ৰ পিছত 20% বৃদ্ধি মুঠ কিমান?"
+   },
+   "why": {
+    "en": "$a + b + \\frac{ab}{100}$.",
+    "as": "$a + b + \\frac{ab}{100}$।"
+   },
+   "options": [
+    {
+     "en": "200%",
+     "as": "200%"
+    },
+    {
+     "en": "30%",
+     "as": "30%"
+    },
+    {
+     "en": "28%",
+     "as": "28%"
+    },
+    {
+     "en": "32%",
+     "as": "32%"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-pct-add",
+     "why": {
+      "en": "The second change acts on the new value.",
+      "as": "দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A rise of 10% followed by 20% is a total rise of",
+      "as": "10%ৰ পিছত 20% বৃদ্ধি মুঠ কিমান?"
+     },
+     "why": {
+      "en": "$a + b + \\frac{ab}{100}$.",
+      "as": "$a + b + \\frac{ab}{100}$।"
+     },
+     "options": [
+      {
+       "en": "200%",
+       "as": "200%"
+      },
+      {
+       "en": "30%",
+       "as": "30%"
+      },
+      {
+       "en": "28%",
+       "as": "28%"
+      },
+      {
+       "en": "32%",
+       "as": "32%"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-pct-add",
+       "why": {
+        "en": "The second change acts on the new value.",
+        "as": "দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A rise of 20% followed by 30% is a total rise of",
+      "as": "20%ৰ পিছত 30% বৃদ্ধি মুঠ কিমান?"
+     },
+     "why": {
+      "en": "$a + b + \\frac{ab}{100}$.",
+      "as": "$a + b + \\frac{ab}{100}$।"
+     },
+     "options": [
+      {
+       "en": "50%",
+       "as": "50%"
+      },
+      {
+       "en": "600%",
+       "as": "600%"
+      },
+      {
+       "en": "48%",
+       "as": "48%"
+      },
+      {
+       "en": "56%",
+       "as": "56%"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-pct-add",
+       "why": {
+        "en": "The second change acts on the new value.",
+        "as": "দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A rise of 25% followed by 20% is a total rise of",
+      "as": "25%ৰ পিছত 20% বৃদ্ধি মুঠ কিমান?"
+     },
+     "why": {
+      "en": "$a + b + \\frac{ab}{100}$.",
+      "as": "$a + b + \\frac{ab}{100}$।"
+     },
+     "options": [
+      {
+       "en": "500%",
+       "as": "500%"
+      },
+      {
+       "en": "50%",
+       "as": "50%"
+      },
+      {
+       "en": "43%",
+       "as": "43%"
+      },
+      {
+       "en": "45%",
+       "as": "45%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-pct-add",
+       "why": {
+        "en": "The second change acts on the new value.",
+        "as": "দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.ratio",
+   "type": "mcq",
+   "skill": "r-share",
+   "q": {
+    "en": "₹600 is shared in the ratio 2:3. The larger share is",
+    "as": "₹600 2:3 অনুপাতত ভাগ কৰা হ'ল। ডাঙৰ ভাগটো"
+   },
+   "why": {
+    "en": "One part is the total ÷ the sum of the ratio.",
+    "as": "এটা ভাগ = মুঠ ÷ অনুপাতৰ যোগফল।"
+   },
+   "options": [
+    {
+     "en": "360",
+     "as": "360"
+    },
+    {
+     "en": "240",
+     "as": "240"
+    },
+    {
+     "en": "597",
+     "as": "597"
+    },
+    {
+     "en": "300",
+     "as": "300"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "m-ratio-part",
+     "why": {
+      "en": "Shares follow the ratio, not an even split.",
+      "as": "ভাগ অনুপাত মানে, সমান নহয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "₹600 is shared in the ratio 2:3. The larger share is",
+      "as": "₹600 2:3 অনুপাতত ভাগ কৰা হ'ল। ডাঙৰ ভাগটো"
+     },
+     "why": {
+      "en": "One part is the total ÷ the sum of the ratio.",
+      "as": "এটা ভাগ = মুঠ ÷ অনুপাতৰ যোগফল।"
+     },
+     "options": [
+      {
+       "en": "360",
+       "as": "360"
+      },
+      {
+       "en": "240",
+       "as": "240"
+      },
+      {
+       "en": "597",
+       "as": "597"
+      },
+      {
+       "en": "300",
+       "as": "300"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-ratio-part",
+       "why": {
+        "en": "Shares follow the ratio, not an even split.",
+        "as": "ভাগ অনুপাত মানে, সমান নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "₹720 is shared in the ratio 1:3. The larger share is",
+      "as": "₹720 1:3 অনুপাতত ভাগ কৰা হ'ল। ডাঙৰ ভাগটো"
+     },
+     "why": {
+      "en": "One part is the total ÷ the sum of the ratio.",
+      "as": "এটা ভাগ = মুঠ ÷ অনুপাতৰ যোগফল।"
+     },
+     "options": [
+      {
+       "en": "717",
+       "as": "717"
+      },
+      {
+       "en": "360",
+       "as": "360"
+      },
+      {
+       "en": "180",
+       "as": "180"
+      },
+      {
+       "en": "540",
+       "as": "540"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-ratio-part",
+       "why": {
+        "en": "Shares follow the ratio, not an even split.",
+        "as": "ভাগ অনুপাত মানে, সমান নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "₹900 is shared in the ratio 4:5. The larger share is",
+      "as": "₹900 4:5 অনুপাতত ভাগ কৰা হ'ল। ডাঙৰ ভাগটো"
+     },
+     "why": {
+      "en": "One part is the total ÷ the sum of the ratio.",
+      "as": "এটা ভাগ = মুঠ ÷ অনুপাতৰ যোগফল।"
+     },
+     "options": [
+      {
+       "en": "895",
+       "as": "895"
+      },
+      {
+       "en": "450",
+       "as": "450"
+      },
+      {
+       "en": "400",
+       "as": "400"
+      },
+      {
+       "en": "500",
+       "as": "500"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-ratio-part",
+       "why": {
+        "en": "Shares follow the ratio, not an even split.",
+        "as": "ভাগ অনুপাত মানে, সমান নহয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.avg",
+   "type": "mcq",
+   "skill": "a-mean",
+   "q": {
+    "en": "10 students average 60 and 30 students average 80. The overall average is",
+    "as": "10 জন ছাত্ৰৰ গড় 60 আৰু 30 জনৰ গড় 80। মুঠ গড়"
+   },
+   "why": {
+    "en": "Find both totals, then divide by everyone.",
+    "as": "দুয়োটা মুঠ উলিয়াই সকলোৰে হৰণ কৰা।"
+   },
+   "options": [
+    {
+     "en": "75",
+     "as": "75"
+    },
+    {
+     "en": "81",
+     "as": "81"
+    },
+    {
+     "en": "59",
+     "as": "59"
+    },
+    {
+     "en": "70",
+     "as": "70"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "m-avg-add",
+     "why": {
+      "en": "Weight each average by its count.",
+      "as": "প্ৰতিটো গড়ক সংখ্যাৰে ভাৰিত কৰা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "10 students average 60 and 30 students average 80. The overall average is",
+      "as": "10 জন ছাত্ৰৰ গড় 60 আৰু 30 জনৰ গড় 80। মুঠ গড়"
+     },
+     "why": {
+      "en": "Find both totals, then divide by everyone.",
+      "as": "দুয়োটা মুঠ উলিয়াই সকলোৰে হৰণ কৰা।"
+     },
+     "options": [
+      {
+       "en": "75",
+       "as": "75"
+      },
+      {
+       "en": "81",
+       "as": "81"
+      },
+      {
+       "en": "59",
+       "as": "59"
+      },
+      {
+       "en": "70",
+       "as": "70"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-avg-add",
+       "why": {
+        "en": "Weight each average by its count.",
+        "as": "প্ৰতিটো গড়ক সংখ্যাৰে ভাৰিত কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "20 students average 50 and 30 students average 60. The overall average is",
+      "as": "20 জন ছাত্ৰৰ গড় 50 আৰু 30 জনৰ গড় 60। মুঠ গড়"
+     },
+     "why": {
+      "en": "Find both totals, then divide by everyone.",
+      "as": "দুয়োটা মুঠ উলিয়াই সকলোৰে হৰণ কৰা।"
+     },
+     "options": [
+      {
+       "en": "55",
+       "as": "55"
+      },
+      {
+       "en": "61",
+       "as": "61"
+      },
+      {
+       "en": "49",
+       "as": "49"
+      },
+      {
+       "en": "56",
+       "as": "56"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-avg-add",
+       "why": {
+        "en": "Weight each average by its count.",
+        "as": "প্ৰতিটো গড়ক সংখ্যাৰে ভাৰিত কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "10 students average 40 and 40 students average 50. The overall average is",
+      "as": "10 জন ছাত্ৰৰ গড় 40 আৰু 40 জনৰ গড় 50। মুঠ গড়"
+     },
+     "why": {
+      "en": "Find both totals, then divide by everyone.",
+      "as": "দুয়োটা মুঠ উলিয়াই সকলোৰে হৰণ কৰা।"
+     },
+     "options": [
+      {
+       "en": "39",
+       "as": "39"
+      },
+      {
+       "en": "45",
+       "as": "45"
+      },
+      {
+       "en": "48",
+       "as": "48"
+      },
+      {
+       "en": "51",
+       "as": "51"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-avg-add",
+       "why": {
+        "en": "Weight each average by its count.",
+        "as": "প্ৰতিটো গড়ক সংখ্যাৰে ভাৰিত কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.profit",
+   "type": "mcq",
+   "skill": "pl-basic",
+   "q": {
+    "en": "Bought for ₹400, sold for ₹500. The profit is",
+    "as": "₹400ত কিনি ₹500ত বিক্ৰী কৰা হ'ল। লাভ"
+   },
+   "why": {
+    "en": "Profit ÷ cost × 100.",
+    "as": "লাভ ÷ ক্ৰয় মূল্য × 100।"
+   },
+   "options": [
+    {
+     "en": "100%",
+     "as": "100%"
+    },
+    {
+     "en": "25%",
+     "as": "25%"
+    },
+    {
+     "en": "20%",
+     "as": "20%"
+    },
+    {
+     "en": "35%",
+     "as": "35%"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "m-cp-base",
+     "why": {
+      "en": "Profit is measured on the cost price.",
+      "as": "লাভ ক্ৰয় মূল্যৰ ওপৰত জোখা হয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Bought for ₹400, sold for ₹500. The profit is",
+      "as": "₹400ত কিনি ₹500ত বিক্ৰী কৰা হ'ল। লাভ"
+     },
+     "why": {
+      "en": "Profit ÷ cost × 100.",
+      "as": "লাভ ÷ ক্ৰয় মূল্য × 100।"
+     },
+     "options": [
+      {
+       "en": "100%",
+       "as": "100%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "20%",
+       "as": "20%"
+      },
+      {
+       "en": "35%",
+       "as": "35%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-cp-base",
+       "why": {
+        "en": "Profit is measured on the cost price.",
+        "as": "লাভ ক্ৰয় মূল্যৰ ওপৰত জোখা হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Bought for ₹200, sold for ₹250. The profit is",
+      "as": "₹200ত কিনি ₹250ত বিক্ৰী কৰা হ'ল। লাভ"
+     },
+     "why": {
+      "en": "Profit ÷ cost × 100.",
+      "as": "লাভ ÷ ক্ৰয় মূল্য × 100।"
+     },
+     "options": [
+      {
+       "en": "50%",
+       "as": "50%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "20%",
+       "as": "20%"
+      },
+      {
+       "en": "35%",
+       "as": "35%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-cp-base",
+       "why": {
+        "en": "Profit is measured on the cost price.",
+        "as": "লাভ ক্ৰয় মূল্যৰ ওপৰত জোখা হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Bought for ₹600, sold for ₹750. The profit is",
+      "as": "₹600ত কিনি ₹750ত বিক্ৰী কৰা হ'ল। লাভ"
+     },
+     "why": {
+      "en": "Profit ÷ cost × 100.",
+      "as": "লাভ ÷ ক্ৰয় মূল্য × 100।"
+     },
+     "options": [
+      {
+       "en": "150%",
+       "as": "150%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "20%",
+       "as": "20%"
+      },
+      {
+       "en": "35%",
+       "as": "35%"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-cp-base",
+       "why": {
+        "en": "Profit is measured on the cost price.",
+        "as": "লাভ ক্ৰয় মূল্যৰ ওপৰত জোখা হয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.discount",
+   "type": "mcq",
+   "skill": "pl-discount",
+   "q": {
+    "en": "Successive discounts of 10% and 20% equal a single discount of",
+    "as": "10% আৰু 20% ক্ৰমিক ৰেহাই একক কিমান?"
+   },
+   "why": {
+    "en": "$a + b - \\frac{ab}{100}$.",
+    "as": "$a + b - \\frac{ab}{100}$।"
+   },
+   "options": [
+    {
+     "en": "29%",
+     "as": "29%"
+    },
+    {
+     "en": "32%",
+     "as": "32%"
+    },
+    {
+     "en": "30%",
+     "as": "30%"
+    },
+    {
+     "en": "28%",
+     "as": "28%"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "m-discount-add",
+     "why": {
+      "en": "The second discount acts on the reduced price.",
+      "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Successive discounts of 10% and 20% equal a single discount of",
+      "as": "10% আৰু 20% ক্ৰমিক ৰেহাই একক কিমান?"
+     },
+     "why": {
+      "en": "$a + b - \\frac{ab}{100}$.",
+      "as": "$a + b - \\frac{ab}{100}$।"
+     },
+     "options": [
+      {
+       "en": "29%",
+       "as": "29%"
+      },
+      {
+       "en": "32%",
+       "as": "32%"
+      },
+      {
+       "en": "30%",
+       "as": "30%"
+      },
+      {
+       "en": "28%",
+       "as": "28%"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-discount-add",
+       "why": {
+        "en": "The second discount acts on the reduced price.",
+        "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Successive discounts of 20% and 25% equal a single discount of",
+      "as": "20% আৰু 25% ক্ৰমিক ৰেহাই একক কিমান?"
+     },
+     "why": {
+      "en": "$a + b - \\frac{ab}{100}$.",
+      "as": "$a + b - \\frac{ab}{100}$।"
+     },
+     "options": [
+      {
+       "en": "45%",
+       "as": "45%"
+      },
+      {
+       "en": "47%",
+       "as": "47%"
+      },
+      {
+       "en": "40%",
+       "as": "40%"
+      },
+      {
+       "en": "44%",
+       "as": "44%"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-discount-add",
+       "why": {
+        "en": "The second discount acts on the reduced price.",
+        "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Successive discounts of 10% and 30% equal a single discount of",
+      "as": "10% আৰু 30% ক্ৰমিক ৰেহাই একক কিমান?"
+     },
+     "why": {
+      "en": "$a + b - \\frac{ab}{100}$.",
+      "as": "$a + b - \\frac{ab}{100}$।"
+     },
+     "options": [
+      {
+       "en": "37%",
+       "as": "37%"
+      },
+      {
+       "en": "40%",
+       "as": "40%"
+      },
+      {
+       "en": "39%",
+       "as": "39%"
+      },
+      {
+       "en": "42%",
+       "as": "42%"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-discount-add",
+       "why": {
+        "en": "The second discount acts on the reduced price.",
+        "as": "দ্বিতীয় ৰেহাই কমা দামৰ ওপৰত।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.si",
+   "type": "mcq",
+   "skill": "i-si",
+   "q": {
+    "en": "Simple interest on ₹2000 at 5% a year for 3 years is",
+    "as": "₹2000ৰ ওপৰত বছৰি 5% হাৰত 3 বছৰৰ সৰল সুত"
+   },
+   "why": {
+    "en": "$\\frac{P \\times R \\times T}{100}$.",
+    "as": "$\\frac{P \\times R \\times T}{100}$।"
+   },
+   "options": [
+    {
+     "en": "3000",
+     "as": "3000"
+    },
+    {
+     "en": "100",
+     "as": "100"
+    },
+    {
+     "en": "300",
+     "as": "300"
+    },
+    {
+     "en": "2300",
+     "as": "2300"
+    }
+   ],
+   "answer": 2,
+   "variants": [
+    {
+     "q": {
+      "en": "Simple interest on ₹2000 at 5% a year for 3 years is",
+      "as": "₹2000ৰ ওপৰত বছৰি 5% হাৰত 3 বছৰৰ সৰল সুত"
+     },
+     "why": {
+      "en": "$\\frac{P \\times R \\times T}{100}$.",
+      "as": "$\\frac{P \\times R \\times T}{100}$।"
+     },
+     "options": [
+      {
+       "en": "3000",
+       "as": "3000"
+      },
+      {
+       "en": "100",
+       "as": "100"
+      },
+      {
+       "en": "300",
+       "as": "300"
+      },
+      {
+       "en": "2300",
+       "as": "2300"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "q": {
+      "en": "Simple interest on ₹1500 at 8% a year for 2 years is",
+      "as": "₹1500ৰ ওপৰত বছৰি 8% হাৰত 2 বছৰৰ সৰল সুত"
+     },
+     "why": {
+      "en": "$\\frac{P \\times R \\times T}{100}$.",
+      "as": "$\\frac{P \\times R \\times T}{100}$।"
+     },
+     "options": [
+      {
+       "en": "240",
+       "as": "240"
+      },
+      {
+       "en": "2400",
+       "as": "2400"
+      },
+      {
+       "en": "120",
+       "as": "120"
+      },
+      {
+       "en": "1740",
+       "as": "1740"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "q": {
+      "en": "Simple interest on ₹4000 at 6% a year for 2 years is",
+      "as": "₹4000ৰ ওপৰত বছৰি 6% হাৰত 2 বছৰৰ সৰল সুত"
+     },
+     "why": {
+      "en": "$\\frac{P \\times R \\times T}{100}$.",
+      "as": "$\\frac{P \\times R \\times T}{100}$।"
+     },
+     "options": [
+      {
+       "en": "4800",
+       "as": "4800"
+      },
+      {
+       "en": "480",
+       "as": "480"
+      },
+      {
+       "en": "4480",
+       "as": "4480"
+      },
+      {
+       "en": "240",
+       "as": "240"
+      }
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "bank.math.ci",
+   "type": "mcq",
+   "skill": "i-ci",
+   "q": {
+    "en": "Compound interest on ₹1000 at 10% a year for 2 years is",
+    "as": "₹1000ৰ ওপৰত বছৰি 10% হাৰত 2 বছৰৰ চক্ৰবৃদ্ধি সুত"
+   },
+   "why": {
+    "en": "Grow by the multiplier twice, then remove the principal.",
+    "as": "গুণকেৰে দুবাৰ বঢ়াই মূলধন বাদ দিয়া।"
+   },
+   "options": [
+    {
+     "en": "200",
+     "as": "200"
+    },
+    {
+     "en": "1210",
+     "as": "1210"
+    },
+    {
+     "en": "100",
+     "as": "100"
+    },
+    {
+     "en": "210",
+     "as": "210"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "m-si-ci",
+     "why": {
+      "en": "That is simple interest. Compound interest earns on interest too.",
+      "as": "সেয়া সৰল সুত। চক্ৰবৃদ্ধিত সুতৰো সুত হয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Compound interest on ₹1000 at 10% a year for 2 years is",
+      "as": "₹1000ৰ ওপৰত বছৰি 10% হাৰত 2 বছৰৰ চক্ৰবৃদ্ধি সুত"
+     },
+     "why": {
+      "en": "Grow by the multiplier twice, then remove the principal.",
+      "as": "গুণকেৰে দুবাৰ বঢ়াই মূলধন বাদ দিয়া।"
+     },
+     "options": [
+      {
+       "en": "200",
+       "as": "200"
+      },
+      {
+       "en": "1210",
+       "as": "1210"
+      },
+      {
+       "en": "100",
+       "as": "100"
+      },
+      {
+       "en": "210",
+       "as": "210"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-si-ci",
+       "why": {
+        "en": "That is simple interest. Compound interest earns on interest too.",
+        "as": "সেয়া সৰল সুত। চক্ৰবৃদ্ধিত সুতৰো সুত হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Compound interest on ₹2000 at 5% a year for 2 years is",
+      "as": "₹2000ৰ ওপৰত বছৰি 5% হাৰত 2 বছৰৰ চক্ৰবৃদ্ধি সুত"
+     },
+     "why": {
+      "en": "Grow by the multiplier twice, then remove the principal.",
+      "as": "গুণকেৰে দুবাৰ বঢ়াই মূলধন বাদ দিয়া।"
+     },
+     "options": [
+      {
+       "en": "100",
+       "as": "100"
+      },
+      {
+       "en": "205",
+       "as": "205"
+      },
+      {
+       "en": "2205",
+       "as": "2205"
+      },
+      {
+       "en": "200",
+       "as": "200"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-si-ci",
+       "why": {
+        "en": "That is simple interest. Compound interest earns on interest too.",
+        "as": "সেয়া সৰল সুত। চক্ৰবৃদ্ধিত সুতৰো সুত হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Compound interest on ₹5000 at 20% a year for 2 years is",
+      "as": "₹5000ৰ ওপৰত বছৰি 20% হাৰত 2 বছৰৰ চক্ৰবৃদ্ধি সুত"
+     },
+     "why": {
+      "en": "Grow by the multiplier twice, then remove the principal.",
+      "as": "গুণকেৰে দুবাৰ বঢ়াই মূলধন বাদ দিয়া।"
+     },
+     "options": [
+      {
+       "en": "7200",
+       "as": "7200"
+      },
+      {
+       "en": "1000",
+       "as": "1000"
+      },
+      {
+       "en": "2000",
+       "as": "2000"
+      },
+      {
+       "en": "2200",
+       "as": "2200"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-si-ci",
+       "why": {
+        "en": "That is simple interest. Compound interest earns on interest too.",
+        "as": "সেয়া সৰল সুত। চক্ৰবৃদ্ধিত সুতৰো সুত হয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.work",
+   "type": "mcq",
+   "skill": "w-rate",
+   "q": {
+    "en": "A does a job in 12 days and B in 24 days. Together they need",
+    "as": "Aই এটা কাম 12 দিনত, Bই 24 দিনত কৰে। একেলগে লাগিব"
+   },
+   "why": {
+    "en": "Add the daily rates, then flip.",
+    "as": "দৈনিক হাৰ যোগ কৰি ওলোটা কৰা।"
+   },
+   "options": [
+    {
+     "en": "10 days",
+     "as": "10 days"
+    },
+    {
+     "en": "18 days",
+     "as": "18 days"
+    },
+    {
+     "en": "36 days",
+     "as": "36 days"
+    },
+    {
+     "en": "8 days",
+     "as": "8 days"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-work-days",
+     "why": {
+      "en": "Rates add; days do not average.",
+      "as": "হাৰ যোগ হয়; দিনৰ গড় নহয়।"
+     }
+    },
+    {
+     "opt": 2,
+     "tag": "m-work-days",
+     "why": {
+      "en": "Rates add, not days.",
+      "as": "হাৰ যোগ হয়, দিন নহয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A does a job in 12 days and B in 24 days. Together they need",
+      "as": "Aই এটা কাম 12 দিনত, Bই 24 দিনত কৰে। একেলগে লাগিব"
+     },
+     "why": {
+      "en": "Add the daily rates, then flip.",
+      "as": "দৈনিক হাৰ যোগ কৰি ওলোটা কৰা।"
+     },
+     "options": [
+      {
+       "en": "10 days",
+       "as": "10 days"
+      },
+      {
+       "en": "18 days",
+       "as": "18 days"
+      },
+      {
+       "en": "36 days",
+       "as": "36 days"
+      },
+      {
+       "en": "8 days",
+       "as": "8 days"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Rates add; days do not average.",
+        "as": "হাৰ যোগ হয়; দিনৰ গড় নহয়।"
+       }
+      },
+      {
+       "opt": 2,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Rates add, not days.",
+        "as": "হাৰ যোগ হয়, দিন নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A does a job in 10 days and B in 15 days. Together they need",
+      "as": "Aই এটা কাম 10 দিনত, Bই 15 দিনত কৰে। একেলগে লাগিব"
+     },
+     "why": {
+      "en": "Add the daily rates, then flip.",
+      "as": "দৈনিক হাৰ যোগ কৰি ওলোটা কৰা।"
+     },
+     "options": [
+      {
+       "en": "25 days",
+       "as": "25 days"
+      },
+      {
+       "en": "6 days",
+       "as": "6 days"
+      },
+      {
+       "en": "8 days",
+       "as": "8 days"
+      },
+      {
+       "en": "$\\frac{25}{2}$ days",
+       "as": "$\\frac{25}{2}$ days"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Rates add, not days.",
+        "as": "হাৰ যোগ হয়, দিন নহয়।"
+       }
+      },
+      {
+       "opt": 3,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Rates add; days do not average.",
+        "as": "হাৰ যোগ হয়; দিনৰ গড় নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A does a job in 20 days and B in 30 days. Together they need",
+      "as": "Aই এটা কাম 20 দিনত, Bই 30 দিনত কৰে। একেলগে লাগিব"
+     },
+     "why": {
+      "en": "Add the daily rates, then flip.",
+      "as": "দৈনিক হাৰ যোগ কৰি ওলোটা কৰা।"
+     },
+     "options": [
+      {
+       "en": "12 days",
+       "as": "12 days"
+      },
+      {
+       "en": "50 days",
+       "as": "50 days"
+      },
+      {
+       "en": "14 days",
+       "as": "14 days"
+      },
+      {
+       "en": "25 days",
+       "as": "25 days"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Rates add, not days.",
+        "as": "হাৰ যোগ হয়, দিন নহয়।"
+       }
+      },
+      {
+       "opt": 3,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Rates add; days do not average.",
+        "as": "হাৰ যোগ হয়; দিনৰ গড় নহয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.speed",
+   "type": "mcq",
+   "skill": "sp-basic",
+   "q": {
+    "en": "A car goes out at 30 km/h and returns on the same road at 60 km/h. Its average speed is",
+    "as": "গাড়ী এখন 30 কিমি/ঘণ্টাত গৈ একে বাটেৰে 60 কিমি/ঘণ্টাত উভতে। গড় গতি"
+   },
+   "why": {
+    "en": "Total distance ÷ total time.",
+    "as": "মুঠ দূৰত্ব ÷ মুঠ সময়।"
+   },
+   "options": [
+    {
+     "en": "40 km/h",
+     "as": "40 km/h"
+    },
+    {
+     "en": "45 km/h",
+     "as": "45 km/h"
+    },
+    {
+     "en": "30 km/h",
+     "as": "30 km/h"
+    },
+    {
+     "en": "90 km/h",
+     "as": "90 km/h"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-speed-avg",
+     "why": {
+      "en": "Time differs on each leg, so use $\\frac{2uv}{u + v}$.",
+      "as": "প্ৰতিটো অংশৰ সময় বেলেগ, সেয়ে $\\frac{2uv}{u + v}$।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A car goes out at 30 km/h and returns on the same road at 60 km/h. Its average speed is",
+      "as": "গাড়ী এখন 30 কিমি/ঘণ্টাত গৈ একে বাটেৰে 60 কিমি/ঘণ্টাত উভতে। গড় গতি"
+     },
+     "why": {
+      "en": "Total distance ÷ total time.",
+      "as": "মুঠ দূৰত্ব ÷ মুঠ সময়।"
+     },
+     "options": [
+      {
+       "en": "40 km/h",
+       "as": "40 km/h"
+      },
+      {
+       "en": "45 km/h",
+       "as": "45 km/h"
+      },
+      {
+       "en": "30 km/h",
+       "as": "30 km/h"
+      },
+      {
+       "en": "90 km/h",
+       "as": "90 km/h"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "Time differs on each leg, so use $\\frac{2uv}{u + v}$.",
+        "as": "প্ৰতিটো অংশৰ সময় বেলেগ, সেয়ে $\\frac{2uv}{u + v}$।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A car goes out at 40 km/h and returns on the same road at 60 km/h. Its average speed is",
+      "as": "গাড়ী এখন 40 কিমি/ঘণ্টাত গৈ একে বাটেৰে 60 কিমি/ঘণ্টাত উভতে। গড় গতি"
+     },
+     "why": {
+      "en": "Total distance ÷ total time.",
+      "as": "মুঠ দূৰত্ব ÷ মুঠ সময়।"
+     },
+     "options": [
+      {
+       "en": "100 km/h",
+       "as": "100 km/h"
+      },
+      {
+       "en": "48 km/h",
+       "as": "48 km/h"
+      },
+      {
+       "en": "20 km/h",
+       "as": "20 km/h"
+      },
+      {
+       "en": "50 km/h",
+       "as": "50 km/h"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "Time differs on each leg, so use $\\frac{2uv}{u + v}$.",
+        "as": "প্ৰতিটো অংশৰ সময় বেলেগ, সেয়ে $\\frac{2uv}{u + v}$।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A car goes out at 20 km/h and returns on the same road at 30 km/h. Its average speed is",
+      "as": "গাড়ী এখন 20 কিমি/ঘণ্টাত গৈ একে বাটেৰে 30 কিমি/ঘণ্টাত উভতে। গড় গতি"
+     },
+     "why": {
+      "en": "Total distance ÷ total time.",
+      "as": "মুঠ দূৰত্ব ÷ মুঠ সময়।"
+     },
+     "options": [
+      {
+       "en": "24 km/h",
+       "as": "24 km/h"
+      },
+      {
+       "en": "50 km/h",
+       "as": "50 km/h"
+      },
+      {
+       "en": "10 km/h",
+       "as": "10 km/h"
+      },
+      {
+       "en": "25 km/h",
+       "as": "25 km/h"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "Time differs on each leg, so use $\\frac{2uv}{u + v}$.",
+        "as": "প্ৰতিটো অংশৰ সময় বেলেগ, সেয়ে $\\frac{2uv}{u + v}$।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.train",
+   "type": "mcq",
+   "skill": "sp-rel",
+   "q": {
+    "en": "A 120 m train at 15 m/s crosses a 180 m platform in",
+    "as": "15 মি/ছে গতিৰ 120 মি দীঘল ৰেলে 180 মি প্লেটফৰ্ম পাৰ হ'বলৈ লয়"
+   },
+   "why": {
+    "en": "Distance is train plus platform.",
+    "as": "দূৰত্ব = ৰেল + প্লেটফৰ্ম।"
+   },
+   "options": [
+    {
+     "en": "20 s",
+     "as": "20 s"
+    },
+    {
+     "en": "12 s",
+     "as": "12 s"
+    },
+    {
+     "en": "8 s",
+     "as": "8 s"
+    },
+    {
+     "en": "25 s",
+     "as": "25 s"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-train-length",
+     "why": {
+      "en": "The train must cover its own length as well.",
+      "as": "ৰেলে নিজৰ দৈৰ্ঘ্যও পাৰ হ'ব লাগিব।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A 120 m train at 15 m/s crosses a 180 m platform in",
+      "as": "15 মি/ছে গতিৰ 120 মি দীঘল ৰেলে 180 মি প্লেটফৰ্ম পাৰ হ'বলৈ লয়"
+     },
+     "why": {
+      "en": "Distance is train plus platform.",
+      "as": "দূৰত্ব = ৰেল + প্লেটফৰ্ম।"
+     },
+     "options": [
+      {
+       "en": "20 s",
+       "as": "20 s"
+      },
+      {
+       "en": "12 s",
+       "as": "12 s"
+      },
+      {
+       "en": "8 s",
+       "as": "8 s"
+      },
+      {
+       "en": "25 s",
+       "as": "25 s"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-train-length",
+       "why": {
+        "en": "The train must cover its own length as well.",
+        "as": "ৰেলে নিজৰ দৈৰ্ঘ্যও পাৰ হ'ব লাগিব।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A 150 m train at 20 m/s crosses a 250 m platform in",
+      "as": "20 মি/ছে গতিৰ 150 মি দীঘল ৰেলে 250 মি প্লেটফৰ্ম পাৰ হ'বলৈ লয়"
+     },
+     "why": {
+      "en": "Distance is train plus platform.",
+      "as": "দূৰত্ব = ৰেল + প্লেটফৰ্ম।"
+     },
+     "options": [
+      {
+       "en": "20 s",
+       "as": "20 s"
+      },
+      {
+       "en": "$\\frac{25}{2}$ s",
+       "as": "$\\frac{25}{2}$ s"
+      },
+      {
+       "en": "$\\frac{15}{2}$ s",
+       "as": "$\\frac{15}{2}$ s"
+      },
+      {
+       "en": "25 s",
+       "as": "25 s"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-train-length",
+       "why": {
+        "en": "The train must cover its own length as well.",
+        "as": "ৰেলে নিজৰ দৈৰ্ঘ্যও পাৰ হ'ব লাগিব।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A 100 m train at 10 m/s crosses a 200 m platform in",
+      "as": "10 মি/ছে গতিৰ 100 মি দীঘল ৰেলে 200 মি প্লেটফৰ্ম পাৰ হ'বলৈ লয়"
+     },
+     "why": {
+      "en": "Distance is train plus platform.",
+      "as": "দূৰত্ব = ৰেল + প্লেটফৰ্ম।"
+     },
+     "options": [
+      {
+       "en": "30 s",
+       "as": "30 s"
+      },
+      {
+       "en": "20 s",
+       "as": "20 s"
+      },
+      {
+       "en": "35 s",
+       "as": "35 s"
+      },
+      {
+       "en": "10 s",
+       "as": "10 s"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-train-length",
+       "why": {
+        "en": "The train must cover its own length as well.",
+        "as": "ৰেলে নিজৰ দৈৰ্ঘ্যও পাৰ হ'ব লাগিব।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.age",
+   "type": "mcq",
+   "skill": "age-ratio",
+   "q": {
+    "en": "Ages are in the ratio 2:3. In 5 years the difference between them will be 6 years. The younger is now",
+    "as": "বয়সৰ অনুপাত 2:3। 5 বছৰৰ পিছত পাৰ্থক্য 6 বছৰ হ'ব। সৰুজনৰ এতিয়াৰ বয়স"
+   },
+   "why": {
+    "en": "The gap never changes, so one ratio part is known.",
+    "as": "পাৰ্থক্য নসলনি হয়, সেয়ে এটা অনুপাত ভাগ জনা যায়।"
+   },
+   "options": [
+    {
+     "en": "18 years",
+     "as": "18 years"
+    },
+    {
+     "en": "10 years",
+     "as": "10 years"
+    },
+    {
+     "en": "17 years",
+     "as": "17 years"
+    },
+    {
+     "en": "12 years",
+     "as": "12 years"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "m-age-gap",
+     "why": {
+      "en": "That is the age in the future. The gap stays fixed, so work from today.",
+      "as": "সেয়া ভৱিষ্যতৰ বয়স। পাৰ্থক্য একে থাকে, সেয়ে আজিৰ পৰা কৰা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Ages are in the ratio 2:3. In 5 years the difference between them will be 6 years. The younger is now",
+      "as": "বয়সৰ অনুপাত 2:3। 5 বছৰৰ পিছত পাৰ্থক্য 6 বছৰ হ'ব। সৰুজনৰ এতিয়াৰ বয়স"
+     },
+     "why": {
+      "en": "The gap never changes, so one ratio part is known.",
+      "as": "পাৰ্থক্য নসলনি হয়, সেয়ে এটা অনুপাত ভাগ জনা যায়।"
+     },
+     "options": [
+      {
+       "en": "18 years",
+       "as": "18 years"
+      },
+      {
+       "en": "10 years",
+       "as": "10 years"
+      },
+      {
+       "en": "17 years",
+       "as": "17 years"
+      },
+      {
+       "en": "12 years",
+       "as": "12 years"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-age-gap",
+       "why": {
+        "en": "That is the age in the future. The gap stays fixed, so work from today.",
+        "as": "সেয়া ভৱিষ্যতৰ বয়স। পাৰ্থক্য একে থাকে, সেয়ে আজিৰ পৰা কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Ages are in the ratio 3:5. In 4 years the difference between them will be 14 years. The younger is now",
+      "as": "বয়সৰ অনুপাত 3:5। 4 বছৰৰ পিছত পাৰ্থক্য 14 বছৰ হ'ব। সৰুজনৰ এতিয়াৰ বয়স"
+     },
+     "why": {
+      "en": "The gap never changes, so one ratio part is known.",
+      "as": "পাৰ্থক্য নসলনি হয়, সেয়ে এটা অনুপাত ভাগ জনা যায়।"
+     },
+     "options": [
+      {
+       "en": "19 years",
+       "as": "19 years"
+      },
+      {
+       "en": "35 years",
+       "as": "35 years"
+      },
+      {
+       "en": "25 years",
+       "as": "25 years"
+      },
+      {
+       "en": "21 years",
+       "as": "21 years"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-age-gap",
+       "why": {
+        "en": "That is the age in the future. The gap stays fixed, so work from today.",
+        "as": "সেয়া ভৱিষ্যতৰ বয়স। পাৰ্থক্য একে থাকে, সেয়ে আজিৰ পৰা কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Ages are in the ratio 4:7. In 6 years the difference between them will be 15 years. The younger is now",
+      "as": "বয়সৰ অনুপাত 4:7। 6 বছৰৰ পিছত পাৰ্থক্য 15 বছৰ হ'ব। সৰুজনৰ এতিয়াৰ বয়স"
+     },
+     "why": {
+      "en": "The gap never changes, so one ratio part is known.",
+      "as": "পাৰ্থক্য নসলনি হয়, সেয়ে এটা অনুপাত ভাগ জনা যায়।"
+     },
+     "options": [
+      {
+       "en": "20 years",
+       "as": "20 years"
+      },
+      {
+       "en": "26 years",
+       "as": "26 years"
+      },
+      {
+       "en": "18 years",
+       "as": "18 years"
+      },
+      {
+       "en": "35 years",
+       "as": "35 years"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-age-gap",
+       "why": {
+        "en": "That is the age in the future. The gap stays fixed, so work from today.",
+        "as": "সেয়া ভৱিষ্যতৰ বয়স। পাৰ্থক্য একে থাকে, সেয়ে আজিৰ পৰা কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.ap",
+   "type": "mcq",
+   "skill": "ap",
+   "q": {
+    "en": "The 15th term of 1, 4, 7, … is",
+    "as": "1, 4, 7, … শ্ৰেণীৰ 15তম পদ"
+   },
+   "why": {
+    "en": "$a + (n - 1)d$.",
+    "as": "$a + (n - 1)d$।"
+   },
+   "options": [
+    {
+     "en": "15",
+     "as": "15"
+    },
+    {
+     "en": "46",
+     "as": "46"
+    },
+    {
+     "en": "40",
+     "as": "40"
+    },
+    {
+     "en": "43",
+     "as": "43"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-ap-n",
+     "why": {
+      "en": "The first term has no steps added, so use $n - 1$.",
+      "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে $n - 1$ লোৱা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "The 15th term of 1, 4, 7, … is",
+      "as": "1, 4, 7, … শ্ৰেণীৰ 15তম পদ"
+     },
+     "why": {
+      "en": "$a + (n - 1)d$.",
+      "as": "$a + (n - 1)d$।"
+     },
+     "options": [
+      {
+       "en": "15",
+       "as": "15"
+      },
+      {
+       "en": "46",
+       "as": "46"
+      },
+      {
+       "en": "40",
+       "as": "40"
+      },
+      {
+       "en": "43",
+       "as": "43"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-ap-n",
+       "why": {
+        "en": "The first term has no steps added, so use $n - 1$.",
+        "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে $n - 1$ লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The 20th term of 4, 9, 14, … is",
+      "as": "4, 9, 14, … শ্ৰেণীৰ 20তম পদ"
+     },
+     "why": {
+      "en": "$a + (n - 1)d$.",
+      "as": "$a + (n - 1)d$।"
+     },
+     "options": [
+      {
+       "en": "80",
+       "as": "80"
+      },
+      {
+       "en": "104",
+       "as": "104"
+      },
+      {
+       "en": "99",
+       "as": "99"
+      },
+      {
+       "en": "94",
+       "as": "94"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-ap-n",
+       "why": {
+        "en": "The first term has no steps added, so use $n - 1$.",
+        "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে $n - 1$ লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The 31th term of 7, 9, 11, … is",
+      "as": "7, 9, 11, … শ্ৰেণীৰ 31তম পদ"
+     },
+     "why": {
+      "en": "$a + (n - 1)d$.",
+      "as": "$a + (n - 1)d$।"
+     },
+     "options": [
+      {
+       "en": "217",
+       "as": "217"
+      },
+      {
+       "en": "67",
+       "as": "67"
+      },
+      {
+       "en": "65",
+       "as": "65"
+      },
+      {
+       "en": "69",
+       "as": "69"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-ap-n",
+       "why": {
+        "en": "The first term has no steps added, so use $n - 1$.",
+        "as": "প্ৰথম পদত কোনো খোজ নাই, সেয়ে $n - 1$ লোৱা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.gp",
+   "type": "mcq",
+   "skill": "gp",
+   "q": {
+    "en": "The 6th term of 3, 6, 12, … is",
+    "as": "3, 6, 12, … শ্ৰেণীৰ 6তম পদ"
+   },
+   "why": {
+    "en": "$ar^{n-1}$.",
+    "as": "$ar^{n-1}$।"
+   },
+   "options": [
+    {
+     "en": "192",
+     "as": "192"
+    },
+    {
+     "en": "48",
+     "as": "48"
+    },
+    {
+     "en": "96",
+     "as": "96"
+    },
+    {
+     "en": "36",
+     "as": "36"
+    }
+   ],
+   "answer": 2,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "m-gp-power",
+     "why": {
+      "en": "The power is $n - 1$.",
+      "as": "ঘাত $n - 1$।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "The 6th term of 3, 6, 12, … is",
+      "as": "3, 6, 12, … শ্ৰেণীৰ 6তম পদ"
+     },
+     "why": {
+      "en": "$ar^{n-1}$.",
+      "as": "$ar^{n-1}$।"
+     },
+     "options": [
+      {
+       "en": "192",
+       "as": "192"
+      },
+      {
+       "en": "48",
+       "as": "48"
+      },
+      {
+       "en": "96",
+       "as": "96"
+      },
+      {
+       "en": "36",
+       "as": "36"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-gp-power",
+       "why": {
+        "en": "The power is $n - 1$.",
+        "as": "ঘাত $n - 1$।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The 5th term of 2, 6, 18, … is",
+      "as": "2, 6, 18, … শ্ৰেণীৰ 5তম পদ"
+     },
+     "why": {
+      "en": "$ar^{n-1}$.",
+      "as": "$ar^{n-1}$।"
+     },
+     "options": [
+      {
+       "en": "30",
+       "as": "30"
+      },
+      {
+       "en": "162",
+       "as": "162"
+      },
+      {
+       "en": "54",
+       "as": "54"
+      },
+      {
+       "en": "486",
+       "as": "486"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-gp-power",
+       "why": {
+        "en": "The power is $n - 1$.",
+        "as": "ঘাত $n - 1$।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The 6th term of 7, 14, 28, … is",
+      "as": "7, 14, 28, … শ্ৰেণীৰ 6তম পদ"
+     },
+     "why": {
+      "en": "$ar^{n-1}$.",
+      "as": "$ar^{n-1}$।"
+     },
+     "options": [
+      {
+       "en": "224",
+       "as": "224"
+      },
+      {
+       "en": "448",
+       "as": "448"
+      },
+      {
+       "en": "84",
+       "as": "84"
+      },
+      {
+       "en": "112",
+       "as": "112"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-gp-power",
+       "why": {
+        "en": "The power is $n - 1$.",
+        "as": "ঘাত $n - 1$।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.trig",
+   "type": "mcq",
+   "skill": "tr-ratio",
+   "q": {
+    "en": "In a right triangle, the side opposite A is 3, the side next to A is 4 and the hypotenuse is 5. Sin A is",
+    "as": "সমকোণী ত্ৰিভুজত Aৰ বিপৰীত বাহু 3, সংলগ্ন বাহু 4, অতিভুজ 5। Sin A"
+   },
+   "why": {
+    "en": "Sin is opposite over hypotenuse.",
+    "as": "Sin = বিপৰীত ÷ অতিভুজ।"
+   },
+   "options": [
+    {
+     "en": "$\\frac{3}{5}$",
+     "as": "$\\frac{3}{5}$"
+    },
+    {
+     "en": "$\\frac{4}{5}$",
+     "as": "$\\frac{4}{5}$"
+    },
+    {
+     "en": "$\\frac{3}{4}$",
+     "as": "$\\frac{3}{4}$"
+    },
+    {
+     "en": "$\\frac{5}{3}$",
+     "as": "$\\frac{5}{3}$"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-trig-swap",
+     "why": {
+      "en": "That is cos A.",
+      "as": "সেয়া cos A।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "In a right triangle, the side opposite A is 3, the side next to A is 4 and the hypotenuse is 5. Sin A is",
+      "as": "সমকোণী ত্ৰিভুজত Aৰ বিপৰীত বাহু 3, সংলগ্ন বাহু 4, অতিভুজ 5। Sin A"
+     },
+     "why": {
+      "en": "Sin is opposite over hypotenuse.",
+      "as": "Sin = বিপৰীত ÷ অতিভুজ।"
+     },
+     "options": [
+      {
+       "en": "$\\frac{3}{5}$",
+       "as": "$\\frac{3}{5}$"
+      },
+      {
+       "en": "$\\frac{4}{5}$",
+       "as": "$\\frac{4}{5}$"
+      },
+      {
+       "en": "$\\frac{3}{4}$",
+       "as": "$\\frac{3}{4}$"
+      },
+      {
+       "en": "$\\frac{5}{3}$",
+       "as": "$\\frac{5}{3}$"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "That is cos A.",
+        "as": "সেয়া cos A।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "In a right triangle, the side opposite A is 5, the side next to A is 12 and the hypotenuse is 13. Sin A is",
+      "as": "সমকোণী ত্ৰিভুজত Aৰ বিপৰীত বাহু 5, সংলগ্ন বাহু 12, অতিভুজ 13। Sin A"
+     },
+     "why": {
+      "en": "Sin is opposite over hypotenuse.",
+      "as": "Sin = বিপৰীত ÷ অতিভুজ।"
+     },
+     "options": [
+      {
+       "en": "$\\frac{12}{13}$",
+       "as": "$\\frac{12}{13}$"
+      },
+      {
+       "en": "$\\frac{5}{13}$",
+       "as": "$\\frac{5}{13}$"
+      },
+      {
+       "en": "$\\frac{13}{5}$",
+       "as": "$\\frac{13}{5}$"
+      },
+      {
+       "en": "$\\frac{5}{12}$",
+       "as": "$\\frac{5}{12}$"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "That is cos A.",
+        "as": "সেয়া cos A।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "In a right triangle, the side opposite A is 8, the side next to A is 15 and the hypotenuse is 17. Sin A is",
+      "as": "সমকোণী ত্ৰিভুজত Aৰ বিপৰীত বাহু 8, সংলগ্ন বাহু 15, অতিভুজ 17। Sin A"
+     },
+     "why": {
+      "en": "Sin is opposite over hypotenuse.",
+      "as": "Sin = বিপৰীত ÷ অতিভুজ।"
+     },
+     "options": [
+      {
+       "en": "$\\frac{15}{17}$",
+       "as": "$\\frac{15}{17}$"
+      },
+      {
+       "en": "$\\frac{17}{8}$",
+       "as": "$\\frac{17}{8}$"
+      },
+      {
+       "en": "$\\frac{8}{15}$",
+       "as": "$\\frac{8}{15}$"
+      },
+      {
+       "en": "$\\frac{8}{17}$",
+       "as": "$\\frac{8}{17}$"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "That is cos A.",
+        "as": "সেয়া cos A।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.tri",
+   "type": "mcq",
+   "skill": "g-tri",
+   "q": {
+    "en": "A triangle has base 12 cm and height 8 cm. Its area is",
+    "as": "ত্ৰিভুজৰ ভূমি 12 ছেমি, উচ্চতা 8 ছেমি। কালি"
+   },
+   "why": {
+    "en": "$\\frac{1}{2} \\times$ base $\\times$ height.",
+    "as": "$\\frac{1}{2} \\times$ ভূমি $\\times$ উচ্চতা।"
+   },
+   "options": [
+    {
+     "en": "96 sq cm",
+     "as": "96 sq cm"
+    },
+    {
+     "en": "20 sq cm",
+     "as": "20 sq cm"
+    },
+    {
+     "en": "40 sq cm",
+     "as": "40 sq cm"
+    },
+    {
+     "en": "48 sq cm",
+     "as": "48 sq cm"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "m-tri-area",
+     "why": {
+      "en": "Triangle area is half of base × height.",
+      "as": "ত্ৰিভুজৰ কালি ভূমি × উচ্চতাৰ আধা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A triangle has base 12 cm and height 8 cm. Its area is",
+      "as": "ত্ৰিভুজৰ ভূমি 12 ছেমি, উচ্চতা 8 ছেমি। কালি"
+     },
+     "why": {
+      "en": "$\\frac{1}{2} \\times$ base $\\times$ height.",
+      "as": "$\\frac{1}{2} \\times$ ভূমি $\\times$ উচ্চতা।"
+     },
+     "options": [
+      {
+       "en": "96 sq cm",
+       "as": "96 sq cm"
+      },
+      {
+       "en": "20 sq cm",
+       "as": "20 sq cm"
+      },
+      {
+       "en": "40 sq cm",
+       "as": "40 sq cm"
+      },
+      {
+       "en": "48 sq cm",
+       "as": "48 sq cm"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-tri-area",
+       "why": {
+        "en": "Triangle area is half of base × height.",
+        "as": "ত্ৰিভুজৰ কালি ভূমি × উচ্চতাৰ আধা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A triangle has base 10 cm and height 6 cm. Its area is",
+      "as": "ত্ৰিভুজৰ ভূমি 10 ছেমি, উচ্চতা 6 ছেমি। কালি"
+     },
+     "why": {
+      "en": "$\\frac{1}{2} \\times$ base $\\times$ height.",
+      "as": "$\\frac{1}{2} \\times$ ভূমি $\\times$ উচ্চতা।"
+     },
+     "options": [
+      {
+       "en": "30 sq cm",
+       "as": "30 sq cm"
+      },
+      {
+       "en": "32 sq cm",
+       "as": "32 sq cm"
+      },
+      {
+       "en": "60 sq cm",
+       "as": "60 sq cm"
+      },
+      {
+       "en": "16 sq cm",
+       "as": "16 sq cm"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "m-tri-area",
+       "why": {
+        "en": "Triangle area is half of base × height.",
+        "as": "ত্ৰিভুজৰ কালি ভূমি × উচ্চতাৰ আধা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A triangle has base 14 cm and height 10 cm. Its area is",
+      "as": "ত্ৰিভুজৰ ভূমি 14 ছেমি, উচ্চতা 10 ছেমি। কালি"
+     },
+     "why": {
+      "en": "$\\frac{1}{2} \\times$ base $\\times$ height.",
+      "as": "$\\frac{1}{2} \\times$ ভূমি $\\times$ উচ্চতা।"
+     },
+     "options": [
+      {
+       "en": "48 sq cm",
+       "as": "48 sq cm"
+      },
+      {
+       "en": "140 sq cm",
+       "as": "140 sq cm"
+      },
+      {
+       "en": "70 sq cm",
+       "as": "70 sq cm"
+      },
+      {
+       "en": "24 sq cm",
+       "as": "24 sq cm"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-tri-area",
+       "why": {
+        "en": "Triangle area is half of base × height.",
+        "as": "ত্ৰিভুজৰ কালি ভূমি × উচ্চতাৰ আধা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.circle",
+   "type": "mcq",
+   "skill": "g-circle",
+   "q": {
+    "en": "Taking $\\pi = \\frac{22}{7}$, a circle of diameter 14 cm has circumference",
+    "as": "$\\pi = \\frac{22}{7}$ ধৰিলে 14 ছেমি ব্যাসৰ বৃত্তৰ পৰিধি"
+   },
+   "why": {
+    "en": "Circumference is $\\pi d$.",
+    "as": "পৰিধি $\\pi d$।"
+   },
+   "options": [
+    {
+     "en": "52 cm",
+     "as": "52 cm"
+    },
+    {
+     "en": "22 cm",
+     "as": "22 cm"
+    },
+    {
+     "en": "44 cm",
+     "as": "44 cm"
+    },
+    {
+     "en": "88 cm",
+     "as": "88 cm"
+    }
+   ],
+   "answer": 2,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "m-radius-dia",
+     "why": {
+      "en": "The formula $2\\pi r$ uses the radius, half the diameter.",
+      "as": "$2\\pi r$ত ব্যাসাৰ্ধ লাগে, ব্যাসৰ আধা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Taking $\\pi = \\frac{22}{7}$, a circle of diameter 14 cm has circumference",
+      "as": "$\\pi = \\frac{22}{7}$ ধৰিলে 14 ছেমি ব্যাসৰ বৃত্তৰ পৰিধি"
+     },
+     "why": {
+      "en": "Circumference is $\\pi d$.",
+      "as": "পৰিধি $\\pi d$।"
+     },
+     "options": [
+      {
+       "en": "52 cm",
+       "as": "52 cm"
+      },
+      {
+       "en": "22 cm",
+       "as": "22 cm"
+      },
+      {
+       "en": "44 cm",
+       "as": "44 cm"
+      },
+      {
+       "en": "88 cm",
+       "as": "88 cm"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-radius-dia",
+       "why": {
+        "en": "The formula $2\\pi r$ uses the radius, half the diameter.",
+        "as": "$2\\pi r$ত ব্যাসাৰ্ধ লাগে, ব্যাসৰ আধা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Taking $\\pi = \\frac{22}{7}$, a circle of diameter 28 cm has circumference",
+      "as": "$\\pi = \\frac{22}{7}$ ধৰিলে 28 ছেমি ব্যাসৰ বৃত্তৰ পৰিধি"
+     },
+     "why": {
+      "en": "Circumference is $\\pi d$.",
+      "as": "পৰিধি $\\pi d$।"
+     },
+     "options": [
+      {
+       "en": "96 cm",
+       "as": "96 cm"
+      },
+      {
+       "en": "44 cm",
+       "as": "44 cm"
+      },
+      {
+       "en": "88 cm",
+       "as": "88 cm"
+      },
+      {
+       "en": "176 cm",
+       "as": "176 cm"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-radius-dia",
+       "why": {
+        "en": "The formula $2\\pi r$ uses the radius, half the diameter.",
+        "as": "$2\\pi r$ত ব্যাসাৰ্ধ লাগে, ব্যাসৰ আধা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Taking $\\pi = \\frac{22}{7}$, a circle of diameter 21 cm has circumference",
+      "as": "$\\pi = \\frac{22}{7}$ ধৰিলে 21 ছেমি ব্যাসৰ বৃত্তৰ পৰিধি"
+     },
+     "why": {
+      "en": "Circumference is $\\pi d$.",
+      "as": "পৰিধি $\\pi d$।"
+     },
+     "options": [
+      {
+       "en": "74 cm",
+       "as": "74 cm"
+      },
+      {
+       "en": "33 cm",
+       "as": "33 cm"
+      },
+      {
+       "en": "66 cm",
+       "as": "66 cm"
+      },
+      {
+       "en": "132 cm",
+       "as": "132 cm"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-radius-dia",
+       "why": {
+        "en": "The formula $2\\pi r$ uses the radius, half the diameter.",
+        "as": "$2\\pi r$ত ব্যাসাৰ্ধ লাগে, ব্যাসৰ আধা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.math.solid",
+   "type": "mcq",
+   "skill": "g-solid",
+   "q": {
+    "en": "A cube has edge 4 cm. Its volume is",
+    "as": "ঘনকৰ বাহু 4 ছেমি। আয়তন"
+   },
+   "why": {
+    "en": "Volume is edge cubed.",
+    "as": "আয়তন = বাহুৰ ঘন।"
+   },
+   "options": [
+    {
+     "en": "16 cu cm",
+     "as": "16 cu cm"
+    },
+    {
+     "en": "96 cu cm",
+     "as": "96 cu cm"
+    },
+    {
+     "en": "12 cu cm",
+     "as": "12 cu cm"
+    },
+    {
+     "en": "64 cu cm",
+     "as": "64 cu cm"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "m-area-volume",
+     "why": {
+      "en": "That is the surface area.",
+      "as": "সেয়া পৃষ্ঠকালি।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A cube has edge 4 cm. Its volume is",
+      "as": "ঘনকৰ বাহু 4 ছেমি। আয়তন"
+     },
+     "why": {
+      "en": "Volume is edge cubed.",
+      "as": "আয়তন = বাহুৰ ঘন।"
+     },
+     "options": [
+      {
+       "en": "16 cu cm",
+       "as": "16 cu cm"
+      },
+      {
+       "en": "96 cu cm",
+       "as": "96 cu cm"
+      },
+      {
+       "en": "12 cu cm",
+       "as": "12 cu cm"
+      },
+      {
+       "en": "64 cu cm",
+       "as": "64 cu cm"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "m-area-volume",
+       "why": {
+        "en": "That is the surface area.",
+        "as": "সেয়া পৃষ্ঠকালি।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A cube has edge 5 cm. Its volume is",
+      "as": "ঘনকৰ বাহু 5 ছেমি। আয়তন"
+     },
+     "why": {
+      "en": "Volume is edge cubed.",
+      "as": "আয়তন = বাহুৰ ঘন।"
+     },
+     "options": [
+      {
+       "en": "150 cu cm",
+       "as": "150 cu cm"
+      },
+      {
+       "en": "125 cu cm",
+       "as": "125 cu cm"
+      },
+      {
+       "en": "15 cu cm",
+       "as": "15 cu cm"
+      },
+      {
+       "en": "25 cu cm",
+       "as": "25 cu cm"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "m-area-volume",
+       "why": {
+        "en": "That is the surface area.",
+        "as": "সেয়া পৃষ্ঠকালি।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A cube has edge 7 cm. Its volume is",
+      "as": "ঘনকৰ বাহু 7 ছেমি। আয়তন"
+     },
+     "why": {
+      "en": "Volume is edge cubed.",
+      "as": "আয়তন = বাহুৰ ঘন।"
+     },
+     "options": [
+      {
+       "en": "21 cu cm",
+       "as": "21 cu cm"
+      },
+      {
+       "en": "343 cu cm",
+       "as": "343 cu cm"
+      },
+      {
+       "en": "49 cu cm",
+       "as": "49 cu cm"
+      },
+      {
+       "en": "294 cu cm",
+       "as": "294 cu cm"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "m-area-volume",
+       "why": {
+        "en": "That is the surface area.",
+        "as": "সেয়া পৃষ্ঠকালি।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

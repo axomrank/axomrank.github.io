@@ -1,0 +1,2678 @@
+{
+ "id": "math-04-simplification",
+ "course": "mathematics",
+ "no": 4,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Simplification and roots",
+  "as": "সৰলীকৰণ আৰু মূল"
+ },
+ "reign": {
+  "en": "BODMAS, squares, square roots",
+  "as": "BODMAS, বৰ্গ, বৰ্গমূল"
+ },
+ "portrait": "math/simplify.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "What comes first",
+    "as": "কি আগতে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Brackets first, innermost out.",
+     "as": "প্ৰথমে বন্ধনী, ভিতৰৰ পৰা বাহিৰলৈ।"
+    },
+    {
+     "en": "Then × and ÷, whichever comes first from the left.",
+     "as": "তাৰ পিছত × আৰু ÷, বাওঁৰ পৰা যিটো আগত।"
+    },
+    {
+     "en": "Then + and −, again from the left.",
+     "as": "তাৰ পিছত + আৰু −, এইবাৰো বাওঁৰ পৰা।"
+    },
+    {
+     "en": "× is not above ÷: they share a level, and so do + and −.",
+     "as": "× ÷ৰ ওপৰত নহয়: সিহঁত একে স্তৰৰ, + আৰু −ও একে স্তৰৰ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m4.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Multiplying makes groups",
+      "as": "পূৰণে গোট বনায়"
+     },
+     "text": [
+      {
+       "en": "2 + 3 × 4 means 2, and three groups of 4. The groups must be counted before anything joins them.",
+       "as": "2 + 3 × 4 মানে 2, আৰু 4ৰ তিনিটা গোট। আন কিবা যোগ হোৱাৰ আগতে গোটবোৰ গণিব লাগিব।"
+      }
+     ],
+     "widget": {
+      "kind": "order",
+      "expr": "2 + 3 × 4"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap the step that goes first.",
+        "as": "আগতে হোৱা খোজটো টিপা।"
+       },
+       "goal": {
+        "done": 1
+       },
+       "then": {
+        "en": "3 × 4 is one chunk, 12, so the answer is 14. Going left to right gives 20, which is a different sum.",
+        "as": "3 × 4 এটা গোট, 12, সেয়ে উত্তৰ 14। বাওঁৰ পৰা কৰিলে 20 হয়, সেয়া বেলেগ অংক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Brackets go first",
+      "as": "বন্ধনী আগতে"
+     },
+     "text": [
+      {
+       "en": "A bracket is a promise: finish this part before anything else.",
+       "as": "বন্ধনী এটা প্ৰতিশ্ৰুতি: আগতে এই অংশ শেষ কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "order",
+      "expr": "5 + 6 × (9 − 4)"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Work it out, one tap at a time.",
+        "as": "এটা এটাকৈ টিপি কৰা।"
+       },
+       "goal": {
+        "done": 1
+       },
+       "then": {
+        "en": "Each tap rewrites the line, the same way you would in your copybook.",
+        "as": "প্ৰতিটো টিপাই শাৰীটো আকৌ লিখে, তোমাৰ বহীৰ দৰেই।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u1.q1",
+     "type": "explore",
+     "skill": "s-bodmas",
+     "q": {
+      "en": "Tap each step in the right order.",
+      "as": "প্ৰতিটো খোজ শুদ্ধ ক্ৰমত টিপা।"
+     },
+     "widget": {
+      "kind": "order",
+      "expr": "8 + 6 × (5 − 3)"
+     },
+     "target": 20,
+     "answerText": {
+      "en": "The answer is 20",
+      "as": "উত্তৰ 20"
+     },
+     "why": {
+      "en": "Brackets, then × and ÷, then + and −.",
+      "as": "বন্ধনী, তাৰ পিছত × আৰু ÷, তাৰ পিছত + আৰু −।"
+     },
+     "slipTrap": {
+      "tag": "m-bodmas-lr",
+      "why": {
+       "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+       "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+      }
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Tap each step in the right order.",
+        "as": "প্ৰতিটো খোজ শুদ্ধ ক্ৰমত টিপা।"
+       },
+       "widget": {
+        "kind": "order",
+        "expr": "8 + 6 × (5 − 3)"
+       },
+       "target": 20,
+       "answerText": {
+        "en": "The answer is 20",
+        "as": "উত্তৰ 20"
+       },
+       "why": {
+        "en": "Brackets, then × and ÷, then + and −.",
+        "as": "বন্ধনী, তাৰ পিছত × আৰু ÷, তাৰ পিছত + আৰু −।"
+       },
+       "slipTrap": {
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      },
+      {
+       "q": {
+        "en": "Tap each step in the right order.",
+        "as": "প্ৰতিটো খোজ শুদ্ধ ক্ৰমত টিপা।"
+       },
+       "widget": {
+        "kind": "order",
+        "expr": "(9 + 3) ÷ 4 + 2 × 5"
+       },
+       "target": 13,
+       "answerText": {
+        "en": "The answer is 13",
+        "as": "উত্তৰ 13"
+       },
+       "why": {
+        "en": "Brackets, then × and ÷, then + and −.",
+        "as": "বন্ধনী, তাৰ পিছত × আৰু ÷, তাৰ পিছত + আৰু −।"
+       },
+       "slipTrap": {
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      },
+      {
+       "q": {
+        "en": "Tap each step in the right order.",
+        "as": "প্ৰতিটো খোজ শুদ্ধ ক্ৰমত টিপা।"
+       },
+       "widget": {
+        "kind": "order",
+        "expr": "20 − 12 ÷ (1 + 3) × 2"
+       },
+       "target": 14,
+       "answerText": {
+        "en": "The answer is 14",
+        "as": "উত্তৰ 14"
+       },
+       "why": {
+        "en": "Brackets, then × and ÷, then + and −.",
+        "as": "বন্ধনী, তাৰ পিছত × আৰু ÷, তাৰ পিছত + আৰু −।"
+       },
+       "slipTrap": {
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      },
+      {
+       "q": {
+        "en": "Tap each step in the right order.",
+        "as": "প্ৰতিটো খোজ শুদ্ধ ক্ৰমত টিপা।"
+       },
+       "widget": {
+        "kind": "order",
+        "expr": "6 × {2 + (9 − 5)}"
+       },
+       "target": 36,
+       "answerText": {
+        "en": "The answer is 36",
+        "as": "উত্তৰ 36"
+       },
+       "why": {
+        "en": "Brackets, then × and ÷, then + and −.",
+        "as": "বন্ধনী, তাৰ পিছত × আৰু ÷, তাৰ পিছত + আৰু −।"
+       },
+       "slipTrap": {
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u1.q2",
+     "type": "solve",
+     "skill": "s-bodmas",
+     "q": {
+      "en": "Work out $7 + 3 \\times 4$",
+      "as": "$7 + 3 \\times 4$ৰ মান উলিওৱা"
+     },
+     "answer": "19",
+     "why": {
+      "en": "× and ÷ come before + and −.",
+      "as": "+ আৰু −ৰ আগতে × আৰু ÷।"
+     },
+     "traps": [
+      {
+       "ans": "40",
+       "tag": "m-bodmas-lr",
+       "why": {
+        "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+        "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Work out $7 + 3 \\times 4$",
+        "as": "$7 + 3 \\times 4$ৰ মান উলিওৱা"
+       },
+       "answer": "19",
+       "why": {
+        "en": "× and ÷ come before + and −.",
+        "as": "+ আৰু −ৰ আগতে × আৰু ÷।"
+       },
+       "traps": [
+        {
+         "ans": "40",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $20 - 12 \\div 4$",
+        "as": "$20 - 12 \\div 4$ৰ মান উলিওৱা"
+       },
+       "answer": "17",
+       "why": {
+        "en": "× and ÷ come before + and −.",
+        "as": "+ আৰু −ৰ আগতে × আৰু ÷।"
+       },
+       "traps": [
+        {
+         "ans": "2",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $15 - 3 \\times 2$",
+        "as": "$15 - 3 \\times 2$ৰ মান উলিওৱা"
+       },
+       "answer": "9",
+       "why": {
+        "en": "× and ÷ come before + and −.",
+        "as": "+ আৰু −ৰ আগতে × আৰু ÷।"
+       },
+       "traps": [
+        {
+         "ans": "24",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $6 + 18 \\div 3$",
+        "as": "$6 + 18 \\div 3$ৰ মান উলিওৱা"
+       },
+       "answer": "12",
+       "why": {
+        "en": "× and ÷ come before + and −.",
+        "as": "+ আৰু −ৰ আগতে × আৰু ÷।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.u1.q3",
+     "type": "tf",
+     "skill": "s-bodmas",
+     "s": {
+      "en": "8 ÷ 2 × 4 = 1",
+      "as": "8 ÷ 2 × 4 = 1"
+     },
+     "answer": false,
+     "why": {
+      "en": "÷ and × share a level, so go from the left: 4 × 4 = 16.",
+      "as": "÷ আৰু × একে স্তৰৰ, সেয়ে বাওঁৰ পৰা: 4 × 4 = 16।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-bodmas-div",
+       "why": {
+        "en": "× does not outrank ÷. Whichever comes first from the left goes first.",
+        "as": "× ÷তকৈ ওপৰত নহয়। বাওঁৰ পৰা যিটো আগত সেইটো আগতে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u1.q4",
+     "type": "order",
+     "skill": "s-bodmas",
+     "q": {
+      "en": "Put the steps in order for 3 + 4 × (6 − 2)",
+      "as": "3 + 4 × (6 − 2)ৰ খোজবোৰ ক্ৰমত সজোৱা"
+     },
+     "items": [
+      {
+       "en": "6 − 2 = 4",
+       "as": "6 − 2 = 4"
+      },
+      {
+       "en": "4 × 4 = 16",
+       "as": "4 × 4 = 16"
+      },
+      {
+       "en": "3 + 16 = 19",
+       "as": "3 + 16 = 19"
+      }
+     ],
+     "why": {
+      "en": "Bracket, then multiply, then add.",
+      "as": "বন্ধনী, পূৰণ, তাৰ পিছত যোগ।"
+     }
+    },
+    {
+     "id": "m4.u1.q5",
+     "type": "match",
+     "skill": "s-bodmas",
+     "q": {
+      "en": "Brackets change the value. Match each one",
+      "as": "বন্ধনীয়ে মান সলনি কৰে। প্ৰতিটো মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2 + 3 × 4",
+        "as": "2 + 3 × 4"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       }
+      ],
+      [
+       {
+        "en": "(2 + 3) × 4",
+        "as": "(2 + 3) × 4"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       }
+      ],
+      [
+       {
+        "en": "2 × 3 + 4",
+        "as": "2 × 3 + 4"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      [
+       {
+        "en": "2 × (3 + 5)",
+        "as": "2 × (3 + 5)"
+       },
+       {
+        "en": "16",
+        "as": "16"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Same numbers, different answers: order is part of the meaning.",
+      "as": "একে সংখ্যা, বেলেগ উত্তৰ: ক্ৰমো অৰ্থৰ অংশ।"
+     }
+    },
+    {
+     "id": "m4.u1.q6",
+     "type": "solve",
+     "skill": "s-bodmas",
+     "q": {
+      "en": "Work out $\\frac{1}{2} + \\frac{1}{3} \\times 6$",
+      "as": "$\\frac{1}{2} + \\frac{1}{3} \\times 6$ৰ মান উলিওৱা"
+     },
+     "answer": "5/2",
+     "why": {
+      "en": "Multiply first: $\\frac{1}{3} \\times 6 = 2$. Then add.",
+      "as": "প্ৰথমে পূৰণ: $\\frac{1}{3} \\times 6 = 2$। তাৰ পিছত যোগ।"
+     },
+     "traps": [
+      {
+       "ans": "5",
+       "tag": "m-bodmas-lr",
+       "why": {
+        "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+        "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Work out $\\frac{1}{2} + \\frac{1}{3} \\times 6$",
+        "as": "$\\frac{1}{2} + \\frac{1}{3} \\times 6$ৰ মান উলিওৱা"
+       },
+       "answer": "5/2",
+       "why": {
+        "en": "Multiply first: $\\frac{1}{3} \\times 6 = 2$. Then add.",
+        "as": "প্ৰথমে পূৰণ: $\\frac{1}{3} \\times 6 = 2$। তাৰ পিছত যোগ।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $\\frac{1}{4} + \\frac{2}{3} \\times 3$",
+        "as": "$\\frac{1}{4} + \\frac{2}{3} \\times 3$ৰ মান উলিওৱা"
+       },
+       "answer": "9/4",
+       "why": {
+        "en": "Multiply first: $\\frac{2}{3} \\times 3 = 2$. Then add.",
+        "as": "প্ৰথমে পূৰণ: $\\frac{2}{3} \\times 3 = 2$। তাৰ পিছত যোগ।"
+       },
+       "traps": [
+        {
+         "ans": "11/4",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $\\frac{1}{3} + \\frac{3}{4} \\times 8$",
+        "as": "$\\frac{1}{3} + \\frac{3}{4} \\times 8$ৰ মান উলিওৱা"
+       },
+       "answer": "19/3",
+       "why": {
+        "en": "Multiply first: $\\frac{3}{4} \\times 8 = 6$. Then add.",
+        "as": "প্ৰথমে পূৰণ: $\\frac{3}{4} \\times 8 = 6$। তাৰ পিছত যোগ।"
+       },
+       "traps": [
+        {
+         "ans": "26/3",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+          "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Squares you can see",
+    "as": "দেখিব পৰা বৰ্গ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "$n^2$ is the area of a square of side n; $\\sqrt{n}$ is the side.",
+     "as": "$n^2$ হৈছে n বাহুৰ বৰ্গৰ কালি; $\\sqrt{n}$ হৈছে বাহু।"
+    },
+    {
+     "en": "Each square is the one before plus the next odd number.",
+     "as": "প্ৰতিটো বৰ্গ আগৰটো যোগ পৰৱৰ্তী অযুগ্ম সংখ্যা।"
+    },
+    {
+     "en": "A perfect square has every prime in pairs.",
+     "as": "পূৰ্ণবৰ্গত প্ৰতিটো মৌলিক যোৰাত থাকে।"
+    },
+    {
+     "en": "To make a perfect square, multiply by the primes with no partner.",
+     "as": "পূৰ্ণবৰ্গ কৰিবলৈ সংগী নথকা মৌলিকেৰে পূৰণ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m4.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "A root is a side",
+      "as": "মূল মানে বাহু"
+     },
+     "text": [
+      {
+       "en": "$\\sqrt{144}$ asks one thing: what side gives a square of area 144?",
+       "as": "$\\sqrt{144}$ এটাই সোধে: কোন বাহুৱে 144 কালিৰ বৰ্গ দিয়ে?"
+      }
+     ],
+     "widget": {
+      "kind": "square",
+      "area": 144,
+      "side": 5
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide until the area is 144.",
+        "as": "কালি 144 নোহোৱালৈ টানা।"
+       },
+       "goal": {
+        "side": 12
+       },
+       "then": {
+        "en": "Side 12, so $\\sqrt{144} = 12$. A root undoes a square.",
+        "as": "বাহু 12, সেয়ে $\\sqrt{144} = 12$। মূলে বৰ্গক ওভতায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Squares grow by odd numbers",
+      "as": "বৰ্গ অযুগ্ম সংখ্যাৰে বাঢ়ে"
+     },
+     "text": [
+      {
+       "en": "Going from one square to the next adds a gold L shape around two edges.",
+       "as": "এটা বৰ্গৰ পৰা পিছৰটোলৈ দুটা কাষত সোণালী L আকৃতি যোগ হয়।"
+      }
+     ],
+     "widget": {
+      "kind": "square",
+      "gnomon": true,
+      "side": 4,
+      "max": 10
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to side 5.",
+        "as": "বাহু 5 কৰা।"
+       },
+       "goal": {
+        "side": 5
+       },
+       "then": {
+        "en": "16 + 9 = 25. The L has 9 squares: 4, 4 and the corner.",
+        "as": "16 + 9 = 25। Lত 9টা বৰ্গ: 4, 4 আৰু চুক।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now slide to side 6.",
+        "as": "এতিয়া বাহু 6 কৰা।"
+       },
+       "goal": {
+        "side": 6
+       },
+       "then": {
+        "en": "25 + 11 = 36. So $6^2 - 5^2 = 11$, which is 6 + 5.",
+        "as": "25 + 11 = 36। সেয়ে $6^2 - 5^2 = 11$, অৰ্থাৎ 6 + 5।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.s3",
+     "type": "story",
+     "title": {
+      "en": "Every prime needs a partner",
+      "as": "প্ৰতিটো মৌলিকৰ সংগী লাগে"
+     },
+     "text": [
+      {
+       "en": "A square is side × side, so each prime appears an even number of times. Is 468 a perfect square?",
+       "as": "বৰ্গ মানে বাহু × বাহু, সেয়ে প্ৰতিটো মৌলিক যুগ্ম বাৰ থাকে। 468 পূৰ্ণবৰ্গ নেকি?"
+      }
+     ],
+     "widget": {
+      "kind": "pairs",
+      "n": 468
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap matching primes to pair them.",
+        "as": "একে মৌলিক টিপি যোৰা কৰা।"
+       },
+       "goal": {
+        "done": 1
+       },
+       "then": {
+        "en": "13 has no partner, so 468 is not a perfect square. Multiply by 13 and it is.",
+        "as": "13ৰ সংগী নাই, সেয়ে 468 পূৰ্ণবৰ্গ নহয়। 13ৰে পূৰণ কৰিলে হ'ব।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.q1",
+     "type": "explore",
+     "skill": "s-roots",
+     "q": {
+      "en": "Find $\\sqrt{169}$: slide until the area is 169.",
+      "as": "$\\sqrt{169}$ উলিওৱা: কালি 169 নোহোৱালৈ টানা।"
+     },
+     "widget": {
+      "kind": "square",
+      "area": 169
+     },
+     "target": 13,
+     "answerText": {
+      "en": "Side 13",
+      "as": "বাহু 13"
+     },
+     "why": {
+      "en": "13 × 13 = 169.",
+      "as": "13 × 13 = 169।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\sqrt{169}$: slide until the area is 169.",
+        "as": "$\\sqrt{169}$ উলিওৱা: কালি 169 নোহোৱালৈ টানা।"
+       },
+       "widget": {
+        "kind": "square",
+        "area": 169
+       },
+       "target": 13,
+       "answerText": {
+        "en": "Side 13",
+        "as": "বাহু 13"
+       },
+       "why": {
+        "en": "13 × 13 = 169.",
+        "as": "13 × 13 = 169।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{225}$: slide until the area is 225.",
+        "as": "$\\sqrt{225}$ উলিওৱা: কালি 225 নোহোৱালৈ টানা।"
+       },
+       "widget": {
+        "kind": "square",
+        "area": 225
+       },
+       "target": 15,
+       "answerText": {
+        "en": "Side 15",
+        "as": "বাহু 15"
+       },
+       "why": {
+        "en": "15 × 15 = 225.",
+        "as": "15 × 15 = 225।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{196}$: slide until the area is 196.",
+        "as": "$\\sqrt{196}$ উলিওৱা: কালি 196 নোহোৱালৈ টানা।"
+       },
+       "widget": {
+        "kind": "square",
+        "area": 196
+       },
+       "target": 14,
+       "answerText": {
+        "en": "Side 14",
+        "as": "বাহু 14"
+       },
+       "why": {
+        "en": "14 × 14 = 196.",
+        "as": "14 × 14 = 196।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{121}$: slide until the area is 121.",
+        "as": "$\\sqrt{121}$ উলিওৱা: কালি 121 নোহোৱালৈ টানা।"
+       },
+       "widget": {
+        "kind": "square",
+        "area": 121
+       },
+       "target": 11,
+       "answerText": {
+        "en": "Side 11",
+        "as": "বাহু 11"
+       },
+       "why": {
+        "en": "11 × 11 = 121.",
+        "as": "11 × 11 = 121।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.q2",
+     "type": "solve",
+     "skill": "s-roots",
+     "hints": [
+      {
+       "en": "Square both, add, then take the root.",
+       "as": "দুয়োটা বৰ্গ কৰি যোগ কৰা, তাৰ পিছত মূল লোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find $\\sqrt{6^2 + 8^2}$",
+      "as": "$\\sqrt{6^2 + 8^2}$ উলিওৱা"
+     },
+     "answer": "10",
+     "why": {
+      "en": "36 + 64 = 100, whose root is 10.",
+      "as": "36 + 64 = 100, ইয়াৰ মূল 10।"
+     },
+     "traps": [
+      {
+       "ans": "14",
+       "tag": "m-root-add",
+       "why": {
+        "en": "A root does not split across adding. Add inside first, then take the root.",
+        "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\sqrt{6^2 + 8^2}$",
+        "as": "$\\sqrt{6^2 + 8^2}$ উলিওৱা"
+       },
+       "answer": "10",
+       "why": {
+        "en": "36 + 64 = 100, whose root is 10.",
+        "as": "36 + 64 = 100, ইয়াৰ মূল 10।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "m-root-add",
+         "why": {
+          "en": "A root does not split across adding. Add inside first, then take the root.",
+          "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{5^2 + 12^2}$",
+        "as": "$\\sqrt{5^2 + 12^2}$ উলিওৱা"
+       },
+       "answer": "13",
+       "why": {
+        "en": "25 + 144 = 169, whose root is 13.",
+        "as": "25 + 144 = 169, ইয়াৰ মূল 13।"
+       },
+       "traps": [
+        {
+         "ans": "17",
+         "tag": "m-root-add",
+         "why": {
+          "en": "A root does not split across adding. Add inside first, then take the root.",
+          "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{9^2 + 12^2}$",
+        "as": "$\\sqrt{9^2 + 12^2}$ উলিওৱা"
+       },
+       "answer": "15",
+       "why": {
+        "en": "81 + 144 = 225, whose root is 15.",
+        "as": "81 + 144 = 225, ইয়াৰ মূল 15।"
+       },
+       "traps": [
+        {
+         "ans": "21",
+         "tag": "m-root-add",
+         "why": {
+          "en": "A root does not split across adding. Add inside first, then take the root.",
+          "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{8^2 + 15^2}$",
+        "as": "$\\sqrt{8^2 + 15^2}$ উলিওৱা"
+       },
+       "answer": "17",
+       "why": {
+        "en": "64 + 225 = 289, whose root is 17.",
+        "as": "64 + 225 = 289, ইয়াৰ মূল 17।"
+       },
+       "traps": [
+        {
+         "ans": "23",
+         "tag": "m-root-add",
+         "why": {
+          "en": "A root does not split across adding. Add inside first, then take the root.",
+          "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.q3",
+     "type": "tf",
+     "skill": "s-roots",
+     "s": {
+      "en": "$\\sqrt{9 + 16} = \\sqrt{9} + \\sqrt{16}$",
+      "as": "$\\sqrt{9 + 16} = \\sqrt{9} + \\sqrt{16}$"
+     },
+     "answer": false,
+     "why": {
+      "en": "$\\sqrt{25} = 5$, but 3 + 4 = 7.",
+      "as": "$\\sqrt{25} = 5$, কিন্তু 3 + 4 = 7।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-root-add",
+       "why": {
+        "en": "A root does not split across adding. Add inside first, then take the root.",
+        "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.q4",
+     "type": "explore",
+     "skill": "s-perfect",
+     "q": {
+      "en": "Pair the primes of 882. What is the least number to multiply by to make a perfect square?",
+      "as": "882ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+     },
+     "widget": {
+      "kind": "pairs",
+      "n": 882
+     },
+     "target": 2,
+     "answerText": {
+      "en": "Multiply by 2",
+      "as": "2ৰে পূৰণ"
+     },
+     "why": {
+      "en": "The leftover primes multiply to 2.",
+      "as": "বাকী থকা মৌলিকৰ পূৰণফল 2।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Pair the primes of 882. What is the least number to multiply by to make a perfect square?",
+        "as": "882ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 882
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Multiply by 2",
+        "as": "2ৰে পূৰণ"
+       },
+       "why": {
+        "en": "The leftover primes multiply to 2.",
+        "as": "বাকী থকা মৌলিকৰ পূৰণফল 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "Pair the primes of 180. What is the least number to multiply by to make a perfect square?",
+        "as": "180ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 180
+       },
+       "target": 5,
+       "answerText": {
+        "en": "Multiply by 5",
+        "as": "5ৰে পূৰণ"
+       },
+       "why": {
+        "en": "The leftover primes multiply to 5.",
+        "as": "বাকী থকা মৌলিকৰ পূৰণফল 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "Pair the primes of 72. What is the least number to multiply by to make a perfect square?",
+        "as": "72ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 72
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Multiply by 2",
+        "as": "2ৰে পূৰণ"
+       },
+       "why": {
+        "en": "The leftover primes multiply to 2.",
+        "as": "বাকী থকা মৌলিকৰ পূৰণফল 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "Pair the primes of 300. What is the least number to multiply by to make a perfect square?",
+        "as": "300ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 300
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Multiply by 3",
+        "as": "3ৰে পূৰণ"
+       },
+       "why": {
+        "en": "The leftover primes multiply to 3.",
+        "as": "বাকী থকা মৌলিকৰ পূৰণফল 3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.q5",
+     "type": "solve",
+     "skill": "s-perfect",
+     "hints": [
+      {
+       "en": "Peel it into primes and look for singles.",
+       "as": "মৌলিকলৈ ভাঙি অকলশৰীয়াবোৰ বিচাৰা।"
+      }
+     ],
+     "q": {
+      "en": "Find the least number that multiplies 98 to a perfect square.",
+      "as": "98ক পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু পূৰক উলিওৱা।"
+     },
+     "answer": "2",
+     "why": {
+      "en": "98 × 2 = 196 = 14 × 14.",
+      "as": "98 × 2 = 196 = 14 × 14।"
+     },
+     "traps": [
+      {
+       "ans": "98",
+       "tag": "m-pair-all",
+       "why": {
+        "en": "Multiplying by the number itself works, but you only need the primes with no partner.",
+        "as": "নিজেৰে পূৰণ কৰিলেও হয়, কিন্তু কেৱল সংগী নথকা মৌলিক লাগে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the least number that multiplies 98 to a perfect square.",
+        "as": "98ক পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু পূৰক উলিওৱা।"
+       },
+       "answer": "2",
+       "why": {
+        "en": "98 × 2 = 196 = 14 × 14.",
+        "as": "98 × 2 = 196 = 14 × 14।"
+       },
+       "traps": [
+        {
+         "ans": "98",
+         "tag": "m-pair-all",
+         "why": {
+          "en": "Multiplying by the number itself works, but you only need the primes with no partner.",
+          "as": "নিজেৰে পূৰণ কৰিলেও হয়, কিন্তু কেৱল সংগী নথকা মৌলিক লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the least number that multiplies 128 to a perfect square.",
+        "as": "128ক পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু পূৰক উলিওৱা।"
+       },
+       "answer": "2",
+       "why": {
+        "en": "128 × 2 = 256 = 16 × 16.",
+        "as": "128 × 2 = 256 = 16 × 16।"
+       },
+       "traps": [
+        {
+         "ans": "128",
+         "tag": "m-pair-all",
+         "why": {
+          "en": "Multiplying by the number itself works, but you only need the primes with no partner.",
+          "as": "নিজেৰে পূৰণ কৰিলেও হয়, কিন্তু কেৱল সংগী নথকা মৌলিক লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the least number that multiplies 405 to a perfect square.",
+        "as": "405ক পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু পূৰক উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "405 × 5 = 2025 = 45 × 45.",
+        "as": "405 × 5 = 2025 = 45 × 45।"
+       },
+       "traps": [
+        {
+         "ans": "405",
+         "tag": "m-pair-all",
+         "why": {
+          "en": "Multiplying by the number itself works, but you only need the primes with no partner.",
+          "as": "নিজেৰে পূৰণ কৰিলেও হয়, কিন্তু কেৱল সংগী নথকা মৌলিক লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the least number that multiplies 75 to a perfect square.",
+        "as": "75ক পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু পূৰক উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "75 × 3 = 225 = 15 × 15.",
+        "as": "75 × 3 = 225 = 15 × 15।"
+       },
+       "traps": [
+        {
+         "ans": "75",
+         "tag": "m-pair-all",
+         "why": {
+          "en": "Multiplying by the number itself works, but you only need the primes with no partner.",
+          "as": "নিজেৰে পূৰণ কৰিলেও হয়, কিন্তু কেৱল সংগী নথকা মৌলিক লাগে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.u2.q6",
+     "type": "tf",
+     "skill": "s-perfect",
+     "s": {
+      "en": "No perfect square ends in 2, 3, 7 or 8.",
+      "as": "কোনো পূৰ্ণবৰ্গ 2, 3, 7 বা 8ত শেষ নহয়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Squares of the digits 0 to 9 end only in 0, 1, 4, 5, 6 or 9.",
+      "as": "0ৰ পৰা 9লৈ অংকৰ বৰ্গৰ শেষত কেৱল 0, 1, 4, 5, 6 বা 9।"
+     }
+    },
+    {
+     "id": "m4.u2.q7",
+     "type": "match",
+     "skill": "s-roots",
+     "q": {
+      "en": "Match each number to its square",
+      "as": "প্ৰতিটো সংখ্যাক বৰ্গৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "11",
+        "as": "11"
+       },
+       {
+        "en": "121",
+        "as": "121"
+       }
+      ],
+      [
+       {
+        "en": "13",
+        "as": "13"
+       },
+       {
+        "en": "169",
+        "as": "169"
+       }
+      ],
+      [
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "225",
+        "as": "225"
+       }
+      ],
+      [
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "625",
+        "as": "625"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Squares to 25 repay memorising: they appear everywhere.",
+      "as": "25লৈ বৰ্গ মুখস্থ কৰা লাভজনক: সকলোতে ওলায়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Patterns that save time",
+    "as": "সময় বচোৱা আৰ্হি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "$a^2 - b^2 = (a + b)(a - b)$.",
+     "as": "$a^2 - b^2 = (a + b)(a - b)$।"
+    },
+    {
+     "en": "So 53 × 47 is $50^2 - 3^2$.",
+     "as": "সেয়ে 53 × 47 হৈছে $50^2 - 3^2$।"
+    },
+    {
+     "en": "$(a + b)^2 = a^2 + 2ab + b^2$: do not forget the 2ab.",
+     "as": "$(a + b)^2 = a^2 + 2ab + b^2$: 2ab নাপাহৰিবা।"
+    },
+    {
+     "en": "$(a + b)^2 - (a - b)^2 = 4ab$.",
+     "as": "$(a + b)^2 - (a - b)^2 = 4ab$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m4.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "A square with a bite out",
+      "as": "চুক কটা বৰ্গ"
+     },
+     "text": [
+      {
+       "en": "Take $7^2$ and cut out a $3^2$ corner. What is left can be rearranged.",
+       "as": "$7^2$ৰ পৰা $3^2$ চুক কাটা। বাকী অংশ আকৌ সজাব পাৰি।"
+      }
+     ],
+     "widget": {
+      "kind": "diffsq",
+      "a": 7,
+      "b": 3
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide the gold strip.",
+        "as": "সোণালী পট্টী সৰোৱা।"
+       },
+       "goal": {
+        "moved": 1
+       },
+       "then": {
+        "en": "The same area is now a rectangle, 10 by 4. So $7^2 - 3^2 = (7 + 3)(7 - 3)$.",
+        "as": "একে কালি এতিয়া 10 বাই 4 আয়ত। সেয়ে $7^2 - 3^2 = (7 + 3)(7 - 3)$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Either side of a round number",
+      "as": "ঘূৰণীয়া সংখ্যাৰ দুয়োকাষে"
+     },
+     "text": [
+      {
+       "en": "When two numbers sit equally either side of a round number, the pattern does the work.",
+       "as": "দুটা সংখ্যা ঘূৰণীয়া সংখ্যাৰ দুয়োকাষে সমান দূৰত্বত থাকিলে আৰ্হিয়েই কাম কৰে।"
+      },
+      {
+       "en": "$53 \\times 47$ becomes $2500 - 9$.",
+       "as": "$53 \\times 47$ হয় $2500 - 9$।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$53 = 50 + 3$",
+        "as": "$53 = 50 + 3$"
+       },
+       {
+        "en": "$47 = 50 - 3$",
+        "as": "$47 = 50 - 3$"
+       },
+       {
+        "en": "$50^2 - 3^2 = 2491$",
+        "as": "$50^2 - 3^2 = 2491$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m4.u3.q1",
+     "type": "solve",
+     "skill": "s-ident",
+     "hints": [
+      {
+       "en": "Find the round number in the middle.",
+       "as": "মাজৰ ঘূৰণীয়া সংখ্যাটো বিচাৰা।"
+      }
+     ],
+     "q": {
+      "en": "Work out 53 × 47 quickly.",
+      "as": "53 × 47 সোনকালে উলিওৱা।"
+     },
+     "answer": "2491",
+     "why": {
+      "en": "$50^2 - 3^2 = 2500 - 9$.",
+      "as": "$50^2 - 3^2 = 2500 - 9$।"
+     },
+     "traps": [
+      {
+       "ans": "2500",
+       "tag": "m-square-spread",
+       "why": {
+        "en": "You have 50². The 3² still has to come off.",
+        "as": "তোমাৰ 50² হ'ল। 3² এতিয়াও বাদ দিব লাগিব।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Work out 53 × 47 quickly.",
+        "as": "53 × 47 সোনকালে উলিওৱা।"
+       },
+       "answer": "2491",
+       "why": {
+        "en": "$50^2 - 3^2 = 2500 - 9$.",
+        "as": "$50^2 - 3^2 = 2500 - 9$।"
+       },
+       "traps": [
+        {
+         "ans": "2500",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "You have 50². The 3² still has to come off.",
+          "as": "তোমাৰ 50² হ'ল। 3² এতিয়াও বাদ দিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out 42 × 38 quickly.",
+        "as": "42 × 38 সোনকালে উলিওৱা।"
+       },
+       "answer": "1596",
+       "why": {
+        "en": "$40^2 - 2^2 = 1600 - 4$.",
+        "as": "$40^2 - 2^2 = 1600 - 4$।"
+       },
+       "traps": [
+        {
+         "ans": "1600",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "You have 40². The 2² still has to come off.",
+          "as": "তোমাৰ 40² হ'ল। 2² এতিয়াও বাদ দিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out 74 × 66 quickly.",
+        "as": "74 × 66 সোনকালে উলিওৱা।"
+       },
+       "answer": "4884",
+       "why": {
+        "en": "$70^2 - 4^2 = 4900 - 16$.",
+        "as": "$70^2 - 4^2 = 4900 - 16$।"
+       },
+       "traps": [
+        {
+         "ans": "4900",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "You have 70². The 4² still has to come off.",
+          "as": "তোমাৰ 70² হ'ল। 4² এতিয়াও বাদ দিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out 103 × 97 quickly.",
+        "as": "103 × 97 সোনকালে উলিওৱা।"
+       },
+       "answer": "9991",
+       "why": {
+        "en": "$100^2 - 3^2 = 10000 - 9$.",
+        "as": "$100^2 - 3^2 = 10000 - 9$।"
+       },
+       "traps": [
+        {
+         "ans": "10000",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "You have 100². The 3² still has to come off.",
+          "as": "তোমাৰ 100² হ'ল। 3² এতিয়াও বাদ দিব লাগিব।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.u3.q2",
+     "type": "stepwise",
+     "skill": "s-ident",
+     "q": {
+      "en": "Work out $63^2 - 37^2$ without squaring.",
+      "as": "বৰ্গ নকৰাকৈ $63^2 - 37^2$ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Add the two numbers",
+        "as": "দুয়োটা যোগ কৰা"
+       },
+       "options": [
+        {
+         "en": "26",
+         "as": "26"
+        },
+        {
+         "en": "100",
+         "as": "100"
+        },
+        {
+         "en": "2331",
+         "as": "2331"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "This is the rectangle's long side.",
+        "as": "এয়া আয়তৰ দীঘল বাহু।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Subtract them",
+        "as": "বিয়োগ কৰা"
+       },
+       "options": [
+        {
+         "en": "26",
+         "as": "26"
+        },
+        {
+         "en": "100",
+         "as": "100"
+        },
+        {
+         "en": "37",
+         "as": "37"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "This is the short side.",
+        "as": "এয়া চুটি বাহু।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Multiply",
+        "as": "পূৰণ কৰা"
+       },
+       "options": [
+        {
+         "en": "2600",
+         "as": "2600"
+        },
+        {
+         "en": "126",
+         "as": "126"
+        },
+        {
+         "en": "676",
+         "as": "676"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Long side × short side.",
+        "as": "দীঘল × চুটি।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Round numbers appear, and the squaring disappears.",
+      "as": "ঘূৰণীয়া সংখ্যা ওলায়, বৰ্গ নোহোৱা হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Work out $63^2 - 37^2$ without squaring.",
+        "as": "বৰ্গ নকৰাকৈ $63^2 - 37^2$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the two numbers",
+          "as": "দুয়োটা যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "26",
+           "as": "26"
+          },
+          {
+           "en": "100",
+           "as": "100"
+          },
+          {
+           "en": "2331",
+           "as": "2331"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "This is the rectangle's long side.",
+          "as": "এয়া আয়তৰ দীঘল বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Subtract them",
+          "as": "বিয়োগ কৰা"
+         },
+         "options": [
+          {
+           "en": "26",
+           "as": "26"
+          },
+          {
+           "en": "100",
+           "as": "100"
+          },
+          {
+           "en": "37",
+           "as": "37"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "This is the short side.",
+          "as": "এয়া চুটি বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Multiply",
+          "as": "পূৰণ কৰা"
+         },
+         "options": [
+          {
+           "en": "2600",
+           "as": "2600"
+          },
+          {
+           "en": "126",
+           "as": "126"
+          },
+          {
+           "en": "676",
+           "as": "676"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Long side × short side.",
+          "as": "দীঘল × চুটি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Round numbers appear, and the squaring disappears.",
+        "as": "ঘূৰণীয়া সংখ্যা ওলায়, বৰ্গ নোহোৱা হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Work out $75^2 - 25^2$ without squaring.",
+        "as": "বৰ্গ নকৰাকৈ $75^2 - 25^2$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the two numbers",
+          "as": "দুয়োটা যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "100",
+           "as": "100"
+          },
+          {
+           "en": "50",
+           "as": "50"
+          },
+          {
+           "en": "1875",
+           "as": "1875"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "This is the rectangle's long side.",
+          "as": "এয়া আয়তৰ দীঘল বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Subtract them",
+          "as": "বিয়োগ কৰা"
+         },
+         "options": [
+          {
+           "en": "100",
+           "as": "100"
+          },
+          {
+           "en": "50",
+           "as": "50"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "This is the short side.",
+          "as": "এয়া চুটি বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Multiply",
+          "as": "পূৰণ কৰা"
+         },
+         "options": [
+          {
+           "en": "2500",
+           "as": "2500"
+          },
+          {
+           "en": "5000",
+           "as": "5000"
+          },
+          {
+           "en": "150",
+           "as": "150"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Long side × short side.",
+          "as": "দীঘল × চুটি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Round numbers appear, and the squaring disappears.",
+        "as": "ঘূৰণীয়া সংখ্যা ওলায়, বৰ্গ নোহোৱা হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Work out $88^2 - 12^2$ without squaring.",
+        "as": "বৰ্গ নকৰাকৈ $88^2 - 12^2$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the two numbers",
+          "as": "দুয়োটা যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "1056",
+           "as": "1056"
+          },
+          {
+           "en": "100",
+           "as": "100"
+          },
+          {
+           "en": "76",
+           "as": "76"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "This is the rectangle's long side.",
+          "as": "এয়া আয়তৰ দীঘল বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Subtract them",
+          "as": "বিয়োগ কৰা"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "76",
+           "as": "76"
+          },
+          {
+           "en": "100",
+           "as": "100"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "This is the short side.",
+          "as": "এয়া চুটি বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Multiply",
+          "as": "পূৰণ কৰা"
+         },
+         "options": [
+          {
+           "en": "5776",
+           "as": "5776"
+          },
+          {
+           "en": "176",
+           "as": "176"
+          },
+          {
+           "en": "7600",
+           "as": "7600"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Long side × short side.",
+          "as": "দীঘল × চুটি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Round numbers appear, and the squaring disappears.",
+        "as": "ঘূৰণীয়া সংখ্যা ওলায়, বৰ্গ নোহোৱা হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u3.q3",
+     "type": "tf",
+     "skill": "s-ident",
+     "s": {
+      "en": "$(a + b)^2 = a^2 + b^2$",
+      "as": "$(a + b)^2 = a^2 + b^2$"
+     },
+     "answer": false,
+     "why": {
+      "en": "A square of side a + b also holds two a × b rectangles. Try 3 and 4: 49 is not 25.",
+      "as": "a + b বাহুৰ বৰ্গত দুটা a × b আয়তো থাকে। 3 আৰু 4 লোৱা: 49, 25 নহয়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-square-spread",
+       "why": {
+        "en": "You dropped the 2ab: the two rectangles between the squares.",
+        "as": "তুমি 2ab এৰিলা: বৰ্গৰ মাজৰ দুটা আয়ত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.u3.q4",
+     "type": "solve",
+     "skill": "s-ident",
+     "q": {
+      "en": "Find $(7 + 3)^2 - (7 - 3)^2$",
+      "as": "$(7 + 3)^2 - (7 - 3)^2$ উলিওৱা"
+     },
+     "answer": "84",
+     "why": {
+      "en": "It is always 4ab: 4 × 7 × 3.",
+      "as": "ই সদায় 4ab: 4 × 7 × 3।"
+     },
+     "traps": [
+      {
+       "ans": "42",
+       "tag": "m-square-spread",
+       "why": {
+        "en": "Each square holds 2ab with opposite signs, so together they make 4ab.",
+        "as": "প্ৰতিটো বৰ্গত বিপৰীত চিনৰ 2ab, একেলগে 4ab।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find $(7 + 3)^2 - (7 - 3)^2$",
+        "as": "$(7 + 3)^2 - (7 - 3)^2$ উলিওৱা"
+       },
+       "answer": "84",
+       "why": {
+        "en": "It is always 4ab: 4 × 7 × 3.",
+        "as": "ই সদায় 4ab: 4 × 7 × 3।"
+       },
+       "traps": [
+        {
+         "ans": "42",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "Each square holds 2ab with opposite signs, so together they make 4ab.",
+          "as": "প্ৰতিটো বৰ্গত বিপৰীত চিনৰ 2ab, একেলগে 4ab।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $(12 + 5)^2 - (12 - 5)^2$",
+        "as": "$(12 + 5)^2 - (12 - 5)^2$ উলিওৱা"
+       },
+       "answer": "240",
+       "why": {
+        "en": "It is always 4ab: 4 × 12 × 5.",
+        "as": "ই সদায় 4ab: 4 × 12 × 5।"
+       },
+       "traps": [
+        {
+         "ans": "120",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "Each square holds 2ab with opposite signs, so together they make 4ab.",
+          "as": "প্ৰতিটো বৰ্গত বিপৰীত চিনৰ 2ab, একেলগে 4ab।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $(6 + 5)^2 - (6 - 5)^2$",
+        "as": "$(6 + 5)^2 - (6 - 5)^2$ উলিওৱা"
+       },
+       "answer": "120",
+       "why": {
+        "en": "It is always 4ab: 4 × 6 × 5.",
+        "as": "ই সদায় 4ab: 4 × 6 × 5।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-square-spread",
+         "why": {
+          "en": "Each square holds 2ab with opposite signs, so together they make 4ab.",
+          "as": "প্ৰতিটো বৰ্গত বিপৰীত চিনৰ 2ab, একেলগে 4ab।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.u3.q5",
+     "type": "match",
+     "skill": "s-ident",
+     "q": {
+      "en": "Match each pattern",
+      "as": "প্ৰতিটো আৰ্হি মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$(a + b)^2$",
+        "as": "$(a + b)^2$"
+       },
+       {
+        "en": "$a^2 + 2ab + b^2$",
+        "as": "$a^2 + 2ab + b^2$"
+       }
+      ],
+      [
+       {
+        "en": "$(a - b)^2$",
+        "as": "$(a - b)^2$"
+       },
+       {
+        "en": "$a^2 - 2ab + b^2$",
+        "as": "$a^2 - 2ab + b^2$"
+       }
+      ],
+      [
+       {
+        "en": "$a^2 - b^2$",
+        "as": "$a^2 - b^2$"
+       },
+       {
+        "en": "$(a + b)(a - b)$",
+        "as": "$(a + b)(a - b)$"
+       }
+      ],
+      [
+       {
+        "en": "$(a + b)^2 - (a - b)^2$",
+        "as": "$(a + b)^2 - (a - b)^2$"
+       },
+       {
+        "en": "$4ab$",
+        "as": "$4ab$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Exams use these to hide a quick answer.",
+      "as": "পৰীক্ষাত চুটি উত্তৰ লুকুৱাবলৈ এইবোৰ ব্যৱহাৰ হয়।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Simplification test",
+   "as": "সৰলীকৰণ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m4.t.q1",
+    "type": "mcq",
+    "skill": "s-bodmas",
+    "q": {
+     "en": "$5 + (6 \\div 2) \\times 4$ equals",
+     "as": "$5 + (6 \\div 2) \\times 4$ৰ মান"
+    },
+    "why": {
+     "en": "Brackets, then × and ÷, then + and −.",
+     "as": "বন্ধনী, × আৰু ÷, তাৰ পিছত + আৰু −।"
+    },
+    "options": [
+     {
+      "en": "44",
+      "as": "44"
+     },
+     {
+      "en": "17",
+      "as": "17"
+     },
+     {
+      "en": "19",
+      "as": "19"
+     },
+     {
+      "en": "22",
+      "as": "22"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-bodmas-lr",
+      "why": {
+       "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+       "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "$5 + (6 \\div 2) \\times 4$ equals",
+       "as": "$5 + (6 \\div 2) \\times 4$ৰ মান"
+      },
+      "why": {
+       "en": "Brackets, then × and ÷, then + and −.",
+       "as": "বন্ধনী, × আৰু ÷, তাৰ পিছত + আৰু −।"
+      },
+      "options": [
+       {
+        "en": "44",
+        "as": "44"
+       },
+       {
+        "en": "17",
+        "as": "17"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       },
+       {
+        "en": "22",
+        "as": "22"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$(15 - 5) \\div 5 + 3 \\times 3$ equals",
+       "as": "$(15 - 5) \\div 5 + 3 \\times 3$ৰ মান"
+      },
+      "why": {
+       "en": "Brackets, then × and ÷, then + and −.",
+       "as": "বন্ধনী, × আৰু ÷, তাৰ পিছত + আৰু −।"
+      },
+      "options": [
+       {
+        "en": "13",
+        "as": "13"
+       },
+       {
+        "en": "11",
+        "as": "11"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "16",
+        "as": "16"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$4 + 9 \\div 3 \\times 2$ equals",
+       "as": "$4 + 9 \\div 3 \\times 2$ৰ মান"
+      },
+      "why": {
+       "en": "Brackets, then × and ÷, then + and −.",
+       "as": "বন্ধনী, × আৰু ÷, তাৰ পিছত + আৰু −।"
+      },
+      "options": [
+       {
+        "en": "9",
+        "as": "9"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-bodmas-lr",
+        "why": {
+         "en": "Reading left to right ignores the order. Multiply and divide before you add or subtract.",
+         "as": "বাওঁৰ পৰা সোঁলৈ পঢ়িলে ক্ৰম ভাঙে। যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m4.t.q2",
+    "type": "mcq",
+    "skill": "s-roots",
+    "q": {
+     "en": "$\\sqrt{625}$ equals",
+     "as": "$\\sqrt{625}$ৰ মান"
+    },
+    "why": {
+     "en": "It is the side whose square is that area.",
+     "as": "যি বাহুৰ বৰ্গ সেই কালি।"
+    },
+    "options": [
+     {
+      "en": "24",
+      "as": "24"
+     },
+     {
+      "en": "31",
+      "as": "31"
+     },
+     {
+      "en": "25",
+      "as": "25"
+     },
+     {
+      "en": "27",
+      "as": "27"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-root-add",
+      "why": {
+       "en": "A root does not split across adding. Add inside first, then take the root.",
+       "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "$\\sqrt{625}$ equals",
+       "as": "$\\sqrt{625}$ৰ মান"
+      },
+      "why": {
+       "en": "It is the side whose square is that area.",
+       "as": "যি বাহুৰ বৰ্গ সেই কালি।"
+      },
+      "options": [
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "31",
+        "as": "31"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "27",
+        "as": "27"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-root-add",
+        "why": {
+         "en": "A root does not split across adding. Add inside first, then take the root.",
+         "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\sqrt{841}$ equals",
+       "as": "$\\sqrt{841}$ৰ মান"
+      },
+      "why": {
+       "en": "It is the side whose square is that area.",
+       "as": "যি বাহুৰ বৰ্গ সেই কালি।"
+      },
+      "options": [
+       {
+        "en": "41",
+        "as": "41"
+       },
+       {
+        "en": "28",
+        "as": "28"
+       },
+       {
+        "en": "29",
+        "as": "29"
+       },
+       {
+        "en": "31",
+        "as": "31"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-root-add",
+        "why": {
+         "en": "A root does not split across adding. Add inside first, then take the root.",
+         "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\sqrt{1681}$ equals",
+       "as": "$\\sqrt{1681}$ৰ মান"
+      },
+      "why": {
+       "en": "It is the side whose square is that area.",
+       "as": "যি বাহুৰ বৰ্গ সেই কালি।"
+      },
+      "options": [
+       {
+        "en": "49",
+        "as": "49"
+       },
+       {
+        "en": "41",
+        "as": "41"
+       },
+       {
+        "en": "43",
+        "as": "43"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-root-add",
+        "why": {
+         "en": "A root does not split across adding. Add inside first, then take the root.",
+         "as": "যোগৰ ওপৰত মূল নাভাঙে। প্ৰথমে ভিতৰত যোগ কৰি মূল লোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m4.t.q3",
+    "type": "mcq",
+    "skill": "s-perfect",
+    "q": {
+     "en": "The least number that multiplies 245 to a perfect square is",
+     "as": "245ক পূৰ্ণবৰ্গ কৰা আটাইতকৈ সৰু পূৰক"
+    },
+    "why": {
+     "en": "Pair the primes and multiply by what is left.",
+     "as": "মৌলিক যোৰা কৰি বাকীৰে পূৰণ কৰা।"
+    },
+    "options": [
+     {
+      "en": "6",
+      "as": "6"
+     },
+     {
+      "en": "5",
+      "as": "5"
+     },
+     {
+      "en": "245",
+      "as": "245"
+     },
+     {
+      "en": "10",
+      "as": "10"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-pair-all",
+      "why": {
+       "en": "Only the primes with no partner are needed.",
+       "as": "কেৱল সংগী নথকা মৌলিক লাগে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The least number that multiplies 245 to a perfect square is",
+       "as": "245ক পূৰ্ণবৰ্গ কৰা আটাইতকৈ সৰু পূৰক"
+      },
+      "why": {
+       "en": "Pair the primes and multiply by what is left.",
+       "as": "মৌলিক যোৰা কৰি বাকীৰে পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "6",
+        "as": "6"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "245",
+        "as": "245"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-pair-all",
+        "why": {
+         "en": "Only the primes with no partner are needed.",
+         "as": "কেৱল সংগী নথকা মৌলিক লাগে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The least number that multiplies 1008 to a perfect square is",
+       "as": "1008ক পূৰ্ণবৰ্গ কৰা আটাইতকৈ সৰু পূৰক"
+      },
+      "why": {
+       "en": "Pair the primes and multiply by what is left.",
+       "as": "মৌলিক যোৰা কৰি বাকীৰে পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "8",
+        "as": "8"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       },
+       {
+        "en": "1008",
+        "as": "1008"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-pair-all",
+        "why": {
+         "en": "Only the primes with no partner are needed.",
+         "as": "কেৱল সংগী নথকা মৌলিক লাগে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The least number that multiplies 192 to a perfect square is",
+       "as": "192ক পূৰ্ণবৰ্গ কৰা আটাইতকৈ সৰু পূৰক"
+      },
+      "why": {
+       "en": "Pair the primes and multiply by what is left.",
+       "as": "মৌলিক যোৰা কৰি বাকীৰে পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "6",
+        "as": "6"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       },
+       {
+        "en": "192",
+        "as": "192"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-pair-all",
+        "why": {
+         "en": "Only the primes with no partner are needed.",
+         "as": "কেৱল সংগী নথকা মৌলিক লাগে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m4.t.q4",
+    "type": "mcq",
+    "skill": "s-ident",
+    "q": {
+     "en": "$62 \\times 58$ equals",
+     "as": "$62 \\times 58$ৰ মান"
+    },
+    "why": {
+     "en": "$(a + b)(a - b) = a^2 - b^2$.",
+     "as": "$(a + b)(a - b) = a^2 - b^2$।"
+    },
+    "options": [
+     {
+      "en": "3596",
+      "as": "3596"
+     },
+     {
+      "en": "3600",
+      "as": "3600"
+     },
+     {
+      "en": "3598",
+      "as": "3598"
+     },
+     {
+      "en": "3604",
+      "as": "3604"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-square-spread",
+      "why": {
+       "en": "Take off the square of the gap.",
+       "as": "ব্যৱধানৰ বৰ্গ বাদ দিয়া।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "$62 \\times 58$ equals",
+       "as": "$62 \\times 58$ৰ মান"
+      },
+      "why": {
+       "en": "$(a + b)(a - b) = a^2 - b^2$.",
+       "as": "$(a + b)(a - b) = a^2 - b^2$।"
+      },
+      "options": [
+       {
+        "en": "3596",
+        "as": "3596"
+       },
+       {
+        "en": "3600",
+        "as": "3600"
+       },
+       {
+        "en": "3598",
+        "as": "3598"
+       },
+       {
+        "en": "3604",
+        "as": "3604"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-square-spread",
+        "why": {
+         "en": "Take off the square of the gap.",
+         "as": "ব্যৱধানৰ বৰ্গ বাদ দিয়া।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$34 \\times 26$ equals",
+       "as": "$34 \\times 26$ৰ মান"
+      },
+      "why": {
+       "en": "$(a + b)(a - b) = a^2 - b^2$.",
+       "as": "$(a + b)(a - b) = a^2 - b^2$।"
+      },
+      "options": [
+       {
+        "en": "916",
+        "as": "916"
+       },
+       {
+        "en": "900",
+        "as": "900"
+       },
+       {
+        "en": "896",
+        "as": "896"
+       },
+       {
+        "en": "884",
+        "as": "884"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-square-spread",
+        "why": {
+         "en": "Take off the square of the gap.",
+         "as": "ব্যৱধানৰ বৰ্গ বাদ দিয়া।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$85 \\times 75$ equals",
+       "as": "$85 \\times 75$ৰ মান"
+      },
+      "why": {
+       "en": "$(a + b)(a - b) = a^2 - b^2$.",
+       "as": "$(a + b)(a - b) = a^2 - b^2$।"
+      },
+      "options": [
+       {
+        "en": "6425",
+        "as": "6425"
+       },
+       {
+        "en": "6375",
+        "as": "6375"
+       },
+       {
+        "en": "6395",
+        "as": "6395"
+       },
+       {
+        "en": "6400",
+        "as": "6400"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-square-spread",
+        "why": {
+         "en": "Take off the square of the gap.",
+         "as": "ব্যৱধানৰ বৰ্গ বাদ দিয়া।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m4.t.q5",
+    "type": "solve",
+    "skill": "s-bodmas",
+    "q": {
+     "en": "Work out $5 + \\{6 \\div (5 - 3)\\}$",
+     "as": "$5 + \\{6 \\div (5 - 3)\\}$ৰ মান উলিওৱা"
+    },
+    "answer": "8",
+    "why": {
+     "en": "Work from the innermost bracket out.",
+     "as": "ভিতৰৰ বন্ধনীৰ পৰা বাহিৰলৈ কৰা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Work out $5 + \\{6 \\div (5 - 3)\\}$",
+       "as": "$5 + \\{6 \\div (5 - 3)\\}$ৰ মান উলিওৱা"
+      },
+      "answer": "8",
+      "why": {
+       "en": "Work from the innermost bracket out.",
+       "as": "ভিতৰৰ বন্ধনীৰ পৰা বাহিৰলৈ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "Work out $40 - \\{3 \\times (4 + 2)\\}$",
+       "as": "$40 - \\{3 \\times (4 + 2)\\}$ৰ মান উলিওৱা"
+      },
+      "answer": "22",
+      "why": {
+       "en": "Work from the innermost bracket out.",
+       "as": "ভিতৰৰ বন্ধনীৰ পৰা বাহিৰলৈ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "Work out $\\{(5 - 3) + (9 \\div 3)\\} \\times 4$",
+       "as": "$\\{(5 - 3) + (9 \\div 3)\\} \\times 4$ৰ মান উলিওৱা"
+      },
+      "answer": "20",
+      "why": {
+       "en": "Work from the innermost bracket out.",
+       "as": "ভিতৰৰ বন্ধনীৰ পৰা বাহিৰলৈ কৰা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
