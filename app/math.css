@@ -223,8 +223,8 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .stc { position: absolute; width: 44px; height: 44px; padding: 0; transform: translate(-50%, -50%); }
 .stl { padding: 13px 0; }
 .ody { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin-bottom: 10px; }
-.ody span { text-align: center; padding: 8px 0; border-radius: 8px; background: #EEF4FB; font-size: 12px; font-weight: 800; }
-.ody span.on { background: #D8930B; color: #fff; }
+.ody > span { text-align: center; padding: 8px 0; border-radius: 8px; background: #EEF4FB; font-size: 12px; font-weight: 800; }
+.ody > span.on { background: #D8930B; color: #fff; }
 .hnd { display: block; width: 100%; max-width: 230px; margin: 0 auto; }
 .fgs { display: flex; justify-content: center; gap: 6px; margin-bottom: 10px; }
 .fgs span { width: 23%; max-width: 76px; aspect-ratio: 1; border: 1px solid #C9D8E8; border-radius: 8px; background: #fff; display: flex; align-items: center; justify-content: center; }

@@ -59,7 +59,7 @@ A lesson or story `map` may set `"base": "india"`; the default is `"assam"`. See
 
 ## Reasoning additions
 
-The draft Reasoning course adds the scenes `shift`, `walk`, `venn` and `setpick`, and `"input": "letters"` on a `solve` step. See [REASONING-COURSE.md](REASONING-COURSE.md).
+The Reasoning course adds the scenes in `app/reasonstage.js`, listed in `WIDGET_KINDS` in `scripts/build.py`, and `"input": "letters"` on a `solve` step. See [REASONING-COURSE.md](REASONING-COURSE.md).
 
 ## Learning loop (in `app/engine.js`)
 

@@ -1,36 +1,31 @@
 # Reasoning course plan
 
-Status: pilot built on 2026-11-06, hidden as a draft. Learners have not tried it. Lesson
-format and permanent-id rules in [LESSON-DESIGN.md](LESSON-DESIGN.md) still apply.
+Status: all 23 lessons built on 2026-11-06 on the `reasoning-course` branch and listed in
+the catalog. Not deployed. Learners have not tried it. Lesson format and permanent-id rules
+in [LESSON-DESIGN.md](LESSON-DESIGN.md) still apply.
 
-## Pilot state
-
-Open it at `index.html?course=reasoning`. It is not listed in the catalog, so the
-Aptitude subject still shows Coming soon.
+## Course state
 
 | | Measured |
 |---|---|
-| Lessons | 3: `rs-06-coding`, `rs-09-direction`, `rs-14-venn` |
-| Units, not counting tests | 14 |
-| Skill-linked exercises | 90, in 261 versions counting variants |
-| Skills, mistake patterns, placement questions | 14, 12, 8 |
+| Lessons | 23 of 23 |
+| Units, not counting tests | 109 |
+| Skill-linked exercises | 689, with 1,506 versions counting variants and placement |
+| Skills, mistake patterns, placement questions | 109, 41, 28 |
 | Answers recomputed by `check_reasoning.py` from the question text | 64 versions |
 
-**Played in the browser at 375px:** every unit of all three lessons in English or
-Assamese with deliberate mistakes and retries, all three lesson tests, placement
-without retries, and one repair drill. A Coding test scoring 3 of 6 stayed unpassed after
-correct retries. A Mathematics and a history unit still play normally.
+**Played in the browser at 375px:** all 109 units and all 23 lesson tests, alternating
+English and Assamese, with deliberate mistakes and retries: no stuck steps, errors or
+horizontal overflow. Placement ran 28 questions without retries. Every scene was viewed
+on screen. A Coding test scoring 3 of 6 stayed unpassed after correct retries.
 
 **Not checked yet:** real learners, enjoyment or 7-day recall, a fluent Assamese reader,
-and touch input on a real phone. Browser play drove the scenes
-through test hooks, so a real drag on the wheel still needs a person. Answers outside the
-64 recomputed versions rest on the generator or on hand-written keys. No past-paper
-question text matched, and capital-letter words shared with past papers were replaced.
-
-The learner should stop memorising question types and start seeing the rule behind a
-puzzle. Then they should solve a new puzzle with the same rule days later. It follows
-the [Mathematics](MATHEMATICS-COURSE.md) loop: placement, lesson, skill map, repair and
-delayed recall with fresh puzzles.
+and touch input on a real phone. Browser play drove the scenes through test hooks, so a
+real drag still needs a person. Only 64 answers are recomputed independently; the others depend
+on the generator or on hand-written keys. Hand-checking already found one wrong logic
+puzzle and two wrong kinship words, so a person should sample the rest, especially
+the hand-written lessons 4, 5, 10, 15, 16, 22 and 23. The learner pilot in the build order
+was skipped at the owner's direction.
 
 ## Why this course
 
@@ -152,8 +147,8 @@ Reasoning has no history to frame, so the action must be the reasoning itself. T
 | `reflect` | 18 | Flip a figure across an axis, or fold and unfold a sheet |
 | `die` | 19 | Roll a die and unfold it to find the opposite faces |
 
-Build scenes only for the lessons in progress. Lessons 4, 5, 7, 8, 16, 17, 20 and 21 can
-start with existing step types.
+Also built during the course: `seats`, `figpick`, `dicenet`, `numgrid` and `bars`. In place
+of the planned `reflect` and `die` scenes, figures use `figpick` and `dicenet`.
 
 ## Engine work
 
@@ -165,8 +160,8 @@ Findings from reading the code:
 | Typed answers | The `solve` keypad and its check accepted numbers only | **Done:** `input: "letters"` on a `solve` step |
 | Exercise-book look | Was hard-coded for Mathematics | **Done:** `AXOM.notebook(cid)` in `app/common.js`. No course field was needed, so Mathematics JSON stayed unchanged |
 | "Paintings" footer | Was hidden for Mathematics only | **Done:** uses `AXOM.notebook` |
-| New scenes | `shift`, `walk`, `venn` and `setpick` are built | **Done** for the pilot, in `app/reasonstage.js` |
-| Widget list | `WIDGET_KINDS` is fixed in `scripts/build.py` | **Done** for the pilot. Add each new scene |
+| New scenes | All scenes are built | **Done**, in `app/reasonstage.js` |
+| Widget list | `WIDGET_KINDS` is fixed in `scripts/build.py` | **Done.** Add each new scene |
 | Checks | `scripts/check_math.py` covers Mathematics files only | **Done:** `scripts/check_reasoning.py`, called by `scripts/verify.sh` |
 | Browser helper | `scripts/autoplay.js` plays known step types | **Done** |
 
@@ -203,18 +198,17 @@ independently, require variants on generated steps, and reject duplicate options
 2. **Prepare the engine.** Done, with Mathematics content unchanged.
 3. **Pilot in draft.** Done: `rs-06-coding`, `rs-09-direction` and `rs-14-venn`, using
    `draft: true` with the catalog entry left as coming soon.
-4. **Check the pilot.** Browser play is done. **Next:** try it with learners and compare
-   completion, enjoyment and recall after 7 days.
-5. **Finish Parts 1 to 3.** These cover 303 of the 423 past questions.
-6. **Add Part 4.** Figure generation and review take the most work per question.
-7. **Add Part 5.** Lessons 22 and 23 are APSC only, so they can wait if time is short.
-8. **Add placement and release.** Add about one probe per lesson, then switch the catalog
-   entry on.
+4. **Check the pilot.** Browser play is done. Learner testing was skipped at the owner's
+   direction. **Still worth doing:** compare completion, enjoyment and 7-day recall.
+5. **Finish Parts 1 to 3.** Done. These cover 303 of the 423 past questions.
+6. **Add Part 4.** Done.
+7. **Add Part 5.** Done.
+8. **Add placement and release.** Placement and the catalog entry are done. Release is not.
 
 ## Release gates
 
-- Mathematics is released first, because this course depends on its skill system.
-  `firestore.rules` must be deployed before that release.
+- Mathematics is already merged to `main` on GitHub, and this course depends on its skill
+  system. Confirm `firestore.rules` is deployed before releasing either.
 - `scripts/verify.sh` and `scripts/audit_lessons.py` pass.
 - Every lesson plays in English and Assamese, including mistakes, retries and the 80%
   first-attempt gate.
@@ -228,6 +222,6 @@ independently, require variants on generated steps, and reject duplicate options
 
 **Speed rounds.** Exams are timed, and this course does not train speed yet. An optional
 timed round could open once a skill is strong. Its time should be stored separately and
-never update mastery. Design it after the pilot shows how long learners take.
+never update mastery. Design it after learner testing shows how long people take.
 
-**Revisit after the pilot:** whether Parts 4 and 5 still deserve their planned size.
+**Revisit after learner testing:** whether Parts 4 and 5 deserve their size.
