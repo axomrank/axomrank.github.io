@@ -1,0 +1,1252 @@
+{
+  "id": "sc-01-motion",
+  "course": "general-science",
+  "no": 1,
+  "version": 1,
+  "king": {
+    "en": "Motion and force",
+    "as": "গতি আৰু বল"
+  },
+  "reign": {
+    "en": "Physics",
+    "as": "পদাৰ্থ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science textbooks, Classes 8 and 9: force, motion, gravitation",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for laws of motion and gravity. Passages still to be read."
+    },
+    {
+      "title": "BIPM: The International System of Units",
+      "url": "https://www.bipm.org/en/measurement-units",
+      "used_for": "Lead for SI units. Passage still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "A world in agreed units",
+        "as": "সন্মত এককৰ পৃথিৱী"
+      },
+      "icon": "walk",
+      "learned": [
+        {
+          "en": "The SI base units include the metre, kilogram, second and ampere.",
+          "as": "SI মূল এককৰ ভিতৰত মিটাৰ, কিলোগ্ৰাম, ছেকেণ্ড আৰু এম্পিয়াৰ আছে।"
+        },
+        {
+          "en": "Kelvin measures temperature; the candela measures luminous intensity; the mole measures amount of substance.",
+          "as": "কেলভিনে উষ্ণতা, কেণ্ডেলাই দীপন তীব্ৰতা আৰু ম'লে পদাৰ্থৰ পৰিমাণ জোখে।"
+        },
+        {
+          "en": "Force is measured in newtons and pressure in pascals.",
+          "as": "বল নিউটনত আৰু চাপ পাস্কেলত জোখা হয়।"
+        },
+        {
+          "en": "Energy is measured in joules and power in watts.",
+          "as": "শক্তি জুলত আৰু ক্ষমতা ৱাটত জোখা হয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Whose foot is a foot?",
+            "as": "কাৰ ভৰি এক ফুট?"
+          },
+          "text": [
+            {
+              "en": "Old measures used hands and feet, and those differ from person to person. Science needs units that mean the same everywhere.",
+              "as": "পুৰণি জোখত হাত আৰু ভৰি ব্যৱহাৰ হৈছিল, যি মানুহভেদে বেলেগ। বিজ্ঞানক সকলোতে একে অৰ্থৰ একক লাগে।"
+            },
+            {
+              "en": "The <mark>SI system</mark> has seven base units. Almost every other unit is built from them.",
+              "as": "<mark>SI পদ্ধতি</mark>ত সাতটা মূল একক আছে। প্ৰায় আন সকলো একক সেইবোৰৰ পৰা গঠিত।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Length · metre",
+                "as": "দৈৰ্ঘ্য · মিটাৰ"
+              },
+              {
+                "en": "Mass · kilogram",
+                "as": "ভৰ · কিলোগ্ৰাম"
+              },
+              {
+                "en": "Time · second",
+                "as": "সময় · ছেকেণ্ড"
+              },
+              {
+                "en": "Current · ampere",
+                "as": "প্ৰৱাহ · এম্পিয়াৰ"
+              }
+            ]
+          },
+          "id": "sc01.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What is the SI unit of temperature?",
+            "as": "উষ্ণতাৰ SI একক কি?"
+          },
+          "options": [
+            {
+              "en": "Celsius",
+              "as": "চেলছিয়াছ"
+            },
+            {
+              "en": "Kelvin",
+              "as": "কেলভিন"
+            },
+            {
+              "en": "Fahrenheit",
+              "as": "ফাৰেনহাইট"
+            },
+            {
+              "en": "Joule",
+              "as": "জুল"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Kelvin is the SI base unit; Celsius is common in daily life.",
+            "as": "কেলভিন SI মূল একক; দৈনন্দিন জীৱনত চেলছিয়াছ চলে।"
+          },
+          "guess": true,
+          "id": "sc01.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Units named after scientists",
+            "as": "বিজ্ঞানীৰ নামৰ একক"
+          },
+          "text": [
+            {
+              "en": "Combine base units and you get derived ones, many honouring scientists: <mark>newton</mark>, <mark>joule</mark>, <mark>watt</mark> and pascal.",
+              "as": "মূল একক মিলালে উৎপন্ন একক পোৱা যায়, বহুতৰ নাম বিজ্ঞানীৰ নামত: <mark>নিউটন</mark>, <mark>জুল</mark>, <mark>ৱাট</mark> আৰু পাস্কেল।"
+            },
+            {
+              "en": "Written as a unit, these names take a small letter: 5 newtons, shortened to 5 N.",
+              "as": "একক হিচাপে লিখিলে এই নাম সৰু আখৰেৰে লিখা হয়: 5 newtons, চমুকৈ 5 N।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Force · newton",
+                "as": "বল · নিউটন"
+              },
+              {
+                "en": "Energy · joule",
+                "as": "শক্তি · জুল"
+              },
+              {
+                "en": "Power · watt",
+                "as": "ক্ষমতা · ৱাট"
+              },
+              {
+                "en": "Pressure · pascal",
+                "as": "চাপ · পাস্কেল"
+              }
+            ]
+          },
+          "id": "sc01.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Force",
+                "as": "বল"
+              },
+              {
+                "en": "newton",
+                "as": "নিউটন"
+              }
+            ],
+            [
+              {
+                "en": "Energy",
+                "as": "শক্তি"
+              },
+              {
+                "en": "joule",
+                "as": "জুল"
+              }
+            ],
+            [
+              {
+                "en": "Power",
+                "as": "ক্ষমতা"
+              },
+              {
+                "en": "watt",
+                "as": "ৱাট"
+              }
+            ],
+            [
+              {
+                "en": "Pressure",
+                "as": "চাপ"
+              },
+              {
+                "en": "pascal",
+                "as": "পাস্কেল"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each quantity has one SI unit.",
+            "as": "প্ৰতিটো ৰাশিৰ এটা SI একক আছে।"
+          },
+          "id": "sc01.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The candela is a unit of luminous intensity.",
+            "as": "কেণ্ডেলা দীপন তীব্ৰতাৰ একক।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It is one of the seven SI base units.",
+            "as": "ই সাতটা SI মূল এককৰ এটা।"
+          },
+          "id": "sc01.u1.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "SI",
+              "unit",
+              "of",
+              "mass",
+              "is",
+              "the",
+              "gram."
+            ],
+            "as": [
+              "ভৰৰ",
+              "SI",
+              "একক",
+              "হ'ল",
+              "গ্ৰাম।"
+            ]
+          },
+          "wrong": {
+            "en": 7,
+            "as": 4
+          },
+          "fix": {
+            "en": "kilogram",
+            "as": "কিলোগ্ৰাম"
+          },
+          "answerText": {
+            "en": "gram",
+            "as": "গ্ৰাম"
+          },
+          "why": {
+            "en": "The kilogram is the base unit, not the gram.",
+            "as": "মূল একক কিলোগ্ৰাম, গ্ৰাম নহয়।"
+          },
+          "id": "sc01.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT an SI base unit?",
+            "as": "তলৰ কোনটো SI মূল একক নহয়?"
+          },
+          "options": [
+            {
+              "en": "Metre",
+              "as": "মিটাৰ"
+            },
+            {
+              "en": "Second",
+              "as": "ছেকেণ্ড"
+            },
+            {
+              "en": "Joule",
+              "as": "জুল"
+            },
+            {
+              "en": "Ampere",
+              "as": "এম্পিয়াৰ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "The joule is derived from base units.",
+            "as": "জুল মূল এককৰ পৰা উৎপন্ন।"
+          },
+          "id": "sc01.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Newton on a bus",
+        "as": "বাছত নিউটন"
+      },
+      "icon": "walk",
+      "learned": [
+        {
+          "en": "Speed tells how fast; velocity also tells the direction.",
+          "as": "দ্ৰুতিয়ে কিমান বেগী কয়; বেগে দিশো কয়।"
+        },
+        {
+          "en": "Inertia is the tendency to keep doing what you are doing.",
+          "as": "জড়তা হ'ল একে অৱস্থাত থকাৰ প্ৰৱণতা।"
+        },
+        {
+          "en": "Newton's second law: force equals mass times acceleration.",
+          "as": "নিউটনৰ দ্বিতীয় সূত্ৰ: বল = ভৰ × ত্বৰণ।"
+        },
+        {
+          "en": "Every action has an equal and opposite reaction.",
+          "as": "প্ৰতিটো ক্ৰিয়াৰ সমান আৰু বিপৰীত প্ৰতিক্ৰিয়া থাকে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why you lurch forward",
+            "as": "তুমি কিয় আগলৈ ঢলি পৰা"
+          },
+          "text": [
+            {
+              "en": "A bus brakes hard and you lurch forward. No one pushed you: your body simply kept moving. That is <mark>inertia</mark>.",
+              "as": "বাছে হঠাৎ ব্ৰেক মাৰিলে তুমি আগলৈ ঢলি পৰা। কোনেও ঠেলা নাই: তোমাৰ শৰীৰ চলি থাকিল। সেয়াই <mark>জড়তা</mark>।"
+            },
+            {
+              "en": "Newton's <mark>first law</mark> says an object keeps its state of rest or steady motion unless a force acts on it.",
+              "as": "নিউটনৰ <mark>প্ৰথম সূত্ৰ</mark> অনুসৰি বল প্ৰয়োগ নহ'লে বস্তুৱে স্থিৰ বা সমবেগী অৱস্থা ধৰি ৰাখে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "First law · inertia",
+                "as": "প্ৰথম সূত্ৰ · জড়তা"
+              },
+              {
+                "en": "Second law · F = ma",
+                "as": "দ্বিতীয় সূত্ৰ · F = ma"
+              },
+              {
+                "en": "Third law · action, reaction",
+                "as": "তৃতীয় সূত্ৰ · ক্ৰিয়া, প্ৰতিক্ৰিয়া"
+              }
+            ]
+          },
+          "id": "sc01.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Why does a gun recoil when fired?",
+            "as": "গুলি চলোৱাত বন্দুক কিয় পিছলৈ ধাক্কা দিয়ে?"
+          },
+          "options": [
+            {
+              "en": "Third law: reaction to the bullet",
+              "as": "তৃতীয় সূত্ৰ: গুলিৰ প্ৰতিক্ৰিয়া"
+            },
+            {
+              "en": "Friction in the barrel only",
+              "as": "কেৱল নলীৰ ঘৰ্ষণ"
+            },
+            {
+              "en": "Gravity pulls it back",
+              "as": "মাধ্যাকৰ্ষণে পিছলৈ টানে"
+            },
+            {
+              "en": "Sound pushes it",
+              "as": "শব্দই ঠেলে"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The gun pushes the bullet forward; the bullet pushes the gun back.",
+            "as": "বন্দুকে গুলিক আগলৈ ঠেলে; গুলিয়ে বন্দুকক পিছলৈ ঠেলে।"
+          },
+          "guess": true,
+          "id": "sc01.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Heavy cart, weak push",
+            "as": "গধুৰ ঠেলা, দুৰ্বল ঠেলা"
+          },
+          "text": [
+            {
+              "en": "A full cart speeds up slowly, an empty one quickly. <mark>F = ma</mark>: for one push, more mass means less acceleration.",
+              "as": "ভৰ্তি ঠেলা লাহে বেগ লয়, খালী ঠেলা সোনকালে। <mark>F = ma</mark>: একে ঠেলাত ভৰ বেছি হ'লে ত্বৰণ কম।"
+            },
+            {
+              "en": "A rocket shows the third law: gas is thrown downward, and the rocket rises in reaction.",
+              "as": "ৰকেটে তৃতীয় সূত্ৰ দেখুৱায়: গেছ তললৈ নিক্ষেপ হয়, প্ৰতিক্ৰিয়াত ৰকেট ওপৰলৈ উঠে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Scalar · size only: speed",
+                "as": "স্কেলাৰ · কেৱল মান: দ্ৰুতি"
+              },
+              {
+                "en": "Vector · size and direction: velocity",
+                "as": "ভেক্টৰ · মান আৰু দিশ: বেগ"
+              }
+            ]
+          },
+          "id": "sc01.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Lurching in a braking bus",
+                "as": "ব্ৰেকত বাছত ঢলি পৰা"
+              },
+              {
+                "en": "first law",
+                "as": "প্ৰথম সূত্ৰ"
+              }
+            ],
+            [
+              {
+                "en": "Pushing a full cart",
+                "as": "ভৰ্তি ঠেলা ঠেলা"
+              },
+              {
+                "en": "second law",
+                "as": "দ্বিতীয় সূত্ৰ"
+              }
+            ],
+            [
+              {
+                "en": "Rocket rising",
+                "as": "ৰকেট উঠা"
+              },
+              {
+                "en": "third law",
+                "as": "তৃতীয় সূত্ৰ"
+              }
+            ],
+            [
+              {
+                "en": "Speed with direction",
+                "as": "দিশসহ দ্ৰুতি"
+              },
+              {
+                "en": "velocity",
+                "as": "বেগ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Tie each everyday scene to its idea.",
+            "as": "প্ৰতিটো দৈনন্দিন দৃশ্য ইয়াৰ ধাৰণাৰ সৈতে বান্ধা।"
+          },
+          "id": "sc01.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A heavier object has more inertia.",
+            "as": "গধুৰ বস্তুৰ জড়তা বেছি।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Mass is the measure of inertia.",
+            "as": "ভৰেই জড়তাৰ জোখ।"
+          },
+          "id": "sc01.u2.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A car doing 60 km/h around a bend has steady speed but changing",
+            "as": "বেঁকাত ৬০ কিমি/ঘণ্টাত চলা গাড়ীৰ দ্ৰুতি একে, কিন্তু সলনি হয় ইয়াৰ"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "velocity",
+              "as": "বেগ"
+            },
+            {
+              "en": "mass",
+              "as": "ভৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Direction changes, so velocity changes.",
+            "as": "দিশ সলনি হয়, সেয়ে বেগ সলনি হয়।"
+          },
+          "id": "sc01.u2.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Action",
+              "and",
+              "reaction",
+              "act",
+              "on",
+              "the",
+              "same",
+              "object."
+            ],
+            "as": [
+              "ক্ৰিয়া",
+              "আৰু",
+              "প্ৰতিক্ৰিয়াই",
+              "একেটা",
+              "বস্তুৰ",
+              "ওপৰত",
+              "কাম",
+              "কৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 3
+          },
+          "fix": {
+            "en": "different",
+            "as": "বেলেগ"
+          },
+          "answerText": {
+            "en": "same",
+            "as": "একেটা"
+          },
+          "why": {
+            "en": "They act on two different objects, so they do not cancel out.",
+            "as": "সিহঁতে দুটা বেলেগ বস্তুৰ ওপৰত কাম কৰে, সেয়ে কাটি নাযায়।"
+          },
+          "id": "sc01.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Falling, floating and weighing",
+        "as": "পৰা, ওপঙা আৰু ওজন"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "Mass stays constant; weight depends on gravity.",
+          "as": "ভৰ একে থাকে; ওজন মাধ্যাকৰ্ষণৰ ওপৰত নিৰ্ভৰ কৰে।"
+        },
+        {
+          "en": "On Earth, g is about 9.8 m/s².",
+          "as": "পৃথিৱীত g প্ৰায় ৯.৮ মি/ছে²।"
+        },
+        {
+          "en": "Moon's gravity is about one-sixth of Earth's.",
+          "as": "চন্দ্ৰৰ মাধ্যাকৰ্ষণ পৃথিৱীৰ প্ৰায় ছয় ভাগৰ এভাগ।"
+        },
+        {
+          "en": "Archimedes: upthrust equals the weight of fluid displaced.",
+          "as": "আৰ্কিমিডিছ: উৰ্ধ্বঘাত অপসাৰিত তৰলৰ ওজনৰ সমান।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Same you, lighter Moon",
+            "as": "একেজন তুমি, পাতল চন্দ্ৰ"
+          },
+          "text": [
+            {
+              "en": "On the Moon you would weigh about <mark>one-sixth</mark> as much, yet your mass would not change. You would contain just as much of you.",
+              "as": "চন্দ্ৰত তোমাৰ ওজন প্ৰায় <mark>ছয় ভাগৰ এভাগ</mark> হ'ব, কিন্তু ভৰ সলনি নহ'ব। তোমাৰ শৰীৰৰ পদাৰ্থ একে থাকিব।"
+            },
+            {
+              "en": "<mark>Mass</mark> is how much matter you hold. <mark>Weight</mark> is the pull of gravity on it, measured in newtons.",
+              "as": "<mark>ভৰ</mark> হ'ল পদাৰ্থৰ পৰিমাণ। <mark>ওজন</mark> হ'ল তাৰ ওপৰত মাধ্যাকৰ্ষণৰ টান, যি নিউটনত জোখা হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Mass · kilogram, constant",
+                "as": "ভৰ · কিলোগ্ৰাম, স্থিৰ"
+              },
+              {
+                "en": "Weight · newton, varies",
+                "as": "ওজন · নিউটন, সলনি হয়"
+              }
+            ]
+          },
+          "id": "sc01.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Without air, which reaches the ground first: a coin or a feather?",
+            "as": "বায়ু নহ'লে কোনটো আগতে মাটিত পৰিব: মুদ্ৰা নে পাখি?"
+          },
+          "options": [
+            {
+              "en": "The coin",
+              "as": "মুদ্ৰা"
+            },
+            {
+              "en": "The feather",
+              "as": "পাখি"
+            },
+            {
+              "en": "Both together",
+              "as": "দুয়োটা একেলগে"
+            },
+            {
+              "en": "Neither falls",
+              "as": "কোনোটোৱে নপৰে"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Gravity accelerates both equally; only air resistance separates them.",
+            "as": "মাধ্যাকৰ্ষণে দুয়োটাকে সমান ত্বৰণ দিয়ে; বায়ুৰ বাধাইহে পাৰ্থক্য কৰে।"
+          },
+          "guess": true,
+          "id": "sc01.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Why an iron ship floats",
+            "as": "লোৰ জাহাজ কিয় ওপঙে"
+          },
+          "text": [
+            {
+              "en": "An iron nail sinks but an iron ship floats. The hollow hull pushes aside a large amount of water.",
+              "as": "লোৰ পেৰেক ডুবে, কিন্তু লোৰ জাহাজ ওপঙে। ফোঁপোলা খোলে বহুত পানী আঁতৰায়।"
+            },
+            {
+              "en": "<mark>Archimedes' principle</mark>: the upward push equals the weight of liquid displaced. If that matches the ship's weight, it floats.",
+              "as": "<mark>আৰ্কিমিডিছৰ সূত্ৰ</mark>: ওপৰলৈ হোৱা ঠেলা অপসাৰিত তৰলৰ ওজনৰ সমান। ই জাহাজৰ ওজনৰ সমান হ'লে জাহাজ ওপঙে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Hollow hull",
+                "as": "ফোঁপোলা খোল"
+              },
+              {
+                "en": "More water pushed aside",
+                "as": "অধিক পানী আঁতৰে"
+              },
+              {
+                "en": "Upthrust balances weight",
+                "as": "উৰ্ধ্বঘাতে ওজন সন্তুলন কৰে"
+              }
+            ]
+          },
+          "id": "sc01.u3.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Your mass on the Moon is one-sixth of your mass on Earth.",
+            "as": "চন্দ্ৰত তোমাৰ ভৰ পৃথিৱীৰ ভৰৰ ছয় ভাগৰ এভাগ।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Weight falls to about a sixth; mass stays the same.",
+            "as": "ওজনহে প্ৰায় ছয় ভাগৰ এভাগ হয়; ভৰ একে থাকে।"
+          },
+          "id": "sc01.u3.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Mass",
+                "as": "ভৰ"
+              },
+              {
+                "en": "same everywhere",
+                "as": "সকলোতে একে"
+              }
+            ],
+            [
+              {
+                "en": "Weight",
+                "as": "ওজন"
+              },
+              {
+                "en": "changes with gravity",
+                "as": "মাধ্যাকৰ্ষণৰ লগত সলনি হয়"
+              }
+            ],
+            [
+              {
+                "en": "Upthrust",
+                "as": "উৰ্ধ্বঘাত"
+              },
+              {
+                "en": "upward push of fluid",
+                "as": "তৰলৰ ওপৰলৈ ঠেলা"
+              }
+            ],
+            [
+              {
+                "en": "g on Earth",
+                "as": "পৃথিৱীৰ g"
+              },
+              {
+                "en": "about 9.8 m/s²",
+                "as": "প্ৰায় ৯.৮ মি/ছে²"
+              }
+            ]
+          ],
+          "why": {
+            "en": "These four ideas are often confused in exams.",
+            "as": "পৰীক্ষাত এই চাৰিটা ধাৰণা সঘনে সানমিহলি হয়।"
+          },
+          "id": "sc01.u3.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "It is easier to float in the sea because salt water is",
+            "as": "সাগৰত ওপঙিবলৈ সহজ কাৰণ নিমখীয়া পানী হ'ল"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "denser",
+              "as": "অধিক ঘন"
+            },
+            {
+              "en": "warmer",
+              "as": "অধিক উষ্ণ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Denser water gives more upthrust for the same volume displaced.",
+            "as": "ঘন পানীয়ে একে আয়তনত অধিক উৰ্ধ্বঘাত দিয়ে।"
+          },
+          "id": "sc01.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which does NOT depend on air resistance being present?",
+            "as": "তলৰ কোনটো বায়ুৰ বাধাৰ ওপৰত নিৰ্ভৰ নকৰে?"
+          },
+          "options": [
+            {
+              "en": "A parachute slowing",
+              "as": "পেৰাচুটৰ গতি কমা"
+            },
+            {
+              "en": "A feather drifting",
+              "as": "পাখি উৰি উৰি পৰা"
+            },
+            {
+              "en": "A ship floating",
+              "as": "জাহাজ ওপঙা"
+            },
+            {
+              "en": "A kite gliding",
+              "as": "চিলা উৰা"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "A ship relies on water's upthrust, not air.",
+            "as": "জাহাজ পানীৰ উৰ্ধ্বঘাতৰ ওপৰত নিৰ্ভৰ কৰে, বায়ুৰ নহয়।"
+          },
+          "id": "sc01.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Lift the world with a lever",
+        "as": "লিভাৰেৰে পৃথিৱী দাঙা"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "A lever has a fulcrum, an effort and a load.",
+          "as": "লিভাৰৰ আলম্ব, প্ৰযত্ন আৰু ভাৰ থাকে।"
+        },
+        {
+          "en": "First-class levers have the fulcrum in the middle: seesaw, scissors.",
+          "as": "প্ৰথম শ্ৰেণীৰ লিভাৰত আলম্ব মাজত: ঢেকীয়া খেল, কেঁচি।"
+        },
+        {
+          "en": "Second-class levers have the load in the middle: wheelbarrow, nutcracker.",
+          "as": "দ্বিতীয় শ্ৰেণীৰ লিভাৰত ভাৰ মাজত: ঠেলা গাড়ী, ৰতা ভঙা যন্ত্ৰ।"
+        },
+        {
+          "en": "Third-class levers have the effort in the middle: tweezers, forearm.",
+          "as": "তৃতীয় শ্ৰেণীৰ লিভাৰত প্ৰযত্ন মাজত: চিমটা, হাতৰ অগ্ৰবাহু।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Long handle, small push",
+            "as": "দীঘল হাতল, সৰু ঠেলা"
+          },
+          "text": [
+            {
+              "en": "Open a tin lid with a spoon: a little push on the long handle lifts the lid. A <mark>simple machine</mark> trades distance for force.",
+              "as": "চামুচেৰে টিনৰ ঢাকনি খোলা: দীঘল হাতলত সৰু ঠেলাই ঢাকনি দাঙে। <mark>সৰল যন্ত্ৰই</mark> দূৰত্বৰ বিনিময়ত বল দিয়ে।"
+            },
+            {
+              "en": "It saves effort, but it never creates energy. You push farther to lift less far.",
+              "as": "ই প্ৰযত্ন বচায়, কিন্তু শক্তি সৃষ্টি নকৰে। তুমি অধিক দূৰ ঠেলা, ভাৰ কম দূৰ উঠে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Effort",
+                "as": "প্ৰযত্ন"
+              },
+              {
+                "en": "Fulcrum",
+                "as": "আলম্ব"
+              },
+              {
+                "en": "Load",
+                "as": "ভাৰ"
+              }
+            ]
+          },
+          "id": "sc01.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which is a lever with the fulcrum in the middle?",
+            "as": "তলৰ কোনটোত আলম্ব মাজত থাকে?"
+          },
+          "options": [
+            {
+              "en": "Scissors",
+              "as": "কেঁচি"
+            },
+            {
+              "en": "Wheelbarrow",
+              "as": "ঠেলা গাড়ী"
+            },
+            {
+              "en": "Tweezers",
+              "as": "চিমটা"
+            },
+            {
+              "en": "Fishing rod",
+              "as": "বৰশীৰ দণ্ড"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Scissors pivot at the middle, like a seesaw.",
+            "as": "কেঁচি মাজত ঘূৰে, ঢেকীয়াৰ দৰে।"
+          },
+          "guess": true,
+          "id": "sc01.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Ask what sits in the middle",
+            "as": "মাজত কি আছে সোধা"
+          },
+          "text": [
+            {
+              "en": "Remember the order <b>F-L-E</b> for classes 1, 2, 3: the middle item is <mark>Fulcrum</mark>, <mark>Load</mark>, then <mark>Effort</mark>.",
+              "as": "১, ২, ৩ শ্ৰেণীৰ বাবে <b>F-L-E</b> মনত ৰাখা: মাজৰ অংশ <mark>আলম্ব</mark>, <mark>ভাৰ</mark>, তাৰ পিছত <mark>প্ৰযত্ন</mark>।"
+            },
+            {
+              "en": "Your forearm is class 3: the muscle pulls between elbow and hand. It gives up force to gain speed.",
+              "as": "তোমাৰ অগ্ৰবাহু তৃতীয় শ্ৰেণীৰ: পেশীয়ে কিলাকুটি আৰু হাতৰ মাজত টানে। ই বল এৰি বেগ পায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Class 1 · fulcrum in middle",
+                "as": "প্ৰথম · আলম্ব মাজত"
+              },
+              {
+                "en": "Class 2 · load in middle",
+                "as": "দ্বিতীয় · ভাৰ মাজত"
+              },
+              {
+                "en": "Class 3 · effort in middle",
+                "as": "তৃতীয় · প্ৰযত্ন মাজত"
+              }
+            ]
+          },
+          "id": "sc01.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Seesaw",
+                "as": "ঢেকীয়া খেল"
+              },
+              {
+                "en": "class 1",
+                "as": "প্ৰথম শ্ৰেণী"
+              }
+            ],
+            [
+              {
+                "en": "Wheelbarrow",
+                "as": "ঠেলা গাড়ী"
+              },
+              {
+                "en": "class 2",
+                "as": "দ্বিতীয় শ্ৰেণী"
+              }
+            ],
+            [
+              {
+                "en": "Tweezers",
+                "as": "চিমটা"
+              },
+              {
+                "en": "class 3",
+                "as": "তৃতীয় শ্ৰেণী"
+              }
+            ],
+            [
+              {
+                "en": "Ramp",
+                "as": "ঢাল"
+              },
+              {
+                "en": "inclined plane",
+                "as": "হেলনীয়া তল"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Find what sits in the middle.",
+            "as": "মাজত কি আছে বিচাৰা।"
+          },
+          "id": "sc01.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A simple machine reduces the work you must do.",
+            "as": "সৰল যন্ত্ৰই কৰিবলগীয়া কাম কমায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "It reduces force needed, not work: the distance grows.",
+            "as": "ই লগা বল কমায়, কাম নহয়: দূৰত্ব বাঢ়ে।"
+          },
+          "id": "sc01.u4.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one is NOT a class 1 lever?",
+            "as": "তলৰ কোনটো প্ৰথম শ্ৰেণীৰ লিভাৰ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Seesaw",
+              "as": "ঢেকীয়া খেল"
+            },
+            {
+              "en": "Scissors",
+              "as": "কেঁচি"
+            },
+            {
+              "en": "Wheelbarrow",
+              "as": "ঠেলা গাড়ী"
+            },
+            {
+              "en": "Crowbar on a pivot",
+              "as": "আলম্বত ৰখা শাবল"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "A wheelbarrow has the load in the middle: class 2.",
+            "as": "ঠেলা গাড়ীৰ ভাৰ মাজত: দ্বিতীয় শ্ৰেণী।"
+          },
+          "id": "sc01.u4.06"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the pivot of a lever.",
+            "as": "লিভাৰৰ ঘূৰ্ণন বিন্দুটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "F",
+              "U",
+              "L",
+              "C",
+              "R",
+              "U",
+              "M"
+            ],
+            "as": [
+              "আ",
+              "ল",
+              "ম্ব"
+            ]
+          },
+          "answerText": {
+            "en": "FULCRUM",
+            "as": "আলম্ব"
+          },
+          "why": {
+            "en": "The fulcrum is the point about which a lever turns.",
+            "as": "লিভাৰ যি বিন্দুত ঘূৰে সেয়াই আলম্ব।"
+          },
+          "id": "sc01.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Force and motion check",
+      "as": "বল আৰু গতিৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which is the unit of power?",
+          "as": "ক্ষমতাৰ একক কি?"
+        },
+        "options": [
+          {
+            "en": "Newton",
+            "as": "নিউটন"
+          },
+          {
+            "en": "Joule",
+            "as": "জুল"
+          },
+          {
+            "en": "Watt",
+            "as": "ৱাট"
+          },
+          {
+            "en": "Pascal",
+            "as": "পাস্কেল"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "One watt is one joule per second.",
+          "as": "প্ৰতি ছেকেণ্ডত এক জুল মানে এক ৱাট।"
+        },
+        "id": "sc01.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Weight is measured in newtons.",
+          "as": "ওজন নিউটনত জোখা হয়।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Weight is a force.",
+          "as": "ওজন এক বল।"
+        },
+        "id": "sc01.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Inertia",
+              "as": "জড়তা"
+            },
+            {
+              "en": "first law",
+              "as": "প্ৰথম সূত্ৰ"
+            }
+          ],
+          [
+            {
+              "en": "F = ma",
+              "as": "F = ma"
+            },
+            {
+              "en": "second law",
+              "as": "দ্বিতীয় সূত্ৰ"
+            }
+          ],
+          [
+            {
+              "en": "Upthrust",
+              "as": "উৰ্ধ্বঘাত"
+            },
+            {
+              "en": "Archimedes",
+              "as": "আৰ্কিমিডিছ"
+            }
+          ],
+          [
+            {
+              "en": "Nutcracker",
+              "as": "ৰতা ভঙা যন্ত্ৰ"
+            },
+            {
+              "en": "class 2 lever",
+              "as": "দ্বিতীয় শ্ৰেণীৰ লিভাৰ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Each idea links to one name.",
+          "as": "প্ৰতিটো ধাৰণা এটা নামৰ সৈতে জড়িত।"
+        },
+        "id": "sc01.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which quantity needs a direction?",
+          "as": "কোনটো ৰাশিৰ দিশ লাগে?"
+        },
+        "options": [
+          {
+            "en": "Mass",
+            "as": "ভৰ"
+          },
+          {
+            "en": "Velocity",
+            "as": "বেগ"
+          },
+          {
+            "en": "Time",
+            "as": "সময়"
+          },
+          {
+            "en": "Temperature",
+            "as": "উষ্ণতা"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Velocity is a vector.",
+          "as": "বেগ ভেক্টৰ ৰাশি।"
+        },
+        "id": "sc01.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order by lever class, 1 to 3.",
+          "as": "লিভাৰৰ শ্ৰেণী অনুসৰি ১ ৰ পৰা ৩ লৈ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Seesaw",
+            "as": "ঢেকীয়া খেল"
+          },
+          {
+            "en": "Wheelbarrow",
+            "as": "ঠেলা গাড়ী"
+          },
+          {
+            "en": "Tweezers",
+            "as": "চিমটা"
+          }
+        ],
+        "why": {
+          "en": "Fulcrum, load, then effort in the middle.",
+          "as": "মাজত আলম্ব, ভাৰ, তাৰ পিছত প্ৰযত্ন।"
+        },
+        "id": "sc01.test.05"
+      }
+    ]
+  }
+}

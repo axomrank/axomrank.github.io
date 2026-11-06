@@ -1,6 +1,6 @@
 # General Science and Environment course plan
 
-Status: private draft since 2026-11-06. Lessons 7, 8, 10, 11 and 12 exist; open
+Status: private draft since 2026-11-06. All 12 lessons exist; open
 `index.html?course=general-science` on the local server. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
@@ -78,3 +78,9 @@ than 12 months. That check also serves General Awareness.
 
 Build checks pass. Sources are read and recorded. Every changing figure has an `asOf` date.
 A subject reviewer checks facts, and a fluent reader checks technical Assamese terms.
+
+## Remaining before listing
+
+The course stays `draft` in its course file until these are settled: source passages read,
+subject review, Assamese review, and a question bank. To list it, add it to the `science`
+subject in `content/catalog.json`.

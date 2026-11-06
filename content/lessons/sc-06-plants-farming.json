@@ -1,0 +1,1305 @@
+{
+  "id": "sc-06-plants-farming",
+  "course": "general-science",
+  "no": 6,
+  "version": 1,
+  "king": {
+    "en": "Plants and farming",
+    "as": "উদ্ভিদ আৰু কৃষি"
+  },
+  "reign": {
+    "en": "Biology",
+    "as": "জীৱবিজ্ঞান"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science and Geography textbooks: photosynthesis, crop production",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for this lesson. Passages still to be read."
+    },
+    {
+      "title": "Central Silk Board, Government of India",
+      "url": "https://csb.gov.in/",
+      "used_for": "Lead for muga, eri and mulberry silk. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Food from light",
+        "as": "পোহৰৰ পৰা খাদ্য"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "Photosynthesis uses carbon dioxide, water and light to make glucose and oxygen.",
+          "as": "সালোক সংশ্লেষণে কাৰ্বন ডাই অক্সাইড, পানী আৰু পোহৰেৰে গ্লুক'জ আৰু অক্সিজেন গঢ়ে।"
+        },
+        {
+          "en": "Chlorophyll in chloroplasts absorbs light.",
+          "as": "ক্ল'ৰ'প্লাষ্টৰ ক্ল'ৰ'ফিলে পোহৰ শোষণ কৰে।"
+        },
+        {
+          "en": "Stomata on leaves let gases in and out.",
+          "as": "পাতৰ পত্ৰৰন্ধ্ৰই গেছ সোমাবলৈ আৰু ওলাবলৈ দিয়ে।"
+        },
+        {
+          "en": "Xylem carries water up; phloem carries food around the plant.",
+          "as": "জাইলেমে পানী ওপৰলৈ আৰু ফ্ল'য়েমে খাদ্য চাৰিওফালে নিয়ে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A tree built out of air",
+            "as": "বায়ুৰে গঢ়া গছ"
+          },
+          "text": [
+            {
+              "en": "A big tree's mass comes mostly from <mark>carbon dioxide</mark> in the air, not from the soil. Sunlight joins carbon with water to build sugar.",
+              "as": "ডাঙৰ গছৰ ভৰ বেছিভাগ বায়ুৰ <mark>কাৰ্বন ডাই অক্সাইড</mark>ৰ পৰা আহে, মাটিৰ পৰা নহয়। সূৰ্যৰ পোহৰে কাৰ্বন আৰু পানী যোগ কৰি চেনি গঢ়ে।"
+            },
+            {
+              "en": "Oxygen is released as a by-product. This process is <mark>photosynthesis</mark>.",
+              "as": "উপজাত হিচাপে অক্সিজেন ওলায়। এই প্ৰক্ৰিয়াই <mark>সালোক সংশ্লেষণ</mark>।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "CO₂ + water",
+                "as": "CO₂ + পানী"
+              },
+              {
+                "en": "Light + chlorophyll",
+                "as": "পোহৰ + ক্ল'ৰ'ফিল"
+              },
+              {
+                "en": "Glucose + oxygen",
+                "as": "গ্লুক'জ + অক্সিজেন"
+              }
+            ]
+          },
+          "id": "sc06.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which pigment makes leaves green?",
+            "as": "কোনটো ৰঞ্জকে পাত সেউজীয়া কৰে?"
+          },
+          "options": [
+            {
+              "en": "Haemoglobin",
+              "as": "হিম'গ্ল'বিন"
+            },
+            {
+              "en": "Melanin",
+              "as": "মেলানিন"
+            },
+            {
+              "en": "Chlorophyll",
+              "as": "ক্ল'ৰ'ফিল"
+            },
+            {
+              "en": "Keratin",
+              "as": "কেৰাটিন"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Chlorophyll absorbs red and blue light and reflects green.",
+            "as": "ক্ল'ৰ'ফিলে ৰঙা আৰু নীলা পোহৰ শোষে, সেউজীয়া ঘূৰাই দিয়ে।"
+          },
+          "guess": true,
+          "id": "sc06.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Pipes and pores",
+            "as": "নল আৰু ৰন্ধ্ৰ"
+          },
+          "text": [
+            {
+              "en": "Tiny pores called <mark>stomata</mark> let carbon dioxide in and water vapour out. That water loss is transpiration.",
+              "as": "<mark>পত্ৰৰন্ধ্ৰ</mark> নামৰ সৰু ৰন্ধ্ৰই কাৰ্বন ডাই অক্সাইড সোমাবলৈ আৰু জলীয় বাষ্প ওলাবলৈ দিয়ে। এই পানী হেৰুওৱা বাষ্পমোচন।"
+            },
+            {
+              "en": "<mark>Xylem</mark> lifts water from roots to leaves, and <mark>phloem</mark> carries sugar to where it is needed.",
+              "as": "<mark>জাইলেমে</mark> শিপাৰ পৰা পাতলৈ পানী নিয়ে, আৰু <mark>ফ্ল'য়েমে</mark> চেনি প্ৰয়োজনৰ ঠাইলৈ নিয়ে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Xylem · water up",
+                "as": "জাইলেম · পানী ওপৰলৈ"
+              },
+              {
+                "en": "Phloem · food around",
+                "as": "ফ্ল'য়েম · খাদ্য চাৰিওফালে"
+              },
+              {
+                "en": "Stomata · gas gates",
+                "as": "পত্ৰৰন্ধ্ৰ · গেছৰ দুৱাৰ"
+              }
+            ]
+          },
+          "id": "sc06.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Stomata",
+                "as": "পত্ৰৰন্ধ্ৰ"
+              },
+              {
+                "en": "leaf pores",
+                "as": "পাতৰ ৰন্ধ্ৰ"
+              }
+            ],
+            [
+              {
+                "en": "Xylem",
+                "as": "জাইলেম"
+              },
+              {
+                "en": "carries water",
+                "as": "পানী কঢ়িয়ায়"
+              }
+            ],
+            [
+              {
+                "en": "Phloem",
+                "as": "ফ্ল'য়েম"
+              },
+              {
+                "en": "carries sugar",
+                "as": "চেনি কঢ়িয়ায়"
+              }
+            ],
+            [
+              {
+                "en": "Transpiration",
+                "as": "বাষ্পমোচন"
+              },
+              {
+                "en": "water vapour loss",
+                "as": "জলীয় বাষ্প হেৰুওৱা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each plant part or process has one role.",
+            "as": "প্ৰতিটো অংশ বা প্ৰক্ৰিয়াৰ এটা ভূমিকা আছে।"
+          },
+          "id": "sc06.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Plants release oxygen during photosynthesis.",
+            "as": "সালোক সংশ্লেষণৰ সময়ত উদ্ভিদে অক্সিজেন এৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Oxygen comes from splitting water.",
+            "as": "পানী ভাঙি অক্সিজেন ওলায়।"
+          },
+          "id": "sc06.u1.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Phloem",
+              "carries",
+              "water",
+              "from",
+              "roots",
+              "to",
+              "leaves."
+            ],
+            "as": [
+              "ফ্ল'য়েমে",
+              "শিপাৰ",
+              "পৰা",
+              "পাতলৈ",
+              "পানী",
+              "নিয়ে।"
+            ]
+          },
+          "wrong": {
+            "en": 0,
+            "as": 0
+          },
+          "fix": {
+            "en": "Xylem",
+            "as": "জাইলেমে"
+          },
+          "answerText": {
+            "en": "Phloem",
+            "as": "ফ্ল'য়েমে"
+          },
+          "why": {
+            "en": "Xylem carries water; phloem carries food.",
+            "as": "জাইলেমে পানী; ফ্ল'য়েমে খাদ্য নিয়ে।"
+          },
+          "id": "sc06.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT an input of photosynthesis?",
+            "as": "সালোক সংশ্লেষণৰ কোনটো উপাদান নহয়?"
+          },
+          "options": [
+            {
+              "en": "Light",
+              "as": "পোহৰ"
+            },
+            {
+              "en": "Water",
+              "as": "পানী"
+            },
+            {
+              "en": "Carbon dioxide",
+              "as": "কাৰ্বন ডাই অক্সাইড"
+            },
+            {
+              "en": "Glucose",
+              "as": "গ্লুক'জ"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Glucose is the product.",
+            "as": "গ্লুক'জ উৎপাদন।"
+          },
+          "id": "sc06.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Feeding the soil",
+        "as": "মাটিক খুওৱা"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "N, P and K are the three main plant nutrients.",
+          "as": "N, P আৰু K উদ্ভিদৰ তিনিটা মুখ্য পুষ্টি।"
+        },
+        {
+          "en": "Rhizobium in legume roots fixes nitrogen.",
+          "as": "ডালি শস্যৰ শিপাৰ ৰাইজ'বিয়ামে নাইট্ৰজেন স্থিৰ কৰে।"
+        },
+        {
+          "en": "Crop rotation with legumes restores soil nitrogen.",
+          "as": "ডালি শস্যৰ সৈতে শস্য পৰিক্ৰমাই মাটিৰ নাইট্ৰজেন ঘূৰাই দিয়ে।"
+        },
+        {
+          "en": "Azolla and blue-green algae add nitrogen to paddy fields.",
+          "as": "এজ'লা আৰু নীলা-সেউজীয়া শেলুৱৈয়ে ধাননিত নাইট্ৰজেন যোগ কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why a farmer plants dal",
+            "as": "খেতিয়কে কিয় মাহ সিঁচে"
+          },
+          "text": [
+            {
+              "en": "After rice, a farmer may sow lentils or peas. <mark>Rhizobium</mark> bacteria in their root nodules take nitrogen from the air.",
+              "as": "ধানৰ পিছত খেতিয়কে মাহ বা মটৰ সিঁচিব পাৰে। সিহঁতৰ শিপাৰ গুটিৰ <mark>ৰাইজ'বিয়াম</mark> বেক্টেৰিয়াই বায়ুৰ নাইট্ৰজেন লয়।"
+            },
+            {
+              "en": "The soil gets richer without a bag of urea. That is <mark>crop rotation</mark> working.",
+              "as": "এবস্তা ইউৰিয়া নোহোৱাকৈ মাটি চহকী হয়। এয়াই <mark>শস্য পৰিক্ৰমা</mark>।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Rice harvest",
+                "as": "ধান চপোৱা"
+              },
+              {
+                "en": "Legume crop",
+                "as": "ডালি শস্য"
+              },
+              {
+                "en": "Nitrogen added",
+                "as": "নাইট্ৰজেন যোগ"
+              },
+              {
+                "en": "Next rice crop",
+                "as": "পৰৱৰ্তী ধান"
+              }
+            ]
+          },
+          "id": "sc06.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What does N stand for in NPK?",
+            "as": "NPK ৰ N মানে কি?"
+          },
+          "options": [
+            {
+              "en": "Neon",
+              "as": "নিয়ন"
+            },
+            {
+              "en": "Nitrogen",
+              "as": "নাইট্ৰজেন"
+            },
+            {
+              "en": "Nickel",
+              "as": "নিকেল"
+            },
+            {
+              "en": "Sodium",
+              "as": "চ'ডিয়াম"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "NPK means nitrogen, phosphorus and potassium.",
+            "as": "NPK মানে নাইট্ৰজেন, ফছফৰাছ আৰু পটাছিয়াম।"
+          },
+          "guess": true,
+          "id": "sc06.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Green manure on the water",
+            "as": "পানীত সেউজ সাৰ"
+          },
+          "text": [
+            {
+              "en": "<mark>Azolla</mark>, a tiny floating fern, partners with a blue-green alga that fixes nitrogen. Farmers grow it with paddy.",
+              "as": "<mark>এজ'লা</mark>, সৰু ওপঙা ফাৰ্ণ, নাইট্ৰজেন স্থিৰ কৰা নীলা-সেউজীয়া শেলুৱৈৰ সৈতে থাকে। খেতিয়কে ইয়াক ধানৰ লগত খেতি কৰে।"
+            },
+            {
+              "en": "Too much chemical fertiliser can run off and feed algal blooms. Organic compost and vermicompost build soil gently.",
+              "as": "অতিৰিক্ত ৰাসায়নিক সাৰ বৈ গৈ শেলুৱৈ বঢ়াব পাৰে। জৈৱিক কম্পোষ্ট আৰু কেঁচু সাৰে মাটি লাহে লাহে গঢ়ে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Chemical · urea, DAP",
+                "as": "ৰাসায়নিক · ইউৰিয়া, DAP"
+              },
+              {
+                "en": "Organic · compost, vermicompost",
+                "as": "জৈৱিক · কম্পোষ্ট, কেঁচু সাৰ"
+              },
+              {
+                "en": "Biofertiliser · Rhizobium, Azolla",
+                "as": "জৈৱ সাৰ · ৰাইজ'বিয়াম, এজ'লা"
+              }
+            ]
+          },
+          "id": "sc06.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Urea",
+                "as": "ইউৰিয়া"
+              },
+              {
+                "en": "nitrogen fertiliser",
+                "as": "নাইট্ৰজেন সাৰ"
+              }
+            ],
+            [
+              {
+                "en": "Rhizobium",
+                "as": "ৰাইজ'বিয়াম"
+              },
+              {
+                "en": "legume root partner",
+                "as": "ডালি শিপাৰ সংগী"
+              }
+            ],
+            [
+              {
+                "en": "Azolla",
+                "as": "এজ'লা"
+              },
+              {
+                "en": "paddy field fern",
+                "as": "ধাননিৰ ফাৰ্ণ"
+              }
+            ],
+            [
+              {
+                "en": "Vermicompost",
+                "as": "কেঁচু সাৰ"
+              },
+              {
+                "en": "made with earthworms",
+                "as": "কেঁচুৰে তৈয়াৰী"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Tell chemical and biological aids apart.",
+            "as": "ৰাসায়নিক আৰু জৈৱিক সহায় পৃথক কৰা।"
+          },
+          "id": "sc06.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Pulses can improve soil nitrogen.",
+            "as": "ডালি শস্যই মাটিৰ নাইট্ৰজেন বঢ়াব পাৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Root bacteria fix it from the air.",
+            "as": "শিপাৰ বেক্টেৰিয়াই বায়ুৰ পৰা ইয়াক স্থিৰ কৰে।"
+          },
+          "id": "sc06.u2.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The P in NPK stands for",
+            "as": "NPK ৰ P মানে"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "phosphorus",
+              "as": "ফছফৰাছ"
+            },
+            {
+              "en": "platinum",
+              "as": "প্লেটিনাম"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "K is potassium.",
+            "as": "K হ'ল পটাছিয়াম।"
+          },
+          "id": "sc06.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a biofertiliser?",
+            "as": "তলৰ কোনটো জৈৱ সাৰ?"
+          },
+          "options": [
+            {
+              "en": "Urea",
+              "as": "ইউৰিয়া"
+            },
+            {
+              "en": "Rhizobium",
+              "as": "ৰাইজ'বিয়াম"
+            },
+            {
+              "en": "DAP",
+              "as": "DAP"
+            },
+            {
+              "en": "Potash",
+              "as": "পটাছ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "It is a living nitrogen-fixing bacterium.",
+            "as": "ই জীৱন্ত নাইট্ৰজেন স্থিৰকাৰী বেক্টেৰিয়া।"
+          },
+          "id": "sc06.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Assam's crop calendar",
+        "as": "অসমৰ শস্যৰ পঞ্জিকা"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "Kharif crops grow in the monsoon; rabi crops in the cool season.",
+          "as": "খৰিফ শস্য বৰষুণৰ বতৰত আৰু ৰবি শস্য ঠাণ্ডা বতৰত হয়।"
+        },
+        {
+          "en": "Assam's rice seasons include ahu, sali and boro.",
+          "as": "অসমৰ ধানৰ বতৰৰ ভিতৰত আহু, শালি আৰু বোৰো আছে।"
+        },
+        {
+          "en": "Assam tea is a variety of Camellia sinensis.",
+          "as": "অসম চাহ Camellia sinensis ৰ এক জাত।"
+        },
+        {
+          "en": "The Green Revolution raised wheat and rice yields with new varieties.",
+          "as": "সেউজ বিপ্লৱে নতুন জাতেৰে ঘেঁহু আৰু ধানৰ উৎপাদন বঢ়াইছিল।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Three rices for three seasons",
+            "as": "তিনি বতৰৰ তিনি ধান"
+          },
+          "text": [
+            {
+              "en": "Assam's farmers follow water. <mark>Ahu</mark> is an early rice, <mark>sali</mark> the main winter rice and <mark>boro</mark> a dry-season crop.",
+              "as": "অসমৰ খেতিয়কে পানী অনুসৰি খেতি কৰে। <mark>আহু</mark> আগতীয়া ধান, <mark>শালি</mark> মুখ্য হেমন্তীয়া ধান আৰু <mark>বোৰো</mark> শুকান বতৰৰ শস্য।"
+            },
+            {
+              "en": "Across India, <b>kharif</b> crops go with the monsoon and <b>rabi</b> crops with the cool season.",
+              "as": "সমগ্ৰ ভাৰতত <b>খৰিফ</b> শস্য বৰষুণৰ লগত আৰু <b>ৰবি</b> শস্য ঠাণ্ডা বতৰৰ লগত হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Kharif · rice, jute",
+                "as": "খৰিফ · ধান, মৰাপাট"
+              },
+              {
+                "en": "Rabi · wheat, mustard",
+                "as": "ৰবি · ঘেঁহু, সৰিয়হ"
+              }
+            ]
+          },
+          "id": "sc06.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which is a rabi crop?",
+            "as": "তলৰ কোনটো ৰবি শস্য?"
+          },
+          "options": [
+            {
+              "en": "Jute",
+              "as": "মৰাপাট"
+            },
+            {
+              "en": "Mustard",
+              "as": "সৰিয়হ"
+            },
+            {
+              "en": "Sali rice",
+              "as": "শালি ধান"
+            },
+            {
+              "en": "Maize in monsoon",
+              "as": "বৰষুণৰ বতৰৰ মাকৈ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Mustard grows in Assam's cool dry months.",
+            "as": "সৰিয়হ অসমৰ ঠাণ্ডা শুকান মাহত হয়।"
+          },
+          "guess": true,
+          "id": "sc06.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Seeds that fed a country",
+            "as": "দেশ খুওৱা গুটি"
+          },
+          "text": [
+            {
+              "en": "In the 1960s, high-yielding wheat and rice, irrigation and fertiliser lifted India's harvests: the <mark>Green Revolution</mark>.",
+              "as": "১৯৬০ৰ দশকত উচ্চ ফলনশীল ঘেঁহু আৰু ধান, জলসিঞ্চন আৰু সাৰে ভাৰতৰ উৎপাদন বঢ়াইছিল: <mark>সেউজ বিপ্লৱ</mark>।"
+            },
+            {
+              "en": "Norman Borlaug bred the wheat, and <mark>M. S. Swaminathan</mark> led the work in India. It also brought water and soil problems.",
+              "as": "নৰমান বৰ্লগে ঘেঁহু উদ্ভাৱন কৰিছিল, আৰু <mark>এম. এছ. স্বামীনাথনে</mark> ভাৰতত নেতৃত্ব দিছিল। ইয়াৰ লগত পানী আৰু মাটিৰ সমস্যাও আহিল।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Green · food grains",
+                "as": "সেউজ · খাদ্য শস্য"
+              },
+              {
+                "en": "White · milk",
+                "as": "বগা · গাখীৰ"
+              },
+              {
+                "en": "Blue · fish",
+                "as": "নীলা · মাছ"
+              }
+            ]
+          },
+          "id": "sc06.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Green Revolution",
+                "as": "সেউজ বিপ্লৱ"
+              },
+              {
+                "en": "food grains",
+                "as": "খাদ্য শস্য"
+              }
+            ],
+            [
+              {
+                "en": "White Revolution",
+                "as": "বগা বিপ্লৱ"
+              },
+              {
+                "en": "milk",
+                "as": "গাখীৰ"
+              }
+            ],
+            [
+              {
+                "en": "Blue Revolution",
+                "as": "নীলা বিপ্লৱ"
+              },
+              {
+                "en": "fish",
+                "as": "মাছ"
+              }
+            ],
+            [
+              {
+                "en": "Yellow Revolution",
+                "as": "হালধীয়া বিপ্লৱ"
+              },
+              {
+                "en": "oilseeds",
+                "as": "তৈলবীজ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Colours name different farming drives.",
+            "as": "ৰঙে বেলেগ কৃষি অভিযানৰ নাম দিয়ে।"
+          },
+          "id": "sc06.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Boro rice grows in the dry season with irrigation.",
+            "as": "বোৰো ধান শুকান বতৰত জলসিঞ্চনেৰে হয়।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It depends on stored or pumped water.",
+            "as": "ই সঞ্চিত বা পাম্প কৰা পানীৰ ওপৰত নিৰ্ভৰ কৰে।"
+          },
+          "id": "sc06.u3.05"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am an Indian agricultural scientist.",
+              "as": "মই এজন ভাৰতীয় কৃষি বিজ্ঞানী।"
+            },
+            {
+              "en": "I helped lead the Green Revolution here.",
+              "as": "মই ইয়াত সেউজ বিপ্লৱৰ নেতৃত্ব দিছিলোঁ।"
+            },
+            {
+              "en": "My initials are M. S.",
+              "as": "মোৰ নামৰ আদ্যক্ষৰ এম. এছ.।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Verghese Kurien",
+              "as": "ভাৰ্গিজ কুৰিয়ান"
+            },
+            {
+              "en": "Norman Borlaug",
+              "as": "নৰমান বৰ্লগ"
+            },
+            {
+              "en": "M. S. Swaminathan",
+              "as": "এম. এছ. স্বামীনাথন"
+            },
+            {
+              "en": "C. V. Raman",
+              "as": "চি. ভি. ৰমন"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Verghese Kurien is linked with the White Revolution.",
+            "as": "ভাৰ্গিজ কুৰিয়ান বগা বিপ্লৱৰ সৈতে জড়িত।"
+          },
+          "id": "sc06.u3.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "tea",
+              "plant",
+              "of",
+              "Assam",
+              "is",
+              "a",
+              "variety",
+              "of",
+              "Coffea",
+              "arabica."
+            ],
+            "as": [
+              "অসমৰ",
+              "চাহ",
+              "গছ",
+              "Coffea",
+              "arabica",
+              "ৰ",
+              "এক",
+              "জাত।"
+            ]
+          },
+          "wrong": {
+            "en": 9,
+            "as": 3
+          },
+          "fix": {
+            "en": "Camellia sinensis",
+            "as": "Camellia sinensis"
+          },
+          "answerText": {
+            "en": "Coffea",
+            "as": "Coffea"
+          },
+          "why": {
+            "en": "Coffea is coffee. Tea is Camellia sinensis.",
+            "as": "Coffea কফি। চাহ Camellia sinensis।"
+          },
+          "id": "sc06.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Golden thread, gentle farming",
+        "as": "সোণালী সূতা, কোমল খেতি"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Sericulture is silk farming; apiculture is bee keeping; pisciculture is fish farming.",
+          "as": "ৰেচম খেতি চেৰিকালচাৰ; মৌ পালন এপিকালচাৰ; মাছ পালন পিচিকালচাৰ।"
+        },
+        {
+          "en": "Muga silk comes from Antheraea assamensis, found in Assam.",
+          "as": "মুগা ৰেচম Antheraea assamensis ৰ পৰা হয়, যি অসমত পোৱা যায়।"
+        },
+        {
+          "en": "Muga silkworms feed on som and soalu leaves.",
+          "as": "মুগা পলুৱে চোম আৰু চোৱালু পাত খায়।"
+        },
+        {
+          "en": "Eri silkworms feed on castor; pat silkworms feed on mulberry.",
+          "as": "এৰি পলুৱে এৰা পাত খায়; পাট পলুৱে নুনি পাত খায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Gold that grows on a tree",
+            "as": "গছত গজা সোণ"
+          },
+          "text": [
+            {
+              "en": "<mark>Muga</mark> silk has a natural golden sheen, and its moth is tied to Assam. It holds a Geographical Indication tag.",
+              "as": "<mark>মুগা</mark> ৰেচমৰ স্বাভাৱিক সোণালী জিলিকনি আছে, আৰু ইয়াৰ পখিলা অসমৰ সৈতে জড়িত। ইয়াৰ ভৌগোলিক সূচক চিহ্ন আছে।"
+            },
+            {
+              "en": "Muga worms feed outdoors on <mark>som</mark> and <mark>soalu</mark> trees, which makes them sensitive to weather and pollution.",
+              "as": "মুগা পলুৱে বাহিৰত <mark>চোম</mark> আৰু <mark>চোৱালু</mark> গছৰ পাত খায়, সেয়ে সিহঁত বতৰ আৰু প্ৰদূষণৰ প্ৰতি সংবেদনশীল।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Som tree · muga",
+                "as": "চোম গছ · মুগা"
+              },
+              {
+                "en": "Soalu tree · muga",
+                "as": "চোৱালু গছ · মুগা"
+              }
+            ]
+          },
+          "id": "sc06.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which silk is famous for its natural golden colour?",
+            "as": "কোনটো ৰেচম স্বাভাৱিক সোণালী ৰঙৰ বাবে বিখ্যাত?"
+          },
+          "options": [
+            {
+              "en": "Muga",
+              "as": "মুগা"
+            },
+            {
+              "en": "Eri",
+              "as": "এৰি"
+            },
+            {
+              "en": "Pat",
+              "as": "পাট"
+            },
+            {
+              "en": "Nylon",
+              "as": "নাইলন"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Muga is Assam's golden silk.",
+            "as": "মুগা অসমৰ সোণালী ৰেচম।"
+          },
+          "guess": true,
+          "id": "sc06.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Peace silk from castor leaves",
+            "as": "এৰা পাতৰ শান্তি ৰেচম"
+          },
+          "text": [
+            {
+              "en": "<mark>Eri</mark> worms feed on castor, and the silk is often spun after the moth has left the cocoon. It is warm and soft.",
+              "as": "<mark>এৰি</mark> পলুৱে এৰা পাত খায়, আৰু পখিলা ওলোৱাৰ পিছতো প্ৰায়ে ৰেচম কটা হয়। ই উষ্ণ আৰু কোমল।"
+            },
+            {
+              "en": "<mark>Pat</mark> silk comes from mulberry-fed worms. Bees and fish give other quiet farm livelihoods.",
+              "as": "<mark>পাট</mark> ৰেচম নুনি পাত খোৱা পলুৰ পৰা হয়। মৌ আৰু মাছেও আন জীৱিকা দিয়ে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Muga · golden",
+                "as": "মুগা · সোণালী"
+              },
+              {
+                "en": "Eri · warm",
+                "as": "এৰি · উষ্ণ"
+              },
+              {
+                "en": "Pat · bright",
+                "as": "পাট · উজ্জ্বল"
+              }
+            ]
+          },
+          "id": "sc06.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Muga",
+                "as": "মুগা"
+              },
+              {
+                "en": "som and soalu",
+                "as": "চোম আৰু চোৱালু"
+              }
+            ],
+            [
+              {
+                "en": "Eri",
+                "as": "এৰি"
+              },
+              {
+                "en": "castor",
+                "as": "এৰা"
+              }
+            ],
+            [
+              {
+                "en": "Pat",
+                "as": "পাট"
+              },
+              {
+                "en": "mulberry",
+                "as": "নুনি"
+              }
+            ],
+            [
+              {
+                "en": "Sericulture",
+                "as": "চেৰিকালচাৰ"
+              },
+              {
+                "en": "silk farming",
+                "as": "ৰেচম খেতি"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each silk has its food plant.",
+            "as": "প্ৰতিটো ৰেচমৰ নিজা খাদ্য গছ আছে।"
+          },
+          "id": "sc06.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Apiculture is the rearing of bees.",
+            "as": "এপিকালচাৰ মৌ পালন।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Bees also pollinate crops.",
+            "as": "মৌয়ে শস্যৰ পৰাগযোগো কৰে।"
+          },
+          "id": "sc06.u4.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a silk of Assam?",
+            "as": "তলৰ কোনটো অসমৰ ৰেচম নহয়?"
+          },
+          "options": [
+            {
+              "en": "Muga",
+              "as": "মুগা"
+            },
+            {
+              "en": "Eri",
+              "as": "এৰি"
+            },
+            {
+              "en": "Pat",
+              "as": "পাট"
+            },
+            {
+              "en": "Pashmina",
+              "as": "পশমিনা"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Pashmina is fine goat wool.",
+            "as": "পশমিনা ছাগলীৰ মিহি উল।"
+          },
+          "id": "sc06.u4.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Pisciculture",
+              "means",
+              "the",
+              "rearing",
+              "of",
+              "bees."
+            ],
+            "as": [
+              "পিচিকালচাৰ",
+              "মানে",
+              "মৌ",
+              "পালন।"
+            ]
+          },
+          "wrong": {
+            "en": 5,
+            "as": 2
+          },
+          "fix": {
+            "en": "fish",
+            "as": "মাছ"
+          },
+          "answerText": {
+            "en": "bees",
+            "as": "মৌ"
+          },
+          "why": {
+            "en": "Pisciculture is fish farming.",
+            "as": "পিচিকালচাৰ মাছ পালন।"
+          },
+          "id": "sc06.u4.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble Assam's golden silk.",
+            "as": "অসমৰ সোণালী ৰেচমৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "M",
+              "U",
+              "G",
+              "A"
+            ],
+            "as": [
+              "মু",
+              "গা"
+            ]
+          },
+          "answerText": {
+            "en": "MUGA",
+            "as": "মুগা"
+          },
+          "why": {
+            "en": "Its moth is Antheraea assamensis.",
+            "as": "ইয়াৰ পখিলা Antheraea assamensis।"
+          },
+          "id": "sc06.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Farm day check",
+      "as": "খেতিৰ দিনৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which gas do plants take in for photosynthesis?",
+          "as": "সালোক সংশ্লেষণৰ বাবে উদ্ভিদে কোনটো গেছ লয়?"
+        },
+        "options": [
+          {
+            "en": "Oxygen",
+            "as": "অক্সিজেন"
+          },
+          {
+            "en": "Carbon dioxide",
+            "as": "কাৰ্বন ডাই অক্সাইড"
+          },
+          {
+            "en": "Nitrogen",
+            "as": "নাইট্ৰজেন"
+          },
+          {
+            "en": "Methane",
+            "as": "মিথেন"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Carbon dioxide enters through stomata.",
+          "as": "কাৰ্বন ডাই অক্সাইড পত্ৰৰন্ধ্ৰেৰে সোমায়।"
+        },
+        "id": "sc06.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Eri silkworms feed on castor leaves.",
+          "as": "এৰি পলুৱে এৰা পাত খায়।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Muga feeds on som and soalu; pat on mulberry.",
+          "as": "মুগাই চোম আৰু চোৱালু; পাটে নুনি পাত খায়।"
+        },
+        "id": "sc06.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Ahu",
+              "as": "আহু"
+            },
+            {
+              "en": "early rice",
+              "as": "আগতীয়া ধান"
+            }
+          ],
+          [
+            {
+              "en": "Xylem",
+              "as": "জাইলেম"
+            },
+            {
+              "en": "water transport",
+              "as": "পানী পৰিবহন"
+            }
+          ],
+          [
+            {
+              "en": "Rhizobium",
+              "as": "ৰাইজ'বিয়াম"
+            },
+            {
+              "en": "nitrogen fixing",
+              "as": "নাইট্ৰজেন স্থিৰীকৰণ"
+            }
+          ],
+          [
+            {
+              "en": "Apiculture",
+              "as": "এপিকালচাৰ"
+            },
+            {
+              "en": "bee keeping",
+              "as": "মৌ পালন"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One link per unit.",
+          "as": "প্ৰতিটো গোটৰ এটা সংযোগ।"
+        },
+        "id": "sc06.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is a kharif crop?",
+          "as": "তলৰ কোনটো খৰিফ শস্য?"
+        },
+        "options": [
+          {
+            "en": "Jute",
+            "as": "মৰাপাট"
+          },
+          {
+            "en": "Wheat",
+            "as": "ঘেঁহু"
+          },
+          {
+            "en": "Mustard",
+            "as": "সৰিয়হ"
+          },
+          {
+            "en": "Gram",
+            "as": "বুট"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Jute grows with the monsoon.",
+          "as": "মৰাপাট বৰষুণৰ বতৰত হয়।"
+        },
+        "id": "sc06.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order the photosynthesis route.",
+          "as": "সালোক সংশ্লেষণৰ পথ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Roots take water",
+            "as": "শিপাই পানী লয়"
+          },
+          {
+            "en": "Leaves absorb light",
+            "as": "পাতে পোহৰ শোষে"
+          },
+          {
+            "en": "Glucose forms",
+            "as": "গ্লুক'জ হয়"
+          },
+          {
+            "en": "Phloem carries sugar",
+            "as": "ফ্ল'য়েমে চেনি নিয়ে"
+          }
+        ],
+        "why": {
+          "en": "Water and light make sugar, which then travels.",
+          "as": "পানী আৰু পোহৰে চেনি গঢ়ে, তাৰ পিছত ই যায়।"
+        },
+        "id": "sc06.test.05"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1332 @@
+{
+  "id": "sc-03-matter",
+  "course": "general-science",
+  "no": 3,
+  "version": 1,
+  "king": {
+    "en": "What matter is made of",
+    "as": "পদাৰ্থৰ গঠন"
+  },
+  "reign": {
+    "en": "Chemistry",
+    "as": "ৰসায়ন"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science textbooks, Classes 7 to 10: matter, atoms, acids and bases",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for this lesson. Passages still to be read."
+    },
+    {
+      "title": "Royal Society of Chemistry: Periodic Table",
+      "url": "https://periodic-table.rsc.org/",
+      "used_for": "Lead for symbols and abundance. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Solid, liquid, gas and back",
+        "as": "গোটা, তৰল, গেছ আৰু উভতি"
+      },
+      "icon": "walk",
+      "learned": [
+        {
+          "en": "Matter commonly exists as solid, liquid or gas.",
+          "as": "পদাৰ্থ সাধাৰণতে গোটা, তৰল বা গেছ অৱস্থাত থাকে।"
+        },
+        {
+          "en": "Melting, boiling and condensing are physical changes.",
+          "as": "গলন, উতলন আৰু ঘনীভৱন ভৌতিক পৰিৱৰ্তন।"
+        },
+        {
+          "en": "Sublimation turns a solid straight into a gas, as with camphor.",
+          "as": "ঊৰ্ধ্বপাতনে গোটাক পোনে পোনে গেছ কৰে, কৰ্পূৰৰ দৰে।"
+        },
+        {
+          "en": "A chemical change forms new substances, as in rusting or burning.",
+          "as": "ৰাসায়নিক পৰিৱৰ্তনে নতুন পদাৰ্থ গঢ়ে, মামৰ ধৰা বা জ্বলাৰ দৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The camphor that vanished",
+            "as": "নোহোৱা হোৱা কৰ্পূৰ"
+          },
+          "text": [
+            {
+              "en": "Leave camphor out and it shrinks with no puddle. It skips the liquid stage altogether: <mark>sublimation</mark>.",
+              "as": "কৰ্পূৰ মুকলিকৈ থ'লে পানী নোহোৱাকৈ সৰু হয়। ই তৰল অৱস্থা এৰি যায়: <mark>ঊৰ্ধ্বপাতন</mark>।"
+            },
+            {
+              "en": "Heat gives particles energy to move apart. Solids hold tight, liquids slide and gases fly free.",
+              "as": "তাপে কণাক আঁতৰিবলৈ শক্তি দিয়ে। গোটাত কণা টান, তৰলত পিছলে আৰু গেছত মুকলিকৈ উৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Solid",
+                "as": "গোটা"
+              },
+              {
+                "en": "Liquid",
+                "as": "তৰল"
+              },
+              {
+                "en": "Gas",
+                "as": "গেছ"
+              }
+            ]
+          },
+          "id": "sc03.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What is the change from gas to liquid called?",
+            "as": "গেছৰ পৰা তৰল হোৱা প্ৰক্ৰিয়াক কি বোলে?"
+          },
+          "options": [
+            {
+              "en": "Melting",
+              "as": "গলন"
+            },
+            {
+              "en": "Condensation",
+              "as": "ঘনীভৱন"
+            },
+            {
+              "en": "Sublimation",
+              "as": "ঊৰ্ধ্বপাতন"
+            },
+            {
+              "en": "Evaporation",
+              "as": "বাষ্পীভৱন"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Water drops on a cold glass are condensed vapour.",
+            "as": "ঠাণ্ডা গিলাচৰ টোপাল ঘনীভূত বাষ্প।"
+          },
+          "guess": true,
+          "id": "sc03.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Can you undo it?",
+            "as": "ইয়াক ঘূৰাব পাৰিবা নে?"
+          },
+          "text": [
+            {
+              "en": "Melted ice can refreeze: a <mark>physical change</mark>. Same substance, new form.",
+              "as": "গলা বৰফ আকৌ গোট মাৰিব পাৰে: <mark>ভৌতিক পৰিৱৰ্তন</mark>। একে পদাৰ্থ, নতুন ৰূপ।"
+            },
+            {
+              "en": "Burnt paper cannot become paper again. Ash and gases are new substances: a <mark>chemical change</mark>.",
+              "as": "পোৰা কাগজ আকৌ কাগজ নহয়। ছাই আৰু গেছ নতুন পদাৰ্থ: <mark>ৰাসায়নিক পৰিৱৰ্তন</mark>।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Physical · melting ice",
+                "as": "ভৌতিক · বৰফ গলা"
+              },
+              {
+                "en": "Chemical · rusting iron",
+                "as": "ৰাসায়নিক · লোত মামৰ ধৰা"
+              }
+            ]
+          },
+          "id": "sc03.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Ice to water",
+                "as": "বৰফৰ পৰা পানী"
+              },
+              {
+                "en": "melting",
+                "as": "গলন"
+              }
+            ],
+            [
+              {
+                "en": "Water to vapour",
+                "as": "পানীৰ পৰা বাষ্প"
+              },
+              {
+                "en": "evaporation",
+                "as": "বাষ্পীভৱন"
+              }
+            ],
+            [
+              {
+                "en": "Vapour to water",
+                "as": "বাষ্পৰ পৰা পানী"
+              },
+              {
+                "en": "condensation",
+                "as": "ঘনীভৱন"
+              }
+            ],
+            [
+              {
+                "en": "Camphor to vapour",
+                "as": "কৰ্পূৰৰ পৰা বাষ্প"
+              },
+              {
+                "en": "sublimation",
+                "as": "ঊৰ্ধ্বপাতন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Name each change of state.",
+            "as": "প্ৰতিটো অৱস্থাৰ পৰিৱৰ্তনৰ নাম কোৱা।"
+          },
+          "id": "sc03.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Cooking an egg is a physical change.",
+            "as": "কণী ৰন্ধাটো ভৌতিক পৰিৱৰ্তন।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Proteins change irreversibly, so it is chemical.",
+            "as": "প্ৰ'টিন স্থায়ীভাৱে সলনি হয়, সেয়ে ই ৰাসায়নিক।"
+          },
+          "id": "sc03.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a chemical change?",
+            "as": "তলৰ কোনটো ৰাসায়নিক পৰিৱৰ্তন?"
+          },
+          "options": [
+            {
+              "en": "Boiling water",
+              "as": "পানী উতলা"
+            },
+            {
+              "en": "Melting wax",
+              "as": "মম গলা"
+            },
+            {
+              "en": "Tearing paper",
+              "as": "কাগজ ফলা"
+            },
+            {
+              "en": "Milk turning sour",
+              "as": "গাখীৰ টেঙা হোৱা"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Souring forms new substances such as lactic acid.",
+            "as": "টেঙা হওঁতে লেক্টিক এচিডৰ দৰে নতুন পদাৰ্থ হয়।"
+          },
+          "id": "sc03.u1.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Sublimation",
+              "turns",
+              "a",
+              "liquid",
+              "directly",
+              "into",
+              "a",
+              "solid."
+            ],
+            "as": [
+              "ঊৰ্ধ্বপাতনে",
+              "তৰলক",
+              "পোনে",
+              "পোনে",
+              "গোটা",
+              "কৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 3,
+            "as": 1
+          },
+          "fix": {
+            "en": "solid to gas",
+            "as": "গোটাক গেছ"
+          },
+          "answerText": {
+            "en": "liquid",
+            "as": "তৰলক"
+          },
+          "why": {
+            "en": "Sublimation goes between solid and gas, skipping the liquid.",
+            "as": "ঊৰ্ধ্বপাতন গোটা আৰু গেছৰ মাজত হয়, তৰল এৰি।"
+          },
+          "id": "sc03.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Pure or mixed?",
+        "as": "বিশুদ্ধ নে মিশ্ৰিত?"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "An element has one kind of atom; a compound has elements chemically joined.",
+          "as": "মৌলত এবিধ পৰমাণু থাকে; যৌগত মৌল ৰাসায়নিকভাৱে যুক্ত থাকে।"
+        },
+        {
+          "en": "A mixture's parts are not chemically joined and can be separated physically.",
+          "as": "মিশ্ৰণৰ অংশ ৰাসায়নিকভাৱে যুক্ত নহয়, ভৌতিকভাৱে পৃথক কৰিব পাৰি।"
+        },
+        {
+          "en": "Atoms hold protons, neutrons and electrons.",
+          "as": "পৰমাণুত প্ৰ'টন, নিউট্ৰন আৰু ইলেক্ট্ৰন থাকে।"
+        },
+        {
+          "en": "Atomic number is the number of protons.",
+          "as": "পাৰমাণৱিক সংখ্যা প্ৰ'টনৰ সংখ্যা।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Salt from two dangerous things",
+            "as": "দুটা বিপজ্জনক বস্তুৰ পৰা নিমখ"
+          },
+          "text": [
+            {
+              "en": "Sodium is a violent metal and chlorine a poison gas. Joined, they make table salt. A <mark>compound</mark> behaves unlike its elements.",
+              "as": "চ'ডিয়াম ভয়ংকৰ ধাতু আৰু ক্ল'ৰিণ বিষাক্ত গেছ। যুক্ত হ'লে হয় খোৱা নিমখ। <mark>যৌগ</mark>ৰ ধৰ্ম ইয়াৰ মৌলৰ পৰা বেলেগ।"
+            },
+            {
+              "en": "Stir that salt into water and you have a <mark>mixture</mark>. Evaporate the water and the salt comes back.",
+              "as": "নিমখ পানীত গুলিলে <mark>মিশ্ৰণ</mark> হয়। পানী বাষ্পীভূত কৰিলে নিমখ ঘূৰি আহে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Element · iron, oxygen",
+                "as": "মৌল · লো, অক্সিজেন"
+              },
+              {
+                "en": "Compound · water, salt",
+                "as": "যৌগ · পানী, নিমখ"
+              },
+              {
+                "en": "Mixture · air, sea water",
+                "as": "মিশ্ৰণ · বায়ু, সাগৰৰ পানী"
+              }
+            ]
+          },
+          "id": "sc03.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Is air an element, a compound or a mixture?",
+            "as": "বায়ু মৌল, যৌগ নে মিশ্ৰণ?"
+          },
+          "options": [
+            {
+              "en": "Element",
+              "as": "মৌল"
+            },
+            {
+              "en": "Compound",
+              "as": "যৌগ"
+            },
+            {
+              "en": "Mixture",
+              "as": "মিশ্ৰণ"
+            },
+            {
+              "en": "Pure metal",
+              "as": "বিশুদ্ধ ধাতু"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Air holds nitrogen, oxygen and other gases unjoined.",
+            "as": "বায়ুত নাইট্ৰজেন, অক্সিজেন আৰু আন গেছ অযুক্ত হৈ থাকে।"
+          },
+          "guess": true,
+          "id": "sc03.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Inside the atom",
+            "as": "পৰমাণুৰ ভিতৰত"
+          },
+          "text": [
+            {
+              "en": "An atom is mostly empty, with a tiny <mark>nucleus</mark> of protons and neutrons. Electrons move around it.",
+              "as": "পৰমাণু বেছিভাগ খালী; ইয়াৰ সৰু <mark>কেন্দ্ৰক</mark>ত প্ৰ'টন আৰু নিউট্ৰন থাকে। ইলেক্ট্ৰন তাৰ চাৰিওফালে ঘূৰে।"
+            },
+            {
+              "en": "Protons are positive, electrons negative and neutrons neutral. The number of protons decides the element.",
+              "as": "প্ৰ'টন ধনাত্মক, ইলেক্ট্ৰন ঋণাত্মক আৰু নিউট্ৰন নিৰপেক্ষ। প্ৰ'টনৰ সংখ্যাই মৌল নিৰ্ধাৰণ কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Proton · positive",
+                "as": "প্ৰ'টন · ধনাত্মক"
+              },
+              {
+                "en": "Neutron · no charge",
+                "as": "নিউট্ৰন · আধানহীন"
+              },
+              {
+                "en": "Electron · negative",
+                "as": "ইলেক্ট্ৰন · ঋণাত্মক"
+              }
+            ]
+          },
+          "id": "sc03.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Proton",
+                "as": "প্ৰ'টন"
+              },
+              {
+                "en": "positive, in nucleus",
+                "as": "ধনাত্মক, কেন্দ্ৰকত"
+              }
+            ],
+            [
+              {
+                "en": "Neutron",
+                "as": "নিউট্ৰন"
+              },
+              {
+                "en": "neutral, in nucleus",
+                "as": "নিৰপেক্ষ, কেন্দ্ৰকত"
+              }
+            ],
+            [
+              {
+                "en": "Electron",
+                "as": "ইলেক্ট্ৰন"
+              },
+              {
+                "en": "negative, outside",
+                "as": "ঋণাত্মক, বাহিৰত"
+              }
+            ],
+            [
+              {
+                "en": "Atomic number",
+                "as": "পাৰমাণৱিক সংখ্যা"
+              },
+              {
+                "en": "count of protons",
+                "as": "প্ৰ'টনৰ সংখ্যা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Charge and place tell the particles apart.",
+            "as": "আধান আৰু স্থানে কণাবোৰ পৃথক কৰে।"
+          },
+          "id": "sc03.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Water is a compound of hydrogen and oxygen.",
+            "as": "পানী হাইড্ৰ'জেন আৰু অক্সিজেনৰ যৌগ।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Its formula is H₂O.",
+            "as": "ইয়াৰ সংকেত H₂O।"
+          },
+          "id": "sc03.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one is a mixture?",
+            "as": "তলৰ কোনটো মিশ্ৰণ?"
+          },
+          "options": [
+            {
+              "en": "Sea water",
+              "as": "সাগৰৰ পানী"
+            },
+            {
+              "en": "Pure gold",
+              "as": "বিশুদ্ধ সোণ"
+            },
+            {
+              "en": "Pure water",
+              "as": "বিশুদ্ধ পানী"
+            },
+            {
+              "en": "Table salt",
+              "as": "খোৱা নিমখ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Sea water holds dissolved salts in water.",
+            "as": "সাগৰৰ পানীত লৱণ দ্ৰৱীভূত হৈ থাকে।"
+          },
+          "id": "sc03.u2.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The tiny centre of an atom is its",
+            "as": "পৰমাণুৰ সৰু কেন্দ্ৰটো হ'ল ইয়াৰ"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "nucleus",
+              "as": "কেন্দ্ৰক"
+            },
+            {
+              "en": "electron",
+              "as": "ইলেক্ট্ৰন"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Nearly all the mass of the atom sits in the nucleus.",
+            "as": "পৰমাণুৰ প্ৰায় গোটেই ভৰ কেন্দ্ৰকত থাকে।"
+          },
+          "id": "sc03.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "The chemist's alphabet",
+        "as": "ৰসায়নবিদৰ বৰ্ণমালা"
+      },
+      "icon": "scroll",
+      "learned": [
+        {
+          "en": "Several symbols come from Latin: Fe, Au, Ag, Na, K, Pb.",
+          "as": "কেইবাটাও চিহ্ন লেটিনৰ পৰা: Fe, Au, Ag, Na, K, Pb।"
+        },
+        {
+          "en": "Mendeleev arranged the periodic table; it leaves room for undiscovered elements.",
+          "as": "মেণ্ডেলিভে পৰ্যাবৃত্ত তালিকা সজাইছিল; ই অনাবিষ্কৃত মৌলৰ ঠাই এৰিছিল।"
+        },
+        {
+          "en": "Nitrogen makes up about 78% of air and oxygen about 21%.",
+          "as": "বায়ুৰ প্ৰায় ৭৮% নাইট্ৰজেন আৰু ২১% অক্সিজেন।"
+        },
+        {
+          "en": "Oxygen is the most abundant element in Earth's crust; aluminium is the most abundant metal.",
+          "as": "ভূ-ত্বকত অক্সিজেন আটাইতকৈ বেছি; ধাতুৰ ভিতৰত এলুমিনিয়াম।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why gold is Au",
+            "as": "সোণ কিয় Au"
+          },
+          "text": [
+            {
+              "en": "Gold's symbol comes from Latin aurum, iron's Fe from ferrum, sodium's Na from natrium. Old names survive in new science.",
+              "as": "সোণৰ চিহ্ন লেটিন aurumৰ পৰা, লোৰ Fe ferrumৰ পৰা, চ'ডিয়ামৰ Na natriumৰ পৰা। পুৰণি নাম নতুন বিজ্ঞানত জীয়াই আছে।"
+            },
+            {
+              "en": "Symbols join into formulas: <mark>H₂O</mark> is water, <mark>CO₂</mark> carbon dioxide, <mark>NaCl</mark> salt.",
+              "as": "চিহ্ন যুক্ত হৈ সংকেত হয়: <mark>H₂O</mark> পানী, <mark>CO₂</mark> কাৰ্বন ডাই অক্সাইড, <mark>NaCl</mark> নিমখ।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Au · gold",
+                "as": "Au · সোণ"
+              },
+              {
+                "en": "Ag · silver",
+                "as": "Ag · ৰূপ"
+              },
+              {
+                "en": "Fe · iron",
+                "as": "Fe · লো"
+              },
+              {
+                "en": "Pb · lead",
+                "as": "Pb · সীহ"
+              }
+            ]
+          },
+          "id": "sc03.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What is the symbol of potassium?",
+            "as": "পটাছিয়ামৰ চিহ্ন কি?"
+          },
+          "options": [
+            {
+              "en": "P",
+              "as": "P"
+            },
+            {
+              "en": "Po",
+              "as": "Po"
+            },
+            {
+              "en": "K",
+              "as": "K"
+            },
+            {
+              "en": "Pt",
+              "as": "Pt"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "K comes from Latin kalium. P is phosphorus.",
+            "as": "K লেটিন kalium ৰ পৰা। P ফছফৰাছ।"
+          },
+          "guess": true,
+          "id": "sc03.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "A table with empty seats",
+            "as": "খালী আসন থকা তালিকা"
+          },
+          "text": [
+            {
+              "en": "In 1869, <mark>Dmitri Mendeleev</mark> ordered elements into a table and left gaps. He predicted unknown elements, and they were found.",
+              "as": "১৮৬৯ চনত <mark>দিমিত্ৰি মেণ্ডেলিভ</mark>ে মৌলবোৰ তালিকাত সজাই ফাঁক এৰিছিল। তেওঁ অজ্ঞাত মৌলৰ ভৱিষ্যদ্বাণী কৰিছিল, আৰু সেইবোৰ পোৱা গ'ল।"
+            },
+            {
+              "en": "Air is about <mark>78% nitrogen</mark> and 21% oxygen. In the crust, oxygen leads, and aluminium is the top metal.",
+              "as": "বায়ুৰ প্ৰায় <mark>৭৮% নাইট্ৰজেন</mark> আৰু ২১% অক্সিজেন। ভূ-ত্বকত অক্সিজেন আগত, আৰু ধাতুৰ ভিতৰত এলুমিনিয়াম।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Air · nitrogen most",
+                "as": "বায়ু · নাইট্ৰজেন সৰ্বাধিক"
+              },
+              {
+                "en": "Crust · oxygen most",
+                "as": "ভূ-ত্বক · অক্সিজেন সৰ্বাধিক"
+              },
+              {
+                "en": "Crust metal · aluminium",
+                "as": "ভূ-ত্বকৰ ধাতু · এলুমিনিয়াম"
+              }
+            ]
+          },
+          "id": "sc03.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Na",
+                "as": "Na"
+              },
+              {
+                "en": "sodium",
+                "as": "চ'ডিয়াম"
+              }
+            ],
+            [
+              {
+                "en": "K",
+                "as": "K"
+              },
+              {
+                "en": "potassium",
+                "as": "পটাছিয়াম"
+              }
+            ],
+            [
+              {
+                "en": "Hg",
+                "as": "Hg"
+              },
+              {
+                "en": "mercury",
+                "as": "পাৰা"
+              }
+            ],
+            [
+              {
+                "en": "Cu",
+                "as": "Cu"
+              },
+              {
+                "en": "copper",
+                "as": "তাম"
+              }
+            ]
+          ],
+          "why": {
+            "en": "These symbols do not start like the English names.",
+            "as": "এই চিহ্নবোৰ ইংৰাজী নামৰ দৰে আৰম্ভ নহয়।"
+          },
+          "id": "sc03.u3.04"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am a Russian chemist.",
+              "as": "মই এজন ৰাছিয়ান ৰসায়নবিদ।"
+            },
+            {
+              "en": "I arranged the elements in 1869.",
+              "as": "মই ১৮৬৯ চনত মৌলবোৰ সজাইছিলোঁ।"
+            },
+            {
+              "en": "I left gaps for elements not yet found.",
+              "as": "মই অনাবিষ্কৃত মৌলৰ বাবে ফাঁক এৰিছিলোঁ।"
+            }
+          ],
+          "options": [
+            {
+              "en": "John Dalton",
+              "as": "জন ডাল্টন"
+            },
+            {
+              "en": "Dmitri Mendeleev",
+              "as": "দিমিত্ৰি মেণ্ডেলিভ"
+            },
+            {
+              "en": "Marie Curie",
+              "as": "মেৰী কুৰী"
+            },
+            {
+              "en": "Antoine Lavoisier",
+              "as": "এন্টোইন লেভইজিয়ে"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Mendeleev's table predicted later discoveries.",
+            "as": "মেণ্ডেলিভৰ তালিকাই পিছৰ আৱিষ্কাৰৰ ভৱিষ্যদ্বাণী কৰিছিল।"
+          },
+          "id": "sc03.u3.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Oxygen is the most abundant gas in air.",
+            "as": "বায়ুত অক্সিজেন আটাইতকৈ বেছি পৰিমাণৰ গেছ।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Nitrogen is about 78%; oxygen about 21%.",
+            "as": "নাইট্ৰজেন প্ৰায় ৭৮%; অক্সিজেন প্ৰায় ২১%।"
+          },
+          "id": "sc03.u3.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "chemical",
+              "symbol",
+              "for",
+              "silver",
+              "is",
+              "Au."
+            ],
+            "as": [
+              "ৰূপৰ",
+              "ৰাসায়নিক",
+              "চিহ্ন",
+              "হ'ল",
+              "Au।"
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 4
+          },
+          "fix": {
+            "en": "Ag",
+            "as": "Ag"
+          },
+          "answerText": {
+            "en": "Au",
+            "as": "Au"
+          },
+          "why": {
+            "en": "Ag is silver, from argentum; Au is gold.",
+            "as": "Ag ৰূপ, argentum ৰ পৰা; Au সোণ।"
+          },
+          "id": "sc03.u3.07"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The most abundant metal in Earth's crust is",
+            "as": "ভূ-ত্বকৰ আটাইতকৈ বেছি ধাতু হ'ল"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "aluminium",
+              "as": "এলুমিনিয়াম"
+            },
+            {
+              "en": "gold",
+              "as": "সোণ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Iron is second among metals.",
+            "as": "ধাতুৰ ভিতৰত লো দ্বিতীয়।"
+          },
+          "id": "sc03.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Sour, bitter and neutral",
+        "as": "টেঙা, তিতা আৰু নিৰপেক্ষ"
+      },
+      "icon": "seal",
+      "learned": [
+        {
+          "en": "pH 7 is neutral; below 7 is acidic and above 7 is basic.",
+          "as": "pH ৭ নিৰপেক্ষ; ৭ ৰ তলত এচিড আৰু ৭ ৰ ওপৰত ক্ষাৰ।"
+        },
+        {
+          "en": "Acids turn blue litmus red; bases turn red litmus blue.",
+          "as": "এচিডে নীলা লিটমাছ ৰঙা কৰে; ক্ষাৰে ৰঙা লিটমাছ নীলা কৰে।"
+        },
+        {
+          "en": "Lemon has citric acid, vinegar acetic, curd lactic and tamarind tartaric acid.",
+          "as": "নেমুত চাইট্ৰিক, ভিনেগাৰত এচিটিক, দৈত লেক্টিক আৰু তেঁতেলীত টাৰ্টাৰিক এচিড থাকে।"
+        },
+        {
+          "en": "An acid and a base neutralise each other to form salt and water.",
+          "as": "এচিড আৰু ক্ষাৰে ইটোৱে সিটোক প্ৰশমিত কৰি লৱণ আৰু পানী গঢ়ে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "An ant bite and baking soda",
+            "as": "পৰুৱাৰ কামোৰ আৰু খাৰ"
+          },
+          "text": [
+            {
+              "en": "An ant's sting injects <mark>formic acid</mark>. A weak base like baking soda paste can ease it.",
+              "as": "পৰুৱাৰ কামোৰে <mark>ফৰ্মিক এচিড</mark> সোমায়। বেকিং ছ'ডাৰ দৰে দুৰ্বল ক্ষাৰে ইয়াক কমাব পাৰে।"
+            },
+            {
+              "en": "Acid meets base and they cancel: <mark>neutralisation</mark>. An antacid does the same to excess stomach acid.",
+              "as": "এচিড আৰু ক্ষাৰ মিলি ইটোৱে সিটোক কাটে: <mark>প্ৰশমন</mark>। এন্টাচিডেও পাকস্থলীৰ অতিৰিক্ত এচিডত একে কাম কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Acid",
+                "as": "এচিড"
+              },
+              {
+                "en": "Base",
+                "as": "ক্ষাৰ"
+              },
+              {
+                "en": "Salt and water",
+                "as": "লৱণ আৰু পানী"
+              }
+            ]
+          },
+          "id": "sc03.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Pure water has which pH at room temperature?",
+            "as": "কোঠাৰ উষ্ণতাত বিশুদ্ধ পানীৰ pH কিমান?"
+          },
+          "options": [
+            {
+              "en": "1",
+              "as": "১"
+            },
+            {
+              "en": "5",
+              "as": "৫"
+            },
+            {
+              "en": "7",
+              "as": "৭"
+            },
+            {
+              "en": "14",
+              "as": "১৪"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "pH 7 is neutral.",
+            "as": "pH ৭ নিৰপেক্ষ।"
+          },
+          "guess": true,
+          "id": "sc03.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Kitchen acids",
+            "as": "পাকঘৰৰ এচিড"
+          },
+          "text": [
+            {
+              "en": "Sourness in food is usually an acid. Each has a name exams love, from lemon's citric to tamarind's tartaric.",
+              "as": "খাদ্যৰ টেঙা সোৱাদ সাধাৰণতে এচিড। প্ৰতিটোৰ নাম পৰীক্ষাত সঘনে সোধে, নেমুৰ চাইট্ৰিকৰ পৰা তেঁতেলীৰ টাৰ্টাৰিকলৈ।"
+            },
+            {
+              "en": "To test without tasting, dip <mark>litmus</mark>: acid turns it red and base turns it blue.",
+              "as": "নোসোৱাদকৈ পৰীক্ষা কৰিবলৈ <mark>লিটমাছ</mark> ডুবোৱা: এচিডে ৰঙা আৰু ক্ষাৰে নীলা কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Lemon · citric",
+                "as": "নেমু · চাইট্ৰিক"
+              },
+              {
+                "en": "Vinegar · acetic",
+                "as": "ভিনেগাৰ · এচিটিক"
+              },
+              {
+                "en": "Curd · lactic",
+                "as": "দৈ · লেক্টিক"
+              },
+              {
+                "en": "Tamarind · tartaric",
+                "as": "তেঁতেলী · টাৰ্টাৰিক"
+              }
+            ]
+          },
+          "id": "sc03.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Lemon",
+                "as": "নেমু"
+              },
+              {
+                "en": "citric acid",
+                "as": "চাইট্ৰিক এচিড"
+              }
+            ],
+            [
+              {
+                "en": "Vinegar",
+                "as": "ভিনেগাৰ"
+              },
+              {
+                "en": "acetic acid",
+                "as": "এচিটিক এচিড"
+              }
+            ],
+            [
+              {
+                "en": "Ant sting",
+                "as": "পৰুৱাৰ কামোৰ"
+              },
+              {
+                "en": "formic acid",
+                "as": "ফৰ্মিক এচিড"
+              }
+            ],
+            [
+              {
+                "en": "Tamarind",
+                "as": "তেঁতেলী"
+              },
+              {
+                "en": "tartaric acid",
+                "as": "টাৰ্টাৰিক এচিড"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Link the food or sting to its acid.",
+            "as": "খাদ্য বা কামোৰক ইয়াৰ এচিডৰ সৈতে যোৰা।"
+          },
+          "id": "sc03.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A solution with pH 3 is more acidic than one with pH 6.",
+            "as": "pH ৩ ৰ দ্ৰৱ pH ৬ ৰ দ্ৰৱতকৈ অধিক এচিডীয়।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Lower pH means more acidic.",
+            "as": "pH যিমান কম, সিমান এচিডীয়।"
+          },
+          "id": "sc03.u4.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order from most acidic to most basic.",
+            "as": "অধিক এচিডৰ পৰা অধিক ক্ষাৰলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Lemon juice",
+              "as": "নেমুৰ ৰস"
+            },
+            {
+              "en": "Pure water",
+              "as": "বিশুদ্ধ পানী"
+            },
+            {
+              "en": "Baking soda solution",
+              "as": "বেকিং ছ'ডাৰ দ্ৰৱ"
+            },
+            {
+              "en": "Household ammonia",
+              "as": "ঘৰুৱা এম'নিয়া"
+            }
+          ],
+          "why": {
+            "en": "pH rises from acid through neutral to base.",
+            "as": "pH এচিডৰ পৰা নিৰপেক্ষ হৈ ক্ষাৰলৈ বাঢ়ে।"
+          },
+          "id": "sc03.u4.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Acids",
+              "turn",
+              "blue",
+              "litmus",
+              "green."
+            ],
+            "as": [
+              "এচিডে",
+              "নীলা",
+              "লিটমাছ",
+              "সেউজীয়া",
+              "কৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 4,
+            "as": 3
+          },
+          "fix": {
+            "en": "red",
+            "as": "ৰঙা"
+          },
+          "answerText": {
+            "en": "green",
+            "as": "সেউজীয়া"
+          },
+          "why": {
+            "en": "Blue litmus turns red in acid.",
+            "as": "এচিডত নীলা লিটমাছ ৰঙা হয়।"
+          },
+          "id": "sc03.u4.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a base, not an acid?",
+            "as": "তলৰ কোনটো এচিড নহয়, ক্ষাৰ?"
+          },
+          "options": [
+            {
+              "en": "Vinegar",
+              "as": "ভিনেগাৰ"
+            },
+            {
+              "en": "Lemon juice",
+              "as": "নেমুৰ ৰস"
+            },
+            {
+              "en": "Baking soda",
+              "as": "বেকিং ছ'ডা"
+            },
+            {
+              "en": "Curd",
+              "as": "দৈ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Baking soda is mildly basic.",
+            "as": "বেকিং ছ'ডা মৃদু ক্ষাৰীয়।"
+          },
+          "id": "sc03.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Lab bench test",
+      "as": "পৰীক্ষাগাৰৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "NaCl is the formula of what?",
+          "as": "NaCl কিহৰ সংকেত?"
+        },
+        "options": [
+          {
+            "en": "Baking soda",
+            "as": "বেকিং ছ'ডা"
+          },
+          {
+            "en": "Table salt",
+            "as": "খোৱা নিমখ"
+          },
+          {
+            "en": "Sugar",
+            "as": "চেনি"
+          },
+          {
+            "en": "Lime",
+            "as": "চূণ"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Sodium chloride is table salt.",
+          "as": "চ'ডিয়াম ক্ল'ৰাইড খোৱা নিমখ।"
+        },
+        "id": "sc03.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Rusting is a chemical change.",
+          "as": "মামৰ ধৰা ৰাসায়নিক পৰিৱৰ্তন।"
+        },
+        "answer": true,
+        "why": {
+          "en": "A new substance, iron oxide, forms.",
+          "as": "নতুন পদাৰ্থ আইৰন অক্সাইড হয়।"
+        },
+        "id": "sc03.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Fe",
+              "as": "Fe"
+            },
+            {
+              "en": "iron",
+              "as": "লো"
+            }
+          ],
+          [
+            {
+              "en": "pH 7",
+              "as": "pH ৭"
+            },
+            {
+              "en": "neutral",
+              "as": "নিৰপেক্ষ"
+            }
+          ],
+          [
+            {
+              "en": "Proton",
+              "as": "প্ৰ'টন"
+            },
+            {
+              "en": "positive charge",
+              "as": "ধনাত্মক আধান"
+            }
+          ],
+          [
+            {
+              "en": "Sublimation",
+              "as": "ঊৰ্ধ্বপাতন"
+            },
+            {
+              "en": "solid to gas",
+              "as": "গোটাৰ পৰা গেছ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One idea from each unit.",
+          "as": "প্ৰতিটো গোটৰ এটা ধাৰণা।"
+        },
+        "id": "sc03.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is an element?",
+          "as": "তলৰ কোনটো মৌল?"
+        },
+        "options": [
+          {
+            "en": "Water",
+            "as": "পানী"
+          },
+          {
+            "en": "Air",
+            "as": "বায়ু"
+          },
+          {
+            "en": "Copper",
+            "as": "তাম"
+          },
+          {
+            "en": "Salt",
+            "as": "নিমখ"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Copper has one kind of atom.",
+          "as": "তামত এবিধ পৰমাণু থাকে।"
+        },
+        "id": "sc03.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order the states as heat is added.",
+          "as": "তাপ দিলে অৱস্থাবোৰ ক্ৰমে সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Ice",
+            "as": "বৰফ"
+          },
+          {
+            "en": "Water",
+            "as": "পানী"
+          },
+          {
+            "en": "Steam",
+            "as": "বাষ্প"
+          }
+        ],
+        "why": {
+          "en": "Solid, liquid, gas.",
+          "as": "গোটা, তৰল, গেছ।"
+        },
+        "id": "sc03.test.05"
+      }
+    ]
+  }
+}

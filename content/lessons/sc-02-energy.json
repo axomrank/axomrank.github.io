@@ -1,0 +1,1327 @@
+{
+  "id": "sc-02-energy",
+  "course": "general-science",
+  "no": 2,
+  "version": 1,
+  "king": {
+    "en": "Energy around us",
+    "as": "চাৰিওফালৰ শক্তি"
+  },
+  "reign": {
+    "en": "Physics",
+    "as": "পদাৰ্থ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science textbooks, Classes 7 to 10: heat, light, sound, electricity",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for this lesson. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "How heat travels",
+        "as": "তাপ কেনেকৈ যায়"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Conduction passes heat through touching particles, as in a metal spoon.",
+          "as": "পৰিবহনে স্পৰ্শ কৰা কণাৰে তাপ পঠিয়ায়, ধাতুৰ চামুচৰ দৰে।"
+        },
+        {
+          "en": "Convection moves heat by flowing liquid or gas.",
+          "as": "পৰিচলনে বৈ যোৱা তৰল বা গেছেৰে তাপ নিয়ে।"
+        },
+        {
+          "en": "Radiation carries heat without any medium, like sunlight.",
+          "as": "বিকিৰণে মাধ্যম নোহোৱাকৈ তাপ নিয়ে, সূৰ্যৰ পোহৰৰ দৰে।"
+        },
+        {
+          "en": "Water is densest at about 4°C, so lakes freeze from the top.",
+          "as": "পানী প্ৰায় ৪°Cত আটাইতকৈ ঘন, সেয়ে হ্ৰদ ওপৰৰ পৰা গোট মাৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Three routes for one cup",
+            "as": "এটা কাপৰ তিনিটা পথ"
+          },
+          "text": [
+            {
+              "en": "In a cup of tea, heat climbs the spoon by <mark>conduction</mark>, circles in the liquid by <mark>convection</mark> and warms your palm by <mark>radiation</mark>.",
+              "as": "এক কাপ চাহত তাপ চামুচেৰে <mark>পৰিবহন</mark>ত উঠে, তৰলত <mark>পৰিচলন</mark>ত ঘূৰে আৰু <mark>বিকিৰণ</mark>ত তোমাৰ তলুৱা উষ্ণ কৰে।"
+            },
+            {
+              "en": "Only radiation can cross empty space. That is how the Sun reaches us.",
+              "as": "বিকিৰণেহে শূন্য স্থান পাৰ হ'ব পাৰে। এইদৰেই সূৰ্যৰ তাপ আমালৈ আহে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Conduction · solids",
+                "as": "পৰিবহন · গোটা"
+              },
+              {
+                "en": "Convection · fluids",
+                "as": "পৰিচলন · তৰল আৰু গেছ"
+              },
+              {
+                "en": "Radiation · no medium",
+                "as": "বিকিৰণ · মাধ্যম নালাগে"
+              }
+            ]
+          },
+          "id": "sc02.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Why are cooking pots often given wooden handles?",
+            "as": "ৰন্ধা পাত্ৰত প্ৰায়ে কাঠৰ হাতল কিয় দিয়া হয়?"
+          },
+          "options": [
+            {
+              "en": "Wood conducts heat poorly",
+              "as": "কাঠ তাপৰ দুৰ্বল পৰিবাহী"
+            },
+            {
+              "en": "Wood is heavier",
+              "as": "কাঠ অধিক গধুৰ"
+            },
+            {
+              "en": "Wood reflects light",
+              "as": "কাঠে পোহৰ প্ৰতিফলিত কৰে"
+            },
+            {
+              "en": "Wood adds flavour",
+              "as": "কাঠে সোৱাদ দিয়ে"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Wood is a heat insulator, so the handle stays cool.",
+            "as": "কাঠ তাপৰ কুপৰিবাহী, সেয়ে হাতল ঠাণ্ডা থাকে।"
+          },
+          "guess": true,
+          "id": "sc02.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Water breaks the rule",
+            "as": "পানীয়ে নিয়ম ভাঙে"
+          },
+          "text": [
+            {
+              "en": "Most things shrink as they cool. Water shrinks only down to about <mark>4°C</mark>, then expands until it freezes.",
+              "as": "বেছিভাগ বস্তু ঠাণ্ডা হ'লে সংকুচিত হয়। পানী প্ৰায় <mark>৪°C</mark> লৈকেহে সংকুচিত হয়, তাৰ পিছত গোট মৰালৈকে প্ৰসাৰিত হয়।"
+            },
+            {
+              "en": "So ice floats, and fish survive under frozen lakes in denser water below.",
+              "as": "সেয়ে বৰফ ওপঙে, আৰু গোট মৰা হ্ৰদৰ তলৰ ঘন পানীত মাছ জীয়াই থাকে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "0°C · 32°F · water freezes",
+                "as": "০°C · ৩২°F · পানী গোট মাৰে"
+              },
+              {
+                "en": "100°C · 212°F · water boils",
+                "as": "১০০°C · ২১২°F · পানী উতলে"
+              }
+            ]
+          },
+          "id": "sc02.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Metal spoon warming",
+                "as": "ধাতুৰ চামুচ গৰম হোৱা"
+              },
+              {
+                "en": "conduction",
+                "as": "পৰিবহন"
+              }
+            ],
+            [
+              {
+                "en": "Boiling water circling",
+                "as": "উতলা পানী ঘূৰা"
+              },
+              {
+                "en": "convection",
+                "as": "পৰিচলন"
+              }
+            ],
+            [
+              {
+                "en": "Sunlight reaching Earth",
+                "as": "সূৰ্যৰ পোহৰ পৃথিৱীলৈ অহা"
+              },
+              {
+                "en": "radiation",
+                "as": "বিকিৰণ"
+              }
+            ],
+            [
+              {
+                "en": "Sea breeze",
+                "as": "সাগৰৰ বতাহ"
+              },
+              {
+                "en": "air convection",
+                "as": "বায়ুৰ পৰিচলন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Ask what carries the heat.",
+            "as": "তাপ কিহে কঢ়িয়ায় সোধা।"
+          },
+          "id": "sc02.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Ice floats because it is less dense than liquid water.",
+            "as": "বৰফ ওপঙে কাৰণ ই তৰল পানীতকৈ কম ঘন।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Water expands as it freezes.",
+            "as": "গোট মৰাৰ সময়ত পানী প্ৰসাৰিত হয়।"
+          },
+          "id": "sc02.u1.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Celsius and Fahrenheit scales read the same at",
+            "as": "চেলছিয়াছ আৰু ফাৰেনহাইট স্কেলে একে পঢ়ে"
+          },
+          "after": {
+            "en": ".",
+            "as": "ত।"
+          },
+          "options": [
+            {
+              "en": "−40",
+              "as": "−৪০"
+            },
+            {
+              "en": "0",
+              "as": "০"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "−40°C equals −40°F.",
+            "as": "−৪০°C = −৪০°F।"
+          },
+          "id": "sc02.u1.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Heat",
+              "from",
+              "the",
+              "Sun",
+              "reaches",
+              "Earth",
+              "by",
+              "conduction."
+            ],
+            "as": [
+              "সূৰ্যৰ",
+              "তাপ",
+              "পৰিবহনেৰে",
+              "পৃথিৱীলৈ",
+              "আহে।"
+            ]
+          },
+          "wrong": {
+            "en": 7,
+            "as": 2
+          },
+          "fix": {
+            "en": "radiation",
+            "as": "বিকিৰণ"
+          },
+          "answerText": {
+            "en": "conduction",
+            "as": "পৰিবহনেৰে"
+          },
+          "why": {
+            "en": "Space has no medium for conduction.",
+            "as": "মহাকাশত পৰিবহনৰ মাধ্যম নাই।"
+          },
+          "id": "sc02.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Bending light",
+        "as": "পোহৰ বেঁকা কৰা"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Refraction is the bending of light between materials.",
+          "as": "পোহৰ এক মাধ্যমৰ পৰা আনলৈ যাওঁতে বেঁকা হোৱাই প্ৰতিসৰণ।"
+        },
+        {
+          "en": "White light splits into seven colours: dispersion.",
+          "as": "বগা পোহৰ সাতটা ৰঙত ভাগ হয়: বিচ্ছুৰণ।"
+        },
+        {
+          "en": "Convex mirrors give a wide view; concave mirrors can magnify.",
+          "as": "উত্তল দাপোণে বহল দৃশ্য দিয়ে; অৱতল দাপোণে ডাঙৰ কৰি দেখুৱাব পাৰে।"
+        },
+        {
+          "en": "Short sight uses a concave lens; long sight uses a convex lens.",
+          "as": "ওচৰ দৃষ্টিৰ বাবে অৱতল লেন্স; দূৰ দৃষ্টিৰ বাবে উত্তল লেন্স।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The bent spoon in the glass",
+            "as": "গিলাচত বেঁকা চামুচ"
+          },
+          "text": [
+            {
+              "en": "A spoon in water looks broken, and a pond looks shallower than it is. Light bends leaving water: <mark>refraction</mark>.",
+              "as": "পানীত চামুচ ভগা যেন লাগে, আৰু পুখুৰী আচলতকৈ কম দ যেন লাগে। পানীৰ পৰা ওলাওঁতে পোহৰ বেঁকা হয়: <mark>প্ৰতিসৰণ</mark>।"
+            },
+            {
+              "en": "Rain drops bend each colour slightly differently. That <mark>dispersion</mark> paints a rainbow: VIBGYOR.",
+              "as": "বৰষুণৰ টোপালে প্ৰতিটো ৰং অলপ বেলেগকৈ বেঁকা কৰে। এই <mark>বিচ্ছুৰণে</mark> ৰামধেনু সৃষ্টি কৰে: VIBGYOR।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Reflection · bounces back",
+                "as": "প্ৰতিফলন · উভতি যায়"
+              },
+              {
+                "en": "Refraction · bends",
+                "as": "প্ৰতিসৰণ · বেঁকা হয়"
+              },
+              {
+                "en": "Dispersion · splits colours",
+                "as": "বিচ্ছুৰণ · ৰং ভাগ হয়"
+              }
+            ]
+          },
+          "id": "sc02.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Why is the sky blue?",
+            "as": "আকাশ কিয় নীলা?"
+          },
+          "options": [
+            {
+              "en": "Air scatters blue light most",
+              "as": "বায়ুৱে নীলা পোহৰ বেছিকৈ সিঁচৰতি কৰে"
+            },
+            {
+              "en": "The sea reflects upward",
+              "as": "সাগৰে ওপৰলৈ প্ৰতিফলিত কৰে"
+            },
+            {
+              "en": "Space is blue",
+              "as": "মহাকাশ নীলা"
+            },
+            {
+              "en": "Ozone is blue paint",
+              "as": "অজ'ন নীলা ৰং"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Shorter blue wavelengths scatter more. C. V. Raman won a Nobel Prize for a related light-scattering effect.",
+            "as": "চুটি নীলা তৰংগ বেছি সিঁচৰতি হয়। চি. ভি. ৰমনে পোহৰৰ সিঁচৰণৰ এক প্ৰভাৱৰ বাবে ন'বেল পাইছিল।"
+          },
+          "guess": true,
+          "id": "sc02.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Mirrors and glasses",
+            "as": "দাপোণ আৰু চশমা"
+          },
+          "text": [
+            {
+              "en": "Vehicle side mirrors are <mark>convex</mark>: they show a wide road, smaller than life. Shaving mirrors are <mark>concave</mark>: close up, they enlarge.",
+              "as": "গাড়ীৰ কাষৰ দাপোণ <mark>উত্তল</mark>: ই বহল পথ সৰুকৈ দেখুৱায়। দাড়ি খুৰোৱা দাপোণ <mark>অৱতল</mark>: ওচৰত ই ডাঙৰ কৰে।"
+            },
+            {
+              "en": "In short sight, far objects blur, and a concave lens fixes it. Long sight needs a convex lens.",
+              "as": "ওচৰ দৃষ্টিত দূৰৰ বস্তু অস্পষ্ট, অৱতল লেন্সে ঠিক কৰে। দূৰ দৃষ্টিত উত্তল লেন্স লাগে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Myopia · short sight · concave",
+                "as": "মায়'পিয়া · ওচৰ দৃষ্টি · অৱতল"
+              },
+              {
+                "en": "Hypermetropia · long sight · convex",
+                "as": "হাইপাৰমেট্ৰ'পিয়া · দূৰ দৃষ্টি · উত্তল"
+              }
+            ]
+          },
+          "id": "sc02.u2.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order rainbow colours from V to R.",
+            "as": "ৰামধেনুৰ ৰং V ৰ পৰা R লৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Violet",
+              "as": "বেঙুনীয়া"
+            },
+            {
+              "en": "Indigo",
+              "as": "ইণ্ডিগো"
+            },
+            {
+              "en": "Blue",
+              "as": "নীলা"
+            },
+            {
+              "en": "Green",
+              "as": "সেউজীয়া"
+            },
+            {
+              "en": "Yellow",
+              "as": "হালধীয়া"
+            },
+            {
+              "en": "Orange",
+              "as": "কমলা"
+            },
+            {
+              "en": "Red",
+              "as": "ৰঙা"
+            }
+          ],
+          "why": {
+            "en": "VIBGYOR: red bends least and violet most.",
+            "as": "VIBGYOR: ৰঙা আটাইতকৈ কম, বেঙুনীয়া আটাইতকৈ বেছি বেঁকা হয়।"
+          },
+          "id": "sc02.u2.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Vehicle side mirror",
+                "as": "গাড়ীৰ কাষৰ দাপোণ"
+              },
+              {
+                "en": "convex mirror",
+                "as": "উত্তল দাপোণ"
+              }
+            ],
+            [
+              {
+                "en": "Shaving mirror",
+                "as": "দাড়ি খুৰোৱা দাপোণ"
+              },
+              {
+                "en": "concave mirror",
+                "as": "অৱতল দাপোণ"
+              }
+            ],
+            [
+              {
+                "en": "Short sight",
+                "as": "ওচৰ দৃষ্টি"
+              },
+              {
+                "en": "concave lens",
+                "as": "অৱতল লেন্স"
+              }
+            ],
+            [
+              {
+                "en": "Long sight",
+                "as": "দূৰ দৃষ্টি"
+              },
+              {
+                "en": "convex lens",
+                "as": "উত্তল লেন্স"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Mirrors and lenses have different everyday jobs.",
+            "as": "দাপোণ আৰু লেন্সৰ দৈনন্দিন কাম বেলেগ।"
+          },
+          "id": "sc02.u2.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A pond looks shallower than it is because of refraction.",
+            "as": "প্ৰতিসৰণৰ বাবে পুখুৰী আচলতকৈ কম দ যেন লাগে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Light bending at the surface lifts the apparent bottom.",
+            "as": "পৃষ্ঠত পোহৰ বেঁকা হোৱাত তলি ওপৰত যেন লাগে।"
+          },
+          "id": "sc02.u2.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "A",
+              "rainbow",
+              "forms",
+              "because",
+              "raindrops",
+              "magnetise",
+              "sunlight."
+            ],
+            "as": [
+              "বৰষুণৰ",
+              "টোপালে",
+              "সূৰ্যৰ",
+              "পোহৰ",
+              "চুম্বকিত",
+              "কৰাৰ",
+              "বাবে",
+              "ৰামধেনু",
+              "হয়।"
+            ]
+          },
+          "wrong": {
+            "en": 5,
+            "as": 4
+          },
+          "fix": {
+            "en": "disperse",
+            "as": "বিচ্ছুৰিত"
+          },
+          "answerText": {
+            "en": "magnetise",
+            "as": "চুম্বকিত"
+          },
+          "why": {
+            "en": "Drops refract, disperse and reflect the light.",
+            "as": "টোপালে পোহৰ প্ৰতিসৰিত, বিচ্ছুৰিত আৰু প্ৰতিফলিত কৰে।"
+          },
+          "id": "sc02.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Sound needs something to shake",
+        "as": "শব্দক কঁপিবলৈ কিবা লাগে"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "Sound is a vibration that needs a medium.",
+          "as": "শব্দ এক কম্পন, ইয়াক মাধ্যম লাগে।"
+        },
+        {
+          "en": "Sound travels fastest in solids and slowest in gases.",
+          "as": "শব্দ গোটাত আটাইতকৈ বেগী, গেছত আটাইতকৈ লেহেমীয়া।"
+        },
+        {
+          "en": "Frequency sets pitch; amplitude sets loudness, measured in decibels.",
+          "as": "কম্পনাংকে সুৰ, বিস্তাৰে শব্দৰ প্ৰাবল্য নিৰ্ধাৰণ কৰে; ইয়াক ডেচিবেলত জোখে।"
+        },
+        {
+          "en": "Humans hear about 20 Hz to 20,000 Hz; ultrasound lies above that.",
+          "as": "মানুহে প্ৰায় ২০ Hz ৰ পৰা ২০,০০০ Hz শুনে; অতিশব্দ ইয়াৰ ওপৰত।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The silent explosion",
+            "as": "নিৰৱ বিস্ফোৰণ"
+          },
+          "text": [
+            {
+              "en": "In space, an explosion would make no sound. Sound is <mark>vibration</mark>, and vacuum has nothing to vibrate.",
+              "as": "মহাকাশত বিস্ফোৰণৰ শব্দ নহ'ব। শব্দ <mark>কম্পন</mark>, আৰু শূন্যস্থানত কঁপিবলৈ একো নাই।"
+            },
+            {
+              "en": "In a storm you see lightning first. Light is vastly faster, while sound crawls at about <mark>340 m/s</mark> in air.",
+              "as": "ধুমুহাত প্ৰথমে বিজুলী দেখা। পোহৰ বহুত বেগী, আৰু বায়ুত শব্দ প্ৰায় <mark>৩৪০ মি/ছে</mark> বেগেৰে যায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Solid · fastest",
+                "as": "গোটা · আটাইতকৈ বেগী"
+              },
+              {
+                "en": "Liquid · middle",
+                "as": "তৰল · মধ্যম"
+              },
+              {
+                "en": "Gas · slowest",
+                "as": "গেছ · আটাইতকৈ লেহেমীয়া"
+              }
+            ]
+          },
+          "id": "sc02.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "A flash comes 3 seconds before thunder. Roughly how far is the storm?",
+            "as": "বিজুলীৰ ৩ ছেকেণ্ড পিছত গাজনি শুনিলে ধুমুহা প্ৰায় কিমান দূৰত?"
+          },
+          "options": [
+            {
+              "en": "100 m",
+              "as": "১০০ মিটাৰ"
+            },
+            {
+              "en": "1 km",
+              "as": "১ কিমি"
+            },
+            {
+              "en": "10 km",
+              "as": "১০ কিমি"
+            },
+            {
+              "en": "100 km",
+              "as": "১০০ কিমি"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Sound covers about 340 m each second, so about 1 km in 3 seconds.",
+            "as": "শব্দ প্ৰতি ছেকেণ্ডত প্ৰায় ৩৪০ মিটাৰ যায়, সেয়ে ৩ ছেকেণ্ডত প্ৰায় ১ কিমি।"
+          },
+          "guess": true,
+          "id": "sc02.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "High, low, loud, soft",
+            "as": "উচ্চ, নিম্ন, ডাঙৰ, সৰু"
+          },
+          "text": [
+            {
+              "en": "Fast vibration means high <mark>pitch</mark>. Big vibration means more <mark>loudness</mark>. A soft whistle can be high; a loud drum can be low.",
+              "as": "দ্ৰুত কম্পনে উচ্চ <mark>সুৰ</mark> দিয়ে। ডাঙৰ কম্পনে অধিক <mark>প্ৰাবল্য</mark> দিয়ে। সৰু হুইচেলৰ সুৰ উচ্চ হ'ব পাৰে; ডাঙৰ ঢোলৰ সুৰ নিম্ন হ'ব পাৰে।"
+            },
+            {
+              "en": "Above human hearing is <mark>ultrasound</mark>. Bats navigate with it, and hospitals use it to image a fetus.",
+              "as": "মানুহৰ শ্ৰৱণৰ ওপৰত <mark>অতিশব্দ</mark>। বাদুলীয়ে ইয়াৰে পথ বিচাৰে, আৰু চিকিৎসালয়ত গৰ্ভস্থ শিশুৰ ছবি লোৱা হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Frequency · pitch · hertz",
+                "as": "কম্পনাংক · সুৰ · হাৰ্টজ"
+              },
+              {
+                "en": "Amplitude · loudness · decibel",
+                "as": "বিস্তাৰ · প্ৰাবল্য · ডেচিবেল"
+              }
+            ]
+          },
+          "id": "sc02.u3.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order by speed of sound, slowest first.",
+            "as": "শব্দৰ বেগ অনুসৰি সজোৱা, লেহেমীয়াটো প্ৰথমে।"
+          },
+          "items": [
+            {
+              "en": "Air",
+              "as": "বায়ু"
+            },
+            {
+              "en": "Water",
+              "as": "পানী"
+            },
+            {
+              "en": "Steel",
+              "as": "ইস্পাত"
+            }
+          ],
+          "why": {
+            "en": "Particles closer and stiffer pass vibration faster.",
+            "as": "ওচৰৰ আৰু টান কণাই কম্পন দ্ৰুত পঠিয়ায়।"
+          },
+          "id": "sc02.u3.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Echo",
+                "as": "প্ৰতিধ্বনি"
+              },
+              {
+                "en": "reflected sound",
+                "as": "প্ৰতিফলিত শব্দ"
+              }
+            ],
+            [
+              {
+                "en": "Hertz",
+                "as": "হাৰ্টজ"
+              },
+              {
+                "en": "frequency unit",
+                "as": "কম্পনাংকৰ একক"
+              }
+            ],
+            [
+              {
+                "en": "Decibel",
+                "as": "ডেচিবেল"
+              },
+              {
+                "en": "loudness scale",
+                "as": "প্ৰাবল্যৰ স্কেল"
+              }
+            ],
+            [
+              {
+                "en": "SONAR",
+                "as": "চ'নাৰ"
+              },
+              {
+                "en": "ultrasound in water",
+                "as": "পানীত অতিশব্দ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Four sound terms, four meanings.",
+            "as": "শব্দৰ চাৰিটা শব্দ, চাৰিটা অৰ্থ।"
+          },
+          "id": "sc02.u3.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Sound travels faster than light.",
+            "as": "শব্দ পোহৰতকৈ বেগী।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Light is close to 300,000 km/s; sound is far slower.",
+            "as": "পোহৰ প্ৰায় ৩,০০,০০০ কিমি/ছে; শব্দ বহুত লেহেমীয়া।"
+          },
+          "id": "sc02.u3.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Pitch",
+              "depends",
+              "on",
+              "the",
+              "amplitude",
+              "of",
+              "vibration."
+            ],
+            "as": [
+              "সুৰ",
+              "কম্পনৰ",
+              "বিস্তাৰৰ",
+              "ওপৰত",
+              "নিৰ্ভৰ",
+              "কৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 4,
+            "as": 2
+          },
+          "fix": {
+            "en": "frequency",
+            "as": "কম্পনাংক"
+          },
+          "answerText": {
+            "en": "amplitude",
+            "as": "বিস্তাৰৰ"
+          },
+          "why": {
+            "en": "Frequency sets pitch; amplitude sets loudness.",
+            "as": "কম্পনাংকে সুৰ, বিস্তাৰে প্ৰাবল্য নিৰ্ধাৰণ কৰে।"
+          },
+          "id": "sc02.u3.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which cannot carry sound?",
+            "as": "কিহে শব্দ কঢ়িয়াব নোৱাৰে?"
+          },
+          "options": [
+            {
+              "en": "Steel",
+              "as": "ইস্পাত"
+            },
+            {
+              "en": "Water",
+              "as": "পানী"
+            },
+            {
+              "en": "Air",
+              "as": "বায়ু"
+            },
+            {
+              "en": "Vacuum",
+              "as": "শূন্যস্থান"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "A vacuum has no particles to vibrate.",
+            "as": "শূন্যস্থানত কঁপিবলৈ কণা নাই।"
+          },
+          "id": "sc02.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "The electric circuit at home",
+        "as": "ঘৰৰ বৈদ্যুতিক বৰ্তনী"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "Current is measured in amperes, voltage in volts, resistance in ohms.",
+          "as": "প্ৰৱাহ এম্পিয়াৰত, বিভৱ ভল্টত, ৰোধ ওমত জোখা হয়।"
+        },
+        {
+          "en": "Ohm's law: voltage equals current times resistance.",
+          "as": "ওমৰ সূত্ৰ: বিভৱ = প্ৰৱাহ × ৰোধ।"
+        },
+        {
+          "en": "Home appliances are wired in parallel.",
+          "as": "ঘৰৰ সঁজুলি সমান্তৰালকৈ সংযোগ কৰা হয়।"
+        },
+        {
+          "en": "One unit on a bill is one kilowatt-hour.",
+          "as": "বিলৰ এক ইউনিট মানে এক কিলোৱাট-ঘণ্টা।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "One bulb fails, the fan runs",
+            "as": "বাল্ব নষ্ট, পাংখা চলে"
+          },
+          "text": [
+            {
+              "en": "A bulb blows but the fan keeps running. Home wiring is <mark>parallel</mark>, so each appliance has its own path.",
+              "as": "বাল্ব নষ্ট হ'লেও পাংখা চলি থাকে। ঘৰৰ তাঁৰ <mark>সমান্তৰাল</mark>, সেয়ে প্ৰতিটো সঁজুলিৰ নিজা পথ থাকে।"
+            },
+            {
+              "en": "In a <mark>series</mark> string of lights, one break can stop the lot. A fuse or breaker cuts dangerous excess current.",
+              "as": "<mark>শ্ৰেণীবদ্ধ</mark> লাইটৰ শাৰীত এটা ঠাই ছিগিলে সকলো বন্ধ হ'ব পাৰে। ফিউজ বা ব্ৰেকাৰে বিপজ্জনক অতিৰিক্ত প্ৰৱাহ কাটে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Series · one path",
+                "as": "শ্ৰেণীবদ্ধ · এটা পথ"
+              },
+              {
+                "en": "Parallel · many paths",
+                "as": "সমান্তৰাল · বহু পথ"
+              }
+            ]
+          },
+          "id": "sc02.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What melts or trips to stop an overloaded circuit?",
+            "as": "অতিভাৰিত বৰ্তনী বন্ধ কৰিবলৈ কি গলে বা ট্ৰিপ কৰে?"
+          },
+          "options": [
+            {
+              "en": "Switch plate",
+              "as": "চুইচ প্লেট"
+            },
+            {
+              "en": "Fuse or breaker",
+              "as": "ফিউজ বা ব্ৰেকাৰ"
+            },
+            {
+              "en": "Earth pin",
+              "as": "আৰ্থ পিন"
+            },
+            {
+              "en": "Bulb holder",
+              "as": "বাল্ব হোল্ডাৰ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "It breaks the circuit before wires overheat.",
+            "as": "তাঁৰ গৰম হোৱাৰ আগতে ই বৰ্তনী ভাঙে।"
+          },
+          "guess": true,
+          "id": "sc02.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "What the bill really counts",
+            "as": "বিলে আচলতে কি গণে"
+          },
+          "text": [
+            {
+              "en": "Think of water in a pipe: <mark>voltage</mark> is the push, <mark>current</mark> the flow, <mark>resistance</mark> the narrowing. V = I × R.",
+              "as": "পাইপৰ পানী ভাবা: <mark>বিভৱ</mark> ঠেলা, <mark>প্ৰৱাহ</mark> সোঁত, <mark>ৰোধ</mark> ঠেক অংশ। V = I × R।"
+            },
+            {
+              "en": "Your bill counts energy in kilowatt-hours. A 1,000 W heater running one hour uses one unit.",
+              "as": "তোমাৰ বিলে শক্তি কিলোৱাট-ঘণ্টাত গণে। ১,০০০ ৱাটৰ হিটাৰে এঘণ্টা চলিলে এক ইউনিট খৰচ হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Voltage · volt",
+                "as": "বিভৱ · ভল্ট"
+              },
+              {
+                "en": "Current · ampere",
+                "as": "প্ৰৱাহ · এম্পিয়াৰ"
+              },
+              {
+                "en": "Resistance · ohm",
+                "as": "ৰোধ · ওম"
+              },
+              {
+                "en": "Energy · kilowatt-hour",
+                "as": "শক্তি · কিলোৱাট-ঘণ্টা"
+              }
+            ]
+          },
+          "id": "sc02.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Volt",
+                "as": "ভল্ট"
+              },
+              {
+                "en": "electric push",
+                "as": "বৈদ্যুতিক ঠেলা"
+              }
+            ],
+            [
+              {
+                "en": "Ampere",
+                "as": "এম্পিয়াৰ"
+              },
+              {
+                "en": "flow of charge",
+                "as": "আধানৰ প্ৰৱাহ"
+              }
+            ],
+            [
+              {
+                "en": "Ohm",
+                "as": "ওম"
+              },
+              {
+                "en": "opposition to flow",
+                "as": "প্ৰৱাহৰ বাধা"
+              }
+            ],
+            [
+              {
+                "en": "Kilowatt-hour",
+                "as": "কিলোৱাট-ঘণ্টা"
+              },
+              {
+                "en": "energy billed",
+                "as": "বিলৰ শক্তি"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Keep the four electric units apart.",
+            "as": "চাৰিটা বৈদ্যুতিক একক পৃথক কৰি মনত ৰাখা।"
+          },
+          "id": "sc02.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A 100 W bulb running ten hours uses one unit of electricity.",
+            "as": "১০০ ৱাটৰ বাল্ব দহ ঘণ্টা চলিলে এক ইউনিট বিদ্যুৎ খৰচ হয়।"
+          },
+          "answer": true,
+          "why": {
+            "en": "100 W × 10 h = 1,000 Wh = 1 kWh.",
+            "as": "১০০ ৱাট × ১০ ঘণ্টা = ১,০০০ ৱাট-ঘণ্টা = ১ kWh।"
+          },
+          "id": "sc02.u4.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Copper wires carry current well because copper is a good",
+            "as": "তামৰ তাঁৰে ভালদৰে প্ৰৱাহ কঢ়িয়ায় কাৰণ তাম এক ভাল"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "conductor",
+              "as": "পৰিবাহী"
+            },
+            {
+              "en": "insulator",
+              "as": "কুপৰিবাহী"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Rubber or plastic covers it as an insulator.",
+            "as": "ৰবৰ বা প্লাষ্টিকে কুপৰিবাহী হিচাপে ইয়াক ঢাকে।"
+          },
+          "id": "sc02.u4.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is an insulator?",
+            "as": "তলৰ কোনটো কুপৰিবাহী?"
+          },
+          "options": [
+            {
+              "en": "Copper",
+              "as": "তাম"
+            },
+            {
+              "en": "Aluminium",
+              "as": "এলুমিনিয়াম"
+            },
+            {
+              "en": "Rubber",
+              "as": "ৰবৰ"
+            },
+            {
+              "en": "Silver",
+              "as": "ৰূপ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Rubber resists current; the rest are metals.",
+            "as": "ৰবৰে প্ৰৱাহ বাধা দিয়ে; বাকীবোৰ ধাতু।"
+          },
+          "id": "sc02.u4.07"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Household",
+              "appliances",
+              "are",
+              "usually",
+              "connected",
+              "in",
+              "series."
+            ],
+            "as": [
+              "ঘৰুৱা",
+              "সঁজুলি",
+              "সাধাৰণতে",
+              "শ্ৰেণীবদ্ধকৈ",
+              "সংযোগ",
+              "কৰা",
+              "হয়।"
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 3
+          },
+          "fix": {
+            "en": "parallel",
+            "as": "সমান্তৰালকৈ"
+          },
+          "answerText": {
+            "en": "series",
+            "as": "শ্ৰেণীবদ্ধকৈ"
+          },
+          "why": {
+            "en": "Parallel keeps every appliance at full voltage and independent.",
+            "as": "সমান্তৰালে প্ৰতিটো সঁজুলিক পূৰ্ণ বিভৱ আৰু স্বাধীনতা দিয়ে।"
+          },
+          "id": "sc02.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Energy check",
+      "as": "শক্তি পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which lens corrects short sight?",
+          "as": "ওচৰ দৃষ্টি কোনটো লেন্সে ঠিক কৰে?"
+        },
+        "options": [
+          {
+            "en": "Convex",
+            "as": "উত্তল"
+          },
+          {
+            "en": "Concave",
+            "as": "অৱতল"
+          },
+          {
+            "en": "Cylindrical only",
+            "as": "কেৱল চিলিণ্ড্ৰিকেল"
+          },
+          {
+            "en": "None",
+            "as": "কোনোটোৱে নহয়"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "A concave lens spreads light so the image falls on the retina.",
+          "as": "অৱতল লেন্সে পোহৰ বিয়পাই ৰেটিনাত প্ৰতিবিম্ব পেলায়।"
+        },
+        "id": "sc02.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Sound can cross empty space.",
+          "as": "শব্দই শূন্যস্থান পাৰ হ'ব পাৰে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "Sound needs a medium.",
+          "as": "শব্দক মাধ্যম লাগে।"
+        },
+        "id": "sc02.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Refraction",
+              "as": "প্ৰতিসৰণ"
+            },
+            {
+              "en": "bent spoon in water",
+              "as": "পানীত বেঁকা চামুচ"
+            }
+          ],
+          [
+            {
+              "en": "Convection",
+              "as": "পৰিচলন"
+            },
+            {
+              "en": "rising warm air",
+              "as": "উঠি যোৱা উষ্ণ বায়ু"
+            }
+          ],
+          [
+            {
+              "en": "Echo",
+              "as": "প্ৰতিধ্বনি"
+            },
+            {
+              "en": "reflected sound",
+              "as": "প্ৰতিফলিত শব্দ"
+            }
+          ],
+          [
+            {
+              "en": "Fuse",
+              "as": "ফিউজ"
+            },
+            {
+              "en": "cuts excess current",
+              "as": "অতিৰিক্ত প্ৰৱাহ কাটে"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One example each from heat, light, sound and electricity.",
+          "as": "তাপ, পোহৰ, শব্দ আৰু বিদ্যুতৰ এটাকৈ উদাহৰণ।"
+        },
+        "id": "sc02.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is not a way heat travels?",
+          "as": "তাপ যোৱাৰ উপায় কোনটো নহয়?"
+        },
+        "options": [
+          {
+            "en": "Conduction",
+            "as": "পৰিবহন"
+          },
+          {
+            "en": "Convection",
+            "as": "পৰিচলন"
+          },
+          {
+            "en": "Radiation",
+            "as": "বিকিৰণ"
+          },
+          {
+            "en": "Dispersion",
+            "as": "বিচ্ছুৰণ"
+          }
+        ],
+        "answer": 3,
+        "why": {
+          "en": "Dispersion is a property of light.",
+          "as": "বিচ্ছুৰণ পোহৰৰ ধৰ্ম।"
+        },
+        "id": "sc02.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order sound speed, fastest first.",
+          "as": "শব্দৰ বেগ সজোৱা, বেগীটো প্ৰথমে।"
+        },
+        "items": [
+          {
+            "en": "Steel",
+            "as": "ইস্পাত"
+          },
+          {
+            "en": "Water",
+            "as": "পানী"
+          },
+          {
+            "en": "Air",
+            "as": "বায়ু"
+          }
+        ],
+        "why": {
+          "en": "Solid, then liquid, then gas.",
+          "as": "গোটা, তৰল, তাৰ পিছত গেছ।"
+        },
+        "id": "sc02.test.05"
+      }
+    ]
+  }
+}
