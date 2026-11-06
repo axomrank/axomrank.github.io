@@ -5,7 +5,7 @@ Measured 2026-11-02. The user requested one agent and explicitly deferred Assame
 - **93 core lessons / 380 units**, covering every required curriculum row.
 - **41 optional Ahom deep-dive lessons / 152 units** retained.
 - **134 lessons / 532 units / 2,651 practice questions** in total; 2,575 questions belong to core courses.
-- Assam History is one visible course: 93 lessons and 27 checkpoints. Former core course definitions/banks are archived under `docs/authoring/pre-unification/`. Old course-home links redirect;original lesson and exercise ids retain progress.
+- Assam History is one visible course: 93 lessons and 27 checkpoints. Former core course definitions and banks are in git history (see `docs/CLEANUP.md`). Old course-home links redirect;original lesson and exercise ids retain progress.
 - `history.html` provides the searchable cross-course timeline and people/place index: **573 dated entries and 697 linked names**.
 - Source and image-provenance registers are under `docs/research/`. Historical reconstructions are labelled as artistic interpretations. No invented PYQ or human-review provenance.
 

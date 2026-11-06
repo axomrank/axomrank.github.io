@@ -1,6 +1,6 @@
 # Images for the 76 formerly CSS-only units
 
-The scope is the 76 units whose story cards all lacked both image and map metadata at the start of this work. Their existing bilingual text, card IDs and source lists are frozen in `css-only-image-plan.json`. One distinct contextual illustration is planned per unit, shared by its story cards. This keeps each short unit visually coherent without creating a false documentary scene for every claim.
+The scope is the 76 units whose story cards all lacked both image and map metadata at the start of this work. Their existing bilingual text, card IDs and source lists are frozen in `css-only-image-plan.json` (in git history; see `docs/CLEANUP.md`). One distinct contextual illustration is planned per unit, shared by its story cards. This keeps each short unit visually coherent without creating a false documentary scene for every claim.
 
 ## Source checks and visual constraints
 
@@ -11,7 +11,7 @@ The scope is the 76 units whose story cards all lacked both image and map metada
 
 Existing lesson sources remain the basis for the historical teaching text. The art adds no new dates, outcomes, evidence, identities or purported source passages. Legal, census, settlement and autonomy illustrations show contextual civic reading/discussion, with no invented signing ceremony, boundary or readable document. Author units use literary objects and reading settings without invented portraits. Legendary narratives remain identified by the existing teaching text and an artistic-interpretation label. War and violence imagery is non-graphic and avoids invented victims or identifiable leaders.
 
-Generation uses the built-in imagegen tool. Full prompts and saved output paths are recorded in `css-only-generation-progress.json`; integrated WebP paths and per-card provenance are recorded separately after review. Images must be inspected before integration. Existing exercise and progress IDs remain unchanged. New Assamese caption prefixes retain pending editorial review.
+Generation uses the built-in imagegen tool. Full prompts and saved output paths are recorded in `css-only-generation-progress.json` (in git history; see `docs/CLEANUP.md`); integrated WebP paths and per-card provenance are recorded separately after review. Images must be inspected before integration. Existing exercise and progress IDs remain unchanged. New Assamese caption prefixes retain pending editorial review.
 
 ## User direction
 

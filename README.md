@@ -25,13 +25,12 @@ Short, bilingual (English and Assamese) lessons and exam practice for ADRE, Assa
 | Hosting, Firebase, publishing | [docs/SETUP.md](docs/SETUP.md) |
 | Every script and whether it is safe to rerun | [scripts/README.md](scripts/README.md) |
 | Cleanup decisions and preserved material | [docs/CLEANUP.md](docs/CLEANUP.md) |
-| Interface styling record | [docs/GLASS-UI.md](docs/GLASS-UI.md) |
 
 **Assam History:** [curriculum](docs/CURRICULUM.md), [mission and memory revamp](docs/EXPERIENCE-REVAMP.md), [completion record](docs/HISTORY-COMPLETION.md) ([data](docs/history-completion.json))
 
 **Other courses:** [Constitution](docs/CONSTITUTION-COURSE.md), [Indian History](docs/INDIAN-HISTORY-COURSE.md), [Assam Geography](docs/ASSAM-GEOGRAPHY-COURSE.md), [Physical and Indian Geography](docs/PHYSICAL-AND-INDIAN-GEOGRAPHY-COURSE.md), [Mathematics](docs/MATHEMATICS-COURSE.md) and its [visuals](docs/MATHEMATICS-VISUALS.md)
 
-**Evidence:** `docs/research/` holds source registers and picture provenance. `docs/authoring/` holds the briefs and scripts that created lessons, plus the pre-unification course snapshots.
+**Evidence:** `docs/research/` holds source registers and picture provenance.
 
 ## Layout
 
@@ -47,8 +46,7 @@ content/                  catalog, courses/, lessons/, questions/, skills/, maps
 icons/                    app icons
 scripts/                  build.py, verify.sh, checks and generators
 scripts/math_course/      Mathematics lesson modules, used by build_math_course.py
-scripts/archive/          finished one-time migrations: do not run
-docs/                     plans, course documents, research, authoring
+docs/                     plans, course documents, research
 firestore.rules           Firestore security rules
 private/, output/         local only, git-ignored (drafts, grants, reports, browser artifacts)
 ```

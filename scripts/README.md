@@ -51,6 +51,5 @@ the shared step helpers.
 
 ## Other folders and files
 
-- `archive/`: finished one-time migrations. Do not run them. See its README.
 - `preview_drafts.py`: user-owned and untracked. Read it before running it,
   because it replaces its hard-coded output folder.
