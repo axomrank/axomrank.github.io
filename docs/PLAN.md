@@ -57,7 +57,8 @@ until independently deployed and verified.
   History experience is measured and maintained. The Constitution course plan
   is in [CONSTITUTION-COURSE.md](CONSTITUTION-COURSE.md). The Indian History plan is
   in [INDIAN-HISTORY-COURSE.md](INDIAN-HISTORY-COURSE.md). The Reasoning plan is in
-  [REASONING-COURSE.md](REASONING-COURSE.md).
+  [REASONING-COURSE.md](REASONING-COURSE.md). Remaining courses are planned in
+  [COURSE-ROADMAP.md](COURSE-ROADMAP.md).
 - Consider optional collaboration, official-notice updates and Android/iOS
   wrappers after the learning loop works. A public leaderboard is a later
   experiment, not a requirement for the core learning journey.

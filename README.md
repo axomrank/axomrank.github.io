@@ -29,7 +29,9 @@ Short, bilingual (English and Assamese) lessons and exam practice for ADRE, Assa
 
 **Assam History:** [curriculum](docs/CURRICULUM.md), [mission and memory revamp](docs/EXPERIENCE-REVAMP.md), [completion record](docs/HISTORY-COMPLETION.md) ([data](docs/history-completion.json))
 
-**Other courses:** [Constitution](docs/CONSTITUTION-COURSE.md), [Indian History](docs/INDIAN-HISTORY-COURSE.md), [Assam Geography](docs/ASSAM-GEOGRAPHY-COURSE.md), [Physical and Indian Geography](docs/PHYSICAL-AND-INDIAN-GEOGRAPHY-COURSE.md), [Mathematics](docs/MATHEMATICS-COURSE.md) and its [visuals](docs/MATHEMATICS-VISUALS.md), [Reasoning plan and pilot](docs/REASONING-COURSE.md)
+**Other courses:** [Constitution](docs/CONSTITUTION-COURSE.md), [Indian History](docs/INDIAN-HISTORY-COURSE.md), [Assam Geography](docs/ASSAM-GEOGRAPHY-COURSE.md), [Physical and Indian Geography](docs/PHYSICAL-AND-INDIAN-GEOGRAPHY-COURSE.md), [Mathematics](docs/MATHEMATICS-COURSE.md) and its [visuals](docs/MATHEMATICS-VISUALS.md), [Reasoning](docs/REASONING-COURSE.md)
+
+**Planned courses:** [roadmap and order](docs/COURSE-ROADMAP.md), with one plan for each remaining course
 
 **Evidence:** `docs/research/` holds source registers and picture provenance.
 
