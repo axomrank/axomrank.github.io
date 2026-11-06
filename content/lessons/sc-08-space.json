@@ -1,0 +1,1389 @@
+{
+  "id": "sc-08-space",
+  "course": "general-science",
+  "no": 8,
+  "version": 1,
+  "king": {
+    "en": "Space and India's missions",
+    "as": "মহাকাশ আৰু ভাৰতৰ অভিযান"
+  },
+  "reign": {
+    "en": "Science and technology",
+    "as": "বিজ্ঞান আৰু প্ৰযুক্তি"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "ISRO: Missions",
+      "url": "https://www.isro.gov.in/",
+      "used_for": "Lead for Indian mission dates. Passages still to be read."
+    },
+    {
+      "title": "NASA Science: Solar System",
+      "url": "https://science.nasa.gov/solar-system/",
+      "used_for": "Lead for planet facts. Passages still to be read."
+    },
+    {
+      "title": "Gaganyaan-1 summary and October 2026 press reports",
+      "url": "https://en.wikipedia.org/wiki/Gaganyaan-1",
+      "used_for": "Search lead for the November 2026 Gaganyaan status; confirm with ISRO."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Eight worlds, one Sun",
+        "as": "আঠটা জগত, এটা সূৰ্য"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Mercury is the smallest planet and the closest to the Sun.",
+          "as": "বুধ আটাইতকৈ সৰু আৰু সূৰ্যৰ আটাইতকৈ ওচৰৰ গ্ৰহ।"
+        },
+        {
+          "en": "Venus is the hottest planet because of its thick carbon dioxide atmosphere.",
+          "as": "ডাঠ কাৰ্বন ডাই অক্সাইডৰ বায়ুমণ্ডলৰ বাবে শুক্ৰ আটাইতকৈ উষ্ণ গ্ৰহ।"
+        },
+        {
+          "en": "Jupiter is the largest planet.",
+          "as": "বৃহস্পতি আটাইতকৈ ডাঙৰ গ্ৰহ।"
+        },
+        {
+          "en": "Pluto was reclassified as a dwarf planet in 2006.",
+          "as": "২০০৬ চনত প্লুটোক বামন গ্ৰহ হিচাপে পুনৰ শ্ৰেণীভুক্ত কৰা হয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The closest is not the hottest",
+            "as": "আটাইতকৈ ওচৰৰটো উষ্ণতম নহয়"
+          },
+          "text": [
+            {
+              "en": "Mercury sits nearest the Sun, yet <mark>Venus</mark> is hotter. Its thick carbon dioxide blanket traps heat.",
+              "as": "বুধ সূৰ্যৰ আটাইতকৈ ওচৰত, তথাপি <mark>শুক্ৰ</mark> অধিক উষ্ণ। ইয়াৰ ডাঠ কাৰ্বন ডাই অক্সাইডৰ আৱৰণে তাপ ধৰি ৰাখে।"
+            },
+            {
+              "en": "Mercury has almost no air to hold heat. What does that tell you about Earth's own atmosphere?",
+              "as": "বুধৰ তাপ ধৰি ৰাখিবলৈ প্ৰায় বায়ু নাই। ই পৃথিৱীৰ বায়ুমণ্ডলৰ বিষয়ে কি কয়?"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Mercury · smallest, nearest",
+                "as": "বুধ · সৰুতম, ওচৰতম"
+              },
+              {
+                "en": "Venus · hottest",
+                "as": "শুক্ৰ · উষ্ণতম"
+              },
+              {
+                "en": "Mars · the red planet",
+                "as": "মংগল · ৰঙা গ্ৰহ"
+              },
+              {
+                "en": "Jupiter · largest",
+                "as": "বৃহস্পতি · ডাঙৰতম"
+              }
+            ]
+          },
+          "id": "sc08.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which planet looks red because of iron oxide on its surface?",
+            "as": "পৃষ্ঠৰ আইৰন অক্সাইডৰ বাবে কোনটো গ্ৰহ ৰঙা দেখি?"
+          },
+          "options": [
+            {
+              "en": "Venus",
+              "as": "শুক্ৰ"
+            },
+            {
+              "en": "Mars",
+              "as": "মংগল"
+            },
+            {
+              "en": "Saturn",
+              "as": "শনি"
+            },
+            {
+              "en": "Neptune",
+              "as": "নেপচুন"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Rust-like iron oxide in the soil colours Mars.",
+            "as": "মামৰৰ দৰে আইৰন অক্সাইডে মংগলক ৰঙা কৰে।"
+          },
+          "guess": true,
+          "id": "sc08.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Four rocky, four giant",
+            "as": "চাৰিটা শিলময়, চাৰিটা দৈত্য"
+          },
+          "text": [
+            {
+              "en": "The inner four are rocky. The outer four are <mark>giants</mark> of gas and ice, and Saturn has the brightest rings.",
+              "as": "ভিতৰৰ চাৰিটা শিলময়। বাহিৰৰ চাৰিটা গেছ আৰু বৰফৰ <mark>দৈত্য</mark>, আৰু শনিৰ বলয় আটাইতকৈ উজ্জ্বল।"
+            },
+            {
+              "en": "Pluto was once called the ninth planet. In 2006 astronomers reclassified it as a <mark>dwarf planet</mark>.",
+              "as": "প্লুটোক এসময়ত নৱম গ্ৰহ বোলা হৈছিল। ২০০৬ চনত জ্যোতিৰ্বিদসকলে ইয়াক <mark>বামন গ্ৰহ</mark> হিচাপে শ্ৰেণীভুক্ত কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Rocky: Mercury, Venus, Earth, Mars",
+                "as": "শিলময়: বুধ, শুক্ৰ, পৃথিৱী, মংগল"
+              },
+              {
+                "en": "Giants: Jupiter, Saturn, Uranus, Neptune",
+                "as": "দৈত্য: বৃহস্পতি, শনি, ইউৰেনাছ, নেপচুন"
+              }
+            ]
+          },
+          "id": "sc08.u1.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order the planets outward from the Sun.",
+            "as": "সূৰ্যৰ পৰা বাহিৰলৈ গ্ৰহবোৰ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Mercury",
+              "as": "বুধ"
+            },
+            {
+              "en": "Venus",
+              "as": "শুক্ৰ"
+            },
+            {
+              "en": "Earth",
+              "as": "পৃথিৱী"
+            },
+            {
+              "en": "Mars",
+              "as": "মংগল"
+            },
+            {
+              "en": "Jupiter",
+              "as": "বৃহস্পতি"
+            },
+            {
+              "en": "Saturn",
+              "as": "শনি"
+            }
+          ],
+          "why": {
+            "en": "Mercury, Venus, Earth, Mars, Jupiter, Saturn; then Uranus and Neptune.",
+            "as": "বুধ, শুক্ৰ, পৃথিৱী, মংগল, বৃহস্পতি, শনি; তাৰ পিছত ইউৰেনাছ আৰু নেপচুন।"
+          },
+          "id": "sc08.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Mercury is the hottest planet because it is closest to the Sun.",
+            "as": "সূৰ্যৰ ওচৰত থকাৰ বাবে বুধ আটাইতকৈ উষ্ণ গ্ৰহ।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Venus is hottest; its atmosphere traps heat.",
+            "as": "শুক্ৰ উষ্ণতম; ইয়াৰ বায়ুমণ্ডলে তাপ ধৰি ৰাখে।"
+          },
+          "id": "sc08.u1.05"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am the farthest planet from the Sun.",
+              "as": "মই সূৰ্যৰ পৰা আটাইতকৈ দূৰৰ গ্ৰহ।"
+            },
+            {
+              "en": "I am an ice giant.",
+              "as": "মই এক বৰফৰ দৈত্য।"
+            },
+            {
+              "en": "My name comes from the Roman god of the sea.",
+              "as": "মোৰ নাম ৰোমান সাগৰ দেৱতাৰ পৰা আহিছে।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Uranus",
+              "as": "ইউৰেনাছ"
+            },
+            {
+              "en": "Saturn",
+              "as": "শনি"
+            },
+            {
+              "en": "Neptune",
+              "as": "নেপচুন"
+            },
+            {
+              "en": "Pluto",
+              "as": "প্লুটো"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Neptune is the eighth and outermost planet. Pluto is no longer counted as a planet.",
+            "as": "নেপচুন অষ্টম আৰু আটাইতকৈ বাহিৰৰ গ্ৰহ। প্লুটোক এতিয়া গ্ৰহ বুলি গণ্য কৰা নহয়।"
+          },
+          "id": "sc08.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one is NOT a giant planet?",
+            "as": "তলৰ কোনটো দৈত্য গ্ৰহ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Jupiter",
+              "as": "বৃহস্পতি"
+            },
+            {
+              "en": "Uranus",
+              "as": "ইউৰেনাছ"
+            },
+            {
+              "en": "Mars",
+              "as": "মংগল"
+            },
+            {
+              "en": "Saturn",
+              "as": "শনি"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Mars is one of the four rocky planets.",
+            "as": "মংগল চাৰিটা শিলময় গ্ৰহৰ এটা।"
+          },
+          "id": "sc08.u1.07"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Jupiter",
+                "as": "বৃহস্পতি"
+              },
+              {
+                "en": "largest planet",
+                "as": "ডাঙৰতম গ্ৰহ"
+              }
+            ],
+            [
+              {
+                "en": "Saturn",
+                "as": "শনি"
+              },
+              {
+                "en": "bright rings",
+                "as": "উজ্জ্বল বলয়"
+              }
+            ],
+            [
+              {
+                "en": "Mercury",
+                "as": "বুধ"
+              },
+              {
+                "en": "smallest planet",
+                "as": "সৰুতম গ্ৰহ"
+              }
+            ],
+            [
+              {
+                "en": "Pluto",
+                "as": "প্লুটো"
+              },
+              {
+                "en": "dwarf planet",
+                "as": "বামন গ্ৰহ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "One distinguishing label for each world.",
+            "as": "প্ৰতিটোৰ এটা চিনাকি লেবেল।"
+          },
+          "id": "sc08.u1.08"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Why satellites stay up",
+        "as": "উপগ্ৰহ কিয় নপৰে"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "A satellite stays in orbit because its sideways speed balances gravity's pull.",
+          "as": "পাৰ্শ্ব বেগে মাধ্যাকৰ্ষণক সন্তুলিত কৰে বাবে উপগ্ৰহ কক্ষপথত থাকে।"
+        },
+        {
+          "en": "A geostationary satellite orbits about 35,786 km above the equator.",
+          "as": "ভূস্থিৰ উপগ্ৰহে বিষুৱৰেখাৰ প্ৰায় ৩৫,৭৮৬ কিমি ওপৰত ঘূৰে।"
+        },
+        {
+          "en": "Geostationary satellites suit communication and weather watching.",
+          "as": "ভূস্থিৰ উপগ্ৰহ যোগাযোগ আৰু বতৰ পৰ্যবেক্ষণৰ বাবে উপযোগী।"
+        },
+        {
+          "en": "Low polar orbits suit mapping and Earth observation.",
+          "as": "নিম্ন মেৰু কক্ষপথ মানচিত্ৰ আৰু ভূ-পৰ্যবেক্ষণৰ বাবে উপযোগী।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Falling, but always missing Earth",
+            "as": "পৰি আছে, কিন্তু পৃথিৱীত নপৰে"
+          },
+          "text": [
+            {
+              "en": "A satellite is falling all the time. Its <mark>sideways speed</mark> is so great that Earth's surface curves away beneath it.",
+              "as": "উপগ্ৰহ সদায় পৰি আছে। ইয়াৰ <mark>পাৰ্শ্ব বেগ</mark> ইমান বেছি যে তলত পৃথিৱীৰ পৃষ্ঠ বেঁকা হৈ আঁতৰি যায়।"
+            },
+            {
+              "en": "Too slow and it comes down. That balance with gravity is called an <mark>orbit</mark>.",
+              "as": "লাহে হ'লে ই তললৈ নামি আহে। মাধ্যাকৰ্ষণৰ সৈতে এই সন্তুলনকে <mark>কক্ষপথ</mark> বোলে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Gravity pulls in",
+                "as": "মাধ্যাকৰ্ষণে ভিতৰলৈ টানে"
+              },
+              {
+                "en": "Speed carries it sideways",
+                "as": "বেগে কাষলৈ লৈ যায়"
+              }
+            ]
+          },
+          "id": "sc08.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Why does a TV dish point at one fixed spot in the sky?",
+            "as": "টিভিৰ ডিছ আকাশৰ এটা নিৰ্দিষ্ট ঠাইলৈ কিয় মুখ কৰি থাকে?"
+          },
+          "options": [
+            {
+              "en": "The satellite matches Earth's rotation",
+              "as": "উপগ্ৰহে পৃথিৱীৰ ঘূৰ্ণনৰ সৈতে মিলি যায়"
+            },
+            {
+              "en": "The satellite does not move at all",
+              "as": "উপগ্ৰহ একেবাৰে নলৰে"
+            },
+            {
+              "en": "The signal comes from the Moon",
+              "as": "সংকেত চন্দ্ৰৰ পৰা আহে"
+            },
+            {
+              "en": "Rain bends the signal",
+              "as": "বৰষুণে সংকেত বেঁকা কৰে"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A geostationary satellite moves, but takes one day per orbit, so it seems fixed.",
+            "as": "ভূস্থিৰ উপগ্ৰহ চলি থাকে, কিন্তু এবাৰ ঘূৰিবলৈ এদিন লয়, সেয়ে স্থিৰ যেন লাগে।"
+          },
+          "guess": true,
+          "id": "sc08.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "High and fixed, low and sweeping",
+            "as": "ওখ আৰু স্থিৰ, নিম্ন আৰু বিস্তৃত"
+          },
+          "text": [
+            {
+              "en": "At about <mark>35,786 km</mark> above the equator, one orbit takes one day. The satellite hangs over one region.",
+              "as": "বিষুৱৰেখাৰ প্ৰায় <mark>৩৫,৭৮৬ কিমি</mark> ওপৰত এবাৰ ঘূৰিবলৈ এদিন লাগে। উপগ্ৰহ এটা অঞ্চলৰ ওপৰত থকা যেন লাগে।"
+            },
+            {
+              "en": "A low polar satellite passes near both poles while Earth turns beneath it, so it can image nearly the whole planet.",
+              "as": "নিম্ন মেৰু উপগ্ৰহে দুয়োটা মেৰুৰ ওচৰেদি যায়; তলত পৃথিৱী ঘূৰে, সেয়ে ই প্ৰায় গোটেই গ্ৰহৰ ছবি ল'ব পাৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Geostationary · TV, weather",
+                "as": "ভূস্থিৰ · টিভি, বতৰ"
+              },
+              {
+                "en": "Low polar · mapping, Earth observation",
+                "as": "নিম্ন মেৰু · মানচিত্ৰ, ভূ-পৰ্যবেক্ষণ"
+              }
+            ]
+          },
+          "id": "sc08.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Geostationary orbit",
+                "as": "ভূস্থিৰ কক্ষপথ"
+              },
+              {
+                "en": "seems fixed over one place",
+                "as": "এঠাইৰ ওপৰত স্থিৰ যেন"
+              }
+            ],
+            [
+              {
+                "en": "Polar orbit",
+                "as": "মেৰু কক্ষপথ"
+              },
+              {
+                "en": "passes near both poles",
+                "as": "দুয়ো মেৰুৰ ওচৰেদি যায়"
+              }
+            ],
+            [
+              {
+                "en": "Gravity",
+                "as": "মাধ্যাকৰ্ষণ"
+              },
+              {
+                "en": "pulls the satellite in",
+                "as": "উপগ্ৰহক ভিতৰলৈ টানে"
+              }
+            ],
+            [
+              {
+                "en": "Sideways speed",
+                "as": "পাৰ্শ্ব বেগ"
+              },
+              {
+                "en": "keeps it from landing",
+                "as": "ইয়াক তললৈ নামিবলৈ নিদিয়ে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Orbit type depends on the job.",
+            "as": "কামৰ ওপৰত কক্ষপথৰ ধৰণ নিৰ্ভৰ কৰে।"
+          },
+          "id": "sc08.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "There is no gravity on a satellite in orbit.",
+            "as": "কক্ষপথৰ উপগ্ৰহত মাধ্যাকৰ্ষণ নাই।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Gravity is what keeps it in orbit; objects inside float because they fall together.",
+            "as": "মাধ্যাকৰ্ষণেই ইয়াক কক্ষপথত ৰাখে; ভিতৰৰ বস্তু একেলগে পৰি থকাৰ বাবে ওপঙে।"
+          },
+          "id": "sc08.u2.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A satellite that must image all of Assam on repeat passes needs a low",
+            "as": "অসমৰ ছবি বাৰে বাৰে লোৱা উপগ্ৰহৰ বাবে উপযুক্ত নিম্ন কক্ষপথ হ’ল"
+          },
+          "after": {
+            "en": " orbit.",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "polar",
+              "as": "মেৰু"
+            },
+            {
+              "en": "geostationary",
+              "as": "ভূস্থিৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Low orbits see fine detail, and a polar path covers changing strips of Earth.",
+            "as": "নিম্ন কক্ষপথে সূক্ষ্ম বিৱৰণ দেখে, আৰু মেৰু পথে পৃথিৱীৰ বেলেগ বেলেগ অংশ সামৰে।"
+          },
+          "id": "sc08.u2.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "A",
+              "geostationary",
+              "satellite",
+              "orbits",
+              "above",
+              "the",
+              "poles."
+            ],
+            "as": [
+              "ভূস্থিৰ",
+              "উপগ্ৰহে",
+              "মেৰুৰ",
+              "ওপৰত",
+              "ঘূৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 5,
+            "as": 2
+          },
+          "fix": {
+            "en": "equator",
+            "as": "বিষুৱৰেখা"
+          },
+          "answerText": {
+            "en": "poles",
+            "as": "মেৰুৰ"
+          },
+          "why": {
+            "en": "Only an orbit over the equator can stay in step with one spot on Earth.",
+            "as": "কেৱল বিষুৱৰেখাৰ ওপৰৰ কক্ষপথেহে পৃথিৱীৰ এটা ঠাইৰ সৈতে মিলি থাকিব পাৰে।"
+          },
+          "id": "sc08.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "A rocket on a bicycle",
+        "as": "চাইকেলত ৰকেট"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "India's first sounding rocket flew from Thumba in 1963.",
+          "as": "১৯৬৩ চনত থুম্বাৰ পৰা ভাৰতৰ প্ৰথম চাউণ্ডিং ৰকেট উৰিছিল।"
+        },
+        {
+          "en": "ISRO was formed in 1969; Vikram Sarabhai led India's early space programme.",
+          "as": "১৯৬৯ চনত ইছৰো গঠিত হয়; বিক্ৰম সাৰাভাইয়ে ভাৰতৰ আদিম মহাকাশ কাৰ্যসূচী নেতৃত্ব দিছিল।"
+        },
+        {
+          "en": "Aryabhata, India's first satellite, was launched in 1975 on a Soviet rocket.",
+          "as": "ভাৰতৰ প্ৰথম উপগ্ৰহ আৰ্যভট্ট ১৯৭৫ চনত ছোভিয়েট ৰকেটেৰে প্ৰক্ষেপণ কৰা হয়।"
+        },
+        {
+          "en": "SLV-3 put Rohini into orbit in 1980 from Sriharikota.",
+          "as": "১৯৮০ চনত শ্ৰীহৰিকোটাৰ পৰা এছএলভি-৩ এ ৰোহিণীক কক্ষপথত স্থাপন কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "It started in a fishing village",
+            "as": "মাছমৰীয়া গাঁৱত আৰম্ভণি"
+          },
+          "text": [
+            {
+              "en": "In <mark>1963</mark>, a small sounding rocket rose from Thumba, a fishing village near Thiruvananthapuram. It sat near the magnetic equator.",
+              "as": "<mark>১৯৬৩</mark> চনত তিৰুৱনন্তপুৰমৰ ওচৰৰ মাছমৰীয়া গাঁও থুম্বাৰ পৰা এটা সৰু চাউণ্ডিং ৰকেট উৰিছিল। ঠাইখন চুম্বকীয় বিষুৱৰেখাৰ ওচৰত।"
+            },
+            {
+              "en": "<mark>Vikram Sarabhai</mark> led the effort, arguing that space should serve India's development.",
+              "as": "<mark>বিক্ৰম সাৰাভাই</mark>য়ে এই প্ৰচেষ্টা নেতৃত্ব দিছিল; তেওঁৰ মতে মহাকাশ বিজ্ঞানে ভাৰতৰ উন্নয়নত সহায় কৰিব লাগে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "1963 · first rocket, Thumba",
+                "as": "১৯৬৩ · প্ৰথম ৰকেট, থুম্বা"
+              },
+              {
+                "en": "1969 · ISRO formed",
+                "as": "১৯৬৯ · ইছৰো গঠন"
+              }
+            ]
+          },
+          "id": "sc08.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Who is often called the father of India's space programme?",
+            "as": "কাক ভাৰতৰ মহাকাশ কাৰ্যসূচীৰ জনক বুলি কোৱা হয়?"
+          },
+          "options": [
+            {
+              "en": "Homi Bhabha",
+              "as": "হোমী ভাবা"
+            },
+            {
+              "en": "Vikram Sarabhai",
+              "as": "বিক্ৰম সাৰাভাই"
+            },
+            {
+              "en": "C. V. Raman",
+              "as": "চি. ভি. ৰমন"
+            },
+            {
+              "en": "Jagadish Bose",
+              "as": "জগদীশ বসু"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Vikram Sarabhai shaped the programme. Homi Bhabha is linked with India's nuclear programme.",
+            "as": "বিক্ৰম সাৰাভাইয়ে কাৰ্যসূচী গঢ়িছিল। হোমী ভাবা ভাৰতৰ পাৰমাণৱিক কাৰ্যসূচীৰ সৈতে জড়িত।"
+          },
+          "guess": true,
+          "id": "sc08.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Borrowed ride, then our own",
+            "as": "ধাৰ কৰা ৰকেট, তাৰ পিছত নিজৰ"
+          },
+          "text": [
+            {
+              "en": "<mark>Aryabhata</mark> reached orbit in 1975 on a Soviet rocket: India built the satellite, not the launcher.",
+              "as": "<mark>আৰ্যভট্ট</mark> ১৯৭৫ চনত ছোভিয়েট ৰকেটেৰে কক্ষপথলৈ গৈছিল: ভাৰতে উপগ্ৰহ বনাইছিল, ৰকেট নহয়।"
+            },
+            {
+              "en": "In 1980, India's own <mark>SLV-3</mark> carried Rohini to orbit from Sriharikota, now home to the Satish Dhawan Space Centre.",
+              "as": "১৯৮০ চনত ভাৰতৰ নিজা <mark>এছএলভি-৩</mark> এ শ্ৰীহৰিকোটাৰ পৰা ৰোহিণীক কক্ষপথলৈ লৈ যায়; তাত এতিয়া সতীশ ধাৱন মহাকাশ কেন্দ্ৰ আছে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "1975 · Aryabhata",
+                "as": "১৯৭৫ · আৰ্যভট্ট"
+              },
+              {
+                "en": "1980 · SLV-3 and Rohini",
+                "as": "১৯৮০ · এছএলভি-৩ আৰু ৰোহিণী"
+              }
+            ]
+          },
+          "id": "sc08.u3.03"
+        },
+        {
+          "type": "timeline",
+          "q": {
+            "en": "Place each event on the timeline.",
+            "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+          },
+          "anchors": [
+            {
+              "y": "1969",
+              "l": {
+                "en": "ISRO formed",
+                "as": "ইছৰো গঠন"
+              }
+            },
+            {
+              "y": "1980",
+              "l": {
+                "en": "SLV-3 reaches orbit",
+                "as": "এছএলভি-৩ কক্ষপথত"
+              }
+            }
+          ],
+          "items": [
+            {
+              "t": {
+                "en": "Thumba's first rocket",
+                "as": "থুম্বাৰ প্ৰথম ৰকেট"
+              },
+              "slot": 0
+            },
+            {
+              "t": {
+                "en": "Aryabhata launched",
+                "as": "আৰ্যভট্ট প্ৰক্ষেপণ"
+              },
+              "slot": 1
+            },
+            {
+              "t": {
+                "en": "Chandrayaan-1 launched",
+                "as": "চন্দ্ৰযান-১ প্ৰক্ষেপণ"
+              },
+              "slot": 2
+            }
+          ],
+          "why": {
+            "en": "1963 Thumba → 1969 ISRO → 1975 Aryabhata → 1980 SLV-3 → 2008 Chandrayaan-1.",
+            "as": "১৯৬৩ থুম্বা → ১৯৬৯ ইছৰো → ১৯৭৫ আৰ্যভট্ট → ১৯৮০ এছএলভি-৩ → ২০০৮ চন্দ্ৰযান-১।"
+          },
+          "id": "sc08.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Aryabhata was launched on an Indian rocket.",
+            "as": "আৰ্যভট্ট ভাৰতীয় ৰকেটেৰে প্ৰক্ষেপণ কৰা হৈছিল।"
+          },
+          "answer": false,
+          "why": {
+            "en": "It went up on a Soviet launcher. India's first own orbital launch came in 1980.",
+            "as": "ই ছোভিয়েট ৰকেটেৰে গৈছিল। ভাৰতৰ নিজা প্ৰথম কক্ষপথীয় প্ৰক্ষেপণ ১৯৮০ চনত হয়।"
+          },
+          "id": "sc08.u3.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Thumba",
+                "as": "থুম্বা"
+              },
+              {
+                "en": "first sounding rocket",
+                "as": "প্ৰথম চাউণ্ডিং ৰকেট"
+              }
+            ],
+            [
+              {
+                "en": "Sriharikota",
+                "as": "শ্ৰীহৰিকোটা"
+              },
+              {
+                "en": "main launch site",
+                "as": "মুখ্য প্ৰক্ষেপণ কেন্দ্ৰ"
+              }
+            ],
+            [
+              {
+                "en": "Bengaluru",
+                "as": "বেংগালুৰু"
+              },
+              {
+                "en": "ISRO headquarters",
+                "as": "ইছৰোৰ মুখ্য কাৰ্যালয়"
+              }
+            ],
+            [
+              {
+                "en": "Rohini",
+                "as": "ৰোহিণী"
+              },
+              {
+                "en": "satellite on SLV-3",
+                "as": "এছএলভি-৩ ৰ উপগ্ৰহ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Keep the launch sites, headquarters and payload apart.",
+            "as": "প্ৰক্ষেপণ কেন্দ্ৰ, মুখ্য কাৰ্যালয় আৰু উপগ্ৰহ পৃথক কৰি মনত ৰাখা।"
+          },
+          "id": "sc08.u3.06"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble India's first satellite.",
+            "as": "ভাৰতৰ প্ৰথম উপগ্ৰহটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "A",
+              "R",
+              "Y",
+              "A",
+              "B",
+              "H",
+              "A",
+              "T",
+              "A"
+            ],
+            "as": [
+              "আ",
+              "ৰ্য",
+              "ভ",
+              "ট্ট"
+            ]
+          },
+          "answerText": {
+            "en": "ARYABHATA",
+            "as": "আৰ্যভট্ট"
+          },
+          "why": {
+            "en": "It was named after the ancient Indian mathematician and astronomer.",
+            "as": "ইয়াৰ নাম প্ৰাচীন ভাৰতীয় গণিতজ্ঞ আৰু জ্যোতিৰ্বিদৰ নামত ৰখা হৈছিল।"
+          },
+          "id": "sc08.u3.07"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I flew in April 1984.",
+              "as": "মই ১৯৮৪ চনৰ এপ্ৰিলত উৰিছিলোঁ।"
+            },
+            {
+              "en": "I travelled on a Soviet spacecraft.",
+              "as": "মই ছোভিয়েট মহাকাশযানত গৈছিলোঁ।"
+            },
+            {
+              "en": "I was the first Indian citizen in space.",
+              "as": "মই মহাকাশলৈ যোৱা প্ৰথম ভাৰতীয় নাগৰিক।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Kalpana Chawla",
+              "as": "কল্পনা চাওলা"
+            },
+            {
+              "en": "Rakesh Sharma",
+              "as": "ৰাকেশ শৰ্মা"
+            },
+            {
+              "en": "Satish Dhawan",
+              "as": "সতীশ ধাৱন"
+            },
+            {
+              "en": "Vikram Sarabhai",
+              "as": "বিক্ৰম সাৰাভাই"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Rakesh Sharma flew on a Soviet mission in 1984.",
+            "as": "ৰাকেশ শৰ্মাই ১৯৮৪ চনত ছোভিয়েট অভিযানত উৰিছিল।"
+          },
+          "id": "sc08.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Moon, Mars and Sun",
+        "as": "চন্দ্ৰ, মংগল আৰু সূৰ্য"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Chandrayaan-1 (2008) was India's first Moon mission.",
+          "as": "চন্দ্ৰযান-১ (২০০৮) ভাৰতৰ প্ৰথম চন্দ্ৰ অভিযান।"
+        },
+        {
+          "en": "Mangalyaan reached Mars orbit in 2014 on India's first attempt.",
+          "as": "মংগলযান ২০১৪ চনত ভাৰতৰ প্ৰথম প্ৰচেষ্টাতে মংগলৰ কক্ষপথ পাইছিল।"
+        },
+        {
+          "en": "Chandrayaan-3 landed near the lunar south pole on 23 August 2023.",
+          "as": "চন্দ্ৰযান-৩ ২০২৩ চনৰ ২৩ আগষ্টত চন্দ্ৰৰ দক্ষিণ মেৰুৰ ওচৰত অৱতৰণ কৰে।"
+        },
+        {
+          "en": "Aditya-L1 studies the Sun from near the Sun-Earth L1 point.",
+          "as": "আদিত্য-এল১ এ সূৰ্য-পৃথিৱীৰ এল১ বিন্দুৰ ওচৰৰ পৰা সূৰ্য অধ্যয়ন কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "First try at Mars",
+            "as": "প্ৰথম প্ৰচেষ্টাতে মংগল"
+          },
+          "text": [
+            {
+              "en": "<mark>Mangalyaan</mark> left in November 2013 and entered Mars orbit in September 2014. India succeeded on its first attempt.",
+              "as": "<mark>মংগলযান</mark> ২০১৩ চনৰ নৱেম্বৰত ৰাওনা হৈ ২০১৪ চনৰ ছেপ্টেম্বৰত মংগলৰ কক্ষপথত প্ৰৱেশ কৰে। ভাৰত প্ৰথম প্ৰচেষ্টাতে সফল হয়।"
+            },
+            {
+              "en": "Before it, <mark>Chandrayaan-1</mark> had gone to the Moon in 2008, and its instruments found evidence of water molecules there.",
+              "as": "তাৰ আগতে ২০০৮ চনত <mark>চন্দ্ৰযান-১</mark> চন্দ্ৰলৈ গৈছিল, আৰু ইয়াৰ যন্ত্ৰই তাত পানীৰ অণুৰ প্ৰমাণ পাইছিল।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "2008 · Chandrayaan-1",
+                "as": "২০০৮ · চন্দ্ৰযান-১"
+              },
+              {
+                "en": "2013–14 · Mangalyaan",
+                "as": "২০১৩–১৪ · মংগলযান"
+              }
+            ]
+          },
+          "id": "sc08.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which mission landed near the Moon's south pole?",
+            "as": "কোনটো অভিযান চন্দ্ৰৰ দক্ষিণ মেৰুৰ ওচৰত অৱতৰণ কৰিছিল?"
+          },
+          "options": [
+            {
+              "en": "Chandrayaan-1",
+              "as": "চন্দ্ৰযান-১"
+            },
+            {
+              "en": "Chandrayaan-2",
+              "as": "চন্দ্ৰযান-২"
+            },
+            {
+              "en": "Chandrayaan-3",
+              "as": "চন্দ্ৰযান-৩"
+            },
+            {
+              "en": "Aditya-L1",
+              "as": "আদিত্য-এল১"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Chandrayaan-3's Vikram lander touched down on 23 August 2023; Chandrayaan-2's lander crashed in 2019.",
+            "as": "চন্দ্ৰযান-৩ ৰ বিক্ৰম লেণ্ডাৰ ২০২৩ চনৰ ২৩ আগষ্টত অৱতৰণ কৰে; চন্দ্ৰযান-২ ৰ লেণ্ডাৰ ২০১৯ চনত ধ্বংস হৈছিল।"
+          },
+          "guess": true,
+          "id": "sc08.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Lander, rover and a new day",
+            "as": "লেণ্ডাৰ, ৰ'ভাৰ আৰু এক নতুন দিন"
+          },
+          "text": [
+            {
+              "en": "Chandrayaan-3's lander <mark>Vikram</mark> carried the rover <mark>Pragyan</mark>. India now marks 23 August as National Space Day.",
+              "as": "চন্দ্ৰযান-৩ ৰ লেণ্ডাৰ <mark>বিক্ৰম</mark>ে ৰ'ভাৰ <mark>প্ৰজ্ঞান</mark>ক কঢ়িয়াইছিল। ভাৰতে এতিয়া ২৩ আগষ্টক ৰাষ্ট্ৰীয় মহাকাশ দিৱস হিচাপে পালন কৰে।"
+            },
+            {
+              "en": "<mark>Aditya-L1</mark> left in September 2023 for the L1 point, about 1.5 million km from Earth, for a steady view of the Sun.",
+              "as": "<mark>আদিত্য-এল১</mark> ২০২৩ চনৰ ছেপ্টেম্বৰত এল১ বিন্দুলৈ ৰাওনা হয়; পৃথিৱীৰ পৰা প্ৰায় ১৫ লাখ কিমি দূৰৰ ঠাইখনৰ পৰা সূৰ্য অবিৰতভাৱে দেখা যায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Vikram · lander",
+                "as": "বিক্ৰম · লেণ্ডাৰ"
+              },
+              {
+                "en": "Pragyan · rover",
+                "as": "প্ৰজ্ঞান · ৰ'ভাৰ"
+              },
+              {
+                "en": "Aditya-L1 · the Sun",
+                "as": "আদিত্য-এল১ · সূৰ্য"
+              }
+            ]
+          },
+          "id": "sc08.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Chandrayaan-1",
+                "as": "চন্দ্ৰযান-১"
+              },
+              {
+                "en": "first Moon mission, 2008",
+                "as": "প্ৰথম চন্দ্ৰ অভিযান, ২০০৮"
+              }
+            ],
+            [
+              {
+                "en": "Mangalyaan",
+                "as": "মংগলযান"
+              },
+              {
+                "en": "Mars orbit, 2014",
+                "as": "মংগলৰ কক্ষপথ, ২০১৪"
+              }
+            ],
+            [
+              {
+                "en": "Chandrayaan-3",
+                "as": "চন্দ্ৰযান-৩"
+              },
+              {
+                "en": "Moon landing, 2023",
+                "as": "চন্দ্ৰত অৱতৰণ, ২০২৩"
+              }
+            ],
+            [
+              {
+                "en": "Aditya-L1",
+                "as": "আদিত্য-এল১"
+              },
+              {
+                "en": "solar observatory",
+                "as": "সৌৰ পৰ্যবেক্ষণাগাৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Tie each mission to its target and year.",
+            "as": "প্ৰতিটো অভিযানক লক্ষ্য আৰু বছৰৰ সৈতে বান্ধা।"
+          },
+          "id": "sc08.u4.04"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order these missions by launch.",
+            "as": "প্ৰক্ষেপণৰ ক্ৰমত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Chandrayaan-1",
+              "as": "চন্দ্ৰযান-১"
+            },
+            {
+              "en": "Mangalyaan",
+              "as": "মংগলযান"
+            },
+            {
+              "en": "Chandrayaan-2",
+              "as": "চন্দ্ৰযান-২"
+            },
+            {
+              "en": "Chandrayaan-3",
+              "as": "চন্দ্ৰযান-৩"
+            }
+          ],
+          "why": {
+            "en": "2008, 2013, 2019, 2023.",
+            "as": "২০০৮, ২০১৩, ২০১৯, ২০২৩।"
+          },
+          "id": "sc08.u4.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "As of November 2026, sources checked show no crewed Gaganyaan flight has yet flown.",
+            "as": "২০২৬ চনৰ নৱেম্বৰলৈ পৰীক্ষা কৰা উৎস অনুসৰি গগনযানৰ মানুহ থকা উৰণ হোৱা নাই।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Reports then placed the first crewed flight in 2027. Check ISRO for the current status.",
+            "as": "সেই সময়ৰ বাতৰি অনুসৰি প্ৰথম মানুহ থকা উৰণ ২০২৭ চনত। বৰ্তমান অৱস্থা ইছৰোৰ পৰা চাই লোৱা।"
+          },
+          "asOf": "2026-11",
+          "id": "sc08.u4.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "rover",
+              "carried",
+              "by",
+              "Chandrayaan-3",
+              "was",
+              "named",
+              "Vikram."
+            ],
+            "as": [
+              "চন্দ্ৰযান-৩",
+              "এ",
+              "কঢ়িওৱা",
+              "ৰ'ভাৰটোৰ",
+              "নাম",
+              "আছিল",
+              "বিক্ৰম।"
+            ]
+          },
+          "wrong": {
+            "en": 7,
+            "as": 5
+          },
+          "fix": {
+            "en": "Pragyan",
+            "as": "প্ৰজ্ঞান"
+          },
+          "answerText": {
+            "en": "Vikram.",
+            "as": "বিক্ৰম।"
+          },
+          "why": {
+            "en": "Vikram was the lander; Pragyan was the rover.",
+            "as": "বিক্ৰম লেণ্ডাৰ আছিল; প্ৰজ্ঞান ৰ'ভাৰ।"
+          },
+          "id": "sc08.u4.07"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "National Space Day falls on 23",
+            "as": "ৰাষ্ট্ৰীয় মহাকাশ দিৱস ২৩"
+          },
+          "after": {
+            "en": ".",
+            "as": "ত।"
+          },
+          "options": [
+            {
+              "en": "August",
+              "as": "আগষ্ট"
+            },
+            {
+              "en": "September",
+              "as": "ছেপ্টেম্বৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It marks Chandrayaan-3's 2023 landing.",
+            "as": "ই ২০২৩ চনৰ চন্দ্ৰযান-৩ ৰ অৱতৰণ স্মৰণ কৰে।"
+          },
+          "id": "sc08.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Mission review",
+      "as": "অভিযান পৰ্যালোচনা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Why is Venus hotter than Mercury?",
+          "as": "শুক্ৰ বুধতকৈ কিয় উষ্ণ?"
+        },
+        "options": [
+          {
+            "en": "It is closer to the Sun",
+            "as": "ই সূৰ্যৰ অধিক ওচৰত"
+          },
+          {
+            "en": "It is larger than Jupiter",
+            "as": "ই বৃহস্পতিতকৈ ডাঙৰ"
+          },
+          {
+            "en": "Its thick atmosphere traps heat",
+            "as": "ইয়াৰ ডাঠ বায়ুমণ্ডলে তাপ ধৰি ৰাখে"
+          },
+          {
+            "en": "It has rings",
+            "as": "ইয়াৰ বলয় আছে"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Carbon dioxide traps heat on Venus.",
+          "as": "কাৰ্বন ডাই অক্সাইডে শুক্ৰত তাপ ধৰি ৰাখে।"
+        },
+        "id": "sc08.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "A geostationary satellite orbits above the equator.",
+          "as": "ভূস্থিৰ উপগ্ৰহে বিষুৱৰেখাৰ ওপৰত ঘূৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "It matches Earth's rotation at about 35,786 km.",
+          "as": "প্ৰায় ৩৫,৭৮৬ কিমি উচ্চতাত ই পৃথিৱীৰ ঘূৰ্ণনৰ সৈতে মিলে।"
+        },
+        "id": "sc08.test.02"
+      },
+      {
+        "type": "timeline",
+        "q": {
+          "en": "Place each event on the timeline.",
+          "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+        },
+        "anchors": [
+          {
+            "y": "1975",
+            "l": {
+              "en": "Aryabhata",
+              "as": "আৰ্যভট্ট"
+            }
+          }
+        ],
+        "items": [
+          {
+            "t": {
+              "en": "ISRO formed",
+              "as": "ইছৰো গঠন"
+            },
+            "slot": 0
+          },
+          {
+            "t": {
+              "en": "Mangalyaan launched",
+              "as": "মংগলযান প্ৰক্ষেপণ"
+            },
+            "slot": 1
+          }
+        ],
+        "why": {
+          "en": "ISRO 1969, Aryabhata 1975, Mangalyaan 2013.",
+          "as": "ইছৰো ১৯৬৯, আৰ্যভট্ট ১৯৭৫, মংগলযান ২০১৩।"
+        },
+        "id": "sc08.test.03"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Mars",
+              "as": "মংগল"
+            },
+            {
+              "en": "iron oxide",
+              "as": "আইৰন অক্সাইড"
+            }
+          ],
+          [
+            {
+              "en": "Pluto",
+              "as": "প্লুটো"
+            },
+            {
+              "en": "dwarf planet",
+              "as": "বামন গ্ৰহ"
+            }
+          ],
+          [
+            {
+              "en": "Sriharikota",
+              "as": "শ্ৰীহৰিকোটা"
+            },
+            {
+              "en": "launch site",
+              "as": "প্ৰক্ষেপণ কেন্দ্ৰ"
+            }
+          ],
+          [
+            {
+              "en": "Pragyan",
+              "as": "প্ৰজ্ঞান"
+            },
+            {
+              "en": "lunar rover",
+              "as": "চন্দ্ৰ ৰ'ভাৰ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Each name has one job here.",
+          "as": "ইয়াত প্ৰতিটো নামৰ এটা কাম আছে।"
+        },
+        "id": "sc08.test.04"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is NOT an Indian mission?",
+          "as": "কোনটো ভাৰতীয় অভিযান নহয়?"
+        },
+        "options": [
+          {
+            "en": "Aditya-L1",
+            "as": "আদিত্য-এল১"
+          },
+          {
+            "en": "Voyager 1",
+            "as": "ভয়েজাৰ ১"
+          },
+          {
+            "en": "Chandrayaan-2",
+            "as": "চন্দ্ৰযান-২"
+          },
+          {
+            "en": "Mangalyaan",
+            "as": "মংগলযান"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Voyager 1 is a NASA probe.",
+          "as": "ভয়েজাৰ ১ নাছাৰ অভিযান।"
+        },
+        "id": "sc08.test.05"
+      }
+    ]
+  }
+}

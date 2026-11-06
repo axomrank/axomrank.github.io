@@ -50,3 +50,10 @@ Replace the path with whatever you need.
 
 `scripts/build_india_map.py` cannot run, because `world.json` survives only in
 the Trash. `content/maps/india.json` itself is intact.
+
+## 2026-11-06: dropped course plans
+
+The user dropped Economy, Current Affairs and Assamese Language as not required.
+`docs/ECONOMY-COURSE.md`, `docs/CURRENT-AFFAIRS-COURSE.md` and
+`docs/ASSAMESE-LANGUAGE-COURSE.md` are deleted, along with the Economy subject and the
+Current Affairs "coming soon" entry in `content/catalog.json`. Git history keeps them.

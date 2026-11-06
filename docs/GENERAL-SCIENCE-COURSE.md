@@ -1,6 +1,7 @@
 # General Science and Environment course plan
 
-Status: planned on 2026-11-06. Nothing is built. Lesson format and permanent-id rules in
+Status: private draft since 2026-11-06. Lessons 7, 8 and 12 exist; open
+`index.html?course=general-science` on the local server. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
 A learner should be able to explain everyday things, not just recall terms.
@@ -63,7 +64,7 @@ lesson 4, which already places conservation sites, rather than repeating it.
 ## Engine work
 
 Nothing is required for a first version. Add a check that lists facts whose `asOf` is older
-than 12 months. That check also serves Economy and General Awareness.
+than 12 months. That check also serves General Awareness.
 
 ## Build order
 
