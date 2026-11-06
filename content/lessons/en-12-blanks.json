@@ -1,0 +1,1404 @@
+{
+  "id": "en-12-blanks",
+  "course": "english",
+  "no": 12,
+  "version": 1,
+  "king": {
+    "en": "Blanks and punctuation",
+    "as": "Blanks and punctuation"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Conjunctions",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/conjunctions",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Because because of and cos cos of",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/because-because-of-and-cos-cos-of",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Pronouns",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/pronouns",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Punctuation",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/punctuation",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Reporting clauses",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/reporting-clauses",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Join ideas",
+        "as": "Join ideas"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Reason, result, contrast or addition",
+          "as": "Reason, result, contrast or addition"
+        },
+        {
+          "en": "Choose a connector that expresses the relation you intend. Because introduces a reason.",
+          "as": "Choose a connector that expresses the relation you intend. Because introduces a reason."
+        },
+        {
+          "en": "But can signal a contrast. So can introduce a result.",
+          "as": "But can signal a contrast. So can introduce a result."
+        },
+        {
+          "en": "Apply it: We moved indoors because it was raining.",
+          "as": "Apply it: We moved indoors because it was raining."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en12.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "Your note explains why a match moved indoors. Heavy rain is the reason.",
+              "as": "Your note explains why a match moved indoors. Heavy rain is the reason."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Reason, result, contrast or addition",
+                "as": "Reason, result, contrast or addition"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "We moved indoors because it was raining.",
+              "as": "We moved indoors because it was raining."
+            },
+            {
+              "en": "We moved indoors although it was raining.",
+              "as": "We moved indoors although it was raining."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Choose a connector that expresses the relation you intend. Because introduces a reason.",
+            "as": "Choose a connector that expresses the relation you intend. Because introduces a reason."
+          },
+          "guess": true
+        },
+        {
+          "id": "en12.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Choose a connector that expresses the relation you intend. Because introduces a reason. But can signal a contrast. So can introduce a result.",
+              "as": "Choose a connector that expresses the relation you intend. Because introduces a reason. But can signal a contrast. So can introduce a result."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Reason, result, contrast or addition",
+                "as": "Reason, result, contrast or addition"
+              },
+              {
+                "en": "But can signal a contrast. So can introduce a result.",
+                "as": "But can signal a contrast. So can introduce a result."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "It was raining, ",
+            "as": "It was raining, "
+          },
+          "after": {
+            "en": " we moved indoors.",
+            "as": " we moved indoors."
+          },
+          "options": [
+            {
+              "en": "but",
+              "as": "but"
+            },
+            {
+              "en": "so",
+              "as": "so"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Choose a connector that expresses the relation you intend. Because introduces a reason. It was raining, so we moved indoors.",
+            "as": "Choose a connector that expresses the relation you intend. Because introduces a reason. It was raining, so we moved indoors."
+          }
+        },
+        {
+          "id": "en12.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “I wanted to go, so I had no ticket.”",
+            "as": "For this meaning, the following line works: “I wanted to go, so I had no ticket.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Choose a connector that expresses the relation you intend. Because introduces a reason. I wanted to go, but I had no ticket.",
+            "as": "Choose a connector that expresses the relation you intend. Because introduces a reason. I wanted to go, but I had no ticket."
+          }
+        },
+        {
+          "id": "en12.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "What the pronoun refers to",
+              "as": "What the pronoun refers to"
+            },
+            {
+              "en": "Reason, result, contrast or addition",
+              "as": "Reason, result, contrast or addition"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "But can signal a contrast. So can introduce a result.",
+            "as": "But can signal a contrast. So can introduce a result."
+          }
+        },
+        {
+          "id": "en12.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "We waited ",
+            "as": "We waited "
+          },
+          "after": {
+            "en": " the doors were still locked.",
+            "as": " the doors were still locked."
+          },
+          "options": [
+            {
+              "en": "because",
+              "as": "because"
+            },
+            {
+              "en": "although",
+              "as": "although"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Choose a connector that expresses the relation you intend. Because introduces a reason. We waited because the doors were still locked.",
+            "as": "Choose a connector that expresses the relation you intend. Because introduces a reason. We waited because the doors were still locked."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Track the reference",
+        "as": "Track the reference"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "What the pronoun refers to",
+          "as": "What the pronoun refers to"
+        },
+        {
+          "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible.",
+          "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible."
+        },
+        {
+          "en": "Asha’s map identifies the owner directly.",
+          "as": "Asha’s map identifies the owner directly."
+        },
+        {
+          "en": "Apply it: To make it clear that Asha owns the map, write: Ravi borrowed Asha’s map.",
+          "as": "Apply it: To make it clear that Asha owns the map, write: Ravi borrowed Asha’s map."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en12.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A note says Asha lent Ravi her map. The editor needs to make the owner clear.",
+              "as": "A note says Asha lent Ravi her map. The editor needs to make the owner clear."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "What the pronoun refers to",
+                "as": "What the pronoun refers to"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "To make it clear that Asha owns the map, write: Ravi borrowed his map.",
+              "as": "To make it clear that Asha owns the map, write: Ravi borrowed his map."
+            },
+            {
+              "en": "To make it clear that Asha owns the map, write: Ravi borrowed Asha’s map.",
+              "as": "To make it clear that Asha owns the map, write: Ravi borrowed Asha’s map."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible.",
+            "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible."
+          },
+          "guess": true
+        },
+        {
+          "id": "en12.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. Asha’s map identifies the owner directly.",
+              "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. Asha’s map identifies the owner directly."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "What the pronoun refers to",
+                "as": "What the pronoun refers to"
+              },
+              {
+                "en": "Asha’s map identifies the owner directly.",
+                "as": "Asha’s map identifies the owner directly."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "The signs fell. ",
+            "as": "The signs fell. "
+          },
+          "after": {
+            "en": " were damaged.",
+            "as": " were damaged."
+          },
+          "options": [
+            {
+              "en": "They",
+              "as": "They"
+            },
+            {
+              "en": "It",
+              "as": "It"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. The signs fell. They were damaged.",
+            "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. The signs fell. They were damaged."
+          }
+        },
+        {
+          "id": "en12.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “Mira checked the ticket. It was valid.”",
+            "as": "For this meaning, the following line works: “Mira checked the ticket. It was valid.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. Mira checked the ticket. It was valid.",
+            "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. Mira checked the ticket. It was valid."
+          }
+        },
+        {
+          "id": "en12.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Can each part stand on its own?",
+              "as": "Can each part stand on its own?"
+            },
+            {
+              "en": "What the pronoun refers to",
+              "as": "What the pronoun refers to"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Asha’s map identifies the owner directly.",
+            "as": "Asha’s map identifies the owner directly."
+          }
+        },
+        {
+          "id": "en12.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "The lamps are on because ",
+            "as": "The lamps are on because "
+          },
+          "after": {
+            "en": " are plugged in.",
+            "as": " are plugged in."
+          },
+          "options": [
+            {
+              "en": "it",
+              "as": "it"
+            },
+            {
+              "en": "they",
+              "as": "they"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. The lamps are on because they are plugged in.",
+            "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. The lamps are on because they are plugged in."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Separate sentences",
+        "as": "Separate sentences"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Can each part stand on its own?",
+          "as": "Can each part stand on its own?"
+        },
+        {
+          "en": "Use a full stop between complete statements when there is no joining word.",
+          "as": "Use a full stop between complete statements when there is no joining word."
+        },
+        {
+          "en": "A comma alone does not usually join two independent statements.",
+          "as": "A comma alone does not usually join two independent statements."
+        },
+        {
+          "en": "Apply it: The hall is closed. Come back at noon.",
+          "as": "Apply it: The hall is closed. Come back at noon."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en12.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "Two complete thoughts appear on a notice. A sentence boundary makes the instructions easy to follow.",
+              "as": "Two complete thoughts appear on a notice. A sentence boundary makes the instructions easy to follow."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Can each part stand on its own?",
+                "as": "Can each part stand on its own?"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The hall is closed, Come back at noon.",
+              "as": "The hall is closed, Come back at noon."
+            },
+            {
+              "en": "The hall is closed. Come back at noon.",
+              "as": "The hall is closed. Come back at noon."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a full stop between complete statements when there is no joining word.",
+            "as": "Use a full stop between complete statements when there is no joining word."
+          },
+          "guess": true
+        },
+        {
+          "id": "en12.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use a full stop between complete statements when there is no joining word. A comma alone does not usually join two independent statements.",
+              "as": "Use a full stop between complete statements when there is no joining word. A comma alone does not usually join two independent statements."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Can each part stand on its own?",
+                "as": "Can each part stand on its own?"
+              },
+              {
+                "en": "A comma alone does not usually join two independent statements.",
+                "as": "A comma alone does not usually join two independent statements."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "We finished the job",
+            "as": "We finished the job"
+          },
+          "after": {
+            "en": " We put the tools away.",
+            "as": " We put the tools away."
+          },
+          "options": [
+            {
+              "en": ",",
+              "as": ","
+            },
+            {
+              "en": ".",
+              "as": "."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a full stop between complete statements when there is no joining word. We finished the job. We put the tools away.",
+            "as": "Use a full stop between complete statements when there is no joining word. We finished the job. We put the tools away."
+          }
+        },
+        {
+          "id": "en12.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The lights went out, We left the room.”",
+            "as": "For this meaning, the following line works: “The lights went out, We left the room.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use a full stop between complete statements when there is no joining word. The lights went out. We left the room.",
+            "as": "Use a full stop between complete statements when there is no joining word. The lights went out. We left the room."
+          }
+        },
+        {
+          "id": "en12.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Ownership, plural or missing letters",
+              "as": "Ownership, plural or missing letters"
+            },
+            {
+              "en": "Can each part stand on its own?",
+              "as": "Can each part stand on its own?"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A comma alone does not usually join two independent statements.",
+            "as": "A comma alone does not usually join two independent statements."
+          }
+        },
+        {
+          "id": "en12.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "The bus arrived",
+            "as": "The bus arrived"
+          },
+          "after": {
+            "en": " We got on.",
+            "as": " We got on."
+          },
+          "options": [
+            {
+              "en": ".",
+              "as": "."
+            },
+            {
+              "en": ",",
+              "as": ","
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a full stop between complete statements when there is no joining word. The bus arrived. We got on.",
+            "as": "Use a full stop between complete statements when there is no joining word. The bus arrived. We got on."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Mark possession or omission",
+        "as": "Mark possession or omission"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Ownership, plural or missing letters",
+          "as": "Ownership, plural or missing letters"
+        },
+        {
+          "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe.",
+          "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe."
+        },
+        {
+          "en": "One pupil’s bag belongs to one pupil.",
+          "as": "One pupil’s bag belongs to one pupil."
+        },
+        {
+          "en": "Apply it: One pupil’s bag was on the chair.",
+          "as": "Apply it: One pupil’s bag was on the chair."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en12.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "One pupil owns a bag. Several pupils arrived together. Your labels need to distinguish possession and a simple plural.",
+              "as": "One pupil owns a bag. Several pupils arrived together. Your labels need to distinguish possession and a simple plural."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Ownership, plural or missing letters",
+                "as": "Ownership, plural or missing letters"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "One pupils bag was on the chair.",
+              "as": "One pupils bag was on the chair."
+            },
+            {
+              "en": "One pupil’s bag was on the chair.",
+              "as": "One pupil’s bag was on the chair."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe.",
+            "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe."
+          },
+          "guess": true
+        },
+        {
+          "id": "en12.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. One pupil’s bag belongs to one pupil.",
+              "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. One pupil’s bag belongs to one pupil."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Ownership, plural or missing letters",
+                "as": "Ownership, plural or missing letters"
+              },
+              {
+                "en": "One pupil’s bag belongs to one pupil.",
+                "as": "One pupil’s bag belongs to one pupil."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "Three ",
+            "as": "Three "
+          },
+          "after": {
+            "en": " waited by the gate.",
+            "as": " waited by the gate."
+          },
+          "options": [
+            {
+              "en": "pupil’s",
+              "as": "pupil’s"
+            },
+            {
+              "en": "pupils",
+              "as": "pupils"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. Three pupils waited by the gate.",
+            "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. Three pupils waited by the gate."
+          }
+        },
+        {
+          "id": "en12.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “She’s coming later, meaning she is coming later.”",
+            "as": "For this meaning, the following line works: “She’s coming later, meaning she is coming later.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. She’s coming later, meaning she is coming later.",
+            "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. She’s coming later, meaning she is coming later."
+          }
+        },
+        {
+          "id": "en12.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The exact words spoken",
+              "as": "The exact words spoken"
+            },
+            {
+              "en": "Ownership, plural or missing letters",
+              "as": "Ownership, plural or missing letters"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "One pupil’s bag belongs to one pupil.",
+            "as": "One pupil’s bag belongs to one pupil."
+          }
+        },
+        {
+          "id": "en12.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "The ",
+            "as": "The "
+          },
+          "after": {
+            "en": " wheel belongs to one bicycle.",
+            "as": " wheel belongs to one bicycle."
+          },
+          "options": [
+            {
+              "en": "bicycle’s",
+              "as": "bicycle’s"
+            },
+            {
+              "en": "bicycles",
+              "as": "bicycles"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. The bicycle’s wheel belongs to one bicycle.",
+            "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. The bicycle’s wheel belongs to one bicycle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": {
+        "en": "Show the speaker",
+        "as": "Show the speaker"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The exact words spoken",
+          "as": "The exact words spoken"
+        },
+        {
+          "en": "Use quotation marks to show the boundaries of direct speech.",
+          "as": "Use quotation marks to show the boundaries of direct speech."
+        },
+        {
+          "en": "The reporting words identify the speaker outside the quotation.",
+          "as": "The reporting words identify the speaker outside the quotation."
+        },
+        {
+          "en": "Apply it: Mira said, “I am ready.”",
+          "as": "Apply it: Mira said, “I am ready.”"
+        }
+      ],
+      "steps": [
+        {
+          "id": "en12.u5.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "You write the exact words Mira spoke. The reader needs to know where the speech begins and ends.",
+              "as": "You write the exact words Mira spoke. The reader needs to know where the speech begins and ends."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The exact words spoken",
+                "as": "The exact words spoken"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u5.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Mira said, “I am ready.”",
+              "as": "Mira said, “I am ready.”"
+            },
+            {
+              "en": "Mira said, I am ready.”",
+              "as": "Mira said, I am ready.”"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use quotation marks to show the boundaries of direct speech.",
+            "as": "Use quotation marks to show the boundaries of direct speech."
+          },
+          "guess": true
+        },
+        {
+          "id": "en12.u5.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use quotation marks to show the boundaries of direct speech. The reporting words identify the speaker outside the quotation.",
+              "as": "Use quotation marks to show the boundaries of direct speech. The reporting words identify the speaker outside the quotation."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The exact words spoken",
+                "as": "The exact words spoken"
+              },
+              {
+                "en": "The reporting words identify the speaker outside the quotation.",
+                "as": "The reporting words identify the speaker outside the quotation."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u5.04",
+          "type": "inline",
+          "before": {
+            "en": "Arun said, ",
+            "as": "Arun said, "
+          },
+          "after": "",
+          "options": [
+            {
+              "en": "“Wait here.”",
+              "as": "“Wait here.”"
+            },
+            {
+              "en": "“Wait here.",
+              "as": "“Wait here."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use quotation marks to show the boundaries of direct speech. Arun said, “Wait here.”",
+            "as": "Use quotation marks to show the boundaries of direct speech. Arun said, “Wait here.”"
+          }
+        },
+        {
+          "id": "en12.u5.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: ““Where is it?” “she asked.””",
+            "as": "For this meaning, the following line works: ““Where is it?” “she asked.””"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use quotation marks to show the boundaries of direct speech. “Where is it?” she asked.",
+            "as": "Use quotation marks to show the boundaries of direct speech. “Where is it?” she asked."
+          }
+        },
+        {
+          "id": "en12.u5.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Read on both sides of the blank",
+              "as": "Read on both sides of the blank"
+            },
+            {
+              "en": "The exact words spoken",
+              "as": "The exact words spoken"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The reporting words identify the speaker outside the quotation.",
+            "as": "The reporting words identify the speaker outside the quotation."
+          }
+        },
+        {
+          "id": "en12.u5.07",
+          "type": "inline",
+          "before": {
+            "en": "“I am ready,” ",
+            "as": "“I am ready,” "
+          },
+          "after": "",
+          "options": [
+            {
+              "en": "Mira said.",
+              "as": "Mira said."
+            },
+            {
+              "en": "“Mira said.”",
+              "as": "“Mira said.”"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use quotation marks to show the boundaries of direct speech. “I am ready,” Mira said.",
+            "as": "Use quotation marks to show the boundaries of direct speech. “I am ready,” Mira said."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": {
+        "en": "Complete a short message",
+        "as": "Complete a short message"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Read on both sides of the blank",
+          "as": "Read on both sides of the blank"
+        },
+        {
+          "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary.",
+          "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary."
+        },
+        {
+          "en": "A reason and a new instruction need different signals.",
+          "as": "A reason and a new instruction need different signals."
+        },
+        {
+          "en": "Apply it: We waited inside because it was raining.",
+          "as": "Apply it: We waited inside because it was raining."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en12.u6.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A note gives a reason, points to a named object and then starts a separate instruction.",
+              "as": "A note gives a reason, points to a named object and then starts a separate instruction."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Read on both sides of the blank",
+                "as": "Read on both sides of the blank"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u6.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "We waited inside because it was raining.",
+              "as": "We waited inside because it was raining."
+            },
+            {
+              "en": "We waited inside although it was raining.",
+              "as": "We waited inside although it was raining."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary.",
+            "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary."
+          },
+          "guess": true
+        },
+        {
+          "id": "en12.u6.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary. A reason and a new instruction need different signals.",
+              "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary. A reason and a new instruction need different signals."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Read on both sides of the blank",
+                "as": "Read on both sides of the blank"
+              },
+              {
+                "en": "A reason and a new instruction need different signals.",
+                "as": "A reason and a new instruction need different signals."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en12.u6.04",
+          "type": "inline",
+          "before": {
+            "en": "I found the keys. ",
+            "as": "I found the keys. "
+          },
+          "after": {
+            "en": " were under the mat.",
+            "as": " were under the mat."
+          },
+          "options": [
+            {
+              "en": "It",
+              "as": "It"
+            },
+            {
+              "en": "They",
+              "as": "They"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary. I found the keys. They were under the mat.",
+            "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary. I found the keys. They were under the mat."
+          }
+        },
+        {
+          "id": "en12.u6.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The hall is open. Walk through the east door.”",
+            "as": "For this meaning, the following line works: “The hall is open. Walk through the east door.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary. The hall is open. Walk through the east door.",
+            "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary. The hall is open. Walk through the east door."
+          }
+        },
+        {
+          "id": "en12.u6.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Reason, result, contrast or addition",
+              "as": "Reason, result, contrast or addition"
+            },
+            {
+              "en": "Read on both sides of the blank",
+              "as": "Read on both sides of the blank"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A reason and a new instruction need different signals.",
+            "as": "A reason and a new instruction need different signals."
+          }
+        },
+        {
+          "id": "en12.u6.07",
+          "type": "inline",
+          "before": {
+            "en": "To identify Mira as the owner, write: Please return ",
+            "as": "To identify Mira as the owner, write: Please return "
+          },
+          "after": {
+            "en": " bag.",
+            "as": " bag."
+          },
+          "options": [
+            {
+              "en": "Mira’s",
+              "as": "Mira’s"
+            },
+            {
+              "en": "his",
+              "as": "his"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary. To identify Mira as the owner, write: Please return Mira’s bag.",
+            "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary. To identify Mira as the owner, write: Please return Mira’s bag."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en12.test.01",
+        "type": "inline",
+        "before": {
+          "en": "We packed maps ",
+          "as": "We packed maps "
+        },
+        "after": {
+          "en": " water.",
+          "as": " water."
+        },
+        "options": [
+          {
+            "en": "and",
+            "as": "and"
+          },
+          {
+            "en": "because",
+            "as": "because"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Choose a connector that expresses the relation you intend. Because introduces a reason. We packed maps and water.",
+          "as": "Choose a connector that expresses the relation you intend. Because introduces a reason. We packed maps and water."
+        }
+      },
+      {
+        "id": "en12.test.02",
+        "type": "inline",
+        "before": {
+          "en": "To identify Ravi as the caller, write: ",
+          "as": "To identify Ravi as the caller, write: "
+        },
+        "after": {
+          "en": " called after Asha left.",
+          "as": " called after Asha left."
+        },
+        "options": [
+          {
+            "en": "Ravi",
+            "as": "Ravi"
+          },
+          {
+            "en": "She",
+            "as": "She"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. To identify Ravi as the caller, write: Ravi called after Asha left.",
+          "as": "A pronoun should point clearly to the person or thing you mean. Repeat a name if several readings are possible. To identify Ravi as the caller, write: Ravi called after Asha left."
+        }
+      },
+      {
+        "id": "en12.test.03",
+        "type": "inline",
+        "before": {
+          "en": "The forms are ready",
+          "as": "The forms are ready"
+        },
+        "after": {
+          "en": " Collect one at the desk.",
+          "as": " Collect one at the desk."
+        },
+        "options": [
+          {
+            "en": ".",
+            "as": "."
+          },
+          {
+            "en": ",",
+            "as": ","
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use a full stop between complete statements when there is no joining word. The forms are ready. Collect one at the desk.",
+          "as": "Use a full stop between complete statements when there is no joining word. The forms are ready. Collect one at the desk."
+        }
+      },
+      {
+        "id": "en12.test.04",
+        "type": "inline",
+        "before": {
+          "en": "The two ",
+          "as": "The two "
+        },
+        "after": {
+          "en": " are on the shelf.",
+          "as": " are on the shelf."
+        },
+        "options": [
+          {
+            "en": "book’s",
+            "as": "book’s"
+          },
+          {
+            "en": "books",
+            "as": "books"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. The two books are on the shelf.",
+          "as": "Use an apostrophe for possession or a contraction. A simple plural usually needs no apostrophe. The two books are on the shelf."
+        }
+      },
+      {
+        "id": "en12.test.05",
+        "type": "inline",
+        "before": {
+          "en": "Mira said, ",
+          "as": "Mira said, "
+        },
+        "after": "",
+        "options": [
+          {
+            "en": "“Please sit down.”",
+            "as": "“Please sit down.”"
+          },
+          {
+            "en": "Please sit down.",
+            "as": "Please sit down."
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use quotation marks to show the boundaries of direct speech. Mira said, “Please sit down.”",
+          "as": "Use quotation marks to show the boundaries of direct speech. Mira said, “Please sit down.”"
+        }
+      },
+      {
+        "id": "en12.test.06",
+        "type": "inline",
+        "before": {
+          "en": "The door is open, ",
+          "as": "The door is open, "
+        },
+        "after": {
+          "en": " you can go in.",
+          "as": " you can go in."
+        },
+        "options": [
+          {
+            "en": "so",
+            "as": "so"
+          },
+          {
+            "en": "although",
+            "as": "although"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use the surrounding meaning to choose a connector, reference or sentence boundary. The door is open, so you can go in.",
+          "as": "Use the surrounding meaning to choose a connector, reference or sentence boundary. The door is open, so you can go in."
+        }
+      }
+    ]
+  }
+}

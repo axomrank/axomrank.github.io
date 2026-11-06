@@ -1,0 +1,1541 @@
+{
+  "id": "en-13-correction",
+  "course": "english",
+  "no": 13,
+  "version": 1,
+  "king": {
+    "en": "Error spotting and correction",
+    "as": "Error spotting and correction"
+  },
+  "reign": {
+    "en": "Use",
+    "as": "Use"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Subject verb agreement",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/agreement",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "The",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/the",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "At on in time",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/at-on-in-time",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Past simple i worked",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/past-simple-i-worked",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Comparison adjectives bigger biggest more interesting",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Pronouns",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/pronouns",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Find the smallest repair",
+        "as": "Find the smallest repair"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The single word that breaks the sentence",
+          "as": "The single word that breaks the sentence"
+        },
+        {
+          "en": "Fix the word causing the error and preserve the original meaning.",
+          "as": "Fix the word causing the error and preserve the original meaning."
+        },
+        {
+          "en": "Here the bus is singular, so leave needs an -s.",
+          "as": "Here the bus is singular, so leave needs an -s."
+        },
+        {
+          "en": "Apply it: The bus leaves at noon.",
+          "as": "Apply it: The bus leaves at noon."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en13.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The notice reads “The bus leave at noon.” Keep the same bus and time while fixing the grammar.",
+              "as": "The notice reads “The bus leave at noon.” Keep the same bus and time while fixing the grammar."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The single word that breaks the sentence",
+                "as": "The single word that breaks the sentence"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The bus leaves at noon.",
+              "as": "The bus leaves at noon."
+            },
+            {
+              "en": "The bus leave at noon.",
+              "as": "The bus leave at noon."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Fix the word causing the error and preserve the original meaning.",
+            "as": "Fix the word causing the error and preserve the original meaning."
+          },
+          "guess": true
+        },
+        {
+          "id": "en13.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Fix the word causing the error and preserve the original meaning. Here the bus is singular, so leave needs an -s.",
+              "as": "Fix the word causing the error and preserve the original meaning. Here the bus is singular, so leave needs an -s."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The single word that breaks the sentence",
+                "as": "The single word that breaks the sentence"
+              },
+              {
+                "en": "Here the bus is singular, so leave needs an -s.",
+                "as": "Here the bus is singular, so leave needs an -s."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "The train ",
+            "as": "The train "
+          },
+          "after": {
+            "en": " at six.",
+            "as": " at six."
+          },
+          "options": [
+            {
+              "en": "arrives",
+              "as": "arrives"
+            },
+            {
+              "en": "arrive",
+              "as": "arrive"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Fix the word causing the error and preserve the original meaning. The train arrives at six.",
+            "as": "Fix the word causing the error and preserve the original meaning. The train arrives at six."
+          }
+        },
+        {
+          "id": "en13.u1.05",
+          "type": "spot",
+          "q": {
+            "en": "Tap the part that needs a correction.",
+            "as": "Tap the part that needs a correction."
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "train",
+              "arrive",
+              "at",
+              "six."
+            ],
+            "as": [
+              "The",
+              "train",
+              "arrive",
+              "at",
+              "six."
+            ]
+          },
+          "wrong": {
+            "en": 2,
+            "as": 2
+          },
+          "fix": {
+            "en": "arrives",
+            "as": "arrives"
+          },
+          "why": {
+            "en": "Fix the word causing the error and preserve the original meaning. The train arrives at six.",
+            "as": "Fix the word causing the error and preserve the original meaning. The train arrives at six."
+          }
+        },
+        {
+          "id": "en13.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The head noun of the subject",
+              "as": "The head noun of the subject"
+            },
+            {
+              "en": "The single word that breaks the sentence",
+              "as": "The single word that breaks the sentence"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Here the bus is singular, so leave needs an -s.",
+            "as": "Here the bus is singular, so leave needs an -s."
+          }
+        },
+        {
+          "id": "en13.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "The lift ",
+            "as": "The lift "
+          },
+          "after": {
+            "en": " at each floor.",
+            "as": " at each floor."
+          },
+          "options": [
+            {
+              "en": "stops",
+              "as": "stops"
+            },
+            {
+              "en": "stop",
+              "as": "stop"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Fix the word causing the error and preserve the original meaning. The lift stops at each floor.",
+            "as": "Fix the word causing the error and preserve the original meaning. The lift stops at each floor."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Trace the subject",
+        "as": "Trace the subject"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The head noun of the subject",
+          "as": "The head noun of the subject"
+        },
+        {
+          "en": "Match the verb to the head noun. An intervening phrase does not change its number.",
+          "as": "Match the verb to the head noun. An intervening phrase does not change its number."
+        },
+        {
+          "en": "Box is singular even when pins is plural.",
+          "as": "Box is singular even when pins is plural."
+        },
+        {
+          "en": "Apply it: The box of pins is here.",
+          "as": "Apply it: The box of pins is here."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en13.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A label reads “The box of pins are here.” It describes the location of the box.",
+              "as": "A label reads “The box of pins are here.” It describes the location of the box."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The head noun of the subject",
+                "as": "The head noun of the subject"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The box of pins are here.",
+              "as": "The box of pins are here."
+            },
+            {
+              "en": "The box of pins is here.",
+              "as": "The box of pins is here."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Match the verb to the head noun. An intervening phrase does not change its number.",
+            "as": "Match the verb to the head noun. An intervening phrase does not change its number."
+          },
+          "guess": true
+        },
+        {
+          "id": "en13.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Match the verb to the head noun. An intervening phrase does not change its number. Box is singular even when pins is plural.",
+              "as": "Match the verb to the head noun. An intervening phrase does not change its number. Box is singular even when pins is plural."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The head noun of the subject",
+                "as": "The head noun of the subject"
+              },
+              {
+                "en": "Box is singular even when pins is plural.",
+                "as": "Box is singular even when pins is plural."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "The keys to the shed ",
+            "as": "The keys to the shed "
+          },
+          "after": {
+            "en": " missing.",
+            "as": " missing."
+          },
+          "options": [
+            {
+              "en": "is",
+              "as": "is"
+            },
+            {
+              "en": "are",
+              "as": "are"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Match the verb to the head noun. An intervening phrase does not change its number. The keys to the shed are missing.",
+            "as": "Match the verb to the head noun. An intervening phrase does not change its number. The keys to the shed are missing."
+          }
+        },
+        {
+          "id": "en13.u2.05",
+          "type": "spot",
+          "q": {
+            "en": "Tap the part that needs a correction.",
+            "as": "Tap the part that needs a correction."
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "keys",
+              "to",
+              "the",
+              "shed",
+              "is",
+              "missing."
+            ],
+            "as": [
+              "The",
+              "keys",
+              "to",
+              "the",
+              "shed",
+              "is",
+              "missing."
+            ]
+          },
+          "wrong": {
+            "en": 5,
+            "as": 5
+          },
+          "fix": {
+            "en": "are",
+            "as": "are"
+          },
+          "why": {
+            "en": "Match the verb to the head noun. An intervening phrase does not change its number. The keys to the shed are missing.",
+            "as": "Match the verb to the head noun. An intervening phrase does not change its number. The keys to the shed are missing."
+          }
+        },
+        {
+          "id": "en13.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "A time marker that locates the action",
+              "as": "A time marker that locates the action"
+            },
+            {
+              "en": "The head noun of the subject",
+              "as": "The head noun of the subject"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Box is singular even when pins is plural.",
+            "as": "Box is singular even when pins is plural."
+          }
+        },
+        {
+          "id": "en13.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "The lid of these boxes ",
+            "as": "The lid of these boxes "
+          },
+          "after": {
+            "en": " loose.",
+            "as": " loose."
+          },
+          "options": [
+            {
+              "en": "are",
+              "as": "are"
+            },
+            {
+              "en": "is",
+              "as": "is"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Match the verb to the head noun. An intervening phrase does not change its number. The lid of these boxes is loose.",
+            "as": "Match the verb to the head noun. An intervening phrase does not change its number. The lid of these boxes is loose."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Trace the time",
+        "as": "Trace the time"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "A time marker that locates the action",
+          "as": "A time marker that locates the action"
+        },
+        {
+          "en": "Use the past simple for a completed action at a stated past time.",
+          "as": "Use the past simple for a completed action at a stated past time."
+        },
+        {
+          "en": "Last Saturday and yesterday locate finished events.",
+          "as": "Last Saturday and yesterday locate finished events."
+        },
+        {
+          "en": "Apply it: We watched the match last Saturday.",
+          "as": "Apply it: We watched the match last Saturday."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en13.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A report says a match happened last Saturday. The verb must agree with that finished time.",
+              "as": "A report says a match happened last Saturday. The verb must agree with that finished time."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A time marker that locates the action",
+                "as": "A time marker that locates the action"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "We watch the match last Saturday.",
+              "as": "We watch the match last Saturday."
+            },
+            {
+              "en": "We watched the match last Saturday.",
+              "as": "We watched the match last Saturday."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use the past simple for a completed action at a stated past time.",
+            "as": "Use the past simple for a completed action at a stated past time."
+          },
+          "guess": true
+        },
+        {
+          "id": "en13.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use the past simple for a completed action at a stated past time. Last Saturday and yesterday locate finished events.",
+              "as": "Use the past simple for a completed action at a stated past time. Last Saturday and yesterday locate finished events."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A time marker that locates the action",
+                "as": "A time marker that locates the action"
+              },
+              {
+                "en": "Last Saturday and yesterday locate finished events.",
+                "as": "Last Saturday and yesterday locate finished events."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "She ",
+            "as": "She "
+          },
+          "after": {
+            "en": " the note yesterday.",
+            "as": " the note yesterday."
+          },
+          "options": [
+            {
+              "en": "writes",
+              "as": "writes"
+            },
+            {
+              "en": "wrote",
+              "as": "wrote"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use the past simple for a completed action at a stated past time. She wrote the note yesterday.",
+            "as": "Use the past simple for a completed action at a stated past time. She wrote the note yesterday."
+          }
+        },
+        {
+          "id": "en13.u3.05",
+          "type": "spot",
+          "q": {
+            "en": "Tap the part that needs a correction.",
+            "as": "Tap the part that needs a correction."
+          },
+          "tokens": {
+            "en": [
+              "She",
+              "writes",
+              "the",
+              "note",
+              "yesterday."
+            ],
+            "as": [
+              "She",
+              "writes",
+              "the",
+              "note",
+              "yesterday."
+            ]
+          },
+          "wrong": {
+            "en": 1,
+            "as": 1
+          },
+          "fix": {
+            "en": "wrote",
+            "as": "wrote"
+          },
+          "why": {
+            "en": "Use the past simple for a completed action at a stated past time. She wrote the note yesterday.",
+            "as": "Use the past simple for a completed action at a stated past time. She wrote the note yesterday."
+          }
+        },
+        {
+          "id": "en13.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Time scale and the first spoken sound",
+              "as": "Time scale and the first spoken sound"
+            },
+            {
+              "en": "A time marker that locates the action",
+              "as": "A time marker that locates the action"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Last Saturday and yesterday locate finished events.",
+            "as": "Last Saturday and yesterday locate finished events."
+          }
+        },
+        {
+          "id": "en13.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "They ",
+            "as": "They "
+          },
+          "after": {
+            "en": " here last year.",
+            "as": " here last year."
+          },
+          "options": [
+            {
+              "en": "live",
+              "as": "live"
+            },
+            {
+              "en": "lived",
+              "as": "lived"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use the past simple for a completed action at a stated past time. They lived here last year.",
+            "as": "Use the past simple for a completed action at a stated past time. They lived here last year."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Check the small words",
+        "as": "Check the small words"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Time scale and the first spoken sound",
+          "as": "Time scale and the first spoken sound"
+        },
+        {
+          "en": "Use at with a clock time and an before a vowel sound.",
+          "as": "Use at with a clock time and an before a vowel sound."
+        },
+        {
+          "en": "The article depends on sound. The preposition depends on the time expression.",
+          "as": "The article depends on sound. The preposition depends on the time expression."
+        },
+        {
+          "en": "Apply it: Meet at six.",
+          "as": "Apply it: Meet at six."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en13.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "An invite says “Meet on six. Bring a umbrella.” Fix the time expression and article separately.",
+              "as": "An invite says “Meet on six. Bring a umbrella.” Fix the time expression and article separately."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Time scale and the first spoken sound",
+                "as": "Time scale and the first spoken sound"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Meet at six.",
+              "as": "Meet at six."
+            },
+            {
+              "en": "Meet on six.",
+              "as": "Meet on six."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use at with a clock time and an before a vowel sound.",
+            "as": "Use at with a clock time and an before a vowel sound."
+          },
+          "guess": true
+        },
+        {
+          "id": "en13.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use at with a clock time and an before a vowel sound. The article depends on sound. The preposition depends on the time expression.",
+              "as": "Use at with a clock time and an before a vowel sound. The article depends on sound. The preposition depends on the time expression."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Time scale and the first spoken sound",
+                "as": "Time scale and the first spoken sound"
+              },
+              {
+                "en": "The article depends on sound. The preposition depends on the time expression.",
+                "as": "The article depends on sound. The preposition depends on the time expression."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "Bring ",
+            "as": "Bring "
+          },
+          "after": {
+            "en": " umbrella.",
+            "as": " umbrella."
+          },
+          "options": [
+            {
+              "en": "an",
+              "as": "an"
+            },
+            {
+              "en": "a",
+              "as": "a"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use at with a clock time and an before a vowel sound. Bring an umbrella.",
+            "as": "Use at with a clock time and an before a vowel sound. Bring an umbrella."
+          }
+        },
+        {
+          "id": "en13.u4.05",
+          "type": "spot",
+          "q": {
+            "en": "Tap the part that needs a correction.",
+            "as": "Tap the part that needs a correction."
+          },
+          "tokens": {
+            "en": [
+              "Bring",
+              "a",
+              "umbrella."
+            ],
+            "as": [
+              "Bring",
+              "a",
+              "umbrella."
+            ]
+          },
+          "wrong": {
+            "en": 1,
+            "as": 1
+          },
+          "fix": {
+            "en": "an",
+            "as": "an"
+          },
+          "why": {
+            "en": "Use at with a clock time and an before a vowel sound. Bring an umbrella.",
+            "as": "Use at with a clock time and an before a vowel sound. Bring an umbrella."
+          }
+        },
+        {
+          "id": "en13.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Comparison form or a clear referent",
+              "as": "Comparison form or a clear referent"
+            },
+            {
+              "en": "Time scale and the first spoken sound",
+              "as": "Time scale and the first spoken sound"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The article depends on sound. The preposition depends on the time expression.",
+            "as": "The article depends on sound. The preposition depends on the time expression."
+          }
+        },
+        {
+          "id": "en13.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "The session starts ",
+            "as": "The session starts "
+          },
+          "after": {
+            "en": " 8 a.m.",
+            "as": " 8 a.m."
+          },
+          "options": [
+            {
+              "en": "at",
+              "as": "at"
+            },
+            {
+              "en": "in",
+              "as": "in"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use at with a clock time and an before a vowel sound. The session starts at 8 a.m.",
+            "as": "Use at with a clock time and an before a vowel sound. The session starts at 8 a.m."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": {
+        "en": "Check comparisons and pronouns",
+        "as": "Check comparisons and pronouns"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Comparison form or a clear referent",
+          "as": "Comparison form or a clear referent"
+        },
+        {
+          "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear.",
+          "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear."
+        },
+        {
+          "en": "Clearer already expresses comparison.",
+          "as": "Clearer already expresses comparison."
+        },
+        {
+          "en": "Apply it: This map is clearer than the old map.",
+          "as": "Apply it: This map is clearer than the old map."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en13.u5.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A review says “This map is more clearer.” Another line leaves the owner of a bag unclear.",
+              "as": "A review says “This map is more clearer.” Another line leaves the owner of a bag unclear."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Comparison form or a clear referent",
+                "as": "Comparison form or a clear referent"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u5.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "This map is more clearer than the old map.",
+              "as": "This map is more clearer than the old map."
+            },
+            {
+              "en": "This map is clearer than the old map.",
+              "as": "This map is clearer than the old map."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear.",
+            "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear."
+          },
+          "guess": true
+        },
+        {
+          "id": "en13.u5.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. Clearer already expresses comparison.",
+              "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. Clearer already expresses comparison."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Comparison form or a clear referent",
+                "as": "Comparison form or a clear referent"
+              },
+              {
+                "en": "Clearer already expresses comparison.",
+                "as": "Clearer already expresses comparison."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u5.04",
+          "type": "inline",
+          "before": {
+            "en": "To name Asha as the owner, write: We found ",
+            "as": "To name Asha as the owner, write: We found "
+          },
+          "after": {
+            "en": " bag.",
+            "as": " bag."
+          },
+          "options": [
+            {
+              "en": "their",
+              "as": "their"
+            },
+            {
+              "en": "Asha’s",
+              "as": "Asha’s"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. To name Asha as the owner, write: We found Asha’s bag.",
+            "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. To name Asha as the owner, write: We found Asha’s bag."
+          }
+        },
+        {
+          "id": "en13.u5.05",
+          "type": "spot",
+          "q": {
+            "en": "Tap the part that needs a correction.",
+            "as": "Tap the part that needs a correction."
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "new",
+              "path",
+              "is",
+              "more clearer",
+              "than",
+              "the",
+              "old",
+              "one."
+            ],
+            "as": [
+              "The",
+              "new",
+              "path",
+              "is",
+              "more clearer",
+              "than",
+              "the",
+              "old",
+              "one."
+            ]
+          },
+          "wrong": {
+            "en": 4,
+            "as": 4
+          },
+          "fix": {
+            "en": "clearer",
+            "as": "clearer"
+          },
+          "why": {
+            "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. The new path is clearer than the old one.",
+            "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. The new path is clearer than the old one."
+          }
+        },
+        {
+          "id": "en13.u5.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Does the original already fit?",
+              "as": "Does the original already fit?"
+            },
+            {
+              "en": "Comparison form or a clear referent",
+              "as": "Comparison form or a clear referent"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Clearer already expresses comparison.",
+            "as": "Clearer already expresses comparison."
+          }
+        },
+        {
+          "id": "en13.u5.07",
+          "type": "inline",
+          "before": {
+            "en": "The second map was ",
+            "as": "The second map was "
+          },
+          "after": {
+            "en": " than the first.",
+            "as": " than the first."
+          },
+          "options": [
+            {
+              "en": "more better",
+              "as": "more better"
+            },
+            {
+              "en": "better",
+              "as": "better"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. The second map was better than the first.",
+            "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. The second map was better than the first."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": {
+        "en": "Decide whether to edit",
+        "as": "Decide whether to edit"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Does the original already fit?",
+          "as": "Does the original already fit?"
+        },
+        {
+          "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error.",
+          "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error."
+        },
+        {
+          "en": "Plural doors takes are.",
+          "as": "Plural doors takes are."
+        },
+        {
+          "en": "Apply it: The doors are open.",
+          "as": "Apply it: The doors are open."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en13.u6.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "One sentence already says “The doors are open.” The editor is considering changing are to is.",
+              "as": "One sentence already says “The doors are open.” The editor is considering changing are to is."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Does the original already fit?",
+                "as": "Does the original already fit?"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u6.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The doors are open.",
+              "as": "The doors are open."
+            },
+            {
+              "en": "The doors is open.",
+              "as": "The doors is open."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error.",
+            "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error."
+          },
+          "guess": true
+        },
+        {
+          "id": "en13.u6.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. Plural doors takes are.",
+              "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. Plural doors takes are."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Does the original already fit?",
+                "as": "Does the original already fit?"
+              },
+              {
+                "en": "Plural doors takes are.",
+                "as": "Plural doors takes are."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en13.u6.04",
+          "type": "inline",
+          "before": {
+            "en": "The box ",
+            "as": "The box "
+          },
+          "after": {
+            "en": " open.",
+            "as": " open."
+          },
+          "options": [
+            {
+              "en": "is",
+              "as": "is"
+            },
+            {
+              "en": "are",
+              "as": "are"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The box is open.",
+            "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The box is open."
+          }
+        },
+        {
+          "id": "en13.u6.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The players are ready.”",
+            "as": "For this meaning, the following line works: “The players are ready.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The players are ready.",
+            "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The players are ready."
+          }
+        },
+        {
+          "id": "en13.u6.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The single word that breaks the sentence",
+              "as": "The single word that breaks the sentence"
+            },
+            {
+              "en": "Does the original already fit?",
+              "as": "Does the original already fit?"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Plural doors takes are.",
+            "as": "Plural doors takes are."
+          }
+        },
+        {
+          "id": "en13.u6.07",
+          "type": "inline",
+          "before": {
+            "en": "The lamps ",
+            "as": "The lamps "
+          },
+          "after": {
+            "en": " on.",
+            "as": " on."
+          },
+          "options": [
+            {
+              "en": "is",
+              "as": "is"
+            },
+            {
+              "en": "are",
+              "as": "are"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The lamps are on.",
+            "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The lamps are on."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en13.test.01",
+        "type": "inline",
+        "before": {
+          "en": "The guide ",
+          "as": "The guide "
+        },
+        "after": {
+          "en": " on Mondays.",
+          "as": " on Mondays."
+        },
+        "options": [
+          {
+            "en": "work",
+            "as": "work"
+          },
+          {
+            "en": "works",
+            "as": "works"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Fix the word causing the error and preserve the original meaning. The guide works on Mondays.",
+          "as": "Fix the word causing the error and preserve the original meaning. The guide works on Mondays."
+        }
+      },
+      {
+        "id": "en13.test.02",
+        "type": "inline",
+        "before": {
+          "en": "The names on the list ",
+          "as": "The names on the list "
+        },
+        "after": {
+          "en": " correct.",
+          "as": " correct."
+        },
+        "options": [
+          {
+            "en": "are",
+            "as": "are"
+          },
+          {
+            "en": "is",
+            "as": "is"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Match the verb to the head noun. An intervening phrase does not change its number. The names on the list are correct.",
+          "as": "Match the verb to the head noun. An intervening phrase does not change its number. The names on the list are correct."
+        }
+      },
+      {
+        "id": "en13.test.03",
+        "type": "inline",
+        "before": {
+          "en": "He ",
+          "as": "He "
+        },
+        "after": {
+          "en": " the key two days ago.",
+          "as": " the key two days ago."
+        },
+        "options": [
+          {
+            "en": "finds",
+            "as": "finds"
+          },
+          {
+            "en": "found",
+            "as": "found"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use the past simple for a completed action at a stated past time. He found the key two days ago.",
+          "as": "Use the past simple for a completed action at a stated past time. He found the key two days ago."
+        }
+      },
+      {
+        "id": "en13.test.04",
+        "type": "inline",
+        "before": {
+          "en": "Ask for ",
+          "as": "Ask for "
+        },
+        "after": {
+          "en": " hour to finish.",
+          "as": " hour to finish."
+        },
+        "options": [
+          {
+            "en": "an",
+            "as": "an"
+          },
+          {
+            "en": "a",
+            "as": "a"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use at with a clock time and an before a vowel sound. Ask for an hour to finish.",
+          "as": "Use at with a clock time and an before a vowel sound. Ask for an hour to finish."
+        }
+      },
+      {
+        "id": "en13.test.05",
+        "type": "inline",
+        "before": {
+          "en": "To identify Ravi as the caller, write: ",
+          "as": "To identify Ravi as the caller, write: "
+        },
+        "after": {
+          "en": " called the office.",
+          "as": " called the office."
+        },
+        "options": [
+          {
+            "en": "They",
+            "as": "They"
+          },
+          {
+            "en": "Ravi",
+            "as": "Ravi"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. To identify Ravi as the caller, write: Ravi called the office.",
+          "as": "Use one comparative marker. Repeat a name when a pronoun would leave the reference unclear. To identify Ravi as the caller, write: Ravi called the office."
+        }
+      },
+      {
+        "id": "en13.test.06",
+        "type": "inline",
+        "before": {
+          "en": "The ticket ",
+          "as": "The ticket "
+        },
+        "after": {
+          "en": " valid.",
+          "as": " valid."
+        },
+        "options": [
+          {
+            "en": "is",
+            "as": "is"
+          },
+          {
+            "en": "are",
+            "as": "are"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The ticket is valid.",
+          "as": "Keep a correct form when it agrees with the subject and meaning. Change only a clear error. The ticket is valid."
+        }
+      }
+    ]
+  }
+}

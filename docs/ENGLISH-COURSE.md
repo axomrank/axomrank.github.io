@@ -1,6 +1,8 @@
 # English course plan
 
-Status: planned on 2026-11-06. Nothing is built. Lesson format and permanent-id rules in
+Status: all 15 lessons and 75 units are playable as a local draft.
+Open `index.html?course=english` on a local server for the lesson list.
+Editorial review, placement, catalog release and delayed-recall evaluation are pending. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
 An Assamese-medium learner should understand why an English answer is right, and retain the
@@ -23,12 +25,16 @@ vocabulary after a delay. This is the largest subject with no course.
 
 - **Course id:** `english`, with lesson ids `en-NN-slug`. Add a new `english` subject to
   `content/catalog.json`, with exams `adre`, `tet`, `apsc` and `si`.
-- **Language rule:** the English being tested stays in English in both modes. Instructions
-  and explanations are in Assamese in Assamese mode. This is a deliberate exception to
-  writing all prose in both languages.
+- **Language rule:** All course-authored text is in English, including catalog copy,
+  directions, passages, choices, feedback and review prompts. The course shows the same
+  English text regardless of the app language. Shared navigation follows the learner's app
+  setting. This course is an explicit exception to the bilingual lesson contract.
+- **Reading level:** Use short directions, familiar examples and plain-English definitions.
+  Introduce grammar terms with an example before asking learners to apply them.
 - **Out of scope:** literature, essay writing, speaking and listening.
 
 ## Course map
+See the [75-unit authoring map](ENGLISH-UNIT-MAP.md) for the teaching order and unit briefs.
 
 15 lessons and about 75 units, roughly 450 exercises.
 
@@ -56,7 +62,8 @@ vocabulary after a delay. This is the largest subject with no course.
 ## How questions are made
 
 - **Generator with word tables,** following `scripts/build_reasoning_course.py`. Tables of
-  words, meanings and Assamese glosses produce variants, so review tests a different word.
+  words, senses and English definitions produce variants. Review can change the sentence or
+  distractors while still testing the taught word and sense.
 - **Every word and rule is written by hand.** Grammar answers cannot be computed, so
   `check_english.py` can only test structure, not correctness.
 - **All passages are original.** 72 past questions come from about 11 passages, so reading
@@ -67,28 +74,42 @@ vocabulary after a delay. This is the largest subject with no course.
 
 | Item | Need |
 |---|---|
-| Reading | A `passage` step that keeps the text visible across several questions. This is new |
+| Reading | Questions carry an optional `passage` panel that stays available in lesson checks and daily review |
 | Prepositions and blanks | The existing `inline` and `fill` steps suit these |
 | Error spotting | The existing `spot` step taps the wrong word |
 | Sentence arrangement | The existing `order` step works |
 | Word review | Daily review already covers steps, and variants give new words |
 | Look | Decide whether it uses the exercise-book look through `AXOM.notebook` |
 
-## Assamese
+## English-only content contract
 
-Glosses and grammar explanations need a fluent reader who also knows English grammar. Much
-of the value is explaining mistakes that come from Assamese habits, such as prepositions.
-Those notes must come from a real teacher's experience, not from guesswork.
+The draft mirrors English text in both locale fields to fit the existing player and audit.
+Use plain English strings where the shared text renderer already accepts them when
+expanding the course. Before
+authoring the first unit, trace catalog, lesson, checkpoint and review rendering for direct
+language lookups and fields that require bilingual objects. Add course-scoped support where
+needed and preserve existing bilingual validation for other courses. Check that opening
+and leaving English never changes the saved app language.
 
 ## Build order
 
-1. Choose the word reference and write the word tables for lesson 1.
-2. Build the `passage` step.
-3. Pilot lessons 1, 6 and 15 as a hidden draft: one word, one grammar and one reading lesson.
-4. Try it with learners, comparing 7-day recall of words.
-5. Finish Parts 1, 2 and 3, then add placement and list the course.
+1. Start with one hidden unit in `en-01-synonyms`. Teach near-synonyms in context, with
+   four learning points, two or three short story cards and five to seven varied exercises.
+   Include one transfer question that uses a fresh sentence. Record the dictionary entries
+   used for each sense and write original examples and distractors.
+2. Make the unit playable from a direct draft link. Verify it in both app language
+   settings, including a wrong answer, retry and review of the same word in a new context.
+3. Expand lesson 1 to six units, then pilot `en-06-prepositions` and `en-15-reading`.
+   Add persistent passage display when building reading, with evidence-based explanations
+   and a check that the passage stays accessible during review.
+4. Compare immediate accuracy with seven-day recall before expanding the word pilot.
+   Finish the remaining lessons, add placement and list the course after review.
 
 ## Release gates
 
-`scripts/verify.sh` and `audit_lessons.py` pass. Every lesson plays in both modes. A person
-checks every grammar answer, because code cannot. A fluent reader reviews the explanations.
+- Run `scripts/verify.sh` and audit new lessons with `scripts/audit_lessons.py`.
+- Check the English catalog card, player, checkpoint and review under both app language
+  settings. Course text should be identical and readable in both.
+- Have an English reviewer check word senses, acceptable grammar variants, answer keys
+  and passage evidence. Record the sources and review status before listing the course.
+- Keep first-attempt accuracy separate from retry success and seven-day recall.

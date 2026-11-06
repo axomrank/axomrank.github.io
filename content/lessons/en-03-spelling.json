@@ -1,0 +1,1746 @@
+{
+  "id": "en-03-spelling",
+  "course": "english",
+  "no": 3,
+  "version": 1,
+  "king": {
+    "en": "Spelling in context",
+    "as": "Spelling in context"
+  },
+  "reign": {
+    "en": "Words",
+    "as": "Words"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Cambridge · Quiet or quite?",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/quiet-or-quite",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · Spelling",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/spelling_2",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · There, their or they’re?",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/there-their",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · knee",
+      "url": "https://dictionary.cambridge.org/dictionary/english/knee",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · write",
+      "url": "https://dictionary.cambridge.org/dictionary/english/write",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · climb",
+      "url": "https://dictionary.cambridge.org/dictionary/english/climb",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · receive",
+      "url": "https://dictionary.cambridge.org/dictionary/english/receive",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · reception",
+      "url": "https://dictionary.cambridge.org/dictionary/english/reception",
+      "used_for": "Spelling, pronunciation and usage."
+    },
+    {
+      "title": "Cambridge · definitely",
+      "url": "https://dictionary.cambridge.org/dictionary/english/definitely",
+      "used_for": "Spelling, pronunciation and usage."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Quiet or quite?",
+        "as": "Quiet or quite?"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Quiet can describe a place with little sound.",
+          "as": "Quiet can describe a place with little sound."
+        },
+        {
+          "en": "Quite can modify another word, as in quite cold.",
+          "as": "Quite can modify another word, as in quite cold."
+        },
+        {
+          "en": "Quiet ends in -et and quite ends in -te.",
+          "as": "Quiet ends in -et and quite ends in -te."
+        },
+        {
+          "en": "Read the whole phrase before choosing the spelling.",
+          "as": "Read the whole phrase before choosing the spelling."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en03.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Fix the library sign",
+            "as": "Fix the library sign"
+          },
+          "text": [
+            {
+              "en": "You find “Please keep quite” on the reading room door. The sign asks people to lower their voices.",
+              "as": "You find “Please keep quite” on the reading room door. The sign asks people to lower their voices."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Door sign · lower voices",
+                "as": "Door sign · lower voices"
+              },
+              {
+                "en": "Two candidates · quiet / quite",
+                "as": "Two candidates · quiet / quite"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which spelling belongs on the sign?",
+            "as": "Which spelling belongs on the sign?"
+          },
+          "options": [
+            {
+              "en": "quiet",
+              "as": "quiet"
+            },
+            {
+              "en": "quite",
+              "as": "quite"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Keep quiet means make little or no noise.",
+            "as": "Keep quiet means make little or no noise."
+          },
+          "guess": true
+        },
+        {
+          "id": "en03.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Both can fit one note",
+            "as": "Both can fit one note"
+          },
+          "text": [
+            {
+              "en": "A librarian writes “It is <mark>quite quiet</mark> here.” Quite modifies quiet. Quiet describes the room. Both spellings are correct when each does its own job.",
+              "as": "A librarian writes “It is <mark>quite quiet</mark> here.” Quite modifies quiet. Quiet describes the room. Both spellings are correct when each does its own job."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "quiet · ends -et",
+                "as": "quiet · ends -et"
+              },
+              {
+                "en": "quite · ends -te",
+                "as": "quite · ends -te"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "The room was",
+            "as": "The room was"
+          },
+          "after": {
+            "en": "cold after sunset.",
+            "as": "cold after sunset."
+          },
+          "options": [
+            {
+              "en": "quiet",
+              "as": "quiet"
+            },
+            {
+              "en": "quite",
+              "as": "quite"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Quite modifies cold.",
+            "as": "Quite modifies cold."
+          }
+        },
+        {
+          "id": "en03.u1.05",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the word that means making little noise.",
+            "as": "Build the word that means making little noise."
+          },
+          "word": {
+            "en": [
+              "q",
+              "u",
+              "i",
+              "e",
+              "t"
+            ],
+            "as": [
+              "q",
+              "u",
+              "i",
+              "e",
+              "t"
+            ]
+          },
+          "why": {
+            "en": "Quiet ends in -et.",
+            "as": "Quiet ends in -et."
+          }
+        },
+        {
+          "id": "en03.u1.06",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Keep the room quiet",
+                "as": "Keep the room quiet"
+              },
+              {
+                "en": "Describe the sound",
+                "as": "Describe the sound"
+              }
+            ],
+            [
+              {
+                "en": "The room is quite cold",
+                "as": "The room is quite cold"
+              },
+              {
+                "en": "Modify cold",
+                "as": "Modify cold"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Read the job the word does in its phrase.",
+            "as": "Read the job the word does in its phrase."
+          }
+        },
+        {
+          "id": "en03.u1.07",
+          "type": "tf",
+          "s": {
+            "en": "The words in “quite quiet” can swap positions without changing the phrase.",
+            "as": "The words in “quite quiet” can swap positions without changing the phrase."
+          },
+          "answer": false,
+          "why": {
+            "en": "Quite modifies the adjective quiet and goes before it here.",
+            "as": "Quite modifies the adjective quiet and goes before it here."
+          }
+        },
+        {
+          "id": "en03.u1.08",
+          "type": "inline",
+          "before": {
+            "en": "The street stayed",
+            "as": "The street stayed"
+          },
+          "after": {
+            "en": "after the shops closed.",
+            "as": "after the shops closed."
+          },
+          "options": [
+            {
+              "en": "quite",
+              "as": "quite"
+            },
+            {
+              "en": "quiet",
+              "as": "quiet"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Quiet describes the street.",
+            "as": "Quiet describes the street."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Build the ending",
+        "as": "Build the ending"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Hope drops its final e before -ing.",
+          "as": "Hope drops its final e before -ing."
+        },
+        {
+          "en": "Hop doubles p before -ing.",
+          "as": "Hop doubles p before -ing."
+        },
+        {
+          "en": "Short verbs such as sit can also double the final consonant.",
+          "as": "Short verbs such as sit can also double the final consonant."
+        },
+        {
+          "en": "Read the intended base word before adding -ing.",
+          "as": "Read the intended base word before adding -ing."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en03.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Two words in one video",
+            "as": "Two words in one video"
+          },
+          "text": [
+            {
+              "en": "One child jumps from tile to tile. Another waits for a parcel she wants to arrive. You need a caption for each.",
+              "as": "One child jumps from tile to tile. Another waits for a parcel she wants to arrive. You need a caption for each."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Jump · hop",
+                "as": "Jump · hop"
+              },
+              {
+                "en": "Want a result · hope",
+                "as": "Want a result · hope"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which word describes the child moving across the tiles?",
+            "as": "Which word describes the child moving across the tiles?"
+          },
+          "options": [
+            {
+              "en": "hoping",
+              "as": "hoping"
+            },
+            {
+              "en": "hopping",
+              "as": "hopping"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Hopping comes from hop. The p doubles before -ing.",
+            "as": "Hopping comes from hop. The p doubles before -ing."
+          },
+          "guess": true
+        },
+        {
+          "id": "en03.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Watch the final letter",
+            "as": "Watch the final letter"
+          },
+          "text": [
+            {
+              "en": "Write <mark>hop → hopping</mark> and <mark>hope → hoping</mark>. One doubles p. The other drops e. Look at the base word before you build the ending.",
+              "as": "Write <mark>hop → hopping</mark> and <mark>hope → hoping</mark>. One doubles p. The other drops e. Look at the base word before you build the ending."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "hop + p + ing",
+                "as": "hop + p + ing"
+              },
+              {
+                "en": "hope − e + ing",
+                "as": "hope − e + ing"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u2.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "hop",
+                "as": "hop"
+              },
+              {
+                "en": "hopping",
+                "as": "hopping"
+              }
+            ],
+            [
+              {
+                "en": "hope",
+                "as": "hope"
+              },
+              {
+                "en": "hoping",
+                "as": "hoping"
+              }
+            ],
+            [
+              {
+                "en": "sit",
+                "as": "sit"
+              },
+              {
+                "en": "sitting",
+                "as": "sitting"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Hop and sit double their final consonants. Hope drops its final e.",
+            "as": "Hop and sit double their final consonants. Hope drops its final e."
+          }
+        },
+        {
+          "id": "en03.u2.05",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the -ing form of sit.",
+            "as": "Build the -ing form of sit."
+          },
+          "word": {
+            "en": [
+              "s",
+              "i",
+              "t",
+              "t",
+              "i",
+              "n",
+              "g"
+            ],
+            "as": [
+              "s",
+              "i",
+              "t",
+              "t",
+              "i",
+              "n",
+              "g"
+            ]
+          },
+          "why": {
+            "en": "Double the t before -ing.",
+            "as": "Double the t before -ing."
+          }
+        },
+        {
+          "id": "en03.u2.06",
+          "type": "tf",
+          "s": {
+            "en": "The -ing form of make keeps the final e.",
+            "as": "The -ing form of make keeps the final e."
+          },
+          "answer": false,
+          "why": {
+            "en": "Make drops its final e to form making.",
+            "as": "Make drops its final e to form making."
+          }
+        },
+        {
+          "id": "en03.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "Mina is",
+            "as": "Mina is"
+          },
+          "after": {
+            "en": "the rain will stop before the match.",
+            "as": "the rain will stop before the match."
+          },
+          "options": [
+            {
+              "en": "hopping",
+              "as": "hopping"
+            },
+            {
+              "en": "hoping",
+              "as": "hoping"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "She wants an outcome, so the base verb is hope.",
+            "as": "She wants an outcome, so the base verb is hope."
+          }
+        },
+        {
+          "id": "en03.u2.08",
+          "type": "inline",
+          "before": {
+            "en": "The rabbit is",
+            "as": "The rabbit is"
+          },
+          "after": {
+            "en": "across the yard.",
+            "as": "across the yard."
+          },
+          "options": [
+            {
+              "en": "hopping",
+              "as": "hopping"
+            },
+            {
+              "en": "hoping",
+              "as": "hoping"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The rabbit is jumping, so start with hop.",
+            "as": "The rabbit is jumping, so start with hop."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Their, there or they’re?",
+        "as": "Their, there or they’re?"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Their shows that something belongs to them.",
+          "as": "Their shows that something belongs to them."
+        },
+        {
+          "en": "There can point to a place.",
+          "as": "There can point to a place."
+        },
+        {
+          "en": "There can also introduce something that exists.",
+          "as": "There can also introduce something that exists."
+        },
+        {
+          "en": "They’re is short for they are.",
+          "as": "They’re is short for they are."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en03.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Return the bags",
+            "as": "Return the bags"
+          },
+          "text": [
+            {
+              "en": "Two players left bags by the gate. You write “The players left there bags by the gate.” The missing idea is ownership.",
+              "as": "Two players left bags by the gate. You write “The players left there bags by the gate.” The missing idea is ownership."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Who owns them? · the players",
+                "as": "Who owns them? · the players"
+              },
+              {
+                "en": "Where? · by the gate",
+                "as": "Where? · by the gate"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which word goes before bags?",
+            "as": "Which word goes before bags?"
+          },
+          "options": [
+            {
+              "en": "there",
+              "as": "there"
+            },
+            {
+              "en": "their",
+              "as": "their"
+            },
+            {
+              "en": "they’re",
+              "as": "they’re"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Their bags means the bags belonging to them.",
+            "as": "Their bags means the bags belonging to them."
+          },
+          "guess": true
+        },
+        {
+          "id": "en03.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Three jobs, one sound",
+            "as": "Three jobs, one sound"
+          },
+          "text": [
+            {
+              "en": "Write “<mark>They’re</mark> waiting over <mark>there</mark> for <mark>their</mark> bags.” Expand they’re to they are. Point with there. Show ownership with their.",
+              "as": "Write “<mark>They’re</mark> waiting over <mark>there</mark> for <mark>their</mark> bags.” Expand they’re to they are. Point with there. Show ownership with their."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "they’re → they are",
+                "as": "they’re → they are"
+              },
+              {
+                "en": "there → place",
+                "as": "there → place"
+              },
+              {
+                "en": "their → belonging",
+                "as": "their → belonging"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "The bags are over",
+            "as": "The bags are over"
+          },
+          "after": {
+            "en": ", next to the gate.",
+            "as": ", next to the gate."
+          },
+          "options": [
+            {
+              "en": "there",
+              "as": "there"
+            },
+            {
+              "en": "their",
+              "as": "their"
+            },
+            {
+              "en": "they’re",
+              "as": "they’re"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Over there points to a place.",
+            "as": "Over there points to a place."
+          }
+        },
+        {
+          "id": "en03.u3.05",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Their bags",
+                "as": "Their bags"
+              },
+              {
+                "en": "Ownership",
+                "as": "Ownership"
+              }
+            ],
+            [
+              {
+                "en": "Over there",
+                "as": "Over there"
+              },
+              {
+                "en": "Place",
+                "as": "Place"
+              }
+            ],
+            [
+              {
+                "en": "They’re waiting",
+                "as": "They’re waiting"
+              },
+              {
+                "en": "They are waiting",
+                "as": "They are waiting"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Use the job in the sentence to choose the spelling.",
+            "as": "Use the job in the sentence to choose the spelling."
+          }
+        },
+        {
+          "id": "en03.u3.06",
+          "type": "tf",
+          "s": {
+            "en": "“They are waiting” can be shortened to “They’re waiting.”",
+            "as": "“They are waiting” can be shortened to “They’re waiting.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "The apostrophe marks the missing letter in the contraction.",
+            "as": "The apostrophe marks the missing letter in the contraction."
+          }
+        },
+        {
+          "id": "en03.u3.07",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the word for “belonging to them”.",
+            "as": "Build the word for “belonging to them”."
+          },
+          "word": {
+            "en": [
+              "t",
+              "h",
+              "e",
+              "i",
+              "r"
+            ],
+            "as": [
+              "t",
+              "h",
+              "e",
+              "i",
+              "r"
+            ]
+          },
+          "why": {
+            "en": "Their is the ownership word.",
+            "as": "Their is the ownership word."
+          }
+        },
+        {
+          "id": "en03.u3.08",
+          "type": "inline",
+          "before": {
+            "en": "Look.",
+            "as": "Look."
+          },
+          "after": {
+            "en": "are two bags by the gate.",
+            "as": "are two bags by the gate."
+          },
+          "options": [
+            {
+              "en": "Their",
+              "as": "Their"
+            },
+            {
+              "en": "There",
+              "as": "There"
+            },
+            {
+              "en": "They’re",
+              "as": "They’re"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "There are introduces the two bags.",
+            "as": "There are introduces the two bags."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Letters you do not hear",
+        "as": "Letters you do not hear"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Knee starts with a written k you do not hear.",
+          "as": "Knee starts with a written k you do not hear."
+        },
+        {
+          "en": "Write starts with a written w you do not hear.",
+          "as": "Write starts with a written w you do not hear."
+        },
+        {
+          "en": "Climb ends with a written b you do not hear.",
+          "as": "Climb ends with a written b you do not hear."
+        },
+        {
+          "en": "Recall the whole written word when sound gives too few clues.",
+          "as": "Recall the whole written word when sound gives too few clues."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en03.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Pack for a short hike",
+            "as": "Pack for a short hike"
+          },
+          "text": [
+            {
+              "en": "You need to label three cards: a knee pad, a note to write, and a hill to climb. Each word has a letter you do not hear.",
+              "as": "You need to label three cards: a knee pad, a note to write, and a hill to climb. Each word has a letter you do not hear."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "knee pad",
+                "as": "knee pad"
+              },
+              {
+                "en": "write a note",
+                "as": "write a note"
+              },
+              {
+                "en": "climb a hill",
+                "as": "climb a hill"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which written letter begins knee?",
+            "as": "Which written letter begins knee?"
+          },
+          "options": [
+            {
+              "en": "n",
+              "as": "n"
+            },
+            {
+              "en": "k",
+              "as": "k"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Knee begins with k in writing, although the first sound is n.",
+            "as": "Knee begins with k in writing, although the first sound is n."
+          },
+          "guess": true
+        },
+        {
+          "id": "en03.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the hidden letter",
+            "as": "Keep the hidden letter"
+          },
+          "text": [
+            {
+              "en": "Underline the letter your ear misses: <mark>k</mark>nee, <mark>w</mark>rite, clim<mark>b</mark>. Say the word, then picture how it looks on the label.",
+              "as": "Underline the letter your ear misses: <mark>k</mark>nee, <mark>w</mark>rite, clim<mark>b</mark>. Say the word, then picture how it looks on the label."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "knee · first letter",
+                "as": "knee · first letter"
+              },
+              {
+                "en": "write · first letter",
+                "as": "write · first letter"
+              },
+              {
+                "en": "climb · last letter",
+                "as": "climb · last letter"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u4.04",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the word for the joint in the middle of your leg.",
+            "as": "Build the word for the joint in the middle of your leg."
+          },
+          "word": {
+            "en": [
+              "k",
+              "n",
+              "e",
+              "e"
+            ],
+            "as": [
+              "k",
+              "n",
+              "e",
+              "e"
+            ]
+          },
+          "why": {
+            "en": "Keep the initial k.",
+            "as": "Keep the initial k."
+          }
+        },
+        {
+          "id": "en03.u4.05",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "knee",
+                "as": "knee"
+              },
+              {
+                "en": "silent k",
+                "as": "silent k"
+              }
+            ],
+            [
+              {
+                "en": "write",
+                "as": "write"
+              },
+              {
+                "en": "silent w",
+                "as": "silent w"
+              }
+            ],
+            [
+              {
+                "en": "climb",
+                "as": "climb"
+              },
+              {
+                "en": "silent b",
+                "as": "silent b"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The missing sound does not remove the letter from the spelling.",
+            "as": "The missing sound does not remove the letter from the spelling."
+          }
+        },
+        {
+          "id": "en03.u4.06",
+          "type": "tf",
+          "s": {
+            "en": "The final b in climb must be written.",
+            "as": "The final b in climb must be written."
+          },
+          "answer": true,
+          "why": {
+            "en": "Climb keeps its written b even though you do not hear it.",
+            "as": "Climb keeps its written b even though you do not hear it."
+          }
+        },
+        {
+          "id": "en03.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "Please",
+            "as": "Please"
+          },
+          "after": {
+            "en": "your name on the label.",
+            "as": "your name on the label."
+          },
+          "options": [
+            {
+              "en": "rite",
+              "as": "rite"
+            },
+            {
+              "en": "write",
+              "as": "write"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Write is the verb for putting words on a page.",
+            "as": "Write is the verb for putting words on a page."
+          }
+        },
+        {
+          "id": "en03.u4.08",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the verb for going up a steep hill.",
+            "as": "Build the verb for going up a steep hill."
+          },
+          "word": {
+            "en": [
+              "c",
+              "l",
+              "i",
+              "m",
+              "b"
+            ],
+            "as": [
+              "c",
+              "l",
+              "i",
+              "m",
+              "b"
+            ]
+          },
+          "why": {
+            "en": "Keep the final b in climb.",
+            "as": "Keep the final b in climb."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": {
+        "en": "Proof the notice",
+        "as": "Proof the notice"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Receive is spelled with -cei-.",
+          "as": "Receive is spelled with -cei-."
+        },
+        {
+          "en": "Reception has a different ending from receive.",
+          "as": "Reception has a different ending from receive."
+        },
+        {
+          "en": "Definitely contains finite in its spelling.",
+          "as": "Definitely contains finite in its spelling."
+        },
+        {
+          "en": "Use a word-specific clue for spellings that are easy to confuse.",
+          "as": "Use a word-specific clue for spellings that are easy to confuse."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en03.u5.01",
+          "type": "story",
+          "title": {
+            "en": "Check the delivery notice",
+            "as": "Check the delivery notice"
+          },
+          "text": [
+            {
+              "en": "A notice reads “You will recieve a text when your parcel reaches reception.” One word has two letters out of order.",
+              "as": "A notice reads “You will recieve a text when your parcel reaches reception.” One word has two letters out of order."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A text will arrive",
+                "as": "A text will arrive"
+              },
+              {
+                "en": "Reception is the collection point",
+                "as": "Reception is the collection point"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u5.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which spelling fits “You will ___ a text”?",
+            "as": "Which spelling fits “You will ___ a text”?"
+          },
+          "options": [
+            {
+              "en": "recieve",
+              "as": "recieve"
+            },
+            {
+              "en": "receive",
+              "as": "receive"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Receive has e before i after c in this word.",
+            "as": "Receive has e before i after c in this word."
+          },
+          "guess": true
+        },
+        {
+          "id": "en03.u5.03",
+          "type": "story",
+          "title": {
+            "en": "Keep a spelling cue",
+            "as": "Keep a spelling cue"
+          },
+          "text": [
+            {
+              "en": "Keep <mark>receive</mark> and <mark>reception</mark> as separate written forms. For <mark>definitely</mark>, look for finite in the middle. Read it back before posting.",
+              "as": "Keep <mark>receive</mark> and <mark>reception</mark> as separate written forms. For <mark>definitely</mark>, look for finite in the middle. Read it back before posting."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "receive · cei",
+                "as": "receive · cei"
+              },
+              {
+                "en": "reception · cept",
+                "as": "reception · cept"
+              },
+              {
+                "en": "definitely · finite",
+                "as": "definitely · finite"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u5.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Receive",
+                "as": "Receive"
+              },
+              {
+                "en": "Get something sent",
+                "as": "Get something sent"
+              }
+            ],
+            [
+              {
+                "en": "Reception",
+                "as": "Reception"
+              },
+              {
+                "en": "The front desk here",
+                "as": "The front desk here"
+              }
+            ],
+            [
+              {
+                "en": "Definitely",
+                "as": "Definitely"
+              },
+              {
+                "en": "Certainly",
+                "as": "Certainly"
+              }
+            ]
+          ],
+          "why": {
+            "en": "A meaning check helps you recall which spelling belongs in each place.",
+            "as": "A meaning check helps you recall which spelling belongs in each place."
+          }
+        },
+        {
+          "id": "en03.u5.05",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the verb meaning “get something sent”.",
+            "as": "Build the verb meaning “get something sent”."
+          },
+          "word": {
+            "en": [
+              "r",
+              "e",
+              "c",
+              "e",
+              "i",
+              "v",
+              "e"
+            ],
+            "as": [
+              "r",
+              "e",
+              "c",
+              "e",
+              "i",
+              "v",
+              "e"
+            ]
+          },
+          "why": {
+            "en": "Keep -cei- in receive.",
+            "as": "Keep -cei- in receive."
+          }
+        },
+        {
+          "id": "en03.u5.06",
+          "type": "tf",
+          "s": {
+            "en": "The word finite appears inside definitely.",
+            "as": "The word finite appears inside definitely."
+          },
+          "answer": true,
+          "why": {
+            "en": "De + finite + ly builds definitely.",
+            "as": "De + finite + ly builds definitely."
+          }
+        },
+        {
+          "id": "en03.u5.07",
+          "type": "inline",
+          "before": {
+            "en": "Please collect your parcel at",
+            "as": "Please collect your parcel at"
+          },
+          "after": {
+            "en": "before five.",
+            "as": "before five."
+          },
+          "options": [
+            {
+              "en": "reception",
+              "as": "reception"
+            },
+            {
+              "en": "recepsion",
+              "as": "recepsion"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Reception is the standard spelling for the front desk.",
+            "as": "Reception is the standard spelling for the front desk."
+          }
+        },
+        {
+          "id": "en03.u5.08",
+          "type": "inline",
+          "before": {
+            "en": "I will",
+            "as": "I will"
+          },
+          "after": {
+            "en": "bring the key tomorrow.",
+            "as": "bring the key tomorrow."
+          },
+          "options": [
+            {
+              "en": "definitely",
+              "as": "definitely"
+            },
+            {
+              "en": "definately",
+              "as": "definately"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Definitely retains the spelling finite.",
+            "as": "Definitely retains the spelling finite."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": {
+        "en": "Edit before sending",
+        "as": "Edit before sending"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Use meaning to distinguish quiet from quite.",
+          "as": "Use meaning to distinguish quiet from quite."
+        },
+        {
+          "en": "Use ownership, place or they are to choose the right homophone.",
+          "as": "Use ownership, place or they are to choose the right homophone."
+        },
+        {
+          "en": "Check the base verb before adding -ing.",
+          "as": "Check the base verb before adding -ing."
+        },
+        {
+          "en": "Read a corrected sentence once more to see if it makes sense.",
+          "as": "Read a corrected sentence once more to see if it makes sense."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en03.u6.01",
+          "type": "story",
+          "title": {
+            "en": "One message, three fixes",
+            "as": "One message, three fixes"
+          },
+          "text": [
+            {
+              "en": "A club message reads “Their hoppping over the puddles. Keep quite near the exam room.” Decide what the message means before changing letters.",
+              "as": "A club message reads “Their hoppping over the puddles. Keep quite near the exam room.” Decide what the message means before changing letters."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Players are moving",
+                "as": "Players are moving"
+              },
+              {
+                "en": "Exam room needs little noise",
+                "as": "Exam room needs little noise"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u6.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which opening means “They are”?",
+            "as": "Which opening means “They are”?"
+          },
+          "options": [
+            {
+              "en": "Their",
+              "as": "Their"
+            },
+            {
+              "en": "There",
+              "as": "There"
+            },
+            {
+              "en": "They’re",
+              "as": "They’re"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "They’re expands to they are.",
+            "as": "They’re expands to they are."
+          },
+          "guess": true
+        },
+        {
+          "id": "en03.u6.03",
+          "type": "story",
+          "title": {
+            "en": "Read back your edits",
+            "as": "Read back your edits"
+          },
+          "text": [
+            {
+              "en": "The message now reads “<mark>They’re hopping</mark> over the puddles. Keep <mark>quiet</mark> near the exam room.” Each repair follows a meaning clue.",
+              "as": "The message now reads “<mark>They’re hopping</mark> over the puddles. Keep <mark>quiet</mark> near the exam room.” Each repair follows a meaning clue."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "They’re · they are",
+                "as": "They’re · they are"
+              },
+              {
+                "en": "Hopping · hop",
+                "as": "Hopping · hop"
+              },
+              {
+                "en": "Quiet · low sound",
+                "as": "Quiet · low sound"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en03.u6.04",
+          "type": "inline",
+          "before": {
+            "en": "The players are waiting for",
+            "as": "The players are waiting for"
+          },
+          "after": {
+            "en": "coach.",
+            "as": "coach."
+          },
+          "options": [
+            {
+              "en": "their",
+              "as": "their"
+            },
+            {
+              "en": "there",
+              "as": "there"
+            },
+            {
+              "en": "they’re",
+              "as": "they’re"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Their shows who the coach is associated with.",
+            "as": "Their shows who the coach is associated with."
+          }
+        },
+        {
+          "id": "en03.u6.05",
+          "type": "unscramble",
+          "q": {
+            "en": "Build the -ing form of hope.",
+            "as": "Build the -ing form of hope."
+          },
+          "word": {
+            "en": [
+              "h",
+              "o",
+              "p",
+              "i",
+              "n",
+              "g"
+            ],
+            "as": [
+              "h",
+              "o",
+              "p",
+              "i",
+              "n",
+              "g"
+            ]
+          },
+          "why": {
+            "en": "Drop the final e and add -ing.",
+            "as": "Drop the final e and add -ing."
+          }
+        },
+        {
+          "id": "en03.u6.06",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Lower the noise",
+                "as": "Lower the noise"
+              },
+              {
+                "en": "Keep quiet",
+                "as": "Keep quiet"
+              }
+            ],
+            [
+              {
+                "en": "Climb the hill",
+                "as": "Climb the hill"
+              },
+              {
+                "en": "Keep the final b",
+                "as": "Keep the final b"
+              }
+            ],
+            [
+              {
+                "en": "They are ready",
+                "as": "They are ready"
+              },
+              {
+                "en": "They’re ready",
+                "as": "They’re ready"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Check meaning, then retrieve the spelling.",
+            "as": "Check meaning, then retrieve the spelling."
+          }
+        },
+        {
+          "id": "en03.u6.07",
+          "type": "tf",
+          "s": {
+            "en": "In “quite warm,” quite changes the meaning of warm.",
+            "as": "In “quite warm,” quite changes the meaning of warm."
+          },
+          "answer": true,
+          "why": {
+            "en": "Quite is modifying the adjective warm.",
+            "as": "Quite is modifying the adjective warm."
+          }
+        },
+        {
+          "id": "en03.u6.08",
+          "type": "inline",
+          "before": {
+            "en": "The visitors can",
+            "as": "The visitors can"
+          },
+          "after": {
+            "en": "their passes at the desk.",
+            "as": "their passes at the desk."
+          },
+          "options": [
+            {
+              "en": "recieve",
+              "as": "recieve"
+            },
+            {
+              "en": "receive",
+              "as": "receive"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Receive keeps the letters in -cei- order.",
+            "as": "Receive keeps the letters in -cei- order."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Proofread the message",
+      "as": "Proofread the message"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en03.test.01",
+        "type": "inline",
+        "before": {
+          "en": "Please keep",
+          "as": "Please keep"
+        },
+        "after": {
+          "en": "while the talk is recorded.",
+          "as": "while the talk is recorded."
+        },
+        "options": [
+          {
+            "en": "quiet",
+            "as": "quiet"
+          },
+          {
+            "en": "quite",
+            "as": "quite"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Quiet fits a request for little sound.",
+          "as": "Quiet fits a request for little sound."
+        }
+      },
+      {
+        "id": "en03.test.02",
+        "type": "inline",
+        "before": {
+          "en": "The bus is",
+          "as": "The bus is"
+        },
+        "after": {
+          "en": "close to the station now.",
+          "as": "close to the station now."
+        },
+        "options": [
+          {
+            "en": "quiet",
+            "as": "quiet"
+          },
+          {
+            "en": "quite",
+            "as": "quite"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Quite modifies close.",
+          "as": "Quite modifies close."
+        }
+      },
+      {
+        "id": "en03.test.03",
+        "type": "inline",
+        "before": {
+          "en": "She is",
+          "as": "She is"
+        },
+        "after": {
+          "en": "to finish before dark.",
+          "as": "to finish before dark."
+        },
+        "options": [
+          {
+            "en": "hoping",
+            "as": "hoping"
+          },
+          {
+            "en": "hopping",
+            "as": "hopping"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "She wants to finish, so the verb comes from hope.",
+          "as": "She wants to finish, so the verb comes from hope."
+        }
+      },
+      {
+        "id": "en03.test.04",
+        "type": "inline",
+        "before": {
+          "en": "The children left",
+          "as": "The children left"
+        },
+        "after": {
+          "en": "coats on the hooks.",
+          "as": "coats on the hooks."
+        },
+        "options": [
+          {
+            "en": "their",
+            "as": "their"
+          },
+          {
+            "en": "there",
+            "as": "there"
+          },
+          {
+            "en": "they’re",
+            "as": "they’re"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The coats belong to the children.",
+          "as": "The coats belong to the children."
+        }
+      },
+      {
+        "id": "en03.test.05",
+        "type": "inline",
+        "before": {
+          "en": "Please",
+          "as": "Please"
+        },
+        "after": {
+          "en": "the address clearly.",
+          "as": "the address clearly."
+        },
+        "options": [
+          {
+            "en": "right",
+            "as": "right"
+          },
+          {
+            "en": "write",
+            "as": "write"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Write is the verb for putting words on paper.",
+          "as": "Write is the verb for putting words on paper."
+        }
+      },
+      {
+        "id": "en03.test.06",
+        "type": "inline",
+        "before": {
+          "en": "You should",
+          "as": "You should"
+        },
+        "after": {
+          "en": "a confirmation tomorrow.",
+          "as": "a confirmation tomorrow."
+        },
+        "options": [
+          {
+            "en": "receive",
+            "as": "receive"
+          },
+          {
+            "en": "recieve",
+            "as": "recieve"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Receive is spelled with -cei-.",
+          "as": "Receive is spelled with -cei-."
+        }
+      }
+    ]
+  }
+}

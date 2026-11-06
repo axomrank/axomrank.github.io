@@ -1,0 +1,961 @@
+{
+  "id": "en-07-articles",
+  "course": "english",
+  "no": 7,
+  "version": 1,
+  "king": {
+    "en": "Articles",
+    "as": "Articles"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "The",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/the",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Listen to the first sound",
+        "as": "Listen to the first sound"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The first sound of the next word",
+          "as": "The first sound of the next word"
+        },
+        {
+          "en": "Use a before a consonant sound and an before a vowel sound.",
+          "as": "Use a before a consonant sound and an before a vowel sound."
+        },
+        {
+          "en": "Uniform starts with a y sound. The h in hour is silent.",
+          "as": "Uniform starts with a y sound. The h in hour is silent."
+        },
+        {
+          "en": "Apply it: It takes an hour.",
+          "as": "Apply it: It takes an hour."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en07.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The sign offers a uniform and says the fitting takes an hour. The first letter and first sound can differ.",
+              "as": "The sign offers a uniform and says the fitting takes an hour. The first letter and first sound can differ."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The first sound of the next word",
+                "as": "The first sound of the next word"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "It takes an hour.",
+              "as": "It takes an hour."
+            },
+            {
+              "en": "It takes a hour.",
+              "as": "It takes a hour."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a before a consonant sound and an before a vowel sound.",
+            "as": "Use a before a consonant sound and an before a vowel sound."
+          },
+          "guess": true
+        },
+        {
+          "id": "en07.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use a before a consonant sound and an before a vowel sound. Uniform starts with a y sound. The h in hour is silent.",
+              "as": "Use a before a consonant sound and an before a vowel sound. Uniform starts with a y sound. The h in hour is silent."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The first sound of the next word",
+                "as": "The first sound of the next word"
+              },
+              {
+                "en": "Uniform starts with a y sound. The h in hour is silent.",
+                "as": "Uniform starts with a y sound. The h in hour is silent."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "She needs ",
+            "as": "She needs "
+          },
+          "after": {
+            "en": " uniform.",
+            "as": " uniform."
+          },
+          "options": [
+            {
+              "en": "an",
+              "as": "an"
+            },
+            {
+              "en": "a",
+              "as": "a"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a before a consonant sound and an before a vowel sound. She needs a uniform.",
+            "as": "Use a before a consonant sound and an before a vowel sound. She needs a uniform."
+          }
+        },
+        {
+          "id": "en07.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “He carried a umbrella.”",
+            "as": "For this meaning, the following line works: “He carried a umbrella.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use a before a consonant sound and an before a vowel sound. He carried an umbrella.",
+            "as": "Use a before a consonant sound and an before a vowel sound. He carried an umbrella."
+          }
+        },
+        {
+          "id": "en07.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Can the reader identify the item?",
+              "as": "Can the reader identify the item?"
+            },
+            {
+              "en": "The first sound of the next word",
+              "as": "The first sound of the next word"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Uniform starts with a y sound. The h in hour is silent.",
+            "as": "Uniform starts with a y sound. The h in hour is silent."
+          }
+        },
+        {
+          "id": "en07.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "Bring ",
+            "as": "Bring "
+          },
+          "after": {
+            "en": " empty box.",
+            "as": " empty box."
+          },
+          "options": [
+            {
+              "en": "an",
+              "as": "an"
+            },
+            {
+              "en": "a",
+              "as": "a"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a before a consonant sound and an before a vowel sound. Bring an empty box.",
+            "as": "Use a before a consonant sound and an before a vowel sound. Bring an empty box."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Introduce and point back",
+        "as": "Introduce and point back"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Can the reader identify the item?",
+          "as": "Can the reader identify the item?"
+        },
+        {
+          "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item.",
+          "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item."
+        },
+        {
+          "en": "A later mention can point back to the item already introduced.",
+          "as": "A later mention can point back to the item already introduced."
+        },
+        {
+          "en": "Apply it: I found a bag I had never seen before.",
+          "as": "Apply it: I found a bag I had never seen before."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en07.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The first sentence introduces an unmarked bag. In the next sentence, the writer points back to that same bag.",
+              "as": "The first sentence introduces an unmarked bag. In the next sentence, the writer points back to that same bag."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Can the reader identify the item?",
+                "as": "Can the reader identify the item?"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "I found a bag I had never seen before.",
+              "as": "I found a bag I had never seen before."
+            },
+            {
+              "en": "I found the bag I had never seen before.",
+              "as": "I found the bag I had never seen before."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item.",
+            "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item."
+          },
+          "guess": true
+        },
+        {
+          "id": "en07.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. A later mention can point back to the item already introduced.",
+              "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. A later mention can point back to the item already introduced."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Can the reader identify the item?",
+                "as": "Can the reader identify the item?"
+              },
+              {
+                "en": "A later mention can point back to the item already introduced.",
+                "as": "A later mention can point back to the item already introduced."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "I found a bag. ",
+            "as": "I found a bag. "
+          },
+          "after": {
+            "en": " bag had a blue zip.",
+            "as": " bag had a blue zip."
+          },
+          "options": [
+            {
+              "en": "The",
+              "as": "The"
+            },
+            {
+              "en": "An",
+              "as": "An"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. I found a bag. The bag had a blue zip.",
+            "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. I found a bag. The bag had a blue zip."
+          }
+        },
+        {
+          "id": "en07.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “A dog ran past. The dog was carrying a sock.”",
+            "as": "For this meaning, the following line works: “A dog ran past. The dog was carrying a sock.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. A dog ran past. The dog was carrying a sock.",
+            "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. A dog ran past. The dog was carrying a sock."
+          }
+        },
+        {
+          "id": "en07.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "General kind or specific amount",
+              "as": "General kind or specific amount"
+            },
+            {
+              "en": "Can the reader identify the item?",
+              "as": "Can the reader identify the item?"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A later mention can point back to the item already introduced.",
+            "as": "A later mention can point back to the item already introduced."
+          }
+        },
+        {
+          "id": "en07.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "At a stall I bought ",
+            "as": "At a stall I bought "
+          },
+          "after": {
+            "en": " apple I had not tried before.",
+            "as": " apple I had not tried before."
+          },
+          "options": [
+            {
+              "en": "an",
+              "as": "an"
+            },
+            {
+              "en": "a",
+              "as": "a"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. At a stall I bought an apple I had not tried before.",
+            "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. At a stall I bought an apple I had not tried before."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Speak generally",
+        "as": "Speak generally"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "General kind or specific amount",
+          "as": "General kind or specific amount"
+        },
+        {
+          "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific.",
+          "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific."
+        },
+        {
+          "en": "Rice in general differs from the rice on one plate.",
+          "as": "Rice in general differs from the rice on one plate."
+        },
+        {
+          "en": "Apply it: Rice often needs plenty of water to grow.",
+          "as": "Apply it: Rice often needs plenty of water to grow."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en07.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A food note discusses rice in general, then points to the particular rice in one bowl.",
+              "as": "A food note discusses rice in general, then points to the particular rice in one bowl."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "General kind or specific amount",
+                "as": "General kind or specific amount"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Rice often needs plenty of water to grow.",
+              "as": "Rice often needs plenty of water to grow."
+            },
+            {
+              "en": "A rice often needs plenty of water to grow.",
+              "as": "A rice often needs plenty of water to grow."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific.",
+            "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific."
+          },
+          "guess": true
+        },
+        {
+          "id": "en07.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Rice in general differs from the rice on one plate.",
+              "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Rice in general differs from the rice on one plate."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "General kind or specific amount",
+                "as": "General kind or specific amount"
+              },
+              {
+                "en": "Rice in general differs from the rice on one plate.",
+                "as": "Rice in general differs from the rice on one plate."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u3.04",
+          "type": "inline",
+          "before": "",
+          "after": {
+            "en": " can see better than people in some low-light conditions.",
+            "as": " can see better than people in some low-light conditions."
+          },
+          "options": [
+            {
+              "en": "Cats",
+              "as": "Cats"
+            },
+            {
+              "en": "A cats",
+              "as": "A cats"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Cats can see better than people in some low-light conditions.",
+            "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Cats can see better than people in some low-light conditions."
+          }
+        },
+        {
+          "id": "en07.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “Please finish a rice in this bowl.”",
+            "as": "For this meaning, the following line works: “Please finish a rice in this bowl.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Please finish the rice in this bowl.",
+            "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Please finish the rice in this bowl."
+          }
+        },
+        {
+          "id": "en07.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "First mention, later mention and sound",
+              "as": "First mention, later mention and sound"
+            },
+            {
+              "en": "General kind or specific amount",
+              "as": "General kind or specific amount"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Rice in general differs from the rice on one plate.",
+            "as": "Rice in general differs from the rice on one plate."
+          }
+        },
+        {
+          "id": "en07.u3.07",
+          "type": "inline",
+          "before": "",
+          "after": {
+            "en": " on this shelf are mine.",
+            "as": " on this shelf are mine."
+          },
+          "options": [
+            {
+              "en": "The books",
+              "as": "The books"
+            },
+            {
+              "en": "A books",
+              "as": "A books"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific. The books on this shelf are mine.",
+            "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific. The books on this shelf are mine."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Edit the directions",
+        "as": "Edit the directions"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "First mention, later mention and sound",
+          "as": "First mention, later mention and sound"
+        },
+        {
+          "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item.",
+          "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item."
+        },
+        {
+          "en": "Sound helps you choose a or an. Reference helps you choose the.",
+          "as": "Sound helps you choose a or an. Reference helps you choose the."
+        },
+        {
+          "en": "Apply it: Take an umbrella from the stand.",
+          "as": "Apply it: Take an umbrella from the stand."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en07.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A visitor must take any unused umbrella, then return the same umbrella before leaving.",
+              "as": "A visitor must take any unused umbrella, then return the same umbrella before leaving."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "First mention, later mention and sound",
+                "as": "First mention, later mention and sound"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Take an umbrella from the stand.",
+              "as": "Take an umbrella from the stand."
+            },
+            {
+              "en": "Take a umbrella from the stand.",
+              "as": "Take a umbrella from the stand."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item.",
+            "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item."
+          },
+          "guess": true
+        },
+        {
+          "id": "en07.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. Sound helps you choose a or an. Reference helps you choose the.",
+              "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. Sound helps you choose a or an. Reference helps you choose the."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "First mention, later mention and sound",
+                "as": "First mention, later mention and sound"
+              },
+              {
+                "en": "Sound helps you choose a or an. Reference helps you choose the.",
+                "as": "Sound helps you choose a or an. Reference helps you choose the."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en07.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "You took an umbrella. Return ",
+            "as": "You took an umbrella. Return "
+          },
+          "after": {
+            "en": " umbrella before leaving.",
+            "as": " umbrella before leaving."
+          },
+          "options": [
+            {
+              "en": "the",
+              "as": "the"
+            },
+            {
+              "en": "an",
+              "as": "an"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. You took an umbrella. Return the umbrella before leaving.",
+            "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. You took an umbrella. Return the umbrella before leaving."
+          }
+        },
+        {
+          "id": "en07.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “Ask for a new ticket if yours is damaged.”",
+            "as": "For this meaning, the following line works: “Ask for a new ticket if yours is damaged.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. Ask for a new ticket if yours is damaged.",
+            "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. Ask for a new ticket if yours is damaged."
+          }
+        },
+        {
+          "id": "en07.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The first sound of the next word",
+              "as": "The first sound of the next word"
+            },
+            {
+              "en": "First mention, later mention and sound",
+              "as": "First mention, later mention and sound"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Sound helps you choose a or an. Reference helps you choose the.",
+            "as": "Sound helps you choose a or an. Reference helps you choose the."
+          }
+        },
+        {
+          "id": "en07.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "A guide will show you ",
+            "as": "A guide will show you "
+          },
+          "after": {
+            "en": " old map from the collection.",
+            "as": " old map from the collection."
+          },
+          "options": [
+            {
+              "en": "a",
+              "as": "a"
+            },
+            {
+              "en": "an",
+              "as": "an"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. A guide will show you an old map from the collection.",
+            "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. A guide will show you an old map from the collection."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en07.test.01",
+        "type": "inline",
+        "before": {
+          "en": "I asked ",
+          "as": "I asked "
+        },
+        "after": {
+          "en": " useful question.",
+          "as": " useful question."
+        },
+        "options": [
+          {
+            "en": "an",
+            "as": "an"
+          },
+          {
+            "en": "a",
+            "as": "a"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use a before a consonant sound and an before a vowel sound. I asked a useful question.",
+          "as": "Use a before a consonant sound and an before a vowel sound. I asked a useful question."
+        }
+      },
+      {
+        "id": "en07.test.02",
+        "type": "inline",
+        "before": {
+          "en": "She borrowed a book. ",
+          "as": "She borrowed a book. "
+        },
+        "after": {
+          "en": " book was due on Friday.",
+          "as": " book was due on Friday."
+        },
+        "options": [
+          {
+            "en": "The",
+            "as": "The"
+          },
+          {
+            "en": "An",
+            "as": "An"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. She borrowed a book. The book was due on Friday.",
+          "as": "Use a or an to introduce one unspecified item. Use the when the reader can identify the item. She borrowed a book. The book was due on Friday."
+        }
+      },
+      {
+        "id": "en07.test.03",
+        "type": "inline",
+        "before": "",
+        "after": {
+          "en": " is useful when recording an interview.",
+          "as": " is useful when recording an interview."
+        },
+        "options": [
+          {
+            "en": "A good advice",
+            "as": "A good advice"
+          },
+          {
+            "en": "Good advice",
+            "as": "Good advice"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Good advice is useful when recording an interview.",
+          "as": "General plural and mass nouns often take no article. Use the when the group or amount is specific. Good advice is useful when recording an interview."
+        }
+      },
+      {
+        "id": "en07.test.04",
+        "type": "inline",
+        "before": {
+          "en": "You will see a bell. Ring ",
+          "as": "You will see a bell. Ring "
+        },
+        "after": {
+          "en": " bell once.",
+          "as": " bell once."
+        },
+        "options": [
+          {
+            "en": "an",
+            "as": "an"
+          },
+          {
+            "en": "the",
+            "as": "the"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. You will see a bell. Ring the bell once.",
+          "as": "Use an with the vowel sound in umbrella. Use the when the directions point back to the same item. You will see a bell. Ring the bell once."
+        }
+      },
+      {
+        "id": "en07.test.05",
+        "type": "inline",
+        "before": {
+          "en": "Bring ",
+          "as": "Bring "
+        },
+        "after": {
+          "en": " empty box.",
+          "as": " empty box."
+        },
+        "options": [
+          {
+            "en": "an",
+            "as": "an"
+          },
+          {
+            "en": "a",
+            "as": "a"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use a before a consonant sound and an before a vowel sound. Bring an empty box.",
+          "as": "Use a before a consonant sound and an before a vowel sound. Bring an empty box."
+        }
+      }
+    ]
+  }
+}

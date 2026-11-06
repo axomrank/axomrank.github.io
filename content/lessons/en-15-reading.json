@@ -1,0 +1,1467 @@
+{
+  "id": "en-15-reading",
+  "course": "english",
+  "no": 15,
+  "version": 1,
+  "king": {
+    "en": "Reading comprehension",
+    "as": "Reading comprehension"
+  },
+  "reign": {
+    "en": "Use",
+    "as": "Use"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "IES practice guide · Reading comprehension",
+      "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/14",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Library club notice",
+        "as": "Library club notice"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Find the requested detail in the text.",
+          "as": "Find the requested detail in the text."
+        },
+        {
+          "en": "Match the question to a time, place or instruction.",
+          "as": "Match the question to a time, place or instruction."
+        },
+        {
+          "en": "Check nearby details that could be mistaken for the answer.",
+          "as": "Check nearby details that could be mistaken for the answer."
+        },
+        {
+          "en": "Point to the exact words that support your choice.",
+          "as": "Point to the exact words that support your choice."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en15.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Read with a purpose",
+            "as": "Read with a purpose"
+          },
+          "text": [
+            {
+              "en": "You need to know where the club meets. Read for the room, not the sign-up location.",
+              "as": "You need to know where the club meets. Read for the room, not the sign-up location."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Question · meeting room",
+                "as": "Question · meeting room"
+              },
+              {
+                "en": "Check · room versus desk",
+                "as": "Check · room versus desk"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Where does the club meet?",
+            "as": "Where does the club meet?"
+          },
+          "options": [
+            {
+              "en": "Room 4",
+              "as": "Room 4"
+            },
+            {
+              "en": "Front desk",
+              "as": "Front desk"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The first sentence says the club will meet in Room 4.",
+            "as": "The first sentence says the club will meet in Room 4."
+          },
+          "guess": true,
+          "passage": {
+            "title": "Library club notice",
+            "text": "The library club will meet in Room 4 on Thursday at 3:15. Bring one book to swap. New members can sign up at the front desk before the meeting."
+          }
+        },
+        {
+          "id": "en15.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the evidence",
+            "as": "Keep the evidence"
+          },
+          "text": [
+            {
+              "en": "Match the question to a time, place or instruction. Check nearby details that could be mistaken for the answer.",
+              "as": "Match the question to a time, place or instruction. Check nearby details that could be mistaken for the answer."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Question · meeting room",
+                "as": "Question · meeting room"
+              },
+              {
+                "en": "Check · room versus desk",
+                "as": "Check · room versus desk"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u1.04",
+          "type": "tf",
+          "s": {
+            "en": "Members should bring a book to swap.",
+            "as": "Members should bring a book to swap."
+          },
+          "answer": true,
+          "why": {
+            "en": "The notice says to bring one book to swap.",
+            "as": "The notice says to bring one book to swap."
+          },
+          "passage": {
+            "title": "Library club notice",
+            "text": "The library club will meet in Room 4 on Thursday at 3:15. Bring one book to swap. New members can sign up at the front desk before the meeting."
+          }
+        },
+        {
+          "id": "en15.u1.05",
+          "type": "inline",
+          "before": {
+            "en": "New members sign up at the",
+            "as": "New members sign up at the"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "front desk",
+              "as": "front desk"
+            },
+            {
+              "en": "bus gate",
+              "as": "bus gate"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The last sentence gives the front desk as the sign-up location.",
+            "as": "The last sentence gives the front desk as the sign-up location."
+          },
+          "passage": {
+            "title": "Library club notice",
+            "text": "The library club will meet in Room 4 on Thursday at 3:15. Bring one book to swap. New members can sign up at the front desk before the meeting."
+          }
+        },
+        {
+          "id": "en15.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which gate is for the first Tuesday bus?",
+            "as": "Which gate is for the first Tuesday bus?"
+          },
+          "options": [
+            {
+              "en": "Gate 1",
+              "as": "Gate 1"
+            },
+            {
+              "en": "Gate 2",
+              "as": "Gate 2"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The first sentence puts the 8:10 bus at Gate 2.",
+            "as": "The first sentence puts the 8:10 bus at Gate 2."
+          },
+          "passage": {
+            "title": "Timetable update",
+            "text": "On Tuesday, the first bus leaves Gate 2 at 8:10. The 8:40 bus still leaves from Gate 1. Show your pass before boarding."
+          }
+        },
+        {
+          "id": "en15.u1.07",
+          "type": "tf",
+          "s": {
+            "en": "Riders must show a pass before boarding.",
+            "as": "Riders must show a pass before boarding."
+          },
+          "answer": true,
+          "why": {
+            "en": "The final instruction tells riders when to show the pass.",
+            "as": "The final instruction tells riders when to show the pass."
+          },
+          "passage": {
+            "title": "Timetable update",
+            "text": "On Tuesday, the first bus leaves Gate 2 at 8:10. The 8:40 bus still leaves from Gate 1. Show your pass before boarding."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "A missed bus",
+        "as": "A missed bus"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Use time words to place events in order.",
+          "as": "Use time words to place events in order."
+        },
+        {
+          "en": "Separate what happens while someone waits from what happens afterwards.",
+          "as": "Separate what happens while someone waits from what happens afterwards."
+        },
+        {
+          "en": "Check before and after when two events are close together.",
+          "as": "Check before and after when two events are close together."
+        },
+        {
+          "en": "Use the text’s order when it gives a clear sequence.",
+          "as": "Use the text’s order when it gives a clear sequence."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en15.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Read with a purpose",
+            "as": "Read with a purpose"
+          },
+          "text": [
+            {
+              "en": "Read the bus story to reconstruct Leena’s morning. Pay attention to just after and while.",
+              "as": "Read the bus story to reconstruct Leena’s morning. Pay attention to just after and while."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Just after · bus already gone",
+                "as": "Just after · bus already gone"
+              },
+              {
+                "en": "While · during the wait",
+                "as": "While · during the wait"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "What had already happened when Leena reached the stop?",
+            "as": "What had already happened when Leena reached the stop?"
+          },
+          "options": [
+            {
+              "en": "Her bus had left",
+              "as": "Her bus had left"
+            },
+            {
+              "en": "Her cousin had arrived",
+              "as": "Her cousin had arrived"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Just after her bus left places the departure first.",
+            "as": "Just after her bus left places the departure first."
+          },
+          "guess": true,
+          "passage": {
+            "title": "A missed bus",
+            "text": "Leena reached the stop just after her bus left. She called her cousin, who offered a lift. While she waited, she bought a bottle of water. Her cousin arrived ten minutes later."
+          }
+        },
+        {
+          "id": "en15.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the evidence",
+            "as": "Keep the evidence"
+          },
+          "text": [
+            {
+              "en": "Separate what happens while someone waits from what happens afterwards. Check before and after when two events are close together.",
+              "as": "Separate what happens while someone waits from what happens afterwards. Check before and after when two events are close together."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Just after · bus already gone",
+                "as": "Just after · bus already gone"
+              },
+              {
+                "en": "While · during the wait",
+                "as": "While · during the wait"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u2.04",
+          "type": "order",
+          "q": {
+            "en": "Tap the sentences in the order that makes the paragraph clear.",
+            "as": "Tap the sentences in the order that makes the paragraph clear."
+          },
+          "items": [
+            {
+              "en": "Leena missed the bus.",
+              "as": "Leena missed the bus."
+            },
+            {
+              "en": "Leena called her cousin.",
+              "as": "Leena called her cousin."
+            },
+            {
+              "en": "Leena bought water.",
+              "as": "Leena bought water."
+            },
+            {
+              "en": "Her cousin arrived.",
+              "as": "Her cousin arrived."
+            }
+          ],
+          "why": {
+            "en": "She buys water while waiting after calling.",
+            "as": "She buys water while waiting after calling."
+          },
+          "passage": {
+            "title": "A missed bus",
+            "text": "Leena reached the stop just after her bus left. She called her cousin, who offered a lift. While she waited, she bought a bottle of water. Her cousin arrived ten minutes later."
+          }
+        },
+        {
+          "id": "en15.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "Leena bought water before calling her cousin.",
+            "as": "Leena bought water before calling her cousin."
+          },
+          "answer": false,
+          "why": {
+            "en": "The text says she bought water while waiting for the lift.",
+            "as": "The text says she bought water while waiting for the lift."
+          },
+          "passage": {
+            "title": "A missed bus",
+            "text": "Leena reached the stop just after her bus left. She called her cousin, who offered a lift. While she waited, she bought a bottle of water. Her cousin arrived ten minutes later."
+          }
+        },
+        {
+          "id": "en15.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "What happened just before the signs went up?",
+            "as": "What happened just before the signs went up?"
+          },
+          "options": [
+            {
+              "en": "The visitors arrived",
+              "as": "The visitors arrived"
+            },
+            {
+              "en": "The team carried in the tables",
+              "as": "The team carried in the tables"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "After carrying in the tables tells you which event came first.",
+            "as": "After carrying in the tables tells you which event came first."
+          },
+          "passage": {
+            "title": "Before the fair",
+            "text": "The team unlocked the hall at seven. After carrying in the tables, they pinned up the signs. The first visitors came after the signs were up."
+          }
+        },
+        {
+          "id": "en15.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "The first visitors came",
+            "as": "The first visitors came"
+          },
+          "after": {
+            "en": "the signs were up.",
+            "as": "the signs were up."
+          },
+          "options": [
+            {
+              "en": "after",
+              "as": "after"
+            },
+            {
+              "en": "before",
+              "as": "before"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The last sentence gives after as the time relation.",
+            "as": "The last sentence gives after as the time relation."
+          },
+          "passage": {
+            "title": "Before the fair",
+            "text": "The team unlocked the hall at seven. After carrying in the tables, they pinned up the signs. The first visitors came after the signs were up."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "A library announcement",
+        "as": "A library announcement"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Infer a word from nearby evidence.",
+          "as": "Infer a word from nearby evidence."
+        },
+        {
+          "en": "Look for a restatement or a contrast.",
+          "as": "Look for a restatement or a contrast."
+        },
+        {
+          "en": "Test your guessed meaning in the original sentence.",
+          "as": "Test your guessed meaning in the original sentence."
+        },
+        {
+          "en": "Keep the sense that fits the specific context.",
+          "as": "Keep the sense that fits the specific context."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en15.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Read with a purpose",
+            "as": "Read with a purpose"
+          },
+          "text": [
+            {
+              "en": "Suppose extend is new to you. Find what changes from six to eight.",
+              "as": "Suppose extend is new to you. Find what changes from six to eight."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Old closing · six",
+                "as": "Old closing · six"
+              },
+              {
+                "en": "New closing · eight",
+                "as": "New closing · eight"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "What does extend mean here?",
+            "as": "What does extend mean here?"
+          },
+          "options": [
+            {
+              "en": "Make the hours longer",
+              "as": "Make the hours longer"
+            },
+            {
+              "en": "Make the hours shorter",
+              "as": "Make the hours shorter"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Staying open until eight instead of six makes the opening period longer.",
+            "as": "Staying open until eight instead of six makes the opening period longer."
+          },
+          "guess": true,
+          "passage": {
+            "title": "A library announcement",
+            "text": "The library will extend its evening hours on Fridays. Instead of shutting at six, it will stay open until eight. The change starts next week."
+          }
+        },
+        {
+          "id": "en15.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the evidence",
+            "as": "Keep the evidence"
+          },
+          "text": [
+            {
+              "en": "Look for a restatement or a contrast. Test your guessed meaning in the original sentence.",
+              "as": "Look for a restatement or a contrast. Test your guessed meaning in the original sentence."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Old closing · six",
+                "as": "Old closing · six"
+              },
+              {
+                "en": "New closing · eight",
+                "as": "New closing · eight"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "Instead of shutting at six, the library will shut at",
+            "as": "Instead of shutting at six, the library will shut at"
+          },
+          "after": {
+            "en": "on Fridays.",
+            "as": "on Fridays."
+          },
+          "options": [
+            {
+              "en": "eight",
+              "as": "eight"
+            },
+            {
+              "en": "five",
+              "as": "five"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The new closing time is eight.",
+            "as": "The new closing time is eight."
+          },
+          "passage": {
+            "title": "A library announcement",
+            "text": "The library will extend its evening hours on Fridays. Instead of shutting at six, it will stay open until eight. The change starts next week."
+          }
+        },
+        {
+          "id": "en15.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "The change starts next week.",
+            "as": "The change starts next week."
+          },
+          "answer": true,
+          "why": {
+            "en": "The final sentence tells when the change starts.",
+            "as": "The final sentence tells when the change starts."
+          },
+          "passage": {
+            "title": "A library announcement",
+            "text": "The library will extend its evening hours on Fridays. Instead of shutting at six, it will stay open until eight. The change starts next week."
+          }
+        },
+        {
+          "id": "en15.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "What does almost bare mean for the trays?",
+            "as": "What does almost bare mean for the trays?"
+          },
+          "options": [
+            {
+              "en": "Nearly empty",
+              "as": "Nearly empty"
+            },
+            {
+              "en": "Painted white",
+              "as": "Painted white"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The baker has sold nearly every bun, so little remains on the trays.",
+            "as": "The baker has sold nearly every bun, so little remains on the trays."
+          },
+          "passage": {
+            "title": "A morning at the market",
+            "text": "By noon, the trays were almost bare. The baker had sold nearly every bun. She set aside the last two for a customer."
+          }
+        },
+        {
+          "id": "en15.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "The evidence for nearly empty is that nearly every bun was",
+            "as": "The evidence for nearly empty is that nearly every bun was"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "sold",
+              "as": "sold"
+            },
+            {
+              "en": "made into a tray",
+              "as": "made into a tray"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Selling the buns explains why little remains.",
+            "as": "Selling the buns explains why little remains."
+          },
+          "passage": {
+            "title": "A morning at the market",
+            "text": "By noon, the trays were almost bare. The baker had sold nearly every bun. She set aside the last two for a customer."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "The club doorway",
+        "as": "The club doorway"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "An inference combines text clues with a reasonable connection.",
+          "as": "An inference combines text clues with a reasonable connection."
+        },
+        {
+          "en": "Use the action and its context together.",
+          "as": "Use the action and its context together."
+        },
+        {
+          "en": "Prefer an explanation supported by details.",
+          "as": "Prefer an explanation supported by details."
+        },
+        {
+          "en": "Keep a likely inference separate from a stated fact.",
+          "as": "Keep a likely inference separate from a stated fact."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en15.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Read with a purpose",
+            "as": "Read with a purpose"
+          },
+          "text": [
+            {
+              "en": "The passage never states why Ravi fetches a tray. Use the wet umbrellas and puddle to infer his purpose.",
+              "as": "The passage never states why Ravi fetches a tray. Use the wet umbrellas and puddle to infer his purpose."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Wet umbrellas",
+                "as": "Wet umbrellas"
+              },
+              {
+                "en": "Puddle beside the door",
+                "as": "Puddle beside the door"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Why did Ravi most likely bring the tray?",
+            "as": "Why did Ravi most likely bring the tray?"
+          },
+          "options": [
+            {
+              "en": "To catch water from the umbrellas",
+              "as": "To catch water from the umbrellas"
+            },
+            {
+              "en": "To serve lunch",
+              "as": "To serve lunch"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The umbrellas are wet and there is already a puddle. A tray can catch the drips.",
+            "as": "The umbrellas are wet and there is already a puddle. A tray can catch the drips."
+          },
+          "guess": true,
+          "passage": {
+            "title": "The club doorway",
+            "text": "“Are you coming in?” Ravi asked. Leena held up two wet umbrellas and pointed to the puddle beside the door. Ravi brought her a plastic tray."
+          }
+        },
+        {
+          "id": "en15.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the evidence",
+            "as": "Keep the evidence"
+          },
+          "text": [
+            {
+              "en": "Use the action and its context together. Prefer an explanation supported by details.",
+              "as": "Use the action and its context together. Prefer an explanation supported by details."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Wet umbrellas",
+                "as": "Wet umbrellas"
+              },
+              {
+                "en": "Puddle beside the door",
+                "as": "Puddle beside the door"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u4.04",
+          "type": "tf",
+          "s": {
+            "en": "The text says explicitly that Ravi wanted to catch drips.",
+            "as": "The text says explicitly that Ravi wanted to catch drips."
+          },
+          "answer": false,
+          "why": {
+            "en": "It describes his actions. His purpose is a supported inference.",
+            "as": "It describes his actions. His purpose is a supported inference."
+          },
+          "passage": {
+            "title": "The club doorway",
+            "text": "“Are you coming in?” Ravi asked. Leena held up two wet umbrellas and pointed to the puddle beside the door. Ravi brought her a plastic tray."
+          }
+        },
+        {
+          "id": "en15.u4.05",
+          "type": "inline",
+          "before": {
+            "en": "The two details that support the inference are the wet umbrellas and the",
+            "as": "The two details that support the inference are the wet umbrellas and the"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "puddle",
+              "as": "puddle"
+            },
+            {
+              "en": "lunch",
+              "as": "lunch"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The puddle shows that the umbrellas can drip by the door.",
+            "as": "The puddle shows that the umbrellas can drip by the door."
+          },
+          "passage": {
+            "title": "The club doorway",
+            "text": "“Are you coming in?” Ravi asked. Leena held up two wet umbrellas and pointed to the puddle beside the door. Ravi brought her a plastic tray."
+          }
+        },
+        {
+          "id": "en15.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Where would Imran most likely ask someone to look first?",
+            "as": "Where would Imran most likely ask someone to look first?"
+          },
+          "options": [
+            {
+              "en": "The raincoat pocket",
+              "as": "The raincoat pocket"
+            },
+            {
+              "en": "Under a park bench",
+              "as": "Under a park bench"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "He remembers putting the key in the pocket, and the coat is at work.",
+            "as": "He remembers putting the key in the pocket, and the coat is at work."
+          },
+          "passage": {
+            "title": "The missing key",
+            "text": "Imran could not find his key. He remembered putting it in the pocket of his raincoat. The coat was still on the hook at work, so he called the office."
+          }
+        },
+        {
+          "id": "en15.u4.07",
+          "type": "tf",
+          "s": {
+            "en": "The passage confirms that the key was found.",
+            "as": "The passage confirms that the key was found."
+          },
+          "answer": false,
+          "why": {
+            "en": "Imran calls the office. The result of the search is unstated.",
+            "as": "Imran calls the office. The result of the search is unstated."
+          },
+          "passage": {
+            "title": "The missing key",
+            "text": "Imran could not find his key. He remembered putting it in the pocket of his raincoat. The coat was still on the hook at work, so he called the office."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": {
+        "en": "A case for benches",
+        "as": "A case for benches"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The main idea covers the text as a whole.",
+          "as": "The main idea covers the text as a whole."
+        },
+        {
+          "en": "A supporting detail explains or illustrates the main idea.",
+          "as": "A supporting detail explains or illustrates the main idea."
+        },
+        {
+          "en": "Purpose asks what the writer wants to achieve.",
+          "as": "Purpose asks what the writer wants to achieve."
+        },
+        {
+          "en": "Match the purpose to the way the text addresses the reader.",
+          "as": "Match the purpose to the way the text addresses the reader."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en15.u5.01",
+          "type": "story",
+          "title": {
+            "en": "Read with a purpose",
+            "as": "Read with a purpose"
+          },
+          "text": [
+            {
+              "en": "The opinion paragraph makes a proposal and gives a reason. Look for the idea both sentences support.",
+              "as": "The opinion paragraph makes a proposal and gives a reason. Look for the idea both sentences support."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Proposal · add benches",
+                "as": "Proposal · add benches"
+              },
+              {
+                "en": "Reason · rest on the hill",
+                "as": "Reason · rest on the hill"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u5.02",
+          "type": "mcq",
+          "q": {
+            "en": "What is the main proposal?",
+            "as": "What is the main proposal?"
+          },
+          "options": [
+            {
+              "en": "Add benches along the hill path",
+              "as": "Add benches along the hill path"
+            },
+            {
+              "en": "Close the hill path",
+              "as": "Close the hill path"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The first sentence proposes benches and the rest explains the benefit.",
+            "as": "The first sentence proposes benches and the rest explains the benefit."
+          },
+          "guess": true,
+          "passage": {
+            "title": "A case for benches",
+            "text": "The town should add benches along the hill path. A place to rest would help walkers who cannot climb the whole hill at once. Two benches near the steepest section would be a useful start."
+          }
+        },
+        {
+          "id": "en15.u5.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the evidence",
+            "as": "Keep the evidence"
+          },
+          "text": [
+            {
+              "en": "A supporting detail explains or illustrates the main idea. Purpose asks what the writer wants to achieve.",
+              "as": "A supporting detail explains or illustrates the main idea. Purpose asks what the writer wants to achieve."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Proposal · add benches",
+                "as": "Proposal · add benches"
+              },
+              {
+                "en": "Reason · rest on the hill",
+                "as": "Reason · rest on the hill"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u5.04",
+          "type": "tf",
+          "s": {
+            "en": "The steepest section is a supporting detail.",
+            "as": "The steepest section is a supporting detail."
+          },
+          "answer": true,
+          "why": {
+            "en": "It suggests where to begin putting the benches.",
+            "as": "It suggests where to begin putting the benches."
+          },
+          "passage": {
+            "title": "A case for benches",
+            "text": "The town should add benches along the hill path. A place to rest would help walkers who cannot climb the whole hill at once. Two benches near the steepest section would be a useful start."
+          }
+        },
+        {
+          "id": "en15.u5.05",
+          "type": "inline",
+          "before": {
+            "en": "The writer’s purpose is to",
+            "as": "The writer’s purpose is to"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "argue for adding benches",
+              "as": "argue for adding benches"
+            },
+            {
+              "en": "give a bus timetable",
+              "as": "give a bus timetable"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The paragraph makes a recommendation and supports it with a reason.",
+            "as": "The paragraph makes a recommendation and supports it with a reason."
+          },
+          "passage": {
+            "title": "A case for benches",
+            "text": "The town should add benches along the hill path. A place to rest would help walkers who cannot climb the whole hill at once. Two benches near the steepest section would be a useful start."
+          }
+        },
+        {
+          "id": "en15.u5.06",
+          "type": "odd",
+          "q": {
+            "en": "What does the leaflet chiefly ask people to do?",
+            "as": "What does the leaflet chiefly ask people to do?"
+          },
+          "options": [
+            {
+              "en": "Bring clean glass jars",
+              "as": "Bring clean glass jars"
+            },
+            {
+              "en": "Buy new benches",
+              "as": "Buy new benches"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The opening instruction asks for clean jars for the reuse project.",
+            "as": "The opening instruction asks for clean jars for the reuse project."
+          },
+          "passage": {
+            "title": "Community leaflet",
+            "text": "Bring clean glass jars to the hall on Saturday from ten to noon. Leave the lids at home. Volunteers will sort the jars for a community reuse project."
+          }
+        },
+        {
+          "id": "en15.u5.07",
+          "type": "tf",
+          "s": {
+            "en": "The leaflet asks people to bring jar lids.",
+            "as": "The leaflet asks people to bring jar lids."
+          },
+          "answer": false,
+          "why": {
+            "en": "It says to leave the lids at home.",
+            "as": "It says to leave the lids at home."
+          },
+          "passage": {
+            "title": "Community leaflet",
+            "text": "Bring clean glass jars to the hall on Saturday from ten to noon. Leave the lids at home. Volunteers will sort the jars for a community reuse project."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": {
+        "en": "A shaded thermometer",
+        "as": "A shaded thermometer"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Locate exact details before making an inference.",
+          "as": "Locate exact details before making an inference."
+        },
+        {
+          "en": "Separate a result from the explanation for it.",
+          "as": "Separate a result from the explanation for it."
+        },
+        {
+          "en": "Use the writer’s request to identify the purpose.",
+          "as": "Use the writer’s request to identify the purpose."
+        },
+        {
+          "en": "Give a text detail for every answer.",
+          "as": "Give a text detail for every answer."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en15.u6.01",
+          "type": "story",
+          "title": {
+            "en": "Read with a purpose",
+            "as": "Read with a purpose"
+          },
+          "text": [
+            {
+              "en": "Read the classroom account for the observed result and the teacher’s explanation. They answer different questions.",
+              "as": "Read the classroom account for the observed result and the teacher’s explanation. They answer different questions."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Result · higher reading",
+                "as": "Result · higher reading"
+              },
+              {
+                "en": "Explanation · sun warms instrument",
+                "as": "Explanation · sun warms instrument"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u6.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which instrument gave the higher reading?",
+            "as": "Which instrument gave the higher reading?"
+          },
+          "options": [
+            {
+              "en": "The one in direct sun",
+              "as": "The one in direct sun"
+            },
+            {
+              "en": "The one in shade",
+              "as": "The one in shade"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The second sentence reports the higher reading in the sun.",
+            "as": "The second sentence reports the higher reading in the sun."
+          },
+          "guess": true,
+          "passage": {
+            "title": "A shaded thermometer",
+            "text": "A class placed one thermometer in direct sun and another in shade. The reading in the sun was higher. The teacher explained that sunlight can warm the instrument itself. For their outdoor air measurements, the class used the shaded instrument."
+          }
+        },
+        {
+          "id": "en15.u6.03",
+          "type": "story",
+          "title": {
+            "en": "Keep the evidence",
+            "as": "Keep the evidence"
+          },
+          "text": [
+            {
+              "en": "Separate a result from the explanation for it. Use the writer’s request to identify the purpose.",
+              "as": "Separate a result from the explanation for it. Use the writer’s request to identify the purpose."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Result · higher reading",
+                "as": "Result · higher reading"
+              },
+              {
+                "en": "Explanation · sun warms instrument",
+                "as": "Explanation · sun warms instrument"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en15.u6.04",
+          "type": "tf",
+          "s": {
+            "en": "The teacher says sunlight can warm the instrument itself.",
+            "as": "The teacher says sunlight can warm the instrument itself."
+          },
+          "answer": true,
+          "why": {
+            "en": "The third sentence states that explanation.",
+            "as": "The third sentence states that explanation."
+          },
+          "passage": {
+            "title": "A shaded thermometer",
+            "text": "A class placed one thermometer in direct sun and another in shade. The reading in the sun was higher. The teacher explained that sunlight can warm the instrument itself. For their outdoor air measurements, the class used the shaded instrument."
+          }
+        },
+        {
+          "id": "en15.u6.05",
+          "type": "inline",
+          "before": {
+            "en": "For their outdoor air measurements, the class used the",
+            "as": "For their outdoor air measurements, the class used the"
+          },
+          "after": {
+            "en": "instrument.",
+            "as": "instrument."
+          },
+          "options": [
+            {
+              "en": "shaded",
+              "as": "shaded"
+            },
+            {
+              "en": "uncovered sunlit",
+              "as": "uncovered sunlit"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The final sentence identifies the shaded instrument.",
+            "as": "The final sentence identifies the shaded instrument."
+          },
+          "passage": {
+            "title": "A shaded thermometer",
+            "text": "A class placed one thermometer in direct sun and another in shade. The reading in the sun was higher. The teacher explained that sunlight can warm the instrument itself. For their outdoor air measurements, the class used the shaded instrument."
+          }
+        },
+        {
+          "id": "en15.u6.06",
+          "type": "odd",
+          "q": {
+            "en": "What is the letter mainly asking the manager to do?",
+            "as": "What is the letter mainly asking the manager to do?"
+          },
+          "options": [
+            {
+              "en": "Check the opening time or update the sign",
+              "as": "Check the opening time or update the sign"
+            },
+            {
+              "en": "Build a second gate",
+              "as": "Build a second gate"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The final sentence makes that request directly.",
+            "as": "The final sentence makes that request directly."
+          },
+          "passage": {
+            "title": "A letter about the path",
+            "text": "Dear Manager, the gate on River Lane is locked even though the sign says the path opens at eight. Last Friday I arrived at nine and had to turn back. Could you check the opening time or update the sign?"
+          }
+        },
+        {
+          "id": "en15.u6.07",
+          "type": "tf",
+          "s": {
+            "en": "The writer arrived before the time printed on the sign.",
+            "as": "The writer arrived before the time printed on the sign."
+          },
+          "answer": false,
+          "why": {
+            "en": "The sign said eight, and the writer arrived at nine.",
+            "as": "The sign said eight, and the writer arrived at nine."
+          },
+          "passage": {
+            "title": "A letter about the path",
+            "text": "Dear Manager, the gate on River Lane is locked even though the sign says the path opens at eight. Last Friday I arrived at nine and had to turn back. Could you check the opening time or update the sign?"
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en15.test.01",
+        "type": "mcq",
+        "q": {
+          "en": "What time does the Gate 1 bus leave?",
+          "as": "What time does the Gate 1 bus leave?"
+        },
+        "options": [
+          {
+            "en": "8:10",
+            "as": "8:10"
+          },
+          {
+            "en": "8:40",
+            "as": "8:40"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The second sentence ties 8:40 to Gate 1.",
+          "as": "The second sentence ties 8:40 to Gate 1."
+        },
+        "passage": {
+          "title": "Timetable update",
+          "text": "On Tuesday, the first bus leaves Gate 2 at 8:10. The 8:40 bus still leaves from Gate 1. Show your pass before boarding."
+        }
+      },
+      {
+        "id": "en15.test.02",
+        "type": "order",
+        "q": {
+          "en": "Tap the sentences in the order that makes the paragraph clear.",
+          "as": "Tap the sentences in the order that makes the paragraph clear."
+        },
+        "items": [
+          {
+            "en": "The team unlocked the hall.",
+            "as": "The team unlocked the hall."
+          },
+          {
+            "en": "They carried in the tables.",
+            "as": "They carried in the tables."
+          },
+          {
+            "en": "They pinned up the signs.",
+            "as": "They pinned up the signs."
+          },
+          {
+            "en": "The first visitors came.",
+            "as": "The first visitors came."
+          }
+        ],
+        "why": {
+          "en": "The text names the opening, setup, signs and arrival in that order.",
+          "as": "The text names the opening, setup, signs and arrival in that order."
+        },
+        "passage": {
+          "title": "Before the fair",
+          "text": "The team unlocked the hall at seven. After carrying in the tables, they pinned up the signs. The first visitors came after the signs were up."
+        }
+      },
+      {
+        "id": "en15.test.03",
+        "type": "mcq",
+        "q": {
+          "en": "Which clue supports the meaning of bare?",
+          "as": "Which clue supports the meaning of bare?"
+        },
+        "options": [
+          {
+            "en": "Only two buns were left",
+            "as": "Only two buns were left"
+          },
+          {
+            "en": "The trays were made of metal",
+            "as": "The trays were made of metal"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The last two buns support the idea that the trays were almost empty.",
+          "as": "The last two buns support the idea that the trays were almost empty."
+        },
+        "passage": {
+          "title": "A morning at the market",
+          "text": "By noon, the trays were almost bare. The baker had sold nearly every bun. She set aside the last two for a customer."
+        }
+      },
+      {
+        "id": "en15.test.04",
+        "type": "mcq",
+        "q": {
+          "en": "Why does Imran call the office?",
+          "as": "Why does Imran call the office?"
+        },
+        "options": [
+          {
+            "en": "His coat may still contain the key",
+            "as": "His coat may still contain the key"
+          },
+          {
+            "en": "He has already found the key",
+            "as": "He has already found the key"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "He remembers the pocket and knows the coat is at work.",
+          "as": "He remembers the pocket and knows the coat is at work."
+        },
+        "passage": {
+          "title": "The missing key",
+          "text": "Imran could not find his key. He remembered putting it in the pocket of his raincoat. The coat was still on the hook at work, so he called the office."
+        }
+      },
+      {
+        "id": "en15.test.05",
+        "type": "mcq",
+        "q": {
+          "en": "Which detail supports the leaflet’s practical purpose?",
+          "as": "Which detail supports the leaflet’s practical purpose?"
+        },
+        "options": [
+          {
+            "en": "It gives a collection time",
+            "as": "It gives a collection time"
+          },
+          {
+            "en": "It compares the weight of different jars",
+            "as": "It compares the weight of different jars"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A collection time tells readers how to take part.",
+          "as": "A collection time tells readers how to take part."
+        },
+        "passage": {
+          "title": "Community leaflet",
+          "text": "Bring clean glass jars to the hall on Saturday from ten to noon. Leave the lids at home. Volunteers will sort the jars for a community reuse project."
+        }
+      },
+      {
+        "id": "en15.test.06",
+        "type": "mcq",
+        "q": {
+          "en": "What shows that the gate’s status conflicted with the sign?",
+          "as": "What shows that the gate’s status conflicted with the sign?"
+        },
+        "options": [
+          {
+            "en": "It was locked at nine despite an eight o’clock opening",
+            "as": "It was locked at nine despite an eight o’clock opening"
+          },
+          {
+            "en": "The sign did not name the street",
+            "as": "The sign did not name the street"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The writer arrived after the posted opening time and still found the gate locked.",
+          "as": "The writer arrived after the posted opening time and still found the gate locked."
+        },
+        "passage": {
+          "title": "A letter about the path",
+          "text": "Dear Manager, the gate on River Lane is locked even though the sign says the path opens at eight. Last Friday I arrived at nine and had to turn back. Could you check the opening time or update the sign?"
+        }
+      }
+    ]
+  }
+}

@@ -152,6 +152,13 @@ for lid, L in lessons.items():
                 if link.get("lessonId"):
                     if link["lessonId"] not in lessons: err(f"{where}: link to unknown lesson '{link['lessonId']}'")
                 elif link.get("unit") not in unit_ids: err(f"{where}: link to unknown unit '{link.get('unit')}'")
+            if "passage" in s:
+                passage = s["passage"]
+                if s["type"] == "story" or not isinstance(passage, dict) or any(
+                    not isinstance(passage.get(field), str) or not passage[field].strip()
+                    for field in ("title", "text")
+                ):
+                    err(f"{where}: a question passage needs a title and text")
             for k in ("q", "s", "why", "title", "before", "after", "text", "options", "clues", "items"):
                 if k in s: bilingual(s[k], where)
     if L.get("buildsOn") and L["buildsOn"]["id"] not in lessons: err(f"{lid}: buildsOn unknown lesson")

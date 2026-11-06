@@ -1,6 +1,8 @@
 # General Awareness course plan
 
-Status: planned on 2026-11-06. Nothing is built. Lesson format and permanent-id rules in
+Status: all seven lessons and 34 units are built and listed in the local catalog.
+Assamese editorial review is pending. Sources were checked on 2026-11-06.
+Open `index.html?course=general-awareness` on the local server. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
 This course holds stable general knowledge. Anything that changes monthly belongs in
@@ -52,11 +54,17 @@ dull. The plan uses collections and clusters rather than lists.
 Nothing is required. `whoami`, `match`, `picture` and `map` steps suit this well. An earned
 collection of people and awards is a hypothesis to test, as `EXPERIENCE-REVAMP.md` says.
 
-## Build order
+## Course entry and review
 
-1. Agree the boundary with Current Affairs, lesson by lesson.
-2. Pilot lessons 2 and 5 as a hidden draft.
-3. Finish the rest in order, then add placement and list the course.
+The course sits under General Awareness & Current Affairs. Monthly packs have their
+own upcoming entry. The three section checkpoints support the existing test-out flow
+and draw from lesson checks and the course question bank. Lesson questions also enter
+the app’s existing daily review.
+
+See the [source register](research/general-awareness-sources.md) for the references
+behind each unit. The course reuses the manuscript preparation illustration documented
+in the [existing image register](research/generic-art-library-assets.json). The visual
+cards use text diagrams.
 
 ## Release gates
 

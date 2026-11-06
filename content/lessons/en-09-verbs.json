@@ -1,0 +1,985 @@
+{
+  "id": "en-09-verbs",
+  "course": "english",
+  "no": 9,
+  "version": 1,
+  "king": {
+    "en": "Verbs and time",
+    "as": "Verbs and time"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Present simple i work",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/present-simple-i-work",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Past simple i worked",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/past-simple-i-worked",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Past continuous i was working",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/past-continuous-i-was-working",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Past simple or present perfect",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/past-simple-or-present-perfect",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Place the event on a timeline",
+        "as": "Place the event on a timeline"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Routine or completed past event",
+          "as": "Routine or completed past event"
+        },
+        {
+          "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time.",
+          "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time."
+        },
+        {
+          "en": "Every Friday and yesterday give different time cues.",
+          "as": "Every Friday and yesterday give different time cues."
+        },
+        {
+          "en": "Apply it: She opens the hall every Friday.",
+          "as": "Apply it: She opens the hall every Friday."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en09.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A volunteer opens the hall every week. The log describes one opening yesterday.",
+              "as": "A volunteer opens the hall every week. The log describes one opening yesterday."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Routine or completed past event",
+                "as": "Routine or completed past event"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "She opens the hall every Friday.",
+              "as": "She opens the hall every Friday."
+            },
+            {
+              "en": "She opened the hall every Friday.",
+              "as": "She opened the hall every Friday."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time.",
+            "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time."
+          },
+          "guess": true
+        },
+        {
+          "id": "en09.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time. Every Friday and yesterday give different time cues.",
+              "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time. Every Friday and yesterday give different time cues."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Routine or completed past event",
+                "as": "Routine or completed past event"
+              },
+              {
+                "en": "Every Friday and yesterday give different time cues.",
+                "as": "Every Friday and yesterday give different time cues."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "She ",
+            "as": "She "
+          },
+          "after": {
+            "en": " the hall yesterday.",
+            "as": " the hall yesterday."
+          },
+          "options": [
+            {
+              "en": "opens",
+              "as": "opens"
+            },
+            {
+              "en": "opened",
+              "as": "opened"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time. She opened the hall yesterday.",
+            "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time. She opened the hall yesterday."
+          }
+        },
+        {
+          "id": "en09.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “He checked his route on Mondays.”",
+            "as": "For this meaning, the following line works: “He checked his route on Mondays.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time. He checks his route on Mondays.",
+            "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time. He checks his route on Mondays."
+          }
+        },
+        {
+          "id": "en09.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "An action in progress at a stated past time",
+              "as": "An action in progress at a stated past time"
+            },
+            {
+              "en": "Routine or completed past event",
+              "as": "Routine or completed past event"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Every Friday and yesterday give different time cues.",
+            "as": "Every Friday and yesterday give different time cues."
+          }
+        },
+        {
+          "id": "en09.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "The club ",
+            "as": "The club "
+          },
+          "after": {
+            "en": " here every week.",
+            "as": " here every week."
+          },
+          "options": [
+            {
+              "en": "meets",
+              "as": "meets"
+            },
+            {
+              "en": "met",
+              "as": "met"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time. The club meets here every week.",
+            "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time. The club meets here every week."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Show a scene in progress",
+        "as": "Show a scene in progress"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "An action in progress at a stated past time",
+          "as": "An action in progress at a stated past time"
+        },
+        {
+          "en": "Use was or were with an -ing form for an action in progress at a past moment.",
+          "as": "Use was or were with an -ing form for an action in progress at a past moment."
+        },
+        {
+          "en": "An action can be underway when a shorter event happens.",
+          "as": "An action can be underway when a shorter event happens."
+        },
+        {
+          "en": "Apply it: At eight they were hanging lights and had several left to hang.",
+          "as": "Apply it: At eight they were hanging lights and had several left to hang."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en09.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "At eight, the team had already started hanging lights. They finished later.",
+              "as": "At eight, the team had already started hanging lights. They finished later."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "An action in progress at a stated past time",
+                "as": "An action in progress at a stated past time"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "At eight they were hanging lights and had several left to hang.",
+              "as": "At eight they were hanging lights and had several left to hang."
+            },
+            {
+              "en": "At eight they had finished hanging lights and had several left to hang.",
+              "as": "At eight they had finished hanging lights and had several left to hang."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use was or were with an -ing form for an action in progress at a past moment.",
+            "as": "Use was or were with an -ing form for an action in progress at a past moment."
+          },
+          "guess": true
+        },
+        {
+          "id": "en09.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use was or were with an -ing form for an action in progress at a past moment. An action can be underway when a shorter event happens.",
+              "as": "Use was or were with an -ing form for an action in progress at a past moment. An action can be underway when a shorter event happens."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "An action in progress at a stated past time",
+                "as": "An action in progress at a stated past time"
+              },
+              {
+                "en": "An action can be underway when a shorter event happens.",
+                "as": "An action can be underway when a shorter event happens."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "Mina ",
+            "as": "Mina "
+          },
+          "after": {
+            "en": " the floor when the bell rang.",
+            "as": " the floor when the bell rang."
+          },
+          "options": [
+            {
+              "en": "was sweeping",
+              "as": "was sweeping"
+            },
+            {
+              "en": "were sweeping",
+              "as": "were sweeping"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use was or were with an -ing form for an action in progress at a past moment. Mina was sweeping the floor when the bell rang.",
+            "as": "Use was or were with an -ing form for an action in progress at a past moment. Mina was sweeping the floor when the bell rang."
+          }
+        },
+        {
+          "id": "en09.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “We were waiting for the bus when it started raining.”",
+            "as": "For this meaning, the following line works: “We were waiting for the bus when it started raining.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use was or were with an -ing form for an action in progress at a past moment. We were waiting for the bus when it started raining.",
+            "as": "Use was or were with an -ing form for an action in progress at a past moment. We were waiting for the bus when it started raining."
+          }
+        },
+        {
+          "id": "en09.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "A finished past time or a current result",
+              "as": "A finished past time or a current result"
+            },
+            {
+              "en": "An action in progress at a stated past time",
+              "as": "An action in progress at a stated past time"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An action can be underway when a shorter event happens.",
+            "as": "An action can be underway when a shorter event happens."
+          }
+        },
+        {
+          "id": "en09.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "The children ",
+            "as": "The children "
+          },
+          "after": {
+            "en": " the signs when the lights went out.",
+            "as": " the signs when the lights went out."
+          },
+          "options": [
+            {
+              "en": "were painting",
+              "as": "were painting"
+            },
+            {
+              "en": "was painting",
+              "as": "was painting"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use was or were with an -ing form for an action in progress at a past moment. The children were painting the signs when the lights went out.",
+            "as": "Use was or were with an -ing form for an action in progress at a past moment. The children were painting the signs when the lights went out."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Connect past to now",
+        "as": "Connect past to now"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "A finished past time or a current result",
+          "as": "A finished past time or a current result"
+        },
+        {
+          "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now.",
+          "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now."
+        },
+        {
+          "en": "Yesterday locates the event. Still missing connects it with now.",
+          "as": "Yesterday locates the event. Still missing connects it with now."
+        },
+        {
+          "en": "Apply it: I lost the key yesterday.",
+          "as": "Apply it: I lost the key yesterday."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en09.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A log says a key disappeared yesterday. A fresh message says it is still missing.",
+              "as": "A log says a key disappeared yesterday. A fresh message says it is still missing."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A finished past time or a current result",
+                "as": "A finished past time or a current result"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "I lost the key yesterday.",
+              "as": "I lost the key yesterday."
+            },
+            {
+              "en": "I have lost the key yesterday.",
+              "as": "I have lost the key yesterday."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now.",
+            "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now."
+          },
+          "guess": true
+        },
+        {
+          "id": "en09.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. Yesterday locates the event. Still missing connects it with now.",
+              "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. Yesterday locates the event. Still missing connects it with now."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A finished past time or a current result",
+                "as": "A finished past time or a current result"
+              },
+              {
+                "en": "Yesterday locates the event. Still missing connects it with now.",
+                "as": "Yesterday locates the event. Still missing connects it with now."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "I ",
+            "as": "I "
+          },
+          "after": {
+            "en": " my key and cannot get in now.",
+            "as": " my key and cannot get in now."
+          },
+          "options": [
+            {
+              "en": "have lost",
+              "as": "have lost"
+            },
+            {
+              "en": "lose",
+              "as": "lose"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. I have lost my key and cannot get in now.",
+            "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. I have lost my key and cannot get in now."
+          }
+        },
+        {
+          "id": "en09.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “She has sent the file last Friday.”",
+            "as": "For this meaning, the following line works: “She has sent the file last Friday.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. She sent the file last Friday.",
+            "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. She sent the file last Friday."
+          }
+        },
+        {
+          "id": "en09.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Background action versus the interrupting event",
+              "as": "Background action versus the interrupting event"
+            },
+            {
+              "en": "A finished past time or a current result",
+              "as": "A finished past time or a current result"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Yesterday locates the event. Still missing connects it with now.",
+            "as": "Yesterday locates the event. Still missing connects it with now."
+          }
+        },
+        {
+          "id": "en09.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "We ",
+            "as": "We "
+          },
+          "after": {
+            "en": " the tickets two days ago.",
+            "as": " the tickets two days ago."
+          },
+          "options": [
+            {
+              "en": "have bought",
+              "as": "have bought"
+            },
+            {
+              "en": "bought",
+              "as": "bought"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. We bought the tickets two days ago.",
+            "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. We bought the tickets two days ago."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Keep the story consistent",
+        "as": "Keep the story consistent"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Background action versus the interrupting event",
+          "as": "Background action versus the interrupting event"
+        },
+        {
+          "en": "A past narrative can pair an ongoing action with a shorter event in the past simple.",
+          "as": "A past narrative can pair an ongoing action with a shorter event in the past simple."
+        },
+        {
+          "en": "Ask what was happening when the next event occurred.",
+          "as": "Ask what was happening when the next event occurred."
+        },
+        {
+          "en": "Apply it: We were watching the match when the lights went out.",
+          "as": "Apply it: We were watching the match when the lights went out."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en09.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "Write a report of a match yesterday. It has one background action and one short interruption.",
+              "as": "Write a report of a match yesterday. It has one background action and one short interruption."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Background action versus the interrupting event",
+                "as": "Background action versus the interrupting event"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "We were watching the match when the lights went out.",
+              "as": "We were watching the match when the lights went out."
+            },
+            {
+              "en": "We were watching the match when the lights go out.",
+              "as": "We were watching the match when the lights go out."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A past narrative can pair an ongoing action with a shorter event in the past simple.",
+            "as": "A past narrative can pair an ongoing action with a shorter event in the past simple."
+          },
+          "guess": true
+        },
+        {
+          "id": "en09.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "A past narrative can pair an ongoing action with a shorter event in the past simple. Ask what was happening when the next event occurred.",
+              "as": "A past narrative can pair an ongoing action with a shorter event in the past simple. Ask what was happening when the next event occurred."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Background action versus the interrupting event",
+                "as": "Background action versus the interrupting event"
+              },
+              {
+                "en": "Ask what was happening when the next event occurred.",
+                "as": "Ask what was happening when the next event occurred."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en09.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "She ",
+            "as": "She "
+          },
+          "after": {
+            "en": " up when the whistle blew.",
+            "as": " up when the whistle blew."
+          },
+          "options": [
+            {
+              "en": "was warming",
+              "as": "was warming"
+            },
+            {
+              "en": "is warming",
+              "as": "is warming"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A past narrative can pair an ongoing action with a shorter event in the past simple. She was warming up when the whistle blew.",
+            "as": "A past narrative can pair an ongoing action with a shorter event in the past simple. She was warming up when the whistle blew."
+          }
+        },
+        {
+          "id": "en09.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “Yesterday he found the key while packing.”",
+            "as": "For this meaning, the following line works: “Yesterday he found the key while packing.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "A past narrative can pair an ongoing action with a shorter event in the past simple. Yesterday he found the key while packing.",
+            "as": "A past narrative can pair an ongoing action with a shorter event in the past simple. Yesterday he found the key while packing."
+          }
+        },
+        {
+          "id": "en09.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Routine or completed past event",
+              "as": "Routine or completed past event"
+            },
+            {
+              "en": "Background action versus the interrupting event",
+              "as": "Background action versus the interrupting event"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Ask what was happening when the next event occurred.",
+            "as": "Ask what was happening when the next event occurred."
+          }
+        },
+        {
+          "id": "en09.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "They were waiting at the gate when the bus ",
+            "as": "They were waiting at the gate when the bus "
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "arrived",
+              "as": "arrived"
+            },
+            {
+              "en": "arrives",
+              "as": "arrives"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A past narrative can pair an ongoing action with a shorter event in the past simple. They were waiting at the gate when the bus arrived.",
+            "as": "A past narrative can pair an ongoing action with a shorter event in the past simple. They were waiting at the gate when the bus arrived."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en09.test.01",
+        "type": "inline",
+        "before": {
+          "en": "The fair ",
+          "as": "The fair "
+        },
+        "after": {
+          "en": " at noon last Saturday.",
+          "as": " at noon last Saturday."
+        },
+        "options": [
+          {
+            "en": "ended",
+            "as": "ended"
+          },
+          {
+            "en": "ends",
+            "as": "ends"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time. The fair ended at noon last Saturday.",
+          "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time. The fair ended at noon last Saturday."
+        }
+      },
+      {
+        "id": "en09.test.02",
+        "type": "inline",
+        "before": {
+          "en": "At noon I ",
+          "as": "At noon I "
+        },
+        "after": {
+          "en": " the report when you called.",
+          "as": " the report when you called."
+        },
+        "options": [
+          {
+            "en": "were writing",
+            "as": "were writing"
+          },
+          {
+            "en": "was writing",
+            "as": "was writing"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use was or were with an -ing form for an action in progress at a past moment. At noon I was writing the report when you called.",
+          "as": "Use was or were with an -ing form for an action in progress at a past moment. At noon I was writing the report when you called."
+        }
+      },
+      {
+        "id": "en09.test.03",
+        "type": "inline",
+        "before": {
+          "en": "They ",
+          "as": "They "
+        },
+        "after": {
+          "en": " the form, so it is ready to submit now.",
+          "as": " the form, so it is ready to submit now."
+        },
+        "options": [
+          {
+            "en": "complete",
+            "as": "complete"
+          },
+          {
+            "en": "have completed",
+            "as": "have completed"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. They have completed the form, so it is ready to submit now.",
+          "as": "Use the past simple with a stated finished time. The present perfect can connect a past event with a result now. They have completed the form, so it is ready to submit now."
+        }
+      },
+      {
+        "id": "en09.test.04",
+        "type": "inline",
+        "before": {
+          "en": "I was reading the notice when the phone ",
+          "as": "I was reading the notice when the phone "
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "rings",
+            "as": "rings"
+          },
+          {
+            "en": "rang",
+            "as": "rang"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "A past narrative can pair an ongoing action with a shorter event in the past simple. I was reading the notice when the phone rang.",
+          "as": "A past narrative can pair an ongoing action with a shorter event in the past simple. I was reading the notice when the phone rang."
+        }
+      },
+      {
+        "id": "en09.test.05",
+        "type": "inline",
+        "before": {
+          "en": "The club ",
+          "as": "The club "
+        },
+        "after": {
+          "en": " here every week.",
+          "as": " here every week."
+        },
+        "options": [
+          {
+            "en": "meets",
+            "as": "meets"
+          },
+          {
+            "en": "met",
+            "as": "met"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use the present simple for a routine and the past simple for an event completed at a stated past time. The club meets here every week.",
+          "as": "Use the present simple for a routine and the past simple for an event completed at a stated past time. The club meets here every week."
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1221 @@
+{
+  "id": "en-05-context",
+  "course": "english",
+  "no": 5,
+  "version": 1,
+  "king": {
+    "en": "Words from context",
+    "as": "Words from context"
+  },
+  "reign": {
+    "en": "Words",
+    "as": "Words"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Cambridge Dictionary · such-as",
+      "url": "https://dictionary.cambridge.org/dictionary/english/such-as",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · unlike",
+      "url": "https://dictionary.cambridge.org/dictionary/english/unlike",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · whereas",
+      "url": "https://dictionary.cambridge.org/dictionary/english/whereas",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · rigid",
+      "url": "https://dictionary.cambridge.org/dictionary/english/rigid",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · charge",
+      "url": "https://dictionary.cambridge.org/dictionary/english/charge",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · book",
+      "url": "https://dictionary.cambridge.org/dictionary/english/book",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · light",
+      "url": "https://dictionary.cambridge.org/dictionary/english/light",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · deserted",
+      "url": "https://dictionary.cambridge.org/dictionary/english/deserted",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · brief",
+      "url": "https://dictionary.cambridge.org/dictionary/english/brief",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · dim",
+      "url": "https://dictionary.cambridge.org/dictionary/english/dim",
+      "used_for": "Word senses and usage."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Find the example clue",
+        "as": "Find the example clue"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Such as can introduce examples of a category.",
+          "as": "Such as can introduce examples of a category."
+        },
+        {
+          "en": "Compare more than one example before guessing.",
+          "as": "Compare more than one example before guessing."
+        },
+        {
+          "en": "A definition must fit the group as well as the sentence.",
+          "as": "A definition must fit the group as well as the sentence."
+        },
+        {
+          "en": "An example clue may give enough meaning to keep reading.",
+          "as": "An example clue may give enough meaning to keep reading."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en05.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Read the packing note",
+            "as": "Read the packing note"
+          },
+          "text": [
+            {
+              "en": "A note says, “Bring utensils, such as spoons and forks.” You do not know utensils. The examples tell you what sort of thing the note asks for.",
+              "as": "A note says, “Bring utensils, such as spoons and forks.” You do not know utensils. The examples tell you what sort of thing the note asks for."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Unknown · utensils",
+                "as": "Unknown · utensils"
+              },
+              {
+                "en": "Examples · spoons and forks",
+                "as": "Examples · spoons and forks"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "What should you pack?",
+            "as": "What should you pack?"
+          },
+          "options": [
+            {
+              "en": "Tools for eating",
+              "as": "Tools for eating"
+            },
+            {
+              "en": "Sports clothes",
+              "as": "Sports clothes"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Spoons and forks are tools used for eating.",
+            "as": "Spoons and forks are tools used for eating."
+          },
+          "guess": true
+        },
+        {
+          "id": "en05.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Use the whole group",
+            "as": "Use the whole group"
+          },
+          "text": [
+            {
+              "en": "A spoon alone could suggest a tool for soup. Add forks, and you get a wider idea. The words <mark>such as</mark> point you to examples of the category.",
+              "as": "A spoon alone could suggest a tool for soup. Add forks, and you get a wider idea. The words <mark>such as</mark> point you to examples of the category."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Read both examples",
+                "as": "Read both examples"
+              },
+              {
+                "en": "Infer the category",
+                "as": "Infer the category"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "Bring footwear such as",
+            "as": "Bring footwear such as"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "boots and sandals",
+              "as": "boots and sandals"
+            },
+            {
+              "en": "pens and paper",
+              "as": "pens and paper"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Boots and sandals are both kinds of footwear.",
+            "as": "Boots and sandals are both kinds of footwear."
+          }
+        },
+        {
+          "id": "en05.u1.05",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Tents and sleeping bags",
+                "as": "Tents and sleeping bags"
+              },
+              {
+                "en": "Camping equipment",
+                "as": "Camping equipment"
+              }
+            ],
+            [
+              {
+                "en": "Peas and beans",
+                "as": "Peas and beans"
+              },
+              {
+                "en": "Pulses",
+                "as": "Pulses"
+              }
+            ],
+            [
+              {
+                "en": "Buses and trains",
+                "as": "Buses and trains"
+              },
+              {
+                "en": "Public transport",
+                "as": "Public transport"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Look for the shared idea in the examples.",
+            "as": "Look for the shared idea in the examples."
+          }
+        },
+        {
+          "id": "en05.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which clue follows “such as” and gives examples?",
+            "as": "Which clue follows “such as” and gives examples?"
+          },
+          "options": [
+            {
+              "en": "The shop closes at five",
+              "as": "The shop closes at five"
+            },
+            {
+              "en": "Scarves and gloves",
+              "as": "Scarves and gloves"
+            },
+            {
+              "en": "Because it is cold",
+              "as": "Because it is cold"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Scarves and gloves can both illustrate a category such as warm accessories.",
+            "as": "Scarves and gloves can both illustrate a category such as warm accessories."
+          }
+        },
+        {
+          "id": "en05.u1.07",
+          "type": "tf",
+          "s": {
+            "en": "The examples after such as have to be the only members of the category.",
+            "as": "The examples after such as have to be the only members of the category."
+          },
+          "answer": false,
+          "why": {
+            "en": "Examples illustrate the category. Other things may also belong.",
+            "as": "Examples illustrate the category. Other things may also belong."
+          }
+        },
+        {
+          "id": "en05.u1.08",
+          "type": "inline",
+          "before": {
+            "en": "The centre accepts recyclables such as clean bottles and cans. The examples are things that can be",
+            "as": "The centre accepts recyclables such as clean bottles and cans. The examples are things that can be"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "recycled",
+              "as": "recycled"
+            },
+            {
+              "en": "borrowed",
+              "as": "borrowed"
+            },
+            {
+              "en": "worn",
+              "as": "worn"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Clean bottles and cans suggest materials that can be recycled.",
+            "as": "Clean bottles and cans suggest materials that can be recycled."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Find the contrast clue",
+        "as": "Find the contrast clue"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "But can signal a contrast.",
+          "as": "But can signal a contrast."
+        },
+        {
+          "en": "Unlike asks you to compare with something different.",
+          "as": "Unlike asks you to compare with something different."
+        },
+        {
+          "en": "Whereas sets two facts side by side.",
+          "as": "Whereas sets two facts side by side."
+        },
+        {
+          "en": "Use the clue on the other side of the contrast to test your guess.",
+          "as": "Use the clue on the other side of the contrast to test your guess."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en05.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Choose a lunch spot",
+            "as": "Choose a lunch spot"
+          },
+          "text": [
+            {
+              "en": "The market was crowded, but the lane behind it was deserted. You want a place with almost nobody around.",
+              "as": "The market was crowded, but the lane behind it was deserted. You want a place with almost nobody around."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Market · crowded",
+                "as": "Market · crowded"
+              },
+              {
+                "en": "Lane · deserted",
+                "as": "Lane · deserted"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which place should you check first?",
+            "as": "Which place should you check first?"
+          },
+          "options": [
+            {
+              "en": "The crowded market",
+              "as": "The crowded market"
+            },
+            {
+              "en": "The deserted lane",
+              "as": "The deserted lane"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "But contrasts the lane with the crowd. Deserted suggests that almost nobody is there.",
+            "as": "But contrasts the lane with the crowd. Deserted suggests that almost nobody is there."
+          },
+          "guess": true
+        },
+        {
+          "id": "en05.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Follow the turn",
+            "as": "Follow the turn"
+          },
+          "text": [
+            {
+              "en": "In “Unlike the rigid board, the mat bends easily,” the second half explains the contrast. If the mat bends, <mark>rigid</mark> is likely to mean stiff.",
+              "as": "In “Unlike the rigid board, the mat bends easily,” the second half explains the contrast. If the mat bends, <mark>rigid</mark> is likely to mean stiff."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Unlike · compare",
+                "as": "Unlike · compare"
+              },
+              {
+                "en": "Rigid ↔ bends easily",
+                "as": "Rigid ↔ bends easily"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "The first box was sturdy, whereas the second collapsed under a book. Sturdy most likely means",
+            "as": "The first box was sturdy, whereas the second collapsed under a book. Sturdy most likely means"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "strong",
+              "as": "strong"
+            },
+            {
+              "en": "empty",
+              "as": "empty"
+            },
+            {
+              "en": "expensive",
+              "as": "expensive"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The collapse of the second box contrasts with the strength of the first.",
+            "as": "The collapse of the second box contrasts with the strength of the first."
+          }
+        },
+        {
+          "id": "en05.u2.05",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Crowded but deserted",
+                "as": "Crowded but deserted"
+              },
+              {
+                "en": "Many people versus almost none",
+                "as": "Many people versus almost none"
+              }
+            ],
+            [
+              {
+                "en": "Rigid unlike flexible",
+                "as": "Rigid unlike flexible"
+              },
+              {
+                "en": "Stiff versus easy to bend",
+                "as": "Stiff versus easy to bend"
+              }
+            ],
+            [
+              {
+                "en": "Bright whereas dim",
+                "as": "Bright whereas dim"
+              },
+              {
+                "en": "Strong light versus weak light",
+                "as": "Strong light versus weak light"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Read the pair together before guessing.",
+            "as": "Read the pair together before guessing."
+          }
+        },
+        {
+          "id": "en05.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which detail helps explain “frugal” in “He was frugal, unlike his brother who spent freely”?",
+            "as": "Which detail helps explain “frugal” in “He was frugal, unlike his brother who spent freely”?"
+          },
+          "options": [
+            {
+              "en": "His brother spent freely",
+              "as": "His brother spent freely"
+            },
+            {
+              "en": "Both are brothers",
+              "as": "Both are brothers"
+            },
+            {
+              "en": "The sentence begins with he",
+              "as": "The sentence begins with he"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Spending freely gives a contrast with being careful about spending.",
+            "as": "Spending freely gives a contrast with being careful about spending."
+          }
+        },
+        {
+          "id": "en05.u2.07",
+          "type": "tf",
+          "s": {
+            "en": "But can help you find a clue on the other side of an unfamiliar word.",
+            "as": "But can help you find a clue on the other side of an unfamiliar word."
+          },
+          "answer": true,
+          "why": {
+            "en": "It often signals a contrast you can use to infer meaning.",
+            "as": "It often signals a contrast you can use to infer meaning."
+          }
+        },
+        {
+          "id": "en05.u2.08",
+          "type": "inline",
+          "before": {
+            "en": "The old path was steep, but the new one rose gently. Here steep means",
+            "as": "The old path was steep, but the new one rose gently. Here steep means"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "rising sharply",
+              "as": "rising sharply"
+            },
+            {
+              "en": "recently built",
+              "as": "recently built"
+            },
+            {
+              "en": "slippery",
+              "as": "slippery"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The contrast with a gentle rise points to a sharp rise.",
+            "as": "The contrast with a gentle rise points to a sharp rise."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Choose the right sense",
+        "as": "Choose the right sense"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Charge can mean ask for payment.",
+          "as": "Charge can mean ask for payment."
+        },
+        {
+          "en": "Charge can also mean put power into a battery.",
+          "as": "Charge can also mean put power into a battery."
+        },
+        {
+          "en": "Book can be a thing you read or a verb meaning reserve.",
+          "as": "Book can be a thing you read or a verb meaning reserve."
+        },
+        {
+          "en": "Check the nearby words and the role the word plays.",
+          "as": "Check the nearby words and the role the word plays."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en05.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Two messages use charge",
+            "as": "Two messages use charge"
+          },
+          "text": [
+            {
+              "en": "A shop asks, “How much should we charge for delivery?” A friend says, “I need to charge my phone.” The same word appears in both messages.",
+              "as": "A shop asks, “How much should we charge for delivery?” A friend says, “I need to charge my phone.” The same word appears in both messages."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Delivery · payment",
+                "as": "Delivery · payment"
+              },
+              {
+                "en": "Phone · battery",
+                "as": "Phone · battery"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "What does charge mean in the shop’s message?",
+            "as": "What does charge mean in the shop’s message?"
+          },
+          "options": [
+            {
+              "en": "Ask for payment",
+              "as": "Ask for payment"
+            },
+            {
+              "en": "Put power into a battery",
+              "as": "Put power into a battery"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "How much and for delivery point to payment.",
+            "as": "How much and for delivery point to payment."
+          },
+          "guess": true
+        },
+        {
+          "id": "en05.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Read what comes next",
+            "as": "Read what comes next"
+          },
+          "text": [
+            {
+              "en": "Compare “I read a <mark>book</mark>” and “I will <mark>book</mark> a seat.” After will, book describes an action. A seat can be reserved.",
+              "as": "Compare “I read a <mark>book</mark>” and “I will <mark>book</mark> a seat.” After will, book describes an action. A seat can be reserved."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Read a book · object",
+                "as": "Read a book · object"
+              },
+              {
+                "en": "Book a seat · reserve",
+                "as": "Book a seat · reserve"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u3.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Charge a tablet",
+                "as": "Charge a tablet"
+              },
+              {
+                "en": "Put power into its battery",
+                "as": "Put power into its battery"
+              }
+            ],
+            [
+              {
+                "en": "Charge for delivery",
+                "as": "Charge for delivery"
+              },
+              {
+                "en": "Ask for payment",
+                "as": "Ask for payment"
+              }
+            ],
+            [
+              {
+                "en": "Book a seat",
+                "as": "Book a seat"
+              },
+              {
+                "en": "Reserve a place",
+                "as": "Reserve a place"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The words next to the target word point to its intended sense.",
+            "as": "The words next to the target word point to its intended sense."
+          }
+        },
+        {
+          "id": "en05.u3.05",
+          "type": "inline",
+          "before": {
+            "en": "Before the trip, I will book a room. Here book means",
+            "as": "Before the trip, I will book a room. Here book means"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "reserve",
+              "as": "reserve"
+            },
+            {
+              "en": "read",
+              "as": "read"
+            },
+            {
+              "en": "carry",
+              "as": "carry"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Book is an action here, and rooms can be reserved.",
+            "as": "Book is an action here, and rooms can be reserved."
+          }
+        },
+        {
+          "id": "en05.u3.06",
+          "type": "tf",
+          "s": {
+            "en": "In “a light bag,” light can mean easy to carry.",
+            "as": "In “a light bag,” light can mean easy to carry."
+          },
+          "answer": true,
+          "why": {
+            "en": "Light describes low weight in this phrase.",
+            "as": "Light describes low weight in this phrase."
+          }
+        },
+        {
+          "id": "en05.u3.07",
+          "type": "odd",
+          "q": {
+            "en": "Which phrase uses light to mean illumination?",
+            "as": "Which phrase uses light to mean illumination?"
+          },
+          "options": [
+            {
+              "en": "A light suitcase",
+              "as": "A light suitcase"
+            },
+            {
+              "en": "Switch on the light",
+              "as": "Switch on the light"
+            },
+            {
+              "en": "A light lunch",
+              "as": "A light lunch"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Something you switch on can provide illumination.",
+            "as": "Something you switch on can provide illumination."
+          }
+        },
+        {
+          "id": "en05.u3.08",
+          "type": "inline",
+          "before": {
+            "en": "There is no socket nearby, so I cannot charge my phone. Here charge means",
+            "as": "There is no socket nearby, so I cannot charge my phone. Here charge means"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "ask a fee",
+              "as": "ask a fee"
+            },
+            {
+              "en": "put power into its battery",
+              "as": "put power into its battery"
+            },
+            {
+              "en": "reserve",
+              "as": "reserve"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Socket and phone point to electricity.",
+            "as": "Socket and phone point to electricity."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Check the paraphrase",
+        "as": "Check the paraphrase"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Find the clue before picking a meaning.",
+          "as": "Find the clue before picking a meaning."
+        },
+        {
+          "en": "Put the guessed meaning back into the sentence.",
+          "as": "Put the guessed meaning back into the sentence."
+        },
+        {
+          "en": "Keep the same claim when you paraphrase.",
+          "as": "Keep the same claim when you paraphrase."
+        },
+        {
+          "en": "If the clue is weak, use more context before deciding.",
+          "as": "If the clue is weak, use more context before deciding."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en05.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Edit the market report",
+            "as": "Edit the market report"
+          },
+          "text": [
+            {
+              "en": "The report says, “The stall was deserted. Nobody came near it for an hour.” Two editors suggest different ways to say deserted.",
+              "as": "The report says, “The stall was deserted. Nobody came near it for an hour.” Two editors suggest different ways to say deserted."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Clue · nobody came near",
+                "as": "Clue · nobody came near"
+              },
+              {
+                "en": "Candidates · empty / noisy",
+                "as": "Candidates · empty / noisy"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which substitute keeps the meaning?",
+            "as": "Which substitute keeps the meaning?"
+          },
+          "options": [
+            {
+              "en": "Empty of people",
+              "as": "Empty of people"
+            },
+            {
+              "en": "Full of noise",
+              "as": "Full of noise"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Nobody coming near supports empty of people.",
+            "as": "Nobody coming near supports empty of people."
+          },
+          "guess": true
+        },
+        {
+          "id": "en05.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Read the sentence back",
+            "as": "Read the sentence back"
+          },
+          "text": [
+            {
+              "en": "Try “The stall was empty of people.” It fits the next sentence. If you read only “The stall was unusual,” you would lose the specific claim about people.",
+              "as": "Try “The stall was empty of people.” It fits the next sentence. If you read only “The stall was unusual,” you would lose the specific claim about people."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Clue → candidate",
+                "as": "Clue → candidate"
+              },
+              {
+                "en": "Candidate → reread",
+                "as": "Candidate → reread"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en05.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "The guide gave a brief talk. It lasted two minutes. Brief here means",
+            "as": "The guide gave a brief talk. It lasted two minutes. Brief here means"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "short",
+              "as": "short"
+            },
+            {
+              "en": "angry",
+              "as": "angry"
+            },
+            {
+              "en": "loud",
+              "as": "loud"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The two-minute length supports short.",
+            "as": "The two-minute length supports short."
+          }
+        },
+        {
+          "id": "en05.u4.05",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "No one was there",
+                "as": "No one was there"
+              },
+              {
+                "en": "Deserted",
+                "as": "Deserted"
+              }
+            ],
+            [
+              {
+                "en": "It lasted two minutes",
+                "as": "It lasted two minutes"
+              },
+              {
+                "en": "Brief",
+                "as": "Brief"
+              }
+            ],
+            [
+              {
+                "en": "It bends easily",
+                "as": "It bends easily"
+              },
+              {
+                "en": "Flexible",
+                "as": "Flexible"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each paraphrase preserves the idea supported by the clue.",
+            "as": "Each paraphrase preserves the idea supported by the clue."
+          }
+        },
+        {
+          "id": "en05.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which substitute keeps “The lane was dim” when the streetlights barely worked?",
+            "as": "Which substitute keeps “The lane was dim” when the streetlights barely worked?"
+          },
+          "options": [
+            {
+              "en": "Poorly lit",
+              "as": "Poorly lit"
+            },
+            {
+              "en": "Full of people",
+              "as": "Full of people"
+            },
+            {
+              "en": "Very wide",
+              "as": "Very wide"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Weak streetlights support poorly lit.",
+            "as": "Weak streetlights support poorly lit."
+          }
+        },
+        {
+          "id": "en05.u4.07",
+          "type": "tf",
+          "s": {
+            "en": "A paraphrase can keep the main idea even when it uses completely different words.",
+            "as": "A paraphrase can keep the main idea even when it uses completely different words."
+          },
+          "answer": true,
+          "why": {
+            "en": "Meaning matters more than reusing the same vocabulary.",
+            "as": "Meaning matters more than reusing the same vocabulary."
+          }
+        },
+        {
+          "id": "en05.u4.08",
+          "type": "inline",
+          "before": {
+            "en": "The guide said only “It is light.” Before choosing between weight and brightness, you need",
+            "as": "The guide said only “It is light.” Before choosing between weight and brightness, you need"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "more context",
+              "as": "more context"
+            },
+            {
+              "en": "a longer synonym",
+              "as": "a longer synonym"
+            },
+            {
+              "en": "the same word again",
+              "as": "the same word again"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The sentence alone does not say whether light describes weight or brightness.",
+            "as": "The sentence alone does not say whether light describes weight or brightness."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Choose the precise meaning",
+      "as": "Choose the precise meaning"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en05.test.01",
+        "type": "inline",
+        "before": {
+          "en": "Bring stationery such as pens and pencils. The examples name supplies for",
+          "as": "Bring stationery such as pens and pencils. The examples name supplies for"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "writing",
+            "as": "writing"
+          },
+          {
+            "en": "running",
+            "as": "running"
+          },
+          {
+            "en": "cooking",
+            "as": "cooking"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Pens and pencils are both used for writing.",
+          "as": "Pens and pencils are both used for writing."
+        }
+      },
+      {
+        "id": "en05.test.02",
+        "type": "inline",
+        "before": {
+          "en": "Unlike her flexible ruler, his ruler was rigid. Rigid means",
+          "as": "Unlike her flexible ruler, his ruler was rigid. Rigid means"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "stiff",
+            "as": "stiff"
+          },
+          {
+            "en": "colourful",
+            "as": "colourful"
+          },
+          {
+            "en": "longer",
+            "as": "longer"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Unlike contrasts it with flexible.",
+          "as": "Unlike contrasts it with flexible."
+        }
+      },
+      {
+        "id": "en05.test.03",
+        "type": "inline",
+        "before": {
+          "en": "We will book two seats. Here book means",
+          "as": "We will book two seats. Here book means"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "reserve",
+            "as": "reserve"
+          },
+          {
+            "en": "read",
+            "as": "read"
+          },
+          {
+            "en": "publish",
+            "as": "publish"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Will book describes arranging a reservation.",
+          "as": "Will book describes arranging a reservation."
+        }
+      },
+      {
+        "id": "en05.test.04",
+        "type": "inline",
+        "before": {
+          "en": "The lane was dim because only one lamp worked. Dim means",
+          "as": "The lane was dim because only one lamp worked. Dim means"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "poorly lit",
+            "as": "poorly lit"
+          },
+          {
+            "en": "crowded",
+            "as": "crowded"
+          },
+          {
+            "en": "wide",
+            "as": "wide"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A single working lamp gives little light.",
+          "as": "A single working lamp gives little light."
+        }
+      },
+      {
+        "id": "en05.test.05",
+        "type": "tf",
+        "s": {
+          "en": "If a possible meaning clashes with the next sentence, look for a better fit.",
+          "as": "If a possible meaning clashes with the next sentence, look for a better fit."
+        },
+        "answer": true,
+        "why": {
+          "en": "The surrounding sentences help test your guess.",
+          "as": "The surrounding sentences help test your guess."
+        }
+      }
+    ]
+  }
+}

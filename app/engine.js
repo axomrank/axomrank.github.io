@@ -466,8 +466,7 @@ function openEntity(id) {
 }
 
 function openSources() {
-  const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  sheet(`<h2>${T(B("Sources", "উৎস"))}</h2><ul class="src-list">${(L.sources || []).map((x) => `<li>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>` : `<b>${esc(x.title)}</b>`}${x.used_for ? `<span>${esc(x.used_for)}</span>` : ""}</li>`).join("")}</ul>`);
+  sheet(`<h2>${T(B("Sources", "উৎস"))}</h2><ul class="src-list">${(L.sources || []).map((x) => `<li>${x.url ? `<a href="${escapeHTML(x.url)}" target="_blank" rel="noopener">${escapeHTML(x.title)}</a>` : `<b>${escapeHTML(x.title)}</b>`}${x.used_for ? `<span>${escapeHTML(x.used_for)}</span>` : ""}</li>`).join("")}</ul>`);
 }
 
 /* ---------- guidebook: one-screen revision note built from the lesson ---------- */
@@ -502,6 +501,9 @@ function startPractice() {
 }
 const step = () => U.queue[U.pos];
 
+const escapeHTML = (value) => String(value).replace(/[&<>"]/g, (c) => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
+}[c]));
 function renderStep(animate) {
   const it = step(); it.s = MATH.vary(it.s);   // a step with variants shows new numbers each time
   const s = it.s;
@@ -522,8 +524,11 @@ function renderStep(animate) {
     ? `<figure class="story-visual"><div class="frame library">${picture(s.img, lessonOf(s))}</div><figcaption>${T(s.imageCaption)}
       ${s.imageAlt ? `<details><summary>${T(B("Read the map as text", "মানচিত্ৰৰ বৰ্ণনা পঢ়া"))}</summary>${T(s.imageAlt)}</details>` : ""}</figcaption></figure>`
     : "";
+  const passage = s.passage
+    ? `<details class="reading-passage" open><summary>${escapeHTML(s.passage.title)}</summary><p>${escapeHTML(s.passage.text)}</p></details>`
+    : "";
   scr.classList.toggle("story-screen", s.type === "story");
-  scr.innerHTML = s.type === "story" ? RENDER.story(s, mission + kick) : mission + kick + `<h1 class="q-title">${T(U.unit.title)}</h1>` + evidence + RENDER[s.type](s);
+  scr.innerHTML = s.type === "story" ? RENDER.story(s, mission + kick) : mission + kick + `<h1 class="q-title">${T(U.unit.title)}</h1>` + evidence + passage + RENDER[s.type](s);
   scr.scrollTop = 0;
   if (SETUP[s.type]) SETUP[s.type](s, scr);
   refresh();

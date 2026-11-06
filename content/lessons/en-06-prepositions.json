@@ -1,0 +1,1418 @@
+{
+  "id": "en-06-prepositions",
+  "course": "english",
+  "no": 6,
+  "version": 1,
+  "king": {
+    "en": "Prepositions",
+    "as": "Prepositions"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "At on in time",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/at-on-in-time",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "At on in place",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/at-on-in-place",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Prepositions of movement",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/prepositions_2",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "For or since",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/for-or-since",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Until",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/until",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "By",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/by",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Mark the meeting time",
+        "as": "Mark the meeting time"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Clock time, day or longer period",
+          "as": "Clock time, day or longer period"
+        },
+        {
+          "en": "Use at for a clock time, on for a day or date, and in for a month or year.",
+          "as": "Use at for a clock time, on for a day or date, and in for a month or year."
+        },
+        {
+          "en": "A date is more specific than a month.",
+          "as": "A date is more specific than a month."
+        },
+        {
+          "en": "Apply it: Meet at 4:30.",
+          "as": "Apply it: Meet at 4:30."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en06.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The club poster needs a start time, a weekday and a month. The meeting starts at 4:30.",
+              "as": "The club poster needs a start time, a weekday and a month. The meeting starts at 4:30."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Clock time, day or longer period",
+                "as": "Clock time, day or longer period"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Meet on 4:30.",
+              "as": "Meet on 4:30."
+            },
+            {
+              "en": "Meet at 4:30.",
+              "as": "Meet at 4:30."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use at for a clock time, on for a day or date, and in for a month or year.",
+            "as": "Use at for a clock time, on for a day or date, and in for a month or year."
+          },
+          "guess": true
+        },
+        {
+          "id": "en06.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use at for a clock time, on for a day or date, and in for a month or year. A date is more specific than a month.",
+              "as": "Use at for a clock time, on for a day or date, and in for a month or year. A date is more specific than a month."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Clock time, day or longer period",
+                "as": "Clock time, day or longer period"
+              },
+              {
+                "en": "A date is more specific than a month.",
+                "as": "A date is more specific than a month."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "We meet ",
+            "as": "We meet "
+          },
+          "after": {
+            "en": " Tuesday.",
+            "as": " Tuesday."
+          },
+          "options": [
+            {
+              "en": "in",
+              "as": "in"
+            },
+            {
+              "en": "on",
+              "as": "on"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use at for a clock time, on for a day or date, and in for a month or year. We meet on Tuesday.",
+            "as": "Use at for a clock time, on for a day or date, and in for a month or year. We meet on Tuesday."
+          }
+        },
+        {
+          "id": "en06.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The fair opens on July.”",
+            "as": "For this meaning, the following line works: “The fair opens on July.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use at for a clock time, on for a day or date, and in for a month or year. The fair opens in July.",
+            "as": "Use at for a clock time, on for a day or date, and in for a month or year. The fair opens in July."
+          }
+        },
+        {
+          "id": "en06.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Point, surface or enclosed space",
+              "as": "Point, surface or enclosed space"
+            },
+            {
+              "en": "Clock time, day or longer period",
+              "as": "Clock time, day or longer period"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A date is more specific than a month.",
+            "as": "A date is more specific than a month."
+          }
+        },
+        {
+          "id": "en06.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "The next session is ",
+            "as": "The next session is "
+          },
+          "after": {
+            "en": " 2027.",
+            "as": " 2027."
+          },
+          "options": [
+            {
+              "en": "in",
+              "as": "in"
+            },
+            {
+              "en": "on",
+              "as": "on"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use at for a clock time, on for a day or date, and in for a month or year. The next session is in 2027.",
+            "as": "Use at for a clock time, on for a day or date, and in for a month or year. The next session is in 2027."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Pin the meeting place",
+        "as": "Pin the meeting place"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Point, surface or enclosed space",
+          "as": "Point, surface or enclosed space"
+        },
+        {
+          "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something.",
+          "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something."
+        },
+        {
+          "en": "The table supports the note. The drawer contains the passes.",
+          "as": "The table supports the note. The drawer contains the passes."
+        },
+        {
+          "en": "Apply it: Wait for me at the entrance.",
+          "as": "Apply it: Wait for me at the entrance."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en06.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "You leave a note on a table, put the passes inside a drawer and arrange to meet by the main entrance.",
+              "as": "You leave a note on a table, put the passes inside a drawer and arrange to meet by the main entrance."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Point, surface or enclosed space",
+                "as": "Point, surface or enclosed space"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Wait for me at the entrance.",
+              "as": "Wait for me at the entrance."
+            },
+            {
+              "en": "Wait for me on the entrance.",
+              "as": "Wait for me on the entrance."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something.",
+            "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something."
+          },
+          "guess": true
+        },
+        {
+          "id": "en06.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The table supports the note. The drawer contains the passes.",
+              "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The table supports the note. The drawer contains the passes."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Point, surface or enclosed space",
+                "as": "Point, surface or enclosed space"
+              },
+              {
+                "en": "The table supports the note. The drawer contains the passes.",
+                "as": "The table supports the note. The drawer contains the passes."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "The note is ",
+            "as": "The note is "
+          },
+          "after": {
+            "en": " the table.",
+            "as": " the table."
+          },
+          "options": [
+            {
+              "en": "on",
+              "as": "on"
+            },
+            {
+              "en": "in",
+              "as": "in"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The note is on the table.",
+            "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The note is on the table."
+          }
+        },
+        {
+          "id": "en06.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The passes are in the drawer.”",
+            "as": "For this meaning, the following line works: “The passes are in the drawer.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The passes are in the drawer.",
+            "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The passes are in the drawer."
+          }
+        },
+        {
+          "id": "en06.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The path in relation to a place",
+              "as": "The path in relation to a place"
+            },
+            {
+              "en": "Point, surface or enclosed space",
+              "as": "Point, surface or enclosed space"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The table supports the note. The drawer contains the passes.",
+            "as": "The table supports the note. The drawer contains the passes."
+          }
+        },
+        {
+          "id": "en06.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "The coins are ",
+            "as": "The coins are "
+          },
+          "after": {
+            "en": " the closed box.",
+            "as": " the closed box."
+          },
+          "options": [
+            {
+              "en": "on",
+              "as": "on"
+            },
+            {
+              "en": "in",
+              "as": "in"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The coins are in the closed box.",
+            "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. The coins are in the closed box."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Follow the route",
+        "as": "Follow the route"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The path in relation to a place",
+          "as": "The path in relation to a place"
+        },
+        {
+          "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line.",
+          "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line."
+        },
+        {
+          "en": "A tunnel surrounds the traveller. A canal can guide the route.",
+          "as": "A tunnel surrounds the traveller. A canal can guide the route."
+        },
+        {
+          "en": "Apply it: Walk through the tunnel to the other entrance.",
+          "as": "Apply it: Walk through the tunnel to the other entrance."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en06.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A short route crosses an open square, passes inside a tunnel and continues beside a canal.",
+              "as": "A short route crosses an open square, passes inside a tunnel and continues beside a canal."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The path in relation to a place",
+                "as": "The path in relation to a place"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Walk along the tunnel to the other entrance.",
+              "as": "Walk along the tunnel to the other entrance."
+            },
+            {
+              "en": "Walk through the tunnel to the other entrance.",
+              "as": "Walk through the tunnel to the other entrance."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line.",
+            "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line."
+          },
+          "guess": true
+        },
+        {
+          "id": "en06.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. A tunnel surrounds the traveller. A canal can guide the route.",
+              "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. A tunnel surrounds the traveller. A canal can guide the route."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The path in relation to a place",
+                "as": "The path in relation to a place"
+              },
+              {
+                "en": "A tunnel surrounds the traveller. A canal can guide the route.",
+                "as": "A tunnel surrounds the traveller. A canal can guide the route."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "We walked ",
+            "as": "We walked "
+          },
+          "after": {
+            "en": " the square from east to west.",
+            "as": " the square from east to west."
+          },
+          "options": [
+            {
+              "en": "across",
+              "as": "across"
+            },
+            {
+              "en": "into",
+              "as": "into"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. We walked across the square from east to west.",
+            "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. We walked across the square from east to west."
+          }
+        },
+        {
+          "id": "en06.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The runner went along the hall from outside.”",
+            "as": "For this meaning, the following line works: “The runner went along the hall from outside.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. The runner went into the hall from outside.",
+            "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. The runner went into the hall from outside."
+          }
+        },
+        {
+          "id": "en06.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Start, duration, continuation or deadline",
+              "as": "Start, duration, continuation or deadline"
+            },
+            {
+              "en": "The path in relation to a place",
+              "as": "The path in relation to a place"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A tunnel surrounds the traveller. A canal can guide the route.",
+            "as": "A tunnel surrounds the traveller. A canal can guide the route."
+          }
+        },
+        {
+          "id": "en06.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "The train went ",
+            "as": "The train went "
+          },
+          "after": {
+            "en": " the tunnel and emerged on the other side.",
+            "as": " the tunnel and emerged on the other side."
+          },
+          "options": [
+            {
+              "en": "through",
+              "as": "through"
+            },
+            {
+              "en": "into",
+              "as": "into"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. The train went through the tunnel and emerged on the other side.",
+            "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. The train went through the tunnel and emerged on the other side."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Describe the wait",
+        "as": "Describe the wait"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Start, duration, continuation or deadline",
+          "as": "Start, duration, continuation or deadline"
+        },
+        {
+          "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline.",
+          "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline."
+        },
+        {
+          "en": "A deadline says when the task must be done. A duration says how long it lasts.",
+          "as": "A deadline says when the task must be done. A duration says how long it lasts."
+        },
+        {
+          "en": "Apply it: She has been there since noon.",
+          "as": "Apply it: She has been there since noon."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en06.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The desk opened at noon. A volunteer started then and stayed three hours. The form had to arrive no later than three.",
+              "as": "The desk opened at noon. A volunteer started then and stayed three hours. The form had to arrive no later than three."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Start, duration, continuation or deadline",
+                "as": "Start, duration, continuation or deadline"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "She has been there for noon.",
+              "as": "She has been there for noon."
+            },
+            {
+              "en": "She has been there since noon.",
+              "as": "She has been there since noon."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline.",
+            "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline."
+          },
+          "guess": true
+        },
+        {
+          "id": "en06.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. A deadline says when the task must be done. A duration says how long it lasts.",
+              "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. A deadline says when the task must be done. A duration says how long it lasts."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Start, duration, continuation or deadline",
+                "as": "Start, duration, continuation or deadline"
+              },
+              {
+                "en": "A deadline says when the task must be done. A duration says how long it lasts.",
+                "as": "A deadline says when the task must be done. A duration says how long it lasts."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "She worked ",
+            "as": "She worked "
+          },
+          "after": {
+            "en": " three hours.",
+            "as": " three hours."
+          },
+          "options": [
+            {
+              "en": "for",
+              "as": "for"
+            },
+            {
+              "en": "since",
+              "as": "since"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. She worked for three hours.",
+            "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. She worked for three hours."
+          }
+        },
+        {
+          "id": "en06.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “Submit the form by three at the latest.”",
+            "as": "For this meaning, the following line works: “Submit the form by three at the latest.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. Submit the form by three at the latest.",
+            "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. Submit the form by three at the latest."
+          }
+        },
+        {
+          "id": "en06.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The word immediately before the blank",
+              "as": "The word immediately before the blank"
+            },
+            {
+              "en": "Start, duration, continuation or deadline",
+              "as": "Start, duration, continuation or deadline"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A deadline says when the task must be done. A duration says how long it lasts.",
+            "as": "A deadline says when the task must be done. A duration says how long it lasts."
+          }
+        },
+        {
+          "id": "en06.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "He has been waiting ",
+            "as": "He has been waiting "
+          },
+          "after": {
+            "en": " Monday.",
+            "as": " Monday."
+          },
+          "options": [
+            {
+              "en": "for",
+              "as": "for"
+            },
+            {
+              "en": "since",
+              "as": "since"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. He has been waiting since Monday.",
+            "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. He has been waiting since Monday."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": {
+        "en": "Pair the words",
+        "as": "Pair the words"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The word immediately before the blank",
+          "as": "The word immediately before the blank"
+        },
+        {
+          "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for.",
+          "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for."
+        },
+        {
+          "en": "Remember the pair as a short phrase.",
+          "as": "Remember the pair as a short phrase."
+        },
+        {
+          "en": "Apply it: She is interested in maps.",
+          "as": "Apply it: She is interested in maps."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en06.u5.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "You are writing a team profile. One volunteer likes maps, and another is in charge of the equipment.",
+              "as": "You are writing a team profile. One volunteer likes maps, and another is in charge of the equipment."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The word immediately before the blank",
+                "as": "The word immediately before the blank"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u5.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "She is interested on maps.",
+              "as": "She is interested on maps."
+            },
+            {
+              "en": "She is interested in maps.",
+              "as": "She is interested in maps."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for.",
+            "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for."
+          },
+          "guess": true
+        },
+        {
+          "id": "en06.u5.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. Remember the pair as a short phrase.",
+              "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. Remember the pair as a short phrase."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The word immediately before the blank",
+                "as": "The word immediately before the blank"
+              },
+              {
+                "en": "Remember the pair as a short phrase.",
+                "as": "Remember the pair as a short phrase."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u5.04",
+          "type": "inline",
+          "before": {
+            "en": "The plan depends ",
+            "as": "The plan depends "
+          },
+          "after": {
+            "en": " the weather.",
+            "as": " the weather."
+          },
+          "options": [
+            {
+              "en": "at",
+              "as": "at"
+            },
+            {
+              "en": "on",
+              "as": "on"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. The plan depends on the weather.",
+            "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. The plan depends on the weather."
+          }
+        },
+        {
+          "id": "en06.u5.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “He is responsible in the equipment.”",
+            "as": "For this meaning, the following line works: “He is responsible in the equipment.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. He is responsible for the equipment.",
+            "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. He is responsible for the equipment."
+          }
+        },
+        {
+          "id": "en06.u5.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The job of each phrase",
+              "as": "The job of each phrase"
+            },
+            {
+              "en": "The word immediately before the blank",
+              "as": "The word immediately before the blank"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Remember the pair as a short phrase.",
+            "as": "Remember the pair as a short phrase."
+          }
+        },
+        {
+          "id": "en06.u5.07",
+          "type": "inline",
+          "before": {
+            "en": "Mira is interested ",
+            "as": "Mira is interested "
+          },
+          "after": {
+            "en": " photography.",
+            "as": " photography."
+          },
+          "options": [
+            {
+              "en": "at",
+              "as": "at"
+            },
+            {
+              "en": "in",
+              "as": "in"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. Mira is interested in photography.",
+            "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. Mira is interested in photography."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": {
+        "en": "Repair the invitation",
+        "as": "Repair the invitation"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The job of each phrase",
+          "as": "The job of each phrase"
+        },
+        {
+          "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline.",
+          "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline."
+        },
+        {
+          "en": "The same invitation can contain several different clues.",
+          "as": "The same invitation can contain several different clues."
+        },
+        {
+          "en": "Apply it: The tour starts at 9 a.m.",
+          "as": "Apply it: The tour starts at 9 a.m."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en06.u6.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The invite gives a clock time, a meeting point and a form deadline. Read each part before editing.",
+              "as": "The invite gives a clock time, a meeting point and a form deadline. Read each part before editing."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The job of each phrase",
+                "as": "The job of each phrase"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u6.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The tour starts on 9 a.m.",
+              "as": "The tour starts on 9 a.m."
+            },
+            {
+              "en": "The tour starts at 9 a.m.",
+              "as": "The tour starts at 9 a.m."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline.",
+            "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline."
+          },
+          "guess": true
+        },
+        {
+          "id": "en06.u6.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. The same invitation can contain several different clues.",
+              "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. The same invitation can contain several different clues."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The job of each phrase",
+                "as": "The job of each phrase"
+              },
+              {
+                "en": "The same invitation can contain several different clues.",
+                "as": "The same invitation can contain several different clues."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en06.u6.04",
+          "type": "inline",
+          "before": {
+            "en": "Meet ",
+            "as": "Meet "
+          },
+          "after": {
+            "en": " the west gate.",
+            "as": " the west gate."
+          },
+          "options": [
+            {
+              "en": "on",
+              "as": "on"
+            },
+            {
+              "en": "at",
+              "as": "at"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. Meet at the west gate.",
+            "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. Meet at the west gate."
+          }
+        },
+        {
+          "id": "en06.u6.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “Return the form by Friday at the latest.”",
+            "as": "For this meaning, the following line works: “Return the form by Friday at the latest.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. Return the form by Friday at the latest.",
+            "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. Return the form by Friday at the latest."
+          }
+        },
+        {
+          "id": "en06.u6.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Clock time, day or longer period",
+              "as": "Clock time, day or longer period"
+            },
+            {
+              "en": "The job of each phrase",
+              "as": "The job of each phrase"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The same invitation can contain several different clues.",
+            "as": "The same invitation can contain several different clues."
+          }
+        },
+        {
+          "id": "en06.u6.07",
+          "type": "inline",
+          "before": {
+            "en": "Please wait ",
+            "as": "Please wait "
+          },
+          "after": {
+            "en": " the entrance.",
+            "as": " the entrance."
+          },
+          "options": [
+            {
+              "en": "at",
+              "as": "at"
+            },
+            {
+              "en": "on",
+              "as": "on"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. Please wait at the entrance.",
+            "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. Please wait at the entrance."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en06.test.01",
+        "type": "inline",
+        "before": {
+          "en": "We will meet ",
+          "as": "We will meet "
+        },
+        "after": {
+          "en": " 10 September.",
+          "as": " 10 September."
+        },
+        "options": [
+          {
+            "en": "in",
+            "as": "in"
+          },
+          {
+            "en": "on",
+            "as": "on"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use at for a clock time, on for a day or date, and in for a month or year. We will meet on 10 September.",
+          "as": "Use at for a clock time, on for a day or date, and in for a month or year. We will meet on 10 September."
+        }
+      },
+      {
+        "id": "en06.test.02",
+        "type": "inline",
+        "before": {
+          "en": "Put the stamp ",
+          "as": "Put the stamp "
+        },
+        "after": {
+          "en": " the envelope’s front.",
+          "as": " the envelope’s front."
+        },
+        "options": [
+          {
+            "en": "on",
+            "as": "on"
+          },
+          {
+            "en": "in",
+            "as": "in"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. Put the stamp on the envelope’s front.",
+          "as": "Use at for a meeting point, on for contact with a surface, and in for a space that contains something. Put the stamp on the envelope’s front."
+        }
+      },
+      {
+        "id": "en06.test.03",
+        "type": "inline",
+        "before": {
+          "en": "Follow the path ",
+          "as": "Follow the path "
+        },
+        "after": {
+          "en": " the canal until the bridge.",
+          "as": " the canal until the bridge."
+        },
+        "options": [
+          {
+            "en": "along",
+            "as": "along"
+          },
+          {
+            "en": "into",
+            "as": "into"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. Follow the path along the canal until the bridge.",
+          "as": "Across goes from one side to the other, through passes inside, into enters, and along follows a line. Follow the path along the canal until the bridge."
+        }
+      },
+      {
+        "id": "en06.test.04",
+        "type": "inline",
+        "before": {
+          "en": "We stayed there ",
+          "as": "We stayed there "
+        },
+        "after": {
+          "en": " six, then left.",
+          "as": " six, then left."
+        },
+        "options": [
+          {
+            "en": "since",
+            "as": "since"
+          },
+          {
+            "en": "until",
+            "as": "until"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. We stayed there until six, then left.",
+          "as": "Since names the starting point, for names the duration, until marks continuation and by marks a deadline. We stayed there until six, then left."
+        }
+      },
+      {
+        "id": "en06.test.05",
+        "type": "inline",
+        "before": {
+          "en": "The group depends ",
+          "as": "The group depends "
+        },
+        "after": {
+          "en": " its volunteers.",
+          "as": " its volunteers."
+        },
+        "options": [
+          {
+            "en": "on",
+            "as": "on"
+          },
+          {
+            "en": "for",
+            "as": "for"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. The group depends on its volunteers.",
+          "as": "Some words regularly pair with particular prepositions: interested in, depend on and responsible for. The group depends on its volunteers."
+        }
+      },
+      {
+        "id": "en06.test.06",
+        "type": "inline",
+        "before": {
+          "en": "The maps are ",
+          "as": "The maps are "
+        },
+        "after": {
+          "en": " the folder.",
+          "as": " the folder."
+        },
+        "options": [
+          {
+            "en": "at",
+            "as": "at"
+          },
+          {
+            "en": "in",
+            "as": "in"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. The maps are in the folder.",
+          "as": "For these examples use at with a time or point, in with an enclosed space and by with a deadline. The maps are in the folder."
+        }
+      }
+    ]
+  }
+}

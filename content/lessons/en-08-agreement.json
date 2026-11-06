@@ -1,0 +1,975 @@
+{
+  "id": "en-08-agreement",
+  "course": "english",
+  "no": 8,
+  "version": 1,
+  "king": {
+    "en": "Subject–verb agreement",
+    "as": "Subject–verb agreement"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Subject verb agreement",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/agreement",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "There is there s and there are",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/there-is-there-are",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Find who does it",
+        "as": "Find who does it"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The subject that controls the verb",
+          "as": "The subject that controls the verb"
+        },
+        {
+          "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form.",
+          "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form."
+        },
+        {
+          "en": "Find the subject before editing the verb.",
+          "as": "Find the subject before editing the verb."
+        },
+        {
+          "en": "Apply it: The bus leaves at seven.",
+          "as": "Apply it: The bus leaves at seven."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en08.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The timetable describes one bus and several trains. Find what the verb belongs to.",
+              "as": "The timetable describes one bus and several trains. Find what the verb belongs to."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The subject that controls the verb",
+                "as": "The subject that controls the verb"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The bus leaves at seven.",
+              "as": "The bus leaves at seven."
+            },
+            {
+              "en": "The bus leave at seven.",
+              "as": "The bus leave at seven."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form.",
+            "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form."
+          },
+          "guess": true
+        },
+        {
+          "id": "en08.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. Find the subject before editing the verb.",
+              "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. Find the subject before editing the verb."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The subject that controls the verb",
+                "as": "The subject that controls the verb"
+              },
+              {
+                "en": "Find the subject before editing the verb.",
+                "as": "Find the subject before editing the verb."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "The trains ",
+            "as": "The trains "
+          },
+          "after": {
+            "en": " at eight.",
+            "as": " at eight."
+          },
+          "options": [
+            {
+              "en": "leave",
+              "as": "leave"
+            },
+            {
+              "en": "leaves",
+              "as": "leaves"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The trains leave at eight.",
+            "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The trains leave at eight."
+          }
+        },
+        {
+          "id": "en08.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The guide open the doors every morning.”",
+            "as": "For this meaning, the following line works: “The guide open the doors every morning.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The guide opens the doors every morning.",
+            "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The guide opens the doors every morning."
+          }
+        },
+        {
+          "id": "en08.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The head noun, not the noun in the extra phrase",
+              "as": "The head noun, not the noun in the extra phrase"
+            },
+            {
+              "en": "The subject that controls the verb",
+              "as": "The subject that controls the verb"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Find the subject before editing the verb.",
+            "as": "Find the subject before editing the verb."
+          }
+        },
+        {
+          "id": "en08.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "The bell ",
+            "as": "The bell "
+          },
+          "after": {
+            "en": " at six.",
+            "as": " at six."
+          },
+          "options": [
+            {
+              "en": "rings",
+              "as": "rings"
+            },
+            {
+              "en": "ring",
+              "as": "ring"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The bell rings at six.",
+            "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The bell rings at six."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Ignore the nearby noun",
+        "as": "Ignore the nearby noun"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The head noun, not the noun in the extra phrase",
+          "as": "The head noun, not the noun in the extra phrase"
+        },
+        {
+          "en": "An of-phrase can describe the subject without changing its number.",
+          "as": "An of-phrase can describe the subject without changing its number."
+        },
+        {
+          "en": "The box is singular even when it contains many pencils.",
+          "as": "The box is singular even when it contains many pencils."
+        },
+        {
+          "en": "Apply it: The box of pencils is on the shelf.",
+          "as": "Apply it: The box of pencils is on the shelf."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en08.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A box contains pencils. The notice tells you where the box is, so the verb follows box.",
+              "as": "A box contains pencils. The notice tells you where the box is, so the verb follows box."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The head noun, not the noun in the extra phrase",
+                "as": "The head noun, not the noun in the extra phrase"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The box of pencils are on the shelf.",
+              "as": "The box of pencils are on the shelf."
+            },
+            {
+              "en": "The box of pencils is on the shelf.",
+              "as": "The box of pencils is on the shelf."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An of-phrase can describe the subject without changing its number.",
+            "as": "An of-phrase can describe the subject without changing its number."
+          },
+          "guess": true
+        },
+        {
+          "id": "en08.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "An of-phrase can describe the subject without changing its number. The box is singular even when it contains many pencils.",
+              "as": "An of-phrase can describe the subject without changing its number. The box is singular even when it contains many pencils."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The head noun, not the noun in the extra phrase",
+                "as": "The head noun, not the noun in the extra phrase"
+              },
+              {
+                "en": "The box is singular even when it contains many pencils.",
+                "as": "The box is singular even when it contains many pencils."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "The keys to the cupboard ",
+            "as": "The keys to the cupboard "
+          },
+          "after": {
+            "en": " missing.",
+            "as": " missing."
+          },
+          "options": [
+            {
+              "en": "is",
+              "as": "is"
+            },
+            {
+              "en": "are",
+              "as": "are"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An of-phrase can describe the subject without changing its number. The keys to the cupboard are missing.",
+            "as": "An of-phrase can describe the subject without changing its number. The keys to the cupboard are missing."
+          }
+        },
+        {
+          "id": "en08.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The bag of tickets is under the chair.”",
+            "as": "For this meaning, the following line works: “The bag of tickets is under the chair.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "An of-phrase can describe the subject without changing its number. The bag of tickets is under the chair.",
+            "as": "An of-phrase can describe the subject without changing its number. The bag of tickets is under the chair."
+          }
+        },
+        {
+          "id": "en08.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Two joined subjects or one subject with extra information",
+              "as": "Two joined subjects or one subject with extra information"
+            },
+            {
+              "en": "The head noun, not the noun in the extra phrase",
+              "as": "The head noun, not the noun in the extra phrase"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The box is singular even when it contains many pencils.",
+            "as": "The box is singular even when it contains many pencils."
+          }
+        },
+        {
+          "id": "en08.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "The cover of these books ",
+            "as": "The cover of these books "
+          },
+          "after": {
+            "en": " torn.",
+            "as": " torn."
+          },
+          "options": [
+            {
+              "en": "are",
+              "as": "are"
+            },
+            {
+              "en": "is",
+              "as": "is"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An of-phrase can describe the subject without changing its number. The cover of these books is torn.",
+            "as": "An of-phrase can describe the subject without changing its number. The cover of these books is torn."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Count joined subjects",
+        "as": "Count joined subjects"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Two joined subjects or one subject with extra information",
+          "as": "Two joined subjects or one subject with extra information"
+        },
+        {
+          "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural.",
+          "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural."
+        },
+        {
+          "en": "Asha and Ravi differs from Asha with Ravi.",
+          "as": "Asha and Ravi differs from Asha with Ravi."
+        },
+        {
+          "en": "Apply it: Asha and Ravi are ready.",
+          "as": "Apply it: Asha and Ravi are ready."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en08.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "One sign describes a coach with an assistant. Another describes two separate people joined by and.",
+              "as": "One sign describes a coach with an assistant. Another describes two separate people joined by and."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Two joined subjects or one subject with extra information",
+                "as": "Two joined subjects or one subject with extra information"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Asha and Ravi are ready.",
+              "as": "Asha and Ravi are ready."
+            },
+            {
+              "en": "Asha and Ravi is ready.",
+              "as": "Asha and Ravi is ready."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural.",
+            "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural."
+          },
+          "guess": true
+        },
+        {
+          "id": "en08.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. Asha and Ravi differs from Asha with Ravi.",
+              "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. Asha and Ravi differs from Asha with Ravi."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Two joined subjects or one subject with extra information",
+                "as": "Two joined subjects or one subject with extra information"
+              },
+              {
+                "en": "Asha and Ravi differs from Asha with Ravi.",
+                "as": "Asha and Ravi differs from Asha with Ravi."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "The coach, with two assistants, ",
+            "as": "The coach, with two assistants, "
+          },
+          "after": {
+            "en": " ready.",
+            "as": " ready."
+          },
+          "options": [
+            {
+              "en": "is",
+              "as": "is"
+            },
+            {
+              "en": "are",
+              "as": "are"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The coach, with two assistants, is ready.",
+            "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The coach, with two assistants, is ready."
+          }
+        },
+        {
+          "id": "en08.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The door and the window is locked.”",
+            "as": "For this meaning, the following line works: “The door and the window is locked.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The door and the window are locked.",
+            "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The door and the window are locked."
+          }
+        },
+        {
+          "id": "en08.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Each or everyone versus the noun after there",
+              "as": "Each or everyone versus the noun after there"
+            },
+            {
+              "en": "Two joined subjects or one subject with extra information",
+              "as": "Two joined subjects or one subject with extra information"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Asha and Ravi differs from Asha with Ravi.",
+            "as": "Asha and Ravi differs from Asha with Ravi."
+          }
+        },
+        {
+          "id": "en08.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "The lamp and the fan ",
+            "as": "The lamp and the fan "
+          },
+          "after": {
+            "en": " working.",
+            "as": " working."
+          },
+          "options": [
+            {
+              "en": "are",
+              "as": "are"
+            },
+            {
+              "en": "is",
+              "as": "is"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The lamp and the fan are working.",
+            "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The lamp and the fan are working."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Check difficult subjects",
+        "as": "Check difficult subjects"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Each or everyone versus the noun after there",
+          "as": "Each or everyone versus the noun after there"
+        },
+        {
+          "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several.",
+          "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several."
+        },
+        {
+          "en": "After there, check the noun that follows the verb.",
+          "as": "After there, check the noun that follows the verb."
+        },
+        {
+          "en": "Apply it: Everyone has a ticket.",
+          "as": "Apply it: Everyone has a ticket."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en08.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A register mentions each member and then counts the empty seats. These openings need different checks.",
+              "as": "A register mentions each member and then counts the empty seats. These openings need different checks."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Each or everyone versus the noun after there",
+                "as": "Each or everyone versus the noun after there"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Everyone have a ticket.",
+              "as": "Everyone have a ticket."
+            },
+            {
+              "en": "Everyone has a ticket.",
+              "as": "Everyone has a ticket."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several.",
+            "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several."
+          },
+          "guess": true
+        },
+        {
+          "id": "en08.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. After there, check the noun that follows the verb.",
+              "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. After there, check the noun that follows the verb."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Each or everyone versus the noun after there",
+                "as": "Each or everyone versus the noun after there"
+              },
+              {
+                "en": "After there, check the noun that follows the verb.",
+                "as": "After there, check the noun that follows the verb."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en08.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "Each runner ",
+            "as": "Each runner "
+          },
+          "after": {
+            "en": " a number.",
+            "as": " a number."
+          },
+          "options": [
+            {
+              "en": "has",
+              "as": "has"
+            },
+            {
+              "en": "have",
+              "as": "have"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. Each runner has a number.",
+            "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. Each runner has a number."
+          }
+        },
+        {
+          "id": "en08.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “There are three seats left.”",
+            "as": "For this meaning, the following line works: “There are three seats left.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. There are three seats left.",
+            "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. There are three seats left."
+          }
+        },
+        {
+          "id": "en08.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The subject that controls the verb",
+              "as": "The subject that controls the verb"
+            },
+            {
+              "en": "Each or everyone versus the noun after there",
+              "as": "Each or everyone versus the noun after there"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "After there, check the noun that follows the verb.",
+            "as": "After there, check the noun that follows the verb."
+          }
+        },
+        {
+          "id": "en08.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "Each folder ",
+            "as": "Each folder "
+          },
+          "after": {
+            "en": " a label.",
+            "as": " a label."
+          },
+          "options": [
+            {
+              "en": "have",
+              "as": "have"
+            },
+            {
+              "en": "has",
+              "as": "has"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. Each folder has a label.",
+            "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. Each folder has a label."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en08.test.01",
+        "type": "inline",
+        "before": {
+          "en": "The stalls ",
+          "as": "The stalls "
+        },
+        "after": {
+          "en": " at noon.",
+          "as": " at noon."
+        },
+        "options": [
+          {
+            "en": "opens",
+            "as": "opens"
+          },
+          {
+            "en": "open",
+            "as": "open"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The stalls open at noon.",
+          "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The stalls open at noon."
+        }
+      },
+      {
+        "id": "en08.test.02",
+        "type": "inline",
+        "before": {
+          "en": "The walls of the room ",
+          "as": "The walls of the room "
+        },
+        "after": {
+          "en": " blue.",
+          "as": " blue."
+        },
+        "options": [
+          {
+            "en": "are",
+            "as": "are"
+          },
+          {
+            "en": "is",
+            "as": "is"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "An of-phrase can describe the subject without changing its number. The walls of the room are blue.",
+          "as": "An of-phrase can describe the subject without changing its number. The walls of the room are blue."
+        }
+      },
+      {
+        "id": "en08.test.03",
+        "type": "inline",
+        "before": {
+          "en": "The manager, along with the volunteers, ",
+          "as": "The manager, along with the volunteers, "
+        },
+        "after": {
+          "en": " here.",
+          "as": " here."
+        },
+        "options": [
+          {
+            "en": "is",
+            "as": "is"
+          },
+          {
+            "en": "are",
+            "as": "are"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The manager, along with the volunteers, is here.",
+          "as": "Two separate subjects joined by and normally take a plural verb. A with-phrase does not make a singular subject plural. The manager, along with the volunteers, is here."
+        }
+      },
+      {
+        "id": "en08.test.04",
+        "type": "inline",
+        "before": {
+          "en": "There ",
+          "as": "There "
+        },
+        "after": {
+          "en": " one key on the desk.",
+          "as": " one key on the desk."
+        },
+        "options": [
+          {
+            "en": "is",
+            "as": "is"
+          },
+          {
+            "en": "are",
+            "as": "are"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. There is one key on the desk.",
+          "as": "Each and everyone take a singular verb in these examples. In formal writing use there is for one and there are for several. There is one key on the desk."
+        }
+      },
+      {
+        "id": "en08.test.05",
+        "type": "inline",
+        "before": {
+          "en": "The bell ",
+          "as": "The bell "
+        },
+        "after": {
+          "en": " at six.",
+          "as": " at six."
+        },
+        "options": [
+          {
+            "en": "rings",
+            "as": "rings"
+          },
+          {
+            "en": "ring",
+            "as": "ring"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The bell rings at six.",
+          "as": "In these present-simple sentences, a singular third-person subject takes the -s verb form. A plural subject takes the base form. The bell rings at six."
+        }
+      }
+    ]
+  }
+}

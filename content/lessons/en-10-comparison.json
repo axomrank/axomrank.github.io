@@ -1,0 +1,970 @@
+{
+  "id": "en-10-comparison",
+  "course": "english",
+  "no": 10,
+  "version": 1,
+  "king": {
+    "en": "Comparison and description",
+    "as": "Comparison and description"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Comparison adjectives bigger biggest more interesting",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/comparison-adjectives-bigger-biggest-more-interesting",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Compare two routes",
+        "as": "Compare two routes"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Two routes compared with than",
+          "as": "Two routes compared with than"
+        },
+        {
+          "en": "Use a comparative with than when you state the second thing being compared.",
+          "as": "Use a comparative with than when you state the second thing being compared."
+        },
+        {
+          "en": "Short becomes shorter in this comparison.",
+          "as": "Short becomes shorter in this comparison."
+        },
+        {
+          "en": "Apply it: The north route is shorter than the south route.",
+          "as": "Apply it: The north route is shorter than the south route."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en10.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The north route takes ten minutes. The south route takes fifteen. Describe the north route relative to the south.",
+              "as": "The north route takes ten minutes. The south route takes fifteen. Describe the north route relative to the south."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Two routes compared with than",
+                "as": "Two routes compared with than"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The north route is shortest than the south route.",
+              "as": "The north route is shortest than the south route."
+            },
+            {
+              "en": "The north route is shorter than the south route.",
+              "as": "The north route is shorter than the south route."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a comparative with than when you state the second thing being compared.",
+            "as": "Use a comparative with than when you state the second thing being compared."
+          },
+          "guess": true
+        },
+        {
+          "id": "en10.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use a comparative with than when you state the second thing being compared. Short becomes shorter in this comparison.",
+              "as": "Use a comparative with than when you state the second thing being compared. Short becomes shorter in this comparison."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Two routes compared with than",
+                "as": "Two routes compared with than"
+              },
+              {
+                "en": "Short becomes shorter in this comparison.",
+                "as": "Short becomes shorter in this comparison."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "This path is ",
+            "as": "This path is "
+          },
+          "after": {
+            "en": " than the other one.",
+            "as": " than the other one."
+          },
+          "options": [
+            {
+              "en": "widest",
+              "as": "widest"
+            },
+            {
+              "en": "wider",
+              "as": "wider"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a comparative with than when you state the second thing being compared. This path is wider than the other one.",
+            "as": "Use a comparative with than when you state the second thing being compared. This path is wider than the other one."
+          }
+        },
+        {
+          "id": "en10.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The new route is most direct than the old one.”",
+            "as": "For this meaning, the following line works: “The new route is most direct than the old one.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use a comparative with than when you state the second thing being compared. The new route is more direct than the old one.",
+            "as": "Use a comparative with than when you state the second thing being compared. The new route is more direct than the old one."
+          }
+        },
+        {
+          "id": "en10.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The group the item belongs to",
+              "as": "The group the item belongs to"
+            },
+            {
+              "en": "Two routes compared with than",
+              "as": "Two routes compared with than"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Short becomes shorter in this comparison.",
+            "as": "Short becomes shorter in this comparison."
+          }
+        },
+        {
+          "id": "en10.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "The first bus is ",
+            "as": "The first bus is "
+          },
+          "after": {
+            "en": " than the second.",
+            "as": " than the second."
+          },
+          "options": [
+            {
+              "en": "fastest",
+              "as": "fastest"
+            },
+            {
+              "en": "faster",
+              "as": "faster"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a comparative with than when you state the second thing being compared. The first bus is faster than the second.",
+            "as": "Use a comparative with than when you state the second thing being compared. The first bus is faster than the second."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Choose from a group",
+        "as": "Choose from a group"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The group the item belongs to",
+          "as": "The group the item belongs to"
+        },
+        {
+          "en": "Use a superlative to pick an extreme within a group.",
+          "as": "Use a superlative to pick an extreme within a group."
+        },
+        {
+          "en": "Of the three identifies the comparison group.",
+          "as": "Of the three identifies the comparison group."
+        },
+        {
+          "en": "Apply it: Choose the lightest of the three bags.",
+          "as": "Apply it: Choose the lightest of the three bags."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en10.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "Three bags weigh one, two and three kilos. You want the one that weighs least.",
+              "as": "Three bags weigh one, two and three kilos. You want the one that weighs least."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The group the item belongs to",
+                "as": "The group the item belongs to"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Choose the lighter than of the three bags.",
+              "as": "Choose the lighter than of the three bags."
+            },
+            {
+              "en": "Choose the lightest of the three bags.",
+              "as": "Choose the lightest of the three bags."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use a superlative to pick an extreme within a group.",
+            "as": "Use a superlative to pick an extreme within a group."
+          },
+          "guess": true
+        },
+        {
+          "id": "en10.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use a superlative to pick an extreme within a group. Of the three identifies the comparison group.",
+              "as": "Use a superlative to pick an extreme within a group. Of the three identifies the comparison group."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The group the item belongs to",
+                "as": "The group the item belongs to"
+              },
+              {
+                "en": "Of the three identifies the comparison group.",
+                "as": "Of the three identifies the comparison group."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "This is the ",
+            "as": "This is the "
+          },
+          "after": {
+            "en": " of all the rooms.",
+            "as": " of all the rooms."
+          },
+          "options": [
+            {
+              "en": "largest",
+              "as": "largest"
+            },
+            {
+              "en": "larger than",
+              "as": "larger than"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a superlative to pick an extreme within a group. This is the largest of all the rooms.",
+            "as": "Use a superlative to pick an extreme within a group. This is the largest of all the rooms."
+          }
+        },
+        {
+          "id": "en10.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “She chose the shortest route of the four.”",
+            "as": "For this meaning, the following line works: “She chose the shortest route of the four.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Use a superlative to pick an extreme within a group. She chose the shortest route of the four.",
+            "as": "Use a superlative to pick an extreme within a group. She chose the shortest route of the four."
+          }
+        },
+        {
+          "id": "en10.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Equal length or an irregular comparison",
+              "as": "Equal length or an irregular comparison"
+            },
+            {
+              "en": "The group the item belongs to",
+              "as": "The group the item belongs to"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Of the three identifies the comparison group.",
+            "as": "Of the three identifies the comparison group."
+          }
+        },
+        {
+          "id": "en10.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "Of all the players, he is the ",
+            "as": "Of all the players, he is the "
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "tallest",
+              "as": "tallest"
+            },
+            {
+              "en": "taller than",
+              "as": "taller than"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use a superlative to pick an extreme within a group. Of all the players, he is the tallest.",
+            "as": "Use a superlative to pick an extreme within a group. Of all the players, he is the tallest."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Compare without ranking",
+        "as": "Compare without ranking"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Equal length or an irregular comparison",
+          "as": "Equal length or an irregular comparison"
+        },
+        {
+          "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best.",
+          "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best."
+        },
+        {
+          "en": "Equal length means neither rope is longer.",
+          "as": "Equal length means neither rope is longer."
+        },
+        {
+          "en": "Apply it: The blue rope is as long as the red one.",
+          "as": "Apply it: The blue rope is as long as the red one."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en10.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "Two ropes both measure five metres. You need to report the match in length.",
+              "as": "Two ropes both measure five metres. You need to report the match in length."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Equal length or an irregular comparison",
+                "as": "Equal length or an irregular comparison"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The blue rope is as longer as the red one.",
+              "as": "The blue rope is as longer as the red one."
+            },
+            {
+              "en": "The blue rope is as long as the red one.",
+              "as": "The blue rope is as long as the red one."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best.",
+            "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best."
+          },
+          "guess": true
+        },
+        {
+          "id": "en10.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. Equal length means neither rope is longer.",
+              "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. Equal length means neither rope is longer."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Equal length or an irregular comparison",
+                "as": "Equal length or an irregular comparison"
+              },
+              {
+                "en": "Equal length means neither rope is longer.",
+                "as": "Equal length means neither rope is longer."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "This map is ",
+            "as": "This map is "
+          },
+          "after": {
+            "en": " than the old one.",
+            "as": " than the old one."
+          },
+          "options": [
+            {
+              "en": "better",
+              "as": "better"
+            },
+            {
+              "en": "gooder",
+              "as": "gooder"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. This map is better than the old one.",
+            "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. This map is better than the old one."
+          }
+        },
+        {
+          "id": "en10.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “This is the goodest of the three plans.”",
+            "as": "For this meaning, the following line works: “This is the goodest of the three plans.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. This is the best of the three plans.",
+            "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. This is the best of the three plans."
+          }
+        },
+        {
+          "id": "en10.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Describe the voice or the action",
+              "as": "Describe the voice or the action"
+            },
+            {
+              "en": "Equal length or an irregular comparison",
+              "as": "Equal length or an irregular comparison"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Equal length means neither rope is longer.",
+            "as": "Equal length means neither rope is longer."
+          }
+        },
+        {
+          "id": "en10.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "Her second result was ",
+            "as": "Her second result was "
+          },
+          "after": {
+            "en": " than her first.",
+            "as": " than her first."
+          },
+          "options": [
+            {
+              "en": "more better",
+              "as": "more better"
+            },
+            {
+              "en": "better",
+              "as": "better"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. Her second result was better than her first.",
+            "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. Her second result was better than her first."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Describe the action",
+        "as": "Describe the action"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Describe the voice or the action",
+          "as": "Describe the voice or the action"
+        },
+        {
+          "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done.",
+          "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done."
+        },
+        {
+          "en": "Use one comparative form rather than adding more to a word already ending in -er.",
+          "as": "Use one comparative form rather than adding more to a word already ending in -er."
+        },
+        {
+          "en": "Apply it: She spoke clearly enough for the back row to hear.",
+          "as": "Apply it: She spoke clearly enough for the back row to hear."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en10.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "A speaker uses a clear voice. Your report needs a word that describes how she spoke.",
+              "as": "A speaker uses a clear voice. Your report needs a word that describes how she spoke."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Describe the voice or the action",
+                "as": "Describe the voice or the action"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "She spoke clear voice enough for the back row to hear.",
+              "as": "She spoke clear voice enough for the back row to hear."
+            },
+            {
+              "en": "She spoke clearly enough for the back row to hear.",
+              "as": "She spoke clearly enough for the back row to hear."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done.",
+            "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done."
+          },
+          "guess": true
+        },
+        {
+          "id": "en10.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. Use one comparative form rather than adding more to a word already ending in -er.",
+              "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. Use one comparative form rather than adding more to a word already ending in -er."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Describe the voice or the action",
+                "as": "Describe the voice or the action"
+              },
+              {
+                "en": "Use one comparative form rather than adding more to a word already ending in -er.",
+                "as": "Use one comparative form rather than adding more to a word already ending in -er."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en10.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "She used a ",
+            "as": "She used a "
+          },
+          "after": {
+            "en": " voice.",
+            "as": " voice."
+          },
+          "options": [
+            {
+              "en": "clear",
+              "as": "clear"
+            },
+            {
+              "en": "clearly",
+              "as": "clearly"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. She used a clear voice.",
+            "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. She used a clear voice."
+          }
+        },
+        {
+          "id": "en10.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The guide explained the route carefully.”",
+            "as": "For this meaning, the following line works: “The guide explained the route carefully.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. The guide explained the route carefully.",
+            "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. The guide explained the route carefully."
+          }
+        },
+        {
+          "id": "en10.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Two routes compared with than",
+              "as": "Two routes compared with than"
+            },
+            {
+              "en": "Describe the voice or the action",
+              "as": "Describe the voice or the action"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Use one comparative form rather than adding more to a word already ending in -er.",
+            "as": "Use one comparative form rather than adding more to a word already ending in -er."
+          }
+        },
+        {
+          "id": "en10.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "They made a ",
+            "as": "They made a "
+          },
+          "after": {
+            "en": " check of the labels.",
+            "as": " check of the labels."
+          },
+          "options": [
+            {
+              "en": "careful",
+              "as": "careful"
+            },
+            {
+              "en": "carefully",
+              "as": "carefully"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. They made a careful check of the labels.",
+            "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. They made a careful check of the labels."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en10.test.01",
+        "type": "inline",
+        "before": {
+          "en": "The east lane is ",
+          "as": "The east lane is "
+        },
+        "after": {
+          "en": " than the west lane.",
+          "as": " than the west lane."
+        },
+        "options": [
+          {
+            "en": "narrower",
+            "as": "narrower"
+          },
+          {
+            "en": "narrowest",
+            "as": "narrowest"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use a comparative with than when you state the second thing being compared. The east lane is narrower than the west lane.",
+          "as": "Use a comparative with than when you state the second thing being compared. The east lane is narrower than the west lane."
+        }
+      },
+      {
+        "id": "en10.test.02",
+        "type": "inline",
+        "before": {
+          "en": "This is the ",
+          "as": "This is the "
+        },
+        "after": {
+          "en": " ticket of the whole set.",
+          "as": " ticket of the whole set."
+        },
+        "options": [
+          {
+            "en": "cheaper than",
+            "as": "cheaper than"
+          },
+          {
+            "en": "cheapest",
+            "as": "cheapest"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use a superlative to pick an extreme within a group. This is the cheapest ticket of the whole set.",
+          "as": "Use a superlative to pick an extreme within a group. This is the cheapest ticket of the whole set."
+        }
+      },
+      {
+        "id": "en10.test.03",
+        "type": "inline",
+        "before": {
+          "en": "The small box is ",
+          "as": "The small box is "
+        },
+        "after": {
+          "en": " the large one in height.",
+          "as": " the large one in height."
+        },
+        "options": [
+          {
+            "en": "as tall as",
+            "as": "as tall as"
+          },
+          {
+            "en": "as taller as",
+            "as": "as taller as"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. The small box is as tall as the large one in height.",
+          "as": "Use as plus an adjective plus as for equality. Good has the irregular forms better and best. The small box is as tall as the large one in height."
+        }
+      },
+      {
+        "id": "en10.test.04",
+        "type": "inline",
+        "before": {
+          "en": "The second map was ",
+          "as": "The second map was "
+        },
+        "after": {
+          "en": " than the first.",
+          "as": " than the first."
+        },
+        "options": [
+          {
+            "en": "more clearer",
+            "as": "more clearer"
+          },
+          {
+            "en": "clearer",
+            "as": "clearer"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. The second map was clearer than the first.",
+          "as": "An adjective can describe a noun. An adverb such as clearly can describe how an action is done. The second map was clearer than the first."
+        }
+      },
+      {
+        "id": "en10.test.05",
+        "type": "inline",
+        "before": {
+          "en": "The first bus is ",
+          "as": "The first bus is "
+        },
+        "after": {
+          "en": " than the second.",
+          "as": " than the second."
+        },
+        "options": [
+          {
+            "en": "fastest",
+            "as": "fastest"
+          },
+          {
+            "en": "faster",
+            "as": "faster"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Use a comparative with than when you state the second thing being compared. The first bus is faster than the second.",
+          "as": "Use a comparative with than when you state the second thing being compared. The first bus is faster than the second."
+        }
+      }
+    ]
+  }
+}

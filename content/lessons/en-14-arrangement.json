@@ -1,0 +1,779 @@
+{
+  "id": "en-14-arrangement",
+  "course": "english",
+  "no": 14,
+  "version": 1,
+  "king": {
+    "en": "Sentence arrangement",
+    "as": "Sentence arrangement"
+  },
+  "reign": {
+    "en": "Use",
+    "as": "Use"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Discourse markers so right okay",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/discourse-markers-so-right-okay",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Find the opening",
+        "as": "Find the opening"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Introduce an object before referring to it.",
+          "as": "Introduce an object before referring to it."
+        },
+        {
+          "en": "A later sentence can use the to point back.",
+          "as": "A later sentence can use the to point back."
+        },
+        {
+          "en": "A pronoun needs a clear earlier reference.",
+          "as": "A pronoun needs a clear earlier reference."
+        },
+        {
+          "en": "Read the ordered paragraph aloud to check its links.",
+          "as": "Read the ordered paragraph aloud to check its links."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en14.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Rebuild the lost notice",
+            "as": "Rebuild the lost notice"
+          },
+          "text": [
+            {
+              "en": "A notice about a bag has been cut into strips. One strip introduces a bag. Another says the bag was under a bench.",
+              "as": "A notice about a bag has been cut into strips. One strip introduces a bag. Another says the bag was under a bench."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "A bag · introduce",
+                "as": "A bag · introduce"
+              },
+              {
+                "en": "The bag · point back",
+                "as": "The bag · point back"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en14.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which strip can start the paragraph?",
+            "as": "Which strip can start the paragraph?"
+          },
+          "options": [
+            {
+              "en": "A pupil found a bag.",
+              "as": "A pupil found a bag."
+            },
+            {
+              "en": "The bag was under a bench.",
+              "as": "The bag was under a bench."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A pupil found a bag introduces the item before the later reference.",
+            "as": "A pupil found a bag introduces the item before the later reference."
+          },
+          "guess": true
+        },
+        {
+          "id": "en14.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Point back clearly",
+            "as": "Point back clearly"
+          },
+          "text": [
+            {
+              "en": "After the first sentence, <mark>the bag</mark> refers to the one just introduced. After the bench detail, the writer can use <mark>it</mark> when the reference is clear.",
+              "as": "After the first sentence, <mark>the bag</mark> refers to the one just introduced. After the bench detail, the writer can use <mark>it</mark> when the reference is clear."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Introduce the bag",
+                "as": "Introduce the bag"
+              },
+              {
+                "en": "Point back to it",
+                "as": "Point back to it"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en14.u1.04",
+          "type": "order",
+          "q": {
+            "en": "Tap the sentences in the order that makes the paragraph clear.",
+            "as": "Tap the sentences in the order that makes the paragraph clear."
+          },
+          "items": [
+            {
+              "en": "A pupil found a bag.",
+              "as": "A pupil found a bag."
+            },
+            {
+              "en": "The bag was under a bench.",
+              "as": "The bag was under a bench."
+            },
+            {
+              "en": "She took it to the office.",
+              "as": "She took it to the office."
+            }
+          ],
+          "why": {
+            "en": "Introduce the bag before the definite phrase and pronoun.",
+            "as": "Introduce the bag before the definite phrase and pronoun."
+          }
+        },
+        {
+          "id": "en14.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "“It was under the bench” gives a reader enough information to know what it means in a new paragraph.",
+            "as": "“It was under the bench” gives a reader enough information to know what it means in a new paragraph."
+          },
+          "answer": false,
+          "why": {
+            "en": "Without a prior reference, the reader cannot tell what it refers to.",
+            "as": "Without a prior reference, the reader cannot tell what it refers to."
+          }
+        },
+        {
+          "id": "en14.u1.06",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "A dog ran into the yard.",
+                "as": "A dog ran into the yard."
+              },
+              {
+                "en": "Introduces the dog",
+                "as": "Introduces the dog"
+              }
+            ],
+            [
+              {
+                "en": "The dog barked once.",
+                "as": "The dog barked once."
+              },
+              {
+                "en": "Refers back to the dog",
+                "as": "Refers back to the dog"
+              }
+            ]
+          ],
+          "why": {
+            "en": "A introduces it; the points back.",
+            "as": "A introduces it; the points back."
+          }
+        },
+        {
+          "id": "en14.u1.07",
+          "type": "odd",
+          "q": {
+            "en": "Which sentence is the clearest standalone opening?",
+            "as": "Which sentence is the clearest standalone opening?"
+          },
+          "options": [
+            {
+              "en": "It was blue.",
+              "as": "It was blue."
+            },
+            {
+              "en": "The lid was cracked.",
+              "as": "The lid was cracked."
+            },
+            {
+              "en": "A student found a tin.",
+              "as": "A student found a tin."
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "A student found a tin introduces its subject and object without a prior reference.",
+            "as": "A student found a tin introduces its subject and object without a prior reference."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Link the middle",
+        "as": "Link the middle"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Time markers help establish sequence.",
+          "as": "Time markers help establish sequence."
+        },
+        {
+          "en": "A result can follow its cause.",
+          "as": "A result can follow its cause."
+        },
+        {
+          "en": "However signals a contrast with a nearby claim.",
+          "as": "However signals a contrast with a nearby claim."
+        },
+        {
+          "en": "Read adjacent sentences together to check the relation.",
+          "as": "Read adjacent sentences together to check the relation."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en14.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Put the trip in order",
+            "as": "Put the trip in order"
+          },
+          "text": [
+            {
+              "en": "First the group checked the route. Then it started walking. Finally it reached the hall. Three time markers tell you how to arrange the strips.",
+              "as": "First the group checked the route. Then it started walking. Finally it reached the hall. Three time markers tell you how to arrange the strips."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "First → then",
+                "as": "First → then"
+              },
+              {
+                "en": "Finally → end",
+                "as": "Finally → end"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en14.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which strip belongs after “First we checked the route”?",
+            "as": "Which strip belongs after “First we checked the route”?"
+          },
+          "options": [
+            {
+              "en": "Then we began walking.",
+              "as": "Then we began walking."
+            },
+            {
+              "en": "Finally we arrived.",
+              "as": "Finally we arrived."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Then signals the next event, before the arrival.",
+            "as": "Then signals the next event, before the arrival."
+          },
+          "guess": true
+        },
+        {
+          "id": "en14.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Read a different link",
+            "as": "Read a different link"
+          },
+          "text": [
+            {
+              "en": "The gate was locked. <mark>So</mark> the group used the side door. The second line gives the result of the first.",
+              "as": "The gate was locked. <mark>So</mark> the group used the side door. The second line gives the result of the first."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Cause · gate locked",
+                "as": "Cause · gate locked"
+              },
+              {
+                "en": "Result · side door",
+                "as": "Result · side door"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en14.u2.04",
+          "type": "order",
+          "q": {
+            "en": "Tap the sentences in the order that makes the paragraph clear.",
+            "as": "Tap the sentences in the order that makes the paragraph clear."
+          },
+          "items": [
+            {
+              "en": "The gate was locked.",
+              "as": "The gate was locked."
+            },
+            {
+              "en": "So the group tried the side door.",
+              "as": "So the group tried the side door."
+            },
+            {
+              "en": "A volunteer let them in there.",
+              "as": "A volunteer let them in there."
+            }
+          ],
+          "why": {
+            "en": "The locked gate explains the detour, and there points back to the side door.",
+            "as": "The locked gate explains the detour, and there points back to the side door."
+          }
+        },
+        {
+          "id": "en14.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "However can signal a contrast with an earlier sentence.",
+            "as": "However can signal a contrast with an earlier sentence."
+          },
+          "answer": true,
+          "why": {
+            "en": "However helps the reader see that the new claim contrasts with the preceding one.",
+            "as": "However helps the reader see that the new claim contrasts with the preceding one."
+          }
+        },
+        {
+          "id": "en14.u2.06",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "First",
+                "as": "First"
+              },
+              {
+                "en": "Starts a sequence",
+                "as": "Starts a sequence"
+              }
+            ],
+            [
+              {
+                "en": "So",
+                "as": "So"
+              },
+              {
+                "en": "Can introduce a result",
+                "as": "Can introduce a result"
+              }
+            ],
+            [
+              {
+                "en": "However",
+                "as": "However"
+              },
+              {
+                "en": "Can signal contrast",
+                "as": "Can signal contrast"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Linking words describe how ideas fit together.",
+            "as": "Linking words describe how ideas fit together."
+          }
+        },
+        {
+          "id": "en14.u2.07",
+          "type": "odd",
+          "q": {
+            "en": "What relation links “The path was short. However, it was steep”?",
+            "as": "What relation links “The path was short. However, it was steep”?"
+          },
+          "options": [
+            {
+              "en": "Contrast",
+              "as": "Contrast"
+            },
+            {
+              "en": "Result",
+              "as": "Result"
+            },
+            {
+              "en": "Time of day",
+              "as": "Time of day"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "However contrasts a benefit with a drawback.",
+            "as": "However contrasts a benefit with a drawback."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Prove the order",
+        "as": "Prove the order"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Find a sentence that introduces the topic.",
+          "as": "Find a sentence that introduces the topic."
+        },
+        {
+          "en": "Follow references such as this crack or the box.",
+          "as": "Follow references such as this crack or the box."
+        },
+        {
+          "en": "Use cause and result to decide where the ending goes.",
+          "as": "Use cause and result to decide where the ending goes."
+        },
+        {
+          "en": "Explain why a tempting swap breaks a link.",
+          "as": "Explain why a tempting swap breaks a link."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en14.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Recover the repair report",
+            "as": "Recover the repair report"
+          },
+          "text": [
+            {
+              "en": "One strip introduces a cracked box. The next describes the crack. Another explains why the box could no longer carry books.",
+              "as": "One strip introduces a cracked box. The next describes the crack. Another explains why the box could no longer carry books."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Box → crack",
+                "as": "Box → crack"
+              },
+              {
+                "en": "Crack → consequence",
+                "as": "Crack → consequence"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en14.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "What must come before “This crack widened overnight”?",
+            "as": "What must come before “This crack widened overnight”?"
+          },
+          "options": [
+            {
+              "en": "A crack appeared in the base.",
+              "as": "A crack appeared in the base."
+            },
+            {
+              "en": "The librarian carried the books in a basket.",
+              "as": "The librarian carried the books in a basket."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "This crack points back to the crack that has already been introduced.",
+            "as": "This crack points back to the crack that has already been introduced."
+          },
+          "guess": true
+        },
+        {
+          "id": "en14.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Test the tempting swap",
+            "as": "Test the tempting swap"
+          },
+          "text": [
+            {
+              "en": "If you move “This crack widened” before the first mention of the crack, you hide the referent. Keep the description before the consequence it explains.",
+              "as": "If you move “This crack widened” before the first mention of the crack, you hide the referent. Keep the description before the consequence it explains."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Referent first",
+                "as": "Referent first"
+              },
+              {
+                "en": "Consequence after evidence",
+                "as": "Consequence after evidence"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en14.u3.04",
+          "type": "order",
+          "q": {
+            "en": "Tap the sentences in the order that makes the paragraph clear.",
+            "as": "Tap the sentences in the order that makes the paragraph clear."
+          },
+          "items": [
+            {
+              "en": "A crack appeared in the base of the box.",
+              "as": "A crack appeared in the base of the box."
+            },
+            {
+              "en": "This crack widened overnight.",
+              "as": "This crack widened overnight."
+            },
+            {
+              "en": "As a result, the librarian used a basket for the books.",
+              "as": "As a result, the librarian used a basket for the books."
+            }
+          ],
+          "why": {
+            "en": "This crack needs its first mention. As a result needs the preceding cause.",
+            "as": "This crack needs its first mention. As a result needs the preceding cause."
+          }
+        },
+        {
+          "id": "en14.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "Putting “This crack widened” before any mention of the crack makes the reference clearer.",
+            "as": "Putting “This crack widened” before any mention of the crack makes the reference clearer."
+          },
+          "answer": false,
+          "why": {
+            "en": "This crack assumes the reader already knows which crack is meant.",
+            "as": "This crack assumes the reader already knows which crack is meant."
+          }
+        },
+        {
+          "id": "en14.u3.06",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "A key was missing.",
+                "as": "A key was missing."
+              },
+              {
+                "en": "Introduces the problem",
+                "as": "Introduces the problem"
+              }
+            ],
+            [
+              {
+                "en": "As a result, we used the spare.",
+                "as": "As a result, we used the spare."
+              },
+              {
+                "en": "Gives the consequence",
+                "as": "Gives the consequence"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The problem explains why the spare was used.",
+            "as": "The problem explains why the spare was used."
+          }
+        },
+        {
+          "id": "en14.u3.07",
+          "type": "odd",
+          "q": {
+            "en": "Which clue most strongly rules out putting “As a result, we used the spare” first?",
+            "as": "Which clue most strongly rules out putting “As a result, we used the spare” first?"
+          },
+          "options": [
+            {
+              "en": "It depends on a cause already stated",
+              "as": "It depends on a cause already stated"
+            },
+            {
+              "en": "It has seven words",
+              "as": "It has seven words"
+            },
+            {
+              "en": "It contains a comma",
+              "as": "It contains a comma"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "As a result points back to the reason for using the spare.",
+            "as": "As a result points back to the reason for using the spare."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en14.test.01",
+        "type": "order",
+        "q": {
+          "en": "Tap the sentences in the order that makes the paragraph clear.",
+          "as": "Tap the sentences in the order that makes the paragraph clear."
+        },
+        "items": [
+          {
+            "en": "We found a map.",
+            "as": "We found a map."
+          },
+          {
+            "en": "The map showed a bridge.",
+            "as": "The map showed a bridge."
+          },
+          {
+            "en": "We crossed it at noon.",
+            "as": "We crossed it at noon."
+          }
+        ],
+        "why": {
+          "en": "Introduce the map, then the bridge, then refer to the bridge with it.",
+          "as": "Introduce the map, then the bridge, then refer to the bridge with it."
+        }
+      },
+      {
+        "id": "en14.test.02",
+        "type": "order",
+        "q": {
+          "en": "Tap the sentences in the order that makes the paragraph clear.",
+          "as": "Tap the sentences in the order that makes the paragraph clear."
+        },
+        "items": [
+          {
+            "en": "First we packed the books.",
+            "as": "First we packed the books."
+          },
+          {
+            "en": "Then we carried them downstairs.",
+            "as": "Then we carried them downstairs."
+          },
+          {
+            "en": "Finally we loaded the van.",
+            "as": "Finally we loaded the van."
+          }
+        ],
+        "why": {
+          "en": "Follow first, then and finally.",
+          "as": "Follow first, then and finally."
+        }
+      },
+      {
+        "id": "en14.test.03",
+        "type": "tf",
+        "s": {
+          "en": "An opening with “this rule” may need an earlier sentence naming the rule.",
+          "as": "An opening with “this rule” may need an earlier sentence naming the rule."
+        },
+        "answer": true,
+        "why": {
+          "en": "This rule assumes a specific rule has been identified.",
+          "as": "This rule assumes a specific rule has been identified."
+        }
+      },
+      {
+        "id": "en14.test.04",
+        "type": "mcq",
+        "q": {
+          "en": "What should come before “As a result, the room was empty”?",
+          "as": "What should come before “As a result, the room was empty”?"
+        },
+        "options": [
+          {
+            "en": "The meeting had been cancelled.",
+            "as": "The meeting had been cancelled."
+          },
+          {
+            "en": "The room had three windows.",
+            "as": "The room had three windows."
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The cancellation explains why the room was empty.",
+          "as": "The cancellation explains why the room was empty."
+        }
+      },
+      {
+        "id": "en14.test.05",
+        "type": "order",
+        "q": {
+          "en": "Tap the sentences in the order that makes the paragraph clear.",
+          "as": "Tap the sentences in the order that makes the paragraph clear."
+        },
+        "items": [
+          {
+            "en": "A sign stood near the gate.",
+            "as": "A sign stood near the gate."
+          },
+          {
+            "en": "The sign warned that the path was flooded.",
+            "as": "The sign warned that the path was flooded."
+          },
+          {
+            "en": "So we took the road instead.",
+            "as": "So we took the road instead."
+          }
+        ],
+        "why": {
+          "en": "The sign is introduced before its warning, and the warning explains the route change.",
+          "as": "The sign is introduced before its warning, and the warning explains the route change."
+        }
+      }
+    ]
+  }
+}

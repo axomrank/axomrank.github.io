@@ -1,0 +1,1693 @@
+{
+  "id": "en-04-one-word",
+  "course": "english",
+  "no": 4,
+  "version": 1,
+  "king": {
+    "en": "One-word substitutions",
+    "as": "One-word substitutions"
+  },
+  "reign": {
+    "en": "Words",
+    "as": "Words"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Cambridge Dictionary · biography",
+      "url": "https://dictionary.cambridge.org/dictionary/english/biography",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · autobiography",
+      "url": "https://dictionary.cambridge.org/dictionary/english/autobiography",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · memoir",
+      "url": "https://dictionary.cambridge.org/dictionary/english/memoir",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · volunteer",
+      "url": "https://dictionary.cambridge.org/dictionary/english/volunteer",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · spectator",
+      "url": "https://dictionary.cambridge.org/dictionary/english/spectator",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · participant",
+      "url": "https://dictionary.cambridge.org/dictionary/english/participant",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · archive",
+      "url": "https://dictionary.cambridge.org/dictionary/english/archive",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · library",
+      "url": "https://dictionary.cambridge.org/dictionary/english/library",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · museum",
+      "url": "https://dictionary.cambridge.org/dictionary/english/museum",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · fleet",
+      "url": "https://dictionary.cambridge.org/dictionary/english/fleet",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · herd",
+      "url": "https://dictionary.cambridge.org/dictionary/english/herd",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · flock",
+      "url": "https://dictionary.cambridge.org/dictionary/english/flock",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · annual",
+      "url": "https://dictionary.cambridge.org/dictionary/english/annual",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · biennial",
+      "url": "https://dictionary.cambridge.org/dictionary/english/biennial",
+      "used_for": "Word senses and usage."
+    },
+    {
+      "title": "Cambridge Dictionary · occasional",
+      "url": "https://dictionary.cambridge.org/dictionary/english/occasional",
+      "used_for": "Word senses and usage."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Label the bookshelf",
+        "as": "Label the bookshelf"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "A biography tells the story of another person’s life.",
+          "as": "A biography tells the story of another person’s life."
+        },
+        {
+          "en": "An autobiography is written by the person whose life it describes.",
+          "as": "An autobiography is written by the person whose life it describes."
+        },
+        {
+          "en": "A memoir can focus on a period or experience the writer remembers.",
+          "as": "A memoir can focus on a period or experience the writer remembers."
+        },
+        {
+          "en": "Check both who wrote the book and what it covers.",
+          "as": "Check both who wrote the book and what it covers."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en04.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Three books arrive",
+            "as": "Three books arrive"
+          },
+          "text": [
+            {
+              "en": "You are sorting three new books. One tells a runner’s life in her own words. Another was written by a journalist who interviewed her.",
+              "as": "You are sorting three new books. One tells a runner’s life in her own words. Another was written by a journalist who interviewed her."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Runner writes about herself",
+                "as": "Runner writes about herself"
+              },
+              {
+                "en": "Journalist writes about runner",
+                "as": "Journalist writes about runner"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "What label fits the runner’s own life story?",
+            "as": "What label fits the runner’s own life story?"
+          },
+          "options": [
+            {
+              "en": "Autobiography",
+              "as": "Autobiography"
+            },
+            {
+              "en": "Biography by another writer",
+              "as": "Biography by another writer"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The runner writes the story of her own life.",
+            "as": "The runner writes the story of her own life."
+          },
+          "guess": true
+        },
+        {
+          "id": "en04.u1.03",
+          "type": "story",
+          "title": {
+            "en": "One summer in focus",
+            "as": "One summer in focus"
+          },
+          "text": [
+            {
+              "en": "A third book recalls only one summer the author spent coaching. Call it a <mark>memoir</mark> of that summer. That label draws attention to remembered experiences.",
+              "as": "A third book recalls only one summer the author spent coaching. Call it a <mark>memoir</mark> of that summer. That label draws attention to remembered experiences."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Life story · autobiography",
+                "as": "Life story · autobiography"
+              },
+              {
+                "en": "Selected experience · memoir",
+                "as": "Selected experience · memoir"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u1.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Journalist writes the runner’s life",
+                "as": "Journalist writes the runner’s life"
+              },
+              {
+                "en": "Biography",
+                "as": "Biography"
+              }
+            ],
+            [
+              {
+                "en": "Runner writes her own life",
+                "as": "Runner writes her own life"
+              },
+              {
+                "en": "Autobiography",
+                "as": "Autobiography"
+              }
+            ],
+            [
+              {
+                "en": "Coach recalls one summer",
+                "as": "Coach recalls one summer"
+              },
+              {
+                "en": "Memoir",
+                "as": "Memoir"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Check the writer and the scope.",
+            "as": "Check the writer and the scope."
+          }
+        },
+        {
+          "id": "en04.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "A biography of a runner can be written by a journalist.",
+            "as": "A biography of a runner can be written by a journalist."
+          },
+          "answer": true,
+          "why": {
+            "en": "A biography can tell the story of someone other than its author.",
+            "as": "A biography can tell the story of someone other than its author."
+          }
+        },
+        {
+          "id": "en04.u1.06",
+          "type": "inline",
+          "before": {
+            "en": "In her book she tells the story of her own life. It is an",
+            "as": "In her book she tells the story of her own life. It is an"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "atlas",
+              "as": "atlas"
+            },
+            {
+              "en": "autobiography",
+              "as": "autobiography"
+            },
+            {
+              "en": "index",
+              "as": "index"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The author is also the person whose life is described.",
+            "as": "The author is also the person whose life is described."
+          }
+        },
+        {
+          "id": "en04.u1.07",
+          "type": "odd",
+          "q": {
+            "en": "Which clue best supports labelling a book a memoir of one summer?",
+            "as": "Which clue best supports labelling a book a memoir of one summer?"
+          },
+          "options": [
+            {
+              "en": "The writer recalls one summer as a coach",
+              "as": "The writer recalls one summer as a coach"
+            },
+            {
+              "en": "The book lists winners by year",
+              "as": "The book lists winners by year"
+            },
+            {
+              "en": "The book maps the running track",
+              "as": "The book maps the running track"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The book focuses on the writer’s remembered experiences.",
+            "as": "The book focuses on the writer’s remembered experiences."
+          }
+        },
+        {
+          "id": "en04.u1.08",
+          "type": "tf",
+          "s": {
+            "en": "To choose between biography and autobiography, ask who wrote it.",
+            "as": "To choose between biography and autobiography, ask who wrote it."
+          },
+          "answer": true,
+          "why": {
+            "en": "The relation between the author and the subject is the clue.",
+            "as": "The relation between the author and the subject is the clue."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Staff the school race",
+        "as": "Staff the school race"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "A volunteer offers to help willingly.",
+          "as": "A volunteer offers to help willingly."
+        },
+        {
+          "en": "A spectator watches an event.",
+          "as": "A spectator watches an event."
+        },
+        {
+          "en": "A participant takes part.",
+          "as": "A participant takes part."
+        },
+        {
+          "en": "Choose the role that fits what a person is doing at that moment.",
+          "as": "Choose the role that fits what a person is doing at that moment."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en04.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Give out three badges",
+            "as": "Give out three badges"
+          },
+          "text": [
+            {
+              "en": "Asha offers to pour water without being paid. Ben signs up to run. Chen sits by the track to watch.",
+              "as": "Asha offers to pour water without being paid. Ben signs up to run. Chen sits by the track to watch."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Asha · helps",
+                "as": "Asha · helps"
+              },
+              {
+                "en": "Ben · runs",
+                "as": "Ben · runs"
+              },
+              {
+                "en": "Chen · watches",
+                "as": "Chen · watches"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which badge fits Chen?",
+            "as": "Which badge fits Chen?"
+          },
+          "options": [
+            {
+              "en": "Spectator",
+              "as": "Spectator"
+            },
+            {
+              "en": "Runner",
+              "as": "Runner"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Chen watches the race. A spectator watches an event.",
+            "as": "Chen watches the race. A spectator watches an event."
+          },
+          "guess": true
+        },
+        {
+          "id": "en04.u2.03",
+          "type": "story",
+          "title": {
+            "en": "A badge can change",
+            "as": "A badge can change"
+          },
+          "text": [
+            {
+              "en": "After watching the first race, Chen joins the relay. In the relay, Chen is a <mark>participant</mark>. Use what the person does in the event to choose the label.",
+              "as": "After watching the first race, Chen joins the relay. In the relay, Chen is a <mark>participant</mark>. Use what the person does in the event to choose the label."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Spectator · watches",
+                "as": "Spectator · watches"
+              },
+              {
+                "en": "Participant · takes part",
+                "as": "Participant · takes part"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u2.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Hands out water by choice",
+                "as": "Hands out water by choice"
+              },
+              {
+                "en": "Volunteer",
+                "as": "Volunteer"
+              }
+            ],
+            [
+              {
+                "en": "Watches from the stands",
+                "as": "Watches from the stands"
+              },
+              {
+                "en": "Spectator",
+                "as": "Spectator"
+              }
+            ],
+            [
+              {
+                "en": "Takes part in the relay",
+                "as": "Takes part in the relay"
+              },
+              {
+                "en": "Participant",
+                "as": "Participant"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The roles describe helping, watching and taking part.",
+            "as": "The roles describe helping, watching and taking part."
+          }
+        },
+        {
+          "id": "en04.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "A person watching one race can participate in a later race.",
+            "as": "A person watching one race can participate in a later race."
+          },
+          "answer": true,
+          "why": {
+            "en": "The word depends on what the person does in that event.",
+            "as": "The word depends on what the person does in that event."
+          }
+        },
+        {
+          "id": "en04.u2.06",
+          "type": "inline",
+          "before": {
+            "en": "People who watched the match from the stands were",
+            "as": "People who watched the match from the stands were"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "spectators",
+              "as": "spectators"
+            },
+            {
+              "en": "referees",
+              "as": "referees"
+            },
+            {
+              "en": "players",
+              "as": "players"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "They were watching, so spectators fits.",
+            "as": "They were watching, so spectators fits."
+          }
+        },
+        {
+          "id": "en04.u2.07",
+          "type": "odd",
+          "q": {
+            "en": "Which action best identifies a volunteer at the event?",
+            "as": "Which action best identifies a volunteer at the event?"
+          },
+          "options": [
+            {
+              "en": "Buys a ticket",
+              "as": "Buys a ticket"
+            },
+            {
+              "en": "Offers to help at the water table without pay",
+              "as": "Offers to help at the water table without pay"
+            },
+            {
+              "en": "Watches the finish",
+              "as": "Watches the finish"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Offering to help willingly is the clue.",
+            "as": "Offering to help willingly is the clue."
+          }
+        },
+        {
+          "id": "en04.u2.08",
+          "type": "tf",
+          "s": {
+            "en": "A participant must win the event.",
+            "as": "A participant must win the event."
+          },
+          "answer": false,
+          "why": {
+            "en": "A participant takes part. Winning is a separate result.",
+            "as": "A participant takes part. Winning is a separate result."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Find the right collection",
+        "as": "Find the right collection"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "An archive preserves records.",
+          "as": "An archive preserves records."
+        },
+        {
+          "en": "A library makes reading or reference materials available.",
+          "as": "A library makes reading or reference materials available."
+        },
+        {
+          "en": "A museum collects and often displays objects.",
+          "as": "A museum collects and often displays objects."
+        },
+        {
+          "en": "Institutions can overlap, so use the main task as your clue.",
+          "as": "Institutions can overlap, so use the main task as your clue."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en04.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Three research errands",
+            "as": "Three research errands"
+          },
+          "text": [
+            {
+              "en": "One student needs old council minutes. Another wants to borrow a novel. A third wants to see a display of tools.",
+              "as": "One student needs old council minutes. Another wants to borrow a novel. A third wants to see a display of tools."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Minutes · old records",
+                "as": "Minutes · old records"
+              },
+              {
+                "en": "Novel · borrow",
+                "as": "Novel · borrow"
+              },
+              {
+                "en": "Tools · display",
+                "as": "Tools · display"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Where would you first look for preserved council minutes?",
+            "as": "Where would you first look for preserved council minutes?"
+          },
+          "options": [
+            {
+              "en": "An archive",
+              "as": "An archive"
+            },
+            {
+              "en": "A sports ground",
+              "as": "A sports ground"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "An archive preserves records such as meeting minutes.",
+            "as": "An archive preserves records such as meeting minutes."
+          },
+          "guess": true
+        },
+        {
+          "id": "en04.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Follow the purpose",
+            "as": "Follow the purpose"
+          },
+          "text": [
+            {
+              "en": "Borrow the novel from a <mark>library</mark>. See the tools in a <mark>museum</mark>. A museum can have an archive of its own. Choose the word that fits the collection or service you mean.",
+              "as": "Borrow the novel from a <mark>library</mark>. See the tools in a <mark>museum</mark>. A museum can have an archive of its own. Choose the word that fits the collection or service you mean."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Library · reading and borrowing",
+                "as": "Library · reading and borrowing"
+              },
+              {
+                "en": "Museum · objects and displays",
+                "as": "Museum · objects and displays"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u3.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Borrow a novel",
+                "as": "Borrow a novel"
+              },
+              {
+                "en": "Library",
+                "as": "Library"
+              }
+            ],
+            [
+              {
+                "en": "Consult preserved council records",
+                "as": "Consult preserved council records"
+              },
+              {
+                "en": "Archive",
+                "as": "Archive"
+              }
+            ],
+            [
+              {
+                "en": "Visit a display of pottery",
+                "as": "Visit a display of pottery"
+              },
+              {
+                "en": "Museum",
+                "as": "Museum"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Match the task to the purpose of the collection.",
+            "as": "Match the task to the purpose of the collection."
+          }
+        },
+        {
+          "id": "en04.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "A museum can maintain an archive.",
+            "as": "A museum can maintain an archive."
+          },
+          "answer": true,
+          "why": {
+            "en": "An archive is a collection of records and can belong to a larger institution.",
+            "as": "An archive is a collection of records and can belong to a larger institution."
+          }
+        },
+        {
+          "id": "en04.u3.06",
+          "type": "inline",
+          "before": {
+            "en": "The guide led us through a display of old weaving tools at the",
+            "as": "The guide led us through a display of old weaving tools at the"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "garage",
+              "as": "garage"
+            },
+            {
+              "en": "museum",
+              "as": "museum"
+            },
+            {
+              "en": "station",
+              "as": "station"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A museum can collect and display objects such as tools.",
+            "as": "A museum can collect and display objects such as tools."
+          }
+        },
+        {
+          "id": "en04.u3.07",
+          "type": "odd",
+          "q": {
+            "en": "Which task directly calls for an archive?",
+            "as": "Which task directly calls for an archive?"
+          },
+          "options": [
+            {
+              "en": "Check preserved minutes from a meeting",
+              "as": "Check preserved minutes from a meeting"
+            },
+            {
+              "en": "Buy running shoes",
+              "as": "Buy running shoes"
+            },
+            {
+              "en": "Book a bus ticket",
+              "as": "Book a bus ticket"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Preserved minutes are records.",
+            "as": "Preserved minutes are records."
+          }
+        },
+        {
+          "id": "en04.u3.08",
+          "type": "tf",
+          "s": {
+            "en": "A place where you can borrow novels is normally called a library.",
+            "as": "A place where you can borrow novels is normally called a library."
+          },
+          "answer": true,
+          "why": {
+            "en": "Providing access to books is a familiar library service.",
+            "as": "Providing access to books is a familiar library service."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Name the group",
+        "as": "Name the group"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "A fleet can be a group of ships or vehicles.",
+          "as": "A fleet can be a group of ships or vehicles."
+        },
+        {
+          "en": "A herd can be a group of cattle.",
+          "as": "A herd can be a group of cattle."
+        },
+        {
+          "en": "A flock can be a group of sheep or birds.",
+          "as": "A flock can be a group of sheep or birds."
+        },
+        {
+          "en": "Check the noun after of to choose a conventional group word.",
+          "as": "Check the noun after of to choose a conventional group word."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en04.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Edit the field notes",
+            "as": "Edit the field notes"
+          },
+          "text": [
+            {
+              "en": "At the river you see several boats belonging to one operator. On the bank you see cattle together. Later, sheep gather in a field.",
+              "as": "At the river you see several boats belonging to one operator. On the bank you see cattle together. Later, sheep gather in a field."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Boats · same operator",
+                "as": "Boats · same operator"
+              },
+              {
+                "en": "Cattle · together",
+                "as": "Cattle · together"
+              },
+              {
+                "en": "Sheep · together",
+                "as": "Sheep · together"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which phrase fits the cattle?",
+            "as": "Which phrase fits the cattle?"
+          },
+          "options": [
+            {
+              "en": "A fleet of cattle",
+              "as": "A fleet of cattle"
+            },
+            {
+              "en": "A herd of cattle",
+              "as": "A herd of cattle"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Herd is the usual group word with cattle.",
+            "as": "Herd is the usual group word with cattle."
+          },
+          "guess": true
+        },
+        {
+          "id": "en04.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Match the company",
+            "as": "Match the company"
+          },
+          "text": [
+            {
+              "en": "Use a <mark>fleet</mark> of boats, a <mark>herd</mark> of cattle and a <mark>flock</mark> of sheep. Read the noun after of before choosing the label.",
+              "as": "Use a <mark>fleet</mark> of boats, a <mark>herd</mark> of cattle and a <mark>flock</mark> of sheep. Read the noun after of before choosing the label."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Fleet · boats",
+                "as": "Fleet · boats"
+              },
+              {
+                "en": "Herd · cattle",
+                "as": "Herd · cattle"
+              },
+              {
+                "en": "Flock · sheep",
+                "as": "Flock · sheep"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u4.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Boats owned by one operator",
+                "as": "Boats owned by one operator"
+              },
+              {
+                "en": "Fleet",
+                "as": "Fleet"
+              }
+            ],
+            [
+              {
+                "en": "Cattle grazing together",
+                "as": "Cattle grazing together"
+              },
+              {
+                "en": "Herd",
+                "as": "Herd"
+              }
+            ],
+            [
+              {
+                "en": "Sheep in a group",
+                "as": "Sheep in a group"
+              },
+              {
+                "en": "Flock",
+                "as": "Flock"
+              }
+            ]
+          ],
+          "why": {
+            "en": "These are conventional pairings.",
+            "as": "These are conventional pairings."
+          }
+        },
+        {
+          "id": "en04.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "A delivery company can have a fleet of vans.",
+            "as": "A delivery company can have a fleet of vans."
+          },
+          "answer": true,
+          "why": {
+            "en": "Fleet can describe a group of vehicles.",
+            "as": "Fleet can describe a group of vehicles."
+          }
+        },
+        {
+          "id": "en04.u4.06",
+          "type": "inline",
+          "before": {
+            "en": "A",
+            "as": "A"
+          },
+          "after": {
+            "en": "of sheep crossed the field.",
+            "as": "of sheep crossed the field."
+          },
+          "options": [
+            {
+              "en": "fleet",
+              "as": "fleet"
+            },
+            {
+              "en": "flock",
+              "as": "flock"
+            },
+            {
+              "en": "team",
+              "as": "team"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Flock is a conventional group word for sheep.",
+            "as": "Flock is a conventional group word for sheep."
+          }
+        },
+        {
+          "id": "en04.u4.07",
+          "type": "odd",
+          "q": {
+            "en": "Which pair uses a familiar group word?",
+            "as": "Which pair uses a familiar group word?"
+          },
+          "options": [
+            {
+              "en": "Fleet of trucks",
+              "as": "Fleet of trucks"
+            },
+            {
+              "en": "Flock of vans",
+              "as": "Flock of vans"
+            },
+            {
+              "en": "Herd of boats",
+              "as": "Herd of boats"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Fleet is used for a group of vehicles.",
+            "as": "Fleet is used for a group of vehicles."
+          }
+        },
+        {
+          "id": "en04.u4.08",
+          "type": "tf",
+          "s": {
+            "en": "Herd is a conventional group word for cattle.",
+            "as": "Herd is a conventional group word for cattle."
+          },
+          "answer": true,
+          "why": {
+            "en": "A group of cattle can be called a herd.",
+            "as": "A group of cattle can be called a herd."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": {
+        "en": "Read the calendar",
+        "as": "Read the calendar"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Annual means occurring every year.",
+          "as": "Annual means occurring every year."
+        },
+        {
+          "en": "Biennial means occurring every two years.",
+          "as": "Biennial means occurring every two years."
+        },
+        {
+          "en": "Occasional means happening from time to time.",
+          "as": "Occasional means happening from time to time."
+        },
+        {
+          "en": "Read the schedule before choosing a frequency word.",
+          "as": "Read the schedule before choosing a frequency word."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en04.u5.01",
+          "type": "story",
+          "title": {
+            "en": "Mark the next fair",
+            "as": "Mark the next fair"
+          },
+          "text": [
+            {
+              "en": "The fair took place in 2024 and 2026. Its schedule says it repeats every two years. The book sale happens each year.",
+              "as": "The fair took place in 2024 and 2026. Its schedule says it repeats every two years. The book sale happens each year."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Fair · every two years",
+                "as": "Fair · every two years"
+              },
+              {
+                "en": "Book sale · every year",
+                "as": "Book sale · every year"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u5.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which word fits the fair?",
+            "as": "Which word fits the fair?"
+          },
+          "options": [
+            {
+              "en": "Annual",
+              "as": "Annual"
+            },
+            {
+              "en": "Biennial",
+              "as": "Biennial"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A biennial event happens every two years.",
+            "as": "A biennial event happens every two years."
+          },
+          "guess": true
+        },
+        {
+          "id": "en04.u5.03",
+          "type": "story",
+          "title": {
+            "en": "One more schedule",
+            "as": "One more schedule"
+          },
+          "text": [
+            {
+              "en": "The outdoor concert happens from time to time when organisers find a free date. Call it <mark>occasional</mark>. Use <mark>annual</mark> for a yearly event and <mark>biennial</mark> for a two-year cycle.",
+              "as": "The outdoor concert happens from time to time when organisers find a free date. Call it <mark>occasional</mark>. Use <mark>annual</mark> for a yearly event and <mark>biennial</mark> for a two-year cycle."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Annual · yearly",
+                "as": "Annual · yearly"
+              },
+              {
+                "en": "Biennial · every two years",
+                "as": "Biennial · every two years"
+              },
+              {
+                "en": "Occasional · from time to time",
+                "as": "Occasional · from time to time"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u5.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Every year",
+                "as": "Every year"
+              },
+              {
+                "en": "Annual",
+                "as": "Annual"
+              }
+            ],
+            [
+              {
+                "en": "Every two years",
+                "as": "Every two years"
+              },
+              {
+                "en": "Biennial",
+                "as": "Biennial"
+              }
+            ],
+            [
+              {
+                "en": "From time to time",
+                "as": "From time to time"
+              },
+              {
+                "en": "Occasional",
+                "as": "Occasional"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Use the interval stated in the schedule.",
+            "as": "Use the interval stated in the schedule."
+          }
+        },
+        {
+          "id": "en04.u5.05",
+          "type": "tf",
+          "s": {
+            "en": "An event every two years is biennial.",
+            "as": "An event every two years is biennial."
+          },
+          "answer": true,
+          "why": {
+            "en": "Biennial names a two-year interval.",
+            "as": "Biennial names a two-year interval."
+          }
+        },
+        {
+          "id": "en04.u5.06",
+          "type": "inline",
+          "before": {
+            "en": "The club holds the same event every June. It is an",
+            "as": "The club holds the same event every June. It is an"
+          },
+          "after": {
+            "en": "event.",
+            "as": "event."
+          },
+          "options": [
+            {
+              "en": "annual",
+              "as": "annual"
+            },
+            {
+              "en": "hourly",
+              "as": "hourly"
+            },
+            {
+              "en": "biennial",
+              "as": "biennial"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Every June gives it a yearly schedule.",
+            "as": "Every June gives it a yearly schedule."
+          }
+        },
+        {
+          "id": "en04.u5.07",
+          "type": "odd",
+          "q": {
+            "en": "Which schedule fits an occasional concert?",
+            "as": "Which schedule fits an occasional concert?"
+          },
+          "options": [
+            {
+              "en": "Every Monday",
+              "as": "Every Monday"
+            },
+            {
+              "en": "Every second year",
+              "as": "Every second year"
+            },
+            {
+              "en": "From time to time when a venue is free",
+              "as": "From time to time when a venue is free"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "From time to time describes occasional events.",
+            "as": "From time to time describes occasional events."
+          }
+        },
+        {
+          "id": "en04.u5.08",
+          "type": "tf",
+          "s": {
+            "en": "A biennial fair in 2026 would normally recur in 2027.",
+            "as": "A biennial fair in 2026 would normally recur in 2027."
+          },
+          "answer": false,
+          "why": {
+            "en": "A two-year schedule places the next fair in 2028.",
+            "as": "A two-year schedule places the next fair in 2028."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": {
+        "en": "Shorten the announcement",
+        "as": "Shorten the announcement"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Replace a phrase only when the shorter word preserves the meaning.",
+          "as": "Replace a phrase only when the shorter word preserves the meaning."
+        },
+        {
+          "en": "Identify the role before choosing a label for a person.",
+          "as": "Identify the role before choosing a label for a person."
+        },
+        {
+          "en": "Identify the interval before choosing a frequency word.",
+          "as": "Identify the interval before choosing a frequency word."
+        },
+        {
+          "en": "Read the revised sentence back and check its claim.",
+          "as": "Read the revised sentence back and check its claim."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en04.u6.01",
+          "type": "story",
+          "title": {
+            "en": "Save room on the poster",
+            "as": "Save room on the poster"
+          },
+          "text": [
+            {
+              "en": "A long poster says, “People who come to watch may sit by the track. The event takes place every year.” You need two shorter phrases.",
+              "as": "A long poster says, “People who come to watch may sit by the track. The event takes place every year.” You need two shorter phrases."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "People who watch",
+                "as": "People who watch"
+              },
+              {
+                "en": "Every year",
+                "as": "Every year"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u6.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which label keeps the first claim intact?",
+            "as": "Which label keeps the first claim intact?"
+          },
+          "options": [
+            {
+              "en": "Spectators",
+              "as": "Spectators"
+            },
+            {
+              "en": "Participants",
+              "as": "Participants"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The people described are watching.",
+            "as": "The people described are watching."
+          },
+          "guess": true
+        },
+        {
+          "id": "en04.u6.03",
+          "type": "story",
+          "title": {
+            "en": "Check what changed",
+            "as": "Check what changed"
+          },
+          "text": [
+            {
+              "en": "Write “<mark>Spectators</mark> may sit by the track. This is an <mark>annual</mark> event.” Both choices keep the original meaning. Check that the shorter word has not changed the role or interval.",
+              "as": "Write “<mark>Spectators</mark> may sit by the track. This is an <mark>annual</mark> event.” Both choices keep the original meaning. Check that the shorter word has not changed the role or interval."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Watch → spectators",
+                "as": "Watch → spectators"
+              },
+              {
+                "en": "Every year → annual",
+                "as": "Every year → annual"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en04.u6.04",
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Own life story",
+                "as": "Own life story"
+              },
+              {
+                "en": "Autobiography",
+                "as": "Autobiography"
+              }
+            ],
+            [
+              {
+                "en": "Group of company vans",
+                "as": "Group of company vans"
+              },
+              {
+                "en": "Fleet",
+                "as": "Fleet"
+              }
+            ],
+            [
+              {
+                "en": "Every two years",
+                "as": "Every two years"
+              },
+              {
+                "en": "Biennial",
+                "as": "Biennial"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each word preserves a different detail from its phrase.",
+            "as": "Each word preserves a different detail from its phrase."
+          }
+        },
+        {
+          "id": "en04.u6.05",
+          "type": "tf",
+          "s": {
+            "en": "Replacing spectators with volunteers always preserves the meaning.",
+            "as": "Replacing spectators with volunteers always preserves the meaning."
+          },
+          "answer": false,
+          "why": {
+            "en": "Spectators watch. Volunteers offer to help.",
+            "as": "Spectators watch. Volunteers offer to help."
+          }
+        },
+        {
+          "id": "en04.u6.06",
+          "type": "inline",
+          "before": {
+            "en": "The records are preserved in the council",
+            "as": "The records are preserved in the council"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "stadium",
+              "as": "stadium"
+            },
+            {
+              "en": "archive",
+              "as": "archive"
+            },
+            {
+              "en": "kitchen",
+              "as": "kitchen"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An archive preserves records.",
+            "as": "An archive preserves records."
+          }
+        },
+        {
+          "id": "en04.u6.07",
+          "type": "odd",
+          "q": {
+            "en": "Which edit changes the meaning of “a sale every year”?",
+            "as": "Which edit changes the meaning of “a sale every year”?"
+          },
+          "options": [
+            {
+              "en": "An annual sale",
+              "as": "An annual sale"
+            },
+            {
+              "en": "A yearly sale",
+              "as": "A yearly sale"
+            },
+            {
+              "en": "A biennial sale",
+              "as": "A biennial sale"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Biennial changes the interval to every two years.",
+            "as": "Biennial changes the interval to every two years."
+          }
+        },
+        {
+          "id": "en04.u6.08",
+          "type": "tf",
+          "s": {
+            "en": "“A herd of cattle” can shorten “a group of cattle.”",
+            "as": "“A herd of cattle” can shorten “a group of cattle.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "Herd is a conventional collective noun for cattle.",
+            "as": "Herd is a conventional collective noun for cattle."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Choose the precise meaning",
+      "as": "Choose the precise meaning"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en04.test.01",
+        "type": "inline",
+        "before": {
+          "en": "A journalist wrote the story of a singer’s life. It is a",
+          "as": "A journalist wrote the story of a singer’s life. It is a"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "biography",
+            "as": "biography"
+          },
+          {
+            "en": "autobiography",
+            "as": "autobiography"
+          },
+          {
+            "en": "timetable",
+            "as": "timetable"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The subject and the author are different people.",
+          "as": "The subject and the author are different people."
+        }
+      },
+      {
+        "id": "en04.test.02",
+        "type": "inline",
+        "before": {
+          "en": "The people who watched the relay were",
+          "as": "The people who watched the relay were"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "participants",
+            "as": "participants"
+          },
+          {
+            "en": "spectators",
+            "as": "spectators"
+          },
+          {
+            "en": "drivers",
+            "as": "drivers"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "They watched the event.",
+          "as": "They watched the event."
+        }
+      },
+      {
+        "id": "en04.test.03",
+        "type": "inline",
+        "before": {
+          "en": "The council minutes are kept in its",
+          "as": "The council minutes are kept in its"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "archive",
+            "as": "archive"
+          },
+          {
+            "en": "playground",
+            "as": "playground"
+          },
+          {
+            "en": "cafeteria",
+            "as": "cafeteria"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "An archive preserves records.",
+          "as": "An archive preserves records."
+        }
+      },
+      {
+        "id": "en04.test.04",
+        "type": "inline",
+        "before": {
+          "en": "The coach counted the company’s",
+          "as": "The coach counted the company’s"
+        },
+        "after": {
+          "en": "of buses.",
+          "as": "of buses."
+        },
+        "options": [
+          {
+            "en": "flock",
+            "as": "flock"
+          },
+          {
+            "en": "herd",
+            "as": "herd"
+          },
+          {
+            "en": "fleet",
+            "as": "fleet"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Fleet can describe a group of vehicles.",
+          "as": "Fleet can describe a group of vehicles."
+        }
+      },
+      {
+        "id": "en04.test.05",
+        "type": "inline",
+        "before": {
+          "en": "The fair returns every two years. It is",
+          "as": "The fair returns every two years. It is"
+        },
+        "after": {
+          "en": ".",
+          "as": "."
+        },
+        "options": [
+          {
+            "en": "annual",
+            "as": "annual"
+          },
+          {
+            "en": "biennial",
+            "as": "biennial"
+          },
+          {
+            "en": "daily",
+            "as": "daily"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Biennial describes a two-year cycle.",
+          "as": "Biennial describes a two-year cycle."
+        }
+      },
+      {
+        "id": "en04.test.06",
+        "type": "tf",
+        "s": {
+          "en": "A memoir can focus on a single year of the writer’s life.",
+          "as": "A memoir can focus on a single year of the writer’s life."
+        },
+        "answer": true,
+        "why": {
+          "en": "A memoir can recount selected experiences rather than a full life story.",
+          "as": "A memoir can recount selected experiences rather than a full life story."
+        }
+      }
+    ]
+  }
+}

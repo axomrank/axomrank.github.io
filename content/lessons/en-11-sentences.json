@@ -1,0 +1,985 @@
+{
+  "id": "en-11-sentences",
+  "course": "english",
+  "no": 11,
+  "version": 1,
+  "king": {
+    "en": "Sentence transformations",
+    "as": "Sentence transformations"
+  },
+  "reign": {
+    "en": "Grammar",
+    "as": "Grammar"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Question tags",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/question-tags",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Reported speech",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/reported-speech",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Reporting clauses",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/reporting-clauses",
+      "used_for": "Rule and usage reference."
+    },
+    {
+      "title": "Passive forms",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/passive-forms",
+      "used_for": "Rule and usage reference."
+    }
+  ],
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Check the tag",
+        "as": "Check the tag"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Match polarity, auxiliary and pronoun",
+          "as": "Match polarity, auxiliary and pronoun"
+        },
+        {
+          "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun.",
+          "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun."
+        },
+        {
+          "en": "An affirmative it is can take the negative tag isn’t it.",
+          "as": "An affirmative it is can take the negative tag isn’t it."
+        },
+        {
+          "en": "Apply it: The hall is open, isn’t it?",
+          "as": "Apply it: The hall is open, isn’t it?"
+        }
+      ],
+      "steps": [
+        {
+          "id": "en11.u1.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "You believe the hall is open and ask for confirmation. The main clause uses is.",
+              "as": "You believe the hall is open and ask for confirmation. The main clause uses is."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Match polarity, auxiliary and pronoun",
+                "as": "Match polarity, auxiliary and pronoun"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u1.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The hall is open, isn’t it?",
+              "as": "The hall is open, isn’t it?"
+            },
+            {
+              "en": "The hall is open, isn’t they?",
+              "as": "The hall is open, isn’t they?"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun.",
+            "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun."
+          },
+          "guess": true
+        },
+        {
+          "id": "en11.u1.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. An affirmative it is can take the negative tag isn’t it.",
+              "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. An affirmative it is can take the negative tag isn’t it."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Match polarity, auxiliary and pronoun",
+                "as": "Match polarity, auxiliary and pronoun"
+              },
+              {
+                "en": "An affirmative it is can take the negative tag isn’t it.",
+                "as": "An affirmative it is can take the negative tag isn’t it."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u1.04",
+          "type": "inline",
+          "before": {
+            "en": "They are ready, ",
+            "as": "They are ready, "
+          },
+          "after": {
+            "en": "?",
+            "as": "?"
+          },
+          "options": [
+            {
+              "en": "aren’t they",
+              "as": "aren’t they"
+            },
+            {
+              "en": "isn’t it",
+              "as": "isn’t it"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. They are ready, aren’t they?",
+            "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. They are ready, aren’t they?"
+          }
+        },
+        {
+          "id": "en11.u1.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “She can swim, isn’t she?”",
+            "as": "For this meaning, the following line works: “She can swim, isn’t she?”"
+          },
+          "answer": false,
+          "why": {
+            "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. She can swim, can’t she?",
+            "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. She can swim, can’t she?"
+          }
+        },
+        {
+          "id": "en11.u1.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Whose words, and when they were spoken",
+              "as": "Whose words, and when they were spoken"
+            },
+            {
+              "en": "Match polarity, auxiliary and pronoun",
+              "as": "Match polarity, auxiliary and pronoun"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An affirmative it is can take the negative tag isn’t it.",
+            "as": "An affirmative it is can take the negative tag isn’t it."
+          }
+        },
+        {
+          "id": "en11.u1.07",
+          "type": "inline",
+          "before": {
+            "en": "You have seen it, ",
+            "as": "You have seen it, "
+          },
+          "after": {
+            "en": "?",
+            "as": "?"
+          },
+          "options": [
+            {
+              "en": "haven’t you",
+              "as": "haven’t you"
+            },
+            {
+              "en": "aren’t you",
+              "as": "aren’t you"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. You have seen it, haven’t you?",
+            "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. You have seen it, haven’t you?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Pass on a message",
+        "as": "Pass on a message"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Whose words, and when they were spoken",
+          "as": "Whose words, and when they were spoken"
+        },
+        {
+          "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said.",
+          "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said."
+        },
+        {
+          "en": "I refers to Asha in her original words.",
+          "as": "I refers to Asha in her original words."
+        },
+        {
+          "en": "Apply it: Asha said she would bring the map.",
+          "as": "Apply it: Asha said she would bring the map."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en11.u2.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "Yesterday Asha said, “I will bring the map tomorrow.” Today you are reporting what Asha said.",
+              "as": "Yesterday Asha said, “I will bring the map tomorrow.” Today you are reporting what Asha said."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Whose words, and when they were spoken",
+                "as": "Whose words, and when they were spoken"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u2.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "Asha said she would bring the map.",
+              "as": "Asha said she would bring the map."
+            },
+            {
+              "en": "Asha said I would bring the map.",
+              "as": "Asha said I would bring the map."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said.",
+            "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said."
+          },
+          "guess": true
+        },
+        {
+          "id": "en11.u2.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said. I refers to Asha in her original words.",
+              "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said. I refers to Asha in her original words."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Whose words, and when they were spoken",
+                "as": "Whose words, and when they were spoken"
+              },
+              {
+                "en": "I refers to Asha in her original words.",
+                "as": "I refers to Asha in her original words."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u2.04",
+          "type": "inline",
+          "before": {
+            "en": "Last Monday Ravi said, “I am tired.” Later, you report that Ravi said ",
+            "as": "Last Monday Ravi said, “I am tired.” Later, you report that Ravi said "
+          },
+          "after": {
+            "en": " tired.",
+            "as": " tired."
+          },
+          "options": [
+            {
+              "en": "he was",
+              "as": "he was"
+            },
+            {
+              "en": "I was",
+              "as": "I was"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said. Last Monday Ravi said, “I am tired.” Later, you report that Ravi said he was tired.",
+            "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said. Last Monday Ravi said, “I am tired.” Later, you report that Ravi said he was tired."
+          }
+        },
+        {
+          "id": "en11.u2.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: ““I have the tickets,” said Mira. The next day you report that Mira said she had the tickets.”",
+            "as": "For this meaning, the following line works: ““I have the tickets,” said Mira. The next day you report that Mira said she had the tickets.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said. “I have the tickets,” said Mira. The next day you report that Mira said she had the tickets.",
+            "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said. “I have the tickets,” said Mira. The next day you report that Mira said she had the tickets."
+          }
+        },
+        {
+          "id": "en11.u2.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "The thing acted on and the original tense",
+              "as": "The thing acted on and the original tense"
+            },
+            {
+              "en": "Whose words, and when they were spoken",
+              "as": "Whose words, and when they were spoken"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "I refers to Asha in her original words.",
+            "as": "I refers to Asha in her original words."
+          }
+        },
+        {
+          "id": "en11.u2.07",
+          "type": "inline",
+          "before": {
+            "en": "“I can help,” said Tara. You report that Tara said ",
+            "as": "“I can help,” said Tara. You report that Tara said "
+          },
+          "after": {
+            "en": " help.",
+            "as": " help."
+          },
+          "options": [
+            {
+              "en": "I could",
+              "as": "I could"
+            },
+            {
+              "en": "she could",
+              "as": "she could"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said. “I can help,” said Tara. You report that Tara said she could help.",
+            "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said. “I can help,” said Tara. You report that Tara said she could help."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Change the focus",
+        "as": "Change the focus"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "The thing acted on and the original tense",
+          "as": "The thing acted on and the original tense"
+        },
+        {
+          "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle.",
+          "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle."
+        },
+        {
+          "en": "Painted yesterday becomes was painted yesterday.",
+          "as": "Painted yesterday becomes was painted yesterday."
+        },
+        {
+          "en": "Apply it: The gate was painted yesterday.",
+          "as": "Apply it: The gate was painted yesterday."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en11.u3.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The team painted the gate yesterday. A notice starts with the gate because that is what readers need to know about.",
+              "as": "The team painted the gate yesterday. A notice starts with the gate because that is what readers need to know about."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The thing acted on and the original tense",
+                "as": "The thing acted on and the original tense"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u3.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The gate is painting yesterday.",
+              "as": "The gate is painting yesterday."
+            },
+            {
+              "en": "The gate was painted yesterday.",
+              "as": "The gate was painted yesterday."
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle.",
+            "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle."
+          },
+          "guess": true
+        },
+        {
+          "id": "en11.u3.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. Painted yesterday becomes was painted yesterday.",
+              "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. Painted yesterday becomes was painted yesterday."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "The thing acted on and the original tense",
+                "as": "The thing acted on and the original tense"
+              },
+              {
+                "en": "Painted yesterday becomes was painted yesterday.",
+                "as": "Painted yesterday becomes was painted yesterday."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u3.04",
+          "type": "inline",
+          "before": {
+            "en": "The letters ",
+            "as": "The letters "
+          },
+          "after": {
+            "en": " yesterday.",
+            "as": " yesterday."
+          },
+          "options": [
+            {
+              "en": "was posted",
+              "as": "was posted"
+            },
+            {
+              "en": "were posted",
+              "as": "were posted"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. The letters were posted yesterday.",
+            "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. The letters were posted yesterday."
+          }
+        },
+        {
+          "id": "en11.u3.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The hall are cleaned every week.”",
+            "as": "For this meaning, the following line works: “The hall are cleaned every week.”"
+          },
+          "answer": false,
+          "why": {
+            "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. The hall is cleaned every week.",
+            "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. The hall is cleaned every week."
+          }
+        },
+        {
+          "id": "en11.u3.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Meaning, time and reference",
+              "as": "Meaning, time and reference"
+            },
+            {
+              "en": "The thing acted on and the original tense",
+              "as": "The thing acted on and the original tense"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Painted yesterday becomes was painted yesterday.",
+            "as": "Painted yesterday becomes was painted yesterday."
+          }
+        },
+        {
+          "id": "en11.u3.07",
+          "type": "inline",
+          "before": {
+            "en": "The signs ",
+            "as": "The signs "
+          },
+          "after": {
+            "en": " tomorrow.",
+            "as": " tomorrow."
+          },
+          "options": [
+            {
+              "en": "will be installed",
+              "as": "will be installed"
+            },
+            {
+              "en": "were installed",
+              "as": "were installed"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. The signs will be installed tomorrow.",
+            "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. The signs will be installed tomorrow."
+          }
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Check what survived",
+        "as": "Check what survived"
+      },
+      "icon": "book",
+      "learned": [
+        {
+          "en": "Meaning, time and reference",
+          "as": "Meaning, time and reference"
+        },
+        {
+          "en": "A transformation should preserve the original facts. Check the time and who did what.",
+          "as": "A transformation should preserve the original facts. Check the time and who did what."
+        },
+        {
+          "en": "Changing the sentence focus need not change the event.",
+          "as": "Changing the sentence focus need not change the event."
+        },
+        {
+          "en": "Apply it: The windows were opened by the pupils yesterday.",
+          "as": "Apply it: The windows were opened by the pupils yesterday."
+        }
+      ],
+      "steps": [
+        {
+          "id": "en11.u4.01",
+          "type": "story",
+          "title": {
+            "en": "Make the choice",
+            "as": "Make the choice"
+          },
+          "text": [
+            {
+              "en": "The editor wants to recast “The pupils opened the windows yesterday” without changing who, what or when.",
+              "as": "The editor wants to recast “The pupils opened the windows yesterday” without changing who, what or when."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Meaning, time and reference",
+                "as": "Meaning, time and reference"
+              },
+              {
+                "en": "Choose a line for this scene",
+                "as": "Choose a line for this scene"
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u4.02",
+          "type": "mcq",
+          "q": {
+            "en": "Which line fits the scene and the cue?",
+            "as": "Which line fits the scene and the cue?"
+          },
+          "options": [
+            {
+              "en": "The windows were opened by the pupils yesterday.",
+              "as": "The windows were opened by the pupils yesterday."
+            },
+            {
+              "en": "The windows were closed by the pupils yesterday.",
+              "as": "The windows were closed by the pupils yesterday."
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A transformation should preserve the original facts. Check the time and who did what.",
+            "as": "A transformation should preserve the original facts. Check the time and who did what."
+          },
+          "guess": true
+        },
+        {
+          "id": "en11.u4.03",
+          "type": "story",
+          "title": {
+            "en": "Compare the clues",
+            "as": "Compare the clues"
+          },
+          "text": [
+            {
+              "en": "A transformation should preserve the original facts. Check the time and who did what. Changing the sentence focus need not change the event.",
+              "as": "A transformation should preserve the original facts. Check the time and who did what. Changing the sentence focus need not change the event."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Meaning, time and reference",
+                "as": "Meaning, time and reference"
+              },
+              {
+                "en": "Changing the sentence focus need not change the event.",
+                "as": "Changing the sentence focus need not change the event."
+              }
+            ]
+          }
+        },
+        {
+          "id": "en11.u4.04",
+          "type": "inline",
+          "before": {
+            "en": "The report says Mira locked the door. The door ",
+            "as": "The report says Mira locked the door. The door "
+          },
+          "after": {
+            "en": " by Mira.",
+            "as": " by Mira."
+          },
+          "options": [
+            {
+              "en": "was unlocked",
+              "as": "was unlocked"
+            },
+            {
+              "en": "was locked",
+              "as": "was locked"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A transformation should preserve the original facts. Check the time and who did what. The report says Mira locked the door. The door was locked by Mira.",
+            "as": "A transformation should preserve the original facts. Check the time and who did what. The report says Mira locked the door. The door was locked by Mira."
+          }
+        },
+        {
+          "id": "en11.u4.05",
+          "type": "tf",
+          "s": {
+            "en": "For this meaning, the following line works: “The team will paint the sign tomorrow. The sign will be painted tomorrow.”",
+            "as": "For this meaning, the following line works: “The team will paint the sign tomorrow. The sign will be painted tomorrow.”"
+          },
+          "answer": true,
+          "why": {
+            "en": "A transformation should preserve the original facts. Check the time and who did what. The team will paint the sign tomorrow. The sign will be painted tomorrow.",
+            "as": "A transformation should preserve the original facts. Check the time and who did what. The team will paint the sign tomorrow. The sign will be painted tomorrow."
+          }
+        },
+        {
+          "id": "en11.u4.06",
+          "type": "odd",
+          "q": {
+            "en": "Which part of the scene should you check first?",
+            "as": "Which part of the scene should you check first?"
+          },
+          "options": [
+            {
+              "en": "Match polarity, auxiliary and pronoun",
+              "as": "Match polarity, auxiliary and pronoun"
+            },
+            {
+              "en": "Meaning, time and reference",
+              "as": "Meaning, time and reference"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Changing the sentence focus need not change the event.",
+            "as": "Changing the sentence focus need not change the event."
+          }
+        },
+        {
+          "id": "en11.u4.07",
+          "type": "inline",
+          "before": {
+            "en": "Tara found the keys. The keys were found by ",
+            "as": "Tara found the keys. The keys were found by "
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "Tara",
+              "as": "Tara"
+            },
+            {
+              "en": "Arun",
+              "as": "Arun"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A transformation should preserve the original facts. Check the time and who did what. Tara found the keys. The keys were found by Tara.",
+            "as": "A transformation should preserve the original facts. Check the time and who did what. Tara found the keys. The keys were found by Tara."
+          }
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Use the clues",
+      "as": "Use the clues"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "id": "en11.test.01",
+        "type": "inline",
+        "before": {
+          "en": "He isn’t here, ",
+          "as": "He isn’t here, "
+        },
+        "after": {
+          "en": "?",
+          "as": "?"
+        },
+        "options": [
+          {
+            "en": "is he",
+            "as": "is he"
+          },
+          {
+            "en": "isn’t she",
+            "as": "isn’t she"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. He isn’t here, is he?",
+          "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. He isn’t here, is he?"
+        }
+      },
+      {
+        "id": "en11.test.02",
+        "type": "inline",
+        "before": {
+          "en": "Asha said she would bring the map ",
+          "as": "Asha said she would bring the map "
+        },
+        "after": {
+          "en": " after she spoke.",
+          "as": " after she spoke."
+        },
+        "options": [
+          {
+            "en": "yesterday",
+            "as": "yesterday"
+          },
+          {
+            "en": "the next day",
+            "as": "the next day"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "In a later report, change pronouns and time expressions as needed. Will can become would after said. Asha said she would bring the map the next day after she spoke.",
+          "as": "In a later report, change pronouns and time expressions as needed. Will can become would after said. Asha said she would bring the map the next day after she spoke."
+        }
+      },
+      {
+        "id": "en11.test.03",
+        "type": "inline",
+        "before": {
+          "en": "Two tickets ",
+          "as": "Two tickets "
+        },
+        "after": {
+          "en": " last night.",
+          "as": " last night."
+        },
+        "options": [
+          {
+            "en": "were sold",
+            "as": "were sold"
+          },
+          {
+            "en": "is sold",
+            "as": "is sold"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. Two tickets were sold last night.",
+          "as": "A passive can put the receiver first. Keep the time with the appropriate form of be and add the past participle. Two tickets were sold last night."
+        }
+      },
+      {
+        "id": "en11.test.04",
+        "type": "inline",
+        "before": {
+          "en": "“I lost my badge,” said Arun. Arun said ",
+          "as": "“I lost my badge,” said Arun. Arun said "
+        },
+        "after": {
+          "en": " had lost his badge.",
+          "as": " had lost his badge."
+        },
+        "options": [
+          {
+            "en": "he",
+            "as": "he"
+          },
+          {
+            "en": "she",
+            "as": "she"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A transformation should preserve the original facts. Check the time and who did what. “I lost my badge,” said Arun. Arun said he had lost his badge.",
+          "as": "A transformation should preserve the original facts. Check the time and who did what. “I lost my badge,” said Arun. Arun said he had lost his badge."
+        }
+      },
+      {
+        "id": "en11.test.05",
+        "type": "inline",
+        "before": {
+          "en": "You have seen it, ",
+          "as": "You have seen it, "
+        },
+        "after": {
+          "en": "?",
+          "as": "?"
+        },
+        "options": [
+          {
+            "en": "haven’t you",
+            "as": "haven’t you"
+          },
+          {
+            "en": "aren’t you",
+            "as": "aren’t you"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. You have seen it, haven’t you?",
+          "as": "A basic confirmation tag often uses the opposite polarity and repeats the auxiliary with a pronoun. You have seen it, haven’t you?"
+        }
+      }
+    ]
+  }
+}
