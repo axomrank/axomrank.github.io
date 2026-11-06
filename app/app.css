@@ -14,18 +14,8 @@
   --river: #6FA8C9; --land: #EADFC8; --hill: #B9A47E;
   --locked: #D8CDBB; --locked-dark: #BDAF98;
   --stage: #E4D6BE;
-  --font: "Nunito", "Noto Sans Bengali", system-ui, sans-serif;
-  --font-as: "Noto Sans Bengali", "Nunito", system-ui, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #17182F; --surface: #20223F; --surface-2: #2A2C4E; --ink: #F4ECDF; --ink-2: #C6BCAE; --ink-3: #8E8678;
-    --line: #34375C; --line-2: #42466F; --terra: #E2774B; --terra-dark: #A9502D; --terra-soft: #3C2833;
-    --indigo: #A9ADF5; --indigo-dark: #6E73C9; --indigo-soft: #2C2F5A; --gold: #EDB54A; --gold-dark: #B9851C; --gold-soft: #3A3320;
-    --good: #58C080; --good-dark: #3B8D5B; --good-soft: #1E3B2D; --good-ink: #9BE3B5;
-    --bad: #F0776C; --bad-dark: #B5473F; --bad-soft: #43252B; --bad-ink: #FFB3AB;
-    --river: #4E86A8; --land: #2A2C4E; --hill: #5E5A78; --locked: #3A3D60; --locked-dark: #2B2D4A; --stage: #0E0F1F;
-  }
+  --font: "Noto Sans", "Noto Sans Bengali", system-ui, sans-serif;
+  --font-as: "Noto Sans Bengali", "Noto Sans", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -191,7 +181,6 @@ body:has(#as:checked) .prompt, body:has(#as:checked) h1.t { line-height: 1.5; }
 .story .more::before { content: "▾"; color: var(--terra); font-size: 16px; }
 @keyframes nudge { 50% { transform: translateY(3px); } }
 body:has(#as:checked) .story .more { letter-spacing: 0; text-transform: none; }
-@media (prefers-color-scheme: dark) { .story .yr { color: var(--terra); } }
 @media (prefers-reduced-motion: reduce) { .story mark { animation: none; background-size: 100% 100%; } .story p.on, .story .more { animation: none; } }
 body:has(#as:checked) .story p { line-height: 1.75; }
 
@@ -345,7 +334,6 @@ body:has(#as:checked) .btn { letter-spacing: 0; text-transform: none; font-size:
 .done-wrap { flex: 1; overflow-y: auto; display: flex; flex-direction: column; align-items: center; padding: 30px 18px 20px; text-align: center; }
 .done-art { width: 150px; height: 124px; margin: 10px 0 12px; flex: none; }
 .done-wrap h1 { color: var(--gold-dark); font-size: 28px; margin: 0 0 4px; font-weight: 900; }
-@media (prefers-color-scheme: dark) { .done-wrap h1 { color: var(--gold); } }
 .sub { color: var(--ink-2); font-weight: 700; margin: 0 0 18px; font-size: 16px; }
 .mission-result { width: 100%; margin: 0 0 16px; padding: 14px 16px; border: 2px solid var(--gold); border-radius: 16px; background: var(--gold-soft); text-align: left; }
 .mission-result small { display: block; margin-bottom: 5px; color: var(--gold-dark); font-size: 11px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
@@ -460,7 +448,6 @@ body:has(#as:checked) .linkback small { letter-spacing: 0; text-transform: none;
 .map .pass-glow { fill: var(--gold); opacity: .3; animation: passPulse 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 .map .pass-mark { fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .map .lbl.passlbl { fill: var(--gold-dark); font-weight: 900; font-size: 12.5px; }
-@media (prefers-color-scheme: dark) { .map .lbl.passlbl { fill: var(--gold); } }
 @keyframes passPulse { 50% { transform: scale(1.35); opacity: .12; } }
 @media (prefers-reduced-motion: reduce) { .map .pass-glow { animation: none; } }
 .map .lbl { paint-order: stroke; stroke: var(--land); stroke-width: 4px; stroke-linejoin: round; }
@@ -498,7 +485,6 @@ html.no-motion *, html.no-motion *::before, html.no-motion *::after { animation:
 .map .river.main { stroke-width: 6; }
 .map .river.faint { stroke-width: 1.2; opacity: .45; }
 .map .lbl.river-lbl { fill: #2E6E93; font-style: italic; }
-@media (prefers-color-scheme: dark) { .map .lbl.river-lbl { fill: #8EC4E2; } }
 .map .lbl.big { font-size: 10px; letter-spacing: .14em; fill: var(--ink-3); font-weight: 900; }
 
 /* names from the shared list: tap to see what they mean */

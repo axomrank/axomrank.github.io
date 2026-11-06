@@ -158,7 +158,7 @@ Findings from reading the code:
 |---|---|---|
 | Skills, placement, drills, `variants` | The `skills`, `diagnostic` and `drill` paths already take a course id | Reuse. Check each one with a second course |
 | Typed answers | The `solve` keypad and its check accepted numbers only | **Done:** `input: "letters"` on a `solve` step |
-| Exercise-book look | Was hard-coded for Mathematics | **Done:** `AXOM.notebook(cid)` in `app/common.js`. No course field was needed, so Mathematics JSON stayed unchanged |
+| Shared scene styling | Was hard-coded for Mathematics | **Done:** `AXOM.notebook(cid)` in `app/common.js` marks both courses. They use the glass theme, and no course field was needed |
 | "Paintings" footer | Was hidden for Mathematics only | **Done:** uses `AXOM.notebook` |
 | New scenes | All scenes are built | **Done**, in `app/reasonstage.js` |
 | Widget list | `WIDGET_KINDS` is fixed in `scripts/build.py` | **Done.** Add each new scene |

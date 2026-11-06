@@ -24,6 +24,15 @@ Replace the path with whatever you need.
 | 62 images in `content/media/` (1.8 MB) | Files whose names appear nowhere in shipped content |
 | Ignored `.playwright-cli/`, `__pycache__/`, `.wrangler/` | Generated caches |
 
+## Removed with the interface redesign (2026-11-06)
+
+- `content/media/interface/brahmaputra-glass.webp` and its thumbnail: replaced by
+  `axom-river.webp`, built from it. See `docs/research/glass-interface-art.md`.
+- The exercise-book page styling in `app/math.css`: Mathematics and Reasoning now use
+  the glass theme. Their scenes and widgets stayed.
+- The dark-mode branches of `app/app.css` and `app/glass.css`: the interface is one
+  light theme painted over the river.
+
 ## Kept on purpose
 
 - `docs/research/` source and picture registers: the licence and attribution

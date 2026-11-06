@@ -38,10 +38,10 @@ window.playUnit = async function(k, lang, wrongTypes=[]){
   const seq=[]; let g=0; const wd=new Set();
   while($('#v-play').classList.contains('on') && g++<40){ const U=__L.run(); const it=U.queue[U.pos]; const w=!it.retry && wrongTypes.includes(it.s.type) && !wd.has(it.s.type); if(w) wd.add(it.s.type); seq.push((it.retry?'R:':'')+await solve(it.s,w)); await sl(8); }
   const done=$('#v-done').classList.contains('on'); const st=[...document.querySelectorAll('#done .stat .v')].map(v=>v.textContent.replace(/[০-৯]/g,'')).join('|');
-  click($('#done-btn')); await sl(10);
+  click($('#done-x')); await sl(10);
   return 'U'+(k+1)+' '+lang+' '+(done?'DONE':'STUCK')+' ['+st+'] '+seq.join(' ');
 };
-window.practise = async function(){ const b=$('#practise'); if(!b) return 'no practise card'; click(b); await sl(10); const seq=[]; let g=0; while($('#v-play').classList.contains('on') && g++<30){ const U=__L.run(); const it=U.queue[U.pos]; seq.push(await solve(it.s,false)); await sl(8);} const t=$('#done h1').textContent; click($('#done-btn')); await sl(10); return 'PRACTICE '+t+' :: '+seq.join(' '); };
+window.practise = async function(){ const b=$('#practise'); if(!b) return 'no practise card'; click(b); await sl(10); const seq=[]; let g=0; while($('#v-play').classList.contains('on') && g++<30){ const U=__L.run(); const it=U.queue[U.pos]; seq.push(await solve(it.s,false)); await sl(8);} const t=$('#done h1').textContent; click($('#done-x')); await sl(10); return 'PRACTICE '+t+' :: '+seq.join(' '); };
 window.playRun = async function(wrongEvery=0){ const seq=[]; let g=0; while($('#v-play').classList.contains('on') && g++<60){ const U=__L.run(); const it=U.queue[U.pos]; seq.push(await solve(it.s, wrongEvery && g%wrongEvery===0)); await sl(8);} return ($('#done h1')||{}).textContent+' :: '+seq.join(' '); };
 window.solveStep = solve;
 window.solverReady = true;

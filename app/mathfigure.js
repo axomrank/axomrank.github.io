@@ -10,7 +10,7 @@
 const { B, T, SFX } = window.AXOM;
 const W = window.AXOM_MATH.widgets;
 const $ = (s, r = document) => r.querySelector(s);
-const INK = "#16305C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F";
+const INK = "#1B272C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F";
 const short = (v) => +v.toFixed(2);
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 // A scene with one slider: redraw on change, freeze on check, jump for Show me.

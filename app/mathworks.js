@@ -9,7 +9,7 @@
 const { B, T, SFX } = window.AXOM;
 const W = window.AXOM_MATH.widgets;
 const $ = (s, r = document) => r.querySelector(s);
-const INK = "#16305C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", GRID = "#CFDDE8";
+const INK = "#1B272C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", GRID = "#CFDDE8";
 const OPEN = "([{", CLOSE = ")]}";
 const sign = (v) => (v > 0 ? `+${v}` : v < 0 ? `−${-v}` : "0");
 const short = (v) => +v.toFixed(2);

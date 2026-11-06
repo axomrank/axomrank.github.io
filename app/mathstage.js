@@ -11,7 +11,7 @@
 const { B, T, SFX } = window.AXOM;
 const W = window.AXOM_MATH.widgets;
 const $ = (s, r = document) => r.querySelector(s);
-const INK = "#16305C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", FAINT = "#7E93AE";
+const INK = "#1B272C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", FAINT = "#7E93AE";
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
 const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
@@ -60,13 +60,13 @@ W.line = (el, w, on) => {
     homeS = (width - 36) / (hi - lo); if (keep || scale < homeS) scale = homeS;
     dirty = true;
   }
-  function text(s, x, y, color, font = "800 13px Nunito, sans-serif", a = "center") { g.font = font; g.fillStyle = color; g.textAlign = a; g.fillText(s, x, y); }
+  function text(s, x, y, color, font = "800 13px Noto Sans, sans-serif", a = "center") { g.font = font; g.fillStyle = color; g.textAlign = a; g.fillText(s, x, y); }
   function fraction(p, q, x, y, color) {
     const neg = p < 0, n = String(Math.abs(p)), d = String(q);
-    g.font = "800 12px Nunito, sans-serif"; const bar = Math.max(g.measureText(n).width, g.measureText(d).width) + 3;
-    text(n, x, y, color, "800 12px Nunito, sans-serif"); text(d, x, y + 14, color, "800 12px Nunito, sans-serif");
+    g.font = "800 12px Noto Sans, sans-serif"; const bar = Math.max(g.measureText(n).width, g.measureText(d).width) + 3;
+    text(n, x, y, color, "800 12px Noto Sans, sans-serif"); text(d, x, y + 14, color, "800 12px Noto Sans, sans-serif");
     g.strokeStyle = color; g.lineWidth = 1.4; g.beginPath(); g.moveTo(x - bar / 2, y + 3); g.lineTo(x + bar / 2, y + 3); g.stroke();
-    if (neg) text("−", x - bar / 2 - 6, y + 6, color, "800 12px Nunito, sans-serif");
+    if (neg) text("−", x - bar / 2 - 6, y + 6, color, "800 12px Noto Sans, sans-serif");
   }
   const pinMark = (x, color, big) => { g.fillStyle = color; g.beginPath(); g.moveTo(x, AXIS - 3); g.lineTo(x - (big ? 9 : 6), AXIS - (big ? 19 : 14)); g.lineTo(x + (big ? 9 : 6), AXIS - (big ? 19 : 14)); g.closePath(); g.fill(); };
   function draw() {
@@ -82,7 +82,7 @@ W.line = (el, w, on) => {
       for (let k = 0; k <= 10; k++) { const x = x0 + (k / 10) * (x1 - x0); g.lineWidth = 1; g.beginPath(); g.moveTo(x, Y - 4); g.lineTo(x, Y + 4); g.stroke(); }
       g.strokeStyle = BLUE; g.lineWidth = 5; g.beginPath(); g.moveTo(wa, Y); g.lineTo(wb, Y); g.stroke();
       const dp = Math.max(0, -Math.round(Math.log10(wide)));
-      text(fmt(a, dp), x0, Y - 9, FAINT, "800 11px Nunito, sans-serif", "left"); text(fmt(a + wide, dp), x1, Y - 9, FAINT, "800 11px Nunito, sans-serif", "right");
+      text(fmt(a, dp), x0, Y - 9, FAINT, "800 11px Noto Sans, sans-serif", "left"); text(fmt(a + wide, dp), x1, Y - 9, FAINT, "800 11px Noto Sans, sans-serif", "right");
     }
     // the two halves of the line
     g.lineCap = "round"; g.lineWidth = 5;
@@ -99,7 +99,7 @@ W.line = (el, w, on) => {
       const h = ten ? 15 : five ? 10 : 6; g.beginPath(); g.moveTo(x, AXIS - h); g.lineTo(x, AXIS + h * 0.5); g.stroke();
       const a = ten ? 1 : five ? smooth(20, 34, px * 5) * 0.9 * smooth(5.5, 8, px) : smooth(33, 48, px);
       g.globalAlpha = Math.min(1, a);
-      if (a > 0.02) text(fmt(clean(v), ten ? dpOf(step * 10) : dpOf(step)), x, AXIS - 23, color, ten ? "900 15px Nunito, sans-serif" : "800 12.5px Nunito, sans-serif");
+      if (a > 0.02) text(fmt(clean(v), ten ? dpOf(step * 10) : dpOf(step)), x, AXIS - 23, color, ten ? "900 15px Noto Sans, sans-serif" : "800 12.5px Noto Sans, sans-serif");
       g.globalAlpha = 1;
     }
     // fractions wait until they have room: the same points, named by cutting
@@ -115,21 +115,21 @@ W.line = (el, w, on) => {
           fraction(p, q, x, AXIS + 33, GREEN); g.globalAlpha = 1;
         }
       }
-      if (scale >= 18) for (let n = Math.ceil(left); n <= Math.floor(right); n++) if (n && scale > 150 && !taken.some((t) => Math.abs(t - X(n)) < 20)) text(minus(n), X(n), AXIS + 36, n < 0 ? RED : BLUE, "900 13px Nunito, sans-serif");
+      if (scale >= 18) for (let n = Math.ceil(left); n <= Math.floor(right); n++) if (n && scale > 150 && !taken.some((t) => Math.abs(t - X(n)) < 20)) text(minus(n), X(n), AXIS + 36, n < 0 ? RED : BLUE, "900 13px Noto Sans, sans-serif");
     }
     // zero, the mirror between the two halves
     if (zero > -20 && zero < width + 20) {
       g.strokeStyle = GOLD; g.lineWidth = 4; g.beginPath(); g.moveTo(zero, AXIS - 24); g.lineTo(zero, AXIS + 16); g.stroke();
-      g.fillStyle = GOLD; g.beginPath(); g.arc(zero, AXIS - 34, 11, 0, 7); g.fill(); text("0", zero, AXIS - 29.5, "#fff", "900 14px Nunito, sans-serif");
+      g.fillStyle = GOLD; g.beginPath(); g.arc(zero, AXIS - 34, 11, 0, 7); g.fill(); text("0", zero, AXIS - 29.5, "#fff", "900 14px Noto Sans, sans-serif");
     }
-    if (w.pin) { const x = X(w.pin.v); pinMark(x, GREEN, true); if (w.pin.t) text(w.pin.t, clamp(x, 18, width - 18), AXIS - 46, GREEN, "900 13px Nunito, sans-serif"); }
+    if (w.pin) { const x = X(w.pin.v); pinMark(x, GREEN, true); if (w.pin.t) text(w.pin.t, clamp(x, 18, width - 18), AXIS - 46, GREEN, "900 13px Noto Sans, sans-serif"); }
     if (value != null) {
       const x = X(value), color = value < 0 ? RED : value > 0 ? BLUE : GOLD;
       if (w.mirror && value) {
         const m = X(-value), mid = (x + m) / 2, r = Math.abs(x - m) / 2;
         g.strokeStyle = "rgba(216,147,11,.75)"; g.lineWidth = 2; g.setLineDash([5, 5]); g.beginPath(); g.ellipse(mid, AXIS, r, Math.min(r, 52), 0, Math.PI, 0); g.stroke(); g.setLineDash([]);
         pinMark(m, value > 0 ? "rgba(211,50,63,.55)" : "rgba(31,95,191,.55)", false);
-        text(fmt(-value, dpOf(step)), clamp(m, 16, width - 16), AXIS - 24, value > 0 ? RED : BLUE, "900 13px Nunito, sans-serif");
+        text(fmt(-value, dpOf(step)), clamp(m, 16, width - 16), AXIS - 24, value > 0 ? RED : BLUE, "900 13px Noto Sans, sans-serif");
       }
       pinMark(x, color, true);
       g.fillStyle = color; g.beginPath(); g.arc(clamp(x, 8, width - 8), AXIS, 7, 0, 7); g.fill();

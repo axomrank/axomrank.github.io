@@ -8,7 +8,7 @@
 const { B, T, SFX } = window.AXOM;
 const W = window.AXOM_MATH.widgets;
 const $ = (s, r = document) => r.querySelector(s);
-const INK = "#16305C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", GRID = "#CFDDE8", FAINT = "#7E93AE";
+const INK = "#1B272C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", GRID = "#CFDDE8", FAINT = "#7E93AE";
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const drag = (svg, move) => {
   let on = false;

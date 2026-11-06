@@ -20,22 +20,24 @@ const ROOF = '<svg class="roof" viewBox="0 0 320 26" preserveAspectRatio="none">
 const STAR = { A: "★★★", B: "★★", C: "★" };
 const ALL_TABS = { lessons: B("Lessons", "পাঠ"), timeline: B("Timeline", "সময়ৰেখা"), family: B("Family", "বংশ"), profile: B("Profile", "প্ৰফাইল"), skills: B("My map", "মোৰ মানচিত্ৰ") };
 const CID = (params.get("course") || "").replace(/[^a-z0-9-]/g, "");   // empty = show the hub
+const VIEW = ["practice", "profile"].includes(params.get("view")) ? params.get("view") : "";   // the two bottom-bar pages
 
 document.body.insertAdjacentHTML("afterbegin", `
 <input type="checkbox" id="as" aria-label="Show in Assamese">
 <div class="stage"><div class="device home-page">
   <div class="view on" id="v-home">
     <div class="p-top">
-      <label class="lang" for="as"><span class="en">অ</span><span class="as">EN</span></label>
+      <a class="brand" href="index.html">Axomrank</a>
       <button class="chip-top hidden" id="install">${ICON.download}${T(B("Install", "ইনষ্টল"))}</button>
       <span class="spacer"></span>
       <span class="fire" id="fire"></span>
       <span class="gem" id="gem"></span>
       <button class="icon-btn hidden" id="account" aria-label="Account"></button>
-      <button class="icon-btn" id="settings" aria-label="Settings">${ICON.gear}</button>
+      ${AXOM.LANG}
     </div>
     <div class="p-scroll" id="scroll"><div id="course"></div></div>
     <a class="continue-bar hidden" id="continue"></a>
+    ${AXOM.nav(VIEW || (CID || (params.get("subject") || "") ? "learn" : "home"))}
   </div>
   <div class="toast" id="toast"></div>
   <div id="sheet-root"></div>
@@ -147,7 +149,40 @@ async function subjectPage() {
     ${reviewCard()}${S.intro ? `<p class="tab-intro">${T(S.intro)}</p>` : ""}<div class="course-list">${rows}</div>${FOOT}`;
   $("#continue").classList.add("hidden");
 }
+/* ---------- Practice: what is due, what was missed, and the skill maps ---------- */
+async function practicePage() {
+  const D = await load(), { m } = D;
+  const missed = Object.entries(G.mistakes).filter(([id, list]) => list.length && m.lessons[id]).sort((a, b) => b[1].length - a[1].length);
+  const maps = Object.values(D.courses).filter((c) => c.skills && !c.archived && !c.draft);
+  const rows = missed.slice(0, 8).map(([id, list]) => `<a class="acc-row" href="lesson.html?id=${id}"><span>${T(m.lessons[id].title)}</span><span class="note">${T(B(`${list.length} to revise`, `${asNum(list.length)}টা ভুল`))}</span><b>›</b></a>`).join("");
+  $("#course").innerHTML = `<section class="home-hero"><h1>${T(B("Practice", "অনুশীলন"))}</h1><p>${T(B("Bring back what you learned, in short rounds.", "যি শিকিলা, চমু পৰ্যায়ত আকৌ মনত পেলোৱা।"))}</p></section>
+    ${reviewCard() || `<div class="card"><h3>${T(B("Daily memory mission", "দৈনিক স্মৃতি অভিযান"))}</h3><p class="note">${T(B("Nothing is due today. Finish a unit and its questions come back here.", "আজি একো বাকী নাই। এটা অধ্যায় শেষ কৰিলে তাৰ প্ৰশ্নবোৰ ইয়াত উভতি আহিব।"))}</p></div>`}
+    ${rows ? `<div class="card"><h3>${T(B("Your mistakes", "তোমাৰ ভুলবোৰ"))}</h3>${rows}</div>` : ""}
+    ${maps.length ? `<div class="card"><h3>${T(B("Skill maps", "দক্ষতাৰ মানচিত্ৰ"))}</h3>${maps.map((c) => `<a class="acc-row" href="index.html?course=${c.id}&tab=skills"><span>${T(c.title)}</span><b>›</b></a>`).join("")}</div>` : ""}${FOOT}`;
+  $("#continue").classList.add("hidden");
+}
+
+/* ---------- Profile: totals across every course, activity, account and settings ---------- */
+const activity = () => [...Array(35).keys()].reverse().map((i) => AXOM.iso(-i)).map((d) => { const xp = G.days[d] || 0; return `<i class="${xp ? (xp >= 60 ? "l3" : xp >= 30 ? "l2" : "l1") : ""}" title="${d}: ${xp} XP"></i>`; }).join("");
+const accountNote = () => { const user = AXOM.auth.user; return user ? T(B(`Signed in as ${user.name || "you"}. Progress syncs across devices.`, `${user.name || "তুমি"} হিচাপে চাইন ইন। অগ্ৰগতি সকলো ডিভাইচত মিলে।`)) : T(B("Not signed in. Progress is saved on this device only.", "চাইন ইন কৰা নাই। অগ্ৰগতি কেৱল এই ডিভাইচত সাঁচি থোৱা হয়।")); };
+async function profilePage() {
+  const D = await load(), { m } = D;
+  const tot = Object.values(G.stats).reduce((a, s) => ({ a: a.a + s.a, o: a.o + s.o }), { a: 0, o: 0 });
+  const finished = Object.keys(m.lessons).filter((id) => AXOM.getLesson(id).done.test).length;
+  $("#course").innerHTML = `<section class="home-hero"><h1>${T(B("Profile", "প্ৰফাইল"))}</h1><p>${T(B("Your progress on this device and account.", "এই ডিভাইচ আৰু একাউণ্টত তোমাৰ অগ্ৰগতি।"))}</p></section>
+    <div class="pf-stats">
+      <div class="stat" style="--c:var(--gold)"><div class="h">XP</div><div class="v">${N(G.xp)}</div></div>
+      <div class="stat" style="--c:var(--terra)"><div class="h">${T(B("Streak", "ধাৰা"))}</div><div class="v">${N(AXOM.streakNow())}</div></div>
+      <div class="stat" style="--c:var(--good)"><div class="h">${T(B("Accuracy", "শুদ্ধতা"))}</div><div class="v">${tot.a ? N(Math.round((tot.o / tot.a) * 100)) + "%" : "–"}</div></div>
+    </div>
+    <div class="card"><h3>${T(B("Lessons finished", "সম্পূৰ্ণ পাঠ"))}</h3><p class="big-num">${N(finished)} <span>/ ${N(Object.keys(m.lessons).length)}</span></p></div>
+    <div class="card"><h3>${T(B("Last 5 weeks", "শেহতীয়া ৫ সপ্তাহ"))}</h3><div class="cal">${activity()}</div></div>
+    <div class="card"><h3>${T(B("Account", "একাউণ্ট"))}</h3><p class="note">${accountNote()}</p></div>
+    <button class="btn" id="settings">${ICON.gear}${T(B("Settings", "ছেটিং"))}</button>${FOOT}`;
+  $("#continue").classList.add("hidden");
+}
 async function render() {
+  if (VIEW) return VIEW === "practice" ? practicePage() : profilePage();
   if (!CID) return SID ? subjectPage() : homePage();
   if (!course) { const D = await load(); course = D.courses[CID]; info = D.m.lessons; const redirect = D.cat.course_redirects?.[CID]; if (redirect) { location.replace(`index.html?course=${redirect}${UNLOCK_ALL ? "&all" : ""}`); return; } if (!course) { location.replace("index.html"); return; } }
   if (CID === "assam-history" && params.get("tab") !== "overview") {
@@ -288,22 +323,19 @@ function profileTab(status, byNo) {
   const finished = lessonIds.filter((id) => AXOM.getLesson(id).done.test).length;
   const tot = Object.values(G.stats).reduce((a, s) => ({ a: a.a + s.a, o: a.o + s.o }), { a: 0, o: 0 });
   const acc = tot.a ? Math.round((tot.o / tot.a) * 100) : 0;
-  const days = [...Array(35).keys()].reverse().map((i) => AXOM.iso(-i));
-  const cal = days.map((d) => { const xp = G.days[d] || 0; return `<i class="${xp ? (xp >= 60 ? "l3" : xp >= 30 ? "l2" : "l1") : ""}" title="${d}: ${xp} XP"></i>`; }).join("");
   const nameOf = (id) => (course.kings.find((k) => k.lesson === id) || { name: B(id, id) }).name;
   const perLesson = Object.entries(G.stats).filter(([id]) => info[id]).map(([id, s]) => ({ id, pct: Math.round((s.o / s.a) * 100), a: s.a })).sort((x, y) => x.pct - y.pct);
   const weak = perLesson.filter((x) => x.a >= 5 && x.pct < 80).slice(0, 3);
-  const user = AXOM.auth.user;
   return `<div class="pf-stats">
       <div class="stat" style="--c:var(--gold)"><div class="h">XP</div><div class="v">${N(G.xp)}</div></div>
-      <div class="stat" style="--c:var(--terra)"><div class="h">${T(B("Streak", "ধাৰা"))}</div><div class="v">${N(AXOM.streakNow())}🔥</div></div>
+      <div class="stat" style="--c:var(--terra)"><div class="h">${T(B("Streak", "ধাৰা"))}</div><div class="v">${N(AXOM.streakNow())}</div></div>
       <div class="stat" style="--c:var(--good)"><div class="h">${T(B("Accuracy", "শুদ্ধতা"))}</div><div class="v">${tot.a ? N(acc) + "%" : "–"}</div></div>
     </div>
     <div class="card"><h3>${T(B("Lessons finished", "সম্পূৰ্ণ পাঠ"))}</h3><p class="big-num">${N(finished)} <span>/ ${N(course.kings.length)}</span></p></div>
-    <div class="card"><h3>${T(B("Last 5 weeks", "শেহতীয়া ৫ সপ্তাহ"))}</h3><div class="cal">${cal}</div></div>
+    <div class="card"><h3>${T(B("Last 5 weeks", "শেহতীয়া ৫ সপ্তাহ"))}</h3><div class="cal">${activity()}</div></div>
     ${perLesson.length ? `<div class="card"><h3>${T(B("Accuracy by lesson", "পাঠ অনুসৰি শুদ্ধতা"))}</h3>${perLesson.map((x) => `<a class="acc-row" href="lesson.html?id=${x.id}"><span>${T(nameOf(x.id))}</span><span class="acc-bar"><i style="--p:${x.pct}%;width:${x.pct}%" class="${x.pct < 60 ? "low" : x.pct < 80 ? "mid" : ""}"></i></span><b>${N(x.pct)}%</b></a>`).join("")}</div>` : ""}
     ${weak.length ? `<div class="card"><h3>${T(B("Revise next", "পিছত পুনৰ চোৱা"))}</h3>${weak.map((x) => `<a class="acc-row" href="lesson.html?id=${x.id}"><span>${T(nameOf(x.id))}</span><span class="note">${N(x.pct)}%</span><b>›</b></a>`).join("")}</div>` : ""}
-    <div class="card"><h3>${T(B("Account", "একাউণ্ট"))}</h3><p class="note">${user ? T(B(`Signed in as ${user.name || "you"}. Progress syncs across devices.`, `${user.name || "তুমি"} হিচাপে চাইন ইন। অগ্ৰগতি সকলো ডিভাইচত মিলে।`)) : T(B("Not signed in. Progress is saved on this device only.", "চাইন ইন কৰা নাই। অগ্ৰগতি কেৱল এই ডিভাইচত সাঁচি থোৱা হয়।"))}</p></div>`;
+    <div class="card"><h3>${T(B("Account", "একাউণ্ট"))}</h3><p class="note">${accountNote()}</p></div>`;
 }
 
 /* ---------- events ---------- */

@@ -10,7 +10,7 @@
 const { B, T, SFX } = window.AXOM;
 const W = window.AXOM_MATH.widgets;
 const $ = (s, r = document) => r.querySelector(s);
-const INK = "#16305C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", FAINT = "#7E93AE";
+const INK = "#1B272C", BLUE = "#1F5FBF", RED = "#D3323F", GOLD = "#D8930B", GREEN = "#0F8A5F", FAINT = "#7E93AE";
 const AZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const encode = (word, k) => [...word].map((c) => (AZ.includes(c) ? AZ[(AZ.indexOf(c) + k + 2600) % 26] : c)).join("");
 let uid = 0;

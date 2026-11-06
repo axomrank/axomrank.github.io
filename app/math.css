@@ -1,66 +1,33 @@
 /* =========================================================
-   The maths exercise book: squared paper, a red margin, ballpoint ink.
-   Applies only with html.maths. It re-points the app's tokens rather than
-   fighting them, so every shared component follows without extra rules.
-   Colour meaning: blue positive, red negative, gold zero, green fractions.
+   Scenes and widgets for Mathematics and Reasoning (app/math*.js, app/reasonstage.js).
+   Pages, cards, buttons and answers come from the shared glass theme in app/glass.css.
+   html.maths only marks these two courses, so their scenes get a clearer card.
+   Colour meaning in scenes: blue positive, red negative, gold zero, green fractions.
    ========================================================= */
-html.maths {
-  color-scheme: light;
-  --paper: #F7FAFC; --grid: #DCE8F0; --margin: #E8808A; --ink-pen: #16305C; --pos: #1F5FBF; --neg: #D3323F; --nil: #D8930B; --frac: #0F8A5F;
-  --bg: var(--paper); --surface: #FFFFFF; --surface-2: #E9F0F5; --ink: var(--ink-pen); --ink-2: #3D5474; --ink-3: #62789A;
-  --line: #CFDDE8; --line-2: #A9BFD2; --terra: var(--neg); --terra-dark: #A81F2B; --terra-soft: #FBE4E6;
-  --indigo: var(--pos); --indigo-dark: #174A97; --indigo-soft: #E2ECFA; --gold: var(--nil); --gold-dark: #94640A; --gold-soft: #FCEFD2;
-  --good: var(--frac); --good-dark: #0A6A48; --good-soft: #DEF4EA; --good-ink: #0A5C3F; --bad: var(--neg); --bad-dark: #A81F2B; --bad-soft: #FBE4E6; --bad-ink: #8F1A25;
-  --locked: #E4ECF2; --locked-dark: #BCCDDB; --stage: #D5E2EC;
-  --glass: #FFFFFF; --glass-strong: #FFFFFF; --glass-edge: #CFDDE8; --glass-shadow: none; --glass-blur: none;
-}
-html.maths body { background: var(--stage); }
-html.maths .device {
-  background: linear-gradient(90deg, transparent 13px, var(--margin) 13px, var(--margin) 14.5px, transparent 14.5px),
-    linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 22px 22px, linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 22px 22px, var(--paper);
-  border-color: var(--line);
-}
-html.maths .device::before, html.maths .device::after, html.maths :is(.top, .p-top)::after { display: none; }
-html.maths :is(.top, .p-top) { background: transparent; border: 0; box-shadow: none; margin: 4px 10px 0 20px; padding: 6px 4px; }
-html.maths :is(.hero, .king, .sec-banner, .course-row, .review-card, .cp-card, .card, .era-head, .tabs, .pop, .sheet, .stat) { background: #fff; border: 1px solid var(--line); box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
-html.maths .c-hero { background: var(--ink-pen); }
-html.maths .screen { background: transparent; border: 0; border-radius: 0; margin: 0 0 0 16px; padding: 10px 14px 18px 8px; -webkit-backdrop-filter: none; backdrop-filter: none; }
-html.maths .foot { background: rgba(247,250,252,.96); border: 0; border-top: 2px solid var(--ink-pen); border-radius: 0; margin: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
-html.maths .foot.fb-good { background: var(--good-soft); border-top-color: var(--frac); }
-html.maths .foot.fb-bad { background: var(--bad-soft); border-top-color: var(--neg); }
-html.maths .btn { background: var(--ink-pen); color: #fff; border: 0; border-radius: 10px; box-shadow: 0 4px 0 #0B1E3F; }
-html.maths .foot.fb-good .btn { background: var(--frac); box-shadow: 0 4px 0 #0A6A48; }
-html.maths .foot.fb-bad .btn { background: var(--neg); box-shadow: 0 4px 0 #A81F2B; }
-html.maths .btn:disabled { background: var(--locked); color: var(--ink-3); box-shadow: none; }
-html.maths .kicker { text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 800; color: var(--neg); }
-html.maths h1.t { font-size: 25px; line-height: 1.18; font-weight: 900; color: var(--ink-pen); }
-html.maths .story p, html.maths .prompt { color: var(--ink-pen); }
-html.maths .story .lede { font-size: 17px; line-height: 1.42; font-weight: 700; }
-html.maths .tile { background: #fff; border: 1.5px solid var(--line-2); border-bottom-width: 3px; border-radius: 9px; color: var(--ink-pen); }
-html.maths .tile.sel { background: var(--indigo-soft); border-color: var(--pos); color: var(--pos); }
-html.maths .tile.right { background: var(--good-soft); border-color: var(--frac); color: var(--good-ink); }
-html.maths .tile.wrong { background: var(--bad-soft); border-color: var(--neg); color: var(--bad-ink); }
-html.maths .fb { color: var(--ink-pen); }
-html.maths .wx { background: transparent; border: 0; padding: 0; gap: 10px; }
-html.maths .ans-box { background: #fff; border: 0; border-bottom: 3px solid var(--ink-pen); border-radius: 0; color: var(--pos); font-size: 30px; }
+html.maths { --ink-pen: #1B272C; --pos: #1F5FBF; --neg: #D3323F; --nil: #D8930B; --frac: #0F8A5F; }
+html.maths :is(.screen, .story-card) { background: rgba(255,255,255,.88); }
+.wx { gap: 10px; }
+html.maths .wx { background: transparent; border: 0; padding: 0; }
+html.maths .ans-box { background: #fff; border: 1.5px solid var(--line-2); border-radius: 16px; color: var(--pos); font-size: 30px; }
 html.maths .kp { gap: 6px; }
 
 /* Number line: the one bold thing. It runs edge to edge across the page. */
-html.maths .wx-line { margin: 0 -14px 0 -8px; }
+html.maths .wx-line { margin: 0 -16px; }
+html.maths .story-card .wx-line { margin: 0 -18px; }
 .nl { display: block; width: 100%; height: 216px; touch-action: none; cursor: grab; background: rgba(255,255,255,.72); border-block: 1.5px solid var(--line-2, #A9BFD2); }
 .nl:active { cursor: grabbing; }
 .nl-read { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 8px; min-height: 40px; padding: 6px 12px 0; font-size: 22px; font-weight: 800; }
 .nl-read .pos { color: #1F5FBF; } .nl-read .neg { color: #D3323F; } .nl-read .zero { color: #94640A; } .nl-read .fr { color: #0F8A5F; }
 .nl-tools { display: flex; justify-content: center; gap: 8px; padding: 0 12px; }
-.nl-b { min-width: 46px; height: 42px; padding: 0 12px; border: 1.5px solid #16305C; border-bottom-width: 3px; border-radius: 9px; background: #fff; color: #16305C; font-weight: 900; font-size: 18px; cursor: pointer; touch-action: manipulation; }
-.nl-b.wide { background: #16305C; color: #fff; font-size: 15px; flex: 0 1 180px; }
-.nl-b:focus-visible, .tile:focus-visible { outline: 3px solid #D8930B; outline-offset: 2px; }
+.nl-b { min-width: 46px; height: 42px; padding: 0 14px; border: 1.5px solid var(--line-2, #B4C5C6); border-radius: 99px; background: #fff; color: #1B272C; font-weight: 900; font-size: 18px; cursor: pointer; touch-action: manipulation; }
+.nl-b.wide { background: linear-gradient(180deg, #e9333b, #c5141f); border-color: transparent; color: #fff; font-size: 15px; font-weight: 600; flex: 0 1 180px; }
+.nl-b:focus-visible, .tile:focus-visible { outline: 3px solid #d8202b; outline-offset: 2px; }
 
 /* Do-to-discover cards: an instruction, then the insight it earned. */
 .tasks { display: grid; gap: 8px; margin-top: 10px; }
-.task { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; padding: 10px 12px; background: #16305C; color: #fff; font-weight: 800; font-size: 16px; line-height: 1.35; border-radius: 3px 12px 12px 3px; }
-.task button { background: none; border: 0; color: #FFD27A; font-weight: 800; font-size: 14px; cursor: pointer; white-space: nowrap; text-decoration: underline; }
-.found { padding: 7px 0 7px 12px; border-left: 4px solid #0F8A5F; font-size: 16px; font-weight: 700; line-height: 1.4; color: #16305C; animation: up .25s ease; }
+.task { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; padding: 10px 14px; background: linear-gradient(100deg, rgba(198,233,209,.8), rgba(235,246,236,.7)); border: 1px solid rgba(255,255,255,.86); color: #1B272C; font-weight: 600; font-size: 15.5px; line-height: 1.35; border-radius: 18px; }
+.task button { background: none; border: 0; color: #b0121d; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap; text-decoration: underline; }
+.found { padding: 7px 0 7px 12px; border-left: 3px solid #0F8A5F; font-size: 15.5px; font-weight: 500; line-height: 1.4; color: #1B272C; animation: up .25s ease; }
 .pips { display: flex; gap: 5px; } .pips i { width: 20px; height: 5px; border-radius: 3px; background: #CFDDE8; } .pips i.on { background: #0F8A5F; }
 
 /* Scenes */
@@ -74,73 +41,60 @@ html.maths .wx-line { margin: 0 -14px 0 -8px; }
 .gears { width: min(100%, 340px); margin: 0 auto; display: block; }
 .wx-gears.meet .gears .mk { fill: #D3323F; }
 .gr-row { display: flex; align-items: center; gap: 12px; justify-content: center; }
-.gr-go { padding: 10px 16px; font-size: 16px; font-weight: 900; background: #16305C !important; color: #fff !important; border-color: #0B1E3F !important; }
+.gr-go { padding: 10px 18px; font-size: 16px; font-weight: 600; background: linear-gradient(180deg, #e9333b, #c5141f) !important; color: #fff !important; border: 0 !important; border-radius: 99px; }
 .gr-go:disabled { opacity: .4; }
-.gr-n { min-width: 40px; font-size: 26px; font-weight: 900; color: #16305C; text-align: center; }
+.gr-n { min-width: 40px; font-size: 26px; font-weight: 900; color: #1B272C; text-align: center; }
 .gr-strip { display: flex; flex-wrap: wrap; gap: 2px; justify-content: center; }
-.gr-strip i { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 4px; background: #fff; border: 1px solid #CFDDE8; font: 800 11px Nunito, sans-serif; color: #fff; }
+.gr-strip i { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 4px; background: #fff; border: 1px solid #CFDDE8; font: 800 11px Noto Sans, sans-serif; color: #fff; }
 .gr-strip i.a { background: #1F5FBF; } .gr-strip i.b { background: #D8930B; } .gr-strip i.ab { background: #D3323F; }
 .tl { display: block; width: min(100%, 320px); margin: 0 auto; }
 .tl-s { animation: up .25s ease; }
 .wx-tiles { justify-items: center; }
-.tl-log { font-size: 18px; font-weight: 800; color: #16305C; text-align: center; min-height: 28px; } .tl-log .pos { color: #0F8A5F; }
+.tl-log { font-size: 18px; font-weight: 800; color: #1B272C; text-align: center; min-height: 28px; } .tl-log .pos { color: #0F8A5F; }
 .dl { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 10px; align-items: center; }
 .dl-side { display: grid; gap: 8px; }
-.dl-list { display: grid; gap: 3px; max-height: 150px; overflow: auto; font-size: 14px; font-weight: 700; color: #16305C; }
+.dl-list { display: grid; gap: 3px; max-height: 150px; overflow: auto; font-size: 14px; font-weight: 700; color: #1B272C; }
 .dl-list .again { color: #D3323F; font-weight: 900; }
 .ct { display: block; width: 100%; }
-.ct-read, .ar-read2, .du-read { color: #16305C; } .ct-read .pos { color: #0F8A5F; }
+.ct-read, .ar-read2, .du-read { color: #1B272C; } .ct-read .pos { color: #0F8A5F; }
 .ar { display: block; width: min(100%, 300px); margin: 0 auto; }
-.sl { display: grid; font-weight: 800; color: #16305C; } .sl b { color: #1F5FBF; }
+.sl { display: grid; font-weight: 800; color: #1B272C; } .sl b { color: #1F5FBF; }
 .dualr { display: block; width: 100%; touch-action: none; cursor: ew-resize; }
-@media (min-width: 900px) { html.maths .wx-line { margin: 0; } }
 /* Read, then act: the sentence sits above the scene, the task right under the thumb. */
-html.maths .screen:has(.tasks) { display: flex; flex-direction: column; }
-html.maths .screen:has(.tasks) .story { order: 1; margin-bottom: 8px; }
-html.maths .screen:has(.tasks) .story-wx { order: 2; margin-bottom: 0; }
-html.maths .screen:has(.tasks) .tasks { order: 3; }
-html.maths .foot { width: 100%; }
-html.maths .screen:has(.tasks) .kicker { order: -1; margin-bottom: 2px; }
-html.maths .screen:has(.tasks) h1.t { order: 0; margin-bottom: 6px; }
-/* Progress is a straight pen line across the page, not the ring used elsewhere. */
-html.maths .top .bar { flex: 1; width: auto; height: 8px; margin: 0 10px; padding: 0; border: 0; border-radius: 4px; background: #DCE8F0; box-shadow: none; overflow: hidden; }
-html.maths .top .bar::before, html.maths .top .bar::after { display: none; }
-html.maths .top .bar i { display: block; position: static; height: 100%; min-height: 0; background: #0F8A5F; border-radius: 4px; transform: none; mask: none; -webkit-mask: none; }
-html.maths .top .bar { height: 8px !important; min-height: 0 !important; align-self: center; aspect-ratio: auto !important; }
-html.maths .top .bar i { height: 8px !important; max-height: 8px; }
+.story-card:has(.tasks) { display: flex; flex-direction: column; }
+.story-card:has(.tasks) .story:not(.kicker) { order: 1; margin-bottom: 8px; }
+.story-card:has(.tasks) .story-wx { order: 2; margin-bottom: 0; }
+.story-card:has(.tasks) .tasks { order: 3; }
+.story-card:has(.tasks) :is(.linkback, .src-link) { order: 4; }
 html.maths .wx-range { accent-color: #1F5FBF; }
-html.maths .node-label { text-shadow: none; color: #16305C; }
-html.maths .node-label.locked { color: #62789A; }
-html.maths .hero .meter { display: none; }
 /* Balance and scale scenes */
 .rayv { display: block; width: min(100%, 320px); margin: 0 auto; touch-action: none; cursor: pointer; }
 .levelv, .sawv, .chv { display: block; width: 100%; touch-action: none; cursor: ns-resize; }
 .sawv { cursor: ew-resize; } .chv { cursor: default; }
-.ray-read, .saw-read, .ch-read { color: #16305C; font-size: 17px; }
+.ray-read, .saw-read, .ch-read { color: #1B272C; font-size: 17px; }
 .ray-read .yes, .saw-read .yes, .ch-read .yes { color: #0F8A5F; } .ray-read .no, .saw-read .no { color: #D3323F; }
-.lv-sums { display: flex; justify-content: center; align-items: baseline; gap: 12px; font-size: 16px; font-weight: 800; color: #16305C; }
+.lv-sums { display: flex; justify-content: center; align-items: baseline; gap: 12px; font-size: 16px; font-weight: 800; color: #1B272C; }
 .lv-sums .pos b { color: #1F5FBF; font-size: 22px; } .lv-sums .neg b { color: #D3323F; font-size: 22px; }
 .lv-sums .ok { color: #0F8A5F; font-size: 26px; font-weight: 900; } .lv-sums .ne { color: #62789A; font-size: 22px; }
 .ch-keys { display: flex; justify-content: space-around; gap: 10px; }
-.ch-keys span { display: flex; align-items: center; gap: 8px; font-size: 18px; color: #16305C; }
+.ch-keys span { display: flex; align-items: center; gap: 8px; font-size: 18px; color: #1B272C; }
 .ch-keys .tile { width: 42px; height: 38px; font-size: 20px; }
-html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 /* Working and money scenes */
 .ord-log { display: grid; gap: 2px; min-height: 0; font-size: 17px; font-weight: 700; color: #62789A; }
-.ord-now { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; padding: 8px 0; font-size: 25px; font-weight: 900; color: #16305C; }
+.ord-now { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; padding: 8px 0; font-size: 25px; font-weight: 900; color: #1B272C; }
 .ord-now .br { color: #62789A; font-weight: 700; }
 .ord-now b { color: #0F8A5F; font-size: 30px; }
-.op { min-width: 42px; height: 44px; border: 1.5px solid #16305C; border-bottom-width: 3px; border-radius: 9px; background: #fff; color: #D3323F; font: 900 24px Nunito, sans-serif; cursor: pointer; touch-action: manipulation; }
+.op { min-width: 42px; height: 44px; border: 1.5px solid var(--line-2, #B4C5C6); border-radius: 14px; background: #fff; color: #D3323F; font: 900 24px Noto Sans, sans-serif; cursor: pointer; touch-action: manipulation; }
 .op.no { animation: mx-shake .35s; border-color: #D3323F; background: #FBE4E6; }
 .ord-note { min-height: 22px; font-size: 15px; font-weight: 800; color: #D3323F; }
 .sqv { display: block; width: min(100%, 210px); margin: 0 auto; }
-.sq-read, .df-read, .pr-read, .ld-read, .ts-read { color: #16305C; font-size: 18px; }
+.sq-read, .df-read, .pr-read, .ld-read, .ts-read { color: #1B272C; font-size: 18px; }
 .sq-read small { display: block; color: #94640A; font-size: 14px; }
 .sq-read .yes, .df-read .yes, .pr-read .yes, .ld-read .yes { color: #0F8A5F; } .pr-read .no, .ld-read .no, .ts-read .no { color: #D3323F; }
 .dfv { display: block; width: min(100%, 320px); margin: 0 auto; }
 .dfv rect { transition: x .45s ease, y .45s ease, width .45s ease, height .45s ease; }
 .wx-diffsq, .wx-pairs { justify-items: center; }
-.pr-head { font-size: 30px; font-weight: 900; color: #16305C; }
+.pr-head { font-size: 30px; font-weight: 900; color: #1B272C; }
 .pr-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; min-height: 48px; }
 .pr-chips .tile { min-width: 48px; padding: 8px 10px; font-size: 19px; }
 .pr-made { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; min-height: 30px; }
@@ -149,7 +103,7 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 /* Rates over time */
 .grv, .mdv { display: block; width: 100%; }
 .mdv { max-height: 190px; }
-.gr-read, .md-read { color: #16305C; font-size: 17px; }
+.gr-read, .md-read { color: #1B272C; font-size: 17px; }
 .gr-read .si { color: #1F5FBF; } .gr-read .ci { color: #94640A; } .gr-read .gap { color: #D3323F; }
 .tk { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 12px; align-items: center; }
 .tk svg { width: 100%; display: block; }
@@ -157,22 +111,22 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .tk-taps { display: flex; flex-wrap: wrap; gap: 6px; }
 .tk-tap { display: flex; align-items: center; gap: 6px; padding: 7px 10px; font-size: 15px; opacity: .45; }
 .tk-tap.on { opacity: 1; } .tk-tap .pos { color: #1F5FBF; font-weight: 900; } .tk-tap .neg { color: #D3323F; font-weight: 900; }
-.tk-net { font-size: 15px; font-weight: 800; color: #16305C; line-height: 1.5; } .tk-net .yes { color: #0F8A5F; } .tk-net .no { color: #D3323F; }
+.tk-net { font-size: 15px; font-weight: 800; color: #1B272C; line-height: 1.5; } .tk-net .yes { color: #0F8A5F; } .tk-net .no { color: #D3323F; }
 .tk-reset { justify-self: start; border: 0; background: none; color: #1F5FBF; font-weight: 800; font-size: 14px; text-decoration: underline; cursor: pointer; padding: 0; }
 .tk { grid-template-columns: 130px minmax(0, 1fr); }
 /* Motion and time */
 .trk, .agv { display: block; width: 100%; }
-.tk-read, .ag-read { color: #16305C; font-size: 17px; } .tk-read .yes, .ag-read .yes { color: #0F8A5F; }
+.tk-read, .ag-read { color: #1B272C; font-size: 17px; } .tk-read .yes, .ag-read .yes { color: #0F8A5F; }
 /* Sequences and triangles */
 .stv, .trv, .twv { display: block; width: 100%; }
 .qv { display: block; width: min(100%, 250px); margin: 0 auto; }
 .wx-stairs { justify-items: stretch; } .wx-stairs .gr-go { justify-self: center; }
-.st-read, .tr-read, .q-read, .tw-read { color: #16305C; font-size: 17px; }
+.st-read, .tr-read, .q-read, .tw-read { color: #1B272C; font-size: 17px; }
 .st-read .yes, .tw-read .yes { color: #0F8A5F; } .tw-read .no { color: #D3323F; }
 .q-read .s { color: #1F5FBF; } .q-read .c { color: #0F8A5F; margin-left: 10px; }
 /* Figures */
 .fgv { display: block; width: 100%; max-height: 220px; }
-.fg-read { color: #16305C; font-size: 17px; } .fg-read .yes { color: #0F8A5F; } .fg-read .no { color: #D3323F; }
+.fg-read { color: #1B272C; font-size: 17px; } .fg-read .yes { color: #0F8A5F; } .fg-read .no { color: #D3323F; }
 .wx-kite, .wx-net, .wx-pour { justify-items: center; }
 
 /* ---------- reasoning scenes (app/reasonstage.js) ---------- */
@@ -180,21 +134,21 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .kp.az .tile { padding: 9px 0; font-size: 17px; }
 .kp.az .tile[data-key="⌫"] { grid-column: span 2; }
 .whl, .wlk, .vn { display: block; width: 100%; max-width: 330px; margin: 0 auto; touch-action: manipulation; }
-.whl .pl { font-size: 14px; font-weight: 800; fill: #16305C; }
+.whl .pl { font-size: 14px; font-weight: 800; fill: #1B272C; }
 .whl .pl.hit { fill: #D3323F; font-size: 17px; }
 .whl .cd { font-size: 14px; font-weight: 700; fill: #1F5FBF; }
-.whl .whk { font-size: 30px; font-weight: 900; fill: #16305C; }
+.whl .whk { font-size: 30px; font-weight: 900; fill: #1B272C; }
 .whl .whs { font-size: 11px; font-weight: 700; fill: #7E93AE; }
 .whg { display: block; font-size: 13px; color: #7E93AE; }
 .wx-read b.yes { color: #0F8A5F; }
-.wlk .wlc { font-size: 15px; font-weight: 900; fill: #16305C; }
+.wlk .wlc { font-size: 15px; font-weight: 900; fill: #1B272C; }
 .wlk .wls { font-size: 11px; font-weight: 800; fill: #1F5FBF; }
 .wlk-keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
 .wlk-keys .tile { padding: 11px 0; font-size: 16px; touch-action: manipulation; }
 .wlk-reset { display: block; margin: 8px auto 0; }
 .vn { cursor: pointer; }
 .vn .vnl { font-size: 13px; font-weight: 800; }
-.vn .vnn { font-size: 16px; font-weight: 900; fill: #16305C; pointer-events: none; }
+.vn .vnn { font-size: 16px; font-weight: 900; fill: #1B272C; pointer-events: none; }
 .spk { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .spk-o { padding: 6px; }
 .spk-o svg { display: block; width: 100%; max-width: 140px; margin: 0 auto; }
@@ -209,7 +163,7 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .gpr.l1 { font-size: 15px; color: #1F5FBF; }
 .gpr.l2 { font-size: 15px; color: #D3323F; }
 .gpo { display: block; margin: 8px auto; }
-.trb { border: 2px solid #16305C; border-radius: 10px; overflow: hidden; }
+.trb { border: 2px solid #1B272C; border-radius: 10px; overflow: hidden; }
 .trr { display: flex; justify-content: space-between; padding: 9px 12px; font-weight: 800; border-top: 1px solid #D5E1EF; }
 .trr:first-child { border-top: 0; }
 .trr.on { background: #FBEFD5; }
@@ -237,7 +191,7 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .ngd { display: grid; grid-template-columns: repeat(var(--c), 1fr); gap: 4px; max-width: 260px; margin: 0 auto 10px; }
 .ngd span { padding: 13px 0; text-align: center; font-weight: 900; font-size: 19px; border: 1px solid #C9D8E8; border-radius: 8px; background: #fff; }
 .ngd span.q { color: #D3323F; background: #FBEFD5; }
-.brs { display: flex; align-items: flex-end; justify-content: center; gap: 8px; min-height: 180px; border-bottom: 2px solid #16305C; }
+.brs { display: flex; align-items: flex-end; justify-content: center; gap: 8px; min-height: 180px; border-bottom: 2px solid #1B272C; }
 .brc { flex: 1; max-width: 62px; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; }
 .brc b { display: block; font-size: 13px; }
 .brc i { display: block; background: #1F5FBF; border-radius: 4px 4px 0 0; }

@@ -193,7 +193,7 @@ function bind(ctx) {   // ctx: { U(), refresh(), check(), hintsAllowed() }
       const st = ctx.U().st;
       if (!s.tasks) { mount(el, s.widget); return; }
       st.task = 0; st.tasksDone = false;
-      $("#screen").insertAdjacentHTML("beforeend", `<div class="tasks" id="tasks"></div>`);
+      ($(".story-card") || $("#screen")).insertAdjacentHTML("beforeend", `<div class="tasks" id="tasks"></div>`);
       const drawTask = () => {
         const box = $("#tasks"), t = s.tasks[st.task];
         const pips = `<div class="pips">${s.tasks.map((_, k) => `<i class="${k < st.task ? "on" : ""}"></i>`).join("")}</div>`;

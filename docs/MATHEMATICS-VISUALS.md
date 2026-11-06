@@ -73,6 +73,7 @@ Colour has one meaning everywhere: blue positive, red negative, gold zero, green
 
 ## Design direction
 
-A maths exercise book, set only by `html.maths` in `app/math.css`: squared paper, red
-margin, ballpoint ink. It re-points the app's colour tokens, so other courses are
-unchanged. The number line is the one bold element and runs edge to edge.
+Scenes sit on the app's shared glass theme (`app/glass.css`). `html.maths` in
+`app/math.css` only gives these two courses a clearer card, so diagrams read cleanly
+over the river. Scene colours keep their meaning: blue positive, red negative, gold
+zero, green fractions. The number line is the one bold element and runs edge to edge.
