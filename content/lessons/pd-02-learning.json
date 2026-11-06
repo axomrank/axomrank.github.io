@@ -1,0 +1,1410 @@
+{
+  "id": "pd-02-learning",
+  "course": "pedagogy",
+  "no": 2,
+  "version": 1,
+  "king": {
+    "en": "How children learn",
+    "as": "How children learn"
+  },
+  "reign": {
+    "en": "Child development",
+    "as": "Child development"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Thorndike, Animal Intelligence (1911)",
+      "url": "https://psychclassics.yorku.ca/Thorndike/Animal/",
+      "used_for": "Lead for puzzle-box work. Passage still to be read."
+    },
+    {
+      "title": "Pavlov, Conditioned Reflexes (1927)",
+      "url": "https://psychclassics.yorku.ca/Pavlov/",
+      "used_for": "Lead for classical conditioning. Passage still to be read."
+    },
+    {
+      "title": "Bandura, Ross and Ross (1961)",
+      "url": "https://psychclassics.yorku.ca/Bandura/bobo.htm",
+      "used_for": "Lead for observational learning. Passage still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "language": "English only at the user's request; the as fields repeat the English.",
+    "facts": "pending teacher-educator review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "The bell and the dish",
+        "as": "The bell and the dish"
+      },
+      "icon": "walk",
+      "learned": [
+        {
+          "en": "Pavlov studied conditioning while researching digestion in dogs.",
+          "as": "Pavlov studied conditioning while researching digestion in dogs."
+        },
+        {
+          "en": "A neutral stimulus paired with an unconditioned stimulus becomes a conditioned stimulus.",
+          "as": "A neutral stimulus paired with an unconditioned stimulus becomes a conditioned stimulus."
+        },
+        {
+          "en": "Extinction weakens a conditioned response when the pairing stops.",
+          "as": "Extinction weakens a conditioned response when the pairing stops."
+        },
+        {
+          "en": "Stimulus generalisation means responding to similar stimuli.",
+          "as": "Stimulus generalisation means responding to similar stimuli."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A dog that salivates early",
+            "as": "A dog that salivates early"
+          },
+          "text": [
+            {
+              "en": "Ivan <mark>Pavlov</mark>, a Russian physiologist, was measuring saliva in dogs when they began to salivate before food arrived.",
+              "as": "Ivan <mark>Pavlov</mark>, a Russian physiologist, was measuring saliva in dogs when they began to salivate before food arrived."
+            },
+            {
+              "en": "He paired a neutral sound with food. After repeated pairings, the sound alone produced saliva: <mark>classical conditioning</mark>.",
+              "as": "He paired a neutral sound with food. After repeated pairings, the sound alone produced saliva: <mark>classical conditioning</mark>."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Food → saliva",
+                "as": "Food → saliva"
+              },
+              {
+                "en": "Sound + food → saliva",
+                "as": "Sound + food → saliva"
+              },
+              {
+                "en": "Sound alone → saliva",
+                "as": "Sound alone → saliva"
+              }
+            ]
+          },
+          "id": "pd02.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Before conditioning, what is the food?",
+            "as": "Before conditioning, what is the food?"
+          },
+          "options": [
+            {
+              "en": "Unconditioned stimulus",
+              "as": "Unconditioned stimulus"
+            },
+            {
+              "en": "Conditioned stimulus",
+              "as": "Conditioned stimulus"
+            },
+            {
+              "en": "Neutral stimulus",
+              "as": "Neutral stimulus"
+            },
+            {
+              "en": "Conditioned response",
+              "as": "Conditioned response"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Food causes saliva with no learning, so it is unconditioned.",
+            "as": "Food causes saliva with no learning, so it is unconditioned."
+          },
+          "guess": true,
+          "id": "pd02.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "School feelings are learned too",
+            "as": "School feelings are learned too"
+          },
+          "text": [
+            {
+              "en": "Imagine a child who is scolded each time maths begins. The subject alone may start to bring worry.",
+              "as": "Imagine a child who is scolded each time maths begins. The subject alone may start to bring worry."
+            },
+            {
+              "en": "The same idea helps a teacher: pairing a subject with safety and success can build positive feelings. Stop the pairing and a response can fade: <mark>extinction</mark>.",
+              "as": "The same idea helps a teacher: pairing a subject with safety and success can build positive feelings. Stop the pairing and a response can fade: <mark>extinction</mark>."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Neutral · causes no response yet",
+                "as": "Neutral · causes no response yet"
+              },
+              {
+                "en": "Unconditioned · natural response",
+                "as": "Unconditioned · natural response"
+              },
+              {
+                "en": "Conditioned · learned response",
+                "as": "Conditioned · learned response"
+              }
+            ]
+          },
+          "id": "pd02.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Food",
+                "as": "Food"
+              },
+              {
+                "en": "unconditioned stimulus",
+                "as": "unconditioned stimulus"
+              }
+            ],
+            [
+              {
+                "en": "Sound after pairing",
+                "as": "Sound after pairing"
+              },
+              {
+                "en": "conditioned stimulus",
+                "as": "conditioned stimulus"
+              }
+            ],
+            [
+              {
+                "en": "Saliva to the sound",
+                "as": "Saliva to the sound"
+              },
+              {
+                "en": "conditioned response",
+                "as": "conditioned response"
+              }
+            ],
+            [
+              {
+                "en": "Sound before pairing",
+                "as": "Sound before pairing"
+              },
+              {
+                "en": "neutral stimulus",
+                "as": "neutral stimulus"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Ask whether the response needed learning.",
+            "as": "Ask whether the response needed learning."
+          },
+          "id": "pd02.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Extinction means a conditioned response weakens when the pairing stops.",
+            "as": "Extinction means a conditioned response weakens when the pairing stops."
+          },
+          "answer": true,
+          "why": {
+            "en": "A faded response can also return for a while later: spontaneous recovery.",
+            "as": "A faded response can also return for a while later: spontaneous recovery."
+          },
+          "id": "pd02.u1.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order the conditioning process.",
+            "as": "Order the conditioning process."
+          },
+          "items": [
+            {
+              "en": "Neutral stimulus causes no response",
+              "as": "Neutral stimulus causes no response"
+            },
+            {
+              "en": "Neutral stimulus is paired with food",
+              "as": "Neutral stimulus is paired with food"
+            },
+            {
+              "en": "Sound alone causes saliva",
+              "as": "Sound alone causes saliva"
+            }
+          ],
+          "why": {
+            "en": "Pairing comes before the learned response.",
+            "as": "Pairing comes before the learned response."
+          },
+          "id": "pd02.u1.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Classical",
+              "conditioning",
+              "was",
+              "first",
+              "studied",
+              "by",
+              "Skinner",
+              "with",
+              "dogs."
+            ],
+            "as": [
+              "Classical",
+              "conditioning",
+              "was",
+              "first",
+              "studied",
+              "by",
+              "Skinner",
+              "with",
+              "dogs."
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 6
+          },
+          "fix": {
+            "en": "Pavlov",
+            "as": "Pavlov"
+          },
+          "answerText": {
+            "en": "Skinner",
+            "as": "Skinner"
+          },
+          "why": {
+            "en": "Pavlov worked with dogs. Skinner studied operant conditioning.",
+            "as": "Pavlov worked with dogs. Skinner studied operant conditioning."
+          },
+          "id": "pd02.u1.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the scientist of the dog experiments.",
+            "as": "Unscramble the scientist of the dog experiments."
+          },
+          "word": {
+            "en": [
+              "P",
+              "A",
+              "V",
+              "L",
+              "O",
+              "V"
+            ],
+            "as": [
+              "P",
+              "A",
+              "V",
+              "L",
+              "O",
+              "V"
+            ]
+          },
+          "answerText": {
+            "en": "PAVLOV",
+            "as": "PAVLOV"
+          },
+          "why": {
+            "en": "He won the 1904 Nobel Prize for work on digestion.",
+            "as": "He won the 1904 Nobel Prize for work on digestion."
+          },
+          "id": "pd02.u1.08"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Cats, boxes and laws",
+        "as": "Cats, boxes and laws"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Thorndike's puzzle-box studies showed trial-and-error learning.",
+          "as": "Thorndike's puzzle-box studies showed trial-and-error learning."
+        },
+        {
+          "en": "Law of readiness: learning is satisfying when the learner is prepared.",
+          "as": "Law of readiness: learning is satisfying when the learner is prepared."
+        },
+        {
+          "en": "Law of exercise: practice strengthens a connection, and disuse weakens it.",
+          "as": "Law of exercise: practice strengthens a connection, and disuse weakens it."
+        },
+        {
+          "en": "Law of effect: satisfying results strengthen a connection.",
+          "as": "Law of effect: satisfying results strengthen a connection."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The cat that got faster",
+            "as": "The cat that got faster"
+          },
+          "text": [
+            {
+              "en": "Edward <mark>Thorndike</mark> placed a hungry cat in a puzzle box with food outside. It tried many actions until one opened the latch.",
+              "as": "Edward <mark>Thorndike</mark> placed a hungry cat in a puzzle box with food outside. It tried many actions until one opened the latch."
+            },
+            {
+              "en": "Each trial took less time. He called this gradual strengthening of a link <mark>connectionism</mark>, often taught as trial-and-error learning.",
+              "as": "Each trial took less time. He called this gradual strengthening of a link <mark>connectionism</mark>, often taught as trial-and-error learning."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Many tries",
+                "as": "Many tries"
+              },
+              {
+                "en": "Chance success",
+                "as": "Chance success"
+              },
+              {
+                "en": "Reward",
+                "as": "Reward"
+              },
+              {
+                "en": "Faster next time",
+                "as": "Faster next time"
+              }
+            ]
+          },
+          "id": "pd02.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which law says a satisfying result strengthens a behaviour?",
+            "as": "Which law says a satisfying result strengthens a behaviour?"
+          },
+          "options": [
+            {
+              "en": "Law of readiness",
+              "as": "Law of readiness"
+            },
+            {
+              "en": "Law of exercise",
+              "as": "Law of exercise"
+            },
+            {
+              "en": "Law of effect",
+              "as": "Law of effect"
+            },
+            {
+              "en": "Law of gravity",
+              "as": "Law of gravity"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Effect: what follows an action affects whether it is repeated.",
+            "as": "Effect: what follows an action affects whether it is repeated."
+          },
+          "guess": true,
+          "id": "pd02.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Three laws in one classroom",
+            "as": "Three laws in one classroom"
+          },
+          "text": [
+            {
+              "en": "<mark>Readiness</mark>: a child set to learn enjoys learning. <mark>Exercise</mark>: practice strengthens skill. <mark>Effect</mark>: success makes repetition likely.",
+              "as": "<mark>Readiness</mark>: a child set to learn enjoys learning. <mark>Exercise</mark>: practice strengthens skill. <mark>Effect</mark>: success makes repetition likely."
+            },
+            {
+              "en": "Thorndike later revised his claims: practice alone was not enough without feedback, and reward worked more strongly than punishment.",
+              "as": "Thorndike later revised his claims: practice alone was not enough without feedback, and reward worked more strongly than punishment."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Readiness · prepared learner",
+                "as": "Readiness · prepared learner"
+              },
+              {
+                "en": "Exercise · practice",
+                "as": "Exercise · practice"
+              },
+              {
+                "en": "Effect · satisfying result",
+                "as": "Effect · satisfying result"
+              }
+            ]
+          },
+          "id": "pd02.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "A warm-up that gets pupils curious",
+                "as": "A warm-up that gets pupils curious"
+              },
+              {
+                "en": "readiness",
+                "as": "readiness"
+              }
+            ],
+            [
+              {
+                "en": "Daily table practice",
+                "as": "Daily table practice"
+              },
+              {
+                "en": "exercise",
+                "as": "exercise"
+              }
+            ],
+            [
+              {
+                "en": "Praise after a good attempt",
+                "as": "Praise after a good attempt"
+              },
+              {
+                "en": "effect",
+                "as": "effect"
+              }
+            ],
+            [
+              {
+                "en": "Cats in a puzzle box",
+                "as": "Cats in a puzzle box"
+              },
+              {
+                "en": "Thorndike",
+                "as": "Thorndike"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Link each classroom action to a law.",
+            "as": "Link each classroom action to a law."
+          },
+          "id": "pd02.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Thorndike taught that repetition alone always guarantees learning, and he never changed this view.",
+            "as": "Thorndike taught that repetition alone always guarantees learning, and he never changed this view."
+          },
+          "answer": false,
+          "why": {
+            "en": "He later revised the law of exercise, stressing the role of results.",
+            "as": "He later revised the law of exercise, stressing the role of results."
+          },
+          "id": "pd02.u2.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A teacher gives corrective feedback after practice because practice works better with",
+            "as": "A teacher gives corrective feedback after practice because practice works better with"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "feedback",
+              "as": "feedback"
+            },
+            {
+              "en": "silence",
+              "as": "silence"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "This fits Thorndike's later revision.",
+            "as": "This fits Thorndike's later revision."
+          },
+          "id": "pd02.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT one of Thorndike's main laws?",
+            "as": "Which is NOT one of Thorndike's main laws?"
+          },
+          "options": [
+            {
+              "en": "Readiness",
+              "as": "Readiness"
+            },
+            {
+              "en": "Exercise",
+              "as": "Exercise"
+            },
+            {
+              "en": "Effect",
+              "as": "Effect"
+            },
+            {
+              "en": "Insight",
+              "as": "Insight"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Insight is linked with Köhler.",
+            "as": "Insight is linked with Köhler."
+          },
+          "id": "pd02.u2.07"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am an American psychologist.",
+              "as": "I am an American psychologist."
+            },
+            {
+              "en": "I studied cats in puzzle boxes.",
+              "as": "I studied cats in puzzle boxes."
+            },
+            {
+              "en": "I proposed the law of effect.",
+              "as": "I proposed the law of effect."
+            }
+          ],
+          "options": [
+            {
+              "en": "Wolfgang Köhler",
+              "as": "Wolfgang Köhler"
+            },
+            {
+              "en": "Edward Thorndike",
+              "as": "Edward Thorndike"
+            },
+            {
+              "en": "Ivan Pavlov",
+              "as": "Ivan Pavlov"
+            },
+            {
+              "en": "Jean Piaget",
+              "as": "Jean Piaget"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Thorndike's work is a founding study of learning.",
+            "as": "Thorndike's work is a founding study of learning."
+          },
+          "id": "pd02.u2.08"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Rewards and consequences",
+        "as": "Rewards and consequences"
+      },
+      "icon": "seal",
+      "learned": [
+        {
+          "en": "Skinner studied operant conditioning: behaviour shaped by consequences.",
+          "as": "Skinner studied operant conditioning: behaviour shaped by consequences."
+        },
+        {
+          "en": "Positive reinforcement adds something pleasant; negative reinforcement removes something unpleasant.",
+          "as": "Positive reinforcement adds something pleasant; negative reinforcement removes something unpleasant."
+        },
+        {
+          "en": "Both kinds of reinforcement increase a behaviour; punishment reduces it.",
+          "as": "Both kinds of reinforcement increase a behaviour; punishment reduces it."
+        },
+        {
+          "en": "Shaping reinforces small steps towards a target behaviour.",
+          "as": "Shaping reinforces small steps towards a target behaviour."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The word exams love to twist",
+            "as": "The word exams love to twist"
+          },
+          "text": [
+            {
+              "en": "B. F. <mark>Skinner</mark> studied how consequences change behaviour, using boxes for rats and pigeons. This is <mark>operant conditioning</mark>.",
+              "as": "B. F. <mark>Skinner</mark> studied how consequences change behaviour, using boxes for rats and pigeons. This is <mark>operant conditioning</mark>."
+            },
+            {
+              "en": "Trap: <mark>negative reinforcement</mark> is not punishment. It removes something unpleasant, so behaviour increases.",
+              "as": "Trap: <mark>negative reinforcement</mark> is not punishment. It removes something unpleasant, so behaviour increases."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Positive reinforcement · add pleasant",
+                "as": "Positive reinforcement · add pleasant"
+              },
+              {
+                "en": "Negative reinforcement · remove unpleasant",
+                "as": "Negative reinforcement · remove unpleasant"
+              },
+              {
+                "en": "Punishment · reduce behaviour",
+                "as": "Punishment · reduce behaviour"
+              }
+            ]
+          },
+          "id": "pd02.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "A teacher cancels extra homework for pupils who finish classwork. What is this?",
+            "as": "A teacher cancels extra homework for pupils who finish classwork. What is this?"
+          },
+          "options": [
+            {
+              "en": "Punishment",
+              "as": "Punishment"
+            },
+            {
+              "en": "Negative reinforcement",
+              "as": "Negative reinforcement"
+            },
+            {
+              "en": "Extinction",
+              "as": "Extinction"
+            },
+            {
+              "en": "Insight",
+              "as": "Insight"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Something unpleasant is removed, and finishing classwork increases.",
+            "as": "Something unpleasant is removed, and finishing classwork increases."
+          },
+          "guess": true,
+          "id": "pd02.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Small steps, quick feedback",
+            "as": "Small steps, quick feedback"
+          },
+          "text": [
+            {
+              "en": "To teach a shy pupil to read aloud, a teacher might praise reading to a partner, then a group, then the class: <mark>shaping</mark>.",
+              "as": "To teach a shy pupil to read aloud, a teacher might praise reading to a partner, then a group, then the class: <mark>shaping</mark>."
+            },
+            {
+              "en": "Skinner's ideas fed into <mark>programmed instruction</mark>: small steps, active answers and immediate feedback.",
+              "as": "Skinner's ideas fed into <mark>programmed instruction</mark>: small steps, active answers and immediate feedback."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "One small step",
+                "as": "One small step"
+              },
+              {
+                "en": "Learner responds",
+                "as": "Learner responds"
+              },
+              {
+                "en": "Immediate feedback",
+                "as": "Immediate feedback"
+              },
+              {
+                "en": "Next step",
+                "as": "Next step"
+              }
+            ]
+          },
+          "id": "pd02.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Star for neat work",
+                "as": "Star for neat work"
+              },
+              {
+                "en": "positive reinforcement",
+                "as": "positive reinforcement"
+              }
+            ],
+            [
+              {
+                "en": "Removing a disliked task",
+                "as": "Removing a disliked task"
+              },
+              {
+                "en": "negative reinforcement",
+                "as": "negative reinforcement"
+              }
+            ],
+            [
+              {
+                "en": "Taking away playtime",
+                "as": "Taking away playtime"
+              },
+              {
+                "en": "punishment",
+                "as": "punishment"
+              }
+            ],
+            [
+              {
+                "en": "Praising small improvements",
+                "as": "Praising small improvements"
+              },
+              {
+                "en": "shaping",
+                "as": "shaping"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Ask what happens to the behaviour, and how.",
+            "as": "Ask what happens to the behaviour, and how."
+          },
+          "id": "pd02.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Negative reinforcement decreases a behaviour.",
+            "as": "Negative reinforcement decreases a behaviour."
+          },
+          "answer": false,
+          "why": {
+            "en": "All reinforcement increases a behaviour.",
+            "as": "All reinforcement increases a behaviour."
+          },
+          "id": "pd02.u3.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Skinner's",
+              "work",
+              "is",
+              "called",
+              "classical",
+              "conditioning."
+            ],
+            "as": [
+              "Skinner's",
+              "work",
+              "is",
+              "called",
+              "classical",
+              "conditioning."
+            ]
+          },
+          "wrong": {
+            "en": 4,
+            "as": 4
+          },
+          "fix": {
+            "en": "operant",
+            "as": "operant"
+          },
+          "answerText": {
+            "en": "classical",
+            "as": "classical"
+          },
+          "why": {
+            "en": "Operant conditioning depends on consequences.",
+            "as": "Operant conditioning depends on consequences."
+          },
+          "id": "pd02.u3.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Reinforcement works best for new learning when it comes",
+            "as": "Reinforcement works best for new learning when it comes"
+          },
+          "after": {
+            "en": "after the response.",
+            "as": "after the response."
+          },
+          "options": [
+            {
+              "en": "soon",
+              "as": "soon"
+            },
+            {
+              "en": "a month",
+              "as": "a month"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A close link between action and consequence helps.",
+            "as": "A close link between action and consequence helps."
+          },
+          "id": "pd02.u3.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is linked with Skinner?",
+            "as": "Which is linked with Skinner?"
+          },
+          "options": [
+            {
+              "en": "Puzzle box with cats",
+              "as": "Puzzle box with cats"
+            },
+            {
+              "en": "Bobo doll",
+              "as": "Bobo doll"
+            },
+            {
+              "en": "Programmed instruction",
+              "as": "Programmed instruction"
+            },
+            {
+              "en": "Chimpanzee and sticks",
+              "as": "Chimpanzee and sticks"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "The others are Thorndike, Bandura and Köhler.",
+            "as": "The others are Thorndike, Bandura and Köhler."
+          },
+          "id": "pd02.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Seeing the whole, watching others",
+        "as": "Seeing the whole, watching others"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Köhler studied insight learning with chimpanzees on Tenerife.",
+          "as": "Köhler studied insight learning with chimpanzees on Tenerife."
+        },
+        {
+          "en": "Insight is a sudden reorganising of a problem.",
+          "as": "Insight is a sudden reorganising of a problem."
+        },
+        {
+          "en": "Gestalt psychology stresses patterns and wholes.",
+          "as": "Gestalt psychology stresses patterns and wholes."
+        },
+        {
+          "en": "Bandura showed that children learn by observing models.",
+          "as": "Bandura showed that children learn by observing models."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The chimp who stopped and looked",
+            "as": "The chimp who stopped and looked"
+          },
+          "text": [
+            {
+              "en": "Wolfgang <mark>Köhler</mark> studied chimpanzees on Tenerife. Food hung out of reach, with boxes or sticks nearby.",
+              "as": "Wolfgang <mark>Köhler</mark> studied chimpanzees on Tenerife. Food hung out of reach, with boxes or sticks nearby."
+            },
+            {
+              "en": "After failed tries, a chimp named Sultan could suddenly join sticks and reach the fruit. This sudden solution is <mark>insight</mark>.",
+              "as": "After failed tries, a chimp named Sultan could suddenly join sticks and reach the fruit. This sudden solution is <mark>insight</mark>."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Problem",
+                "as": "Problem"
+              },
+              {
+                "en": "Pause",
+                "as": "Pause"
+              },
+              {
+                "en": "Sees the relationship",
+                "as": "Sees the relationship"
+              },
+              {
+                "en": "Sudden solution",
+                "as": "Sudden solution"
+              }
+            ]
+          },
+          "id": "pd02.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which school of psychology is Köhler linked with?",
+            "as": "Which school of psychology is Köhler linked with?"
+          },
+          "options": [
+            {
+              "en": "Behaviourism",
+              "as": "Behaviourism"
+            },
+            {
+              "en": "Gestalt",
+              "as": "Gestalt"
+            },
+            {
+              "en": "Psychoanalysis",
+              "as": "Psychoanalysis"
+            },
+            {
+              "en": "Structuralism",
+              "as": "Structuralism"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Gestalt psychology studies perception and thinking as organised wholes.",
+            "as": "Gestalt psychology studies perception and thinking as organised wholes."
+          },
+          "guess": true,
+          "id": "pd02.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Children watch everything",
+            "as": "Children watch everything"
+          },
+          "text": [
+            {
+              "en": "Albert <mark>Bandura</mark>'s Bobo doll studies in the 1960s found that children could imitate aggression they had seen an adult show.",
+              "as": "Albert <mark>Bandura</mark>'s Bobo doll studies in the 1960s found that children could imitate aggression they had seen an adult show."
+            },
+            {
+              "en": "This is <mark>observational learning</mark>, part of his social learning theory. So a teacher's conduct teaches, whatever the lesson plan says.",
+              "as": "This is <mark>observational learning</mark>, part of his social learning theory. So a teacher's conduct teaches, whatever the lesson plan says."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Attention",
+                "as": "Attention"
+              },
+              {
+                "en": "Retention",
+                "as": "Retention"
+              },
+              {
+                "en": "Reproduction",
+                "as": "Reproduction"
+              },
+              {
+                "en": "Motivation",
+                "as": "Motivation"
+              }
+            ]
+          },
+          "id": "pd02.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Pavlov",
+                "as": "Pavlov"
+              },
+              {
+                "en": "classical conditioning",
+                "as": "classical conditioning"
+              }
+            ],
+            [
+              {
+                "en": "Thorndike",
+                "as": "Thorndike"
+              },
+              {
+                "en": "trial and error",
+                "as": "trial and error"
+              }
+            ],
+            [
+              {
+                "en": "Köhler",
+                "as": "Köhler"
+              },
+              {
+                "en": "insight",
+                "as": "insight"
+              }
+            ],
+            [
+              {
+                "en": "Bandura",
+                "as": "Bandura"
+              },
+              {
+                "en": "observational learning",
+                "as": "observational learning"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Pair each researcher with one idea.",
+            "as": "Pair each researcher with one idea."
+          },
+          "id": "pd02.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Insight learning is mainly slow, blind trial and error.",
+            "as": "Insight learning is mainly slow, blind trial and error."
+          },
+          "answer": false,
+          "why": {
+            "en": "Insight comes from suddenly seeing how the parts relate.",
+            "as": "Insight comes from suddenly seeing how the parts relate."
+          },
+          "id": "pd02.u4.05"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am a Canadian-American psychologist.",
+              "as": "I am a Canadian-American psychologist."
+            },
+            {
+              "en": "My studies used a large inflatable doll.",
+              "as": "My studies used a large inflatable doll."
+            },
+            {
+              "en": "I said people learn by watching models.",
+              "as": "I said people learn by watching models."
+            }
+          ],
+          "options": [
+            {
+              "en": "Albert Bandura",
+              "as": "Albert Bandura"
+            },
+            {
+              "en": "B. F. Skinner",
+              "as": "B. F. Skinner"
+            },
+            {
+              "en": "Wolfgang Köhler",
+              "as": "Wolfgang Köhler"
+            },
+            {
+              "en": "Lev Vygotsky",
+              "as": "Lev Vygotsky"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Bandura developed social learning theory.",
+            "as": "Bandura developed social learning theory."
+          },
+          "id": "pd02.u4.06"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order Bandura's steps of modelling.",
+            "as": "Order Bandura's steps of modelling."
+          },
+          "items": [
+            {
+              "en": "Attention",
+              "as": "Attention"
+            },
+            {
+              "en": "Retention",
+              "as": "Retention"
+            },
+            {
+              "en": "Reproduction",
+              "as": "Reproduction"
+            },
+            {
+              "en": "Motivation",
+              "as": "Motivation"
+            }
+          ],
+          "why": {
+            "en": "A learner must notice, remember, be able to act and want to act.",
+            "as": "A learner must notice, remember, be able to act and want to act."
+          },
+          "id": "pd02.u4.07"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A pupil copies how a teacher politely disagrees. This shows learning by",
+            "as": "A pupil copies how a teacher politely disagrees. This shows learning by"
+          },
+          "after": {
+            "en": ".",
+            "as": "."
+          },
+          "options": [
+            {
+              "en": "observation",
+              "as": "observation"
+            },
+            {
+              "en": "punishment",
+              "as": "punishment"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The teacher acts as a model.",
+            "as": "The teacher acts as a model."
+          },
+          "id": "pd02.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Learning theory check",
+      "as": "Learning theory check"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "A pupil feels anxious at the sound of a test bell because of past failures. Which theory explains this best?",
+          "as": "A pupil feels anxious at the sound of a test bell because of past failures. Which theory explains this best?"
+        },
+        "options": [
+          {
+            "en": "Classical conditioning",
+            "as": "Classical conditioning"
+          },
+          {
+            "en": "Insight learning",
+            "as": "Insight learning"
+          },
+          {
+            "en": "Programmed instruction",
+            "as": "Programmed instruction"
+          },
+          {
+            "en": "Multiple intelligence",
+            "as": "Multiple intelligence"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A once-neutral sound has become linked with anxiety.",
+          "as": "A once-neutral sound has become linked with anxiety."
+        },
+        "id": "pd02.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Punishment and negative reinforcement mean the same thing.",
+          "as": "Punishment and negative reinforcement mean the same thing."
+        },
+        "answer": false,
+        "why": {
+          "en": "Punishment reduces behaviour; negative reinforcement increases it.",
+          "as": "Punishment reduces behaviour; negative reinforcement increases it."
+        },
+        "id": "pd02.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Law of effect",
+              "as": "Law of effect"
+            },
+            {
+              "en": "Thorndike",
+              "as": "Thorndike"
+            }
+          ],
+          [
+            {
+              "en": "Shaping",
+              "as": "Shaping"
+            },
+            {
+              "en": "Skinner",
+              "as": "Skinner"
+            }
+          ],
+          [
+            {
+              "en": "Tenerife chimpanzees",
+              "as": "Tenerife chimpanzees"
+            },
+            {
+              "en": "Köhler",
+              "as": "Köhler"
+            }
+          ],
+          [
+            {
+              "en": "Bobo doll",
+              "as": "Bobo doll"
+            },
+            {
+              "en": "Bandura",
+              "as": "Bandura"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Keep each idea with its author.",
+          "as": "Keep each idea with its author."
+        },
+        "id": "pd02.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is NOT a learning theorist's experiment subject here?",
+          "as": "Which is NOT a learning theorist's experiment subject here?"
+        },
+        "options": [
+          {
+            "en": "Dogs",
+            "as": "Dogs"
+          },
+          {
+            "en": "Cats",
+            "as": "Cats"
+          },
+          {
+            "en": "Chimpanzees",
+            "as": "Chimpanzees"
+          },
+          {
+            "en": "Elephants",
+            "as": "Elephants"
+          }
+        ],
+        "answer": 3,
+        "why": {
+          "en": "Pavlov used dogs, Thorndike cats and Köhler chimpanzees.",
+          "as": "Pavlov used dogs, Thorndike cats and Köhler chimpanzees."
+        },
+        "id": "pd02.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order by date of main work, earliest first.",
+          "as": "Order by date of main work, earliest first."
+        },
+        "items": [
+          {
+            "en": "Pavlov's conditioning studies",
+            "as": "Pavlov's conditioning studies"
+          },
+          {
+            "en": "Köhler's Tenerife studies",
+            "as": "Köhler's Tenerife studies"
+          },
+          {
+            "en": "Bandura's Bobo doll studies",
+            "as": "Bandura's Bobo doll studies"
+          }
+        ],
+        "why": {
+          "en": "Around 1900, the 1910s and the 1960s.",
+          "as": "Around 1900, the 1910s and the 1960s."
+        },
+        "id": "pd02.test.05"
+      }
+    ]
+  }
+}
