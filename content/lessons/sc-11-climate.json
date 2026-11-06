@@ -1,0 +1,1371 @@
+{
+  "id": "sc-11-climate",
+  "course": "general-science",
+  "no": 11,
+  "version": 1,
+  "king": {
+    "en": "Climate and energy",
+    "as": "জলবায়ু আৰু শক্তি"
+  },
+  "reign": {
+    "en": "Environment",
+    "as": "পৰিৱেশ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "UNFCCC: The Paris Agreement",
+      "url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+      "used_for": "Lead for treaty aims and dates. Passage still to be read."
+    },
+    {
+      "title": "IPCC: About",
+      "url": "https://www.ipcc.ch/about/",
+      "used_for": "Lead for the IPCC's role. Passage still to be read."
+    },
+    {
+      "title": "International Solar Alliance",
+      "url": "https://isa.int/",
+      "used_for": "Lead for the alliance's origin and headquarters. Passage still to be read."
+    },
+    {
+      "title": "Indian Oil: Digboi Refinery",
+      "url": "https://iocl.com/pages/digboi-refinery",
+      "used_for": "Lead for the 1901 refinery date. Passage still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "A blanket around Earth",
+        "as": "পৃথিৱীৰ চাৰিওফালে এখন কম্বল"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Greenhouse gases trap heat that Earth radiates back toward space.",
+          "as": "গ্ৰীণহাউচ গেছে পৃথিৱীয়ে মহাকাশলৈ ঘূৰাই পঠিওৱা তাপ ধৰি ৰাখে।"
+        },
+        {
+          "en": "The natural greenhouse effect keeps Earth warm enough for life.",
+          "as": "প্ৰাকৃতিক গ্ৰীণহাউচ প্ৰভাৱে পৃথিৱীক জীৱনৰ বাবে উপযোগী উষ্ণতা দিয়ে।"
+        },
+        {
+          "en": "Carbon dioxide, methane and nitrous oxide are key greenhouse gases.",
+          "as": "কাৰ্বন ডাই অক্সাইড, মিথেন আৰু নাইট্ৰাছ অক্সাইড মুখ্য গ্ৰীণহাউচ গেছ।"
+        },
+        {
+          "en": "The ozone hole and global warming are different problems.",
+          "as": "অজ'ন ছিদ্ৰ আৰু বিশ্ব উষ্ণায়ন বেলেগ বেলেগ সমস্যা।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Without it, Earth would freeze",
+            "as": "ইয়াৰ অবিহনে পৃথিৱী গোট মাৰিলেহেঁতেন"
+          },
+          "text": [
+            {
+              "en": "Sunlight warms the ground, which sends heat back up. <mark>Greenhouse gases</mark> hold part of it, like a blanket.",
+              "as": "সূৰ্যৰ পোহৰে মাটি গৰম কৰে, মাটিয়ে তাপ ওপৰলৈ পঠিয়ায়। <mark>গ্ৰীণহাউচ গেছে</mark> তাৰ কিছু অংশ কম্বলৰ দৰে ধৰি ৰাখে।"
+            },
+            {
+              "en": "That natural effect makes Earth liveable. Burning fossil fuels thickens the blanket, and that is the problem.",
+              "as": "এই প্ৰাকৃতিক প্ৰভাৱে পৃথিৱীক বাসযোগ্য কৰে। জীবাশ্ম ইন্ধন জ্বলালে কম্বলখন ডাঠ হয়, সেয়াই সমস্যা।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Sunlight in",
+                "as": "সূৰ্যৰ পোহৰ আহে"
+              },
+              {
+                "en": "Ground warms",
+                "as": "মাটি গৰম হয়"
+              },
+              {
+                "en": "Heat rises",
+                "as": "তাপ ওপৰলৈ যায়"
+              },
+              {
+                "en": "Gases trap some",
+                "as": "গেছে কিছু ধৰি ৰাখে"
+              }
+            ]
+          },
+          "id": "sc11.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which gas do flooded rice fields and cattle release?",
+            "as": "পানী থকা ধাননি আৰু গৰু-ম'হে কোনটো গেছ এৰে?"
+          },
+          "options": [
+            {
+              "en": "Methane",
+              "as": "মিথেন"
+            },
+            {
+              "en": "Oxygen",
+              "as": "অক্সিজেন"
+            },
+            {
+              "en": "Neon",
+              "as": "নিয়ন"
+            },
+            {
+              "en": "Helium",
+              "as": "হিলিয়াম"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Microbes in wet soil and cattle guts produce methane.",
+            "as": "ভিজা মাটি আৰু গৰুৰ পেটৰ অণুজীৱে মিথেন উৎপন্ন কৰে।"
+          },
+          "guess": true,
+          "id": "sc11.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Two sky problems, often confused",
+            "as": "আকাশৰ দুটা সমস্যা, সঘনে সানমিহলি"
+          },
+          "text": [
+            {
+              "en": "The <mark>ozone hole</mark> lets in more ultraviolet light; CFCs caused it. <mark>Global warming</mark> comes from trapped heat.",
+              "as": "<mark>অজ'ন ছিদ্ৰ</mark>ই অধিক অতিবেঙুনীয়া ৰশ্মি সোমাবলৈ দিয়ে; CFC ইয়াৰ কাৰণ। <mark>বিশ্ব উষ্ণায়ন</mark> ধৰি ৰখা তাপৰ ফল।"
+            },
+            {
+              "en": "Fixing one does not fix the other. Which gas would you cut to slow warming?",
+              "as": "এটা সমাধান কৰিলে আনটো নহয়। উষ্ণায়ন লেহেমীয়া কৰিবলৈ কোনটো গেছ কমাবা?"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Ozone hole · UV, CFCs",
+                "as": "অজ'ন ছিদ্ৰ · UV, CFC"
+              },
+              {
+                "en": "Global warming · heat, CO₂",
+                "as": "বিশ্ব উষ্ণায়ন · তাপ, CO₂"
+              }
+            ]
+          },
+          "id": "sc11.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Carbon dioxide",
+                "as": "কাৰ্বন ডাই অক্সাইড"
+              },
+              {
+                "en": "burning coal and oil",
+                "as": "কয়লা আৰু তেল জ্বলোৱা"
+              }
+            ],
+            [
+              {
+                "en": "Methane",
+                "as": "মিথেন"
+              },
+              {
+                "en": "flooded paddy, cattle",
+                "as": "পানী থকা ধাননি, গৰু-ম'হ"
+              }
+            ],
+            [
+              {
+                "en": "Nitrous oxide",
+                "as": "নাইট্ৰাছ অক্সাইড"
+              },
+              {
+                "en": "nitrogen fertiliser",
+                "as": "নাইট্ৰজেন সাৰ"
+              }
+            ],
+            [
+              {
+                "en": "CFCs",
+                "as": "CFC"
+              },
+              {
+                "en": "old refrigerants",
+                "as": "পুৰণি শীতলকাৰক"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Match each gas with a major source.",
+            "as": "প্ৰতিটো গেছ এটা মুখ্য উৎসৰ সৈতে মিলোৱা।"
+          },
+          "id": "sc11.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The greenhouse effect is entirely harmful.",
+            "as": "গ্ৰীণহাউচ প্ৰভাৱ সম্পূৰ্ণ ক্ষতিকৰ।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The natural effect keeps Earth habitable; the extra human-made part is the concern.",
+            "as": "প্ৰাকৃতিক প্ৰভাৱে পৃথিৱীক বাসযোগ্য কৰে; মানুহে বঢ়োৱা অংশটোহে চিন্তাৰ বিষয়।"
+          },
+          "id": "sc11.u1.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Global",
+              "warming",
+              "is",
+              "caused",
+              "mainly",
+              "by",
+              "the",
+              "ozone",
+              "hole."
+            ],
+            "as": [
+              "বিশ্ব",
+              "উষ্ণায়নৰ",
+              "মুখ্য",
+              "কাৰণ",
+              "অজ'ন",
+              "ছিদ্ৰ।"
+            ]
+          },
+          "wrong": {
+            "en": 7,
+            "as": 4
+          },
+          "fix": {
+            "en": "greenhouse gases",
+            "as": "গ্ৰীণহাউচ গেছ"
+          },
+          "answerText": {
+            "en": "ozone",
+            "as": "অজ'ন"
+          },
+          "why": {
+            "en": "Added greenhouse gases are the main cause of current warming.",
+            "as": "বাঢ়ি অহা গ্ৰীণহাউচ গেছেই বৰ্তমান উষ্ণায়নৰ মুখ্য কাৰণ।"
+          },
+          "id": "sc11.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a greenhouse gas?",
+            "as": "তলৰ কোনটো গ্ৰীণহাউচ গেছ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Carbon dioxide",
+              "as": "কাৰ্বন ডাই অক্সাইড"
+            },
+            {
+              "en": "Methane",
+              "as": "মিথেন"
+            },
+            {
+              "en": "Nitrogen",
+              "as": "নাইট্ৰজেন"
+            },
+            {
+              "en": "Water vapour",
+              "as": "জলীয় বাষ্প"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Nitrogen makes up most of the air but does not trap this heat.",
+            "as": "বায়ুৰ বেছিভাগ নাইট্ৰজেন, কিন্তু ই এই তাপ নধৰে।"
+          },
+          "id": "sc11.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Promises between countries",
+        "as": "দেশসমূহৰ মাজৰ প্ৰতিশ্ৰুতি"
+      },
+      "icon": "court",
+      "learned": [
+        {
+          "en": "The UN climate treaty, UNFCCC, was opened at Rio in 1992.",
+          "as": "ৰাষ্ট্ৰসংঘৰ জলবায়ু চুক্তি UNFCCC ১৯৯২ চনত ৰিঅ'ত স্বাক্ষৰৰ বাবে মুকলি হয়।"
+        },
+        {
+          "en": "The Kyoto Protocol (1997) set targets for developed countries.",
+          "as": "কিয়োটো প্ৰট'কলে (১৯৯৭) উন্নত দেশৰ বাবে লক্ষ্য নিৰ্ধাৰণ কৰে।"
+        },
+        {
+          "en": "The Paris Agreement (2015) aims for well below 2°C, pursuing 1.5°C.",
+          "as": "পেৰিছ চুক্তিৰ (২০১৫) লক্ষ্য ২°Cৰ যথেষ্ট তলত, ১.৫°C ৰ প্ৰচেষ্টা।"
+        },
+        {
+          "en": "India announced a net-zero target for 2070 at COP26 in 2021.",
+          "as": "২০২১ চনত COP26 ত ভাৰতে ২০৭০ চনৰ নেট-জিৰ' লক্ষ্য ঘোষণা কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "One sky, many countries",
+            "as": "একেখন আকাশ, বহু দেশ"
+          },
+          "text": [
+            {
+              "en": "No country owns the atmosphere. In <mark>1992</mark> at Rio, nations opened a climate treaty, the UNFCCC. Its yearly meetings are called <b>COPs</b>.",
+              "as": "বায়ুমণ্ডল কোনো দেশৰ নহয়। <mark>১৯৯২</mark> চনত ৰিঅ'ত দেশবোৰে জলবায়ু চুক্তি UNFCCC মুকলি কৰে। ইয়াৰ বাৰ্ষিক সভাক <b>COP</b> বোলে।"
+            },
+            {
+              "en": "The <mark>IPCC</mark>, set up in 1988, assesses the science. It advises; it does not make the rules.",
+              "as": "১৯৮৮ চনত গঠিত <mark>IPCC</mark> এ বিজ্ঞান মূল্যায়ন কৰে। ই পৰামৰ্শ দিয়ে; নিয়ম নবনায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "IPCC · assesses science",
+                "as": "IPCC · বিজ্ঞান মূল্যায়ন"
+              },
+              {
+                "en": "UNFCCC · the treaty",
+                "as": "UNFCCC · চুক্তি"
+              },
+              {
+                "en": "COP · yearly meeting",
+                "as": "COP · বাৰ্ষিক সভা"
+              }
+            ]
+          },
+          "id": "sc11.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What did the Paris Agreement ask of countries?",
+            "as": "পেৰিছ চুক্তিয়ে দেশসমূহক কি কৰিবলৈ ক'লে?"
+          },
+          "options": [
+            {
+              "en": "Ban all coal at once",
+              "as": "তৎক্ষণাত সকলো কয়লা নিষিদ্ধ"
+            },
+            {
+              "en": "Set their own national climate plans",
+              "as": "নিজৰ ৰাষ্ট্ৰীয় জলবায়ু পৰিকল্পনা দিয়া"
+            },
+            {
+              "en": "Phase out CFCs only",
+              "as": "কেৱল CFC বন্ধ কৰা"
+            },
+            {
+              "en": "Stop all farming",
+              "as": "সকলো কৃষি বন্ধ কৰা"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Each country submits a nationally determined contribution.",
+            "as": "প্ৰতিখন দেশে নিজৰ ৰাষ্ট্ৰীয়ভাৱে নিৰ্ধাৰিত অৱদান দাখিল কৰে।"
+          },
+          "guess": true,
+          "id": "sc11.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "From Kyoto to Paris",
+            "as": "কিয়োটোৰ পৰা পেৰিছলৈ"
+          },
+          "text": [
+            {
+              "en": "<mark>Kyoto</mark> (1997) bound developed countries to targets. <mark>Paris</mark> (2015) brought in nearly every country through national plans.",
+              "as": "<mark>কিয়োটো</mark>য়ে (১৯৯৭) উন্নত দেশক লক্ষ্যত বান্ধিছিল। <mark>পেৰিছ</mark>ে (২০১৫) ৰাষ্ট্ৰীয় পৰিকল্পনাৰে প্ৰায় সকলো দেশক সামৰি ল'লে।"
+            },
+            {
+              "en": "Paris aims to hold warming well below 2°C and to pursue 1.5°C. At Glasgow in 2021, India set <mark>net zero by 2070</mark>.",
+              "as": "পেৰিছৰ লক্ষ্য উষ্ণায়ন ২°Cৰ যথেষ্ট তলত ৰখা আৰু ১.৫°Cৰ প্ৰচেষ্টা। ২০২১ চনত গ্লাছগোত ভাৰতে <mark>২০৭০ৰ ভিতৰত নেট জিৰ'</mark> ঘোষণা কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "1992 · Rio",
+                "as": "১৯৯২ · ৰিঅ'"
+              },
+              {
+                "en": "1997 · Kyoto",
+                "as": "১৯৯৭ · কিয়োটো"
+              },
+              {
+                "en": "2015 · Paris",
+                "as": "২০১৫ · পেৰিছ"
+              },
+              {
+                "en": "2021 · Glasgow",
+                "as": "২০২১ · গ্লাছগো"
+              }
+            ]
+          },
+          "id": "sc11.u2.03"
+        },
+        {
+          "type": "timeline",
+          "q": {
+            "en": "Place each event on the timeline.",
+            "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+          },
+          "anchors": [
+            {
+              "y": "1992",
+              "l": {
+                "en": "UNFCCC at Rio",
+                "as": "ৰিঅ'ত UNFCCC"
+              }
+            },
+            {
+              "y": "2015",
+              "l": {
+                "en": "Paris Agreement",
+                "as": "পেৰিছ চুক্তি"
+              }
+            }
+          ],
+          "items": [
+            {
+              "t": {
+                "en": "Montreal Protocol",
+                "as": "মণ্ট্ৰিয়ল প্ৰট'কল"
+              },
+              "slot": 0
+            },
+            {
+              "t": {
+                "en": "Kyoto Protocol",
+                "as": "কিয়োটো প্ৰট'কল"
+              },
+              "slot": 1
+            },
+            {
+              "t": {
+                "en": "India's net-zero announcement",
+                "as": "ভাৰতৰ নেট-জিৰ' ঘোষণা"
+              },
+              "slot": 2
+            }
+          ],
+          "why": {
+            "en": "1987 Montreal, 1992 Rio, 1997 Kyoto, 2015 Paris, 2021 Glasgow.",
+            "as": "১৯৮৭ মণ্ট্ৰিয়ল, ১৯৯২ ৰিঅ', ১৯৯৭ কিয়োটো, ২০১৫ পেৰিছ, ২০২১ গ্লাছগো।"
+          },
+          "id": "sc11.u2.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "IPCC",
+                "as": "IPCC"
+              },
+              {
+                "en": "assesses climate science",
+                "as": "জলবায়ু বিজ্ঞান মূল্যায়ন"
+              }
+            ],
+            [
+              {
+                "en": "Kyoto",
+                "as": "কিয়োটো"
+              },
+              {
+                "en": "developed-country targets",
+                "as": "উন্নত দেশৰ লক্ষ্য"
+              }
+            ],
+            [
+              {
+                "en": "Paris",
+                "as": "পেৰিছ"
+              },
+              {
+                "en": "national plans for all",
+                "as": "সকলোৰে ৰাষ্ট্ৰীয় পৰিকল্পনা"
+              }
+            ],
+            [
+              {
+                "en": "Montreal",
+                "as": "মণ্ট্ৰিয়ল"
+              },
+              {
+                "en": "ozone-depleting substances",
+                "as": "অজ'ন ক্ষয়কাৰী পদাৰ্থ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Keep the bodies and agreements distinct.",
+            "as": "সংস্থা আৰু চুক্তিবোৰ পৃথক কৰি ৰাখা।"
+          },
+          "id": "sc11.u2.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Net zero means a country emits no greenhouse gas at all.",
+            "as": "নেট জিৰ' মানে দেশখনে একেবাৰে গ্ৰীণহাউচ গেছ নিৰ্গমন নকৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Remaining emissions are balanced by removals such as forests.",
+            "as": "বাকী থকা নিৰ্গমন অৰণ্যৰ দৰে শোষণেৰে সমান কৰা হয়।"
+          },
+          "id": "sc11.u2.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "India's net-zero target year is",
+            "as": "ভাৰতৰ নেট-জিৰ' লক্ষ্যৰ বছৰটো হ'ল"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "2070",
+              "as": "২০৭০"
+            },
+            {
+              "en": "2030",
+              "as": "২০৩০"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Announced at COP26 in Glasgow.",
+            "as": "গ্লাছগোৰ COP26 ত ঘোষণা কৰা হয়।"
+          },
+          "id": "sc11.u2.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the city of the 2015 agreement.",
+            "as": "২০১৫ চনৰ চুক্তিৰ নগৰখনৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "P",
+              "A",
+              "R",
+              "I",
+              "S"
+            ],
+            "as": [
+              "পে",
+              "ৰি",
+              "ছ"
+            ]
+          },
+          "answerText": {
+            "en": "PARIS",
+            "as": "পেৰিছ"
+          },
+          "why": {
+            "en": "Adopted at COP21 in Paris.",
+            "as": "পেৰিছৰ COP21 ত গৃহীত হয়।"
+          },
+          "id": "sc11.u2.08"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Where our energy comes from",
+        "as": "আমাৰ শক্তি ক'ৰ পৰা আহে"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Coal, oil and natural gas are fossil fuels and are non-renewable.",
+          "as": "কয়লা, তেল আৰু প্ৰাকৃতিক গেছ জীবাশ্ম ইন্ধন, আৰু অনৱীকৰণযোগ্য।"
+        },
+        {
+          "en": "Solar, wind and hydro power are renewable sources.",
+          "as": "সৌৰ, বায়ু আৰু জলবিদ্যুৎ নৱীকৰণযোগ্য উৎস।"
+        },
+        {
+          "en": "Digboi in Assam has India's oldest operating oil refinery, from 1901.",
+          "as": "অসমৰ ডিগবৈত ১৯০১ চনৰ ভাৰতৰ আটাইতকৈ পুৰণি চালু শোধনাগাৰ আছে।"
+        },
+        {
+          "en": "The International Solar Alliance was launched by India and France in 2015.",
+          "as": "২০১৫ চনত ভাৰত আৰু ফ্ৰান্সে আন্তঃৰাষ্ট্ৰীয় সৌৰ মিত্ৰজোঁট আৰম্ভ কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Ancient sunlight in Assam's ground",
+            "as": "অসমৰ মাটিত প্ৰাচীন সূৰ্যৰ পোহৰ"
+          },
+          "text": [
+            {
+              "en": "Coal and oil formed over millions of years from buried life. Burning them releases stored <mark>carbon</mark> within moments.",
+              "as": "মাটিত পোত খোৱা জীৱৰ পৰা নিযুত বছৰ ধৰি কয়লা আৰু তেল গঠিত হৈছে। জ্বলালে সঞ্চিত <mark>কাৰ্বন</mark> মুহূৰ্ততে ওলায়।"
+            },
+            {
+              "en": "Assam knows this history: <mark>Digboi</mark> has India's oldest operating refinery, dating from 1901.",
+              "as": "অসমে এই ইতিহাস জানে: <mark>ডিগবৈ</mark>ত ১৯০১ চনৰ ভাৰতৰ আটাইতকৈ পুৰণি চালু শোধনাগাৰ আছে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Fossil · coal, oil, gas",
+                "as": "জীবাশ্ম · কয়লা, তেল, গেছ"
+              },
+              {
+                "en": "Renewable · sun, wind, water",
+                "as": "নৱীকৰণযোগ্য · সূৰ্য, বতাহ, পানী"
+              }
+            ]
+          },
+          "id": "sc11.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which is a renewable source?",
+            "as": "তলৰ কোনটো নৱীকৰণযোগ্য উৎস?"
+          },
+          "options": [
+            {
+              "en": "Coal",
+              "as": "কয়লা"
+            },
+            {
+              "en": "Diesel",
+              "as": "ডিজেল"
+            },
+            {
+              "en": "Natural gas",
+              "as": "প্ৰাকৃতিক গেছ"
+            },
+            {
+              "en": "Wind",
+              "as": "বতাহ"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Wind is replenished naturally; the others are fossil fuels.",
+            "as": "বতাহ প্ৰাকৃতিকভাৱে পূৰণ হয়; বাকীবোৰ জীবাশ্ম ইন্ধন।"
+          },
+          "guess": true,
+          "id": "sc11.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Clean power has trade-offs too",
+            "as": "পৰিষ্কাৰ শক্তিৰো আপোচ আছে"
+          },
+          "text": [
+            {
+              "en": "Solar panels work only in daylight, so grids need <mark>storage</mark> or backup.",
+              "as": "সৌৰ পেনেলে দিনতহে কাম কৰে, সেয়ে গ্ৰীডক <mark>সঞ্চয়</mark> বা বিকল্প লাগে।"
+            },
+            {
+              "en": "Large <mark>hydro</mark> dams emit little while running, yet can change rivers and displace people. This debate is alive in the northeast.",
+              "as": "ডাঙৰ <mark>জলবিদ্যুৎ</mark> বান্ধে চলি থকা সময়ত কম নিৰ্গমন কৰে, কিন্তু নদী সলনি কৰিব আৰু মানুহক উচ্ছেদ কৰিব পাৰে। উত্তৰ-পূবত এই বিতৰ্ক জীৱন্ত।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Solar · needs storage",
+                "as": "সৌৰ · সঞ্চয় লাগে"
+              },
+              {
+                "en": "Wind · varies by site",
+                "as": "বায়ু · ঠাই অনুসৰি সলনি হয়"
+              },
+              {
+                "en": "Hydro · changes rivers",
+                "as": "জলবিদ্যুৎ · নদী সলনি কৰে"
+              }
+            ]
+          },
+          "id": "sc11.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Digboi",
+                "as": "ডিগবৈ"
+              },
+              {
+                "en": "oldest operating refinery",
+                "as": "আটাইতকৈ পুৰণি চালু শোধনাগাৰ"
+              }
+            ],
+            [
+              {
+                "en": "Solar panel",
+                "as": "সৌৰ পেনেল"
+              },
+              {
+                "en": "light to electricity",
+                "as": "পোহৰৰ পৰা বিদ্যুৎ"
+              }
+            ],
+            [
+              {
+                "en": "Wind turbine",
+                "as": "বায়ু টাৰ্বাইন"
+              },
+              {
+                "en": "moving air to electricity",
+                "as": "বতাহৰ পৰা বিদ্যুৎ"
+              }
+            ],
+            [
+              {
+                "en": "Dam",
+                "as": "বান্ধ"
+              },
+              {
+                "en": "falling water to electricity",
+                "as": "পানীৰ পতনৰ পৰা বিদ্যুৎ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each source turns something different into power.",
+            "as": "প্ৰতিটো উৎসই বেলেগ বস্তুৰ পৰা বিদ্যুৎ উৎপন্ন কৰে।"
+          },
+          "id": "sc11.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Hydropower is renewable but can still harm river ecosystems.",
+            "as": "জলবিদ্যুৎ নৱীকৰণযোগ্য, তথাপি নদীৰ পৰিস্থিতি তন্ত্ৰৰ ক্ষতি কৰিব পাৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Renewable does not mean free of side effects.",
+            "as": "নৱীকৰণযোগ্য মানে কুপ্ৰভাৱহীন নহয়।"
+          },
+          "id": "sc11.u3.05"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I began in 2015 at the Paris climate talks.",
+              "as": "মোৰ আৰম্ভণি ২০১৫ চনত পেৰিছ জলবায়ু আলোচনাত।"
+            },
+            {
+              "en": "India and France launched me.",
+              "as": "ভাৰত আৰু ফ্ৰান্সে মোক আৰম্ভ কৰে।"
+            },
+            {
+              "en": "I promote one energy source from the Sun.",
+              "as": "মই সূৰ্যৰ শক্তি প্ৰসাৰ কৰোঁ।"
+            }
+          ],
+          "options": [
+            {
+              "en": "IPCC",
+              "as": "IPCC"
+            },
+            {
+              "en": "International Solar Alliance",
+              "as": "আন্তঃৰাষ্ট্ৰীয় সৌৰ মিত্ৰজোঁট"
+            },
+            {
+              "en": "UNESCO",
+              "as": "ইউনেস্কো"
+            },
+            {
+              "en": "OPEC",
+              "as": "ওপেক"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The International Solar Alliance has its headquarters in Gurugram.",
+            "as": "আন্তঃৰাষ্ট্ৰীয় সৌৰ মিত্ৰজোঁটৰ মুখ্য কাৰ্যালয় গুৰুগ্ৰামত।"
+          },
+          "id": "sc11.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is the odd one out?",
+            "as": "কোনটো বেলেগ?"
+          },
+          "options": [
+            {
+              "en": "Coal",
+              "as": "কয়লা"
+            },
+            {
+              "en": "Petroleum",
+              "as": "পেট্ৰ'লিয়াম"
+            },
+            {
+              "en": "Natural gas",
+              "as": "প্ৰাকৃতিক গেছ"
+            },
+            {
+              "en": "Solar energy",
+              "as": "সৌৰ শক্তি"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Solar is renewable; the others are fossil fuels.",
+            "as": "সৌৰ নৱীকৰণযোগ্য; বাকীবোৰ জীবাশ্ম ইন্ধন।"
+          },
+          "id": "sc11.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Climate change comes home",
+        "as": "জলবায়ু পৰিৱৰ্তন ঘৰলৈ আহে"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "Weather is short-term; climate is the long-term pattern.",
+          "as": "বতৰ চুটি সময়ৰ; জলবায়ু দীৰ্ঘকালীন আৰ্হি।"
+        },
+        {
+          "en": "Mitigation cuts emissions; adaptation prepares for the impacts.",
+          "as": "প্ৰশমনে নিৰ্গমন কমায়; অভিযোজনে প্ৰভাৱৰ বাবে সাজু কৰে।"
+        },
+        {
+          "en": "Warmer air can hold more moisture, which can intensify heavy rain.",
+          "as": "উষ্ণ বায়ুৱে অধিক জলীয় বাষ্প ধৰিব পাৰে, ই ধাৰাষাৰ বৰষুণ বঢ়াব পাৰে।"
+        },
+        {
+          "en": "Flood-tolerant rice and raised stilt houses are adaptation examples.",
+          "as": "বান সহনশীল ধান আৰু চাং ঘৰ অভিযোজনৰ উদাহৰণ।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "One hot day proves nothing",
+            "as": "এটা গৰম দিনে একো প্ৰমাণ নকৰে"
+          },
+          "text": [
+            {
+              "en": "<mark>Weather</mark> is today's sky. <mark>Climate</mark> is the pattern across decades, so a single flood or heatwave alone proves little.",
+              "as": "<mark>বতৰ</mark> আজিৰ আকাশ। <mark>জলবায়ু</mark> দশকজোৰা আৰ্হি, সেয়ে এটা বান বা তাপ প্ৰবাহে অকলে বিশেষ একো প্ৰমাণ নকৰে।"
+            },
+            {
+              "en": "Warmer air can hold more moisture, so heavy downpours can grow stronger. For Assam, that matters.",
+              "as": "উষ্ণ বায়ুৱে অধিক জলীয় বাষ্প ধৰিব পাৰে, সেয়ে ধাৰাষাৰ বৰষুণ বাঢ়িব পাৰে। অসমৰ বাবে এয়া গুৰুত্বপূৰ্ণ।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Warmer air",
+                "as": "উষ্ণ বায়ু"
+              },
+              {
+                "en": "More moisture",
+                "as": "অধিক জলীয় বাষ্প"
+              },
+              {
+                "en": "Heavier downpours possible",
+                "as": "অধিক ধাৰাষাৰ সম্ভৱ"
+              }
+            ]
+          },
+          "link": {
+            "lessonId": "gf-04-air-and-water",
+            "lesson": 4,
+            "unitNo": 1,
+            "unitTitle": {
+              "en": "Weather or climate?",
+              "as": "বতৰ নে জলবায়ু?"
+            },
+            "note": {
+              "en": "Geography Foundations introduced this difference.",
+              "as": "ভূগোলৰ ভেটিয়ে এই পাৰ্থক্য চিনাকি কৰাইছিল।"
+            }
+          },
+          "id": "sc11.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What decides whether a place's climate has changed?",
+            "as": "ঠাই এখনৰ জলবায়ু সলনি হৈছে নে নাই কিহে নিৰ্ধাৰণ কৰে?"
+          },
+          "options": [
+            {
+              "en": "One very hot week",
+              "as": "এটা বৰ গৰম সপ্তাহ"
+            },
+            {
+              "en": "Records across decades",
+              "as": "দশকজোৰা নথি"
+            },
+            {
+              "en": "Today's forecast",
+              "as": "আজিৰ পূৰ্বাভাস"
+            },
+            {
+              "en": "One cyclone",
+              "as": "এটা ঘূৰ্ণিবতাহ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Climate is judged from long records, commonly about 30 years.",
+            "as": "জলবায়ু দীৰ্ঘ নথিৰে বিচাৰ কৰা হয়, সাধাৰণতে প্ৰায় ৩০ বছৰৰ।"
+          },
+          "guess": true,
+          "id": "sc11.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Stop it, or live with it?",
+            "as": "বন্ধ কৰিবা নে সহি থাকিবা?"
+          },
+          "text": [
+            {
+              "en": "<mark>Mitigation</mark> cuts the cause: cleaner power, forests, less waste. <mark>Adaptation</mark> prepares for what is already coming.",
+              "as": "<mark>প্ৰশমনে</mark> কাৰণ কমায়: পৰিষ্কাৰ শক্তি, অৰণ্য, কম অপচয়। <mark>অভিযোজনে</mark> আহি থকা প্ৰভাৱৰ বাবে সাজু কৰে।"
+            },
+            {
+              "en": "Assam has old answers to floods: raised <b>chang ghars</b> of the Mising people. New ones include flood-tolerant rice and earlier warnings.",
+              "as": "বানৰ পুৰণি উত্তৰ অসমত আছে: মিচিং লোকৰ ওখ <b>চাং ঘৰ</b>। নতুন উত্তৰৰ ভিতৰত বান সহনশীল ধান আৰু আগতীয়া সতৰ্কবাণী।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Mitigation · reduce the cause",
+                "as": "প্ৰশমন · কাৰণ কমোৱা"
+              },
+              {
+                "en": "Adaptation · prepare for impacts",
+                "as": "অভিযোজন · প্ৰভাৱৰ বাবে সাজু হোৱা"
+              }
+            ]
+          },
+          "id": "sc11.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Rooftop solar",
+                "as": "ছাদৰ সৌৰ পেনেল"
+              },
+              {
+                "en": "cuts fossil power use",
+                "as": "জীবাশ্ম বিদ্যুৎ কমায়"
+              }
+            ],
+            [
+              {
+                "en": "Planting forests",
+                "as": "অৰণ্য ৰোপণ"
+              },
+              {
+                "en": "absorbs carbon",
+                "as": "কাৰ্বন শোষণ কৰে"
+              }
+            ],
+            [
+              {
+                "en": "Stilt house",
+                "as": "চাং ঘৰ"
+              },
+              {
+                "en": "lifts homes above floods",
+                "as": "ঘৰ বানৰ ওপৰত ৰাখে"
+              }
+            ],
+            [
+              {
+                "en": "Flood warning",
+                "as": "বানৰ সতৰ্কবাণী"
+              },
+              {
+                "en": "gives time to move",
+                "as": "আঁতৰিবলৈ সময় দিয়ে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "The first two are mitigation; the last two are adaptation.",
+            "as": "প্ৰথম দুটা প্ৰশমন; শেষৰ দুটা অভিযোজন।"
+          },
+          "id": "sc11.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "One unusually cold winter disproves global warming.",
+            "as": "এটা অস্বাভাৱিক ঠাণ্ডা জাৰকালিয়ে বিশ্ব উষ্ণায়ন ভুল বুলি প্ৰমাণ কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "One season is weather. Warming is measured in long-term global records.",
+            "as": "এটা ঋতু বতৰ। উষ্ণায়ন দীৰ্ঘকালীন বিশ্বজোৰা নথিৰে জোখা হয়।"
+          },
+          "id": "sc11.u4.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Flood-tolerant",
+              "rice",
+              "is",
+              "an",
+              "example",
+              "of",
+              "mitigation."
+            ],
+            "as": [
+              "বান",
+              "সহনশীল",
+              "ধান",
+              "প্ৰশমনৰ",
+              "এটা",
+              "উদাহৰণ।"
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 3
+          },
+          "fix": {
+            "en": "adaptation",
+            "as": "অভিযোজন"
+          },
+          "answerText": {
+            "en": "mitigation",
+            "as": "প্ৰশমনৰ"
+          },
+          "why": {
+            "en": "It reduces harm from floods; it does not cut emissions.",
+            "as": "ই বানৰ ক্ষতি কমায়; নিৰ্গমন নকমায়।"
+          },
+          "id": "sc11.u4.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A chang ghar is built on stilts to keep the home above",
+            "as": "চাং ঘৰ খুঁটাৰ ওপৰত সজা হয়, যাতে ঘৰটো ইয়াৰ ওপৰত থাকে:"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "flood water",
+              "as": "বানপানী"
+            },
+            {
+              "en": "sunlight",
+              "as": "সূৰ্যৰ পোহৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Raised floors keep families and goods above seasonal water.",
+            "as": "ওখ মজিয়াই পৰিয়াল আৰু সামগ্ৰী বছেৰেকীয়া পানীৰ ওপৰত ৰাখে।"
+          },
+          "id": "sc11.u4.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one is adaptation?",
+            "as": "তলৰ কোনটো অভিযোজন?"
+          },
+          "options": [
+            {
+              "en": "Wind farm",
+              "as": "বায়ু শক্তি কেন্দ্ৰ"
+            },
+            {
+              "en": "Raised embankment",
+              "as": "ওখ মথাউৰি"
+            },
+            {
+              "en": "Solar panels",
+              "as": "সৌৰ পেনেল"
+            },
+            {
+              "en": "Electric bus",
+              "as": "বৈদ্যুতিক বাছ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An embankment protects against flood; the others cut emissions.",
+            "as": "মথাউৰিয়ে বানৰ পৰা ৰক্ষা কৰে; বাকীবোৰে নিৰ্গমন কমায়।"
+          },
+          "id": "sc11.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Climate briefing",
+      "as": "জলবায়ু আলোচনী"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which treaty concerns the ozone layer?",
+          "as": "কোনখন চুক্তি অজ'ন স্তৰৰ সৈতে জড়িত?"
+        },
+        "options": [
+          {
+            "en": "Paris Agreement",
+            "as": "পেৰিছ চুক্তি"
+          },
+          {
+            "en": "Kyoto Protocol",
+            "as": "কিয়োটো প্ৰট'কল"
+          },
+          {
+            "en": "Montreal Protocol",
+            "as": "মণ্ট্ৰিয়ল প্ৰট'কল"
+          },
+          {
+            "en": "Ramsar Convention",
+            "as": "ৰামছাৰ চুক্তি"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Montreal phases out ozone-depleting substances.",
+          "as": "মণ্ট্ৰিয়লে অজ'ন ক্ষয়কাৰী পদাৰ্থ বন্ধ কৰে।"
+        },
+        "id": "sc11.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Climate is the long-term pattern of weather.",
+          "as": "জলবায়ু বতৰৰ দীৰ্ঘকালীন আৰ্হি।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Weather is the short-term state.",
+          "as": "বতৰ চুটি সময়ৰ অৱস্থা।"
+        },
+        "id": "sc11.test.02"
+      },
+      {
+        "type": "timeline",
+        "q": {
+          "en": "Place each event on the timeline.",
+          "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+        },
+        "anchors": [
+          {
+            "y": "1997",
+            "l": {
+              "en": "Kyoto Protocol",
+              "as": "কিয়োটো প্ৰট'কল"
+            }
+          }
+        ],
+        "items": [
+          {
+            "t": {
+              "en": "UNFCCC opened at Rio",
+              "as": "ৰিঅ'ত UNFCCC"
+            },
+            "slot": 0
+          },
+          {
+            "t": {
+              "en": "Paris Agreement",
+              "as": "পেৰিছ চুক্তি"
+            },
+            "slot": 1
+          }
+        ],
+        "why": {
+          "en": "1992, 1997, 2015.",
+          "as": "১৯৯২, ১৯৯৭, ২০১৫।"
+        },
+        "id": "sc11.test.03"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Methane",
+              "as": "মিথেন"
+            },
+            {
+              "en": "flooded paddy",
+              "as": "পানী থকা ধাননি"
+            }
+          ],
+          [
+            {
+              "en": "Digboi",
+              "as": "ডিগবৈ"
+            },
+            {
+              "en": "old refinery",
+              "as": "পুৰণি শোধনাগাৰ"
+            }
+          ],
+          [
+            {
+              "en": "Stilt house",
+              "as": "চাং ঘৰ"
+            },
+            {
+              "en": "adaptation",
+              "as": "অভিযোজন"
+            }
+          ],
+          [
+            {
+              "en": "Solar power",
+              "as": "সৌৰ শক্তি"
+            },
+            {
+              "en": "mitigation",
+              "as": "প্ৰশমন"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Four links across the lesson.",
+          "as": "পাঠটোৰ চাৰিটা সংযোগ।"
+        },
+        "id": "sc11.test.04"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is NOT a fossil fuel?",
+          "as": "তলৰ কোনটো জীবাশ্ম ইন্ধন নহয়?"
+        },
+        "options": [
+          {
+            "en": "Coal",
+            "as": "কয়লা"
+          },
+          {
+            "en": "Natural gas",
+            "as": "প্ৰাকৃতিক গেছ"
+          },
+          {
+            "en": "Wind",
+            "as": "বতাহ"
+          },
+          {
+            "en": "Petroleum",
+            "as": "পেট্ৰ'লিয়াম"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Wind is renewable.",
+          "as": "বতাহ নৱীকৰণযোগ্য।"
+        },
+        "id": "sc11.test.05"
+      }
+    ]
+  }
+}

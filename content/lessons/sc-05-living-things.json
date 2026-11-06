@@ -1,0 +1,1342 @@
+{
+  "id": "sc-05-living-things",
+  "course": "general-science",
+  "no": 5,
+  "version": 1,
+  "king": {
+    "en": "Living things",
+    "as": "জীৱ-জগত"
+  },
+  "reign": {
+    "en": "Biology",
+    "as": "জীৱবিজ্ঞান"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Biology textbooks, Classes 9 to 12: cell, diversity, inheritance",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for this lesson. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "The smallest living room",
+        "as": "আটাইতকৈ সৰু জীৱন্ত কোঠা"
+      },
+      "icon": "walk",
+      "learned": [
+        {
+          "en": "The cell is the basic unit of life; Robert Hooke named it in 1665.",
+          "as": "কোষ জীৱনৰ মূল একক; ১৬৬৫ চনত ৰবাৰ্ট হুকে ইয়াৰ নাম দিয়ে।"
+        },
+        {
+          "en": "The nucleus holds DNA and controls the cell.",
+          "as": "কেন্দ্ৰকত DNA থাকে আৰু ই কোষ নিয়ন্ত্ৰণ কৰে।"
+        },
+        {
+          "en": "Mitochondria release energy from food.",
+          "as": "মাইট'কণ্ড্ৰিয়াই খাদ্যৰ পৰা শক্তি উলিয়ায়।"
+        },
+        {
+          "en": "Plant cells have a cell wall and chloroplasts; animal cells do not.",
+          "as": "উদ্ভিদ কোষত কোষ প্ৰাচীৰ আৰু ক্ল'ৰ'প্লাষ্ট থাকে; প্ৰাণী কোষত নাথাকে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Hooke looks at a cork",
+            "as": "হুকে কৰ্ক চালে"
+          },
+          "text": [
+            {
+              "en": "In 1665, <mark>Robert Hooke</mark> viewed thin cork under a microscope and saw tiny boxes. He called them cells.",
+              "as": "১৬৬৫ চনত <mark>ৰবাৰ্ট হুকে</mark> অণুবীক্ষণ যন্ত্ৰত পাতল কৰ্ক চাই সৰু সৰু বাকচ দেখিলে। তেওঁ সেইবোৰক কোষ বুলিলে।"
+            },
+            {
+              "en": "Every living thing is made of cells: one in a bacterium, trillions in you.",
+              "as": "সকলো জীৱ কোষেৰে গঠিত: বেক্টেৰিয়াত এটা, তোমাৰ শৰীৰত লাখ লাখ কোটি।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Nucleus · control",
+                "as": "কেন্দ্ৰক · নিয়ন্ত্ৰণ"
+              },
+              {
+                "en": "Mitochondria · energy",
+                "as": "মাইট'কণ্ড্ৰিয়া · শক্তি"
+              },
+              {
+                "en": "Cell membrane · gate",
+                "as": "কোষ আৱৰণী · দুৱাৰ"
+              },
+              {
+                "en": "Ribosomes · make protein",
+                "as": "ৰাইব'জ'ম · প্ৰ'টিন গঢ়ে"
+              }
+            ]
+          },
+          "id": "sc05.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which part is called the powerhouse of the cell?",
+            "as": "কোষৰ শক্তিঘৰ কাক বোলে?"
+          },
+          "options": [
+            {
+              "en": "Nucleus",
+              "as": "কেন্দ্ৰক"
+            },
+            {
+              "en": "Mitochondrion",
+              "as": "মাইট'কণ্ড্ৰিয়ন"
+            },
+            {
+              "en": "Cell wall",
+              "as": "কোষ প্ৰাচীৰ"
+            },
+            {
+              "en": "Vacuole",
+              "as": "ৰিক্তিকা"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Mitochondria release usable energy from food.",
+            "as": "মাইট'কণ্ড্ৰিয়াই খাদ্যৰ পৰা ব্যৱহাৰযোগ্য শক্তি উলিয়ায়।"
+          },
+          "guess": true,
+          "id": "sc05.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Why plants stand without bones",
+            "as": "হাড় নোহোৱাকৈ উদ্ভিদ কিয় থিয় হৈ থাকে"
+          },
+          "text": [
+            {
+              "en": "Plant cells have a stiff <mark>cell wall</mark> of cellulose and a large vacuole, so a stem can stand upright.",
+              "as": "উদ্ভিদ কোষত চেলুল'জৰ টান <mark>কোষ প্ৰাচীৰ</mark> আৰু ডাঙৰ ৰিক্তিকা থাকে, সেয়ে কাণ্ড থিয় হৈ থাকিব পাৰে।"
+            },
+            {
+              "en": "They also have <mark>chloroplasts</mark>, where sunlight becomes food. Your cells have neither.",
+              "as": "সিহঁতৰ <mark>ক্ল'ৰ'প্লাষ্ট</mark>ো থাকে, য'ত সূৰ্যৰ পোহৰ খাদ্য হয়। তোমাৰ কোষত এই দুটাৰ এটাও নাই।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Plant cell · wall, chloroplasts",
+                "as": "উদ্ভিদ কোষ · প্ৰাচীৰ, ক্ল'ৰ'প্লাষ্ট"
+              },
+              {
+                "en": "Animal cell · neither",
+                "as": "প্ৰাণী কোষ · দুয়োটা নাই"
+              }
+            ]
+          },
+          "id": "sc05.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Nucleus",
+                "as": "কেন্দ্ৰক"
+              },
+              {
+                "en": "holds DNA",
+                "as": "DNA ধৰি ৰাখে"
+              }
+            ],
+            [
+              {
+                "en": "Chloroplast",
+                "as": "ক্ল'ৰ'প্লাষ্ট"
+              },
+              {
+                "en": "makes food",
+                "as": "খাদ্য তৈয়াৰ কৰে"
+              }
+            ],
+            [
+              {
+                "en": "Cell wall",
+                "as": "কোষ প্ৰাচীৰ"
+              },
+              {
+                "en": "gives stiffness",
+                "as": "টান কৰে"
+              }
+            ],
+            [
+              {
+                "en": "Ribosome",
+                "as": "ৰাইব'জ'ম"
+              },
+              {
+                "en": "builds proteins",
+                "as": "প্ৰ'টিন গঢ়ে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each part has one main job.",
+            "as": "প্ৰতিটো অংশৰ এটা মুখ্য কাম আছে।"
+          },
+          "id": "sc05.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Animal cells have chloroplasts.",
+            "as": "প্ৰাণী কোষত ক্ল'ৰ'প্লাষ্ট থাকে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Only plants and algae have them.",
+            "as": "কেৱল উদ্ভিদ আৰু শেলুৱৈত থাকে।"
+          },
+          "id": "sc05.u1.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Louis",
+              "Pasteur",
+              "first",
+              "named",
+              "the",
+              "cell",
+              "in",
+              "1665."
+            ],
+            "as": [
+              "লুই",
+              "পাস্তুৰে",
+              "১৬৬৫",
+              "চনত",
+              "প্ৰথম",
+              "কোষৰ",
+              "নাম",
+              "দিছিল।"
+            ]
+          },
+          "wrong": {
+            "en": 1,
+            "as": 1
+          },
+          "fix": {
+            "en": "Hooke",
+            "as": "হুকে"
+          },
+          "answerText": {
+            "en": "Pasteur",
+            "as": "পাস্তুৰে"
+          },
+          "why": {
+            "en": "Robert Hooke coined the term.",
+            "as": "ৰবাৰ্ট হুকে শব্দটো ব্যৱহাৰ কৰিছিল।"
+          },
+          "id": "sc05.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT found in an animal cell?",
+            "as": "প্ৰাণী কোষত কি নাথাকে?"
+          },
+          "options": [
+            {
+              "en": "Nucleus",
+              "as": "কেন্দ্ৰক"
+            },
+            {
+              "en": "Cell wall",
+              "as": "কোষ প্ৰাচীৰ"
+            },
+            {
+              "en": "Mitochondria",
+              "as": "মাইট'কণ্ড্ৰিয়া"
+            },
+            {
+              "en": "Cell membrane",
+              "as": "কোষ আৱৰণী"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Animal cells have a membrane but no wall.",
+            "as": "প্ৰাণী কোষত আৱৰণী আছে, প্ৰাচীৰ নাই।"
+          },
+          "id": "sc05.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Tiny friends and foes",
+        "as": "সৰু বন্ধু আৰু শত্ৰু"
+      },
+      "icon": "seal",
+      "learned": [
+        {
+          "en": "Bacteria, viruses, fungi, protozoa and algae are the main microbe groups.",
+          "as": "বেক্টেৰিয়া, ভাইৰাছ, ভেঁকুৰ, প্ৰট'জোৱা আৰু শেলুৱৈ মুখ্য অণুজীৱ গোট।"
+        },
+        {
+          "en": "Viruses reproduce only inside a living host cell.",
+          "as": "ভাইৰাছে জীৱন্ত আশ্ৰয়দাতা কোষৰ ভিতৰতহে বংশবৃদ্ধি কৰে।"
+        },
+        {
+          "en": "Lactobacillus turns milk into curd.",
+          "as": "লেক্ট'বেচিলাছে গাখীৰক দৈ কৰে।"
+        },
+        {
+          "en": "Fleming discovered penicillin from a mould in 1928.",
+          "as": "১৯২৮ চনত ফ্লেমিঙে এটা ভেঁকুৰৰ পৰা পেনিচিলিন আৱিষ্কাৰ কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The dish left by the window",
+            "as": "খিড়িকীৰ কাষত এৰা প্লেট"
+          },
+          "text": [
+            {
+              "en": "In 1928, <mark>Alexander Fleming</mark> found mould on a bacteria dish. Around it, bacteria had died.",
+              "as": "১৯২৮ চনত <mark>আলেকজেণ্ডাৰ ফ্লেমিঙে</mark> বেক্টেৰিয়াৰ প্লেটত ভেঁকুৰ দেখিলে। তাৰ চাৰিওফালে বেক্টেৰিয়া মৰি গৈছিল।"
+            },
+            {
+              "en": "That mould led to <mark>penicillin</mark>, the first widely used antibiotic. A microbe became a medicine against microbes.",
+              "as": "সেই ভেঁকুৰৰ পৰা <mark>পেনিচিলিন</mark> পোৱা গ'ল, প্ৰথম বহুল ব্যৱহৃত এণ্টিবায়'টিক। এটা অণুজীৱ অণুজীৱৰ বিৰুদ্ধে ঔষধ হ'ল।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Bacteria · single cells",
+                "as": "বেক্টেৰিয়া · একক কোষ"
+              },
+              {
+                "en": "Virus · needs a host",
+                "as": "ভাইৰাছ · আশ্ৰয়দাতা লাগে"
+              },
+              {
+                "en": "Fungi · yeast, mould",
+                "as": "ভেঁকুৰ · ইষ্ট, ফাংগাছ"
+              },
+              {
+                "en": "Protozoa · Plasmodium",
+                "as": "প্ৰট'জোৱা · প্লাজম'ডিয়াম"
+              }
+            ]
+          },
+          "id": "sc05.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which is not usually considered fully living on its own?",
+            "as": "তলৰ কোনটোক অকলে সম্পূৰ্ণ জীৱিত বুলি ধৰা নহয়?"
+          },
+          "options": [
+            {
+              "en": "Virus",
+              "as": "ভাইৰাছ"
+            },
+            {
+              "en": "Bacterium",
+              "as": "বেক্টেৰিয়া"
+            },
+            {
+              "en": "Yeast",
+              "as": "ইষ্ট"
+            },
+            {
+              "en": "Amoeba",
+              "as": "এমিবা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A virus cannot reproduce outside a host cell.",
+            "as": "ভাইৰাছে আশ্ৰয়দাতা কোষৰ বাহিৰত বংশবৃদ্ধি কৰিব নোৱাৰে।"
+          },
+          "guess": true,
+          "id": "sc05.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Your curd has workers",
+            "as": "তোমাৰ দৈত কৰ্মী আছে"
+          },
+          "text": [
+            {
+              "en": "A spoon of old curd starts new curd because <mark>Lactobacillus</mark> turns milk sugar into lactic acid.",
+              "as": "এচামুচ পুৰণি দৈয়ে নতুন দৈ পাতে, কাৰণ <mark>লেক্ট'বেচিলাছে</mark> গাখীৰৰ চেনিক লেক্টিক এচিড কৰে।"
+            },
+            {
+              "en": "In soil, <mark>Rhizobium</mark> in legume roots fixes nitrogen, and decomposers recycle dead matter. Most microbes are harmless or useful.",
+              "as": "মাটিত ডালি শস্যৰ শিপাৰ <mark>ৰাইজ'বিয়ামে</mark> নাইট্ৰজেন স্থিৰ কৰে, আৰু বিয়োজকে মৃত পদাৰ্থ ভাঙে। বেছিভাগ অণুজীৱ অনিষ্টহীন বা উপকাৰী।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Curd · Lactobacillus",
+                "as": "দৈ · লেক্ট'বেচিলাছ"
+              },
+              {
+                "en": "Bread · yeast",
+                "as": "পাউৰুটি · ইষ্ট"
+              },
+              {
+                "en": "Legume roots · Rhizobium",
+                "as": "ডালি শস্যৰ শিপা · ৰাইজ'বিয়াম"
+              }
+            ]
+          },
+          "id": "sc05.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Lactobacillus",
+                "as": "লেক্ট'বেচিলাছ"
+              },
+              {
+                "en": "curd",
+                "as": "দৈ"
+              }
+            ],
+            [
+              {
+                "en": "Yeast",
+                "as": "ইষ্ট"
+              },
+              {
+                "en": "bread dough",
+                "as": "পাউৰুটিৰ পিঠা"
+              }
+            ],
+            [
+              {
+                "en": "Penicillium",
+                "as": "পেনিচিলিয়াম"
+              },
+              {
+                "en": "antibiotic",
+                "as": "এণ্টিবায়'টিক"
+              }
+            ],
+            [
+              {
+                "en": "Rhizobium",
+                "as": "ৰাইজ'বিয়াম"
+              },
+              {
+                "en": "nitrogen fixing",
+                "as": "নাইট্ৰজেন স্থিৰীকৰণ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Useful microbes are everywhere.",
+            "as": "উপকাৰী অণুজীৱ সকলোতে আছে।"
+          },
+          "id": "sc05.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "All bacteria cause disease.",
+            "as": "সকলো বেক্টেৰিয়াই ৰোগ ঘটায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Many are harmless or useful, including gut bacteria.",
+            "as": "অন্ত্ৰৰ বেক্টেৰিয়াকে ধৰি বহুতো অনিষ্টহীন বা উপকাৰী।"
+          },
+          "id": "sc05.u2.05"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am a Scottish scientist.",
+              "as": "মই এজন স্কটিছ বিজ্ঞানী।"
+            },
+            {
+              "en": "I noticed a mould killing bacteria in 1928.",
+              "as": "মই ১৯২৮ চনত ভেঁকুৰে বেক্টেৰিয়া মৰা দেখিছিলোঁ।"
+            },
+            {
+              "en": "My discovery became penicillin.",
+              "as": "মোৰ আৱিষ্কাৰ পেনিচিলিন হ'ল।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Edward Jenner",
+              "as": "এডৱাৰ্ড জেনাৰ"
+            },
+            {
+              "en": "Robert Hooke",
+              "as": "ৰবাৰ্ট হুক"
+            },
+            {
+              "en": "Alexander Fleming",
+              "as": "আলেকজেণ্ডাৰ ফ্লেমিং"
+            },
+            {
+              "en": "Gregor Mendel",
+              "as": "গ্ৰেগৰ মেণ্ডেল"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Fleming shared a Nobel Prize in 1945.",
+            "as": "ফ্লেমিঙে ১৯৪৫ চনত যুটীয়াকৈ ন'বেল বঁটা লাভ কৰিছিল।"
+          },
+          "id": "sc05.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a microbe?",
+            "as": "তলৰ কোনটো অণুজীৱ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Amoeba",
+              "as": "এমিবা"
+            },
+            {
+              "en": "Earthworm",
+              "as": "কেঁচু"
+            },
+            {
+              "en": "Yeast",
+              "as": "ইষ্ট"
+            },
+            {
+              "en": "Bacterium",
+              "as": "বেক্টেৰিয়া"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "An earthworm is a many-celled animal you can see.",
+            "as": "কেঁচু চকুৰে দেখা বহুকোষী প্ৰাণী।"
+          },
+          "id": "sc05.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Sorting all of life",
+        "as": "সকলো জীৱ ভাগ কৰা"
+      },
+      "icon": "scroll",
+      "learned": [
+        {
+          "en": "Linnaeus gave us binomial names, such as Homo sapiens.",
+          "as": "লিনিয়াছে দ্বিপদী নাম দিছিল, যেনে Homo sapiens।"
+        },
+        {
+          "en": "Ranks run kingdom, phylum, class, order, family, genus, species.",
+          "as": "স্তৰবোৰ হ'ল জগত, পৰ্ব, শ্ৰেণী, বৰ্গ, গোত্ৰ, গণ, প্ৰজাতি।"
+        },
+        {
+          "en": "Whittaker's five kingdoms are Monera, Protista, Fungi, Plantae and Animalia.",
+          "as": "হুইটেকাৰৰ পাঁচটা জগত: মনেৰা, প্ৰটিষ্টা, ফাংগাই, প্লেণ্টি আৰু এনিমেলিয়া।"
+        },
+        {
+          "en": "Vertebrate classes are fish, amphibians, reptiles, birds and mammals.",
+          "as": "মেৰুদণ্ডী শ্ৰেণী: মাছ, উভচৰ, সৰীসৃপ, চৰাই আৰু স্তন্যপায়ী।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "One name for all languages",
+            "as": "সকলো ভাষাৰ বাবে এটা নাম"
+          },
+          "text": [
+            {
+              "en": "A rhino has different names in each language, but scientists everywhere say <mark>Rhinoceros unicornis</mark>. Carl Linnaeus set up this two-part system.",
+              "as": "গঁড়ৰ নাম ভাষাভেদে বেলেগ, কিন্তু বিজ্ঞানীয়ে সকলোতে কয় <mark>Rhinoceros unicornis</mark>। কাৰ্ল লিনিয়াছে এই দ্বিপদী পদ্ধতি গঢ়িছিল।"
+            },
+            {
+              "en": "The first word is the <mark>genus</mark> and the second the species. Humans are Homo sapiens.",
+              "as": "প্ৰথম শব্দটো <mark>গণ</mark> আৰু দ্বিতীয়টো প্ৰজাতি। মানুহ হ'ল Homo sapiens।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Kingdom",
+                "as": "জগত"
+              },
+              {
+                "en": "Class",
+                "as": "শ্ৰেণী"
+              },
+              {
+                "en": "Genus",
+                "as": "গণ"
+              },
+              {
+                "en": "Species",
+                "as": "প্ৰজাতি"
+              }
+            ]
+          },
+          "id": "sc05.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Under Whittaker's system, mushrooms belong to which kingdom?",
+            "as": "হুইটেকাৰৰ মতে কাঠফুলা কোন জগতৰ?"
+          },
+          "options": [
+            {
+              "en": "Plantae",
+              "as": "প্লেণ্টি"
+            },
+            {
+              "en": "Fungi",
+              "as": "ফাংগাই"
+            },
+            {
+              "en": "Animalia",
+              "as": "এনিমেলিয়া"
+            },
+            {
+              "en": "Monera",
+              "as": "মনেৰা"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Fungi feed on organic matter and do not photosynthesise.",
+            "as": "ভেঁকুৰে জৈৱ পদাৰ্থ খায়, সালোক সংশ্লেষণ নকৰে।"
+          },
+          "guess": true,
+          "id": "sc05.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Bat, whale and the great mistake",
+            "as": "বাদুলী, তিমি আৰু ডাঙৰ ভুল"
+          },
+          "text": [
+            {
+              "en": "A bat is no bird and a whale no fish. Both are <mark>mammals</mark>: warm-blooded, with milk for their young.",
+              "as": "বাদুলী চৰাই নহয় আৰু তিমি মাছ নহয়। দুয়োটা <mark>স্তন্যপায়ী</mark>: উষ্ণ ৰক্তৰ, পোৱালিক গাখীৰ দিয়ে।"
+            },
+            {
+              "en": "Spiders are no insects either. Insects have six legs, and spiders eight, in the class <mark>Arachnida</mark>.",
+              "as": "মকৰাও পতংগ নহয়। পতংগৰ ছটা ভৰি, আৰু মকৰাৰ আঠটা, ইহঁত <mark>এৰেকনিডা</mark> শ্ৰেণীৰ।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Fish · gills",
+                "as": "মাছ · কানকো"
+              },
+              {
+                "en": "Amphibian · frog",
+                "as": "উভচৰ · ভেকুলী"
+              },
+              {
+                "en": "Reptile · scales",
+                "as": "সৰীসৃপ · বাকলি"
+              },
+              {
+                "en": "Mammal · milk",
+                "as": "স্তন্যপায়ী · গাখীৰ"
+              }
+            ]
+          },
+          "id": "sc05.u3.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order from largest group to smallest.",
+            "as": "ডাঙৰ গোটৰ পৰা সৰু গোটলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Kingdom",
+              "as": "জগত"
+            },
+            {
+              "en": "Phylum",
+              "as": "পৰ্ব"
+            },
+            {
+              "en": "Class",
+              "as": "শ্ৰেণী"
+            },
+            {
+              "en": "Order",
+              "as": "বৰ্গ"
+            },
+            {
+              "en": "Family",
+              "as": "গোত্ৰ"
+            },
+            {
+              "en": "Genus",
+              "as": "গণ"
+            },
+            {
+              "en": "Species",
+              "as": "প্ৰজাতি"
+            }
+          ],
+          "why": {
+            "en": "Species is the narrowest rank.",
+            "as": "প্ৰজাতি আটাইতকৈ সৰু স্তৰ।"
+          },
+          "id": "sc05.u3.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Frog",
+                "as": "ভেকুলী"
+              },
+              {
+                "en": "amphibian",
+                "as": "উভচৰ"
+              }
+            ],
+            [
+              {
+                "en": "Python",
+                "as": "অজগৰ"
+              },
+              {
+                "en": "reptile",
+                "as": "সৰীসৃপ"
+              }
+            ],
+            [
+              {
+                "en": "Bat",
+                "as": "বাদুলী"
+              },
+              {
+                "en": "mammal",
+                "as": "স্তন্যপায়ী"
+              }
+            ],
+            [
+              {
+                "en": "Rohu",
+                "as": "ৰৌ মাছ"
+              },
+              {
+                "en": "fish",
+                "as": "মাছ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Ask what class each animal is in.",
+            "as": "প্ৰতিটো প্ৰাণীৰ শ্ৰেণী সোধা।"
+          },
+          "id": "sc05.u3.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A whale is a mammal.",
+            "as": "তিমি স্তন্যপায়ী।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It breathes air and nurses its young.",
+            "as": "ই বায়ু উশাহ লয় আৰু পোৱালিক গাখীৰ দিয়ে।"
+          },
+          "id": "sc05.u3.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Spiders",
+              "are",
+              "insects",
+              "with",
+              "eight",
+              "legs."
+            ],
+            "as": [
+              "মকৰা",
+              "আঠটা",
+              "ভৰিৰ",
+              "পতংগ।"
+            ]
+          },
+          "wrong": {
+            "en": 2,
+            "as": 3
+          },
+          "fix": {
+            "en": "arachnids",
+            "as": "এৰেকনিড"
+          },
+          "answerText": {
+            "en": "insects",
+            "as": "পতংগ"
+          },
+          "why": {
+            "en": "Insects have six legs.",
+            "as": "পতংগৰ ছটা ভৰি থাকে।"
+          },
+          "id": "sc05.u3.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a mammal?",
+            "as": "তলৰ কোনটো স্তন্যপায়ী?"
+          },
+          "options": [
+            {
+              "en": "Dolphin",
+              "as": "শিহু"
+            },
+            {
+              "en": "Crocodile",
+              "as": "ঘঁৰিয়াল"
+            },
+            {
+              "en": "Rohu",
+              "as": "ৰৌ মাছ"
+            },
+            {
+              "en": "Pigeon",
+              "as": "পাৰ চৰাই"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "River dolphins nurse their young.",
+            "as": "নদীৰ শিহুৱে পোৱালিক গাখীৰ দিয়ে।"
+          },
+          "id": "sc05.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Passing it on",
+        "as": "উত্তৰাধিকাৰ"
+      },
+      "icon": "seal",
+      "learned": [
+        {
+          "en": "DNA stores genetic information in genes on chromosomes.",
+          "as": "DNA ই ক্ৰ'ম'জ'মৰ জিনত বংশগত তথ্য ৰাখে।"
+        },
+        {
+          "en": "Human cells normally have 46 chromosomes in 23 pairs.",
+          "as": "মানুহৰ কোষত সাধাৰণতে ২৩ যোৰ, ৪৬টা ক্ৰ'ম'জ'ম থাকে।"
+        },
+        {
+          "en": "Gregor Mendel found the rules of inheritance using pea plants.",
+          "as": "গ্ৰেগৰ মেণ্ডেলে মটৰ গছেৰে বংশগতিৰ নিয়ম উলিয়াইছিল।"
+        },
+        {
+          "en": "The father's X or Y chromosome decides a child's biological sex.",
+          "as": "দেউতাকৰ X বা Y ক্ৰ'ম'জ'মে সন্তানৰ জৈৱিক লিংগ নিৰ্ধাৰণ কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A monk and his peas",
+            "as": "সন্ন্যাসী আৰু তেওঁৰ মটৰ"
+          },
+          "text": [
+            {
+              "en": "In the 1860s, monk <mark>Gregor Mendel</mark> crossed pea plants and counted results. Traits passed in fixed ratios.",
+              "as": "১৮৬০ৰ দশকত সন্ন্যাসী <mark>গ্ৰেগৰ মেণ্ডেলে</mark> মটৰ গছৰ সংকৰ কৰি ফল গণিলে। বৈশিষ্ট্য নিৰ্দিষ্ট অনুপাতত গৈছিল।"
+            },
+            {
+              "en": "Some traits are <mark>dominant</mark> and hide others called recessive. The hidden trait can return in the next generation.",
+              "as": "কিছুমান বৈশিষ্ট্য <mark>প্ৰভাৱী</mark>, যিয়ে অপ্ৰভাৱী বৈশিষ্ট্য লুকুৱায়। লুকাই থকা বৈশিষ্ট্য পৰৱৰ্তী প্ৰজন্মত ঘূৰি আহিব পাৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Dominant · shows",
+                "as": "প্ৰভাৱী · দেখা যায়"
+              },
+              {
+                "en": "Recessive · can hide",
+                "as": "অপ্ৰভাৱী · লুকাব পাৰে"
+              }
+            ]
+          },
+          "id": "sc05.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which molecule stores genetic information?",
+            "as": "কোনটো অণুৱে বংশগত তথ্য ৰাখে?"
+          },
+          "options": [
+            {
+              "en": "DNA",
+              "as": "DNA"
+            },
+            {
+              "en": "Glucose",
+              "as": "গ্লুক'জ"
+            },
+            {
+              "en": "Haemoglobin",
+              "as": "হিম'গ্ল'বিন"
+            },
+            {
+              "en": "Insulin",
+              "as": "ইনচুলিন"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "DNA's sequence is the code for proteins.",
+            "as": "DNA ৰ ক্ৰমে প্ৰ'টিনৰ সংকেত দিয়ে।"
+          },
+          "guess": true,
+          "id": "sc05.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Twenty-three pairs",
+            "as": "তেইশ যোৰ"
+          },
+          "text": [
+            {
+              "en": "Human cells hold <mark>46 chromosomes</mark>: 23 from each parent. Each chromosome is one long DNA molecule, packed with protein.",
+              "as": "মানুহৰ কোষত <mark>৪৬টা ক্ৰ'ম'জ'ম</mark>: প্ৰতিগৰাকী অভিভাৱকৰ পৰা ২৩টাকৈ। প্ৰতিটো ক্ৰ'ম'জ'ম প্ৰ'টিনেৰে সজোৱা এটা দীঘল DNA অণু।"
+            },
+            {
+              "en": "Mothers pass an X. Fathers pass X or Y: XX is typically female and XY male.",
+              "as": "মাতৃয়ে X দিয়ে। পিতৃয়ে X বা Y দিয়ে: XX সাধাৰণতে মহিলা আৰু XY পুৰুষ।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "DNA",
+                "as": "DNA"
+              },
+              {
+                "en": "Gene",
+                "as": "জিন"
+              },
+              {
+                "en": "Chromosome",
+                "as": "ক্ৰ'ম'জ'ম"
+              },
+              {
+                "en": "Nucleus",
+                "as": "কেন্দ্ৰক"
+              }
+            ]
+          },
+          "id": "sc05.u4.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order from smallest to largest.",
+            "as": "সৰুৰ পৰা ডাঙৰলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Gene",
+              "as": "জিন"
+            },
+            {
+              "en": "Chromosome",
+              "as": "ক্ৰ'ম'জ'ম"
+            },
+            {
+              "en": "Nucleus",
+              "as": "কেন্দ্ৰক"
+            },
+            {
+              "en": "Cell",
+              "as": "কোষ"
+            }
+          ],
+          "why": {
+            "en": "A gene sits on a chromosome, in a nucleus, inside a cell.",
+            "as": "জিন ক্ৰ'ম'জ'মত, ক্ৰ'ম'জ'ম কেন্দ্ৰকত, কেন্দ্ৰক কোষত থাকে।"
+          },
+          "id": "sc05.u4.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Mendel",
+                "as": "মেণ্ডেল"
+              },
+              {
+                "en": "pea experiments",
+                "as": "মটৰৰ পৰীক্ষা"
+              }
+            ],
+            [
+              {
+                "en": "Dominant trait",
+                "as": "প্ৰভাৱী বৈশিষ্ট্য"
+              },
+              {
+                "en": "shows when present",
+                "as": "থাকিলে দেখা যায়"
+              }
+            ],
+            [
+              {
+                "en": "46",
+                "as": "৪৬"
+              },
+              {
+                "en": "human chromosomes",
+                "as": "মানুহৰ ক্ৰ'ম'জ'ম"
+              }
+            ],
+            [
+              {
+                "en": "XY",
+                "as": "XY"
+              },
+              {
+                "en": "typical male pair",
+                "as": "সাধাৰণ পুৰুষ যোৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Link each name or number to its meaning.",
+            "as": "প্ৰতিটো নাম বা সংখ্যা অৰ্থৰ সৈতে যোৰা।"
+          },
+          "id": "sc05.u4.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A child's biological sex is decided by the mother's chromosome alone.",
+            "as": "সন্তানৰ জৈৱিক লিংগ কেৱল মাতৃৰ ক্ৰ'ম'জ'মে নিৰ্ধাৰণ কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The mother gives X; the father's X or Y decides.",
+            "as": "মাতৃয়ে X দিয়ে; পিতৃৰ X বা Y ই নিৰ্ধাৰণ কৰে।"
+          },
+          "id": "sc05.u4.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Human body cells usually contain this many chromosome pairs:",
+            "as": "মানৱ শৰীৰৰ কোষত সাধাৰণতে থকা ক্ৰ'ম'জ'ম যোৰৰ সংখ্যা:"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "23",
+              "as": "২৩"
+            },
+            {
+              "en": "46",
+              "as": "৪৬"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "23 pairs make 46 chromosomes.",
+            "as": "২৩ যোৰ মানে ৪৬টা ক্ৰ'ম'জ'ম।"
+          },
+          "id": "sc05.u4.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the unit of heredity.",
+            "as": "বংশগতিৰ এককটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "G",
+              "E",
+              "N",
+              "E"
+            ],
+            "as": [
+              "জি",
+              "ন"
+            ]
+          },
+          "answerText": {
+            "en": "GENE",
+            "as": "জিন"
+          },
+          "why": {
+            "en": "Genes are sections of DNA.",
+            "as": "জিন DNA ৰ অংশ।"
+          },
+          "id": "sc05.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Life science check",
+      "as": "জীৱ বিজ্ঞান পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Who proposed the two-part naming of species?",
+          "as": "প্ৰজাতিৰ দ্বিপদী নামকৰণ কোনে দিছিল?"
+        },
+        "options": [
+          {
+            "en": "Carl Linnaeus",
+            "as": "কাৰ্ল লিনিয়াছ"
+          },
+          {
+            "en": "Robert Hooke",
+            "as": "ৰবাৰ্ট হুক"
+          },
+          {
+            "en": "Charles Darwin",
+            "as": "চাৰ্লছ ডাৰউইন"
+          },
+          {
+            "en": "Gregor Mendel",
+            "as": "গ্ৰেগৰ মেণ্ডেল"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Linnaeus set out binomial nomenclature.",
+          "as": "লিনিয়াছে দ্বিপদী নামকৰণ দিছিল।"
+        },
+        "id": "sc05.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Viruses reproduce only inside living cells.",
+          "as": "ভাইৰাছে জীৱন্ত কোষৰ ভিতৰতহে বংশবৃদ্ধি কৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "They need a host cell's machinery.",
+          "as": "সিহঁতক আশ্ৰয়দাতা কোষৰ যন্ত্ৰ লাগে।"
+        },
+        "id": "sc05.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Mitochondria",
+              "as": "মাইট'কণ্ড্ৰিয়া"
+            },
+            {
+              "en": "cell energy",
+              "as": "কোষৰ শক্তি"
+            }
+          ],
+          [
+            {
+              "en": "Penicillin",
+              "as": "পেনিচিলিন"
+            },
+            {
+              "en": "from a mould",
+              "as": "ভেঁকুৰৰ পৰা"
+            }
+          ],
+          [
+            {
+              "en": "Amphibian",
+              "as": "উভচৰ"
+            },
+            {
+              "en": "frog",
+              "as": "ভেকুলী"
+            }
+          ],
+          [
+            {
+              "en": "Mendel",
+              "as": "মেণ্ডেল"
+            },
+            {
+              "en": "inheritance",
+              "as": "বংশগতি"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One item per unit.",
+          "as": "প্ৰতিটো গোটৰ এটাকৈ।"
+        },
+        "id": "sc05.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is NOT one of Whittaker's five kingdoms?",
+          "as": "তলৰ কোনটো হুইটেকাৰৰ পাঁচ জগতৰ নহয়?"
+        },
+        "options": [
+          {
+            "en": "Fungi",
+            "as": "ফাংগাই"
+          },
+          {
+            "en": "Monera",
+            "as": "মনেৰা"
+          },
+          {
+            "en": "Virus",
+            "as": "ভাইৰাছ"
+          },
+          {
+            "en": "Protista",
+            "as": "প্ৰটিষ্টা"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Viruses sit outside the five kingdoms.",
+          "as": "ভাইৰাছ পাঁচ জগতৰ বাহিৰত।"
+        },
+        "id": "sc05.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order the ranks, broad to narrow.",
+          "as": "স্তৰবোৰ বহলৰ পৰা ঠেকলৈ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Kingdom",
+            "as": "জগত"
+          },
+          {
+            "en": "Class",
+            "as": "শ্ৰেণী"
+          },
+          {
+            "en": "Genus",
+            "as": "গণ"
+          },
+          {
+            "en": "Species",
+            "as": "প্ৰজাতি"
+          }
+        ],
+        "why": {
+          "en": "Species is narrowest.",
+          "as": "প্ৰজাতি আটাইতকৈ ঠেক।"
+        },
+        "id": "sc05.test.05"
+      }
+    ]
+  }
+}

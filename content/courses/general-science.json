@@ -1,0 +1,245 @@
+{
+  "id": "general-science",
+  "order": 10,
+  "title": {
+    "en": "General Science & Environment",
+    "as": "সাধাৰণ বিজ্ঞান আৰু পৰিৱেশ"
+  },
+  "eyebrow": {
+    "en": "Everyday science",
+    "as": "দৈনন্দিন বিজ্ঞান"
+  },
+  "subtitle": {
+    "en": "Body, space, nature and how things work",
+    "as": "শৰীৰ, মহাকাশ, প্ৰকৃতি আৰু বস্তুৰ কাৰ্যপ্ৰণালী"
+  },
+  "tabs": [
+    "lessons",
+    "profile"
+  ],
+  "bank": "content/questions/general-science.json",
+  "eras": [
+    {
+      "id": "sc-physical",
+      "title": {
+        "en": "Physics and chemistry",
+        "as": "পদাৰ্থ আৰু ৰসায়ন"
+      },
+      "from": 1,
+      "to": 4
+    },
+    {
+      "id": "sc-life",
+      "title": {
+        "en": "Life and health",
+        "as": "জীৱন আৰু স্বাস্থ্য"
+      },
+      "from": 5,
+      "to": 7
+    },
+    {
+      "id": "sc-tech",
+      "title": {
+        "en": "Science and technology",
+        "as": "বিজ্ঞান আৰু প্ৰযুক্তি"
+      },
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "sc-env",
+      "title": {
+        "en": "Environment",
+        "as": "পৰিৱেশ"
+      },
+      "from": 10,
+      "to": 12
+    }
+  ],
+  "kings": [
+    {
+      "n": 1,
+      "id": "sc-01-motion",
+      "name": {
+        "en": "Motion and force",
+        "as": "গতি আৰু বল"
+      },
+      "reign": {
+        "en": "Physics",
+        "as": "পদাৰ্থ"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-01-motion"
+    },
+    {
+      "n": 2,
+      "id": "sc-02-energy",
+      "name": {
+        "en": "Energy around us",
+        "as": "চাৰিওফালৰ শক্তি"
+      },
+      "reign": {
+        "en": "Physics",
+        "as": "পদাৰ্থ"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-02-energy"
+    },
+    {
+      "n": 3,
+      "id": "sc-03-matter",
+      "name": {
+        "en": "What matter is made of",
+        "as": "পদাৰ্থৰ গঠন"
+      },
+      "reign": {
+        "en": "Chemistry",
+        "as": "ৰসায়ন"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-03-matter"
+    },
+    {
+      "n": 4,
+      "id": "sc-04-everyday-chemistry",
+      "name": {
+        "en": "Everyday chemistry",
+        "as": "দৈনন্দিন ৰসায়ন"
+      },
+      "reign": {
+        "en": "Chemistry",
+        "as": "ৰসায়ন"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-04-everyday-chemistry"
+    },
+    {
+      "n": 5,
+      "id": "sc-05-living-things",
+      "name": {
+        "en": "Living things",
+        "as": "জীৱ-জগত"
+      },
+      "reign": {
+        "en": "Biology",
+        "as": "জীৱবিজ্ঞান"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-05-living-things"
+    },
+    {
+      "n": 6,
+      "id": "sc-06-plants-farming",
+      "name": {
+        "en": "Plants and farming",
+        "as": "উদ্ভিদ আৰু কৃষি"
+      },
+      "reign": {
+        "en": "Biology",
+        "as": "জীৱবিজ্ঞান"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-06-plants-farming"
+    },
+    {
+      "n": 7,
+      "id": "sc-07-human-body",
+      "name": {
+        "en": "Inside the human body",
+        "as": "মানৱ শৰীৰৰ ভিতৰত"
+      },
+      "reign": {
+        "en": "Health",
+        "as": "স্বাস্থ্য"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-07-human-body"
+    },
+    {
+      "n": 8,
+      "id": "sc-08-space",
+      "name": {
+        "en": "Space and India's missions",
+        "as": "মহাকাশ আৰু ভাৰতৰ অভিযান"
+      },
+      "reign": {
+        "en": "Science and technology",
+        "as": "বিজ্ঞান আৰু প্ৰযুক্তি"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-08-space"
+    },
+    {
+      "n": 9,
+      "id": "sc-09-technology",
+      "name": {
+        "en": "Technology today",
+        "as": "আজিৰ প্ৰযুক্তি"
+      },
+      "reign": {
+        "en": "Science and technology",
+        "as": "বিজ্ঞান আৰু প্ৰযুক্তি"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-09-technology"
+    },
+    {
+      "n": 10,
+      "id": "sc-10-ecology",
+      "name": {
+        "en": "Ecosystems and pollution",
+        "as": "পৰিস্থিতি তন্ত্ৰ আৰু প্ৰদূষণ"
+      },
+      "reign": {
+        "en": "Environment",
+        "as": "পৰিৱেশ"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-10-ecology"
+    },
+    {
+      "n": 11,
+      "id": "sc-11-climate",
+      "name": {
+        "en": "Climate and energy",
+        "as": "জলবায়ু আৰু শক্তি"
+      },
+      "reign": {
+        "en": "Environment",
+        "as": "পৰিৱেশ"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-11-climate"
+    },
+    {
+      "n": 12,
+      "id": "sc-12-conservation",
+      "name": {
+        "en": "Conservation in Assam",
+        "as": "অসমত সংৰক্ষণ"
+      },
+      "reign": {
+        "en": "Environment",
+        "as": "পৰিৱেশ"
+      },
+      "face": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+      "tier": "B",
+      "lesson": "sc-12-conservation"
+    }
+  ],
+  "eraWord": {
+    "en": "section",
+    "as": "খণ্ড"
+  }
+}

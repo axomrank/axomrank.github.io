@@ -1,0 +1,1355 @@
+{
+  "id": "sc-10-ecology",
+  "course": "general-science",
+  "no": 10,
+  "version": 1,
+  "king": {
+    "en": "Ecosystems and pollution",
+    "as": "পৰিস্থিতি তন্ত্ৰ আৰু প্ৰদূষণ"
+  },
+  "reign": {
+    "en": "Environment",
+    "as": "পৰিৱেশ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science and Biology textbooks: ecosystems and environmental issues",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for food chains, pollution and waste. Passages still to be read."
+    },
+    {
+      "title": "Critical Ecosystem Partnership Fund: Biodiversity hotspots",
+      "url": "https://www.cepf.net/our-work/biodiversity-hotspots",
+      "used_for": "Lead for the hotspot definition and India's four hotspots. Passage still to be read."
+    },
+    {
+      "title": "Ministry of Environment, Forest and Climate Change",
+      "url": "https://moef.gov.in/",
+      "used_for": "Lead for waste rules. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Who eats whom",
+        "as": "কোনে কাক খায়"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "Producers make food from sunlight; consumers eat other organisms.",
+          "as": "উৎপাদকে সূৰ্যৰ পোহৰৰ পৰা খাদ্য তৈয়াৰ কৰে; খাদকে আন জীৱ খায়।"
+        },
+        {
+          "en": "Decomposers break dead matter down and return nutrients to the soil.",
+          "as": "বিয়োজকে মৃত পদাৰ্থ ভাঙি পুষ্টি মাটিলৈ ঘূৰাই দিয়ে।"
+        },
+        {
+          "en": "Only about 10% of energy passes to the next level of a food chain.",
+          "as": "খাদ্য শৃংখলৰ পৰৱৰ্তী স্তৰলৈ প্ৰায় ১০% শক্তিহে যায়।"
+        },
+        {
+          "en": "An ecosystem is living things plus their non-living surroundings.",
+          "as": "জীৱ আৰু সিহঁতৰ নিৰ্জীৱ পৰিৱেশ মিলি পৰিস্থিতি তন্ত্ৰ হয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why tigers are so few",
+            "as": "বাঘ কিয় ইমান কম"
+          },
+          "text": [
+            {
+              "en": "Grass feeds deer and deer feed tigers, but each step loses most of its energy as heat. Only about <mark>10%</mark> moves up.",
+              "as": "ঘাঁহে হৰিণক আৰু হৰিণে বাঘক খুৱায়, কিন্তু প্ৰতিটো স্তৰত বেছিভাগ শক্তি তাপ হৈ হেৰায়। প্ৰায় <mark>১০%</mark> হে ওপৰলৈ যায়।"
+            },
+            {
+              "en": "That is why a forest holds huge amounts of grass, many deer and very few tigers.",
+              "as": "সেয়ে অৰণ্যত ঘাঁহ অপৰিমিত, হৰিণ বহুত, কিন্তু বাঘ অতি কম।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Grass · producer",
+                "as": "ঘাঁহ · উৎপাদক"
+              },
+              {
+                "en": "Deer · herbivore",
+                "as": "হৰিণ · তৃণভোজী"
+              },
+              {
+                "en": "Tiger · top carnivore",
+                "as": "বাঘ · শীৰ্ষ মাংসভোজী"
+              }
+            ]
+          },
+          "id": "sc10.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "If 1,000 units of energy are in the grass, about how much reaches the deer?",
+            "as": "ঘাঁহত ১,০০০ একক শক্তি থাকিলে হৰিণলৈ প্ৰায় কিমান যায়?"
+          },
+          "options": [
+            {
+              "en": "1,000 units",
+              "as": "১,০০০ একক"
+            },
+            {
+              "en": "500 units",
+              "as": "৫০০ একক"
+            },
+            {
+              "en": "100 units",
+              "as": "১০০ একক"
+            },
+            {
+              "en": "10 units",
+              "as": "১০ একক"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "About 10% passes up: 100 units to the deer, then about 10 to the tiger.",
+            "as": "প্ৰায় ১০% ওপৰলৈ যায়: হৰিণলৈ ১০০ একক, তাৰ পিছত বাঘলৈ প্ৰায় ১০ একক।"
+          },
+          "guess": true,
+          "id": "sc10.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "The cleaners nobody sees",
+            "as": "নেদেখা পৰিষ্কাৰকাৰী"
+          },
+          "text": [
+            {
+              "en": "When a leaf falls, <mark>fungi and bacteria</mark> break it down. Without these decomposers, nutrients would stay locked in dead matter.",
+              "as": "পাত সৰিলে <mark>ভেঁকুৰ আৰু বেক্টেৰিয়া</mark>ই ইয়াক ভাঙে। এই বিয়োজক নহ'লে পুষ্টি মৃত পদাৰ্থতে আবদ্ধ হৈ থাকিলহেঁতেন।"
+            },
+            {
+              "en": "Air, water, soil and light are the non-living part. Together with living things they form an <mark>ecosystem</mark>.",
+              "as": "বায়ু, পানী, মাটি আৰু পোহৰ নিৰ্জীৱ অংশ। জীৱৰ সৈতে মিলি এইবোৰে <mark>পৰিস্থিতি তন্ত্ৰ</mark> গঢ়ে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Living · plants, animals, microbes",
+                "as": "সজীৱ · উদ্ভিদ, জন্তু, অণুজীৱ"
+              },
+              {
+                "en": "Non-living · air, water, soil, light",
+                "as": "নিৰ্জীৱ · বায়ু, পানী, মাটি, পোহৰ"
+              }
+            ]
+          },
+          "id": "sc10.u1.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Build a pond food chain, starting from the producer.",
+            "as": "উৎপাদকৰ পৰা পুখুৰীৰ খাদ্য শৃংখল সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Algae",
+              "as": "শেলুৱৈ"
+            },
+            {
+              "en": "Small insect larva",
+              "as": "সৰু পোকৰ লাৰ্ভা"
+            },
+            {
+              "en": "Small fish",
+              "as": "সৰু মাছ"
+            },
+            {
+              "en": "Kingfisher",
+              "as": "মাছৰোকা"
+            }
+          ],
+          "why": {
+            "en": "Energy flows from the producer up to the top consumer.",
+            "as": "শক্তি উৎপাদকৰ পৰা শীৰ্ষ খাদকলৈ যায়।"
+          },
+          "id": "sc10.u1.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Producer",
+                "as": "উৎপাদক"
+              },
+              {
+                "en": "rice plant",
+                "as": "ধান গছ"
+              }
+            ],
+            [
+              {
+                "en": "Herbivore",
+                "as": "তৃণভোজী"
+              },
+              {
+                "en": "rhinoceros",
+                "as": "গঁড়"
+              }
+            ],
+            [
+              {
+                "en": "Carnivore",
+                "as": "মাংসভোজী"
+              },
+              {
+                "en": "tiger",
+                "as": "বাঘ"
+              }
+            ],
+            [
+              {
+                "en": "Decomposer",
+                "as": "বিয়োজক"
+              },
+              {
+                "en": "fungus",
+                "as": "ভেঁকুৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each role has its everyday example.",
+            "as": "প্ৰতিটো ভূমিকাৰ এটা দৈনন্দিন উদাহৰণ আছে।"
+          },
+          "id": "sc10.u1.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Energy flows through a food chain in a cycle, returning to the plants.",
+            "as": "খাদ্য শৃংখলত শক্তি চক্ৰাকাৰে ঘূৰি উদ্ভিদলৈ উভতি আহে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Energy flows one way and leaves as heat. Nutrients are what cycle.",
+            "as": "শক্তি এক দিশে গৈ তাপ হৈ ওলাই যায়। পুষ্টিহে চক্ৰাকাৰে ঘূৰে।"
+          },
+          "id": "sc10.u1.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one is NOT a living part of an ecosystem?",
+            "as": "তলৰ কোনটো পৰিস্থিতি তন্ত্ৰৰ সজীৱ অংশ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Sunlight",
+              "as": "সূৰ্যৰ পোহৰ"
+            },
+            {
+              "en": "Algae",
+              "as": "শেলুৱৈ"
+            },
+            {
+              "en": "Earthworm",
+              "as": "কেঁচু"
+            },
+            {
+              "en": "Fungus",
+              "as": "ভেঁকুৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Sunlight is a non-living factor.",
+            "as": "সূৰ্যৰ পোহৰ নিৰ্জীৱ উপাদান।"
+          },
+          "id": "sc10.u1.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the group that makes its own food.",
+            "as": "নিজৰ খাদ্য নিজে তৈয়াৰ কৰা গোটটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "P",
+              "R",
+              "O",
+              "D",
+              "U",
+              "C",
+              "E",
+              "R"
+            ],
+            "as": [
+              "উৎ",
+              "পা",
+              "দ",
+              "ক"
+            ]
+          },
+          "answerText": {
+            "en": "PRODUCER",
+            "as": "উৎপাদক"
+          },
+          "why": {
+            "en": "Green plants and algae are producers.",
+            "as": "সেউজ উদ্ভিদ আৰু শেলুৱৈ উৎপাদক।"
+          },
+          "id": "sc10.u1.08"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "The richness of life",
+        "as": "জীৱনৰ সমৃদ্ধি"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "Biodiversity means variety of genes, species and ecosystems.",
+          "as": "জৈৱ বৈচিত্ৰ্য মানে জিন, প্ৰজাতি আৰু পৰিস্থিতি তন্ত্ৰৰ বিভিন্নতা।"
+        },
+        {
+          "en": "A biodiversity hotspot is rich in endemic species and heavily threatened.",
+          "as": "জৈৱ বৈচিত্ৰ্যৰ হটস্পট স্থানীয় প্ৰজাতিৰে সমৃদ্ধ আৰু অতি বিপদাপন্ন।"
+        },
+        {
+          "en": "India has four hotspots; Assam lies in the Indo-Burma region.",
+          "as": "ভাৰতত চাৰিটা হটস্পট আছে; অসম ইন্দো-বাৰ্মা অঞ্চলত পৰে।"
+        },
+        {
+          "en": "Water hyacinth is an invasive plant that chokes Assam's wetlands.",
+          "as": "পানী মেটেকা অসমৰ জলাভূমি আবৰি ধৰা এক আক্ৰমণকাৰী উদ্ভিদ।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Hot means rich and threatened",
+            "as": "হটস্পট মানে সমৃদ্ধ আৰু বিপদাপন্ন"
+          },
+          "text": [
+            {
+              "en": "A <mark>hotspot</mark> needs two things: many endemic species found nowhere else, and heavy loss of original habitat.",
+              "as": "<mark>হটস্পট</mark> হ'বলৈ দুটা কথা লাগে: আন ক'তো নোপোৱা বহু স্থানীয় প্ৰজাতি, আৰু মূল বাসস্থানৰ ব্যাপক ক্ষতি।"
+            },
+            {
+              "en": "India touches four: the Himalaya, Indo-Burma, the Western Ghats and Sundaland in the Nicobar Islands.",
+              "as": "ভাৰতত চাৰিটা পৰে: হিমালয়, ইন্দো-বাৰ্মা, পশ্চিমঘাট আৰু নিকোবৰ দ্বীপৰ চুণ্ডালেণ্ড।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Himalaya",
+                "as": "হিমালয়"
+              },
+              {
+                "en": "Indo-Burma",
+                "as": "ইন্দো-বাৰ্মা"
+              },
+              {
+                "en": "Western Ghats",
+                "as": "পশ্চিমঘাট"
+              },
+              {
+                "en": "Sundaland",
+                "as": "চুণ্ডালেণ্ড"
+              }
+            ]
+          },
+          "id": "sc10.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "A species found only in one region is called what?",
+            "as": "এটা অঞ্চলতহে পোৱা প্ৰজাতিক কি বোলে?"
+          },
+          "options": [
+            {
+              "en": "Invasive",
+              "as": "আক্ৰমণকাৰী"
+            },
+            {
+              "en": "Endemic",
+              "as": "স্থানীয়"
+            },
+            {
+              "en": "Exotic",
+              "as": "বিদেশী"
+            },
+            {
+              "en": "Extinct",
+              "as": "বিলুপ্ত"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Endemic species live in one region only; the pygmy hog's range is now very small.",
+            "as": "স্থানীয় প্ৰজাতি এটা অঞ্চলতহে থাকে; নিগনি গাহৰিৰ বিস্তাৰ এতিয়া অতি সীমিত।"
+          },
+          "guess": true,
+          "id": "sc10.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "The beautiful plant that strangles",
+            "as": "গলটিপা ধুনীয়া উদ্ভিদ"
+          },
+          "text": [
+            {
+              "en": "<mark>Water hyacinth</mark>, or pani meteka, has lovely purple flowers. It came from South America and spreads fast across still water.",
+              "as": "<mark>পানী মেটেকা</mark>ৰ ধুনীয়া বেঙুনীয়া ফুল থাকে। ই দক্ষিণ আমেৰিকাৰ পৰা আহি স্থিৰ পানীত দ্ৰুত বিয়পে।"
+            },
+            {
+              "en": "A thick mat blocks light, lowers oxygen and crowds out fish. An <mark>invasive species</mark> succeeds because its natural checks stayed behind.",
+              "as": "ডাঠ আৱৰণে পোহৰ ৰোধ কৰে, অক্সিজেন কমায় আৰু মাছৰ ঠাই কাঢ়ি লয়। <mark>আক্ৰমণকাৰী প্ৰজাতি</mark>ৰ প্ৰাকৃতিক নিয়ন্ত্ৰণ পিছত ৰৈ যোৱাৰ বাবেই ই সফল হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Native · evolved here",
+                "as": "স্থানীয় · ইয়াতে বিকশিত"
+              },
+              {
+                "en": "Invasive · introduced, spreads harmfully",
+                "as": "আক্ৰমণকাৰী · বাহিৰৰ পৰা আহি ক্ষতিকৰভাৱে বিয়পে"
+              }
+            ]
+          },
+          "id": "sc10.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Genetic diversity",
+                "as": "জিনগত বৈচিত্ৰ্য"
+              },
+              {
+                "en": "many varieties of rice",
+                "as": "ধানৰ বহু জাত"
+              }
+            ],
+            [
+              {
+                "en": "Species diversity",
+                "as": "প্ৰজাতিৰ বৈচিত্ৰ্য"
+              },
+              {
+                "en": "many kinds of bird",
+                "as": "বহু বিধৰ চৰাই"
+              }
+            ],
+            [
+              {
+                "en": "Ecosystem diversity",
+                "as": "পৰিস্থিতি তন্ত্ৰৰ বৈচিত্ৰ্য"
+              },
+              {
+                "en": "forest, grassland, beel",
+                "as": "অৰণ্য, তৃণভূমি, বিল"
+              }
+            ],
+            [
+              {
+                "en": "Endemic",
+                "as": "স্থানীয়"
+              },
+              {
+                "en": "found in one region",
+                "as": "এটা অঞ্চলত পোৱা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Biodiversity has three levels.",
+            "as": "জৈৱ বৈচিত্ৰ্যৰ তিনিটা স্তৰ আছে।"
+          },
+          "id": "sc10.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "A place needs only many species to be called a hotspot.",
+            "as": "কেৱল বহু প্ৰজাতি থাকিলেই ঠাই এখন হটস্পট হয়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "It also needs endemic species and serious habitat loss.",
+            "as": "স্থানীয় প্ৰজাতি আৰু বাসস্থানৰ গুৰুতৰ ক্ষতিও লাগে।"
+          },
+          "id": "sc10.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT one of India's four hotspots?",
+            "as": "তলৰ কোনটো ভাৰতৰ চাৰিটা হটস্পটৰ এটা নহয়?"
+          },
+          "options": [
+            {
+              "en": "Western Ghats",
+              "as": "পশ্চিমঘাট"
+            },
+            {
+              "en": "Thar Desert",
+              "as": "থৰ মৰুভূমি"
+            },
+            {
+              "en": "Indo-Burma",
+              "as": "ইন্দো-বাৰ্মা"
+            },
+            {
+              "en": "Himalaya",
+              "as": "হিমালয়"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The Thar is not a listed hotspot.",
+            "as": "থৰ হটস্পটৰ তালিকাত নাই।"
+          },
+          "id": "sc10.u2.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Water hyacinth harms a beel because it blocks",
+            "as": "পানী মেটেকাই বিলৰ ক্ষতি কৰে, কাৰণ ই ৰোধ কৰে:"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "light and oxygen",
+              "as": "পোহৰ আৰু অক্সিজেন"
+            },
+            {
+              "en": "all rainfall",
+              "as": "সকলো বৰষুণ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Plants below die, and fish lose oxygen.",
+            "as": "তলৰ উদ্ভিদ মৰে, আৰু মাছে অক্সিজেন নাপায়।"
+          },
+          "id": "sc10.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "What dirties air and water",
+        "as": "বায়ু আৰু পানী কিহে লেতেৰা কৰে"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "PM2.5 particles are fine enough to reach deep into the lungs.",
+          "as": "PM2.5 কণা ইমান সৰু যে হাঁওফাঁওৰ ভিতৰলৈ সোমাব পাৰে।"
+        },
+        {
+          "en": "Sulphur and nitrogen oxides cause acid rain.",
+          "as": "ছালফাৰ আৰু নাইট্ৰজেনৰ অক্সাইডে এচিড বৰষুণ ঘটায়।"
+        },
+        {
+          "en": "Nutrient-rich runoff causes algal blooms, a process called eutrophication.",
+          "as": "পুষ্টিসমৃদ্ধ পানীয়ে শেলুৱৈ বঢ়ায়; এই প্ৰক্ৰিয়াক ইউট্ৰ'ফিকেচন বোলে।"
+        },
+        {
+          "en": "Biomagnification concentrates some poisons up the food chain.",
+          "as": "জৈৱ বিবৰ্ধনে কিছুমান বিষ খাদ্য শৃংখলৰ ওপৰলৈ ঘনীভূত কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A green pond can be dying",
+            "as": "সেউজ পুখুৰী মৰি থাকিব পাৰে"
+          },
+          "text": [
+            {
+              "en": "Fertiliser and sewage feed algae until a pond turns green. This is <mark>eutrophication</mark>.",
+              "as": "সাৰ আৰু নৰ্দমাৰ পানীয়ে শেলুৱৈ বঢ়াই পুখুৰী সেউজ কৰে। ইয়াকে <mark>ইউট্ৰ'ফিকেচন</mark> বোলে।"
+            },
+            {
+              "en": "When algae die, bacteria use up the oxygen decomposing them, and fish suffocate. High <mark>BOD</mark> signals dirty water.",
+              "as": "শেলুৱৈ মৰিলে বেক্টেৰিয়াই সিহঁতক ভাঙোঁতে অক্সিজেন শেষ কৰে, আৰু মাছ মৰে। উচ্চ <mark>BOD</mark> লেতেৰা পানীৰ চিন।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Extra nutrients",
+                "as": "অতিৰিক্ত পুষ্টি"
+              },
+              {
+                "en": "Algal bloom",
+                "as": "শেলুৱৈৰ বৃদ্ধি"
+              },
+              {
+                "en": "Oxygen falls",
+                "as": "অক্সিজেন কমে"
+              },
+              {
+                "en": "Fish die",
+                "as": "মাছ মৰে"
+              }
+            ]
+          },
+          "id": "sc10.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "High BOD in a river usually means what?",
+            "as": "নদীত উচ্চ BOD ৰ অৰ্থ সাধাৰণতে কি?"
+          },
+          "options": [
+            {
+              "en": "Cleaner water",
+              "as": "অধিক চাফা পানী"
+            },
+            {
+              "en": "More organic pollution",
+              "as": "অধিক জৈৱ প্ৰদূষণ"
+            },
+            {
+              "en": "Colder water",
+              "as": "অধিক ঠাণ্ডা পানী"
+            },
+            {
+              "en": "Faster flow",
+              "as": "অধিক বেগী সোঁত"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "BOD is the oxygen microbes need to break down organic matter.",
+            "as": "জৈৱ পদাৰ্থ ভাঙিবলৈ অণুজীৱক লগা অক্সিজেনেই BOD।"
+          },
+          "guess": true,
+          "id": "sc10.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Poison that climbs the chain",
+            "as": "শৃংখল বগাই উঠা বিষ"
+          },
+          "text": [
+            {
+              "en": "Some pollutants, like DDT and mercury, stay in body fat. Each predator eats many prey, so the dose rises: <mark>biomagnification</mark>.",
+              "as": "DDT আৰু পাৰাৰ দৰে কিছুমান প্ৰদূষক শৰীৰৰ চৰ্বিত থাকে। প্ৰতিটো চিকাৰীয়ে বহু চিকাৰ খায়, সেয়ে মাত্ৰা বাঢ়ে: <mark>জৈৱ বিবৰ্ধন</mark>।"
+            },
+            {
+              "en": "In the air, <mark>PM2.5</mark> reaches deep into lungs, while sulphur and nitrogen oxides return as acid rain.",
+              "as": "বায়ুত <mark>PM2.5</mark> হাঁওফাঁওৰ ভিতৰলৈ যায়, আৰু ছালফাৰ আৰু নাইট্ৰজেনৰ অক্সাইড এচিড বৰষুণ হৈ উভতি আহে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "PM2.5 · lungs",
+                "as": "PM2.5 · হাঁওফাঁও"
+              },
+              {
+                "en": "SO₂, NOx · acid rain",
+                "as": "SO₂, NOx · এচিড বৰষুণ"
+              },
+              {
+                "en": "CFCs · ozone layer",
+                "as": "CFC · অজ'ন স্তৰ"
+              }
+            ]
+          },
+          "id": "sc10.u3.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Follow eutrophication in order.",
+            "as": "ইউট্ৰ'ফিকেচন ক্ৰমে অনুসৰণ কৰা।"
+          },
+          "items": [
+            {
+              "en": "Nutrients enter the pond",
+              "as": "পুখুৰীত পুষ্টি সোমায়"
+            },
+            {
+              "en": "Algae multiply",
+              "as": "শেলুৱৈ বাঢ়ে"
+            },
+            {
+              "en": "Algae die and decay",
+              "as": "শেলুৱৈ মৰি পচে"
+            },
+            {
+              "en": "Oxygen falls, fish die",
+              "as": "অক্সিজেন কমে, মাছ মৰে"
+            }
+          ],
+          "why": {
+            "en": "Decay, not the algae itself, removes most of the oxygen.",
+            "as": "মূলতঃ পচন প্ৰক্ৰিয়াই অক্সিজেন শেষ কৰে।"
+          },
+          "id": "sc10.u3.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "PM2.5",
+                "as": "PM2.5"
+              },
+              {
+                "en": "deep lung damage",
+                "as": "হাঁওফাঁওৰ গভীৰ ক্ষতি"
+              }
+            ],
+            [
+              {
+                "en": "Sulphur dioxide",
+                "as": "ছালফাৰ ডাই অক্সাইড"
+              },
+              {
+                "en": "acid rain",
+                "as": "এচিড বৰষুণ"
+              }
+            ],
+            [
+              {
+                "en": "CFCs",
+                "as": "CFC"
+              },
+              {
+                "en": "ozone depletion",
+                "as": "অজ'ন ক্ষয়"
+              }
+            ],
+            [
+              {
+                "en": "DDT",
+                "as": "DDT"
+              },
+              {
+                "en": "biomagnification",
+                "as": "জৈৱ বিবৰ্ধন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Name the pollutant, then its signature harm.",
+            "as": "প্ৰদূষকৰ নাম লোৱা, তাৰ পিছত ইয়াৰ বিশেষ ক্ষতি।"
+          },
+          "id": "sc10.u3.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Biomagnification",
+              "makes",
+              "poison",
+              "levels",
+              "lowest",
+              "in",
+              "top",
+              "predators."
+            ],
+            "as": [
+              "জৈৱ",
+              "বিবৰ্ধনে",
+              "শীৰ্ষ",
+              "চিকাৰীত",
+              "বিষৰ",
+              "মাত্ৰা",
+              "আটাইতকৈ",
+              "কম",
+              "কৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 4,
+            "as": 7
+          },
+          "fix": {
+            "en": "highest",
+            "as": "বেছি"
+          },
+          "answerText": {
+            "en": "lowest",
+            "as": "কম"
+          },
+          "why": {
+            "en": "Concentration rises at each level, so top predators carry the most.",
+            "as": "প্ৰতিটো স্তৰত মাত্ৰা বাঢ়ে, সেয়ে শীৰ্ষ চিকাৰীত আটাইতকৈ বেছি।"
+          },
+          "id": "sc10.u3.06"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Ozone high in the stratosphere protects us from ultraviolet rays.",
+            "as": "ষ্ট্ৰেট'স্ফিয়াৰৰ অজ'নে আমাক অতিবেঙুনীয়া ৰশ্মিৰ পৰা ৰক্ষা কৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Near the ground, ozone is a pollutant, but high up it is a shield.",
+            "as": "মাটিৰ ওচৰত অজ'ন প্ৰদূষক, কিন্তু ওপৰত ই ঢাল।"
+          },
+          "id": "sc10.u3.07"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Ozone-damaging CFCs were phased out under the",
+            "as": "অজ'ন ক্ষয়কাৰী CFC বন্ধ কৰা হয়"
+          },
+          "after": {
+            "en": " Protocol of 1987.",
+            "as": " প্ৰট'কলৰ অধীনত (১৯৮৭)।"
+          },
+          "options": [
+            {
+              "en": "Montreal",
+              "as": "মণ্ট্ৰিয়ল"
+            },
+            {
+              "en": "Kyoto",
+              "as": "কিয়োটো"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Montreal covers ozone; Kyoto covers greenhouse gases.",
+            "as": "মণ্ট্ৰিয়ল অজ'নৰ বাবে; কিয়োটো গ্ৰীণহাউচ গেছৰ বাবে।"
+          },
+          "id": "sc10.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Where rubbish goes",
+        "as": "আৱৰ্জনা ক'লৈ যায়"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Segregating waste at source makes recycling and composting possible.",
+          "as": "উৎসতে আৱৰ্জনা পৃথক কৰিলে পুনৰ্ব্যৱহাৰ আৰু কম্পোষ্ট সম্ভৱ হয়।"
+        },
+        {
+          "en": "Biodegradable waste can be composted; most plastic does not rot away.",
+          "as": "জৈৱ-বিঘটনশীল আৱৰ্জনাৰে কম্পোষ্ট হয়; বেছিভাগ প্লাষ্টিক নপচে।"
+        },
+        {
+          "en": "E-waste holds toxic metals such as lead and mercury.",
+          "as": "ই-বৰ্জ্যত সীহ আৰু পাৰাৰ দৰে বিষাক্ত ধাতু থাকে।"
+        },
+        {
+          "en": "The order of preference is reduce, reuse, then recycle.",
+          "as": "অগ্ৰাধিকাৰৰ ক্ৰম হ'ল হ্ৰাস, পুনৰ ব্যৱহাৰ, তাৰ পিছত পুনৰ্চক্ৰণ।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A banana peel versus a bottle",
+            "as": "কলৰ বাকলি বনাম বটল"
+          },
+          "text": [
+            {
+              "en": "A banana peel rots into compost within weeks. A plastic bottle breaks only into smaller pieces called <mark>microplastics</mark>.",
+              "as": "কলৰ বাকলি কেইসপ্তাহমানৰ ভিতৰত পচি কম্পোষ্ট হয়। প্লাষ্টিকৰ বটল কেৱল সৰু টুকুৰা হয়, যাক <mark>মাইক্ৰ'প্লাষ্টিক</mark> বোলে।"
+            },
+            {
+              "en": "Mix them and both go to the dump. Separate them at home and each can take its proper route.",
+              "as": "মিহলালে দুয়োটা ডিপোলৈ যায়। ঘৰতে পৃথক কৰিলে প্ৰতিটোৱে নিজৰ উচিত পথ পায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Wet · compost",
+                "as": "ভিজা · কম্পোষ্ট"
+              },
+              {
+                "en": "Dry · recycle",
+                "as": "শুকান · পুনৰ্চক্ৰণ"
+              },
+              {
+                "en": "Hazardous · special handling",
+                "as": "বিপজ্জনক · বিশেষ ব্যৱস্থা"
+              }
+            ]
+          },
+          "id": "sc10.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which option is best for the environment?",
+            "as": "পৰিৱেশৰ বাবে কোনটো আটাইতকৈ ভাল?"
+          },
+          "options": [
+            {
+              "en": "Recycle a plastic bag",
+              "as": "প্লাষ্টিক বেগ পুনৰ্চক্ৰণ"
+            },
+            {
+              "en": "Burn a plastic bag",
+              "as": "প্লাষ্টিক বেগ জ্বলোৱা"
+            },
+            {
+              "en": "Carry a cloth bag and avoid plastic",
+              "as": "কাপোৰৰ বেগ লোৱা, প্লাষ্টিক এৰা"
+            },
+            {
+              "en": "Bury a plastic bag",
+              "as": "প্লাষ্টিক বেগ পোতা"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Reducing comes first: waste never made needs no handling.",
+            "as": "হ্ৰাস প্ৰথম: তৈয়াৰেই নোহোৱা আৱৰ্জনাৰ ব্যৱস্থাৰ প্ৰয়োজন নাই।"
+          },
+          "guess": true,
+          "id": "sc10.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "The dead phone in the drawer",
+            "as": "দেৰাজৰ বন্ধ ফোন"
+          },
+          "text": [
+            {
+              "en": "Phones, batteries and chargers are <mark>e-waste</mark>. They hold lead and mercury, and also valuable metals worth recovering.",
+              "as": "ফোন, বেটাৰী আৰু চাৰ্জাৰ <mark>ই-বৰ্জ্য</mark>। ইয়াত সীহ আৰু পাৰা থাকে, আৰু উদ্ধাৰ কৰিবলগীয়া মূল্যৱান ধাতুও থাকে।"
+            },
+            {
+              "en": "Burning or dumping releases the poison into soil, water and air. Authorised recyclers keep it contained.",
+              "as": "জ্বলালে বা পেলালে বিষ মাটি, পানী আৰু বায়ুলৈ যায়। অনুমোদিত পুনৰ্চক্ৰণকাৰীয়ে ইয়াক নিয়ন্ত্ৰণত ৰাখে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Reduce",
+                "as": "হ্ৰাস"
+              },
+              {
+                "en": "Reuse",
+                "as": "পুনৰ ব্যৱহাৰ"
+              },
+              {
+                "en": "Recycle",
+                "as": "পুনৰ্চক্ৰণ"
+              },
+              {
+                "en": "Dispose safely",
+                "as": "সুৰক্ষিতভাৱে নিষ্কাশন"
+              }
+            ]
+          },
+          "id": "sc10.u4.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Rank from most to least preferred.",
+            "as": "অধিক পছন্দৰ পৰা কম পছন্দলৈ সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Reduce",
+              "as": "হ্ৰাস"
+            },
+            {
+              "en": "Reuse",
+              "as": "পুনৰ ব্যৱহাৰ"
+            },
+            {
+              "en": "Recycle",
+              "as": "পুনৰ্চক্ৰণ"
+            },
+            {
+              "en": "Landfill",
+              "as": "আৱৰ্জনা ডিপো"
+            }
+          ],
+          "why": {
+            "en": "The earlier the step, the less material and energy are wasted.",
+            "as": "আগৰ স্তৰত কম সামগ্ৰী আৰু শক্তি অপচয় হয়।"
+          },
+          "id": "sc10.u4.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Vegetable peel",
+                "as": "পাচলিৰ বাকলি"
+              },
+              {
+                "en": "compost",
+                "as": "কম্পোষ্ট"
+              }
+            ],
+            [
+              {
+                "en": "Old newspaper",
+                "as": "পুৰণি বাতৰি কাকত"
+              },
+              {
+                "en": "dry recycling",
+                "as": "শুকান পুনৰ্চক্ৰণ"
+              }
+            ],
+            [
+              {
+                "en": "Dead battery",
+                "as": "নষ্ট বেটাৰী"
+              },
+              {
+                "en": "hazardous collection",
+                "as": "বিপজ্জনক সংগ্ৰহ"
+              }
+            ],
+            [
+              {
+                "en": "Old phone",
+                "as": "পুৰণি ফোন"
+              },
+              {
+                "en": "e-waste recycler",
+                "as": "ই-বৰ্জ্য পুনৰ্চক্ৰণকাৰী"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each item has its own route.",
+            "as": "প্ৰতিটো বস্তুৰ নিজা পথ আছে।"
+          },
+          "id": "sc10.u4.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Burning plastic is a safe way to remove it.",
+            "as": "প্লাষ্টিক জ্বলোৱাটো ইয়াক আঁতৰোৱাৰ সুৰক্ষিত উপায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Open burning releases toxic gases and particles.",
+            "as": "মুকলিকৈ জ্বলালে বিষাক্ত গেছ আৰু কণা ওলায়।"
+          },
+          "id": "sc10.u4.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Most",
+              "plastic",
+              "is",
+              "biodegradable",
+              "and",
+              "rots",
+              "within",
+              "weeks."
+            ],
+            "as": [
+              "বেছিভাগ",
+              "প্লাষ্টিক",
+              "জৈৱ-বিঘটনশীল",
+              "আৰু",
+              "কেইসপ্তাহমানত",
+              "পচে।"
+            ]
+          },
+          "wrong": {
+            "en": 3,
+            "as": 2
+          },
+          "fix": {
+            "en": "non-biodegradable",
+            "as": "অজৈৱ-বিঘটনশীল"
+          },
+          "answerText": {
+            "en": "biodegradable",
+            "as": "জৈৱ-বিঘটনশীল"
+          },
+          "why": {
+            "en": "Most plastic persists for a very long time and only fragments.",
+            "as": "বেছিভাগ প্লাষ্টিক বহুদিন থাকে আৰু কেৱল টুকুৰা হয়।"
+          },
+          "id": "sc10.u4.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT e-waste?",
+            "as": "তলৰ কোনটো ই-বৰ্জ্য নহয়?"
+          },
+          "options": [
+            {
+              "en": "Mobile charger",
+              "as": "ম'বাইল চাৰ্জাৰ"
+            },
+            {
+              "en": "Laptop",
+              "as": "লেপটপ"
+            },
+            {
+              "en": "Banana peel",
+              "as": "কলৰ বাকলি"
+            },
+            {
+              "en": "Old television",
+              "as": "পুৰণি টেলিভিছন"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "A banana peel is biodegradable wet waste.",
+            "as": "কলৰ বাকলি জৈৱ-বিঘটনশীল ভিজা আৱৰ্জনা।"
+          },
+          "id": "sc10.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Ecosystem audit",
+      "as": "পৰিস্থিতি তন্ত্ৰৰ নিৰীক্ষণ"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "About what share of energy passes up one food-chain level?",
+          "as": "খাদ্য শৃংখলৰ এক স্তৰ ওপৰলৈ প্ৰায় কিমান শক্তি যায়?"
+        },
+        "options": [
+          {
+            "en": "1%",
+            "as": "১%"
+          },
+          {
+            "en": "10%",
+            "as": "১০%"
+          },
+          {
+            "en": "50%",
+            "as": "৫০%"
+          },
+          {
+            "en": "90%",
+            "as": "৯০%"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "About 10% is the usual rule of thumb.",
+          "as": "প্ৰায় ১০% হ'ল সাধাৰণ নিয়ম।"
+        },
+        "id": "sc10.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Water hyacinth is a native plant of Assam.",
+          "as": "পানী মেটেকা অসমৰ স্থানীয় উদ্ভিদ।"
+        },
+        "answer": false,
+        "why": {
+          "en": "It came from South America and is invasive.",
+          "as": "ই দক্ষিণ আমেৰিকাৰ পৰা অহা আক্ৰমণকাৰী উদ্ভিদ।"
+        },
+        "id": "sc10.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Decomposer",
+              "as": "বিয়োজক"
+            },
+            {
+              "en": "returns nutrients",
+              "as": "পুষ্টি ঘূৰাই দিয়ে"
+            }
+          ],
+          [
+            {
+              "en": "Endemic",
+              "as": "স্থানীয়"
+            },
+            {
+              "en": "one region only",
+              "as": "কেৱল এটা অঞ্চল"
+            }
+          ],
+          [
+            {
+              "en": "BOD",
+              "as": "BOD"
+            },
+            {
+              "en": "oxygen demand",
+              "as": "অক্সিজেনৰ চাহিদা"
+            }
+          ],
+          [
+            {
+              "en": "Montreal Protocol",
+              "as": "মণ্ট্ৰিয়ল প্ৰট'কল"
+            },
+            {
+              "en": "ozone layer",
+              "as": "অজ'ন স্তৰ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Four key terms from this lesson.",
+          "as": "এই পাঠৰ চাৰিটা মূল শব্দ।"
+        },
+        "id": "sc10.test.03"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order the food chain.",
+          "as": "খাদ্য শৃংখল সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Grass",
+            "as": "ঘাঁহ"
+          },
+          {
+            "en": "Deer",
+            "as": "হৰিণ"
+          },
+          {
+            "en": "Tiger",
+            "as": "বাঘ"
+          }
+        ],
+        "why": {
+          "en": "Producer, herbivore, carnivore.",
+          "as": "উৎপাদক, তৃণভোজী, মাংসভোজী।"
+        },
+        "id": "sc10.test.04"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which does NOT belong to the 3Rs?",
+          "as": "কোনটো ৩R ৰ অংশ নহয়?"
+        },
+        "options": [
+          {
+            "en": "Reduce",
+            "as": "হ্ৰাস"
+          },
+          {
+            "en": "Reuse",
+            "as": "পুনৰ ব্যৱহাৰ"
+          },
+          {
+            "en": "Recycle",
+            "as": "পুনৰ্চক্ৰণ"
+          },
+          {
+            "en": "Release",
+            "as": "নিৰ্গমন"
+          }
+        ],
+        "answer": 3,
+        "why": {
+          "en": "The 3Rs are reduce, reuse and recycle.",
+          "as": "৩R হ'ল হ্ৰাস, পুনৰ ব্যৱহাৰ আৰু পুনৰ্চক্ৰণ।"
+        },
+        "id": "sc10.test.05"
+      }
+    ]
+  }
+}

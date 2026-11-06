@@ -1,0 +1,1425 @@
+{
+  "id": "sc-07-human-body",
+  "course": "general-science",
+  "no": 7,
+  "version": 1,
+  "king": {
+    "en": "Inside the human body",
+    "as": "মানৱ শৰীৰৰ ভিতৰত"
+  },
+  "reign": {
+    "en": "Health",
+    "as": "স্বাস্থ্য"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science and Biology textbooks, Classes 7 to 11",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for body systems, nutrition and disease. Passages still to be read."
+    },
+    {
+      "title": "WHO fact sheets: malaria, dengue, tuberculosis, Japanese encephalitis",
+      "url": "https://www.who.int/news-room/fact-sheets",
+      "used_for": "Lead for causes and carriers. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "The body's delivery network",
+        "as": "শৰীৰৰ যোগান ব্যৱস্থা"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "The human heart has four chambers.",
+          "as": "মানুহৰ হৃৎপিণ্ডৰ চাৰিটা প্ৰকোষ্ঠ থাকে।"
+        },
+        {
+          "en": "Arteries carry blood away from the heart; veins bring it back.",
+          "as": "ধমনীয়ে তেজ হৃৎপিণ্ডৰ পৰা লৈ যায়; শিৰাই ঘূৰাই আনে।"
+        },
+        {
+          "en": "Haemoglobin in red blood cells carries oxygen.",
+          "as": "ৰঙা ৰক্তকোষৰ হিম'গ্ল'বিনে অক্সিজেন কঢ়িয়ায়।"
+        },
+        {
+          "en": "White cells fight infection; platelets help blood clot.",
+          "as": "বগা ৰক্তকোষে সংক্ৰমণৰ বিৰুদ্ধে যুঁজে; অনুচক্ৰিকাই তেজ গোট মৰাত সহায় কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why does a cut stop bleeding?",
+            "as": "কটা ঠাইৰ তেজ কিয় বন্ধ হয়?"
+          },
+          "text": [
+            {
+              "en": "Blood is a moving delivery service. It carries <mark>oxygen</mark> and food to every cell, and carries waste away.",
+              "as": "তেজ এক চলন্ত যোগান ব্যৱস্থা। ই প্ৰতিটো কোষলৈ <mark>অক্সিজেন</mark> আৰু খাদ্য কঢ়িয়ায়, আৰু বৰ্জ্য আঁতৰায়।"
+            },
+            {
+              "en": "Three kinds of cell do three jobs, and a cut shows one of them at work.",
+              "as": "তিনিবিধ কোষে তিনিটা কাম কৰে; কটা ঠাইত তাৰে এটা কাম দেখা যায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Red cells · carry oxygen",
+                "as": "ৰঙা কোষ · অক্সিজেন কঢ়িয়ায়"
+              },
+              {
+                "en": "White cells · fight infection",
+                "as": "বগা কোষ · সংক্ৰমণৰ বিৰুদ্ধে যুঁজে"
+              },
+              {
+                "en": "Platelets · help clotting",
+                "as": "অনুচক্ৰিকা · তেজ গোট মৰাত সহায়"
+              }
+            ]
+          },
+          "id": "sc07.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which part of the blood seals a small cut?",
+            "as": "তেজৰ কোনটো অংশই সৰু কটা ঠাই বন্ধ কৰে?"
+          },
+          "options": [
+            {
+              "en": "Platelets",
+              "as": "অনুচক্ৰিকা"
+            },
+            {
+              "en": "Red cells",
+              "as": "ৰঙা কোষ"
+            },
+            {
+              "en": "Plasma salts",
+              "as": "প্লাজমাৰ লৱণ"
+            },
+            {
+              "en": "Haemoglobin",
+              "as": "হিম'গ্ল'বিন"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Platelets gather at the wound and help the blood clot.",
+            "as": "অনুচক্ৰিকা ক্ষতত গোট খাই তেজ গোট মৰাত সহায় কৰে।"
+          },
+          "guess": true,
+          "id": "sc07.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "A pump with four rooms",
+            "as": "চাৰিটা কোঠাৰ পাম্প"
+          },
+          "text": [
+            {
+              "en": "The heart has <mark>four chambers</mark>: two receive blood and two push it out.",
+              "as": "হৃৎপিণ্ডৰ <mark>চাৰিটা প্ৰকোষ্ঠ</mark>: দুটাই তেজ গ্ৰহণ কৰে আৰু দুটাই ঠেলি পঠিয়ায়।"
+            },
+            {
+              "en": "Blood goes to the lungs, collects oxygen, returns to the heart, then travels through the body.",
+              "as": "তেজ হাঁওফাঁওলৈ গৈ অক্সিজেন লয়, হৃৎপিণ্ডলৈ ঘূৰি আহে, তাৰ পিছত গোটেই শৰীৰলৈ যায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Heart",
+                "as": "হৃৎপিণ্ড"
+              },
+              {
+                "en": "Lungs: collect oxygen",
+                "as": "হাঁওফাঁও: অক্সিজেন লয়"
+              },
+              {
+                "en": "Heart again",
+                "as": "আকৌ হৃৎপিণ্ড"
+              },
+              {
+                "en": "Body cells",
+                "as": "শৰীৰৰ কোষ"
+              }
+            ]
+          },
+          "id": "sc07.u1.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Follow blood that needs oxygen, starting from the body.",
+            "as": "অক্সিজেনৰ প্ৰয়োজন থকা তেজক শৰীৰৰ পৰা অনুসৰণ কৰা।"
+          },
+          "items": [
+            {
+              "en": "Body cells",
+              "as": "শৰীৰৰ কোষ"
+            },
+            {
+              "en": "Right side of the heart",
+              "as": "হৃৎপিণ্ডৰ সোঁ অংশ"
+            },
+            {
+              "en": "Lungs",
+              "as": "হাঁওফাঁও"
+            },
+            {
+              "en": "Left side of the heart",
+              "as": "হৃৎপিণ্ডৰ বাওঁ অংশ"
+            }
+          ],
+          "why": {
+            "en": "The right side sends blood to the lungs; the left side sends oxygen-rich blood to the body.",
+            "as": "সোঁ অংশই তেজ হাঁওফাঁওলৈ পঠিয়ায়; বাওঁ অংশই অক্সিজেনযুক্ত তেজ শৰীৰলৈ পঠিয়ায়।"
+          },
+          "id": "sc07.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Every artery carries oxygen-rich blood.",
+            "as": "প্ৰতিটো ধমনীয়ে অক্সিজেনযুক্ত তেজ কঢ়িয়ায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Arteries are defined by direction: away from the heart. The pulmonary artery carries oxygen-poor blood to the lungs.",
+            "as": "ধমনী দিশেৰে চিনা যায়: হৃৎপিণ্ডৰ পৰা বাহিৰলৈ। ফুচফুচীয় ধমনীয়ে অক্সিজেন-কম তেজ হাঁওফাঁওলৈ নিয়ে।"
+          },
+          "id": "sc07.u1.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Artery",
+                "as": "ধমনী"
+              },
+              {
+                "en": "away from the heart",
+                "as": "হৃৎপিণ্ডৰ পৰা বাহিৰলৈ"
+              }
+            ],
+            [
+              {
+                "en": "Vein",
+                "as": "শিৰা"
+              },
+              {
+                "en": "back to the heart",
+                "as": "হৃৎপিণ্ডলৈ উভতি"
+              }
+            ],
+            [
+              {
+                "en": "Haemoglobin",
+                "as": "হিম'গ্ল'বিন"
+              },
+              {
+                "en": "binds oxygen",
+                "as": "অক্সিজেনৰ সৈতে যুক্ত হয়"
+              }
+            ],
+            [
+              {
+                "en": "White cells",
+                "as": "বগা কোষ"
+              },
+              {
+                "en": "fight germs",
+                "as": "বীজাণুৰ বিৰুদ্ধে যুঁজে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each name belongs to one job in the delivery network.",
+            "as": "প্ৰতিটো নাম যোগান ব্যৱস্থাৰ এটা কামৰ সৈতে জড়িত।"
+          },
+          "id": "sc07.u1.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The iron-containing protein that carries oxygen is",
+            "as": "অক্সিজেন কঢ়িওৱা লোযুক্ত প্ৰ'টিনটো হ'ল"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "insulin",
+              "as": "ইনচুলিন"
+            },
+            {
+              "en": "haemoglobin",
+              "as": "হিম'গ্ল'বিন"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Haemoglobin contains iron, which is why low iron can cause anaemia.",
+            "as": "হিম'গ্ল'বিনত লো থাকে; সেয়ে লোৰ অভাৱত ৰক্তহীনতা হ'ব পাৰে।"
+          },
+          "id": "sc07.u1.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the organ where blood collects oxygen.",
+            "as": "তেজে অক্সিজেন লোৱা অংগটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "L",
+              "U",
+              "N",
+              "G",
+              "S"
+            ],
+            "as": [
+              "হাঁও",
+              "ফাঁও"
+            ]
+          },
+          "answerText": {
+            "en": "LUNGS",
+            "as": "হাঁওফাঁও"
+          },
+          "why": {
+            "en": "Tiny air sacs in the lungs, the alveoli, pass oxygen into the blood.",
+            "as": "হাঁওফাঁওৰ সৰু বায়ুকোষ, এলভিঅ'লাই, তেজলৈ অক্সিজেন পঠিয়ায়।"
+          },
+          "id": "sc07.u1.08"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "What your food becomes",
+        "as": "খাদ্য কি হৈ পৰে"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Digestion starts in the mouth, where saliva begins breaking down starch.",
+          "as": "পাচন মুখতেই আৰম্ভ হয়; লালে শ্বেতসাৰ ভাঙিবলৈ আৰম্ভ কৰে।"
+        },
+        {
+          "en": "Most digestion and absorption happen in the small intestine.",
+          "as": "বেছিভাগ পাচন আৰু শোষণ সৰু অন্ত্ৰত হয়।"
+        },
+        {
+          "en": "The liver is the largest internal gland and makes bile.",
+          "as": "যকৃৎ আটাইতকৈ ডাঙৰ আভ্যন্তৰীণ গ্ৰন্থি আৰু ই পিত্ত তৈয়াৰ কৰে।"
+        },
+        {
+          "en": "The pancreas makes insulin, which controls blood sugar.",
+          "as": "অগ্ন্যাশয়ে ইনচুলিন তৈয়াৰ কৰে, যি তেজৰ চেনি নিয়ন্ত্ৰণ কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "One plate of rice, nine metres",
+            "as": "এথাল ভাত, ন মিটাৰ বাট"
+          },
+          "text": [
+            {
+              "en": "A meal travels through a tube of about <mark>nine metres</mark>. Each stop has one main job.",
+              "as": "এসাঁজ খাদ্যই প্ৰায় <mark>ন মিটাৰ</mark> দীঘল নলীৰে যাত্ৰা কৰে। প্ৰতিটো ৰখনিৰ এটা মুখ্য কাম থাকে।"
+            },
+            {
+              "en": "Chew rice for a while and it tastes sweeter: saliva is already turning starch into sugar.",
+              "as": "ভাত অলপ সময় চোবালে মিঠা লাগে: লালে শ্বেতসাৰক চেনিলৈ ৰূপান্তৰ কৰিবলৈ ধৰিছে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Mouth",
+                "as": "মুখ"
+              },
+              {
+                "en": "Stomach",
+                "as": "পাকস্থলী"
+              },
+              {
+                "en": "Small intestine",
+                "as": "সৰু অন্ত্ৰ"
+              },
+              {
+                "en": "Large intestine",
+                "as": "ডাঙৰ অন্ত্ৰ"
+              }
+            ]
+          },
+          "id": "sc07.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Where is most food absorbed into the blood?",
+            "as": "বেছিভাগ খাদ্য ক'ত তেজলৈ শোষিত হয়?"
+          },
+          "options": [
+            {
+              "en": "Stomach",
+              "as": "পাকস্থলী"
+            },
+            {
+              "en": "Small intestine",
+              "as": "সৰু অন্ত্ৰ"
+            },
+            {
+              "en": "Large intestine",
+              "as": "ডাঙৰ অন্ত্ৰ"
+            },
+            {
+              "en": "Liver",
+              "as": "যকৃৎ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The small intestine's lining has finger-like villi that absorb nutrients.",
+            "as": "সৰু অন্ত্ৰৰ ভিতৰত আঙুলি যেন ভিলাই থাকে; সেইবোৰে পুষ্টি শোষণ কৰে।"
+          },
+          "guess": true,
+          "id": "sc07.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "The two helpers beside the tube",
+            "as": "নলীৰ কাষৰ দুই সহায়ক"
+          },
+          "text": [
+            {
+              "en": "Food never passes through the <mark>liver</mark> or <mark>pancreas</mark>, yet digestion depends on both.",
+              "as": "খাদ্য <mark>যকৃৎ</mark> বা <mark>অগ্ন্যাশয়</mark>ৰ ভিতৰেদি নাযায়, তথাপি পাচন দুয়োটাৰ ওপৰত নিৰ্ভৰশীল।"
+            },
+            {
+              "en": "The liver's bile breaks fat into droplets. The pancreas sends enzymes, and releases insulin into the blood.",
+              "as": "যকৃতৰ পিত্তই চৰ্বিক সৰু টোপালত ভাঙে। অগ্ন্যাশয়ে উৎসেচক পঠিয়ায় আৰু তেজলৈ ইনচুলিন এৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Liver · bile, breaks up fat",
+                "as": "যকৃৎ · পিত্ত, চৰ্বি ভাঙে"
+              },
+              {
+                "en": "Pancreas · enzymes and insulin",
+                "as": "অগ্ন্যাশয় · উৎসেচক আৰু ইনচুলিন"
+              }
+            ]
+          },
+          "id": "sc07.u2.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Put the journey of food in order.",
+            "as": "খাদ্যৰ যাত্ৰা ক্ৰমে সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Mouth",
+              "as": "মুখ"
+            },
+            {
+              "en": "Oesophagus",
+              "as": "খাদ্যনলী"
+            },
+            {
+              "en": "Stomach",
+              "as": "পাকস্থলী"
+            },
+            {
+              "en": "Small intestine",
+              "as": "সৰু অন্ত্ৰ"
+            },
+            {
+              "en": "Large intestine",
+              "as": "ডাঙৰ অন্ত্ৰ"
+            }
+          ],
+          "why": {
+            "en": "Food goes down the oesophagus to the stomach, then the small and large intestines.",
+            "as": "খাদ্য খাদ্যনলীৰে পাকস্থলীলৈ, তাৰ পিছত সৰু আৰু ডাঙৰ অন্ত্ৰলৈ যায়।"
+          },
+          "id": "sc07.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The large intestine mainly absorbs water.",
+            "as": "ডাঙৰ অন্ত্ৰই মূলতঃ পানী শোষণ কৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Most nutrients have already gone; the large intestine takes back water.",
+            "as": "বেছিভাগ পুষ্টি ইতিমধ্যে শোষিত হৈছে; ডাঙৰ অন্ত্ৰই পানী ঘূৰাই লয়।"
+          },
+          "id": "sc07.u2.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "The",
+              "stomach",
+              "makes",
+              "insulin",
+              "to",
+              "control",
+              "blood",
+              "sugar."
+            ],
+            "as": [
+              "পাকস্থলীয়ে",
+              "তেজৰ",
+              "চেনি",
+              "নিয়ন্ত্ৰণৰ",
+              "বাবে",
+              "ইনচুলিন",
+              "তৈয়াৰ",
+              "কৰে।"
+            ]
+          },
+          "wrong": {
+            "en": 1,
+            "as": 0
+          },
+          "fix": {
+            "en": "pancreas",
+            "as": "অগ্ন্যাশয়"
+          },
+          "answerText": {
+            "en": "stomach",
+            "as": "পাকস্থলীয়ে"
+          },
+          "why": {
+            "en": "The pancreas makes insulin. Too little insulin action leads to diabetes.",
+            "as": "অগ্ন্যাশয়ে ইনচুলিন তৈয়াৰ কৰে। ইনচুলিনৰ কাম কমিলে ডায়েবেটিছ হয়।"
+          },
+          "id": "sc07.u2.06"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Saliva",
+                "as": "লাল"
+              },
+              {
+                "en": "starts on starch",
+                "as": "শ্বেতসাৰ ভঙা আৰম্ভ কৰে"
+              }
+            ],
+            [
+              {
+                "en": "Bile",
+                "as": "পিত্ত"
+              },
+              {
+                "en": "breaks up fat",
+                "as": "চৰ্বি ভাঙে"
+              }
+            ],
+            [
+              {
+                "en": "Villi",
+                "as": "ভিলাই"
+              },
+              {
+                "en": "absorb nutrients",
+                "as": "পুষ্টি শোষণ কৰে"
+              }
+            ],
+            [
+              {
+                "en": "Insulin",
+                "as": "ইনচুলিন"
+              },
+              {
+                "en": "controls blood sugar",
+                "as": "তেজৰ চেনি নিয়ন্ত্ৰণ কৰে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each substance or structure has one main digestive role here.",
+            "as": "প্ৰতিটোৰে ইয়াত এটা মুখ্য ভূমিকা আছে।"
+          },
+          "id": "sc07.u2.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one does food NOT pass through?",
+            "as": "তলৰ কোনটোৰ ভিতৰেদি খাদ্য নাযায়?"
+          },
+          "options": [
+            {
+              "en": "Stomach",
+              "as": "পাকস্থলী"
+            },
+            {
+              "en": "Liver",
+              "as": "যকৃৎ"
+            },
+            {
+              "en": "Oesophagus",
+              "as": "খাদ্যনলী"
+            },
+            {
+              "en": "Small intestine",
+              "as": "সৰু অন্ত্ৰ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The liver helps from the side by sending bile.",
+            "as": "যকৃতে কাষৰ পৰা পিত্ত পঠিয়াই সহায় কৰে।"
+          },
+          "id": "sc07.u2.08"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "The missing nutrient",
+        "as": "অভাৱ হোৱা পুষ্টি"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Vitamin A deficiency causes night blindness.",
+          "as": "ভিটামিন Aৰ অভাৱত ৰাতিকণা হয়।"
+        },
+        {
+          "en": "Vitamin B1 deficiency causes beriberi and vitamin C deficiency causes scurvy.",
+          "as": "ভিটামিন B1ৰ অভাৱত বেৰিবেৰি আৰু ভিটামিন Cৰ অভাৱত স্কাৰ্ভি হয়।"
+        },
+        {
+          "en": "Vitamin D deficiency causes rickets in children.",
+          "as": "ভিটামিন Dৰ অভাৱত শিশুৰ ৰিকেটছ হয়।"
+        },
+        {
+          "en": "Iron deficiency causes anaemia; iodine deficiency causes goitre.",
+          "as": "লোৰ অভাৱত ৰক্তহীনতা আৰু আয়'ডিনৰ অভাৱত গলগণ্ড হয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Sailors with bleeding gums",
+            "as": "তেজ ওলোৱা দাঁতিৰ নাৱিক"
+          },
+          "text": [
+            {
+              "en": "On long voyages without fresh fruit, sailors' gums bled. The disease was <mark>scurvy</mark>, and citrus fruit prevented it.",
+              "as": "তাজা ফল নোহোৱা দীঘলীয়া সমুদ্ৰযাত্ৰাত নাৱিকৰ দাঁতিৰ পৰা তেজ ওলাইছিল। সেই ৰোগ আছিল <mark>স্কাৰ্ভি</mark>; টেঙা ফলে ইয়াক প্ৰতিৰোধ কৰিছিল।"
+            },
+            {
+              "en": "The missing nutrient was <mark>vitamin C</mark>. A deficiency disease is cured by supplying what is missing, not by killing a germ.",
+              "as": "অভাৱ হোৱা পুষ্টিটো আছিল <mark>ভিটামিন C</mark>। অভাৱজনিত ৰোগ বীজাণু মাৰি নহয়, অভাৱ পূৰণ কৰিহে ভাল হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Vitamin C · scurvy",
+                "as": "ভিটামিন C · স্কাৰ্ভি"
+              },
+              {
+                "en": "Vitamin D · rickets",
+                "as": "ভিটামিন D · ৰিকেটছ"
+              }
+            ]
+          },
+          "id": "sc07.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Sunlight on skin helps the body make which vitamin?",
+            "as": "ছালত ৰ'দ পৰিলে শৰীৰে কোনটো ভিটামিন তৈয়াৰ কৰে?"
+          },
+          "options": [
+            {
+              "en": "Vitamin A",
+              "as": "ভিটামিন A"
+            },
+            {
+              "en": "Vitamin B1",
+              "as": "ভিটামিন B1"
+            },
+            {
+              "en": "Vitamin C",
+              "as": "ভিটামিন C"
+            },
+            {
+              "en": "Vitamin D",
+              "as": "ভিটামিন D"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Skin makes vitamin D in sunlight, which helps bones use calcium.",
+            "as": "ৰ'দত ছালে ভিটামিন D তৈয়াৰ কৰে, যিয়ে হাড়ক কেলছিয়াম ব্যৱহাৰত সহায় কৰে।"
+          },
+          "guess": true,
+          "id": "sc07.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Match the sign to the lack",
+            "as": "লক্ষণৰ সৈতে অভাৱ মিলোৱা"
+          },
+          "text": [
+            {
+              "en": "Exams love this pairing. Tie each one to a picture: <b>A</b> for eyes at night, <b>D</b> for bent bones.",
+              "as": "পৰীক্ষাত এই যোৰবোৰ সঘনে সোধে। প্ৰতিটোক এটা ছবিৰ সৈতে বান্ধা: ৰাতিৰ চকুৰ বাবে <b>A</b>, বেঁকা হাড়ৰ বাবে <b>D</b>।"
+            },
+            {
+              "en": "Minerals count too: <mark>iron</mark> for blood, <mark>iodine</mark> for the thyroid in the neck.",
+              "as": "খনিজো গুৰুত্বপূৰ্ণ: তেজৰ বাবে <mark>লো</mark>, ডিঙিৰ থাইৰয়ডৰ বাবে <mark>আয়'ডিন</mark>।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Vitamin A · night blindness",
+                "as": "ভিটামিন A · ৰাতিকণা"
+              },
+              {
+                "en": "Vitamin B1 · beriberi",
+                "as": "ভিটামিন B1 · বেৰিবেৰি"
+              },
+              {
+                "en": "Iron · anaemia",
+                "as": "লো · ৰক্তহীনতা"
+              },
+              {
+                "en": "Iodine · goitre",
+                "as": "আয়'ডিন · গলগণ্ড"
+              }
+            ]
+          },
+          "id": "sc07.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Vitamin A",
+                "as": "ভিটামিন A"
+              },
+              {
+                "en": "night blindness",
+                "as": "ৰাতিকণা"
+              }
+            ],
+            [
+              {
+                "en": "Vitamin B1",
+                "as": "ভিটামিন B1"
+              },
+              {
+                "en": "beriberi",
+                "as": "বেৰিবেৰি"
+              }
+            ],
+            [
+              {
+                "en": "Vitamin C",
+                "as": "ভিটামিন C"
+              },
+              {
+                "en": "scurvy",
+                "as": "স্কাৰ্ভি"
+              }
+            ],
+            [
+              {
+                "en": "Vitamin D",
+                "as": "ভিটামিন D"
+              },
+              {
+                "en": "rickets",
+                "as": "ৰিকেটছ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "These four pairs are the core deficiency list.",
+            "as": "এই চাৰিটা যোৰ অভাৱজনিত ৰোগৰ মূল তালিকা।"
+          },
+          "id": "sc07.u3.04"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I am a mineral, not a vitamin.",
+              "as": "মই খনিজ, ভিটামিন নহয়।"
+            },
+            {
+              "en": "Salt is often fortified with me.",
+              "as": "লোণত প্ৰায়ে মোক যোগ কৰা হয়।"
+            },
+            {
+              "en": "Without me the thyroid swells in the neck.",
+              "as": "মোৰ অভাৱত ডিঙিৰ থাইৰয়ড ফুলি উঠে।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Iron",
+              "as": "লো"
+            },
+            {
+              "en": "Calcium",
+              "as": "কেলছিয়াম"
+            },
+            {
+              "en": "Iodine",
+              "as": "আয়'ডিন"
+            },
+            {
+              "en": "Zinc",
+              "as": "জিংক"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Iodine is needed by the thyroid; its lack causes goitre.",
+            "as": "থাইৰয়ডক আয়'ডিন লাগে; ইয়াৰ অভাৱত গলগণ্ড হয়।"
+          },
+          "id": "sc07.u3.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Antibiotics cure scurvy.",
+            "as": "এণ্টিবায়'টিকে স্কাৰ্ভি ভাল কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Scurvy is a deficiency disease. Vitamin C treats it.",
+            "as": "স্কাৰ্ভি অভাৱজনিত ৰোগ। ভিটামিন Cৰে ইয়াৰ চিকিৎসা হয়।"
+          },
+          "id": "sc07.u3.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A child with bent, weak legs may lack vitamin",
+            "as": "ভৰি বেঁকা আৰু দুৰ্বল হোৱা শিশুৰ অভাৱ হ’ব পাৰে ভিটামিন"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "D",
+              "as": "D"
+            },
+            {
+              "en": "C",
+              "as": "C"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Rickets softens growing bones when vitamin D is short.",
+            "as": "ভিটামিন D কম হ'লে ৰিকেটছে বাঢ়ি থকা হাড় কোমল কৰে।"
+          },
+          "id": "sc07.u3.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which one is NOT a deficiency disease?",
+            "as": "তলৰ কোনটো অভাৱজনিত ৰোগ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Rickets",
+              "as": "ৰিকেটছ"
+            },
+            {
+              "en": "Goitre",
+              "as": "গলগণ্ড"
+            },
+            {
+              "en": "Malaria",
+              "as": "মেলেৰিয়া"
+            },
+            {
+              "en": "Beriberi",
+              "as": "বেৰিবেৰি"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Malaria is caused by a parasite, not by a missing nutrient.",
+            "as": "মেলেৰিয়া পৰজীৱীৰ বাবে হয়, পুষ্টিৰ অভাৱৰ বাবে নহয়।"
+          },
+          "id": "sc07.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Who caused it?",
+        "as": "ইয়াৰ কাৰণ কোন?"
+      },
+      "icon": "seal",
+      "learned": [
+        {
+          "en": "Malaria is caused by the Plasmodium parasite, spread by female Anopheles mosquitoes.",
+          "as": "মেলেৰিয়া প্লাজম'ডিয়াম পৰজীৱীৰ বাবে হয়, মাইকী এনোফিলিছ মহে বিয়পায়।"
+        },
+        {
+          "en": "Dengue is viral and spread by Aedes mosquitoes; tuberculosis is bacterial.",
+          "as": "ডেংগু ভাইৰাছজনিত আৰু এডিছ মহে বিয়পায়; যক্ষ্মা বেক্টেৰিয়াজনিত।"
+        },
+        {
+          "en": "Antibiotics act on bacteria and do not cure viral illness.",
+          "as": "এণ্টিবায়'টিকে বেক্টেৰিয়াৰ ওপৰত কাম কৰে, ভাইৰাছজনিত ৰোগ ভাল নকৰে।"
+        },
+        {
+          "en": "A vaccine trains the immune system before the infection arrives.",
+          "as": "ভেকচিনে সংক্ৰমণ অহাৰ আগতেই ৰোগ প্ৰতিৰোধ ব্যৱস্থাক প্ৰশিক্ষণ দিয়ে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Same fever, different culprits",
+            "as": "একেই জ্বৰ, বেলেগ দোষী"
+          },
+          "text": [
+            {
+              "en": "Malaria, dengue and typhoid can all begin with fever, yet the causes are a <mark>parasite</mark>, a <mark>virus</mark> and a <mark>bacterium</mark>.",
+              "as": "মেলেৰিয়া, ডেংগু আৰু টাইফয়ড তিনিওটা জ্বৰেৰে আৰম্ভ হ'ব পাৰে, কিন্তু কাৰণ <mark>পৰজীৱী</mark>, <mark>ভাইৰাছ</mark> আৰু <mark>বেক্টেৰিয়া</mark>।"
+            },
+            {
+              "en": "The cause decides the treatment. So why would an antibiotic not help dengue?",
+              "as": "কাৰণে চিকিৎসা নিৰ্ধাৰণ কৰে। তেন্তে ডেংগুত এণ্টিবায়'টিকে কিয় সহায় নকৰে?"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Malaria · parasite",
+                "as": "মেলেৰিয়া · পৰজীৱী"
+              },
+              {
+                "en": "Dengue · virus",
+                "as": "ডেংগু · ভাইৰাছ"
+              },
+              {
+                "en": "Typhoid · bacterium",
+                "as": "টাইফয়ড · বেক্টেৰিয়া"
+              }
+            ]
+          },
+          "id": "sc07.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which mosquito spreads malaria?",
+            "as": "কোনবিধ মহে মেলেৰিয়া বিয়পায়?"
+          },
+          "options": [
+            {
+              "en": "Female Anopheles",
+              "as": "মাইকী এনোফিলিছ"
+            },
+            {
+              "en": "Male Anopheles",
+              "as": "মতা এনোফিলিছ"
+            },
+            {
+              "en": "Aedes",
+              "as": "এডিছ"
+            },
+            {
+              "en": "House fly",
+              "as": "ঘৰুৱা মাখি"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Only female mosquitoes bite for blood, and Anopheles carries Plasmodium.",
+            "as": "কেৱল মাইকী মহে তেজ খায়, আৰু এনোফিলিছে প্লাজম'ডিয়াম কঢ়িয়ায়।"
+          },
+          "guess": true,
+          "id": "sc07.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Practice before the real attack",
+            "as": "আক্ৰমণৰ আগতে অনুশীলন"
+          },
+          "text": [
+            {
+              "en": "A vaccine shows the body a harmless form or piece of a germ. The immune system builds <mark>memory</mark> without the disease.",
+              "as": "ভেকচিনে শৰীৰক বীজাণুৰ অনিষ্টহীন ৰূপ বা অংশ দেখুৱায়। ৰোগ নোহোৱাকৈ প্ৰতিৰোধ ব্যৱস্থাই <mark>স্মৃতি</mark> গঢ়ে।"
+            },
+            {
+              "en": "In Assam, <mark>Japanese encephalitis</mark> is a recurring monsoon concern. This viral disease is spread by Culex mosquitoes, and a vaccine exists.",
+              "as": "অসমত <mark>জাপানী এনচেফেলাইটিছ</mark> বৰষুণৰ বতৰৰ এক বাৰে বাৰে অহা সমস্যা। এই ভাইৰাছজনিত ৰোগ কিউলেক্স মহে বিয়পায়; ইয়াৰ ভেকচিন আছে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Vaccine",
+                "as": "ভেকচিন"
+              },
+              {
+                "en": "Immune memory",
+                "as": "প্ৰতিৰোধ স্মৃতি"
+              },
+              {
+                "en": "Faster defence later",
+                "as": "পিছত দ্ৰুত প্ৰতিৰক্ষা"
+              }
+            ]
+          },
+          "id": "sc07.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Malaria",
+                "as": "মেলেৰিয়া"
+              },
+              {
+                "en": "Plasmodium parasite",
+                "as": "প্লাজম'ডিয়াম পৰজীৱী"
+              }
+            ],
+            [
+              {
+                "en": "Dengue",
+                "as": "ডেংগু"
+              },
+              {
+                "en": "virus, Aedes",
+                "as": "ভাইৰাছ, এডিছ"
+              }
+            ],
+            [
+              {
+                "en": "Tuberculosis",
+                "as": "যক্ষ্মা"
+              },
+              {
+                "en": "bacterium",
+                "as": "বেক্টেৰিয়া"
+              }
+            ],
+            [
+              {
+                "en": "Japanese encephalitis",
+                "as": "জাপানী এনচেফেলাইটিছ"
+              },
+              {
+                "en": "virus, Culex",
+                "as": "ভাইৰাছ, কিউলেক্স"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Name the disease, then the cause and any carrier.",
+            "as": "ৰোগৰ নাম লোৱা, তাৰ পিছত কাৰণ আৰু বাহক।"
+          },
+          "id": "sc07.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Antibiotics cure the common cold.",
+            "as": "এণ্টিবায়'টিকে সাধাৰণ চৰ্দি ভাল কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "A cold is viral. Needless antibiotics also encourage resistant bacteria.",
+            "as": "চৰ্দি ভাইৰাছজনিত। অনাৱশ্যক এণ্টিবায়'টিকে প্ৰতিৰোধী বেক্টেৰিয়াকো বঢ়ায়।"
+          },
+          "id": "sc07.u4.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Dengue",
+              "is",
+              "spread",
+              "by",
+              "the",
+              "Anopheles",
+              "mosquito."
+            ],
+            "as": [
+              "ডেংগু",
+              "এনোফিলিছ",
+              "মহে",
+              "বিয়পায়।"
+            ]
+          },
+          "wrong": {
+            "en": 5,
+            "as": 1
+          },
+          "fix": {
+            "en": "Aedes",
+            "as": "এডিছ"
+          },
+          "answerText": {
+            "en": "Anopheles",
+            "as": "এনোফিলিছ"
+          },
+          "why": {
+            "en": "Aedes spreads dengue and often breeds in clean stored water.",
+            "as": "এডিছে ডেংগু বিয়পায় আৰু প্ৰায়ে জমা চাফা পানীত কণী পাৰে।"
+          },
+          "id": "sc07.u4.06"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I worked in England in the 1790s.",
+              "as": "মই ১৭৯০ৰ দশকত ইংলেণ্ডত কাম কৰিছিলোঁ।"
+            },
+            {
+              "en": "I used cowpox to protect against smallpox.",
+              "as": "মই বসন্তৰ পৰা ৰক্ষা পাবলৈ গৰুৰ বসন্ত ব্যৱহাৰ কৰিছিলোঁ।"
+            },
+            {
+              "en": "My work gave vaccination its start.",
+              "as": "মোৰ কামৰ পৰাই টীকাকৰণৰ আৰম্ভণি হৈছিল।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Louis Pasteur",
+              "as": "লুই পাস্তুৰ"
+            },
+            {
+              "en": "Edward Jenner",
+              "as": "এডৱাৰ্ড জেনাৰ"
+            },
+            {
+              "en": "Alexander Fleming",
+              "as": "আলেকজেণ্ডাৰ ফ্লেমিং"
+            },
+            {
+              "en": "Robert Koch",
+              "as": "ৰবাৰ্ট ক'খ"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Edward Jenner showed the cowpox method in 1796. Fleming discovered penicillin.",
+            "as": "এডৱাৰ্ড জেনাৰে ১৭৯৬ চনত গৰুৰ বসন্তৰ পদ্ধতি দেখুৱাইছিল। ফ্লেমিঙে পেনিচিলিন আৱিষ্কাৰ কৰিছিল।"
+          },
+          "id": "sc07.u4.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the insect that carries malaria.",
+            "as": "মেলেৰিয়া কঢ়িওৱা পতংগটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "M",
+              "O",
+              "S",
+              "Q",
+              "U",
+              "I",
+              "T",
+              "O"
+            ],
+            "as": [
+              "ম",
+              "হ"
+            ]
+          },
+          "answerText": {
+            "en": "MOSQUITO",
+            "as": "মহ"
+          },
+          "why": {
+            "en": "Removing standing water and using nets break the mosquito's route.",
+            "as": "জমা পানী আঁতৰালে আৰু মহৰা ব্যৱহাৰ কৰিলে মহৰ পথ বন্ধ হয়।"
+          },
+          "id": "sc07.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Body check-up",
+      "as": "শৰীৰ পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which statement about arteries is always true?",
+          "as": "ধমনীৰ বিষয়ে কোনটো কথা সদায় সত্য?"
+        },
+        "options": [
+          {
+            "en": "They carry oxygen-rich blood",
+            "as": "সিহঁতে অক্সিজেনযুক্ত তেজ কঢ়িয়ায়"
+          },
+          {
+            "en": "They carry blood away from the heart",
+            "as": "সিহঁতে তেজ হৃৎপিণ্ডৰ পৰা বাহিৰলৈ নিয়ে"
+          },
+          {
+            "en": "They carry blood to the heart",
+            "as": "সিহঁতে তেজ হৃৎপিণ্ডলৈ আনে"
+          },
+          {
+            "en": "They have no muscle",
+            "as": "সিহঁতৰ পেশী নাই"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Direction defines an artery; the pulmonary artery is the exception on oxygen.",
+          "as": "দিশেই ধমনী চিনাক্ত কৰে; অক্সিজেনৰ ক্ষেত্ৰত ফুচফুচীয় ধমনী ব্যতিক্ৰম।"
+        },
+        "id": "sc07.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "The liver makes bile.",
+          "as": "যকৃতে পিত্ত তৈয়াৰ কৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Bile breaks fat into droplets.",
+          "as": "পিত্তই চৰ্বিক সৰু টোপালত ভাঙে।"
+        },
+        "id": "sc07.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Iron",
+              "as": "লো"
+            },
+            {
+              "en": "anaemia",
+              "as": "ৰক্তহীনতা"
+            }
+          ],
+          [
+            {
+              "en": "Iodine",
+              "as": "আয়'ডিন"
+            },
+            {
+              "en": "goitre",
+              "as": "গলগণ্ড"
+            }
+          ],
+          [
+            {
+              "en": "Vitamin C",
+              "as": "ভিটামিন C"
+            },
+            {
+              "en": "scurvy",
+              "as": "স্কাৰ্ভি"
+            }
+          ],
+          [
+            {
+              "en": "Vitamin B1",
+              "as": "ভিটামিন B1"
+            },
+            {
+              "en": "beriberi",
+              "as": "বেৰিবেৰি"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Each lack produces its own signs.",
+          "as": "প্ৰতিটো অভাৱৰ নিজা লক্ষণ থাকে।"
+        },
+        "id": "sc07.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which disease is NOT caused by a virus?",
+          "as": "কোনটো ৰোগ ভাইৰাছৰ বাবে নহয়?"
+        },
+        "options": [
+          {
+            "en": "Dengue",
+            "as": "ডেংগু"
+          },
+          {
+            "en": "Japanese encephalitis",
+            "as": "জাপানী এনচেফেলাইটিছ"
+          },
+          {
+            "en": "Tuberculosis",
+            "as": "যক্ষ্মা"
+          },
+          {
+            "en": "Common cold",
+            "as": "সাধাৰণ চৰ্দি"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Tuberculosis is caused by a bacterium.",
+          "as": "যক্ষ্মা বেক্টেৰিয়াৰ বাবে হয়।"
+        },
+        "id": "sc07.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order the path of food.",
+          "as": "খাদ্যৰ পথ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Stomach",
+            "as": "পাকস্থলী"
+          },
+          {
+            "en": "Small intestine",
+            "as": "সৰু অন্ত্ৰ"
+          },
+          {
+            "en": "Large intestine",
+            "as": "ডাঙৰ অন্ত্ৰ"
+          }
+        ],
+        "why": {
+          "en": "Stomach, then small intestine, then large intestine.",
+          "as": "পাকস্থলী, তাৰ পিছত সৰু অন্ত্ৰ, তাৰ পিছত ডাঙৰ অন্ত্ৰ।"
+        },
+        "id": "sc07.test.05"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Insulin is made by the",
+          "as": "এই অংগটো হ’ল"
+        },
+        "after": {
+          "en": ".",
+          "as": "; ই ইনচুলিন তৈয়াৰ কৰে।"
+        },
+        "options": [
+          {
+            "en": "pancreas",
+            "as": "অগ্ন্যাশয়"
+          },
+          {
+            "en": "stomach",
+            "as": "পাকস্থলী"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The pancreas releases insulin into the blood.",
+          "as": "অগ্ন্যাশয়ে তেজলৈ ইনচুলিন এৰে।"
+        },
+        "id": "sc07.test.06"
+      }
+    ]
+  }
+}

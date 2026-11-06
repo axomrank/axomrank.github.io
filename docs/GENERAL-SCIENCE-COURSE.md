@@ -1,6 +1,7 @@
 # General Science and Environment course plan
 
-Status: planned on 2026-11-06. Nothing is built. Lesson format and permanent-id rules in
+Status: listed in the local catalog on 2026-11-06 at the user's request, with a pending-review
+notice. All 12 lessons exist. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
 A learner should be able to explain everyday things, not just recall terms.
@@ -63,7 +64,7 @@ lesson 4, which already places conservation sites, rather than repeating it.
 ## Engine work
 
 Nothing is required for a first version. Add a check that lists facts whose `asOf` is older
-than 12 months. That check also serves Economy and General Awareness.
+than 12 months. That check also serves General Awareness.
 
 ## Build order
 
@@ -77,3 +78,8 @@ than 12 months. That check also serves Economy and General Awareness.
 
 Build checks pass. Sources are read and recorded. Every changing figure has an `asOf` date.
 A subject reviewer checks facts, and a fluent reader checks technical Assamese terms.
+
+## Still to do
+
+Read source passages, complete subject and Assamese review, and fill the question bank.
+Remove the review notice from the `science` subject in `content/catalog.json` once reviewed.

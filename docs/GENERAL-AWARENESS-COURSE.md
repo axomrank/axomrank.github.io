@@ -5,12 +5,12 @@ Assamese editorial review is pending. Sources were checked on 2026-11-06.
 Open `index.html?course=general-awareness` on the local server. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
-This course holds stable general knowledge. Anything that changes monthly belongs in
-[Current Affairs](CURRENT-AFFAIRS-COURSE.md).
+This course holds stable general knowledge. Facts that change monthly are out of scope:
+the Current Affairs course was dropped on 2026-11-06.
 
 ## Why this course
 
-173 past questions, of which 7 are tagged Current Affairs and go to that plan. By exam: ADRE
+173 past questions, of which 7 are tagged Current Affairs and are left out. By exam: ADRE
 120 (9% of its sample), APSC 32 (6%), Constable 8, SI 6, DME 4 and TET 3.
 
 Memory is the whole of this subject, so it suits daily review well, and it is easy to make
@@ -19,9 +19,9 @@ dull. The plan uses collections and clusters rather than lists.
 ## Scope
 
 - **Course id:** `general-awareness`, with lesson ids `gk-NN-slug`, in the `current-affairs`
-  subject beside the monthly packs.
+  subject, whose id stays although the subject is now titled General Awareness.
 - **Out of scope:** holders of offices who change, recent winners, and anything needing a
-  monthly update. Those go to Current Affairs.
+  monthly update.
 
 ## Course map
 
@@ -56,8 +56,7 @@ collection of people and awards is a hypothesis to test, as `EXPERIENCE-REVAMP.m
 
 ## Course entry and review
 
-The course sits under General Awareness & Current Affairs. Monthly packs have their
-own upcoming entry. The three section checkpoints support the existing test-out flow
+The three section checkpoints support the existing test-out flow
 and draw from lesson checks and the course question bank. Lesson questions also enter
 the app’s existing daily review.
 
@@ -69,4 +68,4 @@ cards use text diagrams.
 ## Release gates
 
 Build checks pass. Every fact has a read source. Each lesson states the date it was last
-checked. Nothing in it should need a monthly update; if it does, it moves to Current Affairs.
+checked. Nothing in it should need a monthly update; if it does, it is removed.

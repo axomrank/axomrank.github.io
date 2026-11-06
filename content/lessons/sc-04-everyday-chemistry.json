@@ -1,0 +1,1280 @@
+{
+  "id": "sc-04-everyday-chemistry",
+  "course": "general-science",
+  "no": 4,
+  "version": 1,
+  "king": {
+    "en": "Everyday chemistry",
+    "as": "দৈনন্দিন ৰসায়ন"
+  },
+  "reign": {
+    "en": "Chemistry",
+    "as": "ৰসায়ন"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "NCERT Science textbooks, Classes 8 to 10: combustion, metals, carbon",
+      "url": "https://ncert.nic.in/textbook.php",
+      "used_for": "Lead for this lesson. Passages still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Fire needs three things",
+        "as": "জুইক তিনিটা বস্তু লাগে"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "Burning needs fuel, oxygen and enough heat.",
+          "as": "জ্বলনত ইন্ধন, অক্সিজেন আৰু পৰ্যাপ্ত তাপ লাগে।"
+        },
+        {
+          "en": "LPG is mainly butane and propane; CNG is mainly methane.",
+          "as": "LPG মূলতঃ বিউটেন আৰু প্ৰ'পেন; CNG মূলতঃ মিথেন।"
+        },
+        {
+          "en": "Biogas from dung and waste is mostly methane.",
+          "as": "গোবৰ আৰু আৱৰ্জনাৰ জৈৱ গেছ বেছিভাগ মিথেন।"
+        },
+        {
+          "en": "Incomplete burning makes poisonous carbon monoxide.",
+          "as": "অসম্পূৰ্ণ জ্বলনে বিষাক্ত কাৰ্বন মন'ক্সাইড উৎপন্ন কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Take one away, fire dies",
+            "as": "এটা আঁতৰালে জুই নুমায়"
+          },
+          "text": [
+            {
+              "en": "A fire needs <mark>fuel</mark>, <mark>oxygen</mark> and <mark>heat</mark>. Remove one and it stops. A lid on a pan fire cuts the oxygen.",
+              "as": "জুইক <mark>ইন্ধন</mark>, <mark>অক্সিজেন</mark> আৰু <mark>তাপ</mark> লাগে। এটা আঁতৰালে জুই নুমায়। কেৰাহীৰ জুইত ঢাকনিয়ে অক্সিজেন বন্ধ কৰে।"
+            },
+            {
+              "en": "Never pour water on burning oil. Oil floats, and the fire spreads. So what should you reach for?",
+              "as": "জ্বলি থকা তেলত কেতিয়াও পানী নিদিবা। তেল ওপঙে আৰু জুই বিয়পে। তেন্তে কি ব্যৱহাৰ কৰিবা?"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Fuel",
+                "as": "ইন্ধন"
+              },
+              {
+                "en": "Oxygen",
+                "as": "অক্সিজেন"
+              },
+              {
+                "en": "Heat",
+                "as": "তাপ"
+              }
+            ]
+          },
+          "id": "sc04.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What is the smell in an LPG leak?",
+            "as": "LPG ফুটাৰ গোন্ধ কিহৰ?"
+          },
+          "options": [
+            {
+              "en": "Butane itself",
+              "as": "বিউটেন নিজেই"
+            },
+            {
+              "en": "An added smelly compound",
+              "as": "যোগ কৰা গোন্ধযুক্ত যৌগ"
+            },
+            {
+              "en": "Oxygen",
+              "as": "অক্সিজেন"
+            },
+            {
+              "en": "Carbon dioxide",
+              "as": "কাৰ্বন ডাই অক্সাইড"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "LPG has little smell, so a warning odorant such as ethyl mercaptan is added.",
+            "as": "LPG ৰ গোন্ধ কম, সেয়ে ইথাইল মাৰ্কেপ্টানৰ দৰে সতৰ্কতামূলক গোন্ধ যোগ কৰা হয়।"
+          },
+          "guess": true,
+          "id": "sc04.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "From cow dung to cooking gas",
+            "as": "গোবৰৰ পৰা ৰন্ধন গেছ"
+          },
+          "text": [
+            {
+              "en": "In a sealed tank, microbes turn dung into <mark>biogas</mark>, mostly methane. What remains is a good fertiliser.",
+              "as": "বন্ধ টেংকত অণুজীৱে গোবৰক <mark>জৈৱ গেছ</mark>লৈ ৰূপান্তৰ কৰে, যি বেছিভাগ মিথেন। বাকী অংশ ভাল সাৰ।"
+            },
+            {
+              "en": "Burn fuel with too little air and you get <mark>carbon monoxide</mark>, an odourless gas. So never run a stove in a sealed room.",
+              "as": "কম বায়ুত ইন্ধন জ্বলালে <mark>কাৰ্বন মন'ক্সাইড</mark> হয়, যি গোন্ধহীন। সেয়ে বন্ধ কোঠাত চৌকা নজ্বলাবা।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "LPG · butane, propane",
+                "as": "LPG · বিউটেন, প্ৰ'পেন"
+              },
+              {
+                "en": "CNG · methane",
+                "as": "CNG · মিথেন"
+              },
+              {
+                "en": "Biogas · methane",
+                "as": "জৈৱ গেছ · মিথেন"
+              }
+            ]
+          },
+          "id": "sc04.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "LPG",
+                "as": "LPG"
+              },
+              {
+                "en": "butane and propane",
+                "as": "বিউটেন আৰু প্ৰ'পেন"
+              }
+            ],
+            [
+              {
+                "en": "CNG",
+                "as": "CNG"
+              },
+              {
+                "en": "compressed methane",
+                "as": "সংকুচিত মিথেন"
+              }
+            ],
+            [
+              {
+                "en": "Carbon monoxide",
+                "as": "কাৰ্বন মন'ক্সাইড"
+              },
+              {
+                "en": "poison from poor burning",
+                "as": "অসম্পূৰ্ণ জ্বলনৰ বিষ"
+              }
+            ],
+            [
+              {
+                "en": "Biogas slurry",
+                "as": "জৈৱ গেছৰ লেতা"
+              },
+              {
+                "en": "fertiliser",
+                "as": "সাৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Know what each fuel is made of.",
+            "as": "প্ৰতিটো ইন্ধনৰ গঠন জানা।"
+          },
+          "id": "sc04.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Water is the best way to put out burning oil.",
+            "as": "জ্বলি থকা তেল নুমাবলৈ পানী সৰ্বোত্তম উপায়।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Water spreads an oil fire. Cut the oxygen with a lid.",
+            "as": "পানীয়ে তেলৰ জুই বিয়পায়। ঢাকনিৰে অক্সিজেন বন্ধ কৰা।"
+          },
+          "id": "sc04.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is not needed for burning?",
+            "as": "জ্বলনৰ বাবে কি নালাগে?"
+          },
+          "options": [
+            {
+              "en": "Fuel",
+              "as": "ইন্ধন"
+            },
+            {
+              "en": "Oxygen",
+              "as": "অক্সিজেন"
+            },
+            {
+              "en": "Heat",
+              "as": "তাপ"
+            },
+            {
+              "en": "Nitrogen",
+              "as": "নাইট্ৰজেন"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Nitrogen in air does not feed the fire.",
+            "as": "বায়ুৰ নাইট্ৰজেনে জুই নবঢ়ায়।"
+          },
+          "id": "sc04.u1.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Most CNG is the gas",
+            "as": "CNG ৰ বেছিভাগ হ'ল"
+          },
+          "after": {
+            "en": ".",
+            "as": "গেছ।"
+          },
+          "options": [
+            {
+              "en": "methane",
+              "as": "মিথেন"
+            },
+            {
+              "en": "oxygen",
+              "as": "অক্সিজেন"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Compressed methane powers many vehicles.",
+            "as": "সংকুচিত মিথেনে বহু গাড়ী চলায়।"
+          },
+          "id": "sc04.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Metals and their mixtures",
+        "as": "ধাতু আৰু সিহঁতৰ মিশ্ৰণ"
+      },
+      "icon": "court",
+      "learned": [
+        {
+          "en": "Rust forms when iron meets oxygen and water.",
+          "as": "লো অক্সিজেন আৰু পানীৰ সংস্পৰ্শত আহিলে মামৰ ধৰে।"
+        },
+        {
+          "en": "Galvanising coats iron with zinc to protect it.",
+          "as": "গেলভেনাইজিঙত লোত জিংকৰ প্ৰলেপ দিয়া হয়।"
+        },
+        {
+          "en": "An alloy is a mixture of a metal with other elements.",
+          "as": "সংকৰ ধাতু হ'ল ধাতু আৰু আন মৌলৰ মিশ্ৰণ।"
+        },
+        {
+          "en": "Brass is copper and zinc; bronze is copper and tin.",
+          "as": "পিতল তাম আৰু জিংক; কাঁহ তাম আৰু টিন।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The rust that needs two partners",
+            "as": "মামৰক দুজন সংগী লাগে"
+          },
+          "text": [
+            {
+              "en": "Iron in dry air stays bright, and iron in boiled sealed water too. <mark>Rust</mark> needs oxygen and water together.",
+              "as": "শুকান বায়ুত লো উজ্জ্বল থাকে, উতলোৱা বন্ধ পানীতো। <mark>মামৰ</mark>ক অক্সিজেন আৰু পানী একেলগে লাগে।"
+            },
+            {
+              "en": "Paint, oil or <mark>galvanising</mark> with zinc keeps them out. That is why roofing sheets last through Assam's rains.",
+              "as": "ৰং, তেল বা জিংকেৰে <mark>গেলভেনাইজিং</mark>ে সিহঁতক বাহিৰত ৰাখে। সেয়ে অসমৰ বৰষুণতো টিনপাত টিকে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Iron + oxygen + water",
+                "as": "লো + অক্সিজেন + পানী"
+              },
+              {
+                "en": "Iron oxide · rust",
+                "as": "আইৰন অক্সাইড · মামৰ"
+              }
+            ]
+          },
+          "id": "sc04.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which metal coats galvanised iron?",
+            "as": "গেলভেনাইজ কৰা লোত কোনটো ধাতুৰ প্ৰলেপ?"
+          },
+          "options": [
+            {
+              "en": "Zinc",
+              "as": "জিংক"
+            },
+            {
+              "en": "Copper",
+              "as": "তাম"
+            },
+            {
+              "en": "Gold",
+              "as": "সোণ"
+            },
+            {
+              "en": "Lead",
+              "as": "সীহ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Zinc corrodes first and protects the iron.",
+            "as": "জিংক আগতে ক্ষয় হয় আৰু লোক ৰক্ষা কৰে।"
+          },
+          "guess": true,
+          "id": "sc04.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Better together: alloys",
+            "as": "একেলগে ভাল: সংকৰ ধাতু"
+          },
+          "text": [
+            {
+              "en": "Pure gold is soft, so jewellery mixes it with other metals. Mixtures of this kind are <mark>alloys</mark>.",
+              "as": "বিশুদ্ধ সোণ কোমল, সেয়ে গহনাত আন ধাতু মিহলোৱা হয়। এনে মিশ্ৰণেই <mark>সংকৰ ধাতু</mark>।"
+            },
+            {
+              "en": "Assam's bell-metal utensils from <mark>Sarthebari</mark> are a copper-tin alloy, and the same family as bronze.",
+              "as": "অসমৰ <mark>সৰ্থেবাৰী</mark>ৰ কাঁহৰ বাচন তাম-টিনৰ সংকৰ ধাতু, ব্ৰঞ্জৰ একে পৰিয়ালৰ।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Steel · iron and carbon",
+                "as": "ইস্পাত · লো আৰু কাৰ্বন"
+              },
+              {
+                "en": "Brass · copper and zinc",
+                "as": "পিতল · তাম আৰু জিংক"
+              },
+              {
+                "en": "Bronze · copper and tin",
+                "as": "কাঁহ · তাম আৰু টিন"
+              }
+            ]
+          },
+          "id": "sc04.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Steel",
+                "as": "ইস্পাত"
+              },
+              {
+                "en": "iron and carbon",
+                "as": "লো আৰু কাৰ্বন"
+              }
+            ],
+            [
+              {
+                "en": "Brass",
+                "as": "পিতল"
+              },
+              {
+                "en": "copper and zinc",
+                "as": "তাম আৰু জিংক"
+              }
+            ],
+            [
+              {
+                "en": "Bronze",
+                "as": "ব্ৰঞ্জ"
+              },
+              {
+                "en": "copper and tin",
+                "as": "তাম আৰু টিন"
+              }
+            ],
+            [
+              {
+                "en": "Stainless steel",
+                "as": "স্টেইনলেছ ষ্টীল"
+              },
+              {
+                "en": "iron with chromium",
+                "as": "ক্ৰ'মিয়ামসহ লো"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Alloys are recipes; learn the main ingredients.",
+            "as": "সংকৰ ধাতু ৰন্ধন প্ৰণালীৰ দৰে; মূল উপাদান শিকা।"
+          },
+          "id": "sc04.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Mercury is a metal that is liquid at room temperature.",
+            "as": "পাৰা কোঠাৰ উষ্ণতাত তৰল ধাতু।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It is the classic exception among metals.",
+            "as": "ধাতুৰ মাজত ই পৰিচিত ব্যতিক্ৰম।"
+          },
+          "id": "sc04.u2.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Brass",
+              "is",
+              "an",
+              "alloy",
+              "of",
+              "copper",
+              "and",
+              "tin."
+            ],
+            "as": [
+              "পিতল",
+              "তাম",
+              "আৰু",
+              "টিনৰ",
+              "সংকৰ",
+              "ধাতু।"
+            ]
+          },
+          "wrong": {
+            "en": 7,
+            "as": 3
+          },
+          "fix": {
+            "en": "zinc",
+            "as": "জিংকৰ"
+          },
+          "answerText": {
+            "en": "tin",
+            "as": "টিনৰ"
+          },
+          "why": {
+            "en": "Brass uses zinc; bronze uses tin.",
+            "as": "পিতলত জিংক; ব্ৰঞ্জত টিন।"
+          },
+          "id": "sc04.u2.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT an alloy?",
+            "as": "তলৰ কোনটো সংকৰ ধাতু নহয়?"
+          },
+          "options": [
+            {
+              "en": "Steel",
+              "as": "ইস্পাত"
+            },
+            {
+              "en": "Brass",
+              "as": "পিতল"
+            },
+            {
+              "en": "Copper",
+              "as": "তাম"
+            },
+            {
+              "en": "Bronze",
+              "as": "ব্ৰঞ্জ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Copper is a pure metal.",
+            "as": "তাম বিশুদ্ধ ধাতু।"
+          },
+          "id": "sc04.u2.07"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Aluminium is extracted from an ore called",
+            "as": "এলুমিনিয়াম এই আকৰিকৰ পৰা পোৱা যায়:"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "bauxite",
+              "as": "বক্সাইট"
+            },
+            {
+              "en": "haematite",
+              "as": "হেমাটাইট"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Haematite is an iron ore.",
+            "as": "হেমাটাইট লোৰ আকৰিক।"
+          },
+          "id": "sc04.u2.08"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Chemistry in the kitchen",
+        "as": "পাকঘৰৰ ৰসায়ন"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Baking soda releases carbon dioxide, which makes dough rise.",
+          "as": "বেকিং ছ'ডাই কাৰ্বন ডাই অক্সাইড এৰে, যিয়ে পিঠা ফুলায়।"
+        },
+        {
+          "en": "Yeast ferments sugar into alcohol and carbon dioxide.",
+          "as": "ইষ্টে চেনিক গেঁজাই এলক'হল আৰু কাৰ্বন ডাই অক্সাইড কৰে।"
+        },
+        {
+          "en": "Soap molecules grip both grease and water.",
+          "as": "চাবোনৰ অণুৱে তেল আৰু পানী দুয়োটা ধৰে।"
+        },
+        {
+          "en": "Hard water contains calcium and magnesium salts.",
+          "as": "খৰ পানীত কেলছিয়াম আৰু মেগনেছিয়ামৰ লৱণ থাকে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why a cake rises",
+            "as": "কেক কিয় ফুলে"
+          },
+          "text": [
+            {
+              "en": "Heat <mark>baking soda</mark> or add an acid, and it gives off carbon dioxide. Bubbles trapped in batter lift the cake.",
+              "as": "<mark>বেকিং ছ'ডা</mark> গৰম কৰিলে বা এচিড দিলে কাৰ্বন ডাই অক্সাইড ওলায়। মিশ্ৰণত আবদ্ধ বুৰবুৰণিয়ে কেক ফুলায়।"
+            },
+            {
+              "en": "<mark>Yeast</mark>, a living fungus, does a similar job by fermentation. It is also behind rice beer such as xaj.",
+              "as": "<mark>ইষ্ট</mark>, এক জীৱন্ত ভেঁকুৰ, গেঁজনেৰে একে কাম কৰে। চাউল মদৰ গেঁজনতো ইয়াৰ ভূমিকা আছে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Baking soda · carbon dioxide",
+                "as": "বেকিং ছ'ডা · কাৰ্বন ডাই অক্সাইড"
+              },
+              {
+                "en": "Yeast · ferments sugar",
+                "as": "ইষ্ট · চেনি গেঁজায়"
+              }
+            ]
+          },
+          "id": "sc04.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which gas makes soft drinks fizz?",
+            "as": "কোনটো গেছে ক'ল্ড ড্ৰিংকত বুৰবুৰণি কৰে?"
+          },
+          "options": [
+            {
+              "en": "Oxygen",
+              "as": "অক্সিজেন"
+            },
+            {
+              "en": "Nitrogen",
+              "as": "নাইট্ৰজেন"
+            },
+            {
+              "en": "Carbon dioxide",
+              "as": "কাৰ্বন ডাই অক্সাইড"
+            },
+            {
+              "en": "Hydrogen",
+              "as": "হাইড্ৰ'জেন"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Carbon dioxide is dissolved under pressure.",
+            "as": "চাপত কাৰ্বন ডাই অক্সাইড দ্ৰৱীভূত কৰা হয়।"
+          },
+          "guess": true,
+          "id": "sc04.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Why soap will not lather",
+            "as": "চাবোন কিয় ফেন নহয়"
+          },
+          "text": [
+            {
+              "en": "A soap molecule has a water-loving head and a grease-loving tail. It lifts oil off cloth and rinses it away.",
+              "as": "চাবোনৰ অণুৰ মূৰ পানীপ্ৰিয় আৰু নেজ তেলপ্ৰিয়। ই কাপোৰৰ তেল আঁতৰাই ধুই নিয়ে।"
+            },
+            {
+              "en": "In <mark>hard water</mark>, calcium and magnesium salts react with soap to form scum, so it barely lathers. Boiling removes temporary hardness.",
+              "as": "<mark>খৰ পানী</mark>ত কেলছিয়াম আৰু মেগনেছিয়ামৰ লৱণে চাবোনৰ সৈতে বিক্ৰিয়া কৰি লেতা গঢ়ে, সেয়ে ফেন নহয়। উতলালে অস্থায়ী খৰতা আঁতৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Soap head · loves water",
+                "as": "চাবোনৰ মূৰ · পানীপ্ৰিয়"
+              },
+              {
+                "en": "Soap tail · loves grease",
+                "as": "চাবোনৰ নেজ · তেলপ্ৰিয়"
+              }
+            ]
+          },
+          "id": "sc04.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Baking soda",
+                "as": "বেকিং ছ'ডা"
+              },
+              {
+                "en": "sodium bicarbonate",
+                "as": "চ'ডিয়াম বাইকাৰ্বনেট"
+              }
+            ],
+            [
+              {
+                "en": "Washing soda",
+                "as": "ধোৱা ছ'ডা"
+              },
+              {
+                "en": "sodium carbonate",
+                "as": "চ'ডিয়াম কাৰ্বনেট"
+              }
+            ],
+            [
+              {
+                "en": "Bleaching powder",
+                "as": "বিৰঞ্জক গুড়ি"
+              },
+              {
+                "en": "calcium hypochlorite",
+                "as": "কেলছিয়াম হাইপ'ক্ল'ৰাইট"
+              }
+            ],
+            [
+              {
+                "en": "Common salt",
+                "as": "সাধাৰণ নিমখ"
+              },
+              {
+                "en": "sodium chloride",
+                "as": "চ'ডিয়াম ক্ল'ৰাইড"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Know the chemical names of home substances.",
+            "as": "ঘৰুৱা পদাৰ্থৰ ৰাসায়নিক নাম জানা।"
+          },
+          "id": "sc04.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Salt preserves pickles by drawing water out of microbes.",
+            "as": "নিমখে অণুজীৱৰ পৰা পানী টানি আচাৰ সংৰক্ষণ কৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Without water, most spoilage microbes cannot grow.",
+            "as": "পানী নহ'লে বেছিভাগ ক্ষয়কাৰী অণুজীৱ বাঢ়িব নোৱাৰে।"
+          },
+          "id": "sc04.u3.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Follow fermentation.",
+            "as": "গেঁজন অনুসৰণ কৰা।"
+          },
+          "items": [
+            {
+              "en": "Sugar",
+              "as": "চেনি"
+            },
+            {
+              "en": "Yeast acts",
+              "as": "ইষ্টে কাম কৰে"
+            },
+            {
+              "en": "Alcohol and carbon dioxide",
+              "as": "এলক'হল আৰু কাৰ্বন ডাই অক্সাইড"
+            }
+          ],
+          "why": {
+            "en": "Yeast breaks sugar down without much oxygen.",
+            "as": "ইষ্টে কম অক্সিজেনত চেনি ভাঙে।"
+          },
+          "id": "sc04.u3.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Hard",
+              "water",
+              "lathers",
+              "easily",
+              "with",
+              "soap."
+            ],
+            "as": [
+              "খৰ",
+              "পানীত",
+              "চাবোনৰ",
+              "সহজে",
+              "ফেন",
+              "হয়।"
+            ]
+          },
+          "wrong": {
+            "en": 3,
+            "as": 3
+          },
+          "fix": {
+            "en": "poorly",
+            "as": "কমকৈ"
+          },
+          "answerText": {
+            "en": "easily",
+            "as": "সহজে"
+          },
+          "why": {
+            "en": "Its dissolved salts form scum instead.",
+            "as": "ইয়াৰ লৱণে সলনি লেতা গঢ়ে।"
+          },
+          "id": "sc04.u3.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which does not cause water hardness?",
+            "as": "পানীৰ খৰতা কিহে নকৰে?"
+          },
+          "options": [
+            {
+              "en": "Calcium salts",
+              "as": "কেলছিয়াম লৱণ"
+            },
+            {
+              "en": "Magnesium salts",
+              "as": "মেগনেছিয়াম লৱণ"
+            },
+            {
+              "en": "Dissolved oxygen",
+              "as": "দ্ৰৱীভূত অক্সিজেন"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Calcium and magnesium salts cause hardness.",
+            "as": "কেলছিয়াম আৰু মেগনেছিয়াম লৱণে খৰতা কৰে।"
+          },
+          "id": "sc04.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Materials we build with",
+        "as": "আমি ব্যৱহাৰ কৰা সামগ্ৰী"
+      },
+      "icon": "court",
+      "learned": [
+        {
+          "en": "Diamond and graphite are both forms of carbon.",
+          "as": "হীৰা আৰু গ্ৰেফাইট দুয়োটা কাৰ্বনৰ ৰূপ।"
+        },
+        {
+          "en": "Thermoplastics soften on heating; thermosets stay hard.",
+          "as": "থাৰ্ম'প্লাষ্টিক গৰম হ'লে কোমল হয়; থাৰ্ম'চেট টান থাকে।"
+        },
+        {
+          "en": "Glass is made mainly from sand, soda ash and limestone.",
+          "as": "কাঁচ মূলতঃ বালি, ছ'ডা এছ আৰু চূণশিলৰ পৰা হয়।"
+        },
+        {
+          "en": "Cement is made mainly from limestone and clay.",
+          "as": "চিমেণ্ট মূলতঃ চূণশিল আৰু মাটিৰ পৰা হয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Same atoms, opposite stones",
+            "as": "একে পৰমাণু, বিপৰীত শিল"
+          },
+          "text": [
+            {
+              "en": "<mark>Diamond</mark> is the hardest natural substance, and pencil <mark>graphite</mark> is soft enough to write. Both are pure carbon.",
+              "as": "<mark>হীৰা</mark> আটাইতকৈ টান প্ৰাকৃতিক পদাৰ্থ, আৰু পেঞ্চিলৰ <mark>গ্ৰেফাইট</mark> লিখিব পৰাকৈ কোমল। দুয়োটা বিশুদ্ধ কাৰ্বন।"
+            },
+            {
+              "en": "Only the arrangement differs: a rigid 3D lattice versus sliding layers. Such forms are called allotropes.",
+              "as": "কেৱল সজ্জা বেলেগ: টান ত্ৰিমাত্ৰিক জালি আৰু পিছলা স্তৰ। এনে ৰূপক এল'ট্ৰ'প বোলে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Diamond · hard lattice",
+                "as": "হীৰা · টান জালি"
+              },
+              {
+                "en": "Graphite · sliding layers",
+                "as": "গ্ৰেফাইট · পিছলা স্তৰ"
+              }
+            ]
+          },
+          "id": "sc04.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What is a common use of graphite?",
+            "as": "গ্ৰেফাইটৰ এটা সাধাৰণ ব্যৱহাৰ কি?"
+          },
+          "options": [
+            {
+              "en": "Pencil lead",
+              "as": "পেঞ্চিলৰ শীষ"
+            },
+            {
+              "en": "Window glass",
+              "as": "খিড়িকীৰ কাঁচ"
+            },
+            {
+              "en": "Table salt",
+              "as": "খোৱা নিমখ"
+            },
+            {
+              "en": "Rubber tyres only",
+              "as": "কেৱল ৰবৰ টায়াৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Pencil 'lead' is graphite and clay, with no lead metal.",
+            "as": "পেঞ্চিলৰ শীষ গ্ৰেফাইট আৰু মাটি, সীহ ধাতু নহয়।"
+          },
+          "guess": true,
+          "id": "sc04.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Plastic that melts, plastic that won't",
+            "as": "গলা আৰু নগলা প্লাষ্টিক"
+          },
+          "text": [
+            {
+              "en": "<mark>Thermoplastics</mark> such as polythene and PVC can be reshaped when heated, so they can be recycled.",
+              "as": "পলিথিন আৰু PVC ৰ দৰে <mark>থাৰ্ম'প্লাষ্টিক</mark> গৰম কৰিলে নতুন আকৃতি দিব পাৰি, সেয়ে পুনৰ্চক্ৰণ সম্ভৱ।"
+            },
+            {
+              "en": "<mark>Thermosets</mark> such as Bakelite set hard for good, which suits switches and pan handles.",
+              "as": "বেকেলাইটৰ দৰে <mark>থাৰ্ম'চেট</mark> স্থায়ীভাৱে টান হয়, যি চুইচ আৰু কেৰাহীৰ হাতলৰ বাবে উপযোগী।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Thermoplastic · polythene, PVC",
+                "as": "থাৰ্ম'প্লাষ্টিক · পলিথিন, PVC"
+              },
+              {
+                "en": "Thermoset · Bakelite",
+                "as": "থাৰ্ম'চেট · বেকেলাইট"
+              }
+            ]
+          },
+          "id": "sc04.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Glass",
+                "as": "কাঁচ"
+              },
+              {
+                "en": "sand, soda ash, limestone",
+                "as": "বালি, ছ'ডা এছ, চূণশিল"
+              }
+            ],
+            [
+              {
+                "en": "Cement",
+                "as": "চিমেণ্ট"
+              },
+              {
+                "en": "limestone and clay",
+                "as": "চূণশিল আৰু মাটি"
+              }
+            ],
+            [
+              {
+                "en": "Bakelite",
+                "as": "বেকেলাইট"
+              },
+              {
+                "en": "thermoset plastic",
+                "as": "থাৰ্ম'চেট প্লাষ্টিক"
+              }
+            ],
+            [
+              {
+                "en": "Graphite",
+                "as": "গ্ৰেফাইট"
+              },
+              {
+                "en": "form of carbon",
+                "as": "কাৰ্বনৰ ৰূপ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each material has a recipe or family.",
+            "as": "প্ৰতিটো সামগ্ৰীৰ এটা গঠন বা পৰিয়াল আছে।"
+          },
+          "id": "sc04.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Diamond conducts electricity better than graphite.",
+            "as": "হীৰাই গ্ৰেফাইটতকৈ ভালকৈ বিদ্যুৎ পৰিবহন কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Graphite conducts; diamond generally does not.",
+            "as": "গ্ৰেফাইটে পৰিবহন কৰে; হীৰাই সাধাৰণতে নকৰে।"
+          },
+          "id": "sc04.u4.05"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble the hard thermoset plastic.",
+            "as": "টান থাৰ্ম'চেট প্লাষ্টিকটোৰ নাম সজোৱা।"
+          },
+          "word": {
+            "en": [
+              "B",
+              "A",
+              "K",
+              "E",
+              "L",
+              "I",
+              "T",
+              "E"
+            ],
+            "as": [
+              "বে",
+              "কে",
+              "লা",
+              "ই",
+              "ট"
+            ]
+          },
+          "answerText": {
+            "en": "BAKELITE",
+            "as": "বেকেলাইট"
+          },
+          "why": {
+            "en": "It was one of the first fully synthetic plastics.",
+            "as": "ই প্ৰথম সম্পূৰ্ণ কৃত্ৰিম প্লাষ্টিকৰ এটা।"
+          },
+          "id": "sc04.u4.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a form of carbon?",
+            "as": "তলৰ কোনটো কাৰ্বনৰ ৰূপ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Diamond",
+              "as": "হীৰা"
+            },
+            {
+              "en": "Graphite",
+              "as": "গ্ৰেফাইট"
+            },
+            {
+              "en": "Charcoal",
+              "as": "কাঠকয়লা"
+            },
+            {
+              "en": "Quartz",
+              "as": "কোৱাৰ্টজ"
+            }
+          ],
+          "answer": 3,
+          "why": {
+            "en": "Quartz is silicon dioxide.",
+            "as": "কোৱাৰ্টজ ছিলিকন ডাই অক্সাইড।"
+          },
+          "id": "sc04.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Home chemistry check",
+      "as": "ঘৰুৱা ৰসায়ন পৰীক্ষা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which gas is mainly in biogas?",
+          "as": "জৈৱ গেছত মূলতঃ কোনটো গেছ থাকে?"
+        },
+        "options": [
+          {
+            "en": "Methane",
+            "as": "মিথেন"
+          },
+          {
+            "en": "Oxygen",
+            "as": "অক্সিজেন"
+          },
+          {
+            "en": "Ozone",
+            "as": "অজ'ন"
+          },
+          {
+            "en": "Neon",
+            "as": "নিয়ন"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Microbes make mostly methane from dung.",
+          "as": "অণুজীৱে গোবৰৰ পৰা মূলতঃ মিথেন উৎপন্ন কৰে।"
+        },
+        "id": "sc04.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Rust needs both oxygen and water.",
+          "as": "মামৰক অক্সিজেন আৰু পানী দুয়োটা লাগে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Remove either one and rusting largely stops.",
+          "as": "এটা আঁতৰালে মামৰ ধৰা প্ৰায় বন্ধ হয়।"
+        },
+        "id": "sc04.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Brass",
+              "as": "পিতল"
+            },
+            {
+              "en": "copper and zinc",
+              "as": "তাম আৰু জিংক"
+            }
+          ],
+          [
+            {
+              "en": "Yeast",
+              "as": "ইষ্ট"
+            },
+            {
+              "en": "fermentation",
+              "as": "গেঁজন"
+            }
+          ],
+          [
+            {
+              "en": "Hard water",
+              "as": "খৰ পানী"
+            },
+            {
+              "en": "calcium, magnesium salts",
+              "as": "কেলছিয়াম, মেগনেছিয়াম লৱণ"
+            }
+          ],
+          [
+            {
+              "en": "Polythene",
+              "as": "পলিথিন"
+            },
+            {
+              "en": "thermoplastic",
+              "as": "থাৰ্ম'প্লাষ্টিক"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One link from each unit.",
+          "as": "প্ৰতিটো গোটৰ এটা সংযোগ।"
+        },
+        "id": "sc04.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is pure carbon?",
+          "as": "তলৰ কোনটো বিশুদ্ধ কাৰ্বন?"
+        },
+        "options": [
+          {
+            "en": "Diamond",
+            "as": "হীৰা"
+          },
+          {
+            "en": "Brass",
+            "as": "পিতল"
+          },
+          {
+            "en": "Glass",
+            "as": "কাঁচ"
+          },
+          {
+            "en": "Rust",
+            "as": "মামৰ"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Diamond is carbon alone.",
+          "as": "হীৰা কেৱল কাৰ্বন।"
+        },
+        "id": "sc04.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Follow the rusting recipe.",
+          "as": "মামৰ ধৰাৰ ক্ৰম সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Iron",
+            "as": "লো"
+          },
+          {
+            "en": "Oxygen and water reach it",
+            "as": "অক্সিজেন আৰু পানী লাগে"
+          },
+          {
+            "en": "Iron oxide forms",
+            "as": "আইৰন অক্সাইড হয়"
+          }
+        ],
+        "why": {
+          "en": "Iron oxidises in the presence of water.",
+          "as": "পানীৰ উপস্থিতিত লো জাৰিত হয়।"
+        },
+        "id": "sc04.test.05"
+      }
+    ]
+  }
+}

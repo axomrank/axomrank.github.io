@@ -184,25 +184,6 @@
    }
   },
   {
-   "id": "economy",
-   "icon": "coin",
-   "color": "good",
-   "exams": [
-    "adre",
-    "apsc",
-    "si"
-   ],
-   "title": {
-    "en": "Economy",
-    "as": "অৰ্থনীতি"
-   },
-   "blurb": {
-    "en": "Tea, oil, agriculture, budget and schemes",
-    "as": "চাহ, তেল, কৃষি, বাজেট আৰু আঁচনি"
-   },
-   "courses": []
-  },
-  {
    "id": "science",
    "icon": "flask",
    "color": "river",
@@ -213,14 +194,22 @@
     "si"
    ],
    "title": {
-    "en": "General Science",
-    "as": "সাধাৰণ বিজ্ঞান"
+    "en": "General Science & Environment",
+    "as": "সাধাৰণ বিজ্ঞান আৰু পৰিৱেশ"
    },
    "blurb": {
-    "en": "Physics, chemistry, biology for everyday life",
-    "as": "দৈনন্দিন জীৱনৰ পদাৰ্থ, ৰসায়ন, জীৱবিজ্ঞান"
+    "en": "Physics, chemistry, biology and environment for everyday life",
+    "as": "দৈনন্দিন জীৱনৰ পদাৰ্থ, ৰসায়ন, জীৱবিজ্ঞান আৰু পৰিৱেশ"
    },
-   "courses": []
+   "courses": [
+    {
+     "course": "general-science"
+    }
+   ],
+   "intro": {
+    "en": "New course: facts and Assamese text are still being reviewed.",
+    "as": "নতুন পাঠ্যক্ৰম: তথ্য আৰু অসমীয়া পাঠৰ পৰ্যালোচনা চলি আছে।"
+   }
   },
   {
    "id": "current-affairs",
@@ -232,8 +221,8 @@
     "si"
    ],
    "title": {
-    "en": "General Awareness & Current Affairs",
-    "as": "সাধাৰণ জ্ঞান আৰু সাম্প্ৰতিক ঘটনা"
+    "en": "General Awareness",
+    "as": "সাধাৰণ জ্ঞান"
    },
    "blurb": {
     "en": "Sports, people, symbols, awards and institutions",
@@ -242,13 +231,6 @@
    "courses": [
     {
      "course": "general-awareness"
-    },
-    {
-     "soon": true,
-     "title": {
-      "en": "Current Affairs",
-      "as": "সাম্প্ৰতিক ঘটনা"
-     }
     }
    ]
   },

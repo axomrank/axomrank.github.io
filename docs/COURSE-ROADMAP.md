@@ -7,26 +7,18 @@ subject tags are unverified. The lesson maps are in
 
 | Order | Course | Plan | Past questions | Lessons | Status in app |
 |---:|---|---|---:|---:|---|
-| 1 | English | [ENGLISH-COURSE.md](ENGLISH-COURSE.md) | 379 | 15 | Not in the catalog |
-| 2 | General Science and Environment | [GENERAL-SCIENCE-COURSE.md](GENERAL-SCIENCE-COURSE.md) | 137 | 12 | Coming soon |
-| 3 | General Awareness | [GENERAL-AWARENESS-COURSE.md](GENERAL-AWARENESS-COURSE.md) | 166 | 7 | Built in local catalog |
-| 4 | Economy | [ECONOMY-COURSE.md](ECONOMY-COURSE.md) | 78 | 8 | Coming soon |
-| 5 | Child Development and Pedagogy | [PEDAGOGY-COURSE.md](PEDAGOGY-COURSE.md) | 55 | 10 | Coming soon |
-| 6 | Current Affairs | [CURRENT-AFFAIRS-COURSE.md](CURRENT-AFFAIRS-COURSE.md) | 7 tagged | Monthly packs | Coming soon |
-| 7 | Assamese Language | [ASSAMESE-LANGUAGE-COURSE.md](ASSAMESE-LANGUAGE-COURSE.md) | Not measured | Not sized | Not in the catalog |
+| 1 | English | [ENGLISH-COURSE.md](ENGLISH-COURSE.md) | 379 | 15 | Built in local catalog |
+| 2 | General Awareness | [GENERAL-AWARENESS-COURSE.md](GENERAL-AWARENESS-COURSE.md) | 166 | 7 | Built in local catalog |
+| 3 | General Science and Environment | [GENERAL-SCIENCE-COURSE.md](GENERAL-SCIENCE-COURSE.md) | 137 | 12 | Listed, pending review: 12 lessons |
+| 4 | Child Development and Pedagogy | [PEDAGOGY-COURSE.md](PEDAGOGY-COURSE.md) | 55 | 10 | Coming soon |
 
-**If TET is the priority,** move Pedagogy to second: it is 17% of the TET sample and
+**If TET is the priority,** move Pedagogy ahead of Science: it is 17% of the TET sample and
 appears in no other exam.
-
-## Why this order
-
-English is the largest subject with no course, and it counts in every exam. Science comes
-next because APSC tests it heavily once Environment is included. General Awareness is large
-for ADRE but needs care over stale facts. Current Affairs is last among the funded courses
-because it never ends: it needs someone to keep adding to it.
 
 ## Left out on purpose
 
+- **Economy, Current Affairs and Assamese Language:** dropped by the user on 2026-11-06 as
+  not required. Their plans are in git history.
 - **Commerce (85):** all from one TET Paper II option. Not a shared subject.
 - **Driving (24):** the ADRE driver paper only, plus one TET question.
 - **Computer (12):** too small for a course. Two lessons could join General Science later.

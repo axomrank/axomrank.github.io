@@ -1,0 +1,1280 @@
+{
+  "id": "sc-09-technology",
+  "course": "general-science",
+  "no": 9,
+  "version": 1,
+  "king": {
+    "en": "Technology today",
+    "as": "আজিৰ প্ৰযুক্তি"
+  },
+  "reign": {
+    "en": "Science and technology",
+    "as": "বিজ্ঞান আৰু প্ৰযুক্তি"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Department of Atomic Energy",
+      "url": "https://dae.gov.in/",
+      "used_for": "Lead for the nuclear programme. Passages still to be read."
+    },
+    {
+      "title": "DRDO",
+      "url": "https://www.drdo.gov.in/",
+      "used_for": "Lead for missiles and defence research. Passages still to be read."
+    },
+    {
+      "title": "NPCI: UPI",
+      "url": "https://www.npci.org.in/what-we-do/upi/product-overview",
+      "used_for": "Lead for UPI. Passage still to be read."
+    },
+    {
+      "title": "Nobel Prize: Chemistry 2020",
+      "url": "https://www.nobelprize.org/prizes/chemistry/2020/summary/",
+      "used_for": "Lead for CRISPR. Passage still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Splitting and joining atoms",
+        "as": "পৰমাণু ভঙা আৰু যোৰা"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "Fission splits heavy nuclei; nuclear power plants use it.",
+          "as": "বিভাজনে গধুৰ কেন্দ্ৰক ভাঙে; পাৰমাণৱিক বিদ্যুৎ কেন্দ্ৰত ইয়াক ব্যৱহাৰ হয়।"
+        },
+        {
+          "en": "Fusion joins light nuclei; it powers the Sun.",
+          "as": "সংযোজনে পাতল কেন্দ্ৰক যোৰে; ই সূৰ্যক শক্তি দিয়ে।"
+        },
+        {
+          "en": "Homi Bhabha led India's early nuclear programme.",
+          "as": "হোমী ভাবাই ভাৰতৰ আদিম পাৰমাণৱিক কাৰ্যসূচীৰ নেতৃত্ব দিছিল।"
+        },
+        {
+          "en": "India held nuclear tests at Pokhran in 1974 and 1998.",
+          "as": "ভাৰতে ১৯৭৪ আৰু ১৯৯৮ চনত পোখৰানত পাৰমাণৱিক পৰীক্ষা কৰিছিল।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The Sun and a power plant",
+            "as": "সূৰ্য আৰু বিদ্যুৎ কেন্দ্ৰ"
+          },
+          "text": [
+            {
+              "en": "The Sun joins hydrogen nuclei: <mark>fusion</mark>. A reactor splits uranium nuclei: <mark>fission</mark>. Both turn a little mass into huge energy.",
+              "as": "সূৰ্যই হাইড্ৰ'জেন কেন্দ্ৰক যোৰে: <mark>সংযোজন</mark>। ৰিয়েক্টৰে ইউৰেনিয়াম কেন্দ্ৰক ভাঙে: <mark>বিভাজন</mark>। দুয়োটাই অলপ ভৰক প্ৰচুৰ শক্তি কৰে।"
+            },
+            {
+              "en": "Einstein's E = mc² explains why so little mass gives so much energy.",
+              "as": "আইনষ্টাইনৰ E = mc² এ বুজায় কিয় অলপ ভৰে ইমান শক্তি দিয়ে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Fission · splits uranium",
+                "as": "বিভাজন · ইউৰেনিয়াম ভাঙে"
+              },
+              {
+                "en": "Fusion · joins hydrogen",
+                "as": "সংযোজন · হাইড্ৰ'জেন যোৰে"
+              }
+            ]
+          },
+          "id": "sc09.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What do control rods do in a reactor?",
+            "as": "ৰিয়েক্টৰত নিয়ন্ত্ৰক দণ্ডে কি কৰে?"
+          },
+          "options": [
+            {
+              "en": "Absorb neutrons to slow the reaction",
+              "as": "নিউট্ৰন শোষি বিক্ৰিয়া লেহেমীয়া কৰে"
+            },
+            {
+              "en": "Add uranium",
+              "as": "ইউৰেনিয়াম যোগ কৰে"
+            },
+            {
+              "en": "Generate sound",
+              "as": "শব্দ উৎপন্ন কৰে"
+            },
+            {
+              "en": "Cool the air only",
+              "as": "কেৱল বায়ু ঠাণ্ডা কৰে"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Fewer free neutrons means a slower chain reaction.",
+            "as": "মুক্ত নিউট্ৰন কম হ'লে শৃংখল বিক্ৰিয়া লেহেমীয়া হয়।"
+          },
+          "guess": true,
+          "id": "sc09.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "India's nuclear story",
+            "as": "ভাৰতৰ পাৰমাণৱিক কাহিনী"
+          },
+          "text": [
+            {
+              "en": "<mark>Homi Bhabha</mark> shaped the programme, and Mumbai's Bhabha Atomic Research Centre bears his name. Tarapur became India's first nuclear power station in 1969.",
+              "as": "<mark>হোমী ভাবাই</mark> কাৰ্যসূচী গঢ়িছিল, আৰু মুম্বাইৰ ভাবা পাৰমাণৱিক গৱেষণা কেন্দ্ৰ তেওঁৰ নামত। তাৰাপুৰ ১৯৬৯ চনত ভাৰতৰ প্ৰথম পাৰমাণৱিক বিদ্যুৎ কেন্দ্ৰ হয়।"
+            },
+            {
+              "en": "India tested at <mark>Pokhran</mark>, Rajasthan, in 1974 and again in 1998.",
+              "as": "ভাৰতে ৰাজস্থানৰ <mark>পোখৰানত</mark> ১৯৭৪ আৰু ১৯৯৮ চনত পৰীক্ষা কৰিছিল।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "1969 · Tarapur",
+                "as": "১৯৬৯ · তাৰাপুৰ"
+              },
+              {
+                "en": "1974 · Pokhran I",
+                "as": "১৯৭৪ · পোখৰান ১"
+              },
+              {
+                "en": "1998 · Pokhran II",
+                "as": "১৯৯৮ · পোখৰান ২"
+              }
+            ]
+          },
+          "id": "sc09.u1.03"
+        },
+        {
+          "type": "timeline",
+          "q": {
+            "en": "Place each event on the timeline.",
+            "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+          },
+          "anchors": [
+            {
+              "y": "1974",
+              "l": {
+                "en": "Pokhran I",
+                "as": "পোখৰান ১"
+              }
+            }
+          ],
+          "items": [
+            {
+              "t": {
+                "en": "Tarapur power station opens",
+                "as": "তাৰাপুৰ কেন্দ্ৰ চালু"
+              },
+              "slot": 0
+            },
+            {
+              "t": {
+                "en": "Pokhran II",
+                "as": "পোখৰান ২"
+              },
+              "slot": 1
+            }
+          ],
+          "why": {
+            "en": "1969, 1974, 1998.",
+            "as": "১৯৬৯, ১৯৭৪, ১৯৯৮।"
+          },
+          "id": "sc09.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Today's nuclear power plants run on fusion.",
+            "as": "আজিৰ পাৰমাণৱিক বিদ্যুৎ কেন্দ্ৰ সংযোজনত চলে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Commercial plants use fission; fusion power is still experimental.",
+            "as": "বাণিজ্যিক কেন্দ্ৰত বিভাজন ব্যৱহাৰ হয়; সংযোজন শক্তি এতিয়াও পৰীক্ষামূলক।"
+          },
+          "id": "sc09.u1.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Fission",
+                "as": "বিভাজন"
+              },
+              {
+                "en": "reactors",
+                "as": "ৰিয়েক্টৰ"
+              }
+            ],
+            [
+              {
+                "en": "Fusion",
+                "as": "সংযোজন"
+              },
+              {
+                "en": "the Sun",
+                "as": "সূৰ্য"
+              }
+            ],
+            [
+              {
+                "en": "Pokhran",
+                "as": "পোখৰান"
+              },
+              {
+                "en": "nuclear tests",
+                "as": "পাৰমাণৱিক পৰীক্ষা"
+              }
+            ],
+            [
+              {
+                "en": "Uranium",
+                "as": "ইউৰেনিয়াম"
+              },
+              {
+                "en": "reactor fuel",
+                "as": "ৰিয়েক্টৰৰ ইন্ধন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Keep the two processes apart.",
+            "as": "দুয়োটা প্ৰক্ৰিয়া পৃথক কৰি ৰাখা।"
+          },
+          "id": "sc09.u1.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The research centre at Trombay, Mumbai, is named after Homi",
+            "as": "মুম্বাইৰ ট্ৰম্বেৰ গৱেষণা কেন্দ্ৰৰ নাম হোমী"
+          },
+          "after": {
+            "en": ".",
+            "as": "ৰ নামত।"
+          },
+          "options": [
+            {
+              "en": "Bhabha",
+              "as": "ভাবা"
+            },
+            {
+              "en": "Sethna",
+              "as": "চেঠনা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It is the Bhabha Atomic Research Centre.",
+            "as": "ই ভাবা পাৰমাণৱিক গৱেষণা কেন্দ্ৰ।"
+          },
+          "id": "sc09.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Defence built at home",
+        "as": "দেশীয় প্ৰতিৰক্ষা"
+      },
+      "icon": "flag",
+      "learned": [
+        {
+          "en": "DRDO, formed in 1958, leads Indian defence research.",
+          "as": "১৯৫৮ চনত গঠিত DRDO এ ভাৰতীয় প্ৰতিৰক্ষা গৱেষণাৰ নেতৃত্ব দিয়ে।"
+        },
+        {
+          "en": "A. P. J. Abdul Kalam led the guided missile programme.",
+          "as": "এ. পি. জে. আব্দুল কালামে নিয়ন্ত্ৰিত ক্ষেপণাস্ত্ৰ কাৰ্যসূচীৰ নেতৃত্ব দিছিল।"
+        },
+        {
+          "en": "Agni and Prithvi are ballistic missiles; Akash is surface-to-air; Nag is anti-tank.",
+          "as": "অগ্নি আৰু পৃথ্বী বেলিষ্টিক; আকাশ ভূমিৰ পৰা আকাশলৈ; নাগ ট্যাংকবিৰোধী।"
+        },
+        {
+          "en": "BrahMos is an India-Russia supersonic cruise missile.",
+          "as": "ব্ৰহ্মোছ ভাৰত-ৰাছিয়াৰ শব্দাতিগ ক্ৰুজ ক্ষেপণাস্ত্ৰ।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A missile named for a river",
+            "as": "নদীৰ নামত ক্ষেপণাস্ত্ৰ"
+          },
+          "text": [
+            {
+              "en": "<mark>BrahMos</mark> takes its name from two rivers, the Brahmaputra and Moskva. India and Russia built this cruise missile together.",
+              "as": "<mark>ব্ৰহ্মোছ</mark>ৰ নাম দুখন নদীৰ পৰা: ব্ৰহ্মপুত্ৰ আৰু মস্কোভা। ভাৰত আৰু ৰাছিয়াই এই ক্ৰুজ ক্ষেপণাস্ত্ৰ একেলগে সাজিছে।"
+            },
+            {
+              "en": "A ballistic missile arcs high after launch, while a cruise missile flies low and steers itself the whole way.",
+              "as": "বেলিষ্টিক ক্ষেপণাস্ত্ৰ উৰাৰ পিছত ওখলৈ চাপ কাটে, আনহাতে ক্ৰুজ ক্ষেপণাস্ত্ৰ তলেৰে উৰি গোটেই পথ নিজে নিয়ন্ত্ৰণ কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Ballistic · high arc",
+                "as": "বেলিষ্টিক · ওখ চাপ"
+              },
+              {
+                "en": "Cruise · low, guided",
+                "as": "ক্ৰুজ · তলেৰে, নিয়ন্ত্ৰিত"
+              }
+            ]
+          },
+          "id": "sc09.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which two rivers give BrahMos its name?",
+            "as": "ব্ৰহ্মোছৰ নাম কোন দুখন নদীৰ পৰা?"
+          },
+          "options": [
+            {
+              "en": "Ganga and Volga",
+              "as": "গংগা আৰু ভল্গা"
+            },
+            {
+              "en": "Brahmaputra and Moskva",
+              "as": "ব্ৰহ্মপুত্ৰ আৰু মস্কোভা"
+            },
+            {
+              "en": "Barak and Don",
+              "as": "বৰাক আৰু ডন"
+            },
+            {
+              "en": "Yamuna and Moskva",
+              "as": "যমুনা আৰু মস্কোভা"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The name joins the rivers of the two partner countries.",
+            "as": "নামটোৱে দুই অংশীদাৰ দেশৰ নদী যোৰে।"
+          },
+          "guess": true,
+          "id": "sc09.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "The missile man's programme",
+            "as": "ক্ষেপণাস্ত্ৰ মানৱৰ কাৰ্যসূচী"
+          },
+          "text": [
+            {
+              "en": "In 1983, the Integrated Guided Missile Development Programme began under <mark>DRDO</mark>. <mark>Abdul Kalam</mark> led it and later became President.",
+              "as": "১৯৮৩ চনত <mark>DRDO</mark> ৰ অধীনত সমন্বিত নিয়ন্ত্ৰিত ক্ষেপণাস্ত্ৰ বিকাশ কাৰ্যসূচী আৰম্ভ হয়। <mark>আব্দুল কালামে</mark> ইয়াৰ নেতৃত্ব দিয়ে আৰু পিছত ৰাষ্ট্ৰপতি হয়।"
+            },
+            {
+              "en": "Agni and Prithvi came from it. Meanwhile, Tejas is an indigenous fighter and INS Vikrant an indigenously built aircraft carrier.",
+              "as": "ইয়াৰ পৰা অগ্নি আৰু পৃথ্বী আহিল। ইফালে তেজছ দেশীয় যুদ্ধবিমান আৰু INS বিক্ৰান্ত দেশীয়ভাৱে নিৰ্মিত বিমানবাহী জাহাজ।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Prithvi · surface to surface",
+                "as": "পৃথ্বী · ভূমিৰ পৰা ভূমিলৈ"
+              },
+              {
+                "en": "Agni · long-range ballistic",
+                "as": "অগ্নি · দীঘল পাল্লাৰ বেলিষ্টিক"
+              },
+              {
+                "en": "Akash · surface to air",
+                "as": "আকাশ · ভূমিৰ পৰা আকাশলৈ"
+              },
+              {
+                "en": "Nag · anti-tank",
+                "as": "নাগ · ট্যাংকবিৰোধী"
+              }
+            ]
+          },
+          "id": "sc09.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Agni",
+                "as": "অগ্নি"
+              },
+              {
+                "en": "long-range ballistic",
+                "as": "দীঘল পাল্লাৰ বেলিষ্টিক"
+              }
+            ],
+            [
+              {
+                "en": "Akash",
+                "as": "আকাশ"
+              },
+              {
+                "en": "surface to air",
+                "as": "ভূমিৰ পৰা আকাশলৈ"
+              }
+            ],
+            [
+              {
+                "en": "Nag",
+                "as": "নাগ"
+              },
+              {
+                "en": "anti-tank",
+                "as": "ট্যাংকবিৰোধী"
+              }
+            ],
+            [
+              {
+                "en": "Tejas",
+                "as": "তেজছ"
+              },
+              {
+                "en": "light combat aircraft",
+                "as": "লঘু যুদ্ধবিমান"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Know each system's role.",
+            "as": "প্ৰতিটো ব্যৱস্থাৰ ভূমিকা জানা।"
+          },
+          "id": "sc09.u2.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "BrahMos is a joint India-Russia missile.",
+            "as": "ব্ৰহ্মোছ ভাৰত-ৰাছিয়াৰ যুটীয়া ক্ষেপণাস্ত্ৰ।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It is a supersonic cruise missile.",
+            "as": "ই শব্দাতিগ ক্ৰুজ ক্ষেপণাস্ত্ৰ।"
+          },
+          "id": "sc09.u2.05"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I was born in Rameswaram.",
+              "as": "মোৰ জন্ম ৰামেশ্বৰমত।"
+            },
+            {
+              "en": "I led India's missile programme.",
+              "as": "মই ভাৰতৰ ক্ষেপণাস্ত্ৰ কাৰ্যসূচীৰ নেতৃত্ব দিছিলোঁ।"
+            },
+            {
+              "en": "I became India's President in 2002.",
+              "as": "মই ২০০২ চনত ভাৰতৰ ৰাষ্ট্ৰপতি হৈছিলোঁ।"
+            }
+          ],
+          "options": [
+            {
+              "en": "Homi Bhabha",
+              "as": "হোমী ভাবা"
+            },
+            {
+              "en": "Vikram Sarabhai",
+              "as": "বিক্ৰম সাৰাভাই"
+            },
+            {
+              "en": "A. P. J. Abdul Kalam",
+              "as": "এ. পি. জে. আব্দুল কালাম"
+            },
+            {
+              "en": "Satish Dhawan",
+              "as": "সতীশ ধাৱন"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "He is often called the Missile Man of India.",
+            "as": "তেওঁক প্ৰায়ে ভাৰতৰ ক্ষেপণাস্ত্ৰ মানৱ বোলে।"
+          },
+          "id": "sc09.u2.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Akash",
+              "is",
+              "an",
+              "anti-tank",
+              "missile."
+            ],
+            "as": [
+              "আকাশ",
+              "এক",
+              "ট্যাংকবিৰোধী",
+              "ক্ষেপণাস্ত্ৰ।"
+            ]
+          },
+          "wrong": {
+            "en": 3,
+            "as": 2
+          },
+          "fix": {
+            "en": "surface-to-air",
+            "as": "ভূমিৰ পৰা আকাশলৈ"
+          },
+          "answerText": {
+            "en": "anti-tank",
+            "as": "ট্যাংকবিৰোধী"
+          },
+          "why": {
+            "en": "Nag is anti-tank; Akash targets aircraft.",
+            "as": "নাগ ট্যাংকবিৰোধী; আকাশে বিমান লক্ষ্য কৰে।"
+          },
+          "id": "sc09.u2.07"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Machines that learn",
+        "as": "শিকিব পৰা যন্ত্ৰ"
+      },
+      "icon": "scroll",
+      "learned": [
+        {
+          "en": "Machine learning finds patterns from data instead of fixed rules.",
+          "as": "মেচিন লাৰ্নিঙে নিৰ্দিষ্ট নিয়মৰ সলনি তথ্যৰ পৰা আৰ্হি বিচাৰে।"
+        },
+        {
+          "en": "AI can be biased or wrong, so its output needs checking.",
+          "as": "AI পক্ষপাতী বা ভুল হ'ব পাৰে, সেয়ে ইয়াৰ ফল পৰীক্ষা কৰিব লাগে।"
+        },
+        {
+          "en": "Tim Berners-Lee invented the World Wide Web in 1989.",
+          "as": "১৯৮৯ চনত টিম বাৰ্নাৰ্ছ-লীয়ে ৱৰ্ল্ড ৱাইড ৱেব উদ্ভাৱন কৰে।"
+        },
+        {
+          "en": "UPI, launched in 2016, is India's instant payment system run by NPCI.",
+          "as": "২০১৬ চনত আৰম্ভ UPI ভাৰতৰ তাৎক্ষণিক পৰিশোধ ব্যৱস্থা, যি NPCI এ চলায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Learning without rules",
+            "as": "নিয়ম নোহোৱাকৈ শিক্ষা"
+          },
+          "text": [
+            {
+              "en": "Writing rules for spotting a cat is hopeless. Show a program thousands of labelled photos, and it finds patterns: <mark>machine learning</mark>.",
+              "as": "মেকুৰী চিনাক্তকৰণৰ নিয়ম লিখা অসম্ভৱ। প্ৰগ্ৰামক হাজাৰ হাজাৰ চিহ্নিত ফটো দেখুৱালে ই আৰ্হি বিচাৰে: <mark>মেচিন লাৰ্নিং</mark>।"
+            },
+            {
+              "en": "It learns from its data, flaws included. A skewed dataset gives skewed answers, and chatbots can state errors confidently.",
+              "as": "ই তথ্যৰ পৰা শিকে, ভুলকে ধৰি। পক্ষপাতী তথ্যই পক্ষপাতী উত্তৰ দিয়ে, আৰু চেটবটে ভুলো আত্মবিশ্বাসেৰে ক'ব পাৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Data",
+                "as": "তথ্য"
+              },
+              {
+                "en": "Training",
+                "as": "প্ৰশিক্ষণ"
+              },
+              {
+                "en": "Model",
+                "as": "মডেল"
+              },
+              {
+                "en": "Prediction",
+                "as": "পূৰ্বাভাস"
+              }
+            ]
+          },
+          "id": "sc09.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "What should you do with an AI chatbot's factual answer?",
+            "as": "AI চেটবটৰ তথ্যমূলক উত্তৰত কি কৰিব লাগে?"
+          },
+          "options": [
+            {
+              "en": "Trust it fully",
+              "as": "সম্পূৰ্ণ বিশ্বাস কৰা"
+            },
+            {
+              "en": "Check it against a reliable source",
+              "as": "নিৰ্ভৰযোগ্য উৎসৰ সৈতে মিলাই চোৱা"
+            },
+            {
+              "en": "Ignore all AI always",
+              "as": "সদায় সকলো AI এৰা"
+            },
+            {
+              "en": "Ask it to promise",
+              "as": "প্ৰতিশ্ৰুতি দিবলৈ কোৱা"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Language models can produce confident errors.",
+            "as": "ভাষা মডেলে আত্মবিশ্বাসেৰে ভুল দিব পাৰে।"
+          },
+          "guess": true,
+          "id": "sc09.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "The web is not the Internet",
+            "as": "ৱেব আৰু ইণ্টাৰনেট একে নহয়"
+          },
+          "text": [
+            {
+              "en": "The <mark>Internet</mark> is the global network. The <mark>World Wide Web</mark> is pages on top, invented by Tim Berners-Lee in 1989.",
+              "as": "<mark>ইণ্টাৰনেট</mark> বিশ্বজোৰা নেটৱৰ্ক। <mark>ৱৰ্ল্ড ৱাইড ৱেব</mark> তাৰ ওপৰৰ পৃষ্ঠা, যি ১৯৮৯ চনত টিম বাৰ্নাৰ্ছ-লীয়ে উদ্ভাৱন কৰিছিল।"
+            },
+            {
+              "en": "In India, <mark>UPI</mark>, launched in 2016, lets a phone send money instantly, and <b>5G</b> service began in 2022.",
+              "as": "ভাৰতত ২০১৬ চনত আৰম্ভ <mark>UPI</mark> এ ফোনেৰে লগে লগে ধন পঠিয়াব দিয়ে, আৰু ২০২২ চনত <b>5G</b> সেৱা আৰম্ভ হয়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "CPU · processes",
+                "as": "CPU · প্ৰক্ৰিয়া কৰে"
+              },
+              {
+                "en": "RAM · short-term memory",
+                "as": "RAM · চুটি সময়ৰ স্মৃতি"
+              },
+              {
+                "en": "Binary · 0 and 1",
+                "as": "বাইনাৰী · ০ আৰু ১"
+              }
+            ]
+          },
+          "id": "sc09.u3.03"
+        },
+        {
+          "type": "timeline",
+          "q": {
+            "en": "Place each event on the timeline.",
+            "as": "প্ৰতিটো ঘটনা সময়ৰেখাত বহুওৱা।"
+          },
+          "anchors": [
+            {
+              "y": "2016",
+              "l": {
+                "en": "UPI launched",
+                "as": "UPI আৰম্ভ"
+              }
+            }
+          ],
+          "items": [
+            {
+              "t": {
+                "en": "World Wide Web invented",
+                "as": "ৱৰ্ল্ড ৱাইড ৱেব উদ্ভাৱন"
+              },
+              "slot": 0
+            },
+            {
+              "t": {
+                "en": "5G begins in India",
+                "as": "ভাৰতত 5G আৰম্ভ"
+              },
+              "slot": 1
+            }
+          ],
+          "why": {
+            "en": "1989, 2016, 2022.",
+            "as": "১৯৮৯, ২০১৬, ২০২২।"
+          },
+          "id": "sc09.u3.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Machine learning",
+                "as": "মেচিন লাৰ্নিং"
+              },
+              {
+                "en": "learns patterns from data",
+                "as": "তথ্যৰ পৰা আৰ্হি শিকে"
+              }
+            ],
+            [
+              {
+                "en": "CPU",
+                "as": "CPU"
+              },
+              {
+                "en": "runs instructions",
+                "as": "নিৰ্দেশ চলায়"
+              }
+            ],
+            [
+              {
+                "en": "UPI",
+                "as": "UPI"
+              },
+              {
+                "en": "instant payments",
+                "as": "তাৎক্ষণিক পৰিশোধ"
+              }
+            ],
+            [
+              {
+                "en": "Browser",
+                "as": "ব্ৰাউজাৰ"
+              },
+              {
+                "en": "opens web pages",
+                "as": "ৱেব পৃষ্ঠা খোলে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each term has one clear job.",
+            "as": "প্ৰতিটো শব্দৰ এটা স্পষ্ট কাম আছে।"
+          },
+          "id": "sc09.u3.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The Internet and the World Wide Web are the same thing.",
+            "as": "ইণ্টাৰনেট আৰু ৱৰ্ল্ড ৱাইড ৱেব একেটা বস্তু।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The Web is a service that runs over the Internet.",
+            "as": "ৱেব ইণ্টাৰনেটত চলা এক সেৱা।"
+          },
+          "id": "sc09.u3.06"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is an input device?",
+            "as": "তলৰ কোনটো ইনপুট সঁজুলি?"
+          },
+          "options": [
+            {
+              "en": "Monitor",
+              "as": "মনিটৰ"
+            },
+            {
+              "en": "Printer",
+              "as": "প্ৰিণ্টাৰ"
+            },
+            {
+              "en": "Keyboard",
+              "as": "কীবৰ্ড"
+            },
+            {
+              "en": "Speaker",
+              "as": "স্পীকাৰ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "The others are output devices.",
+            "as": "বাকীবোৰ আউটপুট সঁজুলি।"
+          },
+          "id": "sc09.u3.07"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Very small, very new",
+        "as": "অতি সৰু, অতি নতুন"
+      },
+      "icon": "star",
+      "learned": [
+        {
+          "en": "A nanometre is one billionth of a metre.",
+          "as": "এক নেন'মিটাৰ এক মিটাৰৰ এশ কোটি ভাগৰ এভাগ।"
+        },
+        {
+          "en": "Bt cotton is a genetically modified crop grown in India.",
+          "as": "Bt কপাহ ভাৰতত খেতি কৰা জিনগতভাৱে পৰিৱৰ্তিত শস্য।"
+        },
+        {
+          "en": "CRISPR is a tool for editing genes.",
+          "as": "CRISPR জিন সম্পাদনাৰ এক সঁজুলি।"
+        },
+        {
+          "en": "India's National Quantum Mission was approved in 2023.",
+          "as": "ভাৰতৰ ৰাষ্ট্ৰীয় কোৱাণ্টাম অভিযান ২০২৩ চনত অনুমোদিত হয়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "A world of billionths",
+            "as": "এশ কোটি ভাগৰ পৃথিৱী"
+          },
+          "text": [
+            {
+              "en": "A <mark>nanometre</mark> is a billionth of a metre, and a hair is tens of thousands wide. At that size, gold and carbon behave oddly.",
+              "as": "এক <mark>নেন'মিটাৰ</mark> মিটাৰৰ এশ কোটি ভাগৰ এভাগ, আৰু চুলি কেবা হাজাৰ নেন'মিটাৰ বহল। সেই আকাৰত সোণ আৰু কাৰ্বনৰ ধৰ্ম বেলেগ হয়।"
+            },
+            {
+              "en": "<mark>Nanotechnology</mark> uses this for targeted medicines, sunscreen, water filters and faster chips.",
+              "as": "<mark>নেন'প্ৰযুক্তি</mark>য়ে ইয়াক লক্ষ্যভিত্তিক ঔষধ, ৰ'দ-সুৰক্ষা ক্ৰীম, পানীৰ ফিল্টাৰ আৰু দ্ৰুত চিপত ব্যৱহাৰ কৰে।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Metre",
+                "as": "মিটাৰ"
+              },
+              {
+                "en": "Millimetre",
+                "as": "মিলিমিটাৰ"
+              },
+              {
+                "en": "Micrometre",
+                "as": "মাইক্ৰ'মিটাৰ"
+              },
+              {
+                "en": "Nanometre",
+                "as": "নেন'মিটাৰ"
+              }
+            ]
+          },
+          "id": "sc09.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "How many nanometres are in one metre?",
+            "as": "এক মিটাৰত কিমান নেন'মিটাৰ?"
+          },
+          "options": [
+            {
+              "en": "One thousand",
+              "as": "এক হাজাৰ"
+            },
+            {
+              "en": "One million",
+              "as": "দহ লাখ"
+            },
+            {
+              "en": "One billion",
+              "as": "এশ কোটি"
+            },
+            {
+              "en": "One hundred",
+              "as": "এশ"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Nano means one billionth.",
+            "as": "নেন' মানে এশ কোটি ভাগৰ এভাগ।"
+          },
+          "guess": true,
+          "id": "sc09.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Editing life's code",
+            "as": "জীৱনৰ সংকেত সম্পাদনা"
+          },
+          "text": [
+            {
+              "en": "<mark>Bt cotton</mark> carries a bacterial gene so it resists bollworm. It remains India's main approved GM crop for cultivation.",
+              "as": "<mark>Bt কপাহ</mark>ত বেক্টেৰিয়াৰ জিন থাকে, সেয়ে ই বলৱৰ্মক প্ৰতিৰোধ কৰে। ই ভাৰতত খেতিৰ বাবে অনুমোদিত মুখ্য GM শস্য।"
+            },
+            {
+              "en": "<mark>CRISPR</mark> edits DNA at chosen sites. Its developers, Charpentier and Doudna, won the 2020 Nobel Prize in Chemistry.",
+              "as": "<mark>CRISPR</mark> এ DNA ৰ নিৰ্দিষ্ট ঠাই সম্পাদনা কৰে। ইয়াৰ উদ্ভাৱক চাৰ্পেণ্টিয়ে আৰু ডাউডনাই ২০২০ চনৰ ৰসায়নৰ ন'বেল পায়।"
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Biotechnology · living systems",
+                "as": "জৈৱপ্ৰযুক্তি · জীৱন্ত ব্যৱস্থা"
+              },
+              {
+                "en": "Nanotechnology · tiny scale",
+                "as": "নেন'প্ৰযুক্তি · অতি সৰু আকাৰ"
+              },
+              {
+                "en": "Quantum · new computing",
+                "as": "কোৱাণ্টাম · নতুন গণনা"
+              }
+            ]
+          },
+          "id": "sc09.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Bt cotton",
+                "as": "Bt কপাহ"
+              },
+              {
+                "en": "pest-resistant crop",
+                "as": "পোক প্ৰতিৰোধী শস্য"
+              }
+            ],
+            [
+              {
+                "en": "CRISPR",
+                "as": "CRISPR"
+              },
+              {
+                "en": "gene editing",
+                "as": "জিন সম্পাদনা"
+              }
+            ],
+            [
+              {
+                "en": "Semiconductor chip",
+                "as": "চেমিকণ্ডাক্টৰ চিপ"
+              },
+              {
+                "en": "brain of electronics",
+                "as": "ইলেক্ট্ৰনিক্সৰ মগজু"
+              }
+            ],
+            [
+              {
+                "en": "3D printing",
+                "as": "থ্ৰী-ডি প্ৰিণ্টিং"
+              },
+              {
+                "en": "builds layer by layer",
+                "as": "স্তৰে স্তৰে গঢ়ে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each technology does something distinct.",
+            "as": "প্ৰতিটো প্ৰযুক্তিৰ বেলেগ কাম আছে।"
+          },
+          "id": "sc09.u4.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "As of November 2026, Bt cotton is India's main GM crop approved for commercial cultivation.",
+            "as": "২০২৬ চনৰ নৱেম্বৰলৈ Bt কপাহ ভাৰতত বাণিজ্যিক খেতিৰ বাবে অনুমোদিত মুখ্য GM শস্য।"
+          },
+          "answer": true,
+          "why": {
+            "en": "GM crop rules can change, so recheck before an exam.",
+            "as": "GM শস্যৰ নিয়ম সলনি হ'ব পাৰে, সেয়ে পৰীক্ষাৰ আগতে চাই লোৱা।"
+          },
+          "asOf": "2026-11",
+          "id": "sc09.u4.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The prefix nano means one",
+            "as": "নেন' উপসৰ্গৰ অৰ্থ এক"
+          },
+          "after": {
+            "en": ".",
+            "as": "ভাগৰ এভাগ।"
+          },
+          "options": [
+            {
+              "en": "billionth",
+              "as": "এশ কোটি"
+            },
+            {
+              "en": "thousandth",
+              "as": "হাজাৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Milli means thousandth, micro millionth, nano billionth.",
+            "as": "মিলি হাজাৰ, মাইক্ৰ' দহ লাখ, নেন' এশ কোটি ভাগৰ এভাগ।"
+          },
+          "id": "sc09.u4.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "CRISPR",
+              "is",
+              "a",
+              "tool",
+              "for",
+              "editing",
+              "rocks."
+            ],
+            "as": [
+              "CRISPR",
+              "শিল",
+              "সম্পাদনাৰ",
+              "এক",
+              "সঁজুলি।"
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 1
+          },
+          "fix": {
+            "en": "genes",
+            "as": "জিন"
+          },
+          "answerText": {
+            "en": "rocks",
+            "as": "শিল"
+          },
+          "why": {
+            "en": "It cuts DNA at a chosen sequence.",
+            "as": "ই DNA ৰ বাছনি কৰা ক্ৰমত কাটে।"
+          },
+          "id": "sc09.u4.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Tech briefing",
+      "as": "প্ৰযুক্তি পৰ্যালোচনা"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "Which process powers the Sun?",
+          "as": "কোনটো প্ৰক্ৰিয়াই সূৰ্যক শক্তি দিয়ে?"
+        },
+        "options": [
+          {
+            "en": "Fission",
+            "as": "বিভাজন"
+          },
+          {
+            "en": "Fusion",
+            "as": "সংযোজন"
+          },
+          {
+            "en": "Combustion",
+            "as": "জ্বলন"
+          },
+          {
+            "en": "Rusting",
+            "as": "মামৰ ধৰা"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Hydrogen nuclei fuse into helium.",
+          "as": "হাইড্ৰ'জেন কেন্দ্ৰক হিলিয়ামলৈ যুক্ত হয়।"
+        },
+        "id": "sc09.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Agni is a ballistic missile.",
+          "as": "অগ্নি বেলিষ্টিক ক্ষেপণাস্ত্ৰ।"
+        },
+        "answer": true,
+        "why": {
+          "en": "It came from the guided missile programme.",
+          "as": "ই নিয়ন্ত্ৰিত ক্ষেপণাস্ত্ৰ কাৰ্যসূচীৰ পৰা আহিল।"
+        },
+        "id": "sc09.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Pokhran",
+              "as": "পোখৰান"
+            },
+            {
+              "en": "Rajasthan test site",
+              "as": "ৰাজস্থানৰ পৰীক্ষা স্থল"
+            }
+          ],
+          [
+            {
+              "en": "Akash",
+              "as": "আকাশ"
+            },
+            {
+              "en": "surface to air",
+              "as": "ভূমিৰ পৰা আকাশলৈ"
+            }
+          ],
+          [
+            {
+              "en": "UPI",
+              "as": "UPI"
+            },
+            {
+              "en": "instant payments",
+              "as": "তাৎক্ষণিক পৰিশোধ"
+            }
+          ],
+          [
+            {
+              "en": "CRISPR",
+              "as": "CRISPR"
+            },
+            {
+              "en": "gene editing",
+              "as": "জিন সম্পাদনা"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One item per unit.",
+          "as": "প্ৰতিটো গোটৰ এটাকৈ।"
+        },
+        "id": "sc09.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which person is NOT linked with nuclear or missile work?",
+          "as": "কোন নাম পাৰমাণৱিক বা ক্ষেপণাস্ত্ৰ কামৰ সৈতে জড়িত নহয়?"
+        },
+        "options": [
+          {
+            "en": "Homi Bhabha",
+            "as": "হোমী ভাবা"
+          },
+          {
+            "en": "Abdul Kalam",
+            "as": "আব্দুল কালাম"
+          },
+          {
+            "en": "Tim Berners-Lee",
+            "as": "টিম বাৰ্নাৰ্ছ-লী"
+          },
+          {
+            "en": "Raja Ramanna",
+            "as": "ৰাজা ৰমন্না"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Berners-Lee invented the Web.",
+          "as": "বাৰ্নাৰ্ছ-লীয়ে ৱেব উদ্ভাৱন কৰিছিল।"
+        },
+        "id": "sc09.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order from largest to smallest.",
+          "as": "ডাঙৰৰ পৰা সৰুলৈ সজোৱা।"
+        },
+        "items": [
+          {
+            "en": "Metre",
+            "as": "মিটাৰ"
+          },
+          {
+            "en": "Millimetre",
+            "as": "মিলিমিটাৰ"
+          },
+          {
+            "en": "Nanometre",
+            "as": "নেন'মিটাৰ"
+          }
+        ],
+        "why": {
+          "en": "Milli is a thousandth; nano a billionth.",
+          "as": "মিলি হাজাৰ ভাগ; নেন' এশ কোটি ভাগ।"
+        },
+        "id": "sc09.test.05"
+      }
+    ]
+  }
+}
