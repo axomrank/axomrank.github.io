@@ -24,6 +24,7 @@ from math_lessons_e import l9, l10  # noqa: E402
 from math_lessons_f import l11, l12  # noqa: E402
 from math_lessons_g import l13, l14  # noqa: E402
 from math_lessons_h import l15, l16  # noqa: E402
+from math_lessons_j import extend  # noqa: E402
 
 COURSE = "mathematics"
 SOURCE = {
@@ -66,9 +67,11 @@ SKILLS = {
     "n-factor": ("numbers", B("Prime factors", "মৌলিক গুণনীয়ক"), ["n-types"]),
     "n-div": ("numbers", B("Divisibility", "বিভাজ্যতা"), ["n-types"]),
     "n-unit": ("numbers", B("Unit digits", "একক অংক"), []),
+    "n-facts": ("numbers", B("Special numbers", "বিশেষ সংখ্যা"), ["n-factor"]),
     "l-hcf": ("lcm", B("HCF", "গ.সা.গু."), ["n-factor"]),
     "l-lcm": ("lcm", B("LCM", "ল.সা.গু."), ["n-factor"]),
     "l-apply": ("lcm", B("LCM and HCF problems", "ল.সা.গু. আৰু গ.সা.গু.ৰ সমস্যা"), ["l-hcf", "l-lcm"]),
+    "l-frac": ("lcm", B("LCM of fractions", "ভগ্নাংশৰ ল.সা.গু."), ["l-hcf", "l-lcm"]),
     "f-meaning": ("fractions", B("Fraction meaning", "ভগ্নাংশৰ অৰ্থ"), []),
     "f-equiv": ("fractions", B("Equal fractions", "সমান ভগ্নাংশ"), ["f-meaning", "l-hcf"]),
     "f-compare": ("fractions", B("Comparing fractions", "ভগ্নাংশৰ তুলনা"), ["f-equiv"]),
@@ -79,6 +82,8 @@ SKILLS = {
     "s-roots": ("simplify", B("Squares and roots", "বৰ্গ আৰু বৰ্গমূল"), ["n-factor"]),
     "s-perfect": ("simplify", B("Perfect squares", "পূৰ্ণবৰ্গ"), ["s-roots", "n-factor"]),
     "s-ident": ("simplify", B("Square patterns", "বৰ্গৰ আৰ্হি"), ["s-roots"]),
+    "s-cube": ("simplify", B("Cubes and cube roots", "ঘন আৰু ঘনমূল"), ["s-perfect"]),
+    "s-surd": ("simplify", B("Surds and big identities", "কৰণী আৰু ডাঙৰ অভেদ"), ["s-ident", "s-cube"]),
     "p-meaning": ("percentage", B("Percent meaning", "শতাংশৰ অৰ্থ"), ["f-dec"]),
     "p-of": ("percentage", B("Percent of a quantity", "পৰিমাণৰ শতাংশ"), ["p-meaning", "f-of"]),
     "p-change": ("percentage", B("Percent change", "শতাংশ পৰিৱৰ্তন"), ["p-of"]),
@@ -87,6 +92,7 @@ SKILLS = {
     "r-share": ("ratio", B("Sharing in a ratio", "অনুপাতত ভাগ"), ["f-of"]),
     "r-prop": ("ratio", B("Proportion", "সমানুপাত"), ["r-share", "f-equiv"]),
     "r-combine": ("ratio", B("Linked ratios", "সংযুক্ত অনুপাত"), ["r-prop", "l-lcm"]),
+    "r-value": ("ratio", B("Values from ratios", "অনুপাতৰ পৰা মান"), ["r-combine"]),
     "a-mean": ("average", B("Average", "গড়"), ["s-bodmas"]),
     "a-change": ("average", B("When one value changes", "এটা মান সলনি হ'লে"), ["a-mean"]),
     "a-weight": ("average", B("Group averages", "গোটৰ গড়"), ["a-mean", "r-share"]),
@@ -97,9 +103,11 @@ SKILLS = {
     "i-solve": ("interest", B("Finding rate and time", "হাৰ আৰু সময় উলিওৱা"), ["i-si"]),
     "i-ci": ("interest", B("Compound interest", "চক্ৰবৃদ্ধি সুত"), ["i-si", "p-succ"]),
     "i-diff": ("interest", B("Compound against simple", "চক্ৰবৃদ্ধি বনাম সৰল"), ["i-ci"]),
+    "i-half": ("interest", B("Half-yearly and changing rates", "ছমহীয়া আৰু সলনি হোৱা হাৰ"), ["i-ci"]),
     "w-rate": ("work", B("Work rates", "কামৰ হাৰ"), ["f-add", "l-lcm"]),
     "w-men": ("work", B("People and days", "মানুহ আৰু দিন"), ["r-prop"]),
     "w-pipes": ("work", B("Pipes and tanks", "পাইপ আৰু টেংকী"), ["w-rate"]),
+    "w-share": ("work", B("Sharing work and pay", "কাম আৰু মজুৰি ভাগ"), ["w-rate", "w-men"]),
     "sp-basic": ("speed", B("Speed and distance", "গতি আৰু দূৰত্ব"), ["r-share"]),
     "sp-avg": ("speed", B("Average speed", "গড় গতি"), ["sp-basic", "a-weight"]),
     "sp-rel": ("speed", B("Trains and relative speed", "ৰেল আৰু আপেক্ষিক গতি"), ["sp-basic"]),
@@ -111,14 +119,19 @@ SKILLS = {
     "tr-ratio": ("trig", B("Trig ratios", "ত্ৰিকোণমিতিক অনুপাত"), ["s-roots"]),
     "tr-values": ("trig", B("Standard values", "প্ৰমাণ মান"), ["tr-ratio"]),
     "tr-height": ("trig", B("Heights and distances", "উচ্চতা আৰু দূৰত্ব"), ["tr-values"]),
+    "tr-ident": ("trig", B("Identities", "অভেদ"), ["tr-values"]),
     "g-rect": ("geometry", B("Squares and rectangles", "বৰ্গ আৰু আয়ত"), ["s-roots", "l-hcf"]),
     "g-sides": ("geometry", B("Triangle side rule", "ত্ৰিভুজৰ বাহুৰ নিয়ম"), ["n-line"]),
     "g-tri": ("geometry", B("Triangles", "ত্ৰিভুজ"), ["s-roots"]),
+    "g-types": ("geometry", B("Triangle kinds and angles", "ত্ৰিভুজৰ প্ৰকাৰ আৰু কোণ"), ["g-tri"]),
+    "g-similar": ("geometry", B("Similar triangles", "সদৃশ ত্ৰিভুজ"), ["g-tri"]),
     "g-quad": ("geometry", B("Rhombus and trapezium", "ৰম্বাছ আৰু ট্ৰেপিজিয়াম"), ["g-tri"]),
     "g-circle": ("geometry", B("Circles", "বৃত্ত"), ["f-of"]),
+    "g-parts": ("geometry", B("Chords, tangents, sectors", "জ্যা, স্পৰ্শক, বৃত্তকলা"), ["g-circle", "g-tri"]),
     "g-solid": ("solids", B("Volume and surface", "আয়তন আৰু পৃষ্ঠকালি"), ["g-rect"]),
     "g-round": ("solids", B("Cylinders and cones", "চুঙা আৰু শংকু"), ["g-solid", "g-circle"]),
     "g-sphere": ("solids", B("Spheres and recasting", "গোলক আৰু নতুন ৰূপ"), ["g-round"]),
+    "g-full": ("solids", B("Slant, full surface, hemispheres", "হেলনীয়া, সম্পূৰ্ণ পৃষ্ঠ, অৰ্ধগোলক"), ["g-sphere"]),
 }
 MISCONCEPTIONS = {
     "m-neg-order": ("n-line", B("Thinking a bigger-looking negative is bigger", "ডাঙৰ দেখা ঋণাত্মক সংখ্যাক ডাঙৰ ধৰা")),
@@ -187,6 +200,19 @@ MISCONCEPTIONS = {
     "m-tri-area": ("g-tri", B("Forgetting the half in triangle area", "ত্ৰিভুজৰ কালিত আধা পাহৰা")),
     "m-radius-dia": ("g-circle", B("Mixing radius and diameter", "ব্যাসাৰ্ধ আৰু ব্যাস সলনি কৰা")),
     "m-area-volume": ("g-solid", B("Confusing surface area and volume", "পৃষ্ঠকালি আৰু আয়তন সলনি কৰা")),
+    "m-recur-ten": ("f-dec", B("Putting repeating digits over 10", "ঘূৰা অংক 10ৰ ওপৰত ৰখা")),
+    "m-coprime": ("n-facts", B("Thinking co-prime means prime", "সহমৌলিক মানে মৌলিক বুলি ধৰা")),
+    "m-frac-lcm": ("l-frac", B("Taking LCM of tops and LCM of bottoms", "লব আৰু হৰ দুয়োটাৰে ল.সা.গু. লোৱা")),
+    "m-cube-three": ("s-cube", B("Dividing by 3 for a cube root", "ঘনমূলৰ বাবে 3ৰে হৰণ কৰা")),
+    "m-surd-square": ("s-surd", B("Squaring only part of a root term", "মূলৰ পদৰ এটা অংশহে বৰ্গ কৰা")),
+    "m-halfyear": ("i-half", B("Ignoring half-yearly periods", "ছমহীয়া সময়কাল নোচোৱা")),
+    "m-month-years": ("i-si", B("Treating months as years", "মাহক বছৰ বুলি ধৰা")),
+    "m-wage-days": ("w-share", B("Sharing pay by days, not rates", "হাৰৰ ঠাইত দিনেৰে মজুৰি ভাগ কৰা")),
+    "m-angle-double": ("tr-values", B("Stopping at 2A instead of A", "Aৰ ঠাইত 2Aতে ৰখা")),
+    "m-outer-next": ("g-types", B("Using the neighbour of an outer angle", "বাহিৰৰ কোণৰ কাষৰ কোণ লোৱা")),
+    "m-chord-half": ("g-parts", B("Giving half the chord", "আধা জ্যা দিয়া")),
+    "m-tangent-right": ("g-parts", B("Forgetting the right angle at a tangent", "স্পৰ্শকৰ সমকোণ পাহৰা")),
+    "m-cone-height": ("g-full", B("Using height instead of slant", "হেলনীয়াৰ ঠাইত উচ্চতা লোৱা")),
 }
 
 
@@ -236,7 +262,7 @@ def write(path, data):
 
 
 def main():
-    lessons = apply([l1(), l2(), l3(), l4(), l5(), l6(), l7(), l8(), l9(), l10(), l11(), l12(), l13(), l14(), l15(), l16()])
+    lessons = extend(apply([l1(), l2(), l3(), l4(), l5(), l6(), l7(), l8(), l9(), l10(), l11(), l12(), l13(), l14(), l15(), l16()]))
     by_no = {L["no"]: L for L in lessons}
     for L in lessons:
         write(f"content/lessons/{L['id']}.json", {

@@ -962,6 +962,117 @@
       "en": "Each pair multiplies to 1.",
       "as": "প্ৰতিটো যোৰাৰ পূৰণফল 1।"
      }
+    },
+    {
+     "id": "m14.u1.q7",
+     "type": "solve",
+     "skill": "tr-values",
+     "hints": [
+      {
+       "en": "Name the sides from R first.",
+       "as": "প্ৰথমে Rৰ পৰা বাহুৰ নাম দিয়া।"
+      }
+     ],
+     "q": {
+      "en": "In triangle PQR, Q = 90°, PQ = 5 cm and PR = 10 cm. Find angle R.",
+      "as": "PQR ত্ৰিভুজত Q = 90°, PQ = 5 ছেমি, PR = 10 ছেমি। R কোণ উলিওৱা।"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+      "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+     },
+     "traps": [
+      {
+       "ans": "60",
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "That is angle P. Look from R: which side faces it?",
+        "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In triangle PQR, Q = 90°, PQ = 5 cm and PR = 10 cm. Find angle R.",
+        "as": "PQR ত্ৰিভুজত Q = 90°, PQ = 5 ছেমি, PR = 10 ছেমি। R কোণ উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+        "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "That is angle P. Look from R: which side faces it?",
+          "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In triangle PQR, Q = 90°, QR = 4 cm and PR = 8 cm. Find angle R.",
+        "as": "PQR ত্ৰিভুজত Q = 90°, QR = 4 ছেমি, PR = 8 ছেমি। R কোণ উলিওৱা।"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+        "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "That is angle P. Look from R: which side faces it?",
+          "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In triangle PQR, Q = 90°, PQ = 7 cm and PR = 14 cm. Find angle R.",
+        "as": "PQR ত্ৰিভুজত Q = 90°, PQ = 7 ছেমি, PR = 14 ছেমি। R কোণ উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+        "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "That is angle P. Look from R: which side faces it?",
+          "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+         }
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -1740,6 +1851,136 @@
        }
       }
      ]
+    },
+    {
+     "id": "m14.u2.q7",
+     "type": "solve",
+     "skill": "tr-values",
+     "q": {
+      "en": "If $\\sin 2A = \\frac{\\sqrt{3}}{2}$, find A in degrees.",
+      "as": "$\\sin 2A = \\frac{\\sqrt{3}}{2}$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "The whole angle is 60°, so divide it.",
+      "as": "গোটেই কোণ 60°, সেয়ে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "60",
+       "tag": "m-angle-double",
+       "why": {
+        "en": "That is the whole bracket. A is only part of it.",
+        "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\sin 2A = \\frac{\\sqrt{3}}{2}$, find A in degrees.",
+        "as": "$\\sin 2A = \\frac{\\sqrt{3}}{2}$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 60°, so divide it.",
+        "as": "গোটেই কোণ 60°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\cos 2A = \\frac{1}{2}$, find A in degrees.",
+        "as": "$\\cos 2A = \\frac{1}{2}$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 60°, so divide it.",
+        "as": "গোটেই কোণ 60°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\tan 3A = 1$, find A in degrees.",
+        "as": "$\\tan 3A = 1$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 45°, so divide it.",
+        "as": "গোটেই কোণ 45°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "45",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\sin 2A = 1$, find A in degrees.",
+        "as": "$\\sin 2A = 1$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "45",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 90°, so divide it.",
+        "as": "গোটেই কোণ 90°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "90",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -1950,21 +2191,21 @@
       }
      ],
      "q": {
-      "en": "An observer 1.5 m tall is 28.5 m from a chimney. The top is at 45°. How tall is the chimney?",
-      "as": "1.5 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 28.5 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+      "en": "An observer 1.6 m tall is 23.4 m from a chimney. The top is at 45°. How tall is the chimney?",
+      "as": "1.6 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 23.4 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
      },
-     "answer": "30",
+     "answer": "25",
      "suffix": {
       "en": "m",
       "as": "মি"
      },
      "why": {
-      "en": "From eye level the rise is 28.5 m, and the eye is 1.5 m up.",
-      "as": "চকুৰ স্তৰৰ পৰা 28.5 মিটাৰ, চকু 1.5 মিটাৰ ওপৰত।"
+      "en": "From eye level the rise is 23.4 m, and the eye is 1.6 m up.",
+      "as": "চকুৰ স্তৰৰ পৰা 23.4 মিটাৰ, চকু 1.6 মিটাৰ ওপৰত।"
      },
      "traps": [
       {
-       "ans": "28.5",
+       "ans": "23.4",
        "tag": "m-height-eye",
        "why": {
         "en": "That is measured from eye level. Add the observer's height.",
@@ -1975,21 +2216,21 @@
      "variants": [
       {
        "q": {
-        "en": "An observer 1.5 m tall is 28.5 m from a chimney. The top is at 45°. How tall is the chimney?",
-        "as": "1.5 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 28.5 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+        "en": "An observer 1.6 m tall is 23.4 m from a chimney. The top is at 45°. How tall is the chimney?",
+        "as": "1.6 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 23.4 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
        },
-       "answer": "30",
+       "answer": "25",
        "suffix": {
         "en": "m",
         "as": "মি"
        },
        "why": {
-        "en": "From eye level the rise is 28.5 m, and the eye is 1.5 m up.",
-        "as": "চকুৰ স্তৰৰ পৰা 28.5 মিটাৰ, চকু 1.5 মিটাৰ ওপৰত।"
+        "en": "From eye level the rise is 23.4 m, and the eye is 1.6 m up.",
+        "as": "চকুৰ স্তৰৰ পৰা 23.4 মিটাৰ, চকু 1.6 মিটাৰ ওপৰত।"
        },
        "traps": [
         {
-         "ans": "28.5",
+         "ans": "23.4",
          "tag": "m-height-eye",
          "why": {
           "en": "That is measured from eye level. Add the observer's height.",
@@ -2000,8 +2241,8 @@
       },
       {
        "q": {
-        "en": "An observer 1.5 m tall is 18.5 m from a chimney. The top is at 45°. How tall is the chimney?",
-        "as": "1.5 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 18.5 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+        "en": "An observer 1.8 m tall is 18.2 m from a chimney. The top is at 45°. How tall is the chimney?",
+        "as": "1.8 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 18.2 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
        },
        "answer": "20",
        "suffix": {
@@ -2009,12 +2250,12 @@
         "as": "মি"
        },
        "why": {
-        "en": "From eye level the rise is 18.5 m, and the eye is 1.5 m up.",
-        "as": "চকুৰ স্তৰৰ পৰা 18.5 মিটাৰ, চকু 1.5 মিটাৰ ওপৰত।"
+        "en": "From eye level the rise is 18.2 m, and the eye is 1.8 m up.",
+        "as": "চকুৰ স্তৰৰ পৰা 18.2 মিটাৰ, চকু 1.8 মিটাৰ ওপৰত।"
        },
        "traps": [
         {
-         "ans": "18.5",
+         "ans": "18.2",
          "tag": "m-height-eye",
          "why": {
           "en": "That is measured from eye level. Add the observer's height.",
@@ -2557,6 +2798,1337 @@
          }
         }
        ]
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.q7",
+     "type": "stepwise",
+     "skill": "tr-height",
+     "q": {
+      "en": "From two points 16 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+      "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 16 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Near distance x. Far distance?",
+        "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "2x",
+         "as": "2x"
+        },
+        {
+         "en": "3x",
+         "as": "3x"
+        },
+        {
+         "en": "$\\sqrt{3}x$",
+         "as": "$\\sqrt{3}x$"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+        "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So x =",
+        "as": "সেয়ে x ="
+       },
+       "options": [
+        {
+         "en": "16 m",
+         "as": "16 m"
+        },
+        {
+         "en": "24 m",
+         "as": "24 m"
+        },
+        {
+         "en": "8 m",
+         "as": "8 m"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The gap 2x is 16.",
+        "as": "ব্যৱধান 2x = 16।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Height?",
+        "as": "উচ্চতা?"
+       },
+       "options": [
+        {
+         "en": "$16\\sqrt{3}$ m",
+         "as": "$16\\sqrt{3}$ m"
+        },
+        {
+         "en": "8 m",
+         "as": "8 m"
+        },
+        {
+         "en": "$8\\sqrt{3}$ m",
+         "as": "$8\\sqrt{3}$ m"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "x × $\\tan 60^\\circ$.",
+        "as": "x × $\\tan 60^\\circ$।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+      "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "From two points 16 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+        "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 16 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Near distance x. Far distance?",
+          "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "2x",
+           "as": "2x"
+          },
+          {
+           "en": "3x",
+           "as": "3x"
+          },
+          {
+           "en": "$\\sqrt{3}x$",
+           "as": "$\\sqrt{3}x$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+          "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x =",
+          "as": "সেয়ে x ="
+         },
+         "options": [
+          {
+           "en": "16 m",
+           "as": "16 m"
+          },
+          {
+           "en": "24 m",
+           "as": "24 m"
+          },
+          {
+           "en": "8 m",
+           "as": "8 m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The gap 2x is 16.",
+          "as": "ব্যৱধান 2x = 16।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Height?",
+          "as": "উচ্চতা?"
+         },
+         "options": [
+          {
+           "en": "$16\\sqrt{3}$ m",
+           "as": "$16\\sqrt{3}$ m"
+          },
+          {
+           "en": "8 m",
+           "as": "8 m"
+          },
+          {
+           "en": "$8\\sqrt{3}$ m",
+           "as": "$8\\sqrt{3}$ m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "x × $\\tan 60^\\circ$.",
+          "as": "x × $\\tan 60^\\circ$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+        "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "From two points 30 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+        "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 30 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Near distance x. Far distance?",
+          "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "3x",
+           "as": "3x"
+          },
+          {
+           "en": "2x",
+           "as": "2x"
+          },
+          {
+           "en": "$\\sqrt{3}x$",
+           "as": "$\\sqrt{3}x$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+          "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x =",
+          "as": "সেয়ে x ="
+         },
+         "options": [
+          {
+           "en": "45 m",
+           "as": "45 m"
+          },
+          {
+           "en": "30 m",
+           "as": "30 m"
+          },
+          {
+           "en": "15 m",
+           "as": "15 m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The gap 2x is 30.",
+          "as": "ব্যৱধান 2x = 30।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Height?",
+          "as": "উচ্চতা?"
+         },
+         "options": [
+          {
+           "en": "15 m",
+           "as": "15 m"
+          },
+          {
+           "en": "$30\\sqrt{3}$ m",
+           "as": "$30\\sqrt{3}$ m"
+          },
+          {
+           "en": "$15\\sqrt{3}$ m",
+           "as": "$15\\sqrt{3}$ m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "x × $\\tan 60^\\circ$.",
+          "as": "x × $\\tan 60^\\circ$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+        "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "From two points 50 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+        "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 50 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Near distance x. Far distance?",
+          "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "3x",
+           "as": "3x"
+          },
+          {
+           "en": "$\\sqrt{3}x$",
+           "as": "$\\sqrt{3}x$"
+          },
+          {
+           "en": "2x",
+           "as": "2x"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+          "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x =",
+          "as": "সেয়ে x ="
+         },
+         "options": [
+          {
+           "en": "25 m",
+           "as": "25 m"
+          },
+          {
+           "en": "75 m",
+           "as": "75 m"
+          },
+          {
+           "en": "50 m",
+           "as": "50 m"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The gap 2x is 50.",
+          "as": "ব্যৱধান 2x = 50।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Height?",
+          "as": "উচ্চতা?"
+         },
+         "options": [
+          {
+           "en": "25 m",
+           "as": "25 m"
+          },
+          {
+           "en": "$50\\sqrt{3}$ m",
+           "as": "$50\\sqrt{3}$ m"
+          },
+          {
+           "en": "$25\\sqrt{3}$ m",
+           "as": "$25\\sqrt{3}$ m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "x × $\\tan 60^\\circ$.",
+          "as": "x × $\\tan 60^\\circ$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+        "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Identities",
+    "as": "অভেদ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "$\\sin^2\\theta + \\cos^2\\theta = 1$ for every angle.",
+     "as": "প্ৰতিটো কোণৰ বাবে $\\sin^2\\theta + \\cos^2\\theta = 1$।"
+    },
+    {
+     "en": "$\\sec^2\\theta - \\tan^2\\theta = 1$, so sec − tan and sec + tan are reciprocals.",
+     "as": "$\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে sec − tan আৰু sec + tan পৰস্পৰ ওলোটা।"
+    },
+    {
+     "en": "$\\mathrm{cosec}^2\\theta - \\cot^2\\theta = 1$.",
+     "as": "$\\mathrm{cosec}^2\\theta - \\cot^2\\theta = 1$।"
+    },
+    {
+     "en": "sin θ = cos θ only at 45°, where tan θ = 1.",
+     "as": "sin θ = cos θ কেৱল 45°ত, তাত tan θ = 1।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m14.x.s1",
+     "type": "story",
+     "title": {
+      "en": "It never changes",
+      "as": "ই কেতিয়াও নসলনে"
+     },
+     "text": [
+      {
+       "en": "Grow this triangle and watch sin and cos. Then square each and add: $\\frac{9}{25} + \\frac{16}{25}$.",
+       "as": "ত্ৰিভুজটো ডাঙৰ কৰি sin আৰু cos চোৱা। প্ৰতিটো বৰ্গ কৰি যোগ কৰা: $\\frac{9}{25} + \\frac{16}{25}$।"
+      }
+     ],
+     "widget": {
+      "kind": "triangle",
+      "triple": [
+       3,
+       4,
+       5
+      ],
+      "k": 1,
+      "max": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make it three times bigger.",
+        "as": "তিনিগুণ ডাঙৰ কৰা।"
+       },
+       "goal": {
+        "k": 3
+       },
+       "then": {
+        "en": "Sides change, ratios do not. The squares still add to 1 because of Pythagoras.",
+        "as": "বাহু সলনি হয়, অনুপাত নহয়। পাইথাগোৰাছৰ বাবে বৰ্গৰ যোগফল 1 থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Where sine meets cosine",
+      "as": "য'ত ছাইন আৰু কছাইন লগ হয়"
+     },
+     "text": [
+      {
+       "en": "Turn the arm. Sine is its height and cosine its reach.",
+       "as": "বাহুটো ঘূৰোৱা। ছাইন উচ্চতা, কছাইন বিস্তাৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "quarter",
+      "deg": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Stop at 45°.",
+        "as": "45°ত ৰখা।"
+       },
+       "goal": {
+        "deg": 45
+       },
+       "then": {
+        "en": "Height equals reach, so sin θ = cos θ and tan θ = 1. No other angle in the quarter does this.",
+        "as": "উচ্চতা বিস্তাৰৰ সমান, সেয়ে sin θ = cos θ, tan θ = 1। এই চতুৰ্থাংশত আন কোনো কোণে এনে নকৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q1",
+     "type": "solve",
+     "skill": "tr-ident",
+     "hints": [
+      {
+       "en": "Common factor first.",
+       "as": "প্ৰথমে উমৈহতীয়া গুণক।"
+      }
+     ],
+     "q": {
+      "en": "Find $8\\sec^2 A - 8\\tan^2 A$",
+      "as": "$8\\sec^2 A - 8\\tan^2 A$ উলিওৱা"
+     },
+     "answer": "8",
+     "why": {
+      "en": "Take out 8. The bracket is 1.",
+      "as": "8 উলিয়াই লোৱা। বন্ধনীটো 1।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $8\\sec^2 A - 8\\tan^2 A$",
+        "as": "$8\\sec^2 A - 8\\tan^2 A$ উলিওৱা"
+       },
+       "answer": "8",
+       "why": {
+        "en": "Take out 8. The bracket is 1.",
+        "as": "8 উলিয়াই লোৱা। বন্ধনীটো 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $7\\sec^2 A - 7\\tan^2 A$",
+        "as": "$7\\sec^2 A - 7\\tan^2 A$ উলিওৱা"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Take out 7. The bracket is 1.",
+        "as": "7 উলিয়াই লোৱা। বন্ধনীটো 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $4\\sec^2 A - 4\\tan^2 A$",
+        "as": "$4\\sec^2 A - 4\\tan^2 A$ উলিওৱা"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Take out 4. The bracket is 1.",
+        "as": "4 উলিয়াই লোৱা। বন্ধনীটো 1।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q2",
+     "type": "match",
+     "skill": "tr-ident",
+     "q": {
+      "en": "Match each expression to its value",
+      "as": "প্ৰতিটো ৰাশিক মানৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$1 - \\sin^2\\theta$",
+        "as": "$1 - \\sin^2\\theta$"
+       },
+       {
+        "en": "$\\cos^2\\theta$",
+        "as": "$\\cos^2\\theta$"
+       }
+      ],
+      [
+       {
+        "en": "$1 + \\tan^2\\theta$",
+        "as": "$1 + \\tan^2\\theta$"
+       },
+       {
+        "en": "$\\sec^2\\theta$",
+        "as": "$\\sec^2\\theta$"
+       }
+      ],
+      [
+       {
+        "en": "$1 + \\cot^2\\theta$",
+        "as": "$1 + \\cot^2\\theta$"
+       },
+       {
+        "en": "$\\mathrm{cosec}^2\\theta$",
+        "as": "$\\mathrm{cosec}^2\\theta$"
+       }
+      ],
+      [
+       {
+        "en": "$\\sec^2\\theta - \\tan^2\\theta$",
+        "as": "$\\sec^2\\theta - \\tan^2\\theta$"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "All three come from one Pythagoras line.",
+      "as": "তিনিওটা একে পাইথাগোৰাছৰ পৰা আহে।"
+     }
+    },
+    {
+     "id": "m14.x.q3",
+     "type": "solve",
+     "skill": "tr-ident",
+     "hints": [
+      {
+       "en": "Think $(a - b)(a + b)$.",
+       "as": "$(a - b)(a + b)$ ভাবা।"
+      }
+     ],
+     "q": {
+      "en": "If $\\sec\\theta - \\tan\\theta = \\frac{1}{7}$, find $\\sec\\theta + \\tan\\theta$.",
+      "as": "$\\sec\\theta - \\tan\\theta = \\frac{1}{7}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+     },
+     "answer": "7",
+     "why": {
+      "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+      "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+     },
+     "traps": [
+      {
+       "ans": "1/7",
+       "tag": "m-trig-flip",
+       "why": {
+        "en": "The product is 1, so the second is the flip of the first.",
+        "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\sec\\theta - \\tan\\theta = \\frac{1}{7}$, find $\\sec\\theta + \\tan\\theta$.",
+        "as": "$\\sec\\theta - \\tan\\theta = \\frac{1}{7}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+        "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "1/7",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "The product is 1, so the second is the flip of the first.",
+          "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\sec\\theta - \\tan\\theta = \\frac{1}{3}$, find $\\sec\\theta + \\tan\\theta$.",
+        "as": "$\\sec\\theta - \\tan\\theta = \\frac{1}{3}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+        "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "1/3",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "The product is 1, so the second is the flip of the first.",
+          "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\sec\\theta - \\tan\\theta = \\frac{2}{9}$, find $\\sec\\theta + \\tan\\theta$.",
+        "as": "$\\sec\\theta - \\tan\\theta = \\frac{2}{9}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+       },
+       "answer": "9/2",
+       "why": {
+        "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+        "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "2/9",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "The product is 1, so the second is the flip of the first.",
+          "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q4",
+     "type": "tf",
+     "skill": "tr-ident",
+     "s": {
+      "en": "If $\\tan\\theta + \\cot\\theta = 2$, then $\\tan\\theta = 1$.",
+      "as": "$\\tan\\theta + \\cot\\theta = 2$ হ'লে $\\tan\\theta = 1$।"
+     },
+     "answer": true,
+     "why": {
+      "en": "A positive number and its flip add to 2 only when the number is 1.",
+      "as": "ধনাত্মক সংখ্যা আৰু ওলোটাৰ যোগফল 2 হয় কেৱল সংখ্যাটো 1 হ'লে।"
+     }
+    },
+    {
+     "id": "m14.x.q5",
+     "type": "stepwise",
+     "skill": "tr-ident",
+     "q": {
+      "en": "If $\\sin\\theta - \\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+      "as": "$\\sin\\theta - \\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "tan θ?",
+        "as": "tan θ?"
+       },
+       "options": [
+        {
+         "en": "$0$",
+         "as": "$0$"
+        },
+        {
+         "en": "$2$",
+         "as": "$2$"
+        },
+        {
+         "en": "$1$",
+         "as": "$1$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Divide through by cos θ.",
+        "as": "cos θৰে হৰণ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "θ?",
+        "as": "θ?"
+       },
+       "options": [
+        {
+         "en": "60°",
+         "as": "60°"
+        },
+        {
+         "en": "45°",
+         "as": "45°"
+        },
+        {
+         "en": "90°",
+         "as": "90°"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Read it from the table.",
+        "as": "তালিকাৰ পৰা পঢ়া।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Value?",
+        "as": "মান?"
+       },
+       "options": [
+        {
+         "en": "$2\\sqrt{2}$",
+         "as": "$2\\sqrt{2}$"
+        },
+        {
+         "en": "$\\sqrt{2}$",
+         "as": "$\\sqrt{2}$"
+        },
+        {
+         "en": "$2$",
+         "as": "$2$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "sec and cosec are flips of cos and sin.",
+        "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "A ratio equation points straight to one angle.",
+      "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\sin\\theta - \\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+        "as": "$\\sin\\theta - \\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "tan θ?",
+          "as": "tan θ?"
+         },
+         "options": [
+          {
+           "en": "$0$",
+           "as": "$0$"
+          },
+          {
+           "en": "$2$",
+           "as": "$2$"
+          },
+          {
+           "en": "$1$",
+           "as": "$1$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide through by cos θ.",
+          "as": "cos θৰে হৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "θ?",
+          "as": "θ?"
+         },
+         "options": [
+          {
+           "en": "60°",
+           "as": "60°"
+          },
+          {
+           "en": "45°",
+           "as": "45°"
+          },
+          {
+           "en": "90°",
+           "as": "90°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Read it from the table.",
+          "as": "তালিকাৰ পৰা পঢ়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "$2\\sqrt{2}$",
+           "as": "$2\\sqrt{2}$"
+          },
+          {
+           "en": "$\\sqrt{2}$",
+           "as": "$\\sqrt{2}$"
+          },
+          {
+           "en": "$2$",
+           "as": "$2$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "sec and cosec are flips of cos and sin.",
+          "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio equation points straight to one angle.",
+        "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\sqrt{3}\\sin\\theta - \\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+        "as": "$\\sqrt{3}\\sin\\theta - \\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "tan θ?",
+          "as": "tan θ?"
+         },
+         "options": [
+          {
+           "en": "$2$",
+           "as": "$2$"
+          },
+          {
+           "en": "$0$",
+           "as": "$0$"
+          },
+          {
+           "en": "$\\frac{1}{\\sqrt{3}}$",
+           "as": "$\\frac{1}{\\sqrt{3}}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide through by cos θ.",
+          "as": "cos θৰে হৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "θ?",
+          "as": "θ?"
+         },
+         "options": [
+          {
+           "en": "90°",
+           "as": "90°"
+          },
+          {
+           "en": "30°",
+           "as": "30°"
+          },
+          {
+           "en": "45°",
+           "as": "45°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Read it from the table.",
+          "as": "তালিকাৰ পৰা পঢ়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{4}{\\sqrt{3}}$",
+           "as": "$\\frac{4}{\\sqrt{3}}$"
+          },
+          {
+           "en": "$2 + \\frac{2}{\\sqrt{3}}$",
+           "as": "$2 + \\frac{2}{\\sqrt{3}}$"
+          },
+          {
+           "en": "$2\\sqrt{3}$",
+           "as": "$2\\sqrt{3}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "sec and cosec are flips of cos and sin.",
+          "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio equation points straight to one angle.",
+        "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\sin\\theta - \\sqrt{3}\\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+        "as": "$\\sin\\theta - \\sqrt{3}\\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "tan θ?",
+          "as": "tan θ?"
+         },
+         "options": [
+          {
+           "en": "$2$",
+           "as": "$2$"
+          },
+          {
+           "en": "$0$",
+           "as": "$0$"
+          },
+          {
+           "en": "$\\sqrt{3}$",
+           "as": "$\\sqrt{3}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide through by cos θ.",
+          "as": "cos θৰে হৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "θ?",
+          "as": "θ?"
+         },
+         "options": [
+          {
+           "en": "90°",
+           "as": "90°"
+          },
+          {
+           "en": "60°",
+           "as": "60°"
+          },
+          {
+           "en": "75°",
+           "as": "75°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Read it from the table.",
+          "as": "তালিকাৰ পৰা পঢ়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "$2 + \\frac{2}{\\sqrt{3}}$",
+           "as": "$2 + \\frac{2}{\\sqrt{3}}$"
+          },
+          {
+           "en": "$2\\sqrt{3}$",
+           "as": "$2\\sqrt{3}$"
+          },
+          {
+           "en": "$\\frac{4}{\\sqrt{3}}$",
+           "as": "$\\frac{4}{\\sqrt{3}}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "sec and cosec are flips of cos and sin.",
+          "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio equation points straight to one angle.",
+        "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q6",
+     "type": "stepwise",
+     "skill": "tr-ratio",
+     "q": {
+      "en": "If $\\tan\\theta = \\frac{3}{7}$, find $\\cos\\theta$.",
+      "as": "$\\tan\\theta = \\frac{3}{7}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Hypotenuse?",
+        "as": "অতিভুজ?"
+       },
+       "options": [
+        {
+         "en": "$\\sqrt{58}$",
+         "as": "$\\sqrt{58}$"
+        },
+        {
+         "en": "10",
+         "as": "10"
+        },
+        {
+         "en": "$\\sqrt{40}$",
+         "as": "$\\sqrt{40}$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Pythagoras on sides of the tan fraction.",
+        "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "cos θ?",
+        "as": "cos θ?"
+       },
+       "options": [
+        {
+         "en": "$\\frac{3}{\\sqrt{58}}$",
+         "as": "$\\frac{3}{\\sqrt{58}}$"
+        },
+        {
+         "en": "$\\frac{7}{\\sqrt{58}}$",
+         "as": "$\\frac{7}{\\sqrt{58}}$"
+        },
+        {
+         "en": "$\\frac{7}{3}$",
+         "as": "$\\frac{7}{3}$"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Adjacent over hypotenuse.",
+        "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+       },
+       "tag": "m-trig-swap"
+      }
+     ],
+     "why": {
+      "en": "The hypotenuse need not be a whole number.",
+      "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\tan\\theta = \\frac{3}{7}$, find $\\cos\\theta$.",
+        "as": "$\\tan\\theta = \\frac{3}{7}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Hypotenuse?",
+          "as": "অতিভুজ?"
+         },
+         "options": [
+          {
+           "en": "$\\sqrt{58}$",
+           "as": "$\\sqrt{58}$"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "$\\sqrt{40}$",
+           "as": "$\\sqrt{40}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Pythagoras on sides of the tan fraction.",
+          "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "cos θ?",
+          "as": "cos θ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{3}{\\sqrt{58}}$",
+           "as": "$\\frac{3}{\\sqrt{58}}$"
+          },
+          {
+           "en": "$\\frac{7}{\\sqrt{58}}$",
+           "as": "$\\frac{7}{\\sqrt{58}}$"
+          },
+          {
+           "en": "$\\frac{7}{3}$",
+           "as": "$\\frac{7}{3}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Adjacent over hypotenuse.",
+          "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "The hypotenuse need not be a whole number.",
+        "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan\\theta = \\frac{2}{3}$, find $\\cos\\theta$.",
+        "as": "$\\tan\\theta = \\frac{2}{3}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Hypotenuse?",
+          "as": "অতিভুজ?"
+         },
+         "options": [
+          {
+           "en": "$\\sqrt{5}$",
+           "as": "$\\sqrt{5}$"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "$\\sqrt{13}$",
+           "as": "$\\sqrt{13}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Pythagoras on sides of the tan fraction.",
+          "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "cos θ?",
+          "as": "cos θ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{3}{2}$",
+           "as": "$\\frac{3}{2}$"
+          },
+          {
+           "en": "$\\frac{3}{\\sqrt{13}}$",
+           "as": "$\\frac{3}{\\sqrt{13}}$"
+          },
+          {
+           "en": "$\\frac{2}{\\sqrt{13}}$",
+           "as": "$\\frac{2}{\\sqrt{13}}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Adjacent over hypotenuse.",
+          "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "The hypotenuse need not be a whole number.",
+        "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan\\theta = \\frac{1}{4}$, find $\\cos\\theta$.",
+        "as": "$\\tan\\theta = \\frac{1}{4}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Hypotenuse?",
+          "as": "অতিভুজ?"
+         },
+         "options": [
+          {
+           "en": "$\\sqrt{15}$",
+           "as": "$\\sqrt{15}$"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "$\\sqrt{17}$",
+           "as": "$\\sqrt{17}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Pythagoras on sides of the tan fraction.",
+          "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "cos θ?",
+          "as": "cos θ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{4}{\\sqrt{17}}$",
+           "as": "$\\frac{4}{\\sqrt{17}}$"
+          },
+          {
+           "en": "$\\frac{1}{\\sqrt{17}}$",
+           "as": "$\\frac{1}{\\sqrt{17}}$"
+          },
+          {
+           "en": "$\\frac{4}{1}$",
+           "as": "$\\frac{4}{1}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Adjacent over hypotenuse.",
+          "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "The hypotenuse need not be a whole number.",
+        "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q7",
+     "type": "solve",
+     "skill": "tr-ident",
+     "q": {
+      "en": "If $\\tan A = 2$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+      "as": "$\\tan A = 2$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+     },
+     "answer": "4",
+     "why": {
+      "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+      "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\tan A = 2$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+        "as": "$\\tan A = 2$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+        "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan A = 3$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+        "as": "$\\tan A = 3$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+       },
+       "answer": "9",
+       "why": {
+        "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+        "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan A = \\frac{1}{2}$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+        "as": "$\\tan A = \\frac{1}{2}$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+       },
+       "answer": "1/4",
+       "why": {
+        "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+        "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+       }
       }
      ]
     }

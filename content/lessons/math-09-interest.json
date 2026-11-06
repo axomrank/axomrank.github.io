@@ -1679,6 +1679,71 @@
       "en": "Rate × time must reach 100.",
       "as": "হাৰ × সময় 100 হ'ব লাগিব।"
      }
+    },
+    {
+     "id": "m9.u2.q7",
+     "type": "solve",
+     "skill": "i-solve",
+     "q": {
+      "en": "₹1000 at 6% for 5 years earns the same simple interest as how much at 5% for 3 years?",
+      "as": "₹1000ৰ 6%ত 5 বছৰৰ সৰল সুত কিমান ধনৰ 5%ত 3 বছৰৰ সুতৰ সমান?"
+     },
+     "answer": "2000",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Put P × r × t equal on both sides.",
+      "as": "দুয়োফালে P × r × t সমান কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "₹1000 at 6% for 5 years earns the same simple interest as how much at 5% for 3 years?",
+        "as": "₹1000ৰ 6%ত 5 বছৰৰ সৰল সুত কিমান ধনৰ 5%ত 3 বছৰৰ সুতৰ সমান?"
+       },
+       "answer": "2000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Put P × r × t equal on both sides.",
+        "as": "দুয়োফালে P × r × t সমান কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "₹1500 at 4% for 5 years earns the same simple interest as how much at 5% for 2 years?",
+        "as": "₹1500ৰ 4%ত 5 বছৰৰ সৰল সুত কিমান ধনৰ 5%ত 2 বছৰৰ সুতৰ সমান?"
+       },
+       "answer": "3000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Put P × r × t equal on both sides.",
+        "as": "দুয়োফালে P × r × t সমান কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "₹2000 at 3% for 4 years earns the same simple interest as how much at 6% for 2 years?",
+        "as": "₹2000ৰ 3%ত 4 বছৰৰ সৰল সুত কিমান ধনৰ 6%ত 2 বছৰৰ সুতৰ সমান?"
+       },
+       "answer": "2000",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Put P × r × t equal on both sides.",
+        "as": "দুয়োফালে P × r × t সমান কৰা।"
+       }
+      }
+     ]
     }
    ]
   },
@@ -2590,6 +2655,960 @@
      "why": {
       "en": "Multiply the yearly multiplier by itself.",
       "as": "বছৰি গুণকক নিজেৰে পূৰণ কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Other ways of counting",
+    "as": "গণনাৰ আন ধৰণ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Half-yearly: halve the rate and double the periods.",
+     "as": "ছমহীয়া: হাৰ আধা আৰু সময়কাল দুগুণ।"
+    },
+    {
+     "en": "When the rate changes yearly, multiply each year's multiplier.",
+     "as": "হাৰ বছৰে সলনি হ'লে প্ৰতিবছৰৰ গুণক পূৰণ কৰা।"
+    },
+    {
+     "en": "Months go into the formula as a fraction of a year.",
+     "as": "মাহ সূত্ৰত বছৰৰ ভগ্নাংশ হিচাপে সোমায়।"
+    },
+    {
+     "en": "Over three years, compound beats simple by interest on interest, twice over and more.",
+     "as": "তিনি বছৰত চক্ৰবৃদ্ধি সুত সুতৰ সুতৰ বাবে সৰল সুততকৈ বেছি।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m9.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Twice a year",
+      "as": "বছৰত দুবাৰ"
+     },
+     "text": [
+      {
+       "en": "A bank pays 10% a year, half-yearly. That means 5% every six months, so interest starts earning sooner.",
+       "as": "বেংকে বছৰত 10% ছমহীয়াকৈ দিয়ে। মানে প্ৰতি ছমাহত 5%, সেয়ে সুতে সোনকালে সুত আনে।"
+      }
+     ],
+     "widget": {
+      "kind": "growth",
+      "fixRate": true,
+      "rate": 5,
+      "years": 1,
+      "p": 100
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Move on to two periods, one full year.",
+        "as": "দুটা সময়কাললৈ যোৱা, গোটেই এবছৰ।"
+       },
+       "goal": {
+        "years": 2
+       },
+       "then": {
+        "en": "100 grows to 110.25, more than the 110 that yearly payment gives.",
+        "as": "100 বাঢ়ি 110.25 হয়, বছৰি দিয়া 110তকৈ বেছি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m9.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Months are part of a year",
+      "as": "মাহ বছৰৰ অংশ"
+     },
+     "text": [
+      {
+       "en": "The rate in the formula is for a year, so 9 months must enter as $\\frac{9}{12}$ of a year.",
+       "as": "সূত্ৰৰ হাৰ বছৰৰ বাবে, সেয়ে 9 মাহ $\\frac{9}{12}$ বছৰ হিচাপে সোমাব লাগিব।"
+      },
+      {
+       "en": "Forget that and the interest comes out twelve times too big.",
+       "as": "পাহৰিলে সুত বাৰগুণ ডাঙৰ ওলায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "9 months",
+        "as": "9 মাহ"
+       },
+       {
+        "en": "$\\frac{3}{4}$ of a year",
+        "as": "বছৰৰ $\\frac{3}{4}$"
+       },
+       {
+        "en": "P × r × $\\frac{3}{4}$ ÷ 100",
+        "as": "P × r × $\\frac{3}{4}$ ÷ 100"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m9.x.q1",
+     "type": "solve",
+     "skill": "i-half",
+     "hints": [
+      {
+       "en": "Halve the rate, double the periods.",
+       "as": "হাৰ আধা, সময়কাল দুগুণ।"
+      }
+     ],
+     "q": {
+      "en": "Find the amount on ₹8000 at 10% a year for 1 year, compounded half-yearly.",
+      "as": "₹8000ৰ 10% বাৰ্ষিক হাৰত 1 বছৰৰ ছমহীয়া চক্ৰবৃদ্ধি সমূল ধন উলিওৱা।"
+     },
+     "answer": "8820",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "5% for two periods.",
+      "as": "দুটা সময়কালৰ বাবে 5%।"
+     },
+     "traps": [
+      {
+       "ans": "8800",
+       "tag": "m-halfyear",
+       "why": {
+        "en": "That counts one yearly payment. Half-yearly means two smaller ones.",
+        "as": "সেয়া এবছৰৰ এবাৰৰ হিচাপ। ছমহীয়া মানে দুবাৰ সৰুকৈ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the amount on ₹8000 at 10% a year for 1 year, compounded half-yearly.",
+        "as": "₹8000ৰ 10% বাৰ্ষিক হাৰত 1 বছৰৰ ছমহীয়া চক্ৰবৃদ্ধি সমূল ধন উলিওৱা।"
+       },
+       "answer": "8820",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "5% for two periods.",
+        "as": "দুটা সময়কালৰ বাবে 5%।"
+       },
+       "traps": [
+        {
+         "ans": "8800",
+         "tag": "m-halfyear",
+         "why": {
+          "en": "That counts one yearly payment. Half-yearly means two smaller ones.",
+          "as": "সেয়া এবছৰৰ এবাৰৰ হিচাপ। ছমহীয়া মানে দুবাৰ সৰুকৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the amount on ₹4000 at 20% a year for 1 year, compounded half-yearly.",
+        "as": "₹4000ৰ 20% বাৰ্ষিক হাৰত 1 বছৰৰ ছমহীয়া চক্ৰবৃদ্ধি সমূল ধন উলিওৱা।"
+       },
+       "answer": "4840",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "10% for two periods.",
+        "as": "দুটা সময়কালৰ বাবে 10%।"
+       },
+       "traps": [
+        {
+         "ans": "4800",
+         "tag": "m-halfyear",
+         "why": {
+          "en": "That counts one yearly payment. Half-yearly means two smaller ones.",
+          "as": "সেয়া এবছৰৰ এবাৰৰ হিচাপ। ছমহীয়া মানে দুবাৰ সৰুকৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the amount on ₹10000 at 10% a year for 1 year, compounded half-yearly.",
+        "as": "₹10000ৰ 10% বাৰ্ষিক হাৰত 1 বছৰৰ ছমহীয়া চক্ৰবৃদ্ধি সমূল ধন উলিওৱা।"
+       },
+       "answer": "11025",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "5% for two periods.",
+        "as": "দুটা সময়কালৰ বাবে 5%।"
+       },
+       "traps": [
+        {
+         "ans": "11000",
+         "tag": "m-halfyear",
+         "why": {
+          "en": "That counts one yearly payment. Half-yearly means two smaller ones.",
+          "as": "সেয়া এবছৰৰ এবাৰৰ হিচাপ। ছমহীয়া মানে দুবাৰ সৰুকৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the amount on ₹2000 at 20% a year for 1 year, compounded half-yearly.",
+        "as": "₹2000ৰ 20% বাৰ্ষিক হাৰত 1 বছৰৰ ছমহীয়া চক্ৰবৃদ্ধি সমূল ধন উলিওৱা।"
+       },
+       "answer": "2420",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "10% for two periods.",
+        "as": "দুটা সময়কালৰ বাবে 10%।"
+       },
+       "traps": [
+        {
+         "ans": "2400",
+         "tag": "m-halfyear",
+         "why": {
+          "en": "That counts one yearly payment. Half-yearly means two smaller ones.",
+          "as": "সেয়া এবছৰৰ এবাৰৰ হিচাপ। ছমহীয়া মানে দুবাৰ সৰুকৈ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m9.x.q2",
+     "type": "solve",
+     "skill": "i-half",
+     "q": {
+      "en": "₹1000 is invested at 10% for the first year and 20% for the second, compounded yearly. Find the amount.",
+      "as": "₹1000 প্ৰথম বছৰ 10% আৰু দ্বিতীয় বছৰ 20%ত চক্ৰবৃদ্ধিত ৰখা হ'ল। সমূল ধন উলিওৱা।"
+     },
+     "answer": "1320",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Multiply both years' multipliers.",
+      "as": "দুয়োবছৰৰ গুণক পূৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "1300",
+       "tag": "m-si-ci",
+       "why": {
+        "en": "Adding the rates is simple interest. The second year works on the grown sum.",
+        "as": "হাৰ যোগ কৰা সৰল সুত। দ্বিতীয় বছৰ বঢ়া ধনৰ ওপৰত হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "₹1000 is invested at 10% for the first year and 20% for the second, compounded yearly. Find the amount.",
+        "as": "₹1000 প্ৰথম বছৰ 10% আৰু দ্বিতীয় বছৰ 20%ত চক্ৰবৃদ্ধিত ৰখা হ'ল। সমূল ধন উলিওৱা।"
+       },
+       "answer": "1320",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Multiply both years' multipliers.",
+        "as": "দুয়োবছৰৰ গুণক পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "1300",
+         "tag": "m-si-ci",
+         "why": {
+          "en": "Adding the rates is simple interest. The second year works on the grown sum.",
+          "as": "হাৰ যোগ কৰা সৰল সুত। দ্বিতীয় বছৰ বঢ়া ধনৰ ওপৰত হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "₹2000 is invested at 10% for the first year and 5% for the second, compounded yearly. Find the amount.",
+        "as": "₹2000 প্ৰথম বছৰ 10% আৰু দ্বিতীয় বছৰ 5%ত চক্ৰবৃদ্ধিত ৰখা হ'ল। সমূল ধন উলিওৱা।"
+       },
+       "answer": "2310",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Multiply both years' multipliers.",
+        "as": "দুয়োবছৰৰ গুণক পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "2300",
+         "tag": "m-si-ci",
+         "why": {
+          "en": "Adding the rates is simple interest. The second year works on the grown sum.",
+          "as": "হাৰ যোগ কৰা সৰল সুত। দ্বিতীয় বছৰ বঢ়া ধনৰ ওপৰত হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "₹5000 is invested at 20% for the first year and 10% for the second, compounded yearly. Find the amount.",
+        "as": "₹5000 প্ৰথম বছৰ 20% আৰু দ্বিতীয় বছৰ 10%ত চক্ৰবৃদ্ধিত ৰখা হ'ল। সমূল ধন উলিওৱা।"
+       },
+       "answer": "6600",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Multiply both years' multipliers.",
+        "as": "দুয়োবছৰৰ গুণক পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "6500",
+         "tag": "m-si-ci",
+         "why": {
+          "en": "Adding the rates is simple interest. The second year works on the grown sum.",
+          "as": "হাৰ যোগ কৰা সৰল সুত। দ্বিতীয় বছৰ বঢ়া ধনৰ ওপৰত হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m9.x.q3",
+     "type": "stepwise",
+     "skill": "i-diff",
+     "q": {
+      "en": "Find the difference between compound and simple interest on ₹1000 at 10% for 3 years.",
+      "as": "₹1000ৰ 10%ত 3 বছৰৰ চক্ৰবৃদ্ধি আৰু সৰল সুতৰ পাৰ্থক্য উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Simple interest?",
+        "as": "সৰল সুত?"
+       },
+       "options": [
+        {
+         "en": "₹300",
+         "as": "₹300"
+        },
+        {
+         "en": "₹200",
+         "as": "₹200"
+        },
+        {
+         "en": "₹100",
+         "as": "₹100"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Three equal slices.",
+        "as": "তিনিটা সমান ভাগ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Compound interest?",
+        "as": "চক্ৰবৃদ্ধি সুত?"
+       },
+       "options": [
+        {
+         "en": "₹301",
+         "as": "₹301"
+        },
+        {
+         "en": "₹1331",
+         "as": "₹1331"
+        },
+        {
+         "en": "₹331",
+         "as": "₹331"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Multiply three times, then take off the principal.",
+        "as": "তিনিবাৰ পূৰণ কৰি মূলধন বিয়োগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Difference?",
+        "as": "পাৰ্থক্য?"
+       },
+       "options": [
+        {
+         "en": "₹20",
+         "as": "₹20"
+        },
+        {
+         "en": "₹10",
+         "as": "₹10"
+        },
+        {
+         "en": "₹31",
+         "as": "₹31"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Two years would give the smaller figure; three years add more.",
+        "as": "দুবছৰত সৰু সংখ্যাটো হয়; তিনি বছৰত আৰু বাঢ়ে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The gap grows faster than the years.",
+      "as": "পাৰ্থক্য বছৰতকৈ বেগাই বাঢ়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the difference between compound and simple interest on ₹1000 at 10% for 3 years.",
+        "as": "₹1000ৰ 10%ত 3 বছৰৰ চক্ৰবৃদ্ধি আৰু সৰল সুতৰ পাৰ্থক্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Simple interest?",
+          "as": "সৰল সুত?"
+         },
+         "options": [
+          {
+           "en": "₹300",
+           "as": "₹300"
+          },
+          {
+           "en": "₹200",
+           "as": "₹200"
+          },
+          {
+           "en": "₹100",
+           "as": "₹100"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Three equal slices.",
+          "as": "তিনিটা সমান ভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Compound interest?",
+          "as": "চক্ৰবৃদ্ধি সুত?"
+         },
+         "options": [
+          {
+           "en": "₹301",
+           "as": "₹301"
+          },
+          {
+           "en": "₹1331",
+           "as": "₹1331"
+          },
+          {
+           "en": "₹331",
+           "as": "₹331"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply three times, then take off the principal.",
+          "as": "তিনিবাৰ পূৰণ কৰি মূলধন বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Difference?",
+          "as": "পাৰ্থক্য?"
+         },
+         "options": [
+          {
+           "en": "₹20",
+           "as": "₹20"
+          },
+          {
+           "en": "₹10",
+           "as": "₹10"
+          },
+          {
+           "en": "₹31",
+           "as": "₹31"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Two years would give the smaller figure; three years add more.",
+          "as": "দুবছৰত সৰু সংখ্যাটো হয়; তিনি বছৰত আৰু বাঢ়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gap grows faster than the years.",
+        "as": "পাৰ্থক্য বছৰতকৈ বেগাই বাঢ়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the difference between compound and simple interest on ₹8000 at 5% for 3 years.",
+        "as": "₹8000ৰ 5%ত 3 বছৰৰ চক্ৰবৃদ্ধি আৰু সৰল সুতৰ পাৰ্থক্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Simple interest?",
+          "as": "সৰল সুত?"
+         },
+         "options": [
+          {
+           "en": "₹1200",
+           "as": "₹1200"
+          },
+          {
+           "en": "₹800",
+           "as": "₹800"
+          },
+          {
+           "en": "₹400",
+           "as": "₹400"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Three equal slices.",
+          "as": "তিনিটা সমান ভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Compound interest?",
+          "as": "চক্ৰবৃদ্ধি সুত?"
+         },
+         "options": [
+          {
+           "en": "₹1261",
+           "as": "₹1261"
+          },
+          {
+           "en": "₹1201",
+           "as": "₹1201"
+          },
+          {
+           "en": "₹9261",
+           "as": "₹9261"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Multiply three times, then take off the principal.",
+          "as": "তিনিবাৰ পূৰণ কৰি মূলধন বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Difference?",
+          "as": "পাৰ্থক্য?"
+         },
+         "options": [
+          {
+           "en": "₹61",
+           "as": "₹61"
+          },
+          {
+           "en": "₹20",
+           "as": "₹20"
+          },
+          {
+           "en": "₹40",
+           "as": "₹40"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Two years would give the smaller figure; three years add more.",
+          "as": "দুবছৰত সৰু সংখ্যাটো হয়; তিনি বছৰত আৰু বাঢ়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gap grows faster than the years.",
+        "as": "পাৰ্থক্য বছৰতকৈ বেগাই বাঢ়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the difference between compound and simple interest on ₹2000 at 10% for 3 years.",
+        "as": "₹2000ৰ 10%ত 3 বছৰৰ চক্ৰবৃদ্ধি আৰু সৰল সুতৰ পাৰ্থক্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Simple interest?",
+          "as": "সৰল সুত?"
+         },
+         "options": [
+          {
+           "en": "₹600",
+           "as": "₹600"
+          },
+          {
+           "en": "₹400",
+           "as": "₹400"
+          },
+          {
+           "en": "₹200",
+           "as": "₹200"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Three equal slices.",
+          "as": "তিনিটা সমান ভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Compound interest?",
+          "as": "চক্ৰবৃদ্ধি সুত?"
+         },
+         "options": [
+          {
+           "en": "₹662",
+           "as": "₹662"
+          },
+          {
+           "en": "₹2662",
+           "as": "₹2662"
+          },
+          {
+           "en": "₹601",
+           "as": "₹601"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Multiply three times, then take off the principal.",
+          "as": "তিনিবাৰ পূৰণ কৰি মূলধন বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Difference?",
+          "as": "পাৰ্থক্য?"
+         },
+         "options": [
+          {
+           "en": "₹20",
+           "as": "₹20"
+          },
+          {
+           "en": "₹62",
+           "as": "₹62"
+          },
+          {
+           "en": "₹40",
+           "as": "₹40"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Two years would give the smaller figure; three years add more.",
+          "as": "দুবছৰত সৰু সংখ্যাটো হয়; তিনি বছৰত আৰু বাঢ়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gap grows faster than the years.",
+        "as": "পাৰ্থক্য বছৰতকৈ বেগাই বাঢ়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m9.x.q4",
+     "type": "solve",
+     "skill": "i-si",
+     "hints": [
+      {
+       "en": "Divide the months by 12.",
+       "as": "মাহক 12ৰে হৰণ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Find the simple interest on ₹1500 at 8% a year for 9 months.",
+      "as": "₹1500ৰ 8% বাৰ্ষিক হাৰত 9 মাহৰ সৰল সুত উলিওৱা।"
+     },
+     "answer": "90",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "9 months is $\\frac{9}{12}$ of a year.",
+      "as": "9 মাহ বছৰৰ $\\frac{9}{12}$।"
+     },
+     "traps": [
+      {
+       "ans": "1080",
+       "tag": "m-month-years",
+       "why": {
+        "en": "The rate is yearly, so turn months into a fraction of a year.",
+        "as": "হাৰ বাৰ্ষিক, সেয়ে মাহক বছৰৰ ভগ্নাংশ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the simple interest on ₹1500 at 8% a year for 9 months.",
+        "as": "₹1500ৰ 8% বাৰ্ষিক হাৰত 9 মাহৰ সৰল সুত উলিওৱা।"
+       },
+       "answer": "90",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "9 months is $\\frac{9}{12}$ of a year.",
+        "as": "9 মাহ বছৰৰ $\\frac{9}{12}$।"
+       },
+       "traps": [
+        {
+         "ans": "1080",
+         "tag": "m-month-years",
+         "why": {
+          "en": "The rate is yearly, so turn months into a fraction of a year.",
+          "as": "হাৰ বাৰ্ষিক, সেয়ে মাহক বছৰৰ ভগ্নাংশ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the simple interest on ₹1200 at 5% a year for 6 months.",
+        "as": "₹1200ৰ 5% বাৰ্ষিক হাৰত 6 মাহৰ সৰল সুত উলিওৱা।"
+       },
+       "answer": "30",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "6 months is $\\frac{6}{12}$ of a year.",
+        "as": "6 মাহ বছৰৰ $\\frac{6}{12}$।"
+       },
+       "traps": [
+        {
+         "ans": "360",
+         "tag": "m-month-years",
+         "why": {
+          "en": "The rate is yearly, so turn months into a fraction of a year.",
+          "as": "হাৰ বাৰ্ষিক, সেয়ে মাহক বছৰৰ ভগ্নাংশ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the simple interest on ₹2400 at 10% a year for 8 months.",
+        "as": "₹2400ৰ 10% বাৰ্ষিক হাৰত 8 মাহৰ সৰল সুত উলিওৱা।"
+       },
+       "answer": "160",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "8 months is $\\frac{8}{12}$ of a year.",
+        "as": "8 মাহ বছৰৰ $\\frac{8}{12}$।"
+       },
+       "traps": [
+        {
+         "ans": "1920",
+         "tag": "m-month-years",
+         "why": {
+          "en": "The rate is yearly, so turn months into a fraction of a year.",
+          "as": "হাৰ বাৰ্ষিক, সেয়ে মাহক বছৰৰ ভগ্নাংশ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m9.x.q5",
+     "type": "solve",
+     "skill": "i-solve",
+     "q": {
+      "en": "Simple interest at 5% a year is $\\frac{2}{5}$ of the principal. How many years?",
+      "as": "5% বাৰ্ষিক হাৰত সৰল সুত মূলধনৰ $\\frac{2}{5}$। কিমান বছৰ?"
+     },
+     "answer": "8",
+     "suffix": {
+      "en": "years",
+      "as": "বছৰ"
+     },
+     "why": {
+      "en": "Take principal 100. Interest is 40, at 5 a year.",
+      "as": "মূলধন 100 ধৰা। সুত 40, বছৰি 5।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Simple interest at 5% a year is $\\frac{2}{5}$ of the principal. How many years?",
+        "as": "5% বাৰ্ষিক হাৰত সৰল সুত মূলধনৰ $\\frac{2}{5}$। কিমান বছৰ?"
+       },
+       "answer": "8",
+       "suffix": {
+        "en": "years",
+        "as": "বছৰ"
+       },
+       "why": {
+        "en": "Take principal 100. Interest is 40, at 5 a year.",
+        "as": "মূলধন 100 ধৰা। সুত 40, বছৰি 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "Simple interest at 5% a year is $\\frac{1}{4}$ of the principal. How many years?",
+        "as": "5% বাৰ্ষিক হাৰত সৰল সুত মূলধনৰ $\\frac{1}{4}$। কিমান বছৰ?"
+       },
+       "answer": "5",
+       "suffix": {
+        "en": "years",
+        "as": "বছৰ"
+       },
+       "why": {
+        "en": "Take principal 100. Interest is 25, at 5 a year.",
+        "as": "মূলধন 100 ধৰা। সুত 25, বছৰি 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "Simple interest at 10% a year is $\\frac{1}{2}$ of the principal. How many years?",
+        "as": "10% বাৰ্ষিক হাৰত সৰল সুত মূলধনৰ $\\frac{1}{2}$। কিমান বছৰ?"
+       },
+       "answer": "5",
+       "suffix": {
+        "en": "years",
+        "as": "বছৰ"
+       },
+       "why": {
+        "en": "Take principal 100. Interest is 50, at 10 a year.",
+        "as": "মূলধন 100 ধৰা। সুত 50, বছৰি 10।"
+       }
+      },
+      {
+       "q": {
+        "en": "Simple interest at 12% a year is $\\frac{3}{5}$ of the principal. How many years?",
+        "as": "12% বাৰ্ষিক হাৰত সৰল সুত মূলধনৰ $\\frac{3}{5}$। কিমান বছৰ?"
+       },
+       "answer": "5",
+       "suffix": {
+        "en": "years",
+        "as": "বছৰ"
+       },
+       "why": {
+        "en": "Take principal 100. Interest is 60, at 12 a year.",
+        "as": "মূলধন 100 ধৰা। সুত 60, বছৰি 12।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m9.x.q6",
+     "type": "match",
+     "skill": "i-si",
+     "q": {
+      "en": "Match each period to its share of a year",
+      "as": "প্ৰতিটো সময়ক বছৰৰ অংশৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "3 months",
+        "as": "3 মাহ"
+       },
+       {
+        "en": "$\\frac{1}{4}$",
+        "as": "$\\frac{1}{4}$"
+       }
+      ],
+      [
+       {
+        "en": "6 months",
+        "as": "6 মাহ"
+       },
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       }
+      ],
+      [
+       {
+        "en": "8 months",
+        "as": "8 মাহ"
+       },
+       {
+        "en": "$\\frac{2}{3}$",
+        "as": "$\\frac{2}{3}$"
+       }
+      ],
+      [
+       {
+        "en": "9 months",
+        "as": "9 মাহ"
+       },
+       {
+        "en": "$\\frac{3}{4}$",
+        "as": "$\\frac{3}{4}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide the months by 12.",
+      "as": "মাহক 12ৰে হৰণ কৰা।"
+     }
+    },
+    {
+     "id": "m9.x.q7",
+     "type": "tf",
+     "skill": "i-half",
+     "s": {
+      "en": "At one yearly rate, half-yearly compounding gives more than yearly compounding.",
+      "as": "একে বাৰ্ষিক হাৰত ছমহীয়া চক্ৰবৃদ্ধিয়ে বছৰি চক্ৰবৃদ্ধিতকৈ বেছি দিয়ে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Interest joins the principal sooner, so it earns for longer.",
+      "as": "সুত সোনকালে মূলধনত মিলে, সেয়ে বেছি সময় সুত আনে।"
      }
     }
    ]

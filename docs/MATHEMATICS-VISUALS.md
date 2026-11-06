@@ -49,6 +49,10 @@ idea, or a formula with decoration, does not count. Scenes live in `app/mathstag
 | Rhombus | Half the box around its diagonals | `kite` | Fold the corners in |
 | Circumference | One roll of the wheel | `roll` | Roll it; the ground shows the length |
 | Circle area | Slices rearrange into πr × r | `sectors` | Cut finer until it is a rectangle |
+| Perfect cube | Every prime in groups of three | `pairs` with `group: 3` | Group primes; what is short is the multiplier |
+| Outer angle | The two far angles added | `exterior` | Move two angles; the outer one and the triangle's names follow |
+| Tangent | A right angle with the radius | `tangent` | Slide Q; Pythagoras gives the distance |
+| Fixed perimeter | One fence, many rectangles | `fence` | Change the length; the square holds the most |
 | Volume | Layers of base area | `stack` | Build it up |
 | Surface | What you can unfold | `net` | Unfold six squares |
 | Cone | A third of its cylinder | `pour` | Three cones fill it |

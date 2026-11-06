@@ -2488,13 +2488,13 @@
       }
      ],
      "q": {
-      "en": "A sphere of radius 18 cm is melted into spheres of radius 9 cm. How many?",
-      "as": "18 ছেমি ব্যাসাৰ্ধৰ গোলক গলাই 9 ছেমি ব্যাসাৰ্ধৰ গোলক বনোৱা হ'ল। কেইটা?"
+      "en": "A sphere of radius 16 cm is melted into spheres of radius 8 cm. How many?",
+      "as": "16 ছেমি ব্যাসাৰ্ধৰ গোলক গলাই 8 ছেমি ব্যাসাৰ্ধৰ গোলক বনোৱা হ'ল। কেইটা?"
      },
      "answer": "8",
      "why": {
-      "en": "$(18 \\div 9)^3$.",
-      "as": "$(18 \\div 9)^3$।"
+      "en": "$(16 \\div 8)^3$.",
+      "as": "$(16 \\div 8)^3$।"
      },
      "traps": [
       {
@@ -2517,13 +2517,13 @@
      "variants": [
       {
        "q": {
-        "en": "A sphere of radius 18 cm is melted into spheres of radius 9 cm. How many?",
-        "as": "18 ছেমি ব্যাসাৰ্ধৰ গোলক গলাই 9 ছেমি ব্যাসাৰ্ধৰ গোলক বনোৱা হ'ল। কেইটা?"
+        "en": "A sphere of radius 16 cm is melted into spheres of radius 8 cm. How many?",
+        "as": "16 ছেমি ব্যাসাৰ্ধৰ গোলক গলাই 8 ছেমি ব্যাসাৰ্ধৰ গোলক বনোৱা হ'ল। কেইটা?"
        },
        "answer": "8",
        "why": {
-        "en": "$(18 \\div 9)^3$.",
-        "as": "$(18 \\div 9)^3$।"
+        "en": "$(16 \\div 8)^3$.",
+        "as": "$(16 \\div 8)^3$।"
        },
        "traps": [
         {
@@ -2546,13 +2546,13 @@
       },
       {
        "q": {
-        "en": "A sphere of radius 27 cm is melted into spheres of radius 9 cm. How many?",
-        "as": "27 ছেমি ব্যাসাৰ্ধৰ গোলক গলাই 9 ছেমি ব্যাসাৰ্ধৰ গোলক বনোৱা হ'ল। কেইটা?"
+        "en": "A sphere of radius 24 cm is melted into spheres of radius 8 cm. How many?",
+        "as": "24 ছেমি ব্যাসাৰ্ধৰ গোলক গলাই 8 ছেমি ব্যাসাৰ্ধৰ গোলক বনোৱা হ'ল। কেইটা?"
        },
        "answer": "27",
        "why": {
-        "en": "$(27 \\div 9)^3$.",
-        "as": "$(27 \\div 9)^3$।"
+        "en": "$(24 \\div 8)^3$.",
+        "as": "$(24 \\div 8)^3$।"
        },
        "traps": [
         {
@@ -2805,6 +2805,1941 @@
      "why": {
       "en": "Count the lengths multiplied: one, two or three.",
       "as": "কিমান দৈৰ্ঘ্য পূৰণ হৈছে গণা: এটা, দুটা বা তিনিটা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Slant, full surface, half spheres",
+    "as": "হেলনীয়া, সম্পূৰ্ণ পৃষ্ঠ, অৰ্ধগোলক"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A cone's slant is $l = \\sqrt{r^2 + h^2}$.",
+     "as": "শংকুৰ হেলনীয়া উচ্চতা $l = \\sqrt{r^2 + h^2}$।"
+    },
+    {
+     "en": "A cone's curved surface is $\\pi r l$, using slant, not height.",
+     "as": "শংকুৰ বক্ৰ পৃষ্ঠ $\\pi r l$, উচ্চতা নহয়, হেলনীয়া লোৱা।"
+    },
+    {
+     "en": "A closed cylinder's whole surface is $2\\pi r(r + h)$.",
+     "as": "বন্ধ চুঙাৰ সম্পূৰ্ণ পৃষ্ঠ $2\\pi r(r + h)$।"
+    },
+    {
+     "en": "A hemisphere's volume is $\\frac{2}{3}\\pi r^3$.",
+     "as": "অৰ্ধগোলকৰ আয়তন $\\frac{2}{3}\\pi r^3$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m16.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Unfold it",
+      "as": "খুলি চোৱা"
+     },
+     "text": [
+      {
+       "en": "Any surface is what you would paint. Open a box flat to count it.",
+       "as": "পৃষ্ঠ মানে তুমি ৰং কৰিবলগীয়াখিনি। গণিবলৈ বাকচ খুলি মেলা।"
+      }
+     ],
+     "widget": {
+      "kind": "net",
+      "a": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Unfold the shape.",
+        "as": "আকৃতিটো খোলা।"
+       },
+       "goal": {
+        "open": 1
+       },
+       "then": {
+        "en": "A cylinder opens the same way: two circles and one rectangle, $2\\pi r^2 + 2\\pi r h$.",
+        "as": "চুঙাও একেদৰে খোল খায়: দুটা বৃত্ত আৰু এটা আয়ত, $2\\pi r^2 + 2\\pi r h$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.x.s2",
+     "type": "story",
+     "title": {
+      "en": "The slant is hiding",
+      "as": "হেলনীয়া লুকাই আছে"
+     },
+     "text": [
+      {
+       "en": "Slice a cone down the middle. Height, radius and slant form a right triangle.",
+       "as": "শংকু মাজেৰে কাটা। উচ্চতা, ব্যাসাৰ্ধ আৰু হেলনীয়াই সমকোণী ত্ৰিভুজ বনায়।"
+      },
+      {
+       "en": "The surface runs along the slant, so that is the length it needs.",
+       "as": "পৃষ্ঠ হেলনীয়াৰে যায়, সেয়ে সেই দৈৰ্ঘ্যই লাগে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "r = 5, h = 12",
+        "as": "r = 5, h = 12"
+       },
+       {
+        "en": "l = 13",
+        "as": "l = 13"
+       },
+       {
+        "en": "Surface = π × 5 × 13",
+        "as": "পৃষ্ঠ = π × 5 × 13"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m16.x.q1",
+     "type": "stepwise",
+     "skill": "g-full",
+     "q": {
+      "en": "A cone has radius 5 cm and height 12 cm. Find its curved surface in terms of π.",
+      "as": "শংকুৰ ব্যাসাৰ্ধ 5 ছেমি, উচ্চতা 12 ছেমি। বক্ৰ পৃষ্ঠ π-ত উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Slant?",
+        "as": "হেলনীয়া?"
+       },
+       "options": [
+        {
+         "en": "17 cm",
+         "as": "17 cm"
+        },
+        {
+         "en": "13 cm",
+         "as": "13 cm"
+        },
+        {
+         "en": "12 cm",
+         "as": "12 cm"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Pythagoras.",
+        "as": "পাইথাগোৰাছ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Curved surface?",
+        "as": "বক্ৰ পৃষ্ঠ?"
+       },
+       "options": [
+        {
+         "en": "65π",
+         "as": "65π"
+        },
+        {
+         "en": "90π",
+         "as": "90π"
+        },
+        {
+         "en": "60π",
+         "as": "60π"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "π × r × slant.",
+        "as": "π × r × হেলনীয়া।"
+       },
+       "tag": "m-cone-height"
+      }
+     ],
+     "why": {
+      "en": "Slant goes in the surface; height goes in the volume.",
+      "as": "পৃষ্ঠত হেলনীয়া, আয়তনত উচ্চতা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A cone has radius 5 cm and height 12 cm. Find its curved surface in terms of π.",
+        "as": "শংকুৰ ব্যাসাৰ্ধ 5 ছেমি, উচ্চতা 12 ছেমি। বক্ৰ পৃষ্ঠ π-ত উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Slant?",
+          "as": "হেলনীয়া?"
+         },
+         "options": [
+          {
+           "en": "17 cm",
+           "as": "17 cm"
+          },
+          {
+           "en": "13 cm",
+           "as": "13 cm"
+          },
+          {
+           "en": "12 cm",
+           "as": "12 cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Pythagoras.",
+          "as": "পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Curved surface?",
+          "as": "বক্ৰ পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "65π",
+           "as": "65π"
+          },
+          {
+           "en": "90π",
+           "as": "90π"
+          },
+          {
+           "en": "60π",
+           "as": "60π"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "π × r × slant.",
+          "as": "π × r × হেলনীয়া।"
+         },
+         "tag": "m-cone-height"
+        }
+       ],
+       "why": {
+        "en": "Slant goes in the surface; height goes in the volume.",
+        "as": "পৃষ্ঠত হেলনীয়া, আয়তনত উচ্চতা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A cone has radius 3 cm and height 4 cm. Find its curved surface in terms of π.",
+        "as": "শংকুৰ ব্যাসাৰ্ধ 3 ছেমি, উচ্চতা 4 ছেমি। বক্ৰ পৃষ্ঠ π-ত উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Slant?",
+          "as": "হেলনীয়া?"
+         },
+         "options": [
+          {
+           "en": "5 cm",
+           "as": "5 cm"
+          },
+          {
+           "en": "7 cm",
+           "as": "7 cm"
+          },
+          {
+           "en": "4 cm",
+           "as": "4 cm"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Pythagoras.",
+          "as": "পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Curved surface?",
+          "as": "বক্ৰ পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "24π",
+           "as": "24π"
+          },
+          {
+           "en": "15π",
+           "as": "15π"
+          },
+          {
+           "en": "12π",
+           "as": "12π"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "π × r × slant.",
+          "as": "π × r × হেলনীয়া।"
+         },
+         "tag": "m-cone-height"
+        }
+       ],
+       "why": {
+        "en": "Slant goes in the surface; height goes in the volume.",
+        "as": "পৃষ্ঠত হেলনীয়া, আয়তনত উচ্চতা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A cone has radius 8 cm and height 15 cm. Find its curved surface in terms of π.",
+        "as": "শংকুৰ ব্যাসাৰ্ধ 8 ছেমি, উচ্চতা 15 ছেমি। বক্ৰ পৃষ্ঠ π-ত উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Slant?",
+          "as": "হেলনীয়া?"
+         },
+         "options": [
+          {
+           "en": "17 cm",
+           "as": "17 cm"
+          },
+          {
+           "en": "15 cm",
+           "as": "15 cm"
+          },
+          {
+           "en": "23 cm",
+           "as": "23 cm"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Pythagoras.",
+          "as": "পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Curved surface?",
+          "as": "বক্ৰ পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "136π",
+           "as": "136π"
+          },
+          {
+           "en": "120π",
+           "as": "120π"
+          },
+          {
+           "en": "200π",
+           "as": "200π"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "π × r × slant.",
+          "as": "π × r × হেলনীয়া।"
+         },
+         "tag": "m-cone-height"
+        }
+       ],
+       "why": {
+        "en": "Slant goes in the surface; height goes in the volume.",
+        "as": "পৃষ্ঠত হেলনীয়া, আয়তনত উচ্চতা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.x.q2",
+     "type": "stepwise",
+     "skill": "g-full",
+     "q": {
+      "en": "Find the whole surface of a closed cylinder of radius 7 cm and height 3 cm. Take π = 22/7.",
+      "as": "7 ছেমি ব্যাসাৰ্ধ আৰু 3 ছেমি উচ্চতাৰ বন্ধ চুঙাৰ সম্পূৰ্ণ পৃষ্ঠ উলিওৱা। π = 22/7 লোৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Curved part?",
+        "as": "বক্ৰ অংশ?"
+       },
+       "options": [
+        {
+         "en": "462",
+         "as": "462"
+        },
+        {
+         "en": "132",
+         "as": "132"
+        },
+        {
+         "en": "66",
+         "as": "66"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "$2\\pi r h$.",
+        "as": "$2\\pi r h$।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Two ends?",
+        "as": "দুটা মূৰ?"
+       },
+       "options": [
+        {
+         "en": "308",
+         "as": "308"
+        },
+        {
+         "en": "44",
+         "as": "44"
+        },
+        {
+         "en": "154",
+         "as": "154"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Two circles.",
+        "as": "দুটা বৃত্ত।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Whole surface?",
+        "as": "সম্পূৰ্ণ পৃষ্ঠ?"
+       },
+       "options": [
+        {
+         "en": "440",
+         "as": "440"
+        },
+        {
+         "en": "220",
+         "as": "220"
+        },
+        {
+         "en": "132",
+         "as": "132"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Add them.",
+        "as": "যোগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Unfolded, it is one rectangle and two circles.",
+      "as": "খুলিলে এটা আয়ত আৰু দুটা বৃত্ত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the whole surface of a closed cylinder of radius 7 cm and height 3 cm. Take π = 22/7.",
+        "as": "7 ছেমি ব্যাসাৰ্ধ আৰু 3 ছেমি উচ্চতাৰ বন্ধ চুঙাৰ সম্পূৰ্ণ পৃষ্ঠ উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Curved part?",
+          "as": "বক্ৰ অংশ?"
+         },
+         "options": [
+          {
+           "en": "462",
+           "as": "462"
+          },
+          {
+           "en": "132",
+           "as": "132"
+          },
+          {
+           "en": "66",
+           "as": "66"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "$2\\pi r h$.",
+          "as": "$2\\pi r h$।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Two ends?",
+          "as": "দুটা মূৰ?"
+         },
+         "options": [
+          {
+           "en": "308",
+           "as": "308"
+          },
+          {
+           "en": "44",
+           "as": "44"
+          },
+          {
+           "en": "154",
+           "as": "154"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Two circles.",
+          "as": "দুটা বৃত্ত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Whole surface?",
+          "as": "সম্পূৰ্ণ পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "440",
+           "as": "440"
+          },
+          {
+           "en": "220",
+           "as": "220"
+          },
+          {
+           "en": "132",
+           "as": "132"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add them.",
+          "as": "যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Unfolded, it is one rectangle and two circles.",
+        "as": "খুলিলে এটা আয়ত আৰু দুটা বৃত্ত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the whole surface of a closed cylinder of radius 14 cm and height 6 cm. Take π = 22/7.",
+        "as": "14 ছেমি ব্যাসাৰ্ধ আৰু 6 ছেমি উচ্চতাৰ বন্ধ চুঙাৰ সম্পূৰ্ণ পৃষ্ঠ উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Curved part?",
+          "as": "বক্ৰ অংশ?"
+         },
+         "options": [
+          {
+           "en": "528",
+           "as": "528"
+          },
+          {
+           "en": "3696",
+           "as": "3696"
+          },
+          {
+           "en": "264",
+           "as": "264"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$2\\pi r h$.",
+          "as": "$2\\pi r h$।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Two ends?",
+          "as": "দুটা মূৰ?"
+         },
+         "options": [
+          {
+           "en": "1232",
+           "as": "1232"
+          },
+          {
+           "en": "616",
+           "as": "616"
+          },
+          {
+           "en": "88",
+           "as": "88"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Two circles.",
+          "as": "দুটা বৃত্ত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Whole surface?",
+          "as": "সম্পূৰ্ণ পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "880",
+           "as": "880"
+          },
+          {
+           "en": "1760",
+           "as": "1760"
+          },
+          {
+           "en": "528",
+           "as": "528"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add them.",
+          "as": "যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Unfolded, it is one rectangle and two circles.",
+        "as": "খুলিলে এটা আয়ত আৰু দুটা বৃত্ত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the whole surface of a closed cylinder of radius 7 cm and height 10 cm. Take π = 22/7.",
+        "as": "7 ছেমি ব্যাসাৰ্ধ আৰু 10 ছেমি উচ্চতাৰ বন্ধ চুঙাৰ সম্পূৰ্ণ পৃষ্ঠ উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Curved part?",
+          "as": "বক্ৰ অংশ?"
+         },
+         "options": [
+          {
+           "en": "440",
+           "as": "440"
+          },
+          {
+           "en": "1540",
+           "as": "1540"
+          },
+          {
+           "en": "220",
+           "as": "220"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$2\\pi r h$.",
+          "as": "$2\\pi r h$।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Two ends?",
+          "as": "দুটা মূৰ?"
+         },
+         "options": [
+          {
+           "en": "308",
+           "as": "308"
+          },
+          {
+           "en": "44",
+           "as": "44"
+          },
+          {
+           "en": "154",
+           "as": "154"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Two circles.",
+          "as": "দুটা বৃত্ত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Whole surface?",
+          "as": "সম্পূৰ্ণ পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "440",
+           "as": "440"
+          },
+          {
+           "en": "748",
+           "as": "748"
+          },
+          {
+           "en": "374",
+           "as": "374"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add them.",
+          "as": "যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Unfolded, it is one rectangle and two circles.",
+        "as": "খুলিলে এটা আয়ত আৰু দুটা বৃত্ত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.x.q3",
+     "type": "solve",
+     "skill": "g-full",
+     "q": {
+      "en": "A cylinder of height 10 cm has curved surface 440 sq cm. Find its radius. Take π = 22/7.",
+      "as": "10 ছেমি উচ্চতাৰ চুঙাৰ বক্ৰ পৃষ্ঠ 440 বৰ্গ ছেমি। ব্যাসাৰ্ধ উলিওৱা। π = 22/7 লোৱা।"
+     },
+     "answer": "7",
+     "suffix": {
+      "en": "cm",
+      "as": "ছেমি"
+     },
+     "why": {
+      "en": "Divide by $2\\pi h$.",
+      "as": "$2\\pi h$ৰে হৰণ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A cylinder of height 10 cm has curved surface 440 sq cm. Find its radius. Take π = 22/7.",
+        "as": "10 ছেমি উচ্চতাৰ চুঙাৰ বক্ৰ পৃষ্ঠ 440 বৰ্গ ছেমি। ব্যাসাৰ্ধ উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "7",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Divide by $2\\pi h$.",
+        "as": "$2\\pi h$ৰে হৰণ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A cylinder of height 5 cm has curved surface 440 sq cm. Find its radius. Take π = 22/7.",
+        "as": "5 ছেমি উচ্চতাৰ চুঙাৰ বক্ৰ পৃষ্ঠ 440 বৰ্গ ছেমি। ব্যাসাৰ্ধ উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "14",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Divide by $2\\pi h$.",
+        "as": "$2\\pi h$ৰে হৰণ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A cylinder of height 2 cm has curved surface 264 sq cm. Find its radius. Take π = 22/7.",
+        "as": "2 ছেমি উচ্চতাৰ চুঙাৰ বক্ৰ পৃষ্ঠ 264 বৰ্গ ছেমি। ব্যাসাৰ্ধ উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "21",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Divide by $2\\pi h$.",
+        "as": "$2\\pi h$ৰে হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.x.q4",
+     "type": "solve",
+     "skill": "g-full",
+     "q": {
+      "en": "Find the volume of a hemisphere of radius 21 cm. Take π = 22/7.",
+      "as": "21 ছেমি ব্যাসাৰ্ধৰ অৰ্ধগোলকৰ আয়তন উলিওৱা। π = 22/7 লোৱা।"
+     },
+     "answer": "19404",
+     "suffix": {
+      "en": "cu cm",
+      "as": "ঘন ছেমি"
+     },
+     "why": {
+      "en": "Half of $\\frac{4}{3}\\pi r^3$.",
+      "as": "$\\frac{4}{3}\\pi r^3$ৰ আধা।"
+     },
+     "traps": [
+      {
+       "ans": "38808",
+       "tag": "m-sphere-hemi",
+       "why": {
+        "en": "That is the whole sphere.",
+        "as": "সেয়া গোটেই গোলক।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the volume of a hemisphere of radius 21 cm. Take π = 22/7.",
+        "as": "21 ছেমি ব্যাসাৰ্ধৰ অৰ্ধগোলকৰ আয়তন উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "19404",
+       "suffix": {
+        "en": "cu cm",
+        "as": "ঘন ছেমি"
+       },
+       "why": {
+        "en": "Half of $\\frac{4}{3}\\pi r^3$.",
+        "as": "$\\frac{4}{3}\\pi r^3$ৰ আধা।"
+       },
+       "traps": [
+        {
+         "ans": "38808",
+         "tag": "m-sphere-hemi",
+         "why": {
+          "en": "That is the whole sphere.",
+          "as": "সেয়া গোটেই গোলক।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the volume of a hemisphere of radius 42 cm. Take π = 22/7.",
+        "as": "42 ছেমি ব্যাসাৰ্ধৰ অৰ্ধগোলকৰ আয়তন উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "155232",
+       "suffix": {
+        "en": "cu cm",
+        "as": "ঘন ছেমি"
+       },
+       "why": {
+        "en": "Half of $\\frac{4}{3}\\pi r^3$.",
+        "as": "$\\frac{4}{3}\\pi r^3$ৰ আধা।"
+       },
+       "traps": [
+        {
+         "ans": "310464",
+         "tag": "m-sphere-hemi",
+         "why": {
+          "en": "That is the whole sphere.",
+          "as": "সেয়া গোটেই গোলক।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the volume of a hemisphere of radius 84 cm. Take π = 22/7.",
+        "as": "84 ছেমি ব্যাসাৰ্ধৰ অৰ্ধগোলকৰ আয়তন উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "1241856",
+       "suffix": {
+        "en": "cu cm",
+        "as": "ঘন ছেমি"
+       },
+       "why": {
+        "en": "Half of $\\frac{4}{3}\\pi r^3$.",
+        "as": "$\\frac{4}{3}\\pi r^3$ৰ আধা।"
+       },
+       "traps": [
+        {
+         "ans": "2483712",
+         "tag": "m-sphere-hemi",
+         "why": {
+          "en": "That is the whole sphere.",
+          "as": "সেয়া গোটেই গোলক।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m16.x.q5",
+     "type": "solve",
+     "skill": "g-full",
+     "q": {
+      "en": "A sphere has radius r and a hemisphere has radius 2r. Write sphere volume ÷ hemisphere volume as a fraction.",
+      "as": "গোলকৰ ব্যাসাৰ্ধ r, অৰ্ধগোলকৰ ব্যাসাৰ্ধ 2r। গোলকৰ আয়তন ÷ অৰ্ধগোলকৰ আয়তন ভগ্নাংশত লিখা।"
+     },
+     "answer": "1/4",
+     "why": {
+      "en": "$\\frac{4}{3}$ against $\\frac{2}{3} \\times 8$.",
+      "as": "$\\frac{4}{3}$ বনাম $\\frac{2}{3} \\times 8$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A sphere has radius r and a hemisphere has radius 2r. Write sphere volume ÷ hemisphere volume as a fraction.",
+        "as": "গোলকৰ ব্যাসাৰ্ধ r, অৰ্ধগোলকৰ ব্যাসাৰ্ধ 2r। গোলকৰ আয়তন ÷ অৰ্ধগোলকৰ আয়তন ভগ্নাংশত লিখা।"
+       },
+       "answer": "1/4",
+       "why": {
+        "en": "$\\frac{4}{3}$ against $\\frac{2}{3} \\times 8$.",
+        "as": "$\\frac{4}{3}$ বনাম $\\frac{2}{3} \\times 8$।"
+       }
+      },
+      {
+       "q": {
+        "en": "A sphere has radius r and a hemisphere has radius 3r. Write sphere volume ÷ hemisphere volume as a fraction.",
+        "as": "গোলকৰ ব্যাসাৰ্ধ r, অৰ্ধগোলকৰ ব্যাসাৰ্ধ 3r। গোলকৰ আয়তন ÷ অৰ্ধগোলকৰ আয়তন ভগ্নাংশত লিখা।"
+       },
+       "answer": "2/27",
+       "why": {
+        "en": "$\\frac{4}{3}$ against $\\frac{2}{3} \\times 27$.",
+        "as": "$\\frac{4}{3}$ বনাম $\\frac{2}{3} \\times 27$।"
+       }
+      },
+      {
+       "q": {
+        "en": "A sphere has radius r and a hemisphere has radius 4r. Write sphere volume ÷ hemisphere volume as a fraction.",
+        "as": "গোলকৰ ব্যাসাৰ্ধ r, অৰ্ধগোলকৰ ব্যাসাৰ্ধ 4r। গোলকৰ আয়তন ÷ অৰ্ধগোলকৰ আয়তন ভগ্নাংশত লিখা।"
+       },
+       "answer": "1/32",
+       "why": {
+        "en": "$\\frac{4}{3}$ against $\\frac{2}{3} \\times 64$.",
+        "as": "$\\frac{4}{3}$ বনাম $\\frac{2}{3} \\times 64$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.x.q6",
+     "type": "tf",
+     "skill": "g-solid",
+     "s": {
+      "en": "One cubic metre is 100 cubic centimetres.",
+      "as": "এক ঘন মিটাৰ 100 ঘন ছেমি।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 100 × 100 × 100 = 1 000 000.",
+      "as": "ই 100 × 100 × 100 = 1 000 000।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-litre",
+       "why": {
+        "en": "Each of the three directions has 100 cm.",
+        "as": "তিনিওটা দিশতে 100 ছেমি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.x.q7",
+     "type": "match",
+     "skill": "g-full",
+     "q": {
+      "en": "Double the radius. Match each to how it grows",
+      "as": "ব্যাসাৰ্ধ দুগুণ কৰা। প্ৰতিটোক বৃদ্ধিৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Circumference",
+        "as": "পৰিধি"
+       },
+       {
+        "en": "× 2",
+        "as": "× 2"
+       }
+      ],
+      [
+       {
+        "en": "Sphere surface",
+        "as": "গোলকৰ পৃষ্ঠ"
+       },
+       {
+        "en": "× 4",
+        "as": "× 4"
+       }
+      ],
+      [
+       {
+        "en": "Sphere volume",
+        "as": "গোলকৰ আয়তন"
+       },
+       {
+        "en": "× 8",
+        "as": "× 8"
+       }
+      ],
+      [
+       {
+        "en": "Cylinder volume, same height",
+        "as": "চুঙাৰ আয়তন, একে উচ্চতা"
+       },
+       {
+        "en": "× 4 ",
+        "as": "× 4 "
+       }
+      ]
+     ],
+     "why": {
+      "en": "Length, area and volume scale by k, k² and k³.",
+      "as": "দৈৰ্ঘ্য, কালি, আয়তন k, k², k³ হিচাপে বাঢ়ে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Rooms, tanks and cut cubes",
+    "as": "কোঠা, টেংকী আৰু কটা ঘনক"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "The four walls of a room are $2h(l + b)$.",
+     "as": "কোঠাৰ চাৰিখন বেৰ $2h(l + b)$।"
+    },
+    {
+     "en": "A cube's four sides are $4a^2$; all six faces are $6a^2$.",
+     "as": "ঘনকৰ চাৰিটা পাৰ্শ্ব $4a^2$; ছয়টা পৃষ্ঠ $6a^2$।"
+    },
+    {
+     "en": "1 cubic metre holds 1000 litres.",
+     "as": "1 ঘন মিটাৰত 1000 লিটাৰ।"
+    },
+    {
+     "en": "Small cubes from a big one: divide the volumes, not the edges.",
+     "as": "ডাঙৰ ঘনকৰ পৰা সৰু ঘনক: কাষ নহয়, আয়তন হৰণ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m16.y.s1",
+     "type": "story",
+     "title": {
+      "en": "Water has a height",
+      "as": "পানীৰো উচ্চতা আছে"
+     },
+     "text": [
+      {
+       "en": "A tank floor is 4 by 3. Each layer of water sits on that floor.",
+       "as": "টেংকীৰ তল 4 বাই 3। পানীৰ প্ৰতিটো স্তৰ সেই তলত থাকে।"
+      }
+     ],
+     "widget": {
+      "kind": "stack",
+      "l": 4,
+      "b": 3,
+      "h": 1,
+      "max": 5
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Raise it to height 4.",
+        "as": "উচ্চতা 4 কৰা।"
+       },
+       "goal": {
+        "h": 4
+       },
+       "then": {
+        "en": "48 units on a floor of 12. Height is always volume ÷ floor.",
+        "as": "12ৰ তলত 48 একক। উচ্চতা সদায় আয়তন ÷ তল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.y.s2",
+     "type": "story",
+     "title": {
+      "en": "Litres to a height",
+      "as": "লিটাৰৰ পৰা উচ্চতা"
+     },
+     "text": [
+      {
+       "en": "Capacity often comes in litres while the tank is measured in metres.",
+       "as": "ধাৰকত্ব প্ৰায়ে লিটাৰত থাকে, টেংকীৰ জোখ মিটাৰত।"
+      },
+      {
+       "en": "Change litres to cubic metres first, then divide by the floor.",
+       "as": "প্ৰথমে লিটাৰক ঘন মিটাৰ কৰা, তাৰ পিছত তলেৰে হৰণ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "600 litres",
+        "as": "600 লিটাৰ"
+       },
+       {
+        "en": "0.6 cubic m",
+        "as": "0.6 ঘন মিটাৰ"
+       },
+       {
+        "en": "0.6 ÷ floor",
+        "as": "0.6 ÷ তল"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m16.y.q1",
+     "type": "solve",
+     "skill": "g-solid",
+     "q": {
+      "en": "How many cubes of edge 2 cm can be cut from a cube of edge 10 cm?",
+      "as": "10 ছেমি কাষৰ ঘনকৰ পৰা 2 ছেমি কাষৰ কিমান ঘনক কাটিব পাৰি?"
+     },
+     "answer": "125",
+     "why": {
+      "en": "$10^3 \\div 2^3$.",
+      "as": "$10^3 \\div 2^3$।"
+     },
+     "traps": [
+      {
+       "ans": "5",
+       "tag": "m-scale-linear",
+       "why": {
+        "en": "That fits along one edge only. Space has three directions.",
+        "as": "সেয়া এটা কাষতহে। ঠাইৰ তিনিটা দিশ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "How many cubes of edge 2 cm can be cut from a cube of edge 10 cm?",
+        "as": "10 ছেমি কাষৰ ঘনকৰ পৰা 2 ছেমি কাষৰ কিমান ঘনক কাটিব পাৰি?"
+       },
+       "answer": "125",
+       "why": {
+        "en": "$10^3 \\div 2^3$.",
+        "as": "$10^3 \\div 2^3$।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-scale-linear",
+         "why": {
+          "en": "That fits along one edge only. Space has three directions.",
+          "as": "সেয়া এটা কাষতহে। ঠাইৰ তিনিটা দিশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many cubes of edge 3 cm can be cut from a cube of edge 12 cm?",
+        "as": "12 ছেমি কাষৰ ঘনকৰ পৰা 3 ছেমি কাষৰ কিমান ঘনক কাটিব পাৰি?"
+       },
+       "answer": "64",
+       "why": {
+        "en": "$12^3 \\div 3^3$.",
+        "as": "$12^3 \\div 3^3$।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-scale-linear",
+         "why": {
+          "en": "That fits along one edge only. Space has three directions.",
+          "as": "সেয়া এটা কাষতহে। ঠাইৰ তিনিটা দিশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "How many cubes of edge 5 cm can be cut from a cube of edge 20 cm?",
+        "as": "20 ছেমি কাষৰ ঘনকৰ পৰা 5 ছেমি কাষৰ কিমান ঘনক কাটিব পাৰি?"
+       },
+       "answer": "64",
+       "why": {
+        "en": "$20^3 \\div 5^3$.",
+        "as": "$20^3 \\div 5^3$।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-scale-linear",
+         "why": {
+          "en": "That fits along one edge only. Space has three directions.",
+          "as": "সেয়া এটা কাষতহে। ঠাইৰ তিনিটা দিশ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m16.y.q2",
+     "type": "solve",
+     "skill": "g-solid",
+     "q": {
+      "en": "Find the area of the four walls of a room 6 m long, 4 m wide and 3 m high.",
+      "as": "6 মিটাৰ দীঘল, 4 মিটাৰ বহল, 3 মিটাৰ ওখ কোঠাৰ চাৰিখন বেৰৰ কালি উলিওৱা।"
+     },
+     "answer": "60",
+     "suffix": {
+      "en": "sq m",
+      "as": "বৰ্গ মিটাৰ"
+     },
+     "why": {
+      "en": "Open the walls into one strip: perimeter × height.",
+      "as": "বেৰবোৰ মেলি এটা পট্টী কৰা: পৰিসীমা × উচ্চতা।"
+     },
+     "traps": [
+      {
+       "ans": "108",
+       "tag": "m-area-volume",
+       "why": {
+        "en": "That adds the floor and ceiling too.",
+        "as": "তাত মজিয়া আৰু চিলিংও আছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the area of the four walls of a room 6 m long, 4 m wide and 3 m high.",
+        "as": "6 মিটাৰ দীঘল, 4 মিটাৰ বহল, 3 মিটাৰ ওখ কোঠাৰ চাৰিখন বেৰৰ কালি উলিওৱা।"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "sq m",
+        "as": "বৰ্গ মিটাৰ"
+       },
+       "why": {
+        "en": "Open the walls into one strip: perimeter × height.",
+        "as": "বেৰবোৰ মেলি এটা পট্টী কৰা: পৰিসীমা × উচ্চতা।"
+       },
+       "traps": [
+        {
+         "ans": "108",
+         "tag": "m-area-volume",
+         "why": {
+          "en": "That adds the floor and ceiling too.",
+          "as": "তাত মজিয়া আৰু চিলিংও আছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the area of the four walls of a room 5 m long, 4 m wide and 3 m high.",
+        "as": "5 মিটাৰ দীঘল, 4 মিটাৰ বহল, 3 মিটাৰ ওখ কোঠাৰ চাৰিখন বেৰৰ কালি উলিওৱা।"
+       },
+       "answer": "54",
+       "suffix": {
+        "en": "sq m",
+        "as": "বৰ্গ মিটাৰ"
+       },
+       "why": {
+        "en": "Open the walls into one strip: perimeter × height.",
+        "as": "বেৰবোৰ মেলি এটা পট্টী কৰা: পৰিসীমা × উচ্চতা।"
+       },
+       "traps": [
+        {
+         "ans": "94",
+         "tag": "m-area-volume",
+         "why": {
+          "en": "That adds the floor and ceiling too.",
+          "as": "তাত মজিয়া আৰু চিলিংও আছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the area of the four walls of a room 8 m long, 6 m wide and 3 m high.",
+        "as": "8 মিটাৰ দীঘল, 6 মিটাৰ বহল, 3 মিটাৰ ওখ কোঠাৰ চাৰিখন বেৰৰ কালি উলিওৱা।"
+       },
+       "answer": "84",
+       "suffix": {
+        "en": "sq m",
+        "as": "বৰ্গ মিটাৰ"
+       },
+       "why": {
+        "en": "Open the walls into one strip: perimeter × height.",
+        "as": "বেৰবোৰ মেলি এটা পট্টী কৰা: পৰিসীমা × উচ্চতা।"
+       },
+       "traps": [
+        {
+         "ans": "180",
+         "tag": "m-area-volume",
+         "why": {
+          "en": "That adds the floor and ceiling too.",
+          "as": "তাত মজিয়া আৰু চিলিংও আছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m16.y.q3",
+     "type": "solve",
+     "skill": "g-solid",
+     "q": {
+      "en": "A tank 2 m by 1 m holds 600 litres when full. Find its height in cm.",
+      "as": "2 মিটাৰ বাই 1 মিটাৰ টেংকীত ভৰিলে 600 লিটাৰ ধৰে। উচ্চতা ছেমিত উলিওৱা।"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "cm",
+      "as": "ছেমি"
+     },
+     "why": {
+      "en": "600 litres is $3/5$ cubic m; divide by the floor.",
+      "as": "600 লিটাৰ $3/5$ ঘন মিটাৰ; তলেৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "300",
+       "tag": "m-litre",
+       "why": {
+        "en": "Litres must become cubic metres first.",
+        "as": "প্ৰথমে লিটাৰক ঘন মিটাৰ কৰিব লাগিব।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A tank 2 m by 1 m holds 600 litres when full. Find its height in cm.",
+        "as": "2 মিটাৰ বাই 1 মিটাৰ টেংকীত ভৰিলে 600 লিটাৰ ধৰে। উচ্চতা ছেমিত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "600 litres is $3/5$ cubic m; divide by the floor.",
+        "as": "600 লিটাৰ $3/5$ ঘন মিটাৰ; তলেৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "300",
+         "tag": "m-litre",
+         "why": {
+          "en": "Litres must become cubic metres first.",
+          "as": "প্ৰথমে লিটাৰক ঘন মিটাৰ কৰিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A tank 3 m by 2 m holds 1800 litres when full. Find its height in cm.",
+        "as": "3 মিটাৰ বাই 2 মিটাৰ টেংকীত ভৰিলে 1800 লিটাৰ ধৰে। উচ্চতা ছেমিত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "1800 litres is $9/5$ cubic m; divide by the floor.",
+        "as": "1800 লিটাৰ $9/5$ ঘন মিটাৰ; তলেৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "300",
+         "tag": "m-litre",
+         "why": {
+          "en": "Litres must become cubic metres first.",
+          "as": "প্ৰথমে লিটাৰক ঘন মিটাৰ কৰিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A tank 4 m by 2 m holds 3200 litres when full. Find its height in cm.",
+        "as": "4 মিটাৰ বাই 2 মিটাৰ টেংকীত ভৰিলে 3200 লিটাৰ ধৰে। উচ্চতা ছেমিত উলিওৱা।"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "3200 litres is $16/5$ cubic m; divide by the floor.",
+        "as": "3200 লিটাৰ $16/5$ ঘন মিটাৰ; তলেৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "400",
+         "tag": "m-litre",
+         "why": {
+          "en": "Litres must become cubic metres first.",
+          "as": "প্ৰথমে লিটাৰক ঘন মিটাৰ কৰিব লাগিব।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m16.y.q4",
+     "type": "stepwise",
+     "skill": "g-solid",
+     "q": {
+      "en": "A cube has total surface 150 sq cm. Find its volume.",
+      "as": "ঘনকৰ মুঠ পৃষ্ঠকালি 150 বৰ্গ ছেমি। আয়তন উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "One face?",
+        "as": "এটা পৃষ্ঠ?"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "37",
+         "as": "37"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Six equal faces.",
+        "as": "ছয়টা সমান পৃষ্ঠ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Edge?",
+        "as": "কাষ?"
+       },
+       "options": [
+        {
+         "en": "10",
+         "as": "10"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "5",
+         "as": "5"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Root of one face.",
+        "as": "এটা পৃষ্ঠৰ মূল।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Volume?",
+        "as": "আয়তন?"
+       },
+       "options": [
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "150",
+         "as": "150"
+        },
+        {
+         "en": "125",
+         "as": "125"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Edge × edge × edge.",
+        "as": "কাষ × কাষ × কাষ।"
+       },
+       "tag": "m-area-volume"
+      }
+     ],
+     "why": {
+      "en": "Surface to edge to volume.",
+      "as": "পৃষ্ঠৰ পৰা কাষ, তাৰ পিছত আয়তন।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A cube has total surface 150 sq cm. Find its volume.",
+        "as": "ঘনকৰ মুঠ পৃষ্ঠকালি 150 বৰ্গ ছেমি। আয়তন উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "One face?",
+          "as": "এটা পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "37",
+           "as": "37"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Six equal faces.",
+          "as": "ছয়টা সমান পৃষ্ঠ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Edge?",
+          "as": "কাষ?"
+         },
+         "options": [
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Root of one face.",
+          "as": "এটা পৃষ্ঠৰ মূল।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Volume?",
+          "as": "আয়তন?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "150",
+           "as": "150"
+          },
+          {
+           "en": "125",
+           "as": "125"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Edge × edge × edge.",
+          "as": "কাষ × কাষ × কাষ।"
+         },
+         "tag": "m-area-volume"
+        }
+       ],
+       "why": {
+        "en": "Surface to edge to volume.",
+        "as": "পৃষ্ঠৰ পৰা কাষ, তাৰ পিছত আয়তন।"
+       }
+      },
+      {
+       "q": {
+        "en": "A cube has total surface 294 sq cm. Find its volume.",
+        "as": "ঘনকৰ মুঠ পৃষ্ঠকালি 294 বৰ্গ ছেমি। আয়তন উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "One face?",
+          "as": "এটা পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "49",
+           "as": "49"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          },
+          {
+           "en": "73",
+           "as": "73"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Six equal faces.",
+          "as": "ছয়টা সমান পৃষ্ঠ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Edge?",
+          "as": "কাষ?"
+         },
+         "options": [
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "49",
+           "as": "49"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Root of one face.",
+          "as": "এটা পৃষ্ঠৰ মূল।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Volume?",
+          "as": "আয়তন?"
+         },
+         "options": [
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "294",
+           "as": "294"
+          },
+          {
+           "en": "343",
+           "as": "343"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Edge × edge × edge.",
+          "as": "কাষ × কাষ × কাষ।"
+         },
+         "tag": "m-area-volume"
+        }
+       ],
+       "why": {
+        "en": "Surface to edge to volume.",
+        "as": "পৃষ্ঠৰ পৰা কাষ, তাৰ পিছত আয়তন।"
+       }
+      },
+      {
+       "q": {
+        "en": "A cube has total surface 54 sq cm. Find its volume.",
+        "as": "ঘনকৰ মুঠ পৃষ্ঠকালি 54 বৰ্গ ছেমি। আয়তন উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "One face?",
+          "as": "এটা পৃষ্ঠ?"
+         },
+         "options": [
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Six equal faces.",
+          "as": "ছয়টা সমান পৃষ্ঠ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Edge?",
+          "as": "কাষ?"
+         },
+         "options": [
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Root of one face.",
+          "as": "এটা পৃষ্ঠৰ মূল।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Volume?",
+          "as": "আয়তন?"
+         },
+         "options": [
+          {
+           "en": "54",
+           "as": "54"
+          },
+          {
+           "en": "27",
+           "as": "27"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Edge × edge × edge.",
+          "as": "কাষ × কাষ × কাষ।"
+         },
+         "tag": "m-area-volume"
+        }
+       ],
+       "why": {
+        "en": "Surface to edge to volume.",
+        "as": "পৃষ্ঠৰ পৰা কাষ, তাৰ পিছত আয়তন।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m16.y.q5",
+     "type": "solve",
+     "skill": "g-solid",
+     "q": {
+      "en": "Find the area of the four side faces of a cube of edge 5 cm.",
+      "as": "5 ছেমি কাষৰ ঘনকৰ চাৰিটা পাৰ্শ্বৰ কালি উলিওৱা।"
+     },
+     "answer": "100",
+     "suffix": {
+      "en": "sq cm",
+      "as": "বৰ্গ ছেমি"
+     },
+     "why": {
+      "en": "Four faces, leaving out top and bottom.",
+      "as": "ওপৰ আৰু তল বাদ দি চাৰিটা পৃষ্ঠ।"
+     },
+     "traps": [
+      {
+       "ans": "150",
+       "tag": "m-area-volume",
+       "why": {
+        "en": "That counts all six faces.",
+        "as": "তাত ছয়টা পৃষ্ঠই আছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the area of the four side faces of a cube of edge 5 cm.",
+        "as": "5 ছেমি কাষৰ ঘনকৰ চাৰিটা পাৰ্শ্বৰ কালি উলিওৱা।"
+       },
+       "answer": "100",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "Four faces, leaving out top and bottom.",
+        "as": "ওপৰ আৰু তল বাদ দি চাৰিটা পৃষ্ঠ।"
+       },
+       "traps": [
+        {
+         "ans": "150",
+         "tag": "m-area-volume",
+         "why": {
+          "en": "That counts all six faces.",
+          "as": "তাত ছয়টা পৃষ্ঠই আছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the area of the four side faces of a cube of edge 7 cm.",
+        "as": "7 ছেমি কাষৰ ঘনকৰ চাৰিটা পাৰ্শ্বৰ কালি উলিওৱা।"
+       },
+       "answer": "196",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "Four faces, leaving out top and bottom.",
+        "as": "ওপৰ আৰু তল বাদ দি চাৰিটা পৃষ্ঠ।"
+       },
+       "traps": [
+        {
+         "ans": "294",
+         "tag": "m-area-volume",
+         "why": {
+          "en": "That counts all six faces.",
+          "as": "তাত ছয়টা পৃষ্ঠই আছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the area of the four side faces of a cube of edge 3 cm.",
+        "as": "3 ছেমি কাষৰ ঘনকৰ চাৰিটা পাৰ্শ্বৰ কালি উলিওৱা।"
+       },
+       "answer": "36",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "Four faces, leaving out top and bottom.",
+        "as": "ওপৰ আৰু তল বাদ দি চাৰিটা পৃষ্ঠ।"
+       },
+       "traps": [
+        {
+         "ans": "54",
+         "tag": "m-area-volume",
+         "why": {
+          "en": "That counts all six faces.",
+          "as": "তাত ছয়টা পৃষ্ঠই আছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m16.y.q6",
+     "type": "tf",
+     "skill": "g-solid",
+     "s": {
+      "en": "A tank of 1 cubic metre holds 1000 litres.",
+      "as": "1 ঘন মিটাৰৰ টেংকীত 1000 লিটাৰ ধৰে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "One litre is 1000 cubic cm, and a cubic metre is a million of those.",
+      "as": "এক লিটাৰ 1000 ঘন ছেমি, ঘন মিটাৰ তাৰ দহ লাখ।"
+     }
+    },
+    {
+     "id": "m16.y.q7",
+     "type": "match",
+     "skill": "g-solid",
+     "q": {
+      "en": "Match each shape to its formula",
+      "as": "প্ৰতিটো আকৃতিক সূত্ৰৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Cube, all faces",
+        "as": "ঘনক, সকলো পৃষ্ঠ"
+       },
+       {
+        "en": "$6a^2$",
+        "as": "$6a^2$"
+       }
+      ],
+      [
+       {
+        "en": "Cube, four sides",
+        "as": "ঘনক, চাৰি পাৰ্শ্ব"
+       },
+       {
+        "en": "$4a^2$",
+        "as": "$4a^2$"
+       }
+      ],
+      [
+       {
+        "en": "Cuboid, four sides",
+        "as": "চতুৰ্ভুজীয় ঘন, চাৰি পাৰ্শ্ব"
+       },
+       {
+        "en": "$2h(l + b)$",
+        "as": "$2h(l + b)$"
+       }
+      ],
+      [
+       {
+        "en": "Cuboid, all faces",
+        "as": "চতুৰ্ভুজীয় ঘন, সকলো পৃষ্ঠ"
+       },
+       {
+        "en": "$2(lb + bh + hl)$",
+        "as": "$2(lb + bh + hl)$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Four sides leave out top and bottom.",
+      "as": "চাৰি পাৰ্শ্বত ওপৰ-তল নাথাকে।"
      }
     }
    ]

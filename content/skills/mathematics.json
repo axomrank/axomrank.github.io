@@ -299,6 +299,35 @@
    ]
   },
   {
+   "id": "n-facts",
+   "topic": "numbers",
+   "t": {
+    "en": "Special numbers",
+    "as": "বিশেষ সংখ্যা"
+   },
+   "pre": [
+    "n-factor"
+   ],
+   "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q3"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q4"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q5"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q6"
+    }
+   ]
+  },
+  {
    "id": "l-hcf",
    "topic": "lcm",
    "t": {
@@ -410,6 +439,22 @@
     },
     {
      "l": "math-02-lcm-hcf",
+     "id": "m2.x.q3"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.x.q4"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.x.q5"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.x.q7"
+    },
+    {
+     "l": "math-02-lcm-hcf",
      "id": "m2.t.q3"
     },
     {
@@ -419,6 +464,32 @@
     {
      "l": "math-02-lcm-hcf",
      "id": "m2.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "l-frac",
+   "topic": "lcm",
+   "t": {
+    "en": "LCM of fractions",
+    "as": "ভগ্নাংশৰ ল.সা.গু."
+   },
+   "pre": [
+    "l-hcf",
+    "l-lcm"
+   ],
+   "steps": [
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.x.q1"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.x.q2"
+    },
+    {
+     "l": "math-02-lcm-hcf",
+     "id": "m2.x.q6"
     }
    ]
   },
@@ -539,6 +610,10 @@
    "steps": [
     {
      "l": "math-03-fractions",
+     "id": "m3.u2.q6"
+    },
+    {
+     "l": "math-03-fractions",
      "id": "m3.u3.q1"
     },
     {
@@ -552,6 +627,10 @@
     {
      "l": "math-03-fractions",
      "id": "m3.u3.q6"
+    },
+    {
+     "l": "math-03-fractions",
+     "id": "m3.u3.q7"
     },
     {
      "l": "math-03-fractions",
@@ -571,6 +650,18 @@
     "n-decimal"
    ],
    "steps": [
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q1"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q2"
+    },
+    {
+     "l": "math-01-numbers",
+     "id": "m1.x.q7"
+    },
     {
      "l": "math-03-fractions",
      "id": "m3.u3.q3"
@@ -619,6 +710,10 @@
     {
      "l": "math-04-simplification",
      "id": "m4.u1.q6"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.u1.q7"
     },
     {
      "l": "math-04-simplification",
@@ -727,6 +822,81 @@
     {
      "l": "math-04-simplification",
      "id": "m4.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "s-cube",
+   "topic": "simplify",
+   "t": {
+    "en": "Cubes and cube roots",
+    "as": "ঘন আৰু ঘনমূল"
+   },
+   "pre": [
+    "s-perfect"
+   ],
+   "steps": [
+    {
+     "l": "math-04-simplification",
+     "id": "m4.c.q1"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.c.q2"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.c.q3"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.c.q4"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.c.q5"
+    }
+   ]
+  },
+  {
+   "id": "s-surd",
+   "topic": "simplify",
+   "t": {
+    "en": "Surds and big identities",
+    "as": "কৰণী আৰু ডাঙৰ অভেদ"
+   },
+   "pre": [
+    "s-ident",
+    "s-cube"
+   ],
+   "steps": [
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q1"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q2"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q3"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q4"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q5"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q6"
+    },
+    {
+     "l": "math-04-simplification",
+     "id": "m4.s.q7"
     }
    ]
   },
@@ -880,6 +1050,26 @@
     },
     {
      "l": "math-05-percentage",
+     "id": "m5.x.q1"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.x.q2"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.x.q3"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.x.q4"
+    },
+    {
+     "l": "math-05-percentage",
+     "id": "m5.x.q5"
+    },
+    {
+     "l": "math-05-percentage",
      "id": "m5.t.q3"
     }
    ]
@@ -1005,7 +1195,48 @@
     },
     {
      "l": "math-06-ratio",
+     "id": "m6.x.q5"
+    },
+    {
+     "l": "math-06-ratio",
      "id": "m6.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-value",
+   "topic": "ratio",
+   "t": {
+    "en": "Values from ratios",
+    "as": "অনুপাতৰ পৰা মান"
+   },
+   "pre": [
+    "r-combine"
+   ],
+   "steps": [
+    {
+     "l": "math-06-ratio",
+     "id": "m6.x.q1"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.x.q2"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.x.q3"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.x.q4"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.x.q6"
+    },
+    {
+     "l": "math-06-ratio",
+     "id": "m6.x.q7"
     }
    ]
   },
@@ -1039,6 +1270,18 @@
     {
      "l": "math-07-average",
      "id": "m7.u1.q5"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q6"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u1.q7"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u3.q7"
     },
     {
      "l": "math-07-average",
@@ -1084,6 +1327,10 @@
     {
      "l": "math-07-average",
      "id": "m7.u2.q6"
+    },
+    {
+     "l": "math-07-average",
+     "id": "m7.u2.q7"
     },
     {
      "l": "math-07-average",
@@ -1220,6 +1467,14 @@
     },
     {
      "l": "math-08-profit",
+     "id": "m8.x.q3"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.x.q5"
+    },
+    {
+     "l": "math-08-profit",
      "id": "m8.t.q2"
     },
     {
@@ -1266,6 +1521,26 @@
     },
     {
      "l": "math-08-profit",
+     "id": "m8.x.q1"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.x.q2"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.x.q4"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.x.q6"
+    },
+    {
+     "l": "math-08-profit",
+     "id": "m8.x.q7"
+    },
+    {
+     "l": "math-08-profit",
      "id": "m8.t.q4"
     }
    ]
@@ -1300,6 +1575,14 @@
     {
      "l": "math-09-interest",
      "id": "m9.u1.q5"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.x.q4"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.x.q6"
     },
     {
      "l": "math-09-interest",
@@ -1341,6 +1624,14 @@
     {
      "l": "math-09-interest",
      "id": "m9.u2.q6"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.u2.q7"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.x.q5"
     },
     {
      "l": "math-09-interest",
@@ -1407,7 +1698,36 @@
     },
     {
      "l": "math-09-interest",
+     "id": "m9.x.q3"
+    },
+    {
+     "l": "math-09-interest",
      "id": "m9.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "i-half",
+   "topic": "interest",
+   "t": {
+    "en": "Half-yearly and changing rates",
+    "as": "ছমহীয়া আৰু সলনি হোৱা হাৰ"
+   },
+   "pre": [
+    "i-ci"
+   ],
+   "steps": [
+    {
+     "l": "math-09-interest",
+     "id": "m9.x.q1"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.x.q2"
+    },
+    {
+     "l": "math-09-interest",
+     "id": "m9.x.q7"
     }
    ]
   },
@@ -1445,7 +1765,19 @@
     },
     {
      "l": "math-10-work",
+     "id": "m10.u1.q6"
+    },
+    {
+     "l": "math-10-work",
      "id": "m10.u2.q6"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q3"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q4"
     },
     {
      "l": "math-10-work",
@@ -1487,6 +1819,10 @@
     {
      "l": "math-10-work",
      "id": "m10.u2.q5"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q5"
     },
     {
      "l": "math-10-work",
@@ -1532,6 +1868,36 @@
     {
      "l": "math-10-work",
      "id": "m10.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "w-share",
+   "topic": "work",
+   "t": {
+    "en": "Sharing work and pay",
+    "as": "কাম আৰু মজুৰি ভাগ"
+   },
+   "pre": [
+    "w-rate",
+    "w-men"
+   ],
+   "steps": [
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q1"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q2"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q6"
+    },
+    {
+     "l": "math-10-work",
+     "id": "m10.x.q7"
     }
    ]
   },
@@ -1631,6 +1997,10 @@
    "steps": [
     {
      "l": "math-11-speed",
+     "id": "m11.u1.q6"
+    },
+    {
+     "l": "math-11-speed",
      "id": "m11.u3.q1"
     },
     {
@@ -1652,6 +2022,10 @@
     {
      "l": "math-11-speed",
      "id": "m11.u3.q6"
+    },
+    {
+     "l": "math-11-speed",
+     "id": "m11.u3.q7"
     },
     {
      "l": "math-11-speed",
@@ -1785,6 +2159,26 @@
     },
     {
      "l": "math-13-sequences",
+     "id": "m13.u1.q7"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.u2.q7"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q1"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q5"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q6"
+    },
+    {
+     "l": "math-13-sequences",
      "id": "m13.t.q1"
     },
     {
@@ -1827,6 +2221,22 @@
     {
      "l": "math-13-sequences",
      "id": "m13.u2.q6"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q2"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q3"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q4"
+    },
+    {
+     "l": "math-13-sequences",
+     "id": "m13.x.q7"
     },
     {
      "l": "math-13-sequences",
@@ -1916,6 +2326,10 @@
     },
     {
      "l": "math-14-trig",
+     "id": "m14.x.q6"
+    },
+    {
+     "l": "math-14-trig",
      "id": "m14.t.q1"
     },
     {
@@ -1935,6 +2349,10 @@
     "tr-ratio"
    ],
    "steps": [
+    {
+     "l": "math-14-trig",
+     "id": "m14.u1.q7"
+    },
     {
      "l": "math-14-trig",
      "id": "m14.u2.q1"
@@ -1958,6 +2376,10 @@
     {
      "l": "math-14-trig",
      "id": "m14.u2.q6"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.u2.q7"
     },
     {
      "l": "math-14-trig",
@@ -2006,7 +2428,48 @@
     },
     {
      "l": "math-14-trig",
+     "id": "m14.u3.q7"
+    },
+    {
+     "l": "math-14-trig",
      "id": "m14.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "tr-ident",
+   "topic": "trig",
+   "t": {
+    "en": "Identities",
+    "as": "অভেদ"
+   },
+   "pre": [
+    "tr-values"
+   ],
+   "steps": [
+    {
+     "l": "math-14-trig",
+     "id": "m14.x.q1"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.x.q2"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.x.q3"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.x.q4"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.x.q5"
+    },
+    {
+     "l": "math-14-trig",
+     "id": "m14.x.q7"
     }
    ]
   },
@@ -2049,6 +2512,34 @@
     {
      "l": "math-15-plane",
      "id": "m15.u1.q7"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.z.q7"
     },
     {
      "l": "math-15-plane",
@@ -2111,6 +2602,88 @@
     {
      "l": "math-15-plane",
      "id": "m15.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "g-types",
+   "topic": "geometry",
+   "t": {
+    "en": "Triangle kinds and angles",
+    "as": "ত্ৰিভুজৰ প্ৰকাৰ আৰু কোণ"
+   },
+   "pre": [
+    "g-tri"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.x.q7"
+    }
+   ]
+  },
+  {
+   "id": "g-similar",
+   "topic": "geometry",
+   "t": {
+    "en": "Similar triangles",
+    "as": "সদৃশ ত্ৰিভুজ"
+   },
+   "pre": [
+    "g-tri"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.y.q7"
     }
    ]
   },
@@ -2197,6 +2770,48 @@
    ]
   },
   {
+   "id": "g-parts",
+   "topic": "geometry",
+   "t": {
+    "en": "Chords, tangents, sectors",
+    "as": "জ্যা, স্পৰ্শক, বৃত্তকলা"
+   },
+   "pre": [
+    "g-circle",
+    "g-tri"
+   ],
+   "steps": [
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q1"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q2"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q3"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q4"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q5"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q6"
+    },
+    {
+     "l": "math-15-plane",
+     "id": "m15.w.q7"
+    }
+   ]
+  },
+  {
    "id": "g-solid",
    "topic": "solids",
    "t": {
@@ -2230,6 +2845,38 @@
     {
      "l": "math-16-solids",
      "id": "m16.u1.q6"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q6"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q1"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q2"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q3"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q4"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q5"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q6"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.y.q7"
     },
     {
      "l": "math-16-solids",
@@ -2329,6 +2976,43 @@
     {
      "l": "math-16-solids",
      "id": "m16.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "g-full",
+   "topic": "solids",
+   "t": {
+    "en": "Slant, full surface, hemispheres",
+    "as": "হেলনীয়া, সম্পূৰ্ণ পৃষ্ঠ, অৰ্ধগোলক"
+   },
+   "pre": [
+    "g-sphere"
+   ],
+   "steps": [
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q1"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q2"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q3"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q4"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q5"
+    },
+    {
+     "l": "math-16-solids",
+     "id": "m16.x.q7"
     }
    ]
   }
@@ -2794,6 +3478,97 @@
    "t": {
     "en": "Confusing surface area and volume",
     "as": "পৃষ্ঠকালি আৰু আয়তন সলনি কৰা"
+   }
+  },
+  "m-recur-ten": {
+   "skill": "f-dec",
+   "t": {
+    "en": "Putting repeating digits over 10",
+    "as": "ঘূৰা অংক 10ৰ ওপৰত ৰখা"
+   }
+  },
+  "m-coprime": {
+   "skill": "n-facts",
+   "t": {
+    "en": "Thinking co-prime means prime",
+    "as": "সহমৌলিক মানে মৌলিক বুলি ধৰা"
+   }
+  },
+  "m-frac-lcm": {
+   "skill": "l-frac",
+   "t": {
+    "en": "Taking LCM of tops and LCM of bottoms",
+    "as": "লব আৰু হৰ দুয়োটাৰে ল.সা.গু. লোৱা"
+   }
+  },
+  "m-cube-three": {
+   "skill": "s-cube",
+   "t": {
+    "en": "Dividing by 3 for a cube root",
+    "as": "ঘনমূলৰ বাবে 3ৰে হৰণ কৰা"
+   }
+  },
+  "m-surd-square": {
+   "skill": "s-surd",
+   "t": {
+    "en": "Squaring only part of a root term",
+    "as": "মূলৰ পদৰ এটা অংশহে বৰ্গ কৰা"
+   }
+  },
+  "m-halfyear": {
+   "skill": "i-half",
+   "t": {
+    "en": "Ignoring half-yearly periods",
+    "as": "ছমহীয়া সময়কাল নোচোৱা"
+   }
+  },
+  "m-month-years": {
+   "skill": "i-si",
+   "t": {
+    "en": "Treating months as years",
+    "as": "মাহক বছৰ বুলি ধৰা"
+   }
+  },
+  "m-wage-days": {
+   "skill": "w-share",
+   "t": {
+    "en": "Sharing pay by days, not rates",
+    "as": "হাৰৰ ঠাইত দিনেৰে মজুৰি ভাগ কৰা"
+   }
+  },
+  "m-angle-double": {
+   "skill": "tr-values",
+   "t": {
+    "en": "Stopping at 2A instead of A",
+    "as": "Aৰ ঠাইত 2Aতে ৰখা"
+   }
+  },
+  "m-outer-next": {
+   "skill": "g-types",
+   "t": {
+    "en": "Using the neighbour of an outer angle",
+    "as": "বাহিৰৰ কোণৰ কাষৰ কোণ লোৱা"
+   }
+  },
+  "m-chord-half": {
+   "skill": "g-parts",
+   "t": {
+    "en": "Giving half the chord",
+    "as": "আধা জ্যা দিয়া"
+   }
+  },
+  "m-tangent-right": {
+   "skill": "g-parts",
+   "t": {
+    "en": "Forgetting the right angle at a tangent",
+    "as": "স্পৰ্শকৰ সমকোণ পাহৰা"
+   }
+  },
+  "m-cone-height": {
+   "skill": "g-full",
+   "t": {
+    "en": "Using height instead of slant",
+    "as": "হেলনীয়াৰ ঠাইত উচ্চতা লোৱা"
    }
   }
  },

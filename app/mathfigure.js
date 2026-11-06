@@ -1,7 +1,8 @@
 /* =========================================================
    AxomRank maths stage, part seven: figures.
    scaleup: area and volume scale, shear: triangle area, sticks: triangle rule, kite: rhombus,
-   roll: circumference, sectors: circle area, stack: volume, net: surface, pour: cone.
+   roll: circumference, sectors: circle area, exterior: outer angle, tangent: tangent and radius,
+   fence: fixed perimeter, stack: volume, net: surface, pour: cone.
    Same contract as app/mathstage.js. The reasons are in docs/MATHEMATICS-VISUALS.md.
    ========================================================= */
 (() => {
@@ -97,6 +98,43 @@ W.sectors = (el, w, on) => {
     $("#sg", el).innerHTML = o;
     $(".fg-read", el).innerHTML = `${T(B(`${n} slices`, `${n}টা টুকুৰা`))}: ${n >= 24 ? `<b class="yes">$\\pi r \\times r = \\pi r^2$</b>` : T(B("cut finer", "আৰু সৰু কৰা"))}`;
   }, on, "n");
+};
+
+/* ---------- exterior angle: the outside angle equals the two far inside angles ---------- */
+W.exterior = (el, w, on) => {
+  let a = w.a ?? 50, b = w.b ?? 60, touched = false, locked = false;
+  el.innerHTML = `<svg class="fgv" viewBox="0 0 340 170" role="img" aria-label="A triangle with one side extended"><g id="sg"></g></svg><label class="sl"><span>A <b id="la"></b></span><input class="wx-range" id="ia" type="range" min="10" max="120" step="5" value="${a}"></label><label class="sl"><span>B <b id="lb"></b></span><input class="wx-range" id="ib" type="range" min="10" max="120" step="5" value="${b}"></label><div class="wx-read fg-read"></div>`;
+  const RAD = Math.PI / 180;
+  const draw = () => {
+    const c = 180 - a - b, L = 190, x0 = 30, y0 = 146, ok = c > 0, Bx = x0 + L, h = ok ? (L * Math.sin(a * RAD) * Math.sin(b * RAD)) / Math.sin((a + b) * RAD) : 0, Ax = ok ? x0 + h / Math.tan(a * RAD) : x0, top = Math.max(y0 - h, 8), kind = !ok ? null : Math.max(a, b, c) > 90 ? B("Obtuse", "স্থূলকোণী") : Math.max(a, b, c) === 90 ? B("Right", "সমকোণী") : B("Acute", "সূক্ষ্মকোণী"), sides = !ok ? null : a === b && b === c ? B("equilateral", "সমবাহু") : a === b || b === c || a === c ? B("isosceles", "সমদ্বিবাহু") : B("scalene", "বিষমবাহু");
+    $("#sg", el).innerHTML = ok ? `<path d="M${x0} ${y0}L${Bx} ${y0}L${Ax} ${top}Z" fill="#E2ECFA" stroke="${BLUE}" stroke-width="3"/><path d="M${Bx} ${y0}H334" stroke="${GOLD}" stroke-width="4"/><text x="${x0 + 26}" y="${y0 - 6}" font-size="13" font-weight="900" fill="${BLUE}">${a}°</text><text x="${Bx - 44}" y="${y0 - 6}" font-size="13" font-weight="900" fill="${BLUE}">${b}°</text><text x="${Ax - 12}" y="${top + 26}" font-size="13" font-weight="900" fill="${INK}">${c}°</text><text x="${Bx + 26}" y="${y0 - 8}" font-size="15" font-weight="900" fill="${GOLD}">${a + b}°</text>` : `<text x="170" y="90" text-anchor="middle" font-size="15" font-weight="900" fill="${RED}">${a + b}° &gt; 180°</text>`;
+    $("#la", el).textContent = `${a}°`; $("#lb", el).textContent = `${b}°`;
+    $(".fg-read", el).innerHTML = ok ? `$${a} + ${b} = ${a + b}^\\circ$ ${T(B("outside", "বাহিৰত"))} <b class="yes">${T(kind)}, ${T(sides)}</b>` : `<b class="no">${T(B("No triangle", "ত্ৰিভুজ নহয়"))}</b>`;
+  };
+  const change = () => { if (locked) return; a = +$("#ia", el).value; b = +$("#ib", el).value; touched = true; SFX.tap(); draw(); on(); };
+  $("#ia", el).addEventListener("input", change); $("#ib", el).addEventListener("input", change); draw();
+  const set = (x, y) => { a = x; b = y; $("#ia", el).value = a; $("#ib", el).value = b; touched = true; draw(); on(); };
+  return { value: () => 180 - a - b, touched: () => touched, freeze() { locked = true; $("#ia", el).disabled = $("#ib", el).disabled = true; }, show(v) { const sum = 180 - v, x = Math.round(sum / 10) * 5; set(x, sum - x); }, state: () => ({ a, b }), demo(g) { set(g.a ?? a, g.b ?? b); } };
+};
+
+/* ---------- tangent: it meets the radius at a right angle, so Pythagoras applies ---------- */
+W.tangent = (el, w, on) => {
+  const r = w.r, top = w.max || 24;
+  return slider(el, `<svg class="fgv" viewBox="0 0 340 190" role="img" aria-label="A circle with a tangent"><g id="sg"></g></svg><input class="wx-range" type="range" min="1" max="${top}" value="${w.pq ?? 3}" aria-label="Tangent length"><div class="wx-read fg-read"></div>`, w.pq ?? 3, (pq) => {
+    const k = Math.min(70 / r, 240 / top), R = r * k, Ox = 84, Oy = 100, Px = Ox, Py = Oy - R, Qx = Px + pq * k, oq = Math.sqrt(r * r + pq * pq), whole = Number.isInteger(+oq.toFixed(6));
+    $("#sg", el).innerHTML = `<circle cx="${Ox}" cy="${Oy}" r="${R}" fill="#E2ECFA" stroke="${BLUE}" stroke-width="3"/><path d="M4 ${Py}H336" stroke="${GOLD}" stroke-width="3"/><path d="M${Ox} ${Oy}V${Py}" stroke="${INK}" stroke-width="3"/><path d="M${Ox} ${Oy}L${Qx} ${Py}" stroke="${RED}" stroke-width="3"/><path d="M${Px + 12} ${Py}v12h-12" fill="none" stroke="${INK}" stroke-width="1.5"/><circle cx="${Qx}" cy="${Py}" r="6" fill="${RED}"/><text x="${Ox - 10}" y="${(Oy + Py) / 2 + 4}" text-anchor="end" font-size="13" font-weight="900" fill="${INK}">${r}</text><text x="${(Px + Qx) / 2}" y="${Py - 7}" text-anchor="middle" font-size="13" font-weight="900" fill="${GOLD}">${pq}</text>`;
+    $(".fg-read", el).innerHTML = `$${r}^2 + ${pq}^2 = ${r * r + pq * pq}$ <b class="${whole ? "yes" : ""}">$OQ = ${whole ? +oq.toFixed(6) : `\\sqrt{${r * r + pq * pq}}`}$</b>`;
+  }, on, "pq");
+};
+
+/* ---------- fence: one perimeter, many rectangles; the square holds the most ---------- */
+W.fence = (el, w, on) => {
+  const half = w.p / 2, lo = Math.ceil(w.p / 4), hi = half - 1;
+  return slider(el, `<svg class="fgv" viewBox="0 0 340 170" role="img" aria-label="A rectangle with a fixed perimeter"><g id="sg"></g></svg><input class="wx-range" type="range" min="${lo}" max="${hi}" value="${w.l ?? lo}" aria-label="Length"><div class="wx-read fg-read"></div>`, w.l ?? lo, (l) => {
+    const b = half - l, k = Math.min(300 / hi, 130 / lo), x0 = 170 - (l * k) / 2, y0 = 80 - (b * k) / 2, d2 = l * l + b * b, d = Math.sqrt(d2), whole = Number.isInteger(+d.toFixed(6));
+    $("#sg", el).innerHTML = `<rect x="${x0}" y="${y0}" width="${l * k}" height="${b * k}" fill="#E2ECFA" stroke="${BLUE}" stroke-width="3"/><path d="M${x0} ${y0 + b * k}L${x0 + l * k} ${y0}" stroke="${GOLD}" stroke-width="2" stroke-dasharray="6 4"/><text x="170" y="${y0 + b * k + 18}" text-anchor="middle" font-size="14" font-weight="900" fill="${INK}">${l}</text><text x="${x0 - 8}" y="${y0 + (b * k) / 2 + 5}" text-anchor="end" font-size="14" font-weight="900" fill="${INK}">${b}</text>`;
+    $(".fg-read", el).innerHTML = `$${l} \\times ${b} = ${l * b}$ <b class="yes">${T(B("diagonal", "কৰ্ণ"))} $${whole ? +d.toFixed(6) : `\\sqrt{${d2}}`}$</b>`;
+  }, on, "l");
 };
 
 /* ---------- stack: volume is base area × the number of layers ---------- */

@@ -9,10 +9,10 @@ rules in [LESSON-DESIGN.md](LESSON-DESIGN.md) still apply.
 | | Measured |
 |---|---|
 | Lessons published | All 16 topics |
-| Exercises linked to a skill | 361, in 1057 versions counting number variants |
-| Skills in the graph | 59, covering all 16 topics |
-| Mistake patterns | 66 |
-| Units, counting tests | 65 |
+| Exercises linked to a skill | 492, in 1318 versions counting number variants |
+| Skills in the graph | 71, covering all 16 topics |
+| Mistake patterns | 79 |
+| Units, counting tests | 82 |
 | Placement questions | 28, covering every topic |
 
 Assamese text is pending independent editorial review (`review_notes` in each lesson).
@@ -26,8 +26,8 @@ test-outs, placement, drills walking back to a prerequisite, daily review on int
 steps, and the offline app shell.
 
 Not yet checked: pinch zoom on a real phone, real learners, and Assamese by a fluent reader.
-The slides also list Algebra, Co-ordinate Geometry, Data Interpretation and cube roots, which
-have no decks and are not in this course.
+The slides also list Algebra, Co-ordinate Geometry and Data Interpretation, which have no
+decks and are not in this course. Cube roots had no deck either, but are taught in lesson 4.
 
 ## Syllabus source
 
@@ -35,7 +35,10 @@ Topic order comes from the 51 lecture decks the course owner supplied (Kamaleswa
 KSK Educare, for ADRE Grade III and IV and DME). They are third-party teaching material:
 **use them for the syllabus and question patterns only**. Do not copy their wording or
 numbers, and do not label a question with an exam unless its provenance is verified.
-Every question in this course is original. Many Assamese slides use a legacy font and
+Every question in this course is meant to be original. A comparison of deck questions with
+our versions found about 40 that had kept a deck's numbers, and those were replaced. It
+catches only text the PDFs expose, so numbers in image-only slides were compared by eye.
+Small common values such as 10% on ₹1000 can still coincide. Many Assamese slides use a legacy font and
 do not extract cleanly; read the page image if a passage matters.
 
 | Topic | Decks | Questions in decks | Tagged ADRE 2022 |

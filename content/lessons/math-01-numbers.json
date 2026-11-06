@@ -2335,6 +2335,800 @@
      }
     }
    ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "More number facts",
+    "as": "সংখ্যাৰ আৰু তথ্য"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Co-prime numbers share no factor but 1, though neither need be prime.",
+     "as": "সহমৌলিক সংখ্যাৰ উমৈহতীয়া গুণনীয়ক কেৱল 1, যদিও সিহঁত মৌলিক নহ'বও পাৰে।"
+    },
+    {
+     "en": "Twin primes differ by 2: 11 and 13.",
+     "as": "যঁজা মৌলিকৰ পাৰ্থক্য 2: 11 আৰু 13।"
+    },
+    {
+     "en": "A perfect number equals the sum of its smaller factors: 6 = 1 + 2 + 3.",
+     "as": "নিখুঁত সংখ্যা ইয়াৰ সৰু গুণনীয়কৰ যোগফলৰ সমান: 6 = 1 + 2 + 3।"
+    },
+    {
+     "en": "Mixed recurring: all digits minus the plain ones, over 9s then 0s.",
+     "as": "মিশ্ৰ পৌনঃপুনিক: সকলো অংক বিয়োগ সাধাৰণ অংক, তলত 9 তাৰ পিছত 0।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m1.x.s1",
+     "type": "story",
+     "title": {
+      "en": "A number made of its factors",
+      "as": "গুণনীয়কৰ যোগফলেই সংখ্যা"
+     },
+     "text": [
+      {
+       "en": "Find every rectangle that 6 dots can make. Each one gives factors.",
+       "as": "6টা বিন্দুৱে বনাব পৰা সকলো আয়ত বিচাৰা। প্ৰতিটোৱে গুণনীয়ক দিয়ে।"
+      }
+     ],
+     "widget": {
+      "kind": "array",
+      "n": 6,
+      "max": 6,
+      "c": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Find all the factors of 6.",
+        "as": "6ৰ সকলো গুণনীয়ক বিচাৰা।"
+       },
+       "goal": {
+        "found": {
+         "gt": 3
+        }
+       },
+       "then": {
+        "en": "1, 2, 3 and 6. Leave out 6 itself and 1 + 2 + 3 = 6, so 6 is a perfect number. 28 is the next.",
+        "as": "1, 2, 3 আৰু 6। 6 বাদ দিলে 1 + 2 + 3 = 6, সেয়ে 6 নিখুঁত সংখ্যা। পিছৰটো 28।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.x.s2",
+     "type": "story",
+     "title": {
+      "en": "When only some digits repeat",
+      "as": "কিছু অংকহে ঘূৰিলে"
+     },
+     "text": [
+      {
+       "en": "In $0.4\\overline{2}$, the 4 stays once and the 2 repeats for ever.",
+       "as": "$0.4\\overline{2}$ত 4 এবাৰ থাকে, 2 সদায় ঘূৰে।"
+      },
+      {
+       "en": "Take all the digits, subtract the plain ones, and write 9 for each repeating digit and 0 for each plain one.",
+       "as": "সকলো অংকৰ পৰা সাধাৰণ অংক বিয়োগ কৰি ঘূৰা অংকৰ বাবে 9, সাধাৰণ অংকৰ বাবে 0 লিখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "42 − 4 = 38",
+        "as": "42 − 4 = 38"
+       },
+       {
+        "en": "One repeating, one plain: 90",
+        "as": "এটা ঘূৰা, এটা সাধাৰণ: 90"
+       },
+       {
+        "en": "$\\frac{38}{90} = \\frac{19}{45}$",
+        "as": "$\\frac{38}{90} = \\frac{19}{45}$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m1.x.q1",
+     "type": "solve",
+     "skill": "f-dec",
+     "hints": [
+      {
+       "en": "All digits minus the plain digit, over 9s then 0.",
+       "as": "সকলো অংক বিয়োগ সাধাৰণ অংক, তলত 9 তাৰ পিছত 0।"
+      }
+     ],
+     "q": {
+      "en": "Write $0.4\\overline{2}$ as a fraction.",
+      "as": "$0.4\\overline{2}$ক ভগ্নাংশ হিচাপে লিখা।"
+     },
+     "answer": "19/45",
+     "why": {
+      "en": "$\\frac{38}{90}$, then simplify.",
+      "as": "$\\frac{38}{90}$, তাৰ পিছত সৰল কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Write $0.4\\overline{2}$ as a fraction.",
+        "as": "$0.4\\overline{2}$ক ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "19/45",
+       "why": {
+        "en": "$\\frac{38}{90}$, then simplify.",
+        "as": "$\\frac{38}{90}$, তাৰ পিছত সৰল কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write $0.1\\overline{6}$ as a fraction.",
+        "as": "$0.1\\overline{6}$ক ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "1/6",
+       "why": {
+        "en": "$\\frac{15}{90}$, then simplify.",
+        "as": "$\\frac{15}{90}$, তাৰ পিছত সৰল কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write $0.8\\overline{3}$ as a fraction.",
+        "as": "$0.8\\overline{3}$ক ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "5/6",
+       "why": {
+        "en": "$\\frac{75}{90}$, then simplify.",
+        "as": "$\\frac{75}{90}$, তাৰ পিছত সৰল কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write $0.5\\overline{27}$ as a fraction.",
+        "as": "$0.5\\overline{27}$ক ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "29/55",
+       "why": {
+        "en": "$\\frac{522}{990}$, then simplify.",
+        "as": "$\\frac{522}{990}$, তাৰ পিছত সৰল কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.x.q2",
+     "type": "solve",
+     "skill": "f-dec",
+     "q": {
+      "en": "Add $0.\\overline{2} + 0.\\overline{3}$ as a fraction.",
+      "as": "$0.\\overline{2} + 0.\\overline{3}$ ভগ্নাংশত যোগ কৰা।"
+     },
+     "answer": "5/9",
+     "why": {
+      "en": "$\\frac{2}{9} + \\frac{3}{9}$.",
+      "as": "$\\frac{2}{9} + \\frac{3}{9}$।"
+     },
+     "traps": [
+      {
+       "ans": "1/2",
+       "tag": "m-recur-ten",
+       "why": {
+        "en": "Repeating digits go over 9, not 10.",
+        "as": "ঘূৰা অংক 9ৰ ওপৰত, 10ৰ ওপৰত নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Add $0.\\overline{2} + 0.\\overline{3}$ as a fraction.",
+        "as": "$0.\\overline{2} + 0.\\overline{3}$ ভগ্নাংশত যোগ কৰা।"
+       },
+       "answer": "5/9",
+       "why": {
+        "en": "$\\frac{2}{9} + \\frac{3}{9}$.",
+        "as": "$\\frac{2}{9} + \\frac{3}{9}$।"
+       },
+       "traps": [
+        {
+         "ans": "1/2",
+         "tag": "m-recur-ten",
+         "why": {
+          "en": "Repeating digits go over 9, not 10.",
+          "as": "ঘূৰা অংক 9ৰ ওপৰত, 10ৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Add $0.\\overline{4} + 0.\\overline{2}$ as a fraction.",
+        "as": "$0.\\overline{4} + 0.\\overline{2}$ ভগ্নাংশত যোগ কৰা।"
+       },
+       "answer": "2/3",
+       "why": {
+        "en": "$\\frac{4}{9} + \\frac{2}{9}$.",
+        "as": "$\\frac{4}{9} + \\frac{2}{9}$।"
+       },
+       "traps": [
+        {
+         "ans": "3/5",
+         "tag": "m-recur-ten",
+         "why": {
+          "en": "Repeating digits go over 9, not 10.",
+          "as": "ঘূৰা অংক 9ৰ ওপৰত, 10ৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Add $0.\\overline{1} + 0.\\overline{6}$ as a fraction.",
+        "as": "$0.\\overline{1} + 0.\\overline{6}$ ভগ্নাংশত যোগ কৰা।"
+       },
+       "answer": "7/9",
+       "why": {
+        "en": "$\\frac{1}{9} + \\frac{6}{9}$.",
+        "as": "$\\frac{1}{9} + \\frac{6}{9}$।"
+       },
+       "traps": [
+        {
+         "ans": "7/10",
+         "tag": "m-recur-ten",
+         "why": {
+          "en": "Repeating digits go over 9, not 10.",
+          "as": "ঘূৰা অংক 9ৰ ওপৰত, 10ৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Add $0.\\overline{5} + 0.\\overline{3}$ as a fraction.",
+        "as": "$0.\\overline{5} + 0.\\overline{3}$ ভগ্নাংশত যোগ কৰা।"
+       },
+       "answer": "8/9",
+       "why": {
+        "en": "$\\frac{5}{9} + \\frac{3}{9}$.",
+        "as": "$\\frac{5}{9} + \\frac{3}{9}$।"
+       },
+       "traps": [
+        {
+         "ans": "4/5",
+         "tag": "m-recur-ten",
+         "why": {
+          "en": "Repeating digits go over 9, not 10.",
+          "as": "ঘূৰা অংক 9ৰ ওপৰত, 10ৰ ওপৰত নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m1.x.q3",
+     "type": "tf",
+     "skill": "n-facts",
+     "s": {
+      "en": "Co-prime numbers must both be prime.",
+      "as": "সহমৌলিক সংখ্যা দুয়োটা মৌলিক হ'বই লাগিব।"
+     },
+     "answer": false,
+     "why": {
+      "en": "8 and 15 are co-prime, and neither is prime. They only need to share no factor.",
+      "as": "8 আৰু 15 সহমৌলিক, এটাও মৌলিক নহয়। উমৈহতীয়া গুণনীয়ক নাথাকিলেই হ'ল।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-coprime",
+       "why": {
+        "en": "Co-prime describes a pair, not each number alone.",
+        "as": "সহমৌলিক যোৰাৰ কথা, প্ৰতিটো সংখ্যাৰ নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.x.q4",
+     "type": "stepwise",
+     "skill": "n-facts",
+     "q": {
+      "en": "Is 28 a perfect number?",
+      "as": "28 নিখুঁত সংখ্যা নেকি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Its factors, leaving out itself?",
+        "as": "নিজক বাদ দি গুণনীয়ক?"
+       },
+       "options": [
+        {
+         "en": "1, 28",
+         "as": "1, 28"
+        },
+        {
+         "en": "1, 2 only",
+         "as": "কেৱল 1, 2"
+        },
+        {
+         "en": "1, 2, 4, 7, 14",
+         "as": "1, 2, 4, 7, 14"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Find every rectangle.",
+        "as": "সকলো আয়ত বিচাৰা।"
+       },
+       "skill": "n-factor"
+      },
+      {
+       "ask": {
+        "en": "Their sum?",
+        "as": "যোগফল?"
+       },
+       "options": [
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        },
+        {
+         "en": "28",
+         "as": "28"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Add them.",
+        "as": "যোগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So is it perfect?",
+        "as": "তেনেহ'লে নিখুঁত নে?"
+       },
+       "options": [
+        {
+         "en": "No",
+         "as": "নহয়"
+        },
+        {
+         "en": "Yes",
+         "as": "হয়"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "It must equal the number.",
+        "as": "সংখ্যাটোৰ সমান হ'ব লাগিব।"
+       }
+      }
+     ],
+     "why": {
+      "en": "6, 28 and 496 are the first perfect numbers.",
+      "as": "6, 28 আৰু 496 প্ৰথম নিখুঁত সংখ্যা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Is 28 a perfect number?",
+        "as": "28 নিখুঁত সংখ্যা নেকি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Its factors, leaving out itself?",
+          "as": "নিজক বাদ দি গুণনীয়ক?"
+         },
+         "options": [
+          {
+           "en": "1, 28",
+           "as": "1, 28"
+          },
+          {
+           "en": "1, 2 only",
+           "as": "কেৱল 1, 2"
+          },
+          {
+           "en": "1, 2, 4, 7, 14",
+           "as": "1, 2, 4, 7, 14"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Find every rectangle.",
+          "as": "সকলো আয়ত বিচাৰা।"
+         },
+         "skill": "n-factor"
+        },
+        {
+         "ask": {
+          "en": "Their sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Add them.",
+          "as": "যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So is it perfect?",
+          "as": "তেনেহ'লে নিখুঁত নে?"
+         },
+         "options": [
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Yes",
+           "as": "হয়"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It must equal the number.",
+          "as": "সংখ্যাটোৰ সমান হ'ব লাগিব।"
+         }
+        }
+       ],
+       "why": {
+        "en": "6, 28 and 496 are the first perfect numbers.",
+        "as": "6, 28 আৰু 496 প্ৰথম নিখুঁত সংখ্যা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Is 12 a perfect number?",
+        "as": "12 নিখুঁত সংখ্যা নেকি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Its factors, leaving out itself?",
+          "as": "নিজক বাদ দি গুণনীয়ক?"
+         },
+         "options": [
+          {
+           "en": "1, 12",
+           "as": "1, 12"
+          },
+          {
+           "en": "1, 2 only",
+           "as": "কেৱল 1, 2"
+          },
+          {
+           "en": "1, 2, 3, 4, 6",
+           "as": "1, 2, 3, 4, 6"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Find every rectangle.",
+          "as": "সকলো আয়ত বিচাৰা।"
+         },
+         "skill": "n-factor"
+        },
+        {
+         "ask": {
+          "en": "Their sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Add them.",
+          "as": "যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So is it perfect?",
+          "as": "তেনেহ'লে নিখুঁত নে?"
+         },
+         "options": [
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Yes",
+           "as": "হয়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It must equal the number.",
+          "as": "সংখ্যাটোৰ সমান হ'ব লাগিব।"
+         }
+        }
+       ],
+       "why": {
+        "en": "6, 28 and 496 are the first perfect numbers.",
+        "as": "6, 28 আৰু 496 প্ৰথম নিখুঁত সংখ্যা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Is 6 a perfect number?",
+        "as": "6 নিখুঁত সংখ্যা নেকি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Its factors, leaving out itself?",
+          "as": "নিজক বাদ দি গুণনীয়ক?"
+         },
+         "options": [
+          {
+           "en": "1, 2 only",
+           "as": "কেৱল 1, 2"
+          },
+          {
+           "en": "1, 6",
+           "as": "1, 6"
+          },
+          {
+           "en": "1, 2, 3",
+           "as": "1, 2, 3"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Find every rectangle.",
+          "as": "সকলো আয়ত বিচাৰা।"
+         },
+         "skill": "n-factor"
+        },
+        {
+         "ask": {
+          "en": "Their sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Add them.",
+          "as": "যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So is it perfect?",
+          "as": "তেনেহ'লে নিখুঁত নে?"
+         },
+         "options": [
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Yes",
+           "as": "হয়"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It must equal the number.",
+          "as": "সংখ্যাটোৰ সমান হ'ব লাগিব।"
+         }
+        }
+       ],
+       "why": {
+        "en": "6, 28 and 496 are the first perfect numbers.",
+        "as": "6, 28 আৰু 496 প্ৰথম নিখুঁত সংখ্যা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.x.q5",
+     "type": "match",
+     "skill": "n-facts",
+     "q": {
+      "en": "Match each Roman numeral",
+      "as": "প্ৰতিটো ৰোমান সংখ্যা মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "IX",
+        "as": "IX"
+       },
+       {
+        "en": "9",
+        "as": "9"
+       }
+      ],
+      [
+       {
+        "en": "XL",
+        "as": "XL"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       }
+      ],
+      [
+       {
+        "en": "XC",
+        "as": "XC"
+       },
+       {
+        "en": "90",
+        "as": "90"
+       }
+      ],
+      [
+       {
+        "en": "CD",
+        "as": "CD"
+       },
+       {
+        "en": "400",
+        "as": "400"
+       }
+      ]
+     ],
+     "why": {
+      "en": "A smaller letter before a bigger one subtracts.",
+      "as": "ডাঙৰৰ আগত সৰু আখৰ থাকিলে বিয়োগ হয়।"
+     }
+    },
+    {
+     "id": "m1.x.q6",
+     "type": "solve",
+     "skill": "n-facts",
+     "hints": [
+      {
+       "en": "Place values are 8, 4, 2, 1.",
+       "as": "স্থানীয় মান 8, 4, 2, 1।"
+      }
+     ],
+     "q": {
+      "en": "Write the binary number 101 in the decimal system.",
+      "as": "দ্বিমিক সংখ্যা 101ক দশমিকত লিখা।"
+     },
+     "answer": "5",
+     "why": {
+      "en": "Each place doubles: 1, 2, 4, 8 from the right.",
+      "as": "প্ৰতিটো স্থান দুগুণ: সোঁফালৰ পৰা 1, 2, 4, 8।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Write the binary number 101 in the decimal system.",
+        "as": "দ্বিমিক সংখ্যা 101ক দশমিকত লিখা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Each place doubles: 1, 2, 4, 8 from the right.",
+        "as": "প্ৰতিটো স্থান দুগুণ: সোঁফালৰ পৰা 1, 2, 4, 8।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write the binary number 110 in the decimal system.",
+        "as": "দ্বিমিক সংখ্যা 110ক দশমিকত লিখা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Each place doubles: 1, 2, 4, 8 from the right.",
+        "as": "প্ৰতিটো স্থান দুগুণ: সোঁফালৰ পৰা 1, 2, 4, 8।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write the binary number 1010 in the decimal system.",
+        "as": "দ্বিমিক সংখ্যা 1010ক দশমিকত লিখা।"
+       },
+       "answer": "10",
+       "why": {
+        "en": "Each place doubles: 1, 2, 4, 8 from the right.",
+        "as": "প্ৰতিটো স্থান দুগুণ: সোঁফালৰ পৰা 1, 2, 4, 8।"
+       }
+      },
+      {
+       "q": {
+        "en": "Write the binary number 1101 in the decimal system.",
+        "as": "দ্বিমিক সংখ্যা 1101ক দশমিকত লিখা।"
+       },
+       "answer": "13",
+       "why": {
+        "en": "Each place doubles: 1, 2, 4, 8 from the right.",
+        "as": "প্ৰতিটো স্থান দুগুণ: সোঁফালৰ পৰা 1, 2, 4, 8।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m1.x.q7",
+     "type": "order",
+     "skill": "f-dec",
+     "q": {
+      "en": "Put these in order, smallest first",
+      "as": "সৰুৰ পৰা ডাঙৰলৈ সজোৱা"
+     },
+     "items": [
+      {
+       "en": "$0.\\overline{06}$",
+       "as": "$0.\\overline{06}$"
+      },
+      {
+       "en": "$0.0\\overline{6}$",
+       "as": "$0.0\\overline{6}$"
+      },
+      {
+       "en": "$0.6$",
+       "as": "$0.6$"
+      },
+      {
+       "en": "$0.\\overline{6}$",
+       "as": "$0.\\overline{6}$"
+      }
+     ],
+     "why": {
+      "en": "Write out a few digits of each: 0.0606, 0.0666, 0.6000, 0.6666.",
+      "as": "প্ৰতিটোৰ কেইটামান অংক লিখা: 0.0606, 0.0666, 0.6000, 0.6666।"
+     }
+    }
+   ]
   }
  ],
  "test": {

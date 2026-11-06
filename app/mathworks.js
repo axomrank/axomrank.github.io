@@ -88,24 +88,27 @@ W.diffsq = (el, w, on) => {
 
 /* ---------- prime pairs: a perfect square is one where every prime has a partner ---------- */
 W.pairs = (el, w, on) => {
-  const primes = []; { let v = w.n; for (let p = 2; p <= v; p++) while (v % p === 0) { primes.push(p); v /= p; } }
-  const used = primes.map(() => false); let pick = null, touched = false, locked = false, made = [];
-  const left = () => primes.filter((_, k) => !used[k]), canPair = () => { const l = left(); return l.some((p, k) => l.indexOf(p) !== k); };
-  const leftover = () => left().reduce((a, p) => a * p, 1);
+  const g = w.group || 2, word = g === 3 ? B("group of three", "তিনিটাৰ গোট") : B("partner", "সংগী"), primes = []; { let v = w.n; for (let p = 2; p <= v; p++) while (v % p === 0) { primes.push(p); v /= p; } }
+  const used = primes.map(() => false); let picks = [], touched = false, locked = false, made = [];
+  const left = () => primes.filter((_, k) => !used[k]), count = (p) => left().filter((q) => q === p).length, canGroup = () => left().some((p) => count(p) >= g);
+  // what is still needed: each unfinished prime up to the next full group
+  const missing = () => [...new Set(left())].reduce((a, p) => a * p ** ((g - (count(p) % g)) % g), 1);
   const draw = () => {
-    el.innerHTML = `<div class="pr-head">$${w.n}$</div><div class="pr-chips">${primes.map((p, k) => (used[k] ? "" : `<button class="tile ${pick === k ? "sel" : ""}" data-pr="${k}">$${p}$</button>`)).join("")}</div><div class="pr-made">${made.map((p) => `<span>$${p} \\times ${p}$</span>`).join("")}</div>
-      <div class="wx-read pr-read">${canPair() ? "" : left().length ? `<b class="no">${T(B(`No partner: ${left().join(", ")}`, `সংগী নাই: ${left().join(", ")}`))}</b>` : `<b class="yes">${T(B("Every prime has a partner", "প্ৰতিটো মৌলিকৰ সংগী আছে"))}</b>`}</div>`;
+    el.innerHTML = `<div class="pr-head">$${w.n}$</div><div class="pr-chips">${primes.map((p, k) => (used[k] ? "" : `<button class="tile ${picks.includes(k) ? "sel" : ""}" data-pr="${k}">$${p}$</button>`)).join("")}</div><div class="pr-made">${made.map((p) => `<span>$${Array(g).fill(p).join(" \\times ")}$</span>`).join("")}</div>
+      <div class="wx-read pr-read">${canGroup() ? "" : left().length ? `<b class="no">${T(B(`No ${word.en}: ${left().join(", ")}`, `${word.as} নাই: ${left().join(", ")}`))}</b>` : `<b class="yes">${T(B(`Every prime has a ${word.en}`, `প্ৰতিটো মৌলিকৰ ${word.as} আছে`))}</b>`}</div>`;
   };
   el.addEventListener("click", (e) => {
     const b = e.target.closest("[data-pr]"); if (!b || locked) return;
     const k = +b.dataset.pr; touched = true;
-    if (pick == null || pick === k) { pick = pick === k ? null : k; SFX.tap(); draw(); return; }
-    if (primes[pick] === primes[k]) { used[pick] = used[k] = true; made.push(primes[k]); pick = null; SFX.pair(); draw(); on(); return; }
-    pick = k; SFX.bad(); draw();
+    if (picks.includes(k)) { picks = picks.filter((x) => x !== k); SFX.tap(); draw(); return; }
+    if (picks.length && primes[picks[0]] !== primes[k]) { picks = [k]; SFX.bad(); draw(); return; }
+    picks.push(k);
+    if (picks.length === g) { picks.forEach((x) => (used[x] = true)); made.push(primes[k]); picks = []; SFX.pair(); draw(); on(); return; }
+    SFX.tap(); draw();
   });
   draw();
-  const finish = () => { for (;;) { const i = primes.findIndex((p, k) => !used[k] && primes.some((q, j) => j > k && q === p && !used[j])); if (i < 0) break; const j = primes.findIndex((q, m) => m > i && q === primes[i] && !used[m]); used[i] = used[j] = true; made.push(primes[i]); } touched = true; draw(); on(); };
-  return { value: leftover, ready: () => !canPair(), touched: () => touched, freeze() { locked = true; }, show: finish, state: () => ({ done: canPair() ? 0 : 1 }), demo: finish };
+  const finish = () => { for (;;) { const p = left().find((q) => count(q) >= g); if (p == null) break; let n = 0; primes.forEach((q, k) => { if (q === p && !used[k] && n < g) { used[k] = true; n++; } }); made.push(p); } touched = true; draw(); on(); };
+  return { value: missing, ready: () => !canGroup(), touched: () => touched, freeze() { locked = true; }, show: finish, state: () => ({ done: canGroup() ? 0 : 1 }), demo: finish };
 };
 
 /* ---------- price ladder: profit is on cost, discount is on marked price ---------- */

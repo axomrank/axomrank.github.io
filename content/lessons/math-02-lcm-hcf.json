@@ -2488,6 +2488,903 @@
      }
     }
    ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Harder LCM problems",
+    "as": "ল.সা.গু.ৰ টান সমস্যা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "LCM of fractions = LCM of tops ÷ HCF of bottoms.",
+     "as": "ভগ্নাংশৰ ল.সা.গু. = লবৰ ল.সা.গু. ÷ হৰৰ গ.সা.গু.।"
+    },
+    {
+     "en": "HCF of fractions = HCF of tops ÷ LCM of bottoms.",
+     "as": "ভগ্নাংশৰ গ.সা.গু. = লবৰ গ.সা.গু. ÷ হৰৰ ল.সা.গু.।"
+    },
+    {
+     "en": "Given LCM + HCF and LCM − HCF, halve the sum and the difference.",
+     "as": "ল.সা.গু. + গ.সা.গু. আৰু ল.সা.গু. − গ.সা.গু. দিলে যোগফল আৰু বিয়োগফল আধা কৰা।"
+    },
+    {
+     "en": "For co-prime numbers, the LCM is their product.",
+     "as": "সহমৌলিক সংখ্যাৰ ল.সা.গু. সিহঁতৰ পূৰণফল।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m2.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Fractions hop too",
+      "as": "ভগ্নাংশেও জঁপিয়ায়"
+     },
+     "text": [
+      {
+       "en": "Hop by $\\frac{2}{3}$ and by $\\frac{1}{2}$ along the line. Where do they first meet?",
+       "as": "ৰেখাত $\\frac{2}{3}$ আৰু $\\frac{1}{2}$ৰে জঁপিওৱা। ক'ত প্ৰথম লগ হয়?"
+      }
+     ],
+     "widget": {
+      "kind": "line",
+      "min": 0,
+      "max": 3,
+      "den": 6,
+      "value": 0.5
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Put the pin on 2.",
+        "as": "পিনটো 2ত ৰাখা।"
+       },
+       "goal": {
+        "value": 2
+       },
+       "then": {
+        "en": "2 is three hops of $\\frac{2}{3}$ and four of $\\frac{1}{2}$. LCM of tops 2 and 1 is 2, HCF of bottoms is 1: 2.",
+        "as": "2 হৈছে $\\frac{2}{3}$ৰ তিনি জঁপ আৰু $\\frac{1}{2}$ৰ চাৰি জঁপ। লবৰ ল.সা.গু. 2, হৰৰ গ.সা.গু. 1: 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Sum and difference given",
+      "as": "যোগফল আৰু বিয়োগফল দিয়া"
+     },
+     "text": [
+      {
+       "en": "If LCM + HCF = 52 and LCM − HCF = 44, adding the two removes the HCF.",
+       "as": "ল.সা.গু. + গ.সা.গু. = 52 আৰু ল.সা.গু. − গ.সা.গু. = 44 হ'লে যোগ কৰিলে গ.সা.গু. নোহোৱা হয়।"
+      },
+      {
+       "en": "That leaves twice the LCM.",
+       "as": "বাকী থাকে ল.সা.গু.ৰ দুগুণ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "52 + 44 = 96",
+        "as": "52 + 44 = 96"
+       },
+       {
+        "en": "LCM = 48",
+        "as": "ল.সা.গু. = 48"
+       },
+       {
+        "en": "HCF = 4",
+        "as": "গ.সা.গু. = 4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m2.x.q1",
+     "type": "solve",
+     "skill": "l-frac",
+     "hints": [
+      {
+       "en": "LCM on top, HCF below.",
+       "as": "ওপৰত ল.সা.গু., তলত গ.সা.গু.।"
+      }
+     ],
+     "q": {
+      "en": "Find the LCM of $\\frac{2}{3}$ and $\\frac{4}{9}$.",
+      "as": "$\\frac{2}{3}$ আৰু $\\frac{4}{9}$ৰ ল.সা.গু. উলিওৱা।"
+     },
+     "answer": "4/3",
+     "why": {
+      "en": "LCM of tops 4, HCF of bottoms 3.",
+      "as": "লবৰ ল.সা.গু. 4, হৰৰ গ.সা.গু. 3।"
+     },
+     "traps": [
+      {
+       "ans": "4/9",
+       "tag": "m-frac-lcm",
+       "why": {
+        "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+        "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the LCM of $\\frac{2}{3}$ and $\\frac{4}{9}$.",
+        "as": "$\\frac{2}{3}$ আৰু $\\frac{4}{9}$ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "4/3",
+       "why": {
+        "en": "LCM of tops 4, HCF of bottoms 3.",
+        "as": "লবৰ ল.সা.গু. 4, হৰৰ গ.সা.গু. 3।"
+       },
+       "traps": [
+        {
+         "ans": "4/9",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the LCM of $\\frac{3}{4}$ and $\\frac{9}{8}$.",
+        "as": "$\\frac{3}{4}$ আৰু $\\frac{9}{8}$ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "9/4",
+       "why": {
+        "en": "LCM of tops 9, HCF of bottoms 4.",
+        "as": "লবৰ ল.সা.গু. 9, হৰৰ গ.সা.গু. 4।"
+       },
+       "traps": [
+        {
+         "ans": "9/8",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the LCM of $\\frac{2}{5}$ and $\\frac{3}{10}$.",
+        "as": "$\\frac{2}{5}$ আৰু $\\frac{3}{10}$ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "6/5",
+       "why": {
+        "en": "LCM of tops 6, HCF of bottoms 5.",
+        "as": "লবৰ ল.সা.গু. 6, হৰৰ গ.সা.গু. 5।"
+       },
+       "traps": [
+        {
+         "ans": "3/5",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the LCM of $\\frac{4}{9}$ and $\\frac{6}{15}$.",
+        "as": "$\\frac{4}{9}$ আৰু $\\frac{6}{15}$ৰ ল.সা.গু. উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "LCM of tops 12, HCF of bottoms 3.",
+        "as": "লবৰ ল.সা.গু. 12, হৰৰ গ.সা.গু. 3।"
+       },
+       "traps": [
+        {
+         "ans": "4/15",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m2.x.q2",
+     "type": "solve",
+     "skill": "l-frac",
+     "q": {
+      "en": "Find the HCF of $\\frac{2}{3}$ and $\\frac{4}{9}$.",
+      "as": "$\\frac{2}{3}$ আৰু $\\frac{4}{9}$ৰ গ.সা.গু. উলিওৱা।"
+     },
+     "answer": "2/9",
+     "why": {
+      "en": "HCF of tops 2, LCM of bottoms 9.",
+      "as": "লবৰ গ.সা.গু. 2, হৰৰ ল.সা.গু. 9।"
+     },
+     "traps": [
+      {
+       "ans": "2/3",
+       "tag": "m-frac-lcm",
+       "why": {
+        "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+        "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the HCF of $\\frac{2}{3}$ and $\\frac{4}{9}$.",
+        "as": "$\\frac{2}{3}$ আৰু $\\frac{4}{9}$ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "2/9",
+       "why": {
+        "en": "HCF of tops 2, LCM of bottoms 9.",
+        "as": "লবৰ গ.সা.গু. 2, হৰৰ ল.সা.গু. 9।"
+       },
+       "traps": [
+        {
+         "ans": "2/3",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the HCF of $\\frac{3}{4}$ and $\\frac{9}{8}$.",
+        "as": "$\\frac{3}{4}$ আৰু $\\frac{9}{8}$ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "3/8",
+       "why": {
+        "en": "HCF of tops 3, LCM of bottoms 8.",
+        "as": "লবৰ গ.সা.গু. 3, হৰৰ ল.সা.গু. 8।"
+       },
+       "traps": [
+        {
+         "ans": "3/4",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the HCF of $\\frac{4}{5}$ and $\\frac{6}{15}$.",
+        "as": "$\\frac{4}{5}$ আৰু $\\frac{6}{15}$ৰ গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "2/15",
+       "why": {
+        "en": "HCF of tops 2, LCM of bottoms 15.",
+        "as": "লবৰ গ.সা.গু. 2, হৰৰ ল.সা.গু. 15।"
+       },
+       "traps": [
+        {
+         "ans": "2/5",
+         "tag": "m-frac-lcm",
+         "why": {
+          "en": "For fractions the rule mixes: LCM uses LCM of tops and HCF of bottoms.",
+          "as": "ভগ্নাংশত নিয়ম মিহলি: ল.সা.গু.ত লবৰ ল.সা.গু. আৰু হৰৰ গ.সা.গু.।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m2.x.q3",
+     "type": "stepwise",
+     "skill": "l-apply",
+     "q": {
+      "en": "The LCM and HCF of two numbers add to 52 and differ by 44. One number is 12. Find the other.",
+      "as": "দুটা সংখ্যাৰ ল.সা.গু. আৰু গ.সা.গু.ৰ যোগফল 52, পাৰ্থক্য 44। এটা সংখ্যা 12। আনটো উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "LCM?",
+        "as": "ল.সা.গু.?"
+       },
+       "options": [
+        {
+         "en": "48",
+         "as": "48"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "96",
+         "as": "96"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Half of sum + difference.",
+        "as": "যোগফল + বিয়োগফলৰ আধা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "HCF?",
+        "as": "গ.সা.গু.?"
+       },
+       "options": [
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "48",
+         "as": "48"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Half of sum − difference.",
+        "as": "যোগফল − বিয়োগফলৰ আধা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The other number?",
+        "as": "আনটো সংখ্যা?"
+       },
+       "options": [
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "48",
+         "as": "48"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "LCM × HCF ÷ the number.",
+        "as": "ল.সা.গু. × গ.সা.গু. ÷ সংখ্যা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Two equations in LCM and HCF, then the product rule.",
+      "as": "ল.সা.গু. আৰু গ.সা.গু.ৰ দুটা সমীকৰণ, তাৰ পিছত পূৰণফলৰ নিয়ম।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The LCM and HCF of two numbers add to 52 and differ by 44. One number is 12. Find the other.",
+        "as": "দুটা সংখ্যাৰ ল.সা.গু. আৰু গ.সা.গু.ৰ যোগফল 52, পাৰ্থক্য 44। এটা সংখ্যা 12। আনটো উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM?",
+          "as": "ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "48",
+           "as": "48"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "96",
+           "as": "96"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Half of sum + difference.",
+          "as": "যোগফল + বিয়োগফলৰ আধা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "HCF?",
+          "as": "গ.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "48",
+           "as": "48"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half of sum − difference.",
+          "as": "যোগফল − বিয়োগফলৰ আধা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The other number?",
+          "as": "আনটো সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "48",
+           "as": "48"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "LCM × HCF ÷ the number.",
+          "as": "ল.সা.গু. × গ.সা.গু. ÷ সংখ্যা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two equations in LCM and HCF, then the product rule.",
+        "as": "ল.সা.গু. আৰু গ.সা.গু.ৰ দুটা সমীকৰণ, তাৰ পিছত পূৰণফলৰ নিয়ম।"
+       }
+      },
+      {
+       "q": {
+        "en": "The LCM and HCF of two numbers add to 66 and differ by 54. One number is 12. Find the other.",
+        "as": "দুটা সংখ্যাৰ ল.সা.গু. আৰু গ.সা.গু.ৰ যোগফল 66, পাৰ্থক্য 54। এটা সংখ্যা 12। আনটো উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM?",
+          "as": "ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half of sum + difference.",
+          "as": "যোগফল + বিয়োগফলৰ আধা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "HCF?",
+          "as": "গ.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half of sum − difference.",
+          "as": "যোগফল − বিয়োগফলৰ আধা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The other number?",
+          "as": "আনটো সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "LCM × HCF ÷ the number.",
+          "as": "ল.সা.গু. × গ.সা.গু. ÷ সংখ্যা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two equations in LCM and HCF, then the product rule.",
+        "as": "ল.সা.গু. আৰু গ.সা.গু.ৰ দুটা সমীকৰণ, তাৰ পিছত পূৰণফলৰ নিয়ম।"
+       }
+      },
+      {
+       "q": {
+        "en": "The LCM and HCF of two numbers add to 84 and differ by 60. One number is 24. Find the other.",
+        "as": "দুটা সংখ্যাৰ ল.সা.গু. আৰু গ.সা.গু.ৰ যোগফল 84, পাৰ্থক্য 60। এটা সংখ্যা 24। আনটো উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM?",
+          "as": "ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "144",
+           "as": "144"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "72",
+           "as": "72"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Half of sum + difference.",
+          "as": "যোগফল + বিয়োগফলৰ আধা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "HCF?",
+          "as": "গ.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "72",
+           "as": "72"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Half of sum − difference.",
+          "as": "যোগফল − বিয়োগফলৰ আধা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The other number?",
+          "as": "আনটো সংখ্যা?"
+         },
+         "options": [
+          {
+           "en": "72",
+           "as": "72"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "36",
+           "as": "36"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "LCM × HCF ÷ the number.",
+          "as": "ল.সা.গু. × গ.সা.গু. ÷ সংখ্যা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two equations in LCM and HCF, then the product rule.",
+        "as": "ল.সা.গু. আৰু গ.সা.গু.ৰ দুটা সমীকৰণ, তাৰ পিছত পূৰণফলৰ নিয়ম।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.x.q4",
+     "type": "solve",
+     "skill": "l-apply",
+     "q": {
+      "en": "Three numbers are in the ratio 2 : 3 : 7 and their LCM is 2100. Find their HCF.",
+      "as": "তিনিটা সংখ্যাৰ অনুপাত 2 : 3 : 7, ল.সা.গু. 2100। গ.সা.গু. উলিওৱা।"
+     },
+     "answer": "50",
+     "why": {
+      "en": "The numbers are 2x, 3x and 7x, so the LCM is 42x and x is the HCF.",
+      "as": "সংখ্যাবোৰ 2x, 3x, 7x, সেয়ে ল.সা.গু. 42x, x গ.সা.গু.।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Three numbers are in the ratio 2 : 3 : 7 and their LCM is 2100. Find their HCF.",
+        "as": "তিনিটা সংখ্যাৰ অনুপাত 2 : 3 : 7, ল.সা.গু. 2100। গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "50",
+       "why": {
+        "en": "The numbers are 2x, 3x and 7x, so the LCM is 42x and x is the HCF.",
+        "as": "সংখ্যাবোৰ 2x, 3x, 7x, সেয়ে ল.সা.গু. 42x, x গ.সা.গু.।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three numbers are in the ratio 2 : 3 : 4 and their LCM is 240. Find their HCF.",
+        "as": "তিনিটা সংখ্যাৰ অনুপাত 2 : 3 : 4, ল.সা.গু. 240। গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "20",
+       "why": {
+        "en": "The numbers are 2x, 3x and 4x, so the LCM is 12x and x is the HCF.",
+        "as": "সংখ্যাবোৰ 2x, 3x, 4x, সেয়ে ল.সা.গু. 12x, x গ.সা.গু.।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three numbers are in the ratio 3 : 5 : 7 and their LCM is 2100. Find their HCF.",
+        "as": "তিনিটা সংখ্যাৰ অনুপাত 3 : 5 : 7, ল.সা.গু. 2100। গ.সা.গু. উলিওৱা।"
+       },
+       "answer": "20",
+       "why": {
+        "en": "The numbers are 3x, 5x and 7x, so the LCM is 105x and x is the HCF.",
+        "as": "সংখ্যাবোৰ 3x, 5x, 7x, সেয়ে ল.সা.গু. 105x, x গ.সা.গু.।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m2.x.q5",
+     "type": "tf",
+     "skill": "l-apply",
+     "s": {
+      "en": "The LCM of two co-prime numbers is their product.",
+      "as": "দুটা সহমৌলিক সংখ্যাৰ ল.সা.গু. সিহঁতৰ পূৰণফল।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Their HCF is 1, so LCM = product ÷ 1.",
+      "as": "গ.সা.গু. 1, সেয়ে ল.সা.গু. = পূৰণফল ÷ 1।"
+     }
+    },
+    {
+     "id": "m2.x.q7",
+     "type": "odd",
+     "skill": "l-apply",
+     "q": {
+      "en": "Two numbers are in the ratio 4 : 3. Which cannot be their LCM?",
+      "as": "দুটা সংখ্যাৰ অনুপাত 4 : 3। কোনটো সিহঁতৰ ল.সা.গু. হ'ব নোৱাৰে?"
+     },
+     "why": {
+      "en": "The numbers are 4x and 3x, so the LCM is 12x. Every possible LCM is a multiple of 12.",
+      "as": "সংখ্যাবোৰ 4x আৰু 3x, সেয়ে ল.সা.গু. 12x। প্ৰতিটো ল.সা.গু. 12ৰ গুণিতক।"
+     },
+     "options": [
+      {
+       "en": "24",
+       "as": "24"
+      },
+      {
+       "en": "36",
+       "as": "36"
+      },
+      {
+       "en": "60",
+       "as": "60"
+      },
+      {
+       "en": "50",
+       "as": "50"
+      }
+     ],
+     "answer": 3,
+     "variants": [
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 4 : 3. Which cannot be their LCM?",
+        "as": "দুটা সংখ্যাৰ অনুপাত 4 : 3। কোনটো সিহঁতৰ ল.সা.গু. হ'ব নোৱাৰে?"
+       },
+       "why": {
+        "en": "The numbers are 4x and 3x, so the LCM is 12x. Every possible LCM is a multiple of 12.",
+        "as": "সংখ্যাবোৰ 4x আৰু 3x, সেয়ে ল.সা.গু. 12x। প্ৰতিটো ল.সা.গু. 12ৰ গুণিতক।"
+       },
+       "options": [
+        {
+         "en": "24",
+         "as": "24"
+        },
+        {
+         "en": "36",
+         "as": "36"
+        },
+        {
+         "en": "60",
+         "as": "60"
+        },
+        {
+         "en": "50",
+         "as": "50"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 7 : 2. Which cannot be their LCM?",
+        "as": "দুটা সংখ্যাৰ অনুপাত 7 : 2। কোনটো সিহঁতৰ ল.সা.গু. হ'ব নোৱাৰে?"
+       },
+       "why": {
+        "en": "The numbers are 7x and 2x, so the LCM is 14x. Every possible LCM is a multiple of 14.",
+        "as": "সংখ্যাবোৰ 7x আৰু 2x, সেয়ে ল.সা.গু. 14x। প্ৰতিটো ল.সা.গু. 14ৰ গুণিতক।"
+       },
+       "options": [
+        {
+         "en": "28",
+         "as": "28"
+        },
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "40",
+         "as": "40"
+        },
+        {
+         "en": "70",
+         "as": "70"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 3 : 8. Which cannot be their LCM?",
+        "as": "দুটা সংখ্যাৰ অনুপাত 3 : 8। কোনটো সিহঁতৰ ল.সা.গু. হ'ব নোৱাৰে?"
+       },
+       "why": {
+        "en": "The numbers are 3x and 8x, so the LCM is 24x. Every possible LCM is a multiple of 24.",
+        "as": "সংখ্যাবোৰ 3x আৰু 8x, সেয়ে ল.সা.গু. 24x। প্ৰতিটো ল.সা.গু. 24ৰ গুণিতক।"
+       },
+       "options": [
+        {
+         "en": "48",
+         "as": "48"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        },
+        {
+         "en": "24",
+         "as": "24"
+        },
+        {
+         "en": "72",
+         "as": "72"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "m2.x.q6",
+     "type": "match",
+     "skill": "l-frac",
+     "q": {
+      "en": "Match each pair of fractions to its LCM",
+      "as": "প্ৰতিটো ভগ্নাংশৰ যোৰক ল.সা.গু.ৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$\\frac{1}{2}$, $\\frac{1}{3}$",
+        "as": "$\\frac{1}{2}$, $\\frac{1}{3}$"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{2}{3}$, $\\frac{4}{9}$",
+        "as": "$\\frac{2}{3}$, $\\frac{4}{9}$"
+       },
+       {
+        "en": "$\\frac{4}{3}$",
+        "as": "$\\frac{4}{3}$"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{3}{4}$, $\\frac{9}{8}$",
+        "as": "$\\frac{3}{4}$, $\\frac{9}{8}$"
+       },
+       {
+        "en": "$\\frac{9}{4}$",
+        "as": "$\\frac{9}{4}$"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{1}{4}$, $\\frac{1}{6}$",
+        "as": "$\\frac{1}{4}$, $\\frac{1}{6}$"
+       },
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "LCM of tops over HCF of bottoms.",
+      "as": "লবৰ ল.সা.গু. ভাগ হৰৰ গ.সা.গু.।"
+     }
+    }
+   ]
   }
  ],
  "test": {

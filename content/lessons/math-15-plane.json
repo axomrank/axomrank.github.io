@@ -412,21 +412,21 @@
      "type": "solve",
      "skill": "g-rect",
      "q": {
-      "en": "A rectangle has area 300 sq cm and length 25 cm. Find its perimeter.",
-      "as": "এটা আয়তৰ কালি 300 বৰ্গ ছেমি, দৈৰ্ঘ্য 25 ছেমি। পৰিসীমা উলিওৱা।"
+      "en": "A rectangle has area 325 sq cm and length 25 cm. Find its perimeter.",
+      "as": "এটা আয়তৰ কালি 325 বৰ্গ ছেমি, দৈৰ্ঘ্য 25 ছেমি। পৰিসীমা উলিওৱা।"
      },
-     "answer": "74",
+     "answer": "76",
      "suffix": {
       "en": "cm",
       "as": "ছেমি"
      },
      "why": {
-      "en": "Breadth = 300 ÷ 25 = 12, then 2(25 + 12).",
-      "as": "প্ৰস্থ = 300 ÷ 25 = 12, তাৰ পিছত 2(25 + 12)।"
+      "en": "Breadth = 325 ÷ 25 = 13, then 2(25 + 13).",
+      "as": "প্ৰস্থ = 325 ÷ 25 = 13, তাৰ পিছত 2(25 + 13)।"
      },
      "traps": [
       {
-       "ans": "37",
+       "ans": "38",
        "tag": "m-perim-half",
        "why": {
         "en": "That is length + breadth. A perimeter goes all the way round, so double it.",
@@ -437,21 +437,21 @@
      "variants": [
       {
        "q": {
-        "en": "A rectangle has area 300 sq cm and length 25 cm. Find its perimeter.",
-        "as": "এটা আয়তৰ কালি 300 বৰ্গ ছেমি, দৈৰ্ঘ্য 25 ছেমি। পৰিসীমা উলিওৱা।"
+        "en": "A rectangle has area 325 sq cm and length 25 cm. Find its perimeter.",
+        "as": "এটা আয়তৰ কালি 325 বৰ্গ ছেমি, দৈৰ্ঘ্য 25 ছেমি। পৰিসীমা উলিওৱা।"
        },
-       "answer": "74",
+       "answer": "76",
        "suffix": {
         "en": "cm",
         "as": "ছেমি"
        },
        "why": {
-        "en": "Breadth = 300 ÷ 25 = 12, then 2(25 + 12).",
-        "as": "প্ৰস্থ = 300 ÷ 25 = 12, তাৰ পিছত 2(25 + 12)।"
+        "en": "Breadth = 325 ÷ 25 = 13, then 2(25 + 13).",
+        "as": "প্ৰস্থ = 325 ÷ 25 = 13, তাৰ পিছত 2(25 + 13)।"
        },
        "traps": [
         {
-         "ans": "37",
+         "ans": "38",
          "tag": "m-perim-half",
          "why": {
           "en": "That is length + breadth. A perimeter goes all the way round, so double it.",
@@ -462,21 +462,21 @@
       },
       {
        "q": {
-        "en": "A rectangle has area 150 sq cm and length 15 cm. Find its perimeter.",
-        "as": "এটা আয়তৰ কালি 150 বৰ্গ ছেমি, দৈৰ্ঘ্য 15 ছেমি। পৰিসীমা উলিওৱা।"
+        "en": "A rectangle has area 195 sq cm and length 15 cm. Find its perimeter.",
+        "as": "এটা আয়তৰ কালি 195 বৰ্গ ছেমি, দৈৰ্ঘ্য 15 ছেমি। পৰিসীমা উলিওৱা।"
        },
-       "answer": "50",
+       "answer": "56",
        "suffix": {
         "en": "cm",
         "as": "ছেমি"
        },
        "why": {
-        "en": "Breadth = 150 ÷ 15 = 10, then 2(15 + 10).",
-        "as": "প্ৰস্থ = 150 ÷ 15 = 10, তাৰ পিছত 2(15 + 10)।"
+        "en": "Breadth = 195 ÷ 15 = 13, then 2(15 + 13).",
+        "as": "প্ৰস্থ = 195 ÷ 15 = 13, তাৰ পিছত 2(15 + 13)।"
        },
        "traps": [
         {
-         "ans": "25",
+         "ans": "28",
          "tag": "m-perim-half",
          "why": {
           "en": "That is length + breadth. A perimeter goes all the way round, so double it.",
@@ -1178,21 +1178,21 @@
      "type": "solve",
      "skill": "g-tri",
      "q": {
-      "en": "In a triangle two angles are 58° and 80°. Find the third.",
-      "as": "ত্ৰিভুজৰ দুটা কোণ 58° আৰু 80°। তৃতীয়টো উলিওৱা।"
+      "en": "In a triangle two angles are 54° and 79°. Find the third.",
+      "as": "ত্ৰিভুজৰ দুটা কোণ 54° আৰু 79°। তৃতীয়টো উলিওৱা।"
      },
-     "answer": "42",
+     "answer": "47",
      "suffix": {
       "en": "°",
       "as": "°"
      },
      "why": {
-      "en": "180 − 58 − 80.",
-      "as": "180 − 58 − 80।"
+      "en": "180 − 54 − 79.",
+      "as": "180 − 54 − 79।"
      },
      "traps": [
       {
-       "ans": "222",
+       "ans": "227",
        "tag": "m-angle-sum",
        "why": {
         "en": "A triangle's angles add to 180°, not 360°.",
@@ -1203,8 +1203,33 @@
      "variants": [
       {
        "q": {
-        "en": "In a triangle two angles are 58° and 80°. Find the third.",
-        "as": "ত্ৰিভুজৰ দুটা কোণ 58° আৰু 80°। তৃতীয়টো উলিওৱা।"
+        "en": "In a triangle two angles are 54° and 79°. Find the third.",
+        "as": "ত্ৰিভুজৰ দুটা কোণ 54° আৰু 79°। তৃতীয়টো উলিওৱা।"
+       },
+       "answer": "47",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "180 − 54 − 79.",
+        "as": "180 − 54 − 79।"
+       },
+       "traps": [
+        {
+         "ans": "227",
+         "tag": "m-angle-sum",
+         "why": {
+          "en": "A triangle's angles add to 180°, not 360°.",
+          "as": "ত্ৰিভুজৰ কোণৰ যোগফল 180°, 360° নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In a triangle two angles are 67° and 71°. Find the third.",
+        "as": "ত্ৰিভুজৰ দুটা কোণ 67° আৰু 71°। তৃতীয়টো উলিওৱা।"
        },
        "answer": "42",
        "suffix": {
@@ -1212,8 +1237,8 @@
         "as": "°"
        },
        "why": {
-        "en": "180 − 58 − 80.",
-        "as": "180 − 58 − 80।"
+        "en": "180 − 67 − 71.",
+        "as": "180 − 67 − 71।"
        },
        "traps": [
         {
@@ -1228,46 +1253,21 @@
       },
       {
        "q": {
-        "en": "In a triangle two angles are 72° and 68°. Find the third.",
-        "as": "ত্ৰিভুজৰ দুটা কোণ 72° আৰু 68°। তৃতীয়টো উলিওৱা।"
+        "en": "In a triangle two angles are 64° and 41°. Find the third.",
+        "as": "ত্ৰিভুজৰ দুটা কোণ 64° আৰু 41°। তৃতীয়টো উলিওৱা।"
        },
-       "answer": "40",
+       "answer": "75",
        "suffix": {
         "en": "°",
         "as": "°"
        },
        "why": {
-        "en": "180 − 72 − 68.",
-        "as": "180 − 72 − 68।"
+        "en": "180 − 64 − 41.",
+        "as": "180 − 64 − 41।"
        },
        "traps": [
         {
-         "ans": "220",
-         "tag": "m-angle-sum",
-         "why": {
-          "en": "A triangle's angles add to 180°, not 360°.",
-          "as": "ত্ৰিভুজৰ কোণৰ যোগফল 180°, 360° নহয়।"
-         }
-        }
-       ]
-      },
-      {
-       "q": {
-        "en": "In a triangle two angles are 62° and 38°. Find the third.",
-        "as": "ত্ৰিভুজৰ দুটা কোণ 62° আৰু 38°। তৃতীয়টো উলিওৱা।"
-       },
-       "answer": "80",
-       "suffix": {
-        "en": "°",
-        "as": "°"
-       },
-       "why": {
-        "en": "180 − 62 − 38.",
-        "as": "180 − 62 − 38।"
-       },
-       "traps": [
-        {
-         "ans": "260",
+         "ans": "255",
          "tag": "m-angle-sum",
          "why": {
           "en": "A triangle's angles add to 180°, not 360°.",
@@ -2097,21 +2097,21 @@
      "type": "solve",
      "skill": "g-quad",
      "q": {
-      "en": "A rhombus has diagonals 10 cm and 6 cm. Find its area.",
-      "as": "ৰম্বাছৰ কৰ্ণ 10 ছেমি আৰু 6 ছেমি। কালি উলিওৱা।"
+      "en": "A rhombus has diagonals 18 cm and 7 cm. Find its area.",
+      "as": "ৰম্বাছৰ কৰ্ণ 18 ছেমি আৰু 7 ছেমি। কালি উলিওৱা।"
      },
-     "answer": "30",
+     "answer": "63",
      "suffix": {
       "en": "sq cm",
       "as": "বৰ্গ ছেমি"
      },
      "why": {
-      "en": "Half of 10 × 6.",
-      "as": "10 × 6ৰ আধা।"
+      "en": "Half of 18 × 7.",
+      "as": "18 × 7ৰ আধা।"
      },
      "traps": [
       {
-       "ans": "60",
+       "ans": "126",
        "tag": "m-tri-area",
        "why": {
         "en": "That is the whole box. The rhombus is half of it.",
@@ -2122,21 +2122,21 @@
      "variants": [
       {
        "q": {
-        "en": "A rhombus has diagonals 10 cm and 6 cm. Find its area.",
-        "as": "ৰম্বাছৰ কৰ্ণ 10 ছেমি আৰু 6 ছেমি। কালি উলিওৱা।"
+        "en": "A rhombus has diagonals 18 cm and 7 cm. Find its area.",
+        "as": "ৰম্বাছৰ কৰ্ণ 18 ছেমি আৰু 7 ছেমি। কালি উলিওৱা।"
        },
-       "answer": "30",
+       "answer": "63",
        "suffix": {
         "en": "sq cm",
         "as": "বৰ্গ ছেমি"
        },
        "why": {
-        "en": "Half of 10 × 6.",
-        "as": "10 × 6ৰ আধা।"
+        "en": "Half of 18 × 7.",
+        "as": "18 × 7ৰ আধা।"
        },
        "traps": [
         {
-         "ans": "60",
+         "ans": "126",
          "tag": "m-tri-area",
          "why": {
           "en": "That is the whole box. The rhombus is half of it.",
@@ -2227,21 +2227,21 @@
      "type": "solve",
      "skill": "g-quad",
      "q": {
-      "en": "A rhombus has area 96 sq m and one diagonal of 12 m. Find the other.",
-      "as": "ৰম্বাছৰ কালি 96 বৰ্গ মি, এটা কৰ্ণ 12 মি। আনটো উলিওৱা।"
+      "en": "A rhombus has area 108 sq m and one diagonal of 12 m. Find the other.",
+      "as": "ৰম্বাছৰ কালি 108 বৰ্গ মি, এটা কৰ্ণ 12 মি। আনটো উলিওৱা।"
      },
-     "answer": "16",
+     "answer": "18",
      "suffix": {
       "en": "m",
       "as": "মি"
      },
      "why": {
-      "en": "2 × 96 ÷ 12.",
-      "as": "2 × 96 ÷ 12।"
+      "en": "2 × 108 ÷ 12.",
+      "as": "2 × 108 ÷ 12।"
      },
      "traps": [
       {
-       "ans": "8",
+       "ans": "9",
        "tag": "m-tri-area",
        "why": {
         "en": "Area is half the product, so double it first.",
@@ -2252,21 +2252,21 @@
      "variants": [
       {
        "q": {
-        "en": "A rhombus has area 96 sq m and one diagonal of 12 m. Find the other.",
-        "as": "ৰম্বাছৰ কালি 96 বৰ্গ মি, এটা কৰ্ণ 12 মি। আনটো উলিওৱা।"
+        "en": "A rhombus has area 108 sq m and one diagonal of 12 m. Find the other.",
+        "as": "ৰম্বাছৰ কালি 108 বৰ্গ মি, এটা কৰ্ণ 12 মি। আনটো উলিওৱা।"
        },
-       "answer": "16",
+       "answer": "18",
        "suffix": {
         "en": "m",
         "as": "মি"
        },
        "why": {
-        "en": "2 × 96 ÷ 12.",
-        "as": "2 × 96 ÷ 12।"
+        "en": "2 × 108 ÷ 12.",
+        "as": "2 × 108 ÷ 12।"
        },
        "traps": [
         {
-         "ans": "8",
+         "ans": "9",
          "tag": "m-tri-area",
          "why": {
           "en": "Area is half the product, so double it first.",
@@ -3066,8 +3066,8 @@
       }
      ],
      "q": {
-      "en": "A wheel covers 44000 m in 1000 rounds. Taking $\\pi = \\frac{22}{7}$, find its radius.",
-      "as": "এটা চকাই 1000 পাকত 44000 মিটাৰ যায়। $\\pi = \\frac{22}{7}$ ধৰি ব্যাসাৰ্ধ উলিওৱা।"
+      "en": "A wheel covers 66000 m in 1500 rounds. Taking $\\pi = \\frac{22}{7}$, find its radius.",
+      "as": "এটা চকাই 1500 পাকত 66000 মিটাৰ যায়। $\\pi = \\frac{22}{7}$ ধৰি ব্যাসাৰ্ধ উলিওৱা।"
      },
      "answer": "7",
      "suffix": {
@@ -3091,8 +3091,8 @@
      "variants": [
       {
        "q": {
-        "en": "A wheel covers 44000 m in 1000 rounds. Taking $\\pi = \\frac{22}{7}$, find its radius.",
-        "as": "এটা চকাই 1000 পাকত 44000 মিটাৰ যায়। $\\pi = \\frac{22}{7}$ ধৰি ব্যাসাৰ্ধ উলিওৱা।"
+        "en": "A wheel covers 66000 m in 1500 rounds. Taking $\\pi = \\frac{22}{7}$, find its radius.",
+        "as": "এটা চকাই 1500 পাকত 66000 মিটাৰ যায়। $\\pi = \\frac{22}{7}$ ধৰি ব্যাসাৰ্ধ উলিওৱা।"
        },
        "answer": "7",
        "suffix": {
@@ -3116,8 +3116,8 @@
       },
       {
        "q": {
-        "en": "A wheel covers 22000 m in 1000 rounds. Taking $\\pi = \\frac{22}{7}$, find its radius.",
-        "as": "এটা চকাই 1000 পাকত 22000 মিটাৰ যায়। $\\pi = \\frac{22}{7}$ ধৰি ব্যাসাৰ্ধ উলিওৱা।"
+        "en": "A wheel covers 33000 m in 1500 rounds. Taking $\\pi = \\frac{22}{7}$, find its radius.",
+        "as": "এটা চকাই 1500 পাকত 33000 মিটাৰ যায়। $\\pi = \\frac{22}{7}$ ধৰি ব্যাসাৰ্ধ উলিওৱা।"
        },
        "answer": "7/2",
        "suffix": {
@@ -3724,6 +3724,3509 @@
      "why": {
       "en": "Double the radius, double the circumference: a length scales in step.",
       "as": "ব্যাসাৰ্ধ দুগুণ, পৰিধি দুগুণ: দৈৰ্ঘ্য একে হাৰে বাঢ়ে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Triangle names and outer angles",
+    "as": "ত্ৰিভুজৰ নাম আৰু বাহিৰৰ কোণ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Angles name a triangle: acute, right or obtuse.",
+     "as": "কোণে ত্ৰিভুজৰ নাম দিয়ে: সূক্ষ্মকোণী, সমকোণী বা স্থূলকোণী।"
+    },
+    {
+     "en": "Sides name it too: equilateral, isosceles or scalene.",
+     "as": "বাহুৱেও নাম দিয়ে: সমবাহু, সমদ্বিবাহু বা বিষমবাহু।"
+    },
+    {
+     "en": "An outer angle equals the two far inner angles added.",
+     "as": "বাহিৰৰ কোণ দূৰৰ ভিতৰৰ দুটা কোণৰ যোগফলৰ সমান।"
+    },
+    {
+     "en": "In a ratio of angles, the parts together make 180°.",
+     "as": "কোণৰ অনুপাতত সকলো ভাগ মিলি 180° হয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m15.x.s1",
+     "type": "story",
+     "title": {
+      "en": "The outside tells on the inside",
+      "as": "বাহিৰে ভিতৰৰ কথা কয়"
+     },
+     "text": [
+      {
+       "en": "One side runs on past the corner in gold. Move the two blue angles and watch the gold one.",
+       "as": "এটা বাহু চুককৈ সোণালীকৈ আগবাঢ়ে। নীলা কোণ দুটা লৰচৰ কৰি সোণালীটো চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "exterior",
+      "a": 50,
+      "b": 60
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Set A to 80°.",
+        "as": "A 80° কৰা।"
+       },
+       "goal": {
+        "a": 80
+       },
+       "then": {
+        "en": "The gold angle follows: 80 + 60 = 140°. It always equals the two far angles added.",
+        "as": "সোণালী কোণে অনুসৰণ কৰে: 80 + 60 = 140°। ই সদায় দূৰৰ দুটাৰ যোগফল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Every triangle has two names",
+      "as": "প্ৰতিটো ত্ৰিভুজৰ দুটা নাম"
+     },
+     "text": [
+      {
+       "en": "The reading names the triangle by its biggest angle and by its equal sides.",
+       "as": "ডাঙৰ কোণ আৰু সমান বাহুৰ পৰা ত্ৰিভুজটোৰ নাম ওলায়।"
+      }
+     ],
+     "widget": {
+      "kind": "exterior",
+      "a": 50,
+      "b": 60
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make all three angles 60°.",
+        "as": "তিনিওটা কোণ 60° কৰা।"
+       },
+       "goal": {
+        "a": 60,
+        "b": 60
+       },
+       "then": {
+        "en": "Equal angles mean equal sides: acute and equilateral.",
+        "as": "সমান কোণ মানে সমান বাহু: সূক্ষ্মকোণী আৰু সমবাহু।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now set A = 90° and B = 45°.",
+        "as": "এতিয়া A = 90° আৰু B = 45° কৰা।"
+       },
+       "goal": {
+        "a": 90,
+        "b": 45
+       },
+       "then": {
+        "en": "A right angle with two equal angles: right and isosceles.",
+        "as": "সমকোণ আৰু দুটা সমান কোণ: সমকোণী আৰু সমদ্বিবাহু।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.x.q1",
+     "type": "explore",
+     "skill": "g-types",
+     "q": {
+      "en": "Set A and B so that the third angle is 70°.",
+      "as": "A আৰু B এনেকৈ সলোৱা যাতে তৃতীয় কোণ 70° হয়।"
+     },
+     "widget": {
+      "kind": "exterior",
+      "a": 30,
+      "b": 40
+     },
+     "target": 70,
+     "answerText": {
+      "en": "The third angle is 70°",
+      "as": "তৃতীয় কোণ 70°"
+     },
+     "why": {
+      "en": "A + B must be 110°, the outer angle.",
+      "as": "A + B 110° হ'ব লাগিব, বাহিৰৰ কোণটো।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Set A and B so that the third angle is 70°.",
+        "as": "A আৰু B এনেকৈ সলোৱা যাতে তৃতীয় কোণ 70° হয়।"
+       },
+       "widget": {
+        "kind": "exterior",
+        "a": 30,
+        "b": 40
+       },
+       "target": 70,
+       "answerText": {
+        "en": "The third angle is 70°",
+        "as": "তৃতীয় কোণ 70°"
+       },
+       "why": {
+        "en": "A + B must be 110°, the outer angle.",
+        "as": "A + B 110° হ'ব লাগিব, বাহিৰৰ কোণটো।"
+       }
+      },
+      {
+       "q": {
+        "en": "Set A and B so that the third angle is 50°.",
+        "as": "A আৰু B এনেকৈ সলোৱা যাতে তৃতীয় কোণ 50° হয়।"
+       },
+       "widget": {
+        "kind": "exterior",
+        "a": 30,
+        "b": 40
+       },
+       "target": 50,
+       "answerText": {
+        "en": "The third angle is 50°",
+        "as": "তৃতীয় কোণ 50°"
+       },
+       "why": {
+        "en": "A + B must be 130°, the outer angle.",
+        "as": "A + B 130° হ'ব লাগিব, বাহিৰৰ কোণটো।"
+       }
+      },
+      {
+       "q": {
+        "en": "Set A and B so that the third angle is 90°.",
+        "as": "A আৰু B এনেকৈ সলোৱা যাতে তৃতীয় কোণ 90° হয়।"
+       },
+       "widget": {
+        "kind": "exterior",
+        "a": 30,
+        "b": 40
+       },
+       "target": 90,
+       "answerText": {
+        "en": "The third angle is 90°",
+        "as": "তৃতীয় কোণ 90°"
+       },
+       "why": {
+        "en": "A + B must be 90°, the outer angle.",
+        "as": "A + B 90° হ'ব লাগিব, বাহিৰৰ কোণটো।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.x.q2",
+     "type": "solve",
+     "skill": "g-types",
+     "q": {
+      "en": "An outer angle of a triangle is 110° and one far inner angle is 30°. Find the other far inner angle.",
+      "as": "ত্ৰিভুজৰ বাহিৰৰ কোণ 110° আৰু দূৰৰ এটা ভিতৰৰ কোণ 30°। আনটো উলিওৱা।"
+     },
+     "answer": "80",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "The outer angle is the two far angles added: 110 − 30.",
+      "as": "বাহিৰৰ কোণ দূৰৰ দুটাৰ যোগফল: 110 − 30।"
+     },
+     "traps": [
+      {
+       "ans": "70",
+       "tag": "m-outer-next",
+       "why": {
+        "en": "That is the angle next to the outer one. The question asks for the far one.",
+        "as": "সেয়া বাহিৰৰ কোণৰ কাষৰটো। প্ৰশ্নই দূৰৰটো সুধিছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "An outer angle of a triangle is 110° and one far inner angle is 30°. Find the other far inner angle.",
+        "as": "ত্ৰিভুজৰ বাহিৰৰ কোণ 110° আৰু দূৰৰ এটা ভিতৰৰ কোণ 30°। আনটো উলিওৱা।"
+       },
+       "answer": "80",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The outer angle is the two far angles added: 110 − 30.",
+        "as": "বাহিৰৰ কোণ দূৰৰ দুটাৰ যোগফল: 110 − 30।"
+       },
+       "traps": [
+        {
+         "ans": "70",
+         "tag": "m-outer-next",
+         "why": {
+          "en": "That is the angle next to the outer one. The question asks for the far one.",
+          "as": "সেয়া বাহিৰৰ কোণৰ কাষৰটো। প্ৰশ্নই দূৰৰটো সুধিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An outer angle of a triangle is 125° and one far inner angle is 60°. Find the other far inner angle.",
+        "as": "ত্ৰিভুজৰ বাহিৰৰ কোণ 125° আৰু দূৰৰ এটা ভিতৰৰ কোণ 60°। আনটো উলিওৱা।"
+       },
+       "answer": "65",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The outer angle is the two far angles added: 125 − 60.",
+        "as": "বাহিৰৰ কোণ দূৰৰ দুটাৰ যোগফল: 125 − 60।"
+       },
+       "traps": [
+        {
+         "ans": "55",
+         "tag": "m-outer-next",
+         "why": {
+          "en": "That is the angle next to the outer one. The question asks for the far one.",
+          "as": "সেয়া বাহিৰৰ কোণৰ কাষৰটো। প্ৰশ্নই দূৰৰটো সুধিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An outer angle of a triangle is 130° and one far inner angle is 45°. Find the other far inner angle.",
+        "as": "ত্ৰিভুজৰ বাহিৰৰ কোণ 130° আৰু দূৰৰ এটা ভিতৰৰ কোণ 45°। আনটো উলিওৱা।"
+       },
+       "answer": "85",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The outer angle is the two far angles added: 130 − 45.",
+        "as": "বাহিৰৰ কোণ দূৰৰ দুটাৰ যোগফল: 130 − 45।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "m-outer-next",
+         "why": {
+          "en": "That is the angle next to the outer one. The question asks for the far one.",
+          "as": "সেয়া বাহিৰৰ কোণৰ কাষৰটো। প্ৰশ্নই দূৰৰটো সুধিছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.x.q3",
+     "type": "solve",
+     "skill": "g-types",
+     "q": {
+      "en": "The angles of a triangle are in the ratio 2 : 3 : 4. Find the largest.",
+      "as": "ত্ৰিভুজৰ কোণবোৰৰ অনুপাত 2 : 3 : 4। ডাঙৰটো উলিওৱা।"
+     },
+     "answer": "80",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "9 parts make 180°, so one part is 20°.",
+      "as": "9 ভাগ 180°, এটা ভাগ 20°।"
+     },
+     "traps": [
+      {
+       "ans": "160",
+       "tag": "m-angle-sum",
+       "why": {
+        "en": "A triangle's angles add to 180°.",
+        "as": "ত্ৰিভুজৰ কোণৰ যোগফল 180°।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The angles of a triangle are in the ratio 2 : 3 : 4. Find the largest.",
+        "as": "ত্ৰিভুজৰ কোণবোৰৰ অনুপাত 2 : 3 : 4। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "80",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "9 parts make 180°, so one part is 20°.",
+        "as": "9 ভাগ 180°, এটা ভাগ 20°।"
+       },
+       "traps": [
+        {
+         "ans": "160",
+         "tag": "m-angle-sum",
+         "why": {
+          "en": "A triangle's angles add to 180°.",
+          "as": "ত্ৰিভুজৰ কোণৰ যোগফল 180°।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The angles of a triangle are in the ratio 1 : 2 : 3. Find the largest.",
+        "as": "ত্ৰিভুজৰ কোণবোৰৰ অনুপাত 1 : 2 : 3। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "90",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "6 parts make 180°, so one part is 30°.",
+        "as": "6 ভাগ 180°, এটা ভাগ 30°।"
+       },
+       "traps": [
+        {
+         "ans": "180",
+         "tag": "m-angle-sum",
+         "why": {
+          "en": "A triangle's angles add to 180°.",
+          "as": "ত্ৰিভুজৰ কোণৰ যোগফল 180°।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The angles of a triangle are in the ratio 3 : 5 : 10. Find the largest.",
+        "as": "ত্ৰিভুজৰ কোণবোৰৰ অনুপাত 3 : 5 : 10। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "100",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "18 parts make 180°, so one part is 10°.",
+        "as": "18 ভাগ 180°, এটা ভাগ 10°।"
+       },
+       "traps": [
+        {
+         "ans": "200",
+         "tag": "m-angle-sum",
+         "why": {
+          "en": "A triangle's angles add to 180°.",
+          "as": "ত্ৰিভুজৰ কোণৰ যোগফল 180°।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.x.q4",
+     "type": "solve",
+     "skill": "g-types",
+     "hints": [
+      {
+       "en": "Call P one part.",
+       "as": "Pক এটা ভাগ ধৰা।"
+      }
+     ],
+     "q": {
+      "en": "In triangle PQR, $P = \\frac{Q}{2} = \\frac{R}{3}$. Find R.",
+      "as": "PQR ত্ৰিভুজত $P = \\frac{Q}{2} = \\frac{R}{3}$। R উলিওৱা।"
+     },
+     "answer": "90",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "The angles are in the ratio 1 : 2 : 3.",
+      "as": "কোণৰ অনুপাত 1 : 2 : 3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In triangle PQR, $P = \\frac{Q}{2} = \\frac{R}{3}$. Find R.",
+        "as": "PQR ত্ৰিভুজত $P = \\frac{Q}{2} = \\frac{R}{3}$। R উলিওৱা।"
+       },
+       "answer": "90",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The angles are in the ratio 1 : 2 : 3.",
+        "as": "কোণৰ অনুপাত 1 : 2 : 3।"
+       }
+      },
+      {
+       "q": {
+        "en": "In triangle PQR, $P = \\frac{Q}{2} = \\frac{R}{6}$. Find R.",
+        "as": "PQR ত্ৰিভুজত $P = \\frac{Q}{2} = \\frac{R}{6}$। R উলিওৱা।"
+       },
+       "answer": "120",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The angles are in the ratio 1 : 2 : 6.",
+        "as": "কোণৰ অনুপাত 1 : 2 : 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "In triangle PQR, $P = \\frac{Q}{3} = \\frac{R}{5}$. Find R.",
+        "as": "PQR ত্ৰিভুজত $P = \\frac{Q}{3} = \\frac{R}{5}$। R উলিওৱা।"
+       },
+       "answer": "100",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The angles are in the ratio 1 : 3 : 5.",
+        "as": "কোণৰ অনুপাত 1 : 3 : 5।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.x.q5",
+     "type": "stepwise",
+     "skill": "g-types",
+     "q": {
+      "en": "An equilateral triangle has perimeter 30 cm. Find its area.",
+      "as": "সমবাহু ত্ৰিভুজৰ পৰিসীমা 30 ছেমি। কালি উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Side?",
+        "as": "বাহু?"
+       },
+       "options": [
+        {
+         "en": "30 cm",
+         "as": "30 cm"
+        },
+        {
+         "en": "10 cm",
+         "as": "10 cm"
+        },
+        {
+         "en": "15 cm",
+         "as": "15 cm"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Three equal sides.",
+        "as": "তিনিটা সমান বাহু।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Area formula?",
+        "as": "কালিৰ সূত্ৰ?"
+       },
+       "options": [
+        {
+         "en": "$\\frac{1}{2}a^2$",
+         "as": "$\\frac{1}{2}a^2$"
+        },
+        {
+         "en": "$\\frac{\\sqrt{3}}{2}a$",
+         "as": "$\\frac{\\sqrt{3}}{2}a$"
+        },
+        {
+         "en": "$\\frac{\\sqrt{3}}{4}a^2$",
+         "as": "$\\frac{\\sqrt{3}}{4}a^2$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "It comes from half a base times the height.",
+        "as": "ই আধা ভূমি × উচ্চতাৰ পৰা আহে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Area?",
+        "as": "কালি?"
+       },
+       "options": [
+        {
+         "en": "$25\\sqrt{3}$",
+         "as": "$25\\sqrt{3}$"
+        },
+        {
+         "en": "$50\\sqrt{3}$",
+         "as": "$50\\sqrt{3}$"
+        },
+        {
+         "en": "$100\\sqrt{3}$",
+         "as": "$100\\sqrt{3}$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Put the side in.",
+        "as": "বাহু বহুওৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Find the side, then the formula does the rest.",
+      "as": "বাহু উলিয়ালে বাকীখিনি সূত্ৰই কৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "An equilateral triangle has perimeter 30 cm. Find its area.",
+        "as": "সমবাহু ত্ৰিভুজৰ পৰিসীমা 30 ছেমি। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Side?",
+          "as": "বাহু?"
+         },
+         "options": [
+          {
+           "en": "30 cm",
+           "as": "30 cm"
+          },
+          {
+           "en": "10 cm",
+           "as": "10 cm"
+          },
+          {
+           "en": "15 cm",
+           "as": "15 cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Three equal sides.",
+          "as": "তিনিটা সমান বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area formula?",
+          "as": "কালিৰ সূত্ৰ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{1}{2}a^2$",
+           "as": "$\\frac{1}{2}a^2$"
+          },
+          {
+           "en": "$\\frac{\\sqrt{3}}{2}a$",
+           "as": "$\\frac{\\sqrt{3}}{2}a$"
+          },
+          {
+           "en": "$\\frac{\\sqrt{3}}{4}a^2$",
+           "as": "$\\frac{\\sqrt{3}}{4}a^2$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It comes from half a base times the height.",
+          "as": "ই আধা ভূমি × উচ্চতাৰ পৰা আহে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "$25\\sqrt{3}$",
+           "as": "$25\\sqrt{3}$"
+          },
+          {
+           "en": "$50\\sqrt{3}$",
+           "as": "$50\\sqrt{3}$"
+          },
+          {
+           "en": "$100\\sqrt{3}$",
+           "as": "$100\\sqrt{3}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Put the side in.",
+          "as": "বাহু বহুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the side, then the formula does the rest.",
+        "as": "বাহু উলিয়ালে বাকীখিনি সূত্ৰই কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "An equilateral triangle has perimeter 12 cm. Find its area.",
+        "as": "সমবাহু ত্ৰিভুজৰ পৰিসীমা 12 ছেমি। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Side?",
+          "as": "বাহু?"
+         },
+         "options": [
+          {
+           "en": "12 cm",
+           "as": "12 cm"
+          },
+          {
+           "en": "4 cm",
+           "as": "4 cm"
+          },
+          {
+           "en": "6 cm",
+           "as": "6 cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Three equal sides.",
+          "as": "তিনিটা সমান বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area formula?",
+          "as": "কালিৰ সূত্ৰ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{\\sqrt{3}}{4}a^2$",
+           "as": "$\\frac{\\sqrt{3}}{4}a^2$"
+          },
+          {
+           "en": "$\\frac{\\sqrt{3}}{2}a$",
+           "as": "$\\frac{\\sqrt{3}}{2}a$"
+          },
+          {
+           "en": "$\\frac{1}{2}a^2$",
+           "as": "$\\frac{1}{2}a^2$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It comes from half a base times the height.",
+          "as": "ই আধা ভূমি × উচ্চতাৰ পৰা আহে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "$8\\sqrt{3}$",
+           "as": "$8\\sqrt{3}$"
+          },
+          {
+           "en": "$16\\sqrt{3}$",
+           "as": "$16\\sqrt{3}$"
+          },
+          {
+           "en": "$4\\sqrt{3}$",
+           "as": "$4\\sqrt{3}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Put the side in.",
+          "as": "বাহু বহুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the side, then the formula does the rest.",
+        "as": "বাহু উলিয়ালে বাকীখিনি সূত্ৰই কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "An equilateral triangle has perimeter 36 cm. Find its area.",
+        "as": "সমবাহু ত্ৰিভুজৰ পৰিসীমা 36 ছেমি। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Side?",
+          "as": "বাহু?"
+         },
+         "options": [
+          {
+           "en": "12 cm",
+           "as": "12 cm"
+          },
+          {
+           "en": "36 cm",
+           "as": "36 cm"
+          },
+          {
+           "en": "18 cm",
+           "as": "18 cm"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Three equal sides.",
+          "as": "তিনিটা সমান বাহু।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area formula?",
+          "as": "কালিৰ সূত্ৰ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{\\sqrt{3}}{2}a$",
+           "as": "$\\frac{\\sqrt{3}}{2}a$"
+          },
+          {
+           "en": "$\\frac{1}{2}a^2$",
+           "as": "$\\frac{1}{2}a^2$"
+          },
+          {
+           "en": "$\\frac{\\sqrt{3}}{4}a^2$",
+           "as": "$\\frac{\\sqrt{3}}{4}a^2$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It comes from half a base times the height.",
+          "as": "ই আধা ভূমি × উচ্চতাৰ পৰা আহে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "$144\\sqrt{3}$",
+           "as": "$144\\sqrt{3}$"
+          },
+          {
+           "en": "$36\\sqrt{3}$",
+           "as": "$36\\sqrt{3}$"
+          },
+          {
+           "en": "$72\\sqrt{3}$",
+           "as": "$72\\sqrt{3}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Put the side in.",
+          "as": "বাহু বহুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the side, then the formula does the rest.",
+        "as": "বাহু উলিয়ালে বাকীখিনি সূত্ৰই কৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.x.q6",
+     "type": "tf",
+     "skill": "g-types",
+     "s": {
+      "en": "A triangle can have two right angles.",
+      "as": "ত্ৰিভুজৰ দুটা সমকোণ থাকিব পাৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Two right angles already use 180°, leaving nothing for the third.",
+      "as": "দুটা সমকোণেই 180° হৈ যায়, তৃতীয়টোৰ বাবে একো নাথাকে।"
+     }
+    },
+    {
+     "id": "m15.x.q7",
+     "type": "match",
+     "skill": "g-types",
+     "q": {
+      "en": "Match each triangle's angles to its name",
+      "as": "প্ৰতিটো ত্ৰিভুজৰ কোণক নামৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "60°, 60°, 60°",
+        "as": "60°, 60°, 60°"
+       },
+       {
+        "en": "Equilateral",
+        "as": "সমবাহু"
+       }
+      ],
+      [
+       {
+        "en": "90°, 45°, 45°",
+        "as": "90°, 45°, 45°"
+       },
+       {
+        "en": "Right isosceles",
+        "as": "সমকোণী সমদ্বিবাহু"
+       }
+      ],
+      [
+       {
+        "en": "120°, 40°, 20°",
+        "as": "120°, 40°, 20°"
+       },
+       {
+        "en": "Obtuse scalene",
+        "as": "স্থূলকোণী বিষমবাহু"
+       }
+      ],
+      [
+       {
+        "en": "70°, 70°, 40°",
+        "as": "70°, 70°, 40°"
+       },
+       {
+        "en": "Acute isosceles",
+        "as": "সূক্ষ্মকোণী সমদ্বিবাহু"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Check the biggest angle, then look for equal ones.",
+      "as": "ডাঙৰ কোণ চোৱা, তাৰ পিছত সমান কোণ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Same shape, new size",
+    "as": "একে আকৃতি, নতুন আকাৰ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Similar triangles have equal angles and sides in one ratio.",
+     "as": "সদৃশ ত্ৰিভুজৰ কোণ সমান, বাহু একে অনুপাতত।"
+    },
+    {
+     "en": "Their areas are in the square of that ratio.",
+     "as": "কালি সেই অনুপাতৰ বৰ্গত থাকে।"
+    },
+    {
+     "en": "An isosceles right triangle has sides a, a and $a\\sqrt{2}$.",
+     "as": "সমকোণী সমদ্বিবাহু ত্ৰিভুজৰ বাহু a, a আৰু $a\\sqrt{2}$।"
+    },
+    {
+     "en": "A side ratio with a perimeter gives the real sides.",
+     "as": "বাহুৰ অনুপাত আৰু পৰিসীমাই আচল বাহু দিয়ে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m15.y.s1",
+     "type": "story",
+     "title": {
+      "en": "Blow it up",
+      "as": "ডাঙৰ কৰা"
+     },
+     "text": [
+      {
+       "en": "Stretch this triangle evenly. The angles stay; only the size changes.",
+       "as": "ত্ৰিভুজটো সমানে টানা। কোণ থাকে; আকাৰহে সলনি হয়।"
+      }
+     ],
+     "widget": {
+      "kind": "triangle",
+      "triple": [
+       3,
+       4,
+       5
+      ],
+      "k": 1,
+      "max": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Double it.",
+        "as": "দুগুণ কৰা।"
+       },
+       "goal": {
+        "k": 2
+       },
+       "then": {
+        "en": "Sides double, so 6, 8, 10. But the area goes from 6 to 24, four times.",
+        "as": "বাহু দুগুণ: 6, 8, 10। কিন্তু কালি 6ৰ পৰা 24, চাৰিগুণ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.y.s2",
+     "type": "story",
+     "title": {
+      "en": "The half-square triangle",
+      "as": "আধা বৰ্গৰ ত্ৰিভুজ"
+     },
+     "text": [
+      {
+       "en": "Cut a square along its diagonal to get two isosceles right triangles.",
+       "as": "বৰ্গ এটা কৰ্ণেৰে কাটিলে দুটা সমকোণী সমদ্বিবাহু ত্ৰিভুজ হয়।"
+      },
+      {
+       "en": "So the long side is the square's diagonal.",
+       "as": "সেয়ে দীঘল বাহুটো বৰ্গৰ কৰ্ণ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Legs a, a",
+        "as": "বাহু a, a"
+       },
+       {
+        "en": "Long side $a\\sqrt{2}$",
+        "as": "দীঘল বাহু $a\\sqrt{2}$"
+       },
+       {
+        "en": "Area $\\frac{a^2}{2}$",
+        "as": "কালি $\\frac{a^2}{2}$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m15.y.q1",
+     "type": "solve",
+     "skill": "g-similar",
+     "q": {
+      "en": "Two similar triangles have sides in the ratio 3 : 5. Write the ratio of their areas as a fraction.",
+      "as": "দুটা সদৃশ ত্ৰিভুজৰ বাহুৰ অনুপাত 3 : 5। কালিৰ অনুপাত ভগ্নাংশত লিখা।"
+     },
+     "answer": "9/25",
+     "why": {
+      "en": "Square the side ratio.",
+      "as": "বাহুৰ অনুপাত বৰ্গ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "3/5",
+       "tag": "m-scale-linear",
+       "why": {
+        "en": "Area grows in two directions, so square the ratio.",
+        "as": "কালি দুই দিশে বাঢ়ে, সেয়ে অনুপাত বৰ্গ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Two similar triangles have sides in the ratio 3 : 5. Write the ratio of their areas as a fraction.",
+        "as": "দুটা সদৃশ ত্ৰিভুজৰ বাহুৰ অনুপাত 3 : 5। কালিৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "9/25",
+       "why": {
+        "en": "Square the side ratio.",
+        "as": "বাহুৰ অনুপাত বৰ্গ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "3/5",
+         "tag": "m-scale-linear",
+         "why": {
+          "en": "Area grows in two directions, so square the ratio.",
+          "as": "কালি দুই দিশে বাঢ়ে, সেয়ে অনুপাত বৰ্গ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two similar triangles have sides in the ratio 2 : 3. Write the ratio of their areas as a fraction.",
+        "as": "দুটা সদৃশ ত্ৰিভুজৰ বাহুৰ অনুপাত 2 : 3। কালিৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "4/9",
+       "why": {
+        "en": "Square the side ratio.",
+        "as": "বাহুৰ অনুপাত বৰ্গ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "2/3",
+         "tag": "m-scale-linear",
+         "why": {
+          "en": "Area grows in two directions, so square the ratio.",
+          "as": "কালি দুই দিশে বাঢ়ে, সেয়ে অনুপাত বৰ্গ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two similar triangles have sides in the ratio 4 : 7. Write the ratio of their areas as a fraction.",
+        "as": "দুটা সদৃশ ত্ৰিভুজৰ বাহুৰ অনুপাত 4 : 7। কালিৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "16/49",
+       "why": {
+        "en": "Square the side ratio.",
+        "as": "বাহুৰ অনুপাত বৰ্গ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "4/7",
+         "tag": "m-scale-linear",
+         "why": {
+          "en": "Area grows in two directions, so square the ratio.",
+          "as": "কালি দুই দিশে বাঢ়ে, সেয়ে অনুপাত বৰ্গ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.y.q2",
+     "type": "solve",
+     "skill": "g-similar",
+     "q": {
+      "en": "In similar triangles, a side of 6 cm matches a side of 10 cm. Another side of the smaller one is 9 cm. Find the matching larger side.",
+      "as": "সদৃশ ত্ৰিভুজত 6 ছেমি বাহু 10 ছেমি বাহুৰ অনুৰূপ। সৰুটোৰ আন এটা বাহু 9 ছেমি। ডাঙৰটোৰ অনুৰূপ বাহু উলিওৱা।"
+     },
+     "answer": "15",
+     "suffix": {
+      "en": "cm",
+      "as": "ছেমি"
+     },
+     "why": {
+      "en": "Every side scales by $\\frac{10}{6}$.",
+      "as": "প্ৰতিটো বাহু $\\frac{10}{6}$গুণ হয়।"
+     },
+     "traps": [
+      {
+       "ans": "13",
+       "tag": "m-ratio-add",
+       "why": {
+        "en": "Sides scale by multiplying, not by adding the same amount.",
+        "as": "বাহু পূৰণেৰে বাঢ়ে, একে সংখ্যা যোগেৰে নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In similar triangles, a side of 6 cm matches a side of 10 cm. Another side of the smaller one is 9 cm. Find the matching larger side.",
+        "as": "সদৃশ ত্ৰিভুজত 6 ছেমি বাহু 10 ছেমি বাহুৰ অনুৰূপ। সৰুটোৰ আন এটা বাহু 9 ছেমি। ডাঙৰটোৰ অনুৰূপ বাহু উলিওৱা।"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Every side scales by $\\frac{10}{6}$.",
+        "as": "প্ৰতিটো বাহু $\\frac{10}{6}$গুণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "13",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Sides scale by multiplying, not by adding the same amount.",
+          "as": "বাহু পূৰণেৰে বাঢ়ে, একে সংখ্যা যোগেৰে নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In similar triangles, a side of 4 cm matches a side of 12 cm. Another side of the smaller one is 5 cm. Find the matching larger side.",
+        "as": "সদৃশ ত্ৰিভুজত 4 ছেমি বাহু 12 ছেমি বাহুৰ অনুৰূপ। সৰুটোৰ আন এটা বাহু 5 ছেমি। ডাঙৰটোৰ অনুৰূপ বাহু উলিওৱা।"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Every side scales by $\\frac{12}{4}$.",
+        "as": "প্ৰতিটো বাহু $\\frac{12}{4}$গুণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "13",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Sides scale by multiplying, not by adding the same amount.",
+          "as": "বাহু পূৰণেৰে বাঢ়ে, একে সংখ্যা যোগেৰে নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In similar triangles, a side of 8 cm matches a side of 12 cm. Another side of the smaller one is 10 cm. Find the matching larger side.",
+        "as": "সদৃশ ত্ৰিভুজত 8 ছেমি বাহু 12 ছেমি বাহুৰ অনুৰূপ। সৰুটোৰ আন এটা বাহু 10 ছেমি। ডাঙৰটোৰ অনুৰূপ বাহু উলিওৱা।"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Every side scales by $\\frac{12}{8}$.",
+        "as": "প্ৰতিটো বাহু $\\frac{12}{8}$গুণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Sides scale by multiplying, not by adding the same amount.",
+          "as": "বাহু পূৰণেৰে বাঢ়ে, একে সংখ্যা যোগেৰে নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.y.q3",
+     "type": "solve",
+     "skill": "g-similar",
+     "q": {
+      "en": "Two similar triangles have areas in the ratio 4 : 9. Write the ratio of their sides as a fraction.",
+      "as": "দুটা সদৃশ ত্ৰিভুজৰ কালিৰ অনুপাত 4 : 9। বাহুৰ অনুপাত ভগ্নাংশত লিখা।"
+     },
+     "answer": "2/3",
+     "why": {
+      "en": "Take the square root.",
+      "as": "বৰ্গমূল লোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two similar triangles have areas in the ratio 4 : 9. Write the ratio of their sides as a fraction.",
+        "as": "দুটা সদৃশ ত্ৰিভুজৰ কালিৰ অনুপাত 4 : 9। বাহুৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "2/3",
+       "why": {
+        "en": "Take the square root.",
+        "as": "বৰ্গমূল লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two similar triangles have areas in the ratio 25 : 49. Write the ratio of their sides as a fraction.",
+        "as": "দুটা সদৃশ ত্ৰিভুজৰ কালিৰ অনুপাত 25 : 49। বাহুৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "5/7",
+       "why": {
+        "en": "Take the square root.",
+        "as": "বৰ্গমূল লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two similar triangles have areas in the ratio 9 : 16. Write the ratio of their sides as a fraction.",
+        "as": "দুটা সদৃশ ত্ৰিভুজৰ কালিৰ অনুপাত 9 : 16। বাহুৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "3/4",
+       "why": {
+        "en": "Take the square root.",
+        "as": "বৰ্গমূল লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.y.q4",
+     "type": "stepwise",
+     "skill": "g-similar",
+     "q": {
+      "en": "An isosceles right triangle has hypotenuse $10\\sqrt{2}$ cm. Find its area.",
+      "as": "সমকোণী সমদ্বিবাহু ত্ৰিভুজৰ অতিভুজ $10\\sqrt{2}$ ছেমি। কালি উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Each equal side?",
+        "as": "প্ৰতিটো সমান বাহু?"
+       },
+       "options": [
+        {
+         "en": "$10\\sqrt{2}$ cm",
+         "as": "$10\\sqrt{2}$ cm"
+        },
+        {
+         "en": "10 cm",
+         "as": "10 cm"
+        },
+        {
+         "en": "20 cm",
+         "as": "20 cm"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Long side is a√2.",
+        "as": "দীঘল বাহু a√2।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Area?",
+        "as": "কালি?"
+       },
+       "options": [
+        {
+         "en": "20 sq cm",
+         "as": "20 sq cm"
+        },
+        {
+         "en": "50 sq cm",
+         "as": "50 sq cm"
+        },
+        {
+         "en": "100 sq cm",
+         "as": "100 sq cm"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Half of side × side.",
+        "as": "বাহু × বাহুৰ আধা।"
+       },
+       "tag": "m-tri-area"
+      }
+     ],
+     "why": {
+      "en": "The two equal sides are base and height.",
+      "as": "দুটা সমান বাহুৱেই ভূমি আৰু উচ্চতা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "An isosceles right triangle has hypotenuse $10\\sqrt{2}$ cm. Find its area.",
+        "as": "সমকোণী সমদ্বিবাহু ত্ৰিভুজৰ অতিভুজ $10\\sqrt{2}$ ছেমি। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Each equal side?",
+          "as": "প্ৰতিটো সমান বাহু?"
+         },
+         "options": [
+          {
+           "en": "$10\\sqrt{2}$ cm",
+           "as": "$10\\sqrt{2}$ cm"
+          },
+          {
+           "en": "10 cm",
+           "as": "10 cm"
+          },
+          {
+           "en": "20 cm",
+           "as": "20 cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Long side is a√2.",
+          "as": "দীঘল বাহু a√2।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "20 sq cm",
+           "as": "20 sq cm"
+          },
+          {
+           "en": "50 sq cm",
+           "as": "50 sq cm"
+          },
+          {
+           "en": "100 sq cm",
+           "as": "100 sq cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half of side × side.",
+          "as": "বাহু × বাহুৰ আধা।"
+         },
+         "tag": "m-tri-area"
+        }
+       ],
+       "why": {
+        "en": "The two equal sides are base and height.",
+        "as": "দুটা সমান বাহুৱেই ভূমি আৰু উচ্চতা।"
+       }
+      },
+      {
+       "q": {
+        "en": "An isosceles right triangle has hypotenuse $6\\sqrt{2}$ cm. Find its area.",
+        "as": "সমকোণী সমদ্বিবাহু ত্ৰিভুজৰ অতিভুজ $6\\sqrt{2}$ ছেমি। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Each equal side?",
+          "as": "প্ৰতিটো সমান বাহু?"
+         },
+         "options": [
+          {
+           "en": "6 cm",
+           "as": "6 cm"
+          },
+          {
+           "en": "12 cm",
+           "as": "12 cm"
+          },
+          {
+           "en": "$6\\sqrt{2}$ cm",
+           "as": "$6\\sqrt{2}$ cm"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Long side is a√2.",
+          "as": "দীঘল বাহু a√2।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "36 sq cm",
+           "as": "36 sq cm"
+          },
+          {
+           "en": "18 sq cm",
+           "as": "18 sq cm"
+          },
+          {
+           "en": "12 sq cm",
+           "as": "12 sq cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half of side × side.",
+          "as": "বাহু × বাহুৰ আধা।"
+         },
+         "tag": "m-tri-area"
+        }
+       ],
+       "why": {
+        "en": "The two equal sides are base and height.",
+        "as": "দুটা সমান বাহুৱেই ভূমি আৰু উচ্চতা।"
+       }
+      },
+      {
+       "q": {
+        "en": "An isosceles right triangle has hypotenuse $8\\sqrt{2}$ cm. Find its area.",
+        "as": "সমকোণী সমদ্বিবাহু ত্ৰিভুজৰ অতিভুজ $8\\sqrt{2}$ ছেমি। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Each equal side?",
+          "as": "প্ৰতিটো সমান বাহু?"
+         },
+         "options": [
+          {
+           "en": "16 cm",
+           "as": "16 cm"
+          },
+          {
+           "en": "8 cm",
+           "as": "8 cm"
+          },
+          {
+           "en": "$8\\sqrt{2}$ cm",
+           "as": "$8\\sqrt{2}$ cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Long side is a√2.",
+          "as": "দীঘল বাহু a√2।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "64 sq cm",
+           "as": "64 sq cm"
+          },
+          {
+           "en": "32 sq cm",
+           "as": "32 sq cm"
+          },
+          {
+           "en": "16 sq cm",
+           "as": "16 sq cm"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half of side × side.",
+          "as": "বাহু × বাহুৰ আধা।"
+         },
+         "tag": "m-tri-area"
+        }
+       ],
+       "why": {
+        "en": "The two equal sides are base and height.",
+        "as": "দুটা সমান বাহুৱেই ভূমি আৰু উচ্চতা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.y.q5",
+     "type": "solve",
+     "skill": "g-similar",
+     "hints": [
+      {
+       "en": "One part is the perimeter ÷ 12.",
+       "as": "এটা ভাগ = পৰিসীমা ÷ 12।"
+      }
+     ],
+     "q": {
+      "en": "A triangle has sides in the ratio 3 : 4 : 5 and perimeter 36 cm. Find its area.",
+      "as": "ত্ৰিভুজৰ বাহুৰ অনুপাত 3 : 4 : 5, পৰিসীমা 36 ছেমি। কালি উলিওৱা।"
+     },
+     "answer": "54",
+     "suffix": {
+      "en": "sq cm",
+      "as": "বৰ্গ ছেমি"
+     },
+     "why": {
+      "en": "3-4-5 has a right angle, so 3 and 4 are base and height.",
+      "as": "3-4-5ত সমকোণ আছে, সেয়ে 3 আৰু 4 ভূমি আৰু উচ্চতা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A triangle has sides in the ratio 3 : 4 : 5 and perimeter 36 cm. Find its area.",
+        "as": "ত্ৰিভুজৰ বাহুৰ অনুপাত 3 : 4 : 5, পৰিসীমা 36 ছেমি। কালি উলিওৱা।"
+       },
+       "answer": "54",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "3-4-5 has a right angle, so 3 and 4 are base and height.",
+        "as": "3-4-5ত সমকোণ আছে, সেয়ে 3 আৰু 4 ভূমি আৰু উচ্চতা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A triangle has sides in the ratio 3 : 4 : 5 and perimeter 24 cm. Find its area.",
+        "as": "ত্ৰিভুজৰ বাহুৰ অনুপাত 3 : 4 : 5, পৰিসীমা 24 ছেমি। কালি উলিওৱা।"
+       },
+       "answer": "24",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "3-4-5 has a right angle, so 3 and 4 are base and height.",
+        "as": "3-4-5ত সমকোণ আছে, সেয়ে 3 আৰু 4 ভূমি আৰু উচ্চতা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A triangle has sides in the ratio 3 : 4 : 5 and perimeter 48 cm. Find its area.",
+        "as": "ত্ৰিভুজৰ বাহুৰ অনুপাত 3 : 4 : 5, পৰিসীমা 48 ছেমি। কালি উলিওৱা।"
+       },
+       "answer": "96",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "3-4-5 has a right angle, so 3 and 4 are base and height.",
+        "as": "3-4-5ত সমকোণ আছে, সেয়ে 3 আৰু 4 ভূমি আৰু উচ্চতা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.y.q6",
+     "type": "tf",
+     "skill": "g-similar",
+     "s": {
+      "en": "Doubling every side of a triangle doubles its area.",
+      "as": "ত্ৰিভুজৰ প্ৰতিটো বাহু দুগুণ কৰিলে কালি দুগুণ হয়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It becomes four times the area.",
+      "as": "কালি চাৰিগুণ হয়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-scale-linear",
+       "why": {
+        "en": "Area scales by the square.",
+        "as": "কালি বৰ্গ হিচাপে বাঢ়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.y.q7",
+     "type": "match",
+     "skill": "g-similar",
+     "q": {
+      "en": "Match each side ratio to its area ratio",
+      "as": "প্ৰতিটো বাহুৰ অনুপাতক কালিৰ অনুপাতৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 : 2",
+        "as": "1 : 2"
+       },
+       {
+        "en": "1 : 4",
+        "as": "1 : 4"
+       }
+      ],
+      [
+       {
+        "en": "2 : 3",
+        "as": "2 : 3"
+       },
+       {
+        "en": "4 : 9",
+        "as": "4 : 9"
+       }
+      ],
+      [
+       {
+        "en": "3 : 4",
+        "as": "3 : 4"
+       },
+       {
+        "en": "9 : 16",
+        "as": "9 : 16"
+       }
+      ],
+      [
+       {
+        "en": "3 : 5",
+        "as": "3 : 5"
+       },
+       {
+        "en": "9 : 25",
+        "as": "9 : 25"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Square both sides of the ratio.",
+      "as": "অনুপাতৰ দুয়োফাল বৰ্গ কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u7",
+   "title": {
+    "en": "Rectangles from clues",
+    "as": "সূত্ৰৰ পৰা আয়ত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Half the perimeter is length + breadth.",
+     "as": "পৰিসীমাৰ আধা = দৈৰ্ঘ্য + প্ৰস্থ।"
+    },
+    {
+     "en": "The diagonal is the long side of a right triangle.",
+     "as": "কৰ্ণ সমকোণী ত্ৰিভুজৰ দীঘল বাহু।"
+    },
+    {
+     "en": "$(l + b)^2 = d^2 + 2 \\times$ area links the clues.",
+     "as": "$(l + b)^2 = d^2 + 2 \\times$ কালিয়ে সূত্ৰবোৰ জোৰে।"
+    },
+    {
+     "en": "For a fixed perimeter, the square has the largest area.",
+     "as": "নিৰ্দিষ্ট পৰিসীমাত বৰ্গৰ কালি আটাইতকৈ বেছি।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m15.z.s1",
+     "type": "story",
+     "title": {
+      "en": "One fence, many fields",
+      "as": "এটা বেৰ, বহু পথাৰ"
+     },
+     "text": [
+      {
+       "en": "This fence is 28 m long. Change the length of the field; the breadth must give way.",
+       "as": "এই বেৰ 28 মিটাৰ দীঘল। পথাৰৰ দৈৰ্ঘ্য সলোৱা; প্ৰস্থই সেই অনুসৰি সলনি হ'ব।"
+      }
+     ],
+     "widget": {
+      "kind": "fence",
+      "p": 28,
+      "l": 12
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make the length 8.",
+        "as": "দৈৰ্ঘ্য 8 কৰা।"
+       },
+       "goal": {
+        "l": 8
+       },
+       "then": {
+        "en": "8 by 6 has area 48 and diagonal 10. Same fence, bigger field than 12 by 2.",
+        "as": "8 বাই 6ৰ কালি 48, কৰ্ণ 10। একে বেৰ, 12 বাই 2তকৈ ডাঙৰ পথাৰ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now make it square.",
+        "as": "এতিয়া বৰ্গ কৰা।"
+       },
+       "goal": {
+        "l": 7
+       },
+       "then": {
+        "en": "7 by 7 has area 49, the most this fence can hold.",
+        "as": "7 বাই 7ৰ কালি 49, এই বেৰে ধৰিব পৰা সৰ্বাধিক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.z.s2",
+     "type": "story",
+     "title": {
+      "en": "Two clues are enough",
+      "as": "দুটা সূত্ৰই যথেষ্ট"
+     },
+     "text": [
+      {
+       "en": "Diagonal and area look unrelated, but both sit inside one square of the sum.",
+       "as": "কৰ্ণ আৰু কালি সম্পৰ্কহীন যেন লাগে, কিন্তু দুয়ো যোগফলৰ বৰ্গত থাকে।"
+      },
+      {
+       "en": "With diagonal 13 and area 60: $13^2 + 120 = 289$, so l + b = 17.",
+       "as": "কৰ্ণ 13, কালি 60 হ'লে: $13^2 + 120 = 289$, সেয়ে l + b = 17।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$d^2 + 2 \\times$ area",
+        "as": "$d^2 + 2 \\times$ কালি"
+       },
+       {
+        "en": "Root gives l + b",
+        "as": "মূলে l + b দিয়ে"
+       },
+       {
+        "en": "Double for perimeter",
+        "as": "দুগুণ কৰিলে পৰিসীমা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m15.z.q1",
+     "type": "explore",
+     "skill": "g-rect",
+     "q": {
+      "en": "A rectangle has perimeter 34 m and area 60 sq m. Slide to find its length, the longer side.",
+      "as": "আয়তৰ পৰিসীমা 34 মিটাৰ, কালি 60 বৰ্গ মিটাৰ। টানি ইয়াৰ দৈৰ্ঘ্য, দীঘল বাহুটো, উলিওৱা।"
+     },
+     "widget": {
+      "kind": "fence",
+      "p": 34,
+      "l": 16
+     },
+     "target": 12,
+     "answerText": {
+      "en": "Length 12 m",
+      "as": "দৈৰ্ঘ্য 12 মিটাৰ"
+     },
+     "why": {
+      "en": "12 × 5 = 60.",
+      "as": "12 × 5 = 60।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A rectangle has perimeter 34 m and area 60 sq m. Slide to find its length, the longer side.",
+        "as": "আয়তৰ পৰিসীমা 34 মিটাৰ, কালি 60 বৰ্গ মিটাৰ। টানি ইয়াৰ দৈৰ্ঘ্য, দীঘল বাহুটো, উলিওৱা।"
+       },
+       "widget": {
+        "kind": "fence",
+        "p": 34,
+        "l": 16
+       },
+       "target": 12,
+       "answerText": {
+        "en": "Length 12 m",
+        "as": "দৈৰ্ঘ্য 12 মিটাৰ"
+       },
+       "why": {
+        "en": "12 × 5 = 60.",
+        "as": "12 × 5 = 60।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rectangle has perimeter 28 m and area 48 sq m. Slide to find its length, the longer side.",
+        "as": "আয়তৰ পৰিসীমা 28 মিটাৰ, কালি 48 বৰ্গ মিটাৰ। টানি ইয়াৰ দৈৰ্ঘ্য, দীঘল বাহুটো, উলিওৱা।"
+       },
+       "widget": {
+        "kind": "fence",
+        "p": 28,
+        "l": 13
+       },
+       "target": 8,
+       "answerText": {
+        "en": "Length 8 m",
+        "as": "দৈৰ্ঘ্য 8 মিটাৰ"
+       },
+       "why": {
+        "en": "8 × 6 = 48.",
+        "as": "8 × 6 = 48।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rectangle has perimeter 46 m and area 120 sq m. Slide to find its length, the longer side.",
+        "as": "আয়তৰ পৰিসীমা 46 মিটাৰ, কালি 120 বৰ্গ মিটাৰ। টানি ইয়াৰ দৈৰ্ঘ্য, দীঘল বাহুটো, উলিওৱা।"
+       },
+       "widget": {
+        "kind": "fence",
+        "p": 46,
+        "l": 22
+       },
+       "target": 15,
+       "answerText": {
+        "en": "Length 15 m",
+        "as": "দৈৰ্ঘ্য 15 মিটাৰ"
+       },
+       "why": {
+        "en": "15 × 8 = 120.",
+        "as": "15 × 8 = 120।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.z.q2",
+     "type": "solve",
+     "skill": "g-rect",
+     "q": {
+      "en": "Find the diagonal of a rectangle 8 cm by 15 cm.",
+      "as": "8 ছেমি বাই 15 ছেমি আয়তৰ কৰ্ণ উলিওৱা।"
+     },
+     "answer": "17",
+     "suffix": {
+      "en": "cm",
+      "as": "ছেমি"
+     },
+     "why": {
+      "en": "$\\sqrt{64 + 225}$.",
+      "as": "$\\sqrt{64 + 225}$।"
+     },
+     "traps": [
+      {
+       "ans": "23",
+       "tag": "m-root-add",
+       "why": {
+        "en": "Square, add, then take the root.",
+        "as": "বৰ্গ কৰি যোগ কৰি মূল লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the diagonal of a rectangle 8 cm by 15 cm.",
+        "as": "8 ছেমি বাই 15 ছেমি আয়তৰ কৰ্ণ উলিওৱা।"
+       },
+       "answer": "17",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "$\\sqrt{64 + 225}$.",
+        "as": "$\\sqrt{64 + 225}$।"
+       },
+       "traps": [
+        {
+         "ans": "23",
+         "tag": "m-root-add",
+         "why": {
+          "en": "Square, add, then take the root.",
+          "as": "বৰ্গ কৰি যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the diagonal of a rectangle 12 cm by 5 cm.",
+        "as": "12 ছেমি বাই 5 ছেমি আয়তৰ কৰ্ণ উলিওৱা।"
+       },
+       "answer": "13",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "$\\sqrt{144 + 25}$.",
+        "as": "$\\sqrt{144 + 25}$।"
+       },
+       "traps": [
+        {
+         "ans": "17",
+         "tag": "m-root-add",
+         "why": {
+          "en": "Square, add, then take the root.",
+          "as": "বৰ্গ কৰি যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the diagonal of a rectangle 24 cm by 7 cm.",
+        "as": "24 ছেমি বাই 7 ছেমি আয়তৰ কৰ্ণ উলিওৱা।"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "$\\sqrt{576 + 49}$.",
+        "as": "$\\sqrt{576 + 49}$।"
+       },
+       "traps": [
+        {
+         "ans": "31",
+         "tag": "m-root-add",
+         "why": {
+          "en": "Square, add, then take the root.",
+          "as": "বৰ্গ কৰি যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the diagonal of a rectangle 40 cm by 9 cm.",
+        "as": "40 ছেমি বাই 9 ছেমি আয়তৰ কৰ্ণ উলিওৱা।"
+       },
+       "answer": "41",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "$\\sqrt{1600 + 81}$.",
+        "as": "$\\sqrt{1600 + 81}$।"
+       },
+       "traps": [
+        {
+         "ans": "49",
+         "tag": "m-root-add",
+         "why": {
+          "en": "Square, add, then take the root.",
+          "as": "বৰ্গ কৰি যোগ কৰি মূল লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.z.q3",
+     "type": "stepwise",
+     "skill": "g-rect",
+     "q": {
+      "en": "A rectangle's sides are in the ratio 3 : 2 and its perimeter is 50 m. Find its area.",
+      "as": "আয়তৰ বাহুৰ অনুপাত 3 : 2, পৰিসীমা 50 মিটাৰ। কালি উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Length + breadth?",
+        "as": "দৈৰ্ঘ্য + প্ৰস্থ?"
+       },
+       "options": [
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "50",
+         "as": "50"
+        },
+        {
+         "en": "100",
+         "as": "100"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Half the perimeter.",
+        "as": "পৰিসীমাৰ আধা।"
+       },
+       "tag": "m-perim-half"
+      },
+      {
+       "ask": {
+        "en": "Sides?",
+        "as": "বাহু?"
+       },
+       "options": [
+        {
+         "en": "15 and 10",
+         "as": "15 and 10"
+        },
+        {
+         "en": "3 and 2",
+         "as": "3 and 2"
+        },
+        {
+         "en": "30 and 20",
+         "as": "30 and 20"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Share in the ratio 3 : 2.",
+        "as": "3 : 2 অনুপাতত ভাগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Area?",
+        "as": "কালি?"
+       },
+       "options": [
+        {
+         "en": "150",
+         "as": "150"
+        },
+        {
+         "en": "50",
+         "as": "50"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Length × breadth.",
+        "as": "দৈৰ্ঘ্য × প্ৰস্থ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "A ratio needs one real total to become real sides.",
+      "as": "অনুপাতক আচল বাহু কৰিবলৈ এটা আচল মুঠ লাগে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A rectangle's sides are in the ratio 3 : 2 and its perimeter is 50 m. Find its area.",
+        "as": "আয়তৰ বাহুৰ অনুপাত 3 : 2, পৰিসীমা 50 মিটাৰ। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Length + breadth?",
+          "as": "দৈৰ্ঘ্য + প্ৰস্থ?"
+         },
+         "options": [
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "50",
+           "as": "50"
+          },
+          {
+           "en": "100",
+           "as": "100"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Half the perimeter.",
+          "as": "পৰিসীমাৰ আধা।"
+         },
+         "tag": "m-perim-half"
+        },
+        {
+         "ask": {
+          "en": "Sides?",
+          "as": "বাহু?"
+         },
+         "options": [
+          {
+           "en": "15 and 10",
+           "as": "15 and 10"
+          },
+          {
+           "en": "3 and 2",
+           "as": "3 and 2"
+          },
+          {
+           "en": "30 and 20",
+           "as": "30 and 20"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Share in the ratio 3 : 2.",
+          "as": "3 : 2 অনুপাতত ভাগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "150",
+           "as": "150"
+          },
+          {
+           "en": "50",
+           "as": "50"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Length × breadth.",
+          "as": "দৈৰ্ঘ্য × প্ৰস্থ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio needs one real total to become real sides.",
+        "as": "অনুপাতক আচল বাহু কৰিবলৈ এটা আচল মুঠ লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rectangle's sides are in the ratio 4 : 3 and its perimeter is 56 m. Find its area.",
+        "as": "আয়তৰ বাহুৰ অনুপাত 4 : 3, পৰিসীমা 56 মিটাৰ। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Length + breadth?",
+          "as": "দৈৰ্ঘ্য + প্ৰস্থ?"
+         },
+         "options": [
+          {
+           "en": "56",
+           "as": "56"
+          },
+          {
+           "en": "112",
+           "as": "112"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Half the perimeter.",
+          "as": "পৰিসীমাৰ আধা।"
+         },
+         "tag": "m-perim-half"
+        },
+        {
+         "ask": {
+          "en": "Sides?",
+          "as": "বাহু?"
+         },
+         "options": [
+          {
+           "en": "16 and 12",
+           "as": "16 and 12"
+          },
+          {
+           "en": "4 and 3",
+           "as": "4 and 3"
+          },
+          {
+           "en": "32 and 24",
+           "as": "32 and 24"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Share in the ratio 4 : 3.",
+          "as": "4 : 3 অনুপাতত ভাগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "192",
+           "as": "192"
+          },
+          {
+           "en": "48",
+           "as": "48"
+          },
+          {
+           "en": "56",
+           "as": "56"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Length × breadth.",
+          "as": "দৈৰ্ঘ্য × প্ৰস্থ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio needs one real total to become real sides.",
+        "as": "অনুপাতক আচল বাহু কৰিবলৈ এটা আচল মুঠ লাগে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rectangle's sides are in the ratio 5 : 2 and its perimeter is 84 m. Find its area.",
+        "as": "আয়তৰ বাহুৰ অনুপাত 5 : 2, পৰিসীমা 84 মিটাৰ। কালি উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Length + breadth?",
+          "as": "দৈৰ্ঘ্য + প্ৰস্থ?"
+         },
+         "options": [
+          {
+           "en": "168",
+           "as": "168"
+          },
+          {
+           "en": "42",
+           "as": "42"
+          },
+          {
+           "en": "84",
+           "as": "84"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Half the perimeter.",
+          "as": "পৰিসীমাৰ আধা।"
+         },
+         "tag": "m-perim-half"
+        },
+        {
+         "ask": {
+          "en": "Sides?",
+          "as": "বাহু?"
+         },
+         "options": [
+          {
+           "en": "60 and 24",
+           "as": "60 and 24"
+          },
+          {
+           "en": "5 and 2",
+           "as": "5 and 2"
+          },
+          {
+           "en": "30 and 12",
+           "as": "30 and 12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Share in the ratio 5 : 2.",
+          "as": "5 : 2 অনুপাতত ভাগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Area?",
+          "as": "কালি?"
+         },
+         "options": [
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "84",
+           "as": "84"
+          },
+          {
+           "en": "360",
+           "as": "360"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Length × breadth.",
+          "as": "দৈৰ্ঘ্য × প্ৰস্থ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio needs one real total to become real sides.",
+        "as": "অনুপাতক আচল বাহু কৰিবলৈ এটা আচল মুঠ লাগে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.z.q4",
+     "type": "stepwise",
+     "skill": "g-rect",
+     "q": {
+      "en": "A rectangle has diagonal 13 m and area 60 sq m. Find its perimeter.",
+      "as": "আয়তৰ কৰ্ণ 13 মিটাৰ, কালি 60 বৰ্গ মিটাৰ। পৰিসীমা উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "$(l + b)^2$?",
+        "as": "$(l + b)^2$?"
+       },
+       "options": [
+        {
+         "en": "289",
+         "as": "289"
+        },
+        {
+         "en": "229",
+         "as": "229"
+        },
+        {
+         "en": "169",
+         "as": "169"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "$d^2 + 2 \\times$ area.",
+        "as": "$d^2 + 2 \\times$ কালি।"
+       }
+      },
+      {
+       "ask": {
+        "en": "l + b?",
+        "as": "l + b?"
+       },
+       "options": [
+        {
+         "en": "34",
+         "as": "34"
+        },
+        {
+         "en": "13",
+         "as": "13"
+        },
+        {
+         "en": "17",
+         "as": "17"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Take the root.",
+        "as": "মূল লোৱা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Perimeter?",
+        "as": "পৰিসীমা?"
+       },
+       "options": [
+        {
+         "en": "52",
+         "as": "52"
+        },
+        {
+         "en": "34",
+         "as": "34"
+        },
+        {
+         "en": "17",
+         "as": "17"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Double it.",
+        "as": "দুগুণ কৰা।"
+       },
+       "tag": "m-perim-half"
+      }
+     ],
+     "why": {
+      "en": "You never needed the sides themselves.",
+      "as": "বাহু নিজে কেতিয়াও নালাগিল।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A rectangle has diagonal 13 m and area 60 sq m. Find its perimeter.",
+        "as": "আয়তৰ কৰ্ণ 13 মিটাৰ, কালি 60 বৰ্গ মিটাৰ। পৰিসীমা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "$(l + b)^2$?",
+          "as": "$(l + b)^2$?"
+         },
+         "options": [
+          {
+           "en": "289",
+           "as": "289"
+          },
+          {
+           "en": "229",
+           "as": "229"
+          },
+          {
+           "en": "169",
+           "as": "169"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$d^2 + 2 \\times$ area.",
+          "as": "$d^2 + 2 \\times$ কালি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "l + b?",
+          "as": "l + b?"
+         },
+         "options": [
+          {
+           "en": "34",
+           "as": "34"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "17",
+           "as": "17"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Take the root.",
+          "as": "মূল লোৱা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Perimeter?",
+          "as": "পৰিসীমা?"
+         },
+         "options": [
+          {
+           "en": "52",
+           "as": "52"
+          },
+          {
+           "en": "34",
+           "as": "34"
+          },
+          {
+           "en": "17",
+           "as": "17"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Double it.",
+          "as": "দুগুণ কৰা।"
+         },
+         "tag": "m-perim-half"
+        }
+       ],
+       "why": {
+        "en": "You never needed the sides themselves.",
+        "as": "বাহু নিজে কেতিয়াও নালাগিল।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rectangle has diagonal 10 m and area 48 sq m. Find its perimeter.",
+        "as": "আয়তৰ কৰ্ণ 10 মিটাৰ, কালি 48 বৰ্গ মিটাৰ। পৰিসীমা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "$(l + b)^2$?",
+          "as": "$(l + b)^2$?"
+         },
+         "options": [
+          {
+           "en": "196",
+           "as": "196"
+          },
+          {
+           "en": "148",
+           "as": "148"
+          },
+          {
+           "en": "100",
+           "as": "100"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$d^2 + 2 \\times$ area.",
+          "as": "$d^2 + 2 \\times$ কালি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "l + b?",
+          "as": "l + b?"
+         },
+         "options": [
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take the root.",
+          "as": "মূল লোৱা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Perimeter?",
+          "as": "পৰিসীমা?"
+         },
+         "options": [
+          {
+           "en": "28",
+           "as": "28"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "40",
+           "as": "40"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Double it.",
+          "as": "দুগুণ কৰা।"
+         },
+         "tag": "m-perim-half"
+        }
+       ],
+       "why": {
+        "en": "You never needed the sides themselves.",
+        "as": "বাহু নিজে কেতিয়াও নালাগিল।"
+       }
+      },
+      {
+       "q": {
+        "en": "A rectangle has diagonal 17 m and area 120 sq m. Find its perimeter.",
+        "as": "আয়তৰ কৰ্ণ 17 মিটাৰ, কালি 120 বৰ্গ মিটাৰ। পৰিসীমা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "$(l + b)^2$?",
+          "as": "$(l + b)^2$?"
+         },
+         "options": [
+          {
+           "en": "529",
+           "as": "529"
+          },
+          {
+           "en": "409",
+           "as": "409"
+          },
+          {
+           "en": "289",
+           "as": "289"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$d^2 + 2 \\times$ area.",
+          "as": "$d^2 + 2 \\times$ কালি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "l + b?",
+          "as": "l + b?"
+         },
+         "options": [
+          {
+           "en": "46",
+           "as": "46"
+          },
+          {
+           "en": "17",
+           "as": "17"
+          },
+          {
+           "en": "23",
+           "as": "23"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Take the root.",
+          "as": "মূল লোৱা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Perimeter?",
+          "as": "পৰিসীমা?"
+         },
+         "options": [
+          {
+           "en": "23",
+           "as": "23"
+          },
+          {
+           "en": "46",
+           "as": "46"
+          },
+          {
+           "en": "68",
+           "as": "68"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Double it.",
+          "as": "দুগুণ কৰা।"
+         },
+         "tag": "m-perim-half"
+        }
+       ],
+       "why": {
+        "en": "You never needed the sides themselves.",
+        "as": "বাহু নিজে কেতিয়াও নালাগিল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.z.q5",
+     "type": "solve",
+     "skill": "g-rect",
+     "q": {
+      "en": "A square and a 18 by 12 rectangle have equal perimeters. By how much is the square's area bigger?",
+      "as": "এটা বৰ্গ আৰু 18 বাই 12 আয়তৰ পৰিসীমা সমান। বৰ্গৰ কালি কিমান বেছি?"
+     },
+     "answer": "9",
+     "why": {
+      "en": "The square's side is 15.",
+      "as": "বৰ্গৰ বাহু 15।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A square and a 18 by 12 rectangle have equal perimeters. By how much is the square's area bigger?",
+        "as": "এটা বৰ্গ আৰু 18 বাই 12 আয়তৰ পৰিসীমা সমান। বৰ্গৰ কালি কিমান বেছি?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "The square's side is 15.",
+        "as": "বৰ্গৰ বাহু 15।"
+       }
+      },
+      {
+       "q": {
+        "en": "A square and a 20 by 10 rectangle have equal perimeters. By how much is the square's area bigger?",
+        "as": "এটা বৰ্গ আৰু 20 বাই 10 আয়তৰ পৰিসীমা সমান। বৰ্গৰ কালি কিমান বেছি?"
+       },
+       "answer": "25",
+       "why": {
+        "en": "The square's side is 15.",
+        "as": "বৰ্গৰ বাহু 15।"
+       }
+      },
+      {
+       "q": {
+        "en": "A square and a 16 by 10 rectangle have equal perimeters. By how much is the square's area bigger?",
+        "as": "এটা বৰ্গ আৰু 16 বাই 10 আয়তৰ পৰিসীমা সমান। বৰ্গৰ কালি কিমান বেছি?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "The square's side is 13.",
+        "as": "বৰ্গৰ বাহু 13।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.z.q6",
+     "type": "tf",
+     "skill": "g-rect",
+     "s": {
+      "en": "Two rectangles with the same perimeter have the same area.",
+      "as": "একে পৰিসীমাৰ দুটা আয়তৰ কালি একে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "12 by 2 and 7 by 7 share a perimeter but have areas 24 and 49.",
+      "as": "12 বাই 2 আৰু 7 বাই 7ৰ পৰিসীমা একে, কালি 24 আৰু 49।"
+     }
+    },
+    {
+     "id": "m15.z.q7",
+     "type": "match",
+     "skill": "g-rect",
+     "q": {
+      "en": "Match each square's side to its diagonal",
+      "as": "প্ৰতিটো বৰ্গৰ বাহুক কৰ্ণৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "$5\\sqrt{2}$",
+        "as": "$5\\sqrt{2}$"
+       }
+      ],
+      [
+       {
+        "en": "$\\sqrt{2}$",
+        "as": "$\\sqrt{2}$"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      [
+       {
+        "en": "$3\\sqrt{2}$",
+        "as": "$3\\sqrt{2}$"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      [
+       {
+        "en": "10",
+        "as": "10"
+       },
+       {
+        "en": "$10\\sqrt{2}$",
+        "as": "$10\\sqrt{2}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Diagonal = side × √2.",
+      "as": "কৰ্ণ = বাহু × √2।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u8",
+   "title": {
+    "en": "Chords, tangents, sectors",
+    "as": "জ্যা, স্পৰ্শক, বৃত্তকলা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A tangent meets the radius at exactly 90°.",
+     "as": "স্পৰ্শক ব্যাসাৰ্ধক ঠিক 90°ত লগ পায়।"
+    },
+    {
+     "en": "A line from the centre at right angles halves a chord.",
+     "as": "কেন্দ্ৰৰ পৰা লম্ব ৰেখাই জ্যা আধা কৰে।"
+    },
+    {
+     "en": "A sector is a fraction of the circle: angle ÷ 360.",
+     "as": "বৃত্তকলা বৃত্তৰ ভগ্নাংশ: কোণ ÷ 360।"
+    },
+    {
+     "en": "Two tangents and two radii make a four-sided shape with 360°.",
+     "as": "দুটা স্পৰ্শক আৰু দুটা ব্যাসাৰ্ধে 360°ৰ চতুৰ্ভুজ বনায়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m15.w.s1",
+     "type": "story",
+     "title": {
+      "en": "A line that only touches",
+      "as": "কেৱল চুই যোৱা ৰেখা"
+     },
+     "text": [
+      {
+       "en": "The gold line touches the circle once. Where it touches, it makes a right angle with the radius.",
+       "as": "সোণালী ৰেখাই বৃত্তক এবাৰহে চুয়ে। চোৱা ঠাইত ই ব্যাসাৰ্ধৰ সৈতে সমকোণ কৰে।"
+      }
+     ],
+     "widget": {
+      "kind": "tangent",
+      "r": 5,
+      "pq": 3,
+      "max": 24
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide Q out until the tangent is 12.",
+        "as": "স্পৰ্শক 12 নোহোৱালৈ Q টানা।"
+       },
+       "goal": {
+        "pq": 12
+       },
+       "then": {
+        "en": "Radius 5 and tangent 12 are the short sides of a right triangle, so OQ = 13.",
+        "as": "ব্যাসাৰ্ধ 5 আৰু স্পৰ্শক 12 সমকোণী ত্ৰিভুজৰ সৰু বাহু, সেয়ে OQ = 13।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.w.s2",
+     "type": "story",
+     "title": {
+      "en": "Half a chord",
+      "as": "আধা জ্যা"
+     },
+     "text": [
+      {
+       "en": "Drop a line from the centre to a chord at right angles. It lands exactly on the middle.",
+       "as": "কেন্দ্ৰৰ পৰা জ্যালৈ লম্ব টানা। ই ঠিক মাজত পৰে।"
+      },
+      {
+       "en": "The radius, that line and half the chord make a right triangle.",
+       "as": "ব্যাসাৰ্ধ, সেই ৰেখা আৰু আধা জ্যাই সমকোণী ত্ৰিভুজ বনায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Radius 13",
+        "as": "ব্যাসাৰ্ধ 13"
+       },
+       {
+        "en": "Distance 5",
+        "as": "দূৰত্ব 5"
+       },
+       {
+        "en": "Half chord 12, chord 24",
+        "as": "আধা জ্যা 12, জ্যা 24"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m15.w.q1",
+     "type": "explore",
+     "skill": "g-parts",
+     "q": {
+      "en": "A circle has radius 5. A point Q is 13 from the centre. Slide to find the tangent from Q.",
+      "as": "বৃত্তৰ ব্যাসাৰ্ধ 5। Q বিন্দু কেন্দ্ৰৰ পৰা 13 দূৰত। টানি Qৰ পৰা স্পৰ্শকৰ দৈৰ্ঘ্য উলিওৱা।"
+     },
+     "widget": {
+      "kind": "tangent",
+      "r": 5,
+      "pq": 1,
+      "max": 24
+     },
+     "target": 12,
+     "answerText": {
+      "en": "Tangent 12",
+      "as": "স্পৰ্শক 12"
+     },
+     "why": {
+      "en": "$13^2 - 5^2 = 12^2$.",
+      "as": "$13^2 - 5^2 = 12^2$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A circle has radius 5. A point Q is 13 from the centre. Slide to find the tangent from Q.",
+        "as": "বৃত্তৰ ব্যাসাৰ্ধ 5। Q বিন্দু কেন্দ্ৰৰ পৰা 13 দূৰত। টানি Qৰ পৰা স্পৰ্শকৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "widget": {
+        "kind": "tangent",
+        "r": 5,
+        "pq": 1,
+        "max": 24
+       },
+       "target": 12,
+       "answerText": {
+        "en": "Tangent 12",
+        "as": "স্পৰ্শক 12"
+       },
+       "why": {
+        "en": "$13^2 - 5^2 = 12^2$.",
+        "as": "$13^2 - 5^2 = 12^2$।"
+       }
+      },
+      {
+       "q": {
+        "en": "A circle has radius 8. A point Q is 17 from the centre. Slide to find the tangent from Q.",
+        "as": "বৃত্তৰ ব্যাসাৰ্ধ 8। Q বিন্দু কেন্দ্ৰৰ পৰা 17 দূৰত। টানি Qৰ পৰা স্পৰ্শকৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "widget": {
+        "kind": "tangent",
+        "r": 8,
+        "pq": 1,
+        "max": 24
+       },
+       "target": 15,
+       "answerText": {
+        "en": "Tangent 15",
+        "as": "স্পৰ্শক 15"
+       },
+       "why": {
+        "en": "$17^2 - 8^2 = 15^2$.",
+        "as": "$17^2 - 8^2 = 15^2$।"
+       }
+      },
+      {
+       "q": {
+        "en": "A circle has radius 7. A point Q is 25 from the centre. Slide to find the tangent from Q.",
+        "as": "বৃত্তৰ ব্যাসাৰ্ধ 7। Q বিন্দু কেন্দ্ৰৰ পৰা 25 দূৰত। টানি Qৰ পৰা স্পৰ্শকৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "widget": {
+        "kind": "tangent",
+        "r": 7,
+        "pq": 1,
+        "max": 24
+       },
+       "target": 24,
+       "answerText": {
+        "en": "Tangent 24",
+        "as": "স্পৰ্শক 24"
+       },
+       "why": {
+        "en": "$25^2 - 7^2 = 24^2$.",
+        "as": "$25^2 - 7^2 = 24^2$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.w.q2",
+     "type": "solve",
+     "skill": "g-parts",
+     "q": {
+      "en": "A chord is 5 cm from the centre of a circle of radius 13 cm. Find its length.",
+      "as": "13 ছেমি ব্যাসাৰ্ধৰ বৃত্তৰ কেন্দ্ৰৰ পৰা এটা জ্যা 5 ছেমি দূৰত। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+     },
+     "answer": "24",
+     "suffix": {
+      "en": "cm",
+      "as": "ছেমি"
+     },
+     "why": {
+      "en": "Half the chord is $\\sqrt{169 - 25}$.",
+      "as": "আধা জ্যা $\\sqrt{169 - 25}$।"
+     },
+     "traps": [
+      {
+       "ans": "12",
+       "tag": "m-chord-half",
+       "why": {
+        "en": "That is half the chord. Double it.",
+        "as": "সেয়া আধা জ্যা। দুগুণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A chord is 5 cm from the centre of a circle of radius 13 cm. Find its length.",
+        "as": "13 ছেমি ব্যাসাৰ্ধৰ বৃত্তৰ কেন্দ্ৰৰ পৰা এটা জ্যা 5 ছেমি দূৰত। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "answer": "24",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Half the chord is $\\sqrt{169 - 25}$.",
+        "as": "আধা জ্যা $\\sqrt{169 - 25}$।"
+       },
+       "traps": [
+        {
+         "ans": "12",
+         "tag": "m-chord-half",
+         "why": {
+          "en": "That is half the chord. Double it.",
+          "as": "সেয়া আধা জ্যা। দুগুণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A chord is 3 cm from the centre of a circle of radius 5 cm. Find its length.",
+        "as": "5 ছেমি ব্যাসাৰ্ধৰ বৃত্তৰ কেন্দ্ৰৰ পৰা এটা জ্যা 3 ছেমি দূৰত। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "answer": "8",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Half the chord is $\\sqrt{25 - 9}$.",
+        "as": "আধা জ্যা $\\sqrt{25 - 9}$।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-chord-half",
+         "why": {
+          "en": "That is half the chord. Double it.",
+          "as": "সেয়া আধা জ্যা। দুগুণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A chord is 6 cm from the centre of a circle of radius 10 cm. Find its length.",
+        "as": "10 ছেমি ব্যাসাৰ্ধৰ বৃত্তৰ কেন্দ্ৰৰ পৰা এটা জ্যা 6 ছেমি দূৰত। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "answer": "16",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Half the chord is $\\sqrt{100 - 36}$.",
+        "as": "আধা জ্যা $\\sqrt{100 - 36}$।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-chord-half",
+         "why": {
+          "en": "That is half the chord. Double it.",
+          "as": "সেয়া আধা জ্যা। দুগুণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A chord is 8 cm from the centre of a circle of radius 17 cm. Find its length.",
+        "as": "17 ছেমি ব্যাসাৰ্ধৰ বৃত্তৰ কেন্দ্ৰৰ পৰা এটা জ্যা 8 ছেমি দূৰত। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Half the chord is $\\sqrt{289 - 64}$.",
+        "as": "আধা জ্যা $\\sqrt{289 - 64}$।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "m-chord-half",
+         "why": {
+          "en": "That is half the chord. Double it.",
+          "as": "সেয়া আধা জ্যা। দুগুণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.w.q3",
+     "type": "solve",
+     "skill": "g-parts",
+     "hints": [
+      {
+       "en": "Angle ÷ 360 is the fraction.",
+       "as": "কোণ ÷ 360 ভগ্নাংশটো।"
+      }
+     ],
+     "q": {
+      "en": "Find the area of a sector of radius 14 cm and angle 90°. Take π = 22/7.",
+      "as": "14 ছেমি ব্যাসাৰ্ধ আৰু 90° কোণৰ বৃত্তকলাৰ কালি উলিওৱা। π = 22/7 লোৱা।"
+     },
+     "answer": "154",
+     "suffix": {
+      "en": "sq cm",
+      "as": "বৰ্গ ছেমি"
+     },
+     "why": {
+      "en": "$\\frac{90}{360}$ of the circle's area.",
+      "as": "বৃত্তৰ কালিৰ $\\frac{90}{360}$ অংশ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the area of a sector of radius 14 cm and angle 90°. Take π = 22/7.",
+        "as": "14 ছেমি ব্যাসাৰ্ধ আৰু 90° কোণৰ বৃত্তকলাৰ কালি উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "154",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "$\\frac{90}{360}$ of the circle's area.",
+        "as": "বৃত্তৰ কালিৰ $\\frac{90}{360}$ অংশ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the area of a sector of radius 21 cm and angle 60°. Take π = 22/7.",
+        "as": "21 ছেমি ব্যাসাৰ্ধ আৰু 60° কোণৰ বৃত্তকলাৰ কালি উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "231",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "$\\frac{60}{360}$ of the circle's area.",
+        "as": "বৃত্তৰ কালিৰ $\\frac{60}{360}$ অংশ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the area of a sector of radius 28 cm and angle 45°. Take π = 22/7.",
+        "as": "28 ছেমি ব্যাসাৰ্ধ আৰু 45° কোণৰ বৃত্তকলাৰ কালি উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "308",
+       "suffix": {
+        "en": "sq cm",
+        "as": "বৰ্গ ছেমি"
+       },
+       "why": {
+        "en": "$\\frac{45}{360}$ of the circle's area.",
+        "as": "বৃত্তৰ কালিৰ $\\frac{45}{360}$ অংশ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m15.w.q4",
+     "type": "solve",
+     "skill": "g-parts",
+     "q": {
+      "en": "Find the arc length of a sector of radius 21 cm and angle 120°. Take π = 22/7.",
+      "as": "21 ছেমি ব্যাসাৰ্ধ আৰু 120° কোণৰ বৃত্তকলাৰ চাপৰ দৈৰ্ঘ্য উলিওৱা। π = 22/7 লোৱা।"
+     },
+     "answer": "44",
+     "suffix": {
+      "en": "cm",
+      "as": "ছেমি"
+     },
+     "why": {
+      "en": "Arc is the same fraction of the circumference.",
+      "as": "চাপ পৰিধিৰ একে ভগ্নাংশ।"
+     },
+     "traps": [
+      {
+       "ans": "462",
+       "tag": "m-circle-formula",
+       "why": {
+        "en": "That is area. An arc is a length, from $2\\pi r$.",
+        "as": "সেয়া কালি। চাপ দৈৰ্ঘ্য, $2\\pi r$ৰ পৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the arc length of a sector of radius 21 cm and angle 120°. Take π = 22/7.",
+        "as": "21 ছেমি ব্যাসাৰ্ধ আৰু 120° কোণৰ বৃত্তকলাৰ চাপৰ দৈৰ্ঘ্য উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "44",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Arc is the same fraction of the circumference.",
+        "as": "চাপ পৰিধিৰ একে ভগ্নাংশ।"
+       },
+       "traps": [
+        {
+         "ans": "462",
+         "tag": "m-circle-formula",
+         "why": {
+          "en": "That is area. An arc is a length, from $2\\pi r$.",
+          "as": "সেয়া কালি। চাপ দৈৰ্ঘ্য, $2\\pi r$ৰ পৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the arc length of a sector of radius 14 cm and angle 90°. Take π = 22/7.",
+        "as": "14 ছেমি ব্যাসাৰ্ধ আৰু 90° কোণৰ বৃত্তকলাৰ চাপৰ দৈৰ্ঘ্য উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "22",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Arc is the same fraction of the circumference.",
+        "as": "চাপ পৰিধিৰ একে ভগ্নাংশ।"
+       },
+       "traps": [
+        {
+         "ans": "154",
+         "tag": "m-circle-formula",
+         "why": {
+          "en": "That is area. An arc is a length, from $2\\pi r$.",
+          "as": "সেয়া কালি। চাপ দৈৰ্ঘ্য, $2\\pi r$ৰ পৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the arc length of a sector of radius 42 cm and angle 60°. Take π = 22/7.",
+        "as": "42 ছেমি ব্যাসাৰ্ধ আৰু 60° কোণৰ বৃত্তকলাৰ চাপৰ দৈৰ্ঘ্য উলিওৱা। π = 22/7 লোৱা।"
+       },
+       "answer": "44",
+       "suffix": {
+        "en": "cm",
+        "as": "ছেমি"
+       },
+       "why": {
+        "en": "Arc is the same fraction of the circumference.",
+        "as": "চাপ পৰিধিৰ একে ভগ্নাংশ।"
+       },
+       "traps": [
+        {
+         "ans": "924",
+         "tag": "m-circle-formula",
+         "why": {
+          "en": "That is area. An arc is a length, from $2\\pi r$.",
+          "as": "সেয়া কালি। চাপ দৈৰ্ঘ্য, $2\\pi r$ৰ পৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.w.q5",
+     "type": "solve",
+     "skill": "g-parts",
+     "q": {
+      "en": "Tangents from P touch a circle with centre O at A and B. Angle APB is 60°. Find angle AOB.",
+      "as": "Pৰ পৰা স্পৰ্শকে O কেন্দ্ৰৰ বৃত্তক A আৰু Bত চুয়ে। APB কোণ 60°। AOB কোণ উলিওৱা।"
+     },
+     "answer": "120",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "The shape has 360°, with two right angles: 360 − 180 − 60.",
+      "as": "আকৃতিত 360°, দুটা সমকোণ: 360 − 180 − 60।"
+     },
+     "traps": [
+      {
+       "ans": "300",
+       "tag": "m-tangent-right",
+       "why": {
+        "en": "Each tangent makes 90° with a radius. Take those off too.",
+        "as": "প্ৰতিটো স্পৰ্শকে ব্যাসাৰ্ধৰ সৈতে 90° কৰে। সেইবোৰো বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Tangents from P touch a circle with centre O at A and B. Angle APB is 60°. Find angle AOB.",
+        "as": "Pৰ পৰা স্পৰ্শকে O কেন্দ্ৰৰ বৃত্তক A আৰু Bত চুয়ে। APB কোণ 60°। AOB কোণ উলিওৱা।"
+       },
+       "answer": "120",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The shape has 360°, with two right angles: 360 − 180 − 60.",
+        "as": "আকৃতিত 360°, দুটা সমকোণ: 360 − 180 − 60।"
+       },
+       "traps": [
+        {
+         "ans": "300",
+         "tag": "m-tangent-right",
+         "why": {
+          "en": "Each tangent makes 90° with a radius. Take those off too.",
+          "as": "প্ৰতিটো স্পৰ্শকে ব্যাসাৰ্ধৰ সৈতে 90° কৰে। সেইবোৰো বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tangents from P touch a circle with centre O at A and B. Angle APB is 70°. Find angle AOB.",
+        "as": "Pৰ পৰা স্পৰ্শকে O কেন্দ্ৰৰ বৃত্তক A আৰু Bত চুয়ে। APB কোণ 70°। AOB কোণ উলিওৱা।"
+       },
+       "answer": "110",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The shape has 360°, with two right angles: 360 − 180 − 70.",
+        "as": "আকৃতিত 360°, দুটা সমকোণ: 360 − 180 − 70।"
+       },
+       "traps": [
+        {
+         "ans": "290",
+         "tag": "m-tangent-right",
+         "why": {
+          "en": "Each tangent makes 90° with a radius. Take those off too.",
+          "as": "প্ৰতিটো স্পৰ্শকে ব্যাসাৰ্ধৰ সৈতে 90° কৰে। সেইবোৰো বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tangents from P touch a circle with centre O at A and B. Angle APB is 45°. Find angle AOB.",
+        "as": "Pৰ পৰা স্পৰ্শকে O কেন্দ্ৰৰ বৃত্তক A আৰু Bত চুয়ে। APB কোণ 45°। AOB কোণ উলিওৱা।"
+       },
+       "answer": "135",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The shape has 360°, with two right angles: 360 − 180 − 45.",
+        "as": "আকৃতিত 360°, দুটা সমকোণ: 360 − 180 − 45।"
+       },
+       "traps": [
+        {
+         "ans": "315",
+         "tag": "m-tangent-right",
+         "why": {
+          "en": "Each tangent makes 90° with a radius. Take those off too.",
+          "as": "প্ৰতিটো স্পৰ্শকে ব্যাসাৰ্ধৰ সৈতে 90° কৰে। সেইবোৰো বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tangents from P touch a circle with centre O at A and B. Angle APB is 100°. Find angle AOB.",
+        "as": "Pৰ পৰা স্পৰ্শকে O কেন্দ্ৰৰ বৃত্তক A আৰু Bত চুয়ে। APB কোণ 100°। AOB কোণ উলিওৱা।"
+       },
+       "answer": "80",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The shape has 360°, with two right angles: 360 − 180 − 100.",
+        "as": "আকৃতিত 360°, দুটা সমকোণ: 360 − 180 − 100।"
+       },
+       "traps": [
+        {
+         "ans": "260",
+         "tag": "m-tangent-right",
+         "why": {
+          "en": "Each tangent makes 90° with a radius. Take those off too.",
+          "as": "প্ৰতিটো স্পৰ্শকে ব্যাসাৰ্ধৰ সৈতে 90° কৰে। সেইবোৰো বিয়োগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m15.w.q6",
+     "type": "tf",
+     "skill": "g-parts",
+     "s": {
+      "en": "Two tangents drawn from one outside point are equal in length.",
+      "as": "বাহিৰৰ এটা বিন্দুৰ পৰা টনা দুটা স্পৰ্শকৰ দৈৰ্ঘ্য সমান।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The two right triangles they form match exactly.",
+      "as": "সিহঁতে বনোৱা দুটা সমকোণী ত্ৰিভুজ হুবহু মিলে।"
+     }
+    },
+    {
+     "id": "m15.w.q7",
+     "type": "match",
+     "skill": "g-parts",
+     "q": {
+      "en": "Match each sector angle to its share of the circle",
+      "as": "প্ৰতিটো বৃত্তকলাৰ কোণক বৃত্তৰ অংশৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "90°",
+        "as": "90°"
+       },
+       {
+        "en": "$\\frac{1}{4}$",
+        "as": "$\\frac{1}{4}$"
+       }
+      ],
+      [
+       {
+        "en": "60°",
+        "as": "60°"
+       },
+       {
+        "en": "$\\frac{1}{6}$",
+        "as": "$\\frac{1}{6}$"
+       }
+      ],
+      [
+       {
+        "en": "120°",
+        "as": "120°"
+       },
+       {
+        "en": "$\\frac{1}{3}$",
+        "as": "$\\frac{1}{3}$"
+       }
+      ],
+      [
+       {
+        "en": "45°",
+        "as": "45°"
+       },
+       {
+        "en": "$\\frac{1}{8}$",
+        "as": "$\\frac{1}{8}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide by 360.",
+      "as": "360ৰে হৰণ কৰা।"
      }
     }
    ]

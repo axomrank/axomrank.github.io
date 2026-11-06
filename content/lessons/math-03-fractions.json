@@ -1195,6 +1195,111 @@
        }
       }
      ]
+    },
+    {
+     "id": "m3.u2.q6",
+     "type": "solve",
+     "skill": "f-of",
+     "q": {
+      "en": "A sum loses $\\frac{1}{5}$ of itself and ₹40 remains. Find the sum.",
+      "as": "এটা ধনৰ $\\frac{1}{5}$ অংশ কমি ₹40 থাকে। ধন উলিওৱা।"
+     },
+     "answer": "50",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "$\\frac{4}{5}$ of the sum is ₹40.",
+      "as": "ধনৰ $\\frac{4}{5}$ অংশ ₹40।"
+     },
+     "traps": [
+      {
+       "ans": "48",
+       "tag": "m-frac-of",
+       "why": {
+        "en": "Find what fraction remains, then divide by it.",
+        "as": "কিমান ভগ্নাংশ থাকিল উলিয়াই তাৰে হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A sum loses $\\frac{1}{5}$ of itself and ₹40 remains. Find the sum.",
+        "as": "এটা ধনৰ $\\frac{1}{5}$ অংশ কমি ₹40 থাকে। ধন উলিওৱা।"
+       },
+       "answer": "50",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "$\\frac{4}{5}$ of the sum is ₹40.",
+        "as": "ধনৰ $\\frac{4}{5}$ অংশ ₹40।"
+       },
+       "traps": [
+        {
+         "ans": "48",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Find what fraction remains, then divide by it.",
+          "as": "কিমান ভগ্নাংশ থাকিল উলিয়াই তাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A sum loses $\\frac{1}{6}$ of itself and ₹75 remains. Find the sum.",
+        "as": "এটা ধনৰ $\\frac{1}{6}$ অংশ কমি ₹75 থাকে। ধন উলিওৱা।"
+       },
+       "answer": "90",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "$\\frac{5}{6}$ of the sum is ₹75.",
+        "as": "ধনৰ $\\frac{5}{6}$ অংশ ₹75।"
+       },
+       "traps": [
+        {
+         "ans": "76",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Find what fraction remains, then divide by it.",
+          "as": "কিমান ভগ্নাংশ থাকিল উলিয়াই তাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A sum loses $\\frac{1}{8}$ of itself and ₹70 remains. Find the sum.",
+        "as": "এটা ধনৰ $\\frac{1}{8}$ অংশ কমি ₹70 থাকে। ধন উলিওৱা।"
+       },
+       "answer": "80",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "$\\frac{7}{8}$ of the sum is ₹70.",
+        "as": "ধনৰ $\\frac{7}{8}$ অংশ ₹70।"
+       },
+       "traps": [
+        {
+         "ans": "71",
+         "tag": "m-frac-of",
+         "why": {
+          "en": "Find what fraction remains, then divide by it.",
+          "as": "কিমান ভগ্নাংশ থাকিল উলিয়াই তাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -2045,6 +2150,61 @@
        "why": {
         "en": "\"Of what is left\" always changes the base.",
         "as": "\"বাকীৰ\" বুলি ক'লে ভিত্তি সলনি হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m3.u3.q7",
+     "type": "solve",
+     "skill": "f-of",
+     "hints": [
+      {
+       "en": "Subtract the two fractions first.",
+       "as": "প্ৰথমে দুটা ভগ্নাংশ বিয়োগ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "$\\frac{3}{5}$ of a number is 10 more than $\\frac{1}{2}$ of it. Find the number.",
+      "as": "এটা সংখ্যাৰ $\\frac{3}{5}$ অংশ ইয়াৰ $\\frac{1}{2}$ অংশতকৈ 10 বেছি। সংখ্যাটো উলিওৱা।"
+     },
+     "answer": "100",
+     "why": {
+      "en": "The gap is $1/10$ of the number, and that part is 10.",
+      "as": "পাৰ্থক্য সংখ্যাৰ $1/10$ অংশ, সেই অংশ 10।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "$\\frac{3}{5}$ of a number is 10 more than $\\frac{1}{2}$ of it. Find the number.",
+        "as": "এটা সংখ্যাৰ $\\frac{3}{5}$ অংশ ইয়াৰ $\\frac{1}{2}$ অংশতকৈ 10 বেছি। সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "100",
+       "why": {
+        "en": "The gap is $1/10$ of the number, and that part is 10.",
+        "as": "পাৰ্থক্য সংখ্যাৰ $1/10$ অংশ, সেই অংশ 10।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\frac{2}{3}$ of a number is 20 more than $\\frac{1}{4}$ of it. Find the number.",
+        "as": "এটা সংখ্যাৰ $\\frac{2}{3}$ অংশ ইয়াৰ $\\frac{1}{4}$ অংশতকৈ 20 বেছি। সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "48",
+       "why": {
+        "en": "The gap is $5/12$ of the number, and that part is 20.",
+        "as": "পাৰ্থক্য সংখ্যাৰ $5/12$ অংশ, সেই অংশ 20।"
+       }
+      },
+      {
+       "q": {
+        "en": "$\\frac{3}{4}$ of a number is 5 more than $\\frac{2}{3}$ of it. Find the number.",
+        "as": "এটা সংখ্যাৰ $\\frac{3}{4}$ অংশ ইয়াৰ $\\frac{2}{3}$ অংশতকৈ 5 বেছি। সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "60",
+       "why": {
+        "en": "The gap is $1/12$ of the number, and that part is 5.",
+        "as": "পাৰ্থক্য সংখ্যাৰ $1/12$ অংশ, সেই অংশ 5।"
        }
       }
      ]

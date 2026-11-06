@@ -156,17 +156,17 @@
       }
      ],
      "q": {
-      "en": "Find term 15 of 1, 4, 7, …",
-      "as": "1, 4, 7, … ৰ 15 নং পদ উলিওৱা।"
+      "en": "Find term 17 of 2, 5, 8, …",
+      "as": "2, 5, 8, … ৰ 17 নং পদ উলিওৱা।"
      },
-     "answer": "43",
+     "answer": "50",
      "why": {
-      "en": "1 + 14 × 3.",
-      "as": "1 + 14 × 3।"
+      "en": "2 + 16 × 3.",
+      "as": "2 + 16 × 3।"
      },
      "traps": [
       {
-       "ans": "46",
+       "ans": "53",
        "tag": "m-ap-n",
        "why": {
         "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
@@ -177,17 +177,17 @@
      "variants": [
       {
        "q": {
-        "en": "Find term 15 of 1, 4, 7, …",
-        "as": "1, 4, 7, … ৰ 15 নং পদ উলিওৱা।"
+        "en": "Find term 17 of 2, 5, 8, …",
+        "as": "2, 5, 8, … ৰ 17 নং পদ উলিওৱা।"
        },
-       "answer": "43",
+       "answer": "50",
        "why": {
-        "en": "1 + 14 × 3.",
-        "as": "1 + 14 × 3।"
+        "en": "2 + 16 × 3.",
+        "as": "2 + 16 × 3।"
        },
        "traps": [
         {
-         "ans": "46",
+         "ans": "53",
          "tag": "m-ap-n",
          "why": {
           "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
@@ -198,17 +198,17 @@
       },
       {
        "q": {
-        "en": "Find term 14 of 7, 10, 13, …",
-        "as": "7, 10, 13, … ৰ 14 নং পদ উলিওৱা।"
+        "en": "Find term 13 of 6, 10, 14, …",
+        "as": "6, 10, 14, … ৰ 13 নং পদ উলিওৱা।"
        },
-       "answer": "46",
+       "answer": "54",
        "why": {
-        "en": "7 + 13 × 3.",
-        "as": "7 + 13 × 3।"
+        "en": "6 + 12 × 4.",
+        "as": "6 + 12 × 4।"
        },
        "traps": [
         {
-         "ans": "49",
+         "ans": "58",
          "tag": "m-ap-n",
          "why": {
           "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
@@ -219,17 +219,17 @@
       },
       {
        "q": {
-        "en": "Find term 20 of 9, 5, 1, …",
-        "as": "9, 5, 1, … ৰ 20 নং পদ উলিওৱা।"
+        "en": "Find term 18 of 11, 7, 3, …",
+        "as": "11, 7, 3, … ৰ 18 নং পদ উলিওৱা।"
        },
-       "answer": "-67",
+       "answer": "-57",
        "why": {
-        "en": "9 + 19 × −4.",
-        "as": "9 + 19 × −4।"
+        "en": "11 + 17 × −4.",
+        "as": "11 + 17 × −4।"
        },
        "traps": [
         {
-         "ans": "-71",
+         "ans": "-61",
          "tag": "m-ap-n",
          "why": {
           "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
@@ -240,17 +240,17 @@
       },
       {
        "q": {
-        "en": "Find term 30 of 10, 7, 4, …",
-        "as": "10, 7, 4, … ৰ 30 নং পদ উলিওৱা।"
+        "en": "Find term 25 of 12, 9, 6, …",
+        "as": "12, 9, 6, … ৰ 25 নং পদ উলিওৱা।"
        },
-       "answer": "-77",
+       "answer": "-60",
        "why": {
-        "en": "10 + 29 × −3.",
-        "as": "10 + 29 × −3।"
+        "en": "12 + 24 × −3.",
+        "as": "12 + 24 × −3।"
        },
        "traps": [
         {
-         "ans": "-80",
+         "ans": "-63",
          "tag": "m-ap-n",
          "why": {
           "en": "The first term has no steps added, so the nth term has n − 1 steps, not n.",
@@ -266,46 +266,46 @@
      "type": "explore",
      "skill": "ap",
      "q": {
-      "en": "In 1, 4, 7, …, which term equals 40?",
-      "as": "1, 4, 7, …ত কোনটো পদ 40?"
+      "en": "In 2, 5, 8, …, which term equals 38?",
+      "as": "2, 5, 8, …ত কোনটো পদ 38?"
      },
      "widget": {
       "kind": "stairs",
-      "a": 1,
+      "a": 2,
       "d": 3,
       "n": 1,
       "max": 15
      },
-     "target": 14,
+     "target": 13,
      "answerText": {
-      "en": "Term 14",
-      "as": "14 নং পদ"
+      "en": "Term 13",
+      "as": "13 নং পদ"
      },
      "why": {
-      "en": "39 ÷ 3 = 13 steps, plus 1 for the first term.",
-      "as": "39 ÷ 3 = 13 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
+      "en": "36 ÷ 3 = 12 steps, plus 1 for the first term.",
+      "as": "36 ÷ 3 = 12 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
      },
      "variants": [
       {
        "q": {
-        "en": "In 1, 4, 7, …, which term equals 40?",
-        "as": "1, 4, 7, …ত কোনটো পদ 40?"
+        "en": "In 2, 5, 8, …, which term equals 38?",
+        "as": "2, 5, 8, …ত কোনটো পদ 38?"
        },
        "widget": {
         "kind": "stairs",
-        "a": 1,
+        "a": 2,
         "d": 3,
         "n": 1,
         "max": 15
        },
-       "target": 14,
+       "target": 13,
        "answerText": {
-        "en": "Term 14",
-        "as": "14 নং পদ"
+        "en": "Term 13",
+        "as": "13 নং পদ"
        },
        "why": {
-        "en": "39 ÷ 3 = 13 steps, plus 1 for the first term.",
-        "as": "39 ÷ 3 = 13 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
+        "en": "36 ÷ 3 = 12 steps, plus 1 for the first term.",
+        "as": "36 ÷ 3 = 12 খোজ, প্ৰথম পদৰ বাবে 1 যোগ।"
        }
       },
       {
@@ -359,10 +359,10 @@
      "type": "solve",
      "skill": "ap",
      "q": {
-      "en": "If 5, x, 27 are in AP, find x.",
-      "as": "5, x, 27 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+      "en": "If 7, x, 29 are in AP, find x.",
+      "as": "7, x, 29 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
      },
-     "answer": "16",
+     "answer": "18",
      "why": {
       "en": "The middle term is the average.",
       "as": "মাজৰ পদ গড়।"
@@ -370,10 +370,10 @@
      "variants": [
       {
        "q": {
-        "en": "If 5, x, 27 are in AP, find x.",
-        "as": "5, x, 27 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
+        "en": "If 7, x, 29 are in AP, find x.",
+        "as": "7, x, 29 সমান্তৰ শ্ৰেণীত থাকিলে x উলিওৱা।"
        },
-       "answer": "16",
+       "answer": "18",
        "why": {
         "en": "The middle term is the average.",
         "as": "মাজৰ পদ গড়।"
@@ -425,17 +425,17 @@
       }
      ],
      "q": {
-      "en": "How many multiples of 4 lie between 10 and 250?",
-      "as": "10 আৰু 250ৰ মাজত 4ৰ কেইটা গুণিতক আছে?"
+      "en": "How many multiples of 4 lie between 15 and 230?",
+      "as": "15 আৰু 230ৰ মাজত 4ৰ কেইটা গুণিতক আছে?"
      },
-     "answer": "60",
+     "answer": "54",
      "why": {
-      "en": "From 12 to 248: (248 − 12) ÷ 4 + 1.",
-      "as": "12ৰ পৰা 248লৈ: (248 − 12) ÷ 4 + 1।"
+      "en": "From 16 to 228: (228 − 16) ÷ 4 + 1.",
+      "as": "16ৰ পৰা 228লৈ: (228 − 16) ÷ 4 + 1।"
      },
      "traps": [
       {
-       "ans": "59",
+       "ans": "53",
        "tag": "m-ap-n",
        "why": {
         "en": "That counts the steps. Add 1 for the first term.",
@@ -446,17 +446,17 @@
      "variants": [
       {
        "q": {
-        "en": "How many multiples of 4 lie between 10 and 250?",
-        "as": "10 আৰু 250ৰ মাজত 4ৰ কেইটা গুণিতক আছে?"
+        "en": "How many multiples of 4 lie between 15 and 230?",
+        "as": "15 আৰু 230ৰ মাজত 4ৰ কেইটা গুণিতক আছে?"
        },
-       "answer": "60",
+       "answer": "54",
        "why": {
-        "en": "From 12 to 248: (248 − 12) ÷ 4 + 1.",
-        "as": "12ৰ পৰা 248লৈ: (248 − 12) ÷ 4 + 1।"
+        "en": "From 16 to 228: (228 − 16) ÷ 4 + 1.",
+        "as": "16ৰ পৰা 228লৈ: (228 − 16) ÷ 4 + 1।"
        },
        "traps": [
         {
-         "ans": "59",
+         "ans": "53",
          "tag": "m-ap-n",
          "why": {
           "en": "That counts the steps. Add 1 for the first term.",
@@ -587,6 +587,72 @@
       "en": "A step can be negative or a decimal.",
       "as": "খোজ ঋণাত্মক বা দশমিক হ'ব পাৰে।"
      }
+    },
+    {
+     "id": "m13.u1.q7",
+     "type": "solve",
+     "skill": "ap",
+     "hints": [
+      {
+       "en": "Term 3 to term 5 is two common differences.",
+       "as": "3 নং পদৰ পৰা 5 নং পদলৈ দুটা সাধাৰণ অন্তৰ।"
+      }
+     ],
+     "q": {
+      "en": "In an AP the third term is 11 and the fifth is 17. Find the first term.",
+      "as": "সমান্তৰ শ্ৰেণীৰ তৃতীয় পদ 11, পঞ্চম পদ 17। প্ৰথম পদ উলিওৱা।"
+     },
+     "answer": "5",
+     "why": {
+      "en": "Two steps make 6, so go back two steps from 11.",
+      "as": "দুটা খোজত 6, সেয়ে 11ৰ পৰা দুখোজ পিছলৈ যোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In an AP the third term is 11 and the fifth is 17. Find the first term.",
+        "as": "সমান্তৰ শ্ৰেণীৰ তৃতীয় পদ 11, পঞ্চম পদ 17। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Two steps make 6, so go back two steps from 11.",
+        "as": "দুটা খোজত 6, সেয়ে 11ৰ পৰা দুখোজ পিছলৈ যোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "In an AP the third term is 16 and the fifth is 24. Find the first term.",
+        "as": "সমান্তৰ শ্ৰেণীৰ তৃতীয় পদ 16, পঞ্চম পদ 24। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "8",
+       "why": {
+        "en": "Two steps make 8, so go back two steps from 16.",
+        "as": "দুটা খোজত 8, সেয়ে 16ৰ পৰা দুখোজ পিছলৈ যোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "In an AP the third term is 20 and the fifth is 26. Find the first term.",
+        "as": "সমান্তৰ শ্ৰেণীৰ তৃতীয় পদ 20, পঞ্চম পদ 26। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "14",
+       "why": {
+        "en": "Two steps make 6, so go back two steps from 20.",
+        "as": "দুটা খোজত 6, সেয়ে 20ৰ পৰা দুখোজ পিছলৈ যোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "In an AP the third term is 14 and the fifth is 22. Find the first term.",
+        "as": "সমান্তৰ শ্ৰেণীৰ তৃতীয় পদ 14, পঞ্চম পদ 22। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Two steps make 8, so go back two steps from 14.",
+        "as": "দুটা খোজত 8, সেয়ে 14ৰ পৰা দুখোজ পিছলৈ যোৱা।"
+       }
+      }
+     ]
     }
    ]
   },
@@ -810,8 +876,8 @@
      "type": "stepwise",
      "skill": "ap-sum",
      "q": {
-      "en": "Find 12 + 15 + 18 + … + 39.",
-      "as": "12 + 15 + 18 + … + 39 উলিওৱা।"
+      "en": "Find 14 + 17 + 20 + … + 41.",
+      "as": "14 + 17 + 20 + … + 41 উলিওৱা।"
      },
      "parts": [
       {
@@ -821,12 +887,12 @@
        },
        "options": [
         {
-         "en": "27",
-         "as": "27"
-        },
-        {
          "en": "9",
          "as": "9"
+        },
+        {
+         "en": "27",
+         "as": "27"
         },
         {
          "en": "10",
@@ -848,19 +914,19 @@
        },
        "options": [
         {
+         "en": "574",
+         "as": "574"
+        },
+        {
+         "en": "55",
+         "as": "55"
+        },
+        {
          "en": "27",
          "as": "27"
-        },
-        {
-         "en": "468",
-         "as": "468"
-        },
-        {
-         "en": "51",
-         "as": "51"
         }
        ],
-       "answer": 2,
+       "answer": 1,
        "note": {
         "en": "The height of each column.",
         "as": "প্ৰতিটো স্তম্ভৰ উচ্চতা।"
@@ -873,16 +939,16 @@
        },
        "options": [
         {
-         "en": "25",
-         "as": "25"
+         "en": "550",
+         "as": "550"
         },
         {
-         "en": "510",
-         "as": "510"
+         "en": "27",
+         "as": "27"
         },
         {
-         "en": "255",
-         "as": "255"
+         "en": "275",
+         "as": "275"
         }
        ],
        "answer": 2,
@@ -900,8 +966,8 @@
      "variants": [
       {
        "q": {
-        "en": "Find 12 + 15 + 18 + … + 39.",
-        "as": "12 + 15 + 18 + … + 39 উলিওৱা।"
+        "en": "Find 14 + 17 + 20 + … + 41.",
+        "as": "14 + 17 + 20 + … + 41 উলিওৱা।"
        },
        "parts": [
         {
@@ -911,12 +977,12 @@
          },
          "options": [
           {
-           "en": "27",
-           "as": "27"
-          },
-          {
            "en": "9",
            "as": "9"
+          },
+          {
+           "en": "27",
+           "as": "27"
           },
           {
            "en": "10",
@@ -938,19 +1004,19 @@
          },
          "options": [
           {
+           "en": "574",
+           "as": "574"
+          },
+          {
+           "en": "55",
+           "as": "55"
+          },
+          {
            "en": "27",
            "as": "27"
-          },
-          {
-           "en": "468",
-           "as": "468"
-          },
-          {
-           "en": "51",
-           "as": "51"
           }
          ],
-         "answer": 2,
+         "answer": 1,
          "note": {
           "en": "The height of each column.",
           "as": "প্ৰতিটো স্তম্ভৰ উচ্চতা।"
@@ -963,16 +1029,16 @@
          },
          "options": [
           {
-           "en": "25",
-           "as": "25"
+           "en": "550",
+           "as": "550"
           },
           {
-           "en": "510",
-           "as": "510"
+           "en": "27",
+           "as": "27"
           },
           {
-           "en": "255",
-           "as": "255"
+           "en": "275",
+           "as": "275"
           }
          ],
          "answer": 2,
@@ -1175,17 +1241,17 @@
      "type": "solve",
      "skill": "ap-sum",
      "q": {
-      "en": "Find the sum of the first 21 terms of 12, 16, 20, …",
-      "as": "12, 16, 20, …ৰ প্ৰথম 21টা পদৰ যোগফল উলিওৱা।"
+      "en": "Find the sum of the first 16 terms of 9, 14, 19, …",
+      "as": "9, 14, 19, …ৰ প্ৰথম 16টা পদৰ যোগফল উলিওৱা।"
      },
-     "answer": "1092",
+     "answer": "744",
      "why": {
-      "en": "Last term 92, then $\\frac{21(12 + 92)}{2}$.",
-      "as": "শেষ পদ 92, তাৰ পিছত $\\frac{21(12 + 92)}{2}$।"
+      "en": "Last term 84, then $\\frac{16(9 + 84)}{2}$.",
+      "as": "শেষ পদ 84, তাৰ পিছত $\\frac{16(9 + 84)}{2}$।"
      },
      "traps": [
       {
-       "ans": "2184",
+       "ans": "1488",
        "tag": "m-sum-half",
        "why": {
         "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
@@ -1196,17 +1262,17 @@
      "variants": [
       {
        "q": {
-        "en": "Find the sum of the first 21 terms of 12, 16, 20, …",
-        "as": "12, 16, 20, …ৰ প্ৰথম 21টা পদৰ যোগফল উলিওৱা।"
+        "en": "Find the sum of the first 16 terms of 9, 14, 19, …",
+        "as": "9, 14, 19, …ৰ প্ৰথম 16টা পদৰ যোগফল উলিওৱা।"
        },
-       "answer": "1092",
+       "answer": "744",
        "why": {
-        "en": "Last term 92, then $\\frac{21(12 + 92)}{2}$.",
-        "as": "শেষ পদ 92, তাৰ পিছত $\\frac{21(12 + 92)}{2}$।"
+        "en": "Last term 84, then $\\frac{16(9 + 84)}{2}$.",
+        "as": "শেষ পদ 84, তাৰ পিছত $\\frac{16(9 + 84)}{2}$।"
        },
        "traps": [
         {
-         "ans": "2184",
+         "ans": "1488",
          "tag": "m-sum-half",
          "why": {
           "en": "Two copies make the rectangle, so the sum is half of it. Remember to divide by 2.",
@@ -1432,6 +1498,95 @@
       "en": "n odd numbers add to $n^2$: the L shapes from Squares.",
       "as": "n টা অযুগ্ম সংখ্যাৰ যোগফল $n^2$: বৰ্গৰ L আকৃতি।"
      }
+    },
+    {
+     "id": "m13.u2.q7",
+     "type": "solve",
+     "skill": "ap",
+     "q": {
+      "en": "A worker starts in 2004 on ₹6000 a year with a rise of ₹250 each year. In which year does the pay reach ₹7500?",
+      "as": "এজন কৰ্মীয়ে 2004ত বছৰি ₹6000ৰে আৰম্ভ কৰে, প্ৰতিবছৰে ₹250 বাঢ়ে। কোন বছৰত দৰমহা ₹7500 হ'ব?"
+     },
+     "answer": "2010",
+     "why": {
+      "en": "6 rises after 2004.",
+      "as": "2004ৰ পিছত 6টা বৃদ্ধি।"
+     },
+     "traps": [
+      {
+       "ans": "2011",
+       "tag": "m-ap-n",
+       "why": {
+        "en": "The first year has no rise yet, so count rises from the start year.",
+        "as": "প্ৰথম বছৰত বৃদ্ধি নাই, সেয়ে আৰম্ভণিৰ বছৰৰ পৰা বৃদ্ধি গণা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A worker starts in 2004 on ₹6000 a year with a rise of ₹250 each year. In which year does the pay reach ₹7500?",
+        "as": "এজন কৰ্মীয়ে 2004ত বছৰি ₹6000ৰে আৰম্ভ কৰে, প্ৰতিবছৰে ₹250 বাঢ়ে। কোন বছৰত দৰমহা ₹7500 হ'ব?"
+       },
+       "answer": "2010",
+       "why": {
+        "en": "6 rises after 2004.",
+        "as": "2004ৰ পিছত 6টা বৃদ্ধি।"
+       },
+       "traps": [
+        {
+         "ans": "2011",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first year has no rise yet, so count rises from the start year.",
+          "as": "প্ৰথম বছৰত বৃদ্ধি নাই, সেয়ে আৰম্ভণিৰ বছৰৰ পৰা বৃদ্ধি গণা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A worker starts in 2010 on ₹8000 a year with a rise of ₹400 each year. In which year does the pay reach ₹10000?",
+        "as": "এজন কৰ্মীয়ে 2010ত বছৰি ₹8000ৰে আৰম্ভ কৰে, প্ৰতিবছৰে ₹400 বাঢ়ে। কোন বছৰত দৰমহা ₹10000 হ'ব?"
+       },
+       "answer": "2015",
+       "why": {
+        "en": "5 rises after 2010.",
+        "as": "2010ৰ পিছত 5টা বৃদ্ধি।"
+       },
+       "traps": [
+        {
+         "ans": "2016",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first year has no rise yet, so count rises from the start year.",
+          "as": "প্ৰথম বছৰত বৃদ্ধি নাই, সেয়ে আৰম্ভণিৰ বছৰৰ পৰা বৃদ্ধি গণা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A worker starts in 1998 on ₹4000 a year with a rise of ₹300 each year. In which year does the pay reach ₹5500?",
+        "as": "এজন কৰ্মীয়ে 1998ত বছৰি ₹4000ৰে আৰম্ভ কৰে, প্ৰতিবছৰে ₹300 বাঢ়ে। কোন বছৰত দৰমহা ₹5500 হ'ব?"
+       },
+       "answer": "2003",
+       "why": {
+        "en": "5 rises after 1998.",
+        "as": "1998ৰ পিছত 5টা বৃদ্ধি।"
+       },
+       "traps": [
+        {
+         "ans": "2004",
+         "tag": "m-ap-n",
+         "why": {
+          "en": "The first year has no rise yet, so count rises from the start year.",
+          "as": "প্ৰথম বছৰত বৃদ্ধি নাই, সেয়ে আৰম্ভণিৰ বছৰৰ পৰা বৃদ্ধি গণা।"
+         }
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -1554,17 +1709,17 @@
       }
      ],
      "q": {
-      "en": "Find term 6 of 7, 14, 28, …",
-      "as": "7, 14, 28, …ৰ 6 নং পদ উলিওৱা।"
+      "en": "Find term 7 of 5, 10, 20, …",
+      "as": "5, 10, 20, …ৰ 7 নং পদ উলিওৱা।"
      },
-     "answer": "224",
+     "answer": "320",
      "why": {
-      "en": "$7 \\times 2^{5}$.",
-      "as": "$7 \\times 2^{5}$।"
+      "en": "$5 \\times 2^{6}$.",
+      "as": "$5 \\times 2^{6}$।"
      },
      "traps": [
       {
-       "ans": "448",
+       "ans": "640",
        "tag": "m-gp-power",
        "why": {
         "en": "The first term has no multiplying, so the power is n − 1.",
@@ -1583,17 +1738,17 @@
      "variants": [
       {
        "q": {
-        "en": "Find term 6 of 7, 14, 28, …",
-        "as": "7, 14, 28, …ৰ 6 নং পদ উলিওৱা।"
+        "en": "Find term 7 of 5, 10, 20, …",
+        "as": "5, 10, 20, …ৰ 7 নং পদ উলিওৱা।"
        },
-       "answer": "224",
+       "answer": "320",
        "why": {
-        "en": "$7 \\times 2^{5}$.",
-        "as": "$7 \\times 2^{5}$।"
+        "en": "$5 \\times 2^{6}$.",
+        "as": "$5 \\times 2^{6}$।"
        },
        "traps": [
         {
-         "ans": "448",
+         "ans": "640",
          "tag": "m-gp-power",
          "why": {
           "en": "The first term has no multiplying, so the power is n − 1.",
@@ -1612,17 +1767,17 @@
       },
       {
        "q": {
-        "en": "Find term 8 of 2, 6, 18, …",
-        "as": "2, 6, 18, …ৰ 8 নং পদ উলিওৱা।"
+        "en": "Find term 6 of 3, 9, 27, …",
+        "as": "3, 9, 27, …ৰ 6 নং পদ উলিওৱা।"
        },
-       "answer": "4374",
+       "answer": "729",
        "why": {
-        "en": "$2 \\times 3^{7}$.",
-        "as": "$2 \\times 3^{7}$।"
+        "en": "$3 \\times 3^{5}$.",
+        "as": "$3 \\times 3^{5}$।"
        },
        "traps": [
         {
-         "ans": "13122",
+         "ans": "2187",
          "tag": "m-gp-power",
          "why": {
           "en": "The first term has no multiplying, so the power is n − 1.",
@@ -1630,7 +1785,7 @@
          }
         },
         {
-         "ans": "23",
+         "ans": "18",
          "tag": "m-gp-add",
          "why": {
           "en": "You added the ratio. A GP multiplies.",
@@ -1641,17 +1796,17 @@
       },
       {
        "q": {
-        "en": "Find term 7 of 3, 6, 12, …",
-        "as": "3, 6, 12, …ৰ 7 নং পদ উলিওৱা।"
+        "en": "Find term 8 of 3, 6, 12, …",
+        "as": "3, 6, 12, …ৰ 8 নং পদ উলিওৱা।"
        },
-       "answer": "192",
+       "answer": "384",
        "why": {
-        "en": "$3 \\times 2^{6}$.",
-        "as": "$3 \\times 2^{6}$।"
+        "en": "$3 \\times 2^{7}$.",
+        "as": "$3 \\times 2^{7}$।"
        },
        "traps": [
         {
-         "ans": "384",
+         "ans": "768",
          "tag": "m-gp-power",
          "why": {
           "en": "The first term has no multiplying, so the power is n − 1.",
@@ -1659,7 +1814,7 @@
          }
         },
         {
-         "ans": "15",
+         "ans": "17",
          "tag": "m-gp-add",
          "why": {
           "en": "You added the ratio. A GP multiplies.",
@@ -1710,35 +1865,35 @@
       }
      ],
      "q": {
-      "en": "Add the first 5 terms: 4 + 12 + 36 + …",
-      "as": "প্ৰথম 5টা পদ যোগ কৰা: 4 + 12 + 36 + …"
+      "en": "Add the first 4 terms: 5 + 15 + 45 + …",
+      "as": "প্ৰথম 4টা পদ যোগ কৰা: 5 + 15 + 45 + …"
      },
-     "answer": "484",
+     "answer": "200",
      "why": {
-      "en": "$\\frac{4(3^{5} - 1)}{3 - 1}$.",
-      "as": "$\\frac{4(3^{5} - 1)}{3 - 1}$।"
+      "en": "$\\frac{5(3^{4} - 1)}{3 - 1}$.",
+      "as": "$\\frac{5(3^{4} - 1)}{3 - 1}$।"
      },
      "variants": [
       {
        "q": {
-        "en": "Add the first 5 terms: 4 + 12 + 36 + …",
-        "as": "প্ৰথম 5টা পদ যোগ কৰা: 4 + 12 + 36 + …"
+        "en": "Add the first 4 terms: 5 + 15 + 45 + …",
+        "as": "প্ৰথম 4টা পদ যোগ কৰা: 5 + 15 + 45 + …"
        },
-       "answer": "484",
+       "answer": "200",
        "why": {
-        "en": "$\\frac{4(3^{5} - 1)}{3 - 1}$.",
-        "as": "$\\frac{4(3^{5} - 1)}{3 - 1}$।"
+        "en": "$\\frac{5(3^{4} - 1)}{3 - 1}$.",
+        "as": "$\\frac{5(3^{4} - 1)}{3 - 1}$।"
        }
       },
       {
        "q": {
-        "en": "Add the first 10 terms: 2 + 4 + 8 + …",
-        "as": "প্ৰথম 10টা পদ যোগ কৰা: 2 + 4 + 8 + …"
+        "en": "Add the first 9 terms: 3 + 6 + 12 + …",
+        "as": "প্ৰথম 9টা পদ যোগ কৰা: 3 + 6 + 12 + …"
        },
-       "answer": "2046",
+       "answer": "1533",
        "why": {
-        "en": "$\\frac{2(2^{10} - 1)}{2 - 1}$.",
-        "as": "$\\frac{2(2^{10} - 1)}{2 - 1}$।"
+        "en": "$\\frac{3(2^{9} - 1)}{2 - 1}$.",
+        "as": "$\\frac{3(2^{9} - 1)}{2 - 1}$।"
        }
       },
       {
@@ -2281,6 +2436,642 @@
      "why": {
       "en": "Ratios can shrink and steps can be negative.",
       "as": "অনুপাত সৰু হ'ব পাৰে, খোজ ঋণাত্মক হ'ব পাৰে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Sequences in disguise",
+    "as": "ছদ্মবেশী শ্ৰেণী"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "In any three AP terms, twice the middle equals the two outer terms added.",
+     "as": "সমান্তৰ শ্ৰেণীৰ তিনিটা পদত মাজৰ পদৰ দুগুণ = বাহিৰৰ দুটাৰ যোগফল।"
+    },
+    {
+     "en": "Given a sum, put it in $S = \\frac{n}{2}(2a + (n - 1)d)$ and solve.",
+     "as": "যোগফল দিলে $S = \\frac{n}{2}(2a + (n - 1)d)$ত বহুৱাই সমাধান কৰা।"
+    },
+    {
+     "en": "When a list zigzags, read odd and even places apart.",
+     "as": "তালিকা আঁকাবাঁকা হ'লে অযুগ্ম আৰু যুগ্ম স্থান বেলেগকৈ পঢ়া।"
+    },
+    {
+     "en": "A fixed yearly rise in pay is an AP.",
+     "as": "বছৰি নিৰ্দিষ্ট দৰমহা বৃদ্ধি সমান্তৰ শ্ৰেণী।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m13.x.s1",
+     "type": "story",
+     "title": {
+      "en": "A salary is a staircase",
+      "as": "দৰমহা এখন জখলা"
+     },
+     "text": [
+      {
+       "en": "Pay starts at ₹2 thousand and rises ₹2 thousand a year. Each stair is one year.",
+       "as": "দৰমহা ₹2 হাজাৰৰ পৰা আৰম্ভ হৈ বছৰি ₹2 হাজাৰ বাঢ়ে। প্ৰতিটো খটখটি এবছৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "stairs",
+      "a": 2,
+      "d": 2,
+      "n": 2,
+      "max": 10
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Climb to year 5.",
+        "as": "পাঁচ বছৰলৈ উঠা।"
+       },
+       "goal": {
+        "n": 5
+       },
+       "then": {
+        "en": "Year 5 pays 2 + 4 × 2 = ₹10 thousand. Four rises, not five.",
+        "as": "পঞ্চম বছৰত 2 + 4 × 2 = ₹10 হাজাৰ। পাঁচ নহয়, চাৰিটা বৃদ্ধি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Two lists in one",
+      "as": "এটাত দুটা তালিকা"
+     },
+     "text": [
+      {
+       "en": "1, 4, 2, 5, 3 looks random until you read every second number.",
+       "as": "1, 4, 2, 5, 3 এটা এৰি এটা নপঢ়ালৈ এলোমেলো যেন লাগে।"
+      },
+      {
+       "en": "Then there are two calm lists taking turns.",
+       "as": "তেতিয়া দুটা শান্ত তালিকা পাল পাতি আহে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Places 1, 3, 5: 1, 2, 3",
+        "as": "1, 3, 5 স্থান: 1, 2, 3"
+       },
+       {
+        "en": "Places 2, 4, 6: 4, 5, 6",
+        "as": "2, 4, 6 স্থান: 4, 5, 6"
+       },
+       {
+        "en": "Next is 6",
+        "as": "পিছৰটো 6"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m13.x.q1",
+     "type": "solve",
+     "skill": "ap",
+     "hints": [
+      {
+       "en": "Twice the middle equals the outer two added.",
+       "as": "মাজৰ দুগুণ = বাহিৰৰ দুটাৰ যোগফল।"
+      }
+     ],
+     "q": {
+      "en": "$x$, $2x + 1$ and $4x - 2$ are in AP. Find $x$.",
+      "as": "$x$, $2x + 1$ আৰু $4x - 2$ সমান্তৰ শ্ৰেণীত আছে। $x$ উলিওৱা।"
+     },
+     "answer": "4",
+     "why": {
+      "en": "$2(2x + 1) = x + 4x - 2$.",
+      "as": "$2(2x + 1) = x + 4x - 2$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "$x$, $2x + 1$ and $4x - 2$ are in AP. Find $x$.",
+        "as": "$x$, $2x + 1$ আৰু $4x - 2$ সমান্তৰ শ্ৰেণীত আছে। $x$ উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "$2(2x + 1) = x + 4x - 2$.",
+        "as": "$2(2x + 1) = x + 4x - 2$।"
+       }
+      },
+      {
+       "q": {
+        "en": "$x$, $2x + 3$ and $4x - 1$ are in AP. Find $x$.",
+        "as": "$x$, $2x + 3$ আৰু $4x - 1$ সমান্তৰ শ্ৰেণীত আছে। $x$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "$2(2x + 3) = x + 4x - 1$.",
+        "as": "$2(2x + 3) = x + 4x - 1$।"
+       }
+      },
+      {
+       "q": {
+        "en": "$x$, $2x + 2$ and $4x - 5$ are in AP. Find $x$.",
+        "as": "$x$, $2x + 2$ আৰু $4x - 5$ সমান্তৰ শ্ৰেণীত আছে। $x$ উলিওৱা।"
+       },
+       "answer": "9",
+       "why": {
+        "en": "$2(2x + 2) = x + 4x - 5$.",
+        "as": "$2(2x + 2) = x + 4x - 5$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.x.q2",
+     "type": "solve",
+     "skill": "ap-sum",
+     "q": {
+      "en": "The sum of the first 10 terms of an AP with common difference 3 is 155. Find the first term.",
+      "as": "সাধাৰণ অন্তৰ 3 হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 10টা পদৰ যোগফল 155। প্ৰথম পদ উলিওৱা।"
+     },
+     "answer": "2",
+     "why": {
+      "en": "$\\frac{10}{2}(2a + 27) = 155$.",
+      "as": "$\\frac{10}{2}(2a + 27) = 155$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The sum of the first 10 terms of an AP with common difference 3 is 155. Find the first term.",
+        "as": "সাধাৰণ অন্তৰ 3 হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 10টা পদৰ যোগফল 155। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "2",
+       "why": {
+        "en": "$\\frac{10}{2}(2a + 27) = 155$.",
+        "as": "$\\frac{10}{2}(2a + 27) = 155$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The sum of the first 20 terms of an AP with common difference 2 is 420. Find the first term.",
+        "as": "সাধাৰণ অন্তৰ 2 হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 20টা পদৰ যোগফল 420। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "2",
+       "why": {
+        "en": "$\\frac{20}{2}(2a + 38) = 420$.",
+        "as": "$\\frac{20}{2}(2a + 38) = 420$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The sum of the first 8 terms of an AP with common difference 5 is 180. Find the first term.",
+        "as": "সাধাৰণ অন্তৰ 5 হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 8টা পদৰ যোগফল 180। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "$\\frac{8}{2}(2a + 35) = 180$.",
+        "as": "$\\frac{8}{2}(2a + 35) = 180$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The sum of the first 12 terms of an AP with common difference 4 is 300. Find the first term.",
+        "as": "সাধাৰণ অন্তৰ 4 হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 12টা পদৰ যোগফল 300। প্ৰথম পদ উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "$\\frac{12}{2}(2a + 44) = 300$.",
+        "as": "$\\frac{12}{2}(2a + 44) = 300$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.x.q3",
+     "type": "solve",
+     "skill": "ap-sum",
+     "q": {
+      "en": "The sum of the first 10 terms of an AP starting at 3 is 165. Find the common difference.",
+      "as": "3ৰে আৰম্ভ হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 10টা পদৰ যোগফল 165। সাধাৰণ অন্তৰ উলিওৱা।"
+     },
+     "answer": "3",
+     "why": {
+      "en": "$\\frac{10}{2}(6 + 9d) = 165$.",
+      "as": "$\\frac{10}{2}(6 + 9d) = 165$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The sum of the first 10 terms of an AP starting at 3 is 165. Find the common difference.",
+        "as": "3ৰে আৰম্ভ হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 10টা পদৰ যোগফল 165। সাধাৰণ অন্তৰ উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "$\\frac{10}{2}(6 + 9d) = 165$.",
+        "as": "$\\frac{10}{2}(6 + 9d) = 165$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The sum of the first 8 terms of an AP starting at 5 is 124. Find the common difference.",
+        "as": "5ৰে আৰম্ভ হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 8টা পদৰ যোগফল 124। সাধাৰণ অন্তৰ উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "$\\frac{8}{2}(10 + 7d) = 124$.",
+        "as": "$\\frac{8}{2}(10 + 7d) = 124$।"
+       }
+      },
+      {
+       "q": {
+        "en": "The sum of the first 6 terms of an AP starting at 2 is 87. Find the common difference.",
+        "as": "2ৰে আৰম্ভ হোৱা সমান্তৰ শ্ৰেণীৰ প্ৰথম 6টা পদৰ যোগফল 87। সাধাৰণ অন্তৰ উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "$\\frac{6}{2}(4 + 5d) = 87$.",
+        "as": "$\\frac{6}{2}(4 + 5d) = 87$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.x.q4",
+     "type": "stepwise",
+     "skill": "ap-sum",
+     "q": {
+      "en": "A salary starts at ₹20000 a month and rises ₹1000 a month every year. Find the monthly pay in year 10 and the sum of the 10 monthly rates.",
+      "as": "দৰমহা মাহে ₹20000ৰে আৰম্ভ হৈ প্ৰতিবছৰে মাহে ₹1000 বাঢ়ে। 10 নং বছৰৰ মাহিলী দৰমহা আৰু 10টা মাহিলী হাৰৰ যোগফল উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Pay in the last year?",
+        "as": "শেষ বছৰৰ দৰমহা?"
+       },
+       "options": [
+        {
+         "en": "₹28000",
+         "as": "₹28000"
+        },
+        {
+         "en": "₹30000",
+         "as": "₹30000"
+        },
+        {
+         "en": "₹29000",
+         "as": "₹29000"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "9 rises.",
+        "as": "9টা বৃদ্ধি।"
+       },
+       "tag": "m-ap-n"
+      },
+      {
+       "ask": {
+        "en": "Sum?",
+        "as": "যোগফল?"
+       },
+       "options": [
+        {
+         "en": "₹200000",
+         "as": "₹200000"
+        },
+        {
+         "en": "₹245000",
+         "as": "₹245000"
+        },
+        {
+         "en": "₹490000",
+         "as": "₹490000"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Number × average of first and last.",
+        "as": "সংখ্যা × প্ৰথম আৰু শেষৰ গড়।"
+       },
+       "tag": "m-sum-half"
+      }
+     ],
+     "why": {
+      "en": "Pay rises are an AP, whatever the story says.",
+      "as": "কাহিনী যিয়েই নহওক, দৰমহা বৃদ্ধি সমান্তৰ শ্ৰেণী।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A salary starts at ₹20000 a month and rises ₹1000 a month every year. Find the monthly pay in year 10 and the sum of the 10 monthly rates.",
+        "as": "দৰমহা মাহে ₹20000ৰে আৰম্ভ হৈ প্ৰতিবছৰে মাহে ₹1000 বাঢ়ে। 10 নং বছৰৰ মাহিলী দৰমহা আৰু 10টা মাহিলী হাৰৰ যোগফল উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Pay in the last year?",
+          "as": "শেষ বছৰৰ দৰমহা?"
+         },
+         "options": [
+          {
+           "en": "₹28000",
+           "as": "₹28000"
+          },
+          {
+           "en": "₹30000",
+           "as": "₹30000"
+          },
+          {
+           "en": "₹29000",
+           "as": "₹29000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "9 rises.",
+          "as": "9টা বৃদ্ধি।"
+         },
+         "tag": "m-ap-n"
+        },
+        {
+         "ask": {
+          "en": "Sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "₹200000",
+           "as": "₹200000"
+          },
+          {
+           "en": "₹245000",
+           "as": "₹245000"
+          },
+          {
+           "en": "₹490000",
+           "as": "₹490000"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Number × average of first and last.",
+          "as": "সংখ্যা × প্ৰথম আৰু শেষৰ গড়।"
+         },
+         "tag": "m-sum-half"
+        }
+       ],
+       "why": {
+        "en": "Pay rises are an AP, whatever the story says.",
+        "as": "কাহিনী যিয়েই নহওক, দৰমহা বৃদ্ধি সমান্তৰ শ্ৰেণী।"
+       }
+      },
+      {
+       "q": {
+        "en": "A salary starts at ₹30000 a month and rises ₹2000 a month every year. Find the monthly pay in year 5 and the sum of the 5 monthly rates.",
+        "as": "দৰমহা মাহে ₹30000ৰে আৰম্ভ হৈ প্ৰতিবছৰে মাহে ₹2000 বাঢ়ে। 5 নং বছৰৰ মাহিলী দৰমহা আৰু 5টা মাহিলী হাৰৰ যোগফল উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Pay in the last year?",
+          "as": "শেষ বছৰৰ দৰমহা?"
+         },
+         "options": [
+          {
+           "en": "₹40000",
+           "as": "₹40000"
+          },
+          {
+           "en": "₹36000",
+           "as": "₹36000"
+          },
+          {
+           "en": "₹38000",
+           "as": "₹38000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "4 rises.",
+          "as": "4টা বৃদ্ধি।"
+         },
+         "tag": "m-ap-n"
+        },
+        {
+         "ask": {
+          "en": "Sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "₹340000",
+           "as": "₹340000"
+          },
+          {
+           "en": "₹170000",
+           "as": "₹170000"
+          },
+          {
+           "en": "₹150000",
+           "as": "₹150000"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Number × average of first and last.",
+          "as": "সংখ্যা × প্ৰথম আৰু শেষৰ গড়।"
+         },
+         "tag": "m-sum-half"
+        }
+       ],
+       "why": {
+        "en": "Pay rises are an AP, whatever the story says.",
+        "as": "কাহিনী যিয়েই নহওক, দৰমহা বৃদ্ধি সমান্তৰ শ্ৰেণী।"
+       }
+      },
+      {
+       "q": {
+        "en": "A salary starts at ₹12000 a month and rises ₹500 a month every year. Find the monthly pay in year 8 and the sum of the 8 monthly rates.",
+        "as": "দৰমহা মাহে ₹12000ৰে আৰম্ভ হৈ প্ৰতিবছৰে মাহে ₹500 বাঢ়ে। 8 নং বছৰৰ মাহিলী দৰমহা আৰু 8টা মাহিলী হাৰৰ যোগফল উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Pay in the last year?",
+          "as": "শেষ বছৰৰ দৰমহা?"
+         },
+         "options": [
+          {
+           "en": "₹16000",
+           "as": "₹16000"
+          },
+          {
+           "en": "₹15000",
+           "as": "₹15000"
+          },
+          {
+           "en": "₹15500",
+           "as": "₹15500"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "7 rises.",
+          "as": "7টা বৃদ্ধি।"
+         },
+         "tag": "m-ap-n"
+        },
+        {
+         "ask": {
+          "en": "Sum?",
+          "as": "যোগফল?"
+         },
+         "options": [
+          {
+           "en": "₹96000",
+           "as": "₹96000"
+          },
+          {
+           "en": "₹110000",
+           "as": "₹110000"
+          },
+          {
+           "en": "₹220000",
+           "as": "₹220000"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Number × average of first and last.",
+          "as": "সংখ্যা × প্ৰথম আৰু শেষৰ গড়।"
+         },
+         "tag": "m-sum-half"
+        }
+       ],
+       "why": {
+        "en": "Pay rises are an AP, whatever the story says.",
+        "as": "কাহিনী যিয়েই নহওক, দৰমহা বৃদ্ধি সমান্তৰ শ্ৰেণী।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.x.q5",
+     "type": "solve",
+     "skill": "ap",
+     "hints": [
+      {
+       "en": "Read every second number.",
+       "as": "এটা এৰি এটা পঢ়া।"
+      }
+     ],
+     "q": {
+      "en": "Find the next number: 1, 4, 2, 5, 3, ?",
+      "as": "পিছৰ সংখ্যাটো উলিওৱা: 1, 4, 2, 5, 3, ?"
+     },
+     "answer": "6",
+     "why": {
+      "en": "Two lists take turns.",
+      "as": "দুটা তালিকা পাল পাতি আহে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the next number: 1, 4, 2, 5, 3, ?",
+        "as": "পিছৰ সংখ্যাটো উলিওৱা: 1, 4, 2, 5, 3, ?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Two lists take turns.",
+        "as": "দুটা তালিকা পাল পাতি আহে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next number: 2, 10, 4, 20, 6, ?",
+        "as": "পিছৰ সংখ্যাটো উলিওৱা: 2, 10, 4, 20, 6, ?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "Two lists take turns.",
+        "as": "দুটা তালিকা পাল পাতি আহে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next number: 5, 3, 6, 5, 7, ?",
+        "as": "পিছৰ সংখ্যাটো উলিওৱা: 5, 3, 6, 5, 7, ?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Two lists take turns.",
+        "as": "দুটা তালিকা পাল পাতি আহে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next number: 10, 1, 9, 2, 8, ?",
+        "as": "পিছৰ সংখ্যাটো উলিওৱা: 10, 1, 9, 2, 8, ?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "Two lists take turns.",
+        "as": "দুটা তালিকা পাল পাতি আহে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m13.x.q6",
+     "type": "tf",
+     "skill": "ap",
+     "s": {
+      "en": "The middle of three AP terms is the average of the other two.",
+      "as": "সমান্তৰ শ্ৰেণীৰ তিনিটা পদৰ মাজৰটো আন দুটাৰ গড়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Equal steps either side make it the exact centre.",
+      "as": "দুয়োফালে সমান খোজ, সেয়ে ই ঠিক মাজ।"
+     }
+    },
+    {
+     "id": "m13.x.q7",
+     "type": "order",
+     "skill": "ap-sum",
+     "q": {
+      "en": "Put the steps for finding the first term in order",
+      "as": "প্ৰথম পদ উলিওৱাৰ খোজ ক্ৰমত সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Write the sum formula",
+       "as": "যোগফলৰ সূত্ৰ লিখা"
+      },
+      {
+       "en": "Put in n, d and S",
+       "as": "n, d আৰু S বহুওৱা"
+      },
+      {
+       "en": "Clear the $\\frac{n}{2}$",
+       "as": "$\\frac{n}{2}$ আঁতৰোৱা"
+      },
+      {
+       "en": "Solve for a",
+       "as": "aৰ মান উলিওৱা"
+      }
+     ],
+     "why": {
+      "en": "Same formula, read backwards.",
+      "as": "একে সূত্ৰ, ওলোটাকৈ পঢ়া।"
      }
     }
    ]

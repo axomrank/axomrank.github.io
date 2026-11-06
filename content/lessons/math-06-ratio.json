@@ -1255,17 +1255,17 @@
       }
      ],
      "q": {
-      "en": "If 12 : 7 = 60 : x, find x.",
-      "as": "12 : 7 = 60 : x হ'লে x উলিওৱা।"
+      "en": "If 8 : 7 = 40 : x, find x.",
+      "as": "8 : 7 = 40 : x হ'লে x উলিওৱা।"
      },
      "answer": "35",
      "why": {
-      "en": "Outer equals inner: 12x = 7 × 60, so x = 35.",
-      "as": "বাহিৰ = ভিতৰ: 12x = 7 × 60, সেয়ে x = 35।"
+      "en": "Outer equals inner: 8x = 7 × 40, so x = 35.",
+      "as": "বাহিৰ = ভিতৰ: 8x = 7 × 40, সেয়ে x = 35।"
      },
      "traps": [
       {
-       "ans": "55",
+       "ans": "39",
        "tag": "m-ratio-add",
        "why": {
         "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
@@ -1276,17 +1276,17 @@
      "variants": [
       {
        "q": {
-        "en": "If 12 : 7 = 60 : x, find x.",
-        "as": "12 : 7 = 60 : x হ'লে x উলিওৱা।"
+        "en": "If 8 : 7 = 40 : x, find x.",
+        "as": "8 : 7 = 40 : x হ'লে x উলিওৱা।"
        },
        "answer": "35",
        "why": {
-        "en": "Outer equals inner: 12x = 7 × 60, so x = 35.",
-        "as": "বাহিৰ = ভিতৰ: 12x = 7 × 60, সেয়ে x = 35।"
+        "en": "Outer equals inner: 8x = 7 × 40, so x = 35.",
+        "as": "বাহিৰ = ভিতৰ: 8x = 7 × 40, সেয়ে x = 35।"
        },
        "traps": [
         {
-         "ans": "55",
+         "ans": "39",
          "tag": "m-ratio-add",
          "why": {
           "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
@@ -1297,17 +1297,17 @@
       },
       {
        "q": {
-        "en": "If 3 : 5 = 21 : x, find x.",
-        "as": "3 : 5 = 21 : x হ'লে x উলিওৱা।"
+        "en": "If 3 : 7 = 27 : x, find x.",
+        "as": "3 : 7 = 27 : x হ'লে x উলিওৱা।"
        },
-       "answer": "35",
+       "answer": "63",
        "why": {
-        "en": "Outer equals inner: 3x = 5 × 21, so x = 35.",
-        "as": "বাহিৰ = ভিতৰ: 3x = 5 × 21, সেয়ে x = 35।"
+        "en": "Outer equals inner: 3x = 7 × 27, so x = 63.",
+        "as": "বাহিৰ = ভিতৰ: 3x = 7 × 27, সেয়ে x = 63।"
        },
        "traps": [
         {
-         "ans": "23",
+         "ans": "31",
          "tag": "m-ratio-add",
          "why": {
           "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
@@ -1365,8 +1365,8 @@
      "type": "stepwise",
      "skill": "r-prop",
      "q": {
-      "en": "5, x and 20 are in continued proportion. Find x.",
-      "as": "5, x আৰু 20 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
+      "en": "3, x and 27 are in continued proportion. Find x.",
+      "as": "3, x আৰু 27 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
      },
      "parts": [
       {
@@ -1376,19 +1376,19 @@
        },
        "options": [
         {
-         "en": "5 : x = x : 20",
-         "as": "5 : x = x : 20"
+         "en": "x = 3 + 27",
+         "as": "x = 3 + 27"
         },
         {
-         "en": "x = 5 + 20",
-         "as": "x = 5 + 20"
+         "en": "3 : x = x : 27",
+         "as": "3 : x = x : 27"
         },
         {
-         "en": "5 : x = 20 : x",
-         "as": "5 : x = 20 : x"
+         "en": "3 : x = 27 : x",
+         "as": "3 : x = 27 : x"
         }
        ],
-       "answer": 0,
+       "answer": 1,
        "note": {
         "en": "The middle term appears on both sides.",
         "as": "মাজৰ পদ দুয়োফালে থাকে।"
@@ -1401,19 +1401,19 @@
        },
        "options": [
         {
-         "en": "$2x = 100$",
-         "as": "$2x = 100$"
+         "en": "$2x = 81$",
+         "as": "$2x = 81$"
         },
         {
-         "en": "$x = 100$",
-         "as": "$x = 100$"
+         "en": "$x^2 = 81$",
+         "as": "$x^2 = 81$"
         },
         {
-         "en": "$x^2 = 100$",
-         "as": "$x^2 = 100$"
+         "en": "$x = 81$",
+         "as": "$x = 81$"
         }
        ],
-       "answer": 2,
+       "answer": 1,
        "note": {
         "en": "x × x is the inner product.",
         "as": "x × x ভিতৰৰ পূৰণফল।"
@@ -1426,19 +1426,19 @@
        },
        "options": [
         {
-         "en": "50",
-         "as": "50"
+         "en": "9",
+         "as": "9"
         },
         {
-         "en": "10",
-         "as": "10"
+         "en": "16",
+         "as": "16"
         },
         {
-         "en": "13",
-         "as": "13"
+         "en": "40",
+         "as": "40"
         }
        ],
-       "answer": 1,
+       "answer": 0,
        "note": {
         "en": "Take the square root.",
         "as": "বৰ্গমূল লোৱা।"
@@ -1453,8 +1453,8 @@
      "variants": [
       {
        "q": {
-        "en": "5, x and 20 are in continued proportion. Find x.",
-        "as": "5, x আৰু 20 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
+        "en": "3, x and 27 are in continued proportion. Find x.",
+        "as": "3, x আৰু 27 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
        },
        "parts": [
         {
@@ -1464,19 +1464,19 @@
          },
          "options": [
           {
-           "en": "5 : x = x : 20",
-           "as": "5 : x = x : 20"
+           "en": "x = 3 + 27",
+           "as": "x = 3 + 27"
           },
           {
-           "en": "x = 5 + 20",
-           "as": "x = 5 + 20"
+           "en": "3 : x = x : 27",
+           "as": "3 : x = x : 27"
           },
           {
-           "en": "5 : x = 20 : x",
-           "as": "5 : x = 20 : x"
+           "en": "3 : x = 27 : x",
+           "as": "3 : x = 27 : x"
           }
          ],
-         "answer": 0,
+         "answer": 1,
          "note": {
           "en": "The middle term appears on both sides.",
           "as": "মাজৰ পদ দুয়োফালে থাকে।"
@@ -1489,19 +1489,19 @@
          },
          "options": [
           {
-           "en": "$2x = 100$",
-           "as": "$2x = 100$"
+           "en": "$2x = 81$",
+           "as": "$2x = 81$"
           },
           {
-           "en": "$x = 100$",
-           "as": "$x = 100$"
+           "en": "$x^2 = 81$",
+           "as": "$x^2 = 81$"
           },
           {
-           "en": "$x^2 = 100$",
-           "as": "$x^2 = 100$"
+           "en": "$x = 81$",
+           "as": "$x = 81$"
           }
          ],
-         "answer": 2,
+         "answer": 1,
          "note": {
           "en": "x × x is the inner product.",
           "as": "x × x ভিতৰৰ পূৰণফল।"
@@ -1514,19 +1514,19 @@
          },
          "options": [
           {
-           "en": "50",
-           "as": "50"
+           "en": "9",
+           "as": "9"
           },
           {
-           "en": "10",
-           "as": "10"
+           "en": "16",
+           "as": "16"
           },
           {
-           "en": "13",
-           "as": "13"
+           "en": "40",
+           "as": "40"
           }
          ],
-         "answer": 1,
+         "answer": 0,
          "note": {
           "en": "Take the square root.",
           "as": "বৰ্গমূল লোৱা।"
@@ -2593,6 +2593,702 @@
        }
       }
      ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Values from ratios",
+    "as": "অনুপাতৰ পৰা মান"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "If $\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}$, write x = ak, y = bk, z = ck.",
+     "as": "$\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}$ হ'লে x = ak, y = bk, z = ck লিখা।"
+    },
+    {
+     "en": "In a ratio expression, k cancels, so any value of k will do.",
+     "as": "অনুপাতৰ ৰাশিত k কাটি যায়, সেয়ে যিকোনো k চলে।"
+    },
+    {
+     "en": "Flip a ratio by dividing every term into their LCM.",
+     "as": "প্ৰতিটো পদ ল.সা.গু.ৰ ভিতৰত হৰণ কৰি অনুপাত ওলোটোৱা।"
+    },
+    {
+     "en": "Long chains join two at a time.",
+     "as": "দীঘল শিকলি দুটাকৈ জোৰা হয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m6.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Pick a friendly k",
+      "as": "সহজ k বাছি লোৱা"
+     },
+     "text": [
+      {
+       "en": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ says x, y and z move together as 2, 5 and 9.",
+       "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ মানে x, y, z 2, 5, 9 হিচাপে একেলগে যায়।"
+      },
+      {
+       "en": "So simply put x = 2, y = 5 and z = 9 and calculate.",
+       "as": "সেয়ে পোনে পোনে x = 2, y = 5, z = 9 বহুৱাই হিচাপ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "x = 2, y = 5, z = 9",
+        "as": "x = 2, y = 5, z = 9"
+       },
+       {
+        "en": "$\\frac{x + y + z}{2z}$",
+        "as": "$\\frac{x + y + z}{2z}$"
+       },
+       {
+        "en": "$\\frac{16}{18} = \\frac{8}{9}$",
+        "as": "$\\frac{16}{18} = \\frac{8}{9}$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m6.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Flipping a ratio",
+      "as": "অনুপাত ওলোটোৱা"
+     },
+     "text": [
+      {
+       "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$, the biggest flip belongs to the smallest number.",
+       "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$ হ'লে ডাঙৰ ওলোটা সৰু সংখ্যাৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "chain",
+      "ab": [
+       1,
+       3
+      ],
+      "bc": [
+       6,
+       8
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make the two B's match.",
+        "as": "দুটা B মিলোৱা।"
+       },
+       "goal": {
+        "match": 1
+       },
+       "then": {
+        "en": "That joins 2 : 6 : 8, which is 1 : 3 : 4. To flip it, take 12, the LCM, and divide: 12 : 4 : 3.",
+        "as": "ই 2 : 6 : 8 জোৰে, অৰ্থাৎ 1 : 3 : 4। ওলোটাবলৈ ল.সা.গু. 12 লৈ হৰণ কৰা: 12 : 4 : 3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q1",
+     "type": "solve",
+     "skill": "r-value",
+     "hints": [
+      {
+       "en": "Replace x, y and z with the bottom numbers.",
+       "as": "x, y, zৰ ঠাইত তলৰ সংখ্যা বহুওৱা।"
+      }
+     ],
+     "q": {
+      "en": "If $\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$, find $\\frac{x + y + z}{2z}$.",
+      "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+     },
+     "answer": "8/9",
+     "why": {
+      "en": "Put x = 2, y = 5, z = 9.",
+      "as": "x = 2, y = 5, z = 9 বহুওৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "8/9",
+       "why": {
+        "en": "Put x = 2, y = 5, z = 9.",
+        "as": "x = 2, y = 5, z = 9 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{3} = \\frac{y}{5} = \\frac{z}{8}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{3} = \\frac{y}{5} = \\frac{z}{8}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "1",
+       "why": {
+        "en": "Put x = 3, y = 5, z = 8.",
+        "as": "x = 3, y = 5, z = 8 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{1} = \\frac{y}{4} = \\frac{z}{5}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{1} = \\frac{y}{4} = \\frac{z}{5}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "1",
+       "why": {
+        "en": "Put x = 1, y = 4, z = 5.",
+        "as": "x = 1, y = 4, z = 5 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{3}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{3}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "5/3",
+       "why": {
+        "en": "Put x = 2, y = 5, z = 3.",
+        "as": "x = 2, y = 5, z = 3 বহুওৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q2",
+     "type": "solve",
+     "skill": "r-value",
+     "q": {
+      "en": "If m : n = 4 : 9, find $\\frac{3m + n}{3m - n}$.",
+      "as": "m : n = 4 : 9 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+     },
+     "answer": "7",
+     "why": {
+      "en": "Put m = 4 and n = 9.",
+      "as": "m = 4 আৰু n = 9 বহুওৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If m : n = 4 : 9, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 4 : 9 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Put m = 4 and n = 9.",
+        "as": "m = 4 আৰু n = 9 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If m : n = 2 : 1, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 2 : 1 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "7/5",
+       "why": {
+        "en": "Put m = 2 and n = 1.",
+        "as": "m = 2 আৰু n = 1 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If m : n = 3 : 4, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 3 : 4 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "13/5",
+       "why": {
+        "en": "Put m = 3 and n = 4.",
+        "as": "m = 3 আৰু n = 4 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If m : n = 5 : 3, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 5 : 3 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "3/2",
+       "why": {
+        "en": "Put m = 5 and n = 3.",
+        "as": "m = 5 আৰু n = 3 বহুওৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q3",
+     "type": "solve",
+     "skill": "r-value",
+     "hints": [
+      {
+       "en": "Factorise the top.",
+       "as": "ওপৰৰটো উৎপাদক কৰা।"
+      }
+     ],
+     "q": {
+      "en": "If $\\frac{x}{11} = \\frac{y}{4}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 11 and y = 4.",
+      "as": "$\\frac{x}{11} = \\frac{y}{4}$ হ'লে x = 11, y = 4ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+     },
+     "answer": "7",
+     "why": {
+      "en": "It cancels to x − y.",
+      "as": "কাটিলে x − y হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\frac{x}{11} = \\frac{y}{4}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 11 and y = 4.",
+        "as": "$\\frac{x}{11} = \\frac{y}{4}$ হ'লে x = 11, y = 4ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "It cancels to x − y.",
+        "as": "কাটিলে x − y হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{12} = \\frac{y}{5}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 12 and y = 5.",
+        "as": "$\\frac{x}{12} = \\frac{y}{5}$ হ'লে x = 12, y = 5ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "It cancels to x − y.",
+        "as": "কাটিলে x − y হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{20} = \\frac{y}{7}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 20 and y = 7.",
+        "as": "$\\frac{x}{20} = \\frac{y}{7}$ হ'লে x = 20, y = 7ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+       },
+       "answer": "13",
+       "why": {
+        "en": "It cancels to x − y.",
+        "as": "কাটিলে x − y হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q4",
+     "type": "stepwise",
+     "skill": "r-value",
+     "q": {
+      "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$, find x : y : z.",
+      "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$ হ'লে x : y : z উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "LCM of the terms?",
+        "as": "পদবোৰৰ ল.সা.গু.?"
+       },
+       "options": [
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "24",
+         "as": "24"
+        },
+        {
+         "en": "13",
+         "as": "13"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It clears every fraction.",
+        "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+       },
+       "skill": "l-lcm"
+      },
+      {
+       "ask": {
+        "en": "Flipped ratio?",
+        "as": "ওলোটা অনুপাত?"
+       },
+       "options": [
+        {
+         "en": "4 : 3 : 1",
+         "as": "4 : 3 : 1"
+        },
+        {
+         "en": "12 : 4 : 3",
+         "as": "12 : 4 : 3"
+        },
+        {
+         "en": "1 : 3 : 4",
+         "as": "1 : 3 : 4"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Divide the LCM by each term.",
+        "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+       },
+       "tag": "m-ratio-flip"
+      }
+     ],
+     "why": {
+      "en": "Simply reversing the order works only for two terms.",
+      "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$, find x : y : z.",
+        "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$ হ'লে x : y : z উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM of the terms?",
+          "as": "পদবোৰৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It clears every fraction.",
+          "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Flipped ratio?",
+          "as": "ওলোটা অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "4 : 3 : 1",
+           "as": "4 : 3 : 1"
+          },
+          {
+           "en": "12 : 4 : 3",
+           "as": "12 : 4 : 3"
+          },
+          {
+           "en": "1 : 3 : 4",
+           "as": "1 : 3 : 4"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Divide the LCM by each term.",
+          "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+         },
+         "tag": "m-ratio-flip"
+        }
+       ],
+       "why": {
+        "en": "Simply reversing the order works only for two terms.",
+        "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 2 : 5 : 6$, find x : y : z.",
+        "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 2 : 5 : 6$ হ'লে x : y : z উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM of the terms?",
+          "as": "পদবোৰৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "31",
+           "as": "31"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It clears every fraction.",
+          "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Flipped ratio?",
+          "as": "ওলোটা অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "15 : 6 : 5",
+           "as": "15 : 6 : 5"
+          },
+          {
+           "en": "2 : 5 : 6",
+           "as": "2 : 5 : 6"
+          },
+          {
+           "en": "6 : 5 : 2",
+           "as": "6 : 5 : 2"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Divide the LCM by each term.",
+          "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+         },
+         "tag": "m-ratio-flip"
+        }
+       ],
+       "why": {
+        "en": "Simply reversing the order works only for two terms.",
+        "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 3 : 4 : 6$, find x : y : z.",
+        "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 3 : 4 : 6$ হ'লে x : y : z উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM of the terms?",
+          "as": "পদবোৰৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It clears every fraction.",
+          "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Flipped ratio?",
+          "as": "ওলোটা অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "3 : 4 : 6",
+           "as": "3 : 4 : 6"
+          },
+          {
+           "en": "6 : 4 : 3",
+           "as": "6 : 4 : 3"
+          },
+          {
+           "en": "4 : 3 : 2",
+           "as": "4 : 3 : 2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide the LCM by each term.",
+          "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+         },
+         "tag": "m-ratio-flip"
+        }
+       ],
+       "why": {
+        "en": "Simply reversing the order works only for two terms.",
+        "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q5",
+     "type": "solve",
+     "skill": "r-combine",
+     "hints": [
+      {
+       "en": "Join two ratios at a time.",
+       "as": "দুটা দুটাকৈ অনুপাত জোৰা।"
+      }
+     ],
+     "q": {
+      "en": "₹3100 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+      "as": "₹3100 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+     },
+     "answer": "1800",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+      "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "₹3100 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+        "as": "₹3100 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+       },
+       "answer": "1800",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+        "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+       }
+      },
+      {
+       "q": {
+        "en": "₹6200 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+        "as": "₹6200 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+       },
+       "answer": "3600",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+        "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+       }
+      },
+      {
+       "q": {
+        "en": "₹1550 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+        "as": "₹1550 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+       },
+       "answer": "900",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+        "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q6",
+     "type": "tf",
+     "skill": "r-value",
+     "s": {
+      "en": "If x : y : z = 2 : 5 : 6, then $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z}$ = 6 : 5 : 2.",
+      "as": "x : y : z = 2 : 5 : 6 হ'লে $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z}$ = 6 : 5 : 2।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 15 : 6 : 5: divide the LCM, 30, by each term.",
+      "as": "ই 15 : 6 : 5: ল.সা.গু. 30ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-ratio-flip",
+       "why": {
+        "en": "Flipping three terms is not reversing them.",
+        "as": "তিনিটা পদ ওলোটোৱা মানে ক্ৰম সলনি কৰা নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q7",
+     "type": "match",
+     "skill": "r-value",
+     "q": {
+      "en": "Match each ratio to its flip",
+      "as": "প্ৰতিটো অনুপাতক ওলোটাৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 : 2",
+        "as": "1 : 2"
+       },
+       {
+        "en": "2 : 1",
+        "as": "2 : 1"
+       }
+      ],
+      [
+       {
+        "en": "1 : 3 : 4",
+        "as": "1 : 3 : 4"
+       },
+       {
+        "en": "12 : 4 : 3",
+        "as": "12 : 4 : 3"
+       }
+      ],
+      [
+       {
+        "en": "2 : 5 : 6",
+        "as": "2 : 5 : 6"
+       },
+       {
+        "en": "15 : 6 : 5",
+        "as": "15 : 6 : 5"
+       }
+      ],
+      [
+       {
+        "en": "3 : 4 : 6",
+        "as": "3 : 4 : 6"
+       },
+       {
+        "en": "4 : 3 : 2",
+        "as": "4 : 3 : 2"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide the LCM of the terms by each one.",
+      "as": "পদবোৰৰ ল.সা.গু.ক প্ৰতিটোৰে হৰণ কৰা।"
+     }
     }
    ]
   }

@@ -554,6 +554,117 @@
       "en": "18 km/h is exactly 5 m/s, a handy pair to remember.",
       "as": "18 km/h ঠিক 5 m/s, মনত ৰাখিবলগীয়া যোৰা।"
      }
+    },
+    {
+     "id": "m11.u1.q6",
+     "type": "solve",
+     "skill": "sp-rel",
+     "hints": [
+      {
+       "en": "× 5/18 turns km/h into m/s.",
+       "as": "× 5/18ই km/hক m/s কৰে।"
+      }
+     ],
+     "q": {
+      "en": "A train 120 m long runs at 54 km/h. How many seconds does it take to cross a bridge 180 m long?",
+      "as": "120 মিটাৰ দীঘল ৰেল 54 km/hত চলে। 180 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "seconds",
+      "as": "ছেকেণ্ড"
+     },
+     "why": {
+      "en": "120 + 180 m at 15 m/s.",
+      "as": "15 m/sত 120 + 180 মিটাৰ।"
+     },
+     "traps": [
+      {
+       "ans": "12",
+       "tag": "m-train-length",
+       "why": {
+        "en": "The whole train must clear, so add its own length.",
+        "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A train 120 m long runs at 54 km/h. How many seconds does it take to cross a bridge 180 m long?",
+        "as": "120 মিটাৰ দীঘল ৰেল 54 km/hত চলে। 180 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "seconds",
+        "as": "ছেকেণ্ড"
+       },
+       "why": {
+        "en": "120 + 180 m at 15 m/s.",
+        "as": "15 m/sত 120 + 180 মিটাৰ।"
+       },
+       "traps": [
+        {
+         "ans": "12",
+         "tag": "m-train-length",
+         "why": {
+          "en": "The whole train must clear, so add its own length.",
+          "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A train 200 m long runs at 72 km/h. How many seconds does it take to cross a bridge 100 m long?",
+        "as": "200 মিটাৰ দীঘল ৰেল 72 km/hত চলে। 100 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "seconds",
+        "as": "ছেকেণ্ড"
+       },
+       "why": {
+        "en": "200 + 100 m at 20 m/s.",
+        "as": "20 m/sত 200 + 100 মিটাৰ।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-train-length",
+         "why": {
+          "en": "The whole train must clear, so add its own length.",
+          "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A train 150 m long runs at 36 km/h. How many seconds does it take to cross a bridge 250 m long?",
+        "as": "150 মিটাৰ দীঘল ৰেল 36 km/hত চলে। 250 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "seconds",
+        "as": "ছেকেণ্ড"
+       },
+       "why": {
+        "en": "150 + 250 m at 10 m/s.",
+        "as": "10 m/sত 150 + 250 মিটাৰ।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-train-length",
+         "why": {
+          "en": "The whole train must clear, so add its own length.",
+          "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -2451,6 +2562,363 @@
       "en": "A person or pole has no length worth counting.",
       "as": "মানুহ বা খুঁটাৰ দৈৰ্ঘ্য ধৰা নহয়।"
      }
+    },
+    {
+     "id": "m11.u3.q7",
+     "type": "stepwise",
+     "skill": "sp-rel",
+     "q": {
+      "en": "A train passes a man in 8 seconds and a 240 m platform in 20 seconds. Find its length.",
+      "as": "এখন ৰেলে এজন মানুহক 8 ছেকেণ্ডত আৰু 240 মিটাৰৰ প্লেটফৰ্ম 20 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Extra seconds for the platform?",
+        "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+       },
+       "options": [
+        {
+         "en": "20",
+         "as": "20"
+        },
+        {
+         "en": "28",
+         "as": "28"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The train's own length costs the same in both.",
+        "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Speed?",
+        "as": "গতি?"
+       },
+       "options": [
+        {
+         "en": "15 m/s",
+         "as": "15 m/s"
+        },
+        {
+         "en": "25 m/s",
+         "as": "25 m/s"
+        },
+        {
+         "en": "20 m/s",
+         "as": "20 m/s"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Platform length over extra seconds.",
+        "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Train length?",
+        "as": "ৰেলৰ দৈৰ্ঘ্য?"
+       },
+       "options": [
+        {
+         "en": "240 m ",
+         "as": "240 m "
+        },
+        {
+         "en": "160 m",
+         "as": "160 m"
+        },
+        {
+         "en": "400 m",
+         "as": "400 m"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Speed × time to pass the man.",
+        "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+       },
+       "tag": "m-train-length"
+      }
+     ],
+     "why": {
+      "en": "The gap between the two times is the platform alone.",
+      "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A train passes a man in 8 seconds and a 240 m platform in 20 seconds. Find its length.",
+        "as": "এখন ৰেলে এজন মানুহক 8 ছেকেণ্ডত আৰু 240 মিটাৰৰ প্লেটফৰ্ম 20 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Extra seconds for the platform?",
+          "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The train's own length costs the same in both.",
+          "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Speed?",
+          "as": "গতি?"
+         },
+         "options": [
+          {
+           "en": "15 m/s",
+           "as": "15 m/s"
+          },
+          {
+           "en": "25 m/s",
+           "as": "25 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Platform length over extra seconds.",
+          "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Train length?",
+          "as": "ৰেলৰ দৈৰ্ঘ্য?"
+         },
+         "options": [
+          {
+           "en": "240 m ",
+           "as": "240 m "
+          },
+          {
+           "en": "160 m",
+           "as": "160 m"
+          },
+          {
+           "en": "400 m",
+           "as": "400 m"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Speed × time to pass the man.",
+          "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+         },
+         "tag": "m-train-length"
+        }
+       ],
+       "why": {
+        "en": "The gap between the two times is the platform alone.",
+        "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "A train passes a man in 12 seconds and a 270 m platform in 30 seconds. Find its length.",
+        "as": "এখন ৰেলে এজন মানুহক 12 ছেকেণ্ডত আৰু 270 মিটাৰৰ প্লেটফৰ্ম 30 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Extra seconds for the platform?",
+          "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+         },
+         "options": [
+          {
+           "en": "42",
+           "as": "42"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The train's own length costs the same in both.",
+          "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Speed?",
+          "as": "গতি?"
+         },
+         "options": [
+          {
+           "en": "10 m/s",
+           "as": "10 m/s"
+          },
+          {
+           "en": "15 m/s",
+           "as": "15 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Platform length over extra seconds.",
+          "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Train length?",
+          "as": "ৰেলৰ দৈৰ্ঘ্য?"
+         },
+         "options": [
+          {
+           "en": "180 m",
+           "as": "180 m"
+          },
+          {
+           "en": "270 m ",
+           "as": "270 m "
+          },
+          {
+           "en": "450 m",
+           "as": "450 m"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Speed × time to pass the man.",
+          "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+         },
+         "tag": "m-train-length"
+        }
+       ],
+       "why": {
+        "en": "The gap between the two times is the platform alone.",
+        "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "A train passes a man in 10 seconds and a 300 m platform in 25 seconds. Find its length.",
+        "as": "এখন ৰেলে এজন মানুহক 10 ছেকেণ্ডত আৰু 300 মিটাৰৰ প্লেটফৰ্ম 25 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Extra seconds for the platform?",
+          "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+         },
+         "options": [
+          {
+           "en": "35",
+           "as": "35"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The train's own length costs the same in both.",
+          "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Speed?",
+          "as": "গতি?"
+         },
+         "options": [
+          {
+           "en": "15 m/s",
+           "as": "15 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          },
+          {
+           "en": "25 m/s",
+           "as": "25 m/s"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Platform length over extra seconds.",
+          "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Train length?",
+          "as": "ৰেলৰ দৈৰ্ঘ্য?"
+         },
+         "options": [
+          {
+           "en": "200 m",
+           "as": "200 m"
+          },
+          {
+           "en": "300 m ",
+           "as": "300 m "
+          },
+          {
+           "en": "500 m",
+           "as": "500 m"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Speed × time to pass the man.",
+          "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+         },
+         "tag": "m-train-length"
+        }
+       ],
+       "why": {
+        "en": "The gap between the two times is the platform alone.",
+        "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+       }
+      }
+     ]
     }
    ]
   }

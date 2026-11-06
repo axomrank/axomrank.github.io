@@ -387,17 +387,17 @@
      "type": "solve",
      "skill": "a-mean",
      "q": {
-      "en": "The average of 5 consecutive numbers is 13. Find the largest.",
-      "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 13। ডাঙৰটো উলিওৱা।"
+      "en": "The average of 5 consecutive numbers is 17. Find the largest.",
+      "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 17। ডাঙৰটো উলিওৱা।"
      },
-     "answer": "15",
+     "answer": "19",
      "why": {
-      "en": "13 is the middle, and the largest is 2 steps above it.",
-      "as": "13 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
+      "en": "17 is the middle, and the largest is 2 steps above it.",
+      "as": "17 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
      },
      "traps": [
       {
-       "ans": "18",
+       "ans": "22",
        "tag": "m-avg-count",
        "why": {
         "en": "Only half the numbers lie above the middle.",
@@ -408,17 +408,17 @@
      "variants": [
       {
        "q": {
-        "en": "The average of 5 consecutive numbers is 13. Find the largest.",
-        "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 13। ডাঙৰটো উলিওৱা।"
+        "en": "The average of 5 consecutive numbers is 17. Find the largest.",
+        "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 17। ডাঙৰটো উলিওৱা।"
        },
-       "answer": "15",
+       "answer": "19",
        "why": {
-        "en": "13 is the middle, and the largest is 2 steps above it.",
-        "as": "13 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
+        "en": "17 is the middle, and the largest is 2 steps above it.",
+        "as": "17 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
        },
        "traps": [
         {
-         "ans": "18",
+         "ans": "22",
          "tag": "m-avg-count",
          "why": {
           "en": "Only half the numbers lie above the middle.",
@@ -429,17 +429,17 @@
       },
       {
        "q": {
-        "en": "The average of 7 consecutive numbers is 20. Find the largest.",
-        "as": "7টা ক্ৰমিক সংখ্যাৰ গড় 20। ডাঙৰটো উলিওৱা।"
+        "en": "The average of 7 consecutive numbers is 23. Find the largest.",
+        "as": "7টা ক্ৰমিক সংখ্যাৰ গড় 23। ডাঙৰটো উলিওৱা।"
        },
-       "answer": "23",
+       "answer": "26",
        "why": {
-        "en": "20 is the middle, and the largest is 3 steps above it.",
-        "as": "20 মাজৰটো, ডাঙৰটো ইয়াৰ 3 খোজ ওপৰত।"
+        "en": "23 is the middle, and the largest is 3 steps above it.",
+        "as": "23 মাজৰটো, ডাঙৰটো ইয়াৰ 3 খোজ ওপৰত।"
        },
        "traps": [
         {
-         "ans": "27",
+         "ans": "30",
          "tag": "m-avg-count",
          "why": {
           "en": "Only half the numbers lie above the middle.",
@@ -471,17 +471,17 @@
       },
       {
        "q": {
-        "en": "The average of 5 consecutive numbers is 51. Find the largest.",
-        "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 51। ডাঙৰটো উলিওৱা।"
+        "en": "The average of 5 consecutive numbers is 44. Find the largest.",
+        "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 44। ডাঙৰটো উলিওৱা।"
        },
-       "answer": "53",
+       "answer": "46",
        "why": {
-        "en": "51 is the middle, and the largest is 2 steps above it.",
-        "as": "51 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
+        "en": "44 is the middle, and the largest is 2 steps above it.",
+        "as": "44 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
        },
        "traps": [
         {
-         "ans": "56",
+         "ans": "49",
          "tag": "m-avg-count",
          "why": {
           "en": "Only half the numbers lie above the middle.",
@@ -560,6 +560,116 @@
       "en": "Each set is evenly spaced, so average the first and the last.",
       "as": "প্ৰতিটো গোটৰ ব্যৱধান সমান, সেয়ে প্ৰথম আৰু শেষৰটোৰ গড় লোৱা।"
      }
+    },
+    {
+     "id": "m7.u1.q6",
+     "type": "solve",
+     "skill": "a-mean",
+     "hints": [
+      {
+       "en": "Largest = average + half of (count − 1).",
+       "as": "ডাঙৰটো = গড় + (সংখ্যা − 1)ৰ আধা।"
+      }
+     ],
+     "q": {
+      "en": "The average of 6 consecutive whole numbers is 62.5. Find number 2 counting from the top.",
+      "as": "6টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 62.5। ওপৰৰ পৰা গণিলে 2 নং সংখ্যাটো উলিওৱা।"
+     },
+     "answer": "64",
+     "why": {
+      "en": "With an even count, the average sits between the two middle numbers.",
+      "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average of 6 consecutive whole numbers is 62.5. Find number 2 counting from the top.",
+        "as": "6টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 62.5। ওপৰৰ পৰা গণিলে 2 নং সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "64",
+       "why": {
+        "en": "With an even count, the average sits between the two middle numbers.",
+        "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of 4 consecutive whole numbers is 31.5. Find number 3 counting from the top.",
+        "as": "4টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 31.5। ওপৰৰ পৰা গণিলে 3 নং সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "31",
+       "why": {
+        "en": "With an even count, the average sits between the two middle numbers.",
+        "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of 8 consecutive whole numbers is 40.5. Find number 2 counting from the top.",
+        "as": "8টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 40.5। ওপৰৰ পৰা গণিলে 2 নং সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "43",
+       "why": {
+        "en": "With an even count, the average sits between the two middle numbers.",
+        "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.q7",
+     "type": "solve",
+     "skill": "a-mean",
+     "hints": [
+      {
+       "en": "Add all the numbers next to x, then share them out.",
+       "as": "xৰ লগৰ সংখ্যাবোৰ যোগ কৰি ভাগ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "The average of $x$, $x + 5$, $x - 2$, $x + 9$ is 6. Find x.",
+      "as": "$x$, $x + 5$, $x - 2$, $x + 9$ৰ গড় 6। x উলিওৱা।"
+     },
+     "answer": "3",
+     "why": {
+      "en": "x + 3 = 6.",
+      "as": "x + 3 = 6।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average of $x$, $x + 5$, $x - 2$, $x + 9$ is 6. Find x.",
+        "as": "$x$, $x + 5$, $x - 2$, $x + 9$ৰ গড় 6। x উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "x + 3 = 6.",
+        "as": "x + 3 = 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of $x - 2$, $x - 5$, $x - 3$, $x + 6$ is 7. Find x.",
+        "as": "$x - 2$, $x - 5$, $x - 3$, $x + 6$ৰ গড় 7। x উলিওৱা।"
+       },
+       "answer": "8",
+       "why": {
+        "en": "x + -1 = 7.",
+        "as": "x + -1 = 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of $x + 2$, $x + 6$, $x + 4$ is 9. Find x.",
+        "as": "$x + 2$, $x + 6$, $x + 4$ৰ গড় 9। x উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "x + 4 = 9.",
+        "as": "x + 4 = 9।"
+       }
+      }
+     ]
     }
    ]
   },
@@ -676,17 +786,17 @@
       }
      ],
      "q": {
-      "en": "19 students average 5 years. A teacher joins and the average becomes 6. How old is the teacher?",
-      "as": "19 জন ছাত্ৰৰ গড় বয়স 5 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 6 হ'ল। শিক্ষকৰ বয়স কিমান?"
+      "en": "29 students average 8 years. A teacher joins and the average becomes 9. How old is the teacher?",
+      "as": "29 জন ছাত্ৰৰ গড় বয়স 8 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 9 হ'ল। শিক্ষকৰ বয়স কিমান?"
      },
-     "answer": "25",
+     "answer": "38",
      "why": {
-      "en": "New total 120 less old total 95.",
-      "as": "নতুন মুঠ 120ৰ পৰা পুৰণি মুঠ 95 বিয়োগ।"
+      "en": "New total 270 less old total 232.",
+      "as": "নতুন মুঠ 270ৰ পৰা পুৰণি মুঠ 232 বিয়োগ।"
      },
      "traps": [
       {
-       "ans": "6",
+       "ans": "9",
        "tag": "m-avg-newcomer",
        "why": {
         "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
@@ -697,17 +807,17 @@
      "variants": [
       {
        "q": {
-        "en": "19 students average 5 years. A teacher joins and the average becomes 6. How old is the teacher?",
-        "as": "19 জন ছাত্ৰৰ গড় বয়স 5 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 6 হ'ল। শিক্ষকৰ বয়স কিমান?"
+        "en": "29 students average 8 years. A teacher joins and the average becomes 9. How old is the teacher?",
+        "as": "29 জন ছাত্ৰৰ গড় বয়স 8 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 9 হ'ল। শিক্ষকৰ বয়স কিমান?"
        },
-       "answer": "25",
+       "answer": "38",
        "why": {
-        "en": "New total 120 less old total 95.",
-        "as": "নতুন মুঠ 120ৰ পৰা পুৰণি মুঠ 95 বিয়োগ।"
+        "en": "New total 270 less old total 232.",
+        "as": "নতুন মুঠ 270ৰ পৰা পুৰণি মুঠ 232 বিয়োগ।"
        },
        "traps": [
         {
-         "ans": "6",
+         "ans": "9",
          "tag": "m-avg-newcomer",
          "why": {
           "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
@@ -718,17 +828,17 @@
       },
       {
        "q": {
-        "en": "30 students average 11 years. A teacher joins and the average becomes 12. How old is the teacher?",
-        "as": "30 জন ছাত্ৰৰ গড় বয়স 11 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 12 হ'ল। শিক্ষকৰ বয়স কিমান?"
+        "en": "34 students average 13 years. A teacher joins and the average becomes 14. How old is the teacher?",
+        "as": "34 জন ছাত্ৰৰ গড় বয়স 13 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 14 হ'ল। শিক্ষকৰ বয়স কিমান?"
        },
-       "answer": "42",
+       "answer": "48",
        "why": {
-        "en": "New total 372 less old total 330.",
-        "as": "নতুন মুঠ 372ৰ পৰা পুৰণি মুঠ 330 বিয়োগ।"
+        "en": "New total 490 less old total 442.",
+        "as": "নতুন মুঠ 490ৰ পৰা পুৰণি মুঠ 442 বিয়োগ।"
        },
        "traps": [
         {
-         "ans": "12",
+         "ans": "14",
          "tag": "m-avg-newcomer",
          "why": {
           "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
@@ -786,17 +896,17 @@
      "type": "solve",
      "skill": "a-change",
      "q": {
-      "en": "The average of 5 numbers is 17. One number, 12, is replaced by 27. Find the new average.",
-      "as": "5টা সংখ্যাৰ গড় 17। এটা সংখ্যা 12ৰ ঠাইত 27 হ'ল। নতুন গড় উলিওৱা।"
+      "en": "The average of 5 numbers is 19. One number, 12, is replaced by 27. Find the new average.",
+      "as": "5টা সংখ্যাৰ গড় 19। এটা সংখ্যা 12ৰ ঠাইত 27 হ'ল। নতুন গড় উলিওৱা।"
      },
-     "answer": "20",
+     "answer": "22",
      "why": {
       "en": "The total rose by 15, spread over 5 numbers.",
       "as": "মুঠ 15 বাঢ়িল, 5টা সংখ্যাত বিয়পিল।"
      },
      "traps": [
       {
-       "ans": "32",
+       "ans": "34",
        "tag": "m-avg-newcomer",
        "why": {
         "en": "The change spreads across all the numbers, so divide it by the count.",
@@ -807,17 +917,17 @@
      "variants": [
       {
        "q": {
-        "en": "The average of 5 numbers is 17. One number, 12, is replaced by 27. Find the new average.",
-        "as": "5টা সংখ্যাৰ গড় 17। এটা সংখ্যা 12ৰ ঠাইত 27 হ'ল। নতুন গড় উলিওৱা।"
+        "en": "The average of 5 numbers is 19. One number, 12, is replaced by 27. Find the new average.",
+        "as": "5টা সংখ্যাৰ গড় 19। এটা সংখ্যা 12ৰ ঠাইত 27 হ'ল। নতুন গড় উলিওৱা।"
        },
-       "answer": "20",
+       "answer": "22",
        "why": {
         "en": "The total rose by 15, spread over 5 numbers.",
         "as": "মুঠ 15 বাঢ়িল, 5টা সংখ্যাত বিয়পিল।"
        },
        "traps": [
         {
-         "ans": "32",
+         "ans": "34",
          "tag": "m-avg-newcomer",
          "why": {
           "en": "The change spreads across all the numbers, so divide it by the count.",
@@ -828,17 +938,17 @@
       },
       {
        "q": {
-        "en": "The average of 6 numbers is 15. One number, 10, is replaced by 28. Find the new average.",
-        "as": "6টা সংখ্যাৰ গড় 15। এটা সংখ্যা 10ৰ ঠাইত 28 হ'ল। নতুন গড় উলিওৱা।"
+        "en": "The average of 6 numbers is 16. One number, 10, is replaced by 28. Find the new average.",
+        "as": "6টা সংখ্যাৰ গড় 16। এটা সংখ্যা 10ৰ ঠাইত 28 হ'ল। নতুন গড় উলিওৱা।"
        },
-       "answer": "18",
+       "answer": "19",
        "why": {
         "en": "The total rose by 18, spread over 6 numbers.",
         "as": "মুঠ 18 বাঢ়িল, 6টা সংখ্যাত বিয়পিল।"
        },
        "traps": [
         {
-         "ans": "33",
+         "ans": "34",
          "tag": "m-avg-newcomer",
          "why": {
           "en": "The change spreads across all the numbers, so divide it by the count.",
@@ -1421,6 +1531,77 @@
       "en": "Whatever you do to every value, you do to the average.",
       "as": "প্ৰতিটো মানত যি কৰা, গড়তো তাকেই হয়।"
      }
+    },
+    {
+     "id": "m7.u2.q7",
+     "type": "solve",
+     "skill": "a-change",
+     "hints": [
+      {
+       "en": "Turn each average into a total.",
+       "as": "প্ৰতিটো গড়ক মুঠ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "The average weight of A, B and C is 52 kg. A and B average 47 kg, and B and C average 50 kg. Find B.",
+      "as": "A, B, Cৰ গড় ওজন 52 কিলো। A আৰু Bৰ গড় 47 কিলো, B আৰু Cৰ গড় 50 কিলো। Bৰ ওজন উলিওৱা।"
+     },
+     "answer": "38",
+     "suffix": {
+      "en": "kg",
+      "as": "কিলো"
+     },
+     "why": {
+      "en": "94 + 100 counts B twice, so subtract 156.",
+      "as": "94 + 100ত B দুবাৰ, সেয়ে 156 বিয়োগ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average weight of A, B and C is 52 kg. A and B average 47 kg, and B and C average 50 kg. Find B.",
+        "as": "A, B, Cৰ গড় ওজন 52 কিলো। A আৰু Bৰ গড় 47 কিলো, B আৰু Cৰ গড় 50 কিলো। Bৰ ওজন উলিওৱা।"
+       },
+       "answer": "38",
+       "suffix": {
+        "en": "kg",
+        "as": "কিলো"
+       },
+       "why": {
+        "en": "94 + 100 counts B twice, so subtract 156.",
+        "as": "94 + 100ত B দুবাৰ, সেয়ে 156 বিয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average weight of A, B and C is 50 kg. A and B average 48 kg, and B and C average 45 kg. Find B.",
+        "as": "A, B, Cৰ গড় ওজন 50 কিলো। A আৰু Bৰ গড় 48 কিলো, B আৰু Cৰ গড় 45 কিলো। Bৰ ওজন উলিওৱা।"
+       },
+       "answer": "36",
+       "suffix": {
+        "en": "kg",
+        "as": "কিলো"
+       },
+       "why": {
+        "en": "96 + 90 counts B twice, so subtract 150.",
+        "as": "96 + 90ত B দুবাৰ, সেয়ে 150 বিয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average weight of A, B and C is 60 kg. A and B average 55 kg, and B and C average 62 kg. Find B.",
+        "as": "A, B, Cৰ গড় ওজন 60 কিলো। A আৰু Bৰ গড় 55 কিলো, B আৰু Cৰ গড় 62 কিলো। Bৰ ওজন উলিওৱা।"
+       },
+       "answer": "54",
+       "suffix": {
+        "en": "kg",
+        "as": "কিলো"
+       },
+       "why": {
+        "en": "110 + 124 counts B twice, so subtract 180.",
+        "as": "110 + 124ত B দুবাৰ, সেয়ে 180 বিয়োগ কৰা।"
+       }
+      }
+     ]
     }
    ]
   },
@@ -2267,6 +2448,55 @@
       "en": "The more members a group has, the closer the answer sits to it.",
       "as": "গোটত যিমান বেছি সদস্য, উত্তৰ সিমান ওচৰত।"
      }
+    },
+    {
+     "id": "m7.u3.q7",
+     "type": "solve",
+     "skill": "a-mean",
+     "q": {
+      "en": "If 4a + 4b + 4c = 48, find the average of a, b and c.",
+      "as": "4a + 4b + 4c = 48 হ'লে a, b, cৰ গড় উলিওৱা।"
+     },
+     "answer": "4",
+     "why": {
+      "en": "a + b + c = 12, shared among 3.",
+      "as": "a + b + c = 12, 3ৰে হৰণ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If 4a + 4b + 4c = 48, find the average of a, b and c.",
+        "as": "4a + 4b + 4c = 48 হ'লে a, b, cৰ গড় উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "a + b + c = 12, shared among 3.",
+        "as": "a + b + c = 12, 3ৰে হৰণ।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 2a + 2b + 2c = 36, find the average of a, b and c.",
+        "as": "2a + 2b + 2c = 36 হ'লে a, b, cৰ গড় উলিওৱা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "a + b + c = 18, shared among 3.",
+        "as": "a + b + c = 18, 3ৰে হৰণ।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 5a + 5b + 5c = 75, find the average of a, b and c.",
+        "as": "5a + 5b + 5c = 75 হ'লে a, b, cৰ গড় উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "a + b + c = 15, shared among 3.",
+        "as": "a + b + c = 15, 3ৰে হৰণ।"
+       }
+      }
+     ]
     }
    ]
   }
@@ -2362,8 +2592,8 @@
      },
      {
       "q": {
-       "en": "The average of 5 consecutive numbers is 51. The smallest is",
-       "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 51। সৰুটো"
+       "en": "The average of 5 consecutive numbers is 62. The smallest is",
+       "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 62। সৰুটো"
       },
       "why": {
        "en": "The average is the middle number.",
@@ -2371,26 +2601,26 @@
       },
       "options": [
        {
-        "en": "49",
-        "as": "49"
+        "en": "61",
+        "as": "61"
        },
        {
-        "en": "50",
-        "as": "50"
+        "en": "57",
+        "as": "57"
        },
        {
-        "en": "46",
-        "as": "46"
+        "en": "59",
+        "as": "59"
        },
        {
-        "en": "48",
-        "as": "48"
+        "en": "60",
+        "as": "60"
        }
       ],
-      "answer": 0,
+      "answer": 3,
       "traps": [
        {
-        "opt": 2,
+        "opt": 1,
         "tag": "m-avg-count",
         "why": {
          "en": "Only half the numbers lie below the middle.",
@@ -2445,8 +2675,8 @@
     "type": "mcq",
     "skill": "a-mean",
     "q": {
-     "en": "The average of the first 3 multiples of 9 is",
-     "as": "9ৰ প্ৰথম 3টা গুণিতকৰ গড়"
+     "en": "The average of the first 3 multiples of 8 is",
+     "as": "8ৰ প্ৰথম 3টা গুণিতকৰ গড়"
     },
     "why": {
      "en": "It is the multiplier times the average of 1 to n.",
@@ -2454,26 +2684,26 @@
     },
     "options": [
      {
-      "en": "9",
-      "as": "9"
+      "en": "16",
+      "as": "16"
      },
      {
-      "en": "$\\frac{27}{2}$",
-      "as": "$\\frac{27}{2}$"
+      "en": "8",
+      "as": "8"
      },
      {
-      "en": "27",
-      "as": "27"
+      "en": "12",
+      "as": "12"
      },
      {
-      "en": "18",
-      "as": "18"
+      "en": "24",
+      "as": "24"
      }
     ],
-    "answer": 3,
+    "answer": 0,
     "traps": [
      {
-      "opt": 1,
+      "opt": 2,
       "tag": "m-avg-count",
       "why": {
        "en": "Average the first and the last term.",
@@ -2484,8 +2714,8 @@
     "variants": [
      {
       "q": {
-       "en": "The average of the first 3 multiples of 9 is",
-       "as": "9ৰ প্ৰথম 3টা গুণিতকৰ গড়"
+       "en": "The average of the first 3 multiples of 8 is",
+       "as": "8ৰ প্ৰথম 3টা গুণিতকৰ গড়"
       },
       "why": {
        "en": "It is the multiplier times the average of 1 to n.",
@@ -2493,62 +2723,23 @@
       },
       "options": [
        {
-        "en": "9",
-        "as": "9"
+        "en": "16",
+        "as": "16"
        },
        {
-        "en": "$\\frac{27}{2}$",
-        "as": "$\\frac{27}{2}$"
+        "en": "8",
+        "as": "8"
        },
        {
-        "en": "27",
-        "as": "27"
+        "en": "12",
+        "as": "12"
        },
        {
-        "en": "18",
-        "as": "18"
+        "en": "24",
+        "as": "24"
        }
       ],
-      "answer": 3,
-      "traps": [
-       {
-        "opt": 1,
-        "tag": "m-avg-count",
-        "why": {
-         "en": "Average the first and the last term.",
-         "as": "প্ৰথম আৰু শেষৰ পদৰ গড় লোৱা।"
-        }
-       }
-      ]
-     },
-     {
-      "q": {
-       "en": "The average of the first 9 multiples of 11 is",
-       "as": "11ৰ প্ৰথম 9টা গুণিতকৰ গড়"
-      },
-      "why": {
-       "en": "It is the multiplier times the average of 1 to n.",
-       "as": "ই গুণক × 1ৰ পৰা nৰ গড়।"
-      },
-      "options": [
-       {
-        "en": "99",
-        "as": "99"
-       },
-       {
-        "en": "55",
-        "as": "55"
-       },
-       {
-        "en": "$\\frac{99}{2}$",
-        "as": "$\\frac{99}{2}$"
-       },
-       {
-        "en": "66",
-        "as": "66"
-       }
-      ],
-      "answer": 1,
+      "answer": 0,
       "traps": [
        {
         "opt": 2,
@@ -2562,8 +2753,8 @@
      },
      {
       "q": {
-       "en": "The average of the first 7 multiples of 7 is",
-       "as": "7ৰ প্ৰথম 7টা গুণিতকৰ গড়"
+       "en": "The average of the first 9 multiples of 13 is",
+       "as": "13ৰ প্ৰথম 9টা গুণিতকৰ গড়"
       },
       "why": {
        "en": "It is the multiplier times the average of 1 to n.",
@@ -2571,26 +2762,65 @@
       },
       "options": [
        {
-        "en": "35",
-        "as": "35"
+        "en": "78",
+        "as": "78"
        },
        {
-        "en": "28",
-        "as": "28"
+        "en": "$\\frac{117}{2}$",
+        "as": "$\\frac{117}{2}$"
        },
        {
-        "en": "49",
-        "as": "49"
+        "en": "65",
+        "as": "65"
        },
        {
-        "en": "$\\frac{49}{2}$",
-        "as": "$\\frac{49}{2}$"
+        "en": "117",
+        "as": "117"
        }
       ],
-      "answer": 1,
+      "answer": 2,
       "traps": [
        {
-        "opt": 3,
+        "opt": 1,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Average the first and the last term.",
+         "as": "প্ৰথম আৰু শেষৰ পদৰ গড় লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of the first 7 multiples of 6 is",
+       "as": "6ৰ প্ৰথম 7টা গুণিতকৰ গড়"
+      },
+      "why": {
+       "en": "It is the multiplier times the average of 1 to n.",
+       "as": "ই গুণক × 1ৰ পৰা nৰ গড়।"
+      },
+      "options": [
+       {
+        "en": "21",
+        "as": "21"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
         "tag": "m-avg-count",
         "why": {
          "en": "Average the first and the last term.",
@@ -2767,8 +2997,8 @@
     "type": "mcq",
     "skill": "a-change",
     "q": {
-     "en": "The average of 5 numbers is 17. When one is removed, the average of the rest is 15. The number removed is",
-     "as": "5টা সংখ্যাৰ গড় 17। এটা আঁতৰালে বাকীবোৰৰ গড় 15। আঁতৰোৱা সংখ্যাটো"
+     "en": "The average of 5 numbers is 19. When one is removed, the average of the rest is 16. The number removed is",
+     "as": "5টা সংখ্যাৰ গড় 19। এটা আঁতৰালে বাকীবোৰৰ গড় 16। আঁতৰোৱা সংখ্যাটো"
     },
     "why": {
      "en": "Work through totals: total = average × count.",
@@ -2776,26 +3006,26 @@
     },
     "options": [
      {
-      "en": "27",
-      "as": "27"
+      "en": "3",
+      "as": "3"
      },
      {
-      "en": "10",
-      "as": "10"
+      "en": "33",
+      "as": "33"
      },
      {
-      "en": "2",
-      "as": "2"
+      "en": "15",
+      "as": "15"
      },
      {
-      "en": "25",
-      "as": "25"
+      "en": "31",
+      "as": "31"
      }
     ],
     "answer": 3,
     "traps": [
      {
-      "opt": 2,
+      "opt": 0,
       "tag": "m-avg-newcomer",
       "why": {
        "en": "Go through the totals, not the averages.",
@@ -2806,8 +3036,8 @@
     "variants": [
      {
       "q": {
-       "en": "The average of 5 numbers is 17. When one is removed, the average of the rest is 15. The number removed is",
-       "as": "5টা সংখ্যাৰ গড় 17। এটা আঁতৰালে বাকীবোৰৰ গড় 15। আঁতৰোৱা সংখ্যাটো"
+       "en": "The average of 5 numbers is 19. When one is removed, the average of the rest is 16. The number removed is",
+       "as": "5টা সংখ্যাৰ গড় 19। এটা আঁতৰালে বাকীবোৰৰ গড় 16। আঁতৰোৱা সংখ্যাটো"
       },
       "why": {
        "en": "Work through totals: total = average × count.",
@@ -2815,26 +3045,26 @@
       },
       "options": [
        {
-        "en": "27",
-        "as": "27"
+        "en": "3",
+        "as": "3"
        },
        {
-        "en": "10",
-        "as": "10"
+        "en": "33",
+        "as": "33"
        },
        {
-        "en": "2",
-        "as": "2"
+        "en": "15",
+        "as": "15"
        },
        {
-        "en": "25",
-        "as": "25"
+        "en": "31",
+        "as": "31"
        }
       ],
       "answer": 3,
       "traps": [
        {
-        "opt": 2,
+        "opt": 0,
         "tag": "m-avg-newcomer",
         "why": {
          "en": "Go through the totals, not the averages.",
@@ -2845,8 +3075,8 @@
      },
      {
       "q": {
-       "en": "The average of 6 numbers is 15. When one is removed, the average of the rest is 14. The number removed is",
-       "as": "6টা সংখ্যাৰ গড় 15। এটা আঁতৰালে বাকীবোৰৰ গড় 14। আঁতৰোৱা সংখ্যাটো"
+       "en": "The average of 6 numbers is 14. When one is removed, the average of the rest is 13. The number removed is",
+       "as": "6টা সংখ্যাৰ গড় 14। এটা আঁতৰালে বাকীবোৰৰ গড় 13। আঁতৰোৱা সংখ্যাটো"
       },
       "why": {
        "en": "Work through totals: total = average × count.",
@@ -2854,16 +3084,16 @@
       },
       "options": [
        {
+        "en": "21",
+        "as": "21"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       },
+       {
         "en": "1",
         "as": "1"
-       },
-       {
-        "en": "20",
-        "as": "20"
-       },
-       {
-        "en": "22",
-        "as": "22"
        },
        {
         "en": "6",
@@ -2873,7 +3103,7 @@
       "answer": 1,
       "traps": [
        {
-        "opt": 0,
+        "opt": 2,
         "tag": "m-avg-newcomer",
         "why": {
          "en": "Go through the totals, not the averages.",

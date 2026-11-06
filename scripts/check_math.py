@@ -45,7 +45,7 @@ def reachable(s, where):
 
 def check_version(s, where):
     text = json.dumps({k: v for k, v in s.items() if k != "variants"}, ensure_ascii=False)
-    if re.search(r"(None|nan|\{[a-z_]+\})", re.sub(r"\\[a-z]+\{[^}]*\}|\^\{[^}]*\}|\\overline\{\d+\}|\\mathbf\{[^}]*\}", "", text)):
+    if re.search(r"(None|nan|\{[a-z_]+\})", re.sub(r"\\frac\{1\}\{[xyz]\}|\\[a-z]+\{[^}]*\}|\^\{[^}]*\}|\\overline\{\d+\}|\\mathbf\{[^}]*\}", "", text)):
         errors.append(f"{where}: leftover template text")
     t = s["type"]
     if t in ("mcq", "odd"):
@@ -80,7 +80,7 @@ def check_version(s, where):
 
 # What each scene's state() reports. A goal on anything else could never be met.
 GOALS = {"line": {"value", "span", "zoom"}, "numline": {"value", "span", "zoom"}, "array": {"c", "broke", "found"}, "gears": {"meet", "meets"}, "tiles": {"done"},
-         "dial": {"closed"}, "cuts": {"common"}, "area": {"a", "b"}, "dual": {"pct"}, "scaleup": {"k"}, "shear": {"x"}, "sticks": {"c"}, "kite": {"folded"}, "roll": {"turns"}, "sectors": {"n"}, "stack": {"h"}, "net": {"open"}, "pour": {"n"}, "stairs": {"n", "paired"}, "triangle": {"k"}, "quarter": {"deg"}, "tower": {"hit"}, "track": {"exact", "done"}, "journey": {"balanced"}, "ages": {"y"}, "growth": {"years", "rate"}, "tank": {"full"}, "mandays": {"men"}, "order": {"done"}, "square": {"side"}, "diffsq": {"moved"}, "pairs": {"done"}, "ladder": {"m", "d"}, "twosale": {"a"}, "ray": {"x", "y", "on"}, "level": {"balanced"}, "seesaw": {"balanced"}, "chain": {"match"}, "fracbar": {"value"}, "grid100": {"value"}, "blocks": {"value"}}
+         "dial": {"closed"}, "cuts": {"common"}, "area": {"a", "b"}, "dual": {"pct"}, "scaleup": {"k"}, "shear": {"x"}, "sticks": {"c"}, "kite": {"folded"}, "roll": {"turns"}, "sectors": {"n"}, "exterior": {"a", "b"}, "tangent": {"pq"}, "fence": {"l"}, "stack": {"h"}, "net": {"open"}, "pour": {"n"}, "stairs": {"n", "paired"}, "triangle": {"k"}, "quarter": {"deg"}, "tower": {"hit"}, "track": {"exact", "done"}, "journey": {"balanced"}, "ages": {"y"}, "growth": {"years", "rate"}, "tank": {"full"}, "mandays": {"men"}, "order": {"done"}, "square": {"side"}, "diffsq": {"moved"}, "pairs": {"done"}, "ladder": {"m", "d"}, "twosale": {"a"}, "ray": {"x", "y", "on"}, "level": {"balanced"}, "seesaw": {"balanced"}, "chain": {"match"}, "fracbar": {"value"}, "grid100": {"value"}, "blocks": {"value"}}
 
 
 def check_step(s, where):

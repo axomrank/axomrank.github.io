@@ -565,6 +565,101 @@
        ]
       }
      ]
+    },
+    {
+     "id": "m4.u1.q7",
+     "type": "solve",
+     "skill": "s-bodmas",
+     "hints": [
+      {
+       "en": "V comes first in VBODMAS: the bar over the numbers.",
+       "as": "VBODMASত V আগত: সংখ্যাৰ ওপৰৰ ৰেখা।"
+      }
+     ],
+     "q": {
+      "en": "Work out $4 + \\{12 \\div (8 - \\overline{3 + 1})\\}$",
+      "as": "$4 + \\{12 \\div (8 - \\overline{3 + 1})\\}$ৰ মান উলিওৱা"
+     },
+     "answer": "7",
+     "why": {
+      "en": "The bar is done first: 3 + 1 = 4.",
+      "as": "ৰেখাৰ তলৰটো আগতে: 3 + 1 = 4।"
+     },
+     "traps": [
+      {
+       "ans": "6",
+       "tag": "m-bodmas-lr",
+       "why": {
+        "en": "A bar groups like a bracket, so add under it before you subtract.",
+        "as": "ৰেখাই বন্ধনীৰ দৰে গোট কৰে, সেয়ে বিয়োগৰ আগতে তলৰটো যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Work out $4 + \\{12 \\div (8 - \\overline{3 + 1})\\}$",
+        "as": "$4 + \\{12 \\div (8 - \\overline{3 + 1})\\}$ৰ মান উলিওৱা"
+       },
+       "answer": "7",
+       "why": {
+        "en": "The bar is done first: 3 + 1 = 4.",
+        "as": "ৰেখাৰ তলৰটো আগতে: 3 + 1 = 4।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "A bar groups like a bracket, so add under it before you subtract.",
+          "as": "ৰেখাই বন্ধনীৰ দৰে গোট কৰে, সেয়ে বিয়োগৰ আগতে তলৰটো যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $5 + \\{24 \\div (10 - \\overline{4 + 2})\\}$",
+        "as": "$5 + \\{24 \\div (10 - \\overline{4 + 2})\\}$ৰ মান উলিওৱা"
+       },
+       "answer": "11",
+       "why": {
+        "en": "The bar is done first: 4 + 2 = 6.",
+        "as": "ৰেখাৰ তলৰটো আগতে: 4 + 2 = 6।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "A bar groups like a bracket, so add under it before you subtract.",
+          "as": "ৰেখাই বন্ধনীৰ দৰে গোট কৰে, সেয়ে বিয়োগৰ আগতে তলৰটো যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Work out $2 + \\{36 \\div (10 - \\overline{4 + 3})\\}$",
+        "as": "$2 + \\{36 \\div (10 - \\overline{4 + 3})\\}$ৰ মান উলিওৱা"
+       },
+       "answer": "14",
+       "why": {
+        "en": "The bar is done first: 4 + 3 = 7.",
+        "as": "ৰেখাৰ তলৰটো আগতে: 4 + 3 = 7।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-bodmas-lr",
+         "why": {
+          "en": "A bar groups like a bracket, so add under it before you subtract.",
+          "as": "ৰেখাই বন্ধনীৰ দৰে গোট কৰে, সেয়ে বিয়োগৰ আগতে তলৰটো যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
     }
    ]
   },
@@ -954,40 +1049,40 @@
      "type": "explore",
      "skill": "s-perfect",
      "q": {
-      "en": "Pair the primes of 882. What is the least number to multiply by to make a perfect square?",
-      "as": "882ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+      "en": "Pair the primes of 980. What is the least number to multiply by to make a perfect square?",
+      "as": "980ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
      },
      "widget": {
       "kind": "pairs",
-      "n": 882
+      "n": 980
      },
-     "target": 2,
+     "target": 5,
      "answerText": {
-      "en": "Multiply by 2",
-      "as": "2ৰে পূৰণ"
+      "en": "Multiply by 5",
+      "as": "5ৰে পূৰণ"
      },
      "why": {
-      "en": "The leftover primes multiply to 2.",
-      "as": "বাকী থকা মৌলিকৰ পূৰণফল 2।"
+      "en": "The leftover primes multiply to 5.",
+      "as": "বাকী থকা মৌলিকৰ পূৰণফল 5।"
      },
      "variants": [
       {
        "q": {
-        "en": "Pair the primes of 882. What is the least number to multiply by to make a perfect square?",
-        "as": "882ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+        "en": "Pair the primes of 980. What is the least number to multiply by to make a perfect square?",
+        "as": "980ৰ মৌলিকবোৰ যোৰা কৰা। পূৰ্ণবৰ্গ কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
        },
        "widget": {
         "kind": "pairs",
-        "n": 882
+        "n": 980
        },
-       "target": 2,
+       "target": 5,
        "answerText": {
-        "en": "Multiply by 2",
-        "as": "2ৰে পূৰণ"
+        "en": "Multiply by 5",
+        "as": "5ৰে পূৰণ"
        },
        "why": {
-        "en": "The leftover primes multiply to 2.",
-        "as": "বাকী থকা মৌলিকৰ পূৰণফল 2।"
+        "en": "The leftover primes multiply to 5.",
+        "as": "বাকী থকা মৌলিকৰ পূৰণফল 5।"
        }
       },
       {
@@ -1967,6 +2062,1281 @@
      "why": {
       "en": "Exams use these to hide a quick answer.",
       "as": "পৰীক্ষাত চুটি উত্তৰ লুকুৱাবলৈ এইবোৰ ব্যৱহাৰ হয়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Cubes and cube roots",
+    "as": "ঘন আৰু ঘনমূল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "$n^3$ is the volume of a cube of side n; $\\sqrt[3]{n}$ is the side.",
+     "as": "$n^3$ হৈছে n বাহুৰ ঘনকৰ আয়তন; $\\sqrt[3]{n}$ হৈছে বাহু।"
+    },
+    {
+     "en": "A perfect cube has every prime in groups of three.",
+     "as": "পূৰ্ণঘনত প্ৰতিটো মৌলিক তিনিটাৰ গোটত থাকে।"
+    },
+    {
+     "en": "To make a perfect cube, supply what each group is short of.",
+     "as": "পূৰ্ণঘন কৰিবলৈ প্ৰতিটো গোটৰ অভাৱ পূৰণ কৰা।"
+    },
+    {
+     "en": "A root and a cube root of one number are different: $\\sqrt{64} = 8$, $\\sqrt[3]{64} = 4$.",
+     "as": "একে সংখ্যাৰ বৰ্গমূল আৰু ঘনমূল বেলেগ: $\\sqrt{64} = 8$, $\\sqrt[3]{64} = 4$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m4.c.s1",
+     "type": "story",
+     "title": {
+      "en": "A cube root is an edge",
+      "as": "ঘনমূল মানে কাষ"
+     },
+     "text": [
+      {
+       "en": "$\\sqrt[3]{27}$ asks what edge builds a cube of 27 small cubes.",
+       "as": "$\\sqrt[3]{27}$ই সোধে কোন কাষে 27টা সৰু ঘনকৰ ঘনক বনায়।"
+      }
+     ],
+     "widget": {
+      "kind": "scaleup",
+      "dim": 3,
+      "k": 1,
+      "max": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Build the cube with edge 3.",
+        "as": "3 কাষৰ ঘনক বনোৱা।"
+       },
+       "goal": {
+        "k": 3
+       },
+       "then": {
+        "en": "3 × 3 × 3 = 27, so $\\sqrt[3]{27} = 3$.",
+        "as": "3 × 3 × 3 = 27, সেয়ে $\\sqrt[3]{27} = 3$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.c.s2",
+     "type": "story",
+     "title": {
+      "en": "Groups of three",
+      "as": "তিনিটাৰ গোট"
+     },
+     "text": [
+      {
+       "en": "A square needs pairs. A cube needs threes. Group the primes of 8788.",
+       "as": "বৰ্গত যোৰা লাগে। ঘনত তিনিটা লাগে। 8788ৰ মৌলিক গোট কৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "pairs",
+      "n": 8788,
+      "group": 3
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap three matching primes to group them.",
+        "as": "একে তিনিটা মৌলিক টিপি গোট কৰা।"
+       },
+       "goal": {
+        "done": 1
+       },
+       "then": {
+        "en": "The 13s make a group, but 2 × 2 is one short. Multiply by 2 for a perfect cube.",
+        "as": "13ৰ গোট হ'ল, কিন্তু 2 × 2ত এটা কম। পূৰ্ণঘনৰ বাবে 2ৰে পূৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.c.q1",
+     "type": "explore",
+     "skill": "s-cube",
+     "q": {
+      "en": "Group the primes of 243. What is the least number to multiply by to make a perfect cube?",
+      "as": "243ৰ মৌলিক গোট কৰা। পূৰ্ণঘন কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+     },
+     "widget": {
+      "kind": "pairs",
+      "n": 243,
+      "group": 3
+     },
+     "target": 3,
+     "answerText": {
+      "en": "Multiply by 3",
+      "as": "3ৰে পূৰণ"
+     },
+     "why": {
+      "en": "243 × 3 = 729, a perfect cube.",
+      "as": "243 × 3 = 729, এটা পূৰ্ণঘন।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Group the primes of 243. What is the least number to multiply by to make a perfect cube?",
+        "as": "243ৰ মৌলিক গোট কৰা। পূৰ্ণঘন কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 243,
+        "group": 3
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Multiply by 3",
+        "as": "3ৰে পূৰণ"
+       },
+       "why": {
+        "en": "243 × 3 = 729, a perfect cube.",
+        "as": "243 × 3 = 729, এটা পূৰ্ণঘন।"
+       }
+      },
+      {
+       "q": {
+        "en": "Group the primes of 1372. What is the least number to multiply by to make a perfect cube?",
+        "as": "1372ৰ মৌলিক গোট কৰা। পূৰ্ণঘন কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 1372,
+        "group": 3
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Multiply by 2",
+        "as": "2ৰে পূৰণ"
+       },
+       "why": {
+        "en": "1372 × 2 = 2744, a perfect cube.",
+        "as": "1372 × 2 = 2744, এটা পূৰ্ণঘন।"
+       }
+      },
+      {
+       "q": {
+        "en": "Group the primes of 250. What is the least number to multiply by to make a perfect cube?",
+        "as": "250ৰ মৌলিক গোট কৰা। পূৰ্ণঘন কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 250,
+        "group": 3
+       },
+       "target": 4,
+       "answerText": {
+        "en": "Multiply by 4",
+        "as": "4ৰে পূৰণ"
+       },
+       "why": {
+        "en": "250 × 4 = 1000, a perfect cube.",
+        "as": "250 × 4 = 1000, এটা পূৰ্ণঘন।"
+       }
+      },
+      {
+       "q": {
+        "en": "Group the primes of 72. What is the least number to multiply by to make a perfect cube?",
+        "as": "72ৰ মৌলিক গোট কৰা। পূৰ্ণঘন কৰিবলৈ আটাইতকৈ সৰু কিহেৰে পূৰণ কৰিব লাগিব?"
+       },
+       "widget": {
+        "kind": "pairs",
+        "n": 72,
+        "group": 3
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Multiply by 3",
+        "as": "3ৰে পূৰণ"
+       },
+       "why": {
+        "en": "72 × 3 = 216, a perfect cube.",
+        "as": "72 × 3 = 216, এটা পূৰ্ণঘন।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.c.q2",
+     "type": "solve",
+     "skill": "s-cube",
+     "hints": [
+      {
+       "en": "Peel into primes and take one from each group.",
+       "as": "মৌলিকলৈ ভাঙি প্ৰতিটো গোটৰ এটা লোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find $\\sqrt[3]{216}$",
+      "as": "$\\sqrt[3]{216}$ উলিওৱা"
+     },
+     "answer": "6",
+     "why": {
+      "en": "6 × 6 × 6 = 216.",
+      "as": "6 × 6 × 6 = 216।"
+     },
+     "traps": [
+      {
+       "ans": "72",
+       "tag": "m-cube-three",
+       "why": {
+        "en": "A cube root is not division by 3. Find the number multiplied by itself three times.",
+        "as": "ঘনমূল 3ৰে হৰণ নহয়। নিজেৰে তিনিবাৰ পূৰণ হোৱা সংখ্যা বিচাৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\sqrt[3]{216}$",
+        "as": "$\\sqrt[3]{216}$ উলিওৱা"
+       },
+       "answer": "6",
+       "why": {
+        "en": "6 × 6 × 6 = 216.",
+        "as": "6 × 6 × 6 = 216।"
+       },
+       "traps": [
+        {
+         "ans": "72",
+         "tag": "m-cube-three",
+         "why": {
+          "en": "A cube root is not division by 3. Find the number multiplied by itself three times.",
+          "as": "ঘনমূল 3ৰে হৰণ নহয়। নিজেৰে তিনিবাৰ পূৰণ হোৱা সংখ্যা বিচাৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt[3]{729}$",
+        "as": "$\\sqrt[3]{729}$ উলিওৱা"
+       },
+       "answer": "9",
+       "why": {
+        "en": "9 × 9 × 9 = 729.",
+        "as": "9 × 9 × 9 = 729।"
+       },
+       "traps": [
+        {
+         "ans": "243",
+         "tag": "m-cube-three",
+         "why": {
+          "en": "A cube root is not division by 3. Find the number multiplied by itself three times.",
+          "as": "ঘনমূল 3ৰে হৰণ নহয়। নিজেৰে তিনিবাৰ পূৰণ হোৱা সংখ্যা বিচাৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt[3]{1728}$",
+        "as": "$\\sqrt[3]{1728}$ উলিওৱা"
+       },
+       "answer": "12",
+       "why": {
+        "en": "12 × 12 × 12 = 1728.",
+        "as": "12 × 12 × 12 = 1728।"
+       },
+       "traps": [
+        {
+         "ans": "576",
+         "tag": "m-cube-three",
+         "why": {
+          "en": "A cube root is not division by 3. Find the number multiplied by itself three times.",
+          "as": "ঘনমূল 3ৰে হৰণ নহয়। নিজেৰে তিনিবাৰ পূৰণ হোৱা সংখ্যা বিচাৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt[3]{3375}$",
+        "as": "$\\sqrt[3]{3375}$ উলিওৱা"
+       },
+       "answer": "15",
+       "why": {
+        "en": "15 × 15 × 15 = 3375.",
+        "as": "15 × 15 × 15 = 3375।"
+       },
+       "traps": [
+        {
+         "ans": "1125",
+         "tag": "m-cube-three",
+         "why": {
+          "en": "A cube root is not division by 3. Find the number multiplied by itself three times.",
+          "as": "ঘনমূল 3ৰে হৰণ নহয়। নিজেৰে তিনিবাৰ পূৰণ হোৱা সংখ্যা বিচাৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.c.q3",
+     "type": "solve",
+     "skill": "s-cube",
+     "q": {
+      "en": "Find $\\sqrt{64} - \\sqrt[3]{64}$",
+      "as": "$\\sqrt{64} - \\sqrt[3]{64}$ উলিওৱা"
+     },
+     "answer": "4",
+     "why": {
+      "en": "8 − 4.",
+      "as": "8 − 4।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\sqrt{64} - \\sqrt[3]{64}$",
+        "as": "$\\sqrt{64} - \\sqrt[3]{64}$ উলিওৱা"
+       },
+       "answer": "4",
+       "why": {
+        "en": "8 − 4.",
+        "as": "8 − 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{729} - \\sqrt[3]{729}$",
+        "as": "$\\sqrt{729} - \\sqrt[3]{729}$ উলিওৱা"
+       },
+       "answer": "18",
+       "why": {
+        "en": "27 − 9.",
+        "as": "27 − 9।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{4096} - \\sqrt[3]{4096}$",
+        "as": "$\\sqrt{4096} - \\sqrt[3]{4096}$ উলিওৱা"
+       },
+       "answer": "48",
+       "why": {
+        "en": "64 − 16.",
+        "as": "64 − 16।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.c.q4",
+     "type": "tf",
+     "skill": "s-cube",
+     "s": {
+      "en": "$\\sqrt{64}$ and $\\sqrt[3]{64}$ are equal.",
+      "as": "$\\sqrt{64}$ আৰু $\\sqrt[3]{64}$ সমান।"
+     },
+     "answer": false,
+     "why": {
+      "en": "One is 8 and the other is 4.",
+      "as": "এটা 8, আনটো 4।"
+     }
+    },
+    {
+     "id": "m4.c.q5",
+     "type": "match",
+     "skill": "s-cube",
+     "q": {
+      "en": "Match each number to its cube",
+      "as": "প্ৰতিটো সংখ্যাক ঘনৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "27",
+        "as": "27"
+       }
+      ],
+      [
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "125",
+        "as": "125"
+       }
+      ],
+      [
+       {
+        "en": "7",
+        "as": "7"
+       },
+       {
+        "en": "343",
+        "as": "343"
+       }
+      ],
+      [
+       {
+        "en": "10",
+        "as": "10"
+       },
+       {
+        "en": "1000",
+        "as": "1000"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Cubes to 10 are worth knowing by heart.",
+      "as": "10লৈ ঘন মুখস্থ ৰখাটো লাভজনক।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Surds and big identities",
+    "as": "কৰণী আৰু ডাঙৰ অভেদ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "$(a + \\sqrt{b})(a - \\sqrt{b}) = a^2 - b$: the root vanishes.",
+     "as": "$(a + \\sqrt{b})(a - \\sqrt{b}) = a^2 - b$: মূল নোহোৱা হয়।"
+    },
+    {
+     "en": "$\\frac{a^3 + b^3}{a^2 - ab + b^2} = a + b$.",
+     "as": "$\\frac{a^3 + b^3}{a^2 - ab + b^2} = a + b$।"
+    },
+    {
+     "en": "$\\frac{a^3 - b^3}{a^2 + ab + b^2} = a - b$.",
+     "as": "$\\frac{a^3 - b^3}{a^2 + ab + b^2} = a - b$।"
+    },
+    {
+     "en": "$\\frac{a + b}{a - b} + \\frac{a - b}{a + b} = \\frac{2(a^2 + b^2)}{a^2 - b^2}$.",
+     "as": "$\\frac{a + b}{a - b} + \\frac{a - b}{a + b} = \\frac{2(a^2 + b^2)}{a^2 - b^2}$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m4.s.s1",
+     "type": "story",
+     "title": {
+      "en": "The root that disappears",
+      "as": "নোহোৱা হোৱা মূল"
+     },
+     "text": [
+      {
+       "en": "The strip from before works with roots too: the difference of two squares has no root left in it.",
+       "as": "আগৰ পট্টী মূলতো চলে: দুটা বৰ্গৰ বিয়োগফলত মূল নাথাকে।"
+      }
+     ],
+     "widget": {
+      "kind": "diffsq",
+      "a": 7,
+      "b": 2
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide the strip.",
+        "as": "পট্টী সৰোৱা।"
+       },
+       "goal": {
+        "moved": 1
+       },
+       "then": {
+        "en": "$(7 + 2)(7 - 2) = 7^2 - 2^2$. In the same way $(8 + 3\\sqrt{6})(8 - 3\\sqrt{6}) = 64 - 54 = 10$.",
+        "as": "$(7 + 2)(7 - 2) = 7^2 - 2^2$। একেদৰে $(8 + 3\\sqrt{6})(8 - 3\\sqrt{6}) = 64 - 54 = 10$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.s.s2",
+     "type": "story",
+     "title": {
+      "en": "Huge numbers, tiny work",
+      "as": "ডাঙৰ সংখ্যা, সৰু কাম"
+     },
+     "text": [
+      {
+       "en": "A sum of cubes factorises, so a frightening fraction often cancels to a simple sum.",
+       "as": "ঘনৰ যোগফলৰ উৎপাদক হয়, সেয়ে ভয়লগা ভগ্নাংশ প্ৰায়ে সৰল যোগফল হয়।"
+      },
+      {
+       "en": "Look for the pattern before you touch the numbers.",
+       "as": "সংখ্যা ছোৱাৰ আগতে আৰ্হি বিচাৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$a^3 + b^3$",
+        "as": "$a^3 + b^3$"
+       },
+       {
+        "en": "$(a + b)(a^2 - ab + b^2)$",
+        "as": "$(a + b)(a^2 - ab + b^2)$"
+       },
+       {
+        "en": "Cancels to $a + b$",
+        "as": "কাটিলে $a + b$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m4.s.q1",
+     "type": "solve",
+     "skill": "s-surd",
+     "hints": [
+      {
+       "en": "It is $a^2 - b^2$ with $b = $ the whole root term.",
+       "as": "ই $a^2 - b^2$, য'ত $b$ গোটেই মূলৰ পদ।"
+      }
+     ],
+     "q": {
+      "en": "Find $(8 - 3\\sqrt{6})(8 + 3\\sqrt{6})$",
+      "as": "$(8 - 3\\sqrt{6})(8 + 3\\sqrt{6})$ উলিওৱা"
+     },
+     "answer": "10",
+     "why": {
+      "en": "$8^2 - (3\\sqrt{6})^2 = 64 - 54$.",
+      "as": "$8^2 - (3\\sqrt{6})^2 = 64 - 54$।"
+     },
+     "traps": [
+      {
+       "ans": "46",
+       "tag": "m-surd-square",
+       "why": {
+        "en": "Square the whole of 3√6: both the 3 and the root.",
+        "as": "3√6 গোটেইটো বৰ্গ কৰা: 3 আৰু মূল দুয়োটা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find $(8 - 3\\sqrt{6})(8 + 3\\sqrt{6})$",
+        "as": "$(8 - 3\\sqrt{6})(8 + 3\\sqrt{6})$ উলিওৱা"
+       },
+       "answer": "10",
+       "why": {
+        "en": "$8^2 - (3\\sqrt{6})^2 = 64 - 54$.",
+        "as": "$8^2 - (3\\sqrt{6})^2 = 64 - 54$।"
+       },
+       "traps": [
+        {
+         "ans": "46",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "Square the whole of 3√6: both the 3 and the root.",
+          "as": "3√6 গোটেইটো বৰ্গ কৰা: 3 আৰু মূল দুয়োটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $(5 - 2\\sqrt{3})(5 + 2\\sqrt{3})$",
+        "as": "$(5 - 2\\sqrt{3})(5 + 2\\sqrt{3})$ উলিওৱা"
+       },
+       "answer": "13",
+       "why": {
+        "en": "$5^2 - (2\\sqrt{3})^2 = 25 - 12$.",
+        "as": "$5^2 - (2\\sqrt{3})^2 = 25 - 12$।"
+       },
+       "traps": [
+        {
+         "ans": "19",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "Square the whole of 2√3: both the 2 and the root.",
+          "as": "2√3 গোটেইটো বৰ্গ কৰা: 2 আৰু মূল দুয়োটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $(6 - 2\\sqrt{7})(6 + 2\\sqrt{7})$",
+        "as": "$(6 - 2\\sqrt{7})(6 + 2\\sqrt{7})$ উলিওৱা"
+       },
+       "answer": "8",
+       "why": {
+        "en": "$6^2 - (2\\sqrt{7})^2 = 36 - 28$.",
+        "as": "$6^2 - (2\\sqrt{7})^2 = 36 - 28$।"
+       },
+       "traps": [
+        {
+         "ans": "22",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "Square the whole of 2√7: both the 2 and the root.",
+          "as": "2√7 গোটেইটো বৰ্গ কৰা: 2 আৰু মূল দুয়োটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $(9 - 4\\sqrt{5})(9 + 4\\sqrt{5})$",
+        "as": "$(9 - 4\\sqrt{5})(9 + 4\\sqrt{5})$ উলিওৱা"
+       },
+       "answer": "1",
+       "why": {
+        "en": "$9^2 - (4\\sqrt{5})^2 = 81 - 80$.",
+        "as": "$9^2 - (4\\sqrt{5})^2 = 81 - 80$।"
+       },
+       "traps": [
+        {
+         "ans": "61",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "Square the whole of 4√5: both the 4 and the root.",
+          "as": "4√5 গোটেইটো বৰ্গ কৰা: 4 আৰু মূল দুয়োটা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.s.q2",
+     "type": "solve",
+     "skill": "s-surd",
+     "hints": [
+      {
+       "en": "Spot the sum of cubes on top.",
+       "as": "ওপৰত ঘনৰ যোগফল চিনি পোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find $\\frac{8^3 + 3^3}{8^2 - 8 \\times 3 + 3^2}$",
+      "as": "$\\frac{8^3 + 3^3}{8^2 - 8 \\times 3 + 3^2}$ উলিওৱা"
+     },
+     "answer": "11",
+     "why": {
+      "en": "It cancels to a + b.",
+      "as": "কাটিলে a + b হয়।"
+     },
+     "traps": [
+      {
+       "ans": "5",
+       "tag": "m-surd-square",
+       "why": {
+        "en": "The roots disappear only in the (a + b)(a − b) pattern. Use it before multiplying out.",
+        "as": "মূল কেৱল (a + b)(a − b) আৰ্হিতে নোহোৱা হয়। পূৰণৰ আগতে ইয়াক লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\frac{8^3 + 3^3}{8^2 - 8 \\times 3 + 3^2}$",
+        "as": "$\\frac{8^3 + 3^3}{8^2 - 8 \\times 3 + 3^2}$ উলিওৱা"
+       },
+       "answer": "11",
+       "why": {
+        "en": "It cancels to a + b.",
+        "as": "কাটিলে a + b হয়।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "The roots disappear only in the (a + b)(a − b) pattern. Use it before multiplying out.",
+          "as": "মূল কেৱল (a + b)(a − b) আৰ্হিতে নোহোৱা হয়। পূৰণৰ আগতে ইয়াক লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{416^3 + 184^3}{416^2 - 416 \\times 184 + 184^2}$",
+        "as": "$\\frac{416^3 + 184^3}{416^2 - 416 \\times 184 + 184^2}$ উলিওৱা"
+       },
+       "answer": "600",
+       "why": {
+        "en": "It cancels to a + b.",
+        "as": "কাটিলে a + b হয়।"
+       },
+       "traps": [
+        {
+         "ans": "232",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "The roots disappear only in the (a + b)(a − b) pattern. Use it before multiplying out.",
+          "as": "মূল কেৱল (a + b)(a − b) আৰ্হিতে নোহোৱা হয়। পূৰণৰ আগতে ইয়াক লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{73^3 + 27^3}{73^2 - 73 \\times 27 + 27^2}$",
+        "as": "$\\frac{73^3 + 27^3}{73^2 - 73 \\times 27 + 27^2}$ উলিওৱা"
+       },
+       "answer": "100",
+       "why": {
+        "en": "It cancels to a + b.",
+        "as": "কাটিলে a + b হয়।"
+       },
+       "traps": [
+        {
+         "ans": "46",
+         "tag": "m-surd-square",
+         "why": {
+          "en": "The roots disappear only in the (a + b)(a − b) pattern. Use it before multiplying out.",
+          "as": "মূল কেৱল (a + b)(a − b) আৰ্হিতে নোহোৱা হয়। পূৰণৰ আগতে ইয়াক লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m4.s.q3",
+     "type": "solve",
+     "skill": "s-surd",
+     "q": {
+      "en": "Find $\\frac{640^3 - 315^3}{640^2 + 640 \\times 315 + 315^2}$",
+      "as": "$\\frac{640^3 - 315^3}{640^2 + 640 \\times 315 + 315^2}$ উলিওৱা"
+     },
+     "answer": "325",
+     "why": {
+      "en": "It cancels to a − b.",
+      "as": "কাটিলে a − b হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\frac{640^3 - 315^3}{640^2 + 640 \\times 315 + 315^2}$",
+        "as": "$\\frac{640^3 - 315^3}{640^2 + 640 \\times 315 + 315^2}$ উলিওৱা"
+       },
+       "answer": "325",
+       "why": {
+        "en": "It cancels to a − b.",
+        "as": "কাটিলে a − b হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{9^3 - 4^3}{9^2 + 9 \\times 4 + 4^2}$",
+        "as": "$\\frac{9^3 - 4^3}{9^2 + 9 \\times 4 + 4^2}$ উলিওৱা"
+       },
+       "answer": "5",
+       "why": {
+        "en": "It cancels to a − b.",
+        "as": "কাটিলে a − b হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{120^3 - 45^3}{120^2 + 120 \\times 45 + 45^2}$",
+        "as": "$\\frac{120^3 - 45^3}{120^2 + 120 \\times 45 + 45^2}$ উলিওৱা"
+       },
+       "answer": "75",
+       "why": {
+        "en": "It cancels to a − b.",
+        "as": "কাটিলে a − b হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.s.q4",
+     "type": "stepwise",
+     "skill": "s-surd",
+     "q": {
+      "en": "Find $\\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} - \\sqrt{2}} + \\frac{\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$",
+      "as": "$\\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} - \\sqrt{2}} + \\frac{\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$ উলিওৱা"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Which pattern?",
+        "as": "কোন আৰ্হি?"
+       },
+       "options": [
+        {
+         "en": "$a + b$",
+         "as": "$a + b$"
+        },
+        {
+         "en": "$\\frac{4ab}{a^2 - b^2}$",
+         "as": "$\\frac{4ab}{a^2 - b^2}$"
+        },
+        {
+         "en": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$",
+         "as": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "A sum of the two fractions, not a difference.",
+        "as": "দুটা ভগ্নাংশৰ যোগফল, বিয়োগফল নহয়।"
+       }
+      },
+      {
+       "ask": {
+        "en": "$a^2 + b^2$ and $a^2 - b^2$?",
+        "as": "$a^2 + b^2$ আৰু $a^2 - b^2$?"
+       },
+       "options": [
+        {
+         "en": "1 and 5",
+         "as": "1 আৰু 5"
+        },
+        {
+         "en": "5 and 1",
+         "as": "5 আৰু 1"
+        },
+        {
+         "en": "6 and 1",
+         "as": "6 আৰু 1"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Squaring removes the roots.",
+        "as": "বৰ্গ কৰিলে মূল নোহোৱা হয়।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Value?",
+        "as": "মান?"
+       },
+       "options": [
+        {
+         "en": "10",
+         "as": "10"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "5",
+         "as": "5"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Put them into the pattern.",
+        "as": "আৰ্হিত বহুওৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The pattern replaces a page of working.",
+      "as": "আৰ্হিয়ে এক পৃষ্ঠাৰ কাম কৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} - \\sqrt{2}} + \\frac{\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$",
+        "as": "$\\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} - \\sqrt{2}} + \\frac{\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$ উলিওৱা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which pattern?",
+          "as": "কোন আৰ্হি?"
+         },
+         "options": [
+          {
+           "en": "$a + b$",
+           "as": "$a + b$"
+          },
+          {
+           "en": "$\\frac{4ab}{a^2 - b^2}$",
+           "as": "$\\frac{4ab}{a^2 - b^2}$"
+          },
+          {
+           "en": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$",
+           "as": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A sum of the two fractions, not a difference.",
+          "as": "দুটা ভগ্নাংশৰ যোগফল, বিয়োগফল নহয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "$a^2 + b^2$ and $a^2 - b^2$?",
+          "as": "$a^2 + b^2$ আৰু $a^2 - b^2$?"
+         },
+         "options": [
+          {
+           "en": "1 and 5",
+           "as": "1 আৰু 5"
+          },
+          {
+           "en": "5 and 1",
+           "as": "5 আৰু 1"
+          },
+          {
+           "en": "6 and 1",
+           "as": "6 আৰু 1"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Squaring removes the roots.",
+          "as": "বৰ্গ কৰিলে মূল নোহোৱা হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Put them into the pattern.",
+          "as": "আৰ্হিত বহুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The pattern replaces a page of working.",
+        "as": "আৰ্হিয়ে এক পৃষ্ঠাৰ কাম কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{\\sqrt{2} + \\sqrt{1}}{\\sqrt{2} - \\sqrt{1}} + \\frac{\\sqrt{2} - \\sqrt{1}}{\\sqrt{2} + \\sqrt{1}}$",
+        "as": "$\\frac{\\sqrt{2} + \\sqrt{1}}{\\sqrt{2} - \\sqrt{1}} + \\frac{\\sqrt{2} - \\sqrt{1}}{\\sqrt{2} + \\sqrt{1}}$ উলিওৱা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which pattern?",
+          "as": "কোন আৰ্হি?"
+         },
+         "options": [
+          {
+           "en": "$a + b$",
+           "as": "$a + b$"
+          },
+          {
+           "en": "$\\frac{4ab}{a^2 - b^2}$",
+           "as": "$\\frac{4ab}{a^2 - b^2}$"
+          },
+          {
+           "en": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$",
+           "as": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A sum of the two fractions, not a difference.",
+          "as": "দুটা ভগ্নাংশৰ যোগফল, বিয়োগফল নহয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "$a^2 + b^2$ and $a^2 - b^2$?",
+          "as": "$a^2 + b^2$ আৰু $a^2 - b^2$?"
+         },
+         "options": [
+          {
+           "en": "1 and 3",
+           "as": "1 আৰু 3"
+          },
+          {
+           "en": "3 and 1",
+           "as": "3 আৰু 1"
+          },
+          {
+           "en": "2 and 1",
+           "as": "2 আৰু 1"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Squaring removes the roots.",
+          "as": "বৰ্গ কৰিলে মূল নোহোৱা হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Put them into the pattern.",
+          "as": "আৰ্হিত বহুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The pattern replaces a page of working.",
+        "as": "আৰ্হিয়ে এক পৃষ্ঠাৰ কাম কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{\\sqrt{7} + \\sqrt{5}}{\\sqrt{7} - \\sqrt{5}} + \\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$",
+        "as": "$\\frac{\\sqrt{7} + \\sqrt{5}}{\\sqrt{7} - \\sqrt{5}} + \\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$ উলিওৱা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which pattern?",
+          "as": "কোন আৰ্হি?"
+         },
+         "options": [
+          {
+           "en": "$a + b$",
+           "as": "$a + b$"
+          },
+          {
+           "en": "$\\frac{4ab}{a^2 - b^2}$",
+           "as": "$\\frac{4ab}{a^2 - b^2}$"
+          },
+          {
+           "en": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$",
+           "as": "$\\frac{2(a^2 + b^2)}{a^2 - b^2}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A sum of the two fractions, not a difference.",
+          "as": "দুটা ভগ্নাংশৰ যোগফল, বিয়োগফল নহয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "$a^2 + b^2$ and $a^2 - b^2$?",
+          "as": "$a^2 + b^2$ আৰু $a^2 - b^2$?"
+         },
+         "options": [
+          {
+           "en": "2 and 12",
+           "as": "2 আৰু 12"
+          },
+          {
+           "en": "12 and 2",
+           "as": "12 আৰু 2"
+          },
+          {
+           "en": "35 and 2",
+           "as": "35 আৰু 2"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Squaring removes the roots.",
+          "as": "বৰ্গ কৰিলে মূল নোহোৱা হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Put them into the pattern.",
+          "as": "আৰ্হিত বহুওৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The pattern replaces a page of working.",
+        "as": "আৰ্হিয়ে এক পৃষ্ঠাৰ কাম কৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.s.q5",
+     "type": "solve",
+     "skill": "s-surd",
+     "q": {
+      "en": "Find $\\sqrt{\\sqrt{36} + \\sqrt{100}} - \\sqrt{\\sqrt{100} - \\sqrt{36}}$",
+      "as": "$\\sqrt{\\sqrt{36} + \\sqrt{100}} - \\sqrt{\\sqrt{100} - \\sqrt{36}}$ উলিওৱা"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Work from the inside out.",
+      "as": "ভিতৰৰ পৰা বাহিৰলৈ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\sqrt{\\sqrt{36} + \\sqrt{100}} - \\sqrt{\\sqrt{100} - \\sqrt{36}}$",
+        "as": "$\\sqrt{\\sqrt{36} + \\sqrt{100}} - \\sqrt{\\sqrt{100} - \\sqrt{36}}$ উলিওৱা"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Work from the inside out.",
+        "as": "ভিতৰৰ পৰা বাহিৰলৈ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{\\sqrt{16} + \\sqrt{25}} - \\sqrt{\\sqrt{25} - \\sqrt{16}}$",
+        "as": "$\\sqrt{\\sqrt{16} + \\sqrt{25}} - \\sqrt{\\sqrt{25} - \\sqrt{16}}$ উলিওৱা"
+       },
+       "answer": "2",
+       "why": {
+        "en": "Work from the inside out.",
+        "as": "ভিতৰৰ পৰা বাহিৰলৈ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sqrt{\\sqrt{144} + \\sqrt{169}} - \\sqrt{\\sqrt{169} - \\sqrt{144}}$",
+        "as": "$\\sqrt{\\sqrt{144} + \\sqrt{169}} - \\sqrt{\\sqrt{169} - \\sqrt{144}}$ উলিওৱা"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Work from the inside out.",
+        "as": "ভিতৰৰ পৰা বাহিৰলৈ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.s.q6",
+     "type": "tf",
+     "skill": "s-surd",
+     "s": {
+      "en": "$(a + b)^3 = a^3 + b^3$",
+      "as": "$(a + b)^3 = a^3 + b^3$"
+     },
+     "answer": false,
+     "why": {
+      "en": "It also has $3ab(a + b)$: try 1 and 1, which gives 8 against 2.",
+      "as": "ইয়াত $3ab(a + b)$ও থাকে: 1 আৰু 1 ল'লে 8 আৰু 2 হয়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-square-spread",
+       "why": {
+        "en": "Powers do not split across a plus sign.",
+        "as": "ঘাত যোগৰ ওপৰত নাভাঙে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m4.s.q7",
+     "type": "match",
+     "skill": "s-surd",
+     "q": {
+      "en": "Match each expression to its short form",
+      "as": "প্ৰতিটো ৰাশিক চুটি ৰূপৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$a^3 + b^3$",
+        "as": "$a^3 + b^3$"
+       },
+       {
+        "en": "$(a + b)(a^2 - ab + b^2)$",
+        "as": "$(a + b)(a^2 - ab + b^2)$"
+       }
+      ],
+      [
+       {
+        "en": "$a^3 - b^3$",
+        "as": "$a^3 - b^3$"
+       },
+       {
+        "en": "$(a - b)(a^2 + ab + b^2)$",
+        "as": "$(a - b)(a^2 + ab + b^2)$"
+       }
+      ],
+      [
+       {
+        "en": "$(a + b)^3$",
+        "as": "$(a + b)^3$"
+       },
+       {
+        "en": "$a^3 + b^3 + 3ab(a + b)$",
+        "as": "$a^3 + b^3 + 3ab(a + b)$"
+       }
+      ],
+      [
+       {
+        "en": "$\\frac{(a + b)^2}{a^2 - b^2}$",
+        "as": "$\\frac{(a + b)^2}{a^2 - b^2}$"
+       },
+       {
+        "en": "$\\frac{a + b}{a - b}$",
+        "as": "$\\frac{a + b}{a - b}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each one turns a long sum into a cancel.",
+      "as": "প্ৰতিটোৱে দীঘল হিচাপক কটাকটিলৈ নিয়ে।"
      }
     }
    ]
