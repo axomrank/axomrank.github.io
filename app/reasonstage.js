@@ -152,4 +152,85 @@ W.gaps = (el, w, on) => {
   const set = (v) => { next = v; touched = true; draw(); on(); };
   return { value: () => next, touched: () => touched, freeze() { locked = true; el.querySelectorAll("button").forEach((b) => (b.disabled = true)); }, show: set, state: () => ({ opened, next }), demo(g) { if (g.opened != null) opened = g.opened; if (g.next != null) next = g.next; touched = true; draw(); on(); } };
 };
+
+/* ---------- tree: climb generations. value: generations above (+) or below (−) the start ---------- */
+W.tree = (el, w, on) => {
+  let gen = 0, touched = false, locked = false;
+  const rows = [2, 1, 0, -1, -2], word = { 2: B("Grandparents", "আজোককাসকল"), 1: B("Parents", "পিতৃ-মাতৃ"), 0: B("My generation", "মোৰ প্ৰজন্ম"), "-1": B("Children", "সন্তান"), "-2": B("Grandchildren", "নাতি-নাতিনী") };
+  const draw = () => { el.innerHTML = `<div class="trb">${rows.map((r) => `<div class="trr ${r === gen ? "on" : ""}"><span>${T(word[r])}</span><b>${r === gen ? "●" : ""}</b></div>`).join("")}</div>
+      <div class="wlk-keys"><button class="tile" data-tu>↑ ${T(B("Parent", "পিতৃ/মাতৃ"))}</button><button class="tile" data-td>↓ ${T(B("Child", "সন্তান"))}</button></div>`; };
+  el.addEventListener("click", (e) => { if (locked) return; if (e.target.closest("[data-tu]")) gen = Math.min(2, gen + 1); else if (e.target.closest("[data-td]")) gen = Math.max(-2, gen - 1); else return; touched = true; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { gen = v; touched = true; draw(); on(); };
+  return { value: () => gen, touched: () => touched, freeze() { locked = true; el.querySelectorAll("button").forEach((b) => (b.disabled = true)); }, show: set, state: () => ({ gen }), demo(g) { set(g.gen); } };
+};
+
+/* ---------- queue: slide one person along a line; both ranks change together ---------- */
+W.queue = (el, w, on) => {
+  const n = w.n; let pos = w.start || 1, touched = false, locked = false;
+  el.innerHTML = `<div class="qur"></div><input class="wx-range" type="range" min="1" max="${n}" step="1" value="${pos}" aria-label="Place"><div class="wx-out"></div>`;
+  const input = $("input", el);
+  const draw = () => {
+    $(".qur", el).innerHTML = Array.from({ length: n }, (_, k) => `<i class="${k + 1 === pos ? "on" : ""}"></i>`).join("");
+    $(".wx-out", el).innerHTML = `<div class="wx-read">${T(B("From left", "বাওঁৰ পৰা"))}: <b>${pos}</b> · ${T(B("From right", "সোঁৰ পৰা"))}: <b>${w.hideRight ? "?" : n - pos + 1}</b></div>`;
+  };
+  input.addEventListener("input", () => { if (locked) return; pos = +input.value; touched = true; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { pos = v; input.value = v; touched = true; draw(); on(); };
+  return { value: () => pos, touched: () => touched, freeze() { locked = true; input.disabled = true; }, show: set, state: () => ({ pos }), demo(g) { set(g.pos); } };
+};
+
+/* ---------- seats: tap a name, then a seat. value: seat order as one number (1-based names, base 10) ---------- */
+W.seats = (el, w, on) => {
+  const n = w.names.length, seat = Array(n).fill(0), cx = 150, cy = 120, R = 86; let hold = 0, touched = false, locked = false;
+  const code = () => seat.reduce((a, s) => a * 10 + s, 0);
+  const at = (k) => { const a = (k / n) * 2 * Math.PI - Math.PI / 2; return [cx + R * Math.cos(a), cy + R * Math.sin(a)]; };
+  const draw = () => {
+    const spots = w.round ? `<div class="sts rd"><svg viewBox="0 0 300 240" aria-hidden="true"><circle cx="${cx}" cy="${cy}" r="${R - 26}" fill="#EEF4FB" stroke="#7E93AE"/></svg>${seat.map((s, k) => { const [x, y] = at(k); return `<button class="tile stc" style="left:${(x / 300) * 100}%;top:${(y / 240) * 100}%" data-st="${k}">${s ? w.names[s - 1] : k + 1}</button>`; }).join("")}</div>`
+      : `<div class="sts">${seat.map((s, k) => `<button class="tile stl" data-st="${k}">${s ? w.names[s - 1] : k + 1}</button>`).join("")}</div>`;
+    el.innerHTML = `${spots}<div class="wx-keys">${w.names.map((m, k) => `<button class="tile ${hold === k + 1 ? "sel" : ""}" data-nm="${k + 1}" ${seat.includes(k + 1) ? "disabled" : ""}>${m}</button>`).join("")}</div><button class="chip-btn wlk-reset" data-st0>${T(B("Clear", "মচা"))}</button>`;
+  };
+  el.addEventListener("click", (e) => {
+    if (locked) return;
+    const a = e.target.closest("[data-nm]"), b = e.target.closest("[data-st]");
+    if (a) hold = +a.dataset.nm;
+    else if (b && hold) { seat[+b.dataset.st] = hold; hold = 0; touched = true; }
+    else if (e.target.closest("[data-st0]")) { seat.fill(0); hold = 0; }
+    else return;
+    SFX.tap(); draw(); on();
+  });
+  draw();
+  const set = (v) => { String(v).padStart(n, "0").split("").forEach((d, k) => (seat[k] = +d)); touched = true; draw(); on(); };
+  return { value: code, ready: () => seat.every(Boolean), touched: () => touched, freeze() { locked = true; }, show: set, state: () => ({ code: code() }), demo(g) { set(g.code); } };
+};
+
+/* ---------- oddday: a seven-day wheel. value: day index, 0 Sunday ---------- */
+const DAYS = [B("Sun", "দেও"), B("Mon", "সোম"), B("Tue", "মঙ্গল"), B("Wed", "বুধ"), B("Thu", "বৃহস্পতি"), B("Fri", "শুক্ৰ"), B("Sat", "শনি")];
+W.oddday = (el, w, on) => {
+  const start = w.start || 0; let day = start, touched = false, locked = false;
+  const draw = () => { el.innerHTML = `<div class="ody">${DAYS.map((d, k) => `<span class="${k === day ? "on" : ""}">${T(d)}</span>`).join("")}</div>
+      <div class="wlk-keys">${[1, 2, 3].map((k) => `<button class="tile" data-od="${k}">+${k}</button>`).join("")}<button class="tile" data-od="-1">−1</button></div>`; };
+  el.addEventListener("click", (e) => { const b = e.target.closest("[data-od]"); if (!b || locked) return; day = (day + +b.dataset.od + 7) % 7; touched = true; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { day = ((v % 7) + 7) % 7; touched = true; draw(); on(); };
+  return { value: () => day, touched: () => touched, freeze() { locked = true; el.querySelectorAll("button").forEach((b) => (b.disabled = true)); }, show: set, state: () => ({ day }), demo(g) { set(g.day); } };
+};
+
+/* ---------- hands: run a clock. value: minutes past the starting hour ---------- */
+W.hands = (el, w, on) => {
+  const h0 = w.hour ?? 3; let min = w.start || 0, touched = false, locked = false;
+  const ticks = Array.from({ length: 12 }, (_, k) => { const a = (k / 6) * Math.PI; return `<line x1="${100 + 80 * Math.sin(a)}" y1="${100 - 80 * Math.cos(a)}" x2="${100 + 88 * Math.sin(a)}" y2="${100 - 88 * Math.cos(a)}" stroke="${INK}" stroke-width="2"/>`; }).join("");
+  el.innerHTML = `<svg class="hnd" viewBox="0 0 200 200" role="img" aria-label="Clock"><circle cx="100" cy="100" r="92" fill="#fff" stroke="${INK}" stroke-width="3"/>${ticks}<line id="hh" x1="100" y1="100" stroke="${RED}" stroke-width="6" stroke-linecap="round"/><line id="mh" x1="100" y1="100" stroke="${BLUE}" stroke-width="4" stroke-linecap="round"/></svg>
+    <input class="wx-range" type="range" min="0" max="${w.max || 60}" step="1" value="${min}" aria-label="Minutes"><div class="wx-out"></div>`;
+  const input = $("input", el);
+  const draw = () => {
+    const ma = min * 6, ha = h0 * 30 + min * 0.5, gap = Math.abs(((ma - ha) % 360 + 360) % 360), sep = Math.min(gap, 360 - gap), hand = (id, deg, r) => { const a = (deg * Math.PI) / 180, l = $(id, el); l.setAttribute("x2", 100 + r * Math.sin(a)); l.setAttribute("y2", 100 - r * Math.cos(a)); };
+    hand("#hh", ha, 50); hand("#mh", ma, 76);
+    $(".wx-out", el).innerHTML = `<div class="wx-read">${h0}:${String(min).padStart(2, "0")}${w.angle ? ` · ${T(B("Angle", "কোণ"))}: <b>${sep}°</b>` : ""}</div>`;
+  };
+  input.addEventListener("input", () => { if (locked) return; min = +input.value; touched = true; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { min = v; input.value = v; touched = true; draw(); on(); };
+  return { value: () => min, touched: () => touched, freeze() { locked = true; input.disabled = true; }, show: set, state: () => ({ min }), demo(g) { set(g.min); } };
+};
 })();

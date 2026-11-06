@@ -16,7 +16,7 @@ errors = []
 skills_file = json.loads((ROOT / "content/skills/reasoning.json").read_text(encoding="utf-8"))
 SKILLS = {s["id"]: s for s in skills_file["skills"]}
 TAGS = skills_file["misconceptions"]
-GOALS = {"shift": {"k"}, "walk": {"x", "y", "f"}, "venn": {"sel"}, "alpha": {"pick"}, "gaps": {"opened", "next"}}
+GOALS = {"shift": {"k"}, "walk": {"x", "y", "f"}, "venn": {"sel"}, "alpha": {"pick"}, "gaps": {"opened", "next"}, "tree": {"gen"}, "queue": {"pos"}, "seats": {"code"}, "oddday": {"day"}, "hands": {"min"}}
 FACES = ["north", "east", "south", "west"]
 rechecked = 0
 

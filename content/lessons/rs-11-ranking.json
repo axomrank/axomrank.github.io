@@ -1,0 +1,1939 @@
+{
+ "id": "rs-11-ranking",
+ "course": "reasoning",
+ "no": 11,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Ranking and order",
+  "as": "স্থান আৰু ক্ৰম"
+ },
+ "reign": {
+  "en": "Ranks, totals, swaps, time order",
+  "as": "স্থান, মুঠ, সলনি, সময়"
+ },
+ "portrait": "reasoning/position.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Two ends, one person",
+    "as": "দুই মূৰ, এজন ব্যক্তি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Left + right − 1 = total.",
+     "as": "বাওঁ + সোঁ − 1 = মুঠ।"
+    },
+    {
+     "en": "The person is counted twice.",
+     "as": "ব্যক্তিজন দুবাৰ গণা হয়।"
+    },
+    {
+     "en": "From right = total − left + 1.",
+     "as": "সোঁ = মুঠ − বাওঁ + 1।"
+    },
+    {
+     "en": "Top and bottom work the same.",
+     "as": "ওপৰ-তলো একে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs11.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Slide and watch both ranks",
+      "as": "টানি দুয়োটা স্থান চোৱা"
+     },
+     "text": [
+      {
+       "en": "Move one person along a line of 10. As one rank rises, the other falls.",
+       "as": "10 জনৰ শাৰীত এজনক টানা। এটা স্থান বাঢ়িলে আনটো কমে।"
+      }
+     ],
+     "widget": {
+      "kind": "queue",
+      "n": 10
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to 4th from the left.",
+        "as": "বাওঁৰ পৰা 4 লৈ টানা।"
+       },
+       "goal": {
+        "pos": 4
+       },
+       "then": {
+        "en": "That is 7th from the right, and 4 + 7 = 11.",
+        "as": "সোঁৰ পৰা 7, 4 + 7 = 11।"
+       }
+      },
+      {
+       "do": {
+        "en": "Slide to 8th from the left.",
+        "as": "বাওঁৰ পৰা 8 লৈ টানা।"
+       },
+       "goal": {
+        "pos": 8
+       },
+       "then": {
+        "en": "Again 8 + 3 = 11. One more than the total, always.",
+        "as": "আকৌ 8 + 3 = 11। সদায় মুঠতকৈ এক বেছি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Why subtract one",
+      "as": "কিয় এক বিয়োগ"
+     },
+     "text": [
+      {
+       "en": "Both counts include the same person, so one count is extra.",
+       "as": "দুয়োটা গণনাত একেজন আছে, সেয়ে এটা গণনা অতিৰিক্ত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Left count",
+        "as": "বাওঁ গণনা"
+       },
+       {
+        "en": "Right count",
+        "as": "সোঁ গণনা"
+       },
+       {
+        "en": "Minus one",
+        "as": "এক বিয়োগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u1.q1",
+     "type": "explore",
+     "skill": "r-rank",
+     "q": {
+      "en": "Slide to the 5th place from the left in a line of 12. Then answer: what is the place from the right?",
+      "as": "12 জনৰ শাৰীত বাওঁৰ পৰা 5 নম্বৰলৈ টানা।"
+     },
+     "widget": {
+      "kind": "queue",
+      "n": 12
+     },
+     "target": 5,
+     "answerText": {
+      "en": "8th from the right",
+      "as": "সোঁৰ পৰা 8"
+     },
+     "why": {
+      "en": "12 − 5 + 1 = 8.",
+      "as": "12 − 5 + 1 = 8।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Slide to the 5th place from the left in a line of 12. Then answer: what is the place from the right?",
+        "as": "12 জনৰ শাৰীত বাওঁৰ পৰা 5 নম্বৰলৈ টানা।"
+       },
+       "widget": {
+        "kind": "queue",
+        "n": 12
+       },
+       "target": 5,
+       "answerText": {
+        "en": "8th from the right",
+        "as": "সোঁৰ পৰা 8"
+       },
+       "why": {
+        "en": "12 − 5 + 1 = 8.",
+        "as": "12 − 5 + 1 = 8।"
+       }
+      },
+      {
+       "q": {
+        "en": "Slide to the 9th place from the left in a line of 15. Then answer: what is the place from the right?",
+        "as": "15 জনৰ শাৰীত বাওঁৰ পৰা 9 নম্বৰলৈ টানা।"
+       },
+       "widget": {
+        "kind": "queue",
+        "n": 15
+       },
+       "target": 9,
+       "answerText": {
+        "en": "7th from the right",
+        "as": "সোঁৰ পৰা 7"
+       },
+       "why": {
+        "en": "15 − 9 + 1 = 7.",
+        "as": "15 − 9 + 1 = 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "Slide to the 2th place from the left in a line of 9. Then answer: what is the place from the right?",
+        "as": "9 জনৰ শাৰীত বাওঁৰ পৰা 2 নম্বৰলৈ টানা।"
+       },
+       "widget": {
+        "kind": "queue",
+        "n": 9
+       },
+       "target": 2,
+       "answerText": {
+        "en": "8th from the right",
+        "as": "সোঁৰ পৰা 8"
+       },
+       "why": {
+        "en": "9 − 2 + 1 = 8.",
+        "as": "9 − 2 + 1 = 8।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u1.q2",
+     "type": "solve",
+     "skill": "r-rank",
+     "q": {
+      "en": "In a class of 40, a student is 11th from the top. What is the rank from the bottom?",
+      "as": "40 জনৰ শ্ৰেণীত এজন ওপৰৰ পৰা 11। তলৰ পৰা স্থান?"
+     },
+     "answer": "30",
+     "why": {
+      "en": "40 − 11 + 1.",
+      "as": "40 − 11 + 1।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In a class of 40, a student is 11th from the top. What is the rank from the bottom?",
+        "as": "40 জনৰ শ্ৰেণীত এজন ওপৰৰ পৰা 11। তলৰ পৰা স্থান?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "40 − 11 + 1.",
+        "as": "40 − 11 + 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "In a class of 52, a student is 20th from the top. What is the rank from the bottom?",
+        "as": "52 জনৰ শ্ৰেণীত এজন ওপৰৰ পৰা 20। তলৰ পৰা স্থান?"
+       },
+       "answer": "33",
+       "why": {
+        "en": "52 − 20 + 1.",
+        "as": "52 − 20 + 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "In a class of 35, a student is 7th from the top. What is the rank from the bottom?",
+        "as": "35 জনৰ শ্ৰেণীত এজন ওপৰৰ পৰা 7। তলৰ পৰা স্থান?"
+       },
+       "answer": "29",
+       "why": {
+        "en": "35 − 7 + 1.",
+        "as": "35 − 7 + 1।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u1.q3",
+     "type": "tf",
+     "skill": "r-rank",
+     "s": {
+      "en": "10th from left in a line of 20 is 11th from right.",
+      "as": "20 জনৰ শাৰীত বাওঁৰ 10 সোঁৰ 11।"
+     },
+     "answer": true,
+     "why": {
+      "en": "20 − 10 + 1 = 11.",
+      "as": "20 − 10 + 1 = 11।"
+     }
+    },
+    {
+     "id": "rs11.u1.q4",
+     "type": "match",
+     "skill": "r-rank",
+     "q": {
+      "en": "Line of 8: match",
+      "as": "8 জনৰ শাৰী: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1st left",
+        "as": "বাওঁৰ ১ম"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      [
+       {
+        "en": "3rd left",
+        "as": "বাওঁৰ ৩য়"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      [
+       {
+        "en": "6th left",
+        "as": "বাওঁৰ ৬ষ্ঠ"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Total − left + 1.",
+      "as": "মুঠ − বাওঁ + 1।"
+     }
+    },
+    {
+     "id": "rs11.u1.q5",
+     "type": "order",
+     "skill": "r-rank",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Note the total",
+       "as": "মুঠ লিখা"
+      },
+      {
+       "en": "Note the rank",
+       "as": "স্থান লিখা"
+      },
+      {
+       "en": "Subtract",
+       "as": "বিয়োগ"
+      },
+      {
+       "en": "Add one",
+       "as": "এক যোগ"
+      }
+     ],
+     "why": {
+      "en": "Total − rank + 1.",
+      "as": "মুঠ − স্থান + 1।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Totals and gaps",
+    "as": "মুঠ আৰু মাজৰ সংখ্যা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Total = both ranks − 1.",
+     "as": "মুঠ = দুয়োটা স্থান − 1।"
+    },
+    {
+     "en": "Between = total − both end counts.",
+     "as": "মাজত = মুঠ − দুই মূৰৰ গণনা।"
+    },
+    {
+     "en": "Draw a quick line.",
+     "as": "খৰকৈ শাৰী আঁকা।"
+    },
+    {
+     "en": "Watch whether they overlap.",
+     "as": "ওপৰা-ওপৰি হয় নেকি চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs11.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Sketch the line",
+      "as": "শাৰী আঁকা"
+     },
+     "text": [
+      {
+       "en": "Mark who is counted from which end, then what is left.",
+       "as": "কোন কোন মূৰৰ পৰা চিন কৰি বাকীখিনি চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Left block",
+        "as": "বাওঁ খণ্ড"
+       },
+       {
+        "en": "Middle",
+        "as": "মাজ"
+       },
+       {
+        "en": "Right block",
+        "as": "সোঁ খণ্ড"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Between is a subtraction",
+      "as": "মাজ এটা বিয়োগ"
+     },
+     "text": [
+      {
+       "en": "Remove both end blocks from the total. What remains stands between.",
+       "as": "মুঠৰ পৰা দুই মূৰৰ খণ্ড আঁতৰোৱা। বাকীখিনি মাজত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Total 30",
+        "as": "Total 30"
+       },
+       {
+        "en": "− 8 − 12",
+        "as": "− 8 − 12"
+       },
+       {
+        "en": "10 between",
+        "as": "মাজত 10"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u2.q1",
+     "type": "solve",
+     "skill": "r-rtotal",
+     "q": {
+      "en": "Someone is 14th from the left and 9th from the right. How many are in the line?",
+      "as": "এজন বাওঁৰ পৰা 14 আৰু সোঁৰ পৰা 9 নম্বৰ। শাৰীত মুঠ কিমান?"
+     },
+     "answer": "22",
+     "why": {
+      "en": "14 + 9 − 1 = 22.",
+      "as": "14 + 9 − 1 = 22।"
+     },
+     "traps": [
+      {
+       "ans": "23",
+       "tag": "r-m-twice",
+       "why": {
+        "en": "The person is counted from both ends, so subtract 1.",
+        "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Someone is 14th from the left and 9th from the right. How many are in the line?",
+        "as": "এজন বাওঁৰ পৰা 14 আৰু সোঁৰ পৰা 9 নম্বৰ। শাৰীত মুঠ কিমান?"
+       },
+       "answer": "22",
+       "why": {
+        "en": "14 + 9 − 1 = 22.",
+        "as": "14 + 9 − 1 = 22।"
+       },
+       "traps": [
+        {
+         "ans": "23",
+         "tag": "r-m-twice",
+         "why": {
+          "en": "The person is counted from both ends, so subtract 1.",
+          "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Someone is 21th from the left and 17th from the right. How many are in the line?",
+        "as": "এজন বাওঁৰ পৰা 21 আৰু সোঁৰ পৰা 17 নম্বৰ। শাৰীত মুঠ কিমান?"
+       },
+       "answer": "37",
+       "why": {
+        "en": "21 + 17 − 1 = 37.",
+        "as": "21 + 17 − 1 = 37।"
+       },
+       "traps": [
+        {
+         "ans": "38",
+         "tag": "r-m-twice",
+         "why": {
+          "en": "The person is counted from both ends, so subtract 1.",
+          "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Someone is 8th from the left and 13th from the right. How many are in the line?",
+        "as": "এজন বাওঁৰ পৰা 8 আৰু সোঁৰ পৰা 13 নম্বৰ। শাৰীত মুঠ কিমান?"
+       },
+       "answer": "20",
+       "why": {
+        "en": "8 + 13 − 1 = 20.",
+        "as": "8 + 13 − 1 = 20।"
+       },
+       "traps": [
+        {
+         "ans": "21",
+         "tag": "r-m-twice",
+         "why": {
+          "en": "The person is counted from both ends, so subtract 1.",
+          "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs11.u2.q2",
+     "type": "solve",
+     "skill": "r-rtotal",
+     "q": {
+      "en": "In a line of 30, A is 7th from the left and B is 9th from the right. How many stand between them?",
+      "as": "30 জনৰ শাৰীত A বাওঁৰ পৰা 7, B সোঁৰ পৰা 9। মাজত কিমান?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "30 − 7 − 9 = 14.",
+      "as": "30 − 7 − 9 = 14।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In a line of 30, A is 7th from the left and B is 9th from the right. How many stand between them?",
+        "as": "30 জনৰ শাৰীত A বাওঁৰ পৰা 7, B সোঁৰ পৰা 9। মাজত কিমান?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "30 − 7 − 9 = 14.",
+        "as": "30 − 7 − 9 = 14।"
+       }
+      },
+      {
+       "q": {
+        "en": "In a line of 40, A is 10th from the left and B is 12th from the right. How many stand between them?",
+        "as": "40 জনৰ শাৰীত A বাওঁৰ পৰা 10, B সোঁৰ পৰা 12। মাজত কিমান?"
+       },
+       "answer": "18",
+       "why": {
+        "en": "40 − 10 − 12 = 18.",
+        "as": "40 − 10 − 12 = 18।"
+       }
+      },
+      {
+       "q": {
+        "en": "In a line of 25, A is 5th from the left and B is 6th from the right. How many stand between them?",
+        "as": "25 জনৰ শাৰীত A বাওঁৰ পৰা 5, B সোঁৰ পৰা 6। মাজত কিমান?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "25 − 5 − 6 = 14.",
+        "as": "25 − 5 − 6 = 14।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u2.q3",
+     "type": "stepwise",
+     "skill": "r-rtotal",
+     "q": {
+      "en": "Left rank 6, right rank 15. Find the total.",
+      "as": "বাওঁ 6, সোঁ 15। মুঠ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Add the ranks?",
+        "as": "স্থান যোগ?"
+       },
+       "options": [
+        {
+         "en": "21",
+         "as": "21"
+        },
+        {
+         "en": "90",
+         "as": "90"
+        },
+        {
+         "en": "-9",
+         "as": "-9"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "First add.",
+        "as": "আগতে যোগ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Then?",
+        "as": "তাৰ পিছত?"
+       },
+       "options": [
+        {
+         "en": "22",
+         "as": "22"
+        },
+        {
+         "en": "20",
+         "as": "20"
+        },
+        {
+         "en": "21",
+         "as": "21"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "The person is counted from both ends, so subtract 1.",
+        "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+       },
+       "tag": "r-m-twice"
+      }
+     ],
+     "why": {
+      "en": "Subtract the double count.",
+      "as": "দুবাৰ গণা আঁতৰোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Left rank 6, right rank 15. Find the total.",
+        "as": "বাওঁ 6, সোঁ 15। মুঠ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the ranks?",
+          "as": "স্থান যোগ?"
+         },
+         "options": [
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "90",
+           "as": "90"
+          },
+          {
+           "en": "-9",
+           "as": "-9"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "First add.",
+          "as": "আগতে যোগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Then?",
+          "as": "তাৰ পিছত?"
+         },
+         "options": [
+          {
+           "en": "22",
+           "as": "22"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "21",
+           "as": "21"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The person is counted from both ends, so subtract 1.",
+          "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+         },
+         "tag": "r-m-twice"
+        }
+       ],
+       "why": {
+        "en": "Subtract the double count.",
+        "as": "দুবাৰ গণা আঁতৰোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Left rank 11, right rank 8. Find the total.",
+        "as": "বাওঁ 11, সোঁ 8। মুঠ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the ranks?",
+          "as": "স্থান যোগ?"
+         },
+         "options": [
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "88",
+           "as": "88"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "First add.",
+          "as": "আগতে যোগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Then?",
+          "as": "তাৰ পিছত?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "19",
+           "as": "19"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The person is counted from both ends, so subtract 1.",
+          "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+         },
+         "tag": "r-m-twice"
+        }
+       ],
+       "why": {
+        "en": "Subtract the double count.",
+        "as": "দুবাৰ গণা আঁতৰোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Left rank 19, right rank 4. Find the total.",
+        "as": "বাওঁ 19, সোঁ 4। মুঠ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the ranks?",
+          "as": "স্থান যোগ?"
+         },
+         "options": [
+          {
+           "en": "23",
+           "as": "23"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "76",
+           "as": "76"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "First add.",
+          "as": "আগতে যোগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Then?",
+          "as": "তাৰ পিছত?"
+         },
+         "options": [
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "23",
+           "as": "23"
+          },
+          {
+           "en": "22",
+           "as": "22"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The person is counted from both ends, so subtract 1.",
+          "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+         },
+         "tag": "r-m-twice"
+        }
+       ],
+       "why": {
+        "en": "Subtract the double count.",
+        "as": "দুবাৰ গণা আঁতৰোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u2.q4",
+     "type": "tf",
+     "skill": "r-rtotal",
+     "s": {
+      "en": "Left rank 5 and right rank 5 mean a line of 10.",
+      "as": "বাওঁ 5, সোঁ 5 মানে 10 জন।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 9.",
+      "as": "ই 9।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-twice",
+       "why": {
+        "en": "The person is counted from both ends, so subtract 1.",
+        "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u2.q5",
+     "type": "match",
+     "skill": "r-rtotal",
+     "q": {
+      "en": "Match the ranks to the total",
+      "as": "স্থানক মুঠৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "3 and 3",
+        "as": "3 and 3"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "6 and 8",
+        "as": "6 and 8"
+       },
+       {
+        "en": "13",
+        "as": "13"
+       }
+      ],
+      [
+       {
+        "en": "10 and 11",
+        "as": "10 and 11"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Add, then minus 1.",
+      "as": "যোগ, তাৰ পিছত − 1।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "When people swap",
+    "as": "ঠাই সলনি হ'লে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "In a swap, each takes the other's place.",
+     "as": "সলনিত প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+    },
+    {
+     "en": "The total never changes.",
+     "as": "মুঠ সলনি নহয়।"
+    },
+    {
+     "en": "Use the changed rank to find the gap.",
+     "as": "সলনি হোৱা স্থানৰ পৰা ব্যৱধান।"
+    },
+    {
+     "en": "Add gaps to known ranks.",
+     "as": "জনা স্থানত ব্যৱধান যোগ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs11.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Swap places, keep the line",
+      "as": "ঠাই সলনি, শাৰী একে"
+     },
+     "text": [
+      {
+       "en": "If A moves from 5th to 9th by swapping, B moves from 9th to 5th.",
+       "as": "A সলনি কৰি 5 ৰ পৰা 9 গ'লে B, 9 ৰ পৰা 5।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A: 5 → 9",
+        "as": "A: 5 → 9"
+       },
+       {
+        "en": "B: 9 → 5",
+        "as": "B: 9 → 5"
+       },
+       {
+        "en": "Gap: 4",
+        "as": "ব্যৱধান: 4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Using the gap",
+      "as": "ব্যৱধান ব্যৱহাৰ"
+     },
+     "text": [
+      {
+       "en": "If B's new rank from the other end is known, the gap gives the total.",
+       "as": "আনটো মূৰৰ পৰা B ৰ নতুন স্থান জানিলে মুঠ পোৱা যায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Old rank",
+        "as": "পুৰণি স্থান"
+       },
+       {
+        "en": "Gap",
+        "as": "ব্যৱধান"
+       },
+       {
+        "en": "New rank",
+        "as": "নতুন স্থান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u3.q1",
+     "type": "solve",
+     "skill": "r-rswap",
+     "q": {
+      "en": "A is 6th and B is 12th from the left. They swap, and A is now 12th. What is B's new place?",
+      "as": "A বাওঁৰ পৰা 6, B 12। ঠাই সলনি কৰাত A এতিয়া 12। B ৰ নতুন স্থান?"
+     },
+     "answer": "6",
+     "why": {
+      "en": "Each takes the other's place.",
+      "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A is 6th and B is 12th from the left. They swap, and A is now 12th. What is B's new place?",
+        "as": "A বাওঁৰ পৰা 6, B 12। ঠাই সলনি কৰাত A এতিয়া 12। B ৰ নতুন স্থান?"
+       },
+       "answer": "6",
+       "why": {
+        "en": "Each takes the other's place.",
+        "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 9th and B is 15th from the left. They swap, and A is now 15th. What is B's new place?",
+        "as": "A বাওঁৰ পৰা 9, B 15। ঠাই সলনি কৰাত A এতিয়া 15। B ৰ নতুন স্থান?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "Each takes the other's place.",
+        "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 4th and B is 11th from the left. They swap, and A is now 11th. What is B's new place?",
+        "as": "A বাওঁৰ পৰা 4, B 11। ঠাই সলনি কৰাত A এতিয়া 11। B ৰ নতুন স্থান?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Each takes the other's place.",
+        "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u3.q2",
+     "type": "solve",
+     "skill": "r-rswap",
+     "q": {
+      "en": "A is 5th from the left. After swapping with B, A is 11th from the left and 7th from the right. How many are in the line?",
+      "as": "A বাওঁৰ পৰা 5। B ৰ লগত সলনিৰ পিছত A বাওঁৰ পৰা 11, সোঁৰ পৰা 7। মুঠ কিমান?"
+     },
+     "answer": "17",
+     "why": {
+      "en": "Use A's new ranks: 11 + 7 − 1.",
+      "as": "A ৰ নতুন স্থান: 11 + 7 − 1।"
+     },
+     "traps": [
+      {
+       "ans": "11",
+       "tag": "r-m-twice",
+       "why": {
+        "en": "Use both ranks at the same moment, after the swap.",
+        "as": "সলনিৰ পিছৰ দুয়োটা স্থান লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A is 5th from the left. After swapping with B, A is 11th from the left and 7th from the right. How many are in the line?",
+        "as": "A বাওঁৰ পৰা 5। B ৰ লগত সলনিৰ পিছত A বাওঁৰ পৰা 11, সোঁৰ পৰা 7। মুঠ কিমান?"
+       },
+       "answer": "17",
+       "why": {
+        "en": "Use A's new ranks: 11 + 7 − 1.",
+        "as": "A ৰ নতুন স্থান: 11 + 7 − 1।"
+       },
+       "traps": [
+        {
+         "ans": "11",
+         "tag": "r-m-twice",
+         "why": {
+          "en": "Use both ranks at the same moment, after the swap.",
+          "as": "সলনিৰ পিছৰ দুয়োটা স্থান লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A is 8th from the left. After swapping with B, A is 14th from the left and 9th from the right. How many are in the line?",
+        "as": "A বাওঁৰ পৰা 8। B ৰ লগত সলনিৰ পিছত A বাওঁৰ পৰা 14, সোঁৰ পৰা 9। মুঠ কিমান?"
+       },
+       "answer": "22",
+       "why": {
+        "en": "Use A's new ranks: 14 + 9 − 1.",
+        "as": "A ৰ নতুন স্থান: 14 + 9 − 1।"
+       },
+       "traps": [
+        {
+         "ans": "16",
+         "tag": "r-m-twice",
+         "why": {
+          "en": "Use both ranks at the same moment, after the swap.",
+          "as": "সলনিৰ পিছৰ দুয়োটা স্থান লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A is 3th from the left. After swapping with B, A is 10th from the left and 12th from the right. How many are in the line?",
+        "as": "A বাওঁৰ পৰা 3। B ৰ লগত সলনিৰ পিছত A বাওঁৰ পৰা 10, সোঁৰ পৰা 12। মুঠ কিমান?"
+       },
+       "answer": "21",
+       "why": {
+        "en": "Use A's new ranks: 10 + 12 − 1.",
+        "as": "A ৰ নতুন স্থান: 10 + 12 − 1।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "r-m-twice",
+         "why": {
+          "en": "Use both ranks at the same moment, after the swap.",
+          "as": "সলনিৰ পিছৰ দুয়োটা স্থান লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs11.u3.q3",
+     "type": "tf",
+     "skill": "r-rswap",
+     "s": {
+      "en": "A swap changes the total in the line.",
+      "as": "সলনিয়ে মুঠ সলায়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "People only change places.",
+      "as": "কেৱল ঠাই সলনি।"
+     }
+    },
+    {
+     "id": "rs11.u3.q4",
+     "type": "match",
+     "skill": "r-rswap",
+     "q": {
+      "en": "A was 3rd, B was 8th. After swapping",
+      "as": "A 3, B 8। সলনিৰ পিছত"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A's place",
+        "as": "A ৰ স্থান"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      [
+       {
+        "en": "B's place",
+        "as": "B ৰ স্থান"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       }
+      ],
+      [
+       {
+        "en": "Gap",
+        "as": "ব্যৱধান"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ]
+     ],
+     "why": {
+      "en": "They trade.",
+      "as": "সলনি হয়।"
+     }
+    },
+    {
+     "id": "rs11.u3.q5",
+     "type": "order",
+     "skill": "r-rswap",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Note old ranks",
+       "as": "পুৰণি স্থান"
+      },
+      {
+       "en": "Trade them",
+       "as": "সলনি কৰা"
+      },
+      {
+       "en": "Take ranks after the swap",
+       "as": "সলনিৰ পিছৰ স্থান"
+      },
+      {
+       "en": "Find the total",
+       "as": "মুঠ উলিওৱা"
+      }
+     ],
+     "why": {
+      "en": "Use one moment only.",
+      "as": "একে সময়ৰ স্থান।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Order by time",
+    "as": "সময়ৰ ক্ৰম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Earlier sits before later.",
+     "as": "আগৰটো আগত।"
+    },
+    {
+     "en": "Convert to one clock.",
+     "as": "এটা ঘড়ীলৈ আনা।"
+    },
+    {
+     "en": "Add late, subtract early.",
+     "as": "পলম যোগ, আগতীয়া বিয়োগ।"
+    },
+    {
+     "en": "Draw comparisons as a line.",
+     "as": "তুলনা শাৰীত আঁকা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs11.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Build one line from clues",
+      "as": "ইংগিতৰ পৰা এটা শাৰী"
+     },
+     "text": [
+      {
+       "en": "A is taller than B, and B than C. That makes one line: A, B, C.",
+       "as": "A, B তকৈ ওখ, B, C তকৈ। এটা শাৰী: A, B, C।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "B",
+        "as": "B"
+       },
+       {
+        "en": "C",
+        "as": "C"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Late and early",
+      "as": "পলম আৰু আগতীয়া"
+     },
+     "text": [
+      {
+       "en": "A train due at 4:20 runs 15 minutes late, so it comes at 4:35.",
+       "as": "4:20 ৰ ৰেল 15 মিনিট পলম, গতিকে 4:35।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "4:20",
+        "as": "4:20"
+       },
+       {
+        "en": "+ 15",
+        "as": "+ 15"
+       },
+       {
+        "en": "4:35",
+        "as": "4:35"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs11.u4.q1",
+     "type": "order",
+     "skill": "r-rtime",
+     "q": {
+      "en": "A is older than B, and C is older than A. Oldest first",
+      "as": "A, B তকৈ ডাঙৰ, C, A তকৈ ডাঙৰ। ডাঙৰৰ পৰা"
+     },
+     "items": [
+      {
+       "en": "C",
+       "as": "C"
+      },
+      {
+       "en": "A",
+       "as": "A"
+      },
+      {
+       "en": "B",
+       "as": "B"
+      }
+     ],
+     "why": {
+      "en": "C, then A, then B.",
+      "as": "C, A, B।"
+     }
+    },
+    {
+     "id": "rs11.u4.q2",
+     "type": "solve",
+     "skill": "r-rtime",
+     "q": {
+      "en": "A meeting set for 4:20 starts 15 minutes late. How many minutes past 4 does it start?",
+      "as": "4:20 ৰ সভা 15 মিনিট পলমকৈ আৰম্ভ হ'ল। 4 ৰ পিছত কিমান মিনিটত?"
+     },
+     "answer": "35",
+     "why": {
+      "en": "20 + 15 = 35.",
+      "as": "20 + 15 = 35।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A meeting set for 4:20 starts 15 minutes late. How many minutes past 4 does it start?",
+        "as": "4:20 ৰ সভা 15 মিনিট পলমকৈ আৰম্ভ হ'ল। 4 ৰ পিছত কিমান মিনিটত?"
+       },
+       "answer": "35",
+       "why": {
+        "en": "20 + 15 = 35.",
+        "as": "20 + 15 = 35।"
+       }
+      },
+      {
+       "q": {
+        "en": "A meeting set for 9:05 starts 25 minutes late. How many minutes past 9 does it start?",
+        "as": "9:05 ৰ সভা 25 মিনিট পলমকৈ আৰম্ভ হ'ল। 9 ৰ পিছত কিমান মিনিটত?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "5 + 25 = 30.",
+        "as": "5 + 25 = 30।"
+       }
+      },
+      {
+       "q": {
+        "en": "A meeting set for 2:30 starts 12 minutes late. How many minutes past 2 does it start?",
+        "as": "2:30 ৰ সভা 12 মিনিট পলমকৈ আৰম্ভ হ'ল। 2 ৰ পিছত কিমান মিনিটত?"
+       },
+       "answer": "42",
+       "why": {
+        "en": "30 + 12 = 42.",
+        "as": "30 + 12 = 42।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs11.u4.q3",
+     "type": "tf",
+     "skill": "r-rtime",
+     "s": {
+      "en": "If P is taller than Q, and R shorter than Q, then P is tallest.",
+      "as": "P, Q তকৈ ওখ, R, Q তকৈ চুটি হ'লে P আটাইতকৈ ওখ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "P, Q, R.",
+      "as": "P, Q, R।"
+     }
+    },
+    {
+     "id": "rs11.u4.q4",
+     "type": "match",
+     "skill": "r-rtime",
+     "q": {
+      "en": "Due 6:10: match",
+      "as": "6:10 ত: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "10 late",
+        "as": "10 পলম"
+       },
+       {
+        "en": "6:20",
+        "as": "6:20"
+       }
+      ],
+      [
+       {
+        "en": "5 early",
+        "as": "5 আগতীয়া"
+       },
+       {
+        "en": "6:05",
+        "as": "6:05"
+       }
+      ],
+      [
+       {
+        "en": "On time",
+        "as": "সময়ত"
+       },
+       {
+        "en": "6:10",
+        "as": "6:10"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Add or subtract.",
+      "as": "যোগ বা বিয়োগ।"
+     }
+    },
+    {
+     "id": "rs11.u4.q5",
+     "type": "stepwise",
+     "skill": "r-rtime",
+     "q": {
+      "en": "Asha arrived before Bina. Jonali arrived after Bina. Who was last?",
+      "as": "Asha বীণাৰ আগত আহিল। Jonali বীণাৰ পিছত আহিল। শেষত কোন?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Who was before Bina?",
+        "as": "বীণাৰ আগত কোন?"
+       },
+       "options": [
+        {
+         "en": "Jonali",
+         "as": "Jonali"
+        },
+        {
+         "en": "Asha",
+         "as": "Asha"
+        },
+        {
+         "en": "Nobody",
+         "as": "কোনো নাই"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Stated.",
+        "as": "কোৱা হৈছে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Who was last?",
+        "as": "শেষত কোন?"
+       },
+       "options": [
+        {
+         "en": "Bina",
+         "as": "বীণা"
+        },
+        {
+         "en": "Asha",
+         "as": "Asha"
+        },
+        {
+         "en": "Jonali",
+         "as": "Jonali"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Build the line.",
+        "as": "শাৰী বনোৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Asha, Bina, Jonali.",
+      "as": "Asha, বীণা, Jonali।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Asha arrived before Bina. Jonali arrived after Bina. Who was last?",
+        "as": "Asha বীণাৰ আগত আহিল। Jonali বীণাৰ পিছত আহিল। শেষত কোন?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Who was before Bina?",
+          "as": "বীণাৰ আগত কোন?"
+         },
+         "options": [
+          {
+           "en": "Jonali",
+           "as": "Jonali"
+          },
+          {
+           "en": "Asha",
+           "as": "Asha"
+          },
+          {
+           "en": "Nobody",
+           "as": "কোনো নাই"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Who was last?",
+          "as": "শেষত কোন?"
+         },
+         "options": [
+          {
+           "en": "Bina",
+           "as": "বীণা"
+          },
+          {
+           "en": "Asha",
+           "as": "Asha"
+          },
+          {
+           "en": "Jonali",
+           "as": "Jonali"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Build the line.",
+          "as": "শাৰী বনোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Asha, Bina, Jonali.",
+        "as": "Asha, বীণা, Jonali।"
+       }
+      },
+      {
+       "q": {
+        "en": "Rupa arrived before Bina. Mina arrived after Bina. Who was last?",
+        "as": "Rupa বীণাৰ আগত আহিল। Mina বীণাৰ পিছত আহিল। শেষত কোন?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Who was before Bina?",
+          "as": "বীণাৰ আগত কোন?"
+         },
+         "options": [
+          {
+           "en": "Nobody",
+           "as": "কোনো নাই"
+          },
+          {
+           "en": "Mina",
+           "as": "Mina"
+          },
+          {
+           "en": "Rupa",
+           "as": "Rupa"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Who was last?",
+          "as": "শেষত কোন?"
+         },
+         "options": [
+          {
+           "en": "Rupa",
+           "as": "Rupa"
+          },
+          {
+           "en": "Bina",
+           "as": "বীণা"
+          },
+          {
+           "en": "Mina",
+           "as": "Mina"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Build the line.",
+          "as": "শাৰী বনোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Rupa, Bina, Mina.",
+        "as": "Rupa, বীণা, Mina।"
+       }
+      },
+      {
+       "q": {
+        "en": "Nita arrived before Bina. Purabi arrived after Bina. Who was last?",
+        "as": "Nita বীণাৰ আগত আহিল। Purabi বীণাৰ পিছত আহিল। শেষত কোন?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Who was before Bina?",
+          "as": "বীণাৰ আগত কোন?"
+         },
+         "options": [
+          {
+           "en": "Nita",
+           "as": "Nita"
+          },
+          {
+           "en": "Nobody",
+           "as": "কোনো নাই"
+          },
+          {
+           "en": "Purabi",
+           "as": "Purabi"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Who was last?",
+          "as": "শেষত কোন?"
+         },
+         "options": [
+          {
+           "en": "Nita",
+           "as": "Nita"
+          },
+          {
+           "en": "Purabi",
+           "as": "Purabi"
+          },
+          {
+           "en": "Bina",
+           "as": "বীণা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Build the line.",
+          "as": "শাৰী বনোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Nita, Bina, Purabi.",
+        "as": "Nita, বীণা, Purabi।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Ranking test",
+   "as": "স্থানৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs11.t.q1",
+    "type": "solve",
+    "skill": "r-rtotal",
+    "q": {
+     "en": "Someone is 17th from the left and 12th from the right. How many are in the line?",
+     "as": "এজন বাওঁৰ পৰা 17 আৰু সোঁৰ পৰা 12 নম্বৰ। শাৰীত মুঠ কিমান?"
+    },
+    "answer": "28",
+    "why": {
+     "en": "17 + 12 − 1 = 28.",
+     "as": "17 + 12 − 1 = 28।"
+    },
+    "traps": [
+     {
+      "ans": "29",
+      "tag": "r-m-twice",
+      "why": {
+       "en": "The person is counted from both ends, so subtract 1.",
+       "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Someone is 17th from the left and 12th from the right. How many are in the line?",
+       "as": "এজন বাওঁৰ পৰা 17 আৰু সোঁৰ পৰা 12 নম্বৰ। শাৰীত মুঠ কিমান?"
+      },
+      "answer": "28",
+      "why": {
+       "en": "17 + 12 − 1 = 28.",
+       "as": "17 + 12 − 1 = 28।"
+      },
+      "traps": [
+       {
+        "ans": "29",
+        "tag": "r-m-twice",
+        "why": {
+         "en": "The person is counted from both ends, so subtract 1.",
+         "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Someone is 9th from the left and 22th from the right. How many are in the line?",
+       "as": "এজন বাওঁৰ পৰা 9 আৰু সোঁৰ পৰা 22 নম্বৰ। শাৰীত মুঠ কিমান?"
+      },
+      "answer": "30",
+      "why": {
+       "en": "9 + 22 − 1 = 30.",
+       "as": "9 + 22 − 1 = 30।"
+      },
+      "traps": [
+       {
+        "ans": "31",
+        "tag": "r-m-twice",
+        "why": {
+         "en": "The person is counted from both ends, so subtract 1.",
+         "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs11.t.q2",
+    "type": "solve",
+    "skill": "r-rtotal",
+    "q": {
+     "en": "In a line of 32, A is 8th from the left and B is 10th from the right. How many stand between them?",
+     "as": "32 জনৰ শাৰীত A বাওঁৰ পৰা 8, B সোঁৰ পৰা 10। মাজত কিমান?"
+    },
+    "answer": "14",
+    "why": {
+     "en": "32 − 8 − 10 = 14.",
+     "as": "32 − 8 − 10 = 14।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "In a line of 32, A is 8th from the left and B is 10th from the right. How many stand between them?",
+       "as": "32 জনৰ শাৰীত A বাওঁৰ পৰা 8, B সোঁৰ পৰা 10। মাজত কিমান?"
+      },
+      "answer": "14",
+      "why": {
+       "en": "32 − 8 − 10 = 14.",
+       "as": "32 − 8 − 10 = 14।"
+      }
+     },
+     {
+      "q": {
+       "en": "In a line of 28, A is 6th from the left and B is 15th from the right. How many stand between them?",
+       "as": "28 জনৰ শাৰীত A বাওঁৰ পৰা 6, B সোঁৰ পৰা 15। মাজত কিমান?"
+      },
+      "answer": "7",
+      "why": {
+       "en": "28 − 6 − 15 = 7.",
+       "as": "28 − 6 − 15 = 7।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs11.t.q3",
+    "type": "solve",
+    "skill": "r-rank",
+    "q": {
+     "en": "19th from the left in a line of 45: what place from the right?",
+     "as": "45 জনৰ শাৰীত বাওঁৰ 19: সোঁৰ পৰা?"
+    },
+    "answer": "27",
+    "why": {
+     "en": "45 − 19 + 1.",
+     "as": "45 − 19 + 1।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "19th from the left in a line of 45: what place from the right?",
+       "as": "45 জনৰ শাৰীত বাওঁৰ 19: সোঁৰ পৰা?"
+      },
+      "answer": "27",
+      "why": {
+       "en": "45 − 19 + 1.",
+       "as": "45 − 19 + 1।"
+      }
+     },
+     {
+      "q": {
+       "en": "6th from the left in a line of 28: what place from the right?",
+       "as": "28 জনৰ শাৰীত বাওঁৰ 6: সোঁৰ পৰা?"
+      },
+      "answer": "23",
+      "why": {
+       "en": "28 − 6 + 1.",
+       "as": "28 − 6 + 1।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs11.t.q4",
+    "type": "solve",
+    "skill": "r-rswap",
+    "q": {
+     "en": "A is 7th and B is 13th from the left. They swap, and A is now 13th. What is B's new place?",
+     "as": "A বাওঁৰ পৰা 7, B 13। ঠাই সলনি কৰাত A এতিয়া 13। B ৰ নতুন স্থান?"
+    },
+    "answer": "7",
+    "why": {
+     "en": "Each takes the other's place.",
+     "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "A is 7th and B is 13th from the left. They swap, and A is now 13th. What is B's new place?",
+       "as": "A বাওঁৰ পৰা 7, B 13। ঠাই সলনি কৰাত A এতিয়া 13। B ৰ নতুন স্থান?"
+      },
+      "answer": "7",
+      "why": {
+       "en": "Each takes the other's place.",
+       "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+      }
+     },
+     {
+      "q": {
+       "en": "A is 2th and B is 9th from the left. They swap, and A is now 9th. What is B's new place?",
+       "as": "A বাওঁৰ পৰা 2, B 9। ঠাই সলনি কৰাত A এতিয়া 9। B ৰ নতুন স্থান?"
+      },
+      "answer": "2",
+      "why": {
+       "en": "Each takes the other's place.",
+       "as": "প্ৰত্যেকে আনজনৰ ঠাই লয়।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs11.t.q5",
+    "type": "tf",
+    "skill": "r-rtotal",
+    "s": {
+     "en": "Ranks 7 and 7 give 13 people.",
+     "as": "7 আৰু 7 ৰ স্থানে 13 জন দিয়ে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "7 + 7 − 1 = 13.",
+     "as": "7 + 7 − 1 = 13।"
+    }
+   },
+   {
+    "id": "rs11.t.q6",
+    "type": "tf",
+    "skill": "r-rtime",
+    "s": {
+     "en": "If A is before B and B before C, then C is first.",
+     "as": "A, B ৰ আগত, B, C ৰ আগত হ'লে C প্ৰথম।"
+    },
+    "answer": false,
+    "why": {
+     "en": "A is first.",
+     "as": "A প্ৰথম।"
+    }
+   }
+  ]
+ }
+}

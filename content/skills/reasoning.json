@@ -64,6 +64,34 @@
    }
   },
   {
+   "id": "blood-relations",
+   "t": {
+    "en": "Blood relations",
+    "as": "তেজৰ সম্পৰ্ক"
+   }
+  },
+  {
+   "id": "ranking",
+   "t": {
+    "en": "Ranking and order",
+    "as": "স্থান আৰু ক্ৰম"
+   }
+  },
+  {
+   "id": "arrangement",
+   "t": {
+    "en": "Arrangements",
+    "as": "সজ্জা"
+   }
+  },
+  {
+   "id": "calendar-clock",
+   "t": {
+    "en": "Calendar and clocks",
+    "as": "কেলেণ্ডাৰ আৰু ঘড়ী"
+   }
+  },
+  {
    "id": "venn",
    "t": {
     "en": "Venn diagrams",
@@ -1839,6 +1867,612 @@
    ]
   },
   {
+   "id": "r-bgen",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Generations",
+    "as": "প্ৰজন্ম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-bname",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Name the relation",
+    "as": "সম্পৰ্কৰ নাম"
+   },
+   "pre": [
+    "r-bgen"
+   ],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-bgender",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Stated gender only",
+    "as": "কোৱা লিংগহে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-bcode",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Coded relations",
+    "as": "সংকেতৰ সম্পৰ্ক"
+   },
+   "pre": [
+    "r-bname"
+   ],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-rank",
+   "topic": "ranking",
+   "t": {
+    "en": "Ranks from both ends",
+    "as": "দুই মূৰৰ স্থান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-rtotal",
+   "topic": "ranking",
+   "t": {
+    "en": "Find the total",
+    "as": "মুঠ উলিওৱা"
+   },
+   "pre": [
+    "r-rank"
+   ],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-rswap",
+   "topic": "ranking",
+   "t": {
+    "en": "Ranks after a swap",
+    "as": "সলনিৰ পিছৰ স্থান"
+   },
+   "pre": [
+    "r-rank"
+   ],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-rtime",
+   "topic": "ranking",
+   "t": {
+    "en": "Order by time",
+    "as": "সময়ৰ ক্ৰম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-aline",
+   "topic": "arrangement",
+   "t": {
+    "en": "Sitting in a row",
+    "as": "শাৰীত বহা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-around",
+   "topic": "arrangement",
+   "t": {
+    "en": "Sitting in a circle",
+    "as": "বৃত্তত বহা"
+   },
+   "pre": [
+    "r-aline"
+   ],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-amatch",
+   "topic": "arrangement",
+   "t": {
+    "en": "Match people to things",
+    "as": "ব্যক্তি আৰু বস্তু মিলোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-afixed",
+   "topic": "arrangement",
+   "t": {
+    "en": "Fixed facts first",
+    "as": "নিশ্চিত তথ্য আগতে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-codd",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "Odd days",
+    "as": "অতিৰিক্ত দিন"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-cdate",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "Dates across years",
+    "as": "বছৰৰ মাজৰ তাৰিখ"
+   },
+   "pre": [
+    "r-codd"
+   ],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-cangle",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "Clock angles",
+    "as": "ঘড়ীৰ কোণ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-cmeet",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "When hands meet",
+    "as": "কাঁটা লগ লগা সময়"
+   },
+   "pre": [
+    "r-cangle"
+   ],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q5"
+    }
+   ]
+  },
+  {
    "id": "r-pos",
    "topic": "alphabet",
    "t": {
@@ -2210,6 +2844,48 @@
    "t": {
     "en": "Forgetting that 0 cannot lead",
     "as": "আৰম্ভণিত 0 নহয় পাহৰা"
+   }
+  },
+  "r-m-gender": {
+   "skill": "r-bgender",
+   "t": {
+    "en": "Assuming gender from a name",
+    "as": "নামৰ পৰা লিংগ ধৰা"
+   }
+  },
+  "r-m-twice": {
+   "skill": "r-rtotal",
+   "t": {
+    "en": "Counting the person twice",
+    "as": "ব্যক্তিজনক দুবাৰ গণা"
+   }
+  },
+  "r-m-maybe": {
+   "skill": "r-afixed",
+   "t": {
+    "en": "Treating a possibility as a fact",
+    "as": "সম্ভাৱনাক তথ্য ধৰা"
+   }
+  },
+  "r-m-sidecircle": {
+   "skill": "r-around",
+   "t": {
+    "en": "Reversing left and right in a circle",
+    "as": "বৃত্তত বাওঁ-সোঁ ওলোটা"
+   }
+  },
+  "r-m-leap": {
+   "skill": "r-cdate",
+   "t": {
+    "en": "Ignoring the leap year",
+    "as": "অধিবৰ্ষ পাহৰা"
+   }
+  },
+  "r-m-hourhand": {
+   "skill": "r-cangle",
+   "t": {
+    "en": "Forgetting the hour hand moves",
+    "as": "ঘণ্টাৰ কাঁটা লৰে পাহৰা"
    }
   },
   "r-m-oppsum": {
