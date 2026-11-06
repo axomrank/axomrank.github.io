@@ -1,0 +1,1975 @@
+{
+ "id": "rs-13-calendar-clock",
+ "course": "reasoning",
+ "no": 13,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Calendar and clocks",
+  "as": "কেলেণ্ডাৰ আৰু ঘড়ী"
+ },
+ "reign": {
+  "en": "Odd days, leap years, angles",
+  "as": "অতিৰিক্ত দিন, অধিবৰ্ষ, কোণ"
+ },
+ "portrait": "reasoning/position.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Odd days",
+    "as": "অতিৰিক্ত দিন"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Days repeat every 7.",
+     "as": "দিন 7 ত ঘূৰি আহে।"
+    },
+    {
+     "en": "Only the remainder matters.",
+     "as": "কেৱল ভাগশেষৰ মূল্য আছে।"
+    },
+    {
+     "en": "Move forward by the remainder.",
+     "as": "ভাগশেষ আগবাঢ়া।"
+    },
+    {
+     "en": "Go backward by subtracting.",
+     "as": "বিয়োগেৰে পিছলৈ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs13.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "A week is a wheel",
+      "as": "সপ্তাহ এটা চকৰি"
+     },
+     "text": [
+      {
+       "en": "Seven days later is the same day. So 15 days is just 1 day ahead.",
+       "as": "সাত দিন পিছত একে বাৰ। গতিকে 15 দিন মানে 1 দিন আগ।"
+      }
+     ],
+     "widget": {
+      "kind": "oddday",
+      "start": 1
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "From Monday, go 3 days on.",
+        "as": "সোমবাৰৰ পৰা 3 দিন আগবাঢ়া।"
+       },
+       "goal": {
+        "day": 4
+       },
+       "then": {
+        "en": "Thursday. Now 10 days on is also Thursday.",
+        "as": "বৃহস্পতিবাৰ। 10 দিন পিছতো একে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Divide by seven",
+      "as": "7 ৰে হৰণ"
+     },
+     "text": [
+      {
+       "en": "Throw away whole weeks. Keep what is left.",
+       "as": "গোটা সপ্তাহ বাদ দিয়া। বাকীখিনি ৰাখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "45 days",
+        "as": "45 days"
+       },
+       {
+        "en": "45 ÷ 7 = 6 r 3",
+        "as": "45 ÷ 7 = 6 r 3"
+       },
+       {
+        "en": "3 ahead",
+        "as": "3 আগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs13.u1.q1",
+     "type": "explore",
+     "skill": "r-codd",
+     "q": {
+      "en": "Today is Monday. Which day comes in 15 days? Step the wheel using the remainder.",
+      "as": "আজি সোমবাৰ। 15 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+     },
+     "widget": {
+      "kind": "oddday",
+      "start": 1
+     },
+     "target": 2,
+     "answerText": {
+      "en": "Tuesday",
+      "as": "মঙ্গলবাৰ"
+     },
+     "why": {
+      "en": "15 leaves 1 after sevens, so Tuesday.",
+      "as": "15 ৰ ভাগশেষ 1, গতিকে মঙ্গলবাৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Today is Monday. Which day comes in 15 days? Step the wheel using the remainder.",
+        "as": "আজি সোমবাৰ। 15 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 1
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Tuesday",
+        "as": "মঙ্গলবাৰ"
+       },
+       "why": {
+        "en": "15 leaves 1 after sevens, so Tuesday.",
+        "as": "15 ৰ ভাগশেষ 1, গতিকে মঙ্গলবাৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Today is Wednesday. Which day comes in 30 days? Step the wheel using the remainder.",
+        "as": "আজি বুধবাৰ। 30 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 3
+       },
+       "target": 5,
+       "answerText": {
+        "en": "Friday",
+        "as": "শুক্ৰবাৰ"
+       },
+       "why": {
+        "en": "30 leaves 2 after sevens, so Friday.",
+        "as": "30 ৰ ভাগশেষ 2, গতিকে শুক্ৰবাৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Today is Friday. Which day comes in 50 days? Step the wheel using the remainder.",
+        "as": "আজি শুক্ৰবাৰ। 50 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 5
+       },
+       "target": 6,
+       "answerText": {
+        "en": "Saturday",
+        "as": "শনিবাৰ"
+       },
+       "why": {
+        "en": "50 leaves 1 after sevens, so Saturday.",
+        "as": "50 ৰ ভাগশেষ 1, গতিকে শনিবাৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Today is Sunday. Which day comes in 100 days? Step the wheel using the remainder.",
+        "as": "আজি দেওবাৰ। 100 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 0
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Tuesday",
+        "as": "মঙ্গলবাৰ"
+       },
+       "why": {
+        "en": "100 leaves 2 after sevens, so Tuesday.",
+        "as": "100 ৰ ভাগশেষ 2, গতিকে মঙ্গলবাৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u1.q2",
+     "type": "solve",
+     "skill": "r-codd",
+     "q": {
+      "en": "What is the remainder of 40 days after whole weeks?",
+      "as": "গোটা সপ্তাহ বাদ দিলে 40 দিনৰ ভাগশেষ কিমান?"
+     },
+     "answer": "5",
+     "why": {
+      "en": "40 ÷ 7 leaves 5.",
+      "as": "40 ÷ 7 ৰ ভাগশেষ 5।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the remainder of 40 days after whole weeks?",
+        "as": "গোটা সপ্তাহ বাদ দিলে 40 দিনৰ ভাগশেষ কিমান?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "40 ÷ 7 leaves 5.",
+        "as": "40 ÷ 7 ৰ ভাগশেষ 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the remainder of 66 days after whole weeks?",
+        "as": "গোটা সপ্তাহ বাদ দিলে 66 দিনৰ ভাগশেষ কিমান?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "66 ÷ 7 leaves 3.",
+        "as": "66 ÷ 7 ৰ ভাগশেষ 3।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the remainder of 92 days after whole weeks?",
+        "as": "গোটা সপ্তাহ বাদ দিলে 92 দিনৰ ভাগশেষ কিমান?"
+       },
+       "answer": "1",
+       "why": {
+        "en": "92 ÷ 7 leaves 1.",
+        "as": "92 ÷ 7 ৰ ভাগশেষ 1।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u1.q3",
+     "type": "tf",
+     "skill": "r-codd",
+     "s": {
+      "en": "21 days after a Friday is a Friday.",
+      "as": "শুক্ৰবাৰৰ 21 দিন পিছত শুক্ৰবাৰ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "21 is three whole weeks.",
+      "as": "21 মানে তিনি সপ্তাহ।"
+     }
+    },
+    {
+     "id": "rs13.u1.q4",
+     "type": "match",
+     "skill": "r-codd",
+     "q": {
+      "en": "From Sunday, match",
+      "as": "দেওবাৰৰ পৰা মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "8 days on",
+        "as": "8 দিন পিছত"
+       },
+       {
+        "en": "Monday",
+        "as": "সোমবাৰ"
+       }
+      ],
+      [
+       {
+        "en": "16 days on",
+        "as": "16 দিন পিছত"
+       },
+       {
+        "en": "Tuesday",
+        "as": "মঙ্গলবাৰ"
+       }
+      ],
+      [
+       {
+        "en": "24 days on",
+        "as": "24 দিন পিছত"
+       },
+       {
+        "en": "Wednesday",
+        "as": "বুধবাৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Use remainders.",
+      "as": "ভাগশেষ ব্যৱহাৰ।"
+     }
+    },
+    {
+     "id": "rs13.u1.q5",
+     "type": "order",
+     "skill": "r-codd",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Count days",
+       "as": "দিন গণা"
+      },
+      {
+       "en": "Divide by 7",
+       "as": "7 ৰে হৰণ"
+      },
+      {
+       "en": "Keep the remainder",
+       "as": "ভাগশেষ ৰাখা"
+      },
+      {
+       "en": "Move ahead",
+       "as": "আগবাঢ়া"
+      }
+     ],
+     "why": {
+      "en": "Remainder decides.",
+      "as": "ভাগশেষে ঠিক কৰে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Across years",
+    "as": "বছৰে বছৰে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "An ordinary year has 1 odd day.",
+     "as": "সাধাৰণ বছৰত 1 অতিৰিক্ত দিন।"
+    },
+    {
+     "en": "A leap year has 2.",
+     "as": "অধিবৰ্ষত 2।"
+    },
+    {
+     "en": "Leap years divide by 4.",
+     "as": "অধিবৰ্ষ 4 ৰে হৰণ হয়।"
+    },
+    {
+     "en": "Century years need 400.",
+     "as": "শতাব্দী বছৰত 400 লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs13.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Why a year shifts the day",
+      "as": "বছৰে বাৰ কিয় সলায়"
+     },
+     "text": [
+      {
+       "en": "365 days is 52 weeks and 1 day, so dates drift one day each year.",
+       "as": "365 দিন মানে 52 সপ্তাহ আৰু 1 দিন, সেয়ে তাৰিখ এদিন আগবাঢ়ে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "365 ÷ 7",
+        "as": "365 ÷ 7"
+       },
+       {
+        "en": "52 r 1",
+        "as": "52 r 1"
+       },
+       {
+        "en": "1 day on",
+        "as": "1 দিন আগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs13.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Spotting a leap year",
+      "as": "অধিবৰ্ষ চিনা"
+     },
+     "text": [
+      {
+       "en": "2024 divides by 4. 1900 does not divide by 400, so it is not leap. 2000 is.",
+       "as": "2024, 4 ৰে হৰণ হয়। 1900, 400 ৰে নহয়, গতিকে অধিবৰ্ষ নহয়। 2000 অধিবৰ্ষ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "2024: leap",
+        "as": "2024: অধিবৰ্ষ"
+       },
+       {
+        "en": "1900: not leap",
+        "as": "1900: নহয়"
+       },
+       {
+        "en": "2000: leap",
+        "as": "2000: অধিবৰ্ষ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs13.u2.q1",
+     "type": "explore",
+     "skill": "r-cdate",
+     "q": {
+      "en": "A date falls on Monday. On which day is it one year later, with no 29 February in between?",
+      "as": "এটা তাৰিখ সোমবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী নাথাকিলে এবছৰ পিছত কি বাৰ?"
+     },
+     "widget": {
+      "kind": "oddday",
+      "start": 1
+     },
+     "target": 2,
+     "answerText": {
+      "en": "Tuesday",
+      "as": "মঙ্গলবাৰ"
+     },
+     "traps": [
+      {
+       "val": 3,
+       "tag": "r-m-leap",
+       "why": {
+        "en": "February has 29 days in a leap year.",
+        "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "An ordinary year adds 1 day.",
+      "as": "সাধাৰণ বছৰে 1 দিন আগবঢ়ায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A date falls on Monday. On which day is it one year later, with no 29 February in between?",
+        "as": "এটা তাৰিখ সোমবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী নাথাকিলে এবছৰ পিছত কি বাৰ?"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 1
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Tuesday",
+        "as": "মঙ্গলবাৰ"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-leap",
+         "why": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "An ordinary year adds 1 day.",
+        "as": "সাধাৰণ বছৰে 1 দিন আগবঢ়ায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A date falls on Tuesday. On which day is it one year later, with a 29 February in between?",
+        "as": "এটা তাৰিখ মঙ্গলবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী থাকিলে এবছৰ পিছত কি বাৰ?"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 2
+       },
+       "target": 4,
+       "answerText": {
+        "en": "Thursday",
+        "as": "বৃহস্পতিবাৰ"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-leap",
+         "why": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A leap year adds 2 days.",
+        "as": "অধিবৰ্ষে 2 দিন আগবঢ়ায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A date falls on Friday. On which day is it one year later, with no 29 February in between?",
+        "as": "এটা তাৰিখ শুক্ৰবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী নাথাকিলে এবছৰ পিছত কি বাৰ?"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 5
+       },
+       "target": 6,
+       "answerText": {
+        "en": "Saturday",
+        "as": "শনিবাৰ"
+       },
+       "traps": [
+        {
+         "val": 0,
+         "tag": "r-m-leap",
+         "why": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "An ordinary year adds 1 day.",
+        "as": "সাধাৰণ বছৰে 1 দিন আগবঢ়ায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A date falls on Thursday. On which day is it one year later, with a 29 February in between?",
+        "as": "এটা তাৰিখ বৃহস্পতিবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী থাকিলে এবছৰ পিছত কি বাৰ?"
+       },
+       "widget": {
+        "kind": "oddday",
+        "start": 4
+       },
+       "target": 6,
+       "answerText": {
+        "en": "Saturday",
+        "as": "শনিবাৰ"
+       },
+       "traps": [
+        {
+         "val": 5,
+         "tag": "r-m-leap",
+         "why": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A leap year adds 2 days.",
+        "as": "অধিবৰ্ষে 2 দিন আগবঢ়ায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u2.q2",
+     "type": "tf",
+     "skill": "r-cdate",
+     "s": {
+      "en": "1900 was a leap year.",
+      "as": "1900 অধিবৰ্ষ আছিল।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Century years must divide by 400.",
+      "as": "শতাব্দী বছৰ 400 ৰে হৰণ হ'ব লাগে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-leap",
+       "why": {
+        "en": "February has 29 days in a leap year.",
+        "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u2.q3",
+     "type": "match",
+     "skill": "r-cdate",
+     "q": {
+      "en": "Match the year to its kind",
+      "as": "বছৰক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2028",
+        "as": "2028"
+       },
+       {
+        "en": "Leap",
+        "as": "অধিবৰ্ষ"
+       }
+      ],
+      [
+       {
+        "en": "2027",
+        "as": "2027"
+       },
+       {
+        "en": "Ordinary",
+        "as": "সাধাৰণ"
+       }
+      ],
+      [
+       {
+        "en": "2100",
+        "as": "2100"
+       },
+       {
+        "en": "Century, not leap",
+        "as": "শতাব্দী, অধিবৰ্ষ নহয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Test by 4, then 400.",
+      "as": "4, তাৰ পিছত 400।"
+     }
+    },
+    {
+     "id": "rs13.u2.q4",
+     "type": "solve",
+     "skill": "r-cdate",
+     "q": {
+      "en": "How many leap years lie from 2001 to 2020, including both?",
+      "as": "2001 ৰ পৰা 2020 লৈ (দুয়োটা ধৰি) অধিবৰ্ষ কিমান?"
+     },
+     "answer": "5",
+     "why": {
+      "en": "Count the years that divide by 4.",
+      "as": "4 ৰে হৰণ হোৱা বছৰ গণা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many leap years lie from 2001 to 2020, including both?",
+        "as": "2001 ৰ পৰা 2020 লৈ (দুয়োটা ধৰি) অধিবৰ্ষ কিমান?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Count the years that divide by 4.",
+        "as": "4 ৰে হৰণ হোৱা বছৰ গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many leap years lie from 2010 to 2030, including both?",
+        "as": "2010 ৰ পৰা 2030 লৈ (দুয়োটা ধৰি) অধিবৰ্ষ কিমান?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Count the years that divide by 4.",
+        "as": "4 ৰে হৰণ হোৱা বছৰ গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many leap years lie from 2000 to 2012, including both?",
+        "as": "2000 ৰ পৰা 2012 লৈ (দুয়োটা ধৰি) অধিবৰ্ষ কিমান?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Count the years that divide by 4.",
+        "as": "4 ৰে হৰণ হোৱা বছৰ গণা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u2.q5",
+     "type": "stepwise",
+     "skill": "r-cdate",
+     "q": {
+      "en": "Is 2024 a leap year?",
+      "as": "2024 অধিবৰ্ষ নেকি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Century year?",
+        "as": "শতাব্দী বছৰ?"
+       },
+       "options": [
+        {
+         "en": "Cannot tell",
+         "as": "ক'ব নোৱাৰি"
+        },
+        {
+         "en": "Yes",
+         "as": "হয়"
+        },
+        {
+         "en": "No",
+         "as": "নহয়"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Ends in 00?",
+        "as": "শেষত 00?"
+       }
+      },
+      {
+       "ask": {
+        "en": "Leap?",
+        "as": "অধিবৰ্ষ?"
+       },
+       "options": [
+        {
+         "en": "Yes",
+         "as": "হয়"
+        },
+        {
+         "en": "No",
+         "as": "নহয়"
+        },
+        {
+         "en": "Cannot tell",
+         "as": "ক'ব নোৱাৰি"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "February has 29 days in a leap year.",
+        "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+       },
+       "tag": "r-m-leap"
+      }
+     ],
+     "why": {
+      "en": "Test by 4, or by 400 for a century.",
+      "as": "4 ৰে, শতাব্দী হ'লে 400 ৰে পৰীক্ষা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Is 2024 a leap year?",
+        "as": "2024 অধিবৰ্ষ নেকি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Century year?",
+          "as": "শতাব্দী বছৰ?"
+         },
+         "options": [
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          },
+          {
+           "en": "Yes",
+           "as": "হয়"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Ends in 00?",
+          "as": "শেষত 00?"
+         }
+        },
+        {
+         "ask": {
+          "en": "Leap?",
+          "as": "অধিবৰ্ষ?"
+         },
+         "options": [
+          {
+           "en": "Yes",
+           "as": "হয়"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         },
+         "tag": "r-m-leap"
+        }
+       ],
+       "why": {
+        "en": "Test by 4, or by 400 for a century.",
+        "as": "4 ৰে, শতাব্দী হ'লে 400 ৰে পৰীক্ষা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Is 1900 a leap year?",
+        "as": "1900 অধিবৰ্ষ নেকি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Century year?",
+          "as": "শতাব্দী বছৰ?"
+         },
+         "options": [
+          {
+           "en": "Yes",
+           "as": "হয়"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Ends in 00?",
+          "as": "শেষত 00?"
+         }
+        },
+        {
+         "ask": {
+          "en": "Leap?",
+          "as": "অধিবৰ্ষ?"
+         },
+         "options": [
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          },
+          {
+           "en": "Yes",
+           "as": "হয়"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         },
+         "tag": "r-m-leap"
+        }
+       ],
+       "why": {
+        "en": "Test by 4, or by 400 for a century.",
+        "as": "4 ৰে, শতাব্দী হ'লে 400 ৰে পৰীক্ষা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Is 2000 a leap year?",
+        "as": "2000 অধিবৰ্ষ নেকি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Century year?",
+          "as": "শতাব্দী বছৰ?"
+         },
+         "options": [
+          {
+           "en": "Yes",
+           "as": "হয়"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Ends in 00?",
+          "as": "শেষত 00?"
+         }
+        },
+        {
+         "ask": {
+          "en": "Leap?",
+          "as": "অধিবৰ্ষ?"
+         },
+         "options": [
+          {
+           "en": "Yes",
+           "as": "হয়"
+          },
+          {
+           "en": "No",
+           "as": "নহয়"
+          },
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "February has 29 days in a leap year.",
+          "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+         },
+         "tag": "r-m-leap"
+        }
+       ],
+       "why": {
+        "en": "Test by 4, or by 400 for a century.",
+        "as": "4 ৰে, শতাব্দী হ'লে 400 ৰে পৰীক্ষা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Angles on a clock",
+    "as": "ঘড়ীৰ কোণ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "The minute hand moves 6° a minute.",
+     "as": "মিনিটৰ কাঁটা মিনিটত 6°।"
+    },
+    {
+     "en": "The hour hand moves 0.5° a minute.",
+     "as": "ঘণ্টাৰ কাঁটা মিনিটত 0.5°।"
+    },
+    {
+     "en": "Angle = |30H − 5.5M|.",
+     "as": "কোণ = |30H − 5.5M|।"
+    },
+    {
+     "en": "Take the smaller of the two angles.",
+     "as": "দুটাৰ সৰুটো লোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs13.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "The hour hand creeps",
+      "as": "ঘণ্টাৰ কাঁটা লাহে লৰে"
+     },
+     "text": [
+      {
+       "en": "At 3:00 the hands are 90° apart. Run the clock and watch the hour hand creep.",
+       "as": "3:00 ত কোণ 90°। ঘড়ী চলাই ঘণ্টাৰ কাঁটা চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "hands",
+      "hour": 3,
+      "angle": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Run to 3:30.",
+        "as": "3:30 লৈ চলোৱা।"
+       },
+       "goal": {
+        "min": 30
+       },
+       "then": {
+        "en": "The angle is 75°, not 90°, because the hour hand moved 15°.",
+        "as": "কোণ 75°, 90° নহয়, কাৰণ ঘণ্টাৰ কাঁটা 15° গ'ল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "One formula",
+      "as": "এটা সূত্ৰ"
+     },
+     "text": [
+      {
+       "en": "Each hour mark is 30°, and the gap closes at 5.5° a minute.",
+       "as": "প্ৰতি ঘণ্টা 30°, ব্যৱধান মিনিটত 5.5° কমে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "30 × H",
+        "as": "30 × H"
+       },
+       {
+        "en": "5.5 × M",
+        "as": "5.5 × M"
+       },
+       {
+        "en": "Difference",
+        "as": "পাৰ্থক্য"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs13.u3.q1",
+     "type": "solve",
+     "skill": "r-cangle",
+     "q": {
+      "en": "What is the angle between the hands at 3:30?",
+      "as": "3:30 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+     },
+     "answer": "75",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "|30 × 3 − 5.5 × 30| = 75.",
+      "as": "|30 × 3 − 5.5 × 30| = 75।"
+     },
+     "traps": [
+      {
+       "ans": "90",
+       "tag": "r-m-hourhand",
+       "why": {
+        "en": "The hour hand also moves, at half a degree a minute.",
+        "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What is the angle between the hands at 3:30?",
+        "as": "3:30 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+       },
+       "answer": "75",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "|30 × 3 − 5.5 × 30| = 75.",
+        "as": "|30 × 3 − 5.5 × 30| = 75।"
+       },
+       "traps": [
+        {
+         "ans": "90",
+         "tag": "r-m-hourhand",
+         "why": {
+          "en": "The hour hand also moves, at half a degree a minute.",
+          "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the angle between the hands at 4:20?",
+        "as": "4:20 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "|30 × 4 − 5.5 × 20| = 10.",
+        "as": "|30 × 4 − 5.5 × 20| = 10।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "r-m-hourhand",
+         "why": {
+          "en": "The hour hand also moves, at half a degree a minute.",
+          "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the angle between the hands at 6:30?",
+        "as": "6:30 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "|30 × 6 − 5.5 × 30| = 15.",
+        "as": "|30 × 6 − 5.5 × 30| = 15।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "r-m-hourhand",
+         "why": {
+          "en": "The hour hand also moves, at half a degree a minute.",
+          "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the angle between the hands at 2:40?",
+        "as": "2:40 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+       },
+       "answer": "160",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "|30 × 2 − 5.5 × 40| = 160.",
+        "as": "|30 × 2 − 5.5 × 40| = 160।"
+       },
+       "traps": [
+        {
+         "ans": "180",
+         "tag": "r-m-hourhand",
+         "why": {
+          "en": "The hour hand also moves, at half a degree a minute.",
+          "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs13.u3.q2",
+     "type": "solve",
+     "skill": "r-cangle",
+     "q": {
+      "en": "What is the angle between the hands at exactly 2:00?",
+      "as": "ঠিক 2:00 ত কাঁটাৰ কোণ কিমান?"
+     },
+     "answer": "60",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "30° per hour mark.",
+      "as": "প্ৰতি ঘণ্টা 30°।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the angle between the hands at exactly 2:00?",
+        "as": "ঠিক 2:00 ত কাঁটাৰ কোণ কিমান?"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "30° per hour mark.",
+        "as": "প্ৰতি ঘণ্টা 30°।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the angle between the hands at exactly 5:00?",
+        "as": "ঠিক 5:00 ত কাঁটাৰ কোণ কিমান?"
+       },
+       "answer": "150",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "30° per hour mark.",
+        "as": "প্ৰতি ঘণ্টা 30°।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the angle between the hands at exactly 10:00?",
+        "as": "ঠিক 10:00 ত কাঁটাৰ কোণ কিমান?"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "30° per hour mark.",
+        "as": "প্ৰতি ঘণ্টা 30°।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u3.q3",
+     "type": "tf",
+     "skill": "r-cangle",
+     "s": {
+      "en": "At 6:30 the hands point the same way.",
+      "as": "6:30 ত কাঁটা দুটা একে ফালে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The hour hand has moved 15° past 6.",
+      "as": "ঘণ্টাৰ কাঁটা 6 ৰ পৰা 15° আগবাঢ়িছে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-hourhand",
+       "why": {
+        "en": "The hour hand also moves, at half a degree a minute.",
+        "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u3.q4",
+     "type": "match",
+     "skill": "r-cangle",
+     "q": {
+      "en": "Match the rate",
+      "as": "হাৰ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Minute hand",
+        "as": "মিনিটৰ কাঁটা"
+       },
+       {
+        "en": "6° / min",
+        "as": "6° / min"
+       }
+      ],
+      [
+       {
+        "en": "Hour hand",
+        "as": "ঘণ্টাৰ কাঁটা"
+       },
+       {
+        "en": "0.5° / min",
+        "as": "0.5° / min"
+       }
+      ],
+      [
+       {
+        "en": "Closing speed",
+        "as": "নিকা হাৰ"
+       },
+       {
+        "en": "5.5° / min",
+        "as": "5.5° / min"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Subtract the rates.",
+      "as": "হাৰ বিয়োগ।"
+     }
+    },
+    {
+     "id": "rs13.u3.q5",
+     "type": "order",
+     "skill": "r-cangle",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find 30 × H",
+       "as": "30 × H"
+      },
+      {
+       "en": "Find 5.5 × M",
+       "as": "5.5 × M"
+      },
+      {
+       "en": "Subtract",
+       "as": "বিয়োগ"
+      },
+      {
+       "en": "Take the smaller angle",
+       "as": "সৰু কোণ"
+      }
+     ],
+     "why": {
+      "en": "Formula, then smaller angle.",
+      "as": "সূত্ৰ, তাৰ পিছত সৰু কোণ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "When the hands meet",
+    "as": "কাঁটা লগ লগা সময়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Hands meet 11 times in 12 hours.",
+     "as": "12 ঘণ্টাত 11 বাৰ লগ লাগে।"
+    },
+    {
+     "en": "Hands meet 22 times a day.",
+     "as": "দিনত 22 বাৰ।"
+    },
+    {
+     "en": "They are opposite 22 times a day.",
+     "as": "দিনত 22 বাৰ বিপৰীত।"
+    },
+    {
+     "en": "A right angle occurs 44 times a day.",
+     "as": "দিনত 44 বাৰ সমকোণ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs13.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Meeting after three o'clock",
+      "as": "তিনিটাৰ পিছত সাক্ষাৎ"
+     },
+     "text": [
+      {
+       "en": "Run the clock from 3:00 until the hands nearly meet. It happens just after 3:16.",
+       "as": "3:00 ৰ পৰা কাঁটা ওচৰ নোহোৱালৈ চলোৱা। 3:16 ৰ অলপ পিছত।"
+      }
+     ],
+     "widget": {
+      "kind": "hands",
+      "hour": 3,
+      "angle": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Run to 3:16.",
+        "as": "3:16 লৈ চলোৱা।"
+       },
+       "goal": {
+        "min": 16
+       },
+       "then": {
+        "en": "The angle is only 2°. They meet moments later.",
+        "as": "কোণ মাত্ৰ 2°। অলপ পিছতে লগ লাগে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Why 11 and not 12",
+      "as": "12 নহয়, 11 কিয়"
+     },
+     "text": [
+      {
+       "en": "Between 11 and 1 they meet only once, at 12. So 12 hours hold 11 meetings.",
+       "as": "11 আৰু 1 ৰ মাজত এবাৰহে, 12 ত। গতিকে 12 ঘণ্টাত 11 বাৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "12 hours",
+        "as": "12 ঘণ্টা"
+       },
+       {
+        "en": "11 meetings",
+        "as": "11 সাক্ষাৎ"
+       },
+       {
+        "en": "24 hours: 22",
+        "as": "24 ঘণ্টা: 22"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs13.u4.q1",
+     "type": "explore",
+     "skill": "r-cmeet",
+     "q": {
+      "en": "Run the clock to the minute nearest when the hands first meet after 2:00.",
+      "as": "2:00 ৰ পিছত কাঁটা প্ৰথম লগ লগাৰ ওচৰৰ মিনিটলৈ চলোৱা।"
+     },
+     "widget": {
+      "kind": "hands",
+      "hour": 2,
+      "angle": true
+     },
+     "target": 11,
+     "answerText": {
+      "en": "2:11",
+      "as": "2:11"
+     },
+     "why": {
+      "en": "The gap closes at 5.5° a minute.",
+      "as": "ব্যৱধান মিনিটত 5.5° কমে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Run the clock to the minute nearest when the hands first meet after 2:00.",
+        "as": "2:00 ৰ পিছত কাঁটা প্ৰথম লগ লগাৰ ওচৰৰ মিনিটলৈ চলোৱা।"
+       },
+       "widget": {
+        "kind": "hands",
+        "hour": 2,
+        "angle": true
+       },
+       "target": 11,
+       "answerText": {
+        "en": "2:11",
+        "as": "2:11"
+       },
+       "why": {
+        "en": "The gap closes at 5.5° a minute.",
+        "as": "ব্যৱধান মিনিটত 5.5° কমে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Run the clock to the minute nearest when the hands first meet after 4:00.",
+        "as": "4:00 ৰ পিছত কাঁটা প্ৰথম লগ লগাৰ ওচৰৰ মিনিটলৈ চলোৱা।"
+       },
+       "widget": {
+        "kind": "hands",
+        "hour": 4,
+        "angle": true
+       },
+       "target": 22,
+       "answerText": {
+        "en": "4:22",
+        "as": "4:22"
+       },
+       "why": {
+        "en": "The gap closes at 5.5° a minute.",
+        "as": "ব্যৱধান মিনিটত 5.5° কমে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Run the clock to the minute nearest when the hands first meet after 5:00.",
+        "as": "5:00 ৰ পিছত কাঁটা প্ৰথম লগ লগাৰ ওচৰৰ মিনিটলৈ চলোৱা।"
+       },
+       "widget": {
+        "kind": "hands",
+        "hour": 5,
+        "angle": true
+       },
+       "target": 27,
+       "answerText": {
+        "en": "5:27",
+        "as": "5:27"
+       },
+       "why": {
+        "en": "The gap closes at 5.5° a minute.",
+        "as": "ব্যৱধান মিনিটত 5.5° কমে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u4.q2",
+     "type": "tf",
+     "skill": "r-cmeet",
+     "s": {
+      "en": "The hands meet 24 times a day.",
+      "as": "দিনত 24 বাৰ কাঁটা লগ লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 22 times.",
+      "as": "22 বাৰ।"
+     }
+    },
+    {
+     "id": "rs13.u4.q3",
+     "type": "match",
+     "skill": "r-cmeet",
+     "q": {
+      "en": "In 24 hours, match",
+      "as": "24 ঘণ্টাত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Hands together",
+        "as": "কাঁটা একেলগে"
+       },
+       {
+        "en": "22",
+        "as": "22"
+       }
+      ],
+      [
+       {
+        "en": "Hands opposite",
+        "as": "কাঁটা বিপৰীত"
+       },
+       {
+        "en": "22 more",
+        "as": "22 more"
+       }
+      ],
+      [
+       {
+        "en": "Right angles",
+        "as": "সমকোণ"
+       },
+       {
+        "en": "44",
+        "as": "44"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Know these three.",
+      "as": "তিনিটা মনত ৰাখা।"
+     }
+    },
+    {
+     "id": "rs13.u4.q4",
+     "type": "solve",
+     "skill": "r-cmeet",
+     "q": {
+      "en": "How many times do the hands meet in 12 hours?",
+      "as": "12 ঘণ্টাত কাঁটা কিমানবাৰ লগ লাগে?"
+     },
+     "answer": "11",
+     "why": {
+      "en": "11 times per 12 hours.",
+      "as": "12 ঘণ্টাত 11 বাৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many times do the hands meet in 12 hours?",
+        "as": "12 ঘণ্টাত কাঁটা কিমানবাৰ লগ লাগে?"
+       },
+       "answer": "11",
+       "why": {
+        "en": "11 times per 12 hours.",
+        "as": "12 ঘণ্টাত 11 বাৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many times do the hands meet in 24 hours?",
+        "as": "24 ঘণ্টাত কাঁটা কিমানবাৰ লগ লাগে?"
+       },
+       "answer": "22",
+       "why": {
+        "en": "11 times per 12 hours.",
+        "as": "12 ঘণ্টাত 11 বাৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many times do the hands meet in 48 hours?",
+        "as": "48 ঘণ্টাত কাঁটা কিমানবাৰ লগ লাগে?"
+       },
+       "answer": "44",
+       "why": {
+        "en": "11 times per 12 hours.",
+        "as": "12 ঘণ্টাত 11 বাৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs13.u4.q5",
+     "type": "order",
+     "skill": "r-cmeet",
+     "q": {
+      "en": "Smallest count first",
+      "as": "সৰু সংখ্যা আগতে"
+     },
+     "items": [
+      {
+       "en": "11",
+       "as": "11"
+      },
+      {
+       "en": "22",
+       "as": "22"
+      },
+      {
+       "en": "44",
+       "as": "44"
+      }
+     ],
+     "why": {
+      "en": "12 hours, 24 hours, right angles.",
+      "as": "12 ঘণ্টা, 24 ঘণ্টা, সমকোণ।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Calendar and clock test",
+   "as": "কেলেণ্ডাৰ আৰু ঘড়ীৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs13.t.q1",
+    "type": "explore",
+    "skill": "r-codd",
+    "q": {
+     "en": "Today is Tuesday. Which day comes in 26 days? Step the wheel using the remainder.",
+     "as": "আজি মঙ্গলবাৰ। 26 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+    },
+    "widget": {
+     "kind": "oddday",
+     "start": 2
+    },
+    "target": 0,
+    "answerText": {
+     "en": "Sunday",
+     "as": "দেওবাৰ"
+    },
+    "why": {
+     "en": "26 leaves 5 after sevens, so Sunday.",
+     "as": "26 ৰ ভাগশেষ 5, গতিকে দেওবাৰ।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Today is Tuesday. Which day comes in 26 days? Step the wheel using the remainder.",
+       "as": "আজি মঙ্গলবাৰ। 26 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+      },
+      "widget": {
+       "kind": "oddday",
+       "start": 2
+      },
+      "target": 0,
+      "answerText": {
+       "en": "Sunday",
+       "as": "দেওবাৰ"
+      },
+      "why": {
+       "en": "26 leaves 5 after sevens, so Sunday.",
+       "as": "26 ৰ ভাগশেষ 5, গতিকে দেওবাৰ।"
+      }
+     },
+     {
+      "q": {
+       "en": "Today is Saturday. Which day comes in 60 days? Step the wheel using the remainder.",
+       "as": "আজি শনিবাৰ। 60 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+      },
+      "widget": {
+       "kind": "oddday",
+       "start": 6
+      },
+      "target": 3,
+      "answerText": {
+       "en": "Wednesday",
+       "as": "বুধবাৰ"
+      },
+      "why": {
+       "en": "60 leaves 4 after sevens, so Wednesday.",
+       "as": "60 ৰ ভাগশেষ 4, গতিকে বুধবাৰ।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs13.t.q2",
+    "type": "explore",
+    "skill": "r-cdate",
+    "q": {
+     "en": "A date falls on Wednesday. On which day is it one year later, with no 29 February in between?",
+     "as": "এটা তাৰিখ বুধবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী নাথাকিলে এবছৰ পিছত কি বাৰ?"
+    },
+    "widget": {
+     "kind": "oddday",
+     "start": 3
+    },
+    "target": 4,
+    "answerText": {
+     "en": "Thursday",
+     "as": "বৃহস্পতিবাৰ"
+    },
+    "traps": [
+     {
+      "val": 5,
+      "tag": "r-m-leap",
+      "why": {
+       "en": "February has 29 days in a leap year.",
+       "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+      }
+     }
+    ],
+    "why": {
+     "en": "An ordinary year adds 1 day.",
+     "as": "সাধাৰণ বছৰে 1 দিন আগবঢ়ায়।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "A date falls on Wednesday. On which day is it one year later, with no 29 February in between?",
+       "as": "এটা তাৰিখ বুধবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী নাথাকিলে এবছৰ পিছত কি বাৰ?"
+      },
+      "widget": {
+       "kind": "oddday",
+       "start": 3
+      },
+      "target": 4,
+      "answerText": {
+       "en": "Thursday",
+       "as": "বৃহস্পতিবাৰ"
+      },
+      "traps": [
+       {
+        "val": 5,
+        "tag": "r-m-leap",
+        "why": {
+         "en": "February has 29 days in a leap year.",
+         "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+        }
+       }
+      ],
+      "why": {
+       "en": "An ordinary year adds 1 day.",
+       "as": "সাধাৰণ বছৰে 1 দিন আগবঢ়ায়।"
+      }
+     },
+     {
+      "q": {
+       "en": "A date falls on Sunday. On which day is it one year later, with a 29 February in between?",
+       "as": "এটা তাৰিখ দেওবাৰ। মাজত ২৯ ফেব্ৰুৱাৰী থাকিলে এবছৰ পিছত কি বাৰ?"
+      },
+      "widget": {
+       "kind": "oddday",
+       "start": 0
+      },
+      "target": 2,
+      "answerText": {
+       "en": "Tuesday",
+       "as": "মঙ্গলবাৰ"
+      },
+      "traps": [
+       {
+        "val": 1,
+        "tag": "r-m-leap",
+        "why": {
+         "en": "February has 29 days in a leap year.",
+         "as": "অধিবৰ্ষত ফেব্ৰুৱাৰী 29 দিনৰ।"
+        }
+       }
+      ],
+      "why": {
+       "en": "A leap year adds 2 days.",
+       "as": "অধিবৰ্ষে 2 দিন আগবঢ়ায়।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs13.t.q3",
+    "type": "solve",
+    "skill": "r-cangle",
+    "q": {
+     "en": "What is the angle between the hands at 9:00?",
+     "as": "9:00 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+    },
+    "answer": "90",
+    "suffix": {
+     "en": "°",
+     "as": "°"
+    },
+    "why": {
+     "en": "|30 × 9 − 5.5 × 0| = 90.",
+     "as": "|30 × 9 − 5.5 × 0| = 90।"
+    },
+    "traps": [
+     {
+      "ans": "270",
+      "tag": "r-m-hourhand",
+      "why": {
+       "en": "The hour hand also moves, at half a degree a minute.",
+       "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "What is the angle between the hands at 9:00?",
+       "as": "9:00 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+      },
+      "answer": "90",
+      "suffix": {
+       "en": "°",
+       "as": "°"
+      },
+      "why": {
+       "en": "|30 × 9 − 5.5 × 0| = 90.",
+       "as": "|30 × 9 − 5.5 × 0| = 90।"
+      },
+      "traps": [
+       {
+        "ans": "270",
+        "tag": "r-m-hourhand",
+        "why": {
+         "en": "The hour hand also moves, at half a degree a minute.",
+         "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "What is the angle between the hands at 3:40?",
+       "as": "3:40 ত কাঁটাৰ মাজৰ কোণ কিমান?"
+      },
+      "answer": "130",
+      "suffix": {
+       "en": "°",
+       "as": "°"
+      },
+      "why": {
+       "en": "|30 × 3 − 5.5 × 40| = 130.",
+       "as": "|30 × 3 − 5.5 × 40| = 130।"
+      },
+      "traps": [
+       {
+        "ans": "150",
+        "tag": "r-m-hourhand",
+        "why": {
+         "en": "The hour hand also moves, at half a degree a minute.",
+         "as": "ঘণ্টাৰ কাঁটাও লৰে, মিনিটত আধা ডিগ্ৰী।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs13.t.q4",
+    "type": "tf",
+    "skill": "r-cdate",
+    "s": {
+     "en": "2000 was a leap year.",
+     "as": "2000 অধিবৰ্ষ আছিল।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It divides by 400.",
+     "as": "ই 400 ৰে হৰণ হয়।"
+    }
+   },
+   {
+    "id": "rs13.t.q5",
+    "type": "tf",
+    "skill": "r-cmeet",
+    "s": {
+     "en": "Hands meet 11 times in 12 hours.",
+     "as": "12 ঘণ্টাত 11 বাৰ লগ লাগে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Not 12.",
+     "as": "12 নহয়।"
+    }
+   },
+   {
+    "id": "rs13.t.q6",
+    "type": "tf",
+    "skill": "r-codd",
+    "s": {
+     "en": "14 days after Tuesday is Tuesday.",
+     "as": "মঙ্গলবাৰৰ 14 দিন পিছত মঙ্গলবাৰ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Two weeks.",
+     "as": "দুই সপ্তাহ।"
+    }
+   }
+  ]
+ }
+}

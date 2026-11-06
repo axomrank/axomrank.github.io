@@ -1,27 +1,52 @@
-# Repository cleanup audit
+# Repository cleanup
 
-Audited 2026-11-02 for the experience revamp. Deletion is limited to files
-whose purpose and ownership are clear.
+The repository keeps what the hosted app, its build and checks, and future
+lesson work need. Everything else lives in git history.
 
-## Removed
+## Restoring something
 
-- Ignored `.playwright-cli/` snapshots and console logs from earlier browser
-  runs. They are generated verification artifacts, not site content.
-- Ignored Python `__pycache__/` files under `scripts/` and `docs/authoring/`.
-  Python recreates these on demand.
+Every file removed here is in commit `6df7725`:
 
-## Preserved intentionally
+```bash
+git checkout 6df7725 -- docs/authoring
+```
 
-- Untracked `output/`, including `output/practice-audit/`, and untracked
-  `scripts/preview_drafts.py`: user-owned material. `output/` is ignored so
-  future reports do not enter commits accidentally.
-- `private/`: user-owned local source material and drafts.
-- `docs/authoring/pre-unification/`: archived course and question-bank
-  snapshots used to trace the unification and permanent ids.
-- One-time authoring/import scripts: not loaded by the PWA, but kept for
-  provenance and reproducibility until a separate dependency audit proves
-  they can be archived or removed safely.
-- `content/courses/ahom-kings.json`, its question bank and optional lessons:
-  saved-link and learner-progress compatibility still use them.
+Replace the path with whatever you need.
 
-No published lesson, exercise, source register, image or user file was removed.
+## Removed from the repository (2026-11-06)
+
+| Path | What it was |
+|---|---|
+| `scripts/archive/` | Finished Assam History migrations and helpers |
+| `docs/authoring/` | Briefs and scripts that created released lessons, plus pre-unification snapshots. No live script used them, and rerunning them could reset released courses. |
+| `docs/GLASS-UI.md` | Verification log for the finished interface change |
+| `docs/research/` process logs | `css-only-image-plan.json`, `css-only-generation-progress.json`, `css-art-corrections.json`, `generic-art-library-audit.csv` and `.md`, `choice-normalisation.json`, `history-unification.json`, `integrated-history-index.json` |
+| 62 images in `content/media/` (1.8 MB) | Files whose names appear nowhere in shipped content |
+| Ignored `.playwright-cli/`, `__pycache__/`, `.wrangler/` | Generated caches |
+
+## Removed with the interface redesign (2026-11-06)
+
+- `content/media/interface/brahmaputra-glass.webp` and its thumbnail: replaced by
+  `axom-river.webp`, built from it. See `docs/research/glass-interface-art.md`.
+- The exercise-book page styling in `app/math.css`: Mathematics and Reasoning now use
+  the glass theme. Their scenes and widgets stayed.
+- The dark-mode branches of `app/app.css` and `app/glass.css`: the interface is one
+  light theme painted over the river.
+
+## Kept on purpose
+
+- `docs/research/` source and picture registers: the licence and attribution
+  record for pictures that still ship. The checks also read the Constitution
+  register, and the course documents cite the others.
+- Identical images in different lesson folders (3 MB): each is in use, and merging
+  them would mean editing published lessons.
+- `content/courses/ahom-kings.json`, its bank and optional lessons: saved links and
+  learner progress depend on them.
+- `private/` and `output/`: user-owned, on neither host, and not recoverable
+  from git.
+- `scripts/preview_drafts.py`: user-owned draft preview tool.
+
+## Known issue
+
+`scripts/build_india_map.py` cannot run, because `world.json` survives only in
+the Trash. `content/maps/india.json` itself is intact.

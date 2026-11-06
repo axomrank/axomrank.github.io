@@ -1,0 +1,2133 @@
+{
+ "id": "rs-10-blood-relations",
+ "course": "reasoning",
+ "no": 10,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Blood relations",
+  "as": "তেজৰ সম্পৰ্ক"
+ },
+ "reign": {
+  "en": "Generations, gender, coded relations",
+  "as": "প্ৰজন্ম, লিংগ, সংকেত"
+ },
+ "portrait": "reasoning/position.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Draw the generations",
+    "as": "প্ৰজন্ম আঁকা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Parents sit one level above you.",
+     "as": "পিতৃ-মাতৃ এক স্তৰ ওপৰত।"
+    },
+    {
+     "en": "Siblings sit on your level.",
+     "as": "ভাই-ভনী তোমাৰ স্তৰত।"
+    },
+    {
+     "en": "Children sit one level below.",
+     "as": "সন্তান এক স্তৰ তলত।"
+    },
+    {
+     "en": "Start from the last name and work back.",
+     "as": "শেষৰ নামৰ পৰা উভতি আহা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs10.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "A family is a ladder",
+      "as": "পৰিয়াল এখন জখলা"
+     },
+     "text": [
+      {
+       "en": "Every relation is a move up, down or sideways. Climb the ladder to your grandfather.",
+       "as": "প্ৰতিটো সম্পৰ্ক ওপৰ, তল বা কাষলৈ যোৱা। জখলাৰে ককালৈ উঠা।"
+      }
+     ],
+     "widget": {
+      "kind": "tree"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Go to your parents' level.",
+        "as": "পিতৃ-মাতৃৰ স্তৰলৈ যোৱা।"
+       },
+       "goal": {
+        "gen": 1
+       },
+       "then": {
+        "en": "One step up.",
+        "as": "এক খোজ ওপৰ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Go to your grandparents' level.",
+        "as": "আজোককাৰ স্তৰলৈ যোৱা।"
+       },
+       "goal": {
+        "gen": 2
+       },
+       "then": {
+        "en": "Two steps up.",
+        "as": "দুই খোজ ওপৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Say it from the end",
+      "as": "শেষৰ পৰা কোৱা"
+     },
+     "text": [
+      {
+       "en": "'My father's sister's son' reads easiest backward: son, of sister, of father.",
+       "as": "'মোৰ দেউতাৰ ভনীয়েকৰ পুতেক' শেষৰ পৰা পঢ়াই সহজ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "My father",
+        "as": "মোৰ দেউতা"
+       },
+       {
+        "en": "His sister",
+        "as": "তেওঁৰ ভনী"
+       },
+       {
+        "en": "Her son",
+        "as": "তেওঁৰ পুতেক"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u1.q1",
+     "type": "explore",
+     "skill": "r-bgen",
+     "q": {
+      "en": "Move to your mother's father.",
+      "as": "তোমাৰ মাকৰ দেউতাকলৈ যোৱা।"
+     },
+     "widget": {
+      "kind": "tree"
+     },
+     "target": 2,
+     "answerText": {
+      "en": "2 generation(s) up",
+      "as": "2 প্ৰজন্ম ওপৰত"
+     },
+     "why": {
+      "en": "Two levels up.",
+      "as": "দুই স্তৰ ওপৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Move to your mother's father.",
+        "as": "তোমাৰ মাকৰ দেউতাকলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2 generation(s) up",
+        "as": "2 প্ৰজন্ম ওপৰত"
+       },
+       "why": {
+        "en": "Two levels up.",
+        "as": "দুই স্তৰ ওপৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Move to your son's son.",
+        "as": "তোমাৰ পুতেকৰ পুতেকলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": -2,
+       "answerText": {
+        "en": "2 generation(s) down",
+        "as": "2 প্ৰজন্ম তলত"
+       },
+       "why": {
+        "en": "Two levels down.",
+        "as": "দুই স্তৰ তল।"
+       }
+      },
+      {
+       "q": {
+        "en": "Move to your father's brother.",
+        "as": "তোমাৰ দেউতাকৰ ককায়েকলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "1 generation(s) up",
+        "as": "1 প্ৰজন্ম ওপৰত"
+       },
+       "why": {
+        "en": "A sibling stays on the parent's level.",
+        "as": "ভাই-ভনী পিতৃৰ স্তৰতে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u1.q2",
+     "type": "tf",
+     "skill": "r-bgen",
+     "s": {
+      "en": "Your father's sister's son is on your generation.",
+      "as": "তোমাৰ দেউতাকৰ ভনীয়েকৰ পুতেক তোমাৰ প্ৰজন্মৰ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Up one, sideways, down one.",
+      "as": "এক ওপৰ, কাষ, এক তল।"
+     }
+    },
+    {
+     "id": "rs10.u1.q3",
+     "type": "match",
+     "skill": "r-bgen",
+     "q": {
+      "en": "Match the relation to the level",
+      "as": "সম্পৰ্কক স্তৰৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Grandmother",
+        "as": "আইতা"
+       },
+       {
+        "en": "+2",
+        "as": "+2"
+       }
+      ],
+      [
+       {
+        "en": "Uncle",
+        "as": "খুড়া"
+       },
+       {
+        "en": "+1",
+        "as": "+1"
+       }
+      ],
+      [
+       {
+        "en": "Cousin",
+        "as": "সম্পৰ্কীয় ভাই"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       }
+      ],
+      [
+       {
+        "en": "Son",
+        "as": "পুতেক"
+       },
+       {
+        "en": "−1",
+        "as": "−1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Count the moves.",
+      "as": "খোজ গণা।"
+     }
+    },
+    {
+     "id": "rs10.u1.q4",
+     "type": "stepwise",
+     "skill": "r-bgen",
+     "q": {
+      "en": "Who is your mother's brother's son to you?",
+      "as": "তোমাৰ মাকৰ ককায়েকৰ পুতেক তোমাৰ কি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your mother's brother?",
+        "as": "মাকৰ ককায়েক?"
+       },
+       "options": [
+        {
+         "en": "Brother",
+         "as": "ককায়েক"
+        },
+        {
+         "en": "Father",
+         "as": "দেউতাক"
+        },
+        {
+         "en": "Uncle",
+         "as": "মোমায়েক"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "He is on the parents' level.",
+        "as": "তেওঁ পিতৃৰ স্তৰত।"
+       }
+      },
+      {
+       "ask": {
+        "en": "His son?",
+        "as": "তেওঁৰ পুতেক?"
+       },
+       "options": [
+        {
+         "en": "Cousin",
+         "as": "সম্পৰ্কীয় ভাই"
+        },
+        {
+         "en": "Uncle",
+         "as": "খুড়া"
+        },
+        {
+         "en": "Nephew",
+         "as": "ভতিজা"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "One down from the uncle.",
+        "as": "মোমায়েকৰ পৰা এক তল।"
+       }
+      }
+     ],
+     "why": {
+      "en": "He is your cousin.",
+      "as": "তেওঁ সম্পৰ্কীয় ভাই।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Who is your mother's brother's son to you?",
+        "as": "তোমাৰ মাকৰ ককায়েকৰ পুতেক তোমাৰ কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your mother's brother?",
+          "as": "মাকৰ ককায়েক?"
+         },
+         "options": [
+          {
+           "en": "Brother",
+           "as": "ককায়েক"
+          },
+          {
+           "en": "Father",
+           "as": "দেউতাক"
+          },
+          {
+           "en": "Uncle",
+           "as": "মোমায়েক"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "He is on the parents' level.",
+          "as": "তেওঁ পিতৃৰ স্তৰত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "His son?",
+          "as": "তেওঁৰ পুতেক?"
+         },
+         "options": [
+          {
+           "en": "Cousin",
+           "as": "সম্পৰ্কীয় ভাই"
+          },
+          {
+           "en": "Uncle",
+           "as": "খুড়া"
+          },
+          {
+           "en": "Nephew",
+           "as": "ভতিজা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "One down from the uncle.",
+          "as": "মোমায়েকৰ পৰা এক তল।"
+         }
+        }
+       ],
+       "why": {
+        "en": "He is your cousin.",
+        "as": "তেওঁ সম্পৰ্কীয় ভাই।"
+       }
+      },
+      {
+       "q": {
+        "en": "Who is your father's father's son, if not your father?",
+        "as": "তোমাৰ দেউতাকৰ দেউতাকৰ পুতেক, দেউতাক নহ'লে কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your father's father?",
+          "as": "দেউতাকৰ দেউতাক?"
+         },
+         "options": [
+          {
+           "en": "Grandfather",
+           "as": "ককা"
+          },
+          {
+           "en": "Uncle",
+           "as": "খুড়া"
+          },
+          {
+           "en": "Brother",
+           "as": "ককায়েক"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Two levels up.",
+          "as": "দুই স্তৰ ওপৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "His other son?",
+          "as": "তেওঁৰ আন পুতেক?"
+         },
+         "options": [
+          {
+           "en": "Father",
+           "as": "দেউতাক"
+          },
+          {
+           "en": "Cousin",
+           "as": "সম্পৰ্কীয় ভাই"
+          },
+          {
+           "en": "Uncle",
+           "as": "খুড়া"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Your father's brother.",
+          "as": "দেউতাকৰ ভাই।"
+         }
+        }
+       ],
+       "why": {
+        "en": "He is your uncle.",
+        "as": "তেওঁ খুড়া।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u1.q5",
+     "type": "order",
+     "skill": "r-bgen",
+     "q": {
+      "en": "Oldest level to youngest",
+      "as": "ওপৰৰ স্তৰৰ পৰা তলৰ"
+     },
+     "items": [
+      {
+       "en": "Grandfather",
+       "as": "ককা"
+      },
+      {
+       "en": "Father",
+       "as": "দেউতা"
+      },
+      {
+       "en": "Me",
+       "as": "মই"
+      },
+      {
+       "en": "Son",
+       "as": "পুতেক"
+      }
+     ],
+     "why": {
+      "en": "Top to bottom.",
+      "as": "ওপৰৰ পৰা তললৈ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Name the relation",
+    "as": "সম্পৰ্কৰ নাম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Reduce a chain one link at a time.",
+     "as": "এটা এটা গাঁঠি কমোৱা।"
+    },
+    {
+     "en": "Father's brother is an uncle.",
+     "as": "দেউতাৰ সৰু ভাই খুড়া।"
+    },
+    {
+     "en": "Mother's brother is also an uncle.",
+     "as": "মাকৰ ভাই মোমাই।"
+    },
+    {
+     "en": "'Only son' means there is no other.",
+     "as": "'একমাত্ৰ পুত্ৰ' মানে আন নাই।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs10.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Shrink the chain",
+      "as": "শিকলি চুটি কৰা"
+     },
+     "text": [
+      {
+       "en": "Replace two links by one word, again and again, until one is left.",
+       "as": "দুটা গাঁঠিক এটা শব্দ কৰা, এটা নথকালৈ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Father's father",
+        "as": "দেউতাৰ দেউতা"
+       },
+       {
+        "en": "Grandfather",
+        "as": "ককা"
+       },
+       {
+        "en": "Grandfather's son",
+        "as": "ককাৰ পুত্ৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Pointing puzzles",
+      "as": "আঙুলিয়াই দেখুওৱা সাঁথৰ"
+     },
+     "text": [
+      {
+       "en": "'She is my mother's only daughter' means she is the speaker.",
+       "as": "'তেওঁ মোৰ মাকৰ একমাত্ৰ জীয়েক' মানে কথকজনীয়েই।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Mother's only daughter",
+        "as": "মাকৰ একমাত্ৰ জীয়েক"
+       },
+       {
+        "en": "The speaker",
+        "as": "কথকজনী"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u2.q1",
+     "type": "stepwise",
+     "skill": "r-bname",
+     "q": {
+      "en": "A man says: 'Her mother is my mother's only daughter.' Who is she to him?",
+      "as": "এজন পুৰুষে ক'লে: 'তেওঁৰ মাক মোৰ মাকৰ একমাত্ৰ জীয়েক।' তেওঁ পুৰুষজনৰ কি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "My mother's only daughter?",
+        "as": "মোৰ মাকৰ একমাত্ৰ জীয়েক?"
+       },
+       "options": [
+        {
+         "en": "Me",
+         "as": "মই"
+        },
+        {
+         "en": "My sister",
+         "as": "মোৰ ভনী"
+        },
+        {
+         "en": "My aunt",
+         "as": "মোৰ খুড়ী"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "He is a man, so she is his sister.",
+        "as": "তেওঁ পুৰুষ, গতিকে ভনী।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Her daughter?",
+        "as": "তেওঁৰ জীয়েক?"
+       },
+       "options": [
+        {
+         "en": "Niece",
+         "as": "ভাগিনী"
+        },
+        {
+         "en": "Cousin",
+         "as": "সম্পৰ্কীয় ভনী"
+        },
+        {
+         "en": "Sister",
+         "as": "ভনী"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "A sister's daughter.",
+        "as": "ভনীয়েকৰ জীয়েক।"
+       }
+      }
+     ],
+     "why": {
+      "en": "She is his niece.",
+      "as": "তেওঁ ভাগিনী।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A man says: 'Her mother is my mother's only daughter.' Who is she to him?",
+        "as": "এজন পুৰুষে ক'লে: 'তেওঁৰ মাক মোৰ মাকৰ একমাত্ৰ জীয়েক।' তেওঁ পুৰুষজনৰ কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "My mother's only daughter?",
+          "as": "মোৰ মাকৰ একমাত্ৰ জীয়েক?"
+         },
+         "options": [
+          {
+           "en": "Me",
+           "as": "মই"
+          },
+          {
+           "en": "My sister",
+           "as": "মোৰ ভনী"
+          },
+          {
+           "en": "My aunt",
+           "as": "মোৰ খুড়ী"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "He is a man, so she is his sister.",
+          "as": "তেওঁ পুৰুষ, গতিকে ভনী।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Her daughter?",
+          "as": "তেওঁৰ জীয়েক?"
+         },
+         "options": [
+          {
+           "en": "Niece",
+           "as": "ভাগিনী"
+          },
+          {
+           "en": "Cousin",
+           "as": "সম্পৰ্কীয় ভনী"
+          },
+          {
+           "en": "Sister",
+           "as": "ভনী"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "A sister's daughter.",
+          "as": "ভনীয়েকৰ জীয়েক।"
+         }
+        }
+       ],
+       "why": {
+        "en": "She is his niece.",
+        "as": "তেওঁ ভাগিনী।"
+       }
+      },
+      {
+       "q": {
+        "en": "A woman says: 'His father is my father's only son.' Who is he to her?",
+        "as": "এগৰাকী মহিলাই ক'লে: 'তেওঁৰ দেউতাক মোৰ দেউতাকৰ একমাত্ৰ পুত্ৰ।' তেওঁ মহিলাগৰাকীৰ কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "My father's only son?",
+          "as": "মোৰ দেউতাকৰ একমাত্ৰ পুত্ৰ?"
+         },
+         "options": [
+          {
+           "en": "My brother",
+           "as": "মোৰ ভাই"
+          },
+          {
+           "en": "My uncle",
+           "as": "মোৰ খুড়া"
+          },
+          {
+           "en": "Me",
+           "as": "মই"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "She is a woman, so it is her brother.",
+          "as": "তেওঁ মহিলা, গতিকে ভায়েক।"
+         }
+        },
+        {
+         "ask": {
+          "en": "His son?",
+          "as": "তেওঁৰ পুত্ৰ?"
+         },
+         "options": [
+          {
+           "en": "Brother",
+           "as": "ভাই"
+          },
+          {
+           "en": "Nephew",
+           "as": "ভতিজা"
+          },
+          {
+           "en": "Cousin",
+           "as": "সম্পৰ্কীয় ভাই"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "A brother's son.",
+          "as": "ভায়েকৰ পুত্ৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "He is her nephew.",
+        "as": "তেওঁ ভতিজা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u2.q2",
+     "type": "tf",
+     "skill": "r-bname",
+     "s": {
+      "en": "Your mother's sister's daughter is your cousin.",
+      "as": "তোমাৰ মাকৰ ভনীয়েকৰ জীয়েক তোমাৰ সম্পৰ্কীয় ভনী।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Same generation, different parents.",
+      "as": "একে প্ৰজন্ম, বেলেগ পিতৃ-মাতৃ।"
+     }
+    },
+    {
+     "id": "rs10.u2.q3",
+     "type": "match",
+     "skill": "r-bname",
+     "q": {
+      "en": "Shrink each chain",
+      "as": "প্ৰতিটো শিকলি চুটি কৰা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Father's father",
+        "as": "দেউতাৰ দেউতা"
+       },
+       {
+        "en": "Grandfather",
+        "as": "ককা"
+       }
+      ],
+      [
+       {
+        "en": "Brother's son",
+        "as": "ভাইৰ পুত্ৰ"
+       },
+       {
+        "en": "Nephew",
+        "as": "ভতিজা"
+       }
+      ],
+      [
+       {
+        "en": "Sister's daughter",
+        "as": "ভনীৰ জীয়েক"
+       },
+       {
+        "en": "Niece",
+        "as": "ভাগিনী"
+       }
+      ],
+      [
+       {
+        "en": "Son's wife",
+        "as": "পুত্ৰৰ পত্নী"
+       },
+       {
+        "en": "Daughter-in-law",
+        "as": "বোৱাৰী"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Two links become one word.",
+      "as": "দুটা গাঁঠি এটা শব্দ।"
+     }
+    },
+    {
+     "id": "rs10.u2.q4",
+     "type": "explore",
+     "skill": "r-bname",
+     "q": {
+      "en": "Go to your sister's son.",
+      "as": "ভনীয়েকৰ পুত্ৰলৈ যোৱা।"
+     },
+     "widget": {
+      "kind": "tree"
+     },
+     "target": -1,
+     "answerText": {
+      "en": "1 generation(s) down",
+      "as": "1 প্ৰজন্ম তলত"
+     },
+     "why": {
+      "en": "One level below you.",
+      "as": "তোমাৰ এক স্তৰ তল।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Go to your sister's son.",
+        "as": "ভনীয়েকৰ পুত্ৰলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": -1,
+       "answerText": {
+        "en": "1 generation(s) down",
+        "as": "1 প্ৰজন্ম তলত"
+       },
+       "why": {
+        "en": "One level below you.",
+        "as": "তোমাৰ এক স্তৰ তল।"
+       }
+      },
+      {
+       "q": {
+        "en": "Go to your wife's mother.",
+        "as": "পত্নীৰ মাকলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "1 generation(s) up",
+        "as": "1 প্ৰজন্ম ওপৰত"
+       },
+       "why": {
+        "en": "One level above you.",
+        "as": "এক স্তৰ ওপৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Go to your son's daughter.",
+        "as": "পুত্ৰৰ জীয়েকলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": -2,
+       "answerText": {
+        "en": "2 generation(s) down",
+        "as": "2 প্ৰজন্ম তলত"
+       },
+       "why": {
+        "en": "Two levels below.",
+        "as": "দুই স্তৰ তল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u2.q5",
+     "type": "order",
+     "skill": "r-bname",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the far end",
+       "as": "দূৰৰ মূৰ উলিওৱা"
+      },
+      {
+       "en": "Shrink two links",
+       "as": "দুটা গাঁঠি চুটি"
+      },
+      {
+       "en": "Repeat",
+       "as": "পুনৰ"
+      },
+      {
+       "en": "Name the result",
+       "as": "ফলৰ নাম"
+      }
+     ],
+     "why": {
+      "en": "One link at a time.",
+      "as": "এটা গাঁঠিকৈ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Gender is a separate fact",
+    "as": "লিংগ পৃথক তথ্য"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A name does not state gender.",
+     "as": "নামে লিংগ নকয়।"
+    },
+    {
+     "en": "Words like 'brother' do state it.",
+     "as": "'ভাই'ৰ দৰে শব্দই কয়।"
+    },
+    {
+     "en": "'Child' or 'sibling' says nothing.",
+     "as": "'সন্তান' শব্দই নকয়।"
+    },
+    {
+     "en": "'Cannot be determined' can be right.",
+     "as": "'ঠিক কৰিব নোৱাৰি' শুদ্ধ হ'ব পাৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs10.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Do not guess from names",
+      "as": "নামৰ পৰা নুধৰিবা"
+     },
+     "text": [
+      {
+       "en": "If P is the child of Q, we know nothing about P's gender.",
+       "as": "P, Q ৰ সন্তান হ'লে P ৰ লিংগ নাজানো।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Son: male",
+        "as": "পুত্ৰ: পুৰুষ"
+       },
+       {
+        "en": "Daughter: female",
+        "as": "জীয়েক: মহিলা"
+       },
+       {
+        "en": "Child: unknown",
+        "as": "সন্তান: অজ্ঞাত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Unknown is an answer",
+      "as": "অজ্ঞাতও উত্তৰ"
+     },
+     "text": [
+      {
+       "en": "Exams test this. If the words stop short, the data is not enough.",
+       "as": "পৰীক্ষাত সোধে। শব্দই নক'লে তথ্য অপ্ৰতুল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Stated?",
+        "as": "কোৱা হৈছে?"
+       },
+       {
+        "en": "Yes: use it",
+        "as": "হয়: ব্যৱহাৰ"
+       },
+       {
+        "en": "No: unknown",
+        "as": "নহয়: অজ্ঞাত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u3.q1",
+     "type": "tf",
+     "skill": "r-bgender",
+     "s": {
+      "en": "If R is the sibling of S, then R is male.",
+      "as": "R, S ৰ ভাই-ভনী হ'লে R পুৰুষ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Sibling states no gender.",
+      "as": "'ভাই-ভনী' ত লিংগ নাই।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-gender",
+       "why": {
+        "en": "A name does not state gender. Use only what the words say.",
+        "as": "নামে লিংগ নকয়। শব্দই কোৱাখিনিহে ব্যৱহাৰ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u3.q2",
+     "type": "tf",
+     "skill": "r-bgender",
+     "s": {
+      "en": "If R is the brother of S, we know S is male.",
+      "as": "R, S ৰ ভাই হ'লে S পুৰুষ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Only R's gender is stated.",
+      "as": "কেৱল R ৰ লিংগ কোৱা হৈছে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-gender",
+       "why": {
+        "en": "A name does not state gender. Use only what the words say.",
+        "as": "নামে লিংগ নকয়। শব্দই কোৱাখিনিহে ব্যৱহাৰ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u3.q3",
+     "type": "match",
+     "skill": "r-bgender",
+     "q": {
+      "en": "Match the word to what it states",
+      "as": "শব্দক অৰ্থৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Aunt",
+        "as": "খুড়ী"
+       },
+       {
+        "en": "Female",
+        "as": "মহিলা"
+       }
+      ],
+      [
+       {
+        "en": "Nephew",
+        "as": "ভতিজা"
+       },
+       {
+        "en": "Male",
+        "as": "পুৰুষ"
+       }
+      ],
+      [
+       {
+        "en": "Cousin",
+        "as": "সম্পৰ্কীয়"
+       },
+       {
+        "en": "Not stated",
+        "as": "কোৱা নাই"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Check each word.",
+      "as": "প্ৰতিটো শব্দ চোৱা।"
+     }
+    },
+    {
+     "id": "rs10.u3.q4",
+     "type": "stepwise",
+     "skill": "r-bgender",
+     "q": {
+      "en": "A is B's child. B is C's son. What is A to C?",
+      "as": "A, B ৰ সন্তান। B, C ৰ পুত্ৰ। A, C ৰ কি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "B to C?",
+        "as": "B, C ৰ কি?"
+       },
+       "options": [
+        {
+         "en": "Father",
+         "as": "দেউতাক"
+        },
+        {
+         "en": "Son",
+         "as": "পুত্ৰ"
+        },
+        {
+         "en": "Brother",
+         "as": "ভাই"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Stated.",
+        "as": "কোৱা হৈছে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "A to C?",
+        "as": "A, C ৰ কি?"
+       },
+       "options": [
+        {
+         "en": "Grandchild",
+         "as": "নাতি-নাতিনী"
+        },
+        {
+         "en": "Grandson",
+         "as": "নাতি"
+        },
+        {
+         "en": "Granddaughter",
+         "as": "নাতিনী"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "A name does not state gender. Use only what the words say.",
+        "as": "নামে লিংগ নকয়। শব্দই কোৱাখিনিহে ব্যৱহাৰ কৰা।"
+       },
+       "tag": "r-m-gender"
+      }
+     ],
+     "why": {
+      "en": "A's gender is not stated.",
+      "as": "A ৰ লিংগ কোৱা নাই।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A is B's child. B is C's son. What is A to C?",
+        "as": "A, B ৰ সন্তান। B, C ৰ পুত্ৰ। A, C ৰ কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "B to C?",
+          "as": "B, C ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Father",
+           "as": "দেউতাক"
+          },
+          {
+           "en": "Son",
+           "as": "পুত্ৰ"
+          },
+          {
+           "en": "Brother",
+           "as": "ভাই"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "A to C?",
+          "as": "A, C ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Grandchild",
+           "as": "নাতি-নাতিনী"
+          },
+          {
+           "en": "Grandson",
+           "as": "নাতি"
+          },
+          {
+           "en": "Granddaughter",
+           "as": "নাতিনী"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "A name does not state gender. Use only what the words say.",
+          "as": "নামে লিংগ নকয়। শব্দই কোৱাখিনিহে ব্যৱহাৰ কৰা।"
+         },
+         "tag": "r-m-gender"
+        }
+       ],
+       "why": {
+        "en": "A's gender is not stated.",
+        "as": "A ৰ লিংগ কোৱা নাই।"
+       }
+      },
+      {
+       "q": {
+        "en": "P is Q's sister. Q is R's child. What is P to R?",
+        "as": "P, Q ৰ ভনী। Q, R ৰ সন্তান। P, R ৰ কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "P's gender?",
+          "as": "P ৰ লিংগ?"
+         },
+         "options": [
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          },
+          {
+           "en": "Male",
+           "as": "পুৰুষ"
+          },
+          {
+           "en": "Female",
+           "as": "মহিলা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Sister states it.",
+          "as": "'ভনী'য়ে কয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "P to R?",
+          "as": "P, R ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Daughter",
+           "as": "জীয়েক"
+          },
+          {
+           "en": "Son",
+           "as": "পুত্ৰ"
+          },
+          {
+           "en": "Mother",
+           "as": "মাক"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Q's sister is also R's child.",
+          "as": "Q ৰ ভনীও R ৰ সন্তান।"
+         }
+        }
+       ],
+       "why": {
+        "en": "P is R's daughter.",
+        "as": "P, R ৰ জীয়েক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u3.q5",
+     "type": "order",
+     "skill": "r-bgender",
+     "q": {
+      "en": "Put the check in order",
+      "as": "পৰীক্ষা ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the exact word",
+       "as": "ঠিক শব্দ পঢ়া"
+      },
+      {
+       "en": "Is gender stated?",
+       "as": "লিংগ কোৱা হৈছে?"
+      },
+      {
+       "en": "Mark it or leave it",
+       "as": "চিন বা এৰা"
+      },
+      {
+       "en": "Answer only from marks",
+       "as": "চিনৰ পৰা উত্তৰ"
+      }
+     ],
+     "why": {
+      "en": "Mark only stated facts.",
+      "as": "কোৱা তথ্যহে চিন কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Coded families",
+    "as": "সংকেতৰ পৰিয়াল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Write what each symbol means.",
+     "as": "প্ৰতিটো চিহ্নৰ অৰ্থ লিখা।"
+    },
+    {
+     "en": "Read the code left to right.",
+     "as": "সংকেত বাওঁৰ পৰা সোঁলৈ।"
+    },
+    {
+     "en": "A + B reads as a stated relation.",
+     "as": "A + B কোৱা সম্পৰ্ক।"
+    },
+    {
+     "en": "Draw it, then name the ends.",
+     "as": "আঁকি দুই মূৰৰ নাম কোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs10.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Symbols replace words",
+      "as": "চিহ্নই শব্দ সলায়"
+     },
+     "text": [
+      {
+       "en": "A + B may mean 'A is B's father'. Rewrite the code in words first.",
+       "as": "A + B মানে 'A, B ৰ দেউতাক' হ'ব পাৰে। প্ৰথমে শব্দত লিখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Read the key",
+        "as": "চাবি পঢ়া"
+       },
+       {
+        "en": "Rewrite",
+        "as": "লিখা"
+       },
+       {
+        "en": "Draw it",
+        "as": "আঁকা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "One link at a time",
+      "as": "এটা গাঁঠিকৈ"
+     },
+     "text": [
+      {
+       "en": "P + Q − R is two links. Draw each separately, then join at Q.",
+       "as": "P + Q − R দুটা গাঁঠি। পৃথকে আঁকি Q ত জোৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "P to Q",
+        "as": "P ৰ পৰা Q"
+       },
+       {
+        "en": "Q to R",
+        "as": "Q ৰ পৰা R"
+       },
+       {
+        "en": "Join at Q",
+        "as": "Q ত জোৰা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs10.u4.q1",
+     "type": "stepwise",
+     "skill": "r-bcode",
+     "q": {
+      "en": "A + B means A is B's father. A − B means A is B's sister. What is P in P + Q − R?",
+      "as": "A + B মানে A, B ৰ দেউতাক। A − B মানে A, B ৰ ভনী। P + Q − R ত P কি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Q to R?",
+        "as": "Q, R ৰ কি?"
+       },
+       "options": [
+        {
+         "en": "Sister",
+         "as": "ভনী"
+        },
+        {
+         "en": "Father",
+         "as": "দেউতাক"
+        },
+        {
+         "en": "Brother",
+         "as": "ভাই"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "− means sister.",
+        "as": "− মানে ভনী।"
+       }
+      },
+      {
+       "ask": {
+        "en": "P to R?",
+        "as": "P, R ৰ কি?"
+       },
+       "options": [
+        {
+         "en": "Father",
+         "as": "দেউতাক"
+        },
+        {
+         "en": "Brother",
+         "as": "ভাই"
+        },
+        {
+         "en": "Uncle",
+         "as": "খুড়া"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Q's father is also R's father.",
+        "as": "Q ৰ দেউতাকেই R ৰ দেউতাক।"
+       }
+      }
+     ],
+     "why": {
+      "en": "P is R's father.",
+      "as": "P, R ৰ দেউতাক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A + B means A is B's father. A − B means A is B's sister. What is P in P + Q − R?",
+        "as": "A + B মানে A, B ৰ দেউতাক। A − B মানে A, B ৰ ভনী। P + Q − R ত P কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Q to R?",
+          "as": "Q, R ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Sister",
+           "as": "ভনী"
+          },
+          {
+           "en": "Father",
+           "as": "দেউতাক"
+          },
+          {
+           "en": "Brother",
+           "as": "ভাই"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "− means sister.",
+          "as": "− মানে ভনী।"
+         }
+        },
+        {
+         "ask": {
+          "en": "P to R?",
+          "as": "P, R ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Father",
+           "as": "দেউতাক"
+          },
+          {
+           "en": "Brother",
+           "as": "ভাই"
+          },
+          {
+           "en": "Uncle",
+           "as": "খুড়া"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Q's father is also R's father.",
+          "as": "Q ৰ দেউতাকেই R ৰ দেউতাক।"
+         }
+        }
+       ],
+       "why": {
+        "en": "P is R's father.",
+        "as": "P, R ৰ দেউতাক।"
+       }
+      },
+      {
+       "q": {
+        "en": "A × B means A is B's mother. A ÷ B means A is B's brother. What is P in P × Q ÷ R?",
+        "as": "A × B মানে A, B ৰ মাক। A ÷ B মানে A, B ৰ ভাই। P × Q ÷ R ত P কি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Q to R?",
+          "as": "Q, R ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Sister",
+           "as": "ভনী"
+          },
+          {
+           "en": "Brother",
+           "as": "ভাই"
+          },
+          {
+           "en": "Mother",
+           "as": "মাক"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "÷ means brother.",
+          "as": "÷ মানে ভাই।"
+         }
+        },
+        {
+         "ask": {
+          "en": "P to R?",
+          "as": "P, R ৰ কি?"
+         },
+         "options": [
+          {
+           "en": "Aunt",
+           "as": "খুড়ী"
+          },
+          {
+           "en": "Sister",
+           "as": "ভনী"
+          },
+          {
+           "en": "Mother",
+           "as": "মাক"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Q's mother is also R's mother.",
+          "as": "Q ৰ মাকেই R ৰ মাক।"
+         }
+        }
+       ],
+       "why": {
+        "en": "P is R's mother.",
+        "as": "P, R ৰ মাক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs10.u4.q2",
+     "type": "tf",
+     "skill": "r-bcode",
+     "s": {
+      "en": "Rewriting a coded relation in words comes first.",
+      "as": "সংকেতৰ সম্পৰ্ক প্ৰথমে শব্দত লিখা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It prevents slips.",
+      "as": "ই ভুল ৰোধ কৰে।"
+     }
+    },
+    {
+     "id": "rs10.u4.q3",
+     "type": "match",
+     "skill": "r-bcode",
+     "q": {
+      "en": "+ father, − sister, × son: match",
+      "as": "+ দেউতাক, − ভনী, × পুত্ৰ: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A + B",
+        "as": "A + B"
+       },
+       {
+        "en": "A is B's father",
+        "as": "A, B ৰ দেউতাক"
+       }
+      ],
+      [
+       {
+        "en": "A − B",
+        "as": "A − B"
+       },
+       {
+        "en": "A is B's sister",
+        "as": "A, B ৰ ভনী"
+       }
+      ],
+      [
+       {
+        "en": "A × B",
+        "as": "A × B"
+       },
+       {
+        "en": "A is B's son",
+        "as": "A, B ৰ পুত্ৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Read the key.",
+      "as": "চাবি পঢ়া।"
+     }
+    },
+    {
+     "id": "rs10.u4.q4",
+     "type": "order",
+     "skill": "r-bcode",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the key",
+       "as": "চাবি পঢ়া"
+      },
+      {
+       "en": "Rewrite each link",
+       "as": "প্ৰতিটো গাঁঠি লিখা"
+      },
+      {
+       "en": "Draw them",
+       "as": "আঁকা"
+      },
+      {
+       "en": "Name the ends",
+       "as": "মূৰৰ নাম"
+      }
+     ],
+     "why": {
+      "en": "Words, drawing, answer.",
+      "as": "শব্দ, চিত্ৰ, উত্তৰ।"
+     }
+    },
+    {
+     "id": "rs10.u4.q5",
+     "type": "explore",
+     "skill": "r-bcode",
+     "q": {
+      "en": "A + B means A is B's father. Start at P in P + Q + R, and move to R's level.",
+      "as": "A + B মানে A, B ৰ দেউতাক। P + Q + R ত P ৰ পৰা R ৰ স্তৰলৈ যোৱা।"
+     },
+     "widget": {
+      "kind": "tree"
+     },
+     "target": -2,
+     "answerText": {
+      "en": "2 generation(s) down",
+      "as": "2 প্ৰজন্ম তলত"
+     },
+     "why": {
+      "en": "Two fathers down.",
+      "as": "দুই স্তৰ তল।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A + B means A is B's father. Start at P in P + Q + R, and move to R's level.",
+        "as": "A + B মানে A, B ৰ দেউতাক। P + Q + R ত P ৰ পৰা R ৰ স্তৰলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": -2,
+       "answerText": {
+        "en": "2 generation(s) down",
+        "as": "2 প্ৰজন্ম তলত"
+       },
+       "why": {
+        "en": "Two fathers down.",
+        "as": "দুই স্তৰ তল।"
+       }
+      },
+      {
+       "q": {
+        "en": "A − B means A is B's child. Start at P in P − Q − R, and move to R's level.",
+        "as": "A − B মানে A, B ৰ সন্তান। P − Q − R ত P ৰ পৰা R ৰ স্তৰলৈ যোৱা।"
+       },
+       "widget": {
+        "kind": "tree"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2 generation(s) up",
+        "as": "2 প্ৰজন্ম ওপৰত"
+       },
+       "why": {
+        "en": "Two levels up.",
+        "as": "দুই স্তৰ ওপৰ।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Blood relations test",
+   "as": "তেজৰ সম্পৰ্কৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs10.t.q1",
+    "type": "explore",
+    "skill": "r-bgen",
+    "q": {
+     "en": "Go to your father's mother.",
+     "as": "দেউতাকৰ মাকলৈ যোৱা।"
+    },
+    "widget": {
+     "kind": "tree"
+    },
+    "target": 2,
+    "answerText": {
+     "en": "2 generation(s) up",
+     "as": "2 প্ৰজন্ম ওপৰত"
+    },
+    "why": {
+     "en": "Two levels up.",
+     "as": "দুই স্তৰ ওপৰ।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Go to your father's mother.",
+       "as": "দেউতাকৰ মাকলৈ যোৱা।"
+      },
+      "widget": {
+       "kind": "tree"
+      },
+      "target": 2,
+      "answerText": {
+       "en": "2 generation(s) up",
+       "as": "2 প্ৰজন্ম ওপৰত"
+      },
+      "why": {
+       "en": "Two levels up.",
+       "as": "দুই স্তৰ ওপৰ।"
+      }
+     },
+     {
+      "q": {
+       "en": "Go to your daughter's son.",
+       "as": "জীয়েকৰ পুত্ৰলৈ যোৱা।"
+      },
+      "widget": {
+       "kind": "tree"
+      },
+      "target": -2,
+      "answerText": {
+       "en": "2 generation(s) down",
+       "as": "2 প্ৰজন্ম তলত"
+      },
+      "why": {
+       "en": "Two levels down.",
+       "as": "দুই স্তৰ তল।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs10.t.q2",
+    "type": "tf",
+    "skill": "r-bname",
+    "s": {
+     "en": "Your brother's daughter is your niece.",
+     "as": "ভাইৰ জীয়েক তোমাৰ ভতিজী।"
+    },
+    "answer": true,
+    "why": {
+     "en": "A sibling's daughter.",
+     "as": "ভাই-ভনীৰ জীয়েক।"
+    }
+   },
+   {
+    "id": "rs10.t.q3",
+    "type": "tf",
+    "skill": "r-bgender",
+    "s": {
+     "en": "'Child' states gender.",
+     "as": "'সন্তান' শব্দই লিংগ কয়।"
+    },
+    "answer": false,
+    "why": {
+     "en": "It does not.",
+     "as": "নকয়।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-gender",
+      "why": {
+       "en": "A name does not state gender. Use only what the words say.",
+       "as": "নামে লিংগ নকয়। শব্দই কোৱাখিনিহে ব্যৱহাৰ কৰা।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs10.t.q4",
+    "type": "tf",
+    "skill": "r-bgender",
+    "s": {
+     "en": "Sister states that a person is female.",
+     "as": "'ভনী' শব্দই মহিলা বুলি কয়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It does.",
+     "as": "কয়।"
+    }
+   },
+   {
+    "id": "rs10.t.q5",
+    "type": "stepwise",
+    "skill": "r-bname",
+    "q": {
+     "en": "My father's only son's son is my?",
+     "as": "মোৰ দেউতাকৰ একমাত্ৰ পুত্ৰৰ পুত্ৰ মোৰ কি? (মই পুৰুষ)"
+    },
+    "parts": [
+     {
+      "ask": {
+       "en": "Father's only son?",
+       "as": "দেউতাকৰ একমাত্ৰ পুত্ৰ?"
+      },
+      "options": [
+       {
+        "en": "Uncle",
+        "as": "খুড়া"
+       },
+       {
+        "en": "Me",
+        "as": "মই"
+       },
+       {
+        "en": "Brother",
+        "as": "ভাই"
+       }
+      ],
+      "answer": 1,
+      "note": {
+       "en": "I am male, so it is me.",
+       "as": "মই পুৰুষ, গতিকে ময়েই।"
+      }
+     },
+     {
+      "ask": {
+       "en": "Then his son?",
+       "as": "তেন্তে পুত্ৰ?"
+      },
+      "options": [
+       {
+        "en": "My nephew",
+        "as": "মোৰ ভতিজা"
+       },
+       {
+        "en": "My brother",
+        "as": "মোৰ ভাই"
+       },
+       {
+        "en": "My son",
+        "as": "মোৰ পুত্ৰ"
+       }
+      ],
+      "answer": 2,
+      "note": {
+       "en": "Follows at once.",
+       "as": "লগে লগে ওলায়।"
+      }
+     }
+    ],
+    "why": {
+     "en": "He is my son.",
+     "as": "তেওঁ মোৰ পুত্ৰ।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "My father's only son's son is my?",
+       "as": "মোৰ দেউতাকৰ একমাত্ৰ পুত্ৰৰ পুত্ৰ মোৰ কি? (মই পুৰুষ)"
+      },
+      "parts": [
+       {
+        "ask": {
+         "en": "Father's only son?",
+         "as": "দেউতাকৰ একমাত্ৰ পুত্ৰ?"
+        },
+        "options": [
+         {
+          "en": "Uncle",
+          "as": "খুড়া"
+         },
+         {
+          "en": "Me",
+          "as": "মই"
+         },
+         {
+          "en": "Brother",
+          "as": "ভাই"
+         }
+        ],
+        "answer": 1,
+        "note": {
+         "en": "I am male, so it is me.",
+         "as": "মই পুৰুষ, গতিকে ময়েই।"
+        }
+       },
+       {
+        "ask": {
+         "en": "Then his son?",
+         "as": "তেন্তে পুত্ৰ?"
+        },
+        "options": [
+         {
+          "en": "My nephew",
+          "as": "মোৰ ভতিজা"
+         },
+         {
+          "en": "My brother",
+          "as": "মোৰ ভাই"
+         },
+         {
+          "en": "My son",
+          "as": "মোৰ পুত্ৰ"
+         }
+        ],
+        "answer": 2,
+        "note": {
+         "en": "Follows at once.",
+         "as": "লগে লগে ওলায়।"
+        }
+       }
+      ],
+      "why": {
+       "en": "He is my son.",
+       "as": "তেওঁ মোৰ পুত্ৰ।"
+      }
+     },
+     {
+      "q": {
+       "en": "My mother's only daughter's son is my? (I am female)",
+       "as": "মোৰ মাকৰ একমাত্ৰ জীয়েকৰ পুত্ৰ মোৰ কি? (মই মহিলা)"
+      },
+      "parts": [
+       {
+        "ask": {
+         "en": "Mother's only daughter?",
+         "as": "মাকৰ একমাত্ৰ জীয়েক?"
+        },
+        "options": [
+         {
+          "en": "Aunt",
+          "as": "খুড়ী"
+         },
+         {
+          "en": "Me",
+          "as": "মই"
+         },
+         {
+          "en": "Sister",
+          "as": "ভনী"
+         }
+        ],
+        "answer": 1,
+        "note": {
+         "en": "I am female, so it is me.",
+         "as": "মই মহিলা, গতিকে ময়েই।"
+        }
+       },
+       {
+        "ask": {
+         "en": "Then her son?",
+         "as": "তেন্তে পুত্ৰ?"
+        },
+        "options": [
+         {
+          "en": "My nephew",
+          "as": "মোৰ ভতিজা"
+         },
+         {
+          "en": "My cousin",
+          "as": "মোৰ সম্পৰ্কীয়"
+         },
+         {
+          "en": "My son",
+          "as": "মোৰ পুত্ৰ"
+         }
+        ],
+        "answer": 2,
+        "note": {
+         "en": "Follows at once.",
+         "as": "লগে লগে ওলায়।"
+        }
+       }
+      ],
+      "why": {
+       "en": "He is my son.",
+       "as": "তেওঁ মোৰ পুত্ৰ।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs10.t.q6",
+    "type": "tf",
+    "skill": "r-bcode",
+    "s": {
+     "en": "Coded relations join at the shared letter.",
+     "as": "সংকেতৰ সম্পৰ্ক উমৈহতীয়া আখৰত জোৰা লাগে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Q joins P + Q − R.",
+     "as": "Q ত P + Q − R জোৰা লাগে।"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,2489 @@
+{
+ "id": "rs-22-communication",
+ "course": "reasoning",
+ "no": 22,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Communication",
+  "as": "যোগাযোগ"
+ },
+ "reign": {
+  "en": "Listening, feedback, empathy",
+  "as": "শ্ৰৱণ, মতামত, সমবেদনা"
+ },
+ "portrait": "reasoning/aptitude.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Listening is active",
+    "as": "শ্ৰৱণ সক্ৰিয়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Give full attention.",
+     "as": "সম্পূৰ্ণ মনোযোগ দিয়া।"
+    },
+    {
+     "en": "Do not interrupt.",
+     "as": "বাধা নিদিবা।"
+    },
+    {
+     "en": "Check that you understood.",
+     "as": "বুজিলানে নিশ্চিত হোৱা।"
+    },
+    {
+     "en": "Respond to what was said.",
+     "as": "কোৱা কথাৰ উত্তৰ দিয়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs22.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Hearing is not listening",
+      "as": "শুনা মানে শ্ৰৱণ নহয়"
+     },
+     "text": [
+      {
+       "en": "Active listening means attending, understanding and showing that you did.",
+       "as": "সক্ৰিয় শ্ৰৱণ মানে মনোযোগ, বুজা আৰু সেয়া দেখুওৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Attend",
+        "as": "মনোযোগ"
+       },
+       {
+        "en": "Understand",
+        "as": "বুজা"
+       },
+       {
+        "en": "Respond",
+        "as": "সঁহাৰি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Paraphrase to check",
+      "as": "নিজৰ ভাষাত কোৱা"
+     },
+     "text": [
+      {
+       "en": "'So you mean...' shows you heard and lets the speaker correct you.",
+       "as": "'তেন্তে আপুনি কৈছে...' দেখুৱায় যে শুনিছা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Hear it",
+        "as": "শুনা"
+       },
+       {
+        "en": "Say it back",
+        "as": "ঘূৰাই কোৱা"
+       },
+       {
+        "en": "Confirm",
+        "as": "নিশ্চিত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u1.q1",
+     "type": "inline",
+     "skill": "r-clisten",
+     "before": {
+      "en": "A colleague is explaining a problem at length. The best response is:",
+      "as": "এজন সহকৰ্মীয়ে সমস্যা বহলাই কৈছে। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Interrupt with your solution",
+       "as": "বাধা দি সমাধান কোৱা"
+      },
+      {
+       "en": "Check your phone",
+       "as": "ফোন চোৱা"
+      },
+      {
+       "en": "Listen fully, then ask a question",
+       "as": "সম্পূৰ্ণ শুনি প্ৰশ্ন সোধা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Listen first.",
+      "as": "প্ৰথমে শুনা।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A colleague is explaining a problem at length. The best response is:",
+        "as": "এজন সহকৰ্মীয়ে সমস্যা বহলাই কৈছে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Interrupt with your solution",
+         "as": "বাধা দি সমাধান কোৱা"
+        },
+        {
+         "en": "Check your phone",
+         "as": "ফোন চোৱা"
+        },
+        {
+         "en": "Listen fully, then ask a question",
+         "as": "সম্পূৰ্ণ শুনি প্ৰশ্ন সোধা"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Listen first.",
+        "as": "প্ৰথমে শুনা।"
+       }
+      },
+      {
+       "before": {
+        "en": "A citizen is upset at your counter. The best response is:",
+        "as": "এজন নাগৰিক আপোনাৰ কাউণ্টাৰত অসন্তুষ্ট। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Tell them to calm down",
+         "as": "শান্ত হ'বলৈ কোৱা"
+        },
+        {
+         "en": "Let them finish, then restate the issue",
+         "as": "শেষ কৰিবলৈ দি বিষয়টো ঘূৰাই কোৱা"
+        },
+        {
+         "en": "Walk away",
+         "as": "গুচি যোৱা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Being heard calms people.",
+        "as": "শুনিলে মানুহ শান্ত হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u1.q2",
+     "type": "tf",
+     "skill": "r-clisten",
+     "s": {
+      "en": "Planning your reply while someone speaks is good listening.",
+      "as": "কোনোবাই কওঁতে উত্তৰ ভবা ভাল শ্ৰৱণ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It splits attention.",
+      "as": "ই মনোযোগ ভাগে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-interrupt",
+       "why": {
+        "en": "Hear the whole message before replying.",
+        "as": "উত্তৰৰ আগতে গোটেই কথা শুনা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u1.q3",
+     "type": "match",
+     "skill": "r-clisten",
+     "q": {
+      "en": "Match the behaviour to its effect",
+      "as": "আচৰণক ফলৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Nodding",
+        "as": "মূৰ দোঁওৱা"
+       },
+       {
+        "en": "Shows attention",
+        "as": "মনোযোগ দেখুৱায়"
+       }
+      ],
+      [
+       {
+        "en": "Paraphrasing",
+        "as": "ঘূৰাই কোৱা"
+       },
+       {
+        "en": "Checks meaning",
+        "as": "অৰ্থ নিশ্চিত কৰে"
+       }
+      ],
+      [
+       {
+        "en": "Interrupting",
+        "as": "বাধা দিয়া"
+       },
+       {
+        "en": "Blocks the speaker",
+        "as": "বক্তাক ৰোধ কৰে"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each has an effect.",
+      "as": "প্ৰতিটোৰ ফল আছে।"
+     }
+    },
+    {
+     "id": "rs22.u1.q4",
+     "type": "order",
+     "skill": "r-clisten",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Stop other tasks",
+       "as": "আন কাম ৰখোৱা"
+      },
+      {
+       "en": "Listen to the end",
+       "as": "শেষলৈ শুনা"
+      },
+      {
+       "en": "Paraphrase",
+       "as": "ঘূৰাই কোৱা"
+      },
+      {
+       "en": "Respond",
+       "as": "সঁহাৰি"
+      }
+     ],
+     "why": {
+      "en": "Attend before responding.",
+      "as": "সঁহাৰিৰ আগতে মনোযোগ।"
+     }
+    },
+    {
+     "id": "rs22.u1.q5",
+     "type": "stepwise",
+     "skill": "r-clisten",
+     "q": {
+      "en": "Someone gives directions too fast.",
+      "as": "কোনোবাই খৰকৈ পথ কৈছে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Pretend you understood",
+         "as": "বুজা যেন কৰা"
+        },
+        {
+         "en": "Leave",
+         "as": "গুচি যোৱা"
+        },
+        {
+         "en": "Ask them to repeat",
+         "as": "পুনৰ ক'বলৈ কোৱা"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Clarify rather than pretend.",
+        "as": "ভাও নকৰি স্পষ্ট কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Clarify rather than pretend.",
+      "as": "ভাও নকৰি স্পষ্ট কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Someone gives directions too fast.",
+        "as": "কোনোবাই খৰকৈ পথ কৈছে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Pretend you understood",
+           "as": "বুজা যেন কৰা"
+          },
+          {
+           "en": "Leave",
+           "as": "গুচি যোৱা"
+          },
+          {
+           "en": "Ask them to repeat",
+           "as": "পুনৰ ক'বলৈ কোৱা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Clarify rather than pretend.",
+          "as": "ভাও নকৰি স্পষ্ট কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Clarify rather than pretend.",
+        "as": "ভাও নকৰি স্পষ্ট কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "You miss a point in a meeting.",
+        "as": "সভাত এটা কথা নুশুনিলা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Ignore it",
+           "as": "এৰি দিয়া"
+          },
+          {
+           "en": "Guess",
+           "as": "অনুমান কৰা"
+          },
+          {
+           "en": "Ask politely afterward",
+           "as": "পিছত ভদ্ৰভাৱে সোধা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Ask, do not guess.",
+          "as": "অনুমান নকৰি সোধা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Ask, do not guess.",
+        "as": "অনুমান নকৰি সোধা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Giving feedback",
+    "as": "মতামত দিয়া"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Be specific.",
+     "as": "নিৰ্দিষ্ট হোৱা।"
+    },
+    {
+     "en": "Discuss the work, not the person.",
+     "as": "ব্যক্তি নহয়, কাম।"
+    },
+    {
+     "en": "Give it privately when it is critical.",
+     "as": "সমালোচনা গোপনে।"
+    },
+    {
+     "en": "Suggest a next step.",
+     "as": "পিছৰ খোজ কোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs22.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Work, not person",
+      "as": "ব্যক্তি নহয়, কাম"
+     },
+     "text": [
+      {
+       "en": "'This report missed the date' helps. 'You are careless' only hurts.",
+       "as": "'প্ৰতিবেদনত তাৰিখ নাই' সহায়ক। 'তুমি অসাৱধান' কেৱল দুখ দিয়ে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Specific",
+        "as": "নিৰ্দিষ্ট"
+       },
+       {
+        "en": "About the task",
+        "as": "কামৰ বিষয়ে"
+       },
+       {
+        "en": "Timely",
+        "as": "সময়ত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Private, then forward",
+      "as": "গোপনে, তাৰ পিছত আগলৈ"
+     },
+     "text": [
+      {
+       "en": "Correct in private and offer a way forward.",
+       "as": "গোপনে শুধৰাই আগবঢ়াৰ পথ দিয়া।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "In private",
+        "as": "গোপনে"
+       },
+       {
+        "en": "Be specific",
+        "as": "নিৰ্দিষ্ট"
+       },
+       {
+        "en": "Next step",
+        "as": "পিছৰ খোজ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u2.q1",
+     "type": "inline",
+     "skill": "r-cfeed",
+     "before": {
+      "en": "A junior's report has errors. The best response is:",
+      "as": "কনিষ্ঠজনৰ প্ৰতিবেদনত ভুল। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Say nothing",
+       "as": "একো নকোৱা"
+      },
+      {
+       "en": "Point out the errors privately",
+       "as": "গোপনে ভুল দেখুওৱা"
+      },
+      {
+       "en": "Announce them in the meeting",
+       "as": "সভাত ঘোষণা কৰা"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Private and specific.",
+      "as": "গোপনে আৰু নিৰ্দিষ্টকৈ।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A junior's report has errors. The best response is:",
+        "as": "কনিষ্ঠজনৰ প্ৰতিবেদনত ভুল। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Say nothing",
+         "as": "একো নকোৱা"
+        },
+        {
+         "en": "Point out the errors privately",
+         "as": "গোপনে ভুল দেখুওৱা"
+        },
+        {
+         "en": "Announce them in the meeting",
+         "as": "সভাত ঘোষণা কৰা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Private and specific.",
+        "as": "গোপনে আৰু নিৰ্দিষ্টকৈ।"
+       }
+      },
+      {
+       "before": {
+        "en": "A teammate did well on a task. The best response is:",
+        "as": "সতীৰ্থই ভাল কাম কৰিলে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Take the credit",
+         "as": "কৃতিত্ব লোৱা"
+        },
+        {
+         "en": "Praise the specific work",
+         "as": "নিৰ্দিষ্ট কামৰ প্ৰশংসা"
+        },
+        {
+         "en": "Say nothing",
+         "as": "একো নকোৱা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Specific praise helps.",
+        "as": "নিৰ্দিষ্ট প্ৰশংসা সহায়ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u2.q2",
+     "type": "tf",
+     "skill": "r-cfeed",
+     "s": {
+      "en": "Feedback should target the person's character.",
+      "as": "মতামত ব্যক্তিৰ চৰিত্ৰৰ বিষয়ে হ'ব লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Target the work.",
+      "as": "কামৰ বিষয়ে।"
+     }
+    },
+    {
+     "id": "rs22.u2.q3",
+     "type": "match",
+     "skill": "r-cfeed",
+     "q": {
+      "en": "Match the phrase to its kind",
+      "as": "বাক্যক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "'Add the date here'",
+        "as": "'ইয়াত তাৰিখ দিয়া'"
+       },
+       {
+        "en": "Specific",
+        "as": "নিৰ্দিষ্ট"
+       }
+      ],
+      [
+       {
+        "en": "'This is bad'",
+        "as": "'এয়া বেয়া'"
+       },
+       {
+        "en": "Vague",
+        "as": "অস্পষ্ট"
+       }
+      ],
+      [
+       {
+        "en": "'You always fail'",
+        "as": "'তুমি সদায় ব্যৰ্থ'"
+       },
+       {
+        "en": "Personal",
+        "as": "ব্যক্তিগত"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Prefer specific.",
+      "as": "নিৰ্দিষ্ট ভাল।"
+     }
+    },
+    {
+     "id": "rs22.u2.q4",
+     "type": "order",
+     "skill": "r-cfeed",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find a private place",
+       "as": "গোপন ঠাই"
+      },
+      {
+       "en": "State what you saw",
+       "as": "দেখাখিনি কোৱা"
+      },
+      {
+       "en": "Say the effect",
+       "as": "ফল কোৱা"
+      },
+      {
+       "en": "Agree a next step",
+       "as": "পিছৰ খোজ"
+      }
+     ],
+     "why": {
+      "en": "Facts, effect, next step.",
+      "as": "তথ্য, ফল, পিছৰ খোজ।"
+     }
+    },
+    {
+     "id": "rs22.u2.q5",
+     "type": "stepwise",
+     "skill": "r-cfeed",
+     "q": {
+      "en": "You receive criticism at work.",
+      "as": "কামত সমালোচনা পালে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Listen and ask for examples",
+         "as": "শুনি উদাহৰণ সোধা"
+        },
+        {
+         "en": "Blame others",
+         "as": "আনক দোষ"
+        },
+        {
+         "en": "Argue at once",
+         "as": "লগে লগে তৰ্ক"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Treat it as information.",
+        "as": "ইয়াক তথ্য বুলি লোৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Treat it as information.",
+      "as": "ইয়াক তথ্য বুলি লোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "You receive criticism at work.",
+        "as": "কামত সমালোচনা পালে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Listen and ask for examples",
+           "as": "শুনি উদাহৰণ সোধা"
+          },
+          {
+           "en": "Blame others",
+           "as": "আনক দোষ"
+          },
+          {
+           "en": "Argue at once",
+           "as": "লগে লগে তৰ্ক"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Treat it as information.",
+          "as": "ইয়াক তথ্য বুলি লোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Treat it as information.",
+        "as": "ইয়াক তথ্য বুলি লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A colleague repeats a mistake.",
+        "as": "সহকৰ্মীয়ে একে ভুল কৰে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Complain to all",
+           "as": "সকলোকে অভিযোগ"
+          },
+          {
+           "en": "Talk with them calmly",
+           "as": "শান্তভাৱে কোৱা"
+          },
+          {
+           "en": "Mock them",
+           "as": "উপহাস"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Direct and calm.",
+          "as": "পোনে পোনে, শান্তভাৱে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Direct and calm.",
+        "as": "পোনে পোনে, শান্তভাৱে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Signals without words",
+    "as": "শব্দহীন সংকেত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Face and posture carry meaning.",
+     "as": "মুখ আৰু ভংগীয়ে অৰ্থ কঢ়িয়ায়।"
+    },
+    {
+     "en": "Tone can change the words.",
+     "as": "সুৰে শব্দ সলাব পাৰে।"
+    },
+    {
+     "en": "Personal space varies by culture.",
+     "as": "ব্যক্তিগত দূৰত্ব সংস্কৃতি অনুসৰি।"
+    },
+    {
+     "en": "Read signals together, not alone.",
+     "as": "সংকেত একেলগে পঢ়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs22.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Beyond the words",
+      "as": "শব্দৰ বাহিৰত"
+     },
+     "text": [
+      {
+       "en": "Tone, face and posture often decide how a message lands.",
+       "as": "সুৰ, মুখ, ভংগীয়ে বাৰ্তা কেনেকৈ পায় ঠিক কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Face",
+        "as": "মুখ"
+       },
+       {
+        "en": "Tone",
+        "as": "সুৰ"
+       },
+       {
+        "en": "Posture",
+        "as": "ভংগী"
+       },
+       {
+        "en": "Distance",
+        "as": "দূৰত্ব"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Do not over-read",
+      "as": "বেছি অৰ্থ নকৰিবা"
+     },
+     "text": [
+      {
+       "en": "Crossed arms may mean cold, not anger. Read several signals together.",
+       "as": "হাত বান্ধি থকা মানে ঠাণ্ডা হ'ব পাৰে। একেলগে পঢ়া।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "One signal",
+        "as": "এটা সংকেত"
+       },
+       {
+        "en": "More signals",
+        "as": "অধিক সংকেত"
+       },
+       {
+        "en": "Context",
+        "as": "প্ৰসংগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u3.q1",
+     "type": "inline",
+     "skill": "r-cbody",
+     "before": {
+      "en": "You are greeting a visitor. The best response is:",
+      "as": "আলহী আদৰিছা। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Stand, smile and face them",
+       "as": "থিয় হৈ হাঁহি মুখামুখি হোৱা"
+      },
+      {
+       "en": "Keep typing",
+       "as": "টাইপ কৰি থকা"
+      },
+      {
+       "en": "Look away",
+       "as": "আনফালে চোৱা"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Posture shows respect.",
+      "as": "ভংগীয়ে সন্মান দেখুৱায়।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "You are greeting a visitor. The best response is:",
+        "as": "আলহী আদৰিছা। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Stand, smile and face them",
+         "as": "থিয় হৈ হাঁহি মুখামুখি হোৱা"
+        },
+        {
+         "en": "Keep typing",
+         "as": "টাইপ কৰি থকা"
+        },
+        {
+         "en": "Look away",
+         "as": "আনফালে চোৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Posture shows respect.",
+        "as": "ভংগীয়ে সন্মান দেখুৱায়।"
+       }
+      },
+      {
+       "before": {
+        "en": "Someone leans away as you talk. The best response is:",
+        "as": "কথা কওঁতে কোনোবা আঁতৰি গৈছে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Give more space",
+         "as": "অলপ দূৰত্ব দিয়া"
+        },
+        {
+         "en": "Move closer",
+         "as": "ওচৰলৈ যোৱা"
+        },
+        {
+         "en": "Speak louder",
+         "as": "জোৰে কোৱা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Respect their space.",
+        "as": "তেওঁৰ দূৰত্ব সন্মান কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u3.q2",
+     "type": "tf",
+     "skill": "r-cbody",
+     "s": {
+      "en": "One gesture proves what a person feels.",
+      "as": "এটা অংগভংগীয়ে অনুভৱ প্ৰমাণ কৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Read several signals together.",
+      "as": "একেলগে পঢ়া।"
+     }
+    },
+    {
+     "id": "rs22.u3.q3",
+     "type": "match",
+     "skill": "r-cbody",
+     "q": {
+      "en": "Match the channel to an example",
+      "as": "মাধ্যমক উদাহৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Verbal",
+        "as": "শাব্দিক"
+       },
+       {
+        "en": "Spoken words",
+        "as": "কোৱা শব্দ"
+       }
+      ],
+      [
+       {
+        "en": "Written",
+        "as": "লিখিত"
+       },
+       {
+        "en": "A letter",
+        "as": "চিঠি"
+       }
+      ],
+      [
+       {
+        "en": "Non-verbal",
+        "as": "অশাব্দিক"
+       },
+       {
+        "en": "A nod",
+        "as": "মূৰ দোঁওৱা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Three channels.",
+      "as": "তিনি মাধ্যম।"
+     }
+    },
+    {
+     "id": "rs22.u3.q4",
+     "type": "order",
+     "skill": "r-cbody",
+     "q": {
+      "en": "Put the reading in order",
+      "as": "পঢ়া ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Notice the signal",
+       "as": "সংকেত মন কৰা"
+      },
+      {
+       "en": "Look for others",
+       "as": "আনবোৰ চোৱা"
+      },
+      {
+       "en": "Consider context",
+       "as": "প্ৰসংগ"
+      },
+      {
+       "en": "Then respond",
+       "as": "তাৰ পিছত সঁহাৰি"
+      }
+     ],
+     "why": {
+      "en": "Context before conclusion.",
+      "as": "সিদ্ধান্তৰ আগতে প্ৰসংগ।"
+     }
+    },
+    {
+     "id": "rs22.u3.q5",
+     "type": "stepwise",
+     "skill": "r-cbody",
+     "q": {
+      "en": "A speaker's words are calm but their voice shakes.",
+      "as": "বক্তাৰ শব্দ শান্ত, কিন্তু মাত কঁপিছে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Check how they are",
+         "as": "কেনে আছে সোধা"
+        },
+        {
+         "en": "Laugh",
+         "as": "হাঁহা"
+        },
+        {
+         "en": "Ignore it",
+         "as": "এৰি দিয়া"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Tone adds information.",
+        "as": "সুৰে তথ্য দিয়ে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Tone adds information.",
+      "as": "সুৰে তথ্য দিয়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A speaker's words are calm but their voice shakes.",
+        "as": "বক্তাৰ শব্দ শান্ত, কিন্তু মাত কঁপিছে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Check how they are",
+           "as": "কেনে আছে সোধা"
+          },
+          {
+           "en": "Laugh",
+           "as": "হাঁহা"
+          },
+          {
+           "en": "Ignore it",
+           "as": "এৰি দিয়া"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Tone adds information.",
+          "as": "সুৰে তথ্য দিয়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Tone adds information.",
+        "as": "সুৰে তথ্য দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "You must give bad news.",
+        "as": "বেয়া খবৰ দিব লাগে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Shout",
+           "as": "চিঞৰ"
+          },
+          {
+           "en": "Use a calm, kind tone",
+           "as": "শান্ত, মৰমীয়াল সুৰ"
+          },
+          {
+           "en": "Sound cheerful",
+           "as": "ফুৰ্তিত"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Tone must fit.",
+          "as": "সুৰ মিলিব লাগে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Tone must fit.",
+        "as": "সুৰ মিলিব লাগে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Clear messages",
+    "as": "স্পষ্ট বাৰ্তা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Know your audience.",
+     "as": "শ্ৰোতা জানা।"
+    },
+    {
+     "en": "State the main point first.",
+     "as": "মূল কথা আগতে।"
+    },
+    {
+     "en": "Use plain words.",
+     "as": "সৰল শব্দ।"
+    },
+    {
+     "en": "Ask for confirmation.",
+     "as": "নিশ্চিত হোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs22.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Sender to receiver",
+      "as": "প্ৰেৰকৰ পৰা গ্ৰাহকলৈ"
+     },
+     "text": [
+      {
+       "en": "Communication is sender, message, channel, receiver and feedback.",
+       "as": "যোগাযোগ মানে প্ৰেৰক, বাৰ্তা, মাধ্যম, গ্ৰাহক, প্ৰতিক্ৰিয়া।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Sender",
+        "as": "প্ৰেৰক"
+       },
+       {
+        "en": "Message",
+        "as": "বাৰ্তা"
+       },
+       {
+        "en": "Receiver",
+        "as": "গ্ৰাহক"
+       },
+       {
+        "en": "Feedback",
+        "as": "প্ৰতিক্ৰিয়া"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Say the point first",
+      "as": "মূল কথা আগতে"
+     },
+     "text": [
+      {
+       "en": "Busy readers stop early. Put what you need in the first line.",
+       "as": "ব্যস্ত পাঠকে সোনকালে ৰয়। প্ৰথম শাৰীতে কোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Point",
+        "as": "মূল কথা"
+       },
+       {
+        "en": "Reason",
+        "as": "কাৰণ"
+       },
+       {
+        "en": "Action",
+        "as": "কাম"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u4.q1",
+     "type": "inline",
+     "skill": "r-cclear",
+     "before": {
+      "en": "You are explaining a form to a farmer. The best response is:",
+      "as": "খেতিয়কক প্ৰপত্ৰ বুজাইছা। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Use simple local words",
+       "as": "সৰল স্থানীয় শব্দ"
+      },
+      {
+       "en": "Speak faster",
+       "as": "খৰকৈ কোৱা"
+      },
+      {
+       "en": "Use official terms only",
+       "as": "কেৱল চৰকাৰী শব্দ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Fit the audience.",
+      "as": "শ্ৰোতাৰ উপযোগী।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "You are explaining a form to a farmer. The best response is:",
+        "as": "খেতিয়কক প্ৰপত্ৰ বুজাইছা। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Use simple local words",
+         "as": "সৰল স্থানীয় শব্দ"
+        },
+        {
+         "en": "Speak faster",
+         "as": "খৰকৈ কোৱা"
+        },
+        {
+         "en": "Use official terms only",
+         "as": "কেৱল চৰকাৰী শব্দ"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Fit the audience.",
+        "as": "শ্ৰোতাৰ উপযোগী।"
+       }
+      },
+      {
+       "before": {
+        "en": "You email your officer about a delay. The best response is:",
+        "as": "পলমৰ বিষয়ে বিষয়াক ইমেইল। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "State the delay and new date first",
+         "as": "পলম আৰু নতুন তাৰিখ আগতে"
+        },
+        {
+         "en": "Leave out the date",
+         "as": "তাৰিখ এৰা"
+        },
+        {
+         "en": "Start with long background",
+         "as": "দীঘল পটভূমিৰে"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Point first.",
+        "as": "মূল কথা আগতে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u4.q2",
+     "type": "tf",
+     "skill": "r-cclear",
+     "s": {
+      "en": "Decoding means understanding a received message.",
+      "as": "ডিক'ডিং মানে পোৱা বাৰ্তা বুজা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The receiver decodes.",
+      "as": "গ্ৰাহকে কৰে।"
+     }
+    },
+    {
+     "id": "rs22.u4.q3",
+     "type": "match",
+     "skill": "r-cclear",
+     "q": {
+      "en": "Match the part to its role",
+      "as": "অংশক ভূমিকাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Sender",
+        "as": "প্ৰেৰক"
+       },
+       {
+        "en": "Encodes",
+        "as": "সংকেতিত কৰে"
+       }
+      ],
+      [
+       {
+        "en": "Receiver",
+        "as": "গ্ৰাহক"
+       },
+       {
+        "en": "Decodes",
+        "as": "অৰ্থ কৰে"
+       }
+      ],
+      [
+       {
+        "en": "Feedback",
+        "as": "প্ৰতিক্ৰিয়া"
+       },
+       {
+        "en": "Closes the loop",
+        "as": "চক্ৰ সম্পূৰ্ণ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "A loop, not a line.",
+      "as": "শাৰী নহয়, চক্ৰ।"
+     }
+    },
+    {
+     "id": "rs22.u4.q4",
+     "type": "order",
+     "skill": "r-cclear",
+     "q": {
+      "en": "Process in order",
+      "as": "প্ৰক্ৰিয়া ক্ৰমে"
+     },
+     "items": [
+      {
+       "en": "Sender forms the idea",
+       "as": "প্ৰেৰকৰ ধাৰণা"
+      },
+      {
+       "en": "Message is sent",
+       "as": "বাৰ্তা প্ৰেৰণ"
+      },
+      {
+       "en": "Receiver decodes",
+       "as": "গ্ৰাহকে বুজে"
+      },
+      {
+       "en": "Feedback returns",
+       "as": "প্ৰতিক্ৰিয়া"
+      }
+     ],
+     "why": {
+      "en": "The loop.",
+      "as": "চক্ৰ।"
+     }
+    },
+    {
+     "id": "rs22.u4.q5",
+     "type": "stepwise",
+     "skill": "r-cclear",
+     "q": {
+      "en": "You must tell 200 villagers about a camp.",
+      "as": "200 গাঁওবাসীক শিবিৰৰ কথা ক'ব লাগে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Use a local announcement",
+         "as": "স্থানীয় ঘোষণা"
+        },
+        {
+         "en": "Tell one person",
+         "as": "এজনক কোৱা"
+        },
+        {
+         "en": "Email each one",
+         "as": "প্ৰত্যেককে ইমেইল"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Pick the fitting channel.",
+        "as": "উপযুক্ত মাধ্যম।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Pick the fitting channel.",
+      "as": "উপযুক্ত মাধ্যম।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "You must tell 200 villagers about a camp.",
+        "as": "200 গাঁওবাসীক শিবিৰৰ কথা ক'ব লাগে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Use a local announcement",
+           "as": "স্থানীয় ঘোষণা"
+          },
+          {
+           "en": "Tell one person",
+           "as": "এজনক কোৱা"
+          },
+          {
+           "en": "Email each one",
+           "as": "প্ৰত্যেককে ইমেইল"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Pick the fitting channel.",
+          "as": "উপযুক্ত মাধ্যম।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Pick the fitting channel.",
+        "as": "উপযুক্ত মাধ্যম।"
+       }
+      },
+      {
+       "q": {
+        "en": "A sensitive personal matter must be raised.",
+        "as": "সংবেদনশীল ব্যক্তিগত কথা ক'ব লাগে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Talk face to face",
+           "as": "মুখামুখি"
+          },
+          {
+           "en": "Use a notice board",
+           "as": "জাননী ফলক"
+          },
+          {
+           "en": "Post on a group",
+           "as": "গোটত দিয়া"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Sensitive means private.",
+          "as": "সংবেদনশীল মানে ব্যক্তিগত।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Sensitive means private.",
+        "as": "সংবেদনশীল মানে ব্যক্তিগত।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Empathy and rapport",
+    "as": "সমবেদনা আৰু সম্পৰ্ক"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Empathy understands another's view.",
+     "as": "সমবেদনাই আনৰ দৃষ্টিভংগী বুজে।"
+    },
+    {
+     "en": "Sympathy feels sorry for someone.",
+     "as": "সহানুভূতি মানে দুখ পোৱা।"
+    },
+    {
+     "en": "Rapport grows from respect.",
+     "as": "সন্মানৰ পৰা সম্পৰ্ক।"
+    },
+    {
+     "en": "Acknowledge feelings before facts.",
+     "as": "তথ্যৰ আগতে অনুভৱ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs22.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "With them, not for them",
+      "as": "তেওঁৰ লগত"
+     },
+     "text": [
+      {
+       "en": "Empathy says 'I see why this is hard', not 'poor you'.",
+       "as": "সমবেদনাই কয় 'টান বুলি বুজিছোঁ', 'বেচেৰা' নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Empathy: feel with",
+        "as": "সমবেদনা: লগত অনুভৱ"
+       },
+       {
+        "en": "Sympathy: feel for",
+        "as": "সহানুভূতি: কাৰণে অনুভৱ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Feelings first",
+      "as": "অনুভৱ আগতে"
+     },
+     "text": [
+      {
+       "en": "An upset person cannot take in facts until they feel heard.",
+       "as": "অসন্তুষ্ট মানুহে শুনা নাপালে তথ্য নলয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Acknowledge",
+        "as": "স্বীকাৰ"
+       },
+       {
+        "en": "Then explain",
+        "as": "তাৰ পিছত বুজোৱা"
+       },
+       {
+        "en": "Then solve",
+        "as": "তাৰ পিছত সমাধান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u5.q1",
+     "type": "inline",
+     "skill": "r-cempathy",
+     "before": {
+      "en": "A student failed and is upset. The best response is:",
+      "as": "ছাত্ৰ অনুত্তীৰ্ণ হৈ দুখিত। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Compare with toppers",
+       "as": "শীৰ্ষস্থানীয়ৰ লগত তুলনা"
+      },
+      {
+       "en": "Acknowledge it and offer help",
+       "as": "স্বীকাৰ কৰি সহায় আগবঢ়োৱা"
+      },
+      {
+       "en": "Say it does not matter",
+       "as": "একো নহয় বুলি কোৱা"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Acknowledge, then support.",
+      "as": "স্বীকাৰ, তাৰ পিছত সহায়।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A student failed and is upset. The best response is:",
+        "as": "ছাত্ৰ অনুত্তীৰ্ণ হৈ দুখিত। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Compare with toppers",
+         "as": "শীৰ্ষস্থানীয়ৰ লগত তুলনা"
+        },
+        {
+         "en": "Acknowledge it and offer help",
+         "as": "স্বীকাৰ কৰি সহায় আগবঢ়োৱা"
+        },
+        {
+         "en": "Say it does not matter",
+         "as": "একো নহয় বুলি কোৱা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Acknowledge, then support.",
+        "as": "স্বীকাৰ, তাৰ পিছত সহায়।"
+       }
+      },
+      {
+       "before": {
+        "en": "An elder struggles with an online form. The best response is:",
+        "as": "জ্যেষ্ঠজনক অনলাইন প্ৰপত্ৰত অসুবিধা। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Fill it without asking",
+         "as": "নুসুধি পূৰণ"
+        },
+        {
+         "en": "Sit with them and guide patiently",
+         "as": "লগত বহি ধৈৰ্যৰে বুজোৱা"
+        },
+        {
+         "en": "Tell them to ask their children",
+         "as": "সন্তানক সুধিবলৈ কোৱা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Respect and patience.",
+        "as": "সন্মান আৰু ধৈৰ্য।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u5.q2",
+     "type": "tf",
+     "skill": "r-cempathy",
+     "s": {
+      "en": "Empathy and sympathy mean exactly the same.",
+      "as": "সমবেদনা আৰু সহানুভূতিৰ অৰ্থ একে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "They differ.",
+      "as": "বেলেগ।"
+     }
+    },
+    {
+     "id": "rs22.u5.q3",
+     "type": "match",
+     "skill": "r-cempathy",
+     "q": {
+      "en": "Match the term to its meaning",
+      "as": "শব্দক অৰ্থৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Empathy",
+        "as": "সমবেদনা"
+       },
+       {
+        "en": "Feeling with someone",
+        "as": "লগত অনুভৱ"
+       }
+      ],
+      [
+       {
+        "en": "Rapport",
+        "as": "সুসম্পৰ্ক"
+       },
+       {
+        "en": "Mutual trust",
+        "as": "পাৰস্পৰিক বিশ্বাস"
+       }
+      ],
+      [
+       {
+        "en": "Self-awareness",
+        "as": "আত্মসচেতনতা"
+       },
+       {
+        "en": "Knowing yourself",
+        "as": "নিজক জনা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Three skills.",
+      "as": "তিনি দক্ষতা।"
+     }
+    },
+    {
+     "id": "rs22.u5.q4",
+     "type": "order",
+     "skill": "r-cempathy",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Listen",
+       "as": "শুনা"
+      },
+      {
+       "en": "Acknowledge",
+       "as": "স্বীকাৰ"
+      },
+      {
+       "en": "Explain",
+       "as": "বুজোৱা"
+      },
+      {
+       "en": "Agree a way forward",
+       "as": "আগবঢ়াৰ পথ"
+      }
+     ],
+     "why": {
+      "en": "Feelings before facts.",
+      "as": "তথ্যৰ আগতে অনুভৱ।"
+     }
+    },
+    {
+     "id": "rs22.u5.q5",
+     "type": "stepwise",
+     "skill": "r-cempathy",
+     "q": {
+      "en": "A new colleague eats lunch alone.",
+      "as": "নতুন সহকৰ্মীয়ে অকলে খায়।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Gossip",
+         "as": "কথা পতা"
+        },
+        {
+         "en": "Invite them to join",
+         "as": "লগ দিবলৈ মাতা"
+        },
+        {
+         "en": "Ignore them",
+         "as": "এৰি দিয়া"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Include them.",
+        "as": "সামৰি লোৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Include them.",
+      "as": "সামৰি লোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A new colleague eats lunch alone.",
+        "as": "নতুন সহকৰ্মীয়ে অকলে খায়।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Gossip",
+           "as": "কথা পতা"
+          },
+          {
+           "en": "Invite them to join",
+           "as": "লগ দিবলৈ মাতা"
+          },
+          {
+           "en": "Ignore them",
+           "as": "এৰি দিয়া"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Include them.",
+          "as": "সামৰি লোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Include them.",
+        "as": "সামৰি লোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A colleague is being teased.",
+        "as": "সহকৰ্মীক জোকোৱা হৈছে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Join in",
+           "as": "লগ লগা"
+          },
+          {
+           "en": "Speak up respectfully",
+           "as": "সন্মানেৰে মাত মতা"
+          },
+          {
+           "en": "Watch silently",
+           "as": "মনে মনে চোৱা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Do not stay silent.",
+          "as": "মনে মনে নাথাকিবা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Do not stay silent.",
+        "as": "মনে মনে নাথাকিবা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Barriers",
+    "as": "বাধা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Noise blocks messages.",
+     "as": "কোলাহলে বাৰ্তা ৰোধ কৰে।"
+    },
+    {
+     "en": "Language can divide.",
+     "as": "ভাষাই ভাগ কৰিব পাৰে।"
+    },
+    {
+     "en": "Assumptions distort meaning.",
+     "as": "ধাৰণাই অৰ্থ বিগাৰে।"
+    },
+    {
+     "en": "Culture shapes understanding.",
+     "as": "সংস্কৃতিয়ে বুজাবুজি গঢ়ে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs22.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Name the barrier",
+      "as": "বাধাৰ নাম কোৱা"
+     },
+     "text": [
+      {
+       "en": "Most failures have a simple cause. Name it, then remove it.",
+       "as": "বেছিভাগ ব্যৰ্থতাৰ সৰল কাৰণ। নাম দি আঁতৰোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Physical: noise",
+        "as": "ভৌতিক: কোলাহল"
+       },
+       {
+        "en": "Language: jargon",
+        "as": "ভাষা: কঠিন শব্দ"
+       },
+       {
+        "en": "Emotional: anger",
+        "as": "আৱেগিক: খং"
+       },
+       {
+        "en": "Cultural: customs",
+        "as": "সাংস্কৃতিক: ৰীতি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Check, do not assume",
+      "as": "ধৰি নলৈ পৰীক্ষা"
+     },
+     "text": [
+      {
+       "en": "Ask rather than guess what someone meant.",
+       "as": "অনুমান নকৰি সোধা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Notice confusion",
+        "as": "বিভ্ৰান্তি"
+       },
+       {
+        "en": "Ask",
+        "as": "সোধা"
+       },
+       {
+        "en": "Clarify",
+        "as": "স্পষ্ট"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs22.u6.q1",
+     "type": "inline",
+     "skill": "r-cbarrier",
+     "before": {
+      "en": "A meeting is drowned by construction noise. The best response is:",
+      "as": "নিৰ্মাণৰ শব্দত সভা নুশুনা। আটাইতকৈ ভাল সঁহাৰি:"
+     },
+     "after": {
+      "en": ".",
+      "as": "।"
+     },
+     "options": [
+      {
+       "en": "Carry on anyway",
+       "as": "তেনেকৈয়ে চলোৱা"
+      },
+      {
+       "en": "Shout louder",
+       "as": "জোৰে চিঞৰা"
+      },
+      {
+       "en": "Move to a quieter room",
+       "as": "নিৰিবিলি কোঠালৈ যোৱা"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Remove the barrier.",
+      "as": "বাধা আঁতৰোৱা।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "A meeting is drowned by construction noise. The best response is:",
+        "as": "নিৰ্মাণৰ শব্দত সভা নুশুনা। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Carry on anyway",
+         "as": "তেনেকৈয়ে চলোৱা"
+        },
+        {
+         "en": "Shout louder",
+         "as": "জোৰে চিঞৰা"
+        },
+        {
+         "en": "Move to a quieter room",
+         "as": "নিৰিবিলি কোঠালৈ যোৱা"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Remove the barrier.",
+        "as": "বাধা আঁতৰোৱা।"
+       }
+      },
+      {
+       "before": {
+        "en": "A visitor does not follow your language. The best response is:",
+        "as": "আলহীয়ে তোমাৰ ভাষা নুবুজে। আটাইতকৈ ভাল সঁহাৰি:"
+       },
+       "after": {
+        "en": ".",
+        "as": "।"
+       },
+       "options": [
+        {
+         "en": "Repeat louder",
+         "as": "জোৰে পুনৰাবৃত্তি"
+        },
+        {
+         "en": "Send them away",
+         "as": "পঠিয়াই দিয়া"
+        },
+        {
+         "en": "Use simple words or a translator",
+         "as": "সৰল শব্দ বা অনুবাদক"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Bridge the language.",
+        "as": "ভাষাৰ দলং।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs22.u6.q2",
+     "type": "tf",
+     "skill": "r-cbarrier",
+     "s": {
+      "en": "Jargon can be a barrier for outsiders.",
+      "as": "কঠিন পৰিভাষা বাহিৰৰ মানুহৰ বাবে বাধা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Use plain words.",
+      "as": "সৰল শব্দ।"
+     }
+    },
+    {
+     "id": "rs22.u6.q3",
+     "type": "match",
+     "skill": "r-cbarrier",
+     "q": {
+      "en": "Match the barrier to its type",
+      "as": "বাধাক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Loud traffic",
+        "as": "জোৰ যান-বাহন"
+       },
+       {
+        "en": "Physical",
+        "as": "ভৌতিক"
+       }
+      ],
+      [
+       {
+        "en": "Technical terms",
+        "as": "কাৰিকৰী শব্দ"
+       },
+       {
+        "en": "Language",
+        "as": "ভাষা"
+       }
+      ],
+      [
+       {
+        "en": "Anger",
+        "as": "খং"
+       },
+       {
+        "en": "Emotional",
+        "as": "আৱেগিক"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name it.",
+      "as": "নাম কোৱা।"
+     }
+    },
+    {
+     "id": "rs22.u6.q4",
+     "type": "order",
+     "skill": "r-cbarrier",
+     "q": {
+      "en": "Put the steps in order",
+      "as": "খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Spot the problem",
+       "as": "সমস্যা চিনা"
+      },
+      {
+       "en": "Name the barrier",
+       "as": "বাধাৰ নাম"
+      },
+      {
+       "en": "Change approach",
+       "as": "পদ্ধতি সলনি"
+      },
+      {
+       "en": "Confirm it worked",
+       "as": "নিশ্চিত"
+      }
+     ],
+     "why": {
+      "en": "Name, then fix.",
+      "as": "নাম, তাৰ পিছত সমাধান।"
+     }
+    },
+    {
+     "id": "rs22.u6.q5",
+     "type": "stepwise",
+     "skill": "r-cbarrier",
+     "q": {
+      "en": "Colleagues from different cultures disagree on a greeting.",
+      "as": "বেলেগ সংস্কৃতিৰ সহকৰ্মীৰ অভিবাদনৰ মতভেদ।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Best choice?",
+        "as": "ভাল বাছনি?"
+       },
+       "options": [
+        {
+         "en": "Ask and respect the custom",
+         "as": "সুধি ৰীতি সন্মান"
+        },
+        {
+         "en": "Mock it",
+         "as": "উপহাস"
+        },
+        {
+         "en": "Insist on yours",
+         "as": "নিজৰটো জোৰ"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Respect difference.",
+        "as": "পাৰ্থক্য সন্মান।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Respect difference.",
+      "as": "পাৰ্থক্য সন্মান।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Colleagues from different cultures disagree on a greeting.",
+        "as": "বেলেগ সংস্কৃতিৰ সহকৰ্মীৰ অভিবাদনৰ মতভেদ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Ask and respect the custom",
+           "as": "সুধি ৰীতি সন্মান"
+          },
+          {
+           "en": "Mock it",
+           "as": "উপহাস"
+          },
+          {
+           "en": "Insist on yours",
+           "as": "নিজৰটো জোৰ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Respect difference.",
+          "as": "পাৰ্থক্য সন্মান।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Respect difference.",
+        "as": "পাৰ্থক্য সন্মান।"
+       }
+      },
+      {
+       "q": {
+        "en": "You are unsure what a message meant.",
+        "as": "বাৰ্তাৰ অৰ্থত সন্দেহ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Best choice?",
+          "as": "ভাল বাছনি?"
+         },
+         "options": [
+          {
+           "en": "Assume the worst",
+           "as": "বেয়াটো ধৰা"
+          },
+          {
+           "en": "Ignore it",
+           "as": "এৰি দিয়া"
+          },
+          {
+           "en": "Ask the sender",
+           "as": "প্ৰেৰকক সোধা"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Clarify.",
+          "as": "স্পষ্ট কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Clarify.",
+        "as": "স্পষ্ট কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Communication test",
+   "as": "যোগাযোগৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs22.t.q1",
+    "type": "tf",
+    "skill": "r-clisten",
+    "s": {
+     "en": "Paraphrasing checks understanding.",
+     "as": "ঘূৰাই কোৱাই বুজাবুজি নিশ্চিত কৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs22.t.q2",
+    "type": "tf",
+    "skill": "r-cfeed",
+    "s": {
+     "en": "Critical feedback is best given in public.",
+     "as": "সমালোচনা ৰাজহুৱাকৈ দিয়া ভাল।"
+    },
+    "answer": false,
+    "why": {
+     "en": "Give it privately.",
+     "as": "গোপনে দিয়া।"
+    }
+   },
+   {
+    "id": "rs22.t.q3",
+    "type": "tf",
+    "skill": "r-cbody",
+    "s": {
+     "en": "Tone can change a message's meaning.",
+     "as": "সুৰে বাৰ্তাৰ অৰ্থ সলাব পাৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs22.t.q4",
+    "type": "tf",
+    "skill": "r-cclear",
+    "s": {
+     "en": "Feedback completes the communication loop.",
+     "as": "প্ৰতিক্ৰিয়াই যোগাযোগৰ চক্ৰ সম্পূৰ্ণ কৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs22.t.q5",
+    "type": "tf",
+    "skill": "r-cempathy",
+    "s": {
+     "en": "Empathy means feeling with someone.",
+     "as": "সমবেদনা মানে লগত অনুভৱ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs22.t.q6",
+    "type": "tf",
+    "skill": "r-cbarrier",
+    "s": {
+     "en": "Assumptions can distort a message.",
+     "as": "ধাৰণাই বাৰ্তা বিগাৰিব পাৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   }
+  ]
+ }
+}

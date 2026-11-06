@@ -35,11 +35,11 @@ The app must feel like a game, not a textbook: short units, a story first, a dif
 
 Built by the engine; the author writes text and picks a picture.
 
-1. **Kicker** "STORY" with one progress dot per paragraph.
-2. **Hero** painting, map or line art; the first year on the card shows as a terra stamp.
+1. **Hero** painting or line art runs edge to edge above a glass card. A map, diagram, widget or captioned document sits inside the card instead; the first year on the card shows as a red stamp.
+2. **Kicker** "UNIT 3 · STORY" with one progress dot per paragraph.
 3. **Title:** at most 6 words, a hook, not a label ("Blood on the forehead").
 4. **Lede:** the first paragraph, larger; it must make sense alone.
-5. **Beats:** each further paragraph appears on the next tap.
+5. **Beats:** each further paragraph appears on the next tap. A last paragraph ending in a question becomes the green "Think about it" card.
 
 Limits (build): at most 3 paragraphs, 35 words per paragraph, 55 words per card (English). One idea per paragraph.
 
@@ -56,6 +56,10 @@ A lesson or story `map` may set `"base": "india"`; the default is `"assam"`. See
 ## Mathematics additions
 
 `solve`, `explore` and `stepwise` steps, story-card widgets, number `variants`, `skill` and `traps` fields and `$...$` maths come from `app/math.js`. See [MATHEMATICS-COURSE.md](MATHEMATICS-COURSE.md). A step with `variants` keeps one permanent id across all its versions.
+
+## Reasoning additions
+
+The Reasoning course adds the scenes in `app/reasonstage.js`, listed in `WIDGET_KINDS` in `scripts/build.py`, and `"input": "letters"` on a `solve` step. See [REASONING-COURSE.md](REASONING-COURSE.md).
 
 ## Learning loop (in `app/engine.js`)
 

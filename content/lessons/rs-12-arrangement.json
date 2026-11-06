@@ -1,0 +1,1895 @@
+{
+ "id": "rs-12-arrangement",
+ "course": "reasoning",
+ "no": 12,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Arrangements",
+  "as": "সজ্জা"
+ },
+ "reign": {
+  "en": "Rows, circles, matching",
+  "as": "শাৰী, বৃত্ত, মিলোৱা"
+ },
+ "portrait": "reasoning/position.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Fixed facts first",
+    "as": "নিশ্চিত তথ্য আগতে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Start with the clue that fixes a seat.",
+     "as": "আসন ঠিক কৰা ইংগিতৰ পৰা আৰম্ভ।"
+    },
+    {
+     "en": "Add clues that link to it.",
+     "as": "লগ লগা ইংগিত যোগ কৰা।"
+    },
+    {
+     "en": "Keep 'next to' for later.",
+     "as": "'কাষত' পিছলৈ ৰাখা।"
+    },
+    {
+     "en": "Check all clues at the end.",
+     "as": "শেষত সকলো চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs12.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Sort the clues",
+      "as": "ইংগিত বাছা"
+     },
+     "text": [
+      {
+       "en": "Some clues fix a place. Others only link people. Place the fixed ones first.",
+       "as": "কিছুমান ইংগিতে ঠাই ঠিক কৰে। আন কিছুমানে কেৱল সংযোগ কৰে। ঠিকখিনি আগতে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Fixed: A is at the left end",
+        "as": "ঠিক: A বাওঁ মূৰত"
+       },
+       {
+        "en": "Link: B is next to C",
+        "as": "সংযোগ: B, C ৰ কাষত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Must, not may",
+      "as": "লাগিবই, হ'ব পাৰে নহয়"
+     },
+     "text": [
+      {
+       "en": "Write only what must be true. If two seats are possible, keep both in mind.",
+       "as": "লাগিবই লগাখিনিহে লিখা। দুটা আসন সম্ভৱ হ'লে দুয়োটা মনত ৰাখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Fixed",
+        "as": "ঠিক"
+       },
+       {
+        "en": "Linked",
+        "as": "সংযোগ"
+       },
+       {
+        "en": "Possible",
+        "as": "সম্ভৱ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u1.q1",
+     "type": "explore",
+     "skill": "r-afixed",
+     "q": {
+      "en": "Seat them left to right: A is at the left end, and C is at the right end.",
+      "as": "বাওঁৰ পৰা সোঁলৈ বহুওৱা: A বাওঁ মূৰত, C সোঁ মূৰত।"
+     },
+     "widget": {
+      "kind": "seats",
+      "names": [
+       "A",
+       "B",
+       "C"
+      ],
+      "round": false
+     },
+     "target": 123,
+     "answerText": {
+      "en": "A B C",
+      "as": "A B C"
+     },
+     "why": {
+      "en": "B takes the seat left over.",
+      "as": "B বাকী আসনত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Seat them left to right: A is at the left end, and C is at the right end.",
+        "as": "বাওঁৰ পৰা সোঁলৈ বহুওৱা: A বাওঁ মূৰত, C সোঁ মূৰত।"
+       },
+       "widget": {
+        "kind": "seats",
+        "names": [
+         "A",
+         "B",
+         "C"
+        ],
+        "round": false
+       },
+       "target": 123,
+       "answerText": {
+        "en": "A B C",
+        "as": "A B C"
+       },
+       "why": {
+        "en": "B takes the seat left over.",
+        "as": "B বাকী আসনত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Seat them left to right: Q is in the middle, and R is left of Q.",
+        "as": "বাওঁৰ পৰা সোঁলৈ: Q মাজত, R, Q ৰ বাওঁফালে।"
+       },
+       "widget": {
+        "kind": "seats",
+        "names": [
+         "P",
+         "Q",
+         "R"
+        ],
+        "round": false
+       },
+       "target": 321,
+       "answerText": {
+        "en": "R Q P",
+        "as": "R Q P"
+       },
+       "why": {
+        "en": "P takes the right end.",
+        "as": "P সোঁ মূৰত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u1.q2",
+     "type": "tf",
+     "skill": "r-afixed",
+     "s": {
+      "en": "'B is next to C' fixes B's exact seat.",
+      "as": "'B, C ৰ কাষত' ই B ৰ ঠিক আসন কয়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "B could be on either side.",
+      "as": "B যিকোনো ফালে হ'ব পাৰে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-maybe",
+       "why": {
+        "en": "That is possible, not certain. Keep only what must be true.",
+        "as": "সেয়া সম্ভৱ, নিশ্চিত নহয়। লাগিবই লগাখিনি ৰাখা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u1.q3",
+     "type": "match",
+     "skill": "r-afixed",
+     "q": {
+      "en": "Match the clue to its kind",
+      "as": "ইংগিতক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A is at the end",
+        "as": "A মূৰত"
+       },
+       {
+        "en": "Fixed",
+        "as": "ঠিক"
+       }
+      ],
+      [
+       {
+        "en": "B is beside C",
+        "as": "B, C ৰ কাষত"
+       },
+       {
+        "en": "Link",
+        "as": "সংযোগ"
+       }
+      ],
+      [
+       {
+        "en": "D is not first",
+        "as": "D প্ৰথম নহয়"
+       },
+       {
+        "en": "Exclusion",
+        "as": "বাদ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Sort before seating.",
+      "as": "বহুওৱাৰ আগতে বাছা।"
+     }
+    },
+    {
+     "id": "rs12.u1.q4",
+     "type": "order",
+     "skill": "r-afixed",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Draw empty seats",
+       "as": "খালী আসন আঁকা"
+      },
+      {
+       "en": "Place fixed clues",
+       "as": "ঠিক ইংগিত"
+      },
+      {
+       "en": "Add linked clues",
+       "as": "সংযোগ ইংগিত"
+      },
+      {
+       "en": "Check all clues",
+       "as": "সকলো চোৱা"
+      }
+     ],
+     "why": {
+      "en": "Fixed first.",
+      "as": "ঠিকখিনি আগতে।"
+     }
+    },
+    {
+     "id": "rs12.u1.q5",
+     "type": "stepwise",
+     "skill": "r-afixed",
+     "q": {
+      "en": "X sits left of Y. Z sits at the right end. Three seats in a row. Who is in the middle?",
+      "as": "X, Y ৰ বাওঁফালে। Z সোঁ মূৰত। তিনি আসন। মাজত কোন?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Right end?",
+        "as": "সোঁ মূৰত?"
+       },
+       "options": [
+        {
+         "en": "X",
+         "as": "X"
+        },
+        {
+         "en": "Y",
+         "as": "Y"
+        },
+        {
+         "en": "Z",
+         "as": "Z"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Stated.",
+        "as": "কোৱা হৈছে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Left end?",
+        "as": "বাওঁ মূৰত?"
+       },
+       "options": [
+        {
+         "en": "Y",
+         "as": "Y"
+        },
+        {
+         "en": "X",
+         "as": "X"
+        },
+        {
+         "en": "Z",
+         "as": "Z"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "X is left of Y.",
+        "as": "X, Y ৰ বাওঁফালে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Middle?",
+        "as": "মাজত?"
+       },
+       "options": [
+        {
+         "en": "X",
+         "as": "X"
+        },
+        {
+         "en": "Y",
+         "as": "Y"
+        },
+        {
+         "en": "Z",
+         "as": "Z"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "The seat left.",
+        "as": "বাকী আসন।"
+       }
+      }
+     ],
+     "why": {
+      "en": "X, Y, Z.",
+      "as": "X, Y, Z।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "X sits left of Y. Z sits at the right end. Three seats in a row. Who is in the middle?",
+        "as": "X, Y ৰ বাওঁফালে। Z সোঁ মূৰত। তিনি আসন। মাজত কোন?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Right end?",
+          "as": "সোঁ মূৰত?"
+         },
+         "options": [
+          {
+           "en": "X",
+           "as": "X"
+          },
+          {
+           "en": "Y",
+           "as": "Y"
+          },
+          {
+           "en": "Z",
+           "as": "Z"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Left end?",
+          "as": "বাওঁ মূৰত?"
+         },
+         "options": [
+          {
+           "en": "Y",
+           "as": "Y"
+          },
+          {
+           "en": "X",
+           "as": "X"
+          },
+          {
+           "en": "Z",
+           "as": "Z"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "X is left of Y.",
+          "as": "X, Y ৰ বাওঁফালে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Middle?",
+          "as": "মাজত?"
+         },
+         "options": [
+          {
+           "en": "X",
+           "as": "X"
+          },
+          {
+           "en": "Y",
+           "as": "Y"
+          },
+          {
+           "en": "Z",
+           "as": "Z"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The seat left.",
+          "as": "বাকী আসন।"
+         }
+        }
+       ],
+       "why": {
+        "en": "X, Y, Z.",
+        "as": "X, Y, Z।"
+       }
+      },
+      {
+       "q": {
+        "en": "L sits left of M. N sits at the right end. Three seats in a row. Who is in the middle?",
+        "as": "L, M ৰ বাওঁফালে। N সোঁ মূৰত। তিনি আসন। মাজত কোন?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Right end?",
+          "as": "সোঁ মূৰত?"
+         },
+         "options": [
+          {
+           "en": "N",
+           "as": "N"
+          },
+          {
+           "en": "L",
+           "as": "L"
+          },
+          {
+           "en": "M",
+           "as": "M"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Left end?",
+          "as": "বাওঁ মূৰত?"
+         },
+         "options": [
+          {
+           "en": "M",
+           "as": "M"
+          },
+          {
+           "en": "L",
+           "as": "L"
+          },
+          {
+           "en": "N",
+           "as": "N"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "L is left of M.",
+          "as": "L, M ৰ বাওঁফালে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Middle?",
+          "as": "মাজত?"
+         },
+         "options": [
+          {
+           "en": "L",
+           "as": "L"
+          },
+          {
+           "en": "M",
+           "as": "M"
+          },
+          {
+           "en": "N",
+           "as": "N"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The seat left.",
+          "as": "বাকী আসন।"
+         }
+        }
+       ],
+       "why": {
+        "en": "L, M, N.",
+        "as": "L, M, N।"
+       }
+      },
+      {
+       "q": {
+        "en": "D sits left of E. F sits at the right end. Three seats in a row. Who is in the middle?",
+        "as": "D, E ৰ বাওঁফালে। F সোঁ মূৰত। তিনি আসন। মাজত কোন?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Right end?",
+          "as": "সোঁ মূৰত?"
+         },
+         "options": [
+          {
+           "en": "D",
+           "as": "D"
+          },
+          {
+           "en": "F",
+           "as": "F"
+          },
+          {
+           "en": "E",
+           "as": "E"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Stated.",
+          "as": "কোৱা হৈছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Left end?",
+          "as": "বাওঁ মূৰত?"
+         },
+         "options": [
+          {
+           "en": "D",
+           "as": "D"
+          },
+          {
+           "en": "E",
+           "as": "E"
+          },
+          {
+           "en": "F",
+           "as": "F"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "D is left of E.",
+          "as": "D, E ৰ বাওঁফালে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Middle?",
+          "as": "মাজত?"
+         },
+         "options": [
+          {
+           "en": "E",
+           "as": "E"
+          },
+          {
+           "en": "F",
+           "as": "F"
+          },
+          {
+           "en": "D",
+           "as": "D"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The seat left.",
+          "as": "বাকী আসন।"
+         }
+        }
+       ],
+       "why": {
+        "en": "D, E, F.",
+        "as": "D, E, F।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Sitting in a row",
+    "as": "শাৰীত বহা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Decide which way they face.",
+     "as": "কোন ফালে মুখ চোৱা।"
+    },
+    {
+     "en": "Your left is the page's left if facing you.",
+     "as": "তোমাৰ ফালে মুখ হ'লে কথা বেলেগ।"
+    },
+    {
+     "en": "'Between' needs one on each side.",
+     "as": "'মাজত' মানে দুয়োফালে।"
+    },
+    {
+     "en": "'Immediately' means next seat.",
+     "as": "'ঠিক' মানে কাষৰ আসন।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs12.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Mind the facing",
+      "as": "মুখৰ দিশ চোৱা"
+     },
+     "text": [
+      {
+       "en": "When a row faces north, left and right match the page. Facing south, they flip.",
+       "as": "শাৰী উত্তৰমুখী হ'লে পৃষ্ঠাৰ দৰে। দক্ষিণমুখী হ'লে ওলোটা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "North: page left is left",
+        "as": "উত্তৰ: পৃষ্ঠাৰ বাওঁ বাওঁ"
+       },
+       {
+        "en": "South: page left is right",
+        "as": "দক্ষিণ: পৃষ্ঠাৰ বাওঁ সোঁ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Exact words matter",
+      "as": "শব্দ গুৰুত্বপূৰ্ণ"
+     },
+     "text": [
+      {
+       "en": "'Left of' can be any seat. 'Immediately left of' is the next seat.",
+       "as": "'বাওঁফালে' যিকোনো আসন। 'ঠিক বাওঁফালে' কাষৰ আসন।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Left of: far or near",
+        "as": "বাওঁ: দূৰ বা ওচৰ"
+       },
+       {
+        "en": "Immediately left: next",
+        "as": "ঠিক বাওঁ: কাষত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u2.q1",
+     "type": "explore",
+     "skill": "r-aline",
+     "q": {
+      "en": "Facing north, left to right: B is between A and C, and A is at the left end. D is at the right end.",
+      "as": "উত্তৰমুখী, বাওঁৰ পৰা: B, A আৰু C ৰ মাজত, A বাওঁ মূৰত। D সোঁ মূৰত।"
+     },
+     "widget": {
+      "kind": "seats",
+      "names": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "round": false
+     },
+     "target": 1234,
+     "answerText": {
+      "en": "A B C D",
+      "as": "A B C D"
+     },
+     "why": {
+      "en": "A, B, C, D.",
+      "as": "A, B, C, D।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Facing north, left to right: B is between A and C, and A is at the left end. D is at the right end.",
+        "as": "উত্তৰমুখী, বাওঁৰ পৰা: B, A আৰু C ৰ মাজত, A বাওঁ মূৰত। D সোঁ মূৰত।"
+       },
+       "widget": {
+        "kind": "seats",
+        "names": [
+         "A",
+         "B",
+         "C",
+         "D"
+        ],
+        "round": false
+       },
+       "target": 1234,
+       "answerText": {
+        "en": "A B C D",
+        "as": "A B C D"
+       },
+       "why": {
+        "en": "A, B, C, D.",
+        "as": "A, B, C, D।"
+       }
+      },
+      {
+       "q": {
+        "en": "Facing north, left to right: S is immediately right of Q. P is at the right end. R is at the left end.",
+        "as": "উত্তৰমুখী, বাওঁৰ পৰা: S, Q ৰ ঠিক সোঁফালে। P সোঁ মূৰত। R বাওঁ মূৰত।"
+       },
+       "widget": {
+        "kind": "seats",
+        "names": [
+         "P",
+         "Q",
+         "R",
+         "S"
+        ],
+        "round": false
+       },
+       "target": 3241,
+       "answerText": {
+        "en": "R Q S P",
+        "as": "R Q S P"
+       },
+       "why": {
+        "en": "R, Q, S, P.",
+        "as": "R, Q, S, P।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u2.q2",
+     "type": "tf",
+     "skill": "r-aline",
+     "s": {
+      "en": "'Immediately right of' means the very next seat.",
+      "as": "'ঠিক সোঁফালে' মানে কাষৰ আসন।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Yes.",
+      "as": "হয়।"
+     }
+    },
+    {
+     "id": "rs12.u2.q3",
+     "type": "match",
+     "skill": "r-aline",
+     "q": {
+      "en": "Row: A B C D (facing north). Match",
+      "as": "শাৰী: A B C D (উত্তৰমুখী)। মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Immediately left of C",
+        "as": "C ৰ ঠিক বাওঁফালে"
+       },
+       {
+        "en": "B",
+        "as": "B"
+       }
+      ],
+      [
+       {
+        "en": "Right end",
+        "as": "সোঁ মূৰ"
+       },
+       {
+        "en": "D",
+        "as": "D"
+       }
+      ],
+      [
+       {
+        "en": "Left end",
+        "as": "বাওঁ মূৰ"
+       },
+       {
+        "en": "A",
+        "as": "A"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Read the row.",
+      "as": "শাৰী পঢ়া।"
+     }
+    },
+    {
+     "id": "rs12.u2.q4",
+     "type": "order",
+     "skill": "r-aline",
+     "q": {
+      "en": "Seat: B between A and C, with A first",
+      "as": "B, A আৰু C ৰ মাজত, A প্ৰথম"
+     },
+     "items": [
+      {
+       "en": "A",
+       "as": "A"
+      },
+      {
+       "en": "B",
+       "as": "B"
+      },
+      {
+       "en": "C",
+       "as": "C"
+      }
+     ],
+     "why": {
+      "en": "Between means both sides.",
+      "as": "মাজ মানে দুয়োফালে।"
+     }
+    },
+    {
+     "id": "rs12.u2.q5",
+     "type": "solve",
+     "skill": "r-aline",
+     "q": {
+      "en": "In a row, 3 people sit left of X and 5 sit right of X. How many are in the row?",
+      "as": "শাৰীত X ৰ বাওঁফালে 3, সোঁফালে 5 জন। মুঠ কিমান?"
+     },
+     "answer": "9",
+     "why": {
+      "en": "3 + 5 + X = 9.",
+      "as": "3 + 5 + X = 9।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "In a row, 3 people sit left of X and 5 sit right of X. How many are in the row?",
+        "as": "শাৰীত X ৰ বাওঁফালে 3, সোঁফালে 5 জন। মুঠ কিমান?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "3 + 5 + X = 9.",
+        "as": "3 + 5 + X = 9।"
+       }
+      },
+      {
+       "q": {
+        "en": "In a row, 7 people sit left of X and 2 sit right of X. How many are in the row?",
+        "as": "শাৰীত X ৰ বাওঁফালে 7, সোঁফালে 2 জন। মুঠ কিমান?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "7 + 2 + X = 10.",
+        "as": "7 + 2 + X = 10।"
+       }
+      },
+      {
+       "q": {
+        "en": "In a row, 4 people sit left of X and 6 sit right of X. How many are in the row?",
+        "as": "শাৰীত X ৰ বাওঁফালে 4, সোঁফালে 6 জন। মুঠ কিমান?"
+       },
+       "answer": "11",
+       "why": {
+        "en": "4 + 6 + X = 11.",
+        "as": "4 + 6 + X = 11।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Sitting in a circle",
+    "as": "বৃত্তত বহা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "In a circle, pick any seat as the start.",
+     "as": "বৃত্তত যিকোনো আসনৰ পৰা আৰম্ভ।"
+    },
+    {
+     "en": "Facing the centre, left is clockwise.",
+     "as": "কেন্দ্ৰমুখী হ'লে বাওঁ ঘড়ীৰ দিশে।"
+    },
+    {
+     "en": "'Opposite' needs an even number.",
+     "as": "'সন্মুখত'ৰ বাবে যোৰ সংখ্যা।"
+    },
+    {
+     "en": "Neighbours are both sides.",
+     "as": "দুয়োফাল কাষৰীয়া।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs12.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Circles have no ends",
+      "as": "বৃত্তৰ মূৰ নাই"
+     },
+     "text": [
+      {
+       "en": "With no ends, fix one person and build around them. Seat A, then the rest.",
+       "as": "মূৰ নাই, এজনক ঠিক কৰি তাৰ চাৰিওফালে বনোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "seats",
+      "names": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "round": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Seat A, B, C, D clockwise from the top.",
+        "as": "ওপৰৰ পৰা ঘড়ীৰ দিশে A, B, C, D বহুওৱা।"
+       },
+       "goal": {
+        "code": 1234
+       },
+       "then": {
+        "en": "A is opposite C, and B is opposite D.",
+        "as": "A ৰ সন্মুখত C, B ৰ সন্মুখত D।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Left in a circle",
+      "as": "বৃত্তত বাওঁ"
+     },
+     "text": [
+      {
+       "en": "Facing the centre, your left neighbour is the next seat clockwise.",
+       "as": "কেন্দ্ৰমুখী হ'লে বাওঁ কাষৰীয়া ঘড়ীৰ দিশৰ পিছৰ আসন।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Face centre",
+        "as": "কেন্দ্ৰমুখী"
+       },
+       {
+        "en": "Left = clockwise",
+        "as": "বাওঁ = ঘড়ীৰ দিশ"
+       },
+       {
+        "en": "Right = anticlockwise",
+        "as": "সোঁ = ওলোটা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u3.q1",
+     "type": "explore",
+     "skill": "r-around",
+     "q": {
+      "en": "Four face the centre. Put P at the top. Q is opposite P. R is on P's left.",
+      "as": "চাৰিজন কেন্দ্ৰমুখী। P ওপৰত। Q, P ৰ সন্মুখত। R, P ৰ বাওঁফালে।"
+     },
+     "widget": {
+      "kind": "seats",
+      "names": [
+       "P",
+       "Q",
+       "R",
+       "S"
+      ],
+      "round": true
+     },
+     "target": 1324,
+     "answerText": {
+      "en": "P R Q S",
+      "as": "P R Q S"
+     },
+     "why": {
+      "en": "Left is clockwise, so R follows P.",
+      "as": "বাওঁ ঘড়ীৰ দিশে, গতিকে R, P ৰ পিছত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Four face the centre. Put P at the top. Q is opposite P. R is on P's left.",
+        "as": "চাৰিজন কেন্দ্ৰমুখী। P ওপৰত। Q, P ৰ সন্মুখত। R, P ৰ বাওঁফালে।"
+       },
+       "widget": {
+        "kind": "seats",
+        "names": [
+         "P",
+         "Q",
+         "R",
+         "S"
+        ],
+        "round": true
+       },
+       "target": 1324,
+       "answerText": {
+        "en": "P R Q S",
+        "as": "P R Q S"
+       },
+       "why": {
+        "en": "Left is clockwise, so R follows P.",
+        "as": "বাওঁ ঘড়ীৰ দিশে, গতিকে R, P ৰ পিছত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Four face the centre. Put A at the top. C is on A's right. B is opposite A.",
+        "as": "চাৰিজন কেন্দ্ৰমুখী। A ওপৰত। C, A ৰ সোঁফালে। B, A ৰ সন্মুখত।"
+       },
+       "widget": {
+        "kind": "seats",
+        "names": [
+         "A",
+         "B",
+         "C",
+         "D"
+        ],
+        "round": true
+       },
+       "target": 1423,
+       "answerText": {
+        "en": "A D B C",
+        "as": "A D B C"
+       },
+       "why": {
+        "en": "Right is anticlockwise, so C sits last.",
+        "as": "সোঁ ঘড়ীৰ ওলোটা, গতিকে C শেষত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u3.q2",
+     "type": "tf",
+     "skill": "r-around",
+     "s": {
+      "en": "Facing the centre, your left neighbour is the next seat clockwise.",
+      "as": "কেন্দ্ৰমুখী হ'লে বাওঁ কাষৰীয়া ঘড়ীৰ দিশৰ পিছৰ আসন।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Try it at a round table.",
+      "as": "ঘূৰণীয়া মেজত চোৱা।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-sidecircle",
+       "why": {
+        "en": "Facing the centre, your left is clockwise.",
+        "as": "কেন্দ্ৰমুখী হ'লে বাওঁফাল ঘড়ীৰ দিশে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u3.q3",
+     "type": "match",
+     "skill": "r-around",
+     "q": {
+      "en": "Clockwise A B C D, facing centre: match",
+      "as": "ঘড়ীৰ দিশে A B C D, কেন্দ্ৰমুখী: মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Opposite A",
+        "as": "A ৰ সন্মুখত"
+       },
+       {
+        "en": "C",
+        "as": "C"
+       }
+      ],
+      [
+       {
+        "en": "Left of A",
+        "as": "A ৰ বাওঁফালে"
+       },
+       {
+        "en": "B",
+        "as": "B"
+       }
+      ],
+      [
+       {
+        "en": "Right of A",
+        "as": "A ৰ সোঁফালে"
+       },
+       {
+        "en": "D",
+        "as": "D"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Left is clockwise.",
+      "as": "বাওঁ ঘড়ীৰ দিশে।"
+     }
+    },
+    {
+     "id": "rs12.u3.q4",
+     "type": "solve",
+     "skill": "r-around",
+     "q": {
+      "en": "8 people sit evenly around a table. How many seats lie between two people sitting opposite, on one side?",
+      "as": "8 জন ঘূৰণীয়া মেজত সমানে বহিছে। সন্মুখা-সন্মুখি দুজনৰ মাজত এফালে কিমান আসন?"
+     },
+     "answer": "3",
+     "why": {
+      "en": "8 ÷ 2 − 1 = 3.",
+      "as": "8 ÷ 2 − 1 = 3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "8 people sit evenly around a table. How many seats lie between two people sitting opposite, on one side?",
+        "as": "8 জন ঘূৰণীয়া মেজত সমানে বহিছে। সন্মুখা-সন্মুখি দুজনৰ মাজত এফালে কিমান আসন?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "8 ÷ 2 − 1 = 3.",
+        "as": "8 ÷ 2 − 1 = 3।"
+       }
+      },
+      {
+       "q": {
+        "en": "10 people sit evenly around a table. How many seats lie between two people sitting opposite, on one side?",
+        "as": "10 জন ঘূৰণীয়া মেজত সমানে বহিছে। সন্মুখা-সন্মুখি দুজনৰ মাজত এফালে কিমান আসন?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "10 ÷ 2 − 1 = 4.",
+        "as": "10 ÷ 2 − 1 = 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "12 people sit evenly around a table. How many seats lie between two people sitting opposite, on one side?",
+        "as": "12 জন ঘূৰণীয়া মেজত সমানে বহিছে। সন্মুখা-সন্মুখি দুজনৰ মাজত এফালে কিমান আসন?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "12 ÷ 2 − 1 = 5.",
+        "as": "12 ÷ 2 − 1 = 5।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u3.q5",
+     "type": "order",
+     "skill": "r-around",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Fix one person",
+       "as": "এজনক ঠিক"
+      },
+      {
+       "en": "Note the facing",
+       "as": "মুখ চোৱা"
+      },
+      {
+       "en": "Add neighbours",
+       "as": "কাষৰীয়া যোগ"
+      },
+      {
+       "en": "Check opposites",
+       "as": "সন্মুখ চোৱা"
+      }
+     ],
+     "why": {
+      "en": "Fix first, then build.",
+      "as": "ঠিক কৰি বনোৱা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Who has what",
+    "as": "কাৰ কি আছে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Draw a table: people by things.",
+     "as": "তালিকা আঁকা: ব্যক্তি আৰু বস্তু।"
+    },
+    {
+     "en": "Cross out what is ruled out.",
+     "as": "বাদ পৰাখিনি কাটা।"
+    },
+    {
+     "en": "One option left is an answer.",
+     "as": "এটা বাকী থাকিলে উত্তৰ।"
+    },
+    {
+     "en": "Each answer removes more.",
+     "as": "প্ৰতিটো উত্তৰে আৰু কমায়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs12.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "A table beats memory",
+      "as": "তালিকা স্মৃতিতকৈ ভাল"
+     },
+     "text": [
+      {
+       "en": "With three people and three sports, a small grid does the thinking.",
+       "as": "তিনি ব্যক্তি, তিনি খেলত সৰু তালিকাই চিন্তা কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Draw a grid",
+        "as": "তালিকা আঁকা"
+       },
+       {
+        "en": "Cross out",
+        "as": "কাটা"
+       },
+       {
+        "en": "Read what is left",
+        "as": "বাকী পঢ়া"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Each tick clears a line",
+      "as": "প্ৰতিটো টিকে শাৰী মচে"
+     },
+     "text": [
+      {
+       "en": "Once A plays chess, nobody else does and A plays nothing else.",
+       "as": "A য়ে দবা খেলিলে আন কোনেও নেখেলে, A য়ে আন নেখেলে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Tick one",
+        "as": "এটা টিক"
+       },
+       {
+        "en": "Clear the row",
+        "as": "শাৰী মচা"
+       },
+       {
+        "en": "Clear the column",
+        "as": "স্তম্ভ মচা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs12.u4.q1",
+     "type": "stepwise",
+     "skill": "r-amatch",
+     "q": {
+      "en": "Ria, Tina and Maya play chess, tennis and cricket, one each. Ria does not play chess or tennis. Tina does not play chess. Who plays chess?",
+      "as": "Ria, Tina, Maya এ দবা, টেনিছ, ক্ৰিকেট এটাকৈ খেলে। Ria য়ে দবা বা টেনিছ নেখেলে। Tina য়ে দবা নেখেলে। দবা কোনে খেলে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "What does Ria play?",
+        "as": "Ria য়ে কি খেলে?"
+       },
+       "options": [
+        {
+         "en": "tennis",
+         "as": "টেনিছ"
+        },
+        {
+         "en": "chess",
+         "as": "দবা"
+        },
+        {
+         "en": "cricket",
+         "as": "ক্ৰিকেট"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Only one is left.",
+        "as": "এটাহে বাকী।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Who plays chess?",
+        "as": "দবা কোনে খেলে?"
+       },
+       "options": [
+        {
+         "en": "Ria",
+         "as": "Ria"
+        },
+        {
+         "en": "Maya",
+         "as": "Maya"
+        },
+        {
+         "en": "Tina",
+         "as": "Tina"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Ria and Tina are ruled out.",
+        "as": "Ria আৰু Tina বাদ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Maya plays chess.",
+      "as": "Maya য়ে দবা খেলে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Ria, Tina and Maya play chess, tennis and cricket, one each. Ria does not play chess or tennis. Tina does not play chess. Who plays chess?",
+        "as": "Ria, Tina, Maya এ দবা, টেনিছ, ক্ৰিকেট এটাকৈ খেলে। Ria য়ে দবা বা টেনিছ নেখেলে। Tina য়ে দবা নেখেলে। দবা কোনে খেলে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does Ria play?",
+          "as": "Ria য়ে কি খেলে?"
+         },
+         "options": [
+          {
+           "en": "tennis",
+           "as": "টেনিছ"
+          },
+          {
+           "en": "chess",
+           "as": "দবা"
+          },
+          {
+           "en": "cricket",
+           "as": "ক্ৰিকেট"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Only one is left.",
+          "as": "এটাহে বাকী।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Who plays chess?",
+          "as": "দবা কোনে খেলে?"
+         },
+         "options": [
+          {
+           "en": "Ria",
+           "as": "Ria"
+          },
+          {
+           "en": "Maya",
+           "as": "Maya"
+          },
+          {
+           "en": "Tina",
+           "as": "Tina"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Ria and Tina are ruled out.",
+          "as": "Ria আৰু Tina বাদ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Maya plays chess.",
+        "as": "Maya য়ে দবা খেলে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Bipul, Dipen and Hiren play hockey, football and carrom, one each. Bipul does not play hockey or football. Dipen does not play hockey. Who plays hockey?",
+        "as": "Bipul, Dipen, Hiren এ হকী, ফুটবল, কেৰম এটাকৈ খেলে। Bipul য়ে হকী বা ফুটবল নেখেলে। Dipen য়ে হকী নেখেলে। হকী কোনে খেলে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does Bipul play?",
+          "as": "Bipul য়ে কি খেলে?"
+         },
+         "options": [
+          {
+           "en": "football",
+           "as": "ফুটবল"
+          },
+          {
+           "en": "hockey",
+           "as": "হকী"
+          },
+          {
+           "en": "carrom",
+           "as": "কেৰম"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Only one is left.",
+          "as": "এটাহে বাকী।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Who plays hockey?",
+          "as": "হকী কোনে খেলে?"
+         },
+         "options": [
+          {
+           "en": "Bipul",
+           "as": "Bipul"
+          },
+          {
+           "en": "Hiren",
+           "as": "Hiren"
+          },
+          {
+           "en": "Dipen",
+           "as": "Dipen"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Bipul and Dipen are ruled out.",
+          "as": "Bipul আৰু Dipen বাদ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Hiren plays hockey.",
+        "as": "Hiren য়ে হকী খেলে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs12.u4.q2",
+     "type": "tf",
+     "skill": "r-amatch",
+     "s": {
+      "en": "If each person has one item, a tick clears its row and column.",
+      "as": "প্ৰত্যেকৰ এটা বস্তু হ'লে টিকে শাৰী আৰু স্তম্ভ মচে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "That is why grids work.",
+      "as": "সেয়ে তালিকা কাম কৰে।"
+     }
+    },
+    {
+     "id": "rs12.u4.q3",
+     "type": "match",
+     "skill": "r-amatch",
+     "q": {
+      "en": "A, B, C with red, blue, green. A not red or blue. B not red. Match",
+      "as": "A, B, C; ৰঙা, নীলা, সেউজীয়া। A ৰঙা বা নীলা নহয়। B ৰঙা নহয়। মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "Green",
+        "as": "সেউজীয়া"
+       }
+      ],
+      [
+       {
+        "en": "B",
+        "as": "B"
+       },
+       {
+        "en": "Blue",
+        "as": "নীলা"
+       }
+      ],
+      [
+       {
+        "en": "C",
+        "as": "C"
+       },
+       {
+        "en": "Red",
+        "as": "ৰঙা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "A is fixed first.",
+      "as": "A আগতে ঠিক।"
+     }
+    },
+    {
+     "id": "rs12.u4.q4",
+     "type": "order",
+     "skill": "r-amatch",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Draw the grid",
+       "as": "তালিকা"
+      },
+      {
+       "en": "Cross out clues",
+       "as": "ইংগিত কাটা"
+      },
+      {
+       "en": "Tick the forced",
+       "as": "নিশ্চিত টিক"
+      },
+      {
+       "en": "Repeat",
+       "as": "পুনৰ"
+      }
+     ],
+     "why": {
+      "en": "Forced ticks spread.",
+      "as": "নিশ্চিত টিকে আগবাঢ়ে।"
+     }
+    },
+    {
+     "id": "rs12.u4.q5",
+     "type": "solve",
+     "skill": "r-amatch",
+     "q": {
+      "en": "How many cells has a grid of 3 people by 3 sports?",
+      "as": "3 ব্যক্তি আৰু 3 খেলৰ তালিকাত কিমান ঘৰ?"
+     },
+     "answer": "9",
+     "why": {
+      "en": "3 × 3.",
+      "as": "3 × 3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many cells has a grid of 3 people by 3 sports?",
+        "as": "3 ব্যক্তি আৰু 3 খেলৰ তালিকাত কিমান ঘৰ?"
+       },
+       "answer": "9",
+       "why": {
+        "en": "3 × 3.",
+        "as": "3 × 3।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many cells has a grid of 4 people by 4 sports?",
+        "as": "4 ব্যক্তি আৰু 4 খেলৰ তালিকাত কিমান ঘৰ?"
+       },
+       "answer": "16",
+       "why": {
+        "en": "4 × 4.",
+        "as": "4 × 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many cells has a grid of 5 people by 3 sports?",
+        "as": "5 ব্যক্তি আৰু 3 খেলৰ তালিকাত কিমান ঘৰ?"
+       },
+       "answer": "15",
+       "why": {
+        "en": "5 × 3.",
+        "as": "5 × 3।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Arrangement test",
+   "as": "সজ্জাৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs12.t.q1",
+    "type": "explore",
+    "skill": "r-afixed",
+    "q": {
+     "en": "Left to right: K is first, and M is immediately left of L.",
+     "as": "বাওঁৰ পৰা: K প্ৰথম, M, L ৰ ঠিক বাওঁফালে।"
+    },
+    "widget": {
+     "kind": "seats",
+     "names": [
+      "K",
+      "L",
+      "M"
+     ],
+     "round": false
+    },
+    "target": 132,
+    "answerText": {
+     "en": "K M L",
+     "as": "K M L"
+    },
+    "why": {
+     "en": "K, M, L.",
+     "as": "K, M, L।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Left to right: K is first, and M is immediately left of L.",
+       "as": "বাওঁৰ পৰা: K প্ৰথম, M, L ৰ ঠিক বাওঁফালে।"
+      },
+      "widget": {
+       "kind": "seats",
+       "names": [
+        "K",
+        "L",
+        "M"
+       ],
+       "round": false
+      },
+      "target": 132,
+      "answerText": {
+       "en": "K M L",
+       "as": "K M L"
+      },
+      "why": {
+       "en": "K, M, L.",
+       "as": "K, M, L।"
+      }
+     },
+     {
+      "q": {
+       "en": "Left to right: U is last, and V is first.",
+       "as": "বাওঁৰ পৰা: U শেষত, V প্ৰথম।"
+      },
+      "widget": {
+       "kind": "seats",
+       "names": [
+        "U",
+        "V",
+        "W"
+       ],
+       "round": false
+      },
+      "target": 231,
+      "answerText": {
+       "en": "V W U",
+       "as": "V W U"
+      },
+      "why": {
+       "en": "V, W, U.",
+       "as": "V, W, U।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs12.t.q2",
+    "type": "tf",
+    "skill": "r-aline",
+    "s": {
+     "en": "'Between' needs someone on both sides.",
+     "as": "'মাজত' মানে দুয়োফালে কোনোবা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs12.t.q3",
+    "type": "tf",
+    "skill": "r-around",
+    "s": {
+     "en": "Facing the centre, right is clockwise.",
+     "as": "কেন্দ্ৰমুখী হ'লে সোঁ ঘড়ীৰ দিশে।"
+    },
+    "answer": false,
+    "why": {
+     "en": "Right is anticlockwise.",
+     "as": "সোঁ ঘড়ীৰ ওলোটা।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-sidecircle",
+      "why": {
+       "en": "Facing the centre, your left is clockwise.",
+       "as": "কেন্দ্ৰমুখী হ'লে বাওঁফাল ঘড়ীৰ দিশে।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs12.t.q4",
+    "type": "solve",
+    "skill": "r-aline",
+    "q": {
+     "en": "6 on the left and 9 on the right of X. How many in the row?",
+     "as": "X ৰ বাওঁফালে 6, সোঁফালে 9। মুঠ?"
+    },
+    "answer": "16",
+    "why": {
+     "en": "Count X too.",
+     "as": "X কো গণা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "6 on the left and 9 on the right of X. How many in the row?",
+       "as": "X ৰ বাওঁফালে 6, সোঁফালে 9। মুঠ?"
+      },
+      "answer": "16",
+      "why": {
+       "en": "Count X too.",
+       "as": "X কো গণা।"
+      }
+     },
+     {
+      "q": {
+       "en": "5 on the left and 3 on the right of X. How many in the row?",
+       "as": "X ৰ বাওঁফালে 5, সোঁফালে 3। মুঠ?"
+      },
+      "answer": "9",
+      "why": {
+       "en": "Count X too.",
+       "as": "X কো গণা।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs12.t.q5",
+    "type": "tf",
+    "skill": "r-amatch",
+    "s": {
+     "en": "A grid makes matching puzzles easier.",
+     "as": "তালিকাই মিলোৱা সাঁথৰ সহজ কৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It holds what memory drops.",
+     "as": "ই স্মৃতিৰ কাম কৰে।"
+    }
+   },
+   {
+    "id": "rs12.t.q6",
+    "type": "tf",
+    "skill": "r-afixed",
+    "s": {
+     "en": "Place clues that fix a seat first.",
+     "as": "আসন ঠিক কৰা ইংগিত আগতে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "They anchor the rest.",
+     "as": "ই বাকীখিনি ধৰি ৰাখে।"
+    }
+   }
+  ]
+ }
+}

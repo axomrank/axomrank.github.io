@@ -1,0 +1,3025 @@
+{
+ "id": "rs-01-alphabet",
+ "course": "reasoning",
+ "no": 1,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Alphabet tools",
+  "as": "বৰ্ণমালাৰ কৌশল"
+ },
+ "reign": {
+  "en": "Positions, opposites, dictionary order",
+  "as": "স্থান, বিপৰীত, অভিধানৰ ক্ৰম"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Every letter has an address",
+    "as": "প্ৰতিটো আখৰৰ ঠিকনা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A is 1 and Z is 26.",
+     "as": "A 1, Z 26।"
+    },
+    {
+     "en": "E, J, O, T and Y are 5, 10, 15, 20 and 25.",
+     "as": "E, J, O, T, Y হ'ল 5, 10, 15, 20, 25।"
+    },
+    {
+     "en": "Count from the nearest anchor.",
+     "as": "ওচৰৰ ভেটিৰ পৰা গণা।"
+    },
+    {
+     "en": "M is 13, the end of the first half.",
+     "as": "M 13, প্ৰথম আধাৰ শেষ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs1.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Five anchors do the work",
+      "as": "পাঁচটা ভেটিয়েই যথেষ্ট"
+     },
+     "text": [
+      {
+       "en": "Nobody counts from A. Learn every fifth letter, then step from the nearest one.",
+       "as": "A ৰ পৰা কোনেও নগণে। প্ৰতি পঞ্চম আখৰ মনত ৰাখি ওচৰৰটোৰ পৰা গণা।"
+      }
+     ],
+     "widget": {
+      "kind": "alpha",
+      "nums": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap the 10th letter.",
+        "as": "10 নম্বৰ আখৰ টিপা।"
+       },
+       "goal": {
+        "pick": 10
+       },
+       "then": {
+        "en": "J is 10. It is one of your anchors.",
+        "as": "J 10। ই এটা ভেটি।"
+       }
+      },
+      {
+       "do": {
+        "en": "Tap the 20th letter.",
+        "as": "20 নম্বৰ আখৰ টিপা।"
+       },
+       "goal": {
+        "pick": 20
+       },
+       "then": {
+        "en": "T is 20. Now 18 is just two back: R.",
+        "as": "T 20। এতিয়া 18 মানে দুই ঘৰ পিছ: R।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "A line to remember them",
+      "as": "মনত ৰখাৰ শাৰী"
+     },
+     "text": [
+      {
+       "en": "Say EJOTY aloud. Each letter is five places after the last.",
+       "as": "EJOTY মাতি কোৱা। প্ৰতিটো আখৰ আগৰটোৰ পাঁচ ঘৰ পিছত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "E 5",
+        "as": "E 5"
+       },
+       {
+        "en": "J 10",
+        "as": "J 10"
+       },
+       {
+        "en": "O 15",
+        "as": "O 15"
+       },
+       {
+        "en": "T 20",
+        "as": "T 20"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u1.q1",
+     "type": "explore",
+     "skill": "r-pos",
+     "q": {
+      "en": "Tap the 7th letter of the alphabet.",
+      "as": "বৰ্ণমালাৰ 7 নম্বৰ আখৰটো টিপা।"
+     },
+     "widget": {
+      "kind": "alpha"
+     },
+     "target": 7,
+     "answerText": {
+      "en": "G",
+      "as": "G"
+     },
+     "why": {
+      "en": "Count from the nearest anchor to reach G.",
+      "as": "ওচৰৰ ভেটিৰ পৰা গণিলে G পোৱা যায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Tap the 7th letter of the alphabet.",
+        "as": "বৰ্ণমালাৰ 7 নম্বৰ আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha"
+       },
+       "target": 7,
+       "answerText": {
+        "en": "G",
+        "as": "G"
+       },
+       "why": {
+        "en": "Count from the nearest anchor to reach G.",
+        "as": "ওচৰৰ ভেটিৰ পৰা গণিলে G পোৱা যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the 12th letter of the alphabet.",
+        "as": "বৰ্ণমালাৰ 12 নম্বৰ আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha"
+       },
+       "target": 12,
+       "answerText": {
+        "en": "L",
+        "as": "L"
+       },
+       "why": {
+        "en": "Count from the nearest anchor to reach L.",
+        "as": "ওচৰৰ ভেটিৰ পৰা গণিলে L পোৱা যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the 18th letter of the alphabet.",
+        "as": "বৰ্ণমালাৰ 18 নম্বৰ আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha"
+       },
+       "target": 18,
+       "answerText": {
+        "en": "R",
+        "as": "R"
+       },
+       "why": {
+        "en": "Count from the nearest anchor to reach R.",
+        "as": "ওচৰৰ ভেটিৰ পৰা গণিলে R পোৱা যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the 23th letter of the alphabet.",
+        "as": "বৰ্ণমালাৰ 23 নম্বৰ আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha"
+       },
+       "target": 23,
+       "answerText": {
+        "en": "W",
+        "as": "W"
+       },
+       "why": {
+        "en": "Count from the nearest anchor to reach W.",
+        "as": "ওচৰৰ ভেটিৰ পৰা গণিলে W পোৱা যায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u1.q2",
+     "type": "solve",
+     "skill": "r-pos",
+     "q": {
+      "en": "What is the place of H in the alphabet?",
+      "as": "বৰ্ণমালাত H ৰ স্থান কিমান?"
+     },
+     "answer": "8",
+     "why": {
+      "en": "H is letter number 8.",
+      "as": "H 8 নম্বৰ আখৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the place of H in the alphabet?",
+        "as": "বৰ্ণমালাত H ৰ স্থান কিমান?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "H is letter number 8.",
+        "as": "H 8 নম্বৰ আখৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the place of L in the alphabet?",
+        "as": "বৰ্ণমালাত L ৰ স্থান কিমান?"
+       },
+       "answer": "12",
+       "why": {
+        "en": "L is letter number 12.",
+        "as": "L 12 নম্বৰ আখৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the place of Q in the alphabet?",
+        "as": "বৰ্ণমালাত Q ৰ স্থান কিমান?"
+       },
+       "answer": "17",
+       "why": {
+        "en": "Q is letter number 17.",
+        "as": "Q 17 নম্বৰ আখৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the place of V in the alphabet?",
+        "as": "বৰ্ণমালাত V ৰ স্থান কিমান?"
+       },
+       "answer": "22",
+       "why": {
+        "en": "V is letter number 22.",
+        "as": "V 22 নম্বৰ আখৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u1.q3",
+     "type": "match",
+     "skill": "r-pos",
+     "q": {
+      "en": "Match the letter to its place",
+      "as": "আখৰক স্থানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "E",
+        "as": "E"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "J",
+        "as": "J"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      [
+       {
+        "en": "O",
+        "as": "O"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       }
+      ],
+      [
+       {
+        "en": "T",
+        "as": "T"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       }
+      ]
+     ],
+     "why": {
+      "en": "These are the anchors.",
+      "as": "এইবোৰ ভেটি।"
+     }
+    },
+    {
+     "id": "rs1.u1.q4",
+     "type": "tf",
+     "skill": "r-pos",
+     "s": {
+      "en": "M is the 13th letter.",
+      "as": "M 13 নম্বৰ আখৰ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It ends the first half.",
+      "as": "ই প্ৰথম আধাৰ শেষ।"
+     }
+    },
+    {
+     "id": "rs1.u1.q5",
+     "type": "order",
+     "skill": "r-pos",
+     "q": {
+      "en": "Put the letters in alphabet order",
+      "as": "আখৰবোৰ বৰ্ণমালাৰ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "C",
+       "as": "C"
+      },
+      {
+       "en": "K",
+       "as": "K"
+      },
+      {
+       "en": "P",
+       "as": "P"
+      },
+      {
+       "en": "W",
+       "as": "W"
+      }
+     ],
+     "why": {
+      "en": "Lower place first.",
+      "as": "কম স্থান আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Letters come in opposite pairs",
+    "as": "বিপৰীত আখৰৰ যোৰ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Fold the alphabet and A meets Z.",
+     "as": "বৰ্ণমালা ভাঁজ কৰিলে A আৰু Z লগ লাগে।"
+    },
+    {
+     "en": "Opposite pairs add to 27.",
+     "as": "বিপৰীত যোৰৰ যোগফল 27।"
+    },
+    {
+     "en": "M and N meet in the middle.",
+     "as": "M আৰু N মাজত লগ লাগে।"
+    },
+    {
+     "en": "The opposite of the opposite is the same letter.",
+     "as": "বিপৰীতৰ বিপৰীত একেটা আখৰ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs1.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Fold the alphabet in half",
+      "as": "বৰ্ণমালা আধা ভাঁজ কৰা"
+     },
+     "text": [
+      {
+       "en": "Here the second row runs backward, so each letter sits above its opposite.",
+       "as": "ইয়াত দ্বিতীয় শাৰী ওলোটা, সেয়ে প্ৰতিটো আখৰৰ তলত তাৰ বিপৰীত।"
+      }
+     ],
+     "widget": {
+      "kind": "alpha",
+      "fold": true,
+      "nums": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap Z.",
+        "as": "Z টিপা।"
+       },
+       "goal": {
+        "pick": 26
+       },
+       "then": {
+        "en": "Z sits below A: 1 + 26 = 27.",
+        "as": "Z, A ৰ তলত: 1 + 26 = 27।"
+       }
+      },
+      {
+       "do": {
+        "en": "Tap T.",
+        "as": "T টিপা।"
+       },
+       "goal": {
+        "pick": 20
+       },
+       "then": {
+        "en": "G is above it: 7 + 20 = 27.",
+        "as": "ওপৰত G: 7 + 20 = 27।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "One sum replaces the counting",
+      "as": "এটা যোগেই যথেষ্ট"
+     },
+     "text": [
+      {
+       "en": "Find the place, subtract it from 27, and read the letter.",
+       "as": "স্থান উলিয়াই 27 ৰ পৰা বিয়োগ কৰা, তাৰ পিছত আখৰ পঢ়া।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Place of D = 4",
+        "as": "D ৰ স্থান = 4"
+       },
+       {
+        "en": "27 − 4 = 23",
+        "as": "27 − 4 = 23"
+       },
+       {
+        "en": "23 is W",
+        "as": "23 মানে W"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u2.q1",
+     "type": "explore",
+     "skill": "r-opp",
+     "q": {
+      "en": "Tap the opposite of D.",
+      "as": "D ৰ বিপৰীত আখৰটো টিপা।"
+     },
+     "widget": {
+      "kind": "alpha",
+      "fold": true
+     },
+     "target": 23,
+     "answerText": {
+      "en": "W",
+      "as": "W"
+     },
+     "traps": [
+      {
+       "val": 4,
+       "tag": "r-m-oppsum",
+       "why": {
+        "en": "Opposites add to 27. Subtract the place from 27.",
+        "as": "বিপৰীত আখৰৰ যোগফল 27। 27 ৰ পৰা স্থান বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "4 + 23 = 27.",
+      "as": "4 + 23 = 27।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Tap the opposite of D.",
+        "as": "D ৰ বিপৰীত আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha",
+        "fold": true
+       },
+       "target": 23,
+       "answerText": {
+        "en": "W",
+        "as": "W"
+       },
+       "traps": [
+        {
+         "val": 4,
+         "tag": "r-m-oppsum",
+         "why": {
+          "en": "Opposites add to 27. Subtract the place from 27.",
+          "as": "বিপৰীত আখৰৰ যোগফল 27। 27 ৰ পৰা স্থান বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "4 + 23 = 27.",
+        "as": "4 + 23 = 27।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the opposite of K.",
+        "as": "K ৰ বিপৰীত আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha",
+        "fold": true
+       },
+       "target": 16,
+       "answerText": {
+        "en": "P",
+        "as": "P"
+       },
+       "traps": [
+        {
+         "val": 11,
+         "tag": "r-m-oppsum",
+         "why": {
+          "en": "Opposites add to 27. Subtract the place from 27.",
+          "as": "বিপৰীত আখৰৰ যোগফল 27। 27 ৰ পৰা স্থান বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "11 + 16 = 27.",
+        "as": "11 + 16 = 27।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the opposite of R.",
+        "as": "R ৰ বিপৰীত আখৰটো টিপা।"
+       },
+       "widget": {
+        "kind": "alpha",
+        "fold": true
+       },
+       "target": 9,
+       "answerText": {
+        "en": "I",
+        "as": "I"
+       },
+       "traps": [
+        {
+         "val": 18,
+         "tag": "r-m-oppsum",
+         "why": {
+          "en": "Opposites add to 27. Subtract the place from 27.",
+          "as": "বিপৰীত আখৰৰ যোগফল 27। 27 ৰ পৰা স্থান বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "18 + 9 = 27.",
+        "as": "18 + 9 = 27।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u2.q2",
+     "type": "solve",
+     "skill": "r-opp",
+     "input": "letters",
+     "q": {
+      "en": "Which letter is opposite B?",
+      "as": "B ৰ বিপৰীত কোন আখৰ?"
+     },
+     "answer": "Y",
+     "why": {
+      "en": "27 − 2 = 25, which is Y.",
+      "as": "27 − 2 = 25, অৰ্থাৎ Y।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which letter is opposite B?",
+        "as": "B ৰ বিপৰীত কোন আখৰ?"
+       },
+       "answer": "Y",
+       "why": {
+        "en": "27 − 2 = 25, which is Y.",
+        "as": "27 − 2 = 25, অৰ্থাৎ Y।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which letter is opposite H?",
+        "as": "H ৰ বিপৰীত কোন আখৰ?"
+       },
+       "answer": "S",
+       "why": {
+        "en": "27 − 8 = 19, which is S.",
+        "as": "27 − 8 = 19, অৰ্থাৎ S।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which letter is opposite S?",
+        "as": "S ৰ বিপৰীত কোন আখৰ?"
+       },
+       "answer": "H",
+       "why": {
+        "en": "27 − 19 = 8, which is H.",
+        "as": "27 − 19 = 8, অৰ্থাৎ H।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which letter is opposite V?",
+        "as": "V ৰ বিপৰীত কোন আখৰ?"
+       },
+       "answer": "E",
+       "why": {
+        "en": "27 − 22 = 5, which is E.",
+        "as": "27 − 22 = 5, অৰ্থাৎ E।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u2.q3",
+     "type": "solve",
+     "skill": "r-opp",
+     "input": "letters",
+     "q": {
+      "en": "Replace each letter of BAG with its opposite.",
+      "as": "BAG ৰ প্ৰতিটো আখৰ বিপৰীত আখৰেৰে সলনি কৰা।"
+     },
+     "answer": "YZT",
+     "why": {
+      "en": "BAG → YZT, with each pair adding to 27.",
+      "as": "BAG → YZT, প্ৰতিটো যোৰৰ যোগফল 27।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Replace each letter of BAG with its opposite.",
+        "as": "BAG ৰ প্ৰতিটো আখৰ বিপৰীত আখৰেৰে সলনি কৰা।"
+       },
+       "answer": "YZT",
+       "why": {
+        "en": "BAG → YZT, with each pair adding to 27.",
+        "as": "BAG → YZT, প্ৰতিটো যোৰৰ যোগফল 27।"
+       }
+      },
+      {
+       "q": {
+        "en": "Replace each letter of HOT with its opposite.",
+        "as": "HOT ৰ প্ৰতিটো আখৰ বিপৰীত আখৰেৰে সলনি কৰা।"
+       },
+       "answer": "SLG",
+       "why": {
+        "en": "HOT → SLG, with each pair adding to 27.",
+        "as": "HOT → SLG, প্ৰতিটো যোৰৰ যোগফল 27।"
+       }
+      },
+      {
+       "q": {
+        "en": "Replace each letter of SKY with its opposite.",
+        "as": "SKY ৰ প্ৰতিটো আখৰ বিপৰীত আখৰেৰে সলনি কৰা।"
+       },
+       "answer": "HPB",
+       "why": {
+        "en": "SKY → HPB, with each pair adding to 27.",
+        "as": "SKY → HPB, প্ৰতিটো যোৰৰ যোগফল 27।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u2.q4",
+     "type": "tf",
+     "skill": "r-opp",
+     "s": {
+      "en": "The opposite of L is O.",
+      "as": "L ৰ বিপৰীত O।"
+     },
+     "answer": true,
+     "why": {
+      "en": "12 + 15 = 27.",
+      "as": "12 + 15 = 27।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-oppsum",
+       "why": {
+        "en": "Opposites add to 27. Subtract the place from 27.",
+        "as": "বিপৰীত আখৰৰ যোগফল 27। 27 ৰ পৰা স্থান বিয়োগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u2.q5",
+     "type": "match",
+     "skill": "r-opp",
+     "q": {
+      "en": "Match the opposites",
+      "as": "বিপৰীত আখৰ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "Z",
+        "as": "Z"
+       }
+      ],
+      [
+       {
+        "en": "G",
+        "as": "G"
+       },
+       {
+        "en": "T",
+        "as": "T"
+       }
+      ],
+      [
+       {
+        "en": "M",
+        "as": "M"
+       },
+       {
+        "en": "N",
+        "as": "N"
+       }
+      ],
+      [
+       {
+        "en": "Q",
+        "as": "Q"
+       },
+       {
+        "en": "J",
+        "as": "J"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each pair adds to 27.",
+      "as": "প্ৰতিটো যোৰৰ যোগফল 27।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Left, right and from the end",
+    "as": "বাওঁ, সোঁ আৰু শেষৰ পৰা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "From the right, place = 27 − n.",
+     "as": "সোঁফালৰ পৰা, স্থান = 27 − n।"
+    },
+    {
+     "en": "Left of a letter means subtract.",
+     "as": "আখৰৰ বাওঁফাল মানে বিয়োগ।"
+    },
+    {
+     "en": "Right of a letter means add.",
+     "as": "আখৰৰ সোঁফাল মানে যোগ।"
+    },
+    {
+     "en": "Change everything to places first.",
+     "as": "প্ৰথমে সকলো স্থানলৈ সলনি কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs1.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Turn words into sums",
+      "as": "শব্দক অংকলৈ আনা"
+     },
+     "text": [
+      {
+       "en": "Long wording hides short sums. Convert to a place, then add or subtract.",
+       "as": "দীঘল ভাষাৰ আঁৰত চুটি অংক। স্থানলৈ আনি যোগ বা বিয়োগ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Find the place",
+        "as": "স্থান উলিওৱা"
+       },
+       {
+        "en": "Add or subtract",
+        "as": "যোগ বা বিয়োগ"
+       },
+       {
+        "en": "Read the letter",
+        "as": "আখৰ পঢ়া"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "From the right end",
+      "as": "সোঁ মূৰৰ পৰা"
+     },
+     "text": [
+      {
+       "en": "The 1st from the right is Z, at place 26. So the n-th from the right is 27 − n.",
+       "as": "সোঁফালৰ পৰা প্ৰথম Z, স্থান 26। সেয়ে n নম্বৰ মানে 27 − n।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "1st from right: Z",
+        "as": "সোঁফালৰ ১ম: Z"
+       },
+       {
+        "en": "5th from right: V",
+        "as": "সোঁফালৰ ৫ম: V"
+       },
+       {
+        "en": "10th from right: Q",
+        "as": "সোঁফালৰ ১০ম: Q"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u3.q1",
+     "type": "solve",
+     "skill": "r-lcount",
+     "input": "letters",
+     "q": {
+      "en": "Which is the 3rd letter from the right end of the alphabet?",
+      "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 3 নম্বৰ আখৰ কোনটো?"
+     },
+     "answer": "X",
+     "why": {
+      "en": "27 − 3 = 24, which is X.",
+      "as": "27 − 3 = 24, অৰ্থাৎ X।"
+     },
+     "traps": [
+      {
+       "ans": "C",
+       "tag": "r-m-sideflip",
+       "why": {
+        "en": "Left means earlier in the alphabet, and right means later.",
+        "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Which is the 3rd letter from the right end of the alphabet?",
+        "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 3 নম্বৰ আখৰ কোনটো?"
+       },
+       "answer": "X",
+       "why": {
+        "en": "27 − 3 = 24, which is X.",
+        "as": "27 − 3 = 24, অৰ্থাৎ X।"
+       },
+       "traps": [
+        {
+         "ans": "C",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Which is the 8th letter from the right end of the alphabet?",
+        "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 8 নম্বৰ আখৰ কোনটো?"
+       },
+       "answer": "S",
+       "why": {
+        "en": "27 − 8 = 19, which is S.",
+        "as": "27 − 8 = 19, অৰ্থাৎ S।"
+       },
+       "traps": [
+        {
+         "ans": "H",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Which is the 14th letter from the right end of the alphabet?",
+        "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 14 নম্বৰ আখৰ কোনটো?"
+       },
+       "answer": "M",
+       "why": {
+        "en": "27 − 14 = 13, which is M.",
+        "as": "27 − 14 = 13, অৰ্থাৎ M।"
+       },
+       "traps": [
+        {
+         "ans": "N",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Which is the 20th letter from the right end of the alphabet?",
+        "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 20 নম্বৰ আখৰ কোনটো?"
+       },
+       "answer": "G",
+       "why": {
+        "en": "27 − 20 = 7, which is G.",
+        "as": "27 − 20 = 7, অৰ্থাৎ G।"
+       },
+       "traps": [
+        {
+         "ans": "T",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs1.u3.q2",
+     "type": "solve",
+     "skill": "r-lcount",
+     "input": "letters",
+     "q": {
+      "en": "Find the 9th letter from the right. Which letter is 5 places to its left?",
+      "as": "সোঁফালৰ পৰা 9 নম্বৰ আখৰ উলিওৱা। তাৰ 5 ঘৰ বাওঁফালে কোন আখৰ?"
+     },
+     "answer": "M",
+     "why": {
+      "en": "The letter is at 18. Going left: 18 − 5 = 13, which is M.",
+      "as": "আখৰটো 18 ত। বাওঁফালে: 18 − 5 = 13, অৰ্থাৎ M।"
+     },
+     "traps": [
+      {
+       "ans": "W",
+       "tag": "r-m-sideflip",
+       "why": {
+        "en": "Left means earlier in the alphabet, and right means later.",
+        "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the 9th letter from the right. Which letter is 5 places to its left?",
+        "as": "সোঁফালৰ পৰা 9 নম্বৰ আখৰ উলিওৱা। তাৰ 5 ঘৰ বাওঁফালে কোন আখৰ?"
+       },
+       "answer": "M",
+       "why": {
+        "en": "The letter is at 18. Going left: 18 − 5 = 13, which is M.",
+        "as": "আখৰটো 18 ত। বাওঁফালে: 18 − 5 = 13, অৰ্থাৎ M।"
+       },
+       "traps": [
+        {
+         "ans": "W",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the 12th letter from the right. Which letter is 3 places to its left?",
+        "as": "সোঁফালৰ পৰা 12 নম্বৰ আখৰ উলিওৱা। তাৰ 3 ঘৰ বাওঁফালে কোন আখৰ?"
+       },
+       "answer": "L",
+       "why": {
+        "en": "The letter is at 15. Going left: 15 − 3 = 12, which is L.",
+        "as": "আখৰটো 15 ত। বাওঁফালে: 15 − 3 = 12, অৰ্থাৎ L।"
+       },
+       "traps": [
+        {
+         "ans": "R",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the 10th letter from the right. Which letter is 6 places to its left?",
+        "as": "সোঁফালৰ পৰা 10 নম্বৰ আখৰ উলিওৱা। তাৰ 6 ঘৰ বাওঁফালে কোন আখৰ?"
+       },
+       "answer": "K",
+       "why": {
+        "en": "The letter is at 17. Going left: 17 − 6 = 11, which is K.",
+        "as": "আখৰটো 17 ত। বাওঁফালে: 17 − 6 = 11, অৰ্থাৎ K।"
+       },
+       "traps": [
+        {
+         "ans": "W",
+         "tag": "r-m-sideflip",
+         "why": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs1.u3.q3",
+     "type": "stepwise",
+     "skill": "r-lcount",
+     "q": {
+      "en": "Which letter is 8 places to the right of the 6th letter?",
+      "as": "6 নম্বৰ আখৰৰ 8 ঘৰ সোঁফালে কোন আখৰ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Right means?",
+        "as": "সোঁ মানে?"
+       },
+       "options": [
+        {
+         "en": "Subtract",
+         "as": "বিয়োগ"
+        },
+        {
+         "en": "Start from Z",
+         "as": "Z ৰ পৰা আৰম্ভ"
+        },
+        {
+         "en": "Add",
+         "as": "যোগ"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Left means earlier in the alphabet, and right means later.",
+        "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+       },
+       "tag": "r-m-sideflip"
+      },
+      {
+       "ask": {
+        "en": "New place?",
+        "as": "নতুন স্থান?"
+       },
+       "options": [
+        {
+         "en": "6",
+         "as": "6"
+        },
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "-2",
+         "as": "-2"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "6 + 8 = 14.",
+        "as": "6 + 8 = 14।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Letter?",
+        "as": "আখৰ?"
+       },
+       "options": [
+        {
+         "en": "M",
+         "as": "M"
+        },
+        {
+         "en": "O",
+         "as": "O"
+        },
+        {
+         "en": "N",
+         "as": "N"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Use the nearest anchor to read it.",
+        "as": "ওচৰৰ ভেটিৰ পৰা পঢ়া।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The answer is N.",
+      "as": "উত্তৰ N।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which letter is 8 places to the right of the 6th letter?",
+        "as": "6 নম্বৰ আখৰৰ 8 ঘৰ সোঁফালে কোন আখৰ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Right means?",
+          "as": "সোঁ মানে?"
+         },
+         "options": [
+          {
+           "en": "Subtract",
+           "as": "বিয়োগ"
+          },
+          {
+           "en": "Start from Z",
+           "as": "Z ৰ পৰা আৰম্ভ"
+          },
+          {
+           "en": "Add",
+           "as": "যোগ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         },
+         "tag": "r-m-sideflip"
+        },
+        {
+         "ask": {
+          "en": "New place?",
+          "as": "নতুন স্থান?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "-2",
+           "as": "-2"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "6 + 8 = 14.",
+          "as": "6 + 8 = 14।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Letter?",
+          "as": "আখৰ?"
+         },
+         "options": [
+          {
+           "en": "M",
+           "as": "M"
+          },
+          {
+           "en": "O",
+           "as": "O"
+          },
+          {
+           "en": "N",
+           "as": "N"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use the nearest anchor to read it.",
+          "as": "ওচৰৰ ভেটিৰ পৰা পঢ়া।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is N.",
+        "as": "উত্তৰ N।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which letter is 5 places to the right of the 11th letter?",
+        "as": "11 নম্বৰ আখৰৰ 5 ঘৰ সোঁফালে কোন আখৰ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Right means?",
+          "as": "সোঁ মানে?"
+         },
+         "options": [
+          {
+           "en": "Subtract",
+           "as": "বিয়োগ"
+          },
+          {
+           "en": "Start from Z",
+           "as": "Z ৰ পৰা আৰম্ভ"
+          },
+          {
+           "en": "Add",
+           "as": "যোগ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         },
+         "tag": "r-m-sideflip"
+        },
+        {
+         "ask": {
+          "en": "New place?",
+          "as": "নতুন স্থান?"
+         },
+         "options": [
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "11 + 5 = 16.",
+          "as": "11 + 5 = 16।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Letter?",
+          "as": "আখৰ?"
+         },
+         "options": [
+          {
+           "en": "Q",
+           "as": "Q"
+          },
+          {
+           "en": "O",
+           "as": "O"
+          },
+          {
+           "en": "P",
+           "as": "P"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use the nearest anchor to read it.",
+          "as": "ওচৰৰ ভেটিৰ পৰা পঢ়া।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is P.",
+        "as": "উত্তৰ P।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which letter is 13 places to the right of the 3rd letter?",
+        "as": "3 নম্বৰ আখৰৰ 13 ঘৰ সোঁফালে কোন আখৰ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Right means?",
+          "as": "সোঁ মানে?"
+         },
+         "options": [
+          {
+           "en": "Subtract",
+           "as": "বিয়োগ"
+          },
+          {
+           "en": "Start from Z",
+           "as": "Z ৰ পৰা আৰম্ভ"
+          },
+          {
+           "en": "Add",
+           "as": "যোগ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Left means earlier in the alphabet, and right means later.",
+          "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+         },
+         "tag": "r-m-sideflip"
+        },
+        {
+         "ask": {
+          "en": "New place?",
+          "as": "নতুন স্থান?"
+         },
+         "options": [
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "-10",
+           "as": "-10"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "3 + 13 = 16.",
+          "as": "3 + 13 = 16।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Letter?",
+          "as": "আখৰ?"
+         },
+         "options": [
+          {
+           "en": "Q",
+           "as": "Q"
+          },
+          {
+           "en": "O",
+           "as": "O"
+          },
+          {
+           "en": "P",
+           "as": "P"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use the nearest anchor to read it.",
+          "as": "ওচৰৰ ভেটিৰ পৰা পঢ়া।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is P.",
+        "as": "উত্তৰ P।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u3.q4",
+     "type": "tf",
+     "skill": "r-lcount",
+     "s": {
+      "en": "The letter 3 places to the left of K is H.",
+      "as": "K ৰ 3 ঘৰ বাওঁফালে H।"
+     },
+     "answer": true,
+     "why": {
+      "en": "11 − 3 = 8.",
+      "as": "11 − 3 = 8।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-sideflip",
+       "why": {
+        "en": "Left means earlier in the alphabet, and right means later.",
+        "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u3.q5",
+     "type": "order",
+     "skill": "r-lcount",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the instruction",
+       "as": "নিৰ্দেশ পঢ়া"
+      },
+      {
+       "en": "Find the place",
+       "as": "স্থান উলিওৱা"
+      },
+      {
+       "en": "Add or subtract",
+       "as": "যোগ বা বিয়োগ"
+      },
+      {
+       "en": "Read the letter",
+       "as": "আখৰ পঢ়া"
+      }
+     ],
+     "why": {
+      "en": "Words, place, sum, letter.",
+      "as": "শব্দ, স্থান, অংক, আখৰ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Dictionary order",
+    "as": "অভিধানৰ ক্ৰম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Compare the first letters.",
+     "as": "প্ৰথম আখৰ তুলনা কৰা।"
+    },
+    {
+     "en": "If they match, compare the second letters.",
+     "as": "একে হ'লে দ্বিতীয় আখৰ তুলনা কৰা।"
+    },
+    {
+     "en": "Keep going until two letters differ.",
+     "as": "বেলেগ নোহোৱালৈ আগবাঢ়া।"
+    },
+    {
+     "en": "A shorter word that matches comes first.",
+     "as": "একে আৰম্ভণিৰ চুটি শব্দ আগতে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs1.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Letter by letter",
+      "as": "আখৰে আখৰে"
+     },
+     "text": [
+      {
+       "en": "The first difference decides the order. Everything after it does not matter.",
+       "as": "প্ৰথম পাৰ্থক্যই ক্ৰম ঠিক কৰে। তাৰ পিছৰখিনিৰ মূল্য নাই।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "TEACH",
+        "as": "TEACH"
+       },
+       {
+        "en": "TEAM",
+        "as": "TEAM"
+       },
+       {
+        "en": "C before M",
+        "as": "M ৰ আগত C"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Short words come first",
+      "as": "চুটি শব্দ আগতে"
+     },
+     "text": [
+      {
+       "en": "BOOK comes before BOOKS, because nothing comes before something.",
+       "as": "BOOK, BOOKS ৰ আগত, কাৰণ একো নথকাটো আগত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "BOOK",
+        "as": "BOOK"
+       },
+       {
+        "en": "BOOKS",
+        "as": "BOOKS"
+       },
+       {
+        "en": "BOOKSHOP",
+        "as": "BOOKSHOP"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u4.q1",
+     "type": "stepwise",
+     "skill": "r-dict",
+     "q": {
+      "en": "Which comes first, PLANT or PLATE?",
+      "as": "PLANT আৰু PLATE ৰ ভিতৰত কোনটো আগতে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "First place where they differ?",
+        "as": "প্ৰথম ক'ত বেলেগ?"
+       },
+       "options": [
+        {
+         "en": "4th letter",
+         "as": "4th letter"
+        },
+        {
+         "en": "1st letter",
+         "as": "1st letter"
+        },
+        {
+         "en": "5th letter",
+         "as": "5th letter"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "When the first letters match, compare the next letters.",
+        "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+       },
+       "tag": "r-m-firstonly"
+      },
+      {
+       "ask": {
+        "en": "So which comes first?",
+        "as": "তেন্তে কোনটো আগতে?"
+       },
+       "options": [
+        {
+         "en": "PLANT",
+         "as": "PLANT"
+        },
+        {
+         "en": "PLATE",
+         "as": "PLATE"
+        },
+        {
+         "en": "They tie",
+         "as": "সমান"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "N and T decide it.",
+        "as": "N আৰু T এ ঠিক কৰে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "PLANT comes first.",
+      "as": "PLANT আগতে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which comes first, PLANT or PLATE?",
+        "as": "PLANT আৰু PLATE ৰ ভিতৰত কোনটো আগতে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "First place where they differ?",
+          "as": "প্ৰথম ক'ত বেলেগ?"
+         },
+         "options": [
+          {
+           "en": "4th letter",
+           "as": "4th letter"
+          },
+          {
+           "en": "1st letter",
+           "as": "1st letter"
+          },
+          {
+           "en": "5th letter",
+           "as": "5th letter"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "When the first letters match, compare the next letters.",
+          "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+         },
+         "tag": "r-m-firstonly"
+        },
+        {
+         "ask": {
+          "en": "So which comes first?",
+          "as": "তেন্তে কোনটো আগতে?"
+         },
+         "options": [
+          {
+           "en": "PLANT",
+           "as": "PLANT"
+          },
+          {
+           "en": "PLATE",
+           "as": "PLATE"
+          },
+          {
+           "en": "They tie",
+           "as": "সমান"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "N and T decide it.",
+          "as": "N আৰু T এ ঠিক কৰে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "PLANT comes first.",
+        "as": "PLANT আগতে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which comes first, STONE or STORE?",
+        "as": "STONE আৰু STORE ৰ ভিতৰত কোনটো আগতে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "First place where they differ?",
+          "as": "প্ৰথম ক'ত বেলেগ?"
+         },
+         "options": [
+          {
+           "en": "4th letter",
+           "as": "4th letter"
+          },
+          {
+           "en": "1st letter",
+           "as": "1st letter"
+          },
+          {
+           "en": "5th letter",
+           "as": "5th letter"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "When the first letters match, compare the next letters.",
+          "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+         },
+         "tag": "r-m-firstonly"
+        },
+        {
+         "ask": {
+          "en": "So which comes first?",
+          "as": "তেন্তে কোনটো আগতে?"
+         },
+         "options": [
+          {
+           "en": "STORE",
+           "as": "STORE"
+          },
+          {
+           "en": "STONE",
+           "as": "STONE"
+          },
+          {
+           "en": "They tie",
+           "as": "সমান"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "N and R decide it.",
+          "as": "N আৰু R এ ঠিক কৰে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "STONE comes first.",
+        "as": "STONE আগতে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which comes first, BREAD or BRICK?",
+        "as": "BREAD আৰু BRICK ৰ ভিতৰত কোনটো আগতে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "First place where they differ?",
+          "as": "প্ৰথম ক'ত বেলেগ?"
+         },
+         "options": [
+          {
+           "en": "1st letter",
+           "as": "1st letter"
+          },
+          {
+           "en": "4th letter",
+           "as": "4th letter"
+          },
+          {
+           "en": "3rd letter",
+           "as": "3rd letter"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "When the first letters match, compare the next letters.",
+          "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+         },
+         "tag": "r-m-firstonly"
+        },
+        {
+         "ask": {
+          "en": "So which comes first?",
+          "as": "তেন্তে কোনটো আগতে?"
+         },
+         "options": [
+          {
+           "en": "BREAD",
+           "as": "BREAD"
+          },
+          {
+           "en": "BRICK",
+           "as": "BRICK"
+          },
+          {
+           "en": "They tie",
+           "as": "সমান"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "E and I decide it.",
+          "as": "E আৰু I এ ঠিক কৰে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "BREAD comes first.",
+        "as": "BREAD আগতে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u4.q2",
+     "type": "order",
+     "skill": "r-dict",
+     "q": {
+      "en": "Put the words in dictionary order",
+      "as": "শব্দবোৰ অভিধানৰ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "MANGO",
+       "as": "MANGO"
+      },
+      {
+       "en": "MANNER",
+       "as": "MANNER"
+      },
+      {
+       "en": "MAPLE",
+       "as": "MAPLE"
+      },
+      {
+       "en": "MARKET",
+       "as": "MARKET"
+      }
+     ],
+     "why": {
+      "en": "The third letters decide it: N, N, P, R.",
+      "as": "তৃতীয় আখৰে ঠিক কৰে: N, N, P, R।"
+     }
+    },
+    {
+     "id": "rs1.u4.q3",
+     "type": "order",
+     "skill": "r-dict",
+     "q": {
+      "en": "Put these in dictionary order",
+      "as": "এইবোৰ অভিধানৰ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "RIVER",
+       "as": "RIVER"
+      },
+      {
+       "en": "RIVERS",
+       "as": "RIVERS"
+      },
+      {
+       "en": "RIVET",
+       "as": "RIVET"
+      },
+      {
+       "en": "ROAD",
+       "as": "ROAD"
+      }
+     ],
+     "why": {
+      "en": "RIVER is a shorter match, so it leads.",
+      "as": "RIVER চুটি, সেয়ে আগত।"
+     }
+    },
+    {
+     "id": "rs1.u4.q4",
+     "type": "tf",
+     "skill": "r-dict",
+     "s": {
+      "en": "CART comes before CARD in a dictionary.",
+      "as": "অভিধানত CARD ৰ আগত CART।"
+     },
+     "answer": false,
+     "why": {
+      "en": "D comes before T.",
+      "as": "T ৰ আগত D।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-firstonly",
+       "why": {
+        "en": "When the first letters match, compare the next letters.",
+        "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u4.q5",
+     "type": "tf",
+     "skill": "r-dict",
+     "s": {
+      "en": "PEN comes before PENCIL.",
+      "as": "PENCIL ৰ আগত PEN।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The shorter match comes first.",
+      "as": "চুটি শব্দ আগতে।"
+     }
+    },
+    {
+     "id": "rs1.u4.q6",
+     "type": "match",
+     "skill": "r-dict",
+     "q": {
+      "en": "Match the pair to the deciding letters",
+      "as": "যোৰক ঠিক কৰা আখৰৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "FARM, FAST",
+        "as": "FARM, FAST"
+       },
+       {
+        "en": "R before S",
+        "as": "S ৰ আগত R"
+       }
+      ],
+      [
+       {
+        "en": "GOAT, GOLD",
+        "as": "GOAT, GOLD"
+       },
+       {
+        "en": "A before L",
+        "as": "L ৰ আগত A"
+       }
+      ],
+      [
+       {
+        "en": "HILL, HOLE",
+        "as": "HILL, HOLE"
+       },
+       {
+        "en": "I before O",
+        "as": "O ৰ আগত I"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The first different letters decide.",
+      "as": "প্ৰথম বেলেগ আখৰে ঠিক কৰে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Logical order of words",
+    "as": "শব্দৰ যুক্তিসংগত ক্ৰম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Find the kind of order first.",
+     "as": "প্ৰথমে কেনে ক্ৰম চোৱা।"
+    },
+    {
+     "en": "Size runs small to large.",
+     "as": "আকাৰ সৰুৰ পৰা ডাঙৰলৈ।"
+    },
+    {
+     "en": "Process runs first step to last.",
+     "as": "প্ৰক্ৰিয়া প্ৰথমৰ পৰা শেষলৈ।"
+    },
+    {
+     "en": "Life runs from birth onward.",
+     "as": "জীৱন জন্মৰ পৰা আগবাঢ়ে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs1.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "Ask what is growing",
+      "as": "কি বাঢ়িছে সোধা"
+     },
+     "text": [
+      {
+       "en": "These lists follow life, not the alphabet. Name what changes from word to word.",
+       "as": "এই তালিকা বৰ্ণমালাৰ দৰে নহয়, জীৱনৰ দৰে। শব্দে শব্দে কি সলনি হয় কোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Size: room, house, village",
+        "as": "আকাৰ: কোঠা, ঘৰ, গাঁও"
+       },
+       {
+        "en": "Process: seed, plant, fruit",
+        "as": "প্ৰক্ৰিয়া: বীজ, গছ, ফল"
+       },
+       {
+        "en": "Age: child, youth, elder",
+        "as": "বয়স: শিশু, যুৱক, বৃদ্ধ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Fix the two ends",
+      "as": "দুই মূৰ ঠিক কৰা"
+     },
+     "text": [
+      {
+       "en": "Pick the first and last words. The middle usually falls into place.",
+       "as": "প্ৰথম আৰু শেষ শব্দ বাছা। মাজখিনি সাধাৰণতে নিজে মিলে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "First word",
+        "as": "প্ৰথম শব্দ"
+       },
+       {
+        "en": "Last word",
+        "as": "শেষ শব্দ"
+       },
+       {
+        "en": "The middle",
+        "as": "মাজখিনি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u5.q1",
+     "type": "order",
+     "skill": "r-logorder",
+     "q": {
+      "en": "Smallest to largest",
+      "as": "সৰুৰ পৰা ডাঙৰলৈ"
+     },
+     "items": [
+      {
+       "en": "Village",
+       "as": "গাঁও"
+      },
+      {
+       "en": "District",
+       "as": "জিলা"
+      },
+      {
+       "en": "State",
+       "as": "ৰাজ্য"
+      },
+      {
+       "en": "Country",
+       "as": "দেশ"
+      }
+     ],
+     "why": {
+      "en": "Each contains the one before.",
+      "as": "প্ৰতিটোৱে আগৰটোক সামৰে।"
+     }
+    },
+    {
+     "id": "rs1.u5.q2",
+     "type": "order",
+     "skill": "r-logorder",
+     "q": {
+      "en": "Put the steps of making tea in order",
+      "as": "চাহ বনোৱাৰ খোজ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Boil water",
+       "as": "পানী উতলোৱা"
+      },
+      {
+       "en": "Add leaves",
+       "as": "পাত দিয়া"
+      },
+      {
+       "en": "Strain",
+       "as": "ছেকা"
+      },
+      {
+       "en": "Serve",
+       "as": "পৰিবেশন"
+      }
+     ],
+     "why": {
+      "en": "Each step needs the one before.",
+      "as": "প্ৰতিটো খোজৰ বাবে আগৰটো লাগে।"
+     }
+    },
+    {
+     "id": "rs1.u5.q3",
+     "type": "match",
+     "skill": "r-logorder",
+     "q": {
+      "en": "Match the list to its order",
+      "as": "তালিকাক ক্ৰমৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Seed, plant, tree",
+        "as": "বীজ, গছপুলি, গছ"
+       },
+       {
+        "en": "Growth",
+        "as": "বৃদ্ধি"
+       }
+      ],
+      [
+       {
+        "en": "Page, book, library",
+        "as": "পৃষ্ঠা, কিতাপ, পুথিভঁৰাল"
+       },
+       {
+        "en": "Size",
+        "as": "আকাৰ"
+       }
+      ],
+      [
+       {
+        "en": "Morning, noon, night",
+        "as": "ৰাতিপুৱা, দুপৰীয়া, ৰাতি"
+       },
+       {
+        "en": "Time",
+        "as": "সময়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name what changes.",
+      "as": "কি সলনি হয় কোৱা।"
+     }
+    },
+    {
+     "id": "rs1.u5.q4",
+     "type": "tf",
+     "skill": "r-logorder",
+     "s": {
+      "en": "In a logical order question, alphabetical order decides the answer.",
+      "as": "যুক্তিসংগত ক্ৰমৰ প্ৰশ্নত বৰ্ণমালাৰ ক্ৰমে উত্তৰ ঠিক কৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Meaning decides it.",
+      "as": "অৰ্থই ঠিক কৰে।"
+     }
+    },
+    {
+     "id": "rs1.u5.q5",
+     "type": "odd",
+     "skill": "r-logorder",
+     "q": {
+      "en": "Which does not belong in this sequence?",
+      "as": "এই ক্ৰমত কোনটো নিমিলে?"
+     },
+     "why": {
+      "en": "Stone is not a stage of the others.",
+      "as": "Stone বাকীবোৰৰ ধাপ নহয়।"
+     },
+     "options": [
+      {
+       "en": "Egg",
+       "as": "Egg"
+      },
+      {
+       "en": "Hen",
+       "as": "Hen"
+      },
+      {
+       "en": "Stone",
+       "as": "Stone"
+      },
+      {
+       "en": "Chick",
+       "as": "Chick"
+      }
+     ],
+     "answer": 2,
+     "variants": [
+      {
+       "q": {
+        "en": "Which does not belong in this sequence?",
+        "as": "এই ক্ৰমত কোনটো নিমিলে?"
+       },
+       "why": {
+        "en": "Stone is not a stage of the others.",
+        "as": "Stone বাকীবোৰৰ ধাপ নহয়।"
+       },
+       "options": [
+        {
+         "en": "Egg",
+         "as": "Egg"
+        },
+        {
+         "en": "Hen",
+         "as": "Hen"
+        },
+        {
+         "en": "Stone",
+         "as": "Stone"
+        },
+        {
+         "en": "Chick",
+         "as": "Chick"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "q": {
+        "en": "Which does not belong in this sequence?",
+        "as": "এই ক্ৰমত কোনটো নিমিলে?"
+       },
+       "why": {
+        "en": "Chair is not a stage of the others.",
+        "as": "Chair বাকীবোৰৰ ধাপ নহয়।"
+       },
+       "options": [
+        {
+         "en": "Flower",
+         "as": "Flower"
+        },
+        {
+         "en": "Seed",
+         "as": "Seed"
+        },
+        {
+         "en": "Shoot",
+         "as": "Shoot"
+        },
+        {
+         "en": "Chair",
+         "as": "Chair"
+        }
+       ],
+       "answer": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Words inside words",
+    "as": "শব্দৰ ভিতৰত শব্দ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Count each letter in the long word.",
+     "as": "দীঘল শব্দৰ প্ৰতিটো আখৰ গণা।"
+    },
+    {
+     "en": "A new word can use a letter only as often as it appears.",
+     "as": "নতুন শব্দত আখৰ যিমানবাৰ আছে সিমানেই ব্যৱহাৰ।"
+    },
+    {
+     "en": "Test each option letter by letter.",
+     "as": "প্ৰতিটো বিকল্প আখৰে আখৰে পৰীক্ষা কৰা।"
+    },
+    {
+     "en": "One missing letter rules a word out.",
+     "as": "এটা আখৰ নাথাকিলেই শব্দ বাদ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs1.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "The letters are your budget",
+      "as": "আখৰবোৰেই তোমাৰ পুঁজি"
+     },
+     "text": [
+      {
+       "en": "Think of the long word as stock. Every letter you use must be in stock.",
+       "as": "দীঘল শব্দক ভঁৰাল বুলি ভাবা। ব্যৱহাৰ কৰা আখৰ ভঁৰালত থাকিব লাগিব।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "List the stock",
+        "as": "ভঁৰাল লিখা"
+       },
+       {
+        "en": "Spend each letter",
+        "as": "আখৰ খৰচ"
+       },
+       {
+        "en": "Out of stock? No",
+        "as": "নাই? নহয়"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Watch double letters",
+      "as": "দুবাৰৰ আখৰ চোৱা"
+     },
+     "text": [
+      {
+       "en": "TEACHER has one A, so AREA cannot be made even though A appears there.",
+       "as": "TEACHER ত এটা A, সেয়ে AREA বনাব নোৱাৰি।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "TEACHER",
+        "as": "TEACHER"
+       },
+       {
+        "en": "One A",
+        "as": "এটা A"
+       },
+       {
+        "en": "AREA needs two",
+        "as": "AREA ত দুটা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs1.u6.q1",
+     "type": "odd",
+     "skill": "r-wordform",
+     "q": {
+      "en": "Which word cannot be made from the letters of GARDEN?",
+      "as": "GARDEN ৰ আখৰেৰে কোন শব্দ বনাব নোৱাৰি?"
+     },
+     "why": {
+      "en": "GREEN needs a letter that GARDEN lacks.",
+      "as": "GREEN ত GARDEN ত নথকা আখৰ লাগে।"
+     },
+     "options": [
+      {
+       "en": "GRADE",
+       "as": "GRADE"
+      },
+      {
+       "en": "RANGE",
+       "as": "RANGE"
+      },
+      {
+       "en": "DEAN",
+       "as": "DEAN"
+      },
+      {
+       "en": "GREEN",
+       "as": "GREEN"
+      }
+     ],
+     "answer": 3,
+     "variants": [
+      {
+       "q": {
+        "en": "Which word cannot be made from the letters of GARDEN?",
+        "as": "GARDEN ৰ আখৰেৰে কোন শব্দ বনাব নোৱাৰি?"
+       },
+       "why": {
+        "en": "GREEN needs a letter that GARDEN lacks.",
+        "as": "GREEN ত GARDEN ত নথকা আখৰ লাগে।"
+       },
+       "options": [
+        {
+         "en": "GRADE",
+         "as": "GRADE"
+        },
+        {
+         "en": "RANGE",
+         "as": "RANGE"
+        },
+        {
+         "en": "DEAN",
+         "as": "DEAN"
+        },
+        {
+         "en": "GREEN",
+         "as": "GREEN"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "q": {
+        "en": "Which word cannot be made from the letters of STATION?",
+        "as": "STATION ৰ আখৰেৰে কোন শব্দ বনাব নোৱাৰি?"
+       },
+       "why": {
+        "en": "TRAIN needs a letter that STATION lacks.",
+        "as": "TRAIN ত STATION ত নথকা আখৰ লাগে।"
+       },
+       "options": [
+        {
+         "en": "SAINT",
+         "as": "SAINT"
+        },
+        {
+         "en": "STAIN",
+         "as": "STAIN"
+        },
+        {
+         "en": "TOAST",
+         "as": "TOAST"
+        },
+        {
+         "en": "TRAIN",
+         "as": "TRAIN"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "q": {
+        "en": "Which word cannot be made from the letters of MOUNTAIN?",
+        "as": "MOUNTAIN ৰ আখৰেৰে কোন শব্দ বনাব নোৱাৰি?"
+       },
+       "why": {
+        "en": "MOTHER needs a letter that MOUNTAIN lacks.",
+        "as": "MOTHER ত MOUNTAIN ত নথকা আখৰ লাগে।"
+       },
+       "options": [
+        {
+         "en": "AUNT",
+         "as": "AUNT"
+        },
+        {
+         "en": "MOTHER",
+         "as": "MOTHER"
+        },
+        {
+         "en": "UNIT",
+         "as": "UNIT"
+        },
+        {
+         "en": "MAIN",
+         "as": "MAIN"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "rs1.u6.q2",
+     "type": "tf",
+     "skill": "r-wordform",
+     "s": {
+      "en": "LETTER can be made from RETAIL.",
+      "as": "RETAIL ৰ আখৰেৰে LETTER বনাব পাৰি।"
+     },
+     "answer": false,
+     "why": {
+      "en": "LETTER needs two T's and two E's.",
+      "as": "LETTER ত দুটা T আৰু দুটা E লাগে।"
+     }
+    },
+    {
+     "id": "rs1.u6.q3",
+     "type": "match",
+     "skill": "r-wordform",
+     "q": {
+      "en": "Match the word to its count of E",
+      "as": "শব্দক E ৰ সংখ্যাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "TREE",
+        "as": "TREE"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      [
+       {
+        "en": "TEA",
+        "as": "TEA"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      [
+       {
+        "en": "LEVEE",
+        "as": "LEVEE"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Count each one.",
+      "as": "প্ৰতিটো গণা।"
+     }
+    },
+    {
+     "id": "rs1.u6.q4",
+     "type": "solve",
+     "skill": "r-wordform",
+     "q": {
+      "en": "How many times does A appear in BANANA?",
+      "as": "BANANA ত A কিমানবাৰ আছে?"
+     },
+     "answer": "3",
+     "why": {
+      "en": "A appears 3 times.",
+      "as": "A 3 বাৰ আছে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many times does A appear in BANANA?",
+        "as": "BANANA ত A কিমানবাৰ আছে?"
+       },
+       "answer": "3",
+       "why": {
+        "en": "A appears 3 times.",
+        "as": "A 3 বাৰ আছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many times does S appear in ASSAM?",
+        "as": "ASSAM ত S কিমানবাৰ আছে?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "S appears 2 times.",
+        "as": "S 2 বাৰ আছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many times does T appear in COMMITTEE?",
+        "as": "COMMITTEE ত T কিমানবাৰ আছে?"
+       },
+       "answer": "2",
+       "why": {
+        "en": "T appears 2 times.",
+        "as": "T 2 বাৰ আছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs1.u6.q5",
+     "type": "order",
+     "skill": "r-wordform",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the long word",
+       "as": "দীঘল শব্দ পঢ়া"
+      },
+      {
+       "en": "Take one option",
+       "as": "এটা বিকল্প লোৱা"
+      },
+      {
+       "en": "Tick off its letters",
+       "as": "আখৰ চিন দিয়া"
+      },
+      {
+       "en": "Reject on any miss",
+       "as": "নাথাকিলে বাদ"
+      }
+     ],
+     "why": {
+      "en": "Tick letters off one at a time.",
+      "as": "এটা এটাকৈ আখৰ চিন দিয়া।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Alphabet test",
+   "as": "বৰ্ণমালাৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs1.t.q1",
+    "type": "solve",
+    "skill": "r-pos",
+    "q": {
+     "en": "What is the place of N in the alphabet?",
+     "as": "বৰ্ণমালাত N ৰ স্থান কিমান?"
+    },
+    "answer": "14",
+    "why": {
+     "en": "N is letter number 14.",
+     "as": "N 14 নম্বৰ আখৰ।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "What is the place of N in the alphabet?",
+       "as": "বৰ্ণমালাত N ৰ স্থান কিমান?"
+      },
+      "answer": "14",
+      "why": {
+       "en": "N is letter number 14.",
+       "as": "N 14 নম্বৰ আখৰ।"
+      }
+     },
+     {
+      "q": {
+       "en": "What is the place of U in the alphabet?",
+       "as": "বৰ্ণমালাত U ৰ স্থান কিমান?"
+      },
+      "answer": "21",
+      "why": {
+       "en": "U is letter number 21.",
+       "as": "U 21 নম্বৰ আখৰ।"
+      }
+     },
+     {
+      "q": {
+       "en": "What is the place of G in the alphabet?",
+       "as": "বৰ্ণমালাত G ৰ স্থান কিমান?"
+      },
+      "answer": "7",
+      "why": {
+       "en": "G is letter number 7.",
+       "as": "G 7 নম্বৰ আখৰ।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs1.t.q2",
+    "type": "solve",
+    "skill": "r-opp",
+    "input": "letters",
+    "q": {
+     "en": "Which letter is opposite C?",
+     "as": "C ৰ বিপৰীত কোন আখৰ?"
+    },
+    "answer": "X",
+    "why": {
+     "en": "27 − 3 = 24, which is X.",
+     "as": "27 − 3 = 24, অৰ্থাৎ X।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Which letter is opposite C?",
+       "as": "C ৰ বিপৰীত কোন আখৰ?"
+      },
+      "answer": "X",
+      "why": {
+       "en": "27 − 3 = 24, which is X.",
+       "as": "27 − 3 = 24, অৰ্থাৎ X।"
+      }
+     },
+     {
+      "q": {
+       "en": "Which letter is opposite P?",
+       "as": "P ৰ বিপৰীত কোন আখৰ?"
+      },
+      "answer": "K",
+      "why": {
+       "en": "27 − 16 = 11, which is K.",
+       "as": "27 − 16 = 11, অৰ্থাৎ K।"
+      }
+     },
+     {
+      "q": {
+       "en": "Which letter is opposite X?",
+       "as": "X ৰ বিপৰীত কোন আখৰ?"
+      },
+      "answer": "C",
+      "why": {
+       "en": "27 − 24 = 3, which is C.",
+       "as": "27 − 24 = 3, অৰ্থাৎ C।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs1.t.q3",
+    "type": "solve",
+    "skill": "r-lcount",
+    "input": "letters",
+    "q": {
+     "en": "Which is the 5th letter from the right end of the alphabet?",
+     "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 5 নম্বৰ আখৰ কোনটো?"
+    },
+    "answer": "V",
+    "why": {
+     "en": "27 − 5 = 22, which is V.",
+     "as": "27 − 5 = 22, অৰ্থাৎ V।"
+    },
+    "traps": [
+     {
+      "ans": "E",
+      "tag": "r-m-sideflip",
+      "why": {
+       "en": "Left means earlier in the alphabet, and right means later.",
+       "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Which is the 5th letter from the right end of the alphabet?",
+       "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 5 নম্বৰ আখৰ কোনটো?"
+      },
+      "answer": "V",
+      "why": {
+       "en": "27 − 5 = 22, which is V.",
+       "as": "27 − 5 = 22, অৰ্থাৎ V।"
+      },
+      "traps": [
+       {
+        "ans": "E",
+        "tag": "r-m-sideflip",
+        "why": {
+         "en": "Left means earlier in the alphabet, and right means later.",
+         "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which is the 11th letter from the right end of the alphabet?",
+       "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 11 নম্বৰ আখৰ কোনটো?"
+      },
+      "answer": "P",
+      "why": {
+       "en": "27 − 11 = 16, which is P.",
+       "as": "27 − 11 = 16, অৰ্থাৎ P।"
+      },
+      "traps": [
+       {
+        "ans": "K",
+        "tag": "r-m-sideflip",
+        "why": {
+         "en": "Left means earlier in the alphabet, and right means later.",
+         "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which is the 17th letter from the right end of the alphabet?",
+       "as": "বৰ্ণমালাৰ সোঁ মূৰৰ পৰা 17 নম্বৰ আখৰ কোনটো?"
+      },
+      "answer": "J",
+      "why": {
+       "en": "27 − 17 = 10, which is J.",
+       "as": "27 − 17 = 10, অৰ্থাৎ J।"
+      },
+      "traps": [
+       {
+        "ans": "Q",
+        "tag": "r-m-sideflip",
+        "why": {
+         "en": "Left means earlier in the alphabet, and right means later.",
+         "as": "বাওঁ মানে বৰ্ণমালাৰ আগলৈ, সোঁ মানে পিছলৈ।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs1.t.q4",
+    "type": "mcq",
+    "skill": "r-dict",
+    "q": {
+     "en": "Which word comes first in a dictionary?",
+     "as": "অভিধানত কোন শব্দ প্ৰথমে আহে?"
+    },
+    "why": {
+     "en": "Compare letter by letter: CLOCK comes first.",
+     "as": "আখৰে আখৰে তুলনা কৰিলে CLOCK প্ৰথম।"
+    },
+    "options": [
+     {
+      "en": "CLOCK",
+      "as": "CLOCK"
+     },
+     {
+      "en": "CLOTH",
+      "as": "CLOTH"
+     },
+     {
+      "en": "CLOUD",
+      "as": "CLOUD"
+     },
+     {
+      "en": "CLOSE",
+      "as": "CLOSE"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "r-m-firstonly",
+      "why": {
+       "en": "When the first letters match, compare the next letters.",
+       "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Which word comes first in a dictionary?",
+       "as": "অভিধানত কোন শব্দ প্ৰথমে আহে?"
+      },
+      "why": {
+       "en": "Compare letter by letter: CLOCK comes first.",
+       "as": "আখৰে আখৰে তুলনা কৰিলে CLOCK প্ৰথম।"
+      },
+      "options": [
+       {
+        "en": "CLOCK",
+        "as": "CLOCK"
+       },
+       {
+        "en": "CLOTH",
+        "as": "CLOTH"
+       },
+       {
+        "en": "CLOUD",
+        "as": "CLOUD"
+       },
+       {
+        "en": "CLOSE",
+        "as": "CLOSE"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-firstonly",
+        "why": {
+         "en": "When the first letters match, compare the next letters.",
+         "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Which word comes first in a dictionary?",
+       "as": "অভিধানত কোন শব্দ প্ৰথমে আহে?"
+      },
+      "why": {
+       "en": "Compare letter by letter: GRADE comes first.",
+       "as": "আখৰে আখৰে তুলনা কৰিলে GRADE প্ৰথম।"
+      },
+      "options": [
+       {
+        "en": "GRADE",
+        "as": "GRADE"
+       },
+       {
+        "en": "GRAIN",
+        "as": "GRAIN"
+       },
+       {
+        "en": "GRAPE",
+        "as": "GRAPE"
+       },
+       {
+        "en": "GRASS",
+        "as": "GRASS"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-firstonly",
+        "why": {
+         "en": "When the first letters match, compare the next letters.",
+         "as": "প্ৰথম আখৰ একে হ'লে পিছৰ আখৰ তুলনা কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs1.t.q5",
+    "type": "tf",
+    "skill": "r-wordform",
+    "s": {
+     "en": "RANGE can be made from GARDEN.",
+     "as": "GARDEN ৰ আখৰেৰে RANGE বনাব পাৰি।"
+    },
+    "answer": true,
+    "why": {
+     "en": "All five letters are in stock.",
+     "as": "পাঁচোটা আখৰেই আছে।"
+    }
+   },
+   {
+    "id": "rs1.t.q6",
+    "type": "tf",
+    "skill": "r-logorder",
+    "s": {
+     "en": "Page, chapter, book runs from small to large.",
+     "as": "পৃষ্ঠা, অধ্যায়, কিতাপ সৰুৰ পৰা ডাঙৰলৈ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Each contains the one before.",
+     "as": "প্ৰতিটোৱে আগৰটোক সামৰে।"
+    }
+   }
+  ]
+ }
+}

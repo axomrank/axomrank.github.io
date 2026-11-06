@@ -1,0 +1,2733 @@
+{
+ "id": "rs-05-odd-one-out",
+ "course": "reasoning",
+ "no": 5,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Odd one out",
+  "as": "বেলেগটো উলিওৱা"
+ },
+ "reign": {
+  "en": "Groups, numbers, letters, pairs",
+  "as": "গোট, সংখ্যা, আখৰ, যোৰ"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Find the group first",
+    "as": "প্ৰথমে গোট বিচৰা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Name what three share.",
+     "as": "তিনিটাৰ উমৈহতীয়া গুণ কোৱা।"
+    },
+    {
+     "en": "The fourth then stands out.",
+     "as": "চতুৰ্থটো নিজে ওলায়।"
+    },
+    {
+     "en": "Do not start from how one looks.",
+     "as": "চেহেৰাৰ পৰা আৰম্ভ নকৰিবা।"
+    },
+    {
+     "en": "Check that your group fits exactly three.",
+     "as": "গোটত ঠিক তিনিটা মিলিছে চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs5.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Look for three, not one",
+      "as": "এটা নহয়, তিনিটা চোৱা"
+     },
+     "text": [
+      {
+       "en": "The answer is defined by the other three. Name their group.",
+       "as": "উত্তৰ বাকী তিনিটাৰ দ্বাৰা ঠিক হয়। সিহঁতৰ গোটৰ নাম কোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Name a group",
+        "as": "গোটৰ নাম"
+       },
+       {
+        "en": "Three fit",
+        "as": "তিনিটা মিলে"
+       },
+       {
+        "en": "One left",
+        "as": "এটা বাকী"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Common groups",
+      "as": "সাধাৰণ গোট"
+     },
+     "text": [
+      {
+       "en": "Most word groups come from everyday life.",
+       "as": "বেছিভাগ শব্দৰ গোট দৈনন্দিন জীৱনৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Fruits",
+        "as": "ফল"
+       },
+       {
+        "en": "Tools",
+        "as": "সঁজুলি"
+       },
+       {
+        "en": "Rivers",
+        "as": "নদী"
+       },
+       {
+        "en": "Animals",
+        "as": "জীৱ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u1.q1",
+     "type": "odd",
+     "skill": "r-oddgroup",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Banana",
+       "as": "কল"
+      },
+      {
+       "en": "Mango",
+       "as": "আম"
+      },
+      {
+       "en": "Potato",
+       "as": "আলু"
+      },
+      {
+       "en": "Guava",
+       "as": "মধুৰিআম"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The others are fruits.",
+      "as": "বাকীবোৰ ফল।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Banana",
+         "as": "কল"
+        },
+        {
+         "en": "Mango",
+         "as": "আম"
+        },
+        {
+         "en": "Potato",
+         "as": "আলু"
+        },
+        {
+         "en": "Guava",
+         "as": "মধুৰিআম"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are fruits.",
+        "as": "বাকীবোৰ ফল।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Hammer",
+         "as": "হাতুৰী"
+        },
+        {
+         "en": "Saw",
+         "as": "কৰত"
+        },
+        {
+         "en": "Chair",
+         "as": "চকী"
+        },
+        {
+         "en": "Axe",
+         "as": "কুঠাৰ"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are tools.",
+        "as": "বাকীবোৰ সঁজুলি।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Tiger",
+         "as": "বাঘ"
+        },
+        {
+         "en": "Lion",
+         "as": "সিংহ"
+        },
+        {
+         "en": "Cow",
+         "as": "গৰু"
+        },
+        {
+         "en": "Leopard",
+         "as": "নাহৰফুটুকী"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are wild cats.",
+        "as": "বাকীবোৰ বনৰীয়া মেকুৰী জাতীয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u1.q2",
+     "type": "odd",
+     "skill": "r-oddgroup",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Red",
+       "as": "ৰঙা"
+      },
+      {
+       "en": "Green",
+       "as": "সেউজীয়া"
+      },
+      {
+       "en": "Blue",
+       "as": "নীলা"
+      },
+      {
+       "en": "Round",
+       "as": "ঘূৰণীয়া"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "The others are colours.",
+      "as": "বাকীবোৰ ৰং।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Red",
+         "as": "ৰঙা"
+        },
+        {
+         "en": "Green",
+         "as": "সেউজীয়া"
+        },
+        {
+         "en": "Blue",
+         "as": "নীলা"
+        },
+        {
+         "en": "Round",
+         "as": "ঘূৰণীয়া"
+        }
+       ],
+       "answer": 3,
+       "why": {
+        "en": "The others are colours.",
+        "as": "বাকীবোৰ ৰং।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Brahmaputra",
+         "as": "ব্ৰহ্মপুত্ৰ"
+        },
+        {
+         "en": "Ganga",
+         "as": "গংগা"
+        },
+        {
+         "en": "Barak",
+         "as": "বৰাক"
+        },
+        {
+         "en": "Himalaya",
+         "as": "হিমালয়"
+        }
+       ],
+       "answer": 3,
+       "why": {
+        "en": "The others are rivers.",
+        "as": "বাকীবোৰ নদী।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u1.q3",
+     "type": "tf",
+     "skill": "r-oddgroup",
+     "s": {
+      "en": "In odd one out, start by finding what three share.",
+      "as": "বেলেগটো উলিয়াবলৈ তিনিটাৰ উমৈহতীয়া গুণৰ পৰা আৰম্ভ কৰা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The group defines the odd one.",
+      "as": "গোটে বেলেগটো ঠিক কৰে।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-surface",
+       "why": {
+        "en": "Look for what the other three share, not how one looks.",
+        "as": "এটাৰ চেহেৰা নহয়, বাকী তিনিটাৰ উমৈহতীয়া গুণ চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u1.q4",
+     "type": "match",
+     "skill": "r-oddgroup",
+     "q": {
+      "en": "Match the words to their group",
+      "as": "শব্দক গোটৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Rice, wheat, maize",
+        "as": "ধান, ঘেঁহু, মাকৈ"
+       },
+       {
+        "en": "Cereals",
+        "as": "শস্য"
+       }
+      ],
+      [
+       {
+        "en": "Spoon, fork, plate",
+        "as": "চামুচ, কাঁটাচামুচ, কাঁহী"
+       },
+       {
+        "en": "Tableware",
+        "as": "খোৱাৰ সঁজুলি"
+       }
+      ],
+      [
+       {
+        "en": "Bus, train, car",
+        "as": "বাছ, ৰেল, গাড়ী"
+       },
+       {
+        "en": "Transport",
+        "as": "যাতায়াত"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name each group.",
+      "as": "প্ৰতিটো গোটৰ নাম কোৱা।"
+     }
+    },
+    {
+     "id": "rs5.u1.q5",
+     "type": "order",
+     "skill": "r-oddgroup",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read all four",
+       "as": "চাৰিওটা পঢ়া"
+      },
+      {
+       "en": "Name a group",
+       "as": "গোটৰ নাম"
+      },
+      {
+       "en": "Test each word",
+       "as": "প্ৰতিটো শব্দ চোৱা"
+      },
+      {
+       "en": "Choose the misfit",
+       "as": "নিমিলাটো বাছা"
+      }
+     ],
+     "why": {
+      "en": "All four first.",
+      "as": "প্ৰথমে চাৰিওটা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Look one level deeper",
+    "as": "অলপ গভীৰলৈ চোৱা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "All four may look alike.",
+     "as": "চাৰিওটা একে দেখিব পাৰে।"
+    },
+    {
+     "en": "Ask how each is used or made.",
+     "as": "কেনেকৈ ব্যৱহাৰ বা বনোৱা হয় সোধা।"
+    },
+    {
+     "en": "Living and non-living is a common split.",
+     "as": "জীৱ আৰু অজীৱ সাধাৰণ বিভাজন।"
+    },
+    {
+     "en": "Try a second property if the first fails.",
+     "as": "প্ৰথম গুণে নহ'লে দ্বিতীয় চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs5.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "When all look alike",
+      "as": "সকলো একে দেখিলে"
+     },
+     "text": [
+      {
+       "en": "If four things seem one family, ask how they work.",
+       "as": "চাৰিওটা এক পৰিয়াল যেন লাগিলে কেনেকৈ কাম কৰে সোধা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Walks on land",
+        "as": "মাটিত খোজ"
+       },
+       {
+        "en": "Lives in water",
+        "as": "পানীত থাকে"
+       },
+       {
+        "en": "Flies",
+        "as": "উৰে"
+       },
+       {
+        "en": "Grows from seed",
+        "as": "বীজৰ পৰা গজে"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Questions to try",
+      "as": "সোধা প্ৰশ্ন"
+     },
+     "text": [
+      {
+       "en": "Ask about use, material, place and life.",
+       "as": "ব্যৱহাৰ, সামগ্ৰী, ঠাই, জীৱন সোধা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Use?",
+        "as": "ব্যৱহাৰ?"
+       },
+       {
+        "en": "Made of?",
+        "as": "সামগ্ৰী?"
+       },
+       {
+        "en": "Where?",
+        "as": "ক'ত?"
+       },
+       {
+        "en": "Alive?",
+        "as": "জীৱিত?"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u2.q1",
+     "type": "odd",
+     "skill": "r-oddprop",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Bat",
+       "as": "বাদুলি"
+      },
+      {
+       "en": "Crow",
+       "as": "কাউৰী"
+      },
+      {
+       "en": "Sparrow",
+       "as": "ঘৰচিৰিকা"
+      },
+      {
+       "en": "Eagle",
+       "as": "ঈগল"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Bats are mammals; the others are birds.",
+      "as": "বাদুলি স্তন্যপায়ী; বাকীবোৰ চৰাই।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Bat",
+         "as": "বাদুলি"
+        },
+        {
+         "en": "Crow",
+         "as": "কাউৰী"
+        },
+        {
+         "en": "Sparrow",
+         "as": "ঘৰচিৰিকা"
+        },
+        {
+         "en": "Eagle",
+         "as": "ঈগল"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Bats are mammals; the others are birds.",
+        "as": "বাদুলি স্তন্যপায়ী; বাকীবোৰ চৰাই।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Beetroot",
+         "as": "বিট"
+        },
+        {
+         "en": "Radish",
+         "as": "মূলা"
+        },
+        {
+         "en": "Tomato",
+         "as": "বিলাহী"
+        },
+        {
+         "en": "Carrot",
+         "as": "গাজৰ"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others grow as roots.",
+        "as": "বাকীবোৰ শিপা হিচাপে গজে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Whale",
+         "as": "তিমি"
+        },
+        {
+         "en": "Shark",
+         "as": "হাঙৰ"
+        },
+        {
+         "en": "Seal",
+         "as": "চীল"
+        },
+        {
+         "en": "Dolphin",
+         "as": "ডলফিন"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Sharks are fish; the others are mammals.",
+        "as": "হাঙৰ মাছ; বাকীবোৰ স্তন্যপায়ী।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u2.q2",
+     "type": "tf",
+     "skill": "r-oddprop",
+     "s": {
+      "en": "A bat belongs in the group of birds.",
+      "as": "বাদুলি চৰাইৰ গোটত পৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is a mammal that flies.",
+      "as": "ই উৰিব পৰা স্তন্যপায়ী।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-surface",
+       "why": {
+        "en": "Look for what the other three share, not how one looks.",
+        "as": "এটাৰ চেহেৰা নহয়, বাকী তিনিটাৰ উমৈহতীয়া গুণ চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u2.q3",
+     "type": "match",
+     "skill": "r-oddprop",
+     "q": {
+      "en": "Match the thing to its property",
+      "as": "বস্তুক গুণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Iron",
+        "as": "লো"
+       },
+       {
+        "en": "Metal",
+        "as": "ধাতু"
+       }
+      ],
+      [
+       {
+        "en": "Rose",
+        "as": "গোলাপ"
+       },
+       {
+        "en": "Plant",
+        "as": "উদ্ভিদ"
+       }
+      ],
+      [
+       {
+        "en": "Oxygen",
+        "as": "অক্সিজেন"
+       },
+       {
+        "en": "Gas",
+        "as": "গেছ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each belongs to a class.",
+      "as": "প্ৰতিটো এটা শ্ৰেণীৰ।"
+     }
+    },
+    {
+     "id": "rs5.u2.q4",
+     "type": "odd",
+     "skill": "r-oddprop",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Wood",
+       "as": "কাঠ"
+      },
+      {
+       "en": "Gold",
+       "as": "সোণ"
+      },
+      {
+       "en": "Copper",
+       "as": "তাম"
+      },
+      {
+       "en": "Iron",
+       "as": "লো"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The others are metals.",
+      "as": "বাকীবোৰ ধাতু।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Wood",
+         "as": "কাঠ"
+        },
+        {
+         "en": "Gold",
+         "as": "সোণ"
+        },
+        {
+         "en": "Copper",
+         "as": "তাম"
+        },
+        {
+         "en": "Iron",
+         "as": "লো"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "The others are metals.",
+        "as": "বাকীবোৰ ধাতু।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Triangle",
+         "as": "ত্ৰিভুজ"
+        },
+        {
+         "en": "Circle",
+         "as": "বৃত্ত"
+        },
+        {
+         "en": "Square",
+         "as": "বৰ্গ"
+        },
+        {
+         "en": "Rectangle",
+         "as": "আয়ত"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "The others have straight sides.",
+        "as": "বাকীবোৰৰ বাহু পোন।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u2.q5",
+     "type": "order",
+     "skill": "r-oddprop",
+     "q": {
+      "en": "Questions from simple to deep",
+      "as": "সহজৰ পৰা গভীৰ প্ৰশ্নলৈ"
+     },
+     "items": [
+      {
+       "en": "What is it?",
+       "as": "ই কি?"
+      },
+      {
+       "en": "What is it used for?",
+       "as": "ইয়াৰ ব্যৱহাৰ কি?"
+      },
+      {
+       "en": "What is it made of?",
+       "as": "ই কিহেৰে বনোৱা?"
+      },
+      {
+       "en": "How does it live?",
+       "as": "ই কেনেকৈ জীয়াই থাকে?"
+      }
+     ],
+     "why": {
+      "en": "Go deeper only if needed.",
+      "as": "প্ৰয়োজন হ'লেহে গভীৰলৈ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Numbers that do not fit",
+    "as": "নিমিলা সংখ্যা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Test odd and even first.",
+     "as": "প্ৰথমে যুগ্ম-অযুগ্ম চোৱা।"
+    },
+    {
+     "en": "Then primes, squares and cubes.",
+     "as": "তাৰ পিছত মৌলিক, বৰ্গ, ঘন।"
+    },
+    {
+     "en": "Then multiples of one number.",
+     "as": "তাৰ পিছত গুণিতক।"
+    },
+    {
+     "en": "Digit sums can be the link.",
+     "as": "অংকৰ যোগফলো সংযোগ হ'ব পাৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs5.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "A checklist for numbers",
+      "as": "সংখ্যাৰ তালিকা"
+     },
+     "text": [
+      {
+       "en": "Run the same quick checks every time.",
+       "as": "সদায় একে দ্ৰুত পৰীক্ষা কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Odd or even",
+        "as": "অযুগ্ম, যুগ্ম"
+       },
+       {
+        "en": "Prime",
+        "as": "মৌলিক"
+       },
+       {
+        "en": "Square",
+        "as": "বৰ্গ"
+       },
+       {
+        "en": "Multiple",
+        "as": "গুণিতক"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Digit sums",
+      "as": "অংকৰ যোগফল"
+     },
+     "text": [
+      {
+       "en": "23, 41, 50 all have digits adding to 5. 62 does not.",
+       "as": "23, 41, 50 ৰ অংকৰ যোগফল 5। 62 ৰ নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "2 + 3 = 5",
+        "as": "2 + 3 = 5"
+       },
+       {
+        "en": "4 + 1 = 5",
+        "as": "4 + 1 = 5"
+       },
+       {
+        "en": "5 + 0 = 5",
+        "as": "5 + 0 = 5"
+       },
+       {
+        "en": "6 + 2 = 8",
+        "as": "6 + 2 = 8"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u3.q1",
+     "type": "odd",
+     "skill": "r-oddnum",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "9",
+       "as": "9"
+      },
+      {
+       "en": "4",
+       "as": "4"
+      },
+      {
+       "en": "2",
+       "as": "2"
+      },
+      {
+       "en": "8",
+       "as": "8"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The others are even.",
+      "as": "বাকীবোৰ যুগ্ম।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "9",
+         "as": "9"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "2",
+         "as": "2"
+        },
+        {
+         "en": "8",
+         "as": "8"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "The others are even.",
+        "as": "বাকীবোৰ যুগ্ম।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "13",
+         "as": "13"
+        },
+        {
+         "en": "21",
+         "as": "21"
+        },
+        {
+         "en": "19",
+         "as": "19"
+        },
+        {
+         "en": "17",
+         "as": "17"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "The others are prime.",
+        "as": "বাকীবোৰ মৌলিক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "49",
+         "as": "49"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are squares.",
+        "as": "বাকীবোৰ বৰ্গ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u3.q2",
+     "type": "odd",
+     "skill": "r-oddnum",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "14",
+       "as": "14"
+      },
+      {
+       "en": "35",
+       "as": "35"
+      },
+      {
+       "en": "40",
+       "as": "40"
+      },
+      {
+       "en": "21",
+       "as": "21"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The others are multiples of 7.",
+      "as": "বাকীবোৰ 7 ৰ গুণিতক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "35",
+         "as": "35"
+        },
+        {
+         "en": "40",
+         "as": "40"
+        },
+        {
+         "en": "21",
+         "as": "21"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are multiples of 7.",
+        "as": "বাকীবোৰ 7 ৰ গুণিতক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "81",
+         "as": "81"
+        },
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "64",
+         "as": "64"
+        },
+        {
+         "en": "27",
+         "as": "27"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "The others are cubes.",
+        "as": "বাকীবোৰ ঘন।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "23",
+         "as": "23"
+        },
+        {
+         "en": "62",
+         "as": "62"
+        },
+        {
+         "en": "50",
+         "as": "50"
+        },
+        {
+         "en": "41",
+         "as": "41"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "The others have digits adding to 5.",
+        "as": "বাকীবোৰৰ অংকৰ যোগফল 5।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u3.q3",
+     "type": "tf",
+     "skill": "r-oddnum",
+     "s": {
+      "en": "51 is a prime number.",
+      "as": "51 মৌলিক সংখ্যা।"
+     },
+     "answer": false,
+     "why": {
+      "en": "51 = 3 × 17.",
+      "as": "51 = 3 × 17।"
+     }
+    },
+    {
+     "id": "rs5.u3.q4",
+     "type": "match",
+     "skill": "r-oddnum",
+     "q": {
+      "en": "Match the number to its family",
+      "as": "সংখ্যাক পৰিয়ালৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "Square",
+        "as": "বৰ্গ"
+       }
+      ],
+      [
+       {
+        "en": "29",
+        "as": "29"
+       },
+       {
+        "en": "Prime",
+        "as": "মৌলিক"
+       }
+      ],
+      [
+       {
+        "en": "27",
+        "as": "27"
+       },
+       {
+        "en": "Cube",
+        "as": "ঘন"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Know them on sight.",
+      "as": "চিনি পোৱা হোৱা।"
+     }
+    },
+    {
+     "id": "rs5.u3.q5",
+     "type": "solve",
+     "skill": "r-oddnum",
+     "q": {
+      "en": "What is the digit sum of 47?",
+      "as": "47 ৰ অংকৰ যোগফল কিমান?"
+     },
+     "answer": "11",
+     "why": {
+      "en": "Add the digits.",
+      "as": "অংকবোৰ যোগ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What is the digit sum of 47?",
+        "as": "47 ৰ অংকৰ যোগফল কিমান?"
+       },
+       "answer": "11",
+       "why": {
+        "en": "Add the digits.",
+        "as": "অংকবোৰ যোগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the digit sum of 163?",
+        "as": "163 ৰ অংকৰ যোগফল কিমান?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "Add the digits.",
+        "as": "অংকবোৰ যোগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "What is the digit sum of 258?",
+        "as": "258 ৰ অংকৰ যোগফল কিমান?"
+       },
+       "answer": "15",
+       "why": {
+        "en": "Add the digits.",
+        "as": "অংকবোৰ যোগ কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Letters that do not fit",
+    "as": "নিমিলা আখৰ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Vowels and consonants are the first split.",
+     "as": "স্বৰ আৰু ব্যঞ্জন প্ৰথম বিভাজন।"
+    },
+    {
+     "en": "Then check the gaps in a group.",
+     "as": "তাৰ পিছত গোটৰ ব্যৱধান।"
+    },
+    {
+     "en": "Then opposite-letter pairs.",
+     "as": "তাৰ পিছত বিপৰীত যোৰ।"
+    },
+    {
+     "en": "Convert to places when unsure.",
+     "as": "সন্দেহ হ'লে স্থানলৈ সলনি কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs5.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Five letters are special",
+      "as": "পাঁচটা আখৰ বিশেষ"
+     },
+     "text": [
+      {
+       "en": "If only one option holds a vowel, or lacks one, that is the rule.",
+       "as": "এটা বিকল্পত স্বৰ থাকিলে বা নাথাকিলে, সেয়াই নিয়ম।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "E",
+        "as": "E"
+       },
+       {
+        "en": "I",
+        "as": "I"
+       },
+       {
+        "en": "O",
+        "as": "O"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Gaps again",
+      "as": "আকৌ ব্যৱধান"
+     },
+     "text": [
+      {
+       "en": "BD, FH, JL all skip one letter. MQ does not.",
+       "as": "BD, FH, JL ত এটা আখৰ এৰে। MQ ত নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "BD: +2",
+        "as": "BD: +2"
+       },
+       {
+        "en": "FH: +2",
+        "as": "FH: +2"
+       },
+       {
+        "en": "JL: +2",
+        "as": "JL: +2"
+       },
+       {
+        "en": "MQ: +4",
+        "as": "MQ: +4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u4.q1",
+     "type": "odd",
+     "skill": "r-oddletter",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "JL",
+       "as": "JL"
+      },
+      {
+       "en": "FH",
+       "as": "FH"
+      },
+      {
+       "en": "MQ",
+       "as": "MQ"
+      },
+      {
+       "en": "BD",
+       "as": "BD"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The others have a gap of 2.",
+      "as": "বাকীবোৰৰ ব্যৱধান 2।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "JL",
+         "as": "JL"
+        },
+        {
+         "en": "FH",
+         "as": "FH"
+        },
+        {
+         "en": "MQ",
+         "as": "MQ"
+        },
+        {
+         "en": "BD",
+         "as": "BD"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others have a gap of 2.",
+        "as": "বাকীবোৰৰ ব্যৱধান 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "OU",
+         "as": "OU"
+        },
+        {
+         "en": "IO",
+         "as": "IO"
+        },
+        {
+         "en": "AB",
+         "as": "AB"
+        },
+        {
+         "en": "AE",
+         "as": "AE"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are all vowels.",
+        "as": "বাকীবোৰ সকলো স্বৰবৰ্ণ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "DV",
+         "as": "DV"
+        },
+        {
+         "en": "AZ",
+         "as": "AZ"
+        },
+        {
+         "en": "CX",
+         "as": "CX"
+        },
+        {
+         "en": "BY",
+         "as": "BY"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "The others are opposite pairs.",
+        "as": "বাকীবোৰ বিপৰীত যোৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u4.q2",
+     "type": "tf",
+     "skill": "r-oddletter",
+     "s": {
+      "en": "BY is an opposite-letter pair.",
+      "as": "BY বিপৰীত আখৰৰ যোৰ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "2 + 25 = 27.",
+      "as": "2 + 25 = 27।"
+     }
+    },
+    {
+     "id": "rs5.u4.q3",
+     "type": "match",
+     "skill": "r-oddletter",
+     "q": {
+      "en": "Match the letters to their kind",
+      "as": "আখৰক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "E",
+        "as": "E"
+       },
+       {
+        "en": "Vowel",
+        "as": "স্বৰবৰ্ণ"
+       }
+      ],
+      [
+       {
+        "en": "K",
+        "as": "K"
+       },
+       {
+        "en": "Consonant",
+        "as": "ব্যঞ্জনবৰ্ণ"
+       }
+      ],
+      [
+       {
+        "en": "CX",
+        "as": "CX"
+       },
+       {
+        "en": "Opposite pair",
+        "as": "বিপৰীত যোৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Check each.",
+      "as": "প্ৰতিটো চোৱা।"
+     }
+    },
+    {
+     "id": "rs5.u4.q4",
+     "type": "solve",
+     "skill": "r-oddletter",
+     "q": {
+      "en": "How many vowels are in MOUNTAIN?",
+      "as": "MOUNTAIN ত কিমান স্বৰবৰ্ণ?"
+     },
+     "answer": "4",
+     "why": {
+      "en": "Count A, E, I, O and U.",
+      "as": "A, E, I, O, U গণা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "How many vowels are in MOUNTAIN?",
+        "as": "MOUNTAIN ত কিমান স্বৰবৰ্ণ?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Count A, E, I, O and U.",
+        "as": "A, E, I, O, U গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many vowels are in GUWAHATI?",
+        "as": "GUWAHATI ত কিমান স্বৰবৰ্ণ?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Count A, E, I, O and U.",
+        "as": "A, E, I, O, U গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "How many vowels are in EDUCATION?",
+        "as": "EDUCATION ত কিমান স্বৰবৰ্ণ?"
+       },
+       "answer": "5",
+       "why": {
+        "en": "Count A, E, I, O and U.",
+        "as": "A, E, I, O, U গণা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u4.q5",
+     "type": "order",
+     "skill": "r-oddletter",
+     "q": {
+      "en": "Letter checks in order",
+      "as": "আখৰৰ পৰীক্ষা ক্ৰমে"
+     },
+     "items": [
+      {
+       "en": "Vowels",
+       "as": "স্বৰবৰ্ণ"
+      },
+      {
+       "en": "Gaps",
+       "as": "ব্যৱধান"
+      },
+      {
+       "en": "Opposites",
+       "as": "বিপৰীত"
+      },
+      {
+       "en": "Places",
+       "as": "স্থান"
+      }
+     ],
+     "why": {
+      "en": "Quick checks first.",
+      "as": "দ্ৰুত পৰীক্ষা আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "The odd pair",
+    "as": "বেলেগ যোৰ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Find the relation in each pair.",
+     "as": "প্ৰতিটো যোৰৰ সম্পৰ্ক উলিওৱা।"
+    },
+    {
+     "en": "Three pairs share one relation.",
+     "as": "তিনিটা যোৰৰ সম্পৰ্ক একে।"
+    },
+    {
+     "en": "This is an analogy with four choices.",
+     "as": "ই চাৰি বিকল্পৰ সাদৃশ্য।"
+    },
+    {
+     "en": "State each relation in a sentence.",
+     "as": "প্ৰতিটো সম্পৰ্ক বাক্যত কোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs5.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "Pairs hide a relation",
+      "as": "যোৰত সম্পৰ্ক লুকাই থাকে"
+     },
+     "text": [
+      {
+       "en": "Treat each pair as a small analogy. Three follow one sentence.",
+       "as": "প্ৰতিটো যোৰক সৰু সাদৃশ্য ধৰা। তিনিটাই এটা বাক্য মানে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Dog, puppy",
+        "as": "কুকুৰ, পোৱালি"
+       },
+       {
+        "en": "Cat, kitten",
+        "as": "মেকুৰী, পোৱালি"
+       },
+       {
+        "en": "Tree, leaf",
+        "as": "গছ, পাত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Number pairs too",
+      "as": "সংখ্যাৰ যোৰো"
+     },
+     "text": [
+      {
+       "en": "In 2, 4 and 3, 9 and 5, 25 the second is a square. 6, 30 is not.",
+       "as": "2, 4; 3, 9; 5, 25 ত দ্বিতীয়টো বৰ্গ। 6, 30 নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "2, 4",
+        "as": "2, 4"
+       },
+       {
+        "en": "3, 9",
+        "as": "3, 9"
+       },
+       {
+        "en": "5, 25",
+        "as": "5, 25"
+       },
+       {
+        "en": "6, 30",
+        "as": "6, 30"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u5.q1",
+     "type": "odd",
+     "skill": "r-oddpair",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Cat, kitten",
+       "as": "মেকুৰী, মেকুৰী পোৱালি"
+      },
+      {
+       "en": "Tree, leaf",
+       "as": "গছ, পাত"
+      },
+      {
+       "en": "Dog, puppy",
+       "as": "কুকুৰ, কুকুৰ পোৱালি"
+      },
+      {
+       "en": "Cow, calf",
+       "as": "গৰু, দামুৰি"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "The others are adult and young.",
+      "as": "বাকীবোৰ ডাঙৰ আৰু পোৱালি।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Cat, kitten",
+         "as": "মেকুৰী, মেকুৰী পোৱালি"
+        },
+        {
+         "en": "Tree, leaf",
+         "as": "গছ, পাত"
+        },
+        {
+         "en": "Dog, puppy",
+         "as": "কুকুৰ, কুকুৰ পোৱালি"
+        },
+        {
+         "en": "Cow, calf",
+         "as": "গৰু, দামুৰি"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "The others are adult and young.",
+        "as": "বাকীবোৰ ডাঙৰ আৰু পোৱালি।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Sun, shine",
+         "as": "সূৰ্য, পোহৰ"
+        },
+        {
+         "en": "Broom, sweep",
+         "as": "ঝাৰু, সৰা"
+        },
+        {
+         "en": "Knife, cut",
+         "as": "কটাৰী, কটা"
+        },
+        {
+         "en": "Pen, write",
+         "as": "কলম, লিখা"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "The others are tools and uses.",
+        "as": "বাকীবোৰ সঁজুলি আৰু ব্যৱহাৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u5.q2",
+     "type": "odd",
+     "skill": "r-oddpair",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "5, 25",
+       "as": "5, 25"
+      },
+      {
+       "en": "2, 4",
+       "as": "2, 4"
+      },
+      {
+       "en": "6, 30",
+       "as": "6, 30"
+      },
+      {
+       "en": "3, 9",
+       "as": "3, 9"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The others are squares.",
+      "as": "বাকীবোৰ বৰ্গ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "5, 25",
+         "as": "5, 25"
+        },
+        {
+         "en": "2, 4",
+         "as": "2, 4"
+        },
+        {
+         "en": "6, 30",
+         "as": "6, 30"
+        },
+        {
+         "en": "3, 9",
+         "as": "3, 9"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are squares.",
+        "as": "বাকীবোৰ বৰ্গ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "5, 10",
+         "as": "5, 10"
+        },
+        {
+         "en": "3, 6",
+         "as": "3, 6"
+        },
+        {
+         "en": "7, 14",
+         "as": "7, 14"
+        },
+        {
+         "en": "9, 16",
+         "as": "9, 16"
+        }
+       ],
+       "answer": 3,
+       "why": {
+        "en": "The others double.",
+        "as": "বাকীবোৰ দুগুণ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u5.q3",
+     "type": "tf",
+     "skill": "r-oddpair",
+     "s": {
+      "en": "Tiger, cub has the same relation as Dog, puppy.",
+      "as": "বাঘ, পোৱালি আৰু কুকুৰ, পোৱালিৰ সম্পৰ্ক একে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Adult and young.",
+      "as": "ডাঙৰ আৰু পোৱালি।"
+     }
+    },
+    {
+     "id": "rs5.u5.q4",
+     "type": "match",
+     "skill": "r-oddpair",
+     "q": {
+      "en": "Match the pair to its relation",
+      "as": "যোৰক সম্পৰ্কৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Rain, flood",
+        "as": "বৰষুণ, বান"
+       },
+       {
+        "en": "Cause, effect",
+        "as": "কাৰণ, ফল"
+       }
+      ],
+      [
+       {
+        "en": "Wheel, car",
+        "as": "চকা, গাড়ী"
+       },
+       {
+        "en": "Part, whole",
+        "as": "অংশ, গোটা"
+       }
+      ],
+      [
+       {
+        "en": "Hot, cold",
+        "as": "গৰম, ঠাণ্ডা"
+       },
+       {
+        "en": "Opposites",
+        "as": "বিপৰীত"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Sentence test.",
+      "as": "বাক্য পৰীক্ষা।"
+     }
+    },
+    {
+     "id": "rs5.u5.q5",
+     "type": "order",
+     "skill": "r-oddpair",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Take a pair",
+       "as": "যোৰ লোৱা"
+      },
+      {
+       "en": "State its relation",
+       "as": "সম্পৰ্ক কোৱা"
+      },
+      {
+       "en": "Test the others",
+       "as": "বাকীবোৰ চোৱা"
+      },
+      {
+       "en": "Pick the misfit",
+       "as": "নিমিলা বাছা"
+      }
+     ],
+     "why": {
+      "en": "One sentence, four tests.",
+      "as": "এটা বাক্য, চাৰি পৰীক্ষা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Check all four",
+    "as": "চাৰিওটা চোৱা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Do not stop at the first idea.",
+     "as": "প্ৰথম চিন্তাতে নৰবা।"
+    },
+    {
+     "en": "A second answer means your group is weak.",
+     "as": "দ্বিতীয় উত্তৰ মানে গোট দুৰ্বল।"
+    },
+    {
+     "en": "Prefer the narrower group.",
+     "as": "ঠেক গোট ভাল।"
+    },
+    {
+     "en": "Under time pressure, still check all four.",
+     "as": "সময় কম হ'লেও চাৰিওটা চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs5.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Two answers? Sharpen the group",
+      "as": "দুটা উত্তৰ? গোট চোকা কৰা"
+     },
+     "text": [
+      {
+       "en": "If two options seem odd, your group is too loose. Make it narrower.",
+       "as": "দুটা বেলেগ যেন লাগিলে গোট ঢিলা। ঠেক কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Two misfits",
+        "as": "দুটা নিমিলা"
+       },
+       {
+        "en": "Narrow the group",
+        "as": "গোট ঠেক"
+       },
+       {
+        "en": "One misfit",
+        "as": "এটা নিমিলা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Narrow beats wide",
+      "as": "ঠেকেই ভাল"
+     },
+     "text": [
+      {
+       "en": "Sparrow, crow, owl, duck: all birds, but only a duck swims.",
+       "as": "ঘৰচিৰিকা, কাউৰী, ফেঁচা, হাঁহ: সকলো চৰাই, কেৱল হাঁহে সাঁতোৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Birds",
+        "as": "চৰাই"
+       },
+       {
+        "en": "Birds that swim",
+        "as": "সাঁতোৰা চৰাই"
+       },
+       {
+        "en": "Duck",
+        "as": "হাঁহ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs5.u6.q1",
+     "type": "odd",
+     "skill": "r-oddskim",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Owl",
+       "as": "ফেঁচা"
+      },
+      {
+       "en": "Duck",
+       "as": "হাঁহ"
+      },
+      {
+       "en": "Sparrow",
+       "as": "ঘৰচিৰিকা"
+      },
+      {
+       "en": "Crow",
+       "as": "কাউৰী"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Only a duck swims.",
+      "as": "কেৱল হাঁহে সাঁতোৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Owl",
+         "as": "ফেঁচা"
+        },
+        {
+         "en": "Duck",
+         "as": "হাঁহ"
+        },
+        {
+         "en": "Sparrow",
+         "as": "ঘৰচিৰিকা"
+        },
+        {
+         "en": "Crow",
+         "as": "কাউৰী"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Only a duck swims.",
+        "as": "কেৱল হাঁহে সাঁতোৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Bus",
+         "as": "বাছ"
+        },
+        {
+         "en": "Car",
+         "as": "গাড়ী"
+        },
+        {
+         "en": "Truck",
+         "as": "ট্ৰাক"
+        },
+        {
+         "en": "Boat",
+         "as": "নাও"
+        }
+       ],
+       "answer": 3,
+       "why": {
+        "en": "The others run on roads.",
+        "as": "বাকীবোৰ পথত চলে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs5.u6.q2",
+     "type": "tf",
+     "skill": "r-oddskim",
+     "s": {
+      "en": "If two options seem odd, your group is too loose.",
+      "as": "দুটা বেলেগ যেন লাগিলে গোট ঢিলা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Narrow the group.",
+      "as": "গোট ঠেক কৰা।"
+     }
+    },
+    {
+     "id": "rs5.u6.q3",
+     "type": "match",
+     "skill": "r-oddskim",
+     "q": {
+      "en": "Match the wide group to a narrower one",
+      "as": "বহল গোটক ঠেক গোটৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Animals",
+        "as": "জীৱ"
+       },
+       {
+        "en": "Mammals",
+        "as": "স্তন্যপায়ী"
+       }
+      ],
+      [
+       {
+        "en": "Plants",
+        "as": "উদ্ভিদ"
+       },
+       {
+        "en": "Trees",
+        "as": "গছ"
+       }
+      ],
+      [
+       {
+        "en": "Vehicles",
+        "as": "বাহন"
+       },
+       {
+        "en": "Road vehicles",
+        "as": "পথৰ বাহন"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Narrow is sharper.",
+      "as": "ঠেক গোট চোকা।"
+     }
+    },
+    {
+     "id": "rs5.u6.q4",
+     "type": "order",
+     "skill": "r-oddskim",
+     "q": {
+      "en": "Wide to narrow",
+      "as": "বহলৰ পৰা ঠেকলৈ"
+     },
+     "items": [
+      {
+       "en": "Living things",
+       "as": "জীৱ"
+      },
+      {
+       "en": "Animals",
+       "as": "জন্তু"
+      },
+      {
+       "en": "Birds",
+       "as": "চৰাই"
+      },
+      {
+       "en": "Sparrows",
+       "as": "ঘৰচিৰিকা"
+      }
+     ],
+     "why": {
+      "en": "Each sits inside the last.",
+      "as": "প্ৰতিটো আগৰটোৰ ভিতৰত।"
+     }
+    },
+    {
+     "id": "rs5.u6.q5",
+     "type": "odd",
+     "skill": "r-oddskim",
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "options": [
+      {
+       "en": "Sunday",
+       "as": "দেওবাৰ"
+      },
+      {
+       "en": "Monday",
+       "as": "সোমবাৰ"
+      },
+      {
+       "en": "March",
+       "as": "মাৰ্চ"
+      },
+      {
+       "en": "Friday",
+       "as": "শুক্ৰবাৰ"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The others are days.",
+      "as": "বাকীবোৰ দিন।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Sunday",
+         "as": "দেওবাৰ"
+        },
+        {
+         "en": "Monday",
+         "as": "সোমবাৰ"
+        },
+        {
+         "en": "March",
+         "as": "মাৰ্চ"
+        },
+        {
+         "en": "Friday",
+         "as": "শুক্ৰবাৰ"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others are days.",
+        "as": "বাকীবোৰ দিন।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which one does not belong?",
+        "as": "কোনটো নিমিলে?"
+       },
+       "options": [
+        {
+         "en": "Summer",
+         "as": "গ্ৰীষ্ম"
+        },
+        {
+         "en": "Winter",
+         "as": "শীত"
+        },
+        {
+         "en": "Spring",
+         "as": "বসন্ত"
+        },
+        {
+         "en": "Morning",
+         "as": "ৰাতিপুৱা"
+        }
+       ],
+       "answer": 3,
+       "why": {
+        "en": "The others are seasons.",
+        "as": "বাকীবোৰ ঋতু।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Odd one out test",
+   "as": "বেলেগটো উলিওৱাৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs5.t.q1",
+    "type": "mcq",
+    "skill": "r-oddgroup",
+    "q": {
+     "en": "Which one does not belong?",
+     "as": "কোনটো নিমিলে?"
+    },
+    "why": {
+     "en": "Spoon is outside the group.",
+     "as": "Spoon গোটৰ বাহিৰত।"
+    },
+    "options": [
+     {
+      "en": "Apple",
+      "as": "Apple"
+     },
+     {
+      "en": "Orange",
+      "as": "Orange"
+     },
+     {
+      "en": "Plum",
+      "as": "Plum"
+     },
+     {
+      "en": "Spoon",
+      "as": "Spoon"
+     }
+    ],
+    "answer": 3,
+    "variants": [
+     {
+      "q": {
+       "en": "Which one does not belong?",
+       "as": "কোনটো নিমিলে?"
+      },
+      "why": {
+       "en": "Spoon is outside the group.",
+       "as": "Spoon গোটৰ বাহিৰত।"
+      },
+      "options": [
+       {
+        "en": "Apple",
+        "as": "Apple"
+       },
+       {
+        "en": "Orange",
+        "as": "Orange"
+       },
+       {
+        "en": "Plum",
+        "as": "Plum"
+       },
+       {
+        "en": "Spoon",
+        "as": "Spoon"
+       }
+      ],
+      "answer": 3
+     },
+     {
+      "q": {
+       "en": "Which one does not belong?",
+       "as": "কোনটো নিমিলে?"
+      },
+      "why": {
+       "en": "Pencil is outside the group.",
+       "as": "Pencil গোটৰ বাহিৰত।"
+      },
+      "options": [
+       {
+        "en": "Horse",
+        "as": "Horse"
+       },
+       {
+        "en": "Sheep",
+        "as": "Sheep"
+       },
+       {
+        "en": "Pencil",
+        "as": "Pencil"
+       },
+       {
+        "en": "Goat",
+        "as": "Goat"
+       }
+      ],
+      "answer": 2
+     }
+    ]
+   },
+   {
+    "id": "rs5.t.q2",
+    "type": "mcq",
+    "skill": "r-oddnum",
+    "q": {
+     "en": "Which number does not belong?",
+     "as": "কোন সংখ্যা নিমিলে?"
+    },
+    "why": {
+     "en": "Test the families.",
+     "as": "পৰিয়াল চোৱা।"
+    },
+    "options": [
+     {
+      "en": "25",
+      "as": "25"
+     },
+     {
+      "en": "49",
+      "as": "49"
+     },
+     {
+      "en": "26",
+      "as": "26"
+     },
+     {
+      "en": "36",
+      "as": "36"
+     }
+    ],
+    "answer": 2,
+    "variants": [
+     {
+      "q": {
+       "en": "Which number does not belong?",
+       "as": "কোন সংখ্যা নিমিলে?"
+      },
+      "why": {
+       "en": "Test the families.",
+       "as": "পৰিয়াল চোৱা।"
+      },
+      "options": [
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "49",
+        "as": "49"
+       },
+       {
+        "en": "26",
+        "as": "26"
+       },
+       {
+        "en": "36",
+        "as": "36"
+       }
+      ],
+      "answer": 2
+     },
+     {
+      "q": {
+       "en": "Which number does not belong?",
+       "as": "কোন সংখ্যা নিমিলে?"
+      },
+      "why": {
+       "en": "Test the families.",
+       "as": "পৰিয়াল চোৱা।"
+      },
+      "options": [
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "17",
+        "as": "17"
+       },
+       {
+        "en": "11",
+        "as": "11"
+       },
+       {
+        "en": "13",
+        "as": "13"
+       }
+      ],
+      "answer": 0
+     }
+    ]
+   },
+   {
+    "id": "rs5.t.q3",
+    "type": "tf",
+    "skill": "r-oddprop",
+    "s": {
+     "en": "A whale is a mammal.",
+     "as": "তিমি স্তন্যপায়ী।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It feeds its young with milk.",
+     "as": "ই পোৱালিক গাখীৰ খুৱায়।"
+    }
+   },
+   {
+    "id": "rs5.t.q4",
+    "type": "tf",
+    "skill": "r-oddletter",
+    "s": {
+     "en": "AZ and DW are both opposite pairs.",
+     "as": "AZ আৰু DW দুয়োটা বিপৰীত যোৰ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Both add to 27.",
+     "as": "দুয়োটাৰ যোগফল 27।"
+    }
+   },
+   {
+    "id": "rs5.t.q5",
+    "type": "mcq",
+    "skill": "r-oddpair",
+    "q": {
+     "en": "Which pair does not belong?",
+     "as": "কোন যোৰ নিমিলে?"
+    },
+    "why": {
+     "en": "The others double.",
+     "as": "বাকীবোৰ দুগুণ।"
+    },
+    "options": [
+     {
+      "en": "4, 7",
+      "as": "4, 7"
+     },
+     {
+      "en": "8, 16",
+      "as": "8, 16"
+     },
+     {
+      "en": "2, 4",
+      "as": "2, 4"
+     },
+     {
+      "en": "6, 12",
+      "as": "6, 12"
+     }
+    ],
+    "answer": 0,
+    "variants": [
+     {
+      "q": {
+       "en": "Which pair does not belong?",
+       "as": "কোন যোৰ নিমিলে?"
+      },
+      "why": {
+       "en": "The others double.",
+       "as": "বাকীবোৰ দুগুণ।"
+      },
+      "options": [
+       {
+        "en": "4, 7",
+        "as": "4, 7"
+       },
+       {
+        "en": "8, 16",
+        "as": "8, 16"
+       },
+       {
+        "en": "2, 4",
+        "as": "2, 4"
+       },
+       {
+        "en": "6, 12",
+        "as": "6, 12"
+       }
+      ],
+      "answer": 0
+     },
+     {
+      "q": {
+       "en": "Which pair does not belong?",
+       "as": "কোন যোৰ নিমিলে?"
+      },
+      "why": {
+       "en": "The others double.",
+       "as": "বাকীবোৰ দুগুণ।"
+      },
+      "options": [
+       {
+        "en": "9, 18",
+        "as": "9, 18"
+       },
+       {
+        "en": "3, 6",
+        "as": "3, 6"
+       },
+       {
+        "en": "5, 11",
+        "as": "5, 11"
+       },
+       {
+        "en": "7, 14",
+        "as": "7, 14"
+       }
+      ],
+      "answer": 2
+     }
+    ]
+   },
+   {
+    "id": "rs5.t.q6",
+    "type": "tf",
+    "skill": "r-oddskim",
+    "s": {
+     "en": "Always check all four options.",
+     "as": "সদায় চাৰিওটা বিকল্প চোৱা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "A second misfit shows a weak group.",
+     "as": "দ্বিতীয় নিমিলাই দুৰ্বল গোট দেখুৱায়।"
+    }
+   }
+  ]
+ }
+}

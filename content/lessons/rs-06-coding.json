@@ -1,0 +1,4643 @@
+{
+ "id": "rs-06-coding",
+ "course": "reasoning",
+ "no": 6,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Coding and decoding",
+  "as": "সংকেত আৰু সংকেত ভঙা"
+ },
+ "reign": {
+  "en": "Shifts, rearranging, number and sentence codes",
+  "as": "স্থানান্তৰ, পুনৰ সজ্জা, সংখ্যা আৰু বাক্য সংকেত"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Every letter moves",
+    "as": "প্ৰতিটো আখৰ আগবাঢ়ে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A simple code moves every letter by the same amount.",
+     "as": "সৰল সংকেতে প্ৰতিটো আখৰ একে পৰিমাণে সৰায়।"
+    },
+    {
+     "en": "Find the rule from one letter, then test it on another.",
+     "as": "এটা আখৰৰ পৰা নিয়ম উলিয়াই আন এটাত পৰীক্ষা কৰা।"
+    },
+    {
+     "en": "+ means forward through the alphabet.",
+     "as": "+ মানে বৰ্ণমালাত আগলৈ।"
+    },
+    {
+     "en": "− means backward.",
+     "as": "− মানে পিছলৈ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs6.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "A wheel that writes codes",
+      "as": "সংকেত লিখা চকৰি"
+     },
+     "text": [
+      {
+       "en": "A simple code moves every letter the same distance. Slide the wheel and watch TEA change.",
+       "as": "সৰল সংকেতে প্ৰতিটো আখৰ একে দূৰত্ব সৰায়। চকৰিটো টানি TEA ৰ সলনি চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "shift",
+      "word": "TEA"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to +1.",
+        "as": "+1 লৈ টানা।"
+       },
+       "goal": {
+        "k": 1
+       },
+       "then": {
+        "en": "T became U, E became F and A became B. All moved one place.",
+        "as": "T ৰ পৰা U, E ৰ পৰা F, A ৰ পৰা B হ'ল। সকলো এক ঘৰ আগবাঢ়িল।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now slide to +3.",
+        "as": "এতিয়া +3 লৈ টানা।"
+       },
+       "goal": {
+        "k": 3
+       },
+       "then": {
+        "en": "The word looks new, but the rule is still one number.",
+        "as": "শব্দটো নতুন দেখি, কিন্তু নিয়মটো এটা সংখ্যাই।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Find the rule from one letter",
+      "as": "এটা আখৰৰ পৰা নিয়ম"
+     },
+     "text": [
+      {
+       "en": "Count from the plain letter to the code letter. Then check a second letter before you trust it.",
+       "as": "মূল আখৰৰ পৰা সংকেত আখৰলৈ গণা। বিশ্বাস কৰাৰ আগতে দ্বিতীয় আখৰত পৰীক্ষা কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Plain letter",
+        "as": "মূল আখৰ"
+       },
+       {
+        "en": "Count the gap",
+        "as": "ব্যৱধান গণা"
+       },
+       {
+        "en": "Test another",
+        "as": "আনটোত পৰীক্ষা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u1.q1",
+     "type": "explore",
+     "skill": "r-shift",
+     "q": {
+      "en": "Slide the wheel until BOAT becomes DQCV.",
+      "as": "BOAT ৰ পৰা DQCV নোহোৱালৈ চকৰিটো টানা।"
+     },
+     "widget": {
+      "kind": "shift",
+      "word": "BOAT",
+      "code": "DQCV"
+     },
+     "target": 2,
+     "answerText": {
+      "en": "Shift +2",
+      "as": "স্থানান্তৰ +2"
+     },
+     "traps": [
+      {
+       "val": -2,
+       "tag": "r-m-shiftback",
+       "why": {
+        "en": "You counted backwards. A + rule moves forward through the alphabet.",
+        "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "B becomes D, a move of +2. Every other letter moves the same.",
+      "as": "B ৰ পৰা D হৈছে, অৰ্থাৎ +2। আন আখৰবোৰো একেদৰে যায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Slide the wheel until BOAT becomes DQCV.",
+        "as": "BOAT ৰ পৰা DQCV নোহোৱালৈ চকৰিটো টানা।"
+       },
+       "widget": {
+        "kind": "shift",
+        "word": "BOAT",
+        "code": "DQCV"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Shift +2",
+        "as": "স্থানান্তৰ +2"
+       },
+       "traps": [
+        {
+         "val": -2,
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "B becomes D, a move of +2. Every other letter moves the same.",
+        "as": "B ৰ পৰা D হৈছে, অৰ্থাৎ +2। আন আখৰবোৰো একেদৰে যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Slide the wheel until SILK becomes VLON.",
+        "as": "SILK ৰ পৰা VLON নোহোৱালৈ চকৰিটো টানা।"
+       },
+       "widget": {
+        "kind": "shift",
+        "word": "SILK",
+        "code": "VLON"
+       },
+       "target": 3,
+       "answerText": {
+        "en": "Shift +3",
+        "as": "স্থানান্তৰ +3"
+       },
+       "traps": [
+        {
+         "val": -3,
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "S becomes V, a move of +3. Every other letter moves the same.",
+        "as": "S ৰ পৰা V হৈছে, অৰ্থাৎ +3। আন আখৰবোৰো একেদৰে যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Slide the wheel until RICE becomes SJDF.",
+        "as": "RICE ৰ পৰা SJDF নোহোৱালৈ চকৰিটো টানা।"
+       },
+       "widget": {
+        "kind": "shift",
+        "word": "RICE",
+        "code": "SJDF"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Shift +1",
+        "as": "স্থানান্তৰ +1"
+       },
+       "traps": [
+        {
+         "val": -1,
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "R becomes S, a move of +1. Every other letter moves the same.",
+        "as": "R ৰ পৰা S হৈছে, অৰ্থাৎ +1। আন আখৰবোৰো একেদৰে যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Slide the wheel until GAMOSA becomes KEQSWE.",
+        "as": "GAMOSA ৰ পৰা KEQSWE নোহোৱালৈ চকৰিটো টানা।"
+       },
+       "widget": {
+        "kind": "shift",
+        "word": "GAMOSA",
+        "code": "KEQSWE"
+       },
+       "target": 4,
+       "answerText": {
+        "en": "Shift +4",
+        "as": "স্থানান্তৰ +4"
+       },
+       "traps": [
+        {
+         "val": -4,
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "G becomes K, a move of +4. Every other letter moves the same.",
+        "as": "G ৰ পৰা K হৈছে, অৰ্থাৎ +4। আন আখৰবোৰো একেদৰে যায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u1.q2",
+     "type": "solve",
+     "skill": "r-shift",
+     "input": "letters",
+     "q": {
+      "en": "Every letter moves 2 places forward. Write the code for BIHU.",
+      "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবাঢ়ে। BIHU ৰ সংকেত লিখা।"
+     },
+     "answer": "DKJW",
+     "why": {
+      "en": "Move each letter 2 forward: BIHU → DKJW.",
+      "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা: BIHU → DKJW।"
+     },
+     "traps": [
+      {
+       "ans": "ZGFS",
+       "tag": "r-m-shiftback",
+       "why": {
+        "en": "You counted backwards. A + rule moves forward through the alphabet.",
+        "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Every letter moves 2 places forward. Write the code for BIHU.",
+        "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবাঢ়ে। BIHU ৰ সংকেত লিখা।"
+       },
+       "answer": "DKJW",
+       "why": {
+        "en": "Move each letter 2 forward: BIHU → DKJW.",
+        "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা: BIHU → DKJW।"
+       },
+       "traps": [
+        {
+         "ans": "ZGFS",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Every letter moves 3 places forward. Write the code for TEA.",
+        "as": "প্ৰতিটো আখৰ 3 ঘৰ আগবাঢ়ে। TEA ৰ সংকেত লিখা।"
+       },
+       "answer": "WHD",
+       "why": {
+        "en": "Move each letter 3 forward: TEA → WHD.",
+        "as": "প্ৰতিটো আখৰ 3 ঘৰ আগবঢ়োৱা: TEA → WHD।"
+       },
+       "traps": [
+        {
+         "ans": "QBX",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Every letter moves 1 places forward. Write the code for DEER.",
+        "as": "প্ৰতিটো আখৰ 1 ঘৰ আগবাঢ়ে। DEER ৰ সংকেত লিখা।"
+       },
+       "answer": "EFFS",
+       "why": {
+        "en": "Move each letter 1 forward: DEER → EFFS.",
+        "as": "প্ৰতিটো আখৰ 1 ঘৰ আগবঢ়োৱা: DEER → EFFS।"
+       },
+       "traps": [
+        {
+         "ans": "CDDQ",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Every letter moves 2 places forward. Write the code for JAPI.",
+        "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবাঢ়ে। JAPI ৰ সংকেত লিখা।"
+       },
+       "answer": "LCRK",
+       "why": {
+        "en": "Move each letter 2 forward: JAPI → LCRK.",
+        "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা: JAPI → LCRK।"
+       },
+       "traps": [
+        {
+         "ans": "HYNG",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u1.q3",
+     "type": "solve",
+     "skill": "r-shift",
+     "input": "letters",
+     "q": {
+      "en": "Which letter comes 3 places after H?",
+      "as": "H ৰ 3 ঘৰ পিছত কোন আখৰ?"
+     },
+     "answer": "K",
+     "why": {
+      "en": "Count on 3 from H and you reach K.",
+      "as": "H ৰ পৰা 3 ঘৰ গণিলে K পোৱা যায়।"
+     },
+     "traps": [
+      {
+       "ans": "E",
+       "tag": "r-m-shiftback",
+       "why": {
+        "en": "You counted backwards. A + rule moves forward through the alphabet.",
+        "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Which letter comes 3 places after H?",
+        "as": "H ৰ 3 ঘৰ পিছত কোন আখৰ?"
+       },
+       "answer": "K",
+       "why": {
+        "en": "Count on 3 from H and you reach K.",
+        "as": "H ৰ পৰা 3 ঘৰ গণিলে K পোৱা যায়।"
+       },
+       "traps": [
+        {
+         "ans": "E",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Which letter comes 5 places after M?",
+        "as": "M ৰ 5 ঘৰ পিছত কোন আখৰ?"
+       },
+       "answer": "R",
+       "why": {
+        "en": "Count on 5 from M and you reach R.",
+        "as": "M ৰ পৰা 5 ঘৰ গণিলে R পোৱা যায়।"
+       },
+       "traps": [
+        {
+         "ans": "H",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Which letter comes 4 places after C?",
+        "as": "C ৰ 4 ঘৰ পিছত কোন আখৰ?"
+       },
+       "answer": "G",
+       "why": {
+        "en": "Count on 4 from C and you reach G.",
+        "as": "C ৰ পৰা 4 ঘৰ গণিলে G পোৱা যায়।"
+       },
+       "traps": [
+        {
+         "ans": "Y",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Which letter comes 2 places after Q?",
+        "as": "Q ৰ 2 ঘৰ পিছত কোন আখৰ?"
+       },
+       "answer": "S",
+       "why": {
+        "en": "Count on 2 from Q and you reach S.",
+        "as": "Q ৰ পৰা 2 ঘৰ গণিলে S পোৱা যায়।"
+       },
+       "traps": [
+        {
+         "ans": "O",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u1.q4",
+     "type": "tf",
+     "skill": "r-shift",
+     "s": {
+      "en": "If A becomes D in a simple code, then B becomes E.",
+      "as": "সৰল সংকেতত A ৰ পৰা D হ'লে B ৰ পৰা E হ'ব।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Both move +3.",
+      "as": "দুয়োটা +3 সৰে।"
+     }
+    },
+    {
+     "id": "rs6.u1.q5",
+     "type": "match",
+     "skill": "r-shift",
+     "q": {
+      "en": "Rule +2: match each letter to its code",
+      "as": "নিয়ম +2: আখৰক সংকেতৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "D",
+        "as": "D"
+       },
+       {
+        "en": "F",
+        "as": "F"
+       }
+      ],
+      [
+       {
+        "en": "K",
+        "as": "K"
+       },
+       {
+        "en": "M",
+        "as": "M"
+       }
+      ],
+      [
+       {
+        "en": "P",
+        "as": "P"
+       },
+       {
+        "en": "R",
+        "as": "R"
+       }
+      ],
+      [
+       {
+        "en": "S",
+        "as": "S"
+       },
+       {
+        "en": "U",
+        "as": "U"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each letter moves two places forward.",
+      "as": "প্ৰতিটো আখৰ দুই ঘৰ আগবাঢ়ে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Breaking a code",
+    "as": "সংকেত ভঙা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "The alphabet closes into a ring: after Z comes A.",
+     "as": "বৰ্ণমালা এটা চক্ৰ: Z ৰ পিছত A।"
+    },
+    {
+     "en": "To decode, count the opposite way.",
+     "as": "সংকেত ভাঙিবলৈ ওলোটা ফালে গণা।"
+    },
+    {
+     "en": "A +3 code is undone by −3.",
+     "as": "+3 সংকেত −3 ৰে উভতি যায়।"
+    },
+    {
+     "en": "Use a second letter to confirm the rule.",
+     "as": "দ্বিতীয় আখৰেৰে নিয়ম নিশ্চিত কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs6.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "The alphabet is a ring",
+      "as": "বৰ্ণমালা এটা চক্ৰ"
+     },
+     "text": [
+      {
+       "en": "Z has nothing after it, so the wheel closes the alphabet into a ring. Watch ZOO.",
+       "as": "Z ৰ পিছত একো নাই, সেয়ে চকৰিয়ে বৰ্ণমালাক চক্ৰ কৰে। ZOO চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "shift",
+      "word": "ZOO"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to +1.",
+        "as": "+1 লৈ টানা।"
+       },
+       "goal": {
+        "k": 1
+       },
+       "then": {
+        "en": "Z wrapped round to A, so ZOO became APP.",
+        "as": "Z ঘূৰি A হ'ল, ZOO ৰ পৰা APP হ'ল।"
+       }
+      },
+      {
+       "do": {
+        "en": "Slide to −1.",
+        "as": "−1 লৈ টানা।"
+       },
+       "goal": {
+        "k": -1
+       },
+       "then": {
+        "en": "Backward, A would wrap to Z in the same way.",
+        "as": "পিছলৈ গ'লে A একেদৰে ঘূৰি Z হ'ব।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Decoding runs the rule backwards",
+      "as": "সংকেত ভঙা মানে উভতি যোৱা"
+     },
+     "text": [
+      {
+       "en": "Coding and decoding are one rule, used in opposite directions.",
+       "as": "সংকেত দিয়া আৰু ভঙা একেটা নিয়ম, ওলোটা ফালে ব্যৱহাৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Word",
+        "as": "শব্দ"
+       },
+       {
+        "en": "+3 makes the code",
+        "as": "+3 ত সংকেত"
+       },
+       {
+        "en": "−3 returns the word",
+        "as": "−3 ত শব্দ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u2.q1",
+     "type": "stepwise",
+     "skill": "r-decode",
+     "q": {
+      "en": "R is written as T. Find what TQQH stands for.",
+      "as": "R ক T ৰূপে লিখা হৈছে। TQQH ৰ অৰ্থ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "What is the rule?",
+        "as": "নিয়মটো কি?"
+       },
+       "options": [
+        {
+         "en": "+2",
+         "as": "+2"
+        },
+        {
+         "en": "−2",
+         "as": "−2"
+        },
+        {
+         "en": "+3",
+         "as": "+3"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "R to T is +2.",
+        "as": "R ৰ পৰা T মানে +2।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Which way do you count to decode?",
+        "as": "সংকেত ভাঙিবলৈ কোন ফালে গণিবা?"
+       },
+       "options": [
+        {
+         "en": "Forwards",
+         "as": "আগলৈ"
+        },
+        {
+         "en": "Backwards",
+         "as": "পিছলৈ"
+        },
+        {
+         "en": "It does not matter",
+         "as": "একো নহয়"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Decoding undoes the rule.",
+        "as": "সংকেত ভঙা মানে নিয়মটো উভতাই আনা।"
+       },
+       "tag": "r-m-encode"
+      },
+      {
+       "ask": {
+        "en": "What is the word?",
+        "as": "শব্দটো কি?"
+       },
+       "options": [
+        {
+         "en": "ROOF",
+         "as": "ROOF"
+        },
+        {
+         "en": "TQQH",
+         "as": "TQQH"
+        },
+        {
+         "en": "VSSJ",
+         "as": "VSSJ"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Each letter moves 2 back.",
+        "as": "প্ৰতিটো আখৰ 2 ঘৰ পিছুৱায়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The rule +2 undone gives ROOF.",
+      "as": "+2 নিয়ম উভতালে ROOF পোৱা যায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "R is written as T. Find what TQQH stands for.",
+        "as": "R ক T ৰূপে লিখা হৈছে। TQQH ৰ অৰ্থ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What is the rule?",
+          "as": "নিয়মটো কি?"
+         },
+         "options": [
+          {
+           "en": "+2",
+           "as": "+2"
+          },
+          {
+           "en": "−2",
+           "as": "−2"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "R to T is +2.",
+          "as": "R ৰ পৰা T মানে +2।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which way do you count to decode?",
+          "as": "সংকেত ভাঙিবলৈ কোন ফালে গণিবা?"
+         },
+         "options": [
+          {
+           "en": "Forwards",
+           "as": "আগলৈ"
+          },
+          {
+           "en": "Backwards",
+           "as": "পিছলৈ"
+          },
+          {
+           "en": "It does not matter",
+           "as": "একো নহয়"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Decoding undoes the rule.",
+          "as": "সংকেত ভঙা মানে নিয়মটো উভতাই আনা।"
+         },
+         "tag": "r-m-encode"
+        },
+        {
+         "ask": {
+          "en": "What is the word?",
+          "as": "শব্দটো কি?"
+         },
+         "options": [
+          {
+           "en": "ROOF",
+           "as": "ROOF"
+          },
+          {
+           "en": "TQQH",
+           "as": "TQQH"
+          },
+          {
+           "en": "VSSJ",
+           "as": "VSSJ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Each letter moves 2 back.",
+          "as": "প্ৰতিটো আখৰ 2 ঘৰ পিছুৱায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The rule +2 undone gives ROOF.",
+        "as": "+2 নিয়ম উভতালে ROOF পোৱা যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "G is written as J. Find what JDWH stands for.",
+        "as": "G ক J ৰূপে লিখা হৈছে। JDWH ৰ অৰ্থ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What is the rule?",
+          "as": "নিয়মটো কি?"
+         },
+         "options": [
+          {
+           "en": "−3",
+           "as": "−3"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          },
+          {
+           "en": "+4",
+           "as": "+4"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "G to J is +3.",
+          "as": "G ৰ পৰা J মানে +3।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which way do you count to decode?",
+          "as": "সংকেত ভাঙিবলৈ কোন ফালে গণিবা?"
+         },
+         "options": [
+          {
+           "en": "Forwards",
+           "as": "আগলৈ"
+          },
+          {
+           "en": "Backwards",
+           "as": "পিছলৈ"
+          },
+          {
+           "en": "It does not matter",
+           "as": "একো নহয়"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Decoding undoes the rule.",
+          "as": "সংকেত ভঙা মানে নিয়মটো উভতাই আনা।"
+         },
+         "tag": "r-m-encode"
+        },
+        {
+         "ask": {
+          "en": "What is the word?",
+          "as": "শব্দটো কি?"
+         },
+         "options": [
+          {
+           "en": "GATE",
+           "as": "GATE"
+          },
+          {
+           "en": "JDWH",
+           "as": "JDWH"
+          },
+          {
+           "en": "MGZK",
+           "as": "MGZK"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Each letter moves 3 back.",
+          "as": "প্ৰতিটো আখৰ 3 ঘৰ পিছুৱায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The rule +3 undone gives GATE.",
+        "as": "+3 নিয়ম উভতালে GATE পোৱা যায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "H is written as I. Find what IJMM stands for.",
+        "as": "H ক I ৰূপে লিখা হৈছে। IJMM ৰ অৰ্থ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What is the rule?",
+          "as": "নিয়মটো কি?"
+         },
+         "options": [
+          {
+           "en": "+1",
+           "as": "+1"
+          },
+          {
+           "en": "+2",
+           "as": "+2"
+          },
+          {
+           "en": "−1",
+           "as": "−1"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "H to I is +1.",
+          "as": "H ৰ পৰা I মানে +1।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which way do you count to decode?",
+          "as": "সংকেত ভাঙিবলৈ কোন ফালে গণিবা?"
+         },
+         "options": [
+          {
+           "en": "Forwards",
+           "as": "আগলৈ"
+          },
+          {
+           "en": "Backwards",
+           "as": "পিছলৈ"
+          },
+          {
+           "en": "It does not matter",
+           "as": "একো নহয়"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Decoding undoes the rule.",
+          "as": "সংকেত ভঙা মানে নিয়মটো উভতাই আনা।"
+         },
+         "tag": "r-m-encode"
+        },
+        {
+         "ask": {
+          "en": "What is the word?",
+          "as": "শব্দটো কি?"
+         },
+         "options": [
+          {
+           "en": "JKNN",
+           "as": "JKNN"
+          },
+          {
+           "en": "IJMM",
+           "as": "IJMM"
+          },
+          {
+           "en": "HILL",
+           "as": "HILL"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Each letter moves 1 back.",
+          "as": "প্ৰতিটো আখৰ 1 ঘৰ পিছুৱায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The rule +1 undone gives HILL.",
+        "as": "+1 নিয়ম উভতালে HILL পোৱা যায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u2.q2",
+     "type": "solve",
+     "skill": "r-decode",
+     "input": "letters",
+     "q": {
+      "en": "The rule was +2. The code reads DQCV. What was the word?",
+      "as": "নিয়ম আছিল +2। সংকেতটো DQCV। মূল শব্দটো কি আছিল?"
+     },
+     "answer": "BOAT",
+     "why": {
+      "en": "Undo +2 by moving each letter 2 back: DQCV → BOAT.",
+      "as": "+2 উভতাবলৈ প্ৰতিটো আখৰ 2 ঘৰ পিছুৱাই আনা: DQCV → BOAT।"
+     },
+     "traps": [
+      {
+       "ans": "FSEX",
+       "tag": "r-m-encode",
+       "why": {
+        "en": "You applied the rule again. To decode, undo it by counting the other way.",
+        "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The rule was +2. The code reads DQCV. What was the word?",
+        "as": "নিয়ম আছিল +2। সংকেতটো DQCV। মূল শব্দটো কি আছিল?"
+       },
+       "answer": "BOAT",
+       "why": {
+        "en": "Undo +2 by moving each letter 2 back: DQCV → BOAT.",
+        "as": "+2 উভতাবলৈ প্ৰতিটো আখৰ 2 ঘৰ পিছুৱাই আনা: DQCV → BOAT।"
+       },
+       "traps": [
+        {
+         "ans": "FSEX",
+         "tag": "r-m-encode",
+         "why": {
+          "en": "You applied the rule again. To decode, undo it by counting the other way.",
+          "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The rule was +3. The code reads PLON. What was the word?",
+        "as": "নিয়ম আছিল +3। সংকেতটো PLON। মূল শব্দটো কি আছিল?"
+       },
+       "answer": "MILK",
+       "why": {
+        "en": "Undo +3 by moving each letter 3 back: PLON → MILK.",
+        "as": "+3 উভতাবলৈ প্ৰতিটো আখৰ 3 ঘৰ পিছুৱাই আনা: PLON → MILK।"
+       },
+       "traps": [
+        {
+         "ans": "SORQ",
+         "tag": "r-m-encode",
+         "why": {
+          "en": "You applied the rule again. To decode, undo it by counting the other way.",
+          "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The rule was +1. The code reads GJTI. What was the word?",
+        "as": "নিয়ম আছিল +1। সংকেতটো GJTI। মূল শব্দটো কি আছিল?"
+       },
+       "answer": "FISH",
+       "why": {
+        "en": "Undo +1 by moving each letter 1 back: GJTI → FISH.",
+        "as": "+1 উভতাবলৈ প্ৰতিটো আখৰ 1 ঘৰ পিছুৱাই আনা: GJTI → FISH।"
+       },
+       "traps": [
+        {
+         "ans": "HKUJ",
+         "tag": "r-m-encode",
+         "why": {
+          "en": "You applied the rule again. To decode, undo it by counting the other way.",
+          "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The rule was +4. The code reads XIE. What was the word?",
+        "as": "নিয়ম আছিল +4। সংকেতটো XIE। মূল শব্দটো কি আছিল?"
+       },
+       "answer": "TEA",
+       "why": {
+        "en": "Undo +4 by moving each letter 4 back: XIE → TEA.",
+        "as": "+4 উভতাবলৈ প্ৰতিটো আখৰ 4 ঘৰ পিছুৱাই আনা: XIE → TEA।"
+       },
+       "traps": [
+        {
+         "ans": "BMI",
+         "tag": "r-m-encode",
+         "why": {
+          "en": "You applied the rule again. To decode, undo it by counting the other way.",
+          "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u2.q3",
+     "type": "solve",
+     "skill": "r-shift",
+     "input": "letters",
+     "q": {
+      "en": "Use the ring: after Z comes A. Move every letter of ZEBRA forward 2.",
+      "as": "চক্ৰ মনত ৰাখা: Z ৰ পিছত A। ZEBRA ৰ প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা।"
+     },
+     "answer": "BGDTC",
+     "why": {
+      "en": "Letters near Z pass round to the start: ZEBRA → BGDTC.",
+      "as": "Z ৰ ওচৰৰ আখৰ আকৌ আৰম্ভণিলৈ যায়: ZEBRA → BGDTC।"
+     },
+     "traps": [
+      {
+       "ans": "XCZPY",
+       "tag": "r-m-shiftback",
+       "why": {
+        "en": "You counted backwards. A + rule moves forward through the alphabet.",
+        "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Use the ring: after Z comes A. Move every letter of ZEBRA forward 2.",
+        "as": "চক্ৰ মনত ৰাখা: Z ৰ পিছত A। ZEBRA ৰ প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা।"
+       },
+       "answer": "BGDTC",
+       "why": {
+        "en": "Letters near Z pass round to the start: ZEBRA → BGDTC.",
+        "as": "Z ৰ ওচৰৰ আখৰ আকৌ আৰম্ভণিলৈ যায়: ZEBRA → BGDTC।"
+       },
+       "traps": [
+        {
+         "ans": "XCZPY",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Use the ring: after Z comes A. Move every letter of XRAY forward 3.",
+        "as": "চক্ৰ মনত ৰাখা: Z ৰ পিছত A। XRAY ৰ প্ৰতিটো আখৰ 3 ঘৰ আগবঢ়োৱা।"
+       },
+       "answer": "AUDB",
+       "why": {
+        "en": "Letters near Z pass round to the start: XRAY → AUDB.",
+        "as": "Z ৰ ওচৰৰ আখৰ আকৌ আৰম্ভণিলৈ যায়: XRAY → AUDB।"
+       },
+       "traps": [
+        {
+         "ans": "UOXV",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Use the ring: after Z comes A. Move every letter of WAX forward 4.",
+        "as": "চক্ৰ মনত ৰাখা: Z ৰ পিছত A। WAX ৰ প্ৰতিটো আখৰ 4 ঘৰ আগবঢ়োৱা।"
+       },
+       "answer": "AEB",
+       "why": {
+        "en": "Letters near Z pass round to the start: WAX → AEB.",
+        "as": "Z ৰ ওচৰৰ আখৰ আকৌ আৰম্ভণিলৈ যায়: WAX → AEB।"
+       },
+       "traps": [
+        {
+         "ans": "SWT",
+         "tag": "r-m-shiftback",
+         "why": {
+          "en": "You counted backwards. A + rule moves forward through the alphabet.",
+          "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u2.q4",
+     "type": "order",
+     "skill": "r-decode",
+     "q": {
+      "en": "Put the decoding steps in order",
+      "as": "সংকেত ভঙাৰ খোজবোৰ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the gap from one known letter",
+       "as": "জনা আখৰৰ পৰা ব্যৱধান উলিওৱা"
+      },
+      {
+       "en": "Confirm it on a second letter",
+       "as": "দ্বিতীয় আখৰত নিশ্চিত কৰা"
+      },
+      {
+       "en": "Flip the rule's direction",
+       "as": "নিয়মৰ দিশ ওলোটোৱা"
+      },
+      {
+       "en": "Apply it to every code letter",
+       "as": "সকলো সংকেত আখৰত প্ৰয়োগ কৰা"
+      }
+     ],
+     "why": {
+      "en": "Find, confirm, flip, then apply.",
+      "as": "উলিওৱা, নিশ্চিত কৰা, ওলোটোৱা, প্ৰয়োগ কৰা।"
+     }
+    },
+    {
+     "id": "rs6.u2.q5",
+     "type": "tf",
+     "skill": "r-decode",
+     "s": {
+      "en": "A code made with +4 is decoded with +4.",
+      "as": "+4 ৰে বনোৱা সংকেত +4 ৰেই ভাঙিব লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is undone with −4.",
+      "as": "ইয়াক −4 ৰে উভতাব লাগে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-encode",
+       "why": {
+        "en": "You applied the rule again. To decode, undo it by counting the other way.",
+        "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "When the shift changes",
+    "as": "স্থানান্তৰ সলনি হ'লে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Check at least two letters before naming a rule.",
+     "as": "নিয়ম কোৱাৰ আগতে কমেও দুটা আখৰ পৰীক্ষা কৰা।"
+    },
+    {
+     "en": "Gaps may take turns, such as +1 then −1.",
+     "as": "ব্যৱধানে পাল ল'ব পাৰে, যেনে +1 তাৰ পিছত −1।"
+    },
+    {
+     "en": "Gaps may grow, such as +1, +2, +3.",
+     "as": "ব্যৱধান বাঢ়িব পাৰে, যেনে +1, +2, +3।"
+    },
+    {
+     "en": "Write the gaps in a row and the pattern shows itself.",
+     "as": "ব্যৱধানবোৰ শাৰীত লিখিলে আৰ্হি ওলায়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs6.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "One letter can mislead you",
+      "as": "এটা আখৰে ভুল বুজাব পাৰে"
+     },
+     "text": [
+      {
+       "en": "The first gap may not be the rule. Write every gap in a row before you decide.",
+       "as": "প্ৰথম ব্যৱধানেই নিয়ম নহ'বও পাৰে। সিদ্ধান্তৰ আগতে সকলো ব্যৱধান শাৰীত লিখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Gap 1",
+        "as": "ব্যৱধান ১"
+       },
+       {
+        "en": "Gap 2",
+        "as": "ব্যৱধান ২"
+       },
+       {
+        "en": "Gap 3",
+        "as": "ব্যৱধান ৩"
+       },
+       {
+        "en": "The pattern",
+        "as": "আৰ্হি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Two common gap patterns",
+      "as": "দুটা সাধাৰণ আৰ্হি"
+     },
+     "text": [
+      {
+       "en": "Exams favour patterns you can see once the gaps are written down.",
+       "as": "ব্যৱধান লিখিলে দেখা আৰ্হিকে পৰীক্ষাত সঘনাই সোধে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Taking turns: +1, −1, +1",
+        "as": "পাল: +1, −1, +1"
+       },
+       {
+        "en": "Growing: +1, +2, +3",
+        "as": "বৃদ্ধি: +1, +2, +3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u3.q1",
+     "type": "stepwise",
+     "skill": "r-pattern",
+     "q": {
+      "en": "ROOF is coded as SNPE. Find the rule, one letter at a time.",
+      "as": "ROOF ৰ সংকেত SNPE। এটা এটাকৈ আখৰ চাই নিয়ম উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Gap from R to S?",
+        "as": "R ৰ পৰা S লৈ ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "+1",
+         "as": "+1"
+        },
+        {
+         "en": "+3",
+         "as": "+3"
+        },
+        {
+         "en": "−1",
+         "as": "−1"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Count from the plain letter to the code letter.",
+        "as": "মূল আখৰৰ পৰা সংকেত আখৰলৈ গণা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Gap from O to N?",
+        "as": "O ৰ পৰা N লৈ ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "−1",
+         "as": "−1"
+        },
+        {
+         "en": "−3",
+         "as": "−3"
+        },
+        {
+         "en": "+1",
+         "as": "+1"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "The second gap differs, so one shift cannot explain the code.",
+        "as": "দ্বিতীয় ব্যৱধান বেলেগ, গতিকে এটা স্থানান্তৰেৰে নহ'ব।"
+       },
+       "tag": "r-m-oneshift"
+      },
+      {
+       "ask": {
+        "en": "So O becomes?",
+        "as": "তেন্তে O কি হ'ব?"
+       },
+       "options": [
+        {
+         "en": "N",
+         "as": "N"
+        },
+        {
+         "en": "Q",
+         "as": "Q"
+        },
+        {
+         "en": "P",
+         "as": "P"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The gaps take turns, so the third letter takes +1 again.",
+        "as": "ব্যৱধান পাল পাতি লয়, তৃতীয় আখৰে আকৌ +1 লয়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The rule alternates +1 and −1.",
+      "as": "নিয়মটো +1 আৰু −1 ৰ পাল।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "ROOF is coded as SNPE. Find the rule, one letter at a time.",
+        "as": "ROOF ৰ সংকেত SNPE। এটা এটাকৈ আখৰ চাই নিয়ম উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Gap from R to S?",
+          "as": "R ৰ পৰা S লৈ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+1",
+           "as": "+1"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          },
+          {
+           "en": "−1",
+           "as": "−1"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Count from the plain letter to the code letter.",
+          "as": "মূল আখৰৰ পৰা সংকেত আখৰলৈ গণা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Gap from O to N?",
+          "as": "O ৰ পৰা N লৈ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "−1",
+           "as": "−1"
+          },
+          {
+           "en": "−3",
+           "as": "−3"
+          },
+          {
+           "en": "+1",
+           "as": "+1"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The second gap differs, so one shift cannot explain the code.",
+          "as": "দ্বিতীয় ব্যৱধান বেলেগ, গতিকে এটা স্থানান্তৰেৰে নহ'ব।"
+         },
+         "tag": "r-m-oneshift"
+        },
+        {
+         "ask": {
+          "en": "So O becomes?",
+          "as": "তেন্তে O কি হ'ব?"
+         },
+         "options": [
+          {
+           "en": "N",
+           "as": "N"
+          },
+          {
+           "en": "Q",
+           "as": "Q"
+          },
+          {
+           "en": "P",
+           "as": "P"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The gaps take turns, so the third letter takes +1 again.",
+          "as": "ব্যৱধান পাল পাতি লয়, তৃতীয় আখৰে আকৌ +1 লয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The rule alternates +1 and −1.",
+        "as": "নিয়মটো +1 আৰু −1 ৰ পাল।"
+       }
+      },
+      {
+       "q": {
+        "en": "HILL is coded as JHNK. Find the rule, one letter at a time.",
+        "as": "HILL ৰ সংকেত JHNK। এটা এটাকৈ আখৰ চাই নিয়ম উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Gap from H to J?",
+          "as": "H ৰ পৰা J লৈ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+4",
+           "as": "+4"
+          },
+          {
+           "en": "−2",
+           "as": "−2"
+          },
+          {
+           "en": "+2",
+           "as": "+2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Count from the plain letter to the code letter.",
+          "as": "মূল আখৰৰ পৰা সংকেত আখৰলৈ গণা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Gap from I to H?",
+          "as": "I ৰ পৰা H লৈ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "−1",
+           "as": "−1"
+          },
+          {
+           "en": "−3",
+           "as": "−3"
+          },
+          {
+           "en": "+2",
+           "as": "+2"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The second gap differs, so one shift cannot explain the code.",
+          "as": "দ্বিতীয় ব্যৱধান বেলেগ, গতিকে এটা স্থানান্তৰেৰে নহ'ব।"
+         },
+         "tag": "r-m-oneshift"
+        },
+        {
+         "ask": {
+          "en": "So L becomes?",
+          "as": "তেন্তে L কি হ'ব?"
+         },
+         "options": [
+          {
+           "en": "K",
+           "as": "K"
+          },
+          {
+           "en": "N",
+           "as": "N"
+          },
+          {
+           "en": "O",
+           "as": "O"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The gaps take turns, so the third letter takes +2 again.",
+          "as": "ব্যৱধান পাল পাতি লয়, তৃতীয় আখৰে আকৌ +2 লয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The rule alternates +2 and −1.",
+        "as": "নিয়মটো +2 আৰু −1 ৰ পাল।"
+       }
+      },
+      {
+       "q": {
+        "en": "GATE is coded as IBVF. Find the rule, one letter at a time.",
+        "as": "GATE ৰ সংকেত IBVF। এটা এটাকৈ আখৰ চাই নিয়ম উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Gap from G to I?",
+          "as": "G ৰ পৰা I লৈ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+4",
+           "as": "+4"
+          },
+          {
+           "en": "−2",
+           "as": "−2"
+          },
+          {
+           "en": "+2",
+           "as": "+2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Count from the plain letter to the code letter.",
+          "as": "মূল আখৰৰ পৰা সংকেত আখৰলৈ গণা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Gap from A to B?",
+          "as": "A ৰ পৰা B লৈ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+1",
+           "as": "+1"
+          },
+          {
+           "en": "−1",
+           "as": "−1"
+          },
+          {
+           "en": "+2",
+           "as": "+2"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The second gap differs, so one shift cannot explain the code.",
+          "as": "দ্বিতীয় ব্যৱধান বেলেগ, গতিকে এটা স্থানান্তৰেৰে নহ'ব।"
+         },
+         "tag": "r-m-oneshift"
+        },
+        {
+         "ask": {
+          "en": "So T becomes?",
+          "as": "তেন্তে T কি হ'ব?"
+         },
+         "options": [
+          {
+           "en": "W",
+           "as": "W"
+          },
+          {
+           "en": "U",
+           "as": "U"
+          },
+          {
+           "en": "V",
+           "as": "V"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The gaps take turns, so the third letter takes +2 again.",
+          "as": "ব্যৱধান পাল পাতি লয়, তৃতীয় আখৰে আকৌ +2 লয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The rule alternates +2 and +1.",
+        "as": "নিয়মটো +2 আৰু +1 ৰ পাল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u3.q2",
+     "type": "solve",
+     "skill": "r-pattern",
+     "input": "letters",
+     "q": {
+      "en": "Letters take turns: +1, then −1, and so on. Write the code for JUMP.",
+      "as": "আখৰবোৰে পাল পাতি লয়: +1, তাৰ পিছত −1, এনেদৰে। JUMP ৰ সংকেত লিখা।"
+     },
+     "answer": "KTNO",
+     "why": {
+      "en": "Apply the two gaps in turn: JUMP → KTNO.",
+      "as": "দুটা ব্যৱধান পাল পাতি দিয়া: JUMP → KTNO।"
+     },
+     "traps": [
+      {
+       "ans": "KVNQ",
+       "tag": "r-m-oneshift",
+       "why": {
+        "en": "You used one shift for every letter. Here each letter has its own gap.",
+        "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Letters take turns: +1, then −1, and so on. Write the code for JUMP.",
+        "as": "আখৰবোৰে পাল পাতি লয়: +1, তাৰ পিছত −1, এনেদৰে। JUMP ৰ সংকেত লিখা।"
+       },
+       "answer": "KTNO",
+       "why": {
+        "en": "Apply the two gaps in turn: JUMP → KTNO.",
+        "as": "দুটা ব্যৱধান পাল পাতি দিয়া: JUMP → KTNO।"
+       },
+       "traps": [
+        {
+         "ans": "KVNQ",
+         "tag": "r-m-oneshift",
+         "why": {
+          "en": "You used one shift for every letter. Here each letter has its own gap.",
+          "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Letters take turns: +2, then −1, and so on. Write the code for FARM.",
+        "as": "আখৰবোৰে পাল পাতি লয়: +2, তাৰ পিছত −1, এনেদৰে। FARM ৰ সংকেত লিখা।"
+       },
+       "answer": "HZTL",
+       "why": {
+        "en": "Apply the two gaps in turn: FARM → HZTL.",
+        "as": "দুটা ব্যৱধান পাল পাতি দিয়া: FARM → HZTL।"
+       },
+       "traps": [
+        {
+         "ans": "HCTO",
+         "tag": "r-m-oneshift",
+         "why": {
+          "en": "You used one shift for every letter. Here each letter has its own gap.",
+          "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Letters take turns: +1, then +2, and so on. Write the code for ROAD.",
+        "as": "আখৰবোৰে পাল পাতি লয়: +1, তাৰ পিছত +2, এনেদৰে। ROAD ৰ সংকেত লিখা।"
+       },
+       "answer": "SQBF",
+       "why": {
+        "en": "Apply the two gaps in turn: ROAD → SQBF.",
+        "as": "দুটা ব্যৱধান পাল পাতি দিয়া: ROAD → SQBF।"
+       },
+       "traps": [
+        {
+         "ans": "SPBE",
+         "tag": "r-m-oneshift",
+         "why": {
+          "en": "You used one shift for every letter. Here each letter has its own gap.",
+          "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u3.q3",
+     "type": "solve",
+     "skill": "r-pattern",
+     "input": "letters",
+     "q": {
+      "en": "The gaps grow: +1, +2, +3 and so on. Write the code for SEED.",
+      "as": "ব্যৱধান বাঢ়ে: +1, +2, +3, এনেদৰে। SEED ৰ সংকেত লিখা।"
+     },
+     "answer": "TGHH",
+     "why": {
+      "en": "Give each letter the next gap: SEED → TGHH.",
+      "as": "প্ৰতিটো আখৰক পিছৰ ব্যৱধান দিয়া: SEED → TGHH।"
+     },
+     "traps": [
+      {
+       "ans": "TFFE",
+       "tag": "r-m-oneshift",
+       "why": {
+        "en": "You used one shift for every letter. Here each letter has its own gap.",
+        "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The gaps grow: +1, +2, +3 and so on. Write the code for SEED.",
+        "as": "ব্যৱধান বাঢ়ে: +1, +2, +3, এনেদৰে। SEED ৰ সংকেত লিখা।"
+       },
+       "answer": "TGHH",
+       "why": {
+        "en": "Give each letter the next gap: SEED → TGHH.",
+        "as": "প্ৰতিটো আখৰক পিছৰ ব্যৱধান দিয়া: SEED → TGHH।"
+       },
+       "traps": [
+        {
+         "ans": "TFFE",
+         "tag": "r-m-oneshift",
+         "why": {
+          "en": "You used one shift for every letter. Here each letter has its own gap.",
+          "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The gaps grow: +1, +2, +3 and so on. Write the code for CORN.",
+        "as": "ব্যৱধান বাঢ়ে: +1, +2, +3, এনেদৰে। CORN ৰ সংকেত লিখা।"
+       },
+       "answer": "DQUR",
+       "why": {
+        "en": "Give each letter the next gap: CORN → DQUR.",
+        "as": "প্ৰতিটো আখৰক পিছৰ ব্যৱধান দিয়া: CORN → DQUR।"
+       },
+       "traps": [
+        {
+         "ans": "DPSO",
+         "tag": "r-m-oneshift",
+         "why": {
+          "en": "You used one shift for every letter. Here each letter has its own gap.",
+          "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The gaps grow: +2, +3, +4 and so on. Write the code for LEAF.",
+        "as": "ব্যৱধান বাঢ়ে: +2, +3, +4, এনেদৰে। LEAF ৰ সংকেত লিখা।"
+       },
+       "answer": "NHEK",
+       "why": {
+        "en": "Give each letter the next gap: LEAF → NHEK.",
+        "as": "প্ৰতিটো আখৰক পিছৰ ব্যৱধান দিয়া: LEAF → NHEK।"
+       },
+       "traps": [
+        {
+         "ans": "NGCH",
+         "tag": "r-m-oneshift",
+         "why": {
+          "en": "You used one shift for every letter. Here each letter has its own gap.",
+          "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u3.q4",
+     "type": "odd",
+     "skill": "r-pattern",
+     "q": {
+      "en": "Three pairs follow one shift. Which pair does not?",
+      "as": "তিনিটা যোৰে একে স্থানান্তৰ মানে। কোন যোৰে নামানে?"
+     },
+     "options": [
+      {
+       "en": "C → E",
+       "as": "C → E"
+      },
+      {
+       "en": "G → I",
+       "as": "G → I"
+      },
+      {
+       "en": "L → N",
+       "as": "L → N"
+      },
+      {
+       "en": "P → S",
+       "as": "P → S"
+      }
+     ],
+     "answer": 3,
+     "why": {
+      "en": "The others all move +2.",
+      "as": "বাকীবোৰ +2 সৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Three pairs follow one shift. Which pair does not?",
+        "as": "তিনিটা যোৰে একে স্থানান্তৰ মানে। কোন যোৰে নামানে?"
+       },
+       "options": [
+        {
+         "en": "C → E",
+         "as": "C → E"
+        },
+        {
+         "en": "G → I",
+         "as": "G → I"
+        },
+        {
+         "en": "L → N",
+         "as": "L → N"
+        },
+        {
+         "en": "P → S",
+         "as": "P → S"
+        }
+       ],
+       "answer": 3,
+       "why": {
+        "en": "The others all move +2.",
+        "as": "বাকীবোৰ +2 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three pairs follow one shift. Which pair does not?",
+        "as": "তিনিটা যোৰে একে স্থানান্তৰ মানে। কোন যোৰে নামানে?"
+       },
+       "options": [
+        {
+         "en": "B → E",
+         "as": "B → E"
+        },
+        {
+         "en": "D → H",
+         "as": "D → H"
+        },
+        {
+         "en": "H → K",
+         "as": "H → K"
+        },
+        {
+         "en": "K → N",
+         "as": "K → N"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "The others all move +3.",
+        "as": "বাকীবোৰ +3 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three pairs follow one shift. Which pair does not?",
+        "as": "তিনিটা যোৰে একে স্থানান্তৰ মানে। কোন যোৰে নামানে?"
+       },
+       "options": [
+        {
+         "en": "D → H",
+         "as": "D → H"
+        },
+        {
+         "en": "J → N",
+         "as": "J → N"
+        },
+        {
+         "en": "M → R",
+         "as": "M → R"
+        },
+        {
+         "en": "N → R",
+         "as": "N → R"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "The others all move +4.",
+        "as": "বাকীবোৰ +4 সৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u3.q5",
+     "type": "tf",
+     "skill": "r-pattern",
+     "s": {
+      "en": "If the first letter moves +2, every letter must move +2.",
+      "as": "প্ৰথম আখৰ +2 সৰিলে সকলো আখৰেই +2 সৰিব লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Check more letters: gaps can change.",
+      "as": "আৰু আখৰ চোৱা: ব্যৱধান সলনি হ'ব পাৰে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-oneshift",
+       "why": {
+        "en": "You used one shift for every letter. Here each letter has its own gap.",
+        "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Letters that change places",
+    "as": "ঠাই সলোৱা আখৰ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Some codes keep the letters and only move them.",
+     "as": "কিছুমান সংকেতে আখৰ ৰাখি কেৱল ঠাই সলায়।"
+    },
+    {
+     "en": "Compare the two sets of letters first.",
+     "as": "প্ৰথমে দুয়োটা আখৰৰ গোট তুলনা কৰা।"
+    },
+    {
+     "en": "Reverse, pair swap and half swap are the usual rules.",
+     "as": "ওলোটা, যোৰ সলনি আৰু আধা সলনি সাধাৰণ নিয়ম।"
+    },
+    {
+     "en": "Test the rule on the whole word.",
+     "as": "নিয়মটো গোটেই শব্দত পৰীক্ষা কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs6.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Same letters, new order",
+      "as": "একে আখৰ, নতুন ক্ৰম"
+     },
+     "text": [
+      {
+       "en": "If the code uses exactly the word's letters, nothing shifted. Look for a movement rule.",
+       "as": "সংকেতত শব্দটোৰ একে আখৰ থাকিলে স্থানান্তৰ হোৱা নাই। ঠাই সলোৱা নিয়ম বিচাৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Compare letters",
+        "as": "আখৰ তুলনা"
+       },
+       {
+        "en": "Same set?",
+        "as": "একে গোট?"
+       },
+       {
+        "en": "Find the movement",
+        "as": "ঠাই সলনি চোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Three ways to rearrange",
+      "as": "সজাবলৈ তিনিটা উপায়"
+     },
+     "text": [
+      {
+       "en": "Each example starts from BOATS or FARM.",
+       "as": "প্ৰতিটো উদাহৰণ BOATS বা FARM ৰ পৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Reverse: BOATS → STAOB",
+        "as": "ওলোটা: BOATS → STAOB"
+       },
+       {
+        "en": "Pair swap: FARM → AFMR",
+        "as": "যোৰ সলনি: FARM → AFMR"
+       },
+       {
+        "en": "Half swap: FARM → RMFA",
+        "as": "আধা সলনি: FARM → RMFA"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u4.q1",
+     "type": "unscramble",
+     "skill": "r-move",
+     "q": {
+      "en": "The code reverses the word. Build the code for BIHU.",
+      "as": "সংকেতে শব্দটো ওলোটায়। BIHU ৰ সংকেত সজোৱা।"
+     },
+     "word": {
+      "en": [
+       "U",
+       "H",
+       "I",
+       "B"
+      ],
+      "as": [
+       "U",
+       "H",
+       "I",
+       "B"
+      ]
+     },
+     "why": {
+      "en": "Read BIHU from its last letter: UHIB.",
+      "as": "BIHU শেষৰ আখৰৰ পৰা পঢ়া: UHIB।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The code reverses the word. Build the code for BIHU.",
+        "as": "সংকেতে শব্দটো ওলোটায়। BIHU ৰ সংকেত সজোৱা।"
+       },
+       "word": {
+        "en": [
+         "U",
+         "H",
+         "I",
+         "B"
+        ],
+        "as": [
+         "U",
+         "H",
+         "I",
+         "B"
+        ]
+       },
+       "why": {
+        "en": "Read BIHU from its last letter: UHIB.",
+        "as": "BIHU শেষৰ আখৰৰ পৰা পঢ়া: UHIB।"
+       }
+      },
+      {
+       "q": {
+        "en": "The code reverses the word. Build the code for LOTUS.",
+        "as": "সংকেতে শব্দটো ওলোটায়। LOTUS ৰ সংকেত সজোৱা।"
+       },
+       "word": {
+        "en": [
+         "S",
+         "U",
+         "T",
+         "O",
+         "L"
+        ],
+        "as": [
+         "S",
+         "U",
+         "T",
+         "O",
+         "L"
+        ]
+       },
+       "why": {
+        "en": "Read LOTUS from its last letter: SUTOL.",
+        "as": "LOTUS শেষৰ আখৰৰ পৰা পঢ়া: SUTOL।"
+       }
+      },
+      {
+       "q": {
+        "en": "The code reverses the word. Build the code for MAJULI.",
+        "as": "সংকেতে শব্দটো ওলোটায়। MAJULI ৰ সংকেত সজোৱা।"
+       },
+       "word": {
+        "en": [
+         "I",
+         "L",
+         "U",
+         "J",
+         "A",
+         "M"
+        ],
+        "as": [
+         "I",
+         "L",
+         "U",
+         "J",
+         "A",
+         "M"
+        ]
+       },
+       "why": {
+        "en": "Read MAJULI from its last letter: ILUJAM.",
+        "as": "MAJULI শেষৰ আখৰৰ পৰা পঢ়া: ILUJAM।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u4.q2",
+     "type": "solve",
+     "skill": "r-move",
+     "input": "letters",
+     "q": {
+      "en": "Swap each neighbouring pair of letters in CAMEL. Write the code.",
+      "as": "CAMEL ৰ প্ৰতিটো কাষৰীয়া আখৰ যোৰ সলনা-সলনি কৰা। সংকেত লিখা।"
+     },
+     "answer": "ACEML",
+     "why": {
+      "en": "Pair by pair: CAMEL → ACEML.",
+      "as": "যোৰে যোৰে: CAMEL → ACEML।"
+     },
+     "traps": [
+      {
+       "ans": "LEMAC",
+       "tag": "r-m-order",
+       "why": {
+        "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+        "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Swap each neighbouring pair of letters in CAMEL. Write the code.",
+        "as": "CAMEL ৰ প্ৰতিটো কাষৰীয়া আখৰ যোৰ সলনা-সলনি কৰা। সংকেত লিখা।"
+       },
+       "answer": "ACEML",
+       "why": {
+        "en": "Pair by pair: CAMEL → ACEML.",
+        "as": "যোৰে যোৰে: CAMEL → ACEML।"
+       },
+       "traps": [
+        {
+         "ans": "LEMAC",
+         "tag": "r-m-order",
+         "why": {
+          "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+          "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Swap each neighbouring pair of letters in HOUSE. Write the code.",
+        "as": "HOUSE ৰ প্ৰতিটো কাষৰীয়া আখৰ যোৰ সলনা-সলনি কৰা। সংকেত লিখা।"
+       },
+       "answer": "OHSUE",
+       "why": {
+        "en": "Pair by pair: HOUSE → OHSUE.",
+        "as": "যোৰে যোৰে: HOUSE → OHSUE।"
+       },
+       "traps": [
+        {
+         "ans": "ESUOH",
+         "tag": "r-m-order",
+         "why": {
+          "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+          "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Swap each neighbouring pair of letters in PLANET. Write the code.",
+        "as": "PLANET ৰ প্ৰতিটো কাষৰীয়া আখৰ যোৰ সলনা-সলনি কৰা। সংকেত লিখা।"
+       },
+       "answer": "LPNATE",
+       "why": {
+        "en": "Pair by pair: PLANET → LPNATE.",
+        "as": "যোৰে যোৰে: PLANET → LPNATE।"
+       },
+       "traps": [
+        {
+         "ans": "TENALP",
+         "tag": "r-m-order",
+         "why": {
+          "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+          "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u4.q3",
+     "type": "solve",
+     "skill": "r-move",
+     "input": "letters",
+     "q": {
+      "en": "Split SONG into two halves and swap the halves, keeping each half's order.",
+      "as": "SONG ক আধা আধি ভাগ কৰি ভাগ দুটা সলনা-সলনি কৰা। প্ৰতিটো ভাগৰ ভিতৰৰ ক্ৰম একে ৰাখা।"
+     },
+     "answer": "NGSO",
+     "why": {
+      "en": "SO and NG change places.",
+      "as": "SO আৰু NG ঠাই সলায়।"
+     },
+     "traps": [
+      {
+       "ans": "GNOS",
+       "tag": "r-m-order",
+       "why": {
+        "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+        "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Split SONG into two halves and swap the halves, keeping each half's order.",
+        "as": "SONG ক আধা আধি ভাগ কৰি ভাগ দুটা সলনা-সলনি কৰা। প্ৰতিটো ভাগৰ ভিতৰৰ ক্ৰম একে ৰাখা।"
+       },
+       "answer": "NGSO",
+       "why": {
+        "en": "SO and NG change places.",
+        "as": "SO আৰু NG ঠাই সলায়।"
+       },
+       "traps": [
+        {
+         "ans": "GNOS",
+         "tag": "r-m-order",
+         "why": {
+          "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+          "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Split GARDEN into two halves and swap the halves, keeping each half's order.",
+        "as": "GARDEN ক আধা আধি ভাগ কৰি ভাগ দুটা সলনা-সলনি কৰা। প্ৰতিটো ভাগৰ ভিতৰৰ ক্ৰম একে ৰাখা।"
+       },
+       "answer": "DENGAR",
+       "why": {
+        "en": "GAR and DEN change places.",
+        "as": "GAR আৰু DEN ঠাই সলায়।"
+       },
+       "traps": [
+        {
+         "ans": "NEDRAG",
+         "tag": "r-m-order",
+         "why": {
+          "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+          "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Split MARKET into two halves and swap the halves, keeping each half's order.",
+        "as": "MARKET ক আধা আধি ভাগ কৰি ভাগ দুটা সলনা-সলনি কৰা। প্ৰতিটো ভাগৰ ভিতৰৰ ক্ৰম একে ৰাখা।"
+       },
+       "answer": "KETMAR",
+       "why": {
+        "en": "MAR and KET change places.",
+        "as": "MAR আৰু KET ঠাই সলায়।"
+       },
+       "traps": [
+        {
+         "ans": "TEKRAM",
+         "tag": "r-m-order",
+         "why": {
+          "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+          "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u4.q4",
+     "type": "match",
+     "skill": "r-move",
+     "q": {
+      "en": "Match the rule to the example for STREAM",
+      "as": "STREAM ৰ বাবে নিয়মৰ লগত উদাহৰণ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Reverse",
+        "as": "ওলোটা"
+       },
+       {
+        "en": "MAERTS",
+        "as": "MAERTS"
+       }
+      ],
+      [
+       {
+        "en": "Pair swap",
+        "as": "যোৰ সলনি"
+       },
+       {
+        "en": "TSERMA",
+        "as": "TSERMA"
+       }
+      ],
+      [
+       {
+        "en": "Half swap",
+        "as": "আধা সলনি"
+       },
+       {
+        "en": "EAMSTR",
+        "as": "EAMSTR"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Try each rule on the word and compare.",
+      "as": "প্ৰতিটো নিয়ম শব্দত প্ৰয়োগ কৰি তুলনা কৰা।"
+     }
+    },
+    {
+     "id": "rs6.u4.q5",
+     "type": "tf",
+     "skill": "r-move",
+     "s": {
+      "en": "A rearranged code uses exactly the same letters as the word.",
+      "as": "ঠাই সলোৱা সংকেতত শব্দটোৰ একে আখৰ থাকে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Only their order changes.",
+      "as": "কেৱল ক্ৰম সলনি হয়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Letters become numbers",
+    "as": "আখৰ সংখ্যা হয়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A = 1 and Z = 26 give each letter a place.",
+     "as": "A = 1 আৰু Z = 26 এ প্ৰতিটো আখৰক স্থান দিয়ে।"
+    },
+    {
+     "en": "Counted from Z, a letter's value is 27 minus its place.",
+     "as": "Z ৰ পৰা গণিলে মান হ'ল 27 বিয়োগ স্থান।"
+    },
+    {
+     "en": "Number codes are often sums of letter places.",
+     "as": "সংখ্যা সংকেত প্ৰায়ে আখৰৰ স্থানৰ যোগফল।"
+    },
+    {
+     "en": "Find the rule from the example before you calculate.",
+     "as": "গণনাৰ আগতে উদাহৰণৰ পৰা নিয়ম উলিওৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs6.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "Letters have addresses",
+      "as": "আখৰৰো ঠিকনা আছে"
+     },
+     "text": [
+      {
+       "en": "Learn three anchors: E is 5, J is 10 and T is 20. Count from the nearest one.",
+       "as": "তিনিটা ভেটি মনত ৰাখা: E 5, J 10, T 20। ওচৰৰটোৰ পৰা গণা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "E = 5",
+        "as": "E = 5"
+       },
+       {
+        "en": "J = 10",
+        "as": "J = 10"
+       },
+       {
+        "en": "T = 20",
+        "as": "T = 20"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Pairs that make 27",
+      "as": "27 হোৱা যোৰ"
+     },
+     "text": [
+      {
+       "en": "A and Z, B and Y, M and N: each pair adds to 27. That turns counting from Z into one subtraction.",
+       "as": "A আৰু Z, B আৰু Y, M আৰু N: প্ৰতিটো যোৰৰ যোগফল 27। Z ৰ পৰা গণনা এটা বিয়োগ হৈ পৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A + Z = 27",
+        "as": "A + Z = 27"
+       },
+       {
+        "en": "B + Y = 27",
+        "as": "B + Y = 27"
+       },
+       {
+        "en": "M + N = 27",
+        "as": "M + N = 27"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u5.q1",
+     "type": "solve",
+     "skill": "r-value",
+     "q": {
+      "en": "With A = 1, B = 2 and so on, what is the sum of the letters in CAT?",
+      "as": "A = 1, B = 2 এনেদৰে ধৰিলে CAT ৰ আখৰবোৰৰ যোগফল কিমান?"
+     },
+     "answer": "24",
+     "why": {
+      "en": "3 + 1 + 20 = 24.",
+      "as": "3 + 1 + 20 = 24।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "With A = 1, B = 2 and so on, what is the sum of the letters in CAT?",
+        "as": "A = 1, B = 2 এনেদৰে ধৰিলে CAT ৰ আখৰবোৰৰ যোগফল কিমান?"
+       },
+       "answer": "24",
+       "why": {
+        "en": "3 + 1 + 20 = 24.",
+        "as": "3 + 1 + 20 = 24।"
+       }
+      },
+      {
+       "q": {
+        "en": "With A = 1, B = 2 and so on, what is the sum of the letters in BOAT?",
+        "as": "A = 1, B = 2 এনেদৰে ধৰিলে BOAT ৰ আখৰবোৰৰ যোগফল কিমান?"
+       },
+       "answer": "38",
+       "why": {
+        "en": "2 + 15 + 1 + 20 = 38.",
+        "as": "2 + 15 + 1 + 20 = 38।"
+       }
+      },
+      {
+       "q": {
+        "en": "With A = 1, B = 2 and so on, what is the sum of the letters in GATE?",
+        "as": "A = 1, B = 2 এনেদৰে ধৰিলে GATE ৰ আখৰবোৰৰ যোগফল কিমান?"
+       },
+       "answer": "33",
+       "why": {
+        "en": "7 + 1 + 20 + 5 = 33.",
+        "as": "7 + 1 + 20 + 5 = 33।"
+       }
+      },
+      {
+       "q": {
+        "en": "With A = 1, B = 2 and so on, what is the sum of the letters in TEA?",
+        "as": "A = 1, B = 2 এনেদৰে ধৰিলে TEA ৰ আখৰবোৰৰ যোগফল কিমান?"
+       },
+       "answer": "26",
+       "why": {
+        "en": "20 + 5 + 1 = 26.",
+        "as": "20 + 5 + 1 = 26।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u5.q2",
+     "type": "solve",
+     "skill": "r-value",
+     "q": {
+      "en": "Now Z = 1, Y = 2 and so on. What number is C?",
+      "as": "এতিয়া Z = 1, Y = 2 এনেদৰে। C ৰ মান কিমান?"
+     },
+     "answer": "24",
+     "why": {
+      "en": "C is 3 from A, so 27 − 3 = 24.",
+      "as": "A ৰ পৰা C 3 নম্বৰ, গতিকে 27 − 3 = 24।"
+     },
+     "traps": [
+      {
+       "ans": "3",
+       "tag": "r-m-position",
+       "why": {
+        "en": "That is its place from A. Counting from Z gives 27 minus that place.",
+        "as": "সেয়া A ৰ পৰা স্থান। Z ৰ পৰা গণিলে 27 ৰ পৰা সেই স্থান বিয়োগ কৰিব লাগে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Now Z = 1, Y = 2 and so on. What number is C?",
+        "as": "এতিয়া Z = 1, Y = 2 এনেদৰে। C ৰ মান কিমান?"
+       },
+       "answer": "24",
+       "why": {
+        "en": "C is 3 from A, so 27 − 3 = 24.",
+        "as": "A ৰ পৰা C 3 নম্বৰ, গতিকে 27 − 3 = 24।"
+       },
+       "traps": [
+        {
+         "ans": "3",
+         "tag": "r-m-position",
+         "why": {
+          "en": "That is its place from A. Counting from Z gives 27 minus that place.",
+          "as": "সেয়া A ৰ পৰা স্থান। Z ৰ পৰা গণিলে 27 ৰ পৰা সেই স্থান বিয়োগ কৰিব লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Now Z = 1, Y = 2 and so on. What number is H?",
+        "as": "এতিয়া Z = 1, Y = 2 এনেদৰে। H ৰ মান কিমান?"
+       },
+       "answer": "19",
+       "why": {
+        "en": "H is 8 from A, so 27 − 8 = 19.",
+        "as": "A ৰ পৰা H 8 নম্বৰ, গতিকে 27 − 8 = 19।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "r-m-position",
+         "why": {
+          "en": "That is its place from A. Counting from Z gives 27 minus that place.",
+          "as": "সেয়া A ৰ পৰা স্থান। Z ৰ পৰা গণিলে 27 ৰ পৰা সেই স্থান বিয়োগ কৰিব লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Now Z = 1, Y = 2 and so on. What number is T?",
+        "as": "এতিয়া Z = 1, Y = 2 এনেদৰে। T ৰ মান কিমান?"
+       },
+       "answer": "7",
+       "why": {
+        "en": "T is 20 from A, so 27 − 20 = 7.",
+        "as": "A ৰ পৰা T 20 নম্বৰ, গতিকে 27 − 20 = 7।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "r-m-position",
+         "why": {
+          "en": "That is its place from A. Counting from Z gives 27 minus that place.",
+          "as": "সেয়া A ৰ পৰা স্থান। Z ৰ পৰা গণিলে 27 ৰ পৰা সেই স্থান বিয়োগ কৰিব লাগে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Now Z = 1, Y = 2 and so on. What number is W?",
+        "as": "এতিয়া Z = 1, Y = 2 এনেদৰে। W ৰ মান কিমান?"
+       },
+       "answer": "4",
+       "why": {
+        "en": "W is 23 from A, so 27 − 23 = 4.",
+        "as": "A ৰ পৰা W 23 নম্বৰ, গতিকে 27 − 23 = 4।"
+       },
+       "traps": [
+        {
+         "ans": "23",
+         "tag": "r-m-position",
+         "why": {
+          "en": "That is its place from A. Counting from Z gives 27 minus that place.",
+          "as": "সেয়া A ৰ পৰা স্থান। Z ৰ পৰা গণিলে 27 ৰ পৰা সেই স্থান বিয়োগ কৰিব লাগে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u5.q3",
+     "type": "solve",
+     "skill": "r-value",
+     "q": {
+      "en": "If BAG = 10, what does CUP equal by the same rule?",
+      "as": "যদি BAG = 10, একে নিয়মত CUP কিমান?"
+     },
+     "answer": "40",
+     "hints": [
+      {
+       "en": "Try adding the place value of each letter.",
+       "as": "প্ৰতিটো আখৰৰ স্থানীয় মান যোগ কৰি চোৱা।"
+      }
+     ],
+     "why": {
+      "en": "The rule adds letter places, so CUP = 40.",
+      "as": "নিয়মটোৱে আখৰৰ স্থান যোগ কৰে, গতিকে CUP = 40।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If BAG = 10, what does CUP equal by the same rule?",
+        "as": "যদি BAG = 10, একে নিয়মত CUP কিমান?"
+       },
+       "answer": "40",
+       "hints": [
+        {
+         "en": "Try adding the place value of each letter.",
+         "as": "প্ৰতিটো আখৰৰ স্থানীয় মান যোগ কৰি চোৱা।"
+        }
+       ],
+       "why": {
+        "en": "The rule adds letter places, so CUP = 40.",
+        "as": "নিয়মটোৱে আখৰৰ স্থান যোগ কৰে, গতিকে CUP = 40।"
+       }
+      },
+      {
+       "q": {
+        "en": "If HEN = 27, what does COW equal by the same rule?",
+        "as": "যদি HEN = 27, একে নিয়মত COW কিমান?"
+       },
+       "answer": "41",
+       "hints": [
+        {
+         "en": "Try adding the place value of each letter.",
+         "as": "প্ৰতিটো আখৰৰ স্থানীয় মান যোগ কৰি চোৱা।"
+        }
+       ],
+       "why": {
+        "en": "The rule adds letter places, so COW = 41.",
+        "as": "নিয়মটোৱে আখৰৰ স্থান যোগ কৰে, গতিকে COW = 41।"
+       }
+      },
+      {
+       "q": {
+        "en": "If SUN = 54, what does SKY equal by the same rule?",
+        "as": "যদি SUN = 54, একে নিয়মত SKY কিমান?"
+       },
+       "answer": "55",
+       "hints": [
+        {
+         "en": "Try adding the place value of each letter.",
+         "as": "প্ৰতিটো আখৰৰ স্থানীয় মান যোগ কৰি চোৱা।"
+        }
+       ],
+       "why": {
+        "en": "The rule adds letter places, so SKY = 55.",
+        "as": "নিয়মটোৱে আখৰৰ স্থান যোগ কৰে, গতিকে SKY = 55।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u5.q4",
+     "type": "stepwise",
+     "skill": "r-value",
+     "q": {
+      "en": "BED is written as 11. Find the rule, then use it on CAR.",
+      "as": "BED ক 11 ৰূপে লিখা হৈছে। নিয়ম উলিয়াই CAR ত প্ৰয়োগ কৰা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Letter places in BED?",
+        "as": "BED ৰ আখৰবোৰৰ স্থান?"
+       },
+       "options": [
+        {
+         "en": "25, 22, 23",
+         "as": "25, 22, 23"
+        },
+        {
+         "en": "3, 6, 5",
+         "as": "3, 6, 5"
+        },
+        {
+         "en": "2, 5, 4",
+         "as": "2, 5, 4"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Count each letter from A.",
+        "as": "প্ৰতিটো আখৰ A ৰ পৰা গণা।"
+       },
+       "tag": "r-m-position"
+      },
+      {
+       "ask": {
+        "en": "What gives the total?",
+        "as": "মুঠ কেনেকৈ পোৱা যায়?"
+       },
+       "options": [
+        {
+         "en": "Adding them",
+         "as": "যোগ কৰি"
+        },
+        {
+         "en": "Multiplying them",
+         "as": "পূৰণ কৰি"
+        },
+        {
+         "en": "Counting the letters",
+         "as": "আখৰ গণি"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "The places add to 11.",
+        "as": "স্থানবোৰৰ যোগফল 11।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So CAR is?",
+        "as": "তেন্তে CAR কিমান?"
+       },
+       "options": [
+        {
+         "en": "22",
+         "as": "22"
+        },
+        {
+         "en": "23",
+         "as": "23"
+        },
+        {
+         "en": "11",
+         "as": "11"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Add the places of its letters.",
+        "as": "ইয়াৰ আখৰবোৰৰ স্থান যোগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Find the rule from the example, then apply it unchanged.",
+      "as": "উদাহৰণৰ পৰা নিয়ম উলিয়াই একেদৰে প্ৰয়োগ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "BED is written as 11. Find the rule, then use it on CAR.",
+        "as": "BED ক 11 ৰূপে লিখা হৈছে। নিয়ম উলিয়াই CAR ত প্ৰয়োগ কৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Letter places in BED?",
+          "as": "BED ৰ আখৰবোৰৰ স্থান?"
+         },
+         "options": [
+          {
+           "en": "25, 22, 23",
+           "as": "25, 22, 23"
+          },
+          {
+           "en": "3, 6, 5",
+           "as": "3, 6, 5"
+          },
+          {
+           "en": "2, 5, 4",
+           "as": "2, 5, 4"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Count each letter from A.",
+          "as": "প্ৰতিটো আখৰ A ৰ পৰা গণা।"
+         },
+         "tag": "r-m-position"
+        },
+        {
+         "ask": {
+          "en": "What gives the total?",
+          "as": "মুঠ কেনেকৈ পোৱা যায়?"
+         },
+         "options": [
+          {
+           "en": "Adding them",
+           "as": "যোগ কৰি"
+          },
+          {
+           "en": "Multiplying them",
+           "as": "পূৰণ কৰি"
+          },
+          {
+           "en": "Counting the letters",
+           "as": "আখৰ গণি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The places add to 11.",
+          "as": "স্থানবোৰৰ যোগফল 11।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So CAR is?",
+          "as": "তেন্তে CAR কিমান?"
+         },
+         "options": [
+          {
+           "en": "22",
+           "as": "22"
+          },
+          {
+           "en": "23",
+           "as": "23"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add the places of its letters.",
+          "as": "ইয়াৰ আখৰবোৰৰ স্থান যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the rule from the example, then apply it unchanged.",
+        "as": "উদাহৰণৰ পৰা নিয়ম উলিয়াই একেদৰে প্ৰয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "DOG is written as 26. Find the rule, then use it on PEN.",
+        "as": "DOG ক 26 ৰূপে লিখা হৈছে। নিয়ম উলিয়াই PEN ত প্ৰয়োগ কৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Letter places in DOG?",
+          "as": "DOG ৰ আখৰবোৰৰ স্থান?"
+         },
+         "options": [
+          {
+           "en": "5, 16, 8",
+           "as": "5, 16, 8"
+          },
+          {
+           "en": "23, 12, 20",
+           "as": "23, 12, 20"
+          },
+          {
+           "en": "4, 15, 7",
+           "as": "4, 15, 7"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Count each letter from A.",
+          "as": "প্ৰতিটো আখৰ A ৰ পৰা গণা।"
+         },
+         "tag": "r-m-position"
+        },
+        {
+         "ask": {
+          "en": "What gives the total?",
+          "as": "মুঠ কেনেকৈ পোৱা যায়?"
+         },
+         "options": [
+          {
+           "en": "Adding them",
+           "as": "যোগ কৰি"
+          },
+          {
+           "en": "Multiplying them",
+           "as": "পূৰণ কৰি"
+          },
+          {
+           "en": "Counting the letters",
+           "as": "আখৰ গণি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The places add to 26.",
+          "as": "স্থানবোৰৰ যোগফল 26।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So PEN is?",
+          "as": "তেন্তে PEN কিমান?"
+         },
+         "options": [
+          {
+           "en": "35",
+           "as": "35"
+          },
+          {
+           "en": "36",
+           "as": "36"
+          },
+          {
+           "en": "26",
+           "as": "26"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add the places of its letters.",
+          "as": "ইয়াৰ আখৰবোৰৰ স্থান যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the rule from the example, then apply it unchanged.",
+        "as": "উদাহৰণৰ পৰা নিয়ম উলিয়াই একেদৰে প্ৰয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "ARM is written as 32. Find the rule, then use it on LEG.",
+        "as": "ARM ক 32 ৰূপে লিখা হৈছে। নিয়ম উলিয়াই LEG ত প্ৰয়োগ কৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Letter places in ARM?",
+          "as": "ARM ৰ আখৰবোৰৰ স্থান?"
+         },
+         "options": [
+          {
+           "en": "1, 18, 13",
+           "as": "1, 18, 13"
+          },
+          {
+           "en": "2, 19, 14",
+           "as": "2, 19, 14"
+          },
+          {
+           "en": "26, 9, 14",
+           "as": "26, 9, 14"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Count each letter from A.",
+          "as": "প্ৰতিটো আখৰ A ৰ পৰা গণা।"
+         },
+         "tag": "r-m-position"
+        },
+        {
+         "ask": {
+          "en": "What gives the total?",
+          "as": "মুঠ কেনেকৈ পোৱা যায়?"
+         },
+         "options": [
+          {
+           "en": "Adding them",
+           "as": "যোগ কৰি"
+          },
+          {
+           "en": "Multiplying them",
+           "as": "পূৰণ কৰি"
+          },
+          {
+           "en": "Counting the letters",
+           "as": "আখৰ গণি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The places add to 32.",
+          "as": "স্থানবোৰৰ যোগফল 32।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So LEG is?",
+          "as": "তেন্তে LEG কিমান?"
+         },
+         "options": [
+          {
+           "en": "32",
+           "as": "32"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Add the places of its letters.",
+          "as": "ইয়াৰ আখৰবোৰৰ স্থান যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Find the rule from the example, then apply it unchanged.",
+        "as": "উদাহৰণৰ পৰা নিয়ম উলিয়াই একেদৰে প্ৰয়োগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u5.q5",
+     "type": "match",
+     "skill": "r-value",
+     "q": {
+      "en": "Match each letter to its partner that makes 27",
+      "as": "যোগফল 27 হোৱা সংগী আখৰ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "Z",
+        "as": "Z"
+       }
+      ],
+      [
+       {
+        "en": "D",
+        "as": "D"
+       },
+       {
+        "en": "W",
+        "as": "W"
+       }
+      ],
+      [
+       {
+        "en": "G",
+        "as": "G"
+       },
+       {
+        "en": "T",
+        "as": "T"
+       }
+      ],
+      [
+       {
+        "en": "K",
+        "as": "K"
+       },
+       {
+        "en": "P",
+        "as": "P"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Partners sit the same distance from each end.",
+      "as": "সংগী দুয়োটা দুই মূৰৰ পৰা একে দূৰত্বত।"
+     }
+    },
+    {
+     "id": "rs6.u5.q6",
+     "type": "tf",
+     "skill": "r-value",
+     "s": {
+      "en": "M and N are the two middle letters of the alphabet.",
+      "as": "M আৰু N বৰ্ণমালাৰ মাজৰ দুটা আখৰ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "They are the 13th and 14th of 26.",
+      "as": "26 টাৰ ভিতৰত সিহঁত 13 আৰু 14 নম্বৰ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Coded sentences",
+    "as": "সংকেতৰ বাক্য"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A shared word means a shared code.",
+     "as": "উমৈহতীয়া শব্দ মানে উমৈহতীয়া সংকেত।"
+    },
+    {
+     "en": "Code order need not follow word order.",
+     "as": "সংকেতৰ ক্ৰম শব্দৰ ক্ৰমৰ দৰে নহ'বও পাৰে।"
+    },
+    {
+     "en": "Compare two sentences at a time.",
+     "as": "এবাৰত দুটা বাক্য তুলনা কৰা।"
+    },
+    {
+     "en": "What is left over belongs to the unshared word.",
+     "as": "বাকী থকাখিনি নিমিলা শব্দৰ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs6.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Look for what is shared",
+      "as": "উমৈহতীয়াখিনি বিচাৰা"
+     },
+     "text": [
+      {
+       "en": "Here you never decode a letter. You compare two sentences and match what they share.",
+       "as": "ইয়াত আখৰ ভঙা নাই। দুটা বাক্য তুলনা কৰি উমৈহতীয়াখিনি মিলোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Shared word",
+        "as": "উমৈহতীয়া শব্দ"
+       },
+       {
+        "en": "Shared code",
+        "as": "উমৈহতীয়া সংকেত"
+       },
+       {
+        "en": "A match",
+        "as": "মিল"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Do not trust the order",
+      "as": "ক্ৰমক বিশ্বাস নকৰিবা"
+     },
+     "text": [
+      {
+       "en": "The second code need not be the second word. Only shared items prove a match.",
+       "as": "দ্বিতীয় সংকেত দ্বিতীয় শব্দ নহ'বও পাৰে। উমৈহতীয়াখিনিয়েহে মিল প্ৰমাণ কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Find the pair",
+        "as": "যোৰ উলিওৱা"
+       },
+       {
+        "en": "Remove it",
+        "as": "আঁতৰোৱা"
+       },
+       {
+        "en": "Compare again",
+        "as": "আকৌ তুলনা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs6.u6.q1",
+     "type": "solve",
+     "skill": "r-compare",
+     "input": "letters",
+     "q": {
+      "en": "'LI KO MU' means 'tea red hot'. 'ZA PE KO' means 'big tea small'. Which code means 'tea'?",
+      "as": "'LI KO MU' মানে 'চাহ ৰঙা গৰম'। 'ZA PE KO' মানে 'ডাঙৰ চাহ সৰু'। 'চাহ' ৰ সংকেত কোনটো?"
+     },
+     "answer": "KO",
+     "why": {
+      "en": "'tea' is the only shared word and KO the only shared code.",
+      "as": "'চাহ' একমাত্ৰ উমৈহতীয়া শব্দ, KO একমাত্ৰ উমৈহতীয়া সংকেত।"
+     },
+     "traps": [
+      {
+       "ans": "LI",
+       "tag": "r-m-wordorder",
+       "why": {
+        "en": "Code order need not follow word order. Compare the two sentences.",
+        "as": "সংকেতৰ ক্ৰম শব্দৰ ক্ৰমৰ দৰে নহ'বও পাৰে। দুটা বাক্য তুলনা কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "'LI KO MU' means 'tea red hot'. 'ZA PE KO' means 'big tea small'. Which code means 'tea'?",
+        "as": "'LI KO MU' মানে 'চাহ ৰঙা গৰম'। 'ZA PE KO' মানে 'ডাঙৰ চাহ সৰু'। 'চাহ' ৰ সংকেত কোনটো?"
+       },
+       "answer": "KO",
+       "why": {
+        "en": "'tea' is the only shared word and KO the only shared code.",
+        "as": "'চাহ' একমাত্ৰ উমৈহতীয়া শব্দ, KO একমাত্ৰ উমৈহতীয়া সংকেত।"
+       },
+       "traps": [
+        {
+         "ans": "LI",
+         "tag": "r-m-wordorder",
+         "why": {
+          "en": "Code order need not follow word order. Compare the two sentences.",
+          "as": "সংকেতৰ ক্ৰম শব্দৰ ক্ৰমৰ দৰে নহ'বও পাৰে। দুটা বাক্য তুলনা কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "'TU RA NI' means 'boat big red'. 'SO VE RA' means 'small boat hot'. Which code means 'boat'?",
+        "as": "'TU RA NI' মানে 'নাও ডাঙৰ ৰঙা'। 'SO VE RA' মানে 'সৰু নাও গৰম'। 'নাও' ৰ সংকেত কোনটো?"
+       },
+       "answer": "RA",
+       "why": {
+        "en": "'boat' is the only shared word and RA the only shared code.",
+        "as": "'নাও' একমাত্ৰ উমৈহতীয়া শব্দ, RA একমাত্ৰ উমৈহতীয়া সংকেত।"
+       },
+       "traps": [
+        {
+         "ans": "TU",
+         "tag": "r-m-wordorder",
+         "why": {
+          "en": "Code order need not follow word order. Compare the two sentences.",
+          "as": "সংকেতৰ ক্ৰম শব্দৰ ক্ৰমৰ দৰে নহ'বও পাৰে। দুটা বাক্য তুলনা কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "'FE DO GU' means 'rice hot small'. 'HA JI DO' means 'red rice big'. Which code means 'rice'?",
+        "as": "'FE DO GU' মানে 'ভাত গৰম সৰু'। 'HA JI DO' মানে 'ৰঙা ভাত ডাঙৰ'। 'ভাত' ৰ সংকেত কোনটো?"
+       },
+       "answer": "DO",
+       "why": {
+        "en": "'rice' is the only shared word and DO the only shared code.",
+        "as": "'ভাত' একমাত্ৰ উমৈহতীয়া শব্দ, DO একমাত্ৰ উমৈহতীয়া সংকেত।"
+       },
+       "traps": [
+        {
+         "ans": "FE",
+         "tag": "r-m-wordorder",
+         "why": {
+          "en": "Code order need not follow word order. Compare the two sentences.",
+          "as": "সংকেতৰ ক্ৰম শব্দৰ ক্ৰমৰ দৰে নহ'বও পাৰে। দুটা বাক্য তুলনা কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs6.u6.q2",
+     "type": "stepwise",
+     "skill": "r-compare",
+     "q": {
+      "en": "'KA LO' means 'fish river'. 'LO MI' means 'river boat'. Which code means 'boat'?",
+      "as": "'KA LO' মানে 'মাছ নদী'। 'LO MI' মানে 'নদী নাও'। 'নাও' ৰ সংকেত কোনটো?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Which word is in both?",
+        "as": "দুয়োটাতে কোন শব্দ আছে?"
+       },
+       "options": [
+        {
+         "en": "river",
+         "as": "নদী"
+        },
+        {
+         "en": "boat",
+         "as": "নাও"
+        },
+        {
+         "en": "fish",
+         "as": "মাছ"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Compare the meanings first.",
+        "as": "প্ৰথমে অৰ্থ তুলনা কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Which code is in both?",
+        "as": "দুয়োটাতে কোন সংকেত আছে?"
+       },
+       "options": [
+        {
+         "en": "MI",
+         "as": "MI"
+        },
+        {
+         "en": "LO",
+         "as": "LO"
+        },
+        {
+         "en": "KA",
+         "as": "KA"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "The shared code belongs to the shared word.",
+        "as": "উমৈহতীয়া সংকেত উমৈহতীয়া শব্দৰ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So 'boat' is?",
+        "as": "তেন্তে 'নাও' কি?"
+       },
+       "options": [
+        {
+         "en": "LO",
+         "as": "LO"
+        },
+        {
+         "en": "KA",
+         "as": "KA"
+        },
+        {
+         "en": "MI",
+         "as": "MI"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "It is the code left in the second sentence.",
+        "as": "দ্বিতীয় বাক্যত বাকী থকা সংকেতটো।"
+       }
+      }
+     ],
+     "why": {
+      "en": "LO is 'river', so the other code in that sentence, MI, is 'boat'.",
+      "as": "LO মানে 'নদী', গতিকে সেই বাক্যৰ আনটো সংকেত MI মানে 'নাও'।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "'KA LO' means 'fish river'. 'LO MI' means 'river boat'. Which code means 'boat'?",
+        "as": "'KA LO' মানে 'মাছ নদী'। 'LO MI' মানে 'নদী নাও'। 'নাও' ৰ সংকেত কোনটো?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which word is in both?",
+          "as": "দুয়োটাতে কোন শব্দ আছে?"
+         },
+         "options": [
+          {
+           "en": "river",
+           "as": "নদী"
+          },
+          {
+           "en": "boat",
+           "as": "নাও"
+          },
+          {
+           "en": "fish",
+           "as": "মাছ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Compare the meanings first.",
+          "as": "প্ৰথমে অৰ্থ তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which code is in both?",
+          "as": "দুয়োটাতে কোন সংকেত আছে?"
+         },
+         "options": [
+          {
+           "en": "MI",
+           "as": "MI"
+          },
+          {
+           "en": "LO",
+           "as": "LO"
+          },
+          {
+           "en": "KA",
+           "as": "KA"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The shared code belongs to the shared word.",
+          "as": "উমৈহতীয়া সংকেত উমৈহতীয়া শব্দৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So 'boat' is?",
+          "as": "তেন্তে 'নাও' কি?"
+         },
+         "options": [
+          {
+           "en": "LO",
+           "as": "LO"
+          },
+          {
+           "en": "KA",
+           "as": "KA"
+          },
+          {
+           "en": "MI",
+           "as": "MI"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It is the code left in the second sentence.",
+          "as": "দ্বিতীয় বাক্যত বাকী থকা সংকেতটো।"
+         }
+        }
+       ],
+       "why": {
+        "en": "LO is 'river', so the other code in that sentence, MI, is 'boat'.",
+        "as": "LO মানে 'নদী', গতিকে সেই বাক্যৰ আনটো সংকেত MI মানে 'নাও'।"
+       }
+      },
+      {
+       "q": {
+        "en": "'PA SU' means 'red tea'. 'SU TE' means 'tea rice'. Which code means 'rice'?",
+        "as": "'PA SU' মানে 'ৰঙা চাহ'। 'SU TE' মানে 'চাহ ভাত'। 'ভাত' ৰ সংকেত কোনটো?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which word is in both?",
+          "as": "দুয়োটাতে কোন শব্দ আছে?"
+         },
+         "options": [
+          {
+           "en": "tea",
+           "as": "চাহ"
+          },
+          {
+           "en": "rice",
+           "as": "ভাত"
+          },
+          {
+           "en": "red",
+           "as": "ৰঙা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Compare the meanings first.",
+          "as": "প্ৰথমে অৰ্থ তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which code is in both?",
+          "as": "দুয়োটাতে কোন সংকেত আছে?"
+         },
+         "options": [
+          {
+           "en": "SU",
+           "as": "SU"
+          },
+          {
+           "en": "PA",
+           "as": "PA"
+          },
+          {
+           "en": "TE",
+           "as": "TE"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The shared code belongs to the shared word.",
+          "as": "উমৈহতীয়া সংকেত উমৈহতীয়া শব্দৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So 'rice' is?",
+          "as": "তেন্তে 'ভাত' কি?"
+         },
+         "options": [
+          {
+           "en": "SU",
+           "as": "SU"
+          },
+          {
+           "en": "TE",
+           "as": "TE"
+          },
+          {
+           "en": "PA",
+           "as": "PA"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It is the code left in the second sentence.",
+          "as": "দ্বিতীয় বাক্যত বাকী থকা সংকেতটো।"
+         }
+        }
+       ],
+       "why": {
+        "en": "SU is 'tea', so the other code in that sentence, TE, is 'rice'.",
+        "as": "SU মানে 'চাহ', গতিকে সেই বাক্যৰ আনটো সংকেত TE মানে 'ভাত'।"
+       }
+      },
+      {
+       "q": {
+        "en": "'BE CO' means 'big boat'. 'CO DU' means 'boat fish'. Which code means 'fish'?",
+        "as": "'BE CO' মানে 'ডাঙৰ নাও'। 'CO DU' মানে 'নাও মাছ'। 'মাছ' ৰ সংকেত কোনটো?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which word is in both?",
+          "as": "দুয়োটাতে কোন শব্দ আছে?"
+         },
+         "options": [
+          {
+           "en": "boat",
+           "as": "নাও"
+          },
+          {
+           "en": "big",
+           "as": "ডাঙৰ"
+          },
+          {
+           "en": "fish",
+           "as": "মাছ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Compare the meanings first.",
+          "as": "প্ৰথমে অৰ্থ তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which code is in both?",
+          "as": "দুয়োটাতে কোন সংকেত আছে?"
+         },
+         "options": [
+          {
+           "en": "DU",
+           "as": "DU"
+          },
+          {
+           "en": "CO",
+           "as": "CO"
+          },
+          {
+           "en": "BE",
+           "as": "BE"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The shared code belongs to the shared word.",
+          "as": "উমৈহতীয়া সংকেত উমৈহতীয়া শব্দৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So 'fish' is?",
+          "as": "তেন্তে 'মাছ' কি?"
+         },
+         "options": [
+          {
+           "en": "DU",
+           "as": "DU"
+          },
+          {
+           "en": "CO",
+           "as": "CO"
+          },
+          {
+           "en": "BE",
+           "as": "BE"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It is the code left in the second sentence.",
+          "as": "দ্বিতীয় বাক্যত বাকী থকা সংকেতটো।"
+         }
+        }
+       ],
+       "why": {
+        "en": "CO is 'boat', so the other code in that sentence, DU, is 'fish'.",
+        "as": "CO মানে 'নাও', গতিকে সেই বাক্যৰ আনটো সংকেত DU মানে 'মাছ'।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u6.q3",
+     "type": "match",
+     "skill": "r-compare",
+     "q": {
+      "en": "'bo ti' means 'big river'. 'ti na' means 'river boat'. 'na ve' means 'boat fish'. Match the codes",
+      "as": "'bo ti' মানে 'ডাঙৰ নদী'। 'ti na' মানে 'নদী নাও'। 'na ve' মানে 'নাও মাছ'। সংকেত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "big",
+        "as": "ডাঙৰ"
+       },
+       {
+        "en": "bo",
+        "as": "bo"
+       }
+      ],
+      [
+       {
+        "en": "river",
+        "as": "নদী"
+       },
+       {
+        "en": "ti",
+        "as": "ti"
+       }
+      ],
+      [
+       {
+        "en": "boat",
+        "as": "নাও"
+       },
+       {
+        "en": "na",
+        "as": "na"
+       }
+      ],
+      [
+       {
+        "en": "fish",
+        "as": "মাছ"
+       },
+       {
+        "en": "ve",
+        "as": "ve"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each shared word fixes one code, and the rest follow.",
+      "as": "প্ৰতিটো উমৈহতীয়া শব্দই এটা সংকেত ঠিক কৰে, বাকীবোৰ তাৰ পিছত ওলায়।"
+     }
+    },
+    {
+     "id": "rs6.u6.q4",
+     "type": "tf",
+     "skill": "r-compare",
+     "s": {
+      "en": "In a coded sentence, the first code always means the first word.",
+      "as": "সংকেতৰ বাক্যত প্ৰথম সংকেত সদায় প্ৰথম শব্দৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Only comparison proves a match.",
+      "as": "তুলনায়েহে মিল প্ৰমাণ কৰে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-wordorder",
+       "why": {
+        "en": "Code order need not follow word order.",
+        "as": "সংকেতৰ ক্ৰম শব্দৰ ক্ৰমৰ দৰে নহ'বও পাৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs6.u6.q5",
+     "type": "order",
+     "skill": "r-compare",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the word in both sentences",
+       "as": "দুয়োটা বাক্যৰ শব্দ উলিওৱা"
+      },
+      {
+       "en": "Find the code in both sentences",
+       "as": "দুয়োটা বাক্যৰ সংকেত উলিওৱা"
+      },
+      {
+       "en": "Pair them",
+       "as": "যোৰ মিলোৱা"
+      },
+      {
+       "en": "Compare what is left",
+       "as": "বাকীখিনি তুলনা কৰা"
+      }
+     ],
+     "why": {
+      "en": "Shared items first, then the remainder.",
+      "as": "প্ৰথমে উমৈহতীয়া, তাৰ পিছত বাকীখিনি।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Coding test",
+   "as": "সংকেতৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs6.t.q1",
+    "type": "mcq",
+    "skill": "r-shift",
+    "q": {
+     "en": "Every letter moves 2 forward. What is the code for LAMP?",
+     "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবাঢ়ে। LAMP ৰ সংকেত কি?"
+    },
+    "why": {
+     "en": "LAMP → NCOR.",
+     "as": "LAMP → NCOR।"
+    },
+    "options": [
+     {
+      "en": "JYKN",
+      "as": "JYKN"
+     },
+     {
+      "en": "PEQT",
+      "as": "PEQT"
+     },
+     {
+      "en": "ODPS",
+      "as": "ODPS"
+     },
+     {
+      "en": "NCOR",
+      "as": "NCOR"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "r-m-shiftback",
+      "why": {
+       "en": "You counted backwards. A + rule moves forward through the alphabet.",
+       "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Every letter moves 2 forward. What is the code for LAMP?",
+       "as": "প্ৰতিটো আখৰ 2 ঘৰ আগবাঢ়ে। LAMP ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "LAMP → NCOR.",
+       "as": "LAMP → NCOR।"
+      },
+      "options": [
+       {
+        "en": "JYKN",
+        "as": "JYKN"
+       },
+       {
+        "en": "PEQT",
+        "as": "PEQT"
+       },
+       {
+        "en": "ODPS",
+        "as": "ODPS"
+       },
+       {
+        "en": "NCOR",
+        "as": "NCOR"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "r-m-shiftback",
+        "why": {
+         "en": "You counted backwards. A + rule moves forward through the alphabet.",
+         "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Every letter moves 3 forward. What is the code for KITE?",
+       "as": "প্ৰতিটো আখৰ 3 ঘৰ আগবাঢ়ে। KITE ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "KITE → NLWH.",
+       "as": "KITE → NLWH।"
+      },
+      "options": [
+       {
+        "en": "OMXI",
+        "as": "OMXI"
+       },
+       {
+        "en": "HFQB",
+        "as": "HFQB"
+       },
+       {
+        "en": "PNYJ",
+        "as": "PNYJ"
+       },
+       {
+        "en": "NLWH",
+        "as": "NLWH"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-shiftback",
+        "why": {
+         "en": "You counted backwards. A + rule moves forward through the alphabet.",
+         "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Every letter moves 1 forward. What is the code for MANGO?",
+       "as": "প্ৰতিটো আখৰ 1 ঘৰ আগবাঢ়ে। MANGO ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "MANGO → NBOHP.",
+       "as": "MANGO → NBOHP।"
+      },
+      "options": [
+       {
+        "en": "OCPIQ",
+        "as": "OCPIQ"
+       },
+       {
+        "en": "PDQJR",
+        "as": "PDQJR"
+       },
+       {
+        "en": "NBOHP",
+        "as": "NBOHP"
+       },
+       {
+        "en": "LZMFN",
+        "as": "LZMFN"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-shiftback",
+        "why": {
+         "en": "You counted backwards. A + rule moves forward through the alphabet.",
+         "as": "তুমি পিছলৈ গণিলা। + নিয়মে বৰ্ণমালাত আগলৈ নিয়ে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs6.t.q2",
+    "type": "mcq",
+    "skill": "r-decode",
+    "q": {
+     "en": "The rule was +2 and the code reads OQQP. What was the word?",
+     "as": "নিয়ম +2, সংকেত OQQP। মূল শব্দ কি?"
+    },
+    "why": {
+     "en": "Move each letter 2 back to get MOON.",
+     "as": "প্ৰতিটো আখৰ 2 ঘৰ পিছুৱালে MOON পোৱা যায়।"
+    },
+    "options": [
+     {
+      "en": "QSSR",
+      "as": "QSSR"
+     },
+     {
+      "en": "NPPO",
+      "as": "NPPO"
+     },
+     {
+      "en": "MOON",
+      "as": "MOON"
+     },
+     {
+      "en": "LNNM",
+      "as": "LNNM"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "r-m-encode",
+      "why": {
+       "en": "You applied the rule again. To decode, undo it by counting the other way.",
+       "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The rule was +2 and the code reads OQQP. What was the word?",
+       "as": "নিয়ম +2, সংকেত OQQP। মূল শব্দ কি?"
+      },
+      "why": {
+       "en": "Move each letter 2 back to get MOON.",
+       "as": "প্ৰতিটো আখৰ 2 ঘৰ পিছুৱালে MOON পোৱা যায়।"
+      },
+      "options": [
+       {
+        "en": "QSSR",
+        "as": "QSSR"
+       },
+       {
+        "en": "NPPO",
+        "as": "NPPO"
+       },
+       {
+        "en": "MOON",
+        "as": "MOON"
+       },
+       {
+        "en": "LNNM",
+        "as": "LNNM"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "r-m-encode",
+        "why": {
+         "en": "You applied the rule again. To decode, undo it by counting the other way.",
+         "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The rule was +3 and the code reads VKRH. What was the word?",
+       "as": "নিয়ম +3, সংকেত VKRH। মূল শব্দ কি?"
+      },
+      "why": {
+       "en": "Move each letter 3 back to get SHOE.",
+       "as": "প্ৰতিটো আখৰ 3 ঘৰ পিছুৱালে SHOE পোৱা যায়।"
+      },
+      "options": [
+       {
+        "en": "TIPF",
+        "as": "TIPF"
+       },
+       {
+        "en": "YNUK",
+        "as": "YNUK"
+       },
+       {
+        "en": "RGND",
+        "as": "RGND"
+       },
+       {
+        "en": "SHOE",
+        "as": "SHOE"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-encode",
+        "why": {
+         "en": "You applied the rule again. To decode, undo it by counting the other way.",
+         "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The rule was +4 and the code reads AMRH. What was the word?",
+       "as": "নিয়ম +4, সংকেত AMRH। মূল শব্দ কি?"
+      },
+      "why": {
+       "en": "Move each letter 4 back to get WIND.",
+       "as": "প্ৰতিটো আখৰ 4 ঘৰ পিছুৱালে WIND পোৱা যায়।"
+      },
+      "options": [
+       {
+        "en": "WIND",
+        "as": "WIND"
+       },
+       {
+        "en": "EQVL",
+        "as": "EQVL"
+       },
+       {
+        "en": "VHMC",
+        "as": "VHMC"
+       },
+       {
+        "en": "XJOE",
+        "as": "XJOE"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-encode",
+        "why": {
+         "en": "You applied the rule again. To decode, undo it by counting the other way.",
+         "as": "তুমি নিয়মটো আকৌ প্ৰয়োগ কৰিলা। সংকেত ভাঙিবলৈ ওলোটা ফালে গণিব লাগে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs6.t.q3",
+    "type": "mcq",
+    "skill": "r-pattern",
+    "q": {
+     "en": "Gaps alternate +1, −1. What is the code for GOLD?",
+     "as": "ব্যৱধান পাল পাতি +1, −1। GOLD ৰ সংকেত কি?"
+    },
+    "why": {
+     "en": "Letters take the gaps in turn: HNMC.",
+     "as": "আখৰবোৰে পাল পাতি ব্যৱধান লয়: HNMC।"
+    },
+    "options": [
+     {
+      "en": "FNKC",
+      "as": "FNKC"
+     },
+     {
+      "en": "HPME",
+      "as": "HPME"
+     },
+     {
+      "en": "HNMC",
+      "as": "HNMC"
+     },
+     {
+      "en": "FPKE",
+      "as": "FPKE"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "r-m-oneshift",
+      "why": {
+       "en": "You used one shift for every letter. Here each letter has its own gap.",
+       "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Gaps alternate +1, −1. What is the code for GOLD?",
+       "as": "ব্যৱধান পাল পাতি +1, −1। GOLD ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "Letters take the gaps in turn: HNMC.",
+       "as": "আখৰবোৰে পাল পাতি ব্যৱধান লয়: HNMC।"
+      },
+      "options": [
+       {
+        "en": "FNKC",
+        "as": "FNKC"
+       },
+       {
+        "en": "HPME",
+        "as": "HPME"
+       },
+       {
+        "en": "HNMC",
+        "as": "HNMC"
+       },
+       {
+        "en": "FPKE",
+        "as": "FPKE"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-oneshift",
+        "why": {
+         "en": "You used one shift for every letter. Here each letter has its own gap.",
+         "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Gaps alternate +2, −1. What is the code for WARM?",
+       "as": "ব্যৱধান পাল পাতি +2, −1। WARM ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "Letters take the gaps in turn: YZTL.",
+       "as": "আখৰবোৰে পাল পাতি ব্যৱধান লয়: YZTL।"
+      },
+      "options": [
+       {
+        "en": "YZTL",
+        "as": "YZTL"
+       },
+       {
+        "en": "VCQO",
+        "as": "VCQO"
+       },
+       {
+        "en": "VZQL",
+        "as": "VZQL"
+       },
+       {
+        "en": "YCTO",
+        "as": "YCTO"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-oneshift",
+        "why": {
+         "en": "You used one shift for every letter. Here each letter has its own gap.",
+         "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Gaps alternate +1, +2. What is the code for SHIP?",
+       "as": "ব্যৱধান পাল পাতি +1, +2। SHIP ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "Letters take the gaps in turn: TJJR.",
+       "as": "আখৰবোৰে পাল পাতি ব্যৱধান লয়: TJJR।"
+      },
+      "options": [
+       {
+        "en": "UJKR",
+        "as": "UJKR"
+       },
+       {
+        "en": "UIKQ",
+        "as": "UIKQ"
+       },
+       {
+        "en": "TIJQ",
+        "as": "TIJQ"
+       },
+       {
+        "en": "TJJR",
+        "as": "TJJR"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-oneshift",
+        "why": {
+         "en": "You used one shift for every letter. Here each letter has its own gap.",
+         "as": "তুমি সকলো আখৰত একেটা স্থানান্তৰ দিলা। ইয়াত প্ৰতিটো আখৰৰ বেলেগ ব্যৱধান।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs6.t.q4",
+    "type": "mcq",
+    "skill": "r-move",
+    "q": {
+     "en": "Swap each neighbouring pair. What is the code for BRICK?",
+     "as": "প্ৰতিটো কাষৰীয়া যোৰ সলনা-সলনি কৰা। BRICK ৰ সংকেত কি?"
+    },
+    "why": {
+     "en": "Pair by pair: RBCIK.",
+     "as": "যোৰে যোৰে: RBCIK।"
+    },
+    "options": [
+     {
+      "en": "KCIRB",
+      "as": "KCIRB"
+     },
+     {
+      "en": "RICKB",
+      "as": "RICKB"
+     },
+     {
+      "en": "RBCIK",
+      "as": "RBCIK"
+     },
+     {
+      "en": "CKIBR",
+      "as": "CKIBR"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "r-m-order",
+      "why": {
+       "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+       "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Swap each neighbouring pair. What is the code for BRICK?",
+       "as": "প্ৰতিটো কাষৰীয়া যোৰ সলনা-সলনি কৰা। BRICK ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "Pair by pair: RBCIK.",
+       "as": "যোৰে যোৰে: RBCIK।"
+      },
+      "options": [
+       {
+        "en": "KCIRB",
+        "as": "KCIRB"
+       },
+       {
+        "en": "RICKB",
+        "as": "RICKB"
+       },
+       {
+        "en": "RBCIK",
+        "as": "RBCIK"
+       },
+       {
+        "en": "CKIBR",
+        "as": "CKIBR"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "r-m-order",
+        "why": {
+         "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+         "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Swap each neighbouring pair. What is the code for CLOUD?",
+       "as": "প্ৰতিটো কাষৰীয়া যোৰ সলনা-সলনি কৰা। CLOUD ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "Pair by pair: LCUOD.",
+       "as": "যোৰে যোৰে: LCUOD।"
+      },
+      "options": [
+       {
+        "en": "UDOCL",
+        "as": "UDOCL"
+       },
+       {
+        "en": "DUOLC",
+        "as": "DUOLC"
+       },
+       {
+        "en": "LCUOD",
+        "as": "LCUOD"
+       },
+       {
+        "en": "LOUDC",
+        "as": "LOUDC"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-order",
+        "why": {
+         "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+         "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Swap each neighbouring pair. What is the code for FLOWER?",
+       "as": "প্ৰতিটো কাষৰীয়া যোৰ সলনা-সলনি কৰা। FLOWER ৰ সংকেত কি?"
+      },
+      "why": {
+       "en": "Pair by pair: LFWORE.",
+       "as": "যোৰে যোৰে: LFWORE।"
+      },
+      "options": [
+       {
+        "en": "LOWERF",
+        "as": "LOWERF"
+       },
+       {
+        "en": "LFWORE",
+        "as": "LFWORE"
+       },
+       {
+        "en": "REWOLF",
+        "as": "REWOLF"
+       },
+       {
+        "en": "WERFLO",
+        "as": "WERFLO"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-order",
+        "why": {
+         "en": "You reversed the whole word. This rule moves letters in smaller groups.",
+         "as": "তুমি গোটেই শব্দটো ওলোটালা। এই নিয়মে সৰু গোটত আখৰ সলায়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs6.t.q5",
+    "type": "solve",
+    "skill": "r-value",
+    "q": {
+     "en": "With A = 1, B = 2 and so on, what is the sum of the letters in DOOR?",
+     "as": "A = 1, B = 2 এনেদৰে ধৰিলে DOOR ৰ আখৰবোৰৰ যোগফল কিমান?"
+    },
+    "answer": "52",
+    "why": {
+     "en": "4 + 15 + 15 + 18 = 52.",
+     "as": "4 + 15 + 15 + 18 = 52।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "With A = 1, B = 2 and so on, what is the sum of the letters in DOOR?",
+       "as": "A = 1, B = 2 এনেদৰে ধৰিলে DOOR ৰ আখৰবোৰৰ যোগফল কিমান?"
+      },
+      "answer": "52",
+      "why": {
+       "en": "4 + 15 + 15 + 18 = 52.",
+       "as": "4 + 15 + 15 + 18 = 52।"
+      }
+     },
+     {
+      "q": {
+       "en": "With A = 1, B = 2 and so on, what is the sum of the letters in HAND?",
+       "as": "A = 1, B = 2 এনেদৰে ধৰিলে HAND ৰ আখৰবোৰৰ যোগফল কিমান?"
+      },
+      "answer": "27",
+      "why": {
+       "en": "8 + 1 + 14 + 4 = 27.",
+       "as": "8 + 1 + 14 + 4 = 27।"
+      }
+     },
+     {
+      "q": {
+       "en": "With A = 1, B = 2 and so on, what is the sum of the letters in MILK?",
+       "as": "A = 1, B = 2 এনেদৰে ধৰিলে MILK ৰ আখৰবোৰৰ যোগফল কিমান?"
+      },
+      "answer": "45",
+      "why": {
+       "en": "13 + 9 + 12 + 11 = 45.",
+       "as": "13 + 9 + 12 + 11 = 45।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs6.t.q6",
+    "type": "tf",
+    "skill": "r-compare",
+    "s": {
+     "en": "If two coded sentences share one word and one code, that code is that word.",
+     "as": "দুটা সংকেতৰ বাক্যত এটা শব্দ আৰু এটা সংকেত উমৈহতীয়া হ'লে সেই সংকেতেই সেই শব্দ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "That is how shared-word codes are solved.",
+     "as": "এনে সংকেত এইদৰেই সমাধান হয়।"
+    }
+   }
+  ]
+ }
+}

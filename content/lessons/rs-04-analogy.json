@@ -1,0 +1,3102 @@
+{
+ "id": "rs-04-analogy",
+ "course": "reasoning",
+ "no": 4,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Analogy",
+  "as": "সাদৃশ্য"
+ },
+ "reign": {
+  "en": "Relations, letters, numbers",
+  "as": "সম্পৰ্ক, আখৰ, সংখ্যা"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Say the relation aloud",
+    "as": "সম্পৰ্কটো মাতি কোৱা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "First name the link between the first pair.",
+     "as": "প্ৰথমে প্ৰথম যোৰৰ সম্পৰ্ক কোৱা।"
+    },
+    {
+     "en": "Put it in a short sentence.",
+     "as": "চুটি বাক্যত কোৱা।"
+    },
+    {
+     "en": "Then apply the same sentence.",
+     "as": "তাৰ পিছত একে বাক্য প্ৰয়োগ কৰা।"
+    },
+    {
+     "en": "Same topic does not mean same relation.",
+     "as": "একে বিষয় মানে একে সম্পৰ্ক নহয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs4.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "The sentence does the work",
+      "as": "বাক্যই কাম কৰে"
+     },
+     "text": [
+      {
+       "en": "Doctor : Hospital. Say it: a doctor works in a hospital. Now test each option.",
+       "as": "চিকিৎসক : চিকিৎসালয়। কোৱা: চিকিৎসকে চিকিৎসালয়ত কাম কৰে। এতিয়া বিকল্প চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "First pair",
+        "as": "প্ৰথম যোৰ"
+       },
+       {
+        "en": "A sentence",
+        "as": "এটা বাক্য"
+       },
+       {
+        "en": "Test the option",
+        "as": "বিকল্প চোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Beware the topic trap",
+      "as": "বিষয়ৰ ফান্দ"
+     },
+     "text": [
+      {
+       "en": "Teacher : School wants Farmer : Field, not Farmer : Rice. One is a workplace, the other a product.",
+       "as": "শিক্ষক : বিদ্যালয়ৰ বাবে খেতিয়ক : পথাৰ, খেতিয়ক : ধান নহয়। এটা কৰ্মস্থান, আনটো উৎপাদন।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Workplace: field",
+        "as": "কৰ্মস্থান: পথাৰ"
+       },
+       {
+        "en": "Product: rice",
+        "as": "উৎপাদন: ধান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u1.q1",
+     "type": "inline",
+     "skill": "r-relname",
+     "before": {
+      "en": "Doctor is to Hospital as Teacher is to",
+      "as": "চিকিৎসকৰ লগত চিকিৎসালয়ৰ যি সম্পৰ্ক, শিক্ষকৰ লগত"
+     },
+     "after": {
+      "en": ".",
+      "as": " ৰ সেই সম্পৰ্ক।"
+     },
+     "options": [
+      {
+       "en": "Book",
+       "as": "কিতাপ"
+      },
+      {
+       "en": "Student",
+       "as": "ছাত্ৰ"
+      },
+      {
+       "en": "School",
+       "as": "বিদ্যালয়"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "A workplace.",
+      "as": "কৰ্মস্থান।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "Doctor is to Hospital as Teacher is to",
+        "as": "চিকিৎসকৰ লগত চিকিৎসালয়ৰ যি সম্পৰ্ক, শিক্ষকৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Book",
+         "as": "কিতাপ"
+        },
+        {
+         "en": "Student",
+         "as": "ছাত্ৰ"
+        },
+        {
+         "en": "School",
+         "as": "বিদ্যালয়"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "A workplace.",
+        "as": "কৰ্মস্থান।"
+       }
+      },
+      {
+       "before": {
+        "en": "Bird is to Nest as Bee is to",
+        "as": "চৰাইৰ লগত বাঁহৰ যি সম্পৰ্ক, মৌমাখিৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Honey",
+         "as": "মৌ"
+        },
+        {
+         "en": "Hive",
+         "as": "মৌচাক"
+        },
+        {
+         "en": "Flower",
+         "as": "ফুল"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "A home.",
+        "as": "বাসস্থান।"
+       }
+      },
+      {
+       "before": {
+        "en": "Pen is to Write as Knife is to",
+        "as": "কলমৰ লগত লিখাৰ যি সম্পৰ্ক, কটাৰীৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Steel",
+         "as": "তীখা"
+        },
+        {
+         "en": "Cut",
+         "as": "কটা"
+        },
+        {
+         "en": "Sharp",
+         "as": "চোকা"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "A tool and its use.",
+        "as": "সঁজুলি আৰু ব্যৱহাৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u1.q2",
+     "type": "stepwise",
+     "skill": "r-relname",
+     "q": {
+      "en": "Fish : Water :: Camel : ?",
+      "as": "মাছ : পানী :: উট : ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The relation?",
+        "as": "সম্পৰ্ক?"
+       },
+       "options": [
+        {
+         "en": "It looks alike",
+         "as": "একে দেখি"
+        },
+        {
+         "en": "It lives there",
+         "as": "তাত বাস কৰে"
+        },
+        {
+         "en": "It eats it",
+         "as": "তাক খায়"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Say it as a sentence.",
+        "as": "এটা বাক্যত কোৱা।"
+       },
+       "tag": "r-m-topic"
+      },
+      {
+       "ask": {
+        "en": "So the answer?",
+        "as": "তেন্তে উত্তৰ?"
+       },
+       "options": [
+        {
+         "en": "Grass",
+         "as": "ঘাঁহ"
+        },
+        {
+         "en": "Desert",
+         "as": "মৰুভূমি"
+        },
+        {
+         "en": "Hump",
+         "as": "কুঁজ"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Apply the same relation.",
+        "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The relation holds for Camel and Desert.",
+      "as": "উট আৰু মৰুভূমি ত একে সম্পৰ্ক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Fish : Water :: Camel : ?",
+        "as": "মাছ : পানী :: উট : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The relation?",
+          "as": "সম্পৰ্ক?"
+         },
+         "options": [
+          {
+           "en": "It looks alike",
+           "as": "একে দেখি"
+          },
+          {
+           "en": "It lives there",
+           "as": "তাত বাস কৰে"
+          },
+          {
+           "en": "It eats it",
+           "as": "তাক খায়"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Say it as a sentence.",
+          "as": "এটা বাক্যত কোৱা।"
+         },
+         "tag": "r-m-topic"
+        },
+        {
+         "ask": {
+          "en": "So the answer?",
+          "as": "তেন্তে উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "Grass",
+           "as": "ঘাঁহ"
+          },
+          {
+           "en": "Desert",
+           "as": "মৰুভূমি"
+          },
+          {
+           "en": "Hump",
+           "as": "কুঁজ"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Apply the same relation.",
+          "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The relation holds for Camel and Desert.",
+        "as": "উট আৰু মৰুভূমি ত একে সম্পৰ্ক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Eye : See :: Ear : ?",
+        "as": "চকু : চোৱা :: কাণ : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The relation?",
+          "as": "সম্পৰ্ক?"
+         },
+         "options": [
+          {
+           "en": "Its shape",
+           "as": "ইয়াৰ আকৃতি"
+          },
+          {
+           "en": "Its colour",
+           "as": "ইয়াৰ ৰং"
+          },
+          {
+           "en": "Its function",
+           "as": "ইয়াৰ কাম"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Say it as a sentence.",
+          "as": "এটা বাক্যত কোৱা।"
+         },
+         "tag": "r-m-topic"
+        },
+        {
+         "ask": {
+          "en": "So the answer?",
+          "as": "তেন্তে উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "Head",
+           "as": "মূৰ"
+          },
+          {
+           "en": "Hear",
+           "as": "শুনা"
+          },
+          {
+           "en": "Sound",
+           "as": "শব্দ"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Apply the same relation.",
+          "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The relation holds for Ear and Hear.",
+        "as": "কাণ আৰু শুনা ত একে সম্পৰ্ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u1.q3",
+     "type": "tf",
+     "skill": "r-relname",
+     "s": {
+      "en": "Farmer : Rice has the same relation as Teacher : School.",
+      "as": "খেতিয়ক : ধান আৰু শিক্ষক : বিদ্যালয়ৰ সম্পৰ্ক একে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Rice is a product; school is a workplace.",
+      "as": "ধান উৎপাদন; বিদ্যালয় কৰ্মস্থান।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-topic",
+       "why": {
+        "en": "That word shares the topic but not the relation. State the relation in a sentence.",
+        "as": "সেই শব্দৰ বিষয় একে, সম্পৰ্ক নহয়। সম্পৰ্কটো এটা বাক্যত কোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u1.q4",
+     "type": "match",
+     "skill": "r-relname",
+     "q": {
+      "en": "Match the pair to its relation",
+      "as": "যোৰক সম্পৰ্কৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Pen, write",
+        "as": "কলম, লিখা"
+       },
+       {
+        "en": "Tool and use",
+        "as": "সঁজুলি, ব্যৱহাৰ"
+       }
+      ],
+      [
+       {
+        "en": "Cow, calf",
+        "as": "গাই, পোৱালি"
+       },
+       {
+        "en": "Adult and young",
+        "as": "ডাঙৰ, পোৱালি"
+       }
+      ],
+      [
+       {
+        "en": "Tiger, forest",
+        "as": "বাঘ, হাবি"
+       },
+       {
+        "en": "Animal and home",
+        "as": "জীৱ, বাসস্থান"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Say each in a sentence.",
+      "as": "প্ৰতিটো বাক্যত কোৱা।"
+     }
+    },
+    {
+     "id": "rs4.u1.q5",
+     "type": "order",
+     "skill": "r-relname",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the first pair",
+       "as": "প্ৰথম যোৰ পঢ়া"
+      },
+      {
+       "en": "Make a sentence",
+       "as": "বাক্য বনোৱা"
+      },
+      {
+       "en": "Try each option",
+       "as": "বিকল্প চোৱা"
+      },
+      {
+       "en": "Keep the exact fit",
+       "as": "ঠিক মিলাটো ৰাখা"
+      }
+     ],
+     "why": {
+      "en": "Sentence before options.",
+      "as": "বিকল্পৰ আগতে বাক্য।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Keep the direction",
+    "as": "দিশ একে ৰাখা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Order matters in an analogy.",
+     "as": "সাদৃশ্যত ক্ৰম গুৰুত্বপূৰ্ণ।"
+    },
+    {
+     "en": "Part : Whole cannot match Whole : Part.",
+     "as": "অংশ : গোটা, গোটা : অংশৰ লগত নিমিলে।"
+    },
+    {
+     "en": "Worker : Tool stays in that order.",
+     "as": "কৰ্মী : সঁজুলি ক্ৰমেই থাকে।"
+    },
+    {
+     "en": "Check your answer sits in the same slot.",
+     "as": "উত্তৰ একে ঠাইত আছেনে চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs4.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Analogies have a direction",
+      "as": "সাদৃশ্যৰ দিশ আছে"
+     },
+     "text": [
+      {
+       "en": "Wheel : Car is part to whole. So Petal : Flower fits, but Flower : Petal does not.",
+       "as": "চকা : গাড়ী অংশৰ পৰা গোটালৈ। পাহি : ফুল মিলে, ফুল : পাহি নিমিলে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Part",
+        "as": "অংশ"
+       },
+       {
+        "en": "Whole",
+        "as": "গোটা"
+       },
+       {
+        "en": "Same order",
+        "as": "একে ক্ৰম"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Common directions",
+      "as": "সাধাৰণ দিশ"
+     },
+     "text": [
+      {
+       "en": "Most exam relations come from a short list. Learn these.",
+       "as": "পৰীক্ষাৰ বেছিভাগ সম্পৰ্ক এটা চুটি তালিকাৰ পৰা। এইবোৰ শিকা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Part : Whole",
+        "as": "অংশ : গোটা"
+       },
+       {
+        "en": "Worker : Tool",
+        "as": "কৰ্মী : সঁজুলি"
+       },
+       {
+        "en": "Cause : Effect",
+        "as": "কাৰণ : ফল"
+       },
+       {
+        "en": "Young : Adult",
+        "as": "পোৱালি : ডাঙৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u2.q1",
+     "type": "inline",
+     "skill": "r-relpair",
+     "before": {
+      "en": "Wheel is to Car as Petal is to",
+      "as": "চকাৰ লগত গাড়ীৰ যি সম্পৰ্ক, পাহিৰ লগত"
+     },
+     "after": {
+      "en": ".",
+      "as": " ৰ সেই সম্পৰ্ক।"
+     },
+     "options": [
+      {
+       "en": "Garden",
+       "as": "বাগিচা"
+      },
+      {
+       "en": "Flower",
+       "as": "ফুল"
+      },
+      {
+       "en": "Scent",
+       "as": "গোন্ধ"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Part to whole.",
+      "as": "অংশৰ পৰা গোটা।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "Wheel is to Car as Petal is to",
+        "as": "চকাৰ লগত গাড়ীৰ যি সম্পৰ্ক, পাহিৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Garden",
+         "as": "বাগিচা"
+        },
+        {
+         "en": "Flower",
+         "as": "ফুল"
+        },
+        {
+         "en": "Scent",
+         "as": "গোন্ধ"
+        }
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Part to whole.",
+        "as": "অংশৰ পৰা গোটা।"
+       }
+      },
+      {
+       "before": {
+        "en": "Carpenter is to Saw as Tailor is to",
+        "as": "কাঠমিস্ত্ৰীৰ লগত কৰতৰ যি সম্পৰ্ক, দৰ্জীৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Needle",
+         "as": "বেজী"
+        },
+        {
+         "en": "Shirt",
+         "as": "চোলা"
+        },
+        {
+         "en": "Cloth",
+         "as": "কাপোৰ"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Worker to tool.",
+        "as": "কৰ্মীৰ পৰা সঁজুলি।"
+       }
+      },
+      {
+       "before": {
+        "en": "Calf is to Cow as Kid is to",
+        "as": "দামুৰিৰ লগত গৰুৰ যি সম্পৰ্ক, ছাগলী পোৱালিৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Grass",
+         "as": "ঘাঁহ"
+        },
+        {
+         "en": "Milk",
+         "as": "গাখীৰ"
+        },
+        {
+         "en": "Goat",
+         "as": "ছাগলী"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Young to adult.",
+        "as": "পোৱালিৰ পৰা ডাঙৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u2.q2",
+     "type": "stepwise",
+     "skill": "r-relpair",
+     "q": {
+      "en": "Rain : Flood :: Fire : ?",
+      "as": "বৰষুণ : বান :: জুই : ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The relation?",
+        "as": "সম্পৰ্ক?"
+       },
+       "options": [
+        {
+         "en": "Part then whole",
+         "as": "অংশ, তাৰ পিছত গোটা"
+        },
+        {
+         "en": "Tool then user",
+         "as": "সঁজুলি, তাৰ পিছত ব্যৱহাৰকাৰী"
+        },
+        {
+         "en": "Cause then effect",
+         "as": "কাৰণ, তাৰ পিছত ফল"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Say it as a sentence.",
+        "as": "এটা বাক্যত কোৱা।"
+       },
+       "tag": "r-m-topic"
+      },
+      {
+       "ask": {
+        "en": "So the answer?",
+        "as": "তেন্তে উত্তৰ?"
+       },
+       "options": [
+        {
+         "en": "Wood",
+         "as": "কাঠ"
+        },
+        {
+         "en": "Ash",
+         "as": "ছাঁই"
+        },
+        {
+         "en": "Match",
+         "as": "জুইশলা"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Apply the same relation.",
+        "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The relation holds for Fire and Ash.",
+      "as": "জুই আৰু ছাঁই ত একে সম্পৰ্ক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Rain : Flood :: Fire : ?",
+        "as": "বৰষুণ : বান :: জুই : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The relation?",
+          "as": "সম্পৰ্ক?"
+         },
+         "options": [
+          {
+           "en": "Part then whole",
+           "as": "অংশ, তাৰ পিছত গোটা"
+          },
+          {
+           "en": "Tool then user",
+           "as": "সঁজুলি, তাৰ পিছত ব্যৱহাৰকাৰী"
+          },
+          {
+           "en": "Cause then effect",
+           "as": "কাৰণ, তাৰ পিছত ফল"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Say it as a sentence.",
+          "as": "এটা বাক্যত কোৱা।"
+         },
+         "tag": "r-m-topic"
+        },
+        {
+         "ask": {
+          "en": "So the answer?",
+          "as": "তেন্তে উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "Wood",
+           "as": "কাঠ"
+          },
+          {
+           "en": "Ash",
+           "as": "ছাঁই"
+          },
+          {
+           "en": "Match",
+           "as": "জুইশলা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Apply the same relation.",
+          "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The relation holds for Fire and Ash.",
+        "as": "জুই আৰু ছাঁই ত একে সম্পৰ্ক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Hand : Finger :: Foot : ?",
+        "as": "হাত : আঙুলি :: ভৰি : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The relation?",
+          "as": "সম্পৰ্ক?"
+         },
+         "options": [
+          {
+           "en": "Part then whole",
+           "as": "অংশ, তাৰ পিছত গোটা"
+          },
+          {
+           "en": "Whole then part",
+           "as": "গোটা, তাৰ পিছত অংশ"
+          },
+          {
+           "en": "Cause then effect",
+           "as": "কাৰণ, তাৰ পিছত ফল"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Say it as a sentence.",
+          "as": "এটা বাক্যত কোৱা।"
+         },
+         "tag": "r-m-topic"
+        },
+        {
+         "ask": {
+          "en": "So the answer?",
+          "as": "তেন্তে উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "Toe",
+           "as": "ভৰিৰ আঙুলি"
+          },
+          {
+           "en": "Shoe",
+           "as": "জোতা"
+          },
+          {
+           "en": "Leg",
+           "as": "ঠেং"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Apply the same relation.",
+          "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The relation holds for Foot and Toe.",
+        "as": "ভৰি আৰু ভৰিৰ আঙুলি ত একে সম্পৰ্ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u2.q3",
+     "type": "tf",
+     "skill": "r-relpair",
+     "s": {
+      "en": "Tree : Leaf matches Petal : Flower.",
+      "as": "গছ : পাত, পাহি : ফুলৰ লগত মিলে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The first is whole to part; the second is part to whole.",
+      "as": "প্ৰথমটো গোটাৰ পৰা অংশ; দ্বিতীয়টো অংশৰ পৰা গোটা।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-reverse",
+       "why": {
+        "en": "Keep the same direction: if the first word is the worker, the third is too.",
+        "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u2.q4",
+     "type": "match",
+     "skill": "r-relpair",
+     "q": {
+      "en": "Match the pair to its direction",
+      "as": "যোৰক দিশৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Page, book",
+        "as": "পৃষ্ঠা, কিতাপ"
+       },
+       {
+        "en": "Part : Whole",
+        "as": "অংশ : গোটা"
+       }
+      ],
+      [
+       {
+        "en": "Cook, ladle",
+        "as": "ৰান্ধনী, হেতা"
+       },
+       {
+        "en": "Worker : Tool",
+        "as": "কৰ্মী : সঁজুলি"
+       }
+      ],
+      [
+       {
+        "en": "Germ, disease",
+        "as": "বীজাণু, ৰোগ"
+       },
+       {
+        "en": "Cause : Effect",
+        "as": "কাৰণ : ফল"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Read each in order.",
+      "as": "ক্ৰমে পঢ়া।"
+     }
+    },
+    {
+     "id": "rs4.u2.q5",
+     "type": "order",
+     "skill": "r-relpair",
+     "q": {
+      "en": "From part to whole",
+      "as": "অংশৰ পৰা গোটালৈ"
+     },
+     "items": [
+      {
+       "en": "Word",
+       "as": "শব্দ"
+      },
+      {
+       "en": "Sentence",
+       "as": "বাক্য"
+      },
+      {
+       "en": "Paragraph",
+       "as": "অনুচ্ছেদ"
+      },
+      {
+       "en": "Page",
+       "as": "পৃষ্ঠা"
+      }
+     ],
+     "why": {
+      "en": "Each sits inside the next.",
+      "as": "প্ৰতিটো পিছৰটোৰ ভিতৰত।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "A list of relations",
+    "as": "সম্পৰ্কৰ তালিকা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Opposites make a common pair.",
+     "as": "বিপৰীত সাধাৰণ যোৰ।"
+    },
+    {
+     "en": "Synonyms mean the same.",
+     "as": "সমাৰ্থক শব্দৰ অৰ্থ একে।"
+    },
+    {
+     "en": "Country and capital is a fact relation.",
+     "as": "দেশ আৰু ৰাজধানী তথ্যৰ সম্পৰ্ক।"
+    },
+    {
+     "en": "Degree pairs differ in strength.",
+     "as": "মাত্ৰাৰ যোৰত তীব্ৰতা বেলেগ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs4.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Word meaning relations",
+      "as": "অৰ্থৰ সম্পৰ্ক"
+     },
+     "text": [
+      {
+       "en": "Many pairs are about meaning: same, opposite or stronger.",
+       "as": "বহু যোৰ অৰ্থৰ: একে, ওলোটা বা বেছি তীব্ৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Same: big, large",
+        "as": "একে: ডাঙৰ, বৃহৎ"
+       },
+       {
+        "en": "Opposite: hot, cold",
+        "as": "ওলোটা: গৰম, ঠাণ্ডা"
+       },
+       {
+        "en": "Stronger: warm, hot",
+        "as": "তীব্ৰ: উষ্ণ, গৰম"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Fact relations",
+      "as": "তথ্যৰ সম্পৰ্ক"
+     },
+     "text": [
+      {
+       "en": "Others rest on knowledge: state and capital, or measure and unit.",
+       "as": "আন কিছুমান জ্ঞানৰ: ৰাজ্য আৰু ৰাজধানী, জোখ আৰু একক।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Assam : Dispur",
+        "as": "অসম : দিশপুৰ"
+       },
+       {
+        "en": "Length : Metre",
+        "as": "দৈৰ্ঘ্য : মিটাৰ"
+       },
+       {
+        "en": "Time : Second",
+        "as": "সময় : ছেকেণ্ড"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u3.q1",
+     "type": "inline",
+     "skill": "r-reltype",
+     "before": {
+      "en": "Hot is to Cold as Tall is to",
+      "as": "গৰমৰ লগত ঠাণ্ডাৰ যি সম্পৰ্ক, ওখৰ লগত"
+     },
+     "after": {
+      "en": ".",
+      "as": " ৰ সেই সম্পৰ্ক।"
+     },
+     "options": [
+      {
+       "en": "Short",
+       "as": "চুটি"
+      },
+      {
+       "en": "Big",
+       "as": "ডাঙৰ"
+      },
+      {
+       "en": "High",
+       "as": "উচ্চ"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Opposites.",
+      "as": "বিপৰীত।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "Hot is to Cold as Tall is to",
+        "as": "গৰমৰ লগত ঠাণ্ডাৰ যি সম্পৰ্ক, ওখৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Short",
+         "as": "চুটি"
+        },
+        {
+         "en": "Big",
+         "as": "ডাঙৰ"
+        },
+        {
+         "en": "High",
+         "as": "উচ্চ"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Opposites.",
+        "as": "বিপৰীত।"
+       }
+      },
+      {
+       "before": {
+        "en": "Length is to Metre as Weight is to",
+        "as": "দৈৰ্ঘ্যৰ লগত মিটাৰৰ যি সম্পৰ্ক, ওজনৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Second",
+         "as": "ছেকেণ্ড"
+        },
+        {
+         "en": "Litre",
+         "as": "লিটাৰ"
+        },
+        {
+         "en": "Kilogram",
+         "as": "কিলোগ্ৰাম"
+        }
+       ],
+       "answer": 2,
+       "why": {
+        "en": "A measure and its unit.",
+        "as": "জোখ আৰু একক।"
+       }
+      },
+      {
+       "before": {
+        "en": "Big is to Huge as Cold is to",
+        "as": "ডাঙৰৰ লগত বিশালৰ যি সম্পৰ্ক, ঠাণ্ডাৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Freezing",
+         "as": "কঁপনি উঠা ঠাণ্ডা"
+        },
+        {
+         "en": "Wet",
+         "as": "তিতা"
+        },
+        {
+         "en": "Warm",
+         "as": "উষ্ণ"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "A stronger degree.",
+        "as": "অধিক তীব্ৰতা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u3.q2",
+     "type": "tf",
+     "skill": "r-reltype",
+     "s": {
+      "en": "Assam : Dispur is a state and capital relation.",
+      "as": "অসম : দিশপুৰ ৰাজ্য আৰু ৰাজধানীৰ সম্পৰ্ক।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Dispur is the capital of Assam.",
+      "as": "দিশপুৰ অসমৰ ৰাজধানী।"
+     }
+    },
+    {
+     "id": "rs4.u3.q3",
+     "type": "match",
+     "skill": "r-reltype",
+     "q": {
+      "en": "Match the pair to its kind",
+      "as": "যোৰক ধৰণৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Day, night",
+        "as": "দিন, ৰাতি"
+       },
+       {
+        "en": "Opposite",
+        "as": "বিপৰীত"
+       }
+      ],
+      [
+       {
+        "en": "Start, begin",
+        "as": "আৰম্ভ, শুভাৰম্ভ"
+       },
+       {
+        "en": "Same meaning",
+        "as": "সমাৰ্থক"
+       }
+      ],
+      [
+       {
+        "en": "Time, second",
+        "as": "সময়, ছেকেণ্ড"
+       },
+       {
+        "en": "Measure, unit",
+        "as": "জোখ, একক"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Name each kind.",
+      "as": "প্ৰতিটো ধৰণৰ নাম কোৱা।"
+     }
+    },
+    {
+     "id": "rs4.u3.q4",
+     "type": "stepwise",
+     "skill": "r-reltype",
+     "q": {
+      "en": "Happy : Sad :: Rich : ?",
+      "as": "সুখী : দুখী :: ধনী : ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The relation?",
+        "as": "সম্পৰ্ক?"
+       },
+       "options": [
+        {
+         "en": "Part and whole",
+         "as": "অংশ, গোটা"
+        },
+        {
+         "en": "Opposites",
+         "as": "বিপৰীত"
+        },
+        {
+         "en": "Same meaning",
+         "as": "সমাৰ্থক"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Say it as a sentence.",
+        "as": "এটা বাক্যত কোৱা।"
+       },
+       "tag": "r-m-topic"
+      },
+      {
+       "ask": {
+        "en": "So the answer?",
+        "as": "তেন্তে উত্তৰ?"
+       },
+       "options": [
+        {
+         "en": "Poor",
+         "as": "দুখীয়া"
+        },
+        {
+         "en": "Gold",
+         "as": "সোণ"
+        },
+        {
+         "en": "Wealthy",
+         "as": "সম্পদশালী"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Apply the same relation.",
+        "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The relation holds for Rich and Poor.",
+      "as": "ধনী আৰু দুখীয়া ত একে সম্পৰ্ক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Happy : Sad :: Rich : ?",
+        "as": "সুখী : দুখী :: ধনী : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The relation?",
+          "as": "সম্পৰ্ক?"
+         },
+         "options": [
+          {
+           "en": "Part and whole",
+           "as": "অংশ, গোটা"
+          },
+          {
+           "en": "Opposites",
+           "as": "বিপৰীত"
+          },
+          {
+           "en": "Same meaning",
+           "as": "সমাৰ্থক"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Say it as a sentence.",
+          "as": "এটা বাক্যত কোৱা।"
+         },
+         "tag": "r-m-topic"
+        },
+        {
+         "ask": {
+          "en": "So the answer?",
+          "as": "তেন্তে উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "Poor",
+           "as": "দুখীয়া"
+          },
+          {
+           "en": "Gold",
+           "as": "সোণ"
+          },
+          {
+           "en": "Wealthy",
+           "as": "সম্পদশালী"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Apply the same relation.",
+          "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The relation holds for Rich and Poor.",
+        "as": "ধনী আৰু দুখীয়া ত একে সম্পৰ্ক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Fast : Quick :: Near : ?",
+        "as": "খৰ : দ্ৰুত :: ওচৰ : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The relation?",
+          "as": "সম্পৰ্ক?"
+         },
+         "options": [
+          {
+           "en": "Opposites",
+           "as": "বিপৰীত"
+          },
+          {
+           "en": "Cause and effect",
+           "as": "কাৰণ, ফল"
+          },
+          {
+           "en": "Same meaning",
+           "as": "সমাৰ্থক"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Say it as a sentence.",
+          "as": "এটা বাক্যত কোৱা।"
+         },
+         "tag": "r-m-topic"
+        },
+        {
+         "ask": {
+          "en": "So the answer?",
+          "as": "তেন্তে উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "Close",
+           "as": "কাষ"
+          },
+          {
+           "en": "Far",
+           "as": "দূৰ"
+          },
+          {
+           "en": "Road",
+           "as": "বাট"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Apply the same relation.",
+          "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The relation holds for Near and Close.",
+        "as": "ওচৰ আৰু কাষ ত একে সম্পৰ্ক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u3.q5",
+     "type": "odd",
+     "skill": "r-reltype",
+     "q": {
+      "en": "Which pair is not opposites?",
+      "as": "কোন যোৰ বিপৰীত নহয়?"
+     },
+     "why": {
+      "en": "Tall, high is the odd pair.",
+      "as": "Tall, high বেলেগ যোৰ।"
+     },
+     "options": [
+      {
+       "en": "Up, down",
+       "as": "Up, down"
+      },
+      {
+       "en": "Tall, high",
+       "as": "Tall, high"
+      },
+      {
+       "en": "Wet, dry",
+       "as": "Wet, dry"
+      },
+      {
+       "en": "Old, new",
+       "as": "Old, new"
+      }
+     ],
+     "answer": 1,
+     "variants": [
+      {
+       "q": {
+        "en": "Which pair is not opposites?",
+        "as": "কোন যোৰ বিপৰীত নহয়?"
+       },
+       "why": {
+        "en": "Tall, high is the odd pair.",
+        "as": "Tall, high বেলেগ যোৰ।"
+       },
+       "options": [
+        {
+         "en": "Up, down",
+         "as": "Up, down"
+        },
+        {
+         "en": "Tall, high",
+         "as": "Tall, high"
+        },
+        {
+         "en": "Wet, dry",
+         "as": "Wet, dry"
+        },
+        {
+         "en": "Old, new",
+         "as": "Old, new"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Which pair is not same in meaning?",
+        "as": "কোন যোৰ সমাৰ্থক নহয়?"
+       },
+       "why": {
+        "en": "Hot, cold is the odd pair.",
+        "as": "Hot, cold বেলেগ যোৰ।"
+       },
+       "options": [
+        {
+         "en": "Big, large",
+         "as": "Big, large"
+        },
+        {
+         "en": "Hot, cold",
+         "as": "Hot, cold"
+        },
+        {
+         "en": "Rich, wealthy",
+         "as": "Rich, wealthy"
+        },
+        {
+         "en": "Small, tiny",
+         "as": "Small, tiny"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Letter analogies",
+    "as": "আখৰৰ সাদৃশ্য"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Compare letter by letter.",
+     "as": "আখৰে আখৰে তুলনা কৰা।"
+    },
+    {
+     "en": "Find the gap in each position.",
+     "as": "প্ৰতিটো স্থানৰ ব্যৱধান।"
+    },
+    {
+     "en": "Apply the same gaps to the third term.",
+     "as": "তৃতীয় পদত একে ব্যৱধান।"
+    },
+    {
+     "en": "Reversal and opposites also appear.",
+     "as": "ওলোটা আৰু বিপৰীতো আহে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs4.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "It is a code in disguise",
+      "as": "ই ছদ্মবেশী সংকেত"
+     },
+     "text": [
+      {
+       "en": "AB : CD is a shift of 2. A letter analogy is a code you already know.",
+       "as": "AB : CD ত স্থানান্তৰ 2। আখৰৰ সাদৃশ্য মানে চিনাকি সংকেত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "AB : CD",
+        "as": "AB : CD"
+       },
+       {
+        "en": "+2 each",
+        "as": "প্ৰতিটো +2"
+       },
+       {
+        "en": "KL : MN",
+        "as": "KL : MN"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Other rules to test",
+      "as": "আন নিয়ম"
+     },
+     "text": [
+      {
+       "en": "If a shift fails, try reversing the group or taking opposite letters.",
+       "as": "স্থানান্তৰে নহ'লে গোট ওলোটোৱা বা বিপৰীত আখৰ লোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Reverse: ABC, CBA",
+        "as": "ওলোটা: ABC, CBA"
+       },
+       {
+        "en": "Opposite: ACE, ZXV",
+        "as": "বিপৰীত: ACE, ZXV"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u4.q1",
+     "type": "solve",
+     "skill": "r-relletter",
+     "input": "letters",
+     "q": {
+      "en": "BAD : DCF :: CUP : ?",
+      "as": "BAD : DCF :: CUP : ?"
+     },
+     "answer": "EWR",
+     "why": {
+      "en": "Every letter moves +2.",
+      "as": "প্ৰতিটো আখৰ +2 সৰে।"
+     },
+     "traps": [
+      {
+       "ans": "ASN",
+       "tag": "r-m-reverse",
+       "why": {
+        "en": "Keep the same direction: if the first word is the worker, the third is too.",
+        "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "BAD : DCF :: CUP : ?",
+        "as": "BAD : DCF :: CUP : ?"
+       },
+       "answer": "EWR",
+       "why": {
+        "en": "Every letter moves +2.",
+        "as": "প্ৰতিটো আখৰ +2 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "ASN",
+         "tag": "r-m-reverse",
+         "why": {
+          "en": "Keep the same direction: if the first word is the worker, the third is too.",
+          "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "TOP : UPQ :: SUN : ?",
+        "as": "TOP : UPQ :: SUN : ?"
+       },
+       "answer": "TVO",
+       "why": {
+        "en": "Every letter moves +1.",
+        "as": "প্ৰতিটো আখৰ +1 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "RTM",
+         "tag": "r-m-reverse",
+         "why": {
+          "en": "Keep the same direction: if the first word is the worker, the third is too.",
+          "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "ROW : URZ :: FAN : ?",
+        "as": "ROW : URZ :: FAN : ?"
+       },
+       "answer": "IDQ",
+       "why": {
+        "en": "Every letter moves +3.",
+        "as": "প্ৰতিটো আখৰ +3 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "CXK",
+         "tag": "r-m-reverse",
+         "why": {
+          "en": "Keep the same direction: if the first word is the worker, the third is too.",
+          "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs4.u4.q2",
+     "type": "solve",
+     "skill": "r-relletter",
+     "input": "letters",
+     "q": {
+      "en": "LID : DIL :: MAP : ?",
+      "as": "LID : DIL :: MAP : ?"
+     },
+     "answer": "PAM",
+     "why": {
+      "en": "The group is reversed.",
+      "as": "গোটটো ওলোটোৱা হৈছে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "LID : DIL :: MAP : ?",
+        "as": "LID : DIL :: MAP : ?"
+       },
+       "answer": "PAM",
+       "why": {
+        "en": "The group is reversed.",
+        "as": "গোটটো ওলোটোৱা হৈছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "ARM : MRA :: NET : ?",
+        "as": "ARM : MRA :: NET : ?"
+       },
+       "answer": "TEN",
+       "why": {
+        "en": "The group is reversed.",
+        "as": "গোটটো ওলোটোৱা হৈছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "BOX : XOB :: HEN : ?",
+        "as": "BOX : XOB :: HEN : ?"
+       },
+       "answer": "NEH",
+       "why": {
+        "en": "The group is reversed.",
+        "as": "গোটটো ওলোটোৱা হৈছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u4.q3",
+     "type": "tf",
+     "skill": "r-relletter",
+     "s": {
+      "en": "AC : DF follows a shift of +3.",
+      "as": "AC : DF ত স্থানান্তৰ +3।"
+     },
+     "answer": true,
+     "why": {
+      "en": "A to D and C to F are both +3.",
+      "as": "A ৰ পৰা D আৰু C ৰ পৰা F দুয়োটা +3।"
+     }
+    },
+    {
+     "id": "rs4.u4.q4",
+     "type": "match",
+     "skill": "r-relletter",
+     "q": {
+      "en": "Match the pair to its rule",
+      "as": "যোৰক নিয়মৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "AB : BC",
+        "as": "AB : BC"
+       },
+       {
+        "en": "+1",
+        "as": "+1"
+       }
+      ],
+      [
+       {
+        "en": "AD : CF",
+        "as": "AD : CF"
+       },
+       {
+        "en": "+2",
+        "as": "+2"
+       }
+      ],
+      [
+       {
+        "en": "EF : FE",
+        "as": "EF : FE"
+       },
+       {
+        "en": "Reverse",
+        "as": "ওলোটা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Check each position.",
+      "as": "প্ৰতিটো স্থান চোৱা।"
+     }
+    },
+    {
+     "id": "rs4.u4.q5",
+     "type": "order",
+     "skill": "r-relletter",
+     "q": {
+      "en": "Test a letter analogy in order",
+      "as": "আখৰৰ সাদৃশ্য ক্ৰমে চোৱা"
+     },
+     "items": [
+      {
+       "en": "Try a shift",
+       "as": "স্থানান্তৰ"
+      },
+      {
+       "en": "Try a reversal",
+       "as": "ওলোটা"
+      },
+      {
+       "en": "Try opposites",
+       "as": "বিপৰীত"
+      },
+      {
+       "en": "Apply the rule",
+       "as": "নিয়ম প্ৰয়োগ"
+      }
+     ],
+     "why": {
+      "en": "Most common first.",
+      "as": "সাধাৰণটো আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Number analogies",
+    "as": "সংখ্যাৰ সাদৃশ্য"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Look for squares and cubes first.",
+     "as": "প্ৰথমে বৰ্গ আৰু ঘন চোৱা।"
+    },
+    {
+     "en": "Try multiplying, then adding.",
+     "as": "পূৰণ কৰি যোগ কৰি চোৱা।"
+    },
+    {
+     "en": "Test the rule on the first pair.",
+     "as": "প্ৰথম যোৰত নিয়ম চোৱা।"
+    },
+    {
+     "en": "Digit sums can also link numbers.",
+     "as": "অংকৰ যোগফলেও সংযোগ কৰিব পাৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs4.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "Familiar pairs first",
+      "as": "চিনাকি যোৰ আগতে"
+     },
+     "text": [
+      {
+       "en": "Check squares and cubes before anything clever.",
+       "as": "কৌশলৰ আগতে বৰ্গ আৰু ঘন চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "3 : 9",
+        "as": "3 : 9"
+       },
+       {
+        "en": "3 : 27",
+        "as": "3 : 27"
+       },
+       {
+        "en": "4 : 16",
+        "as": "4 : 16"
+       },
+       {
+        "en": "4 : 64",
+        "as": "4 : 64"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "Multiply, then adjust",
+      "as": "পূৰণ, তাৰ পিছত মিলোৱা"
+     },
+     "text": [
+      {
+       "en": "7 : 15 is twice 7 plus 1. Then 9 : 19 follows.",
+       "as": "7 : 15 মানে 7 ৰ দুগুণ যোগ 1। তেন্তে 9 : 19।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "7 × 2 = 14",
+        "as": "7 × 2 = 14"
+       },
+       {
+        "en": "14 + 1 = 15",
+        "as": "14 + 1 = 15"
+       },
+       {
+        "en": "9 : 19",
+        "as": "9 : 19"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u5.q1",
+     "type": "solve",
+     "skill": "r-relnum",
+     "q": {
+      "en": "4 : 16 :: 7 : ?",
+      "as": "4 : 16 :: 7 : ?"
+     },
+     "answer": "49",
+     "why": {
+      "en": "The second number is the square of the first.",
+      "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "4 : 16 :: 7 : ?",
+        "as": "4 : 16 :: 7 : ?"
+       },
+       "answer": "49",
+       "why": {
+        "en": "The second number is the square of the first.",
+        "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+       }
+      },
+      {
+       "q": {
+        "en": "6 : 36 :: 9 : ?",
+        "as": "6 : 36 :: 9 : ?"
+       },
+       "answer": "81",
+       "why": {
+        "en": "The second number is the square of the first.",
+        "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+       }
+      },
+      {
+       "q": {
+        "en": "8 : 64 :: 11 : ?",
+        "as": "8 : 64 :: 11 : ?"
+       },
+       "answer": "121",
+       "why": {
+        "en": "The second number is the square of the first.",
+        "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u5.q2",
+     "type": "solve",
+     "skill": "r-relnum",
+     "q": {
+      "en": "5 : 11 :: 8 : ?",
+      "as": "5 : 11 :: 8 : ?"
+     },
+     "answer": "17",
+     "hints": [
+      {
+       "en": "Try multiplying by 2.",
+       "as": "2 ৰে পূৰণ কৰি চোৱা।"
+      }
+     ],
+     "why": {
+      "en": "The rule is × 2, then +1.",
+      "as": "নিয়ম × 2, তাৰ পিছত +1।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "5 : 11 :: 8 : ?",
+        "as": "5 : 11 :: 8 : ?"
+       },
+       "answer": "17",
+       "hints": [
+        {
+         "en": "Try multiplying by 2.",
+         "as": "2 ৰে পূৰণ কৰি চোৱা।"
+        }
+       ],
+       "why": {
+        "en": "The rule is × 2, then +1.",
+        "as": "নিয়ম × 2, তাৰ পিছত +1।"
+       }
+      },
+      {
+       "q": {
+        "en": "4 : 11 :: 7 : ?",
+        "as": "4 : 11 :: 7 : ?"
+       },
+       "answer": "20",
+       "hints": [
+        {
+         "en": "Try multiplying by 3.",
+         "as": "3 ৰে পূৰণ কৰি চোৱা।"
+        }
+       ],
+       "why": {
+        "en": "The rule is × 3, then -1.",
+        "as": "নিয়ম × 3, তাৰ পিছত -1।"
+       }
+      },
+      {
+       "q": {
+        "en": "6 : 15 :: 9 : ?",
+        "as": "6 : 15 :: 9 : ?"
+       },
+       "answer": "21",
+       "hints": [
+        {
+         "en": "Try multiplying by 2.",
+         "as": "2 ৰে পূৰণ কৰি চোৱা।"
+        }
+       ],
+       "why": {
+        "en": "The rule is × 2, then +3.",
+        "as": "নিয়ম × 2, তাৰ পিছত +3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u5.q3",
+     "type": "tf",
+     "skill": "r-relnum",
+     "s": {
+      "en": "3 : 27 and 2 : 8 follow the same rule.",
+      "as": "3 : 27 আৰু 2 : 8 ৰ নিয়ম একে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Both cube the first number.",
+      "as": "দুয়োটা প্ৰথম সংখ্যাৰ ঘন।"
+     }
+    },
+    {
+     "id": "rs4.u5.q4",
+     "type": "match",
+     "skill": "r-relnum",
+     "q": {
+      "en": "Match the pair to its rule",
+      "as": "যোৰক নিয়মৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "5 : 25",
+        "as": "5 : 25"
+       },
+       {
+        "en": "Square",
+        "as": "বৰ্গ"
+       }
+      ],
+      [
+       {
+        "en": "2 : 8",
+        "as": "2 : 8"
+       },
+       {
+        "en": "Cube",
+        "as": "ঘন"
+       }
+      ],
+      [
+       {
+        "en": "6 : 12",
+        "as": "6 : 12"
+       },
+       {
+        "en": "× 2",
+        "as": "× 2"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Test each rule.",
+      "as": "প্ৰতিটো নিয়ম চোৱা।"
+     }
+    },
+    {
+     "id": "rs4.u5.q5",
+     "type": "stepwise",
+     "skill": "r-relnum",
+     "q": {
+      "en": "3 : 10 :: 5 : ?",
+      "as": "3 : 10 :: 5 : ?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The rule?",
+        "as": "নিয়ম?"
+       },
+       "options": [
+        {
+         "en": "× 4, +0",
+         "as": "× 4, +0"
+        },
+        {
+         "en": "+ 7, × 2",
+         "as": "+ 7, × 2"
+        },
+        {
+         "en": "× 3, +1",
+         "as": "× 3, +1"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Test it on the first pair.",
+        "as": "প্ৰথম যোৰত চোৱা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The answer?",
+        "as": "উত্তৰ?"
+       },
+       "options": [
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "18",
+         "as": "18"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Apply it to the third number.",
+        "as": "তৃতীয় সংখ্যাত প্ৰয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The answer is 16.",
+      "as": "উত্তৰ 16।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "3 : 10 :: 5 : ?",
+        "as": "3 : 10 :: 5 : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The rule?",
+          "as": "নিয়ম?"
+         },
+         "options": [
+          {
+           "en": "× 4, +0",
+           "as": "× 4, +0"
+          },
+          {
+           "en": "+ 7, × 2",
+           "as": "+ 7, × 2"
+          },
+          {
+           "en": "× 3, +1",
+           "as": "× 3, +1"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Test it on the first pair.",
+          "as": "প্ৰথম যোৰত চোৱা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The answer?",
+          "as": "উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Apply it to the third number.",
+          "as": "তৃতীয় সংখ্যাত প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 16.",
+        "as": "উত্তৰ 16।"
+       }
+      },
+      {
+       "q": {
+        "en": "7 : 13 :: 10 : ?",
+        "as": "7 : 13 :: 10 : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The rule?",
+          "as": "নিয়ম?"
+         },
+         "options": [
+          {
+           "en": "× 3, -2",
+           "as": "× 3, -2"
+          },
+          {
+           "en": "+ 6, × 2",
+           "as": "+ 6, × 2"
+          },
+          {
+           "en": "× 2, -1",
+           "as": "× 2, -1"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Test it on the first pair.",
+          "as": "প্ৰথম যোৰত চোৱা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The answer?",
+          "as": "উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "17",
+           "as": "17"
+          },
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "19",
+           "as": "19"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Apply it to the third number.",
+          "as": "তৃতীয় সংখ্যাত প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 19.",
+        "as": "উত্তৰ 19।"
+       }
+      },
+      {
+       "q": {
+        "en": "6 : 20 :: 4 : ?",
+        "as": "6 : 20 :: 4 : ?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The rule?",
+          "as": "নিয়ম?"
+         },
+         "options": [
+          {
+           "en": "× 3, +2",
+           "as": "× 3, +2"
+          },
+          {
+           "en": "× 4, +1",
+           "as": "× 4, +1"
+          },
+          {
+           "en": "+ 14, × 2",
+           "as": "+ 14, × 2"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Test it on the first pair.",
+          "as": "প্ৰথম যোৰত চোৱা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The answer?",
+          "as": "উত্তৰ?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Apply it to the third number.",
+          "as": "তৃতীয় সংখ্যাত প্ৰয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 14.",
+        "as": "উত্তৰ 14।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "What goes with what",
+    "as": "কিহৰ লগত কি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Time units scale evenly.",
+     "as": "সময়ৰ একক সমানে বাঢ়ে।"
+    },
+    {
+     "en": "Groups of animals have names.",
+     "as": "জীৱৰ গোটৰ নাম আছে।"
+    },
+    {
+     "en": "Think of where a thing is kept.",
+     "as": "বস্তু ক'ত ৰখা হয় ভাবা।"
+    },
+    {
+     "en": "Use the same sentence test.",
+     "as": "একে বাক্য পৰীক্ষা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs4.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Everyday links",
+      "as": "দৈনন্দিন সম্পৰ্ক"
+     },
+     "text": [
+      {
+       "en": "Many pairs are simply things that belong together.",
+       "as": "বহু যোৰ কেৱল একেলগে থকা বস্তু।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Book : Shelf",
+        "as": "কিতাপ : আলমাৰি"
+       },
+       {
+        "en": "Car : Garage",
+        "as": "গাড়ী : গেৰেজ"
+       },
+       {
+        "en": "Money : Bank",
+        "as": "ধন : বেংক"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Time scale pairs",
+      "as": "সময়ৰ যোৰ"
+     },
+     "text": [
+      {
+       "en": "Week : Day is 7 to 1. Year : Month is 12 to 1.",
+       "as": "সপ্তাহ : দিন 7 : 1। বছৰ : মাহ 12 : 1।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "60 s = 1 min",
+        "as": "60 s = 1 min"
+       },
+       {
+        "en": "7 days = 1 week",
+        "as": "7 days = 1 week"
+       },
+       {
+        "en": "12 months = 1 year",
+        "as": "12 months = 1 year"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs4.u6.q1",
+     "type": "inline",
+     "skill": "r-relassoc",
+     "before": {
+      "en": "Book is to Library as Money is to",
+      "as": "কিতাপৰ লগত পুথিভঁৰালৰ যি সম্পৰ্ক, ধনৰ লগত"
+     },
+     "after": {
+      "en": ".",
+      "as": " ৰ সেই সম্পৰ্ক।"
+     },
+     "options": [
+      {
+       "en": "Bank",
+       "as": "বেংক"
+      },
+      {
+       "en": "Coin",
+       "as": "মুদ্ৰা"
+      },
+      {
+       "en": "Shop",
+       "as": "দোকান"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Where it is kept.",
+      "as": "ক'ত ৰখা হয়।"
+     },
+     "variants": [
+      {
+       "before": {
+        "en": "Book is to Library as Money is to",
+        "as": "কিতাপৰ লগত পুথিভঁৰালৰ যি সম্পৰ্ক, ধনৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Bank",
+         "as": "বেংক"
+        },
+        {
+         "en": "Coin",
+         "as": "মুদ্ৰা"
+        },
+        {
+         "en": "Shop",
+         "as": "দোকান"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Where it is kept.",
+        "as": "ক'ত ৰখা হয়।"
+       }
+      },
+      {
+       "before": {
+        "en": "Bird is to Flock as Cow is to",
+        "as": "চৰাইৰ লগত জাকৰ যি সম্পৰ্ক, গৰুৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Herd",
+         "as": "জাক"
+        },
+        {
+         "en": "Milk",
+         "as": "গাখীৰ"
+        },
+        {
+         "en": "Stable",
+         "as": "গোহালি"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "A group of them.",
+        "as": "সিহঁতৰ গোট।"
+       }
+      },
+      {
+       "before": {
+        "en": "Minute is to Hour as Month is to",
+        "as": "মিনিটৰ লগত ঘণ্টাৰ যি সম্পৰ্ক, মাহৰ লগত"
+       },
+       "after": {
+        "en": ".",
+        "as": " ৰ সেই সম্পৰ্ক।"
+       },
+       "options": [
+        {
+         "en": "Year",
+         "as": "বছৰ"
+        },
+        {
+         "en": "Week",
+         "as": "সপ্তাহ"
+        },
+        {
+         "en": "Day",
+         "as": "দিন"
+        }
+       ],
+       "answer": 0,
+       "why": {
+        "en": "A larger unit of time.",
+        "as": "ডাঙৰ সময় একক।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs4.u6.q2",
+     "type": "tf",
+     "skill": "r-relassoc",
+     "s": {
+      "en": "Second : Minute matches Day : Week.",
+      "as": "ছেকেণ্ড : মিনিট, দিন : সপ্তাহৰ লগত মিলে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Small unit to larger unit.",
+      "as": "সৰু এককৰ পৰা ডাঙৰ একক।"
+     }
+    },
+    {
+     "id": "rs4.u6.q3",
+     "type": "match",
+     "skill": "r-relassoc",
+     "q": {
+      "en": "Match the thing to its place",
+      "as": "বস্তুক ঠাইৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Train",
+        "as": "ৰেল"
+       },
+       {
+        "en": "Station",
+        "as": "ষ্টেচন"
+       }
+      ],
+      [
+       {
+        "en": "Plane",
+        "as": "বিমান"
+       },
+       {
+        "en": "Airport",
+        "as": "বিমানবন্দৰ"
+       }
+      ],
+      [
+       {
+        "en": "Boat",
+        "as": "নাও"
+       },
+       {
+        "en": "Ghat",
+        "as": "ঘাট"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Where each stops.",
+      "as": "ক'ত ৰয়।"
+     }
+    },
+    {
+     "id": "rs4.u6.q4",
+     "type": "order",
+     "skill": "r-relassoc",
+     "q": {
+      "en": "Small to large",
+      "as": "সৰুৰ পৰা ডাঙৰলৈ"
+     },
+     "items": [
+      {
+       "en": "Minute",
+       "as": "মিনিট"
+      },
+      {
+       "en": "Hour",
+       "as": "ঘণ্টা"
+      },
+      {
+       "en": "Day",
+       "as": "দিন"
+      },
+      {
+       "en": "Week",
+       "as": "সপ্তাহ"
+      }
+     ],
+     "why": {
+      "en": "Each contains the last.",
+      "as": "প্ৰতিটোৱে আগৰটোক সামৰে।"
+     }
+    },
+    {
+     "id": "rs4.u6.q5",
+     "type": "solve",
+     "skill": "r-relassoc",
+     "q": {
+      "en": "Week : 7 :: Year : ?, counting months in a year.",
+      "as": "সপ্তাহ : 7 :: বছৰৰ মাহ : ?"
+     },
+     "answer": "12",
+     "why": {
+      "en": "12 is the count.",
+      "as": "12 সংখ্যাটো।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Week : 7 :: Year : ?, counting months in a year.",
+        "as": "সপ্তাহ : 7 :: বছৰৰ মাহ : ?"
+       },
+       "answer": "12",
+       "why": {
+        "en": "12 is the count.",
+        "as": "12 সংখ্যাটো।"
+       }
+      },
+      {
+       "q": {
+        "en": "Week : 7 :: Minute : ?, counting seconds in a minute.",
+        "as": "সপ্তাহ : 7 :: মিনিটৰ ছেকেণ্ড : ?"
+       },
+       "answer": "60",
+       "why": {
+        "en": "60 is the count.",
+        "as": "60 সংখ্যাটো।"
+       }
+      },
+      {
+       "q": {
+        "en": "Week : 7 :: Day : ?, counting hours in a day.",
+        "as": "সপ্তাহ : 7 :: দিনৰ ঘণ্টা : ?"
+       },
+       "answer": "24",
+       "why": {
+        "en": "24 is the count.",
+        "as": "24 সংখ্যাটো।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Analogy test",
+   "as": "সাদৃশ্যৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs4.t.q1",
+    "type": "mcq",
+    "skill": "r-relname",
+    "q": {
+     "en": "Author : Book :: Painter : ?",
+     "as": "লেখক : কিতাপ :: চিত্ৰকৰ : ?"
+    },
+    "why": {
+     "en": "Apply the same relation.",
+     "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+    },
+    "options": [
+     {
+      "en": "Colour",
+      "as": "Colour"
+     },
+     {
+      "en": "Wall",
+      "as": "Wall"
+     },
+     {
+      "en": "Picture",
+      "as": "Picture"
+     },
+     {
+      "en": "Brush",
+      "as": "Brush"
+     }
+    ],
+    "answer": 2,
+    "variants": [
+     {
+      "q": {
+       "en": "Author : Book :: Painter : ?",
+       "as": "লেখক : কিতাপ :: চিত্ৰকৰ : ?"
+      },
+      "why": {
+       "en": "Apply the same relation.",
+       "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+      },
+      "options": [
+       {
+        "en": "Colour",
+        "as": "Colour"
+       },
+       {
+        "en": "Wall",
+        "as": "Wall"
+       },
+       {
+        "en": "Picture",
+        "as": "Picture"
+       },
+       {
+        "en": "Brush",
+        "as": "Brush"
+       }
+      ],
+      "answer": 2
+     },
+     {
+      "q": {
+       "en": "Cow : Milk :: Bee : ?",
+       "as": "গৰু : গাখীৰ :: মৌমাখি : ?"
+      },
+      "why": {
+       "en": "Apply the same relation.",
+       "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+      },
+      "options": [
+       {
+        "en": "Sting",
+        "as": "Sting"
+       },
+       {
+        "en": "Hive",
+        "as": "Hive"
+       },
+       {
+        "en": "Wing",
+        "as": "Wing"
+       },
+       {
+        "en": "Honey",
+        "as": "Honey"
+       }
+      ],
+      "answer": 3
+     }
+    ]
+   },
+   {
+    "id": "rs4.t.q2",
+    "type": "tf",
+    "skill": "r-relpair",
+    "s": {
+     "en": "Petal : Flower matches Page : Book.",
+     "as": "পাহি : ফুল, পৃষ্ঠা : কিতাপৰ লগত মিলে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Both are part to whole.",
+     "as": "দুয়োটা অংশৰ পৰা গোটা।"
+    }
+   },
+   {
+    "id": "rs4.t.q3",
+    "type": "solve",
+    "skill": "r-relletter",
+    "input": "letters",
+    "q": {
+     "en": "PEN : RGP :: BAT : ?",
+     "as": "PEN : RGP :: BAT : ?"
+    },
+    "answer": "DCV",
+    "why": {
+     "en": "Every letter moves +2.",
+     "as": "প্ৰতিটো আখৰ +2 সৰে।"
+    },
+    "traps": [
+     {
+      "ans": "ZYR",
+      "tag": "r-m-reverse",
+      "why": {
+       "en": "Keep the same direction: if the first word is the worker, the third is too.",
+       "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "PEN : RGP :: BAT : ?",
+       "as": "PEN : RGP :: BAT : ?"
+      },
+      "answer": "DCV",
+      "why": {
+       "en": "Every letter moves +2.",
+       "as": "প্ৰতিটো আখৰ +2 সৰে।"
+      },
+      "traps": [
+       {
+        "ans": "ZYR",
+        "tag": "r-m-reverse",
+        "why": {
+         "en": "Keep the same direction: if the first word is the worker, the third is too.",
+         "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "DOG : EPH :: RAT : ?",
+       "as": "DOG : EPH :: RAT : ?"
+      },
+      "answer": "SBU",
+      "why": {
+       "en": "Every letter moves +1.",
+       "as": "প্ৰতিটো আখৰ +1 সৰে।"
+      },
+      "traps": [
+       {
+        "ans": "QZS",
+        "tag": "r-m-reverse",
+        "why": {
+         "en": "Keep the same direction: if the first word is the worker, the third is too.",
+         "as": "দিশ একে ৰাখা: প্ৰথম শব্দ কৰ্মী হ'লে তৃতীয়টোও কৰ্মী।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs4.t.q4",
+    "type": "solve",
+    "skill": "r-relnum",
+    "q": {
+     "en": "5 : 25 :: 12 : ?",
+     "as": "5 : 25 :: 12 : ?"
+    },
+    "answer": "144",
+    "why": {
+     "en": "The second number is the square of the first.",
+     "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "5 : 25 :: 12 : ?",
+       "as": "5 : 25 :: 12 : ?"
+      },
+      "answer": "144",
+      "why": {
+       "en": "The second number is the square of the first.",
+       "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+      }
+     },
+     {
+      "q": {
+       "en": "9 : 81 :: 13 : ?",
+       "as": "9 : 81 :: 13 : ?"
+      },
+      "answer": "169",
+      "why": {
+       "en": "The second number is the square of the first.",
+       "as": "দ্বিতীয় সংখ্যাটো প্ৰথমটোৰ বৰ্গ।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs4.t.q5",
+    "type": "solve",
+    "skill": "r-relnum",
+    "q": {
+     "en": "3 : 13 :: 6 : ?",
+     "as": "3 : 13 :: 6 : ?"
+    },
+    "answer": "25",
+    "hints": [
+     {
+      "en": "Try multiplying by 4.",
+      "as": "4 ৰে পূৰণ কৰি চোৱা।"
+     }
+    ],
+    "why": {
+     "en": "The rule is × 4, then +1.",
+     "as": "নিয়ম × 4, তাৰ পিছত +1।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "3 : 13 :: 6 : ?",
+       "as": "3 : 13 :: 6 : ?"
+      },
+      "answer": "25",
+      "hints": [
+       {
+        "en": "Try multiplying by 4.",
+        "as": "4 ৰে পূৰণ কৰি চোৱা।"
+       }
+      ],
+      "why": {
+       "en": "The rule is × 4, then +1.",
+       "as": "নিয়ম × 4, তাৰ পিছত +1।"
+      }
+     },
+     {
+      "q": {
+       "en": "8 : 13 :: 5 : ?",
+       "as": "8 : 13 :: 5 : ?"
+      },
+      "answer": "7",
+      "hints": [
+       {
+        "en": "Try multiplying by 2.",
+        "as": "2 ৰে পূৰণ কৰি চোৱা।"
+       }
+      ],
+      "why": {
+       "en": "The rule is × 2, then -3.",
+       "as": "নিয়ম × 2, তাৰ পিছত -3।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs4.t.q6",
+    "type": "tf",
+    "skill": "r-reltype",
+    "s": {
+     "en": "Rich : Poor is a pair of opposites.",
+     "as": "ধনী : দুখীয়া বিপৰীত যোৰ।"
+    },
+    "answer": true,
+    "why": {
+     "en": "They are opposite in meaning.",
+     "as": "অৰ্থ ওলোটা।"
+    }
+   }
+  ]
+ }
+}

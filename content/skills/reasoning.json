@@ -1,0 +1,8082 @@
+{
+ "topics": [
+  {
+   "id": "alphabet",
+   "t": {
+    "en": "Alphabet tools",
+    "as": "বৰ্ণমালাৰ কৌশল"
+   }
+  },
+  {
+   "id": "number-series",
+   "t": {
+    "en": "Number series",
+    "as": "সংখ্যা শৃংখল"
+   }
+  },
+  {
+   "id": "letter-series",
+   "t": {
+    "en": "Letter series",
+    "as": "আখৰ শৃংখল"
+   }
+  },
+  {
+   "id": "analogy",
+   "t": {
+    "en": "Analogy",
+    "as": "সাদৃশ্য"
+   }
+  },
+  {
+   "id": "odd-one-out",
+   "t": {
+    "en": "Odd one out",
+    "as": "বেলেগটো উলিওৱা"
+   }
+  },
+  {
+   "id": "coding",
+   "t": {
+    "en": "Coding and decoding",
+    "as": "সংকেত আৰু সংকেত ভঙা"
+   }
+  },
+  {
+   "id": "operators",
+   "t": {
+    "en": "Symbols and operators",
+    "as": "চিহ্ন আৰু প্ৰক্ৰিয়া"
+   }
+  },
+  {
+   "id": "number-puzzles",
+   "t": {
+    "en": "Number puzzles",
+    "as": "সংখ্যাৰ সাঁথৰ"
+   }
+  },
+  {
+   "id": "direction",
+   "t": {
+    "en": "Direction sense",
+    "as": "দিশ জ্ঞান"
+   }
+  },
+  {
+   "id": "blood-relations",
+   "t": {
+    "en": "Blood relations",
+    "as": "তেজৰ সম্পৰ্ক"
+   }
+  },
+  {
+   "id": "ranking",
+   "t": {
+    "en": "Ranking and order",
+    "as": "স্থান আৰু ক্ৰম"
+   }
+  },
+  {
+   "id": "arrangement",
+   "t": {
+    "en": "Arrangements",
+    "as": "সজ্জা"
+   }
+  },
+  {
+   "id": "calendar-clock",
+   "t": {
+    "en": "Calendar and clocks",
+    "as": "কেলেণ্ডাৰ আৰু ঘড়ী"
+   }
+  },
+  {
+   "id": "venn",
+   "t": {
+    "en": "Venn diagrams",
+    "as": "ভেন চিত্ৰ"
+   }
+  },
+  {
+   "id": "syllogism",
+   "t": {
+    "en": "Syllogisms",
+    "as": "ন্যায়"
+   }
+  },
+  {
+   "id": "statements",
+   "t": {
+    "en": "Statements and conclusions",
+    "as": "উক্তি আৰু সিদ্ধান্ত"
+   }
+  },
+  {
+   "id": "figure-patterns",
+   "t": {
+    "en": "Figure patterns",
+    "as": "চিত্ৰৰ আৰ্হি"
+   }
+  },
+  {
+   "id": "mirror-fold",
+   "t": {
+    "en": "Mirrors and folding",
+    "as": "দাপোণ আৰু ভাঁজ"
+   }
+  },
+  {
+   "id": "cube-count",
+   "t": {
+    "en": "Cubes and counting",
+    "as": "ঘনক আৰু গণনা"
+   }
+  },
+  {
+   "id": "number-figures",
+   "t": {
+    "en": "Numbers in figures",
+    "as": "চিত্ৰত সংখ্যা"
+   }
+  },
+  {
+   "id": "data",
+   "t": {
+    "en": "Tables and charts",
+    "as": "তালিকা আৰু লেখ"
+   }
+  },
+  {
+   "id": "communication",
+   "t": {
+    "en": "Communication",
+    "as": "যোগাযোগ"
+   }
+  },
+  {
+   "id": "decisions",
+   "t": {
+    "en": "Decision making",
+    "as": "সিদ্ধান্ত গ্ৰহণ"
+   }
+  }
+ ],
+ "skills": [
+  {
+   "id": "r-shift",
+   "topic": "coding",
+   "t": {
+    "en": "Move letters by a rule",
+    "as": "নিয়মেৰে আখৰ সৰোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u1.q1"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u1.q2"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u1.q3"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u1.q4"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u1.q5"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u2.q3"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-decode",
+   "topic": "coding",
+   "t": {
+    "en": "Undo a code",
+    "as": "সংকেত উভতোৱা"
+   },
+   "pre": [
+    "r-shift"
+   ],
+   "steps": [
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u2.q1"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u2.q2"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u2.q4"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u2.q5"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-pattern",
+   "topic": "coding",
+   "t": {
+    "en": "Find changing gaps",
+    "as": "সলনি হোৱা ব্যৱধান"
+   },
+   "pre": [
+    "r-shift"
+   ],
+   "steps": [
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u3.q1"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u3.q2"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u3.q3"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u3.q4"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u3.q5"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-move",
+   "topic": "coding",
+   "t": {
+    "en": "Rearrange letters",
+    "as": "আখৰ পুনৰ সজোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u4.q1"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u4.q2"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u4.q3"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u4.q4"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u4.q5"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-value",
+   "topic": "coding",
+   "t": {
+    "en": "Letters as numbers",
+    "as": "আখৰ সংখ্যা ৰূপে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u5.q1"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u5.q2"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u5.q3"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u5.q4"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u5.q5"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u5.q6"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-compare",
+   "topic": "coding",
+   "t": {
+    "en": "Compare coded sentences",
+    "as": "সংকেতৰ বাক্য তুলনা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u6.q1"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u6.q2"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u6.q3"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u6.q4"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.u6.q5"
+    },
+    {
+     "l": "rs-06-coding",
+     "id": "rs6.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-turn",
+   "topic": "direction",
+   "t": {
+    "en": "Left and right when turning",
+    "as": "ঘূৰোঁতে বাওঁ-সোঁ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u1.q1"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u1.q2"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u1.q3"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u1.q4"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u1.q5"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.t.q1"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-route",
+   "topic": "direction",
+   "t": {
+    "en": "Follow a route",
+    "as": "পথ অনুসৰণ"
+   },
+   "pre": [
+    "r-turn"
+   ],
+   "steps": [
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u2.q1"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u2.q2"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u2.q3"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u2.q4"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u2.q5"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-dist",
+   "topic": "direction",
+   "t": {
+    "en": "Straight distance",
+    "as": "পোন দূৰত্ব"
+   },
+   "pre": [
+    "r-route"
+   ],
+   "steps": [
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u3.q1"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u3.q2"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u3.q3"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u3.q4"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u3.q5"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.t.q3"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-shadow",
+   "topic": "direction",
+   "t": {
+    "en": "Sun and shadow",
+    "as": "সূৰ্য আৰু ছাঁ"
+   },
+   "pre": [
+    "r-turn"
+   ],
+   "steps": [
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u4.q1"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u4.q2"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u4.q3"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u4.q4"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.u4.q5"
+    },
+    {
+     "l": "rs-09-direction",
+     "id": "rs9.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-region",
+   "topic": "venn",
+   "t": {
+    "en": "Name a region",
+    "as": "অংশ চিনাক্তি"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u1.q1"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u1.q2"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u1.q3"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u1.q4"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u1.q5"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-relate",
+   "topic": "venn",
+   "t": {
+    "en": "Choose the diagram",
+    "as": "চিত্ৰ বাছনি"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u2.q1"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u2.q2"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u2.q3"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u2.q4"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u2.q5"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-count",
+   "topic": "venn",
+   "t": {
+    "en": "Count with overlaps",
+    "as": "সাধাৰণ অংশসহ গণনা"
+   },
+   "pre": [
+    "r-region"
+   ],
+   "steps": [
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u3.q1"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u3.q2"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u3.q3"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u3.q4"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u3.q5"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.t.q1"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-three",
+   "topic": "venn",
+   "t": {
+    "en": "Three sets",
+    "as": "তিনিটা সংহতি"
+   },
+   "pre": [
+    "r-count"
+   ],
+   "steps": [
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u4.q1"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u4.q2"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u4.q3"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u4.q4"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u4.q5"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.u4.q6"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.t.q5"
+    },
+    {
+     "l": "rs-14-venn",
+     "id": "rs14.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-sadd",
+   "topic": "number-series",
+   "t": {
+    "en": "Add-a-gap series",
+    "as": "ব্যৱধান যোগৰ শৃংখল"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-stwo",
+   "topic": "number-series",
+   "t": {
+    "en": "Gaps of gaps",
+    "as": "ব্যৱধানৰ ব্যৱধান"
+   },
+   "pre": [
+    "r-sadd"
+   ],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-smult",
+   "topic": "number-series",
+   "t": {
+    "en": "Multiplying series",
+    "as": "গুণনৰ শৃংখল"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-smix",
+   "topic": "number-series",
+   "t": {
+    "en": "Two series woven together",
+    "as": "দুটা শৃংখলৰ বুনন"
+   },
+   "pre": [
+    "r-sadd"
+   ],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-swrong",
+   "topic": "number-series",
+   "t": {
+    "en": "Find the wrong term",
+    "as": "ভুল পদ বিচৰা"
+   },
+   "pre": [
+    "r-sadd"
+   ],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-sspecial",
+   "topic": "number-series",
+   "t": {
+    "en": "Squares, cubes and primes",
+    "as": "বৰ্গ, ঘন আৰু মৌলিক"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-lgap",
+   "topic": "letter-series",
+   "t": {
+    "en": "Letter gaps",
+    "as": "আখৰৰ ব্যৱধান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-lmix",
+   "topic": "letter-series",
+   "t": {
+    "en": "Woven letter series",
+    "as": "বোৱা আখৰ শৃংখল"
+   },
+   "pre": [
+    "r-lgap"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-lgroup",
+   "topic": "letter-series",
+   "t": {
+    "en": "Letter groups",
+    "as": "আখৰৰ গোট"
+   },
+   "pre": [
+    "r-lgap"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-lfill",
+   "topic": "letter-series",
+   "t": {
+    "en": "Fill the blanks",
+    "as": "খালী ঠাই পূৰণ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-lnum",
+   "topic": "letter-series",
+   "t": {
+    "en": "Letters with numbers",
+    "as": "আখৰ আৰু সংখ্যা"
+   },
+   "pre": [
+    "r-lgap"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-lodd",
+   "topic": "letter-series",
+   "t": {
+    "en": "The group that breaks the rule",
+    "as": "নিয়ম ভঙা গোট"
+   },
+   "pre": [
+    "r-lgroup"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-relname",
+   "topic": "analogy",
+   "t": {
+    "en": "Name the relation",
+    "as": "সম্পৰ্কৰ নাম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u1.q1"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u1.q2"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u1.q3"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u1.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u1.q5"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-relpair",
+   "topic": "analogy",
+   "t": {
+    "en": "Word pairs",
+    "as": "শব্দ যোৰ"
+   },
+   "pre": [
+    "r-relname"
+   ],
+   "steps": [
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u2.q1"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u2.q2"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u2.q3"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u2.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u2.q5"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-reltype",
+   "topic": "analogy",
+   "t": {
+    "en": "Kinds of relation",
+    "as": "সম্পৰ্কৰ ধৰণ"
+   },
+   "pre": [
+    "r-relname"
+   ],
+   "steps": [
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u3.q1"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u3.q2"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u3.q3"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u3.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u3.q5"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-relletter",
+   "topic": "analogy",
+   "t": {
+    "en": "Letter analogies",
+    "as": "আখৰৰ সাদৃশ্য"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u4.q1"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u4.q2"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u4.q3"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u4.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u4.q5"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-relnum",
+   "topic": "analogy",
+   "t": {
+    "en": "Number analogies",
+    "as": "সংখ্যাৰ সাদৃশ্য"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u5.q1"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u5.q2"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u5.q3"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u5.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u5.q5"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.t.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-relassoc",
+   "topic": "analogy",
+   "t": {
+    "en": "What goes with what",
+    "as": "কিহৰ লগত কি"
+   },
+   "pre": [
+    "r-relname"
+   ],
+   "steps": [
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u6.q1"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u6.q2"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u6.q3"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u6.q4"
+    },
+    {
+     "l": "rs-04-analogy",
+     "id": "rs4.u6.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-oddgroup",
+   "topic": "odd-one-out",
+   "t": {
+    "en": "Find the group",
+    "as": "গোট বিচৰা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u1.q1"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u1.q2"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u1.q3"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u1.q4"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u1.q5"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-oddprop",
+   "topic": "odd-one-out",
+   "t": {
+    "en": "Find the deeper property",
+    "as": "গভীৰ গুণ বিচৰা"
+   },
+   "pre": [
+    "r-oddgroup"
+   ],
+   "steps": [
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u2.q1"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u2.q2"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u2.q3"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u2.q4"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u2.q5"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-oddnum",
+   "topic": "odd-one-out",
+   "t": {
+    "en": "Odd number out",
+    "as": "বেলেগ সংখ্যা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u3.q1"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u3.q2"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u3.q3"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u3.q4"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u3.q5"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-oddletter",
+   "topic": "odd-one-out",
+   "t": {
+    "en": "Odd letters out",
+    "as": "বেলেগ আখৰ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u4.q1"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u4.q2"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u4.q3"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u4.q4"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u4.q5"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-oddpair",
+   "topic": "odd-one-out",
+   "t": {
+    "en": "Odd pair out",
+    "as": "বেলেগ যোৰ"
+   },
+   "pre": [
+    "r-oddgroup"
+   ],
+   "steps": [
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u5.q1"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u5.q2"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u5.q3"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u5.q4"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u5.q5"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-oddskim",
+   "topic": "odd-one-out",
+   "t": {
+    "en": "Check every option",
+    "as": "সকলো বিকল্প চোৱা"
+   },
+   "pre": [
+    "r-oddgroup"
+   ],
+   "steps": [
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u6.q1"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u6.q2"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u6.q3"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u6.q4"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.u6.q5"
+    },
+    {
+     "l": "rs-05-odd-one-out",
+     "id": "rs5.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-opswap",
+   "topic": "operators",
+   "t": {
+    "en": "Replace symbols",
+    "as": "চিহ্ন সলনি"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u1.q1"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u1.q2"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u1.q3"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u1.q4"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u1.q5"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.t.q1"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.t.q2"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-opinter",
+   "topic": "operators",
+   "t": {
+    "en": "Interchange signs",
+    "as": "চিহ্ন অদল-বদল"
+   },
+   "pre": [
+    "r-opswap"
+   ],
+   "steps": [
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u2.q1"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u2.q2"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u2.q3"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u2.q4"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u2.q5"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-opbal",
+   "topic": "operators",
+   "t": {
+    "en": "Balance an equation",
+    "as": "সমীকৰণ মিলোৱা"
+   },
+   "pre": [
+    "r-opswap"
+   ],
+   "steps": [
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u3.q1"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u3.q2"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u3.q3"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u3.q4"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u3.q5"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-opmach",
+   "topic": "operators",
+   "t": {
+    "en": "Follow the steps",
+    "as": "খোজ অনুসৰণ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u4.q1"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u4.q2"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u4.q3"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u4.q4"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.u4.q5"
+    },
+    {
+     "l": "rs-07-operators",
+     "id": "rs7.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-dscan",
+   "topic": "number-puzzles",
+   "t": {
+    "en": "Scan with a condition",
+    "as": "চৰ্তৰে চকু ফুৰোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u1.q1"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u1.q2"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u1.q3"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u1.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u1.q5"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-dpairs",
+   "topic": "number-puzzles",
+   "t": {
+    "en": "Count neighbour pairs",
+    "as": "কাষৰ যোৰ গণনা"
+   },
+   "pre": [
+    "r-dscan"
+   ],
+   "steps": [
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u2.q1"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u2.q2"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u2.q3"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u2.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u2.q5"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-dsort",
+   "topic": "number-puzzles",
+   "t": {
+    "en": "Sort digits and numbers",
+    "as": "অংক আৰু সংখ্যা সজোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u3.q1"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u3.q2"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u3.q3"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u3.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u3.q5"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-dbuild",
+   "topic": "number-puzzles",
+   "t": {
+    "en": "Build numbers from digits",
+    "as": "অংকৰে সংখ্যা বনোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u4.q1"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u4.q2"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u4.q3"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u4.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u4.q5"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u4.q6"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.t.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-dmiddle",
+   "topic": "number-puzzles",
+   "t": {
+    "en": "Positions in a line",
+    "as": "শাৰীত স্থান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u5.q1"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u5.q2"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u5.q3"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u5.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u5.q6"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u5.q5"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-dcheck",
+   "topic": "number-puzzles",
+   "t": {
+    "en": "Test the options",
+    "as": "বিকল্প পৰীক্ষা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u6.q1"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u6.q2"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u6.q3"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u6.q4"
+    },
+    {
+     "l": "rs-08-number-puzzles",
+     "id": "rs8.u6.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-bgen",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Generations",
+    "as": "প্ৰজন্ম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u1.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-bname",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Name the relation",
+    "as": "সম্পৰ্কৰ নাম"
+   },
+   "pre": [
+    "r-bgen"
+   ],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u2.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-bgender",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Stated gender only",
+    "as": "কোৱা লিংগহে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u3.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-bcode",
+   "topic": "blood-relations",
+   "t": {
+    "en": "Coded relations",
+    "as": "সংকেতৰ সম্পৰ্ক"
+   },
+   "pre": [
+    "r-bname"
+   ],
+   "steps": [
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q1"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q2"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q3"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q4"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.u4.q5"
+    },
+    {
+     "l": "rs-10-blood-relations",
+     "id": "rs10.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-rank",
+   "topic": "ranking",
+   "t": {
+    "en": "Ranks from both ends",
+    "as": "দুই মূৰৰ স্থান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u1.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-rtotal",
+   "topic": "ranking",
+   "t": {
+    "en": "Find the total",
+    "as": "মুঠ উলিওৱা"
+   },
+   "pre": [
+    "r-rank"
+   ],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u2.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-rswap",
+   "topic": "ranking",
+   "t": {
+    "en": "Ranks after a swap",
+    "as": "সলনিৰ পিছৰ স্থান"
+   },
+   "pre": [
+    "r-rank"
+   ],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u3.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-rtime",
+   "topic": "ranking",
+   "t": {
+    "en": "Order by time",
+    "as": "সময়ৰ ক্ৰম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q1"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q2"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q3"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q4"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.u4.q5"
+    },
+    {
+     "l": "rs-11-ranking",
+     "id": "rs11.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-aline",
+   "topic": "arrangement",
+   "t": {
+    "en": "Sitting in a row",
+    "as": "শাৰীত বহা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u2.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-around",
+   "topic": "arrangement",
+   "t": {
+    "en": "Sitting in a circle",
+    "as": "বৃত্তত বহা"
+   },
+   "pre": [
+    "r-aline"
+   ],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u3.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-amatch",
+   "topic": "arrangement",
+   "t": {
+    "en": "Match people to things",
+    "as": "ব্যক্তি আৰু বস্তু মিলোৱা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u4.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-afixed",
+   "topic": "arrangement",
+   "t": {
+    "en": "Fixed facts first",
+    "as": "নিশ্চিত তথ্য আগতে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q2"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q3"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q4"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.u1.q5"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q1"
+    },
+    {
+     "l": "rs-12-arrangement",
+     "id": "rs12.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-codd",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "Odd days",
+    "as": "অতিৰিক্ত দিন"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u1.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-cdate",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "Dates across years",
+    "as": "বছৰৰ মাজৰ তাৰিখ"
+   },
+   "pre": [
+    "r-codd"
+   ],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u2.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-cangle",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "Clock angles",
+    "as": "ঘড়ীৰ কোণ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u3.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-cmeet",
+   "topic": "calendar-clock",
+   "t": {
+    "en": "When hands meet",
+    "as": "কাঁটা লগ লগা সময়"
+   },
+   "pre": [
+    "r-cangle"
+   ],
+   "steps": [
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q1"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q2"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q3"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q4"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.u4.q5"
+    },
+    {
+     "l": "rs-13-calendar-clock",
+     "id": "rs13.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-syall",
+   "topic": "syllogism",
+   "t": {
+    "en": "All and no",
+    "as": "সকলো আৰু কোনো নহয়"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u1.q1"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u1.q2"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u1.q3"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u1.q4"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u1.q5"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.t.q1"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-sysome",
+   "topic": "syllogism",
+   "t": {
+    "en": "Reading 'some'",
+    "as": "'কিছুমান' পঢ়া"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u2.q1"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u2.q2"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u2.q3"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u2.q4"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u2.q5"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-symust",
+   "topic": "syllogism",
+   "t": {
+    "en": "Must, not could",
+    "as": "লাগিবই, হ'ব পাৰে নহয়"
+   },
+   "pre": [
+    "r-syall",
+    "r-sysome"
+   ],
+   "steps": [
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u3.q1"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u3.q2"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u3.q3"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u3.q4"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.u3.q5"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.t.q4"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.t.q5"
+    },
+    {
+     "l": "rs-15-syllogism",
+     "id": "rs15.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-stfollow",
+   "topic": "statements",
+   "t": {
+    "en": "Does it follow?",
+    "as": "ই ওলায় নেকি?"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u1.q1"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u1.q2"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u1.q3"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u1.q4"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u1.q5"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.t.q1"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-stassume",
+   "topic": "statements",
+   "t": {
+    "en": "Hidden assumptions",
+    "as": "লুকাই থকা ধাৰণা"
+   },
+   "pre": [
+    "r-stfollow"
+   ],
+   "steps": [
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u2.q1"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u2.q2"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u2.q3"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u2.q4"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u2.q5"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-stcause",
+   "topic": "statements",
+   "t": {
+    "en": "Cause and effect",
+    "as": "কাৰণ আৰু ফল"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u3.q1"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u3.q2"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u3.q3"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u3.q4"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u3.q5"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-sttruth",
+   "topic": "statements",
+   "t": {
+    "en": "Truth and lies",
+    "as": "সত্য আৰু মিছা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u4.q1"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u4.q2"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u4.q3"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u4.q4"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.u4.q5"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.t.q5"
+    },
+    {
+     "l": "rs-16-statements",
+     "id": "rs16.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-fseries",
+   "topic": "figure-patterns",
+   "t": {
+    "en": "Figure series",
+    "as": "চিত্ৰ শৃংখল"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u1.q1"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u1.q2"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u1.q3"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u1.q4"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u1.q5"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.t.q1"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-frot",
+   "topic": "figure-patterns",
+   "t": {
+    "en": "Rotation",
+    "as": "ঘূৰণি"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u2.q1"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u2.q2"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u2.q3"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u2.q4"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u2.q5"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.t.q2"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-fodd",
+   "topic": "figure-patterns",
+   "t": {
+    "en": "Odd figure out",
+    "as": "বেলেগ চিত্ৰ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u3.q1"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u3.q2"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u3.q3"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u3.q4"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u3.q5"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-fcomp",
+   "topic": "figure-patterns",
+   "t": {
+    "en": "Complete the figure",
+    "as": "চিত্ৰ সম্পূৰ্ণ"
+   },
+   "pre": [
+    "r-frot"
+   ],
+   "steps": [
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u4.q1"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u4.q2"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u4.q3"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u4.q4"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.u4.q5"
+    },
+    {
+     "l": "rs-17-figure-patterns",
+     "id": "rs17.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-fmirror",
+   "topic": "mirror-fold",
+   "t": {
+    "en": "Mirror images",
+    "as": "দাপোণৰ প্ৰতিবিম্ব"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u1.q1"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u1.q2"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u1.q3"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u1.q4"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u1.q5"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.t.q1"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-fwater",
+   "topic": "mirror-fold",
+   "t": {
+    "en": "Water images",
+    "as": "পানীৰ প্ৰতিবিম্ব"
+   },
+   "pre": [
+    "r-fmirror"
+   ],
+   "steps": [
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u2.q1"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u2.q2"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u2.q3"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u2.q4"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u2.q5"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-ffold",
+   "topic": "mirror-fold",
+   "t": {
+    "en": "Paper folding",
+    "as": "কাগজ ভাঁজ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u3.q1"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u3.q2"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u3.q3"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u3.q4"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u3.q5"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.t.q3"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-fcut",
+   "topic": "mirror-fold",
+   "t": {
+    "en": "Punched paper",
+    "as": "ফুটা কৰা কাগজ"
+   },
+   "pre": [
+    "r-ffold"
+   ],
+   "steps": [
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u4.q1"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u4.q2"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u4.q3"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u4.q4"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.u4.q5"
+    },
+    {
+     "l": "rs-18-mirror-fold",
+     "id": "rs18.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-fdie",
+   "topic": "cube-count",
+   "t": {
+    "en": "Opposite faces",
+    "as": "বিপৰীত পৃষ্ঠ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u1.q1"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u1.q2"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u1.q3"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u1.q4"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u1.q5"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.t.q2"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-fnet",
+   "topic": "cube-count",
+   "t": {
+    "en": "Cube nets",
+    "as": "ঘনকৰ জাল"
+   },
+   "pre": [
+    "r-fdie"
+   ],
+   "steps": [
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u2.q1"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u2.q2"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u2.q3"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u2.q4"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u2.q5"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-fcount",
+   "topic": "cube-count",
+   "t": {
+    "en": "Count figures",
+    "as": "চিত্ৰ গণনা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u3.q1"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u3.q2"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u3.q3"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u3.q4"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u3.q5"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-fcubes",
+   "topic": "cube-count",
+   "t": {
+    "en": "Count cubes",
+    "as": "ঘনক গণনা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u4.q1"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u4.q2"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u4.q3"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u4.q4"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.u4.q5"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.t.q4"
+    },
+    {
+     "l": "rs-19-cube-count",
+     "id": "rs19.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-nrow",
+   "topic": "number-figures",
+   "t": {
+    "en": "Row rules",
+    "as": "শাৰীৰ নিয়ম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u1.q1"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u1.q2"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u1.q3"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u1.q4"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u1.q6"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u1.q5"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.t.q1"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.t.q2"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-ncol",
+   "topic": "number-figures",
+   "t": {
+    "en": "Column rules",
+    "as": "স্তম্ভৰ নিয়ম"
+   },
+   "pre": [
+    "r-nrow"
+   ],
+   "steps": [
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u2.q1"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u2.q2"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u2.q3"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u2.q4"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u2.q5"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-nsum",
+   "topic": "number-figures",
+   "t": {
+    "en": "Around a centre",
+    "as": "কেন্দ্ৰৰ চাৰিওফালে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u3.q1"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u3.q2"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u3.q3"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u3.q4"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u3.q5"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-nmagic",
+   "topic": "number-figures",
+   "t": {
+    "en": "Magic squares",
+    "as": "যাদুকৰী বৰ্গ"
+   },
+   "pre": [
+    "r-nrow"
+   ],
+   "steps": [
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u4.q1"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u4.q2"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u4.q3"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u4.q4"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.u4.q5"
+    },
+    {
+     "l": "rs-20-number-figures",
+     "id": "rs20.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-dtable",
+   "topic": "data",
+   "t": {
+    "en": "Read a table",
+    "as": "তালিকা পঢ়া"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u1.q1"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u1.q2"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u1.q3"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u1.q4"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u1.q5"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-dchart",
+   "topic": "data",
+   "t": {
+    "en": "Read a chart",
+    "as": "লেখ পঢ়া"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u2.q1"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u2.q2"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u2.q3"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u2.q4"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u2.q5"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-dpie",
+   "topic": "data",
+   "t": {
+    "en": "Percent shares",
+    "as": "শতাংশ ভাগ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u3.q1"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u3.q2"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u3.q3"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u3.q4"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u3.q5"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.t.q2"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-dchange",
+   "topic": "data",
+   "t": {
+    "en": "Rise and fall",
+    "as": "বৃদ্ধি আৰু হ্ৰাস"
+   },
+   "pre": [
+    "r-dtable"
+   ],
+   "steps": [
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u4.q1"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u4.q2"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u4.q3"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u4.q4"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.u4.q5"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.t.q3"
+    },
+    {
+     "l": "rs-21-data",
+     "id": "rs21.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-clisten",
+   "topic": "communication",
+   "t": {
+    "en": "Active listening",
+    "as": "সক্ৰিয় শ্ৰৱণ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u1.q1"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u1.q2"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u1.q3"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u1.q4"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u1.q5"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-cfeed",
+   "topic": "communication",
+   "t": {
+    "en": "Giving feedback",
+    "as": "মতামত দিয়া"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u2.q1"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u2.q2"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u2.q3"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u2.q4"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u2.q5"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-cbody",
+   "topic": "communication",
+   "t": {
+    "en": "Non-verbal signals",
+    "as": "অশাব্দিক সংকেত"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u3.q1"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u3.q2"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u3.q3"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u3.q4"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u3.q5"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-cclear",
+   "topic": "communication",
+   "t": {
+    "en": "Clear messages",
+    "as": "স্পষ্ট বাৰ্তা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u4.q1"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u4.q2"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u4.q3"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u4.q4"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u4.q5"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-cempathy",
+   "topic": "communication",
+   "t": {
+    "en": "Empathy",
+    "as": "সমবেদনা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u5.q1"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u5.q2"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u5.q3"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u5.q4"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u5.q5"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-cbarrier",
+   "topic": "communication",
+   "t": {
+    "en": "Barriers",
+    "as": "বাধা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u6.q1"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u6.q2"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u6.q3"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u6.q4"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.u6.q5"
+    },
+    {
+     "l": "rs-22-communication",
+     "id": "rs22.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-dduty",
+   "topic": "decisions",
+   "t": {
+    "en": "Rules and duty",
+    "as": "নিয়ম আৰু কৰ্তব্য"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u1.q1"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u1.q2"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u1.q3"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u1.q4"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u1.q5"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-dsafe",
+   "topic": "decisions",
+   "t": {
+    "en": "Safety first",
+    "as": "সুৰক্ষা আগতে"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u2.q1"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u2.q2"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u2.q3"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u2.q4"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u2.q5"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-dfair",
+   "topic": "decisions",
+   "t": {
+    "en": "Fairness",
+    "as": "ন্যায্যতা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u3.q1"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u3.q2"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u3.q3"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u3.q4"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u3.q5"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-dhonest",
+   "topic": "decisions",
+   "t": {
+    "en": "Integrity",
+    "as": "সততা"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u4.q1"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u4.q2"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u4.q3"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u4.q4"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u4.q5"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-dteam",
+   "topic": "decisions",
+   "t": {
+    "en": "Teamwork",
+    "as": "দলীয় কাম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u5.q1"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u5.q2"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u5.q3"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u5.q4"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u5.q5"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-dcrisis",
+   "topic": "decisions",
+   "t": {
+    "en": "Crisis steps",
+    "as": "সংকটৰ খোজ"
+   },
+   "pre": [
+    "r-dsafe"
+   ],
+   "steps": [
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u6.q1"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u6.q2"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u6.q3"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u6.q4"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.u6.q5"
+    },
+    {
+     "l": "rs-23-decisions",
+     "id": "rs23.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-pos",
+   "topic": "alphabet",
+   "t": {
+    "en": "Letter positions",
+    "as": "আখৰৰ স্থান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-opp",
+   "topic": "alphabet",
+   "t": {
+    "en": "Opposite letters",
+    "as": "বিপৰীত আখৰ"
+   },
+   "pre": [
+    "r-pos"
+   ],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-lcount",
+   "topic": "alphabet",
+   "t": {
+    "en": "Count within the alphabet",
+    "as": "বৰ্ণমালাত গণনা"
+   },
+   "pre": [
+    "r-pos"
+   ],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-dict",
+   "topic": "alphabet",
+   "t": {
+    "en": "Dictionary order",
+    "as": "অভিধানৰ ক্ৰম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q6"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-logorder",
+   "topic": "alphabet",
+   "t": {
+    "en": "Logical order of words",
+    "as": "শব্দৰ যুক্তিসংগত ক্ৰম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-wordform",
+   "topic": "alphabet",
+   "t": {
+    "en": "Words from letters",
+    "as": "আখৰৰ পৰা শব্দ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q5"
+    }
+   ]
+  }
+ ],
+ "misconceptions": {
+  "r-m-shiftback": {
+   "skill": "r-shift",
+   "t": {
+    "en": "Counting backwards on a + rule",
+    "as": "+ নিয়মত পিছলৈ গণা"
+   }
+  },
+  "r-m-encode": {
+   "skill": "r-decode",
+   "t": {
+    "en": "Applying the rule again when decoding",
+    "as": "সংকেত ভাঙোঁতে নিয়ম আকৌ দিয়া"
+   }
+  },
+  "r-m-oneshift": {
+   "skill": "r-pattern",
+   "t": {
+    "en": "Using one shift for every letter",
+    "as": "সকলো আখৰত একেটা স্থানান্তৰ"
+   }
+  },
+  "r-m-order": {
+   "skill": "r-move",
+   "t": {
+    "en": "Reversing instead of the stated move",
+    "as": "কোৱা নিয়মৰ সলনি ওলোটোৱা"
+   }
+  },
+  "r-m-position": {
+   "skill": "r-value",
+   "t": {
+    "en": "Counting from the wrong end",
+    "as": "ভুল মূৰৰ পৰা গণা"
+   }
+  },
+  "r-m-wordorder": {
+   "skill": "r-compare",
+   "t": {
+    "en": "Trusting the word order",
+    "as": "শব্দৰ ক্ৰমক বিশ্বাস কৰা"
+   }
+  },
+  "r-m-leftwest": {
+   "skill": "r-turn",
+   "t": {
+    "en": "Treating left as west",
+    "as": "বাওঁফালক পশ্চিম ধৰা"
+   }
+  },
+  "r-m-addlegs": {
+   "skill": "r-dist",
+   "t": {
+    "en": "Adding walks instead of the straight line",
+    "as": "পোন দূৰত্বৰ সলনি খোজ যোগ কৰা"
+   }
+  },
+  "r-m-shadow": {
+   "skill": "r-shadow",
+   "t": {
+    "en": "Putting the shadow on the sun's side",
+    "as": "ছাঁ সূৰ্যৰ ফালে ধৰা"
+   }
+  },
+  "r-m-only": {
+   "skill": "r-region",
+   "t": {
+    "en": "Reading 'only' as the whole circle",
+    "as": "'কেৱল'ক গোটেই বৃত্ত বুলি পঢ়া"
+   }
+  },
+  "r-m-double": {
+   "skill": "r-count",
+   "t": {
+    "en": "Counting the overlap twice",
+    "as": "সাধাৰণ অংশ দুবাৰ গণা"
+   }
+  },
+  "r-m-inside": {
+   "skill": "r-relate",
+   "t": {
+    "en": "Choosing the wrong relation between sets",
+    "as": "সংহতিৰ ভুল সম্পৰ্ক বাছনি"
+   }
+  },
+  "r-m-firstgap": {
+   "skill": "r-stwo",
+   "t": {
+    "en": "Stopping at the first gaps",
+    "as": "প্ৰথম ব্যৱধানতে ৰোৱা"
+   }
+  },
+  "r-m-addmult": {
+   "skill": "r-smult",
+   "t": {
+    "en": "Adding when the rule multiplies",
+    "as": "গুণনৰ ঠাইত যোগ"
+   }
+  },
+  "r-m-oneline": {
+   "skill": "r-smix",
+   "t": {
+    "en": "Reading two series as one",
+    "as": "দুটা শৃংখলক এটা পঢ়া"
+   }
+  },
+  "r-m-lettergap": {
+   "skill": "r-lgap",
+   "t": {
+    "en": "Miscounting letter gaps",
+    "as": "আখৰৰ ব্যৱধান ভুল গণা"
+   }
+  },
+  "r-m-topic": {
+   "skill": "r-relname",
+   "t": {
+    "en": "Matching the topic, not the relation",
+    "as": "সম্পৰ্কৰ সলনি বিষয় মিলোৱা"
+   }
+  },
+  "r-m-reverse": {
+   "skill": "r-relpair",
+   "t": {
+    "en": "Reversing the relation",
+    "as": "সম্পৰ্ক ওলোটোৱা"
+   }
+  },
+  "r-m-surface": {
+   "skill": "r-oddgroup",
+   "t": {
+    "en": "Picking a surface difference",
+    "as": "ওপৰুৱা পাৰ্থক্য বাছনি"
+   }
+  },
+  "r-m-leftright": {
+   "skill": "r-opswap",
+   "t": {
+    "en": "Calculating left to right",
+    "as": "বাওঁৰ পৰা সোঁলৈ গণনা"
+   }
+  },
+  "r-m-halfscan": {
+   "skill": "r-dscan",
+   "t": {
+    "en": "Missing part of a condition",
+    "as": "চৰ্তৰ অংশ এৰা"
+   }
+  },
+  "r-m-placeval": {
+   "skill": "r-dbuild",
+   "t": {
+    "en": "Forgetting that 0 cannot lead",
+    "as": "আৰম্ভণিত 0 নহয় পাহৰা"
+   }
+  },
+  "r-m-gender": {
+   "skill": "r-bgender",
+   "t": {
+    "en": "Assuming gender from a name",
+    "as": "নামৰ পৰা লিংগ ধৰা"
+   }
+  },
+  "r-m-twice": {
+   "skill": "r-rtotal",
+   "t": {
+    "en": "Counting the person twice",
+    "as": "ব্যক্তিজনক দুবাৰ গণা"
+   }
+  },
+  "r-m-maybe": {
+   "skill": "r-afixed",
+   "t": {
+    "en": "Treating a possibility as a fact",
+    "as": "সম্ভাৱনাক তথ্য ধৰা"
+   }
+  },
+  "r-m-sidecircle": {
+   "skill": "r-around",
+   "t": {
+    "en": "Reversing left and right in a circle",
+    "as": "বৃত্তত বাওঁ-সোঁ ওলোটা"
+   }
+  },
+  "r-m-leap": {
+   "skill": "r-cdate",
+   "t": {
+    "en": "Ignoring the leap year",
+    "as": "অধিবৰ্ষ পাহৰা"
+   }
+  },
+  "r-m-hourhand": {
+   "skill": "r-cangle",
+   "t": {
+    "en": "Forgetting the hour hand moves",
+    "as": "ঘণ্টাৰ কাঁটা লৰে পাহৰা"
+   }
+  },
+  "r-m-could": {
+   "skill": "r-symust",
+   "t": {
+    "en": "Taking 'could be' for 'must be'",
+    "as": "'হ'ব পাৰে'ক 'লাগিবই' ধৰা"
+   }
+  },
+  "r-m-reverseall": {
+   "skill": "r-syall",
+   "t": {
+    "en": "Reversing 'all'",
+    "as": "'সকলো' ওলোটোৱা"
+   }
+  },
+  "r-m-outside": {
+   "skill": "r-stfollow",
+   "t": {
+    "en": "Using outside knowledge",
+    "as": "বাহিৰৰ জ্ঞান ব্যৱহাৰ"
+   }
+  },
+  "r-m-rotate": {
+   "skill": "r-fmirror",
+   "t": {
+    "en": "Rotating instead of reflecting",
+    "as": "প্ৰতিফলনৰ সলনি ঘূৰোৱা"
+   }
+  },
+  "r-m-oneunfold": {
+   "skill": "r-ffold",
+   "t": {
+    "en": "Forgetting that unfolding doubles",
+    "as": "খোলিলে দুগুণ পাহৰা"
+   }
+  },
+  "r-m-adjacent": {
+   "skill": "r-fdie",
+   "t": {
+    "en": "Treating neighbours as opposite",
+    "as": "কাষৰ পৃষ্ঠক বিপৰীত ধৰা"
+   }
+  },
+  "r-m-onerow": {
+   "skill": "r-nrow",
+   "t": {
+    "en": "A rule that fits one row only",
+    "as": "এটা শাৰীতহে মিলা নিয়ম"
+   }
+  },
+  "r-m-units": {
+   "skill": "r-dtable",
+   "t": {
+    "en": "Ignoring the unit",
+    "as": "একক পাহৰা"
+   }
+  },
+  "r-m-base": {
+   "skill": "r-dchange",
+   "t": {
+    "en": "Using the wrong base for a percent",
+    "as": "শতাংশৰ ভুল ভেটি"
+   }
+  },
+  "r-m-interrupt": {
+   "skill": "r-clisten",
+   "t": {
+    "en": "Replying before listening",
+    "as": "নুশুনি উত্তৰ দিয়া"
+   }
+  },
+  "r-m-oppsum": {
+   "skill": "r-opp",
+   "t": {
+    "en": "Forgetting opposites add to 27",
+    "as": "বিপৰীতৰ যোগফল 27 পাহৰা"
+   }
+  },
+  "r-m-sideflip": {
+   "skill": "r-lcount",
+   "t": {
+    "en": "Counting left when asked for right",
+    "as": "সোঁফালৰ সলনি বাওঁফালে গণা"
+   }
+  },
+  "r-m-firstonly": {
+   "skill": "r-dict",
+   "t": {
+    "en": "Comparing only the first letter",
+    "as": "কেৱল প্ৰথম আখৰ তুলনা"
+   }
+  }
+ },
+ "probes": [
+  {
+   "id": "bank.rs.shift",
+   "type": "mcq",
+   "skill": "r-shift",
+   "q": {
+    "en": "Move each letter of DUCK forward 2.",
+    "as": "DUCK ৰ প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা।"
+   },
+   "why": {
+    "en": "DUCK → FWEM.",
+    "as": "DUCK → FWEM।"
+   },
+   "options": [
+    {
+     "en": "BSAI",
+     "as": "BSAI"
+    },
+    {
+     "en": "HYGO",
+     "as": "HYGO"
+    },
+    {
+     "en": "GXFN",
+     "as": "GXFN"
+    },
+    {
+     "en": "FWEM",
+     "as": "FWEM"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "r-m-shiftback",
+     "why": {
+      "en": "That moved backwards.",
+      "as": "সেয়া পিছলৈ গ'ল।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Move each letter of DUCK forward 2.",
+      "as": "DUCK ৰ প্ৰতিটো আখৰ 2 ঘৰ আগবঢ়োৱা।"
+     },
+     "why": {
+      "en": "DUCK → FWEM.",
+      "as": "DUCK → FWEM।"
+     },
+     "options": [
+      {
+       "en": "BSAI",
+       "as": "BSAI"
+      },
+      {
+       "en": "HYGO",
+       "as": "HYGO"
+      },
+      {
+       "en": "GXFN",
+       "as": "GXFN"
+      },
+      {
+       "en": "FWEM",
+       "as": "FWEM"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "r-m-shiftback",
+       "why": {
+        "en": "That moved backwards.",
+        "as": "সেয়া পিছলৈ গ'ল।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Move each letter of BELL forward 3.",
+      "as": "BELL ৰ প্ৰতিটো আখৰ 3 ঘৰ আগবঢ়োৱা।"
+     },
+     "why": {
+      "en": "BELL → EHOO.",
+      "as": "BELL → EHOO।"
+     },
+     "options": [
+      {
+       "en": "EHOO",
+       "as": "EHOO"
+      },
+      {
+       "en": "YBII",
+       "as": "YBII"
+      },
+      {
+       "en": "FIPP",
+       "as": "FIPP"
+      },
+      {
+       "en": "GJQQ",
+       "as": "GJQQ"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "r-m-shiftback",
+       "why": {
+        "en": "That moved backwards.",
+        "as": "সেয়া পিছলৈ গ'ল।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.decode",
+   "type": "mcq",
+   "skill": "r-decode",
+   "q": {
+    "en": "The rule was +2 and the code is PGUV. What was the word?",
+    "as": "নিয়ম +2, সংকেত PGUV। শব্দটো কি আছিল?"
+   },
+   "why": {
+    "en": "Count back 2.",
+    "as": "2 ঘৰ পিছলৈ গণা।"
+   },
+   "options": [
+    {
+     "en": "NEST",
+     "as": "NEST"
+    },
+    {
+     "en": "RIWX",
+     "as": "RIWX"
+    },
+    {
+     "en": "QHVW",
+     "as": "QHVW"
+    },
+    {
+     "en": "OFTU",
+     "as": "OFTU"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "r-m-encode",
+     "why": {
+      "en": "That applied the rule again.",
+      "as": "সেয়া নিয়ম আকৌ দিয়া হ'ল।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "The rule was +2 and the code is PGUV. What was the word?",
+      "as": "নিয়ম +2, সংকেত PGUV। শব্দটো কি আছিল?"
+     },
+     "why": {
+      "en": "Count back 2.",
+      "as": "2 ঘৰ পিছলৈ গণা।"
+     },
+     "options": [
+      {
+       "en": "NEST",
+       "as": "NEST"
+      },
+      {
+       "en": "RIWX",
+       "as": "RIWX"
+      },
+      {
+       "en": "QHVW",
+       "as": "QHVW"
+      },
+      {
+       "en": "OFTU",
+       "as": "OFTU"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "r-m-encode",
+       "why": {
+        "en": "That applied the rule again.",
+        "as": "সেয়া নিয়ম আকৌ দিয়া হ'ল।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "The rule was +3 and the code is ZRRG. What was the word?",
+      "as": "নিয়ম +3, সংকেত ZRRG। শব্দটো কি আছিল?"
+     },
+     "why": {
+      "en": "Count back 3.",
+      "as": "3 ঘৰ পিছলৈ গণা।"
+     },
+     "options": [
+      {
+       "en": "CUUJ",
+       "as": "CUUJ"
+      },
+      {
+       "en": "XPPE",
+       "as": "XPPE"
+      },
+      {
+       "en": "WOOD",
+       "as": "WOOD"
+      },
+      {
+       "en": "ASSH",
+       "as": "ASSH"
+      }
+     ],
+     "answer": 2,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "r-m-encode",
+       "why": {
+        "en": "That applied the rule again.",
+        "as": "সেয়া নিয়ম আকৌ দিয়া হ'ল।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.value",
+   "type": "mcq",
+   "skill": "r-value",
+   "q": {
+    "en": "With Z = 1, Y = 2 and so on, what is F?",
+    "as": "Z = 1, Y = 2 এনেদৰে ধৰিলে F কিমান?"
+   },
+   "why": {
+    "en": "Use 27 minus its place.",
+    "as": "27 ৰ পৰা স্থান বিয়োগ কৰা।"
+   },
+   "options": [
+    {
+     "en": "22",
+     "as": "22"
+    },
+    {
+     "en": "21",
+     "as": "21"
+    },
+    {
+     "en": "20",
+     "as": "20"
+    },
+    {
+     "en": "6",
+     "as": "6"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "r-m-position",
+     "why": {
+      "en": "That counted from A.",
+      "as": "সেয়া A ৰ পৰা গণা হ'ল।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "With Z = 1, Y = 2 and so on, what is F?",
+      "as": "Z = 1, Y = 2 এনেদৰে ধৰিলে F কিমান?"
+     },
+     "why": {
+      "en": "Use 27 minus its place.",
+      "as": "27 ৰ পৰা স্থান বিয়োগ কৰা।"
+     },
+     "options": [
+      {
+       "en": "22",
+       "as": "22"
+      },
+      {
+       "en": "21",
+       "as": "21"
+      },
+      {
+       "en": "20",
+       "as": "20"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "r-m-position",
+       "why": {
+        "en": "That counted from A.",
+        "as": "সেয়া A ৰ পৰা গণা হ'ল।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "With Z = 1, Y = 2 and so on, what is K?",
+      "as": "Z = 1, Y = 2 এনেদৰে ধৰিলে K কিমান?"
+     },
+     "why": {
+      "en": "Use 27 minus its place.",
+      "as": "27 ৰ পৰা স্থান বিয়োগ কৰা।"
+     },
+     "options": [
+      {
+       "en": "11",
+       "as": "11"
+      },
+      {
+       "en": "15",
+       "as": "15"
+      },
+      {
+       "en": "17",
+       "as": "17"
+      },
+      {
+       "en": "16",
+       "as": "16"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "r-m-position",
+       "why": {
+        "en": "That counted from A.",
+        "as": "সেয়া A ৰ পৰা গণা হ'ল।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.turn",
+   "type": "mcq",
+   "skill": "r-turn",
+   "q": {
+    "en": "You face east. What is on your left?",
+    "as": "তুমি পূবলৈ মুখ কৰিছা। বাওঁফালে কি?"
+   },
+   "why": {
+    "en": "Left is one step anticlockwise.",
+    "as": "বাওঁফাল ঘড়ীৰ ওলোটা দিশে এক খোজ।"
+   },
+   "options": [
+    {
+     "en": "South",
+     "as": "South"
+    },
+    {
+     "en": "East",
+     "as": "East"
+    },
+    {
+     "en": "West",
+     "as": "West"
+    },
+    {
+     "en": "North",
+     "as": "North"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 2,
+     "tag": "r-m-leftwest",
+     "why": {
+      "en": "Left is west only when you face north.",
+      "as": "উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "You face east. What is on your left?",
+      "as": "তুমি পূবলৈ মুখ কৰিছা। বাওঁফালে কি?"
+     },
+     "why": {
+      "en": "Left is one step anticlockwise.",
+      "as": "বাওঁফাল ঘড়ীৰ ওলোটা দিশে এক খোজ।"
+     },
+     "options": [
+      {
+       "en": "South",
+       "as": "South"
+      },
+      {
+       "en": "East",
+       "as": "East"
+      },
+      {
+       "en": "West",
+       "as": "West"
+      },
+      {
+       "en": "North",
+       "as": "North"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "r-m-leftwest",
+       "why": {
+        "en": "Left is west only when you face north.",
+        "as": "উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "You face south. What is on your left?",
+      "as": "তুমি দক্ষিণলৈ মুখ কৰিছা। বাওঁফালে কি?"
+     },
+     "why": {
+      "en": "Left is one step anticlockwise.",
+      "as": "বাওঁফাল ঘড়ীৰ ওলোটা দিশে এক খোজ।"
+     },
+     "options": [
+      {
+       "en": "South",
+       "as": "South"
+      },
+      {
+       "en": "East",
+       "as": "East"
+      },
+      {
+       "en": "North",
+       "as": "North"
+      },
+      {
+       "en": "West",
+       "as": "West"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "r-m-leftwest",
+       "why": {
+        "en": "Left is west only when you face north.",
+        "as": "উত্তৰলৈ মুখ কৰিলেহে বাওঁফাল পশ্চিম।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.route",
+   "type": "mcq",
+   "skill": "r-route",
+   "q": {
+    "en": "Walk 3 north, right, 2, right, 3. Where do you end?",
+    "as": "উত্তৰলৈ 3, সোঁফালে, 2, সোঁফালে, 3। ক'ত শেষ?"
+   },
+   "why": {
+    "en": "North and south cancel, leaving 2 east.",
+    "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 2।"
+   },
+   "options": [
+    {
+     "en": "2 west",
+     "as": "2 west"
+    },
+    {
+     "en": "5 east",
+     "as": "5 east"
+    },
+    {
+     "en": "3 north",
+     "as": "3 north"
+    },
+    {
+     "en": "2 east",
+     "as": "2 east"
+    }
+   ],
+   "answer": 3,
+   "variants": [
+    {
+     "q": {
+      "en": "Walk 3 north, right, 2, right, 3. Where do you end?",
+      "as": "উত্তৰলৈ 3, সোঁফালে, 2, সোঁফালে, 3। ক'ত শেষ?"
+     },
+     "why": {
+      "en": "North and south cancel, leaving 2 east.",
+      "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 2।"
+     },
+     "options": [
+      {
+       "en": "2 west",
+       "as": "2 west"
+      },
+      {
+       "en": "5 east",
+       "as": "5 east"
+      },
+      {
+       "en": "3 north",
+       "as": "3 north"
+      },
+      {
+       "en": "2 east",
+       "as": "2 east"
+      }
+     ],
+     "answer": 3
+    },
+    {
+     "q": {
+      "en": "Walk 4 north, right, 5, right, 4. Where do you end?",
+      "as": "উত্তৰলৈ 4, সোঁফালে, 5, সোঁফালে, 4। ক'ত শেষ?"
+     },
+     "why": {
+      "en": "North and south cancel, leaving 5 east.",
+      "as": "উত্তৰ-দক্ষিণ কাটে, পূবে 5।"
+     },
+     "options": [
+      {
+       "en": "5 west",
+       "as": "5 west"
+      },
+      {
+       "en": "4 north",
+       "as": "4 north"
+      },
+      {
+       "en": "9 east",
+       "as": "9 east"
+      },
+      {
+       "en": "5 east",
+       "as": "5 east"
+      }
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.dist",
+   "type": "mcq",
+   "skill": "r-dist",
+   "q": {
+    "en": "Walk 3 north, then 4 east. What is the straight distance back?",
+    "as": "উত্তৰলৈ 3, তাৰ পিছত পূবলৈ 4। পোন দূৰত্ব কিমান?"
+   },
+   "why": {
+    "en": "3² + 4² = 5².",
+    "as": "3² + 4² = 5²।"
+   },
+   "options": [
+    {
+     "en": "7",
+     "as": "7"
+    },
+    {
+     "en": "5",
+     "as": "5"
+    },
+    {
+     "en": "6",
+     "as": "6"
+    },
+    {
+     "en": "4",
+     "as": "4"
+    }
+   ],
+   "answer": 1,
+   "traps": [
+    {
+     "opt": 0,
+     "tag": "r-m-addlegs",
+     "why": {
+      "en": "That added the walks.",
+      "as": "সেয়া খোজ যোগ কৰা হ'ল।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Walk 3 north, then 4 east. What is the straight distance back?",
+      "as": "উত্তৰলৈ 3, তাৰ পিছত পূবলৈ 4। পোন দূৰত্ব কিমান?"
+     },
+     "why": {
+      "en": "3² + 4² = 5².",
+      "as": "3² + 4² = 5²।"
+     },
+     "options": [
+      {
+       "en": "7",
+       "as": "7"
+      },
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "6",
+       "as": "6"
+      },
+      {
+       "en": "4",
+       "as": "4"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 0,
+       "tag": "r-m-addlegs",
+       "why": {
+        "en": "That added the walks.",
+        "as": "সেয়া খোজ যোগ কৰা হ'ল।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Walk 6 north, then 8 east. What is the straight distance back?",
+      "as": "উত্তৰলৈ 6, তাৰ পিছত পূবলৈ 8। পোন দূৰত্ব কিমান?"
+     },
+     "why": {
+      "en": "6² + 8² = 10².",
+      "as": "6² + 8² = 10²।"
+     },
+     "options": [
+      {
+       "en": "10",
+       "as": "10"
+      },
+      {
+       "en": "11",
+       "as": "11"
+      },
+      {
+       "en": "14",
+       "as": "14"
+      },
+      {
+       "en": "9",
+       "as": "9"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 2,
+       "tag": "r-m-addlegs",
+       "why": {
+        "en": "That added the walks.",
+        "as": "সেয়া খোজ যোগ কৰা হ'ল।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.region",
+   "type": "mcq",
+   "skill": "r-region",
+   "q": {
+    "en": "25 like A and 10 of them also like B. How many like A only?",
+    "as": "25 জনে A ভাল পায়, ইয়াৰে 10 জনে B ও। কেৱল A কিমান?"
+   },
+   "why": {
+    "en": "25 − 10 = 15.",
+    "as": "25 − 10 = 15।"
+   },
+   "options": [
+    {
+     "en": "35",
+     "as": "35"
+    },
+    {
+     "en": "25",
+     "as": "25"
+    },
+    {
+     "en": "10",
+     "as": "10"
+    },
+    {
+     "en": "15",
+     "as": "15"
+    }
+   ],
+   "answer": 3,
+   "traps": [
+    {
+     "opt": 1,
+     "tag": "r-m-only",
+     "why": {
+      "en": "'Only' leaves out the overlap.",
+      "as": "'কেৱল' ত সাধাৰণ অংশ নপৰে।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "25 like A and 10 of them also like B. How many like A only?",
+      "as": "25 জনে A ভাল পায়, ইয়াৰে 10 জনে B ও। কেৱল A কিমান?"
+     },
+     "why": {
+      "en": "25 − 10 = 15.",
+      "as": "25 − 10 = 15।"
+     },
+     "options": [
+      {
+       "en": "35",
+       "as": "35"
+      },
+      {
+       "en": "25",
+       "as": "25"
+      },
+      {
+       "en": "10",
+       "as": "10"
+      },
+      {
+       "en": "15",
+       "as": "15"
+      }
+     ],
+     "answer": 3,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap.",
+        "as": "'কেৱল' ত সাধাৰণ অংশ নপৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "32 like A and 14 of them also like B. How many like A only?",
+      "as": "32 জনে A ভাল পায়, ইয়াৰে 14 জনে B ও। কেৱল A কিমান?"
+     },
+     "why": {
+      "en": "32 − 14 = 18.",
+      "as": "32 − 14 = 18।"
+     },
+     "options": [
+      {
+       "en": "46",
+       "as": "46"
+      },
+      {
+       "en": "18",
+       "as": "18"
+      },
+      {
+       "en": "14",
+       "as": "14"
+      },
+      {
+       "en": "32",
+       "as": "32"
+      }
+     ],
+     "answer": 1,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap.",
+        "as": "'কেৱল' ত সাধাৰণ অংশ নপৰে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.count",
+   "type": "mcq",
+   "skill": "r-count",
+   "q": {
+    "en": "20 like A, 16 like B and 6 like both. How many like at least one?",
+    "as": "20 জনে A, 16 জনে B, 6 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা কিমান?"
+   },
+   "why": {
+    "en": "20 + 16 − 6 = 30.",
+    "as": "20 + 16 − 6 = 30।"
+   },
+   "options": [
+    {
+     "en": "30",
+     "as": "30"
+    },
+    {
+     "en": "24",
+     "as": "24"
+    },
+    {
+     "en": "14",
+     "as": "14"
+    },
+    {
+     "en": "36",
+     "as": "36"
+    }
+   ],
+   "answer": 0,
+   "traps": [
+    {
+     "opt": 3,
+     "tag": "r-m-double",
+     "why": {
+      "en": "That counted the overlap twice.",
+      "as": "সাধাৰণ অংশ দুবাৰ গণা হ'ল।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "20 like A, 16 like B and 6 like both. How many like at least one?",
+      "as": "20 জনে A, 16 জনে B, 6 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা কিমান?"
+     },
+     "why": {
+      "en": "20 + 16 − 6 = 30.",
+      "as": "20 + 16 − 6 = 30।"
+     },
+     "options": [
+      {
+       "en": "30",
+       "as": "30"
+      },
+      {
+       "en": "24",
+       "as": "24"
+      },
+      {
+       "en": "14",
+       "as": "14"
+      },
+      {
+       "en": "36",
+       "as": "36"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 3,
+       "tag": "r-m-double",
+       "why": {
+        "en": "That counted the overlap twice.",
+        "as": "সাধাৰণ অংশ দুবাৰ গণা হ'ল।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "30 like A, 22 like B and 9 like both. How many like at least one?",
+      "as": "30 জনে A, 22 জনে B, 9 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা কিমান?"
+     },
+     "why": {
+      "en": "30 + 22 − 9 = 43.",
+      "as": "30 + 22 − 9 = 43।"
+     },
+     "options": [
+      {
+       "en": "43",
+       "as": "43"
+      },
+      {
+       "en": "52",
+       "as": "52"
+      },
+      {
+       "en": "21",
+       "as": "21"
+      },
+      {
+       "en": "34",
+       "as": "34"
+      }
+     ],
+     "answer": 0,
+     "traps": [
+      {
+       "opt": 1,
+       "tag": "r-m-double",
+       "why": {
+        "en": "That counted the overlap twice.",
+        "as": "সাধাৰণ অংশ দুবাৰ গণা হ'ল।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.alphabet",
+   "type": "solve",
+   "skill": "r-pos",
+   "q": {
+    "en": "What is the place of N in the alphabet?",
+    "as": "বৰ্ণমালাত N ৰ স্থান কিমান?"
+   },
+   "answer": "14",
+   "why": {
+    "en": "N is letter number 14.",
+    "as": "N 14 নম্বৰ আখৰ।"
+   },
+   "variants": [
+    {
+     "q": {
+      "en": "What is the place of N in the alphabet?",
+      "as": "বৰ্ণমালাত N ৰ স্থান কিমান?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "N is letter number 14.",
+      "as": "N 14 নম্বৰ আখৰ।"
+     }
+    },
+    {
+     "q": {
+      "en": "What is the place of U in the alphabet?",
+      "as": "বৰ্ণমালাত U ৰ স্থান কিমান?"
+     },
+     "answer": "21",
+     "why": {
+      "en": "U is letter number 21.",
+      "as": "U 21 নম্বৰ আখৰ।"
+     }
+    },
+    {
+     "q": {
+      "en": "What is the place of G in the alphabet?",
+      "as": "বৰ্ণমালাত G ৰ স্থান কিমান?"
+     },
+     "answer": "7",
+     "why": {
+      "en": "G is letter number 7.",
+      "as": "G 7 নম্বৰ আখৰ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.number-series",
+   "type": "solve",
+   "skill": "r-sadd",
+   "q": {
+    "en": "What comes next: 13, 20, 27, 34, 41, ?",
+    "as": "পিছত কি: 13, 20, 27, 34, 41, ?"
+   },
+   "answer": "48",
+   "why": {
+    "en": "Each term changes by +7.",
+    "as": "প্ৰতিটো পদ +7 সলনি হয়।"
+   },
+   "traps": [],
+   "variants": [
+    {
+     "q": {
+      "en": "What comes next: 13, 20, 27, 34, 41, ?",
+      "as": "পিছত কি: 13, 20, 27, 34, 41, ?"
+     },
+     "answer": "48",
+     "why": {
+      "en": "Each term changes by +7.",
+      "as": "প্ৰতিটো পদ +7 সলনি হয়।"
+     },
+     "traps": []
+    },
+    {
+     "q": {
+      "en": "What comes next: 77, 70, 63, 56, 49, ?",
+      "as": "পিছত কি: 77, 70, 63, 56, 49, ?"
+     },
+     "answer": "42",
+     "why": {
+      "en": "Each term changes by −7.",
+      "as": "প্ৰতিটো পদ −7 সলনি হয়।"
+     },
+     "traps": []
+    },
+    {
+     "q": {
+      "en": "What comes next: 9, 20, 31, 42, 53, ?",
+      "as": "পিছত কি: 9, 20, 31, 42, 53, ?"
+     },
+     "answer": "64",
+     "why": {
+      "en": "Each term changes by +11.",
+      "as": "প্ৰতিটো পদ +11 সলনি হয়।"
+     },
+     "traps": []
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.letter-series",
+   "type": "solve",
+   "skill": "r-lgap",
+   "input": "letters",
+   "q": {
+    "en": "What comes next: E, H, K, N, Q, ?",
+    "as": "পিছত কি: E, H, K, N, Q, ?"
+   },
+   "answer": "T",
+   "why": {
+    "en": "Each letter moves +3.",
+    "as": "প্ৰতিটো আখৰ +3 সৰে।"
+   },
+   "traps": [
+    {
+     "ans": "O",
+     "tag": "r-m-lettergap",
+     "why": {
+      "en": "Count the letters skipped between, then add one.",
+      "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "What comes next: E, H, K, N, Q, ?",
+      "as": "পিছত কি: E, H, K, N, Q, ?"
+     },
+     "answer": "T",
+     "why": {
+      "en": "Each letter moves +3.",
+      "as": "প্ৰতিটো আখৰ +3 সৰে।"
+     },
+     "traps": [
+      {
+       "ans": "O",
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "What comes next: X, U, R, O, L, ?",
+      "as": "পিছত কি: X, U, R, O, L, ?"
+     },
+     "answer": "I",
+     "why": {
+      "en": "Each letter moves −3.",
+      "as": "প্ৰতিটো আখৰ −3 সৰে।"
+     },
+     "traps": [
+      {
+       "ans": "N",
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "What comes next: B, F, J, N, R, ?",
+      "as": "পিছত কি: B, F, J, N, R, ?"
+     },
+     "answer": "V",
+     "why": {
+      "en": "Each letter moves +4.",
+      "as": "প্ৰতিটো আখৰ +4 সৰে।"
+     },
+     "traps": [
+      {
+       "ans": "Q",
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.analogy",
+   "type": "mcq",
+   "skill": "r-relname",
+   "q": {
+    "en": "Author : Book :: Painter : ?",
+    "as": "লেখক : কিতাপ :: চিত্ৰকৰ : ?"
+   },
+   "why": {
+    "en": "Apply the same relation.",
+    "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+   },
+   "options": [
+    {
+     "en": "Colour",
+     "as": "Colour"
+    },
+    {
+     "en": "Wall",
+     "as": "Wall"
+    },
+    {
+     "en": "Picture",
+     "as": "Picture"
+    },
+    {
+     "en": "Brush",
+     "as": "Brush"
+    }
+   ],
+   "answer": 2,
+   "variants": [
+    {
+     "q": {
+      "en": "Author : Book :: Painter : ?",
+      "as": "লেখক : কিতাপ :: চিত্ৰকৰ : ?"
+     },
+     "why": {
+      "en": "Apply the same relation.",
+      "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+     },
+     "options": [
+      {
+       "en": "Colour",
+       "as": "Colour"
+      },
+      {
+       "en": "Wall",
+       "as": "Wall"
+      },
+      {
+       "en": "Picture",
+       "as": "Picture"
+      },
+      {
+       "en": "Brush",
+       "as": "Brush"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "q": {
+      "en": "Cow : Milk :: Bee : ?",
+      "as": "গৰু : গাখীৰ :: মৌমাখি : ?"
+     },
+     "why": {
+      "en": "Apply the same relation.",
+      "as": "একে সম্পৰ্ক প্ৰয়োগ কৰা।"
+     },
+     "options": [
+      {
+       "en": "Sting",
+       "as": "Sting"
+      },
+      {
+       "en": "Hive",
+       "as": "Hive"
+      },
+      {
+       "en": "Wing",
+       "as": "Wing"
+      },
+      {
+       "en": "Honey",
+       "as": "Honey"
+      }
+     ],
+     "answer": 3
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.odd-one-out",
+   "type": "mcq",
+   "skill": "r-oddgroup",
+   "q": {
+    "en": "Which one does not belong?",
+    "as": "কোনটো নিমিলে?"
+   },
+   "why": {
+    "en": "Spoon is outside the group.",
+    "as": "Spoon গোটৰ বাহিৰত।"
+   },
+   "options": [
+    {
+     "en": "Apple",
+     "as": "Apple"
+    },
+    {
+     "en": "Orange",
+     "as": "Orange"
+    },
+    {
+     "en": "Plum",
+     "as": "Plum"
+    },
+    {
+     "en": "Spoon",
+     "as": "Spoon"
+    }
+   ],
+   "answer": 3,
+   "variants": [
+    {
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "why": {
+      "en": "Spoon is outside the group.",
+      "as": "Spoon গোটৰ বাহিৰত।"
+     },
+     "options": [
+      {
+       "en": "Apple",
+       "as": "Apple"
+      },
+      {
+       "en": "Orange",
+       "as": "Orange"
+      },
+      {
+       "en": "Plum",
+       "as": "Plum"
+      },
+      {
+       "en": "Spoon",
+       "as": "Spoon"
+      }
+     ],
+     "answer": 3
+    },
+    {
+     "q": {
+      "en": "Which one does not belong?",
+      "as": "কোনটো নিমিলে?"
+     },
+     "why": {
+      "en": "Pencil is outside the group.",
+      "as": "Pencil গোটৰ বাহিৰত।"
+     },
+     "options": [
+      {
+       "en": "Horse",
+       "as": "Horse"
+      },
+      {
+       "en": "Sheep",
+       "as": "Sheep"
+      },
+      {
+       "en": "Pencil",
+       "as": "Pencil"
+      },
+      {
+       "en": "Goat",
+       "as": "Goat"
+      }
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.operators",
+   "type": "solve",
+   "skill": "r-opswap",
+   "q": {
+    "en": "@ means +, # means ×. Find 7 @ 3 # 2.",
+    "as": "@ মানে +, # মানে ×। 7 @ 3 # 2 উলিওৱা।"
+   },
+   "answer": "13",
+   "why": {
+    "en": "That is 7 + 3 × 2 = 13.",
+    "as": "সেয়া 7 + 3 × 2 = 13।"
+   },
+   "traps": [
+    {
+     "ans": "20",
+     "tag": "r-m-leftright",
+     "why": {
+      "en": "Replace the symbols, then follow × and ÷ before + and −.",
+      "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "@ means +, # means ×. Find 7 @ 3 # 2.",
+      "as": "@ মানে +, # মানে ×। 7 @ 3 # 2 উলিওৱা।"
+     },
+     "answer": "13",
+     "why": {
+      "en": "That is 7 + 3 × 2 = 13.",
+      "as": "সেয়া 7 + 3 × 2 = 13।"
+     },
+     "traps": [
+      {
+       "ans": "20",
+       "tag": "r-m-leftright",
+       "why": {
+        "en": "Replace the symbols, then follow × and ÷ before + and −.",
+        "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "$ means ÷, % means +. Find 24 $ 6 % 1.",
+      "as": "$ মানে ÷, % মানে +। 24 $ 6 % 1 উলিওৱা।"
+     },
+     "answer": "5",
+     "why": {
+      "en": "That is 24 ÷ 6 + 1 = 5.",
+      "as": "সেয়া 24 ÷ 6 + 1 = 5।"
+     },
+     "traps": []
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.number-puzzles",
+   "type": "solve",
+   "skill": "r-dscan",
+   "q": {
+    "en": "In 8428148248128, how many 8s come straight after a 4?",
+    "as": "8428148248128 ত 4 ৰ ঠিক পিছত 8 কিমানবাৰ আছে?"
+   },
+   "answer": "2",
+   "why": {
+    "en": "Look at each 8 and the digit before it: 2.",
+    "as": "প্ৰতিটো 8 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+   },
+   "traps": [
+    {
+     "ans": "5",
+     "tag": "r-m-halfscan",
+     "why": {
+      "en": "Check both parts of the condition for every digit.",
+      "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "In 8428148248128, how many 8s come straight after a 4?",
+      "as": "8428148248128 ত 4 ৰ ঠিক পিছত 8 কিমানবাৰ আছে?"
+     },
+     "answer": "2",
+     "why": {
+      "en": "Look at each 8 and the digit before it: 2.",
+      "as": "প্ৰতিটো 8 আৰু তাৰ আগৰ অংক চোৱা: 2।"
+     },
+     "traps": [
+      {
+       "ans": "5",
+       "tag": "r-m-halfscan",
+       "why": {
+        "en": "Check both parts of the condition for every digit.",
+        "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "In 6356563656365, how many 5s come straight after a 6?",
+      "as": "6356563656365 ত 6 ৰ ঠিক পিছত 5 কিমানবাৰ আছে?"
+     },
+     "answer": "3",
+     "why": {
+      "en": "Look at each 5 and the digit before it: 3.",
+      "as": "প্ৰতিটো 5 আৰু তাৰ আগৰ অংক চোৱা: 3।"
+     },
+     "traps": [
+      {
+       "ans": "4",
+       "tag": "r-m-halfscan",
+       "why": {
+        "en": "Check both parts of the condition for every digit.",
+        "as": "প্ৰতিটো অংকত চৰ্তৰ দুয়োটা অংশ চোৱা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.blood-relations",
+   "type": "explore",
+   "skill": "r-bgen",
+   "q": {
+    "en": "Go to your father's mother.",
+    "as": "দেউতাকৰ মাকলৈ যোৱা।"
+   },
+   "widget": {
+    "kind": "tree"
+   },
+   "target": 2,
+   "answerText": {
+    "en": "2 generation(s) up",
+    "as": "2 প্ৰজন্ম ওপৰত"
+   },
+   "why": {
+    "en": "Two levels up.",
+    "as": "দুই স্তৰ ওপৰ।"
+   },
+   "variants": [
+    {
+     "q": {
+      "en": "Go to your father's mother.",
+      "as": "দেউতাকৰ মাকলৈ যোৱা।"
+     },
+     "widget": {
+      "kind": "tree"
+     },
+     "target": 2,
+     "answerText": {
+      "en": "2 generation(s) up",
+      "as": "2 প্ৰজন্ম ওপৰত"
+     },
+     "why": {
+      "en": "Two levels up.",
+      "as": "দুই স্তৰ ওপৰ।"
+     }
+    },
+    {
+     "q": {
+      "en": "Go to your daughter's son.",
+      "as": "জীয়েকৰ পুত্ৰলৈ যোৱা।"
+     },
+     "widget": {
+      "kind": "tree"
+     },
+     "target": -2,
+     "answerText": {
+      "en": "2 generation(s) down",
+      "as": "2 প্ৰজন্ম তলত"
+     },
+     "why": {
+      "en": "Two levels down.",
+      "as": "দুই স্তৰ তল।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.ranking",
+   "type": "solve",
+   "skill": "r-rtotal",
+   "q": {
+    "en": "Someone is 17th from the left and 12th from the right. How many are in the line?",
+    "as": "এজন বাওঁৰ পৰা 17 আৰু সোঁৰ পৰা 12 নম্বৰ। শাৰীত মুঠ কিমান?"
+   },
+   "answer": "28",
+   "why": {
+    "en": "17 + 12 − 1 = 28.",
+    "as": "17 + 12 − 1 = 28।"
+   },
+   "traps": [
+    {
+     "ans": "29",
+     "tag": "r-m-twice",
+     "why": {
+      "en": "The person is counted from both ends, so subtract 1.",
+      "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "Someone is 17th from the left and 12th from the right. How many are in the line?",
+      "as": "এজন বাওঁৰ পৰা 17 আৰু সোঁৰ পৰা 12 নম্বৰ। শাৰীত মুঠ কিমান?"
+     },
+     "answer": "28",
+     "why": {
+      "en": "17 + 12 − 1 = 28.",
+      "as": "17 + 12 − 1 = 28।"
+     },
+     "traps": [
+      {
+       "ans": "29",
+       "tag": "r-m-twice",
+       "why": {
+        "en": "The person is counted from both ends, so subtract 1.",
+        "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "Someone is 9th from the left and 22th from the right. How many are in the line?",
+      "as": "এজন বাওঁৰ পৰা 9 আৰু সোঁৰ পৰা 22 নম্বৰ। শাৰীত মুঠ কিমান?"
+     },
+     "answer": "30",
+     "why": {
+      "en": "9 + 22 − 1 = 30.",
+      "as": "9 + 22 − 1 = 30।"
+     },
+     "traps": [
+      {
+       "ans": "31",
+       "tag": "r-m-twice",
+       "why": {
+        "en": "The person is counted from both ends, so subtract 1.",
+        "as": "ব্যক্তিজন দুয়োফালৰ পৰা গণা হৈছে, 1 বিয়োগ কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.arrangement",
+   "type": "explore",
+   "skill": "r-afixed",
+   "q": {
+    "en": "Left to right: K is first, and M is immediately left of L.",
+    "as": "বাওঁৰ পৰা: K প্ৰথম, M, L ৰ ঠিক বাওঁফালে।"
+   },
+   "widget": {
+    "kind": "seats",
+    "names": [
+     "K",
+     "L",
+     "M"
+    ],
+    "round": false
+   },
+   "target": 132,
+   "answerText": {
+    "en": "K M L",
+    "as": "K M L"
+   },
+   "why": {
+    "en": "K, M, L.",
+    "as": "K, M, L।"
+   },
+   "variants": [
+    {
+     "q": {
+      "en": "Left to right: K is first, and M is immediately left of L.",
+      "as": "বাওঁৰ পৰা: K প্ৰথম, M, L ৰ ঠিক বাওঁফালে।"
+     },
+     "widget": {
+      "kind": "seats",
+      "names": [
+       "K",
+       "L",
+       "M"
+      ],
+      "round": false
+     },
+     "target": 132,
+     "answerText": {
+      "en": "K M L",
+      "as": "K M L"
+     },
+     "why": {
+      "en": "K, M, L.",
+      "as": "K, M, L।"
+     }
+    },
+    {
+     "q": {
+      "en": "Left to right: U is last, and V is first.",
+      "as": "বাওঁৰ পৰা: U শেষত, V প্ৰথম।"
+     },
+     "widget": {
+      "kind": "seats",
+      "names": [
+       "U",
+       "V",
+       "W"
+      ],
+      "round": false
+     },
+     "target": 231,
+     "answerText": {
+      "en": "V W U",
+      "as": "V W U"
+     },
+     "why": {
+      "en": "V, W, U.",
+      "as": "V, W, U।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.calendar-clock",
+   "type": "explore",
+   "skill": "r-codd",
+   "q": {
+    "en": "Today is Tuesday. Which day comes in 26 days? Step the wheel using the remainder.",
+    "as": "আজি মঙ্গলবাৰ। 26 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+   },
+   "widget": {
+    "kind": "oddday",
+    "start": 2
+   },
+   "target": 0,
+   "answerText": {
+    "en": "Sunday",
+    "as": "দেওবাৰ"
+   },
+   "why": {
+    "en": "26 leaves 5 after sevens, so Sunday.",
+    "as": "26 ৰ ভাগশেষ 5, গতিকে দেওবাৰ।"
+   },
+   "variants": [
+    {
+     "q": {
+      "en": "Today is Tuesday. Which day comes in 26 days? Step the wheel using the remainder.",
+      "as": "আজি মঙ্গলবাৰ। 26 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+     },
+     "widget": {
+      "kind": "oddday",
+      "start": 2
+     },
+     "target": 0,
+     "answerText": {
+      "en": "Sunday",
+      "as": "দেওবাৰ"
+     },
+     "why": {
+      "en": "26 leaves 5 after sevens, so Sunday.",
+      "as": "26 ৰ ভাগশেষ 5, গতিকে দেওবাৰ।"
+     }
+    },
+    {
+     "q": {
+      "en": "Today is Saturday. Which day comes in 60 days? Step the wheel using the remainder.",
+      "as": "আজি শনিবাৰ। 60 দিনৰ পিছত কি বাৰ? ভাগশেষেৰে চকৰি আগবঢ়োৱা।"
+     },
+     "widget": {
+      "kind": "oddday",
+      "start": 6
+     },
+     "target": 3,
+     "answerText": {
+      "en": "Wednesday",
+      "as": "বুধবাৰ"
+     },
+     "why": {
+      "en": "60 leaves 4 after sevens, so Wednesday.",
+      "as": "60 ৰ ভাগশেষ 4, গতিকে বুধবাৰ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.syllogism",
+   "type": "tf",
+   "skill": "r-syall",
+   "s": {
+    "en": "All A are B, so some B are A.",
+    "as": "সকলো A, B, গতিকে কিছুমান B, A।"
+   },
+   "answer": true,
+   "why": {
+    "en": "A sits inside B.",
+    "as": "A, B ৰ ভিতৰত।"
+   }
+  },
+  {
+   "id": "bank.rs.statements",
+   "type": "stepwise",
+   "skill": "r-stfollow",
+   "q": {
+    "en": "Statement: All clerks passed. Mina is a clerk. Conclusion: Mina passed.",
+    "as": "উক্তি: সকলো কেৰাণী উত্তীৰ্ণ। মিনা কেৰাণী। সিদ্ধান্ত: মিনা উত্তীৰ্ণ।"
+   },
+   "parts": [
+    {
+     "ask": {
+      "en": "Your decision?",
+      "as": "তোমাৰ সিদ্ধান্ত?"
+     },
+     "options": [
+      {
+       "en": "Does not follow",
+       "as": "নোলায়"
+      },
+      {
+       "en": "Follows",
+       "as": "ওলায়"
+      },
+      {
+       "en": "Both",
+       "as": "দুয়োটা"
+      }
+     ],
+     "answer": 1,
+     "note": {
+      "en": "Covered by 'all'.",
+      "as": "'সকলো'ত পৰে।"
+     }
+    }
+   ],
+   "why": {
+    "en": "Covered by 'all'.",
+    "as": "'সকলো'ত পৰে।"
+   },
+   "variants": [
+    {
+     "q": {
+      "en": "Statement: All clerks passed. Mina is a clerk. Conclusion: Mina passed.",
+      "as": "উক্তি: সকলো কেৰাণী উত্তীৰ্ণ। মিনা কেৰাণী। সিদ্ধান্ত: মিনা উত্তীৰ্ণ।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Covered by 'all'.",
+        "as": "'সকলো'ত পৰে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Covered by 'all'.",
+      "as": "'সকলো'ত পৰে।"
+     }
+    },
+    {
+     "q": {
+      "en": "Statement: Some clerks passed. Conclusion: Mina the clerk passed.",
+      "as": "উক্তি: কিছুমান কেৰাণী উত্তীৰ্ণ। সিদ্ধান্ত: কেৰাণী মিনা উত্তীৰ্ণ।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Mina may be outside the some.",
+        "as": "মিনা বাহিৰত হ'ব পাৰে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Mina may be outside the some.",
+      "as": "মিনা বাহিৰত হ'ব পাৰে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.figure-patterns",
+   "type": "explore",
+   "skill": "r-fseries",
+   "q": {
+    "en": "How many dots come next?",
+    "as": "পিছত কিমান বিন্দু?"
+   },
+   "widget": {
+    "kind": "figpick",
+    "options": [
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       30,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       70,
+       8,
+       "#1F5FBF"
+      ]
+     ],
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       30,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       50,
+       50,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       50,
+       15,
+       8,
+       "#1F5FBF"
+      ]
+     ],
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       30,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       50,
+       50,
+       8,
+       "#1F5FBF"
+      ]
+     ],
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       30,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       50,
+       50,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       50,
+       15,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       50,
+       85,
+       8,
+       "#1F5FBF"
+      ]
+     ]
+    ],
+    "stem": [
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ]
+     ],
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       30,
+       70,
+       8,
+       "#1F5FBF"
+      ]
+     ],
+     [
+      [
+       "c",
+       30,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       30,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       30,
+       70,
+       8,
+       "#1F5FBF"
+      ],
+      [
+       "c",
+       70,
+       70,
+       8,
+       "#1F5FBF"
+      ]
+     ],
+     null
+    ]
+   },
+   "target": 2,
+   "answerText": {
+    "en": "The count rises by 1.",
+    "as": "সংখ্যা 1 ৰে বাঢ়ে।"
+   },
+   "why": {
+    "en": "The count rises by 1.",
+    "as": "সংখ্যা 1 ৰে বাঢ়ে।"
+   },
+   "traps": [],
+   "variants": [
+    {
+     "q": {
+      "en": "How many dots come next?",
+      "as": "পিছত কিমান বিন্দু?"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         50,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         15,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         50,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         50,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         15,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         85,
+         8,
+         "#1F5FBF"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       null
+      ]
+     },
+     "target": 2,
+     "answerText": {
+      "en": "The count rises by 1.",
+      "as": "সংখ্যা 1 ৰে বাঢ়ে।"
+     },
+     "why": {
+      "en": "The count rises by 1.",
+      "as": "সংখ্যা 1 ৰে বাঢ়ে।"
+     },
+     "traps": []
+    },
+    {
+     "q": {
+      "en": "How many dots come next?",
+      "as": "পিছত কিমান বিন্দু?"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         50,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         15,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         70,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         50,
+         50,
+         8,
+         "#1F5FBF"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "c",
+         30,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         70,
+         30,
+         8,
+         "#1F5FBF"
+        ],
+        [
+         "c",
+         30,
+         70,
+         8,
+         "#1F5FBF"
+        ]
+       ],
+       null
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "The count rises by 1.",
+      "as": "সংখ্যা 1 ৰে বাঢ়ে।"
+     },
+     "why": {
+      "en": "The count rises by 1.",
+      "as": "সংখ্যা 1 ৰে বাঢ়ে।"
+     },
+     "traps": []
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.mirror-fold",
+   "type": "explore",
+   "skill": "r-fmirror",
+   "q": {
+    "en": "A mirror stands to the right of this flag. Pick its image.",
+    "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+   },
+   "widget": {
+    "kind": "figpick",
+    "options": [
+     [
+      [
+       "p",
+       [
+        [
+         20,
+         20
+        ],
+        [
+         45,
+         20
+        ],
+        [
+         45,
+         60
+        ],
+        [
+         80,
+         60
+        ],
+        [
+         80,
+         85
+        ],
+        [
+         20,
+         85
+        ]
+       ],
+       null
+      ],
+      [
+       "c",
+       32,
+       35,
+       6,
+       "#D3323F"
+      ]
+     ],
+     [
+      [
+       "p",
+       [
+        [
+         80,
+         20
+        ],
+        [
+         55,
+         20
+        ],
+        [
+         55,
+         60
+        ],
+        [
+         20,
+         60
+        ],
+        [
+         20,
+         85
+        ],
+        [
+         80,
+         85
+        ]
+       ],
+       null
+      ],
+      [
+       "c",
+       68,
+       35,
+       6,
+       "#D3323F"
+      ]
+     ],
+     [
+      [
+       "p",
+       [
+        [
+         20,
+         80
+        ],
+        [
+         45,
+         80
+        ],
+        [
+         45,
+         40
+        ],
+        [
+         80,
+         40
+        ],
+        [
+         80,
+         15
+        ],
+        [
+         20,
+         15
+        ]
+       ],
+       null
+      ],
+      [
+       "c",
+       32,
+       65,
+       6,
+       "#D3323F"
+      ]
+     ],
+     [
+      [
+       "p",
+       [
+        [
+         80,
+         80
+        ],
+        [
+         55,
+         80
+        ],
+        [
+         55,
+         40
+        ],
+        [
+         20,
+         40
+        ],
+        [
+         20,
+         15
+        ],
+        [
+         80,
+         15
+        ]
+       ],
+       null
+      ],
+      [
+       "c",
+       68,
+       65,
+       6,
+       "#D3323F"
+      ]
+     ]
+    ],
+    "stem": [
+     [
+      [
+       "p",
+       [
+        [
+         20,
+         20
+        ],
+        [
+         45,
+         20
+        ],
+        [
+         45,
+         60
+        ],
+        [
+         80,
+         60
+        ],
+        [
+         80,
+         85
+        ],
+        [
+         20,
+         85
+        ]
+       ],
+       null
+      ],
+      [
+       "c",
+       32,
+       35,
+       6,
+       "#D3323F"
+      ]
+     ]
+    ]
+   },
+   "target": 1,
+   "answerText": {
+    "en": "Left and right swap; up and down stay.",
+    "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+   },
+   "why": {
+    "en": "Left and right swap; up and down stay.",
+    "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+   },
+   "traps": [
+    {
+     "val": 3,
+     "tag": "r-m-rotate",
+     "why": {
+      "en": "A mirror swaps left and right but keeps up and down.",
+      "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+     }
+    }
+   ],
+   "variants": [
+    {
+     "q": {
+      "en": "A mirror stands to the right of this flag. Pick its image.",
+      "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           20
+          ],
+          [
+           45,
+           20
+          ],
+          [
+           45,
+           60
+          ],
+          [
+           80,
+           60
+          ],
+          [
+           80,
+           85
+          ],
+          [
+           20,
+           85
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         32,
+         35,
+         6,
+         "#D3323F"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           80,
+           20
+          ],
+          [
+           55,
+           20
+          ],
+          [
+           55,
+           60
+          ],
+          [
+           20,
+           60
+          ],
+          [
+           20,
+           85
+          ],
+          [
+           80,
+           85
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         68,
+         35,
+         6,
+         "#D3323F"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           80
+          ],
+          [
+           45,
+           80
+          ],
+          [
+           45,
+           40
+          ],
+          [
+           80,
+           40
+          ],
+          [
+           80,
+           15
+          ],
+          [
+           20,
+           15
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         32,
+         65,
+         6,
+         "#D3323F"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           80,
+           80
+          ],
+          [
+           55,
+           80
+          ],
+          [
+           55,
+           40
+          ],
+          [
+           20,
+           40
+          ],
+          [
+           20,
+           15
+          ],
+          [
+           80,
+           15
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         68,
+         65,
+         6,
+         "#D3323F"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           20
+          ],
+          [
+           45,
+           20
+          ],
+          [
+           45,
+           60
+          ],
+          [
+           80,
+           60
+          ],
+          [
+           80,
+           85
+          ],
+          [
+           20,
+           85
+          ]
+         ],
+         null
+        ],
+        [
+         "c",
+         32,
+         35,
+         6,
+         "#D3323F"
+        ]
+       ]
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "Left and right swap; up and down stay.",
+      "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+     },
+     "why": {
+      "en": "Left and right swap; up and down stay.",
+      "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+     },
+     "traps": [
+      {
+       "val": 3,
+       "tag": "r-m-rotate",
+       "why": {
+        "en": "A mirror swaps left and right but keeps up and down.",
+        "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "q": {
+      "en": "A mirror stands to the right of this flag. Pick its image.",
+      "as": "এই ধ্বজাৰ সোঁফালে দাপোণ। প্ৰতিবিম্ব বাছা।"
+     },
+     "widget": {
+      "kind": "figpick",
+      "options": [
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           80
+          ],
+          [
+           50,
+           20
+          ],
+          [
+           80,
+           80
+          ]
+         ],
+         null
+        ],
+        [
+         "l",
+         50,
+         20,
+         20,
+         80
+        ],
+        [
+         "r",
+         60,
+         25,
+         16,
+         16,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           20
+          ],
+          [
+           50,
+           80
+          ],
+          [
+           80,
+           20
+          ]
+         ],
+         null
+        ],
+        [
+         "l",
+         50,
+         80,
+         20,
+         20
+        ],
+        [
+         "r",
+         60,
+         59,
+         16,
+         16,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           80,
+           20
+          ],
+          [
+           50,
+           80
+          ],
+          [
+           20,
+           20
+          ]
+         ],
+         null
+        ],
+        [
+         "l",
+         50,
+         80,
+         80,
+         20
+        ],
+        [
+         "r",
+         24,
+         59,
+         16,
+         16,
+         "#1F5FBF"
+        ]
+       ],
+       [
+        [
+         "p",
+         [
+          [
+           80,
+           80
+          ],
+          [
+           50,
+           20
+          ],
+          [
+           20,
+           80
+          ]
+         ],
+         null
+        ],
+        [
+         "l",
+         50,
+         20,
+         80,
+         80
+        ],
+        [
+         "r",
+         24,
+         25,
+         16,
+         16,
+         "#1F5FBF"
+        ]
+       ]
+      ],
+      "stem": [
+       [
+        [
+         "p",
+         [
+          [
+           20,
+           80
+          ],
+          [
+           50,
+           20
+          ],
+          [
+           80,
+           80
+          ]
+         ],
+         null
+        ],
+        [
+         "l",
+         50,
+         20,
+         20,
+         80
+        ],
+        [
+         "r",
+         60,
+         25,
+         16,
+         16,
+         "#1F5FBF"
+        ]
+       ]
+      ]
+     },
+     "target": 3,
+     "answerText": {
+      "en": "Left and right swap; up and down stay.",
+      "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+     },
+     "why": {
+      "en": "Left and right swap; up and down stay.",
+      "as": "বাওঁ-সোঁ সলনি; ওপৰ-তল একে।"
+     },
+     "traps": [
+      {
+       "val": 2,
+       "tag": "r-m-rotate",
+       "why": {
+        "en": "A mirror swaps left and right but keeps up and down.",
+        "as": "দাপোণে বাওঁ-সোঁ সলায়, ওপৰ-তল নহয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.cube-count",
+   "type": "explore",
+   "skill": "r-fnet",
+   "q": {
+    "en": "Fold this net into a cube. Tap the face opposite 1.",
+    "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 1 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+   },
+   "widget": {
+    "kind": "dicenet",
+    "net": [
+     [
+      null,
+      1,
+      null,
+      null
+     ],
+     [
+      2,
+      3,
+      4,
+      5
+     ],
+     [
+      null,
+      6,
+      null,
+      null
+     ]
+    ],
+    "mark": 1
+   },
+   "target": 6,
+   "answerText": {
+    "en": "6",
+    "as": "6"
+   },
+   "why": {
+    "en": "In a straight row, faces two apart are opposite.",
+    "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+   },
+   "traps": [],
+   "variants": [
+    {
+     "q": {
+      "en": "Fold this net into a cube. Tap the face opposite 1.",
+      "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 1 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+     },
+     "widget": {
+      "kind": "dicenet",
+      "net": [
+       [
+        null,
+        1,
+        null,
+        null
+       ],
+       [
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        null,
+        6,
+        null,
+        null
+       ]
+      ],
+      "mark": 1
+     },
+     "target": 6,
+     "answerText": {
+      "en": "6",
+      "as": "6"
+     },
+     "why": {
+      "en": "In a straight row, faces two apart are opposite.",
+      "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+     },
+     "traps": []
+    },
+    {
+     "q": {
+      "en": "Fold this net into a cube. Tap the face opposite 3.",
+      "as": "এই জাল ভাঁজ কৰি ঘনক বনোৱা। 3 ৰ বিপৰীত পৃষ্ঠ টিপা।"
+     },
+     "widget": {
+      "kind": "dicenet",
+      "net": [
+       [
+        null,
+        1,
+        null,
+        null
+       ],
+       [
+        2,
+        3,
+        4,
+        5
+       ],
+       [
+        null,
+        6,
+        null,
+        null
+       ]
+      ],
+      "mark": 3
+     },
+     "target": 5,
+     "answerText": {
+      "en": "5",
+      "as": "5"
+     },
+     "why": {
+      "en": "In a straight row, faces two apart are opposite.",
+      "as": "পোন শাৰীত এঘৰ এৰি থকা পৃষ্ঠ বিপৰীত।"
+     },
+     "traps": []
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.number-figures",
+   "type": "explore",
+   "skill": "r-nrow",
+   "q": {
+    "en": "Find the rule across each row, then set the missing number.",
+    "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+   },
+   "widget": {
+    "kind": "numgrid",
+    "rows": [
+     [
+      4,
+      9,
+      13
+     ],
+     [
+      7,
+      5,
+      null
+     ]
+    ],
+    "start": 0
+   },
+   "target": 12,
+   "answerText": {
+    "en": "12",
+    "as": "12"
+   },
+   "why": {
+    "en": "The third is the sum of the first two.",
+    "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+   },
+   "traps": [],
+   "variants": [
+    {
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        4,
+        9,
+        13
+       ],
+       [
+        7,
+        5,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 12,
+     "answerText": {
+      "en": "12",
+      "as": "12"
+     },
+     "why": {
+      "en": "The third is the sum of the first two.",
+      "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+     },
+     "traps": []
+    },
+    {
+     "q": {
+      "en": "Find the rule across each row, then set the missing number.",
+      "as": "প্ৰতিটো শাৰীৰ নিয়ম উলিয়াই নিৰুদ্দিষ্ট সংখ্যা ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "numgrid",
+      "rows": [
+       [
+        6,
+        8,
+        14
+       ],
+       [
+        3,
+        9,
+        null
+       ]
+      ],
+      "start": 0
+     },
+     "target": 12,
+     "answerText": {
+      "en": "12",
+      "as": "12"
+     },
+     "why": {
+      "en": "The third is the sum of the first two.",
+      "as": "তৃতীয়টো প্ৰথম দুটাৰ যোগফল।"
+     },
+     "traps": []
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.data",
+   "type": "explore",
+   "skill": "r-dchart",
+   "q": {
+    "en": "Tap the year with the highest output.",
+    "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+   },
+   "widget": {
+    "kind": "bars",
+    "labels": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "vals": [
+     15,
+     40,
+     25,
+     30
+    ]
+   },
+   "target": 1,
+   "answerText": {
+    "en": "B",
+    "as": "B"
+   },
+   "why": {
+    "en": "B has the tallest bar.",
+    "as": "B ৰ বাৰ ওখ।"
+   },
+   "traps": [],
+   "variants": [
+    {
+     "q": {
+      "en": "Tap the year with the highest output.",
+      "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+     },
+     "widget": {
+      "kind": "bars",
+      "labels": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "vals": [
+       15,
+       40,
+       25,
+       30
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "B",
+      "as": "B"
+     },
+     "why": {
+      "en": "B has the tallest bar.",
+      "as": "B ৰ বাৰ ওখ।"
+     },
+     "traps": []
+    },
+    {
+     "q": {
+      "en": "Tap the year with the highest output.",
+      "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+     },
+     "widget": {
+      "kind": "bars",
+      "labels": [
+       "P",
+       "Q",
+       "R",
+       "S"
+      ],
+      "vals": [
+       60,
+       20,
+       45,
+       50
+      ]
+     },
+     "target": 0,
+     "answerText": {
+      "en": "P",
+      "as": "P"
+     },
+     "why": {
+      "en": "P has the tallest bar.",
+      "as": "P ৰ বাৰ ওখ।"
+     },
+     "traps": []
+    }
+   ]
+  },
+  {
+   "id": "bank.rs.communication",
+   "type": "tf",
+   "skill": "r-clisten",
+   "s": {
+    "en": "Paraphrasing checks understanding.",
+    "as": "ঘূৰাই কোৱাই বুজাবুজি নিশ্চিত কৰে।"
+   },
+   "answer": true,
+   "why": {
+    "en": "Yes.",
+    "as": "হয়।"
+   }
+  },
+  {
+   "id": "bank.rs.decisions",
+   "type": "tf",
+   "skill": "r-dduty",
+   "s": {
+    "en": "Refer decisions beyond your authority.",
+    "as": "ক্ষমতাৰ বাহিৰৰ সিদ্ধান্ত ওপৰলৈ।"
+   },
+   "answer": true,
+   "why": {
+    "en": "Yes.",
+    "as": "হয়।"
+   }
+  }
+ ]
+}

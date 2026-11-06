@@ -1,0 +1,4416 @@
+{
+ "id": "rs-14-venn",
+ "course": "reasoning",
+ "no": 14,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Venn diagrams",
+  "as": "ভেন চিত্ৰ"
+ },
+ "reign": {
+  "en": "Regions, relations, counting, three sets",
+  "as": "অংশ, সম্পৰ্ক, গণনা, তিনিটা সংহতি"
+ },
+ "portrait": "reasoning/logic.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Every region has a name",
+    "as": "প্ৰতিটো অংশৰ এটা নাম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A circle holds everything with one property.",
+     "as": "এটা বৃত্তত এটা গুণ থকা সকলো থাকে।"
+    },
+    {
+     "en": "The overlap holds what has both properties.",
+     "as": "সাধাৰণ অংশত দুয়োটা গুণ থকাখিনি থাকে।"
+    },
+    {
+     "en": "'Only' leaves out the overlap.",
+     "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে।"
+    },
+    {
+     "en": "The outside holds what has neither.",
+     "as": "বাহিৰত দুয়োটা নথকাখিনি থাকে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs14.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Four places to stand",
+      "as": "থিয় হোৱাৰ চাৰি ঠাই"
+     },
+     "text": [
+      {
+       "en": "Each person belongs to exactly one region. Tap a region to shade it, and tap again to clear it.",
+       "as": "প্ৰতিজন ঠিক এটা অংশত থাকে। অংশত টিপি ছাঁ দিয়া, আকৌ টিপিলে আঁতৰে।"
+      }
+     ],
+     "widget": {
+      "kind": "venn",
+      "n": 2,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       }
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Shade the people who drink both.",
+        "as": "দুয়োটা খোৱা সকলোক ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 8
+       },
+       "then": {
+        "en": "The overlap is both circles at once.",
+        "as": "সাধাৰণ অংশ একেলগে দুয়োটা বৃত্ত।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now shade only those who drink tea only.",
+        "as": "এতিয়া কেৱল চাহ খোৱাসকলকহে ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 2
+       },
+       "then": {
+        "en": "'Only' removed the overlap.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ আঁতৰিল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "The space outside counts",
+      "as": "বাহিৰৰ ঠাইও গণনাত"
+     },
+     "text": [
+      {
+       "en": "Someone who drinks neither still belongs on the page. They stand outside both circles.",
+       "as": "দুয়োটা নোখোৱাজনো চিত্ৰত থাকে। তেওঁ দুয়োটা বৃত্তৰ বাহিৰত।"
+      }
+     ],
+     "widget": {
+      "kind": "venn",
+      "n": 2,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       }
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Shade those who drink neither.",
+        "as": "দুয়োটা নোখোৱাসকলক ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 1
+       },
+       "then": {
+        "en": "That is the fourth region. Exams often ask for it.",
+        "as": "সেয়া চতুৰ্থ অংশ। পৰীক্ষাত সঘনাই সোধে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u1.q1",
+     "type": "explore",
+     "skill": "r-region",
+     "q": {
+      "en": "Shade those who drink coffee only.",
+      "as": "কেৱল কফি খোৱাসকলক ছাঁ দিয়া।"
+     },
+     "widget": {
+      "kind": "venn",
+      "n": 2,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       }
+      ]
+     },
+     "target": 4,
+     "answerText": {
+      "en": "Coffee without the overlap.",
+      "as": "সাধাৰণ অংশ বাদে কফি।"
+     },
+     "why": {
+      "en": "Coffee without the overlap.",
+      "as": "সাধাৰণ অংশ বাদে কফি।"
+     },
+     "traps": [
+      {
+       "val": 12,
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Shade those who drink coffee only.",
+        "as": "কেৱল কফি খোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ]
+       },
+       "target": 4,
+       "answerText": {
+        "en": "Coffee without the overlap.",
+        "as": "সাধাৰণ অংশ বাদে কফি।"
+       },
+       "why": {
+        "en": "Coffee without the overlap.",
+        "as": "সাধাৰণ অংশ বাদে কফি।"
+       },
+       "traps": [
+        {
+         "val": 12,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Shade those who drink tea but not coffee.",
+        "as": "চাহ খায় কিন্তু কফি নোখোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Tea without the overlap.",
+        "as": "সাধাৰণ অংশ বাদে চাহ।"
+       },
+       "why": {
+        "en": "Tea without the overlap.",
+        "as": "সাধাৰণ অংশ বাদে চাহ।"
+       },
+       "traps": [
+        {
+         "val": 10,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Shade everyone who drinks tea.",
+        "as": "চাহ খোৱা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ]
+       },
+       "target": 10,
+       "answerText": {
+        "en": "All of the tea circle, overlap included.",
+        "as": "সাধাৰণ অংশসহ গোটেই চাহৰ বৃত্ত।"
+       },
+       "why": {
+        "en": "All of the tea circle, overlap included.",
+        "as": "সাধাৰণ অংশসহ গোটেই চাহৰ বৃত্ত।"
+       },
+       "traps": [
+        {
+         "val": 2,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs14.u1.q2",
+     "type": "explore",
+     "skill": "r-region",
+     "q": {
+      "en": "Shade those who drink at least one of the two.",
+      "as": "দুটাৰ অন্ততঃ এটা খোৱাসকলক ছাঁ দিয়া।"
+     },
+     "widget": {
+      "kind": "venn",
+      "n": 2,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       }
+      ]
+     },
+     "target": 14,
+     "answerText": {
+      "en": "Everything inside the circles.",
+      "as": "বৃত্তৰ ভিতৰৰ সকলো।"
+     },
+     "why": {
+      "en": "Everything inside the circles.",
+      "as": "বৃত্তৰ ভিতৰৰ সকলো।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Shade those who drink at least one of the two.",
+        "as": "দুটাৰ অন্ততঃ এটা খোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ]
+       },
+       "target": 14,
+       "answerText": {
+        "en": "Everything inside the circles.",
+        "as": "বৃত্তৰ ভিতৰৰ সকলো।"
+       },
+       "why": {
+        "en": "Everything inside the circles.",
+        "as": "বৃত্তৰ ভিতৰৰ সকলো।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Shade those who do not drink tea.",
+        "as": "চাহ নোখোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ]
+       },
+       "target": 5,
+       "answerText": {
+        "en": "Everything outside the tea circle.",
+        "as": "চাহৰ বৃত্তৰ বাহিৰৰ সকলো।"
+       },
+       "why": {
+        "en": "Everything outside the tea circle.",
+        "as": "চাহৰ বৃত্তৰ বাহিৰৰ সকলো।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs14.u1.q3",
+     "type": "tf",
+     "skill": "r-region",
+     "s": {
+      "en": "'Tea only' includes people who drink both.",
+      "as": "'কেৱল চাহ' ত দুয়োটা খোৱাসকল থাকে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "'Only' excludes the overlap.",
+      "as": "'কেৱল' ত সাধাৰণ অংশ নপৰে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u1.q4",
+     "type": "match",
+     "skill": "r-region",
+     "q": {
+      "en": "Match the words to the region",
+      "as": "শব্দক অংশৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Both",
+        "as": "দুয়োটা"
+       },
+       {
+        "en": "The overlap",
+        "as": "সাধাৰণ অংশ"
+       }
+      ],
+      [
+       {
+        "en": "Neither",
+        "as": "কোনোটো নহয়"
+       },
+       {
+        "en": "Outside the circles",
+        "as": "বৃত্তৰ বাহিৰত"
+       }
+      ],
+      [
+       {
+        "en": "Tea only",
+        "as": "কেৱল চাহ"
+       },
+       {
+        "en": "Tea minus the overlap",
+        "as": "সাধাৰণ অংশ বাদে চাহ"
+       }
+      ],
+      [
+       {
+        "en": "At least one",
+        "as": "অন্ততঃ এটা"
+       },
+       {
+        "en": "Inside any circle",
+        "as": "যিকোনো বৃত্তৰ ভিতৰত"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each phrase names a fixed region.",
+      "as": "প্ৰতিটো শব্দই নিৰ্দিষ্ট অংশ বুজায়।"
+     }
+    },
+    {
+     "id": "rs14.u1.q5",
+     "type": "solve",
+     "skill": "r-region",
+     "q": {
+      "en": "12 people drink only tea and 5 drink both tea and coffee. How many drink tea?",
+      "as": "12 জনে কেৱল চাহ খায়, 5 জনে চাহ আৰু কফি দুয়োটা খায়। চাহ খোৱা মুঠ কিমান?"
+     },
+     "answer": "17",
+     "why": {
+      "en": "The tea circle holds both regions: 12 + 5 = 17.",
+      "as": "চাহৰ বৃত্তত দুয়োটা অংশ আছে: 12 + 5 = 17।"
+     },
+     "traps": [
+      {
+       "ans": "12",
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "12 people drink only tea and 5 drink both tea and coffee. How many drink tea?",
+        "as": "12 জনে কেৱল চাহ খায়, 5 জনে চাহ আৰু কফি দুয়োটা খায়। চাহ খোৱা মুঠ কিমান?"
+       },
+       "answer": "17",
+       "why": {
+        "en": "The tea circle holds both regions: 12 + 5 = 17.",
+        "as": "চাহৰ বৃত্তত দুয়োটা অংশ আছে: 12 + 5 = 17।"
+       },
+       "traps": [
+        {
+         "ans": "12",
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "20 people drink only tea and 8 drink both tea and coffee. How many drink tea?",
+        "as": "20 জনে কেৱল চাহ খায়, 8 জনে চাহ আৰু কফি দুয়োটা খায়। চাহ খোৱা মুঠ কিমান?"
+       },
+       "answer": "28",
+       "why": {
+        "en": "The tea circle holds both regions: 20 + 8 = 28.",
+        "as": "চাহৰ বৃত্তত দুয়োটা অংশ আছে: 20 + 8 = 28।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "15 people drink only tea and 9 drink both tea and coffee. How many drink tea?",
+        "as": "15 জনে কেৱল চাহ খায়, 9 জনে চাহ আৰু কফি দুয়োটা খায়। চাহ খোৱা মুঠ কিমান?"
+       },
+       "answer": "24",
+       "why": {
+        "en": "The tea circle holds both regions: 15 + 9 = 24.",
+        "as": "চাহৰ বৃত্তত দুয়োটা অংশ আছে: 15 + 9 = 24।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Pick the right diagram",
+    "as": "সঠিক চিত্ৰ বাছনি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "If every X is a Y, X sits inside Y.",
+     "as": "প্ৰতিটো X যদি Y হয়, X, Y ৰ ভিতৰত।"
+    },
+    {
+     "en": "If nothing is both, the circles stay apart.",
+     "as": "কোনোবাই দুয়োটা নহ'লে বৃত্ত আঁতৰত থাকে।"
+    },
+    {
+     "en": "If some are both, the circles overlap.",
+     "as": "কিছুমান দুয়োটা হ'লে বৃত্ত ওপৰা-ওপৰি হয়।"
+    },
+    {
+     "en": "Decide three sets two at a time.",
+     "as": "তিনিটা সংহতি দুটাকৈ চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs14.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Three ways two sets can sit",
+      "as": "দুটা সংহতিৰ তিনি অৱস্থা"
+     },
+     "text": [
+      {
+       "en": "Ask one question: can something be both? The answer decides the picture.",
+       "as": "এটা প্ৰশ্ন সোধা: কোনোবা দুয়োটা হ'ব পাৰেনে? উত্তৰে চিত্ৰ ঠিক কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Inside: Guwahati, Assam",
+        "as": "ভিতৰত: গুৱাহাটী, অসম"
+       },
+       {
+        "en": "Apart: rivers, hills",
+        "as": "আঁতৰত: নদী, পাহাৰ"
+       },
+       {
+        "en": "Overlap: women, teachers",
+        "as": "ওপৰা-ওপৰি: মহিলা, শিক্ষক"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs14.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Three sets, two at a time",
+      "as": "তিনি সংহতি, দুটাকৈ"
+     },
+     "text": [
+      {
+       "en": "Compare the first pair, then the next, and keep only diagrams that fit every pair.",
+       "as": "প্ৰথম যোৰ, তাৰ পিছত পিছৰ যোৰ তুলনা কৰা। সকলো যোৰত মিলা চিত্ৰহে ৰাখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "First pair",
+        "as": "প্ৰথম যোৰ"
+       },
+       {
+        "en": "Second pair",
+        "as": "দ্বিতীয় যোৰ"
+       },
+       {
+        "en": "Third pair",
+        "as": "তৃতীয় যোৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs14.u2.q1",
+     "type": "explore",
+     "skill": "r-relate",
+     "traps": [
+      {
+       "val": 2,
+       "tag": "r-m-inside",
+       "why": {
+        "en": "If every X is a Y, circle X sits wholly inside circle Y.",
+        "as": "প্ৰতিটো X যদি Y হয়, X ৰ বৃত্ত গোটেই Y ৰ বৃত্তৰ ভিতৰত থাকে।"
+       }
+      }
+     ],
+     "q": {
+      "en": "Which diagram shows Assam and India?",
+      "as": "কোন চিত্ৰই অসম আৰু ভাৰত দেখুৱায়?"
+     },
+     "widget": {
+      "kind": "setpick",
+      "options": [
+       [
+        [
+         27,
+         50,
+         23
+        ],
+        [
+         73,
+         50,
+         23
+        ]
+       ],
+       [
+        [
+         50,
+         50,
+         44
+        ],
+        [
+         50,
+         50,
+         22
+        ]
+       ],
+       [
+        [
+         36,
+         50,
+         30
+        ],
+        [
+         64,
+         50,
+         30
+        ]
+       ]
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "All of Assam is in India, so one circle sits inside the other.",
+      "as": "গোটেই অসম ভাৰতত, গতিকে এটা বৃত্ত আনটোৰ ভিতৰত।"
+     },
+     "why": {
+      "en": "All of Assam is in India, so one circle sits inside the other.",
+      "as": "গোটেই অসম ভাৰতত, গতিকে এটা বৃত্ত আনটোৰ ভিতৰত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which diagram shows Assam and India?",
+        "as": "কোন চিত্ৰই অসম আৰু ভাৰত দেখুৱায়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           27,
+           50,
+           23
+          ],
+          [
+           73,
+           50,
+           23
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           44
+          ],
+          [
+           50,
+           50,
+           22
+          ]
+         ],
+         [
+          [
+           36,
+           50,
+           30
+          ],
+          [
+           64,
+           50,
+           30
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "All of Assam is in India, so one circle sits inside the other.",
+        "as": "গোটেই অসম ভাৰতত, গতিকে এটা বৃত্ত আনটোৰ ভিতৰত।"
+       },
+       "why": {
+        "en": "All of Assam is in India, so one circle sits inside the other.",
+        "as": "গোটেই অসম ভাৰতত, গতিকে এটা বৃত্ত আনটোৰ ভিতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which diagram shows mangoes and fruit?",
+        "as": "কোন চিত্ৰই আম আৰু ফল দেখুৱায়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           27,
+           50,
+           23
+          ],
+          [
+           73,
+           50,
+           23
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           44
+          ],
+          [
+           50,
+           50,
+           22
+          ]
+         ],
+         [
+          [
+           36,
+           50,
+           30
+          ],
+          [
+           64,
+           50,
+           30
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Every mango is a fruit.",
+        "as": "প্ৰতিটো আম ফল।"
+       },
+       "why": {
+        "en": "Every mango is a fruit.",
+        "as": "প্ৰতিটো আম ফল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u2.q2",
+     "type": "explore",
+     "skill": "r-relate",
+     "q": {
+      "en": "Which diagram shows fruit, mangoes and bananas?",
+      "as": "কোন চিত্ৰই ফল, আম আৰু কল দেখুৱায়?"
+     },
+     "widget": {
+      "kind": "setpick",
+      "options": [
+       [
+        [
+         21,
+         50,
+         18
+        ],
+        [
+         50,
+         50,
+         10
+        ],
+        [
+         79,
+         50,
+         18
+        ]
+       ],
+       [
+        [
+         50,
+         50,
+         46
+        ],
+        [
+         50,
+         50,
+         30
+        ],
+        [
+         50,
+         50,
+         14
+        ]
+       ],
+       [
+        [
+         50,
+         50,
+         46
+        ],
+        [
+         31,
+         50,
+         15
+        ],
+        [
+         69,
+         50,
+         15
+        ]
+       ],
+       [
+        [
+         38,
+         40,
+         26
+        ],
+        [
+         62,
+         40,
+         26
+        ],
+        [
+         50,
+         62,
+         26
+        ]
+       ]
+      ]
+     },
+     "target": 2,
+     "answerText": {
+      "en": "Two separate groups sit inside one larger group.",
+      "as": "দুটা পৃথক গোট এটা ডাঙৰ গোটৰ ভিতৰত।"
+     },
+     "why": {
+      "en": "Two separate groups sit inside one larger group.",
+      "as": "দুটা পৃথক গোট এটা ডাঙৰ গোটৰ ভিতৰত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which diagram shows fruit, mangoes and bananas?",
+        "as": "কোন চিত্ৰই ফল, আম আৰু কল দেখুৱায়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           21,
+           50,
+           18
+          ],
+          [
+           50,
+           50,
+           10
+          ],
+          [
+           79,
+           50,
+           18
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           50,
+           50,
+           30
+          ],
+          [
+           50,
+           50,
+           14
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           31,
+           50,
+           15
+          ],
+          [
+           69,
+           50,
+           15
+          ]
+         ],
+         [
+          [
+           38,
+           40,
+           26
+          ],
+          [
+           62,
+           40,
+           26
+          ],
+          [
+           50,
+           62,
+           26
+          ]
+         ]
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "Two separate groups sit inside one larger group.",
+        "as": "দুটা পৃথক গোট এটা ডাঙৰ গোটৰ ভিতৰত।"
+       },
+       "why": {
+        "en": "Two separate groups sit inside one larger group.",
+        "as": "দুটা পৃথক গোট এটা ডাঙৰ গোটৰ ভিতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which diagram shows India, Assam and Guwahati?",
+        "as": "কোন চিত্ৰই ভাৰত, অসম আৰু গুৱাহাটী দেখুৱায়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           21,
+           50,
+           18
+          ],
+          [
+           50,
+           50,
+           10
+          ],
+          [
+           79,
+           50,
+           18
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           50,
+           50,
+           30
+          ],
+          [
+           50,
+           50,
+           14
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           31,
+           50,
+           15
+          ],
+          [
+           69,
+           50,
+           15
+          ]
+         ],
+         [
+          [
+           38,
+           40,
+           26
+          ],
+          [
+           62,
+           40,
+           26
+          ],
+          [
+           50,
+           62,
+           26
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Each sits wholly inside the next.",
+        "as": "প্ৰতিটো পিছৰটোৰ ভিতৰত।"
+       },
+       "why": {
+        "en": "Each sits wholly inside the next.",
+        "as": "প্ৰতিটো পিছৰটোৰ ভিতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which diagram shows rivers, hills and cups?",
+        "as": "কোন চিত্ৰই নদী, পাহাৰ আৰু কাপ দেখুৱায়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           21,
+           50,
+           18
+          ],
+          [
+           50,
+           50,
+           10
+          ],
+          [
+           79,
+           50,
+           18
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           50,
+           50,
+           30
+          ],
+          [
+           50,
+           50,
+           14
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           31,
+           50,
+           15
+          ],
+          [
+           69,
+           50,
+           15
+          ]
+         ],
+         [
+          [
+           38,
+           40,
+           26
+          ],
+          [
+           62,
+           40,
+           26
+          ],
+          [
+           50,
+           62,
+           26
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "Nothing is two of these at once.",
+        "as": "কোনো বস্তু একেলগে দুটা নহয়।"
+       },
+       "why": {
+        "en": "Nothing is two of these at once.",
+        "as": "কোনো বস্তু একেলগে দুটা নহয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which diagram shows women, teachers and singers?",
+        "as": "কোন চিত্ৰই মহিলা, শিক্ষক আৰু গায়ক দেখুৱায়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           21,
+           50,
+           18
+          ],
+          [
+           50,
+           50,
+           10
+          ],
+          [
+           79,
+           50,
+           18
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           50,
+           50,
+           30
+          ],
+          [
+           50,
+           50,
+           14
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           46
+          ],
+          [
+           31,
+           50,
+           15
+          ],
+          [
+           69,
+           50,
+           15
+          ]
+         ],
+         [
+          [
+           38,
+           40,
+           26
+          ],
+          [
+           62,
+           40,
+           26
+          ],
+          [
+           50,
+           62,
+           26
+          ]
+         ]
+        ]
+       },
+       "target": 3,
+       "answerText": {
+        "en": "A person can be any mix of the three.",
+        "as": "এজন ব্যক্তি তিনিওটাৰ যিকোনো মিশ্ৰণ হ'ব পাৰে।"
+       },
+       "why": {
+        "en": "A person can be any mix of the three.",
+        "as": "এজন ব্যক্তি তিনিওটাৰ যিকোনো মিশ্ৰণ হ'ব পাৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u2.q3",
+     "type": "stepwise",
+     "skill": "r-relate",
+     "q": {
+      "en": "Decide the diagram for animals, cows and tables.",
+      "as": "জীৱ, গৰু আৰু টেবুল ৰ চিত্ৰ ঠিক কৰা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Animals and cows?",
+        "as": "জীৱ আৰু গৰু?"
+       },
+       "options": [
+        {
+         "en": "Cows inside animals",
+         "as": "গৰু জীৱ ৰ ভিতৰত"
+        },
+        {
+         "en": "Apart",
+         "as": "আঁতৰত"
+        },
+        {
+         "en": "Overlapping",
+         "as": "ওপৰা-ওপৰি"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "All cows are animals.",
+        "as": "সকলো গৰু জীৱ।"
+       },
+       "tag": "r-m-inside"
+      },
+      {
+       "ask": {
+        "en": "Animals and tables?",
+        "as": "জীৱ আৰু টেবুল?"
+       },
+       "options": [
+        {
+         "en": "Tables inside animals",
+         "as": "টেবুল জীৱ ৰ ভিতৰত"
+        },
+        {
+         "en": "Apart",
+         "as": "আঁতৰত"
+        },
+        {
+         "en": "Overlapping",
+         "as": "ওপৰা-ওপৰি"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Nothing is both.",
+        "as": "কোনো বস্তু দুয়োটা নহয়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "A nested pair, with one circle apart.",
+      "as": "এটা ভিতৰৰ যোৰ, আৰু এটা আঁতৰৰ বৃত্ত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Decide the diagram for animals, cows and tables.",
+        "as": "জীৱ, গৰু আৰু টেবুল ৰ চিত্ৰ ঠিক কৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Animals and cows?",
+          "as": "জীৱ আৰু গৰু?"
+         },
+         "options": [
+          {
+           "en": "Cows inside animals",
+           "as": "গৰু জীৱ ৰ ভিতৰত"
+          },
+          {
+           "en": "Apart",
+           "as": "আঁতৰত"
+          },
+          {
+           "en": "Overlapping",
+           "as": "ওপৰা-ওপৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "All cows are animals.",
+          "as": "সকলো গৰু জীৱ।"
+         },
+         "tag": "r-m-inside"
+        },
+        {
+         "ask": {
+          "en": "Animals and tables?",
+          "as": "জীৱ আৰু টেবুল?"
+         },
+         "options": [
+          {
+           "en": "Tables inside animals",
+           "as": "টেবুল জীৱ ৰ ভিতৰত"
+          },
+          {
+           "en": "Apart",
+           "as": "আঁতৰত"
+          },
+          {
+           "en": "Overlapping",
+           "as": "ওপৰা-ওপৰি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Nothing is both.",
+          "as": "কোনো বস্তু দুয়োটা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A nested pair, with one circle apart.",
+        "as": "এটা ভিতৰৰ যোৰ, আৰু এটা আঁতৰৰ বৃত্ত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Decide the diagram for birds, crows and chairs.",
+        "as": "চৰাই, কাউৰী আৰু চকী ৰ চিত্ৰ ঠিক কৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Birds and crows?",
+          "as": "চৰাই আৰু কাউৰী?"
+         },
+         "options": [
+          {
+           "en": "Apart",
+           "as": "আঁতৰত"
+          },
+          {
+           "en": "Overlapping",
+           "as": "ওপৰা-ওপৰি"
+          },
+          {
+           "en": "Crows inside birds",
+           "as": "কাউৰী চৰাই ৰ ভিতৰত"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "All crows are birds.",
+          "as": "সকলো কাউৰী চৰাই।"
+         },
+         "tag": "r-m-inside"
+        },
+        {
+         "ask": {
+          "en": "Birds and chairs?",
+          "as": "চৰাই আৰু চকী?"
+         },
+         "options": [
+          {
+           "en": "Chairs inside birds",
+           "as": "চকী চৰাই ৰ ভিতৰত"
+          },
+          {
+           "en": "Apart",
+           "as": "আঁতৰত"
+          },
+          {
+           "en": "Overlapping",
+           "as": "ওপৰা-ওপৰি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Nothing is both.",
+          "as": "কোনো বস্তু দুয়োটা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A nested pair, with one circle apart.",
+        "as": "এটা ভিতৰৰ যোৰ, আৰু এটা আঁতৰৰ বৃত্ত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Decide the diagram for flowers, roses and stones.",
+        "as": "ফুল, গোলাপ আৰু শিল ৰ চিত্ৰ ঠিক কৰা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Flowers and roses?",
+          "as": "ফুল আৰু গোলাপ?"
+         },
+         "options": [
+          {
+           "en": "Apart",
+           "as": "আঁতৰত"
+          },
+          {
+           "en": "Overlapping",
+           "as": "ওপৰা-ওপৰি"
+          },
+          {
+           "en": "Roses inside flowers",
+           "as": "গোলাপ ফুল ৰ ভিতৰত"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "All roses are flowers.",
+          "as": "সকলো গোলাপ ফুল।"
+         },
+         "tag": "r-m-inside"
+        },
+        {
+         "ask": {
+          "en": "Flowers and stones?",
+          "as": "ফুল আৰু শিল?"
+         },
+         "options": [
+          {
+           "en": "Stones inside flowers",
+           "as": "শিল ফুল ৰ ভিতৰত"
+          },
+          {
+           "en": "Apart",
+           "as": "আঁতৰত"
+          },
+          {
+           "en": "Overlapping",
+           "as": "ওপৰা-ওপৰি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Nothing is both.",
+          "as": "কোনো বস্তু দুয়োটা নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A nested pair, with one circle apart.",
+        "as": "এটা ভিতৰৰ যোৰ, আৰু এটা আঁতৰৰ বৃত্ত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u2.q4",
+     "type": "tf",
+     "skill": "r-relate",
+     "s": {
+      "en": "Doctors and women should be drawn as two separate circles.",
+      "as": "চিকিৎসক আৰু মহিলাক দুটা পৃথক বৃত্তত আঁকিব লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Some doctors are women, so the circles overlap.",
+      "as": "কিছুমান চিকিৎসক মহিলা, গতিকে বৃত্ত ওপৰা-ওপৰি।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-inside",
+       "why": {
+        "en": "If every X is a Y, circle X sits wholly inside circle Y.",
+        "as": "প্ৰতিটো X যদি Y হয়, X ৰ বৃত্ত গোটেই Y ৰ বৃত্তৰ ভিতৰত থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u2.q5",
+     "type": "match",
+     "skill": "r-relate",
+     "q": {
+      "en": "Match the pair to how the circles sit",
+      "as": "যোৰক বৃত্তৰ অৱস্থাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Rice, food",
+        "as": "ভাত, খাদ্য"
+       },
+       {
+        "en": "Inside",
+        "as": "ভিতৰত"
+       }
+      ],
+      [
+       {
+        "en": "Boats, birds",
+        "as": "নাও, চৰাই"
+       },
+       {
+        "en": "Apart",
+        "as": "আঁতৰত"
+       }
+      ],
+      [
+       {
+        "en": "Men, singers",
+        "as": "পুৰুষ, গায়ক"
+       },
+       {
+        "en": "Overlap",
+        "as": "ওপৰা-ওপৰি"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Ask whether something can be both.",
+      "as": "কোনোবা দুয়োটা হ'ব পাৰেনে সোধা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Count each region once",
+    "as": "প্ৰতিটো অংশ এবাৰ গণা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Adding two circles counts the overlap twice.",
+     "as": "দুটা বৃত্ত যোগ কৰিলে সাধাৰণ অংশ দুবাৰ পৰে।"
+    },
+    {
+     "en": "At least one = A + B − both.",
+     "as": "অন্ততঃ এটা = A + B − দুয়োটা।"
+    },
+    {
+     "en": "Neither = total − at least one.",
+     "as": "কোনোটো নহয় = মুঠ − অন্ততঃ এটা।"
+    },
+    {
+     "en": "Fill the overlap first, then work outwards.",
+     "as": "প্ৰথমে সাধাৰণ অংশ, তাৰ পিছত বাহিৰলৈ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs14.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Why adding counts twice",
+      "as": "যোগত কিয় দুবাৰ পৰে"
+     },
+     "text": [
+      {
+       "en": "Twenty people drink tea only, eight drink both and twelve drink coffee only. Shade the tea circle and read the total.",
+       "as": "20 জনে কেৱল চাহ, 8 জনে দুয়োটা, 12 জনে কেৱল কফি খায়। চাহৰ বৃত্ত ছাঁ দি মুঠ পঢ়া।"
+      }
+     ],
+     "widget": {
+      "kind": "venn",
+      "n": 2,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       }
+      ],
+      "counts": {
+       "1": 20,
+       "2": 12,
+       "3": 8
+      },
+      "showTotal": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Shade all of the tea circle.",
+        "as": "গোটেই চাহৰ বৃত্ত ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 10
+       },
+       "then": {
+        "en": "Tea is 28. Coffee is 20. But 28 + 20 counts the 8 twice.",
+        "as": "চাহ 28, কফি 20। কিন্তু 28 + 20 ত 8 দুবাৰ পৰে।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now shade all three regions.",
+        "as": "এতিয়া তিনিওটা অংশ ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 14
+       },
+       "then": {
+        "en": "The real total is 40, which is 48 − 8.",
+        "as": "প্ৰকৃত মুঠ 40, অৰ্থাৎ 48 − 8।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "The overlap comes first",
+      "as": "সাধাৰণ অংশ প্ৰথমে"
+     },
+     "text": [
+      {
+       "en": "Write the overlap first. Subtract it from each circle, then deal with the outside.",
+       "as": "প্ৰথমে সাধাৰণ অংশ লিখা। প্ৰতিটো বৃত্তৰ পৰা বিয়োগ কৰা, তাৰ পিছত বাহিৰ চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Overlap",
+        "as": "সাধাৰণ অংশ"
+       },
+       {
+        "en": "Each 'only'",
+        "as": "প্ৰতিটো 'কেৱল'"
+       },
+       {
+        "en": "Outside",
+        "as": "বাহিৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs14.u3.q1",
+     "type": "solve",
+     "skill": "r-count",
+     "q": {
+      "en": "30 students play football, 25 play cricket and 10 play both. How many play at least one?",
+      "as": "30 জন ছাত্ৰই ফুটবল, 25 জনে ক্ৰিকেট আৰু 10 জনে দুয়োটা খেলে। অন্ততঃ এটা খেলা ছাত্ৰ কিমান?"
+     },
+     "answer": "45",
+     "why": {
+      "en": "30 + 25 counts the 10 twice, so subtract once: 45.",
+      "as": "30 + 25 ত 10 দুবাৰ পৰিছে, এবাৰ বিয়োগ কৰা: 45।"
+     },
+     "traps": [
+      {
+       "ans": "55",
+       "tag": "r-m-double",
+       "why": {
+        "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+        "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "30 students play football, 25 play cricket and 10 play both. How many play at least one?",
+        "as": "30 জন ছাত্ৰই ফুটবল, 25 জনে ক্ৰিকেট আৰু 10 জনে দুয়োটা খেলে। অন্ততঃ এটা খেলা ছাত্ৰ কিমান?"
+       },
+       "answer": "45",
+       "why": {
+        "en": "30 + 25 counts the 10 twice, so subtract once: 45.",
+        "as": "30 + 25 ত 10 দুবাৰ পৰিছে, এবাৰ বিয়োগ কৰা: 45।"
+       },
+       "traps": [
+        {
+         "ans": "55",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "42 students play football, 18 play cricket and 12 play both. How many play at least one?",
+        "as": "42 জন ছাত্ৰই ফুটবল, 18 জনে ক্ৰিকেট আৰু 12 জনে দুয়োটা খেলে। অন্ততঃ এটা খেলা ছাত্ৰ কিমান?"
+       },
+       "answer": "48",
+       "why": {
+        "en": "42 + 18 counts the 12 twice, so subtract once: 48.",
+        "as": "42 + 18 ত 12 দুবাৰ পৰিছে, এবাৰ বিয়োগ কৰা: 48।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "26 students play football, 34 play cricket and 15 play both. How many play at least one?",
+        "as": "26 জন ছাত্ৰই ফুটবল, 34 জনে ক্ৰিকেট আৰু 15 জনে দুয়োটা খেলে। অন্ততঃ এটা খেলা ছাত্ৰ কিমান?"
+       },
+       "answer": "45",
+       "why": {
+        "en": "26 + 34 counts the 15 twice, so subtract once: 45.",
+        "as": "26 + 34 ত 15 দুবাৰ পৰিছে, এবাৰ বিয়োগ কৰা: 45।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "50 students play football, 40 play cricket and 22 play both. How many play at least one?",
+        "as": "50 জন ছাত্ৰই ফুটবল, 40 জনে ক্ৰিকেট আৰু 22 জনে দুয়োটা খেলে। অন্ততঃ এটা খেলা ছাত্ৰ কিমান?"
+       },
+       "answer": "68",
+       "why": {
+        "en": "50 + 40 counts the 22 twice, so subtract once: 68.",
+        "as": "50 + 40 ত 22 দুবাৰ পৰিছে, এবাৰ বিয়োগ কৰা: 68।"
+       },
+       "traps": [
+        {
+         "ans": "90",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs14.u3.q2",
+     "type": "solve",
+     "skill": "r-count",
+     "q": {
+      "en": "In a class of 50, 30 read Assamese, 25 read English and 15 read both. How many read neither?",
+      "as": "50 জনৰ শ্ৰেণীত 30 জনে অসমীয়া, 25 জনে ইংৰাজী আৰু 15 জনে দুয়োটা পঢ়ে। কোনোটো নপঢ়া কিমান?"
+     },
+     "answer": "10",
+     "why": {
+      "en": "At least one is 40, so 50 − 40 = 10 read neither.",
+      "as": "অন্ততঃ এটা পঢ়া 40 জন, গতিকে 50 − 40 = 10 জনে কোনোটো নপঢ়ে।"
+     },
+     "traps": [
+      {
+       "ans": "-5",
+       "tag": "r-m-double",
+       "why": {
+        "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+        "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In a class of 50, 30 read Assamese, 25 read English and 15 read both. How many read neither?",
+        "as": "50 জনৰ শ্ৰেণীত 30 জনে অসমীয়া, 25 জনে ইংৰাজী আৰু 15 জনে দুয়োটা পঢ়ে। কোনোটো নপঢ়া কিমান?"
+       },
+       "answer": "10",
+       "why": {
+        "en": "At least one is 40, so 50 − 40 = 10 read neither.",
+        "as": "অন্ততঃ এটা পঢ়া 40 জন, গতিকে 50 − 40 = 10 জনে কোনোটো নপঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "-5",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In a class of 60, 35 read Assamese, 30 read English and 20 read both. How many read neither?",
+        "as": "60 জনৰ শ্ৰেণীত 35 জনে অসমীয়া, 30 জনে ইংৰাজী আৰু 20 জনে দুয়োটা পঢ়ে। কোনোটো নপঢ়া কিমান?"
+       },
+       "answer": "15",
+       "why": {
+        "en": "At least one is 45, so 60 − 45 = 15 read neither.",
+        "as": "অন্ততঃ এটা পঢ়া 45 জন, গতিকে 60 − 45 = 15 জনে কোনোটো নপঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "-5",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In a class of 40, 22 read Assamese, 18 read English and 8 read both. How many read neither?",
+        "as": "40 জনৰ শ্ৰেণীত 22 জনে অসমীয়া, 18 জনে ইংৰাজী আৰু 8 জনে দুয়োটা পঢ়ে। কোনোটো নপঢ়া কিমান?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "At least one is 32, so 40 − 32 = 8 read neither.",
+        "as": "অন্ততঃ এটা পঢ়া 32 জন, গতিকে 40 − 32 = 8 জনে কোনোটো নপঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "0",
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs14.u3.q3",
+     "type": "stepwise",
+     "skill": "r-count",
+     "q": {
+      "en": "Of 50 farmers, 30 grow rice, 28 grow tea and 12 grow both.",
+      "as": "50 জন খেতিয়কৰ 30 জনে ধান, 28 জনে চাহ আৰু 12 জনে দুয়োটা খেতি কৰে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Rice only?",
+        "as": "কেৱল ধান?"
+       },
+       "options": [
+        {
+         "en": "18",
+         "as": "18"
+        },
+        {
+         "en": "42",
+         "as": "42"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "30 − 12 = 18.",
+        "as": "30 − 12 = 18।"
+       },
+       "tag": "r-m-only"
+      },
+      {
+       "ask": {
+        "en": "Tea only?",
+        "as": "কেৱল চাহ?"
+       },
+       "options": [
+        {
+         "en": "40",
+         "as": "40"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "28",
+         "as": "28"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "28 − 12 = 16.",
+        "as": "28 − 12 = 16।"
+       },
+       "tag": "r-m-only"
+      },
+      {
+       "ask": {
+        "en": "Neither?",
+        "as": "কোনোটো নহয়?"
+       },
+       "options": [
+        {
+         "en": "38",
+         "as": "38"
+        },
+        {
+         "en": "-8",
+         "as": "-8"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "50 − (18 + 16 + 12) = 4.",
+        "as": "50 − (18 + 16 + 12) = 4।"
+       },
+       "tag": "r-m-double"
+      }
+     ],
+     "why": {
+      "en": "Fill the overlap first, then each 'only' region, then the outside.",
+      "as": "প্ৰথমে সাধাৰণ অংশ, তাৰ পিছত 'কেৱল' অংশ, শেষত বাহিৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Of 50 farmers, 30 grow rice, 28 grow tea and 12 grow both.",
+        "as": "50 জন খেতিয়কৰ 30 জনে ধান, 28 জনে চাহ আৰু 12 জনে দুয়োটা খেতি কৰে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Rice only?",
+          "as": "কেৱল ধান?"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "42",
+           "as": "42"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "30 − 12 = 18.",
+          "as": "30 − 12 = 18।"
+         },
+         "tag": "r-m-only"
+        },
+        {
+         "ask": {
+          "en": "Tea only?",
+          "as": "কেৱল চাহ?"
+         },
+         "options": [
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "28 − 12 = 16.",
+          "as": "28 − 12 = 16।"
+         },
+         "tag": "r-m-only"
+        },
+        {
+         "ask": {
+          "en": "Neither?",
+          "as": "কোনোটো নহয়?"
+         },
+         "options": [
+          {
+           "en": "38",
+           "as": "38"
+          },
+          {
+           "en": "-8",
+           "as": "-8"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "50 − (18 + 16 + 12) = 4.",
+          "as": "50 − (18 + 16 + 12) = 4।"
+         },
+         "tag": "r-m-double"
+        }
+       ],
+       "why": {
+        "en": "Fill the overlap first, then each 'only' region, then the outside.",
+        "as": "প্ৰথমে সাধাৰণ অংশ, তাৰ পিছত 'কেৱল' অংশ, শেষত বাহিৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Of 70 farmers, 40 grow rice, 35 grow tea and 15 grow both.",
+        "as": "70 জন খেতিয়কৰ 40 জনে ধান, 35 জনে চাহ আৰু 15 জনে দুয়োটা খেতি কৰে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Rice only?",
+          "as": "কেৱল ধান?"
+         },
+         "options": [
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "55",
+           "as": "55"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "40 − 15 = 25.",
+          "as": "40 − 15 = 25।"
+         },
+         "tag": "r-m-only"
+        },
+        {
+         "ask": {
+          "en": "Tea only?",
+          "as": "কেৱল চাহ?"
+         },
+         "options": [
+          {
+           "en": "35",
+           "as": "35"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "50",
+           "as": "50"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "35 − 15 = 20.",
+          "as": "35 − 15 = 20।"
+         },
+         "tag": "r-m-only"
+        },
+        {
+         "ask": {
+          "en": "Neither?",
+          "as": "কোনোটো নহয়?"
+         },
+         "options": [
+          {
+           "en": "55",
+           "as": "55"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "-5",
+           "as": "-5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "70 − (25 + 20 + 15) = 10.",
+          "as": "70 − (25 + 20 + 15) = 10।"
+         },
+         "tag": "r-m-double"
+        }
+       ],
+       "why": {
+        "en": "Fill the overlap first, then each 'only' region, then the outside.",
+        "as": "প্ৰথমে সাধাৰণ অংশ, তাৰ পিছত 'কেৱল' অংশ, শেষত বাহিৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Of 45 farmers, 25 grow rice, 20 grow tea and 10 grow both.",
+        "as": "45 জন খেতিয়কৰ 25 জনে ধান, 20 জনে চাহ আৰু 10 জনে দুয়োটা খেতি কৰে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Rice only?",
+          "as": "কেৱল ধান?"
+         },
+         "options": [
+          {
+           "en": "35",
+           "as": "35"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "25 − 10 = 15.",
+          "as": "25 − 10 = 15।"
+         },
+         "tag": "r-m-only"
+        },
+        {
+         "ask": {
+          "en": "Tea only?",
+          "as": "কেৱল চাহ?"
+         },
+         "options": [
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "20 − 10 = 10.",
+          "as": "20 − 10 = 10।"
+         },
+         "tag": "r-m-only"
+        },
+        {
+         "ask": {
+          "en": "Neither?",
+          "as": "কোনোটো নহয়?"
+         },
+         "options": [
+          {
+           "en": "35",
+           "as": "35"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "0",
+           "as": "0"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "45 − (15 + 10 + 10) = 10.",
+          "as": "45 − (15 + 10 + 10) = 10।"
+         },
+         "tag": "r-m-double"
+        }
+       ],
+       "why": {
+        "en": "Fill the overlap first, then each 'only' region, then the outside.",
+        "as": "প্ৰথমে সাধাৰণ অংশ, তাৰ পিছত 'কেৱল' অংশ, শেষত বাহিৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u3.q4",
+     "type": "tf",
+     "skill": "r-count",
+     "s": {
+      "en": "If 20 like A, 15 like B and 5 like both, then 35 like at least one.",
+      "as": "20 জনে A, 15 জনে B, 5 জনে দুয়োটা ভাল পালে অন্ততঃ এটা ভাল পোৱা 35 জন।"
+     },
+     "answer": false,
+     "why": {
+      "en": "20 + 15 − 5 = 30.",
+      "as": "20 + 15 − 5 = 30।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-double",
+       "why": {
+        "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+        "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u3.q5",
+     "type": "explore",
+     "skill": "r-count",
+     "q": {
+      "en": "Shade everyone who likes exactly one of the two.",
+      "as": "দুটাৰ ঠিক এটা ভাল পোৱা সকলোকে ছাঁ দিয়া।"
+     },
+     "widget": {
+      "kind": "venn",
+      "n": 2,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       }
+      ],
+      "counts": {
+       "1": 14,
+       "2": 9,
+       "3": 6
+      },
+      "showTotal": true
+     },
+     "target": 6,
+     "answerText": {
+      "en": "23 people",
+      "as": "23 জন"
+     },
+     "traps": [
+      {
+       "val": 14,
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Exactly one excludes the overlap: 14 + 9 = 23.",
+      "as": "ঠিক এটা মানে সাধাৰণ অংশ নপৰে: 14 + 9 = 23।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Shade everyone who likes exactly one of the two.",
+        "as": "দুটাৰ ঠিক এটা ভাল পোৱা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ],
+        "counts": {
+         "1": 14,
+         "2": 9,
+         "3": 6
+        },
+        "showTotal": true
+       },
+       "target": 6,
+       "answerText": {
+        "en": "23 people",
+        "as": "23 জন"
+       },
+       "traps": [
+        {
+         "val": 14,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Exactly one excludes the overlap: 14 + 9 = 23.",
+        "as": "ঠিক এটা মানে সাধাৰণ অংশ নপৰে: 14 + 9 = 23।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade everyone who likes exactly one of the two.",
+        "as": "দুটাৰ ঠিক এটা ভাল পোৱা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ],
+        "counts": {
+         "1": 21,
+         "2": 12,
+         "3": 7
+        },
+        "showTotal": true
+       },
+       "target": 6,
+       "answerText": {
+        "en": "33 people",
+        "as": "33 জন"
+       },
+       "traps": [
+        {
+         "val": 14,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Exactly one excludes the overlap: 21 + 12 = 33.",
+        "as": "ঠিক এটা মানে সাধাৰণ অংশ নপৰে: 21 + 12 = 33।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade everyone who likes exactly one of the two.",
+        "as": "দুটাৰ ঠিক এটা ভাল পোৱা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 2,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         }
+        ],
+        "counts": {
+         "1": 8,
+         "2": 16,
+         "3": 5
+        },
+        "showTotal": true
+       },
+       "target": 6,
+       "answerText": {
+        "en": "24 people",
+        "as": "24 জন"
+       },
+       "traps": [
+        {
+         "val": 14,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Exactly one excludes the overlap: 8 + 16 = 24.",
+        "as": "ঠিক এটা মানে সাধাৰণ অংশ নপৰে: 8 + 16 = 24।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Three circles",
+    "as": "তিনিটা বৃত্ত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Three circles make seven inside regions.",
+     "as": "তিনিটা বৃত্তই ভিতৰত সাতটা অংশ বনায়।"
+    },
+    {
+     "en": "The centre belongs to all three.",
+     "as": "মাজৰ অংশ তিনিওটাৰে।"
+    },
+    {
+     "en": "'Exactly two' leaves out the centre.",
+     "as": "'ঠিক দুটা' ত মাজৰ অংশ নপৰে।"
+    },
+    {
+     "en": "Fill from the centre outwards.",
+     "as": "মাজৰ পৰা বাহিৰলৈ পূৰণ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs14.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Seven rooms in three circles",
+      "as": "তিনি বৃত্তত সাতটা কোঠা"
+     },
+     "text": [
+      {
+       "en": "Add a third circle and every old region splits. Tap to find the centre and the 'only' rooms.",
+       "as": "তৃতীয় বৃত্তই পুৰণি অংশবোৰ ভাগ কৰে। টিপি মাজৰ অংশ আৰু 'কেৱল' অংশ বিচাৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "venn",
+      "n": 3,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       },
+       {
+        "en": "Milk",
+        "as": "গাখীৰ"
+       }
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Shade those who take all three.",
+        "as": "তিনিওটা খোৱাসকলক ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 128
+       },
+       "then": {
+        "en": "The centre is the one room inside every circle.",
+        "as": "মাজৰ অংশ সকলো বৃত্তৰ ভিতৰৰ একমাত্ৰ অংশ।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now shade only those who take milk only.",
+        "as": "এতিয়া কেৱল গাখীৰ খোৱাসকলকহে ছাঁ দিয়া।"
+       },
+       "goal": {
+        "sel": 16
+       },
+       "then": {
+        "en": "'Only' now removes two other circles.",
+        "as": "'কেৱল' এতিয়া আন দুটা বৃত্ত আঁতৰায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Read three-set questions inside out",
+      "as": "ভিতৰৰ পৰা বাহিৰলৈ পঢ়া"
+     },
+     "text": [
+      {
+       "en": "The centre has one meaning, so write it first. Then fill the pairs, then each 'only' room.",
+       "as": "মাজৰ অংশৰ অৰ্থ এটাই, সেয়ে প্ৰথমে লিখা। তাৰ পিছত যোৰ, শেষত 'কেৱল' অংশ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Centre",
+        "as": "মাজ"
+       },
+       {
+        "en": "Pairs",
+        "as": "যোৰ"
+       },
+       {
+        "en": "'Only' rooms",
+        "as": "'কেৱল' অংশ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs14.u4.q1",
+     "type": "explore",
+     "skill": "r-three",
+     "q": {
+      "en": "Shade those who take tea and coffee but not milk.",
+      "as": "চাহ আৰু কফি খায় কিন্তু গাখীৰ নোখোৱাসকলক ছাঁ দিয়া।"
+     },
+     "widget": {
+      "kind": "venn",
+      "n": 3,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       },
+       {
+        "en": "Milk",
+        "as": "গাখীৰ"
+       }
+      ]
+     },
+     "target": 8,
+     "answerText": {
+      "en": "The tea-coffee overlap without the centre.",
+      "as": "মাজৰ অংশ বাদে চাহ-কফিৰ সাধাৰণ অংশ।"
+     },
+     "why": {
+      "en": "The tea-coffee overlap without the centre.",
+      "as": "মাজৰ অংশ বাদে চাহ-কফিৰ সাধাৰণ অংশ।"
+     },
+     "traps": [
+      {
+       "val": 136,
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Shade those who take tea and coffee but not milk.",
+        "as": "চাহ আৰু কফি খায় কিন্তু গাখীৰ নোখোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 3,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         },
+         {
+          "en": "Milk",
+          "as": "গাখীৰ"
+         }
+        ]
+       },
+       "target": 8,
+       "answerText": {
+        "en": "The tea-coffee overlap without the centre.",
+        "as": "মাজৰ অংশ বাদে চাহ-কফিৰ সাধাৰণ অংশ।"
+       },
+       "why": {
+        "en": "The tea-coffee overlap without the centre.",
+        "as": "মাজৰ অংশ বাদে চাহ-কফিৰ সাধাৰণ অংশ।"
+       },
+       "traps": [
+        {
+         "val": 136,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Shade those who take coffee and milk but not tea.",
+        "as": "কফি আৰু গাখীৰ খায় কিন্তু চাহ নোখোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 3,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         },
+         {
+          "en": "Milk",
+          "as": "গাখীৰ"
+         }
+        ]
+       },
+       "target": 64,
+       "answerText": {
+        "en": "The coffee-milk overlap without the centre.",
+        "as": "মাজৰ অংশ বাদে কফি-গাখীৰৰ সাধাৰণ অংশ।"
+       },
+       "why": {
+        "en": "The coffee-milk overlap without the centre.",
+        "as": "মাজৰ অংশ বাদে কফি-গাখীৰৰ সাধাৰণ অংশ।"
+       },
+       "traps": [
+        {
+         "val": 192,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Shade those who take tea only.",
+        "as": "কেৱল চাহ খোৱাসকলক ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 3,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         },
+         {
+          "en": "Milk",
+          "as": "গাখীৰ"
+         }
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "The part of tea that no other circle covers.",
+        "as": "চাহৰ আন বৃত্তই নুঢকা অংশ।"
+       },
+       "why": {
+        "en": "The part of tea that no other circle covers.",
+        "as": "চাহৰ আন বৃত্তই নুঢকা অংশ।"
+       },
+       "traps": [
+        {
+         "val": 170,
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs14.u4.q2",
+     "type": "explore",
+     "skill": "r-three",
+     "q": {
+      "en": "Shade everyone in exactly two circles.",
+      "as": "ঠিক দুটা বৃত্তত থকা সকলোকে ছাঁ দিয়া।"
+     },
+     "widget": {
+      "kind": "venn",
+      "n": 3,
+      "sets": [
+       {
+        "en": "Tea",
+        "as": "চাহ"
+       },
+       {
+        "en": "Coffee",
+        "as": "কফি"
+       },
+       {
+        "en": "Milk",
+        "as": "গাখীৰ"
+       }
+      ],
+      "counts": {
+       "1": 10,
+       "2": 8,
+       "3": 3,
+       "4": 6,
+       "5": 4,
+       "6": 5,
+       "7": 2
+      },
+      "showTotal": true
+     },
+     "target": 104,
+     "answerText": {
+      "en": "12 people",
+      "as": "12 জন"
+     },
+     "traps": [
+      {
+       "val": 232,
+       "tag": "r-m-double",
+       "why": {
+        "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+        "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Exactly two leaves out the centre: 3 + 4 + 5 = 12.",
+      "as": "ঠিক দুটা হ'লে মাজৰ অংশ নপৰে: 3 + 4 + 5 = 12।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Shade everyone in exactly two circles.",
+        "as": "ঠিক দুটা বৃত্তত থকা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 3,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         },
+         {
+          "en": "Milk",
+          "as": "গাখীৰ"
+         }
+        ],
+        "counts": {
+         "1": 10,
+         "2": 8,
+         "3": 3,
+         "4": 6,
+         "5": 4,
+         "6": 5,
+         "7": 2
+        },
+        "showTotal": true
+       },
+       "target": 104,
+       "answerText": {
+        "en": "12 people",
+        "as": "12 জন"
+       },
+       "traps": [
+        {
+         "val": 232,
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Exactly two leaves out the centre: 3 + 4 + 5 = 12.",
+        "as": "ঠিক দুটা হ'লে মাজৰ অংশ নপৰে: 3 + 4 + 5 = 12।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade everyone in exactly two circles.",
+        "as": "ঠিক দুটা বৃত্তত থকা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 3,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         },
+         {
+          "en": "Milk",
+          "as": "গাখীৰ"
+         }
+        ],
+        "counts": {
+         "1": 7,
+         "2": 9,
+         "3": 5,
+         "4": 4,
+         "5": 2,
+         "6": 6,
+         "7": 3
+        },
+        "showTotal": true
+       },
+       "target": 104,
+       "answerText": {
+        "en": "13 people",
+        "as": "13 জন"
+       },
+       "traps": [
+        {
+         "val": 232,
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Exactly two leaves out the centre: 5 + 2 + 6 = 13.",
+        "as": "ঠিক দুটা হ'লে মাজৰ অংশ নপৰে: 5 + 2 + 6 = 13।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade everyone in exactly two circles.",
+        "as": "ঠিক দুটা বৃত্তত থকা সকলোকে ছাঁ দিয়া।"
+       },
+       "widget": {
+        "kind": "venn",
+        "n": 3,
+        "sets": [
+         {
+          "en": "Tea",
+          "as": "চাহ"
+         },
+         {
+          "en": "Coffee",
+          "as": "কফি"
+         },
+         {
+          "en": "Milk",
+          "as": "গাখীৰ"
+         }
+        ],
+        "counts": {
+         "1": 12,
+         "2": 5,
+         "3": 4,
+         "4": 8,
+         "5": 6,
+         "6": 3,
+         "7": 1
+        },
+        "showTotal": true
+       },
+       "target": 104,
+       "answerText": {
+        "en": "13 people",
+        "as": "13 জন"
+       },
+       "traps": [
+        {
+         "val": 232,
+         "tag": "r-m-double",
+         "why": {
+          "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+          "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Exactly two leaves out the centre: 4 + 6 + 3 = 13.",
+        "as": "ঠিক দুটা হ'লে মাজৰ অংশ নপৰে: 4 + 6 + 3 = 13।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u4.q3",
+     "type": "solve",
+     "skill": "r-three",
+     "q": {
+      "en": "In the tea circle, 10 are tea only, 4 tea and coffee only, 3 tea and milk only, and 2 all three. How many are in the tea circle?",
+      "as": "চাহৰ বৃত্তত 10 জন কেৱল চাহ, 4 জন কেৱল চাহ আৰু কফি, 3 জন কেৱল চাহ আৰু গাখীৰ, 2 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+     },
+     "answer": "19",
+     "why": {
+      "en": "A circle of three sets has four regions: 19.",
+      "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 19।"
+     },
+     "traps": [
+      {
+       "ans": "10",
+       "tag": "r-m-only",
+       "why": {
+        "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+        "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In the tea circle, 10 are tea only, 4 tea and coffee only, 3 tea and milk only, and 2 all three. How many are in the tea circle?",
+        "as": "চাহৰ বৃত্তত 10 জন কেৱল চাহ, 4 জন কেৱল চাহ আৰু কফি, 3 জন কেৱল চাহ আৰু গাখীৰ, 2 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+       },
+       "answer": "19",
+       "why": {
+        "en": "A circle of three sets has four regions: 19.",
+        "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 19।"
+       },
+       "traps": [
+        {
+         "ans": "10",
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In the tea circle, 15 are tea only, 6 tea and coffee only, 5 tea and milk only, and 3 all three. How many are in the tea circle?",
+        "as": "চাহৰ বৃত্তত 15 জন কেৱল চাহ, 6 জন কেৱল চাহ আৰু কফি, 5 জন কেৱল চাহ আৰু গাখীৰ, 3 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+       },
+       "answer": "29",
+       "why": {
+        "en": "A circle of three sets has four regions: 29.",
+        "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 29।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In the tea circle, 8 are tea only, 7 tea and coffee only, 2 tea and milk only, and 4 all three. How many are in the tea circle?",
+        "as": "চাহৰ বৃত্তত 8 জন কেৱল চাহ, 7 জন কেৱল চাহ আৰু কফি, 2 জন কেৱল চাহ আৰু গাখীৰ, 4 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+       },
+       "answer": "21",
+       "why": {
+        "en": "A circle of three sets has four regions: 21.",
+        "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 21।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "r-m-only",
+         "why": {
+          "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+          "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs14.u4.q4",
+     "type": "stepwise",
+     "skill": "r-three",
+     "q": {
+      "en": "30 like tea. Of these, 6 like tea and coffee only, 5 like tea and milk only and 3 like all three.",
+      "as": "30 জনে চাহ ভাল পায়। ইয়াৰে 6 জনে কেৱল চাহ আৰু কফি, 5 জনে কেৱল চাহ আৰু গাখীৰ, 3 জনে তিনিওটা ভাল পায়।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Start with which region?",
+        "as": "কোন অংশৰ পৰা আৰম্ভ?"
+       },
+       "options": [
+        {
+         "en": "The outside",
+         "as": "বাহিৰ"
+        },
+        {
+         "en": "Tea only",
+         "as": "কেৱল চাহ"
+        },
+        {
+         "en": "The centre",
+         "as": "মাজৰ অংশ"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The centre has one meaning, so it is the safest start.",
+        "as": "মাজৰ অংশৰ অৰ্থ এটাই, সেয়ে ইয়াৰ পৰা আৰম্ভ কৰা সুৰক্ষিত।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Together, the shared parts of tea are?",
+        "as": "চাহৰ সাধাৰণ অংশবোৰৰ মুঠ?"
+       },
+       "options": [
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "11",
+         "as": "11"
+        },
+        {
+         "en": "9",
+         "as": "9"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "6 + 5 + 3.",
+        "as": "6 + 5 + 3।"
+       },
+       "tag": "r-m-double"
+      },
+      {
+       "ask": {
+        "en": "Tea only?",
+        "as": "কেৱল চাহ?"
+       },
+       "options": [
+        {
+         "en": "19",
+         "as": "19"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "30 − 14 = 16.",
+        "as": "30 − 14 = 16।"
+       },
+       "tag": "r-m-only"
+      }
+     ],
+     "why": {
+      "en": "Work outwards from the centre, subtracting what is already placed.",
+      "as": "মাজৰ পৰা বাহিৰলৈ গৈ বহুওৱাখিনি বিয়োগ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "30 like tea. Of these, 6 like tea and coffee only, 5 like tea and milk only and 3 like all three.",
+        "as": "30 জনে চাহ ভাল পায়। ইয়াৰে 6 জনে কেৱল চাহ আৰু কফি, 5 জনে কেৱল চাহ আৰু গাখীৰ, 3 জনে তিনিওটা ভাল পায়।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Start with which region?",
+          "as": "কোন অংশৰ পৰা আৰম্ভ?"
+         },
+         "options": [
+          {
+           "en": "The outside",
+           "as": "বাহিৰ"
+          },
+          {
+           "en": "Tea only",
+           "as": "কেৱল চাহ"
+          },
+          {
+           "en": "The centre",
+           "as": "মাজৰ অংশ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The centre has one meaning, so it is the safest start.",
+          "as": "মাজৰ অংশৰ অৰ্থ এটাই, সেয়ে ইয়াৰ পৰা আৰম্ভ কৰা সুৰক্ষিত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Together, the shared parts of tea are?",
+          "as": "চাহৰ সাধাৰণ অংশবোৰৰ মুঠ?"
+         },
+         "options": [
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "6 + 5 + 3.",
+          "as": "6 + 5 + 3।"
+         },
+         "tag": "r-m-double"
+        },
+        {
+         "ask": {
+          "en": "Tea only?",
+          "as": "কেৱল চাহ?"
+         },
+         "options": [
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "30 − 14 = 16.",
+          "as": "30 − 14 = 16।"
+         },
+         "tag": "r-m-only"
+        }
+       ],
+       "why": {
+        "en": "Work outwards from the centre, subtracting what is already placed.",
+        "as": "মাজৰ পৰা বাহিৰলৈ গৈ বহুওৱাখিনি বিয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "40 like tea. Of these, 8 like tea and coffee only, 7 like tea and milk only and 5 like all three.",
+        "as": "40 জনে চাহ ভাল পায়। ইয়াৰে 8 জনে কেৱল চাহ আৰু কফি, 7 জনে কেৱল চাহ আৰু গাখীৰ, 5 জনে তিনিওটা ভাল পায়।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Start with which region?",
+          "as": "কোন অংশৰ পৰা আৰম্ভ?"
+         },
+         "options": [
+          {
+           "en": "The outside",
+           "as": "বাহিৰ"
+          },
+          {
+           "en": "Tea only",
+           "as": "কেৱল চাহ"
+          },
+          {
+           "en": "The centre",
+           "as": "মাজৰ অংশ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The centre has one meaning, so it is the safest start.",
+          "as": "মাজৰ অংশৰ অৰ্থ এটাই, সেয়ে ইয়াৰ পৰা আৰম্ভ কৰা সুৰক্ষিত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Together, the shared parts of tea are?",
+          "as": "চাহৰ সাধাৰণ অংশবোৰৰ মুঠ?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "8 + 7 + 5.",
+          "as": "8 + 7 + 5।"
+         },
+         "tag": "r-m-double"
+        },
+        {
+         "ask": {
+          "en": "Tea only?",
+          "as": "কেৱল চাহ?"
+         },
+         "options": [
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "40 − 20 = 20.",
+          "as": "40 − 20 = 20।"
+         },
+         "tag": "r-m-only"
+        }
+       ],
+       "why": {
+        "en": "Work outwards from the centre, subtracting what is already placed.",
+        "as": "মাজৰ পৰা বাহিৰলৈ গৈ বহুওৱাখিনি বিয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "25 like tea. Of these, 4 like tea and coffee only, 6 like tea and milk only and 2 like all three.",
+        "as": "25 জনে চাহ ভাল পায়। ইয়াৰে 4 জনে কেৱল চাহ আৰু কফি, 6 জনে কেৱল চাহ আৰু গাখীৰ, 2 জনে তিনিওটা ভাল পায়।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Start with which region?",
+          "as": "কোন অংশৰ পৰা আৰম্ভ?"
+         },
+         "options": [
+          {
+           "en": "The outside",
+           "as": "বাহিৰ"
+          },
+          {
+           "en": "Tea only",
+           "as": "কেৱল চাহ"
+          },
+          {
+           "en": "The centre",
+           "as": "মাজৰ অংশ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The centre has one meaning, so it is the safest start.",
+          "as": "মাজৰ অংশৰ অৰ্থ এটাই, সেয়ে ইয়াৰ পৰা আৰম্ভ কৰা সুৰক্ষিত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Together, the shared parts of tea are?",
+          "as": "চাহৰ সাধাৰণ অংশবোৰৰ মুঠ?"
+         },
+         "options": [
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "4 + 6 + 2.",
+          "as": "4 + 6 + 2।"
+         },
+         "tag": "r-m-double"
+        },
+        {
+         "ask": {
+          "en": "Tea only?",
+          "as": "কেৱল চাহ?"
+         },
+         "options": [
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "25 − 12 = 13.",
+          "as": "25 − 12 = 13।"
+         },
+         "tag": "r-m-only"
+        }
+       ],
+       "why": {
+        "en": "Work outwards from the centre, subtracting what is already placed.",
+        "as": "মাজৰ পৰা বাহিৰলৈ গৈ বহুওৱাখিনি বিয়োগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs14.u4.q5",
+     "type": "tf",
+     "skill": "r-three",
+     "s": {
+      "en": "Three overlapping circles make seven regions inside them.",
+      "as": "তিনিটা ওপৰা-ওপৰি বৃত্তই ভিতৰত সাতটা অংশ বনায়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Three 'only' rooms, three pairs and one centre.",
+      "as": "তিনিটা 'কেৱল', তিনিটা যোৰ আৰু এটা মাজৰ অংশ।"
+     }
+    },
+    {
+     "id": "rs14.u4.q6",
+     "type": "match",
+     "skill": "r-three",
+     "q": {
+      "en": "Match the phrase to how many circles it means",
+      "as": "শব্দক বৃত্তৰ সংখ্যাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Only",
+        "as": "কেৱল"
+       },
+       {
+        "en": "One",
+        "as": "এটা"
+       }
+      ],
+      [
+       {
+        "en": "Exactly two",
+        "as": "ঠিক দুটা"
+       },
+       {
+        "en": "Two",
+        "as": "দুটা"
+       }
+      ],
+      [
+       {
+        "en": "All",
+        "as": "সকলো"
+       },
+       {
+        "en": "Three",
+        "as": "তিনিটা"
+       }
+      ],
+      [
+       {
+        "en": "Neither",
+        "as": "কোনোটো নহয়"
+       },
+       {
+        "en": "No circle",
+        "as": "এটাও নহয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Count the circles that contain the region.",
+      "as": "অংশটো থকা বৃত্ত গণা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Venn test",
+   "as": "ভেন পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs14.t.q1",
+    "type": "mcq",
+    "skill": "r-count",
+    "q": {
+     "en": "24 like A, 18 like B and 6 like both. How many like at least one?",
+     "as": "24 জনে A, 18 জনে B, 6 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা ভাল পোৱা কিমান?"
+    },
+    "why": {
+     "en": "24 + 18 − 6 = 36.",
+     "as": "24 + 18 − 6 = 36।"
+    },
+    "options": [
+     {
+      "en": "42",
+      "as": "42"
+     },
+     {
+      "en": "30",
+      "as": "30"
+     },
+     {
+      "en": "36",
+      "as": "36"
+     },
+     {
+      "en": "18",
+      "as": "18"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "r-m-double",
+      "why": {
+       "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+       "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "24 like A, 18 like B and 6 like both. How many like at least one?",
+       "as": "24 জনে A, 18 জনে B, 6 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা ভাল পোৱা কিমান?"
+      },
+      "why": {
+       "en": "24 + 18 − 6 = 36.",
+       "as": "24 + 18 − 6 = 36।"
+      },
+      "options": [
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "18",
+        "as": "18"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "r-m-double",
+        "why": {
+         "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+         "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "35 like A, 25 like B and 10 like both. How many like at least one?",
+       "as": "35 জনে A, 25 জনে B, 10 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা ভাল পোৱা কিমান?"
+      },
+      "why": {
+       "en": "35 + 25 − 10 = 50.",
+       "as": "35 + 25 − 10 = 50।"
+      },
+      "options": [
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "60",
+        "as": "60"
+       },
+       {
+        "en": "50",
+        "as": "50"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-double",
+        "why": {
+         "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+         "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "40 like A, 15 like B and 7 like both. How many like at least one?",
+       "as": "40 জনে A, 15 জনে B, 7 জনে দুয়োটা ভাল পায়। অন্ততঃ এটা ভাল পোৱা কিমান?"
+      },
+      "why": {
+       "en": "40 + 15 − 7 = 48.",
+       "as": "40 + 15 − 7 = 48।"
+      },
+      "options": [
+       {
+        "en": "33",
+        "as": "33"
+       },
+       {
+        "en": "41",
+        "as": "41"
+       },
+       {
+        "en": "55",
+        "as": "55"
+       },
+       {
+        "en": "48",
+        "as": "48"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-double",
+        "why": {
+         "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+         "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs14.t.q2",
+    "type": "mcq",
+    "skill": "r-count",
+    "q": {
+     "en": "Of 60 people, 30 like A, 25 like B and 10 like both. How many like neither?",
+     "as": "60 জনৰ 30 জনে A, 25 জনে B, 10 জনে দুয়োটা ভাল পায়। কোনোটো ভাল নোপোৱা কিমান?"
+    },
+    "why": {
+     "en": "60 − (30 + 25 − 10) = 15.",
+     "as": "60 − (30 + 25 − 10) = 15।"
+    },
+    "options": [
+     {
+      "en": "15",
+      "as": "15"
+     },
+     {
+      "en": "50",
+      "as": "50"
+     },
+     {
+      "en": "5",
+      "as": "5"
+     },
+     {
+      "en": "45",
+      "as": "45"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "r-m-double",
+      "why": {
+       "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+       "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Of 60 people, 30 like A, 25 like B and 10 like both. How many like neither?",
+       "as": "60 জনৰ 30 জনে A, 25 জনে B, 10 জনে দুয়োটা ভাল পায়। কোনোটো ভাল নোপোৱা কিমান?"
+      },
+      "why": {
+       "en": "60 − (30 + 25 − 10) = 15.",
+       "as": "60 − (30 + 25 − 10) = 15।"
+      },
+      "options": [
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "50",
+        "as": "50"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "r-m-double",
+        "why": {
+         "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+         "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Of 50 people, 28 like A, 20 like B and 8 like both. How many like neither?",
+       "as": "50 জনৰ 28 জনে A, 20 জনে B, 8 জনে দুয়োটা ভাল পায়। কোনোটো ভাল নোপোৱা কিমান?"
+      },
+      "why": {
+       "en": "50 − (28 + 20 − 8) = 10.",
+       "as": "50 − (28 + 20 − 8) = 10।"
+      },
+      "options": [
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-double",
+        "why": {
+         "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+         "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Of 45 people, 20 like A, 22 like B and 7 like both. How many like neither?",
+       "as": "45 জনৰ 20 জনে A, 22 জনে B, 7 জনে দুয়োটা ভাল পায়। কোনোটো ভাল নোপোৱা কিমান?"
+      },
+      "why": {
+       "en": "45 − (20 + 22 − 7) = 10.",
+       "as": "45 − (20 + 22 − 7) = 10।"
+      },
+      "options": [
+       {
+        "en": "38",
+        "as": "38"
+       },
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "r-m-double",
+        "why": {
+         "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+         "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs14.t.q3",
+    "type": "mcq",
+    "skill": "r-region",
+    "q": {
+     "en": "30 people like A and 12 of them also like B. How many like A only?",
+     "as": "30 জনে A ভাল পায়, ইয়াৰে 12 জনে B ও ভাল পায়। কেৱল A ভাল পোৱা কিমান?"
+    },
+    "why": {
+     "en": "Remove the overlap: 30 − 12 = 18.",
+     "as": "সাধাৰণ অংশ আঁতৰোৱা: 30 − 12 = 18।"
+    },
+    "options": [
+     {
+      "en": "42",
+      "as": "42"
+     },
+     {
+      "en": "18",
+      "as": "18"
+     },
+     {
+      "en": "12",
+      "as": "12"
+     },
+     {
+      "en": "30",
+      "as": "30"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "r-m-only",
+      "why": {
+       "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+       "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "30 people like A and 12 of them also like B. How many like A only?",
+       "as": "30 জনে A ভাল পায়, ইয়াৰে 12 জনে B ও ভাল পায়। কেৱল A ভাল পোৱা কিমান?"
+      },
+      "why": {
+       "en": "Remove the overlap: 30 − 12 = 18.",
+       "as": "সাধাৰণ অংশ আঁতৰোৱা: 30 − 12 = 18।"
+      },
+      "options": [
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "18",
+        "as": "18"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-only",
+        "why": {
+         "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+         "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "45 people like A and 20 of them also like B. How many like A only?",
+       "as": "45 জনে A ভাল পায়, ইয়াৰে 20 জনে B ও ভাল পায়। কেৱল A ভাল পোৱা কিমান?"
+      },
+      "why": {
+       "en": "Remove the overlap: 45 − 20 = 25.",
+       "as": "সাধাৰণ অংশ আঁতৰোৱা: 45 − 20 = 25।"
+      },
+      "options": [
+       {
+        "en": "65",
+        "as": "65"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-only",
+        "why": {
+         "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+         "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "28 people like A and 9 of them also like B. How many like A only?",
+       "as": "28 জনে A ভাল পায়, ইয়াৰে 9 জনে B ও ভাল পায়। কেৱল A ভাল পোৱা কিমান?"
+      },
+      "why": {
+       "en": "Remove the overlap: 28 − 9 = 19.",
+       "as": "সাধাৰণ অংশ আঁতৰোৱা: 28 − 9 = 19।"
+      },
+      "options": [
+       {
+        "en": "37",
+        "as": "37"
+       },
+       {
+        "en": "9",
+        "as": "9"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       },
+       {
+        "en": "28",
+        "as": "28"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "r-m-only",
+        "why": {
+         "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+         "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs14.t.q4",
+    "type": "explore",
+    "skill": "r-relate",
+    "q": {
+     "en": "Which diagram shows vegetables, potatoes and cars?",
+     "as": "কোন চিত্ৰই পাচলি, আলু আৰু গাড়ী দেখুৱায়?"
+    },
+    "widget": {
+     "kind": "setpick",
+     "options": [
+      [
+       [
+        32,
+        50,
+        26
+       ],
+       [
+        32,
+        50,
+        13
+       ],
+       [
+        80,
+        50,
+        15
+       ]
+      ],
+      [
+       [
+        50,
+        50,
+        46
+       ],
+       [
+        50,
+        50,
+        30
+       ],
+       [
+        50,
+        50,
+        14
+       ]
+      ],
+      [
+       [
+        50,
+        50,
+        46
+       ],
+       [
+        31,
+        50,
+        15
+       ],
+       [
+        69,
+        50,
+        15
+       ]
+      ],
+      [
+       [
+        38,
+        40,
+        26
+       ],
+       [
+        62,
+        40,
+        26
+       ],
+       [
+        50,
+        62,
+        26
+       ]
+      ]
+     ]
+    },
+    "target": 0,
+    "answerText": {
+     "en": "Potatoes sit inside vegetables, and cars stand apart.",
+     "as": "আলু পাচলিৰ ভিতৰত, গাড়ী আঁতৰত।"
+    },
+    "why": {
+     "en": "Potatoes sit inside vegetables, and cars stand apart.",
+     "as": "আলু পাচলিৰ ভিতৰত, গাড়ী আঁতৰত।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Which diagram shows vegetables, potatoes and cars?",
+       "as": "কোন চিত্ৰই পাচলি, আলু আৰু গাড়ী দেখুৱায়?"
+      },
+      "widget": {
+       "kind": "setpick",
+       "options": [
+        [
+         [
+          32,
+          50,
+          26
+         ],
+         [
+          32,
+          50,
+          13
+         ],
+         [
+          80,
+          50,
+          15
+         ]
+        ],
+        [
+         [
+          50,
+          50,
+          46
+         ],
+         [
+          50,
+          50,
+          30
+         ],
+         [
+          50,
+          50,
+          14
+         ]
+        ],
+        [
+         [
+          50,
+          50,
+          46
+         ],
+         [
+          31,
+          50,
+          15
+         ],
+         [
+          69,
+          50,
+          15
+         ]
+        ],
+        [
+         [
+          38,
+          40,
+          26
+         ],
+         [
+          62,
+          40,
+          26
+         ],
+         [
+          50,
+          62,
+          26
+         ]
+        ]
+       ]
+      },
+      "target": 0,
+      "answerText": {
+       "en": "Potatoes sit inside vegetables, and cars stand apart.",
+       "as": "আলু পাচলিৰ ভিতৰত, গাড়ী আঁতৰত।"
+      },
+      "why": {
+       "en": "Potatoes sit inside vegetables, and cars stand apart.",
+       "as": "আলু পাচলিৰ ভিতৰত, গাড়ী আঁতৰত।"
+      }
+     },
+     {
+      "q": {
+       "en": "Which diagram shows birds, crows and pens?",
+       "as": "কোন চিত্ৰই চৰাই, কাউৰী আৰু কলম দেখুৱায়?"
+      },
+      "widget": {
+       "kind": "setpick",
+       "options": [
+        [
+         [
+          32,
+          50,
+          26
+         ],
+         [
+          32,
+          50,
+          13
+         ],
+         [
+          80,
+          50,
+          15
+         ]
+        ],
+        [
+         [
+          50,
+          50,
+          46
+         ],
+         [
+          50,
+          50,
+          30
+         ],
+         [
+          50,
+          50,
+          14
+         ]
+        ],
+        [
+         [
+          50,
+          50,
+          46
+         ],
+         [
+          31,
+          50,
+          15
+         ],
+         [
+          69,
+          50,
+          15
+         ]
+        ],
+        [
+         [
+          38,
+          40,
+          26
+         ],
+         [
+          62,
+          40,
+          26
+         ],
+         [
+          50,
+          62,
+          26
+         ]
+        ]
+       ]
+      },
+      "target": 0,
+      "answerText": {
+       "en": "Crows sit inside birds, and pens stand apart.",
+       "as": "কাউৰী চৰাইৰ ভিতৰত, কলম আঁতৰত।"
+      },
+      "why": {
+       "en": "Crows sit inside birds, and pens stand apart.",
+       "as": "কাউৰী চৰাইৰ ভিতৰত, কলম আঁতৰত।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs14.t.q5",
+    "type": "tf",
+    "skill": "r-three",
+    "s": {
+     "en": "'Exactly two' includes people in all three circles.",
+     "as": "'ঠিক দুটা' ত তিনিওটা বৃত্তত থকাসকল থাকে।"
+    },
+    "answer": false,
+    "why": {
+     "en": "'Exactly two' leaves out the centre.",
+     "as": "'ঠিক দুটা' ত মাজৰ অংশ নপৰে।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-double",
+      "why": {
+       "en": "You counted the overlap twice. It sits inside both circles, so subtract it once.",
+       "as": "তুমি সাধাৰণ অংশ দুবাৰ গণিলা। ই দুয়োটা বৃত্তত আছে, গতিকে এবাৰ বিয়োগ কৰা।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs14.t.q6",
+    "type": "solve",
+    "skill": "r-three",
+    "q": {
+     "en": "In the tea circle, 9 are tea only, 3 tea and coffee only, 4 tea and milk only, and 2 all three. How many are in the tea circle?",
+     "as": "চাহৰ বৃত্তত 9 জন কেৱল চাহ, 3 জন কেৱল চাহ আৰু কফি, 4 জন কেৱল চাহ আৰু গাখীৰ, 2 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+    },
+    "answer": "18",
+    "why": {
+     "en": "A circle of three sets has four regions: 18.",
+     "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 18।"
+    },
+    "traps": [
+     {
+      "ans": "9",
+      "tag": "r-m-only",
+      "why": {
+       "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+       "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "In the tea circle, 9 are tea only, 3 tea and coffee only, 4 tea and milk only, and 2 all three. How many are in the tea circle?",
+       "as": "চাহৰ বৃত্তত 9 জন কেৱল চাহ, 3 জন কেৱল চাহ আৰু কফি, 4 জন কেৱল চাহ আৰু গাখীৰ, 2 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+      },
+      "answer": "18",
+      "why": {
+       "en": "A circle of three sets has four regions: 18.",
+       "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 18।"
+      },
+      "traps": [
+       {
+        "ans": "9",
+        "tag": "r-m-only",
+        "why": {
+         "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+         "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "In the tea circle, 12 are tea only, 5 tea and coffee only, 2 tea and milk only, and 6 all three. How many are in the tea circle?",
+       "as": "চাহৰ বৃত্তত 12 জন কেৱল চাহ, 5 জন কেৱল চাহ আৰু কফি, 2 জন কেৱল চাহ আৰু গাখীৰ, 6 জন তিনিওটা। চাহৰ বৃত্তত মুঠ কিমান?"
+      },
+      "answer": "25",
+      "why": {
+       "en": "A circle of three sets has four regions: 25.",
+       "as": "তিনি সংহতিত এটা বৃত্তৰ চাৰিটা অংশ: 25।"
+      },
+      "traps": [
+       {
+        "ans": "12",
+        "tag": "r-m-only",
+        "why": {
+         "en": "'Only' leaves out the overlap. Shade just the part of the circle that no other circle covers.",
+         "as": "'কেৱল' কোৱাত সাধাৰণ অংশ নপৰে। বৃত্তৰ আন বৃত্তই নুঢকা অংশহে ছাঁ দিয়া।"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -224,7 +224,7 @@ Reuse them. Their `lessons` lists gain the new ids.
   unit must show the variant the papers use.
 - **No invented dialogue or sources.** Famous sayings appear only in verified wording.
 - **Permanent ids.** Course `indian-history` in subject `indian-history`. Lessons
-  `ih-NN-slug`, reserved in [the generator](authoring/indian_history_outline.py);
+  `ih-NN-slug`, as used in `content/lessons/`;
   steps `ih-NN.uU.SS`. Ids are permanent once published.
 - **Assamese pending review.** All 32 lesson titles and 8 section titles are new
   Assamese, as is every later line of copy.
@@ -251,8 +251,9 @@ of Mysore' (for lesson 17), and the 'father of zero' label, taught as a label in
 Done on 2026-11-05 unless marked open.
 
 1. **Sources.** The four titles this course uses were copied, with their text files,
-   to `/home/angsuman/extra_spac/Indian history sources`. The trashed `Primary source`
-   folder was not restored or changed. `AGENTS.md` still names its old path. **Open:**
+   to `/home/angsuman/extra_spac/Indian history sources`, which was moved to the Trash on
+   2026-11-05 after release. The trashed `Primary source`
+   folder was not restored or changed. **Open:**
    Stein's Rajatarangini volume 1 (Lalitaditya), and the items under `to_locate`.
 2. **India map.** A lesson or card `map` takes `"base": "india"`.
    [build_india_map.py](../scripts/build_india_map.py) writes `content/maps/india.json`
@@ -287,8 +288,7 @@ Done on 2026-11-05 unless marked open.
 ## Phase 2 results
 
 Lessons 5, 25 and 28 are written in English and Assamese: 13 units, 115 unit steps
-and 18 lesson-test questions. Scripts are in `docs/authoring/indian_history_l*.py`
-and use [the kit](authoring/indian_history_kit.py).
+and 18 lesson-test questions.
 
 - `audit_lessons.py`, `build.py`, `check_history_completion.py`, `check_constitution.py`,
   `check_learning_gates.cjs` and `check_daily_review.cjs` pass.
@@ -352,9 +352,8 @@ lesson steps, so it adds no new questions and claims no exam provenance.
 
 ## Content pass
 
-Added by [indian_history_polish.py](authoring/indian_history_polish.py), which runs last
-because the other scripts rebuild the course as a draft. Order: lesson scripts,
-`indian_history_outline.py`, the polish pass, `build_indian_history_bank.py`, `build.py`.
+Added in a final pass over the lesson JSON. After editing lesson steps, run
+`build_indian_history_bank.py`, then `build.py`.
 
 - 32 predictions, one a lesson, each just before the card that answers it. They are not
   scored, and the bank skips them.

@@ -356,7 +356,7 @@ Items 1 to 3 are done. The placeholder picture is still the face of all 60 lesso
 ## Phase 2 results
 
 Lessons 18, 29 and 46 are written in English and Assamese: 17 units, 123 steps and
-18 lesson-test questions. Scripts are in `docs/authoring/constitution_l*.py`.
+18 lesson-test questions.
 
 - `audit_lessons.py` and `build.py` pass. The history completion check passes after
   it was scoped to history lessons.

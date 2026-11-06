@@ -171,10 +171,11 @@ function mount(el, spec, on = () => {}) {
 /* ---------- the engine plugs in here ---------- */
 function bind(ctx) {   // ctx: { U(), refresh(), check(), hintsAllowed() }
   const hintBar = (s) => (s.hints && s.hints.length && ctx.hintsAllowed() ? `<div class="hints" id="hints"></div><button class="chip-btn hint-btn" id="hint">${T(B("Need a hint?", "ইংগিত লাগে নেকি?"))}</button>` : "");
+  const letters = () => `<div class="kp az">${[..."ABCDEFGHIJKLMNOPQRSTUVWXYZ⌫"].map((k) => `<button class="tile" data-key="${k}" aria-label="${k === "⌫" ? "Delete" : k}">${k}</button>`).join("")}</div>`;
   const keypad = () => `<div class="kp">${["7", "8", "9", "⌫", "4", "5", "6", "/", "1", "2", "3", ".", "−", "0"].map((k) => `<button class="tile" data-key="${k}" aria-label="${k === "⌫" ? "Delete" : k}">${k}</button>`).join("")}</div>`;
   const RENDER = {
     solve: (s) => `<p class="prompt mprompt">${T(s.q)}</p>${hintBar(s)}
-      <div class="ans-box" id="ans-box">${s.prefix ? `<span>${T(s.prefix)}</span>` : ""}<output id="ans" aria-live="polite"></output>${s.suffix ? `<span>${T(s.suffix)}</span>` : ""}</div>${keypad()}`,
+      <div class="ans-box" id="ans-box">${s.prefix ? `<span>${T(s.prefix)}</span>` : ""}<output id="ans" aria-live="polite"></output>${s.suffix ? `<span>${T(s.suffix)}</span>` : ""}</div>${s.input === "letters" ? letters() : keypad()}`,
     explore: (s) => `<p class="prompt mprompt">${T(s.q)}</p>${hintBar(s)}<div class="wx" id="wx"></div>`,
     stepwise: (s) => `<p class="prompt mprompt">${T(s.q)}</p><div class="parts" id="parts"></div>`,
   };
@@ -192,7 +193,7 @@ function bind(ctx) {   // ctx: { U(), refresh(), check(), hintsAllowed() }
       const st = ctx.U().st;
       if (!s.tasks) { mount(el, s.widget); return; }
       st.task = 0; st.tasksDone = false;
-      $("#screen").insertAdjacentHTML("beforeend", `<div class="tasks" id="tasks"></div>`);
+      ($(".story-card") || $("#screen")).insertAdjacentHTML("beforeend", `<div class="tasks" id="tasks"></div>`);
       const drawTask = () => {
         const box = $("#tasks"), t = s.tasks[st.task];
         const pips = `<div class="pips">${s.tasks.map((_, k) => `<i class="${k < st.task ? "on" : ""}"></i>`).join("")}</div>`;
@@ -215,13 +216,13 @@ function bind(ctx) {   // ctx: { U(), refresh(), check(), hintsAllowed() }
     },
   };
   const ready = (s, st) => {
-    if (s.type === "solve") return !!st.typed && !Number.isNaN(toNumber(st.typed));
+    if (s.type === "solve") return !!st.typed && (s.input === "letters" || !Number.isNaN(toNumber(st.typed)));
     if (s.type === "explore") return st.w ? (st.w.ready ? st.w.ready() : st.w.touched()) : false;
     return false;   // a stepwise problem checks itself after its last step
   };
   function check(s, st) {
     if (s.type === "solve") {
-      const right = s.exact ? compact(st.typed) === compact(s.answer) : same(st.typed, s.answer);
+      const right = s.exact || s.input === "letters" ? compact(st.typed) === compact(s.answer) : same(st.typed, s.answer);
       $("#ans-box").classList.add(right ? "right" : "wrong");
       $$("[data-key]").forEach((k) => (k.disabled = true));
       return right;
@@ -234,7 +235,7 @@ function bind(ctx) {   // ctx: { U(), refresh(), check(), hintsAllowed() }
     }
     return st.slips.length === 0;
   }
-  const answerHTML = (s) => (s.type === "solve" ? prettyAnswer(s.answer) : "");
+  const answerHTML = (s) => (s.type === "solve" ? (s.input === "letters" ? `<b>${s.answer}</b>` : prettyAnswer(s.answer)) : "");
   // The pattern behind a wrong answer, when the author predicted it.
   function trap(s, st) {
     if (s.slipTrap && st.w && st.w.slips && st.w.slips() > 0) return s.slipTrap;   // the wrong step, not the final value, shows the mistake
@@ -283,7 +284,8 @@ function bind(ctx) {   // ctx: { U(), refresh(), check(), hintsAllowed() }
   document.addEventListener("keydown", (e) => {
     const U = ctx.U();
     if (!U || U.phase !== "answer" || !$("#v-play").classList.contains("on") || U.queue[U.pos].s.type !== "solve" || $("#sheet-root").innerHTML) return;
-    if (/^[0-9./-]$/.test(e.key) || e.key === "Backspace") { e.preventDefault(); press(e.key); }
+    const letterStep = U.queue[U.pos].s.input === "letters";
+    if (e.key === "Backspace" || (letterStep ? /^[a-zA-Z]$/ : /^[0-9./-]$/).test(e.key)) { e.preventDefault(); press(letterStep && e.key !== "Backspace" ? e.key.toUpperCase() : e.key); }
   });
   return { RENDER, SETUP, ready, check, answerHTML, outcomes, coach };
 }

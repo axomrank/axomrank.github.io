@@ -1,0 +1,1986 @@
+{
+ "id": "rs-07-operators",
+ "course": "reasoning",
+ "no": 7,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Symbols and operators",
+  "as": "চিহ্ন আৰু প্ৰক্ৰিয়া"
+ },
+ "reign": {
+  "en": "Replacing, interchanging, balancing",
+  "as": "সলনি, অদল-বদল, সমতা"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Swap the symbols first",
+    "as": "প্ৰথমে চিহ্ন সলনি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Write the real signs before calculating.",
+     "as": "গণনাৰ আগতে আচল চিহ্ন লিখা।"
+    },
+    {
+     "en": "Then use normal order.",
+     "as": "তাৰ পিছত সাধাৰণ ক্ৰম।"
+    },
+    {
+     "en": "× and ÷ come before + and −.",
+     "as": "+ আৰু − ৰ আগত × আৰু ÷।"
+    },
+    {
+     "en": "Only then work left to right.",
+     "as": "তাৰ পিছতহে বাওঁৰ পৰা সোঁলৈ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs7.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Rewrite, then solve",
+      "as": "আকৌ লিখি সমাধান"
+     },
+     "text": [
+      {
+       "en": "The trick is only disguise. Rewrite the line in real signs and it is plain arithmetic.",
+       "as": "কৌশলটো কেৱল ছদ্মবেশ। আচল চিহ্নত লিখিলে সাধাৰণ অংক।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "8 @ 2 # 3",
+        "as": "8 @ 2 # 3"
+       },
+       {
+        "en": "@ is +, # is ×",
+        "as": "@ +, # ×"
+       },
+       {
+        "en": "8 + 2 × 3",
+        "as": "8 + 2 × 3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Order still rules",
+      "as": "ক্ৰম এতিয়াও থাকে"
+     },
+     "text": [
+      {
+       "en": "After rewriting, 8 + 2 × 3 is 14, not 30.",
+       "as": "লিখাৰ পিছত 8 + 2 × 3 = 14, 30 নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "× and ÷",
+        "as": "× আৰু ÷"
+       },
+       {
+        "en": "+ and −",
+        "as": "+ আৰু −"
+       },
+       {
+        "en": "Left to right",
+        "as": "বাওঁৰ পৰা সোঁলৈ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u1.q1",
+     "type": "solve",
+     "skill": "r-opswap",
+     "q": {
+      "en": "@ means +, # means ×. Find 8 @ 2 # 3.",
+      "as": "@ মানে +, # মানে ×। 8 @ 2 # 3 উলিওৱা।"
+     },
+     "answer": "14",
+     "why": {
+      "en": "That is 8 + 2 × 3 = 14.",
+      "as": "সেয়া 8 + 2 × 3 = 14।"
+     },
+     "traps": [
+      {
+       "ans": "30",
+       "tag": "r-m-leftright",
+       "why": {
+        "en": "Replace the symbols, then follow × and ÷ before + and −.",
+        "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "@ means +, # means ×. Find 8 @ 2 # 3.",
+        "as": "@ মানে +, # মানে ×। 8 @ 2 # 3 উলিওৱা।"
+       },
+       "answer": "14",
+       "why": {
+        "en": "That is 8 + 2 × 3 = 14.",
+        "as": "সেয়া 8 + 2 × 3 = 14।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "Replace the symbols, then follow × and ÷ before + and −.",
+          "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "$ means ÷, % means +. Find 20 $ 5 % 2.",
+        "as": "$ মানে ÷, % মানে +। 20 $ 5 % 2 উলিওৱা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "That is 20 ÷ 5 + 2 = 6.",
+        "as": "সেয়া 20 ÷ 5 + 2 = 6।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "# means −, @ means ×. Find 9 # 3 @ 4.",
+        "as": "# মানে −, @ মানে ×। 9 # 3 @ 4 উলিওৱা।"
+       },
+       "answer": "-3",
+       "why": {
+        "en": "That is 9 − 3 × 4 = -3.",
+        "as": "সেয়া 9 − 3 × 4 = -3।"
+       },
+       "traps": [
+        {
+         "ans": "24",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "Replace the symbols, then follow × and ÷ before + and −.",
+          "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs7.u1.q2",
+     "type": "solve",
+     "skill": "r-opswap",
+     "q": {
+      "en": "& means ÷, % means ×. Find 12 & 4 % 5.",
+      "as": "& মানে ÷, % মানে ×। 12 & 4 % 5 উলিওৱা।"
+     },
+     "answer": "15",
+     "why": {
+      "en": "That is 12 ÷ 4 × 5 = 15.",
+      "as": "সেয়া 12 ÷ 4 × 5 = 15।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "& means ÷, % means ×. Find 12 & 4 % 5.",
+        "as": "& মানে ÷, % মানে ×। 12 & 4 % 5 উলিওৱা।"
+       },
+       "answer": "15",
+       "why": {
+        "en": "That is 12 ÷ 4 × 5 = 15.",
+        "as": "সেয়া 12 ÷ 4 × 5 = 15।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "% means +, & means ×. Find 6 % 7 & 2.",
+        "as": "% মানে +, & মানে ×। 6 % 7 & 2 উলিওৱা।"
+       },
+       "answer": "20",
+       "why": {
+        "en": "That is 6 + 7 × 2 = 20.",
+        "as": "সেয়া 6 + 7 × 2 = 20।"
+       },
+       "traps": [
+        {
+         "ans": "26",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "Replace the symbols, then follow × and ÷ before + and −.",
+          "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "& means ÷, @ means −. Find 30 & 6 @ 3.",
+        "as": "& মানে ÷, @ মানে −। 30 & 6 @ 3 উলিওৱা।"
+       },
+       "answer": "2",
+       "why": {
+        "en": "That is 30 ÷ 6 − 3 = 2.",
+        "as": "সেয়া 30 ÷ 6 − 3 = 2।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs7.u1.q3",
+     "type": "tf",
+     "skill": "r-opswap",
+     "s": {
+      "en": "6 + 2 × 5 equals 40.",
+      "as": "6 + 2 × 5 = 40।"
+     },
+     "answer": false,
+     "why": {
+      "en": "× first gives 16.",
+      "as": "× আগতে কৰিলে 16।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-leftright",
+       "why": {
+        "en": "Replace the symbols, then follow × and ÷ before + and −.",
+        "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs7.u1.q4",
+     "type": "match",
+     "skill": "r-opswap",
+     "q": {
+      "en": "Match the line to its value",
+      "as": "শাৰীক মানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2 + 3 × 4",
+        "as": "2 + 3 × 4"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       }
+      ],
+      [
+       {
+        "en": "20 ÷ 5 + 1",
+        "as": "20 ÷ 5 + 1"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "10 − 2 × 3",
+        "as": "10 − 2 × 3"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "× and ÷ first.",
+      "as": "× আৰু ÷ আগতে।"
+     }
+    },
+    {
+     "id": "rs7.u1.q5",
+     "type": "order",
+     "skill": "r-opswap",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the key",
+       "as": "চাবি পঢ়া"
+      },
+      {
+       "en": "Rewrite the line",
+       "as": "শাৰী লিখা"
+      },
+      {
+       "en": "Do × and ÷",
+       "as": "× আৰু ÷"
+      },
+      {
+       "en": "Do + and −",
+       "as": "+ আৰু −"
+      }
+     ],
+     "why": {
+      "en": "Rewrite before calculating.",
+      "as": "গণনাৰ আগতে লিখা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Signs that trade places",
+    "as": "ঠাই সলোৱা চিহ্ন"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Interchange means both ways.",
+     "as": "অদল-বদল মানে দুয়োফালে।"
+    },
+    {
+     "en": "Write the new line first.",
+     "as": "প্ৰথমে নতুন শাৰী লিখা।"
+    },
+    {
+     "en": "Leave other signs alone.",
+     "as": "আন চিহ্ন সলনি নকৰিবা।"
+    },
+    {
+     "en": "Then use normal order.",
+     "as": "তাৰ পিছত সাধাৰণ ক্ৰম।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs7.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Both signs change",
+      "as": "দুয়োটা চিহ্ন সলনি"
+     },
+     "text": [
+      {
+       "en": "If + and × trade places, every + becomes × and every × becomes +.",
+       "as": "+ আৰু × অদল-বদল হ'লে সকলো + × হয়, সকলো × + হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "4 + 3 × 2",
+        "as": "4 + 3 × 2"
+       },
+       {
+        "en": "Trade + and ×",
+        "as": "+ আৰু × অদল-বদল"
+       },
+       {
+        "en": "4 × 3 + 2",
+        "as": "4 × 3 + 2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Other signs stay",
+      "as": "আন চিহ্ন থাকে"
+     },
+     "text": [
+      {
+       "en": "Only the named pair changes. Copy everything else as it is.",
+       "as": "কেৱল নাম লোৱা যোৰ সলনি। বাকীখিনি একেদৰে লিখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Find the pair",
+        "as": "যোৰ উলিওৱা"
+       },
+       {
+        "en": "Swap them",
+        "as": "সলনি"
+       },
+       {
+        "en": "Keep the rest",
+        "as": "বাকী ৰাখা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u2.q1",
+     "type": "solve",
+     "skill": "r-opinter",
+     "q": {
+      "en": "Interchange + and ×. What is 4 + 3 × 2?",
+      "as": "+ আৰু × অদল-বদল কৰা। 4 + 3 × 2 কিমান?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "It becomes 4 × 3 + 2 = 14.",
+      "as": "ই হয় 4 × 3 + 2 = 14।"
+     },
+     "traps": [
+      {
+       "ans": "10",
+       "tag": "r-m-leftright",
+       "why": {
+        "en": "You kept the signs unchanged. Swap them first.",
+        "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Interchange + and ×. What is 4 + 3 × 2?",
+        "as": "+ আৰু × অদল-বদল কৰা। 4 + 3 × 2 কিমান?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "It becomes 4 × 3 + 2 = 14.",
+        "as": "ই হয় 4 × 3 + 2 = 14।"
+       },
+       "traps": [
+        {
+         "ans": "10",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "You kept the signs unchanged. Swap them first.",
+          "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Interchange ÷ and ×. What is 18 ÷ 3 + 2?",
+        "as": "÷ আৰু × অদল-বদল কৰা। 18 ÷ 3 + 2 কিমান?"
+       },
+       "answer": "56",
+       "why": {
+        "en": "It becomes 18 × 3 + 2 = 56.",
+        "as": "ই হয় 18 × 3 + 2 = 56।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "You kept the signs unchanged. Swap them first.",
+          "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Interchange − and +. What is 10 − 2 × 3?",
+        "as": "− আৰু + অদল-বদল কৰা। 10 − 2 × 3 কিমান?"
+       },
+       "answer": "16",
+       "why": {
+        "en": "It becomes 10 + 2 × 3 = 16.",
+        "as": "ই হয় 10 + 2 × 3 = 16।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "You kept the signs unchanged. Swap them first.",
+          "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs7.u2.q2",
+     "type": "tf",
+     "skill": "r-opinter",
+     "s": {
+      "en": "If + and − interchange, 5 + 3 becomes 5 − 3.",
+      "as": "+ আৰু − অদল-বদল হ'লে 5 + 3 হয় 5 − 3।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Each + becomes −.",
+      "as": "প্ৰতিটো + − হয়।"
+     }
+    },
+    {
+     "id": "rs7.u2.q3",
+     "type": "match",
+     "skill": "r-opinter",
+     "q": {
+      "en": "Interchange + and ×, then match",
+      "as": "+ আৰু × অদল-বদল কৰি মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2 + 3",
+        "as": "2 + 3"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      [
+       {
+        "en": "2 × 3",
+        "as": "2 × 3"
+       },
+       {
+        "en": "5",
+        "as": "5"
+       }
+      ],
+      [
+       {
+        "en": "1 + 9",
+        "as": "1 + 9"
+       },
+       {
+        "en": "9",
+        "as": "9"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Change the sign, then calculate.",
+      "as": "চিহ্ন সলাই গণা।"
+     }
+    },
+    {
+     "id": "rs7.u2.q4",
+     "type": "stepwise",
+     "skill": "r-opinter",
+     "q": {
+      "en": "Interchange + and ×: 6 + 2 × 3.",
+      "as": "+ আৰু × অদল-বদল: 6 + 2 × 3।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The new line?",
+        "as": "নতুন শাৰী?"
+       },
+       "options": [
+        {
+         "en": "3 + 2 × 6",
+         "as": "3 + 2 × 6"
+        },
+        {
+         "en": "6 + 2 × 3",
+         "as": "6 + 2 × 3"
+        },
+        {
+         "en": "6 × 2 + 3",
+         "as": "6 × 2 + 3"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Swap only the named signs.",
+        "as": "কেৱল নাম লোৱা চিহ্ন সলনি।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Its value?",
+        "as": "ইয়াৰ মান?"
+       },
+       "options": [
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "17",
+         "as": "17"
+        },
+        {
+         "en": "15",
+         "as": "15"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Replace the symbols, then follow × and ÷ before + and −.",
+        "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+       },
+       "tag": "r-m-leftright"
+      }
+     ],
+     "why": {
+      "en": "Rewrite first, then calculate.",
+      "as": "লিখি গণা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Interchange + and ×: 6 + 2 × 3.",
+        "as": "+ আৰু × অদল-বদল: 6 + 2 × 3।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The new line?",
+          "as": "নতুন শাৰী?"
+         },
+         "options": [
+          {
+           "en": "3 + 2 × 6",
+           "as": "3 + 2 × 6"
+          },
+          {
+           "en": "6 + 2 × 3",
+           "as": "6 + 2 × 3"
+          },
+          {
+           "en": "6 × 2 + 3",
+           "as": "6 × 2 + 3"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Swap only the named signs.",
+          "as": "কেৱল নাম লোৱা চিহ্ন সলনি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Its value?",
+          "as": "ইয়াৰ মান?"
+         },
+         "options": [
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "17",
+           "as": "17"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Replace the symbols, then follow × and ÷ before + and −.",
+          "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         },
+         "tag": "r-m-leftright"
+        }
+       ],
+       "why": {
+        "en": "Rewrite first, then calculate.",
+        "as": "লিখি গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Interchange − and +: 7 − 4 + 2.",
+        "as": "− আৰু + অদল-বদল: 7 − 4 + 2।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The new line?",
+          "as": "নতুন শাৰী?"
+         },
+         "options": [
+          {
+           "en": "7 − 4 + 2",
+           "as": "7 − 4 + 2"
+          },
+          {
+           "en": "2 − 4 + 7",
+           "as": "2 − 4 + 7"
+          },
+          {
+           "en": "7 + 4 − 2",
+           "as": "7 + 4 − 2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Swap only the named signs.",
+          "as": "কেৱল নাম লোৱা চিহ্ন সলনি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Its value?",
+          "as": "ইয়াৰ মান?"
+         },
+         "options": [
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Replace the symbols, then follow × and ÷ before + and −.",
+          "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         },
+         "tag": "r-m-leftright"
+        }
+       ],
+       "why": {
+        "en": "Rewrite first, then calculate.",
+        "as": "লিখি গণা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Interchange × and ÷: 9 ÷ 3 × 2.",
+        "as": "× আৰু ÷ অদল-বদল: 9 ÷ 3 × 2।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The new line?",
+          "as": "নতুন শাৰী?"
+         },
+         "options": [
+          {
+           "en": "2 ÷ 3 × 9",
+           "as": "2 ÷ 3 × 9"
+          },
+          {
+           "en": "9 × 3 ÷ 2",
+           "as": "9 × 3 ÷ 2"
+          },
+          {
+           "en": "9 ÷ 3 × 2",
+           "as": "9 ÷ 3 × 2"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Swap only the named signs.",
+          "as": "কেৱল নাম লোৱা চিহ্ন সলনি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Its value?",
+          "as": "ইয়াৰ মান?"
+         },
+         "options": [
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Replace the symbols, then follow × and ÷ before + and −.",
+          "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+         },
+         "tag": "r-m-leftright"
+        }
+       ],
+       "why": {
+        "en": "Rewrite first, then calculate.",
+        "as": "লিখি গণা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs7.u2.q5",
+     "type": "order",
+     "skill": "r-opinter",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the pair",
+       "as": "যোৰ পঢ়া"
+      },
+      {
+       "en": "Rewrite the line",
+       "as": "শাৰী লিখা"
+      },
+      {
+       "en": "Use normal order",
+       "as": "সাধাৰণ ক্ৰম"
+      },
+      {
+       "en": "Check",
+       "as": "পৰীক্ষা"
+      }
+     ],
+     "why": {
+      "en": "Rewrite first.",
+      "as": "প্ৰথমে লিখা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Make it balance",
+    "as": "সমান কৰা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Work from the known side.",
+     "as": "জনা ফালৰ পৰা আৰম্ভ।"
+    },
+    {
+     "en": "Try the likely sign first.",
+     "as": "সম্ভাব্য চিহ্ন আগতে।"
+    },
+    {
+     "en": "A large result suggests ×.",
+     "as": "ডাঙৰ ফল মানে ×।"
+    },
+    {
+     "en": "Test the full line.",
+     "as": "গোটেই শাৰী চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs7.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Options are your friend",
+      "as": "বিকল্পই সহায়ক"
+     },
+     "text": [
+      {
+       "en": "Trying each sign is quicker than reasoning it out.",
+       "as": "প্ৰতিটো চিহ্ন চোৱাই ভাবি থকাতকৈ খৰ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Try a sign",
+        "as": "চিহ্ন চোৱা"
+       },
+       {
+        "en": "Compute",
+        "as": "গণা"
+       },
+       {
+        "en": "Does it match?",
+        "as": "মিলিলনে?"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Size gives a clue",
+      "as": "আকাৰে ইংগিত দিয়ে"
+     },
+     "text": [
+      {
+       "en": "If the result is much larger than the numbers, try × first.",
+       "as": "ফল সংখ্যাতকৈ বহুত ডাঙৰ হ'লে আগতে × চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "6 ? 5 = 30",
+        "as": "6 ? 5 = 30"
+       },
+       {
+        "en": "Large result",
+        "as": "ডাঙৰ ফল"
+       },
+       {
+        "en": "×",
+        "as": "×"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u3.q1",
+     "type": "stepwise",
+     "skill": "r-opbal",
+     "q": {
+      "en": "Which sign makes this true: 6 ? 5 + 2 = 32?",
+      "as": "কোন চিহ্নই ইয়াক শুদ্ধ কৰে: 6 ? 5 + 2 = 32?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Take away the + part. What must the left give?",
+        "as": "+ অংশ আঁতৰোৱা। বাওঁফালে কিমান হ'ব লাগিব?"
+       },
+       "options": [
+        {
+         "en": "34",
+         "as": "34"
+        },
+        {
+         "en": "32",
+         "as": "32"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "32 − 2.",
+        "as": "32 − 2।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Which sign?",
+        "as": "কোন চিহ্ন?"
+       },
+       "options": [
+        {
+         "en": "+",
+         "as": "+"
+        },
+        {
+         "en": "−",
+         "as": "−"
+        },
+        {
+         "en": "×",
+         "as": "×"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "6 × 5 = 30.",
+        "as": "6 × 5 = 30।"
+       }
+      }
+     ],
+     "why": {
+      "en": "6 × 5 + 2 = 32.",
+      "as": "6 × 5 + 2 = 32।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which sign makes this true: 6 ? 5 + 2 = 32?",
+        "as": "কোন চিহ্নই ইয়াক শুদ্ধ কৰে: 6 ? 5 + 2 = 32?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take away the + part. What must the left give?",
+          "as": "+ অংশ আঁতৰোৱা। বাওঁফালে কিমান হ'ব লাগিব?"
+         },
+         "options": [
+          {
+           "en": "34",
+           "as": "34"
+          },
+          {
+           "en": "32",
+           "as": "32"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "32 − 2.",
+          "as": "32 − 2।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which sign?",
+          "as": "কোন চিহ্ন?"
+         },
+         "options": [
+          {
+           "en": "+",
+           "as": "+"
+          },
+          {
+           "en": "−",
+           "as": "−"
+          },
+          {
+           "en": "×",
+           "as": "×"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "6 × 5 = 30.",
+          "as": "6 × 5 = 30।"
+         }
+        }
+       ],
+       "why": {
+        "en": "6 × 5 + 2 = 32.",
+        "as": "6 × 5 + 2 = 32।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which sign makes this true: 9 ? 4 + 3 = 16?",
+        "as": "কোন চিহ্নই ইয়াক শুদ্ধ কৰে: 9 ? 4 + 3 = 16?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take away the + part. What must the left give?",
+          "as": "+ অংশ আঁতৰোৱা। বাওঁফালে কিমান হ'ব লাগিব?"
+         },
+         "options": [
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "16 − 3.",
+          "as": "16 − 3।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which sign?",
+          "as": "কোন চিহ্ন?"
+         },
+         "options": [
+          {
+           "en": "−",
+           "as": "−"
+          },
+          {
+           "en": "×",
+           "as": "×"
+          },
+          {
+           "en": "+",
+           "as": "+"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "9 + 4 = 13.",
+          "as": "9 + 4 = 13।"
+         }
+        }
+       ],
+       "why": {
+        "en": "9 + 4 + 3 = 16.",
+        "as": "9 + 4 + 3 = 16।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which sign makes this true: 8 ? 3 + 7 = 12?",
+        "as": "কোন চিহ্নই ইয়াক শুদ্ধ কৰে: 8 ? 3 + 7 = 12?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take away the + part. What must the left give?",
+          "as": "+ অংশ আঁতৰোৱা। বাওঁফালে কিমান হ'ব লাগিব?"
+         },
+         "options": [
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "12 − 7.",
+          "as": "12 − 7।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Which sign?",
+          "as": "কোন চিহ্ন?"
+         },
+         "options": [
+          {
+           "en": "×",
+           "as": "×"
+          },
+          {
+           "en": "+",
+           "as": "+"
+          },
+          {
+           "en": "−",
+           "as": "−"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "8 − 3 = 5.",
+          "as": "8 − 3 = 5।"
+         }
+        }
+       ],
+       "why": {
+        "en": "8 − 3 + 7 = 12.",
+        "as": "8 − 3 + 7 = 12।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs7.u3.q2",
+     "type": "solve",
+     "skill": "r-opbal",
+     "q": {
+      "en": "Find the missing number: 3 × ? + 2 = 17.",
+      "as": "নিৰুদ্দিষ্ট সংখ্যা: 3 × ? + 2 = 17।"
+     },
+     "answer": "5",
+     "why": {
+      "en": "17 − 2 = 15, and 15 ÷ 3 = 5.",
+      "as": "17 − 2 = 15, 15 ÷ 3 = 5।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the missing number: 3 × ? + 2 = 17.",
+        "as": "নিৰুদ্দিষ্ট সংখ্যা: 3 × ? + 2 = 17।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "17 − 2 = 15, and 15 ÷ 3 = 5.",
+        "as": "17 − 2 = 15, 15 ÷ 3 = 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the missing number: 4 × ? + 5 = 29.",
+        "as": "নিৰুদ্দিষ্ট সংখ্যা: 4 × ? + 5 = 29।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "29 − 5 = 24, and 24 ÷ 4 = 6.",
+        "as": "29 − 5 = 24, 24 ÷ 4 = 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the missing number: 7 × ? + 1 = 22.",
+        "as": "নিৰুদ্দিষ্ট সংখ্যা: 7 × ? + 1 = 22।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "22 − 1 = 21, and 21 ÷ 7 = 3.",
+        "as": "22 − 1 = 21, 21 ÷ 7 = 3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs7.u3.q3",
+     "type": "tf",
+     "skill": "r-opbal",
+     "s": {
+      "en": "7 × 3 + 2 = 23.",
+      "as": "7 × 3 + 2 = 23।"
+     },
+     "answer": true,
+     "why": {
+      "en": "21 + 2 = 23.",
+      "as": "21 + 2 = 23।"
+     }
+    },
+    {
+     "id": "rs7.u3.q4",
+     "type": "match",
+     "skill": "r-opbal",
+     "q": {
+      "en": "Match the missing sign",
+      "as": "নিৰুদ্দিষ্ট চিহ্ন মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "9 ? 3 = 27",
+        "as": "9 ? 3 = 27"
+       },
+       {
+        "en": "×",
+        "as": "×"
+       }
+      ],
+      [
+       {
+        "en": "9 ? 3 = 12",
+        "as": "9 ? 3 = 12"
+       },
+       {
+        "en": "+",
+        "as": "+"
+       }
+      ],
+      [
+       {
+        "en": "9 ? 3 = 3",
+        "as": "9 ? 3 = 3"
+       },
+       {
+        "en": "÷",
+        "as": "÷"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Test each sign.",
+      "as": "প্ৰতিটো চিহ্ন চোৱা।"
+     }
+    },
+    {
+     "id": "rs7.u3.q5",
+     "type": "order",
+     "skill": "r-opbal",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the target",
+       "as": "লক্ষ্য পঢ়া"
+      },
+      {
+       "en": "Guess by size",
+       "as": "আকাৰে অনুমান"
+      },
+      {
+       "en": "Compute",
+       "as": "গণা"
+      },
+      {
+       "en": "Confirm",
+       "as": "নিশ্চিত"
+      }
+     ],
+     "why": {
+      "en": "Size narrows the choice.",
+      "as": "আকাৰে বাছনি কমায়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Rules in steps",
+    "as": "খোজে খোজে নিয়ম"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Follow stated steps in order.",
+     "as": "কোৱা খোজ ক্ৰমে মানা।"
+    },
+    {
+     "en": "Here brackets do not apply.",
+     "as": "ইয়াত সাধাৰণ ক্ৰম নাখাটে।"
+    },
+    {
+     "en": "To go backward, undo each step.",
+     "as": "ওলোটাকৈ, প্ৰতিটো খোজ উভতোৱা।"
+    },
+    {
+     "en": "Undo from last to first.",
+     "as": "শেষৰ পৰা প্ৰথমলৈ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs7.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Stated steps come first",
+      "as": "কোৱা ক্ৰমেই আগ"
+     },
+     "text": [
+      {
+       "en": "Add 2, then multiply by 3 means (n + 2) × 3. The wording sets the order.",
+       "as": "2 যোগ, তাৰ পিছত 3 ৰে পূৰণ মানে (n + 2) × 3। ভাষাই ক্ৰম ঠিক কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "n",
+        "as": "n"
+       },
+       {
+        "en": "n + 2",
+        "as": "n + 2"
+       },
+       {
+        "en": "(n + 2) × 3",
+        "as": "(n + 2) × 3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Reverse to find the start",
+      "as": "ওলোটাকৈ আৰম্ভণি"
+     },
+     "text": [
+      {
+       "en": "To go back, undo the last step first: × becomes ÷, and + becomes −.",
+       "as": "উভতিবলৈ শেষ খোজ আগতে উভতোৱা: × হয় ÷, + হয় −।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Final value",
+        "as": "শেষৰ মান"
+       },
+       {
+        "en": "Undo last",
+        "as": "শেষটো উভতোৱা"
+       },
+       {
+        "en": "Undo first",
+        "as": "প্ৰথমটো উভতোৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs7.u4.q1",
+     "type": "solve",
+     "skill": "r-opmach",
+     "q": {
+      "en": "Start with 3. Add 4. Multiply by 2. What do you get?",
+      "as": "3 ৰ পৰা আৰম্ভ কৰা। 4 যোগ কৰা। 2 ৰে পূৰণ কৰা। কিমান হ'ল?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "(3 + 4) × 2 = 14.",
+      "as": "(3 + 4) × 2 = 14।"
+     },
+     "traps": [
+      {
+       "ans": "11",
+       "tag": "r-m-leftright",
+       "why": {
+        "en": "Here steps run in the stated order, one at a time.",
+        "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Start with 3. Add 4. Multiply by 2. What do you get?",
+        "as": "3 ৰ পৰা আৰম্ভ কৰা। 4 যোগ কৰা। 2 ৰে পূৰণ কৰা। কিমান হ'ল?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "(3 + 4) × 2 = 14.",
+        "as": "(3 + 4) × 2 = 14।"
+       },
+       "traps": [
+        {
+         "ans": "11",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "Here steps run in the stated order, one at a time.",
+          "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Start with 5. Add 1. Multiply by 3. What do you get?",
+        "as": "5 ৰ পৰা আৰম্ভ কৰা। 1 যোগ কৰা। 3 ৰে পূৰণ কৰা। কিমান হ'ল?"
+       },
+       "answer": "18",
+       "why": {
+        "en": "(5 + 1) × 3 = 18.",
+        "as": "(5 + 1) × 3 = 18।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "Here steps run in the stated order, one at a time.",
+          "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Start with 2. Add 6. Multiply by 4. What do you get?",
+        "as": "2 ৰ পৰা আৰম্ভ কৰা। 6 যোগ কৰা। 4 ৰে পূৰণ কৰা। কিমান হ'ল?"
+       },
+       "answer": "32",
+       "why": {
+        "en": "(2 + 6) × 4 = 32.",
+        "as": "(2 + 6) × 4 = 32।"
+       },
+       "traps": [
+        {
+         "ans": "26",
+         "tag": "r-m-leftright",
+         "why": {
+          "en": "Here steps run in the stated order, one at a time.",
+          "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs7.u4.q2",
+     "type": "solve",
+     "skill": "r-opmach",
+     "q": {
+      "en": "A number has 3 added, then is multiplied by 2, giving 14. Find the number.",
+      "as": "এটা সংখ্যাত 3 যোগ কৰি 2 ৰে পূৰণ কৰাত 14 হ'ল। সংখ্যাটো উলিওৱা।"
+     },
+     "answer": "4",
+     "why": {
+      "en": "14 ÷ 2 = 7, then − 3 = 4.",
+      "as": "14 ÷ 2 = 7, তাৰ পিছত − 3 = 4।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A number has 3 added, then is multiplied by 2, giving 14. Find the number.",
+        "as": "এটা সংখ্যাত 3 যোগ কৰি 2 ৰে পূৰণ কৰাত 14 হ'ল। সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "14 ÷ 2 = 7, then − 3 = 4.",
+        "as": "14 ÷ 2 = 7, তাৰ পিছত − 3 = 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "A number has 2 added, then is multiplied by 5, giving 40. Find the number.",
+        "as": "এটা সংখ্যাত 2 যোগ কৰি 5 ৰে পূৰণ কৰাত 40 হ'ল। সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "40 ÷ 5 = 8, then − 2 = 6.",
+        "as": "40 ÷ 5 = 8, তাৰ পিছত − 2 = 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "A number has 1 added, then is multiplied by 3, giving 30. Find the number.",
+        "as": "এটা সংখ্যাত 1 যোগ কৰি 3 ৰে পূৰণ কৰাত 30 হ'ল। সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "9",
+       "why": {
+        "en": "30 ÷ 3 = 10, then − 1 = 9.",
+        "as": "30 ÷ 3 = 10, তাৰ পিছত − 1 = 9।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs7.u4.q3",
+     "type": "tf",
+     "skill": "r-opmach",
+     "s": {
+      "en": "To undo × 3, you divide by 3.",
+      "as": "× 3 উভতাবলৈ 3 ৰে হৰণ কৰা।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Division undoes multiplication.",
+      "as": "হৰণে পূৰণ উভতায়।"
+     }
+    },
+    {
+     "id": "rs7.u4.q4",
+     "type": "match",
+     "skill": "r-opmach",
+     "q": {
+      "en": "Match the step to its undo",
+      "as": "খোজক উভতোৱাৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "+ 4",
+        "as": "+ 4"
+       },
+       {
+        "en": "− 4",
+        "as": "− 4"
+       }
+      ],
+      [
+       {
+        "en": "× 2",
+        "as": "× 2"
+       },
+       {
+        "en": "÷ 2",
+        "as": "÷ 2"
+       }
+      ],
+      [
+       {
+        "en": "− 5",
+        "as": "− 5"
+       },
+       {
+        "en": "+ 5",
+        "as": "+ 5"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each has an opposite.",
+      "as": "প্ৰতিটোৰ বিপৰীত আছে।"
+     }
+    },
+    {
+     "id": "rs7.u4.q5",
+     "type": "order",
+     "skill": "r-opmach",
+     "q": {
+      "en": "Start 2, add 3, double, take 1: order the values",
+      "as": "2 ৰ পৰা, 3 যোগ, দুগুণ, 1 বিয়োগ: মান ক্ৰমে"
+     },
+     "items": [
+      {
+       "en": "2",
+       "as": "2"
+      },
+      {
+       "en": "5",
+       "as": "5"
+      },
+      {
+       "en": "10",
+       "as": "10"
+      },
+      {
+       "en": "9",
+       "as": "9"
+      }
+     ],
+     "why": {
+      "en": "Follow each step.",
+      "as": "প্ৰতিটো খোজ মানা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Operators test",
+   "as": "চিহ্নৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs7.t.q1",
+    "type": "solve",
+    "skill": "r-opswap",
+    "q": {
+     "en": "@ means +, # means ×. Find 7 @ 3 # 2.",
+     "as": "@ মানে +, # মানে ×। 7 @ 3 # 2 উলিওৱা।"
+    },
+    "answer": "13",
+    "why": {
+     "en": "That is 7 + 3 × 2 = 13.",
+     "as": "সেয়া 7 + 3 × 2 = 13।"
+    },
+    "traps": [
+     {
+      "ans": "20",
+      "tag": "r-m-leftright",
+      "why": {
+       "en": "Replace the symbols, then follow × and ÷ before + and −.",
+       "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "@ means +, # means ×. Find 7 @ 3 # 2.",
+       "as": "@ মানে +, # মানে ×। 7 @ 3 # 2 উলিওৱা।"
+      },
+      "answer": "13",
+      "why": {
+       "en": "That is 7 + 3 × 2 = 13.",
+       "as": "সেয়া 7 + 3 × 2 = 13।"
+      },
+      "traps": [
+       {
+        "ans": "20",
+        "tag": "r-m-leftright",
+        "why": {
+         "en": "Replace the symbols, then follow × and ÷ before + and −.",
+         "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$ means ÷, % means +. Find 24 $ 6 % 1.",
+       "as": "$ মানে ÷, % মানে +। 24 $ 6 % 1 উলিওৱা।"
+      },
+      "answer": "5",
+      "why": {
+       "en": "That is 24 ÷ 6 + 1 = 5.",
+       "as": "সেয়া 24 ÷ 6 + 1 = 5।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs7.t.q2",
+    "type": "solve",
+    "skill": "r-opswap",
+    "q": {
+     "en": "# means ×, @ means −. Find 5 # 4 @ 3.",
+     "as": "# মানে ×, @ মানে −। 5 # 4 @ 3 উলিওৱা।"
+    },
+    "answer": "17",
+    "why": {
+     "en": "That is 5 × 4 − 3 = 17.",
+     "as": "সেয়া 5 × 4 − 3 = 17।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "# means ×, @ means −. Find 5 # 4 @ 3.",
+       "as": "# মানে ×, @ মানে −। 5 # 4 @ 3 উলিওৱা।"
+      },
+      "answer": "17",
+      "why": {
+       "en": "That is 5 × 4 − 3 = 17.",
+       "as": "সেয়া 5 × 4 − 3 = 17।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "% means +, $ means ×. Find 9 % 2 $ 4.",
+       "as": "% মানে +, $ মানে ×। 9 % 2 $ 4 উলিওৱা।"
+      },
+      "answer": "17",
+      "why": {
+       "en": "That is 9 + 2 × 4 = 17.",
+       "as": "সেয়া 9 + 2 × 4 = 17।"
+      },
+      "traps": [
+       {
+        "ans": "44",
+        "tag": "r-m-leftright",
+        "why": {
+         "en": "Replace the symbols, then follow × and ÷ before + and −.",
+         "as": "চিহ্ন সলনি কৰি যোগ-বিয়োগৰ আগতে পূৰণ-হৰণ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs7.t.q3",
+    "type": "solve",
+    "skill": "r-opinter",
+    "q": {
+     "en": "Interchange + and ×. What is 3 + 5 × 2?",
+     "as": "+ আৰু × অদল-বদল কৰা। 3 + 5 × 2 কিমান?"
+    },
+    "answer": "17",
+    "why": {
+     "en": "It becomes 3 × 5 + 2 = 17.",
+     "as": "ই হয় 3 × 5 + 2 = 17।"
+    },
+    "traps": [
+     {
+      "ans": "13",
+      "tag": "r-m-leftright",
+      "why": {
+       "en": "You kept the signs unchanged. Swap them first.",
+       "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Interchange + and ×. What is 3 + 5 × 2?",
+       "as": "+ আৰু × অদল-বদল কৰা। 3 + 5 × 2 কিমান?"
+      },
+      "answer": "17",
+      "why": {
+       "en": "It becomes 3 × 5 + 2 = 17.",
+       "as": "ই হয় 3 × 5 + 2 = 17।"
+      },
+      "traps": [
+       {
+        "ans": "13",
+        "tag": "r-m-leftright",
+        "why": {
+         "en": "You kept the signs unchanged. Swap them first.",
+         "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Interchange ÷ and ×. What is 12 ÷ 4 + 1?",
+       "as": "÷ আৰু × অদল-বদল কৰা। 12 ÷ 4 + 1 কিমান?"
+      },
+      "answer": "49",
+      "why": {
+       "en": "It becomes 12 × 4 + 1 = 49.",
+       "as": "ই হয় 12 × 4 + 1 = 49।"
+      },
+      "traps": [
+       {
+        "ans": "4",
+        "tag": "r-m-leftright",
+        "why": {
+         "en": "You kept the signs unchanged. Swap them first.",
+         "as": "তুমি চিহ্ন সলনি কৰা নাই। প্ৰথমে অদল-বদল কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs7.t.q4",
+    "type": "solve",
+    "skill": "r-opmach",
+    "q": {
+     "en": "Start with 7. Add 2. Multiply by 3. What do you get?",
+     "as": "7 ৰ পৰা আৰম্ভ কৰা। 2 যোগ কৰা। 3 ৰে পূৰণ কৰা। কিমান হ'ল?"
+    },
+    "answer": "27",
+    "why": {
+     "en": "(7 + 2) × 3 = 27.",
+     "as": "(7 + 2) × 3 = 27।"
+    },
+    "traps": [
+     {
+      "ans": "13",
+      "tag": "r-m-leftright",
+      "why": {
+       "en": "Here steps run in the stated order, one at a time.",
+       "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Start with 7. Add 2. Multiply by 3. What do you get?",
+       "as": "7 ৰ পৰা আৰম্ভ কৰা। 2 যোগ কৰা। 3 ৰে পূৰণ কৰা। কিমান হ'ল?"
+      },
+      "answer": "27",
+      "why": {
+       "en": "(7 + 2) × 3 = 27.",
+       "as": "(7 + 2) × 3 = 27।"
+      },
+      "traps": [
+       {
+        "ans": "13",
+        "tag": "r-m-leftright",
+        "why": {
+         "en": "Here steps run in the stated order, one at a time.",
+         "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Start with 4. Add 5. Multiply by 2. What do you get?",
+       "as": "4 ৰ পৰা আৰম্ভ কৰা। 5 যোগ কৰা। 2 ৰে পূৰণ কৰা। কিমান হ'ল?"
+      },
+      "answer": "18",
+      "why": {
+       "en": "(4 + 5) × 2 = 18.",
+       "as": "(4 + 5) × 2 = 18।"
+      },
+      "traps": [
+       {
+        "ans": "14",
+        "tag": "r-m-leftright",
+        "why": {
+         "en": "Here steps run in the stated order, one at a time.",
+         "as": "ইয়াত খোজবোৰ কোৱা ক্ৰমতে এটা এটাকৈ।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs7.t.q5",
+    "type": "tf",
+    "skill": "r-opbal",
+    "s": {
+     "en": "8 − 3 × 2 = 2.",
+     "as": "8 − 3 × 2 = 2।"
+    },
+    "answer": true,
+    "why": {
+     "en": "× first: 8 − 6 = 2.",
+     "as": "× আগতে: 8 − 6 = 2।"
+    }
+   },
+   {
+    "id": "rs7.t.q6",
+    "type": "tf",
+    "skill": "r-opswap",
+    "s": {
+     "en": "Rewrite symbols before calculating.",
+     "as": "গণনাৰ আগতে চিহ্ন লিখা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It avoids mix-ups.",
+     "as": "ই ভুল ৰোধ কৰে।"
+    }
+   }
+  ]
+ }
+}

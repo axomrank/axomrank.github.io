@@ -1,0 +1,1366 @@
+{
+ "id": "rs-15-syllogism",
+ "course": "reasoning",
+ "no": 15,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Syllogisms",
+  "as": "ন্যায়"
+ },
+ "reign": {
+  "en": "All, some, no, and what must follow",
+  "as": "সকলো, কিছুমান, কোনো নহয়"
+ },
+ "portrait": "reasoning/logic.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Draw the statement",
+    "as": "উক্তি আঁকা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "All A are B: A sits inside B.",
+     "as": "সকলো A, B: A, B ৰ ভিতৰত।"
+    },
+    {
+     "en": "No A is B: circles stay apart.",
+     "as": "কোনো A, B নহয়: বৃত্ত আঁতৰত।"
+    },
+    {
+     "en": "Some A are B: circles overlap.",
+     "as": "কিছুমান A, B: বৃত্ত ওপৰা-ওপৰি।"
+    },
+    {
+     "en": "Accept the statements as true.",
+     "as": "উক্তি সত্য বুলি ধৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs15.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Three pictures",
+      "as": "তিনিটা চিত্ৰ"
+     },
+     "text": [
+      {
+       "en": "Every statement here is a picture. Draw it before you read the conclusion.",
+       "as": "ইয়াৰ প্ৰতিটো উক্তি এটা চিত্ৰ। সিদ্ধান্ত পঢ়াৰ আগতে আঁকা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "All: inside",
+        "as": "সকলো: ভিতৰত"
+       },
+       {
+        "en": "No: apart",
+        "as": "কোনো নহয়: আঁতৰত"
+       },
+       {
+        "en": "Some: overlap",
+        "as": "কিছুমান: ওপৰা-ওপৰি"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs15.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Odd statements still count",
+      "as": "অদ্ভুত উক্তিও মানিব লাগে"
+     },
+     "text": [
+      {
+       "en": "'All cats are chairs' is silly, but here it is true. Logic, not life.",
+       "as": "'সকলো মেকুৰী চকী' অদ্ভুত, কিন্তু ইয়াত সত্য। জীৱন নহয়, যুক্তি।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Accept it",
+        "as": "গ্ৰহণ কৰা"
+       },
+       {
+        "en": "Draw it",
+        "as": "আঁকা"
+       },
+       {
+        "en": "Test it",
+        "as": "পৰীক্ষা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs15.u1.q1",
+     "type": "explore",
+     "skill": "r-syall",
+     "q": {
+      "en": "Which picture shows: all roses are flowers?",
+      "as": "কোন চিত্ৰই দেখুৱায়: সকলো গোলাপ ফুল?"
+     },
+     "widget": {
+      "kind": "setpick",
+      "options": [
+       [
+        [
+         27,
+         50,
+         23
+        ],
+        [
+         73,
+         50,
+         23
+        ]
+       ],
+       [
+        [
+         50,
+         50,
+         44
+        ],
+        [
+         50,
+         50,
+         22
+        ]
+       ],
+       [
+        [
+         36,
+         50,
+         30
+        ],
+        [
+         64,
+         50,
+         30
+        ]
+       ]
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "Roses sit inside flowers.",
+      "as": "গোলাপ ফুলৰ ভিতৰত।"
+     },
+     "why": {
+      "en": "Roses sit inside flowers.",
+      "as": "গোলাপ ফুলৰ ভিতৰত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Which picture shows: all roses are flowers?",
+        "as": "কোন চিত্ৰই দেখুৱায়: সকলো গোলাপ ফুল?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           27,
+           50,
+           23
+          ],
+          [
+           73,
+           50,
+           23
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           44
+          ],
+          [
+           50,
+           50,
+           22
+          ]
+         ],
+         [
+          [
+           36,
+           50,
+           30
+          ],
+          [
+           64,
+           50,
+           30
+          ]
+         ]
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "Roses sit inside flowers.",
+        "as": "গোলাপ ফুলৰ ভিতৰত।"
+       },
+       "why": {
+        "en": "Roses sit inside flowers.",
+        "as": "গোলাপ ফুলৰ ভিতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which picture shows: no pen is a cup?",
+        "as": "কোন চিত্ৰই দেখুৱায়: কোনো কলম কাপ নহয়?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           27,
+           50,
+           23
+          ],
+          [
+           73,
+           50,
+           23
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           44
+          ],
+          [
+           50,
+           50,
+           22
+          ]
+         ],
+         [
+          [
+           36,
+           50,
+           30
+          ],
+          [
+           64,
+           50,
+           30
+          ]
+         ]
+        ]
+       },
+       "target": 0,
+       "answerText": {
+        "en": "The circles stay apart.",
+        "as": "বৃত্ত আঁতৰত।"
+       },
+       "why": {
+        "en": "The circles stay apart.",
+        "as": "বৃত্ত আঁতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Which picture shows: some boys are singers?",
+        "as": "কোন চিত্ৰই দেখুৱায়: কিছুমান ল'ৰা গায়ক?"
+       },
+       "widget": {
+        "kind": "setpick",
+        "options": [
+         [
+          [
+           27,
+           50,
+           23
+          ],
+          [
+           73,
+           50,
+           23
+          ]
+         ],
+         [
+          [
+           50,
+           50,
+           44
+          ],
+          [
+           50,
+           50,
+           22
+          ]
+         ],
+         [
+          [
+           36,
+           50,
+           30
+          ],
+          [
+           64,
+           50,
+           30
+          ]
+         ]
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "The circles overlap.",
+        "as": "বৃত্ত ওপৰা-ওপৰি।"
+       },
+       "why": {
+        "en": "The circles overlap.",
+        "as": "বৃত্ত ওপৰা-ওপৰি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs15.u1.q2",
+     "type": "tf",
+     "skill": "r-syall",
+     "s": {
+      "en": "If all dogs are animals, then all animals are dogs.",
+      "as": "সকলো কুকুৰ জীৱ হ'লে সকলো জীৱ কুকুৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The bigger circle holds more.",
+      "as": "ডাঙৰ বৃত্তত বেছি থাকে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-reverseall",
+       "why": {
+        "en": "'All A are B' does not mean all B are A.",
+        "as": "'সকলো A, B' মানে সকলো B, A নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs15.u1.q3",
+     "type": "tf",
+     "skill": "r-syall",
+     "s": {
+      "en": "If no pens are cups, then no cups are pens.",
+      "as": "কোনো কলম কাপ নহ'লে কোনো কাপ কলম নহয়।"
+     },
+     "answer": true,
+     "why": {
+      "en": "'No' works both ways.",
+      "as": "'কোনো নহয়' দুয়োফালে খাটে।"
+     }
+    },
+    {
+     "id": "rs15.u1.q4",
+     "type": "match",
+     "skill": "r-syall",
+     "q": {
+      "en": "Match the words to the picture",
+      "as": "শব্দক চিত্ৰৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "All A are B",
+        "as": "সকলো A, B"
+       },
+       {
+        "en": "A inside B",
+        "as": "A, B ৰ ভিতৰত"
+       }
+      ],
+      [
+       {
+        "en": "No A is B",
+        "as": "কোনো A, B নহয়"
+       },
+       {
+        "en": "Apart",
+        "as": "আঁতৰত"
+       }
+      ],
+      [
+       {
+        "en": "Some A are B",
+        "as": "কিছুমান A, B"
+       },
+       {
+        "en": "Overlap",
+        "as": "ওপৰা-ওপৰি"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Three pictures.",
+      "as": "তিনিটা চিত্ৰ।"
+     }
+    },
+    {
+     "id": "rs15.u1.q5",
+     "type": "order",
+     "skill": "r-syall",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Accept the statements",
+       "as": "উক্তি গ্ৰহণ"
+      },
+      {
+       "en": "Draw them",
+       "as": "আঁকা"
+      },
+      {
+       "en": "Read the conclusion",
+       "as": "সিদ্ধান্ত পঢ়া"
+      },
+      {
+       "en": "Test it",
+       "as": "পৰীক্ষা"
+      }
+     ],
+     "why": {
+      "en": "Draw before reading.",
+      "as": "পঢ়াৰ আগতে আঁকা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "What 'some' really says",
+    "as": "'কিছুমান'ৰ প্ৰকৃত অৰ্থ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "'Some' means at least one.",
+     "as": "'কিছুমান' মানে অন্ততঃ এটা।"
+    },
+    {
+     "en": "It may even be all.",
+     "as": "সকলোও হ'ব পাৰে।"
+    },
+    {
+     "en": "'Some A are B' works both ways.",
+     "as": "'কিছুমান A, B' দুয়োফালে খাটে।"
+    },
+    {
+     "en": "'Some are not' is a separate claim.",
+     "as": "'কিছুমান নহয়' পৃথক কথা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs15.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Some is small",
+      "as": "'কিছুমান' সৰু"
+     },
+     "text": [
+      {
+       "en": "'Some birds fly' does not mean some do not. It claims only at least one.",
+       "as": "'কিছুমান চৰাই উৰে' মানে আন কিছুমান নুৰে নহয়। অন্ততঃ এটাহে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "At least one",
+        "as": "অন্ততঃ এটা"
+       },
+       {
+        "en": "Maybe all",
+        "as": "সকলো হ'ব পাৰে"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs15.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "It runs both ways",
+      "as": "দুয়োফালে"
+     },
+     "text": [
+      {
+       "en": "Some boys are singers means some singers are boys. The overlap is shared.",
+       "as": "কিছুমান ল'ৰা গায়ক মানে কিছুমান গায়ক ল'ৰা। সাধাৰণ অংশ দুয়োৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Boys",
+        "as": "ল'ৰা"
+       },
+       {
+        "en": "Overlap",
+        "as": "সাধাৰণ অংশ"
+       },
+       {
+        "en": "Singers",
+        "as": "গায়ক"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs15.u2.q1",
+     "type": "tf",
+     "skill": "r-sysome",
+     "s": {
+      "en": "'Some A are B' guarantees that some A are not B.",
+      "as": "'কিছুমান A, B' ত কিছুমান A, B নহয় নিশ্চিত।"
+     },
+     "answer": false,
+     "why": {
+      "en": "All A may be B.",
+      "as": "সকলো A, B হ'ব পাৰে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-could",
+       "why": {
+        "en": "It could be true, but it need not be. Find a diagram where it fails.",
+        "as": "ই সত্য হ'ব পাৰে, কিন্তু নহ'বও পাৰে। নিমিলা চিত্ৰ বিচাৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs15.u2.q2",
+     "type": "tf",
+     "skill": "r-sysome",
+     "s": {
+      "en": "'Some A are B' means some B are A.",
+      "as": "'কিছুমান A, B' মানে কিছুমান B, A।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The overlap is shared.",
+      "as": "সাধাৰণ অংশ দুয়োৰে।"
+     }
+    },
+    {
+     "id": "rs15.u2.q3",
+     "type": "match",
+     "skill": "r-sysome",
+     "q": {
+      "en": "Match the statement to what follows",
+      "as": "উক্তিক ফলৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "All A are B",
+        "as": "সকলো A, B"
+       },
+       {
+        "en": "Some B are A",
+        "as": "কিছুমান B, A"
+       }
+      ],
+      [
+       {
+        "en": "Some A are B",
+        "as": "কিছুমান A, B"
+       },
+       {
+        "en": "Some B are A too",
+        "as": "কিছুমান B, A ও"
+       }
+      ],
+      [
+       {
+        "en": "No A is B",
+        "as": "কোনো A, B নহয়"
+       },
+       {
+        "en": "No B is A",
+        "as": "কোনো B, A নহয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Check each.",
+      "as": "প্ৰতিটো চোৱা।"
+     }
+    },
+    {
+     "id": "rs15.u2.q4",
+     "type": "stepwise",
+     "skill": "r-sysome",
+     "q": {
+      "en": "Some boys are singers. All singers are artists. Does 'some boys are artists' follow?",
+      "as": "কিছুমান ল'ৰা গায়ক। সকলো গায়ক শিল্পী। 'কিছুমান ল'ৰা শিল্পী' ওলায়নে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Where are those boys?",
+        "as": "সেই ল'ৰা ক'ত?"
+       },
+       "options": [
+        {
+         "en": "Outside",
+         "as": "বাহিৰত"
+        },
+        {
+         "en": "Nowhere",
+         "as": "ক'তো নাই"
+        },
+        {
+         "en": "Inside singers",
+         "as": "গায়ক ৰ ভিতৰত"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The overlap.",
+        "as": "সাধাৰণ অংশ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "And so?",
+        "as": "তেন্তে?"
+       },
+       "options": [
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        },
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Cannot tell",
+         "as": "ক'ব নোৱাৰি"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Singers sit inside artists.",
+        "as": "গায়ক শিল্পী ৰ ভিতৰত।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The overlap lies inside the larger circle.",
+      "as": "সাধাৰণ অংশ ডাঙৰ বৃত্তৰ ভিতৰত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Some boys are singers. All singers are artists. Does 'some boys are artists' follow?",
+        "as": "কিছুমান ল'ৰা গায়ক। সকলো গায়ক শিল্পী। 'কিছুমান ল'ৰা শিল্পী' ওলায়নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Where are those boys?",
+          "as": "সেই ল'ৰা ক'ত?"
+         },
+         "options": [
+          {
+           "en": "Outside",
+           "as": "বাহিৰত"
+          },
+          {
+           "en": "Nowhere",
+           "as": "ক'তো নাই"
+          },
+          {
+           "en": "Inside singers",
+           "as": "গায়ক ৰ ভিতৰত"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The overlap.",
+          "as": "সাধাৰণ অংশ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "And so?",
+          "as": "তেন্তে?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Singers sit inside artists.",
+          "as": "গায়ক শিল্পী ৰ ভিতৰত।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The overlap lies inside the larger circle.",
+        "as": "সাধাৰণ অংশ ডাঙৰ বৃত্তৰ ভিতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Some cups are plates. All plates are dishes. Does 'some cups are dishes' follow?",
+        "as": "কিছুমান কাপ কাঁহী। সকলো কাঁহী বাচন। 'কিছুমান কাপ বাচন' ওলায়নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Where are those cups?",
+          "as": "সেই কাপ ক'ত?"
+         },
+         "options": [
+          {
+           "en": "Outside",
+           "as": "বাহিৰত"
+          },
+          {
+           "en": "Nowhere",
+           "as": "ক'তো নাই"
+          },
+          {
+           "en": "Inside plates",
+           "as": "কাঁহী ৰ ভিতৰত"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The overlap.",
+          "as": "সাধাৰণ অংশ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "And so?",
+          "as": "তেন্তে?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Cannot tell",
+           "as": "ক'ব নোৱাৰি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Plates sit inside dishes.",
+          "as": "কাঁহী বাচন ৰ ভিতৰত।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The overlap lies inside the larger circle.",
+        "as": "সাধাৰণ অংশ ডাঙৰ বৃত্তৰ ভিতৰত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs15.u2.q5",
+     "type": "order",
+     "skill": "r-sysome",
+     "q": {
+      "en": "From weakest claim to strongest",
+      "as": "দুৰ্বল দাবীৰ পৰা শক্তিশালীলৈ"
+     },
+     "items": [
+      {
+       "en": "Some A are B",
+       "as": "কিছুমান A, B"
+      },
+      {
+       "en": "Most A are B",
+       "as": "বেছিভাগ A, B"
+      },
+      {
+       "en": "All A are B",
+       "as": "সকলো A, B"
+      }
+     ],
+     "why": {
+      "en": "All says the most.",
+      "as": "'সকলো'য়ে আটাইতকৈ বেছি কয়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "It must hold in every picture",
+    "as": "সকলো চিত্ৰত মিলিব লাগিব"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A conclusion must always hold.",
+     "as": "সিদ্ধান্ত সদায় মিলিব লাগিব।"
+    },
+    {
+     "en": "Try to break it.",
+     "as": "ভাঙিবলৈ চেষ্টা কৰা।"
+    },
+    {
+     "en": "One failing picture rejects it.",
+     "as": "এটা নিমিলা চিত্ৰই বাদ দিয়ে।"
+    },
+    {
+     "en": "'Could be' is not 'must be'.",
+     "as": "'হ'ব পাৰে' মানে 'লাগিবই' নহয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs15.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Try to break it",
+      "as": "ভাঙি চোৱা"
+     },
+     "text": [
+      {
+       "en": "Do not hunt for a picture that fits. Hunt for one that fails.",
+       "as": "মিলা চিত্ৰ নিবিচাৰিবা। নিমিলা চিত্ৰ বিচাৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Draw another way",
+        "as": "আন ধৰণে আঁকা"
+       },
+       {
+        "en": "Still true?",
+        "as": "এতিয়াও সত্য?"
+       },
+       {
+        "en": "If no: reject",
+        "as": "নহ'লে: বাদ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs15.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "A classic trap",
+      "as": "সাধাৰণ ফান্দ"
+     },
+     "text": [
+      {
+       "en": "Some A are B. Some B are C. A and C may never touch, so nothing follows.",
+       "as": "কিছুমান A, B। কিছুমান B, C। A আৰু C লগ নালাগিবও পাৰে, গতিকে একো নোলায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "B",
+        "as": "B"
+       },
+       {
+        "en": "C",
+        "as": "C"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs15.u3.q1",
+     "type": "stepwise",
+     "skill": "r-symust",
+     "q": {
+      "en": "All A are B. All B are C. Conclusion: all A are C.",
+      "as": "সকলো A, B। সকলো B, C। সিদ্ধান্ত: সকলো A, C।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Does it follow?",
+        "as": "ই ওলায়নে?"
+       },
+       "options": [
+        {
+         "en": "Cannot read",
+         "as": "পঢ়িব নোৱাৰি"
+        },
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Inside inside inside.",
+        "as": "ভিতৰৰ ভিতৰত।"
+       },
+       "tag": "r-m-could"
+      }
+     ],
+     "why": {
+      "en": "Inside inside inside.",
+      "as": "ভিতৰৰ ভিতৰত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "All A are B. All B are C. Conclusion: all A are C.",
+        "as": "সকলো A, B। সকলো B, C। সিদ্ধান্ত: সকলো A, C।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Does it follow?",
+          "as": "ই ওলায়নে?"
+         },
+         "options": [
+          {
+           "en": "Cannot read",
+           "as": "পঢ়িব নোৱাৰি"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Inside inside inside.",
+          "as": "ভিতৰৰ ভিতৰত।"
+         },
+         "tag": "r-m-could"
+        }
+       ],
+       "why": {
+        "en": "Inside inside inside.",
+        "as": "ভিতৰৰ ভিতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Some A are B. Some B are C. Conclusion: some A are C.",
+        "as": "কিছুমান A, B। কিছুমান B, C। সিদ্ধান্ত: কিছুমান A, C।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Does it follow?",
+          "as": "ই ওলায়নে?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Cannot read",
+           "as": "পঢ়িব নোৱাৰি"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It could be true, but it need not be. Find a diagram where it fails.",
+          "as": "ই সত্য হ'ব পাৰে, কিন্তু নহ'বও পাৰে। নিমিলা চিত্ৰ বিচাৰা।"
+         },
+         "tag": "r-m-could"
+        }
+       ],
+       "why": {
+        "en": "It could be true, but it need not be. Find a diagram where it fails.",
+        "as": "ই সত্য হ'ব পাৰে, কিন্তু নহ'বও পাৰে। নিমিলা চিত্ৰ বিচাৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "All A are B. No B is C. Conclusion: no A is C.",
+        "as": "সকলো A, B। কোনো B, C নহয়। সিদ্ধান্ত: কোনো A, C নহয়।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Does it follow?",
+          "as": "ই ওলায়নে?"
+         },
+         "options": [
+          {
+           "en": "Cannot read",
+           "as": "পঢ়িব নোৱাৰি"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A sits inside B, away from C.",
+          "as": "A, B ৰ ভিতৰত, C ৰ পৰা আঁতৰত।"
+         },
+         "tag": "r-m-could"
+        }
+       ],
+       "why": {
+        "en": "A sits inside B, away from C.",
+        "as": "A, B ৰ ভিতৰত, C ৰ পৰা আঁতৰত।"
+       }
+      },
+      {
+       "q": {
+        "en": "All A are B. Some B are C. Conclusion: some A are C.",
+        "as": "সকলো A, B। কিছুমান B, C। সিদ্ধান্ত: কিছুমান A, C।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Does it follow?",
+          "as": "ই ওলায়নে?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Cannot read",
+           "as": "পঢ়িব নোৱাৰি"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It could be true, but it need not be. Find a diagram where it fails.",
+          "as": "ই সত্য হ'ব পাৰে, কিন্তু নহ'বও পাৰে। নিমিলা চিত্ৰ বিচাৰা।"
+         },
+         "tag": "r-m-could"
+        }
+       ],
+       "why": {
+        "en": "It could be true, but it need not be. Find a diagram where it fails.",
+        "as": "ই সত্য হ'ব পাৰে, কিন্তু নহ'বও পাৰে। নিমিলা চিত্ৰ বিচাৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs15.u3.q2",
+     "type": "tf",
+     "skill": "r-symust",
+     "s": {
+      "en": "One picture that fails rejects a conclusion.",
+      "as": "এটা নিমিলা চিত্ৰই সিদ্ধান্ত বাদ দিয়ে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It must hold always.",
+      "as": "সদায় মিলিব লাগিব।"
+     }
+    },
+    {
+     "id": "rs15.u3.q3",
+     "type": "tf",
+     "skill": "r-symust",
+     "s": {
+      "en": "All cats are dogs. All dogs are cows. So all cats are cows.",
+      "as": "সকলো মেকুৰী কুকুৰ। সকলো কুকুৰ গৰু। গতিকে সকলো মেকুৰী গৰু।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It follows, however odd.",
+      "as": "অদ্ভুত হ'লেও ওলায়।"
+     }
+    },
+    {
+     "id": "rs15.u3.q4",
+     "type": "match",
+     "skill": "r-symust",
+     "q": {
+      "en": "Match the pattern to the result",
+      "as": "আৰ্হিক ফলৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "All, all",
+        "as": "সকলো, সকলো"
+       },
+       {
+        "en": "All follows",
+        "as": "সকলো ওলায়"
+       }
+      ],
+      [
+       {
+        "en": "All, no",
+        "as": "সকলো, কোনো নহয়"
+       },
+       {
+        "en": "No follows",
+        "as": "কোনো নহয় ওলায়"
+       }
+      ],
+      [
+       {
+        "en": "Some, some",
+        "as": "কিছুমান, কিছুমান"
+       },
+       {
+        "en": "Nothing follows",
+        "as": "একো নোলায়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Worth remembering.",
+      "as": "মনত ৰাখিব লগীয়া।"
+     }
+    },
+    {
+     "id": "rs15.u3.q5",
+     "type": "order",
+     "skill": "r-symust",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Draw a picture",
+       "as": "চিত্ৰ আঁকা"
+      },
+      {
+       "en": "Test the conclusion",
+       "as": "সিদ্ধান্ত চোৱা"
+      },
+      {
+       "en": "Redraw to break it",
+       "as": "ভাঙিবলৈ আকৌ আঁকা"
+      },
+      {
+       "en": "Decide",
+       "as": "সিদ্ধান্ত লোৱা"
+      }
+     ],
+     "why": {
+      "en": "Try to break it.",
+      "as": "ভাঙি চোৱা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Syllogism test",
+   "as": "ন্যায়ৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs15.t.q1",
+    "type": "tf",
+    "skill": "r-syall",
+    "s": {
+     "en": "All A are B, so some B are A.",
+     "as": "সকলো A, B, গতিকে কিছুমান B, A।"
+    },
+    "answer": true,
+    "why": {
+     "en": "A sits inside B.",
+     "as": "A, B ৰ ভিতৰত।"
+    }
+   },
+   {
+    "id": "rs15.t.q2",
+    "type": "tf",
+    "skill": "r-syall",
+    "s": {
+     "en": "All A are B, so all B are A.",
+     "as": "সকলো A, B, গতিকে সকলো B, A।"
+    },
+    "answer": false,
+    "why": {
+     "en": "It does not reverse.",
+     "as": "ই ওলোটা নহয়।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-reverseall",
+      "why": {
+       "en": "'All A are B' does not mean all B are A.",
+       "as": "'সকলো A, B' মানে সকলো B, A নহয়।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs15.t.q3",
+    "type": "tf",
+    "skill": "r-sysome",
+    "s": {
+     "en": "'Some' can include all.",
+     "as": "'কিছুমান'ত সকলো পৰিব পাৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It means at least one.",
+     "as": "অন্ততঃ এটা।"
+    }
+   },
+   {
+    "id": "rs15.t.q4",
+    "type": "tf",
+    "skill": "r-symust",
+    "s": {
+     "en": "Some A are B, and some B are C, so some A are C.",
+     "as": "কিছুমান A, B; কিছুমান B, C; গতিকে কিছুমান A, C।"
+    },
+    "answer": false,
+    "why": {
+     "en": "They need not touch.",
+     "as": "লগ নালাগিবও পাৰে।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-could",
+      "why": {
+       "en": "It could be true, but it need not be. Find a diagram where it fails.",
+       "as": "ই সত্য হ'ব পাৰে, কিন্তু নহ'বও পাৰে। নিমিলা চিত্ৰ বিচাৰা।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs15.t.q5",
+    "type": "tf",
+    "skill": "r-symust",
+    "s": {
+     "en": "All A are B. No B is C. So no A is C.",
+     "as": "সকলো A, B। কোনো B, C নহয়। গতিকে কোনো A, C নহয়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It follows.",
+     "as": "ওলায়।"
+    }
+   },
+   {
+    "id": "rs15.t.q6",
+    "type": "tf",
+    "skill": "r-symust",
+    "s": {
+     "en": "Treat statements as true even if they seem silly.",
+     "as": "অদ্ভুত হ'লেও উক্তি সত্য ধৰা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Logic, not life.",
+     "as": "জীৱন নহয়, যুক্তি।"
+    }
+   }
+  ]
+ }
+}

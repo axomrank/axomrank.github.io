@@ -1,0 +1,2662 @@
+{
+ "id": "rs-03-letter-series",
+ "course": "reasoning",
+ "no": 3,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Letter series",
+  "as": "আখৰ শৃংখল"
+ },
+ "reign": {
+  "en": "Gaps, woven series, groups, blanks",
+  "as": "ব্যৱধান, বোৱা শৃংখল, গোট, খালী ঠাই"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Letters are numbers in disguise",
+    "as": "আখৰ মানে ছদ্মবেশী সংখ্যা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Change letters to places.",
+     "as": "আখৰক স্থানলৈ সলনি কৰা।"
+    },
+    {
+     "en": "Find the gap as with numbers.",
+     "as": "সংখ্যাৰ দৰে ব্যৱধান উলিওৱা।"
+    },
+    {
+     "en": "Skipping two letters is a gap of 3.",
+     "as": "দুটা আখৰ এৰিলে ব্যৱধান 3।"
+    },
+    {
+     "en": "After Z the count returns to A.",
+     "as": "Z ৰ পিছত A লৈ উভতে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs3.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Same trick, new costume",
+      "as": "একে কৌশল, নতুন সাজ"
+     },
+     "text": [
+      {
+       "en": "Letters hide numbers. A, D, G, J are really 1, 4, 7, 10.",
+       "as": "আখৰৰ আঁৰত সংখ্যা। A, D, G, J আচলতে 1, 4, 7, 10।"
+      }
+     ],
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       1,
+       4,
+       7,
+       10
+      ],
+      "letters": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Open the gaps.",
+        "as": "ব্যৱধান খোলা।"
+       },
+       "goal": {
+        "opened": 1
+       },
+       "then": {
+        "en": "Every gap is +3.",
+        "as": "প্ৰতিটো ব্যৱধান +3।"
+       }
+      },
+      {
+       "do": {
+        "en": "Move to the next letter, M.",
+        "as": "পিছৰ আখৰ M লৈ যোৱা।"
+       },
+       "goal": {
+        "next": 13
+       },
+       "then": {
+        "en": "J + 3 = M.",
+        "as": "J + 3 = M।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Count the gap correctly",
+      "as": "ব্যৱধান শুদ্ধকৈ গণা"
+     },
+     "text": [
+      {
+       "en": "A to D skips B and C, but the gap is 3, not 2.",
+       "as": "A ৰ পৰা D ত B, C এৰে, কিন্তু ব্যৱধান 3, 2 নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Skipped: 2",
+        "as": "এৰা: 2"
+       },
+       {
+        "en": "Add one",
+        "as": "এক যোগ"
+       },
+       {
+        "en": "Gap: 3",
+        "as": "ব্যৱধান: 3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u1.q1",
+     "type": "explore",
+     "skill": "r-lgap",
+     "q": {
+      "en": "Find the next letter: B, E, H, K, N.",
+      "as": "পিছৰ আখৰ: B, E, H, K, N।"
+     },
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       2,
+       5,
+       8,
+       11,
+       14
+      ],
+      "letters": true
+     },
+     "target": 17,
+     "answerText": {
+      "en": "Q",
+      "as": "Q"
+     },
+     "traps": [
+      {
+       "val": 16,
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The gap is +3.",
+      "as": "ব্যৱধান +3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the next letter: B, E, H, K, N.",
+        "as": "পিছৰ আখৰ: B, E, H, K, N।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         2,
+         5,
+         8,
+         11,
+         14
+        ],
+        "letters": true
+       },
+       "target": 17,
+       "answerText": {
+        "en": "Q",
+        "as": "Q"
+       },
+       "traps": [
+        {
+         "val": 16,
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gap is +3.",
+        "as": "ব্যৱধান +3।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next letter: C, G, K, O, S.",
+        "as": "পিছৰ আখৰ: C, G, K, O, S।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         3,
+         7,
+         11,
+         15,
+         19
+        ],
+        "letters": true
+       },
+       "target": 23,
+       "answerText": {
+        "en": "W",
+        "as": "W"
+       },
+       "traps": [
+        {
+         "val": 22,
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gap is +4.",
+        "as": "ব্যৱধান +4।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next letter: A, F, K, P, U.",
+        "as": "পিছৰ আখৰ: A, F, K, P, U।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         1,
+         6,
+         11,
+         16,
+         21
+        ],
+        "letters": true
+       },
+       "target": 26,
+       "answerText": {
+        "en": "Z",
+        "as": "Z"
+       },
+       "traps": [
+        {
+         "val": 25,
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gap is +5.",
+        "as": "ব্যৱধান +5।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u1.q2",
+     "type": "solve",
+     "skill": "r-lgap",
+     "input": "letters",
+     "q": {
+      "en": "What comes next: D, F, H, J, L, ?",
+      "as": "পিছত কি: D, F, H, J, L, ?"
+     },
+     "answer": "N",
+     "why": {
+      "en": "Each letter moves +2.",
+      "as": "প্ৰতিটো আখৰ +2 সৰে।"
+     },
+     "traps": [
+      {
+       "ans": "I",
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What comes next: D, F, H, J, L, ?",
+        "as": "পিছত কি: D, F, H, J, L, ?"
+       },
+       "answer": "N",
+       "why": {
+        "en": "Each letter moves +2.",
+        "as": "প্ৰতিটো আখৰ +2 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "I",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: F, I, L, O, R, ?",
+        "as": "পিছত কি: F, I, L, O, R, ?"
+       },
+       "answer": "U",
+       "why": {
+        "en": "Each letter moves +3.",
+        "as": "প্ৰতিটো আখৰ +3 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "P",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: Z, X, V, T, R, ?",
+        "as": "পিছত কি: Z, X, V, T, R, ?"
+       },
+       "answer": "P",
+       "why": {
+        "en": "Each letter moves −2.",
+        "as": "প্ৰতিটো আখৰ −2 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "U",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: Y, U, Q, M, I, ?",
+        "as": "পিছত কি: Y, U, Q, M, I, ?"
+       },
+       "answer": "E",
+       "why": {
+        "en": "Each letter moves −4.",
+        "as": "প্ৰতিটো আখৰ −4 সৰে।"
+       },
+       "traps": [
+        {
+         "ans": "J",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs3.u1.q3",
+     "type": "solve",
+     "skill": "r-lgap",
+     "input": "letters",
+     "q": {
+      "en": "The gaps grow by one. What comes next: A, B, D, G, K, ?",
+      "as": "ব্যৱধান এক এক বাঢ়ে। পিছত কি: A, B, D, G, K, ?"
+     },
+     "answer": "P",
+     "why": {
+      "en": "The next gap is 5.",
+      "as": "পিছৰ ব্যৱধান 5।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The gaps grow by one. What comes next: A, B, D, G, K, ?",
+        "as": "ব্যৱধান এক এক বাঢ়ে। পিছত কি: A, B, D, G, K, ?"
+       },
+       "answer": "P",
+       "why": {
+        "en": "The next gap is 5.",
+        "as": "পিছৰ ব্যৱধান 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "The gaps grow by one. What comes next: C, E, H, L, Q, ?",
+        "as": "ব্যৱধান এক এক বাঢ়ে। পিছত কি: C, E, H, L, Q, ?"
+       },
+       "answer": "W",
+       "why": {
+        "en": "The next gap is 6.",
+        "as": "পিছৰ ব্যৱধান 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "The gaps grow by one. What comes next: B, C, E, H, L, ?",
+        "as": "ব্যৱধান এক এক বাঢ়ে। পিছত কি: B, C, E, H, L, ?"
+       },
+       "answer": "Q",
+       "why": {
+        "en": "The next gap is 5.",
+        "as": "পিছৰ ব্যৱধান 5।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u1.q4",
+     "type": "tf",
+     "skill": "r-lgap",
+     "s": {
+      "en": "From C to H the gap is 5.",
+      "as": "C ৰ পৰা H লৈ ব্যৱধান 5।"
+     },
+     "answer": true,
+     "why": {
+      "en": "3 to 8 is 5.",
+      "as": "3 ৰ পৰা 8 মানে 5।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u1.q5",
+     "type": "match",
+     "skill": "r-lgap",
+     "q": {
+      "en": "Match the series to its gap",
+      "as": "শৃংখলক ব্যৱধানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "B, D, F",
+        "as": "B, D, F"
+       },
+       {
+        "en": "+2",
+        "as": "+2"
+       }
+      ],
+      [
+       {
+        "en": "A, E, I",
+        "as": "A, E, I"
+       },
+       {
+        "en": "+4",
+        "as": "+4"
+       }
+      ],
+      [
+       {
+        "en": "Z, W, T",
+        "as": "Z, W, T"
+       },
+       {
+        "en": "−3",
+        "as": "−3"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Convert to places.",
+      "as": "স্থানলৈ সলনি কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Two letter series",
+    "as": "দুটা আখৰ শৃংখল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Letters may take turns.",
+     "as": "আখৰে পাল ল'ব পাৰে।"
+    },
+    {
+     "en": "Split odd and even places.",
+     "as": "বিজোৰ-যোৰ স্থান পৃথক কৰা।"
+    },
+    {
+     "en": "One series may run backward.",
+     "as": "এটা শৃংখল ওলোটা হ'ব পাৰে।"
+    },
+    {
+     "en": "Find which series is next.",
+     "as": "পিছৰটো কোন শৃংখলৰ চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs3.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "One from each end",
+      "as": "দুই মূৰৰ পৰা এটাকৈ"
+     },
+     "text": [
+      {
+       "en": "A, Z, B, Y, C is two series: one forward from A and one backward from Z.",
+       "as": "A, Z, B, Y, C দুটা শৃংখল: A ৰ পৰা আগলৈ, Z ৰ পৰা পিছলৈ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Odd: A, B, C",
+        "as": "বিজোৰ: A, B, C"
+       },
+       {
+        "en": "Even: Z, Y, X",
+        "as": "যোৰ: Z, Y, X"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Blank's place decides",
+      "as": "খালী ঠাইৰ স্থানে ঠিক কৰে"
+     },
+     "text": [
+      {
+       "en": "Count to the blank. Odd place continues the first series.",
+       "as": "খালী ঠাইলৈ গণা। বিজোৰ স্থান প্ৰথম শৃংখল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Place of blank",
+        "as": "খালী ঠাইৰ স্থান"
+       },
+       {
+        "en": "Pick the series",
+        "as": "শৃংখল বাছা"
+       },
+       {
+        "en": "Continue",
+        "as": "আগবঢ়োৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u2.q1",
+     "type": "solve",
+     "skill": "r-lmix",
+     "input": "letters",
+     "q": {
+      "en": "Two series take turns. What comes next: A, Z, C, X, E, V, ?",
+      "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: A, Z, C, X, E, V, ?"
+     },
+     "answer": "G",
+     "why": {
+      "en": "Odd places run A, C, E.",
+      "as": "বিজোৰ স্থানত A, C, E।"
+     },
+     "traps": [
+      {
+       "ans": "T",
+       "tag": "r-m-oneline",
+       "why": {
+        "en": "Take every second term. Two series take turns here.",
+        "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Two series take turns. What comes next: A, Z, C, X, E, V, ?",
+        "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: A, Z, C, X, E, V, ?"
+       },
+       "answer": "G",
+       "why": {
+        "en": "Odd places run A, C, E.",
+        "as": "বিজোৰ স্থানত A, C, E।"
+       },
+       "traps": [
+        {
+         "ans": "T",
+         "tag": "r-m-oneline",
+         "why": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two series take turns. What comes next: C, X, F, W, I, V, ?",
+        "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: C, X, F, W, I, V, ?"
+       },
+       "answer": "L",
+       "why": {
+        "en": "Odd places run C, F, I.",
+        "as": "বিজোৰ স্থানত C, F, I।"
+       },
+       "traps": [
+        {
+         "ans": "U",
+         "tag": "r-m-oneline",
+         "why": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two series take turns. What comes next: B, M, C, O, D, Q, ?",
+        "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: B, M, C, O, D, Q, ?"
+       },
+       "answer": "E",
+       "why": {
+        "en": "Odd places run B, C, D.",
+        "as": "বিজোৰ স্থানত B, C, D।"
+       },
+       "traps": [
+        {
+         "ans": "S",
+         "tag": "r-m-oneline",
+         "why": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs3.u2.q2",
+     "type": "stepwise",
+     "skill": "r-lmix",
+     "q": {
+      "en": "Split D, W, F, U, H, S, ?",
+      "as": "D, W, F, U, H, S, ? ভাগ কৰা"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Odd places?",
+        "as": "বিজোৰ স্থান?"
+       },
+       "options": [
+        {
+         "en": "D, F, H",
+         "as": "D, F, H"
+        },
+        {
+         "en": "D, G, J",
+         "as": "D, G, J"
+        },
+        {
+         "en": "W, U, S",
+         "as": "W, U, S"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Take every second term. Two series take turns here.",
+        "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+       },
+       "tag": "r-m-oneline"
+      },
+      {
+       "ask": {
+        "en": "Their gap?",
+        "as": "সিহঁতৰ ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "+2",
+         "as": "+2"
+        },
+        {
+         "en": "−2",
+         "as": "−2"
+        },
+        {
+         "en": "+3",
+         "as": "+3"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Next letter?",
+        "as": "পিছৰ আখৰ?"
+       },
+       "options": [
+        {
+         "en": "M",
+         "as": "M"
+        },
+        {
+         "en": "J",
+         "as": "J"
+        },
+        {
+         "en": "Q",
+         "as": "Q"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "It continues the odd places.",
+        "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The answer is J.",
+      "as": "উত্তৰ J।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Split D, W, F, U, H, S, ?",
+        "as": "D, W, F, U, H, S, ? ভাগ কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Odd places?",
+          "as": "বিজোৰ স্থান?"
+         },
+         "options": [
+          {
+           "en": "D, F, H",
+           "as": "D, F, H"
+          },
+          {
+           "en": "D, G, J",
+           "as": "D, G, J"
+          },
+          {
+           "en": "W, U, S",
+           "as": "W, U, S"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         },
+         "tag": "r-m-oneline"
+        },
+        {
+         "ask": {
+          "en": "Their gap?",
+          "as": "সিহঁতৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+2",
+           "as": "+2"
+          },
+          {
+           "en": "−2",
+           "as": "−2"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Next letter?",
+          "as": "পিছৰ আখৰ?"
+         },
+         "options": [
+          {
+           "en": "M",
+           "as": "M"
+          },
+          {
+           "en": "J",
+           "as": "J"
+          },
+          {
+           "en": "Q",
+           "as": "Q"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It continues the odd places.",
+          "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is J.",
+        "as": "উত্তৰ J।"
+       }
+      },
+      {
+       "q": {
+        "en": "Split E, T, H, Q, K, N, ?",
+        "as": "E, T, H, Q, K, N, ? ভাগ কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Odd places?",
+          "as": "বিজোৰ স্থান?"
+         },
+         "options": [
+          {
+           "en": "T, Q, N",
+           "as": "T, Q, N"
+          },
+          {
+           "en": "E, I, M",
+           "as": "E, I, M"
+          },
+          {
+           "en": "E, H, K",
+           "as": "E, H, K"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         },
+         "tag": "r-m-oneline"
+        },
+        {
+         "ask": {
+          "en": "Their gap?",
+          "as": "সিহঁতৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "−3",
+           "as": "−3"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          },
+          {
+           "en": "+4",
+           "as": "+4"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Next letter?",
+          "as": "পিছৰ আখৰ?"
+         },
+         "options": [
+          {
+           "en": "N",
+           "as": "N"
+          },
+          {
+           "en": "Q",
+           "as": "Q"
+          },
+          {
+           "en": "K",
+           "as": "K"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It continues the odd places.",
+          "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is N.",
+        "as": "উত্তৰ N।"
+       }
+      },
+      {
+       "q": {
+        "en": "Split A, P, E, Q, I, R, ?",
+        "as": "A, P, E, Q, I, R, ? ভাগ কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Odd places?",
+          "as": "বিজোৰ স্থান?"
+         },
+         "options": [
+          {
+           "en": "A, E, I",
+           "as": "A, E, I"
+          },
+          {
+           "en": "P, Q, R",
+           "as": "P, Q, R"
+          },
+          {
+           "en": "A, F, K",
+           "as": "A, F, K"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         },
+         "tag": "r-m-oneline"
+        },
+        {
+         "ask": {
+          "en": "Their gap?",
+          "as": "সিহঁতৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+5",
+           "as": "+5"
+          },
+          {
+           "en": "+4",
+           "as": "+4"
+          },
+          {
+           "en": "+1",
+           "as": "+1"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Next letter?",
+          "as": "পিছৰ আখৰ?"
+         },
+         "options": [
+          {
+           "en": "S",
+           "as": "S"
+          },
+          {
+           "en": "M",
+           "as": "M"
+          },
+          {
+           "en": "P",
+           "as": "P"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It continues the odd places.",
+          "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is M.",
+        "as": "উত্তৰ M।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u2.q3",
+     "type": "tf",
+     "skill": "r-lmix",
+     "s": {
+      "en": "In A, Z, B, Y, C the next letter is X.",
+      "as": "A, Z, B, Y, C ত পিছৰ আখৰ X।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Even places run backward from Z.",
+      "as": "যোৰ স্থান Z ৰ পৰা পিছলৈ।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-oneline",
+       "why": {
+        "en": "Take every second term. Two series take turns here.",
+        "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u2.q4",
+     "type": "match",
+     "skill": "r-lmix",
+     "q": {
+      "en": "Split C, W, E, U, G",
+      "as": "C, W, E, U, G ভাগ কৰা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Odd places",
+        "as": "বিজোৰ স্থান"
+       },
+       {
+        "en": "C, E, G",
+        "as": "C, E, G"
+       }
+      ],
+      [
+       {
+        "en": "Even places",
+        "as": "যোৰ স্থান"
+       },
+       {
+        "en": "W, U",
+        "as": "W, U"
+       }
+      ],
+      [
+       {
+        "en": "Next letter",
+        "as": "পিছৰ আখৰ"
+       },
+       {
+        "en": "S",
+        "as": "S"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each has its own gap.",
+      "as": "প্ৰতিটোৰ নিজা ব্যৱধান।"
+     }
+    },
+    {
+     "id": "rs3.u2.q5",
+     "type": "order",
+     "skill": "r-lmix",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Suspect two series",
+       "as": "দুটা শৃংখল সন্দেহ"
+      },
+      {
+       "en": "Split the places",
+       "as": "স্থান ভাগ"
+      },
+      {
+       "en": "Find the gaps",
+       "as": "ব্যৱধান"
+      },
+      {
+       "en": "Continue one",
+       "as": "এটা আগবঢ়োৱা"
+      }
+     ],
+     "why": {
+      "en": "Split, then calculate.",
+      "as": "ভাগ কৰি গণা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Groups of letters",
+    "as": "আখৰৰ গোট"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Read groups position by position.",
+     "as": "গোট স্থান অনুসৰি পঢ়া।"
+    },
+    {
+     "en": "Compare first letters, then second.",
+     "as": "প্ৰথম আখৰ, তাৰ পিছত দ্বিতীয় তুলনা।"
+    },
+    {
+     "en": "Each position has its own gap.",
+     "as": "প্ৰতিটো স্থানৰ নিজা ব্যৱধান।"
+    },
+    {
+     "en": "Build the answer letter by letter.",
+     "as": "আখৰে আখৰে উত্তৰ বনোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs3.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Read down, not across",
+      "as": "আঁতৰি নহয়, তললৈ পঢ়া"
+     },
+     "text": [
+      {
+       "en": "Stack the groups. Each column is a small series of its own.",
+       "as": "গোটবোৰ ওপৰা-ওপৰি ৰাখা। প্ৰতিটো স্তম্ভ এটা সৰু শৃংখল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "ACE",
+        "as": "ACE"
+       },
+       {
+        "en": "BDF",
+        "as": "BDF"
+       },
+       {
+        "en": "CEG",
+        "as": "CEG"
+       },
+       {
+        "en": "Next: DFH",
+        "as": "পিছৰটো: DFH"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Columns may differ",
+      "as": "স্তম্ভ বেলেগ হ'ব পাৰে"
+     },
+     "text": [
+      {
+       "en": "One column can rise while another falls. Check each one.",
+       "as": "এটা স্তম্ভ বাঢ়িব, আনটো কমিব পাৰে। প্ৰতিটো চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Column 1",
+        "as": "স্তম্ভ ১"
+       },
+       {
+        "en": "Column 2",
+        "as": "স্তম্ভ ২"
+       },
+       {
+        "en": "Column 3",
+        "as": "স্তম্ভ ৩"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u3.q1",
+     "type": "solve",
+     "skill": "r-lgroup",
+     "input": "letters",
+     "q": {
+      "en": "Each group follows the last. What comes next: ACE, BDF, CEG, ?",
+      "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: ACE, BDF, CEG, ?"
+     },
+     "answer": "DFH",
+     "why": {
+      "en": "Each group's first letter moves +1.",
+      "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +1 সৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Each group follows the last. What comes next: ACE, BDF, CEG, ?",
+        "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: ACE, BDF, CEG, ?"
+       },
+       "answer": "DFH",
+       "why": {
+        "en": "Each group's first letter moves +1.",
+        "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +1 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Each group follows the last. What comes next: CDE, EFG, GHI, ?",
+        "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: CDE, EFG, GHI, ?"
+       },
+       "answer": "IJK",
+       "why": {
+        "en": "Each group's first letter moves +2.",
+        "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +2 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Each group follows the last. What comes next: BEH, DGJ, FIL, ?",
+        "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: BEH, DGJ, FIL, ?"
+       },
+       "answer": "HKN",
+       "why": {
+        "en": "Each group's first letter moves +2.",
+        "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +2 সৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u3.q2",
+     "type": "solve",
+     "skill": "r-lgroup",
+     "input": "letters",
+     "q": {
+      "en": "Each group follows the last. What comes next: DFH, GIK, JLN, ?",
+      "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: DFH, GIK, JLN, ?"
+     },
+     "answer": "MOQ",
+     "why": {
+      "en": "Each group's first letter moves +3.",
+      "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +3 সৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Each group follows the last. What comes next: DFH, GIK, JLN, ?",
+        "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: DFH, GIK, JLN, ?"
+       },
+       "answer": "MOQ",
+       "why": {
+        "en": "Each group's first letter moves +3.",
+        "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +3 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Each group follows the last. What comes next: FGH, GHI, HIJ, ?",
+        "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: FGH, GHI, HIJ, ?"
+       },
+       "answer": "IJK",
+       "why": {
+        "en": "Each group's first letter moves +1.",
+        "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +1 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Each group follows the last. What comes next: HJL, GIK, FHJ, ?",
+        "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: HJL, GIK, FHJ, ?"
+       },
+       "answer": "EGI",
+       "why": {
+        "en": "Each group's first letter moves −1.",
+        "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ −1 সৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u3.q3",
+     "type": "tf",
+     "skill": "r-lgroup",
+     "s": {
+      "en": "After ABC, BCD, CDE comes DEF.",
+      "as": "ABC, BCD, CDE ৰ পিছত DEF।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Each column moves +1.",
+      "as": "প্ৰতিটো স্তম্ভ +1।"
+     }
+    },
+    {
+     "id": "rs3.u3.q4",
+     "type": "match",
+     "skill": "r-lgroup",
+     "q": {
+      "en": "Match the groups to the next group",
+      "as": "গোটক পিছৰ গোটৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "AB, CD, EF",
+        "as": "AB, CD, EF"
+       },
+       {
+        "en": "GH",
+        "as": "GH"
+       }
+      ],
+      [
+       {
+        "en": "ZY, XW, VU",
+        "as": "ZY, XW, VU"
+       },
+       {
+        "en": "TS",
+        "as": "TS"
+       }
+      ],
+      [
+       {
+        "en": "AC, BD, CE",
+        "as": "AC, BD, CE"
+       },
+       {
+        "en": "DF",
+        "as": "DF"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Read each column.",
+      "as": "প্ৰতিটো স্তম্ভ পঢ়া।"
+     }
+    },
+    {
+     "id": "rs3.u3.q5",
+     "type": "order",
+     "skill": "r-lgroup",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Stack the groups",
+       "as": "গোট ওপৰা-ওপৰি"
+      },
+      {
+       "en": "Read each column",
+       "as": "প্ৰতিটো স্তম্ভ পঢ়া"
+      },
+      {
+       "en": "Find each gap",
+       "as": "প্ৰতিটো ব্যৱধান"
+      },
+      {
+       "en": "Build the group",
+       "as": "গোট বনোৱা"
+      }
+     ],
+     "why": {
+      "en": "Columns first.",
+      "as": "স্তম্ভ আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Fill the blanks",
+    "as": "খালী ঠাই পূৰণ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Look for a repeating block.",
+     "as": "পুনৰাবৃত্ত খণ্ড বিচাৰা।"
+    },
+    {
+     "en": "Try block lengths of 2, 3 and 4.",
+     "as": "2, 3, 4 দীঘল খণ্ড চোৱা।"
+    },
+    {
+     "en": "Write the block under the blanks.",
+     "as": "খালী ঠাইৰ তলত খণ্ড লিখা।"
+    },
+    {
+     "en": "Check the whole line.",
+     "as": "গোটেই শাৰী পৰীক্ষা কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs3.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Find the repeating block",
+      "as": "পুনৰাবৃত্ত খণ্ড বিচাৰা"
+     },
+     "text": [
+      {
+       "en": "Blank series usually repeat a short block. Cut the line into equal pieces.",
+       "as": "খালী ঠাইৰ শৃংখলত সাধাৰণতে চুটি খণ্ড ঘূৰি আহে। সমান টুকুৰা কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "ab_",
+        "as": "ab_"
+       },
+       {
+        "en": "a_c",
+        "as": "a_c"
+       },
+       {
+        "en": "_bc",
+        "as": "_bc"
+       },
+       {
+        "en": "Block: abc",
+        "as": "খণ্ড: abc"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Blanks in order",
+      "as": "খালী ঠাই ক্ৰমে"
+     },
+     "text": [
+      {
+       "en": "Write the missing letters in the order the blanks appear.",
+       "as": "খালী ঠাইৰ ক্ৰমতে আখৰ লিখা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Find the block",
+        "as": "খণ্ড উলিওৱা"
+       },
+       {
+        "en": "Fill each blank",
+        "as": "খালী পূৰণ"
+       },
+       {
+        "en": "Read them in order",
+        "as": "ক্ৰমে পঢ়া"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u4.q1",
+     "type": "solve",
+     "skill": "r-lfill",
+     "input": "letters",
+     "q": {
+      "en": "The block is abc. Which letters fill ab_a_c_bc? Type them in order.",
+      "as": "খণ্ড abc। ab_a_c_bc ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+     },
+     "answer": "CBA",
+     "why": {
+      "en": "The block repeats, so the blanks read cba.",
+      "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত cba।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The block is abc. Which letters fill ab_a_c_bc? Type them in order.",
+        "as": "খণ্ড abc। ab_a_c_bc ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+       },
+       "answer": "CBA",
+       "why": {
+        "en": "The block repeats, so the blanks read cba.",
+        "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত cba।"
+       }
+      },
+      {
+       "q": {
+        "en": "The block is mno. Which letters fill m_om_o_no? Type them in order.",
+        "as": "খণ্ড mno। m_om_o_no ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+       },
+       "answer": "NNM",
+       "why": {
+        "en": "The block repeats, so the blanks read nnm.",
+        "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত nnm।"
+       }
+      },
+      {
+       "q": {
+        "en": "The block is pq. Which letters fill p_p_pq_q? Type them in order.",
+        "as": "খণ্ড pq। p_p_pq_q ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+       },
+       "answer": "QQP",
+       "why": {
+        "en": "The block repeats, so the blanks read qqp.",
+        "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত qqp।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u4.q2",
+     "type": "solve",
+     "skill": "r-lfill",
+     "input": "letters",
+     "q": {
+      "en": "The block is xyz. Which letters fill _yzx_zxy_? Type them in order.",
+      "as": "খণ্ড xyz। _yzx_zxy_ ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+     },
+     "answer": "XYZ",
+     "why": {
+      "en": "The block repeats, so the blanks read xyz.",
+      "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত xyz।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The block is xyz. Which letters fill _yzx_zxy_? Type them in order.",
+        "as": "খণ্ড xyz। _yzx_zxy_ ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+       },
+       "answer": "XYZ",
+       "why": {
+        "en": "The block repeats, so the blanks read xyz.",
+        "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত xyz।"
+       }
+      },
+      {
+       "q": {
+        "en": "The block is abcd. Which letters fill a_cda_cd_bcd? Type them in order.",
+        "as": "খণ্ড abcd। a_cda_cd_bcd ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+       },
+       "answer": "BBA",
+       "why": {
+        "en": "The block repeats, so the blanks read bba.",
+        "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত bba।"
+       }
+      },
+      {
+       "q": {
+        "en": "The block is rs. Which letters fill r_r_rs_s? Type them in order.",
+        "as": "খণ্ড rs। r_r_rs_s ৰ খালী ঠাইত কি আখৰ? ক্ৰমে লিখা।"
+       },
+       "answer": "SSR",
+       "why": {
+        "en": "The block repeats, so the blanks read ssr.",
+        "as": "খণ্ড ঘূৰি আহে, খালী ঠাইত ssr।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u4.q3",
+     "type": "tf",
+     "skill": "r-lfill",
+     "s": {
+      "en": "The blanks in ab_ab_ are c and c when the block is abc.",
+      "as": "খণ্ড abc হ'লে ab_ab_ ৰ খালী ঠাই c, c।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Each block ends in c.",
+      "as": "প্ৰতিটো খণ্ড c ত শেষ।"
+     }
+    },
+    {
+     "id": "rs3.u4.q4",
+     "type": "match",
+     "skill": "r-lfill",
+     "q": {
+      "en": "Match the line to its block",
+      "as": "শাৰীক খণ্ডৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "ababab",
+        "as": "ababab"
+       },
+       {
+        "en": "ab",
+        "as": "ab"
+       }
+      ],
+      [
+       {
+        "en": "abcabc",
+        "as": "abcabc"
+       },
+       {
+        "en": "abc",
+        "as": "abc"
+       }
+      ],
+      [
+       {
+        "en": "aabbaabb",
+        "as": "aabbaabb"
+       },
+       {
+        "en": "aabb",
+        "as": "aabb"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Cut into equal pieces.",
+      "as": "সমান টুকুৰা কৰা।"
+     }
+    },
+    {
+     "id": "rs3.u4.q5",
+     "type": "order",
+     "skill": "r-lfill",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Guess a block length",
+       "as": "খণ্ডৰ দীঘ"
+      },
+      {
+       "en": "Cut the line",
+       "as": "শাৰী কটা"
+      },
+      {
+       "en": "Fill each blank",
+       "as": "খালী পূৰণ"
+      },
+      {
+       "en": "Read in order",
+       "as": "ক্ৰমে পঢ়া"
+      }
+     ],
+     "why": {
+      "en": "Length first.",
+      "as": "দীঘ আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Letters with numbers",
+    "as": "আখৰ আৰু সংখ্যা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Split a mixed term into parts.",
+     "as": "মিশ্ৰ পদ ভাগ কৰা।"
+    },
+    {
+     "en": "Each part has its own rule.",
+     "as": "প্ৰতিটো ভাগৰ নিজা নিয়ম।"
+    },
+    {
+     "en": "The number may count something.",
+     "as": "সংখ্যাই কিবা গণিব পাৰে।"
+    },
+    {
+     "en": "Combine the parts at the end.",
+     "as": "শেষত ভাগবোৰ জোৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs3.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "Split the mixed term",
+      "as": "মিশ্ৰ পদ ভাগ কৰা"
+     },
+     "text": [
+      {
+       "en": "B2, D4, F6: letters run +2 and numbers run +2, on separate tracks.",
+       "as": "B2, D4, F6: আখৰ +2, সংখ্যা +2, পৃথক পথত।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Letters: B, D, F",
+        "as": "আখৰ: B, D, F"
+       },
+       {
+        "en": "Numbers: 2, 4, 6",
+        "as": "সংখ্যা: 2, 4, 6"
+       },
+       {
+        "en": "Next: H8",
+        "as": "পিছৰটো: H8"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "The number can be the gap",
+      "as": "সংখ্যাই ব্যৱধান হ'ব পাৰে"
+     },
+     "text": [
+      {
+       "en": "In A2C3F, each digit tells how far the next letter jumps.",
+       "as": "A2C3F ত প্ৰতিটো অংকই কয় পিছৰ আখৰ কিমান জঁপিয়ায়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A + 2 = C",
+        "as": "A + 2 = C"
+       },
+       {
+        "en": "C + 3 = F",
+        "as": "C + 3 = F"
+       },
+       {
+        "en": "F + 4 = J",
+        "as": "F + 4 = J"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u5.q1",
+     "type": "solve",
+     "skill": "r-lnum",
+     "q": {
+      "en": "What comes next: B3, D5, F7, H9, ?",
+      "as": "পিছত কি: B3, D5, F7, H9, ?"
+     },
+     "answer": "11",
+     "why": {
+      "en": "Numbers move +2; this asks for the number of the next term.",
+      "as": "সংখ্যা +2 সৰে; ইয়াত পিছৰ পদৰ সংখ্যাটো সোধা হৈছে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What comes next: B3, D5, F7, H9, ?",
+        "as": "পিছত কি: B3, D5, F7, H9, ?"
+       },
+       "answer": "11",
+       "why": {
+        "en": "Numbers move +2; this asks for the number of the next term.",
+        "as": "সংখ্যা +2 সৰে; ইয়াত পিছৰ পদৰ সংখ্যাটো সোধা হৈছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "What comes next: A5, D10, G15, J20, ?",
+        "as": "পিছত কি: A5, D10, G15, J20, ?"
+       },
+       "answer": "25",
+       "why": {
+        "en": "Numbers move +5; this asks for the number of the next term.",
+        "as": "সংখ্যা +5 সৰে; ইয়াত পিছৰ পদৰ সংখ্যাটো সোধা হৈছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "What comes next: C2, D5, E8, F11, ?",
+        "as": "পিছত কি: C2, D5, E8, F11, ?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "Numbers move +3; this asks for the number of the next term.",
+        "as": "সংখ্যা +3 সৰে; ইয়াত পিছৰ পদৰ সংখ্যাটো সোধা হৈছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u5.q2",
+     "type": "solve",
+     "skill": "r-lnum",
+     "input": "letters",
+     "q": {
+      "en": "What letter comes next: B3, D5, F7, H9, ?",
+      "as": "পিছৰ আখৰ কি: B3, D5, F7, H9, ?"
+     },
+     "answer": "J",
+     "why": {
+      "en": "Letters move +2.",
+      "as": "আখৰ +2 সৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "What letter comes next: B3, D5, F7, H9, ?",
+        "as": "পিছৰ আখৰ কি: B3, D5, F7, H9, ?"
+       },
+       "answer": "J",
+       "why": {
+        "en": "Letters move +2.",
+        "as": "আখৰ +2 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "What letter comes next: A5, D10, G15, J20, ?",
+        "as": "পিছৰ আখৰ কি: A5, D10, G15, J20, ?"
+       },
+       "answer": "M",
+       "why": {
+        "en": "Letters move +3.",
+        "as": "আখৰ +3 সৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "What letter comes next: C2, D5, E8, F11, ?",
+        "as": "পিছৰ আখৰ কি: C2, D5, E8, F11, ?"
+       },
+       "answer": "G",
+       "why": {
+        "en": "Letters move +1.",
+        "as": "আখৰ +1 সৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs3.u5.q3",
+     "type": "tf",
+     "skill": "r-lnum",
+     "s": {
+      "en": "In A1, C3, E5 the next term is G7.",
+      "as": "A1, C3, E5 ৰ পিছত G7।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Both parts move +2.",
+      "as": "দুয়োটা ভাগ +2।"
+     }
+    },
+    {
+     "id": "rs3.u5.q4",
+     "type": "match",
+     "skill": "r-lnum",
+     "q": {
+      "en": "Match the series to the next term",
+      "as": "শৃংখলক পিছৰ পদৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A1, B2, C3",
+        "as": "A1, B2, C3"
+       },
+       {
+        "en": "D4",
+        "as": "D4"
+       }
+      ],
+      [
+       {
+        "en": "Z1, Y2, X3",
+        "as": "Z1, Y2, X3"
+       },
+       {
+        "en": "W4",
+        "as": "W4"
+       }
+      ],
+      [
+       {
+        "en": "B2, D4, F6",
+        "as": "B2, D4, F6"
+       },
+       {
+        "en": "H8",
+        "as": "H8"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Handle each track.",
+      "as": "প্ৰতিটো পথ চোৱা।"
+     }
+    },
+    {
+     "id": "rs3.u5.q5",
+     "type": "order",
+     "skill": "r-lnum",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Split each term",
+       "as": "পদ ভাগ"
+      },
+      {
+       "en": "Read the letters",
+       "as": "আখৰ পঢ়া"
+      },
+      {
+       "en": "Read the numbers",
+       "as": "সংখ্যা পঢ়া"
+      },
+      {
+       "en": "Join the next parts",
+       "as": "ভাগ জোৰা"
+      }
+     ],
+     "why": {
+      "en": "Separate tracks.",
+      "as": "পৃথক পথ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "The odd group out",
+    "as": "বেলেগ গোট"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Find the rule in most groups.",
+     "as": "বেছিভাগ গোটৰ নিয়ম উলিওৱা।"
+    },
+    {
+     "en": "Compare gaps inside each group.",
+     "as": "প্ৰতিটো গোটৰ ভিতৰৰ ব্যৱধান তুলনা।"
+    },
+    {
+     "en": "Vowels are often a hidden rule.",
+     "as": "স্বৰবৰ্ণ প্ৰায়ে লুকাই থকা নিয়ম।"
+    },
+    {
+     "en": "One mismatch settles it.",
+     "as": "এটা অমিলেই যথেষ্ট।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs3.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Gaps inside the group",
+      "as": "গোটৰ ভিতৰৰ ব্যৱধান"
+     },
+     "text": [
+      {
+       "en": "Find the gaps inside each group. Three match; the fourth does not.",
+       "as": "প্ৰতিটো গোটৰ ভিতৰৰ ব্যৱধান উলিওৱা। তিনিটা মিলে; চতুৰ্থটো নিমিলে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "ACE: +2, +2",
+        "as": "ACE: +2, +2"
+       },
+       {
+        "en": "GIK: +2, +2",
+        "as": "GIK: +2, +2"
+       },
+       {
+        "en": "MOR: +2, +3",
+        "as": "MOR: +2, +3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Remember the vowels",
+      "as": "স্বৰবৰ্ণ মনত ৰাখা"
+     },
+     "text": [
+      {
+       "en": "A, E, I, O, U are spaced unevenly, which makes them easy to spot.",
+       "as": "A, E, I, O, U অসমানকৈ থাকে, সেয়ে চিনি পোৱা সহজ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A",
+        "as": "A"
+       },
+       {
+        "en": "E",
+        "as": "E"
+       },
+       {
+        "en": "I",
+        "as": "I"
+       },
+       {
+        "en": "O",
+        "as": "O"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs3.u6.q1",
+     "type": "odd",
+     "skill": "r-lodd",
+     "q": {
+      "en": "Three groups share a rule. Which does not?",
+      "as": "তিনিটা গোটৰ নিয়ম একে। কোনটোৰ নহয়?"
+     },
+     "why": {
+      "en": "The others have gaps +2, +2.",
+      "as": "বাকীবোৰৰ ব্যৱধান +2, +2।"
+     },
+     "options": [
+      {
+       "en": "GIK",
+       "as": "GIK"
+      },
+      {
+       "en": "NPR",
+       "as": "NPR"
+      },
+      {
+       "en": "SUX",
+       "as": "SUX"
+      },
+      {
+       "en": "ACE",
+       "as": "ACE"
+      }
+     ],
+     "answer": 2,
+     "variants": [
+      {
+       "q": {
+        "en": "Three groups share a rule. Which does not?",
+        "as": "তিনিটা গোটৰ নিয়ম একে। কোনটোৰ নহয়?"
+       },
+       "why": {
+        "en": "The others have gaps +2, +2.",
+        "as": "বাকীবোৰৰ ব্যৱধান +2, +2।"
+       },
+       "options": [
+        {
+         "en": "GIK",
+         "as": "GIK"
+        },
+        {
+         "en": "NPR",
+         "as": "NPR"
+        },
+        {
+         "en": "SUX",
+         "as": "SUX"
+        },
+        {
+         "en": "ACE",
+         "as": "ACE"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "q": {
+        "en": "Three groups share a rule. Which does not?",
+        "as": "তিনিটা গোটৰ নিয়ম একে। কোনটোৰ নহয়?"
+       },
+       "why": {
+        "en": "The others have gaps +3, +3.",
+        "as": "বাকীবোৰৰ ব্যৱধান +3, +3।"
+       },
+       "options": [
+        {
+         "en": "PSV",
+         "as": "PSV"
+        },
+        {
+         "en": "BEI",
+         "as": "BEI"
+        },
+        {
+         "en": "HKN",
+         "as": "HKN"
+        },
+        {
+         "en": "ADG",
+         "as": "ADG"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "q": {
+        "en": "Three groups share a rule. Which does not?",
+        "as": "তিনিটা গোটৰ নিয়ম একে। কোনটোৰ নহয়?"
+       },
+       "why": {
+        "en": "The others have gaps +1, +1.",
+        "as": "বাকীবোৰৰ ব্যৱধান +1, +1।"
+       },
+       "options": [
+        {
+         "en": "EFH",
+         "as": "EFH"
+        },
+        {
+         "en": "BCD",
+         "as": "BCD"
+        },
+        {
+         "en": "RST",
+         "as": "RST"
+        },
+        {
+         "en": "KLM",
+         "as": "KLM"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "rs3.u6.q2",
+     "type": "tf",
+     "skill": "r-lodd",
+     "s": {
+      "en": "Among ACE, GIK and MPQ, the odd group is MPQ.",
+      "as": "ACE, GIK, MPQ ৰ ভিতৰত বেলেগ MPQ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "MPQ has gaps +3, +1.",
+      "as": "MPQ ৰ ব্যৱধান +3, +1।"
+     }
+    },
+    {
+     "id": "rs3.u6.q3",
+     "type": "match",
+     "skill": "r-lodd",
+     "q": {
+      "en": "Match the group to its gaps",
+      "as": "গোটক ব্যৱধানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "ADG",
+        "as": "ADG"
+       },
+       {
+        "en": "+3, +3",
+        "as": "+3, +3"
+       }
+      ],
+      [
+       {
+        "en": "BCD",
+        "as": "BCD"
+       },
+       {
+        "en": "+1, +1",
+        "as": "+1, +1"
+       }
+      ],
+      [
+       {
+        "en": "CGK",
+        "as": "CGK"
+       },
+       {
+        "en": "+4, +4",
+        "as": "+4, +4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Convert to places.",
+      "as": "স্থানলৈ সলনি কৰা।"
+     }
+    },
+    {
+     "id": "rs3.u6.q4",
+     "type": "order",
+     "skill": "r-lodd",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Take a group",
+       "as": "গোট লোৱা"
+      },
+      {
+       "en": "Find its gaps",
+       "as": "ব্যৱধান"
+      },
+      {
+       "en": "Compare the rest",
+       "as": "বাকীবোৰ তুলনা"
+      },
+      {
+       "en": "Pick the mismatch",
+       "as": "অমিল বাছা"
+      }
+     ],
+     "why": {
+      "en": "Rule first.",
+      "as": "নিয়ম আগতে।"
+     }
+    },
+    {
+     "id": "rs3.u6.q5",
+     "type": "solve",
+     "skill": "r-lodd",
+     "q": {
+      "en": "What is the gap from C to K?",
+      "as": "C ৰ পৰা K লৈ ব্যৱধান কিমান?"
+     },
+     "answer": "8",
+     "why": {
+      "en": "11 − 3 = 8.",
+      "as": "11 − 3 = 8।"
+     },
+     "traps": [
+      {
+       "ans": "7",
+       "tag": "r-m-lettergap",
+       "why": {
+        "en": "Count the letters skipped between, then add one.",
+        "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What is the gap from C to K?",
+        "as": "C ৰ পৰা K লৈ ব্যৱধান কিমান?"
+       },
+       "answer": "8",
+       "why": {
+        "en": "11 − 3 = 8.",
+        "as": "11 − 3 = 8।"
+       },
+       "traps": [
+        {
+         "ans": "7",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the gap from E to R?",
+        "as": "E ৰ পৰা R লৈ ব্যৱধান কিমান?"
+       },
+       "answer": "13",
+       "why": {
+        "en": "18 − 5 = 13.",
+        "as": "18 − 5 = 13।"
+       },
+       "traps": [
+        {
+         "ans": "12",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What is the gap from J to U?",
+        "as": "J ৰ পৰা U লৈ ব্যৱধান কিমান?"
+       },
+       "answer": "11",
+       "why": {
+        "en": "21 − 10 = 11.",
+        "as": "21 − 10 = 11।"
+       },
+       "traps": [
+        {
+         "ans": "10",
+         "tag": "r-m-lettergap",
+         "why": {
+          "en": "Count the letters skipped between, then add one.",
+          "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Letter series test",
+   "as": "আখৰ শৃংখলৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs3.t.q1",
+    "type": "solve",
+    "skill": "r-lgap",
+    "input": "letters",
+    "q": {
+     "en": "What comes next: E, H, K, N, Q, ?",
+     "as": "পিছত কি: E, H, K, N, Q, ?"
+    },
+    "answer": "T",
+    "why": {
+     "en": "Each letter moves +3.",
+     "as": "প্ৰতিটো আখৰ +3 সৰে।"
+    },
+    "traps": [
+     {
+      "ans": "O",
+      "tag": "r-m-lettergap",
+      "why": {
+       "en": "Count the letters skipped between, then add one.",
+       "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "What comes next: E, H, K, N, Q, ?",
+       "as": "পিছত কি: E, H, K, N, Q, ?"
+      },
+      "answer": "T",
+      "why": {
+       "en": "Each letter moves +3.",
+       "as": "প্ৰতিটো আখৰ +3 সৰে।"
+      },
+      "traps": [
+       {
+        "ans": "O",
+        "tag": "r-m-lettergap",
+        "why": {
+         "en": "Count the letters skipped between, then add one.",
+         "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "What comes next: X, U, R, O, L, ?",
+       "as": "পিছত কি: X, U, R, O, L, ?"
+      },
+      "answer": "I",
+      "why": {
+       "en": "Each letter moves −3.",
+       "as": "প্ৰতিটো আখৰ −3 সৰে।"
+      },
+      "traps": [
+       {
+        "ans": "N",
+        "tag": "r-m-lettergap",
+        "why": {
+         "en": "Count the letters skipped between, then add one.",
+         "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "What comes next: B, F, J, N, R, ?",
+       "as": "পিছত কি: B, F, J, N, R, ?"
+      },
+      "answer": "V",
+      "why": {
+       "en": "Each letter moves +4.",
+       "as": "প্ৰতিটো আখৰ +4 সৰে।"
+      },
+      "traps": [
+       {
+        "ans": "Q",
+        "tag": "r-m-lettergap",
+        "why": {
+         "en": "Count the letters skipped between, then add one.",
+         "as": "মাজত এৰা আখৰ গণি এক যোগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs3.t.q2",
+    "type": "solve",
+    "skill": "r-lmix",
+    "input": "letters",
+    "q": {
+     "en": "Two series take turns. What comes next: B, Y, D, W, F, U, ?",
+     "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: B, Y, D, W, F, U, ?"
+    },
+    "answer": "H",
+    "why": {
+     "en": "Odd places run B, D, F.",
+     "as": "বিজোৰ স্থানত B, D, F।"
+    },
+    "traps": [
+     {
+      "ans": "S",
+      "tag": "r-m-oneline",
+      "why": {
+       "en": "Take every second term. Two series take turns here.",
+       "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Two series take turns. What comes next: B, Y, D, W, F, U, ?",
+       "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: B, Y, D, W, F, U, ?"
+      },
+      "answer": "H",
+      "why": {
+       "en": "Odd places run B, D, F.",
+       "as": "বিজোৰ স্থানত B, D, F।"
+      },
+      "traps": [
+       {
+        "ans": "S",
+        "tag": "r-m-oneline",
+        "why": {
+         "en": "Take every second term. Two series take turns here.",
+         "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two series take turns. What comes next: D, V, G, U, J, T, ?",
+       "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: D, V, G, U, J, T, ?"
+      },
+      "answer": "M",
+      "why": {
+       "en": "Odd places run D, G, J.",
+       "as": "বিজোৰ স্থানত D, G, J।"
+      },
+      "traps": [
+       {
+        "ans": "S",
+        "tag": "r-m-oneline",
+        "why": {
+         "en": "Take every second term. Two series take turns here.",
+         "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs3.t.q3",
+    "type": "solve",
+    "skill": "r-lgroup",
+    "input": "letters",
+    "q": {
+     "en": "Each group follows the last. What comes next: EGI, FHJ, GIK, ?",
+     "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: EGI, FHJ, GIK, ?"
+    },
+    "answer": "HJL",
+    "why": {
+     "en": "Each group's first letter moves +1.",
+     "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +1 সৰে।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Each group follows the last. What comes next: EGI, FHJ, GIK, ?",
+       "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: EGI, FHJ, GIK, ?"
+      },
+      "answer": "HJL",
+      "why": {
+       "en": "Each group's first letter moves +1.",
+       "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +1 সৰে।"
+      }
+     },
+     {
+      "q": {
+       "en": "Each group follows the last. What comes next: ADG, CFI, EHK, ?",
+       "as": "প্ৰতিটো গোট আগৰটোৰ পিছত। পিছত কি: ADG, CFI, EHK, ?"
+      },
+      "answer": "GJM",
+      "why": {
+       "en": "Each group's first letter moves +2.",
+       "as": "প্ৰতিটো গোটৰ প্ৰথম আখৰ +2 সৰে।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs3.t.q4",
+    "type": "tf",
+    "skill": "r-lfill",
+    "s": {
+     "en": "The block of abcabc is abc.",
+     "as": "abcabc ৰ খণ্ড abc।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It repeats after three letters.",
+     "as": "তিনি আখৰৰ পিছত ঘূৰি আহে।"
+    }
+   },
+   {
+    "id": "rs3.t.q5",
+    "type": "tf",
+    "skill": "r-lnum",
+    "s": {
+     "en": "In C3, E5, G7 the next term is I9.",
+     "as": "C3, E5, G7 ৰ পিছত I9।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Both parts move +2.",
+     "as": "দুয়োটা ভাগ +2।"
+    }
+   },
+   {
+    "id": "rs3.t.q6",
+    "type": "tf",
+    "skill": "r-lodd",
+    "s": {
+     "en": "Among BDF, HJL and PQT, the odd group is PQT.",
+     "as": "BDF, HJL, PQT ৰ ভিতৰত বেলেগ PQT।"
+    },
+    "answer": true,
+    "why": {
+     "en": "PQT has gaps +1, +3.",
+     "as": "PQT ৰ ব্যৱধান +1, +3।"
+    }
+   }
+  ]
+ }
+}

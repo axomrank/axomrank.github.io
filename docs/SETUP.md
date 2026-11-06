@@ -13,7 +13,7 @@ All are on free plans.
 
 ```bash
 python3 scripts/build.py          # check content, write content/manifest.json, stamp sw.js
-git add -A ':!nesfic*' && git commit -m "…" && git push   # GitHub Pages
+git add <changed files> && git commit -m "…" && git push   # GitHub Pages
 scripts/deploy_cloudflare.sh      # Cloudflare Pages (copies only the website files)
 ```
 

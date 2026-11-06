@@ -1,0 +1,3503 @@
+{
+ "id": "rs-02-number-series",
+ "course": "reasoning",
+ "no": 2,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Number series",
+  "as": "সংখ্যা শৃংখল"
+ },
+ "reign": {
+  "en": "Gaps, multiples, two series, wrong terms",
+  "as": "ব্যৱধান, গুণিতক, দুটা শৃংখল, ভুল পদ"
+ },
+ "portrait": "reasoning/patterns.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Start with the gaps",
+    "as": "ব্যৱধানৰ পৰা আৰম্ভ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Write the gap between neighbours.",
+     "as": "কাষৰ পদৰ ব্যৱধান লিখা।"
+    },
+    {
+     "en": "A steady gap means add that gap.",
+     "as": "একে ব্যৱধান মানে সেয়া যোগ।"
+    },
+    {
+     "en": "A gap can be negative.",
+     "as": "ব্যৱধান ঋণাত্মক হ'ব পাৰে।"
+    },
+    {
+     "en": "Check the rule on every term.",
+     "as": "প্ৰতিটো পদত নিয়ম চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs2.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "A series hides in its gaps",
+      "as": "শৃংখল ব্যৱধানত লুকাই থাকে"
+     },
+     "text": [
+      {
+       "en": "Do not stare at the numbers. Open the gaps and the rule appears.",
+       "as": "সংখ্যালৈ চাই নাথাকিবা। ব্যৱধান খুলিলেই নিয়ম ওলায়।"
+      }
+     ],
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       3,
+       7,
+       11,
+       15,
+       19
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Open the gaps.",
+        "as": "ব্যৱধান খোলা।"
+       },
+       "goal": {
+        "opened": 1
+       },
+       "then": {
+        "en": "Every gap is +4.",
+        "as": "প্ৰতিটো ব্যৱধান +4।"
+       }
+      },
+      {
+       "do": {
+        "en": "Set the next term to 23.",
+        "as": "পিছৰ পদ 23 কৰা।"
+       },
+       "goal": {
+        "next": 23
+       },
+       "then": {
+        "en": "19 + 4 = 23. The gap did all the work.",
+        "as": "19 + 4 = 23। ব্যৱধানেই সকলো কৰিলে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Three steps, every time",
+      "as": "সদায় তিনি খোজ"
+     },
+     "text": [
+      {
+       "en": "Most exam series fall at the first step, so always begin there.",
+       "as": "পৰীক্ষাৰ বেছিভাগ শৃংখল প্ৰথম খোজতে হয়, সেয়ে তাৰ পৰাই আৰম্ভ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Write gaps",
+        "as": "ব্যৱধান লিখা"
+       },
+       {
+        "en": "Find the rule",
+        "as": "নিয়ম উলিওৱা"
+       },
+       {
+        "en": "Test it",
+        "as": "পৰীক্ষা কৰা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u1.q1",
+     "type": "explore",
+     "skill": "r-sadd",
+     "q": {
+      "en": "Open the gaps of 5, 8, 11, 14, 17, then set the next term.",
+      "as": "5, 8, 11, 14, 17 ৰ ব্যৱধান খুলি পিছৰ পদ ঠিক কৰা।"
+     },
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       5,
+       8,
+       11,
+       14,
+       17
+      ]
+     },
+     "target": 20,
+     "answerText": {
+      "en": "20",
+      "as": "20"
+     },
+     "why": {
+      "en": "Every gap is +3.",
+      "as": "প্ৰতিটো ব্যৱধান +3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Open the gaps of 5, 8, 11, 14, 17, then set the next term.",
+        "as": "5, 8, 11, 14, 17 ৰ ব্যৱধান খুলি পিছৰ পদ ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         5,
+         8,
+         11,
+         14,
+         17
+        ]
+       },
+       "target": 20,
+       "answerText": {
+        "en": "20",
+        "as": "20"
+       },
+       "why": {
+        "en": "Every gap is +3.",
+        "as": "প্ৰতিটো ব্যৱধান +3।"
+       }
+      },
+      {
+       "q": {
+        "en": "Open the gaps of 40, 36, 32, 28, 24, then set the next term.",
+        "as": "40, 36, 32, 28, 24 ৰ ব্যৱধান খুলি পিছৰ পদ ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         40,
+         36,
+         32,
+         28,
+         24
+        ]
+       },
+       "target": 20,
+       "answerText": {
+        "en": "20",
+        "as": "20"
+       },
+       "why": {
+        "en": "Every gap is −4.",
+        "as": "প্ৰতিটো ব্যৱধান −4।"
+       }
+      },
+      {
+       "q": {
+        "en": "Open the gaps of 2, 9, 16, 23, 30, then set the next term.",
+        "as": "2, 9, 16, 23, 30 ৰ ব্যৱধান খুলি পিছৰ পদ ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         2,
+         9,
+         16,
+         23,
+         30
+        ]
+       },
+       "target": 37,
+       "answerText": {
+        "en": "37",
+        "as": "37"
+       },
+       "why": {
+        "en": "Every gap is +7.",
+        "as": "প্ৰতিটো ব্যৱধান +7।"
+       }
+      },
+      {
+       "q": {
+        "en": "Open the gaps of 90, 81, 72, 63, 54, then set the next term.",
+        "as": "90, 81, 72, 63, 54 ৰ ব্যৱধান খুলি পিছৰ পদ ঠিক কৰা।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         90,
+         81,
+         72,
+         63,
+         54
+        ]
+       },
+       "target": 45,
+       "answerText": {
+        "en": "45",
+        "as": "45"
+       },
+       "why": {
+        "en": "Every gap is −9.",
+        "as": "প্ৰতিটো ব্যৱধান −9।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u1.q2",
+     "type": "solve",
+     "skill": "r-sadd",
+     "q": {
+      "en": "What comes next: 11, 17, 23, 29, 35, ?",
+      "as": "পিছত কি: 11, 17, 23, 29, 35, ?"
+     },
+     "answer": "41",
+     "why": {
+      "en": "Each term changes by +6.",
+      "as": "প্ৰতিটো পদ +6 সলনি হয়।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "What comes next: 11, 17, 23, 29, 35, ?",
+        "as": "পিছত কি: 11, 17, 23, 29, 35, ?"
+       },
+       "answer": "41",
+       "why": {
+        "en": "Each term changes by +6.",
+        "as": "প্ৰতিটো পদ +6 সলনি হয়।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What comes next: 100, 92, 84, 76, 68, ?",
+        "as": "পিছত কি: 100, 92, 84, 76, 68, ?"
+       },
+       "answer": "60",
+       "why": {
+        "en": "Each term changes by −8.",
+        "as": "প্ৰতিটো পদ −8 সলনি হয়।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What comes next: 6, 19, 32, 45, 58, ?",
+        "as": "পিছত কি: 6, 19, 32, 45, 58, ?"
+       },
+       "answer": "71",
+       "why": {
+        "en": "Each term changes by +13.",
+        "as": "প্ৰতিটো পদ +13 সলনি হয়।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What comes next: 51, 45, 39, 33, 27, ?",
+        "as": "পিছত কি: 51, 45, 39, 33, 27, ?"
+       },
+       "answer": "21",
+       "why": {
+        "en": "Each term changes by −6.",
+        "as": "প্ৰতিটো পদ −6 সলনি হয়।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs2.u1.q3",
+     "type": "tf",
+     "skill": "r-sadd",
+     "s": {
+      "en": "In 9, 14, 19, 24 the gap is +5.",
+      "as": "9, 14, 19, 24 ত ব্যৱধান +5।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Each term adds 5.",
+      "as": "প্ৰতিটো পদত 5 যোগ।"
+     }
+    },
+    {
+     "id": "rs2.u1.q4",
+     "type": "match",
+     "skill": "r-sadd",
+     "q": {
+      "en": "Match the series to its gap",
+      "as": "শৃংখলক ব্যৱধানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "4, 7, 10",
+        "as": "4, 7, 10"
+       },
+       {
+        "en": "+3",
+        "as": "+3"
+       }
+      ],
+      [
+       {
+        "en": "20, 15, 10",
+        "as": "20, 15, 10"
+       },
+       {
+        "en": "−5",
+        "as": "−5"
+       }
+      ],
+      [
+       {
+        "en": "2, 10, 18",
+        "as": "2, 10, 18"
+       },
+       {
+        "en": "+8",
+        "as": "+8"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Subtract neighbours.",
+      "as": "কাষৰ পদ বিয়োগ কৰা।"
+     }
+    },
+    {
+     "id": "rs2.u1.q5",
+     "type": "order",
+     "skill": "r-sadd",
+     "q": {
+      "en": "Smallest term first: 7, 12, 17, 22",
+      "as": "সৰু পদ আগতে: 7, 12, 17, 22"
+     },
+     "items": [
+      {
+       "en": "7",
+       "as": "7"
+      },
+      {
+       "en": "12",
+       "as": "12"
+      },
+      {
+       "en": "17",
+       "as": "17"
+      },
+      {
+       "en": "22",
+       "as": "22"
+      }
+     ],
+     "why": {
+      "en": "The gap is +5.",
+      "as": "ব্যৱধান +5।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Gaps of the gaps",
+    "as": "ব্যৱধানৰ ব্যৱধান"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "If gaps change, write the gaps of the gaps.",
+     "as": "ব্যৱধান সলনি হ'লে ব্যৱধানৰ ব্যৱধান লিখা।"
+    },
+    {
+     "en": "A steady second gap means the gaps grow evenly.",
+     "as": "একে দ্বিতীয় ব্যৱধান মানে সমানে বৃদ্ধি।"
+    },
+    {
+     "en": "Build the next gap first, then the next term.",
+     "as": "প্ৰথমে পিছৰ ব্যৱধান, তাৰ পিছত পদ।"
+    },
+    {
+     "en": "Do not stop at the first row.",
+     "as": "প্ৰথম শাৰীতে নৰবা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs2.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "One row is not enough",
+      "as": "এটা শাৰী নহয়"
+     },
+     "text": [
+      {
+       "en": "Here the gaps are not steady. Open a second row.",
+       "as": "ইয়াত ব্যৱধান একে নহয়। দ্বিতীয় শাৰী খোলা।"
+      }
+     ],
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       2,
+       3,
+       6,
+       11,
+       18
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Open both rows.",
+        "as": "দুয়োটা শাৰী খোলা।"
+       },
+       "goal": {
+        "opened": 2
+       },
+       "then": {
+        "en": "The gaps run +1, +3, +5, +7, and each grows by 2.",
+        "as": "ব্যৱধান +1, +3, +5, +7, প্ৰতিটো 2 বাঢ়ে।"
+       }
+      },
+      {
+       "do": {
+        "en": "Set the next term to 27.",
+        "as": "পিছৰ পদ 27 কৰা।"
+       },
+       "goal": {
+        "next": 27
+       },
+       "then": {
+        "en": "The next gap is +9, so 18 + 9 = 27.",
+        "as": "পিছৰ ব্যৱধান +9, গতিকে 18 + 9 = 27।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Build upward from the bottom",
+      "as": "তলৰ পৰা ওপৰলৈ"
+     },
+     "text": [
+      {
+       "en": "Extend the bottom row, then use it to extend the row above.",
+       "as": "তলৰ শাৰী আগবঢ়াই ওপৰৰ শাৰী আগবঢ়োৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Second gap",
+        "as": "দ্বিতীয় ব্যৱধান"
+       },
+       {
+        "en": "Next gap",
+        "as": "পিছৰ ব্যৱধান"
+       },
+       {
+        "en": "Next term",
+        "as": "পিছৰ পদ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u2.q1",
+     "type": "explore",
+     "skill": "r-stwo",
+     "q": {
+      "en": "Find the next term: 1, 3, 7, 13, 21.",
+      "as": "পিছৰ পদ: 1, 3, 7, 13, 21।"
+     },
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       1,
+       3,
+       7,
+       13,
+       21
+      ]
+     },
+     "target": 31,
+     "answerText": {
+      "en": "31",
+      "as": "31"
+     },
+     "traps": [
+      {
+       "val": 29,
+       "tag": "r-m-firstgap",
+       "why": {
+        "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+        "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The gaps grow by 2 each time, so the next gap is 10.",
+      "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 10।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the next term: 1, 3, 7, 13, 21.",
+        "as": "পিছৰ পদ: 1, 3, 7, 13, 21।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         1,
+         3,
+         7,
+         13,
+         21
+        ]
+       },
+       "target": 31,
+       "answerText": {
+        "en": "31",
+        "as": "31"
+       },
+       "traps": [
+        {
+         "val": 29,
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gaps grow by 2 each time, so the next gap is 10.",
+        "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 10।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next term: 4, 5, 9, 16, 26.",
+        "as": "পিছৰ পদ: 4, 5, 9, 16, 26।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         4,
+         5,
+         9,
+         16,
+         26
+        ]
+       },
+       "target": 39,
+       "answerText": {
+        "en": "39",
+        "as": "39"
+       },
+       "traps": [
+        {
+         "val": 36,
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gaps grow by 3 each time, so the next gap is 13.",
+        "as": "ব্যৱধান প্ৰতিবাৰ 3 বাঢ়ে, পিছৰ ব্যৱধান 13।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the next term: 10, 13, 17, 22, 28.",
+        "as": "পিছৰ পদ: 10, 13, 17, 22, 28।"
+       },
+       "widget": {
+        "kind": "gaps",
+        "terms": [
+         10,
+         13,
+         17,
+         22,
+         28
+        ]
+       },
+       "target": 35,
+       "answerText": {
+        "en": "35",
+        "as": "35"
+       },
+       "traps": [
+        {
+         "val": 34,
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The gaps grow by 1 each time, so the next gap is 7.",
+        "as": "ব্যৱধান প্ৰতিবাৰ 1 বাঢ়ে, পিছৰ ব্যৱধান 7।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u2.q2",
+     "type": "solve",
+     "skill": "r-stwo",
+     "q": {
+      "en": "What comes next: 2, 4, 8, 14, 22, ?",
+      "as": "পিছত কি: 2, 4, 8, 14, 22, ?"
+     },
+     "answer": "32",
+     "why": {
+      "en": "The gaps grow by 2 each time, so the next gap is 10.",
+      "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 10।"
+     },
+     "traps": [
+      {
+       "ans": "30",
+       "tag": "r-m-firstgap",
+       "why": {
+        "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+        "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What comes next: 2, 4, 8, 14, 22, ?",
+        "as": "পিছত কি: 2, 4, 8, 14, 22, ?"
+       },
+       "answer": "32",
+       "why": {
+        "en": "The gaps grow by 2 each time, so the next gap is 10.",
+        "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 10।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: 5, 6, 9, 14, 21, ?",
+        "as": "পিছত কি: 5, 6, 9, 14, 21, ?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "The gaps grow by 2 each time, so the next gap is 9.",
+        "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 9।"
+       },
+       "traps": [
+        {
+         "ans": "28",
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: 3, 7, 14, 24, 37, ?",
+        "as": "পিছত কি: 3, 7, 14, 24, 37, ?"
+       },
+       "answer": "53",
+       "why": {
+        "en": "The gaps grow by 3 each time, so the next gap is 16.",
+        "as": "ব্যৱধান প্ৰতিবাৰ 3 বাঢ়ে, পিছৰ ব্যৱধান 16।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs2.u2.q3",
+     "type": "stepwise",
+     "skill": "r-stwo",
+     "q": {
+      "en": "Work through 1, 2, 4, 7, 11, ?",
+      "as": "1, 2, 4, 7, 11, ? সমাধান কৰা"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The gaps?",
+        "as": "ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "1, 2, 3, 4",
+         "as": "1, 2, 3, 4"
+        },
+        {
+         "en": "2, 3, 4, 5",
+         "as": "2, 3, 4, 5"
+        },
+        {
+         "en": "1, 2, 4, 7",
+         "as": "1, 2, 4, 7"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Subtract neighbours.",
+        "as": "কাষৰ পদ বিয়োগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The next gap?",
+        "as": "পিছৰ ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "6",
+         "as": "6"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+        "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+       },
+       "tag": "r-m-firstgap"
+      },
+      {
+       "ask": {
+        "en": "The next term?",
+        "as": "পিছৰ পদ?"
+       },
+       "options": [
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "17",
+         "as": "17"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Add the next gap.",
+        "as": "পিছৰ ব্যৱধান যোগ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The answer is 16.",
+      "as": "উত্তৰ 16।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Work through 1, 2, 4, 7, 11, ?",
+        "as": "1, 2, 4, 7, 11, ? সমাধান কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The gaps?",
+          "as": "ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "1, 2, 3, 4",
+           "as": "1, 2, 3, 4"
+          },
+          {
+           "en": "2, 3, 4, 5",
+           "as": "2, 3, 4, 5"
+          },
+          {
+           "en": "1, 2, 4, 7",
+           "as": "1, 2, 4, 7"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Subtract neighbours.",
+          "as": "কাষৰ পদ বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The next gap?",
+          "as": "পিছৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         },
+         "tag": "r-m-firstgap"
+        },
+        {
+         "ask": {
+          "en": "The next term?",
+          "as": "পিছৰ পদ?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "17",
+           "as": "17"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add the next gap.",
+          "as": "পিছৰ ব্যৱধান যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 16.",
+        "as": "উত্তৰ 16।"
+       }
+      },
+      {
+       "q": {
+        "en": "Work through 2, 5, 10, 17, 26, ?",
+        "as": "2, 5, 10, 17, 26, ? সমাধান কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The gaps?",
+          "as": "ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "4, 6, 8, 10",
+           "as": "4, 6, 8, 10"
+          },
+          {
+           "en": "2, 5, 10, 17",
+           "as": "2, 5, 10, 17"
+          },
+          {
+           "en": "3, 5, 7, 9",
+           "as": "3, 5, 7, 9"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Subtract neighbours.",
+          "as": "কাষৰ পদ বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The next gap?",
+          "as": "পিছৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         },
+         "tag": "r-m-firstgap"
+        },
+        {
+         "ask": {
+          "en": "The next term?",
+          "as": "পিছৰ পদ?"
+         },
+         "options": [
+          {
+           "en": "37",
+           "as": "37"
+          },
+          {
+           "en": "38",
+           "as": "38"
+          },
+          {
+           "en": "35",
+           "as": "35"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add the next gap.",
+          "as": "পিছৰ ব্যৱধান যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 37.",
+        "as": "উত্তৰ 37।"
+       }
+      },
+      {
+       "q": {
+        "en": "Work through 7, 9, 13, 19, 27, ?",
+        "as": "7, 9, 13, 19, 27, ? সমাধান কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The gaps?",
+          "as": "ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "3, 5, 7, 9",
+           "as": "3, 5, 7, 9"
+          },
+          {
+           "en": "2, 4, 6, 8",
+           "as": "2, 4, 6, 8"
+          },
+          {
+           "en": "7, 9, 13, 19",
+           "as": "7, 9, 13, 19"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Subtract neighbours.",
+          "as": "কাষৰ পদ বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The next gap?",
+          "as": "পিছৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+          "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+         },
+         "tag": "r-m-firstgap"
+        },
+        {
+         "ask": {
+          "en": "The next term?",
+          "as": "পিছৰ পদ?"
+         },
+         "options": [
+          {
+           "en": "37",
+           "as": "37"
+          },
+          {
+           "en": "38",
+           "as": "38"
+          },
+          {
+           "en": "35",
+           "as": "35"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add the next gap.",
+          "as": "পিছৰ ব্যৱধান যোগ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 37.",
+        "as": "উত্তৰ 37।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u2.q4",
+     "type": "tf",
+     "skill": "r-stwo",
+     "s": {
+      "en": "In 1, 2, 4, 7, 11 the next gap is 5.",
+      "as": "1, 2, 4, 7, 11 ত পিছৰ ব্যৱধান 5।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The gaps are 1, 2, 3, 4, so 5 follows.",
+      "as": "ব্যৱধান 1, 2, 3, 4, গতিকে 5।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-firstgap",
+       "why": {
+        "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+        "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u2.q5",
+     "type": "match",
+     "skill": "r-stwo",
+     "q": {
+      "en": "Match the gaps to the next gap",
+      "as": "ব্যৱধানক পিছৰ ব্যৱধানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2, 4, 6",
+        "as": "2, 4, 6"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      [
+       {
+        "en": "1, 4, 7",
+        "as": "1, 4, 7"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      [
+       {
+        "en": "5, 10, 15",
+        "as": "5, 10, 15"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each row has its own steady change.",
+      "as": "প্ৰতিটো শাৰীৰ নিজা স্থিৰ সলনি।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "When numbers multiply",
+    "as": "সংখ্যা পূৰণ হ'লে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Fast growth suggests multiplying.",
+     "as": "খৰ বৃদ্ধি মানে পূৰণ।"
+    },
+    {
+     "en": "Divide neighbours to test it.",
+     "as": "কাষৰ পদ হৰণ কৰি চোৱা।"
+    },
+    {
+     "en": "Some rules multiply, then add.",
+     "as": "কিছুমান নিয়মে পূৰণ কৰি যোগ কৰে।"
+    },
+    {
+     "en": "Halving is multiplying by one half.",
+     "as": "আধা কৰাও পূৰণ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs2.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Quick growth is a clue",
+      "as": "খৰ বৃদ্ধি এটা ইংগিত"
+     },
+     "text": [
+      {
+       "en": "3, 6, 12, 24 doubles. Adding cannot keep up with that speed.",
+       "as": "3, 6, 12, 24 দুগুণ হয়। যোগে এই বেগ ধৰিব নোৱাৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Multiply, then add",
+      "as": "পূৰণ, তাৰ পিছত যোগ"
+     },
+     "text": [
+      {
+       "en": "If division gives no whole number, try twice a term plus a small number.",
+       "as": "হৰণত পূৰ্ণ সংখ্যা নহ'লে দুগুণ কৰি অলপ যোগ কৰি চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "3 × 2 + 1 = 7",
+        "as": "3 × 2 + 1 = 7"
+       },
+       {
+        "en": "7 × 2 + 1 = 15",
+        "as": "7 × 2 + 1 = 15"
+       },
+       {
+        "en": "15 × 2 + 1 = 31",
+        "as": "15 × 2 + 1 = 31"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u3.q1",
+     "type": "solve",
+     "skill": "r-smult",
+     "q": {
+      "en": "What comes next: 2, 6, 18, 54, ?",
+      "as": "পিছত কি: 2, 6, 18, 54, ?"
+     },
+     "answer": "162",
+     "why": {
+      "en": "Each term is multiplied by 3.",
+      "as": "প্ৰতিটো পদ 3 ৰে পূৰণ হয়।"
+     },
+     "traps": [
+      {
+       "ans": "90",
+       "tag": "r-m-addmult",
+       "why": {
+        "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+        "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What comes next: 2, 6, 18, 54, ?",
+        "as": "পিছত কি: 2, 6, 18, 54, ?"
+       },
+       "answer": "162",
+       "why": {
+        "en": "Each term is multiplied by 3.",
+        "as": "প্ৰতিটো পদ 3 ৰে পূৰণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "90",
+         "tag": "r-m-addmult",
+         "why": {
+          "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+          "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: 5, 10, 20, 40, ?",
+        "as": "পিছত কি: 5, 10, 20, 40, ?"
+       },
+       "answer": "80",
+       "why": {
+        "en": "Each term is multiplied by 2.",
+        "as": "প্ৰতিটো পদ 2 ৰে পূৰণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "r-m-addmult",
+         "why": {
+          "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+          "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: 1, 4, 16, 64, ?",
+        "as": "পিছত কি: 1, 4, 16, 64, ?"
+       },
+       "answer": "256",
+       "why": {
+        "en": "Each term is multiplied by 4.",
+        "as": "প্ৰতিটো পদ 4 ৰে পূৰণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "112",
+         "tag": "r-m-addmult",
+         "why": {
+          "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+          "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What comes next: 3, 9, 27, 81, ?",
+        "as": "পিছত কি: 3, 9, 27, 81, ?"
+       },
+       "answer": "243",
+       "why": {
+        "en": "Each term is multiplied by 3.",
+        "as": "প্ৰতিটো পদ 3 ৰে পূৰণ হয়।"
+       },
+       "traps": [
+        {
+         "ans": "135",
+         "tag": "r-m-addmult",
+         "why": {
+          "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+          "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs2.u3.q2",
+     "type": "solve",
+     "skill": "r-smult",
+     "q": {
+      "en": "Each term is the last times 2, plus 1. What comes next: 2, 5, 11, 23, ?",
+      "as": "প্ৰতিটো পদ আগৰটোৰ 2 গুণ, লগত 1। পিছত কি: 2, 5, 11, 23, ?"
+     },
+     "answer": "47",
+     "why": {
+      "en": "23 × 2 + 1 = 47.",
+      "as": "23 × 2 + 1 = 47।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Each term is the last times 2, plus 1. What comes next: 2, 5, 11, 23, ?",
+        "as": "প্ৰতিটো পদ আগৰটোৰ 2 গুণ, লগত 1। পিছত কি: 2, 5, 11, 23, ?"
+       },
+       "answer": "47",
+       "why": {
+        "en": "23 × 2 + 1 = 47.",
+        "as": "23 × 2 + 1 = 47।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Each term is the last times 3, plus 1. What comes next: 1, 4, 13, 40, ?",
+        "as": "প্ৰতিটো পদ আগৰটোৰ 3 গুণ, লগত 1। পিছত কি: 1, 4, 13, 40, ?"
+       },
+       "answer": "121",
+       "why": {
+        "en": "40 × 3 + 1 = 121.",
+        "as": "40 × 3 + 1 = 121।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Each term is the last times 2, plus 3. What comes next: 3, 9, 21, 45, ?",
+        "as": "প্ৰতিটো পদ আগৰটোৰ 2 গুণ, লগত 3। পিছত কি: 3, 9, 21, 45, ?"
+       },
+       "answer": "93",
+       "why": {
+        "en": "45 × 2 + 3 = 93.",
+        "as": "45 × 2 + 3 = 93।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs2.u3.q3",
+     "type": "tf",
+     "skill": "r-smult",
+     "s": {
+      "en": "In 2, 6, 18, 54 each term is multiplied by 3.",
+      "as": "2, 6, 18, 54 ত প্ৰতিটো পদ 3 ৰে পূৰণ।"
+     },
+     "answer": true,
+     "why": {
+      "en": "6 ÷ 2 = 3 and 18 ÷ 6 = 3.",
+      "as": "6 ÷ 2 = 3, 18 ÷ 6 = 3।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-addmult",
+       "why": {
+        "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+        "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u3.q4",
+     "type": "match",
+     "skill": "r-smult",
+     "q": {
+      "en": "Match the series to its multiplier",
+      "as": "শৃংখলক গুণকৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1, 2, 4",
+        "as": "1, 2, 4"
+       },
+       {
+        "en": "× 2",
+        "as": "× 2"
+       }
+      ],
+      [
+       {
+        "en": "1, 5, 25",
+        "as": "1, 5, 25"
+       },
+       {
+        "en": "× 5",
+        "as": "× 5"
+       }
+      ],
+      [
+       {
+        "en": "80, 40, 20",
+        "as": "80, 40, 20"
+       },
+       {
+        "en": "× ½",
+        "as": "× ½"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide neighbours.",
+      "as": "কাষৰ পদ হৰণ কৰা।"
+     }
+    },
+    {
+     "id": "rs2.u3.q5",
+     "type": "order",
+     "skill": "r-smult",
+     "q": {
+      "en": "Test a series in this order",
+      "as": "এই ক্ৰমত শৃংখল পৰীক্ষা কৰা"
+     },
+     "items": [
+      {
+       "en": "Write the gaps",
+       "as": "ব্যৱধান লিখা"
+      },
+      {
+       "en": "Try gaps of gaps",
+       "as": "ব্যৱধানৰ ব্যৱধান"
+      },
+      {
+       "en": "Divide neighbours",
+       "as": "হৰণ কৰা"
+      },
+      {
+       "en": "Try two series",
+       "as": "দুটা শৃংখল চোৱা"
+      }
+     ],
+     "why": {
+      "en": "Simple tests first.",
+      "as": "সহজ পৰীক্ষা আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Two series at once",
+    "as": "একেলগে দুটা শৃংখল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Rules that zigzag may be two series.",
+     "as": "জিগজাগ মানে দুটা শৃংখল হ'ব পাৰে।"
+    },
+    {
+     "en": "Split odd and even places.",
+     "as": "বিজোৰ আৰু যোৰ স্থান পৃথক কৰা।"
+    },
+    {
+     "en": "Find which series the blank belongs to.",
+     "as": "খালী ঠাই কোন শৃংখলৰ চোৱা।"
+    },
+    {
+     "en": "Each series has its own gap.",
+     "as": "প্ৰতিটো শৃংখলৰ নিজা ব্যৱধান।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs2.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Zigzag means split",
+      "as": "জিগজাগ মানে ভাগ"
+     },
+     "text": [
+      {
+       "en": "If the numbers rise and fall, take every second term.",
+       "as": "সংখ্যা উঠা-নমা কৰিলে প্ৰতি দ্বিতীয় পদ লোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Odd places: 2, 4, 6",
+        "as": "বিজোৰ: 2, 4, 6"
+       },
+       {
+        "en": "Even places: 50, 45, 40",
+        "as": "যোৰ: 50, 45, 40"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Which one is next?",
+      "as": "পিছৰটো কোন?"
+     },
+     "text": [
+      {
+       "en": "Count the place of the blank. Its parity tells you which series continues.",
+       "as": "খালী ঠাইৰ স্থান গণা। বিজোৰ নে যোৰ চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Place of blank",
+        "as": "খালী ঠাইৰ স্থান"
+       },
+       {
+        "en": "Odd or even",
+        "as": "বিজোৰ নে যোৰ"
+       },
+       {
+        "en": "Continue it",
+        "as": "আগবঢ়োৱা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u4.q1",
+     "type": "solve",
+     "skill": "r-smix",
+     "q": {
+      "en": "Two series take turns. What comes next: 2, 40, 5, 38, 8, 36, ?",
+      "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 2, 40, 5, 38, 8, 36, ?"
+     },
+     "answer": "11",
+     "why": {
+      "en": "Odd places run 2, 5, 8, so the next is 11.",
+      "as": "বিজোৰ স্থানত 2, 5, 8, গতিকে পিছৰটো 11।"
+     },
+     "traps": [
+      {
+       "ans": "64",
+       "tag": "r-m-oneline",
+       "why": {
+        "en": "Take every second term. Two series take turns here.",
+        "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Two series take turns. What comes next: 2, 40, 5, 38, 8, 36, ?",
+        "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 2, 40, 5, 38, 8, 36, ?"
+       },
+       "answer": "11",
+       "why": {
+        "en": "Odd places run 2, 5, 8, so the next is 11.",
+        "as": "বিজোৰ স্থানত 2, 5, 8, গতিকে পিছৰটো 11।"
+       },
+       "traps": [
+        {
+         "ans": "64",
+         "tag": "r-m-oneline",
+         "why": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two series take turns. What comes next: 5, 30, 10, 27, 15, 24, ?",
+        "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 5, 30, 10, 27, 15, 24, ?"
+       },
+       "answer": "20",
+       "why": {
+        "en": "Odd places run 5, 10, 15, so the next is 20.",
+        "as": "বিজোৰ স্থানত 5, 10, 15, গতিকে পিছৰটো 20।"
+       },
+       "traps": [
+        {
+         "ans": "33",
+         "tag": "r-m-oneline",
+         "why": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two series take turns. What comes next: 1, 20, 5, 22, 9, 24, ?",
+        "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 1, 20, 5, 22, 9, 24, ?"
+       },
+       "answer": "13",
+       "why": {
+        "en": "Odd places run 1, 5, 9, so the next is 13.",
+        "as": "বিজোৰ স্থানত 1, 5, 9, গতিকে পিছৰটো 13।"
+       },
+       "traps": [
+        {
+         "ans": "39",
+         "tag": "r-m-oneline",
+         "why": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs2.u4.q2",
+     "type": "stepwise",
+     "skill": "r-smix",
+     "q": {
+      "en": "Split 3, 30, 5, 25, 7, 20, ?",
+      "as": "3, 30, 5, 25, 7, 20, ? ভাগ কৰা"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "1st, 3rd and 5th terms?",
+        "as": "১ম, ৩য়, ৫ম পদ?"
+       },
+       "options": [
+        {
+         "en": "30, 25, 20",
+         "as": "30, 25, 20"
+        },
+        {
+         "en": "3, 5, 7",
+         "as": "3, 5, 7"
+        },
+        {
+         "en": "3, 30, 5",
+         "as": "3, 30, 5"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Take every second term. Two series take turns here.",
+        "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+       },
+       "tag": "r-m-oneline"
+      },
+      {
+       "ask": {
+        "en": "Their gap?",
+        "as": "সিহঁতৰ ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "+2",
+         "as": "+2"
+        },
+        {
+         "en": "−5",
+         "as": "−5"
+        },
+        {
+         "en": "+3",
+         "as": "+3"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Compare neighbours in that list.",
+        "as": "সেই তালিকাৰ কাষৰ পদ তুলনা কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The next term?",
+        "as": "পিছৰ পদ?"
+       },
+       "options": [
+        {
+         "en": "9",
+         "as": "9"
+        },
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "22",
+         "as": "22"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It continues the odd places.",
+        "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The answer is 9.",
+      "as": "উত্তৰ 9।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Split 3, 30, 5, 25, 7, 20, ?",
+        "as": "3, 30, 5, 25, 7, 20, ? ভাগ কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "1st, 3rd and 5th terms?",
+          "as": "১ম, ৩য়, ৫ম পদ?"
+         },
+         "options": [
+          {
+           "en": "30, 25, 20",
+           "as": "30, 25, 20"
+          },
+          {
+           "en": "3, 5, 7",
+           "as": "3, 5, 7"
+          },
+          {
+           "en": "3, 30, 5",
+           "as": "3, 30, 5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         },
+         "tag": "r-m-oneline"
+        },
+        {
+         "ask": {
+          "en": "Their gap?",
+          "as": "সিহঁতৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+2",
+           "as": "+2"
+          },
+          {
+           "en": "−5",
+           "as": "−5"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Compare neighbours in that list.",
+          "as": "সেই তালিকাৰ কাষৰ পদ তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The next term?",
+          "as": "পিছৰ পদ?"
+         },
+         "options": [
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "22",
+           "as": "22"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It continues the odd places.",
+          "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 9.",
+        "as": "উত্তৰ 9।"
+       }
+      },
+      {
+       "q": {
+        "en": "Split 10, 4, 15, 7, 20, 10, ?",
+        "as": "10, 4, 15, 7, 20, 10, ? ভাগ কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "1st, 3rd and 5th terms?",
+          "as": "১ম, ৩য়, ৫ম পদ?"
+         },
+         "options": [
+          {
+           "en": "4, 7, 10",
+           "as": "4, 7, 10"
+          },
+          {
+           "en": "10, 4, 15",
+           "as": "10, 4, 15"
+          },
+          {
+           "en": "10, 15, 20",
+           "as": "10, 15, 20"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         },
+         "tag": "r-m-oneline"
+        },
+        {
+         "ask": {
+          "en": "Their gap?",
+          "as": "সিহঁতৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+3",
+           "as": "+3"
+          },
+          {
+           "en": "+6",
+           "as": "+6"
+          },
+          {
+           "en": "+5",
+           "as": "+5"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Compare neighbours in that list.",
+          "as": "সেই তালিকাৰ কাষৰ পদ তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The next term?",
+          "as": "পিছৰ পদ?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It continues the odd places.",
+          "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 25.",
+        "as": "উত্তৰ 25।"
+       }
+      },
+      {
+       "q": {
+        "en": "Split 7, 50, 10, 44, 13, 38, ?",
+        "as": "7, 50, 10, 44, 13, 38, ? ভাগ কৰা"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "1st, 3rd and 5th terms?",
+          "as": "১ম, ৩য়, ৫ম পদ?"
+         },
+         "options": [
+          {
+           "en": "7, 50, 10",
+           "as": "7, 50, 10"
+          },
+          {
+           "en": "7, 10, 13",
+           "as": "7, 10, 13"
+          },
+          {
+           "en": "50, 44, 38",
+           "as": "50, 44, 38"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take every second term. Two series take turns here.",
+          "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+         },
+         "tag": "r-m-oneline"
+        },
+        {
+         "ask": {
+          "en": "Their gap?",
+          "as": "সিহঁতৰ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+4",
+           "as": "+4"
+          },
+          {
+           "en": "−6",
+           "as": "−6"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Compare neighbours in that list.",
+          "as": "সেই তালিকাৰ কাষৰ পদ তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The next term?",
+          "as": "পিছৰ পদ?"
+         },
+         "options": [
+          {
+           "en": "32",
+           "as": "32"
+          },
+          {
+           "en": "41",
+           "as": "41"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It continues the odd places.",
+          "as": "ই বিজোৰ স্থান আগবঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The answer is 16.",
+        "as": "উত্তৰ 16।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u4.q3",
+     "type": "tf",
+     "skill": "r-smix",
+     "s": {
+      "en": "In 2, 90, 4, 80, 6, 70 the next term is 8.",
+      "as": "2, 90, 4, 80, 6, 70 ত পিছৰ পদ 8।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Odd places rise by 2.",
+      "as": "বিজোৰ স্থান 2 ৰে বাঢ়ে।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-oneline",
+       "why": {
+        "en": "Take every second term. Two series take turns here.",
+        "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u4.q4",
+     "type": "match",
+     "skill": "r-smix",
+     "q": {
+      "en": "Split 1, 9, 2, 8, 3, 7",
+      "as": "1, 9, 2, 8, 3, 7 ভাগ কৰা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Odd places",
+        "as": "বিজোৰ স্থান"
+       },
+       {
+        "en": "1, 2, 3",
+        "as": "1, 2, 3"
+       }
+      ],
+      [
+       {
+        "en": "Even places",
+        "as": "যোৰ স্থান"
+       },
+       {
+        "en": "9, 8, 7",
+        "as": "9, 8, 7"
+       }
+      ],
+      [
+       {
+        "en": "Next term",
+        "as": "পিছৰ পদ"
+       },
+       {
+        "en": "4",
+        "as": "4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each list has a steady gap.",
+      "as": "প্ৰতিটো তালিকাৰ ব্যৱধান একে।"
+     }
+    },
+    {
+     "id": "rs2.u4.q5",
+     "type": "order",
+     "skill": "r-smix",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "See the zigzag",
+       "as": "জিগজাগ চোৱা"
+      },
+      {
+       "en": "Split the places",
+       "as": "স্থান ভাগ কৰা"
+      },
+      {
+       "en": "Find each gap",
+       "as": "প্ৰতিটো ব্যৱধান"
+      },
+      {
+       "en": "Continue one",
+       "as": "এটা আগবঢ়োৱা"
+      }
+     ],
+     "why": {
+      "en": "Split before you calculate.",
+      "as": "গণনাৰ আগতে ভাগ কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "title": {
+    "en": "Find the wrong term",
+    "as": "ভুল পদ বিচৰা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Most gaps agree; one or two do not.",
+     "as": "বেছিভাগ ব্যৱধান মিলে; এটা-দুটা নিমিলে।"
+    },
+    {
+     "en": "A wrong term spoils two gaps.",
+     "as": "এটা ভুল পদে দুটা ব্যৱধান নষ্ট কৰে।"
+    },
+    {
+     "en": "The term between the two bad gaps is wrong.",
+     "as": "দুটা বেয়া ব্যৱধানৰ মাজৰ পদ ভুল।"
+    },
+    {
+     "en": "Rebuild it from its neighbour.",
+     "as": "কাষৰ পদৰ পৰা আকৌ বনোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs2.u5.s1",
+     "type": "story",
+     "title": {
+      "en": "One bad term, two bad gaps",
+      "as": "এটা বেয়া পদ, দুটা বেয়া ব্যৱধান"
+     },
+     "text": [
+      {
+       "en": "A wrong term sits between two gaps, so both look odd. Open them.",
+       "as": "ভুল পদ দুটা ব্যৱধানৰ মাজত, সেয়ে দুয়োটা বেলেগ। খুলি চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "gaps",
+      "terms": [
+       4,
+       8,
+       12,
+       17,
+       20,
+       24
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Open the gaps.",
+        "as": "ব্যৱধান খোলা।"
+       },
+       "goal": {
+        "opened": 1
+       },
+       "then": {
+        "en": "+4, +4, +5, +3, +4: the +5 and +3 surround 17. It should be 16.",
+        "as": "+4, +4, +5, +3, +4: 17 ৰ দুয়োফালে +5 আৰু +3। ই 16 হ'ব লাগে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u5.s2",
+     "type": "story",
+     "title": {
+      "en": "The pair points at it",
+      "as": "যোৰে দেখুৱায়"
+     },
+     "text": [
+      {
+       "en": "Find two bad gaps side by side. The term they share is the wrong one.",
+       "as": "কাষে কাষে দুটা বেয়া ব্যৱধান বিচাৰা। উমৈহতীয়া পদটোৱেই ভুল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Bad gap",
+        "as": "বেয়া ব্যৱধান"
+       },
+       {
+        "en": "Shared term",
+        "as": "উমৈহতীয়া পদ"
+       },
+       {
+        "en": "Bad gap",
+        "as": "বেয়া ব্যৱধান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u5.q1",
+     "type": "solve",
+     "skill": "r-swrong",
+     "q": {
+      "en": "One term breaks the pattern: 3, 7, 11, 16, 19, 23. Which should replace it?",
+      "as": "এটা পদে আৰ্হি ভাঙিছে: 3, 7, 11, 16, 19, 23। শুদ্ধ পদটো কি হ'ব?"
+     },
+     "answer": "15",
+     "why": {
+      "en": "The gap is +4, so 16 should be 15.",
+      "as": "ব্যৱধান +4, গতিকে 16 ৰ ঠাইত 15।"
+     },
+     "traps": [
+      {
+       "ans": "16",
+       "tag": "r-m-firstgap",
+       "why": {
+        "en": "That is the wrong term itself.",
+        "as": "সেয়াই ভুল পদটো।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "One term breaks the pattern: 3, 7, 11, 16, 19, 23. Which should replace it?",
+        "as": "এটা পদে আৰ্হি ভাঙিছে: 3, 7, 11, 16, 19, 23। শুদ্ধ পদটো কি হ'ব?"
+       },
+       "answer": "15",
+       "why": {
+        "en": "The gap is +4, so 16 should be 15.",
+        "as": "ব্যৱধান +4, গতিকে 16 ৰ ঠাইত 15।"
+       },
+       "traps": [
+        {
+         "ans": "16",
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "That is the wrong term itself.",
+          "as": "সেয়াই ভুল পদটো।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "One term breaks the pattern: 10, 15, 21, 25, 30, 35. Which should replace it?",
+        "as": "এটা পদে আৰ্হি ভাঙিছে: 10, 15, 21, 25, 30, 35। শুদ্ধ পদটো কি হ'ব?"
+       },
+       "answer": "20",
+       "why": {
+        "en": "The gap is +5, so 21 should be 20.",
+        "as": "ব্যৱধান +5, গতিকে 21 ৰ ঠাইত 20।"
+       },
+       "traps": [
+        {
+         "ans": "21",
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "That is the wrong term itself.",
+          "as": "সেয়াই ভুল পদটো।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "One term breaks the pattern: 6, 9, 12, 15, 19, 21. Which should replace it?",
+        "as": "এটা পদে আৰ্হি ভাঙিছে: 6, 9, 12, 15, 19, 21। শুদ্ধ পদটো কি হ'ব?"
+       },
+       "answer": "18",
+       "why": {
+        "en": "The gap is +3, so 19 should be 18.",
+        "as": "ব্যৱধান +3, গতিকে 19 ৰ ঠাইত 18।"
+       },
+       "traps": [
+        {
+         "ans": "19",
+         "tag": "r-m-firstgap",
+         "why": {
+          "en": "That is the wrong term itself.",
+          "as": "সেয়াই ভুল পদটো।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs2.u5.q2",
+     "type": "tf",
+     "skill": "r-swrong",
+     "s": {
+      "en": "One wrong term usually disturbs two gaps.",
+      "as": "এটা ভুল পদে সাধাৰণতে দুটা ব্যৱধান বিগাৰে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It sits between two neighbours.",
+      "as": "ই দুটা কাষৰ পদৰ মাজত।"
+     }
+    },
+    {
+     "id": "rs2.u5.q3",
+     "type": "match",
+     "skill": "r-swrong",
+     "q": {
+      "en": "Match the series to its wrong term",
+      "as": "শৃংখলক ভুল পদৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2, 4, 7, 8, 10",
+        "as": "2, 4, 7, 8, 10"
+       },
+       {
+        "en": "7",
+        "as": "7"
+       }
+      ],
+      [
+       {
+        "en": "5, 10, 16, 20",
+        "as": "5, 10, 16, 20"
+       },
+       {
+        "en": "16",
+        "as": "16"
+       }
+      ],
+      [
+       {
+        "en": "9, 12, 15, 19, 21",
+        "as": "9, 12, 15, 19, 21"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Rebuild each from its gap.",
+      "as": "ব্যৱধানৰ পৰা আকৌ বনোৱা।"
+     }
+    },
+    {
+     "id": "rs2.u5.q4",
+     "type": "order",
+     "skill": "r-swrong",
+     "q": {
+      "en": "Find a wrong term in order",
+      "as": "ভুল পদ ক্ৰমে উলিওৱা"
+     },
+     "items": [
+      {
+       "en": "Write the gaps",
+       "as": "ব্যৱধান লিখা"
+      },
+      {
+       "en": "Find the common gap",
+       "as": "সাধাৰণ ব্যৱধান"
+      },
+      {
+       "en": "Spot the odd pair",
+       "as": "বেলেগ যোৰ"
+      },
+      {
+       "en": "Rebuild the term",
+       "as": "পদ বনোৱা"
+      }
+     ],
+     "why": {
+      "en": "Common gap first.",
+      "as": "সাধাৰণ ব্যৱধান আগতে।"
+     }
+    },
+    {
+     "id": "rs2.u5.q5",
+     "type": "stepwise",
+     "skill": "r-swrong",
+     "q": {
+      "en": "Find the wrong term in 5, 8, 11, 15, 17.",
+      "as": "5, 8, 11, 15, 17 ৰ ভুল পদ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The common gap?",
+        "as": "সাধাৰণ ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "+2",
+         "as": "+2"
+        },
+        {
+         "en": "+3",
+         "as": "+3"
+        },
+        {
+         "en": "+4",
+         "as": "+4"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Most gaps show it.",
+        "as": "বেছিভাগ ব্যৱধানত আছে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The wrong term?",
+        "as": "ভুল পদ?"
+       },
+       "options": [
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "17",
+         "as": "17"
+        },
+        {
+         "en": "11",
+         "as": "11"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It sits between the two bad gaps.",
+        "as": "ই দুটা বেয়া ব্যৱধানৰ মাজত।"
+       }
+      },
+      {
+       "ask": {
+        "en": "It should be?",
+        "as": "ই কি হ'ব লাগে?"
+       },
+       "options": [
+        {
+         "en": "13",
+         "as": "13"
+        },
+        {
+         "en": "14",
+         "as": "14"
+        },
+        {
+         "en": "15",
+         "as": "15"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Add the common gap to the term before.",
+        "as": "আগৰ পদত সাধাৰণ ব্যৱধান যোগ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "15 should be 14.",
+      "as": "15 ৰ ঠাইত 14।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the wrong term in 5, 8, 11, 15, 17.",
+        "as": "5, 8, 11, 15, 17 ৰ ভুল পদ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The common gap?",
+          "as": "সাধাৰণ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+2",
+           "as": "+2"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          },
+          {
+           "en": "+4",
+           "as": "+4"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Most gaps show it.",
+          "as": "বেছিভাগ ব্যৱধানত আছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The wrong term?",
+          "as": "ভুল পদ?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "17",
+           "as": "17"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It sits between the two bad gaps.",
+          "as": "ই দুটা বেয়া ব্যৱধানৰ মাজত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "It should be?",
+          "as": "ই কি হ'ব লাগে?"
+         },
+         "options": [
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add the common gap to the term before.",
+          "as": "আগৰ পদত সাধাৰণ ব্যৱধান যোগ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "15 should be 14.",
+        "as": "15 ৰ ঠাইত 14।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the wrong term in 8, 12, 16, 21, 24.",
+        "as": "8, 12, 16, 21, 24 ৰ ভুল পদ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The common gap?",
+          "as": "সাধাৰণ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+4",
+           "as": "+4"
+          },
+          {
+           "en": "+5",
+           "as": "+5"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Most gaps show it.",
+          "as": "বেছিভাগ ব্যৱধানত আছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The wrong term?",
+          "as": "ভুল পদ?"
+         },
+         "options": [
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It sits between the two bad gaps.",
+          "as": "ই দুটা বেয়া ব্যৱধানৰ মাজত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "It should be?",
+          "as": "ই কি হ'ব লাগে?"
+         },
+         "options": [
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Add the common gap to the term before.",
+          "as": "আগৰ পদত সাধাৰণ ব্যৱধান যোগ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "21 should be 20.",
+        "as": "21 ৰ ঠাইত 20।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the wrong term in 2, 8, 14, 15, 26.",
+        "as": "2, 8, 14, 15, 26 ৰ ভুল পদ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The common gap?",
+          "as": "সাধাৰণ ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "+6",
+           "as": "+6"
+          },
+          {
+           "en": "+5",
+           "as": "+5"
+          },
+          {
+           "en": "+7",
+           "as": "+7"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Most gaps show it.",
+          "as": "বেছিভাগ ব্যৱধানত আছে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The wrong term?",
+          "as": "ভুল পদ?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "26",
+           "as": "26"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It sits between the two bad gaps.",
+          "as": "ই দুটা বেয়া ব্যৱধানৰ মাজত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "It should be?",
+          "as": "ই কি হ'ব লাগে?"
+         },
+         "options": [
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "19",
+           "as": "19"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Add the common gap to the term before.",
+          "as": "আগৰ পদত সাধাৰণ ব্যৱধান যোগ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "15 should be 20.",
+        "as": "15 ৰ ঠাইত 20।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "title": {
+    "en": "Numbers you should recognise",
+    "as": "চিনিব লগা সংখ্যা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "1, 4, 9, 16 are squares.",
+     "as": "1, 4, 9, 16 বৰ্গ।"
+    },
+    {
+     "en": "1, 8, 27, 64 are cubes.",
+     "as": "1, 8, 27, 64 ঘন।"
+    },
+    {
+     "en": "2, 3, 5, 7, 11 are primes.",
+     "as": "2, 3, 5, 7, 11 মৌলিক।"
+    },
+    {
+     "en": "If gaps fail, test these sets.",
+     "as": "ব্যৱধানে নহ'লে এইবোৰ চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs2.u6.s1",
+     "type": "story",
+     "title": {
+      "en": "Three families of numbers",
+      "as": "সংখ্যাৰ তিনিটা পৰিয়াল"
+     },
+     "text": [
+      {
+       "en": "Learn these on sight. They hide inside many exam series.",
+       "as": "এইবোৰ চিনি পোৱা হোৱা। পৰীক্ষাৰ বহু শৃংখলত লুকাই থাকে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Squares: 25, 36, 49",
+        "as": "বৰ্গ: 25, 36, 49"
+       },
+       {
+        "en": "Cubes: 27, 64, 125",
+        "as": "ঘন: 27, 64, 125"
+       },
+       {
+        "en": "Primes: 13, 17, 19",
+        "as": "মৌলিক: 13, 17, 19"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u6.s2",
+     "type": "story",
+     "title": {
+      "en": "Near misses count too",
+      "as": "ওচৰৰ সংখ্যাও গণা"
+     },
+     "text": [
+      {
+       "en": "Sometimes each term is a square plus one. Compare it with the nearest square.",
+       "as": "কেতিয়াবা পদবোৰ বৰ্গ যোগ এক। ওচৰৰ বৰ্গৰ লগত তুলনা কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "2 = 1 + 1",
+        "as": "2 = 1 + 1"
+       },
+       {
+        "en": "5 = 4 + 1",
+        "as": "5 = 4 + 1"
+       },
+       {
+        "en": "10 = 9 + 1",
+        "as": "10 = 9 + 1"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs2.u6.q1",
+     "type": "solve",
+     "skill": "r-sspecial",
+     "q": {
+      "en": "What comes next: 4, 9, 16, 25, ?",
+      "as": "পিছত কি: 4, 9, 16, 25, ?"
+     },
+     "answer": "36",
+     "why": {
+      "en": "These are squares: 6² = 36.",
+      "as": "এইবোৰ বৰ্গ: 6² = 36।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "What comes next: 4, 9, 16, 25, ?",
+        "as": "পিছত কি: 4, 9, 16, 25, ?"
+       },
+       "answer": "36",
+       "why": {
+        "en": "These are squares: 6² = 36.",
+        "as": "এইবোৰ বৰ্গ: 6² = 36।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What comes next: 9, 16, 25, 36, ?",
+        "as": "পিছত কি: 9, 16, 25, 36, ?"
+       },
+       "answer": "49",
+       "why": {
+        "en": "These are squares: 7² = 49.",
+        "as": "এইবোৰ বৰ্গ: 7² = 49।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What comes next: 1, 8, 27, 64, ?",
+        "as": "পিছত কি: 1, 8, 27, 64, ?"
+       },
+       "answer": "125",
+       "why": {
+        "en": "These are cubes: 5³ = 125.",
+        "as": "এইবোৰ ঘন: 5³ = 125।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "What comes next: 8, 27, 64, 125, ?",
+        "as": "পিছত কি: 8, 27, 64, 125, ?"
+       },
+       "answer": "216",
+       "why": {
+        "en": "These are cubes: 6³ = 216.",
+        "as": "এইবোৰ ঘন: 6³ = 216।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs2.u6.q2",
+     "type": "solve",
+     "skill": "r-sspecial",
+     "q": {
+      "en": "Each term is a square plus 1. What comes next: 2, 5, 10, 17, ?",
+      "as": "প্ৰতিটো পদ বৰ্গ যোগ 1। পিছত কি: 2, 5, 10, 17, ?"
+     },
+     "answer": "26",
+     "why": {
+      "en": "5² + 1 = 26.",
+      "as": "5² + 1 = 26।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Each term is a square plus 1. What comes next: 2, 5, 10, 17, ?",
+        "as": "প্ৰতিটো পদ বৰ্গ যোগ 1। পিছত কি: 2, 5, 10, 17, ?"
+       },
+       "answer": "26",
+       "why": {
+        "en": "5² + 1 = 26.",
+        "as": "5² + 1 = 26।"
+       }
+      },
+      {
+       "q": {
+        "en": "Each term is a square plus 1. What comes next: 5, 10, 17, 26, ?",
+        "as": "প্ৰতিটো পদ বৰ্গ যোগ 1। পিছত কি: 5, 10, 17, 26, ?"
+       },
+       "answer": "37",
+       "why": {
+        "en": "6² + 1 = 37.",
+        "as": "6² + 1 = 37।"
+       }
+      },
+      {
+       "q": {
+        "en": "Each term is a square plus 1. What comes next: 10, 17, 26, 37, ?",
+        "as": "প্ৰতিটো পদ বৰ্গ যোগ 1। পিছত কি: 10, 17, 26, 37, ?"
+       },
+       "answer": "50",
+       "why": {
+        "en": "7² + 1 = 50.",
+        "as": "7² + 1 = 50।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs2.u6.q3",
+     "type": "tf",
+     "skill": "r-sspecial",
+     "s": {
+      "en": "The next prime after 13 is 15.",
+      "as": "13 ৰ পিছৰ মৌলিক সংখ্যা 15।"
+     },
+     "answer": false,
+     "why": {
+      "en": "15 = 3 × 5. The next prime is 17.",
+      "as": "15 = 3 × 5। পিছৰ মৌলিক 17।"
+     }
+    },
+    {
+     "id": "rs2.u6.q4",
+     "type": "match",
+     "skill": "r-sspecial",
+     "q": {
+      "en": "Match the number to its family",
+      "as": "সংখ্যাক পৰিয়ালৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "49",
+        "as": "49"
+       },
+       {
+        "en": "Square",
+        "as": "বৰ্গ"
+       }
+      ],
+      [
+       {
+        "en": "125",
+        "as": "125"
+       },
+       {
+        "en": "Cube",
+        "as": "ঘন"
+       }
+      ],
+      [
+       {
+        "en": "23",
+        "as": "23"
+       },
+       {
+        "en": "Prime",
+        "as": "মৌলিক"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Know them on sight.",
+      "as": "চিনি পোৱা হোৱা।"
+     }
+    },
+    {
+     "id": "rs2.u6.q5",
+     "type": "order",
+     "skill": "r-sspecial",
+     "q": {
+      "en": "Put these squares in order",
+      "as": "এই বৰ্গবোৰ ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "16",
+       "as": "16"
+      },
+      {
+       "en": "25",
+       "as": "25"
+      },
+      {
+       "en": "36",
+       "as": "36"
+      },
+      {
+       "en": "49",
+       "as": "49"
+      }
+     ],
+     "why": {
+      "en": "4², 5², 6², 7².",
+      "as": "4², 5², 6², 7²।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Number series test",
+   "as": "সংখ্যা শৃংখলৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs2.t.q1",
+    "type": "solve",
+    "skill": "r-sadd",
+    "q": {
+     "en": "What comes next: 13, 20, 27, 34, 41, ?",
+     "as": "পিছত কি: 13, 20, 27, 34, 41, ?"
+    },
+    "answer": "48",
+    "why": {
+     "en": "Each term changes by +7.",
+     "as": "প্ৰতিটো পদ +7 সলনি হয়।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "What comes next: 13, 20, 27, 34, 41, ?",
+       "as": "পিছত কি: 13, 20, 27, 34, 41, ?"
+      },
+      "answer": "48",
+      "why": {
+       "en": "Each term changes by +7.",
+       "as": "প্ৰতিটো পদ +7 সলনি হয়।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "What comes next: 77, 70, 63, 56, 49, ?",
+       "as": "পিছত কি: 77, 70, 63, 56, 49, ?"
+      },
+      "answer": "42",
+      "why": {
+       "en": "Each term changes by −7.",
+       "as": "প্ৰতিটো পদ −7 সলনি হয়।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "What comes next: 9, 20, 31, 42, 53, ?",
+       "as": "পিছত কি: 9, 20, 31, 42, 53, ?"
+      },
+      "answer": "64",
+      "why": {
+       "en": "Each term changes by +11.",
+       "as": "প্ৰতিটো পদ +11 সলনি হয়।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs2.t.q2",
+    "type": "solve",
+    "skill": "r-stwo",
+    "q": {
+     "en": "What comes next: 1, 4, 9, 16, 25, ?",
+     "as": "পিছত কি: 1, 4, 9, 16, 25, ?"
+    },
+    "answer": "36",
+    "why": {
+     "en": "The gaps grow by 2 each time, so the next gap is 11.",
+     "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 11।"
+    },
+    "traps": [
+     {
+      "ans": "34",
+      "tag": "r-m-firstgap",
+      "why": {
+       "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+       "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "What comes next: 1, 4, 9, 16, 25, ?",
+       "as": "পিছত কি: 1, 4, 9, 16, 25, ?"
+      },
+      "answer": "36",
+      "why": {
+       "en": "The gaps grow by 2 each time, so the next gap is 11.",
+       "as": "ব্যৱধান প্ৰতিবাৰ 2 বাঢ়ে, পিছৰ ব্যৱধান 11।"
+      },
+      "traps": [
+       {
+        "ans": "34",
+        "tag": "r-m-firstgap",
+        "why": {
+         "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+         "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "What comes next: 6, 8, 13, 21, 32, ?",
+       "as": "পিছত কি: 6, 8, 13, 21, 32, ?"
+      },
+      "answer": "46",
+      "why": {
+       "en": "The gaps grow by 3 each time, so the next gap is 14.",
+       "as": "ব্যৱধান প্ৰতিবাৰ 3 বাঢ়ে, পিছৰ ব্যৱধান 14।"
+      },
+      "traps": [
+       {
+        "ans": "43",
+        "tag": "r-m-firstgap",
+        "why": {
+         "en": "The gaps themselves grow. Look at the gaps of the gaps.",
+         "as": "ব্যৱধান নিজেই বাঢ়ে। ব্যৱধানৰ ব্যৱধান চোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs2.t.q3",
+    "type": "solve",
+    "skill": "r-smult",
+    "q": {
+     "en": "What comes next: 3, 6, 12, 24, ?",
+     "as": "পিছত কি: 3, 6, 12, 24, ?"
+    },
+    "answer": "48",
+    "why": {
+     "en": "Each term is multiplied by 2.",
+     "as": "প্ৰতিটো পদ 2 ৰে পূৰণ হয়।"
+    },
+    "traps": [
+     {
+      "ans": "36",
+      "tag": "r-m-addmult",
+      "why": {
+       "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+       "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "What comes next: 3, 6, 12, 24, ?",
+       "as": "পিছত কি: 3, 6, 12, 24, ?"
+      },
+      "answer": "48",
+      "why": {
+       "en": "Each term is multiplied by 2.",
+       "as": "প্ৰতিটো পদ 2 ৰে পূৰণ হয়।"
+      },
+      "traps": [
+       {
+        "ans": "36",
+        "tag": "r-m-addmult",
+        "why": {
+         "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+         "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "What comes next: 2, 10, 50, 250, ?",
+       "as": "পিছত কি: 2, 10, 50, 250, ?"
+      },
+      "answer": "1250",
+      "why": {
+       "en": "Each term is multiplied by 5.",
+       "as": "প্ৰতিটো পদ 5 ৰে পূৰণ হয়।"
+      },
+      "traps": [
+       {
+        "ans": "450",
+        "tag": "r-m-addmult",
+        "why": {
+         "en": "The terms multiply, so the gaps grow fast. Divide neighbours to check.",
+         "as": "পদবোৰ পূৰণ হয়, সেয়ে ব্যৱধান সোনকালে বাঢ়ে। কাষৰ পদ হৰণ কৰি চোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs2.t.q4",
+    "type": "solve",
+    "skill": "r-smix",
+    "q": {
+     "en": "Two series take turns. What comes next: 4, 60, 8, 55, 12, 50, ?",
+     "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 4, 60, 8, 55, 12, 50, ?"
+    },
+    "answer": "16",
+    "why": {
+     "en": "Odd places run 4, 8, 12, so the next is 16.",
+     "as": "বিজোৰ স্থানত 4, 8, 12, গতিকে পিছৰটো 16।"
+    },
+    "traps": [
+     {
+      "ans": "88",
+      "tag": "r-m-oneline",
+      "why": {
+       "en": "Take every second term. Two series take turns here.",
+       "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Two series take turns. What comes next: 4, 60, 8, 55, 12, 50, ?",
+       "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 4, 60, 8, 55, 12, 50, ?"
+      },
+      "answer": "16",
+      "why": {
+       "en": "Odd places run 4, 8, 12, so the next is 16.",
+       "as": "বিজোৰ স্থানত 4, 8, 12, গতিকে পিছৰটো 16।"
+      },
+      "traps": [
+       {
+        "ans": "88",
+        "tag": "r-m-oneline",
+        "why": {
+         "en": "Take every second term. Two series take turns here.",
+         "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two series take turns. What comes next: 9, 15, 11, 20, 13, 25, ?",
+       "as": "দুটা শৃংখলে পাল পাতিছে। পিছত কি: 9, 15, 11, 20, 13, 25, ?"
+      },
+      "answer": "15",
+      "why": {
+       "en": "Odd places run 9, 11, 13, so the next is 15.",
+       "as": "বিজোৰ স্থানত 9, 11, 13, গতিকে পিছৰটো 15।"
+      },
+      "traps": [
+       {
+        "ans": "37",
+        "tag": "r-m-oneline",
+        "why": {
+         "en": "Take every second term. Two series take turns here.",
+         "as": "প্ৰতি দ্বিতীয় পদ লোৱা। ইয়াত দুটা শৃংখলে পাল পাতিছে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs2.t.q5",
+    "type": "solve",
+    "skill": "r-swrong",
+    "q": {
+     "en": "One term breaks the pattern: 7, 12, 17, 23, 27, 32. Which should replace it?",
+     "as": "এটা পদে আৰ্হি ভাঙিছে: 7, 12, 17, 23, 27, 32। শুদ্ধ পদটো কি হ'ব?"
+    },
+    "answer": "22",
+    "why": {
+     "en": "The gap is +5, so 23 should be 22.",
+     "as": "ব্যৱধান +5, গতিকে 23 ৰ ঠাইত 22।"
+    },
+    "traps": [
+     {
+      "ans": "23",
+      "tag": "r-m-firstgap",
+      "why": {
+       "en": "That is the wrong term itself.",
+       "as": "সেয়াই ভুল পদটো।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "One term breaks the pattern: 7, 12, 17, 23, 27, 32. Which should replace it?",
+       "as": "এটা পদে আৰ্হি ভাঙিছে: 7, 12, 17, 23, 27, 32। শুদ্ধ পদটো কি হ'ব?"
+      },
+      "answer": "22",
+      "why": {
+       "en": "The gap is +5, so 23 should be 22.",
+       "as": "ব্যৱধান +5, গতিকে 23 ৰ ঠাইত 22।"
+      },
+      "traps": [
+       {
+        "ans": "23",
+        "tag": "r-m-firstgap",
+        "why": {
+         "en": "That is the wrong term itself.",
+         "as": "সেয়াই ভুল পদটো।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "One term breaks the pattern: 20, 24, 26, 29, 32, 35. Which should replace it?",
+       "as": "এটা পদে আৰ্হি ভাঙিছে: 20, 24, 26, 29, 32, 35। শুদ্ধ পদটো কি হ'ব?"
+      },
+      "answer": "23",
+      "why": {
+       "en": "The gap is +3, so 24 should be 23.",
+       "as": "ব্যৱধান +3, গতিকে 24 ৰ ঠাইত 23।"
+      },
+      "traps": [
+       {
+        "ans": "24",
+        "tag": "r-m-firstgap",
+        "why": {
+         "en": "That is the wrong term itself.",
+         "as": "সেয়াই ভুল পদটো।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs2.t.q6",
+    "type": "solve",
+    "skill": "r-sspecial",
+    "q": {
+     "en": "What comes next: 16, 25, 36, 49, ?",
+     "as": "পিছত কি: 16, 25, 36, 49, ?"
+    },
+    "answer": "64",
+    "why": {
+     "en": "These are squares: 8² = 64.",
+     "as": "এইবোৰ বৰ্গ: 8² = 64।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "What comes next: 16, 25, 36, 49, ?",
+       "as": "পিছত কি: 16, 25, 36, 49, ?"
+      },
+      "answer": "64",
+      "why": {
+       "en": "These are squares: 8² = 64.",
+       "as": "এইবোৰ বৰ্গ: 8² = 64।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "What comes next: 27, 64, 125, 216, ?",
+       "as": "পিছত কি: 27, 64, 125, 216, ?"
+      },
+      "answer": "343",
+      "why": {
+       "en": "These are cubes: 7³ = 343.",
+       "as": "এইবোৰ ঘন: 7³ = 343।"
+      },
+      "traps": []
+     }
+    ]
+   }
+  ]
+ }
+}

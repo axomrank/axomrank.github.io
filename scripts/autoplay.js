@@ -16,7 +16,7 @@ async function solve(s, wrong){
     window.autoplayIssues.push({ id:s.id, type:s.type, lang:lg, issue:'horizontal overflow' });
   switch(s.type){
     case 'story': if(s.tasks) { const st=__L.run().st; AXOM_MATH.finishTasks(st); __L.refresh&&__L.refresh(); } act(); return 'story';
-    case 'solve': { const v=wrong?(s.traps&&s.traps[0]?s.traps[0].ans:'99999'):s.answer; for(const ch of String(v)){ const k=$('[data-key="'+ch.replace('-','−')+'"]',scr); if(!k) throw new Error('no key '+ch); click(k);} await sl(3); act(); break; }
+    case 'solve': { const v=wrong?(s.traps&&s.traps[0]?s.traps[0].ans:(s.input==='letters'?'QQ':'99999')):s.answer; for(const ch of String(v)){ const k=$('[data-key="'+ch.replace('-','−')+'"]',scr); if(!k) throw new Error('no key '+ch); click(k);} await sl(3); act(); break; }
     case 'explore': { const st=__L.run().st; if(s.widget.kind==='peel'){ if(wrong) click($('[data-prime]:not([disabled])',scr)); AXOM_MATH.autoSet(s,st,false);} else AXOM_MATH.autoSet(s,st,wrong); await sl(3); act(); break; }
     case 'stepwise': { for(let k=0;k<s.parts.length;k++){ const p=s.parts[k], a=(wrong&&k===0)?(p.answer+1)%p.options.length:p.answer; click($('[data-part="'+a+'"]',scr)); await sl(3);} break; }
     case 'mcq': case 'odd': case 'inline': case 'picture': case 'whoami':
@@ -38,10 +38,10 @@ window.playUnit = async function(k, lang, wrongTypes=[]){
   const seq=[]; let g=0; const wd=new Set();
   while($('#v-play').classList.contains('on') && g++<40){ const U=__L.run(); const it=U.queue[U.pos]; const w=!it.retry && wrongTypes.includes(it.s.type) && !wd.has(it.s.type); if(w) wd.add(it.s.type); seq.push((it.retry?'R:':'')+await solve(it.s,w)); await sl(8); }
   const done=$('#v-done').classList.contains('on'); const st=[...document.querySelectorAll('#done .stat .v')].map(v=>v.textContent.replace(/[০-৯]/g,'')).join('|');
-  click($('#done-btn')); await sl(10);
+  click($('#done-x')); await sl(10);
   return 'U'+(k+1)+' '+lang+' '+(done?'DONE':'STUCK')+' ['+st+'] '+seq.join(' ');
 };
-window.practise = async function(){ const b=$('#practise'); if(!b) return 'no practise card'; click(b); await sl(10); const seq=[]; let g=0; while($('#v-play').classList.contains('on') && g++<30){ const U=__L.run(); const it=U.queue[U.pos]; seq.push(await solve(it.s,false)); await sl(8);} const t=$('#done h1').textContent; click($('#done-btn')); await sl(10); return 'PRACTICE '+t+' :: '+seq.join(' '); };
+window.practise = async function(){ const b=$('#practise'); if(!b) return 'no practise card'; click(b); await sl(10); const seq=[]; let g=0; while($('#v-play').classList.contains('on') && g++<30){ const U=__L.run(); const it=U.queue[U.pos]; seq.push(await solve(it.s,false)); await sl(8);} const t=$('#done h1').textContent; click($('#done-x')); await sl(10); return 'PRACTICE '+t+' :: '+seq.join(' '); };
 window.playRun = async function(wrongEvery=0){ const seq=[]; let g=0; while($('#v-play').classList.contains('on') && g++<60){ const U=__L.run(); const it=U.queue[U.pos]; seq.push(await solve(it.s, wrongEvery && g%wrongEvery===0)); await sl(8);} return ($('#done h1')||{}).textContent+' :: '+seq.join(' '); };
 window.solveStep = solve;
 window.solverReady = true;

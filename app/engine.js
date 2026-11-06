@@ -85,9 +85,11 @@ async function publishedKings() {
 let NEXT = null;   // the lesson after this one: { id, n, name }
 let pendingUpdate = false;   // a new app version took over while a unit was being played; reload on the way back to the path
 let GATE = null;
+let COURSE_TITLE = null;
 let COURSE = [];   // every published lesson in course order, with unit summaries from the manifest: the whole path
 async function coursePath() {
   const [course, manifest] = await Promise.all([AXOM.getJSON(courseUrl()), AXOM.getJSON("content/manifest.json")]);
+  COURSE_TITLE = course.title;
   return course.kings.filter((k) => k.lesson && manifest.lessons[k.lesson] && manifest.lessons[k.lesson].units)
     .map((k) => ({ n: k.n, id: k.lesson, name: k.name, face: k.face, reign: k.reign, units: manifest.lessons[k.lesson].units }));
 }   // the earlier lesson that must be finished before this one opens: { id, n, name }, or null
@@ -235,7 +237,7 @@ function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
 /* ========================================================= */
 function boot(L, mode) {
 const VIRTUAL = mode !== "lesson";
-if (L.course === "mathematics" || (["diagnostic", "drill"].includes(mode) && CID === "mathematics")) document.documentElement.classList.add("maths");
+if (AXOM.notebook(L.course) || (["diagnostic", "drill"].includes(mode) && AXOM.notebook(CID))) document.documentElement.classList.add("maths");
 const P = VIRTUAL ? { done: {} } : AXOM.getLesson(L.id);
 const saveAll = () => (VIRTUAL ? AXOM.saveGlobal() : AXOM.saveLesson(L.id, P));
 const bankOf = (lid) => (G.mistakes[lid] = G.mistakes[lid] || []);
@@ -262,7 +264,7 @@ const ART = {
   houses: `<svg viewBox="0 0 200 150"><path d="M20 100a38 38 0 0 1 76 0z" fill="var(--terra)"/><path d="M104 100a38 38 0 0 1 76 0z" fill="var(--indigo)"/><path d="M58 62v-14M142 62v-14" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/><path d="M20 108h76M104 108h76" stroke="var(--line-2)" stroke-width="4"/><path d="M78 126h44" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/><path d="M78 126l10-7M78 126l10 7M122 126l-10-7M122 126l-10 7" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/></svg>`,
   seal: `<svg viewBox="0 0 200 150"><rect x="48" y="16" width="104" height="118" rx="6" fill="var(--surface)" stroke="var(--line-2)" stroke-width="3"/>${[34, 48, 62, 76].map((y, i) => `<path d="M64 ${y}h${i % 2 ? 60 : 72}" stroke="var(--indigo)" stroke-width="4" stroke-linecap="round" opacity=".7"/>`).join("")}<circle cx="124" cy="106" r="18" fill="var(--terra)"/><path d="M115 106l7 7 12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
   scroll: `<svg viewBox="0 0 200 150"><rect x="44" y="32" width="112" height="86" rx="6" fill="var(--surface)" stroke="var(--terra)" stroke-width="3"/><rect x="30" y="26" width="18" height="98" rx="9" fill="var(--terra)"/><rect x="152" y="26" width="18" height="98" rx="9" fill="var(--terra)"/>${[50, 62, 74, 86, 98].map((y, i) => `<path d="M60 ${y}h${i % 2 ? 66 : 80}" stroke="var(--indigo)" stroke-width="4" stroke-linecap="round" opacity="${0.85 - i * 0.1}"/>`).join("")}<circle cx="132" cy="104" r="8" fill="var(--gold)"/></svg>`,
-  calendar: `<svg viewBox="0 0 200 150"><rect x="50" y="22" width="100" height="112" rx="14" fill="var(--surface)" stroke="var(--line-2)" stroke-width="3"/><path d="M50 36a14 14 0 0 1 14-14h72a14 14 0 0 1 14 14v18H50z" fill="var(--terra)"/><rect x="72" y="12" width="8" height="22" rx="4" fill="var(--indigo)"/><rect x="120" y="12" width="8" height="22" rx="4" fill="var(--indigo)"/><text class="en" x="100" y="48" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="2">DEC</text><text class="as" x="100" y="48" text-anchor="middle" font-family="Noto Sans Bengali, sans-serif" font-weight="800" font-size="14" fill="#fff">ডিচেম্বৰ</text><text class="en" x="100" y="114" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="58" fill="var(--indigo)">2</text><text class="as" x="100" y="114" text-anchor="middle" font-family="Noto Sans Bengali, sans-serif" font-weight="800" font-size="58" fill="var(--indigo)">২</text></svg>`,
+  calendar: `<svg viewBox="0 0 200 150"><rect x="50" y="22" width="100" height="112" rx="14" fill="var(--surface)" stroke="var(--line-2)" stroke-width="3"/><path d="M50 36a14 14 0 0 1 14-14h72a14 14 0 0 1 14 14v18H50z" fill="var(--terra)"/><rect x="72" y="12" width="8" height="22" rx="4" fill="var(--indigo)"/><rect x="120" y="12" width="8" height="22" rx="4" fill="var(--indigo)"/><text class="en" x="100" y="48" text-anchor="middle" font-family="Noto Sans, sans-serif" font-weight="900" font-size="14" fill="#fff" letter-spacing="2">DEC</text><text class="as" x="100" y="48" text-anchor="middle" font-family="Noto Sans Bengali, sans-serif" font-weight="800" font-size="14" fill="#fff">ডিচেম্বৰ</text><text class="en" x="100" y="114" text-anchor="middle" font-family="Noto Sans, sans-serif" font-weight="900" font-size="58" fill="var(--indigo)">2</text><text class="as" x="100" y="114" text-anchor="middle" font-family="Noto Sans Bengali, sans-serif" font-weight="800" font-size="58" fill="var(--indigo)">২</text></svg>`,
   rooster: `<svg viewBox="0 0 200 150" preserveAspectRatio="xMidYMid slice"><rect width="200" height="150" fill="#2E3170"/><circle cx="160" cy="34" r="22" fill="#F6E7C4" opacity=".18"/><circle cx="160" cy="34" r="15" fill="#F6E7C4"/>${[[30, 20], [70, 40], [120, 18], [40, 60], [180, 70], [95, 70]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="1.6" fill="#F6E7C4"/>`).join("")}<path d="M0 128c40-10 80-10 120-4s60 6 80 2v24H0z" fill="#1D1F4D"/><g transform="translate(62 54)"><path d="M30 70c-22 0-34-16-30-34 3-12 14-20 26-20 6-10 18-14 26-8l-4 6c8 0 12 6 10 12l-10-2c4 8 4 20-2 30" fill="var(--terra)"/><path d="M50 8c2-6 8-8 10-4-4 0-6 2-6 6z" fill="#D2483E"/><path d="M62 18l10 3-10 3z" fill="var(--gold)"/><circle cx="55" cy="16" r="2" fill="#1D1F4D"/><path d="M6 44c-10-6-16-20-8-30 2 10 8 16 14 18" fill="var(--gold)"/><path d="M24 70v12M36 68v14M18 82h10M30 82h12" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/></g><path d="M140 70q8-6 16 0M146 60q10-8 20 0" stroke="#F6E7C4" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/></svg>`,
   embassy: `<svg viewBox="0 0 200 150"><path d="M20 120 C 60 60, 140 60, 180 120" fill="none" stroke="var(--terra)" stroke-width="4" stroke-dasharray="8 7" stroke-linecap="round"/><circle cx="20" cy="120" r="12" fill="var(--indigo)"/><circle cx="180" cy="120" r="12" fill="var(--gold)"/><rect x="82" y="44" width="36" height="26" rx="4" fill="var(--surface)" stroke="var(--terra)" stroke-width="3"/><path d="M82 46l18 14 18-14" fill="none" stroke="var(--terra)" stroke-width="3"/></svg>`,
 };
@@ -283,38 +285,35 @@ document.body.insertAdjacentHTML("afterbegin", `
   <div class="confetti" id="confetti" aria-hidden="true"></div>
   <div class="view" id="v-path">
     <div class="p-top">
-      <a class="icon-btn" href="index.html?course=${CID}" aria-label="All lessons">${AXOM.ICON.back}</a>
-      <label class="lang" for="as"><span class="en">অ</span><span class="as">EN</span></label>
+      <a class="icon-btn" href="index.html?course=${CID}" aria-label="All lessons">${AXOM.ICON.arrowBack}</a>
+      <span class="top-title">${T(COURSE_TITLE || L.eyebrow || B("Lessons", "পাঠ"))}</span>
       <span class="spacer"></span>
-      <span class="fire" id="fire">${AXOM.ICON.fire}<span id="streak"></span></span>
-      <span class="gem">${AXOM.ICON.gem}<span id="xp-total"></span></span>
-      <button class="icon-btn" id="settings" aria-label="Settings">${AXOM.ICON.gear}</button>
+      ${AXOM.LANG}
     </div>
     <div class="p-scroll">
       <section class="hero">
-        ${L.portrait ? `<img src="${media(L.portrait.includes("/") ? L.portrait : `${L.id}/${L.portrait}`)}" alt="">` : ""}
         <div class="txt">
-          ${L.no ? `<div class="eyebrow">${T(L.eyebrow ? B(`${L.eyebrow.en} · Lesson ${L.no}`, `${L.eyebrow.as} · পাঠ ${asNum(L.no)}`) : B(`Ahom kings · Lesson ${L.no}`, `আহোম ৰজা · পাঠ ${asNum(L.no)}`))}</div>` : ""}
           <h1>${T(L.king)}</h1>
-          <div class="reign">${T(L.reign)}</div>
+          <div class="reign">${L.no ? T(B(`Lesson ${L.no}`, `পাঠ ${asNum(L.no)}`)) + " · " : ""}${T(L.reign)}</div>
           ${L.buildsOn ? `<a class="builds-on" href="lesson.html?id=${L.buildsOn.id}">${T(B(`Builds on Lesson ${L.buildsOn.no}: ${L.buildsOn.title.en}`, `পাঠ ${asNum(L.buildsOn.no)}ৰ ভেটিত: ${L.buildsOn.title.as}`))}</a>` : ""}
-          <div class="meter"><i id="meter"></i></div>
-          <div class="count" id="count"></div>
-          <div class="hero-btns"><button class="offline-btn" id="guide">${AXOM.ICON.book}${T(B("Guidebook", "নিৰ্দেশিকা"))}</button><button class="offline-btn" id="offline"></button></div>
+          <div class="hero-btns"><button class="offline-btn" id="guide">${AXOM.ICON.book}${T(B("Guidebook", "নিৰ্দেশিকা"))}</button><button class="offline-btn" id="offline"></button>${L.course === "assam-history" ? `<a class="offline-btn" href="index.html?course=assam-history&tab=overview">${T(B("Overview", "অৱলোকন"))}</a>` : ""}</div>
         </div>
+        <div class="ring"><i id="meter"></i><div class="ring-t"><b id="count"></b><small>${T(B("Units complete", "অধ্যায় সম্পূৰ্ণ"))}</small></div></div>
       </section>
       <div id="mission-slot"></div>
       <div id="mistake-slot"></div>
       <div class="path" id="path"></div>
-      ${L.course === "mathematics" ? "" : `<div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>`}
+      ${AXOM.notebook(L.course) ? "" : `<div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>`}
     </div>
+    ${AXOM.nav("learn")}
   </div>
   <div class="view" id="v-empty"><div class="empty-pane">${AXOM.ICON.book}<p>${T(B("Choose a unit on the left to start.", "আৰম্ভ কৰিবলৈ বাওঁফালৰ পৰা এটা অধ্যায় বাছি লোৱা।"))}</p></div></div>
   <div class="view" id="v-play">
     <div class="top">
-      <button class="close" id="exit" aria-label="Leave">×</button>
-      <div class="bar"><i id="progress"></i></div>
-      <label class="lang" for="as"><span class="en">অ</span><span class="as">EN</span></label>
+      <button class="close" id="exit" aria-label="Leave">${AXOM.ICON.close}</button>
+      <div class="bar" id="bar"><i id="progress"></i></div>
+      <span class="step-count" id="step-count"></span>
+      <label class="lang mini" for="as"><span class="en">অ</span><span class="as">EN</span></label>
     </div>
     <div class="screen" id="screen"></div>
     <div class="foot" id="foot">
@@ -327,8 +326,9 @@ document.body.insertAdjacentHTML("afterbegin", `
     </div>
   </div>
   <div class="view" id="v-done">
+    <div class="top done-top"><button class="close" id="done-x" aria-label="Back to lesson">${AXOM.ICON.close}</button><span class="spacer"></span>${AXOM.LANG}</div>
     <div class="done-wrap" id="done"></div>
-    <div class="foot"><button class="btn" id="done-btn">${T(B("Continue", "আগবাঢ়া"))}</button></div>
+    <div class="foot"><button class="btn" id="done-btn">${T(B("Continue", "আগবাঢ়া"))}</button><button class="btn-ghost hidden" id="done-back">${T(VIRTUAL ? B("Back to course", "পাঠ্যক্ৰমলৈ উভতি যোৱা") : B("Back to lesson", "পাঠলৈ উভতি যোৱা"))}</button></div>
   </div>
   <div id="sheet-root"></div>
 </div></div>`);
@@ -345,15 +345,9 @@ function showView(id) {
   $$(".view").forEach((v) => v.classList.toggle("on", v.id === id));
   if (id === "v-path") $("#v-empty").classList.add("on");   // wide screens show an empty right pane beside the path
 }
-let pop = null, opop = null;   // open pop-up: a unit of this lesson (index) or of another lesson ("id:index")
+let pop = null;                // the unit card opened by a tap; otherwise the next unit to do is open
 let HERE = null;               // this lesson's header and cards, moved into its place on the course path
 let scrolled = false;
-function topStats() {
-  const s = AXOM.streakNow();
-  $("#fire").classList.toggle("on", s > 0);
-  $("#streak").innerHTML = N(s);
-  $("#xp-total").innerHTML = N(G.xp);
-}
 const BY_ID = new Map(ALL.flatMap((u) => u.steps.map((s) => [s.id, s])));
 if (!VIRTUAL) (() => {   // migrate mistakes saved by position before steps had ids
   const b = bankOf(L.id), conv = b.map((ref) => { const m = /^(\w+):(\d+)$/.exec(ref); if (!m) return ref; const u = ALL.find((x) => x.id === m[1]); return u && u.steps[+m[2]] ? u.steps[+m[2]].id : null; }).filter(Boolean);
@@ -367,14 +361,11 @@ addEventListener("pagehide", () => {
   const scroll = $("#v-path .p-scroll")?.scrollTop || 0;
   AXOM.store.set(journeyKey, { lesson: L.id, scroll });
 });
-if (!VIRTUAL && L.course === "assam-history") {
-  $("#v-path .p-top").insertAdjacentHTML("afterend", `<nav class="tabs journey-tabs"><a class="tab on" href="lesson.html?id=${L.id}">${T(B("Lessons", "পাঠ"))}</a><a class="tab" href="index.html?course=assam-history&tab=overview">${T(B("Overview", "অৱলোকন"))}</a></nav>`);
-}
+if (!VIRTUAL) { const ui = AXOM.store.get("axom:ui", {}); if (ui.lastCourse !== L.course) AXOM.store.set("axom:ui", { ...ui, lastCourse: L.course }); }
 function renderPath() {
-  topStats();
   const doneCount = ALL.filter((u) => P.done[u.id]).length;
   $("#meter").style.width = `${(doneCount / ALL.length) * 100}%`; $("#meter").style.setProperty("--p", $("#meter").style.width);
-  $("#count").innerHTML = T(B(`${doneCount} of ${ALL.length} steps complete`, `${asNum(ALL.length)}টাৰ ভিতৰত ${asNum(doneCount)}টা সম্পূৰ্ণ`));
+  $("#count").innerHTML = `${N(doneCount)}/${N(ALL.length)}`;
   // Mission explanations are presented inside the unit player.
   $("#mission-slot").replaceChildren();
   const m = bankOf(L.id).map(resolveStep).filter(Boolean);
@@ -385,58 +376,42 @@ function renderPath() {
   $("#practise")?.remove();
   if (m.length) $(".hero .hero-btns").insertAdjacentHTML("beforeend", `<button class="offline-btn mistake-pill" id="practise">${AXOM.ICON.repeat}<span>${T(B("Mistakes", "ভুল"))} · ${N(m.length)}</span></button>`);
   const cur = ALL.findIndex((u, k) => unlocked(k) && !P.done[u.id]);
-  const offs = [0, -64, -88, -50, 30, 80, 0];
-  let g = 0;   // node number along the whole course, for the zig-zag
-  const label = (open, isTest, jump, k, title) => `<div class="node-label ${open ? "" : "locked"}">${jump ? T(B("Jump here", "ইয়ালৈ জঁপিওৱা")) : (isTest ? "" : T(B(`Unit ${k + 1}`, `অধ্যায় ${asNum(k + 1)}`)) + " · ") + T(title)}</div>`;
-  const wrap = (key, inner) => `<div class="node-wrap" style="transform:translateX(${offs[g++ % offs.length]}px);z-index:${pop === key || opop === key ? 6 : 1}">${inner}</div>`;
-  const jumpPop = (title) => `<div class="pop test"><h3>${T(title)}</h3><p>${T(B("Jump here: pass a test on the lessons before this one. If you get 80%, they are marked complete and this lesson opens.", "ইয়ালৈ জঁপিওৱা: আগৰ পাঠবোৰৰ পৰীক্ষা দিয়া। ৮০% পালে সেইবোৰ সম্পূৰ্ণ হ'ব আৰু এই পাঠ খোল খাব।"))}</p>`;
-  // this lesson's units, drawn in full (pop-ups start units here)
+  const offs = [0, 24, 0, 8, 34, 44, 12];
+  const unitNote = (u, isTest, ex) => isTest ? B(`${ex} questions · 80% to pass`, `${asNum(ex)}টা প্ৰশ্ন · উত্তীৰ্ণ হ'বলৈ ৮০%`) : (u.learned && u.learned[0]) || B(`${ex} exercises`, `${asNum(ex)}টা অনুশীলন`);
+  const ARROW = AXOM.ICON.arrow;
+  // this lesson's units: a row each, and one open card (the tapped unit, otherwise the next to do)
   const mine = () => ALL.map((u, k) => {
     const isTest = u === L.test, isDone = !!P.done[u.id], jump = isTest && !isDone && !!GATE, testout = isTest && !isDone && !unlocked(k) && !GATE, open = unlocked(k) || testout || jump;
     const cls = `${isTest ? "test " : ""}${isDone ? "done" : open ? "open" : "locked"}${k === cur ? " cur" : ""}`;
-    const icon = isDone ? ICONS.done : !open ? ICONS.lock : ICONS[isTest ? "trophy" : u.icon] || ICONS.star;
     const ex = u.steps.filter((s) => s.type !== "story").length;
-    const types = [...new Set(u.steps.filter((s) => s.type !== "story").map((s) => s.type))];
-    const popHTML = pop !== k ? "" : jump ? jumpPop(B("Jump here", "ইয়ালৈ জঁপিওৱা")) + `<a class="btn" href="lesson.html?jump=${L.id}">${T(B("Jump here", "ইয়ালৈ জঁপিওৱা"))}</a></div>` : `<div class="pop ${isDone ? "done" : isTest ? "test" : open ? "" : "locked"}">
-        <h3>${T(u.title)}</h3>
-        <p>${testout ? T(B(`Know this lesson already? Get 80% on the ${ex} questions to complete the lesson and unlock the next one.`, `এই পাঠটো আগৰে পৰা জানা নেকি? ${asNum(ex)}টা প্ৰশ্নত ৮০% পালে পাঠটো সম্পূৰ্ণ হ'ব আৰু পিছৰটো খোল খাব।`))
-          : open ? T(B(`${ex} exercises · about 4 min`, `${asNum(ex)}টা অনুশীলন · প্ৰায় ৪ মিনিট`)) : GATE ? T(B(`This lesson opens when you finish Lesson ${GATE.n}.`, `পাঠ ${asNum(GATE.n)} শেষ কৰিলে এই পাঠ খোল খাব।`)) : T(B("Complete the step above to unlock this.", "ওপৰৰ স্তৰটো শেষ কৰিলে এইটো খোল খাব।"))}</p>
-        ${open && unitLinks(u).length ? `<p class="builds">${CHAIN}${T(B("Builds on", "ভেটি"))}: ${unitLinks(u).map((l) => T(linkLabel(l))).join(", ")}</p>` : ""}
-        ${open ? `<div class="types">${types.map((ty) => `<span>${T(KICK[ty])}</span>`).join("")}</div><button class="btn" data-start="${k}" ${testout ? "data-testout" : ""}>${isDone ? T(B("Practise again", "আকৌ অনুশীলন")) : testout ? T(B("Take the test", "পৰীক্ষা দিয়া")) : T(B("Start", "আৰম্ভ"))}</button>` : ""}
-      </div>`;
-    return wrap(k, `${k === cur && pop !== k ? `<span class="bubble">${T(B("Start", "আৰম্ভ"))}</span>` : ""}
-      <button class="node ${cls}${testout || jump ? " testout" : ""}" data-node="${k}" aria-label="${u.title.en}">${testout || jump ? ICONS.trophy : icon}</button>
-      ${label(open, isTest, jump, k, u.title)}${popHTML}`);
+    const glyph = isDone ? ICONS.done : isTest ? ICONS.trophy : `<span class="num">${N(k + 1)}</span>`;
+    const expanded = pop === k || (pop == null && k === cur);
+    const tag = isTest ? T(B("Lesson test", "পাঠৰ পৰীক্ষা")) : `${T(B(`Unit ${k + 1}`, `অধ্যায় ${asNum(k + 1)}`))} · ${T(B("4 min", "৪ মিনিট"))}`;
+    const line = jump ? B("Pass a test on the lessons before this one. If you get 80%, they are marked complete and this lesson opens.", "আগৰ পাঠবোৰৰ পৰীক্ষা দিয়া। ৮০% পালে সেইবোৰ সম্পূৰ্ণ হ'ব আৰু এই পাঠ খোল খাব।")
+      : testout ? B(`Know this lesson already? Get 80% on the ${ex} questions to complete the lesson and unlock the next one.`, `এই পাঠটো আগৰে পৰা জানা নেকি? ${asNum(ex)}টা প্ৰশ্নত ৮০% পালে পাঠটো সম্পূৰ্ণ হ'ব আৰু পিছৰটো খোল খাব।`)
+      : open ? unitNote(u, isTest, ex)
+      : GATE ? B(`This lesson opens when you finish Lesson ${GATE.n}.`, `পাঠ ${asNum(GATE.n)} শেষ কৰিলে এই পাঠ খোল খাব।`)
+      : B("Complete the step above to unlock this.", "ওপৰৰ স্তৰটো শেষ কৰিলে এইটো খোল খাব।");
+    const action = jump ? `<a class="btn" href="lesson.html?jump=${L.id}">${T(B("Jump here", "ইয়ালৈ জঁপিওৱা"))}${ARROW}</a>`
+      : open ? `<button class="btn" data-start="${k}" ${testout ? "data-testout" : ""}>${isDone ? T(B("Practise again", "আকৌ অনুশীলন")) : testout ? T(B("Take the test", "পৰীক্ষা দিয়া")) : T(B("Start unit", "অধ্যায় আৰম্ভ কৰা"))}${ARROW}</button>` : "";
+    const card = `<div class="pop ${isDone ? "done" : isTest ? "test" : open ? "" : "locked"}"><small>${tag}</small><h3>${T(u.title)}</h3><p>${T(line)}</p>
+        ${open && unitLinks(u).length ? `<p class="builds">${CHAIN}${T(B("Builds on", "ভেটি"))}: ${unitLinks(u).map((l) => T(linkLabel(l))).join(", ")}</p>` : ""}${action}</div>`;
+    const row = `<button class="node-text ${open ? "" : "locked"}" data-node="${k}"><b>${T(u.title)}</b><small>${T(unitNote(u, isTest, ex))}</small></button>`;
+    return `<div class="node-wrap${expanded ? " expanded" : ""}" style="--x:${offs[k % offs.length]}px"><button class="node ${cls}${testout || jump ? " testout" : ""}" data-node="${k}" aria-label="${u.title.en}">${glyph}</button>${expanded ? card : row}</div>`;
   }).join("");
-  // another lesson's units, from the manifest summary; their buttons open that lesson
+  // every other lesson is one banner on the course path; its units open on that lesson's own page
   const lessonDone = (id) => !!(id === L.id ? P : AXOM.getLesson(id)).done.test;
   const other = (c, i) => {
-    const Pd = AXOM.getLesson(c.id).done, lessonOpen = UNLOCK_ALL || i === 0 || lessonDone(COURSE[i - 1].id) || lessonDone(c.id);
-    const done = lessonDone(c.id);
-    const banner = `<a class="sec-banner ${done ? "done" : lessonOpen ? "open" : "locked"}" href="lesson.html?id=${c.id}">
+    const lessonOpen = UNLOCK_ALL || i === 0 || lessonDone(COURSE[i - 1].id) || lessonDone(c.id), done = lessonDone(c.id);
+    return `<div class="sec"><a class="sec-banner ${done ? "done" : lessonOpen ? "open" : "locked"}" href="lesson.html?id=${c.id}">
         <span class="face"><img src="${media(c.face)}" alt="" loading="lazy"></span>
         <span class="t"><small>${T(B(`Lesson ${c.n}`, `পাঠ ${asNum(c.n)}`))}</small><b>${T(B(c.name.en.split(" (")[0], c.name.as.split(" (")[0]))}</b><span>${N(c.reign)}</span></span>
-        <span class="st">${done ? ICONS.done : lessonOpen ? "›" : ICONS.lock}</span></a>`;
-    const nodes = c.units.map((u, j) => {
-      const key = `${c.id}:${j}`, isTest = j === c.units.length - 1, isDone = !!Pd[u.id];
-      const unl = lessonOpen && (UNLOCK_ALL || j === 0 || !!Pd[c.units[j - 1].id]);
-      const jump = isTest && !isDone && !lessonOpen, testout = isTest && !isDone && !unl && lessonOpen, open = unl || testout || jump;
-      const icon = isDone ? ICONS.done : !open ? ICONS.lock : ICONS[isTest ? "trophy" : u.i] || ICONS.star;
-      const href = jump ? `lesson.html?jump=${c.id}` : open ? `lesson.html?id=${c.id}&start=${j}${testout ? "&testout=1" : ""}` : "";
-      const popHTML = opop !== key ? "" : jump ? jumpPop(B("Jump here", "ইয়ালৈ জঁপিওৱা")) + `<a class="btn" href="${href}">${T(B("Jump here", "ইয়ালৈ জঁপিওৱা"))}</a></div>`
-        : `<div class="pop ${isDone ? "done" : isTest ? "test" : open ? "" : "locked"}"><h3>${T(u.t)}</h3>
-          <p>${open ? T(B(`Lesson ${c.n} · ${u.ex} exercises`, `পাঠ ${asNum(c.n)} · ${asNum(u.ex)}টা অনুশীলন`)) : T(B("Complete the step above to unlock this.", "ওপৰৰ স্তৰটো শেষ কৰিলে এইটো খোল খাব।"))}</p>
-          ${href ? `<a class="btn" href="${href}">${isDone ? T(B("Practise again", "আকৌ অনুশীলন")) : testout ? T(B("Take the test", "পৰীক্ষা দিয়া")) : T(B("Start", "আৰম্ভ"))}</a>` : ""}</div>`;
-      return wrap(key, `<button class="node ${isTest ? "test " : ""}${isDone ? "done" : open ? "open" : "locked"}${testout || jump ? " testout" : ""}" data-onode="${key}" aria-label="${u.t.en}">${testout || jump ? ICONS.trophy : icon}</button>
-        ${label(open, isTest, jump, j, u.t)}${popHTML}`);
-    }).join("");
-    return `<div class="sec">${banner}</div>${nodes}`;
+        <span class="st">${done ? ICONS.done : lessonOpen ? "›" : ICONS.lock}</span></a></div>`;
   };
   const here = COURSE.findIndex((c) => c.id === L.id);
   $("#path").innerHTML = here < 0 ? mine() : COURSE.map((c, i) => (c.id === L.id ? `<div class="sec here" id="sec-here"></div>${mine()}` : other(c, i))).join("");
   if (here >= 0) $("#sec-here").append(...HERE);
-  const nodes = $$(".node", $("#path")), first = nodes.findIndex((n) => !n.classList.contains("done"));
-  drawTrail(first < 0 ? nodes.length - 1 : first);
+  drawTrail();
   if (!scrolled) {
     scrolled = true;
     requestAnimationFrame(() => {
@@ -445,13 +420,17 @@ function renderPath() {
     });
   }
 }
-// one continuous curve through the unit circles; gold up to where the learner is
+// one soft curve through the unit circles of this lesson
 function drawTrail() {
-  // Unit circles stand alone; remove trails from any previously rendered path.
-  $("#path .trail")?.remove();
+  const path = $("#path"); path.querySelector(".trail")?.remove();
+  const box = path.getBoundingClientRect();
+  const pts = $$(".node", path).map((n) => { const r = n.getBoundingClientRect(); return [r.left + r.width / 2 - box.left, r.top + r.height / 2 - box.top]; });
+  if (pts.length < 2) return;
+  const d = pts.reduce((a, [x, y], i) => { if (!i) return `M${x} ${y}`; const [px, py] = pts[i - 1], m = (py + y) / 2; return `${a} C${px} ${m} ${x} ${m} ${x} ${y}`; }, "");
+  path.insertAdjacentHTML("afterbegin", `<svg class="trail" aria-hidden="true" width="${box.width}" height="${box.height}"><path d="${d}"/></svg>`);
 }
 // labels change height with the language and once fonts load, so redraw the curve then too
-const redrawTrail = () => { if (!$("#v-path").classList.contains("on")) return; const n = $$(".node", $("#path")), k = n.findIndex((x) => !x.classList.contains("done")); drawTrail(k < 0 ? n.length - 1 : k); };
+const redrawTrail = () => { if ($("#v-path").classList.contains("on")) drawTrail(); };
 addEventListener("resize", redrawTrail);
 document.addEventListener("change", (e) => { if (e.target.id === "as") setTimeout(redrawTrail, 30); });
 if (document.fonts) document.fonts.addEventListener("loadingdone", redrawTrail);
@@ -484,6 +463,11 @@ function openEntity(id) {
   const links = (e.lessons || []).filter((l) => l !== L.id);
   sheet(`<div class="ent-type">${T(TYPE[e.type] || B("", ""))}</div><h2>${T(e.name)}</h2><p class="note">${T(e.meaning)}</p>
     ${links.length ? `<p class="also">${T(B("Also in", "আৰু আছে"))}: ${links.map((l) => `<a href="lesson.html?id=${l}" target="_blank" rel="noopener">${REFERENCE_LESSONS[l] ? T(REFERENCE_LESSONS[l].title) : ENT[l] ? T(ENT[l].name) : l}</a>`).join(", ")}</p>` : ""}`);
+}
+
+function openSources() {
+  const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  sheet(`<h2>${T(B("Sources", "উৎস"))}</h2><ul class="src-list">${(L.sources || []).map((x) => `<li>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>` : `<b>${esc(x.title)}</b>`}${x.used_for ? `<span>${esc(x.used_for)}</span>` : ""}</li>`).join("")}</ul>`);
 }
 
 /* ---------- guidebook: one-screen revision note built from the lesson ---------- */
@@ -522,12 +506,13 @@ function renderStep(animate) {
   const it = step(); it.s = MATH.vary(it.s);   // a step with variants shows new numbers each time
   const s = it.s;
   U.phase = "answer"; U.st = {};
-  $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
+  paintProgress();
   $("#foot").className = "foot";
   const scr = $("#screen");
   scr.classList.remove("enter"); void scr.offsetWidth; if (animate) scr.classList.add("enter");
   const from = s._lesson && s._lesson !== L.id ? `<span class="from">${T(B(s._lesson[0].toUpperCase() + s._lesson.slice(1), s._lesson[0].toUpperCase() + s._lesson.slice(1)))}</span>` : "";
-  const kick = s.type === "story" ? `<div class="kicker story">${T(s.tasks ? B("Find out", "বিচাৰি উলিওৱা") : KICK.story)}${s.text.length > 1 ? `<span class="dots">${s.text.map((_, k) => `<i class="${k ? "" : "on"}"></i>`).join("")}</span>` : ""}</div>`
+  const unitNo = mode === "lesson" && !U.practice ? L.units.indexOf(U.unit) + 1 : 0;
+  const kick = s.type === "story" ? `<div class="kicker story">${T(s.tasks ? B("Find out", "বিচাৰি উলিওৱা") : unitNo ? B(`Unit ${unitNo} · Story`, `অধ্যায় ${asNum(unitNo)} · কাহিনী`) : KICK.story)}${s.text.length > 1 ? `<span class="dots">${s.text.map((_, k) => `<i class="${k ? "" : "on"}"></i>`).join("")}</span>` : ""}</div>`
     : it.retry ? `<div class="kicker retry">${T(B("Previous mistake", "আগৰ ভুল"))}</div>`
     : s.guess ? `<div class="kicker guess">${T(s.decide ? B("You decide", "তুমিয়েই সিদ্ধান্ত লোৱা") : B("Make a guess", "অনুমান কৰা"))}</div>`
     : `<div class="kicker">${T(KICK[s.scale || s.type])}${from}${s.link && !VIRTUAL ? `<button class="linkchip" data-link>${CHAIN}${T(linkLabel(s.link))}</button>` : ""}${s.type === "whoami" ? `<span class="xp" id="who-xp"></span>` : ""}</div>`;
@@ -537,7 +522,8 @@ function renderStep(animate) {
     ? `<figure class="story-visual"><div class="frame library">${picture(s.img, lessonOf(s))}</div><figcaption>${T(s.imageCaption)}
       ${s.imageAlt ? `<details><summary>${T(B("Read the map as text", "মানচিত্ৰৰ বৰ্ণনা পঢ়া"))}</summary>${T(s.imageAlt)}</details>` : ""}</figcaption></figure>`
     : "";
-  scr.innerHTML = mission + kick + evidence + RENDER[s.type](s) + (s.type === "story" && s.link ? linkCallout(s.link) : "");
+  scr.classList.toggle("story-screen", s.type === "story");
+  scr.innerHTML = s.type === "story" ? RENDER.story(s, mission + kick) : mission + kick + `<h1 class="q-title">${T(U.unit.title)}</h1>` + evidence + RENDER[s.type](s);
   scr.scrollTop = 0;
   if (SETUP[s.type]) SETUP[s.type](s, scr);
   refresh();
@@ -575,19 +561,25 @@ const IMAGE_CREDITS = {
   document: B("Document scan", "নথিৰ স্কেন"),
 };
 const RENDER = {
-  story: (s) => {
-    // Story card standard: kicker + beat dots, hero with year stamp, title, lede, then one beat per tap (see README "Story cards")
+  story: (s, head = "") => {
+    // Story card standard: a painting across the top, then one glass card with kicker + beat dots, title, lede and one beat per tap (see README "Story cards")
     const yr = (s.text.map((p) => p.en).join(" ").match(/\b(1[0-9]{3})\b/) || [])[1];
     const stamp = yr && s.img && !s.imageCaption ? `<span class="stamp">${T(B(yr, asNum(yr)))}</span>` : "";
-    const memo = /^Remember\b/.test(s.title.en);
-    return `<h1 class="t">${T(s.title)}</h1>
-    ${s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
+    const memo = /^Remember\b/.test(s.title.en), last = s.text.length - 1;
+    const asks = (p) => /\?\s*$/.test(String(p.en).replace(/<[^>]+>/g, ""));
+    const bleed = (s.img && !s.imageCaption) || (!s.img && !s.map && !s.diagram && !s.widget);
+    const picturePart = s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
       : s.map ? `<figure class="frame mapframe">${mapSVG(mapOf(s), { story: true, route: s.map.route })}</figure>`
       : s.diagram ? storyDiagram(s.diagram)
       : s.widget ? `<div class="wx story-wx"></div>`
-      : `<figure class="frame art${s.art === "rooster" ? " full" : ""}">${ART[s.art]}</figure>`}
-    <div class="story${memo ? " memo" : ""}">${s.text.map((p, k) => `<p class="beat${k ? " later" : " lede"}${k ? " hold" : " on"}">${years(TR(p))}</p>`).join("")}
+      : `<figure class="frame art${s.art === "rooster" ? " full" : ""}">${ART[s.art]}</figure>`;
+    const beats = `<div class="story${memo ? " memo" : ""}">${s.text.map((p, k) => k && k === last && asks(p)
+        ? `<div class="beat think hold"><span class="think-ic">${AXOM.ICON.bulb}</span><div><b>${T(B("Think about it", "ভাবি চোৱা"))}</b><p>${years(TR(p))}</p></div></div>`
+        : `<p class="beat${k ? " later" : " lede"}${k ? " hold" : " on"}">${years(TR(p))}</p>`).join("")}
     ${s.text.length > 1 ? `<div class="more" aria-hidden="true">${T(B("Tap to read on", "পঢ়ি যাবলৈ টিপা"))}</div>` : ""}</div>`;
+    const extras = (s.link ? linkCallout(s.link) : "") + (L.sources && L.sources.length ? `<button class="src-link" data-sources>${T(B("View sources", "উৎস চোৱা"))}${AXOM.ICON.external}</button>` : "");
+    const title = `<h1 class="t">${T(s.title)}</h1>`;
+    return bleed ? `${picturePart}<div class="story-card">${head}${title}${beats}${extras}</div>` : `<div class="story-card plain">${head}${title}${picturePart}${beats}${extras}</div>`;
   },
   mcq: (s) => `<p class="prompt" ${s.small ? 'style="font-size:18px"' : ""}>${T(s.q)}</p>
     <div class="opts">${s.options.map((o, k) => `<button class="tile opt" data-opt="${k}"><span class="k">${"ABCD"[k]}</span><span>${T(o)}</span></button>`).join("")}</div>`,
@@ -660,6 +652,7 @@ function ready() {
   return false;   // tf and match check themselves
 }
 function refresh() {
+  if (!step()) return;   // a scene animation can finish just after the unit ends
   const s = step().s, btn = $("#action"), last = U.pos === U.queue.length - 1;
   if (U.phase === "feedback" || s.type === "story") { btn.innerHTML = last ? T(B("Finish", "শেষ কৰা")) : T(B("Continue", "আগবাঢ়া")); btn.disabled = s.type === "story" && !!s.tasks && U.phase !== "feedback" && !U.st.tasksDone; return; }
   btn.innerHTML = T(B("Check", "পৰীক্ষা কৰা"));
@@ -718,14 +711,14 @@ function answerHTML(s) {
 // it earns a little XP, is never recorded as a mistake and never comes back
 function guessFeedback(right) {
   const s = step().s; U.xp += 5; SFX.good();
-  U.done = Math.min(U.total, U.done + 1); $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
+  U.done = Math.min(U.total, U.done + 1);
   $("#fb-badge").textContent = right ? "✓" : "?";
   $("#fb-title").innerHTML = right ? T(B("You called it!", "ঠিকেই অনুমান কৰিলা!")) : T(B("Good guess. Here is what happened", "ভাল অনুমান। আচলতে যি হৈছিল"));
   $("#fb-xp").innerHTML = `+${N(5)} XP`;
   $("#fb-ans").innerHTML = right ? "" : `<small>${T(B("What really happened", "আচলতে যি হৈছিল"))}</small>${answerHTML(s)}`;
   $("#fb-why").innerHTML = TR(s.why);
   $("#foot").className = "foot fb-good fb-guess";
-  U.phase = "feedback"; saveAll(); refresh();
+  U.phase = "feedback"; paintProgress(); saveAll(); refresh();
   $("#action").focus({ preventScroll: true });
 }
 // Surprise rewards: now and then a correct answer opens a small gift, so a lesson never feels fully predictable.
@@ -777,7 +770,6 @@ function feedback(right) {
     else U.queue.push({ s, ref: it.ref, retry: true });
   } }
   if (!it.retry) U.done = Math.min(U.total, U.done + 1);
-  $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
   $("#fb-badge").textContent = right || slips ? "✓" : "✕";
   $("#fb-title").innerHTML = right ? T(PRAISE[Math.floor(Math.random() * PRAISE.length)])
     : slips ? T(B(`All matched, ${U.st.misses} slip${U.st.misses > 1 ? "s" : ""}`, `সকলো মিলিল, ${asNum(U.st.misses)}টা ভুল`)) : T(B("Not quite", "হোৱা নাই"));
@@ -786,8 +778,16 @@ function feedback(right) {
   $("#fb-why").innerHTML = coaching + TR(s.why) + (right ? surprise(it) : "");
   $("#foot").className = `foot ${right ? "fb-good" : "fb-bad"}`;
   U.phase = "feedback";
+  paintProgress();
   saveAll(); refresh();
   $("#action").focus({ preventScroll: true });
+}
+// segmented bar and "2 / 8": the step being answered counts, so the first step shows 1
+function paintProgress() {
+  const cur = Math.min(U.total, U.done + (U.phase === "answer" ? 1 : 0)), bar = $("#progress");
+  bar.style.width = `${(cur / U.total) * 100}%`;
+  $("#bar").style.setProperty("--n", U.total);
+  $("#step-count").innerHTML = `${N(cur)} / ${N(U.total)}`;
 }
 function next() {
   if (step().s.type === "story") U.done = Math.min(U.total, U.done + 1);
@@ -797,6 +797,7 @@ function next() {
 }
 
 /* ---------- unit complete ---------- */
+let AFTER = null;   // what the main button on the complete screen does: { start: unit } or { href }, with its label
 function finishUnit() {
   const u = U.unit, wasDone = !!P.done[u.id];
   // A completed teaching unit opens the next unit. A lesson test opens the
@@ -836,30 +837,58 @@ function finishUnit() {
   const go = mode === "jump" && pass ? { id: L.target.id, start: true, label: B(`Start lesson ${L.target.n} · ${L.target.name.en}`, `পাঠ ${asNum(L.target.n)} আৰম্ভ কৰা · ${L.target.name.as}`) }
     : !VIRTUAL && u === L.test && P.done.test && NEXT ? { id: NEXT.id, start: true, label: B(`Next: Lesson ${NEXT.n} · ${NEXT.name.en.split(" (")[0]}, Unit 1`, `পৰৱৰ্তী: পাঠ ${asNum(NEXT.n)} · ${NEXT.name.as.split(" (")[0]}, অধ্যায় ১`) } : null;
   const promptOf = (s) => s.q || s.s || (s.before ? B(`${s.before.en} ___ ${s.after.en}`, `${s.before.as} ___ ${s.after.as}`) : s.clues ? s.clues[0] : B("", ""));
-  const title = mode === "diagnostic" ? B("Your starting map", "তোমাৰ আৰম্ভণিৰ মানচিত্ৰ") : mode === "drill" ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", `${L.word.as}ৰ পৰীক্ষা শেষ`) : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
-  const reviewLeft = mode === "review" ? AXOM.reviewQueue().length : 0;
+  const title = mode === "diagnostic" ? B("Your starting map", "তোমাৰ আৰম্ভণিৰ মানচিত্ৰ") : mode === "drill" ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", `${L.word.as}ৰ পৰীক্ষা শেষ`) : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Another step forward.", "আৰু এখোজ আগবাঢ়িলা।");
+  const unitNo = mode === "lesson" && !U.practice && u !== L.test ? L.units.indexOf(u) + 1 : 0;
+  const sub = unitNo ? B(`Unit ${unitNo} complete`, `অধ্যায় ${asNum(unitNo)} সম্পূৰ্ণ`) : u.title;
+  const nextUnit = mode === "lesson" && !U.practice && !U.testout && u !== L.test ? ALL.findIndex((x) => !P.done[x.id]) : -1;
+  AFTER = go ? { href: `lesson.html?id=${go.id}&start=0`, label: go.label } : mode === "review" && AXOM.reviewQueue().length ? { href: "lesson.html?review=1", label: B(`Continue reviewing · ${AXOM.reviewQueue().length} waiting`, `আৰু অনুশীলন কৰা · ${asNum(AXOM.reviewQueue().length)}টা বাকী`) }
+    : nextUnit >= 0 ? { start: nextUnit, label: nextUnit === ALL.length - 1 ? B("Take the lesson test", "পাঠৰ পৰীক্ষা দিয়া") : B("Next unit", "পিছৰ অধ্যায়") } : null;
+  const doneCount = ALL.filter((x) => P.done[x.id]).length;
   const missionResult = L.mission && u.mission && !U.practice && pass !== false ? `<div class="mission-result"><small>${T(L.mission.label)} · ${T(u === L.test ? B("File sealed", "নথি সম্পূৰ্ণ") : B("Finding recorded", "প্ৰমাণ লিখা হ'ল"))}</small><p>${T(u.mission.result)}</p></div>` : "";
   $("#done").innerHTML = `
-    <svg class="done-art" viewBox="0 0 180 150" aria-hidden="true"><path d="M10 40c14 2 20 10 34 13 30 6 62 6 92 0 14-3 20-11 34-13" fill="none" stroke="var(--terra)" stroke-width="5" stroke-linecap="round"/><path d="M30 52v70M150 52v70M22 124h136" stroke="var(--terra)" stroke-width="5" stroke-linecap="round"/><circle cx="90" cy="92" r="30" fill="var(--gold)"/><path d="M76 92l10 10 18-20" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ${DONE_ART(pass !== false)}
     <h1>${T(title)}</h1>
-    <p class="sub">${T(u.title)}${wasDone && !U.practice && !VIRTUAL ? " · " + T(B("practice", "অনুশীলন")) : ""}</p>
+    <p class="sub">${T(sub)}${wasDone && !U.practice && !VIRTUAL ? " · " + T(B("practice", "অনুশীলন")) : ""}</p>
     ${note ? `<p class="cp-note">${note}</p>` : ""}
     ${mode === "diagnostic" ? MATH.report(L.skillList) : ""}
     ${missionResult}
-    ${go ? `<a class="btn next-lesson" href="lesson.html?id=${go.id}${go.start ? "&start=0" : ""}">${T(go.label)} ›</a>` : ""}
-    ${reviewLeft ? `<a class="btn next-lesson" href="lesson.html?review=1">${T(B(`Continue reviewing · ${reviewLeft} waiting`, `আৰু অনুশীলন কৰা · ${asNum(reviewLeft)}টা বাকী`))} ›</a>` : ""}
     <div class="stats">
-      <div class="stat" style="--c:var(--gold)"><div class="h">XP</div><div class="v">+${N(U.xp)}</div></div>
-      <div class="stat" style="--c:var(--good)"><div class="h">${T(B("Correct", "শুদ্ধ"))}</div><div class="v">${N(`${U.ok}/${U.asked}`)}</div></div>
-      <div class="stat" style="--c:var(--terra)"><div class="h">${T(B("Streak", "ধাৰা"))}</div><div class="v">${N(G.streak.n)}🔥</div></div>
+      <div class="stat xp"><span class="stat-ic">${DONE_ICONS.star}</span><div><div class="v">+${N(U.xp)} XP</div><div class="h">${T(pass === false ? B("Keep practising", "অনুশীলন কৰি থাকা") : B("Well done!", "বহুত ভাল!"))}</div></div></div>
+      <div class="stat streak"><span class="stat-ic">${DONE_ICONS.flame}</span><div><div class="v">${T(B(`${G.streak.n} day streak`, `${asNum(G.streak.n)} দিনৰ ধাৰা`))}</div><div class="h">${T(B("Keep going!", "আগবাঢ়ি থাকা!"))}</div></div></div>
     </div>
+    ${u.learned && u.learned.length ? `<div class="card learned"><h3>${T(B("What you learned", "তুমি কি শিকিলা"))}</h3><ul>${u.learned.map((l) => `<li>${T(l)}</li>`).join("")}</ul></div>` : ""}
     ${U.mistakes.length ? `<div class="card mistakes"><h3>${T(B("Revise these", "এইবোৰ আকৌ চোৱা"))}</h3><ul>${U.mistakes.map((m) => `<li><span class="q">${T(promptOf(m.s))}</span>${answerHTML(m.s)}</li>`).join("")}</ul></div>` : ""}
-    ${u.learned && u.learned.length ? `<div class="card learned"><h3>${T(B("You learned", "তুমি শিকিলা"))}</h3><ul>${u.learned.map((l) => `<li>${T(l)}</li>`).join("")}</ul></div>` : ""}
-    <p class="sub" style="font-size:13px;margin-top:4px">${T(B(`Time: ${time}`, `সময়: ${asNum(time)}`))}</p>`;
+    ${mode === "lesson" ? `<div class="card prog"><div class="prog-h"><b>${T(B("Lesson progress", "পাঠৰ অগ্ৰগতি"))}</b><span>${T(B(`${doneCount} of ${ALL.length} units complete`, `${asNum(ALL.length)}টাৰ ${asNum(doneCount)}টা অধ্যায় সম্পূৰ্ণ`))}</span></div><div class="prog-dots">${ALL.map((x) => `<i class="${P.done[x.id] ? "on" : ""}"></i>`).join("")}</div></div>` : ""}
+    <p class="done-meta">${T(B(`${U.ok} of ${U.asked} right first time · ${time}`, `প্ৰথম চেষ্টাত ${asNum(U.asked)}টাৰ ${asNum(U.ok)}টা শুদ্ধ · ${asNum(time)}`))}</p>`;
+  $("#done-btn").innerHTML = AFTER ? `${T(AFTER.label)}<svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg>` : T(B("Continue", "আগবাঢ়া"));
+  $("#done-back").classList[AFTER ? "remove" : "add"]("hidden");
   showView("v-done");
   const c = $("#confetti");
   c.innerHTML = Array.from({ length: 18 }, (_, k) => `<i style="left:${(k * 37) % 100}%;animation-delay:${(k % 9) * 0.12}s"></i>`).join("");
   c.classList.add("on"); setTimeout(() => c.classList.remove("on"), 3200);
+}
+
+// the "complete" seal: a japi-like disc inside a ring of woven ticks, with sprigs and falling leaves
+const DONE_ICONS = {
+  star: '<svg viewBox="0 0 24 24"><path fill="#F5A623" stroke="#E08A0B" stroke-width="1" stroke-linejoin="round" d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg>',
+  flame: '<svg viewBox="0 0 24 24"><path fill="#EF4A23" d="M12.6 1.8c.4 3.100-1.200 4.800-2.700 6.500C8.300 10 6.700 11.800 6.700 14.700c0 3.700 2.700 6.700 5.800 6.700s5.800-2.800 5.800-6.400c0-2.600-1.200-4.700-2.700-6.200-.3 1.500-.9 2.400-1.900 3 .3-2.700-.3-6.200-1.100-10z"/><path fill="#FFC531" d="M12.500 21.400c-1.800 0-3.200-1.500-3.200-3.300 0-1.600.9-2.600 1.800-3.600.7-.8 1.200-1.600 1.300-2.700 1.500 1.600 3.300 3.500 3.300 6 0 2-1.400 3.600-3.200 3.600z"/></svg>',
+};
+function DONE_ART(ok) {
+  const C = 120, turn = (n) => Array.from({ length: n }, (_, k) => (k * 360) / n);
+  const ticks = turn(60).map((a) => `<rect x="${C - 1.5}" y="24" width="3" height="${a % 18 ? 7 : 11}" rx="1.5" fill="#D8202B" opacity="${a % 18 ? .55 : .95}" transform="rotate(${a} ${C} ${C})"/>`).join("");
+  const star = turn(8).map((a, k) => `<path d="M${C} 50l13 40h-26z" fill="${k % 2 ? "#D8202B" : "#20354A"}" transform="rotate(${a} ${C} ${C})"/>`).join("");
+  const diamonds = turn(16).map((a) => `<path d="M${C} 42l3.500 5-3.500 5-3.500-5z" fill="#D8202B" transform="rotate(${a + 11.250} ${C} ${C})"/>`).join("");
+  const leaf = (x, y, r, f, s = 1) => `<path d="M0 0c6-7 16-7 22 0-6 7-16 7-22 0z" fill="${f}" transform="translate(${x} ${y}) rotate(${r}) scale(${s})"/>`;
+  const sprig = [[34, 176, -68], [28, 158, -96], [33, 139, -112], [46, 192, -44], [62, 205, -26]].map(([x, y, r], k) => leaf(x, y, r, k % 2 ? "#3C9A4E" : "#2B7D3F", .86));
+  const falling = [[20, 30, 30, "#2B7D3F"], [58, 8, 110, "#E8A21E"], [176, 6, 60, "#D8202B"], [216, 34, 150, "#3C9A4E"], [10, 88, 200, "#D8202B"], [228, 96, 20, "#2B7D3F"], [120, 0, 80, "#2B7D3F"]].map(([x, y, r, f]) => leaf(x, y, r, f, .46)).join("");
+  return `<svg class="done-art${ok ? "" : " miss"}" viewBox="0 0 240 228" aria-hidden="true">
+    ${falling}<g>${sprig.join("")}</g><g transform="matrix(-1 0 0 1 240 0)">${sprig.join("")}</g>
+    ${ticks}
+    <circle cx="${C}" cy="${C}" r="78" fill="#D8202B"/><circle cx="${C}" cy="${C}" r="71" fill="#F4E2BE"/><circle cx="${C}" cy="${C}" r="71" fill="none" stroke="#B9851E" stroke-width="1.500" stroke-dasharray="3 4" opacity=".6"/>
+    ${diamonds}${star}
+    <circle cx="${C}" cy="${C}" r="31" fill="#fff"/><circle cx="${C}" cy="${C}" r="27" fill="#D8202B"/>
+    ${ok ? `<path d="M${C - 13} ${C + 1}l9 9 17-20" fill="none" stroke="#fff" stroke-width="6.500" stroke-linecap="round" stroke-linejoin="round"/>` : `<path d="M${C - 11} ${C}h22" fill="none" stroke="#fff" stroke-width="6.500" stroke-linecap="round"/>`}
+  </svg>`;
 }
 
 /* ---------- events ---------- */
@@ -870,14 +899,14 @@ document.addEventListener("click", (e) => {
   const g = (sel) => e.target.closest(sel);
   let b;
   if ((b = g("[data-ent]"))) { e.preventDefault(); return openEntity(b.dataset.ent); }
-  if (g("#settings")) return AXOM.openSettings();
+  if (g("[data-sources]")) return openSources();
   if (g("#guide")) return openGuide();
   if (g("#practise")) return startPractice();
-  if ((b = g("[data-node]"))) { const k = +b.dataset.node; pop = pop === k ? null : k; opop = null; SFX.tap(); return renderPath(); }
-  if ((b = g("[data-onode]"))) { const k = b.dataset.onode; opop = opop === k ? null : k; pop = null; SFX.tap(); return renderPath(); }
+  if ((b = g("[data-node]"))) { const k = +b.dataset.node; pop = pop === k ? null : k; SFX.tap(); return renderPath(); }
   if ((b = g("[data-start]"))) return startUnit(+b.dataset.start, b.hasAttribute("data-testout"));
-  if ($("#v-path").classList.contains("on") && (pop != null || opop != null) && !g(".pop")) { pop = opop = null; return renderPath(); }
-  if (g("#done-btn")) { if (VIRTUAL) { location.href = `index.html?course=${CID}${mode === "diagnostic" || mode === "drill" ? "&tab=skills" : ""}`; return; } showView("v-path"); renderPath(); return; }
+  if ($("#v-path").classList.contains("on") && pop != null && !g(".pop")) { pop = null; return renderPath(); }
+  if (g("#done-btn") && AFTER) { const a = AFTER; AFTER = null; if (a.href) { location.href = a.href; return; } return startUnit(a.start); }
+  if (g("#done-btn") || g("#done-back") || g("#done-x")) { AFTER = null; if (VIRTUAL) { location.href = `index.html?course=${CID}${mode === "diagnostic" || mode === "drill" ? "&tab=skills" : ""}`; return; } showView("v-path"); renderPath(); return; }
   if (g("#exit")) return openLeave();
   if (g("[data-link]") && U) { const s0 = step().s; if (s0.link) return openLinkSheet(s0.link); }
   if (g("[data-keep]")) return closeSheet();

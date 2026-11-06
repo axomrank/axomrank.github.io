@@ -109,7 +109,7 @@ tests them.
 
 ## Writing more lessons
 
-Add a lesson function to `scripts/math_lessons_*.py` and register it in
+Add a lesson function to `scripts/math_course/math_lessons_*.py` and register it in
 `scripts/build_math_course.py`. The topic and skills are already listed there.
 
 ```bash
@@ -146,7 +146,7 @@ node scripts/check_skill_model.cjs
 Widgets, usable in `explore` and as a story card's `widget`: `line`, `array`, `gears`,
 `tiles`, `dial`, `cuts`, `area`, `dual`, `ray`, `level`, `seesaw`, `chain`, `order`, `square`, `diffsq`, `pairs`, `ladder`, `twosale`, `growth`, `tank`, `mandays`, `track`, `journey`, `ages`, `stairs`, `triangle`, `quarter`, `tower`, `scaleup`, `shear`, `sticks`, `kite`, `roll`, `sectors`, `stack`, `net`, `pour`, `fracbar`, `grid100`, `peel`, `hops`, `blocks`.
 Read [MATHEMATICS-VISUALS.md](MATHEMATICS-VISUALS.md) before adding or using one. Do-to-discover
-cards are listed in `scripts/math_labs.py`.
+cards are listed in `scripts/math_course/math_labs.py`.
 
 ## Before release
 

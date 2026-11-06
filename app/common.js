@@ -231,7 +231,23 @@ const ICON = {
   book: '<svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>',
   repeat: '<svg viewBox="0 0 24 24"><path d="M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4"/></svg>',
   chevron: '<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>',
+  arrow: '<svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg>',
+  arrowBack: '<svg viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></svg>',
+  close: '<svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg>',
+  external: '<svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>',
+  bulb: '<svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6.500 6.500 0 0 0-3.800 11.800c.5.400.8 1 .8 1.700V17h6v-.5c0-.7.300-1.300.8-1.700A6.500 6.500 0 0 0 12 3z"/></svg>',
+  navHome: '<svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 3 2.500 11.200l1.300 1.500L5 11.700V21h5.200v-6h3.600v6H19v-9.300l1.200 1 1.300-1.500z"/></svg>',
+  navLearn: '<svg viewBox="0 0 24 24"><path d="M12 6.500C10 4.800 7 4.300 3.500 4.800v14c3.500-.5 6.500 0 8.500 1.700 2-1.700 5-2.200 8.500-1.700v-14C17 4.300 14 4.800 12 6.500zM12 6.500v14"/></svg>',
+  navPractice: '<svg viewBox="0 0 24 24"><path d="M16 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7M8 8h7M8 12h5M8 16h3M14 19l.700-3 6-6a1.600 1.600 0 0 1 2.300 2.300l-6 6z"/></svg>',
 };
+// language switch used in page headers: both names are always shown, the active one in red
+const LANG = '<label class="lang" for="as"><span class="l-en">EN</span><i>/</i><span class="l-as">অসমীয়া</span></label>';
+// the app's four destinations
+function nav(on) {
+  const course = store.get("axom:ui", {}).lastCourse || "assam-history";
+  const items = [["home", "index.html", ICON.navHome, B("Home", "মূল পৃষ্ঠা")], ["learn", `index.html?course=${course}`, ICON.navLearn, B("Learn", "শিকা")], ["practice", "index.html?view=practice", ICON.navPractice, B("Practice", "অনুশীলন")], ["profile", "index.html?view=profile", ICON.user, B("Profile", "প্ৰফাইল")]];
+  return `<nav class="nav-bar">${items.map(([id, href, icon, t]) => `<a class="${id === on ? "on" : ""}" href="${href}"${id === on ? ' aria-current="page"' : ""}>${icon}${T(t)}</a>`).join("")}</nav>`;
+}
 
 /* ---------- reading settings ---------- */
 function applySettings() {
@@ -285,7 +301,8 @@ if (CFG.firebase) {
   import("./sync.js").then((m) => m.start({ CFG, auth, snapshot, merge, applySnapshot, listeners })).catch((e) => console.warn("Sync unavailable:", e));
 }
 
-window.AXOM = { B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
-  isOffline, saveOffline, ICON, initLang, auth, merge, snapshot, applySnapshot, onSave: (f) => listeners.push(f), _audioState: () => (ac ? ac.state : "none"),
+const notebook = (cid) => cid === "mathematics" || cid === "reasoning";   // courses built around interactive scenes (app/math.css)
+window.AXOM = { notebook, B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
+  isOffline, saveOffline, ICON, LANG, nav, initLang, auth, merge, snapshot, applySnapshot, onSave: (f) => listeners.push(f), _audioState: () => (ac ? ac.state : "none"),
   iso, skillAnswer, misconception, skillState, rootCause, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
 })();

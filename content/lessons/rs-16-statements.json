@@ -1,0 +1,2084 @@
+{
+ "id": "rs-16-statements",
+ "course": "reasoning",
+ "no": 16,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Statements and conclusions",
+  "as": "উক্তি আৰু সিদ্ধান্ত"
+ },
+ "reign": {
+  "en": "Conclusions, assumptions, causes",
+  "as": "সিদ্ধান্ত, ধাৰণা, কাৰণ"
+ },
+ "portrait": "reasoning/logic.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Stay inside the statement",
+    "as": "উক্তিৰ ভিতৰতে থাকা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Treat the statement as true.",
+     "as": "উক্তি সত্য ধৰা।"
+    },
+    {
+     "en": "Use nothing from outside.",
+     "as": "বাহিৰৰ একো নলবা।"
+    },
+    {
+     "en": "A conclusion must follow directly.",
+     "as": "সিদ্ধান্ত পোনে পোনে ওলাব লাগিব।"
+    },
+    {
+     "en": "'All', 'only', 'always' are strong words.",
+     "as": "'সকলো', 'কেৱল', 'সদায়' শক্তিশালী শব্দ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs16.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Forget what you know",
+      "as": "জনাখিনি পাহৰা"
+     },
+     "text": [
+      {
+       "en": "Even if you know better, judge only by the words given.",
+       "as": "তুমি ভালকৈ জানিলেও দিয়া শব্দৰেই বিচাৰ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Read",
+        "as": "পঢ়া"
+       },
+       {
+        "en": "Accept",
+        "as": "গ্ৰহণ"
+       },
+       {
+        "en": "Judge",
+        "as": "বিচাৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Beware strong words",
+      "as": "শক্তিশালী শব্দ"
+     },
+     "text": [
+      {
+       "en": "A conclusion with 'all' or 'always' claims far more than most statements give.",
+       "as": "'সকলো' বা 'সদায়' থকা সিদ্ধান্তই উক্তিতকৈ বহুত বেছি দাবী কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Often weak: all, only",
+        "as": "প্ৰায়ে দুৰ্বল: সকলো, কেৱল"
+       },
+       {
+        "en": "Safer: some, may",
+        "as": "সুৰক্ষিত: কিছুমান, হ'ব পাৰে"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u1.q1",
+     "type": "stepwise",
+     "skill": "r-stfollow",
+     "q": {
+      "en": "Statement: Trains to Dibrugarh are late today. Conclusion: All trains are late today.",
+      "as": "উক্তি: আজি ডিব্ৰুগড়লৈ ৰেল পলম। সিদ্ধান্ত: আজি সকলো ৰেল পলম।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It says only Dibrugarh trains.",
+        "as": "ই কেৱল ডিব্ৰুগড়ৰ কথা কয়।"
+       },
+       "tag": "r-m-outside"
+      }
+     ],
+     "why": {
+      "en": "It says only Dibrugarh trains.",
+      "as": "ই কেৱল ডিব্ৰুগড়ৰ কথা কয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Statement: Trains to Dibrugarh are late today. Conclusion: All trains are late today.",
+        "as": "উক্তি: আজি ডিব্ৰুগড়লৈ ৰেল পলম। সিদ্ধান্ত: আজি সকলো ৰেল পলম।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It says only Dibrugarh trains.",
+          "as": "ই কেৱল ডিব্ৰুগড়ৰ কথা কয়।"
+         },
+         "tag": "r-m-outside"
+        }
+       ],
+       "why": {
+        "en": "It says only Dibrugarh trains.",
+        "as": "ই কেৱল ডিব্ৰুগড়ৰ কথা কয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Statement: Every member paid the fee. Rina is a member. Conclusion: Rina paid.",
+        "as": "উক্তি: প্ৰতিগৰাকী সদস্যই মাচুল দিলে। ৰীণা সদস্য। সিদ্ধান্ত: ৰীণাই দিলে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Rina is covered by 'every'.",
+          "as": "'প্ৰতিগৰাকী'ত ৰীণা পৰে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Rina is covered by 'every'.",
+        "as": "'প্ৰতিগৰাকী'ত ৰীণা পৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Statement: Some shops close on Sunday. Conclusion: Every shop closes on Sunday.",
+        "as": "উক্তি: কিছুমান দোকান দেওবাৰে বন্ধ। সিদ্ধান্ত: প্ৰতিখন দোকান দেওবাৰে বন্ধ।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Some is not every.",
+          "as": "কিছুমান মানে প্ৰতিখন নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Some is not every.",
+        "as": "কিছুমান মানে প্ৰতিখন নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs16.u1.q2",
+     "type": "tf",
+     "skill": "r-stfollow",
+     "s": {
+      "en": "Your own knowledge can overrule a given statement.",
+      "as": "তোমাৰ জ্ঞানে দিয়া উক্তি নাকচ কৰিব পাৰে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Here it cannot.",
+      "as": "ইয়াত নোৱাৰে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "r-m-outside",
+       "why": {
+        "en": "Use only what the statement says, even if the world differs.",
+        "as": "জগত বেলেগ হ'লেও উক্তিয়ে কোৱাখিনিহে ব্যৱহাৰ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs16.u1.q3",
+     "type": "match",
+     "skill": "r-stfollow",
+     "q": {
+      "en": "Match the word to its strength",
+      "as": "শব্দক শক্তিৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Always",
+        "as": "সদায়"
+       },
+       {
+        "en": "Strongest",
+        "as": "আটাইতকৈ শক্তিশালী"
+       }
+      ],
+      [
+       {
+        "en": "Usually",
+        "as": "সাধাৰণতে"
+       },
+       {
+        "en": "Middle",
+        "as": "মধ্যম"
+       }
+      ],
+      [
+       {
+        "en": "Sometimes",
+        "as": "কেতিয়াবা"
+       },
+       {
+        "en": "Weakest",
+        "as": "দুৰ্বল"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Strong words claim more.",
+      "as": "শক্তিশালী শব্দই বেছি দাবী কৰে।"
+     }
+    },
+    {
+     "id": "rs16.u1.q4",
+     "type": "order",
+     "skill": "r-stfollow",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the statement",
+       "as": "উক্তি পঢ়া"
+      },
+      {
+       "en": "Note strong words",
+       "as": "শক্তিশালী শব্দ"
+      },
+      {
+       "en": "Compare the claim",
+       "as": "দাবী তুলনা"
+      },
+      {
+       "en": "Decide",
+       "as": "সিদ্ধান্ত"
+      }
+     ],
+     "why": {
+      "en": "Compare claim sizes.",
+      "as": "দাবীৰ আকাৰ তুলনা।"
+     }
+    },
+    {
+     "id": "rs16.u1.q5",
+     "type": "stepwise",
+     "skill": "r-stfollow",
+     "q": {
+      "en": "Statement: Exercise improves health. Conclusion: Exercise can improve health.",
+      "as": "উক্তি: ব্যায়ামে স্বাস্থ্য উন্নত কৰে। সিদ্ধান্ত: ব্যায়ামে স্বাস্থ্য উন্নত কৰিব পাৰে।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The weaker claim is covered.",
+        "as": "দুৰ্বল দাবী সামৰা হৈছে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The weaker claim is covered.",
+      "as": "দুৰ্বল দাবী সামৰা হৈছে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Statement: Exercise improves health. Conclusion: Exercise can improve health.",
+        "as": "উক্তি: ব্যায়ামে স্বাস্থ্য উন্নত কৰে। সিদ্ধান্ত: ব্যায়ামে স্বাস্থ্য উন্নত কৰিব পাৰে।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The weaker claim is covered.",
+          "as": "দুৰ্বল দাবী সামৰা হৈছে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The weaker claim is covered.",
+        "as": "দুৰ্বল দাবী সামৰা হৈছে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Statement: Reading helps vocabulary. Conclusion: Only reading helps vocabulary.",
+        "as": "উক্তি: পঢ়াই শব্দভাণ্ডাৰ বঢ়ায়। সিদ্ধান্ত: কেৱল পঢ়াইহে শব্দভাণ্ডাৰ বঢ়ায়।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "'Only' goes too far.",
+          "as": "'কেৱল' অতি বেছি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "'Only' goes too far.",
+        "as": "'কেৱল' অতি বেছি।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "What is taken for granted",
+    "as": "কি ধৰি লোৱা হৈছে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "An assumption is unstated but needed.",
+     "as": "ধাৰণা নকোৱা কিন্তু লাগে।"
+    },
+    {
+     "en": "Negate it and test the statement.",
+     "as": "ওলোটাই উক্তি চোৱা।"
+    },
+    {
+     "en": "If the statement collapses, it was assumed.",
+     "as": "উক্তি ভাঙিলে সেয়া ধাৰণা আছিল।"
+    },
+    {
+     "en": "An argument needs a real link.",
+     "as": "যুক্তিত প্ৰকৃত সংযোগ লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs16.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "The unstated step",
+      "as": "নকোৱা খোজ"
+     },
+     "text": [
+      {
+       "en": "'Call before 5' assumes calls after 5 are unwelcome, or that people can phone.",
+       "as": "'5 ৰ আগতে ফোন কৰা'ত ধৰা হৈছে মানুহে ফোন কৰিব পাৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Statement",
+        "as": "উক্তি"
+       },
+       {
+        "en": "Hidden step",
+        "as": "লুকাই থকা খোজ"
+       },
+       {
+        "en": "Conclusion",
+        "as": "সিদ্ধান্ত"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "The negation test",
+      "as": "ওলোটা পৰীক্ষা"
+     },
+     "text": [
+      {
+       "en": "Reverse the idea. If the statement no longer makes sense, it was assumed.",
+       "as": "ধাৰণা ওলোটোৱা। উক্তিৰ অৰ্থ নাথাকিলে সেয়া ধৰা হৈছিল।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Reverse it",
+        "as": "ওলোটোৱা"
+       },
+       {
+        "en": "Statement still fine?",
+        "as": "উক্তি ঠিক?"
+       },
+       {
+        "en": "No: assumed",
+        "as": "নহয়: ধাৰণা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u2.q1",
+     "type": "stepwise",
+     "skill": "r-stassume",
+     "q": {
+      "en": "Statement: Book early for the Bihu show. Assumption: Seats may run out. Is it assumed?",
+      "as": "উক্তি: বিহুৰ অনুষ্ঠানৰ বাবে আগতীয়াকৈ আসন লোৱা। ধাৰণা: আসন শেষ হ'ব পাৰে। ধৰা হৈছেনে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Without it, booking early is pointless.",
+        "as": "নহ'লে আগতীয়া ল'বলগা নাই।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Without it, booking early is pointless.",
+      "as": "নহ'লে আগতীয়া ল'বলগা নাই।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Statement: Book early for the Bihu show. Assumption: Seats may run out. Is it assumed?",
+        "as": "উক্তি: বিহুৰ অনুষ্ঠানৰ বাবে আগতীয়াকৈ আসন লোৱা। ধাৰণা: আসন শেষ হ'ব পাৰে। ধৰা হৈছেনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Without it, booking early is pointless.",
+          "as": "নহ'লে আগতীয়া ল'বলগা নাই।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Without it, booking early is pointless.",
+        "as": "নহ'লে আগতীয়া ল'বলগা নাই।"
+       }
+      },
+      {
+       "q": {
+        "en": "Statement: Boil water before drinking. Assumption: Everyone owns a kettle. Is it assumed?",
+        "as": "উক্তি: খোৱাৰ আগতে পানী উতলোৱা। ধাৰণা: সকলোৰে কেটলি আছে। ধৰা হৈছেনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Water can be boiled other ways.",
+          "as": "আন ধৰণেও উতলাব পাৰি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Water can be boiled other ways.",
+        "as": "আন ধৰণেও উতলাব পাৰি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs16.u2.q2",
+     "type": "tf",
+     "skill": "r-stassume",
+     "s": {
+      "en": "An assumption must be stated in the passage.",
+      "as": "ধাৰণা উক্তিত কোৱা থাকিব লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is unstated by definition.",
+      "as": "ই নকোৱা কথা।"
+     }
+    },
+    {
+     "id": "rs16.u2.q3",
+     "type": "match",
+     "skill": "r-stassume",
+     "q": {
+      "en": "Match the term to its meaning",
+      "as": "শব্দক অৰ্থৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Conclusion",
+        "as": "সিদ্ধান্ত"
+       },
+       {
+        "en": "Comes after",
+        "as": "পিছত ওলায়"
+       }
+      ],
+      [
+       {
+        "en": "Assumption",
+        "as": "ধাৰণা"
+       },
+       {
+        "en": "Needed before",
+        "as": "আগতে লাগে"
+       }
+      ],
+      [
+       {
+        "en": "Argument",
+        "as": "যুক্তি"
+       },
+       {
+        "en": "A reason given",
+        "as": "দিয়া কাৰণ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Before or after.",
+      "as": "আগত বা পিছত।"
+     }
+    },
+    {
+     "id": "rs16.u2.q4",
+     "type": "order",
+     "skill": "r-stassume",
+     "q": {
+      "en": "The negation test in order",
+      "as": "ওলোটা পৰীক্ষা ক্ৰমে"
+     },
+     "items": [
+      {
+       "en": "Pick the idea",
+       "as": "ধাৰণা বাছা"
+      },
+      {
+       "en": "Reverse it",
+       "as": "ওলোটোৱা"
+      },
+      {
+       "en": "Reread the statement",
+       "as": "উক্তি পঢ়া"
+      },
+      {
+       "en": "Decide",
+       "as": "সিদ্ধান্ত"
+      }
+     ],
+     "why": {
+      "en": "Reverse and reread.",
+      "as": "ওলোটাই পঢ়া।"
+     }
+    },
+    {
+     "id": "rs16.u2.q5",
+     "type": "stepwise",
+     "skill": "r-stassume",
+     "q": {
+      "en": "Argument: Schools should teach first aid, because accidents happen everywhere. Does the reason link?",
+      "as": "যুক্তি: বিদ্যালয়ত প্ৰাথমিক চিকিৎসা শিকোৱা উচিত, কাৰণ দুৰ্ঘটনা সকলোতে হয়। কাৰণ মিলেনে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "It is relevant.",
+        "as": "ই প্ৰাসংগিক।"
+       }
+      }
+     ],
+     "why": {
+      "en": "It is relevant.",
+      "as": "ই প্ৰাসংগিক।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Argument: Schools should teach first aid, because accidents happen everywhere. Does the reason link?",
+        "as": "যুক্তি: বিদ্যালয়ত প্ৰাথমিক চিকিৎসা শিকোৱা উচিত, কাৰণ দুৰ্ঘটনা সকলোতে হয়। কাৰণ মিলেনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It is relevant.",
+          "as": "ই প্ৰাসংগিক।"
+         }
+        }
+       ],
+       "why": {
+        "en": "It is relevant.",
+        "as": "ই প্ৰাসংগিক।"
+       }
+      },
+      {
+       "q": {
+        "en": "Argument: Schools should teach first aid, because blue is a nice colour. Does the reason link?",
+        "as": "যুক্তি: বিদ্যালয়ত প্ৰাথমিক চিকিৎসা শিকোৱা উচিত, কাৰণ নীলা ধুনীয়া ৰং। কাৰণ মিলেনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It is irrelevant.",
+          "as": "ই অপ্ৰাসংগিক।"
+         }
+        }
+       ],
+       "why": {
+        "en": "It is irrelevant.",
+        "as": "ই অপ্ৰাসংগিক।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Cause and effect",
+    "as": "কাৰণ আৰু ফল"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A cause comes first.",
+     "as": "কাৰণ আগতে।"
+    },
+    {
+     "en": "Together does not mean cause.",
+     "as": "একেলগে মানে কাৰণ নহয়।"
+    },
+    {
+     "en": "Both may share a third cause.",
+     "as": "দুয়োটাৰ তৃতীয় কাৰণ হ'ব পাৰে।"
+    },
+    {
+     "en": "Assertion needs its reason tested separately.",
+     "as": "দাবী আৰু কাৰণ পৃথকে চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs16.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Together is not because",
+      "as": "একেলগে মানে কাৰণ নহয়"
+     },
+     "text": [
+      {
+       "en": "Umbrella sales and floods rise together. Umbrellas do not cause floods; rain drives both.",
+       "as": "ছাতিৰ বিক্ৰী আৰু বান একেলগে বাঢ়ে। ছাতিয়ে বান নানে; বৰষুণে দুয়োটা আনে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Rain",
+        "as": "বৰষুণ"
+       },
+       {
+        "en": "Umbrellas",
+        "as": "ছাতি"
+       },
+       {
+        "en": "Floods",
+        "as": "বান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Assertion and reason",
+      "as": "দাবী আৰু কাৰণ"
+     },
+     "text": [
+      {
+       "en": "Test the assertion, then the reason, then whether one explains the other.",
+       "as": "দাবী, তাৰ পিছত কাৰণ, শেষত এটাই আনটো বুজায়নে চোৱা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A true?",
+        "as": "A সত্য?"
+       },
+       {
+        "en": "R true?",
+        "as": "R সত্য?"
+       },
+       {
+        "en": "R explains A?",
+        "as": "R এ A বুজায়?"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u3.q1",
+     "type": "stepwise",
+     "skill": "r-stcause",
+     "q": {
+      "en": "The ground is wet because it rained. Is rain a plausible cause?",
+      "as": "বৰষুণ দিয়াৰ বাবে মাটি তিতা। বৰষুণ যুক্তিসংগত কাৰণনে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        },
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Rain wets ground.",
+        "as": "বৰষুণে মাটি তিতায়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Rain wets ground.",
+      "as": "বৰষুণে মাটি তিতায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The ground is wet because it rained. Is rain a plausible cause?",
+        "as": "বৰষুণ দিয়াৰ বাবে মাটি তিতা। বৰষুণ যুক্তিসংগত কাৰণনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Rain wets ground.",
+          "as": "বৰষুণে মাটি তিতায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Rain wets ground.",
+        "as": "বৰষুণে মাটি তিতায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ice cream sales rose, so drownings rose. Are ice creams the cause?",
+        "as": "আইচক্ৰীমৰ বিক্ৰী বাঢ়িল, গতিকে পানীত ডুবা বাঢ়িল। আইচক্ৰীম কাৰণনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Hot weather drives both.",
+          "as": "গৰমে দুয়োটা বঢ়ায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Hot weather drives both.",
+        "as": "গৰমে দুয়োটা বঢ়ায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs16.u3.q2",
+     "type": "tf",
+     "skill": "r-stcause",
+     "s": {
+      "en": "Two things rising together proves one causes the other.",
+      "as": "দুটা বস্তু একেলগে বাঢ়িলে এটা আনটোৰ কাৰণ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "A third factor may drive both.",
+      "as": "তৃতীয় কাৰক হ'ব পাৰে।"
+     }
+    },
+    {
+     "id": "rs16.u3.q3",
+     "type": "match",
+     "skill": "r-stcause",
+     "q": {
+      "en": "Match the cause to its effect",
+      "as": "কাৰণক ফলৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Heavy rain",
+        "as": "প্ৰবল বৰষুণ"
+       },
+       {
+        "en": "Flood",
+        "as": "বান"
+       }
+      ],
+      [
+       {
+        "en": "No sleep",
+        "as": "টোপনি নহ'লে"
+       },
+       {
+        "en": "Tiredness",
+        "as": "ভাগৰ"
+       }
+      ],
+      [
+       {
+        "en": "Friction",
+        "as": "ঘৰ্ষণ"
+       },
+       {
+        "en": "Heat",
+        "as": "তাপ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Cause comes first.",
+      "as": "কাৰণ আগতে।"
+     }
+    },
+    {
+     "id": "rs16.u3.q4",
+     "type": "order",
+     "skill": "r-stcause",
+     "q": {
+      "en": "Put cause before effect",
+      "as": "কাৰণ আগত, ফল পিছত"
+     },
+     "items": [
+      {
+       "en": "Clouds gather",
+       "as": "ডাৱৰ গোট খায়"
+      },
+      {
+       "en": "Rain falls",
+       "as": "বৰষুণ দিয়ে"
+      },
+      {
+       "en": "River rises",
+       "as": "নদী বাঢ়ে"
+      },
+      {
+       "en": "Fields flood",
+       "as": "পথাৰ বুৰে"
+      }
+     ],
+     "why": {
+      "en": "Time order.",
+      "as": "সময়ৰ ক্ৰম।"
+     }
+    },
+    {
+     "id": "rs16.u3.q5",
+     "type": "stepwise",
+     "skill": "r-stcause",
+     "q": {
+      "en": "Assertion: Water boils at a lower temperature on hills. Reason: Air pressure is lower there. Does the reason explain it?",
+      "as": "দাবী: পাহাৰত পানী কম তাপত উতলে। কাৰণ: তাত বায়ুৰ চাপ কম। কাৰণে বুজায়নে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        },
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Lower pressure lowers the boiling point.",
+        "as": "কম চাপে উতলা মাত্ৰা কমায়।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Lower pressure lowers the boiling point.",
+      "as": "কম চাপে উতলা মাত্ৰা কমায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Assertion: Water boils at a lower temperature on hills. Reason: Air pressure is lower there. Does the reason explain it?",
+        "as": "দাবী: পাহাৰত পানী কম তাপত উতলে। কাৰণ: তাত বায়ুৰ চাপ কম। কাৰণে বুজায়নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Lower pressure lowers the boiling point.",
+          "as": "কম চাপে উতলা মাত্ৰা কমায়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Lower pressure lowers the boiling point.",
+        "as": "কম চাপে উতলা মাত্ৰা কমায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Assertion: Iron rusts in damp air. Reason: Iron is a metal. Does the reason explain it?",
+        "as": "দাবী: সেমেকা বায়ুত লোত মামৰে ধৰে। কাৰণ: লো ধাতু। কাৰণে বুজায়নে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Being a metal is not the reason.",
+          "as": "ধাতু হোৱাটো কাৰণ নহয়।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Being a metal is not the reason.",
+        "as": "ধাতু হোৱাটো কাৰণ নহয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Truth and lies",
+    "as": "সত্য আৰু মিছা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Assume one person tells the truth.",
+     "as": "এজনে সত্য কৈছে ধৰা।"
+    },
+    {
+     "en": "Follow what that forces.",
+     "as": "তাৰ ফল চোৱা।"
+    },
+    {
+     "en": "A contradiction rejects the guess.",
+     "as": "বিৰোধ হ'লে অনুমান বাদ।"
+    },
+    {
+     "en": "Sufficient means you can answer.",
+     "as": "পৰ্যাপ্ত মানে উত্তৰ দিব পাৰি।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs16.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "Guess and test",
+      "as": "অনুমান আৰু পৰীক্ষা"
+     },
+     "text": [
+      {
+       "en": "If only one speaks truly, try each person in turn until nothing clashes.",
+       "as": "এজনেহে সত্য কয় যদি, প্ৰতিজনক চোৱা, বিৰোধ নোহোৱালৈ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Assume A true",
+        "as": "A সত্য ধৰা"
+       },
+       {
+        "en": "Follow it",
+        "as": "অনুসৰণ"
+       },
+       {
+        "en": "Clash? Reject",
+        "as": "বিৰোধ? বাদ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Data sufficiency",
+      "as": "তথ্যৰ পৰ্যাপ্ততা"
+     },
+     "text": [
+      {
+       "en": "Do not solve fully. Ask only whether the data could fix one answer.",
+       "as": "সম্পূৰ্ণ সমাধান নকৰিবা। তথ্যই এটা উত্তৰ ঠিক কৰে নেকি সোধা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Data I alone",
+        "as": "কেৱল I"
+       },
+       {
+        "en": "Data II alone",
+        "as": "কেৱল II"
+       },
+       {
+        "en": "Both",
+        "as": "দুয়োটা"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs16.u4.q1",
+     "type": "stepwise",
+     "skill": "r-sttruth",
+     "q": {
+      "en": "Exactly one tells the truth. A: 'I did it.' B: 'A did not do it.' C: 'I did not do it.' Could A be the honest one?",
+      "as": "এজনেহে সত্য কৈছে। A: 'মই কৰিলোঁ।' B: 'A য়ে কৰা নাই।' C: 'মই কৰা নাই।' A সৎজন হ'ব পাৰেনে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "If A is honest, B is?",
+        "as": "A সৎ হ'লে B?"
+       },
+       "options": [
+        {
+         "en": "Lying",
+         "as": "মিছা"
+        },
+        {
+         "en": "Honest",
+         "as": "সৎ"
+        },
+        {
+         "en": "Unknown",
+         "as": "অজ্ঞাত"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "B contradicts A.",
+        "as": "B য়ে A ৰ বিৰোধ কৰে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Then C's words are?",
+        "as": "তেন্তে C ৰ কথা?"
+       },
+       "options": [
+        {
+         "en": "Unknown",
+         "as": "অজ্ঞাত"
+        },
+        {
+         "en": "A lie",
+         "as": "মিছা"
+        },
+        {
+         "en": "True as well",
+         "as": "সেইটোও সত্য"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "If A did it, then C did not.",
+        "as": "A য়ে কৰিলে C য়ে কৰা নাই।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So can A be the honest one?",
+        "as": "তেন্তে A সৎজন হ'ব পাৰেনে?"
+       },
+       "options": [
+        {
+         "en": "Unknown",
+         "as": "অজ্ঞাত"
+        },
+        {
+         "en": "Yes",
+         "as": "পাৰে"
+        },
+        {
+         "en": "No: two truths",
+         "as": "নোৱাৰে: দুটা সত্য"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Exactly one may be true.",
+        "as": "এটাহে সত্য হ'ব লাগে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "The guess gives two truths, so reject it and test the next person.",
+      "as": "অনুমানে দুটা সত্য দিয়ে, গতিকে বাদ দি পিছৰজনক চোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Exactly one tells the truth. A: 'I did it.' B: 'A did not do it.' C: 'I did not do it.' Could A be the honest one?",
+        "as": "এজনেহে সত্য কৈছে। A: 'মই কৰিলোঁ।' B: 'A য়ে কৰা নাই।' C: 'মই কৰা নাই।' A সৎজন হ'ব পাৰেনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "If A is honest, B is?",
+          "as": "A সৎ হ'লে B?"
+         },
+         "options": [
+          {
+           "en": "Lying",
+           "as": "মিছা"
+          },
+          {
+           "en": "Honest",
+           "as": "সৎ"
+          },
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "B contradicts A.",
+          "as": "B য়ে A ৰ বিৰোধ কৰে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Then C's words are?",
+          "as": "তেন্তে C ৰ কথা?"
+         },
+         "options": [
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          },
+          {
+           "en": "A lie",
+           "as": "মিছা"
+          },
+          {
+           "en": "True as well",
+           "as": "সেইটোও সত্য"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "If A did it, then C did not.",
+          "as": "A য়ে কৰিলে C য়ে কৰা নাই।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So can A be the honest one?",
+          "as": "তেন্তে A সৎজন হ'ব পাৰেনে?"
+         },
+         "options": [
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          },
+          {
+           "en": "Yes",
+           "as": "পাৰে"
+          },
+          {
+           "en": "No: two truths",
+           "as": "নোৱাৰে: দুটা সত্য"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Exactly one may be true.",
+          "as": "এটাহে সত্য হ'ব লাগে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The guess gives two truths, so reject it and test the next person.",
+        "as": "অনুমানে দুটা সত্য দিয়ে, গতিকে বাদ দি পিছৰজনক চোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Exactly one tells the truth. X: 'I did it.' Y: 'X did not do it.' Z: 'I did not do it.' Could X be the honest one?",
+        "as": "এজনেহে সত্য কৈছে। X: 'মই কৰিলোঁ।' Y: 'X য়ে কৰা নাই।' Z: 'মই কৰা নাই।' X সৎজন হ'ব পাৰেনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "If X is honest, Y is?",
+          "as": "X সৎ হ'লে Y?"
+         },
+         "options": [
+          {
+           "en": "Lying",
+           "as": "মিছা"
+          },
+          {
+           "en": "Honest",
+           "as": "সৎ"
+          },
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Y contradicts X.",
+          "as": "Y য়ে X ৰ বিৰোধ কৰে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Then Z's words are?",
+          "as": "তেন্তে Z ৰ কথা?"
+         },
+         "options": [
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          },
+          {
+           "en": "A lie",
+           "as": "মিছা"
+          },
+          {
+           "en": "True as well",
+           "as": "সেইটোও সত্য"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "If X did it, then Z did not.",
+          "as": "X য়ে কৰিলে Z য়ে কৰা নাই।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So can X be the honest one?",
+          "as": "তেন্তে X সৎজন হ'ব পাৰেনে?"
+         },
+         "options": [
+          {
+           "en": "Unknown",
+           "as": "অজ্ঞাত"
+          },
+          {
+           "en": "Yes",
+           "as": "পাৰে"
+          },
+          {
+           "en": "No: two truths",
+           "as": "নোৱাৰে: দুটা সত্য"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Exactly one may be true.",
+          "as": "এটাহে সত্য হ'ব লাগে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "The guess gives two truths, so reject it and test the next person.",
+        "as": "অনুমানে দুটা সত্য দিয়ে, গতিকে বাদ দি পিছৰজনক চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs16.u4.q2",
+     "type": "tf",
+     "skill": "r-sttruth",
+     "s": {
+      "en": "A contradiction rejects the guess that made it.",
+      "as": "বিৰোধে সেই অনুমান বাদ দিয়ে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Move to the next case.",
+      "as": "পিছৰ অৱস্থা চোৱা।"
+     }
+    },
+    {
+     "id": "rs16.u4.q3",
+     "type": "match",
+     "skill": "r-sttruth",
+     "q": {
+      "en": "Match the data question",
+      "as": "তথ্যৰ প্ৰশ্ন মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Is x even? x = 4",
+        "as": "x যুগ্ম? x = 4"
+       },
+       {
+        "en": "Sufficient",
+        "as": "পৰ্যাপ্ত"
+       }
+      ],
+      [
+       {
+        "en": "Is x even? x > 1",
+        "as": "x যুগ্ম? x > 1"
+       },
+       {
+        "en": "Not sufficient",
+        "as": "অপৰ্যাপ্ত"
+       }
+      ],
+      [
+       {
+        "en": "Find x. x + 1 = 3",
+        "as": "x উলিওৱা। x + 1 = 3"
+       },
+       {
+        "en": "Enough to solve",
+        "as": "সমাধান সম্ভৱ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Can it fix one answer?",
+      "as": "এটা উত্তৰ ঠিক কৰে?"
+     }
+    },
+    {
+     "id": "rs16.u4.q4",
+     "type": "order",
+     "skill": "r-sttruth",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Take one case",
+       "as": "এটা অৱস্থা"
+      },
+      {
+       "en": "Follow each claim",
+       "as": "প্ৰতিটো দাবী"
+      },
+      {
+       "en": "Look for a clash",
+       "as": "বিৰোধ বিচাৰা"
+      },
+      {
+       "en": "Keep or reject",
+       "as": "ৰাখা বা বাদ"
+      }
+     ],
+     "why": {
+      "en": "One case at a time.",
+      "as": "এটা অৱস্থাকৈ।"
+     }
+    },
+    {
+     "id": "rs16.u4.q5",
+     "type": "stepwise",
+     "skill": "r-sttruth",
+     "q": {
+      "en": "Question: What is Ali's age? Data: Ali is 2 years older than Bina, who is 20. Is it enough?",
+      "as": "প্ৰশ্ন: আলীৰ বয়স কিমান? তথ্য: আলী বীণাতকৈ 2 বছৰ ডাঙৰ, বীণা 20। পৰ্যাপ্তনে?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Your decision?",
+        "as": "তোমাৰ সিদ্ধান্ত?"
+       },
+       "options": [
+        {
+         "en": "Both",
+         "as": "দুয়োটা"
+        },
+        {
+         "en": "Does not follow",
+         "as": "নোলায়"
+        },
+        {
+         "en": "Follows",
+         "as": "ওলায়"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Ali is 22.",
+        "as": "আলী 22।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Ali is 22.",
+      "as": "আলী 22।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Question: What is Ali's age? Data: Ali is 2 years older than Bina, who is 20. Is it enough?",
+        "as": "প্ৰশ্ন: আলীৰ বয়স কিমান? তথ্য: আলী বীণাতকৈ 2 বছৰ ডাঙৰ, বীণা 20। পৰ্যাপ্তনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Ali is 22.",
+          "as": "আলী 22।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Ali is 22.",
+        "as": "আলী 22।"
+       }
+      },
+      {
+       "q": {
+        "en": "Question: What is Ali's age? Data: Ali is older than Bina. Is it enough?",
+        "as": "প্ৰশ্ন: আলীৰ বয়স কিমান? তথ্য: আলী বীণাতকৈ ডাঙৰ। পৰ্যাপ্তনে?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Your decision?",
+          "as": "তোমাৰ সিদ্ধান্ত?"
+         },
+         "options": [
+          {
+           "en": "Follows",
+           "as": "ওলায়"
+          },
+          {
+           "en": "Does not follow",
+           "as": "নোলায়"
+          },
+          {
+           "en": "Both",
+           "as": "দুয়োটা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "No number is given.",
+          "as": "সংখ্যা নাই।"
+         }
+        }
+       ],
+       "why": {
+        "en": "No number is given.",
+        "as": "সংখ্যা নাই।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Statements test",
+   "as": "উক্তিৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs16.t.q1",
+    "type": "stepwise",
+    "skill": "r-stfollow",
+    "q": {
+     "en": "Statement: All clerks passed. Mina is a clerk. Conclusion: Mina passed.",
+     "as": "উক্তি: সকলো কেৰাণী উত্তীৰ্ণ। মিনা কেৰাণী। সিদ্ধান্ত: মিনা উত্তীৰ্ণ।"
+    },
+    "parts": [
+     {
+      "ask": {
+       "en": "Your decision?",
+       "as": "তোমাৰ সিদ্ধান্ত?"
+      },
+      "options": [
+       {
+        "en": "Does not follow",
+        "as": "নোলায়"
+       },
+       {
+        "en": "Follows",
+        "as": "ওলায়"
+       },
+       {
+        "en": "Both",
+        "as": "দুয়োটা"
+       }
+      ],
+      "answer": 1,
+      "note": {
+       "en": "Covered by 'all'.",
+       "as": "'সকলো'ত পৰে।"
+      }
+     }
+    ],
+    "why": {
+     "en": "Covered by 'all'.",
+     "as": "'সকলো'ত পৰে।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Statement: All clerks passed. Mina is a clerk. Conclusion: Mina passed.",
+       "as": "উক্তি: সকলো কেৰাণী উত্তীৰ্ণ। মিনা কেৰাণী। সিদ্ধান্ত: মিনা উত্তীৰ্ণ।"
+      },
+      "parts": [
+       {
+        "ask": {
+         "en": "Your decision?",
+         "as": "তোমাৰ সিদ্ধান্ত?"
+        },
+        "options": [
+         {
+          "en": "Does not follow",
+          "as": "নোলায়"
+         },
+         {
+          "en": "Follows",
+          "as": "ওলায়"
+         },
+         {
+          "en": "Both",
+          "as": "দুয়োটা"
+         }
+        ],
+        "answer": 1,
+        "note": {
+         "en": "Covered by 'all'.",
+         "as": "'সকলো'ত পৰে।"
+        }
+       }
+      ],
+      "why": {
+       "en": "Covered by 'all'.",
+       "as": "'সকলো'ত পৰে।"
+      }
+     },
+     {
+      "q": {
+       "en": "Statement: Some clerks passed. Conclusion: Mina the clerk passed.",
+       "as": "উক্তি: কিছুমান কেৰাণী উত্তীৰ্ণ। সিদ্ধান্ত: কেৰাণী মিনা উত্তীৰ্ণ।"
+      },
+      "parts": [
+       {
+        "ask": {
+         "en": "Your decision?",
+         "as": "তোমাৰ সিদ্ধান্ত?"
+        },
+        "options": [
+         {
+          "en": "Does not follow",
+          "as": "নোলায়"
+         },
+         {
+          "en": "Both",
+          "as": "দুয়োটা"
+         },
+         {
+          "en": "Follows",
+          "as": "ওলায়"
+         }
+        ],
+        "answer": 0,
+        "note": {
+         "en": "Mina may be outside the some.",
+         "as": "মিনা বাহিৰত হ'ব পাৰে।"
+        }
+       }
+      ],
+      "why": {
+       "en": "Mina may be outside the some.",
+       "as": "মিনা বাহিৰত হ'ব পাৰে।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs16.t.q2",
+    "type": "tf",
+    "skill": "r-stfollow",
+    "s": {
+     "en": "Judge using the given words only.",
+     "as": "দিয়া শব্দৰেই বিচাৰ কৰা।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs16.t.q3",
+    "type": "tf",
+    "skill": "r-stassume",
+    "s": {
+     "en": "An assumption can be left unsaid.",
+     "as": "ধাৰণা নকোৱাকৈ থাকিব পাৰে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It usually is.",
+     "as": "সাধাৰণতে থাকে।"
+    }
+   },
+   {
+    "id": "rs16.t.q4",
+    "type": "tf",
+    "skill": "r-stcause",
+    "s": {
+     "en": "Sales rising alongside rainfall proves rainfall causes sales.",
+     "as": "বৰষুণৰ লগে লগে বিক্ৰী বাঢ়িলে বৰষুণ কাৰণ।"
+    },
+    "answer": false,
+    "why": {
+     "en": "It may not.",
+     "as": "নহ'বও পাৰে।"
+    }
+   },
+   {
+    "id": "rs16.t.q5",
+    "type": "tf",
+    "skill": "r-sttruth",
+    "s": {
+     "en": "A contradiction rejects a guess.",
+     "as": "বিৰোধে অনুমান বাদ দিয়ে।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Yes.",
+     "as": "হয়।"
+    }
+   },
+   {
+    "id": "rs16.t.q6",
+    "type": "tf",
+    "skill": "r-sttruth",
+    "s": {
+     "en": "In data sufficiency you must always solve fully.",
+     "as": "তথ্যৰ পৰ্যাপ্ততাত সদায় সম্পূৰ্ণ সমাধান লাগে।"
+    },
+    "answer": false,
+    "why": {
+     "en": "You only ask if it could.",
+     "as": "সম্ভৱ নেকি সোধা।"
+    }
+   }
+  ]
+ }
+}

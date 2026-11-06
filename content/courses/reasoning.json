@@ -1,0 +1,421 @@
+{
+ "id": "reasoning",
+ "order": 0,
+ "title": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "eyebrow": {
+  "en": "See the rule",
+  "as": "নিয়মটো চিনা"
+ },
+ "subtitle": {
+  "en": "Stop memorising question types and learn the rule behind each puzzle",
+  "as": "প্ৰশ্নৰ ধৰণ মুখস্থ নকৰি প্ৰতিটো সাঁথৰৰ নিয়ম শিকা"
+ },
+ "tabs": [
+  "lessons",
+  "skills",
+  "profile"
+ ],
+ "bank": "content/questions/reasoning.json",
+ "skills": "content/skills/reasoning.json",
+ "kings": [
+  {
+   "n": 1,
+   "id": "reason-alphabet",
+   "name": {
+    "en": "Alphabet tools",
+    "as": "বৰ্ণমালাৰ কৌশল"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-01-alphabet"
+  },
+  {
+   "n": 2,
+   "id": "reason-number-series",
+   "name": {
+    "en": "Number series",
+    "as": "সংখ্যা শৃংখল"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-02-number-series"
+  },
+  {
+   "n": 3,
+   "id": "reason-letter-series",
+   "name": {
+    "en": "Letter series",
+    "as": "আখৰ শৃংখল"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-03-letter-series"
+  },
+  {
+   "n": 4,
+   "id": "reason-analogy",
+   "name": {
+    "en": "Analogy",
+    "as": "সাদৃশ্য"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-04-analogy"
+  },
+  {
+   "n": 5,
+   "id": "reason-odd-one-out",
+   "name": {
+    "en": "Odd one out",
+    "as": "বেলেগটো উলিওৱা"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-05-odd-one-out"
+  },
+  {
+   "n": 6,
+   "id": "reason-coding",
+   "name": {
+    "en": "Coding and decoding",
+    "as": "সংকেত আৰু সংকেত ভঙা"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-06-coding"
+  },
+  {
+   "n": 7,
+   "id": "reason-operators",
+   "name": {
+    "en": "Symbols and operators",
+    "as": "চিহ্ন আৰু প্ৰক্ৰিয়া"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "B",
+   "lesson": "rs-07-operators"
+  },
+  {
+   "n": 8,
+   "id": "reason-number-puzzles",
+   "name": {
+    "en": "Number puzzles",
+    "as": "সংখ্যাৰ সাঁথৰ"
+   },
+   "reign": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "face": "reasoning/patterns.webp",
+   "tier": "A",
+   "lesson": "rs-08-number-puzzles"
+  },
+  {
+   "n": 9,
+   "id": "reason-direction",
+   "name": {
+    "en": "Direction sense",
+    "as": "দিশ জ্ঞান"
+   },
+   "reign": {
+    "en": "Position",
+    "as": "অৱস্থান"
+   },
+   "face": "reasoning/position.webp",
+   "tier": "B",
+   "lesson": "rs-09-direction"
+  },
+  {
+   "n": 10,
+   "id": "reason-blood-relations",
+   "name": {
+    "en": "Blood relations",
+    "as": "তেজৰ সম্পৰ্ক"
+   },
+   "reign": {
+    "en": "Position",
+    "as": "অৱস্থান"
+   },
+   "face": "reasoning/position.webp",
+   "tier": "B",
+   "lesson": "rs-10-blood-relations"
+  },
+  {
+   "n": 11,
+   "id": "reason-ranking",
+   "name": {
+    "en": "Ranking and order",
+    "as": "স্থান আৰু ক্ৰম"
+   },
+   "reign": {
+    "en": "Position",
+    "as": "অৱস্থান"
+   },
+   "face": "reasoning/position.webp",
+   "tier": "B",
+   "lesson": "rs-11-ranking"
+  },
+  {
+   "n": 12,
+   "id": "reason-arrangement",
+   "name": {
+    "en": "Arrangements",
+    "as": "সজ্জা"
+   },
+   "reign": {
+    "en": "Position",
+    "as": "অৱস্থান"
+   },
+   "face": "reasoning/position.webp",
+   "tier": "B",
+   "lesson": "rs-12-arrangement"
+  },
+  {
+   "n": 13,
+   "id": "reason-calendar-clock",
+   "name": {
+    "en": "Calendar and clocks",
+    "as": "কেলেণ্ডাৰ আৰু ঘড়ী"
+   },
+   "reign": {
+    "en": "Position",
+    "as": "অৱস্থান"
+   },
+   "face": "reasoning/position.webp",
+   "tier": "B",
+   "lesson": "rs-13-calendar-clock"
+  },
+  {
+   "n": 14,
+   "id": "reason-venn",
+   "name": {
+    "en": "Venn diagrams",
+    "as": "ভেন চিত্ৰ"
+   },
+   "reign": {
+    "en": "Logic",
+    "as": "যুক্তি"
+   },
+   "face": "reasoning/logic.webp",
+   "tier": "B",
+   "lesson": "rs-14-venn"
+  },
+  {
+   "n": 15,
+   "id": "reason-syllogism",
+   "name": {
+    "en": "Syllogisms",
+    "as": "ন্যায়"
+   },
+   "reign": {
+    "en": "Logic",
+    "as": "যুক্তি"
+   },
+   "face": "reasoning/logic.webp",
+   "tier": "C",
+   "lesson": "rs-15-syllogism"
+  },
+  {
+   "n": 16,
+   "id": "reason-statements",
+   "name": {
+    "en": "Statements and conclusions",
+    "as": "উক্তি আৰু সিদ্ধান্ত"
+   },
+   "reign": {
+    "en": "Logic",
+    "as": "যুক্তি"
+   },
+   "face": "reasoning/logic.webp",
+   "tier": "B",
+   "lesson": "rs-16-statements"
+  },
+  {
+   "n": 17,
+   "id": "reason-figure-patterns",
+   "name": {
+    "en": "Figure patterns",
+    "as": "চিত্ৰৰ আৰ্হি"
+   },
+   "reign": {
+    "en": "Figures",
+    "as": "চিত্ৰ"
+   },
+   "face": "reasoning/figures.webp",
+   "tier": "B",
+   "lesson": "rs-17-figure-patterns"
+  },
+  {
+   "n": 18,
+   "id": "reason-mirror-fold",
+   "name": {
+    "en": "Mirrors and folding",
+    "as": "দাপোণ আৰু ভাঁজ"
+   },
+   "reign": {
+    "en": "Figures",
+    "as": "চিত্ৰ"
+   },
+   "face": "reasoning/figures.webp",
+   "tier": "B",
+   "lesson": "rs-18-mirror-fold"
+  },
+  {
+   "n": 19,
+   "id": "reason-cube-count",
+   "name": {
+    "en": "Cubes and counting",
+    "as": "ঘনক আৰু গণনা"
+   },
+   "reign": {
+    "en": "Figures",
+    "as": "চিত্ৰ"
+   },
+   "face": "reasoning/figures.webp",
+   "tier": "B",
+   "lesson": "rs-19-cube-count"
+  },
+  {
+   "n": 20,
+   "id": "reason-number-figures",
+   "name": {
+    "en": "Numbers in figures",
+    "as": "চিত্ৰত সংখ্যা"
+   },
+   "reign": {
+    "en": "Figures",
+    "as": "চিত্ৰ"
+   },
+   "face": "reasoning/figures.webp",
+   "tier": "B",
+   "lesson": "rs-20-number-figures"
+  },
+  {
+   "n": 21,
+   "id": "reason-data",
+   "name": {
+    "en": "Tables and charts",
+    "as": "তালিকা আৰু লেখ"
+   },
+   "reign": {
+    "en": "APSC aptitude",
+    "as": "APSC যোগ্যতা"
+   },
+   "face": "reasoning/aptitude.webp",
+   "tier": "B",
+   "lesson": "rs-21-data"
+  },
+  {
+   "n": 22,
+   "id": "reason-communication",
+   "name": {
+    "en": "Communication",
+    "as": "যোগাযোগ"
+   },
+   "reign": {
+    "en": "APSC aptitude",
+    "as": "APSC যোগ্যতা"
+   },
+   "face": "reasoning/aptitude.webp",
+   "tier": "A",
+   "lesson": "rs-22-communication"
+  },
+  {
+   "n": 23,
+   "id": "reason-decisions",
+   "name": {
+    "en": "Decision making",
+    "as": "সিদ্ধান্ত গ্ৰহণ"
+   },
+   "reign": {
+    "en": "APSC aptitude",
+    "as": "APSC যোগ্যতা"
+   },
+   "face": "reasoning/aptitude.webp",
+   "tier": "A",
+   "lesson": "rs-23-decisions"
+  }
+ ],
+ "eras": [
+  {
+   "id": "r-patterns",
+   "title": {
+    "en": "Patterns",
+    "as": "আৰ্হি"
+   },
+   "from": 1,
+   "to": 8
+  },
+  {
+   "id": "r-position",
+   "title": {
+    "en": "Position",
+    "as": "অৱস্থান"
+   },
+   "from": 9,
+   "to": 13
+  },
+  {
+   "id": "r-logic",
+   "title": {
+    "en": "Logic",
+    "as": "যুক্তি"
+   },
+   "from": 14,
+   "to": 16
+  },
+  {
+   "id": "r-figures",
+   "title": {
+    "en": "Figures",
+    "as": "চিত্ৰ"
+   },
+   "from": 17,
+   "to": 20
+  },
+  {
+   "id": "r-aptitude",
+   "title": {
+    "en": "APSC aptitude",
+    "as": "APSC যোগ্যতা"
+   },
+   "from": 21,
+   "to": 23
+  }
+ ],
+ "eraWord": {
+  "en": "part",
+  "as": "ভাগ"
+ }
+}

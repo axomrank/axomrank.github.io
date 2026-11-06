@@ -1,0 +1,1735 @@
+{
+ "id": "rs-21-data",
+ "course": "reasoning",
+ "no": 21,
+ "version": 1,
+ "eyebrow": {
+  "en": "Reasoning",
+  "as": "যুক্তি"
+ },
+ "king": {
+  "en": "Tables and charts",
+  "as": "তালিকা আৰু লেখ"
+ },
+ "reign": {
+  "en": "Tables, bars, shares, change",
+  "as": "তালিকা, বাৰ, ভাগ, সলনি"
+ },
+ "portrait": "reasoning/aptitude.webp",
+ "sources": [
+  {
+   "title": "Axomrank original puzzles",
+   "url": "",
+   "used_for": "All questions and numbers are original. Patterns were studied from past papers; no question, word list or figure was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_reasoning_course.py and rechecked by scripts/check_reasoning.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Read before you calculate",
+    "as": "গণনাৰ আগতে পঢ়া"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Read the title first.",
+     "as": "প্ৰথমে শিৰোনাম।"
+    },
+    {
+     "en": "Check the units.",
+     "as": "একক চোৱা।"
+    },
+    {
+     "en": "Find the row, then the column.",
+     "as": "শাৰী, তাৰ পিছত স্তম্ভ।"
+    },
+    {
+     "en": "Only then calculate.",
+     "as": "তাৰ পিছত গণনা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs21.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Headings first",
+      "as": "শিৰোনাম আগতে"
+     },
+     "text": [
+      {
+       "en": "Most table errors come from misreading a heading, not from the arithmetic.",
+       "as": "তালিকাৰ বেছিভাগ ভুল শিৰোনামৰ, অংকৰ নহয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Title",
+        "as": "শিৰোনাম"
+       },
+       {
+        "en": "Unit",
+        "as": "একক"
+       },
+       {
+        "en": "Row and column",
+        "as": "শাৰী আৰু স্তম্ভ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Watch the unit",
+      "as": "একক চোৱা"
+     },
+     "text": [
+      {
+       "en": "'In thousands' turns 42 into 42,000.",
+       "as": "'হাজাৰত' হ'লে 42 মানে 42,000।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "in thousands",
+        "as": "হাজাৰত"
+       },
+       {
+        "en": "42,000",
+        "as": "42,000"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u1.q1",
+     "type": "solve",
+     "skill": "r-dtable",
+     "q": {
+      "en": "Monthly sales in units. Asha 30, Bina 45, Rita 25. What did Bina sell?",
+      "as": "মাহেকীয়া বিক্ৰী। Asha 30, Bina 45, Rita 25। Bina কিমান বিক্ৰী কৰিলে?"
+     },
+     "answer": "45",
+     "why": {
+      "en": "Read the row.",
+      "as": "শাৰী পঢ়া।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Monthly sales in units. Asha 30, Bina 45, Rita 25. What did Bina sell?",
+        "as": "মাহেকীয়া বিক্ৰী। Asha 30, Bina 45, Rita 25। Bina কিমান বিক্ৰী কৰিলে?"
+       },
+       "answer": "45",
+       "why": {
+        "en": "Read the row.",
+        "as": "শাৰী পঢ়া।"
+       }
+      },
+      {
+       "q": {
+        "en": "Monthly sales in units. Ali 52, Ravi 38, Sam 41. What did Sam sell?",
+        "as": "মাহেকীয়া বিক্ৰী। Ali 52, Ravi 38, Sam 41। Sam কিমান বিক্ৰী কৰিলে?"
+       },
+       "answer": "41",
+       "why": {
+        "en": "Read the row.",
+        "as": "শাৰী পঢ়া।"
+       }
+      },
+      {
+       "q": {
+        "en": "Monthly sales in units. Jyoti 60, Mina 75. What did Jyoti sell?",
+        "as": "মাহেকীয়া বিক্ৰী। Jyoti 60, Mina 75। Jyoti কিমান বিক্ৰী কৰিলে?"
+       },
+       "answer": "60",
+       "why": {
+        "en": "Read the row.",
+        "as": "শাৰী পঢ়া।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u1.q2",
+     "type": "solve",
+     "skill": "r-dtable",
+     "q": {
+      "en": "Three shops sold 24, 36 and 40. What is the total?",
+      "as": "তিনিখন দোকানত 24, 36, 40 বিক্ৰী। মুঠ কিমান?"
+     },
+     "answer": "100",
+     "why": {
+      "en": "Add the column.",
+      "as": "স্তম্ভ যোগ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Three shops sold 24, 36 and 40. What is the total?",
+        "as": "তিনিখন দোকানত 24, 36, 40 বিক্ৰী। মুঠ কিমান?"
+       },
+       "answer": "100",
+       "why": {
+        "en": "Add the column.",
+        "as": "স্তম্ভ যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three shops sold 120, 85 and 95. What is the total?",
+        "as": "তিনিখন দোকানত 120, 85, 95 বিক্ৰী। মুঠ কিমান?"
+       },
+       "answer": "300",
+       "why": {
+        "en": "Add the column.",
+        "as": "স্তম্ভ যোগ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Three shops sold 66, 34 and 50. What is the total?",
+        "as": "তিনিখন দোকানত 66, 34, 50 বিক্ৰী। মুঠ কিমান?"
+       },
+       "answer": "150",
+       "why": {
+        "en": "Add the column.",
+        "as": "স্তম্ভ যোগ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u1.q3",
+     "type": "tf",
+     "skill": "r-dtable",
+     "s": {
+      "en": "A table headed 'in thousands' showing 5 means 5,000.",
+      "as": "'হাজাৰত' তালিকাত 5 মানে 5,000।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Multiply by the unit.",
+      "as": "এককেৰে পূৰণ।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-units",
+       "why": {
+        "en": "Read the column heading: the table may be in thousands.",
+        "as": "স্তম্ভৰ শিৰোনাম পঢ়া: তালিকা হাজাৰত হ'ব পাৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u1.q4",
+     "type": "match",
+     "skill": "r-dtable",
+     "q": {
+      "en": "Match the entry to its value",
+      "as": "মানৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "7 in hundreds",
+        "as": "শতত 7"
+       },
+       {
+        "en": "700",
+        "as": "700"
+       }
+      ],
+      [
+       {
+        "en": "7 in thousands",
+        "as": "হাজাৰত 7"
+       },
+       {
+        "en": "7000",
+        "as": "7000"
+       }
+      ],
+      [
+       {
+        "en": "7 in lakhs",
+        "as": "লাখত 7"
+       },
+       {
+        "en": "700000",
+        "as": "700000"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Read the unit.",
+      "as": "একক পঢ়া।"
+     }
+    },
+    {
+     "id": "rs21.u1.q5",
+     "type": "order",
+     "skill": "r-dtable",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the title",
+       "as": "শিৰোনাম"
+      },
+      {
+       "en": "Note the unit",
+       "as": "একক"
+      },
+      {
+       "en": "Find the cell",
+       "as": "ঘৰ উলিওৱা"
+      },
+      {
+       "en": "Calculate",
+       "as": "গণনা"
+      }
+     ],
+     "why": {
+      "en": "Reading first.",
+      "as": "পঢ়া আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Reading charts",
+    "as": "লেখ পঢ়া"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Height shows the value.",
+     "as": "উচ্চতাই মান দেখুৱায়।"
+    },
+    {
+     "en": "Compare bars before reading numbers.",
+     "as": "সংখ্যাৰ আগতে বাৰ তুলনা।"
+    },
+    {
+     "en": "Rises sit between bars.",
+     "as": "বৃদ্ধি বাৰৰ মাজত।"
+    },
+    {
+     "en": "A line chart shows change over time.",
+     "as": "ৰেখা লেখে সময়ৰ সলনি দেখুৱায়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs21.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Bars compare, lines trend",
+      "as": "বাৰে তুলনা, ৰেখাই গতি"
+     },
+     "text": [
+      {
+       "en": "A bar chart compares groups. A line chart follows one thing through time.",
+       "as": "বাৰ লেখে গোট তুলনা কৰে। ৰেখা লেখে সময়ত অনুসৰণ কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "Bar: compare",
+        "as": "বাৰ: তুলনা"
+       },
+       {
+        "en": "Line: trend",
+        "as": "ৰেখা: গতি"
+       },
+       {
+        "en": "Pie: shares",
+        "as": "বৃত্ত: ভাগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Highest is not fastest",
+      "as": "ওখ মানে খৰ নহয়"
+     },
+     "text": [
+      {
+       "en": "The tallest bar shows the most. The steepest step shows the fastest rise.",
+       "as": "ওখ বাৰে বেছি দেখুৱায়। খৰ বৃদ্ধি বেলেগ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Highest",
+        "as": "আটাইতকৈ ওখ"
+       },
+       {
+        "en": "Largest rise",
+        "as": "বেছি বৃদ্ধি"
+       },
+       {
+        "en": "Different question",
+        "as": "বেলেগ প্ৰশ্ন"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u2.q1",
+     "type": "explore",
+     "skill": "r-dchart",
+     "q": {
+      "en": "Tap the year with the highest output.",
+      "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+     },
+     "widget": {
+      "kind": "bars",
+      "labels": [
+       "2020",
+       "2021",
+       "2022",
+       "2023"
+      ],
+      "vals": [
+       40,
+       65,
+       55,
+       30
+      ]
+     },
+     "target": 1,
+     "answerText": {
+      "en": "2021",
+      "as": "2021"
+     },
+     "why": {
+      "en": "2021 has the tallest bar.",
+      "as": "2021 ৰ বাৰ ওখ।"
+     },
+     "traps": [],
+     "variants": [
+      {
+       "q": {
+        "en": "Tap the year with the highest output.",
+        "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+       },
+       "widget": {
+        "kind": "bars",
+        "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023"
+        ],
+        "vals": [
+         40,
+         65,
+         55,
+         30
+        ]
+       },
+       "target": 1,
+       "answerText": {
+        "en": "2021",
+        "as": "2021"
+       },
+       "why": {
+        "en": "2021 has the tallest bar.",
+        "as": "2021 ৰ বাৰ ওখ।"
+       },
+       "traps": []
+      },
+      {
+       "q": {
+        "en": "Tap the year with the highest output.",
+        "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+       },
+       "widget": {
+        "kind": "bars",
+        "labels": [
+         "2019",
+         "2020",
+         "2021",
+         "2022"
+        ],
+        "vals": [
+         20,
+         35,
+         50,
+         45
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2021",
+        "as": "2021"
+       },
+       "why": {
+        "en": "2021 has the tallest bar.",
+        "as": "2021 ৰ বাৰ ওখ।"
+       },
+       "traps": []
+      }
+     ]
+    },
+    {
+     "id": "rs21.u2.q2",
+     "type": "explore",
+     "skill": "r-dchart",
+     "q": {
+      "en": "Tap the year with the largest rise from the year before.",
+      "as": "আগৰ বছৰৰ তুলনাত আটাইতকৈ বেছি বৃদ্ধিৰ বছৰ টিপা।"
+     },
+     "widget": {
+      "kind": "bars",
+      "labels": [
+       "2020",
+       "2021",
+       "2022",
+       "2023"
+      ],
+      "vals": [
+       30,
+       35,
+       60,
+       70
+      ]
+     },
+     "target": 2,
+     "answerText": {
+      "en": "2022",
+      "as": "2022"
+     },
+     "why": {
+      "en": "The rise of 25 is largest.",
+      "as": "25 বৃদ্ধি আটাইতকৈ বেছি।"
+     },
+     "traps": [
+      {
+       "val": 3,
+       "tag": "r-m-base",
+       "why": {
+        "en": "The tallest bar need not have the biggest rise.",
+        "as": "ওখ বাৰ মানে বেছি বৃদ্ধি নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Tap the year with the largest rise from the year before.",
+        "as": "আগৰ বছৰৰ তুলনাত আটাইতকৈ বেছি বৃদ্ধিৰ বছৰ টিপা।"
+       },
+       "widget": {
+        "kind": "bars",
+        "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023"
+        ],
+        "vals": [
+         30,
+         35,
+         60,
+         70
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2022",
+        "as": "2022"
+       },
+       "why": {
+        "en": "The rise of 25 is largest.",
+        "as": "25 বৃদ্ধি আটাইতকৈ বেছি।"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-base",
+         "why": {
+          "en": "The tallest bar need not have the biggest rise.",
+          "as": "ওখ বাৰ মানে বেছি বৃদ্ধি নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tap the year with the largest rise from the year before.",
+        "as": "আগৰ বছৰৰ তুলনাত আটাইতকৈ বেছি বৃদ্ধিৰ বছৰ টিপা।"
+       },
+       "widget": {
+        "kind": "bars",
+        "labels": [
+         "2019",
+         "2020",
+         "2021",
+         "2022"
+        ],
+        "vals": [
+         50,
+         45,
+         70,
+         80
+        ]
+       },
+       "target": 2,
+       "answerText": {
+        "en": "2021",
+        "as": "2021"
+       },
+       "why": {
+        "en": "The rise of 25 is largest.",
+        "as": "25 বৃদ্ধি আটাইতকৈ বেছি।"
+       },
+       "traps": [
+        {
+         "val": 3,
+         "tag": "r-m-base",
+         "why": {
+          "en": "The tallest bar need not have the biggest rise.",
+          "as": "ওখ বাৰ মানে বেছি বৃদ্ধি নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs21.u2.q3",
+     "type": "tf",
+     "skill": "r-dchart",
+     "s": {
+      "en": "The tallest bar always has the biggest rise.",
+      "as": "ওখ বাৰত সদায় বেছি বৃদ্ধি।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Rise compares neighbours.",
+      "as": "বৃদ্ধি কাষৰ বাৰৰ তুলনা।"
+     }
+    },
+    {
+     "id": "rs21.u2.q4",
+     "type": "match",
+     "skill": "r-dchart",
+     "q": {
+      "en": "Match the chart to its job",
+      "as": "লেখক কামৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Bar chart",
+        "as": "বাৰ লেখ"
+       },
+       {
+        "en": "Compare groups",
+        "as": "গোট তুলনা"
+       }
+      ],
+      [
+       {
+        "en": "Line chart",
+        "as": "ৰেখা লেখ"
+       },
+       {
+        "en": "Trend over time",
+        "as": "সময়ৰ গতি"
+       }
+      ],
+      [
+       {
+        "en": "Pie chart",
+        "as": "বৃত্ত লেখ"
+       },
+       {
+        "en": "Parts of a whole",
+        "as": "গোটাৰ অংশ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each has a job.",
+      "as": "প্ৰতিটোৰ কাম আছে।"
+     }
+    },
+    {
+     "id": "rs21.u2.q5",
+     "type": "order",
+     "skill": "r-dchart",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Read the axes",
+       "as": "অক্ষ পঢ়া"
+      },
+      {
+       "en": "Note the unit",
+       "as": "একক"
+      },
+      {
+       "en": "Compare bars",
+       "as": "বাৰ তুলনা"
+      },
+      {
+       "en": "Answer",
+       "as": "উত্তৰ"
+      }
+     ],
+     "why": {
+      "en": "Axes first.",
+      "as": "অক্ষ আগতে।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Parts of a whole",
+    "as": "গোটাৰ অংশ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "All shares add to 100%.",
+     "as": "সকলো ভাগৰ যোগফল 100%।"
+    },
+    {
+     "en": "Share value = total × percent ÷ 100.",
+     "as": "ভাগ = মুঠ × শতাংশ ÷ 100।"
+    },
+    {
+     "en": "A full circle is 360°.",
+     "as": "পূৰ্ণ বৃত্ত 360°।"
+    },
+    {
+     "en": "1% of a circle is 3.6°.",
+     "as": "বৃত্তৰ 1% = 3.6°।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs21.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "A whole is 100",
+      "as": "গোটা মানে 100"
+     },
+     "text": [
+      {
+       "en": "If three shares are known, the fourth is what is left of 100.",
+       "as": "তিনিটা ভাগ জানিলে চতুৰ্থটো 100 ৰ বাকী।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Degrees to percent",
+      "as": "ডিগ্ৰীৰ পৰা শতাংশ"
+     },
+     "text": [
+      {
+       "en": "A 90° slice is a quarter of 360°, so 25%.",
+       "as": "90° মানে 360° ৰ চতুৰ্থাংশ, 25%।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "90°",
+        "as": "90°"
+       },
+       {
+        "en": "÷ 360",
+        "as": "÷ 360"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u3.q1",
+     "type": "solve",
+     "skill": "r-dpie",
+     "q": {
+      "en": "A budget of 800 gives 25% to health. How much is that?",
+      "as": "800 ৰ বাজেটৰ 25% স্বাস্থ্যলৈ। কিমান?"
+     },
+     "answer": "200",
+     "why": {
+      "en": "800 × 25 ÷ 100.",
+      "as": "800 × 25 ÷ 100।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A budget of 800 gives 25% to health. How much is that?",
+        "as": "800 ৰ বাজেটৰ 25% স্বাস্থ্যলৈ। কিমান?"
+       },
+       "answer": "200",
+       "why": {
+        "en": "800 × 25 ÷ 100.",
+        "as": "800 × 25 ÷ 100।"
+       }
+      },
+      {
+       "q": {
+        "en": "A budget of 1200 gives 15% to health. How much is that?",
+        "as": "1200 ৰ বাজেটৰ 15% স্বাস্থ্যলৈ। কিমান?"
+       },
+       "answer": "180",
+       "why": {
+        "en": "1200 × 15 ÷ 100.",
+        "as": "1200 × 15 ÷ 100।"
+       }
+      },
+      {
+       "q": {
+        "en": "A budget of 2000 gives 30% to health. How much is that?",
+        "as": "2000 ৰ বাজেটৰ 30% স্বাস্থ্যলৈ। কিমান?"
+       },
+       "answer": "600",
+       "why": {
+        "en": "2000 × 30 ÷ 100.",
+        "as": "2000 × 30 ÷ 100।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u3.q2",
+     "type": "solve",
+     "skill": "r-dpie",
+     "q": {
+      "en": "Shares are 30%, 25% and 20%. What is the remaining share?",
+      "as": "ভাগ 30%, 25%, 20%। বাকী ভাগ কিমান?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "Shares add to 100.",
+      "as": "ভাগৰ যোগফল 100।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Shares are 30%, 25% and 20%. What is the remaining share?",
+        "as": "ভাগ 30%, 25%, 20%। বাকী ভাগ কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Shares add to 100.",
+        "as": "ভাগৰ যোগফল 100।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shares are 40%, 15% and 10%. What is the remaining share?",
+        "as": "ভাগ 40%, 15%, 10%। বাকী ভাগ কিমান?"
+       },
+       "answer": "35",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Shares add to 100.",
+        "as": "ভাগৰ যোগফল 100।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shares are 35%, 35% and 5%. What is the remaining share?",
+        "as": "ভাগ 35%, 35%, 5%। বাকী ভাগ কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Shares add to 100.",
+        "as": "ভাগৰ যোগফল 100।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u3.q3",
+     "type": "tf",
+     "skill": "r-dpie",
+     "s": {
+      "en": "A 180° slice is 50% of a pie chart.",
+      "as": "বৃত্ত লেখৰ 180° মানে 50%।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Half of 360°.",
+      "as": "360° ৰ আধা।"
+     }
+    },
+    {
+     "id": "rs21.u3.q4",
+     "type": "match",
+     "skill": "r-dpie",
+     "q": {
+      "en": "Match the slice to its share",
+      "as": "খণ্ডক ভাগৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "90°",
+        "as": "90°"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       }
+      ],
+      [
+       {
+        "en": "36°",
+        "as": "36°"
+       },
+       {
+        "en": "10%",
+        "as": "10%"
+       }
+      ],
+      [
+       {
+        "en": "72°",
+        "as": "72°"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide by 3.6.",
+      "as": "3.6 ৰে হৰণ।"
+     }
+    },
+    {
+     "id": "rs21.u3.q5",
+     "type": "order",
+     "skill": "r-dpie",
+     "q": {
+      "en": "Smallest slice first",
+      "as": "সৰু খণ্ড আগতে"
+     },
+     "items": [
+      {
+       "en": "10%",
+       "as": "10%"
+      },
+      {
+       "en": "25%",
+       "as": "25%"
+      },
+      {
+       "en": "50%",
+       "as": "50%"
+      },
+      {
+       "en": "75%",
+       "as": "75%"
+      }
+     ],
+     "why": {
+      "en": "Ascending.",
+      "as": "উৰ্ধ্বক্ৰম।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Rise and fall",
+    "as": "বৃদ্ধি আৰু হ্ৰাস"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Change = new − old.",
+     "as": "সলনি = নতুন − পুৰণি।"
+    },
+    {
+     "en": "Percent change uses the old value.",
+     "as": "শতাংশ সলনিত পুৰণি মান।"
+    },
+    {
+     "en": "Average = total ÷ count.",
+     "as": "গড় = মুঠ ÷ সংখ্যা।"
+    },
+    {
+     "en": "Check the base year.",
+     "as": "ভেটি বছৰ চোৱা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rs21.u4.s1",
+     "type": "story",
+     "title": {
+      "en": "The base is the start",
+      "as": "ভেটি আৰম্ভণি"
+     },
+     "text": [
+      {
+       "en": "From 40 to 50 is a rise of 10 on a base of 40, so 25%.",
+       "as": "40 ৰ পৰা 50 মানে 40 ৰ ওপৰত 10, 25%।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "50 − 40",
+        "as": "50 − 40"
+       },
+       {
+        "en": "10 ÷ 40",
+        "as": "10 ÷ 40"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u4.s2",
+     "type": "story",
+     "title": {
+      "en": "Averages",
+      "as": "গড়"
+     },
+     "text": [
+      {
+       "en": "Add the values and divide by how many there are.",
+       "as": "মান যোগ কৰি সংখ্যাৰে হৰণ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Add",
+        "as": "যোগ"
+       },
+       {
+        "en": "Count",
+        "as": "গণনা"
+       },
+       {
+        "en": "Divide",
+        "as": "হৰণ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "rs21.u4.q1",
+     "type": "solve",
+     "skill": "r-dchange",
+     "q": {
+      "en": "Sales went from 40 to 50. What is the percent rise?",
+      "as": "বিক্ৰী 40 ৰ পৰা 50 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "10 ÷ 40 × 100.",
+      "as": "10 ÷ 40 × 100।"
+     },
+     "traps": [
+      {
+       "ans": "20",
+       "tag": "r-m-base",
+       "why": {
+        "en": "Percent change divides by the starting value.",
+        "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Sales went from 40 to 50. What is the percent rise?",
+        "as": "বিক্ৰী 40 ৰ পৰা 50 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "10 ÷ 40 × 100.",
+        "as": "10 ÷ 40 × 100।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "r-m-base",
+         "why": {
+          "en": "Percent change divides by the starting value.",
+          "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Sales went from 80 to 100. What is the percent rise?",
+        "as": "বিক্ৰী 80 ৰ পৰা 100 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "20 ÷ 80 × 100.",
+        "as": "20 ÷ 80 × 100।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "r-m-base",
+         "why": {
+          "en": "Percent change divides by the starting value.",
+          "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Sales went from 200 to 250. What is the percent rise?",
+        "as": "বিক্ৰী 200 ৰ পৰা 250 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "50 ÷ 200 × 100.",
+        "as": "50 ÷ 200 × 100।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "r-m-base",
+         "why": {
+          "en": "Percent change divides by the starting value.",
+          "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Sales went from 50 to 60. What is the percent rise?",
+        "as": "বিক্ৰী 50 ৰ পৰা 60 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "10 ÷ 50 × 100.",
+        "as": "10 ÷ 50 × 100।"
+       },
+       "traps": [
+        {
+         "ans": "16",
+         "tag": "r-m-base",
+         "why": {
+          "en": "Percent change divides by the starting value.",
+          "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "rs21.u4.q2",
+     "type": "solve",
+     "skill": "r-dchange",
+     "q": {
+      "en": "Yearly output was 30, 40, 50. What is the average?",
+      "as": "বছৰেকীয়া উৎপাদন 30, 40, 50। গড় কিমান?"
+     },
+     "answer": "40",
+     "why": {
+      "en": "120 ÷ 3.",
+      "as": "120 ÷ 3।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Yearly output was 30, 40, 50. What is the average?",
+        "as": "বছৰেকীয়া উৎপাদন 30, 40, 50। গড় কিমান?"
+       },
+       "answer": "40",
+       "why": {
+        "en": "120 ÷ 3.",
+        "as": "120 ÷ 3।"
+       }
+      },
+      {
+       "q": {
+        "en": "Yearly output was 20, 25, 30, 45. What is the average?",
+        "as": "বছৰেকীয়া উৎপাদন 20, 25, 30, 45। গড় কিমান?"
+       },
+       "answer": "30",
+       "why": {
+        "en": "120 ÷ 4.",
+        "as": "120 ÷ 4।"
+       }
+      },
+      {
+       "q": {
+        "en": "Yearly output was 60, 70, 80. What is the average?",
+        "as": "বছৰেকীয়া উৎপাদন 60, 70, 80। গড় কিমান?"
+       },
+       "answer": "70",
+       "why": {
+        "en": "210 ÷ 3.",
+        "as": "210 ÷ 3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u4.q3",
+     "type": "tf",
+     "skill": "r-dchange",
+     "s": {
+      "en": "A rise from 50 to 100 is a 100% rise.",
+      "as": "50 ৰ পৰা 100 মানে 100% বৃদ্ধি।"
+     },
+     "answer": true,
+     "why": {
+      "en": "It doubled.",
+      "as": "দুগুণ।"
+     },
+     "traps": [
+      {
+       "opt": false,
+       "tag": "r-m-base",
+       "why": {
+        "en": "Percent change divides by the starting value.",
+        "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "rs21.u4.q4",
+     "type": "match",
+     "skill": "r-dchange",
+     "q": {
+      "en": "Match the change to its percent",
+      "as": "সলনিক শতাংশৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "20 to 30",
+        "as": "20 to 30"
+       },
+       {
+        "en": "50%",
+        "as": "50%"
+       }
+      ],
+      [
+       {
+        "en": "40 to 44",
+        "as": "40 to 44"
+       },
+       {
+        "en": "10%",
+        "as": "10%"
+       }
+      ],
+      [
+       {
+        "en": "10 to 40",
+        "as": "10 to 40"
+       },
+       {
+        "en": "300%",
+        "as": "300%"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide by the start.",
+      "as": "আৰম্ভণিৰে হৰণ।"
+     }
+    },
+    {
+     "id": "rs21.u4.q5",
+     "type": "order",
+     "skill": "r-dchange",
+     "q": {
+      "en": "Put the method in order",
+      "as": "পদ্ধতি ক্ৰমে সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Find the change",
+       "as": "সলনি"
+      },
+      {
+       "en": "Divide by the start",
+       "as": "আৰম্ভণিৰে হৰণ"
+      },
+      {
+       "en": "Multiply by 100",
+       "as": "100 ৰে পূৰণ"
+      },
+      {
+       "en": "Add the % sign",
+       "as": "% দিয়া"
+      }
+     ],
+     "why": {
+      "en": "Base is the start.",
+      "as": "ভেটি আৰম্ভণি।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Data test",
+   "as": "তথ্যৰ পৰীক্ষা"
+  },
+  "steps": [
+   {
+    "id": "rs21.t.q1",
+    "type": "explore",
+    "skill": "r-dchart",
+    "q": {
+     "en": "Tap the year with the highest output.",
+     "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+    },
+    "widget": {
+     "kind": "bars",
+     "labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "vals": [
+      15,
+      40,
+      25,
+      30
+     ]
+    },
+    "target": 1,
+    "answerText": {
+     "en": "B",
+     "as": "B"
+    },
+    "why": {
+     "en": "B has the tallest bar.",
+     "as": "B ৰ বাৰ ওখ।"
+    },
+    "traps": [],
+    "variants": [
+     {
+      "q": {
+       "en": "Tap the year with the highest output.",
+       "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+      },
+      "widget": {
+       "kind": "bars",
+       "labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+       ],
+       "vals": [
+        15,
+        40,
+        25,
+        30
+       ]
+      },
+      "target": 1,
+      "answerText": {
+       "en": "B",
+       "as": "B"
+      },
+      "why": {
+       "en": "B has the tallest bar.",
+       "as": "B ৰ বাৰ ওখ।"
+      },
+      "traps": []
+     },
+     {
+      "q": {
+       "en": "Tap the year with the highest output.",
+       "as": "আটাইতকৈ বেছি উৎপাদনৰ বছৰ টিপা।"
+      },
+      "widget": {
+       "kind": "bars",
+       "labels": [
+        "P",
+        "Q",
+        "R",
+        "S"
+       ],
+       "vals": [
+        60,
+        20,
+        45,
+        50
+       ]
+      },
+      "target": 0,
+      "answerText": {
+       "en": "P",
+       "as": "P"
+      },
+      "why": {
+       "en": "P has the tallest bar.",
+       "as": "P ৰ বাৰ ওখ।"
+      },
+      "traps": []
+     }
+    ]
+   },
+   {
+    "id": "rs21.t.q2",
+    "type": "solve",
+    "skill": "r-dpie",
+    "q": {
+     "en": "A budget of 600 gives 20% to health. How much is that?",
+     "as": "600 ৰ বাজেটৰ 20% স্বাস্থ্যলৈ। কিমান?"
+    },
+    "answer": "120",
+    "why": {
+     "en": "600 × 20 ÷ 100.",
+     "as": "600 × 20 ÷ 100।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "A budget of 600 gives 20% to health. How much is that?",
+       "as": "600 ৰ বাজেটৰ 20% স্বাস্থ্যলৈ। কিমান?"
+      },
+      "answer": "120",
+      "why": {
+       "en": "600 × 20 ÷ 100.",
+       "as": "600 × 20 ÷ 100।"
+      }
+     },
+     {
+      "q": {
+       "en": "A budget of 1500 gives 40% to health. How much is that?",
+       "as": "1500 ৰ বাজেটৰ 40% স্বাস্থ্যলৈ। কিমান?"
+      },
+      "answer": "600",
+      "why": {
+       "en": "1500 × 40 ÷ 100.",
+       "as": "1500 × 40 ÷ 100।"
+      }
+     }
+    ]
+   },
+   {
+    "id": "rs21.t.q3",
+    "type": "solve",
+    "skill": "r-dchange",
+    "q": {
+     "en": "Sales went from 25 to 30. What is the percent rise?",
+     "as": "বিক্ৰী 25 ৰ পৰা 30 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+    },
+    "answer": "20",
+    "suffix": {
+     "en": "%",
+     "as": "%"
+    },
+    "why": {
+     "en": "5 ÷ 25 × 100.",
+     "as": "5 ÷ 25 × 100।"
+    },
+    "traps": [
+     {
+      "ans": "16",
+      "tag": "r-m-base",
+      "why": {
+       "en": "Percent change divides by the starting value.",
+       "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Sales went from 25 to 30. What is the percent rise?",
+       "as": "বিক্ৰী 25 ৰ পৰা 30 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+      },
+      "answer": "20",
+      "suffix": {
+       "en": "%",
+       "as": "%"
+      },
+      "why": {
+       "en": "5 ÷ 25 × 100.",
+       "as": "5 ÷ 25 × 100।"
+      },
+      "traps": [
+       {
+        "ans": "16",
+        "tag": "r-m-base",
+        "why": {
+         "en": "Percent change divides by the starting value.",
+         "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Sales went from 60 to 90. What is the percent rise?",
+       "as": "বিক্ৰী 60 ৰ পৰা 90 হ'ল। শতাংশ বৃদ্ধি কিমান?"
+      },
+      "answer": "50",
+      "suffix": {
+       "en": "%",
+       "as": "%"
+      },
+      "why": {
+       "en": "30 ÷ 60 × 100.",
+       "as": "30 ÷ 60 × 100।"
+      },
+      "traps": [
+       {
+        "ans": "33",
+        "tag": "r-m-base",
+        "why": {
+         "en": "Percent change divides by the starting value.",
+         "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs21.t.q4",
+    "type": "solve",
+    "skill": "r-dtable",
+    "q": {
+     "en": "A table in hundreds shows 12 and 8. What is the real total?",
+     "as": "শতৰ তালিকাত 12 আৰু 8। প্ৰকৃত মুঠ?"
+    },
+    "answer": "2000",
+    "why": {
+     "en": "Add, then multiply by 100.",
+     "as": "যোগ কৰি 100 ৰে পূৰণ।"
+    },
+    "traps": [
+     {
+      "ans": "20",
+      "tag": "r-m-units",
+      "why": {
+       "en": "Read the column heading: the table may be in thousands.",
+       "as": "স্তম্ভৰ শিৰোনাম পঢ়া: তালিকা হাজাৰত হ'ব পাৰে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A table in hundreds shows 12 and 8. What is the real total?",
+       "as": "শতৰ তালিকাত 12 আৰু 8। প্ৰকৃত মুঠ?"
+      },
+      "answer": "2000",
+      "why": {
+       "en": "Add, then multiply by 100.",
+       "as": "যোগ কৰি 100 ৰে পূৰণ।"
+      },
+      "traps": [
+       {
+        "ans": "20",
+        "tag": "r-m-units",
+        "why": {
+         "en": "Read the column heading: the table may be in thousands.",
+         "as": "স্তম্ভৰ শিৰোনাম পঢ়া: তালিকা হাজাৰত হ'ব পাৰে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A table in hundreds shows 25 and 15. What is the real total?",
+       "as": "শতৰ তালিকাত 25 আৰু 15। প্ৰকৃত মুঠ?"
+      },
+      "answer": "4000",
+      "why": {
+       "en": "Add, then multiply by 100.",
+       "as": "যোগ কৰি 100 ৰে পূৰণ।"
+      },
+      "traps": [
+       {
+        "ans": "40",
+        "tag": "r-m-units",
+        "why": {
+         "en": "Read the column heading: the table may be in thousands.",
+         "as": "স্তম্ভৰ শিৰোনাম পঢ়া: তালিকা হাজাৰত হ'ব পাৰে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rs21.t.q5",
+    "type": "tf",
+    "skill": "r-dpie",
+    "s": {
+     "en": "A pie chart's shares add to 100%.",
+     "as": "বৃত্ত লেখৰ ভাগৰ যোগফল 100%।"
+    },
+    "answer": true,
+    "why": {
+     "en": "It is one whole.",
+     "as": "ই এক গোটা।"
+    }
+   },
+   {
+    "id": "rs21.t.q6",
+    "type": "tf",
+    "skill": "r-dchange",
+    "s": {
+     "en": "Percent change divides by the new value.",
+     "as": "শতাংশ সলনি নতুন মানেৰে হৰণ।"
+    },
+    "answer": false,
+    "why": {
+     "en": "By the old value.",
+     "as": "পুৰণি মানেৰে।"
+    },
+    "traps": [
+     {
+      "opt": true,
+      "tag": "r-m-base",
+      "why": {
+       "en": "Percent change divides by the starting value.",
+       "as": "শতাংশ সলনি আৰম্ভণিৰ মানেৰে হৰণ কৰা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
