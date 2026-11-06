@@ -22,6 +22,13 @@ mission may frame a puzzle, but it may not invent dialogue, sources, dates or
 alternative outcomes. Track engagement and delayed recall separately. Treat
 reward systems and mission formats as design hypotheses to test with learners.
 
+## Mathematics course
+
+Read `docs/MATHEMATICS-COURSE.md` and `docs/MATHEMATICS-VISUALS.md` before changing it. `scripts/build_math_course.py`
+generates its lessons, so edit the generator, not `content/lessons/math-*.json`.
+The supplied lecture decks set the syllabus only: never copy their questions.
+Deploy `firestore.rules` before releasing mastery data.
+
 ## Sources and pictures
 
 The user authorised reuse of `/home/angsuman/extra_spac/Assam History`.

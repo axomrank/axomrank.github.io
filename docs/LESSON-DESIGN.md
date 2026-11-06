@@ -53,6 +53,10 @@ Emphasis, never mixed: `<mark>` = the key fact (max 3 per card); `[[entity]]` = 
 
 A lesson or story `map` may set `"base": "india"`; the default is `"assam"`. See the map authoring rules in [INDIAN-HISTORY-COURSE.md](INDIAN-HISTORY-COURSE.md).
 
+## Mathematics additions
+
+`solve`, `explore` and `stepwise` steps, story-card widgets, number `variants`, `skill` and `traps` fields and `$...$` maths come from `app/math.js`. See [MATHEMATICS-COURSE.md](MATHEMATICS-COURSE.md). A step with `variants` keeps one permanent id across all its versions.
+
 ## Learning loop (in `app/engine.js`)
 
 - A missed question in a unit or lesson test returns once at the end. Match does not repeat.

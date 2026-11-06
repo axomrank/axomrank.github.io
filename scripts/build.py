@@ -9,12 +9,14 @@ import hashlib, json, os, re, sys, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
-TYPES = {"story", "mcq", "tf", "inline", "fill", "match", "order", "unscramble", "odd", "picture", "whoami", "spot", "timeline", "map"}
+TYPES = {"story", "mcq", "tf", "inline", "fill", "match", "order", "unscramble", "odd", "picture", "whoami", "spot", "timeline", "map", "solve", "explore", "stepwise"}
 NEED = {"mcq": ["q", "options", "answer", "why"], "tf": ["s", "answer", "why"], "inline": ["before", "after", "options", "answer", "why"],
         "fill": ["before", "after", "answer", "asOptions", "asAnswer", "why"], "match": ["pairs", "why"], "order": ["items", "why"],
         "unscramble": ["q", "word", "why"], "odd": ["q", "options", "answer", "why"], "picture": ["q", "options", "answer", "why"],
         "whoami": ["clues", "options", "answer", "why"], "spot": ["tokens", "wrong", "fix", "why"], "timeline": ["anchors", "items", "why"],
-        "map": ["q", "target", "choices", "why"], "story": ["title", "text"]}
+        "map": ["q", "target", "choices", "why"], "story": ["title", "text"],
+        "solve": ["q", "answer", "why"], "explore": ["q", "widget", "target", "answerText", "why"], "stepwise": ["q", "parts", "why"]}
+WIDGET_KINDS = {"exterior", "tangent", "fence", "fracbar", "grid100", "numline", "peel", "hops", "blocks", "line", "array", "gears", "tiles", "dial", "cuts", "area", "dual", "ray", "level", "seesaw", "chain", "order", "square", "diffsq", "pairs", "ladder", "twosale", "growth", "tank", "mandays", "track", "journey", "ages", "stairs", "triangle", "quarter", "tower", "scaleup", "shear", "sticks", "kite", "roll", "sectors", "stack", "net", "pour"}
 errors = []
 def err(msg): errors.append(msg)
 
@@ -116,7 +118,7 @@ for lid, L in lessons.items():
             if s["type"] not in TYPES: err(f"{where}: unknown type {s['type']}")
             for k in NEED.get(s["type"], []):
                 if k not in s: err(f"{where}: '{s['type']}' needs '{k}'")
-            if s["type"] == "story" and not (s.get("img") or s.get("map") or s.get("art")): err(f"{where}: story needs img, map or art")
+            if s["type"] == "story" and not (s.get("img") or s.get("map") or s.get("art") or s.get("widget")): err(f"{where}: story needs img, map or art")
             if s["type"] == "story":
                 story_rules(s, f"{where}/{sid}")
                 if "diagram" in s:
@@ -138,6 +140,13 @@ for lid, L in lessons.items():
             if s.get("scale") == "articles" and not all(str(a["y"]).isdigit() for a in s.get("anchors", [])): err(f"{where}: article line anchors must be plain numbers (put lettered articles in items)")
             if s["type"] == "map" and s["target"] not in s["choices"]: err(f"{where}: map target must be one of the choices")
             if "answer" in s and isinstance(s["answer"], int) and "options" in s and not 0 <= s["answer"] < len(s["options"]): err(f"{where}: answer index out of range")
+            for task in s.get("tasks", []):
+                if "goal" not in task: err(f"{where}: a task needs a goal")
+                bilingual(task.get("do"), where)
+                if task.get("then"): bilingual(task["then"], where)
+            if s["type"] == "explore" and s["widget"].get("kind") not in WIDGET_KINDS: err(f"{where}: unknown widget")
+            for k, version in enumerate([s] + s.get("variants", [])):
+                if re.search(r"\$[^$]*<[^$]*\$", json.dumps(version, ensure_ascii=False)): err(f"{where}: '<' inside $...$ breaks the page; use \\lt (version {k})")
             link = s.get("link")
             if link:
                 if link.get("lessonId"):

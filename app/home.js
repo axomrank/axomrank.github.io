@@ -14,10 +14,11 @@ if (params.has("review")) { try { params.get("review") === "0" ? localStorage.re
 const UNLOCK_ALL = params.has("all") || (() => { try { return localStorage.getItem("axom.review") === "1"; } catch { return false; } })();
 const UI = Object.assign({ tab: "lessons", open: {} }, AXOM.store.get("axom:ui", {}));
 if (params.get("tab") === "overview") UI.open = {};
+if (params.get("tab") === "skills") UI.tab = "skills";
 const saveUI = () => AXOM.store.set("axom:ui", UI);
 const ROOF = '<svg class="roof" viewBox="0 0 320 26" preserveAspectRatio="none"><path d="M0 4c22 2 30 10 52 13 44 6 172 6 216 0 22-3 30-11 52-13" fill="none" stroke="#fff" stroke-width="2"/><path d="M60 17v7M100 19v6M140 20v5M180 20v5M220 19v6M260 17v7" stroke="#fff" stroke-width="1.6"/></svg>';
 const STAR = { A: "★★★", B: "★★", C: "★" };
-const ALL_TABS = { lessons: B("Lessons", "পাঠ"), timeline: B("Timeline", "সময়ৰেখা"), family: B("Family", "বংশ"), profile: B("Profile", "প্ৰফাইল") };
+const ALL_TABS = { lessons: B("Lessons", "পাঠ"), timeline: B("Timeline", "সময়ৰেখা"), family: B("Family", "বংশ"), profile: B("Profile", "প্ৰফাইল"), skills: B("My map", "মোৰ মানচিত্ৰ") };
 const CID = (params.get("course") || "").replace(/[^a-z0-9-]/g, "");   // empty = show the hub
 
 document.body.insertAdjacentHTML("afterbegin", `
@@ -49,7 +50,7 @@ function stats() {
 }
 const years = (reign) => { const m = String(reign).match(/\d{3,4}/g) || []; return [+m[0], +(m[1] || m[0])]; };
 
-let course, info;
+let course, info, SKILLS = null;
 /* ---------- shared data for the home and subject pages ---------- */
 const SID = (params.get("subject") || "").replace(/[^a-z0-9-]/g, "");
 const SUBJECT_ICON = {
@@ -61,6 +62,7 @@ const SUBJECT_ICON = {
   coin: '<circle cx="12" cy="12" r="9"/><path d="M9 8h6M9 11h6M13 8c2 0 2 6-1 6h-3l5 4"/>',
   flask: '<path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3M7.5 15h9"/>',
   news: '<path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2M7 9h7M7 13h7M7 16h4"/>',
+  sigma: '<path d="M18 5H6l6.5 7L6 19h12"/>',
   child: '<circle cx="12" cy="5" r="2.5"/><path d="M12 8v7M7 10.5l5 1.5 5-1.5M9 21l3-6 3 6"/>',
 };
 const sIcon = (k) => `<svg viewBox="0 0 24 24">${SUBJECT_ICON[k] || SUBJECT_ICON.scroll}</svg>`;
@@ -104,7 +106,7 @@ async function homePage() {
     cont = `<a class="resume" href="${k ? `lesson.html?id=${k.lesson}` : `index.html?course=${cur.id}`}">
       <span class="face">${k ? `<img src="${AXOM.media(k.face)}" alt="" loading="lazy">` : sIcon(S.icon)}</span>
       <span class="t"><small>${p.started ? T(B("Continue", "আগবাঢ়া")) : T(B("Start here", "ইয়াৰ পৰা আৰম্ভ কৰা"))} · ${T(S.title)}</small>
-        <b>${k ? T(k.name) : T(B("Course complete", "পাঠ্যক্ৰম সম্পূৰ্ণ"))}</b><span>${T(cur.title)} · ${T(B(`${p.done}/${p.total} lessons`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ`))}</span>
+        <b>${k ? T(k.name) : cur.kings.some((x) => !x.lesson) ? T(B("All lessons so far done", "এতিয়ালৈকে থকা সকলো পাঠ সম্পূৰ্ণ")) : T(B("Course complete", "পাঠ্যক্ৰম সম্পূৰ্ণ"))}</b><span>${T(cur.title)} · ${T(B(`${p.done}/${p.total} lessons`, `${asNum(p.total)}টাৰ ${asNum(p.done)}টা পাঠ`))}</span>
         <span class="meter"><i style="--p:${pct(p)}%;width:${pct(p)}%"></i></span></span><span class="go">›</span></a>`;
   }
   const subjects = cat.subjects.filter((S) => !exam || S.exams.includes(exam)).map((S) => {
@@ -157,6 +159,8 @@ async function render() {
   }
   if (CID === "assam-history") UI.tab = "overview";
   if (UI.lastCourse !== CID) { UI.lastCourse = CID; saveUI(); }
+  if (course.skills && !SKILLS) SKILLS = await AXOM.getJSON(course.skills);
+  document.documentElement.classList.toggle("maths", CID === "mathematics");
   const S = subjectOf(DATA.cat, CID);
   const TABS = (CID === "assam-history" ? ["lessons", "overview"] : course.tabs || ["lessons", "timeline", "family", "profile"]).map((k) => [k, k === "family" && course.familyTitle ? course.familyTitle : (k === "overview" ? B("Overview", "অৱলোকন") : ALL_TABS[k])]);
   if (!TABS.some(([k]) => k === UI.tab)) UI.tab = "lessons";
@@ -177,7 +181,7 @@ async function render() {
     "geography-foundations": "geography-foundations-atlas.html",
   }[course.id];
   const hero = `<section class="c-hero">${ROOF}<a class="back-hub" href="${S && S.id !== "assam-history" ? `index.html?subject=${S.id}` : "index.html"}">‹ ${S && S.id !== "assam-history" ? T(S.title) : T(B("Home", "মূল পৃষ্ঠা"))}</a><div class="eyebrow">${T(course.eyebrow)}</div><h1>${T(course.title)}</h1><p>${T(course.subtitle)}</p>${worksheet ? `<a class="back-hub" href="content/${worksheet}">${T(B("Opening and final atlas worksheet", "আৰম্ভণি আৰু শেষৰ মানচিত্ৰ অনুশীলন"))}</a>` : ""}</section>`;
-  const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab, overview: lessonsTab }[UI.tab](status, byNo);
+  const body = { lessons: lessonsTab, timeline: timelineTab, family: familyTab, profile: profileTab, overview: lessonsTab, skills: skillsTab }[UI.tab](status, byNo);
   $("#course").innerHTML = hero + tabs + (CID === "assam-history" ? `<a class="offline-btn reference-link" href="history.html">${T(B("Timeline,people and places", "সময়ৰেখা,মানুহ আৰু ঠাই"))} ›</a>` : "") + body + `<div class="p-foot">${T(B("Bilingual · English / অসমীয়া · Sources accompany each lesson. Illustrations are artistic reconstructions.", "দ্বিভাষিক · English / অসমীয়া · প্ৰতিটো পাঠৰ লগত উৎস দিয়া আছে। চিত্ৰবোৰ শিল্পীৰ কল্পনা।"))}</div>`;
   // sticky Continue: the next open lesson that is not finished
   const next = course.kings.map((k) => ({ k, st: status(k) })).find((x) => x.st.s === "open");
@@ -252,6 +256,30 @@ function familyTab() {
   }).join("");
   return `<p class="tab-intro">${T(course.familyIntro || B("A solid line: son of the king above. A dashed line: brother. A gap: the throne passed outside the direct line.", "সৰল ৰেখা: ওপৰৰ ৰজাৰ পুত্ৰ। ডেচ ৰেখা: ভাই। খালী: সিংহাসন পোনপটীয়া বংশৰ বাহিৰলৈ গ'ল।"))}</p><div class="fam">${rows}</div>
     <p class="tab-intro small">${T(course.familyNote || B("Relations follow the AHOM project catalogue; some early details differ between chronicles.", "সম্পৰ্কবোৰ AHOM প্ৰকল্পৰ তালিকা অনুসৰি; আগৰ কিছুমান তথ্য বুৰঞ্জী অনুসৰি বেলেগ।"))}</p>`;
+}
+
+/* ---------- My map: every skill in the syllabus, what is weak and what to do next ---------- */
+const SK_STATE = { new: B("Not tested", "পৰীক্ষা হোৱা নাই"), weak: B("Weak", "দুৰ্বল"), learning: B("Learning", "শিকি আছে"), ready: B("Ready", "সাজু"), strong: B("Strong", "দৃঢ়"), rusty: B("Rusty", "পাহৰিছে") };
+function skillsTab() {
+  const map = Object.fromEntries(SKILLS.skills.map((x) => [x.id, x]));
+  const canDrill = (x) => x.steps.length > 0, state = (x) => AXOM.skillState(x.id);
+  const weak = SKILLS.skills.filter((x) => ["weak", "rusty"].includes(state(x))).sort((a, b) => G.skills[a.id].p - G.skills[b.id].p);
+  const drill = (id) => `lesson.html?drill=${id}&course=${CID}`;
+  const start = !G.checkpoints.diagnostic ? `<a class="review-card" href="lesson.html?diagnostic=${CID}"><span class="ic">🎯</span><span><b>${T(B("Find your starting point", "তোমাৰ আৰম্ভণি বিচাৰা"))}</b><span class="s">${T(B(`A short placement round across the whole syllabus · ${SKILLS.probes.length} questions at most`, `সমগ্ৰ পাঠ্যক্ৰমৰ চমু পৰ্যায় · সৰ্বাধিক ${asNum(SKILLS.probes.length)}টা প্ৰশ্ন`))}</span></span><span class="go">›</span></a>` : "";
+  const next = weak.length ? (() => {
+    const x = weak[0], root = AXOM.rootCause(x.id, map), fix = root ? map[root] : x;
+    return `<div class="card focus"><h3>${T(B("Fix this next", "পিছত এইটো ঠিক কৰা"))}</h3><p class="big-skill">${T(fix.t)}</p>
+      ${root ? `<p class="note">${T(B(`${x.t.en} depends on it.`, `${x.t.as} ইয়াৰ ওপৰত নিৰ্ভৰশীল।`))}</p>` : ""}
+      ${canDrill(fix) ? `<a class="btn" href="${drill(fix.id)}">${T(B("Practise now", "এতিয়াই অনুশীলন কৰা"))}</a>` : `<p class="note">${T(B("The lesson for this skill is being written.", "এই দক্ষতাৰ পাঠটো লিখি থকা হৈছে।"))}</p>`}</div>`;
+  })() : "";
+  const patterns = Object.entries(G.miscon).filter(([tag]) => SKILLS.misconceptions[tag]).sort((a, b) => b[1].n - a[1].n).slice(0, 4);
+  const slips = patterns.length ? `<div class="card"><h3>${T(B("Your repeated slips", "তোমাৰ বাৰে বাৰে হোৱা ভুল"))}</h3>${patterns.map(([tag, m]) => { const c = SKILLS.misconceptions[tag], x = map[c.skill]; return `<a class="acc-row" href="${x && canDrill(x) ? drill(c.skill) : "#"}"><span>${T(c.t)}</span><span class="note">×${N(m.n)}</span><b>›</b></a>`; }).join("")}</div>` : "";
+  const legend = ["weak", "learning", "ready", "strong"].map((k) => `<span class="sk-chip ${k}">${T(SK_STATE[k])}</span>`).join("");
+  const topics = SKILLS.topics.map((t) => {
+    const list = SKILLS.skills.filter((x) => x.topic === t.id);
+    return `<section class="sk-topic"><h3>${T(t.t)}${list.some(canDrill) ? "" : `<small>${T(B("Soon", "সোনকালে"))}</small>`}</h3><div class="sk-chips">${list.map((x) => { const st = state(x), r = G.skills[x.id], label = `<span class="sk-chip ${st}" title="${SK_STATE[st].en}">${T(x.t)}${r && r.a ? `<small>${N(Math.round(r.p * 100))}%</small>` : ""}</span>`; return canDrill(x) ? `<a href="${drill(x.id)}">${label}</a>` : label; }).join("")}</div></section>`;
+  }).join("");
+  return `${start}${next}${slips}<p class="tab-intro">${T(B("A skill turns strong only after you answer it correctly at least three days later. Hints and retries never count.", "কমেও তিনি দিনৰ পিছত শুদ্ধকৈ উত্তৰ দিলেহে দক্ষতা দৃঢ় হয়। ইংগিত আৰু পুনৰ চেষ্টা গণনা নহয়।"))}</p><div class="sk-chips sk-legend">${legend}</div>${topics}`;
 }
 
 /* ---------- Profile tab ---------- */

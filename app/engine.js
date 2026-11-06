@@ -10,6 +10,7 @@
 (() => {
 "use strict";
 const { B, N, asNum, G, SFX, media } = window.AXOM;
+const MATH = window.AXOM_MATH;
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const shuffle = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
@@ -36,6 +37,8 @@ async function load() {
     REFERENCE_LESSONS = manifest.lessons;
     ENT = entities; BASES = { assam: basemap, india: india || basemap };
     if (params.has("review")) return boot(await buildReview(), "review");
+    if (params.get("diagnostic")) { CID = params.get("diagnostic").replace(/[^a-z0-9-]/g, ""); return boot(await buildDiagnostic(), "diagnostic"); }
+    if (params.get("drill")) { CID = (params.get("course") || "mathematics").replace(/[^a-z0-9-]/g, ""); return boot(await buildDrill(params.get("drill").replace(/[^a-z0-9-]/g, "")), "drill"); }
     if (params.get("checkpoint")) { CID = (params.get("course") || "ahom-kings").replace(/[^a-z0-9-]/g, ""); if (!manifest.courses.some(c=>c.id===CID)) CID = manifest.courseRedirects?.[CID] || CID; return boot(await buildCheckpoint(params.get("checkpoint").replace(/[^a-z-]/g, "")), "checkpoint"); }
     if (params.get("jump")) { const t = params.get("jump").replace(/[^a-z0-9-]/g, ""); CID = ((await AXOM.getJSON("content/manifest.json")).lessons[t] || {}).course || "ahom-kings"; return boot(await buildJump(t), "jump"); }
     const id = (params.get("id") || "sukaphaa").replace(/[^a-z0-9-]/g, "");
@@ -109,6 +112,29 @@ async function buildJump(target) {
   return { id: `jump-${target}`, virtual: true, eraUnits, target: { id: target, n: t.n, name: t.name }, king: B("Jump ahead", "আগলৈ জঁপিওৱা"),
     reign: B(`To lesson ${t.n} · ${t.name.en}`, `পাঠ ${asNum(t.n)} · ${t.name.as}লৈ`), units: [],
     test: { id: "jump", title: B(`Jump to lesson ${t.n} · ${t.name.en}`, `পাঠ ${asNum(t.n)} · ${t.name.as}লৈ জঁপিওৱা`), learned: [], steps } };
+}
+/* ---------- skill courses: a course may name a skills file (content/skills/<course>.json) ---------- */
+async function skillData() {
+  const course = await AXOM.getJSON(courseUrl()), data = await AXOM.getJSON(course.skills);
+  return { ...data, map: Object.fromEntries(data.skills.map((x) => [x.id, x])) };
+}
+// Placement: one or two probes per skill, foundations first. A miss removes probes that depend on that skill.
+async function buildDiagnostic() {
+  const data = await skillData(), order = new Map(data.skills.map((x, k) => [x.id, k]));
+  const steps = data.probes.slice().sort((a, b) => order.get(a.skill) - order.get(b.skill)).map((s) => ({ ...s, _bank: true }));
+  return { id: "diagnostic", virtual: true, skillMap: data.map, skillList: data.skills, king: B("Find your starting point", "তোমাৰ আৰম্ভণি বিচাৰা"), reign: B("Placement round", "স্থান নিৰ্ণয় পৰ্যায়"), units: [],
+    test: { id: "diagnostic", title: B("Find your starting point", "তোমাৰ আৰম্ভণি বিচাৰা"), learned: [], steps } };
+}
+// Repair round for one skill. If a prerequisite is the real gap, that comes first.
+async function buildDrill(skillId) {
+  const data = await skillData(), skill = data.map[skillId];
+  if (!skill) return { id: "drill", virtual: true, king: B("Practice", "অনুশীলন"), reign: B("", ""), units: [], test: { id: "drill", title: B("Practice", "অনুশীলন"), learned: [], steps: [] } };
+  const root = AXOM.rootCause(skillId, data.map);
+  const refs = [...(root ? shuffle(data.map[root].steps).slice(0, 3) : []), ...shuffle(skill.steps).slice(0, root ? 4 : 7)];
+  const lessons = await lessonsById(refs.map((r) => r.l));
+  const steps = refs.flatMap((r) => { const Ls = lessons[r.l]; const st = Ls && [...Ls.units, Ls.test].flatMap((u) => u.steps).find((x) => x.id === r.id); return st ? [tagStep(st, Ls)] : []; });
+  return { id: `drill-${skillId}`, virtual: true, king: skill.t, reign: root ? B(`Starting with ${data.map[root].t.en}`, `${data.map[root].t.as}ৰ পৰা আৰম্ভ`) : B("Focused practice", "নিৰ্দিষ্ট অনুশীলন"), units: [],
+    test: { id: "drill", title: skill.t, learned: [], steps } };
 }
 async function buildCheckpoint(eraId) {
   const course = await AXOM.getJSON(courseUrl());
@@ -209,6 +235,7 @@ function mapSVG(spec, { story = false, route = false, choices = [] } = {}) {
 /* ========================================================= */
 function boot(L, mode) {
 const VIRTUAL = mode !== "lesson";
+if (L.course === "mathematics" || (["diagnostic", "drill"].includes(mode) && CID === "mathematics")) document.documentElement.classList.add("maths");
 const P = VIRTUAL ? { done: {} } : AXOM.getLesson(L.id);
 const saveAll = () => (VIRTUAL ? AXOM.saveGlobal() : AXOM.saveLesson(L.id, P));
 const bankOf = (lid) => (G.mistakes[lid] = G.mistakes[lid] || []);
@@ -245,6 +272,7 @@ const KICK = {
   order: B("Put it in order", "ক্ৰম অনুসৰি সজোৱা"), match: B("Match the following", "মিলোৱা"), fill: B("Fill in the blank", "খালী ঠাই পূৰ কৰা"),
   odd: B("Odd one out", "অমিলটো বিচাৰা"), picture: B("Picture", "ছবি চিনাক্ত কৰা"), whoami: B("Who am I?", "মই কোন?"),
   spot: B("Spot the error", "ভুলটো বিচাৰা"), timeline: B("Timeline", "সময়ৰেখা"), story: B("Story", "কাহিনী"), articles: B("Article line", "অনুচ্ছেদৰ ৰেখা"),
+  solve: B("Work it out", "হিচাপ কৰা"), explore: B("Try it", "নিজে চোৱা"), stepwise: B("Step by step", "খোজে খোজে"),
 };
 const PRAISE = [B("Correct!", "শুদ্ধ!"), B("Excellent!", "বঢ়িয়া!"), B("Well done!", "বহুত ভাল!"), B("Great!", "চমৎকাৰ!")];
 
@@ -278,7 +306,7 @@ document.body.insertAdjacentHTML("afterbegin", `
       <div id="mission-slot"></div>
       <div id="mistake-slot"></div>
       <div class="path" id="path"></div>
-      <div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>
+      ${L.course === "mathematics" ? "" : `<div class="p-foot">${T(B("Paintings are artistic reconstructions.", "ছবিবোৰ শিল্পীৰ কল্পনা।"))}</div>`}
     </div>
   </div>
   <div class="view" id="v-empty"><div class="empty-pane">${AXOM.ICON.book}<p>${T(B("Choose a unit on the left to start.", "আৰম্ভ কৰিবলৈ বাওঁফালৰ পৰা এটা অধ্যায় বাছি লোৱা।"))}</p></div></div>
@@ -491,14 +519,15 @@ function startPractice() {
 const step = () => U.queue[U.pos];
 
 function renderStep(animate) {
-  const it = step(), s = it.s;
+  const it = step(); it.s = MATH.vary(it.s);   // a step with variants shows new numbers each time
+  const s = it.s;
   U.phase = "answer"; U.st = {};
   $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
   $("#foot").className = "foot";
   const scr = $("#screen");
   scr.classList.remove("enter"); void scr.offsetWidth; if (animate) scr.classList.add("enter");
   const from = s._lesson && s._lesson !== L.id ? `<span class="from">${T(B(s._lesson[0].toUpperCase() + s._lesson.slice(1), s._lesson[0].toUpperCase() + s._lesson.slice(1)))}</span>` : "";
-  const kick = s.type === "story" ? `<div class="kicker story">${T(KICK.story)}${s.text.length > 1 ? `<span class="dots">${s.text.map((_, k) => `<i class="${k ? "" : "on"}"></i>`).join("")}</span>` : ""}</div>`
+  const kick = s.type === "story" ? `<div class="kicker story">${T(s.tasks ? B("Find out", "বিচাৰি উলিওৱা") : KICK.story)}${s.text.length > 1 ? `<span class="dots">${s.text.map((_, k) => `<i class="${k ? "" : "on"}"></i>`).join("")}</span>` : ""}</div>`
     : it.retry ? `<div class="kicker retry">${T(B("Previous mistake", "আগৰ ভুল"))}</div>`
     : s.guess ? `<div class="kicker guess">${T(s.decide ? B("You decide", "তুমিয়েই সিদ্ধান্ত লোৱা") : B("Make a guess", "অনুমান কৰা"))}</div>`
     : `<div class="kicker">${T(KICK[s.scale || s.type])}${from}${s.link && !VIRTUAL ? `<button class="linkchip" data-link>${CHAIN}${T(linkLabel(s.link))}</button>` : ""}${s.type === "whoami" ? `<span class="xp" id="who-xp"></span>` : ""}</div>`;
@@ -519,7 +548,7 @@ const picture = (f, lid) => `<img src="${img(f, 0, lid)}" srcset="${img(f, 480, 
 // a story card may carry its own map ({box, show, routes, texts, labels, districts}); otherwise it uses the lesson map
 const mapOf = (s) => s._map || (s.map && s.map.box ? s.map : L.map);
 // years in story text get their own style; only text between tags is touched
-const years = (html) => html.split(/(<[^>]+>)/).map((x) => (x.startsWith("<") ? x : x.replace(/(^|[^\w\u0980-\u09FF])(1[0-9]{3}|১[০-৯]{3})(?![\w০-৯])/g, '$1<span class="yr">$2</span>'))).join("");
+const years = (html) => html.split(/(<[^>]+>|\$[^$]+\$)/).map((x) => (x.startsWith("<") || x.startsWith("$") ? x : x.replace(/(^|[^\w\u0980-\u09FF])(1[0-9]{3}|১[০-৯]{3})(?![\w০-৯])/g, '$1<span class="yr">$2</span>'))).join("");
 // a story card shows its first beat; each tap (or Continue) reveals the next before moving on
 function storyBeat() {
   const held = $("#screen").querySelector(".beat.hold"); if (!held) return false;
@@ -555,6 +584,7 @@ const RENDER = {
     ${s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
       : s.map ? `<figure class="frame mapframe">${mapSVG(mapOf(s), { story: true, route: s.map.route })}</figure>`
       : s.diagram ? storyDiagram(s.diagram)
+      : s.widget ? `<div class="wx story-wx"></div>`
       : `<figure class="frame art${s.art === "rooster" ? " full" : ""}">${ART[s.art]}</figure>`}
     <div class="story${memo ? " memo" : ""}">${s.text.map((p, k) => `<p class="beat${k ? " later" : " lede"}${k ? " hold" : " on"}">${years(TR(p))}</p>`).join("")}
     ${s.text.length > 1 ? `<div class="more" aria-hidden="true">${T(B("Tap to read on", "পঢ়ি যাবলৈ টিপা"))}</div>` : ""}</div>`;
@@ -604,6 +634,8 @@ const SETUP = {
   whoami: (s) => { U.st.clues = 0; revealClue(s); },
   timeline: () => { U.st = { armed: null, placed: {} }; },
 };
+const MX = MATH.bind({ U: () => U, refresh: () => refresh(), check: () => check(), hintsAllowed: () => mode === "drill" || (mode === "lesson" && !U.testout && U.unit !== L.test) });
+Object.assign(RENDER, MX.RENDER); Object.assign(SETUP, MX.SETUP);
 function revealClue(s) {
   const n = U.st.clues++;
   $("#clues").insertAdjacentHTML("beforeend", `<div class="clue"><span class="n">${N(n + 1)}</span><span>${T(s.clues[n])}</span></div>`);
@@ -623,12 +655,13 @@ function ready() {
     case "spot": return st.tok != null;
     case "order": return st.placed.length === s.items.length;
     case "timeline": return Object.keys(st.placed).length === s.items.length;
+    case "solve": case "explore": case "stepwise": return MX.ready(s, st);
   }
   return false;   // tf and match check themselves
 }
 function refresh() {
   const s = step().s, btn = $("#action"), last = U.pos === U.queue.length - 1;
-  if (U.phase === "feedback" || s.type === "story") { btn.innerHTML = last ? T(B("Finish", "শেষ কৰা")) : T(B("Continue", "আগবাঢ়া")); btn.disabled = false; return; }
+  if (U.phase === "feedback" || s.type === "story") { btn.innerHTML = last ? T(B("Finish", "শেষ কৰা")) : T(B("Continue", "আগবাঢ়া")); btn.disabled = s.type === "story" && !!s.tasks && U.phase !== "feedback" && !U.st.tasksDone; return; }
   btn.innerHTML = T(B("Check", "পৰীক্ষা কৰা"));
   btn.disabled = !ready();
 }
@@ -666,12 +699,14 @@ function check() {
       $$(".tile", scr).forEach((t) => (t.disabled = true));
       break;
     case "match": right = st.misses === 0; break;
+    case "solve": case "explore": case "stepwise": right = MX.check(s, st); break;
   }
   feedback(right);
 }
 function answerHTML(s) {
   if (s.answerText) return T(s.answerText);
   switch (s.type) {
+    case "solve": return MX.answerHTML(s);
     case "mcq": case "odd": case "whoami": case "inline": return T(s.options[s.answer]);
     case "tf": return T(s.answer ? B("True", "শুদ্ধ") : B("False", "অশুদ্ধ"));
     case "order": return s.items.map((x, i) => `${N(i + 1)}. ${T(x)}`).join("<br>");
@@ -717,7 +752,16 @@ function feedback(right) {
   const it = step(), s = it.s, slips = s.type === "match" && !right, lid = lessonOf(s);
   let gain = 0;
   if (!it.retry) { U.asked++; AXOM.record(lid, right); }
-  if (right) { if (!it.retry) U.ok++; gain = it.retry ? 5 : s.type === "whoami" ? whoXP() : ["order", "timeline"].includes(s.type) ? 20 : 10; SFX.good(); }
+  // Skill evidence: first attempts only, so a retry can never raise mastery.
+  let coaching = "";
+  if (s.skill) {
+    const results = MX.outcomes(s, U.st, right);
+    if (!it.retry) results.forEach((r) => { AXOM.skillAnswer(r.skill, r.right, r); if (r.tag) AXOM.misconception(r.tag); });
+    const t = results.find((r) => r.trap);
+    if (t) coaching = MX.coach(t.trap);
+    if (mode === "diagnostic" && !right) MATH.prune(U, s.skill, L.skillMap);
+  }
+  if (right) { if (!it.retry) U.ok++; gain = U.st.hinted ? 5 : it.retry ? 5 : s.type === "whoami" ? whoXP() : ["order", "timeline"].includes(s.type) ? 20 : 10; SFX.good(); }
   else { if (slips) gain = 5; SFX.bad(); }
   U.xp += gain;
   // spaced repetition: learned steps come back after 1, 3, 7, 15, 30 days; review answers move them along
@@ -727,7 +771,11 @@ function feedback(right) {
   if (right && b.includes(it.ref) && (U.practice || VIRTUAL || !it.retry)) b.splice(b.indexOf(it.ref), 1);
   if (!right && !b.includes(it.ref) && !s._bank && !s.id.startsWith("bank.")) b.push(it.ref);
   // A missed question comes back once at the end of a unit or lesson test (not matching; not in exams).
-  if (!right && !it.retry) { U.mistakes.push({ s }); if (!slips && mode !== "checkpoint" && mode !== "jump" && !U.testout) U.queue.push({ s, ref: it.ref, retry: true }); }
+  if (!right && !it.retry) { U.mistakes.push({ s }); if (!slips && mode !== "checkpoint" && mode !== "jump" && mode !== "diagnostic" && !U.testout) {
+    // Maths repairs on the spot: in a teaching unit the same idea returns at once, with new numbers.
+    if (s.skill && mode === "lesson" && U.unit !== L.test) U.queue.splice(U.pos + 1, 0, { s, ref: it.ref, retry: true });
+    else U.queue.push({ s, ref: it.ref, retry: true });
+  } }
   if (!it.retry) U.done = Math.min(U.total, U.done + 1);
   $("#progress").style.width = `${(U.done / U.total) * 100}%`; $("#progress").style.setProperty("--p", $("#progress").style.width);
   $("#fb-badge").textContent = right || slips ? "✓" : "✕";
@@ -735,7 +783,7 @@ function feedback(right) {
     : slips ? T(B(`All matched, ${U.st.misses} slip${U.st.misses > 1 ? "s" : ""}`, `সকলো মিলিল, ${asNum(U.st.misses)}টা ভুল`)) : T(B("Not quite", "হোৱা নাই"));
   $("#fb-xp").innerHTML = gain ? `+${N(gain)} XP` : "";
   $("#fb-ans").innerHTML = right || slips ? "" : `<small>${T(B("Correct answer", "শুদ্ধ উত্তৰ"))}</small>${answerHTML(s)}`;
-  $("#fb-why").innerHTML = TR(s.why) + (right ? surprise(it) : "");
+  $("#fb-why").innerHTML = coaching + TR(s.why) + (right ? surprise(it) : "");
   $("#foot").className = `foot ${right ? "fb-good" : "fb-bad"}`;
   U.phase = "feedback";
   saveAll(); refresh();
@@ -765,6 +813,7 @@ function finishUnit() {
     note = pass ? T(B(params.has("testout") ? `Passed! The lessons of this ${L.word.en} are marked complete.` : `Passed! ${L.word.en[0].toUpperCase()}${L.word.en.slice(1)} checkpoint complete.`, params.has("testout") ? `উত্তীৰ্ণ! এই ${L.word.as}ৰ পাঠবোৰ সম্পূৰ্ণ বুলি চিহ্নিত কৰা হ'ল।` : `উত্তীৰ্ণ! ${L.word.as}ৰ পৰীক্ষা সম্পূৰ্ণ।`))
       : T(B("You need 80% to pass. Review the lessons and try again.", "উত্তীৰ্ণ হ'বলৈ ৮০% লাগে। পাঠবোৰ আকৌ চাই পুনৰ চেষ্টা কৰা।"));
   }
+  if (mode === "diagnostic") G.checkpoints.diagnostic = true;
   let pass = null;
   if (mode === "jump" || U.testout) {
     pass = !!U.asked && U.ok / U.asked >= 0.8;
@@ -787,7 +836,7 @@ function finishUnit() {
   const go = mode === "jump" && pass ? { id: L.target.id, start: true, label: B(`Start lesson ${L.target.n} · ${L.target.name.en}`, `পাঠ ${asNum(L.target.n)} আৰম্ভ কৰা · ${L.target.name.as}`) }
     : !VIRTUAL && u === L.test && P.done.test && NEXT ? { id: NEXT.id, start: true, label: B(`Next: Lesson ${NEXT.n} · ${NEXT.name.en.split(" (")[0]}, Unit 1`, `পৰৱৰ্তী: পাঠ ${asNum(NEXT.n)} · ${NEXT.name.as.split(" (")[0]}, অধ্যায় ১`) } : null;
   const promptOf = (s) => s.q || s.s || (s.before ? B(`${s.before.en} ___ ${s.after.en}`, `${s.before.as} ___ ${s.after.as}`) : s.clues ? s.clues[0] : B("", ""));
-  const title = mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", `${L.word.as}ৰ পৰীক্ষা শেষ`) : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
+  const title = mode === "diagnostic" ? B("Your starting map", "তোমাৰ আৰম্ভণিৰ মানচিত্ৰ") : mode === "drill" ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : mode === "review" ? B("Memory mission complete!", "স্মৃতি অভিযান সম্পূৰ্ণ!") : mode === "checkpoint" ? B("Checkpoint finished", `${L.word.as}ৰ পৰীক্ষা শেষ`) : pass === false ? B("Not this time", "এইবাৰ নহ'ল") : mode === "jump" ? B("Jumped ahead!", "আগলৈ জঁপিয়ালা!") : U.practice ? B("Practice complete!", "অনুশীলন সম্পূৰ্ণ!") : u === L.test && allDone ? B("Lesson complete!", "পাঠ সম্পূৰ্ণ!") : B("Unit complete!", "অধ্যায় সম্পূৰ্ণ!");
   const reviewLeft = mode === "review" ? AXOM.reviewQueue().length : 0;
   const missionResult = L.mission && u.mission && !U.practice && pass !== false ? `<div class="mission-result"><small>${T(L.mission.label)} · ${T(u === L.test ? B("File sealed", "নথি সম্পূৰ্ণ") : B("Finding recorded", "প্ৰমাণ লিখা হ'ল"))}</small><p>${T(u.mission.result)}</p></div>` : "";
   $("#done").innerHTML = `
@@ -795,6 +844,7 @@ function finishUnit() {
     <h1>${T(title)}</h1>
     <p class="sub">${T(u.title)}${wasDone && !U.practice && !VIRTUAL ? " · " + T(B("practice", "অনুশীলন")) : ""}</p>
     ${note ? `<p class="cp-note">${note}</p>` : ""}
+    ${mode === "diagnostic" ? MATH.report(L.skillList) : ""}
     ${missionResult}
     ${go ? `<a class="btn next-lesson" href="lesson.html?id=${go.id}${go.start ? "&start=0" : ""}">${T(go.label)} ›</a>` : ""}
     ${reviewLeft ? `<a class="btn next-lesson" href="lesson.html?review=1">${T(B(`Continue reviewing · ${reviewLeft} waiting`, `আৰু অনুশীলন কৰা · ${asNum(reviewLeft)}টা বাকী`))} ›</a>` : ""}
@@ -827,7 +877,7 @@ document.addEventListener("click", (e) => {
   if ((b = g("[data-onode]"))) { const k = b.dataset.onode; opop = opop === k ? null : k; pop = null; SFX.tap(); return renderPath(); }
   if ((b = g("[data-start]"))) return startUnit(+b.dataset.start, b.hasAttribute("data-testout"));
   if ($("#v-path").classList.contains("on") && (pop != null || opop != null) && !g(".pop")) { pop = opop = null; return renderPath(); }
-  if (g("#done-btn")) { if (VIRTUAL) { location.href = `index.html?course=${CID}`; return; } showView("v-path"); renderPath(); return; }
+  if (g("#done-btn")) { if (VIRTUAL) { location.href = `index.html?course=${CID}${mode === "diagnostic" || mode === "drill" ? "&tab=skills" : ""}`; return; } showView("v-path"); renderPath(); return; }
   if (g("#exit")) return openLeave();
   if (g("[data-link]") && U) { const s0 = step().s; if (s0.link) return openLinkSheet(s0.link); }
   if (g("[data-keep]")) return closeSheet();
@@ -880,7 +930,7 @@ document.addEventListener("click", (e) => {
   }
 });
 $("#action").addEventListener("click", () => { if (step().s.type === "story" && U.phase !== "feedback" && storyBeat()) return; if (U.phase === "feedback" || step().s.type === "story") return next(); if (ready()) check(); });
-$("#screen").addEventListener("click", (e) => { if (step() && step().s.type === "story" && !e.target.closest("button, a, .ent")) storyBeat(); });
+$("#screen").addEventListener("click", (e) => { if (step() && step().s.type === "story" && !e.target.closest("button, a, input, .ent, .wx")) storyBeat(); });
 // Names and dates can contain spaces, digits and punctuation. The field is
 // plain text and its value is compared with the authored answer, never HTML.
 document.addEventListener("input", (e) => { if (!$("#v-play").classList.contains("on") || step().s.type !== "fill") return; refresh(); });
@@ -895,7 +945,7 @@ function openLeave() {
 }
 function closeSheet() { $("#sheet-root").innerHTML = ""; }
 
-if (/[?&]debug\b/.test(location.search)) window.__L = { LESSON: L, run: () => U, render: renderStep, G, P, audioState: AXOM._audioState };   // test hook only
+if (/[?&]debug\b/.test(location.search)) window.__L = { LESSON: L, run: () => U, render: renderStep, refresh, G, P, audioState: AXOM._audioState };   // test hook only
 
 /* ---------- download this lesson for offline use ---------- */
 function lessonFiles() {

@@ -1,0 +1,3661 @@
+{
+ "id": "math-11-speed",
+ "course": "mathematics",
+ "no": 11,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Speed, distance and trains",
+  "as": "গতি, দূৰত্ব আৰু ৰেল"
+ },
+ "reign": {
+  "en": "Average speed, relative speed",
+  "as": "গড় গতি, আপেক্ষিক গতি"
+ },
+ "portrait": "math/speed.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Distance, speed, time",
+    "as": "দূৰত্ব, গতি, সময়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Distance = speed × time.",
+     "as": "দূৰত্ব = গতি × সময়।"
+    },
+    {
+     "en": "km/h to m/s: multiply by $\\frac{5}{18}$.",
+     "as": "km/hৰ পৰা m/s: $\\frac{5}{18}$ৰে পূৰণ।"
+    },
+    {
+     "en": "m/s to km/h: multiply by $\\frac{18}{5}$.",
+     "as": "m/sৰ পৰা km/h: $\\frac{18}{5}$ৰে পূৰণ।"
+    },
+    {
+     "en": "Check units first: mixed units cause most wrong answers here.",
+     "as": "প্ৰথমে একক চোৱা: মিহলি এককেই বেছিভাগ ভুলৰ কাৰণ।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m11.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Time turns speed into distance",
+      "as": "সময়ে গতিক দূৰত্ব কৰে"
+     },
+     "text": [
+      {
+       "en": "A car goes 20 m every second. The green line is 300 m away.",
+       "as": "গাড়ীখনে প্ৰতি ছেকেণ্ডত 20 মিটাৰ যায়। সেউজীয়া ৰেখা 300 মিটাৰ দূৰত।"
+      }
+     ],
+     "widget": {
+      "kind": "track",
+      "a": {
+       "v": 20,
+       "n": "A"
+      },
+      "dist": 300,
+      "max": 20
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide time until the car reaches the line.",
+        "as": "গাড়ী ৰেখা নোপোৱালৈ সময় টানা।"
+       },
+       "goal": {
+        "exact": 1
+       },
+       "then": {
+        "en": "20 × 15 = 300. Each second adds the same stretch, so distance is speed × time.",
+        "as": "20 × 15 = 300। প্ৰতি ছেকেণ্ডত একে দূৰত্ব যোগ হয়, সেয়ে দূৰত্ব = গতি × সময়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Where 5 over 18 comes from",
+      "as": "5 ভাগ 18 ক'ৰ পৰা আহিল"
+     },
+     "text": [
+      {
+       "en": "1 km/h means 1000 metres in 3600 seconds, and $\\frac{1000}{3600} = \\frac{5}{18}$.",
+       "as": "1 km/h মানে 3600 ছেকেণ্ডত 1000 মিটাৰ, আৰু $\\frac{1000}{3600} = \\frac{5}{18}$।"
+      },
+      {
+       "en": "A metre per second is the smaller-looking number, so 54 km/h becomes 15 m/s.",
+       "as": "m/sৰ সংখ্যাটো সৰু, সেয়ে 54 km/h হয় 15 m/s।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "1000 m ÷ 3600 s",
+        "as": "1000 মি ÷ 3600 ছে"
+       },
+       {
+        "en": "$\\frac{5}{18}$",
+        "as": "$\\frac{5}{18}$"
+       },
+       {
+        "en": "54 km/h = 15 m/s",
+        "as": "54 km/h = 15 m/s"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m11.u1.q1",
+     "type": "solve",
+     "skill": "sp-basic",
+     "hints": [
+      {
+       "en": "Multiply by 5, divide by 18.",
+       "as": "5ৰে পূৰণ, 18ৰে হৰণ।"
+      }
+     ],
+     "q": {
+      "en": "Convert 54 km/h to m/s.",
+      "as": "54 km/hক m/sলৈ সলনি কৰা।"
+     },
+     "answer": "15",
+     "suffix": {
+      "en": "m/s",
+      "as": "m/s"
+     },
+     "why": {
+      "en": "$54 \\times \\frac{5}{18} = 15$.",
+      "as": "$54 \\times \\frac{5}{18} = 15$।"
+     },
+     "traps": [
+      {
+       "ans": "972/5",
+       "tag": "m-unit-convert",
+       "why": {
+        "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+        "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Convert 54 km/h to m/s.",
+        "as": "54 km/hক m/sলৈ সলনি কৰা।"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "m/s",
+        "as": "m/s"
+       },
+       "why": {
+        "en": "$54 \\times \\frac{5}{18} = 15$.",
+        "as": "$54 \\times \\frac{5}{18} = 15$।"
+       },
+       "traps": [
+        {
+         "ans": "972/5",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+          "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Convert 72 km/h to m/s.",
+        "as": "72 km/hক m/sলৈ সলনি কৰা।"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "m/s",
+        "as": "m/s"
+       },
+       "why": {
+        "en": "$72 \\times \\frac{5}{18} = 20$.",
+        "as": "$72 \\times \\frac{5}{18} = 20$।"
+       },
+       "traps": [
+        {
+         "ans": "1296/5",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+          "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Convert 90 km/h to m/s.",
+        "as": "90 km/hক m/sলৈ সলনি কৰা।"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "m/s",
+        "as": "m/s"
+       },
+       "why": {
+        "en": "$90 \\times \\frac{5}{18} = 25$.",
+        "as": "$90 \\times \\frac{5}{18} = 25$।"
+       },
+       "traps": [
+        {
+         "ans": "324",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+          "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Convert 36 km/h to m/s.",
+        "as": "36 km/hক m/sলৈ সলনি কৰা।"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "m/s",
+        "as": "m/s"
+       },
+       "why": {
+        "en": "$36 \\times \\frac{5}{18} = 10$.",
+        "as": "$36 \\times \\frac{5}{18} = 10$।"
+       },
+       "traps": [
+        {
+         "ans": "648/5",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+          "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u1.q2",
+     "type": "solve",
+     "skill": "sp-basic",
+     "q": {
+      "en": "A runner covers 1600 m in 200 seconds. What is the speed in km/h?",
+      "as": "এজন দৌৰবিদে 200 ছেকেণ্ডত 1600 মিটাৰ যায়। km/hত গতি কিমান?"
+     },
+     "answer": "144/5",
+     "suffix": {
+      "en": "km/h",
+      "as": "km/h"
+     },
+     "why": {
+      "en": "8 m/s × $\\frac{18}{5}$.",
+      "as": "8 m/s × $\\frac{18}{5}$।"
+     },
+     "traps": [
+      {
+       "ans": "8",
+       "tag": "m-unit-convert",
+       "why": {
+        "en": "That is the speed in m/s. The question asks for km/h.",
+        "as": "সেয়া m/sত গতি। প্ৰশ্নত km/h বিচাৰিছে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A runner covers 1600 m in 200 seconds. What is the speed in km/h?",
+        "as": "এজন দৌৰবিদে 200 ছেকেণ্ডত 1600 মিটাৰ যায়। km/hত গতি কিমান?"
+       },
+       "answer": "144/5",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "8 m/s × $\\frac{18}{5}$.",
+        "as": "8 m/s × $\\frac{18}{5}$।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "That is the speed in m/s. The question asks for km/h.",
+          "as": "সেয়া m/sত গতি। প্ৰশ্নত km/h বিচাৰিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A runner covers 900 m in 150 seconds. What is the speed in km/h?",
+        "as": "এজন দৌৰবিদে 150 ছেকেণ্ডত 900 মিটাৰ যায়। km/hত গতি কিমান?"
+       },
+       "answer": "108/5",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "6 m/s × $\\frac{18}{5}$.",
+        "as": "6 m/s × $\\frac{18}{5}$।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "That is the speed in m/s. The question asks for km/h.",
+          "as": "সেয়া m/sত গতি। প্ৰশ্নত km/h বিচাৰিছে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A runner covers 500 m in 100 seconds. What is the speed in km/h?",
+        "as": "এজন দৌৰবিদে 100 ছেকেণ্ডত 500 মিটাৰ যায়। km/hত গতি কিমান?"
+       },
+       "answer": "18",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "5 m/s × $\\frac{18}{5}$.",
+        "as": "5 m/s × $\\frac{18}{5}$।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "That is the speed in m/s. The question asks for km/h.",
+          "as": "সেয়া m/sত গতি। প্ৰশ্নত km/h বিচাৰিছে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u1.q3",
+     "type": "explore",
+     "skill": "sp-basic",
+     "q": {
+      "en": "At 15 m/s, how many seconds to cover 180 m?",
+      "as": "15 m/s গতিত 180 মিটাৰ যাবলৈ কিমান ছেকেণ্ড?"
+     },
+     "widget": {
+      "kind": "track",
+      "a": {
+       "v": 15,
+       "n": "A"
+      },
+      "dist": 180,
+      "max": 20
+     },
+     "target": 12,
+     "answerText": {
+      "en": "12 seconds",
+      "as": "12 ছেকেণ্ড"
+     },
+     "why": {
+      "en": "180 ÷ 15.",
+      "as": "180 ÷ 15।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "At 15 m/s, how many seconds to cover 180 m?",
+        "as": "15 m/s গতিত 180 মিটাৰ যাবলৈ কিমান ছেকেণ্ড?"
+       },
+       "widget": {
+        "kind": "track",
+        "a": {
+         "v": 15,
+         "n": "A"
+        },
+        "dist": 180,
+        "max": 20
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12 seconds",
+        "as": "12 ছেকেণ্ড"
+       },
+       "why": {
+        "en": "180 ÷ 15.",
+        "as": "180 ÷ 15।"
+       }
+      },
+      {
+       "q": {
+        "en": "At 25 m/s, how many seconds to cover 200 m?",
+        "as": "25 m/s গতিত 200 মিটাৰ যাবলৈ কিমান ছেকেণ্ড?"
+       },
+       "widget": {
+        "kind": "track",
+        "a": {
+         "v": 25,
+         "n": "A"
+        },
+        "dist": 200,
+        "max": 16
+       },
+       "target": 8,
+       "answerText": {
+        "en": "8 seconds",
+        "as": "8 ছেকেণ্ড"
+       },
+       "why": {
+        "en": "200 ÷ 25.",
+        "as": "200 ÷ 25।"
+       }
+      },
+      {
+       "q": {
+        "en": "At 12 m/s, how many seconds to cover 144 m?",
+        "as": "12 m/s গতিত 144 মিটাৰ যাবলৈ কিমান ছেকেণ্ড?"
+       },
+       "widget": {
+        "kind": "track",
+        "a": {
+         "v": 12,
+         "n": "A"
+        },
+        "dist": 144,
+        "max": 20
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12 seconds",
+        "as": "12 ছেকেণ্ড"
+       },
+       "why": {
+        "en": "144 ÷ 12.",
+        "as": "144 ÷ 12।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u1.q4",
+     "type": "tf",
+     "skill": "sp-basic",
+     "s": {
+      "en": "36 km/h is faster than 12 m/s.",
+      "as": "36 km/h 12 m/sতকৈ বেগী।"
+     },
+     "answer": false,
+     "why": {
+      "en": "36 km/h is 10 m/s, which is slower than 12 m/s.",
+      "as": "36 km/h মানে 10 m/s, 12 m/sতকৈ লাহে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-unit-convert",
+       "why": {
+        "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+        "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u1.q5",
+     "type": "match",
+     "skill": "sp-basic",
+     "q": {
+      "en": "Match the equal speeds",
+      "as": "সমান গতিবোৰ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "18 km/h",
+        "as": "18 km/h"
+       },
+       {
+        "en": "5 m/s",
+        "as": "5 m/s"
+       }
+      ],
+      [
+       {
+        "en": "36 km/h",
+        "as": "36 km/h"
+       },
+       {
+        "en": "10 m/s",
+        "as": "10 m/s"
+       }
+      ],
+      [
+       {
+        "en": "72 km/h",
+        "as": "72 km/h"
+       },
+       {
+        "en": "20 m/s",
+        "as": "20 m/s"
+       }
+      ],
+      [
+       {
+        "en": "108 km/h",
+        "as": "108 km/h"
+       },
+       {
+        "en": "30 m/s",
+        "as": "30 m/s"
+       }
+      ]
+     ],
+     "why": {
+      "en": "18 km/h is exactly 5 m/s, a handy pair to remember.",
+      "as": "18 km/h ঠিক 5 m/s, মনত ৰাখিবলগীয়া যোৰা।"
+     }
+    },
+    {
+     "id": "m11.u1.q6",
+     "type": "solve",
+     "skill": "sp-rel",
+     "hints": [
+      {
+       "en": "× 5/18 turns km/h into m/s.",
+       "as": "× 5/18ই km/hক m/s কৰে।"
+      }
+     ],
+     "q": {
+      "en": "A train 120 m long runs at 54 km/h. How many seconds does it take to cross a bridge 180 m long?",
+      "as": "120 মিটাৰ দীঘল ৰেল 54 km/hত চলে। 180 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "seconds",
+      "as": "ছেকেণ্ড"
+     },
+     "why": {
+      "en": "120 + 180 m at 15 m/s.",
+      "as": "15 m/sত 120 + 180 মিটাৰ।"
+     },
+     "traps": [
+      {
+       "ans": "12",
+       "tag": "m-train-length",
+       "why": {
+        "en": "The whole train must clear, so add its own length.",
+        "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A train 120 m long runs at 54 km/h. How many seconds does it take to cross a bridge 180 m long?",
+        "as": "120 মিটাৰ দীঘল ৰেল 54 km/hত চলে। 180 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "seconds",
+        "as": "ছেকেণ্ড"
+       },
+       "why": {
+        "en": "120 + 180 m at 15 m/s.",
+        "as": "15 m/sত 120 + 180 মিটাৰ।"
+       },
+       "traps": [
+        {
+         "ans": "12",
+         "tag": "m-train-length",
+         "why": {
+          "en": "The whole train must clear, so add its own length.",
+          "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A train 200 m long runs at 72 km/h. How many seconds does it take to cross a bridge 100 m long?",
+        "as": "200 মিটাৰ দীঘল ৰেল 72 km/hত চলে। 100 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "seconds",
+        "as": "ছেকেণ্ড"
+       },
+       "why": {
+        "en": "200 + 100 m at 20 m/s.",
+        "as": "20 m/sত 200 + 100 মিটাৰ।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-train-length",
+         "why": {
+          "en": "The whole train must clear, so add its own length.",
+          "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A train 150 m long runs at 36 km/h. How many seconds does it take to cross a bridge 250 m long?",
+        "as": "150 মিটাৰ দীঘল ৰেল 36 km/hত চলে। 250 মিটাৰ দীঘল দলং পাৰ হ'বলৈ কিমান ছেকেণ্ড লাগিব?"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "seconds",
+        "as": "ছেকেণ্ড"
+       },
+       "why": {
+        "en": "150 + 250 m at 10 m/s.",
+        "as": "10 m/sত 150 + 250 মিটাৰ।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-train-length",
+         "why": {
+          "en": "The whole train must clear, so add its own length.",
+          "as": "গোটেই ৰেলখন পাৰ হ'ব লাগে, সেয়ে নিজৰ দৈৰ্ঘ্য যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Average speed",
+    "as": "গড় গতি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Average speed = total distance ÷ total time.",
+     "as": "গড় গতি = মুঠ দূৰত্ব ÷ মুঠ সময়।"
+    },
+    {
+     "en": "For equal distances at u and v, it is $\\frac{2uv}{u + v}$.",
+     "as": "সমান দূৰত্ব u আৰু v গতিত: $\\frac{2uv}{u + v}$।"
+    },
+    {
+     "en": "It is always closer to the slower speed.",
+     "as": "ই সদায় লাহে গতিৰ ওচৰত।"
+    },
+    {
+     "en": "Speed and time are inverse: $\\frac{3}{4}$ speed means $\\frac{4}{3}$ time.",
+     "as": "গতি আৰু সময় বিপৰীত: $\\frac{3}{4}$ গতি মানে $\\frac{4}{3}$ সময়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m11.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Slow parts last longer",
+      "as": "লাহে অংশ বেছি সময় লয়"
+     },
+     "text": [
+      {
+       "en": "Go 60 km at 30 km/h and return at 60 km/h. Width is time and height is speed. Find the level.",
+       "as": "30 km/hত 60 কিমি গৈ 60 km/hত উভতা। প্ৰস্থ সময়, উচ্চতা গতি। উচ্চতা বিচাৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "journey",
+      "legs": [
+       {
+        "d": 60,
+        "v": 30
+       },
+       {
+        "d": 60,
+        "v": 60
+       }
+      ],
+      "start": 45,
+      "step": 5
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag the line until above equals gap.",
+        "as": "ওপৰ আৰু খালী সমান নোহোৱালৈ ৰেখা টানা।"
+       },
+       "goal": {
+        "balanced": 1
+       },
+       "then": {
+        "en": "40, not 45. The slow leg took 2 hours and the fast leg only 1, so slow time counts for more.",
+        "as": "40, 45 নহয়। লাহে অংশত 2 ঘণ্টা, বেগী অংশত 1 ঘণ্টা, সেয়ে লাহে সময়ৰ ওজন বেছি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Slower means later",
+      "as": "লাহে মানে পলম"
+     },
+     "text": [
+      {
+       "en": "Over a fixed distance, speed × time is fixed: the same idea as people × days.",
+       "as": "নিৰ্দিষ্ট দূৰত্বত গতি × সময় স্থিৰ: মানুহ × দিনৰ একে ধাৰণা।"
+      },
+      {
+       "en": "At $\\frac{3}{4}$ speed the trip takes $\\frac{4}{3}$ of the time, so the extra $\\frac{1}{3}$ is the delay.",
+       "as": "$\\frac{3}{4}$ গতিত $\\frac{4}{3}$ সময় লাগে, সেয়ে অতিৰিক্ত $\\frac{1}{3}$ পলম।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Speed $\\frac{3}{4}$",
+        "as": "গতি $\\frac{3}{4}$"
+       },
+       {
+        "en": "Time $\\frac{4}{3}$",
+        "as": "সময় $\\frac{4}{3}$"
+       },
+       {
+        "en": "Extra $\\frac{1}{3}$ = delay",
+        "as": "অতিৰিক্ত $\\frac{1}{3}$ = পলম"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m11.u2.q1",
+     "type": "explore",
+     "skill": "sp-avg",
+     "q": {
+      "en": "120 km out at 40 km/h and back at 60 km/h. Level the line to find the average speed.",
+      "as": "120 কিমি 40 km/hত গৈ 60 km/hত উভতা। ৰেখা সমান কৰি গড় গতি উলিওৱা।"
+     },
+     "widget": {
+      "kind": "journey",
+      "legs": [
+       {
+        "d": 120,
+        "v": 40
+       },
+       {
+        "d": 120,
+        "v": 60
+       }
+      ],
+      "start": 50
+     },
+     "target": 48,
+     "answerText": {
+      "en": "48 km/h",
+      "as": "48 km/h"
+     },
+     "why": {
+      "en": "Total 240 km in 5 hours.",
+      "as": "মুঠ 240 কিমি 5 ঘণ্টাত।"
+     },
+     "traps": [
+      {
+       "val": 50.0,
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+        "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "120 km out at 40 km/h and back at 60 km/h. Level the line to find the average speed.",
+        "as": "120 কিমি 40 km/hত গৈ 60 km/hত উভতা। ৰেখা সমান কৰি গড় গতি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "journey",
+        "legs": [
+         {
+          "d": 120,
+          "v": 40
+         },
+         {
+          "d": 120,
+          "v": 60
+         }
+        ],
+        "start": 50
+       },
+       "target": 48,
+       "answerText": {
+        "en": "48 km/h",
+        "as": "48 km/h"
+       },
+       "why": {
+        "en": "Total 240 km in 5 hours.",
+        "as": "মুঠ 240 কিমি 5 ঘণ্টাত।"
+       },
+       "traps": [
+        {
+         "val": 50.0,
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "60 km out at 20 km/h and back at 30 km/h. Level the line to find the average speed.",
+        "as": "60 কিমি 20 km/hত গৈ 30 km/hত উভতা। ৰেখা সমান কৰি গড় গতি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "journey",
+        "legs": [
+         {
+          "d": 60,
+          "v": 20
+         },
+         {
+          "d": 60,
+          "v": 30
+         }
+        ],
+        "start": 25
+       },
+       "target": 24,
+       "answerText": {
+        "en": "24 km/h",
+        "as": "24 km/h"
+       },
+       "why": {
+        "en": "Total 120 km in 5 hours.",
+        "as": "মুঠ 120 কিমি 5 ঘণ্টাত।"
+       },
+       "traps": [
+        {
+         "val": 25.0,
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "120 km out at 30 km/h and back at 60 km/h. Level the line to find the average speed.",
+        "as": "120 কিমি 30 km/hত গৈ 60 km/hত উভতা। ৰেখা সমান কৰি গড় গতি উলিওৱা।"
+       },
+       "widget": {
+        "kind": "journey",
+        "legs": [
+         {
+          "d": 120,
+          "v": 30
+         },
+         {
+          "d": 120,
+          "v": 60
+         }
+        ],
+        "start": 45
+       },
+       "target": 40,
+       "answerText": {
+        "en": "40 km/h",
+        "as": "40 km/h"
+       },
+       "why": {
+        "en": "Total 240 km in 6 hours.",
+        "as": "মুঠ 240 কিমি 6 ঘণ্টাত।"
+       },
+       "traps": [
+        {
+         "val": 45.0,
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u2.q2",
+     "type": "solve",
+     "skill": "sp-avg",
+     "hints": [
+      {
+       "en": "Use $\\frac{2uv}{u + v}$.",
+       "as": "$\\frac{2uv}{u + v}$ ব্যৱহাৰ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "A man drives out at 60 km/h and back the same way at 40 km/h. Find his average speed.",
+      "as": "এজনে 60 km/hত গৈ একে বাটেৰে 40 km/hত উভতে। গড় গতি উলিওৱা।"
+     },
+     "answer": "48",
+     "suffix": {
+      "en": "km/h",
+      "as": "km/h"
+     },
+     "why": {
+      "en": "$\\frac{2 \\times 60 \\times 40}{60 + 40}$.",
+      "as": "$\\frac{2 \\times 60 \\times 40}{60 + 40}$।"
+     },
+     "traps": [
+      {
+       "ans": "50",
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+        "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A man drives out at 60 km/h and back the same way at 40 km/h. Find his average speed.",
+        "as": "এজনে 60 km/hত গৈ একে বাটেৰে 40 km/hত উভতে। গড় গতি উলিওৱা।"
+       },
+       "answer": "48",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "$\\frac{2 \\times 60 \\times 40}{60 + 40}$.",
+        "as": "$\\frac{2 \\times 60 \\times 40}{60 + 40}$।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A man drives out at 30 km/h and back the same way at 20 km/h. Find his average speed.",
+        "as": "এজনে 30 km/hত গৈ একে বাটেৰে 20 km/hত উভতে। গড় গতি উলিওৱা।"
+       },
+       "answer": "24",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "$\\frac{2 \\times 30 \\times 20}{30 + 20}$.",
+        "as": "$\\frac{2 \\times 30 \\times 20}{30 + 20}$।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A man drives out at 45 km/h and back the same way at 90 km/h. Find his average speed.",
+        "as": "এজনে 45 km/hত গৈ একে বাটেৰে 90 km/hত উভতে। গড় গতি উলিওৱা।"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "$\\frac{2 \\times 45 \\times 90}{45 + 90}$.",
+        "as": "$\\frac{2 \\times 45 \\times 90}{45 + 90}$।"
+       },
+       "traps": [
+        {
+         "ans": "135/2",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A man drives out at 80 km/h and back the same way at 120 km/h. Find his average speed.",
+        "as": "এজনে 80 km/hত গৈ একে বাটেৰে 120 km/hত উভতে। গড় গতি উলিওৱা।"
+       },
+       "answer": "96",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "$\\frac{2 \\times 80 \\times 120}{80 + 120}$.",
+        "as": "$\\frac{2 \\times 80 \\times 120}{80 + 120}$।"
+       },
+       "traps": [
+        {
+         "ans": "100",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u2.q3",
+     "type": "solve",
+     "skill": "sp-avg",
+     "q": {
+      "en": "A man travels 120 km in 3 hours and then 200 km in 2 hours. Find his average speed.",
+      "as": "এজনে 3 ঘণ্টাত 120 কিমি, তাৰ পিছত 2 ঘণ্টাত 200 কিমি যায়। গড় গতি উলিওৱা।"
+     },
+     "answer": "64",
+     "suffix": {
+      "en": "km/h",
+      "as": "km/h"
+     },
+     "why": {
+      "en": "320 km in 5 hours.",
+      "as": "5 ঘণ্টাত 320 কিমি।"
+     },
+     "traps": [
+      {
+       "ans": "70",
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+        "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A man travels 120 km in 3 hours and then 200 km in 2 hours. Find his average speed.",
+        "as": "এজনে 3 ঘণ্টাত 120 কিমি, তাৰ পিছত 2 ঘণ্টাত 200 কিমি যায়। গড় গতি উলিওৱা।"
+       },
+       "answer": "64",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "320 km in 5 hours.",
+        "as": "5 ঘণ্টাত 320 কিমি।"
+       },
+       "traps": [
+        {
+         "ans": "70",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A man travels 60 km in 2 hours and then 100 km in 3 hours. Find his average speed.",
+        "as": "এজনে 2 ঘণ্টাত 60 কিমি, তাৰ পিছত 3 ঘণ্টাত 100 কিমি যায়। গড় গতি উলিওৱা।"
+       },
+       "answer": "32",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "160 km in 5 hours.",
+        "as": "5 ঘণ্টাত 160 কিমি।"
+       },
+       "traps": [
+        {
+         "ans": "95/3",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A man travels 150 km in 1 hours and then 90 km in 3 hours. Find his average speed.",
+        "as": "এজনে 1 ঘণ্টাত 150 কিমি, তাৰ পিছত 3 ঘণ্টাত 90 কিমি যায়। গড় গতি উলিওৱা।"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "km/h",
+        "as": "km/h"
+       },
+       "why": {
+        "en": "240 km in 4 hours.",
+        "as": "4 ঘণ্টাত 240 কিমি।"
+       },
+       "traps": [
+        {
+         "ans": "90",
+         "tag": "m-speed-avg",
+         "why": {
+          "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+          "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u2.q4",
+     "type": "tf",
+     "skill": "sp-avg",
+     "s": {
+      "en": "Going out at 40 km/h and back at 60 km/h averages 50 km/h.",
+      "as": "40 km/hত গৈ 60 km/hত উভতিলে গড় 50 km/h।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 48: more time goes on the slower leg.",
+      "as": "ই 48: লাহে অংশত বেছি সময় লাগে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-speed-avg",
+       "why": {
+        "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+        "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u2.q5",
+     "type": "stepwise",
+     "skill": "sp-avg",
+     "q": {
+      "en": "Walking at $3/4$ of his usual speed, a man is 10 minutes late. What is his usual time?",
+      "as": "সাধাৰণ গতিৰ $3/4$ অংশত খোজ কাঢ়ি এজন 10 মিনিট পলম হয়। সাধাৰণ সময় কিমান?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The new time is what fraction of usual?",
+        "as": "নতুন সময় সাধাৰণৰ কিমান অংশ?"
+       },
+       "options": [
+        {
+         "en": "$3/4$",
+         "as": "$3/4$"
+        },
+        {
+         "en": "$4/3$",
+         "as": "$4/3$"
+        },
+        {
+         "en": "1",
+         "as": "1"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Time is the flip of speed.",
+        "as": "সময় গতিৰ ওলোটা।"
+       },
+       "tag": "m-time-inverse"
+      },
+      {
+       "ask": {
+        "en": "The delay is what fraction of usual?",
+        "as": "পলম সাধাৰণৰ কিমান অংশ?"
+       },
+       "options": [
+        {
+         "en": "$1/3$",
+         "as": "$1/3$"
+        },
+        {
+         "en": "$1/4$",
+         "as": "$1/4$"
+        },
+        {
+         "en": "$3/4$",
+         "as": "$3/4$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Take 1 away from the new fraction.",
+        "as": "নতুন অংশৰ পৰা 1 বাদ দিয়া।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Usual time?",
+        "as": "সাধাৰণ সময়?"
+       },
+       "options": [
+        {
+         "en": "30 minutes",
+         "as": "30 মিনিট"
+        },
+        {
+         "en": "40 minutes",
+         "as": "40 মিনিট"
+        },
+        {
+         "en": "13 minutes",
+         "as": "13 মিনিট"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Delay ÷ that fraction.",
+        "as": "পলম ÷ সেই অংশ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Speed and time are inverse, just like people and days.",
+      "as": "গতি আৰু সময় বিপৰীত, মানুহ আৰু দিনৰ দৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Walking at $3/4$ of his usual speed, a man is 10 minutes late. What is his usual time?",
+        "as": "সাধাৰণ গতিৰ $3/4$ অংশত খোজ কাঢ়ি এজন 10 মিনিট পলম হয়। সাধাৰণ সময় কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The new time is what fraction of usual?",
+          "as": "নতুন সময় সাধাৰণৰ কিমান অংশ?"
+         },
+         "options": [
+          {
+           "en": "$3/4$",
+           "as": "$3/4$"
+          },
+          {
+           "en": "$4/3$",
+           "as": "$4/3$"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Time is the flip of speed.",
+          "as": "সময় গতিৰ ওলোটা।"
+         },
+         "tag": "m-time-inverse"
+        },
+        {
+         "ask": {
+          "en": "The delay is what fraction of usual?",
+          "as": "পলম সাধাৰণৰ কিমান অংশ?"
+         },
+         "options": [
+          {
+           "en": "$1/3$",
+           "as": "$1/3$"
+          },
+          {
+           "en": "$1/4$",
+           "as": "$1/4$"
+          },
+          {
+           "en": "$3/4$",
+           "as": "$3/4$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take 1 away from the new fraction.",
+          "as": "নতুন অংশৰ পৰা 1 বাদ দিয়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Usual time?",
+          "as": "সাধাৰণ সময়?"
+         },
+         "options": [
+          {
+           "en": "30 minutes",
+           "as": "30 মিনিট"
+          },
+          {
+           "en": "40 minutes",
+           "as": "40 মিনিট"
+          },
+          {
+           "en": "13 minutes",
+           "as": "13 মিনিট"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Delay ÷ that fraction.",
+          "as": "পলম ÷ সেই অংশ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Speed and time are inverse, just like people and days.",
+        "as": "গতি আৰু সময় বিপৰীত, মানুহ আৰু দিনৰ দৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Walking at $4/5$ of his usual speed, a man is 15 minutes late. What is his usual time?",
+        "as": "সাধাৰণ গতিৰ $4/5$ অংশত খোজ কাঢ়ি এজন 15 মিনিট পলম হয়। সাধাৰণ সময় কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The new time is what fraction of usual?",
+          "as": "নতুন সময় সাধাৰণৰ কিমান অংশ?"
+         },
+         "options": [
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "$4/5$",
+           "as": "$4/5$"
+          },
+          {
+           "en": "$5/4$",
+           "as": "$5/4$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Time is the flip of speed.",
+          "as": "সময় গতিৰ ওলোটা।"
+         },
+         "tag": "m-time-inverse"
+        },
+        {
+         "ask": {
+          "en": "The delay is what fraction of usual?",
+          "as": "পলম সাধাৰণৰ কিমান অংশ?"
+         },
+         "options": [
+          {
+           "en": "$4/5$",
+           "as": "$4/5$"
+          },
+          {
+           "en": "$1/4$",
+           "as": "$1/4$"
+          },
+          {
+           "en": "$1/5$",
+           "as": "$1/5$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take 1 away from the new fraction.",
+          "as": "নতুন অংশৰ পৰা 1 বাদ দিয়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Usual time?",
+          "as": "সাধাৰণ সময়?"
+         },
+         "options": [
+          {
+           "en": "75 minutes",
+           "as": "75 মিনিট"
+          },
+          {
+           "en": "19 minutes",
+           "as": "19 মিনিট"
+          },
+          {
+           "en": "60 minutes",
+           "as": "60 মিনিট"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Delay ÷ that fraction.",
+          "as": "পলম ÷ সেই অংশ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Speed and time are inverse, just like people and days.",
+        "as": "গতি আৰু সময় বিপৰীত, মানুহ আৰু দিনৰ দৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "Walking at $2/3$ of his usual speed, a man is 18 minutes late. What is his usual time?",
+        "as": "সাধাৰণ গতিৰ $2/3$ অংশত খোজ কাঢ়ি এজন 18 মিনিট পলম হয়। সাধাৰণ সময় কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The new time is what fraction of usual?",
+          "as": "নতুন সময় সাধাৰণৰ কিমান অংশ?"
+         },
+         "options": [
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "$3/2$",
+           "as": "$3/2$"
+          },
+          {
+           "en": "$2/3$",
+           "as": "$2/3$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Time is the flip of speed.",
+          "as": "সময় গতিৰ ওলোটা।"
+         },
+         "tag": "m-time-inverse"
+        },
+        {
+         "ask": {
+          "en": "The delay is what fraction of usual?",
+          "as": "পলম সাধাৰণৰ কিমান অংশ?"
+         },
+         "options": [
+          {
+           "en": "$1/3$",
+           "as": "$1/3$"
+          },
+          {
+           "en": "$1/2$",
+           "as": "$1/2$"
+          },
+          {
+           "en": "$2/3$",
+           "as": "$2/3$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take 1 away from the new fraction.",
+          "as": "নতুন অংশৰ পৰা 1 বাদ দিয়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Usual time?",
+          "as": "সাধাৰণ সময়?"
+         },
+         "options": [
+          {
+           "en": "36 minutes",
+           "as": "36 মিনিট"
+          },
+          {
+           "en": "20 minutes",
+           "as": "20 মিনিট"
+          },
+          {
+           "en": "54 minutes",
+           "as": "54 মিনিট"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Delay ÷ that fraction.",
+          "as": "পলম ÷ সেই অংশ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Speed and time are inverse, just like people and days.",
+        "as": "গতি আৰু সময় বিপৰীত, মানুহ আৰু দিনৰ দৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u2.q6",
+     "type": "match",
+     "skill": "sp-avg",
+     "q": {
+      "en": "Match the two speeds to the average for equal distances",
+      "as": "দুটা গতিক সমান দূৰত্বৰ গড়ৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "30 and 60",
+        "as": "30 আৰু 60"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       }
+      ],
+      [
+       {
+        "en": "40 and 60",
+        "as": "40 আৰু 60"
+       },
+       {
+        "en": "48",
+        "as": "48"
+       }
+      ],
+      [
+       {
+        "en": "20 and 30",
+        "as": "20 আৰু 30"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      [
+       {
+        "en": "60 and 60",
+        "as": "60 আৰু 60"
+       },
+       {
+        "en": "60",
+        "as": "60"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Only equal speeds give the plain average.",
+      "as": "সমান গতিতহে সাধাৰণ গড় পোৱা যায়।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Trains and closing speed",
+    "as": "ৰেল আৰু আপেক্ষিক গতি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A train passes a pole by covering its own length.",
+     "as": "ৰেলে নিজৰ দৈৰ্ঘ্য পাৰ হ'লে খুঁটা পাৰ হয়।"
+    },
+    {
+     "en": "A platform or bridge adds its length: train + platform.",
+     "as": "প্লেটফৰ্ম বা দলঙৰ দৈৰ্ঘ্য যোগ হয়: ৰেল + প্লেটফৰ্ম।"
+    },
+    {
+     "en": "Opposite directions: speeds add.",
+     "as": "বিপৰীত দিশ: গতি যোগ হয়।"
+    },
+    {
+     "en": "Same direction: speeds subtract.",
+     "as": "একে দিশ: গতি বিয়োগ হয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m11.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Watch the tail",
+      "as": "নেজটো চোৱা"
+     },
+     "text": [
+      {
+       "en": "A 300 m train at 20 m/s meets a pole. When has it passed? The red dot marks its tail.",
+       "as": "20 m/s গতিৰ 300 মিটাৰ ৰেল খুঁটা পালে। কেতিয়া পাৰ হ'ল? ৰঙা বিন্দুৱে নেজ দেখুৱায়।"
+      }
+     ],
+     "widget": {
+      "kind": "track",
+      "a": {
+       "len": 300,
+       "v": 20,
+       "n": "A"
+      },
+      "b": {
+       "len": 0,
+       "v": 0
+      },
+      "gap": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide time until the tail clears the pole.",
+        "as": "নেজ খুঁটা পাৰ নোহোৱালৈ সময় টানা।"
+       },
+       "goal": {
+        "exact": 1
+       },
+       "then": {
+        "en": "15 seconds. The front was already there at the start, so the train had to cover its own 300 m.",
+        "as": "15 ছেকেণ্ড। আগফাল আৰম্ভণিতে আছিল, সেয়ে ৰেলে নিজৰ 300 মিটাৰ পাৰ হ'ব লাগিল।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Two trains head to head",
+      "as": "মুখামুখি দুখন ৰেল"
+     },
+     "text": [
+      {
+       "en": "Trains of 200 m and 100 m run towards each other at 20 and 10 m/s. The green bar is the distance to close.",
+       "as": "200 আৰু 100 মিটাৰৰ ৰেল 20 আৰু 10 m/sত মুখামুখি। সেউজীয়া বাৰ মিলিব লগা দূৰত্ব।"
+      }
+     ],
+     "widget": {
+      "kind": "track",
+      "a": {
+       "len": 200,
+       "v": 20,
+       "n": "A"
+      },
+      "b": {
+       "len": 100,
+       "v": -10,
+       "n": "B"
+      },
+      "gap": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide time until they have fully passed.",
+        "as": "সম্পূৰ্ণ পাৰ নোহোৱালৈ সময় টানা।"
+       },
+       "goal": {
+        "exact": 1
+       },
+       "then": {
+        "en": "300 m at a closing speed of 30 m/s takes 10 seconds. Only the closing speed matters.",
+        "as": "30 m/s আপেক্ষিক গতিত 300 মিটাৰত 10 ছেকেণ্ড। কেৱল আপেক্ষিক গতিয়েই গুৰুত্বপূৰ্ণ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.q1",
+     "type": "explore",
+     "skill": "sp-rel",
+     "q": {
+      "en": "A 200 m train at 15 m/s crosses a 100 m platform. Slide to the moment the tail clears.",
+      "as": "15 m/s গতিৰ 200 মিটাৰ ৰেলে 100 মিটাৰ প্লেটফৰ্ম পাৰ হয়। নেজ পাৰ হোৱা মুহূৰ্তলৈ টানা।"
+     },
+     "widget": {
+      "kind": "track",
+      "a": {
+       "len": 200,
+       "v": 15,
+       "n": "A"
+      },
+      "b": {
+       "len": 100,
+       "v": 0
+      },
+      "gap": 0
+     },
+     "target": 20,
+     "answerText": {
+      "en": "20 seconds",
+      "as": "20 ছেকেণ্ড"
+     },
+     "why": {
+      "en": "(200 + 100) ÷ 15.",
+      "as": "(200 + 100) ÷ 15।"
+     },
+     "traps": [
+      {
+       "val": 6.666666666666667,
+       "tag": "m-train-length",
+       "why": {
+        "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+        "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A 200 m train at 15 m/s crosses a 100 m platform. Slide to the moment the tail clears.",
+        "as": "15 m/s গতিৰ 200 মিটাৰ ৰেলে 100 মিটাৰ প্লেটফৰ্ম পাৰ হয়। নেজ পাৰ হোৱা মুহূৰ্তলৈ টানা।"
+       },
+       "widget": {
+        "kind": "track",
+        "a": {
+         "len": 200,
+         "v": 15,
+         "n": "A"
+        },
+        "b": {
+         "len": 100,
+         "v": 0
+        },
+        "gap": 0
+       },
+       "target": 20,
+       "answerText": {
+        "en": "20 seconds",
+        "as": "20 ছেকেণ্ড"
+       },
+       "why": {
+        "en": "(200 + 100) ÷ 15.",
+        "as": "(200 + 100) ÷ 15।"
+       },
+       "traps": [
+        {
+         "val": 6.666666666666667,
+         "tag": "m-train-length",
+         "why": {
+          "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+          "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A 150 m train at 20 m/s crosses a 250 m platform. Slide to the moment the tail clears.",
+        "as": "20 m/s গতিৰ 150 মিটাৰ ৰেলে 250 মিটাৰ প্লেটফৰ্ম পাৰ হয়। নেজ পাৰ হোৱা মুহূৰ্তলৈ টানা।"
+       },
+       "widget": {
+        "kind": "track",
+        "a": {
+         "len": 150,
+         "v": 20,
+         "n": "A"
+        },
+        "b": {
+         "len": 250,
+         "v": 0
+        },
+        "gap": 0
+       },
+       "target": 20,
+       "answerText": {
+        "en": "20 seconds",
+        "as": "20 ছেকেণ্ড"
+       },
+       "why": {
+        "en": "(150 + 250) ÷ 20.",
+        "as": "(150 + 250) ÷ 20।"
+       },
+       "traps": [
+        {
+         "val": 12.5,
+         "tag": "m-train-length",
+         "why": {
+          "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+          "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A 120 m train at 10 m/s crosses a 180 m platform. Slide to the moment the tail clears.",
+        "as": "10 m/s গতিৰ 120 মিটাৰ ৰেলে 180 মিটাৰ প্লেটফৰ্ম পাৰ হয়। নেজ পাৰ হোৱা মুহূৰ্তলৈ টানা।"
+       },
+       "widget": {
+        "kind": "track",
+        "a": {
+         "len": 120,
+         "v": 10,
+         "n": "A"
+        },
+        "b": {
+         "len": 180,
+         "v": 0
+        },
+        "gap": 0
+       },
+       "target": 30,
+       "answerText": {
+        "en": "30 seconds",
+        "as": "30 ছেকেণ্ড"
+       },
+       "why": {
+        "en": "(120 + 180) ÷ 10.",
+        "as": "(120 + 180) ÷ 10।"
+       },
+       "traps": [
+        {
+         "val": 18.0,
+         "tag": "m-train-length",
+         "why": {
+          "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+          "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.q2",
+     "type": "solve",
+     "skill": "sp-rel",
+     "hints": [
+      {
+       "en": "Convert km/h to m/s first.",
+       "as": "প্ৰথমে km/hক m/s কৰা।"
+      }
+     ],
+     "q": {
+      "en": "A 300 m train runs at 54 km/h. How many seconds to pass a pole?",
+      "as": "300 মিটাৰ ৰেল 54 km/hত চলে। খুঁটা পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "s",
+      "as": "ছে"
+     },
+     "why": {
+      "en": "54 km/h is 15 m/s, and 300 ÷ 15.",
+      "as": "54 km/h মানে 15 m/s, আৰু 300 ÷ 15।"
+     },
+     "traps": [
+      {
+       "ans": "50/9",
+       "tag": "m-unit-convert",
+       "why": {
+        "en": "Metres and km/h do not mix. Convert the speed first.",
+        "as": "মিটাৰ আৰু km/h নিমিলে। প্ৰথমে গতি সলনি কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A 300 m train runs at 54 km/h. How many seconds to pass a pole?",
+        "as": "300 মিটাৰ ৰেল 54 km/hত চলে। খুঁটা পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "54 km/h is 15 m/s, and 300 ÷ 15.",
+        "as": "54 km/h মানে 15 m/s, আৰু 300 ÷ 15।"
+       },
+       "traps": [
+        {
+         "ans": "50/9",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Metres and km/h do not mix. Convert the speed first.",
+          "as": "মিটাৰ আৰু km/h নিমিলে। প্ৰথমে গতি সলনি কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A 200 m train runs at 72 km/h. How many seconds to pass a pole?",
+        "as": "200 মিটাৰ ৰেল 72 km/hত চলে। খুঁটা পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "72 km/h is 20 m/s, and 200 ÷ 20.",
+        "as": "72 km/h মানে 20 m/s, আৰু 200 ÷ 20।"
+       },
+       "traps": [
+        {
+         "ans": "25/9",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Metres and km/h do not mix. Convert the speed first.",
+          "as": "মিটাৰ আৰু km/h নিমিলে। প্ৰথমে গতি সলনি কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A 500 m train runs at 90 km/h. How many seconds to pass a pole?",
+        "as": "500 মিটাৰ ৰেল 90 km/hত চলে। খুঁটা পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "90 km/h is 25 m/s, and 500 ÷ 25.",
+        "as": "90 km/h মানে 25 m/s, আৰু 500 ÷ 25।"
+       },
+       "traps": [
+        {
+         "ans": "50/9",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Metres and km/h do not mix. Convert the speed first.",
+          "as": "মিটাৰ আৰু km/h নিমিলে। প্ৰথমে গতি সলনি কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A 150 m train runs at 36 km/h. How many seconds to pass a pole?",
+        "as": "150 মিটাৰ ৰেল 36 km/hত চলে। খুঁটা পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "36 km/h is 10 m/s, and 150 ÷ 10.",
+        "as": "36 km/h মানে 10 m/s, আৰু 150 ÷ 10।"
+       },
+       "traps": [
+        {
+         "ans": "25/6",
+         "tag": "m-unit-convert",
+         "why": {
+          "en": "Metres and km/h do not mix. Convert the speed first.",
+          "as": "মিটাৰ আৰু km/h নিমিলে। প্ৰথমে গতি সলনি কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.q3",
+     "type": "tf",
+     "skill": "sp-rel",
+     "s": {
+      "en": "Two trains going the same way pass at the sum of their speeds.",
+      "as": "একে দিশত যোৱা দুখন ৰেল গতিৰ যোগফলত পাৰ হয়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "One gains only the difference on the other.",
+      "as": "এখনে আনখনতকৈ কেৱল পাৰ্থক্যহে আগবাঢ়ে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-rel-sign",
+       "why": {
+        "en": "Opposite directions add the speeds; the same direction subtracts them.",
+        "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.q4",
+     "type": "stepwise",
+     "skill": "sp-rel",
+     "q": {
+      "en": "Trains of 200 m and 100 m run the same way at 25 m/s and 15 m/s. How long does the faster take to pass the slower?",
+      "as": "200 আৰু 100 মিটাৰৰ ৰেল একে দিশত 25 আৰু 15 m/sত চলে। বেগীখনে লাহেখনক পাৰ হ'বলৈ কিমান সময় লাগিব?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Distance to cover?",
+        "as": "পাৰ হ'ব লগা দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "200 m",
+         "as": "200 মি"
+        },
+        {
+         "en": "100 m",
+         "as": "100 মি"
+        },
+        {
+         "en": "300 m",
+         "as": "300 মি"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Both lengths must pass.",
+        "as": "দুয়োটা দৈৰ্ঘ্য পাৰ হ'ব লাগিব।"
+       },
+       "tag": "m-train-length"
+      },
+      {
+       "ask": {
+        "en": "Closing speed?",
+        "as": "আপেক্ষিক গতি?"
+       },
+       "options": [
+        {
+         "en": "25 m/s",
+         "as": "25 m/s"
+        },
+        {
+         "en": "40 m/s",
+         "as": "40 m/s"
+        },
+        {
+         "en": "10 m/s",
+         "as": "10 m/s"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Same direction subtracts.",
+        "as": "একে দিশত বিয়োগ।"
+       },
+       "tag": "m-rel-sign"
+      },
+      {
+       "ask": {
+        "en": "Time?",
+        "as": "সময়?"
+       },
+       "options": [
+        {
+         "en": "30 s",
+         "as": "30 ছে"
+        },
+        {
+         "en": "20 s",
+         "as": "20 ছে"
+        },
+        {
+         "en": "7 s",
+         "as": "7 ছে"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Distance ÷ closing speed.",
+        "as": "দূৰত্ব ÷ আপেক্ষিক গতি।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Think of the slower train as standing still.",
+      "as": "লাহে ৰেলখন ৰৈ আছে বুলি ভাবা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Trains of 200 m and 100 m run the same way at 25 m/s and 15 m/s. How long does the faster take to pass the slower?",
+        "as": "200 আৰু 100 মিটাৰৰ ৰেল একে দিশত 25 আৰু 15 m/sত চলে। বেগীখনে লাহেখনক পাৰ হ'বলৈ কিমান সময় লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Distance to cover?",
+          "as": "পাৰ হ'ব লগা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "200 m",
+           "as": "200 মি"
+          },
+          {
+           "en": "100 m",
+           "as": "100 মি"
+          },
+          {
+           "en": "300 m",
+           "as": "300 মি"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Both lengths must pass.",
+          "as": "দুয়োটা দৈৰ্ঘ্য পাৰ হ'ব লাগিব।"
+         },
+         "tag": "m-train-length"
+        },
+        {
+         "ask": {
+          "en": "Closing speed?",
+          "as": "আপেক্ষিক গতি?"
+         },
+         "options": [
+          {
+           "en": "25 m/s",
+           "as": "25 m/s"
+          },
+          {
+           "en": "40 m/s",
+           "as": "40 m/s"
+          },
+          {
+           "en": "10 m/s",
+           "as": "10 m/s"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Same direction subtracts.",
+          "as": "একে দিশত বিয়োগ।"
+         },
+         "tag": "m-rel-sign"
+        },
+        {
+         "ask": {
+          "en": "Time?",
+          "as": "সময়?"
+         },
+         "options": [
+          {
+           "en": "30 s",
+           "as": "30 ছে"
+          },
+          {
+           "en": "20 s",
+           "as": "20 ছে"
+          },
+          {
+           "en": "7 s",
+           "as": "7 ছে"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Distance ÷ closing speed.",
+          "as": "দূৰত্ব ÷ আপেক্ষিক গতি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Think of the slower train as standing still.",
+        "as": "লাহে ৰেলখন ৰৈ আছে বুলি ভাবা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Trains of 150 m and 150 m run the same way at 30 m/s and 20 m/s. How long does the faster take to pass the slower?",
+        "as": "150 আৰু 150 মিটাৰৰ ৰেল একে দিশত 30 আৰু 20 m/sত চলে। বেগীখনে লাহেখনক পাৰ হ'বলৈ কিমান সময় লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Distance to cover?",
+          "as": "পাৰ হ'ব লগা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "0 m",
+           "as": "0 মি"
+          },
+          {
+           "en": "300 m",
+           "as": "300 মি"
+          },
+          {
+           "en": "150 m",
+           "as": "150 মি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Both lengths must pass.",
+          "as": "দুয়োটা দৈৰ্ঘ্য পাৰ হ'ব লাগিব।"
+         },
+         "tag": "m-train-length"
+        },
+        {
+         "ask": {
+          "en": "Closing speed?",
+          "as": "আপেক্ষিক গতি?"
+         },
+         "options": [
+          {
+           "en": "50 m/s",
+           "as": "50 m/s"
+          },
+          {
+           "en": "10 m/s",
+           "as": "10 m/s"
+          },
+          {
+           "en": "30 m/s",
+           "as": "30 m/s"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Same direction subtracts.",
+          "as": "একে দিশত বিয়োগ।"
+         },
+         "tag": "m-rel-sign"
+        },
+        {
+         "ask": {
+          "en": "Time?",
+          "as": "সময়?"
+         },
+         "options": [
+          {
+           "en": "15 s",
+           "as": "15 ছে"
+          },
+          {
+           "en": "30 s",
+           "as": "30 ছে"
+          },
+          {
+           "en": "6 s",
+           "as": "6 ছে"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Distance ÷ closing speed.",
+          "as": "দূৰত্ব ÷ আপেক্ষিক গতি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Think of the slower train as standing still.",
+        "as": "লাহে ৰেলখন ৰৈ আছে বুলি ভাবা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Trains of 300 m and 100 m run the same way at 28 m/s and 8 m/s. How long does the faster take to pass the slower?",
+        "as": "300 আৰু 100 মিটাৰৰ ৰেল একে দিশত 28 আৰু 8 m/sত চলে। বেগীখনে লাহেখনক পাৰ হ'বলৈ কিমান সময় লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Distance to cover?",
+          "as": "পাৰ হ'ব লগা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "400 m",
+           "as": "400 মি"
+          },
+          {
+           "en": "300 m",
+           "as": "300 মি"
+          },
+          {
+           "en": "200 m",
+           "as": "200 মি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Both lengths must pass.",
+          "as": "দুয়োটা দৈৰ্ঘ্য পাৰ হ'ব লাগিব।"
+         },
+         "tag": "m-train-length"
+        },
+        {
+         "ask": {
+          "en": "Closing speed?",
+          "as": "আপেক্ষিক গতি?"
+         },
+         "options": [
+          {
+           "en": "28 m/s",
+           "as": "28 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          },
+          {
+           "en": "36 m/s",
+           "as": "36 m/s"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Same direction subtracts.",
+          "as": "একে দিশত বিয়োগ।"
+         },
+         "tag": "m-rel-sign"
+        },
+        {
+         "ask": {
+          "en": "Time?",
+          "as": "সময়?"
+         },
+         "options": [
+          {
+           "en": "20 s",
+           "as": "20 ছে"
+          },
+          {
+           "en": "15 s",
+           "as": "15 ছে"
+          },
+          {
+           "en": "11 s",
+           "as": "11 ছে"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Distance ÷ closing speed.",
+          "as": "দূৰত্ব ÷ আপেক্ষিক গতি।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Think of the slower train as standing still.",
+        "as": "লাহে ৰেলখন ৰৈ আছে বুলি ভাবা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.q5",
+     "type": "solve",
+     "skill": "sp-rel",
+     "q": {
+      "en": "Trains of 300 m and 200 m run towards each other at 15 m/s and 10 m/s. How many seconds to pass completely?",
+      "as": "300 আৰু 200 মিটাৰৰ ৰেল 15 আৰু 10 m/sত মুখামুখি চলে। সম্পূৰ্ণ পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "s",
+      "as": "ছে"
+     },
+     "why": {
+      "en": "500 ÷ 25.",
+      "as": "500 ÷ 25।"
+     },
+     "traps": [
+      {
+       "ans": "100",
+       "tag": "m-rel-sign",
+       "why": {
+        "en": "Opposite directions add the speeds; the same direction subtracts them.",
+        "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Trains of 300 m and 200 m run towards each other at 15 m/s and 10 m/s. How many seconds to pass completely?",
+        "as": "300 আৰু 200 মিটাৰৰ ৰেল 15 আৰু 10 m/sত মুখামুখি চলে। সম্পূৰ্ণ পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "500 ÷ 25.",
+        "as": "500 ÷ 25।"
+       },
+       "traps": [
+        {
+         "ans": "100",
+         "tag": "m-rel-sign",
+         "why": {
+          "en": "Opposite directions add the speeds; the same direction subtracts them.",
+          "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Trains of 250 m and 150 m run towards each other at 12 m/s and 8 m/s. How many seconds to pass completely?",
+        "as": "250 আৰু 150 মিটাৰৰ ৰেল 12 আৰু 8 m/sত মুখামুখি চলে। সম্পূৰ্ণ পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "400 ÷ 20.",
+        "as": "400 ÷ 20।"
+       },
+       "traps": [
+        {
+         "ans": "100",
+         "tag": "m-rel-sign",
+         "why": {
+          "en": "Opposite directions add the speeds; the same direction subtracts them.",
+          "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Trains of 180 m and 120 m run towards each other at 18 m/s and 12 m/s. How many seconds to pass completely?",
+        "as": "180 আৰু 120 মিটাৰৰ ৰেল 18 আৰু 12 m/sত মুখামুখি চলে। সম্পূৰ্ণ পাৰ হ'বলৈ কিমান ছেকেণ্ড?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "s",
+        "as": "ছে"
+       },
+       "why": {
+        "en": "300 ÷ 30.",
+        "as": "300 ÷ 30।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "m-rel-sign",
+         "why": {
+          "en": "Opposite directions add the speeds; the same direction subtracts them.",
+          "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m11.u3.q6",
+     "type": "match",
+     "skill": "sp-rel",
+     "q": {
+      "en": "Match the crossing to the distance",
+      "as": "পাৰ হোৱাক দূৰত্বৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "A pole",
+        "as": "খুঁটা"
+       },
+       {
+        "en": "Train length",
+        "as": "ৰেলৰ দৈৰ্ঘ্য"
+       }
+      ],
+      [
+       {
+        "en": "A platform",
+        "as": "প্লেটফৰ্ম"
+       },
+       {
+        "en": "Train + platform",
+        "as": "ৰেল + প্লেটফৰ্ম"
+       }
+      ],
+      [
+       {
+        "en": "Another train",
+        "as": "আন ৰেল"
+       },
+       {
+        "en": "Train + train",
+        "as": "ৰেল + ৰেল"
+       }
+      ],
+      [
+       {
+        "en": "A person walking",
+        "as": "খোজ কঢ়া মানুহ"
+       },
+       {
+        "en": "Train length, closing speed",
+        "as": "ৰেলৰ দৈৰ্ঘ্য, আপেক্ষিক গতি"
+       }
+      ]
+     ],
+     "why": {
+      "en": "A person or pole has no length worth counting.",
+      "as": "মানুহ বা খুঁটাৰ দৈৰ্ঘ্য ধৰা নহয়।"
+     }
+    },
+    {
+     "id": "m11.u3.q7",
+     "type": "stepwise",
+     "skill": "sp-rel",
+     "q": {
+      "en": "A train passes a man in 8 seconds and a 240 m platform in 20 seconds. Find its length.",
+      "as": "এখন ৰেলে এজন মানুহক 8 ছেকেণ্ডত আৰু 240 মিটাৰৰ প্লেটফৰ্ম 20 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Extra seconds for the platform?",
+        "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+       },
+       "options": [
+        {
+         "en": "20",
+         "as": "20"
+        },
+        {
+         "en": "28",
+         "as": "28"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The train's own length costs the same in both.",
+        "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Speed?",
+        "as": "গতি?"
+       },
+       "options": [
+        {
+         "en": "15 m/s",
+         "as": "15 m/s"
+        },
+        {
+         "en": "25 m/s",
+         "as": "25 m/s"
+        },
+        {
+         "en": "20 m/s",
+         "as": "20 m/s"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Platform length over extra seconds.",
+        "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Train length?",
+        "as": "ৰেলৰ দৈৰ্ঘ্য?"
+       },
+       "options": [
+        {
+         "en": "240 m ",
+         "as": "240 m "
+        },
+        {
+         "en": "160 m",
+         "as": "160 m"
+        },
+        {
+         "en": "400 m",
+         "as": "400 m"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Speed × time to pass the man.",
+        "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+       },
+       "tag": "m-train-length"
+      }
+     ],
+     "why": {
+      "en": "The gap between the two times is the platform alone.",
+      "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A train passes a man in 8 seconds and a 240 m platform in 20 seconds. Find its length.",
+        "as": "এখন ৰেলে এজন মানুহক 8 ছেকেণ্ডত আৰু 240 মিটাৰৰ প্লেটফৰ্ম 20 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Extra seconds for the platform?",
+          "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The train's own length costs the same in both.",
+          "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Speed?",
+          "as": "গতি?"
+         },
+         "options": [
+          {
+           "en": "15 m/s",
+           "as": "15 m/s"
+          },
+          {
+           "en": "25 m/s",
+           "as": "25 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Platform length over extra seconds.",
+          "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Train length?",
+          "as": "ৰেলৰ দৈৰ্ঘ্য?"
+         },
+         "options": [
+          {
+           "en": "240 m ",
+           "as": "240 m "
+          },
+          {
+           "en": "160 m",
+           "as": "160 m"
+          },
+          {
+           "en": "400 m",
+           "as": "400 m"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Speed × time to pass the man.",
+          "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+         },
+         "tag": "m-train-length"
+        }
+       ],
+       "why": {
+        "en": "The gap between the two times is the platform alone.",
+        "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "A train passes a man in 12 seconds and a 270 m platform in 30 seconds. Find its length.",
+        "as": "এখন ৰেলে এজন মানুহক 12 ছেকেণ্ডত আৰু 270 মিটাৰৰ প্লেটফৰ্ম 30 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Extra seconds for the platform?",
+          "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+         },
+         "options": [
+          {
+           "en": "42",
+           "as": "42"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The train's own length costs the same in both.",
+          "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Speed?",
+          "as": "গতি?"
+         },
+         "options": [
+          {
+           "en": "10 m/s",
+           "as": "10 m/s"
+          },
+          {
+           "en": "15 m/s",
+           "as": "15 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Platform length over extra seconds.",
+          "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Train length?",
+          "as": "ৰেলৰ দৈৰ্ঘ্য?"
+         },
+         "options": [
+          {
+           "en": "180 m",
+           "as": "180 m"
+          },
+          {
+           "en": "270 m ",
+           "as": "270 m "
+          },
+          {
+           "en": "450 m",
+           "as": "450 m"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Speed × time to pass the man.",
+          "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+         },
+         "tag": "m-train-length"
+        }
+       ],
+       "why": {
+        "en": "The gap between the two times is the platform alone.",
+        "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "A train passes a man in 10 seconds and a 300 m platform in 25 seconds. Find its length.",
+        "as": "এখন ৰেলে এজন মানুহক 10 ছেকেণ্ডত আৰু 300 মিটাৰৰ প্লেটফৰ্ম 25 ছেকেণ্ডত পাৰ হয়। ইয়াৰ দৈৰ্ঘ্য উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Extra seconds for the platform?",
+          "as": "প্লেটফৰ্মৰ বাবে অতিৰিক্ত ছেকেণ্ড?"
+         },
+         "options": [
+          {
+           "en": "35",
+           "as": "35"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The train's own length costs the same in both.",
+          "as": "ৰেলৰ নিজৰ দৈৰ্ঘ্যৰ সময় দুয়োটাত একে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Speed?",
+          "as": "গতি?"
+         },
+         "options": [
+          {
+           "en": "15 m/s",
+           "as": "15 m/s"
+          },
+          {
+           "en": "20 m/s",
+           "as": "20 m/s"
+          },
+          {
+           "en": "25 m/s",
+           "as": "25 m/s"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Platform length over extra seconds.",
+          "as": "প্লেটফৰ্মৰ দৈৰ্ঘ্য ভাগ অতিৰিক্ত ছেকেণ্ড।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Train length?",
+          "as": "ৰেলৰ দৈৰ্ঘ্য?"
+         },
+         "options": [
+          {
+           "en": "200 m",
+           "as": "200 m"
+          },
+          {
+           "en": "300 m ",
+           "as": "300 m "
+          },
+          {
+           "en": "500 m",
+           "as": "500 m"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Speed × time to pass the man.",
+          "as": "গতি × মানুহক পাৰ হোৱা সময়।"
+         },
+         "tag": "m-train-length"
+        }
+       ],
+       "why": {
+        "en": "The gap between the two times is the platform alone.",
+        "as": "দুই সময়ৰ পাৰ্থক্য কেৱল প্লেটফৰ্মৰ।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Speed test",
+   "as": "গতিৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m11.t.q1",
+    "type": "mcq",
+    "skill": "sp-basic",
+    "q": {
+     "en": "126 km/h in m/s is",
+     "as": "126 km/h m/sত"
+    },
+    "why": {
+     "en": "Multiply by $\\frac{5}{18}$.",
+     "as": "$\\frac{5}{18}$ৰে পূৰণ।"
+    },
+    "options": [
+     {
+      "en": "63",
+      "as": "63"
+     },
+     {
+      "en": "$\\frac{2268}{5}$",
+      "as": "$\\frac{2268}{5}$"
+     },
+     {
+      "en": "40",
+      "as": "40"
+     },
+     {
+      "en": "35",
+      "as": "35"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-unit-convert",
+      "why": {
+       "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+       "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "126 km/h in m/s is",
+       "as": "126 km/h m/sত"
+      },
+      "why": {
+       "en": "Multiply by $\\frac{5}{18}$.",
+       "as": "$\\frac{5}{18}$ৰে পূৰণ।"
+      },
+      "options": [
+       {
+        "en": "63",
+        "as": "63"
+       },
+       {
+        "en": "$\\frac{2268}{5}$",
+        "as": "$\\frac{2268}{5}$"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-unit-convert",
+        "why": {
+         "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+         "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "144 km/h in m/s is",
+       "as": "144 km/h m/sত"
+      },
+      "why": {
+       "en": "Multiply by $\\frac{5}{18}$.",
+       "as": "$\\frac{5}{18}$ৰে পূৰণ।"
+      },
+      "options": [
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "$\\frac{2592}{5}$",
+        "as": "$\\frac{2592}{5}$"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       },
+       {
+        "en": "72",
+        "as": "72"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-unit-convert",
+        "why": {
+         "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+         "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "108 km/h in m/s is",
+       "as": "108 km/h m/sত"
+      },
+      "why": {
+       "en": "Multiply by $\\frac{5}{18}$.",
+       "as": "$\\frac{5}{18}$ৰে পূৰণ।"
+      },
+      "options": [
+       {
+        "en": "54",
+        "as": "54"
+       },
+       {
+        "en": "$\\frac{1944}{5}$",
+        "as": "$\\frac{1944}{5}$"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-unit-convert",
+        "why": {
+         "en": "Going from km/h to m/s makes the number smaller, so multiply by $\\frac{5}{18}$, not $\\frac{18}{5}$.",
+         "as": "km/hৰ পৰা m/sলৈ গ'লে সংখ্যা সৰু হয়, সেয়ে $\\frac{18}{5}$ নহয়, $\\frac{5}{18}$ৰে পূৰণ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m11.t.q2",
+    "type": "mcq",
+    "skill": "sp-avg",
+    "q": {
+     "en": "Equal distances at 36 and 45 km/h average",
+     "as": "সমান দূৰত্ব 36 আৰু 45 km/hত গড়"
+    },
+    "why": {
+     "en": "$\\frac{2uv}{u + v}$.",
+     "as": "$\\frac{2uv}{u + v}$।"
+    },
+    "options": [
+     {
+      "en": "40 km/h",
+      "as": "40 km/h"
+     },
+     {
+      "en": "81 km/h",
+      "as": "81 km/h"
+     },
+     {
+      "en": "$\\frac{81}{2}$ km/h",
+      "as": "$\\frac{81}{2}$ km/h"
+     },
+     {
+      "en": "45 km/h",
+      "as": "45 km/h"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-speed-avg",
+      "why": {
+       "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+       "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Equal distances at 36 and 45 km/h average",
+       "as": "সমান দূৰত্ব 36 আৰু 45 km/hত গড়"
+      },
+      "why": {
+       "en": "$\\frac{2uv}{u + v}$.",
+       "as": "$\\frac{2uv}{u + v}$।"
+      },
+      "options": [
+       {
+        "en": "40 km/h",
+        "as": "40 km/h"
+       },
+       {
+        "en": "81 km/h",
+        "as": "81 km/h"
+       },
+       {
+        "en": "$\\frac{81}{2}$ km/h",
+        "as": "$\\frac{81}{2}$ km/h"
+       },
+       {
+        "en": "45 km/h",
+        "as": "45 km/h"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-speed-avg",
+        "why": {
+         "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+         "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Equal distances at 60 and 90 km/h average",
+       "as": "সমান দূৰত্ব 60 আৰু 90 km/hত গড়"
+      },
+      "why": {
+       "en": "$\\frac{2uv}{u + v}$.",
+       "as": "$\\frac{2uv}{u + v}$।"
+      },
+      "options": [
+       {
+        "en": "72 km/h",
+        "as": "72 km/h"
+       },
+       {
+        "en": "150 km/h",
+        "as": "150 km/h"
+       },
+       {
+        "en": "77 km/h",
+        "as": "77 km/h"
+       },
+       {
+        "en": "75 km/h",
+        "as": "75 km/h"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-speed-avg",
+        "why": {
+         "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+         "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Equal distances at 20 and 60 km/h average",
+       "as": "সমান দূৰত্ব 20 আৰু 60 km/hত গড়"
+      },
+      "why": {
+       "en": "$\\frac{2uv}{u + v}$.",
+       "as": "$\\frac{2uv}{u + v}$।"
+      },
+      "options": [
+       {
+        "en": "30 km/h",
+        "as": "30 km/h"
+       },
+       {
+        "en": "40 km/h",
+        "as": "40 km/h"
+       },
+       {
+        "en": "35 km/h",
+        "as": "35 km/h"
+       },
+       {
+        "en": "80 km/h",
+        "as": "80 km/h"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-speed-avg",
+        "why": {
+         "en": "You took the plain average, but more time is spent at the slower speed. Use total distance ÷ total time.",
+         "as": "তুমি সাধাৰণ গড় ল'লা, কিন্তু লাহে যোৱাত বেছি সময় লাগে। মুঠ দূৰত্ব ÷ মুঠ সময় লোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m11.t.q3",
+    "type": "mcq",
+    "skill": "sp-rel",
+    "q": {
+     "en": "A 240 m train at 20 m/s crosses a 360 m bridge in",
+     "as": "20 m/s গতিৰ 240 মিটাৰ ৰেলে 360 মিটাৰ দলং পাৰ হয়"
+    },
+    "why": {
+     "en": "Train + bridge ÷ speed.",
+     "as": "ৰেল + দলং ÷ গতি।"
+    },
+    "options": [
+     {
+      "en": "30 s",
+      "as": "30 s"
+     },
+     {
+      "en": "12 s",
+      "as": "12 s"
+     },
+     {
+      "en": "35 s",
+      "as": "35 s"
+     },
+     {
+      "en": "18 s",
+      "as": "18 s"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-train-length",
+      "why": {
+       "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+       "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A 240 m train at 20 m/s crosses a 360 m bridge in",
+       "as": "20 m/s গতিৰ 240 মিটাৰ ৰেলে 360 মিটাৰ দলং পাৰ হয়"
+      },
+      "why": {
+       "en": "Train + bridge ÷ speed.",
+       "as": "ৰেল + দলং ÷ গতি।"
+      },
+      "options": [
+       {
+        "en": "30 s",
+        "as": "30 s"
+       },
+       {
+        "en": "12 s",
+        "as": "12 s"
+       },
+       {
+        "en": "35 s",
+        "as": "35 s"
+       },
+       {
+        "en": "18 s",
+        "as": "18 s"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-train-length",
+        "why": {
+         "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+         "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A 180 m train at 15 m/s crosses a 120 m bridge in",
+       "as": "15 m/s গতিৰ 180 মিটাৰ ৰেলে 120 মিটাৰ দলং পাৰ হয়"
+      },
+      "why": {
+       "en": "Train + bridge ÷ speed.",
+       "as": "ৰেল + দলং ÷ গতি।"
+      },
+      "options": [
+       {
+        "en": "8 s",
+        "as": "8 s"
+       },
+       {
+        "en": "12 s",
+        "as": "12 s"
+       },
+       {
+        "en": "20 s",
+        "as": "20 s"
+       },
+       {
+        "en": "25 s",
+        "as": "25 s"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-train-length",
+        "why": {
+         "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+         "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A 400 m train at 25 m/s crosses a 200 m bridge in",
+       "as": "25 m/s গতিৰ 400 মিটাৰ ৰেলে 200 মিটাৰ দলং পাৰ হয়"
+      },
+      "why": {
+       "en": "Train + bridge ÷ speed.",
+       "as": "ৰেল + দলং ÷ গতি।"
+      },
+      "options": [
+       {
+        "en": "29 s",
+        "as": "29 s"
+       },
+       {
+        "en": "16 s",
+        "as": "16 s"
+       },
+       {
+        "en": "24 s",
+        "as": "24 s"
+       },
+       {
+        "en": "8 s",
+        "as": "8 s"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-train-length",
+        "why": {
+         "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+         "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m11.t.q4",
+    "type": "mcq",
+    "skill": "sp-rel",
+    "q": {
+     "en": "Two 150 m trains run in opposite directions at 20 and 10 m/s. They pass in",
+     "as": "দুখন 150 মিটাৰ ৰেল বিপৰীত দিশত 20 আৰু 10 m/sত চলে। পাৰ হয়"
+    },
+    "why": {
+     "en": "Both lengths ÷ the sum of speeds.",
+     "as": "দুয়োটা দৈৰ্ঘ্য ÷ গতিৰ যোগফল।"
+    },
+    "options": [
+     {
+      "en": "15 s",
+      "as": "15 s"
+     },
+     {
+      "en": "10 s",
+      "as": "10 s"
+     },
+     {
+      "en": "30 s",
+      "as": "30 s"
+     },
+     {
+      "en": "5 s",
+      "as": "5 s"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-rel-sign",
+      "why": {
+       "en": "Opposite directions add the speeds; the same direction subtracts them.",
+       "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+      }
+     },
+     {
+      "opt": 3,
+      "tag": "m-train-length",
+      "why": {
+       "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+       "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Two 150 m trains run in opposite directions at 20 and 10 m/s. They pass in",
+       "as": "দুখন 150 মিটাৰ ৰেল বিপৰীত দিশত 20 আৰু 10 m/sত চলে। পাৰ হয়"
+      },
+      "why": {
+       "en": "Both lengths ÷ the sum of speeds.",
+       "as": "দুয়োটা দৈৰ্ঘ্য ÷ গতিৰ যোগফল।"
+      },
+      "options": [
+       {
+        "en": "15 s",
+        "as": "15 s"
+       },
+       {
+        "en": "10 s",
+        "as": "10 s"
+       },
+       {
+        "en": "30 s",
+        "as": "30 s"
+       },
+       {
+        "en": "5 s",
+        "as": "5 s"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-rel-sign",
+        "why": {
+         "en": "Opposite directions add the speeds; the same direction subtracts them.",
+         "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+        }
+       },
+       {
+        "opt": 3,
+        "tag": "m-train-length",
+        "why": {
+         "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+         "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two 200 m trains run in opposite directions at 25 and 15 m/s. They pass in",
+       "as": "দুখন 200 মিটাৰ ৰেল বিপৰীত দিশত 25 আৰু 15 m/sত চলে। পাৰ হয়"
+      },
+      "why": {
+       "en": "Both lengths ÷ the sum of speeds.",
+       "as": "দুয়োটা দৈৰ্ঘ্য ÷ গতিৰ যোগফল।"
+      },
+      "options": [
+       {
+        "en": "15 s",
+        "as": "15 s"
+       },
+       {
+        "en": "10 s",
+        "as": "10 s"
+       },
+       {
+        "en": "40 s",
+        "as": "40 s"
+       },
+       {
+        "en": "5 s",
+        "as": "5 s"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-rel-sign",
+        "why": {
+         "en": "Opposite directions add the speeds; the same direction subtracts them.",
+         "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+        }
+       },
+       {
+        "opt": 3,
+        "tag": "m-train-length",
+        "why": {
+         "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+         "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two 100 m trains run in opposite directions at 12 and 8 m/s. They pass in",
+       "as": "দুখন 100 মিটাৰ ৰেল বিপৰীত দিশত 12 আৰু 8 m/sত চলে। পাৰ হয়"
+      },
+      "why": {
+       "en": "Both lengths ÷ the sum of speeds.",
+       "as": "দুয়োটা দৈৰ্ঘ্য ÷ গতিৰ যোগফল।"
+      },
+      "options": [
+       {
+        "en": "15 s",
+        "as": "15 s"
+       },
+       {
+        "en": "10 s",
+        "as": "10 s"
+       },
+       {
+        "en": "50 s",
+        "as": "50 s"
+       },
+       {
+        "en": "5 s",
+        "as": "5 s"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-rel-sign",
+        "why": {
+         "en": "Opposite directions add the speeds; the same direction subtracts them.",
+         "as": "বিপৰীত দিশত গতি যোগ হয়; একে দিশত বিয়োগ হয়।"
+        }
+       },
+       {
+        "opt": 3,
+        "tag": "m-train-length",
+        "why": {
+         "en": "The crossing ends when the tail clears, so the train's own length is part of the distance.",
+         "as": "নেজ পাৰ হ'লেহে পাৰ হোৱা শেষ হয়, সেয়ে ৰেলৰ নিজৰ দৈৰ্ঘ্যও দূৰত্বৰ অংশ।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m11.t.q5",
+    "type": "solve",
+    "skill": "sp-basic",
+    "q": {
+     "en": "How many km does a car go in 4 hours at 60 km/h?",
+     "as": "60 km/hত গাড়ীয়ে 4 ঘণ্টাত কিমান কিমি যায়?"
+    },
+    "answer": "240",
+    "why": {
+     "en": "Speed × time.",
+     "as": "গতি × সময়।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "How many km does a car go in 4 hours at 60 km/h?",
+       "as": "60 km/hত গাড়ীয়ে 4 ঘণ্টাত কিমান কিমি যায়?"
+      },
+      "answer": "240",
+      "why": {
+       "en": "Speed × time.",
+       "as": "গতি × সময়।"
+      }
+     },
+     {
+      "q": {
+       "en": "How many km does a car go in 6 hours at 45 km/h?",
+       "as": "45 km/hত গাড়ীয়ে 6 ঘণ্টাত কিমান কিমি যায়?"
+      },
+      "answer": "270",
+      "why": {
+       "en": "Speed × time.",
+       "as": "গতি × সময়।"
+      }
+     },
+     {
+      "q": {
+       "en": "How many km does a car go in 3 hours at 72 km/h?",
+       "as": "72 km/hত গাড়ীয়ে 3 ঘণ্টাত কিমান কিমি যায়?"
+      },
+      "answer": "216",
+      "why": {
+       "en": "Speed × time.",
+       "as": "গতি × সময়।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

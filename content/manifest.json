@@ -1,5 +1,5 @@
 {
- "version": "475d9bd8a8",
+ "version": "0cf5c7b6e1",
  "courseRedirects": {
   "early-assam": "assam-history",
   "varman-kings": "assam-history",
@@ -38,6 +38,10 @@
   {
    "id": "indian-history",
    "file": "content/courses/indian-history.json"
+  },
+  {
+   "id": "mathematics",
+   "file": "content/courses/mathematics.json"
   }
  ],
  "lessons": {
@@ -10028,6 +10032,936 @@
      },
      "i": "trophy",
      "ex": 7
+    }
+   ]
+  },
+  "math-01-numbers": {
+   "course": "mathematics",
+   "no": 1,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Numbers that talk",
+    "as": "কথা কোৱা সংখ্যা"
+   },
+   "units": [
+    {
+     "id": "line",
+     "t": {
+      "en": "The number line",
+      "as": "সংখ্যা ৰেখা"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u1",
+     "t": {
+      "en": "Number families",
+      "as": "সংখ্যাৰ পৰিয়াল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Divisibility shortcuts",
+      "as": "বিভাজ্যতাৰ চুটি পথ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Last-digit tricks",
+      "as": "শেষৰ অংকৰ কৌশল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "More number facts",
+      "as": "সংখ্যাৰ আৰু তথ্য"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Numbers test",
+      "as": "সংখ্যাৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-02-lcm-hcf": {
+   "course": "mathematics",
+   "no": 2,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "LCM and HCF",
+    "as": "ল.সা.গু. আৰু গ.সা.গু."
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Shared factors: HCF",
+      "as": "উমৈহতীয়া গুণনীয়ক: গ.সা.গু."
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Shared multiples: LCM",
+      "as": "উমৈহতীয়া গুণিতক: ল.সা.গু."
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "The HCF × LCM rule",
+      "as": "গ.সা.গু. × ল.সা.গু. নিয়ম"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Harder LCM problems",
+      "as": "ল.সা.গু.ৰ টান সমস্যা"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "LCM and HCF test",
+      "as": "ল.সা.গু. আৰু গ.সা.গু. পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-03-fractions": {
+   "course": "mathematics",
+   "no": 3,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Fractions you can see",
+    "as": "দেখিব পৰা ভগ্নাংশ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "What a fraction is",
+      "as": "ভগ্নাংশ কি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Compare and add",
+      "as": "তুলনা আৰু যোগ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Fractions at work",
+      "as": "কামত ভগ্নাংশ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Fractions test",
+      "as": "ভগ্নাংশৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-04-simplification": {
+   "course": "mathematics",
+   "no": 4,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Simplification and roots",
+    "as": "সৰলীকৰণ আৰু মূল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "What comes first",
+      "as": "কি আগতে"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Squares you can see",
+      "as": "দেখিব পৰা বৰ্গ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Patterns that save time",
+      "as": "সময় বচোৱা আৰ্হি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Cubes and cube roots",
+      "as": "ঘন আৰু ঘনমূল"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Surds and big identities",
+      "as": "কৰণী আৰু ডাঙৰ অভেদ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Simplification test",
+      "as": "সৰলীকৰণ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-05-percentage": {
+   "course": "mathematics",
+   "no": 5,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Percentage",
+    "as": "শতাংশ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Out of a hundred",
+      "as": "এশৰ ভিতৰত"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Rise and fall",
+      "as": "বৃদ্ধি আৰু হ্ৰাস"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Changes on changes",
+      "as": "পৰিৱৰ্তনৰ ওপৰত পৰিৱৰ্তন"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Side-by-side change",
+      "as": "কাষে কাষে পৰিৱৰ্তন"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Percentage test",
+      "as": "শতাংশৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-06-ratio": {
+   "course": "mathematics",
+   "no": 6,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Ratio and proportion",
+    "as": "অনুপাত আৰু সমানুপাত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Counting blocks",
+      "as": "খণ্ড গণনা"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Proportion is a straight line",
+      "as": "সমানুপাত এডাল সৰল ৰেখা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Chains of ratios",
+      "as": "অনুপাতৰ শিকলি"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Values from ratios",
+      "as": "অনুপাতৰ পৰা মান"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Ratio test",
+      "as": "অনুপাতৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-07-average": {
+   "course": "mathematics",
+   "no": 7,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Average",
+    "as": "গড়"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Levelling out",
+      "as": "সমান কৰা"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "One value changes",
+      "as": "এটা মান সলনি হ'লে"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Groups of different sizes",
+      "as": "বেলেগ আকাৰৰ গোট"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Average test",
+      "as": "গড়ৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-08-profit": {
+   "course": "mathematics",
+   "no": 8,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Profit, loss and discount",
+    "as": "লাভ, লোকচান আৰু ৰেহাই"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Everything sits on cost",
+      "as": "সকলো ক্ৰয় মূল্যৰ ওপৰত"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Marked price and discount",
+      "as": "চিহ্নিত মূল্য আৰু ৰেহাই"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Tricky deals",
+      "as": "কৌশলী লেনদেন"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "More deals",
+      "as": "আৰু লেনদেন"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Profit and loss test",
+      "as": "লাভ-লোকচান পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-09-interest": {
+   "course": "mathematics",
+   "no": 9,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Simple and compound interest",
+    "as": "সৰল আৰু চক্ৰবৃদ্ধি সুত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The same slice every year",
+      "as": "প্ৰতি বছৰে একে ভাগ"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Working backwards",
+      "as": "ওলোটাকৈ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Interest on interest",
+      "as": "সুতৰ সুত"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Other ways of counting",
+      "as": "গণনাৰ আন ধৰণ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Interest test",
+      "as": "সুতৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-10-work": {
+   "course": "mathematics",
+   "no": 10,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Time and work",
+    "as": "সময় আৰু কাম"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Rates add, days do not",
+      "as": "হাৰ যোগ হয়, দিন নহয়"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "People and days",
+      "as": "মানুহ আৰু দিন"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Filling and emptying",
+      "as": "ভৰোৱা আৰু খালী কৰা"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Sharing work and pay",
+      "as": "কাম আৰু মজুৰি ভাগ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Time and work test",
+      "as": "সময় আৰু কাম পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-11-speed": {
+   "course": "mathematics",
+   "no": 11,
+   "version": 1,
+   "steps": 4,
+   "title": {
+    "en": "Speed, distance and trains",
+    "as": "গতি, দূৰত্ব আৰু ৰেল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Distance, speed, time",
+      "as": "দূৰত্ব, গতি, সময়"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Average speed",
+      "as": "গড় গতি"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Trains and closing speed",
+      "as": "ৰেল আৰু আপেক্ষিক গতি"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Speed test",
+      "as": "গতিৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-12-ages": {
+   "course": "mathematics",
+   "no": 12,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Age problems",
+    "as": "বয়সৰ সমস্যা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "The gap never changes",
+      "as": "পাৰ্থক্য সলনি নহয়"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Ratios across the years",
+      "as": "বছৰে বছৰে অনুপাত"
+     },
+     "i": "star",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Ages test",
+      "as": "বয়সৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-13-sequences": {
+   "course": "mathematics",
+   "no": 13,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "AP and GP",
+    "as": "সমান্তৰ আৰু গুণোত্তৰ শ্ৰেণী"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Equal steps",
+      "as": "সমান খোজ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Adding an AP",
+      "as": "শ্ৰেণীৰ যোগফল"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Multiplying steps",
+      "as": "পূৰণৰ খোজ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Sequences in disguise",
+      "as": "ছদ্মবেশী শ্ৰেণী"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "AP and GP test",
+      "as": "সমান্তৰ আৰু গুণোত্তৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-14-trig": {
+   "course": "mathematics",
+   "no": 14,
+   "version": 1,
+   "steps": 5,
+   "title": {
+    "en": "Trigonometry",
+    "as": "ত্ৰিকোণমিতি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Ratios of a shape",
+      "as": "আকৃতিৰ অনুপাত"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "One circle, the whole table",
+      "as": "এটা বৃত্ত, গোটা তালিকা"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Heights and distances",
+      "as": "উচ্চতা আৰু দূৰত্ব"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Identities",
+      "as": "অভেদ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Trigonometry test",
+      "as": "ত্ৰিকোণমিতি পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-15-plane": {
+   "course": "mathematics",
+   "no": 15,
+   "version": 1,
+   "steps": 9,
+   "title": {
+    "en": "Plane figures",
+    "as": "সমতল আকৃতি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Squares and rectangles",
+      "as": "বৰ্গ আৰু আয়ত"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Triangles",
+      "as": "ত্ৰিভুজ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Rhombus and trapezium",
+      "as": "ৰম্বাছ আৰু ট্ৰেপিজিয়াম"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Circles",
+      "as": "বৃত্ত"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Triangle names and outer angles",
+      "as": "ত্ৰিভুজৰ নাম আৰু বাহিৰৰ কোণ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u6",
+     "t": {
+      "en": "Same shape, new size",
+      "as": "একে আকৃতি, নতুন আকাৰ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u7",
+     "t": {
+      "en": "Rectangles from clues",
+      "as": "সূত্ৰৰ পৰা আয়ত"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u8",
+     "t": {
+      "en": "Chords, tangents, sectors",
+      "as": "জ্যা, স্পৰ্শক, বৃত্তকলা"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Plane figures test",
+      "as": "সমতল আকৃতি পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
+    }
+   ]
+  },
+  "math-16-solids": {
+   "course": "mathematics",
+   "no": 16,
+   "version": 1,
+   "steps": 6,
+   "title": {
+    "en": "Solid figures",
+    "as": "ঘন আকৃতি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Boxes",
+      "as": "বাকচ"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Cylinders and cones",
+      "as": "চুঙা আৰু শংকু"
+     },
+     "i": "star",
+     "ex": 6
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Spheres and recasting",
+      "as": "গোলক আৰু গলাই নতুন ৰূপ"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Slant, full surface, half spheres",
+      "as": "হেলনীয়া, সম্পূৰ্ণ পৃষ্ঠ, অৰ্ধগোলক"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Rooms, tanks and cut cubes",
+      "as": "কোঠা, টেংকী আৰু কটা ঘনক"
+     },
+     "i": "star",
+     "ex": 7
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Solid figures test",
+      "as": "ঘন আকৃতি পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 5
     }
    ]
   },

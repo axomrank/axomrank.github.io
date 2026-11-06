@@ -1,0 +1,4319 @@
+{
+ "id": "math-10-work",
+ "course": "mathematics",
+ "no": 10,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Time and work",
+  "as": "সময় আৰু কাম"
+ },
+ "reign": {
+  "en": "Rates, pipes and tanks",
+  "as": "হাৰ, পাইপ আৰু টেংকী"
+ },
+ "portrait": "math/work.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Rates add, days do not",
+    "as": "হাৰ যোগ হয়, দিন নহয়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Call the whole job the LCM of the days. That removes the fractions.",
+     "as": "গোটা কামটোক দিনবোৰৰ ল.সা.গু. ধৰা। ভগ্নাংশ নাইকিয়া হয়।"
+    },
+    {
+     "en": "Each person's rate = job ÷ their days.",
+     "as": "প্ৰত্যেকৰ হাৰ = কাম ÷ তেওঁৰ দিন।"
+    },
+    {
+     "en": "Working together, rates add.",
+     "as": "একেলগে কাম কৰিলে হাৰ যোগ হয়।"
+    },
+    {
+     "en": "Together always takes less time than the fastest person alone.",
+     "as": "একেলগে সদায় আটাইতকৈ সোনকালে কৰাজনতকৈ কম সময় লাগে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m10.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Give the job a size",
+      "as": "কামটোক এটা আকাৰ দিয়া"
+     },
+     "text": [
+      {
+       "en": "A does a job in 12 days and B in 6. Call the job 12 units: then A does 1 a day and B does 2.",
+       "as": "Aই 12 দিনত, Bই 6 দিনত কাম কৰে। কামটো 12 একক ধৰা: Aই দিনে 1, Bই দিনে 2 কৰে।"
+      }
+     ],
+     "widget": {
+      "kind": "tank",
+      "taps": [
+       {
+        "n": "A",
+        "t": 12
+       },
+       {
+        "n": "B",
+        "t": 6
+       }
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Tap Next day until the tank is full.",
+        "as": "টেংকী ভৰালৈ 'পিছৰ দিন' টিপা।"
+       },
+       "goal": {
+        "full": 1
+       },
+       "then": {
+        "en": "3 units a day fills 12 in 4 days. Not 18 days, and not 9: rates added, days did not.",
+        "as": "দিনে 3 এককে 4 দিনত 12 ভৰায়। 18 দিন নহয়, 9ও নহয়: হাৰ যোগ হ'ল, দিন নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "LCM makes it whole",
+      "as": "ল.সা.গু.য়ে গোটা কৰে"
+     },
+     "text": [
+      {
+       "en": "The job can be any size, so pick one that divides evenly by everyone's days.",
+       "as": "কামৰ আকাৰ যিকোনো হ'ব পাৰে, সেয়ে সকলোৰে দিনেৰে হৰণ যোৱা এটা বাছি লোৱা।"
+      },
+      {
+       "en": "That size is the LCM, the same one you used for gears.",
+       "as": "সেই আকাৰেই ল.সা.গু., গিয়াৰত ব্যৱহাৰ কৰা একেটাই।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "A 10, B 15 days",
+        "as": "A 10, B 15 দিন"
+       },
+       {
+        "en": "Job = LCM = 30",
+        "as": "কাম = ল.সা.গু. = 30"
+       },
+       {
+        "en": "3 + 2 = 5 a day",
+        "as": "দিনে 3 + 2 = 5"
+       },
+       {
+        "en": "30 ÷ 5 = 6 days",
+        "as": "30 ÷ 5 = 6 দিন"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m10.u1.q1",
+     "type": "explore",
+     "skill": "w-rate",
+     "q": {
+      "en": "A takes 9 days and B takes 18. Run the tank: how many days together?",
+      "as": "Aৰ 9 দিন, Bৰ 18 দিন লাগে। টেংকী চলোৱা: একেলগে কিমান দিন?"
+     },
+     "widget": {
+      "kind": "tank",
+      "taps": [
+       {
+        "n": "A",
+        "t": 9
+       },
+       {
+        "n": "B",
+        "t": 18
+       }
+      ]
+     },
+     "target": 6,
+     "answerText": {
+      "en": "6 days",
+      "as": "6 দিন"
+     },
+     "why": {
+      "en": "Job 18, rate 2 + 1 a day.",
+      "as": "কাম 18, দিনে 2 + 1।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A takes 9 days and B takes 18. Run the tank: how many days together?",
+        "as": "Aৰ 9 দিন, Bৰ 18 দিন লাগে। টেংকী চলোৱা: একেলগে কিমান দিন?"
+       },
+       "widget": {
+        "kind": "tank",
+        "taps": [
+         {
+          "n": "A",
+          "t": 9
+         },
+         {
+          "n": "B",
+          "t": 18
+         }
+        ]
+       },
+       "target": 6,
+       "answerText": {
+        "en": "6 days",
+        "as": "6 দিন"
+       },
+       "why": {
+        "en": "Job 18, rate 2 + 1 a day.",
+        "as": "কাম 18, দিনে 2 + 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "A takes 18 days and B takes 36. Run the tank: how many days together?",
+        "as": "Aৰ 18 দিন, Bৰ 36 দিন লাগে। টেংকী চলোৱা: একেলগে কিমান দিন?"
+       },
+       "widget": {
+        "kind": "tank",
+        "taps": [
+         {
+          "n": "A",
+          "t": 18
+         },
+         {
+          "n": "B",
+          "t": 36
+         }
+        ]
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12 days",
+        "as": "12 দিন"
+       },
+       "why": {
+        "en": "Job 36, rate 2 + 1 a day.",
+        "as": "কাম 36, দিনে 2 + 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "A takes 4 days and B takes 12. Run the tank: how many days together?",
+        "as": "Aৰ 4 দিন, Bৰ 12 দিন লাগে। টেংকী চলোৱা: একেলগে কিমান দিন?"
+       },
+       "widget": {
+        "kind": "tank",
+        "taps": [
+         {
+          "n": "A",
+          "t": 4
+         },
+         {
+          "n": "B",
+          "t": 12
+         }
+        ]
+       },
+       "target": 3,
+       "answerText": {
+        "en": "3 days",
+        "as": "3 দিন"
+       },
+       "why": {
+        "en": "Job 12, rate 3 + 1 a day.",
+        "as": "কাম 12, দিনে 3 + 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "A takes 6 days and B takes 12. Run the tank: how many days together?",
+        "as": "Aৰ 6 দিন, Bৰ 12 দিন লাগে। টেংকী চলোৱা: একেলগে কিমান দিন?"
+       },
+       "widget": {
+        "kind": "tank",
+        "taps": [
+         {
+          "n": "A",
+          "t": 6
+         },
+         {
+          "n": "B",
+          "t": 12
+         }
+        ]
+       },
+       "target": 4,
+       "answerText": {
+        "en": "4 days",
+        "as": "4 দিন"
+       },
+       "why": {
+        "en": "Job 12, rate 2 + 1 a day.",
+        "as": "কাম 12, দিনে 2 + 1।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u1.q2",
+     "type": "solve",
+     "skill": "w-rate",
+     "hints": [
+      {
+       "en": "Take the job as the LCM of the days.",
+       "as": "কামটো দিনবোৰৰ ল.সা.গু. ধৰা।"
+      }
+     ],
+     "q": {
+      "en": "A does a job in 12 days and B in 24. How long do they take together?",
+      "as": "Aই 12 দিনত, Bই 24 দিনত কাম কৰে। একেলগে কিমান সময় লাগিব?"
+     },
+     "answer": "8",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "Job 24, rate 3 a day.",
+      "as": "কাম 24, দিনে 3।"
+     },
+     "traps": [
+      {
+       "ans": "36",
+       "tag": "m-work-days",
+       "why": {
+        "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+        "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+       }
+      },
+      {
+       "ans": "18",
+       "tag": "m-work-days",
+       "why": {
+        "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+        "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A does a job in 12 days and B in 24. How long do they take together?",
+        "as": "Aই 12 দিনত, Bই 24 দিনত কাম কৰে। একেলগে কিমান সময় লাগিব?"
+       },
+       "answer": "8",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Job 24, rate 3 a day.",
+        "as": "কাম 24, দিনে 3।"
+       },
+       "traps": [
+        {
+         "ans": "36",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        },
+        {
+         "ans": "18",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A does a job in 15 days and B in 30. How long do they take together?",
+        "as": "Aই 15 দিনত, Bই 30 দিনত কাম কৰে। একেলগে কিমান সময় লাগিব?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Job 30, rate 3 a day.",
+        "as": "কাম 30, দিনে 3।"
+       },
+       "traps": [
+        {
+         "ans": "45",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        },
+        {
+         "ans": "45/2",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A does a job in 18 days and B in 36. How long do they take together?",
+        "as": "Aই 18 দিনত, Bই 36 দিনত কাম কৰে। একেলগে কিমান সময় লাগিব?"
+       },
+       "answer": "12",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Job 36, rate 3 a day.",
+        "as": "কাম 36, দিনে 3।"
+       },
+       "traps": [
+        {
+         "ans": "54",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        },
+        {
+         "ans": "27",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A does a job in 20 days and B in 60. How long do they take together?",
+        "as": "Aই 20 দিনত, Bই 60 দিনত কাম কৰে। একেলগে কিমান সময় লাগিব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Job 60, rate 4 a day.",
+        "as": "কাম 60, দিনে 4।"
+       },
+       "traps": [
+        {
+         "ans": "80",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        },
+        {
+         "ans": "40",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+          "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10.u1.q3",
+     "type": "tf",
+     "skill": "w-rate",
+     "s": {
+      "en": "If A takes 10 days and B takes 20, together they take 15.",
+      "as": "Aৰ 10 দিন, Bৰ 20 দিন লাগিলে একেলগে 15 দিন লাগে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Together must beat the faster person, so it must be under 10. It is $6\\frac{2}{3}$.",
+      "as": "একেলগে সোনকালে কৰাজনতকৈ কম হ'ব, সেয়ে 10তকৈ কম। ই $6\\frac{2}{3}$।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-work-days",
+       "why": {
+        "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+        "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u1.q4",
+     "type": "stepwise",
+     "skill": "w-rate",
+     "q": {
+      "en": "A and B finish a job in 9 days, B and C in 18, C and A in 18. How long do all three take together?",
+      "as": "A আৰু Bই 9 দিনত, B আৰু Cই 18 দিনত, C আৰু Aই 18 দিনত কাম শেষ কৰে। তিনিওজনে একেলগে কিমান দিন ল'ব?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Size of the job?",
+        "as": "কামৰ আকাৰ?"
+       },
+       "options": [
+        {
+         "en": "18",
+         "as": "18"
+        },
+        {
+         "en": "45",
+         "as": "45"
+        },
+        {
+         "en": "162",
+         "as": "162"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "LCM of all three.",
+        "as": "তিনিওটাৰে ল.সা.গু.।"
+       },
+       "skill": "l-lcm"
+      },
+      {
+       "ask": {
+        "en": "Add the three pair rates",
+        "as": "তিনিটা যোৰাৰ হাৰ যোগ কৰা"
+       },
+       "options": [
+        {
+         "en": "3",
+         "as": "3"
+        },
+        {
+         "en": "45",
+         "as": "45"
+        },
+        {
+         "en": "4",
+         "as": "4"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Job ÷ days, for each pair.",
+        "as": "প্ৰতিটো যোৰাৰ বাবে কাম ÷ দিন।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Each person was counted twice, so all three take",
+        "as": "প্ৰত্যেকক দুবাৰ গণা হৈছে, সেয়ে তিনিওজনে লয়"
+       },
+       "options": [
+        {
+         "en": "9 days",
+         "as": "9 দিন"
+        },
+        {
+         "en": "18 days",
+         "as": "18 দিন"
+        },
+        {
+         "en": "4 days",
+         "as": "4 দিন"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Halve the total rate, then divide the job by it.",
+        "as": "মুঠ হাৰ আধা কৰি কামক হৰণ কৰা।"
+       },
+       "tag": "m-work-days"
+      }
+     ],
+     "why": {
+      "en": "The pairs count each person twice, so halve the sum of rates.",
+      "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে হাৰৰ যোগফল আধা কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A and B finish a job in 9 days, B and C in 18, C and A in 18. How long do all three take together?",
+        "as": "A আৰু Bই 9 দিনত, B আৰু Cই 18 দিনত, C আৰু Aই 18 দিনত কাম শেষ কৰে। তিনিওজনে একেলগে কিমান দিন ল'ব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Size of the job?",
+          "as": "কামৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "45",
+           "as": "45"
+          },
+          {
+           "en": "162",
+           "as": "162"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM of all three.",
+          "as": "তিনিওটাৰে ল.সা.গু.।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Add the three pair rates",
+          "as": "তিনিটা যোৰাৰ হাৰ যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "45",
+           "as": "45"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Job ÷ days, for each pair.",
+          "as": "প্ৰতিটো যোৰাৰ বাবে কাম ÷ দিন।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Each person was counted twice, so all three take",
+          "as": "প্ৰত্যেকক দুবাৰ গণা হৈছে, সেয়ে তিনিওজনে লয়"
+         },
+         "options": [
+          {
+           "en": "9 days",
+           "as": "9 দিন"
+          },
+          {
+           "en": "18 days",
+           "as": "18 দিন"
+          },
+          {
+           "en": "4 days",
+           "as": "4 দিন"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Halve the total rate, then divide the job by it.",
+          "as": "মুঠ হাৰ আধা কৰি কামক হৰণ কৰা।"
+         },
+         "tag": "m-work-days"
+        }
+       ],
+       "why": {
+        "en": "The pairs count each person twice, so halve the sum of rates.",
+        "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে হাৰৰ যোগফল আধা কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A and B finish a job in 30 days, B and C in 40, C and A in 24. How long do all three take together?",
+        "as": "A আৰু Bই 30 দিনত, B আৰু Cই 40 দিনত, C আৰু Aই 24 দিনত কাম শেষ কৰে। তিনিওজনে একেলগে কিমান দিন ল'ব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Size of the job?",
+          "as": "কামৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "1200",
+           "as": "1200"
+          },
+          {
+           "en": "94",
+           "as": "94"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM of all three.",
+          "as": "তিনিওটাৰে ল.সা.গু.।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Add the three pair rates",
+          "as": "তিনিটা যোৰাৰ হাৰ যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "94",
+           "as": "94"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Job ÷ days, for each pair.",
+          "as": "প্ৰতিটো যোৰাৰ বাবে কাম ÷ দিন।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Each person was counted twice, so all three take",
+          "as": "প্ৰত্যেকক দুবাৰ গণা হৈছে, সেয়ে তিনিওজনে লয়"
+         },
+         "options": [
+          {
+           "en": "40 days",
+           "as": "40 দিন"
+          },
+          {
+           "en": "10 days",
+           "as": "10 দিন"
+          },
+          {
+           "en": "20 days",
+           "as": "20 দিন"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Halve the total rate, then divide the job by it.",
+          "as": "মুঠ হাৰ আধা কৰি কামক হৰণ কৰা।"
+         },
+         "tag": "m-work-days"
+        }
+       ],
+       "why": {
+        "en": "The pairs count each person twice, so halve the sum of rates.",
+        "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে হাৰৰ যোগফল আধা কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A and B finish a job in 6 days, B and C in 12, C and A in 12. How long do all three take together?",
+        "as": "A আৰু Bই 6 দিনত, B আৰু Cই 12 দিনত, C আৰু Aই 12 দিনত কাম শেষ কৰে। তিনিওজনে একেলগে কিমান দিন ল'ব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Size of the job?",
+          "as": "কামৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "72",
+           "as": "72"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "LCM of all three.",
+          "as": "তিনিওটাৰে ল.সা.গু.।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Add the three pair rates",
+          "as": "তিনিটা যোৰাৰ হাৰ যোগ কৰা"
+         },
+         "options": [
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Job ÷ days, for each pair.",
+          "as": "প্ৰতিটো যোৰাৰ বাবে কাম ÷ দিন।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Each person was counted twice, so all three take",
+          "as": "প্ৰত্যেকক দুবাৰ গণা হৈছে, সেয়ে তিনিওজনে লয়"
+         },
+         "options": [
+          {
+           "en": "6 days",
+           "as": "6 দিন"
+          },
+          {
+           "en": "3 days",
+           "as": "3 দিন"
+          },
+          {
+           "en": "12 days",
+           "as": "12 দিন"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Halve the total rate, then divide the job by it.",
+          "as": "মুঠ হাৰ আধা কৰি কামক হৰণ কৰা।"
+         },
+         "tag": "m-work-days"
+        }
+       ],
+       "why": {
+        "en": "The pairs count each person twice, so halve the sum of rates.",
+        "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে হাৰৰ যোগফল আধা কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u1.q5",
+     "type": "match",
+     "skill": "w-rate",
+     "q": {
+      "en": "Match the two workers to the days together",
+      "as": "দুজন কৰ্মীক একেলগেৰ দিনৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "6 and 12 days",
+        "as": "6 আৰু 12 দিন"
+       },
+       {
+        "en": "4 days",
+        "as": "4 দিন"
+       }
+      ],
+      [
+       {
+        "en": "10 and 10 days",
+        "as": "10 আৰু 10 দিন"
+       },
+       {
+        "en": "5 days",
+        "as": "5 দিন"
+       }
+      ],
+      [
+       {
+        "en": "12 and 4 days",
+        "as": "12 আৰু 4 দিন"
+       },
+       {
+        "en": "3 days",
+        "as": "3 দিন"
+       }
+      ],
+      [
+       {
+        "en": "30 and 20 days",
+        "as": "30 আৰু 20 দিন"
+       },
+       {
+        "en": "12 days",
+        "as": "12 দিন"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Two equal workers halve the time.",
+      "as": "দুজন সমান কৰ্মীয়ে সময় আধা কৰে।"
+     }
+    },
+    {
+     "id": "m10.u1.q6",
+     "type": "solve",
+     "skill": "w-rate",
+     "hints": [
+      {
+       "en": "Whole job = days ÷ part done.",
+       "as": "গোটেই কাম = দিন ÷ কৰা অংশ।"
+      }
+     ],
+     "q": {
+      "en": "A does $\\frac{2}{3}$ of a job in 8 days. B does $\\frac{3}{4}$ of it in 18 days. How long do they take together?",
+      "as": "Aই 8 দিনত কামৰ $\\frac{2}{3}$ অংশ কৰে। Bই 18 দিনত $\\frac{3}{4}$ অংশ কৰে। একেলগে কিমান দিন ল'ব?"
+     },
+     "answer": "8",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "First find each person's days for the whole job.",
+      "as": "প্ৰথমে গোটেই কামৰ বাবে প্ৰত্যেকৰ দিন উলিওৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A does $\\frac{2}{3}$ of a job in 8 days. B does $\\frac{3}{4}$ of it in 18 days. How long do they take together?",
+        "as": "Aই 8 দিনত কামৰ $\\frac{2}{3}$ অংশ কৰে। Bই 18 দিনত $\\frac{3}{4}$ অংশ কৰে। একেলগে কিমান দিন ল'ব?"
+       },
+       "answer": "8",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "First find each person's days for the whole job.",
+        "as": "প্ৰথমে গোটেই কামৰ বাবে প্ৰত্যেকৰ দিন উলিওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A does $\\frac{1}{2}$ of a job in 5 days. B does $\\frac{1}{3}$ of it in 5 days. How long do they take together?",
+        "as": "Aই 5 দিনত কামৰ $\\frac{1}{2}$ অংশ কৰে। Bই 5 দিনত $\\frac{1}{3}$ অংশ কৰে। একেলগে কিমান দিন ল'ব?"
+       },
+       "answer": "6",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "First find each person's days for the whole job.",
+        "as": "প্ৰথমে গোটেই কামৰ বাবে প্ৰত্যেকৰ দিন উলিওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A does $\\frac{3}{4}$ of a job in 15 days. B does $\\frac{1}{2}$ of it in 15 days. How long do they take together?",
+        "as": "Aই 15 দিনত কামৰ $\\frac{3}{4}$ অংশ কৰে। Bই 15 দিনত $\\frac{1}{2}$ অংশ কৰে। একেলগে কিমান দিন ল'ব?"
+       },
+       "answer": "12",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "First find each person's days for the whole job.",
+        "as": "প্ৰথমে গোটেই কামৰ বাবে প্ৰত্যেকৰ দিন উলিওৱা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "People and days",
+    "as": "মানুহ আৰু দিন"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A job is a fixed amount of person-days.",
+     "as": "কাম মানে নিৰ্দিষ্ট মানুহ-দিন।"
+    },
+    {
+     "en": "$M_1 D_1 = M_2 D_2$: more people, fewer days.",
+     "as": "$M_1 D_1 = M_2 D_2$: বেছি মানুহ, কম দিন।"
+    },
+    {
+     "en": "Hours count too: $M_1 D_1 H_1 = M_2 D_2 H_2$.",
+     "as": "ঘণ্টাও গণা হয়: $M_1 D_1 H_1 = M_2 D_2 H_2$।"
+    },
+    {
+     "en": "Time is the opposite ratio of efficiency.",
+     "as": "সময় দক্ষতাৰ বিপৰীত অনুপাতত।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m10.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "The job is an area",
+      "as": "কাম এটা কালি"
+     },
+     "text": [
+      {
+       "en": "16 people need 15 days: 240 person-days. Width is people, height is days, and the area never changes.",
+       "as": "16 জনক 15 দিন লাগে: 240 মানুহ-দিন। প্ৰস্থ মানুহ, উচ্চতা দিন, কালি সলনি নহয়।"
+      }
+     ],
+     "widget": {
+      "kind": "mandays",
+      "men": 16,
+      "days": 15,
+      "max": 30,
+      "min": 6
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide to 24 people.",
+        "as": "24 জনলৈ টানা।"
+       },
+       "goal": {
+        "men": 24
+       },
+       "then": {
+        "en": "The rectangle gets wider and shorter: 10 days. 24 × 10 is still 240.",
+        "as": "আয়ত বহল আৰু চুটি হয়: 10 দিন। 24 × 10 এতিয়াও 240।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now slide to 8 people.",
+        "as": "এতিয়া 8 জনলৈ টানা।"
+       },
+       "goal": {
+        "men": 8
+       },
+       "then": {
+        "en": "Half the people, twice the days: 30.",
+        "as": "আধা মানুহ, দুগুণ দিন: 30।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Faster means fewer days",
+      "as": "সোনকালে মানে কম দিন"
+     },
+     "text": [
+      {
+       "en": "If A works twice as fast as B, A needs half the days.",
+       "as": "A Bতকৈ দুগুণ সোনকালে কৰিলে Aক আধা দিন লাগে।"
+      },
+      {
+       "en": "Efficiency 2 : 1 means time 1 : 2, and together they are 3 units a day.",
+       "as": "দক্ষতা 2 : 1 মানে সময় 1 : 2, একেলগে দিনে 3 একক।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Efficiency 2 : 1",
+        "as": "দক্ষতা 2 : 1"
+       },
+       {
+        "en": "Time 1 : 2",
+        "as": "সময় 1 : 2"
+       },
+       {
+        "en": "Rates add: 3 a day",
+        "as": "হাৰ যোগ: দিনে 3"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m10.u2.q1",
+     "type": "explore",
+     "skill": "w-men",
+     "q": {
+      "en": "15 people finish a job in 16 days. Slide to 20 people. How many days now?",
+      "as": "15 জনে 16 দিনত কাম কৰে। 20 জনলৈ টানা। এতিয়া কিমান দিন?"
+     },
+     "widget": {
+      "kind": "mandays",
+      "men": 15,
+      "days": 16,
+      "max": 30,
+      "min": 6
+     },
+     "target": 12.0,
+     "answerText": {
+      "en": "12 days",
+      "as": "12 দিন"
+     },
+     "why": {
+      "en": "15 × 16 = 240 person-days, and 240 ÷ 20 = 12.",
+      "as": "15 × 16 = 240 মানুহ-দিন, 240 ÷ 20 = 12।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "15 people finish a job in 16 days. Slide to 20 people. How many days now?",
+        "as": "15 জনে 16 দিনত কাম কৰে। 20 জনলৈ টানা। এতিয়া কিমান দিন?"
+       },
+       "widget": {
+        "kind": "mandays",
+        "men": 15,
+        "days": 16,
+        "max": 30,
+        "min": 6
+       },
+       "target": 12.0,
+       "answerText": {
+        "en": "12 days",
+        "as": "12 দিন"
+       },
+       "why": {
+        "en": "15 × 16 = 240 person-days, and 240 ÷ 20 = 12.",
+        "as": "15 × 16 = 240 মানুহ-দিন, 240 ÷ 20 = 12।"
+       }
+      },
+      {
+       "q": {
+        "en": "12 people finish a job in 10 days. Slide to 8 people. How many days now?",
+        "as": "12 জনে 10 দিনত কাম কৰে। 8 জনলৈ টানা। এতিয়া কিমান দিন?"
+       },
+       "widget": {
+        "kind": "mandays",
+        "men": 12,
+        "days": 10,
+        "max": 30,
+        "min": 6
+       },
+       "target": 15.0,
+       "answerText": {
+        "en": "15 days",
+        "as": "15 দিন"
+       },
+       "why": {
+        "en": "12 × 10 = 120 person-days, and 120 ÷ 8 = 15.",
+        "as": "12 × 10 = 120 মানুহ-দিন, 120 ÷ 8 = 15।"
+       }
+      },
+      {
+       "q": {
+        "en": "18 people finish a job in 20 days. Slide to 24 people. How many days now?",
+        "as": "18 জনে 20 দিনত কাম কৰে। 24 জনলৈ টানা। এতিয়া কিমান দিন?"
+       },
+       "widget": {
+        "kind": "mandays",
+        "men": 18,
+        "days": 20,
+        "max": 30,
+        "min": 6
+       },
+       "target": 15.0,
+       "answerText": {
+        "en": "15 days",
+        "as": "15 দিন"
+       },
+       "why": {
+        "en": "18 × 20 = 360 person-days, and 360 ÷ 24 = 15.",
+        "as": "18 × 20 = 360 মানুহ-দিন, 360 ÷ 24 = 15।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u2.q2",
+     "type": "solve",
+     "skill": "w-men",
+     "q": {
+      "en": "16 people do a job in 15 days. How many days do 20 people need?",
+      "as": "16 জনে 15 দিনত কাম কৰে। 20 জনক কিমান দিন লাগিব?"
+     },
+     "answer": "12",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "16 × 15 ÷ 20.",
+      "as": "16 × 15 ÷ 20।"
+     },
+     "traps": [
+      {
+       "ans": "75/4",
+       "tag": "m-work-inverse",
+       "why": {
+        "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+        "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "16 people do a job in 15 days. How many days do 20 people need?",
+        "as": "16 জনে 15 দিনত কাম কৰে। 20 জনক কিমান দিন লাগিব?"
+       },
+       "answer": "12",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "16 × 15 ÷ 20.",
+        "as": "16 × 15 ÷ 20।"
+       },
+       "traps": [
+        {
+         "ans": "75/4",
+         "tag": "m-work-inverse",
+         "why": {
+          "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+          "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "9 people do a job in 20 days. How many days do 12 people need?",
+        "as": "9 জনে 20 দিনত কাম কৰে। 12 জনক কিমান দিন লাগিব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "9 × 20 ÷ 12.",
+        "as": "9 × 20 ÷ 12।"
+       },
+       "traps": [
+        {
+         "ans": "80/3",
+         "tag": "m-work-inverse",
+         "why": {
+          "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+          "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "25 people do a job in 12 days. How many days do 30 people need?",
+        "as": "25 জনে 12 দিনত কাম কৰে। 30 জনক কিমান দিন লাগিব?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "25 × 12 ÷ 30.",
+        "as": "25 × 12 ÷ 30।"
+       },
+       "traps": [
+        {
+         "ans": "72/5",
+         "tag": "m-work-inverse",
+         "why": {
+          "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+          "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "14 people do a job in 18 days. How many days do 21 people need?",
+        "as": "14 জনে 18 দিনত কাম কৰে। 21 জনক কিমান দিন লাগিব?"
+       },
+       "answer": "12",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "14 × 18 ÷ 21.",
+        "as": "14 × 18 ÷ 21।"
+       },
+       "traps": [
+        {
+         "ans": "27",
+         "tag": "m-work-inverse",
+         "why": {
+          "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+          "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10.u2.q3",
+     "type": "tf",
+     "skill": "w-men",
+     "s": {
+      "en": "Doubling the workers doubles the days.",
+      "as": "কৰ্মী দুগুণ কৰিলে দিনো দুগুণ হয়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It halves them. Workers and days move in opposite directions.",
+      "as": "ই আধা কৰে। কৰ্মী আৰু দিন বিপৰীত দিশত যায়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-work-inverse",
+       "why": {
+        "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+        "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u2.q4",
+     "type": "solve",
+     "skill": "w-men",
+     "hints": [
+      {
+       "en": "Multiply people × hours × days.",
+       "as": "মানুহ × ঘণ্টা × দিন পূৰণ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "12 people working 8 hours a day finish in 15 days. How many days for 18 people working 10 hours a day?",
+      "as": "দিনে 8 ঘণ্টাকৈ 12 জনে 15 দিনত শেষ কৰে। দিনে 10 ঘণ্টাকৈ 18 জনক কিমান দিন?"
+     },
+     "answer": "8",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "The job is 1440 person-hours; divide by 18 × 10.",
+      "as": "কাম 1440 মানুহ-ঘণ্টা; 18 × 10ৰে হৰণ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "12 people working 8 hours a day finish in 15 days. How many days for 18 people working 10 hours a day?",
+        "as": "দিনে 8 ঘণ্টাকৈ 12 জনে 15 দিনত শেষ কৰে। দিনে 10 ঘণ্টাকৈ 18 জনক কিমান দিন?"
+       },
+       "answer": "8",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "The job is 1440 person-hours; divide by 18 × 10.",
+        "as": "কাম 1440 মানুহ-ঘণ্টা; 18 × 10ৰে হৰণ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "20 people working 6 hours a day finish in 14 days. How many days for 28 people working 5 hours a day?",
+        "as": "দিনে 6 ঘণ্টাকৈ 20 জনে 14 দিনত শেষ কৰে। দিনে 5 ঘণ্টাকৈ 28 জনক কিমান দিন?"
+       },
+       "answer": "12",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "The job is 1680 person-hours; divide by 28 × 5.",
+        "as": "কাম 1680 মানুহ-ঘণ্টা; 28 × 5ৰে হৰণ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "10 people working 9 hours a day finish in 16 days. How many days for 12 people working 8 hours a day?",
+        "as": "দিনে 9 ঘণ্টাকৈ 10 জনে 16 দিনত শেষ কৰে। দিনে 8 ঘণ্টাকৈ 12 জনক কিমান দিন?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "The job is 1440 person-hours; divide by 12 × 8.",
+        "as": "কাম 1440 মানুহ-ঘণ্টা; 12 × 8ৰে হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u2.q5",
+     "type": "solve",
+     "skill": "w-men",
+     "q": {
+      "en": "A works 2 times as fast as B. B alone takes 30 days. How long do they take together?",
+      "as": "A Bতকৈ 2 গুণ সোনকালে কাম কৰে। Bক অকলে 30 দিন লাগে। একেলগে কিমান দিন?"
+     },
+     "answer": "10",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "B does 1 part a day and A does 2: 3 parts together, so 30 ÷ 3.",
+      "as": "Bই দিনে 1 ভাগ, Aই 2: একেলগে 3, সেয়ে 30 ÷ 3।"
+     },
+     "traps": [
+      {
+       "ans": "15",
+       "tag": "m-work-days",
+       "why": {
+        "en": "That is A alone. Together adds B's rate as well.",
+        "as": "সেয়া A অকলে। একেলগে Bৰ হাৰো যোগ হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A works 2 times as fast as B. B alone takes 30 days. How long do they take together?",
+        "as": "A Bতকৈ 2 গুণ সোনকালে কাম কৰে। Bক অকলে 30 দিন লাগে। একেলগে কিমান দিন?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "B does 1 part a day and A does 2: 3 parts together, so 30 ÷ 3.",
+        "as": "Bই দিনে 1 ভাগ, Aই 2: একেলগে 3, সেয়ে 30 ÷ 3।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "m-work-days",
+         "why": {
+          "en": "That is A alone. Together adds B's rate as well.",
+          "as": "সেয়া A অকলে। একেলগে Bৰ হাৰো যোগ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A works 3 times as fast as B. B alone takes 24 days. How long do they take together?",
+        "as": "A Bতকৈ 3 গুণ সোনকালে কাম কৰে। Bক অকলে 24 দিন লাগে। একেলগে কিমান দিন?"
+       },
+       "answer": "6",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "B does 1 part a day and A does 3: 4 parts together, so 24 ÷ 4.",
+        "as": "Bই দিনে 1 ভাগ, Aই 3: একেলগে 4, সেয়ে 24 ÷ 4।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-work-days",
+         "why": {
+          "en": "That is A alone. Together adds B's rate as well.",
+          "as": "সেয়া A অকলে। একেলগে Bৰ হাৰো যোগ হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A works 4 times as fast as B. B alone takes 20 days. How long do they take together?",
+        "as": "A Bতকৈ 4 গুণ সোনকালে কাম কৰে। Bক অকলে 20 দিন লাগে। একেলগে কিমান দিন?"
+       },
+       "answer": "4",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "B does 1 part a day and A does 4: 5 parts together, so 20 ÷ 5.",
+        "as": "Bই দিনে 1 ভাগ, Aই 4: একেলগে 5, সেয়ে 20 ÷ 5।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-work-days",
+         "why": {
+          "en": "That is A alone. Together adds B's rate as well.",
+          "as": "সেয়া A অকলে। একেলগে Bৰ হাৰো যোগ হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10.u2.q6",
+     "type": "stepwise",
+     "skill": "w-rate",
+     "q": {
+      "en": "A takes 10 days and B takes 15. They work together for 4 days, then A leaves. How many more days does B need?",
+      "as": "Aৰ 10 দিন, Bৰ 15 দিন লাগে। 4 দিন একেলগে কাম কৰি A গুচি যায়। Bক আৰু কিমান দিন লাগিব?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Job and rates?",
+        "as": "কাম আৰু হাৰ?"
+       },
+       "options": [
+        {
+         "en": "25: A 10, B 15",
+         "as": "25: A 10, B 15"
+        },
+        {
+         "en": "30: A 2, B 3",
+         "as": "30: A 2, B 3"
+        },
+        {
+         "en": "30: A 3, B 2",
+         "as": "30: A 3, B 2"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The faster worker has the bigger rate.",
+        "as": "সোনকালে কৰাজনৰ হাৰ ডাঙৰ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Done in 4 days?",
+        "as": "4 দিনত হ'ল?"
+       },
+       "options": [
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "20",
+         "as": "20"
+        },
+        {
+         "en": "34",
+         "as": "34"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Days × combined rate.",
+        "as": "দিন × মিলিত হাৰ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "B's remaining days?",
+        "as": "Bৰ বাকী দিন?"
+       },
+       "options": [
+        {
+         "en": "15",
+         "as": "15"
+        },
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "11",
+         "as": "11"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "What is left ÷ B's rate.",
+        "as": "বাকী ÷ Bৰ হাৰ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Units turn each stage into simple subtraction.",
+      "as": "এককে প্ৰতিটো পৰ্যায়ক সৰল বিয়োগ কৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A takes 10 days and B takes 15. They work together for 4 days, then A leaves. How many more days does B need?",
+        "as": "Aৰ 10 দিন, Bৰ 15 দিন লাগে। 4 দিন একেলগে কাম কৰি A গুচি যায়। Bক আৰু কিমান দিন লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Job and rates?",
+          "as": "কাম আৰু হাৰ?"
+         },
+         "options": [
+          {
+           "en": "25: A 10, B 15",
+           "as": "25: A 10, B 15"
+          },
+          {
+           "en": "30: A 2, B 3",
+           "as": "30: A 2, B 3"
+          },
+          {
+           "en": "30: A 3, B 2",
+           "as": "30: A 3, B 2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The faster worker has the bigger rate.",
+          "as": "সোনকালে কৰাজনৰ হাৰ ডাঙৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Done in 4 days?",
+          "as": "4 দিনত হ'ল?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "34",
+           "as": "34"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Days × combined rate.",
+          "as": "দিন × মিলিত হাৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "B's remaining days?",
+          "as": "Bৰ বাকী দিন?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "What is left ÷ B's rate.",
+          "as": "বাকী ÷ Bৰ হাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Units turn each stage into simple subtraction.",
+        "as": "এককে প্ৰতিটো পৰ্যায়ক সৰল বিয়োগ কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A takes 12 days and B takes 18. They work together for 4 days, then A leaves. How many more days does B need?",
+        "as": "Aৰ 12 দিন, Bৰ 18 দিন লাগে। 4 দিন একেলগে কাম কৰি A গুচি যায়। Bক আৰু কিমান দিন লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Job and rates?",
+          "as": "কাম আৰু হাৰ?"
+         },
+         "options": [
+          {
+           "en": "30: A 12, B 18",
+           "as": "30: A 12, B 18"
+          },
+          {
+           "en": "36: A 3, B 2",
+           "as": "36: A 3, B 2"
+          },
+          {
+           "en": "36: A 2, B 3",
+           "as": "36: A 2, B 3"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The faster worker has the bigger rate.",
+          "as": "সোনকালে কৰাজনৰ হাৰ ডাঙৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Done in 4 days?",
+          "as": "4 দিনত হ'ল?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "40",
+           "as": "40"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Days × combined rate.",
+          "as": "দিন × মিলিত হাৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "B's remaining days?",
+          "as": "Bৰ বাকী দিন?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "14",
+           "as": "14"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "What is left ÷ B's rate.",
+          "as": "বাকী ÷ Bৰ হাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Units turn each stage into simple subtraction.",
+        "as": "এককে প্ৰতিটো পৰ্যায়ক সৰল বিয়োগ কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A takes 20 days and B takes 30. They work together for 6 days, then A leaves. How many more days does B need?",
+        "as": "Aৰ 20 দিন, Bৰ 30 দিন লাগে। 6 দিন একেলগে কাম কৰি A গুচি যায়। Bক আৰু কিমান দিন লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Job and rates?",
+          "as": "কাম আৰু হাৰ?"
+         },
+         "options": [
+          {
+           "en": "50: A 20, B 30",
+           "as": "50: A 20, B 30"
+          },
+          {
+           "en": "60: A 3, B 2",
+           "as": "60: A 3, B 2"
+          },
+          {
+           "en": "60: A 2, B 3",
+           "as": "60: A 2, B 3"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The faster worker has the bigger rate.",
+          "as": "সোনকালে কৰাজনৰ হাৰ ডাঙৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Done in 6 days?",
+          "as": "6 দিনত হ'ল?"
+         },
+         "options": [
+          {
+           "en": "66",
+           "as": "66"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Days × combined rate.",
+          "as": "দিন × মিলিত হাৰ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "B's remaining days?",
+          "as": "Bৰ বাকী দিন?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "What is left ÷ B's rate.",
+          "as": "বাকী ÷ Bৰ হাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Units turn each stage into simple subtraction.",
+        "as": "এককে প্ৰতিটো পৰ্যায়ক সৰল বিয়োগ কৰে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Filling and emptying",
+    "as": "ভৰোৱা আৰু খালী কৰা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A pipe is a worker with a rate.",
+     "as": "পাইপ মানে হাৰ থকা কৰ্মী।"
+    },
+    {
+     "en": "An outlet has a negative rate.",
+     "as": "নিৰ্গম পাইপৰ হাৰ ঋণাত্মক।"
+    },
+    {
+     "en": "Net rate = inlets − outlets.",
+     "as": "নেট হাৰ = প্ৰৱেশ − নিৰ্গম।"
+    },
+    {
+     "en": "If the outlet is faster, a full tank empties and an empty one never fills.",
+     "as": "নিৰ্গম সোনকালে হ'লে ভৰা টেংকী খালী হয়, খালী টেংকী কেতিয়াও নভৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m10.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "A worker who undoes",
+      "as": "ওলোটা কাম কৰা কৰ্মী"
+     },
+     "text": [
+      {
+       "en": "Pipe A fills a tank in 8 hours, and pipe B empties it in 12. Take the tank as 24 units.",
+       "as": "A পাইপে 8 ঘণ্টাত ভৰায়, B পাইপে 12 ঘণ্টাত খালী কৰে। টেংকী 24 একক ধৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "tank",
+      "hours": true,
+      "toggle": true,
+      "taps": [
+       {
+        "n": "A",
+        "t": 8
+       },
+       {
+        "n": "B",
+        "t": 12,
+        "out": true
+       }
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Run the hours until the tank is full.",
+        "as": "টেংকী ভৰালৈ ঘণ্টা চলোৱা।"
+       },
+       "goal": {
+        "full": 1
+       },
+       "then": {
+        "en": "+3 and −2 make +1 an hour, so 24 hours. The outlet tripled the time.",
+        "as": "+3 আৰু −2ৰে ঘণ্টাত +1, সেয়ে 24 ঘণ্টা। নিৰ্গমে সময় তিনিগুণ কৰিলে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Signs decide everything",
+      "as": "চিনেই সকলো ঠিক কৰে"
+     },
+     "text": [
+      {
+       "en": "Add the rates with their signs, exactly as on the number line.",
+       "as": "চিনসহ হাৰ যোগ কৰা, সংখ্যা ৰেখাৰ দৰেই।"
+      },
+      {
+       "en": "If the total is negative, the tank empties.",
+       "as": "মুঠ ঋণাত্মক হ'লে টেংকী খালী হয়।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "In: +3",
+        "as": "প্ৰৱেশ: +3"
+       },
+       {
+        "en": "Out: −2",
+        "as": "নিৰ্গম: −2"
+       },
+       {
+        "en": "Net: +1",
+        "as": "নেট: +1"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m10.u3.q1",
+     "type": "explore",
+     "skill": "w-pipes",
+     "q": {
+      "en": "An inlet fills in 6 hours and an outlet empties in 12. How many hours to fill?",
+      "as": "প্ৰৱেশ পাইপে 6 ঘণ্টাত ভৰায়, নিৰ্গমে 12 ঘণ্টাত খালী কৰে। ভৰিবলৈ কিমান ঘণ্টা?"
+     },
+     "widget": {
+      "kind": "tank",
+      "hours": true,
+      "taps": [
+       {
+        "n": "A",
+        "t": 6
+       },
+       {
+        "n": "B",
+        "t": 12,
+        "out": true
+       }
+      ]
+     },
+     "target": 12,
+     "answerText": {
+      "en": "12 hours",
+      "as": "12 ঘণ্টা"
+     },
+     "why": {
+      "en": "Net rate 2 − 1 on a tank of 12.",
+      "as": "12 টেংকীত নেট হাৰ 2 − 1।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "An inlet fills in 6 hours and an outlet empties in 12. How many hours to fill?",
+        "as": "প্ৰৱেশ পাইপে 6 ঘণ্টাত ভৰায়, নিৰ্গমে 12 ঘণ্টাত খালী কৰে। ভৰিবলৈ কিমান ঘণ্টা?"
+       },
+       "widget": {
+        "kind": "tank",
+        "hours": true,
+        "taps": [
+         {
+          "n": "A",
+          "t": 6
+         },
+         {
+          "n": "B",
+          "t": 12,
+          "out": true
+         }
+        ]
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12 hours",
+        "as": "12 ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate 2 − 1 on a tank of 12.",
+        "as": "12 টেংকীত নেট হাৰ 2 − 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "An inlet fills in 10 hours and an outlet empties in 15. How many hours to fill?",
+        "as": "প্ৰৱেশ পাইপে 10 ঘণ্টাত ভৰায়, নিৰ্গমে 15 ঘণ্টাত খালী কৰে। ভৰিবলৈ কিমান ঘণ্টা?"
+       },
+       "widget": {
+        "kind": "tank",
+        "hours": true,
+        "taps": [
+         {
+          "n": "A",
+          "t": 10
+         },
+         {
+          "n": "B",
+          "t": 15,
+          "out": true
+         }
+        ]
+       },
+       "target": 30,
+       "answerText": {
+        "en": "30 hours",
+        "as": "30 ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate 3 − 2 on a tank of 30.",
+        "as": "30 টেংকীত নেট হাৰ 3 − 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "An inlet fills in 4 hours and an outlet empties in 6. How many hours to fill?",
+        "as": "প্ৰৱেশ পাইপে 4 ঘণ্টাত ভৰায়, নিৰ্গমে 6 ঘণ্টাত খালী কৰে। ভৰিবলৈ কিমান ঘণ্টা?"
+       },
+       "widget": {
+        "kind": "tank",
+        "hours": true,
+        "taps": [
+         {
+          "n": "A",
+          "t": 4
+         },
+         {
+          "n": "B",
+          "t": 6,
+          "out": true
+         }
+        ]
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12 hours",
+        "as": "12 ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate 3 − 2 on a tank of 12.",
+        "as": "12 টেংকীত নেট হাৰ 3 − 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u3.q2",
+     "type": "solve",
+     "skill": "w-pipes",
+     "hints": [
+      {
+       "en": "Subtract the outlet's rate.",
+       "as": "নিৰ্গমৰ হাৰ বিয়োগ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "Tap A fills a tank in 8 hours and tap B empties it in 24. With both open, how long to fill it?",
+      "as": "A টেপে 8 ঘণ্টাত ভৰায়, B টেপে 24 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰিবলৈ কিমান সময়?"
+     },
+     "answer": "12",
+     "suffix": {
+      "en": "hours",
+      "as": "ঘণ্টা"
+     },
+     "why": {
+      "en": "Net rate per hour: $\\frac{1}{8} - \\frac{1}{24}$.",
+      "as": "ঘণ্টাত নেট হাৰ: $\\frac{1}{8} - \\frac{1}{24}$।"
+     },
+     "traps": [
+      {
+       "ans": "6",
+       "tag": "m-pipe-sign",
+       "why": {
+        "en": "An outlet removes water, so its rate is taken away, not added.",
+        "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Tap A fills a tank in 8 hours and tap B empties it in 24. With both open, how long to fill it?",
+        "as": "A টেপে 8 ঘণ্টাত ভৰায়, B টেপে 24 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰিবলৈ কিমান সময়?"
+       },
+       "answer": "12",
+       "suffix": {
+        "en": "hours",
+        "as": "ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate per hour: $\\frac{1}{8} - \\frac{1}{24}$.",
+        "as": "ঘণ্টাত নেট হাৰ: $\\frac{1}{8} - \\frac{1}{24}$।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-pipe-sign",
+         "why": {
+          "en": "An outlet removes water, so its rate is taken away, not added.",
+          "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tap A fills a tank in 5 hours and tap B empties it in 20. With both open, how long to fill it?",
+        "as": "A টেপে 5 ঘণ্টাত ভৰায়, B টেপে 20 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰিবলৈ কিমান সময়?"
+       },
+       "answer": "20/3",
+       "suffix": {
+        "en": "hours",
+        "as": "ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate per hour: $\\frac{1}{5} - \\frac{1}{20}$.",
+        "as": "ঘণ্টাত নেট হাৰ: $\\frac{1}{5} - \\frac{1}{20}$।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-pipe-sign",
+         "why": {
+          "en": "An outlet removes water, so its rate is taken away, not added.",
+          "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tap A fills a tank in 12 hours and tap B empties it in 36. With both open, how long to fill it?",
+        "as": "A টেপে 12 ঘণ্টাত ভৰায়, B টেপে 36 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰিবলৈ কিমান সময়?"
+       },
+       "answer": "18",
+       "suffix": {
+        "en": "hours",
+        "as": "ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate per hour: $\\frac{1}{12} - \\frac{1}{36}$.",
+        "as": "ঘণ্টাত নেট হাৰ: $\\frac{1}{12} - \\frac{1}{36}$।"
+       },
+       "traps": [
+        {
+         "ans": "9",
+         "tag": "m-pipe-sign",
+         "why": {
+          "en": "An outlet removes water, so its rate is taken away, not added.",
+          "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Tap A fills a tank in 9 hours and tap B empties it in 18. With both open, how long to fill it?",
+        "as": "A টেপে 9 ঘণ্টাত ভৰায়, B টেপে 18 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰিবলৈ কিমান সময়?"
+       },
+       "answer": "18",
+       "suffix": {
+        "en": "hours",
+        "as": "ঘণ্টা"
+       },
+       "why": {
+        "en": "Net rate per hour: $\\frac{1}{9} - \\frac{1}{18}$.",
+        "as": "ঘণ্টাত নেট হাৰ: $\\frac{1}{9} - \\frac{1}{18}$।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-pipe-sign",
+         "why": {
+          "en": "An outlet removes water, so its rate is taken away, not added.",
+          "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10.u3.q3",
+     "type": "tf",
+     "skill": "w-pipes",
+     "s": {
+      "en": "If the outlet is faster than the inlet, the tank never fills.",
+      "as": "নিৰ্গম প্ৰৱেশতকৈ সোনকালে হ'লে টেংকী কেতিয়াও নভৰে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "The net rate is negative, so the level can only fall.",
+      "as": "নেট হাৰ ঋণাত্মক, সেয়ে পানী কমিবই।"
+     }
+    },
+    {
+     "id": "m10.u3.q4",
+     "type": "stepwise",
+     "skill": "w-pipes",
+     "q": {
+      "en": "Two inlets fill in 6 and 10 hours, and an outlet empties in 15. With all open, how long to fill?",
+      "as": "দুটা প্ৰৱেশ পাইপে 6 আৰু 10 ঘণ্টাত ভৰায়, নিৰ্গমে 15 ঘণ্টাত খালী কৰে। সকলো খোলা থাকিলে কিমান সময়?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Tank size?",
+        "as": "টেংকীৰ আকাৰ?"
+       },
+       "options": [
+        {
+         "en": "30",
+         "as": "30"
+        },
+        {
+         "en": "31",
+         "as": "31"
+        },
+        {
+         "en": "60",
+         "as": "60"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "LCM of the three.",
+        "as": "তিনিওটাৰে ল.সা.গু.।"
+       },
+       "skill": "l-lcm"
+      },
+      {
+       "ask": {
+        "en": "Net rate?",
+        "as": "নেট হাৰ?"
+       },
+       "options": [
+        {
+         "en": "+5",
+         "as": "+5"
+        },
+        {
+         "en": "+6",
+         "as": "+6"
+        },
+        {
+         "en": "+10",
+         "as": "+10"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Inlets plus, outlet minus.",
+        "as": "প্ৰৱেশ যোগ, নিৰ্গম বিয়োগ।"
+       },
+       "tag": "m-pipe-sign"
+      },
+      {
+       "ask": {
+        "en": "Hours?",
+        "as": "ঘণ্টা?"
+       },
+       "options": [
+        {
+         "en": "5",
+         "as": "5"
+        },
+        {
+         "en": "18",
+         "as": "18"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Tank ÷ net rate.",
+        "as": "টেংকী ÷ নেট হাৰ।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Pipes are the work method with a sign on each worker.",
+      "as": "পাইপ মানে কৰ্মীত চিন থকা একে পদ্ধতি।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two inlets fill in 6 and 10 hours, and an outlet empties in 15. With all open, how long to fill?",
+        "as": "দুটা প্ৰৱেশ পাইপে 6 আৰু 10 ঘণ্টাত ভৰায়, নিৰ্গমে 15 ঘণ্টাত খালী কৰে। সকলো খোলা থাকিলে কিমান সময়?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Tank size?",
+          "as": "টেংকীৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "31",
+           "as": "31"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM of the three.",
+          "as": "তিনিওটাৰে ল.সা.গু.।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Net rate?",
+          "as": "নেট হাৰ?"
+         },
+         "options": [
+          {
+           "en": "+5",
+           "as": "+5"
+          },
+          {
+           "en": "+6",
+           "as": "+6"
+          },
+          {
+           "en": "+10",
+           "as": "+10"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Inlets plus, outlet minus.",
+          "as": "প্ৰৱেশ যোগ, নিৰ্গম বিয়োগ।"
+         },
+         "tag": "m-pipe-sign"
+        },
+        {
+         "ask": {
+          "en": "Hours?",
+          "as": "ঘণ্টা?"
+         },
+         "options": [
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Tank ÷ net rate.",
+          "as": "টেংকী ÷ নেট হাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Pipes are the work method with a sign on each worker.",
+        "as": "পাইপ মানে কৰ্মীত চিন থকা একে পদ্ধতি।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two inlets fill in 4 and 6 hours, and an outlet empties in 12. With all open, how long to fill?",
+        "as": "দুটা প্ৰৱেশ পাইপে 4 আৰু 6 ঘণ্টাত ভৰায়, নিৰ্গমে 12 ঘণ্টাত খালী কৰে। সকলো খোলা থাকিলে কিমান সময়?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Tank size?",
+          "as": "টেংকীৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "22",
+           "as": "22"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "LCM of the three.",
+          "as": "তিনিওটাৰে ল.সা.গু.।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Net rate?",
+          "as": "নেট হাৰ?"
+         },
+         "options": [
+          {
+           "en": "+3",
+           "as": "+3"
+          },
+          {
+           "en": "+6",
+           "as": "+6"
+          },
+          {
+           "en": "+4",
+           "as": "+4"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Inlets plus, outlet minus.",
+          "as": "প্ৰৱেশ যোগ, নিৰ্গম বিয়োগ।"
+         },
+         "tag": "m-pipe-sign"
+        },
+        {
+         "ask": {
+          "en": "Hours?",
+          "as": "ঘণ্টা?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Tank ÷ net rate.",
+          "as": "টেংকী ÷ নেট হাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Pipes are the work method with a sign on each worker.",
+        "as": "পাইপ মানে কৰ্মীত চিন থকা একে পদ্ধতি।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two inlets fill in 6 and 12 hours, and an outlet empties in 8. With all open, how long to fill?",
+        "as": "দুটা প্ৰৱেশ পাইপে 6 আৰু 12 ঘণ্টাত ভৰায়, নিৰ্গমে 8 ঘণ্টাত খালী কৰে। সকলো খোলা থাকিলে কিমান সময়?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Tank size?",
+          "as": "টেংকীৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "26",
+           "as": "26"
+          },
+          {
+           "en": "72",
+           "as": "72"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "LCM of the three.",
+          "as": "তিনিওটাৰে ল.সা.গু.।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Net rate?",
+          "as": "নেট হাৰ?"
+         },
+         "options": [
+          {
+           "en": "+9",
+           "as": "+9"
+          },
+          {
+           "en": "+4",
+           "as": "+4"
+          },
+          {
+           "en": "+3",
+           "as": "+3"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Inlets plus, outlet minus.",
+          "as": "প্ৰৱেশ যোগ, নিৰ্গম বিয়োগ।"
+         },
+         "tag": "m-pipe-sign"
+        },
+        {
+         "ask": {
+          "en": "Hours?",
+          "as": "ঘণ্টা?"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Tank ÷ net rate.",
+          "as": "টেংকী ÷ নেট হাৰ।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Pipes are the work method with a sign on each worker.",
+        "as": "পাইপ মানে কৰ্মীত চিন থকা একে পদ্ধতি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.u3.q5",
+     "type": "match",
+     "skill": "w-pipes",
+     "q": {
+      "en": "Tank of 24 units. Match the rates to the hours to fill",
+      "as": "24 একক টেংকী। হাৰক ভৰোৱা ঘণ্টাৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "+6 and −2",
+        "as": "+6 আৰু −2"
+       },
+       {
+        "en": "6 hours",
+        "as": "6 ঘণ্টা"
+       }
+      ],
+      [
+       {
+        "en": "+4 and −1",
+        "as": "+4 আৰু −1"
+       },
+       {
+        "en": "8 hours",
+        "as": "8 ঘণ্টা"
+       }
+      ],
+      [
+       {
+        "en": "+3 and −1",
+        "as": "+3 আৰু −1"
+       },
+       {
+        "en": "12 hours",
+        "as": "12 ঘণ্টা"
+       }
+      ],
+      [
+       {
+        "en": "+8 and −2",
+        "as": "+8 আৰু −2"
+       },
+       {
+        "en": "4 hours",
+        "as": "4 ঘণ্টা"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Only the net rate matters.",
+      "as": "কেৱল নেট হাৰ গুৰুত্বপূৰ্ণ।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Sharing work and pay",
+    "as": "কাম আৰু মজুৰি ভাগ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Pay is shared in the ratio of work rates, the reverse of days.",
+     "as": "মজুৰি কামৰ হাৰৰ অনুপাতত ভাগ হয়, দিনৰ ওলোটা।"
+    },
+    {
+     "en": "Part done = days worked ÷ days needed alone.",
+     "as": "কৰা অংশ = কাম কৰা দিন ÷ অকলে লগা দিন।"
+    },
+    {
+     "en": "A group's rate minus one member's rate leaves the rest.",
+     "as": "গোটৰ হাৰৰ পৰা এজনৰ হাৰ বিয়োগ কৰিলে বাকীখিনি থাকে।"
+    },
+    {
+     "en": "$\\frac{M_1 D_1 H_1}{W_1} = \\frac{M_2 D_2 H_2}{W_2}$ when work also changes.",
+     "as": "কামো সলনি হ'লে $\\frac{M_1 D_1 H_1}{W_1} = \\frac{M_2 D_2 H_2}{W_2}$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m10.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Who earned what",
+      "as": "কোনে কিমান পালে"
+     },
+     "text": [
+      {
+       "en": "A alone needs 10 days and B alone 15. Together they get ₹500. Watch the tank to see who did how much.",
+       "as": "A অকলে 10 দিন, B অকলে 15 দিন। দুয়ো একেলগে ₹500 পায়। কোনে কিমান কৰিলে টেংকীত চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "tank",
+      "taps": [
+       {
+        "n": "A",
+        "t": 10
+       },
+       {
+        "n": "B",
+        "t": 15
+       }
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Run the days until it is full.",
+        "as": "ভৰি নোহোৱালৈ দিন চলাই যোৱা।"
+       },
+       "goal": {
+        "full": 1
+       },
+       "then": {
+        "en": "A pours 3 parts a day and B pours 2. So A earns ₹300 and B ₹200.",
+        "as": "A দিনে 3 ভাগ, B 2 ভাগ দিয়ে। সেয়ে A ₹300, B ₹200 পায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.x.s2",
+     "type": "story",
+     "title": {
+      "en": "When hours and work change too",
+      "as": "ঘণ্টা আৰু কামো সলনি হ'লে"
+     },
+     "text": [
+      {
+       "en": "People, days and hours multiply to give effort. More work needs more effort.",
+       "as": "মানুহ, দিন, ঘণ্টা পূৰণ কৰিলে শ্ৰম হয়। বেছি কামত বেছি শ্ৰম লাগে।"
+      },
+      {
+       "en": "So effort per unit of work stays the same on both sides.",
+       "as": "সেয়ে কামৰ প্ৰতি একক শ্ৰম দুয়োফালে সমান।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "People × days × hours",
+        "as": "মানুহ × দিন × ঘণ্টা"
+       },
+       {
+        "en": "÷ work done",
+        "as": "÷ কৰা কাম"
+       },
+       {
+        "en": "Equal on both sides",
+        "as": "দুয়োফালে সমান"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m10.x.q1",
+     "type": "solve",
+     "skill": "w-share",
+     "hints": [
+      {
+       "en": "Flip the days to get the ratio of pay.",
+       "as": "দিন ওলোটাই মজুৰিৰ অনুপাত পোৱা।"
+      }
+     ],
+     "q": {
+      "en": "A alone takes 10 days and B alone 15 days. Together they finish and earn ₹500. Find A's share.",
+      "as": "A অকলে 10 দিন, B অকলে 15 দিন লয়। একেলগে শেষ কৰি ₹500 পায়। Aৰ ভাগ উলিওৱা।"
+     },
+     "answer": "300",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Rates are $\\frac{1}{10}$ and $\\frac{1}{15}$, which is 15 : 10.",
+      "as": "হাৰ $\\frac{1}{10}$ আৰু $\\frac{1}{15}$, অৰ্থাৎ 15 : 10।"
+     },
+     "traps": [
+      {
+       "ans": "200",
+       "tag": "m-wage-days",
+       "why": {
+        "en": "More days means a slower worker, so less pay. Share by rate, not days.",
+        "as": "বেছি দিন মানে লাহে কৰা, সেয়ে কম মজুৰি। দিনেৰে নহয়, হাৰেৰে ভাগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A alone takes 10 days and B alone 15 days. Together they finish and earn ₹500. Find A's share.",
+        "as": "A অকলে 10 দিন, B অকলে 15 দিন লয়। একেলগে শেষ কৰি ₹500 পায়। Aৰ ভাগ উলিওৱা।"
+       },
+       "answer": "300",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Rates are $\\frac{1}{10}$ and $\\frac{1}{15}$, which is 15 : 10.",
+        "as": "হাৰ $\\frac{1}{10}$ আৰু $\\frac{1}{15}$, অৰ্থাৎ 15 : 10।"
+       },
+       "traps": [
+        {
+         "ans": "200",
+         "tag": "m-wage-days",
+         "why": {
+          "en": "More days means a slower worker, so less pay. Share by rate, not days.",
+          "as": "বেছি দিন মানে লাহে কৰা, সেয়ে কম মজুৰি। দিনেৰে নহয়, হাৰেৰে ভাগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A alone takes 12 days and B alone 6 days. Together they finish and earn ₹900. Find A's share.",
+        "as": "A অকলে 12 দিন, B অকলে 6 দিন লয়। একেলগে শেষ কৰি ₹900 পায়। Aৰ ভাগ উলিওৱা।"
+       },
+       "answer": "300",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Rates are $\\frac{1}{12}$ and $\\frac{1}{6}$, which is 6 : 12.",
+        "as": "হাৰ $\\frac{1}{12}$ আৰু $\\frac{1}{6}$, অৰ্থাৎ 6 : 12।"
+       },
+       "traps": [
+        {
+         "ans": "600",
+         "tag": "m-wage-days",
+         "why": {
+          "en": "More days means a slower worker, so less pay. Share by rate, not days.",
+          "as": "বেছি দিন মানে লাহে কৰা, সেয়ে কম মজুৰি। দিনেৰে নহয়, হাৰেৰে ভাগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A alone takes 20 days and B alone 30 days. Together they finish and earn ₹1000. Find A's share.",
+        "as": "A অকলে 20 দিন, B অকলে 30 দিন লয়। একেলগে শেষ কৰি ₹1000 পায়। Aৰ ভাগ উলিওৱা।"
+       },
+       "answer": "600",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Rates are $\\frac{1}{20}$ and $\\frac{1}{30}$, which is 30 : 20.",
+        "as": "হাৰ $\\frac{1}{20}$ আৰু $\\frac{1}{30}$, অৰ্থাৎ 30 : 20।"
+       },
+       "traps": [
+        {
+         "ans": "400",
+         "tag": "m-wage-days",
+         "why": {
+          "en": "More days means a slower worker, so less pay. Share by rate, not days.",
+          "as": "বেছি দিন মানে লাহে কৰা, সেয়ে কম মজুৰি। দিনেৰে নহয়, হাৰেৰে ভাগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10.x.q2",
+     "type": "stepwise",
+     "skill": "w-share",
+     "q": {
+      "en": "A can do a job in 12 days and B in 18 days. A works 4 days and leaves. How long does B take to finish?",
+      "as": "A এটা কাম 12 দিনত, B 18 দিনত কৰিব পাৰে। A 4 দিন কৰি গুচি যায়। বাকী কৰিবলৈ Bৰ কিমান দিন লাগিব?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Part A did?",
+        "as": "Aই কৰা অংশ?"
+       },
+       "options": [
+        {
+         "en": "$\\frac{2}{9}$",
+         "as": "$\\frac{2}{9}$"
+        },
+        {
+         "en": "$\\frac{1}{12}$",
+         "as": "$\\frac{1}{12}$"
+        },
+        {
+         "en": "$\\frac{1}{3}$",
+         "as": "$\\frac{1}{3}$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Days worked over days alone.",
+        "as": "কৰা দিন ভাগ অকলে লগা দিন।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Part left?",
+        "as": "বাকী অংশ?"
+       },
+       "options": [
+        {
+         "en": "1",
+         "as": "1"
+        },
+        {
+         "en": "$\\frac{2}{3}$",
+         "as": "$\\frac{2}{3}$"
+        },
+        {
+         "en": "$\\frac{5}{12}$",
+         "as": "$\\frac{5}{12}$"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Take it from the whole job.",
+        "as": "গোটেই কামৰ পৰা বিয়োগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "B's days?",
+        "as": "Bৰ দিন?"
+       },
+       "options": [
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "18",
+         "as": "18"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Part left × B's days for the whole job.",
+        "as": "বাকী অংশ × Bৰ গোটেই কামৰ দিন।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Each part of a job has its own share of the days.",
+      "as": "কামৰ প্ৰতিটো অংশৰ নিজা দিনৰ ভাগ থাকে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A can do a job in 12 days and B in 18 days. A works 4 days and leaves. How long does B take to finish?",
+        "as": "A এটা কাম 12 দিনত, B 18 দিনত কৰিব পাৰে। A 4 দিন কৰি গুচি যায়। বাকী কৰিবলৈ Bৰ কিমান দিন লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Part A did?",
+          "as": "Aই কৰা অংশ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{2}{9}$",
+           "as": "$\\frac{2}{9}$"
+          },
+          {
+           "en": "$\\frac{1}{12}$",
+           "as": "$\\frac{1}{12}$"
+          },
+          {
+           "en": "$\\frac{1}{3}$",
+           "as": "$\\frac{1}{3}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Days worked over days alone.",
+          "as": "কৰা দিন ভাগ অকলে লগা দিন।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Part left?",
+          "as": "বাকী অংশ?"
+         },
+         "options": [
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "$\\frac{2}{3}$",
+           "as": "$\\frac{2}{3}$"
+          },
+          {
+           "en": "$\\frac{5}{12}$",
+           "as": "$\\frac{5}{12}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take it from the whole job.",
+          "as": "গোটেই কামৰ পৰা বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "B's days?",
+          "as": "Bৰ দিন?"
+         },
+         "options": [
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Part left × B's days for the whole job.",
+          "as": "বাকী অংশ × Bৰ গোটেই কামৰ দিন।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Each part of a job has its own share of the days.",
+        "as": "কামৰ প্ৰতিটো অংশৰ নিজা দিনৰ ভাগ থাকে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A can do a job in 10 days and B in 20 days. A works 5 days and leaves. How long does B take to finish?",
+        "as": "A এটা কাম 10 দিনত, B 20 দিনত কৰিব পাৰে। A 5 দিন কৰি গুচি যায়। বাকী কৰিবলৈ Bৰ কিমান দিন লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Part A did?",
+          "as": "Aই কৰা অংশ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{1}{2}$",
+           "as": "$\\frac{1}{2}$"
+          },
+          {
+           "en": "$\\frac{1}{4}$",
+           "as": "$\\frac{1}{4}$"
+          },
+          {
+           "en": "$\\frac{1}{10}$",
+           "as": "$\\frac{1}{10}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Days worked over days alone.",
+          "as": "কৰা দিন ভাগ অকলে লগা দিন।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Part left?",
+          "as": "বাকী অংশ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{1}{2}$",
+           "as": "$\\frac{1}{2}$"
+          },
+          {
+           "en": "$\\frac{7}{12}$",
+           "as": "$\\frac{7}{12}$"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take it from the whole job.",
+          "as": "গোটেই কামৰ পৰা বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "B's days?",
+          "as": "Bৰ দিন?"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Part left × B's days for the whole job.",
+          "as": "বাকী অংশ × Bৰ গোটেই কামৰ দিন।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Each part of a job has its own share of the days.",
+        "as": "কামৰ প্ৰতিটো অংশৰ নিজা দিনৰ ভাগ থাকে।"
+       }
+      },
+      {
+       "q": {
+        "en": "A can do a job in 15 days and B in 30 days. A works 5 days and leaves. How long does B take to finish?",
+        "as": "A এটা কাম 15 দিনত, B 30 দিনত কৰিব পাৰে। A 5 দিন কৰি গুচি যায়। বাকী কৰিবলৈ Bৰ কিমান দিন লাগিব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Part A did?",
+          "as": "Aই কৰা অংশ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{1}{3}$",
+           "as": "$\\frac{1}{3}$"
+          },
+          {
+           "en": "$\\frac{1}{15}$",
+           "as": "$\\frac{1}{15}$"
+          },
+          {
+           "en": "$\\frac{1}{6}$",
+           "as": "$\\frac{1}{6}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Days worked over days alone.",
+          "as": "কৰা দিন ভাগ অকলে লগা দিন।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Part left?",
+          "as": "বাকী অংশ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{5}{12}$",
+           "as": "$\\frac{5}{12}$"
+          },
+          {
+           "en": "$\\frac{2}{3}$",
+           "as": "$\\frac{2}{3}$"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take it from the whole job.",
+          "as": "গোটেই কামৰ পৰা বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "B's days?",
+          "as": "Bৰ দিন?"
+         },
+         "options": [
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Part left × B's days for the whole job.",
+          "as": "বাকী অংশ × Bৰ গোটেই কামৰ দিন।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Each part of a job has its own share of the days.",
+        "as": "কামৰ প্ৰতিটো অংশৰ নিজা দিনৰ ভাগ থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.x.q3",
+     "type": "solve",
+     "skill": "w-rate",
+     "q": {
+      "en": "A and B together take 6 days. A alone takes 10 days. How long does B take alone?",
+      "as": "A আৰু B একেলগে 6 দিন লয়। A অকলে 10 দিন লয়। B অকলে কিমান দিন ল'ব?"
+     },
+     "answer": "15",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "$\\frac{1}{6} - \\frac{1}{10}$ is B's daily part.",
+      "as": "$\\frac{1}{6} - \\frac{1}{10}$ Bৰ দৈনিক অংশ।"
+     },
+     "traps": [
+      {
+       "ans": "4",
+       "tag": "m-work-days",
+       "why": {
+        "en": "Subtract rates, not days.",
+        "as": "দিন নহয়, হাৰ বিয়োগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A and B together take 6 days. A alone takes 10 days. How long does B take alone?",
+        "as": "A আৰু B একেলগে 6 দিন লয়। A অকলে 10 দিন লয়। B অকলে কিমান দিন ল'ব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "$\\frac{1}{6} - \\frac{1}{10}$ is B's daily part.",
+        "as": "$\\frac{1}{6} - \\frac{1}{10}$ Bৰ দৈনিক অংশ।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Subtract rates, not days.",
+          "as": "দিন নহয়, হাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A and B together take 4 days. A alone takes 12 days. How long does B take alone?",
+        "as": "A আৰু B একেলগে 4 দিন লয়। A অকলে 12 দিন লয়। B অকলে কিমান দিন ল'ব?"
+       },
+       "answer": "6",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "$\\frac{1}{4} - \\frac{1}{12}$ is B's daily part.",
+        "as": "$\\frac{1}{4} - \\frac{1}{12}$ Bৰ দৈনিক অংশ।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Subtract rates, not days.",
+          "as": "দিন নহয়, হাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A and B together take 10 days. A alone takes 15 days. How long does B take alone?",
+        "as": "A আৰু B একেলগে 10 দিন লয়। A অকলে 15 দিন লয়। B অকলে কিমান দিন ল'ব?"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "$\\frac{1}{10} - \\frac{1}{15}$ is B's daily part.",
+        "as": "$\\frac{1}{10} - \\frac{1}{15}$ Bৰ দৈনিক অংশ।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Subtract rates, not days.",
+          "as": "দিন নহয়, হাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A and B together take 12 days. A alone takes 20 days. How long does B take alone?",
+        "as": "A আৰু B একেলগে 12 দিন লয়। A অকলে 20 দিন লয়। B অকলে কিমান দিন ল'ব?"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "$\\frac{1}{12} - \\frac{1}{20}$ is B's daily part.",
+        "as": "$\\frac{1}{12} - \\frac{1}{20}$ Bৰ দৈনিক অংশ।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-work-days",
+         "why": {
+          "en": "Subtract rates, not days.",
+          "as": "দিন নহয়, হাৰ বিয়োগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10.x.q4",
+     "type": "solve",
+     "skill": "w-rate",
+     "hints": [
+      {
+       "en": "Add the three rates, then halve.",
+       "as": "তিনিওটা হাৰ যোগ কৰি আধা কৰা।"
+      }
+     ],
+     "q": {
+      "en": "A and B take 6 days, B and C take 10 days, C and A take 15 days. How long do all three take together?",
+      "as": "A আৰু Bই 6 দিন, B আৰু Cই 10 দিন, C আৰু Aই 15 দিন লয়। তিনিও একেলগে কিমান দিন ল'ব?"
+     },
+     "answer": "6",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "Adding the three pairs counts everyone twice, so halve it.",
+      "as": "তিনিওটা যোৰা যোগ কৰিলে প্ৰত্যেকে দুবাৰ আহে, সেয়ে আধা কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A and B take 6 days, B and C take 10 days, C and A take 15 days. How long do all three take together?",
+        "as": "A আৰু Bই 6 দিন, B আৰু Cই 10 দিন, C আৰু Aই 15 দিন লয়। তিনিও একেলগে কিমান দিন ল'ব?"
+       },
+       "answer": "6",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Adding the three pairs counts everyone twice, so halve it.",
+        "as": "তিনিওটা যোৰা যোগ কৰিলে প্ৰত্যেকে দুবাৰ আহে, সেয়ে আধা কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A and B take 8 days, B and C take 12 days, C and A take 24 days. How long do all three take together?",
+        "as": "A আৰু Bই 8 দিন, B আৰু Cই 12 দিন, C আৰু Aই 24 দিন লয়। তিনিও একেলগে কিমান দিন ল'ব?"
+       },
+       "answer": "8",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Adding the three pairs counts everyone twice, so halve it.",
+        "as": "তিনিওটা যোৰা যোগ কৰিলে প্ৰত্যেকে দুবাৰ আহে, সেয়ে আধা কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A and B take 6 days, B and C take 12 days, C and A take 4 days. How long do all three take together?",
+        "as": "A আৰু Bই 6 দিন, B আৰু Cই 12 দিন, C আৰু Aই 4 দিন লয়। তিনিও একেলগে কিমান দিন ল'ব?"
+       },
+       "answer": "4",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Adding the three pairs counts everyone twice, so halve it.",
+        "as": "তিনিওটা যোৰা যোগ কৰিলে প্ৰত্যেকে দুবাৰ আহে, সেয়ে আধা কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.x.q5",
+     "type": "solve",
+     "skill": "w-men",
+     "q": {
+      "en": "12 people working 8 hours a day make 120 chairs in 10 days. How many days do 8 people working 6 hours a day need for 90 chairs?",
+      "as": "12 জনে দিনে 8 ঘণ্টাকৈ 10 দিনত 120খন চকী বনায়। 8 জনে দিনে 6 ঘণ্টাকৈ 90খন চকী কিমান দিনত বনাব?"
+     },
+     "answer": "15",
+     "suffix": {
+      "en": "days",
+      "as": "দিন"
+     },
+     "why": {
+      "en": "Effort per chair is the same on both sides.",
+      "as": "প্ৰতিখন চকীৰ শ্ৰম দুয়োফালে সমান।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "12 people working 8 hours a day make 120 chairs in 10 days. How many days do 8 people working 6 hours a day need for 90 chairs?",
+        "as": "12 জনে দিনে 8 ঘণ্টাকৈ 10 দিনত 120খন চকী বনায়। 8 জনে দিনে 6 ঘণ্টাকৈ 90খন চকী কিমান দিনত বনাব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Effort per chair is the same on both sides.",
+        "as": "প্ৰতিখন চকীৰ শ্ৰম দুয়োফালে সমান।"
+       }
+      },
+      {
+       "q": {
+        "en": "10 people working 8 hours a day make 80 chairs in 6 days. How many days do 12 people working 5 hours a day need for 100 chairs?",
+        "as": "10 জনে দিনে 8 ঘণ্টাকৈ 6 দিনত 80খন চকী বনায়। 12 জনে দিনে 5 ঘণ্টাকৈ 100খন চকী কিমান দিনত বনাব?"
+       },
+       "answer": "10",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Effort per chair is the same on both sides.",
+        "as": "প্ৰতিখন চকীৰ শ্ৰম দুয়োফালে সমান।"
+       }
+      },
+      {
+       "q": {
+        "en": "15 people working 10 hours a day make 60 chairs in 4 days. How many days do 10 people working 6 hours a day need for 90 chairs?",
+        "as": "15 জনে দিনে 10 ঘণ্টাকৈ 4 দিনত 60খন চকী বনায়। 10 জনে দিনে 6 ঘণ্টাকৈ 90খন চকী কিমান দিনত বনাব?"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "days",
+        "as": "দিন"
+       },
+       "why": {
+        "en": "Effort per chair is the same on both sides.",
+        "as": "প্ৰতিখন চকীৰ শ্ৰম দুয়োফালে সমান।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.x.q6",
+     "type": "tf",
+     "skill": "w-share",
+     "s": {
+      "en": "The worker who needs more days gets the bigger share of the pay.",
+      "as": "বেছি দিন লগা জনে মজুৰিৰ ডাঙৰ ভাগ পায়।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Needing more days means doing less each day.",
+      "as": "বেছি দিন লগা মানে দিনে কম কৰা।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-wage-days",
+       "why": {
+        "en": "Pay follows work done, not days taken.",
+        "as": "মজুৰি কৰা কামৰ ওপৰত, লগা দিনৰ ওপৰত নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m10.x.q7",
+     "type": "match",
+     "skill": "w-share",
+     "q": {
+      "en": "Match each pair of workers to their pay ratio",
+      "as": "প্ৰতিটো যোৰাক মজুৰিৰ অনুপাতৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "10 and 15 days",
+        "as": "10 আৰু 15 দিন"
+       },
+       {
+        "en": "3 : 2",
+        "as": "3 : 2"
+       }
+      ],
+      [
+       {
+        "en": "12 and 6 days",
+        "as": "12 আৰু 6 দিন"
+       },
+       {
+        "en": "1 : 2",
+        "as": "1 : 2"
+       }
+      ],
+      [
+       {
+        "en": "8 and 24 days",
+        "as": "8 আৰু 24 দিন"
+       },
+       {
+        "en": "3 : 1",
+        "as": "3 : 1"
+       }
+      ],
+      [
+       {
+        "en": "20 and 25 days",
+        "as": "20 আৰু 25 দিন"
+       },
+       {
+        "en": "5 : 4",
+        "as": "5 : 4"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Flip the days, then simplify.",
+      "as": "দিন ওলোটাই সৰল কৰা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Time and work test",
+   "as": "সময় আৰু কাম পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m10.t.q1",
+    "type": "mcq",
+    "skill": "w-rate",
+    "q": {
+     "en": "A takes 18 days and B takes 36. Together they take",
+     "as": "Aৰ 18 দিন, Bৰ 36 দিন লাগে। একেলগে লাগে"
+    },
+    "why": {
+     "en": "Rates add.",
+     "as": "হাৰ যোগ হয়।"
+    },
+    "options": [
+     {
+      "en": "27 days",
+      "as": "27 days"
+     },
+     {
+      "en": "14 days",
+      "as": "14 days"
+     },
+     {
+      "en": "12 days",
+      "as": "12 days"
+     },
+     {
+      "en": "54 days",
+      "as": "54 days"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-work-days",
+      "why": {
+       "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+       "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+      }
+     },
+     {
+      "opt": 3,
+      "tag": "m-work-days",
+      "why": {
+       "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+       "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A takes 18 days and B takes 36. Together they take",
+       "as": "Aৰ 18 দিন, Bৰ 36 দিন লাগে। একেলগে লাগে"
+      },
+      "why": {
+       "en": "Rates add.",
+       "as": "হাৰ যোগ হয়।"
+      },
+      "options": [
+       {
+        "en": "27 days",
+        "as": "27 days"
+       },
+       {
+        "en": "14 days",
+        "as": "14 days"
+       },
+       {
+        "en": "12 days",
+        "as": "12 days"
+       },
+       {
+        "en": "54 days",
+        "as": "54 days"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+         "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+        }
+       },
+       {
+        "opt": 3,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+         "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A takes 8 days and B takes 24. Together they take",
+       "as": "Aৰ 8 দিন, Bৰ 24 দিন লাগে। একেলগে লাগে"
+      },
+      "why": {
+       "en": "Rates add.",
+       "as": "হাৰ যোগ হয়।"
+      },
+      "options": [
+       {
+        "en": "16 days",
+        "as": "16 days"
+       },
+       {
+        "en": "6 days",
+        "as": "6 days"
+       },
+       {
+        "en": "32 days",
+        "as": "32 days"
+       },
+       {
+        "en": "8 days",
+        "as": "8 days"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+         "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+        }
+       },
+       {
+        "opt": 2,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+         "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A takes 14 days and B takes 35. Together they take",
+       "as": "Aৰ 14 দিন, Bৰ 35 দিন লাগে। একেলগে লাগে"
+      },
+      "why": {
+       "en": "Rates add.",
+       "as": "হাৰ যোগ হয়।"
+      },
+      "options": [
+       {
+        "en": "10 days",
+        "as": "10 days"
+       },
+       {
+        "en": "$\\frac{49}{2}$ days",
+        "as": "$\\frac{49}{2}$ days"
+       },
+       {
+        "en": "49 days",
+        "as": "49 days"
+       },
+       {
+        "en": "12 days",
+        "as": "12 days"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+         "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+        }
+       },
+       {
+        "opt": 2,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Days do not add. Rates add: find what each does in one day, then combine.",
+         "as": "দিন যোগ নহয়। হাৰ যোগ হয়: প্ৰত্যেকে এদিনত কিমান কৰে উলিয়াই যোগ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m10.t.q2",
+    "type": "mcq",
+    "skill": "w-men",
+    "q": {
+     "en": "10 people finish in 18 days. 15 people finish in",
+     "as": "10 জনে 18 দিনত শেষ কৰে। 15 জনে শেষ কৰে"
+    },
+    "why": {
+     "en": "People × days stays fixed.",
+     "as": "মানুহ × দিন স্থিৰ থাকে।"
+    },
+    "options": [
+     {
+      "en": "16 days",
+      "as": "16 days"
+     },
+     {
+      "en": "27 days",
+      "as": "27 days"
+     },
+     {
+      "en": "14 days",
+      "as": "14 days"
+     },
+     {
+      "en": "12 days",
+      "as": "12 days"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-work-inverse",
+      "why": {
+       "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+       "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "10 people finish in 18 days. 15 people finish in",
+       "as": "10 জনে 18 দিনত শেষ কৰে। 15 জনে শেষ কৰে"
+      },
+      "why": {
+       "en": "People × days stays fixed.",
+       "as": "মানুহ × দিন স্থিৰ থাকে।"
+      },
+      "options": [
+       {
+        "en": "16 days",
+        "as": "16 days"
+       },
+       {
+        "en": "27 days",
+        "as": "27 days"
+       },
+       {
+        "en": "14 days",
+        "as": "14 days"
+       },
+       {
+        "en": "12 days",
+        "as": "12 days"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-work-inverse",
+        "why": {
+         "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+         "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "24 people finish in 5 days. 8 people finish in",
+       "as": "24 জনে 5 দিনত শেষ কৰে। 8 জনে শেষ কৰে"
+      },
+      "why": {
+       "en": "People × days stays fixed.",
+       "as": "মানুহ × দিন স্থিৰ থাকে।"
+      },
+      "options": [
+       {
+        "en": "17 days",
+        "as": "17 days"
+       },
+       {
+        "en": "3 days",
+        "as": "3 days"
+       },
+       {
+        "en": "$\\frac{5}{3}$ days",
+        "as": "$\\frac{5}{3}$ days"
+       },
+       {
+        "en": "15 days",
+        "as": "15 days"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-work-inverse",
+        "why": {
+         "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+         "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "12 people finish in 20 days. 16 people finish in",
+       "as": "12 জনে 20 দিনত শেষ কৰে। 16 জনে শেষ কৰে"
+      },
+      "why": {
+       "en": "People × days stays fixed.",
+       "as": "মানুহ × দিন স্থিৰ থাকে।"
+      },
+      "options": [
+       {
+        "en": "17 days",
+        "as": "17 days"
+       },
+       {
+        "en": "18 days",
+        "as": "18 days"
+       },
+       {
+        "en": "$\\frac{80}{3}$ days",
+        "as": "$\\frac{80}{3}$ days"
+       },
+       {
+        "en": "15 days",
+        "as": "15 days"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-work-inverse",
+        "why": {
+         "en": "More people means fewer days. The product stays fixed, so multiply and divide.",
+         "as": "বেছি মানুহ মানে কম দিন। পূৰণফল স্থিৰ থাকে, সেয়ে পূৰণ আৰু হৰণ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m10.t.q3",
+    "type": "mcq",
+    "skill": "w-pipes",
+    "q": {
+     "en": "An inlet fills in 6 hours and an outlet empties in 18. With both open the tank fills in",
+     "as": "প্ৰৱেশে 6 ঘণ্টাত ভৰায়, নিৰ্গমে 18 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰে"
+    },
+    "why": {
+     "en": "Subtract the rates.",
+     "as": "হাৰ বিয়োগ কৰা।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{9}{2}$ hours",
+      "as": "$\\frac{9}{2}$ hours"
+     },
+     {
+      "en": "24 hours",
+      "as": "24 hours"
+     },
+     {
+      "en": "12 hours",
+      "as": "12 hours"
+     },
+     {
+      "en": "9 hours",
+      "as": "9 hours"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-pipe-sign",
+      "why": {
+       "en": "An outlet removes water, so its rate is taken away, not added.",
+       "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "An inlet fills in 6 hours and an outlet empties in 18. With both open the tank fills in",
+       "as": "প্ৰৱেশে 6 ঘণ্টাত ভৰায়, নিৰ্গমে 18 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰে"
+      },
+      "why": {
+       "en": "Subtract the rates.",
+       "as": "হাৰ বিয়োগ কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{9}{2}$ hours",
+        "as": "$\\frac{9}{2}$ hours"
+       },
+       {
+        "en": "24 hours",
+        "as": "24 hours"
+       },
+       {
+        "en": "12 hours",
+        "as": "12 hours"
+       },
+       {
+        "en": "9 hours",
+        "as": "9 hours"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-pipe-sign",
+        "why": {
+         "en": "An outlet removes water, so its rate is taken away, not added.",
+         "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "An inlet fills in 4 hours and an outlet empties in 12. With both open the tank fills in",
+       "as": "প্ৰৱেশে 4 ঘণ্টাত ভৰায়, নিৰ্গমে 12 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰে"
+      },
+      "why": {
+       "en": "Subtract the rates.",
+       "as": "হাৰ বিয়োগ কৰা।"
+      },
+      "options": [
+       {
+        "en": "3 hours",
+        "as": "3 hours"
+       },
+       {
+        "en": "6 hours",
+        "as": "6 hours"
+       },
+       {
+        "en": "16 hours",
+        "as": "16 hours"
+       },
+       {
+        "en": "9 hours",
+        "as": "9 hours"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-pipe-sign",
+        "why": {
+         "en": "An outlet removes water, so its rate is taken away, not added.",
+         "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "An inlet fills in 10 hours and an outlet empties in 30. With both open the tank fills in",
+       "as": "প্ৰৱেশে 10 ঘণ্টাত ভৰায়, নিৰ্গমে 30 ঘণ্টাত খালী কৰে। দুয়োটা খোলা থাকিলে ভৰে"
+      },
+      "why": {
+       "en": "Subtract the rates.",
+       "as": "হাৰ বিয়োগ কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{15}{2}$ hours",
+        "as": "$\\frac{15}{2}$ hours"
+       },
+       {
+        "en": "40 hours",
+        "as": "40 hours"
+       },
+       {
+        "en": "18 hours",
+        "as": "18 hours"
+       },
+       {
+        "en": "15 hours",
+        "as": "15 hours"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-pipe-sign",
+        "why": {
+         "en": "An outlet removes water, so its rate is taken away, not added.",
+         "as": "নিৰ্গম পাইপে পানী উলিয়ায়, সেয়ে ইয়াৰ হাৰ বিয়োগ হয়, যোগ নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m10.t.q4",
+    "type": "mcq",
+    "skill": "w-rate",
+    "q": {
+     "en": "A and B take 8 days, B and C take 12, C and A take 24. All three take",
+     "as": "A আৰু Bৰ 8 দিন, B আৰু Cৰ 12, C আৰু Aৰ 24। তিনিওজনৰ লাগে"
+    },
+    "why": {
+     "en": "Halve the sum of the pair rates.",
+     "as": "যোৰাৰ হাৰৰ যোগফল আধা কৰা।"
+    },
+    "options": [
+     {
+      "en": "4 days",
+      "as": "4 days"
+     },
+     {
+      "en": "16 days",
+      "as": "16 days"
+     },
+     {
+      "en": "8 days",
+      "as": "8 days"
+     },
+     {
+      "en": "11 days",
+      "as": "11 days"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-work-days",
+      "why": {
+       "en": "Pairs count each person twice, so halve the summed rates.",
+       "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে যোগফল আধা কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A and B take 8 days, B and C take 12, C and A take 24. All three take",
+       "as": "A আৰু Bৰ 8 দিন, B আৰু Cৰ 12, C আৰু Aৰ 24। তিনিওজনৰ লাগে"
+      },
+      "why": {
+       "en": "Halve the sum of the pair rates.",
+       "as": "যোৰাৰ হাৰৰ যোগফল আধা কৰা।"
+      },
+      "options": [
+       {
+        "en": "4 days",
+        "as": "4 days"
+       },
+       {
+        "en": "16 days",
+        "as": "16 days"
+       },
+       {
+        "en": "8 days",
+        "as": "8 days"
+       },
+       {
+        "en": "11 days",
+        "as": "11 days"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Pairs count each person twice, so halve the summed rates.",
+         "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে যোগফল আধা কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A and B take 30 days, B and C take 40, C and A take 24. All three take",
+       "as": "A আৰু Bৰ 30 দিন, B আৰু Cৰ 40, C আৰু Aৰ 24। তিনিওজনৰ লাগে"
+      },
+      "why": {
+       "en": "Halve the sum of the pair rates.",
+       "as": "যোৰাৰ হাৰৰ যোগফল আধা কৰা।"
+      },
+      "options": [
+       {
+        "en": "23 days",
+        "as": "23 days"
+       },
+       {
+        "en": "20 days",
+        "as": "20 days"
+       },
+       {
+        "en": "10 days",
+        "as": "10 days"
+       },
+       {
+        "en": "40 days",
+        "as": "40 days"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Pairs count each person twice, so halve the summed rates.",
+         "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে যোগফল আধা কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A and B take 10 days, B and C take 15, C and A take 30. All three take",
+       "as": "A আৰু Bৰ 10 দিন, B আৰু Cৰ 15, C আৰু Aৰ 30। তিনিওজনৰ লাগে"
+      },
+      "why": {
+       "en": "Halve the sum of the pair rates.",
+       "as": "যোৰাৰ হাৰৰ যোগফল আধা কৰা।"
+      },
+      "options": [
+       {
+        "en": "13 days",
+        "as": "13 days"
+       },
+       {
+        "en": "10 days",
+        "as": "10 days"
+       },
+       {
+        "en": "5 days",
+        "as": "5 days"
+       },
+       {
+        "en": "20 days",
+        "as": "20 days"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-work-days",
+        "why": {
+         "en": "Pairs count each person twice, so halve the summed rates.",
+         "as": "যোৰাত প্ৰত্যেকক দুবাৰ গণা হয়, সেয়ে যোগফল আধা কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m10.t.q5",
+    "type": "solve",
+    "skill": "w-men",
+    "q": {
+     "en": "A is 2 times as fast as B, who alone takes 30 days. How many days does A alone take?",
+     "as": "A Bতকৈ 2 গুণ সোনকালে; Bক অকলে 30 দিন লাগে। Aক অকলে কিমান দিন লাগিব?"
+    },
+    "answer": "15",
+    "why": {
+     "en": "Time is the opposite ratio of speed.",
+     "as": "সময় গতিৰ বিপৰীত অনুপাত।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "A is 2 times as fast as B, who alone takes 30 days. How many days does A alone take?",
+       "as": "A Bতকৈ 2 গুণ সোনকালে; Bক অকলে 30 দিন লাগে। Aক অকলে কিমান দিন লাগিব?"
+      },
+      "answer": "15",
+      "why": {
+       "en": "Time is the opposite ratio of speed.",
+       "as": "সময় গতিৰ বিপৰীত অনুপাত।"
+      }
+     },
+     {
+      "q": {
+       "en": "A is 3 times as fast as B, who alone takes 24 days. How many days does A alone take?",
+       "as": "A Bতকৈ 3 গুণ সোনকালে; Bক অকলে 24 দিন লাগে। Aক অকলে কিমান দিন লাগিব?"
+      },
+      "answer": "8",
+      "why": {
+       "en": "Time is the opposite ratio of speed.",
+       "as": "সময় গতিৰ বিপৰীত অনুপাত।"
+      }
+     },
+     {
+      "q": {
+       "en": "A is 5 times as fast as B, who alone takes 40 days. How many days does A alone take?",
+       "as": "A Bতকৈ 5 গুণ সোনকালে; Bক অকলে 40 দিন লাগে। Aক অকলে কিমান দিন লাগিব?"
+      },
+      "answer": "8",
+      "why": {
+       "en": "Time is the opposite ratio of speed.",
+       "as": "সময় গতিৰ বিপৰীত অনুপাত।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

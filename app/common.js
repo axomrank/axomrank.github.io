@@ -18,7 +18,7 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* storage blocked */ } },
 };
 const G = Object.assign({ xp: 0, streak: { n: 0, last: null }, sound: true, as: false, fs: 1, motion: true,
-  mistakes: {}, srs: {}, days: {}, stats: {}, checkpoints: {}, updated: 0 }, store.get("axom:global", {}));
+  mistakes: {}, srs: {}, days: {}, stats: {}, checkpoints: {}, skills: {}, miscon: {}, updated: 0 }, store.get("axom:global", {}));
 const lessonKey = (id) => `axom:lesson:${id}`;
 const getLesson = (id) => Object.assign({ done: {} }, store.get(lessonKey(id), {}));
 const listeners = [];
@@ -62,6 +62,53 @@ function dailyReviewQueue(limit = REVIEW_ROUND_SIZE) {
   }
   return round;
 }
+/* ---------- skill mastery (Bayesian knowledge tracing), separate from XP and from spaced review ----------
+   skills[id] = { p: chance the skill is known, a: first attempts, o: correct first attempts, t: time of last answer,
+                  g: date of last independent success, dr: delayed recalls, u: hints or help used }
+   Only first attempts reach this model. A retry or a hinted answer never raises p, and "strong" needs a success
+   at least DELAY_DAYS after an earlier one, so same-session practice cannot produce a delayed-mastery claim. */
+const BKT = { init: 0.2, learn: 0.1, slip: 0.1, guess: 0.25, guessTyped: 0.12 };
+const DELAY_DAYS = 3, RUSTY_DAYS = 21, READY_P = 0.85, WEAK_P = 0.5, READY_WINS = 3;
+const daysBetween = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
+function skillAnswer(id, right, { hinted = false, typed = false } = {}) {
+  const r = (G.skills[id] = G.skills[id] || { p: BKT.init, a: 0, o: 0, t: 0, g: null, dr: 0, u: 0 });
+  const guess = typed ? BKT.guessTyped : BKT.guess, now = iso();   // a typed answer is much harder to guess than a tapped one
+  r.a++; r.t = Date.now();
+  if (hinted) { r.u++; if (right) return r; }            // help used: a success teaches, but is not evidence of mastery
+  if (right) {
+    r.o++;
+    const known = (r.p * (1 - BKT.slip)) / (r.p * (1 - BKT.slip) + (1 - r.p) * guess);
+    r.p = known + (1 - known) * BKT.learn;
+    if (r.g && daysBetween(r.g, now) >= DELAY_DAYS) r.dr = (r.dr || 0) + 1;
+    r.g = now;
+  } else {
+    r.p = (r.p * BKT.slip) / (r.p * BKT.slip + (1 - r.p) * (1 - guess));
+    r.dr = Math.max(0, (r.dr || 0) - 1);
+  }
+  r.p = Math.min(0.995, Math.max(0.01, +r.p.toFixed(4)));
+  return r;
+}
+function misconception(tag) { const m = (G.miscon[tag] = G.miscon[tag] || { n: 0, t: 0 }); m.n++; m.t = Date.now(); }
+// new (no evidence) · weak · learning · ready (high now, not yet tested after a delay) · strong (survived a delay) · rusty (strong or ready, long unused)
+function skillState(id) {
+  const r = G.skills[id];
+  if (!r || !r.a) return "new";
+  if (r.p < WEAK_P) return "weak";
+  if (r.p < READY_P || r.o < READY_WINS) return "learning";
+  if ((Date.now() - r.t) / 864e5 > RUSTY_DAYS) return "rusty";
+  return r.dr > 0 ? "strong" : "ready";
+}
+// The deepest unmastered prerequisite behind a skill, so practice repairs the cause first. map: { id: { pre: [...] } }
+function rootCause(id, map, seen = new Set()) {
+  if (seen.has(id) || !map[id]) return null;
+  seen.add(id);
+  for (const pre of map[id].pre || []) {
+    const deeper = rootCause(pre, map, seen);
+    if (deeper) return deeper;
+    if (["weak", "rusty"].includes(skillState(pre))) return pre;
+  }
+  return null;
+}
 function record(lessonId, right) { const st = (G.stats[lessonId] = G.stats[lessonId] || { a: 0, o: 0 }); st.a++; if (right) st.o++; }
 function addDayXP(xp) { const k = iso(); G.days[k] = (G.days[k] || 0) + xp; }
 const streakNow = () => { const t = dayKey(new Date()), y = dayKey(new Date(Date.now() - 864e5)); return G.streak.last === t || G.streak.last === y ? G.streak.n : 0; };
@@ -75,7 +122,11 @@ function bumpStreak() {
 function snapshot() {
   const lessons = {};
   Object.keys(localStorage).filter((k) => k.startsWith("axom:lesson:")).forEach((k) => { lessons[k.slice(12)] = { done: Object.keys(store.get(k, {}).done || {}) }; });
-  return { xp: G.xp, streak: G.streak, lessons, mistakes: G.mistakes, srs: G.srs, days: G.days, stats: G.stats, checkpoints: G.checkpoints, updated: G.updated };
+  const out = { xp: G.xp, streak: G.streak, lessons, mistakes: G.mistakes, srs: G.srs, days: G.days, stats: G.stats, checkpoints: G.checkpoints, updated: G.updated };
+  // Sent only once used: the account rules must allow these two fields before a release that writes them.
+  if (Object.keys(G.skills).length) out.skills = G.skills;
+  if (Object.keys(G.miscon).length) out.miscon = G.miscon;
+  return out;
 }
 // Merge rule: never lose progress. XP = higher, finished units = union of both,
 // streak and mistakes = whichever side was updated more recently.
@@ -87,12 +138,15 @@ function merge(a, b) {
   });
   const days = { ...(a.days || {}) };
   Object.entries(b.days || {}).forEach(([k, v]) => (days[k] = Math.max(days[k] || 0, v)));
-  return { xp: Math.max(a.xp || 0, b.xp || 0), streak: newer.streak || { n: 0, last: null }, lessons, mistakes: newer.mistakes || {},
+  // skill records merge one by one: each device keeps whichever record was answered last
+  const latest = (x = {}, y = {}) => { const o = { ...x }; Object.entries(y).forEach(([k, v]) => { if (!o[k] || (v.t || 0) > (o[k].t || 0)) o[k] = v; }); return o; };
+  const skills = latest(a.skills, b.skills), miscon = latest(a.miscon, b.miscon);
+  return { ...(Object.keys(skills).length ? { skills } : {}), ...(Object.keys(miscon).length ? { miscon } : {}), xp: Math.max(a.xp || 0, b.xp || 0), streak: newer.streak || { n: 0, last: null }, lessons, mistakes: newer.mistakes || {},
     srs: newer.srs || {}, days, stats: newer.stats || {}, checkpoints: { ...(a.checkpoints || {}), ...(b.checkpoints || {}) }, updated: Math.max(a.updated || 0, b.updated || 0) };
 }
 function applySnapshot(s) {
   G.xp = s.xp; G.streak = s.streak; G.mistakes = s.mistakes; G.updated = s.updated;
-  G.srs = s.srs || {}; G.days = s.days || {}; G.stats = s.stats || {}; G.checkpoints = s.checkpoints || {};
+  G.srs = s.srs || {}; G.days = s.days || {}; G.stats = s.stats || {}; G.checkpoints = s.checkpoints || {}; G.skills = s.skills || {}; G.miscon = s.miscon || {};
   store.set("axom:global", G);
   Object.entries(s.lessons).forEach(([id, v]) => { const P = getLesson(id); v.done.forEach((u) => (P.done[u] = true)); store.set(lessonKey(id), P); });
 }
@@ -233,5 +287,5 @@ if (CFG.firebase) {
 
 window.AXOM = { B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
   isOffline, saveOffline, ICON, initLang, auth, merge, snapshot, applySnapshot, onSave: (f) => listeners.push(f), _audioState: () => (ac ? ac.state : "none"),
-  iso, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
+  iso, skillAnswer, misconception, skillState, rootCause, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
 })();

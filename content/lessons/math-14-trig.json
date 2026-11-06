@@ -1,0 +1,4841 @@
+{
+ "id": "math-14-trig",
+ "course": "mathematics",
+ "no": 14,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Trigonometry",
+  "as": "ত্ৰিকোণমিতি"
+ },
+ "reign": {
+  "en": "Ratios, values, height and distance",
+  "as": "অনুপাত, মান, উচ্চতা আৰু দূৰত্ব"
+ },
+ "portrait": "math/trig.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Ratios of a shape",
+    "as": "আকৃতিৰ অনুপাত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "In a right triangle, sin = opposite ÷ hypotenuse.",
+     "as": "সমকোণী ত্ৰিভুজত sin = বিপৰীত ÷ অতিভুজ।"
+    },
+    {
+     "en": "cos = adjacent ÷ hypotenuse and tan = opposite ÷ adjacent.",
+     "as": "cos = সংলগ্ন ÷ অতিভুজ আৰু tan = বিপৰীত ÷ সংলগ্ন।"
+    },
+    {
+     "en": "The ratios depend on the angle, not the size.",
+     "as": "অনুপাত কোণৰ ওপৰত নিৰ্ভৰ কৰে, আকাৰৰ ওপৰত নহয়।"
+    },
+    {
+     "en": "cosec, sec and cot are the flips of sin, cos and tan.",
+     "as": "cosec, sec আৰু cot হৈছে sin, cos আৰু tanৰ ওলোটা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m14.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Same shape, same ratio",
+      "as": "একে আকৃতি, একে অনুপাত"
+     },
+     "text": [
+      {
+       "en": "Sine is one side divided by another. So what happens when the whole triangle grows?",
+       "as": "ছাইন হৈছে এটা বাহু ভাগ আন এটা। গোটা ত্ৰিভুজ ডাঙৰ হ'লে কি হয়?"
+      }
+     ],
+     "widget": {
+      "kind": "triangle",
+      "triple": [
+       3,
+       4,
+       5
+      ],
+      "k": 1,
+      "max": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make the triangle twice as big.",
+        "as": "ত্ৰিভুজটো দুগুণ ডাঙৰ কৰা।"
+       },
+       "goal": {
+        "k": 2
+       },
+       "then": {
+        "en": "6 over 10 is still $\\frac{3}{5}$. Every side doubled, so the ratio did not move.",
+        "as": "6 ভাগ 10 এতিয়াও $\\frac{3}{5}$। প্ৰতিটো বাহু দুগুণ হ'ল, অনুপাত সলনি নহ'ল।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now make it four times as big.",
+        "as": "এতিয়া চাৰিগুণ ডাঙৰ কৰা।"
+       },
+       "goal": {
+        "k": 4
+       },
+       "then": {
+        "en": "Sine belongs to the angle, not the size of the triangle.",
+        "as": "ছাইন কোণৰ, ত্ৰিভুজৰ আকাৰৰ নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Stand at the angle",
+      "as": "কোণত থিয় হোৱা"
+     },
+     "text": [
+      {
+       "en": "Names depend on where the angle is. The hypotenuse is always across from the right angle.",
+       "as": "নাম কোণৰ স্থানৰ ওপৰত নিৰ্ভৰ কৰে। অতিভুজ সদায় সমকোণৰ সন্মুখত।"
+      },
+      {
+       "en": "Opposite faces your angle and adjacent touches it.",
+       "as": "বিপৰীত বাহু কোণৰ সন্মুখত, সংলগ্ন বাহুৱে কোণ স্পৰ্শ কৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "sin: opposite ÷ hypotenuse",
+        "as": "sin: বিপৰীত ÷ অতিভুজ"
+       },
+       {
+        "en": "cos: adjacent ÷ hypotenuse",
+        "as": "cos: সংলগ্ন ÷ অতিভুজ"
+       },
+       {
+        "en": "tan: opposite ÷ adjacent",
+        "as": "tan: বিপৰীত ÷ সংলগ্ন"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m14.u1.q1",
+     "type": "explore",
+     "skill": "tr-ratio",
+     "q": {
+      "en": "Tap the opposite side for the angle θ.",
+      "as": "θ কোণৰ বিপৰীত বাহুত টিপা।"
+     },
+     "widget": {
+      "kind": "triangle",
+      "triple": [
+       3,
+       4,
+       5
+      ],
+      "pick": true,
+      "from": "base"
+     },
+     "target": 1,
+     "answerText": {
+      "en": "The opposite side",
+      "as": "বিপৰীত বাহু"
+     },
+     "why": {
+      "en": "Opposite faces θ, adjacent touches it, and the hypotenuse faces the right angle.",
+      "as": "বিপৰীতে θৰ সন্মুখত, সংলগ্নই স্পৰ্শ কৰে, অতিভুজ সমকোণৰ সন্মুখত।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Tap the opposite side for the angle θ.",
+        "as": "θ কোণৰ বিপৰীত বাহুত টিপা।"
+       },
+       "widget": {
+        "kind": "triangle",
+        "triple": [
+         3,
+         4,
+         5
+        ],
+        "pick": true,
+        "from": "base"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "The opposite side",
+        "as": "বিপৰীত বাহু"
+       },
+       "why": {
+        "en": "Opposite faces θ, adjacent touches it, and the hypotenuse faces the right angle.",
+        "as": "বিপৰীতে θৰ সন্মুখত, সংলগ্নই স্পৰ্শ কৰে, অতিভুজ সমকোণৰ সন্মুখত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the adjacent side for the angle θ.",
+        "as": "θ কোণৰ সংলগ্ন বাহুত টিপা।"
+       },
+       "widget": {
+        "kind": "triangle",
+        "triple": [
+         3,
+         4,
+         5
+        ],
+        "pick": true,
+        "from": "base"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "The adjacent side",
+        "as": "সংলগ্ন বাহু"
+       },
+       "why": {
+        "en": "Opposite faces θ, adjacent touches it, and the hypotenuse faces the right angle.",
+        "as": "বিপৰীতে θৰ সন্মুখত, সংলগ্নই স্পৰ্শ কৰে, অতিভুজ সমকোণৰ সন্মুখত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the opposite side for the angle θ.",
+        "as": "θ কোণৰ বিপৰীত বাহুত টিপা।"
+       },
+       "widget": {
+        "kind": "triangle",
+        "triple": [
+         3,
+         4,
+         5
+        ],
+        "pick": true,
+        "from": "top"
+       },
+       "target": 2,
+       "answerText": {
+        "en": "The opposite side",
+        "as": "বিপৰীত বাহু"
+       },
+       "why": {
+        "en": "Opposite faces θ, adjacent touches it, and the hypotenuse faces the right angle.",
+        "as": "বিপৰীতে θৰ সন্মুখত, সংলগ্নই স্পৰ্শ কৰে, অতিভুজ সমকোণৰ সন্মুখত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the adjacent side for the angle θ.",
+        "as": "θ কোণৰ সংলগ্ন বাহুত টিপা।"
+       },
+       "widget": {
+        "kind": "triangle",
+        "triple": [
+         3,
+         4,
+         5
+        ],
+        "pick": true,
+        "from": "top"
+       },
+       "target": 1,
+       "answerText": {
+        "en": "The adjacent side",
+        "as": "সংলগ্ন বাহু"
+       },
+       "why": {
+        "en": "Opposite faces θ, adjacent touches it, and the hypotenuse faces the right angle.",
+        "as": "বিপৰীতে θৰ সন্মুখত, সংলগ্নই স্পৰ্শ কৰে, অতিভুজ সমকোণৰ সন্মুখত।"
+       }
+      },
+      {
+       "q": {
+        "en": "Tap the longest side for the angle θ.",
+        "as": "θ কোণৰ দীঘলীয়া বাহুত টিপা।"
+       },
+       "widget": {
+        "kind": "triangle",
+        "triple": [
+         3,
+         4,
+         5
+        ],
+        "pick": true,
+        "from": "top"
+       },
+       "target": 3,
+       "answerText": {
+        "en": "The longest side",
+        "as": "দীঘলীয়া বাহু"
+       },
+       "why": {
+        "en": "Opposite faces θ, adjacent touches it, and the hypotenuse faces the right angle.",
+        "as": "বিপৰীতে θৰ সন্মুখত, সংলগ্নই স্পৰ্শ কৰে, অতিভুজ সমকোণৰ সন্মুখত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u1.q2",
+     "type": "solve",
+     "skill": "tr-ratio",
+     "hints": [
+      {
+       "en": "Type it as top/bottom.",
+       "as": "লব/হৰ ৰূপত লিখা।"
+      }
+     ],
+     "q": {
+      "en": "A right triangle has opposite 5, adjacent 12 and hypotenuse 13. Find sin θ.",
+      "as": "সমকোণী ত্ৰিভুজৰ বিপৰীত 5, সংলগ্ন 12, অতিভুজ 13। sin θ উলিওৱা।"
+     },
+     "answer": "5/13",
+     "why": {
+      "en": "Opposite ÷ hypotenuse.",
+      "as": "বিপৰীত ÷ অতিভুজ।"
+     },
+     "traps": [
+      {
+       "ans": "12/13",
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+        "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A right triangle has opposite 5, adjacent 12 and hypotenuse 13. Find sin θ.",
+        "as": "সমকোণী ত্ৰিভুজৰ বিপৰীত 5, সংলগ্ন 12, অতিভুজ 13। sin θ উলিওৱা।"
+       },
+       "answer": "5/13",
+       "why": {
+        "en": "Opposite ÷ hypotenuse.",
+        "as": "বিপৰীত ÷ অতিভুজ।"
+       },
+       "traps": [
+        {
+         "ans": "12/13",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+          "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A right triangle has opposite 8, adjacent 15 and hypotenuse 17. Find sin θ.",
+        "as": "সমকোণী ত্ৰিভুজৰ বিপৰীত 8, সংলগ্ন 15, অতিভুজ 17। sin θ উলিওৱা।"
+       },
+       "answer": "8/17",
+       "why": {
+        "en": "Opposite ÷ hypotenuse.",
+        "as": "বিপৰীত ÷ অতিভুজ।"
+       },
+       "traps": [
+        {
+         "ans": "15/17",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+          "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A right triangle has opposite 7, adjacent 24 and hypotenuse 25. Find sin θ.",
+        "as": "সমকোণী ত্ৰিভুজৰ বিপৰীত 7, সংলগ্ন 24, অতিভুজ 25। sin θ উলিওৱা।"
+       },
+       "answer": "7/25",
+       "why": {
+        "en": "Opposite ÷ hypotenuse.",
+        "as": "বিপৰীত ÷ অতিভুজ।"
+       },
+       "traps": [
+        {
+         "ans": "24/25",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+          "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A right triangle has opposite 3, adjacent 4 and hypotenuse 5. Find sin θ.",
+        "as": "সমকোণী ত্ৰিভুজৰ বিপৰীত 3, সংলগ্ন 4, অতিভুজ 5। sin θ উলিওৱা।"
+       },
+       "answer": "3/5",
+       "why": {
+        "en": "Opposite ÷ hypotenuse.",
+        "as": "বিপৰীত ÷ অতিভুজ।"
+       },
+       "traps": [
+        {
+         "ans": "4/5",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+          "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m14.u1.q3",
+     "type": "stepwise",
+     "skill": "tr-ratio",
+     "q": {
+      "en": "If sin θ = $\\frac{3}{5}$, find cos θ.",
+      "as": "sin θ = $\\frac{3}{5}$ হ'লে cos θ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Draw it: opposite and hypotenuse are",
+        "as": "আঁকা: বিপৰীত আৰু অতিভুজ"
+       },
+       "options": [
+        {
+         "en": "5 and 3",
+         "as": "5 আৰু 3"
+        },
+        {
+         "en": "3 and 4",
+         "as": "3 আৰু 4"
+        },
+        {
+         "en": "3 and 5",
+         "as": "3 আৰু 5"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Sine gives both.",
+        "as": "ছাইনে দুয়োটা দিয়ে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "By Pythagoras, adjacent is",
+        "as": "পাইথাগোৰাছেৰে সংলগ্ন"
+       },
+       "options": [
+        {
+         "en": "4",
+         "as": "4"
+        },
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "2",
+         "as": "2"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "$\\sqrt{5^2 - 3^2}$.",
+        "as": "$\\sqrt{5^2 - 3^2}$।"
+       },
+       "skill": "s-roots",
+       "tag": "m-root-add"
+      },
+      {
+       "ask": {
+        "en": "So cos θ is",
+        "as": "তেনেহ'লে cos θ"
+       },
+       "options": [
+        {
+         "en": "$\\frac{3}{4}$",
+         "as": "$\\frac{3}{4}$"
+        },
+        {
+         "en": "$\\frac{5}{4}$",
+         "as": "$\\frac{5}{4}$"
+        },
+        {
+         "en": "$\\frac{4}{5}$",
+         "as": "$\\frac{4}{5}$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Adjacent ÷ hypotenuse.",
+        "as": "সংলগ্ন ÷ অতিভুজ।"
+       },
+       "tag": "m-trig-swap"
+      }
+     ],
+     "why": {
+      "en": "One ratio plus Pythagoras gives all the others.",
+      "as": "এটা অনুপাত আৰু পাইথাগোৰাছে বাকী সকলো দিয়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If sin θ = $\\frac{3}{5}$, find cos θ.",
+        "as": "sin θ = $\\frac{3}{5}$ হ'লে cos θ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Draw it: opposite and hypotenuse are",
+          "as": "আঁকা: বিপৰীত আৰু অতিভুজ"
+         },
+         "options": [
+          {
+           "en": "5 and 3",
+           "as": "5 আৰু 3"
+          },
+          {
+           "en": "3 and 4",
+           "as": "3 আৰু 4"
+          },
+          {
+           "en": "3 and 5",
+           "as": "3 আৰু 5"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Sine gives both.",
+          "as": "ছাইনে দুয়োটা দিয়ে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "By Pythagoras, adjacent is",
+          "as": "পাইথাগোৰাছেৰে সংলগ্ন"
+         },
+         "options": [
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\sqrt{5^2 - 3^2}$.",
+          "as": "$\\sqrt{5^2 - 3^2}$।"
+         },
+         "skill": "s-roots",
+         "tag": "m-root-add"
+        },
+        {
+         "ask": {
+          "en": "So cos θ is",
+          "as": "তেনেহ'লে cos θ"
+         },
+         "options": [
+          {
+           "en": "$\\frac{3}{4}$",
+           "as": "$\\frac{3}{4}$"
+          },
+          {
+           "en": "$\\frac{5}{4}$",
+           "as": "$\\frac{5}{4}$"
+          },
+          {
+           "en": "$\\frac{4}{5}$",
+           "as": "$\\frac{4}{5}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Adjacent ÷ hypotenuse.",
+          "as": "সংলগ্ন ÷ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "One ratio plus Pythagoras gives all the others.",
+        "as": "এটা অনুপাত আৰু পাইথাগোৰাছে বাকী সকলো দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If sin θ = $\\frac{5}{13}$, find cos θ.",
+        "as": "sin θ = $\\frac{5}{13}$ হ'লে cos θ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Draw it: opposite and hypotenuse are",
+          "as": "আঁকা: বিপৰীত আৰু অতিভুজ"
+         },
+         "options": [
+          {
+           "en": "5 and 13",
+           "as": "5 আৰু 13"
+          },
+          {
+           "en": "5 and 12",
+           "as": "5 আৰু 12"
+          },
+          {
+           "en": "13 and 5",
+           "as": "13 আৰু 5"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Sine gives both.",
+          "as": "ছাইনে দুয়োটা দিয়ে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "By Pythagoras, adjacent is",
+          "as": "পাইথাগোৰাছেৰে সংলগ্ন"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "$\\sqrt{13^2 - 5^2}$.",
+          "as": "$\\sqrt{13^2 - 5^2}$।"
+         },
+         "skill": "s-roots",
+         "tag": "m-root-add"
+        },
+        {
+         "ask": {
+          "en": "So cos θ is",
+          "as": "তেনেহ'লে cos θ"
+         },
+         "options": [
+          {
+           "en": "$\\frac{12}{13}$",
+           "as": "$\\frac{12}{13}$"
+          },
+          {
+           "en": "$\\frac{5}{12}$",
+           "as": "$\\frac{5}{12}$"
+          },
+          {
+           "en": "$\\frac{13}{12}$",
+           "as": "$\\frac{13}{12}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Adjacent ÷ hypotenuse.",
+          "as": "সংলগ্ন ÷ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "One ratio plus Pythagoras gives all the others.",
+        "as": "এটা অনুপাত আৰু পাইথাগোৰাছে বাকী সকলো দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If sin θ = $\\frac{8}{17}$, find cos θ.",
+        "as": "sin θ = $\\frac{8}{17}$ হ'লে cos θ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Draw it: opposite and hypotenuse are",
+          "as": "আঁকা: বিপৰীত আৰু অতিভুজ"
+         },
+         "options": [
+          {
+           "en": "8 and 17",
+           "as": "8 আৰু 17"
+          },
+          {
+           "en": "8 and 15",
+           "as": "8 আৰু 15"
+          },
+          {
+           "en": "17 and 8",
+           "as": "17 আৰু 8"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Sine gives both.",
+          "as": "ছাইনে দুয়োটা দিয়ে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "By Pythagoras, adjacent is",
+          "as": "পাইথাগোৰাছেৰে সংলগ্ন"
+         },
+         "options": [
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\sqrt{17^2 - 8^2}$.",
+          "as": "$\\sqrt{17^2 - 8^2}$।"
+         },
+         "skill": "s-roots",
+         "tag": "m-root-add"
+        },
+        {
+         "ask": {
+          "en": "So cos θ is",
+          "as": "তেনেহ'লে cos θ"
+         },
+         "options": [
+          {
+           "en": "$\\frac{17}{15}$",
+           "as": "$\\frac{17}{15}$"
+          },
+          {
+           "en": "$\\frac{15}{17}$",
+           "as": "$\\frac{15}{17}$"
+          },
+          {
+           "en": "$\\frac{8}{15}$",
+           "as": "$\\frac{8}{15}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Adjacent ÷ hypotenuse.",
+          "as": "সংলগ্ন ÷ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "One ratio plus Pythagoras gives all the others.",
+        "as": "এটা অনুপাত আৰু পাইথাগোৰাছে বাকী সকলো দিয়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u1.q4",
+     "type": "tf",
+     "skill": "tr-ratio",
+     "s": {
+      "en": "A bigger triangle with the same angles has a bigger sine.",
+      "as": "একে কোণৰ ডাঙৰ ত্ৰিভুজৰ ছাইন ডাঙৰ।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Both sides grow together, so their ratio stays the same.",
+      "as": "দুয়োটা বাহু একেলগে বাঢ়ে, সেয়ে অনুপাত একে থাকে।"
+     }
+    },
+    {
+     "id": "m14.u1.q5",
+     "type": "solve",
+     "skill": "tr-ratio",
+     "q": {
+      "en": "If cos θ = $\\frac{4}{5}$, find sec θ.",
+      "as": "cos θ = $\\frac{4}{5}$ হ'লে sec θ উলিওৱা।"
+     },
+     "answer": "5/4",
+     "why": {
+      "en": "Secant is the flip of cosine.",
+      "as": "ছেকেণ্ট কছাইনৰ ওলোটা।"
+     },
+     "traps": [
+      {
+       "ans": "4/5",
+       "tag": "m-trig-flip",
+       "why": {
+        "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+        "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If cos θ = $\\frac{4}{5}$, find sec θ.",
+        "as": "cos θ = $\\frac{4}{5}$ হ'লে sec θ উলিওৱা।"
+       },
+       "answer": "5/4",
+       "why": {
+        "en": "Secant is the flip of cosine.",
+        "as": "ছেকেণ্ট কছাইনৰ ওলোটা।"
+       },
+       "traps": [
+        {
+         "ans": "4/5",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+          "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If cos θ = $\\frac{5}{13}$, find sec θ.",
+        "as": "cos θ = $\\frac{5}{13}$ হ'লে sec θ উলিওৱা।"
+       },
+       "answer": "13/5",
+       "why": {
+        "en": "Secant is the flip of cosine.",
+        "as": "ছেকেণ্ট কছাইনৰ ওলোটা।"
+       },
+       "traps": [
+        {
+         "ans": "5/13",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+          "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If cos θ = $\\frac{8}{17}$, find sec θ.",
+        "as": "cos θ = $\\frac{8}{17}$ হ'লে sec θ উলিওৱা।"
+       },
+       "answer": "17/8",
+       "why": {
+        "en": "Secant is the flip of cosine.",
+        "as": "ছেকেণ্ট কছাইনৰ ওলোটা।"
+       },
+       "traps": [
+        {
+         "ans": "8/17",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+          "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If cos θ = $\\frac{3}{7}$, find sec θ.",
+        "as": "cos θ = $\\frac{3}{7}$ হ'লে sec θ উলিওৱা।"
+       },
+       "answer": "7/3",
+       "why": {
+        "en": "Secant is the flip of cosine.",
+        "as": "ছেকেণ্ট কছাইনৰ ওলোটা।"
+       },
+       "traps": [
+        {
+         "ans": "3/7",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+          "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m14.u1.q6",
+     "type": "match",
+     "skill": "tr-ratio",
+     "q": {
+      "en": "Match each ratio to its flip",
+      "as": "প্ৰতিটো অনুপাতক ওলোটাৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "sin θ",
+        "as": "sin θ"
+       },
+       {
+        "en": "cosec θ",
+        "as": "cosec θ"
+       }
+      ],
+      [
+       {
+        "en": "cos θ",
+        "as": "cos θ"
+       },
+       {
+        "en": "sec θ",
+        "as": "sec θ"
+       }
+      ],
+      [
+       {
+        "en": "tan θ",
+        "as": "tan θ"
+       },
+       {
+        "en": "cot θ",
+        "as": "cot θ"
+       }
+      ],
+      [
+       {
+        "en": "sin θ ÷ cos θ",
+        "as": "sin θ ÷ cos θ"
+       },
+       {
+        "en": "tan θ, not a flip",
+        "as": "tan θ, ওলোটা নহয়"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each pair multiplies to 1.",
+      "as": "প্ৰতিটো যোৰাৰ পূৰণফল 1।"
+     }
+    },
+    {
+     "id": "m14.u1.q7",
+     "type": "solve",
+     "skill": "tr-values",
+     "hints": [
+      {
+       "en": "Name the sides from R first.",
+       "as": "প্ৰথমে Rৰ পৰা বাহুৰ নাম দিয়া।"
+      }
+     ],
+     "q": {
+      "en": "In triangle PQR, Q = 90°, PQ = 5 cm and PR = 10 cm. Find angle R.",
+      "as": "PQR ত্ৰিভুজত Q = 90°, PQ = 5 ছেমি, PR = 10 ছেমি। R কোণ উলিওৱা।"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+      "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+     },
+     "traps": [
+      {
+       "ans": "60",
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "That is angle P. Look from R: which side faces it?",
+        "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "In triangle PQR, Q = 90°, PQ = 5 cm and PR = 10 cm. Find angle R.",
+        "as": "PQR ত্ৰিভুজত Q = 90°, PQ = 5 ছেমি, PR = 10 ছেমি। R কোণ উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+        "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "That is angle P. Look from R: which side faces it?",
+          "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In triangle PQR, Q = 90°, QR = 4 cm and PR = 8 cm. Find angle R.",
+        "as": "PQR ত্ৰিভুজত Q = 90°, QR = 4 ছেমি, PR = 8 ছেমি। R কোণ উলিওৱা।"
+       },
+       "answer": "60",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+        "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "That is angle P. Look from R: which side faces it?",
+          "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "In triangle PQR, Q = 90°, PQ = 7 cm and PR = 14 cm. Find angle R.",
+        "as": "PQR ত্ৰিভুজত Q = 90°, PQ = 7 ছেমি, PR = 14 ছেমি। R কোণ উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "One side is half the hypotenuse, so a ratio is $\\frac{1}{2}$.",
+        "as": "এটা বাহু অতিভুজৰ আধা, সেয়ে অনুপাত $\\frac{1}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "That is angle P. Look from R: which side faces it?",
+          "as": "সেয়া P কোণ। Rৰ পৰা চোৱা: কোন বাহু বিপৰীতে?"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "One circle, the whole table",
+    "as": "এটা বৃত্ত, গোটা তালিকা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "On a radius of 1, sin is the height and cos is the width.",
+     "as": "1 ব্যাসাৰ্ধত sin উচ্চতা, cos প্ৰস্থ।"
+    },
+    {
+     "en": "As the angle grows, sin rises and cos falls.",
+     "as": "কোণ বাঢ়িলে sin বাঢ়ে, cos কমে।"
+    },
+    {
+     "en": "$\\sin^2\\theta + \\cos^2\\theta = 1$: this is Pythagoras on the radius.",
+     "as": "$\\sin^2\\theta + \\cos^2\\theta = 1$: ব্যাসাৰ্ধত পাইথাগোৰাছ।"
+    },
+    {
+     "en": "$\\sin(90^\\circ - \\theta) = \\cos\\theta$.",
+     "as": "$\\sin(90^\\circ - \\theta) = \\cos\\theta$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m14.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "The table is one picture",
+      "as": "তালিকা এখন ছবি"
+     },
+     "text": [
+      {
+       "en": "A red point moves round a quarter circle of radius 1. Blue is its height, sin. Green is its width, cos.",
+       "as": "ৰঙা বিন্দু 1 ব্যাসাৰ্ধৰ চতুৰ্থাংশ বৃত্তত ঘূৰে। নীলা উচ্চতা, sin। সেউজীয়া প্ৰস্থ, cos।"
+      }
+     ],
+     "widget": {
+      "kind": "quarter",
+      "deg": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Turn to 30°.",
+        "as": "30°লৈ ঘূৰোৱা।"
+       },
+       "goal": {
+        "deg": 30
+       },
+       "then": {
+        "en": "sin 30° = $\\frac{1}{2}$: the height is exactly half the radius.",
+        "as": "sin 30° = $\\frac{1}{2}$: উচ্চতা ব্যাসাৰ্ধৰ ঠিক আধা।"
+       }
+      },
+      {
+       "do": {
+        "en": "Turn to 60°.",
+        "as": "60°লৈ ঘূৰোৱা।"
+       },
+       "goal": {
+        "deg": 60
+       },
+       "then": {
+        "en": "Now cos 60° = $\\frac{1}{2}$. Height and width swapped: sin 30° = cos 60°.",
+        "as": "এতিয়া cos 60° = $\\frac{1}{2}$। উচ্চতা আৰু প্ৰস্থ সলনি হ'ল: sin 30° = cos 60°।"
+       }
+      },
+      {
+       "do": {
+        "en": "Turn to 45°.",
+        "as": "45°লৈ ঘূৰোৱা।"
+       },
+       "goal": {
+        "deg": 45
+       },
+       "then": {
+        "en": "Height equals width, so tan 45° = 1. This is the only angle where they match.",
+        "as": "উচ্চতা = প্ৰস্থ, সেয়ে tan 45° = 1। এই এটা কোণতহে সিহঁত সমান।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Pythagoras in disguise",
+      "as": "পাইথাগোৰাছৰ আন ৰূপ"
+     },
+     "text": [
+      {
+       "en": "Height, width and radius form a right triangle with hypotenuse 1.",
+       "as": "উচ্চতা, প্ৰস্থ আৰু ব্যাসাৰ্ধে 1 অতিভুজৰ সমকোণী ত্ৰিভুজ গঢ়ে।"
+      },
+      {
+       "en": "So $\\sin^2\\theta + \\cos^2\\theta = 1$ for every angle.",
+       "as": "সেয়ে প্ৰতিটো কোণত $\\sin^2\\theta + \\cos^2\\theta = 1$।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Height = sin θ",
+        "as": "উচ্চতা = sin θ"
+       },
+       {
+        "en": "Width = cos θ",
+        "as": "প্ৰস্থ = cos θ"
+       },
+       {
+        "en": "Sum of squares = 1",
+        "as": "বৰ্গৰ যোগফল = 1"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m14.u2.q1",
+     "type": "explore",
+     "skill": "tr-values",
+     "q": {
+      "en": "Find the acute angle where $\\sin\\theta = \\frac{1}{2}$.",
+      "as": "যি সূক্ষ্ম কোণত $\\sin\\theta = \\frac{1}{2}$ সেইটো উলিওৱা।"
+     },
+     "widget": {
+      "kind": "quarter",
+      "deg": 15
+     },
+     "target": 30,
+     "answerText": {
+      "en": "30°",
+      "as": "30°"
+     },
+     "why": {
+      "en": "Read height for sin and width for cos.",
+      "as": "sinৰ বাবে উচ্চতা, cosৰ বাবে প্ৰস্থ পঢ়া।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the acute angle where $\\sin\\theta = \\frac{1}{2}$.",
+        "as": "যি সূক্ষ্ম কোণত $\\sin\\theta = \\frac{1}{2}$ সেইটো উলিওৱা।"
+       },
+       "widget": {
+        "kind": "quarter",
+        "deg": 15
+       },
+       "target": 30,
+       "answerText": {
+        "en": "30°",
+        "as": "30°"
+       },
+       "why": {
+        "en": "Read height for sin and width for cos.",
+        "as": "sinৰ বাবে উচ্চতা, cosৰ বাবে প্ৰস্থ পঢ়া।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the acute angle where $\\cos\\theta = \\frac{1}{2}$.",
+        "as": "যি সূক্ষ্ম কোণত $\\cos\\theta = \\frac{1}{2}$ সেইটো উলিওৱা।"
+       },
+       "widget": {
+        "kind": "quarter",
+        "deg": 15
+       },
+       "target": 60,
+       "answerText": {
+        "en": "60°",
+        "as": "60°"
+       },
+       "why": {
+        "en": "Read height for sin and width for cos.",
+        "as": "sinৰ বাবে উচ্চতা, cosৰ বাবে প্ৰস্থ পঢ়া।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the acute angle where $\\sin\\theta = \\cos\\theta$.",
+        "as": "যি সূক্ষ্ম কোণত $\\sin\\theta = \\cos\\theta$ সেইটো উলিওৱা।"
+       },
+       "widget": {
+        "kind": "quarter",
+        "deg": 15
+       },
+       "target": 45,
+       "answerText": {
+        "en": "45°",
+        "as": "45°"
+       },
+       "why": {
+        "en": "Read height for sin and width for cos.",
+        "as": "sinৰ বাবে উচ্চতা, cosৰ বাবে প্ৰস্থ পঢ়া।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the acute angle where $\\sin\\theta = 1$.",
+        "as": "যি সূক্ষ্ম কোণত $\\sin\\theta = 1$ সেইটো উলিওৱা।"
+       },
+       "widget": {
+        "kind": "quarter",
+        "deg": 15
+       },
+       "target": 90,
+       "answerText": {
+        "en": "90°",
+        "as": "90°"
+       },
+       "why": {
+        "en": "Read height for sin and width for cos.",
+        "as": "sinৰ বাবে উচ্চতা, cosৰ বাবে প্ৰস্থ পঢ়া।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the acute angle where $\\cos\\theta = 1$.",
+        "as": "যি সূক্ষ্ম কোণত $\\cos\\theta = 1$ সেইটো উলিওৱা।"
+       },
+       "widget": {
+        "kind": "quarter",
+        "deg": 15
+       },
+       "target": 0,
+       "answerText": {
+        "en": "0°",
+        "as": "0°"
+       },
+       "why": {
+        "en": "Read height for sin and width for cos.",
+        "as": "sinৰ বাবে উচ্চতা, cosৰ বাবে প্ৰস্থ পঢ়া।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u2.q2",
+     "type": "match",
+     "skill": "tr-values",
+     "q": {
+      "en": "Match each value",
+      "as": "প্ৰতিটো মান মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "sin 30°",
+        "as": "sin 30°"
+       },
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       }
+      ],
+      [
+       {
+        "en": "cos 30°",
+        "as": "cos 30°"
+       },
+       {
+        "en": "$\\frac{\\sqrt{3}}{2}$",
+        "as": "$\\frac{\\sqrt{3}}{2}$"
+       }
+      ],
+      [
+       {
+        "en": "tan 45°",
+        "as": "tan 45°"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ],
+      [
+       {
+        "en": "tan 60°",
+        "as": "tan 60°"
+       },
+       {
+        "en": "$\\sqrt{3}$",
+        "as": "$\\sqrt{3}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The quarter circle gives all of these.",
+      "as": "চতুৰ্থাংশ বৃত্তই এই সকলো দিয়ে।"
+     }
+    },
+    {
+     "id": "m14.u2.q3",
+     "type": "solve",
+     "skill": "tr-values",
+     "q": {
+      "en": "Find $\\sin 30^\\circ + \\cos 60^\\circ$",
+      "as": "$\\sin 30^\\circ + \\cos 60^\\circ$ উলিওৱা"
+     },
+     "answer": "1",
+     "why": {
+      "en": "$\\frac{1}{2} + \\frac{1}{2}$.",
+      "as": "$\\frac{1}{2} + \\frac{1}{2}$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\sin 30^\\circ + \\cos 60^\\circ$",
+        "as": "$\\sin 30^\\circ + \\cos 60^\\circ$ উলিওৱা"
+       },
+       "answer": "1",
+       "why": {
+        "en": "$\\frac{1}{2} + \\frac{1}{2}$.",
+        "as": "$\\frac{1}{2} + \\frac{1}{2}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\tan 45^\\circ + \\sin 90^\\circ$",
+        "as": "$\\tan 45^\\circ + \\sin 90^\\circ$ উলিওৱা"
+       },
+       "answer": "2",
+       "why": {
+        "en": "1 + 1.",
+        "as": "1 + 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\sin^2 30^\\circ + \\cos^2 30^\\circ$",
+        "as": "$\\sin^2 30^\\circ + \\cos^2 30^\\circ$ উলিওৱা"
+       },
+       "answer": "1",
+       "why": {
+        "en": "The identity holds for every angle.",
+        "as": "প্ৰতিটো কোণত এই অভেদ সত্য।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $4 \\sin 30^\\circ \\cos 60^\\circ$",
+        "as": "$4 \\sin 30^\\circ \\cos 60^\\circ$ উলিওৱা"
+       },
+       "answer": "1",
+       "why": {
+        "en": "$4 \\times \\frac{1}{2} \\times \\frac{1}{2}$.",
+        "as": "$4 \\times \\frac{1}{2} \\times \\frac{1}{2}$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u2.q4",
+     "type": "tf",
+     "skill": "tr-values",
+     "s": {
+      "en": "$\\sin^2 65^\\circ + \\cos^2 65^\\circ = 1$",
+      "as": "$\\sin^2 65^\\circ + \\cos^2 65^\\circ = 1$"
+     },
+     "answer": true,
+     "why": {
+      "en": "It is true for every angle, so you never need the value of sin 65°.",
+      "as": "ই প্ৰতিটো কোণত সত্য, সেয়ে sin 65°ৰ মান নালাগে।"
+     }
+    },
+    {
+     "id": "m14.u2.q5",
+     "type": "stepwise",
+     "skill": "tr-values",
+     "q": {
+      "en": "Find $\\frac{\\sin 70^\\circ}{\\cos 20^\\circ}$.",
+      "as": "$\\frac{\\sin 70^\\circ}{\\cos 20^\\circ}$ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Add the angles: 70 + 20",
+        "as": "কোণ যোগ: 70 + 20"
+       },
+       "options": [
+        {
+         "en": "180",
+         "as": "180"
+        },
+        {
+         "en": "45",
+         "as": "45"
+        },
+        {
+         "en": "90",
+         "as": "90"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "They are complementary.",
+        "as": "সিহঁত পূৰক কোণ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So cos 20° is the same as",
+        "as": "তেনেহ'লে cos 20° একে"
+       },
+       "options": [
+        {
+         "en": "cos 70°",
+         "as": "cos 70°"
+        },
+        {
+         "en": "sin 70°",
+         "as": "sin 70°"
+        },
+        {
+         "en": "tan 70°",
+         "as": "tan 70°"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Height and width swap at the complement.",
+        "as": "পূৰক কোণত উচ্চতা আৰু প্ৰস্থ সলনি হয়।"
+       },
+       "tag": "m-trig-swap"
+      },
+      {
+       "ask": {
+        "en": "The value is",
+        "as": "মান"
+       },
+       "options": [
+        {
+         "en": "0",
+         "as": "0"
+        },
+        {
+         "en": "2",
+         "as": "2"
+        },
+        {
+         "en": "1",
+         "as": "1"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Something over itself.",
+        "as": "কোনো সংখ্যা ভাগ নিজে।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Look at the angles before the numbers.",
+      "as": "সংখ্যাৰ আগতে কোণ চোৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $\\frac{\\sin 70^\\circ}{\\cos 20^\\circ}$.",
+        "as": "$\\frac{\\sin 70^\\circ}{\\cos 20^\\circ}$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the angles: 70 + 20",
+          "as": "কোণ যোগ: 70 + 20"
+         },
+         "options": [
+          {
+           "en": "180",
+           "as": "180"
+          },
+          {
+           "en": "45",
+           "as": "45"
+          },
+          {
+           "en": "90",
+           "as": "90"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "They are complementary.",
+          "as": "সিহঁত পূৰক কোণ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So cos 20° is the same as",
+          "as": "তেনেহ'লে cos 20° একে"
+         },
+         "options": [
+          {
+           "en": "cos 70°",
+           "as": "cos 70°"
+          },
+          {
+           "en": "sin 70°",
+           "as": "sin 70°"
+          },
+          {
+           "en": "tan 70°",
+           "as": "tan 70°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Height and width swap at the complement.",
+          "as": "পূৰক কোণত উচ্চতা আৰু প্ৰস্থ সলনি হয়।"
+         },
+         "tag": "m-trig-swap"
+        },
+        {
+         "ask": {
+          "en": "The value is",
+          "as": "মান"
+         },
+         "options": [
+          {
+           "en": "0",
+           "as": "0"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Something over itself.",
+          "as": "কোনো সংখ্যা ভাগ নিজে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Look at the angles before the numbers.",
+        "as": "সংখ্যাৰ আগতে কোণ চোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{\\sin 25^\\circ}{\\cos 65^\\circ}$.",
+        "as": "$\\frac{\\sin 25^\\circ}{\\cos 65^\\circ}$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the angles: 25 + 65",
+          "as": "কোণ যোগ: 25 + 65"
+         },
+         "options": [
+          {
+           "en": "90",
+           "as": "90"
+          },
+          {
+           "en": "180",
+           "as": "180"
+          },
+          {
+           "en": "45",
+           "as": "45"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "They are complementary.",
+          "as": "সিহঁত পূৰক কোণ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So cos 65° is the same as",
+          "as": "তেনেহ'লে cos 65° একে"
+         },
+         "options": [
+          {
+           "en": "tan 25°",
+           "as": "tan 25°"
+          },
+          {
+           "en": "cos 25°",
+           "as": "cos 25°"
+          },
+          {
+           "en": "sin 25°",
+           "as": "sin 25°"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Height and width swap at the complement.",
+          "as": "পূৰক কোণত উচ্চতা আৰু প্ৰস্থ সলনি হয়।"
+         },
+         "tag": "m-trig-swap"
+        },
+        {
+         "ask": {
+          "en": "The value is",
+          "as": "মান"
+         },
+         "options": [
+          {
+           "en": "0",
+           "as": "0"
+          },
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Something over itself.",
+          "as": "কোনো সংখ্যা ভাগ নিজে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Look at the angles before the numbers.",
+        "as": "সংখ্যাৰ আগতে কোণ চোৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $\\frac{\\sin 38^\\circ}{\\cos 52^\\circ}$.",
+        "as": "$\\frac{\\sin 38^\\circ}{\\cos 52^\\circ}$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Add the angles: 38 + 52",
+          "as": "কোণ যোগ: 38 + 52"
+         },
+         "options": [
+          {
+           "en": "180",
+           "as": "180"
+          },
+          {
+           "en": "90",
+           "as": "90"
+          },
+          {
+           "en": "45",
+           "as": "45"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "They are complementary.",
+          "as": "সিহঁত পূৰক কোণ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So cos 52° is the same as",
+          "as": "তেনেহ'লে cos 52° একে"
+         },
+         "options": [
+          {
+           "en": "sin 38°",
+           "as": "sin 38°"
+          },
+          {
+           "en": "cos 38°",
+           "as": "cos 38°"
+          },
+          {
+           "en": "tan 38°",
+           "as": "tan 38°"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Height and width swap at the complement.",
+          "as": "পূৰক কোণত উচ্চতা আৰু প্ৰস্থ সলনি হয়।"
+         },
+         "tag": "m-trig-swap"
+        },
+        {
+         "ask": {
+          "en": "The value is",
+          "as": "মান"
+         },
+         "options": [
+          {
+           "en": "2",
+           "as": "2"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "0",
+           "as": "0"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Something over itself.",
+          "as": "কোনো সংখ্যা ভাগ নিজে।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Look at the angles before the numbers.",
+        "as": "সংখ্যাৰ আগতে কোণ চোৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u2.q6",
+     "type": "solve",
+     "skill": "tr-values",
+     "q": {
+      "en": "If 2 sin A − 1 = 0 and A is acute, find A in degrees.",
+      "as": "2 sin A − 1 = 0 আৰু A সূক্ষ্ম হ'লে A ডিগ্ৰীত উলিওৱা।"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "sin A = $\\frac{1}{2}$.",
+      "as": "sin A = $\\frac{1}{2}$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If 2 sin A − 1 = 0 and A is acute, find A in degrees.",
+        "as": "2 sin A − 1 = 0 আৰু A সূক্ষ্ম হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "sin A = $\\frac{1}{2}$.",
+        "as": "sin A = $\\frac{1}{2}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 1 sin A − 1 = 0 and A is acute, find A in degrees.",
+        "as": "1 sin A − 1 = 0 আৰু A সূক্ষ্ম হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "90",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "sin A = $\\frac{1}{1}$.",
+        "as": "sin A = $\\frac{1}{1}$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u2.q7",
+     "type": "solve",
+     "skill": "tr-values",
+     "q": {
+      "en": "If $\\sin 2A = \\frac{\\sqrt{3}}{2}$, find A in degrees.",
+      "as": "$\\sin 2A = \\frac{\\sqrt{3}}{2}$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "The whole angle is 60°, so divide it.",
+      "as": "গোটেই কোণ 60°, সেয়ে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "60",
+       "tag": "m-angle-double",
+       "why": {
+        "en": "That is the whole bracket. A is only part of it.",
+        "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\sin 2A = \\frac{\\sqrt{3}}{2}$, find A in degrees.",
+        "as": "$\\sin 2A = \\frac{\\sqrt{3}}{2}$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 60°, so divide it.",
+        "as": "গোটেই কোণ 60°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\cos 2A = \\frac{1}{2}$, find A in degrees.",
+        "as": "$\\cos 2A = \\frac{1}{2}$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 60°, so divide it.",
+        "as": "গোটেই কোণ 60°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\tan 3A = 1$, find A in degrees.",
+        "as": "$\\tan 3A = 1$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "15",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 45°, so divide it.",
+        "as": "গোটেই কোণ 45°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "45",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\sin 2A = 1$, find A in degrees.",
+        "as": "$\\sin 2A = 1$ হ'লে A ডিগ্ৰীত উলিওৱা।"
+       },
+       "answer": "45",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "The whole angle is 90°, so divide it.",
+        "as": "গোটেই কোণ 90°, সেয়ে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "90",
+         "tag": "m-angle-double",
+         "why": {
+          "en": "That is the whole bracket. A is only part of it.",
+          "as": "সেয়া গোটেই বন্ধনীটো। A তাৰ এটা অংশ।"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Heights and distances",
+    "as": "উচ্চতা আৰু দূৰত্ব"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Angle of elevation: looking up from level ground.",
+     "as": "উন্নতি কোণ: সমতলৰ পৰা ওপৰলৈ চোৱা।"
+    },
+    {
+     "en": "tan θ = height ÷ distance.",
+     "as": "tan θ = উচ্চতা ÷ দূৰত্ব।"
+    },
+    {
+     "en": "At 45° the height equals the distance.",
+     "as": "45°ত উচ্চতা = দূৰত্ব।"
+    },
+    {
+     "en": "Add the observer's own height at the end.",
+     "as": "শেষত পৰ্যবেক্ষকৰ উচ্চতা যোগ কৰা।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m14.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "One triangle in the air",
+      "as": "আকাশত এটা ত্ৰিভুজ"
+     },
+     "text": [
+      {
+       "en": "You stand 30 m from a tower. Your line of sight to the top rises at 45°.",
+       "as": "তুমি টাৱাৰৰ পৰা 30 মিটাৰ দূৰত। শীৰ্ষলৈ দৃষ্টিৰেখা 45°ত ওপৰলৈ যায়।"
+      }
+     ],
+     "widget": {
+      "kind": "tower",
+      "d": 30,
+      "ang": 45,
+      "k": 10,
+      "max": 45
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Raise the tower until the line reaches the top.",
+        "as": "ৰেখা শীৰ্ষ নোপোৱালৈ টাৱাৰ তোলা।"
+       },
+       "goal": {
+        "hit": 1
+       },
+       "then": {
+        "en": "30 m: at 45°, tan is 1, so height equals distance.",
+        "as": "30 মিটাৰ: 45°ত tan 1, সেয়ে উচ্চতা = দূৰত্ব।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Steeper angle, taller tower",
+      "as": "বেছি কোণ, ওখ টাৱাৰ"
+     },
+     "text": [
+      {
+       "en": "From 10 m away, the same tower top is at 60°. The answer has a √3, so the slider counts in √3.",
+       "as": "10 মিটাৰৰ পৰা শীৰ্ষ 60°ত। উত্তৰত √3 আছে, সেয়ে স্লাইডাৰে √3ত গণে।"
+      }
+     ],
+     "widget": {
+      "kind": "tower",
+      "d": 10,
+      "ang": 60,
+      "k": 3,
+      "max": 20,
+      "surd": true
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Raise the tower until the line reaches the top.",
+        "as": "ৰেখা শীৰ্ষ নোপোৱালৈ টাৱাৰ তোলা।"
+       },
+       "goal": {
+        "hit": 1
+       },
+       "then": {
+        "en": "10√3 m: tan 60° = √3, so height = 10 × √3.",
+        "as": "10√3 মিটাৰ: tan 60° = √3, সেয়ে উচ্চতা = 10 × √3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.q1",
+     "type": "explore",
+     "skill": "tr-height",
+     "q": {
+      "en": "A point is 25 m from a tower and the top is at 45°. Raise the tower to the sight line.",
+      "as": "এটা বিন্দু টাৱাৰৰ পৰা 25 মিটাৰ দূৰত, শীৰ্ষ 45°ত। টাৱাৰ দৃষ্টিৰেখালৈ তোলা।"
+     },
+     "widget": {
+      "kind": "tower",
+      "d": 25,
+      "ang": 45,
+      "k": 2,
+      "max": 40,
+      "surd": false
+     },
+     "target": 25,
+     "answerText": {
+      "en": "25 m",
+      "as": "25 মি"
+     },
+     "why": {
+      "en": "tan 45° × 25.",
+      "as": "tan 45° × 25।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A point is 25 m from a tower and the top is at 45°. Raise the tower to the sight line.",
+        "as": "এটা বিন্দু টাৱাৰৰ পৰা 25 মিটাৰ দূৰত, শীৰ্ষ 45°ত। টাৱাৰ দৃষ্টিৰেখালৈ তোলা।"
+       },
+       "widget": {
+        "kind": "tower",
+        "d": 25,
+        "ang": 45,
+        "k": 2,
+        "max": 40,
+        "surd": false
+       },
+       "target": 25,
+       "answerText": {
+        "en": "25 m",
+        "as": "25 মি"
+       },
+       "why": {
+        "en": "tan 45° × 25.",
+        "as": "tan 45° × 25।"
+       }
+      },
+      {
+       "q": {
+        "en": "A point is 20 m from a tower and the top is at 60°. Raise the tower to the sight line.",
+        "as": "এটা বিন্দু টাৱাৰৰ পৰা 20 মিটাৰ দূৰত, শীৰ্ষ 60°ত। টাৱাৰ দৃষ্টিৰেখালৈ তোলা।"
+       },
+       "widget": {
+        "kind": "tower",
+        "d": 20,
+        "ang": 60,
+        "k": 2,
+        "max": 40,
+        "surd": true
+       },
+       "target": 20,
+       "answerText": {
+        "en": "20√3 m",
+        "as": "20√3 মি"
+       },
+       "why": {
+        "en": "tan 60° × 20.",
+        "as": "tan 60° × 20।"
+       }
+      },
+      {
+       "q": {
+        "en": "A point is 30 m from a tower and the top is at 30°. Raise the tower to the sight line.",
+        "as": "এটা বিন্দু টাৱাৰৰ পৰা 30 মিটাৰ দূৰত, শীৰ্ষ 30°ত। টাৱাৰ দৃষ্টিৰেখালৈ তোলা।"
+       },
+       "widget": {
+        "kind": "tower",
+        "d": 30,
+        "ang": 30,
+        "k": 2,
+        "max": 40,
+        "surd": true
+       },
+       "target": 10,
+       "answerText": {
+        "en": "10√3 m",
+        "as": "10√3 মি"
+       },
+       "why": {
+        "en": "tan 30° × 30.",
+        "as": "tan 30° × 30।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.q2",
+     "type": "solve",
+     "skill": "tr-height",
+     "hints": [
+      {
+       "en": "At 45°, rise equals distance.",
+       "as": "45°ত উচ্চতা = দূৰত্ব।"
+      }
+     ],
+     "q": {
+      "en": "An observer 1.6 m tall is 23.4 m from a chimney. The top is at 45°. How tall is the chimney?",
+      "as": "1.6 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 23.4 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "m",
+      "as": "মি"
+     },
+     "why": {
+      "en": "From eye level the rise is 23.4 m, and the eye is 1.6 m up.",
+      "as": "চকুৰ স্তৰৰ পৰা 23.4 মিটাৰ, চকু 1.6 মিটাৰ ওপৰত।"
+     },
+     "traps": [
+      {
+       "ans": "23.4",
+       "tag": "m-height-eye",
+       "why": {
+        "en": "That is measured from eye level. Add the observer's height.",
+        "as": "সেয়া চকুৰ স্তৰৰ পৰা। পৰ্যবেক্ষকৰ উচ্চতা যোগ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "An observer 1.6 m tall is 23.4 m from a chimney. The top is at 45°. How tall is the chimney?",
+        "as": "1.6 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 23.4 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "m",
+        "as": "মি"
+       },
+       "why": {
+        "en": "From eye level the rise is 23.4 m, and the eye is 1.6 m up.",
+        "as": "চকুৰ স্তৰৰ পৰা 23.4 মিটাৰ, চকু 1.6 মিটাৰ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "23.4",
+         "tag": "m-height-eye",
+         "why": {
+          "en": "That is measured from eye level. Add the observer's height.",
+          "as": "সেয়া চকুৰ স্তৰৰ পৰা। পৰ্যবেক্ষকৰ উচ্চতা যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An observer 1.8 m tall is 18.2 m from a chimney. The top is at 45°. How tall is the chimney?",
+        "as": "1.8 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 18.2 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "m",
+        "as": "মি"
+       },
+       "why": {
+        "en": "From eye level the rise is 18.2 m, and the eye is 1.8 m up.",
+        "as": "চকুৰ স্তৰৰ পৰা 18.2 মিটাৰ, চকু 1.8 মিটাৰ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "18.2",
+         "tag": "m-height-eye",
+         "why": {
+          "en": "That is measured from eye level. Add the observer's height.",
+          "as": "সেয়া চকুৰ স্তৰৰ পৰা। পৰ্যবেক্ষকৰ উচ্চতা যোগ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "An observer 2 m tall is 38 m from a chimney. The top is at 45°. How tall is the chimney?",
+        "as": "2 মিটাৰ ওখ পৰ্যবেক্ষক চিমনিৰ পৰা 38 মিটাৰ দূৰত। শীৰ্ষ 45°ত। চিমনি কিমান ওখ?"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "m",
+        "as": "মি"
+       },
+       "why": {
+        "en": "From eye level the rise is 38 m, and the eye is 2 m up.",
+        "as": "চকুৰ স্তৰৰ পৰা 38 মিটাৰ, চকু 2 মিটাৰ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "38",
+         "tag": "m-height-eye",
+         "why": {
+          "en": "That is measured from eye level. Add the observer's height.",
+          "as": "সেয়া চকুৰ স্তৰৰ পৰা। পৰ্যবেক্ষকৰ উচ্চতা যোগ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.q3",
+     "type": "stepwise",
+     "skill": "tr-height",
+     "q": {
+      "en": "A 20 m ladder leans on a wall at 60° to the ground. How far is its foot from the wall?",
+      "as": "20 মিটাৰ জখলা মাটিৰ সৈতে 60° কৰি বেৰত হেলান দিয়া। ইয়াৰ তলৰ মূৰ বেৰৰ পৰা কিমান দূৰত?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "The ladder is the",
+        "as": "জখলাডাল হৈছে"
+       },
+       "options": [
+        {
+         "en": "Adjacent",
+         "as": "সংলগ্ন"
+        },
+        {
+         "en": "Opposite",
+         "as": "বিপৰীত"
+        },
+        {
+         "en": "Hypotenuse",
+         "as": "অতিভুজ"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "It faces the right angle at the wall.",
+        "as": "ই বেৰৰ সমকোণৰ সন্মুখত।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The foot distance is the",
+        "as": "তলৰ দূৰত্ব হৈছে"
+       },
+       "options": [
+        {
+         "en": "Adjacent, so use cos",
+         "as": "সংলগ্ন, সেয়ে cos"
+        },
+        {
+         "en": "Opposite, so use sin",
+         "as": "বিপৰীত, সেয়ে sin"
+        },
+        {
+         "en": "Use tan",
+         "as": "tan লোৱা"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It touches the 60° angle.",
+        "as": "ই 60° কোণ স্পৰ্শ কৰে।"
+       },
+       "tag": "m-trig-swap"
+      },
+      {
+       "ask": {
+        "en": "Distance?",
+        "as": "দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "10 m",
+         "as": "10 মি"
+        },
+        {
+         "en": "20 m",
+         "as": "20 মি"
+        },
+        {
+         "en": "5 m",
+         "as": "5 মি"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "cos 60° = $\\frac{1}{2}$.",
+        "as": "cos 60° = $\\frac{1}{2}$।"
+       },
+       "skill": "tr-values"
+      }
+     ],
+     "why": {
+      "en": "Name the sides first, and the ratio chooses itself.",
+      "as": "প্ৰথমে বাহুৰ নাম দিয়া, অনুপাত নিজেই ওলায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A 20 m ladder leans on a wall at 60° to the ground. How far is its foot from the wall?",
+        "as": "20 মিটাৰ জখলা মাটিৰ সৈতে 60° কৰি বেৰত হেলান দিয়া। ইয়াৰ তলৰ মূৰ বেৰৰ পৰা কিমান দূৰত?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The ladder is the",
+          "as": "জখলাডাল হৈছে"
+         },
+         "options": [
+          {
+           "en": "Adjacent",
+           "as": "সংলগ্ন"
+          },
+          {
+           "en": "Opposite",
+           "as": "বিপৰীত"
+          },
+          {
+           "en": "Hypotenuse",
+           "as": "অতিভুজ"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It faces the right angle at the wall.",
+          "as": "ই বেৰৰ সমকোণৰ সন্মুখত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The foot distance is the",
+          "as": "তলৰ দূৰত্ব হৈছে"
+         },
+         "options": [
+          {
+           "en": "Adjacent, so use cos",
+           "as": "সংলগ্ন, সেয়ে cos"
+          },
+          {
+           "en": "Opposite, so use sin",
+           "as": "বিপৰীত, সেয়ে sin"
+          },
+          {
+           "en": "Use tan",
+           "as": "tan লোৱা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It touches the 60° angle.",
+          "as": "ই 60° কোণ স্পৰ্শ কৰে।"
+         },
+         "tag": "m-trig-swap"
+        },
+        {
+         "ask": {
+          "en": "Distance?",
+          "as": "দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "10 m",
+           "as": "10 মি"
+          },
+          {
+           "en": "20 m",
+           "as": "20 মি"
+          },
+          {
+           "en": "5 m",
+           "as": "5 মি"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "cos 60° = $\\frac{1}{2}$.",
+          "as": "cos 60° = $\\frac{1}{2}$।"
+         },
+         "skill": "tr-values"
+        }
+       ],
+       "why": {
+        "en": "Name the sides first, and the ratio chooses itself.",
+        "as": "প্ৰথমে বাহুৰ নাম দিয়া, অনুপাত নিজেই ওলায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A 16 m ladder leans on a wall at 60° to the ground. How far is its foot from the wall?",
+        "as": "16 মিটাৰ জখলা মাটিৰ সৈতে 60° কৰি বেৰত হেলান দিয়া। ইয়াৰ তলৰ মূৰ বেৰৰ পৰা কিমান দূৰত?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The ladder is the",
+          "as": "জখলাডাল হৈছে"
+         },
+         "options": [
+          {
+           "en": "Opposite",
+           "as": "বিপৰীত"
+          },
+          {
+           "en": "Hypotenuse",
+           "as": "অতিভুজ"
+          },
+          {
+           "en": "Adjacent",
+           "as": "সংলগ্ন"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It faces the right angle at the wall.",
+          "as": "ই বেৰৰ সমকোণৰ সন্মুখত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The foot distance is the",
+          "as": "তলৰ দূৰত্ব হৈছে"
+         },
+         "options": [
+          {
+           "en": "Adjacent, so use cos",
+           "as": "সংলগ্ন, সেয়ে cos"
+          },
+          {
+           "en": "Opposite, so use sin",
+           "as": "বিপৰীত, সেয়ে sin"
+          },
+          {
+           "en": "Use tan",
+           "as": "tan লোৱা"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It touches the 60° angle.",
+          "as": "ই 60° কোণ স্পৰ্শ কৰে।"
+         },
+         "tag": "m-trig-swap"
+        },
+        {
+         "ask": {
+          "en": "Distance?",
+          "as": "দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "16 m",
+           "as": "16 মি"
+          },
+          {
+           "en": "4 m",
+           "as": "4 মি"
+          },
+          {
+           "en": "8 m",
+           "as": "8 মি"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "cos 60° = $\\frac{1}{2}$.",
+          "as": "cos 60° = $\\frac{1}{2}$।"
+         },
+         "skill": "tr-values"
+        }
+       ],
+       "why": {
+        "en": "Name the sides first, and the ratio chooses itself.",
+        "as": "প্ৰথমে বাহুৰ নাম দিয়া, অনুপাত নিজেই ওলায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A 12 m ladder leans on a wall at 60° to the ground. How far is its foot from the wall?",
+        "as": "12 মিটাৰ জখলা মাটিৰ সৈতে 60° কৰি বেৰত হেলান দিয়া। ইয়াৰ তলৰ মূৰ বেৰৰ পৰা কিমান দূৰত?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "The ladder is the",
+          "as": "জখলাডাল হৈছে"
+         },
+         "options": [
+          {
+           "en": "Hypotenuse",
+           "as": "অতিভুজ"
+          },
+          {
+           "en": "Opposite",
+           "as": "বিপৰীত"
+          },
+          {
+           "en": "Adjacent",
+           "as": "সংলগ্ন"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It faces the right angle at the wall.",
+          "as": "ই বেৰৰ সমকোণৰ সন্মুখত।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The foot distance is the",
+          "as": "তলৰ দূৰত্ব হৈছে"
+         },
+         "options": [
+          {
+           "en": "Opposite, so use sin",
+           "as": "বিপৰীত, সেয়ে sin"
+          },
+          {
+           "en": "Adjacent, so use cos",
+           "as": "সংলগ্ন, সেয়ে cos"
+          },
+          {
+           "en": "Use tan",
+           "as": "tan লোৱা"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It touches the 60° angle.",
+          "as": "ই 60° কোণ স্পৰ্শ কৰে।"
+         },
+         "tag": "m-trig-swap"
+        },
+        {
+         "ask": {
+          "en": "Distance?",
+          "as": "দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "12 m",
+           "as": "12 মি"
+          },
+          {
+           "en": "6 m",
+           "as": "6 মি"
+          },
+          {
+           "en": "3 m",
+           "as": "3 মি"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "cos 60° = $\\frac{1}{2}$.",
+          "as": "cos 60° = $\\frac{1}{2}$।"
+         },
+         "skill": "tr-values"
+        }
+       ],
+       "why": {
+        "en": "Name the sides first, and the ratio chooses itself.",
+        "as": "প্ৰথমে বাহুৰ নাম দিয়া, অনুপাত নিজেই ওলায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.q4",
+     "type": "tf",
+     "skill": "tr-height",
+     "s": {
+      "en": "If the shadow of a pole equals its height, the sun is at 45°.",
+      "as": "খুঁটাৰ ছাঁ উচ্চতাৰ সমান হ'লে সূৰ্য 45°ত।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Height ÷ shadow = 1, and tan 45° = 1.",
+      "as": "উচ্চতা ÷ ছাঁ = 1, আৰু tan 45° = 1।"
+     }
+    },
+    {
+     "id": "m14.u3.q5",
+     "type": "match",
+     "skill": "tr-height",
+     "q": {
+      "en": "Distance is 30 m. Match the angle to the height",
+      "as": "দূৰত্ব 30 মিটাৰ। কোণক উচ্চতাৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "30°",
+        "as": "30°"
+       },
+       {
+        "en": "$10\\sqrt{3}$ m",
+        "as": "$10\\sqrt{3}$ মি"
+       }
+      ],
+      [
+       {
+        "en": "45°",
+        "as": "45°"
+       },
+       {
+        "en": "30 m",
+        "as": "30 মি"
+       }
+      ],
+      [
+       {
+        "en": "60°",
+        "as": "60°"
+       },
+       {
+        "en": "$30\\sqrt{3}$ m",
+        "as": "$30\\sqrt{3}$ মি"
+       }
+      ],
+      [
+       {
+        "en": "A steeper look",
+        "as": "বেছি খাৰুৱা দৃষ্টি"
+       },
+       {
+        "en": "A taller tower",
+        "as": "ওখ টাৱাৰ"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Distance × tan θ gives the height.",
+      "as": "দূৰত্ব × tan θ = উচ্চতা।"
+     }
+    },
+    {
+     "id": "m14.u3.q6",
+     "type": "solve",
+     "skill": "tr-height",
+     "q": {
+      "en": "A tower is 20 m tall. Its shadow is 20√3 m long. What is the sun's angle in degrees?",
+      "as": "টাৱাৰ 20 মিটাৰ ওখ। ছাঁ 20√3 মিটাৰ দীঘল। সূৰ্যৰ কোণ ডিগ্ৰীত কিমান?"
+     },
+     "answer": "30",
+     "suffix": {
+      "en": "°",
+      "as": "°"
+     },
+     "why": {
+      "en": "tan θ = $\\frac{1}{\\sqrt{3}}$, which is 30°.",
+      "as": "tan θ = $\\frac{1}{\\sqrt{3}}$, অৰ্থাৎ 30°।"
+     },
+     "traps": [
+      {
+       "ans": "60",
+       "tag": "m-trig-swap",
+       "why": {
+        "en": "Height over shadow is $\\frac{1}{\\sqrt{3}}$, so it is 30°, not 60°.",
+        "as": "উচ্চতা ÷ ছাঁ $\\frac{1}{\\sqrt{3}}$, সেয়ে 30°, 60° নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A tower is 20 m tall. Its shadow is 20√3 m long. What is the sun's angle in degrees?",
+        "as": "টাৱাৰ 20 মিটাৰ ওখ। ছাঁ 20√3 মিটাৰ দীঘল। সূৰ্যৰ কোণ ডিগ্ৰীত কিমান?"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "tan θ = $\\frac{1}{\\sqrt{3}}$, which is 30°.",
+        "as": "tan θ = $\\frac{1}{\\sqrt{3}}$, অৰ্থাৎ 30°।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "Height over shadow is $\\frac{1}{\\sqrt{3}}$, so it is 30°, not 60°.",
+          "as": "উচ্চতা ÷ ছাঁ $\\frac{1}{\\sqrt{3}}$, সেয়ে 30°, 60° নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A tower is 50 m tall. Its shadow is 50√3 m long. What is the sun's angle in degrees?",
+        "as": "টাৱাৰ 50 মিটাৰ ওখ। ছাঁ 50√3 মিটাৰ দীঘল। সূৰ্যৰ কোণ ডিগ্ৰীত কিমান?"
+       },
+       "answer": "30",
+       "suffix": {
+        "en": "°",
+        "as": "°"
+       },
+       "why": {
+        "en": "tan θ = $\\frac{1}{\\sqrt{3}}$, which is 30°.",
+        "as": "tan θ = $\\frac{1}{\\sqrt{3}}$, অৰ্থাৎ 30°।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-trig-swap",
+         "why": {
+          "en": "Height over shadow is $\\frac{1}{\\sqrt{3}}$, so it is 30°, not 60°.",
+          "as": "উচ্চতা ÷ ছাঁ $\\frac{1}{\\sqrt{3}}$, সেয়ে 30°, 60° নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m14.u3.q7",
+     "type": "stepwise",
+     "skill": "tr-height",
+     "q": {
+      "en": "From two points 16 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+      "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 16 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Near distance x. Far distance?",
+        "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "2x",
+         "as": "2x"
+        },
+        {
+         "en": "3x",
+         "as": "3x"
+        },
+        {
+         "en": "$\\sqrt{3}x$",
+         "as": "$\\sqrt{3}x$"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+        "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So x =",
+        "as": "সেয়ে x ="
+       },
+       "options": [
+        {
+         "en": "16 m",
+         "as": "16 m"
+        },
+        {
+         "en": "24 m",
+         "as": "24 m"
+        },
+        {
+         "en": "8 m",
+         "as": "8 m"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The gap 2x is 16.",
+        "as": "ব্যৱধান 2x = 16।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Height?",
+        "as": "উচ্চতা?"
+       },
+       "options": [
+        {
+         "en": "$16\\sqrt{3}$ m",
+         "as": "$16\\sqrt{3}$ m"
+        },
+        {
+         "en": "8 m",
+         "as": "8 m"
+        },
+        {
+         "en": "$8\\sqrt{3}$ m",
+         "as": "$8\\sqrt{3}$ m"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "x × $\\tan 60^\\circ$.",
+        "as": "x × $\\tan 60^\\circ$।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+      "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "From two points 16 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+        "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 16 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Near distance x. Far distance?",
+          "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "2x",
+           "as": "2x"
+          },
+          {
+           "en": "3x",
+           "as": "3x"
+          },
+          {
+           "en": "$\\sqrt{3}x$",
+           "as": "$\\sqrt{3}x$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+          "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x =",
+          "as": "সেয়ে x ="
+         },
+         "options": [
+          {
+           "en": "16 m",
+           "as": "16 m"
+          },
+          {
+           "en": "24 m",
+           "as": "24 m"
+          },
+          {
+           "en": "8 m",
+           "as": "8 m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The gap 2x is 16.",
+          "as": "ব্যৱধান 2x = 16।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Height?",
+          "as": "উচ্চতা?"
+         },
+         "options": [
+          {
+           "en": "$16\\sqrt{3}$ m",
+           "as": "$16\\sqrt{3}$ m"
+          },
+          {
+           "en": "8 m",
+           "as": "8 m"
+          },
+          {
+           "en": "$8\\sqrt{3}$ m",
+           "as": "$8\\sqrt{3}$ m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "x × $\\tan 60^\\circ$.",
+          "as": "x × $\\tan 60^\\circ$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+        "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "From two points 30 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+        "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 30 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Near distance x. Far distance?",
+          "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "3x",
+           "as": "3x"
+          },
+          {
+           "en": "2x",
+           "as": "2x"
+          },
+          {
+           "en": "$\\sqrt{3}x$",
+           "as": "$\\sqrt{3}x$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+          "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x =",
+          "as": "সেয়ে x ="
+         },
+         "options": [
+          {
+           "en": "45 m",
+           "as": "45 m"
+          },
+          {
+           "en": "30 m",
+           "as": "30 m"
+          },
+          {
+           "en": "15 m",
+           "as": "15 m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "The gap 2x is 30.",
+          "as": "ব্যৱধান 2x = 30।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Height?",
+          "as": "উচ্চতা?"
+         },
+         "options": [
+          {
+           "en": "15 m",
+           "as": "15 m"
+          },
+          {
+           "en": "$30\\sqrt{3}$ m",
+           "as": "$30\\sqrt{3}$ m"
+          },
+          {
+           "en": "$15\\sqrt{3}$ m",
+           "as": "$15\\sqrt{3}$ m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "x × $\\tan 60^\\circ$.",
+          "as": "x × $\\tan 60^\\circ$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+        "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "From two points 50 m apart in line with a tower, the top is seen at 60° and 30°. Find its height.",
+        "as": "টাৱাৰৰ সৈতে এক ৰেখাত থকা 50 মিটাৰ আঁতৰৰ দুটা বিন্দুৰ পৰা শীৰ্ষ 60° আৰু 30°ত দেখা যায়। উচ্চতা উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Near distance x. Far distance?",
+          "as": "ওচৰৰ দূৰত্ব x। দূৰৰ দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "3x",
+           "as": "3x"
+          },
+          {
+           "en": "$\\sqrt{3}x$",
+           "as": "$\\sqrt{3}x$"
+          },
+          {
+           "en": "2x",
+           "as": "2x"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\tan 30^\\circ$ is a third of $\\tan 60^\\circ$.",
+          "as": "$\\tan 30^\\circ$ হৈছে $\\tan 60^\\circ$ৰ তিনিভাগৰ এভাগ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x =",
+          "as": "সেয়ে x ="
+         },
+         "options": [
+          {
+           "en": "25 m",
+           "as": "25 m"
+          },
+          {
+           "en": "75 m",
+           "as": "75 m"
+          },
+          {
+           "en": "50 m",
+           "as": "50 m"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The gap 2x is 50.",
+          "as": "ব্যৱধান 2x = 50।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Height?",
+          "as": "উচ্চতা?"
+         },
+         "options": [
+          {
+           "en": "25 m",
+           "as": "25 m"
+          },
+          {
+           "en": "$50\\sqrt{3}$ m",
+           "as": "$50\\sqrt{3}$ m"
+          },
+          {
+           "en": "$25\\sqrt{3}$ m",
+           "as": "$25\\sqrt{3}$ m"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "x × $\\tan 60^\\circ$.",
+          "as": "x × $\\tan 60^\\circ$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Two angles of 30° and 60° always give distances of x and 3x.",
+        "as": "30° আৰু 60°ই সদায় x আৰু 3x দূৰত্ব দিয়ে।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Identities",
+    "as": "অভেদ"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "$\\sin^2\\theta + \\cos^2\\theta = 1$ for every angle.",
+     "as": "প্ৰতিটো কোণৰ বাবে $\\sin^2\\theta + \\cos^2\\theta = 1$।"
+    },
+    {
+     "en": "$\\sec^2\\theta - \\tan^2\\theta = 1$, so sec − tan and sec + tan are reciprocals.",
+     "as": "$\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে sec − tan আৰু sec + tan পৰস্পৰ ওলোটা।"
+    },
+    {
+     "en": "$\\mathrm{cosec}^2\\theta - \\cot^2\\theta = 1$.",
+     "as": "$\\mathrm{cosec}^2\\theta - \\cot^2\\theta = 1$।"
+    },
+    {
+     "en": "sin θ = cos θ only at 45°, where tan θ = 1.",
+     "as": "sin θ = cos θ কেৱল 45°ত, তাত tan θ = 1।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m14.x.s1",
+     "type": "story",
+     "title": {
+      "en": "It never changes",
+      "as": "ই কেতিয়াও নসলনে"
+     },
+     "text": [
+      {
+       "en": "Grow this triangle and watch sin and cos. Then square each and add: $\\frac{9}{25} + \\frac{16}{25}$.",
+       "as": "ত্ৰিভুজটো ডাঙৰ কৰি sin আৰু cos চোৱা। প্ৰতিটো বৰ্গ কৰি যোগ কৰা: $\\frac{9}{25} + \\frac{16}{25}$।"
+      }
+     ],
+     "widget": {
+      "kind": "triangle",
+      "triple": [
+       3,
+       4,
+       5
+      ],
+      "k": 1,
+      "max": 4
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make it three times bigger.",
+        "as": "তিনিগুণ ডাঙৰ কৰা।"
+       },
+       "goal": {
+        "k": 3
+       },
+       "then": {
+        "en": "Sides change, ratios do not. The squares still add to 1 because of Pythagoras.",
+        "as": "বাহু সলনি হয়, অনুপাত নহয়। পাইথাগোৰাছৰ বাবে বৰ্গৰ যোগফল 1 থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Where sine meets cosine",
+      "as": "য'ত ছাইন আৰু কছাইন লগ হয়"
+     },
+     "text": [
+      {
+       "en": "Turn the arm. Sine is its height and cosine its reach.",
+       "as": "বাহুটো ঘূৰোৱা। ছাইন উচ্চতা, কছাইন বিস্তাৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "quarter",
+      "deg": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Stop at 45°.",
+        "as": "45°ত ৰখা।"
+       },
+       "goal": {
+        "deg": 45
+       },
+       "then": {
+        "en": "Height equals reach, so sin θ = cos θ and tan θ = 1. No other angle in the quarter does this.",
+        "as": "উচ্চতা বিস্তাৰৰ সমান, সেয়ে sin θ = cos θ, tan θ = 1। এই চতুৰ্থাংশত আন কোনো কোণে এনে নকৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q1",
+     "type": "solve",
+     "skill": "tr-ident",
+     "hints": [
+      {
+       "en": "Common factor first.",
+       "as": "প্ৰথমে উমৈহতীয়া গুণক।"
+      }
+     ],
+     "q": {
+      "en": "Find $8\\sec^2 A - 8\\tan^2 A$",
+      "as": "$8\\sec^2 A - 8\\tan^2 A$ উলিওৱা"
+     },
+     "answer": "8",
+     "why": {
+      "en": "Take out 8. The bracket is 1.",
+      "as": "8 উলিয়াই লোৱা। বন্ধনীটো 1।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find $8\\sec^2 A - 8\\tan^2 A$",
+        "as": "$8\\sec^2 A - 8\\tan^2 A$ উলিওৱা"
+       },
+       "answer": "8",
+       "why": {
+        "en": "Take out 8. The bracket is 1.",
+        "as": "8 উলিয়াই লোৱা। বন্ধনীটো 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $7\\sec^2 A - 7\\tan^2 A$",
+        "as": "$7\\sec^2 A - 7\\tan^2 A$ উলিওৱা"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Take out 7. The bracket is 1.",
+        "as": "7 উলিয়াই লোৱা। বন্ধনীটো 1।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find $4\\sec^2 A - 4\\tan^2 A$",
+        "as": "$4\\sec^2 A - 4\\tan^2 A$ উলিওৱা"
+       },
+       "answer": "4",
+       "why": {
+        "en": "Take out 4. The bracket is 1.",
+        "as": "4 উলিয়াই লোৱা। বন্ধনীটো 1।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q2",
+     "type": "match",
+     "skill": "tr-ident",
+     "q": {
+      "en": "Match each expression to its value",
+      "as": "প্ৰতিটো ৰাশিক মানৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "$1 - \\sin^2\\theta$",
+        "as": "$1 - \\sin^2\\theta$"
+       },
+       {
+        "en": "$\\cos^2\\theta$",
+        "as": "$\\cos^2\\theta$"
+       }
+      ],
+      [
+       {
+        "en": "$1 + \\tan^2\\theta$",
+        "as": "$1 + \\tan^2\\theta$"
+       },
+       {
+        "en": "$\\sec^2\\theta$",
+        "as": "$\\sec^2\\theta$"
+       }
+      ],
+      [
+       {
+        "en": "$1 + \\cot^2\\theta$",
+        "as": "$1 + \\cot^2\\theta$"
+       },
+       {
+        "en": "$\\mathrm{cosec}^2\\theta$",
+        "as": "$\\mathrm{cosec}^2\\theta$"
+       }
+      ],
+      [
+       {
+        "en": "$\\sec^2\\theta - \\tan^2\\theta$",
+        "as": "$\\sec^2\\theta - \\tan^2\\theta$"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       }
+      ]
+     ],
+     "why": {
+      "en": "All three come from one Pythagoras line.",
+      "as": "তিনিওটা একে পাইথাগোৰাছৰ পৰা আহে।"
+     }
+    },
+    {
+     "id": "m14.x.q3",
+     "type": "solve",
+     "skill": "tr-ident",
+     "hints": [
+      {
+       "en": "Think $(a - b)(a + b)$.",
+       "as": "$(a - b)(a + b)$ ভাবা।"
+      }
+     ],
+     "q": {
+      "en": "If $\\sec\\theta - \\tan\\theta = \\frac{1}{7}$, find $\\sec\\theta + \\tan\\theta$.",
+      "as": "$\\sec\\theta - \\tan\\theta = \\frac{1}{7}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+     },
+     "answer": "7",
+     "why": {
+      "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+      "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+     },
+     "traps": [
+      {
+       "ans": "1/7",
+       "tag": "m-trig-flip",
+       "why": {
+        "en": "The product is 1, so the second is the flip of the first.",
+        "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\sec\\theta - \\tan\\theta = \\frac{1}{7}$, find $\\sec\\theta + \\tan\\theta$.",
+        "as": "$\\sec\\theta - \\tan\\theta = \\frac{1}{7}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+        "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "1/7",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "The product is 1, so the second is the flip of the first.",
+          "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\sec\\theta - \\tan\\theta = \\frac{1}{3}$, find $\\sec\\theta + \\tan\\theta$.",
+        "as": "$\\sec\\theta - \\tan\\theta = \\frac{1}{3}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+        "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "1/3",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "The product is 1, so the second is the flip of the first.",
+          "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If $\\sec\\theta - \\tan\\theta = \\frac{2}{9}$, find $\\sec\\theta + \\tan\\theta$.",
+        "as": "$\\sec\\theta - \\tan\\theta = \\frac{2}{9}$ হ'লে $\\sec\\theta + \\tan\\theta$ উলিওৱা।"
+       },
+       "answer": "9/2",
+       "why": {
+        "en": "Their product is $\\sec^2\\theta - \\tan^2\\theta = 1$, so flip it.",
+        "as": "পূৰণফল $\\sec^2\\theta - \\tan^2\\theta = 1$, সেয়ে ওলোটোৱা।"
+       },
+       "traps": [
+        {
+         "ans": "2/9",
+         "tag": "m-trig-flip",
+         "why": {
+          "en": "The product is 1, so the second is the flip of the first.",
+          "as": "পূৰণফল 1, সেয়ে দ্বিতীয়টো প্ৰথমটোৰ ওলোটা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q4",
+     "type": "tf",
+     "skill": "tr-ident",
+     "s": {
+      "en": "If $\\tan\\theta + \\cot\\theta = 2$, then $\\tan\\theta = 1$.",
+      "as": "$\\tan\\theta + \\cot\\theta = 2$ হ'লে $\\tan\\theta = 1$।"
+     },
+     "answer": true,
+     "why": {
+      "en": "A positive number and its flip add to 2 only when the number is 1.",
+      "as": "ধনাত্মক সংখ্যা আৰু ওলোটাৰ যোগফল 2 হয় কেৱল সংখ্যাটো 1 হ'লে।"
+     }
+    },
+    {
+     "id": "m14.x.q5",
+     "type": "stepwise",
+     "skill": "tr-ident",
+     "q": {
+      "en": "If $\\sin\\theta - \\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+      "as": "$\\sin\\theta - \\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "tan θ?",
+        "as": "tan θ?"
+       },
+       "options": [
+        {
+         "en": "$0$",
+         "as": "$0$"
+        },
+        {
+         "en": "$2$",
+         "as": "$2$"
+        },
+        {
+         "en": "$1$",
+         "as": "$1$"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Divide through by cos θ.",
+        "as": "cos θৰে হৰণ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "θ?",
+        "as": "θ?"
+       },
+       "options": [
+        {
+         "en": "60°",
+         "as": "60°"
+        },
+        {
+         "en": "45°",
+         "as": "45°"
+        },
+        {
+         "en": "90°",
+         "as": "90°"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Read it from the table.",
+        "as": "তালিকাৰ পৰা পঢ়া।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Value?",
+        "as": "মান?"
+       },
+       "options": [
+        {
+         "en": "$2\\sqrt{2}$",
+         "as": "$2\\sqrt{2}$"
+        },
+        {
+         "en": "$\\sqrt{2}$",
+         "as": "$\\sqrt{2}$"
+        },
+        {
+         "en": "$2$",
+         "as": "$2$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "sec and cosec are flips of cos and sin.",
+        "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "A ratio equation points straight to one angle.",
+      "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\sin\\theta - \\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+        "as": "$\\sin\\theta - \\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "tan θ?",
+          "as": "tan θ?"
+         },
+         "options": [
+          {
+           "en": "$0$",
+           "as": "$0$"
+          },
+          {
+           "en": "$2$",
+           "as": "$2$"
+          },
+          {
+           "en": "$1$",
+           "as": "$1$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide through by cos θ.",
+          "as": "cos θৰে হৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "θ?",
+          "as": "θ?"
+         },
+         "options": [
+          {
+           "en": "60°",
+           "as": "60°"
+          },
+          {
+           "en": "45°",
+           "as": "45°"
+          },
+          {
+           "en": "90°",
+           "as": "90°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Read it from the table.",
+          "as": "তালিকাৰ পৰা পঢ়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "$2\\sqrt{2}$",
+           "as": "$2\\sqrt{2}$"
+          },
+          {
+           "en": "$\\sqrt{2}$",
+           "as": "$\\sqrt{2}$"
+          },
+          {
+           "en": "$2$",
+           "as": "$2$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "sec and cosec are flips of cos and sin.",
+          "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio equation points straight to one angle.",
+        "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\sqrt{3}\\sin\\theta - \\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+        "as": "$\\sqrt{3}\\sin\\theta - \\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "tan θ?",
+          "as": "tan θ?"
+         },
+         "options": [
+          {
+           "en": "$2$",
+           "as": "$2$"
+          },
+          {
+           "en": "$0$",
+           "as": "$0$"
+          },
+          {
+           "en": "$\\frac{1}{\\sqrt{3}}$",
+           "as": "$\\frac{1}{\\sqrt{3}}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide through by cos θ.",
+          "as": "cos θৰে হৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "θ?",
+          "as": "θ?"
+         },
+         "options": [
+          {
+           "en": "90°",
+           "as": "90°"
+          },
+          {
+           "en": "30°",
+           "as": "30°"
+          },
+          {
+           "en": "45°",
+           "as": "45°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Read it from the table.",
+          "as": "তালিকাৰ পৰা পঢ়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{4}{\\sqrt{3}}$",
+           "as": "$\\frac{4}{\\sqrt{3}}$"
+          },
+          {
+           "en": "$2 + \\frac{2}{\\sqrt{3}}$",
+           "as": "$2 + \\frac{2}{\\sqrt{3}}$"
+          },
+          {
+           "en": "$2\\sqrt{3}$",
+           "as": "$2\\sqrt{3}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "sec and cosec are flips of cos and sin.",
+          "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio equation points straight to one angle.",
+        "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\sin\\theta - \\sqrt{3}\\cos\\theta = 0$, find $\\sec\\theta + \\mathrm{cosec}\\,\\theta$.",
+        "as": "$\\sin\\theta - \\sqrt{3}\\cos\\theta = 0$ হ'লে $\\sec\\theta + \\mathrm{cosec}\\,\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "tan θ?",
+          "as": "tan θ?"
+         },
+         "options": [
+          {
+           "en": "$2$",
+           "as": "$2$"
+          },
+          {
+           "en": "$0$",
+           "as": "$0$"
+          },
+          {
+           "en": "$\\sqrt{3}$",
+           "as": "$\\sqrt{3}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide through by cos θ.",
+          "as": "cos θৰে হৰণ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "θ?",
+          "as": "θ?"
+         },
+         "options": [
+          {
+           "en": "90°",
+           "as": "90°"
+          },
+          {
+           "en": "60°",
+           "as": "60°"
+          },
+          {
+           "en": "75°",
+           "as": "75°"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Read it from the table.",
+          "as": "তালিকাৰ পৰা পঢ়া।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Value?",
+          "as": "মান?"
+         },
+         "options": [
+          {
+           "en": "$2 + \\frac{2}{\\sqrt{3}}$",
+           "as": "$2 + \\frac{2}{\\sqrt{3}}$"
+          },
+          {
+           "en": "$2\\sqrt{3}$",
+           "as": "$2\\sqrt{3}$"
+          },
+          {
+           "en": "$\\frac{4}{\\sqrt{3}}$",
+           "as": "$\\frac{4}{\\sqrt{3}}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "sec and cosec are flips of cos and sin.",
+          "as": "sec আৰু cosec cos আৰু sinৰ ওলোটা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio equation points straight to one angle.",
+        "as": "অনুপাতৰ সমীকৰণে এটা কোণলৈ পোনে পোনে নিয়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q6",
+     "type": "stepwise",
+     "skill": "tr-ratio",
+     "q": {
+      "en": "If $\\tan\\theta = \\frac{3}{7}$, find $\\cos\\theta$.",
+      "as": "$\\tan\\theta = \\frac{3}{7}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Hypotenuse?",
+        "as": "অতিভুজ?"
+       },
+       "options": [
+        {
+         "en": "$\\sqrt{58}$",
+         "as": "$\\sqrt{58}$"
+        },
+        {
+         "en": "10",
+         "as": "10"
+        },
+        {
+         "en": "$\\sqrt{40}$",
+         "as": "$\\sqrt{40}$"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Pythagoras on sides of the tan fraction.",
+        "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+       }
+      },
+      {
+       "ask": {
+        "en": "cos θ?",
+        "as": "cos θ?"
+       },
+       "options": [
+        {
+         "en": "$\\frac{3}{\\sqrt{58}}$",
+         "as": "$\\frac{3}{\\sqrt{58}}$"
+        },
+        {
+         "en": "$\\frac{7}{\\sqrt{58}}$",
+         "as": "$\\frac{7}{\\sqrt{58}}$"
+        },
+        {
+         "en": "$\\frac{7}{3}$",
+         "as": "$\\frac{7}{3}$"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Adjacent over hypotenuse.",
+        "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+       },
+       "tag": "m-trig-swap"
+      }
+     ],
+     "why": {
+      "en": "The hypotenuse need not be a whole number.",
+      "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\tan\\theta = \\frac{3}{7}$, find $\\cos\\theta$.",
+        "as": "$\\tan\\theta = \\frac{3}{7}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Hypotenuse?",
+          "as": "অতিভুজ?"
+         },
+         "options": [
+          {
+           "en": "$\\sqrt{58}$",
+           "as": "$\\sqrt{58}$"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "$\\sqrt{40}$",
+           "as": "$\\sqrt{40}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Pythagoras on sides of the tan fraction.",
+          "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "cos θ?",
+          "as": "cos θ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{3}{\\sqrt{58}}$",
+           "as": "$\\frac{3}{\\sqrt{58}}$"
+          },
+          {
+           "en": "$\\frac{7}{\\sqrt{58}}$",
+           "as": "$\\frac{7}{\\sqrt{58}}$"
+          },
+          {
+           "en": "$\\frac{7}{3}$",
+           "as": "$\\frac{7}{3}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Adjacent over hypotenuse.",
+          "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "The hypotenuse need not be a whole number.",
+        "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan\\theta = \\frac{2}{3}$, find $\\cos\\theta$.",
+        "as": "$\\tan\\theta = \\frac{2}{3}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Hypotenuse?",
+          "as": "অতিভুজ?"
+         },
+         "options": [
+          {
+           "en": "$\\sqrt{5}$",
+           "as": "$\\sqrt{5}$"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "$\\sqrt{13}$",
+           "as": "$\\sqrt{13}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Pythagoras on sides of the tan fraction.",
+          "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "cos θ?",
+          "as": "cos θ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{3}{2}$",
+           "as": "$\\frac{3}{2}$"
+          },
+          {
+           "en": "$\\frac{3}{\\sqrt{13}}$",
+           "as": "$\\frac{3}{\\sqrt{13}}$"
+          },
+          {
+           "en": "$\\frac{2}{\\sqrt{13}}$",
+           "as": "$\\frac{2}{\\sqrt{13}}$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Adjacent over hypotenuse.",
+          "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "The hypotenuse need not be a whole number.",
+        "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan\\theta = \\frac{1}{4}$, find $\\cos\\theta$.",
+        "as": "$\\tan\\theta = \\frac{1}{4}$ হ'লে $\\cos\\theta$ উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Hypotenuse?",
+          "as": "অতিভুজ?"
+         },
+         "options": [
+          {
+           "en": "$\\sqrt{15}$",
+           "as": "$\\sqrt{15}$"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "$\\sqrt{17}$",
+           "as": "$\\sqrt{17}$"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Pythagoras on sides of the tan fraction.",
+          "as": "tan ভগ্নাংশৰ বাহুত পাইথাগোৰাছ।"
+         }
+        },
+        {
+         "ask": {
+          "en": "cos θ?",
+          "as": "cos θ?"
+         },
+         "options": [
+          {
+           "en": "$\\frac{4}{\\sqrt{17}}$",
+           "as": "$\\frac{4}{\\sqrt{17}}$"
+          },
+          {
+           "en": "$\\frac{1}{\\sqrt{17}}$",
+           "as": "$\\frac{1}{\\sqrt{17}}$"
+          },
+          {
+           "en": "$\\frac{4}{1}$",
+           "as": "$\\frac{4}{1}$"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Adjacent over hypotenuse.",
+          "as": "কাষৰ বাহু ভাগ অতিভুজ।"
+         },
+         "tag": "m-trig-swap"
+        }
+       ],
+       "why": {
+        "en": "The hypotenuse need not be a whole number.",
+        "as": "অতিভুজ পূৰ্ণ সংখ্যা নহ'বও পাৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m14.x.q7",
+     "type": "solve",
+     "skill": "tr-ident",
+     "q": {
+      "en": "If $\\tan A = 2$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+      "as": "$\\tan A = 2$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+     },
+     "answer": "4",
+     "why": {
+      "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+      "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\tan A = 2$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+        "as": "$\\tan A = 2$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+        "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan A = 3$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+        "as": "$\\tan A = 3$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+       },
+       "answer": "9",
+       "why": {
+        "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+        "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\tan A = \\frac{1}{2}$, find $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$.",
+        "as": "$\\tan A = \\frac{1}{2}$ হ'লে $\\frac{1 + \\tan^2 A}{1 + \\cot^2 A}$ উলিওৱা।"
+       },
+       "answer": "1/4",
+       "why": {
+        "en": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$.",
+        "as": "$\\frac{\\sec^2 A}{\\mathrm{cosec}^2 A} = \\tan^2 A$।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Trigonometry test",
+   "as": "ত্ৰিকোণমিতি পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m14.t.q1",
+    "type": "mcq",
+    "skill": "tr-ratio",
+    "q": {
+     "en": "Opposite 7, adjacent 24, hypotenuse 25. cos θ is",
+     "as": "বিপৰীত 7, সংলগ্ন 24, অতিভুজ 25। cos θ"
+    },
+    "why": {
+     "en": "Adjacent ÷ hypotenuse.",
+     "as": "সংলগ্ন ÷ অতিভুজ।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{24}{25}$",
+      "as": "$\\frac{24}{25}$"
+     },
+     {
+      "en": "$\\frac{7}{24}$",
+      "as": "$\\frac{7}{24}$"
+     },
+     {
+      "en": "$\\frac{25}{24}$",
+      "as": "$\\frac{25}{24}$"
+     },
+     {
+      "en": "$\\frac{7}{25}$",
+      "as": "$\\frac{7}{25}$"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-trig-swap",
+      "why": {
+       "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+       "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Opposite 7, adjacent 24, hypotenuse 25. cos θ is",
+       "as": "বিপৰীত 7, সংলগ্ন 24, অতিভুজ 25। cos θ"
+      },
+      "why": {
+       "en": "Adjacent ÷ hypotenuse.",
+       "as": "সংলগ্ন ÷ অতিভুজ।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{24}{25}$",
+        "as": "$\\frac{24}{25}$"
+       },
+       {
+        "en": "$\\frac{7}{24}$",
+        "as": "$\\frac{7}{24}$"
+       },
+       {
+        "en": "$\\frac{25}{24}$",
+        "as": "$\\frac{25}{24}$"
+       },
+       {
+        "en": "$\\frac{7}{25}$",
+        "as": "$\\frac{7}{25}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+         "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Opposite 9, adjacent 40, hypotenuse 41. cos θ is",
+       "as": "বিপৰীত 9, সংলগ্ন 40, অতিভুজ 41। cos θ"
+      },
+      "why": {
+       "en": "Adjacent ÷ hypotenuse.",
+       "as": "সংলগ্ন ÷ অতিভুজ।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{40}{41}$",
+        "as": "$\\frac{40}{41}$"
+       },
+       {
+        "en": "$\\frac{41}{40}$",
+        "as": "$\\frac{41}{40}$"
+       },
+       {
+        "en": "$\\frac{9}{40}$",
+        "as": "$\\frac{9}{40}$"
+       },
+       {
+        "en": "$\\frac{9}{41}$",
+        "as": "$\\frac{9}{41}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+         "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Opposite 20, adjacent 21, hypotenuse 29. cos θ is",
+       "as": "বিপৰীত 20, সংলগ্ন 21, অতিভুজ 29। cos θ"
+      },
+      "why": {
+       "en": "Adjacent ÷ hypotenuse.",
+       "as": "সংলগ্ন ÷ অতিভুজ।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{20}{29}$",
+        "as": "$\\frac{20}{29}$"
+       },
+       {
+        "en": "$\\frac{21}{29}$",
+        "as": "$\\frac{21}{29}$"
+       },
+       {
+        "en": "$\\frac{29}{21}$",
+        "as": "$\\frac{29}{21}$"
+       },
+       {
+        "en": "$\\frac{20}{21}$",
+        "as": "$\\frac{20}{21}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+         "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m14.t.q2",
+    "type": "mcq",
+    "skill": "tr-ratio",
+    "q": {
+     "en": "If sin θ = $\\frac{3}{5}$, then cosec θ is",
+     "as": "sin θ = $\\frac{3}{5}$ হ'লে cosec θ"
+    },
+    "why": {
+     "en": "Cosec is the flip of sin.",
+     "as": "cosec sinৰ ওলোটা।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{5}{4}$",
+      "as": "$\\frac{5}{4}$"
+     },
+     {
+      "en": "$\\frac{5}{3}$",
+      "as": "$\\frac{5}{3}$"
+     },
+     {
+      "en": "$\\frac{3}{5}$",
+      "as": "$\\frac{3}{5}$"
+     },
+     {
+      "en": "$\\frac{4}{5}$",
+      "as": "$\\frac{4}{5}$"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-trig-flip",
+      "why": {
+       "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+       "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "If sin θ = $\\frac{3}{5}$, then cosec θ is",
+       "as": "sin θ = $\\frac{3}{5}$ হ'লে cosec θ"
+      },
+      "why": {
+       "en": "Cosec is the flip of sin.",
+       "as": "cosec sinৰ ওলোটা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{5}{4}$",
+        "as": "$\\frac{5}{4}$"
+       },
+       {
+        "en": "$\\frac{5}{3}$",
+        "as": "$\\frac{5}{3}$"
+       },
+       {
+        "en": "$\\frac{3}{5}$",
+        "as": "$\\frac{3}{5}$"
+       },
+       {
+        "en": "$\\frac{4}{5}$",
+        "as": "$\\frac{4}{5}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-trig-flip",
+        "why": {
+         "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+         "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If sin θ = $\\frac{5}{13}$, then cosec θ is",
+       "as": "sin θ = $\\frac{5}{13}$ হ'লে cosec θ"
+      },
+      "why": {
+       "en": "Cosec is the flip of sin.",
+       "as": "cosec sinৰ ওলোটা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{13}{6}$",
+        "as": "$\\frac{13}{6}$"
+       },
+       {
+        "en": "$\\frac{6}{13}$",
+        "as": "$\\frac{6}{13}$"
+       },
+       {
+        "en": "$\\frac{13}{5}$",
+        "as": "$\\frac{13}{5}$"
+       },
+       {
+        "en": "$\\frac{5}{13}$",
+        "as": "$\\frac{5}{13}$"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-trig-flip",
+        "why": {
+         "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+         "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If sin θ = $\\frac{2}{7}$, then cosec θ is",
+       "as": "sin θ = $\\frac{2}{7}$ হ'লে cosec θ"
+      },
+      "why": {
+       "en": "Cosec is the flip of sin.",
+       "as": "cosec sinৰ ওলোটা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{7}{3}$",
+        "as": "$\\frac{7}{3}$"
+       },
+       {
+        "en": "$\\frac{7}{2}$",
+        "as": "$\\frac{7}{2}$"
+       },
+       {
+        "en": "$\\frac{2}{7}$",
+        "as": "$\\frac{2}{7}$"
+       },
+       {
+        "en": "$\\frac{3}{7}$",
+        "as": "$\\frac{3}{7}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-trig-flip",
+        "why": {
+         "en": "Secant is the flip of cosine, not of sine. Pair them: sin with cosec, cos with sec, tan with cot.",
+         "as": "ছেকেণ্ট কছাইনৰ ওলোটা, ছাইনৰ নহয়। যোৰা: sin-cosec, cos-sec, tan-cot।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m14.t.q3",
+    "type": "mcq",
+    "skill": "tr-values",
+    "q": {
+     "en": "$\\sin 30^\\circ \\times \\cos 60^\\circ$ equals",
+     "as": "$\\sin 30^\\circ \\times \\cos 60^\\circ$ৰ মান"
+    },
+    "why": {
+     "en": "Use the quarter circle.",
+     "as": "চতুৰ্থাংশ বৃত্ত ব্যৱহাৰ কৰা।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{1}{4}$",
+      "as": "$\\frac{1}{4}$"
+     },
+     {
+      "en": "1",
+      "as": "1"
+     },
+     {
+      "en": "0",
+      "as": "0"
+     },
+     {
+      "en": "$\\frac{1}{2}$",
+      "as": "$\\frac{1}{2}$"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-trig-swap",
+      "why": {
+       "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+       "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "$\\sin 30^\\circ \\times \\cos 60^\\circ$ equals",
+       "as": "$\\sin 30^\\circ \\times \\cos 60^\\circ$ৰ মান"
+      },
+      "why": {
+       "en": "Use the quarter circle.",
+       "as": "চতুৰ্থাংশ বৃত্ত ব্যৱহাৰ কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{1}{4}$",
+        "as": "$\\frac{1}{4}$"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       },
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+         "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\sin 90^\\circ + \\cos 90^\\circ$ equals",
+       "as": "$\\sin 90^\\circ + \\cos 90^\\circ$ৰ মান"
+      },
+      "why": {
+       "en": "Use the quarter circle.",
+       "as": "চতুৰ্থাংশ বৃত্ত ব্যৱহাৰ কৰা।"
+      },
+      "options": [
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+         "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "$\\tan 45^\\circ - \\cos 0^\\circ$ equals",
+       "as": "$\\tan 45^\\circ - \\cos 0^\\circ$ৰ মান"
+      },
+      "why": {
+       "en": "Use the quarter circle.",
+       "as": "চতুৰ্থাংশ বৃত্ত ব্যৱহাৰ কৰা।"
+      },
+      "options": [
+       {
+        "en": "2",
+        "as": "2"
+       },
+       {
+        "en": "0",
+        "as": "0"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "$\\frac{1}{2}$",
+        "as": "$\\frac{1}{2}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "Sine is opposite ÷ hypotenuse; cosine is adjacent ÷ hypotenuse. Check which side faces the angle.",
+         "as": "ছাইন = বিপৰীত ÷ অতিভুজ; কছাইন = সংলগ্ন ÷ অতিভুজ। কোন বাহু কোণৰ সন্মুখত চোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m14.t.q4",
+    "type": "mcq",
+    "skill": "tr-height",
+    "q": {
+     "en": "From 40 m away, the top of a tower is at 45°. Its height is",
+     "as": "40 মিটাৰ দূৰৰ পৰা টাৱাৰৰ শীৰ্ষ 45°ত। ইয়াৰ উচ্চতা"
+    },
+    "why": {
+     "en": "tan 45° = 1.",
+     "as": "tan 45° = 1।"
+    },
+    "options": [
+     {
+      "en": "40 m",
+      "as": "40 m"
+     },
+     {
+      "en": "20 m",
+      "as": "20 m"
+     },
+     {
+      "en": "50 m",
+      "as": "50 m"
+     },
+     {
+      "en": "80 m",
+      "as": "80 m"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-trig-swap",
+      "why": {
+       "en": "tan 45° = 1, so height equals distance.",
+       "as": "tan 45° = 1, সেয়ে উচ্চতা = দূৰত্ব।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "From 40 m away, the top of a tower is at 45°. Its height is",
+       "as": "40 মিটাৰ দূৰৰ পৰা টাৱাৰৰ শীৰ্ষ 45°ত। ইয়াৰ উচ্চতা"
+      },
+      "why": {
+       "en": "tan 45° = 1.",
+       "as": "tan 45° = 1।"
+      },
+      "options": [
+       {
+        "en": "40 m",
+        "as": "40 m"
+       },
+       {
+        "en": "20 m",
+        "as": "20 m"
+       },
+       {
+        "en": "50 m",
+        "as": "50 m"
+       },
+       {
+        "en": "80 m",
+        "as": "80 m"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "tan 45° = 1, so height equals distance.",
+         "as": "tan 45° = 1, সেয়ে উচ্চতা = দূৰত্ব।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "From 60 m away, the top of a tower is at 45°. Its height is",
+       "as": "60 মিটাৰ দূৰৰ পৰা টাৱাৰৰ শীৰ্ষ 45°ত। ইয়াৰ উচ্চতা"
+      },
+      "why": {
+       "en": "tan 45° = 1.",
+       "as": "tan 45° = 1।"
+      },
+      "options": [
+       {
+        "en": "60 m",
+        "as": "60 m"
+       },
+       {
+        "en": "70 m",
+        "as": "70 m"
+       },
+       {
+        "en": "120 m",
+        "as": "120 m"
+       },
+       {
+        "en": "30 m",
+        "as": "30 m"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "tan 45° = 1, so height equals distance.",
+         "as": "tan 45° = 1, সেয়ে উচ্চতা = দূৰত্ব।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "From 24 m away, the top of a tower is at 45°. Its height is",
+       "as": "24 মিটাৰ দূৰৰ পৰা টাৱাৰৰ শীৰ্ষ 45°ত। ইয়াৰ উচ্চতা"
+      },
+      "why": {
+       "en": "tan 45° = 1.",
+       "as": "tan 45° = 1।"
+      },
+      "options": [
+       {
+        "en": "48 m",
+        "as": "48 m"
+       },
+       {
+        "en": "24 m",
+        "as": "24 m"
+       },
+       {
+        "en": "12 m",
+        "as": "12 m"
+       },
+       {
+        "en": "34 m",
+        "as": "34 m"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-trig-swap",
+        "why": {
+         "en": "tan 45° = 1, so height equals distance.",
+         "as": "tan 45° = 1, সেয়ে উচ্চতা = দূৰত্ব।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m14.t.q5",
+    "type": "solve",
+    "skill": "tr-values",
+    "q": {
+     "en": "Find $\\sin^2 37^\\circ + \\cos^2 37^\\circ$.",
+     "as": "$\\sin^2 37^\\circ + \\cos^2 37^\\circ$ উলিওৱা।"
+    },
+    "answer": "1",
+    "why": {
+     "en": "True for every angle.",
+     "as": "প্ৰতিটো কোণত সত্য।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Find $\\sin^2 37^\\circ + \\cos^2 37^\\circ$.",
+       "as": "$\\sin^2 37^\\circ + \\cos^2 37^\\circ$ উলিওৱা।"
+      },
+      "answer": "1",
+      "why": {
+       "en": "True for every angle.",
+       "as": "প্ৰতিটো কোণত সত্য।"
+      }
+     },
+     {
+      "q": {
+       "en": "Find $\\sin^2 65^\\circ + \\cos^2 65^\\circ$.",
+       "as": "$\\sin^2 65^\\circ + \\cos^2 65^\\circ$ উলিওৱা।"
+      },
+      "answer": "1",
+      "why": {
+       "en": "True for every angle.",
+       "as": "প্ৰতিটো কোণত সত্য।"
+      }
+     },
+     {
+      "q": {
+       "en": "Find $\\sin^2 12^\\circ + \\cos^2 12^\\circ$.",
+       "as": "$\\sin^2 12^\\circ + \\cos^2 12^\\circ$ উলিওৱা।"
+      },
+      "answer": "1",
+      "why": {
+       "en": "True for every angle.",
+       "as": "প্ৰতিটো কোণত সত্য।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

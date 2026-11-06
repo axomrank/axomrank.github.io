@@ -1,0 +1,3207 @@
+{
+ "id": "math-07-average",
+ "course": "mathematics",
+ "no": 7,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Average",
+  "as": "গড়"
+ },
+ "reign": {
+  "en": "Levelling, changes, group averages",
+  "as": "সমান কৰা, পৰিৱৰ্তন, গোটৰ গড়"
+ },
+ "portrait": "math/average.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Levelling out",
+    "as": "সমান কৰা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "The average is the level every value would reach if evened out.",
+     "as": "সকলো মান সমান কৰিলে যি উচ্চতা হয় সেয়াই গড়।"
+    },
+    {
+     "en": "At the average, the total above equals the total gap below.",
+     "as": "গড়ত ওপৰৰ মুঠ = তলৰ মুঠ খালী।"
+    },
+    {
+     "en": "For evenly spaced numbers, the average is the middle one.",
+     "as": "সমান ব্যৱধানৰ সংখ্যাৰ গড় মাজৰটো।"
+    },
+    {
+     "en": "Average of the first n natural numbers is $\\frac{n + 1}{2}$.",
+     "as": "প্ৰথম n স্বাভাৱিক সংখ্যাৰ গড় $\\frac{n + 1}{2}$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m7.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Average means level",
+      "as": "গড় মানে সমান"
+     },
+     "text": [
+      {
+       "en": "Five friends have 4, 9, 5, 10 and 7 mangoes. Share them out evenly: how high is the level?",
+       "as": "পাঁচ বন্ধুৰ 4, 9, 5, 10 আৰু 7টা আম। সমানকৈ ভাগ কৰিলে উচ্চতা কিমান?"
+      }
+     ],
+     "widget": {
+      "kind": "level",
+      "vals": [
+       4,
+       9,
+       5,
+       10,
+       7
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag the line until above equals gap.",
+        "as": "ওপৰ আৰু খালী সমান নোহোৱালৈ ৰেখা টানা।"
+       },
+       "goal": {
+        "balanced": 1
+       },
+       "then": {
+        "en": "At 7, the extra above fills the gaps below exactly. That level is the average, with no division needed.",
+        "as": "7ত ওপৰৰ বাঢ়তি অংশই তলৰ খালী ঠিক ভৰায়। সেই উচ্চতাই গড়, হৰণৰ প্ৰয়োজন নাই।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "The middle does the work",
+      "as": "মাজৰটোৱে কাম কৰে"
+     },
+     "text": [
+      {
+       "en": "Consecutive numbers are evenly spaced, so each one above the middle cancels one below.",
+       "as": "ক্ৰমিক সংখ্যাৰ ব্যৱধান সমান, সেয়ে মাজৰ ওপৰৰ প্ৰতিটোৱে তলৰ এটাক কাটে।"
+      }
+     ],
+     "widget": {
+      "kind": "level",
+      "vals": [
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "start": 15
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Find the level of these five numbers.",
+        "as": "এই পাঁচটা সংখ্যাৰ উচ্চতা বিচাৰা।"
+       },
+       "goal": {
+        "balanced": 1
+       },
+       "then": {
+        "en": "13, the middle number. So five consecutive numbers averaging 13 must be 11 to 15.",
+        "as": "13, মাজৰ সংখ্যাটো। সেয়ে গড় 13 হোৱা পাঁচটা ক্ৰমিক সংখ্যা 11ৰ পৰা 15।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.q1",
+     "type": "explore",
+     "skill": "a-mean",
+     "q": {
+      "en": "Find the average by levelling.",
+      "as": "সমান কৰি গড় উলিওৱা।"
+     },
+     "widget": {
+      "kind": "level",
+      "vals": [
+       3,
+       8,
+       6,
+       11,
+       7
+      ]
+     },
+     "target": 7,
+     "answerText": {
+      "en": "Level 7",
+      "as": "উচ্চতা 7"
+     },
+     "why": {
+      "en": "The surplus above 7 exactly fills the gaps below it.",
+      "as": "7ৰ ওপৰৰ বাঢ়তি অংশই তলৰ খালী ঠিক ভৰায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find the average by levelling.",
+        "as": "সমান কৰি গড় উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         3,
+         8,
+         6,
+         11,
+         7
+        ]
+       },
+       "target": 7,
+       "answerText": {
+        "en": "Level 7",
+        "as": "উচ্চতা 7"
+       },
+       "why": {
+        "en": "The surplus above 7 exactly fills the gaps below it.",
+        "as": "7ৰ ওপৰৰ বাঢ়তি অংশই তলৰ খালী ঠিক ভৰায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the average by levelling.",
+        "as": "সমান কৰি গড় উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         10,
+         4,
+         7,
+         11
+        ]
+       },
+       "target": 8,
+       "answerText": {
+        "en": "Level 8",
+        "as": "উচ্চতা 8"
+       },
+       "why": {
+        "en": "The surplus above 8 exactly fills the gaps below it.",
+        "as": "8ৰ ওপৰৰ বাঢ়তি অংশই তলৰ খালী ঠিক ভৰায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the average by levelling.",
+        "as": "সমান কৰি গড় উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         12,
+         6,
+         9,
+         5,
+         13
+        ]
+       },
+       "target": 9,
+       "answerText": {
+        "en": "Level 9",
+        "as": "উচ্চতা 9"
+       },
+       "why": {
+        "en": "The surplus above 9 exactly fills the gaps below it.",
+        "as": "9ৰ ওপৰৰ বাঢ়তি অংশই তলৰ খালী ঠিক ভৰায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find the average by levelling.",
+        "as": "সমান কৰি গড় উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         8,
+         2,
+         5
+        ]
+       },
+       "target": 5,
+       "answerText": {
+        "en": "Level 5",
+        "as": "উচ্চতা 5"
+       },
+       "why": {
+        "en": "The surplus above 5 exactly fills the gaps below it.",
+        "as": "5ৰ ওপৰৰ বাঢ়তি অংশই তলৰ খালী ঠিক ভৰায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.q2",
+     "type": "solve",
+     "skill": "a-mean",
+     "hints": [
+      {
+       "en": "Average the first and the last.",
+       "as": "প্ৰথম আৰু শেষৰটোৰ গড় লোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find the average of the first 10 natural numbers.",
+      "as": "প্ৰথম 10টা স্বাভাৱিক সংখ্যাৰ গড় উলিওৱা।"
+     },
+     "answer": "11/2",
+     "why": {
+      "en": "The first and last pair up: $\\frac{1 + 10}{2}$.",
+      "as": "প্ৰথম আৰু শেষৰটো যোৰা: $\\frac{1 + 10}{2}$।"
+     },
+     "traps": [
+      {
+       "ans": "5",
+       "tag": "m-avg-count",
+       "why": {
+        "en": "The numbers run from 1 to 10, so the middle is $\\frac{1 + 10}{2}$, not half of 10.",
+        "as": "সংখ্যাবোৰ 1ৰ পৰা 10লৈ, সেয়ে মাজ $\\frac{1 + 10}{2}$, 10ৰ আধা নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the average of the first 10 natural numbers.",
+        "as": "প্ৰথম 10টা স্বাভাৱিক সংখ্যাৰ গড় উলিওৱা।"
+       },
+       "answer": "11/2",
+       "why": {
+        "en": "The first and last pair up: $\\frac{1 + 10}{2}$.",
+        "as": "প্ৰথম আৰু শেষৰটো যোৰা: $\\frac{1 + 10}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "5",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "The numbers run from 1 to 10, so the middle is $\\frac{1 + 10}{2}$, not half of 10.",
+          "as": "সংখ্যাবোৰ 1ৰ পৰা 10লৈ, সেয়ে মাজ $\\frac{1 + 10}{2}$, 10ৰ আধা নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the average of the first 20 natural numbers.",
+        "as": "প্ৰথম 20টা স্বাভাৱিক সংখ্যাৰ গড় উলিওৱা।"
+       },
+       "answer": "21/2",
+       "why": {
+        "en": "The first and last pair up: $\\frac{1 + 20}{2}$.",
+        "as": "প্ৰথম আৰু শেষৰটো যোৰা: $\\frac{1 + 20}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "10",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "The numbers run from 1 to 20, so the middle is $\\frac{1 + 20}{2}$, not half of 20.",
+          "as": "সংখ্যাবোৰ 1ৰ পৰা 20লৈ, সেয়ে মাজ $\\frac{1 + 20}{2}$, 20ৰ আধা নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the average of the first 15 natural numbers.",
+        "as": "প্ৰথম 15টা স্বাভাৱিক সংখ্যাৰ গড় উলিওৱা।"
+       },
+       "answer": "8",
+       "why": {
+        "en": "The first and last pair up: $\\frac{1 + 15}{2}$.",
+        "as": "প্ৰথম আৰু শেষৰটো যোৰা: $\\frac{1 + 15}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "15/2",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "The numbers run from 1 to 15, so the middle is $\\frac{1 + 15}{2}$, not half of 15.",
+          "as": "সংখ্যাবোৰ 1ৰ পৰা 15লৈ, সেয়ে মাজ $\\frac{1 + 15}{2}$, 15ৰ আধা নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the average of the first 50 natural numbers.",
+        "as": "প্ৰথম 50টা স্বাভাৱিক সংখ্যাৰ গড় উলিওৱা।"
+       },
+       "answer": "51/2",
+       "why": {
+        "en": "The first and last pair up: $\\frac{1 + 50}{2}$.",
+        "as": "প্ৰথম আৰু শেষৰটো যোৰা: $\\frac{1 + 50}{2}$।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "The numbers run from 1 to 50, so the middle is $\\frac{1 + 50}{2}$, not half of 50.",
+          "as": "সংখ্যাবোৰ 1ৰ পৰা 50লৈ, সেয়ে মাজ $\\frac{1 + 50}{2}$, 50ৰ আধা নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.q3",
+     "type": "solve",
+     "skill": "a-mean",
+     "q": {
+      "en": "The average of 5 consecutive numbers is 17. Find the largest.",
+      "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 17। ডাঙৰটো উলিওৱা।"
+     },
+     "answer": "19",
+     "why": {
+      "en": "17 is the middle, and the largest is 2 steps above it.",
+      "as": "17 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
+     },
+     "traps": [
+      {
+       "ans": "22",
+       "tag": "m-avg-count",
+       "why": {
+        "en": "Only half the numbers lie above the middle.",
+        "as": "মাজৰ ওপৰত আধা সংখ্যাহে থাকে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The average of 5 consecutive numbers is 17. Find the largest.",
+        "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 17। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "19",
+       "why": {
+        "en": "17 is the middle, and the largest is 2 steps above it.",
+        "as": "17 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "22",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "Only half the numbers lie above the middle.",
+          "as": "মাজৰ ওপৰত আধা সংখ্যাহে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The average of 7 consecutive numbers is 23. Find the largest.",
+        "as": "7টা ক্ৰমিক সংখ্যাৰ গড় 23। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "26",
+       "why": {
+        "en": "23 is the middle, and the largest is 3 steps above it.",
+        "as": "23 মাজৰটো, ডাঙৰটো ইয়াৰ 3 খোজ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "Only half the numbers lie above the middle.",
+          "as": "মাজৰ ওপৰত আধা সংখ্যাহে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The average of 9 consecutive numbers is 31. Find the largest.",
+        "as": "9টা ক্ৰমিক সংখ্যাৰ গড় 31। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "35",
+       "why": {
+        "en": "31 is the middle, and the largest is 4 steps above it.",
+        "as": "31 মাজৰটো, ডাঙৰটো ইয়াৰ 4 খোজ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "40",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "Only half the numbers lie above the middle.",
+          "as": "মাজৰ ওপৰত আধা সংখ্যাহে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The average of 5 consecutive numbers is 44. Find the largest.",
+        "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 44। ডাঙৰটো উলিওৱা।"
+       },
+       "answer": "46",
+       "why": {
+        "en": "44 is the middle, and the largest is 2 steps above it.",
+        "as": "44 মাজৰটো, ডাঙৰটো ইয়াৰ 2 খোজ ওপৰত।"
+       },
+       "traps": [
+        {
+         "ans": "49",
+         "tag": "m-avg-count",
+         "why": {
+          "en": "Only half the numbers lie above the middle.",
+          "as": "মাজৰ ওপৰত আধা সংখ্যাহে থাকে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.q4",
+     "type": "tf",
+     "skill": "a-mean",
+     "s": {
+      "en": "The average of a set can be a number that is not in the set.",
+      "as": "গড় গোটত নথকা এটা সংখ্যা হ'ব পাৰে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "2 and 4 average 3, and 3 is not in the set. It is a level, not a member.",
+      "as": "2 আৰু 4ৰ গড় 3, 3 গোটত নাই। ই এটা উচ্চতা, সদস্য নহয়।"
+     }
+    },
+    {
+     "id": "m7.u1.q5",
+     "type": "match",
+     "skill": "a-mean",
+     "q": {
+      "en": "Match each set to its average",
+      "as": "প্ৰতিটো গোটক গড়ৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "First 10 natural numbers",
+        "as": "প্ৰথম 10টা স্বাভাৱিক সংখ্যা"
+       },
+       {
+        "en": "5.5",
+        "as": "5.5"
+       }
+      ],
+      [
+       {
+        "en": "Odd numbers to 99",
+        "as": "99লৈ অযুগ্ম সংখ্যা"
+       },
+       {
+        "en": "50",
+        "as": "50"
+       }
+      ],
+      [
+       {
+        "en": "Even numbers to 100",
+        "as": "100লৈ যুগ্ম সংখ্যা"
+       },
+       {
+        "en": "51",
+        "as": "51"
+       }
+      ],
+      [
+       {
+        "en": "First 5 multiples of 7",
+        "as": "7ৰ প্ৰথম 5টা গুণিতক"
+       },
+       {
+        "en": "21",
+        "as": "21"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Each set is evenly spaced, so average the first and the last.",
+      "as": "প্ৰতিটো গোটৰ ব্যৱধান সমান, সেয়ে প্ৰথম আৰু শেষৰটোৰ গড় লোৱা।"
+     }
+    },
+    {
+     "id": "m7.u1.q6",
+     "type": "solve",
+     "skill": "a-mean",
+     "hints": [
+      {
+       "en": "Largest = average + half of (count − 1).",
+       "as": "ডাঙৰটো = গড় + (সংখ্যা − 1)ৰ আধা।"
+      }
+     ],
+     "q": {
+      "en": "The average of 6 consecutive whole numbers is 62.5. Find number 2 counting from the top.",
+      "as": "6টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 62.5। ওপৰৰ পৰা গণিলে 2 নং সংখ্যাটো উলিওৱা।"
+     },
+     "answer": "64",
+     "why": {
+      "en": "With an even count, the average sits between the two middle numbers.",
+      "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average of 6 consecutive whole numbers is 62.5. Find number 2 counting from the top.",
+        "as": "6টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 62.5। ওপৰৰ পৰা গণিলে 2 নং সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "64",
+       "why": {
+        "en": "With an even count, the average sits between the two middle numbers.",
+        "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of 4 consecutive whole numbers is 31.5. Find number 3 counting from the top.",
+        "as": "4টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 31.5। ওপৰৰ পৰা গণিলে 3 নং সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "31",
+       "why": {
+        "en": "With an even count, the average sits between the two middle numbers.",
+        "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of 8 consecutive whole numbers is 40.5. Find number 2 counting from the top.",
+        "as": "8টা ক্ৰমিক পূৰ্ণ সংখ্যাৰ গড় 40.5। ওপৰৰ পৰা গণিলে 2 নং সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "43",
+       "why": {
+        "en": "With an even count, the average sits between the two middle numbers.",
+        "as": "সংখ্যা যুগ্ম হ'লে গড় মাজৰ দুটাৰ মাজত থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u1.q7",
+     "type": "solve",
+     "skill": "a-mean",
+     "hints": [
+      {
+       "en": "Add all the numbers next to x, then share them out.",
+       "as": "xৰ লগৰ সংখ্যাবোৰ যোগ কৰি ভাগ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "The average of $x$, $x + 5$, $x - 2$, $x + 9$ is 6. Find x.",
+      "as": "$x$, $x + 5$, $x - 2$, $x + 9$ৰ গড় 6। x উলিওৱা।"
+     },
+     "answer": "3",
+     "why": {
+      "en": "x + 3 = 6.",
+      "as": "x + 3 = 6।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average of $x$, $x + 5$, $x - 2$, $x + 9$ is 6. Find x.",
+        "as": "$x$, $x + 5$, $x - 2$, $x + 9$ৰ গড় 6। x উলিওৱা।"
+       },
+       "answer": "3",
+       "why": {
+        "en": "x + 3 = 6.",
+        "as": "x + 3 = 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of $x - 2$, $x - 5$, $x - 3$, $x + 6$ is 7. Find x.",
+        "as": "$x - 2$, $x - 5$, $x - 3$, $x + 6$ৰ গড় 7। x উলিওৱা।"
+       },
+       "answer": "8",
+       "why": {
+        "en": "x + -1 = 7.",
+        "as": "x + -1 = 7।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of $x + 2$, $x + 6$, $x + 4$ is 9. Find x.",
+        "as": "$x + 2$, $x + 6$, $x + 4$ৰ গড় 9। x উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "x + 4 = 9.",
+        "as": "x + 4 = 9।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "One value changes",
+    "as": "এটা মান সলনি হ'লে"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Total = average × count. Every change goes through the total.",
+     "as": "মুঠ = গড় × সংখ্যা। প্ৰতিটো পৰিৱৰ্তন মুঠৰ মাজেদি হয়।"
+    },
+    {
+     "en": "Add k to every value and the average rises by k.",
+     "as": "প্ৰতিটো মানত k যোগ কৰিলে গড় k বাঢ়ে।"
+    },
+    {
+     "en": "Multiply every value by k and the average is multiplied by k.",
+     "as": "প্ৰতিটো মান kৰে পূৰণ কৰিলে গড়ো kৰে পূৰণ হয়।"
+    },
+    {
+     "en": "A newcomer's extra spreads across the whole new group.",
+     "as": "নতুনজনৰ বাঢ়তি অংশ সমগ্ৰ নতুন গোটত বিয়পে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m7.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "One newcomer lifts everyone",
+      "as": "এজন নতুনে সকলোকে তোলে"
+     },
+     "text": [
+      {
+       "en": "Four people each have 6. A newcomer arrives with 16. The extra 10 is shared by all five.",
+       "as": "চাৰিজনৰ প্ৰত্যেকৰে 6। নতুনজন 16 লৈ আহিল। বাঢ়তি 10 পাঁচোজনে ভাগ কৰে।"
+      }
+     ],
+     "widget": {
+      "kind": "level",
+      "vals": [
+       6,
+       6,
+       6,
+       6,
+       16
+      ],
+      "start": 6
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Raise the line until it balances.",
+        "as": "সমান নোহোৱালৈ ৰেখা তোলা।"
+       },
+       "goal": {
+        "balanced": 1
+       },
+       "then": {
+        "en": "8: the level rose by 2, which is 10 ÷ 5. Divide the extra by the new count.",
+        "as": "8: উচ্চতা 2 বাঢ়িল, অৰ্থাৎ 10 ÷ 5। বাঢ়তি অংশক নতুন সংখ্যাৰে হৰণ কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Go through the total",
+      "as": "মুঠৰ মাজেদি যোৱা"
+     },
+     "text": [
+      {
+       "en": "When someone joins, leaves or is replaced, the average itself cannot be adjusted directly.",
+       "as": "কোনোবা যোগ হ'লে, গ'লে বা সলনি হ'লে গড় পোনে পোনে সলনি কৰিব নোৱাৰি।"
+      },
+      {
+       "en": "Find the old total, change it, and divide by the new count.",
+       "as": "পুৰণি মুঠ উলিওৱা, সলনি কৰা, নতুন সংখ্যাৰে হৰণ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Old total = average × count",
+        "as": "পুৰণি মুঠ = গড় × সংখ্যা"
+       },
+       {
+        "en": "Add or remove",
+        "as": "যোগ বা বাদ"
+       },
+       {
+        "en": "Divide by the new count",
+        "as": "নতুন সংখ্যাৰে হৰণ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m7.u2.q1",
+     "type": "solve",
+     "skill": "a-change",
+     "hints": [
+      {
+       "en": "New total minus old total.",
+       "as": "নতুন মুঠৰ পৰা পুৰণি মুঠ বিয়োগ।"
+      }
+     ],
+     "q": {
+      "en": "29 students average 8 years. A teacher joins and the average becomes 9. How old is the teacher?",
+      "as": "29 জন ছাত্ৰৰ গড় বয়স 8 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 9 হ'ল। শিক্ষকৰ বয়স কিমান?"
+     },
+     "answer": "38",
+     "why": {
+      "en": "New total 270 less old total 232.",
+      "as": "নতুন মুঠ 270ৰ পৰা পুৰণি মুঠ 232 বিয়োগ।"
+     },
+     "traps": [
+      {
+       "ans": "9",
+       "tag": "m-avg-newcomer",
+       "why": {
+        "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
+        "as": "নতুনজনে সকলোকে তোলে, সেয়ে তেওঁ নতুন গড়তকৈ বহুত বেছি আনিব লাগিব।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "29 students average 8 years. A teacher joins and the average becomes 9. How old is the teacher?",
+        "as": "29 জন ছাত্ৰৰ গড় বয়স 8 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 9 হ'ল। শিক্ষকৰ বয়স কিমান?"
+       },
+       "answer": "38",
+       "why": {
+        "en": "New total 270 less old total 232.",
+        "as": "নতুন মুঠ 270ৰ পৰা পুৰণি মুঠ 232 বিয়োগ।"
+       },
+       "traps": [
+        {
+         "ans": "9",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
+          "as": "নতুনজনে সকলোকে তোলে, সেয়ে তেওঁ নতুন গড়তকৈ বহুত বেছি আনিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "34 students average 13 years. A teacher joins and the average becomes 14. How old is the teacher?",
+        "as": "34 জন ছাত্ৰৰ গড় বয়স 13 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 14 হ'ল। শিক্ষকৰ বয়স কিমান?"
+       },
+       "answer": "48",
+       "why": {
+        "en": "New total 490 less old total 442.",
+        "as": "নতুন মুঠ 490ৰ পৰা পুৰণি মুঠ 442 বিয়োগ।"
+       },
+       "traps": [
+        {
+         "ans": "14",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
+          "as": "নতুনজনে সকলোকে তোলে, সেয়ে তেওঁ নতুন গড়তকৈ বহুত বেছি আনিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "24 students average 10 years. A teacher joins and the average becomes 11. How old is the teacher?",
+        "as": "24 জন ছাত্ৰৰ গড় বয়স 10 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 11 হ'ল। শিক্ষকৰ বয়স কিমান?"
+       },
+       "answer": "35",
+       "why": {
+        "en": "New total 275 less old total 240.",
+        "as": "নতুন মুঠ 275ৰ পৰা পুৰণি মুঠ 240 বিয়োগ।"
+       },
+       "traps": [
+        {
+         "ans": "11",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
+          "as": "নতুনজনে সকলোকে তোলে, সেয়ে তেওঁ নতুন গড়তকৈ বহুত বেছি আনিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "9 students average 14 years. A teacher joins and the average becomes 16. How old is the teacher?",
+        "as": "9 জন ছাত্ৰৰ গড় বয়স 14 বছৰ। এজন শিক্ষক যোগ হোৱাত গড় 16 হ'ল। শিক্ষকৰ বয়স কিমান?"
+       },
+       "answer": "34",
+       "why": {
+        "en": "New total 160 less old total 126.",
+        "as": "নতুন মুঠ 160ৰ পৰা পুৰণি মুঠ 126 বিয়োগ।"
+       },
+       "traps": [
+        {
+         "ans": "16",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The newcomer lifts everyone, so they must bring far more than the new average.",
+          "as": "নতুনজনে সকলোকে তোলে, সেয়ে তেওঁ নতুন গড়তকৈ বহুত বেছি আনিব লাগিব।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m7.u2.q2",
+     "type": "solve",
+     "skill": "a-change",
+     "q": {
+      "en": "The average of 5 numbers is 19. One number, 12, is replaced by 27. Find the new average.",
+      "as": "5টা সংখ্যাৰ গড় 19। এটা সংখ্যা 12ৰ ঠাইত 27 হ'ল। নতুন গড় উলিওৱা।"
+     },
+     "answer": "22",
+     "why": {
+      "en": "The total rose by 15, spread over 5 numbers.",
+      "as": "মুঠ 15 বাঢ়িল, 5টা সংখ্যাত বিয়পিল।"
+     },
+     "traps": [
+      {
+       "ans": "34",
+       "tag": "m-avg-newcomer",
+       "why": {
+        "en": "The change spreads across all the numbers, so divide it by the count.",
+        "as": "পৰিৱৰ্তন সকলো সংখ্যাত বিয়পে, সেয়ে সংখ্যাৰে হৰণ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The average of 5 numbers is 19. One number, 12, is replaced by 27. Find the new average.",
+        "as": "5টা সংখ্যাৰ গড় 19। এটা সংখ্যা 12ৰ ঠাইত 27 হ'ল। নতুন গড় উলিওৱা।"
+       },
+       "answer": "22",
+       "why": {
+        "en": "The total rose by 15, spread over 5 numbers.",
+        "as": "মুঠ 15 বাঢ়িল, 5টা সংখ্যাত বিয়পিল।"
+       },
+       "traps": [
+        {
+         "ans": "34",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The change spreads across all the numbers, so divide it by the count.",
+          "as": "পৰিৱৰ্তন সকলো সংখ্যাত বিয়পে, সেয়ে সংখ্যাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The average of 6 numbers is 16. One number, 10, is replaced by 28. Find the new average.",
+        "as": "6টা সংখ্যাৰ গড় 16। এটা সংখ্যা 10ৰ ঠাইত 28 হ'ল। নতুন গড় উলিওৱা।"
+       },
+       "answer": "19",
+       "why": {
+        "en": "The total rose by 18, spread over 6 numbers.",
+        "as": "মুঠ 18 বাঢ়িল, 6টা সংখ্যাত বিয়পিল।"
+       },
+       "traps": [
+        {
+         "ans": "34",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The change spreads across all the numbers, so divide it by the count.",
+          "as": "পৰিৱৰ্তন সকলো সংখ্যাত বিয়পে, সেয়ে সংখ্যাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The average of 10 numbers is 30. One number, 25, is replaced by 55. Find the new average.",
+        "as": "10টা সংখ্যাৰ গড় 30। এটা সংখ্যা 25ৰ ঠাইত 55 হ'ল। নতুন গড় উলিওৱা।"
+       },
+       "answer": "33",
+       "why": {
+        "en": "The total rose by 30, spread over 10 numbers.",
+        "as": "মুঠ 30 বাঢ়িল, 10টা সংখ্যাত বিয়পিল।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The change spreads across all the numbers, so divide it by the count.",
+          "as": "পৰিৱৰ্তন সকলো সংখ্যাত বিয়পে, সেয়ে সংখ্যাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The average of 8 numbers is 20. One number, 14, is replaced by 30. Find the new average.",
+        "as": "8টা সংখ্যাৰ গড় 20। এটা সংখ্যা 14ৰ ঠাইত 30 হ'ল। নতুন গড় উলিওৱা।"
+       },
+       "answer": "22",
+       "why": {
+        "en": "The total rose by 16, spread over 8 numbers.",
+        "as": "মুঠ 16 বাঢ়িল, 8টা সংখ্যাত বিয়পিল।"
+       },
+       "traps": [
+        {
+         "ans": "36",
+         "tag": "m-avg-newcomer",
+         "why": {
+          "en": "The change spreads across all the numbers, so divide it by the count.",
+          "as": "পৰিৱৰ্তন সকলো সংখ্যাত বিয়পে, সেয়ে সংখ্যাৰে হৰণ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m7.u2.q3",
+     "type": "tf",
+     "skill": "a-change",
+     "s": {
+      "en": "If every number rises by 3, the average rises by 3.",
+      "as": "প্ৰতিটো সংখ্যা 3 বাঢ়িলে গড় 3 বাঢ়ে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Every bar rises by 3, so the level rises by 3.",
+      "as": "প্ৰতিটো বাৰ 3 বাঢ়ে, সেয়ে উচ্চতাও 3 বাঢ়ে।"
+     }
+    },
+    {
+     "id": "m7.u2.q4",
+     "type": "stepwise",
+     "skill": "a-change",
+     "q": {
+      "en": "The average of 9 numbers is 30. The first 5 average 28 and the last 5 average 34. Find the number counted in both.",
+      "as": "9টা সংখ্যাৰ গড় 30। প্ৰথম 5টাৰ গড় 28, শেষৰ 5টাৰ গড় 34। দুয়োটাতে গণা সংখ্যাটো উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Total of all?",
+        "as": "সকলোৰে মুঠ?"
+       },
+       "options": [
+        {
+         "en": "270",
+         "as": "270"
+        },
+        {
+         "en": "39",
+         "as": "39"
+        },
+        {
+         "en": "300",
+         "as": "300"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Average × count.",
+        "as": "গড় × সংখ্যা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Sum of both groups?",
+        "as": "দুয়োটা গোটৰ যোগফল?"
+       },
+       "options": [
+        {
+         "en": "62",
+         "as": "62"
+        },
+        {
+         "en": "311",
+         "as": "311"
+        },
+        {
+         "en": "310",
+         "as": "310"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Each group's total, added.",
+        "as": "প্ৰতিটো গোটৰ মুঠ যোগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "The shared number is",
+        "as": "উমৈহতীয়া সংখ্যাটো"
+       },
+       "options": [
+        {
+         "en": "40",
+         "as": "40"
+        },
+        {
+         "en": "32",
+         "as": "32"
+        },
+        {
+         "en": "30",
+         "as": "30"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It was counted twice, so it is the excess.",
+        "as": "ই দুবাৰ গণা হৈছে, সেয়ে বাঢ়তি অংশটোৱেই সংখ্যাটো।"
+       }
+      }
+     ],
+     "why": {
+      "en": "A value counted twice shows up as the difference of totals.",
+      "as": "দুবাৰ গণা মান মুঠৰ পাৰ্থক্য হিচাপে ওলায়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average of 9 numbers is 30. The first 5 average 28 and the last 5 average 34. Find the number counted in both.",
+        "as": "9টা সংখ্যাৰ গড় 30। প্ৰথম 5টাৰ গড় 28, শেষৰ 5টাৰ গড় 34। দুয়োটাতে গণা সংখ্যাটো উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Total of all?",
+          "as": "সকলোৰে মুঠ?"
+         },
+         "options": [
+          {
+           "en": "270",
+           "as": "270"
+          },
+          {
+           "en": "39",
+           "as": "39"
+          },
+          {
+           "en": "300",
+           "as": "300"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Average × count.",
+          "as": "গড় × সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Sum of both groups?",
+          "as": "দুয়োটা গোটৰ যোগফল?"
+         },
+         "options": [
+          {
+           "en": "62",
+           "as": "62"
+          },
+          {
+           "en": "311",
+           "as": "311"
+          },
+          {
+           "en": "310",
+           "as": "310"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Each group's total, added.",
+          "as": "প্ৰতিটো গোটৰ মুঠ যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The shared number is",
+          "as": "উমৈহতীয়া সংখ্যাটো"
+         },
+         "options": [
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "32",
+           "as": "32"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It was counted twice, so it is the excess.",
+          "as": "ই দুবাৰ গণা হৈছে, সেয়ে বাঢ়তি অংশটোৱেই সংখ্যাটো।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A value counted twice shows up as the difference of totals.",
+        "as": "দুবাৰ গণা মান মুঠৰ পাৰ্থক্য হিচাপে ওলায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of 11 numbers is 20. The first 6 average 18 and the last 6 average 25. Find the number counted in both.",
+        "as": "11টা সংখ্যাৰ গড় 20। প্ৰথম 6টাৰ গড় 18, শেষৰ 6টাৰ গড় 25। দুয়োটাতে গণা সংখ্যাটো উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Total of all?",
+          "as": "সকলোৰে মুঠ?"
+         },
+         "options": [
+          {
+           "en": "31",
+           "as": "31"
+          },
+          {
+           "en": "240",
+           "as": "240"
+          },
+          {
+           "en": "220",
+           "as": "220"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Average × count.",
+          "as": "গড় × সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Sum of both groups?",
+          "as": "দুয়োটা গোটৰ যোগফল?"
+         },
+         "options": [
+          {
+           "en": "43",
+           "as": "43"
+          },
+          {
+           "en": "258",
+           "as": "258"
+          },
+          {
+           "en": "259",
+           "as": "259"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Each group's total, added.",
+          "as": "প্ৰতিটো গোটৰ মুঠ যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The shared number is",
+          "as": "উমৈহতীয়া সংখ্যাটো"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "38",
+           "as": "38"
+          },
+          {
+           "en": "23",
+           "as": "23"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It was counted twice, so it is the excess.",
+          "as": "ই দুবাৰ গণা হৈছে, সেয়ে বাঢ়তি অংশটোৱেই সংখ্যাটো।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A value counted twice shows up as the difference of totals.",
+        "as": "দুবাৰ গণা মান মুঠৰ পাৰ্থক্য হিচাপে ওলায়।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average of 7 numbers is 15. The first 4 average 13 and the last 4 average 20. Find the number counted in both.",
+        "as": "7টা সংখ্যাৰ গড় 15। প্ৰথম 4টাৰ গড় 13, শেষৰ 4টাৰ গড় 20। দুয়োটাতে গণা সংখ্যাটো উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Total of all?",
+          "as": "সকলোৰে মুঠ?"
+         },
+         "options": [
+          {
+           "en": "22",
+           "as": "22"
+          },
+          {
+           "en": "105",
+           "as": "105"
+          },
+          {
+           "en": "120",
+           "as": "120"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Average × count.",
+          "as": "গড় × সংখ্যা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Sum of both groups?",
+          "as": "দুয়োটা গোটৰ যোগফল?"
+         },
+         "options": [
+          {
+           "en": "133",
+           "as": "133"
+          },
+          {
+           "en": "33",
+           "as": "33"
+          },
+          {
+           "en": "132",
+           "as": "132"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Each group's total, added.",
+          "as": "প্ৰতিটো গোটৰ মুঠ যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "The shared number is",
+          "as": "উমৈহতীয়া সংখ্যাটো"
+         },
+         "options": [
+          {
+           "en": "18",
+           "as": "18"
+          },
+          {
+           "en": "15",
+           "as": "15"
+          },
+          {
+           "en": "27",
+           "as": "27"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "It was counted twice, so it is the excess.",
+          "as": "ই দুবাৰ গণা হৈছে, সেয়ে বাঢ়তি অংশটোৱেই সংখ্যাটো।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A value counted twice shows up as the difference of totals.",
+        "as": "দুবাৰ গণা মান মুঠৰ পাৰ্থক্য হিচাপে ওলায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u2.q5",
+     "type": "explore",
+     "skill": "a-change",
+     "q": {
+      "en": "4 values of 5 are joined by 20. Find the new level.",
+      "as": "5 মানৰ 4টাৰ লগত 20 যোগ হ'ল। নতুন উচ্চতা উলিওৱা।"
+     },
+     "widget": {
+      "kind": "level",
+      "vals": [
+       5,
+       5,
+       5,
+       5,
+       20
+      ],
+      "start": 5
+     },
+     "target": 8,
+     "answerText": {
+      "en": "Level 8",
+      "as": "উচ্চতা 8"
+     },
+     "why": {
+      "en": "The extra 15 is shared by 5 values.",
+      "as": "বাঢ়তি 15 5টা মানে ভাগ কৰে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "4 values of 5 are joined by 20. Find the new level.",
+        "as": "5 মানৰ 4টাৰ লগত 20 যোগ হ'ল। নতুন উচ্চতা উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         5,
+         5,
+         5,
+         5,
+         20
+        ],
+        "start": 5
+       },
+       "target": 8,
+       "answerText": {
+        "en": "Level 8",
+        "as": "উচ্চতা 8"
+       },
+       "why": {
+        "en": "The extra 15 is shared by 5 values.",
+        "as": "বাঢ়তি 15 5টা মানে ভাগ কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "3 values of 7 are joined by 19. Find the new level.",
+        "as": "7 মানৰ 3টাৰ লগত 19 যোগ হ'ল। নতুন উচ্চতা উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         7,
+         7,
+         7,
+         19
+        ],
+        "start": 7
+       },
+       "target": 10,
+       "answerText": {
+        "en": "Level 10",
+        "as": "উচ্চতা 10"
+       },
+       "why": {
+        "en": "The extra 12 is shared by 4 values.",
+        "as": "বাঢ়তি 12 4টা মানে ভাগ কৰে।"
+       }
+      },
+      {
+       "q": {
+        "en": "5 values of 4 are joined by 22. Find the new level.",
+        "as": "4 মানৰ 5টাৰ লগত 22 যোগ হ'ল। নতুন উচ্চতা উলিওৱা।"
+       },
+       "widget": {
+        "kind": "level",
+        "vals": [
+         4,
+         4,
+         4,
+         4,
+         4,
+         22
+        ],
+        "start": 4
+       },
+       "target": 7,
+       "answerText": {
+        "en": "Level 7",
+        "as": "উচ্চতা 7"
+       },
+       "why": {
+        "en": "The extra 18 is shared by 6 values.",
+        "as": "বাঢ়তি 18 6টা মানে ভাগ কৰে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u2.q6",
+     "type": "match",
+     "skill": "a-change",
+     "q": {
+      "en": "Average is 10. Match the change to the new average",
+      "as": "গড় 10। পৰিৱৰ্তনক নতুন গড়ৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Add 4 to each",
+        "as": "প্ৰতিটোত 4 যোগ"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       }
+      ],
+      [
+       {
+        "en": "Subtract 4 from each",
+        "as": "প্ৰতিটোৰ পৰা 4 বিয়োগ"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      [
+       {
+        "en": "Multiply each by 4",
+        "as": "প্ৰতিটো 4ৰে পূৰণ"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       }
+      ],
+      [
+       {
+        "en": "Divide each by 4",
+        "as": "প্ৰতিটো 4ৰে হৰণ"
+       },
+       {
+        "en": "2.5",
+        "as": "2.5"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Whatever you do to every value, you do to the average.",
+      "as": "প্ৰতিটো মানত যি কৰা, গড়তো তাকেই হয়।"
+     }
+    },
+    {
+     "id": "m7.u2.q7",
+     "type": "solve",
+     "skill": "a-change",
+     "hints": [
+      {
+       "en": "Turn each average into a total.",
+       "as": "প্ৰতিটো গড়ক মুঠ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "The average weight of A, B and C is 52 kg. A and B average 47 kg, and B and C average 50 kg. Find B.",
+      "as": "A, B, Cৰ গড় ওজন 52 কিলো। A আৰু Bৰ গড় 47 কিলো, B আৰু Cৰ গড় 50 কিলো। Bৰ ওজন উলিওৱা।"
+     },
+     "answer": "38",
+     "suffix": {
+      "en": "kg",
+      "as": "কিলো"
+     },
+     "why": {
+      "en": "94 + 100 counts B twice, so subtract 156.",
+      "as": "94 + 100ত B দুবাৰ, সেয়ে 156 বিয়োগ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "The average weight of A, B and C is 52 kg. A and B average 47 kg, and B and C average 50 kg. Find B.",
+        "as": "A, B, Cৰ গড় ওজন 52 কিলো। A আৰু Bৰ গড় 47 কিলো, B আৰু Cৰ গড় 50 কিলো। Bৰ ওজন উলিওৱা।"
+       },
+       "answer": "38",
+       "suffix": {
+        "en": "kg",
+        "as": "কিলো"
+       },
+       "why": {
+        "en": "94 + 100 counts B twice, so subtract 156.",
+        "as": "94 + 100ত B দুবাৰ, সেয়ে 156 বিয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average weight of A, B and C is 50 kg. A and B average 48 kg, and B and C average 45 kg. Find B.",
+        "as": "A, B, Cৰ গড় ওজন 50 কিলো। A আৰু Bৰ গড় 48 কিলো, B আৰু Cৰ গড় 45 কিলো। Bৰ ওজন উলিওৱা।"
+       },
+       "answer": "36",
+       "suffix": {
+        "en": "kg",
+        "as": "কিলো"
+       },
+       "why": {
+        "en": "96 + 90 counts B twice, so subtract 150.",
+        "as": "96 + 90ত B দুবাৰ, সেয়ে 150 বিয়োগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "The average weight of A, B and C is 60 kg. A and B average 55 kg, and B and C average 62 kg. Find B.",
+        "as": "A, B, Cৰ গড় ওজন 60 কিলো। A আৰু Bৰ গড় 55 কিলো, B আৰু Cৰ গড় 62 কিলো। Bৰ ওজন উলিওৱা।"
+       },
+       "answer": "54",
+       "suffix": {
+        "en": "kg",
+        "as": "কিলো"
+       },
+       "why": {
+        "en": "110 + 124 counts B twice, so subtract 180.",
+        "as": "110 + 124ত B দুবাৰ, সেয়ে 180 বিয়োগ কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Groups of different sizes",
+    "as": "বেলেগ আকাৰৰ গোট"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Combined average = total of all ÷ count of all.",
+     "as": "মিলিত গড় = সকলোৰে মুঠ ÷ সকলোৰে সংখ্যা।"
+    },
+    {
+     "en": "The answer always lies between the two group averages.",
+     "as": "উত্তৰ সদায় দুটা গড়ৰ মাজত থাকে।"
+    },
+    {
+     "en": "It sits nearer the bigger group.",
+     "as": "ই ডাঙৰ গোটৰ ওচৰত থাকে।"
+    },
+    {
+     "en": "Group sizes are in the opposite ratio of their distances from the average.",
+     "as": "গোটৰ আকাৰ গড়ৰ পৰা দূৰত্বৰ বিপৰীত অনুপাতত।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m7.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "The bigger group pulls harder",
+      "as": "ডাঙৰ গোটে বেছি টানে"
+     },
+     "text": [
+      {
+       "en": "10 students scored 40 and 20 students scored 70. Find the balance point.",
+       "as": "10 জনে 40 আৰু 20 জনে 70 পালে। ভাৰসাম্য বিন্দু বিচাৰা।"
+      }
+     ],
+     "widget": {
+      "kind": "seesaw",
+      "a": 40,
+      "b": 70,
+      "n1": 10,
+      "n2": 20,
+      "start": 55,
+      "step": 5
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide the pivot until the beam is level.",
+        "as": "দণ্ড সমান নোহোৱালৈ আধাৰ টানা।"
+       },
+       "goal": {
+        "balanced": 1
+       },
+       "then": {
+        "en": "60, not 55. It is 20 from one group and 10 from the other: distance × size is equal on both sides.",
+        "as": "60, 55 নহয়। এটা গোটৰ পৰা 20, আনটোৰ পৰা 10: দুয়োফালে দূৰত্ব × আকাৰ সমান।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "The shortcut hiding here",
+      "as": "ইয়াত লুকাই থকা চুটি পথ"
+     },
+     "text": [
+      {
+       "en": "The see-saw gives a fast method: distances are in the opposite ratio of group sizes.",
+       "as": "ছী-ছ'ই এটা চুটি পথ দিয়ে: দূৰত্ব গোটৰ আকাৰৰ বিপৰীত অনুপাতত।"
+      },
+      {
+       "en": "If sizes are 1 : 2, the distances are 2 : 1.",
+       "as": "আকাৰ 1 : 2 হ'লে দূৰত্ব 2 : 1।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Sizes 10 : 20 = 1 : 2",
+        "as": "আকাৰ 10 : 20 = 1 : 2"
+       },
+       {
+        "en": "Distances 2 : 1",
+        "as": "দূৰত্ব 2 : 1"
+       },
+       {
+        "en": "Gap 30 splits 20 and 10",
+        "as": "30 ব্যৱধান 20 আৰু 10ত ভাগ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m7.u3.q1",
+     "type": "explore",
+     "skill": "a-weight",
+     "q": {
+      "en": "20 items average 50 and 10 items average 80. Balance the see-saw.",
+      "as": "20টাৰ গড় 50, 10টাৰ গড় 80। ছী-ছ' সমান কৰা।"
+     },
+     "widget": {
+      "kind": "seesaw",
+      "a": 50,
+      "b": 80,
+      "n1": 20,
+      "n2": 10,
+      "start": 50,
+      "step": 1
+     },
+     "target": 60,
+     "answerText": {
+      "en": "Balance at 60",
+      "as": "60ত সমান"
+     },
+     "why": {
+      "en": "20 × 10 = 10 × 20.",
+      "as": "20 × 10 = 10 × 20।"
+     },
+     "traps": [
+      {
+       "val": 65.0,
+       "tag": "m-avg-add",
+       "why": {
+        "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+        "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "20 items average 50 and 10 items average 80. Balance the see-saw.",
+        "as": "20টাৰ গড় 50, 10টাৰ গড় 80। ছী-ছ' সমান কৰা।"
+       },
+       "widget": {
+        "kind": "seesaw",
+        "a": 50,
+        "b": 80,
+        "n1": 20,
+        "n2": 10,
+        "start": 50,
+        "step": 1
+       },
+       "target": 60,
+       "answerText": {
+        "en": "Balance at 60",
+        "as": "60ত সমান"
+       },
+       "why": {
+        "en": "20 × 10 = 10 × 20.",
+        "as": "20 × 10 = 10 × 20।"
+       },
+       "traps": [
+        {
+         "val": 65.0,
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "10 items average 30 and 20 items average 60. Balance the see-saw.",
+        "as": "10টাৰ গড় 30, 20টাৰ গড় 60। ছী-ছ' সমান কৰা।"
+       },
+       "widget": {
+        "kind": "seesaw",
+        "a": 30,
+        "b": 60,
+        "n1": 10,
+        "n2": 20,
+        "start": 30,
+        "step": 1
+       },
+       "target": 50,
+       "answerText": {
+        "en": "Balance at 50",
+        "as": "50ত সমান"
+       },
+       "why": {
+        "en": "10 × 20 = 20 × 10.",
+        "as": "10 × 20 = 20 × 10।"
+       },
+       "traps": [
+        {
+         "val": 45.0,
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "15 items average 40 and 5 items average 60. Balance the see-saw.",
+        "as": "15টাৰ গড় 40, 5টাৰ গড় 60। ছী-ছ' সমান কৰা।"
+       },
+       "widget": {
+        "kind": "seesaw",
+        "a": 40,
+        "b": 60,
+        "n1": 15,
+        "n2": 5,
+        "start": 40,
+        "step": 1
+       },
+       "target": 45,
+       "answerText": {
+        "en": "Balance at 45",
+        "as": "45ত সমান"
+       },
+       "why": {
+        "en": "15 × 5 = 5 × 15.",
+        "as": "15 × 5 = 5 × 15।"
+       },
+       "traps": [
+        {
+         "val": 50.0,
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m7.u3.q2",
+     "type": "tf",
+     "skill": "a-weight",
+     "s": {
+      "en": "Class A of 10 averages 60 and class B of 30 averages 80. The combined average is 70.",
+      "as": "10 জনৰ শ্ৰেণী Aৰ গড় 60, 30 জনৰ শ্ৰেণী Bৰ গড় 80। মিলিত গড় 70।"
+     },
+     "answer": false,
+     "why": {
+      "en": "B is three times larger, so the balance is near 80: it is 75.",
+      "as": "B তিনিগুণ ডাঙৰ, সেয়ে ভাৰসাম্য 80ৰ ওচৰত: 75।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-avg-add",
+       "why": {
+        "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+        "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u3.q3",
+     "type": "solve",
+     "skill": "a-weight",
+     "hints": [
+      {
+       "en": "Find both totals first.",
+       "as": "প্ৰথমে দুয়োটা মুঠ উলিওৱা।"
+      }
+     ],
+     "q": {
+      "en": "30 workers earn ₹400 on average and 10 workers earn ₹800. Find the overall average.",
+      "as": "30 জন কৰ্মীৰ গড় আয় ₹400, 10 জনৰ ₹800। মুঠ গড় উলিওৱা।"
+     },
+     "answer": "500",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "(30 × 400 + 10 × 800) ÷ 40.",
+      "as": "(30 × 400 + 10 × 800) ÷ 40।"
+     },
+     "traps": [
+      {
+       "ans": "600",
+       "tag": "m-avg-add",
+       "why": {
+        "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+        "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "30 workers earn ₹400 on average and 10 workers earn ₹800. Find the overall average.",
+        "as": "30 জন কৰ্মীৰ গড় আয় ₹400, 10 জনৰ ₹800। মুঠ গড় উলিওৱা।"
+       },
+       "answer": "500",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "(30 × 400 + 10 × 800) ÷ 40.",
+        "as": "(30 × 400 + 10 × 800) ÷ 40।"
+       },
+       "traps": [
+        {
+         "ans": "600",
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "20 workers earn ₹600 on average and 30 workers earn ₹900. Find the overall average.",
+        "as": "20 জন কৰ্মীৰ গড় আয় ₹600, 30 জনৰ ₹900। মুঠ গড় উলিওৱা।"
+       },
+       "answer": "780",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "(20 × 600 + 30 × 900) ÷ 50.",
+        "as": "(20 × 600 + 30 × 900) ÷ 50।"
+       },
+       "traps": [
+        {
+         "ans": "750",
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "15 workers earn ₹300 on average and 5 workers earn ₹700. Find the overall average.",
+        "as": "15 জন কৰ্মীৰ গড় আয় ₹300, 5 জনৰ ₹700। মুঠ গড় উলিওৱা।"
+       },
+       "answer": "400",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "(15 × 300 + 5 × 700) ÷ 20.",
+        "as": "(15 × 300 + 5 × 700) ÷ 20।"
+       },
+       "traps": [
+        {
+         "ans": "500",
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "40 workers earn ₹500 on average and 10 workers earn ₹1000. Find the overall average.",
+        "as": "40 জন কৰ্মীৰ গড় আয় ₹500, 10 জনৰ ₹1000। মুঠ গড় উলিওৱা।"
+       },
+       "answer": "600",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "(40 × 500 + 10 × 1000) ÷ 50.",
+        "as": "(40 × 500 + 10 × 1000) ÷ 50।"
+       },
+       "traps": [
+        {
+         "ans": "750",
+         "tag": "m-avg-add",
+         "why": {
+          "en": "Simple averaging ignores group size. The bigger group pulls the answer towards itself.",
+          "as": "সাধাৰণ গড়ে গোটৰ আকাৰ নাচায়। ডাঙৰ গোটে উত্তৰ নিজৰ ফালে টানে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m7.u3.q4",
+     "type": "stepwise",
+     "skill": "a-weight",
+     "q": {
+      "en": "Boys average 50 and girls average 80. The class average is 60. What is the ratio of boys to girls?",
+      "as": "ল'ৰাৰ গড় 50, ছোৱালীৰ গড় 80। শ্ৰেণীৰ গড় 60। ল'ৰা আৰু ছোৱালীৰ অনুপাত কিমান?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Distance from boys' average?",
+        "as": "ল'ৰাৰ গড়ৰ পৰা দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "21",
+         "as": "21"
+        },
+        {
+         "en": "10",
+         "as": "10"
+        },
+        {
+         "en": "50",
+         "as": "50"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "60 − 50.",
+        "as": "60 − 50।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Distance from girls' average?",
+        "as": "ছোৱালীৰ গড়ৰ পৰা দূৰত্ব?"
+       },
+       "options": [
+        {
+         "en": "20",
+         "as": "20"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "80",
+         "as": "80"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "80 − 60.",
+        "as": "80 − 60।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Boys : girls is",
+        "as": "ল'ৰা : ছোৱালী"
+       },
+       "options": [
+        {
+         "en": "1 : 1",
+         "as": "1 : 1"
+        },
+        {
+         "en": "2 : 1",
+         "as": "2 : 1"
+        },
+        {
+         "en": "1 : 2",
+         "as": "1 : 2"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Sizes are the opposite ratio of distances.",
+        "as": "আকাৰ দূৰত্বৰ বিপৰীত অনুপাত।"
+       },
+       "tag": "m-avg-add"
+      }
+     ],
+     "why": {
+      "en": "The closer average belongs to the bigger group.",
+      "as": "ওচৰৰ গড়টো ডাঙৰ গোটৰ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Boys average 50 and girls average 80. The class average is 60. What is the ratio of boys to girls?",
+        "as": "ল'ৰাৰ গড় 50, ছোৱালীৰ গড় 80। শ্ৰেণীৰ গড় 60। ল'ৰা আৰু ছোৱালীৰ অনুপাত কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Distance from boys' average?",
+          "as": "ল'ৰাৰ গড়ৰ পৰা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "50",
+           "as": "50"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "60 − 50.",
+          "as": "60 − 50।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Distance from girls' average?",
+          "as": "ছোৱালীৰ গড়ৰ পৰা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "80",
+           "as": "80"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "80 − 60.",
+          "as": "80 − 60।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Boys : girls is",
+          "as": "ল'ৰা : ছোৱালী"
+         },
+         "options": [
+          {
+           "en": "1 : 1",
+           "as": "1 : 1"
+          },
+          {
+           "en": "2 : 1",
+           "as": "2 : 1"
+          },
+          {
+           "en": "1 : 2",
+           "as": "1 : 2"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Sizes are the opposite ratio of distances.",
+          "as": "আকাৰ দূৰত্বৰ বিপৰীত অনুপাত।"
+         },
+         "tag": "m-avg-add"
+        }
+       ],
+       "why": {
+        "en": "The closer average belongs to the bigger group.",
+        "as": "ওচৰৰ গড়টো ডাঙৰ গোটৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Boys average 40 and girls average 70. The class average is 60. What is the ratio of boys to girls?",
+        "as": "ল'ৰাৰ গড় 40, ছোৱালীৰ গড় 70। শ্ৰেণীৰ গড় 60। ল'ৰা আৰু ছোৱালীৰ অনুপাত কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Distance from boys' average?",
+          "as": "ল'ৰাৰ গড়ৰ পৰা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "11",
+           "as": "11"
+          },
+          {
+           "en": "40",
+           "as": "40"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "60 − 40.",
+          "as": "60 − 40।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Distance from girls' average?",
+          "as": "ছোৱালীৰ গড়ৰ পৰা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "22",
+           "as": "22"
+          },
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "70",
+           "as": "70"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "70 − 60.",
+          "as": "70 − 60।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Boys : girls is",
+          "as": "ল'ৰা : ছোৱালী"
+         },
+         "options": [
+          {
+           "en": "1 : 1",
+           "as": "1 : 1"
+          },
+          {
+           "en": "1 : 2",
+           "as": "1 : 2"
+          },
+          {
+           "en": "2 : 1",
+           "as": "2 : 1"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Sizes are the opposite ratio of distances.",
+          "as": "আকাৰ দূৰত্বৰ বিপৰীত অনুপাত।"
+         },
+         "tag": "m-avg-add"
+        }
+       ],
+       "why": {
+        "en": "The closer average belongs to the bigger group.",
+        "as": "ওচৰৰ গড়টো ডাঙৰ গোটৰ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Boys average 30 and girls average 60. The class average is 40. What is the ratio of boys to girls?",
+        "as": "ল'ৰাৰ গড় 30, ছোৱালীৰ গড় 60। শ্ৰেণীৰ গড় 40। ল'ৰা আৰু ছোৱালীৰ অনুপাত কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Distance from boys' average?",
+          "as": "ল'ৰাৰ গড়ৰ পৰা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "10",
+           "as": "10"
+          },
+          {
+           "en": "21",
+           "as": "21"
+          },
+          {
+           "en": "30",
+           "as": "30"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "40 − 30.",
+          "as": "40 − 30।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Distance from girls' average?",
+          "as": "ছোৱালীৰ গড়ৰ পৰা দূৰত্ব?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "20",
+           "as": "20"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "60 − 40.",
+          "as": "60 − 40।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Boys : girls is",
+          "as": "ল'ৰা : ছোৱালী"
+         },
+         "options": [
+          {
+           "en": "2 : 1",
+           "as": "2 : 1"
+          },
+          {
+           "en": "1 : 2",
+           "as": "1 : 2"
+          },
+          {
+           "en": "1 : 1",
+           "as": "1 : 1"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Sizes are the opposite ratio of distances.",
+          "as": "আকাৰ দূৰত্বৰ বিপৰীত অনুপাত।"
+         },
+         "tag": "m-avg-add"
+        }
+       ],
+       "why": {
+        "en": "The closer average belongs to the bigger group.",
+        "as": "ওচৰৰ গড়টো ডাঙৰ গোটৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m7.u3.q5",
+     "type": "order",
+     "skill": "a-weight",
+     "q": {
+      "en": "Put the shortcut in order for 2 : 1 groups averaging 30 and 60",
+      "as": "30 আৰু 60 গড়ৰ 2 : 1 গোটৰ বাবে চুটি পথ ক্ৰমত সজোৱা"
+     },
+     "items": [
+      {
+       "en": "Gap between averages: 30",
+       "as": "গড়ৰ ব্যৱধান: 30"
+      },
+      {
+       "en": "Distances in ratio 1 : 2",
+       "as": "দূৰত্ব 1 : 2 অনুপাতত"
+      },
+      {
+       "en": "Balance is 10 from 30",
+       "as": "ভাৰসাম্য 30ৰ পৰা 10"
+      },
+      {
+       "en": "Average is 40",
+       "as": "গড় 40"
+      }
+     ],
+     "why": {
+      "en": "The bigger group gets the smaller distance.",
+      "as": "ডাঙৰ গোটে সৰু দূৰত্ব পায়।"
+     }
+    },
+    {
+     "id": "m7.u3.q6",
+     "type": "match",
+     "skill": "a-weight",
+     "q": {
+      "en": "Groups average 20 and 40. Match the size ratio to the combined average",
+      "as": "গোটৰ গড় 20 আৰু 40। আকাৰৰ অনুপাতক মিলিত গড়ৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 : 1",
+        "as": "1 : 1"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ],
+      [
+       {
+        "en": "3 : 1",
+        "as": "3 : 1"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       }
+      ],
+      [
+       {
+        "en": "1 : 3",
+        "as": "1 : 3"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       }
+      ],
+      [
+       {
+        "en": "9 : 1",
+        "as": "9 : 1"
+       },
+       {
+        "en": "22",
+        "as": "22"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The more members a group has, the closer the answer sits to it.",
+      "as": "গোটত যিমান বেছি সদস্য, উত্তৰ সিমান ওচৰত।"
+     }
+    },
+    {
+     "id": "m7.u3.q7",
+     "type": "solve",
+     "skill": "a-mean",
+     "q": {
+      "en": "If 4a + 4b + 4c = 48, find the average of a, b and c.",
+      "as": "4a + 4b + 4c = 48 হ'লে a, b, cৰ গড় উলিওৱা।"
+     },
+     "answer": "4",
+     "why": {
+      "en": "a + b + c = 12, shared among 3.",
+      "as": "a + b + c = 12, 3ৰে হৰণ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If 4a + 4b + 4c = 48, find the average of a, b and c.",
+        "as": "4a + 4b + 4c = 48 হ'লে a, b, cৰ গড় উলিওৱা।"
+       },
+       "answer": "4",
+       "why": {
+        "en": "a + b + c = 12, shared among 3.",
+        "as": "a + b + c = 12, 3ৰে হৰণ।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 2a + 2b + 2c = 36, find the average of a, b and c.",
+        "as": "2a + 2b + 2c = 36 হ'লে a, b, cৰ গড় উলিওৱা।"
+       },
+       "answer": "6",
+       "why": {
+        "en": "a + b + c = 18, shared among 3.",
+        "as": "a + b + c = 18, 3ৰে হৰণ।"
+       }
+      },
+      {
+       "q": {
+        "en": "If 5a + 5b + 5c = 75, find the average of a, b and c.",
+        "as": "5a + 5b + 5c = 75 হ'লে a, b, cৰ গড় উলিওৱা।"
+       },
+       "answer": "5",
+       "why": {
+        "en": "a + b + c = 15, shared among 3.",
+        "as": "a + b + c = 15, 3ৰে হৰণ।"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Average test",
+   "as": "গড়ৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m7.t.q1",
+    "type": "mcq",
+    "skill": "a-mean",
+    "q": {
+     "en": "The average of 7 consecutive numbers is 34. The smallest is",
+     "as": "7টা ক্ৰমিক সংখ্যাৰ গড় 34। সৰুটো"
+    },
+    "why": {
+     "en": "The average is the middle number.",
+     "as": "গড় মাজৰ সংখ্যাটো।"
+    },
+    "options": [
+     {
+      "en": "27",
+      "as": "27"
+     },
+     {
+      "en": "30",
+      "as": "30"
+     },
+     {
+      "en": "31",
+      "as": "31"
+     },
+     {
+      "en": "32",
+      "as": "32"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-avg-count",
+      "why": {
+       "en": "Only half the numbers lie below the middle.",
+       "as": "মাজৰ তলত আধা সংখ্যাহে থাকে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The average of 7 consecutive numbers is 34. The smallest is",
+       "as": "7টা ক্ৰমিক সংখ্যাৰ গড় 34। সৰুটো"
+      },
+      "why": {
+       "en": "The average is the middle number.",
+       "as": "গড় মাজৰ সংখ্যাটো।"
+      },
+      "options": [
+       {
+        "en": "27",
+        "as": "27"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "31",
+        "as": "31"
+       },
+       {
+        "en": "32",
+        "as": "32"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Only half the numbers lie below the middle.",
+         "as": "মাজৰ তলত আধা সংখ্যাহে থাকে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of 5 consecutive numbers is 62. The smallest is",
+       "as": "5টা ক্ৰমিক সংখ্যাৰ গড় 62। সৰুটো"
+      },
+      "why": {
+       "en": "The average is the middle number.",
+       "as": "গড় মাজৰ সংখ্যাটো।"
+      },
+      "options": [
+       {
+        "en": "61",
+        "as": "61"
+       },
+       {
+        "en": "57",
+        "as": "57"
+       },
+       {
+        "en": "59",
+        "as": "59"
+       },
+       {
+        "en": "60",
+        "as": "60"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Only half the numbers lie below the middle.",
+         "as": "মাজৰ তলত আধা সংখ্যাহে থাকে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of 9 consecutive numbers is 40. The smallest is",
+       "as": "9টা ক্ৰমিক সংখ্যাৰ গড় 40। সৰুটো"
+      },
+      "why": {
+       "en": "The average is the middle number.",
+       "as": "গড় মাজৰ সংখ্যাটো।"
+      },
+      "options": [
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "31",
+        "as": "31"
+       },
+       {
+        "en": "37",
+        "as": "37"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Only half the numbers lie below the middle.",
+         "as": "মাজৰ তলত আধা সংখ্যাহে থাকে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m7.t.q2",
+    "type": "mcq",
+    "skill": "a-mean",
+    "q": {
+     "en": "The average of the first 3 multiples of 8 is",
+     "as": "8ৰ প্ৰথম 3টা গুণিতকৰ গড়"
+    },
+    "why": {
+     "en": "It is the multiplier times the average of 1 to n.",
+     "as": "ই গুণক × 1ৰ পৰা nৰ গড়।"
+    },
+    "options": [
+     {
+      "en": "16",
+      "as": "16"
+     },
+     {
+      "en": "8",
+      "as": "8"
+     },
+     {
+      "en": "12",
+      "as": "12"
+     },
+     {
+      "en": "24",
+      "as": "24"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-avg-count",
+      "why": {
+       "en": "Average the first and the last term.",
+       "as": "প্ৰথম আৰু শেষৰ পদৰ গড় লোৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The average of the first 3 multiples of 8 is",
+       "as": "8ৰ প্ৰথম 3টা গুণিতকৰ গড়"
+      },
+      "why": {
+       "en": "It is the multiplier times the average of 1 to n.",
+       "as": "ই গুণক × 1ৰ পৰা nৰ গড়।"
+      },
+      "options": [
+       {
+        "en": "16",
+        "as": "16"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Average the first and the last term.",
+         "as": "প্ৰথম আৰু শেষৰ পদৰ গড় লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of the first 9 multiples of 13 is",
+       "as": "13ৰ প্ৰথম 9টা গুণিতকৰ গড়"
+      },
+      "why": {
+       "en": "It is the multiplier times the average of 1 to n.",
+       "as": "ই গুণক × 1ৰ পৰা nৰ গড়।"
+      },
+      "options": [
+       {
+        "en": "78",
+        "as": "78"
+       },
+       {
+        "en": "$\\frac{117}{2}$",
+        "as": "$\\frac{117}{2}$"
+       },
+       {
+        "en": "65",
+        "as": "65"
+       },
+       {
+        "en": "117",
+        "as": "117"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Average the first and the last term.",
+         "as": "প্ৰথম আৰু শেষৰ পদৰ গড় লোৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of the first 7 multiples of 6 is",
+       "as": "6ৰ প্ৰথম 7টা গুণিতকৰ গড়"
+      },
+      "why": {
+       "en": "It is the multiplier times the average of 1 to n.",
+       "as": "ই গুণক × 1ৰ পৰা nৰ গড়।"
+      },
+      "options": [
+       {
+        "en": "21",
+        "as": "21"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "42",
+        "as": "42"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-avg-count",
+        "why": {
+         "en": "Average the first and the last term.",
+         "as": "প্ৰথম আৰু শেষৰ পদৰ গড় লোৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m7.t.q3",
+    "type": "mcq",
+    "skill": "a-change",
+    "q": {
+     "en": "The average of 10 numbers is 5. If each is multiplied by 3, the new average is",
+     "as": "10টা সংখ্যাৰ গড় 5। প্ৰতিটো 3ৰে পূৰণ কৰিলে নতুন গড়"
+    },
+    "why": {
+     "en": "Whatever happens to every value happens to the average.",
+     "as": "প্ৰতিটো মানত যি হয়, গড়তো তাকেই হয়।"
+    },
+    "options": [
+     {
+      "en": "150",
+      "as": "150"
+     },
+     {
+      "en": "15",
+      "as": "15"
+     },
+     {
+      "en": "25",
+      "as": "25"
+     },
+     {
+      "en": "8",
+      "as": "8"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-avg-newcomer",
+      "why": {
+       "en": "Multiplying every value multiplies the average.",
+       "as": "প্ৰতিটো মান পূৰণ কৰিলে গড়ো পূৰণ হয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The average of 10 numbers is 5. If each is multiplied by 3, the new average is",
+       "as": "10টা সংখ্যাৰ গড় 5। প্ৰতিটো 3ৰে পূৰণ কৰিলে নতুন গড়"
+      },
+      "why": {
+       "en": "Whatever happens to every value happens to the average.",
+       "as": "প্ৰতিটো মানত যি হয়, গড়তো তাকেই হয়।"
+      },
+      "options": [
+       {
+        "en": "150",
+        "as": "150"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "8",
+        "as": "8"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-avg-newcomer",
+        "why": {
+         "en": "Multiplying every value multiplies the average.",
+         "as": "প্ৰতিটো মান পূৰণ কৰিলে গড়ো পূৰণ হয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of 6 numbers is 15. If each is multiplied by 4, the new average is",
+       "as": "6টা সংখ্যাৰ গড় 15। প্ৰতিটো 4ৰে পূৰণ কৰিলে নতুন গড়"
+      },
+      "why": {
+       "en": "Whatever happens to every value happens to the average.",
+       "as": "প্ৰতিটো মানত যি হয়, গড়তো তাকেই হয়।"
+      },
+      "options": [
+       {
+        "en": "66",
+        "as": "66"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       },
+       {
+        "en": "360",
+        "as": "360"
+       },
+       {
+        "en": "60",
+        "as": "60"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-avg-newcomer",
+        "why": {
+         "en": "Multiplying every value multiplies the average.",
+         "as": "প্ৰতিটো মান পূৰণ কৰিলে গড়ো পূৰণ হয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of 6 numbers is 30. If each is multiplied by 2, the new average is",
+       "as": "6টা সংখ্যাৰ গড় 30। প্ৰতিটো 2ৰে পূৰণ কৰিলে নতুন গড়"
+      },
+      "why": {
+       "en": "Whatever happens to every value happens to the average.",
+       "as": "প্ৰতিটো মানত যি হয়, গড়তো তাকেই হয়।"
+      },
+      "options": [
+       {
+        "en": "66",
+        "as": "66"
+       },
+       {
+        "en": "32",
+        "as": "32"
+       },
+       {
+        "en": "360",
+        "as": "360"
+       },
+       {
+        "en": "60",
+        "as": "60"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-avg-newcomer",
+        "why": {
+         "en": "Multiplying every value multiplies the average.",
+         "as": "প্ৰতিটো মান পূৰণ কৰিলে গড়ো পূৰণ হয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m7.t.q4",
+    "type": "mcq",
+    "skill": "a-change",
+    "q": {
+     "en": "The average of 5 numbers is 19. When one is removed, the average of the rest is 16. The number removed is",
+     "as": "5টা সংখ্যাৰ গড় 19। এটা আঁতৰালে বাকীবোৰৰ গড় 16। আঁতৰোৱা সংখ্যাটো"
+    },
+    "why": {
+     "en": "Work through totals: total = average × count.",
+     "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+    },
+    "options": [
+     {
+      "en": "3",
+      "as": "3"
+     },
+     {
+      "en": "33",
+      "as": "33"
+     },
+     {
+      "en": "15",
+      "as": "15"
+     },
+     {
+      "en": "31",
+      "as": "31"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-avg-newcomer",
+      "why": {
+       "en": "Go through the totals, not the averages.",
+       "as": "গড় নহয়, মুঠৰ মাজেদি কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The average of 5 numbers is 19. When one is removed, the average of the rest is 16. The number removed is",
+       "as": "5টা সংখ্যাৰ গড় 19। এটা আঁতৰালে বাকীবোৰৰ গড় 16। আঁতৰোৱা সংখ্যাটো"
+      },
+      "why": {
+       "en": "Work through totals: total = average × count.",
+       "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "3",
+        "as": "3"
+       },
+       {
+        "en": "33",
+        "as": "33"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "31",
+        "as": "31"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-avg-newcomer",
+        "why": {
+         "en": "Go through the totals, not the averages.",
+         "as": "গড় নহয়, মুঠৰ মাজেদি কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of 6 numbers is 14. When one is removed, the average of the rest is 13. The number removed is",
+       "as": "6টা সংখ্যাৰ গড় 14। এটা আঁতৰালে বাকীবোৰৰ গড় 13। আঁতৰোৱা সংখ্যাটো"
+      },
+      "why": {
+       "en": "Work through totals: total = average × count.",
+       "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "21",
+        "as": "21"
+       },
+       {
+        "en": "19",
+        "as": "19"
+       },
+       {
+        "en": "1",
+        "as": "1"
+       },
+       {
+        "en": "6",
+        "as": "6"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-avg-newcomer",
+        "why": {
+         "en": "Go through the totals, not the averages.",
+         "as": "গড় নহয়, মুঠৰ মাজেদি কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The average of 7 numbers is 20. When one is removed, the average of the rest is 18. The number removed is",
+       "as": "7টা সংখ্যাৰ গড় 20। এটা আঁতৰালে বাকীবোৰৰ গড় 18। আঁতৰোৱা সংখ্যাটো"
+      },
+      "why": {
+       "en": "Work through totals: total = average × count.",
+       "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+      },
+      "options": [
+       {
+        "en": "34",
+        "as": "34"
+       },
+       {
+        "en": "32",
+        "as": "32"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       },
+       {
+        "en": "2",
+        "as": "2"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-avg-newcomer",
+        "why": {
+         "en": "Go through the totals, not the averages.",
+         "as": "গড় নহয়, মুঠৰ মাজেদি কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m7.t.q5",
+    "type": "solve",
+    "skill": "a-weight",
+    "q": {
+     "en": "30 students average 60 and 10 students average 80. Find the class average.",
+     "as": "30 জন ছাত্ৰৰ গড় 60, 10 জনৰ গড় 80। শ্ৰেণীৰ গড় উলিওৱা।"
+    },
+    "answer": "65",
+    "why": {
+     "en": "Work through totals: total = average × count.",
+     "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "30 students average 60 and 10 students average 80. Find the class average.",
+       "as": "30 জন ছাত্ৰৰ গড় 60, 10 জনৰ গড় 80। শ্ৰেণীৰ গড় উলিওৱা।"
+      },
+      "answer": "65",
+      "why": {
+       "en": "Work through totals: total = average × count.",
+       "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+      }
+     },
+     {
+      "q": {
+       "en": "25 students average 40 and 25 students average 60. Find the class average.",
+       "as": "25 জন ছাত্ৰৰ গড় 40, 25 জনৰ গড় 60। শ্ৰেণীৰ গড় উলিওৱা।"
+      },
+      "answer": "50",
+      "why": {
+       "en": "Work through totals: total = average × count.",
+       "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+      }
+     },
+     {
+      "q": {
+       "en": "20 students average 70 and 30 students average 50. Find the class average.",
+       "as": "20 জন ছাত্ৰৰ গড় 70, 30 জনৰ গড় 50। শ্ৰেণীৰ গড় উলিওৱা।"
+      },
+      "answer": "58",
+      "why": {
+       "en": "Work through totals: total = average × count.",
+       "as": "মুঠৰ মাজেদি কৰা: মুঠ = গড় × সংখ্যা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

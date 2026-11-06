@@ -1,0 +1,3786 @@
+{
+ "id": "math-05-percentage",
+ "course": "mathematics",
+ "no": 5,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Percentage",
+  "as": "শতাংশ"
+ },
+ "reign": {
+  "en": "Out of 100, change, successive change",
+  "as": "এশৰ ভিতৰত, পৰিৱৰ্তন, ক্ৰমিক পৰিৱৰ্তন"
+ },
+ "portrait": "math/percentage.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Out of a hundred",
+    "as": "এশৰ ভিতৰত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Percent means out of 100: 37% is $\\frac{37}{100}$ or 0.37.",
+     "as": "শতাংশ মানে এশৰ ভিতৰত: 37% মানে $\\frac{37}{100}$ বা 0.37।"
+    },
+    {
+     "en": "Build any percentage from 10% and 1%.",
+     "as": "10% আৰু 1%ৰ পৰা যিকোনো শতাংশ গঢ়িব পাৰি।"
+    },
+    {
+     "en": "x% of y equals y% of x, so choose the easier one.",
+     "as": "yৰ x% আৰু xৰ y% সমান, সেয়ে সহজটো লোৱা।"
+    },
+    {
+     "en": "Know the pairs: 25% is $\\frac{1}{4}$, 12.5% is $\\frac{1}{8}$, 20% is $\\frac{1}{5}$.",
+     "as": "যোৰবোৰ জানা: 25% = $\\frac{1}{4}$, 12.5% = $\\frac{1}{8}$, 20% = $\\frac{1}{5}$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m5.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "A hundred squares",
+      "as": "এশটা বৰ্গ"
+     },
+     "text": [
+      {
+       "en": "Drag across the grid. Every square is 1%, so the whole grid is 100%.",
+       "as": "জালখনত টানা। প্ৰতিটো বৰ্গ 1%, গোটা জাল 100%।"
+      },
+      {
+       "en": "One picture gives three names: 25%, $\\frac{1}{4}$ and 0.25.",
+       "as": "এখন ছবিৰ তিনিটা নাম: 25%, $\\frac{1}{4}$ আৰু 0.25।"
+      }
+     ],
+     "widget": {
+      "kind": "grid100",
+      "shade": 25
+     }
+    },
+    {
+     "id": "m5.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Two rulers, one length",
+      "as": "দুডাল জোখ, এটা দৈৰ্ঘ্য"
+     },
+     "text": [
+      {
+       "en": "The top ruler counts percent. The bottom ruler counts the same length as an amount of 240.",
+       "as": "ওপৰৰ জোখে শতাংশ গণে। তলৰ জোখে একে দৈৰ্ঘ্যক 240ৰ পৰিমাণ হিচাপে গণে।"
+      }
+     ],
+     "widget": {
+      "kind": "dual",
+      "base": 240
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drag to 10%.",
+        "as": "10%লৈ টানা।"
+       },
+       "goal": {
+        "pct": 10
+       },
+       "then": {
+        "en": "10% of 240 is 24: the decimal point moved one place.",
+        "as": "240ৰ 10% হ'ল 24: দশমিক এঘৰ সৰিল।"
+       }
+      },
+      {
+       "do": {
+        "en": "Drag to 15%.",
+        "as": "15%লৈ টানা।"
+       },
+       "goal": {
+        "pct": 15
+       },
+       "then": {
+        "en": "10% and half of it again: 24 + 12 = 36.",
+        "as": "10% আৰু তাৰ আধা: 24 + 12 = 36।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u1.q1",
+     "type": "explore",
+     "skill": "p-meaning",
+     "q": {
+      "en": "Shade 35% of the grid.",
+      "as": "জালখনৰ 35% ৰঙোৱা।"
+     },
+     "widget": {
+      "kind": "grid100",
+      "of": 200
+     },
+     "target": 35,
+     "answerText": {
+      "en": "35 squares",
+      "as": "35টা বৰ্গ"
+     },
+     "why": {
+      "en": "35% is 35 squares out of 100.",
+      "as": "35% মানে 100ৰ 35টা বৰ্গ।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Shade 35% of the grid.",
+        "as": "জালখনৰ 35% ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "grid100",
+        "of": 200
+       },
+       "target": 35,
+       "answerText": {
+        "en": "35 squares",
+        "as": "35টা বৰ্গ"
+       },
+       "why": {
+        "en": "35% is 35 squares out of 100.",
+        "as": "35% মানে 100ৰ 35টা বৰ্গ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade 60% of the grid.",
+        "as": "জালখনৰ 60% ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "grid100",
+        "of": 50
+       },
+       "target": 60,
+       "answerText": {
+        "en": "60 squares",
+        "as": "60টা বৰ্গ"
+       },
+       "why": {
+        "en": "60% is 60 squares out of 100.",
+        "as": "60% মানে 100ৰ 60টা বৰ্গ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade 72% of the grid.",
+        "as": "জালখনৰ 72% ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "grid100",
+        "of": 300
+       },
+       "target": 72,
+       "answerText": {
+        "en": "72 squares",
+        "as": "72টা বৰ্গ"
+       },
+       "why": {
+        "en": "72% is 72 squares out of 100.",
+        "as": "72% মানে 100ৰ 72টা বৰ্গ।"
+       }
+      },
+      {
+       "q": {
+        "en": "Shade 15% of the grid.",
+        "as": "জালখনৰ 15% ৰঙোৱা।"
+       },
+       "widget": {
+        "kind": "grid100",
+        "of": 400
+       },
+       "target": 15,
+       "answerText": {
+        "en": "15 squares",
+        "as": "15টা বৰ্গ"
+       },
+       "why": {
+        "en": "15% is 15 squares out of 100.",
+        "as": "15% মানে 100ৰ 15টা বৰ্গ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u1.q2",
+     "type": "match",
+     "skill": "p-meaning",
+     "q": {
+      "en": "Match each percentage to its fraction",
+      "as": "প্ৰতিটো শতাংশক ভগ্নাংশৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "$\\frac{1}{4}$",
+        "as": "$\\frac{1}{4}$"
+       }
+      ],
+      [
+       {
+        "en": "12.5%",
+        "as": "12.5%"
+       },
+       {
+        "en": "$\\frac{1}{8}$",
+        "as": "$\\frac{1}{8}$"
+       }
+      ],
+      [
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "$\\frac{1}{5}$",
+        "as": "$\\frac{1}{5}$"
+       }
+      ],
+      [
+       {
+        "en": "$33\\frac{1}{3}$%",
+        "as": "$33\\frac{1}{3}$%"
+       },
+       {
+        "en": "$\\frac{1}{3}$",
+        "as": "$\\frac{1}{3}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Keep these four: they turn many exam questions into one division.",
+      "as": "এই চাৰিটা মনত ৰাখা: বহু প্ৰশ্ন এটা হৰণতে শেষ হয়।"
+     }
+    },
+    {
+     "id": "m5.u1.q3",
+     "type": "solve",
+     "skill": "p-of",
+     "hints": [
+      {
+       "en": "Find 10% first by moving the decimal point.",
+       "as": "প্ৰথমে দশমিক সৰাই 10% উলিওৱা।"
+      }
+     ],
+     "q": {
+      "en": "Find 15% of 240.",
+      "as": "240ৰ 15% উলিওৱা।"
+     },
+     "answer": "36",
+     "why": {
+      "en": "10% of 240 is 24; build 15% from that to get 36.",
+      "as": "240ৰ 10% হ'ল 24; ইয়াৰ পৰা 15% গঢ়িলে 36 হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Find 15% of 240.",
+        "as": "240ৰ 15% উলিওৱা।"
+       },
+       "answer": "36",
+       "why": {
+        "en": "10% of 240 is 24; build 15% from that to get 36.",
+        "as": "240ৰ 10% হ'ল 24; ইয়াৰ পৰা 15% গঢ়িলে 36 হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find 35% of 600.",
+        "as": "600ৰ 35% উলিওৱা।"
+       },
+       "answer": "210",
+       "why": {
+        "en": "10% of 600 is 60; build 35% from that to get 210.",
+        "as": "600ৰ 10% হ'ল 60; ইয়াৰ পৰা 35% গঢ়িলে 210 হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find 45% of 80.",
+        "as": "80ৰ 45% উলিওৱা।"
+       },
+       "answer": "36",
+       "why": {
+        "en": "10% of 80 is 8; build 45% from that to get 36.",
+        "as": "80ৰ 10% হ'ল 8; ইয়াৰ পৰা 45% গঢ়িলে 36 হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Find 12% of 250.",
+        "as": "250ৰ 12% উলিওৱা।"
+       },
+       "answer": "30",
+       "why": {
+        "en": "10% of 250 is 25; build 12% from that to get 30.",
+        "as": "250ৰ 10% হ'ল 25; ইয়াৰ পৰা 12% গঢ়িলে 30 হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u1.q4",
+     "type": "tf",
+     "skill": "p-of",
+     "s": {
+      "en": "8% of 25 is the same as 25% of 8.",
+      "as": "25ৰ 8% আৰু 8ৰ 25% একে।"
+     },
+     "answer": true,
+     "why": {
+      "en": "Both are $\\frac{8 \\times 25}{100} = 2$, and 25% of 8 is easy: a quarter of 8.",
+      "as": "দুয়োটা $\\frac{8 \\times 25}{100} = 2$; 8ৰ 25% সহজ: 8ৰ এক-চতুৰ্থাংশ।"
+     }
+    },
+    {
+     "id": "m5.u1.q5",
+     "type": "solve",
+     "skill": "p-of",
+     "q": {
+      "en": "What percentage is 18 of 72?",
+      "as": "72ৰ কিমান শতাংশ 18?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "$\\frac{18}{72} \\times 100 = 25$.",
+      "as": "$\\frac{18}{72} \\times 100 = 25$।"
+     },
+     "traps": [
+      {
+       "ans": "400",
+       "tag": "m-pct-base",
+       "why": {
+        "en": "You divided the wrong way. The number after \"of\" is the base.",
+        "as": "তুমি ওলোটাকৈ হৰণ কৰিলা। যাৰ শতাংশ উলিয়াব লাগে সেয়াই ভিত্তি।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "What percentage is 18 of 72?",
+        "as": "72ৰ কিমান শতাংশ 18?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{18}{72} \\times 100 = 25$.",
+        "as": "$\\frac{18}{72} \\times 100 = 25$।"
+       },
+       "traps": [
+        {
+         "ans": "400",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You divided the wrong way. The number after \"of\" is the base.",
+          "as": "তুমি ওলোটাকৈ হৰণ কৰিলা। যাৰ শতাংশ উলিয়াব লাগে সেয়াই ভিত্তি।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What percentage is 30 of 120?",
+        "as": "120ৰ কিমান শতাংশ 30?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{30}{120} \\times 100 = 25$.",
+        "as": "$\\frac{30}{120} \\times 100 = 25$।"
+       },
+       "traps": [
+        {
+         "ans": "400",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You divided the wrong way. The number after \"of\" is the base.",
+          "as": "তুমি ওলোটাকৈ হৰণ কৰিলা। যাৰ শতাংশ উলিয়াব লাগে সেয়াই ভিত্তি।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What percentage is 14 of 35?",
+        "as": "35ৰ কিমান শতাংশ 14?"
+       },
+       "answer": "40",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{14}{35} \\times 100 = 40$.",
+        "as": "$\\frac{14}{35} \\times 100 = 40$।"
+       },
+       "traps": [
+        {
+         "ans": "250",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You divided the wrong way. The number after \"of\" is the base.",
+          "as": "তুমি ওলোটাকৈ হৰণ কৰিলা। যাৰ শতাংশ উলিয়াব লাগে সেয়াই ভিত্তি।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "What percentage is 9 of 45?",
+        "as": "45ৰ কিমান শতাংশ 9?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{9}{45} \\times 100 = 20$.",
+        "as": "$\\frac{9}{45} \\times 100 = 20$।"
+       },
+       "traps": [
+        {
+         "ans": "500",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You divided the wrong way. The number after \"of\" is the base.",
+          "as": "তুমি ওলোটাকৈ হৰণ কৰিলা। যাৰ শতাংশ উলিয়াব লাগে সেয়াই ভিত্তি।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.u1.q6",
+     "type": "explore",
+     "skill": "p-of",
+     "q": {
+      "en": "Drag until the amount reads 84. What percent of 240 is it?",
+      "as": "পৰিমাণ 84 নোহোৱালৈ টানা। ই 240ৰ কিমান শতাংশ?"
+     },
+     "widget": {
+      "kind": "dual",
+      "base": 240
+     },
+     "target": 35,
+     "answerText": {
+      "en": "35%",
+      "as": "35%"
+     },
+     "why": {
+      "en": "Both rulers measure one length, so 35% of 240 is 84.",
+      "as": "দুয়োডাল জোখে একে দৈৰ্ঘ্য জোখে, সেয়ে 240ৰ 35% হ'ল 84।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Drag until the amount reads 84. What percent of 240 is it?",
+        "as": "পৰিমাণ 84 নোহোৱালৈ টানা। ই 240ৰ কিমান শতাংশ?"
+       },
+       "widget": {
+        "kind": "dual",
+        "base": 240
+       },
+       "target": 35,
+       "answerText": {
+        "en": "35%",
+        "as": "35%"
+       },
+       "why": {
+        "en": "Both rulers measure one length, so 35% of 240 is 84.",
+        "as": "দুয়োডাল জোখে একে দৈৰ্ঘ্য জোখে, সেয়ে 240ৰ 35% হ'ল 84।"
+       }
+      },
+      {
+       "q": {
+        "en": "Drag until the amount reads 36. What percent of 80 is it?",
+        "as": "পৰিমাণ 36 নোহোৱালৈ টানা। ই 80ৰ কিমান শতাংশ?"
+       },
+       "widget": {
+        "kind": "dual",
+        "base": 80
+       },
+       "target": 45,
+       "answerText": {
+        "en": "45%",
+        "as": "45%"
+       },
+       "why": {
+        "en": "Both rulers measure one length, so 45% of 80 is 36.",
+        "as": "দুয়োডাল জোখে একে দৈৰ্ঘ্য জোখে, সেয়ে 80ৰ 45% হ'ল 36।"
+       }
+      },
+      {
+       "q": {
+        "en": "Drag until the amount reads 90. What percent of 600 is it?",
+        "as": "পৰিমাণ 90 নোহোৱালৈ টানা। ই 600ৰ কিমান শতাংশ?"
+       },
+       "widget": {
+        "kind": "dual",
+        "base": 600
+       },
+       "target": 15,
+       "answerText": {
+        "en": "15%",
+        "as": "15%"
+       },
+       "why": {
+        "en": "Both rulers measure one length, so 15% of 600 is 90.",
+        "as": "দুয়োডাল জোখে একে দৈৰ্ঘ্য জোখে, সেয়ে 600ৰ 15% হ'ল 90।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Rise and fall",
+    "as": "বৃদ্ধি আৰু হ্ৰাস"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Percent change = change ÷ original × 100.",
+     "as": "শতাংশ পৰিৱৰ্তন = পৰিৱৰ্তন ÷ মূল মান × 100।"
+    },
+    {
+     "en": "A 20% rise multiplies by 1.2; a 20% fall multiplies by 0.8.",
+     "as": "20% বৃদ্ধিত 1.2ৰে পূৰণ; 20% হ্ৰাসত 0.8ৰে পূৰণ।"
+    },
+    {
+     "en": "To undo a change, divide by the multiplier.",
+     "as": "পৰিৱৰ্তন ওভতাবলৈ গুণকেৰে হৰণ কৰা।"
+    },
+    {
+     "en": "The same percent up and then down does not return you to the start.",
+     "as": "একে শতাংশ বাঢ়ি কমিলে আগৰ ঠাইলৈ উভতি নাহে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m5.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Always ask: out of what?",
+      "as": "সদায় সোধা: কিহৰ ওপৰত?"
+     },
+     "text": [
+      {
+       "en": "A price goes from ₹50 to ₹60. The rise is ₹10, measured against the old ₹50.",
+       "as": "দাম ₹50ৰ পৰা ₹60 হ'ল। বৃদ্ধি ₹10, পুৰণি ₹50ৰ ওপৰত।"
+      },
+      {
+       "en": "So it rose 20%, not $16\\frac{2}{3}$%. The original is the base every time.",
+       "as": "সেয়ে বৃদ্ধি 20%, $16\\frac{2}{3}$% নহয়। সদায় মূল মানেই ভিত্তি।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Change: ₹10",
+        "as": "পৰিৱৰ্তন: ₹10"
+       },
+       {
+        "en": "Original: ₹50",
+        "as": "মূল: ₹50"
+       },
+       {
+        "en": "$\\frac{10}{50} \\times 100 = 20$%",
+        "as": "$\\frac{10}{50} \\times 100 = 20$%"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m5.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Multipliers save time",
+      "as": "গুণকে সময় বচায়"
+     },
+     "text": [
+      {
+       "en": "A rise of r% means multiply by $1 + \\frac{r}{100}$. A fall means multiply by $1 - \\frac{r}{100}$.",
+       "as": "r% বৃদ্ধি মানে $1 + \\frac{r}{100}$ৰে পূৰণ। হ্ৰাস মানে $1 - \\frac{r}{100}$ৰে পূৰণ।"
+      },
+      {
+       "en": "One multiplication replaces two steps, and undoing it is one division.",
+       "as": "এটা পূৰণে দুটা খোজৰ কাম কৰে, ওভতাবলৈ এটা হৰণ।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "grid",
+      "items": [
+       {
+        "en": "+25%: × 1.25",
+        "as": "+25%: × 1.25"
+       },
+       {
+        "en": "−25%: × 0.75",
+        "as": "−25%: × 0.75"
+       },
+       {
+        "en": "+8%: × 1.08",
+        "as": "+8%: × 1.08"
+       },
+       {
+        "en": "−8%: × 0.92",
+        "as": "−8%: × 0.92"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m5.u2.q1",
+     "type": "solve",
+     "skill": "p-change",
+     "hints": [
+      {
+       "en": "Divide the change by the original value.",
+       "as": "পৰিৱৰ্তনক মূল মানেৰে হৰণ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "A value goes from 50 to 60. What is the percentage change?",
+      "as": "এটা মান 50ৰ পৰা 60 হ'ল। শতাংশ পৰিৱৰ্তন কিমান?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "Change 10, original 50: $\\frac{10}{50} \\times 100 = 20$.",
+      "as": "পৰিৱৰ্তন 10, মূল 50: $\\frac{10}{50} \\times 100 = 20$।"
+     },
+     "traps": [
+      {
+       "ans": "50/3",
+       "tag": "m-pct-base",
+       "why": {
+        "en": "You used the new value as the base. A percentage change is always out of the original value.",
+        "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A value goes from 50 to 60. What is the percentage change?",
+        "as": "এটা মান 50ৰ পৰা 60 হ'ল। শতাংশ পৰিৱৰ্তন কিমান?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Change 10, original 50: $\\frac{10}{50} \\times 100 = 20$.",
+        "as": "পৰিৱৰ্তন 10, মূল 50: $\\frac{10}{50} \\times 100 = 20$।"
+       },
+       "traps": [
+        {
+         "ans": "50/3",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A value goes from 80 to 100. What is the percentage change?",
+        "as": "এটা মান 80ৰ পৰা 100 হ'ল। শতাংশ পৰিৱৰ্তন কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Change 20, original 80: $\\frac{20}{80} \\times 100 = 25$.",
+        "as": "পৰিৱৰ্তন 20, মূল 80: $\\frac{20}{80} \\times 100 = 25$।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A value goes from 40 to 30. What is the percentage change?",
+        "as": "এটা মান 40ৰ পৰা 30 হ'ল। শতাংশ পৰিৱৰ্তন কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Change 10, original 40: $\\frac{10}{40} \\times 100 = 25$.",
+        "as": "পৰিৱৰ্তন 10, মূল 40: $\\frac{10}{40} \\times 100 = 25$।"
+       },
+       "traps": [
+        {
+         "ans": "100/3",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A value goes from 120 to 150. What is the percentage change?",
+        "as": "এটা মান 120ৰ পৰা 150 হ'ল। শতাংশ পৰিৱৰ্তন কিমান?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Change 30, original 120: $\\frac{30}{120} \\times 100 = 25$.",
+        "as": "পৰিৱৰ্তন 30, মূল 120: $\\frac{30}{120} \\times 100 = 25$।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.u2.q2",
+     "type": "match",
+     "skill": "p-change",
+     "q": {
+      "en": "Match each change to its multiplier",
+      "as": "প্ৰতিটো পৰিৱৰ্তনক গুণকৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "12% rise",
+        "as": "12% বৃদ্ধি"
+       },
+       {
+        "en": "1.12",
+        "as": "1.12"
+       }
+      ],
+      [
+       {
+        "en": "12% fall",
+        "as": "12% হ্ৰাস"
+       },
+       {
+        "en": "0.88",
+        "as": "0.88"
+       }
+      ],
+      [
+       {
+        "en": "30% rise",
+        "as": "30% বৃদ্ধি"
+       },
+       {
+        "en": "1.3",
+        "as": "1.3"
+       }
+      ],
+      [
+       {
+        "en": "30% fall",
+        "as": "30% হ্ৰাস"
+       },
+       {
+        "en": "0.7",
+        "as": "0.7"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Rise: add to 1. Fall: subtract from 1.",
+      "as": "বৃদ্ধি: 1ৰ লগত যোগ। হ্ৰাস: 1ৰ পৰা বিয়োগ।"
+     }
+    },
+    {
+     "id": "m5.u2.q3",
+     "type": "solve",
+     "skill": "p-change",
+     "hints": [
+      {
+       "en": "New = old × multiplier, so old = new ÷ multiplier.",
+       "as": "নতুন = পুৰণি × গুণক, সেয়ে পুৰণি = নতুন ÷ গুণক।"
+      }
+     ],
+     "q": {
+      "en": "After a 20% rise a price is ₹240. What was it before?",
+      "as": "20% বৃদ্ধিৰ পিছত দাম ₹240। আগতে কিমান আছিল?"
+     },
+     "answer": "200",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Divide by the multiplier 6/5 rather than subtracting 20%.",
+      "as": "20% বিয়োগ নকৰি গুণক 6/5ৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "ans": "192",
+       "tag": "m-pct-base",
+       "why": {
+        "en": "You used the new value as the base. A percentage change is always out of the original value.",
+        "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "After a 20% rise a price is ₹240. What was it before?",
+        "as": "20% বৃদ্ধিৰ পিছত দাম ₹240। আগতে কিমান আছিল?"
+       },
+       "answer": "200",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by the multiplier 6/5 rather than subtracting 20%.",
+        "as": "20% বিয়োগ নকৰি গুণক 6/5ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "192",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "After a 25% rise a price is ₹500. What was it before?",
+        "as": "25% বৃদ্ধিৰ পিছত দাম ₹500। আগতে কিমান আছিল?"
+       },
+       "answer": "400",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by the multiplier 5/4 rather than subtracting 25%.",
+        "as": "25% বিয়োগ নকৰি গুণক 5/4ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "375",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "After a 10% rise a price is ₹550. What was it before?",
+        "as": "10% বৃদ্ধিৰ পিছত দাম ₹550। আগতে কিমান আছিল?"
+       },
+       "answer": "500",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by the multiplier 11/10 rather than subtracting 10%.",
+        "as": "10% বিয়োগ নকৰি গুণক 11/10ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "495",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "After a 15% rise a price is ₹920. What was it before?",
+        "as": "15% বৃদ্ধিৰ পিছত দাম ₹920। আগতে কিমান আছিল?"
+       },
+       "answer": "800",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Divide by the multiplier 23/20 rather than subtracting 15%.",
+        "as": "15% বিয়োগ নকৰি গুণক 23/20ৰে হৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "ans": "782",
+         "tag": "m-pct-base",
+         "why": {
+          "en": "You used the new value as the base. A percentage change is always out of the original value.",
+          "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.u2.q4",
+     "type": "tf",
+     "skill": "p-change",
+     "s": {
+      "en": "If a price rises 20% and then falls 20%, it returns to the original.",
+      "as": "দাম 20% বাঢ়ি পিছত 20% কমিলে আগৰ দামলৈ উভতি আহে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "₹100 becomes ₹120, then falls by ₹24 to ₹96. The fall acts on a bigger base.",
+      "as": "₹100 ₹120 হয়, তাৰ পিছত ₹24 কমি ₹96। হ্ৰাসটো ডাঙৰ ভিত্তিৰ ওপৰত।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-pct-undo",
+       "why": {
+        "en": "The fall is 20% of the raised price, so it removes more than the rise added.",
+        "as": "হ্ৰাসটো বৰ্ধিত দামৰ 20%, সেয়ে বৃদ্ধিতকৈ বেছি কমে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u2.q5",
+     "type": "stepwise",
+     "skill": "p-change",
+     "q": {
+      "en": "A salary of ₹20000 rises by 15%. What is the new salary, by multiplier?",
+      "as": "₹20000 দৰমহা 15% বাঢ়িল। গুণকেৰে নতুন দৰমহা কিমান?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Which multiplier?",
+        "as": "কোনটো গুণক?"
+       },
+       "options": [
+        {
+         "en": "0.85",
+         "as": "0.85"
+        },
+        {
+         "en": "0.15",
+         "as": "0.15"
+        },
+        {
+         "en": "1.15",
+         "as": "1.15"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "A rise adds to 1.",
+        "as": "বৃদ্ধি 1ৰ লগত যোগ হয়।"
+       }
+      },
+      {
+       "ask": {
+        "en": "New salary?",
+        "as": "নতুন দৰমহা?"
+       },
+       "options": [
+        {
+         "en": "₹23000",
+         "as": "₹23000"
+        },
+        {
+         "en": "₹20015",
+         "as": "₹20015"
+        },
+        {
+         "en": "₹17000",
+         "as": "₹17000"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Multiply the salary by the multiplier.",
+        "as": "দৰমহাক গুণকেৰে পূৰণ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "One multiplication does the whole job.",
+      "as": "এটা পূৰণতে সকলো কাম হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A salary of ₹20000 rises by 15%. What is the new salary, by multiplier?",
+        "as": "₹20000 দৰমহা 15% বাঢ়িল। গুণকেৰে নতুন দৰমহা কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which multiplier?",
+          "as": "কোনটো গুণক?"
+         },
+         "options": [
+          {
+           "en": "0.85",
+           "as": "0.85"
+          },
+          {
+           "en": "0.15",
+           "as": "0.15"
+          },
+          {
+           "en": "1.15",
+           "as": "1.15"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A rise adds to 1.",
+          "as": "বৃদ্ধি 1ৰ লগত যোগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "New salary?",
+          "as": "নতুন দৰমহা?"
+         },
+         "options": [
+          {
+           "en": "₹23000",
+           "as": "₹23000"
+          },
+          {
+           "en": "₹20015",
+           "as": "₹20015"
+          },
+          {
+           "en": "₹17000",
+           "as": "₹17000"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Multiply the salary by the multiplier.",
+          "as": "দৰমহাক গুণকেৰে পূৰণ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "One multiplication does the whole job.",
+        "as": "এটা পূৰণতে সকলো কাম হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A salary of ₹15000 rises by 20%. What is the new salary, by multiplier?",
+        "as": "₹15000 দৰমহা 20% বাঢ়িল। গুণকেৰে নতুন দৰমহা কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which multiplier?",
+          "as": "কোনটো গুণক?"
+         },
+         "options": [
+          {
+           "en": "0.2",
+           "as": "0.2"
+          },
+          {
+           "en": "1.2",
+           "as": "1.2"
+          },
+          {
+           "en": "0.8",
+           "as": "0.8"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "A rise adds to 1.",
+          "as": "বৃদ্ধি 1ৰ লগত যোগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "New salary?",
+          "as": "নতুন দৰমহা?"
+         },
+         "options": [
+          {
+           "en": "₹15020",
+           "as": "₹15020"
+          },
+          {
+           "en": "₹12000",
+           "as": "₹12000"
+          },
+          {
+           "en": "₹18000",
+           "as": "₹18000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply the salary by the multiplier.",
+          "as": "দৰমহাক গুণকেৰে পূৰণ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "One multiplication does the whole job.",
+        "as": "এটা পূৰণতে সকলো কাম হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A salary of ₹24000 rises by 25%. What is the new salary, by multiplier?",
+        "as": "₹24000 দৰমহা 25% বাঢ়িল। গুণকেৰে নতুন দৰমহা কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Which multiplier?",
+          "as": "কোনটো গুণক?"
+         },
+         "options": [
+          {
+           "en": "1.25",
+           "as": "1.25"
+          },
+          {
+           "en": "0.75",
+           "as": "0.75"
+          },
+          {
+           "en": "0.25",
+           "as": "0.25"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "A rise adds to 1.",
+          "as": "বৃদ্ধি 1ৰ লগত যোগ হয়।"
+         }
+        },
+        {
+         "ask": {
+          "en": "New salary?",
+          "as": "নতুন দৰমহা?"
+         },
+         "options": [
+          {
+           "en": "₹24025",
+           "as": "₹24025"
+          },
+          {
+           "en": "₹18000",
+           "as": "₹18000"
+          },
+          {
+           "en": "₹30000",
+           "as": "₹30000"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Multiply the salary by the multiplier.",
+          "as": "দৰমহাক গুণকেৰে পূৰণ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "One multiplication does the whole job.",
+        "as": "এটা পূৰণতে সকলো কাম হয়।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Changes on changes",
+    "as": "পৰিৱৰ্তনৰ ওপৰত পৰিৱৰ্তন"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Two changes in a row: $a + b + \\frac{ab}{100}$, with falls written as negative.",
+     "as": "পৰ পৰ দুটা পৰিৱৰ্তন: $a + b + \\frac{ab}{100}$; হ্ৰাসক ঋণাত্মক লিখা।"
+    },
+    {
+     "en": "Multiplying both sides of a rectangle by rises uses the same formula.",
+     "as": "আয়তৰ দুয়োটা বাহু বাঢ়িলেও একে সূত্ৰ।"
+    },
+    {
+     "en": "If a price rises r%, cut use by $\\frac{r}{100 + r} \\times 100$% to keep spending level.",
+     "as": "দাম r% বাঢ়িলে খৰচ একে ৰাখিবলৈ ব্যৱহাৰ $\\frac{r}{100 + r} \\times 100$% কমোৱা।"
+    },
+    {
+     "en": "If A is r% more than B, then B is $\\frac{r}{100 + r} \\times 100$% less than A.",
+     "as": "A Bতকৈ r% বেছি হ'লে B Aতকৈ $\\frac{r}{100 + r} \\times 100$% কম।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m5.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "The corner that gets forgotten",
+      "as": "পাহৰি যোৱা চুক"
+     },
+     "text": [
+      {
+       "en": "The dashed square is 100%. Two percentage changes stretch its two sides.",
+       "as": "ডেচ দিয়া বৰ্গটো 100%। দুটা শতাংশ পৰিৱৰ্তনে দুটা বাহু টানে।"
+      }
+     ],
+     "widget": {
+      "kind": "area",
+      "a": 0,
+      "b": 0
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Set width +10% and height +10%.",
+        "as": "প্ৰস্থ +10% আৰু উচ্চতা +10% কৰা।"
+       },
+       "goal": {
+        "a": 10,
+        "b": 10
+       },
+       "then": {
+        "en": "10 + 10 is not all of it. The gold corner adds 1, making 21%. That corner is the $\\frac{ab}{100}$.",
+        "as": "10 + 10তে শেষ নহয়। সোণালী চুকে 1 যোগ কৰি 21% কৰে। সেই চুকেই $\\frac{ab}{100}$।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now width +20% and height −20%.",
+        "as": "এতিয়া প্ৰস্থ +20% আৰু উচ্চতা −20% কৰা।"
+       },
+       "goal": {
+        "a": 20,
+        "b": -20
+       },
+       "then": {
+        "en": "Up 20 and down 20 does not cancel: the corner costs 4, so the total is −4%.",
+        "as": "20 বাঢ়ি 20 কমিলেও সমান নহয়: চুকে 4 কমায়, মুঠ −4%।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "More than is not less than",
+      "as": "বেছি আৰু কম একে নহয়"
+     },
+     "text": [
+      {
+       "en": "If A is 25% more than B, take B as 100 and A as 125.",
+       "as": "A Bতকৈ 25% বেছি হ'লে B = 100, A = 125 ধৰা।"
+      },
+      {
+       "en": "B is 25 below A, but A is the base now: $\\frac{25}{125} = 20$%.",
+       "as": "B Aতকৈ 25 কম, কিন্তু এতিয়া A ভিত্তি: $\\frac{25}{125} = 20$%।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "B = 100",
+        "as": "B = 100"
+       },
+       {
+        "en": "A = 125",
+        "as": "A = 125"
+       },
+       {
+        "en": "B is 20% less than A",
+        "as": "B Aতকৈ 20% কম"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m5.u3.q1",
+     "type": "solve",
+     "skill": "p-succ",
+     "hints": [
+      {
+       "en": "Use $a + b + \\frac{ab}{100}$.",
+       "as": "$a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "A number rises 10% and then 20%. What is the total rise?",
+      "as": "এটা সংখ্যা 10% বাঢ়ি তাৰ পিছত 20% বাঢ়িল। মুঠ বৃদ্ধি কিমান?"
+     },
+     "answer": "32",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "$10 + 20 + \\frac{10 \\times 20}{100} = 32$.",
+      "as": "$10 + 20 + \\frac{10 \\times 20}{100} = 32$।"
+     },
+     "traps": [
+      {
+       "ans": "30",
+       "tag": "m-pct-add",
+       "why": {
+        "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+        "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A number rises 10% and then 20%. What is the total rise?",
+        "as": "এটা সংখ্যা 10% বাঢ়ি তাৰ পিছত 20% বাঢ়িল। মুঠ বৃদ্ধি কিমান?"
+       },
+       "answer": "32",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$10 + 20 + \\frac{10 \\times 20}{100} = 32$.",
+        "as": "$10 + 20 + \\frac{10 \\times 20}{100} = 32$।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A number rises 20% and then 30%. What is the total rise?",
+        "as": "এটা সংখ্যা 20% বাঢ়ি তাৰ পিছত 30% বাঢ়িল। মুঠ বৃদ্ধি কিমান?"
+       },
+       "answer": "56",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$20 + 30 + \\frac{20 \\times 30}{100} = 56$.",
+        "as": "$20 + 30 + \\frac{20 \\times 30}{100} = 56$।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A number rises 25% and then 20%. What is the total rise?",
+        "as": "এটা সংখ্যা 25% বাঢ়ি তাৰ পিছত 20% বাঢ়িল। মুঠ বৃদ্ধি কিমান?"
+       },
+       "answer": "50",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$25 + 20 + \\frac{25 \\times 20}{100} = 50$.",
+        "as": "$25 + 20 + \\frac{25 \\times 20}{100} = 50$।"
+       },
+       "traps": [
+        {
+         "ans": "45",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A number rises 10% and then 50%. What is the total rise?",
+        "as": "এটা সংখ্যা 10% বাঢ়ি তাৰ পিছত 50% বাঢ়িল। মুঠ বৃদ্ধি কিমান?"
+       },
+       "answer": "65",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$10 + 50 + \\frac{10 \\times 50}{100} = 65$.",
+        "as": "$10 + 50 + \\frac{10 \\times 50}{100} = 65$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.u3.q2",
+     "type": "solve",
+     "skill": "p-succ",
+     "q": {
+      "en": "A number rises 25% and then falls 10%. By what percentage does it finally rise?",
+      "as": "এটা সংখ্যা 25% বাঢ়ি তাৰ পিছত 10% কমিল। শেষত কিমান শতাংশ বাঢ়িল?"
+     },
+     "answer": "25/2",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "Falls are negative: $25 - 10 - \\frac{25 \\times 10}{100} = 25/2$.",
+      "as": "হ্ৰাস ঋণাত্মক: $25 - 10 - \\frac{25 \\times 10}{100} = 25/2$।"
+     },
+     "traps": [
+      {
+       "ans": "15",
+       "tag": "m-pct-add",
+       "why": {
+        "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+        "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A number rises 25% and then falls 10%. By what percentage does it finally rise?",
+        "as": "এটা সংখ্যা 25% বাঢ়ি তাৰ পিছত 10% কমিল। শেষত কিমান শতাংশ বাঢ়িল?"
+       },
+       "answer": "25/2",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Falls are negative: $25 - 10 - \\frac{25 \\times 10}{100} = 25/2$.",
+        "as": "হ্ৰাস ঋণাত্মক: $25 - 10 - \\frac{25 \\times 10}{100} = 25/2$।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A number rises 50% and then falls 20%. By what percentage does it finally rise?",
+        "as": "এটা সংখ্যা 50% বাঢ়ি তাৰ পিছত 20% কমিল। শেষত কিমান শতাংশ বাঢ়িল?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Falls are negative: $50 - 20 - \\frac{50 \\times 20}{100} = 20$.",
+        "as": "হ্ৰাস ঋণাত্মক: $50 - 20 - \\frac{50 \\times 20}{100} = 20$।"
+       },
+       "traps": [
+        {
+         "ans": "30",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A number rises 40% and then falls 25%. By what percentage does it finally rise?",
+        "as": "এটা সংখ্যা 40% বাঢ়ি তাৰ পিছত 25% কমিল। শেষত কিমান শতাংশ বাঢ়িল?"
+       },
+       "answer": "5",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Falls are negative: $40 - 25 - \\frac{40 \\times 25}{100} = 5$.",
+        "as": "হ্ৰাস ঋণাত্মক: $40 - 25 - \\frac{40 \\times 25}{100} = 5$।"
+       },
+       "traps": [
+        {
+         "ans": "15",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A number rises 30% and then falls 10%. By what percentage does it finally rise?",
+        "as": "এটা সংখ্যা 30% বাঢ়ি তাৰ পিছত 10% কমিল। শেষত কিমান শতাংশ বাঢ়িল?"
+       },
+       "answer": "17",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "Falls are negative: $30 - 10 - \\frac{30 \\times 10}{100} = 17$.",
+        "as": "হ্ৰাস ঋণাত্মক: $30 - 10 - \\frac{30 \\times 10}{100} = 17$।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+          "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.u3.q3",
+     "type": "tf",
+     "skill": "p-compare",
+     "s": {
+      "en": "If A is 50% more than B, then B is 50% less than A.",
+      "as": "A Bতকৈ 50% বেছি হ'লে B Aতকৈ 50% কম।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Take B = 100, so A = 150. B is 50 below 150, which is $33\\frac{1}{3}$%.",
+      "as": "B = 100 ধৰিলে A = 150। B 150তকৈ 50 কম, অৰ্থাৎ $33\\frac{1}{3}$%।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-pct-more-less",
+       "why": {
+        "en": "The base changes from B to A, so the percentage changes too.",
+        "as": "ভিত্তি Bৰ পৰা Aলৈ সলনি হয়, সেয়ে শতাংশও সলনি হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u3.q4",
+     "type": "stepwise",
+     "skill": "p-compare",
+     "q": {
+      "en": "A is 25% more than B. By what percentage is B less than A?",
+      "as": "A Bতকৈ 25% বেছি। B Aতকৈ কিমান শতাংশ কম?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Take B = 100. Then A =",
+        "as": "B = 100 ধৰা। তেনেহ'লে A ="
+       },
+       "options": [
+        {
+         "en": "75",
+         "as": "75"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "125",
+         "as": "125"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "A is 25 more than 100.",
+        "as": "A 100তকৈ 25 বেছি।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Difference?",
+        "as": "পাৰ্থক্য?"
+       },
+       "options": [
+        {
+         "en": "50",
+         "as": "50"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        },
+        {
+         "en": "125",
+         "as": "125"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Subtract B from A.",
+        "as": "Aৰ পৰা B বিয়োগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Base for \"less than A\"?",
+        "as": "\"Aতকৈ কম\"ৰ ভিত্তি?"
+       },
+       "options": [
+        {
+         "en": "B: 100",
+         "as": "B: 100"
+        },
+        {
+         "en": "A: 125",
+         "as": "A: 125"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "The comparison is against A.",
+        "as": "তুলনা Aৰ সৈতে।"
+       },
+       "tag": "m-pct-more-less"
+      },
+      {
+       "ask": {
+        "en": "So B is less by",
+        "as": "তেনেহ'লে B কম"
+       },
+       "options": [
+        {
+         "en": "25%",
+         "as": "25%"
+        },
+        {
+         "en": "30%",
+         "as": "30%"
+        },
+        {
+         "en": "20%",
+         "as": "20%"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "$\\frac{25}{125} \\times 100$.",
+        "as": "$\\frac{25}{125} \\times 100$।"
+       },
+       "tag": "m-pct-more-less"
+      }
+     ],
+     "why": {
+      "en": "Choosing 100 for the base makes these questions simple.",
+      "as": "ভিত্তি 100 ধৰিলে এই প্ৰশ্নবোৰ সহজ হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A is 25% more than B. By what percentage is B less than A?",
+        "as": "A Bতকৈ 25% বেছি। B Aতকৈ কিমান শতাংশ কম?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take B = 100. Then A =",
+          "as": "B = 100 ধৰা। তেনেহ'লে A ="
+         },
+         "options": [
+          {
+           "en": "75",
+           "as": "75"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "125",
+           "as": "125"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A is 25 more than 100.",
+          "as": "A 100তকৈ 25 বেছি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Difference?",
+          "as": "পাৰ্থক্য?"
+         },
+         "options": [
+          {
+           "en": "50",
+           "as": "50"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          },
+          {
+           "en": "125",
+           "as": "125"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Subtract B from A.",
+          "as": "Aৰ পৰা B বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Base for \"less than A\"?",
+          "as": "\"Aতকৈ কম\"ৰ ভিত্তি?"
+         },
+         "options": [
+          {
+           "en": "B: 100",
+           "as": "B: 100"
+          },
+          {
+           "en": "A: 125",
+           "as": "A: 125"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The comparison is against A.",
+          "as": "তুলনা Aৰ সৈতে।"
+         },
+         "tag": "m-pct-more-less"
+        },
+        {
+         "ask": {
+          "en": "So B is less by",
+          "as": "তেনেহ'লে B কম"
+         },
+         "options": [
+          {
+           "en": "25%",
+           "as": "25%"
+          },
+          {
+           "en": "30%",
+           "as": "30%"
+          },
+          {
+           "en": "20%",
+           "as": "20%"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "$\\frac{25}{125} \\times 100$.",
+          "as": "$\\frac{25}{125} \\times 100$।"
+         },
+         "tag": "m-pct-more-less"
+        }
+       ],
+       "why": {
+        "en": "Choosing 100 for the base makes these questions simple.",
+        "as": "ভিত্তি 100 ধৰিলে এই প্ৰশ্নবোৰ সহজ হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 60% more than B. By what percentage is B less than A?",
+        "as": "A Bতকৈ 60% বেছি। B Aতকৈ কিমান শতাংশ কম?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take B = 100. Then A =",
+          "as": "B = 100 ধৰা। তেনেহ'লে A ="
+         },
+         "options": [
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "160",
+           "as": "160"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "A is 60 more than 100.",
+          "as": "A 100তকৈ 60 বেছি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Difference?",
+          "as": "পাৰ্থক্য?"
+         },
+         "options": [
+          {
+           "en": "160",
+           "as": "160"
+          },
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Subtract B from A.",
+          "as": "Aৰ পৰা B বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Base for \"less than A\"?",
+          "as": "\"Aতকৈ কম\"ৰ ভিত্তি?"
+         },
+         "options": [
+          {
+           "en": "A: 160",
+           "as": "A: 160"
+          },
+          {
+           "en": "B: 100",
+           "as": "B: 100"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The comparison is against A.",
+          "as": "তুলনা Aৰ সৈতে।"
+         },
+         "tag": "m-pct-more-less"
+        },
+        {
+         "ask": {
+          "en": "So B is less by",
+          "as": "তেনেহ'লে B কম"
+         },
+         "options": [
+          {
+           "en": "37.5%",
+           "as": "37.5%"
+          },
+          {
+           "en": "65%",
+           "as": "65%"
+          },
+          {
+           "en": "60%",
+           "as": "60%"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\frac{60}{160} \\times 100$.",
+          "as": "$\\frac{60}{160} \\times 100$।"
+         },
+         "tag": "m-pct-more-less"
+        }
+       ],
+       "why": {
+        "en": "Choosing 100 for the base makes these questions simple.",
+        "as": "ভিত্তি 100 ধৰিলে এই প্ৰশ্নবোৰ সহজ হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 20% more than B. By what percentage is B less than A?",
+        "as": "A Bতকৈ 20% বেছি। B Aতকৈ কিমান শতাংশ কম?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take B = 100. Then A =",
+          "as": "B = 100 ধৰা। তেনেহ'লে A ="
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "80",
+           "as": "80"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "A is 20 more than 100.",
+          "as": "A 100তকৈ 20 বেছি।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Difference?",
+          "as": "পাৰ্থক্য?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "40",
+           "as": "40"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Subtract B from A.",
+          "as": "Aৰ পৰা B বিয়োগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Base for \"less than A\"?",
+          "as": "\"Aতকৈ কম\"ৰ ভিত্তি?"
+         },
+         "options": [
+          {
+           "en": "B: 100",
+           "as": "B: 100"
+          },
+          {
+           "en": "A: 120",
+           "as": "A: 120"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The comparison is against A.",
+          "as": "তুলনা Aৰ সৈতে।"
+         },
+         "tag": "m-pct-more-less"
+        },
+        {
+         "ask": {
+          "en": "So B is less by",
+          "as": "তেনেহ'লে B কম"
+         },
+         "options": [
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "$\\frac{50}{3}$%",
+           "as": "$\\frac{50}{3}$%"
+          },
+          {
+           "en": "25%",
+           "as": "25%"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "$\\frac{20}{120} \\times 100$.",
+          "as": "$\\frac{20}{120} \\times 100$।"
+         },
+         "tag": "m-pct-more-less"
+        }
+       ],
+       "why": {
+        "en": "Choosing 100 for the base makes these questions simple.",
+        "as": "ভিত্তি 100 ধৰিলে এই প্ৰশ্নবোৰ সহজ হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.u3.q5",
+     "type": "solve",
+     "skill": "p-compare",
+     "hints": [
+      {
+       "en": "Use $\\frac{r}{100 + r} \\times 100$.",
+       "as": "$\\frac{r}{100 + r} \\times 100$ ব্যৱহাৰ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "The price of oil rises 25%. By what percentage must a family cut use to keep spending the same?",
+      "as": "তেলৰ দাম 25% বাঢ়িল। খৰচ একে ৰাখিবলৈ পৰিয়াল এটাই ব্যৱহাৰ কিমান শতাংশ কমাব লাগিব?"
+     },
+     "answer": "20",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "$\\frac{25}{125} \\times 100 = 20$.",
+      "as": "$\\frac{25}{125} \\times 100 = 20$।"
+     },
+     "traps": [
+      {
+       "ans": "25",
+       "tag": "m-pct-more-less",
+       "why": {
+        "en": "Cutting by the same percent is too much, because the cut is measured on the higher price.",
+        "as": "একে শতাংশ কমালে বেছি হয়, কাৰণ হ্ৰাস বৰ্ধিত দামৰ ওপৰত জোখা হয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The price of oil rises 25%. By what percentage must a family cut use to keep spending the same?",
+        "as": "তেলৰ দাম 25% বাঢ়িল। খৰচ একে ৰাখিবলৈ পৰিয়াল এটাই ব্যৱহাৰ কিমান শতাংশ কমাব লাগিব?"
+       },
+       "answer": "20",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{25}{125} \\times 100 = 20$.",
+        "as": "$\\frac{25}{125} \\times 100 = 20$।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "Cutting by the same percent is too much, because the cut is measured on the higher price.",
+          "as": "একে শতাংশ কমালে বেছি হয়, কাৰণ হ্ৰাস বৰ্ধিত দামৰ ওপৰত জোখা হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The price of oil rises 100%. By what percentage must a family cut use to keep spending the same?",
+        "as": "তেলৰ দাম 100% বাঢ়িল। খৰচ একে ৰাখিবলৈ পৰিয়াল এটাই ব্যৱহাৰ কিমান শতাংশ কমাব লাগিব?"
+       },
+       "answer": "50",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{100}{200} \\times 100 = 50$.",
+        "as": "$\\frac{100}{200} \\times 100 = 50$।"
+       },
+       "traps": [
+        {
+         "ans": "100",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "Cutting by the same percent is too much, because the cut is measured on the higher price.",
+          "as": "একে শতাংশ কমালে বেছি হয়, কাৰণ হ্ৰাস বৰ্ধিত দামৰ ওপৰত জোখা হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The price of oil rises 60%. By what percentage must a family cut use to keep spending the same?",
+        "as": "তেলৰ দাম 60% বাঢ়িল। খৰচ একে ৰাখিবলৈ পৰিয়াল এটাই ব্যৱহাৰ কিমান শতাংশ কমাব লাগিব?"
+       },
+       "answer": "37.5",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{60}{160} \\times 100 = 37.5$.",
+        "as": "$\\frac{60}{160} \\times 100 = 37.5$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "Cutting by the same percent is too much, because the cut is measured on the higher price.",
+          "as": "একে শতাংশ কমালে বেছি হয়, কাৰণ হ্ৰাস বৰ্ধিত দামৰ ওপৰত জোখা হয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The price of oil rises 50%. By what percentage must a family cut use to keep spending the same?",
+        "as": "তেলৰ দাম 50% বাঢ়িল। খৰচ একে ৰাখিবলৈ পৰিয়াল এটাই ব্যৱহাৰ কিমান শতাংশ কমাব লাগিব?"
+       },
+       "answer": "100/3",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{50}{150} \\times 100 = 100/3$.",
+        "as": "$\\frac{50}{150} \\times 100 = 100/3$।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "Cutting by the same percent is too much, because the cut is measured on the higher price.",
+          "as": "একে শতাংশ কমালে বেছি হয়, কাৰণ হ্ৰাস বৰ্ধিত দামৰ ওপৰত জোখা হয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.u3.q6",
+     "type": "match",
+     "skill": "p-succ",
+     "q": {
+      "en": "Match the pair of changes to the total",
+      "as": "দুটা পৰিৱৰ্তনক মুঠৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "+10% then +10%",
+        "as": "+10% তাৰ পিছত +10%"
+       },
+       {
+        "en": "+21%",
+        "as": "+21%"
+       }
+      ],
+      [
+       {
+        "en": "+20% then −20%",
+        "as": "+20% তাৰ পিছত −20%"
+       },
+       {
+        "en": "−4%",
+        "as": "−4%"
+       }
+      ],
+      [
+       {
+        "en": "−10% then −10%",
+        "as": "−10% তাৰ পিছত −10%"
+       },
+       {
+        "en": "−19%",
+        "as": "−19%"
+       }
+      ],
+      [
+       {
+        "en": "+50% then −50%",
+        "as": "+50% তাৰ পিছত −50%"
+       },
+       {
+        "en": "−25%",
+        "as": "−25%"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Use $a + b + \\frac{ab}{100}$ with falls as negative.",
+      "as": "হ্ৰাস ঋণাত্মক লৈ $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Side-by-side change",
+    "as": "কাষে কাষে পৰিৱৰ্তন"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Two equal numbers raised by x% and y% end in the ratio (100 + x) : (100 + y).",
+     "as": "দুটা সমান সংখ্যা x% আৰু y% বাঢ়িলে অনুপাত (100 + x) : (100 + y) হয়।"
+    },
+    {
+     "en": "A fall of x% is written as 100 − x.",
+     "as": "x% হ্ৰাস 100 − x বুলি লিখা হয়।"
+    },
+    {
+     "en": "Spending = price × use, so a fixed spend is a fixed area.",
+     "as": "খৰচ = দাম × ব্যৱহাৰ, সেয়ে নিৰ্দিষ্ট খৰচ মানে নিৰ্দিষ্ট কালি।"
+    },
+    {
+     "en": "If a price falls r%, use can rise by $\\frac{r}{100 - r} \\times 100$%.",
+     "as": "দাম r% কমিলে ব্যৱহাৰ $\\frac{r}{100 - r} \\times 100$% বাঢ়িব পাৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m5.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Change the base to 100",
+      "as": "ভিত্তি 100 কৰা"
+     },
+     "text": [
+      {
+       "en": "If two numbers start level, take each as 100 and apply its own change.",
+       "as": "দুটা সংখ্যা সমানৰ পৰা আৰম্ভ হ'লে প্ৰতিটো 100 ধৰি নিজা পৰিৱৰ্তন কৰা।"
+      },
+      {
+       "en": "30% up and 60% up give 130 and 160, which is 13 : 16.",
+       "as": "30% আৰু 60% বৃদ্ধিয়ে 130 আৰু 160 দিয়ে, অৰ্থাৎ 13 : 16।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "100 and 100",
+        "as": "100 আৰু 100"
+       },
+       {
+        "en": "130 and 160",
+        "as": "130 আৰু 160"
+       },
+       {
+        "en": "13 : 16",
+        "as": "13 : 16"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m5.x.s2",
+     "type": "story",
+     "title": {
+      "en": "When a price falls",
+      "as": "দাম কমিলে"
+     },
+     "text": [
+      {
+       "en": "Width is the price and height is how much you buy. The area is your spending, which stays fixed.",
+       "as": "প্ৰস্থ দাম, উচ্চতা কিমান কিনা। কালি তোমাৰ খৰচ, ই স্থিৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "mandays",
+      "men": 20,
+      "days": 15,
+      "max": 30,
+      "min": 6
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Drop the price from 20 to 16, a 20% fall.",
+        "as": "দাম 20ৰ পৰা 16 কৰা, 20% হ্ৰাস।"
+       },
+       "goal": {
+        "men": 16
+       },
+       "then": {
+        "en": "Height rises from 15 to 18.75, which is 25% more. A fall of 20% allows a rise of 25%.",
+        "as": "উচ্চতা 15ৰ পৰা 18.75 হয়, অৰ্থাৎ 25% বেছি। 20% হ্ৰাসে 25% বৃদ্ধি দিয়ে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.x.q1",
+     "type": "solve",
+     "skill": "p-compare",
+     "hints": [
+      {
+       "en": "Take each number as 100.",
+       "as": "প্ৰতিটো সংখ্যা 100 ধৰা।"
+      }
+     ],
+     "q": {
+      "en": "Two equal numbers change by +30% and +60%. Write the ratio of the new numbers as a fraction.",
+      "as": "দুটা সমান সংখ্যাৰ পৰিৱৰ্তন +30% আৰু +60%। নতুন সংখ্যাৰ অনুপাত ভগ্নাংশত লিখা।"
+     },
+     "answer": "13/16",
+     "why": {
+      "en": "130 : 160.",
+      "as": "130 : 160।"
+     },
+     "traps": [
+      {
+       "ans": "1/2",
+       "tag": "m-pct-add",
+       "why": {
+        "en": "Compare the new values, 100 + x and 100 + y, not the percentages.",
+        "as": "শতাংশ নহয়, নতুন মান 100 + x আৰু 100 + y তুলনা কৰা।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Two equal numbers change by +30% and +60%. Write the ratio of the new numbers as a fraction.",
+        "as": "দুটা সমান সংখ্যাৰ পৰিৱৰ্তন +30% আৰু +60%। নতুন সংখ্যাৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "13/16",
+       "why": {
+        "en": "130 : 160.",
+        "as": "130 : 160।"
+       },
+       "traps": [
+        {
+         "ans": "1/2",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "Compare the new values, 100 + x and 100 + y, not the percentages.",
+          "as": "শতাংশ নহয়, নতুন মান 100 + x আৰু 100 + y তুলনা কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two equal numbers change by +12% and +4%. Write the ratio of the new numbers as a fraction.",
+        "as": "দুটা সমান সংখ্যাৰ পৰিৱৰ্তন +12% আৰু +4%। নতুন সংখ্যাৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "14/13",
+       "why": {
+        "en": "112 : 104.",
+        "as": "112 : 104।"
+       },
+       "traps": [
+        {
+         "ans": "3",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "Compare the new values, 100 + x and 100 + y, not the percentages.",
+          "as": "শতাংশ নহয়, নতুন মান 100 + x আৰু 100 + y তুলনা কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two equal numbers change by +20% and −10%. Write the ratio of the new numbers as a fraction.",
+        "as": "দুটা সমান সংখ্যাৰ পৰিৱৰ্তন +20% আৰু −10%। নতুন সংখ্যাৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "4/3",
+       "why": {
+        "en": "120 : 90.",
+        "as": "120 : 90।"
+       },
+       "traps": [
+        {
+         "ans": "2",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "Compare the new values, 100 + x and 100 + y, not the percentages.",
+          "as": "শতাংশ নহয়, নতুন মান 100 + x আৰু 100 + y তুলনা কৰা।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Two equal numbers change by +35% and −10%. Write the ratio of the new numbers as a fraction.",
+        "as": "দুটা সমান সংখ্যাৰ পৰিৱৰ্তন +35% আৰু −10%। নতুন সংখ্যাৰ অনুপাত ভগ্নাংশত লিখা।"
+       },
+       "answer": "3/2",
+       "why": {
+        "en": "135 : 90.",
+        "as": "135 : 90।"
+       },
+       "traps": [
+        {
+         "ans": "7/2",
+         "tag": "m-pct-add",
+         "why": {
+          "en": "Compare the new values, 100 + x and 100 + y, not the percentages.",
+          "as": "শতাংশ নহয়, নতুন মান 100 + x আৰু 100 + y তুলনা কৰা।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.x.q2",
+     "type": "solve",
+     "skill": "p-compare",
+     "q": {
+      "en": "The price of rice falls 20%. By what percentage can a family buy more for the same money?",
+      "as": "চাউলৰ দাম 20% কমিল। একে ধনেৰে এটা পৰিয়ালে কিমান শতাংশ বেছি কিনিব পাৰিব?"
+     },
+     "answer": "25",
+     "suffix": {
+      "en": "%",
+      "as": "%"
+     },
+     "why": {
+      "en": "$\\frac{20}{80} \\times 100$.",
+      "as": "$\\frac{20}{80} \\times 100$।"
+     },
+     "traps": [
+      {
+       "ans": "20",
+       "tag": "m-pct-more-less",
+       "why": {
+        "en": "The rise is measured on the lower price, so it is bigger than the fall.",
+        "as": "বৃদ্ধি কম দামৰ ওপৰত জোখা হয়, সেয়ে ই হ্ৰাসতকৈ ডাঙৰ।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The price of rice falls 20%. By what percentage can a family buy more for the same money?",
+        "as": "চাউলৰ দাম 20% কমিল। একে ধনেৰে এটা পৰিয়ালে কিমান শতাংশ বেছি কিনিব পাৰিব?"
+       },
+       "answer": "25",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{20}{80} \\times 100$.",
+        "as": "$\\frac{20}{80} \\times 100$।"
+       },
+       "traps": [
+        {
+         "ans": "20",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "The rise is measured on the lower price, so it is bigger than the fall.",
+          "as": "বৃদ্ধি কম দামৰ ওপৰত জোখা হয়, সেয়ে ই হ্ৰাসতকৈ ডাঙৰ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The price of rice falls 25%. By what percentage can a family buy more for the same money?",
+        "as": "চাউলৰ দাম 25% কমিল। একে ধনেৰে এটা পৰিয়ালে কিমান শতাংশ বেছি কিনিব পাৰিব?"
+       },
+       "answer": "100/3",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{25}{75} \\times 100$.",
+        "as": "$\\frac{25}{75} \\times 100$।"
+       },
+       "traps": [
+        {
+         "ans": "25",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "The rise is measured on the lower price, so it is bigger than the fall.",
+          "as": "বৃদ্ধি কম দামৰ ওপৰত জোখা হয়, সেয়ে ই হ্ৰাসতকৈ ডাঙৰ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The price of rice falls 50%. By what percentage can a family buy more for the same money?",
+        "as": "চাউলৰ দাম 50% কমিল। একে ধনেৰে এটা পৰিয়ালে কিমান শতাংশ বেছি কিনিব পাৰিব?"
+       },
+       "answer": "100",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{50}{50} \\times 100$.",
+        "as": "$\\frac{50}{50} \\times 100$।"
+       },
+       "traps": [
+        {
+         "ans": "50",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "The rise is measured on the lower price, so it is bigger than the fall.",
+          "as": "বৃদ্ধি কম দামৰ ওপৰত জোখা হয়, সেয়ে ই হ্ৰাসতকৈ ডাঙৰ।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The price of rice falls 60%. By what percentage can a family buy more for the same money?",
+        "as": "চাউলৰ দাম 60% কমিল। একে ধনেৰে এটা পৰিয়ালে কিমান শতাংশ বেছি কিনিব পাৰিব?"
+       },
+       "answer": "150",
+       "suffix": {
+        "en": "%",
+        "as": "%"
+       },
+       "why": {
+        "en": "$\\frac{60}{40} \\times 100$.",
+        "as": "$\\frac{60}{40} \\times 100$।"
+       },
+       "traps": [
+        {
+         "ans": "60",
+         "tag": "m-pct-more-less",
+         "why": {
+          "en": "The rise is measured on the lower price, so it is bigger than the fall.",
+          "as": "বৃদ্ধি কম দামৰ ওপৰত জোখা হয়, সেয়ে ই হ্ৰাসতকৈ ডাঙৰ।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m5.x.q3",
+     "type": "stepwise",
+     "skill": "p-compare",
+     "q": {
+      "en": "P is 25% less than Q. By what percentage is Q more than P?",
+      "as": "P Qতকৈ 25% কম। Q Pতকৈ কিমান শতাংশ বেছি?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Take Q = 100. Then P =",
+        "as": "Q = 100 ধৰা। তেনেহ'লে P ="
+       },
+       "options": [
+        {
+         "en": "125",
+         "as": "125"
+        },
+        {
+         "en": "75",
+         "as": "75"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "25 less than 100.",
+        "as": "100তকৈ 25 কম।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Base for 'more than P'?",
+        "as": "'Pতকৈ বেছি'ৰ ভিত্তি?"
+       },
+       "options": [
+        {
+         "en": "P: 75",
+         "as": "P: 75"
+        },
+        {
+         "en": "Q: 100",
+         "as": "Q: 100"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "The comparison is against P.",
+        "as": "তুলনা Pৰ সৈতে।"
+       },
+       "tag": "m-pct-more-less"
+      },
+      {
+       "ask": {
+        "en": "Q is more by",
+        "as": "Q বেছি"
+       },
+       "options": [
+        {
+         "en": "$\\frac{100}{3}$%",
+         "as": "$\\frac{100}{3}$%"
+        },
+        {
+         "en": "25%",
+         "as": "25%"
+        },
+        {
+         "en": "35%",
+         "as": "35%"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "$\\frac{25}{75} \\times 100$.",
+        "as": "$\\frac{25}{75} \\times 100$।"
+       }
+      }
+     ],
+     "why": {
+      "en": "Whichever follows 'than' is the base.",
+      "as": "'তকৈ'ৰ আগৰ সংখ্যাটোৱেই ভিত্তি।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "P is 25% less than Q. By what percentage is Q more than P?",
+        "as": "P Qতকৈ 25% কম। Q Pতকৈ কিমান শতাংশ বেছি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take Q = 100. Then P =",
+          "as": "Q = 100 ধৰা। তেনেহ'লে P ="
+         },
+         "options": [
+          {
+           "en": "125",
+           "as": "125"
+          },
+          {
+           "en": "75",
+           "as": "75"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "25 less than 100.",
+          "as": "100তকৈ 25 কম।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Base for 'more than P'?",
+          "as": "'Pতকৈ বেছি'ৰ ভিত্তি?"
+         },
+         "options": [
+          {
+           "en": "P: 75",
+           "as": "P: 75"
+          },
+          {
+           "en": "Q: 100",
+           "as": "Q: 100"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The comparison is against P.",
+          "as": "তুলনা Pৰ সৈতে।"
+         },
+         "tag": "m-pct-more-less"
+        },
+        {
+         "ask": {
+          "en": "Q is more by",
+          "as": "Q বেছি"
+         },
+         "options": [
+          {
+           "en": "$\\frac{100}{3}$%",
+           "as": "$\\frac{100}{3}$%"
+          },
+          {
+           "en": "25%",
+           "as": "25%"
+          },
+          {
+           "en": "35%",
+           "as": "35%"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "$\\frac{25}{75} \\times 100$.",
+          "as": "$\\frac{25}{75} \\times 100$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Whichever follows 'than' is the base.",
+        "as": "'তকৈ'ৰ আগৰ সংখ্যাটোৱেই ভিত্তি।"
+       }
+      },
+      {
+       "q": {
+        "en": "P is 20% less than Q. By what percentage is Q more than P?",
+        "as": "P Qতকৈ 20% কম। Q Pতকৈ কিমান শতাংশ বেছি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take Q = 100. Then P =",
+          "as": "Q = 100 ধৰা। তেনেহ'লে P ="
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "80",
+           "as": "80"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "20 less than 100.",
+          "as": "100তকৈ 20 কম।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Base for 'more than P'?",
+          "as": "'Pতকৈ বেছি'ৰ ভিত্তি?"
+         },
+         "options": [
+          {
+           "en": "Q: 100",
+           "as": "Q: 100"
+          },
+          {
+           "en": "P: 80",
+           "as": "P: 80"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The comparison is against P.",
+          "as": "তুলনা Pৰ সৈতে।"
+         },
+         "tag": "m-pct-more-less"
+        },
+        {
+         "ask": {
+          "en": "Q is more by",
+          "as": "Q বেছি"
+         },
+         "options": [
+          {
+           "en": "20%",
+           "as": "20%"
+          },
+          {
+           "en": "30%",
+           "as": "30%"
+          },
+          {
+           "en": "25%",
+           "as": "25%"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "$\\frac{20}{80} \\times 100$.",
+          "as": "$\\frac{20}{80} \\times 100$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Whichever follows 'than' is the base.",
+        "as": "'তকৈ'ৰ আগৰ সংখ্যাটোৱেই ভিত্তি।"
+       }
+      },
+      {
+       "q": {
+        "en": "P is 40% less than Q. By what percentage is Q more than P?",
+        "as": "P Qতকৈ 40% কম। Q Pতকৈ কিমান শতাংশ বেছি?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Take Q = 100. Then P =",
+          "as": "Q = 100 ধৰা। তেনেহ'লে P ="
+         },
+         "options": [
+          {
+           "en": "40",
+           "as": "40"
+          },
+          {
+           "en": "140",
+           "as": "140"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "40 less than 100.",
+          "as": "100তকৈ 40 কম।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Base for 'more than P'?",
+          "as": "'Pতকৈ বেছি'ৰ ভিত্তি?"
+         },
+         "options": [
+          {
+           "en": "P: 60",
+           "as": "P: 60"
+          },
+          {
+           "en": "Q: 100",
+           "as": "Q: 100"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The comparison is against P.",
+          "as": "তুলনা Pৰ সৈতে।"
+         },
+         "tag": "m-pct-more-less"
+        },
+        {
+         "ask": {
+          "en": "Q is more by",
+          "as": "Q বেছি"
+         },
+         "options": [
+          {
+           "en": "50%",
+           "as": "50%"
+          },
+          {
+           "en": "$\\frac{200}{3}$%",
+           "as": "$\\frac{200}{3}$%"
+          },
+          {
+           "en": "40%",
+           "as": "40%"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "$\\frac{40}{60} \\times 100$.",
+          "as": "$\\frac{40}{60} \\times 100$।"
+         }
+        }
+       ],
+       "why": {
+        "en": "Whichever follows 'than' is the base.",
+        "as": "'তকৈ'ৰ আগৰ সংখ্যাটোৱেই ভিত্তি।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m5.x.q4",
+     "type": "tf",
+     "skill": "p-compare",
+     "s": {
+      "en": "If a price falls 50%, you can buy twice as much for the same money.",
+      "as": "দাম 50% কমিলে একে ধনেৰে দুগুণ কিনিব পাৰি।"
+     },
+     "answer": true,
+     "why": {
+      "en": "That is a 100% rise in what you can buy.",
+      "as": "ই কিনিব পৰা পৰিমাণৰ 100% বৃদ্ধি।"
+     }
+    },
+    {
+     "id": "m5.x.q5",
+     "type": "match",
+     "skill": "p-compare",
+     "q": {
+      "en": "Match the change to the ratio against an equal number at 100",
+      "as": "পৰিৱৰ্তনক 100ৰ সৈতে অনুপাতৰ লগত মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "+25%",
+        "as": "+25%"
+       },
+       {
+        "en": "5 : 4",
+        "as": "5 : 4"
+       }
+      ],
+      [
+       {
+        "en": "−20%",
+        "as": "−20%"
+       },
+       {
+        "en": "4 : 5",
+        "as": "4 : 5"
+       }
+      ],
+      [
+       {
+        "en": "+50%",
+        "as": "+50%"
+       },
+       {
+        "en": "3 : 2",
+        "as": "3 : 2"
+       }
+      ],
+      [
+       {
+        "en": "−50%",
+        "as": "−50%"
+       },
+       {
+        "en": "1 : 2",
+        "as": "1 : 2"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Write 100 ± x over 100 and simplify.",
+      "as": "100 ± x ভাগ 100 লিখি সৰল কৰা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Percentage test",
+   "as": "শতাংশৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m5.t.q1",
+    "type": "mcq",
+    "skill": "p-change",
+    "q": {
+     "en": "A price rises from ₹40 to ₹50. The percentage rise is",
+     "as": "দাম ₹40ৰ পৰা ₹50 হ'ল। শতাংশ বৃদ্ধি হ'ল"
+    },
+    "why": {
+     "en": "Change divided by the original, times 100.",
+     "as": "পৰিৱৰ্তন ভাগ মূল মান, পূৰণ 100।"
+    },
+    "options": [
+     {
+      "en": "30%",
+      "as": "30%"
+     },
+     {
+      "en": "10%",
+      "as": "10%"
+     },
+     {
+      "en": "20%",
+      "as": "20%"
+     },
+     {
+      "en": "25%",
+      "as": "25%"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-pct-base",
+      "why": {
+       "en": "You used the new value as the base. A percentage change is always out of the original value.",
+       "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A price rises from ₹40 to ₹50. The percentage rise is",
+       "as": "দাম ₹40ৰ পৰা ₹50 হ'ল। শতাংশ বৃদ্ধি হ'ল"
+      },
+      "why": {
+       "en": "Change divided by the original, times 100.",
+       "as": "পৰিৱৰ্তন ভাগ মূল মান, পূৰণ 100।"
+      },
+      "options": [
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "10%",
+        "as": "10%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-pct-base",
+        "why": {
+         "en": "You used the new value as the base. A percentage change is always out of the original value.",
+         "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A price rises from ₹60 to ₹75. The percentage rise is",
+       "as": "দাম ₹60ৰ পৰা ₹75 হ'ল। শতাংশ বৃদ্ধি হ'ল"
+      },
+      "why": {
+       "en": "Change divided by the original, times 100.",
+       "as": "পৰিৱৰ্তন ভাগ মূল মান, পূৰণ 100।"
+      },
+      "options": [
+       {
+        "en": "30%",
+        "as": "30%"
+       },
+       {
+        "en": "15%",
+        "as": "15%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-pct-base",
+        "why": {
+         "en": "You used the new value as the base. A percentage change is always out of the original value.",
+         "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A price rises from ₹80 to ₹92. The percentage rise is",
+       "as": "দাম ₹80ৰ পৰা ₹92 হ'ল। শতাংশ বৃদ্ধি হ'ল"
+      },
+      "why": {
+       "en": "Change divided by the original, times 100.",
+       "as": "পৰিৱৰ্তন ভাগ মূল মান, পূৰণ 100।"
+      },
+      "options": [
+       {
+        "en": "12%",
+        "as": "12%"
+       },
+       {
+        "en": "$\\frac{300}{23}$%",
+        "as": "$\\frac{300}{23}$%"
+       },
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "15%",
+        "as": "15%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-pct-base",
+        "why": {
+         "en": "You used the new value as the base. A percentage change is always out of the original value.",
+         "as": "তুমি নতুন মানক ভিত্তি ধৰিলা। শতাংশ পৰিৱৰ্তন সদায় মূল মানৰ ওপৰত।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m5.t.q2",
+    "type": "mcq",
+    "skill": "p-succ",
+    "q": {
+     "en": "Two discounts of 5% and 20% equal a single discount of",
+     "as": "5% আৰু 20% দুটা ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+    },
+    "why": {
+     "en": "Use $a + b - \\frac{ab}{100}$ for two falls.",
+     "as": "দুটা হ্ৰাসৰ বাবে $a + b - \\frac{ab}{100}$।"
+    },
+    "options": [
+     {
+      "en": "24%",
+      "as": "24%"
+     },
+     {
+      "en": "26%",
+      "as": "26%"
+     },
+     {
+      "en": "25%",
+      "as": "25%"
+     },
+     {
+      "en": "23%",
+      "as": "23%"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-pct-add",
+      "why": {
+       "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+       "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Two discounts of 5% and 20% equal a single discount of",
+       "as": "5% আৰু 20% দুটা ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+      },
+      "why": {
+       "en": "Use $a + b - \\frac{ab}{100}$ for two falls.",
+       "as": "দুটা হ্ৰাসৰ বাবে $a + b - \\frac{ab}{100}$।"
+      },
+      "options": [
+       {
+        "en": "24%",
+        "as": "24%"
+       },
+       {
+        "en": "26%",
+        "as": "26%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "23%",
+        "as": "23%"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-pct-add",
+        "why": {
+         "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+         "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two discounts of 25% and 40% equal a single discount of",
+       "as": "25% আৰু 40% দুটা ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+      },
+      "why": {
+       "en": "Use $a + b - \\frac{ab}{100}$ for two falls.",
+       "as": "দুটা হ্ৰাসৰ বাবে $a + b - \\frac{ab}{100}$।"
+      },
+      "options": [
+       {
+        "en": "75%",
+        "as": "75%"
+       },
+       {
+        "en": "64%",
+        "as": "64%"
+       },
+       {
+        "en": "65%",
+        "as": "65%"
+       },
+       {
+        "en": "55%",
+        "as": "55%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-pct-add",
+        "why": {
+         "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+         "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two discounts of 10% and 40% equal a single discount of",
+       "as": "10% আৰু 40% দুটা ৰেহাই একক কিমান ৰেহাইৰ সমান?"
+      },
+      "why": {
+       "en": "Use $a + b - \\frac{ab}{100}$ for two falls.",
+       "as": "দুটা হ্ৰাসৰ বাবে $a + b - \\frac{ab}{100}$।"
+      },
+      "options": [
+       {
+        "en": "46%",
+        "as": "46%"
+       },
+       {
+        "en": "50%",
+        "as": "50%"
+       },
+       {
+        "en": "54%",
+        "as": "54%"
+       },
+       {
+        "en": "49%",
+        "as": "49%"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-pct-add",
+        "why": {
+         "en": "You added the two percentages. The second change acts on the new value, so use $a + b + \\frac{ab}{100}$.",
+         "as": "তুমি দুটা শতাংশ যোগ কৰিলা। দ্বিতীয় পৰিৱৰ্তন নতুন মানৰ ওপৰত হয়, সেয়ে $a + b + \\frac{ab}{100}$ ব্যৱহাৰ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m5.t.q3",
+    "type": "mcq",
+    "skill": "p-compare",
+    "q": {
+     "en": "If A's income is 25% more than B's, B's income is less than A's by",
+     "as": "Aৰ আয় Bতকৈ 25% বেছি হ'লে Bৰ আয় Aতকৈ কম"
+    },
+    "why": {
+     "en": "Take B as 100 and compare with A.",
+     "as": "B = 100 ধৰি Aৰ সৈতে তুলনা কৰা।"
+    },
+    "options": [
+     {
+      "en": "20%",
+      "as": "20%"
+     },
+     {
+      "en": "25%",
+      "as": "25%"
+     },
+     {
+      "en": "23%",
+      "as": "23%"
+     },
+     {
+      "en": "30%",
+      "as": "30%"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 1,
+      "tag": "m-pct-more-less",
+      "why": {
+       "en": "The base switches to A, so the percentage is smaller.",
+       "as": "ভিত্তি Aলৈ সলনি হয়, সেয়ে শতাংশ সৰু হয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "If A's income is 25% more than B's, B's income is less than A's by",
+       "as": "Aৰ আয় Bতকৈ 25% বেছি হ'লে Bৰ আয় Aতকৈ কম"
+      },
+      "why": {
+       "en": "Take B as 100 and compare with A.",
+       "as": "B = 100 ধৰি Aৰ সৈতে তুলনা কৰা।"
+      },
+      "options": [
+       {
+        "en": "20%",
+        "as": "20%"
+       },
+       {
+        "en": "25%",
+        "as": "25%"
+       },
+       {
+        "en": "23%",
+        "as": "23%"
+       },
+       {
+        "en": "30%",
+        "as": "30%"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-pct-more-less",
+        "why": {
+         "en": "The base switches to A, so the percentage is smaller.",
+         "as": "ভিত্তি Aলৈ সলনি হয়, সেয়ে শতাংশ সৰু হয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If A's income is 100% more than B's, B's income is less than A's by",
+       "as": "Aৰ আয় Bতকৈ 100% বেছি হ'লে Bৰ আয় Aতকৈ কম"
+      },
+      "why": {
+       "en": "Take B as 100 and compare with A.",
+       "as": "B = 100 ধৰি Aৰ সৈতে তুলনা কৰা।"
+      },
+      "options": [
+       {
+        "en": "55%",
+        "as": "55%"
+       },
+       {
+        "en": "105%",
+        "as": "105%"
+       },
+       {
+        "en": "100%",
+        "as": "100%"
+       },
+       {
+        "en": "50%",
+        "as": "50%"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-pct-more-less",
+        "why": {
+         "en": "The base switches to A, so the percentage is smaller.",
+         "as": "ভিত্তি Aলৈ সলনি হয়, সেয়ে শতাংশ সৰু হয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If A's income is 60% more than B's, B's income is less than A's by",
+       "as": "Aৰ আয় Bতকৈ 60% বেছি হ'লে Bৰ আয় Aতকৈ কম"
+      },
+      "why": {
+       "en": "Take B as 100 and compare with A.",
+       "as": "B = 100 ধৰি Aৰ সৈতে তুলনা কৰা।"
+      },
+      "options": [
+       {
+        "en": "37.5%",
+        "as": "37.5%"
+       },
+       {
+        "en": "60%",
+        "as": "60%"
+       },
+       {
+        "en": "65%",
+        "as": "65%"
+       },
+       {
+        "en": "42.5%",
+        "as": "42.5%"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-pct-more-less",
+        "why": {
+         "en": "The base switches to A, so the percentage is smaller.",
+         "as": "ভিত্তি Aলৈ সলনি হয়, সেয়ে শতাংশ সৰু হয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m5.t.q4",
+    "type": "mcq",
+    "skill": "p-of",
+    "q": {
+     "en": "30% of a number is 72. The number is",
+     "as": "এটা সংখ্যাৰ 30% হ'ল 72। সংখ্যাটো হ'ল"
+    },
+    "why": {
+     "en": "1% is the part ÷ 30; 100% is that times 100.",
+     "as": "1% = অংশ ÷ 30; 100% = তাৰ 100 গুণ।"
+    },
+    "options": [
+     {
+      "en": "260",
+      "as": "260"
+     },
+     {
+      "en": "240",
+      "as": "240"
+     },
+     {
+      "en": "220",
+      "as": "220"
+     },
+     {
+      "en": "$\\frac{108}{5}$",
+      "as": "$\\frac{108}{5}$"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-pct-base",
+      "why": {
+       "en": "You took a percentage of the part. Here the part is given, so divide up to 100%.",
+       "as": "তুমি অংশটোৰে শতাংশ ল'লা। অংশটো দিয়া আছে, সেয়ে 100%লৈ হৰণ কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "30% of a number is 72. The number is",
+       "as": "এটা সংখ্যাৰ 30% হ'ল 72। সংখ্যাটো হ'ল"
+      },
+      "why": {
+       "en": "1% is the part ÷ 30; 100% is that times 100.",
+       "as": "1% = অংশ ÷ 30; 100% = তাৰ 100 গুণ।"
+      },
+      "options": [
+       {
+        "en": "260",
+        "as": "260"
+       },
+       {
+        "en": "240",
+        "as": "240"
+       },
+       {
+        "en": "220",
+        "as": "220"
+       },
+       {
+        "en": "$\\frac{108}{5}$",
+        "as": "$\\frac{108}{5}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-pct-base",
+        "why": {
+         "en": "You took a percentage of the part. Here the part is given, so divide up to 100%.",
+         "as": "তুমি অংশটোৰে শতাংশ ল'লা। অংশটো দিয়া আছে, সেয়ে 100%লৈ হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "15% of a number is 45. The number is",
+       "as": "এটা সংখ্যাৰ 15% হ'ল 45। সংখ্যাটো হ'ল"
+      },
+      "why": {
+       "en": "1% is the part ÷ 15; 100% is that times 100.",
+       "as": "1% = অংশ ÷ 15; 100% = তাৰ 100 গুণ।"
+      },
+      "options": [
+       {
+        "en": "320",
+        "as": "320"
+       },
+       {
+        "en": "$\\frac{27}{4}$",
+        "as": "$\\frac{27}{4}$"
+       },
+       {
+        "en": "280",
+        "as": "280"
+       },
+       {
+        "en": "300",
+        "as": "300"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-pct-base",
+        "why": {
+         "en": "You took a percentage of the part. Here the part is given, so divide up to 100%.",
+         "as": "তুমি অংশটোৰে শতাংশ ল'লা। অংশটো দিয়া আছে, সেয়ে 100%লৈ হৰণ কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "40% of a number is 60. The number is",
+       "as": "এটা সংখ্যাৰ 40% হ'ল 60। সংখ্যাটো হ'ল"
+      },
+      "why": {
+       "en": "1% is the part ÷ 40; 100% is that times 100.",
+       "as": "1% = অংশ ÷ 40; 100% = তাৰ 100 গুণ।"
+      },
+      "options": [
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "130",
+        "as": "130"
+       },
+       {
+        "en": "170",
+        "as": "170"
+       },
+       {
+        "en": "150",
+        "as": "150"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-pct-base",
+        "why": {
+         "en": "You took a percentage of the part. Here the part is given, so divide up to 100%.",
+         "as": "তুমি অংশটোৰে শতাংশ ল'লা। অংশটো দিয়া আছে, সেয়ে 100%লৈ হৰণ কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m5.t.q5",
+    "type": "solve",
+    "skill": "p-change",
+    "q": {
+     "en": "After a 20% fall a value is 400. What was the original?",
+     "as": "20% হ্ৰাসৰ পিছত মান 400। মূল মান কিমান আছিল?"
+    },
+    "answer": "500",
+    "why": {
+     "en": "Divide by 4/5.",
+     "as": "4/5ৰে হৰণ কৰা।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "After a 20% fall a value is 400. What was the original?",
+       "as": "20% হ্ৰাসৰ পিছত মান 400। মূল মান কিমান আছিল?"
+      },
+      "answer": "500",
+      "why": {
+       "en": "Divide by 4/5.",
+       "as": "4/5ৰে হৰণ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "After a 25% fall a value is 600. What was the original?",
+       "as": "25% হ্ৰাসৰ পিছত মান 600। মূল মান কিমান আছিল?"
+      },
+      "answer": "800",
+      "why": {
+       "en": "Divide by 3/4.",
+       "as": "3/4ৰে হৰণ কৰা।"
+      }
+     },
+     {
+      "q": {
+       "en": "After a 10% fall a value is 540. What was the original?",
+       "as": "10% হ্ৰাসৰ পিছত মান 540। মূল মান কিমান আছিল?"
+      },
+      "answer": "600",
+      "why": {
+       "en": "Divide by 9/10.",
+       "as": "9/10ৰে হৰণ কৰা।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,307 @@
+{
+ "id": "mathematics",
+ "order": 0,
+ "title": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "eyebrow": {
+  "en": "Learn by doing",
+  "as": "কৰি শিকা"
+ },
+ "subtitle": {
+  "en": "Find your weak points, fix them and build up",
+  "as": "দুৰ্বলতা বিচাৰি উলিয়াই ঠিক কৰা আৰু আগবাঢ়া"
+ },
+ "tabs": [
+  "lessons",
+  "skills",
+  "profile"
+ ],
+ "bank": "content/questions/mathematics.json",
+ "skills": "content/skills/mathematics.json",
+ "kings": [
+  {
+   "n": 1,
+   "id": "math-numbers",
+   "name": {
+    "en": "Numbers that talk",
+    "as": "কথা কোৱা সংখ্যা"
+   },
+   "reign": {
+    "en": "Types, divisibility, unit digits",
+    "as": "প্ৰকাৰ, বিভাজ্যতা, একক অংক"
+   },
+   "face": "math/numbers.webp",
+   "tier": "B",
+   "lesson": "math-01-numbers"
+  },
+  {
+   "n": 2,
+   "id": "math-lcm",
+   "name": {
+    "en": "LCM and HCF",
+    "as": "ল.সা.গু. আৰু গ.সা.গু."
+   },
+   "reign": {
+    "en": "Factors, multiples, the product rule",
+    "as": "গুণনীয়ক, গুণিতক, পূৰণফলৰ নিয়ম"
+   },
+   "face": "math/lcm.webp",
+   "tier": "A",
+   "lesson": "math-02-lcm-hcf"
+  },
+  {
+   "n": 3,
+   "id": "math-fractions",
+   "name": {
+    "en": "Fractions you can see",
+    "as": "দেখিব পৰা ভগ্নাংশ"
+   },
+   "reign": {
+    "en": "Meaning, adding, decimals",
+    "as": "অৰ্থ, যোগ, দশমিক"
+   },
+   "face": "math/fractions.webp",
+   "tier": "A",
+   "lesson": "math-03-fractions"
+  },
+  {
+   "n": 4,
+   "id": "math-simplify",
+   "name": {
+    "en": "Simplification and roots",
+    "as": "সৰলীকৰণ আৰু মূল"
+   },
+   "reign": {
+    "en": "BODMAS, squares, square roots",
+    "as": "BODMAS, বৰ্গ, বৰ্গমূল"
+   },
+   "face": "math/simplify.webp",
+   "tier": "A",
+   "lesson": "math-04-simplification"
+  },
+  {
+   "n": 5,
+   "id": "math-percentage",
+   "name": {
+    "en": "Percentage",
+    "as": "শতাংশ"
+   },
+   "reign": {
+    "en": "Out of 100, change, successive change",
+    "as": "এশৰ ভিতৰত, পৰিৱৰ্তন, ক্ৰমিক পৰিৱৰ্তন"
+   },
+   "face": "math/percentage.webp",
+   "tier": "A",
+   "lesson": "math-05-percentage"
+  },
+  {
+   "n": 6,
+   "id": "math-ratio",
+   "name": {
+    "en": "Ratio and proportion",
+    "as": "অনুপাত আৰু সমানুপাত"
+   },
+   "reign": {
+    "en": "Sharing, combining, proportion",
+    "as": "ভাগ, যোগ, সমানুপাত"
+   },
+   "face": "math/ratio.webp",
+   "tier": "A",
+   "lesson": "math-06-ratio"
+  },
+  {
+   "n": 7,
+   "id": "math-average",
+   "name": {
+    "en": "Average",
+    "as": "গড়"
+   },
+   "reign": {
+    "en": "Mean, replacement, weighted average",
+    "as": "গড়, সলনি, ভাৰিত গড়"
+   },
+   "face": "math/average.webp",
+   "tier": "A",
+   "lesson": "math-07-average"
+  },
+  {
+   "n": 8,
+   "id": "math-profit",
+   "name": {
+    "en": "Profit, loss and discount",
+    "as": "লাভ, লোকচান আৰু ৰেহাই"
+   },
+   "reign": {
+    "en": "Cost, marked price, discount",
+    "as": "ক্ৰয় মূল্য, চিহ্নিত মূল্য, ৰেহাই"
+   },
+   "face": "math/profit.webp",
+   "tier": "A",
+   "lesson": "math-08-profit"
+  },
+  {
+   "n": 9,
+   "id": "math-interest",
+   "name": {
+    "en": "Simple and compound interest",
+    "as": "সৰল আৰু চক্ৰবৃদ্ধি সুত"
+   },
+   "reign": {
+    "en": "Rate, time, growth",
+    "as": "হাৰ, সময়, বৃদ্ধি"
+   },
+   "face": "math/interest.webp",
+   "tier": "A",
+   "lesson": "math-09-interest"
+  },
+  {
+   "n": 10,
+   "id": "math-work",
+   "name": {
+    "en": "Time and work",
+    "as": "সময় আৰু কাম"
+   },
+   "reign": {
+    "en": "Rates, pipes and tanks",
+    "as": "হাৰ, পাইপ আৰু টেংকী"
+   },
+   "face": "math/work.webp",
+   "tier": "A",
+   "lesson": "math-10-work"
+  },
+  {
+   "n": 11,
+   "id": "math-speed",
+   "name": {
+    "en": "Speed, distance and trains",
+    "as": "গতি, দূৰত্ব আৰু ৰেল"
+   },
+   "reign": {
+    "en": "Average speed, relative speed",
+    "as": "গড় গতি, আপেক্ষিক গতি"
+   },
+   "face": "math/speed.webp",
+   "tier": "A",
+   "lesson": "math-11-speed"
+  },
+  {
+   "n": 12,
+   "id": "math-age",
+   "name": {
+    "en": "Age problems",
+    "as": "বয়সৰ সমস্যা"
+   },
+   "reign": {
+    "en": "Ratios across the years",
+    "as": "বছৰে বছৰে অনুপাত"
+   },
+   "face": "math/age.webp",
+   "tier": "C",
+   "lesson": "math-12-ages"
+  },
+  {
+   "n": 13,
+   "id": "math-sequence",
+   "name": {
+    "en": "AP and GP",
+    "as": "সমান্তৰ আৰু গুণোত্তৰ শ্ৰেণী"
+   },
+   "reign": {
+    "en": "Terms and sums",
+    "as": "পদ আৰু যোগফল"
+   },
+   "face": "math/sequence.webp",
+   "tier": "B",
+   "lesson": "math-13-sequences"
+  },
+  {
+   "n": 14,
+   "id": "math-trig",
+   "name": {
+    "en": "Trigonometry",
+    "as": "ত্ৰিকোণমিতি"
+   },
+   "reign": {
+    "en": "Ratios, values, height and distance",
+    "as": "অনুপাত, মান, উচ্চতা আৰু দূৰত্ব"
+   },
+   "face": "math/trig.webp",
+   "tier": "B",
+   "lesson": "math-14-trig"
+  },
+  {
+   "n": 15,
+   "id": "math-geometry",
+   "name": {
+    "en": "Plane figures",
+    "as": "সমতল আকৃতি"
+   },
+   "reign": {
+    "en": "Triangle, quadrilateral, circle",
+    "as": "ত্ৰিভুজ, চতুৰ্ভুজ, বৃত্ত"
+   },
+   "face": "math/geometry.webp",
+   "tier": "A",
+   "lesson": "math-15-plane"
+  },
+  {
+   "n": 16,
+   "id": "math-solids",
+   "name": {
+    "en": "Solid figures",
+    "as": "ঘন আকৃতি"
+   },
+   "reign": {
+    "en": "Surface area and volume",
+    "as": "পৃষ্ঠকালি আৰু আয়তন"
+   },
+   "face": "math/solids.webp",
+   "tier": "B",
+   "lesson": "math-16-solids"
+  }
+ ],
+ "eras": [
+  {
+   "id": "math-foundations",
+   "title": {
+    "en": "Number foundations",
+    "as": "সংখ্যাৰ ভেটি"
+   },
+   "from": 1,
+   "to": 4
+  },
+  {
+   "id": "math-money",
+   "title": {
+    "en": "Percent and money",
+    "as": "শতাংশ আৰু ধন"
+   },
+   "from": 5,
+   "to": 9
+  },
+  {
+   "id": "math-motion",
+   "title": {
+    "en": "Rates in motion",
+    "as": "গতিৰ হাৰ"
+   },
+   "from": 10,
+   "to": 12
+  },
+  {
+   "id": "math-shape",
+   "title": {
+    "en": "Patterns and shapes",
+    "as": "শ্ৰেণী আৰু আকৃতি"
+   },
+   "from": 13,
+   "to": 16
+  }
+ ],
+ "eraWord": {
+  "en": "section",
+  "as": "খণ্ড"
+ }
+}

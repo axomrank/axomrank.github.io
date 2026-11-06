@@ -1,0 +1,3999 @@
+{
+ "id": "math-06-ratio",
+ "course": "mathematics",
+ "no": 6,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Ratio and proportion",
+  "as": "অনুপাত আৰু সমানুপাত"
+ },
+ "reign": {
+  "en": "Sharing, combining, proportion",
+  "as": "ভাগ, যোগ, সমানুপাত"
+ },
+ "portrait": "math/ratio.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "Counting blocks",
+    "as": "খণ্ড গণনা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "A ratio a : b means a blocks for every b blocks.",
+     "as": "a : b অনুপাত মানে প্ৰতি a খণ্ডৰ বিপৰীতে b খণ্ড।"
+    },
+    {
+     "en": "One block = total ÷ (a + b).",
+     "as": "এটা খণ্ড = মুঠ ÷ (a + b)।"
+    },
+    {
+     "en": "A share of the whole is a fraction with a + b below.",
+     "as": "গোটাৰ ভাগ হ'ল তলত a + b থকা ভগ্নাংশ।"
+    },
+    {
+     "en": "If you know the difference, one block = difference ÷ (b − a).",
+     "as": "পাৰ্থক্য জানিলে এটা খণ্ড = পাৰ্থক্য ÷ (b − a)।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m6.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "A ratio counts blocks",
+      "as": "অনুপাতে খণ্ড গণে"
+     },
+     "text": [
+      {
+       "en": "Mina and Rohan share ₹600 in the ratio 2 : 3. That means 5 equal blocks in all.",
+       "as": "মিনা আৰু ৰোহনে ₹600 2 : 3 অনুপাতত ভাগ কৰে। মুঠ 5টা সমান খণ্ড।"
+      }
+     ],
+     "widget": {
+      "kind": "blocks",
+      "parts": [
+       2,
+       3
+      ],
+      "labels": [
+       {
+        "en": "Mina",
+        "as": "মিনা"
+       },
+       {
+        "en": "Rohan",
+        "as": "ৰোহন"
+       }
+      ],
+      "total": 600,
+      "min": 40,
+      "max": 200,
+      "step": 10
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide until the blocks make ₹600.",
+        "as": "খণ্ডবোৰ ₹600 নোহোৱালৈ টানা।"
+       },
+       "goal": {
+        "value": 120
+       },
+       "then": {
+        "en": "One block is ₹120, so Mina gets 2 blocks, ₹240, and Rohan gets 3 blocks, ₹360.",
+        "as": "এটা খণ্ড ₹120, সেয়ে মিনাই 2 খণ্ড ₹240, ৰোহনে 3 খণ্ড ₹360 পায়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Three people, same idea",
+      "as": "তিনিজন, একে ধাৰণা"
+     },
+     "text": [
+      {
+       "en": "₹900 shared in the ratio 1 : 2 : 3 is simply 6 blocks.",
+       "as": "₹900 1 : 2 : 3 অনুপাতত ভাগ মানে মাত্ৰ 6টা খণ্ড।"
+      }
+     ],
+     "widget": {
+      "kind": "blocks",
+      "parts": [
+       1,
+       2,
+       3
+      ],
+      "total": 900,
+      "min": 50,
+      "max": 250,
+      "step": 10
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Find what one block is worth.",
+        "as": "এটা খণ্ডৰ মান বিচাৰা।"
+       },
+       "goal": {
+        "value": 150
+       },
+       "then": {
+        "en": "₹150 a block gives shares of ₹150, ₹300 and ₹450, which add back to ₹900.",
+        "as": "খণ্ড প্ৰতি ₹150ত ভাগ ₹150, ₹300 আৰু ₹450, যোগফল ₹900।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u1.q1",
+     "type": "explore",
+     "skill": "r-share",
+     "q": {
+      "en": "Share ₹800 in the ratio 3 : 5. Slide to find one block.",
+      "as": "₹800 3 : 5 অনুপাতত ভাগ কৰা। এটা খণ্ডৰ মান উলিওৱা।"
+     },
+     "widget": {
+      "kind": "blocks",
+      "parts": [
+       3,
+       5
+      ],
+      "total": 800,
+      "min": 10,
+      "max": 200,
+      "step": 10
+     },
+     "target": 100,
+     "answerText": {
+      "en": "One block = ₹100",
+      "as": "এটা খণ্ড = ₹100"
+     },
+     "why": {
+      "en": "3 + 5 = 8 blocks, and 800 ÷ 8 = 100.",
+      "as": "3 + 5 = 8 খণ্ড, আৰু 800 ÷ 8 = 100।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Share ₹800 in the ratio 3 : 5. Slide to find one block.",
+        "as": "₹800 3 : 5 অনুপাতত ভাগ কৰা। এটা খণ্ডৰ মান উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         3,
+         5
+        ],
+        "total": 800,
+        "min": 10,
+        "max": 200,
+        "step": 10
+       },
+       "target": 100,
+       "answerText": {
+        "en": "One block = ₹100",
+        "as": "এটা খণ্ড = ₹100"
+       },
+       "why": {
+        "en": "3 + 5 = 8 blocks, and 800 ÷ 8 = 100.",
+        "as": "3 + 5 = 8 খণ্ড, আৰু 800 ÷ 8 = 100।"
+       }
+      },
+      {
+       "q": {
+        "en": "Share ₹1400 in the ratio 2 : 5. Slide to find one block.",
+        "as": "₹1400 2 : 5 অনুপাতত ভাগ কৰা। এটা খণ্ডৰ মান উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         2,
+         5
+        ],
+        "total": 1400,
+        "min": 10,
+        "max": 300,
+        "step": 10
+       },
+       "target": 200,
+       "answerText": {
+        "en": "One block = ₹200",
+        "as": "এটা খণ্ড = ₹200"
+       },
+       "why": {
+        "en": "2 + 5 = 7 blocks, and 1400 ÷ 7 = 200.",
+        "as": "2 + 5 = 7 খণ্ড, আৰু 1400 ÷ 7 = 200।"
+       }
+      },
+      {
+       "q": {
+        "en": "Share ₹900 in the ratio 4 : 5. Slide to find one block.",
+        "as": "₹900 4 : 5 অনুপাতত ভাগ কৰা। এটা খণ্ডৰ মান উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         4,
+         5
+        ],
+        "total": 900,
+        "min": 10,
+        "max": 200,
+        "step": 10
+       },
+       "target": 100,
+       "answerText": {
+        "en": "One block = ₹100",
+        "as": "এটা খণ্ড = ₹100"
+       },
+       "why": {
+        "en": "4 + 5 = 9 blocks, and 900 ÷ 9 = 100.",
+        "as": "4 + 5 = 9 খণ্ড, আৰু 900 ÷ 9 = 100।"
+       }
+      },
+      {
+       "q": {
+        "en": "Share ₹1500 in the ratio 1 : 2. Slide to find one block.",
+        "as": "₹1500 1 : 2 অনুপাতত ভাগ কৰা। এটা খণ্ডৰ মান উলিওৱা।"
+       },
+       "widget": {
+        "kind": "blocks",
+        "parts": [
+         1,
+         2
+        ],
+        "total": 1500,
+        "min": 10,
+        "max": 600,
+        "step": 10
+       },
+       "target": 500,
+       "answerText": {
+        "en": "One block = ₹500",
+        "as": "এটা খণ্ড = ₹500"
+       },
+       "why": {
+        "en": "1 + 2 = 3 blocks, and 1500 ÷ 3 = 500.",
+        "as": "1 + 2 = 3 খণ্ড, আৰু 1500 ÷ 3 = 500।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u1.q2",
+     "type": "solve",
+     "skill": "r-share",
+     "hints": [
+      {
+       "en": "How many blocks in all?",
+       "as": "মুঠ কেইটা খণ্ড?"
+      }
+     ],
+     "q": {
+      "en": "1200 students are boys and girls in the ratio 5 : 7. How many are girls?",
+      "as": "1200 জন ছাত্ৰ-ছাত্ৰীৰ ল'ৰা আৰু ছোৱালীৰ অনুপাত 5 : 7। ছোৱালী কিমান?"
+     },
+     "answer": "700",
+     "why": {
+      "en": "One block is 100, and girls are 7 blocks.",
+      "as": "এটা খণ্ড 100, ছোৱালী 7 খণ্ড।"
+     },
+     "traps": [
+      {
+       "ans": "600",
+       "tag": "m-ratio-part",
+       "why": {
+        "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+        "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+       }
+      },
+      {
+       "ans": "1680",
+       "tag": "m-ratio-part",
+       "why": {
+        "en": "The fraction is 7 out of 12, not 7 out of 5.",
+        "as": "ভগ্নাংশটো 12ৰ 7, 5ৰ 7 নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "1200 students are boys and girls in the ratio 5 : 7. How many are girls?",
+        "as": "1200 জন ছাত্ৰ-ছাত্ৰীৰ ল'ৰা আৰু ছোৱালীৰ অনুপাত 5 : 7। ছোৱালী কিমান?"
+       },
+       "answer": "700",
+       "why": {
+        "en": "One block is 100, and girls are 7 blocks.",
+        "as": "এটা খণ্ড 100, ছোৱালী 7 খণ্ড।"
+       },
+       "traps": [
+        {
+         "ans": "600",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+          "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+         }
+        },
+        {
+         "ans": "1680",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "The fraction is 7 out of 12, not 7 out of 5.",
+          "as": "ভগ্নাংশটো 12ৰ 7, 5ৰ 7 নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "720 students are boys and girls in the ratio 4 : 5. How many are girls?",
+        "as": "720 জন ছাত্ৰ-ছাত্ৰীৰ ল'ৰা আৰু ছোৱালীৰ অনুপাত 4 : 5। ছোৱালী কিমান?"
+       },
+       "answer": "400",
+       "why": {
+        "en": "One block is 80, and girls are 5 blocks.",
+        "as": "এটা খণ্ড 80, ছোৱালী 5 খণ্ড।"
+       },
+       "traps": [
+        {
+         "ans": "360",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+          "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+         }
+        },
+        {
+         "ans": "900",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "The fraction is 5 out of 9, not 5 out of 4.",
+          "as": "ভগ্নাংশটো 9ৰ 5, 4ৰ 5 নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "560 students are boys and girls in the ratio 3 : 4. How many are girls?",
+        "as": "560 জন ছাত্ৰ-ছাত্ৰীৰ ল'ৰা আৰু ছোৱালীৰ অনুপাত 3 : 4। ছোৱালী কিমান?"
+       },
+       "answer": "320",
+       "why": {
+        "en": "One block is 80, and girls are 4 blocks.",
+        "as": "এটা খণ্ড 80, ছোৱালী 4 খণ্ড।"
+       },
+       "traps": [
+        {
+         "ans": "280",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+          "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+         }
+        },
+        {
+         "ans": "556",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "The fraction is 4 out of 7, not 4 out of 3.",
+          "as": "ভগ্নাংশটো 7ৰ 4, 3ৰ 4 নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "660 students are boys and girls in the ratio 5 : 6. How many are girls?",
+        "as": "660 জন ছাত্ৰ-ছাত্ৰীৰ ল'ৰা আৰু ছোৱালীৰ অনুপাত 5 : 6। ছোৱালী কিমান?"
+       },
+       "answer": "360",
+       "why": {
+        "en": "One block is 60, and girls are 6 blocks.",
+        "as": "এটা খণ্ড 60, ছোৱালী 6 খণ্ড।"
+       },
+       "traps": [
+        {
+         "ans": "330",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+          "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+         }
+        },
+        {
+         "ans": "792",
+         "tag": "m-ratio-part",
+         "why": {
+          "en": "The fraction is 6 out of 11, not 6 out of 5.",
+          "as": "ভগ্নাংশটো 11ৰ 6, 5ৰ 6 নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m6.u1.q3",
+     "type": "tf",
+     "skill": "r-share",
+     "s": {
+      "en": "If a : b = 2 : 3, then a is $\\frac{2}{3}$ of the total.",
+      "as": "a : b = 2 : 3 হ'লে a মুঠৰ $\\frac{2}{3}$।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Total is 5 blocks, so a is $\\frac{2}{5}$ of the total. It is $\\frac{2}{3}$ of b.",
+      "as": "মুঠ 5 খণ্ড, সেয়ে a মুঠৰ $\\frac{2}{5}$। ই bৰ $\\frac{2}{3}$।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-ratio-part",
+       "why": {
+        "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+        "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u1.q4",
+     "type": "stepwise",
+     "skill": "r-share",
+     "q": {
+      "en": "A bag holds ₹1 and 50 paise coins in the ratio 2 : 4, worth ₹120 in all. How many ₹1 coins are there?",
+      "as": "এটা মোনাত ₹1 আৰু 50 পইচাৰ মুদ্ৰাৰ অনুপাত 2 : 4, মুঠ মূল্য ₹120। ₹1ৰ মুদ্ৰা কিমান?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Value of one block of each kind?",
+        "as": "প্ৰতিবিধৰ এটা খণ্ডৰ মূল্য?"
+       },
+       "options": [
+        {
+         "en": "₹2 and ₹4",
+         "as": "₹2 আৰু ₹4"
+        },
+        {
+         "en": "₹4 and ₹4",
+         "as": "₹4 আৰু ₹4"
+        },
+        {
+         "en": "₹2 and ₹2",
+         "as": "₹2 আৰু ₹2"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Coins and value differ: a 50 paise coin is worth half a rupee.",
+        "as": "মুদ্ৰা আৰু মূল্য বেলেগ: 50 পইচাৰ মুদ্ৰাৰ মূল্য আধা টকা।"
+       },
+       "tag": "m-ratio-part"
+      },
+      {
+       "ask": {
+        "en": "So the value of one set is",
+        "as": "তেনেহ'লে এটা গোটৰ মূল্য"
+       },
+       "options": [
+        {
+         "en": "₹6",
+         "as": "₹6"
+        },
+        {
+         "en": "₹4",
+         "as": "₹4"
+        },
+        {
+         "en": "₹2",
+         "as": "₹2"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Add the two values.",
+        "as": "দুটা মূল্য যোগ কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Number of ₹1 coins?",
+        "as": "₹1ৰ মুদ্ৰা কিমান?"
+       },
+       "options": [
+        {
+         "en": "240",
+         "as": "240"
+        },
+        {
+         "en": "60",
+         "as": "60"
+        },
+        {
+         "en": "122",
+         "as": "122"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Sets = total value ÷ value of one set; then multiply by the ₹1 part.",
+        "as": "গোট = মুঠ মূল্য ÷ এটা গোটৰ মূল্য; তাৰ পিছত ₹1ৰ ভাগেৰে পূৰণ কৰা।"
+       }
+      }
+     ],
+     "why": {
+      "en": "A ratio of coins is not a ratio of money. Convert to value first.",
+      "as": "মুদ্ৰাৰ অনুপাত ধনৰ অনুপাত নহয়। প্ৰথমে মূল্যলৈ সলনি কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A bag holds ₹1 and 50 paise coins in the ratio 2 : 4, worth ₹120 in all. How many ₹1 coins are there?",
+        "as": "এটা মোনাত ₹1 আৰু 50 পইচাৰ মুদ্ৰাৰ অনুপাত 2 : 4, মুঠ মূল্য ₹120। ₹1ৰ মুদ্ৰা কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Value of one block of each kind?",
+          "as": "প্ৰতিবিধৰ এটা খণ্ডৰ মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹2 and ₹4",
+           "as": "₹2 আৰু ₹4"
+          },
+          {
+           "en": "₹4 and ₹4",
+           "as": "₹4 আৰু ₹4"
+          },
+          {
+           "en": "₹2 and ₹2",
+           "as": "₹2 আৰু ₹2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Coins and value differ: a 50 paise coin is worth half a rupee.",
+          "as": "মুদ্ৰা আৰু মূল্য বেলেগ: 50 পইচাৰ মুদ্ৰাৰ মূল্য আধা টকা।"
+         },
+         "tag": "m-ratio-part"
+        },
+        {
+         "ask": {
+          "en": "So the value of one set is",
+          "as": "তেনেহ'লে এটা গোটৰ মূল্য"
+         },
+         "options": [
+          {
+           "en": "₹6",
+           "as": "₹6"
+          },
+          {
+           "en": "₹4",
+           "as": "₹4"
+          },
+          {
+           "en": "₹2",
+           "as": "₹2"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add the two values.",
+          "as": "দুটা মূল্য যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Number of ₹1 coins?",
+          "as": "₹1ৰ মুদ্ৰা কিমান?"
+         },
+         "options": [
+          {
+           "en": "240",
+           "as": "240"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "122",
+           "as": "122"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Sets = total value ÷ value of one set; then multiply by the ₹1 part.",
+          "as": "গোট = মুঠ মূল্য ÷ এটা গোটৰ মূল্য; তাৰ পিছত ₹1ৰ ভাগেৰে পূৰণ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio of coins is not a ratio of money. Convert to value first.",
+        "as": "মুদ্ৰাৰ অনুপাত ধনৰ অনুপাত নহয়। প্ৰথমে মূল্যলৈ সলনি কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A bag holds ₹1 and 50 paise coins in the ratio 3 : 2, worth ₹160 in all. How many ₹1 coins are there?",
+        "as": "এটা মোনাত ₹1 আৰু 50 পইচাৰ মুদ্ৰাৰ অনুপাত 3 : 2, মুঠ মূল্য ₹160। ₹1ৰ মুদ্ৰা কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Value of one block of each kind?",
+          "as": "প্ৰতিবিধৰ এটা খণ্ডৰ মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹3 and ₹2",
+           "as": "₹3 আৰু ₹2"
+          },
+          {
+           "en": "₹6 and ₹2",
+           "as": "₹6 আৰু ₹2"
+          },
+          {
+           "en": "₹3 and ₹1",
+           "as": "₹3 আৰু ₹1"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Coins and value differ: a 50 paise coin is worth half a rupee.",
+          "as": "মুদ্ৰা আৰু মূল্য বেলেগ: 50 পইচাৰ মুদ্ৰাৰ মূল্য আধা টকা।"
+         },
+         "tag": "m-ratio-part"
+        },
+        {
+         "ask": {
+          "en": "So the value of one set is",
+          "as": "তেনেহ'লে এটা গোটৰ মূল্য"
+         },
+         "options": [
+          {
+           "en": "₹3",
+           "as": "₹3"
+          },
+          {
+           "en": "₹4",
+           "as": "₹4"
+          },
+          {
+           "en": "₹5",
+           "as": "₹5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Add the two values.",
+          "as": "দুটা মূল্য যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Number of ₹1 coins?",
+          "as": "₹1ৰ মুদ্ৰা কিমান?"
+         },
+         "options": [
+          {
+           "en": "320",
+           "as": "320"
+          },
+          {
+           "en": "120",
+           "as": "120"
+          },
+          {
+           "en": "82",
+           "as": "82"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Sets = total value ÷ value of one set; then multiply by the ₹1 part.",
+          "as": "গোট = মুঠ মূল্য ÷ এটা গোটৰ মূল্য; তাৰ পিছত ₹1ৰ ভাগেৰে পূৰণ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio of coins is not a ratio of money. Convert to value first.",
+        "as": "মুদ্ৰাৰ অনুপাত ধনৰ অনুপাত নহয়। প্ৰথমে মূল্যলৈ সলনি কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A bag holds ₹1 and 50 paise coins in the ratio 1 : 2, worth ₹90 in all. How many ₹1 coins are there?",
+        "as": "এটা মোনাত ₹1 আৰু 50 পইচাৰ মুদ্ৰাৰ অনুপাত 1 : 2, মুঠ মূল্য ₹90। ₹1ৰ মুদ্ৰা কিমান?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Value of one block of each kind?",
+          "as": "প্ৰতিবিধৰ এটা খণ্ডৰ মূল্য?"
+         },
+         "options": [
+          {
+           "en": "₹2 and ₹2",
+           "as": "₹2 আৰু ₹2"
+          },
+          {
+           "en": "₹1 and ₹1",
+           "as": "₹1 আৰু ₹1"
+          },
+          {
+           "en": "₹1 and ₹2",
+           "as": "₹1 আৰু ₹2"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Coins and value differ: a 50 paise coin is worth half a rupee.",
+          "as": "মুদ্ৰা আৰু মূল্য বেলেগ: 50 পইচাৰ মুদ্ৰাৰ মূল্য আধা টকা।"
+         },
+         "tag": "m-ratio-part"
+        },
+        {
+         "ask": {
+          "en": "So the value of one set is",
+          "as": "তেনেহ'লে এটা গোটৰ মূল্য"
+         },
+         "options": [
+          {
+           "en": "₹2",
+           "as": "₹2"
+          },
+          {
+           "en": "₹1",
+           "as": "₹1"
+          },
+          {
+           "en": "₹3",
+           "as": "₹3"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Add the two values.",
+          "as": "দুটা মূল্য যোগ কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Number of ₹1 coins?",
+          "as": "₹1ৰ মুদ্ৰা কিমান?"
+         },
+         "options": [
+          {
+           "en": "45",
+           "as": "45"
+          },
+          {
+           "en": "180",
+           "as": "180"
+          },
+          {
+           "en": "92",
+           "as": "92"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Sets = total value ÷ value of one set; then multiply by the ₹1 part.",
+          "as": "গোট = মুঠ মূল্য ÷ এটা গোটৰ মূল্য; তাৰ পিছত ₹1ৰ ভাগেৰে পূৰণ কৰা।"
+         }
+        }
+       ],
+       "why": {
+        "en": "A ratio of coins is not a ratio of money. Convert to value first.",
+        "as": "মুদ্ৰাৰ অনুপাত ধনৰ অনুপাত নহয়। প্ৰথমে মূল্যলৈ সলনি কৰা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u1.q5",
+     "type": "match",
+     "skill": "r-share",
+     "q": {
+      "en": "Match each ratio to the first share of the whole",
+      "as": "প্ৰতিটো অনুপাতক গোটাৰ প্ৰথম ভাগৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 : 3",
+        "as": "1 : 3"
+       },
+       {
+        "en": "$\\frac{1}{4}$",
+        "as": "$\\frac{1}{4}$"
+       }
+      ],
+      [
+       {
+        "en": "2 : 3",
+        "as": "2 : 3"
+       },
+       {
+        "en": "$\\frac{2}{5}$",
+        "as": "$\\frac{2}{5}$"
+       }
+      ],
+      [
+       {
+        "en": "3 : 4",
+        "as": "3 : 4"
+       },
+       {
+        "en": "$\\frac{3}{7}$",
+        "as": "$\\frac{3}{7}$"
+       }
+      ],
+      [
+       {
+        "en": "5 : 1",
+        "as": "5 : 1"
+       },
+       {
+        "en": "$\\frac{5}{6}$",
+        "as": "$\\frac{5}{6}$"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The bottom is always the sum of the ratio.",
+      "as": "তলত সদায় অনুপাতৰ যোগফল।"
+     }
+    },
+    {
+     "id": "m6.u1.q6",
+     "type": "solve",
+     "skill": "r-share",
+     "q": {
+      "en": "Two numbers are in the ratio 3 : 5 and differ by 24. Find the larger number.",
+      "as": "দুটা সংখ্যাৰ অনুপাত 3 : 5, পাৰ্থক্য 24। ডাঙৰ সংখ্যাটো উলিওৱা।"
+     },
+     "answer": "60",
+     "why": {
+      "en": "The gap is 2 blocks, so one block is 12, and the larger is 5 blocks.",
+      "as": "পাৰ্থক্য 2 খণ্ড, সেয়ে এটা খণ্ড 12, ডাঙৰটো 5 খণ্ড।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 3 : 5 and differ by 24. Find the larger number.",
+        "as": "দুটা সংখ্যাৰ অনুপাত 3 : 5, পাৰ্থক্য 24। ডাঙৰ সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "60",
+       "why": {
+        "en": "The gap is 2 blocks, so one block is 12, and the larger is 5 blocks.",
+        "as": "পাৰ্থক্য 2 খণ্ড, সেয়ে এটা খণ্ড 12, ডাঙৰটো 5 খণ্ড।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 4 : 7 and differ by 27. Find the larger number.",
+        "as": "দুটা সংখ্যাৰ অনুপাত 4 : 7, পাৰ্থক্য 27। ডাঙৰ সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "63",
+       "why": {
+        "en": "The gap is 3 blocks, so one block is 9, and the larger is 7 blocks.",
+        "as": "পাৰ্থক্য 3 খণ্ড, সেয়ে এটা খণ্ড 9, ডাঙৰটো 7 খণ্ড।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two numbers are in the ratio 2 : 5 and differ by 45. Find the larger number.",
+        "as": "দুটা সংখ্যাৰ অনুপাত 2 : 5, পাৰ্থক্য 45। ডাঙৰ সংখ্যাটো উলিওৱা।"
+       },
+       "answer": "75",
+       "why": {
+        "en": "The gap is 3 blocks, so one block is 15, and the larger is 5 blocks.",
+        "as": "পাৰ্থক্য 3 খণ্ড, সেয়ে এটা খণ্ড 15, ডাঙৰটো 5 খণ্ড।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Proportion is a straight line",
+    "as": "সমানুপাত এডাল সৰল ৰেখা"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Equal ratios all lie on one straight line through 0.",
+     "as": "সমান অনুপাতবোৰ 0ৰ মাজেদি যোৱা এডাল সৰল ৰেখাত থাকে।"
+    },
+    {
+     "en": "Multiplying both sides stays on the line; adding leaves it.",
+     "as": "দুয়োফালে পূৰণ কৰিলে ৰেখাত থাকে; যোগ কৰিলে ওলাই যায়।"
+    },
+    {
+     "en": "In a : b = c : d, outer product equals inner product: ad = bc.",
+     "as": "a : b = c : d ত বাহিৰৰ পূৰণফল = ভিতৰৰ পূৰণফল: ad = bc।"
+    },
+    {
+     "en": "In continued proportion a : b = b : c, so $b^2 = ac$.",
+     "as": "ক্ৰমিক সমানুপাতত a : b = b : c, সেয়ে $b^2 = ac$।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m6.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "One line, many ratios",
+      "as": "এডাল ৰেখা, বহু অনুপাত"
+     },
+     "text": [
+      {
+       "en": "Blue counts across and gold counts up. The green line is the ratio 2 : 3.",
+       "as": "নীলাই আঁৰে, সোণালীয়ে ওপৰলৈ গণে। সেউজীয়া ৰেখা 2 : 3 অনুপাত।"
+      }
+     ],
+     "widget": {
+      "kind": "ray",
+      "a": 2,
+      "b": 3,
+      "n": 12,
+      "x": 2,
+      "y": 3
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Move the point along the line to 4 across.",
+        "as": "বিন্দুটো ৰেখাৰে 4লৈ নিয়া।"
+       },
+       "goal": {
+        "x": 4,
+        "on": 1
+       },
+       "then": {
+        "en": "4 : 6 is the same ratio. Both sides were doubled.",
+        "as": "4 : 6 একে অনুপাত। দুয়োফাল দুগুণ হ'ল।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now go to 8 across, still on the line.",
+        "as": "এতিয়া 8লৈ যোৱা, ৰেখাতে থাকি।"
+       },
+       "goal": {
+        "x": 8,
+        "on": 1
+       },
+       "then": {
+        "en": "8 : 12 too. Every multiple lies on this one line.",
+        "as": "8 : 12ও। প্ৰতিটো গুণিতক এই ৰেখাতে থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Adding breaks a ratio",
+      "as": "যোগ কৰিলে অনুপাত ভাঙে"
+     },
+     "text": [
+      {
+       "en": "Many learners add the same number to both sides. See where that lands.",
+       "as": "বহুতে দুয়োফালে একে সংখ্যা যোগ কৰে। সেয়া ক'ত পৰে চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "ray",
+      "a": 2,
+      "b": 3,
+      "n": 12,
+      "x": 2,
+      "y": 3
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Add 3 to both sides: go to 5 : 6.",
+        "as": "দুয়োফালে 3 যোগ কৰা: 5 : 6লৈ যোৱা।"
+       },
+       "goal": {
+        "x": 5,
+        "y": 6
+       },
+       "then": {
+        "en": "5 : 6 is off the line, so it is a different ratio.",
+        "as": "5 : 6 ৰেখাৰ বাহিৰত, সেয়ে ই বেলেগ অনুপাত।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u2.q1",
+     "type": "explore",
+     "skill": "r-prop",
+     "q": {
+      "en": "Find the missing term: 2 : 3 = 6 : ?",
+      "as": "হেৰুওৱা পদটো উলিওৱা: 2 : 3 = 6 : ?"
+     },
+     "widget": {
+      "kind": "ray",
+      "a": 2,
+      "b": 3,
+      "n": 12,
+      "x": 6,
+      "y": 1,
+      "fixX": true
+     },
+     "target": 9,
+     "answerText": {
+      "en": "9",
+      "as": "9"
+     },
+     "why": {
+      "en": "6 is 2 × 3, so multiply 3 by 3 too.",
+      "as": "6 = 2 × 3, সেয়ে 3কো 3ৰে পূৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "val": 7,
+       "tag": "m-ratio-add",
+       "why": {
+        "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+        "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Find the missing term: 2 : 3 = 6 : ?",
+        "as": "হেৰুওৱা পদটো উলিওৱা: 2 : 3 = 6 : ?"
+       },
+       "widget": {
+        "kind": "ray",
+        "a": 2,
+        "b": 3,
+        "n": 12,
+        "x": 6,
+        "y": 1,
+        "fixX": true
+       },
+       "target": 9,
+       "answerText": {
+        "en": "9",
+        "as": "9"
+       },
+       "why": {
+        "en": "6 is 2 × 3, so multiply 3 by 3 too.",
+        "as": "6 = 2 × 3, সেয়ে 3কো 3ৰে পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "val": 7,
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the missing term: 3 : 4 = 9 : ?",
+        "as": "হেৰুওৱা পদটো উলিওৱা: 3 : 4 = 9 : ?"
+       },
+       "widget": {
+        "kind": "ray",
+        "a": 3,
+        "b": 4,
+        "n": 12,
+        "x": 9,
+        "y": 1,
+        "fixX": true
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12",
+        "as": "12"
+       },
+       "why": {
+        "en": "9 is 3 × 3, so multiply 4 by 3 too.",
+        "as": "9 = 3 × 3, সেয়ে 4কো 3ৰে পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "val": 10,
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the missing term: 1 : 3 = 4 : ?",
+        "as": "হেৰুওৱা পদটো উলিওৱা: 1 : 3 = 4 : ?"
+       },
+       "widget": {
+        "kind": "ray",
+        "a": 1,
+        "b": 3,
+        "n": 12,
+        "x": 4,
+        "y": 1,
+        "fixX": true
+       },
+       "target": 12,
+       "answerText": {
+        "en": "12",
+        "as": "12"
+       },
+       "why": {
+        "en": "4 is 1 × 4, so multiply 3 by 4 too.",
+        "as": "4 = 1 × 4, সেয়ে 3কো 4ৰে পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "val": 6,
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Find the missing term: 2 : 5 = 4 : ?",
+        "as": "হেৰুওৱা পদটো উলিওৱা: 2 : 5 = 4 : ?"
+       },
+       "widget": {
+        "kind": "ray",
+        "a": 2,
+        "b": 5,
+        "n": 12,
+        "x": 4,
+        "y": 1,
+        "fixX": true
+       },
+       "target": 10,
+       "answerText": {
+        "en": "10",
+        "as": "10"
+       },
+       "why": {
+        "en": "4 is 2 × 2, so multiply 5 by 2 too.",
+        "as": "4 = 2 × 2, সেয়ে 5কো 2ৰে পূৰণ কৰা।"
+       },
+       "traps": [
+        {
+         "val": 7,
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m6.u2.q2",
+     "type": "tf",
+     "skill": "r-prop",
+     "s": {
+      "en": "Adding 2 to both sides of 3 : 4 keeps the ratio.",
+      "as": "3 : 4ৰ দুয়োফালে 2 যোগ কৰিলে অনুপাত একে থাকে।"
+     },
+     "answer": false,
+     "why": {
+      "en": "5 : 6 is a different ratio. Doubling, tripling or halving keeps it.",
+      "as": "5 : 6 বেলেগ অনুপাত। দুগুণ, তিনিগুণ বা আধা কৰিলেহে একে থাকে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-ratio-add",
+       "why": {
+        "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+        "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u2.q3",
+     "type": "solve",
+     "skill": "r-prop",
+     "hints": [
+      {
+       "en": "Multiply the outers, multiply the inners.",
+       "as": "বাহিৰৰ দুটা পূৰণ কৰা, ভিতৰৰ দুটা পূৰণ কৰা।"
+      }
+     ],
+     "q": {
+      "en": "If 8 : 7 = 40 : x, find x.",
+      "as": "8 : 7 = 40 : x হ'লে x উলিওৱা।"
+     },
+     "answer": "35",
+     "why": {
+      "en": "Outer equals inner: 8x = 7 × 40, so x = 35.",
+      "as": "বাহিৰ = ভিতৰ: 8x = 7 × 40, সেয়ে x = 35।"
+     },
+     "traps": [
+      {
+       "ans": "39",
+       "tag": "m-ratio-add",
+       "why": {
+        "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+        "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If 8 : 7 = 40 : x, find x.",
+        "as": "8 : 7 = 40 : x হ'লে x উলিওৱা।"
+       },
+       "answer": "35",
+       "why": {
+        "en": "Outer equals inner: 8x = 7 × 40, so x = 35.",
+        "as": "বাহিৰ = ভিতৰ: 8x = 7 × 40, সেয়ে x = 35।"
+       },
+       "traps": [
+        {
+         "ans": "39",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 3 : 7 = 27 : x, find x.",
+        "as": "3 : 7 = 27 : x হ'লে x উলিওৱা।"
+       },
+       "answer": "63",
+       "why": {
+        "en": "Outer equals inner: 3x = 7 × 27, so x = 63.",
+        "as": "বাহিৰ = ভিতৰ: 3x = 7 × 27, সেয়ে x = 63।"
+       },
+       "traps": [
+        {
+         "ans": "31",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 4 : 9 = 28 : x, find x.",
+        "as": "4 : 9 = 28 : x হ'লে x উলিওৱা।"
+       },
+       "answer": "63",
+       "why": {
+        "en": "Outer equals inner: 4x = 9 × 28, so x = 63.",
+        "as": "বাহিৰ = ভিতৰ: 4x = 9 × 28, সেয়ে x = 63।"
+       },
+       "traps": [
+        {
+         "ans": "33",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 6 : 11 = 30 : x, find x.",
+        "as": "6 : 11 = 30 : x হ'লে x উলিওৱা।"
+       },
+       "answer": "55",
+       "why": {
+        "en": "Outer equals inner: 6x = 11 × 30, so x = 55.",
+        "as": "বাহিৰ = ভিতৰ: 6x = 11 × 30, সেয়ে x = 55।"
+       },
+       "traps": [
+        {
+         "ans": "35",
+         "tag": "m-ratio-add",
+         "why": {
+          "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+          "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m6.u2.q4",
+     "type": "stepwise",
+     "skill": "r-prop",
+     "q": {
+      "en": "3, x and 27 are in continued proportion. Find x.",
+      "as": "3, x আৰু 27 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "What does continued mean here?",
+        "as": "ইয়াত ক্ৰমিক মানে কি?"
+       },
+       "options": [
+        {
+         "en": "x = 3 + 27",
+         "as": "x = 3 + 27"
+        },
+        {
+         "en": "3 : x = x : 27",
+         "as": "3 : x = x : 27"
+        },
+        {
+         "en": "3 : x = 27 : x",
+         "as": "3 : x = 27 : x"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "The middle term appears on both sides.",
+        "as": "মাজৰ পদ দুয়োফালে থাকে।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Outer equals inner gives",
+        "as": "বাহিৰ = ভিতৰ"
+       },
+       "options": [
+        {
+         "en": "$2x = 81$",
+         "as": "$2x = 81$"
+        },
+        {
+         "en": "$x^2 = 81$",
+         "as": "$x^2 = 81$"
+        },
+        {
+         "en": "$x = 81$",
+         "as": "$x = 81$"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "x × x is the inner product.",
+        "as": "x × x ভিতৰৰ পূৰণফল।"
+       }
+      },
+      {
+       "ask": {
+        "en": "So x is",
+        "as": "তেনেহ'লে x"
+       },
+       "options": [
+        {
+         "en": "9",
+         "as": "9"
+        },
+        {
+         "en": "16",
+         "as": "16"
+        },
+        {
+         "en": "40",
+         "as": "40"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Take the square root.",
+        "as": "বৰ্গমূল লোৱা।"
+       },
+       "skill": "s-roots"
+      }
+     ],
+     "why": {
+      "en": "The middle term of a continued proportion is $\\sqrt{ac}$.",
+      "as": "ক্ৰমিক সমানুপাতৰ মাজৰ পদ $\\sqrt{ac}$।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "3, x and 27 are in continued proportion. Find x.",
+        "as": "3, x আৰু 27 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does continued mean here?",
+          "as": "ইয়াত ক্ৰমিক মানে কি?"
+         },
+         "options": [
+          {
+           "en": "x = 3 + 27",
+           "as": "x = 3 + 27"
+          },
+          {
+           "en": "3 : x = x : 27",
+           "as": "3 : x = x : 27"
+          },
+          {
+           "en": "3 : x = 27 : x",
+           "as": "3 : x = 27 : x"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The middle term appears on both sides.",
+          "as": "মাজৰ পদ দুয়োফালে থাকে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Outer equals inner gives",
+          "as": "বাহিৰ = ভিতৰ"
+         },
+         "options": [
+          {
+           "en": "$2x = 81$",
+           "as": "$2x = 81$"
+          },
+          {
+           "en": "$x^2 = 81$",
+           "as": "$x^2 = 81$"
+          },
+          {
+           "en": "$x = 81$",
+           "as": "$x = 81$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "x × x is the inner product.",
+          "as": "x × x ভিতৰৰ পূৰণফল।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x is",
+          "as": "তেনেহ'লে x"
+         },
+         "options": [
+          {
+           "en": "9",
+           "as": "9"
+          },
+          {
+           "en": "16",
+           "as": "16"
+          },
+          {
+           "en": "40",
+           "as": "40"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Take the square root.",
+          "as": "বৰ্গমূল লোৱা।"
+         },
+         "skill": "s-roots"
+        }
+       ],
+       "why": {
+        "en": "The middle term of a continued proportion is $\\sqrt{ac}$.",
+        "as": "ক্ৰমিক সমানুপাতৰ মাজৰ পদ $\\sqrt{ac}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "4, x and 36 are in continued proportion. Find x.",
+        "as": "4, x আৰু 36 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does continued mean here?",
+          "as": "ইয়াত ক্ৰমিক মানে কি?"
+         },
+         "options": [
+          {
+           "en": "x = 4 + 36",
+           "as": "x = 4 + 36"
+          },
+          {
+           "en": "4 : x = x : 36",
+           "as": "4 : x = x : 36"
+          },
+          {
+           "en": "4 : x = 36 : x",
+           "as": "4 : x = 36 : x"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "The middle term appears on both sides.",
+          "as": "মাজৰ পদ দুয়োফালে থাকে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Outer equals inner gives",
+          "as": "বাহিৰ = ভিতৰ"
+         },
+         "options": [
+          {
+           "en": "$x = 144$",
+           "as": "$x = 144$"
+          },
+          {
+           "en": "$x^2 = 144$",
+           "as": "$x^2 = 144$"
+          },
+          {
+           "en": "$2x = 144$",
+           "as": "$2x = 144$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "x × x is the inner product.",
+          "as": "x × x ভিতৰৰ পূৰণফল।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x is",
+          "as": "তেনেহ'লে x"
+         },
+         "options": [
+          {
+           "en": "72",
+           "as": "72"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "21",
+           "as": "21"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take the square root.",
+          "as": "বৰ্গমূল লোৱা।"
+         },
+         "skill": "s-roots"
+        }
+       ],
+       "why": {
+        "en": "The middle term of a continued proportion is $\\sqrt{ac}$.",
+        "as": "ক্ৰমিক সমানুপাতৰ মাজৰ পদ $\\sqrt{ac}$।"
+       }
+      },
+      {
+       "q": {
+        "en": "9, x and 16 are in continued proportion. Find x.",
+        "as": "9, x আৰু 16 ক্ৰমিক সমানুপাতত। x উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "What does continued mean here?",
+          "as": "ইয়াত ক্ৰমিক মানে কি?"
+         },
+         "options": [
+          {
+           "en": "9 : x = x : 16",
+           "as": "9 : x = x : 16"
+          },
+          {
+           "en": "9 : x = 16 : x",
+           "as": "9 : x = 16 : x"
+          },
+          {
+           "en": "x = 9 + 16",
+           "as": "x = 9 + 16"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "The middle term appears on both sides.",
+          "as": "মাজৰ পদ দুয়োফালে থাকে।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Outer equals inner gives",
+          "as": "বাহিৰ = ভিতৰ"
+         },
+         "options": [
+          {
+           "en": "$x = 144$",
+           "as": "$x = 144$"
+          },
+          {
+           "en": "$x^2 = 144$",
+           "as": "$x^2 = 144$"
+          },
+          {
+           "en": "$2x = 144$",
+           "as": "$2x = 144$"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "x × x is the inner product.",
+          "as": "x × x ভিতৰৰ পূৰণফল।"
+         }
+        },
+        {
+         "ask": {
+          "en": "So x is",
+          "as": "তেনেহ'লে x"
+         },
+         "options": [
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "72",
+           "as": "72"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Take the square root.",
+          "as": "বৰ্গমূল লোৱা।"
+         },
+         "skill": "s-roots"
+        }
+       ],
+       "why": {
+        "en": "The middle term of a continued proportion is $\\sqrt{ac}$.",
+        "as": "ক্ৰমিক সমানুপাতৰ মাজৰ পদ $\\sqrt{ac}$।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u2.q5",
+     "type": "match",
+     "skill": "r-prop",
+     "q": {
+      "en": "Match the equal ratios",
+      "as": "সমান অনুপাতবোৰ মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2 : 5",
+        "as": "2 : 5"
+       },
+       {
+        "en": "14 : 35",
+        "as": "14 : 35"
+       }
+      ],
+      [
+       {
+        "en": "3 : 4",
+        "as": "3 : 4"
+       },
+       {
+        "en": "27 : 36",
+        "as": "27 : 36"
+       }
+      ],
+      [
+       {
+        "en": "5 : 6",
+        "as": "5 : 6"
+       },
+       {
+        "en": "45 : 54",
+        "as": "45 : 54"
+       }
+      ],
+      [
+       {
+        "en": "7 : 9",
+        "as": "7 : 9"
+       },
+       {
+        "en": "28 : 36",
+        "as": "28 : 36"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide each longer ratio by the HCF of its two terms.",
+      "as": "ডাঙৰ অনুপাতৰ দুয়োটা পদক গ.সা.গু.ৰে হৰণ কৰা।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "title": {
+    "en": "Chains of ratios",
+    "as": "অনুপাতৰ শিকলি"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "To join A : B and B : C, make B the same in both.",
+     "as": "A : B আৰু B : C জোৰা দিবলৈ দুয়োটাতে B একে কৰা।"
+    },
+    {
+     "en": "The new size of B is the LCM of its two values.",
+     "as": "Bৰ নতুন আকাৰ হৈছে ইয়াৰ দুটা মানৰ ল.সা.গু.।"
+    },
+    {
+     "en": "2A = 5B means A : B = 5 : 2: the numbers cross over.",
+     "as": "2A = 5B মানে A : B = 5 : 2: সংখ্যা সলনি হয়।"
+    },
+    {
+     "en": "Multiplying A : B by B : C gives A : C directly.",
+     "as": "A : Bক B : Cৰে পূৰণ কৰিলে পোনে পোনে A : C পোৱা যায়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m6.u3.s1",
+     "type": "story",
+     "title": {
+      "en": "Make the middle match",
+      "as": "মাজৰটো মিলোৱা"
+     },
+     "text": [
+      {
+       "en": "A : B = 2 : 3 and B : C = 4 : 5. Those two B's are not the same size yet.",
+       "as": "A : B = 2 : 3 আৰু B : C = 4 : 5। দুটা B এতিয়াও একে আকাৰৰ নহয়।"
+      }
+     ],
+     "widget": {
+      "kind": "chain",
+      "ab": [
+       2,
+       3
+      ],
+      "bc": [
+       4,
+       5
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Stretch each row until the B's line up.",
+        "as": "দুয়োটা B মিলালৈ প্ৰতিটো শাৰী বঢ়োৱা।"
+       },
+       "goal": {
+        "match": 1
+       },
+       "then": {
+        "en": "B is 12 in both, the LCM of 3 and 4. Now A : B : C = 8 : 12 : 15.",
+        "as": "দুয়োটাতে B 12, 3 আৰু 4ৰ ল.সা.গু.। এতিয়া A : B : C = 8 : 12 : 15।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u3.s2",
+     "type": "story",
+     "title": {
+      "en": "Why the numbers cross over",
+      "as": "সংখ্যা কিয় সলনি হয়"
+     },
+     "text": [
+      {
+       "en": "If 2A = 5B, then A must be the bigger one, because it takes fewer of them to match.",
+       "as": "2A = 5B হ'লে A ডাঙৰ হ'বই লাগিব, কাৰণ কম সংখ্যকেই সমান হয়।"
+      },
+      {
+       "en": "Test it: A = 5, B = 2 gives 10 = 10.",
+       "as": "পৰীক্ষা কৰা: A = 5, B = 2ত 10 = 10।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "$2A = 5B$",
+        "as": "$2A = 5B$"
+       },
+       {
+        "en": "$A : B = 5 : 2$",
+        "as": "$A : B = 5 : 2$"
+       },
+       {
+        "en": "$2 \\times 5 = 5 \\times 2$",
+        "as": "$2 \\times 5 = 5 \\times 2$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m6.u3.q1",
+     "type": "explore",
+     "skill": "r-combine",
+     "q": {
+      "en": "A : B = 1 : 2 and B : C = 3 : 4. Stretch until the B's match.",
+      "as": "A : B = 1 : 2 আৰু B : C = 3 : 4। B মিলালৈ বঢ়োৱা।"
+     },
+     "widget": {
+      "kind": "chain",
+      "ab": [
+       1,
+       2
+      ],
+      "bc": [
+       3,
+       4
+      ]
+     },
+     "target": 6,
+     "answerText": {
+      "en": "B = 6",
+      "as": "B = 6"
+     },
+     "why": {
+      "en": "B must be a multiple of both 2 and 3; the smallest is 6.",
+      "as": "B 2 আৰু 3 দুয়োটাৰে গুণিতক হ'ব লাগিব; সৰুতমটো 6।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A : B = 1 : 2 and B : C = 3 : 4. Stretch until the B's match.",
+        "as": "A : B = 1 : 2 আৰু B : C = 3 : 4। B মিলালৈ বঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "chain",
+        "ab": [
+         1,
+         2
+        ],
+        "bc": [
+         3,
+         4
+        ]
+       },
+       "target": 6,
+       "answerText": {
+        "en": "B = 6",
+        "as": "B = 6"
+       },
+       "why": {
+        "en": "B must be a multiple of both 2 and 3; the smallest is 6.",
+        "as": "B 2 আৰু 3 দুয়োটাৰে গুণিতক হ'ব লাগিব; সৰুতমটো 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "A : B = 2 : 3 and B : C = 2 : 5. Stretch until the B's match.",
+        "as": "A : B = 2 : 3 আৰু B : C = 2 : 5। B মিলালৈ বঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "chain",
+        "ab": [
+         2,
+         3
+        ],
+        "bc": [
+         2,
+         5
+        ]
+       },
+       "target": 6,
+       "answerText": {
+        "en": "B = 6",
+        "as": "B = 6"
+       },
+       "why": {
+        "en": "B must be a multiple of both 3 and 2; the smallest is 6.",
+        "as": "B 3 আৰু 2 দুয়োটাৰে গুণিতক হ'ব লাগিব; সৰুতমটো 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "A : B = 3 : 2 and B : C = 3 : 4. Stretch until the B's match.",
+        "as": "A : B = 3 : 2 আৰু B : C = 3 : 4। B মিলালৈ বঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "chain",
+        "ab": [
+         3,
+         2
+        ],
+        "bc": [
+         3,
+         4
+        ]
+       },
+       "target": 6,
+       "answerText": {
+        "en": "B = 6",
+        "as": "B = 6"
+       },
+       "why": {
+        "en": "B must be a multiple of both 2 and 3; the smallest is 6.",
+        "as": "B 2 আৰু 3 দুয়োটাৰে গুণিতক হ'ব লাগিব; সৰুতমটো 6।"
+       }
+      },
+      {
+       "q": {
+        "en": "A : B = 4 : 3 and B : C = 2 : 1. Stretch until the B's match.",
+        "as": "A : B = 4 : 3 আৰু B : C = 2 : 1। B মিলালৈ বঢ়োৱা।"
+       },
+       "widget": {
+        "kind": "chain",
+        "ab": [
+         4,
+         3
+        ],
+        "bc": [
+         2,
+         1
+        ]
+       },
+       "target": 6,
+       "answerText": {
+        "en": "B = 6",
+        "as": "B = 6"
+       },
+       "why": {
+        "en": "B must be a multiple of both 3 and 2; the smallest is 6.",
+        "as": "B 3 আৰু 2 দুয়োটাৰে গুণিতক হ'ব লাগিব; সৰুতমটো 6।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u3.q2",
+     "type": "solve",
+     "skill": "r-combine",
+     "hints": [
+      {
+       "en": "Make B equal in both ratios first.",
+       "as": "প্ৰথমে দুয়োটা অনুপাতত B সমান কৰা।"
+      }
+     ],
+     "q": {
+      "en": "A : B = 2 : 3 and B : C = 4 : 5. If A = 16, find C.",
+      "as": "A : B = 2 : 3 আৰু B : C = 4 : 5। A = 16 হ'লে C উলিওৱা।"
+     },
+     "answer": "30",
+     "why": {
+      "en": "Joined ratio A : B : C = 8 : 12 : 15, and A is doubled, so C is too.",
+      "as": "যুক্ত অনুপাত A : B : C = 8 : 12 : 15; A দুগুণ, সেয়ে Cও দুগুণ।"
+     },
+     "traps": [
+      {
+       "ans": "10",
+       "tag": "m-chain-common",
+       "why": {
+        "en": "The middle terms must match before you can compare A and C.",
+        "as": "A আৰু C তুলনা কৰাৰ আগতে মাজৰ পদ মিলিব লাগিব।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "A : B = 2 : 3 and B : C = 4 : 5. If A = 16, find C.",
+        "as": "A : B = 2 : 3 আৰু B : C = 4 : 5। A = 16 হ'লে C উলিওৱা।"
+       },
+       "answer": "30",
+       "why": {
+        "en": "Joined ratio A : B : C = 8 : 12 : 15, and A is doubled, so C is too.",
+        "as": "যুক্ত অনুপাত A : B : C = 8 : 12 : 15; A দুগুণ, সেয়ে Cও দুগুণ।"
+       },
+       "traps": [
+        {
+         "ans": "10",
+         "tag": "m-chain-common",
+         "why": {
+          "en": "The middle terms must match before you can compare A and C.",
+          "as": "A আৰু C তুলনা কৰাৰ আগতে মাজৰ পদ মিলিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A : B = 3 : 2 and B : C = 3 : 4. If A = 18, find C.",
+        "as": "A : B = 3 : 2 আৰু B : C = 3 : 4। A = 18 হ'লে C উলিওৱা।"
+       },
+       "answer": "16",
+       "why": {
+        "en": "Joined ratio A : B : C = 9 : 6 : 8, and A is doubled, so C is too.",
+        "as": "যুক্ত অনুপাত A : B : C = 9 : 6 : 8; A দুগুণ, সেয়ে Cও দুগুণ।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-chain-common",
+         "why": {
+          "en": "The middle terms must match before you can compare A and C.",
+          "as": "A আৰু C তুলনা কৰাৰ আগতে মাজৰ পদ মিলিব লাগিব।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "A : B = 1 : 2 and B : C = 3 : 2. If A = 6, find C.",
+        "as": "A : B = 1 : 2 আৰু B : C = 3 : 2। A = 6 হ'লে C উলিওৱা।"
+       },
+       "answer": "8",
+       "why": {
+        "en": "Joined ratio A : B : C = 3 : 6 : 4, and A is doubled, so C is too.",
+        "as": "যুক্ত অনুপাত A : B : C = 3 : 6 : 4; A দুগুণ, সেয়ে Cও দুগুণ।"
+       },
+       "traps": [
+        {
+         "ans": "4",
+         "tag": "m-chain-common",
+         "why": {
+          "en": "The middle terms must match before you can compare A and C.",
+          "as": "A আৰু C তুলনা কৰাৰ আগতে মাজৰ পদ মিলিব লাগিব।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m6.u3.q3",
+     "type": "tf",
+     "skill": "r-combine",
+     "s": {
+      "en": "If 2A = 5B, then A : B = 2 : 5.",
+      "as": "2A = 5B হ'লে A : B = 2 : 5।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Try A = 2 and B = 5: that gives 4 = 25. The ratio is 5 : 2.",
+      "as": "A = 2, B = 5 ধৰিলে 4 = 25 হয়। অনুপাত 5 : 2।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-ratio-flip",
+       "why": {
+        "en": "In 2A = 5B, A must be the bigger one. Cross over: A : B = 5 : 2.",
+        "as": "2A = 5Bত A ডাঙৰ হ'ব লাগিব। সলনি কৰা: A : B = 5 : 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.u3.q4",
+     "type": "solve",
+     "skill": "r-combine",
+     "hints": [
+      {
+       "en": "Cross over each equation to get a ratio.",
+       "as": "প্ৰতিটো সমীকৰণ সলনি কৰি অনুপাত লোৱা।"
+      }
+     ],
+     "q": {
+      "en": "If 2A = 5B and 3B = 5C, what is A : C? Type it as a fraction A/C.",
+      "as": "2A = 5B আৰু 3B = 5C হ'লে A : C কিমান? A/C ভগ্নাংশ হিচাপে লিখা।"
+     },
+     "answer": "25/6",
+     "why": {
+      "en": "A : B = 5 : 2 and B : C = 5 : 3. Multiply: A : C = 25 : 6, which is 25 : 6.",
+      "as": "A : B = 5 : 2 আৰু B : C = 5 : 3। পূৰণ: A : C = 25 : 6, অৰ্থাৎ 25 : 6।"
+     },
+     "traps": [
+      {
+       "ans": "6/25",
+       "tag": "m-ratio-flip",
+       "why": {
+        "en": "In 2A = 5B, A must be the bigger one. Cross over: A : B = 5 : 2.",
+        "as": "2A = 5Bত A ডাঙৰ হ'ব লাগিব। সলনি কৰা: A : B = 5 : 2।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "If 2A = 5B and 3B = 5C, what is A : C? Type it as a fraction A/C.",
+        "as": "2A = 5B আৰু 3B = 5C হ'লে A : C কিমান? A/C ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "25/6",
+       "why": {
+        "en": "A : B = 5 : 2 and B : C = 5 : 3. Multiply: A : C = 25 : 6, which is 25 : 6.",
+        "as": "A : B = 5 : 2 আৰু B : C = 5 : 3। পূৰণ: A : C = 25 : 6, অৰ্থাৎ 25 : 6।"
+       },
+       "traps": [
+        {
+         "ans": "6/25",
+         "tag": "m-ratio-flip",
+         "why": {
+          "en": "In 2A = 5B, A must be the bigger one. Cross over: A : B = 5 : 2.",
+          "as": "2A = 5Bত A ডাঙৰ হ'ব লাগিব। সলনি কৰা: A : B = 5 : 2।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 3A = 5B and 4B = 6C, what is A : C? Type it as a fraction A/C.",
+        "as": "3A = 5B আৰু 4B = 6C হ'লে A : C কিমান? A/C ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "5/2",
+       "why": {
+        "en": "A : B = 5 : 3 and B : C = 6 : 4. Multiply: A : C = 30 : 12, which is 5 : 2.",
+        "as": "A : B = 5 : 3 আৰু B : C = 6 : 4। পূৰণ: A : C = 30 : 12, অৰ্থাৎ 5 : 2।"
+       },
+       "traps": [
+        {
+         "ans": "2/5",
+         "tag": "m-ratio-flip",
+         "why": {
+          "en": "In 2A = 5B, A must be the bigger one. Cross over: A : B = 5 : 2.",
+          "as": "2A = 5Bত A ডাঙৰ হ'ব লাগিব। সলনি কৰা: A : B = 5 : 2।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "If 3A = 2B and 5B = 3C, what is A : C? Type it as a fraction A/C.",
+        "as": "3A = 2B আৰু 5B = 3C হ'লে A : C কিমান? A/C ভগ্নাংশ হিচাপে লিখা।"
+       },
+       "answer": "2/5",
+       "why": {
+        "en": "A : B = 2 : 3 and B : C = 3 : 5. Multiply: A : C = 6 : 15, which is 2 : 5.",
+        "as": "A : B = 2 : 3 আৰু B : C = 3 : 5। পূৰণ: A : C = 6 : 15, অৰ্থাৎ 2 : 5।"
+       },
+       "traps": [
+        {
+         "ans": "5/2",
+         "tag": "m-ratio-flip",
+         "why": {
+          "en": "In 2A = 5B, A must be the bigger one. Cross over: A : B = 5 : 2.",
+          "as": "2A = 5Bত A ডাঙৰ হ'ব লাগিব। সলনি কৰা: A : B = 5 : 2।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m6.u3.q5",
+     "type": "stepwise",
+     "skill": "r-combine",
+     "q": {
+      "en": "A : B = 2 : 3 and B : C = 4 : 5. Share ₹3500 among A, B and C. What does B get?",
+      "as": "A : B = 2 : 3 আৰু B : C = 4 : 5। ₹3500 A, B আৰু Cৰ মাজত ভাগ কৰা। Bই কিমান পাব?"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Size of the common B?",
+        "as": "উমৈহতীয়া Bৰ আকাৰ?"
+       },
+       "options": [
+        {
+         "en": "7",
+         "as": "7"
+        },
+        {
+         "en": "13",
+         "as": "13"
+        },
+        {
+         "en": "12",
+         "as": "12"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "Use the LCM.",
+        "as": "ল.সা.গু. লোৱা।"
+       },
+       "skill": "l-lcm",
+       "tag": "m-chain-common"
+      },
+      {
+       "ask": {
+        "en": "Joined ratio?",
+        "as": "যুক্ত অনুপাত?"
+       },
+       "options": [
+        {
+         "en": "2 : 7 : 5",
+         "as": "2 : 7 : 5"
+        },
+        {
+         "en": "8 : 12 : 15",
+         "as": "8 : 12 : 15"
+        },
+        {
+         "en": "2 : 3 : 5",
+         "as": "2 : 3 : 5"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Scale each ratio to the common B.",
+        "as": "প্ৰতিটো অনুপাত উমৈহতীয়া Bলৈ নিয়া।"
+       },
+       "tag": "m-chain-common"
+      },
+      {
+       "ask": {
+        "en": "B's share?",
+        "as": "Bৰ ভাগ?"
+       },
+       "options": [
+        {
+         "en": "₹1166",
+         "as": "₹1166"
+        },
+        {
+         "en": "₹1200",
+         "as": "₹1200"
+        },
+        {
+         "en": "₹1750",
+         "as": "₹1750"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Blocks in all, then one block, then B's blocks.",
+        "as": "মুঠ খণ্ড, এটা খণ্ড, তাৰ পিছত Bৰ খণ্ড।"
+       },
+       "skill": "r-share"
+      }
+     ],
+     "why": {
+      "en": "Join first, then share as usual.",
+      "as": "প্ৰথমে জোৰা দিয়া, তাৰ পিছত সাধাৰণভাৱে ভাগ কৰা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A : B = 2 : 3 and B : C = 4 : 5. Share ₹3500 among A, B and C. What does B get?",
+        "as": "A : B = 2 : 3 আৰু B : C = 4 : 5। ₹3500 A, B আৰু Cৰ মাজত ভাগ কৰা। Bই কিমান পাব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Size of the common B?",
+          "as": "উমৈহতীয়া Bৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "7",
+           "as": "7"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Use the LCM.",
+          "as": "ল.সা.গু. লোৱা।"
+         },
+         "skill": "l-lcm",
+         "tag": "m-chain-common"
+        },
+        {
+         "ask": {
+          "en": "Joined ratio?",
+          "as": "যুক্ত অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "2 : 7 : 5",
+           "as": "2 : 7 : 5"
+          },
+          {
+           "en": "8 : 12 : 15",
+           "as": "8 : 12 : 15"
+          },
+          {
+           "en": "2 : 3 : 5",
+           "as": "2 : 3 : 5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Scale each ratio to the common B.",
+          "as": "প্ৰতিটো অনুপাত উমৈহতীয়া Bলৈ নিয়া।"
+         },
+         "tag": "m-chain-common"
+        },
+        {
+         "ask": {
+          "en": "B's share?",
+          "as": "Bৰ ভাগ?"
+         },
+         "options": [
+          {
+           "en": "₹1166",
+           "as": "₹1166"
+          },
+          {
+           "en": "₹1200",
+           "as": "₹1200"
+          },
+          {
+           "en": "₹1750",
+           "as": "₹1750"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Blocks in all, then one block, then B's blocks.",
+          "as": "মুঠ খণ্ড, এটা খণ্ড, তাৰ পিছত Bৰ খণ্ড।"
+         },
+         "skill": "r-share"
+        }
+       ],
+       "why": {
+        "en": "Join first, then share as usual.",
+        "as": "প্ৰথমে জোৰা দিয়া, তাৰ পিছত সাধাৰণভাৱে ভাগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A : B = 1 : 2 and B : C = 3 : 4. Share ₹1700 among A, B and C. What does B get?",
+        "as": "A : B = 1 : 2 আৰু B : C = 3 : 4। ₹1700 A, B আৰু Cৰ মাজত ভাগ কৰা। Bই কিমান পাব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Size of the common B?",
+          "as": "উমৈহতীয়া Bৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          },
+          {
+           "en": "7",
+           "as": "7"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Use the LCM.",
+          "as": "ল.সা.গু. লোৱা।"
+         },
+         "skill": "l-lcm",
+         "tag": "m-chain-common"
+        },
+        {
+         "ask": {
+          "en": "Joined ratio?",
+          "as": "যুক্ত অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "3 : 6 : 8",
+           "as": "3 : 6 : 8"
+          },
+          {
+           "en": "1 : 5 : 4",
+           "as": "1 : 5 : 4"
+          },
+          {
+           "en": "1 : 2 : 4",
+           "as": "1 : 2 : 4"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Scale each ratio to the common B.",
+          "as": "প্ৰতিটো অনুপাত উমৈহতীয়া Bলৈ নিয়া।"
+         },
+         "tag": "m-chain-common"
+        },
+        {
+         "ask": {
+          "en": "B's share?",
+          "as": "Bৰ ভাগ?"
+         },
+         "options": [
+          {
+           "en": "₹600",
+           "as": "₹600"
+          },
+          {
+           "en": "₹566",
+           "as": "₹566"
+          },
+          {
+           "en": "₹850",
+           "as": "₹850"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Blocks in all, then one block, then B's blocks.",
+          "as": "মুঠ খণ্ড, এটা খণ্ড, তাৰ পিছত Bৰ খণ্ড।"
+         },
+         "skill": "r-share"
+        }
+       ],
+       "why": {
+        "en": "Join first, then share as usual.",
+        "as": "প্ৰথমে জোৰা দিয়া, তাৰ পিছত সাধাৰণভাৱে ভাগ কৰা।"
+       }
+      },
+      {
+       "q": {
+        "en": "A : B = 3 : 2 and B : C = 4 : 5. Share ₹3000 among A, B and C. What does B get?",
+        "as": "A : B = 3 : 2 আৰু B : C = 4 : 5। ₹3000 A, B আৰু Cৰ মাজত ভাগ কৰা। Bই কিমান পাব?"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Size of the common B?",
+          "as": "উমৈহতীয়া Bৰ আকাৰ?"
+         },
+         "options": [
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "9",
+           "as": "9"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Use the LCM.",
+          "as": "ল.সা.গু. লোৱা।"
+         },
+         "skill": "l-lcm",
+         "tag": "m-chain-common"
+        },
+        {
+         "ask": {
+          "en": "Joined ratio?",
+          "as": "যুক্ত অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "3 : 2 : 5",
+           "as": "3 : 2 : 5"
+          },
+          {
+           "en": "3 : 6 : 5",
+           "as": "3 : 6 : 5"
+          },
+          {
+           "en": "6 : 4 : 5",
+           "as": "6 : 4 : 5"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Scale each ratio to the common B.",
+          "as": "প্ৰতিটো অনুপাত উমৈহতীয়া Bলৈ নিয়া।"
+         },
+         "tag": "m-chain-common"
+        },
+        {
+         "ask": {
+          "en": "B's share?",
+          "as": "Bৰ ভাগ?"
+         },
+         "options": [
+          {
+           "en": "₹1500",
+           "as": "₹1500"
+          },
+          {
+           "en": "₹800",
+           "as": "₹800"
+          },
+          {
+           "en": "₹1000",
+           "as": "₹1000"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Blocks in all, then one block, then B's blocks.",
+          "as": "মুঠ খণ্ড, এটা খণ্ড, তাৰ পিছত Bৰ খণ্ড।"
+         },
+         "skill": "r-share"
+        }
+       ],
+       "why": {
+        "en": "Join first, then share as usual.",
+        "as": "প্ৰথমে জোৰা দিয়া, তাৰ পিছত সাধাৰণভাৱে ভাগ কৰা।"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "title": {
+    "en": "Values from ratios",
+    "as": "অনুপাতৰ পৰা মান"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "If $\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}$, write x = ak, y = bk, z = ck.",
+     "as": "$\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}$ হ'লে x = ak, y = bk, z = ck লিখা।"
+    },
+    {
+     "en": "In a ratio expression, k cancels, so any value of k will do.",
+     "as": "অনুপাতৰ ৰাশিত k কাটি যায়, সেয়ে যিকোনো k চলে।"
+    },
+    {
+     "en": "Flip a ratio by dividing every term into their LCM.",
+     "as": "প্ৰতিটো পদ ল.সা.গু.ৰ ভিতৰত হৰণ কৰি অনুপাত ওলোটোৱা।"
+    },
+    {
+     "en": "Long chains join two at a time.",
+     "as": "দীঘল শিকলি দুটাকৈ জোৰা হয়।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m6.x.s1",
+     "type": "story",
+     "title": {
+      "en": "Pick a friendly k",
+      "as": "সহজ k বাছি লোৱা"
+     },
+     "text": [
+      {
+       "en": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ says x, y and z move together as 2, 5 and 9.",
+       "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ মানে x, y, z 2, 5, 9 হিচাপে একেলগে যায়।"
+      },
+      {
+       "en": "So simply put x = 2, y = 5 and z = 9 and calculate.",
+       "as": "সেয়ে পোনে পোনে x = 2, y = 5, z = 9 বহুৱাই হিচাপ কৰা।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "x = 2, y = 5, z = 9",
+        "as": "x = 2, y = 5, z = 9"
+       },
+       {
+        "en": "$\\frac{x + y + z}{2z}$",
+        "as": "$\\frac{x + y + z}{2z}$"
+       },
+       {
+        "en": "$\\frac{16}{18} = \\frac{8}{9}$",
+        "as": "$\\frac{16}{18} = \\frac{8}{9}$"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m6.x.s2",
+     "type": "story",
+     "title": {
+      "en": "Flipping a ratio",
+      "as": "অনুপাত ওলোটোৱা"
+     },
+     "text": [
+      {
+       "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$, the biggest flip belongs to the smallest number.",
+       "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$ হ'লে ডাঙৰ ওলোটা সৰু সংখ্যাৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "chain",
+      "ab": [
+       1,
+       3
+      ],
+      "bc": [
+       6,
+       8
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Make the two B's match.",
+        "as": "দুটা B মিলোৱা।"
+       },
+       "goal": {
+        "match": 1
+       },
+       "then": {
+        "en": "That joins 2 : 6 : 8, which is 1 : 3 : 4. To flip it, take 12, the LCM, and divide: 12 : 4 : 3.",
+        "as": "ই 2 : 6 : 8 জোৰে, অৰ্থাৎ 1 : 3 : 4। ওলোটাবলৈ ল.সা.গু. 12 লৈ হৰণ কৰা: 12 : 4 : 3।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q1",
+     "type": "solve",
+     "skill": "r-value",
+     "hints": [
+      {
+       "en": "Replace x, y and z with the bottom numbers.",
+       "as": "x, y, zৰ ঠাইত তলৰ সংখ্যা বহুওৱা।"
+      }
+     ],
+     "q": {
+      "en": "If $\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$, find $\\frac{x + y + z}{2z}$.",
+      "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+     },
+     "answer": "8/9",
+     "why": {
+      "en": "Put x = 2, y = 5, z = 9.",
+      "as": "x = 2, y = 5, z = 9 বহুওৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{9}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "8/9",
+       "why": {
+        "en": "Put x = 2, y = 5, z = 9.",
+        "as": "x = 2, y = 5, z = 9 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{3} = \\frac{y}{5} = \\frac{z}{8}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{3} = \\frac{y}{5} = \\frac{z}{8}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "1",
+       "why": {
+        "en": "Put x = 3, y = 5, z = 8.",
+        "as": "x = 3, y = 5, z = 8 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{1} = \\frac{y}{4} = \\frac{z}{5}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{1} = \\frac{y}{4} = \\frac{z}{5}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "1",
+       "why": {
+        "en": "Put x = 1, y = 4, z = 5.",
+        "as": "x = 1, y = 4, z = 5 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{3}$, find $\\frac{x + y + z}{2z}$.",
+        "as": "$\\frac{x}{2} = \\frac{y}{5} = \\frac{z}{3}$ হ'লে $\\frac{x + y + z}{2z}$ উলিওৱা।"
+       },
+       "answer": "5/3",
+       "why": {
+        "en": "Put x = 2, y = 5, z = 3.",
+        "as": "x = 2, y = 5, z = 3 বহুওৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q2",
+     "type": "solve",
+     "skill": "r-value",
+     "q": {
+      "en": "If m : n = 4 : 9, find $\\frac{3m + n}{3m - n}$.",
+      "as": "m : n = 4 : 9 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+     },
+     "answer": "7",
+     "why": {
+      "en": "Put m = 4 and n = 9.",
+      "as": "m = 4 আৰু n = 9 বহুওৱা।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If m : n = 4 : 9, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 4 : 9 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "Put m = 4 and n = 9.",
+        "as": "m = 4 আৰু n = 9 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If m : n = 2 : 1, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 2 : 1 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "7/5",
+       "why": {
+        "en": "Put m = 2 and n = 1.",
+        "as": "m = 2 আৰু n = 1 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If m : n = 3 : 4, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 3 : 4 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "13/5",
+       "why": {
+        "en": "Put m = 3 and n = 4.",
+        "as": "m = 3 আৰু n = 4 বহুওৱা।"
+       }
+      },
+      {
+       "q": {
+        "en": "If m : n = 5 : 3, find $\\frac{3m + n}{3m - n}$.",
+        "as": "m : n = 5 : 3 হ'লে $\\frac{3m + n}{3m - n}$ উলিওৱা।"
+       },
+       "answer": "3/2",
+       "why": {
+        "en": "Put m = 5 and n = 3.",
+        "as": "m = 5 আৰু n = 3 বহুওৱা।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q3",
+     "type": "solve",
+     "skill": "r-value",
+     "hints": [
+      {
+       "en": "Factorise the top.",
+       "as": "ওপৰৰটো উৎপাদক কৰা।"
+      }
+     ],
+     "q": {
+      "en": "If $\\frac{x}{11} = \\frac{y}{4}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 11 and y = 4.",
+      "as": "$\\frac{x}{11} = \\frac{y}{4}$ হ'লে x = 11, y = 4ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+     },
+     "answer": "7",
+     "why": {
+      "en": "It cancels to x − y.",
+      "as": "কাটিলে x − y হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\frac{x}{11} = \\frac{y}{4}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 11 and y = 4.",
+        "as": "$\\frac{x}{11} = \\frac{y}{4}$ হ'লে x = 11, y = 4ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "It cancels to x − y.",
+        "as": "কাটিলে x − y হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{12} = \\frac{y}{5}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 12 and y = 5.",
+        "as": "$\\frac{x}{12} = \\frac{y}{5}$ হ'লে x = 12, y = 5ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+       },
+       "answer": "7",
+       "why": {
+        "en": "It cancels to x − y.",
+        "as": "কাটিলে x − y হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{x}{20} = \\frac{y}{7}$, find $\\frac{x^2 - y^2}{x + y}$ when x = 20 and y = 7.",
+        "as": "$\\frac{x}{20} = \\frac{y}{7}$ হ'লে x = 20, y = 7ত $\\frac{x^2 - y^2}{x + y}$ উলিওৱা।"
+       },
+       "answer": "13",
+       "why": {
+        "en": "It cancels to x − y.",
+        "as": "কাটিলে x − y হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q4",
+     "type": "stepwise",
+     "skill": "r-value",
+     "q": {
+      "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$, find x : y : z.",
+      "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$ হ'লে x : y : z উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "LCM of the terms?",
+        "as": "পদবোৰৰ ল.সা.গু.?"
+       },
+       "options": [
+        {
+         "en": "12",
+         "as": "12"
+        },
+        {
+         "en": "24",
+         "as": "24"
+        },
+        {
+         "en": "13",
+         "as": "13"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It clears every fraction.",
+        "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+       },
+       "skill": "l-lcm"
+      },
+      {
+       "ask": {
+        "en": "Flipped ratio?",
+        "as": "ওলোটা অনুপাত?"
+       },
+       "options": [
+        {
+         "en": "4 : 3 : 1",
+         "as": "4 : 3 : 1"
+        },
+        {
+         "en": "12 : 4 : 3",
+         "as": "12 : 4 : 3"
+        },
+        {
+         "en": "1 : 3 : 4",
+         "as": "1 : 3 : 4"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Divide the LCM by each term.",
+        "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+       },
+       "tag": "m-ratio-flip"
+      }
+     ],
+     "why": {
+      "en": "Simply reversing the order works only for two terms.",
+      "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$, find x : y : z.",
+        "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 1 : 3 : 4$ হ'লে x : y : z উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM of the terms?",
+          "as": "পদবোৰৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          },
+          {
+           "en": "13",
+           "as": "13"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It clears every fraction.",
+          "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Flipped ratio?",
+          "as": "ওলোটা অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "4 : 3 : 1",
+           "as": "4 : 3 : 1"
+          },
+          {
+           "en": "12 : 4 : 3",
+           "as": "12 : 4 : 3"
+          },
+          {
+           "en": "1 : 3 : 4",
+           "as": "1 : 3 : 4"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Divide the LCM by each term.",
+          "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+         },
+         "tag": "m-ratio-flip"
+        }
+       ],
+       "why": {
+        "en": "Simply reversing the order works only for two terms.",
+        "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 2 : 5 : 6$, find x : y : z.",
+        "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 2 : 5 : 6$ হ'লে x : y : z উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM of the terms?",
+          "as": "পদবোৰৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "60",
+           "as": "60"
+          },
+          {
+           "en": "31",
+           "as": "31"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "It clears every fraction.",
+          "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Flipped ratio?",
+          "as": "ওলোটা অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "15 : 6 : 5",
+           "as": "15 : 6 : 5"
+          },
+          {
+           "en": "2 : 5 : 6",
+           "as": "2 : 5 : 6"
+          },
+          {
+           "en": "6 : 5 : 2",
+           "as": "6 : 5 : 2"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Divide the LCM by each term.",
+          "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+         },
+         "tag": "m-ratio-flip"
+        }
+       ],
+       "why": {
+        "en": "Simply reversing the order works only for two terms.",
+        "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+       }
+      },
+      {
+       "q": {
+        "en": "If $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 3 : 4 : 6$, find x : y : z.",
+        "as": "$\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z} = 3 : 4 : 6$ হ'লে x : y : z উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "LCM of the terms?",
+          "as": "পদবোৰৰ ল.সা.গু.?"
+         },
+         "options": [
+          {
+           "en": "13",
+           "as": "13"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "24",
+           "as": "24"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "It clears every fraction.",
+          "as": "ই সকলো ভগ্নাংশ আঁতৰায়।"
+         },
+         "skill": "l-lcm"
+        },
+        {
+         "ask": {
+          "en": "Flipped ratio?",
+          "as": "ওলোটা অনুপাত?"
+         },
+         "options": [
+          {
+           "en": "3 : 4 : 6",
+           "as": "3 : 4 : 6"
+          },
+          {
+           "en": "6 : 4 : 3",
+           "as": "6 : 4 : 3"
+          },
+          {
+           "en": "4 : 3 : 2",
+           "as": "4 : 3 : 2"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Divide the LCM by each term.",
+          "as": "ল.সা.গু.ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+         },
+         "tag": "m-ratio-flip"
+        }
+       ],
+       "why": {
+        "en": "Simply reversing the order works only for two terms.",
+        "as": "ক্ৰম ওলোটোৱা কেৱল দুটা পদতহে চলে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q5",
+     "type": "solve",
+     "skill": "r-combine",
+     "hints": [
+      {
+       "en": "Join two ratios at a time.",
+       "as": "দুটা দুটাকৈ অনুপাত জোৰা।"
+      }
+     ],
+     "q": {
+      "en": "₹3100 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+      "as": "₹3100 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+     },
+     "answer": "1800",
+     "prefix": {
+      "en": "₹",
+      "as": "₹"
+     },
+     "why": {
+      "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+      "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "₹3100 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+        "as": "₹3100 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+       },
+       "answer": "1800",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+        "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+       }
+      },
+      {
+       "q": {
+        "en": "₹6200 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+        "as": "₹6200 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+       },
+       "answer": "3600",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+        "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+       }
+      },
+      {
+       "q": {
+        "en": "₹1550 is shared among A, B, C and D where A : B = 3 : 4, B : C = 2 : 3 and C : D = 1 : 3. How much does D get?",
+        "as": "₹1550 A, B, C, Dৰ মাজত ভাগ কৰা হ'ল, য'ত A : B = 3 : 4, B : C = 2 : 3, C : D = 1 : 3। Dই কিমান পাব?"
+       },
+       "answer": "900",
+       "prefix": {
+        "en": "₹",
+        "as": "₹"
+       },
+       "why": {
+        "en": "Joined: 3 : 4 : 6 : 18, which is 31 blocks.",
+        "as": "জোৰা: 3 : 4 : 6 : 18, মুঠ 31 খণ্ড।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q6",
+     "type": "tf",
+     "skill": "r-value",
+     "s": {
+      "en": "If x : y : z = 2 : 5 : 6, then $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z}$ = 6 : 5 : 2.",
+      "as": "x : y : z = 2 : 5 : 6 হ'লে $\\frac{1}{x} : \\frac{1}{y} : \\frac{1}{z}$ = 6 : 5 : 2।"
+     },
+     "answer": false,
+     "why": {
+      "en": "It is 15 : 6 : 5: divide the LCM, 30, by each term.",
+      "as": "ই 15 : 6 : 5: ল.সা.গু. 30ক প্ৰতিটো পদেৰে হৰণ কৰা।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-ratio-flip",
+       "why": {
+        "en": "Flipping three terms is not reversing them.",
+        "as": "তিনিটা পদ ওলোটোৱা মানে ক্ৰম সলনি কৰা নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m6.x.q7",
+     "type": "match",
+     "skill": "r-value",
+     "q": {
+      "en": "Match each ratio to its flip",
+      "as": "প্ৰতিটো অনুপাতক ওলোটাৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "1 : 2",
+        "as": "1 : 2"
+       },
+       {
+        "en": "2 : 1",
+        "as": "2 : 1"
+       }
+      ],
+      [
+       {
+        "en": "1 : 3 : 4",
+        "as": "1 : 3 : 4"
+       },
+       {
+        "en": "12 : 4 : 3",
+        "as": "12 : 4 : 3"
+       }
+      ],
+      [
+       {
+        "en": "2 : 5 : 6",
+        "as": "2 : 5 : 6"
+       },
+       {
+        "en": "15 : 6 : 5",
+        "as": "15 : 6 : 5"
+       }
+      ],
+      [
+       {
+        "en": "3 : 4 : 6",
+        "as": "3 : 4 : 6"
+       },
+       {
+        "en": "4 : 3 : 2",
+        "as": "4 : 3 : 2"
+       }
+      ]
+     ],
+     "why": {
+      "en": "Divide the LCM of the terms by each one.",
+      "as": "পদবোৰৰ ল.সা.গু.ক প্ৰতিটোৰে হৰণ কৰা।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Ratio test",
+   "as": "অনুপাতৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m6.t.q1",
+    "type": "mcq",
+    "skill": "r-share",
+    "q": {
+     "en": "₹6000 is shared in the ratio 1 : 2 : 3. The largest share is",
+     "as": "₹6000 1 : 2 : 3 অনুপাতত ভাগ কৰা হ'ল। সৰ্ববৃহৎ ভাগ"
+    },
+    "why": {
+     "en": "One block is the total ÷ the sum of the ratio.",
+     "as": "এটা খণ্ড = মুঠ ÷ অনুপাতৰ যোগফল।"
+    },
+    "options": [
+     {
+      "en": "3000",
+      "as": "3000"
+     },
+     {
+      "en": "3100",
+      "as": "3100"
+     },
+     {
+      "en": "2000",
+      "as": "2000"
+     },
+     {
+      "en": "1000",
+      "as": "1000"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-ratio-part",
+      "why": {
+       "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+       "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "₹6000 is shared in the ratio 1 : 2 : 3. The largest share is",
+       "as": "₹6000 1 : 2 : 3 অনুপাতত ভাগ কৰা হ'ল। সৰ্ববৃহৎ ভাগ"
+      },
+      "why": {
+       "en": "One block is the total ÷ the sum of the ratio.",
+       "as": "এটা খণ্ড = মুঠ ÷ অনুপাতৰ যোগফল।"
+      },
+      "options": [
+       {
+        "en": "3000",
+        "as": "3000"
+       },
+       {
+        "en": "3100",
+        "as": "3100"
+       },
+       {
+        "en": "2000",
+        "as": "2000"
+       },
+       {
+        "en": "1000",
+        "as": "1000"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-ratio-part",
+        "why": {
+         "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+         "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "₹9000 is shared in the ratio 2 : 3 : 4. The largest share is",
+       "as": "₹9000 2 : 3 : 4 অনুপাতত ভাগ কৰা হ'ল। সৰ্ববৃহৎ ভাগ"
+      },
+      "why": {
+       "en": "One block is the total ÷ the sum of the ratio.",
+       "as": "এটা খণ্ড = মুঠ ÷ অনুপাতৰ যোগফল।"
+      },
+      "options": [
+       {
+        "en": "2000",
+        "as": "2000"
+       },
+       {
+        "en": "3000",
+        "as": "3000"
+       },
+       {
+        "en": "4500",
+        "as": "4500"
+       },
+       {
+        "en": "4000",
+        "as": "4000"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-ratio-part",
+        "why": {
+         "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+         "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "₹6000 is shared in the ratio 1 : 4 : 5. The largest share is",
+       "as": "₹6000 1 : 4 : 5 অনুপাতত ভাগ কৰা হ'ল। সৰ্ববৃহৎ ভাগ"
+      },
+      "why": {
+       "en": "One block is the total ÷ the sum of the ratio.",
+       "as": "এটা খণ্ড = মুঠ ÷ অনুপাতৰ যোগফল।"
+      },
+      "options": [
+       {
+        "en": "3000",
+        "as": "3000"
+       },
+       {
+        "en": "3100",
+        "as": "3100"
+       },
+       {
+        "en": "2000",
+        "as": "2000"
+       },
+       {
+        "en": "600",
+        "as": "600"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-ratio-part",
+        "why": {
+         "en": "Ratio numbers count blocks, not rupees. Add the blocks first, then find what one block is worth.",
+         "as": "অনুপাতৰ সংখ্যাই খণ্ড গণে, টকা নহয়। প্ৰথমে খণ্ড যোগ কৰি এটা খণ্ডৰ মান উলিওৱা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m6.t.q2",
+    "type": "mcq",
+    "skill": "r-prop",
+    "q": {
+     "en": "If 5 : 8 = 35 : x, then x is",
+     "as": "5 : 8 = 35 : x হ'লে x"
+    },
+    "why": {
+     "en": "Outer product equals inner product.",
+     "as": "বাহিৰৰ পূৰণফল = ভিতৰৰ পূৰণফল।"
+    },
+    "options": [
+     {
+      "en": "38",
+      "as": "38"
+     },
+     {
+      "en": "59",
+      "as": "59"
+     },
+     {
+      "en": "56",
+      "as": "56"
+     },
+     {
+      "en": "53",
+      "as": "53"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-ratio-add",
+      "why": {
+       "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+       "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "If 5 : 8 = 35 : x, then x is",
+       "as": "5 : 8 = 35 : x হ'লে x"
+      },
+      "why": {
+       "en": "Outer product equals inner product.",
+       "as": "বাহিৰৰ পূৰণফল = ভিতৰৰ পূৰণফল।"
+      },
+      "options": [
+       {
+        "en": "38",
+        "as": "38"
+       },
+       {
+        "en": "59",
+        "as": "59"
+       },
+       {
+        "en": "56",
+        "as": "56"
+       },
+       {
+        "en": "53",
+        "as": "53"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-ratio-add",
+        "why": {
+         "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+         "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If 7 : 3 = 42 : x, then x is",
+       "as": "7 : 3 = 42 : x হ'লে x"
+      },
+      "why": {
+       "en": "Outer product equals inner product.",
+       "as": "বাহিৰৰ পূৰণফল = ভিতৰৰ পূৰণফল।"
+      },
+      "options": [
+       {
+        "en": "38",
+        "as": "38"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "21",
+        "as": "21"
+       },
+       {
+        "en": "18",
+        "as": "18"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-ratio-add",
+        "why": {
+         "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+         "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If 4 : 11 = 16 : x, then x is",
+       "as": "4 : 11 = 16 : x হ'লে x"
+      },
+      "why": {
+       "en": "Outer product equals inner product.",
+       "as": "বাহিৰৰ পূৰণফল = ভিতৰৰ পূৰণফল।"
+      },
+      "options": [
+       {
+        "en": "23",
+        "as": "23"
+       },
+       {
+        "en": "44",
+        "as": "44"
+       },
+       {
+        "en": "41",
+        "as": "41"
+       },
+       {
+        "en": "47",
+        "as": "47"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-ratio-add",
+        "why": {
+         "en": "Adding the same number changes a ratio. Only multiplying or dividing both sides keeps it.",
+         "as": "একে সংখ্যা যোগ কৰিলে অনুপাত সলনি হয়। দুয়োফালে পূৰণ বা হৰণ কৰিলেহে একে থাকে।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m6.t.q3",
+    "type": "mcq",
+    "skill": "r-prop",
+    "q": {
+     "en": "The mean proportional of 4 and 25 is",
+     "as": "4 আৰু 25ৰ মধ্য সমানুপাতী"
+    },
+    "why": {
+     "en": "$b^2 = ac$.",
+     "as": "$b^2 = ac$।"
+    },
+    "options": [
+     {
+      "en": "8",
+      "as": "8"
+     },
+     {
+      "en": "10",
+      "as": "10"
+     },
+     {
+      "en": "12",
+      "as": "12"
+     },
+     {
+      "en": "$\\frac{29}{2}$",
+      "as": "$\\frac{29}{2}$"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 3,
+      "tag": "m-avg-add",
+      "why": {
+       "en": "That is the average. The mean proportional is $\\sqrt{ac}$.",
+       "as": "সেয়া গড়। মধ্য সমানুপাতী $\\sqrt{ac}$।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "The mean proportional of 4 and 25 is",
+       "as": "4 আৰু 25ৰ মধ্য সমানুপাতী"
+      },
+      "why": {
+       "en": "$b^2 = ac$.",
+       "as": "$b^2 = ac$।"
+      },
+      "options": [
+       {
+        "en": "8",
+        "as": "8"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       },
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "$\\frac{29}{2}$",
+        "as": "$\\frac{29}{2}$"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-avg-add",
+        "why": {
+         "en": "That is the average. The mean proportional is $\\sqrt{ac}$.",
+         "as": "সেয়া গড়। মধ্য সমানুপাতী $\\sqrt{ac}$।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The mean proportional of 9 and 25 is",
+       "as": "9 আৰু 25ৰ মধ্য সমানুপাতী"
+      },
+      "why": {
+       "en": "$b^2 = ac$.",
+       "as": "$b^2 = ac$।"
+      },
+      "options": [
+       {
+        "en": "17",
+        "as": "17"
+       },
+       {
+        "en": "13",
+        "as": "13"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "225",
+        "as": "225"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-avg-add",
+        "why": {
+         "en": "That is the average. The mean proportional is $\\sqrt{ac}$.",
+         "as": "সেয়া গড়। মধ্য সমানুপাতী $\\sqrt{ac}$।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "The mean proportional of 8 and 18 is",
+       "as": "8 আৰু 18ৰ মধ্য সমানুপাতী"
+      },
+      "why": {
+       "en": "$b^2 = ac$.",
+       "as": "$b^2 = ac$।"
+      },
+      "options": [
+       {
+        "en": "12",
+        "as": "12"
+       },
+       {
+        "en": "13",
+        "as": "13"
+       },
+       {
+        "en": "14",
+        "as": "14"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-avg-add",
+        "why": {
+         "en": "That is the average. The mean proportional is $\\sqrt{ac}$.",
+         "as": "সেয়া গড়। মধ্য সমানুপাতী $\\sqrt{ac}$।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m6.t.q4",
+    "type": "mcq",
+    "skill": "r-combine",
+    "q": {
+     "en": "If A : B = 2 : 3 and B : C = 4 : 5, then A : C as a fraction is",
+     "as": "A : B = 2 : 3 আৰু B : C = 4 : 5 হ'লে A : C ভগ্নাংশত"
+    },
+    "why": {
+     "en": "Multiply the two ratios.",
+     "as": "দুটা অনুপাত পূৰণ কৰা।"
+    },
+    "options": [
+     {
+      "en": "$\\frac{2}{5}$",
+      "as": "$\\frac{2}{5}$"
+     },
+     {
+      "en": "$\\frac{15}{8}$",
+      "as": "$\\frac{15}{8}$"
+     },
+     {
+      "en": "$\\frac{8}{15}$",
+      "as": "$\\frac{8}{15}$"
+     },
+     {
+      "en": "$\\frac{3}{4}$",
+      "as": "$\\frac{3}{4}$"
+     }
+    ],
+    "answer": 2,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-chain-common",
+      "why": {
+       "en": "Make the middle terms equal first.",
+       "as": "প্ৰথমে মাজৰ পদ সমান কৰা।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "If A : B = 2 : 3 and B : C = 4 : 5, then A : C as a fraction is",
+       "as": "A : B = 2 : 3 আৰু B : C = 4 : 5 হ'লে A : C ভগ্নাংশত"
+      },
+      "why": {
+       "en": "Multiply the two ratios.",
+       "as": "দুটা অনুপাত পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{2}{5}$",
+        "as": "$\\frac{2}{5}$"
+       },
+       {
+        "en": "$\\frac{15}{8}$",
+        "as": "$\\frac{15}{8}$"
+       },
+       {
+        "en": "$\\frac{8}{15}$",
+        "as": "$\\frac{8}{15}$"
+       },
+       {
+        "en": "$\\frac{3}{4}$",
+        "as": "$\\frac{3}{4}$"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-chain-common",
+        "why": {
+         "en": "Make the middle terms equal first.",
+         "as": "প্ৰথমে মাজৰ পদ সমান কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If A : B = 3 : 4 and B : C = 2 : 5, then A : C as a fraction is",
+       "as": "A : B = 3 : 4 আৰু B : C = 2 : 5 হ'লে A : C ভগ্নাংশত"
+      },
+      "why": {
+       "en": "Multiply the two ratios.",
+       "as": "দুটা অনুপাত পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{3}{10}$",
+        "as": "$\\frac{3}{10}$"
+       },
+       {
+        "en": "$\\frac{5}{9}$",
+        "as": "$\\frac{5}{9}$"
+       },
+       {
+        "en": "$\\frac{3}{5}$",
+        "as": "$\\frac{3}{5}$"
+       },
+       {
+        "en": "$\\frac{10}{3}$",
+        "as": "$\\frac{10}{3}$"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-chain-common",
+        "why": {
+         "en": "Make the middle terms equal first.",
+         "as": "প্ৰথমে মাজৰ পদ সমান কৰা।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "If A : B = 5 : 6 and B : C = 3 : 7, then A : C as a fraction is",
+       "as": "A : B = 5 : 6 আৰু B : C = 3 : 7 হ'লে A : C ভগ্নাংশত"
+      },
+      "why": {
+       "en": "Multiply the two ratios.",
+       "as": "দুটা অনুপাত পূৰণ কৰা।"
+      },
+      "options": [
+       {
+        "en": "$\\frac{14}{5}$",
+        "as": "$\\frac{14}{5}$"
+       },
+       {
+        "en": "$\\frac{8}{13}$",
+        "as": "$\\frac{8}{13}$"
+       },
+       {
+        "en": "$\\frac{5}{14}$",
+        "as": "$\\frac{5}{14}$"
+       },
+       {
+        "en": "$\\frac{5}{7}$",
+        "as": "$\\frac{5}{7}$"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 3,
+        "tag": "m-chain-common",
+        "why": {
+         "en": "Make the middle terms equal first.",
+         "as": "প্ৰথমে মাজৰ পদ সমান কৰা।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m6.t.q5",
+    "type": "solve",
+    "skill": "r-share",
+    "q": {
+     "en": "Two numbers are in the ratio 3 : 7 and their sum is 90. Find the smaller.",
+     "as": "দুটা সংখ্যাৰ অনুপাত 3 : 7, যোগফল 90। সৰু সংখ্যাটো উলিওৱা।"
+    },
+    "answer": "27",
+    "why": {
+     "en": "One block is 9.",
+     "as": "এটা খণ্ড 9।"
+    },
+    "variants": [
+     {
+      "q": {
+       "en": "Two numbers are in the ratio 3 : 7 and their sum is 90. Find the smaller.",
+       "as": "দুটা সংখ্যাৰ অনুপাত 3 : 7, যোগফল 90। সৰু সংখ্যাটো উলিওৱা।"
+      },
+      "answer": "27",
+      "why": {
+       "en": "One block is 9.",
+       "as": "এটা খণ্ড 9।"
+      }
+     },
+     {
+      "q": {
+       "en": "Two numbers are in the ratio 4 : 5 and their sum is 99. Find the smaller.",
+       "as": "দুটা সংখ্যাৰ অনুপাত 4 : 5, যোগফল 99। সৰু সংখ্যাটো উলিওৱা।"
+      },
+      "answer": "44",
+      "why": {
+       "en": "One block is 11.",
+       "as": "এটা খণ্ড 11।"
+      }
+     },
+     {
+      "q": {
+       "en": "Two numbers are in the ratio 2 : 9 and their sum is 88. Find the smaller.",
+       "as": "দুটা সংখ্যাৰ অনুপাত 2 : 9, যোগফল 88। সৰু সংখ্যাটো উলিওৱা।"
+      },
+      "answer": "16",
+      "why": {
+       "en": "One block is 8.",
+       "as": "এটা খণ্ড 8।"
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

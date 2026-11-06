@@ -1,0 +1,1827 @@
+{
+ "id": "math-12-ages",
+ "course": "mathematics",
+ "no": 12,
+ "version": 1,
+ "eyebrow": {
+  "en": "Mathematics",
+  "as": "গণিত"
+ },
+ "king": {
+  "en": "Age problems",
+  "as": "বয়সৰ সমস্যা"
+ },
+ "reign": {
+  "en": "Ratios across the years",
+  "as": "বছৰে বছৰে অনুপাত"
+ },
+ "portrait": "math/age.webp",
+ "sources": [
+  {
+   "title": "Axomrank original worked examples",
+   "url": "",
+   "used_for": "All questions and numbers are original. Topic order follows lecture decks supplied by the course owner; no question text was copied."
+  }
+ ],
+ "review_notes": "Answers computed by scripts/build_math_course.py and rechecked by scripts/check_math.py. Independent Assamese editorial review pending.",
+ "map": {
+  "box": [
+   89.5,
+   24,
+   96.5,
+   28.2
+  ],
+  "show": []
+ },
+ "units": [
+  {
+   "id": "u1",
+   "title": {
+    "en": "The gap never changes",
+    "as": "পাৰ্থক্য সলনি নহয়"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "In y years both ages rise by y.",
+     "as": "y বছৰত দুয়োটা বয়স y বাঢ়ে।"
+    },
+    {
+     "en": "The difference between two ages stays fixed for life.",
+     "as": "দুটা বয়সৰ পাৰ্থক্য জীৱনজুৰি একে থাকে।"
+    },
+    {
+     "en": "The ratio does change, and moves towards 1 : 1.",
+     "as": "অনুপাত সলনি হয়, 1 : 1ৰ ফালে যায়।"
+    },
+    {
+     "en": "A sum of two ages rises by 2 each year.",
+     "as": "দুটা বয়সৰ যোগফল বছৰি 2 বাঢ়ে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m12.u1.s1",
+     "type": "story",
+     "title": {
+      "en": "Two bars, one fixed gap",
+      "as": "দুটা বাৰ, এটা স্থিৰ ব্যৱধান"
+     },
+     "text": [
+      {
+       "en": "A child is 10 and a parent is 30. Move through the years and watch the red gap.",
+       "as": "শিশুটি 10 বছৰ, অভিভাৱক 30 বছৰ। বছৰে বছৰে আগবাঢ়ি ৰঙা ব্যৱধান চোৱা।"
+      }
+     ],
+     "widget": {
+      "kind": "ages",
+      "a": 10,
+      "b": 30,
+      "na": "A",
+      "nb": "B"
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide 10 years ahead.",
+        "as": "10 বছৰ আগলৈ টানা।"
+       },
+       "goal": {
+        "y": 10
+       },
+       "then": {
+        "en": "20 and 40: the gap is still 20, and the ratio has changed from 1 : 3 to 1 : 2.",
+        "as": "20 আৰু 40: ব্যৱধান এতিয়াও 20, অনুপাত 1 : 3ৰ পৰা 1 : 2 হ'ল।"
+       }
+      },
+      {
+       "do": {
+        "en": "Now slide to 30 years ahead.",
+        "as": "এতিয়া 30 বছৰ আগলৈ টানা।"
+       },
+       "goal": {
+        "y": 30
+       },
+       "then": {
+        "en": "40 and 60. Still 20 apart, and the ratio keeps closing on 1 : 1.",
+        "as": "40 আৰু 60। এতিয়াও 20 পাৰ্থক্য, অনুপাত 1 : 1ৰ ওচৰ চাপি আছে।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u1.s2",
+     "type": "story",
+     "title": {
+      "en": "Use the gap as your anchor",
+      "as": "ব্যৱধানক ভেটি কৰা"
+     },
+     "text": [
+      {
+       "en": "Because the gap is fixed, one fact about it is often all you need.",
+       "as": "ব্যৱধান স্থিৰ, সেয়ে ইয়াৰ এটা তথ্যই প্ৰায়ে যথেষ্ট।"
+      },
+      {
+       "en": "If a parent is 30 years older, that is true at every age.",
+       "as": "অভিভাৱক 30 বছৰ ডাঙৰ হ'লে সেয়া সকলো বয়সতে সত্য।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "Today: 10 and 40",
+        "as": "আজি: 10 আৰু 40"
+       },
+       {
+        "en": "In 5 years: 15 and 45",
+        "as": "5 বছৰত: 15 আৰু 45"
+       },
+       {
+        "en": "Gap: always 30",
+        "as": "ব্যৱধান: সদায় 30"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m12.u1.q1",
+     "type": "explore",
+     "skill": "age-gap",
+     "q": {
+      "en": "A is 10 and B is 30. Slide to when their ages are in the ratio 1 : 2.",
+      "as": "A 10 বছৰ, B 30 বছৰ। বয়সৰ অনুপাত 1 : 2 হোৱা সময়লৈ টানা।"
+     },
+     "widget": {
+      "kind": "ages",
+      "a": 10,
+      "b": 30,
+      "ratio": [
+       1,
+       2
+      ]
+     },
+     "target": 10,
+     "answerText": {
+      "en": "10 years from now",
+      "as": "10 বছৰৰ পিছত"
+     },
+     "why": {
+      "en": "The gap stays 20. Ages 20 and 40 give 1 : 2.",
+      "as": "ব্যৱধান 20। 20 আৰু 40ৰ অনুপাত 1 : 2।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "A is 10 and B is 30. Slide to when their ages are in the ratio 1 : 2.",
+        "as": "A 10 বছৰ, B 30 বছৰ। বয়সৰ অনুপাত 1 : 2 হোৱা সময়লৈ টানা।"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 10,
+        "b": 30,
+        "ratio": [
+         1,
+         2
+        ]
+       },
+       "target": 10,
+       "answerText": {
+        "en": "10 years from now",
+        "as": "10 বছৰৰ পিছত"
+       },
+       "why": {
+        "en": "The gap stays 20. Ages 20 and 40 give 1 : 2.",
+        "as": "ব্যৱধান 20। 20 আৰু 40ৰ অনুপাত 1 : 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 6 and B is 18. Slide to when their ages are in the ratio 1 : 2.",
+        "as": "A 6 বছৰ, B 18 বছৰ। বয়সৰ অনুপাত 1 : 2 হোৱা সময়লৈ টানা।"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 6,
+        "b": 18,
+        "ratio": [
+         1,
+         2
+        ]
+       },
+       "target": 6,
+       "answerText": {
+        "en": "6 years from now",
+        "as": "6 বছৰৰ পিছত"
+       },
+       "why": {
+        "en": "The gap stays 12. Ages 12 and 24 give 1 : 2.",
+        "as": "ব্যৱধান 12। 12 আৰু 24ৰ অনুপাত 1 : 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 5 and B is 20. Slide to when their ages are in the ratio 2 : 5.",
+        "as": "A 5 বছৰ, B 20 বছৰ। বয়সৰ অনুপাত 2 : 5 হোৱা সময়লৈ টানা।"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 5,
+        "b": 20,
+        "ratio": [
+         2,
+         5
+        ]
+       },
+       "target": 5,
+       "answerText": {
+        "en": "5 years from now",
+        "as": "5 বছৰৰ পিছত"
+       },
+       "why": {
+        "en": "The gap stays 15. Ages 10 and 25 give 2 : 5.",
+        "as": "ব্যৱধান 15। 10 আৰু 25ৰ অনুপাত 2 : 5।"
+       }
+      },
+      {
+       "q": {
+        "en": "A is 8 and B is 24. Slide to when their ages are in the ratio 1 : 2.",
+        "as": "A 8 বছৰ, B 24 বছৰ। বয়সৰ অনুপাত 1 : 2 হোৱা সময়লৈ টানা।"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 8,
+        "b": 24,
+        "ratio": [
+         1,
+         2
+        ]
+       },
+       "target": 8,
+       "answerText": {
+        "en": "8 years from now",
+        "as": "8 বছৰৰ পিছত"
+       },
+       "why": {
+        "en": "The gap stays 16. Ages 16 and 32 give 1 : 2.",
+        "as": "ব্যৱধান 16। 16 আৰু 32ৰ অনুপাত 1 : 2।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u1.q2",
+     "type": "tf",
+     "skill": "age-gap",
+     "s": {
+      "en": "If A is 20 years older than B today, A will be 25 years older in 5 years.",
+      "as": "A আজি Bতকৈ 20 বছৰ ডাঙৰ হ'লে 5 বছৰত 25 বছৰ ডাঙৰ হ'ব।"
+     },
+     "answer": false,
+     "why": {
+      "en": "Both age by 5, so A stays 20 years older.",
+      "as": "দুয়োৰে বয়স 5 বাঢ়ে, সেয়ে A 20 বছৰ ডাঙৰেই থাকে।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-age-gap",
+       "why": {
+        "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+        "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u1.q3",
+     "type": "solve",
+     "skill": "age-gap",
+     "q": {
+      "en": "The sum of two ages is 50 today. What will it be in 5 years?",
+      "as": "দুটা বয়সৰ যোগফল আজি 50। 5 বছৰত কিমান হ'ব?"
+     },
+     "answer": "60",
+     "why": {
+      "en": "Each person adds 5.",
+      "as": "প্ৰত্যেকৰে 5 বাঢ়ে।"
+     },
+     "traps": [
+      {
+       "ans": "55",
+       "tag": "m-age-both",
+       "why": {
+        "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+        "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "The sum of two ages is 50 today. What will it be in 5 years?",
+        "as": "দুটা বয়সৰ যোগফল আজি 50। 5 বছৰত কিমান হ'ব?"
+       },
+       "answer": "60",
+       "why": {
+        "en": "Each person adds 5.",
+        "as": "প্ৰত্যেকৰে 5 বাঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "55",
+         "tag": "m-age-both",
+         "why": {
+          "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+          "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The sum of two ages is 64 today. What will it be in 8 years?",
+        "as": "দুটা বয়সৰ যোগফল আজি 64। 8 বছৰত কিমান হ'ব?"
+       },
+       "answer": "80",
+       "why": {
+        "en": "Each person adds 8.",
+        "as": "প্ৰত্যেকৰে 8 বাঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "72",
+         "tag": "m-age-both",
+         "why": {
+          "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+          "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "The sum of two ages is 35 today. What will it be in 10 years?",
+        "as": "দুটা বয়সৰ যোগফল আজি 35। 10 বছৰত কিমান হ'ব?"
+       },
+       "answer": "55",
+       "why": {
+        "en": "Each person adds 10.",
+        "as": "প্ৰত্যেকৰে 10 বাঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "45",
+         "tag": "m-age-both",
+         "why": {
+          "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+          "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m12.u1.q4",
+     "type": "solve",
+     "skill": "age-gap",
+     "hints": [
+      {
+       "en": "Half the sum is the middle; go up half the gap.",
+       "as": "যোগফলৰ আধা মাজ; ব্যৱধানৰ আধা ওপৰলৈ যোৱা।"
+      }
+     ],
+     "q": {
+      "en": "Two ages add to 80 and differ by 30. Find the older age.",
+      "as": "দুটা বয়সৰ যোগফল 80, পাৰ্থক্য 30। ডাঙৰ বয়সটো উলিওৱা।"
+     },
+     "answer": "55",
+     "why": {
+      "en": "Level them, then add half the gap: 40 + 15.",
+      "as": "সমান কৰি ব্যৱধানৰ আধা যোগ কৰা: 40 + 15।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Two ages add to 80 and differ by 30. Find the older age.",
+        "as": "দুটা বয়সৰ যোগফল 80, পাৰ্থক্য 30। ডাঙৰ বয়সটো উলিওৱা।"
+       },
+       "answer": "55",
+       "why": {
+        "en": "Level them, then add half the gap: 40 + 15.",
+        "as": "সমান কৰি ব্যৱধানৰ আধা যোগ কৰা: 40 + 15।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two ages add to 60 and differ by 20. Find the older age.",
+        "as": "দুটা বয়সৰ যোগফল 60, পাৰ্থক্য 20। ডাঙৰ বয়সটো উলিওৱা।"
+       },
+       "answer": "40",
+       "why": {
+        "en": "Level them, then add half the gap: 30 + 10.",
+        "as": "সমান কৰি ব্যৱধানৰ আধা যোগ কৰা: 30 + 10।"
+       }
+      },
+      {
+       "q": {
+        "en": "Two ages add to 70 and differ by 40. Find the older age.",
+        "as": "দুটা বয়সৰ যোগফল 70, পাৰ্থক্য 40। ডাঙৰ বয়সটো উলিওৱা।"
+       },
+       "answer": "55",
+       "why": {
+        "en": "Level them, then add half the gap: 35 + 20.",
+        "as": "সমান কৰি ব্যৱধানৰ আধা যোগ কৰা: 35 + 20।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u1.q5",
+     "type": "match",
+     "skill": "age-gap",
+     "q": {
+      "en": "Ages are 12 and 36. Match the moment to the ratio",
+      "as": "বয়স 12 আৰু 36। সময়ক অনুপাতৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "Today",
+        "as": "আজি"
+       },
+       {
+        "en": "1 : 3",
+        "as": "1 : 3"
+       }
+      ],
+      [
+       {
+        "en": "In 12 years",
+        "as": "12 বছৰত"
+       },
+       {
+        "en": "1 : 2",
+        "as": "1 : 2"
+       }
+      ],
+      [
+       {
+        "en": "In 36 years",
+        "as": "36 বছৰত"
+       },
+       {
+        "en": "2 : 3",
+        "as": "2 : 3"
+       }
+      ],
+      [
+       {
+        "en": "6 years ago",
+        "as": "6 বছৰ আগতে"
+       },
+       {
+        "en": "1 : 5",
+        "as": "1 : 5"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The gap of 24 is in every pair.",
+      "as": "প্ৰতিটো যোৰাত 24 ব্যৱধান।"
+     }
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "title": {
+    "en": "Ratios across the years",
+    "as": "বছৰে বছৰে অনুপাত"
+   },
+   "icon": "star",
+   "learned": [
+    {
+     "en": "Write the ages as blocks: ax and bx.",
+     "as": "বয়স খণ্ডত লিখা: ax আৰু bx।"
+    },
+    {
+     "en": "The gap in blocks must match in both ratios.",
+     "as": "দুটা অনুপাতত খণ্ডৰ ব্যৱধান মিলিব লাগিব।"
+    },
+    {
+     "en": "If both ratios have the same gap, one block equals the years passed.",
+     "as": "দুয়োটা অনুপাতৰ ব্যৱধান একে হ'লে এটা খণ্ড অতিবাহিত বছৰৰ সমান।"
+    },
+    {
+     "en": "Otherwise scale a ratio first, as with linked ratios.",
+     "as": "নহ'লে প্ৰথমে অনুপাত সলনি কৰা, সংযুক্ত অনুপাতৰ দৰে।"
+    }
+   ],
+   "steps": [
+    {
+     "id": "m12.u2.s1",
+     "type": "story",
+     "title": {
+      "en": "Blocks that move together",
+      "as": "একেলগে যোৱা খণ্ড"
+     },
+     "text": [
+      {
+       "en": "A and B are 20 and 35, a ratio of 4 : 7. Each block is 5 years.",
+       "as": "A আৰু B 20 আৰু 35, অনুপাত 4 : 7। প্ৰতিটো খণ্ড 5 বছৰ।"
+      }
+     ],
+     "widget": {
+      "kind": "ages",
+      "a": 20,
+      "b": 35,
+      "ratio": [
+       5,
+       8
+      ]
+     },
+     "tasks": [
+      {
+       "do": {
+        "en": "Slide until the ratio is 5 : 8.",
+        "as": "অনুপাত 5 : 8 নোহোৱালৈ টানা।"
+       },
+       "goal": {
+        "y": 5
+       },
+       "then": {
+        "en": "Each side gained one block, and one block is the 5 years that passed.",
+        "as": "প্ৰতিফালে এটা খণ্ড বাঢ়িল, এটা খণ্ড মানে অতিবাহিত 5 বছৰ।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u2.s2",
+     "type": "story",
+     "title": {
+      "en": "Scale first if gaps differ",
+      "as": "ব্যৱধান বেলেগ হ'লে প্ৰথমে সলনি কৰা"
+     },
+     "text": [
+      {
+       "en": "Today 2 : 3, and 12 years ago 2 : 5 have gaps of 1 and 3 blocks.",
+       "as": "আজি 2 : 3, 12 বছৰ আগতে 2 : 5ৰ ব্যৱধান 1 আৰু 3 খণ্ড।"
+      },
+      {
+       "en": "Scale the first to 6 : 9 so both gaps are 3, as you did with the two B's.",
+       "as": "প্ৰথমটো 6 : 9 কৰা যাতে দুয়োটা ব্যৱধান 3 হয়, দুটা Bৰ দৰে।"
+      }
+     ],
+     "art": "scroll",
+     "diagram": {
+      "layout": "flow",
+      "items": [
+       {
+        "en": "2 : 3 becomes 6 : 9",
+        "as": "2 : 3 হয় 6 : 9"
+       },
+       {
+        "en": "Against 2 : 5",
+        "as": "2 : 5ৰ সৈতে"
+       },
+       {
+        "en": "4 blocks = 12 years",
+        "as": "4 খণ্ড = 12 বছৰ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "m12.u2.q1",
+     "type": "stepwise",
+     "skill": "age-ratio",
+     "q": {
+      "en": "Ages are in the ratio 4 : 7. In 5 years the ratio will be 5 : 8. Find the younger age now.",
+      "as": "বয়সৰ অনুপাত 4 : 7। 5 বছৰত অনুপাত 5 : 8 হ'ব। সৰুজনৰ এতিয়াৰ বয়স উলিওৱা।"
+     },
+     "parts": [
+      {
+       "ask": {
+        "en": "Gap in blocks in each ratio?",
+        "as": "প্ৰতিটো অনুপাতৰ খণ্ড ব্যৱধান?"
+       },
+       "options": [
+        {
+         "en": "3 and 3: equal",
+         "as": "3 আৰু 3: সমান"
+        },
+        {
+         "en": "11 and 13",
+         "as": "11 আৰু 13"
+        },
+        {
+         "en": "Different",
+         "as": "বেলেগ"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Subtract within each ratio.",
+        "as": "প্ৰতিটো অনুপাতৰ ভিতৰত বিয়োগ কৰা।"
+       },
+       "tag": "m-age-gap"
+      },
+      {
+       "ask": {
+        "en": "How many blocks did each gain?",
+        "as": "প্ৰত্যেকে কিমান খণ্ড পালে?"
+       },
+       "options": [
+        {
+         "en": "8",
+         "as": "8"
+        },
+        {
+         "en": "1",
+         "as": "1"
+        },
+        {
+         "en": "5",
+         "as": "5"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "Compare the same person across the ratios.",
+        "as": "একেজনক দুটা অনুপাতত তুলনা কৰা।"
+       }
+      },
+      {
+       "ask": {
+        "en": "Younger age now?",
+        "as": "সৰুজনৰ এতিয়াৰ বয়স?"
+       },
+       "options": [
+        {
+         "en": "20",
+         "as": "20"
+        },
+        {
+         "en": "55",
+         "as": "55"
+        },
+        {
+         "en": "25",
+         "as": "25"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "One block is the years ÷ blocks gained.",
+        "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+       },
+       "tag": "m-age-both"
+      }
+     ],
+     "why": {
+      "en": "Years passed turn into blocks, and blocks into ages.",
+      "as": "অতিবাহিত বছৰ খণ্ড হয়, খণ্ড বয়স হয়।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Ages are in the ratio 4 : 7. In 5 years the ratio will be 5 : 8. Find the younger age now.",
+        "as": "বয়সৰ অনুপাত 4 : 7। 5 বছৰত অনুপাত 5 : 8 হ'ব। সৰুজনৰ এতিয়াৰ বয়স উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Gap in blocks in each ratio?",
+          "as": "প্ৰতিটো অনুপাতৰ খণ্ড ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "3 and 3: equal",
+           "as": "3 আৰু 3: সমান"
+          },
+          {
+           "en": "11 and 13",
+           "as": "11 আৰু 13"
+          },
+          {
+           "en": "Different",
+           "as": "বেলেগ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Subtract within each ratio.",
+          "as": "প্ৰতিটো অনুপাতৰ ভিতৰত বিয়োগ কৰা।"
+         },
+         "tag": "m-age-gap"
+        },
+        {
+         "ask": {
+          "en": "How many blocks did each gain?",
+          "as": "প্ৰত্যেকে কিমান খণ্ড পালে?"
+         },
+         "options": [
+          {
+           "en": "8",
+           "as": "8"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "5",
+           "as": "5"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Compare the same person across the ratios.",
+          "as": "একেজনক দুটা অনুপাতত তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Younger age now?",
+          "as": "সৰুজনৰ এতিয়াৰ বয়স?"
+         },
+         "options": [
+          {
+           "en": "20",
+           "as": "20"
+          },
+          {
+           "en": "55",
+           "as": "55"
+          },
+          {
+           "en": "25",
+           "as": "25"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "One block is the years ÷ blocks gained.",
+          "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+         },
+         "tag": "m-age-both"
+        }
+       ],
+       "why": {
+        "en": "Years passed turn into blocks, and blocks into ages.",
+        "as": "অতিবাহিত বছৰ খণ্ড হয়, খণ্ড বয়স হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ages are in the ratio 2 : 3. In 6 years the ratio will be 3 : 4. Find the younger age now.",
+        "as": "বয়সৰ অনুপাত 2 : 3। 6 বছৰত অনুপাত 3 : 4 হ'ব। সৰুজনৰ এতিয়াৰ বয়স উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Gap in blocks in each ratio?",
+          "as": "প্ৰতিটো অনুপাতৰ খণ্ড ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "Different",
+           "as": "বেলেগ"
+          },
+          {
+           "en": "5 and 7",
+           "as": "5 আৰু 7"
+          },
+          {
+           "en": "1 and 1: equal",
+           "as": "1 আৰু 1: সমান"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "Subtract within each ratio.",
+          "as": "প্ৰতিটো অনুপাতৰ ভিতৰত বিয়োগ কৰা।"
+         },
+         "tag": "m-age-gap"
+        },
+        {
+         "ask": {
+          "en": "How many blocks did each gain?",
+          "as": "প্ৰত্যেকে কিমান খণ্ড পালে?"
+         },
+         "options": [
+          {
+           "en": "4",
+           "as": "4"
+          },
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "3",
+           "as": "3"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "Compare the same person across the ratios.",
+          "as": "একেজনক দুটা অনুপাতত তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Younger age now?",
+          "as": "সৰুজনৰ এতিয়াৰ বয়স?"
+         },
+         "options": [
+          {
+           "en": "30",
+           "as": "30"
+          },
+          {
+           "en": "12",
+           "as": "12"
+          },
+          {
+           "en": "18",
+           "as": "18"
+          }
+         ],
+         "answer": 1,
+         "note": {
+          "en": "One block is the years ÷ blocks gained.",
+          "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+         },
+         "tag": "m-age-both"
+        }
+       ],
+       "why": {
+        "en": "Years passed turn into blocks, and blocks into ages.",
+        "as": "অতিবাহিত বছৰ খণ্ড হয়, খণ্ড বয়স হয়।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ages are in the ratio 3 : 5. In 7 years the ratio will be 4 : 6. Find the younger age now.",
+        "as": "বয়সৰ অনুপাত 3 : 5। 7 বছৰত অনুপাত 4 : 6 হ'ব। সৰুজনৰ এতিয়াৰ বয়স উলিওৱা।"
+       },
+       "parts": [
+        {
+         "ask": {
+          "en": "Gap in blocks in each ratio?",
+          "as": "প্ৰতিটো অনুপাতৰ খণ্ড ব্যৱধান?"
+         },
+         "options": [
+          {
+           "en": "2 and 2: equal",
+           "as": "2 আৰু 2: সমান"
+          },
+          {
+           "en": "8 and 10",
+           "as": "8 আৰু 10"
+          },
+          {
+           "en": "Different",
+           "as": "বেলেগ"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Subtract within each ratio.",
+          "as": "প্ৰতিটো অনুপাতৰ ভিতৰত বিয়োগ কৰা।"
+         },
+         "tag": "m-age-gap"
+        },
+        {
+         "ask": {
+          "en": "How many blocks did each gain?",
+          "as": "প্ৰত্যেকে কিমান খণ্ড পালে?"
+         },
+         "options": [
+          {
+           "en": "1",
+           "as": "1"
+          },
+          {
+           "en": "6",
+           "as": "6"
+          },
+          {
+           "en": "4",
+           "as": "4"
+          }
+         ],
+         "answer": 0,
+         "note": {
+          "en": "Compare the same person across the ratios.",
+          "as": "একেজনক দুটা অনুপাতত তুলনা কৰা।"
+         }
+        },
+        {
+         "ask": {
+          "en": "Younger age now?",
+          "as": "সৰুজনৰ এতিয়াৰ বয়স?"
+         },
+         "options": [
+          {
+           "en": "56",
+           "as": "56"
+          },
+          {
+           "en": "28",
+           "as": "28"
+          },
+          {
+           "en": "21",
+           "as": "21"
+          }
+         ],
+         "answer": 2,
+         "note": {
+          "en": "One block is the years ÷ blocks gained.",
+          "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+         },
+         "tag": "m-age-both"
+        }
+       ],
+       "why": {
+        "en": "Years passed turn into blocks, and blocks into ages.",
+        "as": "অতিবাহিত বছৰ খণ্ড হয়, খণ্ড বয়স হয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u2.q2",
+     "type": "solve",
+     "skill": "age-ratio",
+     "q": {
+      "en": "Ages are now 8 and 20. How old will the younger be when the elder is 26?",
+      "as": "বয়স এতিয়া 8 আৰু 20। ডাঙৰজন 26 হ'লে সৰুজন কিমান হ'ব?"
+     },
+     "answer": "14",
+     "why": {
+      "en": "Both gain 6 years.",
+      "as": "দুয়োৰে 6 বছৰ বাঢ়ে।"
+     },
+     "traps": [
+      {
+       "ans": "8",
+       "tag": "m-age-both",
+       "why": {
+        "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+        "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+       }
+      }
+     ],
+     "variants": [
+      {
+       "q": {
+        "en": "Ages are now 8 and 20. How old will the younger be when the elder is 26?",
+        "as": "বয়স এতিয়া 8 আৰু 20। ডাঙৰজন 26 হ'লে সৰুজন কিমান হ'ব?"
+       },
+       "answer": "14",
+       "why": {
+        "en": "Both gain 6 years.",
+        "as": "দুয়োৰে 6 বছৰ বাঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "8",
+         "tag": "m-age-both",
+         "why": {
+          "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+          "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Ages are now 9 and 21. How old will the younger be when the elder is 30?",
+        "as": "বয়স এতিয়া 9 আৰু 21। ডাঙৰজন 30 হ'লে সৰুজন কিমান হ'ব?"
+       },
+       "answer": "18",
+       "why": {
+        "en": "Both gain 9 years.",
+        "as": "দুয়োৰে 9 বছৰ বাঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "9",
+         "tag": "m-age-both",
+         "why": {
+          "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+          "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+         }
+        }
+       ]
+      },
+      {
+       "q": {
+        "en": "Ages are now 6 and 24. How old will the younger be when the elder is 36?",
+        "as": "বয়স এতিয়া 6 আৰু 24। ডাঙৰজন 36 হ'লে সৰুজন কিমান হ'ব?"
+       },
+       "answer": "18",
+       "why": {
+        "en": "Both gain 12 years.",
+        "as": "দুয়োৰে 12 বছৰ বাঢ়ে।"
+       },
+       "traps": [
+        {
+         "ans": "6",
+         "tag": "m-age-both",
+         "why": {
+          "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+          "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m12.u2.q3",
+     "type": "tf",
+     "skill": "age-ratio",
+     "s": {
+      "en": "If ages are in the ratio 1 : 2 today, they will stay 1 : 2 for life.",
+      "as": "আজি বয়সৰ অনুপাত 1 : 2 হ'লে জীৱনজুৰি 1 : 2 থাকিব।"
+     },
+     "answer": false,
+     "why": {
+      "en": "The gap is fixed, not the ratio. As both grow, the ratio moves towards 1 : 1.",
+      "as": "ব্যৱধান স্থিৰ, অনুপাত নহয়। দুয়োটা বাঢ়িলে অনুপাত 1 : 1ৰ ফালে যায়।"
+     },
+     "traps": [
+      {
+       "opt": true,
+       "tag": "m-age-gap",
+       "why": {
+        "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+        "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u2.q4",
+     "type": "explore",
+     "skill": "age-ratio",
+     "q": {
+      "en": "Ages are 20 and 30. How many years ago was the ratio 1 : 2?",
+      "as": "বয়স 20 আৰু 30। কিমান বছৰ আগতে অনুপাত 1 : 2 আছিল?"
+     },
+     "widget": {
+      "kind": "ages",
+      "a": 20,
+      "b": 30,
+      "ratio": [
+       1,
+       2
+      ]
+     },
+     "target": -10,
+     "answerText": {
+      "en": "10 years ago",
+      "as": "10 বছৰ আগতে"
+     },
+     "why": {
+      "en": "10 : 20 is 1 : 2.",
+      "as": "10 : 20 হৈছে 1 : 2।"
+     },
+     "variants": [
+      {
+       "q": {
+        "en": "Ages are 20 and 30. How many years ago was the ratio 1 : 2?",
+        "as": "বয়স 20 আৰু 30। কিমান বছৰ আগতে অনুপাত 1 : 2 আছিল?"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 20,
+        "b": 30,
+        "ratio": [
+         1,
+         2
+        ]
+       },
+       "target": -10,
+       "answerText": {
+        "en": "10 years ago",
+        "as": "10 বছৰ আগতে"
+       },
+       "why": {
+        "en": "10 : 20 is 1 : 2.",
+        "as": "10 : 20 হৈছে 1 : 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ages are 24 and 36. How many years ago was the ratio 1 : 2?",
+        "as": "বয়স 24 আৰু 36। কিমান বছৰ আগতে অনুপাত 1 : 2 আছিল?"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 24,
+        "b": 36,
+        "ratio": [
+         1,
+         2
+        ]
+       },
+       "target": -12,
+       "answerText": {
+        "en": "12 years ago",
+        "as": "12 বছৰ আগতে"
+       },
+       "why": {
+        "en": "12 : 24 is 1 : 2.",
+        "as": "12 : 24 হৈছে 1 : 2।"
+       }
+      },
+      {
+       "q": {
+        "en": "Ages are 16 and 28. How many years ago was the ratio 1 : 4?",
+        "as": "বয়স 16 আৰু 28। কিমান বছৰ আগতে অনুপাত 1 : 4 আছিল?"
+       },
+       "widget": {
+        "kind": "ages",
+        "a": 16,
+        "b": 28,
+        "ratio": [
+         1,
+         4
+        ]
+       },
+       "target": -12,
+       "answerText": {
+        "en": "12 years ago",
+        "as": "12 বছৰ আগতে"
+       },
+       "why": {
+        "en": "4 : 16 is 1 : 4.",
+        "as": "4 : 16 হৈছে 1 : 4।"
+       }
+      }
+     ]
+    },
+    {
+     "id": "m12.u2.q5",
+     "type": "match",
+     "skill": "age-ratio",
+     "q": {
+      "en": "Match each ratio to the gap in blocks",
+      "as": "প্ৰতিটো অনুপাতক খণ্ড ব্যৱধানৰ সৈতে মিলোৱা"
+     },
+     "pairs": [
+      [
+       {
+        "en": "2 : 3",
+        "as": "2 : 3"
+       },
+       {
+        "en": "1 block",
+        "as": "1 খণ্ড"
+       }
+      ],
+      [
+       {
+        "en": "3 : 5",
+        "as": "3 : 5"
+       },
+       {
+        "en": "2 blocks",
+        "as": "2 খণ্ড"
+       }
+      ],
+      [
+       {
+        "en": "1 : 4",
+        "as": "1 : 4"
+       },
+       {
+        "en": "3 blocks",
+        "as": "3 খণ্ড"
+       }
+      ],
+      [
+       {
+        "en": "2 : 6",
+        "as": "2 : 6"
+       },
+       {
+        "en": "4 blocks",
+        "as": "4 খণ্ড"
+       }
+      ]
+     ],
+     "why": {
+      "en": "The gap in blocks is the second part minus the first.",
+      "as": "খণ্ড ব্যৱধান দ্বিতীয় ভাগ বিয়োগ প্ৰথম।"
+     }
+    }
+   ]
+  }
+ ],
+ "test": {
+  "id": "test",
+  "title": {
+   "en": "Ages test",
+   "as": "বয়সৰ পৰীক্ষা"
+  },
+  "learned": [],
+  "steps": [
+   {
+    "id": "m12.t.q1",
+    "type": "mcq",
+    "skill": "age-ratio",
+    "q": {
+     "en": "Ages are in the ratio 5 : 7, and after 4 years in the ratio 6 : 8. The elder is now",
+     "as": "বয়সৰ অনুপাত 5 : 7, 4 বছৰৰ পিছত 6 : 8। ডাঙৰজন এতিয়া"
+    },
+    "why": {
+     "en": "One block is the years ÷ blocks gained.",
+     "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+    },
+    "options": [
+     {
+      "en": "28",
+      "as": "28"
+     },
+     {
+      "en": "26",
+      "as": "26"
+     },
+     {
+      "en": "20",
+      "as": "20"
+     },
+     {
+      "en": "32",
+      "as": "32"
+     }
+    ],
+    "answer": 0,
+    "traps": [
+     {
+      "opt": 2,
+      "tag": "m-age-both",
+      "why": {
+       "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+       "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Ages are in the ratio 5 : 7, and after 4 years in the ratio 6 : 8. The elder is now",
+       "as": "বয়সৰ অনুপাত 5 : 7, 4 বছৰৰ পিছত 6 : 8। ডাঙৰজন এতিয়া"
+      },
+      "why": {
+       "en": "One block is the years ÷ blocks gained.",
+       "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+      },
+      "options": [
+       {
+        "en": "28",
+        "as": "28"
+       },
+       {
+        "en": "26",
+        "as": "26"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       },
+       {
+        "en": "32",
+        "as": "32"
+       }
+      ],
+      "answer": 0,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-age-both",
+        "why": {
+         "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+         "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Ages are in the ratio 3 : 4, and after 9 years in the ratio 4 : 5. The elder is now",
+       "as": "বয়সৰ অনুপাত 3 : 4, 9 বছৰৰ পিছত 4 : 5। ডাঙৰজন এতিয়া"
+      },
+      "why": {
+       "en": "One block is the years ÷ blocks gained.",
+       "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+      },
+      "options": [
+       {
+        "en": "45",
+        "as": "45"
+       },
+       {
+        "en": "27",
+        "as": "27"
+       },
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "34",
+        "as": "34"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-age-both",
+        "why": {
+         "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+         "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Ages are in the ratio 2 : 5, and after 8 years in the ratio 3 : 6. The elder is now",
+       "as": "বয়সৰ অনুপাত 2 : 5, 8 বছৰৰ পিছত 3 : 6। ডাঙৰজন এতিয়া"
+      },
+      "why": {
+       "en": "One block is the years ÷ blocks gained.",
+       "as": "এটা খণ্ড = বছৰ ÷ পোৱা খণ্ড।"
+      },
+      "options": [
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "40",
+        "as": "40"
+       },
+       {
+        "en": "16",
+        "as": "16"
+       },
+       {
+        "en": "38",
+        "as": "38"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-age-both",
+        "why": {
+         "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+         "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m12.t.q2",
+    "type": "mcq",
+    "skill": "age-gap",
+    "q": {
+     "en": "Two ages add to 90 and differ by 30. The younger is",
+     "as": "দুটা বয়সৰ যোগফল 90, পাৰ্থক্য 30। সৰুজন"
+    },
+    "why": {
+     "en": "Half the sum, less half the gap.",
+     "as": "যোগফলৰ আধা, ব্যৱধানৰ আধা বাদ।"
+    },
+    "options": [
+     {
+      "en": "60",
+      "as": "60"
+     },
+     {
+      "en": "28",
+      "as": "28"
+     },
+     {
+      "en": "45",
+      "as": "45"
+     },
+     {
+      "en": "30",
+      "as": "30"
+     }
+    ],
+    "answer": 3,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-age-gap",
+      "why": {
+       "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+       "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Two ages add to 90 and differ by 30. The younger is",
+       "as": "দুটা বয়সৰ যোগফল 90, পাৰ্থক্য 30। সৰুজন"
+      },
+      "why": {
+       "en": "Half the sum, less half the gap.",
+       "as": "যোগফলৰ আধা, ব্যৱধানৰ আধা বাদ।"
+      },
+      "options": [
+       {
+        "en": "60",
+        "as": "60"
+       },
+       {
+        "en": "28",
+        "as": "28"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-age-gap",
+        "why": {
+         "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+         "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two ages add to 50 and differ by 10. The younger is",
+       "as": "দুটা বয়সৰ যোগফল 50, পাৰ্থক্য 10। সৰুজন"
+      },
+      "why": {
+       "en": "Half the sum, less half the gap.",
+       "as": "যোগফলৰ আধা, ব্যৱধানৰ আধা বাদ।"
+      },
+      "options": [
+       {
+        "en": "30",
+        "as": "30"
+       },
+       {
+        "en": "10",
+        "as": "10"
+       },
+       {
+        "en": "20",
+        "as": "20"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-age-gap",
+        "why": {
+         "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+         "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Two ages add to 72 and differ by 24. The younger is",
+       "as": "দুটা বয়সৰ যোগফল 72, পাৰ্থক্য 24। সৰুজন"
+      },
+      "why": {
+       "en": "Half the sum, less half the gap.",
+       "as": "যোগফলৰ আধা, ব্যৱধানৰ আধা বাদ।"
+      },
+      "options": [
+       {
+        "en": "36",
+        "as": "36"
+       },
+       {
+        "en": "24",
+        "as": "24"
+       },
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "22",
+        "as": "22"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 2,
+        "tag": "m-age-gap",
+        "why": {
+         "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+         "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m12.t.q3",
+    "type": "mcq",
+    "skill": "age-ratio",
+    "q": {
+     "en": "Ages are now in the ratio 3 : 4. 10 years ago they were 1 : 2. The sum of their ages now is",
+     "as": "বয়সৰ অনুপাত এতিয়া 3 : 4। 10 বছৰ আগতে 1 : 2 আছিল। এতিয়াৰ বয়সৰ যোগফল"
+    },
+    "why": {
+     "en": "Scale so the block gaps match, then one block follows.",
+     "as": "খণ্ড ব্যৱধান মিলাই এটা খণ্ড উলিওৱা।"
+    },
+    "options": [
+     {
+      "en": "15",
+      "as": "15"
+     },
+     {
+      "en": "35",
+      "as": "35"
+     },
+     {
+      "en": "25",
+      "as": "25"
+     },
+     {
+      "en": "45",
+      "as": "45"
+     }
+    ],
+    "answer": 1,
+    "traps": [
+     {
+      "opt": 0,
+      "tag": "m-age-both",
+      "why": {
+       "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+       "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "Ages are now in the ratio 3 : 4. 10 years ago they were 1 : 2. The sum of their ages now is",
+       "as": "বয়সৰ অনুপাত এতিয়া 3 : 4। 10 বছৰ আগতে 1 : 2 আছিল। এতিয়াৰ বয়সৰ যোগফল"
+      },
+      "why": {
+       "en": "Scale so the block gaps match, then one block follows.",
+       "as": "খণ্ড ব্যৱধান মিলাই এটা খণ্ড উলিওৱা।"
+      },
+      "options": [
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "35",
+        "as": "35"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "45",
+        "as": "45"
+       }
+      ],
+      "answer": 1,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-age-both",
+        "why": {
+         "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+         "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Ages are now in the ratio 2 : 3. 5 years ago they were 1 : 2. The sum of their ages now is",
+       "as": "বয়সৰ অনুপাত এতিয়া 2 : 3। 5 বছৰ আগতে 1 : 2 আছিল। এতিয়াৰ বয়সৰ যোগফল"
+      },
+      "why": {
+       "en": "Scale so the block gaps match, then one block follows.",
+       "as": "খণ্ড ব্যৱধান মিলাই এটা খণ্ড উলিওৱা।"
+      },
+      "options": [
+       {
+        "en": "20",
+        "as": "20"
+       },
+       {
+        "en": "15",
+        "as": "15"
+       },
+       {
+        "en": "25",
+        "as": "25"
+       },
+       {
+        "en": "30",
+        "as": "30"
+       }
+      ],
+      "answer": 2,
+      "traps": [
+       {
+        "opt": 1,
+        "tag": "m-age-both",
+        "why": {
+         "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+         "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "Ages are now in the ratio 3 : 5. 8 years ago they were 1 : 2. The sum of their ages now is",
+       "as": "বয়সৰ অনুপাত এতিয়া 3 : 5। 8 বছৰ আগতে 1 : 2 আছিল। এতিয়াৰ বয়সৰ যোগফল"
+      },
+      "why": {
+       "en": "Scale so the block gaps match, then one block follows.",
+       "as": "খণ্ড ব্যৱধান মিলাই এটা খণ্ড উলিওৱা।"
+      },
+      "options": [
+       {
+        "en": "48",
+        "as": "48"
+       },
+       {
+        "en": "72",
+        "as": "72"
+       },
+       {
+        "en": "56",
+        "as": "56"
+       },
+       {
+        "en": "64",
+        "as": "64"
+       }
+      ],
+      "answer": 3,
+      "traps": [
+       {
+        "opt": 0,
+        "tag": "m-age-both",
+        "why": {
+         "en": "Both people move on by the same years. Add the years to both ages, not just one.",
+         "as": "দুয়োজন একে বছৰ আগবাঢ়ে। দুয়োটা বয়সতে বছৰ যোগ কৰা, এটাত নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "m12.t.q4",
+    "type": "tf",
+    "skill": "age-gap",
+    "s": {
+     "en": "The difference between a parent's and a child's age never changes.",
+     "as": "অভিভাৱক আৰু সন্তানৰ বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+    },
+    "answer": true,
+    "why": {
+     "en": "Both age at one year per year.",
+     "as": "দুয়োৰে বছৰি এবছৰ বাঢ়ে।"
+    }
+   },
+   {
+    "id": "m12.t.q5",
+    "type": "solve",
+    "skill": "age-gap",
+    "q": {
+     "en": "A man is 25 years older than his son. In 10 years, how much older will he be?",
+     "as": "এজন মানুহ পুত্ৰতকৈ 25 বছৰ ডাঙৰ। 10 বছৰত কিমান ডাঙৰ হ'ব?"
+    },
+    "answer": "25",
+    "why": {
+     "en": "The gap never changes.",
+     "as": "ব্যৱধান কেতিয়াও সলনি নহয়।"
+    },
+    "traps": [
+     {
+      "ans": "35",
+      "tag": "m-age-gap",
+      "why": {
+       "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+       "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+      }
+     }
+    ],
+    "variants": [
+     {
+      "q": {
+       "en": "A man is 25 years older than his son. In 10 years, how much older will he be?",
+       "as": "এজন মানুহ পুত্ৰতকৈ 25 বছৰ ডাঙৰ। 10 বছৰত কিমান ডাঙৰ হ'ব?"
+      },
+      "answer": "25",
+      "why": {
+       "en": "The gap never changes.",
+       "as": "ব্যৱধান কেতিয়াও সলনি নহয়।"
+      },
+      "traps": [
+       {
+        "ans": "35",
+        "tag": "m-age-gap",
+        "why": {
+         "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+         "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A man is 30 years older than his son. In 7 years, how much older will he be?",
+       "as": "এজন মানুহ পুত্ৰতকৈ 30 বছৰ ডাঙৰ। 7 বছৰত কিমান ডাঙৰ হ'ব?"
+      },
+      "answer": "30",
+      "why": {
+       "en": "The gap never changes.",
+       "as": "ব্যৱধান কেতিয়াও সলনি নহয়।"
+      },
+      "traps": [
+       {
+        "ans": "37",
+        "tag": "m-age-gap",
+        "why": {
+         "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+         "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+        }
+       }
+      ]
+     },
+     {
+      "q": {
+       "en": "A man is 28 years older than his son. In 12 years, how much older will he be?",
+       "as": "এজন মানুহ পুত্ৰতকৈ 28 বছৰ ডাঙৰ। 12 বছৰত কিমান ডাঙৰ হ'ব?"
+      },
+      "answer": "28",
+      "why": {
+       "en": "The gap never changes.",
+       "as": "ব্যৱধান কেতিয়াও সলনি নহয়।"
+      },
+      "traps": [
+       {
+        "ans": "40",
+        "tag": "m-age-gap",
+        "why": {
+         "en": "Everyone ages at the same pace, so the difference between two ages never changes.",
+         "as": "সকলোৰে বয়স একে হাৰত বাঢ়ে, সেয়ে দুটা বয়সৰ পাৰ্থক্য কেতিয়াও সলনি নহয়।"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
