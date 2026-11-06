@@ -96,8 +96,8 @@ Use the existing `scripts/autoplay.js` browser helper for meaningful player
 checks in English and Assamese, including mistakes/retries and first-attempt
 80% gates. Test-outs and checkpoints must not retry questions.
 
-Keep user-owned untracked files, including the pre-existing
-`scripts/preview_drafts.py`. Do not run its hard-coded external output path
+Keep user-owned files, including `scripts/preview_drafts.py`. Do not run its
+hard-coded external output path
 without inspecting it. Keep previews and browser artifacts out of commits.
 `output/` is also user-owned and must be preserved. Disposable ignored browser
 and Python caches may be cleaned after confirming they are generated artifacts.

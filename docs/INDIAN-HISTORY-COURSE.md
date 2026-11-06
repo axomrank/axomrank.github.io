@@ -251,7 +251,8 @@ of Mysore' (for lesson 17), and the 'father of zero' label, taught as a label in
 Done on 2026-11-05 unless marked open.
 
 1. **Sources.** The four titles this course uses were copied, with their text files,
-   to `/home/angsuman/extra_spac/Indian history sources`. The trashed `Primary source`
+   to `/home/angsuman/extra_spac/Indian history sources`, which was moved to the Trash on
+   2026-11-05 after release. The trashed `Primary source`
    folder was not restored or changed. **Open:**
    Stein's Rajatarangini volume 1 (Lalitaditya), and the items under `to_locate`.
 2. **India map.** A lesson or card `map` takes `"base": "india"`.

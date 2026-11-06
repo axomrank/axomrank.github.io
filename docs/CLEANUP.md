@@ -33,8 +33,9 @@ Replace the path with whatever you need.
   them would mean editing published lessons.
 - `content/courses/ahom-kings.json`, its bank and optional lessons: saved links and
   learner progress depend on them.
-- `private/`, `output/` and `scripts/preview_drafts.py`: user-owned, on neither host,
-  and not recoverable from git.
+- `private/` and `output/`: user-owned, on neither host, and not recoverable
+  from git.
+- `scripts/preview_drafts.py`: user-owned draft preview tool.
 
 ## Known issue
 
