@@ -1,6 +1,8 @@
 # Child Development and Pedagogy course plan
 
-Status: planned on 2026-11-06. Nothing is built. Lesson format and permanent-id rules in
+Status: listed and published on 2026-11-06 at the user's request, with a pending-review notice.
+All 10 lessons exist. English only, at the user's request: each
+`as` field repeats the English, as in the English course, and no Assamese is planned. Lesson format and permanent-id rules in
 [LESSON-DESIGN.md](LESSON-DESIGN.md) apply.
 
 A future teacher should be able to apply an idea to a classroom situation, not just name a
@@ -12,7 +14,8 @@ theorist.
 the TET sample, and none appear in Paper II. Other exams ask nothing here, so this course is
 worth building for TET candidates alone. Only the 2021 papers are in the sample, so check
 newer papers and the current syllabus before fixing the list. The earlier official notice link
-returned a 404 error when it was tried, so that syllabus has not been read.
+returned a 404 error when it was tried, so that syllabus has not been read. A 2026-11-06 search also
+found only secondary guides.
 
 | Group | Past questions |
 |---|---:|
@@ -71,4 +74,4 @@ scene is an idea to test, not a need.
 ## Release gates
 
 Build checks pass. Theories were checked against sources. A teacher-educator has reviewed the
-scenarios, and a fluent reader has reviewed the Assamese terms.
+scenarios.

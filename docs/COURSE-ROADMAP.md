@@ -7,10 +7,10 @@ subject tags are unverified. The lesson maps are in
 
 | Order | Course | Plan | Past questions | Lessons | Status in app |
 |---:|---|---|---:|---:|---|
-| 1 | English | [ENGLISH-COURSE.md](ENGLISH-COURSE.md) | 379 | 15 | Built in local catalog |
-| 2 | General Awareness | [GENERAL-AWARENESS-COURSE.md](GENERAL-AWARENESS-COURSE.md) | 166 | 7 | Built in local catalog |
-| 3 | General Science and Environment | [GENERAL-SCIENCE-COURSE.md](GENERAL-SCIENCE-COURSE.md) | 137 | 12 | Listed, pending review: 12 lessons |
-| 4 | Child Development and Pedagogy | [PEDAGOGY-COURSE.md](PEDAGOGY-COURSE.md) | 55 | 10 | Coming soon |
+| 1 | English | [ENGLISH-COURSE.md](ENGLISH-COURSE.md) | 379 | 15 | Published |
+| 2 | General Awareness | [GENERAL-AWARENESS-COURSE.md](GENERAL-AWARENESS-COURSE.md) | 166 | 7 | Published |
+| 3 | General Science and Environment | [GENERAL-SCIENCE-COURSE.md](GENERAL-SCIENCE-COURSE.md) | 137 | 12 | Published, pending review: 12 lessons |
+| 4 | Child Development and Pedagogy | [PEDAGOGY-COURSE.md](PEDAGOGY-COURSE.md) | 55 | 10 | Published, English only, pending review: 10 lessons |
 
 **If TET is the priority,** move Pedagogy ahead of Science: it is 17% of the TET sample and
 appears in no other exam.

@@ -1,0 +1,1435 @@
+{
+  "id": "pd-03-thinking",
+  "course": "pedagogy",
+  "no": 3,
+  "version": 1,
+  "king": {
+    "en": "How children think",
+    "as": "How children think"
+  },
+  "reign": {
+    "en": "Child development",
+    "as": "Child development"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Piaget, The Origins of Intelligence in Children",
+      "url": "https://openlibrary.org/search?q=piaget+origins+of+intelligence+in+children",
+      "used_for": "Lead for stages and schemas. Passage still to be read."
+    },
+    {
+      "title": "Vygotsky, Mind in Society",
+      "url": "https://openlibrary.org/search?q=vygotsky+mind+in+society",
+      "used_for": "Lead for the zone of proximal development. Passage still to be read."
+    },
+    {
+      "title": "Wood, Bruner and Ross (1976), The role of tutoring in problem solving",
+      "url": "https://doi.org/10.1111/j.1469-7610.1976.tb00381.x",
+      "used_for": "Lead for scaffolding. Passage still to be read."
+    }
+  ],
+  "checkedOn": "2026-11-06",
+  "review_notes": {
+    "language": "English only at the user's request; the as fields repeat the English.",
+    "facts": "pending teacher-educator review"
+  },
+  "map": {
+    "box": [
+      89,
+      24,
+      97,
+      28
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Piaget's building blocks",
+        "as": "Piaget's building blocks"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "A schema is an organised pattern of thinking.",
+          "as": "A schema is an organised pattern of thinking."
+        },
+        {
+          "en": "Assimilation fits new information into an existing schema.",
+          "as": "Assimilation fits new information into an existing schema."
+        },
+        {
+          "en": "Accommodation changes a schema to fit new information.",
+          "as": "Accommodation changes a schema to fit new information."
+        },
+        {
+          "en": "Equilibration is the drive to balance understanding.",
+          "as": "Equilibration is the drive to balance understanding."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The cow called a dog",
+            "as": "The cow called a dog"
+          },
+          "text": [
+            {
+              "en": "A toddler who knows dogs points at a cow and says \"dog\". The new animal fits an old idea: <mark>assimilation</mark>.",
+              "as": "A toddler who knows dogs points at a cow and says \"dog\". The new animal fits an old idea: <mark>assimilation</mark>."
+            },
+            {
+              "en": "Told it moos and gives milk, the child forms a new category: <mark>accommodation</mark>. Jean <mark>Piaget</mark> saw children as active builders of knowledge.",
+              "as": "Told it moos and gives milk, the child forms a new category: <mark>accommodation</mark>. Jean <mark>Piaget</mark> saw children as active builders of knowledge."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Schema",
+                "as": "Schema"
+              },
+              {
+                "en": "New experience",
+                "as": "New experience"
+              },
+              {
+                "en": "Assimilate or accommodate",
+                "as": "Assimilate or accommodate"
+              },
+              {
+                "en": "Balance",
+                "as": "Balance"
+              }
+            ]
+          },
+          "id": "pd03.u1.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "A child adds a new fact to a current idea without changing it. What is this?",
+            "as": "A child adds a new fact to a current idea without changing it. What is this?"
+          },
+          "options": [
+            {
+              "en": "Accommodation",
+              "as": "Accommodation"
+            },
+            {
+              "en": "Assimilation",
+              "as": "Assimilation"
+            },
+            {
+              "en": "Extinction",
+              "as": "Extinction"
+            },
+            {
+              "en": "Reinforcement",
+              "as": "Reinforcement"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The idea stays as it was.",
+            "as": "The idea stays as it was."
+          },
+          "guess": true,
+          "id": "pd03.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Wrong answers can be useful",
+            "as": "Wrong answers can be useful"
+          },
+          "text": [
+            {
+              "en": "Piaget noticed that children's errors followed patterns. Their logic differed from adults'; it was not just less information.",
+              "as": "Piaget noticed that children's errors followed patterns. Their logic differed from adults'; it was not just less information."
+            },
+            {
+              "en": "When ideas clash with evidence, a child feels imbalance. Resolving it is <mark>equilibration</mark>, and it drives cognitive growth.",
+              "as": "When ideas clash with evidence, a child feels imbalance. Resolving it is <mark>equilibration</mark>, and it drives cognitive growth."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Assimilation · fit in",
+                "as": "Assimilation · fit in"
+              },
+              {
+                "en": "Accommodation · change",
+                "as": "Accommodation · change"
+              },
+              {
+                "en": "Equilibration · rebalance",
+                "as": "Equilibration · rebalance"
+              }
+            ]
+          },
+          "id": "pd03.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Mental pattern",
+                "as": "Mental pattern"
+              },
+              {
+                "en": "schema",
+                "as": "schema"
+              }
+            ],
+            [
+              {
+                "en": "Fit into the old idea",
+                "as": "Fit into the old idea"
+              },
+              {
+                "en": "assimilation",
+                "as": "assimilation"
+              }
+            ],
+            [
+              {
+                "en": "Change the old idea",
+                "as": "Change the old idea"
+              },
+              {
+                "en": "accommodation",
+                "as": "accommodation"
+              }
+            ],
+            [
+              {
+                "en": "Restore balance",
+                "as": "Restore balance"
+              },
+              {
+                "en": "equilibration",
+                "as": "equilibration"
+              }
+            ]
+          ],
+          "why": {
+            "en": "These four words are the core of Piaget.",
+            "as": "These four words are the core of Piaget."
+          },
+          "id": "pd03.u1.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Piaget saw children as passive receivers of knowledge.",
+            "as": "Piaget saw children as passive receivers of knowledge."
+          },
+          "answer": false,
+          "why": {
+            "en": "He saw them as active constructors.",
+            "as": "He saw them as active constructors."
+          },
+          "id": "pd03.u1.05"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Assimilation",
+              "means",
+              "changing",
+              "a",
+              "schema",
+              "to",
+              "fit",
+              "new",
+              "facts."
+            ],
+            "as": [
+              "Assimilation",
+              "means",
+              "changing",
+              "a",
+              "schema",
+              "to",
+              "fit",
+              "new",
+              "facts."
+            ]
+          },
+          "wrong": {
+            "en": 0,
+            "as": 0
+          },
+          "fix": {
+            "en": "Accommodation",
+            "as": "Accommodation"
+          },
+          "answerText": {
+            "en": "Assimilation",
+            "as": "Assimilation"
+          },
+          "why": {
+            "en": "Assimilation keeps the schema; accommodation changes it.",
+            "as": "Assimilation keeps the schema; accommodation changes it."
+          },
+          "id": "pd03.u1.06"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "A teacher sets up a surprising experiment to create a useful",
+            "as": "A teacher sets up a surprising experiment to create a useful"
+          },
+          "after": {
+            "en": "in pupils' thinking.",
+            "as": "in pupils' thinking."
+          },
+          "options": [
+            {
+              "en": "conflict",
+              "as": "conflict"
+            },
+            {
+              "en": "silence",
+              "as": "silence"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Cognitive conflict can start accommodation.",
+            "as": "Cognitive conflict can start accommodation."
+          },
+          "id": "pd03.u1.07"
+        },
+        {
+          "type": "unscramble",
+          "q": {
+            "en": "Unscramble Piaget's word for a mental pattern.",
+            "as": "Unscramble Piaget's word for a mental pattern."
+          },
+          "word": {
+            "en": [
+              "S",
+              "C",
+              "H",
+              "E",
+              "M",
+              "A"
+            ],
+            "as": [
+              "S",
+              "C",
+              "H",
+              "E",
+              "M",
+              "A"
+            ]
+          },
+          "answerText": {
+            "en": "SCHEMA",
+            "as": "SCHEMA"
+          },
+          "why": {
+            "en": "Plural: schemata or schemas.",
+            "as": "Plural: schemata or schemas."
+          },
+          "id": "pd03.u1.08"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Four stages of thinking",
+        "as": "Four stages of thinking"
+      },
+      "icon": "walk",
+      "learned": [
+        {
+          "en": "Sensorimotor: birth to 2, with object permanence.",
+          "as": "Sensorimotor: birth to 2, with object permanence."
+        },
+        {
+          "en": "Preoperational: 2 to 7, with symbols and egocentrism.",
+          "as": "Preoperational: 2 to 7, with symbols and egocentrism."
+        },
+        {
+          "en": "Concrete operational: 7 to 11, with conservation and logic on real objects.",
+          "as": "Concrete operational: 7 to 11, with conservation and logic on real objects."
+        },
+        {
+          "en": "Formal operational: from about 11, with abstract thought.",
+          "as": "Formal operational: from about 11, with abstract thought."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Same water, two glasses",
+            "as": "Same water, two glasses"
+          },
+          "text": [
+            {
+              "en": "Pour water into a taller glass. A five-year-old says there is now more. A nine-year-old says it is the same: <mark>conservation</mark>.",
+              "as": "Pour water into a taller glass. A five-year-old says there is now more. A nine-year-old says it is the same: <mark>conservation</mark>."
+            },
+            {
+              "en": "Most primary pupils are <mark>concrete operational</mark>, so they reason best with objects they can see and handle.",
+              "as": "Most primary pupils are <mark>concrete operational</mark>, so they reason best with objects they can see and handle."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Sensorimotor · 0 to 2",
+                "as": "Sensorimotor · 0 to 2"
+              },
+              {
+                "en": "Preoperational · 2 to 7",
+                "as": "Preoperational · 2 to 7"
+              },
+              {
+                "en": "Concrete · 7 to 11",
+                "as": "Concrete · 7 to 11"
+              },
+              {
+                "en": "Formal · 11 onward",
+                "as": "Formal · 11 onward"
+              }
+            ]
+          },
+          "id": "pd03.u2.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which stage usually shows object permanence developing?",
+            "as": "Which stage usually shows object permanence developing?"
+          },
+          "options": [
+            {
+              "en": "Sensorimotor",
+              "as": "Sensorimotor"
+            },
+            {
+              "en": "Preoperational",
+              "as": "Preoperational"
+            },
+            {
+              "en": "Concrete operational",
+              "as": "Concrete operational"
+            },
+            {
+              "en": "Formal operational",
+              "as": "Formal operational"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Infants learn that hidden objects still exist.",
+            "as": "Infants learn that hidden objects still exist."
+          },
+          "guess": true,
+          "id": "pd03.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Ages are rough guides",
+            "as": "Ages are rough guides"
+          },
+          "text": [
+            {
+              "en": "Preoperational children can be <mark>egocentric</mark>: they struggle to take another's view. Formal thinkers can test ideas in their heads.",
+              "as": "Preoperational children can be <mark>egocentric</mark>: they struggle to take another's view. Formal thinkers can test ideas in their heads."
+            },
+            {
+              "en": "Later researchers found Piaget sometimes underestimated young children. Treat his ages as approximate, not fixed limits.",
+              "as": "Later researchers found Piaget sometimes underestimated young children. Treat his ages as approximate, not fixed limits."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Egocentrism · own view only",
+                "as": "Egocentrism · own view only"
+              },
+              {
+                "en": "Conservation · amount stays",
+                "as": "Conservation · amount stays"
+              },
+              {
+                "en": "Abstract · reasons with ideas",
+                "as": "Abstract · reasons with ideas"
+              }
+            ]
+          },
+          "id": "pd03.u2.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order Piaget's stages.",
+            "as": "Order Piaget's stages."
+          },
+          "items": [
+            {
+              "en": "Sensorimotor",
+              "as": "Sensorimotor"
+            },
+            {
+              "en": "Preoperational",
+              "as": "Preoperational"
+            },
+            {
+              "en": "Concrete operational",
+              "as": "Concrete operational"
+            },
+            {
+              "en": "Formal operational",
+              "as": "Formal operational"
+            }
+          ],
+          "why": {
+            "en": "The sequence is the point; the ages are approximate.",
+            "as": "The sequence is the point; the ages are approximate."
+          },
+          "id": "pd03.u2.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Object permanence",
+                "as": "Object permanence"
+              },
+              {
+                "en": "sensorimotor",
+                "as": "sensorimotor"
+              }
+            ],
+            [
+              {
+                "en": "Egocentrism",
+                "as": "Egocentrism"
+              },
+              {
+                "en": "preoperational",
+                "as": "preoperational"
+              }
+            ],
+            [
+              {
+                "en": "Conservation",
+                "as": "Conservation"
+              },
+              {
+                "en": "concrete operational",
+                "as": "concrete operational"
+              }
+            ],
+            [
+              {
+                "en": "Hypothetical reasoning",
+                "as": "Hypothetical reasoning"
+              },
+              {
+                "en": "formal operational",
+                "as": "formal operational"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Link each feature to a stage.",
+            "as": "Link each feature to a stage."
+          },
+          "id": "pd03.u2.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Class 3 pupils usually learn best with concrete materials.",
+            "as": "Class 3 pupils usually learn best with concrete materials."
+          },
+          "answer": true,
+          "why": {
+            "en": "They are typically in the concrete operational stage.",
+            "as": "They are typically in the concrete operational stage."
+          },
+          "id": "pd03.u2.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Conservation",
+              "is",
+              "first",
+              "mastered",
+              "in",
+              "the",
+              "sensorimotor",
+              "stage."
+            ],
+            "as": [
+              "Conservation",
+              "is",
+              "first",
+              "mastered",
+              "in",
+              "the",
+              "sensorimotor",
+              "stage."
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 6
+          },
+          "fix": {
+            "en": "concrete operational",
+            "as": "concrete operational"
+          },
+          "answerText": {
+            "en": "sensorimotor",
+            "as": "sensorimotor"
+          },
+          "why": {
+            "en": "Conservation comes with concrete operations.",
+            "as": "Conservation comes with concrete operations."
+          },
+          "id": "pd03.u2.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which idea does NOT belong to Piaget's stages?",
+            "as": "Which idea does NOT belong to Piaget's stages?"
+          },
+          "options": [
+            {
+              "en": "Object permanence",
+              "as": "Object permanence"
+            },
+            {
+              "en": "Egocentrism",
+              "as": "Egocentrism"
+            },
+            {
+              "en": "Zone of proximal development",
+              "as": "Zone of proximal development"
+            },
+            {
+              "en": "Conservation",
+              "as": "Conservation"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "That is Vygotsky's idea.",
+            "as": "That is Vygotsky's idea."
+          },
+          "id": "pd03.u2.08"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": {
+        "en": "Learning with others",
+        "as": "Learning with others"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "Vygotsky stressed the social origins of thinking.",
+          "as": "Vygotsky stressed the social origins of thinking."
+        },
+        {
+          "en": "The zone of proximal development is the gap between solo work and assisted work.",
+          "as": "The zone of proximal development is the gap between solo work and assisted work."
+        },
+        {
+          "en": "Scaffolding is temporary support, removed as skill grows.",
+          "as": "Scaffolding is temporary support, removed as skill grows."
+        },
+        {
+          "en": "Bruner named enactive, iconic and symbolic modes, and the spiral curriculum.",
+          "as": "Bruner named enactive, iconic and symbolic modes, and the spiral curriculum."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "What you can do with help",
+            "as": "What you can do with help"
+          },
+          "text": [
+            {
+              "en": "Lev <mark>Vygotsky</mark> asked what a child can do alone, and what with help. The gap is the <mark>zone of proximal development</mark>.",
+              "as": "Lev <mark>Vygotsky</mark> asked what a child can do alone, and what with help. The gap is the <mark>zone of proximal development</mark>."
+            },
+            {
+              "en": "Teaching works best in that gap. A more knowledgeable other, whether teacher or peer, lifts the child towards independence.",
+              "as": "Teaching works best in that gap. A more knowledgeable other, whether teacher or peer, lifts the child towards independence."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "grid",
+            "items": [
+              {
+                "en": "Alone · current level",
+                "as": "Alone · current level"
+              },
+              {
+                "en": "With help · potential level",
+                "as": "With help · potential level"
+              },
+              {
+                "en": "Gap · ZPD",
+                "as": "Gap · ZPD"
+              }
+            ]
+          },
+          "id": "pd03.u3.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "Which is scaffolding?",
+            "as": "Which is scaffolding?"
+          },
+          "options": [
+            {
+              "en": "Giving only the final answer",
+              "as": "Giving only the final answer"
+            },
+            {
+              "en": "Giving hints, then reducing them",
+              "as": "Giving hints, then reducing them"
+            },
+            {
+              "en": "Leaving a pupil alone",
+              "as": "Leaving a pupil alone"
+            },
+            {
+              "en": "Testing with no teaching",
+              "as": "Testing with no teaching"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Support fades as skill grows.",
+            "as": "Support fades as skill grows."
+          },
+          "guess": true,
+          "id": "pd03.u3.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Doing, picturing, symbols",
+            "as": "Doing, picturing, symbols"
+          },
+          "text": [
+            {
+              "en": "The term <mark>scaffolding</mark> came from Wood, Bruner and Ross in 1976. Jerome <mark>Bruner</mark> described three modes of representation.",
+              "as": "The term <mark>scaffolding</mark> came from Wood, Bruner and Ross in 1976. Jerome <mark>Bruner</mark> described three modes of representation."
+            },
+            {
+              "en": "He also proposed the <mark>spiral curriculum</mark>: revisit ideas at growing depth. Young learners can meet big ideas in simple forms.",
+              "as": "He also proposed the <mark>spiral curriculum</mark>: revisit ideas at growing depth. Young learners can meet big ideas in simple forms."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Enactive · action",
+                "as": "Enactive · action"
+              },
+              {
+                "en": "Iconic · images",
+                "as": "Iconic · images"
+              },
+              {
+                "en": "Symbolic · words, numbers",
+                "as": "Symbolic · words, numbers"
+              }
+            ]
+          },
+          "id": "pd03.u3.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Vygotsky",
+                "as": "Vygotsky"
+              },
+              {
+                "en": "zone of proximal development",
+                "as": "zone of proximal development"
+              }
+            ],
+            [
+              {
+                "en": "Bruner",
+                "as": "Bruner"
+              },
+              {
+                "en": "spiral curriculum",
+                "as": "spiral curriculum"
+              }
+            ],
+            [
+              {
+                "en": "Piaget",
+                "as": "Piaget"
+              },
+              {
+                "en": "schema",
+                "as": "schema"
+              }
+            ],
+            [
+              {
+                "en": "Peer tutor",
+                "as": "Peer tutor"
+              },
+              {
+                "en": "more knowledgeable other",
+                "as": "more knowledgeable other"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Keep each idea with its author.",
+            "as": "Keep each idea with its author."
+          },
+          "id": "pd03.u3.04"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Vygotsky held that social interaction plays a central role in thinking.",
+            "as": "Vygotsky held that social interaction plays a central role in thinking."
+          },
+          "answer": true,
+          "why": {
+            "en": "He treated language and culture as tools of thought.",
+            "as": "He treated language and culture as tools of thought."
+          },
+          "id": "pd03.u3.05"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order Bruner's modes.",
+            "as": "Order Bruner's modes."
+          },
+          "items": [
+            {
+              "en": "Enactive",
+              "as": "Enactive"
+            },
+            {
+              "en": "Iconic",
+              "as": "Iconic"
+            },
+            {
+              "en": "Symbolic",
+              "as": "Symbolic"
+            }
+          ],
+          "why": {
+            "en": "Action, picture, then symbol.",
+            "as": "Action, picture, then symbol."
+          },
+          "id": "pd03.u3.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Scaffolding",
+              "should",
+              "stay",
+              "in",
+              "place",
+              "forever."
+            ],
+            "as": [
+              "Scaffolding",
+              "should",
+              "stay",
+              "in",
+              "place",
+              "forever."
+            ]
+          },
+          "wrong": {
+            "en": 5,
+            "as": 5
+          },
+          "fix": {
+            "en": "temporarily",
+            "as": "temporarily"
+          },
+          "answerText": {
+            "en": "forever",
+            "as": "forever"
+          },
+          "why": {
+            "en": "Support fades as the learner gains control.",
+            "as": "Support fades as the learner gains control."
+          },
+          "id": "pd03.u3.07"
+        },
+        {
+          "type": "whoami",
+          "clues": [
+            {
+              "en": "I worked in Russia in the 1920s and 1930s.",
+              "as": "I worked in Russia in the 1920s and 1930s."
+            },
+            {
+              "en": "I wrote on language and thought.",
+              "as": "I wrote on language and thought."
+            },
+            {
+              "en": "I described the zone of proximal development.",
+              "as": "I described the zone of proximal development."
+            }
+          ],
+          "options": [
+            {
+              "en": "Jean Piaget",
+              "as": "Jean Piaget"
+            },
+            {
+              "en": "Lev Vygotsky",
+              "as": "Lev Vygotsky"
+            },
+            {
+              "en": "Jerome Bruner",
+              "as": "Jerome Bruner"
+            },
+            {
+              "en": "Noam Chomsky",
+              "as": "Noam Chomsky"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Vygotsky's work became widely known in the West after his death.",
+            "as": "Vygotsky's work became widely known in the West after his death."
+          },
+          "id": "pd03.u3.08"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": {
+        "en": "Right, wrong and words",
+        "as": "Right, wrong and words"
+      },
+      "icon": "scroll",
+      "learned": [
+        {
+          "en": "Kohlberg described three levels of moral reasoning.",
+          "as": "Kohlberg described three levels of moral reasoning."
+        },
+        {
+          "en": "The levels are pre-conventional, conventional and post-conventional.",
+          "as": "The levels are pre-conventional, conventional and post-conventional."
+        },
+        {
+          "en": "Chomsky proposed an innate language acquisition device.",
+          "as": "Chomsky proposed an innate language acquisition device."
+        },
+        {
+          "en": "Language grows through interaction, not imitation alone.",
+          "as": "Language grows through interaction, not imitation alone."
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Why, not what",
+            "as": "Why, not what"
+          },
+          "text": [
+            {
+              "en": "Lawrence <mark>Kohlberg</mark> gave moral dilemmas, such as a husband deciding whether to steal medicine. He studied the reasoning, not the choice.",
+              "as": "Lawrence <mark>Kohlberg</mark> gave moral dilemmas, such as a husband deciding whether to steal medicine. He studied the reasoning, not the choice."
+            },
+            {
+              "en": "He described three levels, each with two stages: fear and reward, then rules and approval, then principles.",
+              "as": "He described three levels, each with two stages: fear and reward, then rules and approval, then principles."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Pre-conventional · self",
+                "as": "Pre-conventional · self"
+              },
+              {
+                "en": "Conventional · rules",
+                "as": "Conventional · rules"
+              },
+              {
+                "en": "Post-conventional · principles",
+                "as": "Post-conventional · principles"
+              }
+            ]
+          },
+          "id": "pd03.u4.01"
+        },
+        {
+          "type": "mcq",
+          "q": {
+            "en": "A pupil says, \"I obey so that I don't get punished.\" Which level is this?",
+            "as": "A pupil says, \"I obey so that I don't get punished.\" Which level is this?"
+          },
+          "options": [
+            {
+              "en": "Pre-conventional",
+              "as": "Pre-conventional"
+            },
+            {
+              "en": "Conventional",
+              "as": "Conventional"
+            },
+            {
+              "en": "Post-conventional",
+              "as": "Post-conventional"
+            },
+            {
+              "en": "Formal",
+              "as": "Formal"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The reason is avoiding punishment.",
+            "as": "The reason is avoiding punishment."
+          },
+          "guess": true,
+          "id": "pd03.u4.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Children break rules to learn them",
+            "as": "Children break rules to learn them"
+          },
+          "text": [
+            {
+              "en": "A child says \"goed\" though no adult does. That suggests a rule, not copying. Noam <mark>Chomsky</mark> proposed an inborn <mark>language acquisition device</mark>.",
+              "as": "A child says \"goed\" though no adult does. That suggests a rule, not copying. Noam <mark>Chomsky</mark> proposed an inborn <mark>language acquisition device</mark>."
+            },
+            {
+              "en": "Vygotsky stressed social use of language. Exams may pair these, but they are not simple opposites: both biology and interaction matter.",
+              "as": "Vygotsky stressed social use of language. Exams may pair these, but they are not simple opposites: both biology and interaction matter."
+            }
+          ],
+          "art": "diagram",
+          "diagram": {
+            "layout": "flow",
+            "items": [
+              {
+                "en": "Babbling",
+                "as": "Babbling"
+              },
+              {
+                "en": "Single words",
+                "as": "Single words"
+              },
+              {
+                "en": "Two-word phrases",
+                "as": "Two-word phrases"
+              },
+              {
+                "en": "Full sentences",
+                "as": "Full sentences"
+              }
+            ]
+          },
+          "id": "pd03.u4.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Avoiding punishment",
+                "as": "Avoiding punishment"
+              },
+              {
+                "en": "pre-conventional",
+                "as": "pre-conventional"
+              }
+            ],
+            [
+              {
+                "en": "Keeping the rules of society",
+                "as": "Keeping the rules of society"
+              },
+              {
+                "en": "conventional",
+                "as": "conventional"
+              }
+            ],
+            [
+              {
+                "en": "Universal principles",
+                "as": "Universal principles"
+              },
+              {
+                "en": "post-conventional",
+                "as": "post-conventional"
+              }
+            ],
+            [
+              {
+                "en": "Language acquisition device",
+                "as": "Language acquisition device"
+              },
+              {
+                "en": "Chomsky",
+                "as": "Chomsky"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Ask what the reason rests on.",
+            "as": "Ask what the reason rests on."
+          },
+          "id": "pd03.u4.04"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Order Kohlberg's levels.",
+            "as": "Order Kohlberg's levels."
+          },
+          "items": [
+            {
+              "en": "Pre-conventional",
+              "as": "Pre-conventional"
+            },
+            {
+              "en": "Conventional",
+              "as": "Conventional"
+            },
+            {
+              "en": "Post-conventional",
+              "as": "Post-conventional"
+            }
+          ],
+          "why": {
+            "en": "Reasoning moves from self to rules to principles.",
+            "as": "Reasoning moves from self to rules to principles."
+          },
+          "id": "pd03.u4.05"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Kohlberg judged moral level by whether the answer was yes or no.",
+            "as": "Kohlberg judged moral level by whether the answer was yes or no."
+          },
+          "answer": false,
+          "why": {
+            "en": "He judged the reasoning behind the answer.",
+            "as": "He judged the reasoning behind the answer."
+          },
+          "id": "pd03.u4.06"
+        },
+        {
+          "type": "spot",
+          "q": {
+            "en": "One word in this sentence is wrong. Tap it.",
+            "as": "এই বাক্যটোৰ এটা শব্দ ভুল। সেইটো টিপা।"
+          },
+          "tokens": {
+            "en": [
+              "Noam",
+              "Chomsky",
+              "is",
+              "known",
+              "for",
+              "the",
+              "moral",
+              "dilemma",
+              "studies."
+            ],
+            "as": [
+              "Noam",
+              "Chomsky",
+              "is",
+              "known",
+              "for",
+              "the",
+              "moral",
+              "dilemma",
+              "studies."
+            ]
+          },
+          "wrong": {
+            "en": 6,
+            "as": 6
+          },
+          "fix": {
+            "en": "language",
+            "as": "language"
+          },
+          "answerText": {
+            "en": "moral",
+            "as": "moral"
+          },
+          "why": {
+            "en": "Kohlberg used dilemmas. Chomsky is known for language.",
+            "as": "Kohlberg used dilemmas. Chomsky is known for language."
+          },
+          "id": "pd03.u4.07"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which belongs to language development?",
+            "as": "Which belongs to language development?"
+          },
+          "options": [
+            {
+              "en": "Babbling",
+              "as": "Babbling"
+            },
+            {
+              "en": "Puzzle box",
+              "as": "Puzzle box"
+            },
+            {
+              "en": "Bobo doll",
+              "as": "Bobo doll"
+            },
+            {
+              "en": "Skinner box",
+              "as": "Skinner box"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Babbling is an early language stage.",
+            "as": "Babbling is an early language stage."
+          },
+          "id": "pd03.u4.08"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Thinking check",
+      "as": "Thinking check"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "mcq",
+        "q": {
+          "en": "A teacher uses counters to teach addition in Class 2. Which idea supports this?",
+          "as": "A teacher uses counters to teach addition in Class 2. Which idea supports this?"
+        },
+        "options": [
+          {
+            "en": "Concrete thinking at that age",
+            "as": "Concrete thinking at that age"
+          },
+          {
+            "en": "Formal operations",
+            "as": "Formal operations"
+          },
+          {
+            "en": "Post-conventional reasoning",
+            "as": "Post-conventional reasoning"
+          },
+          {
+            "en": "The law of exercise only",
+            "as": "The law of exercise only"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Young pupils reason well with concrete objects.",
+          "as": "Young pupils reason well with concrete objects."
+        },
+        "id": "pd03.test.01"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Scaffolding is temporary support.",
+          "as": "Scaffolding is temporary support."
+        },
+        "answer": true,
+        "why": {
+          "en": "It is reduced as skill grows.",
+          "as": "It is reduced as skill grows."
+        },
+        "id": "pd03.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Accommodation",
+              "as": "Accommodation"
+            },
+            {
+              "en": "change a schema",
+              "as": "change a schema"
+            }
+          ],
+          [
+            {
+              "en": "Conservation",
+              "as": "Conservation"
+            },
+            {
+              "en": "amount stays the same",
+              "as": "amount stays the same"
+            }
+          ],
+          [
+            {
+              "en": "ZPD",
+              "as": "ZPD"
+            },
+            {
+              "en": "gap filled with help",
+              "as": "gap filled with help"
+            }
+          ],
+          [
+            {
+              "en": "Kohlberg",
+              "as": "Kohlberg"
+            },
+            {
+              "en": "moral reasoning",
+              "as": "moral reasoning"
+            }
+          ]
+        ],
+        "why": {
+          "en": "One link per unit.",
+          "as": "One link per unit."
+        },
+        "id": "pd03.test.03"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is NOT one of Bruner's modes?",
+          "as": "Which is NOT one of Bruner's modes?"
+        },
+        "options": [
+          {
+            "en": "Enactive",
+            "as": "Enactive"
+          },
+          {
+            "en": "Iconic",
+            "as": "Iconic"
+          },
+          {
+            "en": "Symbolic",
+            "as": "Symbolic"
+          },
+          {
+            "en": "Operant",
+            "as": "Operant"
+          }
+        ],
+        "answer": 3,
+        "why": {
+          "en": "Operant belongs to Skinner.",
+          "as": "Operant belongs to Skinner."
+        },
+        "id": "pd03.test.04"
+      },
+      {
+        "type": "order",
+        "q": {
+          "en": "Order Piaget's stages.",
+          "as": "Order Piaget's stages."
+        },
+        "items": [
+          {
+            "en": "Sensorimotor",
+            "as": "Sensorimotor"
+          },
+          {
+            "en": "Preoperational",
+            "as": "Preoperational"
+          },
+          {
+            "en": "Concrete operational",
+            "as": "Concrete operational"
+          },
+          {
+            "en": "Formal operational",
+            "as": "Formal operational"
+          }
+        ],
+        "why": {
+          "en": "The sequence is fixed in his theory.",
+          "as": "The sequence is fixed in his theory."
+        },
+        "id": "pd03.test.05"
+      }
+    ]
+  }
+}
