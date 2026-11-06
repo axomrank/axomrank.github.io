@@ -1,6 +1,27 @@
 {
  "topics": [
   {
+   "id": "alphabet",
+   "t": {
+    "en": "Alphabet tools",
+    "as": "বৰ্ণমালাৰ কৌশল"
+   }
+  },
+  {
+   "id": "number-series",
+   "t": {
+    "en": "Number series",
+    "as": "সংখ্যা শৃংখল"
+   }
+  },
+  {
+   "id": "letter-series",
+   "t": {
+    "en": "Letter series",
+    "as": "আখৰ শৃংখল"
+   }
+  },
+  {
    "id": "coding",
    "t": {
     "en": "Coding and decoding",
@@ -550,6 +571,658 @@
      "id": "rs14.t.q6"
     }
    ]
+  },
+  {
+   "id": "r-sadd",
+   "topic": "number-series",
+   "t": {
+    "en": "Add-a-gap series",
+    "as": "ব্যৱধান যোগৰ শৃংখল"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u1.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-stwo",
+   "topic": "number-series",
+   "t": {
+    "en": "Gaps of gaps",
+    "as": "ব্যৱধানৰ ব্যৱধান"
+   },
+   "pre": [
+    "r-sadd"
+   ],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u2.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-smult",
+   "topic": "number-series",
+   "t": {
+    "en": "Multiplying series",
+    "as": "গুণনৰ শৃংখল"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u3.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-smix",
+   "topic": "number-series",
+   "t": {
+    "en": "Two series woven together",
+    "as": "দুটা শৃংখলৰ বুনন"
+   },
+   "pre": [
+    "r-sadd"
+   ],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u4.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-swrong",
+   "topic": "number-series",
+   "t": {
+    "en": "Find the wrong term",
+    "as": "ভুল পদ বিচৰা"
+   },
+   "pre": [
+    "r-sadd"
+   ],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u5.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-sspecial",
+   "topic": "number-series",
+   "t": {
+    "en": "Squares, cubes and primes",
+    "as": "বৰ্গ, ঘন আৰু মৌলিক"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q1"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q2"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q3"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q4"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.u6.q5"
+    },
+    {
+     "l": "rs-02-number-series",
+     "id": "rs2.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-lgap",
+   "topic": "letter-series",
+   "t": {
+    "en": "Letter gaps",
+    "as": "আখৰৰ ব্যৱধান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u1.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-lmix",
+   "topic": "letter-series",
+   "t": {
+    "en": "Woven letter series",
+    "as": "বোৱা আখৰ শৃংখল"
+   },
+   "pre": [
+    "r-lgap"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u2.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-lgroup",
+   "topic": "letter-series",
+   "t": {
+    "en": "Letter groups",
+    "as": "আখৰৰ গোট"
+   },
+   "pre": [
+    "r-lgap"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u3.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-lfill",
+   "topic": "letter-series",
+   "t": {
+    "en": "Fill the blanks",
+    "as": "খালী ঠাই পূৰণ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u4.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-lnum",
+   "topic": "letter-series",
+   "t": {
+    "en": "Letters with numbers",
+    "as": "আখৰ আৰু সংখ্যা"
+   },
+   "pre": [
+    "r-lgap"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u5.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q5"
+    }
+   ]
+  },
+  {
+   "id": "r-lodd",
+   "topic": "letter-series",
+   "t": {
+    "en": "The group that breaks the rule",
+    "as": "নিয়ম ভঙা গোট"
+   },
+   "pre": [
+    "r-lgroup"
+   ],
+   "steps": [
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q1"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q2"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q3"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q4"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.u6.q5"
+    },
+    {
+     "l": "rs-03-letter-series",
+     "id": "rs3.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-pos",
+   "topic": "alphabet",
+   "t": {
+    "en": "Letter positions",
+    "as": "আখৰৰ স্থান"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u1.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q1"
+    }
+   ]
+  },
+  {
+   "id": "r-opp",
+   "topic": "alphabet",
+   "t": {
+    "en": "Opposite letters",
+    "as": "বিপৰীত আখৰ"
+   },
+   "pre": [
+    "r-pos"
+   ],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u2.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q2"
+    }
+   ]
+  },
+  {
+   "id": "r-lcount",
+   "topic": "alphabet",
+   "t": {
+    "en": "Count within the alphabet",
+    "as": "বৰ্ণমালাত গণনা"
+   },
+   "pre": [
+    "r-pos"
+   ],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u3.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q3"
+    }
+   ]
+  },
+  {
+   "id": "r-dict",
+   "topic": "alphabet",
+   "t": {
+    "en": "Dictionary order",
+    "as": "অভিধানৰ ক্ৰম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u4.q6"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q4"
+    }
+   ]
+  },
+  {
+   "id": "r-logorder",
+   "topic": "alphabet",
+   "t": {
+    "en": "Logical order of words",
+    "as": "শব্দৰ যুক্তিসংগত ক্ৰম"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u5.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q6"
+    }
+   ]
+  },
+  {
+   "id": "r-wordform",
+   "topic": "alphabet",
+   "t": {
+    "en": "Words from letters",
+    "as": "আখৰৰ পৰা শব্দ"
+   },
+   "pre": [],
+   "steps": [
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q1"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q2"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q3"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q4"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.u6.q5"
+    },
+    {
+     "l": "rs-01-alphabet",
+     "id": "rs1.t.q5"
+    }
+   ]
   }
  ],
  "misconceptions": {
@@ -635,6 +1308,55 @@
    "t": {
     "en": "Choosing the wrong relation between sets",
     "as": "সংহতিৰ ভুল সম্পৰ্ক বাছনি"
+   }
+  },
+  "r-m-firstgap": {
+   "skill": "r-stwo",
+   "t": {
+    "en": "Stopping at the first gaps",
+    "as": "প্ৰথম ব্যৱধানতে ৰোৱা"
+   }
+  },
+  "r-m-addmult": {
+   "skill": "r-smult",
+   "t": {
+    "en": "Adding when the rule multiplies",
+    "as": "গুণনৰ ঠাইত যোগ"
+   }
+  },
+  "r-m-oneline": {
+   "skill": "r-smix",
+   "t": {
+    "en": "Reading two series as one",
+    "as": "দুটা শৃংখলক এটা পঢ়া"
+   }
+  },
+  "r-m-lettergap": {
+   "skill": "r-lgap",
+   "t": {
+    "en": "Miscounting letter gaps",
+    "as": "আখৰৰ ব্যৱধান ভুল গণা"
+   }
+  },
+  "r-m-oppsum": {
+   "skill": "r-opp",
+   "t": {
+    "en": "Forgetting opposites add to 27",
+    "as": "বিপৰীতৰ যোগফল 27 পাহৰা"
+   }
+  },
+  "r-m-sideflip": {
+   "skill": "r-lcount",
+   "t": {
+    "en": "Counting left when asked for right",
+    "as": "সোঁফালৰ সলনি বাওঁফালে গণা"
+   }
+  },
+  "r-m-firstonly": {
+   "skill": "r-dict",
+   "t": {
+    "en": "Comparing only the first letter",
+    "as": "কেৱল প্ৰথম আখৰ তুলনা"
    }
   }
  },

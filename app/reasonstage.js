@@ -118,4 +118,38 @@ W.setpick = (el, w, on) => {
   draw();
   return { value: () => pick, touched: () => pick != null, freeze() { locked = true; }, show(v) { pick = v; draw(); on(); }, state: () => ({ pick }) };
 };
+
+/* ---------- alpha: the alphabet as two rows. fold pairs each letter with its opposite ---------- */
+W.alpha = (el, w, on) => {
+  let pick = null, locked = false;
+  const top = [..."ABCDEFGHIJKLM"], low = w.fold ? [..."ZYXWVUTSRQPON"] : [..."NOPQRSTUVWXYZ"];
+  const cell = (c) => { const p = AZ.indexOf(c) + 1, mate = AZ[26 - p]; return `<button class="tile alc ${pick === p ? "sel" : ""} ${w.fold && pick && AZ[pick - 1] === mate ? "mate" : ""}" data-al="${p}">${c}${w.nums ? `<small>${p}</small>` : ""}</button>`; };
+  const draw = () => { el.innerHTML = `<div class="alr">${top.map(cell).join("")}</div><div class="alr">${low.map(cell).join("")}</div>`; };
+  el.addEventListener("click", (e) => { const b = e.target.closest("[data-al]"); if (!b || locked) return; pick = +b.dataset.al; SFX.tap(); draw(); on(); });
+  draw();
+  const set = (v) => { pick = v; draw(); on(); };
+  return { value: () => pick, touched: () => pick != null, freeze() { locked = true; }, show: set, state: () => ({ pick }), demo(g) { set(g.pick); } };
+};
+
+/* ---------- gaps: tap to open each level of differences, then set the next term ---------- */
+W.gaps = (el, w, on) => {
+  const t = w.terms, name = (v) => (w.letters ? AZ[((v - 1) % 26 + 26) % 26] : v);
+  const levels = [t]; while (levels.length < 3) { const l = levels[levels.length - 1]; levels.push(l.slice(1).map((v, i) => v - l[i])); }
+  let opened = 0, next = t[t.length - 1], touched = false, locked = false;
+  const row = (l, i) => `<div class="gpr l${i}">${l.map((v) => `<span>${i === 0 ? name(v) : (v > 0 ? "+" : "") + String(v).replace("-", "−")}</span>`).join("")}</div>`;
+  const draw = () => { el.innerHTML = `<div class="gpb">${levels.slice(0, opened + 1).map(row).join("")}</div>
+      ${opened < 2 ? `<button class="chip-btn gpo" data-gp>${T(opened ? B("Open the gaps of the gaps", "ব্যৱধানৰ ব্যৱধান খোলা") : B("Open the gaps", "ব্যৱধান খোলা"))}</button>` : ""}
+      <div class="wx-step"><button class="tile" data-gless aria-label="Less">−</button><span>${T(B("Next term", "পিছৰ পদ"))}: <b>${name(next)}</b></span><button class="tile" data-gmore aria-label="More">+</button></div>`; };
+  el.addEventListener("click", (e) => {
+    if (locked) return;
+    if (e.target.closest("[data-gp]")) opened++;
+    else if (e.target.closest("[data-gmore]")) next++;
+    else if (e.target.closest("[data-gless]")) next--;
+    else return;
+    touched = true; SFX.tap(); draw(); on();
+  });
+  draw();
+  const set = (v) => { next = v; touched = true; draw(); on(); };
+  return { value: () => next, touched: () => touched, freeze() { locked = true; el.querySelectorAll("button").forEach((b) => (b.disabled = true)); }, show: set, state: () => ({ opened, next }), demo(g) { if (g.opened != null) opened = g.opened; if (g.next != null) next = g.next; touched = true; draw(); on(); } };
+};
 })();

@@ -199,3 +199,13 @@ html.maths .top .bar i { width: var(--p, 0%) !important; flex: none; }
 .spk-o { padding: 6px; }
 .spk-o svg { display: block; width: 100%; max-width: 140px; margin: 0 auto; }
 .spk-o.sel { outline: 3px solid #D8930B; outline-offset: 1px; }
+.alr { display: grid; grid-template-columns: repeat(13, 1fr); gap: 2px; margin-bottom: 6px; }
+.alc { padding: 7px 0; font-size: 14px; min-width: 0; }
+.alc small { display: block; font-size: 9px; color: #7E93AE; }
+.alc.sel { outline: 3px solid #D8930B; }
+.alc.mate { outline: 3px solid #0F8A5F; }
+.gpb { overflow-x: auto; }
+.gpr { display: flex; justify-content: center; gap: 12px; margin: 8px 0; font-weight: 900; font-size: 20px; }
+.gpr.l1 { font-size: 15px; color: #1F5FBF; }
+.gpr.l2 { font-size: 15px; color: #D3323F; }
+.gpo { display: block; margin: 8px auto; }

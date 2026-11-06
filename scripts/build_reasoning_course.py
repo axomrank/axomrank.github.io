@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path[:0] = [str(ROOT / "scripts" / "reasoning_course"), str(ROOT / "scripts" / "math_course")]
 from math_kit import B, mcq  # noqa: E402
-import lesson_coding, lesson_direction, lesson_venn  # noqa: E402
+import importlib  # noqa: E402
 from reason_kit import enc, face_as, face_en  # noqa: E402
 
 COURSE = "reasoning"
@@ -45,9 +45,21 @@ MISCONCEPTIONS = {
 }
 
 
+# Lesson modules in course order. A later module may define SKILLS, TAGS and probes() of its own.
+MODULES = [importlib.import_module(m) for m in ("lesson_alphabet", "lesson_coding", "lesson_direction", "lesson_venn")]
+_series = importlib.import_module("lesson_series")
+MODULES += [_series.NUMBERS, _series.LETTERS]
+SKILLS.update(_series.SKILLS)
+MISCONCEPTIONS.update(_series.TAGS)
+for mod in MODULES:
+    SKILLS.update(getattr(mod, "SKILLS", {}))
+    MISCONCEPTIONS.update(getattr(mod, "TAGS", {}))
+
+
 def probes():
     o = lambda sid, skill, fn, params: mcq(f"bank.rs.{sid}", skill, fn, params)
-    return [
+    extra = [p for mod in MODULES if hasattr(mod, "probes") for p in mod.probes()]
+    return extra + [
         o("shift", "r-shift", lambda w, n: {"q": B(f"Move each letter of {w} forward {n}.", f"{w} ৰ প্ৰতিটো আখৰ {n} ঘৰ আগবঢ়োৱা।"), "right": enc(w, n), "wrong": [(enc(w, -n), "r-m-shiftback", B("That moved backwards.", "সেয়া পিছলৈ গ'ল।"))], "fill": [enc(w, n + 1), enc(w, n + 2)], "why": B(f"{w} → {enc(w, n)}.", f"{w} → {enc(w, n)}।")}, [("DUCK", 2), ("BELL", 3)]),
         o("decode", "r-decode", lambda w, n: {"q": B(f"The rule was +{n} and the code is {enc(w, n)}. What was the word?", f"নিয়ম +{n}, সংকেত {enc(w, n)}। শব্দটো কি আছিল?"), "right": w, "wrong": [(enc(w, 2 * n), "r-m-encode", B("That applied the rule again.", "সেয়া নিয়ম আকৌ দিয়া হ'ল।"))], "fill": [enc(w, 1), enc(w, n + 1), enc(w, -1)], "why": B(f"Count back {n}.", f"{n} ঘৰ পিছলৈ গণা।")}, [("NEST", 2), ("WOOD", 3)]),
         o("value", "r-value", lambda c: {"q": B(f"With Z = 1, Y = 2 and so on, what is {c}?", f"Z = 1, Y = 2 এনেদৰে ধৰিলে {c} কিমান?"), "right": 27 - (ord(c) - 64), "wrong": [(ord(c) - 64, "r-m-position", B("That counted from A.", "সেয়া A ৰ পৰা গণা হ'ল।"))], "fill": [26 - (ord(c) - 64), 28 - (ord(c) - 64), 25], "why": B("Use 27 minus its place.", "27 ৰ পৰা স্থান বিয়োগ কৰা।")}, [("F",), ("K",)]),
@@ -96,7 +108,7 @@ def part_of(n):
 
 def main():
     tiles()
-    lessons = [lesson_coding.lesson(), lesson_direction.lesson(), lesson_venn.lesson()]
+    lessons = sorted((mod.lesson() for mod in MODULES), key=lambda L: L["no"])
     by_no = {L["no"]: L for L in lessons}
     for L in lessons:
         write(f"content/lessons/{L['id']}.json", {

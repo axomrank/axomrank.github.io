@@ -102,3 +102,15 @@ def spot(x, y):
 def bits(*regions):
     """The value the venn scene reports: one bit per shaded region."""
     return sum(1 << r for r in set(regions))
+
+
+# ---------------------------------------------------------------- shared lesson helpers
+ORD = ["", "1st", "2nd", "3rd"] + [f"{n}th" for n in range(4, 31)]
+
+
+def letter(c):
+    return {"en": c, "as": c}
+
+
+def same(x):
+    return {"en": str(x), "as": str(x)}
