@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8">
+<title>Still (dev)</title>
+<style>html,body{margin:0;background:#fff}svg.gf-svg{display:block;width:100vw!important;height:56.25vw!important;max-height:none!important;overflow:hidden}.as{display:none}svg text{font-family:"Noto Sans",system-ui,sans-serif}</style>
+<body>
+<script>document.write(`<link rel="stylesheet" href="../../app/geo.css?${Date.now()}"><script src="../../app/geofigure.js?${Date.now()}"><\/script><script src="stills.js?${Date.now()}"><\/script>`)</script>
+<script>
+addEventListener('load', () => {
+  const name = new URLSearchParams(location.search).get('n');
+  const list = name ? [name] : Object.keys(STILLS);
+  document.body.insertAdjacentHTML('beforeend', list.map(n => `<div class="gfig"><svg class="gf-svg" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">${STILLS[n]()}</svg></div>`).join(name ? '' : '<hr>'));
+  document.title = 'ready';
+});
+</script>

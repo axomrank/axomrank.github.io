@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Figure gallery (dev)</title>
+<script>document.write(`<link rel="stylesheet" href="../../app/geo.css?${Date.now()}">`)</script>
+<style>body{margin:0;padding:12px;background:#efe7d6;font:12px system-ui}.as{display:none}#g{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}h3{margin:4px 2px}</style>
+<div id="g"></div>
+<script>document.write(`<script src="../../app/geofigure.js?${Date.now()}"><\/script>`)</script>
+<script>
+const T=o=>`<span class="en">${o.en}</span><span class="as">${o.as}</span>`;
+for (const [k,f] of Object.entries(GEOFIG.kinds)) g.insertAdjacentHTML('beforeend',`<div><h3>${k}</h3>${GEOFIG.story({kind:k,spots:f.pins.map((_,i)=>({en:'Spot '+(i+1),as:''}))},T)}</div>`);
+</script>

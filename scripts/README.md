@@ -33,6 +33,7 @@ the committed files exactly.
 
 | Script | Writes | Rerun result |
 |---|---|---|
+| `geo_stills/render.sh` | Re-draws the Geography Foundations diagram images (`content/media/gf-*/…webp`) from `geo_stills/stills.js` with headless Chrome; needs the local server on port 8770. `geo_stills/gallery.html` and `still.html` preview every figure | Overwrites those images with the same drawing |
 | `build_math_course.py` | `math-*` lessons, Mathematics course, bank and skills | No change |
 | `build_reasoning_course.py` | `rs-*` lessons, Reasoning course, bank and skills | No change; course tiles are made only if missing |
 | `build_constitution_bank.py` | Constitution bank | No change |

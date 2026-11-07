@@ -1,52 +1,91 @@
-/* Geography figures (app/geofigure.js). The player is a light glass theme, so colours are light tokens. */
-.gfig { --sky:#dcecf5; --paper:#fbf6ea; --paper2:#fff; --land:#d9cfa5; --water:#8cc4dc; --rock:#a08f7a; --rock2:#bfae94; --sand:#e8cf96; --grass:#cfe0ae; --grass2:#a9c781; --ink:#2b3a42; --mute:#6c7a80; --accent:#c2452d; --hi:#c2452d; --hi2:#1f6f8b; --warm:#d9662f; --cool:#17688a; --gold:#d9a227; --night:#22303f; --line:#c9bea6;
-  margin: 0 0 14px; }
-.gf-svg { display:block; width:100%; height:auto; max-height:46vh; border-radius:14px; background:var(--paper); }
-.gf-svg path, .gf-svg circle, .gf-svg rect, .gf-svg ellipse { fill:none; stroke:none; }
-.gf-svg [data-part] { transition:opacity .25s; } .gf-svg [data-part].dim { opacity:.22; }
-.gf-svg .sky { fill:var(--sky); } .gf-svg .paper { fill:var(--paper); } .gf-svg .paper2 { fill:var(--paper2); stroke:var(--ink); } .gf-svg .paperc { fill:var(--paper); }
-.gf-svg .card { fill:var(--paper2); stroke:var(--line); } .gf-svg .night { fill:var(--night); } .gf-svg .dawn { fill:#f4d9b0; }
-.gf-svg .land { fill:var(--land); stroke:color-mix(in srgb,var(--ink) 45%,transparent); stroke-width:.7; } .gf-svg .water { fill:var(--water); } .gf-svg .water2 { fill:color-mix(in srgb,var(--water) 70%,var(--night)); }
-.gf-svg .rock { fill:var(--rock); } .gf-svg .rock2 { fill:var(--rock2); } .gf-svg .sand { fill:var(--sand); } .gf-svg .sandy { fill:var(--sand); stroke:var(--gold); stroke-width:1; }
-.gf-svg .grass { fill:var(--grass); } .gf-svg .grass2 { fill:var(--grass2); } .gf-svg .soil { fill:#8d6e4f; } .gf-svg .turf { stroke:var(--grass2); stroke-width:5; }
-.gf-svg .alluv { fill:#b9d27f; stroke:#7f9d45; stroke-width:.8; } .gf-svg .black { fill:#3d3a38; stroke:#222; } .gf-svg .ice { fill:#f4fbff; }
-.gf-svg .ink { fill:var(--ink); } .gf-svg .accent { fill:var(--accent); stroke:#fff; stroke-width:1.2; }
-.gf-svg .hi,.gf-svg .hi2 { stroke:var(--hi); stroke-width:4; stroke-linecap:round; stroke-dasharray:1 0; } .gf-svg .hi2 { stroke:var(--hi2); }
+/* Geography figures (app/geofigure.js). Painted with the shared gradients in its DEFS block.
+   The player is a light glass theme, so there is one light palette. */
+.gfig { --ink:#17313b; --mute:#6a7c83; --accent:#e0563b; --cool:#1d6f96; --warm:#e0702f; --gold:#f2b43b; --line:#d9ccb0; --paper:#fffaf0;
+  margin:0 0 14px; position:relative; }
+.gf-stage { position:relative; border-radius:18px; overflow:hidden; box-shadow:0 1px 0 #fff inset, 0 10px 28px -14px rgba(23,49,59,.45), 0 0 0 1px rgba(23,49,59,.08); background:#fffaf0; }
+.gf-svg { display:block; width:100%; height:auto; max-height:48vh; }
+.gf-svg :where(path,circle,rect,ellipse):where(:not([fill])) { fill:none; }
+.gf-svg :where(path,circle,rect,ellipse):where(:not([stroke])) { stroke:none; }
+.gf-svg .gf-tex { fill:#000; pointer-events:none; mix-blend-mode:multiply; }
+.gf-svg [data-part] { transition:opacity .35s, filter .35s; }
+.gf-svg [data-part].dim { opacity:.18; filter:saturate(.3); }
+.gf-svg [data-part].lit { filter:drop-shadow(0 0 6px rgba(255,214,90,.95)) drop-shadow(0 0 2px #fff); }
+/* surfaces */
+.gf-svg .sky { fill:url(#gf-sky); } .gf-svg .paper,.gf-svg .paperc { fill:url(#gf-paper); } .gf-svg .paper2 { fill:#fff; stroke:var(--ink); stroke-width:1; }
+.gf-svg .card { fill:#fff; stroke:var(--line); filter:url(#gf-shadow); } .gf-svg .night { fill:url(#gf-night); } .gf-svg .dawn { fill:url(#gf-sky); }
+.gf-svg .land { fill:url(#gf-land); stroke:rgba(23,49,59,.35); stroke-width:.7; filter:url(#gf-shadow); }
+.gf-svg .water { fill:url(#gf-sea); } .gf-svg .water2 { fill:url(#gf-night); }
+.gf-svg .rock,.gf-svg .peak { fill:url(#gf-rock); filter:url(#gf-shadow); } .gf-svg .rock2,.gf-svg .peak2 { fill:url(#gf-rock2); filter:url(#gf-shadow); }
+.gf-svg .peak { stroke:rgba(23,49,59,.5); stroke-width:.7; }
+.gf-svg .sand { fill:url(#gf-sand); } .gf-svg .sandy { fill:url(#gf-sand); stroke:#c99a3c; stroke-width:1; }
+.gf-svg .grass { fill:url(#gf-grass); } .gf-svg .grass2 { fill:url(#gf-grass); filter:url(#gf-shadow); }
+.gf-svg .soil { fill:#8d6748; } .gf-svg .turf { stroke:#76a65d; stroke-width:5; }
+.gf-svg .alluv { fill:url(#gf-alluv); stroke:#7f9d45; stroke-width:.8; } .gf-svg .black { fill:#3a3634; stroke:#1d1b1a; } .gf-svg .ice { fill:url(#gf-snow); }
+.gf-svg .ink { fill:var(--ink); } .gf-svg .accent { fill:var(--accent); stroke:#fff; stroke-width:1.5; filter:url(#gf-shadow); }
+.gf-svg .seahi { fill:rgba(29,111,150,.32); stroke:rgba(29,111,150,.55); stroke-width:1; }
+/* lines */
+.gf-svg .hi,.gf-svg .hi2 { stroke:var(--accent); stroke-width:4; stroke-linecap:round; } .gf-svg .hi2 { stroke:var(--cool); }
 .gf-svg .dash { stroke:var(--mute); stroke-width:1.2; stroke-dasharray:5 5; } .gf-svg .axis { stroke:var(--mute); stroke-width:1.5; }
-.gf-svg .road { stroke:var(--mute); stroke-width:3; stroke-dasharray:9 5; } .gf-svg .spark { stroke:var(--accent); stroke-width:2.4; stroke-linejoin:round; }
-.gf-svg .ring { fill:var(--paper2); stroke:var(--ink); stroke-width:2; } .gf-svg .needle { fill:var(--accent); } .gf-svg .needle2 { fill:var(--mute); }
-.gf-svg .grid ellipse { stroke:color-mix(in srgb,#fff 60%,transparent); stroke-width:1; }
-.gf-svg .ctr ellipse { stroke:color-mix(in srgb,var(--ink) 60%,transparent); stroke-width:1.2; } .gf-svg .hic ellipse { stroke:var(--hi); stroke-width:1.5; }
-.gf-svg .peak { fill:var(--rock); stroke:var(--ink); stroke-width:.8; } .gf-svg .peak2 { fill:var(--rock2); }
-.gf-svg .sunc { fill:#f4b63f; } .gf-svg .moon { fill:#e7e7dc; } .gf-svg .dayc { fill:#7dc0dd; } .gf-svg .nightc { fill:#2f4a6b; } .gf-svg .hotcap { fill:#f0ae57; } .gf-svg .coolcap { fill:#3e6f96; }
-.gf-svg .crust { fill:#8a6d4b; } .gf-svg .mantle { fill:#d66a34; } .gf-svg .core { fill:#f4c24a; } .gf-svg .melt { fill:#e0562c; } .gf-svg .fault { stroke:var(--ink); stroke-width:2; stroke-dasharray:6 3; }
-.gf-svg .fold { stroke:var(--rock); stroke-width:6; } .gf-svg .river,.gf-svg .riverthin { stroke:var(--water); stroke-width:5; stroke-linecap:round; } .gf-svg .riverthick { stroke:var(--water); stroke-width:10; }
-.gf-svg .riverw { stroke:var(--water); stroke-width:26; } .gf-svg .riverw2 { stroke:var(--water); stroke-width:12; }
-.gf-svg .river-flow { stroke:var(--cool); stroke-width:3; stroke-dasharray:10 12; animation:gf-flow 1.6s linear infinite; }
-.gf-svg .riverline { stroke:var(--cool); stroke-width:2.8; stroke-linejoin:round; stroke-dasharray:10 5; animation:gf-flow 2s linear infinite; }
-.gf-svg .gf-ar { stroke:var(--ink); stroke-width:2.4; stroke-linecap:round; } .gf-svg .gf-ah { fill:var(--ink); }
-.gf-svg .gf-ar.flow { stroke-dasharray:8 7; animation:gf-flow 1.4s linear infinite; }
+.gf-svg .road { stroke:#5d5148; stroke-width:3.5; stroke-dasharray:10 6; stroke-linecap:round; } .gf-svg .spark { stroke:var(--accent); stroke-width:2.6; stroke-linejoin:round; }
+.gf-svg .ring { fill:#fff; stroke:var(--ink); stroke-width:2; filter:url(#gf-shadow); } .gf-svg .needle { fill:var(--accent); } .gf-svg .needle2 { fill:#9aa7ab; }
+.gf-svg .grid ellipse { stroke:rgba(255,255,255,.55); stroke-width:1; }
+.gf-svg .ctr ellipse { stroke:rgba(23,49,59,.55); stroke-width:1.2; } .gf-svg .hic ellipse { stroke:var(--accent); stroke-width:1.6; }
+.gf-svg .sunc { fill:url(#gf-sun); filter:drop-shadow(0 0 8px rgba(255,190,60,.8)); } .gf-svg .moon { fill:#f1efe4; filter:drop-shadow(0 0 6px rgba(255,255,255,.8)); }
+.gf-svg .dayc { fill:url(#gf-ocean); } .gf-svg .nightc { fill:#1d3550; } .gf-svg .hotcap { fill:#f7b25a; opacity:.92; } .gf-svg .coolcap { fill:#3b6f97; opacity:.9; }
+.gf-svg .crust { fill:#8a6a48; } .gf-svg .mantle { fill:url(#gf-mantle); } .gf-svg .core { fill:url(#gf-core); } .gf-svg .melt { fill:#e0562c; filter:drop-shadow(0 0 5px rgba(240,120,40,.8)); }
+.gf-svg .fault { stroke:var(--ink); stroke-width:2; stroke-dasharray:6 3; } .gf-svg .fold { stroke:#9c7a58; stroke-width:6; stroke-linecap:round; }
+.gf-svg .river,.gf-svg .riverthin { stroke:#4f9fc4; stroke-width:5; stroke-linecap:round; } .gf-svg .riverthick { stroke:#4f9fc4; stroke-width:11; stroke-linecap:round; }
+.gf-svg .riverw { stroke:url(#gf-sea); stroke-width:26; stroke-linecap:round; } .gf-svg .riverw2 { stroke:#5aa9cd; stroke-width:12; stroke-linecap:round; }
+.gf-svg .river-flow { stroke:#e9f7ff; stroke-width:2.4; stroke-dasharray:8 14; stroke-linecap:round; animation:gf-flow 1.6s linear infinite; }
+.gf-svg .riverline { stroke:var(--cool); stroke-width:3; stroke-linejoin:round; stroke-linecap:round; stroke-dasharray:12 5; animation:gf-flow 2s linear infinite; filter:drop-shadow(0 0 2px #fff); }
+.gf-svg .gf-ar { stroke:var(--ink); stroke-width:2.6; stroke-linecap:round; } .gf-svg .gf-ah { fill:var(--ink); }
+.gf-svg .gf-ar.flow { stroke-dasharray:9 7; animation:gf-flow 1.4s linear infinite; }
 .gf-svg .gf-ar.warm { stroke:var(--warm); } .gf-svg .gf-ah.warm { fill:var(--warm); } .gf-svg .gf-ar.cool,.gf-svg .gf-ar.wind { stroke:var(--cool); } .gf-svg .gf-ah.cool,.gf-svg .gf-ah.wind { fill:var(--cool); }
-.gf-svg .gf-ar.cool2 { stroke:var(--mute); } .gf-svg .gf-ah.cool2 { fill:var(--mute); } .gf-svg .gf-ar.sunray { stroke:#f4b63f; } .gf-svg .gf-ah.sunray { fill:#f4b63f; }
-.gf-svg .cloud { fill:#fff; stroke:var(--line); animation:gf-drift 5s ease-in-out infinite alternate; } .gf-svg .drop { stroke:var(--cool); stroke-width:2.5; stroke-linecap:round; stroke-dasharray:6 16; animation:gf-rain 1s linear infinite; }
-.gf-svg .soak { stroke:var(--cool); stroke-width:2.5; stroke-dasharray:5 9; animation:gf-flow 1.6s linear infinite reverse; }
-.gf-svg .wave { stroke:#fff; stroke-width:3; } .gf-svg .wgo { stroke:var(--cool); fill:var(--water); animation:gf-roll 3s linear infinite; }
-.gf-svg .wavebig { fill:var(--cool); } .gf-svg .house { fill:var(--paper2); stroke:var(--ink); stroke-width:1; } .gf-svg .swirl { stroke:#fff; stroke-width:9; stroke-linecap:round; } .gf-svg .eye { fill:var(--night); }
-.gf-svg .seahi { fill:color-mix(in srgb,var(--cool) 42%,transparent); } .gf-svg .iso { stroke:var(--mute); stroke-width:1.3; }
-.gf-svg .tree { fill:#3f8c55; } .gf-svg .treez { fill:#3f8c55; stroke:#2c6a3f; } .gf-svg .trunk { fill:#6b4f35; } .gf-svg .thorn { stroke:#6b7f3a; stroke-width:3; stroke-linecap:round; } .gf-svg .cracks { stroke:#a9a097; stroke-width:1.6; }
-.gf-svg .bwater { fill:var(--cool); } .gf-svg .bmute { fill:color-mix(in srgb,var(--mute) 50%,transparent); } .gf-svg .bgold { fill:var(--gold); }
-.gf-svg .slice { stroke:var(--paper); stroke-width:1.5; }
-.gf-svg .grow { transform-box:fill-box; transform-origin:bottom; animation:gf-grow .7s ease-out both; } .gf-svg .grain { animation:gf-drift 1.5s ease-in-out infinite alternate; } .gf-svg .tideg { animation:gf-tide 5s ease-in-out infinite alternate; }
-.gf-svg .spin { transform-box:view-box; transform-origin:50% 50%; } .gf-cyclone .spin { animation:gf-spin 9s linear infinite; }
-.gf-t { font:600 12px var(--font); fill:var(--ink); } .gf-t.bold { font-weight:800; } .gf-t.big { font-size:22px; font-weight:800; } .gf-daynight .gf-t,.gf-sunangle .gf-t { fill:#fff; } .as.gf-t { font-family:var(--font-as); }
-.gf-pin { cursor:pointer; } .gf-pin .tap { fill:transparent; } .gf-pin .dot { fill:#fff; stroke:var(--accent); stroke-width:2.4; animation:gf-pulse 2.4s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
-.gf-pin text { font:800 13px var(--font); fill:var(--accent); pointer-events:none; } .gf-pin.on .dot,.gf-pin.sel .dot { fill:var(--accent); animation:none; } .gf-pin.on text,.gf-pin.sel text { fill:#fff; }
-.gf-pin.right .dot { fill:#2e8b57; stroke:#2e8b57; animation:none; } .gf-pin.right text,.gf-pin.wrong text { fill:#fff; } .gf-pin.wrong .dot { fill:#b23a3a; stroke:#b23a3a; animation:none; } .gf-pin[disabled] { cursor:default; }
-.gf-pin:focus-visible { outline:none; } .gf-pin:focus-visible .dot { stroke-width:4; }
-.gf-note { display:flex; justify-content:space-between; gap:8px; margin:7px 2px 6px; font-size:12px; font-weight:700; color:var(--mute); } .gf-sch { font-weight:600; opacity:.8; }
-.gf-spots { display:grid; gap:6px; } .gf-spot { display:flex; align-items:center; gap:9px; width:100%; min-height:42px; padding:7px 10px; text-align:left; font:600 14px/1.3 inherit; font-family:inherit; color:inherit; background:color-mix(in srgb,var(--paper) 72%,transparent); border:1.5px solid var(--line); border-radius:11px; cursor:pointer; transition:border-color .2s,background .2s; }
-.gf-spot b { flex:none; display:grid; place-items:center; width:24px; height:24px; border-radius:50%; font-size:12.5px; color:var(--accent); border:2px solid var(--accent); }
-.gf-spot.on { border-color:var(--accent); background:color-mix(in srgb,var(--accent) 13%,transparent); } .gf-spot.on b { background:var(--accent); color:#fff; }
+.gf-svg .gf-ar.cool2 { stroke:#9aa7ab; } .gf-svg .gf-ah.cool2 { fill:#9aa7ab; } .gf-svg .gf-ar.sunray { stroke:#f5b73c; } .gf-svg .gf-ah.sunray { fill:#f5b73c; }
+.gf-svg .cloud { fill:#fff; filter:drop-shadow(0 3px 4px rgba(23,49,59,.18)); animation:gf-drift 5s ease-in-out infinite alternate; }
+.gf-svg .drop { stroke:#3d8fbf; stroke-width:2.5; stroke-linecap:round; stroke-dasharray:6 16; animation:gf-rain 1s linear infinite; }
+.gf-svg .soak { stroke:#5aa9cd; stroke-width:2.5; stroke-dasharray:5 9; animation:gf-flow 1.6s linear infinite reverse; }
+.gf-svg .wave { stroke:#fff; stroke-width:3; stroke-linecap:round; } .gf-svg .wgo { stroke:#1d6f96; fill:url(#gf-sea); animation:gf-roll 3s linear infinite; }
+.gf-svg .wavebig { fill:#1d6f96; } .gf-svg .house { fill:#fff; stroke:var(--ink); stroke-width:1; filter:url(#gf-shadow); }
+.gf-svg .swirl { stroke:#fff; stroke-width:10; stroke-linecap:round; opacity:.92; } .gf-svg .eye { fill:#0f2233; }
+.gf-svg .iso { stroke:rgba(23,49,59,.4); stroke-width:1.3; }
+.gf-svg .tree { fill:#3f8c55; filter:url(#gf-shadow); } .gf-svg .treez { fill:#4b9a5f; stroke:#2c6a3f; } .gf-svg .trunk { fill:#6b4f35; } .gf-svg .thorn { stroke:#6b7f3a; stroke-width:3; stroke-linecap:round; } .gf-svg .cracks { stroke:#a9a097; stroke-width:1.6; }
+.gf-svg .bwater { fill:url(#gf-sea); } .gf-svg .bmute { fill:rgba(106,124,131,.35); } .gf-svg .bgold { fill:url(#gf-sand); stroke:#c99a3c; }
+.gf-svg .slice { stroke:#fffaf0; stroke-width:2; } .gf-svg .crack { fill:url(#gf-rock); } .gf-svg .sandd { fill:#c99a3c; }
+.gf-svg .grow { transform-box:fill-box; transform-origin:bottom; animation:gf-grow .8s cubic-bezier(.2,.8,.2,1) both; } .gf-svg .grain { animation:gf-drift 1.5s ease-in-out infinite alternate; } .gf-svg .tideg { animation:gf-tide 5s ease-in-out infinite alternate; }
+.gf-svg .spin { transform-box:view-box; transform-origin:50% 50%; } .gf-cyclone .spin { animation:gf-spin 9s linear infinite; } .gf-svg .spin-slow { transform-box:fill-box; transform-origin:50% 100%; animation:gf-sway 4s ease-in-out infinite alternate; }
+.gf-svg text { font-family:var(--font, "Noto Sans", system-ui, sans-serif); }
+.gf-svg .gf-t { font:700 12px var(--font, system-ui); fill:var(--ink); paint-order:stroke; stroke:rgba(255,255,255,.85); stroke-width:3px; stroke-linejoin:round; } .gf-svg .gf-t.bold { font-weight:800; } .gf-svg .gf-t.big { font-size:22px; font-weight:800; }
+.gf-svg .night-t { fill:#fff; stroke:rgba(15,34,51,.6); }
+.gf-svg .gf-sea { font:italic 700 9px var(--font, system-ui); letter-spacing:.18em; fill:#fff; opacity:.75; text-anchor:middle; }
+.gf-daynight .gf-t,.gf-graticule .gf-t,.gf-earthlayers .gf-t,.gf-sunangle .gf-t { fill:#fff; stroke:rgba(15,34,51,.6); } .gf-svg tspan.as { font-family:var(--font-as); }
+/* pins */
+.gf-pin { cursor:pointer; } .gf-pin .tap { fill:transparent; }
+.gf-pin .dot { fill:#fff; stroke:var(--accent); stroke-width:2.6; filter:drop-shadow(0 2px 3px rgba(23,49,59,.35)); animation:gf-pulse 2.4s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+.gf-pin text { font:800 13px var(--font, system-ui); fill:var(--accent); pointer-events:none; }
+.gf-pin.on .dot,.gf-pin.sel .dot { fill:var(--accent); animation:none; stroke:#fff; } .gf-pin.on text,.gf-pin.sel text { fill:#fff; }
+.gf-pin.right .dot { fill:#2e8b57; stroke:#fff; animation:none; } .gf-pin.right text,.gf-pin.wrong text { fill:#fff; } .gf-pin.wrong .dot { fill:#b23a3a; stroke:#fff; animation:none; }
+.gf-pin:focus-visible .dot { stroke-width:4; }
+/* callout bubble over the figure */
+.gf-call { position:absolute; left:0; top:0; max-width:62%; padding:7px 11px; border-radius:12px; font:700 13px/1.3 inherit; font-family:inherit; color:#fff; background:rgba(23,49,59,.92); box-shadow:0 8px 20px -8px rgba(0,0,0,.5); transform:translate(-50%, calc(-100% - 16px)) scale(.9); opacity:0; pointer-events:none; transition:opacity .2s, transform .25s cubic-bezier(.2,.9,.3,1.3); }
+.gf-call.show { opacity:1; transform:translate(-50%, calc(-100% - 16px)) scale(1); }
+.gf-call.below { transform:translate(-50%, 16px) scale(1); }
+.gf-call::after { content:""; position:absolute; left:50%; bottom:-6px; width:12px; height:12px; margin-left:-6px; background:inherit; transform:rotate(45deg); border-radius:2px; }
+.gf-call.below::after { bottom:auto; top:-6px; }
+/* toolbar */
+.gf-note { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:9px 2px 7px; font-size:12px; font-weight:700; color:var(--mute); }
+.gf-tour { display:inline-flex; align-items:center; gap:6px; padding:5px 12px 5px 9px; border:0; border-radius:999px; font:800 12.5px inherit; font-family:inherit; color:#fff; background:linear-gradient(135deg,#e0563b,#f08a3c); box-shadow:0 4px 12px -4px rgba(224,86,59,.7); cursor:pointer; }
+.gf-tour svg { width:13px; height:13px; fill:#fff; } .gf-tour.playing { background:linear-gradient(135deg,#17313b,#2f5566); box-shadow:none; }
+.gf-sch { font-weight:600; opacity:.75; }
+.gf-spots { display:grid; gap:7px; counter-reset:spot; }
+.gf-spot { display:flex; align-items:center; gap:10px; width:100%; min-height:44px; padding:8px 12px; text-align:left; font:600 14px/1.3 inherit; font-family:inherit; color:inherit; background:rgba(255,250,240,.78); border:1.5px solid rgba(23,49,59,.1); border-radius:13px; cursor:pointer; transition:transform .15s, border-color .2s, background .2s, box-shadow .2s; }
+.gf-spot:active { transform:scale(.98); }
+.gf-spot b { flex:none; display:grid; place-items:center; width:26px; height:26px; border-radius:50%; font-size:12.5px; color:var(--accent); border:2px solid var(--accent); background:#fff; }
+.gf-spot.on { border-color:var(--accent); background:linear-gradient(90deg,rgba(224,86,59,.14),rgba(255,250,240,.9)); box-shadow:0 6px 16px -10px rgba(224,86,59,.8); }
+.gf-spot.on b { background:var(--accent); color:#fff; }
+.gf-spot.seen:not(.on) b { background:rgba(224,86,59,.12); }
+.gfig.quiz .gf-stage { box-shadow:0 10px 28px -14px rgba(23,49,59,.45), 0 0 0 2px rgba(224,86,59,.18); }
 @keyframes gf-flow { to { stroke-dashoffset:-30; } } @keyframes gf-rain { to { stroke-dashoffset:-22; } } @keyframes gf-roll { to { transform:translateX(40px); } } @keyframes gf-drift { to { transform:translateX(9px); } }
-@keyframes gf-tide { from { transform:translateY(30px); } to { transform:translateY(-28px); } } @keyframes gf-grow { from { transform:scaleY(0); } } @keyframes gf-spin { to { transform:rotate(360deg); } } @keyframes gf-pulse { 50% { transform:scale(1.13); } }
-@media (prefers-reduced-motion: reduce) { .gf-svg * { animation:none !important; } }
+@keyframes gf-tide { from { transform:translateY(30px); } to { transform:translateY(-28px); } } @keyframes gf-grow { from { transform:scaleY(0); } } @keyframes gf-spin { to { transform:rotate(360deg); } } @keyframes gf-pulse { 50% { transform:scale(1.15); } }
+@keyframes gf-sway { from { transform:rotate(-8deg); } to { transform:rotate(8deg); } }
+@media (prefers-reduced-motion: reduce) { .gf-svg *, .gf-call { animation:none !important; transition:none !important; } }

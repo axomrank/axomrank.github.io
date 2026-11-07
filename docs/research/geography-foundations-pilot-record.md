@@ -63,3 +63,8 @@ Keep the 50-minute target provisional until timing data exist. Compare the
 two missions separately to see whether one requires more time. Revise any
 item that multiple learners misread, then time the complete ten-mission
 path before advertising its duration.
+
+
+## 2026-11-07 redraw
+
+All `gf-*` diagram images and the three lesson covers were redrawn as illustrated schematics by `scripts/geo_stills/render.sh`, keeping each image's letters, numbers and rainfall values. They are teaching schematics, not measured maps; the India outline is the same simplified basemap. Live figures in `app/geofigure.js` use the same drawing kit.
