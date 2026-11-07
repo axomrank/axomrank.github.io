@@ -2,7 +2,7 @@
   "id": "gf-08-indian-rivers",
   "course": "geography-foundations",
   "no": 8,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Trace India’s rivers",
     "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
@@ -140,8 +140,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Where one raindrop divides",
+            "as": "য'ত বৰষুণৰ টোপাল ভাগ হয়"
           },
           "text": [
             {
@@ -153,10 +153,10 @@
               "as": "এই অৱবাহিকাত Aৰ পানী B সংগমস্থল পাৰ হৈ Cৰে ওলাই যায়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-08-indian-rivers.u1.02",
+          "figure": {
+            "kind": "watershed",
+            "spots": [
               {
                 "en": "Divide · separates flow",
                 "as": "জলবিভাজিকা · প্ৰবাহ পৃথক কৰে"
@@ -166,8 +166,25 @@
                 "as": "সংগমস্থল · জলধাৰা মিলায়"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Confluence",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: সংগমস্থল"
           },
-          "id": "gf-08-indian-rivers.u1.02"
+          "kind": "watershed",
+          "answer": 1,
+          "answerText": {
+            "en": "Confluence · joins streams",
+            "as": "সংগমস্থল · জলধাৰা মিলায়"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Confluence · joins streams.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: সংগমস্থল · জলধাৰা মিলায়।"
+          },
+          "id": "gf-08-indian-rivers.u1.fig1"
         },
         {
           "type": "order",
@@ -387,8 +404,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Three giants of the north",
+            "as": "উত্তৰৰ তিনি বিশাল নদী"
           },
           "text": [
             {
@@ -400,10 +417,10 @@
               "as": "গংগা আৰু ব্ৰহ্মপুত্ৰ বংগোপসাগৰলৈ যোৱা বহল গংগা–ব্ৰহ্মপুত্ৰ–মেঘনা প্ৰণালীৰ অংশ।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-08-indian-rivers.u2.02",
+          "figure": {
+            "kind": "northrivers",
+            "spots": [
               {
                 "en": "Northwest · Indus",
                 "as": "উত্তৰ-পশ্চিম · সিন্ধু"
@@ -417,8 +434,25 @@
                 "as": "অসম উপত্যকা · ব্ৰহ্মপুত্ৰ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Northern plains",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: উত্তৰৰ সমভূমি"
           },
-          "id": "gf-08-indian-rivers.u2.02"
+          "kind": "northrivers",
+          "answer": 1,
+          "answerText": {
+            "en": "Northern plains · Ganga",
+            "as": "উত্তৰৰ সমভূমি · গংগা"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Northern plains · Ganga.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: উত্তৰৰ সমভূমি · গংগা।"
+          },
+          "id": "gf-08-indian-rivers.u2.fig1"
         },
         {
           "type": "match",
@@ -648,8 +682,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Most rivers run east",
+            "as": "বেছিভাগ নদী পূবলৈ বয়"
           },
           "text": [
             {
@@ -661,10 +695,10 @@
               "as": "এই আৰ্হিত কোন উপকূলত নদী পৰে বুজিবলৈ মোহনাৰ ওচৰৰ কাঁড় চোৱা।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-08-indian-rivers.u3.02",
+          "figure": {
+            "kind": "penrivers",
+            "spots": [
               {
                 "en": "West coast · Arabian Sea",
                 "as": "পশ্চিম উপকূল · আৰব সাগৰ"
@@ -674,8 +708,25 @@
                 "as": "পূব উপকূল · বংগোপসাগৰ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: East coast",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: পূব উপকূল"
           },
-          "id": "gf-08-indian-rivers.u3.02"
+          "kind": "penrivers",
+          "answer": 1,
+          "answerText": {
+            "en": "East coast · Bay of Bengal",
+            "as": "পূব উপকূল · বংগোপসাগৰ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: East coast · Bay of Bengal.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: পূব উপকূল · বংগোপসাগৰ।"
+          },
+          "id": "gf-08-indian-rivers.u3.fig1"
         },
         {
           "type": "match",
@@ -905,8 +956,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Fan or funnel?",
+            "as": "পাখি নে চুঙা?"
           },
           "text": [
             {
@@ -918,10 +969,10 @@
               "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-08-indian-rivers.u4.02",
+          "figure": {
+            "kind": "mouths",
+            "spots": [
               {
                 "en": "A · branching channels",
                 "as": "A · ভাগ হোৱা খাত"
@@ -931,8 +982,25 @@
                 "as": "B · বহল হৈ যোৱা খাত"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: A",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: A"
           },
-          "id": "gf-08-indian-rivers.u4.02"
+          "kind": "mouths",
+          "answer": 0,
+          "answerText": {
+            "en": "A · branching channels",
+            "as": "A · ভাগ হোৱা খাত"
+          },
+          "why": {
+            "en": "Pin 1 marks this: A · branching channels.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: A · ভাগ হোৱা খাত।"
+          },
+          "id": "gf-08-indian-rivers.u4.fig1"
         },
         {
           "type": "match",
@@ -1088,6 +1156,268 @@
         "result": {
           "en": "A illustrates a branching delta. B illustrates a widening estuary. These are simplified shapes.",
           "as": "Aত শাখাযুক্ত বদ্বীপ আৰু Bত বহল হৈ যোৱা জোৱাৰ-ভাটাৰ মোহনা দেখুওৱা হৈছে। এইবোৰ সৰল আৰ্হি।"
+        }
+      }
+    },
+    {
+      "id": "n1",
+      "title": {
+        "en": "Five meetings, four patterns",
+        "as": "পাঁচটা সংগম, চাৰিটা আৰ্হি"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "The Alaknanda climbs down through five confluences. They run Vishnu, Nanda, Karna, Rudra and Dev Prayag.",
+          "as": "অলকানন্দা পাঁচটা সংগমেৰে নামে: বিষ্ণু, নন্দ, কৰ্ণ, ৰুদ্ৰ আৰু দেৱ প্ৰয়াগ।"
+        },
+        {
+          "en": "At Devprayag the Bhagirathi joins and the name Ganga begins. Its 2,525 km end in the Bay of Bengal.",
+          "as": "দেৱপ্ৰয়াগত ভাগীৰথী মিলে আৰু গংগা নাম আৰম্ভ হয়। ইয়াৰ ২,৫২৫ কি.মি. বংগোপসাগৰত শেষ হয়।"
+        },
+        {
+          "en": "Dendritic streams branch like a tree. Radial ones run outward from a dome, and trellis ones join at right angles between ridges.",
+          "as": "বৃক্ষাকৃতি সোঁতা গছৰ ডালৰ দৰে। অৰীয় সোঁতা গম্বুজৰ পৰা বাহিৰলৈ, আৰু জালিকাকাৰ সোঁতা শৈলশিৰাৰ মাজেৰে সমকোণত মিলে।"
+        },
+        {
+          "en": "Centripetal streams drain inward to a lake or basin, as in the Loktak basin of Manipur.",
+          "as": "কেন্দ্ৰাভিমুখী সোঁতা ভিতৰলৈ হ্ৰদলৈ যায়, যেনে মণিপুৰৰ লোকটাক।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The Ganga's five prayags",
+            "as": "গংগাৰ পঞ্চপ্ৰয়াগ"
+          },
+          "text": [
+            {
+              "en": "The Alaknanda climbs down through five confluences. They run Vishnu, Nanda, Karna, Rudra and Dev Prayag.",
+              "as": "অলকানন্দা পাঁচটা সংগমেৰে নামে: বিষ্ণু, নন্দ, কৰ্ণ, ৰুদ্ৰ আৰু দেৱ প্ৰয়াগ।"
+            },
+            {
+              "en": "At Devprayag the Bhagirathi joins and the name Ganga begins. Its 2,525 km end in the Bay of Bengal.",
+              "as": "দেৱপ্ৰয়াগত ভাগীৰথী মিলে আৰু গংগা নাম আৰম্ভ হয়। ইয়াৰ ২,৫২৫ কি.মি. বংগোপসাগৰত শেষ হয়।"
+            }
+          ],
+          "figure": {
+            "kind": "prayag5",
+            "spots": [
+              {
+                "en": "Vishnuprayag · Dhauliganga",
+                "as": "বিষ্ণুপ্ৰয়াগ · ধৌলিগংগা"
+              },
+              {
+                "en": "Nandaprayag · Nandakini",
+                "as": "নন্দপ্ৰয়াগ · নন্দাকিনী"
+              },
+              {
+                "en": "Karnaprayag · Pindar",
+                "as": "কৰ্ণপ্ৰয়াগ · পিণ্ডৰ"
+              },
+              {
+                "en": "Rudraprayag · Mandakini",
+                "as": "ৰুদ্ৰপ্ৰয়াগ · মন্দাকিনী"
+              },
+              {
+                "en": "Devprayag · Bhagirathi",
+                "as": "দেৱপ্ৰয়াগ · ভাগীৰথী"
+              }
+            ]
+          },
+          "id": "gf-08-indian-rivers.n1.01"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Follow the Alaknanda downstream.",
+            "as": "অলকানন্দাৰ সোঁতে সোঁতে যোৱা।"
+          },
+          "items": [
+            {
+              "en": "Vishnuprayag",
+              "as": "বিষ্ণুপ্ৰয়াগ"
+            },
+            {
+              "en": "Nandaprayag",
+              "as": "নন্দপ্ৰয়াগ"
+            },
+            {
+              "en": "Karnaprayag",
+              "as": "কৰ্ণপ্ৰয়াগ"
+            },
+            {
+              "en": "Rudraprayag",
+              "as": "ৰুদ্ৰপ্ৰয়াগ"
+            },
+            {
+              "en": "Devprayag",
+              "as": "দেৱপ্ৰয়াগ"
+            }
+          ],
+          "why": {
+            "en": "A common memory aid: Vishnu, Nanda, Karna, Rudra, Dev.",
+            "as": "বিষ্ণু, নন্দ, কৰ্ণ, ৰুদ্ৰ, দেৱ।"
+          },
+          "id": "gf-08-indian-rivers.n1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Rivers draw shapes",
+            "as": "নদীয়ে আকৃতি আঁকে"
+          },
+          "text": [
+            {
+              "en": "Dendritic streams branch like a tree. Radial ones run outward from a dome, and trellis ones join at right angles between ridges.",
+              "as": "বৃক্ষাকৃতি সোঁতা গছৰ ডালৰ দৰে। অৰীয় সোঁতা গম্বুজৰ পৰা বাহিৰলৈ, আৰু জালিকাকাৰ সোঁতা শৈলশিৰাৰ মাজেৰে সমকোণত মিলে।"
+            },
+            {
+              "en": "Centripetal streams drain inward to a lake or basin, as in the Loktak basin of Manipur.",
+              "as": "কেন্দ্ৰাভিমুখী সোঁতা ভিতৰলৈ হ্ৰদলৈ যায়, যেনে মণিপুৰৰ লোকটাক।"
+            }
+          ],
+          "figure": {
+            "kind": "patterns4",
+            "spots": [
+              {
+                "en": "Dendritic · tree",
+                "as": "বৃক্ষাকৃতি · গছ"
+              },
+              {
+                "en": "Radial · outward",
+                "as": "অৰীয় · বাহিৰলৈ"
+              },
+              {
+                "en": "Trellis · right angles",
+                "as": "জালিকাকাৰ · সমকোণ"
+              },
+              {
+                "en": "Centripetal · inward",
+                "as": "কেন্দ্ৰাভিমুখী · ভিতৰলৈ"
+              }
+            ]
+          },
+          "id": "gf-08-indian-rivers.n1.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The name Ganga begins at Devprayag.",
+            "as": "গংগা নাম দেৱপ্ৰয়াগত আৰম্ভ হয়।"
+          },
+          "answer": true,
+          "why": {
+            "en": "The Alaknanda and Bhagirathi meet there.",
+            "as": "অলকানন্দা আৰু ভাগীৰথী তাত মিলে।"
+          },
+          "id": "gf-08-indian-rivers.n1.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Radial",
+                "as": "অৰীয়"
+              },
+              {
+                "en": "from a central dome",
+                "as": "মাজৰ গম্বুজৰ পৰা"
+              }
+            ],
+            [
+              {
+                "en": "Centripetal",
+                "as": "কেন্দ্ৰাভিমুখী"
+              },
+              {
+                "en": "into a lake",
+                "as": "হ্ৰদলৈ"
+              }
+            ],
+            [
+              {
+                "en": "Trellis",
+                "as": "জালিকাকাৰ"
+              },
+              {
+                "en": "right-angle joins",
+                "as": "সমকোণ সংযোগ"
+              }
+            ],
+            [
+              {
+                "en": "Dendritic",
+                "as": "বৃক্ষাকৃতি"
+              },
+              {
+                "en": "branching like a tree",
+                "as": "গছৰ ডালৰ দৰে"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Name a pattern by its shape.",
+            "as": "আকৃতিৰে আৰ্হি চিনা।"
+          },
+          "id": "gf-08-indian-rivers.n1.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "At Rudraprayag the Alaknanda meets the",
+            "as": "ৰুদ্ৰপ্ৰয়াগত অলকানন্দা মিলে"
+          },
+          "after": {
+            "en": ".",
+            "as": " ৰ সৈতে।"
+          },
+          "options": [
+            {
+              "en": "Mandakini",
+              "as": "মন্দাকিনী"
+            },
+            {
+              "en": "Pindar",
+              "as": "পিণ্ডৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The Pindar joins at Karnaprayag.",
+            "as": "পিণ্ডৰ কৰ্ণপ্ৰয়াগত মিলে।"
+          },
+          "id": "gf-08-indian-rivers.n1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Centripetal",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: কেন্দ্ৰাভিমুখী"
+          },
+          "kind": "patterns4",
+          "answer": 3,
+          "answerText": {
+            "en": "Centripetal · inward",
+            "as": "কেন্দ্ৰাভিমুখী · ভিতৰলৈ"
+          },
+          "why": {
+            "en": "Pin 4: Centripetal · inward.",
+            "as": "4 নং পিন: কেন্দ্ৰাভিমুখী · ভিতৰলৈ।"
+          },
+          "id": "gf-08-indian-rivers.n1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use the diagram to explain: Five meetings, four patterns.",
+          "as": "চিত্ৰ ব্যৱহাৰ কৰি বুজোৱা: পাঁচটা সংগম, চাৰিটা আৰ্হি।"
+        },
+        "result": {
+          "en": "The Alaknanda climbs down through five confluences. They run Vishnu, Nanda, Karna, Rudra and Dev Prayag.",
+          "as": "অলকানন্দা পাঁচটা সংগমেৰে নামে: বিষ্ণু, নন্দ, কৰ্ণ, ৰুদ্ৰ আৰু দেৱ প্ৰয়াগ।"
         }
       }
     }

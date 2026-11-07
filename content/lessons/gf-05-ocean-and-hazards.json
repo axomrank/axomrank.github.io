@@ -2,7 +2,7 @@
   "id": "gf-05-ocean-and-hazards",
   "course": "geography-foundations",
   "no": 5,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Read the ocean and hazards",
     "as": "সাগৰ আৰু বিপদ পঢ়া"
@@ -122,8 +122,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Walk down the seabed",
+            "as": "সাগৰৰ তলিৰে নামি যোৱা"
           },
           "text": [
             {
@@ -135,10 +135,10 @@
               "as": "লৱণতাই পানীত দ্ৰৱীভূত লৱণৰ পৰিমাণ বুজায়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-05-ocean-and-hazards.u1.02",
+          "figure": {
+            "kind": "shelf",
+            "spots": [
               {
                 "en": "Ocean floor · deeper",
                 "as": "সাগৰতল · গভীৰ"
@@ -152,8 +152,25 @@
                 "as": "মহীসোপান · অগভীৰ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Ocean floor",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: সাগৰতল"
           },
-          "id": "gf-05-ocean-and-hazards.u1.02"
+          "kind": "shelf",
+          "answer": 0,
+          "answerText": {
+            "en": "Ocean floor · deeper",
+            "as": "সাগৰতল · গভীৰ"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Ocean floor · deeper.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: সাগৰতল · গভীৰ।"
+          },
+          "id": "gf-05-ocean-and-hazards.u1.fig1"
         },
         {
           "type": "match",
@@ -330,8 +347,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Three kinds of motion",
-            "as": "তিনিধৰণৰ গতি"
+            "en": "Wave, tide or current?",
+            "as": "ঢৌ, জোৱাৰ নে সোঁত?"
           },
           "text": [
             {
@@ -343,10 +360,13 @@
               "as": "জোৱাৰ-ভাটা সাগৰৰ পানীৰ নিয়মীয়া উঠা-নমা। মূলত চন্দ্ৰ আৰু সূৰ্যৰ মহাকৰ্ষণে ইয়াক ঘটায়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-05-ocean-and-hazards.u2.01",
+          "figure": {
+            "kind": "wave",
+            "spots": [
               {
                 "en": "Wave · energy passes",
                 "as": "ঢৌ · শক্তি আগবাঢ়ে"
@@ -360,17 +380,13 @@
                 "as": "সোঁত · পানী বয়"
               }
             ]
-          },
-          "link": {
-            "unit": "u1"
-          },
-          "id": "gf-05-ocean-and-hazards.u2.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Water with a timetable",
+            "as": "সময়সূচী থকা পানী"
           },
           "text": [
             {
@@ -382,25 +398,42 @@
               "as": "পানী সোমাওঁতে আৰু ওলাই যাওঁতে জোৱাৰ-ভাটাইও সোঁত সৃষ্টি কৰিব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-05-ocean-and-hazards.u2.02",
+          "figure": {
+            "kind": "tide",
+            "spots": [
               {
-                "en": "Current · water flows",
-                "as": "সোঁত · পানী বয়"
+                "en": "High tide · water level peaks",
+                "as": "জোৱাৰ · পানীৰ স্তৰ ওখ"
               },
               {
-                "en": "Tide · level changes",
-                "as": "জোৱাৰ-ভাটা · পানীৰ স্তৰ সলনি"
+                "en": "Low tide · water falls back",
+                "as": "ভাটা · পানী নামি যায়"
               },
               {
-                "en": "Wave · energy passes",
-                "as": "ঢৌ · শক্তি আগবাঢ়ে"
+                "en": "Moon · main pull on the tide",
+                "as": "চন্দ্ৰ · জোৱাৰৰ মূল আকৰ্ষণ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Low tide",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: ভাটা"
           },
-          "id": "gf-05-ocean-and-hazards.u2.02"
+          "kind": "tide",
+          "answer": 1,
+          "answerText": {
+            "en": "Low tide · water falls back",
+            "as": "ভাটা · পানী নামি যায়"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Low tide · water falls back.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: ভাটা · পানী নামি যায়।"
+          },
+          "id": "gf-05-ocean-and-hazards.u2.fig1"
         },
         {
           "type": "match",
@@ -604,8 +637,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Same flood, different risk",
+            "as": "একে বান, বেলেগ বিপদ"
           },
           "text": [
             {
@@ -617,21 +650,38 @@
               "as": "গন্তব্যস্থল প্লাৱন অঞ্চলৰ বাহিৰত থাকিলেও তালৈ যোৱা ৰাস্তা অঞ্চলটো পাৰ হ’ব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Exposure · what lies there",
-                "as": "উন্মুক্ততা · তাত কি আছে"
-              },
+          "id": "gf-05-ocean-and-hazards.u3.02",
+          "figure": {
+            "kind": "exposure",
+            "spots": [
               {
                 "en": "Hazard · possible event",
                 "as": "বিপদ · সম্ভাব্য ঘটনা"
+              },
+              {
+                "en": "Exposure · what lies there",
+                "as": "উন্মুক্ততা · তাত কি আছে"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Hazard",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: বিপদ"
           },
-          "id": "gf-05-ocean-and-hazards.u3.02"
+          "kind": "exposure",
+          "answer": 0,
+          "answerText": {
+            "en": "Hazard · possible event",
+            "as": "বিপদ · সম্ভাব্য ঘটনা"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Hazard · possible event.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: বিপদ · সম্ভাব্য ঘটনা।"
+          },
+          "id": "gf-05-ocean-and-hazards.u3.fig1"
         },
         {
           "type": "match",
@@ -819,8 +869,8 @@
         {
           "type": "story",
           "title": {
-            "en": "When water rises suddenly",
-            "as": "হঠাৎ পানী বাঢ়িলে"
+            "en": "Three ways water rises",
+            "as": "পানী বঢ়াৰ তিনিটা ধৰণ"
           },
           "text": [
             {
@@ -832,10 +882,13 @@
               "as": "জ্যোতিৰ্বৈজ্ঞানিক জোৱাৰৰ অনুমানতকৈ ধুমুহাৰ ফলত সাগৰৰ পানী ওপৰলৈ উঠাই ধুমুহাজনিত পানী বৃদ্ধি।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-05-ocean-and-hazards.u4.01",
+          "figure": {
+            "kind": "cyclone",
+            "spots": [
               {
                 "en": "Rotating storm · cyclone",
                 "as": "ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ"
@@ -849,17 +902,13 @@
                 "as": "হঠাৎ পানী সৰে · ছুনামি"
               }
             ]
-          },
-          "link": {
-            "unit": "u3"
-          },
-          "id": "gf-05-ocean-and-hazards.u4.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Who pushed the water?",
+            "as": "পানীক কোনে ঠেলিলে?"
           },
           "text": [
             {
@@ -871,25 +920,42 @@
               "as": "পানীৰ সলনি ঘটোৱা কাৰণে ধুমুহাজনিত পানী বৃদ্ধি আৰু ছুনামি পৃথক কৰাত সহায় কৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-05-ocean-and-hazards.u4.02",
+          "figure": {
+            "kind": "surge",
+            "spots": [
               {
-                "en": "Sudden displacement · tsunami",
-                "as": "হঠাৎ পানী সৰে · ছুনামি"
+                "en": "Rotating storm · cyclone",
+                "as": "ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ"
               },
               {
                 "en": "Storm raises water · surge",
                 "as": "ধুমুহাই পানী তোলে · পানী বৃদ্ধি"
               },
               {
-                "en": "Rotating storm · cyclone",
-                "as": "ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ"
+                "en": "Sudden displacement · tsunami",
+                "as": "হঠাৎ পানী সৰে · ছুনামি"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Rotating storm",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: ঘূৰ্ণায়মান ধুমুহা"
           },
-          "id": "gf-05-ocean-and-hazards.u4.02"
+          "kind": "surge",
+          "answer": 0,
+          "answerText": {
+            "en": "Rotating storm · cyclone",
+            "as": "ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Rotating storm · cyclone.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: ঘূৰ্ণায়মান ধুমুহা · ঘূৰ্ণীবতাহ।"
+          },
+          "id": "gf-05-ocean-and-hazards.u4.fig1"
         },
         {
           "type": "match",

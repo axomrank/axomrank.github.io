@@ -1,0 +1,650 @@
+{
+  "id": "ec-04-farm-trade-enterprise",
+  "course": "economy-welfare",
+  "no": 4,
+  "version": 1,
+  "king": {
+    "en": "Farm, trade, enterprise",
+    "as": "কৃষি, বাণিজ্য, উদ্যোগ"
+  },
+  "reign": {
+    "en": "MSP, MSME, REIT",
+    "as": "MSP, MSME, REIT"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Commission for Agricultural Costs and Prices",
+      "url": "https://cacp.da.gov.in/",
+      "used_for": "MSP"
+    },
+    {
+      "title": "Ministry of MSME",
+      "url": "https://msme.gov.in/",
+      "used_for": "Revised MSME classes"
+    },
+    {
+      "title": "SEBI",
+      "url": "https://www.sebi.gov.in/",
+      "used_for": "REIT and InvIT rules"
+    }
+  ],
+  "checkedOn": "2026-11-07",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "A floor under the farmer",
+        "as": "খেতিয়কৰ তলিৰ দাম"
+      },
+      "icon": "farm",
+      "learned": [
+        {
+          "en": "The Commission for Agricultural Costs and Prices recommends Minimum Support Prices for over 20 crops.",
+          "as": "কৃষি ব্যয় আৰু মূল্য আয়োগে ২০টাতকৈ অধিক শস্যৰ নূন্যতম সমৰ্থন মূল্য পৰামৰ্শ দিয়ে।"
+        },
+        {
+          "en": "The Cabinet Committee on Economic Affairs decides. Sugarcane instead gets the Fair and Remunerative Price.",
+          "as": "অৰ্থনৈতিক বিষয়ক কেবিনেট সমিতিয়ে সিদ্ধান্ত লয়। কুঁহিয়াৰৰ বাবে হ'লে উচিত আৰু লাভজনক মূল্য।"
+        },
+        {
+          "en": "Nutrient Based Subsidy pays a fixed rate for nutrients in P and K fertilisers.",
+          "as": "পুষ্টিভিত্তিক ৰাজসাহায্যই P আৰু K সাৰৰ পুষ্টিকণাৰ বাবে নিৰ্দিষ্ট হাৰ দিয়ে।"
+        },
+        {
+          "en": "Direct Benefit Transfer, launched in 2013, moved subsidies toward cash paid straight to accounts.",
+          "as": "২০১৩ত আৰম্ভ হোৱা প্ৰত্যক্ষ সুবিধা হস্তান্তৰে ৰাজসাহায্য পোনে পোনে একাউণ্টলৈ নিলে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Who sets the MSP?",
+            "as": "MSP কোনে ঠিক কৰে?"
+          },
+          "text": [
+            {
+              "en": "The Commission for Agricultural Costs and Prices recommends Minimum Support Prices for over 20 crops.",
+              "as": "কৃষি ব্যয় আৰু মূল্য আয়োগে ২০টাতকৈ অধিক শস্যৰ নূন্যতম সমৰ্থন মূল্য পৰামৰ্শ দিয়ে।"
+            },
+            {
+              "en": "The Cabinet Committee on Economic Affairs decides. Sugarcane instead gets the Fair and Remunerative Price.",
+              "as": "অৰ্থনৈতিক বিষয়ক কেবিনেট সমিতিয়ে সিদ্ধান্ত লয়। কুঁহিয়াৰৰ বাবে হ'লে উচিত আৰু লাভজনক মূল্য।"
+            }
+          ],
+          "figure": {
+            "kind": "line4",
+            "spots": [
+              {
+                "en": "Costs studied",
+                "as": "ব্যয় অধ্যয়ন"
+              },
+              {
+                "en": "CACP recommends",
+                "as": "CACPয়ে পৰামৰ্শ দিয়ে"
+              },
+              {
+                "en": "CCEA approves",
+                "as": "CCEAয়ে অনুমোদন কৰে"
+              },
+              {
+                "en": "Price announced",
+                "as": "দাম ঘোষণা"
+              }
+            ]
+          },
+          "id": "ec04.u1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Sugarcane has an FRP rather than an MSP.",
+            "as": "কুঁহিয়াৰৰ MSPৰ সলনি FRP আছে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "FRP is sugarcane's own price mechanism.",
+            "as": "FRP কুঁহিয়াৰৰ নিজা ব্যৱস্থা।"
+          },
+          "id": "ec04.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Subsidy by the nutrient",
+            "as": "পুষ্টিকণা অনুসৰি ৰাজসাহায্য"
+          },
+          "text": [
+            {
+              "en": "Nutrient Based Subsidy pays a fixed rate for nutrients in P and K fertilisers.",
+              "as": "পুষ্টিভিত্তিক ৰাজসাহায্যই P আৰু K সাৰৰ পুষ্টিকণাৰ বাবে নিৰ্দিষ্ট হাৰ দিয়ে।"
+            },
+            {
+              "en": "Direct Benefit Transfer, launched in 2013, moved subsidies toward cash paid straight to accounts.",
+              "as": "২০১৩ত আৰম্ভ হোৱা প্ৰত্যক্ষ সুবিধা হস্তান্তৰে ৰাজসাহায্য পোনে পোনে একাউণ্টলৈ নিলে।"
+            }
+          ],
+          "figure": {
+            "kind": "scales2",
+            "spots": [
+              {
+                "en": "Kind · goods supplied",
+                "as": "সামগ্ৰী · বস্তু যোগান"
+              },
+              {
+                "en": "Cash · paid by DBT",
+                "as": "নগদ · DBTৰে"
+              }
+            ]
+          },
+          "id": "ec04.u1.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Trace how an MSP is set.",
+            "as": "MSP কেনেকৈ ঠিক হয় অনুসৰণ কৰা।"
+          },
+          "items": [
+            {
+              "en": "Costs are studied",
+              "as": "ব্যয় অধ্যয়ন"
+            },
+            {
+              "en": "CACP recommends",
+              "as": "CACPয়ে পৰামৰ্শ দিয়ে"
+            },
+            {
+              "en": "CCEA approves",
+              "as": "CCEAয়ে অনুমোদন কৰে"
+            }
+          ],
+          "why": {
+            "en": "Recommendation first, Cabinet decision after.",
+            "as": "প্ৰথমে পৰামৰ্শ, পিছত কেবিনেটৰ সিদ্ধান্ত।"
+          },
+          "id": "ec04.u1.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Nutrient Based Subsidy applies to",
+            "as": "পুষ্টিভিত্তিক ৰাজসাহায্য প্ৰযোজ্য"
+          },
+          "after": {
+            "en": "fertilisers.",
+            "as": "সাৰত।"
+          },
+          "options": [
+            {
+              "en": "P and K",
+              "as": "P আৰু K"
+            },
+            {
+              "en": "all organic",
+              "as": "সকলো জৈৱিক"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Phosphatic and potassic fertilisers.",
+            "as": "ফচফেটিক আৰু পটাছিক সাৰ।"
+          },
+          "id": "ec04.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which body only recommends MSP?",
+            "as": "কোনটো সংস্থাই কেৱল MSP পৰামৰ্শ দিয়ে?"
+          },
+          "options": [
+            {
+              "en": "CACP",
+              "as": "CACP"
+            },
+            {
+              "en": "CCEA",
+              "as": "CCEA"
+            },
+            {
+              "en": "RBI",
+              "as": "RBI"
+            },
+            {
+              "en": "SEBI",
+              "as": "SEBI"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "CCEA decides, CACP advises.",
+            "as": "CCEAয়ে সিদ্ধান্ত লয়, CACPয়ে পৰামৰ্শ দিয়ে।"
+          },
+          "id": "ec04.u1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: CCEA approves",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: CCEAয়ে অনুমোদন কৰে"
+          },
+          "kind": "line4",
+          "answer": 2,
+          "answerText": {
+            "en": "CCEA approves",
+            "as": "CCEAয়ে অনুমোদন কৰে"
+          },
+          "why": {
+            "en": "Pin 3: CCEA approves.",
+            "as": "3 নং পিন: CCEAয়ে অনুমোদন কৰে।"
+          },
+          "id": "ec04.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Small firms, big trusts",
+        "as": "সৰু উদ্যোগ, ডাঙৰ ট্ৰাষ্ট"
+      },
+      "icon": "building",
+      "learned": [
+        {
+          "en": "Since April 2025, a firm’s class depends on both investment and turnover.",
+          "as": "২০২৫ৰ এপ্ৰিলৰ পৰা উদ্যোগৰ শ্ৰেণী বিনিয়োগ আৰু লেনদেন দুয়োটাৰে ওপৰত নিৰ্ভৰ কৰে।"
+        },
+        {
+          "en": "Micro stops at ₹2.5 crore and ₹10 crore, small at ₹25 and ₹100 crore, medium at ₹125 and ₹500 crore.",
+          "as": "ক্ষুদ্ৰতম ₹২.৫ আৰু ₹১০ কোটিলৈ, ক্ষুদ্ৰ ₹২৫ আৰু ₹১০০ কোটিলৈ, মধ্যম ₹১২৫ আৰু ₹৫০০ কোটিলৈ।"
+        },
+        {
+          "en": "SEBI regulates InvITs, which pool money into infrastructure, and REITs, which do so for real estate.",
+          "as": "SEBIয়ে আন্তঃগাঁথনিৰ InvIT আৰু স্থাৱৰ সম্পত্তিৰ REIT নিয়ন্ত্ৰণ কৰে।"
+        },
+        {
+          "en": "REITs must distribute about 90% of cash flow to unit holders, and at least 80% of assets stay in completed projects.",
+          "as": "REITয়ে প্ৰায় ৯০% নগদ প্ৰবাহ ইউনিটধাৰীক দিব লাগে, আৰু কমেও ৮০% সম্পদ সম্পূৰ্ণ প্ৰকল্পত ৰাখিব লাগে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The MSME ladder",
+            "as": "MSMEৰ জখলা"
+          },
+          "text": [
+            {
+              "en": "Since April 2025, a firm’s class depends on both investment and turnover.",
+              "as": "২০২৫ৰ এপ্ৰিলৰ পৰা উদ্যোগৰ শ্ৰেণী বিনিয়োগ আৰু লেনদেন দুয়োটাৰে ওপৰত নিৰ্ভৰ কৰে।"
+            },
+            {
+              "en": "Micro stops at ₹2.5 crore and ₹10 crore, small at ₹25 and ₹100 crore, medium at ₹125 and ₹500 crore.",
+              "as": "ক্ষুদ্ৰতম ₹২.৫ আৰু ₹১০ কোটিলৈ, ক্ষুদ্ৰ ₹২৫ আৰু ₹১০০ কোটিলৈ, মধ্যম ₹১২৫ আৰু ₹৫০০ কোটিলৈ।"
+            }
+          ],
+          "figure": {
+            "kind": "pillars3",
+            "spots": [
+              {
+                "en": "Micro · ₹2.5 cr / ₹10 cr",
+                "as": "ক্ষুদ্ৰতম · ₹২.৫ / ₹১০ কোটি"
+              },
+              {
+                "en": "Small · ₹25 cr / ₹100 cr",
+                "as": "ক্ষুদ্ৰ · ₹২৫ / ₹১০০ কোটি"
+              },
+              {
+                "en": "Medium · ₹125 cr / ₹500 cr",
+                "as": "মধ্যম · ₹১২৫ / ₹৫০০ কোটি"
+              }
+            ]
+          },
+          "id": "ec04.u2.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "MSME class now depends on investment and turnover together.",
+            "as": "MSME শ্ৰেণী এতিয়া বিনিয়োগ আৰু লেনদেন দুয়োটাৰে ওপৰত নিৰ্ভৰশীল।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Both tests apply.",
+            "as": "দুয়োটা মাপকাঠী প্ৰযোজ্য।"
+          },
+          "id": "ec04.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Buy a slice of a highway",
+            "as": "ঘাইপথৰ অংশ কিনা"
+          },
+          "text": [
+            {
+              "en": "SEBI regulates InvITs, which pool money into infrastructure, and REITs, which do so for real estate.",
+              "as": "SEBIয়ে আন্তঃগাঁথনিৰ InvIT আৰু স্থাৱৰ সম্পত্তিৰ REIT নিয়ন্ত্ৰণ কৰে।"
+            },
+            {
+              "en": "REITs must distribute about 90% of cash flow to unit holders, and at least 80% of assets stay in completed projects.",
+              "as": "REITয়ে প্ৰায় ৯০% নগদ প্ৰবাহ ইউনিটধাৰীক দিব লাগে, আৰু কমেও ৮০% সম্পদ সম্পূৰ্ণ প্ৰকল্পত ৰাখিব লাগে।"
+            }
+          ],
+          "figure": {
+            "kind": "pillars3",
+            "spots": [
+              {
+                "en": "90% · paid to holders",
+                "as": "৯০% · ধাৰকক দিয়া"
+              },
+              {
+                "en": "80% · completed assets",
+                "as": "৮০% · সম্পূৰ্ণ সম্পদ"
+              },
+              {
+                "en": "15% · sponsor's minimum units",
+                "as": "১৫% · পৃষ্ঠপোষকৰ নূন্যতম ইউনিট"
+              }
+            ]
+          },
+          "id": "ec04.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Micro",
+                "as": "ক্ষুদ্ৰতম"
+              },
+              {
+                "en": "₹10 crore turnover",
+                "as": "₹১০ কোটি লেনদেন"
+              }
+            ],
+            [
+              {
+                "en": "Small",
+                "as": "ক্ষুদ্ৰ"
+              },
+              {
+                "en": "₹100 crore turnover",
+                "as": "₹১০০ কোটি লেনদেন"
+              }
+            ],
+            [
+              {
+                "en": "Medium",
+                "as": "মধ্যম"
+              },
+              {
+                "en": "₹500 crore turnover",
+                "as": "₹৫০০ কোটি লেনদেন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Turnover limits after the 2025 revision.",
+            "as": "২০২৫ৰ সংশোধনৰ পিছৰ লেনদেন সীমা।"
+          },
+          "id": "ec04.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "REIT stands for Real Estate",
+            "as": "REITৰ অৰ্থ Real Estate"
+          },
+          "after": {
+            "en": "Trust.",
+            "as": "Trust।"
+          },
+          "options": [
+            {
+              "en": "Investment",
+              "as": "Investment"
+            },
+            {
+              "en": "Infrastructure",
+              "as": "Infrastructure"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Infrastructure is the InvIT.",
+            "as": "Infrastructure InvITৰ।"
+          },
+          "id": "ec04.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Who regulates REITs and InvITs?",
+            "as": "REIT আৰু InvIT কোনে নিয়ন্ত্ৰণ কৰে?"
+          },
+          "options": [
+            {
+              "en": "SEBI",
+              "as": "SEBI"
+            },
+            {
+              "en": "NABARD",
+              "as": "নাবাৰ্ড"
+            },
+            {
+              "en": "CACP",
+              "as": "CACP"
+            },
+            {
+              "en": "WTO",
+              "as": "WTO"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Both are SEBI-regulated trusts.",
+            "as": "দুয়োটা SEBI-নিয়ন্ত্ৰিত ট্ৰাষ্ট।"
+          },
+          "id": "ec04.u2.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: 90%",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: ৯০%"
+          },
+          "kind": "pillars3",
+          "answer": 0,
+          "answerText": {
+            "en": "90% · paid to holders",
+            "as": "৯০% · ধাৰকক দিয়া"
+          },
+          "why": {
+            "en": "Pin 1: 90% · paid to holders.",
+            "as": "1 নং পিন: ৯০% · ধাৰকক দিয়া।"
+          },
+          "id": "ec04.u2.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "Sugarcane has an FRP rather than an MSP.",
+          "as": "কুঁহিয়াৰৰ MSPৰ সলনি FRP আছে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "FRP is sugarcane's own price mechanism.",
+          "as": "FRP কুঁহিয়াৰৰ নিজা ব্যৱস্থা।"
+        },
+        "id": "ec04.test.01"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Nutrient Based Subsidy applies to",
+          "as": "পুষ্টিভিত্তিক ৰাজসাহায্য প্ৰযোজ্য"
+        },
+        "after": {
+          "en": "fertilisers.",
+          "as": "সাৰত।"
+        },
+        "options": [
+          {
+            "en": "P and K",
+            "as": "P আৰু K"
+          },
+          {
+            "en": "all organic",
+            "as": "সকলো জৈৱিক"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Phosphatic and potassic fertilisers.",
+          "as": "ফচফেটিক আৰু পটাছিক সাৰ।"
+        },
+        "id": "ec04.test.02"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which body only recommends MSP?",
+          "as": "কোনটো সংস্থাই কেৱল MSP পৰামৰ্শ দিয়ে?"
+        },
+        "options": [
+          {
+            "en": "CACP",
+            "as": "CACP"
+          },
+          {
+            "en": "CCEA",
+            "as": "CCEA"
+          },
+          {
+            "en": "RBI",
+            "as": "RBI"
+          },
+          {
+            "en": "SEBI",
+            "as": "SEBI"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "CCEA decides, CACP advises.",
+          "as": "CCEAয়ে সিদ্ধান্ত লয়, CACPয়ে পৰামৰ্শ দিয়ে।"
+        },
+        "id": "ec04.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "MSME class now depends on investment and turnover together.",
+          "as": "MSME শ্ৰেণী এতিয়া বিনিয়োগ আৰু লেনদেন দুয়োটাৰে ওপৰত নিৰ্ভৰশীল।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Both tests apply.",
+          "as": "দুয়োটা মাপকাঠী প্ৰযোজ্য।"
+        },
+        "id": "ec04.test.04"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Micro",
+              "as": "ক্ষুদ্ৰতম"
+            },
+            {
+              "en": "₹10 crore turnover",
+              "as": "₹১০ কোটি লেনদেন"
+            }
+          ],
+          [
+            {
+              "en": "Small",
+              "as": "ক্ষুদ্ৰ"
+            },
+            {
+              "en": "₹100 crore turnover",
+              "as": "₹১০০ কোটি লেনদেন"
+            }
+          ],
+          [
+            {
+              "en": "Medium",
+              "as": "মধ্যম"
+            },
+            {
+              "en": "₹500 crore turnover",
+              "as": "₹৫০০ কোটি লেনদেন"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Turnover limits after the 2025 revision.",
+          "as": "২০২৫ৰ সংশোধনৰ পিছৰ লেনদেন সীমা।"
+        },
+        "id": "ec04.test.05"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "REIT stands for Real Estate",
+          "as": "REITৰ অৰ্থ Real Estate"
+        },
+        "after": {
+          "en": "Trust.",
+          "as": "Trust।"
+        },
+        "options": [
+          {
+            "en": "Investment",
+            "as": "Investment"
+          },
+          {
+            "en": "Infrastructure",
+            "as": "Infrastructure"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Infrastructure is the InvIT.",
+          "as": "Infrastructure InvITৰ।"
+        },
+        "id": "ec04.test.06"
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@
   "id": "gf-04-air-and-water",
   "course": "geography-foundations",
   "no": 4,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Follow air and fresh water",
     "as": "বায়ু আৰু মিঠাপানী অনুসৰণ কৰা"
@@ -117,8 +117,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "One spike, one long line",
+            "as": "এটা চূড়া, এডাল দীঘল ৰেখা"
           },
           "text": [
             {
@@ -130,10 +130,10 @@
               "as": "গুৱাহাটীত ১৯৯১–২০২০ৰ জুলাইৰ গড় ২৮৩.৪ মিমি। ই দেখুওৱা জানুৱাৰী আৰু অক্টোবৰৰ গড়তকৈ বেছি।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-04-air-and-water.u1.02",
+          "figure": {
+            "kind": "climategraph",
+            "spots": [
               {
                 "en": "Thirty-year mean",
                 "as": "ত্ৰিশ বছৰৰ গড়"
@@ -143,8 +143,25 @@
                 "as": "আজিৰ ধুমুহা"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Today’s storm",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: আজিৰ ধুমুহা"
           },
-          "id": "gf-04-air-and-water.u1.02"
+          "kind": "climategraph",
+          "answer": 1,
+          "answerText": {
+            "en": "Today’s storm",
+            "as": "আজিৰ ধুমুহা"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Today’s storm.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: আজিৰ ধুমুহা।"
+          },
+          "id": "gf-04-air-and-water.u1.fig1"
         },
         {
           "type": "match",
@@ -321,8 +338,8 @@
         {
           "type": "story",
           "title": {
-            "en": "What starts the wind?",
-            "as": "বতাহ কিয় বলে?"
+            "en": "Why the shore gets breezy",
+            "as": "পাৰত কিয় বতাহ বলে"
           },
           "text": [
             {
@@ -334,10 +351,13 @@
               "as": "চাৰিওফালৰ বায়ুতকৈ ঘনত্ব কম হ’লে গৰম বায়ু প্ৰসাৰিত হৈ ওপৰলৈ উঠিব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-04-air-and-water.u2.01",
+          "figure": {
+            "kind": "seabreeze",
+            "spots": [
               {
                 "en": "Warmer land · rising air",
                 "as": "গৰম স্থল · উঠা বায়ু"
@@ -347,17 +367,13 @@
                 "as": "শীতল সাগৰ · পৃষ্ঠৰ বতাহ"
               }
             ]
-          },
-          "link": {
-            "unit": "u1"
-          },
-          "id": "gf-04-air-and-water.u2.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Air slides from high to low",
+            "as": "বায়ু উচ্চৰ পৰা নিম্নলৈ যায়"
           },
           "text": [
             {
@@ -369,10 +385,10 @@
               "as": "দিনৰ সাগৰীয় বতাহৰ উদাহৰণত পৃষ্ঠৰ ওচৰেৰে সাগৰৰ শীতল বায়ু গৰম স্থলৰ ফালে আহে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-04-air-and-water.u2.02",
+          "figure": {
+            "kind": "pressure",
+            "spots": [
               {
                 "en": "Cooler sea · surface breeze",
                 "as": "শীতল সাগৰ · পৃষ্ঠৰ বতাহ"
@@ -382,8 +398,25 @@
                 "as": "গৰম স্থল · উঠা বায়ু"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Cooler sea",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: শীতল সাগৰ"
           },
-          "id": "gf-04-air-and-water.u2.02"
+          "kind": "pressure",
+          "answer": 0,
+          "answerText": {
+            "en": "Cooler sea · surface breeze",
+            "as": "শীতল সাগৰ · পৃষ্ঠৰ বতাহ"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Cooler sea · surface breeze.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: শীতল সাগৰ · পৃষ্ঠৰ বতাহ।"
+          },
+          "id": "gf-04-air-and-water.u2.fig1"
         },
         {
           "type": "match",
@@ -577,8 +610,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Soak in or run off?",
+            "as": "সোমাব নে বৈ যাব?"
           },
           "text": [
             {
@@ -590,10 +623,10 @@
               "as": "অনুপ্ৰৱেশ মানে মাটিৰ ভিতৰত পানী সোমোৱা। তাৰ কিছু পানীয়ে ভূগৰ্ভস্থ পানী পুনৰ ভৰাব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-04-air-and-water.u3.02",
+          "figure": {
+            "kind": "infiltrate",
+            "spots": [
               {
                 "en": "Infiltration · into soil",
                 "as": "অনুপ্ৰৱেশ · মাটিৰ ভিতৰলৈ"
@@ -603,8 +636,25 @@
                 "as": "বৈ অহা পানী · পৃষ্ঠৰ ওপৰেৰে"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Runoff",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: বৈ অহা পানী"
           },
-          "id": "gf-04-air-and-water.u3.02"
+          "kind": "infiltrate",
+          "answer": 1,
+          "answerText": {
+            "en": "Runoff · across surface",
+            "as": "বৈ অহা পানী · পৃষ্ঠৰ ওপৰেৰে"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Runoff · across surface.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: বৈ অহা পানী · পৃষ্ঠৰ ওপৰেৰে।"
+          },
+          "id": "gf-04-air-and-water.u3.fig1"
         },
         {
           "type": "match",
@@ -809,8 +859,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Wet side, dry side",
+            "as": "তিতা ফাল, শুকান ফাল"
           },
           "text": [
             {
@@ -822,21 +872,38 @@
               "as": "বৰষুণ তুলনা কৰাৰ আগতে কাঁড় চাই বতাহ অহা ঢাল চিনা।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Leeward · descends",
-                "as": "বিপৰীত ফাল · তললৈ নামে"
-              },
+          "id": "gf-04-air-and-water.u4.02",
+          "figure": {
+            "kind": "ridge",
+            "spots": [
               {
                 "en": "Windward · rises",
                 "as": "বতাহ অহা ফাল · ওপৰলৈ উঠে"
+              },
+              {
+                "en": "Leeward · descends",
+                "as": "বিপৰীত ফাল · তললৈ নামে"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Windward",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: বতাহ অহা ফাল"
           },
-          "id": "gf-04-air-and-water.u4.02"
+          "kind": "ridge",
+          "answer": 0,
+          "answerText": {
+            "en": "Windward · rises",
+            "as": "বতাহ অহা ফাল · ওপৰলৈ উঠে"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Windward · rises.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: বতাহ অহা ফাল · ওপৰলৈ উঠে।"
+          },
+          "id": "gf-04-air-and-water.u4.fig1"
         },
         {
           "type": "order",

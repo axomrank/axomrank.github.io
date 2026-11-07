@@ -2,7 +2,7 @@
   "id": "gf-09-india-monsoon",
   "course": "geography-foundations",
   "no": 9,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Read India’s monsoon",
     "as": "ভাৰতৰ মৌচুমী পঢ়া"
@@ -117,8 +117,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the seasonal calendar",
-            "as": "ঋতুৰ কেলেণ্ডাৰ পঢ়া"
+            "en": "Four months of the year",
+            "as": "বছৰৰ চাৰি মাহ"
           },
           "text": [
             {
@@ -130,10 +130,10 @@
               "as": "বতৰ বিজ্ঞান বিভাগে দেশৰ বৰষুণৰ সাৰাংশত জুনৰ পৰা ছেপ্টেম্বৰলৈ দক্ষিণ-পশ্চিম মৌচুমী ঋতু বুলি ধৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-09-india-monsoon.u1.01",
+          "figure": {
+            "kind": "rainseason",
+            "spots": [
               {
                 "en": "June–September · reporting season",
                 "as": "জুন–ছেপ্টেম্বৰ · প্ৰতিবেদনৰ ঋতু"
@@ -143,14 +143,13 @@
                 "as": "স্থানীয় তাৰিখ · সলনি হয়"
               }
             ]
-          },
-          "id": "gf-09-india-monsoon.u1.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "A normal date isn't a promise",
+            "as": "স্বাভাৱিক তাৰিখ প্ৰতিশ্ৰুতি নহয়"
           },
           "text": [
             {
@@ -162,21 +161,38 @@
               "as": "বৰষুণৰ এটা দিন বতৰৰ প্ৰমাণ। বহু ঋতুৰ নথিয়ে জলবায়ু তুলনা কৰাত সহায় কৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-09-india-monsoon.u1.02",
+          "figure": {
+            "kind": "onsetdates",
+            "spots": [
               {
-                "en": "Local dates · variable",
-                "as": "স্থানীয় তাৰিখ · সলনি হয়"
+                "en": "Normal date · long-term average",
+                "as": "স্বাভাৱিক তাৰিখ · দীৰ্ঘম্যাদী গড়"
               },
               {
-                "en": "June–September · reporting season",
-                "as": "জুন–ছেপ্টেম্বৰ · প্ৰতিবেদনৰ ঋতু"
+                "en": "Actual onset · varies by year",
+                "as": "প্ৰকৃত আগমন · বছৰে বছৰে বেলেগ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Normal date",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: স্বাভাৱিক তাৰিখ"
           },
-          "id": "gf-09-india-monsoon.u1.02"
+          "kind": "onsetdates",
+          "answer": 0,
+          "answerText": {
+            "en": "Normal date · long-term average",
+            "as": "স্বাভাৱিক তাৰিখ · দীৰ্ঘম্যাদী গড়"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Normal date · long-term average.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: স্বাভাৱিক তাৰিখ · দীৰ্ঘম্যাদী গড়।"
+          },
+          "id": "gf-09-india-monsoon.u1.fig1"
         },
         {
           "type": "match",
@@ -370,8 +386,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Two arms of one monsoon",
+            "as": "এটা মৌচুমীৰ দুটা বাহু"
           },
           "text": [
             {
@@ -383,21 +399,38 @@
               "as": "গড় তাৰিখে আগৰ পৰ্যবেক্ষণৰ সাৰাংশ দিয়ে। প্ৰকৃত আগমন আগতে বা পাছত হ’ব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Bay of Bengal pathway",
-                "as": "বংগোপসাগৰৰ পথ"
-              },
+          "id": "gf-09-india-monsoon.u2.02",
+          "figure": {
+            "kind": "monsoonpaths",
+            "spots": [
               {
                 "en": "Arabian Sea pathway",
                 "as": "আৰব সাগৰৰ পথ"
+              },
+              {
+                "en": "Bay of Bengal pathway",
+                "as": "বংগোপসাগৰৰ পথ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Bay of Bengal pathway",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: বংগোপসাগৰৰ পথ"
           },
-          "id": "gf-09-india-monsoon.u2.02"
+          "kind": "monsoonpaths",
+          "answer": 1,
+          "answerText": {
+            "en": "Bay of Bengal pathway",
+            "as": "বংগোপসাগৰৰ পথ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Bay of Bengal pathway.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: বংগোপসাগৰৰ পথ।"
+          },
+          "id": "gf-09-india-monsoon.u2.fig1"
         },
         {
           "type": "match",
@@ -591,8 +624,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Two cities, two peaks",
+            "as": "দুখন চহৰ, দুটা শীৰ্ষ"
           },
           "text": [
             {
@@ -604,21 +637,38 @@
               "as": "বাছনি কৰা দুটা মাহৰ অধিক বৰষুণৰ মাহটো কেন্দ্ৰভেদে বেলেগ। ভূমি আৰু ঋতুভিত্তিক বতাহে আঞ্চলিক পাৰ্থক্য বুজোৱাত সহায় কৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Chennai · October higher",
-                "as": "চেন্নাই · অক্টোবৰ অধিক"
-              },
+          "id": "gf-09-india-monsoon.u3.02",
+          "figure": {
+            "kind": "stationbars",
+            "spots": [
               {
                 "en": "Guwahati · July higher",
                 "as": "গুৱাহাটী · জুলাই অধিক"
+              },
+              {
+                "en": "Chennai · October higher",
+                "as": "চেন্নাই · অক্টোবৰ অধিক"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Guwahati",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: গুৱাহাটী"
           },
-          "id": "gf-09-india-monsoon.u3.02"
+          "kind": "stationbars",
+          "answer": 0,
+          "answerText": {
+            "en": "Guwahati · July higher",
+            "as": "গুৱাহাটী · জুলাই অধিক"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Guwahati · July higher.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: গুৱাহাটী · জুলাই অধিক।"
+          },
+          "id": "gf-09-india-monsoon.u3.fig1"
         },
         {
           "type": "match",
@@ -806,8 +856,8 @@
         {
           "type": "story",
           "title": {
-            "en": "When the winds turn",
-            "as": "বতাহৰ দিশ সলনি হ’লে"
+            "en": "The monsoon heads back",
+            "as": "মৌচুমী উভতি যায়"
           },
           "text": [
             {
@@ -819,10 +869,13 @@
               "as": "বায়ু চলাচল সলনি হোৱাৰ লগে লগে প্ৰত্যাৱৰ্তন অঞ্চলবোৰৰ মাজেৰে আগবাঢ়ে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-09-india-monsoon.u4.01",
+          "figure": {
+            "kind": "withdrawal",
+            "spots": [
               {
                 "en": "Northwest · withdrawal begins",
                 "as": "উত্তৰ-পশ্চিম · প্ৰত্যাৱৰ্তন আৰম্ভ"
@@ -832,17 +885,13 @@
                 "as": "দক্ষিণ-পূব উপকূল · পাছৰ বৰষুণ"
               }
             ]
-          },
-          "link": {
-            "unit": "u3"
-          },
-          "id": "gf-09-india-monsoon.u4.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Tamil Nadu's late rain",
+            "as": "তামিলনাডুৰ পলমীয়া বৰষুণ"
           },
           "text": [
             {
@@ -854,21 +903,38 @@
               "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতিলেই সমগ্ৰ ভাৰতত বৰষুণ শেষ নহয়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-09-india-monsoon.u4.02",
+          "figure": {
+            "kind": "nemonsoon",
+            "spots": [
               {
                 "en": "Southeast coast · later rains",
-                "as": "দক্ষিণ-পূব উপকূল · পাছৰ বৰষুণ"
+                "as": "দক্ষিণ-পূব উপকূল · পিছৰ বৰষুণ"
               },
               {
-                "en": "Northwest · withdrawal begins",
-                "as": "উত্তৰ-পশ্চিম · প্ৰত্যাৱৰ্তন আৰম্ভ"
+                "en": "Northeast winds · cross the Bay",
+                "as": "উত্তৰ-পূবৰ বতাহ · বংগোপসাগৰ পাৰ হয়"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Northeast winds",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: উত্তৰ-পূবৰ বতাহ"
           },
-          "id": "gf-09-india-monsoon.u4.02"
+          "kind": "nemonsoon",
+          "answer": 1,
+          "answerText": {
+            "en": "Northeast winds · cross the Bay",
+            "as": "উত্তৰ-পূবৰ বতাহ · বংগোপসাগৰ পাৰ হয়"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Northeast winds · cross the Bay.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: উত্তৰ-পূবৰ বতাহ · বংগোপসাগৰ পাৰ হয়।"
+          },
+          "id": "gf-09-india-monsoon.u4.fig1"
         },
         {
           "type": "match",
@@ -1002,6 +1068,257 @@
         "result": {
           "en": "Southwest monsoon withdrawal does not mean rainfall ends everywhere in India.",
           "as": "দক্ষিণ-পশ্চিম মৌচুমী উভতিলেই সমগ্ৰ ভাৰতত বৰষুণ শেষ নহয়।"
+        }
+      }
+    },
+    {
+      "id": "n1",
+      "title": {
+        "en": "Why India has every climate",
+        "as": "ভাৰতত কিয় সকলো জলবায়ু"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "Drass in Ladakh can fall to −45°C in winter, while Churu in Rajasthan can touch 50°C in June.",
+          "as": "লাডাখৰ দ্ৰাছত শীতত −৪৫°C হ'ব পাৰে, ৰাজস্থানৰ চুৰুত জুনত ৫০°C।"
+        },
+        {
+          "en": "Mawsynram gets about 1,080 cm of rain a year. Jaisalmer gets about 9 cm.",
+          "as": "মাছিনৰামত বছৰি প্ৰায় ১,০৮০ ছে.মি. বৰষুণ। জয়চলমেৰত প্ৰায় ৯ ছে.মি.।"
+        },
+        {
+          "en": "Latitude, the Himalayan wall, land and sea, and local relief all matter. Agra and Darjeeling share a latitude, yet in January read 16°C and 4°C.",
+          "as": "অক্ষাংশ, হিমালয়, স্থল আৰু সাগৰ, স্থানীয় ভূ-আকৃতি সকলো গুৰুত্বপূৰ্ণ। আগ্ৰা আৰু দাৰ্জিলিঙৰ একে অক্ষাংশ, তথাপি জানুৱাৰীত ১৬°C আৰু ৪°C।"
+        },
+        {
+          "en": "Jet streams blow 9–13 km up. Western disturbances bring winter rain to the northwest.",
+          "as": "জেট প্ৰবাহ ৯–১৩ কি.মি. ওপৰত বয়। পশ্চিমীয়া অশান্তিয়ে উত্তৰ-পশ্চিমলৈ শীতৰ বৰষুণ আনে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Extremes on one map",
+            "as": "এখন মানচিত্ৰত চৰম"
+          },
+          "text": [
+            {
+              "en": "Drass in Ladakh can fall to −45°C in winter, while Churu in Rajasthan can touch 50°C in June.",
+              "as": "লাডাখৰ দ্ৰাছত শীতত −৪৫°C হ'ব পাৰে, ৰাজস্থানৰ চুৰুত জুনত ৫০°C।"
+            },
+            {
+              "en": "Mawsynram gets about 1,080 cm of rain a year. Jaisalmer gets about 9 cm.",
+              "as": "মাছিনৰামত বছৰি প্ৰায় ১,০৮০ ছে.মি. বৰষুণ। জয়চলমেৰত প্ৰায় ৯ ছে.মি.।"
+            }
+          ],
+          "figure": {
+            "kind": "extremes4",
+            "spots": [
+              {
+                "en": "Drass · −45°C",
+                "as": "দ্ৰাছ · −৪৫°C"
+              },
+              {
+                "en": "Churu · 50°C",
+                "as": "চুৰু · ৫০°C"
+              },
+              {
+                "en": "Jaisalmer · 9 cm",
+                "as": "জয়চলমেৰ · ৯ ছে.মি."
+              },
+              {
+                "en": "Mawsynram · 1,080 cm",
+                "as": "মাছিনৰাম · ১,০৮০ ছে.মি."
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.n1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Agra is colder than Darjeeling in January.",
+            "as": "জানুৱাৰীত আগ্ৰা দাৰ্জিলিঙতকৈ ঠাণ্ডা।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Height makes Darjeeling colder: 4°C against 16°C.",
+            "as": "উচ্চতাই দাৰ্জিলিঙক ঠাণ্ডা কৰে: ৪°C বনাম ১৬°C।"
+          },
+          "id": "gf-09-india-monsoon.n1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "What drives the contrast",
+            "as": "পাৰ্থক্যৰ কাৰণ"
+          },
+          "text": [
+            {
+              "en": "Latitude, the Himalayan wall, land and sea, and local relief all matter. Agra and Darjeeling share a latitude, yet in January read 16°C and 4°C.",
+              "as": "অক্ষাংশ, হিমালয়, স্থল আৰু সাগৰ, স্থানীয় ভূ-আকৃতি সকলো গুৰুত্বপূৰ্ণ। আগ্ৰা আৰু দাৰ্জিলিঙৰ একে অক্ষাংশ, তথাপি জানুৱাৰীত ১৬°C আৰু ৪°C।"
+            },
+            {
+              "en": "Jet streams blow 9–13 km up. Western disturbances bring winter rain to the northwest.",
+              "as": "জেট প্ৰবাহ ৯–১৩ কি.মি. ওপৰত বয়। পশ্চিমীয়া অশান্তিয়ে উত্তৰ-পশ্চিমলৈ শীতৰ বৰষুণ আনে।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "Altitude · Darjeeling cooler",
+                "as": "উচ্চতা · দাৰ্জিলিং শীতল"
+              },
+              {
+                "en": "Jet streams · 9–13 km",
+                "as": "জেট প্ৰবাহ · ৯–১৩ কি.মি."
+              },
+              {
+                "en": "Western disturbances · winter rain",
+                "as": "পশ্চিমীয়া অশান্তি · শীতৰ বৰষুণ"
+              }
+            ]
+          },
+          "id": "gf-09-india-monsoon.n1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Drass",
+                "as": "দ্ৰাছ"
+              },
+              {
+                "en": "extreme cold",
+                "as": "চৰম ঠাণ্ডা"
+              }
+            ],
+            [
+              {
+                "en": "Churu",
+                "as": "চুৰু"
+              },
+              {
+                "en": "extreme heat",
+                "as": "চৰম গৰম"
+              }
+            ],
+            [
+              {
+                "en": "Mawsynram",
+                "as": "মাছিনৰাম"
+              },
+              {
+                "en": "heaviest rain",
+                "as": "সৰ্বাধিক বৰষুণ"
+              }
+            ],
+            [
+              {
+                "en": "Jaisalmer",
+                "as": "জয়চলমেৰ"
+              },
+              {
+                "en": "scant rain",
+                "as": "নগণ্য বৰষুণ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Four corners of India's climate.",
+            "as": "ভাৰতৰ জলবায়ুৰ চাৰিটা চুক।"
+          },
+          "id": "gf-09-india-monsoon.n1.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Winter rain in the northwest comes from",
+            "as": "উত্তৰ-পশ্চিমৰ শীতৰ বৰষুণ আহে"
+          },
+          "after": {
+            "en": ".",
+            "as": " ৰ পৰা।"
+          },
+          "options": [
+            {
+              "en": "western disturbances",
+              "as": "পশ্চিমীয়া অশান্তি"
+            },
+            {
+              "en": "the northeast monsoon",
+              "as": "উত্তৰ-পূব মৌচুমী"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "They arrive with the westerlies.",
+            "as": "পশ্চিমীয়া বতাহৰ লগত আহে।"
+          },
+          "id": "gf-09-india-monsoon.n1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a main control of India's climate?",
+            "as": "কোনটো ভাৰতৰ জলবায়ুৰ মূল নিয়ন্ত্ৰক নহয়?"
+          },
+          "options": [
+            {
+              "en": "State borders",
+              "as": "ৰাজ্যৰ সীমা"
+            },
+            {
+              "en": "Latitude",
+              "as": "অক্ষাংশ"
+            },
+            {
+              "en": "Altitude",
+              "as": "উচ্চতা"
+            },
+            {
+              "en": "Land and sea",
+              "as": "স্থল আৰু সাগৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Borders are political, not climatic.",
+            "as": "সীমা ৰাজনৈতিক, জলবায়ুৰ নহয়।"
+          },
+          "id": "gf-09-india-monsoon.n1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Mawsynram",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: মাছিনৰাম"
+          },
+          "kind": "extremes4",
+          "answer": 3,
+          "answerText": {
+            "en": "Mawsynram · 1,080 cm",
+            "as": "মাছিনৰাম · ১,০৮০ ছে.মি."
+          },
+          "why": {
+            "en": "Pin 4: Mawsynram · 1,080 cm.",
+            "as": "4 নং পিন: মাছিনৰাম · ১,০৮০ ছে.মি.।"
+          },
+          "id": "gf-09-india-monsoon.n1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use the diagram to explain: Why India has every climate.",
+          "as": "চিত্ৰ ব্যৱহাৰ কৰি বুজোৱা: ভাৰতত কিয় সকলো জলবায়ু।"
+        },
+        "result": {
+          "en": "Drass in Ladakh can fall to −45°C in winter, while Churu in Rajasthan can touch 50°C in June.",
+          "as": "লাডাখৰ দ্ৰাছত শীতত −৪৫°C হ'ব পাৰে, ৰাজস্থানৰ চুৰুত জুনত ৫০°C।"
         }
       }
     }

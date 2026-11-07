@@ -94,7 +94,7 @@ def check_step(s, where):
     if kind == "unscramble" and len(s["word"]["as"]) < 2:
         errors.append(f"{where}: unscramble needs two tiles")
     if kind == "story":
-        if s.get("map") is None and s.get("art") not in ("scroll", "calendar", "rooster", "embassy", "door", "court", "houses", "seal"):
+        if s.get("map") is None and "figure" not in s and s.get("art") not in ("scroll", "calendar", "rooster", "embassy", "door", "court", "houses", "seal"):
             errors.append(f"{where}: unknown art {s.get('art')}")
     check_text(s, where)
     for m in ARTICLE.finditer(text_of({k: v.get("en") if isinstance(v, dict) else v for k, v in s.items() if isinstance(v, dict) and "en" in v})):

@@ -19,8 +19,8 @@ async function solve(s, wrong){
     case 'solve': { const v=wrong?(s.traps&&s.traps[0]?s.traps[0].ans:(s.input==='letters'?'QQ':'99999')):s.answer; for(const ch of String(v)){ const k=$('[data-key="'+ch.replace('-','−')+'"]',scr); if(!k) throw new Error('no key '+ch); click(k);} await sl(3); act(); break; }
     case 'explore': { const st=__L.run().st; if(s.widget.kind==='peel'){ if(wrong) click($('[data-prime]:not([disabled])',scr)); AXOM_MATH.autoSet(s,st,false);} else AXOM_MATH.autoSet(s,st,wrong); await sl(3); act(); break; }
     case 'stepwise': { for(let k=0;k<s.parts.length;k++){ const p=s.parts[k], a=(wrong&&k===0)?(p.answer+1)%p.options.length:p.answer; click($('[data-part="'+a+'"]',scr)); await sl(3);} break; }
-    case 'mcq': case 'odd': case 'inline': case 'picture': case 'whoami':
-      click($('[data-opt="'+(wrong?(s.answer+1)%s.options.length:s.answer)+'"]',scr)); await sl(3); act(); break;
+    case 'figtap': case 'mcq': case 'odd': case 'inline': case 'picture': case 'whoami':
+      click($('[data-opt="'+(wrong?(s.answer+1)%$$('[data-opt]',scr).length:s.answer)+'"]',scr)); await sl(3); act(); break;
     case 'tf': click($('[data-tf="'+((wrong?!s.answer:s.answer)?1:0)+'"]',scr)); break;
     case 'fill': if(isAS()) click($('[data-chip="'+(wrong?(s.asAnswer+1)%4:s.asAnswer)+'"]',scr)); else { const i=$('.en input',scr); i.value=wrong?'x'.repeat(s.answer.length-1):s.answer.slice(1); i.dispatchEvent(new Event('input',{bubbles:true})); } await sl(3); act(); break;
     case 'map': { const id = wrong? s.choices.find(c=>c!==s.target): s.target; const h=$('.hit[data-place="'+id+'"]',scr); click(h.querySelector('.zone,.dot')||h); await sl(3); act(); break; }

@@ -2,7 +2,7 @@
   "id": "gf-06-india-location",
   "course": "geography-foundations",
   "no": 6,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Put India on the map",
     "as": "মানচিত্ৰত ভাৰত চিনা"
@@ -114,8 +114,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Find India in South Asia",
-            "as": "দক্ষিণ এছিয়াত ভাৰত বিচাৰা"
+            "en": "Two seas, one peninsula",
+            "as": "দুখন সাগৰ, এটা উপদ্বীপ"
           },
           "text": [
             {
@@ -127,10 +127,10 @@
               "as": "উপদ্বীপৰ পশ্চিমে আৰব সাগৰ আৰু পূবে বংগোপসাগৰ।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-06-india-location.u1.01",
+          "figure": {
+            "kind": "seas",
+            "spots": [
               {
                 "en": "West · Arabian Sea",
                 "as": "পশ্চিম · আৰব সাগৰ"
@@ -140,14 +140,13 @@
                 "as": "পূব · বংগোপসাগৰ"
               }
             ]
-          },
-          "id": "gf-06-india-location.u1.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Who lives next door?",
+            "as": "কাষৰ ওচৰ-চুবুৰীয়া কোন?"
           },
           "text": [
             {
@@ -159,21 +158,46 @@
               "as": "বাংলাদেশ আৰু ম্যানমাৰৰ সৈতে পূব ফালে ভাৰতৰ সীমা আছে। শ্ৰীলংকা দক্ষিণে পানীৰ সিপাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-06-india-location.u1.02",
+          "figure": {
+            "kind": "neighbours",
+            "spots": [
               {
-                "en": "East · Bay of Bengal",
-                "as": "পূব · বংগোপসাগৰ"
+                "en": "Pakistan · northwest",
+                "as": "পাকিস্তান · উত্তৰ-পশ্চিম"
               },
               {
-                "en": "West · Arabian Sea",
-                "as": "পশ্চিম · আৰব সাগৰ"
+                "en": "Nepal · Himalayan neighbour",
+                "as": "নেপাল · হিমালয়ৰ চুবুৰীয়া"
+              },
+              {
+                "en": "Bhutan · Himalayan neighbour",
+                "as": "ভূটান · হিমালয়ৰ চুবুৰীয়া"
+              },
+              {
+                "en": "Myanmar · eastern side",
+                "as": "ম্যানমাৰ · পূব ফালে"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Myanmar",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: ম্যানমাৰ"
           },
-          "id": "gf-06-india-location.u1.02"
+          "kind": "neighbours",
+          "answer": 3,
+          "answerText": {
+            "en": "Myanmar · eastern side",
+            "as": "ম্যানমাৰ · পূব ফালে"
+          },
+          "why": {
+            "en": "Pin 4 marks this: Myanmar · eastern side.",
+            "as": "4 নং পিনে ইয়াক দেখুৱায়: ম্যানমাৰ · পূব ফালে।"
+          },
+          "id": "gf-06-india-location.u1.fig1"
         },
         {
           "type": "match",
@@ -382,8 +406,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Three pins, three capitals",
+            "as": "তিনিটা পিন, তিনিটা ঠাই"
           },
           "text": [
             {
@@ -395,10 +419,10 @@
               "as": "দিল্লী ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল আৰু উত্তৰ-পূবৰ নগৰ দুখনৰ পশ্চিমত আছে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-06-india-location.u2.02",
+          "figure": {
+            "kind": "anchors",
+            "spots": [
               {
                 "en": "National Capital Territory · Delhi",
                 "as": "ৰাষ্ট্ৰীয় ৰাজধানী অঞ্চল · দিল্লী"
@@ -412,8 +436,25 @@
                 "as": "অসম · গুৱাহাটী"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Assam",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: অসম"
           },
-          "id": "gf-06-india-location.u2.02"
+          "kind": "anchors",
+          "answer": 2,
+          "answerText": {
+            "en": "Assam · Guwahati",
+            "as": "অসম · গুৱাহাটী"
+          },
+          "why": {
+            "en": "Pin 3 marks this: Assam · Guwahati.",
+            "as": "3 নং পিনে ইয়াক দেখুৱায়: অসম · গুৱাহাটী।"
+          },
+          "id": "gf-06-india-location.u2.fig1"
         },
         {
           "type": "match",
@@ -571,8 +612,8 @@
         {
           "type": "story",
           "title": {
-            "en": "One clock across India",
-            "as": "সমগ্ৰ ভাৰতত একে ঘড়ী"
+            "en": "Two lines cross India",
+            "as": "ভাৰতৰ মাজেৰে দুডাল ৰেখা"
           },
           "text": [
             {
@@ -584,10 +625,13 @@
               "as": "ভাৰতীয় মান সময়ৰ দ্ৰাঘিমাৰেখা ৮২°৩০′ পূব।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-06-india-location.u3.01",
+          "figure": {
+            "kind": "tropic",
+            "spots": [
               {
                 "en": "Tropic · latitude",
                 "as": "ক্ৰান্তি · অক্ষাংশ"
@@ -597,17 +641,13 @@
                 "as": "মান দ্ৰাঘিমাৰেখা · দ্ৰাঘিমাংশ"
               }
             ]
-          },
-          "link": {
-            "unit": "u2"
-          },
-          "id": "gf-06-india-location.u3.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "The Sun reaches east first",
+            "as": "সূৰ্য আগতে পূবত পায়"
           },
           "text": [
             {
@@ -619,21 +659,38 @@
               "as": "ভাৰতীয় মান সময়ে দেশজুৰি ঠাইবোৰক একে ঘড়ীৰ সময় দিয়ে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-06-india-location.u3.02",
+          "figure": {
+            "kind": "sunrise",
+            "spots": [
               {
-                "en": "Standard meridian · longitude",
-                "as": "মান দ্ৰাঘিমাৰেখা · দ্ৰাঘিমাংশ"
+                "en": "East · earlier sunrise",
+                "as": "পূব · সোনকালে সূৰ্যোদয়"
               },
               {
-                "en": "Tropic · latitude",
-                "as": "ক্ৰান্তি · অক্ষাংশ"
+                "en": "West · later sunrise",
+                "as": "পশ্চিম · পলমকৈ সূৰ্যোদয়"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: West",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: পশ্চিম"
           },
-          "id": "gf-06-india-location.u3.02"
+          "kind": "sunrise",
+          "answer": 1,
+          "answerText": {
+            "en": "West · later sunrise",
+            "as": "পশ্চিম · পলমকৈ সূৰ্যোদয়"
+          },
+          "why": {
+            "en": "Pin 2 marks this: West · later sunrise.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: পশ্চিম · পলমকৈ সূৰ্যোদয়।"
+          },
+          "id": "gf-06-india-location.u3.fig1"
         },
         {
           "type": "match",
@@ -827,8 +884,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Two island families",
+            "as": "দুটা দ্বীপ পৰিয়াল"
           },
           "text": [
             {
@@ -840,10 +897,10 @@
               "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-06-india-location.u4.02",
+          "figure": {
+            "kind": "islands",
+            "spots": [
               {
                 "en": "Andaman and Nicobar · southeast",
                 "as": "আন্দামান আৰু নিকোবৰ · দক্ষিণ-পূব"
@@ -853,8 +910,25 @@
                 "as": "লাক্ষাদ্বীপ · পশ্চিম"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Andaman and Nicobar",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: আন্দামান আৰু নিকোবৰ"
           },
-          "id": "gf-06-india-location.u4.02"
+          "kind": "islands",
+          "answer": 0,
+          "answerText": {
+            "en": "Andaman and Nicobar · southeast",
+            "as": "আন্দামান আৰু নিকোবৰ · দক্ষিণ-পূব"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Andaman and Nicobar · southeast.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: আন্দামান আৰু নিকোবৰ · দক্ষিণ-পূব।"
+          },
+          "id": "gf-06-india-location.u4.fig1"
         },
         {
           "type": "match",
@@ -1010,6 +1084,235 @@
         "result": {
           "en": "The Andaman and Nicobar Islands lie southeast of the mainland, on the Bay of Bengal side.",
           "as": "আন্দামান আৰু নিকোবৰ দ্বীপ মূল ভূখণ্ডৰ দক্ষিণ-পূবে বংগোপসাগৰৰ ফালে আছে।"
+        }
+      }
+    },
+    {
+      "id": "n1",
+      "title": {
+        "en": "India and Assam in numbers",
+        "as": "সংখ্যাত ভাৰত আৰু অসম"
+      },
+      "icon": "map",
+      "learned": [
+        {
+          "en": "India covers about 3.28 million km², 2.4% of the world’s land. It runs 3,214 km north–south and 2,933 km east–west.",
+          "as": "ভাৰতৰ কালি প্ৰায় ৩২.৮ লাখ বৰ্গ কি.মি., বিশ্বৰ স্থলভাগৰ ২.৪%। উত্তৰ–দক্ষিণ ৩,২১৪ কি.মি., পূব–পশ্চিম ২,৯৩৩ কি.মি.।"
+        },
+        {
+          "en": "Assam has 78,438 km², 2.39% of India. The country has 28 states and 8 union territories.",
+          "as": "অসমৰ কালি ৭৮,৪৩৮ বৰ্গ কি.মি., ভাৰতৰ ২.৩৯%। দেশত ২৮খন ৰাজ্য আৰু ৮খন কেন্দ্ৰশাসিত অঞ্চল।"
+        },
+        {
+          "en": "Earth turns 1° of longitude in 4 minutes. India spans about 30°, so the Sun rises about 2 hours earlier in Arunachal than in Gujarat.",
+          "as": "পৃথিৱীয়ে ৪ মিনিটত ১° দ্ৰাঘিমা ঘূৰে। ভাৰতৰ বিস্তাৰ প্ৰায় ৩০°, সেয়ে অৰুণাচলত গুজৰাটতকৈ প্ৰায় ২ ঘণ্টা আগতে সূৰ্য উঠে।"
+        },
+        {
+          "en": "One degree of latitude is about 111 km. Longitude degrees shrink toward the poles.",
+          "as": "এক ডিগ্ৰী অক্ষাংশ প্ৰায় ১১১ কি.মি.। দ্ৰাঘিমাৰ ডিগ্ৰী মেৰুৰ ফালে সৰু হৈ যায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "How big is India?",
+            "as": "ভাৰত কিমান ডাঙৰ?"
+          },
+          "text": [
+            {
+              "en": "India covers about 3.28 million km², 2.4% of the world’s land. It runs 3,214 km north–south and 2,933 km east–west.",
+              "as": "ভাৰতৰ কালি প্ৰায় ৩২.৮ লাখ বৰ্গ কি.মি., বিশ্বৰ স্থলভাগৰ ২.৪%। উত্তৰ–দক্ষিণ ৩,২১৪ কি.মি., পূব–পশ্চিম ২,৯৩৩ কি.মি.।"
+            },
+            {
+              "en": "Assam has 78,438 km², 2.39% of India. The country has 28 states and 8 union territories.",
+              "as": "অসমৰ কালি ৭৮,৪৩৮ বৰ্গ কি.মি., ভাৰতৰ ২.৩৯%। দেশত ২৮খন ৰাজ্য আৰু ৮খন কেন্দ্ৰশাসিত অঞ্চল।"
+            }
+          ],
+          "figure": {
+            "kind": "scales2",
+            "spots": [
+              {
+                "en": "North–south · 3,214 km",
+                "as": "উত্তৰ–দক্ষিণ · ৩,২১৪ কি.মি."
+              },
+              {
+                "en": "East–west · 2,933 km",
+                "as": "পূব–পশ্চিম · ২,৯৩৩ কি.মি."
+              }
+            ]
+          },
+          "id": "gf-06-india-location.n1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "India is longer east–west than north–south.",
+            "as": "ভাৰত উত্তৰ–দক্ষিণতকৈ পূব–পশ্চিমে দীঘল।"
+          },
+          "answer": false,
+          "why": {
+            "en": "North–south is 3,214 km, against 2,933 km.",
+            "as": "উত্তৰ–দক্ষিণ ৩,২১৪ কি.মি., পূব–পশ্চিম ২,৯৩৩।"
+          },
+          "id": "gf-06-india-location.n1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Four minutes per degree",
+            "as": "প্ৰতি ডিগ্ৰীত চাৰি মিনিট"
+          },
+          "text": [
+            {
+              "en": "Earth turns 1° of longitude in 4 minutes. India spans about 30°, so the Sun rises about 2 hours earlier in Arunachal than in Gujarat.",
+              "as": "পৃথিৱীয়ে ৪ মিনিটত ১° দ্ৰাঘিমা ঘূৰে। ভাৰতৰ বিস্তাৰ প্ৰায় ৩০°, সেয়ে অৰুণাচলত গুজৰাটতকৈ প্ৰায় ২ ঘণ্টা আগতে সূৰ্য উঠে।"
+            },
+            {
+              "en": "One degree of latitude is about 111 km. Longitude degrees shrink toward the poles.",
+              "as": "এক ডিগ্ৰী অক্ষাংশ প্ৰায় ১১১ কি.মি.। দ্ৰাঘিমাৰ ডিগ্ৰী মেৰুৰ ফালে সৰু হৈ যায়।"
+            }
+          ],
+          "figure": {
+            "kind": "sunrise",
+            "spots": [
+              {
+                "en": "East · earlier sunrise",
+                "as": "পূব · সোনকালে সূৰ্যোদয়"
+              },
+              {
+                "en": "West · later sunrise",
+                "as": "পশ্চিম · পলমকৈ সূৰ্যোদয়"
+              }
+            ]
+          },
+          "id": "gf-06-india-location.n1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Each degree of longitude equals",
+            "as": "প্ৰতি ডিগ্ৰী দ্ৰাঘিমা সমান"
+          },
+          "after": {
+            "en": "of time.",
+            "as": "সময়।"
+          },
+          "options": [
+            {
+              "en": "4 minutes",
+              "as": "৪ মিনিট"
+            },
+            {
+              "en": "15 minutes",
+              "as": "১৫ মিনিট"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "15° make an hour, so 1° is 4 minutes.",
+            "as": "১৫°ত এঘণ্টা, গতিকে ১° = ৪ মিনিট।"
+          },
+          "id": "gf-06-india-location.n1.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "3.28 million km²",
+                "as": "৩২.৮ লাখ বৰ্গ কি.মি."
+              },
+              {
+                "en": "India's area",
+                "as": "ভাৰতৰ কালি"
+              }
+            ],
+            [
+              {
+                "en": "78,438 km²",
+                "as": "৭৮,৪৩৮ বৰ্গ কি.মি."
+              },
+              {
+                "en": "Assam's area",
+                "as": "অসমৰ কালি"
+              }
+            ],
+            [
+              {
+                "en": "111 km",
+                "as": "১১১ কি.মি."
+              },
+              {
+                "en": "one degree of latitude",
+                "as": "এক ডিগ্ৰী অক্ষাংশ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Three numbers worth keeping.",
+            "as": "ৰাখিবলগীয়া তিনিটা সংখ্যা।"
+          },
+          "id": "gf-06-india-location.n1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which share is Assam's part of India's area?",
+            "as": "ভাৰতৰ কালিত অসমৰ অংশ কিমান?"
+          },
+          "options": [
+            {
+              "en": "2.39%",
+              "as": "২.৩৯%"
+            },
+            {
+              "en": "24%",
+              "as": "২৪%"
+            },
+            {
+              "en": "10%",
+              "as": "১০%"
+            },
+            {
+              "en": "0.5%",
+              "as": "০.৫%"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "About 2.39%.",
+            "as": "প্ৰায় ২.৩৯%।"
+          },
+          "id": "gf-06-india-location.n1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: East",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: পূব"
+          },
+          "kind": "sunrise",
+          "answer": 0,
+          "answerText": {
+            "en": "East · earlier sunrise",
+            "as": "পূব · সোনকালে সূৰ্যোদয়"
+          },
+          "why": {
+            "en": "Pin 1: East · earlier sunrise.",
+            "as": "1 নং পিন: পূব · সোনকালে সূৰ্যোদয়।"
+          },
+          "id": "gf-06-india-location.n1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use the diagram to explain: India and Assam in numbers.",
+          "as": "চিত্ৰ ব্যৱহাৰ কৰি বুজোৱা: সংখ্যাত ভাৰত আৰু অসম।"
+        },
+        "result": {
+          "en": "India covers about 3.28 million km², 2.4% of the world’s land. It runs 3,214 km north–south and 2,933 km east–west.",
+          "as": "ভাৰতৰ কালি প্ৰায় ৩২.৮ লাখ বৰ্গ কি.মি., বিশ্বৰ স্থলভাগৰ ২.৪%। উত্তৰ–দক্ষিণ ৩,২১৪ কি.মি., পূব–পশ্চিম ২,৯৩৩ কি.মি.।"
         }
       }
     }

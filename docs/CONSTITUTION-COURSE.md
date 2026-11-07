@@ -223,7 +223,7 @@ a checkpoint that never repeats questions.
 
 | # | Lesson | Tier | Units | Content |
 |---|---|---|---|---|
-| 49 | Panchayati Raj | B | 5 | Background committees, 73rd Amendment, Part IX, Eleventh Schedule |
+| 49 | Panchayati Raj | B | 6 | Background committees, 73rd Amendment, Part IX, Eleventh Schedule |
 | 50 | Municipalities | C | 3 | 74th Amendment, Part IXA, Twelfth Schedule |
 | 51 | Co-operative societies | C | 2 | 97th Amendment, Part IXB, the 2021 Supreme Court ruling |
 

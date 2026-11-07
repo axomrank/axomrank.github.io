@@ -2,7 +2,7 @@
   "id": "gf-01-map-skills",
   "course": "geography-foundations",
   "no": 1,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Find your bearings",
     "as": "দিশ চিনা"
@@ -107,8 +107,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Two keys to any map",
+            "as": "যিকোনো মানচিত্ৰৰ দুটা চাবি"
           },
           "text": [
             {
@@ -120,10 +120,10 @@
               "as": "এই মানচিত্ৰত A, Bৰ পশ্চিমত। নদীখন দুয়োটাৰে দক্ষিণত।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-01-map-skills.u1.02",
+          "figure": {
+            "kind": "compass",
+            "spots": [
               {
                 "en": "North arrow · orientation",
                 "as": "উত্তৰৰ কাঁড় · দিশ"
@@ -133,8 +133,25 @@
                 "as": "সূচক · চিহ্ন"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: North arrow",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: উত্তৰৰ কাঁড়"
           },
-          "id": "gf-01-map-skills.u1.02"
+          "kind": "compass",
+          "answer": 0,
+          "answerText": {
+            "en": "North arrow · orientation",
+            "as": "উত্তৰৰ কাঁড় · দিশ"
+          },
+          "why": {
+            "en": "Pin 1 marks this: North arrow · orientation.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: উত্তৰৰ কাঁড় · দিশ।"
+          },
+          "id": "gf-01-map-skills.u1.fig1"
         },
         {
           "type": "inline",
@@ -350,8 +367,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Two lines at zero",
+            "as": "শূন্যৰ দুটা ৰেখা"
           },
           "text": [
             {
@@ -363,10 +380,10 @@
               "as": "এই জালিকাত B, ২০° উত্তৰ আৰু ৯০° পূবৰ ছেদবিন্দুত আছে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-01-map-skills.u2.02",
+          "figure": {
+            "kind": "graticule",
+            "spots": [
               {
                 "en": "Equator · 0° latitude",
                 "as": "বিষুৱৰেখা · ০° অক্ষাংশ"
@@ -376,8 +393,25 @@
                 "as": "মূল মধ্যৰেখা · ০° দ্ৰাঘিমাংশ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Prime meridian",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: মূল মধ্যৰেখা"
           },
-          "id": "gf-01-map-skills.u2.02"
+          "kind": "graticule",
+          "answer": 1,
+          "answerText": {
+            "en": "Prime meridian · 0° longitude",
+            "as": "মূল মধ্যৰেখা · ০° দ্ৰাঘিমাংশ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Prime meridian · 0° longitude.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: মূল মধ্যৰেখা · ০° দ্ৰাঘিমাংশ।"
+          },
+          "id": "gf-01-map-skills.u2.fig1"
         },
         {
           "type": "match",
@@ -582,8 +616,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Walk the bar scale",
+            "as": "দণ্ড স্কেলত খোজ দিয়া"
           },
           "text": [
             {
@@ -595,10 +629,10 @@
               "as": "ইয়াত Aৰ পৰা Bলৈ ২ কিমিৰ তিনিটা ব্যৱধান, অৰ্থাৎ ৬ কিমি। Bৰ পৰা Cলৈ এটা ব্যৱধান, অৰ্থাৎ ২ কিমি।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-01-map-skills.u3.02",
+          "figure": {
+            "kind": "scalebar",
+            "spots": [
               {
                 "en": "Read the unit",
                 "as": "একক পঢ়া"
@@ -608,8 +642,25 @@
                 "as": "সমান ব্যৱধান গণনা কৰা"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Read the unit",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: একক পঢ়া"
           },
-          "id": "gf-01-map-skills.u3.02"
+          "kind": "scalebar",
+          "answer": 0,
+          "answerText": {
+            "en": "Read the unit",
+            "as": "একক পঢ়া"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Read the unit.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: একক পঢ়া।"
+          },
+          "id": "gf-01-map-skills.u3.fig1"
         },
         {
           "type": "inline",
@@ -811,8 +862,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Lines that show steepness",
+            "as": "খাড়াই দেখুওৱা ৰেখা"
           },
           "text": [
             {
@@ -824,10 +875,10 @@
               "as": "Aৰ ঢাল Bতকৈ থিয়, কাৰণ একে উচ্চতা কম সমতল দূৰত্বতে বাঢ়িছে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-01-map-skills.u4.02",
+          "figure": {
+            "kind": "contour",
+            "spots": [
               {
                 "en": "Close lines · steeper",
                 "as": "ওচৰা-ওচৰি ৰেখা · অধিক থিয়"
@@ -837,8 +888,25 @@
                 "as": "দূৰে দূৰে ৰেখা · কম থিয়"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Wide spacing",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: দূৰে দূৰে ৰেখা"
           },
-          "id": "gf-01-map-skills.u4.02"
+          "kind": "contour",
+          "answer": 1,
+          "answerText": {
+            "en": "Wide spacing · gentler",
+            "as": "দূৰে দূৰে ৰেখা · কম থিয়"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Wide spacing · gentler.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: দূৰে দূৰে ৰেখা · কম থিয়।"
+          },
+          "id": "gf-01-map-skills.u4.fig1"
         },
         {
           "type": "odd",

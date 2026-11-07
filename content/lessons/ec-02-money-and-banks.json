@@ -1,0 +1,666 @@
+{
+  "id": "ec-02-money-and-banks",
+  "course": "economy-welfare",
+  "no": 2,
+  "version": 1,
+  "king": {
+    "en": "Money and banks",
+    "as": "ধন আৰু বেংক"
+  },
+  "reign": {
+    "en": "RBI, Basel, rupee",
+    "as": "RBI, বেছেল, টকা"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/",
+      "used_for": "RBI Act, Basel norms, exchange-rate history"
+    }
+  ],
+  "checkedOn": "2026-11-07",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Inside the RBI Act",
+        "as": "RBI আইনৰ ভিতৰত"
+      },
+      "icon": "bank",
+      "learned": [
+        {
+          "en": "The RBI Act of 1934 runs the central bank. Section 8 sets up its board, and section 17 lists its business.",
+          "as": "১৯৩৪ৰ RBI আইনে কেন্দ্ৰীয় বেংক চলায়। ধাৰা ৮ত ব'ৰ্ড আৰু ধাৰা ১৭ত ইয়াৰ কাম।"
+        },
+        {
+          "en": "Section 22 gives the right to issue notes. Section 47 sends surplus profit to the government.",
+          "as": "ধাৰা ২২ত নোট উলিওৱাৰ অধিকাৰ। ধাৰা ৪৭এ উদ্বৃত্ত লাভ চৰকাৰলৈ পঠায়।"
+        },
+        {
+          "en": "Basel III makes banks hold capital against risky assets. India asks for a capital adequacy ratio of at least 9%.",
+          "as": "বেছেল IIIএ বিপদজনক সম্পদৰ বিপৰীতে মূলধন ৰাখিবলৈ দিয়ে। ভাৰতত মূলধন পৰ্যাপ্ততা অনুপাত কমেও ৯%।"
+        },
+        {
+          "en": "A 2.5% conservation buffer sits on top. The Liquidity Coverage Ratio asks for enough liquid assets for a 30-day stress.",
+          "as": "ইয়াৰ ওপৰত ২.৫% সংৰক্ষণ বাফাৰ। তৰলতা আৱৰণ অনুপাতে ৩০ দিনৰ চাপৰ বাবে তৰল সম্পদ বিচাৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Five sections worth knowing",
+            "as": "জানিবলগীয়া পাঁচটা ধাৰা"
+          },
+          "text": [
+            {
+              "en": "The RBI Act of 1934 runs the central bank. Section 8 sets up its board, and section 17 lists its business.",
+              "as": "১৯৩৪ৰ RBI আইনে কেন্দ্ৰীয় বেংক চলায়। ধাৰা ৮ত ব'ৰ্ড আৰু ধাৰা ১৭ত ইয়াৰ কাম।"
+            },
+            {
+              "en": "Section 22 gives the right to issue notes. Section 47 sends surplus profit to the government.",
+              "as": "ধাৰা ২২ত নোট উলিওৱাৰ অধিকাৰ। ধাৰা ৪৭এ উদ্বৃত্ত লাভ চৰকাৰলৈ পঠায়।"
+            }
+          ],
+          "figure": {
+            "kind": "line4",
+            "spots": [
+              {
+                "en": "Sec 8 · central board",
+                "as": "ধাৰা ৮ · কেন্দ্ৰীয় ব'ৰ্ড"
+              },
+              {
+                "en": "Sec 17 · business",
+                "as": "ধাৰা ১৭ · ব্যৱসায়"
+              },
+              {
+                "en": "Sec 22 · issuing notes",
+                "as": "ধাৰা ২২ · নোট প্ৰচলন"
+              },
+              {
+                "en": "Sec 47 · surplus transfer",
+                "as": "ধাৰা ৪৭ · উদ্বৃত্ত হস্তান্তৰ"
+              }
+            ]
+          },
+          "id": "ec02.u1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Section 47 deals with printing notes.",
+            "as": "ধাৰা ৪৭ নোট ছপাৰ বিষয়ে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Notes are section 22. Section 47 covers the surplus sent to government.",
+            "as": "নোট ধাৰা ২২। ধাৰা ৪৭ চৰকাৰলৈ উদ্বৃত্তৰ বিষয়ে।"
+          },
+          "id": "ec02.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Banks need a cushion",
+            "as": "বেংকক গাদীৰ প্ৰয়োজন"
+          },
+          "text": [
+            {
+              "en": "Basel III makes banks hold capital against risky assets. India asks for a capital adequacy ratio of at least 9%.",
+              "as": "বেছেল IIIএ বিপদজনক সম্পদৰ বিপৰীতে মূলধন ৰাখিবলৈ দিয়ে। ভাৰতত মূলধন পৰ্যাপ্ততা অনুপাত কমেও ৯%।"
+            },
+            {
+              "en": "A 2.5% conservation buffer sits on top. The Liquidity Coverage Ratio asks for enough liquid assets for a 30-day stress.",
+              "as": "ইয়াৰ ওপৰত ২.৫% সংৰক্ষণ বাফাৰ। তৰলতা আৱৰণ অনুপাতে ৩০ দিনৰ চাপৰ বাবে তৰল সম্পদ বিচাৰে।"
+            }
+          ],
+          "figure": {
+            "kind": "pillars3",
+            "spots": [
+              {
+                "en": "CAR · at least 9%",
+                "as": "CAR · কমেও ৯%"
+              },
+              {
+                "en": "Conservation buffer · 2.5%",
+                "as": "সংৰক্ষণ বাফাৰ · ২.৫%"
+              },
+              {
+                "en": "LCR · 100%",
+                "as": "LCR · ১০০%"
+              }
+            ]
+          },
+          "id": "ec02.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Section 8",
+                "as": "ধাৰা ৮"
+              },
+              {
+                "en": "central board",
+                "as": "কেন্দ্ৰীয় ব'ৰ্ড"
+              }
+            ],
+            [
+              {
+                "en": "Section 22",
+                "as": "ধাৰা ২২"
+              },
+              {
+                "en": "note issue",
+                "as": "নোট প্ৰচলন"
+              }
+            ],
+            [
+              {
+                "en": "Section 47",
+                "as": "ধাৰা ৪৭"
+              },
+              {
+                "en": "surplus transfer",
+                "as": "উদ্বৃত্ত হস্তান্তৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Three sections that exams pair with their subject.",
+            "as": "পৰীক্ষাত সোধা তিনিটা ধাৰা।"
+          },
+          "id": "ec02.u1.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "India's minimum capital adequacy ratio is",
+            "as": "ভাৰতৰ নূন্যতম মূলধন পৰ্যাপ্ততা অনুপাত"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "9%",
+              "as": "৯%"
+            },
+            {
+              "en": "15%",
+              "as": "১৫%"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "India sets 9%, above the global Basel 8%.",
+            "as": "ভাৰতে ৯% ধাৰ্য কৰিছে, বিশ্বৰ ৮%তকৈ বেছি।"
+          },
+          "id": "ec02.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which belongs to Basel III?",
+            "as": "কোনটো বেছেল IIIৰ অংশ?"
+          },
+          "options": [
+            {
+              "en": "Liquidity Coverage Ratio",
+              "as": "তৰলতা আৱৰণ অনুপাত"
+            },
+            {
+              "en": "Minimum Support Price",
+              "as": "নূন্যতম সমৰ্থন মূল্য"
+            },
+            {
+              "en": "Fair and Remunerative Price",
+              "as": "উচিত আৰু লাভজনক মূল্য"
+            },
+            {
+              "en": "Goods and Services Tax",
+              "as": "বস্তু আৰু সেৱা কৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "LCR is a liquidity rule for banks.",
+            "as": "LCR বেংকৰ তৰলতা নিয়ম।"
+          },
+          "id": "ec02.u1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: CAR",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: CAR"
+          },
+          "kind": "pillars3",
+          "answer": 0,
+          "answerText": {
+            "en": "CAR · at least 9%",
+            "as": "CAR · কমেও ৯%"
+          },
+          "why": {
+            "en": "Pin 1: CAR · at least 9%.",
+            "as": "1 নং পিন: CAR · কমেও ৯%।"
+          },
+          "id": "ec02.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "How the rupee floats",
+        "as": "টকা কেনেকৈ ওপঙে"
+      },
+      "icon": "trend",
+      "learned": [
+        {
+          "en": "India moved from a fixed par value to a pegged rate after 1971.",
+          "as": "ভাৰত ১৯৭১ৰ পিছত স্থিৰ সমমূল্যৰ পৰা পেগ কৰা হাৰলৈ গ'ল।"
+        },
+        {
+          "en": "LERMS in 1992 used a dual rate for a year. A market-based managed float has run since 1993.",
+          "as": "১৯৯২ৰ LERMSত এবছৰ দ্বৈত হাৰ আছিল। ১৯৯৩ৰ পৰা বজাৰভিত্তিক নিয়ন্ত্ৰিত ভাসমান হাৰ।"
+        },
+        {
+          "en": "NEER averages the rupee against a basket of trade partners’ currencies.",
+          "as": "NEERয়ে বাণিজ্য অংশীদাৰৰ মুদ্ৰাৰ ঝুৰিৰ বিপৰীতে টকাৰ গড় জোখে।"
+        },
+        {
+          "en": "REER adjusts that for price differences, so it shows real competitiveness.",
+          "as": "REERয়ে তাক দামৰ পাৰ্থক্য অনুসৰি শোধন কৰে, গতিকে প্ৰকৃত প্ৰতিযোগিতা দেখুৱায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Four rupee regimes",
+            "as": "টকাৰ চাৰিটা ব্যৱস্থা"
+          },
+          "text": [
+            {
+              "en": "India moved from a fixed par value to a pegged rate after 1971.",
+              "as": "ভাৰত ১৯৭১ৰ পিছত স্থিৰ সমমূল্যৰ পৰা পেগ কৰা হাৰলৈ গ'ল।"
+            },
+            {
+              "en": "LERMS in 1992 used a dual rate for a year. A market-based managed float has run since 1993.",
+              "as": "১৯৯২ৰ LERMSত এবছৰ দ্বৈত হাৰ আছিল। ১৯৯৩ৰ পৰা বজাৰভিত্তিক নিয়ন্ত্ৰিত ভাসমান হাৰ।"
+            }
+          ],
+          "figure": {
+            "kind": "line4",
+            "spots": [
+              {
+                "en": "Par value · from 1947",
+                "as": "সমমূল্য · ১৯৪৭ৰ পৰা"
+              },
+              {
+                "en": "Pegged · after 1971",
+                "as": "পেগ · ১৯৭১ৰ পিছত"
+              },
+              {
+                "en": "LERMS · dual rate 1992",
+                "as": "LERMS · দ্বৈত হাৰ ১৯৯২"
+              },
+              {
+                "en": "Managed float · from 1993",
+                "as": "নিয়ন্ত্ৰিত ভাসমান · ১৯৯৩ৰ পৰা"
+              }
+            ]
+          },
+          "id": "ec02.u2.01"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Put the rupee regimes in order.",
+            "as": "টকাৰ ব্যৱস্থাবোৰ ক্ৰমত সজোৱা।"
+          },
+          "items": [
+            {
+              "en": "Par value",
+              "as": "সমমূল্য"
+            },
+            {
+              "en": "Pegged rate",
+              "as": "পেগ হাৰ"
+            },
+            {
+              "en": "LERMS dual rate",
+              "as": "LERMS দ্বৈত হাৰ"
+            },
+            {
+              "en": "Managed float",
+              "as": "নিয়ন্ত্ৰিত ভাসমান"
+            }
+          ],
+          "why": {
+            "en": "Fixed, pegged, dual for a year, then market-based.",
+            "as": "স্থিৰ, পেগ, এবছৰ দ্বৈত, তাৰ পিছত বজাৰভিত্তিক।"
+          },
+          "id": "ec02.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "NEER or REER?",
+            "as": "NEER নে REER?"
+          },
+          "text": [
+            {
+              "en": "NEER averages the rupee against a basket of trade partners’ currencies.",
+              "as": "NEERয়ে বাণিজ্য অংশীদাৰৰ মুদ্ৰাৰ ঝুৰিৰ বিপৰীতে টকাৰ গড় জোখে।"
+            },
+            {
+              "en": "REER adjusts that for price differences, so it shows real competitiveness.",
+              "as": "REERয়ে তাক দামৰ পাৰ্থক্য অনুসৰি শোধন কৰে, গতিকে প্ৰকৃত প্ৰতিযোগিতা দেখুৱায়।"
+            }
+          ],
+          "figure": {
+            "kind": "scales2",
+            "spots": [
+              {
+                "en": "NEER · nominal basket",
+                "as": "NEER · নামমাত্ৰ ঝুৰি"
+              },
+              {
+                "en": "REER · adjusted for prices",
+                "as": "REER · দাম অনুসৰি শোধিত"
+              }
+            ]
+          },
+          "id": "ec02.u2.03"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "REER accounts for price differences between countries.",
+            "as": "REERয়ে দেশসমূহৰ দামৰ পাৰ্থক্য ধৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "That price adjustment separates REER from NEER.",
+            "as": "এই শোধনেই REERক NEERৰ পৰা পৃথক কৰে।"
+          },
+          "id": "ec02.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Since 1993 India has used a",
+            "as": "১৯৯৩ৰ পৰা ভাৰতত আছে"
+          },
+          "after": {
+            "en": "exchange rate.",
+            "as": "বিনিময় হাৰ।"
+          },
+          "options": [
+            {
+              "en": "managed float",
+              "as": "নিয়ন্ত্ৰিত ভাসমান"
+            },
+            {
+              "en": "fixed",
+              "as": "স্থিৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Markets set the rate, and the RBI can step in.",
+            "as": "বজাৰে হাৰ ঠিক কৰে, RBIয়ে হস্তক্ষেপ কৰিব পাৰে।"
+          },
+          "id": "ec02.u2.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "LERMS",
+                "as": "LERMS"
+              },
+              {
+                "en": "dual rate",
+                "as": "দ্বৈত হাৰ"
+              }
+            ],
+            [
+              {
+                "en": "NEER",
+                "as": "NEER"
+              },
+              {
+                "en": "trade-weighted basket",
+                "as": "বাণিজ্যভিত্তিক ঝুৰি"
+              }
+            ],
+            [
+              {
+                "en": "REER",
+                "as": "REER"
+              },
+              {
+                "en": "real competitiveness",
+                "as": "প্ৰকৃত প্ৰতিযোগিতা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Three terms from the rupee story.",
+            "as": "টকাৰ কাহিনীৰ তিনিটা শব্দ।"
+          },
+          "id": "ec02.u2.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Managed float",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: নিয়ন্ত্ৰিত ভাসমান"
+          },
+          "kind": "line4",
+          "answer": 3,
+          "answerText": {
+            "en": "Managed float · from 1993",
+            "as": "নিয়ন্ত্ৰিত ভাসমান · ১৯৯৩ৰ পৰা"
+          },
+          "why": {
+            "en": "Pin 4: Managed float · from 1993.",
+            "as": "4 নং পিন: নিয়ন্ত্ৰিত ভাসমান · ১৯৯৩ৰ পৰা।"
+          },
+          "id": "ec02.u2.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "Section 47 deals with printing notes.",
+          "as": "ধাৰা ৪৭ নোট ছপাৰ বিষয়ে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "Notes are section 22. Section 47 covers the surplus sent to government.",
+          "as": "নোট ধাৰা ২২। ধাৰা ৪৭ চৰকাৰলৈ উদ্বৃত্তৰ বিষয়ে।"
+        },
+        "id": "ec02.test.01"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Section 8",
+              "as": "ধাৰা ৮"
+            },
+            {
+              "en": "central board",
+              "as": "কেন্দ্ৰীয় ব'ৰ্ড"
+            }
+          ],
+          [
+            {
+              "en": "Section 22",
+              "as": "ধাৰা ২২"
+            },
+            {
+              "en": "note issue",
+              "as": "নোট প্ৰচলন"
+            }
+          ],
+          [
+            {
+              "en": "Section 47",
+              "as": "ধাৰা ৪৭"
+            },
+            {
+              "en": "surplus transfer",
+              "as": "উদ্বৃত্ত হস্তান্তৰ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Three sections that exams pair with their subject.",
+          "as": "পৰীক্ষাত সোধা তিনিটা ধাৰা।"
+        },
+        "id": "ec02.test.02"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "India's minimum capital adequacy ratio is",
+          "as": "ভাৰতৰ নূন্যতম মূলধন পৰ্যাপ্ততা অনুপাত"
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "9%",
+            "as": "৯%"
+          },
+          {
+            "en": "15%",
+            "as": "১৫%"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "India sets 9%, above the global Basel 8%.",
+          "as": "ভাৰতে ৯% ধাৰ্য কৰিছে, বিশ্বৰ ৮%তকৈ বেছি।"
+        },
+        "id": "ec02.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "REER accounts for price differences between countries.",
+          "as": "REERয়ে দেশসমূহৰ দামৰ পাৰ্থক্য ধৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "That price adjustment separates REER from NEER.",
+          "as": "এই শোধনেই REERক NEERৰ পৰা পৃথক কৰে।"
+        },
+        "id": "ec02.test.04"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Since 1993 India has used a",
+          "as": "১৯৯৩ৰ পৰা ভাৰতত আছে"
+        },
+        "after": {
+          "en": "exchange rate.",
+          "as": "বিনিময় হাৰ।"
+        },
+        "options": [
+          {
+            "en": "managed float",
+            "as": "নিয়ন্ত্ৰিত ভাসমান"
+          },
+          {
+            "en": "fixed",
+            "as": "স্থিৰ"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Markets set the rate, and the RBI can step in.",
+          "as": "বজাৰে হাৰ ঠিক কৰে, RBIয়ে হস্তক্ষেপ কৰিব পাৰে।"
+        },
+        "id": "ec02.test.05"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "LERMS",
+              "as": "LERMS"
+            },
+            {
+              "en": "dual rate",
+              "as": "দ্বৈত হাৰ"
+            }
+          ],
+          [
+            {
+              "en": "NEER",
+              "as": "NEER"
+            },
+            {
+              "en": "trade-weighted basket",
+              "as": "বাণিজ্যভিত্তিক ঝুৰি"
+            }
+          ],
+          [
+            {
+              "en": "REER",
+              "as": "REER"
+            },
+            {
+              "en": "real competitiveness",
+              "as": "প্ৰকৃত প্ৰতিযোগিতা"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Three terms from the rupee story.",
+          "as": "টকাৰ কাহিনীৰ তিনিটা শব্দ।"
+        },
+        "id": "ec02.test.06"
+      }
+    ]
+  }
+}

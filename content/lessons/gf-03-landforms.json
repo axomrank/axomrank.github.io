@@ -2,7 +2,7 @@
   "id": "gf-03-landforms",
   "course": "geography-foundations",
   "no": 3,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "See land take shape",
     "as": "ভূমিৰ আকৃতি গঢ়া চোৱা"
@@ -127,8 +127,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "One rock, three lives",
+            "as": "এটা শিল, তিনিটা জীৱন"
           },
           "text": [
             {
@@ -140,10 +140,10 @@
               "as": "শিল চক্ৰৰ এটা পথত আগৰ শিলৰ পৰা ঢিলা কণা, তাৰ পৰা জমা পলস আৰু তাৰ পৰা অৱসাদী শিল হয়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-03-landforms.u1.02",
+          "figure": {
+            "kind": "rockcycle",
+            "spots": [
               {
                 "en": "Cooling melt · igneous",
                 "as": "গলিত পদাৰ্থ ঠাণ্ডা হয় · আগ্নেয়"
@@ -157,8 +157,25 @@
                 "as": "কঠিন শিল সলনি হয় · ৰূপান্তৰিত"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Compacted grains",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: চাপ খোৱা কণা"
           },
-          "id": "gf-03-landforms.u1.02"
+          "kind": "rockcycle",
+          "answer": 1,
+          "answerText": {
+            "en": "Compacted grains · sedimentary",
+            "as": "চাপ খোৱা কণা · অৱসাদী"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Compacted grains · sedimentary.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: চাপ খোৱা কণা · অৱসাদী।"
+          },
+          "id": "gf-03-landforms.u1.fig1"
         },
         {
           "type": "match",
@@ -373,8 +390,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Hill to riverbed",
+            "as": "পাহাৰৰ পৰা নদীৰ তললৈ"
           },
           "text": [
             {
@@ -386,10 +403,10 @@
               "as": "এই যাত্ৰাত শিল ভাঙে, কণা আঁতৰাই নিয়া হয় আৰু পাছত জমা হয়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-03-landforms.u2.02",
+          "figure": {
+            "kind": "grainpath",
+            "spots": [
               {
                 "en": "Weathering · in place",
                 "as": "বিচূৰ্ণীভৱন · একে ঠাইতে"
@@ -403,8 +420,25 @@
                 "as": "সঞ্চয় · জমা হয়"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Deposition",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: সঞ্চয়"
           },
-          "id": "gf-03-landforms.u2.02"
+          "kind": "grainpath",
+          "answer": 2,
+          "answerText": {
+            "en": "Deposition · settled",
+            "as": "সঞ্চয় · জমা হয়"
+          },
+          "why": {
+            "en": "Pin 3 marks this: Deposition · settled.",
+            "as": "3 নং পিনে ইয়াক দেখুৱায়: সঞ্চয় · জমা হয়।"
+          },
+          "id": "gf-03-landforms.u2.fig1"
         },
         {
           "type": "order",
@@ -630,8 +664,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "One bend, two banks",
+            "as": "এটা বাঁক, দুটা পাৰ"
           },
           "text": [
             {
@@ -643,10 +677,10 @@
               "as": "প্লাৱনভূমি নদীৰ কাষৰ চাপৰ মাটি। পানী খাতৰ বাহিৰলৈ গ’লে তাত প্লাৱন হ’ব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-03-landforms.u3.02",
+          "figure": {
+            "kind": "meander",
+            "spots": [
               {
                 "en": "Outer bank · erosion",
                 "as": "বাহিৰৰ পাৰ · খহনীয়া"
@@ -656,8 +690,25 @@
                 "as": "ভিতৰৰ পাৰ · পলস সঞ্চয়"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Outer bank",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: বাহিৰৰ পাৰ"
           },
-          "id": "gf-03-landforms.u3.02"
+          "kind": "meander",
+          "answer": 0,
+          "answerText": {
+            "en": "Outer bank · erosion",
+            "as": "বাহিৰৰ পাৰ · খহনীয়া"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Outer bank · erosion.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: বাহিৰৰ পাৰ · খহনীয়া।"
+          },
+          "id": "gf-03-landforms.u3.fig1"
         },
         {
           "type": "match",
@@ -883,8 +934,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the evidence",
-            "as": "প্ৰমাণ পঢ়া"
+            "en": "Name the sculptor",
+            "as": "ভাস্কৰক চিনাক্ত কৰা"
           },
           "text": [
             {
@@ -896,10 +947,10 @@
               "as": "ছেদচিত্ৰ আৰু তাৰ পৰিৱেশ একেলগে চালে সম্ভাব্য প্ৰক্ৰিয়া চিনিব পাৰি।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-03-landforms.u4.02",
+          "figure": {
+            "kind": "threeprofiles",
+            "spots": [
               {
                 "en": "U-shaped valley · ice",
                 "as": "U-আকৃতিৰ উপত্যকা · বৰফ"
@@ -913,8 +964,25 @@
                 "as": "উপকূলৰ থিয় গৰা · ঢৌ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Dune",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: বালিৰ ঢাপ"
           },
-          "id": "gf-03-landforms.u4.02"
+          "kind": "threeprofiles",
+          "answer": 1,
+          "answerText": {
+            "en": "Dune · wind",
+            "as": "বালিৰ ঢাপ · বতাহ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Dune · wind.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: বালিৰ ঢাপ · বতাহ।"
+          },
+          "id": "gf-03-landforms.u4.fig1"
         },
         {
           "type": "match",

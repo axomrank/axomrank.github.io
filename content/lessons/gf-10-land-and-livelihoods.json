@@ -2,7 +2,7 @@
   "id": "gf-10-land-and-livelihoods",
   "course": "geography-foundations",
   "no": 10,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Connect land and livelihoods",
     "as": "ভূমি আৰু জীৱিকা সংযোগ কৰা"
@@ -92,8 +92,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read the soil clues",
-            "as": "মাটিৰ সংকেত পঢ়া"
+            "en": "Soil has an address",
+            "as": "মাটিৰো ঠিকনা আছে"
           },
           "text": [
             {
@@ -105,10 +105,10 @@
               "as": "দাক্ষিণাত্যৰ কিছু অংশত ক’লা মাটি সাধাৰণ। এই মাটিত প্ৰায়ে বোকামাটিৰ কণা বেছি আৰু ই আৰ্দ্ৰতা ধৰি ৰাখে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-10-land-and-livelihoods.u1.01",
+          "figure": {
+            "kind": "soils",
+            "spots": [
               {
                 "en": "Alluvial · river deposits",
                 "as": "পলসুৱা · নদীৰ পলস"
@@ -118,14 +118,13 @@
                 "as": "ক’লা · প্ৰায়ে বোকামাটি বেছি"
               }
             ]
-          },
-          "id": "gf-10-land-and-livelihoods.u1.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Dig two soil pits",
+            "as": "মাটিৰ দুটা গাঁত খন্দা"
           },
           "text": [
             {
@@ -137,21 +136,38 @@
               "as": "মাটিৰ গুণ বেলেগ বেলেগ। শস্যৰ সিদ্ধান্তৰ আগতে মাটিৰ গঠন, পানী আৰু স্থানীয় অৱস্থা তুলনা কৰা।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Black · often clay-rich",
-                "as": "ক’লা · প্ৰায়ে বোকামাটি বেছি"
-              },
+          "id": "gf-10-land-and-livelihoods.u1.02",
+          "figure": {
+            "kind": "soilcut",
+            "spots": [
               {
                 "en": "Alluvial · river deposits",
                 "as": "পলসুৱা · নদীৰ পলস"
+              },
+              {
+                "en": "Black · often clay-rich",
+                "as": "ক’লা · প্ৰায়ে বোকামাটি বেছি"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Black",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: ক’লা"
           },
-          "id": "gf-10-land-and-livelihoods.u1.02"
+          "kind": "soilcut",
+          "answer": 1,
+          "answerText": {
+            "en": "Black · often clay-rich",
+            "as": "ক’লা · প্ৰায়ে বোকামাটি বেছি"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Black · often clay-rich.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: ক’লা · প্ৰায়ে বোকামাটি বেছি।"
+          },
+          "id": "gf-10-land-and-livelihoods.u1.fig1"
         },
         {
           "type": "match",
@@ -317,8 +333,8 @@
         {
           "type": "story",
           "title": {
-            "en": "From wet forest to thorn scrub",
-            "as": "সেমেকা অৰণ্যৰ পৰা কাঁইটীয়া জোপোহালৈ"
+            "en": "Rain writes the forest",
+            "as": "বৰষুণে অৰণ্য লিখে"
           },
           "text": [
             {
@@ -330,10 +346,13 @@
               "as": "বহু পৰ্ণপাতী গছে শুকান ঋতুত পাত সৰায়। অধিক শুকান পৰিৱেশত কাঁইটীয়া জোপোহা হ’ব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-10-land-and-livelihoods.u2.01",
+          "figure": {
+            "kind": "raingradient",
+            "spots": [
               {
                 "en": "Wet region · evergreen example",
                 "as": "সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ"
@@ -347,17 +366,13 @@
                 "as": "জোৱাৰ-ভাটাৰ উপকূল · মেংগ্ৰোভ"
               }
             ]
-          },
-          "link": {
-            "unit": "u1"
-          },
-          "id": "gf-10-land-and-livelihoods.u2.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Find three green worlds",
+            "as": "তিনিটা সেউজ জগত বিচাৰা"
           },
           "text": [
             {
@@ -369,25 +384,42 @@
               "as": "মাটি আৰু মানুহৰ ভূমি ব্যৱহাৰৰ লগতে বৰষুণ আৰু বাসস্থানৰ সংকেতে উদ্ভিদৰ ধাৰা বুজোৱাত সহায় কৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-10-land-and-livelihoods.u2.02",
+          "figure": {
+            "kind": "vegmap",
+            "spots": [
               {
-                "en": "Tidal coast · mangroves",
-                "as": "জোৱাৰ-ভাটাৰ উপকূল · মেংগ্ৰোভ"
+                "en": "Wet region · evergreen example",
+                "as": "সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ"
               },
               {
                 "en": "Dry region · thorn example",
                 "as": "শুকান অঞ্চল · কাঁইটীয়া উদাহৰণ"
               },
               {
-                "en": "Wet region · evergreen example",
-                "as": "সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ"
+                "en": "Tidal coast · mangroves",
+                "as": "জোৱাৰ-ভাটাৰ উপকূল · মেংগ্ৰোভ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Wet region",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: সেমেকা অঞ্চল"
           },
-          "id": "gf-10-land-and-livelihoods.u2.02"
+          "kind": "vegmap",
+          "answer": 0,
+          "answerText": {
+            "en": "Wet region · evergreen example",
+            "as": "সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Wet region · evergreen example.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: সেমেকা অঞ্চল · চিৰসেউজ উদাহৰণ।"
+          },
+          "id": "gf-10-land-and-livelihoods.u2.fig1"
         },
         {
           "type": "match",
@@ -553,8 +585,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Read a crop table",
-            "as": "শস্যৰ তালিকা পঢ়া"
+            "en": "Nearly a dead heat",
+            "as": "প্ৰায় সমানে সমান"
           },
           "text": [
             {
@@ -566,10 +598,13 @@
               "as": "ধান খাৰিফৰ আৰু ঘেঁহু ৰবিৰ এটা সাধাৰণ উদাহৰণ। কিছুমান শস্য আন ঋতুতো খেতি কৰা হয়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-10-land-and-livelihoods.u3.01",
+          "figure": {
+            "kind": "cropbars",
+            "spots": [
               {
                 "en": "Kharif foodgrains · 169.46 million tonnes",
                 "as": "খাৰিফ খাদ্যশস্য · ১৬৯.৪৬ নিযুত টন"
@@ -579,17 +614,13 @@
                 "as": "ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন"
               }
             ]
-          },
-          "link": {
-            "unit": "u2"
-          },
-          "id": "gf-10-land-and-livelihoods.u3.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Two harvests, one year",
+            "as": "দুটা শস্য, এটা বছৰ"
           },
           "text": [
             {
@@ -601,21 +632,38 @@
               "as": "২০২৪–২৫ৰ দেশীয় তালিকাত খাৰিফ খাদ্যশস্য ১৬৯.৪৬ নিযুত টন আৰু ৰবি খাদ্যশস্য ১৬৯.১৭ নিযুত টন।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Rabi foodgrains · 169.17 million tonnes",
-                "as": "ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন"
-              },
+          "id": "gf-10-land-and-livelihoods.u3.02",
+          "figure": {
+            "kind": "cropcalendar",
+            "spots": [
               {
                 "en": "Kharif foodgrains · 169.46 million tonnes",
                 "as": "খাৰিফ খাদ্যশস্য · ১৬৯.৪৬ নিযুত টন"
+              },
+              {
+                "en": "Rabi foodgrains · 169.17 million tonnes",
+                "as": "ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Rabi foodgrains",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: ৰবি খাদ্যশস্য"
           },
-          "id": "gf-10-land-and-livelihoods.u3.02"
+          "kind": "cropcalendar",
+          "answer": 1,
+          "answerText": {
+            "en": "Rabi foodgrains · 169.17 million tonnes",
+            "as": "ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Rabi foodgrains · 169.17 million tonnes.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: ৰবি খাদ্যশস্য · ১৬৯.১৭ নিযুত টন।"
+          },
+          "id": "gf-10-land-and-livelihoods.u3.fig1"
         },
         {
           "type": "match",
@@ -781,8 +829,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Where people settle",
-            "as": "মানুহ ক’ত বসতি কৰে"
+            "en": "Same people, smaller area",
+            "as": "একে মানুহ, সৰু কালি"
           },
           "text": [
             {
@@ -794,30 +842,29 @@
               "as": "একে জনসংখ্যাৰ দুটা ঠাইৰ ক্ষেত্ৰফল বেলেগ হ’লে জনঘনত্ব বেলেগ হ’ব পাৰে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Density · people ÷ area",
-                "as": "জনঘনত্ব · মানুহ ÷ ক্ষেত্ৰফল"
-              },
-              {
-                "en": "Settlement · routes and terrain",
-                "as": "বসতি · পথ আৰু ভূমি"
-              }
-            ]
-          },
           "link": {
             "unit": "u3"
           },
-          "id": "gf-10-land-and-livelihoods.u4.01"
+          "id": "gf-10-land-and-livelihoods.u4.01",
+          "figure": {
+            "kind": "density",
+            "spots": [
+              {
+                "en": "Small area · higher density",
+                "as": "সৰু কালি · অধিক ঘনত্ব"
+              },
+              {
+                "en": "Large area · lower density",
+                "as": "ডাঙৰ কালি · কম ঘনত্ব"
+              }
+            ]
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Why villages sit there",
+            "as": "গাঁও তাতেই কিয়"
           },
           "text": [
             {
@@ -829,21 +876,38 @@
               "as": "ৰাস্তা আৰু পাৰাপাৰে বসতিৰ ধাৰা বুজোৱাত সহায় কৰে। ভূমি আৰু বানৰ উন্মুক্ততাই অতিৰিক্ত সংকেত দিয়ে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-10-land-and-livelihoods.u4.02",
+          "figure": {
+            "kind": "settlement",
+            "spots": [
               {
-                "en": "Settlement · routes and terrain",
-                "as": "বসতি · পথ আৰু ভূমি"
+                "en": "Cluster · near river and route",
+                "as": "গোট · নদী আৰু পথৰ ওচৰত"
               },
               {
-                "en": "Density · people ÷ area",
-                "as": "জনঘনত্ব · মানুহ ÷ ক্ষেত্ৰফল"
+                "en": "Road · links settlements",
+                "as": "পথ · বসতি সংযোগ কৰে"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Cluster",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: গোট"
           },
-          "id": "gf-10-land-and-livelihoods.u4.02"
+          "kind": "settlement",
+          "answer": 0,
+          "answerText": {
+            "en": "Cluster · near river and route",
+            "as": "গোট · নদী আৰু পথৰ ওচৰত"
+          },
+          "why": {
+            "en": "Pin 1 marks this: Cluster · near river and route.",
+            "as": "1 নং পিনে ইয়াক দেখুৱায়: গোট · নদী আৰু পথৰ ওচৰত।"
+          },
+          "id": "gf-10-land-and-livelihoods.u4.fig1"
         },
         {
           "type": "match",

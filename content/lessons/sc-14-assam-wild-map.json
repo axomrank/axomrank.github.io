@@ -1,0 +1,667 @@
+{
+  "id": "sc-14-assam-wild-map",
+  "course": "general-science",
+  "no": 14,
+  "version": 1,
+  "king": {
+    "en": "Assam’s wild map",
+    "as": "অসমৰ বন্য মানচিত্ৰ"
+  },
+  "reign": {
+    "en": "Environment",
+    "as": "পৰিৱেশ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Assam Forest Department",
+      "url": "https://forest.assam.gov.in/",
+      "used_for": "Protected areas, reserves and corridors"
+    }
+  ],
+  "checkedOn": "2026-11-07",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Reserves with a name",
+        "as": "নামেৰে চিনাকি সংৰক্ষণ"
+      },
+      "icon": "leaf",
+      "learned": [
+        {
+          "en": "Assam has four tiger reserves: Manas, Orang, Kaziranga and Nameri.",
+          "as": "অসমৰ চাৰিটা ব্যাঘ্ৰ সংৰক্ষণ: মানাহ, ওৰাং, কাজিৰঙা আৰু নামেৰি।"
+        },
+        {
+          "en": "Its five elephant reserves are Kaziranga, Dehing Patkai, Sonitpur, Chirang-Ripu and Dhansiri-Lungding.",
+          "as": "পাঁচটা হাতী সংৰক্ষণ: কাজিৰঙা, দেহিং পাটকাই, শোণিতপুৰ, চিৰাং-ৰিপু আৰু ধনশিৰি-লুংডিং।"
+        },
+        {
+          "en": "Chakrashila and Kakoijana protect the golden langur. Bornadi guards the pygmy hog and hispid hare.",
+          "as": "চক্ৰশিলা আৰু কাকইজানাই সোণালী বান্দৰ ৰক্ষা কৰে। বৰনদীয়ে নিগনি গাহৰি আৰু খৰহাকৈ ৰক্ষা কৰে।"
+        },
+        {
+          "en": "Hollongapar is known for the hoolock gibbon, and Marat Longri, at 451 km², is among the largest sanctuaries.",
+          "as": "হোলোঙাপাৰ হোলৌ বান্দৰৰ বাবে জনাজাত, ৪৫১ বৰ্গ কি.মি.ৰ মাৰাট লংৰি ডাঙৰ অভয়াৰণ্যৰ এখন।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Four tigers, five elephants",
+            "as": "চাৰি বাঘ, পাঁচ হাতী"
+          },
+          "text": [
+            {
+              "en": "Assam has four tiger reserves: Manas, Orang, Kaziranga and Nameri.",
+              "as": "অসমৰ চাৰিটা ব্যাঘ্ৰ সংৰক্ষণ: মানাহ, ওৰাং, কাজিৰঙা আৰু নামেৰি।"
+            },
+            {
+              "en": "Its five elephant reserves are Kaziranga, Dehing Patkai, Sonitpur, Chirang-Ripu and Dhansiri-Lungding.",
+              "as": "পাঁচটা হাতী সংৰক্ষণ: কাজিৰঙা, দেহিং পাটকাই, শোণিতপুৰ, চিৰাং-ৰিপু আৰু ধনশিৰি-লুংডিং।"
+            }
+          ],
+          "figure": {
+            "kind": "line4",
+            "spots": [
+              {
+                "en": "Manas",
+                "as": "মানাহ"
+              },
+              {
+                "en": "Orang",
+                "as": "ওৰাং"
+              },
+              {
+                "en": "Kaziranga",
+                "as": "কাজিৰঙা"
+              },
+              {
+                "en": "Nameri",
+                "as": "নামেৰি"
+              }
+            ]
+          },
+          "id": "sc14.u1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Nameri is a tiger reserve in Assam.",
+            "as": "নামেৰি অসমৰ ব্যাঘ্ৰ সংৰক্ষণ।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It is one of the four.",
+            "as": "চাৰিটাৰ এটা।"
+          },
+          "id": "sc14.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "A species for a sanctuary",
+            "as": "অভয়াৰণ্যৰ এটা প্ৰাণী"
+          },
+          "text": [
+            {
+              "en": "Chakrashila and Kakoijana protect the golden langur. Bornadi guards the pygmy hog and hispid hare.",
+              "as": "চক্ৰশিলা আৰু কাকইজানাই সোণালী বান্দৰ ৰক্ষা কৰে। বৰনদীয়ে নিগনি গাহৰি আৰু খৰহাকৈ ৰক্ষা কৰে।"
+            },
+            {
+              "en": "Hollongapar is known for the hoolock gibbon, and Marat Longri, at 451 km², is among the largest sanctuaries.",
+              "as": "হোলোঙাপাৰ হোলৌ বান্দৰৰ বাবে জনাজাত, ৪৫১ বৰ্গ কি.মি.ৰ মাৰাট লংৰি ডাঙৰ অভয়াৰণ্যৰ এখন।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "Chakrashila · golden langur",
+                "as": "চক্ৰশিলা · সোণালী বান্দৰ"
+              },
+              {
+                "en": "Bornadi · pygmy hog",
+                "as": "বৰনদী · নিগনি গাহৰি"
+              },
+              {
+                "en": "Hollongapar · gibbon",
+                "as": "হোলোঙাপাৰ · হোলৌ"
+              }
+            ]
+          },
+          "id": "sc14.u1.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Chakrashila",
+                "as": "চক্ৰশিলা"
+              },
+              {
+                "en": "golden langur",
+                "as": "সোণালী বান্দৰ"
+              }
+            ],
+            [
+              {
+                "en": "Bornadi",
+                "as": "বৰনদী"
+              },
+              {
+                "en": "pygmy hog",
+                "as": "নিগনি গাহৰি"
+              }
+            ],
+            [
+              {
+                "en": "Hollongapar",
+                "as": "হোলোঙাপাৰ"
+              },
+              {
+                "en": "hoolock gibbon",
+                "as": "হোলৌ বান্দৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Link each place with its flagship animal.",
+            "as": "প্ৰতিটো ঠাইৰ চিনাকি প্ৰাণী মিলোৱা।"
+          },
+          "id": "sc14.u1.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Assam has",
+            "as": "অসমৰ"
+          },
+          "after": {
+            "en": "elephant reserves.",
+            "as": " হাতী সংৰক্ষণ।"
+          },
+          "options": [
+            {
+              "en": "five",
+              "as": "পাঁচটা"
+            },
+            {
+              "en": "nine",
+              "as": "ন টা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "From Kaziranga to Dhansiri-Lungding.",
+            "as": "কাজিৰঙাৰ পৰা ধনশিৰি-লুংডিংলৈ।"
+          },
+          "id": "sc14.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a tiger reserve?",
+            "as": "কোনটো ব্যাঘ্ৰ সংৰক্ষণ নহয়?"
+          },
+          "options": [
+            {
+              "en": "Sonitpur",
+              "as": "শোণিতপুৰ"
+            },
+            {
+              "en": "Manas",
+              "as": "মানাহ"
+            },
+            {
+              "en": "Orang",
+              "as": "ওৰাং"
+            },
+            {
+              "en": "Nameri",
+              "as": "নামেৰি"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Sonitpur is an elephant reserve.",
+            "as": "শোণিতপুৰ হাতী সংৰক্ষণ।"
+          },
+          "id": "sc14.u1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Hollongapar",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: হোলোঙাপাৰ"
+          },
+          "kind": "hub3",
+          "answer": 2,
+          "answerText": {
+            "en": "Hollongapar · gibbon",
+            "as": "হোলোঙাপাৰ · হোলৌ"
+          },
+          "why": {
+            "en": "Pin 3: Hollongapar · gibbon.",
+            "as": "3 নং পিন: হোলোঙাপাৰ · হোলৌ।"
+          },
+          "id": "sc14.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Beels and animal corridors",
+        "as": "বিল আৰু জন্তুৰ পথ"
+      },
+      "icon": "river",
+      "learned": [
+        {
+          "en": "Son Beel in Cachar and Hailakandi is Assam’s largest wetland. Deepor Beel beside Guwahati is its Ramsar site.",
+          "as": "কাছাৰ আৰু হাইলাকান্দিৰ শোণ বিল অসমৰ বৃহত্তম জলাভূমি। গুৱাহাটীৰ কাষৰ দীপৰ বিল ৰামছাৰ ক্ষেত্ৰ।"
+        },
+        {
+          "en": "Urpad Beel lies in Goalpara and Chandubi near the Kamrup–Meghalaya edge. Maguri Motapung is in Tinsukia.",
+          "as": "উৰপাদ বিল গোৱালপাৰাত, চান্দুবি কামৰূপ–মেঘালয়ৰ দাঁতিত। মাগুৰি মটাপুং তিনিচুকীয়াত।"
+        },
+        {
+          "en": "In flood, Kaziranga’s animals climb to the Karbi Anglong hills through corridors.",
+          "as": "বানৰ সময়ত কাজিৰঙাৰ জন্তু কাৰ্বি আংলঙলৈ পথেৰে উঠে।"
+        },
+        {
+          "en": "Panbari, Haldibari and Kanchanjuri are the corridors that link park and hills across the highway.",
+          "as": "পানবাৰী, হলদীবাৰী আৰু কাঞ্চনজুৰি ঘাইপথৰ সিপাৰে উদ্যান আৰু পাহাৰ সংযোগ কৰে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Assam's lake country",
+            "as": "অসমৰ বিলৰ দেশ"
+          },
+          "text": [
+            {
+              "en": "Son Beel in Cachar and Hailakandi is Assam’s largest wetland. Deepor Beel beside Guwahati is its Ramsar site.",
+              "as": "কাছাৰ আৰু হাইলাকান্দিৰ শোণ বিল অসমৰ বৃহত্তম জলাভূমি। গুৱাহাটীৰ কাষৰ দীপৰ বিল ৰামছাৰ ক্ষেত্ৰ।"
+            },
+            {
+              "en": "Urpad Beel lies in Goalpara and Chandubi near the Kamrup–Meghalaya edge. Maguri Motapung is in Tinsukia.",
+              "as": "উৰপাদ বিল গোৱালপাৰাত, চান্দুবি কামৰূপ–মেঘালয়ৰ দাঁতিত। মাগুৰি মটাপুং তিনিচুকীয়াত।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "Son Beel · Cachar",
+                "as": "শোণ বিল · কাছাৰ"
+              },
+              {
+                "en": "Deepor Beel · Ramsar",
+                "as": "দীপৰ বিল · ৰামছাৰ"
+              },
+              {
+                "en": "Urpad · Goalpara",
+                "as": "উৰপাদ · গোৱালপাৰা"
+              }
+            ]
+          },
+          "id": "sc14.u2.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Son Beel is Assam's only Ramsar site.",
+            "as": "শোণ বিল অসমৰ একমাত্ৰ ৰামছাৰ ক্ষেত্ৰ।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Deepor Beel holds that status.",
+            "as": "দীপৰ বিলৰহে সেই মৰ্যাদা।"
+          },
+          "id": "sc14.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Roads for elephants",
+            "as": "হাতীৰ বাট"
+          },
+          "text": [
+            {
+              "en": "In flood, Kaziranga’s animals climb to the Karbi Anglong hills through corridors.",
+              "as": "বানৰ সময়ত কাজিৰঙাৰ জন্তু কাৰ্বি আংলঙলৈ পথেৰে উঠে।"
+            },
+            {
+              "en": "Panbari, Haldibari and Kanchanjuri are the corridors that link park and hills across the highway.",
+              "as": "পানবাৰী, হলদীবাৰী আৰু কাঞ্চনজুৰি ঘাইপথৰ সিপাৰে উদ্যান আৰু পাহাৰ সংযোগ কৰে।"
+            }
+          ],
+          "figure": {
+            "kind": "pillars3",
+            "spots": [
+              {
+                "en": "Panbari",
+                "as": "পানবাৰী"
+              },
+              {
+                "en": "Haldibari",
+                "as": "হলদীবাৰী"
+              },
+              {
+                "en": "Kanchanjuri",
+                "as": "কাঞ্চনজুৰি"
+              }
+            ]
+          },
+          "id": "sc14.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Son Beel",
+                "as": "শোণ বিল"
+              },
+              {
+                "en": "Cachar",
+                "as": "কাছাৰ"
+              }
+            ],
+            [
+              {
+                "en": "Urpad Beel",
+                "as": "উৰপাদ বিল"
+              },
+              {
+                "en": "Goalpara",
+                "as": "গোৱালপাৰা"
+              }
+            ],
+            [
+              {
+                "en": "Maguri Motapung",
+                "as": "মাগুৰি মটাপুং"
+              },
+              {
+                "en": "Tinsukia",
+                "as": "তিনিচুকীয়া"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Beels mapped to districts.",
+            "as": "জিলা অনুসৰি বিল।"
+          },
+          "id": "sc14.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Animals leave Kaziranga in floods for the",
+            "as": "বানত জন্তু কাজিৰঙাৰ পৰা যায়"
+          },
+          "after": {
+            "en": "hills.",
+            "as": " পাহাৰলৈ।"
+          },
+          "options": [
+            {
+              "en": "Karbi Anglong",
+              "as": "কাৰ্বি আংলং"
+            },
+            {
+              "en": "Barail",
+              "as": "বৰাইল"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Corridors cross the highway to Karbi Anglong.",
+            "as": "পথবোৰে ঘাইপথ পাৰ হৈ কাৰ্বি আংলং পায়।"
+          },
+          "id": "sc14.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a Kaziranga corridor?",
+            "as": "কোনটো কাজিৰঙাৰ পথ?"
+          },
+          "options": [
+            {
+              "en": "Panbari",
+              "as": "পানবাৰী"
+            },
+            {
+              "en": "Chandubi",
+              "as": "চান্দুবি"
+            },
+            {
+              "en": "Deepor",
+              "as": "দীপৰ"
+            },
+            {
+              "en": "Orang",
+              "as": "ওৰাং"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Panbari links the park and hills.",
+            "as": "পানবাৰীয়ে উদ্যান আৰু পাহাৰ সংযোগ কৰে।"
+          },
+          "id": "sc14.u2.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Panbari",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: পানবাৰী"
+          },
+          "kind": "pillars3",
+          "answer": 0,
+          "answerText": {
+            "en": "Panbari",
+            "as": "পানবাৰী"
+          },
+          "why": {
+            "en": "Pin 1: Panbari.",
+            "as": "1 নং পিন: পানবাৰী।"
+          },
+          "id": "sc14.u2.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "Nameri is a tiger reserve in Assam.",
+          "as": "নামেৰি অসমৰ ব্যাঘ্ৰ সংৰক্ষণ।"
+        },
+        "answer": true,
+        "why": {
+          "en": "It is one of the four.",
+          "as": "চাৰিটাৰ এটা।"
+        },
+        "id": "sc14.test.01"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Chakrashila",
+              "as": "চক্ৰশিলা"
+            },
+            {
+              "en": "golden langur",
+              "as": "সোণালী বান্দৰ"
+            }
+          ],
+          [
+            {
+              "en": "Bornadi",
+              "as": "বৰনদী"
+            },
+            {
+              "en": "pygmy hog",
+              "as": "নিগনি গাহৰি"
+            }
+          ],
+          [
+            {
+              "en": "Hollongapar",
+              "as": "হোলোঙাপাৰ"
+            },
+            {
+              "en": "hoolock gibbon",
+              "as": "হোলৌ বান্দৰ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Link each place with its flagship animal.",
+          "as": "প্ৰতিটো ঠাইৰ চিনাকি প্ৰাণী মিলোৱা।"
+        },
+        "id": "sc14.test.02"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Assam has",
+          "as": "অসমৰ"
+        },
+        "after": {
+          "en": "elephant reserves.",
+          "as": " হাতী সংৰক্ষণ।"
+        },
+        "options": [
+          {
+            "en": "five",
+            "as": "পাঁচটা"
+          },
+          {
+            "en": "nine",
+            "as": "ন টা"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "From Kaziranga to Dhansiri-Lungding.",
+          "as": "কাজিৰঙাৰ পৰা ধনশিৰি-লুংডিংলৈ।"
+        },
+        "id": "sc14.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Son Beel is Assam's only Ramsar site.",
+          "as": "শোণ বিল অসমৰ একমাত্ৰ ৰামছাৰ ক্ষেত্ৰ।"
+        },
+        "answer": false,
+        "why": {
+          "en": "Deepor Beel holds that status.",
+          "as": "দীপৰ বিলৰহে সেই মৰ্যাদা।"
+        },
+        "id": "sc14.test.04"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Son Beel",
+              "as": "শোণ বিল"
+            },
+            {
+              "en": "Cachar",
+              "as": "কাছাৰ"
+            }
+          ],
+          [
+            {
+              "en": "Urpad Beel",
+              "as": "উৰপাদ বিল"
+            },
+            {
+              "en": "Goalpara",
+              "as": "গোৱালপাৰা"
+            }
+          ],
+          [
+            {
+              "en": "Maguri Motapung",
+              "as": "মাগুৰি মটাপুং"
+            },
+            {
+              "en": "Tinsukia",
+              "as": "তিনিচুকীয়া"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Beels mapped to districts.",
+          "as": "জিলা অনুসৰি বিল।"
+        },
+        "id": "sc14.test.05"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Animals leave Kaziranga in floods for the",
+          "as": "বানত জন্তু কাজিৰঙাৰ পৰা যায়"
+        },
+        "after": {
+          "en": "hills.",
+          "as": " পাহাৰলৈ।"
+        },
+        "options": [
+          {
+            "en": "Karbi Anglong",
+            "as": "কাৰ্বি আংলং"
+          },
+          {
+            "en": "Barail",
+            "as": "বৰাইল"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Corridors cross the highway to Karbi Anglong.",
+          "as": "পথবোৰে ঘাইপথ পাৰ হৈ কাৰ্বি আংলং পায়।"
+        },
+        "id": "sc14.test.06"
+      }
+    ]
+  }
+}
