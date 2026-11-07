@@ -368,7 +368,63 @@ document.addEventListener("click", async (e) => {
   if ((b = e.target.closest("[data-del]"))) { await AXOM.auth.social.remove(b.dataset.del.split("/")).catch((err) => console.warn(err)); $("#sheet-root").innerHTML = ""; return; }
   if ((b = e.target.closest("[data-report]"))) { const msg = MSGS[b.dataset.report]; await AXOM.auth.social.report(msg, b.dataset.where).then(() => toast(T(B("Reported. Thank you.", "জনোৱা হ'ল। ধন্যবাদ।")))).catch(() => toast(T(B("Could not report. Try again.", "জনাব পৰা নগ'ল।")))); $("#sheet-root").innerHTML = ""; }
 });
+/* ---------- first visit: four short screens, then straight into the first lesson ----------
+   1 language · 2 exam · 3 daily goal · 4 how it works + Start. Shown once (G.game.onboarded); Skip is always there. */
+const ONB = { step: 0 };
+const GOALS = [[10, B("Casual", "সহজ"), B("about 3 min a day", "দিনে প্ৰায় ৩ মিনিট")], [30, B("Regular", "নিয়মীয়া"), B("about 10 min a day", "দিনে প্ৰায় ১০ মিনিট")], [50, B("Serious", "গুৰুত্বসহকাৰে"), B("about 15 min a day", "দিনে প্ৰায় ১৫ মিনিট")], [100, B("Intense", "তীব্ৰ"), B("about 30 min a day", "দিনে প্ৰায় ৩০ মিনিট")]];
+async function onboarding() {
+  const D = await load(), cat = D.cat, s = ONB.step;
+  const dots = `<div class="onb-dots">${[0, 1, 2, 3].map((k) => `<i class="${k === s ? "on" : k < s ? "done" : ""}"></i>`).join("")}</div>`;
+  const top = `<div class="onb-top">${s ? `<button class="icon-btn" data-onb-back aria-label="Back">${ICON.arrowBack}</button>` : "<span></span>"}${dots}<button class="onb-skip" data-onb-skip>${T(B("Skip", "এৰি যোৱা"))}</button></div>`;
+  let body = "";
+  if (s === 0) body = `<div class="onb-hero">${ROOF}<div class="onb-logo">অ</div><h1>Axomrank</h1><p>${T(B("Prepare for Assam government exams in short, game-like lessons. Free, in English and Assamese.", "চুটি, খেলৰ দৰে পাঠেৰে অসম চৰকাৰী পৰীক্ষাৰ প্ৰস্তুতি। বিনামূলীয়া, ইংৰাজী আৰু অসমীয়াত।"))}</p></div>
+    <h2 class="onb-q">${T(B("Which language do you prefer?", "কোন ভাষা ভাল পোৱা?"))}</h2>
+    <div class="onb-opts"><button class="onb-opt ${G.as ? "" : "on"}" data-onb-lang="en"><span class="o-ic">Aa</span><b>English</b></button><button class="onb-opt ${G.as ? "on" : ""}" data-onb-lang="as"><span class="o-ic">অ</span><b>অসমীয়া</b></button></div>
+    <p class="onb-hint">${T(B("You can switch any time with EN / অসমীয়া at the top.", "ওপৰৰ EN / অসমীয়া টিপি যিকোনো সময়তে সলনি কৰিব পাৰা।"))}</p>`;
+  if (s === 1) body = `<h2 class="onb-q big">${T(B("Which exam are you preparing for?", "কোন পৰীক্ষাৰ বাবে প্ৰস্তুতি কৰিছা?"))}</h2><p class="onb-sub">${T(B("We'll put the subjects for your exam first.", "তোমাৰ পৰীক্ষাৰ বিষয়বোৰ আগত দেখুওৱা হ'ব।"))}</p>
+    <div class="onb-opts col">${[...cat.exams.map((x) => [x.id, x.t]), ["", B("Not decided yet", "এতিয়াও ঠিক কৰা নাই")]].map(([id, t]) => `<button class="onb-opt row ${(UI.exam || "") === id && ONB.exam ? "on" : ""}" data-onb-exam="${id}"><span class="o-ic">${id ? "🎯" : "🤔"}</span><b>${T(t)}</b><span class="o-go">›</span></button>`).join("")}</div>`;
+  if (s === 2) body = `<h2 class="onb-q big">${T(B("How much time can you give each day?", "দিনে কিমান সময় দিব পাৰিবা?"))}</h2><p class="onb-sub">${T(B("Small and daily beats long and rare. You can change this later in Profile.", "সৰু কিন্তু প্ৰতিদিনে পঢ়াটো দীঘল কিন্তু কেতিয়াবা পঢ়াতকৈ ভাল। পিছত প্ৰফাইলত সলনি কৰিব পাৰিবা।"))}</p>
+    <div class="onb-opts col">${GOALS.map(([v, t, d]) => `<button class="onb-opt row ${G.game.goal === v && ONB.goal ? "on" : ""}" data-onb-goal="${v}"><span class="o-ic">${{ 10: "🌱", 30: "📘", 50: "🔥", 100: "🚀" }[v]}</span><span class="o-t"><b>${T(t)}</b><small>${T(d)} · ${N(v)} XP</small></span><span class="o-go">›</span></button>`).join("")}</div>`;
+  if (s === 3) {
+    const a = await AXOM.nextAction().catch(() => null);
+    const step = (ic, t, d) => `<div class="how"><span class="h-ic">${ic}</span><span><b>${T(t)}</b><small>${T(d)}</small></span></div>`;
+    body = `<h2 class="onb-q big">${T(B("Here's how it works", "এনেদৰে চলে"))}</h2>
+      <div class="how-list">
+        ${step("👆", B("Just tap Start", "কেৱল Start টিপা"), B("Every time you open the app, it takes you to exactly what to study next. No planning needed.", "এপ খুলিলেই পিছত কি পঢ়িব লাগে তাতে লৈ যায়। একো ভাবিব নালাগে।"))}
+        ${step("⏱️", B("Short units", "চুটি অধ্যায়"), B("A short story, then 5–7 quick questions. Each answer explains why.", "এটা চুটি কাহিনী, তাৰ পিছত ৫–৭টা প্ৰশ্ন। প্ৰতিটো উত্তৰৰ কাৰণ দিয়া থাকে।"))}
+        ${step("🧠", B("Daily memory mission", "দৈনিক স্মৃতি অভিযান"), B("What you learned comes back after 1, 3 and 7 days, so you don't forget it.", "যি শিকিলা সেয়া ১, ৩ আৰু ৭ দিনৰ পিছত উভতি আহে, যাতে নাপাহৰা।"))}
+        ${step("🔥", B("XP, levels and streaks", "XP, স্তৰ আৰু ধাৰা"), B("Earn XP, level up, collect badges and keep your daily streak alive.", "XP অৰ্জন কৰা, স্তৰ বঢ়োৱা, বেজ গোটোৱা আৰু দৈনিক ধাৰা ৰাখা।"))}
+      </div>
+      ${a && a.title ? `<div class="onb-first"><small>${T(B("Your first lesson", "তোমাৰ প্ৰথম পাঠ"))}</small><b>${T(a.title)}</b></div>` : ""}`;
+  }
+  const foot = s === 0 ? `<button class="btn" data-onb-next>${T(B("Continue", "আগবাঢ়া"))}</button>`
+    : s === 3 ? `<button class="btn onb-start" data-onb-start>${T(B("Start my first lesson", "মোৰ প্ৰথম পাঠ আৰম্ভ কৰা"))}${ICON.arrow}</button>${(window.AXOM_CONFIG || {}).firebase && !AXOM.auth.user ? `<button class="btn-ghost" data-signin>${T(B("I have an account · Sign in with Google", "মোৰ একাউণ্ট আছে · Google ৰে চাইন ইন"))}</button>` : ""}` : "";
+  let el = $("#onb");
+  if (!el) { el = document.createElement("div"); el.id = "onb"; el.className = "onb"; $(".device").append(el); }
+  el.innerHTML = `${top}<div class="onb-body" key="${s}">${body}</div><div class="onb-foot">${foot}</div>`;
+}
+function onbDone(go) {
+  G.game.onboarded = true; AXOM.saveGlobal();
+  const el = $("#onb"); if (el) el.remove();
+  if (go) AXOM.nextAction().then((a) => { location.href = a && a.kind !== "done" ? a.href : "index.html"; }).catch(() => render());
+  else render();
+}
+document.addEventListener("click", (e) => {
+  if (!$("#onb")) return;
+  let b;
+  if ((b = e.target.closest("[data-onb-lang]"))) { const as = b.dataset.onbLang === "as", box = $("#as"); box.checked = as; box.dispatchEvent(new Event("change")); ONB.step = 1; return onboarding(); }
+  if ((b = e.target.closest("[data-onb-exam]"))) { UI.exam = b.dataset.onbExam; saveUI(); ONB.exam = true; ONB.step = 2; return onboarding(); }
+  if ((b = e.target.closest("[data-onb-goal]"))) { G.game.goal = +b.dataset.onbGoal; AXOM.saveGlobal(); ONB.goal = true; ONB.step = 3; return onboarding(); }
+  if (e.target.closest("[data-onb-next]")) { ONB.step = Math.min(3, ONB.step + 1); return onboarding(); }
+  if (e.target.closest("[data-onb-back]")) { ONB.step = Math.max(0, ONB.step - 1); return onboarding(); }
+  if (e.target.closest("[data-onb-skip]")) return onbDone(false);
+  if (e.target.closest("[data-onb-start]")) return onbDone(true);
+});
+
 async function render() {
+  // a learner with progress from before onboarding existed never sees it
+  if (!G.game.onboarded && (G.xp > 0 || AXOM.lessonsFinished())) { G.game.onboarded = true; AXOM.saveGlobal(); }
+  if (!G.game.onboarded && !VIEW && !CID && !SID) { await homePage(); return onboarding(); }
   if (VIEW) return VIEW === "practice" ? practicePage() : VIEW === "community" ? communityPage() : profilePage();
   // Opening the app lands straight in what to do next (once per visit; Home stays reachable from the bar).
   if (!CID && !SID && !location.search && G.game.auto !== false && G.xp > 0 && !sessionStorage.getItem("axom:landed")) {
