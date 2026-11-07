@@ -21,7 +21,7 @@ The build stamps a new version into `sw.js`, so phones replace old app files on 
 
 ## Firestore security rules
 
-Rules are in `firestore.rules`: each learner can read and write only their own document, with only the fields the app uses (xp, streak, lessons, mistakes, srs, days, stats, checkpoints, updated). To publish changes (uses gcloud):
+Rules are in `firestore.rules`. Each learner can read and write only their own progress document (`users/{uid}`, with only the fields the app uses, including `game`: badges, feats, daily goal, streak freezes). Community data is separate: `profiles/{uid}` (public card, owner writes), `rooms/{room}/msgs` (group chat), `dms/{a_b}` and its `msgs` (direct messages, readable only by the two learners) and `reports` (write-only; read reports in the Firebase console). Publish the rules **before** deploying an app version that writes new fields, or sync fails. To publish (uses gcloud):
 
 ```bash
 scripts/deploy_rules.sh
@@ -30,7 +30,7 @@ scripts/deploy_rules.sh
 ## Firebase settings that live in the console
 
 - **Authentication → Sign-in method:** Google is enabled.
-- **Authentication → Settings → Authorized domains:** `axomrank.pages.dev`, `axomrank.github.io` (add a custom domain here when you get one).
+- **Authentication → Settings → Authorized domains:** must include `axomrank.pages.dev` (and any custom domain), or Google sign-in fails with `auth/unauthorized-domain`. On 2026-11-07 the list had the old `ahom-lessons.pages.dev` but not `axomrank.pages.dev`. Add domains with `scripts/authorize_domain.sh [domain ...]` (uses gcloud; keeps existing entries).
 - **Web app config:** in `app/config.js`. These values are public by design; the rules protect the data.
 
 ## Images on Cloudflare R2 (later)

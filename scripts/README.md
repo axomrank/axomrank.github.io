@@ -51,7 +51,9 @@ the shared step helpers. Reasoning lessons are in `reasoning_course/`, and reuse
 ## Deployment
 
 `deploy_cloudflare.sh` publishes the site and `deploy_rules.sh` publishes
-`firestore.rules`. Both change live services, so run them only when asked.
+`firestore.rules`. `authorize_domain.sh` adds domains to Firebase Auth's
+authorized domains (Google sign-in). All three change live services, so run
+them only when asked; publish rules before the site when the data model changes.
 `deploy_cloudflare.sh` uses `$TMPDIR`, falling back to `/tmp`.
 
 ## Other folders and files

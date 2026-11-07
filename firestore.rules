@@ -1,13 +1,73 @@
 rules_version = '2';
-// Each learner can read and write only their own progress document: users/{uid}.
-// Writes may contain only the fields the app uses (see app/common.js snapshot()).
+// Publish with scripts/deploy_rules.sh BEFORE deploying an app version that writes new fields.
 service cloud.firestore {
   match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isText(x, max) { return x is string && x.size() > 0 && x.size() <= max; }
+    function shortStr(x, max) { return x is string && x.size() <= max; }
+
+    // Each learner can read and write only their own progress document: users/{uid}.
+    // Writes may contain only the fields the app uses (see app/common.js snapshot()).
     match /users/{uid} {
-      allow read: if request.auth != null && request.auth.uid == uid;
-      allow write: if request.auth != null && request.auth.uid == uid
-                   && request.resource.data.keys().hasOnly(["xp", "streak", "lessons", "mistakes", "srs", "days", "stats", "checkpoints", "skills", "miscon", "updated"])
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if signedIn() && request.auth.uid == uid
+                   && request.resource.data.keys().hasOnly(["xp", "streak", "lessons", "mistakes", "srs", "days", "stats", "checkpoints", "skills", "miscon", "game", "updated"])
                    && request.resource.data.xp is int;
+    }
+
+    // Public Community card. Any signed-in learner can read; only the owner writes.
+    match /profiles/{uid} {
+      allow read: if signedIn();
+      allow delete: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(["name", "photo", "xp", "level", "streak", "week", "weekXp", "badges", "course", "t"])
+        && isText(request.resource.data.name, 30) && shortStr(request.resource.data.photo, 500)
+        && request.resource.data.xp is int && request.resource.data.level is int && request.resource.data.streak is int
+        && request.resource.data.weekXp is int && request.resource.data.badges is int
+        && shortStr(request.resource.data.week, 10) && shortStr(request.resource.data.course, 40)
+        && request.resource.data.t == request.time;
+    }
+
+    // Group rooms. Messages cannot be edited; the author can delete their own.
+    match /rooms/{room}/msgs/{id} {
+      allow read: if signedIn() && room in ["general", "adre", "tet", "apsc", "si"];
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+      allow create: if signedIn() && room in ["general", "adre", "tet", "apsc", "si"]
+        && request.resource.data.keys().hasOnly(["uid", "name", "photo", "lv", "text", "t"])
+        && request.resource.data.uid == request.auth.uid
+        && isText(request.resource.data.name, 30) && shortStr(request.resource.data.photo, 500)
+        && request.resource.data.lv is int && isText(request.resource.data.text, 500)
+        && request.resource.data.t == request.time;
+    }
+
+    // Direct messages between two learners. {pair} is the two uids sorted and joined by "_".
+    match /dms/{pair} {
+      function member() { return signedIn() && request.auth.uid in pair.split("_"); }
+      allow read: if signedIn() && (resource == null || request.auth.uid in resource.data.users);
+      allow create, update: if member()
+        && request.resource.data.keys().hasOnly(["users", "names", "photos", "last", "from", "t"])
+        && request.resource.data.users == pair.split("_")
+        && request.resource.data.from == request.auth.uid
+        && isText(request.resource.data.last, 120)
+        && request.resource.data.t == request.time;
+      match /msgs/{id} {
+        allow read: if member();
+        allow delete: if member() && resource.data.uid == request.auth.uid;
+        allow create: if member()
+          && request.resource.data.keys().hasOnly(["uid", "text", "t"])
+          && request.resource.data.uid == request.auth.uid
+          && isText(request.resource.data.text, 500)
+          && request.resource.data.t == request.time;
+      }
+    }
+
+    // Reported messages: learners can file a report, only moderators (console) read them.
+    match /reports/{id} {
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(["by", "uid", "text", "where", "t"])
+        && request.resource.data.by == request.auth.uid
+        && shortStr(request.resource.data.text, 500) && shortStr(request.resource.data.where, 80)
+        && request.resource.data.t == request.time;
     }
   }
 }

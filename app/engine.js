@@ -361,7 +361,7 @@ addEventListener("pagehide", () => {
   const scroll = $("#v-path .p-scroll")?.scrollTop || 0;
   AXOM.store.set(journeyKey, { lesson: L.id, scroll });
 });
-if (!VIRTUAL) { const ui = AXOM.store.get("axom:ui", {}); if (ui.lastCourse !== L.course) AXOM.store.set("axom:ui", { ...ui, lastCourse: L.course }); }
+if (!VIRTUAL) { const ui = AXOM.store.get("axom:ui", {}); if (ui.lastCourse !== L.course || ui.lastLesson !== L.id) AXOM.store.set("axom:ui", { ...ui, lastCourse: L.course, lastLesson: L.id }); }
 function renderPath() {
   const doneCount = ALL.filter((u) => P.done[u.id]).length;
   $("#meter").style.width = `${(doneCount / ALL.length) * 100}%`; $("#meter").style.setProperty("--p", $("#meter").style.width);
@@ -812,6 +812,8 @@ function finishUnit() {
   // next lesson only after the first-attempt pass check below.
   if (!U.practice && !VIRTUAL && !U.testout && u !== L.test) P.done[u.id] = true;
   G.xp += U.xp; AXOM.addDayXP(U.xp); AXOM.bumpStreak();
+  // levels, badges and the daily goal (rewards for effort; first-attempt scoring above is untouched)
+  const WIN = AXOM.gameAfterUnit ? AXOM.gameAfterUnit({ xp: U.xp, ok: U.ok, asked: U.asked, review: mode === "review" }) : null;
   let note = "";
   if (mode === "checkpoint") {
     const pass = U.asked && U.ok / U.asked >= 0.8;
@@ -867,13 +869,34 @@ function finishUnit() {
     ${u.learned && u.learned.length ? `<div class="card learned"><h3>${T(B("What you learned", "তুমি কি শিকিলা"))}</h3><ul>${u.learned.map((l) => `<li>${T(l)}</li>`).join("")}</ul></div>` : ""}
     ${U.mistakes.length ? `<div class="card mistakes"><h3>${T(B("Revise these", "এইবোৰ আকৌ চোৱা"))}</h3><ul>${U.mistakes.map((m) => `<li><span class="q">${T(promptOf(m.s))}</span>${answerHTML(m.s)}</li>`).join("")}</ul></div>` : ""}
     ${mode === "lesson" ? `<div class="card prog"><div class="prog-h"><b>${T(B("Lesson progress", "পাঠৰ অগ্ৰগতি"))}</b><span>${T(B(`${doneCount} of ${ALL.length} units complete`, `${asNum(ALL.length)}টাৰ ${asNum(doneCount)}টা অধ্যায় সম্পূৰ্ণ`))}</span></div><div class="prog-dots">${ALL.map((x) => `<i class="${P.done[x.id] ? "on" : ""}"></i>`).join("")}</div></div>` : ""}
+    ${WIN ? winHTML(WIN) : ""}
     <p class="done-meta">${T(B(`${U.ok} of ${U.asked} right first time · ${time}`, `প্ৰথম চেষ্টাত ${asNum(U.asked)}টাৰ ${asNum(U.ok)}টা শুদ্ধ · ${asNum(time)}`))}</p>`;
   $("#done-btn").innerHTML = AFTER ? `${T(AFTER.label)}<svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg>` : T(B("Continue", "আগবাঢ়া"));
   $("#done-back").classList[AFTER ? "remove" : "add"]("hidden");
   showView("v-done");
+  // Nothing obvious next (course finished, review round over, practice): ask the planner, so the learner never has to choose.
+  if (!AFTER && AXOM.nextAction) AXOM.nextAction().then((a) => {
+    if (AFTER || !a || a.kind === "done" || !$("#v-done.on")) return;
+    AFTER = { href: a.href, label: a.kind === "review" ? B(`Up next: memory mission · ${a.round} clues`, `পিছত: স্মৃতি অভিযান · ${asNum(a.round)}টা সংকেত`) : B(`Up next: ${a.title.en}`, `পিছত: ${a.title.as}`) };
+    $("#done-btn").innerHTML = `${T(AFTER.label)}<svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg>`;
+    $("#done-back").classList.remove("hidden");
+  }).catch(() => {});
   const c = $("#confetti");
   c.innerHTML = Array.from({ length: 18 }, (_, k) => `<i style="left:${(k * 37) % 100}%;animation-delay:${(k % 9) * 0.12}s"></i>`).join("");
   c.classList.add("on"); setTimeout(() => c.classList.remove("on"), 3200);
+}
+
+// level-up, daily goal and new badges on the complete screen
+function winHTML(w) {
+  const lv = AXOM.levelOf(), goal = G.game.goal || 30, today = AXOM.todayXP();
+  const rows = [];
+  if (w.levelUp) rows.push(`<div class="win level-up"><span class="win-ic">⬆️</span><div><b>${T(B(`Level ${w.levelUp.n}!`, `স্তৰ ${asNum(w.levelUp.n)}!`))}</b><span>${T(w.levelUp.rank)}</span></div></div>`);
+  if (w.goalHit) rows.push(`<div class="win goal"><span class="win-ic">🎯</span><div><b>${T(B("Daily goal complete!", "দৈনিক লক্ষ্য পূৰণ!"))}</b><span>${T(B(`${today} XP today · come back tomorrow to grow your streak`, `আজি ${asNum(today)} XP · ধাৰা বঢ়াবলৈ কাইলৈ আকৌ আহিবা`))}</span></div></div>`);
+  w.badges.forEach((b) => rows.push(`<div class="win badge-new"><span class="win-ic">${b.icon}</span><div><b>${T(B(`New badge: ${b.t.en}`, `নতুন বেজ: ${b.t.as}`))}</b><span>${T(b.d)}</span></div></div>`));
+  const bar = `<div class="lvl-line"><span class="lvl-chip">${T(B(`Lv ${lv.n}`, `স্তৰ ${asNum(lv.n)}`))}</span><span class="lvl-bar"><i style="width:${lv.pct}%"></i></span><span class="lvl-num">${N(G.xp - lv.from)}/${N(lv.to - lv.from)}</span></div>
+    <div class="lvl-line"><span class="lvl-chip goal">🎯</span><span class="lvl-bar goal"><i style="width:${Math.min(100, Math.round((today / goal) * 100))}%"></i></span><span class="lvl-num">${N(Math.min(today, goal))}/${N(goal)}</span></div>`;
+  if (w.levelUp || w.badges.length) setTimeout(() => SFX.gift(), 500);
+  return `<div class="card wins">${rows.join("")}${bar}</div>`;
 }
 
 // the "complete" seal: a japi-like disc inside a ring of woven ticks, with sprigs and falling leaves

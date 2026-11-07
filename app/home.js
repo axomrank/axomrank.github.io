@@ -20,7 +20,7 @@ const ROOF = '<svg class="roof" viewBox="0 0 320 26" preserveAspectRatio="none">
 const STAR = { A: "★★★", B: "★★", C: "★" };
 const ALL_TABS = { lessons: B("Lessons", "পাঠ"), timeline: B("Timeline", "সময়ৰেখা"), family: B("Family", "বংশ"), profile: B("Profile", "প্ৰফাইল"), skills: B("My map", "মোৰ মানচিত্ৰ") };
 const CID = (params.get("course") || "").replace(/[^a-z0-9-]/g, "");   // empty = show the hub
-const VIEW = ["practice", "profile"].includes(params.get("view")) ? params.get("view") : "";   // the two bottom-bar pages
+const VIEW = ["practice", "profile", "community"].includes(params.get("view")) ? params.get("view") : "";   // bottom-bar pages
 
 document.body.insertAdjacentHTML("afterbegin", `
 <input type="checkbox" id="as" aria-label="Show in Assamese">
@@ -49,6 +49,34 @@ function stats() {
   const s = AXOM.streakNow();
   $("#fire").innerHTML = ICON.fire + N(s); $("#fire").classList.toggle("on", s > 0);
   $("#gem").innerHTML = ICON.gem + N(G.xp);
+}
+const esc = (x) => String(x == null ? "" : x).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const safeImg = (u) => (/^https:\/\//.test(u || "") ? esc(u) : "");
+/* ---------- the one thing to do now (AXOM.nextAction decides; the learner only taps) ---------- */
+function actionText(a) {
+  if (a.kind === "review") return { small: B("Today's warm-up", "আজিৰ আৰম্ভণি"), big: B("Daily memory mission", "দৈনিক স্মৃতি অভিযান"), sub: B(`${a.round} clues · about 3 minutes`, `${asNum(a.round)}টা সংকেত · প্ৰায় ৩ মিনিট`) };
+  if (a.kind === "done") return { small: B("All caught up", "সকলো শেষ"), big: B("Practise your mistakes", "ভুলবোৰ অনুশীলন কৰা"), sub: B("Every lesson so far is complete", "এতিয়ালৈকে সকলো পাঠ সম্পূৰ্ণ") };
+  const unit = a.unit ? (a.unitNo === a.units ? B("Lesson test", "পাঠৰ পৰীক্ষা") : B(`Unit ${a.unitNo} of ${a.units - 1}: ${a.unit.en}`, `অধ্যায় ${asNum(a.unitNo)}/${asNum(a.units - 1)}: ${a.unit.as}`)) : B("", "");
+  return { small: !G.xp ? B("Start here", "ইয়াৰ পৰা আৰম্ভ কৰা") : a.kind === "resume" ? B("Pick up where you left off", "য'ত ৰৈছিলা তাৰ পৰা") : a.kind === "new-course" ? B("Next course", "পিছৰ পাঠ্যক্ৰম") : B("Up next", "পিছৰটো"), big: a.title, sub: unit };
+}
+function todayCard(a) {
+  const lv = AXOM.levelOf(), goal = G.game.goal || 30, today = AXOM.todayXP(), gp = Math.min(100, Math.round((today / goal) * 100));
+  const streak = AXOM.streakNow(), studied = today > 0, x = actionText(a), late = new Date().getHours() >= 18;
+  const risk = streak > 0 && !studied ? `<div class="streak-risk">${ICON.fire}<span>${T(late ? B(`Your ${streak}-day streak ends at midnight. One unit keeps it alive.`, `তোমাৰ ${asNum(streak)} দিনৰ ধাৰা মাজনিশা শেষ হ'ব। এটা অধ্যায়েই ইয়াক ৰাখিব।`) : B(`Keep your ${streak}-day streak going today.`, `আজিও তোমাৰ ${asNum(streak)} দিনৰ ধাৰা অব্যাহত ৰাখা।`))}</span></div>` : "";
+  return `<section class="today">
+    <div class="today-top">
+      <div class="ring" style="--p:${gp}"><span><b>${N(Math.min(today, goal))}</b><small>/${N(goal)} XP</small></span></div>
+      <div class="today-stats">
+        <div class="t-row"><span class="t-fire ${streak ? "on" : ""}">${ICON.fire}${N(streak)}</span><span class="t-lbl">${T(B("day streak", "দিনৰ ধাৰা"))}</span>${G.game.freeze ? `<span class="t-freeze" title="Streak freeze">🧊×${N(G.game.freeze)}</span>` : ""}</div>
+        <div class="t-row"><span class="lvl-chip">${T(B(`Lv ${lv.n}`, `স্তৰ ${asNum(lv.n)}`))}</span><span class="t-lbl">${T(lv.rank)}</span></div>
+        <span class="lvl-bar"><i style="width:${lv.pct}%"></i></span>
+        <small class="t-next">${T(B(`${lv.to - G.xp} XP to level ${lv.n + 1}`, `স্তৰ ${asNum(lv.n + 1)}লৈ ${asNum(lv.to - G.xp)} XP`))}</small>
+      </div>
+    </div>
+    ${risk}
+    <a class="go-now" href="${a.href}"><span class="g-txt"><small>${T(x.small)}</small><b>${T(x.big)}</b>${x.sub.en ? `<span>${T(x.sub)}</span>` : ""}</span><span class="g-btn">${T(gp >= 100 ? B("Keep going", "আগবাঢ়া") : studied ? B("Continue", "আগবাঢ়া") : B("Start", "আৰম্ভ"))} ›</span></a>
+    ${gp >= 100 ? `<p class="goal-done">${T(B("🎯 Daily goal met. Extra lessons now are a bonus.", "🎯 আজিৰ লক্ষ্য পূৰণ হ'ল। এতিয়া যি পঢ়া সেয়া বোনাছ।"))}</p>` : ""}
+  </section>`;
 }
 const years = (reign) => { const m = String(reign).match(/\d{3,4}/g) || []; return [+m[0], +(m[1] || m[0])]; };
 
@@ -99,6 +127,7 @@ async function homePage() {
   const chips = [["", B("All exams", "সকলো পৰীক্ষা")], ...cat.exams.map((x) => [x.id, x.t])]
     .map(([id, t]) => `<button class="exam-chip ${exam === id ? "on" : ""}" data-exam="${id}">${T(t)}</button>`).join("");
   // continue: the course last opened, else the first one with progress, else the first live course
+  const action = await AXOM.nextAction().catch(() => null);
   const live = cat.subjects.flatMap((S) => S.courses.filter((e) => D.courses[e.course]).map((e) => D.courses[e.course]));
   const last = D.courses[UI.lastCourse];
   const cur = (last && !last.archived && !last.draft && last) || live.find((c) => progress(c, m).started) || live[0];
@@ -120,11 +149,11 @@ async function homePage() {
       <span class="pill">${T(B(`${n} course${n > 1 ? "s" : ""} · ${p.total} lessons`, `${asNum(n)}টা পাঠ্যক্ৰম · ${asNum(p.total)}টা পাঠ`))}</span><span class="meter"><i style="--p:${pct(p)}%;width:${pct(p)}%"></i></span></a>`;
   }).join("");
   const examName = exam ? T(cat.exams.find((x) => x.id === exam).t) : "ADRE · Assam TET · APSC · Assam Police SI";
-  $("#course").innerHTML = `<section class="home-hero">${ROOF}<div class="eyebrow">${T(B("Assam exam preparation", "অসম পৰীক্ষাৰ প্ৰস্তুতি"))}</div><h1>Axomrank</h1>
+  $("#course").innerHTML = `${action ? todayCard(action) : ""}<section class="home-hero">${ROOF}<div class="eyebrow">${T(B("Assam exam preparation", "অসম পৰীক্ষাৰ প্ৰস্তুতি"))}</div><h1>Axomrank</h1>
       <p>${T(B("Short bilingual lessons, daily revision and exam-style tests for", "চুটি দ্বিভাষিক পাঠ, দৈনিক পুনৰীক্ষণ আৰু পৰীক্ষাৰ ধৰণৰ প্ৰশ্ন:"))} <b>${examName}</b></p>
       <div class="exam-chips" role="group" aria-label="My exam">${chips}</div></section>
-    ${cont}${reviewCard()}
-    <h2 class="sec-title">${T(B("Subjects", "বিষয়"))}</h2><div class="subj-grid">${subjects}</div>
+    ${action ? "" : cont + reviewCard()}
+    <h2 class="sec-title">${T(B("Or choose a subject", "নাইবা এটা বিষয় বাছা"))}</h2><div class="subj-grid">${subjects}</div>
     <h2 class="sec-title">${T(B("Exam tools", "পৰীক্ষাৰ সঁজুলি"))}</h2>
     <div class="tools"><div class="tool"><span class="ic">📝</span><b>${T(B("Mock tests", "মক টেষ্ট"))}</b><span class="s">${T(B("OMR-style, timed, negative marking", "OMR ধৰণৰ, সময় বান্ধি, ঋণাত্মক নম্বৰ"))}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></div>
       <div class="tool"><span class="ic">📚</span><b>${T(B("Previous-year papers", "পূৰ্বৰ বছৰৰ প্ৰশ্নকাকত"))}</b><span class="s">${T(B("With verified answer keys", "পৰীক্ষিত উত্তৰৰ সৈতে"))}</span><span class="pill">${T(B("Coming soon", "সোনকালে"))}</span></div></div>
@@ -170,20 +199,184 @@ async function profilePage() {
   const D = await load(), { m } = D;
   const tot = Object.values(G.stats).reduce((a, s) => ({ a: a.a + s.a, o: a.o + s.o }), { a: 0, o: 0 });
   const finished = Object.keys(m.lessons).filter((id) => AXOM.getLesson(id).done.test).length;
-  $("#course").innerHTML = `<section class="home-hero"><h1>${T(B("Profile", "প্ৰফাইল"))}</h1><p>${T(B("Your progress on this device and account.", "এই ডিভাইচ আৰু একাউণ্টত তোমাৰ অগ্ৰগতি।"))}</p></section>
+  AXOM.checkBadges();
+  const lv = AXOM.levelOf(), got = AXOM.BADGES.filter((b) => G.game.badges[b.id]).length;
+  const badges = AXOM.BADGES.map((b) => `<div class="bdg ${G.game.badges[b.id] ? "on" : ""}" title="${esc(b.d.en)}"><span class="b-ic">${b.icon}</span><b>${T(b.t)}</b><small>${T(b.d)}</small></div>`).join("");
+  const seg = (key, opts) => `<div class="seg">${opts.map(([v, l]) => `<button data-game="${key}" data-val="${v}" class="${String(G.game[key]) === String(v) ? "on" : ""}">${l}</button>`).join("")}</div>`;
+  $("#course").innerHTML = `<section class="home-hero"><h1>${T(B("Profile", "প্ৰফাইল"))}</h1><p>${T(B("Your level, badges and progress.", "তোমাৰ স্তৰ, বেজ আৰু অগ্ৰগতি।"))}</p></section>
+    ${accountCard()}
+    <div class="card lvl-card"><div class="lvl-big"><span class="lvl-num-big">${N(lv.n)}</span><span><small>${T(B("Level", "স্তৰ"))}</small><b>${T(lv.rank)}</b></span></div>
+      <span class="lvl-bar"><i style="width:${lv.pct}%"></i></span><p class="note">${T(B(`${G.xp - lv.from} / ${lv.to - lv.from} XP · ${lv.to - G.xp} XP to level ${lv.n + 1}`, `${asNum(G.xp - lv.from)} / ${asNum(lv.to - lv.from)} XP · স্তৰ ${asNum(lv.n + 1)}লৈ ${asNum(lv.to - G.xp)} XP`))}</p></div>
     <div class="pf-stats">
       <div class="stat" style="--c:var(--gold)"><div class="h">XP</div><div class="v">${N(G.xp)}</div></div>
       <div class="stat" style="--c:var(--terra)"><div class="h">${T(B("Streak", "ধাৰা"))}</div><div class="v">${N(AXOM.streakNow())}</div></div>
       <div class="stat" style="--c:var(--good)"><div class="h">${T(B("Accuracy", "শুদ্ধতা"))}</div><div class="v">${tot.a ? N(Math.round((tot.o / tot.a) * 100)) + "%" : "–"}</div></div>
     </div>
+    <div class="card"><h3>${T(B(`Badges · ${got} of ${AXOM.BADGES.length}`, `বেজ · ${asNum(AXOM.BADGES.length)}টাৰ ${asNum(got)}টা`))}</h3><div class="bdg-grid">${badges}</div></div>
+    <div class="card"><h3>${T(B("Streak", "ধাৰা"))}</h3><p class="note">${T(B(`Longest: ${G.game.best} days · Streak freezes: ${G.game.freeze} of 2. You earn a freeze every 7 days in a row; it covers one missed day.`, `আটাইতকৈ দীঘল: ${asNum(G.game.best)} দিন · ধাৰা ৰক্ষাকৱচ: ২টাৰ ${asNum(G.game.freeze)}টা। একেৰাহে ৭ দিন পঢ়িলে এটা পাবা; ই এদিন বাদ পৰাটো ঢাকি দিয়ে।`))}</p></div>
     <div class="card"><h3>${T(B("Lessons finished", "সম্পূৰ্ণ পাঠ"))}</h3><p class="big-num">${N(finished)} <span>/ ${N(Object.keys(m.lessons).length)}</span></p></div>
     <div class="card"><h3>${T(B("Last 5 weeks", "শেহতীয়া ৫ সপ্তাহ"))}</h3><div class="cal">${activity()}</div></div>
-    <div class="card"><h3>${T(B("Account", "একাউণ্ট"))}</h3><p class="note">${accountNote()}</p></div>
+    <div class="card"><h3>${T(B("Study plan", "পঢ়াৰ পৰিকল্পনা"))}</h3>
+      <div class="setting"><span>${T(B("Daily goal", "দৈনিক লক্ষ্য"))}</span>${seg("goal", [[10, "10"], [30, "30"], [50, "50"], [100, "100"]])}</div>
+      <div class="setting"><span>${T(B("Open where I left off", "য'ত ৰৈছিলোঁ তাতে খোলা"))}</span>${seg("auto", [[true, T(B("On", "অন"))], [false, T(B("Off", "অফ"))]])}</div></div>
     <button class="btn" id="settings">${ICON.gear}${T(B("Settings", "ছেটিং"))}</button>${FOOT}`;
   $("#continue").classList.add("hidden");
 }
+/* ---------- account card with a clear reason when sign-in fails ---------- */
+const IN_APP = /FBAN|FBAV|Instagram|Line\/|; wv\)|Snapchat|MicroMessenger/i.test(navigator.userAgent);
+function signInError(e) {
+  const c = (e && e.code) || "";
+  if (IN_APP || c === "auth/operation-not-supported-in-this-environment") return B("Google sign-in does not work inside this app's built-in browser. Open axomrank.pages.dev in Chrome or Safari and sign in there.", "এই এপৰ ভিতৰৰ ব্ৰাউজাৰত Google চাইন ইন নচলে। Chrome বা Safari ত axomrank.pages.dev খুলি তাত চাইন ইন কৰা।");
+  if (c === "auth/unauthorized-domain") return B(`Sign-in is not yet enabled for ${location.hostname}. The site owner must add this domain in Firebase (scripts/authorize_domain.sh).`, `${location.hostname} ৰ বাবে চাইন ইন এতিয়াও সক্ৰিয় কৰা হোৱা নাই। চাইটৰ গৰাকীয়ে Firebase ত এই ডমেইন যোগ কৰিব লাগিব।`);
+  if (c === "auth/popup-closed-by-user" || c === "auth/cancelled-popup-request") return B("The sign-in window was closed before it finished. Tap Sign in again.", "চাইন ইন শেষ হোৱাৰ আগতে উইণ্ড' বন্ধ হ'ল। আকৌ চাইন ইন টিপা।");
+  if (c === "auth/network-request-failed") return B("No internet connection. Connect and try again.", "ইণ্টাৰনেট সংযোগ নাই। সংযোগ কৰি আকৌ চেষ্টা কৰা।");
+  if (c === "auth/popup-blocked") return B("Your browser blocked the sign-in window. Allow pop-ups for this site and try again.", "ব্ৰাউজাৰে চাইন ইন উইণ্ড' বন্ধ কৰিলে। এই চাইটৰ বাবে পপ-আপ অনুমতি দি আকৌ চেষ্টা কৰা।");
+  return B(`Sign-in did not finish (${c || "unknown error"}). Try again.`, `চাইন ইন সম্পূৰ্ণ নহ'ল (${c || "অজ্ঞাত"})। আকৌ চেষ্টা কৰা।`);
+}
+let signInMsg = null;
+function accountCard() {
+  if (!(window.AXOM_CONFIG || {}).firebase) return "";
+  const u = AXOM.auth.user;
+  if (u) return `<div class="card acct"><span class="acct-face">${safeImg(u.photo) ? `<img src="${safeImg(u.photo)}" alt="">` : ICON.user}</span><span class="acct-t"><b>${esc(u.name || "")}</b><small>${T(B("Progress syncs across your devices", "অগ্ৰগতি সকলো ডিভাইচত মিলে"))}</small></span><button class="link" id="signout-p">${T(B("Sign out", "চাইন আউট"))}</button></div>`;
+  return `<div class="card acct-in"><h3>${T(B("Save your progress", "তোমাৰ অগ্ৰগতি সাঁচি ৰাখা"))}</h3><p class="note">${T(B("Sign in to keep your XP, streak and badges on every device, and to join the Community.", "সকলো ডিভাইচত XP, ধাৰা আৰু বেজ ৰাখিবলৈ আৰু সম্প্ৰদায়ত যোগ দিবলৈ চাইন ইন কৰা।"))}</p>
+    <button class="btn google" data-signin><svg viewBox="0 0 24 24"><path fill="#4285F4" stroke="none" d="M22.5 12.3c0-.8-.1-1.500-.2-2.200H12v4.200h5.900a5 5 0 0 1-2.200 3.300v2.700h3.500c2.100-1.900 3.300-4.700 3.300-8z"/><path fill="#34A853" stroke="none" d="M12 23c3 0 5.500-1 7.300-2.700l-3.500-2.700c-1 .7-2.300 1.100-3.800 1.100-2.900 0-5.400-2-6.300-4.600H2.100v2.800A11 11 0 0 0 12 23z"/><path fill="#FBBC05" stroke="none" d="M5.700 14.100a6.600 6.600 0 0 1 0-4.200V7.100H2.100a11 11 0 0 0 0 9.800z"/><path fill="#EA4335" stroke="none" d="M12 5.400c1.600 0 3.100.6 4.200 1.700l3.100-3.100A11 11 0 0 0 2.100 7.100l3.600 2.800C6.600 7.300 9.100 5.400 12 5.400z"/></svg>${T(B("Sign in with Google", "Google ৰে চাইন ইন"))}</button>
+    ${signInMsg ? `<p class="signin-err">${T(signInMsg)}</p>` : IN_APP ? `<p class="signin-err">${T(signInError(null))}</p>` : ""}</div>`;
+}
+async function doSignIn() {
+  const auth = AXOM.auth;
+  if (!auth.signIn) return toast(T(B("Connecting…", "সংযোগ হৈ আছে…")));
+  signInMsg = null;
+  try { await auth.signIn(); toast(T(B("Signed in. Progress will sync.", "চাইন ইন হ'ল। অগ্ৰগতি মিলাই থোৱা হ'ব।"))); }
+  catch (err) { console.warn(err); signInMsg = signInError(err); toast(T(B("Sign-in did not finish", "চাইন ইন সম্পূৰ্ণ নহ'ল"))); render(); }
+}
+
+/* ---------- Community: people, group rooms and direct messages ---------- */
+const ROOMS = [["general", B("Common room", "সাধাৰণ কোঠা")], ["adre", B("ADRE", "ADRE")], ["tet", B("Assam TET", "অসম TET")], ["apsc", B("APSC", "APSC")], ["si", B("Police SI", "আৰক্ষী SI")]];
+const CV = Object.assign({ tab: "people", room: "general" }, AXOM.store.get("axom:community", {}));
+let unsub = [], DM = null, PEOPLE = [], INBOX = [];
+const stopAll = () => { unsub.forEach((f) => { try { f(); } catch { /* already stopped */ } }); unsub = []; };
+const ago = (t) => { const s = (Date.now() - t) / 1000; return s < 60 ? B("now", "এতিয়া") : s < 3600 ? B(`${Math.floor(s / 60)}m`, `${asNum(Math.floor(s / 60))} মি`) : s < 86400 ? B(`${Math.floor(s / 3600)}h`, `${asNum(Math.floor(s / 3600))} ঘ`) : B(`${Math.floor(s / 86400)}d`, `${asNum(Math.floor(s / 86400))} দি`); };
+const face = (photo, name) => safeImg(photo) ? `<img src="${safeImg(photo)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="initial">${esc((name || "?")[0].toUpperCase())}</span>`;
+const blocked = (uid) => !!(G.game.block || {})[uid];
+function communityPage() {
+  stopAll();
+  const auth = AXOM.auth;
+  const hero = `<section class="home-hero"><h1>${T(B("Community", "সম্প্ৰদায়"))}</h1><p>${T(B("Study together: see who is learning, climb the weekly board and talk.", "একেলগে পঢ়া: কোনে পঢ়ি আছে চোৱা, সাপ্তাহিক তালিকাত উঠা আৰু কথা পাতা।"))}</p></section>`;
+  $("#continue").classList.add("hidden");
+  if (!(window.AXOM_CONFIG || {}).firebase) { $("#course").innerHTML = hero + `<div class="card"><p class="note">${T(B("Community needs an internet connection and an account.", "সম্প্ৰদায়ৰ বাবে ইণ্টাৰনেট আৰু একাউণ্ট লাগে।"))}</p></div>`; return; }
+  if (!auth.ready) { $("#course").innerHTML = hero + `<div class="card"><p class="note">${T(B("Connecting…", "সংযোগ হৈ আছে…"))}</p></div>`; return; }
+  if (!auth.user) { $("#course").innerHTML = hero + accountCard(); return; }
+  const S = auth.social;
+  if (DM) return dmView();
+  const tabs = [["people", B("People", "মানুহ")], ["rooms", B("Rooms", "কোঠা")], ["inbox", B("Messages", "বাৰ্তা")]];
+  $("#course").innerHTML = hero + `<div class="tabs home-tabs cm-tabs" role="tablist">${tabs.map(([k, t]) => `<button class="tab ${CV.tab === k ? "on" : ""}" data-ctab="${k}">${T(t)}${k === "inbox" ? '<i class="dot hidden" id="inbox-dot"></i>' : ""}</button>`).join("")}</div><div id="cm-body"><p class="note cm-load">${T(B("Loading…", "ল'ড হৈ আছে…"))}</p></div>`;
+  const body = $("#cm-body");
+  unsub.push(S.inbox((list) => { INBOX = (list || []).filter((d) => !blocked(d.users.find((u) => u !== auth.user.uid))); const seen = AXOM.store.get("axom:dmseen", {}); const n = INBOX.filter((d) => d.from !== auth.user.uid && d.t > (seen[d.id] || 0)).length; const dot = $("#inbox-dot"); if (dot) dot.classList.toggle("hidden", !n); if (CV.tab === "inbox") inboxView(body); }));
+  if (CV.tab === "people") unsub.push(S.people((list, err) => { if (err) return showErr(body, err); PEOPLE = list.filter((p) => !blocked(p.id)); peopleView(body); }));
+  if (CV.tab === "rooms") roomView(body);
+}
+function showErr(el, err) { console.warn(err); el.innerHTML = `<div class="card"><p class="note">${T(B("Community could not load. Check your connection and try again.", "সম্প্ৰদায় খুলিব পৰা নগ'ল। সংযোগ পৰীক্ষা কৰি আকৌ চেষ্টা কৰা।"))}</p></div>`; }
+function peopleView(el) {
+  const me = AXOM.auth.user.uid, now = Date.now(), week = (PEOPLE.find((p) => p.id === me) || {}).week;
+  const online = PEOPLE.filter((p) => now - p.t < 5 * 60e3);
+  const board = PEOPLE.filter((p) => p.week === week && p.weekXp > 0).sort((a, b) => b.weekXp - a.weekXp).slice(0, 20);
+  const myRank = board.findIndex((p) => p.id === me);
+  const row = (p, extra = "") => `<button class="person ${p.id === me ? "me" : ""}" data-person="${esc(p.id)}"><span class="p-face">${face(p.photo, p.name)}${now - p.t < 5 * 60e3 ? '<i class="online"></i>' : ""}</span><span class="p-t"><b>${esc(p.name)}${p.id === me ? ` · ${T(B("you", "তুমি"))}` : ""}</b><small>${T(B(`Lv ${p.level} · 🔥${p.streak} · 🏅${p.badges}`, `স্তৰ ${asNum(p.level)} · 🔥${asNum(p.streak)} · 🏅${asNum(p.badges)}`))}</small></span>${extra}</button>`;
+  el.innerHTML = `<div class="card"><h3>${T(B(`Online now · ${online.length}`, `এতিয়া অনলাইন · ${asNum(online.length)}`))}</h3>${online.length ? `<div class="online-strip">${online.map((p) => `<button class="o-face" data-person="${esc(p.id)}">${face(p.photo, p.name)}<small>${esc(p.name)}</small></button>`).join("")}</div>` : `<p class="note">${T(B("Nobody else right now. Start a lesson; others will see you here.", "এতিয়া আন কোনো নাই। এটা পাঠ আৰম্ভ কৰা; আনে তোমাক ইয়াত দেখিব।"))}</p>`}</div>
+    <div class="card"><h3>${T(B("This week's leaderboard", "এই সপ্তাহৰ শীৰ্ষ তালিকা"))}</h3>${myRank >= 0 ? `<p class="note">${T(B(`You are #${myRank + 1} this week.`, `এই সপ্তাহত তুমি #${asNum(myRank + 1)}।`))}</p>` : `<p class="note">${T(B("Earn XP this week to join the board.", "তালিকাত উঠিবলৈ এই সপ্তাহত XP অৰ্জন কৰা।"))}</p>`}
+      ${board.map((p, i) => row(p, `<span class="rank r${i + 1}">${i < 3 ? ["🥇", "🥈", "🥉"][i] : N(i + 1)}</span><span class="wxp">${N(p.weekXp)} XP</span>`)).join("") || ""}</div>
+    <div class="card"><h3>${T(B("Learners", "শিক্ষাৰ্থী"))}</h3>${PEOPLE.slice(0, 60).map((p) => row(p, `<span class="when">${T(ago(p.t))}</span>`)).join("")}</div>
+    <p class="note cm-rule">${T(B("Be kind. Never share your phone number, address or passwords. Long-press or tap ⋯ on a message to report it.", "সদয় হোৱা। ফোন নম্বৰ, ঠিকনা বা পাছৱৰ্ড কেতিয়াও নিদিবা। কোনো বাৰ্তা ৰিপ'ৰ্ট কৰিবলৈ ⋯ টিপা।"))}</p>`;
+}
+function msgHTML(msg, where, canDelete) {
+  const me = AXOM.auth.user.uid, mine = msg.uid === me;
+  return `<div class="msg ${mine ? "mine" : ""}">${mine ? "" : `<button class="m-face" data-person="${esc(msg.uid)}">${face(msg.photo, msg.name)}</button>`}<div class="cm-bubble">${mine || !msg.name ? "" : `<b>${esc(msg.name)}${msg.lv ? ` <small>Lv ${esc(msg.lv)}</small>` : ""}</b>`}<p>${esc(msg.text)}</p><small class="m-when">${T(ago(msg.t))}</small></div>
+    <button class="m-more" data-msg="${esc(msg.id)}" data-where="${esc(where)}" data-mine="${mine && canDelete ? 1 : 0}" aria-label="More">⋯</button></div>`;
+}
+let MSGS = {};
+function composer(id) { return `<form class="composer" data-send="${id}"><input maxlength="500" autocomplete="off" placeholder="${esc(G.as ? "বাৰ্তা লিখা…" : "Write a message…")}" aria-label="Message"><button class="btn send" aria-label="Send">${ICON.arrow}</button></form>`; }
+function roomView(el) {
+  el.innerHTML = `<div class="room-chips">${ROOMS.map(([id, t]) => `<button class="exam-chip ${CV.room === id ? "on" : ""}" data-room="${id}">${T(t)}</button>`).join("")}</div><div class="chat" id="chat"></div>${composer("room")}`;
+  unsub.push(AXOM.auth.social.room(CV.room, (list, err) => {
+    if (err) return showErr($("#chat"), err);
+    MSGS = Object.fromEntries(list.map((x) => [x.id, x]));
+    const box = $("#chat"); if (!box) return;
+    box.innerHTML = list.filter((x) => !blocked(x.uid)).map((x) => msgHTML(x, `rooms/${CV.room}/msgs`, true)).join("") || `<p class="note">${T(B("No messages yet. Say hello!", "এতিয়ালৈকে কোনো বাৰ্তা নাই। নমস্কাৰ কোৱা!"))}</p>`;
+    box.scrollTop = box.scrollHeight; $("#scroll").scrollTop = $("#scroll").scrollHeight;
+  }));
+}
+function inboxView(el) {
+  const me = AXOM.auth.user.uid, seen = AXOM.store.get("axom:dmseen", {});
+  el.innerHTML = INBOX.length ? `<div class="card">${INBOX.map((d) => { const o = d.users.find((u) => u !== me), unread = d.from !== me && d.t > (seen[d.id] || 0); return `<button class="person ${unread ? "unread" : ""}" data-dm="${esc(o)}" data-name="${esc((d.names || {})[o])}" data-photo="${esc((d.photos || {})[o])}"><span class="p-face">${face((d.photos || {})[o], (d.names || {})[o])}</span><span class="p-t"><b>${esc((d.names || {})[o] || "")}</b><small>${d.from === me ? T(B("You: ", "তুমি: ")) : ""}${esc(d.last)}</small></span><span class="when">${T(ago(d.t))}</span></button>`; }).join("")}</div>`
+    : `<div class="card"><p class="note">${T(B("No messages yet. Tap a learner in People to start a chat.", "এতিয়ালৈকে কোনো বাৰ্তা নাই। কথা পাতিবলৈ মানুহ টেবত কোনো শিক্ষাৰ্থীক টিপা।"))}</p></div>`;
+}
+function dmView() {
+  const S = AXOM.auth.social, pair = S.pairOf(AXOM.auth.user.uid, DM.uid);
+  $("#course").innerHTML = `<div class="dm-head"><button class="icon-btn" data-dm-back aria-label="Back">${ICON.arrowBack}</button><span class="p-face">${face(DM.photo, DM.name)}</span><b>${esc(DM.name)}</b></div><div class="chat dm" id="chat"></div>${composer("dm")}`;
+  unsub.push(S.dm(DM.uid, (list, err) => {
+    if (err) return showErr($("#chat"), err);
+    MSGS = Object.fromEntries(list.map((x) => [x.id, x]));
+    const seen = AXOM.store.get("axom:dmseen", {}); seen[pair] = Date.now(); AXOM.store.set("axom:dmseen", seen);
+    const box = $("#chat"); if (!box) return;
+    box.innerHTML = list.map((x) => msgHTML({ ...x, name: "", photo: DM.photo }, `dms/${pair}/msgs`, true)).join("") || `<p class="note">${T(B(`Say hello to ${DM.name}.`, `${DM.name}ক নমস্কাৰ জনোৱা।`))}</p>`;
+    $("#scroll").scrollTop = $("#scroll").scrollHeight;
+  }));
+}
+function personSheet(uid) {
+  const p = PEOPLE.find((x) => x.id === uid) || { id: uid, name: (Object.values(MSGS).find((x) => x.uid === uid) || {}).name || "", photo: (Object.values(MSGS).find((x) => x.uid === uid) || {}).photo || "", level: "?", streak: 0, badges: 0, xp: 0, t: 0 };
+  const me = uid === AXOM.auth.user.uid;
+  $("#sheet-root").innerHTML = `<div class="backdrop" data-close></div><div class="sheet left person-sheet"><div class="grab"></div>
+    <div class="ps-face">${face(p.photo, p.name)}</div><h2>${esc(p.name)}</h2>
+    <div class="pf-stats"><div class="stat" style="--c:var(--indigo)"><div class="h">${T(B("Level", "স্তৰ"))}</div><div class="v">${esc(p.level)}</div></div><div class="stat" style="--c:var(--terra)"><div class="h">${T(B("Streak", "ধাৰা"))}</div><div class="v">${N(p.streak || 0)}</div></div><div class="stat" style="--c:var(--gold)"><div class="h">XP</div><div class="v">${N(p.xp || 0)}</div></div></div>
+    ${me ? `<label class="nick"><span>${T(B("Your name in Community", "সম্প্ৰদায়ত তোমাৰ নাম"))}</span><input id="nick" maxlength="30" value="${esc(G.game.nick || p.name)}"></label><button class="btn" id="nick-save">${T(B("Save", "সাঁচি ৰাখা"))}</button>
+      <div class="setting"><span>${T(B("Show me in Community", "সম্প্ৰদায়ত মোক দেখুওৱা"))}</span><div class="seg"><button data-game="hidden" data-val="false" class="${G.game.hidden ? "" : "on"}">${T(B("Yes", "হয়"))}</button><button data-game="hidden" data-val="true" class="${G.game.hidden ? "on" : ""}">${T(B("No", "নহয়"))}</button></div></div>`
+      : `<button class="btn" data-dm="${esc(p.id)}" data-name="${esc(p.name)}" data-photo="${esc(p.photo)}">${T(B("Send a message", "বাৰ্তা পঠিওৱা"))}</button><button class="link danger" data-block="${esc(p.id)}">${T(blocked(p.id) ? B("Unblock", "অৱৰোধ আঁতৰোৱা") : B("Block", "অৱৰোধ কৰা"))}</button>`}
+    <button class="link" data-close>${T(B("Close", "বন্ধ কৰা"))}</button></div>`;
+}
+document.addEventListener("submit", async (e) => {
+  const f = e.target.closest("[data-send]"); if (!f) return;
+  e.preventDefault();
+  const input = f.querySelector("input"), text = input.value.trim(); if (!text) return;
+  input.value = ""; input.focus();
+  try { f.dataset.send === "dm" ? await AXOM.auth.social.tell(DM.uid, DM.name, DM.photo, text) : await AXOM.auth.social.say(CV.room, text); AXOM.checkBadges(); AXOM.saveGlobal(); }
+  catch (err) { console.warn(err); input.value = text; toast(T(B("Message not sent. Try again.", "বাৰ্তা পঠোৱা নহ'ল। আকৌ চেষ্টা কৰা।"))); }
+});
+document.addEventListener("click", async (e) => {
+  let b;
+  if (e.target.closest("[data-signin]")) return doSignIn();
+  if (e.target.closest("#signout-p")) { await AXOM.auth.signOut(); toast(T(B("Signed out", "চাইন আউট হ'ল"))); return; }
+  if ((b = e.target.closest("[data-game]"))) {
+    const k = b.dataset.game, raw = b.dataset.val; G.game[k] = raw === "true" ? true : raw === "false" ? false : +raw; AXOM.saveGlobal();
+    b.parentElement.querySelectorAll("button").forEach((x) => x.classList.toggle("on", x === b));
+    if (k === "hidden" && AXOM.auth.social) AXOM.auth.social.publish().catch(() => {});
+    return;
+  }
+  if ((b = e.target.closest("[data-ctab]"))) { CV.tab = b.dataset.ctab; AXOM.store.set("axom:community", CV); return communityPage(); }
+  if ((b = e.target.closest("[data-room]"))) { CV.room = b.dataset.room; AXOM.store.set("axom:community", CV); return communityPage(); }
+  if ((b = e.target.closest("[data-dm]"))) { $("#sheet-root").innerHTML = ""; DM = { uid: b.dataset.dm, name: b.dataset.name, photo: b.dataset.photo }; return communityPage(); }
+  if (e.target.closest("[data-dm-back]")) { DM = null; CV.tab = "inbox"; return communityPage(); }
+  if ((b = e.target.closest("[data-person]"))) return personSheet(b.dataset.person);
+  if ((b = e.target.closest("[data-block]"))) { const id = b.dataset.block; G.game.block = { ...(G.game.block || {}) }; if (G.game.block[id]) delete G.game.block[id]; else G.game.block[id] = true; AXOM.saveGlobal(); $("#sheet-root").innerHTML = ""; return communityPage(); }
+  if (e.target.closest("#nick-save")) { G.game.nick = $("#nick").value.replace(/[<>]/g, "").trim().slice(0, 30); AXOM.saveGlobal(); await AXOM.auth.social.publish().catch(() => {}); $("#sheet-root").innerHTML = ""; toast(T(B("Saved", "সাঁচি ৰখা হ'ল"))); return communityPage(); }
+  if ((b = e.target.closest("[data-msg]"))) {
+    const msg = MSGS[b.dataset.msg]; if (!msg) return;
+    $("#sheet-root").innerHTML = `<div class="backdrop" data-close></div><div class="sheet left"><div class="grab"></div><p class="note">“${esc(msg.text)}”</p>
+      ${b.dataset.mine === "1" ? `<button class="btn" data-del="${esc(b.dataset.where)}/${esc(msg.id)}">${T(B("Delete my message", "মোৰ বাৰ্তা মচা"))}</button>` : `<button class="btn" data-report="${esc(msg.id)}" data-where="${esc(b.dataset.where)}">${T(B("Report to moderators", "পৰিচালকক জনোৱা"))}</button><button class="link danger" data-block="${esc(msg.uid)}">${T(B("Block this person", "এই মানুহজনক অৱৰোধ কৰা"))}</button>`}
+      <button class="link" data-close>${T(B("Close", "বন্ধ কৰা"))}</button></div>`;
+    return;
+  }
+  if ((b = e.target.closest("[data-del]"))) { await AXOM.auth.social.remove(b.dataset.del.split("/")).catch((err) => console.warn(err)); $("#sheet-root").innerHTML = ""; return; }
+  if ((b = e.target.closest("[data-report]"))) { const msg = MSGS[b.dataset.report]; await AXOM.auth.social.report(msg, b.dataset.where).then(() => toast(T(B("Reported. Thank you.", "জনোৱা হ'ল। ধন্যবাদ।")))).catch(() => toast(T(B("Could not report. Try again.", "জনাব পৰা নগ'ল।")))); $("#sheet-root").innerHTML = ""; }
+});
 async function render() {
-  if (VIEW) return VIEW === "practice" ? practicePage() : profilePage();
+  if (VIEW) return VIEW === "practice" ? practicePage() : VIEW === "community" ? communityPage() : profilePage();
+  // Opening the app lands straight in what to do next (once per visit; Home stays reachable from the bar).
+  if (!CID && !SID && !location.search && G.game.auto !== false && G.xp > 0 && !sessionStorage.getItem("axom:landed")) {
+    sessionStorage.setItem("axom:landed", "1");
+    const a = await AXOM.nextAction().catch(() => null);
+    if (a && a.kind !== "done") { location.replace(a.href); return; }
+  }
+  try { sessionStorage.setItem("axom:landed", "1"); } catch { /* storage blocked */ }
   if (!CID) return SID ? subjectPage() : homePage();
   if (!course) { const D = await load(); course = D.courses[CID]; info = D.m.lessons; const redirect = D.cat.course_redirects?.[CID]; if (redirect) { location.replace(`index.html?course=${redirect}${UNLOCK_ALL ? "&all" : ""}`); return; } if (!course) { location.replace("index.html"); return; } }
   if (CID === "assam-history" && params.get("tab") !== "overview") {
@@ -376,7 +569,8 @@ function accountButton(user) {
 }
 if ((window.AXOM_CONFIG || {}).firebase) {
   accountButton(null);
-  auth.onChange.push((user) => { accountButton(user); stats(); render(); });
+  auth.onChange.push((user) => { accountButton(user); stats(); if (!DM || !user) { DM = null; render(); } });
+  auth.onError.push((err) => { signInMsg = signInError(err); render(); });
   $("#account").addEventListener("click", async () => {
     if (!auth.signIn) return toast(T(B("Connecting…", "সংযোগ হৈ আছে…")));
     if (auth.user) {
@@ -385,8 +579,8 @@ if ((window.AXOM_CONFIG || {}).firebase) {
         <button class="btn" id="signout">${T(B("Sign out", "চাইন আউট"))}</button><button class="link" data-close>${T(B("Close", "বন্ধ কৰা"))}</button></div>`;
       $("#signout").onclick = async () => { await auth.signOut(); $("#sheet-root").innerHTML = ""; toast(T(B("Signed out", "চাইন আউট হ'ল"))); };
     } else {
-      try { await auth.signIn(); toast(T(B("Signed in. Progress will sync.", "চাইন ইন হ'ল। অগ্ৰগতি মিলাই থোৱা হ'ব।"))); }
-      catch (err) { toast(T(B("Sign-in did not finish", "চাইন ইন সম্পূৰ্ণ নহ'ল"))); console.warn(err); }
+      if (VIEW !== "profile") { location.href = "index.html?view=profile"; return; }
+      doSignIn();
     }
   });
 }

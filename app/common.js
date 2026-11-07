@@ -111,10 +111,104 @@ function rootCause(id, map, seen = new Set()) {
 }
 function record(lessonId, right) { const st = (G.stats[lessonId] = G.stats[lessonId] || { a: 0, o: 0 }); st.a++; if (right) st.o++; }
 function addDayXP(xp) { const k = iso(); G.days[k] = (G.days[k] || 0) + xp; }
-const streakNow = () => { const t = dayKey(new Date()), y = dayKey(new Date(Date.now() - 864e5)); return G.streak.last === t || G.streak.last === y ? G.streak.n : 0; };
+// A streak freeze (earned every 7 days of streak, at most 2 in reserve) covers one missed day.
+const dayBefore = () => dayKey(new Date(Date.now() - 2 * 864e5));
+const streakNow = () => { const t = dayKey(new Date()), y = dayKey(new Date(Date.now() - 864e5)); return G.streak.last === t || G.streak.last === y || (G.streak.last === dayBefore() && (G.game || {}).freeze > 0) ? G.streak.n : 0; };
 function bumpStreak() {
   const t = dayKey(new Date()), y = dayKey(new Date(Date.now() - 864e5));
-  if (G.streak.last !== t) G.streak = { n: G.streak.last === y ? G.streak.n + 1 : 1, last: t };
+  if (G.streak.last === t) return;
+  let n = 1;
+  if (G.streak.last === y) n = G.streak.n + 1;
+  else if (G.streak.last === dayBefore() && G.game.freeze > 0) { G.game.freeze--; G.game.frozeOn = iso(); n = G.streak.n + 1; }
+  G.streak = { n, last: t };
+  if (n % 7 === 0) G.game.freeze = Math.min(2, (G.game.freeze || 0) + 1);
+  G.game.best = Math.max(G.game.best || 0, n);
+}
+
+/* ---------- game layer: levels, badges, daily goal, streak freezes ----------
+   G.game = { badges: { id: date earned }, feats: { units, perfect, reviews, early, late, msgs }, goal: daily XP goal,
+              freeze: streak freezes in reserve (max 2), best: longest streak, hidden: not listed in Community,
+              nick: Community name, block: { uid: true }, auto: open where I left off (default on) }
+   Rewards measure effort and habit. They never touch first-attempt accuracy, skill mastery or spaced review. */
+const GAME0 = () => ({ badges: {}, feats: {}, goal: 30, freeze: 0, best: 0, hidden: false, nick: "", block: {}, auto: true });
+G.game = Object.assign(GAME0(), G.game || {});
+G.game.best = Math.max(G.game.best || 0, G.streak.n || 0);
+const LEVEL_XP = (n) => 25 * n * (n - 1);   // total XP that reaches level n: 0, 50, 150, 300, 500 …
+function levelOf(xp = G.xp) {
+  let n = 1; while (xp >= LEVEL_XP(n + 1)) n++;
+  const from = LEVEL_XP(n), to = LEVEL_XP(n + 1);
+  const rank = [[30, B("Legend", "কিংবদন্তি")], [20, B("Master", "পণ্ডিত")], [15, B("Expert", "পাৰ্গত")], [10, B("Scholar", "অধ্যয়নকাৰী")], [5, B("Explorer", "অন্বেষক")], [1, B("Beginner", "নতুন শিক্ষাৰ্থী")]].find(([min]) => n >= min)[1];
+  return { n, from, to, pct: Math.round(((xp - from) / (to - from)) * 100), rank };
+}
+const todayXP = () => G.days[iso()] || 0;
+const goalDays = () => Object.values(G.days).filter((x) => x >= (G.game.goal || 30)).length;
+const lessonsFinished = () => Object.keys(localStorage).filter((k) => k.startsWith("axom:lesson:") && (store.get(k, {}).done || {}).test).length;
+const feat = (k) => G.game.feats[k] || 0;
+const BADGES = [
+  ["first-unit", "🌱", B("First steps", "প্ৰথম খোজ"), B("Finish your first unit", "প্ৰথম অধ্যায় শেষ কৰা"), () => feat("units") >= 1],
+  ["first-lesson", "📜", B("First lesson", "প্ৰথম পাঠ"), B("Pass a lesson test", "এটা পাঠৰ পৰীক্ষাত উত্তীৰ্ণ হোৱা"), () => lessonsFinished() >= 1],
+  ["lessons-5", "📚", B("Bookworm", "কিতাপৰ পোক"), B("Finish 5 lessons", "৫টা পাঠ শেষ কৰা"), () => lessonsFinished() >= 5],
+  ["lessons-25", "🏛️", B("Library keeper", "পুথিভঁৰালৰ ৰখীয়া"), B("Finish 25 lessons", "২৫টা পাঠ শেষ কৰা"), () => lessonsFinished() >= 25],
+  ["lessons-100", "👑", B("Hundred lessons", "এশটা পাঠ"), B("Finish 100 lessons", "১০০টা পাঠ শেষ কৰা"), () => lessonsFinished() >= 100],
+  ["streak-3", "🔥", B("On fire", "জ্বলি উঠিছা"), B("Keep a 3-day streak", "৩ দিনৰ ধাৰা ৰাখা"), () => G.game.best >= 3],
+  ["streak-7", "⚡", B("One full week", "গোটেই এসপ্তাহ"), B("Keep a 7-day streak", "৭ দিনৰ ধাৰা ৰাখা"), () => G.game.best >= 7],
+  ["streak-30", "🌟", B("Month of focus", "এমাহৰ মনোযোগ"), B("Keep a 30-day streak", "৩০ দিনৰ ধাৰা ৰাখা"), () => G.game.best >= 30],
+  ["streak-100", "🏆", B("Unstoppable", "অপ্ৰতিৰোধ্য"), B("Keep a 100-day streak", "১০০ দিনৰ ধাৰা ৰাখা"), () => G.game.best >= 100],
+  ["xp-100", "💎", B("100 XP", "১০০ XP"), B("Earn 100 XP", "১০০ XP অৰ্জন কৰা"), () => G.xp >= 100],
+  ["xp-1000", "💠", B("1,000 XP", "১০০০ XP"), B("Earn 1,000 XP", "১০০০ XP অৰ্জন কৰা"), () => G.xp >= 1000],
+  ["xp-5000", "🔷", B("5,000 XP", "৫০০০ XP"), B("Earn 5,000 XP", "৫০০০ XP অৰ্জন কৰা"), () => G.xp >= 5000],
+  ["level-10", "🎓", B("Scholar", "অধ্যয়নকাৰী"), B("Reach level 10", "স্তৰ ১০ পোৱা"), () => levelOf().n >= 10],
+  ["perfect-1", "🎯", B("Bullseye", "লক্ষ্যভেদ"), B("Get every question right first time in a unit", "এটা অধ্যায়ৰ সকলো প্ৰশ্ন প্ৰথম চেষ্টাতে শুদ্ধ"), () => feat("perfect") >= 1],
+  ["perfect-10", "🏹", B("Sharpshooter", "নিখুঁত লক্ষ্য"), B("10 perfect units", "১০টা নিখুঁত অধ্যায়"), () => feat("perfect") >= 10],
+  ["review-1", "🧠", B("Memory keeper", "স্মৃতিৰ ৰখীয়া"), B("Finish a daily memory mission", "এটা দৈনিক স্মৃতি অভিযান শেষ কৰা"), () => feat("reviews") >= 1],
+  ["review-10", "🧩", B("Never forget", "কেতিয়াও নাপাহৰো"), B("Finish 10 memory missions", "১০টা স্মৃতি অভিযান শেষ কৰা"), () => feat("reviews") >= 10],
+  ["checkpoint", "🏁", B("Checkpoint cleared", "পৰীক্ষা পাৰ"), B("Pass an era checkpoint", "এটা যুগৰ পৰীক্ষাত উত্তীৰ্ণ হোৱা"), () => Object.keys(G.checkpoints).some((k) => k !== "diagnostic" && G.checkpoints[k])],
+  ["goal-7", "📅", B("Goal getter", "লক্ষ্য পূৰণকাৰী"), B("Meet your daily goal on 7 days", "৭ দিন দৈনিক লক্ষ্য পূৰণ কৰা"), () => goalDays() >= 7],
+  ["early", "🌅", B("Early bird", "ৰাতিপুৱাৰ চৰাই"), B("Study before 7 am", "ৰাতিপুৱা ৭ বজাৰ আগতে পঢ়া"), () => feat("early") >= 1],
+  ["late", "🦉", B("Night owl", "নিশাচৰ"), B("Study after 10 pm", "নিশা ১০ বজাৰ পিছত পঢ়া"), () => feat("late") >= 1],
+  ["social", "💬", B("Study buddy", "পঢ়াৰ লগৰীয়া"), B("Send a message in Community", "সম্প্ৰদায়ত এটা বাৰ্তা পঠিওৱা"), () => feat("msgs") >= 1],
+].map(([id, icon, t, d, test]) => ({ id, icon, t, d, test }));
+// Award every badge whose condition now holds; returns the new ones so the caller can celebrate them.
+function checkBadges() {
+  const fresh = BADGES.filter((b) => !G.game.badges[b.id] && b.test());
+  fresh.forEach((b) => (G.game.badges[b.id] = iso()));
+  return fresh;
+}
+// Called by the lesson player when a unit or round ends (after XP is added). Returns what to celebrate.
+function gameAfterUnit({ xp = 0, ok = 0, asked = 0, review = false } = {}) {
+  const f = G.game.feats, before = levelOf(G.xp - xp).n, h = new Date().getHours(), goal = G.game.goal || 30;
+  f.units = (f.units || 0) + 1;
+  if (asked >= 3 && ok === asked) f.perfect = (f.perfect || 0) + 1;
+  if (review) { f.reviews = (f.reviews || 0) + 1; G.game.reviewDay = iso(); }
+  if (h < 7 && h >= 4) f.early = (f.early || 0) + 1;
+  if (h >= 22) f.late = (f.late || 0) + 1;
+  const after = levelOf();
+  return { levelUp: after.n > before ? after : null, goalHit: todayXP() >= goal && todayXP() - xp < goal, badges: checkBadges() };
+}
+
+/* ---------- what to study now: one answer, so the learner never has to choose ----------
+   1. A lesson already started  → its next unit.   2. Questions due for memory review → the memory mission (once a day).
+   3. The next lesson of the course in use.        4. The next course with lessons left, in the subject order for the chosen exam. */
+async function nextAction() {
+  const [m, cat] = await Promise.all([getJSON("content/manifest.json"), getJSON("content/catalog.json")]);
+  const ui = store.get("axom:ui", {});
+  const unitsOf = (id) => (m.lessons[id] || {}).units || [];
+  const startAt = (id) => { const P = getLesson(id), i = unitsOf(id).findIndex((u) => !(u.id === "test" ? P.done.test : P.done[u.id])); return Math.max(0, i); };
+  const go = (id, kind) => { const L = m.lessons[id], i = startAt(id), u = unitsOf(id)[i]; return { kind, lesson: id, course: L.course, href: `lesson.html?id=${id}&start=${i}`, title: L.title, unit: u ? u.t : null, no: L.no, unitNo: i + 1, units: unitsOf(id).length }; };
+  const started = (id) => m.lessons[id] && !getLesson(id).done.test && Object.keys(getLesson(id).done).length > 0;
+  if (ui.lastLesson && started(ui.lastLesson)) return go(ui.lastLesson, "resume");
+  const due = reviewQueue().length;
+  if (due >= 3 && G.game.reviewDay !== iso()) return { kind: "review", href: "lesson.html?review=1", due, round: Math.min(due, REVIEW_ROUND_SIZE) };
+  const live = new Set(m.courses.map((c) => c.id));
+  const exam = ui.exam || "";
+  const order = cat.subjects.filter((S) => !exam || (S.exams || []).includes(exam)).flatMap((S) => S.courses.filter((e) => live.has(e.course) && !e.optional).map((e) => e.course));
+  const courses = [...new Set([ui.lastCourse, ...order].filter((c) => c && live.has(c)))];
+  for (const cid of courses) {
+    const ids = Object.entries(m.lessons).filter(([, L]) => L.course === cid).sort((a, b) => a[1].no - b[1].no).map(([id]) => id);
+    const id = ids.find((x) => !getLesson(x).done.test);
+    if (id) return go(id, started(id) ? "resume" : cid === ui.lastCourse ? "next" : "new-course");
+  }
+  return due ? { kind: "review", href: "lesson.html?review=1", due, round: Math.min(due, REVIEW_ROUND_SIZE) } : { kind: "done", href: "index.html?view=practice" };
 }
 
 /* ---------- account sync: one document per user ---------- */
@@ -122,7 +216,7 @@ function bumpStreak() {
 function snapshot() {
   const lessons = {};
   Object.keys(localStorage).filter((k) => k.startsWith("axom:lesson:")).forEach((k) => { lessons[k.slice(12)] = { done: Object.keys(store.get(k, {}).done || {}) }; });
-  const out = { xp: G.xp, streak: G.streak, lessons, mistakes: G.mistakes, srs: G.srs, days: G.days, stats: G.stats, checkpoints: G.checkpoints, updated: G.updated };
+  const out = { xp: G.xp, streak: G.streak, lessons, mistakes: G.mistakes, srs: G.srs, days: G.days, stats: G.stats, checkpoints: G.checkpoints, game: G.game, updated: G.updated };
   // Sent only once used: the account rules must allow these two fields before a release that writes them.
   if (Object.keys(G.skills).length) out.skills = G.skills;
   if (Object.keys(G.miscon).length) out.miscon = G.miscon;
@@ -141,12 +235,16 @@ function merge(a, b) {
   // skill records merge one by one: each device keeps whichever record was answered last
   const latest = (x = {}, y = {}) => { const o = { ...x }; Object.entries(y).forEach(([k, v]) => { if (!o[k] || (v.t || 0) > (o[k].t || 0)) o[k] = v; }); return o; };
   const skills = latest(a.skills, b.skills), miscon = latest(a.miscon, b.miscon);
-  return { ...(Object.keys(skills).length ? { skills } : {}), ...(Object.keys(miscon).length ? { miscon } : {}), xp: Math.max(a.xp || 0, b.xp || 0), streak: newer.streak || { n: 0, last: null }, lessons, mistakes: newer.mistakes || {},
+  // game: badges and feats are never lost; settings follow the newer side
+  const ga = a.game || {}, gb = b.game || {}, gn = newer === b ? gb : ga, feats = { ...(ga.feats || {}) };
+  Object.entries(gb.feats || {}).forEach(([k, v]) => (feats[k] = Math.max(feats[k] || 0, v)));
+  const game = { ...ga, ...gb, ...gn, badges: { ...(gb.badges || {}), ...(ga.badges || {}) }, feats, best: Math.max(ga.best || 0, gb.best || 0) };
+  return { game, ...(Object.keys(skills).length ? { skills } : {}), ...(Object.keys(miscon).length ? { miscon } : {}), xp: Math.max(a.xp || 0, b.xp || 0), streak: newer.streak || { n: 0, last: null }, lessons, mistakes: newer.mistakes || {},
     srs: newer.srs || {}, days, stats: newer.stats || {}, checkpoints: { ...(a.checkpoints || {}), ...(b.checkpoints || {}) }, updated: Math.max(a.updated || 0, b.updated || 0) };
 }
 function applySnapshot(s) {
   G.xp = s.xp; G.streak = s.streak; G.mistakes = s.mistakes; G.updated = s.updated;
-  G.srs = s.srs || {}; G.days = s.days || {}; G.stats = s.stats || {}; G.checkpoints = s.checkpoints || {}; G.skills = s.skills || {}; G.miscon = s.miscon || {};
+  G.srs = s.srs || {}; G.days = s.days || {}; G.stats = s.stats || {}; G.checkpoints = s.checkpoints || {}; G.skills = s.skills || {}; G.miscon = s.miscon || {}; G.game = Object.assign(GAME0(), s.game || {});
   store.set("axom:global", G);
   Object.entries(s.lessons).forEach(([id, v]) => { const P = getLesson(id); v.done.forEach((u) => (P.done[u] = true)); store.set(lessonKey(id), P); });
 }
@@ -238,14 +336,15 @@ const ICON = {
   bulb: '<svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6.500 6.500 0 0 0-3.800 11.800c.5.400.8 1 .8 1.700V17h6v-.5c0-.7.300-1.300.8-1.700A6.500 6.500 0 0 0 12 3z"/></svg>',
   navHome: '<svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 3 2.500 11.200l1.300 1.500L5 11.700V21h5.200v-6h3.600v6H19v-9.300l1.200 1 1.300-1.500z"/></svg>',
   navLearn: '<svg viewBox="0 0 24 24"><path d="M12 6.500C10 4.800 7 4.300 3.500 4.800v14c3.500-.5 6.500 0 8.500 1.700 2-1.700 5-2.200 8.500-1.700v-14C17 4.300 14 4.800 12 6.500zM12 6.500v14"/></svg>',
+  navPeople: '<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.500 20a6.500 6.500 0 0 1 13 0"/><circle cx="17" cy="9" r="2.600"/><path d="M16 14.200a5.200 5.200 0 0 1 6 5.300"/></svg>',
   navPractice: '<svg viewBox="0 0 24 24"><path d="M16 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7M8 8h7M8 12h5M8 16h3M14 19l.700-3 6-6a1.600 1.600 0 0 1 2.300 2.300l-6 6z"/></svg>',
 };
 // language switch used in page headers: both names are always shown, the active one in red
 const LANG = '<label class="lang" for="as"><span class="l-en">EN</span><i>/</i><span class="l-as">অসমীয়া</span></label>';
-// the app's four destinations
+// the app's five destinations
 function nav(on) {
   const course = store.get("axom:ui", {}).lastCourse || "assam-history";
-  const items = [["home", "index.html", ICON.navHome, B("Home", "মূল পৃষ্ঠা")], ["learn", `index.html?course=${course}`, ICON.navLearn, B("Learn", "শিকা")], ["practice", "index.html?view=practice", ICON.navPractice, B("Practice", "অনুশীলন")], ["profile", "index.html?view=profile", ICON.user, B("Profile", "প্ৰফাইল")]];
+  const items = [["home", "index.html", ICON.navHome, B("Home", "মূল পৃষ্ঠা")], ["learn", `index.html?course=${course}`, ICON.navLearn, B("Learn", "শিকা")], ["practice", "index.html?view=practice", ICON.navPractice, B("Practice", "অনুশীলন")], ["community", "index.html?view=community", ICON.navPeople, B("Community", "সম্প্ৰদায়")], ["profile", "index.html?view=profile", ICON.user, B("Profile", "প্ৰফাইল")]];
   return `<nav class="nav-bar">${items.map(([id, href, icon, t]) => `<a class="${id === on ? "on" : ""}" href="${href}"${id === on ? ' aria-current="page"' : ""}>${icon}${T(t)}</a>`).join("")}</nav>`;
 }
 
@@ -296,13 +395,13 @@ if ("serviceWorker" in navigator && location.protocol !== "file:") {
 }
 
 /* ---------- account sync (only when Firebase is configured) ---------- */
-const auth = { ready: false, user: null, signIn: null, signOut: null, onChange: [] };
+const auth = { ready: false, user: null, signIn: null, signOut: null, social: null, onChange: [], onError: [], lastError: null };
 if (CFG.firebase) {
-  import("./sync.js").then((m) => m.start({ CFG, auth, snapshot, merge, applySnapshot, listeners })).catch((e) => console.warn("Sync unavailable:", e));
+  import("./sync.js").then((m) => m.start({ CFG, auth, snapshot, merge, applySnapshot, listeners, G, levelOf, iso })).catch((e) => console.warn("Sync unavailable:", e));
 }
 
 const notebook = (cid) => cid === "mathematics" || cid === "reasoning";   // courses built around interactive scenes (app/math.css)
 window.AXOM = { notebook, B, T, N, asNum, store, G, getLesson, saveGlobal, saveLesson, streakNow, bumpStreak, SFX, tone, media, getJSON,
   isOffline, saveOffline, ICON, LANG, nav, initLang, auth, merge, snapshot, applySnapshot, onSave: (f) => listeners.push(f), _audioState: () => (ac ? ac.state : "none"),
-  iso, skillAnswer, misconception, skillState, rootCause, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
+  iso, levelOf, todayXP, BADGES, checkBadges, gameAfterUnit, nextAction, lessonsFinished, skillAnswer, misconception, skillState, rootCause, srsLearn, srsAnswer, reviewQueue, dailyReviewQueue, REVIEW_ROUND_SIZE, record, addDayXP, openSettings };
 })();
