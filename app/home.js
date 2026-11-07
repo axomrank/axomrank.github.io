@@ -373,7 +373,7 @@ document.addEventListener("click", async (e) => {
 const ONB = { step: 0 };
 const GOALS = [[10, B("Casual", "সহজ"), B("about 3 min a day", "দিনে প্ৰায় ৩ মিনিট")], [30, B("Regular", "নিয়মীয়া"), B("about 10 min a day", "দিনে প্ৰায় ১০ মিনিট")], [50, B("Serious", "গুৰুত্বসহকাৰে"), B("about 15 min a day", "দিনে প্ৰায় ১৫ মিনিট")], [100, B("Intense", "তীব্ৰ"), B("about 30 min a day", "দিনে প্ৰায় ৩০ মিনিট")]];
 async function onboarding() {
-  const D = await load(), cat = D.cat, s = ONB.step;
+  const s = ONB.step, cat = s === 1 ? (await load()).cat : null;   // only the exam step needs the catalogue
   const dots = `<div class="onb-dots">${[0, 1, 2, 3].map((k) => `<i class="${k === s ? "on" : k < s ? "done" : ""}"></i>`).join("")}</div>`;
   const top = `<div class="onb-top">${s ? `<button class="icon-btn" data-onb-back aria-label="Back">${ICON.arrowBack}</button>` : "<span></span>"}${dots}<button class="onb-skip" data-onb-skip>${T(B("Skip", "এৰি যোৱা"))}</button></div>`;
   let body = "";
@@ -424,7 +424,7 @@ document.addEventListener("click", (e) => {
 async function render() {
   // a learner with progress from before onboarding existed never sees it
   if (!G.game.onboarded && (G.xp > 0 || AXOM.lessonsFinished())) { G.game.onboarded = true; AXOM.saveGlobal(); }
-  if (!G.game.onboarded && !VIEW && !CID && !SID) { await homePage(); return onboarding(); }
+  if (!G.game.onboarded && !VIEW && !CID && !SID) { onboarding(); load().catch(() => {}); return homePage(); }   // welcome shows at once; Home loads behind it
   if (VIEW) return VIEW === "practice" ? practicePage() : VIEW === "community" ? communityPage() : profilePage();
   // Opening the app lands straight in what to do next (once per visit; Home stays reachable from the bar).
   if (!CID && !SID && !location.search && G.game.auto !== false && G.xp > 0 && !sessionStorage.getItem("axom:landed")) {
