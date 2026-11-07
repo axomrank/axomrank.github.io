@@ -27,7 +27,7 @@ def walk(o, at):
 n = st = 0; seen = collections.Counter()
 for f in sorted(glob.glob("content/lessons/ih-*.json")):
     L = json.load(open(f, encoding="utf-8")); n += 1
-    walk({k: L[k] for k in ("king", "mission", "units", "test", "guide")}, L["id"])
+    walk({k: L[k] for k in ("king", "mission", "units", "test", "guide") if k in L}, L["id"])
     for u in L["units"] + [L["test"]]:
         for s in u["steps"]:
             st += 1; seen[s["id"]] += 1

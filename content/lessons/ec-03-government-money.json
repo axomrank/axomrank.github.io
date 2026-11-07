@@ -1,0 +1,672 @@
+{
+  "id": "ec-03-government-money",
+  "course": "economy-welfare",
+  "no": 3,
+  "version": 1,
+  "king": {
+    "en": "Government money",
+    "as": "চৰকাৰী ধন"
+  },
+  "reign": {
+    "en": "Tax and devolution",
+    "as": "কৰ আৰু হস্তান্তৰ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Finance Commission of India",
+      "url": "https://fincomindia.nic.in/",
+      "used_for": "Sixteenth Finance Commission shares"
+    },
+    {
+      "title": "Union Budget",
+      "url": "https://www.indiabudget.gov.in/",
+      "used_for": "Debt target, MAT"
+    },
+    {
+      "title": "OECD BEPS",
+      "url": "https://www.oecd.org/tax/beps/",
+      "used_for": "Two-pillar solution"
+    }
+  ],
+  "checkedOn": "2026-11-07",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Slicing the tax pie",
+        "as": "কৰৰ পিঠা ভগোৱা"
+      },
+      "icon": "chart",
+      "learned": [
+        {
+          "en": "The Sixteenth Finance Commission covers 2026–31. It keeps the states’ share of the divisible pool at 41%.",
+          "as": "ষোড়শ বিত্ত আয়োগে ২০২৬–৩১ সামৰে। ই বিভাজ্য কৰ পুঁজিত ৰাজ্যৰ অংশ ৪১% ৰাখিছে।"
+        },
+        {
+          "en": "That is vertical devolution. How the 41% is shared among states is horizontal devolution.",
+          "as": "এয়া উলম্ব হস্তান্তৰ। ৪১% ৰাজ্যবোৰৰ মাজত ভগোৱাটো অনুভূমিক হস্তান্তৰ।"
+        },
+        {
+          "en": "The fiscal anchor is shifting from yearly deficit to debt, aiming near 50% of GDP by 2031.",
+          "as": "বিত্তীয় খুঁটি বছৰেকীয়া ঘাটিৰ পৰা ধাৰলৈ যাব ধৰিছে, লক্ষ্য ২০৩১ত GDPৰ প্ৰায় ৫০%।"
+        },
+        {
+          "en": "GST now has two main slabs, 5% and 18%, with 40% for demerit goods.",
+          "as": "GSTৰ এতিয়া দুটা মূল হাৰ, ৫% আৰু ১৮%, ক্ষতিকাৰক বস্তুৰ বাবে ৪০%।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "States' 41% share",
+            "as": "ৰাজ্যৰ ৪১% অংশ"
+          },
+          "text": [
+            {
+              "en": "The Sixteenth Finance Commission covers 2026–31. It keeps the states’ share of the divisible pool at 41%.",
+              "as": "ষোড়শ বিত্ত আয়োগে ২০২৬–৩১ সামৰে। ই বিভাজ্য কৰ পুঁজিত ৰাজ্যৰ অংশ ৪১% ৰাখিছে।"
+            },
+            {
+              "en": "That is vertical devolution. How the 41% is shared among states is horizontal devolution.",
+              "as": "এয়া উলম্ব হস্তান্তৰ। ৪১% ৰাজ্যবোৰৰ মাজত ভগোৱাটো অনুভূমিক হস্তান্তৰ।"
+            }
+          ],
+          "figure": {
+            "kind": "fcpie",
+            "spots": [
+              {
+                "en": "Income distance · 42.5%",
+                "as": "আয়ৰ দূৰত্ব · ৪২.৫%"
+              },
+              {
+                "en": "Population 2011 · 17.5%",
+                "as": "জনসংখ্যা ২০১১ · ১৭.৫%"
+              },
+              {
+                "en": "Demographic performance · 10%",
+                "as": "জনগাঁথনিৰ সাফল্য · ১০%"
+              },
+              {
+                "en": "Area · 10%",
+                "as": "কালি · ১০%"
+              },
+              {
+                "en": "Forest · 10%",
+                "as": "অৰণ্য · ১০%"
+              },
+              {
+                "en": "GDP contribution · 10%",
+                "as": "GDP অৱদান · ১০%"
+              }
+            ]
+          },
+          "id": "ec03.u1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Vertical devolution decides each state's share among states.",
+            "as": "উলম্ব হস্তান্তৰে ৰাজ্যবোৰৰ মাজৰ অংশ ঠিক কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "That is horizontal. Vertical is the Union–states split.",
+            "as": "সেয়া অনুভূমিক। উলম্ব হ'ল কেন্দ্ৰ–ৰাজ্য বিভাজন।"
+          },
+          "id": "ec03.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "A new anchor for debt",
+            "as": "ধাৰৰ নতুন খুঁটি"
+          },
+          "text": [
+            {
+              "en": "The fiscal anchor is shifting from yearly deficit to debt, aiming near 50% of GDP by 2031.",
+              "as": "বিত্তীয় খুঁটি বছৰেকীয়া ঘাটিৰ পৰা ধাৰলৈ যাব ধৰিছে, লক্ষ্য ২০৩১ত GDPৰ প্ৰায় ৫০%।"
+            },
+            {
+              "en": "GST now has two main slabs, 5% and 18%, with 40% for demerit goods.",
+              "as": "GSTৰ এতিয়া দুটা মূল হাৰ, ৫% আৰু ১৮%, ক্ষতিকাৰক বস্তুৰ বাবে ৪০%।"
+            }
+          ],
+          "figure": {
+            "kind": "pillars3",
+            "spots": [
+              {
+                "en": "GST 5% · essentials",
+                "as": "GST ৫% · প্ৰয়োজনীয়"
+              },
+              {
+                "en": "GST 18% · standard",
+                "as": "GST ১৮% · সাধাৰণ"
+              },
+              {
+                "en": "GST 40% · demerit goods",
+                "as": "GST ৪০% · ক্ষতিকাৰক বস্তু"
+              }
+            ]
+          },
+          "id": "ec03.u1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "The heaviest horizontal criterion is",
+            "as": "অনুভূমিক সূত্ৰৰ আটাইতকৈ গধুৰ মানদণ্ড"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "income distance",
+              "as": "আয়ৰ দূৰত্ব"
+            },
+            {
+              "en": "forest cover",
+              "as": "অৰণ্য"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Income distance carries 42.5%.",
+            "as": "আয়ৰ দূৰত্বৰ ভাৰ ৪২.৫%।"
+          },
+          "id": "ec03.u1.04"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT a Sixteenth Commission criterion?",
+            "as": "কোনটো ষোড়শ আয়োগৰ মানদণ্ড নহয়?"
+          },
+          "options": [
+            {
+              "en": "Literacy rate",
+              "as": "সাক্ষৰতা হাৰ"
+            },
+            {
+              "en": "Area",
+              "as": "কালি"
+            },
+            {
+              "en": "Forest",
+              "as": "অৰণ্য"
+            },
+            {
+              "en": "Population",
+              "as": "জনসংখ্যা"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Literacy is not among the six.",
+            "as": "সাক্ষৰতা ছয়টাৰ ভিতৰত নাই।"
+          },
+          "id": "ec03.u1.05"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "41%",
+                "as": "৪১%"
+              },
+              {
+                "en": "states' share of the pool",
+                "as": "পুঁজিত ৰাজ্যৰ অংশ"
+              }
+            ],
+            [
+              {
+                "en": "42.5%",
+                "as": "৪২.৫%"
+              },
+              {
+                "en": "income distance weight",
+                "as": "আয়ৰ দূৰত্বৰ ভাৰ"
+              }
+            ],
+            [
+              {
+                "en": "40%",
+                "as": "৪০%"
+              },
+              {
+                "en": "GST on demerit goods",
+                "as": "ক্ষতিকাৰক বস্তুৰ GST"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Numbers exams like to mix up.",
+            "as": "পৰীক্ষাই খেলিমেলি কৰা সংখ্যা।"
+          },
+          "id": "ec03.u1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Population 2011",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: জনসংখ্যা ২০১১"
+          },
+          "kind": "fcpie",
+          "answer": 1,
+          "answerText": {
+            "en": "Population 2011 · 17.5%",
+            "as": "জনসংখ্যা ২০১১ · ১৭.৫%"
+          },
+          "why": {
+            "en": "Pin 2: Population 2011 · 17.5%.",
+            "as": "2 নং পিন: জনসংখ্যা ২০১১ · ১৭.৫%।"
+          },
+          "id": "ec03.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Taxing across borders",
+        "as": "সীমা পাৰ কৰা কৰ"
+      },
+      "icon": "globe",
+      "learned": [
+        {
+          "en": "BEPS 2.0 is the OECD-led plan against moving profits to low-tax places.",
+          "as": "BEPS 2.0 কম কৰৰ ঠাইলৈ লাভ নিয়াৰ বিৰুদ্ধে OECDৰ পৰিকল্পনা।"
+        },
+        {
+          "en": "Pillar One reallocates profits of giants above €20 billion turnover. Pillar Two sets a 15% global minimum tax above €750 million.",
+          "as": "প্ৰথম স্তম্ভই €২০ বিলিয়নৰ ওপৰৰ কোম্পানীৰ লাভ পুনৰ্বণ্টন কৰে। দ্বিতীয়ত €৭৫ কোটিৰ ওপৰত ১৫% বিশ্ব নূন্যতম কৰ।"
+        },
+        {
+          "en": "A tax treaty, or DTAA, stops the same income being taxed twice.",
+          "as": "কৰ চুক্তি বা DTAAয়ে একে আয়ত দুবাৰ কৰ ৰোধ কৰে।"
+        },
+        {
+          "en": "GAAR lets tax officers deny arrangements made mainly to avoid tax. Minimum Alternate Tax now stands at 14%.",
+          "as": "GAARয়ে মূলতঃ কৰ এৰাবলৈ কৰা ব্যৱস্থা নাকচ কৰিব দিয়ে। নূন্যতম বিকল্প কৰ এতিয়া ১৪%।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Stop profit shifting",
+            "as": "লাভ স্থানান্তৰ ৰোধ"
+          },
+          "text": [
+            {
+              "en": "BEPS 2.0 is the OECD-led plan against moving profits to low-tax places.",
+              "as": "BEPS 2.0 কম কৰৰ ঠাইলৈ লাভ নিয়াৰ বিৰুদ্ধে OECDৰ পৰিকল্পনা।"
+            },
+            {
+              "en": "Pillar One reallocates profits of giants above €20 billion turnover. Pillar Two sets a 15% global minimum tax above €750 million.",
+              "as": "প্ৰথম স্তম্ভই €২০ বিলিয়নৰ ওপৰৰ কোম্পানীৰ লাভ পুনৰ্বণ্টন কৰে। দ্বিতীয়ত €৭৫ কোটিৰ ওপৰত ১৫% বিশ্ব নূন্যতম কৰ।"
+            }
+          ],
+          "figure": {
+            "kind": "scales2",
+            "spots": [
+              {
+                "en": "Pillar One · reallocate profits",
+                "as": "প্ৰথম স্তম্ভ · লাভ পুনৰ্বণ্টন"
+              },
+              {
+                "en": "Pillar Two · 15% minimum",
+                "as": "দ্বিতীয় স্তম্ভ · ১৫% নূন্যতম"
+              }
+            ]
+          },
+          "id": "ec03.u2.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Pillar Two of BEPS sets a 15% global minimum tax.",
+            "as": "BEPSৰ দ্বিতীয় স্তম্ভই ১৫% বিশ্ব নূন্যতম কৰ ধাৰ্য কৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "It applies to groups above €750 million turnover.",
+            "as": "€৭৫ কোটিৰ ওপৰৰ গোটত প্ৰযোজ্য।"
+          },
+          "id": "ec03.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "India's own guards",
+            "as": "ভাৰতৰ নিজা ৰক্ষক"
+          },
+          "text": [
+            {
+              "en": "A tax treaty, or DTAA, stops the same income being taxed twice.",
+              "as": "কৰ চুক্তি বা DTAAয়ে একে আয়ত দুবাৰ কৰ ৰোধ কৰে।"
+            },
+            {
+              "en": "GAAR lets tax officers deny arrangements made mainly to avoid tax. Minimum Alternate Tax now stands at 14%.",
+              "as": "GAARয়ে মূলতঃ কৰ এৰাবলৈ কৰা ব্যৱস্থা নাকচ কৰিব দিয়ে। নূন্যতম বিকল্প কৰ এতিয়া ১৪%।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "DTAA · no double tax",
+                "as": "DTAA · দ্বৈত কৰ নাই"
+              },
+              {
+                "en": "GAAR · anti-avoidance",
+                "as": "GAAR · কৰ এৰা-বিৰোধী"
+              },
+              {
+                "en": "MAT · 14% floor",
+                "as": "MAT · ১৪% তলি"
+              }
+            ]
+          },
+          "id": "ec03.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "DTAA",
+                "as": "DTAA"
+              },
+              {
+                "en": "avoids double taxation",
+                "as": "দ্বৈত কৰ ৰোধ"
+              }
+            ],
+            [
+              {
+                "en": "GAAR",
+                "as": "GAAR"
+              },
+              {
+                "en": "blocks tax-avoidance deals",
+                "as": "কৰ এৰা ব্যৱস্থা ৰোধ"
+              }
+            ],
+            [
+              {
+                "en": "MAT",
+                "as": "MAT"
+              },
+              {
+                "en": "minimum company tax",
+                "as": "নূন্যতম কোম্পানী কৰ"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Three tools with three jobs.",
+            "as": "তিনিটা আহিলা, তিনিটা কাম।"
+          },
+          "id": "ec03.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Minimum Alternate Tax now stands at",
+            "as": "নূন্যতম বিকল্প কৰ এতিয়া"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "14%",
+              "as": "১৪%"
+            },
+            {
+              "en": "25%",
+              "as": "২৫%"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It was cut from 15% to 14%.",
+            "as": "১৫%ৰ পৰা ১৪% কৰা হৈছে।"
+          },
+          "id": "ec03.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which threshold belongs to Pillar One?",
+            "as": "কোনটো সীমা প্ৰথম স্তম্ভৰ?"
+          },
+          "options": [
+            {
+              "en": "€20 billion",
+              "as": "€২০ বিলিয়ন"
+            },
+            {
+              "en": "€750 million",
+              "as": "€৭৫ কোটি"
+            },
+            {
+              "en": "₹125 crore",
+              "as": "₹১২৫ কোটি"
+            },
+            {
+              "en": "₹500 crore",
+              "as": "₹৫০০ কোটি"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "€750 million is Pillar Two.",
+            "as": "€৭৫ কোটি দ্বিতীয় স্তম্ভৰ।"
+          },
+          "id": "ec03.u2.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: GAAR",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: GAAR"
+          },
+          "kind": "hub3",
+          "answer": 1,
+          "answerText": {
+            "en": "GAAR · anti-avoidance",
+            "as": "GAAR · কৰ এৰা-বিৰোধী"
+          },
+          "why": {
+            "en": "Pin 2: GAAR · anti-avoidance.",
+            "as": "2 নং পিন: GAAR · কৰ এৰা-বিৰোধী।"
+          },
+          "id": "ec03.u2.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "Vertical devolution decides each state's share among states.",
+          "as": "উলম্ব হস্তান্তৰে ৰাজ্যবোৰৰ মাজৰ অংশ ঠিক কৰে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "That is horizontal. Vertical is the Union–states split.",
+          "as": "সেয়া অনুভূমিক। উলম্ব হ'ল কেন্দ্ৰ–ৰাজ্য বিভাজন।"
+        },
+        "id": "ec03.test.01"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "The heaviest horizontal criterion is",
+          "as": "অনুভূমিক সূত্ৰৰ আটাইতকৈ গধুৰ মানদণ্ড"
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "income distance",
+            "as": "আয়ৰ দূৰত্ব"
+          },
+          {
+            "en": "forest cover",
+            "as": "অৰণ্য"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Income distance carries 42.5%.",
+          "as": "আয়ৰ দূৰত্বৰ ভাৰ ৪২.৫%।"
+        },
+        "id": "ec03.test.02"
+      },
+      {
+        "type": "odd",
+        "q": {
+          "en": "Which is NOT a Sixteenth Commission criterion?",
+          "as": "কোনটো ষোড়শ আয়োগৰ মানদণ্ড নহয়?"
+        },
+        "options": [
+          {
+            "en": "Literacy rate",
+            "as": "সাক্ষৰতা হাৰ"
+          },
+          {
+            "en": "Area",
+            "as": "কালি"
+          },
+          {
+            "en": "Forest",
+            "as": "অৰণ্য"
+          },
+          {
+            "en": "Population",
+            "as": "জনসংখ্যা"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Literacy is not among the six.",
+          "as": "সাক্ষৰতা ছয়টাৰ ভিতৰত নাই।"
+        },
+        "id": "ec03.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "Pillar Two of BEPS sets a 15% global minimum tax.",
+          "as": "BEPSৰ দ্বিতীয় স্তম্ভই ১৫% বিশ্ব নূন্যতম কৰ ধাৰ্য কৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "It applies to groups above €750 million turnover.",
+          "as": "€৭৫ কোটিৰ ওপৰৰ গোটত প্ৰযোজ্য।"
+        },
+        "id": "ec03.test.04"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "DTAA",
+              "as": "DTAA"
+            },
+            {
+              "en": "avoids double taxation",
+              "as": "দ্বৈত কৰ ৰোধ"
+            }
+          ],
+          [
+            {
+              "en": "GAAR",
+              "as": "GAAR"
+            },
+            {
+              "en": "blocks tax-avoidance deals",
+              "as": "কৰ এৰা ব্যৱস্থা ৰোধ"
+            }
+          ],
+          [
+            {
+              "en": "MAT",
+              "as": "MAT"
+            },
+            {
+              "en": "minimum company tax",
+              "as": "নূন্যতম কোম্পানী কৰ"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Three tools with three jobs.",
+          "as": "তিনিটা আহিলা, তিনিটা কাম।"
+        },
+        "id": "ec03.test.05"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Minimum Alternate Tax now stands at",
+          "as": "নূন্যতম বিকল্প কৰ এতিয়া"
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "14%",
+            "as": "১৪%"
+          },
+          {
+            "en": "25%",
+            "as": "২৫%"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "It was cut from 15% to 14%.",
+          "as": "১৫%ৰ পৰা ১৪% কৰা হৈছে।"
+        },
+        "id": "ec03.test.06"
+      }
+    ]
+  }
+}

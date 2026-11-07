@@ -2,7 +2,7 @@
   "id": "gf-07-india-relief",
   "course": "geography-foundations",
   "no": 7,
-  "version": 1,
+  "version": 2,
   "king": {
     "en": "Cross India’s physical regions",
     "as": "ভাৰতৰ ভূ-আকৃতি অঞ্চল পাৰ হোৱা"
@@ -112,8 +112,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Climb three Himalayan steps",
+            "as": "হিমালয়ৰ তিনিটা খাপ বগোৱা"
           },
           "text": [
             {
@@ -125,10 +125,10 @@
               "as": "পূবত পূৰ্বাঞ্চলৰ অন্তৰ্গত পাটকাই, নগা আৰু মিজো পাহাৰ।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-07-india-relief.u1.02",
+          "figure": {
+            "kind": "himabelts",
+            "spots": [
               {
                 "en": "Shiwalik · outer",
                 "as": "শিৱালিক · বাহিৰৰ"
@@ -142,8 +142,25 @@
                 "as": "হিমাদ্ৰী · সৰ্বোচ্চ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Himadri",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: হিমাদ্ৰী"
           },
-          "id": "gf-07-india-relief.u1.02"
+          "kind": "himabelts",
+          "answer": 2,
+          "answerText": {
+            "en": "Himadri · highest",
+            "as": "হিমাদ্ৰী · সৰ্বোচ্চ"
+          },
+          "why": {
+            "en": "Pin 3 marks this: Himadri · highest.",
+            "as": "3 নং পিনে ইয়াক দেখুৱায়: হিমাদ্ৰী · সৰ্বোচ্চ।"
+          },
+          "id": "gf-07-india-relief.u1.fig1"
         },
         {
           "type": "order",
@@ -331,8 +348,8 @@
         {
           "type": "story",
           "title": {
-            "en": "A plain and a desert",
-            "as": "সমভূমি আৰু মৰুভূমি"
+            "en": "Green belt, dry corner",
+            "as": "সেউজ পটি, শুকান চুক"
           },
           "text": [
             {
@@ -344,10 +361,13 @@
               "as": "সিন্ধু, গংগা আৰু ব্ৰহ্মপুত্ৰ প্ৰণালীয়ে এই সমভূমি গঢ়াত সহায় কৰিছিল।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u1"
+          },
+          "id": "gf-07-india-relief.u2.01",
+          "figure": {
+            "kind": "plainsthar",
+            "spots": [
               {
                 "en": "River plain · alluvium",
                 "as": "নদীৰ সমভূমি · পলস"
@@ -357,17 +377,13 @@
                 "as": "থৰ · বালিৰ ঢাপ আৰু কম বৰষুণ"
               }
             ]
-          },
-          "link": {
-            "unit": "u1"
-          },
-          "id": "gf-07-india-relief.u2.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "River-built or wind-built?",
+            "as": "নদীয়ে গঢ়া নে বতাহে?"
           },
           "text": [
             {
@@ -379,21 +395,38 @@
               "as": "কম বৰষুণ আৰু বালিৰ ঢাপ থৰ চিনাৰ সংকেত।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "Thar · dunes and low rainfall",
-                "as": "থৰ · বালিৰ ঢাপ আৰু কম বৰষুণ"
-              },
+          "id": "gf-07-india-relief.u2.02",
+          "figure": {
+            "kind": "alluvium",
+            "spots": [
               {
                 "en": "River plain · alluvium",
                 "as": "নদীৰ সমভূমি · পলস"
+              },
+              {
+                "en": "Thar · dunes and low rainfall",
+                "as": "থৰ · বালিৰ ঢাপ আৰু কম বৰষুণ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Thar",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: থৰ"
           },
-          "id": "gf-07-india-relief.u2.02"
+          "kind": "alluvium",
+          "answer": 1,
+          "answerText": {
+            "en": "Thar · dunes and low rainfall",
+            "as": "থৰ · বালিৰ ঢাপ আৰু কম বৰষুণ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Thar · dunes and low rainfall.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: থৰ · বালিৰ ঢাপ আৰু কম বৰষুণ।"
+          },
+          "id": "gf-07-india-relief.u2.fig1"
         },
         {
           "type": "match",
@@ -559,8 +592,8 @@
         {
           "type": "story",
           "title": {
-            "en": "The plateau and its edges",
-            "as": "মালভূমি আৰু তাৰ কাষ"
+            "en": "The plateau's raised edges",
+            "as": "মালভূমিৰ ওখ দাঁতি"
           },
           "text": [
             {
@@ -572,10 +605,13 @@
               "as": "পশ্চিমঘাট আৰু পূবঘাট মালভূমিৰ কাষত আছে। কেইবাখনো নদীয়ে পূবৰ শ্ৰেণী কাটি যায়।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u2"
+          },
+          "id": "gf-07-india-relief.u3.01",
+          "figure": {
+            "kind": "ghats",
+            "spots": [
               {
                 "en": "Western Ghats · western edge",
                 "as": "পশ্চিমঘাট · পশ্চিম কাষ"
@@ -589,17 +625,13 @@
                 "as": "উত্তৰ-পূবৰ খণ্ড · মেঘালয় আৰু কাৰ্বি আংলং"
               }
             ]
-          },
-          "link": {
-            "unit": "u2"
-          },
-          "id": "gf-07-india-relief.u3.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Why Meghalaya looks detached",
+            "as": "মেঘালয় কিয় সুকীয়া যেন লাগে"
           },
           "text": [
             {
@@ -611,25 +643,42 @@
               "as": "পাঠ্যপুথিৰ মালদা চ্যুতিয়ে সেই খণ্ড ছোটানাগপুৰৰ পৰা পৃথক কৰে। গাৰো–ৰাজমহল ব্যৱধান বহল ভূ-আকৃতি।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "id": "gf-07-india-relief.u3.02",
+          "figure": {
+            "kind": "gap",
+            "spots": [
               {
-                "en": "Northeastern block · Meghalaya and Karbi Anglong",
-                "as": "উত্তৰ-পূবৰ খণ্ড · মেঘালয় আৰু কাৰ্বি আংলং"
+                "en": "Meghalaya–Karbi Anglong block",
+                "as": "মেঘালয়–কাৰ্বি আংলং খণ্ড"
               },
               {
-                "en": "Eastern Ghats · eastern edge",
-                "as": "পূবঘাট · পূব কাষ"
+                "en": "Garo–Rajmahal gap · wider low",
+                "as": "গাৰো–ৰাজমহল ফাঁক · বহল নিম্নাংশ"
               },
               {
-                "en": "Western Ghats · western edge",
-                "as": "পশ্চিমঘাট · পশ্চিম কাষ"
+                "en": "Chota Nagpur · plateau side",
+                "as": "ছোটনাগপুৰ · মালভূমিৰ ফাল"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Garo–Rajmahal gap",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: গাৰো–ৰাজমহল ফাঁক"
           },
-          "id": "gf-07-india-relief.u3.02"
+          "kind": "gap",
+          "answer": 1,
+          "answerText": {
+            "en": "Garo–Rajmahal gap · wider low",
+            "as": "গাৰো–ৰাজমহল ফাঁক · বহল নিম্নাংশ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: Garo–Rajmahal gap · wider low.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: গাৰো–ৰাজমহল ফাঁক · বহল নিম্নাংশ।"
+          },
+          "id": "gf-07-india-relief.u3.fig1"
         },
         {
           "type": "match",
@@ -795,8 +844,8 @@
         {
           "type": "story",
           "title": {
-            "en": "Plains meet the sea",
-            "as": "সমভূমি সাগৰৰ কাষত"
+            "en": "Compare India's two coasts",
+            "as": "ভাৰতৰ দুয়োটা উপকূল তুলনা"
           },
           "text": [
             {
@@ -808,10 +857,13 @@
               "as": "পূবৰ উপকূলীয় সমভূমি সাধাৰণতে বহল। কেইবাখনো ডাঙৰ নদীয়ে তাত বদ্বীপ গঢ়ে।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
+          "link": {
+            "unit": "u3"
+          },
+          "id": "gf-07-india-relief.u4.01",
+          "figure": {
+            "kind": "coasts",
+            "spots": [
               {
                 "en": "West · narrow coastal strip",
                 "as": "পশ্চিম · ঠেক উপকূলীয় পটি"
@@ -821,17 +873,13 @@
                 "as": "পূব · বহল সমভূমি আৰু বদ্বীপ"
               }
             ]
-          },
-          "link": {
-            "unit": "u3"
-          },
-          "id": "gf-07-india-relief.u4.01"
+          }
         },
         {
           "type": "story",
           "title": {
-            "en": "Use the clues",
-            "as": "সংকেতবোৰ ব্যৱহাৰ কৰা"
+            "en": "Slice across the peninsula",
+            "as": "উপদ্বীপৰ ছেদ চোৱা"
           },
           "text": [
             {
@@ -843,21 +891,38 @@
               "as": "আন্দামান আৰু নিকোবৰ এটা দ্বীপশৃংখল। কিছুমান অংশ পাহাৰীয়া।"
             }
           ],
-          "art": "river",
-          "diagram": {
-            "layout": "grid",
-            "items": [
-              {
-                "en": "East · broader plains and deltas",
-                "as": "পূব · বহল সমভূমি আৰু বদ্বীপ"
-              },
+          "id": "gf-07-india-relief.u4.02",
+          "figure": {
+            "kind": "coastcut",
+            "spots": [
               {
                 "en": "West · narrow coastal strip",
                 "as": "পশ্চিম · ঠেক উপকূলীয় পটি"
+              },
+              {
+                "en": "East · broader plains and deltas",
+                "as": "পূব · বহল সমভূমি আৰু বদ্বীপ"
               }
             ]
+          }
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: East",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: পূব"
           },
-          "id": "gf-07-india-relief.u4.02"
+          "kind": "coastcut",
+          "answer": 1,
+          "answerText": {
+            "en": "East · broader plains and deltas",
+            "as": "পূব · বহল সমভূমি আৰু বদ্বীপ"
+          },
+          "why": {
+            "en": "Pin 2 marks this: East · broader plains and deltas.",
+            "as": "2 নং পিনে ইয়াক দেখুৱায়: পূব · বহল সমভূমি আৰু বদ্বীপ।"
+          },
+          "id": "gf-07-india-relief.u4.fig1"
         },
         {
           "type": "match",
@@ -991,6 +1056,246 @@
         "result": {
           "en": "Andaman and Nicobar form an island chain with hilly terrain in places.",
           "as": "আন্দামান আৰু নিকোবৰ এটা দ্বীপশৃংখল। কিছুমান অংশ পাহাৰীয়া।"
+        }
+      }
+    },
+    {
+      "id": "n1",
+      "title": {
+        "en": "Inside the plains, up the hills",
+        "as": "সমভূমিৰ ভিতৰ, পাহাৰৰ ওপৰ"
+      },
+      "icon": "hill",
+      "learned": [
+        {
+          "en": "<b>Bhabar</b> is the pebbly belt at the foothills, where streams vanish. <b>Terai</b> is the damp belt where they reappear.",
+          "as": "<b>ভাবৰ</b> পাদদেশৰ শিলগুটিৰ পটি, য'ত সোঁতা লুকায়। <b>তৰাই</b> সেমেকা পটি, য'ত সিহঁত ওলায়।"
+        },
+        {
+          "en": "<b>Bhangar</b> is old raised alluvium. <b>Khadar</b> is new alluvium, renewed by floods.",
+          "as": "<b>বাংগৰ</b> পুৰণি ওখ পলস। <b>খাদৰ</b> নতুন পলস, বানে নতুন কৰে।"
+        },
+        {
+          "en": "Saramati, 3,826 m, tops Nagaland in the Patkai belt. Phawngpui or Blue Mountain, 2,157 m, tops Mizoram.",
+          "as": "৩,৮২৬ মিটাৰৰ চাৰামাটি পাটকাই শ্ৰেণীত নাগালেণ্ডৰ সৰ্বোচ্চ। ২,১৫৭ মিটাৰৰ ফৱংপুই বা নীল পৰ্বত মিজোৰামৰ।"
+        },
+        {
+          "en": "Shillong Peak, 1,965 m, tops Meghalaya. From north to south run the Dafla, Miri, Abor and Mishmi hills.",
+          "as": "১,৯৬৫ মিটাৰৰ শ্বিলং শিখৰ মেঘালয়ৰ। উত্তৰত ডফলা, মিৰি, আবৰ আৰু মিছমি পাহাৰ।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Four belts below the Himalayas",
+            "as": "হিমালয়ৰ তলৰ চাৰিটা পটি"
+          },
+          "text": [
+            {
+              "en": "<b>Bhabar</b> is the pebbly belt at the foothills, where streams vanish. <b>Terai</b> is the damp belt where they reappear.",
+              "as": "<b>ভাবৰ</b> পাদদেশৰ শিলগুটিৰ পটি, য'ত সোঁতা লুকায়। <b>তৰাই</b> সেমেকা পটি, য'ত সিহঁত ওলায়।"
+            },
+            {
+              "en": "<b>Bhangar</b> is old raised alluvium. <b>Khadar</b> is new alluvium, renewed by floods.",
+              "as": "<b>বাংগৰ</b> পুৰণি ওখ পলস। <b>খাদৰ</b> নতুন পলস, বানে নতুন কৰে।"
+            }
+          ],
+          "figure": {
+            "kind": "plainbelts4",
+            "spots": [
+              {
+                "en": "Bhabar · pebbles",
+                "as": "ভাবৰ · শিলগুটি"
+              },
+              {
+                "en": "Terai · damp",
+                "as": "তৰাই · সেমেকা"
+              },
+              {
+                "en": "Bhangar · old alluvium",
+                "as": "বাংগৰ · পুৰণি পলস"
+              },
+              {
+                "en": "Khadar · new alluvium",
+                "as": "খাদৰ · নতুন পলস"
+              }
+            ]
+          },
+          "id": "gf-07-india-relief.n1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Khadar is older than Bhangar.",
+            "as": "খাদৰ বাংগৰতকৈ পুৰণি।"
+          },
+          "answer": false,
+          "why": {
+            "en": "Khadar is new alluvium, and Bhangar is old.",
+            "as": "খাদৰ নতুন, বাংগৰ পুৰণি।"
+          },
+          "id": "gf-07-india-relief.n1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "State tops of the Northeast",
+            "as": "উত্তৰ-পূবৰ ৰাজ্যৰ শিখৰ"
+          },
+          "text": [
+            {
+              "en": "Saramati, 3,826 m, tops Nagaland in the Patkai belt. Phawngpui or Blue Mountain, 2,157 m, tops Mizoram.",
+              "as": "৩,৮২৬ মিটাৰৰ চাৰামাটি পাটকাই শ্ৰেণীত নাগালেণ্ডৰ সৰ্বোচ্চ। ২,১৫৭ মিটাৰৰ ফৱংপুই বা নীল পৰ্বত মিজোৰামৰ।"
+            },
+            {
+              "en": "Shillong Peak, 1,965 m, tops Meghalaya. From north to south run the Dafla, Miri, Abor and Mishmi hills.",
+              "as": "১,৯৬৫ মিটাৰৰ শ্বিলং শিখৰ মেঘালয়ৰ। উত্তৰত ডফলা, মিৰি, আবৰ আৰু মিছমি পাহাৰ।"
+            }
+          ],
+          "figure": {
+            "kind": "peaks3",
+            "spots": [
+              {
+                "en": "Saramati · 3,826 m",
+                "as": "চাৰামাটি · ৩,৮২৬ মি."
+              },
+              {
+                "en": "Phawngpui · 2,157 m",
+                "as": "ফৱংপুই · ২,১৫৭ মি."
+              },
+              {
+                "en": "Shillong Peak · 1,965 m",
+                "as": "শ্বিলং শিখৰ · ১,৯৬৫ মি."
+              }
+            ]
+          },
+          "id": "gf-07-india-relief.n1.03"
+        },
+        {
+          "type": "order",
+          "q": {
+            "en": "Walk from the foothills to the river.",
+            "as": "পাদদেশৰ পৰা নদীলৈ খোজ দিয়া।"
+          },
+          "items": [
+            {
+              "en": "Bhabar",
+              "as": "ভাবৰ"
+            },
+            {
+              "en": "Terai",
+              "as": "তৰাই"
+            },
+            {
+              "en": "Bhangar",
+              "as": "বাংগৰ"
+            },
+            {
+              "en": "Khadar",
+              "as": "খাদৰ"
+            }
+          ],
+          "why": {
+            "en": "Pebbles, damp land, old alluvium, new alluvium.",
+            "as": "শিলগুটি, সেমেকা মাটি, পুৰণি পলস, নতুন পলস।"
+          },
+          "id": "gf-07-india-relief.n1.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Saramati",
+                "as": "চাৰামাটি"
+              },
+              {
+                "en": "Nagaland",
+                "as": "নাগালেণ্ড"
+              }
+            ],
+            [
+              {
+                "en": "Phawngpui",
+                "as": "ফৱংপুই"
+              },
+              {
+                "en": "Mizoram",
+                "as": "মিজোৰাম"
+              }
+            ],
+            [
+              {
+                "en": "Shillong Peak",
+                "as": "শ্বিলং শিখৰ"
+              },
+              {
+                "en": "Meghalaya",
+                "as": "মেঘালয়"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Three state high points.",
+            "as": "তিনিখন ৰাজ্যৰ উচ্চতম বিন্দু।"
+          },
+          "id": "gf-07-india-relief.n1.05"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Streams vanish underground in the",
+            "as": "সোঁতা মাটিৰ তলত লুকায়"
+          },
+          "after": {
+            "en": "belt.",
+            "as": " পটিত।"
+          },
+          "options": [
+            {
+              "en": "Bhabar",
+              "as": "ভাবৰ"
+            },
+            {
+              "en": "Khadar",
+              "as": "খাদৰ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "They reappear in the Terai.",
+            "as": "তৰাইত সিহঁত ওলায়।"
+          },
+          "id": "gf-07-india-relief.n1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Terai",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: তৰাই"
+          },
+          "kind": "plainbelts4",
+          "answer": 1,
+          "answerText": {
+            "en": "Terai · damp",
+            "as": "তৰাই · সেমেকা"
+          },
+          "why": {
+            "en": "Pin 2: Terai · damp.",
+            "as": "2 নং পিন: তৰাই · সেমেকা।"
+          },
+          "id": "gf-07-india-relief.n1.07"
+        }
+      ],
+      "mission": {
+        "objective": {
+          "en": "Use the diagram to explain: Inside the plains, up the hills.",
+          "as": "চিত্ৰ ব্যৱহাৰ কৰি বুজোৱা: সমভূমিৰ ভিতৰ, পাহাৰৰ ওপৰ।"
+        },
+        "result": {
+          "en": "<b>Bhabar</b> is the pebbly belt at the foothills, where streams vanish. <b>Terai</b> is the damp belt where they reappear.",
+          "as": "<b>ভাবৰ</b> পাদদেশৰ শিলগুটিৰ পটি, য'ত সোঁতা লুকায়। <b>তৰাই</b> সেমেকা পটি, য'ত সিহঁত ওলায়।"
         }
       }
     }

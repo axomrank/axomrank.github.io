@@ -1,0 +1,52 @@
+/* Geography figures (app/geofigure.js). The player is a light glass theme, so colours are light tokens. */
+.gfig { --sky:#dcecf5; --paper:#fbf6ea; --paper2:#fff; --land:#d9cfa5; --water:#8cc4dc; --rock:#a08f7a; --rock2:#bfae94; --sand:#e8cf96; --grass:#cfe0ae; --grass2:#a9c781; --ink:#2b3a42; --mute:#6c7a80; --accent:#c2452d; --hi:#c2452d; --hi2:#1f6f8b; --warm:#d9662f; --cool:#17688a; --gold:#d9a227; --night:#22303f; --line:#c9bea6;
+  margin: 0 0 14px; }
+.gf-svg { display:block; width:100%; height:auto; max-height:46vh; border-radius:14px; background:var(--paper); }
+.gf-svg path, .gf-svg circle, .gf-svg rect, .gf-svg ellipse { fill:none; stroke:none; }
+.gf-svg [data-part] { transition:opacity .25s; } .gf-svg [data-part].dim { opacity:.22; }
+.gf-svg .sky { fill:var(--sky); } .gf-svg .paper { fill:var(--paper); } .gf-svg .paper2 { fill:var(--paper2); stroke:var(--ink); } .gf-svg .paperc { fill:var(--paper); }
+.gf-svg .card { fill:var(--paper2); stroke:var(--line); } .gf-svg .night { fill:var(--night); } .gf-svg .dawn { fill:#f4d9b0; }
+.gf-svg .land { fill:var(--land); stroke:color-mix(in srgb,var(--ink) 45%,transparent); stroke-width:.7; } .gf-svg .water { fill:var(--water); } .gf-svg .water2 { fill:color-mix(in srgb,var(--water) 70%,var(--night)); }
+.gf-svg .rock { fill:var(--rock); } .gf-svg .rock2 { fill:var(--rock2); } .gf-svg .sand { fill:var(--sand); } .gf-svg .sandy { fill:var(--sand); stroke:var(--gold); stroke-width:1; }
+.gf-svg .grass { fill:var(--grass); } .gf-svg .grass2 { fill:var(--grass2); } .gf-svg .soil { fill:#8d6e4f; } .gf-svg .turf { stroke:var(--grass2); stroke-width:5; }
+.gf-svg .alluv { fill:#b9d27f; stroke:#7f9d45; stroke-width:.8; } .gf-svg .black { fill:#3d3a38; stroke:#222; } .gf-svg .ice { fill:#f4fbff; }
+.gf-svg .ink { fill:var(--ink); } .gf-svg .accent { fill:var(--accent); stroke:#fff; stroke-width:1.2; }
+.gf-svg .hi,.gf-svg .hi2 { stroke:var(--hi); stroke-width:4; stroke-linecap:round; stroke-dasharray:1 0; } .gf-svg .hi2 { stroke:var(--hi2); }
+.gf-svg .dash { stroke:var(--mute); stroke-width:1.2; stroke-dasharray:5 5; } .gf-svg .axis { stroke:var(--mute); stroke-width:1.5; }
+.gf-svg .road { stroke:var(--mute); stroke-width:3; stroke-dasharray:9 5; } .gf-svg .spark { stroke:var(--accent); stroke-width:2.4; stroke-linejoin:round; }
+.gf-svg .ring { fill:var(--paper2); stroke:var(--ink); stroke-width:2; } .gf-svg .needle { fill:var(--accent); } .gf-svg .needle2 { fill:var(--mute); }
+.gf-svg .grid ellipse { stroke:color-mix(in srgb,#fff 60%,transparent); stroke-width:1; }
+.gf-svg .ctr ellipse { stroke:color-mix(in srgb,var(--ink) 60%,transparent); stroke-width:1.2; } .gf-svg .hic ellipse { stroke:var(--hi); stroke-width:1.5; }
+.gf-svg .peak { fill:var(--rock); stroke:var(--ink); stroke-width:.8; } .gf-svg .peak2 { fill:var(--rock2); }
+.gf-svg .sunc { fill:#f4b63f; } .gf-svg .moon { fill:#e7e7dc; } .gf-svg .dayc { fill:#7dc0dd; } .gf-svg .nightc { fill:#2f4a6b; } .gf-svg .hotcap { fill:#f0ae57; } .gf-svg .coolcap { fill:#3e6f96; }
+.gf-svg .crust { fill:#8a6d4b; } .gf-svg .mantle { fill:#d66a34; } .gf-svg .core { fill:#f4c24a; } .gf-svg .melt { fill:#e0562c; } .gf-svg .fault { stroke:var(--ink); stroke-width:2; stroke-dasharray:6 3; }
+.gf-svg .fold { stroke:var(--rock); stroke-width:6; } .gf-svg .river,.gf-svg .riverthin { stroke:var(--water); stroke-width:5; stroke-linecap:round; } .gf-svg .riverthick { stroke:var(--water); stroke-width:10; }
+.gf-svg .riverw { stroke:var(--water); stroke-width:26; } .gf-svg .riverw2 { stroke:var(--water); stroke-width:12; }
+.gf-svg .river-flow { stroke:var(--cool); stroke-width:3; stroke-dasharray:10 12; animation:gf-flow 1.6s linear infinite; }
+.gf-svg .riverline { stroke:var(--cool); stroke-width:2.8; stroke-linejoin:round; stroke-dasharray:10 5; animation:gf-flow 2s linear infinite; }
+.gf-svg .gf-ar { stroke:var(--ink); stroke-width:2.4; stroke-linecap:round; } .gf-svg .gf-ah { fill:var(--ink); }
+.gf-svg .gf-ar.flow { stroke-dasharray:8 7; animation:gf-flow 1.4s linear infinite; }
+.gf-svg .gf-ar.warm { stroke:var(--warm); } .gf-svg .gf-ah.warm { fill:var(--warm); } .gf-svg .gf-ar.cool,.gf-svg .gf-ar.wind { stroke:var(--cool); } .gf-svg .gf-ah.cool,.gf-svg .gf-ah.wind { fill:var(--cool); }
+.gf-svg .gf-ar.cool2 { stroke:var(--mute); } .gf-svg .gf-ah.cool2 { fill:var(--mute); } .gf-svg .gf-ar.sunray { stroke:#f4b63f; } .gf-svg .gf-ah.sunray { fill:#f4b63f; }
+.gf-svg .cloud { fill:#fff; stroke:var(--line); animation:gf-drift 5s ease-in-out infinite alternate; } .gf-svg .drop { stroke:var(--cool); stroke-width:2.5; stroke-linecap:round; stroke-dasharray:6 16; animation:gf-rain 1s linear infinite; }
+.gf-svg .soak { stroke:var(--cool); stroke-width:2.5; stroke-dasharray:5 9; animation:gf-flow 1.6s linear infinite reverse; }
+.gf-svg .wave { stroke:#fff; stroke-width:3; } .gf-svg .wgo { stroke:var(--cool); fill:var(--water); animation:gf-roll 3s linear infinite; }
+.gf-svg .wavebig { fill:var(--cool); } .gf-svg .house { fill:var(--paper2); stroke:var(--ink); stroke-width:1; } .gf-svg .swirl { stroke:#fff; stroke-width:9; stroke-linecap:round; } .gf-svg .eye { fill:var(--night); }
+.gf-svg .seahi { fill:color-mix(in srgb,var(--cool) 42%,transparent); } .gf-svg .iso { stroke:var(--mute); stroke-width:1.3; }
+.gf-svg .tree { fill:#3f8c55; } .gf-svg .treez { fill:#3f8c55; stroke:#2c6a3f; } .gf-svg .trunk { fill:#6b4f35; } .gf-svg .thorn { stroke:#6b7f3a; stroke-width:3; stroke-linecap:round; } .gf-svg .cracks { stroke:#a9a097; stroke-width:1.6; }
+.gf-svg .bwater { fill:var(--cool); } .gf-svg .bmute { fill:color-mix(in srgb,var(--mute) 50%,transparent); } .gf-svg .bgold { fill:var(--gold); }
+.gf-svg .slice { stroke:var(--paper); stroke-width:1.5; }
+.gf-svg .grow { transform-box:fill-box; transform-origin:bottom; animation:gf-grow .7s ease-out both; } .gf-svg .grain { animation:gf-drift 1.5s ease-in-out infinite alternate; } .gf-svg .tideg { animation:gf-tide 5s ease-in-out infinite alternate; }
+.gf-svg .spin { transform-box:view-box; transform-origin:50% 50%; } .gf-cyclone .spin { animation:gf-spin 9s linear infinite; }
+.gf-t { font:600 12px var(--font); fill:var(--ink); } .gf-t.bold { font-weight:800; } .gf-t.big { font-size:22px; font-weight:800; } .gf-daynight .gf-t,.gf-sunangle .gf-t { fill:#fff; } .as.gf-t { font-family:var(--font-as); }
+.gf-pin { cursor:pointer; } .gf-pin .tap { fill:transparent; } .gf-pin .dot { fill:#fff; stroke:var(--accent); stroke-width:2.4; animation:gf-pulse 2.4s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+.gf-pin text { font:800 13px var(--font); fill:var(--accent); pointer-events:none; } .gf-pin.on .dot,.gf-pin.sel .dot { fill:var(--accent); animation:none; } .gf-pin.on text,.gf-pin.sel text { fill:#fff; }
+.gf-pin.right .dot { fill:#2e8b57; stroke:#2e8b57; animation:none; } .gf-pin.right text,.gf-pin.wrong text { fill:#fff; } .gf-pin.wrong .dot { fill:#b23a3a; stroke:#b23a3a; animation:none; } .gf-pin[disabled] { cursor:default; }
+.gf-pin:focus-visible { outline:none; } .gf-pin:focus-visible .dot { stroke-width:4; }
+.gf-note { display:flex; justify-content:space-between; gap:8px; margin:7px 2px 6px; font-size:12px; font-weight:700; color:var(--mute); } .gf-sch { font-weight:600; opacity:.8; }
+.gf-spots { display:grid; gap:6px; } .gf-spot { display:flex; align-items:center; gap:9px; width:100%; min-height:42px; padding:7px 10px; text-align:left; font:600 14px/1.3 inherit; font-family:inherit; color:inherit; background:color-mix(in srgb,var(--paper) 72%,transparent); border:1.5px solid var(--line); border-radius:11px; cursor:pointer; transition:border-color .2s,background .2s; }
+.gf-spot b { flex:none; display:grid; place-items:center; width:24px; height:24px; border-radius:50%; font-size:12.5px; color:var(--accent); border:2px solid var(--accent); }
+.gf-spot.on { border-color:var(--accent); background:color-mix(in srgb,var(--accent) 13%,transparent); } .gf-spot.on b { background:var(--accent); color:#fff; }
+@keyframes gf-flow { to { stroke-dashoffset:-30; } } @keyframes gf-rain { to { stroke-dashoffset:-22; } } @keyframes gf-roll { to { transform:translateX(40px); } } @keyframes gf-drift { to { transform:translateX(9px); } }
+@keyframes gf-tide { from { transform:translateY(30px); } to { transform:translateY(-28px); } } @keyframes gf-grow { from { transform:scaleY(0); } } @keyframes gf-spin { to { transform:rotate(360deg); } } @keyframes gf-pulse { 50% { transform:scale(1.13); } }
+@media (prefers-reduced-motion: reduce) { .gf-svg * { animation:none !important; } }

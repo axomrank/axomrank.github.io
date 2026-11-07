@@ -1,0 +1,693 @@
+{
+  "id": "ec-01-measuring-economy",
+  "course": "economy-welfare",
+  "no": 1,
+  "version": 1,
+  "king": {
+    "en": "Measuring an economy",
+    "as": "অৰ্থনীতি জুখা"
+  },
+  "reign": {
+    "en": "Income, poverty, prices",
+    "as": "আয়, দৰিদ্ৰতা, দাম"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Ministry of Statistics and Programme Implementation",
+      "url": "https://www.mospi.gov.in/",
+      "used_for": "GDP, CPI and IIP publishing bodies"
+    },
+    {
+      "title": "World Bank country classifications",
+      "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/906519",
+      "used_for": "Income groups"
+    },
+    {
+      "title": "NITI Aayog National MPI",
+      "url": "https://www.niti.gov.in/",
+      "used_for": "National MPI indicators"
+    }
+  ],
+  "checkedOn": "2026-11-07",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Who counts as rich?",
+        "as": "কোন ধনী বুলি গণ্য হয়?"
+      },
+      "icon": "chart",
+      "learned": [
+        {
+          "en": "The World Bank ranks countries by <b>GNI per capita</b>, using the Atlas method.",
+          "as": "বিশ্ব বেংকে এটলাছ পদ্ধতিৰে <b>মূৰপিছু GNI</b> অনুসৰি দেশ শ্ৰেণীবদ্ধ কৰে।"
+        },
+        {
+          "en": "Its four groups are low, lower-middle, upper-middle and high income. The dollar lines are revised every year.",
+          "as": "চাৰিটা গোট হ'ল নিম্ন, নিম্ন-মধ্য, উচ্চ-মধ্য আৰু উচ্চ আয়। ডলাৰৰ সীমা প্ৰতি বছৰে সলনি হয়।"
+        },
+        {
+          "en": "The Multidimensional Poverty Index looks at <b>health, education and living standards</b>.",
+          "as": "বহুমাত্ৰিক দৰিদ্ৰতা সূচকাংকে <b>স্বাস্থ্য, শিক্ষা আৰু জীৱনধাৰণৰ মান</b> চায়।"
+        },
+        {
+          "en": "The global index has 10 indicators. NITI Aayog’s national index has 12, adding maternal health and bank accounts.",
+          "as": "বিশ্ব সূচকাংকত ১০টা সূচক আছে। নীতি আয়োগৰ ৰাষ্ট্ৰীয় সূচকাংকত ১২টা, মাতৃ স্বাস্থ্য আৰু বেংক একাউণ্ট যোগ কৰা হৈছে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Four income rungs",
+            "as": "আয়ৰ চাৰিটা খাপ"
+          },
+          "text": [
+            {
+              "en": "The World Bank ranks countries by <b>GNI per capita</b>, using the Atlas method.",
+              "as": "বিশ্ব বেংকে এটলাছ পদ্ধতিৰে <b>মূৰপিছু GNI</b> অনুসৰি দেশ শ্ৰেণীবদ্ধ কৰে।"
+            },
+            {
+              "en": "Its four groups are low, lower-middle, upper-middle and high income. The dollar lines are revised every year.",
+              "as": "চাৰিটা গোট হ'ল নিম্ন, নিম্ন-মধ্য, উচ্চ-মধ্য আৰু উচ্চ আয়। ডলাৰৰ সীমা প্ৰতি বছৰে সলনি হয়।"
+            }
+          ],
+          "figure": {
+            "kind": "stairs4",
+            "spots": [
+              {
+                "en": "Low income · below about $1,145",
+                "as": "নিম্ন আয় · প্ৰায় $১,১৪৫ৰ তলত"
+              },
+              {
+                "en": "Lower-middle · up to about $4,515",
+                "as": "নিম্ন-মধ্য · প্ৰায় $৪,৫১৫ লৈ"
+              },
+              {
+                "en": "Upper-middle · up to about $14,005",
+                "as": "উচ্চ-মধ্য · প্ৰায় $১৪,০০৫ লৈ"
+              },
+              {
+                "en": "High income · above that",
+                "as": "উচ্চ আয় · তাৰ ওপৰত"
+              }
+            ]
+          },
+          "id": "ec01.u1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "Each country chooses its own World Bank income group.",
+            "as": "প্ৰতিখন দেশে নিজৰ বিশ্ব বেংক আয় গোট নিজে বাছে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "The World Bank groups by GNI per capita. WTO status, by contrast, is self-declared.",
+            "as": "বিশ্ব বেংকে মূৰপিছু GNI অনুসৰি ভাগ কৰে। WTOত অৱশ্যে দেশে নিজে ঘোষণা কৰে।"
+          },
+          "id": "ec01.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Poverty is more than money",
+            "as": "দৰিদ্ৰতা কেৱল ধন নহয়"
+          },
+          "text": [
+            {
+              "en": "The Multidimensional Poverty Index looks at <b>health, education and living standards</b>.",
+              "as": "বহুমাত্ৰিক দৰিদ্ৰতা সূচকাংকে <b>স্বাস্থ্য, শিক্ষা আৰু জীৱনধাৰণৰ মান</b> চায়।"
+            },
+            {
+              "en": "The global index has 10 indicators. NITI Aayog’s national index has 12, adding maternal health and bank accounts.",
+              "as": "বিশ্ব সূচকাংকত ১০টা সূচক আছে। নীতি আয়োগৰ ৰাষ্ট্ৰীয় সূচকাংকত ১২টা, মাতৃ স্বাস্থ্য আৰু বেংক একাউণ্ট যোগ কৰা হৈছে।"
+            }
+          ],
+          "figure": {
+            "kind": "pillars3",
+            "spots": [
+              {
+                "en": "Health",
+                "as": "স্বাস্থ্য"
+              },
+              {
+                "en": "Education",
+                "as": "শিক্ষা"
+              },
+              {
+                "en": "Standard of living",
+                "as": "জীৱনধাৰণৰ মান"
+              }
+            ]
+          },
+          "id": "ec01.u1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "NITI Aayog's national MPI uses",
+            "as": "নীতি আয়োগৰ ৰাষ্ট্ৰীয় MPIত আছে"
+          },
+          "after": {
+            "en": "indicators.",
+            "as": "টা সূচক।"
+          },
+          "options": [
+            {
+              "en": "12",
+              "as": "১২"
+            },
+            {
+              "en": "10",
+              "as": "১০"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Twelve: the ten global ones plus maternal health and bank accounts.",
+            "as": "বাৰটা: বিশ্বৰ দহটা আৰু মাতৃ স্বাস্থ্য ও বেংক একাউণ্ট।"
+          },
+          "id": "ec01.u1.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "World Bank",
+                "as": "বিশ্ব বেংক"
+              },
+              {
+                "en": "GNI per capita groups",
+                "as": "মূৰপিছু GNI গোট"
+              }
+            ],
+            [
+              {
+                "en": "WTO",
+                "as": "WTO"
+              },
+              {
+                "en": "self-declared status",
+                "as": "নিজে ঘোষিত মৰ্যাদা"
+              }
+            ],
+            [
+              {
+                "en": "IMF",
+                "as": "IMF"
+              },
+              {
+                "en": "advanced and emerging economies",
+                "as": "উন্নত আৰু উদীয়মান অৰ্থনীতি"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Three bodies, three ways of sorting countries.",
+            "as": "তিনিটা সংস্থা, দেশ ভগোৱাৰ তিনিটা ধৰণ।"
+          },
+          "id": "ec01.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is NOT an MPI dimension?",
+            "as": "কোনটো MPIৰ মাত্ৰা নহয়?"
+          },
+          "options": [
+            {
+              "en": "Military strength",
+              "as": "সামৰিক শক্তি"
+            },
+            {
+              "en": "Health",
+              "as": "স্বাস্থ্য"
+            },
+            {
+              "en": "Education",
+              "as": "শিক্ষা"
+            },
+            {
+              "en": "Living standards",
+              "as": "জীৱনধাৰণৰ মান"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "MPI has three dimensions, and none is military.",
+            "as": "MPIৰ তিনিটা মাত্ৰা; কোনোটোৱেই সামৰিক নহয়।"
+          },
+          "id": "ec01.u1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: High income",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: উচ্চ আয়"
+          },
+          "kind": "stairs4",
+          "answer": 3,
+          "answerText": {
+            "en": "High income · above that",
+            "as": "উচ্চ আয় · তাৰ ওপৰত"
+          },
+          "why": {
+            "en": "Pin 4: High income · above that.",
+            "as": "4 নং পিন: উচ্চ আয় · তাৰ ওপৰত।"
+          },
+          "id": "ec01.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Which index measures what?",
+        "as": "কোন সূচকে কি জোখে?"
+      },
+      "icon": "bars",
+      "learned": [
+        {
+          "en": "<b>CPI</b> tracks what households pay. NSO publishes it, with base year 2024.",
+          "as": "<b>CPI</b>য়ে ঘৰুৱা গ্ৰাহকে দিয়া দাম জোখে। NSOয়ে প্ৰকাশ কৰে, ভিত্তি বৰ্ষ ২০২৪।"
+        },
+        {
+          "en": "<b>WPI</b> tracks bulk prices. The Office of the Economic Adviser in the Commerce Ministry publishes it, base 2011–12.",
+          "as": "<b>WPI</b>য়ে পাইকাৰী দাম জোখে। বাণিজ্য মন্ত্ৰালয়ৰ অৰ্থনৈতিক উপদেষ্টাৰ কাৰ্যালয়ে প্ৰকাশ কৰে, ভিত্তি ২০১১–১২।"
+        },
+        {
+          "en": "GDP and the Index of Industrial Production come from the statistics ministry, MoSPI. Both now use 2022–23 as base.",
+          "as": "GDP আৰু ঔদ্যোগিক উৎপাদন সূচকাংক পৰিসংখ্যা মন্ত্ৰালয় MoSPIৰ। দুয়োটাৰে ভিত্তি এতিয়া ২০২২–২৩।"
+        },
+        {
+          "en": "IIP covers mining, manufacturing and electricity. A separate index follows eight core industries every month.",
+          "as": "IIPত খনন, বিনিৰ্মাণ আৰু বিদ্যুৎ আছে। আঠটা মূল উদ্যোগৰ সূচকাংক পৃথকে প্ৰতি মাহে ওলায়।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "The price thermometers",
+            "as": "দামৰ তাপমান যন্ত্ৰ"
+          },
+          "text": [
+            {
+              "en": "<b>CPI</b> tracks what households pay. NSO publishes it, with base year 2024.",
+              "as": "<b>CPI</b>য়ে ঘৰুৱা গ্ৰাহকে দিয়া দাম জোখে। NSOয়ে প্ৰকাশ কৰে, ভিত্তি বৰ্ষ ২০২৪।"
+            },
+            {
+              "en": "<b>WPI</b> tracks bulk prices. The Office of the Economic Adviser in the Commerce Ministry publishes it, base 2011–12.",
+              "as": "<b>WPI</b>য়ে পাইকাৰী দাম জোখে। বাণিজ্য মন্ত্ৰালয়ৰ অৰ্থনৈতিক উপদেষ্টাৰ কাৰ্যালয়ে প্ৰকাশ কৰে, ভিত্তি ২০১১–১২।"
+            }
+          ],
+          "figure": {
+            "kind": "scales2",
+            "spots": [
+              {
+                "en": "CPI · retail prices",
+                "as": "CPI · খুচুৰা দাম"
+              },
+              {
+                "en": "WPI · wholesale prices",
+                "as": "WPI · পাইকাৰী দাম"
+              }
+            ]
+          },
+          "id": "ec01.u2.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "WPI is published by the National Statistical Office.",
+            "as": "WPI ৰাষ্ট্ৰীয় পৰিসংখ্যা কাৰ্যালয়ে প্ৰকাশ কৰে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "WPI comes from the Office of the Economic Adviser, under the Commerce Ministry.",
+            "as": "WPI বাণিজ্য মন্ত্ৰালয়ৰ অৰ্থনৈতিক উপদেষ্টাৰ কাৰ্যালয়ৰ পৰা ওলায়।"
+          },
+          "id": "ec01.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Output has its own gauges",
+            "as": "উৎপাদনৰো নিজা জোখ"
+          },
+          "text": [
+            {
+              "en": "GDP and the Index of Industrial Production come from the statistics ministry, MoSPI. Both now use 2022–23 as base.",
+              "as": "GDP আৰু ঔদ্যোগিক উৎপাদন সূচকাংক পৰিসংখ্যা মন্ত্ৰালয় MoSPIৰ। দুয়োটাৰে ভিত্তি এতিয়া ২০২২–২৩।"
+            },
+            {
+              "en": "IIP covers mining, manufacturing and electricity. A separate index follows eight core industries every month.",
+              "as": "IIPত খনন, বিনিৰ্মাণ আৰু বিদ্যুৎ আছে। আঠটা মূল উদ্যোগৰ সূচকাংক পৃথকে প্ৰতি মাহে ওলায়।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "Mining",
+                "as": "খনন"
+              },
+              {
+                "en": "Manufacturing",
+                "as": "বিনিৰ্মাণ"
+              },
+              {
+                "en": "Electricity",
+                "as": "বিদ্যুৎ"
+              }
+            ]
+          },
+          "id": "ec01.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "CPI",
+                "as": "CPI"
+              },
+              {
+                "en": "households’ retail prices",
+                "as": "ঘৰুৱা খুচুৰা দাম"
+              }
+            ],
+            [
+              {
+                "en": "WPI",
+                "as": "WPI"
+              },
+              {
+                "en": "bulk prices",
+                "as": "পাইকাৰী দাম"
+              }
+            ],
+            [
+              {
+                "en": "IIP",
+                "as": "IIP"
+              },
+              {
+                "en": "factory and mine output",
+                "as": "কাৰখানা আৰু খনিৰ উৎপাদন"
+              }
+            ],
+            [
+              {
+                "en": "CPI (IW)",
+                "as": "CPI (IW)"
+              },
+              {
+                "en": "industrial workers’ basket",
+                "as": "ঔদ্যোগিক শ্ৰমিকৰ ঝুৰি"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each index answers a different question.",
+            "as": "প্ৰতিটো সূচকে বেলেগ প্ৰশ্নৰ উত্তৰ দিয়ে।"
+          },
+          "id": "ec01.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "IIP covers mining, manufacturing and",
+            "as": "IIPত খনন, বিনিৰ্মাণ আৰু"
+          },
+          "after": {
+            "en": ".",
+            "as": "আছে।"
+          },
+          "options": [
+            {
+              "en": "electricity",
+              "as": "বিদ্যুৎ"
+            },
+            {
+              "en": "banking",
+              "as": "বেংকিং"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Those are its three sectors.",
+            "as": "এই তিনিটাই ইয়াৰ খণ্ড।"
+          },
+          "id": "ec01.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is published under the Labour Ministry?",
+            "as": "কোনটো শ্ৰম মন্ত্ৰালয়ৰ অধীনত প্ৰকাশ হয়?"
+          },
+          "options": [
+            {
+              "en": "CPI (IW)",
+              "as": "CPI (IW)"
+            },
+            {
+              "en": "GDP",
+              "as": "GDP"
+            },
+            {
+              "en": "WPI",
+              "as": "WPI"
+            },
+            {
+              "en": "IIP",
+              "as": "IIP"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "CPI for industrial workers comes from the Labour Bureau.",
+            "as": "ঔদ্যোগিক শ্ৰমিকৰ CPI শ্ৰম ব্যুৰোৰ।"
+          },
+          "id": "ec01.u2.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: WPI",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: WPI"
+          },
+          "kind": "scales2",
+          "answer": 1,
+          "answerText": {
+            "en": "WPI · wholesale prices",
+            "as": "WPI · পাইকাৰী দাম"
+          },
+          "why": {
+            "en": "Pin 2: WPI · wholesale prices.",
+            "as": "2 নং পিন: WPI · পাইকাৰী দাম।"
+          },
+          "id": "ec01.u2.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "Each country chooses its own World Bank income group.",
+          "as": "প্ৰতিখন দেশে নিজৰ বিশ্ব বেংক আয় গোট নিজে বাছে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "The World Bank groups by GNI per capita. WTO status, by contrast, is self-declared.",
+          "as": "বিশ্ব বেংকে মূৰপিছু GNI অনুসৰি ভাগ কৰে। WTOত অৱশ্যে দেশে নিজে ঘোষণা কৰে।"
+        },
+        "id": "ec01.test.01"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "NITI Aayog's national MPI uses",
+          "as": "নীতি আয়োগৰ ৰাষ্ট্ৰীয় MPIত আছে"
+        },
+        "after": {
+          "en": "indicators.",
+          "as": "টা সূচক।"
+        },
+        "options": [
+          {
+            "en": "12",
+            "as": "১২"
+          },
+          {
+            "en": "10",
+            "as": "১০"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Twelve: the ten global ones plus maternal health and bank accounts.",
+          "as": "বাৰটা: বিশ্বৰ দহটা আৰু মাতৃ স্বাস্থ্য ও বেংক একাউণ্ট।"
+        },
+        "id": "ec01.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "World Bank",
+              "as": "বিশ্ব বেংক"
+            },
+            {
+              "en": "GNI per capita groups",
+              "as": "মূৰপিছু GNI গোট"
+            }
+          ],
+          [
+            {
+              "en": "WTO",
+              "as": "WTO"
+            },
+            {
+              "en": "self-declared status",
+              "as": "নিজে ঘোষিত মৰ্যাদা"
+            }
+          ],
+          [
+            {
+              "en": "IMF",
+              "as": "IMF"
+            },
+            {
+              "en": "advanced and emerging economies",
+              "as": "উন্নত আৰু উদীয়মান অৰ্থনীতি"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Three bodies, three ways of sorting countries.",
+          "as": "তিনিটা সংস্থা, দেশ ভগোৱাৰ তিনিটা ধৰণ।"
+        },
+        "id": "ec01.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "WPI is published by the National Statistical Office.",
+          "as": "WPI ৰাষ্ট্ৰীয় পৰিসংখ্যা কাৰ্যালয়ে প্ৰকাশ কৰে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "WPI comes from the Office of the Economic Adviser, under the Commerce Ministry.",
+          "as": "WPI বাণিজ্য মন্ত্ৰালয়ৰ অৰ্থনৈতিক উপদেষ্টাৰ কাৰ্যালয়ৰ পৰা ওলায়।"
+        },
+        "id": "ec01.test.04"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "CPI",
+              "as": "CPI"
+            },
+            {
+              "en": "households’ retail prices",
+              "as": "ঘৰুৱা খুচুৰা দাম"
+            }
+          ],
+          [
+            {
+              "en": "WPI",
+              "as": "WPI"
+            },
+            {
+              "en": "bulk prices",
+              "as": "পাইকাৰী দাম"
+            }
+          ],
+          [
+            {
+              "en": "IIP",
+              "as": "IIP"
+            },
+            {
+              "en": "factory and mine output",
+              "as": "কাৰখানা আৰু খনিৰ উৎপাদন"
+            }
+          ],
+          [
+            {
+              "en": "CPI (IW)",
+              "as": "CPI (IW)"
+            },
+            {
+              "en": "industrial workers’ basket",
+              "as": "ঔদ্যোগিক শ্ৰমিকৰ ঝুৰি"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Each index answers a different question.",
+          "as": "প্ৰতিটো সূচকে বেলেগ প্ৰশ্নৰ উত্তৰ দিয়ে।"
+        },
+        "id": "ec01.test.05"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "IIP covers mining, manufacturing and",
+          "as": "IIPত খনন, বিনিৰ্মাণ আৰু"
+        },
+        "after": {
+          "en": ".",
+          "as": "আছে।"
+        },
+        "options": [
+          {
+            "en": "electricity",
+            "as": "বিদ্যুৎ"
+          },
+          {
+            "en": "banking",
+            "as": "বেংকিং"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Those are its three sectors.",
+          "as": "এই তিনিটাই ইয়াৰ খণ্ড।"
+        },
+        "id": "ec01.test.06"
+      }
+    ]
+  }
+}

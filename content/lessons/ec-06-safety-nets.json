@@ -1,0 +1,693 @@
+{
+  "id": "ec-06-safety-nets",
+  "course": "economy-welfare",
+  "no": 6,
+  "version": 1,
+  "king": {
+    "en": "Safety nets for all",
+    "as": "সকলোৰে সুৰক্ষা জাল"
+  },
+  "reign": {
+    "en": "Women, children, disability, poor",
+    "as": "মহিলা, শিশু, দিব্যাংগ, দৰিদ্ৰ"
+  },
+  "portrait": "library-story/life-writing-manuscript-preparation-118dc72d.webp",
+  "sources": [
+    {
+      "title": "Ministry of Women and Child Development",
+      "url": "https://wcd.gov.in/",
+      "used_for": "Women and child laws and schemes"
+    },
+    {
+      "title": "Department of Empowerment of Persons with Disabilities",
+      "url": "https://depwd.gov.in/",
+      "used_for": "RPwD Act and schemes"
+    },
+    {
+      "title": "Ministry of Rural Development",
+      "url": "https://rural.gov.in/",
+      "used_for": "NSAP and rural employment"
+    }
+  ],
+  "checkedOn": "2026-11-07",
+  "review_notes": {
+    "assamese": "pending editorial review",
+    "facts": "pending subject review"
+  },
+  "map": {
+    "base": "india",
+    "box": [
+      67,
+      7,
+      97,
+      36
+    ],
+    "show": []
+  },
+  "units": [
+    {
+      "id": "u1",
+      "title": {
+        "en": "Women and children by law",
+        "as": "আইনত মহিলা আৰু শিশু"
+      },
+      "icon": "shield",
+      "learned": [
+        {
+          "en": "The Domestic Violence Act came in 2005, and the workplace sexual harassment law, PoSH, in 2013.",
+          "as": "ঘৰুৱা হিংসা আইন ২০০৫ত আৰু কৰ্মস্থলীৰ যৌন হাৰাশাস্তি আইন PoSH ২০১৩ত আহিল।"
+        },
+        {
+          "en": "The 2017 Maternity Benefit amendment gives 26 weeks’ paid leave where 10 or more people work.",
+          "as": "২০১৭ৰ মাতৃত্ব সুবিধা সংশোধনে ১০ জন বা অধিক থকা ঠাইত ২৬ সপ্তাহৰ দৰমহাসহ ছুটি দিয়ে।"
+        },
+        {
+          "en": "POCSO, 2012, is gender-neutral and protects everyone under 18 with child-friendly trials.",
+          "as": "POCSO, ২০১২ লিংগ নিৰপেক্ষ, ১৮ৰ তলৰ সকলোকে শিশু-বান্ধৱ বিচাৰেৰে সুৰক্ষা দিয়ে।"
+        },
+        {
+          "en": "The Juvenile Justice Act 2015 allows 16–18-year-olds to be tried as adults for heinous crimes. Legal marriage age is 18 for women and 21 for men.",
+          "as": "২০১৫ৰ কিশোৰ ন্যায় আইনে গুৰুতৰ অপৰাধত ১৬–১৮ বছৰীয়াক প্ৰাপ্তবয়স্কৰ দৰে বিচাৰ কৰিব দিয়ে। বিয়াৰ বয়স মহিলাৰ ১৮, পুৰুষৰ ২১।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "Laws at home and work",
+            "as": "ঘৰ আৰু কৰ্মস্থলীৰ আইন"
+          },
+          "text": [
+            {
+              "en": "The Domestic Violence Act came in 2005, and the workplace sexual harassment law, PoSH, in 2013.",
+              "as": "ঘৰুৱা হিংসা আইন ২০০৫ত আৰু কৰ্মস্থলীৰ যৌন হাৰাশাস্তি আইন PoSH ২০১৩ত আহিল।"
+            },
+            {
+              "en": "The 2017 Maternity Benefit amendment gives 26 weeks’ paid leave where 10 or more people work.",
+              "as": "২০১৭ৰ মাতৃত্ব সুবিধা সংশোধনে ১০ জন বা অধিক থকা ঠাইত ২৬ সপ্তাহৰ দৰমহাসহ ছুটি দিয়ে।"
+            }
+          ],
+          "figure": {
+            "kind": "line4",
+            "spots": [
+              {
+                "en": "Dowry Prohibition · 1961",
+                "as": "যৌতুক নিষেধ · ১৯৬১"
+              },
+              {
+                "en": "Domestic Violence · 2005",
+                "as": "ঘৰুৱা হিংসা · ২০০৫"
+              },
+              {
+                "en": "PoSH · 2013",
+                "as": "PoSH · ২০১৩"
+              },
+              {
+                "en": "Maternity amendment · 2017",
+                "as": "মাতৃত্ব সংশোধন · ২০১৭"
+              }
+            ]
+          },
+          "id": "ec06.u1.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "POCSO protects only girls.",
+            "as": "POCSOয়ে কেৱল ছোৱালীক সুৰক্ষা দিয়ে।"
+          },
+          "answer": false,
+          "why": {
+            "en": "It is gender-neutral.",
+            "as": "ই লিংগ নিৰপেক্ষ।"
+          },
+          "id": "ec06.u1.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Protecting childhood",
+            "as": "শৈশৱৰ সুৰক্ষা"
+          },
+          "text": [
+            {
+              "en": "POCSO, 2012, is gender-neutral and protects everyone under 18 with child-friendly trials.",
+              "as": "POCSO, ২০১২ লিংগ নিৰপেক্ষ, ১৮ৰ তলৰ সকলোকে শিশু-বান্ধৱ বিচাৰেৰে সুৰক্ষা দিয়ে।"
+            },
+            {
+              "en": "The Juvenile Justice Act 2015 allows 16–18-year-olds to be tried as adults for heinous crimes. Legal marriage age is 18 for women and 21 for men.",
+              "as": "২০১৫ৰ কিশোৰ ন্যায় আইনে গুৰুতৰ অপৰাধত ১৬–১৮ বছৰীয়াক প্ৰাপ্তবয়স্কৰ দৰে বিচাৰ কৰিব দিয়ে। বিয়াৰ বয়স মহিলাৰ ১৮, পুৰুষৰ ২১।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "POCSO · under 18",
+                "as": "POCSO · ১৮ৰ তলত"
+              },
+              {
+                "en": "JJ Act · 16–18 heinous cases",
+                "as": "JJ আইন · ১৬–১৮ গুৰুতৰ গোচৰ"
+              },
+              {
+                "en": "Child marriage law · 18 and 21",
+                "as": "বাল্যবিবাহ আইন · ১৮ আৰু ২১"
+              }
+            ]
+          },
+          "id": "ec06.u1.03"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "Paid maternity leave now runs for",
+            "as": "দৰমহাসহ মাতৃত্ব ছুটি এতিয়া"
+          },
+          "after": {
+            "en": ".",
+            "as": "।"
+          },
+          "options": [
+            {
+              "en": "26 weeks",
+              "as": "২৬ সপ্তাহ"
+            },
+            {
+              "en": "12 weeks",
+              "as": "১২ সপ্তাহ"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The 2017 amendment raised it to 26 weeks.",
+            "as": "২০১৭ৰ সংশোধনে ২৬ সপ্তাহ কৰিলে।"
+          },
+          "id": "ec06.u1.04"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "Sambal",
+                "as": "সম্বল"
+              },
+              {
+                "en": "safety: One Stop Centres",
+                "as": "সুৰক্ষা: ৱান ষ্টপ চেণ্টাৰ"
+              }
+            ],
+            [
+              {
+                "en": "Samarthya",
+                "as": "সামৰ্থ্য"
+              },
+              {
+                "en": "empowerment: Ujjwala, Swadhar",
+                "as": "সবলীকৰণ: উজ্জ্বলা, স্বাধাৰ"
+              }
+            ],
+            [
+              {
+                "en": "PMMVY",
+                "as": "PMMVY"
+              },
+              {
+                "en": "maternity benefit",
+                "as": "মাতৃত্ব সুবিধা"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Mission Shakti has two arms, Sambal and Samarthya.",
+            "as": "মিছন শক্তিৰ দুটা বাহু, সম্বল আৰু সামৰ্থ্য।"
+          },
+          "id": "ec06.u1.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which is a statutory women's body?",
+            "as": "কোনটো মহিলাৰ বিধিবদ্ধ সংস্থা?"
+          },
+          "options": [
+            {
+              "en": "National Commission for Women",
+              "as": "ৰাষ্ট্ৰীয় মহিলা আয়োগ"
+            },
+            {
+              "en": "NCBC",
+              "as": "NCBC"
+            },
+            {
+              "en": "NSTFDC",
+              "as": "NSTFDC"
+            },
+            {
+              "en": "NHFDC",
+              "as": "NHFDC"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "NCW was set up by a 1990 Act.",
+            "as": "১৯৯০ৰ আইনেৰে NCW গঠিত।"
+          },
+          "id": "ec06.u1.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: JJ Act",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: JJ আইন"
+          },
+          "kind": "hub3",
+          "answer": 1,
+          "answerText": {
+            "en": "JJ Act · 16–18 heinous cases",
+            "as": "JJ আইন · ১৬–১৮ গুৰুতৰ গোচৰ"
+          },
+          "why": {
+            "en": "Pin 2: JJ Act · 16–18 heinous cases.",
+            "as": "2 নং পিন: JJ আইন · ১৬–১৮ গুৰুতৰ গোচৰ।"
+          },
+          "id": "ec06.u1.07"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": {
+        "en": "Disability and the poorest",
+        "as": "দিব্যাংগ আৰু দৰিদ্ৰতম"
+      },
+      "icon": "hands",
+      "learned": [
+        {
+          "en": "The RPwD Act 2016 replaced the 1995 law, raising recognised disabilities from 7 to 21.",
+          "as": "২০১৬ৰ RPwD আইনে ১৯৯৫ৰ আইন সলাই স্বীকৃত দিব্যাংগতা ৭ৰ পৰা ২১ কৰিলে।"
+        },
+        {
+          "en": "It also fixes 4% reservation in government jobs. UDID gives one national disability ID, and ADIP helps buy aids.",
+          "as": "ই চৰকাৰী চাকৰিত ৪% সংৰক্ষণো দিয়ে। UDIDয়ে এটা ৰাষ্ট্ৰীয় পৰিচয়পত্ৰ দিয়ে, ADIPয়ে সঁজুলি কিনাত সহায় কৰে।"
+        },
+        {
+          "en": "The Food Security Act 2013 covers about two-thirds of people with subsidised grain.",
+          "as": "২০১৩ৰ খাদ্য সুৰক্ষা আইনে প্ৰায় দুই-তৃতীয়াংশ মানুহক ৰেহাই দামত শস্য দিয়ে।"
+        },
+        {
+          "en": "A 2025 Act, VB-G RAM G, replaced MGNREGA, raising the rural work guarantee from 100 to 125 days.",
+          "as": "২০২৫ৰ আইন VB-G RAM Gয়ে MGNREGA সলাই গ্ৰাম্য কামৰ নিশ্চয়তা ১০০ৰ পৰা ১২৫ দিন কৰিলে।"
+        }
+      ],
+      "steps": [
+        {
+          "type": "story",
+          "title": {
+            "en": "From seven to twenty-one",
+            "as": "সাতৰ পৰা একৈছলৈ"
+          },
+          "text": [
+            {
+              "en": "The RPwD Act 2016 replaced the 1995 law, raising recognised disabilities from 7 to 21.",
+              "as": "২০১৬ৰ RPwD আইনে ১৯৯৫ৰ আইন সলাই স্বীকৃত দিব্যাংগতা ৭ৰ পৰা ২১ কৰিলে।"
+            },
+            {
+              "en": "It also fixes 4% reservation in government jobs. UDID gives one national disability ID, and ADIP helps buy aids.",
+              "as": "ই চৰকাৰী চাকৰিত ৪% সংৰক্ষণো দিয়ে। UDIDয়ে এটা ৰাষ্ট্ৰীয় পৰিচয়পত্ৰ দিয়ে, ADIPয়ে সঁজুলি কিনাত সহায় কৰে।"
+            }
+          ],
+          "figure": {
+            "kind": "scales2",
+            "spots": [
+              {
+                "en": "1995 Act · 7 disabilities",
+                "as": "১৯৯৫ৰ আইন · ৭ বিধ"
+              },
+              {
+                "en": "2016 Act · 21 disabilities",
+                "as": "২০১৬ৰ আইন · ২১ বিধ"
+              }
+            ]
+          },
+          "id": "ec06.u2.01"
+        },
+        {
+          "type": "tf",
+          "s": {
+            "en": "The RPwD Act recognises 21 kinds of disability.",
+            "as": "RPwD আইনে ২১ বিধ দিব্যাংগতা স্বীকাৰ কৰে।"
+          },
+          "answer": true,
+          "why": {
+            "en": "Up from 7 in the 1995 law.",
+            "as": "১৯৯৫ৰ আইনৰ ৭ৰ পৰা বাঢ়িল।"
+          },
+          "id": "ec06.u2.02"
+        },
+        {
+          "type": "story",
+          "title": {
+            "en": "Rights that feed and house",
+            "as": "খোৱা আৰু থকাৰ অধিকাৰ"
+          },
+          "text": [
+            {
+              "en": "The Food Security Act 2013 covers about two-thirds of people with subsidised grain.",
+              "as": "২০১৩ৰ খাদ্য সুৰক্ষা আইনে প্ৰায় দুই-তৃতীয়াংশ মানুহক ৰেহাই দামত শস্য দিয়ে।"
+            },
+            {
+              "en": "A 2025 Act, VB-G RAM G, replaced MGNREGA, raising the rural work guarantee from 100 to 125 days.",
+              "as": "২০২৫ৰ আইন VB-G RAM Gয়ে MGNREGA সলাই গ্ৰাম্য কামৰ নিশ্চয়তা ১০০ৰ পৰা ১২৫ দিন কৰিলে।"
+            }
+          ],
+          "figure": {
+            "kind": "hub3",
+            "spots": [
+              {
+                "en": "Food · NFSA, 2013",
+                "as": "খাদ্য · NFSA, ২০১৩"
+              },
+              {
+                "en": "Health · PM-JAY, ₹5 lakh",
+                "as": "স্বাস্থ্য · PM-JAY, ₹৫ লাখ"
+              },
+              {
+                "en": "Work · 125 days",
+                "as": "কাম · ১২৫ দিন"
+              }
+            ]
+          },
+          "id": "ec06.u2.03"
+        },
+        {
+          "type": "match",
+          "pairs": [
+            [
+              {
+                "en": "UDID",
+                "as": "UDID"
+              },
+              {
+                "en": "national disability ID",
+                "as": "ৰাষ্ট্ৰীয় দিব্যাংগ পৰিচয়"
+              }
+            ],
+            [
+              {
+                "en": "ADIP",
+                "as": "ADIP"
+              },
+              {
+                "en": "aids and appliances",
+                "as": "সঁজুলি আৰু উপকৰণ"
+              }
+            ],
+            [
+              {
+                "en": "Niramaya",
+                "as": "নিৰাময়া"
+              },
+              {
+                "en": "health cover up to ₹1 lakh",
+                "as": "₹১ লাখলৈ স্বাস্থ্য বীমা"
+              }
+            ],
+            [
+              {
+                "en": "PM SVANidhi",
+                "as": "PM SVANidhi"
+              },
+              {
+                "en": "street vendors’ working capital",
+                "as": "ফেৰিৱালাৰ কাৰ্যকৰী মূলধন"
+              }
+            ]
+          ],
+          "why": {
+            "en": "Each scheme has a narrow job.",
+            "as": "প্ৰতিটো আঁচনিৰ নিৰ্দিষ্ট কাম।"
+          },
+          "id": "ec06.u2.04"
+        },
+        {
+          "type": "inline",
+          "before": {
+            "en": "VB-G RAM G guarantees rural work for",
+            "as": "VB-G RAM Gয়ে গ্ৰাম্য কামৰ নিশ্চয়তা দিয়ে"
+          },
+          "after": {
+            "en": "a year.",
+            "as": "বছৰি।"
+          },
+          "options": [
+            {
+              "en": "125 days",
+              "as": "১২৫ দিন"
+            },
+            {
+              "en": "100 days",
+              "as": "১০০ দিন"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The old MGNREGA figure was 100.",
+            "as": "পুৰণি MGNREGAৰ সংখ্যা ১০০।"
+          },
+          "id": "ec06.u2.05"
+        },
+        {
+          "type": "odd",
+          "q": {
+            "en": "Which provides health cover of ₹5 lakh per family?",
+            "as": "প্ৰতি পৰিয়ালক ₹৫ লাখৰ স্বাস্থ্য বীমা কোনে দিয়ে?"
+          },
+          "options": [
+            {
+              "en": "PM-JAY",
+              "as": "PM-JAY"
+            },
+            {
+              "en": "NSAP",
+              "as": "NSAP"
+            },
+            {
+              "en": "PMAY",
+              "as": "PMAY"
+            },
+            {
+              "en": "UDID",
+              "as": "UDID"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Ayushman Bharat PM-JAY gives ₹5 lakh.",
+            "as": "আয়ুষ্মান ভাৰত PM-JAYয়ে ₹৫ লাখ দিয়ে।"
+          },
+          "id": "ec06.u2.06"
+        },
+        {
+          "type": "figtap",
+          "q": {
+            "en": "Tap the number for: Work",
+            "as": "ইয়াৰ সংখ্যাটো টিপা: কাম"
+          },
+          "kind": "hub3",
+          "answer": 2,
+          "answerText": {
+            "en": "Work · 125 days",
+            "as": "কাম · ১২৫ দিন"
+          },
+          "why": {
+            "en": "Pin 3: Work · 125 days.",
+            "as": "3 নং পিন: কাম · ১২৫ দিন।"
+          },
+          "id": "ec06.u2.07"
+        }
+      ]
+    }
+  ],
+  "test": {
+    "id": "test",
+    "title": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+    },
+    "learned": [],
+    "steps": [
+      {
+        "type": "tf",
+        "s": {
+          "en": "POCSO protects only girls.",
+          "as": "POCSOয়ে কেৱল ছোৱালীক সুৰক্ষা দিয়ে।"
+        },
+        "answer": false,
+        "why": {
+          "en": "It is gender-neutral.",
+          "as": "ই লিংগ নিৰপেক্ষ।"
+        },
+        "id": "ec06.test.01"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "Paid maternity leave now runs for",
+          "as": "দৰমহাসহ মাতৃত্ব ছুটি এতিয়া"
+        },
+        "after": {
+          "en": ".",
+          "as": "।"
+        },
+        "options": [
+          {
+            "en": "26 weeks",
+            "as": "২৬ সপ্তাহ"
+          },
+          {
+            "en": "12 weeks",
+            "as": "১২ সপ্তাহ"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The 2017 amendment raised it to 26 weeks.",
+          "as": "২০১৭ৰ সংশোধনে ২৬ সপ্তাহ কৰিলে।"
+        },
+        "id": "ec06.test.02"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "Sambal",
+              "as": "সম্বল"
+            },
+            {
+              "en": "safety: One Stop Centres",
+              "as": "সুৰক্ষা: ৱান ষ্টপ চেণ্টাৰ"
+            }
+          ],
+          [
+            {
+              "en": "Samarthya",
+              "as": "সামৰ্থ্য"
+            },
+            {
+              "en": "empowerment: Ujjwala, Swadhar",
+              "as": "সবলীকৰণ: উজ্জ্বলা, স্বাধাৰ"
+            }
+          ],
+          [
+            {
+              "en": "PMMVY",
+              "as": "PMMVY"
+            },
+            {
+              "en": "maternity benefit",
+              "as": "মাতৃত্ব সুবিধা"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Mission Shakti has two arms, Sambal and Samarthya.",
+          "as": "মিছন শক্তিৰ দুটা বাহু, সম্বল আৰু সামৰ্থ্য।"
+        },
+        "id": "ec06.test.03"
+      },
+      {
+        "type": "tf",
+        "s": {
+          "en": "The RPwD Act recognises 21 kinds of disability.",
+          "as": "RPwD আইনে ২১ বিধ দিব্যাংগতা স্বীকাৰ কৰে।"
+        },
+        "answer": true,
+        "why": {
+          "en": "Up from 7 in the 1995 law.",
+          "as": "১৯৯৫ৰ আইনৰ ৭ৰ পৰা বাঢ়িল।"
+        },
+        "id": "ec06.test.04"
+      },
+      {
+        "type": "match",
+        "pairs": [
+          [
+            {
+              "en": "UDID",
+              "as": "UDID"
+            },
+            {
+              "en": "national disability ID",
+              "as": "ৰাষ্ট্ৰীয় দিব্যাংগ পৰিচয়"
+            }
+          ],
+          [
+            {
+              "en": "ADIP",
+              "as": "ADIP"
+            },
+            {
+              "en": "aids and appliances",
+              "as": "সঁজুলি আৰু উপকৰণ"
+            }
+          ],
+          [
+            {
+              "en": "Niramaya",
+              "as": "নিৰাময়া"
+            },
+            {
+              "en": "health cover up to ₹1 lakh",
+              "as": "₹১ লাখলৈ স্বাস্থ্য বীমা"
+            }
+          ],
+          [
+            {
+              "en": "PM SVANidhi",
+              "as": "PM SVANidhi"
+            },
+            {
+              "en": "street vendors’ working capital",
+              "as": "ফেৰিৱালাৰ কাৰ্যকৰী মূলধন"
+            }
+          ]
+        ],
+        "why": {
+          "en": "Each scheme has a narrow job.",
+          "as": "প্ৰতিটো আঁচনিৰ নিৰ্দিষ্ট কাম।"
+        },
+        "id": "ec06.test.05"
+      },
+      {
+        "type": "inline",
+        "before": {
+          "en": "VB-G RAM G guarantees rural work for",
+          "as": "VB-G RAM Gয়ে গ্ৰাম্য কামৰ নিশ্চয়তা দিয়ে"
+        },
+        "after": {
+          "en": "a year.",
+          "as": "বছৰি।"
+        },
+        "options": [
+          {
+            "en": "125 days",
+            "as": "১২৫ দিন"
+          },
+          {
+            "en": "100 days",
+            "as": "১০০ দিন"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The old MGNREGA figure was 100.",
+          "as": "পুৰণি MGNREGAৰ সংখ্যা ১০০।"
+        },
+        "id": "ec06.test.06"
+      }
+    ]
+  }
+}

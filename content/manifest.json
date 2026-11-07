@@ -1,5 +1,5 @@
 {
- "version": "74ac3e0f35",
+ "version": "153fd36148",
  "courseRedirects": {
   "early-assam": "assam-history",
   "varman-kings": "assam-history",
@@ -26,6 +26,10 @@
   {
    "id": "assam-history",
    "file": "content/courses/assam-history.json"
+  },
+  {
+   "id": "economy-welfare",
+   "file": "content/courses/economy-welfare.json"
   },
   {
    "id": "english",
@@ -395,6 +399,90 @@
      },
      "i": "trophy",
      "ex": 5
+    }
+   ]
+  },
+  "ag-07-wild-assam": {
+   "course": "assam-geography",
+   "no": 7,
+   "version": 1,
+   "steps": 8,
+   "title": {
+    "en": "Assam’s protected map",
+    "as": "অসমৰ সংৰক্ষিত মানচিত্ৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Eight national parks",
+      "as": "আঠখন ৰাষ্ট্ৰীয় উদ্যান"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Biggest, smallest, firsts",
+      "as": "ডাঙৰ, সৰু, প্ৰথম"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u3",
+     "t": {
+      "en": "Sanctuaries of plain and north bank",
+      "as": "সমভূমি আৰু উত্তৰ পাৰৰ অভয়াৰণ্য"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u4",
+     "t": {
+      "en": "Sanctuaries of hills and the east",
+      "as": "পাহাৰ আৰু পূবৰ অভয়াৰণ্য"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u5",
+     "t": {
+      "en": "Tiger and elephant reserves",
+      "as": "ব্যাঘ্ৰ আৰু হাতী সংৰক্ষণ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "u6",
+     "t": {
+      "en": "Elephant corridors",
+      "as": "হাতী পথ"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "u7",
+     "t": {
+      "en": "Global labels and Kaziranga's ranges",
+      "as": "বিশ্ব মৰ্যাদা আৰু কাজিৰঙাৰ ৰেঞ্জ"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Protected-map test",
+      "as": "সংৰক্ষিত মানচিত্ৰৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 12
     }
    ]
   },
@@ -5966,8 +6054,8 @@
   "con-49-panchayati-raj": {
    "course": "indian-constitution",
    "no": 49,
-   "version": 1,
-   "steps": 6,
+   "version": 2,
+   "steps": 7,
    "title": {
     "en": "Panchayati Raj",
     "as": "পঞ্চায়তী ৰাজ"
@@ -6016,6 +6104,15 @@
       "as": "অসমৰ পঞ্চায়ত"
      },
      "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Committees that shaped panchayats",
+      "as": "পঞ্চায়ত গঢ়া সমিতি"
+     },
+     "i": "users",
      "ex": 5
     },
     {
@@ -6869,6 +6966,279 @@
      "t": {
       "en": "Lesson test",
       "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-01-measuring-economy": {
+   "course": "economy-welfare",
+   "no": 1,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Measuring an economy",
+    "as": "অৰ্থনীতি জুখা"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Who counts as rich?",
+      "as": "কোন ধনী বুলি গণ্য হয়?"
+     },
+     "i": "chart",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Which index measures what?",
+      "as": "কোন সূচকে কি জোখে?"
+     },
+     "i": "bars",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-02-money-and-banks": {
+   "course": "economy-welfare",
+   "no": 2,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Money and banks",
+    "as": "ধন আৰু বেংক"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Inside the RBI Act",
+      "as": "RBI আইনৰ ভিতৰত"
+     },
+     "i": "bank",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "How the rupee floats",
+      "as": "টকা কেনেকৈ ওপঙে"
+     },
+     "i": "trend",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-03-government-money": {
+   "course": "economy-welfare",
+   "no": 3,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Government money",
+    "as": "চৰকাৰী ধন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Slicing the tax pie",
+      "as": "কৰৰ পিঠা ভগোৱা"
+     },
+     "i": "chart",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Taxing across borders",
+      "as": "সীমা পাৰ কৰা কৰ"
+     },
+     "i": "globe",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-04-farm-trade-enterprise": {
+   "course": "economy-welfare",
+   "no": 4,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Farm, trade, enterprise",
+    "as": "কৃষি, বাণিজ্য, উদ্যোগ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "A floor under the farmer",
+      "as": "খেতিয়কৰ তলিৰ দাম"
+     },
+     "i": "farm",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Small firms, big trusts",
+      "as": "সৰু উদ্যোগ, ডাঙৰ ট্ৰাষ্ট"
+     },
+     "i": "building",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-05-justice-by-law": {
+   "course": "economy-welfare",
+   "no": 5,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Backward classes, SC and ST",
+    "as": "পিছপৰা শ্ৰেণী, SC আৰু ST"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "From Kalelkar to Rohini",
+      "as": "কালেলকাৰৰ পৰা ৰোহিণীলৈ"
+     },
+     "i": "scales",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Guarding SC and ST rights",
+      "as": "SC আৰু STৰ অধিকাৰ ৰক্ষা"
+     },
+     "i": "shield",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-06-safety-nets": {
+   "course": "economy-welfare",
+   "no": 6,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Safety nets for all",
+    "as": "সকলোৰে সুৰক্ষা জাল"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Women and children by law",
+      "as": "আইনত মহিলা আৰু শিশু"
+     },
+     "i": "shield",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Disability and the poorest",
+      "as": "দিব্যাংগ আৰু দৰিদ্ৰতম"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ec-07-assam-schemes": {
+   "course": "economy-welfare",
+   "no": 7,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Assam’s flagship schemes",
+    "as": "অসমৰ মুখ্য আঁচনি"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Money for women and students",
+      "as": "মহিলা আৰু শিক্ষাৰ্থীৰ ধন"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Land, loans and livelihood",
+      "as": "মাটি, ঋণ আৰু জীৱিকা"
+     },
+     "i": "map",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
      },
      "i": "trophy",
      "ex": 6
@@ -7991,7 +8361,7 @@
   "gf-01-map-skills": {
    "course": "geography-foundations",
    "no": 1,
-   "version": 1,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Find your bearings",
@@ -8005,7 +8375,7 @@
       "as": "দিশ বিচাৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8014,7 +8384,7 @@
       "as": "স্থানাংকত মিলিত হোৱা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8023,7 +8393,7 @@
       "as": "পথৰ দৈৰ্ঘ্য জোখা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8032,7 +8402,7 @@
       "as": "ঢাল পঢ়া"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "test",
@@ -8048,8 +8418,8 @@
   "gf-02-moving-earth": {
    "course": "geography-foundations",
    "no": 2,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "Read a moving Earth",
     "as": "গতিশীল পৃথিৱী পঢ়া"
@@ -8062,7 +8432,7 @@
       "as": "দিনৰ পোহৰৰ পৰা আন্ধাৰলৈ"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8071,7 +8441,7 @@
       "as": "হেলনীয়া পৃথিৱী"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8080,7 +8450,7 @@
       "as": "পৃথিৱীৰ ভিতৰ"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8089,6 +8459,15 @@
       "as": "ফলক য’ত মিলে"
      },
      "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Forces from inside and outside",
+      "as": "ভিতৰ আৰু বাহিৰৰ বল"
+     },
+     "i": "hill",
      "ex": 5
     },
     {
@@ -8105,7 +8484,7 @@
   "gf-03-landforms": {
    "course": "geography-foundations",
    "no": 3,
-   "version": 1,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "See land take shape",
@@ -8119,7 +8498,7 @@
       "as": "শিলৰ তিনিটা গোট"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8128,7 +8507,7 @@
       "as": "এটা কণাৰ পথ অনুসৰণ কৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8137,7 +8516,7 @@
       "as": "নদীৰ ভাঁজ পঢ়া"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8146,7 +8525,7 @@
       "as": "তিনিটা ভূদৃশ্য তুলনা কৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "test",
@@ -8162,7 +8541,7 @@
   "gf-04-air-and-water": {
    "course": "geography-foundations",
    "no": 4,
-   "version": 1,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Follow air and fresh water",
@@ -8176,7 +8555,7 @@
       "as": "বতৰ নে জলবায়ু?"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8185,7 +8564,7 @@
       "as": "বতাহ কিয় বলে?"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8194,7 +8573,7 @@
       "as": "বৰষুণৰ পানী ক’লৈ যায়?"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8203,7 +8582,7 @@
       "as": "পাহাৰৰ দুয়োফালে বৰষুণ"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "test",
@@ -8219,7 +8598,7 @@
   "gf-05-ocean-and-hazards": {
    "course": "geography-foundations",
    "no": 5,
-   "version": 1,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Read the ocean and hazards",
@@ -8233,7 +8612,7 @@
       "as": "উপকূলৰ সিপাৰে"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8242,7 +8621,7 @@
       "as": "তিনিধৰণৰ গতি"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8251,7 +8630,7 @@
       "as": "কি বিপদৰ সন্মুখীন?"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8260,7 +8639,7 @@
       "as": "হঠাৎ পানী বাঢ়িলে"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "test",
@@ -8276,8 +8655,8 @@
   "gf-06-india-location": {
    "course": "geography-foundations",
    "no": 6,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "Put India on the map",
     "as": "মানচিত্ৰত ভাৰত চিনা"
@@ -8290,7 +8669,7 @@
       "as": "দক্ষিণ এছিয়াত ভাৰত বিচাৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8299,7 +8678,7 @@
       "as": "প্ৰশাসনিক ঠাইৰে দিশ চিনা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8308,13 +8687,22 @@
       "as": "সমগ্ৰ ভাৰতত একে ঘড়ী"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
      "t": {
       "en": "Coasts and islands",
       "as": "উপকূল আৰু দ্বীপ"
+     },
+     "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "India and Assam in numbers",
+      "as": "সংখ্যাত ভাৰত আৰু অসম"
      },
      "i": "map",
      "ex": 5
@@ -8333,8 +8721,8 @@
   "gf-07-india-relief": {
    "course": "geography-foundations",
    "no": 7,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "Cross India’s physical regions",
     "as": "ভাৰতৰ ভূ-আকৃতি অঞ্চল পাৰ হোৱা"
@@ -8347,7 +8735,7 @@
       "as": "উত্তৰৰ পৰ্বত ধনুৰ মাজেৰে"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8356,7 +8744,7 @@
       "as": "সমভূমি আৰু মৰুভূমি"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8365,7 +8753,7 @@
       "as": "মালভূমি আৰু তাৰ কাষ"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8374,6 +8762,15 @@
       "as": "সমভূমি সাগৰৰ কাষত"
      },
      "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Inside the plains, up the hills",
+      "as": "সমভূমিৰ ভিতৰ, পাহাৰৰ ওপৰ"
+     },
+     "i": "hill",
      "ex": 5
     },
     {
@@ -8390,8 +8787,8 @@
   "gf-08-indian-rivers": {
    "course": "geography-foundations",
    "no": 8,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "Trace India’s rivers",
     "as": "ভাৰতৰ নদী অনুসৰণ কৰা"
@@ -8404,7 +8801,7 @@
       "as": "নদী অৱবাহিকা অনুসৰণ কৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8413,7 +8810,7 @@
       "as": "উত্তৰৰ নদীবোৰৰ মাজেৰে"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8422,7 +8819,7 @@
       "as": "উপদ্বীপৰ দুটা উপকূল"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8431,6 +8828,15 @@
       "as": "নদীৰ মোহনা পঢ়া"
      },
      "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Five meetings, four patterns",
+      "as": "পাঁচটা সংগম, চাৰিটা আৰ্হি"
+     },
+     "i": "river",
      "ex": 5
     },
     {
@@ -8447,8 +8853,8 @@
   "gf-09-india-monsoon": {
    "course": "geography-foundations",
    "no": 9,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "Read India’s monsoon",
     "as": "ভাৰতৰ মৌচুমী পঢ়া"
@@ -8461,7 +8867,7 @@
       "as": "ঋতুৰ কেলেণ্ডাৰ পঢ়া"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8470,7 +8876,7 @@
       "as": "আগমন অনুসৰণ কৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8479,7 +8885,7 @@
       "as": "বৰষুণৰ দুখন নথি তুলনা কৰা"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8488,6 +8894,15 @@
       "as": "বতাহৰ দিশ সলনি হ’লে"
      },
      "i": "map",
+     "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Why India has every climate",
+      "as": "ভাৰতত কিয় সকলো জলবায়ু"
+     },
+     "i": "hill",
      "ex": 5
     },
     {
@@ -8504,7 +8919,7 @@
   "gf-10-land-and-livelihoods": {
    "course": "geography-foundations",
    "no": 10,
-   "version": 1,
+   "version": 2,
    "steps": 5,
    "title": {
     "en": "Connect land and livelihoods",
@@ -8518,7 +8933,7 @@
       "as": "মাটিৰ সংকেত পঢ়া"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u2",
@@ -8527,7 +8942,7 @@
       "as": "সেমেকা অৰণ্যৰ পৰা কাঁইটীয়া জোপোহালৈ"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u3",
@@ -8536,7 +8951,7 @@
       "as": "শস্যৰ তালিকা পঢ়া"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "u4",
@@ -8545,7 +8960,7 @@
       "as": "মানুহ ক’ত বসতি কৰে"
      },
      "i": "map",
-     "ex": 5
+     "ex": 6
     },
     {
      "id": "test",
@@ -8684,8 +9099,8 @@
   "gk-03-people": {
    "course": "general-awareness",
    "no": 3,
-   "version": 1,
-   "steps": 7,
+   "version": 2,
+   "steps": 8,
    "title": {
     "en": "People and their work",
     "as": "ব্যক্তি আৰু তেওঁলোকৰ কৰ্ম"
@@ -8744,6 +9159,15 @@
      },
      "i": "book",
      "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Remember Zubeen Garg",
+      "as": "জুবিন গাৰ্গক সোঁৱৰণ"
+     },
+     "i": "music",
+     "ex": 5
     },
     {
      "id": "test",
@@ -9377,8 +9801,8 @@
   "ih-01-indus-cities": {
    "course": "indian-history",
    "no": 1,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "The Indus cities",
     "as": "সিন্ধু উপত্যকাৰ নগৰ"
@@ -9418,6 +9842,15 @@
       "as": "কোনেও পঢ়িব নোৱৰা লিপি"
      },
      "i": "moon",
+     "ex": 5
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Rivers and finds",
+      "as": "নদী আৰু আৱিষ্কাৰ"
+     },
+     "i": "map",
      "ex": 5
     },
     {
@@ -9482,8 +9915,8 @@
   "ih-03-buddha-and-mahavira": {
    "course": "indian-history",
    "no": 3,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 7,
    "title": {
     "en": "Buddha and Mahavira",
     "as": "বুদ্ধ আৰু মহাবীৰ"
@@ -9524,6 +9957,24 @@
      },
      "i": "hands",
      "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Four Buddhist councils",
+      "as": "চাৰিটা বৌদ্ধ সংগীতি"
+     },
+     "i": "hands",
+     "ex": 5
+    },
+    {
+     "id": "n2",
+     "t": {
+      "en": "Six rival teachers",
+      "as": "ছজন প্ৰতিদ্বন্দ্বী গুৰু"
+     },
+     "i": "scroll",
+     "ex": 5
     },
     {
      "id": "test",
@@ -10274,8 +10725,8 @@
   "ih-18-europeans-and-plassey": {
    "course": "indian-history",
    "no": 18,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "Plassey and Buxar",
     "as": "পলাশী আৰু বক্সাৰ"
@@ -10318,6 +10769,15 @@
      "ex": 5
     },
     {
+     "id": "n1",
+     "t": {
+      "en": "Rival companies, Carnatic wars",
+      "as": "প্ৰতিদ্বন্দ্বী কোম্পানী, কৰ্ণাটক যুদ্ধ"
+     },
+     "i": "ship",
+     "ex": 5
+    },
+    {
      "id": "test",
      "t": {
       "en": "Lesson test",
@@ -10331,8 +10791,8 @@
   "ih-19-governors-general": {
    "course": "indian-history",
    "no": 19,
-   "version": 1,
-   "steps": 5,
+   "version": 2,
+   "steps": 6,
    "title": {
     "en": "The Governors-General",
     "as": "গৱৰ্ণৰ জেনেৰেল সকল"
@@ -10373,6 +10833,15 @@
      },
      "i": "crown",
      "ex": 6
+    },
+    {
+     "id": "n1",
+     "t": {
+      "en": "Four ways to collect land tax",
+      "as": "ভূমিকৰ সংগ্ৰহৰ চাৰি ধৰণ"
+     },
+     "i": "land",
+     "ex": 5
     },
     {
      "id": "test",
@@ -11084,6 +11553,45 @@
      "t": {
       "en": "Lesson test",
       "as": "পাঠৰ পৰীক্ষা"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "ih-33-india-since-1964": {
+   "course": "indian-history",
+   "no": 33,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "India since 1964",
+    "as": "১৯৬৪ৰ পিছৰ ভাৰত"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Indira and the Emergency",
+      "as": "ইন্দিৰা আৰু জৰুৰীকালীন"
+     },
+     "i": "scroll",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Coalitions and reform",
+      "as": "জোঁট আৰু সংস্কাৰ"
+     },
+     "i": "users",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
      },
      "i": "trophy",
      "ex": 6
@@ -17246,6 +17754,84 @@
      },
      "i": "trophy",
      "ex": 5
+    }
+   ]
+  },
+  "sc-13-green-laws": {
+   "course": "general-science",
+   "no": 13,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Green laws and summits",
+    "as": "সেউজ আইন আৰু সন্মিলন"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Summits that changed the world",
+      "as": "বিশ্ব সলনি কৰা সন্মিলন"
+     },
+     "i": "globe",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "India's eight green laws",
+      "as": "ভাৰতৰ আঠটা সেউজ আইন"
+     },
+     "i": "leaf",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
+    }
+   ]
+  },
+  "sc-14-assam-wild-map": {
+   "course": "general-science",
+   "no": 14,
+   "version": 1,
+   "steps": 3,
+   "title": {
+    "en": "Assam’s wild map",
+    "as": "অসমৰ বন্য মানচিত্ৰ"
+   },
+   "units": [
+    {
+     "id": "u1",
+     "t": {
+      "en": "Reserves with a name",
+      "as": "নামেৰে চিনাকি সংৰক্ষণ"
+     },
+     "i": "leaf",
+     "ex": 5
+    },
+    {
+     "id": "u2",
+     "t": {
+      "en": "Beels and animal corridors",
+      "as": "বিল আৰু জন্তুৰ পথ"
+     },
+     "i": "river",
+     "ex": 5
+    },
+    {
+     "id": "test",
+     "t": {
+      "en": "Checkpoint",
+      "as": "চেকপইণ্ট"
+     },
+     "i": "trophy",
+     "ex": 6
     }
    ]
   },

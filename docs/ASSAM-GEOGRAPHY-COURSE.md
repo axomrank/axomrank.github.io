@@ -11,6 +11,8 @@ first-attempt result did not pass after successful retries. A 4/5 result
 passed. Learner timing, Assamese editorial review, and basemap reuse terms
 remain pending.
 
+Mission 7, `ag-07-wild-assam` (2026-11-07), adds the protected map: all parks, sanctuaries, tiger and elephant reserves, corridors, biosphere and World Heritage sites, and Kaziranga's ranges. Areas differ between sources, and the Poba sanctuary is announced but its final notification is unconfirmed.
+
 See the [course evidence notes](research/assam-geography-evidence.md) and
 [river pilot evidence notes](research/assam-geography-river-pilot.md).
 

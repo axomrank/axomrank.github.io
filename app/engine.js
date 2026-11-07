@@ -572,9 +572,10 @@ const RENDER = {
     const stamp = yr && s.img && !s.imageCaption ? `<span class="stamp">${T(B(yr, asNum(yr)))}</span>` : "";
     const memo = /^Remember\b/.test(s.title.en), last = s.text.length - 1;
     const asks = (p) => /\?\s*$/.test(String(p.en).replace(/<[^>]+>/g, ""));
-    const bleed = (s.img && !s.imageCaption) || (!s.img && !s.map && !s.diagram && !s.widget);
+    const bleed = (s.img && !s.imageCaption) || (!s.img && !s.map && !s.diagram && !s.figure && !s.widget);
     const picturePart = s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
       : s.map ? `<figure class="frame mapframe">${mapSVG(mapOf(s), { story: true, route: s.map.route })}</figure>`
+      : s.figure ? GEOFIG.story(s.figure, T)
       : s.diagram ? storyDiagram(s.diagram)
       : s.widget ? `<div class="wx story-wx"></div>`
       : `<figure class="frame art${s.art === "rooster" ? " full" : ""}">${ART[s.art]}</figure>`;
@@ -588,6 +589,7 @@ const RENDER = {
   },
   mcq: (s) => `<p class="prompt" ${s.small ? 'style="font-size:18px"' : ""}>${T(s.q)}</p>
     <div class="opts">${s.options.map((o, k) => `<button class="tile opt" data-opt="${k}"><span class="k">${"ABCD"[k]}</span><span>${T(o)}</span></button>`).join("")}</div>`,
+  figtap: (s) => `<p class="prompt">${T(s.q)}</p>${GEOFIG.quiz(s.kind)}`,
   odd: (s) => `<p class="prompt">${T(s.q)}</p><div class="opts grid2">${s.options.map((o, k) => `<button class="tile opt" data-opt="${k}"><span>${T(o)}</span></button>`).join("")}</div>`,
   inline: (s) => `<p class="sentence">${T(s.before)} <span class="blank" data-fillchip>&nbsp;</span> ${T(s.after)}</p>
     <div class="opts grid2 ${s.big ? "big" : ""}">${s.options.map((o, k) => `<button class="tile opt" data-opt="${k}"><span>${T(o)}</span></button>`).join("")}</div>`,
@@ -645,7 +647,7 @@ function ready() {
   const s = step().s, st = U.st, scr = $("#screen");
   switch (s.type) {
     case "story": return true;
-    case "mcq": case "odd": case "inline": case "picture": case "whoami": return st.sel != null;
+    case "mcq": case "odd": case "figtap": case "inline": case "picture": case "whoami": return st.sel != null;
     case "fill": return isAS() ? st.chip != null : $(".en input", scr).value.trim().length === s.answer.length - 1;
     case "map": return st.place != null;
     case "unscramble": { const lg = isAS() ? "as" : "en"; return st[lg].length === s.word[lg].length; }
@@ -668,7 +670,7 @@ function check() {
   let right = false;
   const markOpts = (ci) => { $$("[data-opt]", scr).forEach((o) => { o.disabled = true; if (+o.dataset.opt === ci) o.classList.add("right"); }); if (st.sel !== ci) $(`[data-opt="${st.sel}"]`, scr).classList.add("wrong"); };
   switch (s.type) {
-    case "mcq": case "odd": case "picture": case "whoami": right = st.sel === s.answer; markOpts(s.answer); if (s.type === "whoami") $("#more").disabled = true; break;
+    case "mcq": case "odd": case "figtap": case "picture": case "whoami": right = st.sel === s.answer; markOpts(s.answer); if (s.type === "whoami") $("#more").disabled = true; break;
     case "inline": { right = st.sel === s.answer; markOpts(s.answer); const c = $("[data-fillchip]", scr); c.innerHTML = T(s.options[s.answer]); c.classList.add("right"); break; }
     case "tf": right = st.sel === s.answer; $$("[data-tf]", scr).forEach((b) => { b.disabled = true; const v = b.dataset.tf === "1"; if (v === s.answer) b.classList.add("right"); else if (v === st.sel) b.classList.add("wrong"); }); break;
     case "fill":
@@ -706,6 +708,7 @@ function answerHTML(s) {
   switch (s.type) {
     case "solve": return MX.answerHTML(s);
     case "mcq": case "odd": case "whoami": case "inline": return T(s.options[s.answer]);
+    case "figtap": return T(s.answerText);
     case "tf": return T(s.answer ? B("True", "শুদ্ধ") : B("False", "অশুদ্ধ"));
     case "order": return s.items.map((x, i) => `${N(i + 1)}. ${T(x)}`).join("<br>");
     case "timeline": return T(B("See the explanation below", "তলৰ ব্যাখ্যা চোৱা"));
@@ -964,7 +967,7 @@ document.addEventListener("click", (e) => {
   }
 });
 $("#action").addEventListener("click", () => { if (step().s.type === "story" && U.phase !== "feedback" && storyBeat()) return; if (U.phase === "feedback" || step().s.type === "story") return next(); if (ready()) check(); });
-$("#screen").addEventListener("click", (e) => { if (step() && step().s.type === "story" && !e.target.closest("button, a, input, .ent, .wx")) storyBeat(); });
+$("#screen").addEventListener("click", (e) => { if (step() && step().s.type === "story" && !e.target.closest("button, a, input, .ent, .wx, .gfig")) storyBeat(); });
 // Names and dates can contain spaces, digits and punctuation. The field is
 // plain text and its value is compared with the authored answer, never HTML.
 document.addEventListener("input", (e) => { if (!$("#v-play").classList.contains("on") || step().s.type !== "fill") return; refresh(); });

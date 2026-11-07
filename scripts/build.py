@@ -9,8 +9,8 @@ import hashlib, json, os, re, sys, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
-TYPES = {"story", "mcq", "tf", "inline", "fill", "match", "order", "unscramble", "odd", "picture", "whoami", "spot", "timeline", "map", "solve", "explore", "stepwise"}
-NEED = {"mcq": ["q", "options", "answer", "why"], "tf": ["s", "answer", "why"], "inline": ["before", "after", "options", "answer", "why"],
+TYPES = {"story", "mcq", "tf", "inline", "fill", "match", "order", "unscramble", "odd", "picture", "whoami", "spot", "timeline", "map", "figtap", "solve", "explore", "stepwise"}
+NEED = {"figtap": ["q", "kind", "answer", "answerText", "why"], "mcq": ["q", "options", "answer", "why"], "tf": ["s", "answer", "why"], "inline": ["before", "after", "options", "answer", "why"],
         "fill": ["before", "after", "answer", "asOptions", "asAnswer", "why"], "match": ["pairs", "why"], "order": ["items", "why"],
         "unscramble": ["q", "word", "why"], "odd": ["q", "options", "answer", "why"], "picture": ["q", "options", "answer", "why"],
         "whoami": ["clues", "options", "answer", "why"], "spot": ["tokens", "wrong", "fix", "why"], "timeline": ["anchors", "items", "why"],
@@ -18,6 +18,9 @@ NEED = {"mcq": ["q", "options", "answer", "why"], "tf": ["s", "answer", "why"], 
         "solve": ["q", "answer", "why"], "explore": ["q", "widget", "target", "answerText", "why"], "stepwise": ["q", "parts", "why"]}
 WIDGET_KINDS = {"exterior", "tangent", "fence", "fracbar", "grid100", "numline", "peel", "hops", "blocks", "line", "array", "gears", "tiles", "dial", "cuts", "area", "dual", "ray", "level", "seesaw", "chain", "order", "square", "diffsq", "pairs", "ladder", "twosale", "growth", "tank", "mandays", "track", "journey", "ages", "stairs", "triangle", "quarter", "tower", "scaleup", "shear", "sticks", "kite", "roll", "sectors", "stack", "net", "pour", "shift", "walk", "venn", "setpick", "alpha", "gaps", "tree", "queue", "seats", "oddday", "hands", "figpick", "dicenet", "numgrid", "bars"}
 errors = []
+# figure kinds and how many pins each has, read from the figures themselves
+_geo = open("app/geofigure.js", encoding="utf-8").read().split("const F = {", 1)[1].split("const pinsSVG", 1)[0]
+GEO_PINS = {m[1]: len(re.findall(r"\[[-\d.]+, [-\d.]+\]", m[2])) for m in re.finditer(r"^  (\w+): \{ pins: ([^\n]*?), (?:size|art):", _geo, re.M)}
 def err(msg): errors.append(msg)
 
 # Derived cross-course reference uses only integrated content.
@@ -118,9 +121,14 @@ for lid, L in lessons.items():
             if s["type"] not in TYPES: err(f"{where}: unknown type {s['type']}")
             for k in NEED.get(s["type"], []):
                 if k not in s: err(f"{where}: '{s['type']}' needs '{k}'")
-            if s["type"] == "story" and not (s.get("img") or s.get("map") or s.get("art") or s.get("widget")): err(f"{where}: story needs img, map or art")
+            if s["type"] == "story" and not (s.get("img") or s.get("map") or s.get("art") or s.get("widget") or s.get("figure")): err(f"{where}: story needs img, map or art")
             if s["type"] == "story":
                 story_rules(s, f"{where}/{sid}")
+                if "figure" in s:
+                    fig = s["figure"]
+                    if fig.get("kind") not in GEO_PINS: err(f"{where}: unknown figure '{fig.get('kind')}'")
+                    elif len(fig.get("spots", [])) != GEO_PINS[fig["kind"]]: err(f"{where}: figure '{fig['kind']}' needs {GEO_PINS[fig['kind']]} spots")
+                    for spot in fig.get("spots", []): bilingual(spot, where)
                 if "diagram" in s:
                     diagram = s["diagram"]
                     items = diagram.get("items") if isinstance(diagram, dict) else None
@@ -138,6 +146,7 @@ for lid, L in lessons.items():
                 if s.get("imageLayout") not in ("wide", "contain"): err(f"{where}: imageLayout must be wide or contain")
             if s["type"] == "picture": [need_img(o, where) for o in s["options"]]
             if s.get("scale") == "articles" and not all(str(a["y"]).isdigit() for a in s.get("anchors", [])): err(f"{where}: article line anchors must be plain numbers (put lettered articles in items)")
+            if s["type"] == "figtap" and (s["kind"] not in GEO_PINS or not 0 <= s["answer"] < GEO_PINS[s["kind"]]): err(f"{where}: figtap needs a known figure and a pin in range")
             if s["type"] == "map" and s["target"] not in s["choices"]: err(f"{where}: map target must be one of the choices")
             if "answer" in s and isinstance(s["answer"], int) and "options" in s and not 0 <= s["answer"] < len(s["options"]): err(f"{where}: answer index out of range")
             for task in s.get("tasks", []):

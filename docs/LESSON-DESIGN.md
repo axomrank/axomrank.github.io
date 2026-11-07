@@ -25,11 +25,14 @@ The app must feel like a game, not a textbook: short units, a story first, a dif
 | match | Tap matching pairs | Who did what |
 | order | Tap events in order | Sequences |
 | odd | Pick the one that does not belong | Groups |
+| figtap | Tap the right numbered pin on a drawn figure (`kind`, `answer`, `answerText`) | Parts of a process or place |
 | mcq | Standard multiple choice | Exam practice, sparingly |
 
 ## Lesson file
 
 `content/lessons/<id>.json`: `sources`, `guide`, `map`, `units` → `steps`. Every text is `{ "en", "as" }`. Every step has a permanent `id`: **never change an id once published**, saved progress, review and mistakes refer to it. Names in text are `[[id]]` or `[[id|shown text]]` and must exist in `content/entities.json`. `map`: a `box` [west, south, east, north], the rivers, ridges and places to `show`, optional `routes`, `texts`, `labels`; positions are [lat, lon]. Images: WebP about 1080 px in `content/media/<id>/` (build makes the `@480` copies).
+
+A story card may use `figure: {kind, spots}` from `app/geofigure.js`: a drawn scene with numbered pins, one `spot` label per pin. Prefer it to a `diagram` chip grid.
 
 ## Story cards: the one design
 
