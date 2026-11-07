@@ -573,7 +573,7 @@ const RENDER = {
     const memo = /^Remember\b/.test(s.title.en), last = s.text.length - 1;
     const asks = (p) => /\?\s*$/.test(String(p.en).replace(/<[^>]+>/g, ""));
     const bleed = (s.img && !s.imageCaption) || (!s.img && !s.map && !s.diagram && !s.figure && !s.widget);
-    const picturePart = s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
+    const picturePart = s.img ? s.imageCaption ? `<figure class="story-visual"><div class="frame library ${s.imageLayout === "contain" ? "contain" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(s.imageCredit || IMAGE_CREDITS[s.imageKind] || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></div><figcaption>${T(s.imageCaption)}</figcaption></figure>` : `<figure class="frame ${s.top ? "top" : ""}">${picture(s.img, lessonOf(s))}${stamp}<span class="credit">${T(s.imageCredit || B("Artistic reconstruction", "শিল্পীৰ কল্পনা"))}</span></figure>`
       : s.map ? `<figure class="frame mapframe">${mapSVG(mapOf(s), { story: true, route: s.map.route })}</figure>`
       : s.figure ? GEOFIG.story(s.figure, T)
       : s.diagram ? storyDiagram(s.diagram)

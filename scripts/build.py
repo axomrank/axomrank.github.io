@@ -140,6 +140,7 @@ for lid, L in lessons.items():
                             ) for item in items)):
                         err(f"{where}/{sid}: diagram needs a flow or grid with 2–4 bilingual labels")
             if s.get("img"): need_img(s["img"], where)
+            if s.get("imageCredit") and not all(s["imageCredit"].get(lang) for lang in ("en", "as")): err(f"{where}: imageCredit needs English and Assamese")
             if s.get("imageCaption"):
                 if not s.get("img"): err(f"{where}: imageCaption needs img")
                 if not isinstance(s["imageCaption"], dict) or not all(s["imageCaption"].get(lang) for lang in ("en", "as")): err(f"{where}: imageCaption needs English and Assamese")
