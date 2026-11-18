@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page moved · AxomRank</title>
+<script>
+// GitHub Pages serves this page for any missing path on axomrank.github.io.
+(function () {
+  // 1. The AxomRank app used to be served here; it now lives only at axomrank.pages.dev.
+  var app = /^\/(lesson\.html|history\.html|app\/|content\/|icons\/|sw\.js|manifest\.webmanifest)/;
+  if (app.test(location.pathname)) {
+    location.replace("https://axomrank.pages.dev" + location.pathname + location.search + location.hash);
+    return;
+  }
+  // 2. Repositories renamed or merged on 2026-11-18.
+  var moved = {
+    "ahom": "ahom-kingdom-history",
+    "ahom-lessons": "ahom-kingdom-history/lessons",
+    "ahom-kings-lessons": "ahom-kingdom-history/lessons",
+    "historymap": "assam-history-map",
+    "assam-history-characters": "assam-history-characters",
+    "assam": "assam-visual-archive",
+    "map": "assam-maps",
+    "assamese-ai-gallery": "assam-heritage-ai-art",
+    "the-floor-test": "floor-test-simulator",
+    "pyq": "assam-exam-pyq"
+  };
+  var parts = location.pathname.split("/");
+  var target = moved[(parts[1] || "").toLowerCase()];
+  if (target && parts[1] !== target) {
+    parts[1] = target;
+    location.replace(parts.join("/") + location.search + location.hash);
+  }
+})();
+</script>
+<style>body { margin: 0; background: #fff; color: #222; font: 17px/1.6 system-ui, sans-serif; } main { max-width: 640px; margin: 15vh auto; padding: 0 16px; } a { color: #80151A; }</style>
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <p>This page may have moved. Go to the <a href="/">AxomRank home page</a>, open the <a href="https://axomrank.pages.dev">AxomRank app</a> or read the <a href="/axomrank-blog/">blog</a>.</p>
+</main>
+</body>
+</html>
